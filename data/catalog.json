@@ -188,6 +188,16 @@
    "status": "ready",
    "note": "15 ta laboratoriya ishi: kimograf, Goryayev kamerasi, Sali, Panchenkov, qon guruhi, EKG, tonometr, spirometr, Sivtsev jadvali, kamertonlar",
    "file": "sim/fzl-lab.html"
+  },
+  {
+   "id": "bkm-lab",
+   "name": "Biokimyo laboratoriyasi",
+   "abbr": "BKM",
+   "subject": "biokimyo",
+   "color": "#c27c1a",
+   "status": "ready",
+   "note": "20 ta klinik-laboratoriya holati (III–IV semestr): avval bemor va nazariya, so‘ng analizator, titrlash, test-chiziqlar, IFA, PZR–RFLP, koagulometr bilan tahlil va natijani talqin qilish",
+   "file": "sim/bkm-lab.html"
   }
  ]
 }
