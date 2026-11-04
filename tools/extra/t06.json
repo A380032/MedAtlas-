@@ -1,0 +1,25 @@
+{"quiz":[
+{"q":"Bolalarda pastki burun yo‘li qachon shakllanadi?","options":["Tug‘ilganda bor","1 yoshda","4 yoshda","8 yoshda","12 yoshda"],"answer":2},
+{"q":"Peshona va ponasimon burun yondosh bo‘shliqlari qaysi yoshdan rivojlanadi?","options":["Tug‘ilganda","1 yoshdan","3 yoshdan","6–7 yoshdan","12 yoshdan"],"answer":3},
+{"q":"Bolalarda ko‘z yosh-burun kanalining xususiyati va oqibati:","options":["Uzun va tor — dakriosistit","Kalta, keng, klapani rivojlanmagan — infeksiya burundan ko‘zga o‘tadi","Yo‘q — ko‘z quruq","Yopiq — kon’yunktivit yo‘q","Faqat qizlarda ochiq"],"answer":1},
+{"q":"Bolalarda hiqildoq xususiyati va 2–3 yoshdagi asorati:","options":["Keng — stenoz yo‘q","Voronkasimon, tor, ovoz boylamlari osti shishga moyil — laringit krupga olib keladi","Pastda joylashgan — afoniya","Tog‘aylari qattiq — yot jism","Faqat o‘g‘il bolalarda tor"],"answer":1},
+{"q":"Yot jism va zotiljam bolalarda ko‘proq qaysi tomonda uchraydi va sababi?","options":["Chapda, chap bronx keng","O‘ngda, o‘ng bosh bronx traxeyaning davomi, kalta va keng","Ikki tomonda baravar","Chapda, bronx tor","Faqat yuqori bo‘lakda"],"answer":1},
+{"q":"O‘ng o‘pkada nechta segment bor?","options":["8","9","10","11","12"],"answer":2},
+{"q":"Birinchi nafasning eng asosiy qo‘zg‘atuvchi omili:","options":["Sovuq ta’siri","Yorug‘lik","Kindik qisilgach gipoksiya, giperkapniya va atsidoz (kimyoviy omil)","Tortishish kuchi","Teri retseptorlari"],"answer":2},
+{"q":"Surfaktantni qaysi hujayralar sintezlaydi?","options":["I tip alveotsitlar","II tip alveotsitlar","Makrofaglar","Kiprikchali epiteliy","Endoteliy"],"answer":1},
+{"q":"Surfaktant yetishmovchiligida chala tug‘ilganlarda qanday sindrom rivojlanadi?","options":["Aspiratsion pnevmoniya","Respirator distress sindromi (gialin membranalar kasalligi)","Bronxiolit","Ko‘k yo‘tal","Krup"],"answer":1},
+{"q":"Chaqaloqlarda patologik apnoe deb hisoblanadi:","options":["8–10 soniyagacha nafas to‘xtashi","20 soniyadan uzoq yoki bradikardiya va sianoz bilan kechadigan to‘xtash","Uyquda tez nafas","Yig‘lagandan keyingi chuqur nafas","3 soniyali pauza"],"answer":1},
+{"q":"Xurujsimon, reprizli, qusish bilan tugaydigan yo‘tal qaysi kasallikka xos?","options":["Laringit","Traxeit","Ko‘k yo‘tal","Plevrit","Faringit"],"answer":2},
+{"q":"Bifurkatsion limfa tugunlari kattalashishida (sil bronxoadeniti, limfogranulematoz) qanday yo‘tal bo‘ladi?","options":["Bitonal yo‘tal","Vovillovchi yo‘tal","Nam yo‘tal","Kalta og‘riqli yo‘tal","Ertalabki ko‘p balg‘amli yo‘tal"],"answer":0},
+{"q":"Zangsimon balg‘am qaysi kasallikka xos?","options":["Bronxoektaz","Krupoz zotiljam","Astma","Absess","Ko‘k yo‘tal"],"answer":1},
+{"q":"Halqum va bodomsimon bezlar ko‘rigi nima uchun eng oxirida o‘tkaziladi?","options":["Bola bezovtalanmasligi uchun","Xona qorong‘i bo‘lgani uchun","Shifokor charchagani uchun","Bu qoida emas","Faqat o‘smirlarda"],"answer":0}
+],
+"cards":[
+{"front":"Bola nafas yo‘llarining umumiy xususiyati","back":"Tor, yumshoq, qon va limfa tomirlariga boy, elastik tolalar kam → shish, obstruksiya, atelektaz, zotiljamga moyillik"},
+{"front":"O‘pka segmentlari","back":"O‘ng — 10 (3+2+5), chap — 9; bolalarda zotiljam ko‘pincha 6, 2, 10-segmentlarda; 4–5-segment — “o‘rta bo‘lak sindromi”"},
+{"front":"Birinchi nafas mexanizmi","back":"Kindik qisilishi → pO2↓ (80→15), pCO2↑ (40→70), pH↓ → xemoretseptorlar → nafas markazi → diafragma qisqarishi; surfaktant o‘pkani ochiq tutadi"},
+{"front":"Surfaktant","back":"90% lipid (fosfatidilxolin) + 10% oqsil; II tip alveotsitlar; alveolalar puchayishini oldini oladi; yetishmasa — RDS"},
+{"front":"Yo‘tal turlari","back":"Vovillovchi — krup; quruq — faringit/yot jism; nam — bronxit; kalta og‘riqli — plevrit/krupoz zotiljam; reprizli — ko‘k yo‘tal; bitonal — bifurkatsion limfa tugunlari"},
+{"front":"Balg‘am tavsifi","back":"Sarg‘ish — yiringli; yashil — dimlangan yiring; zangsimon — krupoz zotiljam; sassiq — bronxoektaz/absess; shishasimon yopishqoq — astma"},
+{"front":"Nafas turi yoshga qarab","back":"Chaqaloq — diafragmal; 1–2 yosh — aralash; 8–14 yosh — o‘g‘il bolalarda qorin, qizlarda ko‘krak turi"}
+]}

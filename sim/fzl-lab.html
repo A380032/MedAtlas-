@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="uz"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fiziologiya laboratoriyasi</title>
+<meta name="description" content="Normal fiziologiya: 15 ta laboratoriya ishi bo'yicha virtual laboratoriya — asboblar bilan qadamma-qadam ishlash, o'lchash, hisoblash va natijani baholash">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --surface:#FFFFFF; --sunk:#E3E8ED; --ink:#15202B; --muted:#5A6B7B; --line:#CDD6DF;
+  --accent:#1F5FA0; --accent-soft:#DCE8F5; --on-accent:#FFFFFF;
+  --bad:#B03A32; --bad-soft:#F7E1DE; --good:#2A7A4A; --good-soft:#DDF0E3; --warn:#946200; --warn-soft:#F6ECD2;
+  --bench:#D9DEE3; --bench2:#C9D0D7;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F151B; --surface:#17202A; --sunk:#0C1217; --ink:#E3EAF1; --muted:#97A7B7; --line:#2A3846;
+  --accent:#6FA8E3; --accent-soft:#193049; --on-accent:#06131F;
+  --bad:#EA8A80; --bad-soft:#3A1F1C; --good:#73C99A; --good-soft:#163222; --warn:#E3B651; --warn-soft:#352A12;
+  --bench:#26313C; --bench2:#1E2832; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F151B; --surface:#17202A; --sunk:#0C1217; --ink:#E3EAF1; --muted:#97A7B7; --line:#2A3846;
+  --accent:#6FA8E3; --accent-soft:#193049; --on-accent:#06131F;
+  --bad:#EA8A80; --bad-soft:#3A1F1C; --good:#73C99A; --good-soft:#163222; --warn:#E3B651; --warn-soft:#352A12;
+  --bench:#26313C; --bench2:#1E2832; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;margin:0;text-wrap:balance}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800}
+h2{font-size:1.35rem;font-weight:800}
+h3{font-size:1.02rem;font-weight:600}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+input,select{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:14px max(16px,env(safe-area-inset-left,0px)) 40px max(16px,env(safe-area-inset-right,0px))}
+.muted{color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+.small{font-size:.86rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:7px 14px;border-radius:9px;border:1px solid var(--line);background:var(--surface);font-weight:500;font-size:.93rem;line-height:1.2;text-align:center}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.sm{min-height:34px;padding:5px 10px;font-size:.86rem}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.on{background:var(--accent-soft);border-color:var(--accent);font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+/* bosh sahifa */
+.hero{padding:6px 0 14px}
+.hero p{max-width:760px;margin-top:6px}
+.grp{margin-top:18px}
+.grp h2{font-size:1.05rem;margin-bottom:8px;color:var(--muted);font-family:var(--f-body);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.case{display:flex;gap:12px;align-items:flex-start;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;width:100%}
+.case:hover{border-color:var(--accent)}
+.case .no{flex:0 0 auto;width:38px;height:38px;border-radius:9px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;font-family:var(--f-mono)}
+.case .t{font-weight:600;line-height:1.3}
+.case .s{font-size:.84rem;color:var(--muted);margin-top:3px}
+.case .sc{font-size:.8rem;margin-top:5px;font-weight:600}
+.case .sc.ok{color:var(--good)} .case .sc.mid{color:var(--warn)}
+/* holat sahifasi */
+.top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.top h1{font-size:clamp(1.2rem,3vw,1.6rem);flex:1 1 300px}
+.subj{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);padding:10px 14px;margin-bottom:12px}
+.lay{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:14px;align-items:start}
+@media (max-width:980px){.lay{grid-template-columns:minmax(0,1fr)}}
+.stage{background:linear-gradient(180deg,var(--bench),var(--bench2));border:1px solid var(--line);border-radius:var(--r);padding:12px;min-width:0}
+.stage .sv{display:block;width:100%;height:auto;background:#F4F6F8;border-radius:8px;border:1px solid #B9C3CC}
+.stage canvas{display:block;width:100%;border-radius:8px;border:1px solid #B9C3CC;background:#fff;touch-action:manipulation}
+.panel{display:flex;flex-direction:column;gap:12px;min-width:0}
+.steps ol{margin:6px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{position:relative;padding:5px 0 5px 32px;font-size:.9rem;line-height:1.35;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:23px;height:23px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:.75rem;font-weight:600;color:var(--muted)}
+.steps li.cur::before{border-color:var(--accent);color:var(--accent)}
+.steps li.done{color:var(--muted)}
+.steps li.done::before{content:"✓";background:var(--good);border-color:var(--good);color:#fff}
+.log{max-height:220px;overflow:auto;font-size:.88rem;display:flex;flex-direction:column;gap:5px}
+.log div{padding:6px 9px;border-radius:7px;background:var(--sunk);line-height:1.35}
+.log .err{background:var(--bad-soft);color:var(--bad)}
+.log .ok{background:var(--good-soft);color:var(--good)}
+.log .pt{background:var(--warn-soft)}
+.jr label{display:block;font-size:.88rem;margin:9px 0 3px;font-weight:500;line-height:1.3}
+.jr .inp{display:flex;gap:6px;align-items:center}
+.jr input,.jr select{width:100%;min-height:38px;padding:6px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.jr input{max-width:150px;font-family:var(--f-mono)}
+.jr .u{font-size:.85rem;color:var(--muted);white-space:nowrap}
+.jr .fb{font-size:.82rem;margin-top:3px;line-height:1.35}
+.jr .fb.ok{color:var(--good)} .jr .fb.no{color:var(--bad)}
+.mc label{display:flex;gap:8px;align-items:flex-start;font-weight:400;margin:6px 0;padding:7px 9px;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.mc input{width:auto;min-height:0;margin-top:4px}
+.mc label.ok{border-color:var(--good);background:var(--good-soft)}
+.mc label.no{border-color:var(--bad);background:var(--bad-soft)}
+.res{border-radius:var(--r);padding:12px 14px;border:1px solid var(--line);background:var(--surface)}
+.res .big{font-family:var(--f-display);font-size:1.6rem;font-weight:800}
+.res.good{border-color:var(--good)} .res.mid{border-color:var(--warn)} .res.low{border-color:var(--bad)}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.ctl .grpc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:6px 8px}
+.ctl .lbl{font-size:.8rem;color:var(--muted);font-weight:600;margin-right:2px}
+.stp{display:inline-flex;align-items:center;gap:4px}
+.stp .v{min-width:74px;text-align:center;font-family:var(--f-mono);font-weight:600;background:#0F1A12;color:#7CFF9A;border-radius:6px;padding:5px 8px;font-size:.95rem}
+.stp button{min-width:36px;min-height:34px;border-radius:7px;border:1px solid var(--line);background:var(--surface);font-weight:600}
+.note{font-size:.84rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.clock{font-family:var(--f-mono);font-weight:600;background:#111;color:#FFB347;border-radius:6px;padding:5px 9px;min-width:84px;text-align:center}
+.hl{outline:3px solid #F2B705;outline-offset:2px}
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:9px;font-size:.9rem;z-index:50;max-width:min(92vw,520px);text-align:center}
+.tbl{border-collapse:collapse;font-size:.86rem;width:100%}
+.tbl td,.tbl th{border:1px solid var(--line);padding:4px 7px;text-align:left}
+.tbl th{background:var(--sunk);font-weight:600}
+svg text{font-family:var(--f-body)}
+.clk{cursor:pointer}
+.clk:hover{filter:brightness(1.08)}
+</style>
+</head><body>
+<div class="wrap" id="app"></div>
+<script>
+"use strict";
+/* ===== Yordamchilar ===== */
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const NS="http://www.w3.org/2000/svg";
+function el(tag,attrs={},...kids){const e=document.createElement(tag);for(const k in attrs){if(k==="html")e.innerHTML=attrs[k];else if(k.startsWith("on"))e.addEventListener(k.slice(2),attrs[k]);else if(attrs[k]!==false&&attrs[k]!=null)e.setAttribute(k,attrs[k]===true?"":attrs[k]);}for(const c of kids.flat()){if(c==null||c===false)continue;e.append(c.nodeType?c:document.createTextNode(c));}return e;}
+function sv(tag,attrs={},parent){const e=document.createElementNS(NS,tag);for(const k in attrs){if(k==="text")e.textContent=attrs[k];else e.setAttribute(k,attrs[k]);}if(parent)parent.appendChild(e);return e;}
+function svgRoot(w,h){const s=document.createElementNS(NS,"svg");s.setAttribute("viewBox",`0 0 ${w} ${h}`);s.setAttribute("class","sv");return s;}
+const rnd=(a,b)=>a+Math.random()*(b-a);
+const ri=(a,b)=>Math.floor(rnd(a,b+1));
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const fx=(x,d=1)=>(+x).toFixed(d).replace(".",",");
+const num=s=>{if(s==null)return NaN;s=String(s).trim().replace(/\s/g,"").replace(",",".");if(s==="")return NaN;return Number(s);};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function toast(t){const o=$(".toast");if(o)o.remove();const d=el("div",{class:"toast"},t);document.body.append(d);setTimeout(()=>d.remove(),2600);}
+const store={get(k,d){try{const v=localStorage.getItem("tq:fzl:"+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set(k,v){try{localStorage.setItem("tq:fzl:"+k,JSON.stringify(v));}catch(e){}}};
+
+/* ===== Simulyatsiya soati (tezlashtirish bilan) ===== */
+function makeClock(onTick){
+  const c={t:0,speed:1,run:false,last:0,raf:0,
+    start(){if(c.run)return;c.run=true;c.last=performance.now();c.raf=requestAnimationFrame(c.loop);},
+    stop(){c.run=false;cancelAnimationFrame(c.raf);},
+    loop(now){if(!c.run)return;const dt=Math.min(0.25,(now-c.last)/1000)*c.speed*(window.__TS||1);c.last=now;c.t+=dt;onTick&&onTick(c.t,dt);if(c.run)c.raf=requestAnimationFrame(c.loop);},
+    reset(){c.stop();c.t=0;}};
+  return c;
+}
+const mmss=t=>{t=Math.max(0,Math.floor(t));return String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0");};
+
+/* ===== Stepper (asbob tugmasi) ===== */
+function stepper({label,val,min,max,steps=[1],fmt=v=>v,onChange}){
+  const box=el("span",{class:"stp"});const v=el("span",{class:"v"});
+  let cur=val;const show=()=>v.textContent=fmt(cur);
+  const mk=(d,t)=>el("button",{type:"button","aria-label":label+" "+t,onclick:()=>{const n=Math.round((cur+d)*1e6)/1e6;if(n<min-1e-9||n>max+1e-9)return;cur=n;show();onChange&&onChange(cur);}},t);
+  const big=steps[1],sm=steps[0];
+  if(big)box.append(mk(-big,"«"));box.append(mk(-sm,"−"),v,mk(sm,"+"));if(big)box.append(mk(big,"»"));
+  show();
+  box.get=()=>cur;box.set=x=>{cur=x;show();};
+  return box;
+}
+function ctlGroup(label,...kids){return el("div",{class:"grpc"},el("span",{class:"lbl"},label),...kids);}
+
+/* ===== Asosiy dvigatel ===== */
+const CASES=[];
+const GROUPS=["Qo'zg'aluvchan to'qimalar","Qon fiziologiyasi","Yurak va qon tomirlar","Nafas fiziologiyasi","Analizatorlar va oliy nerv faoliyati"];
+const app=$("#app");
+let CUR=null; // joriy holat konteksti
+
+function home(){
+  if(CUR&&CUR.cleanup)CUR.cleanup();CUR=null;const ot=$(".toast");if(ot)ot.remove();
+  app.innerHTML="";
+  const best=store.get("best",{});
+  const done=CASES.filter(c=>best[c.id]!=null).length;
+  app.append(el("div",{class:"hero"},
+    el("h1",{},"Fiziologiya laboratoriyasi"),
+    el("p",{class:"muted"},"Normal fiziologiya qo'llanmasidagi laboratoriya ishlari asosida 15 ta virtual holat. Har birida asboblar bilan bosqichma-bosqich ishlaysiz, o'lchaysiz, hisoblaysiz va natijani baholaysiz. Tartib buzilsa yoki noto'g'ri ishlansa, laboratoriya daftariga xato sifatida yoziladi."),
+    el("p",{class:"small",style:"margin-top:8px"},`Bajarilgan: ${done} / ${CASES.length}`)));
+  GROUPS.forEach((g,gi)=>{
+    const list=CASES.filter(c=>c.grp===gi);if(!list.length)return;
+    const grid=el("div",{class:"cases"});
+    list.forEach(c=>{const b=best[c.id];
+      grid.append(el("button",{class:"case",type:"button",onclick:()=>{location.hash="#"+c.id;}},
+        el("span",{class:"no"},String(c.no).padStart(2,"0")),
+        el("span",{},el("div",{class:"t"},c.title),el("div",{class:"s"},c.short),
+          b!=null?el("div",{class:"sc "+(b>=85?"ok":"mid")},`Eng yaxshi natija: ${b} %`):null)));});
+    app.append(el("section",{class:"grp"},el("h2",{},g),grid));
+  });
+  window.scrollTo(0,0);
+}
+
+function openCase(c){
+  if(CUR&&CUR.cleanup)CUR.cleanup();const ot=$(".toast");if(ot)ot.remove();
+  app.innerHTML="";
+  const P=c.gen();
+  const ctx={c,P,rec:{},errs:[],stepDone:c.steps.map(()=>false),cleanups:[],checked:false};
+  CUR=ctx;
+  ctx.cleanup=()=>{ctx.cleanups.forEach(f=>{try{f();}catch(e){}});ctx.cleanups=[];};
+  const stepsOl=el("ol");
+  const logBox=el("div",{class:"log","aria-live":"polite"});
+  const stage=el("div",{class:"stage"});
+  const jr=el("div",{class:"card jr"});
+  const resBox=el("div");
+  ctx.stage=stage;
+  ctx.msg=(t,k="")=>{const d=el("div",{class:k},t);logBox.append(d);logBox.scrollTop=logBox.scrollHeight;};
+  ctx.say=t=>ctx.msg("🗣 "+t,"pt");
+  ctx.err=t=>{if(ctx.checked)return;ctx.errs.push(t);ctx.msg("✗ "+t,"err");toast(t);};
+  ctx.ok=t=>ctx.msg("✓ "+t,"ok");
+  ctx.renderSteps=()=>{stepsOl.innerHTML="";const cur=ctx.stepDone.indexOf(false);
+    c.steps.forEach((s,i)=>stepsOl.append(el("li",{class:ctx.stepDone[i]?"done":(i===cur?"cur":"")},s)));};
+  ctx.done=i=>{if(!ctx.stepDone[i]){ctx.stepDone[i]=true;ctx.renderSteps();}};
+  ctx.isDone=i=>ctx.stepDone[i];
+  ctx.need=(i,silent)=>{for(let k=0;k<i;k++)if(!ctx.stepDone[k]&&!(c.optional||[]).includes(k)){if(!silent)ctx.err(`Avval ${k+1}-bosqichni bajaring: «${c.steps[k]}»`);return false;}return true;};
+  ctx.onClean=f=>ctx.cleanups.push(f);
+
+  app.append(el("div",{class:"top"},
+    el("button",{class:"btn sm",type:"button",onclick:()=>{location.hash="";}},"← Holatlar"),
+    el("h1",{},`${c.no}. ${c.title}`),
+    el("button",{class:"btn sm",type:"button",onclick:()=>openCase(c)},"↻ Yangi tekshiriluvchi")));
+  app.append(el("div",{class:"subj",html:c.subj(P)}));
+  const lay=el("div",{class:"lay"});
+  const panel=el("div",{class:"panel"},
+    el("div",{class:"card steps"},el("h3",{},"Ish tartibi"),stepsOl),
+    el("div",{class:"card"},el("h3",{},"Laboratoriya daftari"),logBox),
+    jr,resBox);
+  lay.append(stage,panel);app.append(lay);
+  ctx.renderSteps();
+  c.build(ctx);
+  buildJournal(ctx,jr,resBox);
+  window.scrollTo(0,0);
+}
+
+function buildJournal(ctx,jr,resBox){
+  const c=ctx.c;
+  jr.append(el("h3",{},"Natijalar bayonnomasi"));
+  const fields=c.journal(ctx);
+  ctx.fields=fields;
+  fields.forEach(f=>{
+    let inp;
+    if(f.type==="sel"){inp=el("select",{id:"f_"+f.id},el("option",{value:""},"— tanlang —"),...f.options.map((o,i)=>el("option",{value:String(i)},o)));}
+    else inp=el("input",{id:"f_"+f.id,inputmode:"decimal",autocomplete:"off",placeholder:f.ph||""});
+    f.inp=inp;f.fb=el("div",{class:"fb"});
+    jr.append(el("label",{for:"f_"+f.id},f.label),el("div",{class:"inp"},inp,f.unit?el("span",{class:"u"},f.unit):null),f.fb);
+  });
+  const mc=c.mc(ctx);ctx.mcq=mc;
+  const mcBox=el("div",{class:"mc"});
+  mcBox.append(el("label",{style:"border:0;padding:0;margin-top:12px;font-weight:600;cursor:default"},mc.q));
+  mc.opts.forEach((o,i)=>{const l=el("label",{},el("input",{type:"radio",name:"mc",value:String(i)}),el("span",{},o));mcBox.append(l);});
+  jr.append(mcBox);
+  const btn=el("button",{class:"btn pri",type:"button",style:"margin-top:12px;width:100%"},"Natijani tekshirish");
+  jr.append(btn);
+  btn.onclick=()=>{
+    if(ctx.checked)return;
+    const empty=fields.filter(f=>f.inp.value==="");
+    const mcSel=$("input[name=mc]:checked",mcBox);
+    if(empty.length||!mcSel){toast("Barcha maydonlarni to'ldiring va xulosani tanlang");return;}
+    // bajarilmagan bosqichlar
+    const miss=c.steps.map((s,i)=>(!ctx.stepDone[i]&&!(c.optional||[]).includes(i)&&!(c.noJournalStep===i))?s:null).filter(Boolean);
+    let got=0,tot=fields.length+1;
+    fields.forEach(f=>{const v=f.type==="sel"?Number(f.inp.value):num(f.inp.value);
+      let r;try{r=f.check(v,ctx);}catch(e){r=[false,"tekshirib bo'lmadi"];}
+      const [ok,right]=r;if(ok)got++;
+      f.fb.className="fb "+(ok?"ok":"no");f.fb.textContent=(ok?"✓ To'g'ri. ":"✗ Noto'g'ri. ")+(right||"");f.inp.disabled=true;});
+    const sel=Number(mcSel.value);
+    $$("label",mcBox).slice(1).forEach((l,i)=>{if(i===mc.ans)l.classList.add("ok");else if(i===sel)l.classList.add("no");$("input",l).disabled=true;});
+    if(sel===mc.ans)got++;
+    ctx.checked=true;
+    miss.forEach(s=>ctx.errs.push("Bajarilmagan bosqich: «"+s+"»"));
+    if(c.extraErrs)c.extraErrs(ctx).forEach(e=>ctx.errs.push(e));
+    if(c.after)try{c.after(ctx);}catch(e){}
+    const pen=Math.min(0.5,0.08*ctx.errs.length);
+    const pct=Math.max(0,Math.round(100*(got/tot)*(1-pen)));
+    const best=store.get("best",{});if(best[c.id]==null||pct>best[c.id]){best[c.id]=pct;store.set("best",best);}
+    btn.disabled=true;
+    const cls=pct>=85?"good":pct>=60?"mid":"low";
+    resBox.innerHTML="";
+    resBox.append(el("div",{class:"res "+cls},
+      el("div",{class:"big"},pct+" %"),
+      el("div",{class:"small"},`To'g'ri javoblar: ${got} / ${tot}. Ish tartibidagi xatolar: ${ctx.errs.length}${ctx.errs.length?" (har biri natijani 8 % ga kamaytiradi, ko'pi bilan 50 %)":""}.`),
+      ctx.errs.length?el("ul",{class:"small",style:"margin:8px 0 0;padding-left:18px"},...ctx.errs.map(e=>el("li",{},e))):null,
+      el("div",{class:"small",style:"margin-top:10px",html:"<b>Izoh.</b> "+mc.why}),
+      c.explain?el("div",{class:"small",style:"margin-top:8px",html:c.explain(ctx)}):null,
+      el("div",{class:"row",style:"margin-top:12px"},
+        el("button",{class:"btn pri sm",type:"button",onclick:()=>openCase(c)},"Yangi tekshiriluvchi bilan qayta"),
+        el("button",{class:"btn sm",type:"button",onclick:()=>{location.hash="";}},"Holatlar ro'yxati"))));
+    resBox.scrollIntoView({behavior:"smooth",block:"nearest"});
+  };
+}
+/* Tekshirish yordamchilari */
+const near=(v,t,tol)=>Number.isFinite(v)&&Math.abs(v-t)<=tol+1e-9;
+function chk(t,tol,txt){return v=>[near(v,t,tol),txt||("To'g'ri qiymat: "+t)];}
+
+function route(){const id=location.hash.slice(1);const c=CASES.find(x=>x.id===id);if(c)openCase(c);else home();}
+
+/* ===== Umumiy: nerv-muskul preparati qurilmasi ===== */
+function nmSetup(ctx,opts={}){
+  const s=svgRoot(900,330);
+  sv("rect",{x:0,y:0,width:900,height:330,fill:"#EEF1F3"},s);
+  sv("rect",{x:0,y:300,width:900,height:30,fill:"#B9A588"},s); // stol
+  // shtativ
+  sv("rect",{x:96,y:20,width:10,height:282,fill:"#6F7A84"},s);
+  sv("rect",{x:60,y:294,width:90,height:10,rx:3,fill:"#4E5861"},s);
+  sv("rect",{x:100,y:44,width:118,height:12,rx:3,fill:"#7D8892"},s); // qisqich tutgichi
+  sv("rect",{x:206,y:34,width:30,height:30,rx:4,fill:"#5C666F"},s);
+  sv("text",{x:221,y:28,"text-anchor":"middle","font-size":11,fill:"#444",text:"qisqich"},s);
+  // son suyagi
+  sv("rect",{x:216,y:58,width:10,height:34,rx:4,fill:"#E9E2CF",stroke:"#B9AE90"},s);
+  const prep=sv("g",{},s);
+  const mus=sv("path",{d:"",fill:"#C46A5E",stroke:"#8E4038","stroke-width":1.5},prep);
+  const tendon=sv("line",{x1:221,y1:190,x2:221,y2:238,stroke:"#EEE7D6","stroke-width":3},prep);
+  const nerve=sv("path",{d:"M214 96 C 180 110, 160 130, 150 150 L 150 160",fill:"none",stroke:"#E7C84A","stroke-width":2.6},prep);
+  sv("text",{x:145,y:122,"text-anchor":"end","font-size":11,fill:"#555",text:"quymich nervi"},prep);
+  sv("text",{x:262,y:142,"font-size":11,fill:"#555",text:"boldir muskuli"},prep);
+  // miograf richagi
+  sv("circle",{cx:120,cy:242,r:6,fill:"#333"},s);
+  sv("rect",{x:100,y:236,width:20,height:30,fill:"#6F7A84"},s);
+  const lever=sv("g",{},s);
+  sv("line",{x1:120,y1:242,x2:598,y2:242,stroke:"#333","stroke-width":3},lever);
+  sv("path",{d:"M598 242 l14 -2 l0 4 z",fill:"#222"},lever);
+  sv("text",{x:330,y:262,"font-size":11,fill:"#555",text:"miograf richagi"},s);
+  sv("line",{x1:221,y1:238,x2:221,y2:242,stroke:"#999","stroke-width":1.5},s);
+  // kimograf baraban
+  sv("rect",{x:612,y:60,width:130,height:236,rx:10,fill:"#1B1B1B",stroke:"#555"},s);
+  for(let i=0;i<6;i++)sv("line",{x1:620,y1:90+i*36,x2:734,y2:90+i*36,stroke:"#2B2B2B"},s);
+  sv("rect",{x:668,y:296,width:18,height:8,fill:"#4E5861"},s);
+  sv("text",{x:677,y:52,"text-anchor":"middle","font-size":11,fill:"#555",text:"kimograf (qurumlangan qog'oz)"},s);
+  // elektrodlar
+  const elN=sv("g",{},s);
+  sv("line",{x1:138,y1:156,x2:162,y2:156,stroke:"#B88A2E","stroke-width":3},elN);
+  sv("line",{x1:138,y1:164,x2:162,y2:164,stroke:"#B88A2E","stroke-width":3},elN);
+  sv("path",{d:"M138 156 C 60 150, 40 200, 30 300",fill:"none",stroke:"#C0392B","stroke-width":2},elN);
+  sv("path",{d:"M138 164 C 70 168, 50 210, 40 300",fill:"none",stroke:"#2C3E50","stroke-width":2},elN);
+  const elM=sv("g",{},s);
+  sv("line",{x1:250,y1:118,x2:232,y2:126,stroke:"#999","stroke-width":2.4},elM);
+  sv("line",{x1:250,y1:168,x2:232,y2:166,stroke:"#999","stroke-width":2.4},elM);
+  sv("path",{d:"M250 118 C 320 110, 330 220, 320 300",fill:"none",stroke:"#C0392B","stroke-width":2},elM);
+  sv("path",{d:"M250 168 C 300 180, 310 240, 300 300",fill:"none",stroke:"#2C3E50","stroke-width":2},elM);
+  sv("text",{x:20,y:318,"font-size":11,fill:"#333",text:"→ elektrostimulyatorga"},s);
+  const drops=sv("g",{opacity:0},s);
+  for(let i=0;i<5;i++)sv("ellipse",{cx:205+i*8,cy:100+i*14,rx:2.5,ry:3.5,fill:"#7FC6E8"},drops);
+  const spark=sv("g",{opacity:0},s);
+  sv("path",{d:"M150 140 l6 -10 l-2 8 l6 -2 l-8 12 l2 -8 z",fill:"#F5B700"},spark);
+  sv("path",{d:"M236 110 l6 -10 l-2 8 l6 -2 l-8 12 l2 -8 z",fill:"#F5B700"},spark);
+  const st={k:0,mounted:false,elec:null};
+  function draw(){const k=st.k;const w=22+k*10,top=92,bot=190-k*14;
+    mus.setAttribute("d",`M216 ${top} C ${221-w} ${top+30}, ${221-w} ${bot-30}, 221 ${bot} C ${221+w} ${bot-30}, ${221+w} ${top+30}, 226 ${top} Z`);
+    tendon.setAttribute("y1",bot);tendon.setAttribute("y2",238);
+    lever.setAttribute("transform",`rotate(${-k*2.6} 120 242)`);
+    elN.setAttribute("opacity",st.elec==="nerv"?1:0);elM.setAttribute("opacity",st.elec==="muskul"?1:0);
+    prep.setAttribute("opacity",st.mounted?1:0.25);tendon.setAttribute("opacity",st.mounted?1:0);}
+  draw();
+  let raf=0;
+  st.set=x=>{st.k=x;draw();};
+  st.twitch=(amp,dur=380)=>{cancelAnimationFrame(raf);const t0=performance.now();spark.setAttribute("opacity",1);setTimeout(()=>spark.setAttribute("opacity",0),120);
+    const f=now=>{const x=(now-t0)/dur;if(x>=1){st.set(0);return;}const y=x<0.35?Math.sin(x/0.35*Math.PI/2):Math.cos((x-0.35)/0.65*Math.PI/2);st.set(amp*y);raf=requestAnimationFrame(f);};raf=requestAnimationFrame(f);};
+  st.wet=()=>{drops.setAttribute("opacity",1);setTimeout(()=>drops.setAttribute("opacity",0),900);};
+  st.draw=draw;st.svg=s;st.spark=spark;
+  ctx.onClean(()=>cancelAnimationFrame(raf));
+  return st;
+}
+/* qurumlangan kimogramma lentasi */
+function kymo(w,h,label){
+  const cv=el("canvas",{width:w,height:h,style:"background:#141414"});
+  const g=cv.getContext("2d");
+  g.fillStyle="#141414";g.fillRect(0,0,w,h);
+  if(label){g.fillStyle="#9A9A9A";g.font="13px IBM Plex Sans, sans-serif";g.fillText(label,8,16);}
+  return {cv,g,w,h};
+}
+
+/* ===== 1-holat: ta'sirlash bo'sag'asi va kuch qonuni ===== */
+CASES.push({id:"c01",no:1,grp:0,
+  title:"Ta'sirlash bo'sag'asi va kuch qonuni",
+  short:"Baqa nerv-muskul preparati, elektrostimulyator, kimograf",
+  gen(){const Tn=0.05*ri(5,12),Mn=Tn+0.05*ri(18,30);const Tm=Math.round(Tn*rnd(2.4,3.2)/0.05)*0.05,Mm=Tm+0.05*ri(20,30);
+    return {Tn:+Tn.toFixed(2),Mn:+Mn.toFixed(2),Tm:+Tm.toFixed(2),Mm:+Mm.toFixed(2)};},
+  subj:P=>`<b>Ob'ekt:</b> baqaning nerv-muskul preparati (quymich nervi + boldir muskuli). <b>Vazifa:</b> nervni bilvosita va muskulni bevosita ta'sirlab, ularning ta'sirlash bo'sag'asini, nerv orqali ta'sirlashda maksimal ta'sirot kuchini aniqlash va kuch qonunini ko'rsatish.`,
+  steps:["Preparatni qisqichga mahkamlab, payini miograf richagiga ulash","Preparatni Ringer eritmasi bilan namlash","Elektrodlarni quymich nerviga qo'yish (bilvosita ta'sirlash)","Kuchlanishni noldan asta oshirib, nervning bo'sag'asini topish","Kuchni oshirib, maksimal qisqarishni va supermaksimal kuchda amplituda o'smasligini ko'rsatish","Elektrodlarni muskulga ko'chirib, kuchlanishni noldan oshirib muskulning bo'sag'asini topish"],
+  build(ctx){const P=ctx.P,R=ctx.rec;R.n=[];R.m=[];
+    const nm=nmSetup(ctx);ctx.stage.append(nm.svg);
+    const K=kymo(900,250,"Kimogramma (yakka qisqarishlar, baraban qo'lda siljitiladi; 1 mm = 4 px)");ctx.stage.append(el("div",{style:"margin-top:10px"},K.cv));
+    // shkala
+    const g=K.g;g.strokeStyle="#666";g.fillStyle="#888";g.font="10px IBM Plex Mono, monospace";
+    for(let mm=0;mm<=45;mm+=5){const y=220-mm*4;g.beginPath();g.moveTo(30,y);g.lineTo(mm%10?36:40,y);g.stroke();if(mm%10===0)g.fillText(mm+" mm",42,y+3);}
+    g.strokeStyle="#555";g.beginPath();g.moveTo(90,220);g.lineTo(890,220);g.stroke();
+    let x=96,stimCnt=0,wetAt=-1;
+    const amp=V=>{const T=nm.elec==="nerv"?P.Tn:P.Tm,M=nm.elec==="nerv"?P.Mn:P.Mm;if(V<T-1e-9)return 0;return 1.5+38.5*clamp((V-T)/(M-T),0,1);};
+    const vol=stepper({label:"Kuchlanish",val:0,min:0,max:6,steps:[0.05,0.5],fmt:v=>fx(v,2)+" V"});
+    const bMount=el("button",{class:"btn sm",type:"button",onclick:()=>{nm.mounted=true;nm.draw();ctx.done(0);ctx.ok("Preparat qisqichga mahkamlandi, payi richagga ip bilan ulandi.");}},"Preparatni o'rnatish");
+    const bWet=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!nm.mounted){ctx.err("Avval preparatni o'rnating");return;}nm.wet();wetAt=stimCnt;ctx.done(1);ctx.ok("Preparat Ringer eritmasi bilan namlandi.");}},"Ringer bilan namlash");
+    const bN=el("button",{class:"btn sm",type:"button",onclick:()=>setEl("nerv")},"Elektrodlar → nervga");
+    const bM=el("button",{class:"btn sm",type:"button",onclick:()=>setEl("muskul")},"Elektrodlar → muskulga");
+    function setEl(w){if(!ctx.need(2))return;if(w==="muskul"&&!ctx.isDone(4)){ctx.err("Avval nerv orqali bo'sag'a va maksimal kuchni aniqlang (3–5-bosqichlar)");return;}
+      nm.elec=w;nm.draw();bN.classList.toggle("on",w==="nerv");bM.classList.toggle("on",w==="muskul");
+      if(w==="nerv")ctx.done(2);ctx.msg(w==="nerv"?"Elektrodlar quymich nerviga qo'yildi.":"Igna elektrodlar muskulga kiritildi (bevosita ta'sirlash).");
+      vol.set(0);mark(w);}
+    function mark(w){g.fillStyle="#BBB";g.font="11px IBM Plex Sans, sans-serif";g.fillText(w==="nerv"?"nerv":"muskul",x,236);x+=6;}
+    const bStim=el("button",{class:"btn pri sm",type:"button",onclick:stim},"⚡ Bitta ta'sirot");
+    function stim(){
+      if(!nm.mounted){ctx.err("Preparat o'rnatilmagan");return;}
+      if(!nm.elec){ctx.err("Elektrodlar preparatga qo'yilmagan");return;}
+      if(wetAt<0){ctx.err("Preparat Ringer eritmasi bilan namlanmagan — u tez quriydi va qo'zg'aluvchanligini yo'qotadi");wetAt=stimCnt;}
+      const V=vol.get();const A=amp(V);stimCnt++;
+      if(stimCnt-wetAt>40&&stimCnt%10===0)ctx.msg("Eslatma: preparat qurimasligi uchun vaqti-vaqti bilan Ringer eritmasi bilan namlang.","pt");
+      const arr=nm.elec==="nerv"?R.n:R.m;arr.push({V,A});
+      nm.twitch(A/40);
+      if(x>880){g.fillStyle="#141414";g.fillRect(90,20,800,230);g.strokeStyle="#555";g.beginPath();g.moveTo(90,220);g.lineTo(890,220);g.stroke();x=96;ctx.msg("Kimograf barabaniga yangi qog'oz qo'yildi.");}
+      g.strokeStyle="#F2F2F2";g.lineWidth=1.6;g.beginPath();g.moveTo(x,220);g.lineTo(x,220-A*4);g.stroke();
+      g.fillStyle="#9A9A9A";g.font="9px IBM Plex Mono, monospace";g.save();g.translate(x+3,246);g.rotate(-Math.PI/2);g.fillText(fx(V,2),0,0);g.restore();
+      x+=11;
+      const T=nm.elec==="nerv"?P.Tn:P.Tm;
+      if(arr.length===1&&A>0){ctx.err("Bo'sag'ani aniqlash uchun kuchlanishni noldan (bo'sag'aosti qiymatlardan) boshlab asta oshirish kerak edi");}
+      ctx.msg(`${fx(V,2)} V → ${A>0?"qisqarish, amplituda ≈ "+fx(A,1)+" mm":"qisqarish yo'q"}`);
+      // bosqichlar
+      if(nm.elec==="nerv"){
+        const sub=R.n.some(r=>r.A===0),firstC=R.n.find(r=>r.A>0);
+        if(sub&&firstC&&ctx.need(3,true))ctx.done(3);
+        const hasMax=R.n.some(r=>r.V>=P.Mn-1e-9),sup=R.n.some(r=>r.V>=P.Mn+0.2-1e-9);
+        if(ctx.isDone(3)&&hasMax&&sup)ctx.done(4);
+      }else{
+        const sub=R.m.some(r=>r.A===0),c=R.m.some(r=>r.A>0);
+        if(sub&&c)ctx.done(5);
+      }
+    }
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Preparat",bMount,bWet),ctlGroup("Elektrodlar",bN,bM),ctlGroup("Elektrostimulyator",vol,bStim)));
+    ctx.stage.append(el("p",{class:"note"},"Elektrostimulyatorda «−/+» kuchlanishni 0,05 V ga, «« »» esa 0,5 V ga o'zgartiradi. Har bir ta'sirotdan keyin baraban qo'lda bir oz siljitiladi; ostida kuchlanish yozib boriladi."));
+  },
+  journal:ctx=>{const P=ctx.P;return[
+    {id:"tn",label:"Nervning ta'sirlash bo'sag'asi (bilvosita)",unit:"V",check:v=>[near(v,P.Tn,0.05),"Bo'sag'a: "+fx(P.Tn,2)+" V"]},
+    {id:"mx",label:"Nerv orqali ta'sirlashdagi maksimal ta'sirot kuchi",unit:"V",check:v=>[near(v,P.Mn,0.1),"Maksimal kuch: "+fx(P.Mn,2)+" V (bundan kuchli ta'sirot amplitudani oshirmaydi)"]},
+    {id:"tm",label:"Muskulning ta'sirlash bo'sag'asi (bevosita)",unit:"V",check:v=>[near(v,P.Tm,0.05),"Bo'sag'a: "+fx(P.Tm,2)+" V"]}];},
+  mc:()=>({q:"Xulosa: natijalar nimani ko'rsatadi?",opts:[
+    "Nervning bo'sag'asi past — qo'zg'aluvchanligi muskulnikidan yuqori; bo'sag'adan maksimalgacha amplituda ortadi, chunki tobora ko'proq muskul tolalari qo'zg'aladi (kuch qonuni)",
+    "Muskulning bo'sag'asi past — qo'zg'aluvchanligi nervnikidan yuqori; amplituda ortishi har bir tolaning qisqarish kuchi ortishiga bog'liq",
+    "Butun muskul «hammasi yoki hech narsa» qonuniga bo'ysunadi, shuning uchun amplituda kuchga bog'liq emas",
+    "Bo'sag'a qanchalik yuqori bo'lsa, qo'zg'aluvchanlik shunchalik yuqori bo'ladi"],ans:0,
+    why:"Qo'zg'aluvchanlik bo'sag'a kuchiga teskari proporsional: nervning bo'sag'asi past, demak qo'zg'aluvchanligi yuqori. Butun muskul turli bo'sag'ali tolalardan iborat — kuch oshgani sari qo'zg'algan tolalar soni ortadi (kuch qonuni). Maksimal kuchda barcha tolalar qo'zg'algan; supermaksimal kuch amplitudani oshirmaydi. Alohida tola esa «hammasi yoki hech narsa» qonuniga bo'ysunadi."}),
+  explain:ctx=>{const P=ctx.P;return `Bu preparatda: nervning bo'sag'asi ${fx(P.Tn,2)} V, maksimal kuch ${fx(P.Mn,2)} V; muskulning bo'sag'asi ${fx(P.Tm,2)} V (nervnikidan ≈ ${fx(P.Tm/P.Tn,1)} marta yuqori).`;}
+});
+
+/* ===== 2-holat: yakka qisqarish va tetanus ===== */
+const TET_F=[1,5,10,15,20,30,40,50,100,150];
+function tetModel(P,f,dur=2,rec=2.6){
+  const dt=0.001,n=Math.round(rec/dt),y=new Float32Array(n);
+  const L=P.L/1000,C=P.C/1000,Rr=P.R/1000;
+  const tw=t=>{if(t<L)return 0;t-=L;if(t<C)return 0.5*(1-Math.cos(Math.PI*t/C));t-=C;if(t<Rr)return 0.5*(1+Math.cos(Math.PI*t/Rr));return 0;};
+  const pulses=[];const iv=1/f;for(let t=0.1;t<0.1+dur-1e-9;t+=iv)pulses.push(t);
+  if(f===1)pulses.splice(2);
+  const cc=1.958,Ym=50;
+  for(let i=0;i<n;i++){const t=i*dt;let S=0;for(let k=0;k<pulses.length;k++){const tp=pulses[k];if(tp>t)break;if(t-tp>L+C+Rr)continue;let w=1;if(f>=100&&tp>0.15)w=0.12;S+=w*tw(t-tp);}y[i]=Ym*(1-Math.exp(-S/cc));}
+  // to'lqinlanish (oxirgi 0,6 s)
+  let mx=0,mn=1e9;for(let i=Math.round((0.1+dur-0.6)/dt);i<Math.round((0.1+dur)/dt);i++){mx=Math.max(mx,y[i]);mn=Math.min(mn,y[i]);}
+  const r=mx>0?(mx-mn)/mx:1;
+  let cls=r>0.9?"alohida":r>0.06?"tishli":"silliq";if(f>=100)cls="pessimum";
+  return {y,pulses,r,cls,dt};
+}
+CASES.push({id:"c02",no:2,grp:0,
+  title:"Yakka qisqarish va tetanus",
+  short:"Qisqarish fazalari, tishli va silliq tetanus, optimum va pessimum",
+  gen(){return {L:ri(8,12),C:ri(40,50),R:ri(80,100)};},
+  subj:()=>`<b>Ob'ekt:</b> baqaning nerv-muskul preparati, miograf, kimograf, vaqt otmetchigi (100 Hz — har bir tishcha 10 ms). <b>Vazifa:</b> yakka qisqarish fazalarini o'lchash, turli chastotada ta'sirlab tishli va silliq tetanusni yozish, pessimumni ko'rsatish.`,
+  steps:["Preparatni o'rnatish va Ringer eritmasi bilan namlash","Barabanni «tez» tezlikka qo'yib, bitta ta'sirot bilan yakka qisqarishni yozish","Barabanni «sekin» tezlikka o'tkazib, past chastotada (2 s) tishli tetanusni yozish","Chastotani oshirib, silliq tetanusni yozish","100 Hz va undan yuqori chastotada pessimumni, so'ng chastotani kamaytirib qisqarish tiklanishini (optimum) ko'rsatish"],
+  build(ctx){const P=ctx.P,R=ctx.rec;R.recs={};R.seq=[];
+    const nm=nmSetup(ctx);nm.elec="nerv";nm.draw();ctx.stage.append(nm.svg);
+    const strips=el("div",{style:"display:flex;flex-direction:column;gap:8px;margin-top:10px;overflow-x:auto"});
+    let speed="sekin",freq=10,ready=false;
+    const bReady=el("button",{class:"btn sm",type:"button",onclick:()=>{nm.mounted=true;nm.draw();nm.wet();ready=true;ctx.done(0);ctx.ok("Preparat o'rnatildi, Ringer bilan namlandi. Elektrodlar nervda.");}},"Preparatni o'rnatish va namlash");
+    const spBtns=["sekin","tez"].map(s=>el("button",{class:"btn sm"+(s===speed?" on":""),type:"button",onclick:()=>{speed=s;spBtns.forEach(b=>b.classList.toggle("on",b.textContent.startsWith(s)));}},s==="tez"?"tez (500 mm/s)":"sekin (50 mm/s)"));
+    const fSel=el("select",{style:"min-height:34px;border-radius:7px;border:1px solid var(--line);padding:4px 8px;background:var(--surface)",onchange:e=>freq=+e.target.value},...TET_F.map(f=>el("option",{value:f,selected:f===10},f+" Hz")));
+    const bOne=el("button",{class:"btn pri sm",type:"button",onclick:()=>run(true)},"⚡ Bitta ta'sirot");
+    const bSer=el("button",{class:"btn pri sm",type:"button",onclick:()=>run(false)},"⚡ Seriya (2 s)");
+    function run(single){
+      if(!ready){ctx.err("Avval preparatni o'rnating va namlang");return;}
+      if(single){
+        if(speed!=="tez")ctx.msg("Sekin barabanda yakka qisqarish ingichka chiziq bo'lib yoziladi — fazalarni o'lchab bo'lmaydi. Fazalar uchun «tez» tezlik kerak.","pt");
+        const m=tetModel(P,1,0.001,0.25);
+        drawStrip(m,speed,"Yakka qisqarish ("+(speed==="tez"?"500":"50")+" mm/s)",true);nm.twitch(0.5);
+        if(speed==="tez"){R.single=true;ctx.done(1);}
+        return;}
+      if(speed==="tez"){ctx.err("Tetanusni tez aylanayotgan barabanda yozib bo'lmaydi — 2 s davomida lenta 1 m dan ortiq siljiydi. «Sekin» tezlikni tanlang.");return;}
+      if(!ctx.need(2))return;
+      const m=tetModel(P,freq);R.recs[freq]=m.cls;R.seq.push(freq);
+      drawStrip(m,"sekin",freq+" Hz, 2 s");
+      nm.twitch(m.cls==="pessimum"?0.35:Math.min(1,m.y.reduce((a,b)=>Math.max(a,b),0)/40),2200);
+      const names={alohida:"alohida yakka qisqarishlar qatori",tishli:"qisqarishlar qisman qo'shiladi",silliq:"qisqarishlar to'liq qo'shiladi",pessimum:"boshida qisqa ko'tarilish, so'ng qisqarish keskin kamayadi"};
+      ctx.msg(`${freq} Hz: ${names[m.cls]}.`);
+      if(m.cls==="tishli")ctx.done(2);
+      if(m.cls==="silliq"&&ctx.isDone(2))ctx.done(3);
+      if(R.seq.some((f,i)=>f>=100&&R.seq.slice(i+1).some(g=>g<=50&&R.recs[g]==="silliq")))ctx.done(4);
+    }
+    function drawStrip(m,sp,label,single){
+      const pxs=sp==="tez"?2:0.2; // px/ms: 500 mm/s => 0.5 mm/ms => 2 px/ms (1 mm = 4 px)
+      const n=m.y.length,W=Math.min(900,Math.max(420,Math.round(n*pxs)+60));
+      const K=kymo(W,single&&sp==="tez"?214:184,label);const g=K.g,base=K.h-58;
+      g.strokeStyle="#F2F2F2";g.lineWidth=1.6;g.beginPath();
+      for(let i=0;i<n;i++){const X=30+i*pxs,Y=base-m.y[i]*2.2;if(X>W-6)break;i?g.lineTo(X,Y):g.moveTo(X,Y);}g.stroke();
+      // ta'sirot otmetchigi
+      const yS=K.h-40;g.strokeStyle="#CFCFCF";g.lineWidth=1.2;g.beginPath();g.moveTo(30,yS);
+      if(single||m.pulses.length<40){m.pulses.forEach(tp=>{const X=30+tp*1000*pxs;if(X>W-6)return;g.lineTo(X,yS);g.lineTo(X,yS-7);g.lineTo(X+1.2,yS-7);g.lineTo(X+1.2,yS);});}
+      else{const a=30+m.pulses[0]*1000*pxs,b=30+(m.pulses[m.pulses.length-1]*1000+2)*pxs;g.lineTo(a,yS);g.lineTo(a,yS-7);g.lineTo(Math.min(b,W-6),yS-7);g.lineTo(Math.min(b,W-6),yS);}
+      g.lineTo(W-6,yS);g.stroke();
+      // vaqt otmetchigi: 10 ms
+      const yT=K.h-22;g.beginPath();g.moveTo(30,yT);const tick=sp==="tez"?10:100;
+      for(let t=0;t*pxs<W-40;t+=tick){const X=30+t*pxs;g.lineTo(X,yT);g.lineTo(X,yT-4);g.lineTo(X+tick*pxs/2,yT-4);g.lineTo(X+tick*pxs/2,yT);}g.stroke();
+      g.fillStyle="#9A9A9A";g.font="11px IBM Plex Sans, sans-serif";g.fillText(sp==="tez"?"vaqt otmetchigi: 1 to'lqin = 10 ms":"vaqt otmetchigi: 1 to'lqin = 100 ms",34,K.h-5);
+      g.fillText("ta'sirot otmetchigi",W-120,yS-5);
+      K.cv.style.width=W+"px";K.cv.style.maxWidth="none";strips.prepend(K.cv);
+    }
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Preparat",bReady),ctlGroup("Baraban",...spBtns),ctlGroup("Stimulyator",fSel,bOne,bSer)));
+    ctx.stage.append(el("p",{class:"note"},"Pastki chiziqlar: ta'sirot otmetchigi va vaqt otmetchigi. «Tez» barabanda vaqt otmetchigining har bir to'lqini 10 ms; latent davrni ta'sirot belgisidan egri chiziq ko'tarila boshlaguncha, qisqarish fazasini cho'qqigacha, bo'shashishni boshlang'ich chiziqqa qaytguncha sanang."),strips);
+  },
+  journal:ctx=>{const P=ctx.P,R=ctx.rec;const opts=TET_F.map(f=>f+" Hz");
+    const fchk=want=>v=>{const f=TET_F[v];if(!(f in R.recs))return[false,`Siz ${f} Hz da yozmagansiz. ${want==="tishli"?"Tishli":"Silliq"} tetanus bu preparatda: ${TET_F.filter(g=>tetModel(P,g).cls===want).join(", ")} Hz`];
+      return [R.recs[f]===want,`${f} Hz dagi yozuv: ${({alohida:"alohida qisqarishlar",tishli:"tishli tetanus",silliq:"silliq tetanus",pessimum:"pessimum"})[R.recs[f]]}`];};
+    return[
+    {id:"l",label:"Latent davr",unit:"ms",check:v=>[near(v,P.L,4),"≈ "+P.L+" ms"]},
+    {id:"c",label:"Qisqarish fazasi",unit:"ms",check:v=>[near(v,P.C,8),"≈ "+P.C+" ms"]},
+    {id:"r",label:"Bo'shashish fazasi",unit:"ms",check:v=>[near(v,P.R,10),"≈ "+P.R+" ms"]},
+    {id:"ft",label:"Tishli tetanus yozilgan chastota",type:"sel",options:opts,check:fchk("tishli")},
+    {id:"fs",label:"Silliq tetanus yozilgan chastota",type:"sel",options:opts,check:fchk("silliq")}];},
+  mc:()=>({q:"Silliq tetanus qachon hosil bo'ladi?",opts:[
+    "Har bir keyingi ta'sirot oldingi qisqarishning qisqarish fazasiga tushganda",
+    "Har bir keyingi ta'sirot oldingi qisqarishning bo'shashish fazasiga tushganda",
+    "Ta'sirotlar orasidagi interval yakka qisqarish davomiyligidan uzun bo'lganda",
+    "Impulslar muskulning absolyut refrakter davriga tushganda"],ans:0,
+    why:"Ta'sirot oldingi qisqarishning bo'shashish fazasiga tushsa — tishli tetanus, qisqarish fazasiga tushsa — qisqarishlar to'liq qo'shilib silliq tetanus hosil bo'ladi. Tetanus amplitudasi yakka qisqarishdan katta. Juda yuqori chastotada (100 Hz dan ortiq) impulslar nerv-muskul sinapsining labilligidan oshib ketadi — pessimum; chastota kamaytirilsa qisqarish tiklanadi (optimum)."}),
+  explain:ctx=>{const P=ctx.P;const cl=TET_F.map(f=>`${f} Hz — ${({alohida:"alohida",tishli:"tishli",silliq:"silliq",pessimum:"pessimum"})[tetModel(P,f).cls]}`).join("; ");
+    return `Bu preparatda: latent davr ${P.L} ms, qisqarish ${P.C} ms, bo'shashish ${P.R} ms (yakka qisqarish ≈ ${P.L+P.C+P.R} ms). Chastotalar bo'yicha: ${cl}.`;}
+});
+
+/* ===== 3-holat: xronaksimetriya ===== */
+const DUR=[];for(let i=1;i<=30;i++)DUR.push(+(i*0.01).toFixed(2));DUR.push(0.4,0.5,0.6,0.8,1,1.5,2,3,5,10,20,50,100,300);
+CASES.push({id:"c03",no:3,grp:0,
+  title:"Odamda xronaksimetriya",
+  short:"Reobaza va xronaksiyani elektron xronaksimetr bilan aniqlash",
+  gen(){const v=pick(["bukuvchi","yozuvchi","jarohat"]);const Rb=0.5*ri(14,28);
+    const C=v==="bukuvchi"?pick([0.08,0.09,0.1,0.11,0.12,0.13,0.14,0.15,0.16]):v==="yozuvchi"?pick([0.16,0.18,0.2,0.22,0.24,0.26,0.28,0.3]):pick([1,1.5,2,3]);
+    return {v,Rb,C};},
+  subj:P=>P.v==="jarohat"?`<b>Tekshiriluvchi:</b> 34 yoshli erkak, 2 oy oldin yelka suyagi singanidan keyin bilagini yozishda qiynaladi (n. radialis shikastlanishi gumon qilinmoqda). <b>Vazifa:</b> bilak yozuvchi muskullarining harakat nuqtasida reobaza va xronaksiyani aniqlash.`
+    :`<b>Tekshiriluvchi:</b> 20 yoshli sog'lom talaba. <b>Vazifa:</b> bilakning ${P.v==="bukuvchi"?"bukuvchi":"yozuvchi"} muskullari harakat nuqtasida elektron xronaksimetr bilan reobaza va xronaksiyani aniqlash.`,
+  steps:["Teri sohasini fiziologik eritma bilan namlash","Passiv (indifferent) elektrodni kurak sohasiga qo'yish","Aktiv elektrodni muskulning harakat nuqtasiga qo'yish","Uzoq impulslarda (≥ 100 ms) kuchlanishni asta oshirib, reobazani topish","Kuchlanishni ikki reobazaga o'rnatish","Impuls davomiyligini kamaytirib, qisqarish chaqiradigan eng qisqa vaqtni (xronaksiyani) topish"],
+  build(ctx){const P=ctx.P,R=ctx.rec;R.log=[];
+    const s=svgRoot(900,300);sv("rect",{x:0,y:0,width:900,height:300,fill:"#EEF1F3"},s);
+    // bilak va qo'l
+    const ext=P.v!=="bukuvchi";
+    sv("path",{d:"M40 150 C 140 120, 360 120, 520 135 L 520 205 C 360 215, 140 210, 40 200 Z",fill:"#E8B996",stroke:"#B07D5A","stroke-width":1.5},s);
+    sv("text",{x:60,y:118,"font-size":12,fill:"#555",text:ext?"bilakning orqa (yozuvchi) yuzasi":"bilakning old (bukuvchi) yuzasi"},s);
+    sv("path",{d:"M520 132 C 560 128, 600 130, 625 140 L 625 205 C 600 212, 560 210, 520 206 Z",fill:"#E8B996",stroke:"#B07D5A","stroke-width":1.5},s);
+    const fing=sv("g",{},s);
+    for(let i=0;i<4;i++)sv("rect",{x:622,y:140+i*16,width:95,height:14,rx:7,fill:"#E8B996",stroke:"#B07D5A"},fing);
+    sv("ellipse",{cx:560,cy:126,rx:30,ry:9,fill:"#E8B996",stroke:"#B07D5A",transform:"rotate(-20 560 126)"},s);
+    const wet=sv("ellipse",{cx:230,cy:165,rx:46,ry:22,fill:"#7FC6E8",opacity:0},s);
+    const mp=sv("circle",{cx:230,cy:165,r:6,fill:"none",stroke:"#7A2F2F","stroke-dasharray":"3 2"},s);
+    sv("text",{x:230,y:198,"text-anchor":"middle","font-size":11,fill:"#7A2F2F",text:"harakat nuqtasi"},s);
+    const act=sv("g",{opacity:0},s);sv("line",{x1:230,y1:20,x2:230,y2:158,stroke:"#555","stroke-width":5},act);sv("circle",{cx:230,cy:161,r:6,fill:"#C0392B"},act);
+    sv("text",{x:240,y:40,"font-size":11,fill:"#333",text:"aktiv elektrod (katod)"},act);
+    const pas=sv("g",{opacity:0},s);sv("rect",{x:760,y:220,width:110,height:44,rx:6,fill:"#5B6670"},pas);sv("text",{x:815,y:246,"text-anchor":"middle","font-size":11,fill:"#fff",text:"passiv elektrod"},pas);sv("text",{x:815,y:278,"text-anchor":"middle","font-size":10,fill:"#555",text:"(kurak sohasida)"},pas);
+    const spark=sv("path",{d:"M222 150 l6 -10 l-2 8 l6 -2 l-8 12 l2 -8 z",fill:"#F5B700",opacity:0},s);
+    ctx.stage.append(s);
+    let wetD=false,pasD=false,actD=false;
+    const bWet=el("button",{class:"btn sm",type:"button",onclick:()=>{wet.setAttribute("opacity",.35);wetD=true;ctx.done(0);ctx.ok("Teri namlandi (kontakt qarshiligi kamayadi).");}},"Terini namlash");
+    const bPas=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!ctx.need(1))return;pas.setAttribute("opacity",1);pasD=true;ctx.done(1);ctx.ok("Passiv elektrod kurak sohasiga qo'yildi.");}},"Passiv elektrod");
+    const bAct=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!ctx.need(2))return;act.setAttribute("opacity",1);actD=true;ctx.done(2);ctx.ok("Aktiv elektrod harakat nuqtasiga qo'yildi.");}},"Aktiv elektrod");
+    const vol=stepper({label:"Kuchlanish",val:0,min:0,max:80,steps:[0.5,5],fmt:v=>fx(v,1)+" V"});
+    let di=DUR.indexOf(300);
+    const dV=el("span",{class:"v"});const showD=()=>dV.textContent=(DUR[di]>=100?DUR[di]+" ms":fx(DUR[di],DUR[di]<1?2:1)+" ms");
+    const dBox=el("span",{class:"stp"},el("button",{type:"button",onclick:()=>{if(di>0){di--;showD();}}},"−"),dV,el("button",{type:"button",onclick:()=>{if(di<DUR.length-1){di++;showD();}}},"+"));showD();
+    const bImp=el("button",{class:"btn pri sm",type:"button",onclick:imp},"⚡ Impuls");
+    function imp(){
+      if(!actD||!pasD){ctx.err("Elektrodlar qo'yilmagan");return;}
+      if(!wetD){ctx.err("Teri namlanmagan — natija noto'g'ri bo'ladi");wetD=true;}
+      const V=vol.get(),t=DUR[di];const thr=t>=100?P.Rb:P.Rb*(1+P.C/t);const ok=V>=thr-1e-9;
+      R.log.push({V,t,ok});
+      spark.setAttribute("opacity",1);setTimeout(()=>spark.setAttribute("opacity",0),120);
+      if(ok){fing.setAttribute("transform",ext?"rotate(-14 622 170)":"rotate(16 622 170)");setTimeout(()=>fing.removeAttribute("transform"),280);}
+      ctx.msg(`${fx(V,1)} V, ${t>=100?t:fx(t,2)} ms → ${ok?"barmoqlar "+(ext?"yoziladi":"bukiladi")+" (qisqarish bor)":"qisqarish yo'q"}`);
+      // bosqichlar
+      const long=R.log.filter(r=>r.t>=100);
+      if(long.some(r=>r.ok)&&long.some(r=>!r.ok)){const minOk=Math.min(...long.filter(r=>r.ok).map(r=>r.V));if(long.some(r=>!r.ok&&r.V>=minOk-0.5-1e-9&&r.V<minOk))ctx.done(3);}
+      if(R.log.length===1&&ok)ctx.err("Kuchlanishni noldan (qisqarish chaqirmaydigan qiymatdan) boshlab asta oshirish kerak edi");
+      if(ctx.isDone(3)&&Math.abs(V-2*P.Rb)<1e-9)ctx.done(4);
+      if(ctx.isDone(4)&&Math.abs(V-2*P.Rb)<1e-9){const at2=R.log.filter(r=>Math.abs(r.V-2*P.Rb)<1e-9);const iC=DUR.indexOf(P.C);
+        if(at2.some(r=>r.ok&&Math.abs(r.t-P.C)<1e-9)&&at2.some(r=>!r.ok&&iC>0&&Math.abs(r.t-DUR[iC-1])<1e-9))ctx.done(5);}
+    }
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Tayyorlash",bWet,bPas,bAct),ctlGroup("Kuchlanish",vol),ctlGroup("Impuls davomiyligi",dBox),bImp));
+    ctx.stage.append(el("p",{class:"note"},"Xronaksimetr to'g'ri burchakli impulslar beradi. 100 ms va undan uzun impuls amalda doimiy tok kabi ta'sir qiladi — reobaza shu rejimda aniqlanadi. Kuchlanish qadami 0,5 V; davomiylik 0,01 ms qadam bilan kamaytiriladi."));
+  },
+  journal:ctx=>{const P=ctx.P;return[
+    {id:"rb",label:"Reobaza",unit:"V",check:v=>[near(v,P.Rb,0.5),"Reobaza: "+fx(P.Rb,1)+" V"]},
+    {id:"ch",label:"Xronaksiya",unit:"ms",check:v=>[near(v,P.C,P.C<1?0.011:0.01),"Xronaksiya: "+fx(P.C,2)+" ms"]}];},
+  mc:ctx=>{const P=ctx.P;const ans=P.v==="jarohat"?1:0;return{q:"Natijani baholang:",opts:[
+    "Xronaksiya me'yor chegarasida — muskulning qo'zg'aluvchanligi normal",
+    "Xronaksiya keskin oshgan — qo'zg'aluvchanlik pasaygan, nerv shikastlanishiga xos",
+    "Xronaksiya kamaygan — qo'zg'aluvchanlik pasaygan",
+    "Reobaza yuqori bo'lgani uchun xronaksiyani baholab bo'lmaydi"],ans,
+    why:"Xronaksiya — ikki reobazaga teng tok qo'zg'alish chaqirishi uchun zarur eng qisqa vaqt; u vaqt bo'yicha qo'zg'aluvchanlik o'lchovi: xronaksiya qancha kichik bo'lsa, qo'zg'aluvchanlik shuncha yuqori. Me'yorda bukuvchi muskullarda 0,08–0,16 ms, yozuvchilarda 0,16–0,32 ms. Nerv shikastlanganda muskul xronaksiyasi o'nlab marta ortadi, tiklanganda me'yorga qaytadi."};},
+  explain:ctx=>{const P=ctx.P;return `Bu tekshiriluvchida reobaza ${fx(P.Rb,1)} V, xronaksiya ${fx(P.C,2)} ms. Bo'sag'a formulasi (Veys–Lapik): U = Rb·(1 + xr/t); t = xr bo'lganda U = 2·Rb.`;}
+});
+
+/* ===== Qon: umumiy ===== */
+function benchBtns(ctx,defs){return defs.map(d=>el("button",{class:"btn sm",type:"button",onclick:d.f},d.t));}
+function speedBtns(clock,opts){const bs=opts.map(([v,t])=>el("button",{class:"btn sm"+(v===clock.speed?" on":""),type:"button",onclick:()=>{clock.speed=v;bs.forEach(b=>b.classList.toggle("on",b===bs[opts.findIndex(o=>o[0]===v)]));}},t));return bs;}
+
+/* ===== 4-holat: Goryayev kamerasi ===== */
+function goryCells(n1){
+  const S=520,r=12,cells=[];const kTL=ri(5,8),kBR=ri(5,8),kOut=ri(10,16),kIn=n1-kTL;
+  const ok=(x,y)=>cells.every(c=>(c.x-x)**2+(c.y-y)**2>=(2.25*r)**2);
+  const classify=(x,y)=>{const m=3,inY=y>=r+m&&y<=S-r-m,inX=x>=r+m&&x<=S-r-m;
+    if(inX&&inY)return"in";
+    if(Math.abs(x)<=r-m&&inY)return"tl";if(Math.abs(y)<=r-m&&inX)return"tl";
+    if(Math.abs(x-S)<=r-m&&inY)return"br";if(Math.abs(y-S)<=r-m&&inX)return"br";
+    if((x<=-r-2||x>=S+r+2||y<=-r-2||y>=S+r+2)&&x>-34&&x<S+34&&y>-34&&y<S+34)return"out";return null;};
+  const want={in:kIn,tl:kTL,br:kBR,out:kOut},have={in:0,tl:0,br:0,out:0};
+  let guard=0;
+  while(guard++<200000&&Object.keys(want).some(k=>have[k]<want[k])){
+    // kerakli toifaga mos nuqta tanlash
+    const need=Object.keys(want).filter(k=>have[k]<want[k]);const k=pick(need);let x,y;
+    if(k==="in"){x=rnd(r+3,S-r-3);y=rnd(r+3,S-r-3);}
+    else if(k==="tl"||k==="br"){const side=pick([0,1]);const a=rnd(r+3,S-r-3),o=rnd(-(r-3),r-3)+(k==="br"?S:0);if(side){x=o;y=a;}else{x=a;y=o;}}
+    else{const side=ri(0,3);const a=rnd(-30,S+30);const o=side<2?rnd(-33,-r-2):rnd(S+r+2,S+33);if(side%2){x=o;y=a;}else{x=a;y=o;}}
+    if(classify(x,y)!==k||!ok(x,y))continue;cells.push({x,y,k,id:cells.length,cnt:k==="in"||k==="tl"});have[k]++;}
+  return {cells,S,r,true1:cells.filter(c=>c.cnt).length};
+}
+CASES.push({id:"c04",no:4,grp:1,
+  title:"Goryayev kamerasida eritrotsitlarni sanash",
+  short:"Suyultirish 1:200, Yegorov qoidasi, hisoblash formulasi",
+  gen(){const v=pick([{sex:"erkak",age:21,rbc:rnd(4.3,4.8),d:"sog'lom talaba",cat:0},{sex:"ayol",age:27,rbc:rnd(2.9,3.3),d:"holsizlik, tez charchash va bosh aylanishiga shikoyat qiladi",cat:1},{sex:"erkak",age:30,rbc:rnd(5.5,5.8),d:"alpinist, 3 oydan beri 3500 m balandlikdagi tog' bazasida yashaydi",cat:2}]);
+    const per=v.rbc*20;const n1=Math.round(per+rnd(-4,4));const g=goryCells(n1);
+    const others=[0,1,2,3].map(()=>Math.round(per+rnd(-7,7)));
+    return {...v,g,others};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.age} yoshli ${P.sex}, ${P.d}. <b>Vazifa:</b> kapillyar qondagi eritrotsitlar sonini Goryayev kamerasida aniqlash.`,
+  steps:["Probirkaga 4 ml 3 % li NaCl eritmasini quyish","Barmoqni spirt bilan artib teshish, birinchi tomchini paxta bilan artish","0,02 ml qon olib, probirkaga qo'shish va aralashtirish (1 : 200)","Goryayev kamerasini qoplovchi oyna bilan yopish (Nyuton halqalari paydo bo'lguncha)","Kamerani suyultirilgan qon bilan to'ldirish va 1 daqiqa kutish","Mikroskopda (×8) 1-katta kvadratdagi eritrotsitlarni Yegorov qoidasi bo'yicha sanash","Qolgan 4 ta katta kvadrat natijalarini qo'shib, eritrotsitlar sonini hisoblash"],
+  noJournalStep:6,
+  build(ctx){const P=ctx.P,R=ctx.rec;R.marks=new Set();
+    const s=svgRoot(900,210);sv("rect",{x:0,y:0,width:900,height:210,fill:"#EEF1F3"},s);sv("rect",{x:0,y:180,width:900,height:30,fill:"#B9A588"},s);
+    // probirka
+    sv("rect",{x:60,y:40,width:26,height:140,rx:12,fill:"#F8FBFF",stroke:"#8BA2B5","stroke-width":2},s);
+    const liq=sv("rect",{x:63,y:178,width:20,height:0,rx:9,fill:"#DDEBF5"},s);
+    sv("text",{x:73,y:32,"text-anchor":"middle","font-size":11,fill:"#444",text:"probirka"},s);
+    // flakonlar
+    [["3 % NaCl",150,"#DCEAF5"],["Spirt 70 %",230,"#F1F1E6"]].forEach(([t,x,c])=>{sv("rect",{x,y:90,width:50,height:90,rx:6,fill:c,stroke:"#8BA2B5"},s);sv("rect",{x:x+15,y:76,width:20,height:16,fill:"#6F7A84"},s);sv("text",{x:x+25,y:140,"text-anchor":"middle","font-size":10,fill:"#333",text:t},s);});
+    // skarifikator, paxta, pipetka
+    sv("path",{d:"M330 160 l60 0 l6 -4 l-6 -4 l-60 0 z",fill:"#C8CED4",stroke:"#7D8892"},s);sv("text",{x:360,y:178,"text-anchor":"middle","font-size":10,fill:"#333",text:"skarifikator"},s);
+    sv("ellipse",{cx:440,cy:160,rx:22,ry:12,fill:"#FFFFFF",stroke:"#BBB"},s);sv("text",{x:440,y:178,"text-anchor":"middle","font-size":10,fill:"#333",text:"paxta"},s);
+    sv("line",{x1:490,y1:150,x2:600,y2:150,stroke:"#9FB4C6","stroke-width":5},s);const pip=sv("line",{x1:490,y1:150,x2:490,y2:150,stroke:"#B3242A","stroke-width":3},s);sv("text",{x:545,y:170,"text-anchor":"middle","font-size":10,fill:"#333",text:"Sali pipetkasi (0,02 ml)"},s);
+    // kamera
+    sv("rect",{x:640,y:120,width:220,height:46,rx:4,fill:"#DCE7EE",stroke:"#7D95A8"},s);sv("rect",{x:700,y:126,width:100,height:34,fill:"#C5D6E2",stroke:"#7D95A8"},s);
+    const cover=sv("rect",{x:690,y:110,width:120,height:6,fill:"#EAF6FF",stroke:"#7D95A8",opacity:0},s);
+    const rings=sv("g",{opacity:0},s);for(let i=0;i<3;i++)sv("ellipse",{cx:690+i*2,cy:113,rx:5-i,ry:2,fill:"none",stroke:["#E57373","#81C784","#64B5F6"][i]},rings);
+    const fill=sv("rect",{x:701,y:127,width:0,height:32,fill:"#F2D3D3",opacity:.8},s);
+    sv("text",{x:750,y:100,"text-anchor":"middle","font-size":11,fill:"#444",text:"Goryayev kamerasi"},s);
+    ctx.stage.append(s);
+    const st={nacl:false,alc:false,prick:false,wipe:false,blood:false,mix:false,cover:false,filled:false,t0:0,micro:false};
+    const B=benchBtns(ctx,[
+      {t:"4 ml NaCl quyish",f:()=>{st.nacl=true;liq.setAttribute("y",120);liq.setAttribute("height",58);ctx.done(0);ctx.ok("Probirkaga 4 ml 3 % NaCl quyildi.");}},
+      {t:"Barmoqni spirt bilan artish",f:()=>{st.alc=true;ctx.msg("Barmoq yumshog'i spirt bilan artildi.");}},
+      {t:"Skarifikator bilan teshish",f:()=>{if(!st.alc){ctx.err("Teshishdan oldin barmoqni spirt bilan artish kerak (aseptika)");st.alc=true;}st.prick=true;ctx.msg("Barmoq teshildi, qon tomchisi chiqdi.");}},
+      {t:"1-tomchini paxta bilan artish",f:()=>{if(!st.prick){ctx.err("Hali teshilmagan");return;}st.wipe=true;if(st.nacl)ctx.done(1);ctx.msg("Birinchi tomchi artildi (to'qima suyuqligi aralashgan).");}},
+      {t:"0,02 ml qon olish → probirka",f:()=>{if(!st.prick){ctx.err("Barmoq teshilmagan");return;}if(!st.wipe){ctx.err("Birinchi tomchi artilmagan — unda to'qima suyuqligi bor, natija past chiqadi");st.wipe=true;}if(!ctx.need(2))return;pip.setAttribute("x2",600);setTimeout(()=>pip.setAttribute("x2",490),700);st.blood=true;liq.setAttribute("fill","#E9B9B9");ctx.msg("0,02 ml qon olinib, pipetka tashqarisi artildi va probirkaga puflab chiqarildi.");}},
+      {t:"Aralashtirish",f:()=>{if(!st.blood){ctx.err("Probirkada hali qon yo'q");return;}st.mix=true;liq.setAttribute("fill","#E3A9A9");ctx.done(2);ctx.ok("Aralashtirildi: suyultirish 1 : 200.");}},
+      {t:"Qoplovchi oyna bilan yopish",f:()=>{if(!ctx.need(3))return;st.cover=true;cover.setAttribute("opacity",1);rings.setAttribute("opacity",1);ctx.done(3);ctx.ok("Qoplovchi oyna ishqalab yopildi — Nyuton halqalari ko'rindi.");}},
+      {t:"Kamerani to'ldirish",f:()=>{if(!st.mix){ctx.err("Avval qonni suyultiring va aralashtiring");return;}if(!st.cover){ctx.err("Kamera avval qoplovchi oyna bilan yopilishi kerak — aks holda kamera chuqurligi (0,1 mm) buziladi");return;}st.filled=true;st.t0=performance.now();fill.setAttribute("width",98);ctx.msg("Kamera to'ldirildi. Eritrotsitlar cho'kishi uchun 1 daqiqa kuting.");startWait();}},
+      {t:"Mikroskopda ko'rish",f:()=>{if(!st.filled){ctx.err("Kamera to'ldirilmagan");return;}const w=(performance.now()-st.t0)/1000*wsp;if(w<60){ctx.err(`Hali ${Math.round(w)} s o'tdi — eritrotsitlar cho'kmagan, ular har xil fokusda suzib yuradi`);return;}ctx.done(4);showMicro();}}]);
+    let wsp=1;const wClock=el("span",{class:"clock"},"00:00");let wr=0;
+    function startWait(){const f=()=>{const w=(performance.now()-st.t0)/1000*wsp;wClock.textContent=mmss(w);if(w<60)wr=requestAnimationFrame(f);else{wClock.textContent="01:00 ✓";}};wr=requestAnimationFrame(f);}
+    ctx.onClean(()=>cancelAnimationFrame(wr));
+    const bFast=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!st.filled)return;const w=(performance.now()-st.t0)/1000*wsp;st.t0=performance.now()-w*1000/6;wsp=6;bFast.classList.add("on");}},"×6");
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Tayyorlash",...B.slice(0,6)),ctlGroup("Kamera",...B.slice(6),wClock,bFast)));
+    const micro=el("div",{hidden:true,style:"margin-top:10px"});ctx.stage.append(micro);
+    const cv=el("canvas",{width:620,height:620,style:"max-width:620px;margin:0 auto;cursor:crosshair;background:#F7F3EE"});
+    const cnt=el("span",{class:"clock",style:"color:#7CFF9A;background:#0F1A12"},"0");
+    const bDone=el("button",{class:"btn pri sm",type:"button",onclick:finish},"Sanash yakunlandi");
+    const bClr=el("button",{class:"btn sm",type:"button",onclick:()=>{R.marks.clear();draw();}},"Belgilarni tozalash");
+    const tbl=el("div",{style:"margin-top:8px"});
+    micro.append(el("p",{class:"note",style:"margin-top:0"},"Ko'rish maydonida 1-katta kvadrat (16 ta kichik kvadrat). Har bir sanagan eritrotsitingizni bosib belgilang (qayta bossangiz — belgi olinadi). Yegorov qoidasi: kvadrat ichidagilar va yuqori hamda chap chiziq ustidagilar sanaladi, pastki va o'ng chiziq ustidagilar sanalmaydi."),cv,el("div",{class:"ctl"},ctlGroup("Sanagich",cnt),bClr,bDone),tbl);
+    const g=cv.getContext("2d"),O=50;
+    function draw(show){
+      g.fillStyle="#F7F3EE";g.fillRect(0,0,620,620);
+      const S=P.g.S,q=S/4;g.strokeStyle="#7E8A93";g.lineWidth=1;
+      for(let i=-1;i<=5;i++){g.beginPath();g.moveTo(O+i*q,0);g.lineTo(O+i*q,620);g.stroke();g.beginPath();g.moveTo(0,O+i*q);g.lineTo(620,O+i*q);g.stroke();}
+      g.strokeStyle="#3E4A53";g.lineWidth=1.2;[0,S].forEach(v=>{[-4,0,4].forEach(d=>{g.beginPath();g.moveTo(O+v+d,0);g.lineTo(O+v+d,620);g.stroke();g.beginPath();g.moveTo(0,O+v+d);g.lineTo(620,O+v+d);g.stroke();});});
+      P.g.cells.forEach(c=>{const x=O+c.x,y=O+c.y,r=P.g.r;
+        const gr=g.createRadialGradient(x,y,1,x,y,r);gr.addColorStop(0,"rgba(236,170,160,.55)");gr.addColorStop(.55,"rgba(214,120,110,.75)");gr.addColorStop(1,"rgba(170,70,64,.95)");
+        g.fillStyle=gr;g.beginPath();g.arc(x,y,r,0,7);g.fill();
+        if(R.marks.has(c.id)){g.fillStyle="#1B5FC1";g.beginPath();g.arc(x,y,4,0,7);g.fill();}
+        if(show){const m=R.marks.has(c.id);if(c.cnt&&m){g.strokeStyle="#1F8A4C";g.lineWidth=2.5;g.beginPath();g.arc(x,y,r+3,0,7);g.stroke();}
+          else if(c.cnt&&!m){g.strokeStyle="#E08A00";g.lineWidth=2.5;g.setLineDash([4,3]);g.beginPath();g.arc(x,y,r+3,0,7);g.stroke();g.setLineDash([]);}
+          else if(!c.cnt&&m){g.strokeStyle="#C62828";g.lineWidth=2.5;g.beginPath();g.moveTo(x-r,y-r);g.lineTo(x+r,y+r);g.moveTo(x+r,y-r);g.lineTo(x-r,y+r);g.stroke();}}});
+      cnt.textContent=R.marks.size;
+    }
+    ctx.goryDraw=draw;
+    cv.addEventListener("click",e=>{if(R.finished)return;const b=cv.getBoundingClientRect();const x=(e.clientX-b.left)*620/b.width-O,y=(e.clientY-b.top)*620/b.height-O;
+      let best=null,bd=1e9;P.g.cells.forEach(c=>{const d=(c.x-x)**2+(c.y-y)**2;if(d<bd){bd=d;best=c;}});
+      if(best&&bd<=(P.g.r+4)**2){R.marks.has(best.id)?R.marks.delete(best.id):R.marks.add(best.id);draw();}});
+    function showMicro(){micro.hidden=false;draw();micro.scrollIntoView({behavior:"smooth",block:"start"});}
+    function finish(){if(R.finished)return;if(R.marks.size<10){toast("Hali sanalmagan");return;}R.finished=true;R.count1=R.marks.size;ctx.done(5);
+      ctx.msg(`1-katta kvadratda siz sanagan eritrotsitlar: ${R.count1}.`);
+      tbl.innerHTML="";tbl.append(el("table",{class:"tbl"},el("tr",{},el("th",{},"Katta kvadrat"),...[1,2,3,4,5].map(i=>el("th",{},i+"-"))),el("tr",{},el("td",{},"Eritrotsitlar"),el("td",{},String(R.count1)+" (siz)"),...P.others.map(n=>el("td",{},String(n))))),
+        el("p",{class:"note"},"2–5-kvadratlarni hamkasbingiz diagonal bo'yicha sanadi. Endi jami sonni (A) va eritrotsitlar sonini hisoblang: X = A × 4000 × 200 / 80 (1 mkl da)."));
+      ctx.done(6);}
+  },
+  journal:ctx=>{const P=ctx.P,R=ctx.rec;const A=()=>P.g.true1+P.others.reduce((a,b)=>a+b,0);return[
+    {id:"n1",label:"1-katta kvadratdagi eritrotsitlar soni (Yegorov qoidasi bo'yicha)",unit:"ta",check:v=>[near(v,P.g.true1,1),"To'g'ri son: "+P.g.true1]},
+    {id:"a",label:"5 ta katta kvadratdagi (80 ta kichik kvadrat) jami soni, A",unit:"ta",check:v=>{const own=(R.count1||0)+P.others.reduce((a,b)=>a+b,0);return[near(v,A(),2)||near(v,own,0),"A = "+A()];}},
+    {id:"x",label:"Eritrotsitlar soni",unit:"× 10¹²/l",check:v=>[near(v,A()/100,0.03),"X = A × 10 000 / mkl = "+fx(A()/100,2)+" × 10¹²/l"]}];},
+  mc:ctx=>({q:"Natijani baholang:",opts:["Eritrotsitlar soni me'yorida","Eritrotsitlar soni kamaygan (eritropeniya, anemiyaga xos)","Eritrotsitlar soni oshgan (eritrotsitoz)"],ans:ctx.P.cat,
+    why:"Me'yor: erkaklarda 4,0–5,0, ayollarda 3,7–4,7 × 10¹²/l. Baland tog'da gipoksiya buyrakda eritropoetin ishlab chiqarilishini oshiradi — absolyut eritrotsitoz rivojlanadi."}),
+  explain:ctx=>{const P=ctx.P,R=ctx.rec;const m=[...R.marks];const wrong=m.filter(id=>!P.g.cells[id].cnt).length,miss=P.g.cells.filter(c=>c.cnt&&!R.marks.has(c.id)).length;
+    return `Mikroskop rasmida: <span style="color:#1F8A4C">yashil halqa</span> — to'g'ri sanalgan, <span style="color:#E08A00">sariq uzuq halqa</span> — o'tkazib yuborilgan (${miss} ta), <span style="color:#C62828">qizil ×</span> — sanalmasligi kerak bo'lgan (pastki/o'ng chiziqdagi yoki tashqaridagi) hujayra (${wrong} ta). Formula: X = A × 4000 × 200 / 80 = A × 10 000 (1 mkl da), ya'ni A/100 × 10¹²/l.`;},
+  after:ctx=>{if(ctx.goryDraw){ctx.rec.finished=true;ctx.goryDraw(true);}}
+});
+
+/* ===== 5-holat: Sali gemometri va rang ko'rsatkichi ===== */
+function hemColor(c){const k=[0.531,1.099,1.852];const v=k.map(x=>Math.round(255*Math.exp(-x*c)));return `rgb(${v[0]},${v[1]},${v[2]})`;}
+CASES.push({id:"c05",no:5,grp:1,
+  title:"Sali usulida gemoglobin va rang ko'rsatkichi",
+  short:"Sali gemometri, xlorid gematin, rang ko'rsatkichini hisoblash",
+  gen(){const v=pick([{sex:"erkak",age:22,hb:[14.2,15.4],rbc:[4.6,4.9],d:"sog'lom talaba",cat:0},{sex:"ayol",age:31,hb:[8.6,9.4],rbc:[3.8,4.1],d:"hayz ko'p ketishi, holsizlik, sochlarining to'kilishiga shikoyat qiladi",cat:1},{sex:"erkak",age:58,hb:[9.8,10.6],rbc:[2.4,2.7],d:"me'da rezeksiyasidan keyin; tilida achishish, oyoqlarida uvishish bor",cat:2},{sex:"ayol",age:24,hb:[12.6,13.4],rbc:[4.2,4.4],d:"sog'lom donor",cat:0}]);
+    const hb=0.2*Math.round(rnd(v.hb[0],v.hb[1])/0.2);const rbc=Math.round(rnd(v.rbc[0],v.rbc[1])*100)/100;return {...v,hb:+hb.toFixed(1),rbc};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.age} yoshli ${P.sex}, ${P.d}. Laboratoriya blankasida eritrotsitlar soni: <b>${fx(P.rbc,2)} × 10¹²/l</b>. <b>Vazifa:</b> Sali usulida gemoglobin miqdorini aniqlash va rang ko'rsatkichini hisoblash.`,
+  steps:["Gemometrning o'rta probirkasiga pastki belgigacha (2) 0,1 N HCl quyish","Barmoqni spirt bilan artib teshish, birinchi tomchini artish","20 mkl (0,02 ml) qon olib, pipetka uchini artib, HCl ga puflab chiqarish va aralashtirish","5 daqiqa kutish (xlorid gematin hosil bo'lishi)","Distillangan suvni tomchilatib qo'shib, rangni standartlarga tenglashtirish","Shkaladan gemoglobin miqdorini o'qish"],
+  build(ctx){const P=ctx.P,R=ctx.rec;
+    const st={hcl:false,alc:false,prick:false,wipe:false,blood:false,level:0,t:0,clock:null,over:false};
+    const s=svgRoot(900,360);sv("rect",{x:0,y:0,width:900,height:360,fill:"#EEF1F3"},s);sv("rect",{x:0,y:330,width:900,height:30,fill:"#B9A588"},s);
+    // shtativ (gemometr)
+    sv("rect",{x:300,y:250,width:300,height:80,rx:8,fill:"#E8E2D6",stroke:"#9C9384"},s);sv("rect",{x:300,y:60,width:300,height:40,rx:6,fill:"#E8E2D6",stroke:"#9C9384"},s);
+    sv("rect",{x:338,y:84,width:224,height:150,fill:"#FFFFFF",opacity:.85},s); // oq fon (orqa)
+    const tubeX=[360,440,520],tubeW=22,top=72,bot=316;
+    const stdFill=[];
+    tubeX.forEach((x,i)=>{sv("rect",{x,y:top,width:tubeW,height:bot-top,rx:10,fill:"#F8FBFF",stroke:"#7D95A8","stroke-width":1.6},s);
+      if(i!==1){const f=sv("rect",{x:x+2,y:140,width:tubeW-4,height:bot-142,rx:8,fill:hemColor(1)},s);stdFill.push(f);sv("text",{x:x+11,y:bot+24,"text-anchor":"middle","font-size":10,fill:"#333",text:"standart"},s);}});
+    // o'rta probirka shkalasi: 2..22 g/dl -> y
+    const yOf=v=>bot-6-(v-0)*10.2; // 1 g/dl = 10.2 px
+    const mid=tubeX[1];
+    const liq=sv("rect",{x:mid+2,y:bot,width:tubeW-4,height:0,fill:"#DDEBF5"},s);
+    for(let v=2;v<=22;v+=0.2){const y=yOf(v);const major=Math.abs(v-Math.round(v))<1e-6;sv("line",{x1:mid+tubeW-(major?9:5),y1:y,x2:mid+tubeW,y2:y,stroke:"#333","stroke-width":major?1:0.6},s);if(major&&Math.round(v)%2===0)sv("text",{x:mid+tubeW+4,y:y+3,"font-size":8.5,fill:"#222",text:String(Math.round(v))},s);}
+    sv("text",{x:mid+11,y:bot+24,"text-anchor":"middle","font-size":10,fill:"#333",text:"o'lchov probirkasi"},s);
+    sv("text",{x:450,y:50,"text-anchor":"middle","font-size":12,fill:"#333",text:"Sali gemometri (shkala: g/dl)"},s);
+    // pipetka va flakonlar
+    [["0,1 N HCl",660,"#F4F1E1"],["Distillangan suv",750,"#E5F1FA"]].forEach(([t,x,c])=>{sv("rect",{x,y:230,width:64,height:100,rx:6,fill:c,stroke:"#8BA2B5"},s);sv("rect",{x:x+22,y:214,width:20,height:18,fill:"#6F7A84"},s);sv("text",{x:x+32,y:290,"text-anchor":"middle","font-size":10,fill:"#333",text:t},s);});
+    ctx.stage.append(s);
+    // zoom (menisk)
+    const zoom=el("canvas",{width:260,height:200,style:"max-width:260px;background:#fff"});
+    const cmp=el("div",{class:"small",style:"min-height:22px;margin-top:4px;font-weight:600"});
+    function render(){
+      if(st.level>0){const y=yOf(st.level);liq.setAttribute("y",y);liq.setAttribute("height",bot-2-y);
+        const c=st.blood?(P.hb/st.level)*dev():0;liq.setAttribute("fill",st.blood?hemColor(c):"#F7F4E4");}
+      // zoom
+      const g=zoom.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,260,200);
+      const center=st.level>0?st.level:6;const ppu=60; // px per g/dl
+      const Y=v=>100-(v-center)*ppu;
+      g.fillStyle="#F8FBFF";g.fillRect(100,0,100,200);
+      if(st.level>0){const c=st.blood?(P.hb/st.level)*dev():0;g.fillStyle=st.blood?hemColor(c):"#F7F4E4";g.fillRect(100,Y(st.level),100,200-Y(st.level));
+        g.strokeStyle="rgba(0,0,0,.35)";g.lineWidth=1.5;g.beginPath();g.moveTo(100,Y(st.level)-7);g.quadraticCurveTo(150,Y(st.level)+5,200,Y(st.level)-7);g.stroke();}
+      g.strokeStyle="#7D95A8";g.lineWidth=2;g.strokeRect(100,-2,100,204);
+      g.fillStyle="#222";g.strokeStyle="#222";g.font="12px IBM Plex Mono, monospace";
+      for(let v=Math.floor((center-2)*5)/5;v<=center+2;v+=0.2){const vv=Math.round(v*5)/5;const y=Y(vv);if(y<0||y>200)continue;const major=Math.abs(vv-Math.round(vv))<1e-6;g.lineWidth=major?1.5:0.8;g.beginPath();g.moveTo(200-(major?26:14),y);g.lineTo(200,y);g.stroke();if(major)g.fillText(String(Math.round(vv)),206,y+4);}
+      g.font="11px IBM Plex Sans, sans-serif";g.fillStyle="#555";g.fillText("menisk",8,14);g.fillText("(kattalash-",8,28);g.fillText("tirilgan)",8,42);
+    }
+    const dev=()=>1-Math.exp(-st.t/60);
+    const clock=makeClock(t=>{st.t=t;tClock.textContent=mmss(t);render();});st.clock=clock;ctx.onClean(()=>clock.stop());
+    const tClock=el("span",{class:"clock"},"00:00");
+    const B=benchBtns(ctx,[
+      {t:"HCl ni belgigacha quyish",f:()=>{st.hcl=true;st.level=2;render();ctx.done(0);ctx.ok("O'rta probirkaga «2» belgisigacha 0,1 N HCl quyildi.");}},
+      {t:"Barmoqni spirt bilan artish",f:()=>{st.alc=true;ctx.msg("Barmoq spirt bilan artildi.");}},
+      {t:"Teshish",f:()=>{if(!st.alc){ctx.err("Teshishdan oldin barmoqni spirt bilan artish kerak");st.alc=true;}st.prick=true;ctx.msg("Barmoq teshildi.");}},
+      {t:"1-tomchini artish",f:()=>{if(!st.prick){ctx.err("Hali teshilmagan");return;}st.wipe=true;if(st.hcl)ctx.done(1);ctx.msg("Birinchi tomchi paxta bilan artildi.");}},
+      {t:"20 mkl qon → HCl, aralashtirish",f:()=>{if(!st.hcl){ctx.err("Probirkada hali HCl yo'q");return;}if(!st.prick){ctx.err("Barmoq teshilmagan");return;}if(!st.wipe){ctx.err("Birinchi tomchi artilmagan");st.wipe=true;ctx.done(1);}
+        if(st.blood)return;st.blood=true;ctx.done(2);ctx.msg("20 mkl qon olindi, pipetka uchi artilib, qon HCl ga puflab chiqarildi va pipetka HCl bilan chayildi. Sekundomer yoqildi.");clock.start();render();}}]);
+    const sp=speedBtns(clock,[[1,"×1"],[10,"×10"],[30,"×30"]]);
+    const bDrop=el("button",{class:"btn sm",type:"button",onclick:()=>addW(1)},"+1 tomchi suv");
+    const bDrop5=el("button",{class:"btn sm",type:"button",onclick:()=>addW(5)},"+5 tomchi");
+    const bCmp=el("button",{class:"btn pri sm",type:"button",onclick:()=>compare(true)},"Standart bilan solishtirish");
+    function addW(n){if(!st.blood){ctx.err("Probirkada hali qon yo'q");return;}
+      if(st.t<300&&!st.earlyErr){st.earlyErr=true;ctx.err(`Faqat ${mmss(st.t)} o'tdi — xlorid gematin to'liq hosil bo'lmagan (rang hali och). Suv 5 daqiqadan keyin qo'shiladi; aks holda natija past chiqadi.`);}
+      if(st.t>=300)ctx.done(3);
+      st.level=Math.round((st.level+0.2*n)*5)/5;if(st.level>22)st.level=22;render();compare(false);}
+    function compare(say){if(!st.blood){if(say)ctx.err("Probirkada hali qon yo'q");return;}const c=(P.hb/st.level)*dev();let t;
+      if(c>1.08)t="Probirka standartlardan ancha to'q";else if(c>1.02)t="Probirka standartlardan biroz to'qroq";else if(c>=0.98)t="Ranglar bir xil";else{t="Probirka standartlardan ochroq — suv ortiqcha qo'shildi";}
+      cmp.textContent=t;cmp.style.color=c<0.98?"var(--bad)":c<=1.02?"var(--good)":"var(--ink)";
+      if(c<0.98&&!st.over&&st.t>=300){st.over=true;ctx.err("Suv ortiqcha qo'shildi: rang standartdan ochroq. Bu holda gemoglobin haqiqiydan yuqori chiqadi; aniq natija uchun tahlilni qayta boshlash kerak.");}
+      if(c>=0.98&&c<=1.02&&st.t>=300)ctx.done(4);if(say)ctx.msg("Solishtirish: "+t+".");}
+    const bRead=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!ctx.isDone(4)){ctx.err("Ranglar hali tenglashtirilmagan");return;}R.read=st.level;ctx.done(5);ctx.msg("Menisk pastki chetidan o'qing (kattalashtirilgan ko'rinish o'ngda).");}},"Shkaladan o'qish");
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Tayyorlash",...B),ctlGroup("Vaqt",tClock,...sp)),
+      el("div",{class:"ctl"},ctlGroup("Tenglashtirish",bDrop,bDrop5,bCmp,bRead)),
+      el("div",{class:"row",style:"margin-top:10px;align-items:flex-start"},zoom,el("div",{style:"flex:1 1 220px"},cmp,el("p",{class:"note"},"Rangni oq fon oldida, kunduzgi yorug'likda, probirkalarni yonma-yon qo'yib solishtiring. Suvni oxirgi tomchilarda bittadan qo'shing: ortiqcha qo'shilgan suvni qaytarib bo'lmaydi."))));
+    render();
+    ctx.salLevel=()=>st.level;
+  },
+  journal:ctx=>{const P=ctx.P;const lv=()=>ctx.salLevel();return[
+    {id:"rd",label:"Gemometr shkalasidagi ko'rsatkich",unit:"g/dl",check:v=>[near(v,lv(),0.11),"Shkalada: "+fx(lv(),1)+" g/dl"]},
+    {id:"hb",label:"Gemoglobin miqdori",unit:"g/l",check:v=>[near(v,P.hb*10,3)&&near(v,lv()*10,3),"Haqiqiy gemoglobin: "+Math.round(P.hb*10)+" g/l"]},
+    {id:"rk",label:"Rang ko'rsatkichi (RK = Hb, g/l × 3 / eritrotsitlar sonining dastlabki 3 raqami)",check:v=>{const hb=num(ctx.fields[1].inp.value);const own=hb*3/Math.round(P.rbc*100),tr=P.hb*10*3/Math.round(P.rbc*100);return[near(v,own,0.02)&&near(own,tr,0.05),`RK = ${Math.round(P.hb*10)} × 3 / ${Math.round(P.rbc*100)} = ${fx(tr,2)}`];}}];},
+  mc:ctx=>({q:"Rang ko'rsatkichiga ko'ra xulosa:",opts:["Normoxromiya (RK 0,85–1,05)","Gipoxromiya (RK < 0,85) — temir tanqisligiga xos","Giperxromiya (RK > 1,05) — B₁₂/folat tanqisligiga xos"],ans:ctx.P.cat,
+    why:"RK bitta eritrotsitning gemoglobin bilan nisbiy to'yinganligini ko'rsatadi. Temir tanqisligida eritrotsitlar kichik va och (gipoxrom), B₁₂ va folat kislota tanqisligida esa yirik, gemoglobinga to'yingan (megalotsitlar) — giperxromiya. Sali usuli sub'ektiv, xatoligi ± 10 % gacha."}),
+  explain:ctx=>{const P=ctx.P;return `Haqiqiy gemoglobin ${Math.round(P.hb*10)} g/l; eritrotsitlar ${fx(P.rbc,2)} × 10¹²/l; RK = ${fx(P.hb*30/Math.round(P.rbc*100),2)}. Me'yor: erkaklarda 130–160, ayollarda 120–140 g/l.`;}
+});
+
+/* ===== 6-holat: Panchenkov usulida EChT ===== */
+CASES.push({id:"c06",no:6,grp:1,
+  title:"Panchenkov usulida EChT",
+  short:"Natriy sitrat, kapillyar, 1 soat, plazma ustuni",
+  gen(){const v=pick([{sex:"erkak",age:20,e:[4,8],d:"sog'lom talaba",cat:0},{sex:"ayol",age:23,e:[9,13],d:"sog'lom talaba",cat:0},{sex:"erkak",age:45,e:[28,36],d:"5 kundan beri isitma, yo'tal, ko'krakda og'riq (pnevmoniya gumon qilinmoqda)",cat:1},{sex:"ayol",age:29,e:[34,42],d:"homiladorlikning 32-haftasi, shikoyatlari yo'q",cat:2}]);return {...v,E:ri(v.e[0],v.e[1])};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.age} yoshli ${P.sex}, ${P.d}. <b>Vazifa:</b> eritrotsitlar cho'kish tezligini Panchenkov usulida aniqlash.`,
+  steps:["Kapillyarni 5 % li natriy sitrat eritmasi bilan yuvish","«P» belgisigacha (50) sitrat olib, soat oynasiga to'kish","Barmoqdan «K» belgisigacha 2 marta qon olib, sitratga qo'shish (4 : 1)","Aralashtirib, aralashmani «K» (0) belgisigacha kapillyarga olish","Kapillyarni shtativga tik o'rnatib, vaqtni belgilash","1 soatdan keyin plazma ustunining balandligini o'lchash"],
+  build(ctx){const P=ctx.P,R=ctx.rec;const st={rinse:false,cit:false,draws:0,mixed:false,inCap:false,stand:false,t:0,read:false};
+    const s=svgRoot(900,330);sv("rect",{x:0,y:0,width:900,height:330,fill:"#EEF1F3"},s);sv("rect",{x:0,y:300,width:900,height:30,fill:"#B9A588"},s);
+    // shtativ
+    sv("rect",{x:80,y:30,width:260,height:270,rx:6,fill:"#D9D2C3",stroke:"#9C9384"},s);
+    for(let i=0;i<8;i++){sv("rect",{x:100+i*30,y:42,width:6,height:250,fill:"#F8FBFF",stroke:"#9FB4C6","stroke-width":.8},s);}
+    sv("text",{x:210,y:22,"text-anchor":"middle","font-size":11,fill:"#333",text:"Panchenkov apparati"},s);
+    const cap=sv("g",{opacity:.35},s);
+    sv("rect",{x:310,y:42,width:6,height:250,fill:"#F8FBFF",stroke:"#7D95A8"},cap);
+    const red=sv("rect",{x:311,y:42,width:4,height:0,fill:"#B3242A"},cap);const pl=sv("rect",{x:311,y:42,width:4,height:0,fill:"#F2E3A2"},cap);
+    // soat oynasi
+    sv("ellipse",{cx:470,cy:280,rx:60,ry:12,fill:"#E8F4FA",stroke:"#7D95A8"},s);const wg=sv("ellipse",{cx:470,cy:279,rx:0,ry:6,fill:"#DDEBF5"},s);
+    sv("text",{x:470,y:316,"text-anchor":"middle","font-size":10,fill:"#333",text:"soat oynasi"},s);
+    sv("rect",{x:590,y:200,width:60,height:100,rx:6,fill:"#EEF4F8",stroke:"#8BA2B5"},s);sv("text",{x:620,y:255,"text-anchor":"middle","font-size":10,fill:"#333",text:"5 % Na sitrat"},s);
+    ctx.stage.append(s);
+    // kattalashtirilgan kapillyar (shkala 100 mm)
+    const zc=el("canvas",{width:200,height:560,style:"max-width:200px;background:#fff"});
+    const tClock=el("span",{class:"clock"},"00:00");
+    const h=t=>{const m=t/60;return Math.min(P.E*1.9,P.E*Math.pow(Math.max(0,m)/60,1.15));};
+    function render(){const g=zc.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,200,560);const Y=mm=>30+mm*5;
+      g.fillStyle="#F8FBFF";g.fillRect(90,20,24,525);
+      if(st.inCap){const hh=st.stand?h(st.t):0;g.fillStyle="#F2E3A2";g.fillRect(91,Y(0),22,hh*5);g.fillStyle="#B3242A";g.fillRect(91,Y(hh),22,Y(100)-Y(hh));
+        if(hh>0.2){g.fillStyle="rgba(120,20,20,.6)";g.fillRect(91,Y(hh),22,2);}}
+      g.strokeStyle="#7D95A8";g.lineWidth=2;g.strokeRect(90,20,24,525);
+      g.fillStyle="#222";g.strokeStyle="#222";g.font="11px IBM Plex Mono, monospace";
+      for(let mm=0;mm<=100;mm++){const y=Y(mm);const M=mm%10===0,F=mm%5===0;g.lineWidth=M?1.4:.8;g.beginPath();g.moveTo(M?62:F?70:76,y);g.lineTo(88,y);g.stroke();if(M)g.fillText(String(mm),36,y+4);}
+      g.font="bold 12px IBM Plex Sans, sans-serif";g.fillText("K",124,Y(0)+4);g.fillText("P",124,Y(50)+4);
+      red.setAttribute("height",st.inCap?250:0);const hh=st.stand?h(st.t):0;pl.setAttribute("height",hh*2.5);
+    }
+    const clock=makeClock(t=>{st.t=t;tClock.textContent=mmss(t);if(t>=3600&&!st.rang){st.rang=true;clock.stop();ctx.msg("⏰ Taymer: 1 soat o'tdi.","pt");toast("1 soat o'tdi");}render();});ctx.onClean(()=>clock.stop());
+    const B=benchBtns(ctx,[
+      {t:"Kapillyarni sitrat bilan yuvish",f:()=>{st.rinse=true;ctx.done(0);ctx.ok("Kapillyar 5 % natriy sitrat bilan yuvildi.");}},
+      {t:"Sitratni «P» gacha olib, oynaga to'kish",f:()=>{if(!ctx.need(1))return;st.cit=true;wg.setAttribute("rx",22);ctx.done(1);ctx.ok("50 bo'linma sitrat soat oynasiga to'kildi.");}},
+      {t:"Qonni «K» gacha olib, oynaga qo'shish",f:()=>{if(!ctx.need(2))return;st.draws++;wg.setAttribute("rx",22+st.draws*14);wg.setAttribute("fill","#C7484E");ctx.msg(`${st.draws}-marta «K» belgisigacha qon olinib, soat oynasiga qo'shildi.`);if(st.draws===2)ctx.done(2);if(st.draws>2)ctx.err("Qon ortiqcha qo'shildi — qon va sitrat nisbati 4 : 1 dan buzildi");}},
+      {t:"Aralashtirib, kapillyarga «K» gacha olish",f:()=>{if(!st.cit){ctx.err("Sitrat olinmagan");return;}if(st.draws<2){ctx.err(st.draws?"Qon faqat bir marta olindi — nisbat 4 : 1 bo'lishi uchun ikki marta olish kerak":"Hali qon qo'shilmagan");if(!st.draws)return;}st.mixed=true;st.inCap=true;cap.setAttribute("opacity",1);ctx.done(3);ctx.ok("Aralashma havo pufakchalarisiz «K» (0) belgisigacha olindi.");render();}},
+      {t:"Shtativga tik o'rnatish (taymer)",f:()=>{if(!st.inCap){ctx.err("Kapillyarda aralashma yo'q");return;}if(st.stand)return;st.stand=true;ctx.done(4);clock.start();ctx.msg("Kapillyar tik o'rnatildi, taymer yoqildi.");}}]);
+    const sp=speedBtns(clock,[[1,"×1"],[60,"×60"],[600,"×600"]]);
+    const bRead=el("button",{class:"btn pri sm",type:"button",onclick:()=>{if(!st.stand){ctx.err("Kapillyar shtativga o'rnatilmagan");return;}
+      const m=st.t/60;if(m<59.5){ctx.err(`Faqat ${Math.floor(m)} daqiqa o'tdi — EChT 1 soatda o'lchanadi`);return;}
+      if(m>62&&!st.late){st.late=true;ctx.err(`O'lchash kechiktirildi (${Math.floor(m)} daqiqa) — eritrotsitlar cho'kishda davom etadi, natija oshib chiqadi`);}
+      clock.stop();st.read=true;R.h=h(st.t);ctx.done(5);ctx.msg("Plazma ustunini kattalashtirilgan shkaladan mm da o'qing.");}},"Plazma ustunini o'lchash");
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Ish",...B)),el("div",{class:"ctl"},ctlGroup("Taymer",tClock,...sp),bRead),
+      el("div",{class:"row",style:"margin-top:10px;align-items:flex-start"},zc,el("p",{class:"note",style:"flex:1 1 220px"},"Kapillyarning kattalashtirilgan ko'rinishi: shkala 0–100 mm. Yuqorida — tiniq sariq plazma, pastda — cho'kkan eritrotsitlar. EChT — 1 soatdan keyingi plazma ustunining balandligi (mm/soat). Taymer 60 daqiqada o'zi to'xtaydi.")));
+    render();
+  },
+  journal:ctx=>{const P=ctx.P,R=ctx.rec;return[{id:"e",label:"EChT",unit:"mm/soat",check:v=>[near(v,P.E,1)&&(R.h==null||near(v,R.h,1.1)),"To'g'ri natija: "+P.E+" mm/soat"]}];},
+  mc:ctx=>({q:"Natijani baholang:",opts:["EChT me'yorida","EChT oshgan — yallig'lanish jarayoniga xos (nospetsifik belgi)","EChT oshgan — fiziologik (homiladorlik) sababli","EChT kamaygan"],ans:ctx.P.cat,
+    why:"Me'yor: erkaklarda 1–10, ayollarda 2–15 mm/soat. Fibrinogen va globulinlar ko'payganda eritrotsitlar «tanga ustunchalari» hosil qilib tez cho'kadi: yallig'lanishda (patologik) va homiladorlikning ikkinchi yarmida (fiziologik, 40–50 mm/soat gacha). EChT nospetsifik ko'rsatkich — tashxis qo'ymaydi."}),
+  explain:ctx=>`Bu tekshiriluvchida EChT ${ctx.P.E} mm/soat.`
+});
+
+/* ===== 7-holat: qon guruhi va rezus omil (tsoliklonlar) ===== */
+const BG=["0 (I)","A (II)","B (III)","AB (IV)"];
+CASES.push({id:"c07",no:7,grp:1,
+  title:"Qon guruhi va rezus omilni aniqlash",
+  short:"Tsoliklonlar anti-A, anti-B, anti-D; agglyutinatsiyani baholash",
+  gen(){const r=Math.random();const g=r<0.32?0:r<0.66?1:r<0.9?2:3;const rh=Math.random()<0.85;return {g,rh,A:g===1||g===3,B:g===2||g===3,
+      blobs:[0,1,2,3].map(()=>Array.from({length:26},()=>({x:rnd(-1,1),y:rnd(-1,1),r:rnd(2,5.5)})).filter(b=>b.x*b.x+b.y*b.y<0.8))};},
+  subj:()=>`<b>Tekshiriluvchi:</b> rejali operatsiyaga tayyorlanayotgan bemor. <b>Vazifa:</b> tsoliklonlar yordamida AB0 tizimi bo'yicha qon guruhini va rezus omilni aniqlash.`,
+  steps:["Plastinkani belgilash: anti-A, anti-B, anti-D","Har bir belgiga tegishli tsoliklondan 1 tomchi (0,1 ml) tomizish","Barmoqdan qon olib, har bir tomchi yoniga 10 marta kichik tomchi qo'yish","Har bir tomchini alohida toza tayoqcha bilan aralashtirish","Plastinkani sekin chayqatib kuzatish: anti-A, anti-B — 2,5 daqiqa, anti-D — 3 daqiqa","Natijani o'qish (ikkala tsoliklonda agglyutinatsiya bo'lsa — fiziologik eritma bilan nazorat)"],
+  build(ctx){const P=ctx.P,R=ctx.rec;
+    const W=["anti-A","anti-B","anti-D","nazorat"];const st={lab:false,re:[0,0,0,0],bl:[0,0,0,0],mx:[0,0,0,0],tool:null,t:0,rock:false,read:false};
+    const s=svgRoot(900,330);sv("rect",{x:0,y:0,width:900,height:330,fill:"#EEF1F3"},s);sv("rect",{x:0,y:300,width:900,height:30,fill:"#B9A588"},s);
+    const plate=sv("g",{},s);sv("rect",{x:60,y:60,width:560,height:200,rx:12,fill:"#FBFBFB",stroke:"#B5BCC2","stroke-width":2},plate);
+    const cx=[140,280,420,560],labels=[],wells=[];
+    cx.forEach((x,i)=>{sv("circle",{cx:x,cy:160,r:56,fill:"#F2F2F2",stroke:"#D3D7DA"},plate);const w=sv("g",{class:"clk"},plate);wells.push(w);
+      const t=sv("text",{x,y:244,"text-anchor":"middle","font-size":14,"font-weight":"600",fill:"#333",opacity:0,text:W[i]},plate);labels.push(t);
+      w.addEventListener("click",()=>use(i));sv("circle",{cx:x,cy:160,r:56,fill:"transparent"},w);});
+    // flakonlar va asboblar
+    const tools=[["anti-A","#F3A6C5"],["anti-B","#8FB8F0"],["anti-D","#E9EEF2"],["fiz. eritma","#F0F6FA"],["qon (tayoqcha uchida)","#B3242A"],["toza tayoqcha","#FFFFFF"]];
+    const toolBtns=tools.map(([t,c],i)=>{const b=el("button",{class:"btn sm",type:"button",onclick:()=>{st.tool=i;toolBtns.forEach((x,j)=>x.classList.toggle("on",j===i));}},el("span",{style:`display:inline-block;width:12px;height:12px;border-radius:50%;background:${c};border:1px solid #888`}),t);return b;});
+    tools.slice(0,4).forEach(([t,c],i)=>{const x=660+i*58;sv("rect",{x,y:190,width:40,height:90,rx:6,fill:c,stroke:"#8BA2B5"},s);sv("rect",{x:x+12,y:176,width:16,height:16,fill:"#6F7A84"},s);sv("text",{x:x+20,y:300+14,"text-anchor":"middle","font-size":9,fill:"#333",text:t},s);});
+    ctx.stage.append(s);
+    const tClock=el("span",{class:"clock"},"00:00");
+    const clock=makeClock(t=>{st.t=t;tClock.textContent=mmss(t);draw();if(t>=180)ctx.done(4);});ctx.onClean(()=>clock.stop());
+    function aggl(i){if(!st.re[i]||!st.bl[i]||!st.mx[i])return 0;const pos=i===0?P.A:i===1?P.B:i===2?P.rh:false;if(!pos)return 0;
+      const T=i===2?st.t-20:st.t;return clamp(T/(i===2?150:90),0,1)*(st.rock?1:0.6);}
+    function draw(){wells.forEach((w,i)=>{while(w.childNodes.length>1)w.removeChild(w.lastChild);const x=cx[i];
+      if(st.re[i])sv("ellipse",{cx:x-8,cy:160,rx:30,ry:26,fill:i===0?"#F3A6C5":i===1?"#8FB8F0":"#E3ECF2",opacity:.95},w);
+      if(st.bl[i]&&!st.mx[i])sv("circle",{cx:x+30,cy:150,r:8,fill:"#B3242A"},w);
+      if(st.mx[i]){const a=aggl(i);const base=i===0?[243,166,197]:i===1?[143,184,240]:[227,236,242];const mix=[190,60,60];
+        const uni=1-a;const col=base.map((b,k)=>Math.round(b*(0.35+0.25*a)+mix[k]*(0.65-0.25*a)));
+        sv("ellipse",{cx:x,cy:160,rx:38,ry:32,fill:`rgb(${col})`,opacity:.95},w);
+        if(a>0.05){P.blobs[i].forEach(b=>sv("circle",{cx:x+b.x*34,cy:160+b.y*28,r:b.r*(0.4+a),fill:"#8E1B1F",opacity:Math.min(1,a*1.3)},w));}
+        else{for(let k=0;k<4;k++)sv("circle",{cx:x+rnd(-20,20),cy:160+rnd(-16,16),r:1.2,fill:"#A33",opacity:.35},w);}}
+    });plate.setAttribute("transform",st.rock?`rotate(${Math.sin(st.t*2)*1.5} 340 160)`:"");}
+    function use(i){if(i===3&&!st.ctrlOn){return;}
+      if(!st.lab&&i<3){ctx.err("Avval plastinkani belgilang (qaysi joyga qaysi tsoliklon tomiziladi)");return;}
+      const T=st.tool;if(T==null){toast("Avval asbob yoki reagentni tanlang");return;}
+      if(T<=3){const ok=(T===i)||(T===3&&i===3);if(!ok){ctx.err(`Noto'g'ri reagent: «${W[i]}» belgili joyga ${tools[T][0]} tomizildi`);return;}if(st.re[i])return;st.re[i]=1;ctx.msg(`${W[i]}: 1 tomchi (0,1 ml) tomizildi.`);if(st.re.slice(0,3).every(Boolean))ctx.done(1);}
+      else if(T===4){if(!st.re[i]){ctx.err("Avval reagentni tomizing, so'ng yoniga qon qo'ying");return;}if(st.bl[i])return;st.bl[i]=1;ctx.msg(`${W[i]} yoniga kichik tomchi qon qo'yildi.`);if(st.bl.slice(0,3).every(Boolean))ctx.done(2);}
+      else{if(!st.bl[i]){ctx.err("Bu joyda hali qon yo'q");return;}if(st.mx[i])return;st.mx[i]=1;ctx.msg(`${W[i]}: yangi toza tayoqcha bilan aralashtirildi.`);if(!clock.run)clock.start();if(st.mx.slice(0,3).every(Boolean))ctx.done(3);}
+      draw();}
+    const bLab=el("button",{class:"btn sm",type:"button",onclick:()=>{st.lab=true;labels.slice(0,3).forEach(l=>l.setAttribute("opacity",1));ctx.done(0);ctx.ok("Plastinkaga belgilar qo'yildi.");}},"Plastinkani belgilash");
+    const bRock=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!st.mx.some(Boolean)){ctx.err("Hali aralashtirilmagan");return;}st.rock=!st.rock;bRock.classList.toggle("on",st.rock);ctx.msg(st.rock?"Plastinka sekin chayqatilmoqda.":"Chayqatish to'xtatildi.");}},"Chayqatish");
+    const bCtrl=el("button",{class:"btn sm",type:"button",onclick:()=>{st.ctrlOn=true;labels[3].setAttribute("opacity",1);ctx.msg("Nazorat uchun 4-joy belgilandi: fiziologik eritma + qon + aralashtirish.");}},"Nazorat joyi");
+    const bRead=el("button",{class:"btn pri sm",type:"button",onclick:read},"Natijani o'qish");
+    function read(){if(!ctx.isDone(3)){ctx.err("Uchala joy to'liq tayyorlanmagan");return;}
+      if(st.t<150){ctx.err(`Faqat ${Math.round(st.t)} s o'tdi — natija 2,5 daqiqadan (anti-D — 3 daqiqadan) keyin baholanadi; kuchsiz agglyutinatsiya kech paydo bo'ladi`);}
+      if(!st.rock)ctx.err("Plastinka chayqatilmadi — agglyutinatsiya sust bo'ladi va o'tkazib yuborilishi mumkin");
+      const a=[0,1,2].map(aggl);ctx.msg(`Kuzatuv (${mmss(st.t)}): anti-A — ${a[0]>0.3?"agglyutinatsiya bor":"bir xil pushti-qizil, agglyutinatsiya yo'q"}; anti-B — ${a[1]>0.3?"agglyutinatsiya bor":"agglyutinatsiya yo'q"}; anti-D — ${a[2]>0.3?"agglyutinatsiya bor":(st.t<180?"hali yo'q (vaqt yetmagan bo'lishi mumkin)":"agglyutinatsiya yo'q")}.`);
+      if(st.mx[3])ctx.msg("Nazorat (fiziologik eritma): agglyutinatsiya yo'q — natija ishonchli.");
+      if(st.t>=180)ctx.done(5);R.read=true;}
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Tayyorlash",bLab,bCtrl)),el("div",{class:"ctl"},ctlGroup("Qo'ldagi asbob (so'ng plastinkadagi joyni bosing)",...toolBtns)),el("div",{class:"ctl"},ctlGroup("Kuzatish",tClock,...speedBtns(clock,[[1,"×1"],[4,"×4"]]),bRock),bRead));
+    draw();ctx.bgSt=st;
+  },
+  optional:[],
+  extraErrs:ctx=>{const P=ctx.P,st=ctx.bgSt;return(P.A&&P.B&&!st.mx[3])?["AB (IV) guruhda (ikkala tsoliklonda agglyutinatsiya) fiziologik eritma bilan nazorat sinamasi o'tkazilmadi"]:[];},
+  journal:ctx=>{const P=ctx.P;return[
+    {id:"g",label:"Qon guruhi (AB0)",type:"sel",options:BG,check:v=>[v===P.g,"Guruh: "+BG[P.g]]},
+    {id:"r",label:"Rezus omil",type:"sel",options:["Rh⁺ (rezus-musbat)","Rh⁻ (rezus-manfiy)"],check:v=>[v===(P.rh?0:1),P.rh?"Rh⁺":"Rh⁻"]}];},
+  mc:()=>({q:"Tsoliklon bilan agglyutinatsiya nimani bildiradi?",opts:["Eritrotsitlarda tegishli agglyutinogen (antigen) borligini","Plazmada tegishli agglyutinin (antitelo) borligini","Qon ivish tizimi faollashganini","Eritrotsitlar gemolizini"],ans:0,
+    why:"Tsoliklonlar — monoklonal antitelalar; ular eritrotsit membranasidagi antigenni (agglyutinogenni) bevosita aniqlaydi: anti-A bilan agglyutinatsiya — A antigeni, anti-B bilan — B antigeni, anti-D bilan — D (rezus) antigeni bor. Ikkala tsoliklonda agglyutinatsiya bo'lsa (AB guruh), soxta agglyutinatsiyani istisno qilish uchun fiziologik eritma bilan nazorat qilinadi."}),
+  explain:ctx=>{const P=ctx.P;return `Bu bemorda: ${BG[P.g]}, ${P.rh?"Rh⁺":"Rh⁻"}.`;}
+});
+
+/* ===== 8-holat: Dyuk va Suxarev ===== */
+CASES.push({id:"c08",no:8,grp:1,
+  title:"Qon ketish vaqti (Dyuk) va qon ivish vaqti (Suxarev)",
+  short:"Filtr qog'oz, sekundomer, kapillyarni qiyalatish",
+  gen(){const v=pick([{k:0,d:"sog'lom talaba",Tb:[120,220],Ts:[45,110],Te:[190,280]},{k:1,d:"oxirgi oyda teri ostida mayda nuqtali qon quyilishlar, milk qonashi; qonda trombotsitlar 38 × 10⁹/l",Tb:[400,520],Ts:[45,110],Te:[190,280]},{k:2,d:"bolaligidan kichik jarohatlardan keyin uzoq qon ketadi, tizza bo'g'imiga qon quyilgan (onasining akasida ham shunday kasallik bor)",Tb:[130,220],Ts:[200,280],Te:[600,840]}]);
+    return {...v,Tb:ri(v.Tb[0],v.Tb[1]),Ts:ri(v.Ts[0],v.Ts[1]),Te:ri(v.Te[0],v.Te[1])};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.d}. <b>Vazifa:</b> Dyuk usulida qon ketish vaqtini va Suxarev usulida kapillyar qonning ivish vaqtini aniqlash.`,
+  steps:["Quloq yumshog'ini spirt bilan artib, quritish","Skarifikator bilan 3–4 mm chuqurlikda teshib, sekundomerni yoqish","Har 30 soniyada qon tomchisini filtr qog'oziga (teriga tegizmasdan) shimdirish","Qog'ozda dog' qolmagan vaqtni belgilash","Barmoqdan Suxarev kapillyariga 25–30 mm qon olib, sekundomerni yoqish","Kapillyarni har 30 soniyada qiyalatib, ivish boshlanishi va oxirini aniqlash"],
+  build(ctx){const P=ctx.P,R=ctx.rec;const st={alc:false,dry:false,pr:false,t:0,blots:[],stop:null,cap:false,ct:0,tilts:[]};ctx.dk=st;
+    const s=svgRoot(900,300);sv("rect",{x:0,y:0,width:900,height:300,fill:"#EEF1F3"},s);
+    // quloq
+    sv("path",{d:"M90 60 C 30 70, 30 170, 80 200 C 95 240, 140 250, 150 215 C 160 180, 130 170, 140 130 C 150 90, 140 55, 90 60 Z",fill:"#EDBF9E",stroke:"#B07D5A","stroke-width":2},s);
+    sv("text",{x:100,y:270,"text-anchor":"middle","font-size":11,fill:"#333",text:"quloq yumshog'i"},s);
+    const drop=sv("ellipse",{cx:118,cy:236,rx:0,ry:0,fill:"#B3242A"},s);
+    // filtr qog'oz
+    sv("circle",{cx:330,cy:150,r:110,fill:"#FFFFFF",stroke:"#BBB"},s);sv("text",{x:330,y:285,"text-anchor":"middle","font-size":11,fill:"#333",text:"filtr qog'oz"},s);
+    const spots=sv("g",{},s);
+    // Suxarev kapillyari
+    const capG=sv("g",{},s);
+    ctx.stage.append(s);
+    const capCv=el("canvas",{width:460,height:120,style:"max-width:460px;background:#fff"});
+    const tClock=el("span",{class:"clock"},"00:00"),cClock=el("span",{class:"clock"},"00:00");
+    const clock=makeClock(t=>{st.t=t;tClock.textContent=mmss(t);const bl=bleeding(t);drop.setAttribute("rx",bl>0?3+5*bl:0);drop.setAttribute("ry",bl>0?3+6*bl:0);});
+    const clock2=makeClock(t=>{st.ct=t;cClock.textContent=mmss(t);});
+    ctx.onClean(()=>{clock.stop();clock2.stop();});
+    const bleeding=t=>t>=P.Tb?0:Math.pow(1-t/P.Tb,0.7);
+    const B=benchBtns(ctx,[
+      {t:"Spirt bilan artish",f:()=>{st.alc=true;ctx.msg("Quloq yumshog'i spirt bilan artildi.");}},
+      {t:"Quritish",f:()=>{if(!st.alc){ctx.err("Avval spirt bilan arting");return;}st.dry=true;ctx.done(0);ctx.ok("Teri quritildi (spirt qolsa qon yoyilib, tomchi hosil bo'lmaydi).");}},
+      {t:"Teshish (3–4 mm) + sekundomer",f:()=>{if(!ctx.need(1))return;if(st.pr)return;st.pr=true;ctx.done(1);clock.start();ctx.msg("Teshildi, sekundomer yoqildi. Qon tomchisi o'z-o'zidan chiqmoqda (siqmang!).");}}]);
+    const bBlot=el("button",{class:"btn pri sm",type:"button",onclick:blot},"Filtr qog'ozga shimdirish");
+    function blot(){if(!st.pr){ctx.err("Hali teshilmagan");return;}const t=st.t;const last=st.blots.length?st.blots[st.blots.length-1].t:0;
+      if(st.blots.length&&(t-last<24||t-last>40))ctx.err(`Oraliq ${Math.round(t-last)} s — tomchi har 30 soniyada shimdirilishi kerak`);
+      else if(!st.blots.length&&(t<24||t>40))ctx.err(`Birinchi shimdirish ${Math.round(t)} s da — 30-soniyada bo'lishi kerak`);
+      const b=bleeding(t);st.blots.push({t,b});const n=st.blots.length;const ang=-Math.PI/2+(n-1)*0.5,rr=78-(n-1)*4.5;
+      const x=330+Math.cos(ang)*rr,y=150+Math.sin(ang)*rr;
+      if(b>0){sv("circle",{cx:x,cy:y,r:3+15*b,fill:"#B3242A",opacity:.85},spots);ctx.msg(`${mmss(t)} — qog'ozda dog' qoldi.`);}
+      else{sv("circle",{cx:x,cy:y,r:3,fill:"none",stroke:"#999","stroke-dasharray":"2 2"},spots);ctx.msg(`${mmss(t)} — dog' qolmadi: qon ketish to'xtadi.`);if(st.stop==null){st.stop=t;ctx.done(2);ctx.done(3);clock.stop();}}}
+    const capB=benchBtns(ctx,[
+      {t:"Barmoqdan kapillyarga qon olish + sekundomer",f:()=>{if(st.cap)return;st.cap=true;ctx.done(4);clock2.start();ctx.msg("Barmoq artilib teshildi, birinchi tomchi artildi; kapillyarga 25–30 mm qon olindi, sekundomer yoqildi.");drawCap(0);}},
+      {t:"Kapillyarni qiyalatish",f:tilt}]);
+    function tilt(){if(!st.cap){ctx.err("Kapillyarga qon olinmagan");return;}const t=st.ct,last=st.tilts.length?st.tilts[st.tilts.length-1]:0;
+      if(t-last<20&&st.tilts.length)ctx.err("Juda tez-tez qiyalatilyapti — har 30 soniyada qiyalatiladi");st.tilts.push(t);
+      let txt,mv;if(t<P.Ts){txt="qon ustuni erkin siljiydi";mv=1;}else if(t<P.Te){txt="qon ustuni sekin, qiyinchilik bilan siljiydi — ivish boshlangan";mv=0.35;}else{txt="qon ustuni siljimaydi, kapillyarda fibrin iplari ko'rinadi — ivish tugagan";mv=0;}
+      ctx.msg(`${mmss(t)} — ${txt}.`);drawCap(mv);if(t>=P.Te){ctx.done(5);clock2.stop();}}
+    function drawCap(mv){const g=capCv.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,460,120);g.save();g.translate(230,60);g.rotate(-0.12);
+      g.fillStyle="#F8FBFF";g.strokeStyle="#7D95A8";g.lineWidth=2;g.fillRect(-200,-8,400,16);g.strokeRect(-200,-8,400,16);
+      const off=mv*90;g.fillStyle="#B3242A";g.fillRect(-60+off,-6,120,12);if(mv===0){g.strokeStyle="rgba(255,255,255,.7)";g.lineWidth=1;for(let i=0;i<6;i++){g.beginPath();g.moveTo(-55+i*20,-5);g.lineTo(-45+i*20,5);g.stroke();}}g.restore();
+      g.fillStyle="#555";g.font="11px IBM Plex Sans, sans-serif";g.fillText("Suxarev kapillyari (qiyalatilganda)",8,14);}
+    drawCap(1);
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Dyuk usuli",...B,tClock,...speedBtns(clock,[[1,"×1"],[4,"×4"]]),bBlot)),
+      el("div",{class:"ctl"},ctlGroup("Suxarev usuli",...capB,cClock,...speedBtns(clock2,[[1,"×1"],[4,"×4"]]))),
+      el("div",{style:"margin-top:10px"},capCv),
+      el("p",{class:"note"},"Dyuk: tomchiga qog'oz tegiziladi, lekin teri yarasiga tegmasligi kerak — aks holda tromb buziladi. Suxarev: ivish boshlanishi — ustun harakati sekinlashgan vaqt, oxiri — ustun butunlay to'xtagan vaqt."));
+  },
+  journal:ctx=>{const P=ctx.P,st=ctx.dk;const fT=(arr,x)=>{const a=arr.find(t=>t>=x);return a==null?null:a;};
+    const bt=st.stop!=null?st.stop:Math.ceil(P.Tb/30)*30;const fs=fT(st.tilts,P.Ts)??Math.ceil(P.Ts/30)*30,fe=fT(st.tilts,P.Te)??Math.ceil(P.Te/30)*30;const mm=v=>fx(v/60,1)+" daq";return[
+    {id:"b",label:"Qon ketish vaqti (Dyuk)",unit:"daq",ph:"masalan 3",check:v=>[near(v*60,bt,31),"≈ "+mm(bt)+" (dog' qolmagan birinchi shimdirish)"]},
+    {id:"s",label:"Ivish boshlanishi (Suxarev)",unit:"daq",check:v=>[near(v*60,fs,31),"≈ "+mm(fs)]},
+    {id:"e",label:"Ivish oxiri (Suxarev)",unit:"daq",check:v=>[near(v*60,fe,31),"≈ "+mm(fe)]}];},
+  mc:ctx=>({q:"Natijalarni baholang:",opts:["Qon ketish va ivish vaqtlari me'yorida — gemostaz buzilmagan","Qon ketish vaqti uzaygan, ivish vaqti me'yorida — tomir-trombotsitar gemostaz buzilgan","Ivish vaqti uzaygan, qon ketish vaqti me'yorida — koagulyatsion gemostaz buzilgan","Ikkala ko'rsatkich ham qisqargan — giperkoagulyatsiya"],ans:ctx.P.k,
+    why:"Dyuk usuli tomir-trombotsitar (birlamchi) gemostazni baholaydi — me'yor 2–4 daqiqa; trombotsitopeniyada uzayadi. Kapillyar qon ivishi (Suxarev): boshlanishi 30 s – 2 daqiqa, oxiri 3–5 daqiqa; ivish omillari tanqisligida (gemofiliya) uzayadi, qon ketish vaqti esa me'yorida qoladi."}),
+  explain:ctx=>{const P=ctx.P;return `Bu tekshiriluvchida: qon ketish ${mmss(P.Tb)} da to'xtagan; ivish boshlanishi ${mmss(P.Ts)}, oxiri ${mmss(P.Te)} (30 soniyalik qiyalatishda aniqlik ± 30 s).`;}
+});
+
+/* ===== Audio ===== */
+let AC=null;
+function audio(){try{if(!AC)AC=new (window.AudioContext||window.webkitAudioContext)();if(AC.state==="suspended")AC.resume();}catch(e){AC=null;}return AC;}
+function thump(vol,muff){const a=audio();if(!a||vol<=0)return;const t=a.currentTime;
+  const o=a.createOscillator(),g=a.createGain(),f=a.createBiquadFilter();o.type="sine";o.frequency.setValueAtTime(muff?55:85,t);o.frequency.exponentialRampToValueAtTime(40,t+0.09);
+  f.type="lowpass";f.frequency.value=muff?180:420;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.9*vol,t+0.008);g.gain.exponentialRampToValueAtTime(0.0001,t+(muff?0.16:0.1));
+  o.connect(f);f.connect(g);g.connect(a.destination);o.start(t);o.stop(t+0.2);
+  // qisqa shovqin (tiqillash)
+  const n=a.createBufferSource(),b=a.createBuffer(1,a.sampleRate*0.03,a.sampleRate),d=b.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
+  const gn=a.createGain();gn.gain.value=(muff?0.05:0.18)*vol;const fn=a.createBiquadFilter();fn.type="bandpass";fn.frequency.value=muff?200:600;n.buffer=b;n.connect(fn);fn.connect(gn);gn.connect(a.destination);n.start(t);}
+function beep(freq=1000,dur=0.12,vol=0.3){const a=audio();if(!a)return;const t=a.currentTime;const o=a.createOscillator(),g=a.createGain();o.frequency.value=freq;g.gain.setValueAtTime(vol,t);g.gain.setValueAtTime(vol,t+dur-0.01);g.gain.linearRampToValueAtTime(0,t+dur);o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+dur);}
+
+/* ===== Tonometr komponenti (Korotkov usuli) ===== */
+function tonometer(ctx,opts){
+  const T={sbp:120,dbp:80,hr:72,P:0,valve:0,cuff:null,steth:false,palp:false,max:0,phase:"idle",heard:[],first:null,last:null,fastErr:false,palpUsed:false,inflating:false,results:[],beatAcc:0,disp:0,sound:true};
+  const s=svgRoot(680,250);sv("rect",{x:0,y:0,width:680,height:250,fill:"#EEF1F3"},s);
+  // qo'l
+  sv("path",{d:"M20 120 L 420 130 L 430 200 L 20 210 Z",fill:"#E8B996",stroke:"#B07D5A","stroke-width":1.5},s);
+  sv("path",{d:"M420 130 C 470 120, 560 150, 640 150 L 640 195 C 560 195, 480 205, 430 200 Z",fill:"#E8B996",stroke:"#B07D5A","stroke-width":1.5},s);
+  sv("text",{x:60,y:110,"font-size":11,fill:"#555",text:"yelka"},s);sv("text",{x:560,y:140,"font-size":11,fill:"#555",text:"bilak"},s);
+  sv("circle",{cx:440,cy:168,r:4,fill:"#9C5A42"},s);sv("text",{x:440,y:226,"text-anchor":"middle","font-size":10,fill:"#555",text:"tirsak chuqurchasi"},s);
+  const cuffG=sv("g",{opacity:0},s);const cuffR=sv("rect",{x:250,y:112,width:150,height:108,rx:10,fill:"#2F4E73",stroke:"#1C3049"},cuffG);
+  sv("path",{d:"M325 112 C 325 70, 600 40, 680 30",fill:"none",stroke:"#333","stroke-width":3},cuffG);
+  const steth=sv("g",{opacity:0},s);sv("circle",{cx:452,cy:166,r:14,fill:"#B8BEC4",stroke:"#666","stroke-width":2},steth);sv("path",{d:"M452 152 C 470 80, 520 60, 560 40",fill:"none",stroke:"#444","stroke-width":3},steth);
+  const palpG=sv("g",{opacity:0},s);sv("ellipse",{cx:610,cy:176,rx:22,ry:9,fill:"#D8A27E",stroke:"#9B6A4C"},palpG);const pulseDot=sv("circle",{cx:610,cy:176,r:5,fill:"#D0021B",opacity:0},palpG);
+  sv("text",{x:610,y:214,"text-anchor":"middle","font-size":10,fill:"#555",text:"a. radialis"},palpG);
+  // manometr
+  const ds=svgRoot(260,260);sv("rect",{x:0,y:0,width:260,height:260,fill:"#EEF1F3"},ds);const dg=sv("g",{transform:"translate(130 130)"},ds);sv("circle",{r:118,fill:"#FAFAF7",stroke:"#333","stroke-width":5},dg);
+  const ang=p=>(-240+p*1)*Math.PI/180; // 0 -> -240deg ... 300 -> 60deg
+  for(let p=0;p<=300;p+=2){const a=ang(p),M=p%10===0,L=p%20===0;const r1=104,r2=M?(L?88:93):98;sv("line",{x1:Math.cos(a)*r1,y1:Math.sin(a)*r1,x2:Math.cos(a)*r2,y2:Math.sin(a)*r2,stroke:"#111","stroke-width":M?1.6:0.7},dg);
+    if(L)sv("text",{x:Math.cos(a)*74,y:Math.sin(a)*74+4,"text-anchor":"middle","font-size":11,"font-family":"IBM Plex Mono",fill:"#111",text:String(p)},dg);}
+  sv("text",{x:0,y:62,"text-anchor":"middle","font-size":10,fill:"#444",text:"mm sim. ust."},dg);
+  const needle=sv("line",{x1:0,y1:0,x2:96,y2:0,stroke:"#C0271E","stroke-width":2.5,"stroke-linecap":"round"},dg);sv("circle",{r:7,fill:"#222"},dg);
+  const ear=sv("text",{x:520,y:30,"font-size":22,"font-weight":"700",fill:"#C0271E",opacity:0,text:"tuk"},s);
+  opts.mount.append(el("div",{class:"row",style:"align-items:center;gap:10px"},el("div",{style:"flex:1 1 320px;min-width:0"},s),el("div",{style:"flex:0 1 300px;max-width:300px;margin:0 auto"},ds)));
+  const setNeedle=p=>{needle.setAttribute("transform",`rotate(${-240+p})`);};setNeedle(0);
+  const bCuff1=el("button",{class:"btn sm",type:"button",onclick:()=>placeCuff(true)},"Manjet: tirsakdan 2–2,5 sm yuqori");
+  const bCuff2=el("button",{class:"btn sm",type:"button",onclick:()=>placeCuff(false)},"Manjet: tirsak bukilmasi ustiga");
+  function placeCuff(ok){if(T.P>0){ctx.err("Manjetda havo bor — avval havoni chiqaring");return;}T.cuff=ok;cuffG.setAttribute("opacity",1);cuffR.setAttribute("x",ok?250:330);
+    bCuff1.classList.toggle("on",ok);bCuff2.classList.toggle("on",!ok);
+    if(!ok){ctx.err("Manjet tirsak bukilmasini to'sib qo'ydi — fonendoskopni qo'yib bo'lmaydi, manjet tirsakdan 2–2,5 sm yuqoriga bog'lanadi");}
+    else{ctx.msg("Manjet yelkaga tirsakdan 2–2,5 sm yuqorida, ostiga bir barmoq sig'adigan qilib bog'landi.");opts.onStep&&opts.onStep("cuff");}}
+  const bSteth=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!T.cuff){ctx.err("Avval manjetni to'g'ri bog'lang");return;}T.steth=!T.steth;steth.setAttribute("opacity",T.steth?1:0);bSteth.classList.toggle("on",T.steth);audio();if(T.steth){ctx.msg("Fonendoskop tirsak chuqurchasida yelka arteriyasi ustiga qo'yildi.");opts.onStep&&opts.onStep("steth");}}},"Fonendoskop");
+  const bPalp=el("button",{class:"btn sm",type:"button",onclick:()=>{T.palp=!T.palp;palpG.setAttribute("opacity",T.palp?1:0);bPalp.classList.toggle("on",T.palp);}},"Bilak pulsini paypaslash");
+  const bPump=el("button",{class:"btn pri sm",type:"button"},"Damlash (bosib turing)");
+  let pumpI=0;const pumpOnce=()=>{if(!T.cuff){ctx.err("Manjet bog'lanmagan");stopPump();return;}if(T.valve!==0){ctx.err("Vint ochiq — avval vintni yoping, aks holda havo chiqib ketadi");T.valve=0;markValve();}
+    if(T.phase!=="up"){T.phase="up";T.max=0;T.first=null;T.last=null;T.heard=[];T.fastErr=false;T.palpUsed=false;T.lowErr=false;}
+    if(T.palp)T.palpUsed=true;T.P=Math.min(300,T.P+rnd(12,16));T.max=Math.max(T.max,T.P);};
+  const startPump=e=>{e.preventDefault();audio();if(pumpI)return;pumpOnce();pumpI=setInterval(pumpOnce,320);};const stopPump=()=>{clearInterval(pumpI);pumpI=0;};
+  bPump.addEventListener("pointerdown",startPump);["pointerup","pointerleave","pointercancel"].forEach(ev=>bPump.addEventListener(ev,stopPump));
+  const VAL=[[0,"yopiq"],[2.5,"sekin (2–3 mm/s)"],[8,"tez (8 mm/s)"],[60,"to'liq ochish"]];
+  const vBtns=VAL.map(([v,t])=>el("button",{class:"btn sm",type:"button",onclick:()=>{T.valve=v;markValve();if(v>0&&T.phase==="up")startDown();}},t));
+  function markValve(){vBtns.forEach((b,i)=>b.classList.toggle("on",VAL[i][0]===T.valve));}markValve();
+  function startDown(){T.phase="down";
+    if(T.max<T.sbp){T.lowErr=true;ctx.err(`Manjet ${Math.round(T.max)} mm gacha damlandi — bu sistolik bosimdan past; tonlar darhol eshitiladi va sistolik bosim aniqlanmaydi`);}
+    else if(T.max>T.sbp+60)ctx.err("Manjet keraksiz darajada yuqori damlandi — bemorga og'riq beradi (puls yo'qolgandan keyin 20–30 mm yetarli)");
+    else if(T.max<T.sbp+15)ctx.msg("Eslatma: puls yo'qolgandan keyin yana 20–30 mm damlash tavsiya etiladi (auskultativ oraliqni o'tkazib yubormaslik uchun).","pt");
+    if(!T.palpUsed)ctx.err("Damlashda bilak arteriyasidagi pulsni paypaslab nazorat qilmadingiz (puls yo'qolgan bosimni bilish kerak)");}
+  const bSnd=el("button",{class:"btn sm on",type:"button",onclick:()=>{T.sound=!T.sound;bSnd.classList.toggle("on",T.sound);bSnd.textContent=T.sound?"🔊 Tovush":"🔇 Tovush";}},"🔊 Tovush");
+  const clock=makeClock((t,dt)=>{
+    const prev=T.P;
+    if(T.valve>0&&T.P>0){T.P=Math.max(0,T.P-T.valve*dt*(T.valve>=60?1:(0.85+0.3*T.P/200)));}
+    const rate=(prev-T.P)/Math.max(dt,1e-6);
+    // yurak urishi
+    T.beatAcc+=dt;const per=60/T.hr;let beat=false;if(T.beatAcc>=per){T.beatAcc-=per;beat=true;}
+    let jig=0;
+    if(beat){
+      if(T.palp&&T.P<T.sbp-2){pulseDot.setAttribute("opacity",1);setTimeout(()=>pulseDot.setAttribute("opacity",0),140);}
+      if(T.P>T.dbp-10&&T.P<T.sbp+10&&T.P>0)jig=T.P<=T.sbp?2.5:1;
+      if(T.phase==="down"&&T.steth&&T.P<=T.sbp&&T.P>T.dbp){
+        const x=(T.sbp-T.P)/Math.max(10,T.sbp-T.dbp);const muff=T.P<T.dbp+7;const vol=x<0.12?0.45:muff?0.35:0.85;
+        if(T.sound)thump(vol,muff);ear.setAttribute("opacity",1);ear.textContent=muff?"tuk (bo'g'iq)":"TUK";setTimeout(()=>ear.setAttribute("opacity",0),160);
+        const pr=Math.round(T.P);if(T.first==null)T.first=pr;T.last=pr;T.heard.push(pr);
+        if(rate>4.5&&!T.fastErr){T.fastErr=true;ctx.err("Havo juda tez chiqarilmoqda (> 4 mm/s) — tonlar orasida bosim ko'p tushadi, natija noaniq bo'ladi");}
+      }
+    }
+    T.disp=T.P+(jig?jig:0);setNeedle(T.disp);
+    if(jig)setTimeout(()=>setNeedle(T.P),90);
+    if(T.phase==="down"&&T.P<T.dbp-12&&T.first!=null){T.phase="done";const r={first:T.first,last:T.last,max:T.max,fast:T.fastErr,low:T.lowErr,truth:{sbp:T.sbp,dbp:T.dbp}};T.results.push(r);opts.onMeasured&&opts.onMeasured(r);}
+    if(T.phase==="down"&&T.P<=0.5&&T.first==null&&T.max>0){T.phase="idle";if(!T.steth)ctx.err("Fonendoskop qo'yilmagan edi — tonlar eshitilmadi");else ctx.msg("Tonlar eshitilmadi — o'lchashni takrorlang.");}
+  });
+  clock.start();ctx.onClean(()=>{clock.stop();stopPump();});
+  opts.controls.append(el("div",{class:"ctl"},ctlGroup("Manjet",bCuff1,bCuff2),ctlGroup("Paypaslash / tinglash",bPalp,bSteth,bSnd)),
+    el("div",{class:"ctl"},ctlGroup("Nok",bPump),ctlGroup("Vint",...vBtns)));
+  T.setTruth=(o)=>{Object.assign(T,o);};
+  T.ready=()=>T.cuff&&T.steth;
+  return T;
+}
+
+/* ===== 9-holat: EKG ===== */
+function ecgBeat(tt,E){ // tt — P boshlanishidan beri vaqt (s); mV, II ulanish
+  let v=0;const pd=E.pd,pq=E.pq,q=E.qrs,qt=E.qt;
+  if(tt>=0&&tt<=pd)v+=E.pa*0.5*(1-Math.cos(2*Math.PI*tt/pd));
+  const r=tt-pq;
+  if(r>=0&&r<=q){const pts=[[0,0],[0.15,-E.qa],[0.45,E.ra],[0.75,-E.sa],[1,0]];const x=r/q;for(let i=0;i<4;i++){const [x0,y0]=pts[i],[x1,y1]=pts[i+1];if(x>=x0&&x<=x1){v+=y0+(y1-y0)*(x-x0)/(x1-x0);break;}}}
+  const td=E.td,ts=pq+qt-td;if(tt>=ts&&tt<=ts+td){const x=(tt-ts)/td;v+=E.ta*Math.pow(Math.sin(Math.PI*x),1.6)*(x<0.6?1:1);}
+  return v;
+}
+function ecgAt(t,E){const RR=60/E.hr;const k=Math.floor((t-E.off)/RR);let v=0;for(let j=k-1;j<=k;j++){const b=E.off+j*RR;v+=ecgBeat(t-b,E);}return v;}
+const CHEST=[{id:"r4ps",x:268,y:236,t:"IV qovurg'a oralig'i, to'sh o'ng cheti"},{id:"l4ps",x:312,y:236,t:"IV qovurg'a oralig'i, to'sh chap cheti"},{id:"l45",x:340,y:250,t:"V2 va V4 o'rtasi"},{id:"l5mcl",x:368,y:266,t:"V qovurg'a oralig'i, o'rta o'mrov chizig'i"},{id:"l5aal",x:404,y:266,t:"oldingi qo'ltiq osti chizig'i, V4 sathida"},{id:"l5mal",x:430,y:266,t:"o'rta qo'ltiq osti chizig'i, V4 sathida"},
+  {id:"r2ps",x:268,y:196,t:"II qovurg'a oralig'i, o'ngda"},{id:"l2ps",x:312,y:196,t:"II qovurg'a oralig'i, chapda"},{id:"l3ps",x:312,y:216,t:"III qovurg'a oralig'i, chapda"},{id:"l4mcl",x:368,y:246,t:"IV qovurg'a oralig'i, o'rta o'mrov chizig'i"},{id:"l6mcl",x:368,y:288,t:"VI qovurg'a oralig'i, o'rta o'mrov chizig'i"},{id:"r5mcl",x:232,y:266,t:"V qovurg'a oralig'i, o'ngda"}];
+const LIMB=[{id:"ra",x:120,y:330,t:"o'ng bilak"},{id:"la",x:480,y:330,t:"chap bilak"},{id:"ll",x:330,y:560,t:"chap boldir"},{id:"rl",x:270,y:560,t:"o'ng boldir"}];
+const ELS=[{id:"R",c:"#D32F2F",t:"qizil",want:"ra"},{id:"Y",c:"#F2C200",t:"sariq",want:"la"},{id:"G",c:"#2E9E44",t:"yashil",want:"ll"},{id:"K",c:"#222",t:"qora",want:"rl"},
+  {id:"V1",c:"#D32F2F",t:"V1",want:"r4ps"},{id:"V2",c:"#F2C200",t:"V2",want:"l4ps"},{id:"V3",c:"#2E9E44",t:"V3",want:"l45"},{id:"V4",c:"#8D5A2B",t:"V4",want:"l5mcl"},{id:"V5",c:"#222",t:"V5",want:"l5aal"},{id:"V6",c:"#7B3FA0",t:"V6",want:"l5mal"}];
+CASES.push({id:"c09",no:9,grp:2,
+  title:"EKG yozish va tahlil qilish",
+  short:"Elektrodlarni qo'yish, kalibrlash, II ulanishda intervallarni o'lchash",
+  gen(){const v=pick([{hr:ri(62,86),k:0,d:"20 yoshli sog'lom talaba"},{hr:ri(48,56),k:1,d:"24 yoshli sportchi (uzoq masofaga yuguruvchi), shikoyatlari yo'q"},{hr:ri(102,115),k:2,d:"19 yoshli talaba, imtihon oldidan hayajonda, 2 piyola qahva ichgan"}]);
+    const RR=60/v.hr;return {...v,pd:+rnd(0.08,0.1).toFixed(3),pq:+rnd(0.13,0.18).toFixed(3),qrs:+rnd(0.07,0.095).toFixed(3),qt:+(0.40*Math.sqrt(RR)+rnd(-0.01,0.01)).toFixed(3),pa:+rnd(0.12,0.2).toFixed(2),qa:0.1,ra:+rnd(1.0,1.5).toFixed(2),sa:+rnd(0.15,0.3).toFixed(2),ta:+rnd(0.25,0.4).toFixed(2),td:0.18,off:rnd(0.15,0.4)};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.d}. <b>Vazifa:</b> elektrodlarni to'g'ri qo'yib EKG yozish, II standart ulanishda RR, PQ, QRS, QT intervallarini va R tishi amplitudasini o'lchash, YUS va ritmni baholash.`,
+  steps:["Tekshiriluvchini yotqizib, elektrod joylarini spirt bilan artish va gel surtish","Qo'l-oyoq elektrodlarini rang bo'yicha qo'yish","Ko'krak elektrodlarini V1–V6 nuqtalariga qo'yish","Kalibrlash (1 mV = 10 mm) va lenta tezligini tanlash","EKG ni yozish","II ulanishda sirkul bilan intervallar va amplitudani o'lchash"],
+  build(ctx){const P=ctx.P,R=ctx.rec;const pl={};let tool=null,prep=false,speed=null,gain=10,recd=false;
+    const s=svgRoot(600,620);sv("rect",{x:0,y:0,width:600,height:620,fill:"#EEF1F3"},s);
+    // gavda
+    sv("path",{d:"M300 40 C 270 40, 262 70, 266 95 C 270 120, 330 120, 334 95 C 338 70, 330 40, 300 40 Z",fill:"#EDC4A4",stroke:"#B07D5A"},s);
+    sv("path",{d:"M220 140 C 250 125, 350 125, 380 140 L 400 160 L 470 320 L 492 340 L 470 350 L 440 330 L 392 220 L 388 400 L 360 600 L 316 600 L 304 430 L 296 430 L 284 600 L 240 600 L 212 400 L 208 220 L 160 330 L 130 350 L 108 340 L 130 320 L 200 160 Z",fill:"#EDC4A4",stroke:"#B07D5A","stroke-width":1.5},s);
+    // qovurg'alar
+    for(let i=0;i<6;i++){const y=172+i*21;sv("path",{d:`M300 ${y-4} C 270 ${y}, 240 ${y+6}, 214 ${y+20}`,fill:"none",stroke:"#C99A7A","stroke-width":1.2},s);sv("path",{d:`M300 ${y-4} C 330 ${y}, 360 ${y+6}, 386 ${y+20}`,fill:"none",stroke:"#C99A7A","stroke-width":1.2},s);}
+    sv("rect",{x:292,y:150,width:16,height:130,rx:6,fill:"#E2B795",stroke:"#C99A7A"},s);
+    sv("line",{x1:368,y1:150,x2:368,y2:320,stroke:"#9AA","stroke-dasharray":"4 4"},s);sv("text",{x:372,y:318,"font-size":9,fill:"#577",text:"o'rta o'mrov"},s);
+    sv("line",{x1:404,y1:180,x2:404,y2:320,stroke:"#9AA","stroke-dasharray":"4 4"},s);sv("line",{x1:430,y1:190,x2:430,y2:320,stroke:"#9AA","stroke-dasharray":"2 4"},s);
+    sv("text",{x:204,y:168,"font-size":9,fill:"#666",text:"II"},s);sv("text",{x:204,y:210,"font-size":9,fill:"#666",text:"IV"},s);
+    const gel=sv("g",{opacity:0},s);
+    const tg=sv("g",{},s);
+    [...LIMB,...CHEST].forEach(p=>{const c=sv("circle",{cx:p.x,cy:p.y,r:LIMB.includes(p)?13:9,fill:"rgba(255,255,255,.55)",stroke:"#567","stroke-dasharray":"3 2",class:"clk"},tg);
+      sv("circle",{cx:p.x,cy:p.y,r:LIMB.includes(p)?15:11,fill:"#9FD3F5",opacity:.5},gel);
+      const tt=document.createElementNS(NS,"title");tt.textContent=p.t;c.appendChild(tt);c.addEventListener("click",()=>place(p.id));});
+    const placed=sv("g",{},s);
+    ctx.stage.append(el("div",{style:"max-width:560px;margin:0 auto"},s));
+    function draw(){while(placed.firstChild)placed.removeChild(placed.firstChild);Object.entries(pl).forEach(([e,pid])=>{const p=[...LIMB,...CHEST].find(x=>x.id===pid),E=ELS.find(x=>x.id===e);
+      sv("circle",{cx:p.x,cy:p.y,r:LIMB.includes(p)?12:8,fill:E.c,stroke:"#000","stroke-width":1},placed);sv("text",{x:p.x,y:p.y-(LIMB.includes(p)?17:12),"text-anchor":"middle","font-size":10,"font-weight":700,fill:"#123",text:E.t},placed);});}
+    function place(pid){if(!prep){ctx.err("Avval terini spirt bilan arting va gel surting");return;}if(!tool){toast("Avval elektrodni tanlang");return;}
+      const isLimb=LIMB.some(p=>p.id===pid),E=ELS.find(x=>x.id===tool);if(isLimb!==(tool.length===1)){toast(isLimb?"Bu joyga qo'l-oyoq elektrodi qo'yiladi":"Bu joyga ko'krak elektrodi qo'yiladi");return;}
+      Object.keys(pl).forEach(k=>{if(pl[k]===pid)delete pl[k];});pl[tool]=pid;draw();
+      if(["R","Y","G","K"].every(k=>pl[k]))ctx.done(1);if(["V1","V2","V3","V4","V5","V6"].every(k=>pl[k]))ctx.done(2);}
+    const bPrep=el("button",{class:"btn sm",type:"button",onclick:()=>{prep=true;gel.setAttribute("opacity",1);ctx.done(0);ctx.ok("Teri spirt bilan artildi, elektrod joylariga gel surtildi.");}},"Spirt + gel");
+    const tBtns=ELS.map(E=>el("button",{class:"btn sm",type:"button",onclick:()=>{tool=E.id;tBtns.forEach(b=>b.classList.toggle("on",b.dataset.id===E.id));}},el("span",{style:`display:inline-block;width:12px;height:12px;border-radius:50%;background:${E.c};border:1px solid #555`}),E.t));tBtns.forEach((b,i)=>b.dataset.id=ELS[i].id);
+    const spB=[25,50].map(v=>el("button",{class:"btn sm",type:"button",onclick:()=>{speed=v;spB.forEach(b=>b.classList.toggle("on",b.textContent.startsWith(String(v))));if(cal)ctx.done(3);}},v+" mm/s"));
+    const gnB=[5,10,20].map(v=>el("button",{class:"btn sm"+(v===10?" on":""),type:"button",onclick:()=>{gain=v;gnB.forEach(b=>b.classList.toggle("on",b.textContent.startsWith(String(v)+" ")));}},v+" mm/mV"));
+    let cal=false;const bCal=el("button",{class:"btn sm",type:"button",onclick:()=>{cal=true;ctx.msg(`Kalibrlash signali: 1 mV = ${gain} mm.`);if(gain!==10)ctx.msg("Eslatma: standart kuchaytirish 10 mm/mV. Boshqa qiymatda amplitudani qayta hisoblash kerak bo'ladi.","pt");if(speed)ctx.done(3);}},"Kalibrlash 1 mV");
+    const bRec=el("button",{class:"btn pri sm",type:"button",onclick:record},"▶ EKG yozish");
+    const out=el("div",{style:"margin-top:10px"});
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Tayyorlash",bPrep)),el("div",{class:"ctl"},ctlGroup("Elektrod tanlang, so'ng tanadagi nuqtani bosing",...tBtns)),
+      el("div",{class:"ctl"},ctlGroup("Lenta tezligi",...spB),ctlGroup("Kuchaytirish",...gnB),bCal,bRec),out);
+    function record(){
+      if(!ctx.isDone(1)){ctx.err("Qo'l-oyoq elektrodlari to'liq qo'yilmagan");return;}
+      if(!speed){ctx.err("Lenta tezligi tanlanmagan");return;}
+      if(!cal){ctx.err("Yozishdan oldin kalibrlash signali berilmagan — amplitudani baholab bo'lmaydi");cal=true;}
+      // xatolarni tekshirish
+      const errs=[];ELS.forEach(E=>{if(pl[E.id]&&pl[E.id]!==E.want){const p=[...LIMB,...CHEST].find(x=>x.id===pl[E.id]),w=[...LIMB,...CHEST].find(x=>x.id===E.want);errs.push(`${E.t} elektrod noto'g'ri joyda (${p.t}); to'g'ri joyi — ${w.t}`);}});
+      if(!ctx.isDone(2))errs.push("Ko'krak elektrodlari to'liq qo'yilmagan");
+      if(!R.errLogged){errs.forEach(e=>ctx.err(e));R.errLogged=true;}
+      const swap=pl.R==="la"&&pl.Y==="ra";R.swap=swap;
+      recd=true;ctx.done(4);R.speed=speed;R.gain=gain;
+      out.innerHTML="";const pxmm=4,dur=6,W=Math.round(dur*speed*pxmm)+60;
+      const leads=swap?[["I",-0.55],["II",0.45],["III",1]]:[["I",0.55],["II",1],["III",0.45]];
+      R.raII=P.ra*(swap?0.45:1);
+      if(swap)ctx.msg("Diqqat: I ulanishda P va QRS manfiy chiqdi.","pt");
+      const wrap=el("div",{style:"overflow-x:auto;border-radius:8px;border:1px solid #B9C3CC;background:#FFF5F5"});
+      const H=3*32*pxmm+30,cv=el("canvas",{width:W,height:H,style:`width:${W}px;max-width:none;border:0;cursor:ew-resize;background:#FFF5F5;touch-action:none`});
+      wrap.append(cv);
+      const g=cv.getContext("2d");
+      const grid=()=>{g.fillStyle="#FFF5F5";g.fillRect(0,0,W,H);for(let x=0;x<=W;x+=pxmm){g.strokeStyle=(x/pxmm)%5===0?"#F2A8A8":"#FBD9D9";g.lineWidth=(x/pxmm)%5===0?1:0.6;g.beginPath();g.moveTo(x+.5,0);g.lineTo(x+.5,H);g.stroke();}
+        for(let y=0;y<=H;y+=pxmm){g.strokeStyle=(y/pxmm)%5===0?"#F2A8A8":"#FBD9D9";g.lineWidth=(y/pxmm)%5===0?1:0.6;g.beginPath();g.moveTo(0,y+.5);g.lineTo(W,y+.5);g.stroke();}};
+      const traces=()=>{leads.forEach(([nm,k],li)=>{const base=(li*32+20)*pxmm;g.fillStyle="#333";g.font="bold 13px IBM Plex Sans, sans-serif";g.fillText(nm,4,base-gain*pxmm-6);
+        g.strokeStyle="#111";g.lineWidth=1.4;g.beginPath();g.moveTo(8,base);g.lineTo(14,base);g.lineTo(14,base-gain*pxmm);g.lineTo(14+0.2*speed*pxmm,base-gain*pxmm);g.lineTo(14+0.2*speed*pxmm,base);g.lineTo(60,base);
+        for(let x=0;x<W-60;x++){const t=x/(speed*pxmm);const v=k*ecgAt(t,P);g.lineTo(60+x,base-v*gain*pxmm);}g.stroke();});};
+      grid();traces();
+      // sirkul
+      let mode="h",a=200,b=200+Math.round(60/P.hr*speed*pxmm),drag=null;const ov=el("canvas",{width:W,height:H,style:`position:absolute;left:0;top:0;width:${W}px;max-width:none;border:0;background:transparent;pointer-events:none`});
+      const holder=el("div",{style:`position:relative;width:${W}px`});cv.replaceWith(holder);holder.append(cv,ov);
+      const read=el("span",{class:"clock",style:"color:#7CFF9A;background:#0F1A12"},"");
+      function drawOv(){const o=ov.getContext("2d");o.clearRect(0,0,W,H);o.strokeStyle="#1565C0";o.lineWidth=1.5;o.setLineDash([6,4]);
+        if(mode==="h"){[a,b].forEach(x=>{o.beginPath();o.moveTo(x,0);o.lineTo(x,H);o.stroke();});o.setLineDash([]);o.beginPath();o.moveTo(a,10);o.lineTo(b,10);o.stroke();read.textContent=`Δ = ${fx(Math.abs(b-a)/pxmm,1)} mm`;}
+        else{[a,b].forEach(y=>{o.beginPath();o.moveTo(0,y);o.lineTo(W,y);o.stroke();});read.textContent=`Δ = ${fx(Math.abs(b-a)/pxmm,1)} mm`;}}
+      const pos=e=>{const r=cv.getBoundingClientRect();return mode==="h"?(e.clientX-r.left)*W/r.width:(e.clientY-r.top)*H/r.height;};
+      cv.addEventListener("pointerdown",e=>{const p=pos(e);drag=Math.abs(p-a)<Math.abs(p-b)?"a":"b";if(drag==="a")a=p;else b=p;drawOv();cv.setPointerCapture(e.pointerId);});
+      cv.addEventListener("pointermove",e=>{if(!drag)return;const p=pos(e);if(drag==="a")a=p;else b=p;drawOv();});
+      cv.addEventListener("pointerup",()=>{drag=null;ctx.done(5);});
+      const mB=[["h","Sirkul: gorizontal (vaqt)"],["v","Sirkul: vertikal (amplituda)"]].map(([m,t])=>el("button",{class:"btn sm"+(m==="h"?" on":""),type:"button",onclick:()=>{mode=m;mB.forEach(x=>x.classList.toggle("on",x===mB[m==="h"?0:1]));if(m==="v"){a=(32+20)*pxmm;b=a-40;cv.style.cursor="ns-resize";}else{a=200;b=300;cv.style.cursor="ew-resize";}drawOv();}},t));
+      const nudge=(w,d)=>el("button",{class:"btn sm",type:"button",onclick:()=>{if(w==="a")a+=d;else b+=d;drawOv();ctx.done(5);}},(w==="a"?"1-chiziq ":"2-chiziq ")+(d>0?"+":"−")+fx(Math.abs(d)/pxmm,1)+" mm");
+      const scr=el("input",{type:"range",min:0,max:1000,value:0,style:"width:100%;margin-top:6px","aria-label":"Lentani surish"});
+      scr.addEventListener("input",()=>{wrap.scrollLeft=(wrap.scrollWidth-wrap.clientWidth)*scr.value/1000;});
+      wrap.addEventListener("scroll",()=>{const m=wrap.scrollWidth-wrap.clientWidth;if(m>0)scr.value=Math.round(wrap.scrollLeft/m*1000);});
+      out.append(el("div",{class:"ctl",style:"margin-top:0;margin-bottom:8px"},...mB,read),el("div",{class:"ctl",style:"margin-top:0;margin-bottom:8px"},nudge("a",-2),nudge("a",2),nudge("b",-2),nudge("b",2)),wrap,el("label",{class:"small muted"},"Lentani surish",scr),
+        el("p",{class:"note"},`Lenta tezligi ${speed} mm/s (1 mm = ${fx(1/speed,3)} s), kuchaytirish ${gain} mm/mV. Sirkul chiziqlarini lenta ustida sudrab qo'ying; oraliq mm da ko'rsatiladi. Kichik katak — 1 mm, katta katak — 5 mm.`));
+      drawOv();
+    }
+  },
+  journal:ctx=>{const P=ctx.P,R=ctx.rec;const RR=60/P.hr;return[
+    {id:"rr",label:"RR interval",unit:"s",check:v=>[near(v,RR,0.04),"RR = "+fx(RR,2)+" s"]},
+    {id:"hr",label:"Yurak urish soni (60 / RR)",unit:"/daq",check:v=>[near(v,P.hr,5),"YUS = "+P.hr+" /daq"]},
+    {id:"pq",label:"PQ interval",unit:"s",check:v=>[near(v,P.pq,0.02),"PQ = "+fx(P.pq,2)+" s"]},
+    {id:"qrs",label:"QRS kompleksi",unit:"s",check:v=>[near(v,P.qrs,0.02),"QRS = "+fx(P.qrs,2)+" s"]},
+    {id:"qt",label:"QT interval",unit:"s",check:v=>[near(v,P.qt,0.03),"QT = "+fx(P.qt,2)+" s"]},
+    {id:"ra",label:"II ulanishda R tishi amplitudasi",unit:"mV",check:v=>{const t=R.raII!=null?R.raII:P.ra;return[near(v,t,0.15),"R ≈ "+fx(t,2)+" mV"];}}];},
+  mc:ctx=>({q:"Ritmni baholang:",opts:["Sinus ritmi, YUS me'yorida (60–90 /daq)","Sinus bradikardiya (YUS < 60 /daq)","Sinus taxikardiya (YUS > 90 /daq)","Ritm sinus tugunidan emas (P tishi yo'q)"],ans:ctx.P.k,
+    why:"Sinus ritmi mezonlari: II ulanishda P tishi musbat va har bir QRS oldidan keladi, PQ doimiy, RR oraliqlari teng. Sportchilarda vagus tonusi yuqori — fiziologik sinus bradikardiya; hayajon va kofein simpatik ta'sir orqali sinus taxikardiya chaqiradi. Me'yorlar: PQ 0,12–0,20 s, QRS 0,06–0,10 s, QT YUS ga bog'liq (taxminan 0,36–0,44 s)."}),
+  explain:ctx=>{const P=ctx.P;return `Bu yozuvda: YUS ${P.hr}, RR ${fx(60/P.hr,2)} s, P ${fx(P.pd,2)} s, PQ ${fx(P.pq,2)} s, QRS ${fx(P.qrs,2)} s, QT ${fx(P.qt,2)} s, R (II) ${fx(P.ra,2)} mV.${ctx.rec.swap?" Qo'l elektrodlari almashgani uchun I ulanish teskari, II va III ulanishlar o'rin almashgan.":""}`;}
+});
+
+/* ===== 10-holat: Korotkov usuli ===== */
+CASES.push({id:"c10",no:10,grp:2,
+  title:"Korotkov usulida arterial bosimni o'lchash",
+  short:"Aneroid tonometr, fonendoskop, Korotkov tonlari",
+  gen(){const v=pick([{s:[106,118],d:[64,76],k:0,d0:"19 yoshli sog'lom talaba"},{s:[122,128],d:[80,84],k:1,d0:"35 yoshli o'qituvchi, profilaktik ko'rik"},{s:[132,138],d:[85,88],k:2,d0:"48 yoshli haydovchi, ba'zan boshi og'riydi"},{s:[146,162],d:[92,100],k:3,d0:"56 yoshli erkak, ensa sohasida og'riq, ko'z oldida «chivinlar»"}]);
+    const e=x=>2*Math.round(ri(x[0],x[1])/2);return {sbp:e(v.s),dbp:e(v.d),hr:ri(64,84),k:v.k,d:v.d0};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.d}; 5 daqiqa tinch o'tirdi, qo'li yurak sathida, kafti yuqoriga qaragan. <b>Vazifa:</b> Korotkov usulida arterial bosimni o'lchash, puls bosimi va o'rtacha dinamik bosimni hisoblash.`,
+  steps:["Manjetni yelkaga tirsakdan 2–2,5 sm yuqori bog'lash","Fonendoskopni tirsak chuqurchasida yelka arteriyasi ustiga qo'yish","Bilak pulsini paypaslab, puls yo'qolguncha va yana 20–30 mm damlash","Vintni ochib, havoni sekin (2–3 mm/s) chiqarish","Birinchi ton (sistolik) va tonlar yo'qolgan (diastolik) bosimni belgilash"],
+  build(ctx){const P=ctx.P,R=ctx.rec;const ctl=el("div");
+    const T=tonometer(ctx,{mount:ctx.stage,controls:ctl,onStep:k=>{if(k==="cuff")ctx.done(0);if(k==="steth")ctx.done(1);},
+      onMeasured:r=>{R.res=r;if(r.max>=P.sbp+10)ctx.done(2);if(!r.fast)ctx.done(3);ctx.done(4);ctx.msg("O'lchash tugadi. Siz eshitgan birinchi va oxirgi tonlarda manometr qancha ko'rsatganini yozing. Kerak bo'lsa o'lchashni 2–3 daqiqadan keyin takrorlashingiz mumkin.","ok");}});
+    T.setTruth({sbp:P.sbp,dbp:P.dbp,hr:P.hr});ctx.stage.append(ctl,el("p",{class:"note"},"«Damlash» tugmasini bosib turing — manometr strelkasini kuzating. Vintni «sekin» holatga o'tkazganda havo 2–3 mm/s tezlikda chiqadi. Tonlar fonendoskopda eshitiladi (ovoz yoqilgan bo'lsin), ekranda «TUK» belgisi ham chiqadi."));},
+  journal:ctx=>{const P=ctx.P;const sv_=()=>num(ctx.fields[0].inp.value),dv=()=>num(ctx.fields[1].inp.value);return[
+    {id:"s",label:"Sistolik bosim",unit:"mm sim. ust.",check:v=>[near(v,P.sbp,4),"Sistolik: "+P.sbp]},
+    {id:"d",label:"Diastolik bosim",unit:"mm sim. ust.",check:v=>[near(v,P.dbp,4),"Diastolik: "+P.dbp]},
+    {id:"pp",label:"Puls bosimi",unit:"mm sim. ust.",check:v=>[near(v,sv_()-dv(),1),"Puls bosimi = sistolik − diastolik"]},
+    {id:"m",label:"O'rtacha dinamik bosim",unit:"mm sim. ust.",check:v=>[near(v,dv()+(sv_()-dv())/3,2),"O'rtacha = diastolik + puls bosimi / 3 ≈ "+Math.round(P.dbp+(P.sbp-P.dbp)/3)]}];},
+  mc:ctx=>({q:"Natijani baholang (JSST / Yevropa tavsiyalari):",opts:["Optimal bosim (< 120/80)","Normal bosim (120–129/80–84)","Yuqori normal bosim (130–139/85–89)","Arterial gipertenziya (≥ 140/90)"],ans:ctx.P.k,
+    why:"Sistolik bosim — birinchi aniq Korotkov toni paydo bo'lgan bosim (qon siqilgan arteriyadan turbulent oqim bilan o'ta boshlaydi), diastolik — tonlar butunlay yo'qolgan bosim (arteriya to'liq ochildi, oqim laminar). Puls bosimi me'yorda 40–50, o'rtacha dinamik bosim ≈ 80–95 mm sim. ust."}),
+  explain:ctx=>{const P=ctx.P,r=ctx.rec.res;return `Haqiqiy bosim ${P.sbp}/${P.dbp} mm sim. ust.${r?` Sizning o'lchashingizda birinchi ton ≈ ${r.first}, oxirgi ton ≈ ${r.last} mm sim. ust. bosimda eshitilgan.`:""}`;}
+});
+
+/* ===== 11-holat: Martine–Kushelevskiy sinamasi ===== */
+CASES.push({id:"c11",no:11,grp:2,
+  title:"Jismoniy yuklama sinamasi (Martine–Kushelevskiy)",
+  short:"20 marta o'tirib-turish: puls va bosim reaksiyasi, tiklanish",
+  gen(){const v=pick([{k:0,r:[72,118,76],s:[118,138,120],d:[76,72,76]},{k:1,r:[76,132,94],s:[124,182,146],d:[80,96,88]},{k:2,r:[82,164,108],s:[110,112,110],d:[70,70,72]}]);
+    const j=a=>a.map(x=>x+2*ri(-1,1));return {k:v.k,hr:j(v.r),sbp:j(v.s),dbp:j(v.d),age:ri(18,24)};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.age} yoshli talaba. <b>Vazifa:</b> tinch holatda, 20 marta o'tirib-turishdan keyin va 3-daqiqa oxirida puls va arterial bosimni o'lchab, yurak-qon tomir tizimining yuklamaga reaksiya turini aniqlash.`,
+  steps:["Tinch holatda pulsni 10 s davomida sanash","Tinch holatda arterial bosimni o'lchash","30 s da 20 marta o'tirib-turish","Yuklamadan keyin darhol pulsni 10 s sanash","Yuklamadan keyin arterial bosimni o'lchash","3-daqiqa oxirida puls va bosimni qayta o'lchash"],
+  build(ctx){const P=ctx.P,R=ctx.rec;R.cnt=[null,null,null];R.bp=[null,null,null];let stage=0;
+    const stName=["tinch holat","yuklamadan keyin","3-daqiqa oxiri"];
+    const info=el("div",{class:"small",style:"font-weight:600;margin-bottom:6px"});const showInfo=()=>info.textContent="Hozirgi bosqich: "+stName[stage];
+    const ctl=el("div");ctx.stage.append(info);showInfo();
+    const T=tonometer(ctx,{mount:ctx.stage,controls:ctl,onMeasured:r=>{R.bp[stage]=r;ctx.msg(`${stName[stage]}: o'lchash tugadi.`,"ok");if(stage===0)ctx.done(1);if(stage===1)ctx.done(4);if(stage===2&&R.cnt[2]!=null)ctx.done(5);}});
+    const setT=()=>T.setTruth({sbp:P.sbp[stage],dbp:P.dbp[stage],hr:P.hr[stage]});setT();
+    // puls sanash
+    const pulseBox=el("div",{style:"display:flex;align-items:center;gap:10px"});const dot=el("span",{style:"display:inline-block;width:26px;height:26px;border-radius:50%;background:#E3B9B9;transition:transform .08s"});
+    const pClock=el("span",{class:"clock"},"10,0 s");
+    const bCount=el("button",{class:"btn pri sm",type:"button",onclick:count},"Pulsni sanash (10 s)");
+    let counting=false;
+    function count(){if(counting)return;if(stage===1&&!R.squat){ctx.err("Avval yuklamani bajaring");return;}counting=true;const hr=P.hr[stage],per=60/hr;let ph=rnd(0,per),n=0;const t0=performance.now();
+      const loop=()=>{const t=(performance.now()-t0)/1000;pClock.textContent=fx(Math.max(0,10-t),1)+" s";
+        if(t>=ph&&t<10){ph+=per;n++;dot.style.background="#D0021B";dot.style.transform="scale(1.35)";try{navigator.vibrate&&navigator.vibrate(40);}catch(e){}setTimeout(()=>{dot.style.background="#E3B9B9";dot.style.transform="";},110);}
+        if(t<10)requestAnimationFrame(loop);else{counting=false;R.cnt[stage]=n;ctx.msg(`${stName[stage]}: 10 s davomida sanash tugadi — zarbalarni o'zingiz sanagan bo'lishingiz kerak.`);
+          if(stage===0)ctx.done(0);if(stage===1)ctx.done(3);if(stage===2&&R.bp[2])ctx.done(5);}};requestAnimationFrame(loop);}
+    pulseBox.append(el("span",{class:"small"},"Bilak arteriyasi:"),dot,pClock,bCount);
+    const bSq=el("button",{class:"btn sm",type:"button",onclick:()=>{if(!ctx.isDone(0)||!ctx.isDone(1)){ctx.err("Avval tinch holatdagi puls va bosimni o'lchang");return;}if(R.squat)return;
+      if(T.P>0){ctx.err("Manjetdan havoni chiqaring");return;}R.squat=true;bSq.disabled=true;let k=0;const iv=setInterval(()=>{k++;bSq.textContent=`O'tirib-turish: ${k}/20`;if(k>=20){clearInterval(iv);stage=1;setT();showInfo();ctx.done(2);ctx.msg("20 marta o'tirib-turish 30 s da bajarildi. Darhol pulsni, so'ng bosimni o'lchang!","pt");}},120);ctx.onClean(()=>clearInterval(iv));}},"20 marta o'tirib-turish (30 s)");
+    const bWait=el("button",{class:"btn sm",type:"button",onclick:()=>{if(stage!==1||!ctx.isDone(3)||!ctx.isDone(4)){ctx.err("Avval yuklamadan keyingi puls va bosimni o'lchang");return;}stage=2;setT();showInfo();ctx.msg("3-daqiqa oxiri keldi (vaqt tezlashtirildi). Puls va bosimni qayta o'lchang.");}},"3-daqiqa oxirigacha kutish");
+    ctx.stage.append(ctl,el("div",{class:"ctl"},ctlGroup("Puls",pulseBox)),el("div",{class:"ctl"},ctlGroup("Sinama",bSq,bWait)),
+      el("p",{class:"note"},"Pulsni sanash: 10 s davomida qizil nuqta har bir zarbada yonadi — zarbalarni o'zingiz sanang va 6 ga ko'paytiring. Bosimni oldingi holatdagidek Korotkov usulida o'lchang."));
+  },
+  journal:ctx=>{const P=ctx.P,R=ctx.rec;const pc=i=>R.cnt[i]!=null?R.cnt[i]*6:P.hr[i];const val=i=>num(ctx.fields[i].inp.value);return[
+    {id:"p0",label:"Tinch holatdagi puls",unit:"/daq",check:v=>[near(v,pc(0),6),"≈ "+pc(0)+" /daq (10 s da "+(R.cnt[0]??"?")+" zarba × 6)"]},
+    {id:"p1",label:"Yuklamadan keyingi puls",unit:"/daq",check:v=>[near(v,pc(1),6),"≈ "+pc(1)+" /daq"]},
+    {id:"pi",label:"Pulsning ortishi",unit:"%",check:v=>[near(v,(val(1)-val(0))/val(0)*100,3),"(puls₂ − puls₁) / puls₁ × 100 %"]},
+    {id:"s0",label:"Tinch holatdagi bosim (sistolik)",unit:"mm",check:v=>[near(v,P.sbp[0],4),"≈ "+P.sbp[0]]},
+    {id:"s1",label:"Yuklamadan keyingi bosim (sistolik)",unit:"mm",check:v=>[near(v,P.sbp[1],4),"≈ "+P.sbp[1]]},
+    {id:"d1",label:"Yuklamadan keyingi bosim (diastolik)",unit:"mm",check:v=>[near(v,P.dbp[1],4),"≈ "+P.dbp[1]]},
+    {id:"rc",label:"3-daqiqa oxirida ko'rsatkichlar boshlang'ich darajaga qaytdimi?",type:"sel",options:["Ha, tiklandi","Yo'q, tiklanmadi"],check:v=>{const ok=Math.abs(P.hr[2]-P.hr[0])<=6&&Math.abs(P.sbp[2]-P.sbp[0])<=6;return[v===(ok?0:1),ok?"Tiklangan":"Tiklanmagan (puls "+P.hr[2]+", bosim "+P.sbp[2]+"/"+P.dbp[2]+")"];}}];},
+  mc:ctx=>({q:"Yuklamaga reaksiya turi:",opts:["Normotonik (qulay): puls 50–75 % ga, sistolik bosim 15–30 mm ga ortadi, diastolik o'zgarmaydi yoki biroz pasayadi, 3 daqiqada tiklanadi","Gipertonik (noqulay): sistolik bosim keskin (> 40–50 mm) va diastolik bosim ham ko'tariladi, tiklanish sekin","Gipotonik (astenik, noqulay): puls keskin (> 100 %) tezlashadi, bosim deyarli o'zgarmaydi, tiklanish sekin"],ans:ctx.P.k,
+    why:"Normotonik reaksiyada yuklama zarbiy hajm va yurak qisqarishlari sonining mutanosib oshishi bilan ta'minlanadi; ishlayotgan muskullarda arteriolalar kengayishi diastolik bosimni ko'tarilishdan saqlaydi. Gipotonik reaksiyada daqiqalik hajm asosan YUS hisobiga oshadi (zarbiy hajm oshmaydi) — yurak tejamsiz ishlaydi. Gipertonik reaksiya tomirlar tonusining buzilishiga xos."}),
+  explain:ctx=>{const P=ctx.P;return `Haqiqiy qiymatlar: puls ${P.hr.join(" → ")}; bosim ${P.sbp[0]}/${P.dbp[0]} → ${P.sbp[1]}/${P.dbp[1]} → ${P.sbp[2]}/${P.dbp[2]}. Puls ortishi ≈ ${Math.round((P.hr[1]-P.hr[0])/P.hr[0]*100)} %.`;}
+});
+
+/* ===== 12-holat: spirometriya ===== */
+CASES.push({id:"c12",no:12,grp:3,
+  title:"Suvli spirometr bilan o'pka hajmlarini aniqlash",
+  short:"Nafas hajmi, NChZH, O'TS, NOZH, kerakli O'TS bilan solishtirish",
+  gen(){const v=pick([{sex:"erkak",age:ri(18,22),h:ri(170,184),k:0,d:"sog'lom talaba"},{sex:"ayol",age:ri(18,22),h:ri(158,170),k:0,d:"sog'lom talaba"},{sex:"erkak",age:ri(19,23),h:ri(176,186),k:1,d:"bolalikdan ko'krak umurtqasining qiyshayishi (kifoskolioz) bor, zinadan chiqqanda hansiraydi"}]);
+    const pred=(v.sex==="erkak"?(27.63-0.112*v.age):(21.78-0.101*v.age))*v.h;const vc=10*Math.round(pred*(v.k?rnd(0.62,0.72):rnd(0.92,1.1))/10);
+    const nh=10*Math.round(rnd(440,580)/10);const erv=10*Math.round((v.k?rnd(0.22,0.26):rnd(0.27,0.32))*vc/10);
+    return {...v,pred:Math.round(pred),vc,nh,erv,nhT:[0,1,2].map(()=>nh+10*ri(-4,4)),vcT:[vc-10*ri(4,9),vc,vc-10*ri(10,16)].sort(()=>Math.random()-0.5),ervT:erv};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.age} yoshli ${P.sex}, bo'yi ${P.h} sm; ${P.d}. <b>Vazifa:</b> suvli spirometr bilan nafas hajmi, nafas chiqarish zahira hajmi (NChZH), o'pkaning tiriklik sig'imi (O'TS) va nafas olish zahira hajmini (NOZH) aniqlash; O'TS ni kerakli qiymat bilan solishtirish.`,
+  steps:["Mundshtukni spirt bilan artish va burunga qisqich qo'yish","Nafas hajmi: tinch nafas olgandan keyin spirometrga 3 marta tinch nafas chiqarish","NChZH: tinch nafas chiqargandan keyin spirometrga maksimal nafas chiqarish","O'TS: maksimal nafas olib, maksimal nafas chiqarish (3 marta, eng kattasi olinadi)","NOZH, kerakli O'TS va foizni hisoblash"],
+  noJournalStep:4,
+  build(ctx){const P=ctx.P,R=ctx.rec;R.list=[];const st={alc:false,clip:false,V:0,nh:0,vc:0};
+    const s=svgRoot(900,400);sv("rect",{x:0,y:0,width:900,height:400,fill:"#EEF1F3"},s);sv("rect",{x:0,y:370,width:900,height:30,fill:"#B9A588"},s);
+    sv("rect",{x:300,y:200,width:240,height:170,rx:6,fill:"#C9D3DA",stroke:"#7D8892","stroke-width":2},s); // tashqi silindr
+    const bell=sv("g",{},s);sv("rect",{x:326,y:180,width:188,height:170,rx:4,fill:"#E6EBEF",stroke:"#6F7A84","stroke-width":2},bell);sv("rect",{x:326,y:180,width:188,height:10,fill:"#B9C3CC"},bell);
+    sv("path",{d:"M514 186 l42 0",stroke:"#C0271E","stroke-width":3},bell);
+    sv("rect",{x:303,y:232,width:234,height:134,fill:"#9CC9E4",opacity:.55},s); // suv (qalpoq oldida)
+    const Y0=186,k=0.024;
+    sv("rect",{x:556,y:Y0-7000*k-8,width:44,height:7000*k+16,fill:"#F7F3E6",stroke:"#9C9384"},s);
+    for(let v=0;v<=7000;v+=100){const y=Y0-v*k;sv("line",{x1:556,y1:y,x2:556+(v%500?7:14),y2:y,stroke:"#333","stroke-width":v%500?0.6:1.2},s);if(v%1000===0)sv("text",{x:574,y:y+4,"font-size":9,fill:"#222",text:String(v/1000)+" l"},s);}
+    sv("path",{d:"M300 340 C 220 340, 200 280, 160 270",fill:"none",stroke:"#5B6670","stroke-width":8},s);sv("rect",{x:120,y:260,width:44,height:18,rx:6,fill:"#DDE3E8",stroke:"#5B6670"},s);sv("text",{x:142,y:296,"text-anchor":"middle","font-size":10,fill:"#333",text:"mundshtuk"},s);
+    const tap=sv("circle",{cx:420,cy:356,r:7,fill:"#A33"},s);sv("text",{x:440,y:360,"font-size":10,fill:"#333",text:"jo'mrak"},s);
+    sv("text",{x:120,y:40,"font-size":13,fill:"#333",text:"Suvli spirometr (Gutchinson)"},s);
+    ctx.stage.append(s);
+    const zoom=el("canvas",{width:220,height:240,style:"max-width:220px;background:#F7F3E6"});
+    function render(){bell.setAttribute("transform",`translate(0 ${-st.V*0.024})`);
+      const g=zoom.getContext("2d");g.fillStyle="#F7F3E6";g.fillRect(0,0,220,240);const ppm=0.6; // px per ml
+      const Yv=v=>120-(v-st.V)*ppm;g.strokeStyle="#222";g.fillStyle="#222";g.font="12px IBM Plex Mono, monospace";
+      for(let v=Math.floor((st.V-220)/50)*50;v<=st.V+220;v+=50){if(v<0)continue;const y=Yv(v);if(y<0||y>240)continue;const M=v%500===0,m=v%100===0;g.lineWidth=M?1.6:m?1:0.6;g.beginPath();g.moveTo(130,y);g.lineTo(130+(M?50:m?32:18),y);g.stroke();if(m)g.fillText(String(v),70,y+4);}
+      g.strokeStyle="#C0271E";g.lineWidth=3;g.beginPath();g.moveTo(0,120);g.lineTo(125,120);g.stroke();g.fillStyle="#C0271E";g.beginPath();g.moveTo(125,114);g.lineTo(134,120);g.lineTo(125,126);g.fill();
+      g.fillStyle="#555";g.font="11px IBM Plex Sans, sans-serif";g.fillText("ml (kattalashtirilgan)",6,234);}
+    const anim=to=>{const from=st.V,t0=performance.now();const f=now=>{const x=Math.min(1,(now-t0)/1400);st.V=from+(to-from)*(1-Math.pow(1-x,3));render();if(x<1)requestAnimationFrame(f);else{st.V=to;render();}};requestAnimationFrame(f);};
+    const ready=()=>{if(!st.alc||!st.clip){ctx.err(!st.alc?"Mundshtuk spirt bilan artilmagan":"Burunga qisqich qo'yilmagan — havo burundan chiqib ketadi, natija kam chiqadi");st.alc=st.clip=true;ctx.done(0);}return true;};
+    const B=benchBtns(ctx,[
+      {t:"Mundshtukni spirt bilan artish",f:()=>{st.alc=true;if(st.clip)ctx.done(0);ctx.msg("Mundshtuk spirt bilan artildi.");}},
+      {t:"Burun qisqichi",f:()=>{st.clip=true;if(st.alc)ctx.done(0);ctx.msg("Burunga qisqich qo'yildi.");}},
+      {t:"Qalpoqni nolga tushirish (jo'mrak)",f:()=>{tap.setAttribute("fill","#2E7D32");setTimeout(()=>tap.setAttribute("fill","#A33"),900);anim(0);st.zero=true;ctx.msg("Jo'mrak ochilib, qalpoq nolga tushirildi va yopildi.");}}]);
+    const M=benchBtns(ctx,[
+      {t:"Tinch nafas chiqarish",f:()=>{ready();if(st.nh>=3){toast("Uchta urinish yetarli");return;}const v=P.nhT[st.nh++];R.list.push(["nh",v]);anim(st.V+v);st.zero=false;ctx.msg(`Tinch nafas olib, spirometrga tinch nafas chiqarildi (${st.nh}-marta). Shkaladan o'qing.`);if(st.nh>=3)ctx.done(1);}},
+      {t:"Tinch chiqarishdan keyin maksimal chiqarish (NChZH)",f:()=>{ready();if(!st.zero&&st.V>1){ctx.err("Qalpoq nolga tushirilmagan — oldingi havo hajmi qo'shilib, natija noto'g'ri bo'ladi");}const v=P.ervT;R.list.push(["erv",v]);anim(st.V+v);st.zero=false;R.ervBase=st.V;ctx.done(2);ctx.msg("Tinch nafas chiqarilgandan keyin spirometrga maksimal chiqarildi. Shkaladan o'qing.");}},
+      {t:"Maksimal nafas olib, maksimal chiqarish (O'TS)",f:()=>{ready();if(st.vc>=3){toast("Uchta urinish yetarli");return;}if(!st.zero&&st.V>1){ctx.err("Qalpoq nolga tushirilmagan — O'TS ni har safar noldan o'lchash kerak");}const v=P.vcT[st.vc++];R.list.push(["vc",v]);anim(st.V+v);st.zero=false;ctx.msg(`O'TS: ${st.vc}-urinish. Shkaladan o'qing.`);if(st.vc>=3)ctx.done(3);}}]);
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Tayyorlash",...B)),el("div",{class:"ctl"},ctlGroup("Tekshiriluvchi",...M)),
+      el("div",{class:"row",style:"margin-top:10px;align-items:flex-start"},zoom,el("p",{class:"note",style:"flex:1 1 240px"},`Qalpoq ko'tarilishi chiqarilgan havo hajmiga teng. Shkala: kichik chiziq — 50 ml, raqamlar — har 100 ml. Kerakli O'TS (l) = (27,63 − 0,112 × yosh) × bo'y (sm) / 1000 — erkaklar; (21,78 − 0,101 × yosh) × bo'y / 1000 — ayollar. Me'yorda haqiqiy O'TS kerakli qiymatning ± 20 % i oralig'ida.`)));
+    render();
+  },
+  journal:ctx=>{const P=ctx.P;const nhm=P.nhT.reduce((a,b)=>a+b,0)/3,vcm=Math.max(...P.vcT);const f=i=>num(ctx.fields[i].inp.value);return[
+    {id:"nh",label:"Nafas hajmi (o'rtacha)",unit:"ml",check:v=>[near(v,nhm,50),"≈ "+Math.round(nhm)+" ml"]},
+    {id:"erv",label:"Nafas chiqarish zahira hajmi (NChZH)",unit:"ml",check:v=>[near(v,P.erv,60),"≈ "+P.erv+" ml"]},
+    {id:"vc",label:"O'TS (uch urinishning eng kattasi)",unit:"ml",check:v=>[near(v,vcm,60),"≈ "+vcm+" ml"]},
+    {id:"irv",label:"Nafas olish zahira hajmi: NOZH = O'TS − (NH + NChZH)",unit:"ml",check:v=>[near(v,f(2)-f(0)-f(1),20)&&near(v,vcm-nhm-P.erv,150),"≈ "+Math.round(vcm-nhm-P.erv)+" ml"]},
+    {id:"pr",label:"Kerakli O'TS",unit:"ml",check:v=>[near(v,P.pred,40),"≈ "+P.pred+" ml"]},
+    {id:"pc",label:"Haqiqiy O'TS kerakli qiymatning necha foizi",unit:"%",check:v=>[near(v,f(2)/f(4)*100,3),"≈ "+Math.round(vcm/P.pred*100)+" %"]}];},
+  mc:ctx=>({q:"Xulosa:",opts:["O'TS kerakli qiymatning ± 20 % i oralig'ida — tashqi nafas me'yorida","O'TS kerakli qiymatdan sezilarli kam (< 80 %) — o'pkaning kengayishi cheklangan (restriktiv tipdagi buzilish)","O'TS kerakli qiymatdan 50 % ko'p — obstruktiv buzilish"],ans:ctx.P.k,
+    why:"O'TS = NH + NOZH + NChZH. Ko'krak qafasi deformatsiyasi (kifoskolioz), plevra va o'pka to'qimasi kasalliklarida o'pkaning kengayishi cheklanadi — O'TS kamayadi (restriktiv buzilish). Obstruktiv buzilish esa forsirlangan nafas chiqarishda (FNChH₁, Tiffno indeksi) aniqlanadi."}),
+  explain:ctx=>{const P=ctx.P;return `Bu tekshiriluvchida: NH urinishlari ${P.nhT.join(", ")} ml; NChZH ${P.erv} ml; O'TS urinishlari ${P.vcT.join(", ")} ml; kerakli O'TS ${P.pred} ml.`;}
+});
+
+/* ===== 13-holat: ko'rish o'tkirligi ===== */
+const ROWS=[{v:0.1,D:50},{v:0.2,D:25},{v:0.3,D:16.7},{v:0.4,D:12.5},{v:0.5,D:10},{v:0.6,D:8.3},{v:0.7,D:7.1},{v:0.8,D:6.3},{v:0.9,D:5.6},{v:1.0,D:5},{v:1.5,D:3.3},{v:2.0,D:2.5}];
+const RN=[2,3,4,5,5,6,6,7,7,8,8,8];const DIRN=["yuqorida","o'ngda","pastda","chapda"];
+CASES.push({id:"c13",no:13,grp:4,
+  title:"Ko'rish o'tkirligini aniqlash (Golovin–Sivtsev jadvali)",
+  short:"Landolt halqalari, 5 m masofa, har bir ko'z alohida, V = d / D",
+  gen(){const v=pick([{od:pick([1.0,1.5]),os:pick([1.0,1.5]),k:0},{od:pick([0.3,0.4,0.5]),os:1.0,k:1},{od:1.0,os:pick([0.4,0.5,0.6]),k:2},{od:pick([0.2,0.3]),os:pick([0.2,0.3,0.4]),k:3}]);
+    const dirs=ROWS.map((r,i)=>Array.from({length:RN[i]},()=>ri(0,3)));
+    const resp=e=>ROWS.map((r,i)=>{const ok=r.v<=e+1e-9;let a=dirs[i].map(d=>ok?d:(Math.random()<0.2?d:(Math.random()<0.5?-1:(d+ri(1,3))%4)));
+      if(!ok){const need=Math.ceil(RN[i]/2);let wrong=a.filter((x,j)=>x!==dirs[i][j]).length;for(let j=0;j<a.length&&wrong<need;j++)if(a[j]===dirs[i][j]){a[j]=-1;wrong++;}}return a;});
+    return {...v,dirs,rOD:resp(v.od),rOS:resp(v.os),rOU:resp(Math.max(v.od,v.os))};},
+  subj:()=>`<b>Tekshiriluvchi:</b> 20 yoshli talaba, ko'zoynak taqmaydi. <b>Vazifa:</b> har bir ko'zning ko'rish o'tkirligini Golovin–Sivtsev jadvalining Landolt halqalari qismi bo'yicha aniqlash. Tekshiriluvchi halqadagi uzilish qaysi tomonda ekanini aytadi.`,
+  steps:["Jadvalni yorituvchi Rot apparatini yoqish","Tekshiriluvchini jadvaldan 5 m masofaga o'tqazish","Chap ko'zni to'siq bilan yopib, o'ng ko'zni yuqoridan pastga tekshirish","O'ng ko'zni to'siq bilan yopib, chap ko'zni tekshirish"],
+  build(ctx){const P=ctx.P,R=ctx.rec;R.ask={OD:{},OS:{}};const st={light:false,dist:null,cover:null,errBoth:false};
+    const W=380;const s=svgRoot(W,620);const bg=sv("rect",{x:0,y:0,width:W,height:620,fill:"#8F9AA3"},s);
+    sv("rect",{x:20,y:10,width:W-40,height:600,fill:"#FFFFFF",stroke:"#555"},s);
+    let y=34;const k=1.6;
+    ROWS.forEach((r,i)=>{const d=Math.max(3.2,r.D*k),n=RN[i],gap=Math.max(d*0.8,9),tw=n*d+(n-1)*gap;const x0=(W-tw)/2;const cy=y+d/2;
+      sv("text",{x:30,y:cy+3,"font-size":8,fill:"#333",text:"D="+fx(r.D,1)},s);sv("text",{x:W-30,y:cy+3,"text-anchor":"end","font-size":8,fill:"#333",text:"V="+fx(r.v,1)},s);
+      for(let j=0;j<n;j++){const cx=x0+j*(d+gap)+d/2;const sw=d/5,rr=d/2-sw/2;const dir=P.dirs[i][j];const g=sv("g",{class:"clk"},s);
+        sv("rect",{x:cx-Math.max(d/2,11),y:cy-Math.max(d/2,10),width:Math.max(d,22),height:Math.max(d,20),fill:"transparent"},g);
+        const gapA=Math.asin(Math.min(0.99,(d/5)/2/rr));const base=[-Math.PI/2,0,Math.PI/2,Math.PI][dir];const a1=base+gapA,a2=base-gapA+2*Math.PI;
+        sv("path",{d:`M${cx+rr*Math.cos(a1)} ${cy+rr*Math.sin(a1)} A ${rr} ${rr} 0 1 1 ${cx+rr*Math.cos(a2)} ${cy+rr*Math.sin(a2)}`,fill:"none",stroke:"#111","stroke-width":sw},g);
+        g.addEventListener("click",()=>ask(i,j,g));}
+      y+=d+Math.max(14,d*0.5);});
+    const ptr=sv("path",{d:"",stroke:"#C0271E","stroke-width":2,fill:"none"},s);
+    const head=svgRoot(300,150);sv("rect",{x:0,y:0,width:300,height:150,fill:"#EEF1F3"},head);
+    sv("ellipse",{cx:150,cy:85,rx:80,ry:62,fill:"#EDC4A4",stroke:"#B07D5A"},head);
+    const eyeR=sv("ellipse",{cx:118,cy:78,rx:16,ry:9,fill:"#fff",stroke:"#555"},head);const eyeL=sv("ellipse",{cx:182,cy:78,rx:16,ry:9,fill:"#fff",stroke:"#555"},head);
+    sv("circle",{cx:118,cy:78,r:5,fill:"#4B3A2A"},head);sv("circle",{cx:182,cy:78,r:5,fill:"#4B3A2A"},head);
+    const shR=sv("ellipse",{cx:118,cy:78,rx:24,ry:18,fill:"#333",opacity:0},head),shL=sv("ellipse",{cx:182,cy:78,rx:24,ry:18,fill:"#333",opacity:0},head);
+    sv("text",{x:118,y:118,"text-anchor":"middle","font-size":10,fill:"#333",text:"o'ng (OD)"},head);sv("text",{x:182,y:118,"text-anchor":"middle","font-size":10,fill:"#333",text:"chap (OS)"},head);
+    const ans=el("div",{style:"font-size:1.05rem;font-weight:600;min-height:28px;margin-top:6px"});
+    ctx.stage.append(el("div",{class:"row",style:"align-items:flex-start;gap:14px"},el("div",{style:"flex:1 1 300px;max-width:400px"},s),el("div",{style:"flex:1 1 260px"},head,ans,
+      el("p",{class:"note"},"Ko'rsatkich bilan halqani ko'rsating (bosing) — tekshiriluvchi uzilish qayerdaligini aytadi. Javobni halqaning o'zi bilan solishtiring. Qator o'qilgan hisoblanadi, agar undagi barcha halqalar to'g'ri aytilsa."))));
+    const bLight=el("button",{class:"btn sm",type:"button",onclick:()=>{st.light=!st.light;bLight.classList.toggle("on",st.light);bg.setAttribute("fill",st.light?"#EEF1F3":"#8F9AA3");if(st.light)ctx.done(0);}},"Rot apparati (yoritish)");
+    const dB=[3,5].map(d=>el("button",{class:"btn sm",type:"button",onclick:()=>{st.dist=d;dB.forEach(b=>b.classList.toggle("on",b.textContent.startsWith(d+" ")));if(d===5)ctx.done(1);else ctx.msg("Masofa 3 m — jadval 5 m ga mo'ljallangan.","pt");}},d+" m"));
+    const cB=[["L","Chap ko'zni to'sish"],["R","O'ng ko'zni to'sish"],[null,"To'siqni olish"]].map(([c,t])=>el("button",{class:"btn sm",type:"button",onclick:()=>{st.cover=c;shL.setAttribute("opacity",c==="L"?.9:0);shR.setAttribute("opacity",c==="R"?.9:0);cB.forEach(b=>b.classList.toggle("on",b===cB[[ "L","R",null].indexOf(c)]&&c!=null));}},t));
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Xona",bLight,...dB),ctlGroup("To'siq",...cB)));
+    function ask(i,j,g){if(!st.light){ctx.err("Jadval yoritilmagan (Rot apparati o'chiq) — tekshirish standart yoritilganlikda o'tkaziladi");st.light=true;bLight.classList.add("on");bg.setAttribute("fill","#EEF1F3");ctx.done(0);}
+      if(st.dist!==5){ctx.err("Tekshiriluvchi 5 m masofada emas — jadval 5 m uchun hisoblangan");return;}
+      let eye=st.cover==="L"?"OD":st.cover==="R"?"OS":"OU";
+      if(eye==="OU"&&!st.errBoth){st.errBoth=true;ctx.err("Ikkala ko'z ochiq — har bir ko'z alohida tekshiriladi, ikkinchisi to'siq bilan yopiladi");}
+      const a=(eye==="OD"?P.rOD:eye==="OS"?P.rOS:P.rOU)[i][j];
+      const bb=g.getBBox();ptr.setAttribute("d",`M${bb.x+bb.width/2} ${bb.y+bb.height+2} l0 26`);
+      const txt=a<0?"Ko'rmayapman / aniq emas":"Uzilish "+DIRN[a];ans.textContent=`${eye==="OD"?"O'ng ko'z":eye==="OS"?"Chap ko'z":"Ikki ko'z"}: «${txt}»`;
+      if(eye!=="OU"){R.ask[eye][i]=R.ask[eye][i]||{};R.ask[eye][i][j]=a===P.dirs[i][j];
+        const acu=eye==="OD"?P.od:P.os;const ia=ROWS.findIndex(r=>Math.abs(r.v-acu)<1e-9);
+        const full=x=>R.ask[eye][x]&&Object.keys(R.ask[eye][x]).length===RN[x];
+        const okRow=full(ia)&&Object.values(R.ask[eye][ia]).every(Boolean);const failNext=ia===ROWS.length-1||(R.ask[eye][ia+1]&&Object.values(R.ask[eye][ia+1]).filter(x=>!x).length>=1);
+        if(okRow&&failNext)ctx.done(eye==="OD"?2:3);}}
+  },
+  journal:ctx=>{const P=ctx.P;return[
+    {id:"od",label:"O'ng ko'z (OD) ko'rish o'tkirligi, V",check:v=>[near(v,P.od,0.01),"OD = "+fx(P.od,1)]},
+    {id:"os",label:"Chap ko'z (OS) ko'rish o'tkirligi, V",check:v=>[near(v,P.os,0.01),"OS = "+fx(P.os,1)]},
+    {id:"sn",label:"Hisoblang: tekshiriluvchi 1-qatorni (D = 50 m) faqat 3 m dan ko'rsa, V = d / D = ?",check:v=>[near(v,0.06,0.001),"V = 3 / 50 = 0,06"]}];},
+  mc:ctx=>({q:"Natijani baholang:",opts:["Ikkala ko'zda ko'rish o'tkirligi me'yorida (V ≥ 1,0)","O'ng ko'zda ko'rish o'tkirligi pasaygan, chapda me'yorida","Chap ko'zda ko'rish o'tkirligi pasaygan, o'ngda me'yorida","Ikkala ko'zda ko'rish o'tkirligi pasaygan"],ans:ctx.P.k,
+    why:"Snellen formulasi: V = d / D. 5 m dan 10-qatorni (D = 5 m) o'qigan ko'z V = 1,0 — me'yor; bu ikki nuqtani 1 burchak daqiqa ostida alohida ko'rish qobiliyatiga mos keladi. Landolt halqasining qalinligi va uzilishi tashqi diametrning 1/5 qismi. Har bir ko'z alohida tekshiriladi, chunki ikki ko'z bilan ko'rganda yaxshi ko'z natijani «yashiradi»."}),
+  explain:ctx=>`Bu tekshiriluvchida: OD = ${fx(ctx.P.od,1)}, OS = ${fx(ctx.P.os,1)}.`
+});
+
+/* ===== 14-holat: kamerton sinamalari ===== */
+CASES.push({id:"c14",no:14,grp:4,
+  title:"Rinne va Veber kamerton sinamalari",
+  short:"Havo va suyak o'tkazuvchanligi, lateralizatsiya",
+  gen(){const v=pick([{k:0,a:null,t:null,d:"sog'lom talaba, shikoyati yo'q"},{k:1,a:"L",t:"c",d:"3 kundan beri chap qulog'i «bitib qolgan», suvga sho'ng'igandan keyin boshlangan"},{k:2,a:"R",t:"c",d:"o'ng qulog'ida og'riq va eshitish pasaygan, 5 kun oldin shamollagan"},{k:3,a:"R",t:"s",d:"o'ng qulog'ida shovqin va eshitish pasaygan; 10 yildan beri shovqinli sexda ishlaydi (asosan o'ng tomondan)"},{k:4,a:"L",t:"s",d:"chap qulog'ida eshitish asta-sekin pasaymoqda, quloqda shang'illash bor"}]);
+    const n=()=>({bc:ri(32,38),ac:ri(66,76)});const E={R:n(),L:n()};if(v.a){E[v.a]=v.t==="c"?{bc:ri(44,50),ac:ri(22,30)}:{bc:ri(14,20),ac:ri(30,38)};}
+    const web=!v.a?"M":v.t==="c"?v.a:(v.a==="R"?"L":"R");return {...v,E,web};},
+  subj:P=>`<b>Tekshiriluvchi:</b> ${P.d}. <b>Vazifa:</b> C₁₂₈ kamertoni bilan Rinne sinamasini (har ikki quloqda) va Veber sinamasini o'tkazish, tovush o'tkazuvchi yoki qabul qiluvchi apparat shikastlanganini aniqlash.`,
+  steps:["O'ng quloqda Rinne sinamasi: kamerton so'rg'ichsimon o'simtaga, tovush yo'qolgach — quloq teshigi oldiga","Chap quloqda Rinne sinamasi","Veber sinamasi: kamerton boshning tepasiga (o'rta chiziqqa)"],
+  build(ctx){const P=ctx.P,R=ctx.rec;R.rinne={};R.web=null;const st={t0:null,pos:null,stopBC:{},said:{}};
+    const s=svgRoot(900,300);sv("rect",{x:0,y:0,width:900,height:300,fill:"#EEF1F3"},s);
+    sv("ellipse",{cx:450,cy:160,rx:110,ry:120,fill:"#EDC4A4",stroke:"#B07D5A","stroke-width":2},s);
+    sv("ellipse",{cx:335,cy:170,rx:18,ry:34,fill:"#E3B392",stroke:"#B07D5A"},s);sv("ellipse",{cx:565,cy:170,rx:18,ry:34,fill:"#E3B392",stroke:"#B07D5A"},s);
+    sv("text",{x:300,y:240,"text-anchor":"middle","font-size":11,fill:"#333",text:"o'ng quloq"},s);sv("text",{x:600,y:240,"text-anchor":"middle","font-size":11,fill:"#333",text:"chap quloq"},s);
+    sv("circle",{cx:350,cy:212,r:6,fill:"#D9A887"},s);sv("circle",{cx:550,cy:212,r:6,fill:"#D9A887"},s);
+    const POS={mR:[350,212,"o'ng so'rg'ichsimon o'simta"],mL:[550,212,"chap so'rg'ichsimon o'simta"],cR:[300,170,"o'ng quloq teshigi oldi"],cL:[600,170,"chap quloq teshigi oldi"],v:[450,40,"bosh tepasi"]};
+    const fork=sv("g",{opacity:0},s);sv("path",{d:"M-8 -60 L -8 -14 Q 0 -4 8 -14 L 8 -60",fill:"none",stroke:"#8A9199","stroke-width":5},fork);sv("line",{x1:0,y1:-8,x2:0,y2:14,stroke:"#666","stroke-width":5},fork);
+    const vib=sv("g",{opacity:0},fork);sv("path",{d:"M-16 -50 q -6 6 0 12 M16 -50 q 6 6 0 12",fill:"none",stroke:"#1565C0","stroke-width":2},vib);
+    ctx.stage.append(s);
+    const say=el("div",{style:"font-size:1.05rem;font-weight:600;min-height:28px;margin-top:6px"});
+    const clk=el("span",{class:"clock"},"00,0 s");
+    const el_=()=>st.t0==null?1e9:clock.t-st.t0;
+    const hear=(pos,t)=>{if(pos==="v")return t<Math.max(P.E.R.bc,P.E.L.bc);const e=pos[1],c=pos[0]==="m"?"bc":"ac";return t<P.E[e][c];};
+    const clock=makeClock(()=>{const t=el_();clk.textContent=st.t0==null?"—":fx(Math.min(t,999),1)+" s";vib.setAttribute("opacity",st.t0!=null&&t<80?(0.3+0.7*Math.max(0,1-t/80)):0);
+      if(st.pos&&st.t0!=null){const h=hear(st.pos,t);if(st.lastH&&!h){speak("Endi eshitmayapman.");if(st.pos[0]==="m")st.stopBC[st.pos[1]]=clock.t;if(st.pos[0]==="c"&&st.rinneOn===st.pos[1]){R.rinne[st.pos[1]].acEnd=true;}}st.lastH=h;}});
+    clock.start();ctx.onClean(()=>clock.stop());
+    const speak=t=>{say.textContent="🗣 «"+t+"»";ctx.say(t);};
+    const bStrike=el("button",{class:"btn pri sm",type:"button",onclick:()=>{st.t0=clock.t;st.pos=null;fork.setAttribute("opacity",0);st.lastH=false;st.stopBC={};st.rinneOn=null;ctx.msg("Kamerton tizzaga urilib tebratildi; sekundomer yoqildi.");}},"Kamertonni urish");
+    const pB=Object.entries(POS).map(([k,[x,y,t]])=>el("button",{class:"btn sm",type:"button",onclick:()=>put(k)},t));
+    const bOff=el("button",{class:"btn sm",type:"button",onclick:()=>{st.pos=null;fork.setAttribute("opacity",0);}},"Olish");
+    function put(k){if(st.t0==null){ctx.err("Kamerton tebratilmagan");return;}const [x,y]=POS[k];fork.setAttribute("opacity",1);fork.setAttribute("transform",`translate(${x} ${y})${k==="v"?"":" rotate("+(k[1]==="R"?-90:90)+")"}`);
+      const t=el_(),prev=st.pos;st.pos=k;const h=hear(k,t);st.lastH=h;
+      if(k==="v"){if(!h){speak("Hech narsa eshitmayapman.");return;}const w=P.web;speak(w==="M"?"Ikkala qulog'imda bir xil, boshning o'rtasida eshityapman.":w==="R"?"O'ng qulog'imda kuchliroq eshityapman.":"Chap qulog'imda kuchliroq eshityapman.");R.web=w;ctx.done(2);return;}
+      const e=k[1];
+      if(k[0]==="m"){speak(h?"Eshityapman.":"Eshitmayapman.");if(h){st.rinneOn=e;R.rinne[e]={started:true};}return;}
+      // quloq teshigi oldi
+      const stopAt=st.stopBC[e];
+      if(prev==="m"+e&&stopAt!=null&&clock.t-stopAt<=6){if(h){speak("Ha, yana eshityapman.");R.rinne[e].pos=true;}else{speak("Yo'q, eshitmayapman.");R.rinne[e].pos=false;}R.rinne[e].done=true;ctx.done(e==="R"?0:1);}
+      else if(prev==="m"+e&&stopAt==null){speak(h?"Eshityapman.":"Eshitmayapman.");ctx.err("Kamerton so'rg'ichsimon o'simtadan tekshiriluvchi tovushni eshitmay qolgan zahoti ko'chirilishi kerak edi");}
+      else if(prev==="m"+e&&clock.t-stopAt>6){speak(h?"Eshityapman.":"Eshitmayapman.");ctx.err("Kamerton kech ko'chirildi — tovush so'nib, havo o'tkazuvchanligini baholab bo'lmaydi");}
+      else speak(h?"Eshityapman.":"Eshitmayapman.");}
+    ctx.stage.append(say,el("div",{class:"ctl"},ctlGroup("Kamerton C₁₂₈",bStrike,clk,...speedBtns(clock,[[1,"×1"],[3,"×3"]]))),el("div",{class:"ctl"},ctlGroup("Kamertonni qo'yish",...pB,bOff)),
+      el("p",{class:"note"},"Rinne: tebratilgan kamerton oyoqchasi so'rg'ichsimon o'simtaga qo'yiladi; tekshiriluvchi «eshitmayapman» degan zahoti uni quloq teshigi oldiga (1–2 sm) ko'chiring va yana eshitayotganini so'rang. Har bir sinamadan oldin kamertonni qayta tebrating."));
+  },
+  journal:ctx=>{const P=ctx.P;const rin=e=>P.E[e].ac>P.E[e].bc;return[
+    {id:"rr",label:"Rinne sinamasi — o'ng quloq",type:"sel",options:["musbat (havo o'tkazuvchanligi uzunroq)","manfiy (suyak o'tkazuvchanligi uzunroq)"],check:v=>[v===(rin("R")?0:1),rin("R")?"Musbat":"Manfiy"]},
+    {id:"rl",label:"Rinne sinamasi — chap quloq",type:"sel",options:["musbat (havo o'tkazuvchanligi uzunroq)","manfiy (suyak o'tkazuvchanligi uzunroq)"],check:v=>[v===(rin("L")?0:1),rin("L")?"Musbat":"Manfiy"]},
+    {id:"w",label:"Veber sinamasi",type:"sel",options:["lateralizatsiya yo'q (o'rtada)","o'ng quloqqa lateralizatsiya","chap quloqqa lateralizatsiya"],check:v=>[v===["M","R","L"].indexOf(P.web),["O'rtada","O'ngga","Chapga"][["M","R","L"].indexOf(P.web)]]}];},
+  mc:ctx=>({q:"Xulosa:",opts:["Eshitish me'yorida","Chap quloqda tovush o'tkazuvchi apparat shikastlangan","O'ng quloqda tovush o'tkazuvchi apparat shikastlangan","O'ng quloqda tovush qabul qiluvchi apparat shikastlangan","Chap quloqda tovush qabul qiluvchi apparat shikastlangan"],ans:ctx.P.k,
+    why:"Me'yorda havo o'tkazuvchanligi suyaknikidan ≈ 2 marta uzun (Rinne musbat), Veberda tovush o'rtada. Tovush o'tkazish buzilganda (oltingugurt tiqini, otit) shu quloqda Rinne manfiy, Veberda tovush kasal quloqqa lateralizatsiya qiladi. Tovush qabul qilish (ichki quloq, eshitish nervi) buzilganda Rinne musbat, lekin ikkala o'tkazuvchanlik qisqargan; Veberda tovush sog' quloqqa lateralizatsiya qiladi."}),
+  explain:ctx=>{const E=ctx.P.E;return `Bu tekshiriluvchida: o'ng quloq — suyak ${E.R.bc} s, havo ${E.R.ac} s; chap quloq — suyak ${E.L.bc} s, havo ${E.L.ac} s.`;}
+});
+
+/* ===== 15-holat: sensomotor reaksiya vaqti ===== */
+CASES.push({id:"c15",no:15,grp:4,
+  title:"Sensomotor reaksiya vaqti va tanlov reaksiyasi",
+  short:"O'z reaksiyangizni o'lchang: yorug'lik, tovush, differensirovka",
+  gen(){return {};},
+  subj:()=>`<b>Tekshiriluvchi:</b> siz o'zingiz. <b>Vazifa:</b> xronoreflektometrda yorug'likka va tovushga oddiy reaksiya vaqtini, so'ng tanlov (differensirovka) reaksiyasini o'lchash: qizil chiroqqa — bosish, yashil chiroqqa — bosmaslik. Signal paydo bo'lishi bilan imkon qadar tez bosing (tugma yoki «Probel» klavishi). Tovushli seriya uchun ovozni yoqing.`,
+  steps:["Yorug'likka oddiy reaksiya: 10 ta urinish","Tovushga oddiy reaksiya: 10 ta urinish","Tanlov reaksiyasi: qizil — bosish, yashil — bosmaslik (15 ta signal)"],
+  build(ctx){const R=ctx.rec;R.L=[];R.S=[];R.C=[];R.cerr=0;R.fs=0;
+    const lamp=el("div",{id:"rtLamp",style:"width:120px;height:120px;border-radius:50%;margin:10px auto;background:#3A3F44;border:6px solid #222;box-shadow:inset 0 0 20px rgba(0,0,0,.6)"});
+    const spk=el("div",{id:"rtSpk",style:"text-align:center;font-size:1.6rem;min-height:36px"},"🔈");
+    const key=el("button",{id:"rtKey",type:"button",style:"display:block;width:min(320px,90%);margin:12px auto;min-height:88px;border-radius:16px;border:3px solid #333;background:#E4E7EA;font-size:1.2rem;font-weight:700;touch-action:manipulation"},"BOSISH");
+    const status=el("div",{style:"text-align:center;font-weight:600;min-height:24px"});
+    const tbl=el("div",{style:"margin-top:10px;overflow-x:auto"});
+    const box=el("div",{style:"background:#1C2228;border-radius:10px;padding:14px;color:#E3EAF1"},el("div",{style:"text-align:center;font-size:.85rem;opacity:.8"},"Xronoreflektometr"),lamp,spk,status);
+    ctx.stage.append(box,key);
+    let mode=null,state="idle",t0=0,timer=0,queue=[],cur=null;
+    const setLamp=c=>{lamp.style.background=c||"#3A3F44";lamp.style.boxShadow=c?`0 0 40px ${c}`:"inset 0 0 20px rgba(0,0,0,.6)";};
+    function start(m){if(state!=="idle"){toast("Seriya davom etmoqda");return;}if(m==="S")audio();mode=m;
+      const n=m==="C"?15:10;queue=m==="C"?[...Array(10).fill("red"),...Array(5).fill("green")].sort(()=>Math.random()-0.5):Array(n).fill(m==="L"?"white":"snd");
+      (m==="L"?R.L:m==="S"?R.S:R.C).length=0;if(m==="C")R.cerr=0;status.textContent="Tayyorlaning...";next();}
+    function next(){clearTimeout(timer);setLamp(null);spk.textContent="🔈";if(!queue.length){finish();return;}cur=queue.shift();state="wait";
+      timer=setTimeout(fire,rnd(1500,4000));}
+    function fire(){state="on";t0=performance.now();if(cur==="snd"){beep(1000,0.15,0.35);spk.textContent="🔊";}else setLamp(cur==="white"?"#FFF7C2":cur==="red"?"#FF3B30":"#34C759");
+      status.textContent="";if(cur==="green")timer=setTimeout(()=>{state="wait";R.C.push({g:true,ok:true});ctx.msg("Yashil signal — to'g'ri, bosilmadi.");next();},900);
+      else timer=setTimeout(()=>{if(state==="on"){ctx.msg("Javob 1,5 s ichida bo'lmadi — urinish takrorlanadi.","pt");queue.unshift(cur);next();}},1500);}
+    function press(e){if(e)e.preventDefault();if(state==="idle")return;const now=performance.now();
+      if(state==="wait"){R.fs++;ctx.msg("Signal hali bermagan edi — oldindan bosish (fal'start). Urinish qayta beriladi.","err");queue.unshift(cur);next();return;}
+      if(state==="on"){const rt=Math.round(now-t0);clearTimeout(timer);
+        if(cur==="green"){R.cerr++;R.C.push({g:true,ok:false});ctx.msg("Yashil signalga bosildi — differensirovka xatosi.","err");}
+        else{(mode==="L"?R.L:mode==="S"?R.S:R.C).push(mode==="C"?{g:false,rt}:rt);status.textContent=rt+" ms";}
+        state="gap";setTimeout(next,700);}}
+    function finish(){state="idle";status.textContent="Seriya tugadi";ctx.done(mode==="L"?0:mode==="S"?1:2);showTbl();}
+    function showTbl(){tbl.innerHTML="";const row=(nm,arr)=>el("tr",{},el("th",{},nm),...arr.map(v=>el("td",{class:"mono"},String(v))));
+      const cr=R.C.filter(x=>!x.g).map(x=>x.rt);
+      tbl.append(el("table",{class:"tbl"},R.L.length?row("Yorug'lik, ms",R.L):null,R.S.length?row("Tovush, ms",R.S):null,cr.length?row("Tanlov (qizil), ms",cr):null),
+        el("p",{class:"note"},`Tanlov seriyasida yashil signalga bosishlar (xatolar): ${R.C.length?R.cerr:"—"}. O'rtacha qiymatlarni o'zingiz hisoblang.`));}
+    key.addEventListener("pointerdown",press);
+    const kd=e=>{if(e.code==="Space"&&CUR===ctx){press(e);}};document.addEventListener("keydown",kd);ctx.onClean(()=>{document.removeEventListener("keydown",kd);clearTimeout(timer);});
+    ctx.stage.append(el("div",{class:"ctl"},ctlGroup("Seriya",el("button",{class:"btn sm",type:"button",onclick:()=>start("L")},"1. Yorug'lik (10)"),el("button",{class:"btn sm",type:"button",onclick:()=>start("S")},"2. Tovush (10)"),el("button",{class:"btn sm",type:"button",onclick:()=>start("C")},"3. Tanlov (15)"))),tbl,
+      el("p",{class:"note"},"Brauzer va ekran o'zining kechikishini (10–40 ms) qo'shadi, shuning uchun natija laboratoriya asbobidagidan biroz uzunroq chiqishi mumkin."));
+  },
+  journal:ctx=>{const R=ctx.rec;const m=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:NaN;const cr=()=>R.C.filter(x=>!x.g).map(x=>x.rt);return[
+    {id:"l",label:"Yorug'likka o'rtacha reaksiya vaqti",unit:"ms",check:v=>[R.L.length===10&&near(v,m(R.L),5),R.L.length?"O'rtacha: "+Math.round(m(R.L))+" ms":"Seriya bajarilmagan"]},
+    {id:"s",label:"Tovushga o'rtacha reaksiya vaqti",unit:"ms",check:v=>[R.S.length===10&&near(v,m(R.S),5),R.S.length?"O'rtacha: "+Math.round(m(R.S))+" ms":"Seriya bajarilmagan"]},
+    {id:"c",label:"Tanlov reaksiyasining o'rtacha vaqti (qizil signallar)",unit:"ms",check:v=>[cr().length>0&&near(v,m(cr()),5),cr().length?"O'rtacha: "+Math.round(m(cr()))+" ms":"Seriya bajarilmagan"]},
+    {id:"e",label:"Tanlov seriyasidagi differensirovka xatolari soni",unit:"ta",check:v=>[R.C.length>0&&v===R.cerr,"Xatolar: "+R.cerr]}];},
+  mc:()=>({q:"Nima uchun tanlov reaksiyasi vaqti oddiy reaksiyadan uzun?",opts:["Po'stloqda signallarni farqlash (differensirovka — ichki tormozlanish) va javobni tanlash qo'shimcha markaziy vaqt talab qiladi","Qizil chiroq ko'zning retseptorlariga sekinroq ta'sir qiladi","Tanlov reaksiyasida muskullar charchagan bo'ladi","Reflektor yoyning efferent qismi uzunroq bo'ladi"],ans:0,
+    why:"Reaksiya vaqtining asosiy qismi markaziy kechikish — signalni idrok etish, tahlil qilish va harakat dasturini tanlash. Oddiy reaksiya me'yorda yorug'likka ≈ 180–220 ms, tovushga ≈ 140–180 ms (eshitish yo'li qisqa va tez). Tanlov reaksiyasida ikki signalni farqlash (differensirovka) va javobni tormozlash kerak — vaqt uzayadi, xatolar ONF tipi, charchoq va diqqatga bog'liq."}),
+  explain:ctx=>{const R=ctx.rec;return `Fal'startlar soni: ${R.fs}.`;}
+});
+
+window.addEventListener("hashchange",route);
+try{const th=localStorage.getItem("tq:theme");}catch(e){}
+route();
+window.__cur=()=>CUR;
+
+</script>
+</body></html>

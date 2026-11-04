@@ -1,0 +1,193 @@
+{
+ "version": 1,
+ "courses": [
+  {
+   "id": "1",
+   "name": "1-kurs",
+   "subjects": [
+    {
+     "id": "anatomiya-1",
+     "name": "Odam anatomiyasi",
+     "abbr": "ANT",
+     "color": "#b5533c",
+     "status": "soon"
+    },
+    {
+     "id": "gistologiya",
+     "name": "Gistologiya, sitologiya va embriologiya",
+     "abbr": "GST",
+     "color": "#8a6bbf",
+     "status": "soon"
+    },
+    {
+     "id": "biologiya",
+     "name": "Tibbiy biologiya",
+     "abbr": "BIO",
+     "color": "#3d8a5a",
+     "status": "soon"
+    },
+    {
+     "id": "lotin",
+     "name": "Lotin tili va tibbiy terminologiya",
+     "abbr": "LAT",
+     "color": "#6b7a8f",
+     "status": "soon"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "name": "2-kurs",
+   "subjects": [
+    {
+     "id": "fiziologiya",
+     "name": "Normal fiziologiya",
+     "abbr": "FIZ",
+     "color": "#2f78b5",
+     "status": "ready",
+     "file": "data/subjects/fzl.json",
+     "pdf": "data/books/fzl.pdf"
+    },
+    {
+     "id": "biokimyo",
+     "name": "Biokimyo",
+     "abbr": "BKM",
+     "color": "#c27c1a",
+     "status": "ready",
+     "file": "data/subjects/bkm.json",
+     "pdf": "data/books/bkm.pdf"
+    },
+    {
+     "id": "mikrobiologiya",
+     "name": "Mikrobiologiya, virusologiya va immunologiya",
+     "abbr": "MKB",
+     "color": "#4f8f84",
+     "status": "soon"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "name": "3-kurs",
+   "subjects": [
+    {
+     "id": "bkp",
+     "name": "Bolalar kasalliklari propedevtikasi",
+     "abbr": "BKP",
+     "color": "#d9822b",
+     "status": "ready",
+     "file": "data/subjects/bkp.json",
+     "pdf": "data/books/bkp.pdf"
+    },
+    {
+     "id": "ikp",
+     "name": "Ichki kasalliklar propedevtikasi",
+     "abbr": "IKP",
+     "color": "#2f6fd0",
+     "status": "ready",
+     "file": "data/subjects/ikp.json",
+     "pdf": "data/books/ikp.pdf"
+    },
+    {
+     "id": "farmakologiya",
+     "name": "Farmakologiya",
+     "abbr": "FRM",
+     "color": "#2a9468",
+     "status": "ready",
+     "file": "data/subjects/frm.json",
+     "pdf": "data/books/frm.pdf"
+    },
+    {
+     "id": "patanatomiya",
+     "name": "Patologik anatomiya",
+     "abbr": "PAN",
+     "color": "#b8426b",
+     "status": "ready",
+     "file": "data/subjects/pan.json",
+     "pdf": "data/books/pan.pdf"
+    },
+    {
+     "id": "patfiziologiya",
+     "name": "Patologik fiziologiya",
+     "abbr": "PFZ",
+     "color": "#7a5bc9",
+     "status": "ready",
+     "file": "data/subjects/pfz.json",
+     "pdf": "data/books/pfz.pdf"
+    }
+   ]
+  }
+ ],
+ "simulators": [
+  {
+   "id": "bkp-sim",
+   "name": "BKP klinik simulyator",
+   "abbr": "BKP",
+   "subject": "bkp",
+   "color": "#d9822b",
+   "status": "ready",
+   "note": "Virtual bemorlar: shikoyat, ko‘rik, auskultatsiya va tashxis",
+   "file": "sim/bkp.html"
+  },
+  {
+   "id": "opka-ikp",
+   "name": "O‘pka fizikal tekshiruvi",
+   "abbr": "IKP",
+   "subject": "ikp",
+   "color": "#2f6fd0",
+   "status": "ready",
+   "note": "O‘pka palpatsiyasi, perkussiyasi va auskultatsiyasi",
+   "file": "sim/opka-ikp.html"
+  },
+  {
+   "id": "yurak-ikp",
+   "name": "Yurak fizikal tekshiruvi",
+   "abbr": "IKP",
+   "subject": "ikp",
+   "color": "#2f6fd0",
+   "status": "ready",
+   "note": "Paypaslash, perkussiya, tonlar va shovqinlar, puls, AB o‘lchash, mitral va aortal nuqsonlar",
+   "file": "sim/yurak-ikp.html"
+  },
+  {
+   "id": "farm-lab",
+   "name": "Retseptura va farmakokinetika",
+   "abbr": "FRM",
+   "subject": "farmakologiya",
+   "color": "#2a9468",
+   "status": "ready",
+   "note": "18 mavzu bo‘yicha 67 ta retsept vaziyati, xatoni topish, doza hisoblash va farmakokinetika grafigi",
+   "file": "sim/farm-lab.html"
+  },
+  {
+   "id": "nafas-atlas",
+   "name": "Nafas kasalliklari atlasi",
+   "abbr": "IKP",
+   "subject": "ikp",
+   "color": "#2f6fd0",
+   "status": "ready",
+   "note": "Nafas a‘zolari kasalliklarining fizikal diagnostikasi",
+   "file": "sim/nafas-atlas.html"
+  },
+  {
+   "id": "alkogol",
+   "name": "Alkogol va tana",
+   "abbr": "UMUM",
+   "subject": "umumiy",
+   "color": "#a0522d",
+   "status": "ready",
+   "note": "Etil spirti va alkogolizm: tana bo‘ylab xarita",
+   "file": "sim/alkogol.html"
+  },
+  {
+   "id": "fzl-lab",
+   "name": "Fiziologiya laboratoriyasi",
+   "abbr": "FIZ",
+   "subject": "fiziologiya",
+   "color": "#2f78b5",
+   "status": "ready",
+   "note": "15 ta laboratoriya ishi: kimograf, Goryayev kamerasi, Sali, Panchenkov, qon guruhi, EKG, tonometr, spirometr, Sivtsev jadvali, kamertonlar",
+   "file": "sim/fzl-lab.html"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{"quiz":[
+{"q":"Siydikning umumiy tahlilida me’yoriy pH (reaksiya):","options":["5,5–6,5","2,0–3,0","8,5–9,5","10–11","1–2"],"answer":0},
+{"q":"Chaqaloqda hayotning 1-haftasida siydik rangi qizg‘ish-g‘isht bo‘lishi sababi:","options":["Siydik kislotasi ko‘pligi (siydik kislotali infarkt)","Qon","Bilirubin","Gemoglobin","Infeksiya"],"answer":0},
+{"q":"Siydikda glyukoza paydo bo‘lishi uchun qonda glyukoza buyrak chegarasidan oshishi kerak. Bu chegara:","options":["8,9–10 mmol/l","3,3–5,5 mmol/l","15 mmol/l","20 mmol/l","2 mmol/l"],"answer":0},
+{"q":"Nechiporenko sinamasida 1 ml siydikda eritrotsitlar me’yori:","options":["1000 gacha","5000 gacha","10000 gacha","100 000 gacha","0"],"answer":0},
+{"q":"Addis–Kakovskiy sinamasida siydik qancha vaqt yig‘iladi?","options":["3 soat","24 soat","1 soat","8 soat","Bir martalik"],"answer":1},
+{"q":"Amburje sinamasida siydik qancha vaqt yig‘iladi?","options":["3 soat","24 soat","1 soat","12 soat","8 soat"],"answer":0},
+{"q":"Uch stakanli sinamada o‘zgarishlar faqat 1-porsiyada bo‘lsa, manba:","options":["Tashqi jinsiy a’zolar yoki uretra","Qovuq","Buyrak","Ureter","Prostata faqat"],"answer":0},
+{"q":"Diagnostik ahamiyatli bakteriuriya (erkin siyishda):","options":["≥100 000 KHB/ml","≥1000 KHB/ml","≥10 KHB/ml","Har qanday miqdor","≥100 KHB/ml"],"answer":0},
+{"q":"Zimnitskiy sinamasi nimani baholaydi?","options":["Ajratish va konsentratsion funksiya, sirkad ritm","Koptokcha filtratsiyasi","Yashirin shish","Qon oqimi","Qon bosimi"],"answer":0},
+{"q":"Zimnitskiy sinamasida ichilgan suyuqlikning necha foizi ajralishi kerak?","options":["70–80%","10–20%","30%","100%","150%"],"answer":0},
+{"q":"Izostenuriya nima?","options":["Siydik zichligi monoton ≈1008–1010","Zichlik >1030","Zichlik 1025","Kunduzgi diurez ko‘p","Tunda siyish yo‘q"],"answer":0},
+{"q":"Nikturiya nimani anglatadi?","options":["Tungi diurezning ustunligi","Kunduzgi diurez ko‘pligi","Qonli siydik","Siydik tuta olmaslik","Siydik yo‘qligi"],"answer":0},
+{"q":"Reberg sinamasi nimani baholaydi?","options":["Koptokcha filtratsiyasi (endogen kreatinin klirensi) va kanalcha reabsorbsiyasi","Konsentratsiya","Shish","Siydik cho‘kmasi","Bakteriuriya"],"answer":0},
+{"q":"Kanalcha reabsorbsiyasi me’yorda:","options":["97–99%","50%","70%","20%","100% emas, 40%"],"answer":0},
+{"q":"Mak-Klyur–Oldrich sinamasida 1 yoshgacha bolada pufakcha so‘rilish vaqti me’yorda:","options":["10–15 daqiqa","20–25 daqiqa","40–60 daqiqa","1 soat","Darhol"],"answer":0},
+{"q":"Siydik yo‘llarining skrining usuli:","options":["UTT","KT","MRT","Angiografiya","Biopsiya"],"answer":0},
+{"q":"Qovuq-siydik yo‘li reflyuksini aniqlovchi usul:","options":["Miksion sistouretrografiya","EGDS","Spirografiya","EKG","FKG"],"answer":0}
+],
+"cards":[
+{"front":"Siydik tahlili me’yori","back":"Somon-sariq, tiniq, pH 5,5–6,5, zichlik 1008–1025, oqsil yo‘q/≤0,033 g/l, glyukoza yo‘q, eritrotsit 0–2, leykotsit o‘g‘ilda 0–5, qizda 5–10"},
+{"front":"Nechiporenko / Amburje / Addis","back":"Nechiporenko — 1 ml (leyk. 2000–4000, eritr. 1000); Amburje — 3 soat; Addis–Kakovskiy — 24 soat (leyk. ≤2 mln, eritr. ≤1 mln)"},
+{"front":"Uch stakanli sinama","back":"1-porsiya — uretra/tashqi a’zolar; 3-porsiya — qovuq; barchasida — buyrak/ureter/qovuq"},
+{"front":"Bakteriuriya mezonlari","back":"Erkin siyishda ≥10⁵ KHB/ml; kateter ≥10⁴; qov usti punksiyasi — har qanday; <1 yoshda E. coli ≥5×10⁴"},
+{"front":"Zimnitskiy sinamasi","back":"8 porsiya (3 soatdan); ajratish 70–80%; zichlik 1008–1025, farq ≥10; kunduzgi diurez 2/3–3/4; nikturiya — buyrak yetishmovchiligi; gipo-/izo-/giperstenuriya"},
+{"front":"Reberg sinamasi","back":"Endogen kreatinin klirensi (KFT); reabsorbsiya 97–99%; Shvars: KFT = k × bo‘y / kreatinin; chaqaloq KFT 30–50, bolalar ≈121 ml/daq/1,73 m²"},
+{"front":"Mak-Klyur–Oldrich","back":"0,2 ml NaCl teri ichiga; pufakcha so‘rilishi: <1 yosh 10–15 daq; 1–5 yosh 20–25; >5 yosh 40–60 daq; tezroq — shishga tayyorlik"},
+{"front":"Instrumental usullar","back":"UTT (skrining), ekskretor urografiya, miksion sistouretrografiya, renografiya/nefrossintigrafiya, angiografiya, KT/MRT, sistoskopiya, punksion biopsiya"}
+]}

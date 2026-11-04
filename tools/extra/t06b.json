@@ -1,0 +1,21 @@
+{"quiz":[
+{"q":"Nafas olish soni (NOS) 1 yoshgacha bo‘lgan bolada me’yorda:","options":["40–60","30–35","25–30","20–25","16–18"],"answer":1},
+{"q":"Chaqaloqda nafas : puls nisbati me’yorda:","options":["1 : 2,5–3","1 : 4","1 : 4,5","1 : 5","1 : 1"],"answer":0},
+{"q":"3 oygacha bo‘lgan bolada NOS qanday sanaladi?","options":["15 soniya × 4","30 soniya × 2","To‘liq 1 daqiqa davomida","Faqat uyqusiz holatda 10 soniya","Sanalmaydi"],"answer":2},
+{"q":"Inspirator hansirashga xos belgi:","options":["Nafas chiqarish uzayishi","Qovurg‘a oraliqlari va to‘sh usti chuqurchalarining ichga tortilishi, stridor","Hushtaksimon nafas, uzoqdan eshitiladigan xirillash","Faqat qorin mushaklari ishtiroki","Nafas va puls nisbati o‘zgarmaydi"],"answer":1},
+{"q":"Bronxial astma xurujida qanday hansirash kuzatiladi?","options":["Inspirator","Ekspirator","Aralash emas","Hansirash bo‘lmaydi","Faqat Cheyn–Stoks"],"answer":1},
+{"q":"“Quvilgan hayvon” nafasi deb ataladigan chuqur, shovqinli, siyrak nafas:","options":["Cheyn–Stoks","Biot","Grokk","Kussmaul","Bitonal"],"answer":3},
+{"q":"Nafas chuqurligi asta-sekin ortib, so‘ng kamayib, pauza bilan tugaydigan nafas:","options":["Kussmaul","Biot","Cheyn–Stoks","Grokk","Stridor"],"answer":2},
+{"q":"Ovoz titrashini tekshirishda bola nimalarni aytadi?","options":["“A” unlisi","“R” harfli so‘zlar (“traktor”)","“S” harfli so‘zlar","Faqat sanaydi","Hech narsa aytmaydi"],"answer":1},
+{"q":"Ovoz titrashi susayadi yoki yo‘qoladi:","options":["Krupoz zotiljamda","Kavernada","Ekssudativ plevritda va pnevmotoraksda","Pnevmofibrozda","Absessda"],"answer":2},
+{"q":"Bolada o‘pka perkussiyasi qanday kuch bilan o‘tkaziladi va nima uchun?","options":["Kuchli, chunki ko‘krak qafasi qalin","Yengil (sokin), chunki ko‘krak qafasi yupqa va elastik","Kuchli, chunki o‘pka kichik","Perkussiya qilinmaydi","Faqat bevosita"],"answer":1},
+{"q":"Plevral og‘riq nafasda kuchayadi, kasal tomonga egilganda esa:","options":["Kuchayadi","Kamayadi","O‘zgarmaydi","Yo‘qoladi, doim","Boshqa joyga o‘tadi"],"answer":1}
+],
+"cards":[
+{"front":"NOS me’yori","back":"Chaqaloq 40–60; <1 yosh 30–35; 1–3 yosh 25–30; 4–6 yosh 20–25; 7–15 yosh 18–20; >15 yosh 16–18"},
+{"front":"Nafas : puls nisbati","back":"Chaqaloq 1:2,5–3; 1 yosh 1:3–3,5; 4–6 yosh 1:4; kattalar 1:4–5; kasallikda 1:2–3 gacha torayadi"},
+{"front":"Hansirash turlari","back":"Inspirator — yuqori yo‘l torayishi (krup, yot jism), stridor; ekspirator — bronxial astma, obstruktiv bronxit; aralash — zotiljam, plevrit, yurak yetishmovchiligi"},
+{"front":"Patologik nafas turlari","back":"Cheyn–Stoks (pauza bilan to‘lqin), Biot (to‘satdan pauza), Grokk (pauzasiz to‘lqin), Kussmaul (chuqur shovqinli — atsidoz)"},
+{"front":"Ovoz titrashi o‘zgarishi","back":"Kuchayadi — zichlashish (krupoz zotiljam), kaverna; susayadi — suyuqlik/havo plevrada, atelektaz, emfizema"},
+{"front":"Perkussiya qoidalari","back":"Sokin, yengil zarba; barmoq-barmoq (bilvosita), go‘daklarda bevosita/Obrazsov; qarama-qarshi simmetrik joylarda solishtirish; aniq tovushdan bo‘g‘iqqa"}
+]}

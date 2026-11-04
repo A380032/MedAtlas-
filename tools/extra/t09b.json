@@ -1,0 +1,24 @@
+{"quiz":[
+{"q":"Bolada AQB o‘lchashda manjet rezina qismining eni yelka aylanasining taxminan qanchasini egallashi kerak?","options":["10%","25%","40%","80%","100%"],"answer":2},
+{"q":"Tor manjet AQB ni qanday ko‘rsatadi?","options":["Pasaytirib","Oshirib","O‘zgartirmaydi","Faqat diastolikni oshiradi","Faqat pulsni oshiradi"],"answer":1},
+{"q":"Korotkov usulida diastolik AQB qaysi faza bilan belgilanadi?","options":["I fazada birinchi aniq ton","V fazada tonlarning yo‘qolishi","II fazada shovqin","Pulsning yo‘qolishi","Manjetni to‘ldirish"],"answer":1},
+{"q":"1 yoshgacha bo‘lgan bolada sistolik AQB ning taxminiy formulasi (n — oylar):","options":["90 + 2n","76 + 2n","60 + n","100 + n","105 + 2n"],"answer":1},
+{"q":"1 yoshdan katta o‘g‘il bolada sistolik AQB o‘rtacha (n — yil):","options":["76 + 2n","90 + 2n","60 + n","75 + 2n","105 + 2n"],"answer":1},
+{"q":"Sentil baholashda arterial gipertenziya qachon tashxislanadi?","options":["<10 sentil","10–90 sentil","90–95 sentil","≥95 sentil (3 marta o‘lchashda)","<5 sentil"],"answer":3},
+{"q":"Oyoqlarda AQB qo‘llardagiga nisbatan odatda:","options":["10–20 mm yuqori","10–20 mm past","Bir xil","50 mm past","Aniqlanmaydi"],"answer":0},
+{"q":"Qo‘llarda AQB oyoqlardagidan yuqori bo‘lsa, bu qaysi holat belgisi?","options":["Aorta koarktatsiyasi","Mitral stenoz","Anemiya","Gipotireoz","Miokardit"],"answer":0},
+{"q":"Martine sinamasida qulay reaksiya mezonlari:","options":["Puls ≤25% tezlashadi, sistolik AQB 5–10 mm ko‘tariladi, 3 daqiqada tiklanadi","Puls ≥50% tezlashadi","Tiklanish 10 daqiqadan oshadi","Diastolik AQB keskin ko‘tariladi","Sianoz paydo bo‘ladi"],"answer":0},
+{"q":"Bolalar EKG sida chaqaloqlarda elektr o‘qi odatda qanday?","options":["Chapga og‘gan (levogramma)","O‘ngga og‘gan (pravogramma)","Normogramma","O‘q aniqlanmaydi","Vertikal faqat 15 yoshda"],"answer":1},
+{"q":"Bolalarda EKG da me’yor bo‘lishi mumkin bo‘lgan o‘zgarish:","options":["V1–V3 da manfiy T tishchasi","ST ning keskin pasayishi","Chuqur kengaygan QRS (>0,12 s)","To‘liq AV blokada","Qorinchalar fibrillyatsiyasi"],"answer":0},
+{"q":"Xolter monitoringi nima?","options":["24 soatlik uzluksiz EKG yozuvi","Fonokardiografiya","AQB bir martalik o‘lchash","Rentgen","Ekokardiografiya"],"answer":0},
+{"q":"EKG da YuQS qanday hisoblanadi?","options":["60 / RR (soniyada)","RR × 60","QT / RR","PQ × 60","QRS / 60"],"answer":0}
+],
+"cards":[
+{"front":"AQB o‘lchash qoidalari","back":"5 daqiqa dam; manjet eni ≈40% yelka aylanasi; I faza — sistolik, V faza — diastolik; 2–3 marta takrorlanadi; birinchi marta qo‘l va oyoqda"},
+{"front":"AQB me’yori","back":"Chaqaloq 60–70; 1 yosh 80–90/40–50; 5 yosh 100/60–65; 10 yosh 110/70; 15 yosh 115–120/70–75"},
+{"front":"AQB formulalari","back":"<1 yosh: 76 + 2n (oy); >1 yosh: sistolik 90 + 2n, diastolik 60 + n; qizlarda −5 mm"},
+{"front":"Sentil bo‘yicha AQB","back":"<10 past; 10–90 me’yor; 90–95 yuqori me’yor; ≥95 gipertenziya; <5 gipotenziya"},
+{"front":"Funksional sinamalar","back":"Martine (ortostatik), Shalkov dozalangan yuklama, klinoortostatik sinama (KOS), farmakologik, veloergometriya"},
+{"front":"EKG protokoli","back":"Vol’taj → ritm manbai → YuQS → elektr o‘qi → tishchalar → intervallar (PQ, QRS, QT) → sistolik ko‘rsatkich → ST/T → yoshga xos xususiyat → xulosa"},
+{"front":"Bolalar EKG xususiyatlari","back":"Qisqa tishcha/intervallar; nafas aritmiyasi; erta yoshda pravogramma; V1–V3 da manfiy T; III da chuqur Q; erta repolyarizatsiya (o‘smirda)"}
+]}

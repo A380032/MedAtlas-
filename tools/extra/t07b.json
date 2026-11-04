@@ -1,0 +1,22 @@
+{"quiz":[
+{"q":"Kichik bolada bir tomonlama yiringli, sassiq burun ajralmasi qaysi holatga xos?","options":["Allergik rinit","Burundagi yot jism","Adenoidit","Gripp","Sinusit (faqat o‘smirda)"],"answer":1},
+{"q":"Tungi yo‘tal (bifurkatsion limfa tugunlari bosganda) qaysi kasalliklarda uchraydi?","options":["Sil, limfogranulematoz, ko‘ks oralig‘i o‘smalari","Faqat faringit","Faqat laringit","Gripp","Allergik rinit"],"answer":0},
+{"q":"Yo‘tal necha haftadan uzoq davom etsa surunkali kasallik (astma, sil, mukovissidoz, yot jism, reflyuks) istisno qilinadi?","options":["1 hafta","2 hafta","3–4 hafta","8 hafta","12 hafta"],"answer":2},
+{"q":"Diafragmal plevrit yoki pastki bo‘lak zotiljamida og‘riq qayerga beriladi?","options":["Boshga","Qoringa (appenditsitga o‘xshab ketishi mumkin)","Qo‘lga","Oyoqqa","Beliga"],"answer":1},
+{"q":"Infiltratsiya (zichlashish) sindromida ovoz titrashi va bronxofoniya:","options":["Susayadi","Kuchayadi","O‘zgarmaydi","Yo‘qoladi","Notekis"],"answer":1},
+{"q":"Dombrovskaya simptomi nima?","options":["O‘ng tomonlama zotiljamda yurak tonlarining o‘ngda ham chapdagidek aniq eshitilishi","Teri burmasi qalinlashuvi","Plevra ishqalanish shovqini","Jgut simptomi","Ko‘krakdagi sanchiq"],"answer":0},
+{"q":"Atelektazning rentgenologik triadasi:","options":["Bir jinsli uchburchak soya, ko‘ks oralig‘ining kasal tomonga siljishi, diafragmaning ko‘tarilishi","Yorug‘lanish, siljish yo‘q","Suyuqlik darajasi va havo","Kavernalar","Bir tomonlama pnevmotoraks"],"answer":0},
+{"q":"Atelektazda ovoz titrashi va nafas:","options":["Kuchaygan, bronxial","Susaygan, nafas susaygan yoki eshitilmaydi","Kuchaygan, vezikulyar","Me’yorda","Faqat xirillash bor"],"answer":1},
+{"q":"Plevra bo‘shlig‘ida suyuqlik bo‘lganda perkussiya tovushi:","options":["Timpanik","Qutichasimon","Bo‘g‘iq (“son” tovushi)","Aniq o‘pka tovushi","Metall"],"answer":2},
+{"q":"Plevra bo‘shlig‘ida havo (pnevmotoraks) bo‘lganda perkussiya tovushi:","options":["Bo‘g‘iq","Timpanik","Aniq o‘pka tovushi","Qisqargan","Jarangsiz"],"answer":1},
+{"q":"Quruq (fibrinoz) plevritda bola qanday yotadi va nima eshitiladi?","options":["Sog‘ tomoniga, vezikulyar nafas","Kasal tomoniga, plevra ishqalanish shovqini","Chalqancha, bronxial nafas","Qorni bilan, krepitatsiya","Tik, quruq xirillash"],"answer":1},
+{"q":"Damuazo (Sokolov–Damuazo) chizig‘i nimani bildiradi?","options":["Pnevmotoraks chegarasi","Suyuqlikning yuqori qiyshiq chegarasi","Yurak chegarasi","Jigar chegarasi","Segmentlar chegarasi"],"answer":1}
+],
+"cards":[
+{"front":"Yo‘tal vaqtiga ko‘ra","back":"Ertalabki — absess/bronxoektaz; kechki — bronxit/zotiljam; tungi — sil, limfogranulematoz, astma (4–6 soat), adenoidit; ovqat bilan — reflyuks, TQ oqmasi"},
+{"front":"Infiltratsiya sindromi","back":"Ovoz titrashi↑, bronxofoniya↑, perkussiyada qisqargan tovush, bronxial nafas, mayda pufakchali nam xirillash, krepitatsiya, rentgenda qorayish"},
+{"front":"Atelektaz sindromi","back":"Ovoz titrashi↓, nafas susaygan, tovush qisqargan; rentgen: uchburchak soya + ko‘ks oralig‘i siljishi + diafragma ko‘tarilgan"},
+{"front":"Suyuqlik va havo plevrada","back":"Ikkalasida ovoz titrashi, bronxofoniya, nafas susayadi; suyuqlik — bo‘g‘iq, havo — timpanik; ko‘ks oralig‘i sog‘ tomonga siljiydi"},
+{"front":"Plevrit uchburchaklari","back":"Garland — shu tomonda umurtqa yonida timpanik; Rauxfus–Grokko — qarshi tomonda umurtqa yonida bo‘g‘iqlik; Damuazo — suyuqlik yuqori chegarasi"},
+{"front":"Quruq plevrit","back":"Sanchiqli og‘riq (nafas/yo‘talda kuchayadi), kasal tomonga yotadi, plevra ishqalanish shovqini, Myussi simptomi"}
+]}

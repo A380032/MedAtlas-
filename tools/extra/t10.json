@@ -1,0 +1,27 @@
+{"quiz":[
+{"q":"Yurakning uch qavati ham bir vaqtda zararlanishi qanday ataladi?","options":["Endokardit","Miokardit","Perikardit","Pankardit","Kardiomiopatiya"],"answer":3},
+{"q":"O‘tkir revmatik isitma qaysi qo‘zg‘atuvchidan keyin rivojlanadi?","options":["Stafilokokk","A guruh β-gemolitik streptokokk","Pnevmokokk","Meningokokk","Virus (Koksaki)"],"answer":1},
+{"q":"Mitral klapan yetishmovchiligiga xos shovqin:","options":["Cho‘qqida pansistolik puflovchi shovqin, chap qo‘ltiq ostiga o‘tkaziladi","Cho‘qqida diastolik shovqin","Aortada qo‘pol mezosistolik shovqin","Botkin nuqtasida protodiastolik shovqin","Epigastriyda sistolik shovqin"],"answer":0},
+{"q":"“Bedana ritmi” va cho‘qqida chapillovchi I ton qaysi nuqsonga xos?","options":["Mitral yetishmovchilik","Mitral stenoz","Aorta stenozi","Aortal yetishmovchilik","Fallo tetradasi"],"answer":1},
+{"q":"Aortal klapan yetishmovchiligida puls bosimi qanday?","options":["Kichik","Katta (diastolik AQB keskin past)","O‘zgarmagan","Aniqlanmaydi","Faqat sistolik past"],"answer":1},
+{"q":"Aorta stenozida puls qanday?","options":["Tez va baland","Sekin va past","Paradoksal","Almashinib turuvchi","O‘zgarmagan"],"answer":1},
+{"q":"Orttirilgan yurak nuqsoni endokardit boshlanganidan taxminan qancha vaqt keyin shakllanadi?","options":["1–2 hafta","1 oy","3 oy","8–12 oy","5 yil"],"answer":3},
+{"q":"Infeksion endokarditga xos belgilar:","options":["Osler tugunchalari, Janeway dog‘lari, splenomegaliya, “sutli kofe” rangparlik","Halqasimon eritema","Kichik xoreya","Bo‘g‘imlarning uchuvchi og‘rig‘i","Gipertenziya"],"answer":0},
+{"q":"Miokarditda rentgenda kardiotorakal indeks (KTI) qiymati:",   "options":["<0,4","0,4–0,45","0,45","KTI >0,5 (erta yoshda >0,55)","Hech qachon o‘zgarmaydi"],"answer":3},
+{"q":"Miokardit tashxisida qonda oshadigan markerlar:","options":["KFK-MB va troponinlar","Kreatinin","Bilirubin","Glyukoza","Xolesterin"],"answer":0},
+{"q":"Quruq (fibrinoz) perikarditda og‘riq qachon kamayadi?","options":["Oldinga engashganda","Yo‘talganda","Chuqur nafas olganda","Yotganda","Harakatda"],"answer":0},
+{"q":"Quruq perikarditda EKG da qanday o‘zgarish bo‘ladi?","options":["Barcha tarmoqlarda ST ning ko‘tarilishi (konkordant)","Faqat V1 da ST pasayishi","PQ qisqarishi","Tishchalar yo‘qligi","To‘liq AV blokada"],"answer":0},
+{"q":"Bek triadasi (yurak tamponadasi):","options":["Gipotenziya + venoz bosim oshishi + bo‘g‘iq tonlar","Isitma + artralgiya + kardit","Sianoz + hansirash + shish","Xoreya + eritema + tugunchalar","Gepatomegaliya + assit + shish"],"answer":0},
+{"q":"Revmatik isitmaning katta mezonlari:","options":["Kardit, poliartrit, xoreya, halqasimon eritema, revmatik tugunchalar","Artralgiya, isitma, EChT oshishi","Sianoz, hansirash","Splenomegaliya, petexiya","Faqat ASLO oshishi"],"answer":0},
+{"q":"Revmatik isitma tashxisi uchun nima kerak?","options":["2 katta yoki 1 katta + 2 kichik mezon va streptokokk infeksiyasi isboti","Faqat 1 kichik mezon","Faqat isitma","Faqat ASLO","Faqat EKG o‘zgarishi"],"answer":0},
+{"q":"Bolalarda ikkilamchi arterial gipertenziyaning eng ko‘p sababi:","options":["Buyrak kasalliklari (jumladan buyrak arteriyasi stenozi)","Feoxromotsitoma","Gipotireoz","Anemiya","Semizlik"],"answer":0}
+],
+"cards":[
+{"front":"Kardit sabablari","back":"Revmatik (A gr. streptokokk), virusli (Koksaki B, ECHO, adenovirus), bakterial (difteriya), infeksion endokardit, autoimmun (TQYu, YuA), toksik-allergik"},
+{"front":"Mitral va aortal nuqsonlar","back":"MY: cho‘qqida pansistolik shovqin; MS: diastolik xirillash, chapillovchi I ton, “bedana ritmi”; AY: protodiastolik shovqin, Myusse, Kvinke; AS: qo‘pol mezosistolik shovqin, sekin puls"},
+{"front":"Infeksion endokardit","back":"Uzoq isitma, “sutli kofe”, yangi shovqin, splenomegaliya, petexiyalar, Osler, Janeway, “nog‘ora tayoqchalari”, ExoKG da vegetatsiyalar, qon ekish"},
+{"front":"Miokardit belgilari","back":"Haroratga mos kelmaydigan taxikardiya, bo‘g‘iq tonlar, galop, kardiomegaliya, aritmiya, KFK-MB va troponin oshishi, KTI >0,5"},
+{"front":"Perikardit","back":"Quruq: sanchiq, ishqalanish shovqini, ST↑ barcha tarmoqlarda; ekssudativ: bo‘g‘iq tonlar, keng bo‘g‘iqlik, paradoksal puls, ExoKG da suyuqlik; tamponada — Bek triadasi"},
+{"front":"Revmatik isitma mezonlari","back":"Katta: kardit, poliartrit, xoreya, halqasimon eritema, tugunchalar; kichik: artralgiya, isitma, EChT/SRO↑, PQ uzayishi; + streptokokk isboti (ASLO)"},
+{"front":"Arterial gipertenziya ta’rifi","back":"AQB ≥95 sentil (kamida 3 marta, turli kunlarda); birlamchi (o‘smirlar) va ikkilamchi (buyrak, yurak-tomir, endokrin)"}
+]}

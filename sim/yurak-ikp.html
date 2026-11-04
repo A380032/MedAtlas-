@@ -1,0 +1,1781 @@
+<!doctype html>
+<html lang="uz"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Yurak fizikal tekshiruvi</title>
+<meta name="description" content="IKP: yurak sohasini ko‘zdan kechirish, paypaslash, perkussiya, auskultatsiya, puls, arterial bosim va orttirilgan yurak nuqsonlari bo‘yicha interaktiv simulyator">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: klinik "stetoskop paneli" — sticky bo'limlar menyusi, keng matn ustuni, pastda doimiy tovush pleyeri */
+:root{
+  --bg:#EDF1F0; --surface:#FFFFFF; --sunk:#E2E9E7; --ink:#14211F; --muted:#56696A; --line:#CBD7D4;
+  --accent:#0D6871; --accent-soft:#D3E7E8; --on-accent:#FFFFFF;
+  --insp:#2D69AE; --exp:#B9730F; --bad:#AD3F37; --good:#2C7A4C; --warn:#9A6A00;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1615; --surface:#14201F; --sunk:#0A1211; --ink:#E1EBE9; --muted:#93A7A4; --line:#263836;
+  --accent:#53B8C0; --accent-soft:#16373A; --on-accent:#04201F;
+  --insp:#7EAFEA; --exp:#E7AA4E; --bad:#E58378; --good:#6FC592; --warn:#E0B44F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1615; --surface:#14201F; --sunk:#0A1211; --ink:#E1EBE9; --muted:#93A7A4; --line:#263836;
+  --accent:#53B8C0; --accent-soft:#16373A; --on-accent:#04201F;
+  --insp:#7EAFEA; --exp:#E7AA4E; --bad:#E58378; --good:#6FC592; --warn:#E0B44F; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;padding-bottom:96px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.25rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.muted{color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+a{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:8px}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top a{flex:none;text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.top a:hover{background:var(--sunk);color:var(--ink)}
+nav.top a.brand{color:var(--accent);font-family:var(--f-display);font-weight:800}
+
+/* hero */
+header.hero{padding-block:44px 28px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:36px;align-items:center}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:800;letter-spacing:-.02em;margin-block:10px 14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:1.08rem;max-width:60ch}
+.meta{margin-top:16px;font-size:.88rem;color:var(--muted);max-width:68ch}
+.phono{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px}
+.phono canvas{width:100%;height:150px;display:block;border-radius:8px;background:var(--sunk)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.phono .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* sections */
+section{padding-block:44px;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:8px;margin-bottom:22px;max-width:75ch}
+.sec-head .eyebrow{color:var(--muted)}
+.prose{max-width:72ch;display:grid;gap:12px}
+.prose ul,.prose ol{margin:0;padding-left:1.25em;display:grid;gap:4px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.hero-grid,.grid2{grid-template-columns:minmax(0,1fr)}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid3{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:.95rem}
+.note.warn{border-color:var(--warn)}
+.note b:first-child{display:block;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:2px}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.8rem;color:var(--muted);line-height:1.4}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-block:18px}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* play buttons */
+.play{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);border-radius:999px;padding:6px 14px 6px 10px;font-size:.88rem;font-weight:600;cursor:pointer;line-height:1.2}
+.play:hover{background:var(--accent-soft)}
+.play .ic{width:16px;height:16px;border-radius:50%;background:var(--accent);position:relative;flex:none}
+.play .ic::after{content:"";position:absolute;left:6px;top:4.5px;width:0;height:0;border-left:6px solid var(--on-accent);border-top:3.5px solid transparent;border-bottom:3.5px solid transparent}
+.play.on{background:var(--accent);color:var(--on-accent)}
+.play.on .ic{background:var(--on-accent)}
+.play.on .ic::after{left:5px;top:5px;border:0;width:6px;height:6px;background:var(--accent)}
+.play.big{font-size:1rem;padding:10px 20px 10px 14px}
+.play.big .ic{width:22px;height:22px}
+.play.big .ic::after{left:8.5px;top:6px;border-left-width:8px;border-top-width:5px;border-bottom-width:5px}
+.play.big.on .ic::after{left:7px;top:7px;width:8px;height:8px}
+
+/* sound cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:9px;align-content:start;min-width:0}
+.card h3{font-size:1.08rem}
+.card .alt{font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.card dl{margin:0;display:grid;gap:6px;font-size:.9rem}
+.card dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:0}
+.props{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-size:.74rem;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.chip.i{color:var(--insp);border-color:currentColor;background:transparent}
+.chip.e{color:var(--exp);border-color:currentColor;background:transparent}
+.sub-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-block:30px 12px}
+
+/* virtual patient */
+.vp{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.vp{grid-template-columns:minmax(0,1fr)}}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{border:0;background:transparent;padding:6px 13px;border-radius:999px;cursor:pointer;font-size:.88rem;font-weight:500;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+select{font:inherit;font-size:.92rem;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);max-width:100%}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.views{grid-template-columns:minmax(0,1fr)}.view svg{max-width:340px;margin:0 auto}}
+.view{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:8px;min-width:0}
+.view .lbl{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:2px 6px}
+.view svg{width:100%;height:auto;display:block}
+.body-fill{fill:var(--sunk);stroke:var(--muted);stroke-width:1.4}
+.lung-fill{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1;opacity:.95}
+.bone{fill:none;stroke:var(--muted);stroke-width:1.1;opacity:.55}
+.bone-s{fill:var(--surface);stroke:var(--muted);stroke-width:1.1;opacity:.8}
+.pt{cursor:pointer}
+.pt circle.hit{fill:transparent}
+.pt circle.dot{fill:var(--surface);stroke:var(--accent);stroke-width:2.2;transition:r .15s}
+.pt:hover circle.dot,.pt:focus-visible circle.dot{fill:var(--accent-soft)}
+.pt.sel circle.dot{fill:var(--accent);stroke:var(--ink)}
+.pt.chg circle.dot{stroke:var(--bad)}
+.pt:focus{outline:none}
+.pt:focus-visible circle.dot{stroke-width:3.5}
+.side-t{font-family:var(--f-mono);font-size:9px;fill:var(--muted)}
+.find{display:grid;gap:10px}
+.find h3{font-size:1.1rem}
+.kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:.92rem;align-items:baseline}
+.kv dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.kv dd{margin:0}
+.hid{filter:blur(6px);user-select:none}
+.palm{display:flex;gap:18px;align-items:center;padding:6px 0}
+.palm span{width:38px;height:48px;border-radius:18px 18px 12px 12px;background:var(--accent-soft);border:1.5px solid var(--accent);display:block}
+.palm span.vib{animation:vib .09s linear infinite}
+@keyframes vib{0%{transform:translateX(calc(var(--a,1px)*-1))}50%{transform:translateX(var(--a,1px))}100%{transform:translateX(calc(var(--a,1px)*-1))}}
+.sc-info{font-size:.9rem}
+label.tog{display:inline-flex;gap:8px;align-items:center;font-size:.9rem;cursor:pointer}
+
+/* topo sim */
+.topo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:20px;align-items:start}
+@media (max-width:820px){.topo{grid-template-columns:minmax(0,1fr)}}
+.levels{display:grid;gap:3px}
+.lv{display:grid;grid-template-columns:96px 1fr 28px;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:5px 10px;cursor:pointer;text-align:left;font-size:.86rem}
+.lv.rib{background:var(--sunk)}
+.lv .bar{height:8px;border-radius:4px;background:transparent}
+.lv.tapped .bar{background:var(--line)}
+.lv.show-aniq .bar{background:var(--accent)}
+.lv.show-quti .bar{background:var(--insp)}
+.lv.show-tomtoq .bar{background:var(--exp)}
+.lv.show-tt .bar{background:var(--warn)}
+.lv.mark{outline:2px dashed var(--ink);outline-offset:1px}
+.lv.correct{outline:2px solid var(--good);outline-offset:1px}
+.lv .m{font-family:var(--f-mono);font-size:.75rem;text-align:right}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 13px;cursor:pointer;font-size:.9rem;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fb{font-size:.95rem;padding:10px 12px;border-radius:8px;background:var(--sunk)}
+.fb.ok{color:var(--good)}
+.fb.no{color:var(--bad)}
+
+/* syndrome matrix */
+.mx td:first-child{font-weight:600;min-width:180px}
+.mx td{min-width:150px}
+.mx .acts{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+
+/* checklist */
+.ck ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ck li label{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;font-size:.92rem;cursor:pointer;padding:6px 8px;border-radius:6px}
+.ck li label:hover{background:var(--sunk)}
+.ck input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent)}
+.score{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-size:.9rem}
+.meter{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+
+/* quiz + cases */
+.opts{display:grid;gap:7px}
+.opt{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;text-align:left;cursor:pointer;font-size:.93rem;display:grid;grid-template-columns:24px 1fr;gap:8px}
+.opt .k{font-family:var(--f-mono);color:var(--muted)}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 12%,var(--surface))}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--surface))}
+.opt[disabled]{cursor:default}
+.expl{font-size:.9rem;border-left:3px solid var(--line);padding:4px 0 4px 12px}
+.q{display:grid;gap:10px;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.q .qn{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+.q p.t{font-weight:600}
+.qlist{display:grid;gap:12px}
+.case{display:grid;gap:12px}
+.ear{display:grid;gap:14px;max-width:720px}
+.ear>*,.case>*,.q>*,.find>*{min-width:0}
+.stat{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
+.stat b{color:var(--ink);font-weight:500}
+
+/* player */
+#player{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom,0px)}
+#player .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.3fr) auto;gap:14px;align-items:center;padding-block:10px}
+#plName{display:block;font-weight:600;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plSub{display:block;font-size:.8rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plScope{width:100%;height:44px;display:block;border-radius:6px;background:var(--sunk)}
+.phase{font-family:var(--f-mono);font-size:.74rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap;min-width:118px;text-align:center}
+.phase.i{color:var(--insp);border-color:var(--insp)}
+.phase.e{color:var(--exp);border-color:var(--exp)}
+.phase.p{color:var(--accent);border-color:var(--accent)}
+.vol{display:flex;gap:6px;align-items:center;font-size:.8rem;color:var(--muted)}
+.vol input{width:90px;accent-color:var(--accent)}
+@media (max-width:700px){#player .wrap{grid-template-columns:auto minmax(0,1fr) auto}#plScope{grid-column:1/-1;grid-row:2}.vol{display:none}}
+
+footer{border-top:1px solid var(--line);padding-block:30px 20px;font-size:.86rem;color:var(--muted)}
+footer .wrap{display:grid;gap:10px}
+ol.refs{margin:0;padding-left:1.3em;display:grid;gap:5px;font-size:.9rem}
+
+/* ===== Yurak simulyatori: qo'shimcha uslublar ===== */
+:root{--sys:var(--insp);--dia:var(--exp)}
+.rib{fill:none;stroke:color-mix(in srgb,var(--muted) 45%,var(--sunk));stroke-width:8;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
+.cartl{fill:none;stroke:color-mix(in srgb,var(--accent) 22%,var(--surface));stroke-width:7;stroke-linecap:round;stroke-linejoin:round;opacity:.95}
+.stern{fill:color-mix(in srgb,var(--muted) 30%,var(--surface));stroke:var(--muted);stroke-width:1.1;opacity:.95}
+.clav{fill:none;stroke:color-mix(in srgb,var(--muted) 55%,var(--sunk));stroke-width:9;stroke-linecap:round}
+.musc{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.35}
+.nip{fill:none;stroke:var(--muted);stroke-width:1.3;opacity:.7}
+.valve ellipse{fill:var(--surface);stroke:var(--ink);stroke-width:1;opacity:.9}
+.valve text{font-family:var(--f-mono);font-size:7.5px;font-weight:600;fill:var(--ink);text-anchor:middle;pointer-events:none}
+.apring{fill:color-mix(in srgb,var(--good) 25%,transparent);stroke:var(--good);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:beat var(--T,.83s) ease-out infinite}
+.guide{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;opacity:.55;fill:none}
+.cart{fill:none;stroke:var(--muted);stroke-width:1.1;opacity:.5}
+.heart-rel{fill:color-mix(in srgb,var(--exp) 20%,transparent);stroke:var(--exp);stroke-width:1.6}
+.heart-abs{fill:color-mix(in srgb,var(--bad) 22%,transparent);stroke:var(--bad);stroke-width:1.2;stroke-dasharray:4 3}
+.heart-user{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-dasharray:5 4}
+.ptn{font-family:var(--f-mono);font-size:9px;font-weight:600;fill:var(--accent);pointer-events:none;text-anchor:middle}
+.pt.sel .ptn{fill:var(--on-accent)}
+.pmark{stroke:var(--surface);stroke-width:1.2}
+.pmark.aniq{fill:var(--insp)}.pmark.bogiq{fill:var(--exp)}.pmark.tomtoq{fill:var(--bad)}
+.ap-user{fill:var(--ink);stroke:var(--surface);stroke-width:1.5}
+.ap-true{fill:none;stroke:var(--good);stroke-width:2.2}
+#vpSvg.perc,#apSvg{cursor:crosshair}
+.hand{width:50px;height:62px;display:grid;place-items:center;--T:.83s}
+.hand i{display:block;width:40px;height:52px;border-radius:18px 18px 12px 12px;background:var(--accent-soft);border:1.5px solid var(--accent)}
+.hand.beat{animation:beat var(--T) ease-out infinite}
+.hand.beat.s{animation-name:beatS}
+.hand.beat.w{animation-name:beatW}
+.hand i.vib{animation:vib .07s linear infinite;--a:1.4px}
+.hand.none i{opacity:.45}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.09)}32%{transform:scale(1)}}
+@keyframes beatS{0%,100%{transform:scale(1) translateY(0)}14%{transform:scale(1.2) translateY(-4px)}40%{transform:scale(1) translateY(0)}}
+@keyframes beatW{0%,100%{transform:scale(1)}12%{transform:scale(1.035)}30%{transform:scale(1)}}
+.palm{gap:14px}
+.palm p{flex:1;min-width:0}
+.lv.pk{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 28px}
+.lv.pk.sel{outline:2px solid var(--accent);outline-offset:1px}
+.lv.show-bogiq .bar{background:var(--exp)}
+.lv.show-tomtoq .bar{background:var(--bad)}
+.lv.show-aniq .bar{background:var(--insp)}
+.phc{width:100%;height:70px;display:block;border-radius:6px;background:var(--sunk)}
+.cards .card .play{justify-self:start}
+.pcv{width:100%;height:150px;display:block;border-radius:8px;background:var(--sunk)}
+.gauge{width:100%;max-width:260px;display:block;margin:0 auto}
+.gauge .face{fill:var(--surface);stroke:var(--line);stroke-width:2}
+.gauge .tk{stroke:var(--ink);stroke-width:1}
+.gauge .tk.b{stroke-width:2}
+.gauge .tl{font-family:var(--f-mono);font-size:8.5px;fill:var(--muted);text-anchor:middle;dominant-baseline:middle}
+.gauge .ndl{stroke:var(--bad);stroke-width:2.6;stroke-linecap:round}
+.gauge .hub{fill:var(--ink)}
+.gauge .dig{font-family:var(--f-mono);font-size:15px;fill:var(--ink);text-anchor:middle}
+.gauge .unit{font-family:var(--f-mono);font-size:8px;fill:var(--muted);text-anchor:middle}
+.bp-ind{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:.88rem;justify-content:center}
+.bp-ind span{display:inline-flex;align-items:center;gap:7px}
+.dotl{width:12px;height:12px;border-radius:50%;background:var(--sunk);border:1px solid var(--line);transition:background .08s}
+.dotl.on{background:var(--good);border-color:var(--good)}
+.dotl.snd{background:var(--accent);border-color:var(--accent)}
+.bp-rec{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem;color:var(--muted);justify-content:center}
+.bp-rec b{color:var(--ink);font-weight:500}
+details.step{border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+details.step>summary{cursor:pointer;padding:9px 12px;font-weight:600;font-size:.93rem;list-style:none;display:flex;justify-content:space-between;gap:8px}
+details.step>summary::-webkit-details-marker{display:none}
+details.step>summary::after{content:"+";font-family:var(--f-mono);color:var(--muted)}
+details.step[open]>summary::after{content:"−"}
+details.step>div{padding:0 12px 12px;font-size:.93rem;display:grid;gap:8px}
+.steps{display:grid;gap:6px}
+.case-h{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.mxw td{min-width:170px;font-size:.88rem}
+.mxw td:first-child{min-width:110px;font-weight:600}
+.mxw .acts{display:flex;flex-direction:column;gap:6px;align-items:flex-start;margin-top:6px}
+.kbd{font-family:var(--f-mono);font-size:.78rem;background:var(--sunk);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+
+.pchart{width:100%;height:118px;display:block;border-radius:8px;background:var(--sunk)}
+.psense{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;font-size:.9rem;margin:0}
+.psense dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.psense dd{margin:0}
+.how{font-size:.88rem;border-left:3px solid var(--line);padding:2px 0 2px 10px;color:var(--muted)}
+</style>
+</head><body>
+<nav class="top" aria-label="Bo‘limlar"><div class="wrap">
+  <a class="brand" href="#top">Yurak</a>
+  <a href="#bemor">Virtual bemor</a>
+  <a href="#palp">Paypaslash</a>
+  <a href="#perk">Perkussiya</a>
+  <a href="#ausk">Tonlar</a>
+  <a href="#shovqin">Shovqinlar</a>
+  <a href="#puls">Puls</a>
+  <a href="#ab">Arterial bosim</a>
+  <a href="#nuqson">Nuqsonlar</a>
+  <a href="#quloq">Quloq mashqi</a>
+  <a href="#holat">Klinik holatlar</a>
+  <a href="#manba">Manbalar</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Ichki kasalliklar propedevtikasi · 10–14-mavzular</div>
+    <h1>Yurak <em>ko‘rigi, perkussiyasi</em> va auskultatsiyasi</h1>
+    <p class="lede">Yurak-qon tomir tizimini fizikal tekshirish bo‘yicha interaktiv mashg‘ulot. Virtual bemorni paypaslang, yurak chegaralarini perkussiya bilan toping, tonlar va shovqinlarni eshiting, arterial bosimni Korotkov usulida o‘lchang va mitral hamda aortal nuqsonlarni bir-biridan farqlashni o‘rganing.</p>
+    <p class="meta">Tuzuvchi: Asadbek Axmatkulov · ALVORA · Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs · 2026<br>KTR bo‘yicha 10–14-amaliy mashg‘ulotlar: yurak sohasini ko‘zdan kechirish va paypaslash, perkussiya va puls, auskultatsiya, revmatizm va mitral nuqsonlar, infeksion endokardit va aortal nuqsonlar.</p>
+  </div>
+  <div class="phono">
+    <div class="row" style="justify-content:space-between"><span class="eyebrow" style="color:var(--muted)">Fonokardiogramma · yurak cho‘qqisi</span><span class="mono muted" style="font-size:.78rem">72 / daq</span></div>
+    <canvas id="heroCv" aria-label="Me’yoriy fonokardiogramma: cho‘qqida I ton II tondan baland, sistola diastoladan qisqa"></canvas>
+    <div class="legend"><span><i style="background:var(--sys)"></i>Sistola</span><span><i style="background:var(--dia)"></i>Diastola</span><span><i style="background:var(--bad)"></i>Shovqin</span></div>
+    <div class="row"><button class="play big" type="button" data-play="lib:norm_apex"><span class="ic"></span>Me’yoriy tonlar</button><button class="play big" type="button" data-play="lib:bedana"><span class="ic"></span>“Bedana ritmi”</button></div>
+    <p class="muted" style="font-size:.82rem">Quloqchin bilan tinglang: yurak tonlari past chastotali, telefon karnayida yomon eshitiladi. Tovushlar brauzerda real vaqtda sintez qilinadi.</p>
+  </div>
+</div></header>
+
+<main>
+<!-- ============ 01 VIRTUAL BEMOR ============ -->
+<section id="bemor"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">01 · Virtual bemor</span><h2>Bemorni tekshiring: paypaslang, perkussiya qiling, eshiting</h2>
+  <p class="muted">Usulni va bemorni tanlang (17 ta bemor). Paypaslashda nuqtani bosing: qanday paypaslash, kaft ostida nima sezilishi va zarba hamda titrash uyqu arteriyasi pulsiga nisbatan qachon bo‘lishi grafikda ko‘rsatiladi. Perkussiyada ko‘krak qafasining istalgan joyini bosing: zarba tovushi yangraydi. Auskultatsiyada 5 ta asosiy nuqtani va shovqin tarqaladigan joylarni eshiting. Mashq rejimida bemor tashxisi yashiriladi, uni o‘zingiz topasiz.</p></div>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Tekshiruv usuli">
+      <button type="button" data-mode="palp" aria-pressed="false">Paypaslash</button>
+      <button type="button" data-mode="perk" aria-pressed="false">Perkussiya</button>
+      <button type="button" data-mode="ausk" aria-pressed="true">Auskultatsiya</button>
+    </div>
+    <select id="scSel" aria-label="Bemor holati"></select>
+    <label class="tog"><input type="checkbox" id="hideF"> Mashq rejimi: tashxisni yashirish</label>
+    <label class="tog"><input type="checkbox" id="valvF" checked> Yurak va qopqoqlar proyeksiyasi</label>
+  </div>
+  <div class="vp">
+    <div class="view"><div class="lbl"><span>Ko‘krak qafasi · old yuza</span><span id="vpHint">Nuqtani bosing</span></div>
+      <svg id="vpSvg" viewBox="0 0 320 330" role="group" aria-label="Ko‘krak qafasining old yuzasi"></svg>
+      <div class="legend" id="vpLeg" style="padding:4px 6px"></div>
+    </div>
+    <div class="find panel">
+      <h3 id="vpName"></h3>
+      <dl class="kv"><dt>Shikoyat</dt><dd id="vpSh"></dd><dt>Ko‘rik</dt><dd id="vpKo"></dd><dt>Puls</dt><dd id="vpPu"></dd><dt>AB</dt><dd id="vpAB"></dd></dl>
+      <div class="note"><b id="vpPtT">Tanlangan nuqta</b><span id="vpPt">Rasmdagi nuqtani tanlang.</span></div>
+      <div id="vpPalm" hidden style="display:grid;gap:10px">
+        <p class="how" id="vpHow"></p>
+        <div class="palm" style="align-items:flex-start"><div class="hand" id="vpHand" aria-hidden="true"><i></i></div><dl class="psense" id="vpSense"></dl></div>
+        <canvas class="pchart" id="vpPc" aria-label="Uyqu arteriyasi pulsi va kaft ostidagi zarba hamda titrashning vaqt bo‘yicha grafigi"></canvas>
+        <div class="legend"><span><i style="background:var(--accent)"></i>Uyqu arteriyasi pulsi</span><span><i style="background:var(--good)"></i>Kaft ostidagi zarba</span><span><i style="background:var(--bad)"></i>Titrash</span></div>
+        <p class="sc-info" id="vpPalmT"></p>
+      </div>
+      <p id="vpRes" class="sc-info"></p>
+      <div id="vpDx" hidden style="display:grid;gap:8px">
+        <label for="dxSel" class="eyebrow" style="color:var(--muted)">Tashxisingiz</label>
+        <select id="dxSel"></select>
+        <div class="btnrow"><button class="btn pri" id="dxChk" type="button">Tekshirish</button><button class="btn" id="dxNew" type="button">Yangi bemor</button><button class="btn" id="dxShow" type="button">Topilmalarni ko‘rsatish</button></div>
+        <div class="fb" id="dxFb" hidden></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 02 PAYPASLASH ============ -->
+<section id="palp"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">02 · Paypaslash</span><h2>Cho‘qqi turtkisi, yurak turtkisi va “mushuk xirillashi”</h2>
+  <p class="muted">Avval kaft bilan III–VI qovurg‘alar orasida taxminiy, so‘ng 2–3 barmoq uchi bilan aniq paypaslanadi. Ayollarda sut bezi yuqoriga va o‘ngga surib qo‘yiladi.</p></div>
+  <div class="grid2">
+    <div class="panel find">
+      <h3>Mashq: cho‘qqi turtkisi qayerda?</h3>
+      <p class="muted" style="font-size:.92rem">Bemorni tanlang va ko‘krak qafasida cho‘qqi turtkisi bo‘lishi kerak bo‘lgan joyni bosing. Dastur qaysi qovurg‘alararo oraliqni va o‘rta-o‘mrov chizig‘iga nisbatan masofani tanlaganingizni aytadi.</p>
+      <div class="controls" style="margin:0"><select id="apSel" aria-label="Bemor"></select><button class="btn" id="apShow" type="button">Javobni ko‘rsatish</button></div>
+      <div class="view"><svg id="apSvg" viewBox="0 0 320 330" role="img" aria-label="Cho‘qqi turtkisini topish mashqi"></svg></div>
+      <div class="fb" id="apFb">Ko‘krak qafasining kerakli joyini bosing.</div>
+    </div>
+    <div class="prose">
+      <div class="tbl"><table>
+        <thead><tr><th>Xususiyat</th><th>Me’yor</th><th>O‘zgarishi</th></tr></thead>
+        <tbody>
+          <tr><td>Joyi</td><td>V oraliq, chap o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida</td><td>Chapga: chap qorincha dilatatsiyasi. Chapga va pastga (VI–VII oraliq): aortal yetishmovchilik</td></tr>
+          <tr><td>Maydoni</td><td>1–2 sm²</td><td>Keng (tarqoq): dilatatsiya; chegaralangan: emfizema, semizlik</td></tr>
+          <tr><td>Balandligi</td><td>O‘rtacha</td><td>Baland: tireotoksikoz, isitma, dilatatsiya; past: semizlik, perikardda suyuqlik</td></tr>
+          <tr><td>Kuchi</td><td>O‘rtacha</td><td>Kuchaygan: gipertrofiya; susaygan: miokardit, perikardit</td></tr>
+          <tr><td>Rezistentligi</td><td>Elastik</td><td>Rezistent, “gumbazsimon”: aortal stenoz, arterial gipertenziya, aortal yetishmovchilik</td></tr>
+        </tbody></table></div>
+      <div class="note"><b>Eslab qoling</b>Cho‘qqi turtkisining 5 xususiyati: Joy, Maydon, Balandlik, Kuch, Rezistentlik. “Juda Mehribon Bemor Kamdan-kam Ranjiydi”.</div>
+    </div>
+  </div>
+  <div class="sub-h"><h3>“Mushuk xirillashi” va epigastral pulsatsiya</h3></div>
+  <div class="grid2">
+    <div class="tbl"><table>
+      <thead><tr><th>Joyi</th><th>Fazasi</th><th>Kasallik</th></tr></thead>
+      <tbody>
+        <tr><td>Yurak cho‘qqisi</td><td>Diastolik (presistolik)</td><td>Mitral stenoz</td></tr>
+        <tr><td>II oraliq, to‘shdan o‘ngda; bo‘yinga tarqaladi</td><td>Sistolik</td><td>Aortal stenoz</td></tr>
+        <tr><td>II oraliq, to‘shdan chapda</td><td>Sistolik</td><td>O‘pka arteriyasi stenozi</td></tr>
+        <tr><td>To‘sh chap chekkasi, III–IV oraliq</td><td>Sistolik</td><td>Qorinchalararo to‘siq nuqsoni</td></tr>
+        <tr><td>II oraliq, to‘shdan chapda</td><td>Sistolik-diastolik</td><td>Ochiq arterial (Botallov) yo‘l</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <p>“Mushuk xirillashi” har doim <b>organik</b> nuqson belgisi. Fazasini aniqlash uchun bir vaqtda uyqu arteriyasidagi puls paypaslanadi: pulsga mos titrash sistolik, pulsdan keyingi pauzaga mos titrash diastolik.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Epigastral pulsatsiya sababi</th><th>Belgisi</th></tr></thead>
+        <tbody>
+          <tr><td>O‘ng qorincha gipertrofiyasi</td><td>Barmoq uchiga uriladi, nafas olishda kuchayadi</td></tr>
+          <tr><td>Qorin aortasi</td><td>Kaft yuzasiga yuqoridan pastga uriladi, nafas olishda kamayadi</td></tr>
+          <tr><td>Jigar pulsatsiyasi</td><td>Butun jigar kengayib-torayadi: trikuspidal yetishmovchilik</td></tr>
+        </tbody></table></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 03 PERKUSSIYA ============ -->
+<section id="perk"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">03 · Perkussiya</span><h2>Yurak chegaralarini quloq bilan toping</h2>
+  <p class="muted">Plessimetr barmoq chegaraga parallel qo‘yiladi va aniq tovushdan to‘mtoq tovush tomon suriladi. Ketma-ketlik: o‘ng, yuqori, chap chegara. Har bir nuqtani bosing, tovush o‘zgargan birinchi joyni tanlab “Shu yerda chegara” tugmasini bosing. Uchala chegara topilgach, yurak konfiguratsiyasi chiziladi.</p></div>
+  <div class="topo">
+    <div class="view"><div class="lbl"><span>Nisbiy to‘mtoqlik</span><span id="pkHint"></span></div>
+      <svg id="pkSvg" viewBox="0 0 320 330" role="img" aria-label="Perkussiya chiziqlari va topilgan chegaralar"></svg>
+      <div class="legend" style="padding:4px 6px"><span><i style="background:var(--insp)"></i>Aniq o‘pka tovushi</span><span><i style="background:var(--exp)"></i>Bo‘g‘iqlashgan (nisbiy to‘mtoqlik)</span></div>
+    </div>
+    <div class="find">
+      <div class="controls" style="margin:0"><select id="pkSel" aria-label="Bemor"></select><label class="tog"><input type="checkbox" id="pkHide"> Bemorni yashirish</label></div>
+      <div class="seg" id="pkStep" role="group" aria-label="Chegara"><button type="button" data-st="r" aria-pressed="true">1. O‘ng</button><button type="button" data-st="u" aria-pressed="false">2. Yuqori</button><button type="button" data-st="l" aria-pressed="false">3. Chap</button></div>
+      <p class="muted" id="pkInst" style="font-size:.92rem"></p>
+      <div class="levels" id="pkLv"></div>
+      <div class="btnrow"><button class="btn pri" id="pkMark" type="button">Shu yerda chegara</button><button class="btn" id="pkChk" type="button">Tekshirish</button><button class="btn" id="pkReset" type="button">Qaytadan</button></div>
+      <div class="fb" id="pkFb" hidden></div>
+      <div class="panel" id="pkSum" hidden></div>
+    </div>
+  </div>
+  <div class="sub-h"><h3>Me’yoriy chegaralar va ularning siljishi</h3></div>
+  <div class="grid2">
+    <div class="tbl"><table>
+      <thead><tr><th>Chegara</th><th>Nisbiy to‘mtoqlik</th><th>Hosil qiluvchi qism</th><th>Mutlaq to‘mtoqlik</th></tr></thead>
+      <tbody>
+        <tr><td>O‘ng</td><td>IV oraliq, to‘sh o‘ng chekkasidan 1–1,5 sm tashqarida</td><td>O‘ng bo‘lmacha</td><td>To‘shning chap chekkasi</td></tr>
+        <tr><td>Yuqori</td><td>III qovurg‘a, chap to‘sh yoni chizig‘i</td><td>Chap bo‘lmacha quloqchasi, o‘pka arteriyasi konusi</td><td>IV qovurg‘a</td></tr>
+        <tr><td>Chap</td><td>V oraliq, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida</td><td>Chap qorincha</td><td>Nisbiydan 1–2 sm ichkarida</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <div class="note"><b>Eslab qoling</b>Nisbiy to‘mtoqlik “4-3-5”: o‘ng chegara IV oraliqda, yuqori III qovurg‘ada, chap V oraliqda. Ko‘ndalang o‘lcham 11–13 sm. Tomir tutami II oraliqda 5–6 sm.</div>
+      <p><b>Qaysi chegara siljisa, o‘sha kamera kattalashgan:</b> o‘ng chegara — o‘ng bo‘lmacha, yuqori — chap bo‘lmacha, chap — chap qorincha.</p>
+    </div>
+  </div>
+  <div class="tbl" style="margin-top:16px"><table>
+    <thead><tr><th>Nuqson</th><th>O‘ng</th><th>Yuqori</th><th>Chap</th><th>Konfiguratsiya</th><th>Tomir tutami</th></tr></thead>
+    <tbody>
+      <tr><td>Mitral stenoz</td><td>O‘ngga</td><td>Yuqoriga (II qovurg‘a)</td><td>O‘zgarmagan</td><td>Mitral</td><td>O‘zgarmagan</td></tr>
+      <tr><td>Mitral yetishmovchilik</td><td>Kech o‘ngga</td><td>Yuqoriga</td><td>Chapga</td><td>Mitral</td><td>O‘zgarmagan</td></tr>
+      <tr><td>Aortal stenoz</td><td>O‘zgarmagan</td><td>O‘zgarmagan</td><td>Chapga (o‘rtacha)</td><td>Aortal</td><td>Biroz kengaygan</td></tr>
+      <tr><td>Aortal yetishmovchilik</td><td>O‘zgarmagan</td><td>O‘zgarmagan</td><td>Chapga va pastga (keskin)</td><td>Aortal (“o‘tirgan o‘rdak”)</td><td>Kengaygan</td></tr>
+      <tr><td>Ekssudativ perikardit</td><td>O‘ngga</td><td>Yuqoriga</td><td>Chapga</td><td>Trapetsiyasimon</td><td>Kengaygan</td></tr>
+    </tbody></table></div>
+</div></section>
+
+<!-- ============ 04 TONLAR ============ -->
+<section id="ausk"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">04 · Auskultatsiya</span><h2>Eshitish nuqtalari va yurak tonlari</h2>
+  <p class="muted">Yurak bemor tik turgan, chalqancha va chap yonboshda yotgan holatlarda, nafas olib to‘xtaganda va nafas chiqarib to‘xtaganda eshitiladi. Past chastotali tovushlar (III, IV ton, mitral stenoz shovqini) uchun stetoskopning qo‘ng‘iroqsimon boshi, yuqori chastotalilar uchun membranasi ishlatiladi.</p></div>
+  <div class="grid2">
+    <div class="tbl"><table>
+      <thead><tr><th>№</th><th>Qopqoq</th><th>Eshitish nuqtasi</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Mitral</td><td>Yurak cho‘qqisi (V oraliq, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida)</td></tr>
+        <tr><td class="num">2</td><td>Aortal</td><td>II oraliq, to‘shdan o‘ngda</td></tr>
+        <tr><td class="num">3</td><td>O‘pka arteriyasi</td><td>II oraliq, to‘shdan chapda</td></tr>
+        <tr><td class="num">4</td><td>Trikuspidal</td><td>Xanjarsimon o‘simta asosi, biroz o‘ngroqda</td></tr>
+        <tr><td class="num">5</td><td>Aortal (qo‘shimcha)</td><td>Botkin-Erb nuqtasi: III–IV qovurg‘alar to‘shga birikkan joyda, chapda</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <div class="note"><b>Eslab qoling</b>Tartib: Mitral — Aorta — O‘pka — Trikuspidal — Botkin. “Mening Akam O‘qishga Tez Boradi”.</div>
+      <div class="tbl"><table>
+        <thead><tr><th>Belgi</th><th>I ton</th><th>II ton</th></tr></thead>
+        <tbody>
+          <tr><td>Qachon</td><td>Katta pauzadan keyin</td><td>Kichik pauzadan keyin</td></tr>
+          <tr><td>Qayerda baland</td><td>Cho‘qqi, xanjarsimon o‘simta</td><td>Yurak asosi (II oraliq)</td></tr>
+          <tr><td>Davomiyligi</td><td>0,09–0,12 s</td><td>0,05–0,07 s</td></tr>
+          <tr><td>Tembri</td><td>Pastroq</td><td>Yuqoriroq</td></tr>
+          <tr><td>Uyqu arteriyasi pulsi bilan</td><td>Mos keladi</td><td>Mos kelmaydi</td></tr>
+        </tbody></table></div>
+    </div>
+  </div>
+  <div class="sub-h"><h3>Tonlar va uch qismli ritmlar kutubxonasi</h3><span class="muted" style="font-size:.88rem">Kartochkadagi chizma: tovushning fonokardiogrammasi</span></div>
+  <div class="cards" id="libTon"></div>
+</div></section>
+
+<!-- ============ 05 SHOVQINLAR ============ -->
+<section id="shovqin"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">05 · Shovqinlar</span><h2>Shovqinni eshiting va tavsiflang</h2>
+  <p class="muted">Shovqin qon oqimi turbulent (uyurmali) bo‘lganda paydo bo‘ladi: teshik torayganda, qopqoq yetishmovchiligida qon teskari qaytganda, qon qovushqoqligi pasayganda yoki oqim tezlashganda.</p></div>
+  <div class="grid2">
+    <div class="prose">
+      <h3>Shovqinni tavsiflash rejasi</h3>
+      <ol>
+        <li><b>Fazasi:</b> sistolik yoki diastolik (uyqu arteriyasi pulsi bilan solishtiriladi)</li>
+        <li><b>Tonlar bilan munosabati:</b> tondan keyin boshlanadimi yoki uni “yutadimi”</li>
+        <li><b>Epitsentri:</b> eng yaxshi eshitiladigan nuqta</li>
+        <li><b>Tarqalishi:</b> qon oqimi yo‘nalishi bo‘yicha</li>
+        <li><b>Kuchi:</b> Levin shkalasi bo‘yicha 1–6 daraja</li>
+        <li><b>Shakli:</b> kuchayib boruvchi, pasayib boruvchi, rombsimon, lentasimon</li>
+        <li><b>Tembri:</b> dag‘al, arrasimon, puflovchi, g‘uvullovchi, musiqiy</li>
+        <li><b>Holat, nafas va yuklamaga bog‘liqligi</b></li>
+      </ol>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th>Belgi</th><th>Organik</th><th>Funksional</th></tr></thead>
+      <tbody>
+        <tr><td>Faza</td><td>Sistolik va diastolik</td><td>Ko‘pincha sistolik</td></tr>
+        <tr><td>Tembri</td><td>Dag‘al, arrasimon</td><td>Yumshoq, puflovchi</td></tr>
+        <tr><td>Davomiyligi</td><td>Uzun</td><td>Qisqa</td></tr>
+        <tr><td>Kuchi</td><td>Ko‘pincha baland</td><td>Sokin (1–2 daraja)</td></tr>
+        <tr><td>Tarqalishi</td><td>Keng</td><td>Cheklangan</td></tr>
+        <tr><td>Tonlar</td><td>O‘zgargan</td><td>O‘zgarmagan</td></tr>
+        <tr><td>Holat va yuklama</td><td>Kam o‘zgaradi</td><td>O‘zgaruvchan</td></tr>
+        <tr><td>“Mushuk xirillashi”</td><td>Bo‘lishi mumkin</td><td>Hech qachon</td></tr>
+      </tbody></table></div>
+  </div>
+  <div class="sub-h"><h3>Shovqinlar kutubxonasi</h3><span class="muted" style="font-size:.88rem">Har bir shovqin o‘z epitsentrida yangraydi</span></div>
+  <div class="cards" id="libMur"></div>
+  <div class="note" style="margin-top:16px;max-width:75ch"><b>Eslab qoling</b>Diastolik shovqinni yaxshi eshitish uchun: mitral stenozda bemor chap yonboshga yotadi (qo‘ng‘iroqsimon bosh, cho‘qqida); aortal yetishmovchilikda bemor oldinga egilib, nafas chiqarib to‘xtaydi (membrana, Botkin-Erb nuqtasida). Har qanday diastolik shovqin deyarli doim organik.</div>
+</div></section>
+
+<!-- ============ 06 PULS ============ -->
+<section id="puls"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">06 · Arterial puls</span><h2>Puls to‘lqini barmoq ostida qanday seziladi</h2>
+  <p class="muted">Puls turini tanlang. Grafikda bilak arteriyasidagi puls to‘lqini, ustidagi chiziqchalar esa yurak qisqarishlari. Doiracha barmoq ostidagi zarbani ko‘rsatadi.</p></div>
+  <div class="grid2">
+    <div class="panel find">
+      <div class="controls" style="margin:0"><select id="puSel" aria-label="Puls turi"></select><div class="hand" id="puHand" aria-hidden="true"><i></i></div></div>
+      <canvas id="puCv" class="pcv" aria-label="Puls to‘lqini grafigi"></canvas>
+      <div class="stat" id="puStat"></div>
+      <p id="puTxt" class="sc-info"></p>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th>Xususiyat</th><th>Me’yor</th><th>O‘zgarishi</th></tr></thead>
+      <tbody>
+        <tr><td>Simmetriyasi</td><td>Ikki qo‘lda bir xil</td><td>Pulsus differens: mitral stenoz (Popov-Savelyev belgisi), aorta anevrizmasi</td></tr>
+        <tr><td>Ritmi</td><td>Ritmik</td><td>Aritmik: ekstrasistoliya, bo‘lmachalar fibrillyatsiyasi</td></tr>
+        <tr><td>Soni</td><td>60–80 (60–90) / daq</td><td>Taxikardiya, bradikardiya</td></tr>
+        <tr><td>Tanqisligi</td><td>Yo‘q</td><td>Bo‘lmachalar fibrillyatsiyasi</td></tr>
+        <tr><td>To‘liqligi</td><td>Yaxshi to‘lgan</td><td>Kam to‘lgan: qon yo‘qotish, shok</td></tr>
+        <tr><td>Tarangligi</td><td>O‘rtacha</td><td>Qattiq (durus): gipertenziya; yumshoq (mollis)</td></tr>
+        <tr><td>Kattaligi</td><td>O‘rtacha</td><td>Katta: aortal yetishmovchilik; kichik, ipsimon: aortal stenoz, shok</td></tr>
+        <tr><td>Shakli</td><td>O‘rtacha</td><td>Tez va baland: aortal yetishmovchilik; sekin va kichik: aortal stenoz</td></tr>
+      </tbody></table></div>
+  </div>
+</div></section>
+
+<!-- ============ 07 ARTERIAL BOSIM ============ -->
+<section id="ab"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">07 · Arterial bosim</span><h2>Korotkov usulida bosimni o‘lchang</h2>
+  <p class="muted">Avval palpator usulda bilak arteriyasidagi puls yo‘qolguncha havo yuboring, so‘ng yana 20–30 mm sim. ust. qo‘shing. Havoni 2–3 mm sim. ust./s tezlikda chiqaring. Birinchi ton paydo bo‘lganda “Sistolik”, tonlar to‘liq yo‘qolganda “Diastolik” tugmasini bosing.</p></div>
+  <div class="grid2">
+    <div class="panel find">
+      <div class="controls" style="margin:0"><select id="bpSel" aria-label="Bemor"></select></div>
+      <svg class="gauge" id="bpG" viewBox="0 0 220 220" role="img" aria-label="Manometr"></svg>
+      <div class="bp-ind"><span><i class="dotl" id="bpPulse"></i>Bilak arteriyasida puls</span><span><i class="dotl" id="bpSnd"></i>Fonendoskopda ton <b id="bpPhL" class="mono" style="font-weight:500"></b></span></div>
+      <div class="btnrow" style="justify-content:center">
+        <button class="btn" id="bpPump" type="button">Havo yuborish +20</button>
+        <button class="btn pri" id="bpDefl" type="button">Havoni chiqarish</button>
+        <button class="btn" id="bpDump" type="button">To‘liq bo‘shatish</button>
+      </div>
+      <div class="btnrow" style="justify-content:center;align-items:center">
+        <span class="muted" style="font-size:.85rem">Tezlik:</span>
+        <div class="seg" id="bpRate" role="group" aria-label="Havo chiqarish tezligi"><button type="button" data-r="2" aria-pressed="false">2</button><button type="button" data-r="3" aria-pressed="true">3</button><button type="button" data-r="6" aria-pressed="false">6</button></div>
+        <span class="muted" style="font-size:.85rem">mm/s</span>
+      </div>
+      <div class="btnrow" style="justify-content:center">
+        <button class="btn" id="bpSys" type="button">Sistolik ✓</button>
+        <button class="btn" id="bpDia" type="button">Diastolik ✓</button>
+        <button class="btn pri" id="bpEval" type="button">Baholash</button>
+      </div>
+      <div class="bp-rec"><span>Sistolik: <b id="bpRS">—</b></span><span>Diastolik: <b id="bpRD">—</b></span></div>
+      <div class="btnrow" style="justify-content:center"><label class="tog"><input type="checkbox" id="bpDig" checked> Raqamli ko‘rsatkich</label><label class="tog"><input type="checkbox" id="bpPh"> Korotkov fazasini ko‘rsatish</label></div>
+      <div class="fb" id="bpFb" hidden></div>
+    </div>
+    <div class="prose">
+      <div class="tbl"><table>
+        <thead><tr><th>Faza</th><th>Tavsifi</th><th>Ahamiyati</th></tr></thead>
+        <tbody>
+          <tr><td class="num">I</td><td>Aniq, takrorlanuvchi tonlar paydo bo‘ladi</td><td>Sistolik bosim</td></tr>
+          <tr><td class="num">II</td><td>Tonlar shovqinsimon tus oladi</td><td>—</td></tr>
+          <tr><td class="num">III</td><td>Tonlar yana aniq va baland</td><td>—</td></tr>
+          <tr><td class="num">IV</td><td>Tonlar keskin bo‘g‘iqlashadi</td><td>“Cheksiz ton”da diastolik bosim</td></tr>
+          <tr><td class="num">V</td><td>Tonlar to‘liq yo‘qoladi</td><td>Kattalarda diastolik bosim</td></tr>
+        </tbody></table></div>
+      <div class="note warn"><b>Xato bo‘lmasin</b>“Auskultativ tanaffus”: I va II faza orasida tonlar vaqtincha yo‘qoladi. Manjeta palpator usulsiz to‘ldirilsa, tanaffusning pastki chegarasi sistolik bosim deb yozilib, bosim 20–40 mm sim. ust. ga past baholanadi.</div>
+      <div class="tbl"><table>
+        <thead><tr><th>Toifa (ESH 2023)</th><th>Sistolik</th><th></th><th>Diastolik</th></tr></thead>
+        <tbody>
+          <tr><td>Optimal</td><td class="num">&lt;120</td><td>va</td><td class="num">&lt;80</td></tr>
+          <tr><td>Me’yoriy</td><td class="num">120–129</td><td>va/yoki</td><td class="num">80–84</td></tr>
+          <tr><td>Yuqori me’yoriy</td><td class="num">130–139</td><td>va/yoki</td><td class="num">85–89</td></tr>
+          <tr><td>1-darajali gipertenziya</td><td class="num">140–159</td><td>va/yoki</td><td class="num">90–99</td></tr>
+          <tr><td>2-darajali gipertenziya</td><td class="num">160–179</td><td>va/yoki</td><td class="num">100–109</td></tr>
+          <tr><td>3-darajali gipertenziya</td><td class="num">≥180</td><td>va/yoki</td><td class="num">≥110</td></tr>
+          <tr><td>Izolyatsiyalangan sistolik</td><td class="num">≥140</td><td>va</td><td class="num">&lt;90</td></tr>
+        </tbody></table></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 08 NUQSONLAR ============ -->
+<section id="nuqson"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">08 · Orttirilgan nuqsonlar</span><h2>To‘rt nuqson, beshta usul: bitta jadvalda</h2>
+  <p class="muted">Jadvalni gorizontal suring. Auskultatsiya qatoridagi tugmalar shu nuqsonni epitsentrida va tarqalish joyida yangratadi.</p></div>
+  <div class="tbl mxw" id="mxTbl"></div>
+</div></section>
+
+<!-- ============ 09 QULOQ MASHQI ============ -->
+<section id="quloq"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">09 · Quloq mashqi</span><h2>Eshitib toping</h2>
+  <p class="muted">Tovush tasodifiy tanlanadi. Tinglang va to‘g‘ri javobni belgilang. Kerak bo‘lsa, qayta eshiting.</p></div>
+  <div class="ear" id="ear"></div>
+</div></section>
+
+<!-- ============ 10 KLINIK HOLATLAR ============ -->
+<section id="holat"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">10 · Klinik holatlar</span><h2>Bemor yonida</h2>
+  <p class="muted">Har bir holatda bosqichlarni ketma-ket oching, auskultatsiyada nuqtalarni eshiting va tashxisni tanlang.</p></div>
+  <div class="qlist" id="cases"></div>
+</div></section>
+
+<!-- ============ MANBALAR ============ -->
+<section id="manba"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Manbalar</span><h2>Adabiyotlar</h2></div>
+  <ol class="refs">
+    <li>Axmatkulov A. Ichki kasalliklar propedevtikasi: mukammal qo‘llanma, 10–14-mavzular. ALVORA, 2026.</li>
+    <li>Gadayev A.G., Karimov M.Sh., Axmedov X.S. Ichki kasalliklar propedevtikasi. Toshkent: Muharrir, 2012.</li>
+    <li>Bickley L.S., Szilagyi P.G., Hoffman R.M., Soriano R.P. Bates’ Guide to Physical Examination and History Taking. 13th ed. Wolters Kluwer, 2021.</li>
+    <li>ESC/EACTS Scientific Document Group. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. European Heart Journal, 2025.</li>
+    <li>Mancia G., Kreutz R., Brunström M. va boshq. 2023 ESH Guidelines for the management of arterial hypertension. Journal of Hypertension, 2023;41(12):1874–2071.</li>
+  </ol>
+  <p class="muted" style="font-size:.88rem;margin-top:14px;max-width:75ch">Tovushlar haqiqiy yozuv emas: ular Web Audio API yordamida tonlar va shovqinlarning fizik tavsifi (chastota, davomiylik, shakl, faza) asosida sintez qilingan. O‘qitish maqsadida xususiyatlar biroz bo‘rttirilgan. Haqiqiy bemorni eshitish va o‘qituvchi tushuntirishining o‘rnini bosmaydi.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>MedAtlas by ALVORA · Yurak fizikal tekshiruvi simulyatori</p>
+  <p>© 2026 Asadbek Axmatkulov · TDTU, 2-son Davolash ishi fakulteti</p>
+</div></footer>
+
+<div id="player" hidden><div class="wrap">
+  <button class="play on" id="plStop" type="button" aria-label="To‘xtatish"><span class="ic"></span>To‘xtatish</button>
+  <div style="min-width:0"><b id="plName"></b><span id="plSub"></span></div>
+  <canvas id="plScope" aria-hidden="true"></canvas>
+  <div style="display:flex;gap:10px;align-items:center"><span class="phase" id="plPhase">—</span><label class="vol">Ovoz <input type="range" id="vol" min="0" max="1.5" step="0.05" value="0.9"></label></div>
+</div></div>
+<script>
+(function(){
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const R=(a,b)=>a+Math.random()*(b-a);
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* =========================================================
+   AUDIO ENGINE (Web Audio API sintezi)
+   ========================================================= */
+const AU={ctx:null,master:null,an:null,noise:null,vol:0.9};
+function ctx(){
+  if(!AU.ctx){
+    const C=window.AudioContext||window.webkitAudioContext; if(!C) return null;
+    const c=new C(); AU.ctx=c;
+    const m=c.createGain(); m.gain.value=AU.vol;
+    const comp=c.createDynamicsCompressor(); comp.threshold.value=-14; comp.knee.value=8; comp.ratio.value=4; comp.attack.value=.002; comp.release.value=.12;
+    const an=c.createAnalyser(); an.fftSize=1024;
+    m.connect(comp); comp.connect(an); an.connect(c.destination);
+    AU.master=m; AU.an=an;
+    const len=c.sampleRate*3, b=c.createBuffer(1,len,c.sampleRate), d=b.getChannelData(0);
+    for(let i=0;i<len;i++) d[i]=Math.random()*2-1;
+    AU.noise=b;
+  }
+  if(AU.ctx.state==="suspended") AU.ctx.resume();
+  return AU.ctx;
+}
+window.__heart={AU};
+let V=null, playBtn=null;
+function voice(){
+  stop(true);
+  const c=ctx(); const out=c.createGain(); out.gain.value=1; out.connect(AU.master);
+  V={c,out,nodes:[],t0:c.currentTime+0.08,tl:[],end:0,breath:null};
+  return V;
+}
+function stop(keepPlayer){
+  if(V){
+    const v=V; V=null; const t=v.c.currentTime;
+    try{v.out.gain.cancelScheduledValues(t); v.out.gain.setValueAtTime(v.out.gain.value,t); v.out.gain.linearRampToValueAtTime(0,t+.06);}catch(e){}
+    setTimeout(()=>{v.nodes.forEach(n=>{try{n.stop()}catch(e){}}); try{v.out.disconnect()}catch(e){}},180);
+  }
+  if(playBtn){playBtn.classList.remove("on"); playBtn=null;}
+  if(!keepPlayer) $("#player").hidden=true;
+}
+function nz(v,t,d){const s=v.c.createBufferSource(); s.buffer=AU.noise; s.loop=true; s.start(t,Math.random()*2); s.stop(t+d+.1); v.nodes.push(s); return s;}
+function osc(v,type,f,t,d){const o=v.c.createOscillator(); o.type=type; o.frequency.setValueAtTime(f,t); o.start(t); o.stop(t+d+.05); v.nodes.push(o); return o;}
+function filt(v,node,list){let n=node; for(const [type,f,q,g] of list){const b=v.c.createBiquadFilter(); b.type=type; b.frequency.value=f; if(q!=null) b.Q.value=q; if(g!=null) b.gain.value=g; n.connect(b); n=b;} return n;}
+function gn(v,node,val){const g=v.c.createGain(); g.gain.value=val||0; node.connect(g); return g;}
+function ramp(p,pts){p.setValueAtTime(pts[0][1],pts[0][0]); let last=pts[0][0]; for(let i=1;i<pts.length;i++){const t=Math.max(pts[i][0],last+1e-4); p.linearRampToValueAtTime(pts[i][1],t); last=t;}}
+
+/* ---- Yurak tonlari ---- */
+const TK={
+  s1:{f:52,d:.10,h:[1,.5,.22],nz:.35,nf:190},
+  clap:{f:70,d:.075,h:[1,.75,.5],nz:.75,nf:460},
+  s2:{f:80,d:.06,h:[1,.6,.3],nz:.42,nf:320},
+  metal:{f:96,d:.07,h:[1,.85,.65],nz:.7,nf:760},
+  s3:{f:38,d:.09,h:[1,.35,.1],nz:.12,nf:100},
+  s4:{f:35,d:.08,h:[1,.35,.1],nz:.12,nf:100},
+  os:{f:125,d:.035,h:[1,.65,.35],nz:.65,nf:640},
+  ej:{f:135,d:.03,h:[1,.6,.3],nz:.6,nf:720},
+  muf:{f:46,d:.09,h:[1,.3,.08],nz:.15,nf:150}
+};
+function tone(v,t,k,a){
+  if(!(a>0)) return; const p=TK[k]; const mult=[1,2.03,3.1];
+  p.h.forEach((ha,i)=>{ if(!ha) return; const f=p.f*mult[i];
+    const o=osc(v,"sine",f,t,p.d*1.5); o.frequency.exponentialRampToValueAtTime(f*.82,t+p.d);
+    const g=v.c.createGain(); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(a*ha*.55,t+.006); g.gain.exponentialRampToValueAtTime(.0004,t+p.d*1.4);
+    o.connect(g); g.connect(v.out); });
+  const n=nz(v,t,p.d); const b=filt(v,n,[["bandpass",p.nf,.9]]); const g=gn(v,b,0);
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(a*p.nz*.6,t+.003); g.gain.exponentialRampToValueAtTime(.0004,t+p.d*.8); g.connect(v.out);
+}
+
+/* ---- Shovqinlar ---- */
+function nzMur(v,t0,t1,filters,pts,am){
+  const n=nz(v,t0,t1-t0+.05); const out=filt(v,n,filters); const g=gn(v,out,0);
+  if(am){
+    const lfo=osc(v,am.type||"sine",am.f,t0,t1-t0+.05), lg=v.c.createGain(); lg.gain.value=am.d; lfo.connect(lg);
+    const mg=v.c.createGain(); mg.gain.value=1-am.d; lg.connect(mg.gain); g.connect(mg); mg.connect(v.out);
+  } else g.connect(v.out);
+  ramp(g.gain,pts);
+}
+const MUR={
+  mr(v,b,a){ nzMur(v,b.t1,b.t2+.02,[["highpass",160,.7],["bandpass",430,.8],["peaking",650,1,4]],[[b.t1,0],[b.t1+.025,a*.9],[b.t2-.04,a*.75],[b.t2+.012,0]]); },
+  tr(v,b,a){ const k=b.insp?1.7:.75; nzMur(v,b.t1,b.t2+.02,[["highpass",130,.7],["bandpass",320,.8]],[[b.t1,0],[b.t1+.03,a*.8*k],[b.t2-.04,a*.65*k],[b.t2+.012,0]]); },
+  as(v,b,a){ const s=b.t1+.07, e=b.t2-.035, m=s+(e-s)*.45; nzMur(v,s,e,[["highpass",120,.7],["bandpass",300,.7],["peaking",180,1.2,5]],[[s,0],[m,a],[e,0]],{f:42,d:.45,type:"sawtooth"}); },
+  late(v,b,a){ const s=b.t1+b.sys*.52, e=b.t2+.01; nzMur(v,s,e,[["highpass",170,.7],["bandpass",470,.8]],[[s,0],[s+.03,a*.55],[b.t2-.015,a],[e,0]]); },
+  func(v,b,a){ const s=b.t1+.06, e=s+b.sys*.5, m=s+(e-s)*.4; nzMur(v,s,e,[["highpass",120,.7],["bandpass",240,1]],[[s,0],[m,a*.7],[e,0]]); },
+  ar(v,b,a){ const s=b.t2+.008, e=b.t2+b.dia*.72; nzMur(v,s,e,[["highpass",300,.7],["bandpass",700,.7],["peaking",1000,1,3]],[[s,0],[s+.02,a*.75],[e,0]]); },
+  ms(v,b,a,rh){ a*=2.2; const s=b.t2+.11, e=b.next+.005; const pts=[[s,0],[s+.04,a*.9],[s+b.dia*.45,a*.3]];
+    if(rh!=="af") pts.push([b.next-.2,a*.3],[b.next-.015,a*1.05],[b.next,0]); else pts.push([s+b.dia*.75,0],[e,0]);
+    nzMur(v,s,e,[["lowpass",210,.7],["bandpass",95,.9],["peaking",140,1.2,6]],pts,{f:24,d:.4}); },
+  flint(v,b,a,rh){ if(rh==="af") return; const s=b.next-.2, e=b.next; nzMur(v,s,e,[["lowpass",190,.7],["bandpass",100,.9]],[[s,0],[e-.02,a*2],[e,0]],{f:22,d:.4}); },
+  fr(v,b,a){
+    const s0=b.t1-.12, e0=b.t2+.22; const n=nz(v,s0,e0-s0);
+    const bp=v.c.createBiquadFilter(); bp.type="bandpass"; bp.Q.value=1.5; bp.frequency.value=500;
+    const hp=v.c.createBiquadFilter(); hp.type="highpass"; hp.frequency.value=220;
+    n.connect(hp); hp.connect(bp); const g=gn(v,bp,0); g.connect(v.out); g.gain.setValueAtTime(0,s0);
+    let last=s0;
+    for(const [x,y] of [[b.t1-.11,b.t1-.03],[b.t1+.06,b.t2-.06],[b.t2+.06,b.t2+.2]]){ let t=x;
+      while(t<y){ const d=R(.012,.03), amp=a*R(.45,1.1); bp.frequency.setValueAtTime(R(300,950),t);
+        g.gain.setValueAtTime(0,Math.max(t,last)); g.gain.linearRampToValueAtTime(amp,t+.004); g.gain.linearRampToValueAtTime(0,t+d);
+        last=t+d; t+=d+R(.004,.02); } }
+  }
+};
+const sysOf=T=>Math.min(.42,.16+.2*Math.sqrt(T));
+const BRC=4.2, BRI=1.7; /* nafas sikli: 4,2 s, shundan 1,7 s nafas olish */
+
+function playHeart(sp,o){
+  const c=ctx(); if(!c) return noAudio();
+  o=o||{};
+  const v=voice();
+  const hr=sp.hr||72, rh=sp.rh||"reg", dur=o.dur||9.5;
+  const insp=t=>((t-v.t0)%BRC)<BRI;
+  const beats=[]; let t=v.t0+.12; const T0=60/hr;
+  while(t<v.t0+dur){
+    let T=T0, a1=1;
+    if(rh==="af"){ T=T0*R(.6,1.4); a1=R(.55,1.3); }
+    if(rh==="avb"){ a1=R(.6,1.1); if(Math.random()<.3) a1=2.1; }
+    beats.push({t1:t,T,a1}); t+=T;
+  }
+  for(const b of beats){
+    b.sys=sysOf(b.T); if(rh==="af") b.sys=Math.min(b.sys,b.T*.55);
+    b.t2=b.t1+b.sys; b.next=b.t1+b.T; b.dia=b.T-b.sys; b.insp=insp(b.t2);
+    v.tl.push([b.t1,b.t2,"s"],[b.t2,b.next,"d"]);
+    if(sp.s4 && rh!=="af") tone(v,b.t1-.09,"s4",sp.s4);
+    tone(v,b.t1,(sp.clap||b.a1>2)?"clap":(sp.muf?"muf":"s1"),(sp.s1??1)*b.a1);
+    if(sp.ej) tone(v,b.t1+.06,"ej",sp.ej);
+    if(sp.click) tone(v,b.t1+b.sys*.48,"ej",sp.click);
+    let gap=0; if(sp.split==="phys") gap=b.insp?.045:0; else if(sp.split==="fixed") gap=.055;
+    const s2=sp.s2??.6, k2=sp.metal?"metal":(sp.muf?"muf":"s2");
+    if(gap>0){ tone(v,b.t2,k2,s2*.78); tone(v,b.t2+gap,"s2",s2*.62); } else tone(v,b.t2,k2,s2);
+    if(sp.os) tone(v,b.t2+.09,"os",sp.os);
+    if(sp.s3) tone(v,b.t2+.15,"s3",sp.s3);
+    for(const [k,a] of (sp.mur||[])) if(MUR[k]) MUR[k](v,b,a,rh);
+  }
+  if(sp.breath) v.breath=true;
+  v.end=beats[beats.length-1].next;
+  return v;
+}
+
+/* ---- Perkutor tovushlar ---- */
+const PK={aniq:{f:118,d:.24,a:.95,lp:420},bogiq:{f:175,d:.11,a:.55,lp:620},tomtoq:{f:250,d:.045,a:.32,lp:950}};
+const PKN={aniq:"Aniq o‘pka tovushi",bogiq:"Bo‘g‘iqlashgan tovush (nisbiy to‘mtoqlik)",tomtoq:"To‘mtoq tovush"};
+function percTone(v,t,kind){
+  const p=PK[kind];
+  const o=osc(v,"sine",p.f,t,p.d*1.4); o.frequency.exponentialRampToValueAtTime(p.f*.9,t+p.d);
+  const g=v.c.createGain(); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(p.a*.5,t+.004); g.gain.exponentialRampToValueAtTime(.0005,t+p.d*1.3); o.connect(g); g.connect(v.out);
+  const n=nz(v,t,p.d*1.2), f=filt(v,n,[["lowpass",p.lp,.7],["highpass",60,.7]]), gg=gn(v,f,0);
+  gg.gain.setValueAtTime(0,t); gg.gain.linearRampToValueAtTime(p.a,t+.003); gg.gain.exponentialRampToValueAtTime(.0005,t+p.d); gg.connect(v.out);
+  const n2=nz(v,t,.02), f2=filt(v,n2,[["bandpass",2200,1]]), g2=gn(v,f2,0);
+  g2.gain.setValueAtTime(0,t); g2.gain.linearRampToValueAtTime(.22,t+.001); g2.gain.exponentialRampToValueAtTime(.0005,t+.015); g2.connect(v.out);
+}
+function playPerc(kind){
+  const c=ctx(); if(!c) return noAudio(); const v=voice();
+  for(let k=0;k<2;k++){ const t=v.t0+k*.42; percTone(v,t,kind); v.tl.push([t,t+.2,"p"]); }
+  v.end=v.t0+.9; return v;
+}
+function noAudio(){ const p=$("#player"); p.hidden=false; $("#plName").textContent="Tovush ijro etilmadi"; $("#plSub").textContent="Brauzer Web Audio API ni qo‘llab-quvvatlamaydi. Chrome, Safari yoki Firefox ning yangi versiyasida oching."; return null; }
+
+/* ---- Pleyer va ossillogramma ---- */
+const hist=[]; let raf=0;
+function startPlayer(t,s){
+  const p=$("#player"); p.hidden=false; $("#plName").textContent=t; $("#plSub").textContent=s;
+  hist.length=0; cancelAnimationFrame(raf); raf=requestAnimationFrame(loop);
+}
+const PH={s:"Sistola",d:"Diastola",p:"Zarba","":"Pauza"};
+function loop(){
+  if(!V){ drawScope(); return; }
+  const an=AU.an, buf=new Float32Array(an.fftSize); an.getFloatTimeDomainData(buf);
+  let pk=0; for(let i=0;i<buf.length;i++){const x=Math.abs(buf[i]); if(x>pk) pk=x;}
+  const t=AU.ctx.currentTime; let ph="";
+  for(const [a,b,k] of V.tl) if(t>=a&&t<=b){ph=k;break;}
+  hist.push([pk,ph]); if(hist.length>600) hist.shift();
+  const el=$("#plPhase");
+  let lab=t<V.t0?"…":PH[ph];
+  if(V.breath && t>=V.t0) lab+=((t-V.t0)%BRC)<BRI?" · nafas olish":" · nafas chiqarish";
+  el.textContent=lab; el.className="phase "+(ph==="s"?"i":ph==="d"?"e":ph);
+  drawScope();
+  if(t>V.end+.35){ stop(true); el.textContent="Tugadi"; el.className="phase"; return; }
+  raf=requestAnimationFrame(loop);
+}
+function drawScope(){
+  const cv=$("#plScope"); const dpr=window.devicePixelRatio||1; const w=cv.clientWidth, h=cv.clientHeight; if(!w) return;
+  if(cv.width!==Math.round(w*dpr)){cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr);}
+  const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+  const col={s:css("--sys"),d:css("--dia"),p:css("--accent"),"":css("--muted")};
+  const n=Math.floor(w/2); const start=Math.max(0,hist.length-n);
+  let mx=.05; for(let i=start;i<hist.length;i++) mx=Math.max(mx,hist[i][0]);
+  for(let i=start;i<hist.length;i++){
+    const [pk,ph]=hist[i]; const a=Math.sqrt(pk/mx)*(h/2-3);
+    x.fillStyle=col[ph]||col[""]; x.fillRect((i-start)*2,h/2-a,1.4,Math.max(1,a*2));
+  }
+}
+$("#plStop").addEventListener("click",()=>stop());
+$("#vol").addEventListener("input",e=>{AU.vol=+e.target.value; if(AU.master) AU.master.gain.value=AU.vol;});
+
+/* ---- Statik fonokardiogramma ---- */
+function drawPhono(cv,sp,opt){
+  opt=opt||{};
+  const dpr=window.devicePixelRatio||1, w=cv.clientWidth, h=cv.clientHeight; if(!w) return;
+  cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr);
+  const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+  const hr=sp.hr||72, T=60/hr, sys=sysOf(T), dia=T-sys, cyc=opt.cycles||2, span=T*cyc+.12;
+  const X=t=>6+(t/span)*(w-12), mid=h*.52, H=h*.42;
+  const cS=css("--sys"), cD=css("--dia"), cT=css("--ink"), cM=css("--bad"), cL=css("--line"), cMu=css("--muted");
+  let seed=11; const rnd=()=>{seed=(seed*16807)%2147483647; return seed/2147483647;};
+  for(let k=0;k<cyc;k++){ const t1=.06+k*T;
+    x.globalAlpha=.13; x.fillStyle=cS; x.fillRect(X(t1),0,X(t1+sys)-X(t1),h);
+    x.fillStyle=cD; x.fillRect(X(t1+sys),0,X(t1+T)-X(t1+sys),h); x.globalAlpha=1; }
+  x.fillStyle=cL; x.fillRect(0,mid,w,1);
+  const lab=(t,s)=>{ x.fillStyle=cMu; x.font="9px "+css("--f-mono"); x.textAlign="center"; x.fillText(s,X(t),h-3); };
+  const spike=(t,a,s,wide)=>{ if(!(a>0)) return; x.strokeStyle=cT; x.lineWidth=1.2; const n=wide?7:5;
+    for(let i=0;i<n;i++){ const xx=X(t)+i*1.5, hh=Math.min(1.25,a)*H*(1-i/n)*(i%2?.7:1); x.beginPath(); x.moveTo(xx,mid-hh); x.lineTo(xx,mid+hh); x.stroke(); }
+    if(s) lab(t+.01,s); };
+  const env=(t0,t1,f)=>{ x.strokeStyle=cM; x.lineWidth=1; x.globalAlpha=.85;
+    for(let px=X(t0);px<=X(t1);px+=1.6){ const t=t0+(px-X(t0))/(X(t1)-X(t0)||1)*(t1-t0); const e=f(t); if(e<=0) continue; const hh=e*H*.8*(.45+.55*rnd());
+      x.beginPath(); x.moveTo(px,mid-hh); x.lineTo(px,mid+hh); x.stroke(); } x.globalAlpha=1; };
+  const lin=(pts)=>t=>{ for(let i=1;i<pts.length;i++){ const [a,va]=pts[i-1],[b,vb]=pts[i]; if(t>=a&&t<=b) return va+(vb-va)*(t-a)/((b-a)||1); } return 0; };
+  for(let k=0;k<cyc;k++){
+    const t1=.06+k*T, t2=t1+sys, nx=t1+T, b={t1,t2,next:nx,sys,dia};
+    for(const [m,a0] of (sp.mur||[])){ const a=Math.min(1.1,a0);
+      if(m==="mr"||m==="tr") env(t1,t2,lin([[t1,0],[t1+.025,a*.9],[t2-.04,a*.75],[t2,0]]));
+      if(m==="as"){ const s=t1+.07,e=t2-.035; env(s,e,lin([[s,0],[s+(e-s)*.45,a],[e,0]])); }
+      if(m==="late"){ const s=t1+sys*.52; env(s,t2,lin([[s,0],[s+.03,a*.55],[t2-.015,a],[t2,0]])); }
+      if(m==="func"){ const s=t1+.06,e=s+sys*.5; env(s,e,lin([[s,0],[s+(e-s)*.4,a*.7],[e,0]])); }
+      if(m==="ar"){ const s=t2+.008,e=t2+dia*.72; env(s,e,lin([[s,0],[s+.02,a*.75],[e,0]])); }
+      if(m==="ms"){ const s=t2+.11; env(s,nx,lin([[s,0],[s+.04,a*.8],[s+dia*.45,a*.3],[nx-.2,a*.3],[nx-.015,a*.95],[nx,0]])); }
+      if(m==="flint"){ const s=nx-.2; env(s,nx,lin([[s,0],[nx-.02,a*.8],[nx,0]])); }
+      if(m==="fr"){ for(const [p,q] of [[t1-.11,t1-.03],[t1+.06,t2-.06],[t2+.06,t2+.2]]) env(p,q,()=>a*.75); }
+    }
+    if(sp.s4) spike(t1-.09,sp.s4*.6,"IV");
+    spike(t1,(sp.s1??1)*.85,"I",true);
+    if(sp.ej) spike(t1+.06,sp.ej*.6,"K");
+    if(sp.click) spike(t1+sys*.48,sp.click*.6,"K");
+    const s2=(sp.s2??.6)*.85;
+    if(sp.split) { spike(t2,s2*.8,""); spike(t2+(sp.split==="fixed"?.055:.045),s2*.62,""); lab(t2+.025,"II A₂P₂"); }
+    else spike(t2,s2,"II");
+    if(sp.os) spike(t2+.09,sp.os*.65,"OT");
+    if(sp.s3) spike(t2+.15,sp.s3*.6,"III");
+  }
+}
+
+/* =========================================================
+   GEOMETRIYA: anatomik ko‘krak qafasi
+   x — o‘rta chiziqdan sm (+ bemorning chap tomoni), y — bo‘yinturuq o‘ymasidan pastga sm.
+   Joylashuv qovurg‘a sathi bilan beriladi: L = 3 — III qovurg‘a, L = 3,5 — III qovurg‘alararo oraliq.
+   Old qovurg‘alar: yuqorilari to‘sh tomon pastga og‘adi, V–VII qovurg‘a tog‘aylari to‘sh tomon ko‘tariladi.
+   ========================================================= */
+const SCL=8.5, OX=160, OY=50;
+const SX=1.9;                       /* to‘sh tanasining yarim kengligi, sm */
+const RIBX=[SX,9.5,13.5];           /* to‘sh chekkasi, o‘rta-o‘mrov, oldingi qo‘ltiq osti chiziqlari */
+const RIBY=[null,[2,1.5,.9],[5,4.2,3],[7.8,6.8,5.2],[10.3,9.4,7.4],[12.6,12,9.8],[14.6,14.8,12.2],[16.3,17.6,14.8]];
+const CART=[0,1.1,1.5,2.3,3.2,4.4,6,7.6]; /* qovurg‘a tog‘ayining to‘sh chekkasidan uzunligi, sm */
+function ribY(k,x){
+  x=Math.abs(x); if(k<1) return 0; if(k>7) return ribY(7,x)+(k-7)*(ribY(7,x)-ribY(6,x));
+  const [y0,y1,y2]=RIBY[k]; if(x<=SX) return y0; const [x0,x1,x2]=RIBX;
+  return y0*((x-x1)*(x-x2))/((x0-x1)*(x0-x2))+y1*((x-x0)*(x-x2))/((x1-x0)*(x1-x2))+y2*((x-x0)*(x-x1))/((x2-x0)*(x2-x1));
+}
+function Ly(L,x){ if(L<0) return L*2; if(L<1) return ribY(1,x)*L; const k=Math.floor(L), f=L-k; return ribY(k,x)+(ribY(k+1,x)-ribY(k,x))*f; }
+const PX=x=>OX+x*SCL;
+const PY=(L,x)=>OY+Ly(L,x||0)*SCL;
+const toPx=pts=>pts.map(([x,L])=>[PX(x),PY(L,x)]);
+function fromPx(px,py){
+  const x=(px-OX)/SCL, y=(py-OY)/SCL;
+  if(y<0) return {x,L:y/2,y};
+  if(y<ribY(1,x)) return {x,L:y/Math.max(ribY(1,x),.1),y};
+  for(let k=1;k<=9;k++){ const a=ribY(k,x), b=ribY(k+1,x); if(y<=b) return {x,L:k+(y-a)/(b-a),y}; }
+  return {x,L:10,y};
+}
+const costalY=x=>{ x=Math.min(Math.abs(x),13.6); return 16.4+x*.38+x*x*.012; };   /* qovurg‘a ravog‘i */
+function smooth(pts){
+  const n=pts.length; let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for(let i=0;i<n;i++){ const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    d+=`C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`; }
+  return d+"Z";
+}
+function inPoly(p,poly){ let c=false; for(let i=0,j=poly.length-1;i<poly.length;j=i++){ const [xi,yi]=poly[i],[xj,yj]=poly[j]; if(((yi>p[1])!==(yj>p[1])) && (p[0]<(xj-xi)*(p[1]-yi)/(yj-yi)+xi)) c=!c; } return c; }
+/* Nisbiy to‘mtoqlik konturi */
+function relPts(g){
+  const bw=g.bw/2, up=g.up, r=g.r, l=g.l, aL=g.aL;
+  const waist={n:[4.3,up+.62],flat:[5,up+.85],deep:[3.6,up+.78],trap:[6,up+1]}[g.waist];
+  const pts=[[-bw,1.7],[bw,1.7]];
+  if(up>2.3) pts.push([bw,up-.15],[Math.max(3,bw+.25),up]); else pts.push([bw+.7,up+.12]);
+  pts.push(waist,[l-1.3,aL-.85],[l,aL],[l-1.7,aL+.28],[.4,Math.max(aL+.42,5.95)],[r+.35,5.8],[r,4.5],[r+(g.waist==="trap"?.25:.45),3.55],[-bw,Math.max(2.9,up-.1)]);
+  return pts;
+}
+/* Mutlaq to‘mtoqlik konturi */
+function absPts(g){
+  const ar=g.absR??SX, au=g.absU??(g.up+1), l=g.l, aL=g.aL;
+  return [[ar,au],[ar+(l-ar)*.45,au+.25],[l-1.6,aL-.05],[l-2.3,aL+.25],[Math.max(ar,.4),Math.max(aL+.4,5.95)],[ar-.1,5.5]];
+}
+const RN=["","I","II","III","IV","V","VI","VII"];
+function ribPath(k,sd,x0,x1){ let d=""; for(let x=x0;x<=x1+1e-6;x+=.35){ d+=(d?"L":"M")+PX(sd*x).toFixed(1)+","+(OY+ribY(k,x)*SCL).toFixed(1); } return d; }
+function chestSVG(){
+  const P=(x,y)=>`${PX(x).toFixed(1)},${(OY+y*SCL).toFixed(1)}`;
+  /* tana: bo‘yin, yelkalar, yon devorlar */
+  let s=`<path class="body-fill" d="M${P(-3.6,-5.2)} C${P(-3.8,-3)} ${P(-5.5,-2.4)} ${P(-9,-2.2)} C${P(-13,-2)} ${P(-16.5,-1.4)} ${P(-17.6,1.2)} C${P(-18,4)} ${P(-16.6,7)} ${P(-15.6,10)} C${P(-15,16)} ${P(-14.6,23)} ${P(-14,31.5)} L${P(14,31.5)} C${P(14.6,23)} ${P(15,16)} ${P(15.6,10)} C${P(16.6,7)} ${P(18,4)} ${P(17.6,1.2)} C${P(16.5,-1.4)} ${P(13,-2)} ${P(9,-2.2)} C${P(5.5,-2.4)} ${P(3.8,-3)} ${P(3.6,-5.2)} Z"/>`;
+  /* to‘sh-o‘mrov-so‘rg‘ichsimon mushaklar */
+  for(const sd of [-1,1]) s+=`<path class="musc" d="M${P(sd*3.2,-5.2)} C${P(sd*2.8,-3)} ${P(sd*2.1,-1.4)} ${P(sd*1.4,-.2)}"/>`;
+  /* qovurg‘alar: suyak qismi va tog‘ay qismi */
+  for(let k=1;k<=7;k++) for(const sd of [-1,1]){
+    const xs=k===1?2.6:SX, xj=xs+CART[k];
+    s+=`<path class="rib" d="${ribPath(k,sd,xj,14.4)}"/><path class="cartl" d="${ribPath(k,sd,xs,xj+.2)}"/>`;
+  }
+  for(const [k,x0] of [[8,10.6],[9,12],[10,13.2]]) for(const sd of [-1,1]) s+=`<path class="rib" d="${ribPath(k,sd,x0,14.4)}"/>`;
+  /* qovurg‘a ravog‘i (VII–X tog‘aylar) */
+  for(const sd of [-1,1]){ let d=""; for(let x=1;x<=13.4;x+=.4) d+=(d?"L":"M")+P(sd*x,costalY(x)); s+=`<path class="cartl" style="stroke-width:5" d="${d}"/>`; }
+  /* to‘sh: dasta, tana, xanjarsimon o‘simta */
+  s+=`<path class="stern" d="M${P(-3,0)} Q${P(0,.9)} ${P(3,0)} L${P(2.4,4.9)} L${P(SX,5.3)} L${P(SX,15.6)} L${P(1.3,16.3)} L${P(.75,19.4)} L${P(0,20)} L${P(-.75,19.4)} L${P(-1.3,16.3)} L${P(-SX,15.6)} L${P(-SX,5.3)} L${P(-2.4,4.9)} Z"/>`;
+  s+=`<path class="bone" style="opacity:.7" d="M${P(-2.3,5)} L${P(2.3,5)}"/><path class="bone" style="opacity:.5" d="M${P(-1.3,16.3)} L${P(1.3,16.3)}"/>`;
+  /* o‘mrov suyaklari */
+  for(const sd of [-1,1]) s+=`<path class="clav" d="M${P(sd*2.7,.15)} C${P(sd*6,1.3)} ${P(sd*10,-.4)} ${P(sd*15.6,-1.2)}"/>`;
+  /* ko‘krak so‘rg‘ichlari (IV oraliq, o‘rta-o‘mrov chizig‘i) */
+  for(const sd of [-1,1]) s+=`<circle class="nip" cx="${PX(sd*10)}" cy="${PY(4.5,10)}" r="3.2"/>`;
+  /* topografik chiziqlar */
+  for(const [x,t] of [[9.5,"o‘rta-o‘mrov ch."],[13.5,"oldingi qo‘ltiq osti ch."]]) for(const sd of [-1,1]){
+    s+=`<line class="guide" x1="${PX(sd*x)}" y1="${OY+(x>10?3:.6)*SCL}" x2="${PX(sd*x)}" y2="${OY+30*SCL}"/>`;
+    if(sd>0) s+=`<text class="side-t" transform="translate(${PX(x)-3},${OY+29.5*SCL}) rotate(-90)">${t}</text>`; }
+  /* qovurg‘a raqamlari */
+  for(let k=1;k<=7;k++) s+=`<text class="side-t" x="${PX(-15)}" y="${(PY(k,14.6)+3).toFixed(1)}" text-anchor="end">${RN[k]}</text>`;
+  s+=`<text class="side-t" x="${PX(-16.5)}" y="${OY+31*SCL}">O‘NG</text><text class="side-t" x="${PX(16.5)}" y="${OY+31*SCL}" text-anchor="end">CHAP</text>`;
+  return s;
+}
+function ptSVG(k,x,L,lab,name,sel){
+  return `<g class="pt${sel?" sel":""}" data-k="${k}" tabindex="0" role="button" aria-label="${esc(name)}" transform="translate(${PX(x).toFixed(1)},${PY(L,x).toFixed(1)})"><circle class="hit" r="15"/><circle class="dot" r="7.5"/><text class="ptn" y="3">${lab}</text></g>`;
+}
+/* Qopqoqlarning anatomik proyeksiyasi (qo‘llanma 12.2) */
+const VALV=[["M","Mitral",1.6,3.05],["A","Aortal",-.2,3.0],["P","O‘pka arteriyasi",1.5,2.5],["T","Trikuspidal",0,4.05]];
+function valvesSVG(){ return VALV.map(([k,n,x,L])=>`<g class="valve" aria-hidden="true"><ellipse cx="${PX(x)}" cy="${PY(L,x)}" rx="6.5" ry="4.2"/><text x="${PX(x)}" y="${PY(L,x)+2.8}">${k}</text></g>`).join(""); }
+
+/* =========================================================
+   MA’LUMOTLAR
+   ========================================================= */
+/* Auskultatsiya nuqtalari (x — sm, o‘rta chiziqdan; L — qovurg‘a sathi: 3 = III qovurg‘a, 3,5 = III oraliq) */
+const AP={
+  m:{lab:"1",n:"1 · Yurak cho‘qqisi (mitral qopqoq)"},
+  a:{lab:"2",n:"2 · II oraliq, to‘shdan o‘ngda (aorta)",x:-2.95,L:2.5},
+  p:{lab:"3",n:"3 · II oraliq, to‘shdan chapda (o‘pka arteriyasi)",x:2.95,L:2.5},
+  t:{lab:"4",n:"4 · Xanjarsimon o‘simta asosi (trikuspidal qopqoq)",x:-.6,L:6.6},
+  b:{lab:"5",n:"5 · Botkin-Erb nuqtasi (III oraliq, to‘sh chap chekkasi)",x:2.55,L:3.5},
+  q:{lab:"Q",n:"Chap qo‘ltiq osti sohasi",x:12.6,L:5},
+  k:{lab:"U",n:"O‘ng uyqu arteriyasi",x:-2.6,L:-1.55}
+};
+const PP={
+  apex:{n:"Cho‘qqi turtkisi sohasi"},
+  ps:{n:"To‘sh chap chekkasi, III–IV oraliq",x:2.9,L:3.95},
+  epi:{n:"Epigastral soha",x:0,L:9.3},
+  a2:{n:"II oraliq, to‘shdan o‘ngda",x:-2.95,L:2.5},
+  p2:{n:"II oraliq, to‘shdan chapda",x:2.95,L:2.5},
+  k:{n:"Uyqu arteriyasi",x:-2.6,L:-1.55}
+};
+const PHOW={
+  apex:"Kaftni asosi to‘sh tomonda, barmoqlari qo‘ltiq osti tomonda bo‘lgan holda III–VI qovurg‘alar orasiga qo‘ying (taxminiy paypaslash). Turtki topilgach, 2–3 bukilgan barmoq uchi bilan uning 5 xususiyatini aniqlang. Ayollarda sut bezi yuqoriga va o‘ngga suriladi.",
+  ps:"Kaftni to‘sh chap chekkasiga, III–IV oraliqlarga ko‘ndalang qo‘ying. Sog‘lom kattalarda bu yerda turtki sezilmaydi; seziladigan diffuz turtki — o‘ng qorincha kattalashishi.",
+  epi:"Barmoqlarni xanjarsimon o‘simta ostidan yuqoriga, yurak tomon yo‘naltiring; bemor chuqur nafas olsin. Barmoq uchiga urilsa — o‘ng qorincha, kaft yuzasiga — qorin aortasi.",
+  a2:"Kaftni II oraliqqa, to‘shdan o‘ngga qo‘ying. Ikkinchi qo‘l bilan uyqu arteriyasidagi pulsni paypaslang: titrash pulsga mos kelsa — sistolik.",
+  p2:"Kaftni II oraliqqa, to‘shdan chapga qo‘ying. Bu yerda o‘pka gipertenziyasida II ton zarbasi qo‘lga seziladi.",
+  k:"Uyqu arteriyasini qalqonsimon tog‘ay sathida, to‘sh-o‘mrov-so‘rg‘ichsimon mushak ichki chekkasida paypaslang. Ikkalasini bir vaqtda bosmang!"
+};
+
+/* Bemor holatlari. geo: r — o‘ng chegara (sm), up — yuqori chegara sathi, l — chap chegara (sm), aL — chap chegara aniqlanadigan oraliq, bw — tomir tutami kengligi */
+const SC={
+  norm:{name:"Sog‘lom odam (me’yor)",hr:72,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy",
+    sh:"Shikoyati yo‘q, profilaktik ko‘rikka kelgan.",
+    ko:"Yurak sohasi o‘zgarmagan. Patologik pulsatsiyalar ko‘rinmaydi. Teri rangi odatdagidek.",
+    pu:"72/daq, ritmik, ikki qo‘lda bir xil, yaxshi to‘lgan, o‘rtacha tarang.",ab:"120/78 mm sim. ust.",
+    palp:{apex:"V oraliqda, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida; maydoni 1–2 sm², o‘rtacha balandlik va kuchda, rezistent emas.",ps:"Yurak turtkisi aniqlanmaydi.",epi:"Epigastral pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Uyqu arteriyasidagi puls me’yoriy, cho‘qqi turtkisi bilan bir vaqtda."},
+    pa:{apex:"n",ps:"0",epi:"0",a2:"0",p2:"0",k:"n"},
+    perk:"Nisbiy to‘mtoqlik: o‘ng chegara IV oraliqda to‘sh o‘ng chekkasidan 1–1,5 sm tashqarida, yuqori — III qovurg‘a, chap — V oraliqda o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida. Konfiguratsiya me’yoriy, tomir tutami 5–6 sm.",
+    au:{m:{s1:1,s2:.55},a:{s1:.5,s2:1},p:{s1:.5,s2:.95,split:"phys",breath:true},t:{s1:.9,s2:.5},b:{s1:.7,s2:.7},q:{s1:.35,s2:.2},k:{s1:.15,s2:.35}},
+    tx:{m:"I ton II tondan baland (taxminan 1,5–2 marta). Shovqin yo‘q.",a:"II ton I tondan baland.",p:"II ton I tondan baland; nafas olishda II ton qisqa bo‘linadi (fiziologik ikkilanish).",t:"I ton baland, II ton sokinroq.",b:"Ikkala ton taxminan teng kuchda.",q:"Tonlar sokin, shovqin yo‘q.",k:"Sokin uzatilgan tonlar, shovqin yo‘q."},
+    key:"Barcha topilmalar me’yorida: chegaralar “4-3-5”, cho‘qqida I ton baland, asosda II ton baland, shovqin yo‘q."},
+  ms:{name:"Mitral stenoz",hr:88,
+    geo:{r:-4.75,up:2,l:8.5,aL:5.5,waist:"flat",bw:5.5,absR:.2},konf:"Mitral",
+    sh:"Zo‘riqishda hansirash, kechasi yo‘tal, ba’zan balg‘amda qon tolalari, yurak urib ketishi, tez charchash.",
+    ko:"Facies mitralis: yonoqlarda ko‘kimtir-qizil dog‘, lablar sianozi. To‘sh chap chekkasida va epigastral sohada pulsatsiya ko‘rinadi.",
+    pu:"88/daq, ritmik, kichik; chap qo‘lda kichikroq (pulsus differens).",ab:"110/75 mm sim. ust.",
+    palp:{apex:"Siljimagan (V oraliq), chegaralangan, kuchsiz: chap qorincha kichik. Cho‘qqida diastolik (presistolik) “mushuk xirillashi”: titrash uyqu arteriyasidagi pulsdan keyin, keyingi zarbadan oldin seziladi.",ps:"To‘sh chap chekkasida III–IV oraliqlarda yurak turtkisi: o‘ng qorincha gipertrofiyasi.",epi:"Epigastral pulsatsiya barmoq uchiga uriladi, nafas olishda kuchayadi: o‘ng qorincha.",a2:"Titrash yo‘q.",p2:"II ton zarbasi qo‘lga sezilishi mumkin (o‘pka gipertenziyasi).",k:"Puls kichik."},
+    pa:{apex:"wv",ps:"s",epi:"s",a2:"0",p2:"w",k:"w"},
+    perk:"Yuqori chegara II qovurg‘agacha (chap bo‘lmacha), o‘ng chegara o‘ngga siljigan (o‘ng bo‘lmacha va o‘ng qorincha). Chap chegara o‘zgarmagan. Yurak beli tekislangan: mitral konfiguratsiya. Mutlaq to‘mtoqlik kattalashgan.",
+    au:{m:{s1:1.6,clap:true,s2:.5,os:.65,mur:[["ms",.9]]},a:{s1:.6,s2:.8},p:{s1:.6,s2:1.5,split:"fixed"},t:{s1:1.1,s2:.5},b:{s1:.9,s2:.7,os:.5,mur:[["ms",.3]]},q:{s1:.5,s2:.2},k:{s1:.2,s2:.35}},
+    tx:{m:"“Qarsillovchi” I ton; II tondan keyin mitral qopqoq ochilish toni (“bedana ritmi”). Diastolik shovqin: past tembrli, g‘uvullovchi, presistolada kuchayadi, tarqalmaydi; chap yonboshda yaxshi eshitiladi.",a:"Tonlar o‘zgarmagan.",p:"II ton aksenti va ikkilanishi: o‘pka gipertenziyasi.",t:"I ton baland.",b:"Ochilish toni va sokin diastolik shovqin.",q:"Shovqin qo‘ltiqqa tarqalmaydi.",k:"Shovqin yo‘q."},
+    key:"Qarsillovchi I ton + ochilish toni (“bedana ritmi”) + cho‘qqida presistolik kuchayuvchi diastolik shovqin + o‘pka arteriyasi ustida II ton aksenti; chegaralar yuqoriga va o‘ngga, mitral konfiguratsiya."},
+  mr:{name:"Mitral qopqoq yetishmovchiligi",hr:80,
+    geo:{r:-4,up:2.5,l:10.5,aL:5.5,waist:"flat",bw:5.5},konf:"Mitral",
+    sh:"Zo‘riqishda hansirash, yurak urib ketishi, holsizlik.",
+    ko:"Cho‘qqi turtkisi ko‘rinadi, kuchaygan.",
+    pu:"80/daq, ritmik, qoniqarli to‘lgan.",ab:"125/80 mm sim. ust.",
+    palp:{apex:"Chapga siljigan: V oraliqda o‘rta-o‘mrov chizig‘idan 1 sm tashqarida; keng, baland, kuchaygan.",ps:"Yurak turtkisi aniqlanmaydi.",epi:"Epigastral pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"II ton zarbasi sezilishi mumkin.",k:"Puls me’yoriy."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"0",p2:"w",k:"n"},
+    perk:"Chap chegara chapga (chap qorincha), yuqori chegara yuqoriga (chap bo‘lmacha); o‘ng chegara kechroq o‘ngga siljiydi. Yurak beli tekislangan: mitral konfiguratsiya.",
+    au:{m:{s1:.3,s2:.55,s3:.5,mur:[["mr",1]]},a:{s1:.4,s2:.9},p:{s1:.4,s2:1.4},t:{s1:.6,s2:.5,mur:[["mr",.25]]},b:{s1:.5,s2:.7,mur:[["mr",.45]]},q:{s1:.25,s2:.25,mur:[["mr",.6]]},k:{s1:.15,s2:.3}},
+    tx:{m:"I ton keskin susaygan; I ton bilan qo‘shilib ketuvchi, puflovchi, butun sistolani egallovchi sistolik shovqin; III ton.",a:"Tonlar o‘zgarmagan, shovqin yo‘q.",p:"II ton aksenti (kichik qon aylanish doirasida bosim oshgan).",t:"Sistolik shovqin sokin uzatiladi.",b:"Sistolik shovqin uzatiladi.",q:"Sistolik shovqin chap qo‘ltiq osti sohasiga tarqaladi.",k:"Shovqin yo‘q."},
+    key:"Cho‘qqida I tonning susayishi + I ton bilan qo‘shilib ketuvchi, qo‘ltiqqa tarqaluvchi sistolik shovqin + o‘pka arteriyasi ustida II ton aksenti; chegaralar chapga va yuqoriga."},
+  as:{name:"Aortal stenoz",hr:64,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"deep",bw:6.2},konf:"Aortal",
+    sh:"Zo‘riqishda to‘sh ortida siquvchi og‘riq, bosh aylanishi, zinadan chiqqanda ikki marta hushdan ketgan, hansirash.",
+    ko:"Teri oqargan, cho‘qqi turtkisi kam ko‘rinadi.",
+    pu:"64/daq, ritmik, sekin va kichik (pulsus tardus et parvus).",ab:"105/85 mm sim. ust. (puls bosimi kichik)",
+    palp:{apex:"Biroz chapga siljigan, kuchli, rezistent (“ko‘taruvchi”): konsentrik gipertrofiya.",ps:"Yurak turtkisi yo‘q.",epi:"Epigastral pulsatsiya yo‘q.",a2:"Sistolik “mushuk xirillashi”: titrash uyqu arteriyasidagi puls bilan bir vaqtda, bo‘yin tomirlariga tarqaladi.",p2:"Titrash yo‘q yoki sust uzatilgan.",k:"Puls sekin ko‘tariladi va kichik; titrash uzatiladi."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"v",p2:"0",k:"wv"},
+    perk:"Chap chegara chapga o‘rtacha siljigan, yurak beli chuqurlashgan: aortal konfiguratsiya. Tomir tutami biroz kengaygan (stenozdan keyingi aorta kengayishi).",
+    au:{m:{s1:.6,s2:.35,s4:.45,mur:[["as",.35]]},a:{s1:.5,s2:.2,ej:.4,mur:[["as",1.2]]},p:{s1:.5,s2:.6,mur:[["as",.5]]},t:{s1:.7,s2:.4,mur:[["as",.25]]},b:{s1:.6,s2:.4,mur:[["as",.7]]},q:{s1:.3,s2:.2},k:{s1:.1,s2:.15,mur:[["as",.9]]}},
+    tx:{m:"I ton susaygan, IV ton; sistolik shovqin sokin uzatiladi.",a:"Dag‘al, arrasimon, rombsimon (kuchayib-pasayuvchi) sistolik shovqin; II ton susaygan; erta sistolik chiqish toni.",p:"Sistolik shovqin uzatiladi.",t:"Sistolik shovqin sokin.",b:"Sistolik shovqin uzatiladi.",q:"Shovqin deyarli eshitilmaydi.",k:"Sistolik shovqin uyqu arteriyasiga tarqaladi."},
+    key:"II oraliqda o‘ngda dag‘al rombsimon sistolik shovqin, uyqu arteriyalariga tarqaladi + aorta ustida II tonning susayishi + sistolik titrash + pulsus tardus et parvus; stenokardiya, sinkope, hansirash."},
+  ar:{name:"Aorta qopqog‘i yetishmovchiligi",hr:84,
+    geo:{r:-3.25,up:3,l:11.5,aL:6.5,waist:"deep",bw:7},konf:"Aortal (“o‘tirgan o‘rdak”)",
+    sh:"Yurak urib ketishi, bo‘yinda pulsatsiya hissi, bosh aylanishi, zo‘riqishda hansirash.",
+    ko:"Teri oqargan. “Karotidalar raqsi”, Myusse belgisi (bosh tebranishi), Kvinke kapillyar pulsi. Cho‘qqi turtkisi ko‘rinadi.",
+    pu:"84/daq, tez, baland va katta (pulsus celer, altus, magnus): “suv bolg‘asi” pulsi.",ab:"165/40 mm sim. ust. (puls bosimi katta)",
+    palp:{apex:"Chapga va pastga siljigan: VI oraliqda, o‘rta-o‘mrov chizig‘idan 2 sm tashqarida; keng, baland, kuchli, rezistent (“gumbazsimon”).",ps:"Yurak turtkisi yo‘q.",epi:"Epigastral pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Uyqu arteriyasi keskin, baland pulsatsiya qiladi (“karotidalar raqsi”)."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"0",p2:"0",k:"s"},
+    perk:"Chap chegara chapga va pastga keskin siljigan (chap qorincha dilatatsiyasi), yurak beli chuqurlashgan: aortal konfiguratsiya. Tomir tutami kengaygan.",
+    au:{m:{s1:.45,s2:.4,mur:[["ar",.35],["flint",.25]]},a:{s1:.5,s2:.3,mur:[["ar",.7],["func",.35]]},p:{s1:.5,s2:.7},t:{s1:.6,s2:.4},b:{s1:.5,s2:.3,mur:[["ar",1]]},q:{s1:.3,s2:.2},k:{s1:.2,s2:.25,mur:[["func",.3]]}},
+    tx:{m:"I ton susaygan; diastolik shovqin cho‘qqiga uzatiladi; presistolik Flint shovqini.",a:"II ton susaygan; protodiastolik shovqin; nisbiy stenozning funksional sistolik shovqini.",p:"Tonlar o‘zgarmagan.",t:"Tonlar sokin.",b:"II tondan darhol boshlanuvchi yumshoq, puflovchi, pasayib boruvchi protodiastolik shovqin. Bemor oldinga egilib, nafas chiqarib to‘xtaganda yaxshi eshitiladi.",q:"Shovqin deyarli eshitilmaydi.",k:"Sistolik oqim shovqini."},
+    key:"Botkin-Erb nuqtasida protodiastolik shovqin + aorta ustida II tonning susayishi + tez va baland puls + katta puls bosimi (diastolik bosim past) + periferik tomir belgilari; chap chegara chapga va pastga."},
+  ah:{name:"Arterial gipertenziya, chap qorincha gipertrofiyasi",hr:76,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"deep",bw:6},konf:"Aortal",
+    sh:"Ensa sohasida bosh og‘rig‘i, bosh aylanishi, quloqlarda shovqin, ko‘z oldida “pashshalar”.",
+    ko:"Yuz giperemiyalangan. Cho‘qqi turtkisi ko‘rinishi mumkin.",
+    pu:"76/daq, ritmik, taranglashgan (pulsus durus).",ab:"168/102 mm sim. ust.",
+    palp:{apex:"Biroz chapga siljigan, kuchaygan, rezistent.",ps:"Yurak turtkisi yo‘q.",epi:"Epigastral pulsatsiya yo‘q.",a2:"II ton zarbasi sezilishi mumkin.",p2:"Titrash yo‘q.",k:"Puls tarang."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"w",p2:"0",k:"s"},
+    perk:"Chap chegara 1 sm chapga siljigan, yurak beli biroz chuqurlashgan: aortal konfiguratsiyaga moyillik. Tomir tutami biroz kengaygan.",
+    au:{m:{s1:.85,s2:.55,s4:.45},a:{s1:.5,s2:1.6,metal:true},p:{s1:.5,s2:.8},t:{s1:.8,s2:.5},b:{s1:.7,s2:.9},q:{s1:.35,s2:.2},k:{s1:.15,s2:.4}},
+    tx:{m:"Presistolik “ot dupuri” (IV ton): gipertrofiyalangan, kam cho‘ziluvchan qorincha.",a:"II ton aksenti: aorta ustida II ton o‘pka arteriyasidagidan baland, metall tusli.",p:"II ton aortadagidan sokinroq.",t:"Tonlar odatdagidek.",b:"II ton uzatilgan, kuchli.",q:"Shovqin yo‘q.",k:"Shovqin yo‘q."},
+    key:"Aorta ustida II ton aksenti + rezistent, chapga siljigan cho‘qqi turtkisi + IV ton + yuqori AB va tarang puls."},
+  rk:{name:"O‘tkir revmatik isitma, birlamchi revmokardit",hr:112,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy (chap chegara biroz kengaygan)",
+    sh:"2–3 hafta oldin angina o‘tkazgan. Isitma 38 °C, katta bo‘g‘imlarda ko‘chib yuruvchi og‘riq va shish, yurak urib ketishi, holsizlik.",
+    ko:"Tizza va to‘piq bo‘g‘imlari shishgan, qizargan. Teri rangpar.",
+    pu:"112/daq, ritmik, yumshoq; taxikardiya isitma darajasiga nisbatan ortiq.",ab:"105/65 mm sim. ust.",
+    palp:{apex:"Biroz chapga siljigan, susaygan, tarqoq.",ps:"Yurak turtkisi yo‘q.",epi:"Epigastral pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls tez, yumshoq."},
+    pa:{apex:"w",ps:"0",epi:"0",a2:"0",p2:"0",k:"n"},
+    perk:"Chap chegara 1 sm chapga siljigan (chap qorincha dilatatsiyasi). Boshqa chegaralar me’yorida.",
+    au:{m:{s1:.4,s2:.4,s3:.6,mur:[["mr",.3]]},a:{s1:.4,s2:.5},p:{s1:.4,s2:.55},t:{s1:.45,s2:.35},b:{s1:.4,s2:.4,mur:[["mr",.15]]},q:{s1:.2,s2:.15},k:{s1:.1,s2:.2}},
+    tx:{m:"Tonlar bo‘g‘iq, I ton susaygan; protodiastolik “ot dupuri” (III ton); cho‘qqida yumshoq, puflovchi sistolik shovqin (nisbiy mitral yetishmovchilik).",a:"Tonlar bo‘g‘iq.",p:"Tonlar bo‘g‘iq.",t:"Tonlar bo‘g‘iq.",b:"Sokin sistolik shovqin uzatiladi.",q:"Shovqin deyarli eshitilmaydi.",k:"Shovqin yo‘q."},
+    key:"Streptokokkli angina bilan bog‘liqlik + ko‘chib yuruvchi poliartrit + kardit belgilari: taxikardiya, bo‘g‘iq tonlar, I tonning susayishi, III ton, cho‘qqida yumshoq sistolik shovqin."},
+  per:{name:"Ekssudativ perikardit",hr:108,
+    geo:{r:-5.5,up:2,l:11.5,aL:5.5,waist:"trap",bw:7,absR:-4.3,absU:2.4},konf:"Trapetsiyasimon",
+    sh:"Yurak sohasida og‘irlik, hansirash; bemor oldinga egilib o‘tirishga majbur.",
+    ko:"Bo‘yin venalari bo‘rtgan, yuz shishgan. Yurak sohasi biroz bo‘rtgan, cho‘qqi turtkisi ko‘rinmaydi.",
+    pu:"108/daq, kichik; nafas olishda puls to‘lqini keskin kichrayadi (paradoksal puls).",ab:"100/70 mm sim. ust.",
+    palp:{apex:"Cho‘qqi turtkisi paypaslanmaydi (yoki nisbiy to‘mtoqlik chap chegarasidan ancha ichkarida juda kuchsiz seziladi).",ps:"Turtki yo‘q.",epi:"Epigastral pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls kichik, nafas olishda yanada kichrayadi."},
+    pa:{apex:"0",ps:"0",epi:"0",a2:"0",p2:"0",k:"w"},
+    perk:"Chegaralar barcha tomonga kengaygan, yurak beli yo‘q: trapetsiyasimon (uchburchaksimon) konfiguratsiya. Mutlaq to‘mtoqlik nisbiy to‘mtoqlik bilan deyarli qo‘shilib ketgan. Tomir tutami kengaygan.",
+    au:{m:{s1:.22,s2:.18,muf:true},a:{s1:.15,s2:.25,muf:true},p:{s1:.15,s2:.22,muf:true},t:{s1:.2,s2:.15,muf:true},b:{s1:.2,s2:.18,muf:true},q:{s1:.1,s2:.08,muf:true},k:{s1:.1,s2:.15}},
+    tx:{m:"Tonlar keskin bo‘g‘iq, taxikardiya.",a:"Tonlar keskin bo‘g‘iq.",p:"Tonlar keskin bo‘g‘iq.",t:"Tonlar keskin bo‘g‘iq.",b:"Tonlar keskin bo‘g‘iq.",q:"Tonlar deyarli eshitilmaydi.",k:"Sokin tonlar."},
+    key:"Chegaralar barcha tomonga kengaygan, trapetsiyasimon konfiguratsiya + cho‘qqi turtkisi aniqlanmaydi + keskin bo‘g‘iq tonlar + paradoksal puls, bo‘yin venalari bo‘rtishi."},
+  frik:{name:"Quruq (fibrinoz) perikardit",hr:96,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy",
+    sh:"Yurak sohasida o‘tkir, sanchuvchi og‘riq: nafas olishda, yo‘talda va chalqancha yotganda kuchayadi, oldinga egilganda kamayadi. Subfebril isitma.",
+    ko:"Bemor oldinga egilib o‘tiradi. Nafas yuzaki.",
+    pu:"96/daq, ritmik.",ab:"115/75 mm sim. ust.",
+    palp:{apex:"Odatiy joyda, o‘zgarmagan.",ps:"To‘sh chap chekkasida g‘adir-budir titrash seziladi (perikard ishqalanishi).",epi:"Epigastral pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls me’yoriy."},
+    pa:{apex:"n",ps:"v",epi:"0",a2:"0",p2:"0",k:"n"},
+    perk:"Chegaralar o‘zgarmagan.",
+    au:{m:{s1:.7,s2:.45,mur:[["fr",.35]]},a:{s1:.45,s2:.8},p:{s1:.45,s2:.8,mur:[["fr",.4]]},t:{s1:.7,s2:.4,mur:[["fr",.5]]},b:{s1:.5,s2:.5,mur:[["fr",1]]},q:{s1:.3,s2:.2},k:{s1:.15,s2:.3}},
+    tx:{m:"Ishqalanish shovqini sokin uzatiladi.",a:"Tonlar o‘zgarmagan.",p:"Ishqalanish shovqini sokin.",t:"Ishqalanish shovqini.",b:"Perikard ishqalanish shovqini: qirsillovchi, “qor ustida yurish”ga o‘xshash, sistola va diastolada, hech qayerga tarqalmaydi; stetoskop bilan bosganda va oldinga egilganda kuchayadi, nafasni ushlaganda saqlanadi.",q:"Shovqin yo‘q.",k:"Shovqin yo‘q."},
+    key:"To‘sh chap chekkasida, mutlaq to‘mtoqlik sohasida qirsillovchi, tarqalmaydigan, nafasni ushlaganda saqlanuvchi ishqalanish shovqini + holatga bog‘liq o‘tkir og‘riq."}
+};
+/* Paypaslash ma’lumotlari: ap5 — cho‘qqi turtkisining 5 xususiyati (Joyi, Maydoni, Balandligi, Kuchi, Rezistentligi);
+   apR — turtki radiusi (sm); pm — har bir nuqtada [zarba kuchi 0–3, titrash fazasi: null | "s" | "d" | "sd"] */
+const EXT={
+  norm:{ap5:["V oraliq, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida","1–2 sm² (diametri 1,5–2 sm)","O‘rtacha","O‘rtacha","Rezistent emas (elastik)"],apR:.9,
+    pm:{apex:[2,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]}},
+  ms:{ap5:["V oraliq, o‘z joyida","Chegaralangan (1 sm²)","Past","Susaygan","Rezistent emas"],apR:.6,
+    pm:{apex:[1,"d"],ps:[3,null],epi:[3,null],a2:[0,null],p2:[1,null],k:[1,null]}},
+  mr:{ap5:["V oraliq, o‘rta-o‘mrov chizig‘idan 1 sm tashqarida","Keng (2,5–3 sm²)","Baland","Kuchaygan","O‘rtacha rezistent"],apR:1.3,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[1,null],k:[2,null]}},
+  as:{ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","Biroz kengaygan (2 sm²)","O‘rtacha","Kuchli","Rezistent, “ko‘taruvchi”"],apR:1,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,"s"],p2:[0,null],k:[1,"s"]}},
+  ar:{ap5:["VI oraliq, o‘rta-o‘mrov chizig‘idan 2 sm tashqarida","Keng (3–4 sm²)","Baland","Kuchli","Rezistent, “gumbazsimon”"],apR:1.5,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[3,null]}},
+  ah:{ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","1,5–2 sm²","O‘rtacha","Kuchaygan","Rezistent"],apR:.95,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[1,null],p2:[0,null],k:[3,null]}},
+  rk:{ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","Tarqoq (2,5 sm²)","Past","Susaygan","Rezistent emas"],apR:1.2,
+    pm:{apex:[1,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[1,null]}},
+  per:{ap5:["Aniqlanmaydi","—","—","—","—"],apR:0,
+    pm:{apex:[0,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[1,null]}},
+  frik:{ap5:["V oraliq, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida","1–2 sm²","O‘rtacha","O‘rtacha","Rezistent emas"],apR:.9,
+    pm:{apex:[2,null],ps:[0,"sd"],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]}}
+};
+for(const id in EXT) Object.assign(SC[id],EXT[id]);
+
+/* Qo‘shimcha virtual bemorlar */
+Object.assign(SC,{
+  msmr:{name:"Qo‘shma mitral nuqson, bo‘lmachalar fibrillyatsiyasi",hr:100,rh:"af",
+    geo:{r:-4.75,up:2,l:10,aL:5.5,waist:"flat",bw:5.5,absR:.2},konf:"Mitral",
+    sh:"Zo‘riqishda hansirash, yurak urib ketishi va “uzilishlar”, yo‘tal, kechqurun oyoqlarda shish. 20 yildan beri revmatik nuqson bilan kuzatiladi.",
+    ko:"Facies mitralis, akrosianoz, boldirlarda shish.",
+    pu:"Aritmik, to‘lqinlar har xil, 84/daq; yurak qisqarishlari 100/daq: puls tanqisligi 16.",ab:"110/70 mm sim. ust.",
+    ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","Kengaygan (2,5 sm²)","O‘rtacha","Kuchaygan","Rezistent emas"],apR:1.15,
+    pm:{apex:[2,"d"],ps:[2,null],epi:[2,null],a2:[0,null],p2:[1,null],k:[1,null]},
+    palp:{apex:"Biroz chapga siljigan (yetishmovchilik komponenti), kengaygan. Cho‘qqida diastolik titrash; fibrillyatsiya tufayli presistolik kuchayish yo‘q.",ps:"O‘ng qorincha turtkisi.",epi:"Epigastral pulsatsiya: o‘ng qorincha.",a2:"Titrash yo‘q.",p2:"II ton zarbasi seziladi.",k:"Puls tartibsiz, to‘lqinlar har xil."},
+    perk:"Chegaralar yuqoriga (chap bo‘lmacha), o‘ngga (o‘ng bo‘lmacha) va chapga (chap qorincha) kengaygan; mitral konfiguratsiya.",
+    au:{m:{s1:1.1,s2:.5,os:.4,mur:[["mr",.7],["ms",.7]]},a:{s1:.5,s2:.7},p:{s1:.5,s2:1.4},t:{s1:.8,s2:.5},b:{s1:.7,s2:.6,mur:[["mr",.35],["ms",.25]]},q:{s1:.3,s2:.2,mur:[["mr",.45]]},k:{s1:.15,s2:.3}},
+    tx:{m:"Ritm tartibsiz, I ton kuchi o‘zgaruvchan; sistolik shovqin va diastolik g‘uvullash (fibrillyatsiyada presistolik kuchayish yo‘qoladi).",a:"Tonlar tartibsiz.",p:"II ton aksenti.",t:"Tonlar tartibsiz.",b:"Ikkala shovqin sokin uzatiladi.",q:"Sistolik shovqin qo‘ltiqqa tarqaladi.",k:"Shovqin yo‘q."},
+    key:"Cho‘qqida ham sistolik, ham diastolik shovqin + tartibsiz ritm va puls tanqisligi + o‘pka arteriyasi ustida II ton aksenti; chegaralar yuqoriga, o‘ngga va chapga."},
+  mvp:{name:"Mitral qopqoq prolapsi",hr:84,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy",
+    sh:"Yurak sohasida zo‘riqish bilan bog‘liq bo‘lmagan sanchiq, yurak urib ketishi va “uzilishlar” hissi, tez charchash, xavotir.",
+    ko:"Astenik tana tuzilishi, baland bo‘y, yassi ko‘krak qafasi, bo‘g‘imlar o‘ta harakatchan.",
+    pu:"84/daq, vaqti-vaqti bilan ekstrasistolalar.",ab:"110/70 mm sim. ust.",
+    ap5:["V oraliq, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida","1–2 sm²","O‘rtacha","O‘rtacha","Rezistent emas"],apR:.9,
+    pm:{apex:[2,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]},
+    palp:{apex:"Odatiy joyda, xususiyatlari me’yorida.",ps:"Turtki yo‘q.",epi:"Pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls me’yoriy."},
+    perk:"Chegaralar o‘zgarmagan.",
+    au:{m:{s1:.9,s2:.55,click:.8,mur:[["late",.7]]},a:{s1:.5,s2:1},p:{s1:.5,s2:.95},t:{s1:.9,s2:.5},b:{s1:.7,s2:.65,click:.4,mur:[["late",.3]]},q:{s1:.35,s2:.2,mur:[["late",.3]]},k:{s1:.15,s2:.35}},
+    tx:{m:"Sistola o‘rtasida chertish (klik) va undan keyin II tongacha kuchayib boruvchi kech sistolik shovqin. Tik turganda klik I tonga yaqinlashadi, shovqin uzayadi.",a:"Tonlar o‘zgarmagan.",p:"Tonlar o‘zgarmagan.",t:"Tonlar o‘zgarmagan.",b:"Klik va shovqin sokin uzatiladi.",q:"Kech sistolik shovqin qo‘ltiqqa sokin tarqaladi.",k:"Shovqin yo‘q."},
+    key:"Cho‘qqida mezosistolik klik + kech sistolik shovqin; tonlar va chegaralar o‘zgarmagan; astenik tana tuzilishi. Tasdiq: ExoKG."},
+  tr:{name:"Trikuspidal qopqoq yetishmovchiligi",hr:96,rh:"af",
+    geo:{r:-5.75,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5,absR:-.6},konf:"O‘ng bo‘limlar kattalashgan (trapetsiyasimonga yaqin)",
+    sh:"Oyoqlarda shish, o‘ng qovurg‘a ostida og‘irlik, qorin kattalashishi, holsizlik. Ilgari revmatik mitral nuqson aniqlangan.",
+    ko:"Akrosianoz, terining sarg‘ish-ko‘kimtir tusi. Bo‘yin venalari bo‘rtgan va sistolada pulsatsiya qiladi (musbat venoz puls). Epigastral pulsatsiya, astsit, oyoqlarda shish.",
+    pu:"96/daq, aritmik (bo‘lmachalar fibrillyatsiyasi), to‘lqinlar har xil.",ab:"105/70 mm sim. ust.",
+    ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","Keng, tarqoq","Past","Susaygan","Rezistent emas"],apR:1.2,
+    pm:{apex:[1,null],ps:[3,null],epi:[3,null],a2:[0,null],p2:[0,null],k:[2,null]},
+    palp:{apex:"Biroz chapga siljigan: kattalashgan o‘ng qorincha chap qorinchani surgan; tarqoq, kuchsiz.",ps:"To‘sh chap chekkasida va pastki qismida kuchli diffuz turtki: o‘ng qorincha dilatatsiyasi.",epi:"Epigastral pulsatsiya barmoq uchiga uriladi, nafas olishda kuchayadi; jigar sistolada butunicha kengayadi (haqiqiy jigar pulsatsiyasi).",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Bo‘yin venalari sistolada to‘ladi: musbat venoz puls."},
+    perk:"O‘ng chegara keskin o‘ngga siljigan (o‘ng bo‘lmacha), chap chegara biroz chapga (o‘ng qorincha chap qorinchani surgan). Mutlaq to‘mtoqlik kattalashgan. Jigar kattalashgan.",
+    au:{m:{s1:.6,s2:.5,mur:[["tr",.2]]},a:{s1:.4,s2:.6},p:{s1:.5,s2:.75},t:{s1:.5,s2:.5,mur:[["tr",.9]],breath:true},b:{s1:.5,s2:.55,mur:[["tr",.4]],breath:true},q:{s1:.25,s2:.2},k:{s1:.15,s2:.3}},
+    tx:{m:"Ritm tartibsiz; shovqin sokin uzatiladi.",a:"Tonlar sokin, tartibsiz.",p:"Tonlar tartibsiz.",t:"I ton susaygan; sistolik shovqin nafas olish balandligida kuchayadi (Rivero-Karvalo belgisi). Pleyerda nafas fazasi ko‘rsatiladi.",b:"Sistolik shovqin uzatiladi, nafas olishda kuchayadi.",q:"Shovqin yo‘q.",k:"Shovqin yo‘q."},
+    key:"Xanjarsimon o‘simta asosida nafas olishda kuchayuvchi sistolik shovqin (Rivero-Karvalo) + musbat venoz puls va jigar pulsatsiyasi + o‘ng chegaraning keskin siljishi + katta qon aylanish doirasida dimlanish."},
+  dkmp:{name:"Dilatatsion kardiomiopatiya, yurak yetishmovchiligi",hr:104,
+    geo:{r:-4.5,up:2.5,l:12.5,aL:6.5,waist:"n",bw:6},konf:"“Ho‘kiz yuragi”: barcha tomonga kengaygan",
+    sh:"Tinch holatda ham hansirash, kechasi bo‘g‘ilish xurujlari, yotganda hansirash kuchayadi (ortopnoe), holsizlik, oyoqlarda shish.",
+    ko:"Yarim o‘tirgan holat (ortopnoe), akrosianoz, bo‘yin venalari bo‘rtgan, oyoqlarda shish.",
+    pu:"104/daq, ritmik, kichik; katta va kichik to‘lqinlar almashinadi (pulsus alternans).",ab:"95/65 mm sim. ust.",
+    ap5:["VI oraliq, oldingi qo‘ltiq osti chizig‘i yaqinida","Keng, tarqoq (4 sm²)","Past","Kuchsiz","Rezistent emas"],apR:1.6,
+    pm:{apex:[1,null],ps:[1,null],epi:[1,null],a2:[0,null],p2:[0,null],k:[1,null]},
+    palp:{apex:"Chapga va pastga keskin siljigan, keng, tarqoq, past va kuchsiz: miokard qisqaruvchanligi pasaygan dilatatsiyalangan qorincha.",ps:"Kuchsiz diffuz turtki.",epi:"Kuchsiz pulsatsiya.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls kichik, to‘lqinlar almashinadi."},
+    perk:"Barcha chegaralar kengaygan: chap chegara VI oraliqda oldingi qo‘ltiq osti chizig‘i yaqinida, o‘ng chegara o‘ngga, yuqori II oraliqqacha. “Ho‘kiz yuragi”.",
+    au:{m:{s1:.3,s2:.35,s3:.85,mur:[["mr",.4]]},a:{s1:.35,s2:.45},p:{s1:.35,s2:.7},t:{s1:.4,s2:.35,s3:.3,mur:[["tr",.25]]},b:{s1:.35,s2:.4,s3:.4,mur:[["mr",.2]]},q:{s1:.2,s2:.15,mur:[["mr",.3]]},k:{s1:.1,s2:.2}},
+    tx:{m:"Tonlar bo‘g‘iq, I ton susaygan; protodiastolik “ot dupuri” (III ton); nisbiy mitral yetishmovchilik sistolik shovqini.",a:"Tonlar bo‘g‘iq.",p:"II ton nisbatan kuchli (o‘pkada dimlanish).",t:"III ton, nisbiy trikuspidal yetishmovchilik shovqini.",b:"Ot dupuri uzatiladi.",q:"Sistolik shovqin sokin tarqaladi.",k:"Shovqin yo‘q."},
+    key:"Barcha chegaralar kengaygan + chapga va pastga siljigan kuchsiz, tarqoq cho‘qqi turtkisi + III ton (ot dupuri) + bo‘g‘iq tonlar + alternans puls va yurak yetishmovchiligi belgilari."},
+  anem:{name:"Temir tanqisligi anemiyasi: funksional shovqin",hr:104,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy",
+    sh:"Holsizlik, bosh aylanishi, zo‘riqishda hansirash va yurak urib ketishi, sochlar to‘kilishi, bo‘r yeyish istagi. Hayz ko‘p va uzoq davom etadi.",
+    ko:"Teri va shilliq qavatlar oqargan, tirnoqlar mo‘rt, qoshiqsimon (koilonixiya), lab burchaklarida yoriqlar.",
+    pu:"104/daq, ritmik, yumshoq.",ab:"105/65 mm sim. ust.",
+    ap5:["V oraliq, o‘rta-o‘mrov chizig‘idan 1–1,5 sm ichkarida","1,5–2 sm²","Biroz baland","O‘rtacha","Rezistent emas"],apR:1,
+    pm:{apex:[2,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]},
+    palp:{apex:"Odatiy joyda; taxikardiya tufayli turtki tez-tez.",ps:"Turtki yo‘q.",epi:"Pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q (funksional shovqinda “mushuk xirillashi” bo‘lmaydi).",k:"Puls tez, yumshoq."},
+    perk:"Chegaralar o‘zgarmagan.",
+    au:{m:{s1:1.1,s2:.6,mur:[["func",.45]]},a:{s1:.6,s2:1},p:{s1:.6,s2:1,mur:[["func",.55]]},t:{s1:.9,s2:.5},b:{s1:.7,s2:.7,mur:[["func",.3]]},q:{s1:.35,s2:.2},k:{s1:.15,s2:.35,mur:[["func",.2]]}},
+    tx:{m:"Tonlar baland (taxikardiya); qisqa, yumshoq, puflovchi sistolik shovqin, tonlar o‘zgarmagan.",a:"Tonlar o‘zgarmagan.",p:"Yumshoq qisqa sistolik shovqin (shu yerda eng yaxshi).",t:"Tonlar o‘zgarmagan.",b:"Sokin sistolik shovqin.",q:"Shovqin tarqalmaydi.",k:"Bo‘yin venalari ustida uzluksiz “pildiroq” shovqin eshitilishi mumkin."},
+    key:"Sokin, qisqa, yumshoq sistolik shovqin; tonlar, chegaralar o‘zgarmagan, titrash yo‘q + rangparlik, taxikardiya: funksional (anemik) shovqin. Qonda gemoglobin va ferritin tekshiriladi."},
+  tir:{name:"Tireotoksikoz: giperkinetik yurak",hr:118,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy (chap chegara biroz kengaygan)",
+    sh:"Yurak urib ketishi, terlash, issiqni ko‘tara olmaslik, qo‘llar titrashi, ishtaha yaxshi bo‘lsa ham ozish, asabiylik.",
+    ko:"Teri issiq va nam, ko‘zlar chaqchaygan (ekzoftalm), barmoqlar titrashi, qalqonsimon bez kattalashgan.",
+    pu:"118/daq, ritmik, tez va baland (celer et altus).",ab:"150/60 mm sim. ust. (puls bosimi katta)",
+    ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","Tarqoq (2,5 sm²)","Baland","Kuchaygan","Rezistent emas"],apR:1.15,
+    pm:{apex:[3,null],ps:[1,null],epi:[1,null],a2:[0,null],p2:[0,null],k:[3,null]},
+    palp:{apex:"Biroz chapga siljigan, baland, kuchaygan, tarqoq: giperkinetik qon aylanish.",ps:"Kuchsiz pulsatsiya.",epi:"Kuchsiz pulsatsiya.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls tez, baland."},
+    perk:"Chap chegara 1 sm chapga siljigan, boshqa chegaralar me’yorida.",
+    au:{m:{s1:1.5,s2:.7,mur:[["func",.5]]},a:{s1:.7,s2:1.2},p:{s1:.7,s2:1.2,mur:[["func",.4]]},t:{s1:1.2,s2:.6},b:{s1:.9,s2:.9,mur:[["func",.3]]},q:{s1:.45,s2:.25},k:{s1:.2,s2:.4,mur:[["func",.25]]}},
+    tx:{m:"Ikkala ton, ayniqsa I ton kuchaygan; funksional sistolik shovqin; taxikardiya.",a:"Tonlar kuchaygan.",p:"Tonlar kuchaygan, sokin sistolik shovqin.",t:"Tonlar kuchaygan.",b:"Sokin sistolik shovqin.",q:"Shovqin tarqalmaydi.",k:"Qalqonsimon bez ustida sistolik shovqin eshitilishi mumkin."},
+    key:"Doimiy taxikardiya (uyquda ham), kuchaygan tonlar, funksional sistolik shovqin, katta puls bosimi + tireotoksikoz belgilari (ekzoftalm, titrash, ozish)."},
+  avb:{name:"To‘liq atrioventrikulyar blokada",hr:38,rh:"avb",
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5},konf:"Me’yoriy (chap qorincha biroz kattalashgan)",
+    sh:"Bosh aylanishi, ko‘z oldi qorong‘ilashishi, ikki marta qisqa muddatli hushdan ketish va tirishish (Morgagni-Adams-Stoks xurujlari), holsizlik.",
+    ko:"Bo‘yin venalarida vaqti-vaqti bilan katta “to‘p” to‘lqinlari ko‘rinadi.",
+    pu:"38/daq, ritmik, katta, sekin.",ab:"170/70 mm sim. ust.",
+    ap5:["V oraliq, o‘rta-o‘mrov chizig‘ida","2 sm²","Baland","Kuchaygan","Rezistent emas"],apR:1,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[3,null]},
+    palp:{apex:"Siyrak, kuchli turtki: har bir qisqarishda zarb hajmi katta.",ps:"Turtki yo‘q.",epi:"Pulsatsiya yo‘q.",a2:"Titrash yo‘q.",p2:"Titrash yo‘q.",k:"Puls siyrak, katta; bo‘yin venalarida vaqti-vaqti bilan katta to‘lqin."},
+    perk:"Chap chegara biroz chapga siljigan.",
+    au:{m:{s1:.9,s2:.6},a:{s1:.5,s2:1},p:{s1:.5,s2:.9},t:{s1:.9,s2:.5},b:{s1:.7,s2:.7},q:{s1:.35,s2:.2},k:{s1:.15,s2:.35}},
+    tx:{m:"Bradikardiya (38/daq); I ton kuchi har xil, vaqti-vaqti bilan juda baland Strajesko “to‘p toni”.",a:"Bradikardiya, II ton odatdagidek.",p:"Bradikardiya.",t:"I ton kuchi o‘zgaruvchan.",b:"Bradikardiya.",q:"Shovqin yo‘q.",k:"Shovqin yo‘q."},
+    key:"Siyrak ritmik puls (30–40), I ton kuchining o‘zgaruvchanligi va Strajesko “to‘p toni”, sinkope xurujlari. Tasdiq: EKG."},
+  cp:{name:"Surunkali o‘pkali yurak (o‘pka emfizemasi)",hr:96,
+    geo:{r:-4.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5,absR:3.4,absU:5},konf:"Me’yoriy, o‘ng chegara siljigan",
+    sh:"30 yildan beri chekadi. Yo‘tal, balg‘am, zo‘riqishda hansirash, oxirgi oylarda oyoqlarda shish.",
+    ko:"Diffuz iliq sianoz, bochkasimon ko‘krak qafasi, bo‘yin venalari bo‘rtgan; epigastral sohada pulsatsiya.",
+    pu:"96/daq, ritmik.",ab:"125/80 mm sim. ust.",
+    ap5:["Aniqlanmaydi (emfizematoz o‘pka qoplagan)","—","—","—","—"],apR:0,
+    pm:{apex:[0,null],ps:[2,null],epi:[3,null],a2:[0,null],p2:[1,null],k:[1,null]},
+    palp:{apex:"Cho‘qqi turtkisi aniqlanmaydi yoki juda sust: kengaygan o‘pka yurakni qoplagan.",ps:"O‘ng qorincha turtkisi seziladi.",epi:"Epigastral pulsatsiya barmoq uchiga uriladi, nafas olishda kuchayadi: o‘ng qorincha gipertrofiyasi.",a2:"Titrash yo‘q.",p2:"II ton zarbasi seziladi (o‘pka gipertenziyasi).",k:"Puls me’yoriy."},
+    perk:"O‘pka ustida qutisimon tovush. Yurakning mutlaq to‘mtoqligi keskin kichraygan (emfizema). Nisbiy to‘mtoqlikning o‘ng chegarasi o‘ngga siljigan (o‘ng bo‘limlar).",
+    au:{m:{s1:.35,s2:.25},a:{s1:.25,s2:.35},p:{s1:.3,s2:.85},t:{s1:.4,s2:.3,mur:[["tr",.3]],breath:true},b:{s1:.3,s2:.4},q:{s1:.15,s2:.1},k:{s1:.1,s2:.2}},
+    tx:{m:"Tonlar bo‘g‘iq (emfizema).",a:"Tonlar bo‘g‘iq.",p:"II ton aksenti: o‘pka gipertenziyasi.",t:"Sokin sistolik shovqin, nafas olishda kuchayadi (nisbiy trikuspidal yetishmovchilik).",b:"Tonlar bo‘g‘iq.",q:"Tonlar deyarli eshitilmaydi.",k:"Shovqin yo‘q."},
+    key:"O‘pka kasalligi anamnezi + diffuz sianoz + epigastral pulsatsiya (o‘ng qorincha) + o‘pka arteriyasi ustida II ton aksenti + mutlaq to‘mtoqlikning kichrayishi va bo‘g‘iq tonlar."}
+});
+const SC_ORDER=["norm","ms","mr","msmr","mvp","as","ar","tr","ah","rk","dkmp","per","frik","anem","tir","avb","cp"];
+function apexOf(id){ const s=SC[id], g=s.geo; return s.apR?{x:g.l-.25,L:g.aL}:{x:8.25,L:5.5}; }
+
+
+/* Tovushlar kutubxonasi */
+const LIB=[
+  {id:"norm_apex",g:"ton",n:"Me’yoriy tonlar: cho‘qqi",alt:"S1 > S2 · 72/daq",sp:{hr:72,s1:1,s2:.55},pt:"Yurak cho‘qqisi",d:"I ton uzunroq va pastroq, katta pauzadan keyin keladi; cho‘qqida II tondan baland.",k:"Sog‘lom odam"},
+  {id:"norm_base",g:"ton",n:"Me’yoriy tonlar: yurak asosi",alt:"S2 > S1",sp:{hr:72,s1:.5,s2:1},pt:"II oraliq, to‘shdan o‘ngda",d:"Yurak asosida II ton I tondan baland, qisqa va yuqoriroq.",k:"Sog‘lom odam"},
+  {id:"clap",g:"ton",n:"“Qarsillovchi” I ton",alt:"Loud S1",sp:{hr:84,s1:1.6,clap:true,s2:.5},pt:"Yurak cho‘qqisi",d:"Qorincha kam to‘lgan, qopqoq tabaqalari keng ochiq holatdan tez va zich yopiladi.",k:"Mitral stenoz, taxikardiya, ekstrasistoliya"},
+  {id:"s1weak",g:"ton",n:"I tonning susayishi",alt:"Soft S1",sp:{hr:76,s1:.28,s2:.55},pt:"Yurak cho‘qqisi",d:"Yopiq qopqoqlar davri yo‘q yoki miokard qisqaruvchanligi pasaygan: cho‘qqida I ton II tondan sokin.",k:"Mitral yetishmovchilik, miokardit, kardioskleroz"},
+  {id:"s2a",g:"ton",n:"Aorta ustida II ton aksenti",alt:"Loud A2",sp:{hr:76,s1:.5,s2:1.6,metal:true},pt:"II oraliq, to‘shdan o‘ngda",d:"Aortada bosim oshgan yoki devor zichlashgan: II ton kuchli, ba’zan metall tusli.",k:"Arterial gipertenziya, aorta aterosklerozi"},
+  {id:"s2p",g:"ton",n:"O‘pka arteriyasi ustida II ton aksenti",alt:"Loud P2",sp:{hr:84,s1:.5,s2:1.5},pt:"II oraliq, to‘shdan chapda",d:"Kichik qon aylanish doirasida bosim oshgan.",k:"Mitral nuqsonlar, surunkali o‘pkali yurak"},
+  {id:"split_phys",g:"ton",n:"II tonning fiziologik ikkilanishi",alt:"Physiological split S2",sp:{hr:64,s1:.5,s2:.95,split:"phys",breath:true},pt:"II oraliq, to‘shdan chapda",d:"Faqat nafas olishda: o‘ng qorinchaga qon ko‘p kelib, o‘pka arteriyasi qopqog‘i kechroq yopiladi. Pleyerda nafas fazasi ko‘rsatiladi.",k:"Yoshlar, sog‘lom odam"},
+  {id:"split_fix",g:"ton",n:"II tonning doimiy (patologik) ikkilanishi",alt:"Fixed split S2",sp:{hr:78,s1:.5,s2:1,split:"fixed"},pt:"II oraliq, to‘shdan chapda",d:"Nafas fazasiga bog‘liq emas, har bir siklda eshitiladi.",k:"O‘pka gipertenziyasi, bo‘lmachalararo to‘siq nuqsoni, o‘ng oyoqcha blokadasi"},
+  {id:"s3",g:"ton",n:"Protodiastolik “ot dupuri” (III ton)",alt:"S3 gallop",sp:{hr:108,s1:.6,s2:.6,s3:.9},pt:"Yurak cho‘qqisi (qo‘ng‘iroqsimon bosh)",d:"Tonusi pasaygan qorincha tez to‘lishda tebranadi; taxikardiya bilan “ot chopishi” eshitiladi.",k:"Miokardit, miokard infarkti, yurak yetishmovchiligi"},
+  {id:"s4",g:"ton",n:"Presistolik “ot dupuri” (IV ton)",alt:"S4 gallop",sp:{hr:86,s1:.8,s2:.6,s4:.9},pt:"Yurak cho‘qqisi (qo‘ng‘iroqsimon bosh)",d:"Gipertrofiyalangan, kam cho‘ziluvchan qorincha bo‘lmacha sistolasida to‘ladi; I tondan oldin past ton.",k:"Arterial gipertenziya, aortal stenoz, ishemiya"},
+  {id:"bedana",g:"ton",n:"“Bedana ritmi”",alt:"Loud S1 + S2 + opening snap",sp:{hr:80,s1:1.6,clap:true,s2:.6,os:.85},pt:"Yurak cho‘qqisi",d:"Qarsillovchi I ton + II ton + mitral qopqoq ochilish toni (II tondan 0,07–0,13 s keyin): “spat — pora — spat”.",k:"Faqat mitral stenoz"},
+  {id:"muffled",g:"ton",n:"Ikkala tonning bo‘g‘iqlashishi",alt:"Muffled heart sounds",sp:{hr:100,s1:.22,s2:.18,muf:true},pt:"Barcha nuqtalar",d:"Tovush o‘tkazilishi pasaygan yoki miokard qisqaruvchanligi susaygan.",k:"Ekssudativ perikardit, miokardit, semizlik, emfizema"},
+  {id:"cannon",g:"ton",n:"Strajeskoning “to‘p toni”",alt:"Complete AV block · 38/daq",sp:{hr:38,rh:"avb",s1:.9,s2:.6},pt:"Yurak cho‘qqisi",d:"Bradikardiya, I ton kuchi o‘zgaruvchan; bo‘lmacha va qorincha sistolasi bir vaqtga to‘g‘ri kelganda juda baland I ton.",k:"To‘liq AV blokada"},
+  {id:"af",g:"ton",n:"Bo‘lmachalar fibrillyatsiyasi",alt:"Irregularly irregular",sp:{hr:104,rh:"af",s1:.9,s2:.6},pt:"Yurak cho‘qqisi",d:"Tonlar tartibsiz, I ton kuchi har xil; puls soni yurak qisqarishlaridan kam (puls tanqisligi).",k:"Mitral stenoz, IYuK, tireotoksikoz"},
+  {id:"m_mr",g:"mur",n:"Mitral yetishmovchilik",alt:"Holosistolik shovqin",sp:SC.mr.au.m,hr:80,pt:"Cho‘qqi; chap qo‘ltiqqa tarqaladi",d:"Sistolik, I ton bilan qo‘shilib ketadi, puflovchi, butun sistolani egallaydi; chap yonboshda kuchayadi.",k:"Revmatizm, prolaps, endokardit, dilatatsiya"},
+  {id:"m_ms",g:"mur",n:"Mitral stenoz",alt:"Diastolik g‘uvullash",sp:SC.ms.au.m,hr:88,pt:"Cho‘qqi; tarqalmaydi",d:"Mezodiastolik, past, g‘uvullovchi, presistolada kuchayadi; oldidan ochilish toni.",k:"Revmatik mitral stenoz"},
+  {id:"m_as",g:"mur",n:"Aortal stenoz",alt:"Rombsimon sistolik shovqin",sp:SC.as.au.a,hr:64,pt:"II oraliq o‘ngda; uyqu arteriyalariga",d:"Sistolik, dag‘al, arrasimon, kuchayib-pasayuvchi; aorta ustida II ton susaygan.",k:"Degenerativ kalsinoz, ikki tabaqali qopqoq, revmatizm"},
+  {id:"m_ar",g:"mur",n:"Aortal yetishmovchilik",alt:"Protodiastolik shovqin",sp:SC.ar.au.b,hr:84,pt:"Botkin-Erb nuqtasi; cho‘qqiga",d:"Diastolik, II tondan darhol boshlanadi, yumshoq, puflovchi, pasayib boruvchi.",k:"Revmatizm, infeksion endokardit, aorta kengayishi"},
+  {id:"m_tr",g:"mur",n:"Trikuspidal yetishmovchilik",alt:"Rivero-Karvalo belgisi",sp:{hr:88,s1:.5,s2:.5,mur:[["tr",.6]],breath:true},pt:"Xanjarsimon o‘simta asosi",d:"Sistolik shovqin nafas olishda kuchayadi: o‘ng yurakka qon ko‘proq keladi. Pleyerda nafas fazasi ko‘rsatiladi.",k:"O‘ng qorincha dilatatsiyasi, endokardit"},
+  {id:"m_func",g:"mur",n:"Funksional (begunoh) sistolik shovqin",alt:"Innocent murmur",sp:{hr:88,s1:.9,s2:.6,mur:[["func",.45]]},pt:"Cho‘qqi yoki o‘pka arteriyasi ustida",d:"Qisqa, yumshoq, sokin (1–2 daraja), tonlar o‘zgarmagan; holat va yuklama bilan o‘zgaradi.",k:"Anemiya, isitma, tireotoksikoz, o‘smirlar"},
+  {id:"m_fr",g:"mur",n:"Perikard ishqalanish shovqini",alt:"Pericardial friction rub",sp:SC.frik.au.b,hr:96,pt:"To‘sh chap chekkasi (mutlaq to‘mtoqlik)",d:"Qirsillovchi, sistola va diastolada, tarqalmaydi; bosganda kuchayadi, nafasni ushlaganda saqlanadi.",k:"Quruq perikardit, uremiya"}
+];
+LIB.forEach(o=>{ if(o.hr) o.sp=Object.assign({},o.sp,{hr:o.hr}); });
+const LIBM=Object.fromEntries(LIB.map(o=>[o.id,o]));
+
+/* Puls turlari */
+const PT={
+  norm:{n:"Me’yoriy puls",hr:72,up:.1,A:1,tau:.45,nb:.12,tn:.36,t:"Ritmik, 72/daq, o‘rtacha to‘lgan va tarang. To‘lqin tez ko‘tariladi, cho‘qqidan keyin dikrotik tishcha bor."},
+  celer:{n:"Tez va baland puls (celer et altus)",hr:84,up:.065,A:1.75,tau:.17,nb:.04,tn:.3,t:"To‘lqin keskin ko‘tarilib, tez tushadi: barmoq ostida “suv bolg‘asi” zarbasi. Aortal yetishmovchilikka xos (Korrigan pulsi)."},
+  tardus:{n:"Sekin va kichik puls (tardus et parvus)",hr:62,up:.27,A:.55,tau:.6,nb:.02,tn:.45,t:"To‘lqin sekin ko‘tariladi, cho‘qqisi kech va past. Aortal stenozga xos."},
+  paradox:{n:"Paradoksal puls",hr:104,up:.1,A:.85,tau:.35,nb:.06,tn:.32,resp:.55,t:"Nafas olishda puls to‘lqini keskin kichrayadi (sistolik bosim 10 mm sim. ust. dan ko‘p tushadi). Yurak tamponadasi, ekssudativ va konstriktiv perikardit, og‘ir astma xuruji."},
+  alt:{n:"Almashinuvchi puls (alternans)",hr:92,up:.1,A:1,tau:.4,nb:.08,tn:.33,alt:.5,t:"Katta va kichik to‘lqinlar ritmik almashinadi. Chap qorincha miokardining og‘ir zararlanishi belgisi."},
+  af:{n:"Aritmik puls, puls tanqisligi",hr:118,up:.09,A:1,tau:.38,nb:.06,tn:.3,af:true,t:"Bo‘lmachalar fibrillyatsiyasi: to‘lqinlar tartibsiz va har xil kattalikda. Qisqa diastoladan keyingi qisqarishlar arteriyaga yetarli qon haydamaydi, shuning uchun puls soni yurak qisqarishlaridan kam."},
+  fil:{n:"Ipsimon puls (filiformis)",hr:128,up:.08,A:.28,tau:.3,nb:.02,tn:.28,t:"Juda tez, kichik va kam to‘lgan, zo‘rg‘a seziladi. Shok, kollaps, katta qon yo‘qotish."}
+};
+
+/* AB o‘lchash uchun bemorlar */
+const BPP=[
+  {id:"n",n:"Sog‘lom ayol, 34 yosh",s:118,d:76,hr:72},
+  {id:"ag",n:"Erkak, 58 yosh: bosh og‘rig‘i",s:166,d:104,hr:78},
+  {id:"gap",n:"Ayol, 67 yosh: uzoq yillik gipertenziya",s:184,d:98,gap:[160,138],hr:70},
+  {id:"ar",n:"Erkak, 31 yosh: aortal yetishmovchilik",s:164,d:44,inf:true,hr:84}
+];
+
+/* Nuqsonlar jadvali */
+const MX={
+  cols:[["ms","Mitral stenoz"],["mr","Mitral yetishmovchilik"],["as","Aortal stenoz"],["ar","Aortal yetishmovchilik"]],
+  rows:[
+    ["Gemodinamika",["Chap bo‘lmachada bosim ↑ → o‘pka gipertenziyasi → o‘ng qorincha gipertrofiyasi","Chap bo‘lmacha va chap qorincha hajm yuklamasi, dilatatsiya","Chap qorincha bosim yuklamasi, konsentrik gipertrofiya","Chap qorincha hajm yuklamasi, eksentrik gipertrofiya va kuchli dilatatsiya"]],
+    ["Shikoyatlar",["Erta hansirash, yo‘tal, qon tupurish, yurak urib ketishi","Uzoq yo‘q; hansirash, yurak urib ketishi","Stenokardiya, sinkope, hansirash","Yurak urib ketishi, bo‘yinda pulsatsiya, bosh aylanishi"]],
+    ["Ko‘rik",["Facies mitralis, yurak turtkisi, epigastral pulsatsiya","Cho‘qqi turtkisi kuchaygan","Teri oqargan","“Karotidalar raqsi”, Myusse, Kvinke belgilari"]],
+    ["Paypaslash",["Cho‘qqida diastolik “mushuk xirillashi”, turtki kuchsiz","Cho‘qqi turtkisi chapga, keng, kuchli","II oraliq o‘ngda sistolik titrash; turtki rezistent","Turtki chapga va pastga, “gumbazsimon”"]],
+    ["Perkussiya",["Chegaralar yuqoriga va o‘ngga; mitral konfiguratsiya","Chapga va yuqoriga; mitral konfiguratsiya","Chapga (o‘rtacha); aortal konfiguratsiya","Chapga va pastga keskin; aortal konfiguratsiya"]],
+    ["Auskultatsiya",["Qarsillovchi I ton, ochilish toni, presistolik kuchayuvchi diastolik shovqin; o‘pka arteriyasi ustida II ton aksenti","I ton susaygan, cho‘qqida qo‘ltiqqa tarqaluvchi sistolik shovqin; o‘pka arteriyasi ustida II ton aksenti","II oraliq o‘ngda dag‘al rombsimon sistolik shovqin, uyqu arteriyalariga; aortada II ton susaygan","Botkin-Erb nuqtasida protodiastolik shovqin; aortada II ton susaygan"]],
+    ["Puls va AB",["Puls kichik, pulsus differens, ko‘pincha bo‘lmachalar fibrillyatsiyasi","O‘zgarmagan","Pulsus tardus et parvus; puls bosimi kichik","Pulsus celer, altus, magnus; sistolik ↑, diastolik ↓↓"]]
+  ],
+  play:{ms:[["m","Cho‘qqi"],["p","O‘pka arteriyasi"]],mr:[["m","Cho‘qqi"],["q","Qo‘ltiq osti"]],as:[["a","II oraliq o‘ngda"],["k","Uyqu arteriyasi"]],ar:[["b","Botkin-Erb"],["a","II oraliq o‘ngda"]]}
+};
+
+/* Klinik holatlar */
+const CASES=[
+  {sc:"ms",who:"Ayol, 32 yosh",steps:[
+    ["Shikoyat va anamnez","So‘nggi yilda zo‘riqishda hansirash, kechasi yo‘tal, ikki marta balg‘amda qon tolalari, yurak urib ketishi. Bolaligida tez-tez angina bilan og‘rigan, 14 yoshida bo‘g‘imlari og‘rigan."],
+    ["Ko‘rik","Yonoqlarda ko‘kimtir-qizil dog‘, lablar sianozi. To‘sh chap chekkasida va epigastral sohada pulsatsiya."],
+    ["Paypaslash","Cho‘qqi turtkisi V oraliqda, chegaralangan, kuchsiz. Cho‘qqida titrash: uyqu arteriyasidagi pulsdan keyin, keyingi zarbadan oldin seziladi."],
+    ["Perkussiya","Yuqori chegara II qovurg‘ada, o‘ng chegara to‘sh o‘ng chekkasidan 3 sm tashqarida, chap chegara o‘zgarmagan. Yurak beli tekislangan."],
+    ["Auskultatsiya",["m","p","b"]],
+    ["Puls va AB","88/daq, ritmik, kichik, chap qo‘lda kichikroq. AB 110/75 mm sim. ust."]],
+    opts:["Mitral stenoz","Mitral qopqoq yetishmovchiligi","Aortal stenoz","Aorta qopqog‘i yetishmovchiligi","Ekssudativ perikardit"],ans:0,
+    ex:"Facies mitralis, qon tupurish, cho‘qqida diastolik titrash, chegaralarning yuqoriga va o‘ngga siljishi hamda “bedana ritmi” bilan presistolada kuchayuvchi diastolik shovqin — mitral stenoz. O‘pka arteriyasi ustidagi II ton aksenti o‘pka gipertenziyasini ko‘rsatadi. Tasdiq: ExoKG (teshik maydoni 1,5 sm² dan kam — ahamiyatli stenoz)."},
+  {sc:"mr",who:"Erkak, 46 yosh",steps:[
+    ["Shikoyat va anamnez","Zo‘riqishda hansirash, yurak urib ketishi, holsizlik. Yoshligida revmatik isitma o‘tkazgan."],
+    ["Ko‘rik","Cho‘qqi turtkisi ko‘rinadi, kuchaygan."],
+    ["Paypaslash","Cho‘qqi turtkisi V oraliqda o‘rta-o‘mrov chizig‘idan 1 sm tashqarida, keng, kuchli."],
+    ["Perkussiya","Chap chegara chapga, yuqori chegara II oraliqgacha siljigan; yurak beli tekislangan."],
+    ["Auskultatsiya",["m","q","p"]],
+    ["Puls va AB","80/daq, ritmik. AB 125/80 mm sim. ust."]],
+    opts:["Mitral stenoz","Mitral qopqoq yetishmovchiligi","Aortal stenoz","Funksional sistolik shovqin","Trikuspidal yetishmovchilik"],ans:1,
+    ex:"Cho‘qqida I tonning susayishi, I ton bilan qo‘shilib ketuvchi va chap qo‘ltiq osti sohasiga tarqaluvchi puflovchi sistolik shovqin, III ton, o‘pka arteriyasi ustida II ton aksenti va chegaralarning chapga hamda yuqoriga siljishi — mitral qopqoq yetishmovchiligi. Funksional shovqin tonlarni o‘zgartirmaydi va yurak chegaralari kengaymaydi."},
+  {sc:"as",who:"Erkak, 71 yosh",steps:[
+    ["Shikoyat va anamnez","Zo‘riqishda to‘sh ortida siquvchi og‘riq, zinadan chiqqanda ikki marta hushdan ketgan, so‘nggi oylarda hansirash."],
+    ["Ko‘rik","Teri oqargan."],
+    ["Paypaslash","Cho‘qqi turtkisi biroz chapga siljigan, kuchli, rezistent. II oraliqda to‘shdan o‘ngda titrash, uyqu arteriyasidagi puls bilan bir vaqtda."],
+    ["Perkussiya","Chap chegara 1 sm chapga, yurak beli chuqurlashgan."],
+    ["Auskultatsiya",["a","k","m"]],
+    ["Puls va AB","64/daq, ritmik, sekin ko‘tariladi va kichik. AB 105/85 mm sim. ust."]],
+    opts:["Arterial gipertenziya","Aortal stenoz","Aorta qopqog‘i yetishmovchiligi","Mitral qopqoq yetishmovchiligi","Stenokardiya, qopqoq nuqsonisiz"],ans:1,
+    ex:"Stenokardiya, sinkope va hansirash triadasi, II oraliqda o‘ngda uyqu arteriyalariga tarqaluvchi dag‘al rombsimon sistolik shovqin va sistolik titrash, aorta ustida II tonning susayishi, pulsus tardus et parvus va kichik puls bosimi — aortal stenoz. Simptomli og‘ir aortal stenoz qopqoqni almashtirishga ko‘rsatma hisoblanadi."},
+  {sc:"ar",who:"Erkak, 29 yosh",steps:[
+    ["Shikoyat va anamnez","Yurak urib ketishi, bo‘yinda pulsatsiya hissi, bosh aylanishi. 2 yil oldin infeksion endokardit bilan davolangan."],
+    ["Ko‘rik","Uyqu arteriyalarining kuchli pulsatsiyasi, boshning yurak urishiga mos tebranishi, tirnoq ostida kapillyar pulsatsiya."],
+    ["Paypaslash","Cho‘qqi turtkisi VI oraliqda, o‘rta-o‘mrov chizig‘idan 2 sm tashqarida, keng, baland, kuchli, rezistent."],
+    ["Perkussiya","Chap chegara chapga va pastga keskin siljigan, yurak beli chuqurlashgan, tomir tutami kengaygan."],
+    ["Auskultatsiya",["b","a","m"]],
+    ["Puls va AB","84/daq, tez va baland. AB 165/40 mm sim. ust."]],
+    opts:["Aortal stenoz","Aorta qopqog‘i yetishmovchiligi","Mitral stenoz","Tireotoksikoz","Arterial gipertenziya"],ans:1,
+    ex:"Periferik belgilar (karotidalar raqsi, Myusse, Kvinke), chapga va pastga siljigan gumbazsimon cho‘qqi turtkisi, aortal konfiguratsiya, Botkin-Erb nuqtasida II tondan darhol boshlanuvchi protodiastolik shovqin, pulsus celer et altus va katta puls bosimi (165/40) — aorta qopqog‘i yetishmovchiligi. O‘tkazilgan endokardit qopqoq tabaqalarini yemirgan."},
+  {sc:"rk",who:"Qiz, 16 yosh",steps:[
+    ["Shikoyat va anamnez","2,5 hafta oldin angina o‘tkazgan. Hozir isitma 38,2 °C, tizza va to‘piq bo‘g‘imlarida ko‘chib yuruvchi og‘riq, yurak urib ketishi, holsizlik."],
+    ["Ko‘rik","O‘ng tizza va chap to‘piq bo‘g‘imi shishgan, qizargan, harakat og‘riqli. Teri rangpar."],
+    ["Paypaslash","Cho‘qqi turtkisi biroz chapga siljigan, susaygan, tarqoq."],
+    ["Perkussiya","Chap chegara 1 sm chapga siljigan."],
+    ["Auskultatsiya",["m","b"]],
+    ["Puls va AB","112/daq, ritmik, yumshoq. AB 105/65 mm sim. ust. Qonda EChT 48 mm/soat, antistreptolizin-O titri oshgan."]],
+    opts:["Infeksion endokardit","O‘tkir revmatik isitma, birlamchi revmokardit","Mitral stenoz","Quruq perikardit","Anemiyadagi funksional shovqin"],ans:1,
+    ex:"Streptokokkli anginadan 2–3 hafta keyin ko‘chib yuruvchi poliartrit va kardit belgilari (isitmaga nisbatan ortiq taxikardiya, bo‘g‘iq tonlar, I tonning susayishi, III ton, cho‘qqida yumshoq sistolik shovqin) hamda streptokokk infeksiyasining laborator tasdig‘i — o‘tkir revmatik isitma, birlamchi revmokardit (Djons mezonlari: kardit va poliartrit)."},
+  {sc:"ar",who:"Erkak, 38 yosh",steps:[
+    ["Shikoyat va anamnez","3 haftadan beri kechqurun 38,5–39 °C gacha isitma, titroq, ko‘p terlash, ozish, holsizlik. Isitmadan 2 hafta oldin tish olingan."],
+    ["Ko‘rik","Teri oqargan, “sutli kofe” tusida. Konyunktivada nuqtali qon quyilishlar (Lukin-Libman belgisi). Barmoq uchlarida og‘riqli qizil tugunchalar (Osler), kaftlarda og‘riqsiz dog‘lar (Djeyneyn)."],
+    ["Paypaslash","Cho‘qqi turtkisi biroz chapga siljigan. Taloq paypaslanadi."],
+    ["Perkussiya","Chap chegara 1 sm chapga siljigan."],
+    ["Auskultatsiya",["b","a"]],
+    ["Puls va AB","104/daq, tez. AB 140/55 mm sim. ust."]],
+    opts:["O‘tkir revmatik isitma","Infeksion endokardit, aorta qopqog‘i zararlangan","Aortal stenoz","Sepsis, yurak zararlanmagan","Mitral stenoz"],ans:1,
+    ex:"Uzoq isitma va titroq, tish olinishidan keyin bakteriemiya ehtimoli, periferik belgilar (Osler tugunchalari, Djeyneyn dog‘lari, Lukin-Libman belgisi), splenomegaliya va yangi paydo bo‘lgan regurgitatsiya (aortal) diastolik shovqini — infeksion endokardit. Tasdiq: qon ekmalari (kamida 3 marta) va ExoKG da vegetatsiyalar (Dyuk mezonlari)."},
+  {sc:"frik",who:"Erkak, 24 yosh",steps:[
+    ["Shikoyat va anamnez","Bir hafta oldin shamollagan. Yurak sohasida o‘tkir sanchuvchi og‘riq: nafas olganda va chalqancha yotganda kuchayadi, oldinga egilganda kamayadi. Harorat 37,6 °C."],
+    ["Ko‘rik","Bemor oldinga egilib o‘tiradi, nafas yuzaki."],
+    ["Paypaslash","To‘sh chap chekkasida g‘adir-budir titrash."],
+    ["Perkussiya","Chegaralar o‘zgarmagan."],
+    ["Auskultatsiya",["b","m"]],
+    ["Puls va AB","96/daq, ritmik. AB 115/75 mm sim. ust."]],
+    opts:["Miokard infarkti","Quruq (fibrinoz) perikardit","Plevroperikardial shovqin bilan quruq plevrit","Ekssudativ perikardit","Aorta qopqog‘i yetishmovchiligi"],ans:1,
+    ex:"Holatga bog‘liq o‘tkir og‘riq va to‘sh chap chekkasida, mutlaq to‘mtoqlik sohasida eshitiladigan, hech qayerga tarqalmaydigan, sistola va diastolada qirsillovchi shovqin — perikard ishqalanish shovqini, quruq perikardit. Plevroperikardial shovqindan farqi: nafasni ushlaganda yo‘qolmaydi. Ekssudat to‘planganda shovqin yo‘qolib, tonlar bo‘g‘iqlashadi."}
+];
+
+/* =========================================================
+   UMUMIY: tovush tugmalari
+   ========================================================= */
+function playSpec(spec,btn){
+  if(btn && btn.classList.contains("on")){ stop(); return; }
+  const [k,a,b]=spec.split(":"); let v=null, title="", sub="";
+  if(k==="lib"){ const o=LIBM[a]; v=playHeart(o.sp); title=o.n; sub=o.pt; }
+  else if(k==="sc"){ const s=SC[a]; v=playHeart(Object.assign({hr:s.hr,rh:s.rh},s.au[b])); title=s.name; sub=AP[b].n; }
+  else if(k==="perc"){ v=playPerc(a); title=PKN[a]; }
+  if(!v) return;
+  if(btn){ btn.classList.add("on"); playBtn=btn; }
+  startPlayer((btn&&btn.dataset.title)||title,(btn&&btn.dataset.sub)||sub);
+}
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-play]"); if(!b) return; playSpec(b.dataset.play,b); });
+function svgPt(svg,e){ const p=svg.createSVGPoint(); p.x=e.clientX; p.y=e.clientY; const q=p.matrixTransform(svg.getScreenCTM().inverse()); return [q.x,q.y]; }
+const lc1=t=>/^[IVX]+ /.test(t)?t:t[0].toLowerCase()+t.slice(1);
+const fmt=n=>(Math.round(n*10)/10).toString().replace(".",",");
+function levelName(L){ const k=Math.floor(L), f=L-k; if(L<1) return "I qovurg‘adan yuqorida"; if(f<.25) return `${RN[k]||"VII"} qovurg‘a sathi`; if(f>.75) return `${RN[k+1]||"VII"} qovurg‘a sathi`; return `${RN[k]||"VII"} qovurg‘alararo oraliq`; }
+function mclName(x){ if(x<0) return "to‘shning o‘ng tomonida"; const d=x-9.5; if(Math.abs(d)<.3) return "o‘rta-o‘mrov chizig‘ida"; return d<0?`o‘rta-o‘mrov chizig‘idan ${fmt(-d)} sm ichkarida`:`o‘rta-o‘mrov chizig‘idan ${fmt(d)} sm tashqarida`; }
+
+/* =========================================================
+   01 · VIRTUAL BEMOR
+   ========================================================= */
+const VP={mode:"ausk",sc:"norm",hide:false,reveal:false,sel:null,marks:[],last:null};
+const IMPT=["Sezilmaydi","Kuchsiz","O‘rtacha","Kuchli, ko‘taruvchi"];
+const THT={s:"Sistolik: uyqu arteriyasi pulsi bilan bir vaqtda",d:"Diastolik: pulsdan keyin, keyingi zarbadan oldin",sd:"Sistola va diastolada, g‘adir-budir (ishqalanish)"};
+const AP5L=["Joyi","Maydoni","Balandligi","Kuchi","Rezistentligi"];
+$("#scSel").innerHTML=SC_ORDER.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+$("#dxSel").innerHTML=`<option value="">— tanlang —</option>`+SC_ORDER.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+function vpHidden(){ return VP.hide&&!VP.reveal; }
+function renderVP(focusK){
+  const s=SC[VP.sc], g=s.geo, hid=vpHidden(), svg=$("#vpSvg");
+  svg.classList.toggle("perc",VP.mode==="perk");
+  let h=chestSVG();
+  if(VP.mode==="perk" && !hid) h+=`<path class="heart-rel" d="${smooth(toPx(relPts(g)))}"/><path class="heart-abs" d="${smooth(toPx(absPts(g)))}"/>`;
+  if(VP.mode!=="perk" && $("#valvF").checked && !hid) h+=`<path class="heart-rel" style="opacity:.45" d="${smooth(toPx(relPts(g)))}"/>`+(VP.mode==="ausk"?valvesSVG():"");
+  if(VP.mode==="palp" && s.apR){ const a0=apexOf(VP.sc); h+=`<circle class="apring" style="--T:${(60/s.hr).toFixed(3)}s" cx="${PX(a0.x)}" cy="${PY(a0.L,a0.x)}" r="${(8+s.apR*SCL).toFixed(1)}"/>`; }
+  h+=VP.marks.map(m=>`<circle class="pmark ${m.k}" cx="${m.x}" cy="${m.y}" r="4.5"/>`).join("");
+  const ap=apexOf(VP.sc);
+  if(VP.mode==="ausk") for(const k of Object.keys(AP)){ const p=AP[k]; h+=ptSVG(k,k==="m"?ap.x:p.x,k==="m"?ap.L:p.L,p.lab,p.n,VP.sel===k); }
+  if(VP.mode==="palp") for(const k of Object.keys(PP)){ const p=PP[k]; h+=ptSVG(k,k==="apex"?ap.x:p.x,k==="apex"?ap.L:p.L,"",p.n,VP.sel===k); }
+  svg.innerHTML=h;
+  if(focusK){ const el=svg.querySelector(`.pt[data-k="${focusK}"]`); if(el) el.focus(); }
+  $("#vpName").textContent=hid?"Noma’lum bemor":s.name;
+  $("#vpSh").textContent=s.sh; $("#vpKo").textContent=s.ko; $("#vpPu").textContent=s.pu; $("#vpAB").textContent=s.ab;
+  $("#vpHint").textContent=VP.mode==="perk"?"Istalgan joyni bosing":"Nuqtani bosing";
+  $("#vpLeg").innerHTML=VP.mode==="perk"?`<span><i style="background:var(--insp)"></i>Aniq</span><span><i style="background:var(--exp)"></i>Bo‘g‘iqlashgan</span><span><i style="background:var(--bad)"></i>To‘mtoq</span>${hid?"":`<span class="muted">Sariq soha: nisbiy, qizil: mutlaq to‘mtoqlik</span>`}`:"";
+  $("#vpDx").hidden=!VP.hide; $("#scSel").hidden=VP.hide;
+  showSel();
+}
+function showSel(){
+  const s=SC[VP.sc], hid=vpHidden(), k=VP.sel, palm=$("#vpPalm");
+  if(VP.mode==="perk"){ palm.hidden=true; $("#vpPtT").textContent="Perkussiya"; $("#vpPt").textContent=VP.last?PKN[VP.last]:"Ko‘krak qafasining istalgan joyini bosing va tovushni solishtiring.";
+    $("#vpRes").textContent=hid?"Mashq rejimi: chegaralarni tovush bo‘yicha o‘zingiz toping.":s.perk; return; }
+  if(!k){ palm.hidden=true; $("#vpPtT").textContent="Tanlangan nuqta"; $("#vpPt").textContent="Rasmdagi nuqtani tanlang."; $("#vpRes").textContent=""; return; }
+  if(VP.mode==="palp"){ const [imp,th]=s.pm[k]||[0,null]; $("#vpPtT").textContent=PP[k].n; $("#vpPt").textContent="Kaft ostidagi his pastda: zarba va titrash uyqu arteriyasi pulsi bilan solishtiriladi.";
+    palm.hidden=false; $("#vpHow").textContent=PHOW[k];
+    $("#vpSense").innerHTML=(k==="apex"?s.ap5.map((v,i)=>`<dt>${AP5L[i]}</dt><dd>${esc(v)}</dd>`).join("")+`<dt>Titrash</dt><dd>${th?esc(THT[th]):"Yo‘q"}</dd>`
+      :`<dt>Zarba</dt><dd>${IMPT[imp]}</dd><dt>Titrash</dt><dd>${th?esc(THT[th]):"Yo‘q"}</dd>`);
+    $("#vpPalmT").innerHTML=hid?"<span class=\"muted\">Mashq rejimi: topilmani o‘zingiz izohlang.</span>":`<b>Izoh:</b> ${esc(s.palp[k])}`; $("#vpRes").textContent=""; palpStart(); }
+  else { palm.hidden=true; $("#vpPtT").textContent=AP[k].n; $("#vpPt").textContent="Pastdagi pleyerda sistola va diastola ranglar bilan ko‘rsatiladi.";
+    $("#vpRes").textContent=hid?"Mashq rejimi: eshitganingizni o‘zingiz tavsiflang.":s.tx[k]; }
+}
+function vpSelect(k,kb){
+  VP.sel=k; renderVP(kb?k:null);
+  if(VP.mode==="ausk"){ const s=SC[VP.sc]; const v=playHeart(Object.assign({hr:s.hr,rh:s.rh},s.au[k])); if(v) startPlayer(vpHidden()?"Noma’lum bemor":s.name,AP[k].n); }
+}
+function classify(p){
+  const g=SC[VP.sc].geo, c=fromPx(p[0],p[1]);
+  if(c.y<1.2||Math.abs(c.x)>14.6||c.y>costalY(c.x)+.3) return null;
+  if(inPoly(p,toPx(absPts(g)))) return "tomtoq";
+  if(inPoly(p,toPx(relPts(g)))) return "bogiq";
+  if(c.x<-.3 && c.L>5.6) return "tomtoq";
+  return "aniq";
+}
+/* Paypaslash: uyqu arteriyasi pulsi va kaft ostidagi his vaqt bo‘yicha */
+const PL={raf:0,t0:0};
+function palpF(){ const s=SC[VP.sc], [imp,th]=s.pm[VP.sel]||[0,null], T=60/s.hr; return {s,imp,th,T,sys:sysOf(T),ka:Math.max(.45,Math.min(1.3,((s.pm.k||[2])[0]||1)/2))}; }
+function impAt(u,f){ if(!f.imp) return 0; const a=f.imp/3, pk=.07, dur=f.imp===3?.3:.2; if(u<pk) return a*Math.sin(Math.PI/2*u/pk); return u<dur?a*(1-(u-pk)/(dur-pk)):0; }
+function carAt(u,f){ const c=.11; return f.ka*(Math.exp(-Math.pow((u-c)/.05,2))+.25*Math.exp(-Math.pow((u-c-.13)/.06,2))); }
+function thAt(u,f){ const t2=f.sys;
+  if(f.th==="s") return (u>.05&&u<t2-.03)?Math.sin(Math.PI*(u-.05)/(t2-.08)):0;
+  if(f.th==="d"){ if(u<t2+.1) return 0; const x=(u-t2-.1)/(f.T-t2-.1); return f.s.rh==="af"?(x<.6?.75*(1-x/.6):0):(x<.45?.55*(1-x/.45)+.2:.25+.75*(x-.45)/.55); }
+  if(f.th==="sd") return ((u>.06&&u<t2-.05)||(u>t2+.06&&u<t2+.2)||(u>f.T-.11&&u<f.T-.03))?.8:0;
+  return 0; }
+function palpStart(){ if(!PL.raf){ PL.t0=performance.now(); PL.raf=requestAnimationFrame(palpLoop); } }
+function palpLoop(now){
+  if(VP.mode!=="palp"||!VP.sel||$("#vpPalm").hidden){ PL.raf=0; return; }
+  const f=palpF(), cv=$("#vpPc"), dpr=window.devicePixelRatio||1, w=cv.clientWidth, h=cv.clientHeight;
+  if(w){ if(cv.width!==Math.round(w*dpr)){ cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr); }
+    const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+    const N=3, span=f.T*N, L0=58, X=t=>L0+t/span*(w-L0-6), tc=((now-PL.t0)/1000)%span;
+    for(let k=0;k<N;k++){ x.globalAlpha=.14; x.fillStyle=css("--sys"); x.fillRect(X(k*f.T),0,X(k*f.T+f.sys)-X(k*f.T),h); x.globalAlpha=1; }
+    x.font="10px "+css("--f-mono"); x.fillStyle=css("--muted"); x.textAlign="left";
+    x.fillText("Uyqu art.",4,h*.3); x.fillText("Kaft",4,h*.78); x.fillText("sistola",X(.02),11);
+    const row=(y0,amp,fn,col)=>{ x.strokeStyle=col; x.lineWidth=2; x.beginPath(); for(let px=L0;px<=w-6;px+=1.5){ const t=(px-L0)/(w-L0-6)*span, y=y0-fn(t%f.T,f)*amp; px===L0?x.moveTo(px,y):x.lineTo(px,y); } x.stroke(); };
+    x.fillStyle=css("--line"); x.fillRect(L0,h*.38,w-L0-6,1); x.fillRect(L0,h*.9,w-L0-6,1);
+    row(h*.38,h*.27,carAt,css("--accent"));
+    if(f.th){ x.strokeStyle=css("--bad"); x.lineWidth=1; let sd=5; for(let px=L0;px<=w-6;px+=2){ const t=(px-L0)/(w-L0-6)*span, a=thAt(t%f.T,f); if(a<=0) continue; sd=(sd*16807)%2147483647; const hh=a*h*.14*(.5+.5*sd/2147483647); x.beginPath(); x.moveTo(px,h*.9-hh); x.lineTo(px,h*.9); x.stroke(); } }
+    row(h*.9,h*.3,impAt,css("--good"));
+    x.fillStyle=css("--ink"); x.fillRect(X(tc)-1,0,2,h);
+    const u=tc%f.T, hand=$("#vpHand"); hand.style.transform=`scale(${(1+impAt(u,f)*.22).toFixed(3)})`;
+    hand.className="hand"+(f.imp?"":" none"); hand.querySelector("i").className=thAt(u,f)>.05?"vib":"";
+  }
+  PL.raf=requestAnimationFrame(palpLoop);
+}
+$("#valvF").addEventListener("change",()=>renderVP());
+$("#vpSvg").addEventListener("click",e=>{
+  if(VP.mode==="perk"){ const p=svgPt($("#vpSvg"),e), kind=classify(p); if(!kind) return;
+    VP.last=kind; VP.marks.push({x:p[0].toFixed(1),y:p[1].toFixed(1),k:kind}); if(VP.marks.length>16) VP.marks.shift(); renderVP();
+    if(playPerc(kind)) startPlayer(PKN[kind],"Perkussiya"); return; }
+  const pt=e.target.closest(".pt"); if(pt) vpSelect(pt.dataset.k);
+});
+$("#vpSvg").addEventListener("keydown",e=>{ const pt=e.target.closest(".pt"); if(pt&&(e.key==="Enter"||e.key===" ")){ e.preventDefault(); vpSelect(pt.dataset.k,true); } });
+$$("[data-mode]").forEach(b=>b.addEventListener("click",()=>{ VP.mode=b.dataset.mode; VP.sel=null; $$("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",x===b)); stop(); renderVP(); }));
+$("#scSel").addEventListener("change",e=>{ VP.sc=e.target.value; VP.sel=null; VP.marks=[]; VP.last=null; stop(); renderVP(); });
+function vpNew(){ const pool=SC_ORDER.filter(x=>x!==VP.sc); VP.sc=pool[Math.floor(Math.random()*pool.length)]; VP.reveal=false; VP.sel=null; VP.marks=[]; VP.last=null; $("#dxSel").value=""; $("#dxFb").hidden=true; stop(); renderVP(); }
+$("#hideF").addEventListener("change",e=>{ VP.hide=e.target.checked; if(VP.hide) vpNew(); else { VP.reveal=false; $("#scSel").value=VP.sc; renderVP(); } });
+$("#dxNew").addEventListener("click",vpNew);
+$("#dxShow").addEventListener("click",()=>{ VP.reveal=true; renderVP(); });
+$("#dxChk").addEventListener("click",()=>{
+  const v=$("#dxSel").value, fb=$("#dxFb"); if(!v){ fb.hidden=false; fb.className="fb"; fb.textContent="Avval tashxisni tanlang."; return; }
+  const s=SC[VP.sc], ok=v===VP.sc; fb.hidden=false; fb.className="fb "+(ok?"ok":"no");
+  fb.textContent=(ok?"To‘g‘ri! ":`Noto‘g‘ri. Bu bemorda: ${s.name}. `)+"Asosiy belgilar: "+s.key;
+  VP.reveal=true; renderVP();
+});
+
+/* =========================================================
+   02 · CHO‘QQI TURTKISI MASHQI
+   ========================================================= */
+const APS={sc:"norm",u:null,show:false};
+const AP_LIST=["norm","mr","as","ar","dkmp","tir"];
+$("#apSel").innerHTML=AP_LIST.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+function renderAp(){
+  const t=apexOf(APS.sc); let h=chestSVG();
+  if(APS.show||APS.u) { if(APS.show) h+=`<circle class="ap-true" cx="${PX(t.x)}" cy="${PY(t.L,t.x)}" r="10"/>`; }
+  if(APS.u) h+=`<circle class="ap-user" cx="${APS.u[0].toFixed(1)}" cy="${APS.u[1].toFixed(1)}" r="5"/>`;
+  $("#apSvg").innerHTML=h;
+}
+$("#apSvg").addEventListener("click",e=>{
+  const p=svgPt($("#apSvg"),e), c=fromPx(p[0],p[1]); APS.u=p;
+  const t=apexOf(APS.sc), ok=Math.abs(c.L-t.L)<=.3&&Math.abs(c.x-t.x)<=1.2;
+  const fb=$("#apFb"); fb.className="fb "+(ok?"ok":"no");
+  fb.textContent=`Siz tanlagan joy: ${levelName(c.L)}, ${mclName(c.x)}. `+(ok?"To‘g‘ri! ":"Noto‘g‘ri. ")+`Bu bemorda cho‘qqi turtkisi: ${SC[APS.sc].palp.apex}`;
+  APS.show=true; renderAp();
+});
+$("#apSel").addEventListener("change",e=>{ APS.sc=e.target.value; APS.u=null; APS.show=false; $("#apFb").className="fb"; $("#apFb").textContent="Ko‘krak qafasining kerakli joyini bosing."; renderAp(); });
+$("#apShow").addEventListener("click",()=>{ APS.show=true; renderAp(); const fb=$("#apFb"); fb.className="fb"; fb.textContent=`Javob: ${SC[APS.sc].palp.apex}`; });
+
+/* =========================================================
+   03 · PERKUSSIYA MASHQI
+   ========================================================= */
+const PK_LIST=["norm","ms","mr","as","ar","tr","dkmp","per"];
+const PKS={sc:"norm",hide:false,step:"r",tap:{r:{},u:{},l:{}},mark:{r:null,u:null,l:null},ok:{},sel:null};
+$("#pkSel").innerHTML=PK_LIST.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+const UL={1.5:"I qovurg‘alararo oraliq",2:"II qovurg‘a",2.5:"II qovurg‘alararo oraliq",3:"III qovurg‘a",3.5:"III qovurg‘alararo oraliq",4:"IV qovurg‘a"};
+function pkPos(step){
+  const g=SC[PKS.sc].geo;
+  if(step==="r") return [-9.5,-8,-6.5,-5.5,-4.75,-4,-3.25,-2.5].map(x=>({x,L:4.5,lab:x===-9.5?"O‘ng o‘rta-o‘mrov chizig‘i":`To‘sh o‘ng chekkasidan ${fmt(-x-SX)} sm`,kind:x>=g.r?"bogiq":"aniq"}));
+  if(step==="u") return [1.5,2,2.5,3,3.5,4].map(L=>({x:3,L,lab:UL[L],kind:L>=g.up?"bogiq":"aniq"}));
+  return [13.5,12.5,11.5,10.5,9.5,8.5,7.5,6.5].map(x=>({x,L:g.aL,lab:x===13.5?"Oldingi qo‘ltiq osti chizig‘i":x===9.5?"O‘rta-o‘mrov chizig‘i":x>9.5?`O‘rta-o‘mrov chizig‘idan ${fmt(x-9.5)} sm tashqarida`:`O‘rta-o‘mrov chizig‘idan ${fmt(9.5-x)} sm ichkarida`,kind:x<=g.l?"bogiq":"aniq"}));
+}
+const pkAns=step=>pkPos(step).findIndex(p=>p.kind==="bogiq");
+function pkInst(){
+  const g=SC[PKS.sc].geo;
+  return {r:"O‘ng chegara. Avval o‘ng o‘rta-o‘mrov chizig‘i bo‘ylab o‘pkaning pastki chegarasi (VI qovurg‘a) topiladi, so‘ng bir oraliq yuqoriga, IV oraliqqa ko‘tarilib, plessimetr to‘shga parallel holda medial tomonga suriladi.",
+    u:"Yuqori chegara. Chap to‘sh yoni chizig‘i bo‘ylab I oraliqdan pastga, plessimetr qovurg‘alarga parallel qo‘yiladi.",
+    l:`Chap chegara. ${RN[Math.floor(g.aL)]} oraliqda (cho‘qqi turtkisi sathida) oldingi qo‘ltiq osti chizig‘idan to‘sh tomon, plessimetr vertikal qo‘yiladi.`}[PKS.step];
+}
+function renderPk(){
+  const s=SC[PKS.sc], g=s.geo, pos=pkPos(PKS.step), allOk=PKS.ok.r&&PKS.ok.u&&PKS.ok.l;
+  $$("#pkStep button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.st===PKS.step));
+  $("#pkInst").textContent=pkInst();
+  $("#pkHint").textContent=PKS.hide&&!allOk?"Noma’lum bemor":s.name;
+  $("#pkLv").innerHTML=pos.map((p,i)=>{ const tp=PKS.tap[PKS.step][i]; const mk=PKS.mark[PKS.step]===i;
+    const cls=["lv","pk",tp?"show-"+p.kind:"",PKS.sel===i?"sel":"",mk&&PKS.ok[PKS.step]===true?"correct":mk&&PKS.ok[PKS.step]===false?"mark":""].filter(Boolean).join(" ");
+    return `<button type="button" class="${cls}" data-i="${i}"><span>${esc(p.lab)}</span><span class="bar"></span><span class="m">${mk?"◆":""}</span></button>`; }).join("");
+  let h=chestSVG();
+  if(allOk) h+=`<path class="heart-rel" d="${smooth(toPx(relPts(g)))}"/>`;
+  for(const st of ["r","u","l"]){ const ps=pkPos(st);
+    if(st===PKS.step && ps.length) h+=`<line class="guide" style="stroke:var(--accent);opacity:.9" x1="${PX(ps[0].x)}" y1="${PY(ps[0].L,ps[0].x)}" x2="${PX(ps[ps.length-1].x)}" y2="${PY(ps[ps.length-1].L,ps[ps.length-1].x)}"/>`;
+    for(const i of Object.keys(PKS.tap[st])){ const p=ps[i]; h+=`<circle class="pmark ${p.kind}" cx="${PX(p.x)}" cy="${PY(p.L,p.x)}" r="4"/>`; }
+    const m=PKS.mark[st]; if(m!=null){ const p=ps[m]; h+=`<rect x="${PX(p.x)-5}" y="${PY(p.L,p.x)-5}" width="10" height="10" transform="rotate(45 ${PX(p.x)} ${PY(p.L,p.x)})" style="fill:none;stroke:var(--ink);stroke-width:1.8"/>`; }
+  }
+  $("#pkSvg").innerHTML=h;
+  const sum=$("#pkSum");
+  if(allOk){ const w=Math.abs(g.r)+g.l; sum.hidden=false;
+    sum.innerHTML=`<h3 style="margin-bottom:6px">${esc(s.name)}</h3><p class="sc-info">Ko‘ndalang o‘lcham: ${fmt(Math.abs(g.r))} + ${fmt(g.l)} = <b>${fmt(w)} sm</b> (me’yor 11–13 sm). Konfiguratsiya: <b>${esc(s.konf)}</b>.</p><p class="sc-info" style="margin-top:6px">${esc(s.perk)}</p>`; }
+  else sum.hidden=true;
+}
+$("#pkLv").addEventListener("click",e=>{ const b=e.target.closest(".lv"); if(!b) return; const i=+b.dataset.i, p=pkPos(PKS.step)[i];
+  PKS.tap[PKS.step][i]=1; PKS.sel=i; renderPk(); if(playPerc(p.kind)) startPlayer(PKN[p.kind],p.lab); });
+$("#pkMark").addEventListener("click",()=>{ const fb=$("#pkFb"); if(PKS.sel==null){ fb.hidden=false; fb.className="fb"; fb.textContent="Avval nuqtani bosib, tovushni eshiting."; return; } PKS.mark[PKS.step]=PKS.sel; delete PKS.ok[PKS.step]; fb.hidden=true; renderPk(); });
+$("#pkChk").addEventListener("click",()=>{
+  const st=PKS.step, fb=$("#pkFb"), m=PKS.mark[st], a=pkAns(st), pos=pkPos(st); fb.hidden=false;
+  if(m==null){ fb.className="fb"; fb.textContent="Avval chegarani belgilang."; return; }
+  const ok=m===a; PKS.ok[st]=ok; fb.className="fb "+(ok?"ok":"no");
+  const nm={r:"O‘ng",u:"Yuqori",l:"Chap"}[st];
+  fb.textContent=ok?`To‘g‘ri! ${nm} chegara: ${lc1(pos[a].lab)}. Chegara plessimetrning aniq tovush tomonidagi chekkasi bo‘yicha belgilanadi.`
+    :`Noto‘g‘ri. Tovush bo‘g‘iqlashgan birinchi nuqta: ${lc1(pos[a].lab)}. Aniq tovushdan to‘mtoq tomon yuring va o‘zgarish boshlangan joyni belgilang.`;
+  if(ok){ const nx={r:"u",u:"l"}[st]; if(nx&&!PKS.ok[nx]) setTimeout(()=>{ PKS.step=nx; PKS.sel=null; renderPk(); },900); }
+  renderPk();
+});
+$("#pkReset").addEventListener("click",()=>pkInit(PKS.hide));
+$("#pkStep").addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b) return; PKS.step=b.dataset.st; PKS.sel=null; $("#pkFb").hidden=true; renderPk(); });
+function pkInit(rand){
+  if(rand){ const pool=PK_LIST.filter(x=>x!==PKS.sc); PKS.sc=pool[Math.floor(Math.random()*pool.length)]; }
+  PKS.step="r"; PKS.tap={r:{},u:{},l:{}}; PKS.mark={r:null,u:null,l:null}; PKS.ok={}; PKS.sel=null; $("#pkFb").hidden=true; renderPk();
+}
+$("#pkSel").addEventListener("change",e=>{ PKS.sc=e.target.value; pkInit(false); });
+$("#pkHide").addEventListener("change",e=>{ PKS.hide=e.target.checked; $("#pkSel").hidden=PKS.hide; if(!PKS.hide) $("#pkSel").value=PKS.sc; pkInit(PKS.hide); });
+
+/* =========================================================
+   04–05 · KUTUBXONA
+   ========================================================= */
+function libCards(g){ return LIB.filter(o=>o.g===g).map(o=>`<article class="card"><h3>${esc(o.n)}</h3><span class="alt">${esc(o.alt)}</span><canvas class="phc" data-ph="${o.id}" aria-hidden="true"></canvas><dl><dt>Qayerda eshitiladi</dt><dd>${esc(o.pt)}</dd><dt>Tavsifi</dt><dd>${esc(o.d)}</dd><dt>Qachon uchraydi</dt><dd>${esc(o.k)}</dd></dl><button class="play" type="button" data-play="lib:${o.id}"><span class="ic"></span>Tinglash</button></article>`).join(""); }
+$("#libTon").innerHTML=libCards("ton");
+$("#libMur").innerHTML=libCards("mur");
+function drawAllPhono(){ $$("canvas[data-ph]").forEach(cv=>drawPhono(cv,LIBM[cv.dataset.ph].sp)); drawPhono($("#heroCv"),LIBM.norm_apex.sp,{cycles:2}); }
+
+/* =========================================================
+   06 · PULS
+   ========================================================= */
+const PU={id:"norm",beats:[],raf:0,vis:false,t0:0};
+$("#puSel").innerHTML=Object.entries(PT).map(([k,p])=>`<option value="${k}">${esc(p.n)}</option>`).join("");
+function puGen(){
+  const p=PT[PU.id], out=[]; let t=0, i=0, prev=60/p.hr;
+  while(t<64){ let T=60/p.hr; if(p.af) T*=R(.55,1.45);
+    let A=p.A; if(p.alt && i%2) A*=p.alt;
+    if(p.resp){ const f=(1+Math.sin(2*Math.PI*t/4.5-Math.PI/2))/2; A*=1-p.resp*f; }
+    if(p.af){ A*=Math.max(0,Math.min(1.15,(prev-.3)/.35)); }
+    out.push({t,T,A,pulse:A>=.12}); prev=T; t+=T; i++; }
+  PU.beats=out;
+  const hb=out.filter(b=>b.t<60).length, pl=out.filter(b=>b.t<60&&b.pulse).length;
+  $("#puStat").innerHTML=`<span>Yurak qisqarishlari: <b>${hb}</b>/daq</span><span>Puls: <b>${pl}</b>/daq</span>${hb-pl>0?`<span>Puls tanqisligi: <b>${hb-pl}</b></span>`:""}`;
+  $("#puTxt").textContent=p.t;
+}
+function puVal(t){ const p=PT[PU.id]; let v=0;
+  for(const b of PU.beats){ if(b.t>t) break; const u=t-b.t; if(u>2.5||!b.pulse) continue;
+    const g=u<p.up?Math.pow(Math.sin(Math.PI/2*u/p.up),1.5):Math.exp(-(u-p.up)/p.tau)+p.nb*Math.exp(-Math.pow((u-p.tn)/.035,2));
+    v+=b.A*g; }
+  return v; }
+function puDraw(now){
+  const cv=$("#puCv"), dpr=window.devicePixelRatio||1, w=cv.clientWidth, h=cv.clientHeight; if(!w) return;
+  if(cv.width!==Math.round(w*dpr)){ cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr); }
+  const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+  const span=6, tNow=2.6+((now-PU.t0)/1000)%57, t0=tNow-span, base=h*.86, sc=h*.3;
+  x.fillStyle=css("--line"); x.fillRect(0,base,w,1);
+  x.strokeStyle=css("--accent"); x.lineWidth=2; x.beginPath();
+  for(let px=0;px<=w;px+=2){ const t=t0+px/w*span, y=base-puVal(t)*sc; if(px===0) x.moveTo(px,y); else x.lineTo(px,y); }
+  x.stroke();
+  x.font="10px "+css("--f-mono"); x.textAlign="center";
+  for(const b of PU.beats){ if(b.t<t0||b.t>tNow) continue; const px=(b.t-t0)/span*w;
+    x.fillStyle=b.pulse?css("--muted"):css("--bad"); x.fillRect(px-1,6,2,10); if(!b.pulse) x.fillText("×",px,28); }
+  const hand=$("#puHand"); hand.style.transform=`scale(${(1+Math.min(.35,puVal(tNow)*.14)).toFixed(3)})`;
+}
+function puLoop(now){ if(!PU.vis){ PU.raf=0; return; } puDraw(now); PU.raf=requestAnimationFrame(puLoop); }
+$("#puSel").addEventListener("change",e=>{ PU.id=e.target.value; PU.t0=performance.now(); puGen(); });
+puGen(); PU.t0=performance.now();
+
+/* =========================================================
+   07 · ARTERIAL BOSIM (Korotkov)
+   ========================================================= */
+const B={i:0,p:0,defl:false,rate:3,acc:0,last:0,raf:0,rec:{s:null,d:null},maxP:0,rates:new Set(),hiss:null,vis:false};
+$("#bpSel").innerHTML=BPP.map((p,i)=>`<option value="${i}">${esc(p.n)}</option>`).join("");
+(function(){ let s=`<circle class="face" cx="110" cy="110" r="102"/>`;
+  for(let v=0;v<=300;v+=10){ const a=(135+v*.9)*Math.PI/180, big=v%50===0, r1=big?84:89, r2=97;
+    s+=`<line class="tk${big?" b":""}" x1="${(110+r1*Math.cos(a)).toFixed(1)}" y1="${(110+r1*Math.sin(a)).toFixed(1)}" x2="${(110+r2*Math.cos(a)).toFixed(1)}" y2="${(110+r2*Math.sin(a)).toFixed(1)}"/>`;
+    if(v%20===0) s+=`<text class="tl" x="${(110+69*Math.cos(a)).toFixed(1)}" y="${(110+69*Math.sin(a)).toFixed(1)}">${v}</text>`; }
+  s+=`<text class="unit" x="110" y="146">mm sim. ust.</text><text class="dig" id="bpDigT" x="110" y="170">0</text><line class="ndl" id="bpN" x1="110" y1="110" x2="110" y2="30"/><circle class="hub" cx="110" cy="110" r="6"/>`;
+  $("#bpG").innerHTML=s; })();
+const bpCur=()=>BPP[B.i];
+function bpDraw(){ const a=(135+B.p*.9)*Math.PI/180, n=$("#bpN"); n.setAttribute("x2",(110+80*Math.cos(a)).toFixed(1)); n.setAttribute("y2",(110+80*Math.sin(a)).toFixed(1));
+  const d=$("#bpDigT"); d.textContent=$("#bpDig").checked?Math.round(B.p):""; }
+function kPhase(p){ const P=bpCur(); if(p>=P.s) return 0; if(P.gap&&p<=P.gap[0]&&p>=P.gap[1]) return 0;
+  if(P.inf){ if(p<=2) return 0; if(p<=P.d) return 4; } else if(p<=P.d) return 0;
+  const f=(P.s-p)/(P.s-P.d); return f<.12?1:f<.32?2:f<.82?3:4; }
+let BV=null;
+function bpVoice(){ const c=ctx(); if(!c) return null; if(!BV){ const out=c.createGain(); out.gain.value=1; out.connect(AU.master); BV={c,out,nodes:[]}; } BV.nodes=[]; return BV; }
+function kTap(ph){ const v=bpVoice(); if(!v) return; const t=v.c.currentTime+.02, amp={1:.5,2:.55,3:1,4:.42}[ph];
+  tone(v,t,ph===3?"clap":ph===4?"muf":"s2",amp);
+  if(ph===2){ const n=nz(v,t,.13), f=filt(v,n,[["bandpass",260,.8]]), g=gn(v,f,0); ramp(g.gain,[[t,0],[t+.02,.35],[t+.12,0]]); g.connect(v.out); } }
+function flash(el){ el.classList.add("on"); setTimeout(()=>el.classList.remove("on"),160); }
+function bpBeat(){ const P=bpCur();
+  if(B.p<P.s-2) flash($("#bpPulse"));
+  const ph=B.p>0?kPhase(B.p):0;
+  if(ph){ kTap(ph); const s=$("#bpSnd"); s.classList.add("snd"); setTimeout(()=>s.classList.remove("snd"),160); }
+  $("#bpPhL").textContent=$("#bpPh").checked&&ph?`(${RN[ph]} faza)`:""; }
+function hiss(on){ const c=AU.ctx; if(!c) return;
+  if(on&&!B.hiss){ const s=c.createBufferSource(); s.buffer=AU.noise; s.loop=true; const hp=c.createBiquadFilter(); hp.type="highpass"; hp.frequency.value=2600; const g=c.createGain(); g.gain.value=.02*(B.rate/3); s.connect(hp); hp.connect(g); g.connect(AU.master); s.start(); B.hiss={s,g}; }
+  else if(!on&&B.hiss){ try{B.hiss.s.stop()}catch(e){} B.hiss=null; } }
+function bpTick(ts){
+  const dt=B.last?Math.min(.1,(ts-B.last)/1000):0; B.last=ts;
+  if(B.defl){ B.p=Math.max(0,B.p-B.rate*dt); B.rates.add(B.rate); if(B.p<=0){ B.defl=false; hiss(false); bpBtns(); } }
+  B.acc+=dt; const T=60/bpCur().hr; if(B.acc>=T){ B.acc-=T; bpBeat(); }
+  bpDraw();
+  if(B.vis||B.defl) B.raf=requestAnimationFrame(bpTick); else { B.raf=0; B.last=0; }
+}
+function bpRun(){ if(!B.raf){ B.last=0; B.raf=requestAnimationFrame(bpTick); } }
+function bpBtns(){ $("#bpDefl").textContent=B.defl?"To‘xtatish":"Havoni chiqarish"; }
+function bpReset(){ B.p=0; B.defl=false; hiss(false); B.rec={s:null,d:null}; B.maxP=0; B.rates=new Set(); $("#bpRS").textContent="—"; $("#bpRD").textContent="—"; $("#bpFb").hidden=true; bpBtns(); bpDraw(); }
+$("#bpPump").addEventListener("click",()=>{ ctx(); B.defl=false; hiss(false); B.p=Math.min(300,B.p+20); B.maxP=Math.max(B.maxP,B.p); bpBtns(); bpRun(); });
+$("#bpDefl").addEventListener("click",()=>{ ctx(); if(B.p<=0) return; B.defl=!B.defl; hiss(B.defl); bpBtns(); bpRun(); });
+$("#bpDump").addEventListener("click",()=>{ B.p=0; B.defl=false; hiss(false); bpBtns(); bpDraw(); });
+$("#bpRate").addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b) return; B.rate=+b.dataset.r; $$("#bpRate button").forEach(x=>x.setAttribute("aria-pressed",x===b)); if(B.hiss) B.hiss.g.gain.value=.02*(B.rate/3); });
+$("#bpSys").addEventListener("click",()=>{ B.rec.s=Math.round(B.p/2)*2; $("#bpRS").textContent=B.rec.s; });
+$("#bpDia").addEventListener("click",()=>{ B.rec.d=Math.round(B.p/2)*2; $("#bpRD").textContent=B.rec.d; });
+$("#bpSel").addEventListener("change",e=>{ B.i=+e.target.value; bpReset(); });
+$("#bpDig").addEventListener("change",bpDraw);
+function bpClass(s,d){ if(s>=180||d>=110) return "3-darajali gipertenziya"; if(s>=160||d>=100) return "2-darajali gipertenziya"; if(s>=140||d>=90) return d<90?"izolyatsiyalangan sistolik gipertenziya (1-daraja)":"1-darajali gipertenziya"; if(s>=130||d>=85) return "yuqori me’yoriy"; if(s>=120||d>=80) return "me’yoriy"; return "optimal"; }
+$("#bpEval").addEventListener("click",()=>{
+  const P=bpCur(), r=B.rec, fb=$("#bpFb"), out=[]; fb.hidden=false;
+  if(r.s==null||r.d==null){ fb.className="fb"; fb.textContent="Avval o‘lchab, sistolik va diastolik bosimni belgilang."; return; }
+  let ok=true;
+  if(B.maxP<P.s+15){ ok=false; out.push(`Manjetaga havo yetarli yuborilmadi (eng yuqori bosim ${Math.round(B.maxP)}). Bilak arteriyasidagi puls yo‘qolgandan keyin yana 20–30 mm sim. ust. qo‘shish kerak.`); }
+  if(Math.abs(r.s-P.s)<=4) out.push(`Sistolik: ${r.s}, to‘g‘ri (haqiqiy ${P.s}).`);
+  else { ok=false; if(P.gap&&Math.abs(r.s-P.gap[1])<=5) out.push(`Sistolik: ${r.s}. Bu auskultativ tanaffusning pastki chegarasi. Tonlar ${P.s} dan ${P.gap[0]} gacha eshitilib, ${P.gap[1]} gacha yo‘qolgan. Haqiqiy sistolik bosim ${P.s}.`);
+    else out.push(`Sistolik: ${r.s}, noto‘g‘ri. Haqiqiy qiymat ${P.s}: birinchi aniq ton paydo bo‘lgan raqam.`); }
+  if(P.inf){ if(Math.abs(r.d-P.d)<=5) out.push(`Diastolik: ${r.d}, to‘g‘ri. “Cheksiz ton”: tonlar nolgacha eshitiladi, shuning uchun diastolik bosim IV fazada, tonlar keskin bo‘g‘iqlashgan raqamda yoziladi.`);
+    else { ok=false; out.push(`Diastolik: ${r.d}, noto‘g‘ri. Bu bemorda “cheksiz ton”: tonlar nolgacha eshitiladi. Diastolik bosim tonlar keskin bo‘g‘iqlashgan raqamda (IV faza), ya’ni ${P.d} da yoziladi.`); } }
+  else if(Math.abs(r.d-P.d)<=4) out.push(`Diastolik: ${r.d}, to‘g‘ri (haqiqiy ${P.d}).`);
+  else { ok=false; out.push(`Diastolik: ${r.d}, noto‘g‘ri. Haqiqiy qiymat ${P.d}: tonlar to‘liq yo‘qolgan raqam (V faza).`); }
+  if(B.rates.has(6)) out.push("Havo 6 mm/s tezlikda chiqarilganda xatolik ortadi. Tavsiya: 2–3 mm sim. ust./s.");
+  out.push(P.inf?`Xulosa: ${P.s}/${P.d} mm sim. ust. Puls bosimi ${P.s-P.d}: aortal yetishmovchilikka xos katta puls bosimi.`:`Xulosa: ${P.s}/${P.d} mm sim. ust., ${bpClass(P.s,P.d)}.`);
+  fb.className="fb "+(ok?"ok":"no"); fb.innerHTML=out.map(esc).join("<br>");
+});
+
+/* =========================================================
+   08 · NUQSONLAR JADVALI
+   ========================================================= */
+(function(){ let h=`<table><thead><tr><th></th>${MX.cols.map(c=>`<th>${esc(c[1])}</th>`).join("")}</tr></thead><tbody>`;
+  for(const [r,vals] of MX.rows){ h+=`<tr><td>${esc(r)}</td>${vals.map((v,i)=>{ let acts=""; if(r==="Auskultatsiya"){ const id=MX.cols[i][0]; acts=`<div class="acts">${MX.play[id].map(([k,l])=>`<button class="play" type="button" data-play="sc:${id}:${k}" data-sub="${esc(AP[k].n)}"><span class="ic"></span>${esc(l)}</button>`).join("")}</div>`; } return `<td>${esc(v)}${acts}</td>`; }).join("")}</tr>`; }
+  $("#mxTbl").innerHTML=h+"</tbody></table>"; })();
+
+/* =========================================================
+   09 · QULOQ MASHQI
+   ========================================================= */
+const EAR={q:null,n:0,ok:0,done:false};
+function earNew(){ const q=LIB[Math.floor(Math.random()*LIB.length)]; const others=shuffle(LIB.filter(o=>o.g===q.g&&o.id!==q.id)).slice(0,3); EAR.q={o:q,opts:shuffle([q,...others])}; EAR.done=false; earDraw(); }
+function earDraw(){ const q=EAR.q;
+  $("#ear").innerHTML=`<div class="q"><div class="stat"><span>Javoblar: <b>${EAR.n}</b></span><span>To‘g‘ri: <b>${EAR.ok}</b></span></div>
+    <p class="t">${q.o.g==="ton"?"Qaysi ton yoki ritm eshitilmoqda?":"Qaysi shovqin eshitilmoqda?"}</p>
+    <div class="btnrow"><button class="play big" type="button" data-play="lib:${q.o.id}" data-title="Quloq mashqi" data-sub="${esc("Eshitish joyi: "+q.o.pt.split(";")[0])}"><span class="ic"></span>Tinglash</button></div>
+    <div class="opts">${q.opts.map((o,i)=>`<button class="opt" type="button" data-i="${i}"><span class="k">${"ABCD"[i]}</span><span>${esc(o.n)}</span></button>`).join("")}</div>
+    <div id="earEx"></div></div>`; }
+$("#ear").addEventListener("click",e=>{
+  const b=e.target.closest(".opt"); if(b&&!EAR.done){ EAR.done=true; const i=+b.dataset.i, q=EAR.q, ok=q.opts[i]===q.o; EAR.n++; if(ok) EAR.ok++;
+    $$("#ear .opt").forEach((x,j)=>{ x.disabled=true; if(q.opts[j]===q.o) x.classList.add("right"); else if(j===i) x.classList.add("wrong"); });
+    $("#ear .stat").innerHTML=`<span>Javoblar: <b>${EAR.n}</b></span><span>To‘g‘ri: <b>${EAR.ok}</b></span>`;
+    $("#earEx").innerHTML=`<p class="expl"><b>${ok?"To‘g‘ri.":"Noto‘g‘ri."}</b> ${esc(q.o.n)}: ${esc(q.o.d)} (${esc(q.o.k)})</p><div class="btnrow" style="margin-top:8px"><button class="btn pri" type="button" id="earNext">Keyingi tovush</button></div>`; return; }
+  if(e.target.closest("#earNext")){ stop(); earNew(); }
+});
+earNew();
+
+/* =========================================================
+   10 · KLINIK HOLATLAR
+   ========================================================= */
+$("#cases").innerHTML=CASES.map((c,ci)=>`<article class="q case" data-c="${ci}">
+  <div class="case-h"><span class="qn">${ci+1}-holat</span><b>${esc(c.who)}</b></div>
+  <div class="steps">${c.steps.map(([t,x])=>`<details class="step"><summary>${esc(t)}</summary><div>${Array.isArray(x)
+    ?`<p class="muted" style="font-size:.88rem">Nuqtalarni eshiting va topilmalarni tavsiflang.</p><div class="btnrow">${x.map(k=>`<button class="play" type="button" data-play="sc:${c.sc}:${k}" data-title="${ci+1}-holat" data-sub="${esc(AP[k].n)}"><span class="ic"></span>${esc(AP[k].n)}</button>`).join("")}</div>`
+    :`<p>${esc(x)}</p>`}</div></details>`).join("")}</div>
+  <p class="t">Eng ehtimolli tashxis?</p>
+  <div class="opts">${c.opts.map((o,i)=>`<button class="opt" type="button" data-i="${i}"><span class="k">${"ABCDE"[i]}</span><span>${esc(o)}</span></button>`).join("")}</div>
+  <div class="expl" hidden></div></article>`).join("");
+$("#cases").addEventListener("click",e=>{
+  const b=e.target.closest(".opt"); if(!b) return; const art=b.closest(".case"), c=CASES[+art.dataset.c], i=+b.dataset.i;
+  if(art.dataset.done) return; art.dataset.done="1";
+  $$(".opt",art).forEach((x,j)=>{ x.disabled=true; if(j===c.ans) x.classList.add("right"); else if(j===i) x.classList.add("wrong"); });
+  const au=c.steps.find(s=>Array.isArray(s[1]))[1].map(k=>`${AP[k].n}: ${SC[c.sc].tx[k]}`).join(" ");
+  const ex=$(".expl",art); ex.hidden=false; ex.innerHTML=`<p><b>${i===c.ans?"To‘g‘ri.":"Noto‘g‘ri."}</b> ${esc(c.ex)}</p><p class="muted" style="margin-top:6px"><b>Auskultatsiya:</b> ${esc(au)}</p>`;
+});
+
+/* =========================================================
+   ISHGA TUSHIRISH
+   ========================================================= */
+renderVP(); renderAp(); renderPk();
+requestAnimationFrame(drawAllPhono);
+let rzT; window.addEventListener("resize",()=>{ clearTimeout(rzT); rzT=setTimeout(drawAllPhono,150); });
+new MutationObserver(()=>setTimeout(drawAllPhono,30)).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",()=>setTimeout(drawAllPhono,30));
+if("IntersectionObserver" in window){
+  new IntersectionObserver(es=>{ for(const en of es){ PU.vis=en.isIntersecting; if(PU.vis&&!PU.raf) PU.raf=requestAnimationFrame(puLoop); } }).observe($("#puCv"));
+  new IntersectionObserver(es=>{ for(const en of es){ B.vis=en.isIntersecting; if(B.vis) bpRun(); } }).observe($("#bpG"));
+} else { PU.vis=true; PU.raf=requestAnimationFrame(puLoop); B.vis=true; bpRun(); }
+
+})();
+</script>
+</body></html>

@@ -1,0 +1,25 @@
+{"quiz":[
+{"q":"Jismoniy rivojlanishning “biologik” belgilariga kiradi:","options":["Bo‘y va vazn","O‘pkaning tiriklik sig‘imi","Tish formulasi, suyaklanish yadrolari, ikkilamchi jinsiy belgilar","Qo‘l panjasi kuchi","Umurtqa shakli"],"answer":2},
+{"q":"“Akseleratsiya” atamasini 1935 yilda kiritgan olim:","options":["N.P. Gundobin","E. Kox","A. Ketle","S.Sh. Shamsiyev","G.N. Speranskiy"],"answer":1},
+{"q":"2 yoshgacha bo‘lgan bolaning bo‘yi qanday o‘lchanadi?","options":["Tik turgan holatda vertikal bo‘y o‘lchagich bilan","Yotgan holatda gorizontal bo‘y o‘lchagich bilan","Santimetr lenta bilan o‘tirgan holatda","Elektron tarozi yordamida","Faqat taxminiy formula bilan"],"answer":1},
+{"q":"Bola 1 yoshda 75 sm bo‘ldi. 4 yoshdagi bo‘y taxminan qancha bo‘ladi?","options":["90 sm","95 sm","100 sm","110 sm","120 sm"],"answer":2},
+{"q":"Pubertat davrida maksimal o‘sish (bo‘y “sakrashi”) o‘g‘il bolalarda qaysi yoshda kuzatiladi?","options":["8–10","10–12","11–12","13,5–15,5","17–19"],"answer":3},
+{"q":"Muddatida tug‘ilgan chaqaloqda tana vazni qaysi kunlarda tiklanadi?","options":["1–2-kun","3–4-kun","7–10-kun","14–16-kun","21-kun"],"answer":2},
+{"q":"Birinchi yarim yillikda vazn qo‘shilishi oyiga o‘rtacha qancha?","options":["200 g","400 g","600 g","800 g","1000 g"],"answer":3},
+{"q":"Muddatida tug‘ilgan sog‘lom chaqaloqda vazn-bo‘y koeffitsiyenti (g/sm) normada:","options":["30–40","40–50","60–80","90–100","110–120"],"answer":2},
+{"q":"Chaqaloqda boshning balandligi tana uzunligining qanday qismini tashkil etadi?","options":["1/3","1/4","1/6","1/7","1/8"],"answer":1},
+{"q":"Sentil jadvalida 25–75 sentil oralig‘i (4-koridor) qanday baholanadi va bolalarning necha foizini qamraydi?","options":["O‘rtacha, 50%","O‘rtacha, 15%","O‘rtadan past, 25%","O‘rtadan yuqori, 15%","Yuqori, 7%"],"answer":0},
+{"q":"JSST standartlari bo‘yicha “yoshga nisbatan bo‘y” Z-balli −3 dan past bo‘lsa, bu:","options":["Me’yor","Past bo‘y","Juda past bo‘y","Baland bo‘y","Juda baland bo‘y"],"answer":2},
+{"q":"Filippin testida barmoq uchlari quloqqa yetsa (musbat test), bu nimani bildiradi?","options":["Bola raxit bilan og‘rigan","Birinchi “bo‘y sakrashi” tugagan, maktabga biologik tayyor","Akseleratsiya mavjud","Skolioz bor","Jismoniy rivojlanish juda past"],"answer":1}
+],
+"cards":[
+{"front":"Jismoniy rivojlanish belgilarining 4 guruhi","back":"Antropometrik, funksional, somatoskopik, biologik"},
+{"front":"Jismoniy rivojlanishni baholash usullari (3)","back":"Somatoskopik, somatometrik (antropometrik), fiziometrik (spirometriya, dinamometriya)"},
+{"front":"Bo‘y formulalari (n — yosh)","back":"1–4 yosh: 100 − 8×(4−n); 4–8 yosh: 100 + 6×(n−4); 8 yoshdan katta: 130 + 5×(n−8)"},
+{"front":"Vazn formulasi 2–11 yosh","back":"Vazn (kg) = 10,5 + 2n; 2–10 yosh yiliga ≈ 2 kg, 10–15 yosh yiliga 3–4 kg"},
+{"front":"Bosh va ko‘krak aylanasi (tug‘ilganda)","back":"Bosh 34–36 sm, ko‘krak 32–34 sm (bosh aylanasidan 1–2 sm kichik); 3–4 oyda tenglashadi; 1 yoshda bosh ≈ 46 sm"},
+{"front":"Boshning tana uzunligiga nisbati","back":"Chaqaloq 1/4 → 2 yosh 1/5 → 6 yosh 1/6 → 12 yosh 1/7 → kattalar 1/8"},
+{"front":"Sentil koridorlari","back":"1: <3 (juda past); 2: 3–10; 3: 10–25; 4: 25–75 (o‘rtacha, 50%); 5: 75–90; 6: 90–97; 7: >97 (juda yuqori)"},
+{"front":"Sigmal baholash","back":"M±1σ — o‘rtacha; 1–2σ — o‘rtadan past/yuqori; 2–3σ — past/yuqori; 3σ dan chetda — juda past/juda yuqori; garmoniklik: farq ≤ 1σ"},
+{"front":"Ketle indeksi (TVI)","back":"Vazn (kg) / bo‘y (m)²; maktab yoshida ovqatlanish holati va semizlikni baholash uchun, sentil jadvali bilan"}
+]}

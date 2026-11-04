@@ -1,0 +1,24 @@
+{"quiz":[
+{"q":"Spirografiya va pnevmotaxometriya odatda qaysi yoshdan keyin o‘tkaziladi?","options":["1 yosh","2 yosh","3 yosh","5 yosh","10 yosh"],"answer":3},
+{"q":"Shtange sinamasi nimani o‘lchaydi?","options":["Nafas chiqargandan keyin nafasni ushlab turish vaqtini","Chuqur nafas olgandan keyin nafasni ushlab turish vaqtini","Nafas sonini","Qon kislorodini","O‘pka hajmini"],"answer":1},
+{"q":"Tiffno indeksining formulasi va me’yori:","options":["FEV1 / O‘TS × 100%, me’yor ≥70%","O‘TS / FEV1, me’yor 2","NOS × NH, me’yor 70%","FEV1 / NMH, me’yor 50%","O‘MV − NMH, me’yor 70%"],"answer":0},
+{"q":"Nafas rezervi qanday hisoblanadi?","options":["NOS × NH","O‘MV − NMH","O‘TS − FEV1","FO‘TS / O‘TS","NH + O‘TS"],"answer":1},
+{"q":"Restriktiv turdagi buzilishda Tiffno indeksi:","options":["Kamaygan","Me’yorda","Oshgan","Nolga teng","Aniqlanmaydi"],"answer":1},
+{"q":"Bronxial astma va obstruktiv bronxitda qaysi turdagi buzilish kuzatiladi?","options":["Restriktiv","Obstruktiv (Tiffno <70%)","Normal","Faqat O‘TS kamayishi","Aralash restriktiv"],"answer":1},
+{"q":"Pikfloumetriyada “yashil zona” qanday baholanadi?","options":["Eng yaxshi ko‘rsatkichning ≥80% — astma nazorati yaxshi","50–80% — davoni kuchaytirish","<50% — shoshilinch yordam","<20%","100% dan yuqori"],"answer":0},
+{"q":"Pikfloumetriyada bronxlar giperreaktivligini ko‘rsatuvchi kunlik o‘zgaruvchanlik:","options":[">5%",">10%",">20%",">50%","O‘zgarish bo‘lmasligi"],"answer":2},
+{"q":"Sog‘lom bolada pulsoksimetriyada SpO2 me’yori va kislorod berishga ko‘rsatma:","options":["94–98%; <92–94% bo‘lsa kislorod beriladi","85–90%; <80%","100%; <99%","90%; <70%","70–80%; <60%"],"answer":0},
+{"q":"Rentgenografiyada tiniqlikning oshishi (yorug‘lanish) qaysi holatga xos?","options":["Zotiljam","Atelektaz","Plevrit","Emfizema, pnevmotoraks","Bronxial o‘sma"],"answer":3},
+{"q":"Flyuorografiya qaysi yoshdan o‘tkaziladi?","options":["1 yoshdan","3 yoshdan","7 yoshdan","15 yoshdan","Barcha yoshda"],"answer":3},
+{"q":"Kurshman spirallari va Sharko–Leyden kristallari balg‘amda qaysi kasallikni ko‘rsatadi?","options":["Sil","Bronxial astma","Krupoz zotiljam","Absess","Bronxoektaz"],"answer":1},
+{"q":"Ter sinamasida xlor miqdori qanchadan oshsa, mukovissidoz ehtimoli yuqori?","options":[">20 mmol/l",">40 mmol/l",">60 mmol/l",">100 mmol/l",">10 mmol/l"],"answer":2}
+],
+"cards":[
+{"front":"Shtange va Gench sinamalari","back":"Shtange — nafas olgandan keyin ushlash vaqti; Gench — nafas chiqargandan keyin; qisqarishi — kardiorespirator rezerv pasayishi"},
+{"front":"Spirografiya ko‘rsatkichlari","back":"NH, NMH = NOS × NH, O‘TS, FO‘TS, FEV1, Tiffno = FEV1/O‘TS ×100% (≥70%), O‘MV, nafas rezervi = O‘MV − NMH"},
+{"front":"Restriktiv va obstruktiv buzilish","back":"Restriktiv: O‘TS↓↓, Tiffno me’yorda (zotiljam, plevrit, pnevmofibroz); obstruktiv: FEV1↓↓, Tiffno <70% (astma, obstruktiv bronxit)"},
+{"front":"Pikfloumetr zonalari","back":"Yashil ≥80%; sariq 50–80% (davoni kuchaytirish); qizil <50% (shoshilinch yordam); o‘zgaruvchanlik >20% — giperreaktivlik"},
+{"front":"Qon gazlari me’yori","back":"PaO2 80–100 mm; PaCO2 35–45 mm; pH 7,35–7,45; SpO2 94–98%"},
+{"front":"Balg‘am tahlili topilmalari","back":"Elastik tolalar — destruksiya; Kurshman/Sharko–Leyden/eozinofillar — astma; zangsimon — krupoz zotiljam; mikobakteriyalar (Sil–Nilsen) — sil"},
+{"front":"Bronxoskopiya imkoniyatlari","back":"Ichki yuzani ko‘rish, yot jismni chiqarish, sekretni so‘rish, biopsiya, bronxoalveolyar lavaj, dori yuborish"}
+]}
