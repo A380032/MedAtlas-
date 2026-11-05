@@ -67,9 +67,20 @@
   /* ---------- Holat: o'qilgan, saqlangan, oxirgi ---------- */
   const isDone = (sid, tid) => !!(store.get("done", {})[sid + "/" + tid]);
   function setDone(sid, tid, val) {
+    const k = sid + "/" + tid;
     const d = store.get("done", {});
-    if (val) d[sid + "/" + tid] = 1; else delete d[sid + "/" + tid];
+    if (val) d[k] = 1; else delete d[k];
     store.set("done", d);
+    // o'qilgan sana (Yutuqlar uchun) va rejadagi shu mavzu
+    const r = store.get("res", {});
+    if (val) { if (!r[k]) r[k] = { at: new Date().toISOString(), score: null }; } else delete r[k];
+    store.set("res", r);
+    if (val) {
+      const pl = store.get("plan", []), today = ymd(new Date());
+      let ch = false;
+      pl.forEach((p) => { if (p.sid === sid && p.tid === tid && !p.done && p.date <= today) { p.done = true; p.doneAt = new Date().toISOString(); ch = true; } });
+      if (ch) { store.set("plan", pl); toast("Rejadagi mavzu bajarildi ✓"); checkWeekWin(today); }
+    }
   }
   const isSaved = (sid, tid) => store.get("saved", []).includes(sid + "/" + tid);
   function toggleSaved(sid, tid) {
@@ -215,9 +226,9 @@
         <span class="resume-txt"><small>Qo‘llanmani davom ettirish</small><strong>${esc(lb.name)}</strong></span></a>`;
     }
     const quick = [
-      ["#/simulyatorlar", IC.sim, "Simulyator", ""],
-      ["#/assyst", IC.assyst, "Assyst", ""],
       ["#/reja", IC.plan, "Reja", ""],
+      ["#/yutuqlar", ICX.trophy, "Yutuqlar", ""],
+      ["#/assyst", IC.assyst, "Assyst", ""],
       ["#/xatolar", IC.redo, "Xatolar", wn ? String(wn) : ""]
     ].map(([h, ic, t, n]) => `<a class="quick" href="${h}"><span class="quick-ico">${svg(ic, 24)}${n ? `<i class="badge">${n}</i>` : ""}</span><span>${t}</span></a>`).join("");
 
@@ -227,6 +238,7 @@
       </section>
       <a class="goal" href="#/fanlar">${ring(pct, 62)}
         <span class="goal-txt"><b>Kurs bo'yicha jarayon</b><small>${esc(course.name)} · ${read} / ${total} mavzu o'qildi</small></span>${chev}</a>
+      ${todayPlanHTML()}
       <div class="course-switch" role="group" aria-label="Kurs">
         ${cat.courses.map((c) => `<button data-course="${esc(c.id)}" aria-pressed="${c.id === course.id}">${esc(c.name)}</button>`).join("")}
       </div>
@@ -239,6 +251,8 @@
       store.set("course", b.dataset.course);
       pageHome();
     }));
+    const tp = $("#todayPlan");
+    if (tp) bindPlan(tp, () => { if ((location.hash || "#/") === "#/" || location.hash === "#") pageHome(); });
   }
 
   async function pageFanlar() {
@@ -280,8 +294,11 @@
           <div class="seg flat" role="group" style="margin:8px 0 0">
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
+        <div class="setting-row"><span>Zaxira nusxa<br><small class="muted">Reja, yutuqlar, ballar, belgilar va o‘qilganlar bitta faylga saqlanadi. Ma’lumotlar faqat shu telefonda turadi.</small></span>
+          <span style="display:flex;flex-direction:column;gap:6px"><button class="btn" id="bkSave">Saqlash</button><button class="btn" id="bkLoad">Tiklash</button></span></div>
+        <input type="file" id="bkFile" accept="application/json,.json" hidden>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.10.0 · offline ishlaydi</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.11.0 · offline ishlaydi</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -289,6 +306,9 @@
       view.querySelectorAll("[data-th]").forEach((x) => x.setAttribute("aria-selected", x === b));
     }));
     $("#installBtn").addEventListener("click", installHelp);
+    $("#bkSave").addEventListener("click", backupSave);
+    $("#bkLoad").addEventListener("click", () => $("#bkFile").click());
+    $("#bkFile").addEventListener("change", (e) => { const f = e.target.files[0]; if (f) backupLoad(f); e.target.value = ""; });
   }
 
   async function pageSubject(sid) {
@@ -367,19 +387,7 @@
       <div class="bookread prose">${tp.map((t) => `<section class="book-topic" id="bk-${esc(t.id)}">
         <p class="book-no">${t.no}-mavzu</p><h2>${esc(t.title)}</h2>${topicHTML(t)}
         <p style="margin-top:16px"><a class="btn" href="#/fan/${esc(sid)}/${esc(t.id)}?test">Shu mavzu bo'yicha test</a></p></section>`).join("")}</div>`;
-    document.querySelector(".to-top")?.remove();
-    const up = document.createElement("button");
-    up.className = "to-top"; up.type = "button"; up.hidden = true;
-    up.setAttribute("aria-label", "Mundarijaga qaytish");
-    up.innerHTML = `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>`;
-    document.body.appendChild(up);
-    up.addEventListener("click", () => {
-      const toc = view.querySelector(".book-toc");
-      if (toc) { toc.open = true; toc.scrollIntoView({ behavior: "smooth", block: "start" }); } else window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-    const toggleUp = () => { up.hidden = window.scrollY < 600; };
-    window.addEventListener("scroll", toggleUp, { passive: true }); toggleUp();
-    window.addEventListener("hashchange", () => { window.removeEventListener("scroll", toggleUp); up.remove(); }, { once: true });
+    document.body.classList.add("reading");
     view.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => {
       document.getElementById(b.dataset.go)?.scrollIntoView({ behavior: "smooth", block: "start" });
     }));
@@ -527,29 +535,49 @@
     const tabs = TABS.filter((x) => x.has(t));
     const qp = new URLSearchParams((tab || "").replace(/^([^=&]+)(&|$)/, "tab=$1&"));
     const active = tabs.find((x) => x.id === qp.get("tab"))?.id || tabs[0]?.id;
-    let deep = qp.get("q") ? { s: qp.get("s"), q: qp.get("q") } : null;
+    let deep = qp.get("q") || qp.get("h") ? { s: qp.get("s"), q: qp.get("q"), h: qp.get("h") } : null;
 
+    document.body.classList.add("reading");
+    const cnt = [t.quiz?.length ? `${t.quiz.length} test` : "", t.cards?.length ? `${t.cards.length} kartochka` : "", t.cases?.length ? `${t.cases.length} masala` : ""].filter(Boolean).join(" · ");
     view.innerHTML = `
-      <h2 style="margin-bottom:12px">${t.no ? `<span class="muted">${t.no}-mavzu.</span> ` : ""}${esc(t.title)}</h2>
+      <div class="topic-head"><span class="kicker">${esc(s.meta.abbr)}${t.no ? ` · ${t.no}-mavzu` : ""}</span><h2>${esc(t.title)}</h2>${cnt ? `<p class="meta">${esc(cnt)}</p>` : ""}</div>
       <div class="seg" role="tablist">
         ${tabs.map((x) => `<button role="tab" data-tab="${x.id}" aria-selected="${x.id === active}">${x.label}</button>`).join("")}
       </div>
       <div id="tabBody"></div>
       <div class="topic-actions">
-        <button class="btn ${isDone(sid, tid) ? "" : "primary"}" id="doneBtn">${isDone(sid, tid) ? "O'qilgan ✓" : "O'qildi deb belgilash"}</button>
+        <button class="btn" id="doneBtn"></button>
         <button class="btn" id="saveBtn" aria-pressed="${isSaved(sid, tid)}">${isSaved(sid, tid) ? "Saqlangan" : "Saqlash"}</button>
+        <button class="btn" id="planBtn">${svg(IC.plan, 18)} Rejaga qo‘shish</button>
       </div>`;
+    const tTitle = (t.no ? t.no + "-mavzu. " : "") + t.title;
+    const doneUI = () => {
+      const b = $("#doneBtn"); if (!b) return;
+      const sc = getRes()[sid + "/" + tid]?.score;
+      b.innerHTML = isDone(sid, tid) ? `O'qilgan ✓${sc != null ? ` <span class="done-score">· ${sc} ball</span>` : ""}` : "O'qildi deb belgilash";
+      b.classList.toggle("primary", !isDone(sid, tid));
+    };
+    doneUI();
 
     const body = $("#tabBody");
     const show = (id) => {
       view.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === id));
       history.replaceState(null, "", `#/fan/${sid}/${tid}?${id}`); navSync();
       const dp = deep; deep = null;
+      body.dataset.hl = "";
       if (id === "test") runQuiz(body, t.quiz, sid + "/" + tid);
       else if (id === "karta") runCards(body, t.cards, dp && dp.s != null ? Number(dp.s) || 0 : 0);
       else {
         body.innerHTML = topicBody(t, id, !!dp);
-        if (dp) jumpTo(body, id, dp.s, dp.q);
+        Object.assign(body.dataset, { hl: HLTABS.includes(id) ? "1" : "", sid, tid, tab: id, title: tTitle, abbr: s.meta.abbr });
+        if (HLTABS.includes(id)) applyHighlights(body, sid, tid, id);
+        if (dp && dp.h) {
+          const mk = body.querySelector(`mark.hl[data-h="${CSS.escape(dp.h)}"]`);
+          if (mk) {
+            const det = mk.closest("details"); if (det) det.open = true;
+            setTimeout(() => { mk.scrollIntoView({ block: "center" }); mk.classList.add("flash-hit"); setTimeout(() => mk.classList.remove("flash-hit"), 2600); }, 80);
+          } else toast("Belgilangan matn topilmadi (matn yangilangan bo‘lishi mumkin)");
+        } else if (dp) jumpTo(body, id, dp.s, dp.q);
         const tg = $("[data-toggle-all]", body);
         if (tg) tg.addEventListener("click", () => {
           const all = body.querySelectorAll("details.sec");
@@ -564,13 +592,18 @@
     if (active) show(active);
 
     $("#doneBtn").addEventListener("click", () => {
-      const now = !isDone(sid, tid);
-      setDone(sid, tid, now);
-      const b = $("#doneBtn");
-      b.textContent = now ? "O'qilgan ✓" : "O'qildi deb belgilash";
-      b.classList.toggle("primary", !now);
-      toast(now ? "Mavzu o'qilgan deb belgilandi" : "Belgi olib tashlandi");
+      if (!isDone(sid, tid)) {
+        setDone(sid, tid, true); doneUI();
+        scoreSheet(sid, tid, tTitle, doneUI);
+        return;
+      }
+      const sh = sheet(`<h3>O'qilgan mavzu</h3><p class="muted small" style="margin:0">${esc(tTitle)}</p>
+        <div class="acts" style="flex-direction:column"><button class="btn primary" id="dEdit">Ballni yozish / o'zgartirish</button>
+        <button class="btn danger" id="dUndo">“O'qilgan” belgisini olib tashlash</button><button class="btn" data-x="close">Yopish</button></div>`);
+      $("#dEdit", sh.el).addEventListener("click", () => { sh.close(); scoreSheet(sid, tid, tTitle, doneUI); });
+      $("#dUndo", sh.el).addEventListener("click", () => { setDone(sid, tid, false); sh.close(); doneUI(); toast("Belgi olib tashlandi"); });
     });
+    $("#planBtn").addEventListener("click", () => planSheet({ sid, tid }, null));
     $("#saveBtn").addEventListener("click", () => {
       const now = toggleSaved(sid, tid);
       const b = $("#saveBtn");
@@ -833,8 +866,39 @@
         <button role="tab" data-mode="kitob" aria-selected="${mode === "kitob"}">Kitoblarda qidirish</button></div>
       <label class="search-box"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       <input class="search-input" id="q" type="search" autocomplete="off" enterkeyhint="search"></label>
+      <div id="sugg" class="chips"></div>
       <div id="results"></div>`;
-    const input = $("#q"), out = $("#results");
+    const input = $("#q"), out = $("#results"), sugg = $("#sugg");
+    const remember = (v) => {
+      v = v.trim(); if (fold(v).length < 3) return;
+      const r = store.get("recentQ", []).filter((x) => fold(x) !== fold(v));
+      r.unshift(v); store.set("recentQ", r.slice(0, 8));
+    };
+    let suggSeq = 0;
+    const drawSugg = async () => {
+      const my = ++suggSeq;
+      const q = fold(input.value.trim());
+      if (!q) {
+        const rc = store.get("recentQ", []);
+        sugg.innerHTML = rc.length ? `<span class="lbl">Oxirgi qidiruvlar <button type="button" data-clr>Tozalash</button></span>` + rc.map((r) => `<button type="button" class="chip recent" data-s="${esc(r)}">${esc(r)}</button>`).join("") : "";
+        return;
+      }
+      if (q.length < 2) { sugg.innerHTML = ""; return; }
+      const g = await buildGlossary();
+      if (my !== suggSeq) return;
+      const seen = new Set();
+      const list = g.filter((x) => x.keys.some((k) => k.startsWith(q)) && !x.keys.includes(q))
+        .sort((a, b) => a.term.length - b.term.length)
+        .filter((x) => { const k = fold(plain(x.term)); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 6);
+      sugg.innerHTML = list.map((x) => `<button type="button" class="chip" data-s="${esc(plain(x.term))}">${hl(plain(x.term), [q])}</button>`).join("");
+    };
+    sugg.addEventListener("click", (e) => {
+      if (e.target.closest("[data-clr]")) { store.set("recentQ", []); drawSugg(); return; }
+      const c = e.target.closest("[data-s]"); if (!c) return;
+      input.value = c.dataset.s; remember(c.dataset.s); run();
+    });
+    out.addEventListener("click", (e) => { if (e.target.closest("a")) remember(input.value); });
+    let remT;
     input.value = lastSearch.q || "";
     const hl = (txt, terms) => {
       const re = new RegExp("(" + terms.map((w) => esc(w).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/&#39;|'/g, "(?:'|&#39;|‘|’)")).join("|") + ")", "gi");
@@ -894,7 +958,7 @@
           <div class="small muted">${esc(h.x.abbr)} · …${hl(raw2, terms)}…</div></a>`;
       }).join("");
     };
-    const run = () => { lastSearch.q = input.value; return mode === "atama" ? runTerms() : runBooks(); };
+    const run = () => { lastSearch.q = input.value; drawSugg(); clearTimeout(remT); remT = setTimeout(() => remember(input.value), 2000); return mode === "atama" ? runTerms() : runBooks(); };
     const setMode = (m) => {
       mode = m; store.set("searchMode", m);
       view.querySelectorAll("[data-mode]").forEach((b) => b.setAttribute("aria-selected", b.dataset.mode === m));
@@ -930,7 +994,7 @@
         ? `<a class="sim-card" href="#/sim/${esc(s.id)}" style="--c:${esc(s.color)}"><span class="fan-ico">${subjIco(s.subject)}</span>
           <span class="fan-txt"><span class="fan-name strong">${esc(s.name)}</span><span class="fan-meta">${esc(s.note)}</span></span>${chev}</a>`
         : `<div class="sim-card soon" style="--c:${esc(s.color)}"><span class="fan-ico">${subjIco(s.subject)}</span>
-          <span class="fan-txt"><span class="fan-name strong">${esc(s.name)}</span><span class="fan-meta">${esc(s.note)}</span></span></div>`).join("") || `<p class="empty">Bu toifada hozircha simulyator yo'q.</p>`;
+          <span class="fan-txt"><span class="fan-name strong">${esc(s.name)}</span><span class="fan-meta">${esc(s.note)}</span></span></div>`).join("") || emptyState(IC.sim, "Hozircha simulyator yo‘q", "Bu toifaga simulyatorlar keyinroq qo‘shiladi.");
     };
     view.querySelectorAll("[data-f]").forEach((b) => b.addEventListener("click", () => {
       f = b.dataset.f; store.set("simCat", f);
@@ -1013,7 +1077,7 @@
         }
         if (total) out.push(`<section class="lang-sec"><h3 class="lang-title">${LANG[code]} kitoblar <span>${total}</span></h3>${inner}</section>`);
       }
-      $("#shelves").innerHTML = out.join("") || `<p class="empty">Hech narsa topilmadi.</p>`;
+      $("#shelves").innerHTML = out.join("") || emptyState(IC.book, "Kitob topilmadi", "Filtrlarni o‘zgartiring yoki boshqa so‘z bilan qidiring.");
     };
     const bookCard = (b, grp) => {
       const tags = [b.kind, LANG[b.lang], b.script === "kirill" ? "Kirill" : "", b.edition, b.pages ? b.pages + " bet" : "", b.format + (b.sizeMB ? " · " + (b.sizeMB >= 100 ? Math.round(b.sizeMB) : b.sizeMB) + " MB" : "")].filter(Boolean);
@@ -1062,7 +1126,7 @@
     setChrome("Xatolar ustida ishlash", true, "saved");
     const w = Object.values(store.get("wrong", {}));
     if (!w.length) {
-      view.innerHTML = `<p class="empty">Hozircha xato javoblar yo‘q.<br>Testlarda noto‘g‘ri javob bergan savollaringiz shu yerga yig‘iladi. To‘g‘ri javob bersangiz, savol ro‘yxatdan chiqadi.</p>`;
+      view.innerHTML = emptyState(IC.redo, "Xato javoblar yo‘q", "Testlarda noto‘g‘ri javob bergan savollaringiz shu yerga yig‘iladi. To‘g‘ri javob bersangiz, savol ro‘yxatdan chiqadi.", `<a class="btn primary" href="#/fanlar">Test ishlash</a>`);
       return;
     }
     view.innerHTML = `<div class="hello"><h2>Xatolar ustida ishlash</h2><p class="muted">${w.length} ta savol. To‘g‘ri javob bersangiz, u ro‘yxatdan o‘chadi.</p></div>
@@ -1077,7 +1141,9 @@
     setChrome("Saqlangan mavzular", false, "saved");
     const saved = store.get("saved", []);
     const wn = Object.keys(store.get("wrong", {})).length;
-    const wrongLink = `<a class="continue" href="#/xatolar"><span class="small">Takrorlash</span><strong>Xatolar ustida ishlash${wn ? " · " + wn + " ta savol" : ""}</strong></a>`;
+    const hn = store.get("hl", []).length;
+    const wrongLink = `<div class="tiles" style="margin-bottom:14px"><a class="tile" href="#/xatolar"><span class="tile-ico">${svg(IC.redo, 22)}</span><span><b>Xatolar</b><small>${wn ? wn + " ta savol" : "Takrorlash"}</small></span></a>
+      <a class="tile" href="#/belgilar"><span class="tile-ico" style="color:#b8860b;background:#ffe06640">${svg(ICX.marker, 22)}</span><span><b>Belgilanganlar</b><small>${hn ? hn + " ta joy" : "Marker"}</small></span></a></div>`;
     if (!saved.length) {
       view.innerHTML = wrongLink + `<div class="empty-art"><svg viewBox="0 0 120 120" width="108" height="108" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="var(--accent)" opacity=".1"/><path d="M42 30h36v62L60 78 42 92z" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linejoin="round"/></svg><p>Hali hech narsa saqlanmagan.<br>Mavzu ichidagi “Saqlash” tugmasini bosing, u shu yerda paydo bo'ladi.</p></div>`;
       return;
@@ -1094,7 +1160,7 @@
 
   function pageNotFound() {
     setChrome("Topilmadi", true, "");
-    view.innerHTML = `<p class="empty">Bu sahifa topilmadi. <a href="#/">Bosh sahifaga qaytish</a></p>`;
+    view.innerHTML = emptyState(ICX.warn, "Sahifa topilmadi", "Havola eskirgan yoki noto‘g‘ri bo‘lishi mumkin.", `<a class="btn primary" href="#/">Bosh sahifaga qaytish</a>`);
   }
 
   /* ---------- O'rnatish yo'riqnomasi ---------- */
@@ -1141,10 +1207,487 @@
   });
   let pendingScroll = 0;
 
+  /* =====================================================================
+     v0.11: Reja, Yutuqlar, Belgilash, varaqlar, harakatlar
+     Hamma ma'lumot telefonning o'zida (localStorage) saqlanadi — profilsiz ishlaydi.
+     ===================================================================== */
+  const pad = (n) => String(n).padStart(2, "0");
+  const ymd = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const parseYmd = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+  const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+  const weekStart = (d) => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); return addDays(x, -((x.getDay() + 6) % 7)); };
+  const MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
+  const DAYS = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"];
+  const fmtDay = (d) => `${d.getDate()}-${MONTHS[d.getMonth()]}`;
+  const weekLabel = (ws) => { const we = addDays(ws, 6); return ws.getMonth() === we.getMonth() ? `${ws.getDate()}–${we.getDate()} ${MONTHS[ws.getMonth()]}` : `${fmtDay(ws)} – ${fmtDay(we)}`; };
+  const nowHM = () => { const d = new Date(); return pad(d.getHours()) + ":" + pad(d.getMinutes()); };
+  const getRes = () => store.get("res", {});
+  const getPlan = () => store.get("plan", []);
+  const isLate = (p) => { const t = ymd(new Date()); return !p.done && (p.date < t || (p.date === t && p.time < nowHM())); };
+  const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+
+  const ICX = {
+    check: '<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 10"/>',
+    cal: '<rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16M12 13v5M9.5 15.5h5"/>',
+    trash: '<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
+    trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6v4H9z"/>',
+    marker: '<path d="M15 4l5 5-9 9H6v-5z"/><path d="M4 21h16"/>',
+    warn: '<path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/>',
+    plus: '<path d="M12 5v14M5 12h14"/>',
+    left: '<path d="M15 5l-7 7 7 7"/>',
+    right: '<path d="M9 5l7 7-7 7"/>'
+  };
+
+  /* Bo'sh holat */
+  const emptyState = (icon, title, text, action = "") =>
+    `<div class="empty-state"><span class="es-ico">${svg(icon, 44, 1.6)}</span><h3>${title}</h3><p>${text}</p>${action}</div>`;
+
+  /* Pastki varaq (sheet) */
+  function sheet(html) {
+    const back = document.createElement("div");
+    back.className = "sheet-back";
+    back.innerHTML = `<div class="sheet" role="dialog" aria-modal="true">${html}</div>`;
+    const close = () => { back.remove(); if (!document.querySelector(".sheet-back,.lightbox")) document.body.classList.remove("noscroll"); };
+    back.addEventListener("click", (e) => { if (e.target === back || e.target.closest("[data-x=close]")) close(); });
+    document.body.appendChild(back);
+    document.body.classList.add("noscroll");
+    window.addEventListener("hashchange", close, { once: true });
+    return { el: back.querySelector(".sheet"), close };
+  }
+
+  function download(name, text, type) {
+    const blob = new Blob([text], { type });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+  }
+
+  /* ---------- Ball (0–100) ---------- */
+  function scoreSheet(sid, tid, title, onDone) {
+    const k = sid + "/" + tid;
+    const r = getRes()[k] || {};
+    const sh = sheet(`<h3>${isDone(sid, tid) ? "Mavzu o'qildi 🎉" : "Ball"}</h3><p class="muted small" style="margin:0">${esc(title)}</p>
+      <label class="field">Universitetda shu mavzudan olgan balingiz (0–100)
+        <input id="scIn" type="number" inputmode="numeric" min="0" max="100" step="1" placeholder="masalan, 86" value="${r.score ?? ""}"></label>
+      <p class="small muted" style="margin:0">Ixtiyoriy. Keyin “Yutuqlar” bo‘limida o‘zgartirsa bo‘ladi.</p>
+      <div class="acts"><button class="btn" data-x="close">Keyinroq</button><button class="btn primary" id="scSave">Saqlash</button></div>`);
+    const inp = $("#scIn", sh.el);
+    setTimeout(() => inp.focus(), 250);
+    const save = () => {
+      const v = inp.value.trim();
+      const res = getRes();
+      if (!res[k]) res[k] = { at: new Date().toISOString(), score: null };
+      if (v === "") res[k].score = null;
+      else {
+        const n = Number(v);
+        if (!Number.isFinite(n) || n < 0 || n > 100) { inp.setCustomValidity("0 dan 100 gacha"); inp.reportValidity(); toast("Ball 0 dan 100 gacha bo‘lishi kerak"); return; }
+        res[k].score = Math.round(n);
+      }
+      store.set("res", res);
+      sh.close();
+      toast(res[k].score != null ? `Ball saqlandi: ${res[k].score}` : "Saqlandi");
+      onDone && onDone();
+    };
+    inp.addEventListener("input", () => inp.setCustomValidity(""));
+    inp.addEventListener("keydown", (e) => { if (e.key === "Enter") save(); });
+    $("#scSave", sh.el).addEventListener("click", save);
+  }
+
+  /* ---------- Reja ---------- */
+  const icsEsc = (s) => String(s).replace(/[\\;,]/g, (m) => "\\" + m).replace(/\n/g, "\\n");
+  const icsFold = (line) => { const out = []; while (line.length > 60) { out.push(line.slice(0, 60)); line = " " + line.slice(60); } out.push(line); return out.join("\r\n"); };
+  function icsFor(items) {
+    const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//ALVORA Med//Reja//UZ", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    for (const p of items) {
+      const [h, m] = p.time.split(":").map(Number);
+      const st = parseYmd(p.date); st.setHours(h, m);
+      const en = new Date(st.getTime() + 60 * 60000);
+      const f = (d) => ymd(d).replace(/-/g, "") + "T" + pad(d.getHours()) + pad(d.getMinutes()) + "00";
+      L.push("BEGIN:VEVENT", "UID:" + p.id + "@alvora-med", "DTSTAMP:" + stamp, "DTSTART:" + f(st), "DTEND:" + f(en),
+        icsFold("SUMMARY:" + icsEsc(`${p.abbr}: ${p.title}`)),
+        icsFold("DESCRIPTION:" + icsEsc("ALVORA Med — rejadagi mavzuni o‘qish vaqti")),
+        "BEGIN:VALARM", "ACTION:DISPLAY", icsFold("DESCRIPTION:" + icsEsc("Mavzuni o‘qish vaqti: " + p.title)), "TRIGGER:PT0S", "END:VALARM", "END:VEVENT");
+    }
+    L.push("END:VCALENDAR");
+    return L.join("\r\n") + "\r\n";
+  }
+  const toCalendar = (items, name) => {
+    if (!items.length) return;
+    download(name, icsFor(items), "text/calendar");
+    toast("Fayl ochilgach, “Kalendarga qo‘shish”ni tanlang");
+  };
+
+  function planItemHTML(p, compact) {
+    const late = isLate(p);
+    const tag = p.done ? `<i class="tagx ok">Bajarildi</i>` : late ? `<i class="tagx late">Vaqti o‘tdi</i>` : "";
+    const when = compact && p.date !== ymd(new Date()) ? " · " + fmtDay(parseYmd(p.date)) : "";
+    return `<div class="plan-item${p.done ? " done" : ""}${late ? " late" : ""}" data-pid="${esc(p.id)}">
+      <span class="tm">${esc(p.time)}</span>
+      <a href="#/fan/${esc(p.sid)}/${esc(p.tid)}"><span class="pt">${esc(p.title)}</span><span class="pm">${esc(p.abbr)}${when} ${tag}</span></a>
+      <span class="pi-acts"><button class="chk" data-act="chk" aria-pressed="${!!p.done}" aria-label="Bajarildi deb belgilash">${svg(ICX.check, 24)}</button></span>${compact ? "" :
+        `<span class="pi-more"><button data-act="ics">${svg(ICX.cal, 16)} Kalendarga</button><button data-act="del">${svg(ICX.trash, 16)} O‘chirish</button></span>`}</div>`;
+  }
+  function bindPlan(box, rerender) {
+    box.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-act]");
+      if (!b) return;
+      const id = b.closest("[data-pid]")?.dataset.pid;
+      const pl = getPlan();
+      const p = pl.find((x) => x.id === id);
+      if (!p) return;
+      if (b.dataset.act === "chk") {
+        p.done = !p.done; p.doneAt = p.done ? new Date().toISOString() : null;
+        store.set("plan", pl);
+        if (p.done && !isDone(p.sid, p.tid)) { setDone(p.sid, p.tid, true); scoreSheet(p.sid, p.tid, p.title, rerender); }
+        else toast(p.done ? "Bajarildi ✓" : "Belgi olib tashlandi");
+        checkWeekWin(p.date);
+        rerender();
+      } else if (b.dataset.act === "ics") toCalendar([p], `reja-${p.date}-${p.time.replace(":", "")}.ics`);
+      else if (b.dataset.act === "del") {
+        store.set("plan", pl.filter((x) => x.id !== id));
+        toast("Rejadan o‘chirildi");
+        rerender();
+      }
+    });
+  }
+  function weekWon(ws) {
+    const a = ymd(ws), z = ymd(addDays(ws, 6));
+    const items = getPlan().filter((p) => p.date >= a && p.date <= z);
+    return items.length > 0 && items.every((p) => p.done);
+  }
+  function checkWeekWin(dateStr) {
+    const ws = weekStart(parseYmd(dateStr));
+    if (weekWon(ws)) setTimeout(() => toast(`🏆 Haftalik yutuq: ${weekLabel(ws)} rejasi to‘liq bajarildi!`), 600);
+  }
+
+  async function planSheet(pre, onSave) {
+    const cat = await catalog();
+    const last = store.get("planLast", { time: "14:00" });
+    const sh = sheet(`<h3>Rejaga mavzu qo‘shish</h3>
+      <div class="row2"><label class="field">Sana<input type="date" id="pDate" value="${esc(pre.date || ymd(new Date()))}"></label>
+        <label class="field">Soat<input type="time" id="pTime" value="${esc(pre.time || last.time || "14:00")}"></label></div>
+      <label class="field">Kurs<select id="pCourse">${cat.courses.map((c) => `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join("")}</select></label>
+      <label class="field">Fan<select id="pSub"></select></label>
+      <label class="field">Mavzu<select id="pTop"></select></label>
+      <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="pSave">Qo‘shish</button></div>`);
+    const E = (id) => $("#" + id, sh.el);
+    const fillTopics = async () => {
+      const s = await loadSubject(E("pSub").value).catch(() => null);
+      E("pTop").innerHTML = s ? s.data.topics.map((t) => `<option value="${esc(t.id)}">${t.no ? t.no + ". " : ""}${esc(t.title)}</option>`).join("") : `<option value="">Mavzu yo‘q</option>`;
+      if (pre.tid && s?.data.topics.some((t) => t.id === pre.tid)) E("pTop").value = pre.tid;
+    };
+    const fillSubs = async () => {
+      const c = cat.courses.find((x) => x.id === E("pCourse").value);
+      const ready = c.subjects.filter((x) => x.status === "ready");
+      E("pSub").innerHTML = ready.length ? ready.map((x) => `<option value="${esc(x.id)}">${esc(x.abbr)} — ${esc(x.name)}</option>`).join("") : `<option value="">Bu kursda fan hali yo‘q</option>`;
+      if (pre.sid && ready.some((x) => x.id === pre.sid)) E("pSub").value = pre.sid;
+      await fillTopics();
+    };
+    let course = store.get("course", "3");
+    if (pre.sid) { const f = await findSubject(pre.sid); if (f) course = f.course.id; }
+    E("pCourse").value = cat.courses.some((c) => c.id === course) ? course : cat.courses[0].id;
+    E("pCourse").addEventListener("change", () => { pre = {}; fillSubs(); });
+    E("pSub").addEventListener("change", () => { pre.tid = null; fillTopics(); });
+    await fillSubs();
+    E("pSave").addEventListener("click", async () => {
+      const date = E("pDate").value, time = E("pTime").value, sid = E("pSub").value, tid = E("pTop").value;
+      if (!date || !time) { toast("Sana va soatni tanlang"); return; }
+      if (!sid || !tid) { toast("Fan va mavzuni tanlang"); return; }
+      const s = await loadSubject(sid);
+      const t = s.data.topics.find((x) => x.id === tid);
+      const pl = getPlan();
+      pl.push({ id: uid(), date, time, sid, tid, title: (t.no ? t.no + "-mavzu. " : "") + t.title, abbr: s.meta.abbr, done: false });
+      store.set("plan", pl);
+      store.set("planLast", { time });
+      sh.close();
+      const d = parseYmd(date);
+      toast(`Rejaga qo‘shildi: ${DAYS[(d.getDay() + 6) % 7]}, ${fmtDay(d)}, ${time}`);
+      rejaWeek = weekStart(d);
+      onSave && onSave();
+    });
+  }
+
+  let rejaWeek = null;
+  function pageReja() {
+    setChrome("Reja", false, "reja");
+    if (!rejaWeek) rejaWeek = weekStart(new Date());
+    const draw = () => {
+      const ws = rejaWeek, a = ymd(ws), z = ymd(addDays(ws, 6)), today = ymd(new Date());
+      const items = getPlan().filter((p) => p.date >= a && p.date <= z).sort((x, y) => (x.date + x.time).localeCompare(y.date + y.time));
+      const nDone = items.filter((p) => p.done).length;
+      const won = items.length > 0 && nDone === items.length;
+      const isCur = ymd(weekStart(new Date())) === a;
+      view.innerHTML = `<div class="hello"><h2>Reja</h2><p class="muted">Qaysi kuni, soat nechada, qaysi mavzuni o‘qishingizni belgilang.</p></div>
+        <div class="week-nav"><button class="icon-btn" id="wPrev" aria-label="Oldingi hafta">${svg(ICX.left, 22, 2.2)}</button>
+          <span class="wk">${weekLabel(ws)}${isCur ? "" : `<br><button class="btn" id="wToday" style="padding:4px 10px;font-size:.78rem;margin-top:4px">Shu haftaga qaytish</button>`}</span>
+          <button class="icon-btn" id="wNext" aria-label="Keyingi hafta">${svg(ICX.right, 22, 2.2)}</button></div>
+        <div class="week-sum${won ? " won" : ""}"><b>${won ? "🏆 Haftalik yutuq qo‘lga kiritildi!" : "Haftalik reja"}</b>
+          <div class="small muted">${items.length ? `${nDone} / ${items.length} mavzu bajarildi` : "Bu haftaga hali mavzu qo‘shilmagan"}</div>
+          ${items.length ? `<div class="progress"><i style="width:${Math.round(nDone / items.length * 100)}%"></i></div>` : ""}
+          <div class="week-acts"><button class="btn primary" id="wAdd">${svg(ICX.plus, 18, 2.2)} Mavzu qo‘shish</button>
+            ${items.length ? `<button class="btn" id="wIcs">${svg(ICX.cal, 18)} Haftani kalendarga</button>` : ""}</div></div>
+        <div id="days">${[0, 1, 2, 3, 4, 5, 6].map((i) => {
+          const d = addDays(ws, i), ds = ymd(d);
+          const its = items.filter((p) => p.date === ds);
+          return `<section class="day${ds === today ? " today" : ""}"><div class="day-h"><b>${DAYS[i]}</b><small>${fmtDay(d)}</small></div>
+            ${its.map((p) => planItemHTML(p, false)).join("")}
+            <button class="day-add" data-add="${ds}">+ Qo‘shish</button></section>`;
+        }).join("")}</div>
+        <p class="small muted">🔔 Ilova yopiq bo‘lsa, o‘zi ogohlantira olmaydi. Aynan soatida eslatma olish uchun ${svg(ICX.cal, 14)} tugmasi bilan mavzuni telefon kalendariga qo‘shing — kalendar o‘zi eslatadi.</p>`;
+      $("#wPrev").addEventListener("click", () => { rejaWeek = addDays(rejaWeek, -7); draw(); });
+      $("#wNext").addEventListener("click", () => { rejaWeek = addDays(rejaWeek, 7); draw(); });
+      $("#wToday")?.addEventListener("click", () => { rejaWeek = weekStart(new Date()); draw(); });
+      $("#wAdd").addEventListener("click", () => planSheet({ date: isCur ? today : a }, draw));
+      $("#wIcs")?.addEventListener("click", () => toCalendar(items, `reja-${a}.ics`));
+      view.querySelectorAll("[data-add]").forEach((b) => b.addEventListener("click", () => planSheet({ date: b.dataset.add }, draw)));
+    };
+    draw();
+    bindPlan(view, () => { if (location.hash.startsWith("#/reja")) draw(); });
+  }
+
+  function todayPlanHTML() {
+    const t = ymd(new Date());
+    const pl = getPlan();
+    const list = [...pl.filter((p) => isLate(p) && p.date < t), ...pl.filter((p) => p.date === t)]
+      .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    if (!list.length) {
+      return `<a class="goal" href="#/reja"><span class="tile-ico">${svg(IC.plan, 22)}</span>
+        <span class="goal-txt"><b>Bugungi reja</b><small>Bugunga mavzu rejalashtirilmagan. Haftalik reja tuzing.</small></span>${chev}</a>`;
+    }
+    const late = list.filter(isLate).length;
+    return `<div class="today-card" id="todayPlan"><div class="tc-h"><b>Bugungi reja${late ? ` <i class="tagx late">${late} ta kechikkan</i>` : ""}</b><a href="#/reja">Hammasi ›</a></div>
+      ${list.slice(0, 4).map((p) => planItemHTML(p, true)).join("")}</div>`;
+  }
+
+  /* ---------- Yutuqlar ---------- */
+  function weeklyWins() {
+    const by = {};
+    for (const p of getPlan()) { const k = ymd(weekStart(parseYmd(p.date))); (by[k] = by[k] || []).push(p); }
+    return Object.entries(by).filter(([, a]) => a.every((p) => p.done)).map(([k, a]) => ({ ws: parseYmd(k), n: a.length })).sort((a, b) => b.ws - a.ws);
+  }
+  async function pageYutuq() {
+    setChrome("Yutuqlar", false, "yutuq");
+    const done = store.get("done", {});
+    const keys = Object.keys(done);
+    const res = getRes();
+    const scores = keys.map((k) => res[k]?.score).filter((x) => x != null);
+    const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
+    const wins = weeklyWins();
+    const n = keys.length, hi = scores.filter((x) => x >= 86).length;
+    const B = [
+      ["🌱", "Birinchi qadam", "1 ta mavzu", n >= 1], ["📗", "Izchil", "5 ta mavzu", n >= 5], ["📘", "Bilimdon", "10 ta mavzu", n >= 10],
+      ["📚", "Kitobxon", "25 ta mavzu", n >= 25], ["🎓", "Ustoz", "50 ta mavzu", n >= 50], ["🏛️", "Akademik", "100 ta mavzu", n >= 100],
+      ["⭐", "A’lochi", "5 ta mavzuda 86+ ball", hi >= 5], ["💯", "Mukammal", "100 ball olingan mavzu", scores.includes(100)], ["📈", "Barqaror", "O‘rtacha ball 80+ (5+ mavzu)", scores.length >= 5 && avg >= 80],
+      ["🗓️", "Rejali hafta", "1 hafta reja to‘liq", wins.length >= 1], ["🔥", "To‘rt hafta", "4 hafta reja to‘liq", wins.length >= 4], ["🏆", "Semestr", "12 hafta reja to‘liq", wins.length >= 12]
+    ];
+    // o'qilgan mavzular nomlari
+    const rows = [];
+    const subs = {};
+    for (const k of keys) {
+      const [sid, tid] = k.split("/");
+      if (!(sid in subs)) subs[sid] = await loadSubject(sid).catch(() => null);
+      const s = subs[sid]; const t = s?.data.topics.find((x) => x.id === tid);
+      if (t) rows.push({ k, sid, tid, abbr: s.meta.abbr, title: (t.no ? t.no + "-mavzu. " : "") + t.title, at: res[k]?.at || "", score: res[k]?.score ?? null });
+    }
+    rows.sort((a, b) => (b.at || "").localeCompare(a.at || ""));
+    const pill = (r) => `<button class="score-pill${r.score == null ? " none" : r.score >= 86 ? " hi" : r.score < 56 ? " lo" : ""}" data-sc="${esc(r.k)}">${r.score == null ? "+ ball" : r.score}</button>`;
+    view.innerHTML = `<div class="hello"><h2>Yutuqlar</h2><p class="muted">O‘qigan mavzularingiz, universitetdagi ballaringiz va nishonlar.</p></div>
+      <div class="stats3"><div class="stat"><b>${n}</b><small>o‘qilgan mavzu</small></div><div class="stat"><b>${avg ?? "—"}</b><small>o‘rtacha ball</small></div><div class="stat"><b>${wins.length}</b><small>haftalik yutuq</small></div></div>
+      <h3 class="group-label">Nishonlar</h3>
+      <div class="badges">${B.map(([i, t, d, ok]) => `<div class="badge-card ${ok ? "got" : "locked"}"><span class="bi">${i}</span><b>${t}</b><small>${d}</small></div>`).join("")}</div>
+      <h3 class="group-label">Haftalik yutuqlar</h3>
+      ${wins.length ? wins.map((w) => `<div class="week-win"><span class="bi">🏆</span><span><b>${weekLabel(w.ws)}</b><br><span class="small muted">Haftalik reja to‘liq bajarildi · ${w.n} ta mavzu</span></span></div>`).join("")
+        : `<p class="small muted">“Reja” bo‘limida haftaga mavzular qo‘shing va hammasini bajaring — shu yerda haftalik yutuq paydo bo‘ladi. <a href="#/reja">Reja tuzish ›</a></p>`}
+      <h3 class="group-label">O‘qilgan mavzular</h3>
+      <div id="readList">${rows.length ? rows.map((r) => `<div class="read-row"><a href="#/fan/${esc(r.sid)}/${esc(r.tid)}"><b class="small" style="color:var(--accent)">${esc(r.abbr)}</b> <span>${esc(r.title)}</span><br>
+          <span class="small muted">${r.at ? "O‘qildi: " + fmtDay(new Date(r.at)) + " " + new Date(r.at).getFullYear() : "Sana yozilmagan"}</span></a>${pill(r)}</div>`).join("")
+        : emptyState(ICX.trophy, "Hali o‘qilgan mavzu yo‘q", "Mavzuni o‘qib bo‘lgach, “O‘qildi” deb belgilang va universitetdan olgan balingizni yozing.", `<a class="btn primary" href="#/fanlar">Fanlarni ochish</a>`)}</div>`;
+    view.querySelectorAll("[data-sc]").forEach((b) => b.addEventListener("click", () => {
+      const r = rows.find((x) => x.k === b.dataset.sc);
+      scoreSheet(r.sid, r.tid, r.title, () => pageYutuq());
+    }));
+  }
+
+  /* ---------- Belgilash (marker) ---------- */
+  const HLTABS = ["matn", "bosqich", "xulosa", "masala"];
+  const BLK = "p,li,td,th,h3,h4,figcaption,.note";
+  function wrapText(block, str, id) {
+    const full = block.textContent;
+    const idx = full.indexOf(str);
+    if (idx < 0) return null;
+    const end = idx + str.length;
+    const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
+    const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+    let pos = 0, first = null;
+    for (const n of nodes) {
+      const len = n.nodeValue.length, s0 = pos; pos += len;
+      if (s0 + len <= idx || s0 >= end) continue;
+      const a = Math.max(idx, s0) - s0, b = Math.min(end, s0 + len) - s0;
+      let target = n;
+      if (b < len) target.splitText(b);
+      if (a > 0) target = target.splitText(a);
+      const mk = document.createElement("mark");
+      mk.className = "hl"; mk.dataset.h = id;
+      target.parentNode.replaceChild(mk, target); mk.appendChild(target);
+      first = first || mk;
+    }
+    return first;
+  }
+  function applyHighlights(body, sid, tid, tab) {
+    for (const h of store.get("hl", []).filter((x) => x.sid === sid && x.tid === tid && x.tab === tab)) {
+      const scope = (h.s !== "" && body.querySelector(`[data-i="${h.s}"]`)) || body;
+      for (const b of scope.querySelectorAll(BLK)) if (b.textContent.includes(h.text) && wrapText(b, h.text, h.id)) break;
+    }
+  }
+  function removeHighlight(id) {
+    store.set("hl", store.get("hl", []).filter((x) => x.id !== id));
+    document.querySelectorAll(`mark.hl[data-h="${id}"]`).forEach((m) => m.replaceWith(...m.childNodes));
+  }
+  const hlBtn = $("#hlBtn");
+  let hlSel = null;
+  const elOf = (n) => (n && n.nodeType === 1 ? n : n?.parentElement);
+  document.addEventListener("selectionchange", () => {
+    const sel = getSelection();
+    hlSel = null;
+    const body = $("#tabBody");
+    if (body && body.dataset.hl === "1" && sel && !sel.isCollapsed && sel.rangeCount) {
+      const r = sel.getRangeAt(0);
+      const a = elOf(r.startContainer)?.closest(BLK), b = elOf(r.endContainer)?.closest(BLK);
+      const txt = sel.toString().replace(/\s+/g, " ").trim();
+      if (a && a === b && body.contains(a) && !a.closest("summary") && txt.length >= 3 && txt.length <= 600 && a.textContent.includes(txt)) hlSel = { block: a, text: txt };
+    }
+    hlBtn.hidden = !hlSel;
+  });
+  hlBtn.addEventListener("pointerdown", (e) => e.preventDefault());
+  hlBtn.addEventListener("click", () => {
+    if (!hlSel) return;
+    const body = $("#tabBody");
+    const holder = hlSel.block.closest("[data-i]");
+    const h = { id: uid(), sid: body.dataset.sid, tid: body.dataset.tid, tab: body.dataset.tab, s: holder ? holder.dataset.i : "", text: hlSel.text,
+      at: new Date().toISOString(), title: body.dataset.title, abbr: body.dataset.abbr };
+    const list = store.get("hl", []); list.unshift(h); store.set("hl", list);
+    wrapText(hlSel.block, h.text, h.id);
+    getSelection().removeAllRanges();
+    hlBtn.hidden = true; hlSel = null;
+    toast("Belgilandi · “Saqlangan” → “Belgilanganlar”");
+  });
+  document.addEventListener("click", (e) => {
+    const m = e.target.closest("mark.hl");
+    if (!m || !getSelection().isCollapsed) return;
+    const h = store.get("hl", []).find((x) => x.id === m.dataset.h);
+    if (!h) return;
+    const sh = sheet(`<h3>Belgilangan joy</h3><p style="background:#ffe06655;border-radius:10px;padding:10px 12px;margin:8px 0">${esc(h.text)}</p>
+      <div class="acts"><button class="btn danger" id="hlDel">${svg(ICX.trash, 18)} Belgini o‘chirish</button><button class="btn" data-x="close">Yopish</button></div>`);
+    $("#hlDel", sh.el).addEventListener("click", () => { removeHighlight(h.id); sh.close(); toast("Belgi o‘chirildi"); });
+  });
+
+  function pageBelgilar() {
+    setChrome("Belgilanganlar", true, "saved");
+    const list = store.get("hl", []);
+    view.innerHTML = `<div class="hello"><h2>Belgilanganlar</h2><p class="muted">Mavzu matnida sariq marker bilan belgilagan joylaringiz. Bossangiz, aynan o‘sha joy ochiladi.</p></div>
+      <div id="hlList">${list.length ? list.map((h) => `<a class="hl-card" href="#/fan/${esc(h.sid)}/${esc(h.tid)}?${esc(h.tab)}&s=${esc(h.s)}&h=${esc(h.id)}">
+          <q>${esc(h.text)}</q><span class="hl-meta"><span><b>${esc(h.abbr || "")}</b> · ${esc(h.title || "")}</span>
+          <button class="icon-btn" data-del="${esc(h.id)}" aria-label="O‘chirish" style="width:36px;height:36px">${svg(ICX.trash, 18)}</button></span></a>`).join("")
+        : emptyState(ICX.marker, "Hali belgilangan joy yo‘q", "Mavzu matnida kerakli gapni barmoq bilan bosib turib belgilang, so‘ng pastda chiqadigan “🖍 Belgilash” tugmasini bosing.")}</div>`;
+    view.querySelectorAll("[data-del]").forEach((b) => b.addEventListener("click", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      removeHighlight(b.dataset.del); pageBelgilar(); toast("Belgi o‘chirildi");
+    }));
+  }
+
+  /* ---------- Zaxira nusxa ---------- */
+  function backupSave() {
+    const data = {};
+    for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("tq:")) data[k] = localStorage.getItem(k); }
+    download(`alvora-med-zaxira-${ymd(new Date())}.json`, JSON.stringify({ app: "alvora-med", v: 1, at: new Date().toISOString(), data }, null, 1), "application/json");
+    toast("Zaxira fayl saqlandi");
+  }
+  function backupLoad(file) {
+    const rd = new FileReader();
+    rd.onload = () => {
+      try {
+        const j = JSON.parse(rd.result);
+        if (j.app !== "alvora-med" || !j.data) throw new Error("bad");
+        if (!confirm("Zaxiradagi ma’lumotlar hozirgisi o‘rniga yozilsinmi? (reja, yutuqlar, belgilar, o‘qilganlar)")) return;
+        for (const [k, v] of Object.entries(j.data)) if (k.startsWith("tq:")) localStorage.setItem(k, v);
+        applyPrefs(); toast("Zaxiradan tiklandi"); route();
+      } catch { toast("Bu fayl ALVORA Med zaxirasi emas"); }
+    };
+    rd.readAsText(file);
+  }
+
+  /* ---------- Umumiy: yuqoriga, o'qish chizig'i, pastga tortib yangilash ---------- */
+  const toTop = $("#toTop"), rp = $(".read-progress i");
+  const onScrollAll = () => {
+    const y = window.scrollY;
+    toTop.hidden = y < 600 || view.classList.contains("wide");
+    if (document.body.classList.contains("reading")) {
+      const h = document.documentElement.scrollHeight - innerHeight;
+      rp.style.width = (h > 0 ? Math.min(100, y / h * 100) : 0) + "%";
+    }
+  };
+  window.addEventListener("scroll", onScrollAll, { passive: true });
+  toTop.addEventListener("click", () => {
+    const toc = view.querySelector(".book-toc");
+    if (toc) { toc.open = true; toc.scrollIntoView({ behavior: "smooth", block: "start" }); }
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  const ptr = $(".ptr");
+  let ptrY = null, ptrD = 0, ptrBusy = false;
+  async function refreshApp() {
+    try { const r = await navigator.serviceWorker?.getRegistration(); await r?.update(); } catch { /* oflayn */ }
+    for (const k of Object.keys(cache)) delete cache[k];
+    searchIndex = null; glossary = null; sentences = null;
+    await route();
+    toast("Yangilandi");
+  }
+  window.addEventListener("touchstart", (e) => {
+    ptrY = (!ptrBusy && window.scrollY <= 0 && e.touches.length === 1 && !view.classList.contains("wide") && !document.querySelector(".sheet-back,.lightbox") && !getSelection().toString())
+      ? e.touches[0].clientY : null;
+    ptrD = 0;
+  }, { passive: true });
+  window.addEventListener("touchmove", (e) => {
+    if (ptrY == null) return;
+    ptrD = window.scrollY > 0 ? 0 : Math.max(0, e.touches[0].clientY - ptrY);
+    const d = Math.min(ptrD * 0.5, 84);
+    ptr.style.transition = "none";
+    ptr.style.opacity = d > 10 ? Math.min(1, d / 60) : 0;
+    ptr.style.transform = `translateY(${d - 50}px) rotate(${d * 4}deg)`;
+  }, { passive: true });
+  window.addEventListener("touchend", async () => {
+    if (ptrY == null) return;
+    const d = Math.min(ptrD * 0.5, 84);
+    ptrY = null;
+    ptr.style.transition = "transform .25s ease, opacity .25s ease";
+    if (d >= 62) {
+      ptrBusy = true;
+      ptr.style.transform = "translateY(14px)"; ptr.classList.add("spin");
+      await refreshApp();
+      setTimeout(() => { ptr.classList.remove("spin"); ptr.style.opacity = 0; ptr.style.transform = ""; ptrBusy = false; }, 350);
+    } else { ptr.style.opacity = 0; ptr.style.transform = ""; }
+  });
+
+  const SKEL = `<div class="skel"><div class="sk h1"></div><div class="sk h2"></div><div class="sk card"></div><div class="sk row"><i></i><i></i><i></i><i></i></div><div class="sk card"></div><div class="sk card"></div></div>`;
+  const STAG = ".hero, .goal, .today-card, .course-switch, .resume, .quick, .fan-card, .sim-card, .tile, .topics li, .result, .gloss, .book, .plan-item, .day, .week-sum, .stat, .badge-card, .week-win, .read-row, .hl-card, .empty-state, .empty-art, .soon-card, .settings, .sum-item, .case";
+  function animateIn() {
+    view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter");
+    let i = 0;
+    view.querySelectorAll(STAG).forEach((el) => {
+      if (i > 14 || el.getBoundingClientRect().top > innerHeight + 40) return;
+      el.style.setProperty("--i", i++); el.classList.add("stag");
+    });
+  }
+
   /* ---------- Yo'naltirgich (router) ---------- */
   async function route() {
     const [path, query] = location.hash.replace(/^#/, "").split("?");
     const p = (path || "/").split("/").filter(Boolean);
+    document.body.classList.remove("reading");
+    hlBtn.hidden = true;
+    const skT = setTimeout(() => { view.classList.remove("wide"); view.innerHTML = SKEL; }, 140);
     try {
       if (!p.length) await pageHome();
       else if (p[0] === "fan" && p.length === 2) await pageSubject(p[1]);
@@ -1153,7 +1696,9 @@
       else if (p[0] === "fan" && p.length === 3) await pageTopic(p[1], p[2], query);
       else if (p[0] === "fanlar") await pageFanlar();
       else if (p[0] === "assyst") pageSoon("assyst", "Assyst", "Bilimingizni tekshiring va mustahkamlang.", ["Mavzu bo'yicha", "Aralash", "Imtihon"], IC.assyst);
-      else if (p[0] === "reja") pageSoon("reja", "Reja", "Kunlik va haftalik o'quv rejangiz.", ["Bugun", "Hafta", "Maqsadlar"], IC.plan);
+      else if (p[0] === "reja") pageReja();
+      else if (p[0] === "yutuqlar") await pageYutuq();
+      else if (p[0] === "belgilar") pageBelgilar();
       else if (p[0] === "sozlamalar") await pageSettings();
       else if (p[0] === "pdf" && p[1]) await pagePdf(p[1]);
       else if (p[0] === "qidiruv") await pageSearch();
@@ -1165,10 +1710,13 @@
       else pageNotFound();
     } catch (e) {
       console.error(e);
-      view.innerHTML = `<p class="empty">Ma'lumot yuklanmadi. Internetga ulanib, sahifani yangilang — keyin u offline ham ochiladi.</p>`;
+      view.innerHTML = emptyState(ICX.warn, "Ma'lumot yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang — keyin u oflayn ham ochiladi.");
     }
+    clearTimeout(skT);
     const y = pendingScroll; pendingScroll = 0;
     window.scrollTo(0, y);
+    animateIn();
+    onScrollAll();
   }
   window.addEventListener("hashchange", route);
 

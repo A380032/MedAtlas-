@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v0.10.0";
+const VERSION = "v0.11.0";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -12,7 +12,12 @@ const SHELL_FILES = [
   "manifest.webmanifest",
   "data/precache.json",
   "icons/icon-192.png",
-  "icons/icon-512.png"
+  "icons/icon-512.png",
+  "icons/apple-touch-icon.png",
+  "fonts/onest-latin-wght-normal.woff2",
+  "fonts/onest-latin-ext-wght-normal.woff2",
+  "fonts/onest-cyrillic-wght-normal.woff2",
+  "fonts/onest-cyrillic-ext-wght-normal.woff2"
 ];
 
 // Barcha kontent (matn, rasm) birinchi ochilishdayoq yuklab olinadi: keyin internetsiz ishlaydi.
