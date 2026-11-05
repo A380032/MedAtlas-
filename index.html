@@ -3,35 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MedAtlas by ALVORA</title>
+<title>ALVORA Med</title>
 <meta name="description" content="1–3-kurs tibbiyot talabalari uchun qo'llanmalar, testlar va klinik simulyatorlar">
-<meta name="theme-color" content="#15302f">
+<meta name="theme-color" content="#eef7f5">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="MedAtlas by ALVORA">
+<meta name="apple-mobile-web-app-title" content="ALVORA Med">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <div id="splash" aria-hidden="true">
   <img class="sp-logo" src="icons/icon-512.png" alt="">
-  <div class="sp-brand"><span class="sp-name">MedAtlas</span><span class="sp-by">by ALVORA</span></div>
+  <div class="sp-brand"><span class="sp-name">ALVORA <b>Med</b></span><span class="sp-by">Tibbiyot ta'limi bir joyda</span></div>
+  <div class="sp-bar"><i></i></div>
 </div>
 <style>
-#splash{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:#eef4fb;transition:opacity .45s ease}
-#splash .sp-logo{width:148px;height:148px;border-radius:34px;box-shadow:0 18px 50px rgba(30,70,140,.22);animation:spIn .7s cubic-bezier(.2,.8,.2,1) both}
+#splash{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:radial-gradient(120% 90% at 20% 0%,#1b9a84 0%,#0b6a5a 48%,#08433c 100%);transition:opacity .45s ease}
+#splash .sp-logo{width:132px;height:132px;border-radius:32px;box-shadow:0 18px 50px rgba(0,0,0,.35);animation:spIn .7s cubic-bezier(.2,.8,.2,1) both}
 #splash .sp-brand{display:flex;flex-direction:column;align-items:center;opacity:0;transform:translateY(8px);transition:opacity .45s ease,transform .45s ease}
-#splash .sp-name{font:700 30px/1.1 Unbounded,system-ui,sans-serif;color:#15302f;letter-spacing:.5px}
-#splash .sp-by{font:500 13px/1.6 Onest,system-ui,sans-serif;color:#4c6a8a;letter-spacing:3px;text-transform:uppercase}
+#splash .sp-name{font:700 30px/1.1 Onest,system-ui,sans-serif;color:#fff;letter-spacing:.5px}
+#splash .sp-name b{color:#8be3cf;font-weight:700}
+#splash .sp-by{font:500 14px/1.6 Onest,system-ui,sans-serif;color:#bfe6dd;margin-top:4px}
+#splash .sp-bar{position:absolute;bottom:calc(56px + env(safe-area-inset-bottom,0px));width:96px;height:4px;border-radius:4px;background:rgba(255,255,255,.22);overflow:hidden}
+#splash .sp-bar i{display:block;height:100%;width:100%;background:#8be3cf;border-radius:4px;transform:translateX(-100%);animation:spBar 1.7s ease forwards}
 #splash.show-brand .sp-brand{opacity:1;transform:none}
 #splash.hide{opacity:0;pointer-events:none}
 @keyframes spIn{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){#splash .sp-logo{animation:none}#splash,#splash .sp-brand{transition:none}}
+@keyframes spBar{to{transform:none}}
+@media (prefers-reduced-motion:reduce){#splash .sp-logo{animation:none}#splash,#splash .sp-brand{transition:none}#splash .sp-bar i{animation:none;transform:none}}
 </style>
 <script>
 (function(){var s=document.getElementById('splash');if(!s)return;
@@ -45,9 +50,11 @@ s.addEventListener('click',function(){clearTimeout(t);done()});})();
   <button class="icon-btn" id="backBtn" aria-label="Orqaga" hidden>
     <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
-  <h1 class="topbar-title" id="pageTitle">Qo'llanma</h1>
-  <button class="icon-btn fs-btn" id="fsDown" aria-label="Matnni kichraytirish"><span>A−</span></button>
-  <button class="icon-btn fs-btn" id="fsUp" aria-label="Matnni kattalashtirish"><span>A+</span></button>
+  <a class="brand" href="#/" aria-label="ALVORA Med — bosh sahifa"><img src="icons/icon-192.png" alt="" width="34" height="34"><span>ALVORA <b>Med</b></span></a>
+  <h1 class="topbar-title" id="pageTitle">Bosh sahifa</h1>
+  <button class="icon-btn" id="setBtn" aria-label="Sozlamalar" hidden>
+    <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+  </button>
   <button class="icon-btn" id="themeBtn" aria-label="Tungi rejim">
     <svg viewBox="0 0 24 24" width="21" height="21"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
   </button>
@@ -56,25 +63,38 @@ s.addEventListener('click',function(){clearTimeout(t);done()});})();
 <main id="view" tabindex="-1"></main>
 
 <nav class="tabbar" aria-label="Asosiy menyu">
+  <a class="side-brand" href="#/"><img src="icons/icon-192.png" alt="" width="40" height="40"><span>ALVORA <b>Med</b></span></a>
   <a href="#/" data-tab="home">
-    <svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>
     <span>Bosh</span>
   </a>
+  <a href="#/fanlar" data-tab="fanlar" class="desk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>
+    <span>Fanlar</span>
+  </a>
+  <a href="#/assyst" data-tab="assyst" class="desk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+    <span>Assyst</span>
+  </a>
   <a href="#/qidiruv" data-tab="search">
-    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
     <span>Qidiruv</span>
   </a>
   <a href="#/simulyatorlar" data-tab="sim">
-    <svg viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3M11 14v2a4 4 0 0 0 8 0v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="19" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a5 5 0 0 0 10 0V3M11 14v2a4 4 0 0 0 8 0v-2"/><circle cx="19" cy="12" r="2"/></svg>
     <span>Simulyator</span>
   </a>
   <a href="#/kutubxona" data-tab="lib">
-    <svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zM9 4h4v16H9zM14.5 5.5l3.8-1 3.2 14.8-3.8 1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4v16H4zM9 4h4v16H9zM14.5 5.5l3.8-1 3.2 14.8-3.8 1z"/></svg>
     <span>Kutubxona</span>
   </a>
   <a href="#/saqlangan" data-tab="saved">
-    <svg viewBox="0 0 24 24"><path d="M7 3h10v18l-5-4-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v18l-5-4-5 4z"/></svg>
     <span>Saqlangan</span>
+  </a>
+  <a href="#/sozlamalar" data-tab="sozlamalar" class="desk bottom">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+    <span>Sozlamalar</span>
   </a>
 </nav>
 

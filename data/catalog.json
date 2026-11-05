@@ -129,7 +129,8 @@
    "color": "#d9822b",
    "status": "ready",
    "note": "Virtual bemorlar: shikoyat, ko‘rik, auskultatsiya va tashxis",
-   "file": "sim/bkp.html"
+   "file": "sim/bkp.html",
+   "cat": "klinik"
   },
   {
    "id": "opka-ikp",
@@ -139,7 +140,8 @@
    "color": "#2f6fd0",
    "status": "ready",
    "note": "O‘pka palpatsiyasi, perkussiyasi va auskultatsiyasi",
-   "file": "sim/opka-ikp.html"
+   "file": "sim/opka-ikp.html",
+   "cat": "diagnostik"
   },
   {
    "id": "yurak-ikp",
@@ -149,7 +151,8 @@
    "color": "#2f6fd0",
    "status": "ready",
    "note": "Paypaslash, perkussiya, tonlar va shovqinlar, puls, AB o‘lchash, mitral va aortal nuqsonlar",
-   "file": "sim/yurak-ikp.html"
+   "file": "sim/yurak-ikp.html",
+   "cat": "diagnostik"
   },
   {
    "id": "farm-lab",
@@ -159,7 +162,8 @@
    "color": "#2a9468",
    "status": "ready",
    "note": "18 mavzu bo‘yicha 67 ta retsept vaziyati, xatoni topish, doza hisoblash va farmakokinetika grafigi",
-   "file": "sim/farm-lab.html"
+   "file": "sim/farm-lab.html",
+   "cat": "laboratoriya"
   },
   {
    "id": "nafas-atlas",
@@ -169,7 +173,8 @@
    "color": "#2f6fd0",
    "status": "ready",
    "note": "Nafas a‘zolari kasalliklarining fizikal diagnostikasi",
-   "file": "sim/nafas-atlas.html"
+   "file": "sim/nafas-atlas.html",
+   "cat": "diagnostik"
   },
   {
    "id": "alkogol",
@@ -179,7 +184,8 @@
    "color": "#a0522d",
    "status": "ready",
    "note": "Etil spirti va alkogolizm: tana bo‘ylab xarita",
-   "file": "sim/alkogol.html"
+   "file": "sim/alkogol.html",
+   "cat": "klinik"
   },
   {
    "id": "fzl-lab",
@@ -189,7 +195,8 @@
    "color": "#2f78b5",
    "status": "ready",
    "note": "15 ta laboratoriya ishi: kimograf, Goryayev kamerasi, Sali, Panchenkov, qon guruhi, EKG, tonometr, spirometr, Sivtsev jadvali, kamertonlar",
-   "file": "sim/fzl-lab.html"
+   "file": "sim/fzl-lab.html",
+   "cat": "laboratoriya"
   },
   {
    "id": "bkm-lab",
@@ -199,7 +206,8 @@
    "color": "#c27c1a",
    "status": "ready",
    "note": "20 ta klinik-laboratoriya holati (III–IV semestr): avval bemor va nazariya, so‘ng analizator, titrlash, test-chiziqlar, IFA, PZR–RFLP, koagulometr bilan tahlil va natijani talqin qilish",
-   "file": "sim/bkm-lab.html"
+   "file": "sim/bkm-lab.html",
+   "cat": "laboratoriya"
   },
   {
    "id": "mkb-lab",
@@ -209,7 +217,8 @@
    "color": "#4f8f84",
    "status": "ready",
    "note": "20 ta laboratoriya-klinik holat: bemor va nazariya, surtma va bo‘yash, immersion mikroskopiya, oziq muhitga ekish, biokimyoviy identifikatsiya, antibiotikogramma, IFA, immunoblot va OT-PZR",
-   "file": "sim/mkb-lab.html"
+   "file": "sim/mkb-lab.html",
+   "cat": "laboratoriya"
   }
  ]
 }
