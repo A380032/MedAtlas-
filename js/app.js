@@ -228,7 +228,7 @@
     const quick = [
       ["#/reja", IC.plan, "Reja", ""],
       ["#/yutuqlar", ICX.trophy, "Yutuqlar", ""],
-      ["#/assyst", IC.assyst, "Assyst", ""],
+      ["#/testmarkazi", IC.assyst, "Test markazi", ""],
       ["#/xatolar", IC.redo, "Xatolar", wn ? String(wn) : ""]
     ].map(([h, ic, t, n]) => `<a class="quick" href="${h}"><span class="quick-ico">${svg(ic, 24)}${n ? `<i class="badge">${n}</i>` : ""}</span><span>${t}</span></a>`).join("");
 
@@ -298,7 +298,7 @@
           <span style="display:flex;flex-direction:column;gap:6px"><button class="btn" id="bkSave">Saqlash</button><button class="btn" id="bkLoad">Tiklash</button></span></div>
         <input type="file" id="bkFile" accept="application/json,.json" hidden>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.11.0 · offline ishlaydi</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.11.1 · offline ishlaydi</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1695,7 +1695,7 @@
       else if (p[0] === "fan" && p.length === 3 && p[2] === "kitob") await pageBook(p[1]);
       else if (p[0] === "fan" && p.length === 3) await pageTopic(p[1], p[2], query);
       else if (p[0] === "fanlar") await pageFanlar();
-      else if (p[0] === "assyst") pageSoon("assyst", "Assyst", "Bilimingizni tekshiring va mustahkamlang.", ["Mavzu bo'yicha", "Aralash", "Imtihon"], IC.assyst);
+      else if (p[0] === "assyst" || p[0] === "testmarkazi") pageSoon("assyst", "Test markazi", "Bilimingizni tekshiring va mustahkamlang.", ["Mavzu bo'yicha", "Aralash", "Imtihon"], IC.assyst);
       else if (p[0] === "reja") pageReja();
       else if (p[0] === "yutuqlar") await pageYutuq();
       else if (p[0] === "belgilar") pageBelgilar();
