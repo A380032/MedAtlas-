@@ -511,17 +511,16 @@ main.wide { max-width: none; padding: 0; }
   .topbar .brand, .topbar.is-home .brand { display: none; }
   .topbar.is-home .topbar-title { display: block; }
   .tabbar { inset: 0 auto 0 0; width: var(--side); display: flex; flex-direction: column; gap: 4px; padding: 18px 14px; border-top: 0; border-right: 1px solid var(--line); box-shadow: none; }
-  .tabbar .desk, .tabbar .side-brand { display: flex; }
-  .tabbar .more-btn { display: none; }
+  .tabbar .side-brand { display: flex; }
+  .tabbar .more-btn { flex-direction: row; gap: 12px; font-size: .95rem; padding: 11px 12px; border-radius: 14px; width: 100%; text-align: left; }
+  .tabbar .more-btn[aria-current="page"] { background: color-mix(in srgb, var(--accent) 13%, transparent); color: var(--accent); font-weight: 700; }
   .tabbar .side-brand { flex-direction: row; gap: 10px; font-size: 1.15rem; font-weight: 700; color: var(--ink); padding: 4px 8px 18px; }
   .tabbar .side-brand img { border-radius: 11px; }
   .tabbar a { flex-direction: row; gap: 12px; font-size: .95rem; padding: 11px 12px; border-radius: 14px; }
   .tabbar a[aria-current="page"] { background: color-mix(in srgb, var(--accent) 13%, transparent); }
   .tabbar a[data-soft] { background: none; color: var(--ink-2); font-weight: 500; }
-  .tabbar a[data-tab="home"] { order: 1; } .tabbar a[data-tab="fanlar"] { order: 2; } .tabbar a[data-tab="reja"] { order: 3; }
-  .tabbar a[data-tab="yutuq"] { order: 4; } .tabbar a[data-tab="assyst"] { order: 5; } .tabbar a[data-tab="sim"] { order: 6; }
-  .tabbar a[data-tab="lib"] { order: 7; } .tabbar a[data-tab="search"] { order: 8; } .tabbar a[data-tab="saved"] { order: 9; }
-  .tabbar a.bottom { order: 10; margin-top: auto; }
+  .tabbar a[data-tab="home"] { order: 1; } .tabbar a[data-tab="assyst"] { order: 2; } .tabbar a[data-tab="sim"] { order: 3; }
+  .tabbar a[data-tab="search"] { order: 4; } .tabbar .more-btn { order: 5; }
   .sim-frame { height: calc(100dvh - 56px - var(--safe-t)); }
   .pdf-frame { height: calc(100dvh - 56px - var(--safe-t) - 52px); }
   .toast { bottom: 28px; }
@@ -853,7 +852,7 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 
 /* Menyu varag'i */
 .more-list { display: grid; gap: 4px; margin: 8px 0 4px; }
-.more-list a { display: flex; align-items: center; gap: 14px; padding: 13px 10px; border-radius: 14px; color: var(--ink); text-decoration: none; font-weight: 600; }
+.more-list a { display: flex; align-items: center; gap: 14px; padding: 9px 10px; border-radius: 14px; color: var(--ink); text-decoration: none; font-weight: 600; }
 .more-list a:active { background: var(--surface-2); }
 .more-list .mi { flex: none; width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); overflow: hidden; }
 .more-list .mi img { width: 100%; height: 100%; object-fit: cover; }
@@ -862,3 +861,13 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .qs .seg { margin: 4px 0 10px; }
 .qs-res { max-height: 52vh; overflow: auto; margin-top: 10px; }
 .qs-res .gloss { margin-bottom: 8px; }
+
+/* Profilni tahrirlash va rasm kesish */
+.crop-wrap { width: 280px; height: 280px; margin: 12px auto; border-radius: 50%; overflow: hidden; background: var(--surface-2); box-shadow: 0 0 0 3px var(--accent); touch-action: none; }
+.crop-wrap canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+.sheet input[type="range"] { padding: 0; border: 0; background: none; accent-color: var(--accent); }
+.pf-form { display: grid; gap: 12px; margin-top: 8px; max-height: 62vh; overflow: auto; }
+.pf-form .field { margin: 0; }
+.acc-info { margin: 2px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.acc-info span { font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
+.more-list { max-height: 68vh; overflow: auto; }

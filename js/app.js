@@ -185,7 +185,7 @@
       else if (tab === "fanlar" && a.dataset.tab === "home") a.dataset.soft = "1";
     });
     const mb = $("#moreBtn");
-    if (mb) { if (["lib", "saved", "sozlamalar"].includes(tab)) mb.setAttribute("aria-current", "page"); else mb.removeAttribute("aria-current"); }
+    if (mb) { if (["lib", "saved", "sozlamalar", "yutuq", "reja"].includes(tab)) mb.setAttribute("aria-current", "page"); else mb.removeAttribute("aria-current"); }
   }
 
   async function courseStats(course) {
@@ -300,7 +300,7 @@
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.14.0</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.14.1</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1246,6 +1246,9 @@
     const accIco = acc.photo ? `<img src="${esc(acc.photo)}" alt="" referrerpolicy="no-referrer">` : ic('<circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.4 7-5.4s6.2 1.8 7 5.4"/>');
     const items = [
       ["#/profil", accIco, acc.name || "Profil", acc.name ? "Hisobim" : "Kirish va bulutga saqlash"],
+      ["#/fanlar", ic('<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>'), "Fanlar", "Barcha fanlar va mavzular"],
+      ["#/reja", ic('<rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/>'), "Reja", "Haftalik o‘quv reja"],
+      ["#/yutuqlar", ic('<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6v4H9z"/>'), "Yutuqlar", "Ballar, belgilar va natijalar"],
       ["#/kutubxona", ic('<path d="M4 4h4v16H4zM9 4h4v16H9zM14.5 5.5l3.8-1 3.2 14.8-3.8 1z"/>'), "Kutubxona", "Kitoblar va qo‘llanmalar"],
       ["#/saqlangan", ic('<path d="M7 3h10v18l-5-4-5 4z"/>'), "Saqlangan", "Belgilar va saqlanganlar"],
       ["#/sozlamalar", ic('<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/>'), "Sozlamalar", "Ko‘rinish va ilova haqida"]

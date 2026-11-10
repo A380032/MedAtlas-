@@ -33,7 +33,7 @@
         setTimeout(() => {
           paintBtn();
           if (user && user.id !== was) { pull(); loadPhoto(); }
-          if (!user && was) { setPhoto(""); ls.del("tqsync:last"); ls.del("tqsync:dirty"); ls.del("tqsync:at"); }
+          if (!user && was) { setPhoto(""); setProf({}); ls.del("tqsync:last"); ls.del("tqsync:dirty"); ls.del("tqsync:at"); }
           if ((location.hash || "").startsWith("#/profil")) A?.refresh?.();
         }, 0);
       });
@@ -47,18 +47,26 @@
   /* ---------- Yuqori paneldagi tugma ---------- */
   const photo = () => { try { return localStorage.getItem("tqacc:photo") || ""; } catch { return ""; } };
   const setPhoto = (v) => { try { v ? localStorage.setItem("tqacc:photo", v) : localStorage.removeItem("tqacc:photo"); } catch { /* */ } };
+  const prof = () => { try { return JSON.parse(localStorage.getItem("tqacc:prof") || "{}") || {}; } catch { return {}; } };
+  const setProf = (o) => { try { localStorage.setItem("tqacc:prof", JSON.stringify(o)); } catch { /* */ } };
   const avatarSrc = () => photo() || user?.user_metadata?.avatar_url || "";
+  const provName = () => user?.user_metadata?.full_name || user?.user_metadata?.name || (user?.user_metadata?.telegram_username ? "@" + user.user_metadata.telegram_username : "") || "Foydalanuvchi";
+  const displayName = () => (prof().name || "").trim() || provName();
   async function loadPhoto() {
     if (!user || !sb || !navigator.onLine) return;
     try {
-      const r = await sb.from("profiles").select("photo").eq("id", user.id).maybeSingle();
-      if (!r.error && r.data) { const v = r.data.photo || ""; if (v !== photo()) { setPhoto(v); paintBtn(); } }
+      const r = await sb.from("profiles").select("photo,name,faculty,course,role,role_note").eq("id", user.id).maybeSingle();
+      if (r.error || !r.data) return;
+      const d = r.data, before = JSON.stringify([photo(), prof()]);
+      setPhoto(d.photo || "");
+      setProf({ name: d.name || "", faculty: d.faculty || "", course: d.course || "", role: d.role || "", note: d.role_note || "" });
+      if (before !== JSON.stringify([photo(), prof()])) { paintBtn(); if ((location.hash || "").startsWith("#/profil")) A?.refresh?.(); }
     } catch { /* oflayn */ }
   }
   function paintBtn() {
     const b = document.getElementById("accBtn");
     if (!b) return;
-    const name = user?.user_metadata?.full_name || user?.user_metadata?.name || "";
+    const name = user ? displayName() : "";
     if (user) {
       const src = avatarSrc();
       b.innerHTML = `<span class="acc-dot">${src ? `<img src="${esc(src)}" alt="" referrerpolicy="no-referrer">` : esc((name || "?").trim()[0] || "?").toUpperCase()}</span>`;
@@ -248,38 +256,97 @@
     }
   }
 
-  function shrink(file, size) {
-    return new Promise((res, rej) => {
-      const url = URL.createObjectURL(file), img = new Image();
-      img.onload = () => {
-        URL.revokeObjectURL(url);
-        const side = Math.min(img.naturalWidth, img.naturalHeight);
-        if (!side) return rej(new Error("img"));
-        const c = document.createElement("canvas"); c.width = c.height = size;
-        c.getContext("2d").drawImage(img, (img.naturalWidth - side) / 2, (img.naturalHeight - side) / 2, side, side, 0, 0, size, size);
-        let q = 0.85, out = c.toDataURL("image/jpeg", q);
-        while (out.length > 60000 && q > 0.4) { q -= 0.1; out = c.toDataURL("image/jpeg", q); }
-        out.length < 80000 ? res(out) : rej(new Error("big"));
+  /* ---------- Rasmni kesish ---------- */
+  function cropper(file, onDone) {
+    const url = URL.createObjectURL(file), img = new Image();
+    img.onerror = () => { URL.revokeObjectURL(url); A.toast("Bu rasmni ochib bo‘lmadi"); };
+    img.onload = () => {
+      const V = 280, iw = img.naturalWidth, ih = img.naturalHeight;
+      if (!iw || !ih) { A.toast("Bu rasmni ochib bo‘lmadi"); return; }
+      const sh = A.sheet(`<h3>Rasmni joylashtiring</h3><p class="muted small" style="margin:0">Barmog‘ingiz bilan suring, pastdagi chiziq bilan kattalashtiring.</p>
+        <div class="crop-wrap"><canvas id="crC" width="${V}" height="${V}"></canvas></div>
+        <input type="range" id="crZ" min="1" max="3" step="0.01" value="1" aria-label="Kattalashtirish">
+        <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="crOk">Tayyor</button></div>`);
+      const cv = sh.el.querySelector("#crC"), ctx = cv.getContext("2d"), zr = sh.el.querySelector("#crZ");
+      const base = Math.max(V / iw, V / ih);
+      let z = 1, ox = (V - iw * base) / 2, oy = (V - ih * base) / 2;
+      const clamp = () => { const w = iw * base * z, h = ih * base * z; ox = Math.min(0, Math.max(V - w, ox)); oy = Math.min(0, Math.max(V - h, oy)); };
+      const draw = () => { clamp(); ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, V, V); ctx.drawImage(img, ox, oy, iw * base * z, ih * base * z); };
+      draw();
+      let drag = null;
+      cv.addEventListener("pointerdown", (e) => { drag = { x: e.clientX, y: e.clientY, ox, oy }; cv.setPointerCapture(e.pointerId); });
+      cv.addEventListener("pointermove", (e) => { if (!drag) return; const k = V / cv.getBoundingClientRect().width; ox = drag.ox + (e.clientX - drag.x) * k; oy = drag.oy + (e.clientY - drag.y) * k; draw(); });
+      const end = () => { drag = null; };
+      cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
+      zr.addEventListener("input", () => {
+        const nz = parseFloat(zr.value), cx = (V / 2 - ox) / z, cy = (V / 2 - oy) / z;
+        z = nz; ox = V / 2 - cx * z; oy = V / 2 - cy * z; draw();
+      });
+      sh.el.querySelector("#crOk").addEventListener("click", () => {
+        const o = document.createElement("canvas"); o.width = o.height = 256;
+        o.getContext("2d").drawImage(cv, 0, 0, V, V, 0, 0, 256, 256);
+        let q = 0.85, out = o.toDataURL("image/jpeg", q);
+        while (out.length > 60000 && q > 0.4) { q -= 0.1; out = o.toDataURL("image/jpeg", q); }
+        URL.revokeObjectURL(url); sh.close(); onDone(out);
+      });
+    };
+    img.src = url;
+  }
+
+  /* ---------- Profilni tahrirlash ---------- */
+  const FACULTIES = ["Davolash ishi", "Pediatriya", "Tibbiy-profilaktika", "Stomatologiya", "Farmatsiya", "Tibbiy pedagogika", "Xalqaro fakultet", "Oliy hamshiralik ishi"];
+  function editProfile() {
+    const pf = prof();
+    const sel = (v, o) => (v === o ? " selected" : "");
+    const courses = ["1-kurs", "2-kurs", "3-kurs", "4-kurs", "5-kurs", "6-kurs", "Magistratura", "Ordinatura", "Boshqa"];
+    const sh = A.sheet(`<h3>Profilni tahrirlash</h3>
+      <div class="pf-form">
+        <label class="field">Ismingiz<input id="pfName" maxlength="60" value="${esc(pf.name || "")}" placeholder="${esc(provName())}" autocomplete="off"></label>
+        <label class="field">Kimsiz?
+          <select id="pfRole"><option value="">Ko‘rsatmayman</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
+        <label class="field" id="pfNoteBox" ${pf.role === "boshqa" ? "" : "hidden"}>Kim ekaningizni yozing<input id="pfNote" maxlength="60" value="${esc(pf.note || "")}" placeholder="masalan, shifokor, rezident" autocomplete="off"></label>
+        <label class="field">Fakultet<input id="pfFac" list="pfFacList" maxlength="80" value="${esc(pf.faculty || "")}" placeholder="Tanlang yoki yozing" autocomplete="off"><datalist id="pfFacList">${FACULTIES.map((f) => `<option value="${esc(f)}">`).join("")}</datalist></label>
+        <label class="field">Kurs
+          <select id="pfCourse"><option value="">Ko‘rsatmayman</option>${courses.map((c) => `<option${sel(pf.course, c)}>${c}</option>`).join("")}</select></label>
+        <p class="small muted" style="margin:0">Hammasi ixtiyoriy. Kirish usulingiz (Google yoki Telegram) bu yerda o‘zgarmaydi.</p>
+      </div>
+      <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="pfSave">Saqlash</button></div>`);
+    const q = (id) => sh.el.querySelector(id);
+    q("#pfRole").addEventListener("change", () => { q("#pfNoteBox").hidden = q("#pfRole").value !== "boshqa"; });
+    q("#pfSave").addEventListener("click", async () => {
+      if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
+      const role = q("#pfRole").value || null;
+      const row = {
+        name: q("#pfName").value.trim().slice(0, 60) || null,
+        faculty: q("#pfFac").value.trim().slice(0, 80) || null,
+        course: q("#pfCourse").value || null,
+        role,
+        role_note: role === "boshqa" ? (q("#pfNote").value.trim().slice(0, 60) || null) : null,
+        updated_at: new Date().toISOString()
       };
-      img.onerror = () => { URL.revokeObjectURL(url); rej(new Error("fmt")); };
-      img.src = url;
+      const { error } = await sb.from("profiles").update(row).eq("id", user.id);
+      if (error) { A.toast("Saqlab bo‘lmadi. Qayta urinib ko‘ring"); return; }
+      setProf({ name: row.name || "", faculty: row.faculty || "", course: row.course || "", role: row.role || "", note: row.role_note || "" });
+      sh.close(); paintBtn(); pageIn(); A.toast("Profil saqlandi");
     });
   }
 
   function pageIn() {
     const m = user.user_metadata || {};
-    const name = m.full_name || m.name || "Foydalanuvchi";
+    const name = displayName(), pf = prof();
     const prov = user.app_metadata?.provider === "telegram" ? "Telegram" : user.app_metadata?.provider === "google" ? "Google" : "Hisob";
     const sub = m.telegram_username ? "@" + m.telegram_username : (user.app_metadata?.provider === "google" ? user.email : "");
     A.view.innerHTML = `<div class="acc-me">
         <button class="acc-av acc-av-btn" id="avBtn" type="button" aria-label="Profil rasmini o‘zgartirish">${avatarSrc() ? `<img src="${esc(avatarSrc())}" alt="" referrerpolicy="no-referrer">` : esc(name[0] || "?").toUpperCase()}<span class="acc-cam" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2.5h6L17 8h3v11H4zM12 16a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z"/></svg></span></button>
         <input type="file" id="avFile" accept="image/*" hidden>
-        <div><h2 style="margin:0">${esc(name)}</h2><p class="muted small" style="margin:2px 0 0">${prov}${sub ? " · " + esc(sub) : ""}</p></div></div>
+        <div><h2 style="margin:0">${esc(name)}</h2><p class="muted small" style="margin:2px 0 0">${prov}${sub ? " · " + esc(sub) : ""}</p>
+          ${(pf.role || pf.faculty || pf.course) ? `<div class="acc-info">${pf.role ? `<span>${esc(pf.role === "talaba" ? "Talaba" : pf.role === "oqituvchi" ? "O‘qituvchi" : (pf.note || "Boshqa"))}</span>` : ""}${pf.faculty ? `<span>${esc(pf.faculty)}</span>` : ""}${pf.course ? `<span>${esc(pf.course)}</span>` : ""}</div>` : ""}</div></div>
       <div class="acc-card">
         <div class="setting-row" style="border:0;padding-top:0"><span><b>Bulutga saqlash</b><br><small class="muted" id="accSync"></small></span><button class="btn" id="syncNow">Hozir saqlash</button></div>
         <p class="small muted" style="margin:0">Reja, yutuqlar, ballar, test natijalari va belgilar avtomatik saqlanadi. Boshqa telefonda shu hisobga kirsangiz, hammasi shu yerda bo‘ladi.</p>
       </div>
       <div class="tm-acts" style="margin-top:14px">
+        <button class="btn" id="editBtn">Profilni tahrirlash</button>
         <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
         ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
         <button class="btn" id="outBtn">Chiqish</button>
@@ -290,17 +357,18 @@
     const pick = () => A.$("#avFile").click();
     A.$("#avBtn").addEventListener("click", pick);
     A.$("#avChange").addEventListener("click", pick);
-    A.$("#avFile").addEventListener("change", async (e) => {
+    A.$("#avFile").addEventListener("change", (e) => {
       const f = e.target.files[0]; e.target.value = ""; if (!f) return;
       if (!navigator.onLine) { A.toast("Rasm yuklash uchun internet kerak"); return; }
-      try {
-        A.toast("Rasm yuklanmoqda…");
-        const url = await shrink(f, 256);
-        const { error } = await sb.from("profiles").update({ photo: url, updated_at: new Date().toISOString() }).eq("id", user.id);
-        if (error) throw error;
-        setPhoto(url); paintBtn(); pageIn(); A.toast("Profil rasmi yangilandi");
-      } catch { A.toast("Rasmni yuklab bo‘lmadi. Boshqa rasm tanlang"); }
+      cropper(f, async (url) => {
+        try {
+          const { error } = await sb.from("profiles").update({ photo: url, updated_at: new Date().toISOString() }).eq("id", user.id);
+          if (error) throw error;
+          setPhoto(url); paintBtn(); pageIn(); A.toast("Profil rasmi yangilandi");
+        } catch { A.toast("Rasmni saqlab bo‘lmadi. Qayta urinib ko‘ring"); }
+      });
     });
+    A.$("#editBtn").addEventListener("click", editProfile);
     A.$("#avDel")?.addEventListener("click", async () => {
       try {
         const { error } = await sb.from("profiles").update({ photo: null, updated_at: new Date().toISOString() }).eq("id", user.id);
@@ -336,5 +404,5 @@
     window.addEventListener("online", () => { if (user) { pull(); } });
     document.addEventListener("visibilitychange", () => { if (!document.hidden && user) pull(); });
   }
-  window.ACC = { boot, page, touch, privacy, me: () => (user ? { name: user.user_metadata?.full_name || user.user_metadata?.name || "Foydalanuvchi", photo: avatarSrc() } : null), _t: { mergeKey } };
+  window.ACC = { boot, page, touch, privacy, me: () => (user ? { name: displayName(), photo: avatarSrc() } : null), _t: { mergeKey, cropper, editProfile } };
 })();
