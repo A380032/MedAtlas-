@@ -171,19 +171,23 @@
   const navLinks = [...document.querySelectorAll(".tabbar a")];
   navLinks.forEach((a) => a.addEventListener("click", (e) => {
     const tab = a.dataset.tab, last = tabLast[tab];
-    if (!last || tab === curTab || last === a.getAttribute("href")) return;   // shu bo'limda bo'lsa — bosh sahifasiga
+    if (!last || tab === curTab || (FAMILY[curTab] && FAMILY[curTab] === FAMILY[tab]) || last === a.getAttribute("href")) return;   // shu bo'limda bo'lsa — bosh sahifasiga
     if (tab === "rooms" && !window.ROOMS?.active?.()) return;                 // xonadan chiqilgan bo'lsa — ro'yxat
     if (tab === "assyst" && /\/run$/.test(last) && !localStorage.getItem("tq:tm:sess")) return;
     e.preventDefault();
+    restoreScroll = true;
     location.hash = last;
   }));
   const srchBtn = $("#srchBtn"), accBtn = $("#accBtn");
   // Har bir bo'lim oxirgi ochilgan joyini eslab qoladi (masalan, yarim qolgan test)
-  const tabLast = {}, TAB_KEEP = ["assyst", "sim", "rooms", "fanlar"];
-  let curTab = "";
+  const tabLast = {}, TAB_KEEP = ["assyst", "sim", "rooms"];
+  const FAMILY = { home: "home", fanlar: "home", lib: "home" };   // kitob va qo'llanmalar "Bosh" bo'limiga tegishli
+  const scrollMem = {};
+  let curTab = "", restoreScroll = false;
   function setChrome(title, back, tab, opt = {}) {
     curTab = tab;
     if (TAB_KEEP.includes(tab)) tabLast[tab] = location.hash;
+    if (FAMILY[tab]) tabLast.home = location.hash;
     view.classList.remove("wide");
     titleEl.textContent = title;
     $(".topbar").classList.toggle("is-home", !!opt.home);
@@ -314,7 +318,7 @@
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.18.2</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.18.3</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1033,6 +1037,7 @@
         const th = store.get("theme", null);
         if (th) fr.contentDocument.documentElement.dataset.theme = th;
       } catch { /* boshqa manba */ }
+      window.ROOMS?.hookAudio?.(fr.contentWindow);   // simulyator ovozi Konsiliumdagilarga ham eshitilsin
     });
   }
 
@@ -1768,7 +1773,10 @@
   });
 
   /* ---------- Yo'naltirgich (router) ---------- */
+  let lastHash = location.hash;
   async function route() {
+    scrollMem[lastHash] = window.scrollY; lastHash = location.hash;
+    const wantScroll = restoreScroll ? scrollMem[location.hash] || 0 : 0; restoreScroll = false;
     const [path, query] = location.hash.replace(/^#/, "").split("?");
     const p = (path || "/").split("/").filter(Boolean);
     document.body.classList.remove("reading");
@@ -1805,7 +1813,7 @@
         : emptyState(ICX.warn, "Ma'lumot yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang — keyin u oflayn ham ochiladi.");
     }
     clearTimeout(skT);
-    const y = pendingScroll; pendingScroll = 0;
+    const y = wantScroll || pendingScroll; pendingScroll = 0;
     window.scrollTo(0, y);
     animateIn();
     onScrollAll();

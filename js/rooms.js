@@ -289,7 +289,9 @@
   }
   function leave(silent) {
     if (!cur) return;
-    const c = cur; cur = null;
+    const c = cur;
+    unpublishAppAudio(c);
+    cur = null;
     c.closing = true;
     clearInterval(c.aloneTimer);
     try { c.lk.disconnect(); } catch { /* */ }
@@ -386,6 +388,7 @@
         info.me.speaker = sp; info.me.screen = sc;
       }
       renderPeople(); renderBar(); renderMini();
+      if (p && p.isLocal) { if (!hasSrc(p, 4)) unpublishAppAudio(); else publishAppAudio(); }
     });
     lk.on(L.RoomEvent.DataReceived, (payload, participant) => {
       if (participant || !live()) return;           // faqat server xabarlari
@@ -434,6 +437,7 @@
     try { await lk.startAudio(); } catch { /* */ }
     if (onRoomPage()) buildRoom(); else renderMini();
     checkAlone();
+    app.pub = null; publishAppAudio();
   }
 
   /* Xona egasi bo'lmagan odam yolg'iz qolsa, xona 5 daqiqadan keyin o'zi yopiladi */
@@ -483,7 +487,8 @@
   const sharing = (p) => { const pub = p.getTrackPublication?.("screen_share"); return !!(pub && !pub.isMuted && (pub.track || pub.isSubscribed !== false)); };
   const parts = () => [cur.lk.localParticipant, ...cur.lk.remoteParticipants.values()];
   // LiveKit manba raqamlari: 2 = mikrofon, 3 = ekran
-  const hasSrc = (p, n) => !!p.permissions?.canPublish && (p.permissions.canPublishSources || []).some((x) => x === n || String(x).toLowerCase() === (n === 2 ? "microphone" : "screen_share"));
+  const SRCN = { 2: "microphone", 3: "screen_share", 4: "screen_share_audio" };
+  const hasSrc = (p, n) => !!p.permissions?.canPublish && (p.permissions.canPublishSources || []).some((x) => x === n || String(x).toLowerCase() === SRCN[n]);
   const canTalk = (p) => cur.info.room.mode === "suhbat" || staff(p.identity) || hasSrc(p, 2);
   const canScreen = (p) => staff(p.identity) || hasSrc(p, 3);
   const handOf = (p) => { const h = p.attributes?.hand || ""; return h === "1" ? "speak" : h; };
@@ -648,6 +653,7 @@
       ${talk ? `<button class="rm-btn${micOn(local) ? " on" : ""}" id="rmMic" type="button">${ico(micOn(local) ? I.mic : I.micOff, 24)}<span>${micOn(local) ? "Mikrofon yoqiq" : "Mikrofon o‘chiq"}</span></button>` : ""}
       ${canAsk ? `<button class="rm-btn${hand ? " on" : ""}" id="rmHand" type="button">${ico(I.hand, 24)}<span>${hand ? "So‘rovni bekor qilish" : "Qo‘l ko‘tarish"}</span></button>` : ""}
       ${scr && canShare() ? `<button class="rm-btn${shareOn ? " on" : ""}" id="rmScr" type="button">${ico(I.screen, 24)}<span>${shareOn ? "Ulashishni to‘xtatish" : "Ekran ulashish"}</span></button>` : ""}
+      ${app.pub ? `<button class="rm-btn${app.muted ? "" : " on"}" id="rmApp" type="button" title="Simulyator va ilova ovozlari xonadagilarga eshitiladi">${ico(I.wave, 24)}<span>${app.muted ? "Ilova ovozi o‘chiq" : "Ilova ovozi yoqiq"}</span></button>` : ""}
       ${recSupported() ? `<button class="rm-btn${cur.rec ? " rec" : ""}" id="rmRec" type="button">${ico(I.rec, 24)}<span>${cur.rec ? "To‘xtatish " + recTime(cur.rec) : "Yozib olish"}</span></button>` : ""}
       ${info.room.code ? `<button class="rm-btn" id="rmShare" type="button">${ico(I.share, 24)}<span>Taklif</span></button>` : ""}
       ${iAmOwner() ? `<button class="rm-btn danger" id="rmEnd" type="button">${ico(I.ban, 24)}<span>Yopish</span></button>` : ""}
@@ -661,6 +667,7 @@
     });
     $("#rmScr")?.addEventListener("click", async () => { await toggleScreen(); renderBar(); });
     $("#rmRec")?.addEventListener("click", () => (cur.rec ? stopRec() : startRec()));
+    $("#rmApp")?.addEventListener("click", toggleAppAudio);
     $("#rmShare")?.addEventListener("click", async () => {
       const txt = `ALVORA Med Konsilium: “${info.room.title}”. Kod: ${info.room.code}\n${location.origin}${location.pathname}${BASE}/${info.room.id}?code=${info.room.code}`;
       try { if (navigator.share) await navigator.share({ text: txt }); else { await navigator.clipboard.writeText(txt); A.toast("Taklif nusxalandi"); } } catch { /* */ }
@@ -707,6 +714,65 @@
     el.querySelector("#rmMiniMic")?.addEventListener("click", toggleMic);
     el.querySelector("#rmMiniRec")?.addEventListener("click", () => stopRec());
     el.querySelector("#rmMiniOut").addEventListener("click", leaveFlow);
+  }
+
+  /* ---------- Ilova ovozi (simulyatorlar va h.k.) Konsiliumga uzatiladi ---------- */
+  const app = { ac: null, dest: null, streams: [], pub: null, muted: false };
+  function appMixer() {
+    if (!app.ac) {
+      const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
+      app.ac = new AC(); app.dest = app.ac.createMediaStreamDestination();
+    }
+    if (app.ac.state === "suspended") app.ac.resume().catch(() => {});
+    return app;
+  }
+  function addAppStream(stream) {
+    const m = appMixer(); if (!m) return;
+    try { m.ac.createMediaStreamSource(stream).connect(m.dest); m.streams.push(stream); } catch { /* */ }
+    publishAppAudio();
+  }
+  // Ichki oyna (simulyator) ovozini ushlash: "destination"ga ulangan har bir tugun nusxasi bizga ham keladi
+  function hookAudio(win) {
+    try {
+      if (!win || !win.AudioNode || win.AudioNode.prototype.__alv) return;
+      const proto = win.AudioNode.prototype, orig = proto.connect;
+      proto.connect = function (dst, ...rest) {
+        const r = orig.call(this, dst, ...rest);
+        try {
+          if (dst && win.AudioDestinationNode && dst instanceof win.AudioDestinationNode) {
+            const ctx = this.context;
+            if (!ctx.__alvDest) { ctx.__alvDest = ctx.createMediaStreamDestination(); addAppStream(ctx.__alvDest.stream); }
+            orig.call(this, ctx.__alvDest);
+          }
+        } catch { /* */ }
+        return r;
+      };
+      proto.__alv = true;
+    } catch { /* boshqa manba */ }
+  }
+  async function publishAppAudio() {
+    if (!cur || app.pub || !app.streams.length || cur.appBusy) return;
+    const lp = cur.lk.localParticipant;
+    if (!hasSrc(lp, 4)) return;          // so'z huquqi bo'lmasa, faqat o'zida eshitiladi
+    cur.appBusy = true;
+    try {
+      const mst = app.dest.stream.getAudioTracks()[0];
+      app.pub = await lp.publishTrack(mst, { source: cur.L.Track.Source.ScreenShareAudio, name: "ilova-ovozi", dtx: true });
+      if (app.muted) await app.pub.mute?.();
+    } catch { app.pub = null; }
+    if (cur) cur.appBusy = false;
+    renderBar();
+  }
+  async function unpublishAppAudio(c = cur) {
+    if (!app.pub) return;
+    try { await c?.lk.localParticipant.unpublishTrack(app.pub.track, false); } catch { /* */ }
+    app.pub = null;
+  }
+  async function toggleAppAudio() {
+    if (!app.pub) return;
+    app.muted = !app.muted;
+    try { app.muted ? await app.pub.mute() : await app.pub.unmute(); } catch { /* */ }
+    renderBar();
   }
 
   /* ---------- Yozib olish (har bir ishtirokchi o'zi uchun) ---------- */
@@ -890,5 +956,5 @@
     A.view.innerHTML = head(p[1] ? "Xonaga ulanmoqda…" : "Yuklanmoqda…");
     run();
   }
-  window.ROOMS = { page, active: () => !!cur };
+  window.ROOMS = { page, active: () => !!cur, hookAudio };
 })();

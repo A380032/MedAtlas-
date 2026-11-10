@@ -51,7 +51,7 @@ async function broadcast(room: string, obj: unknown, topic: string) {
 // Diqqat: can_publish_sources bo'sh bo'lsa LiveKit HAMMA manbaga ruxsat beradi, shuning uchun bo'sh qoldirilmaydi.
 function perms(speaker: boolean, screen: boolean) {
   const src: string[] = [];
-  if (speaker) src.push("MICROPHONE");
+  if (speaker) src.push("MICROPHONE", "SCREEN_SHARE_AUDIO");   // SCREEN_SHARE_AUDIO: simulyator/ilova ovozi uchun ham
   if (screen) src.push("SCREEN_SHARE", "SCREEN_SHARE_AUDIO");
   if (!src.length) src.push("MICROPHONE");
   return { can_subscribe: true, can_publish: speaker || screen, can_publish_data: false, can_update_metadata: false, can_publish_sources: src };
@@ -231,7 +231,7 @@ Deno.serve(async (req) => {
       const speaker = room.mode === "suhbat" || staff || gr.speak;
       const screen = staff || gr.screen;
       const src: string[] = [];
-      if (speaker) src.push("microphone");
+      if (speaker) src.push("microphone", "screen_share_audio");
       if (screen) src.push("screen_share", "screen_share_audio");
       if (!src.length) src.push("microphone");
       const token = await jwt({
