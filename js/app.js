@@ -298,7 +298,7 @@
           <span style="display:flex;flex-direction:column;gap:6px"><button class="btn" id="bkSave">Saqlash</button><button class="btn" id="bkLoad">Tiklash</button></span></div>
         <input type="file" id="bkFile" accept="application/json,.json" hidden>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.11.1 · offline ishlaydi</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.12.0 · offline ishlaydi</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1476,11 +1476,16 @@
     const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
     const wins = weeklyWins();
     const n = keys.length, hi = scores.filter((x) => x >= 86).length;
+    const tmAll = store.get("tm:hist", []), tmTests = tmAll.filter((h) => !h.r);
+    const tmOk = tmAll.reduce((a, h) => a + h.ok, 0), tmN = tmAll.reduce((a, h) => a + h.ok + h.bad, 0);
     const B = [
       ["🌱", "Birinchi qadam", "1 ta mavzu", n >= 1], ["📗", "Izchil", "5 ta mavzu", n >= 5], ["📘", "Bilimdon", "10 ta mavzu", n >= 10],
       ["📚", "Kitobxon", "25 ta mavzu", n >= 25], ["🎓", "Ustoz", "50 ta mavzu", n >= 50], ["🏛️", "Akademik", "100 ta mavzu", n >= 100],
       ["⭐", "A’lochi", "5 ta mavzuda 86+ ball", hi >= 5], ["💯", "Mukammal", "100 ball olingan mavzu", scores.includes(100)], ["📈", "Barqaror", "O‘rtacha ball 80+ (5+ mavzu)", scores.length >= 5 && avg >= 80],
-      ["🗓️", "Rejali hafta", "1 hafta reja to‘liq", wins.length >= 1], ["🔥", "To‘rt hafta", "4 hafta reja to‘liq", wins.length >= 4], ["🏆", "Semestr", "12 hafta reja to‘liq", wins.length >= 12]
+      ["🗓️", "Rejali hafta", "1 hafta reja to‘liq", wins.length >= 1], ["🔥", "To‘rt hafta", "4 hafta reja to‘liq", wins.length >= 4], ["🏆", "Semestr", "12 hafta reja to‘liq", wins.length >= 12],
+      ["🧪", "Birinchi test", "Test markazida 1 ta test", tmTests.length >= 1], ["📝", "Sinovchi", "10 ta test ishlandi", tmTests.length >= 10],
+      ["🎯", "Xatosiz", "10+ savolli testda 100%", tmTests.some((h) => h.n >= 10 && h.ok === h.n)], ["💪", "Yuz savol", "100 ta to‘g‘ri javob", tmOk >= 100],
+      ["🧠", "Besh yuz", "500 ta to‘g‘ri javob", tmOk >= 500], ["🏅", "Imtihonchi", "Imtihonda 56%+ (20+ savol)", tmTests.some((h) => h.m === "imtihon" && h.n >= 20 && h.ok / h.n >= 0.56)]
     ];
     // o'qilgan mavzular nomlari
     const rows = [];
@@ -1495,6 +1500,9 @@
     const pill = (r) => `<button class="score-pill${r.score == null ? " none" : r.score >= 86 ? " hi" : r.score < 56 ? " lo" : ""}" data-sc="${esc(r.k)}">${r.score == null ? "+ ball" : r.score}</button>`;
     view.innerHTML = `<div class="hello"><h2>Yutuqlar</h2><p class="muted">O‘qigan mavzularingiz, universitetdagi ballaringiz va nishonlar.</p></div>
       <div class="stats3"><div class="stat"><b>${n}</b><small>o‘qilgan mavzu</small></div><div class="stat"><b>${avg ?? "—"}</b><small>o‘rtacha ball</small></div><div class="stat"><b>${wins.length}</b><small>haftalik yutuq</small></div></div>
+      <h3 class="group-label">Test markazi</h3>
+      <div class="stats3"><div class="stat"><b>${tmTests.length}</b><small>test ishlandi</small></div><div class="stat"><b>${tmN ? Math.round(tmOk / tmN * 100) + "%" : "—"}</b><small>to‘g‘ri javoblar</small></div><div class="stat"><b>${tmOk}</b><small>to‘g‘ri savol</small></div></div>
+      <p class="small muted" style="margin:-6px 0 4px"><a href="#/testmarkazi/statistika">Batafsil statistika ›</a></p>
       <h3 class="group-label">Nishonlar</h3>
       <div class="badges">${B.map(([i, t, d, ok]) => `<div class="badge-card ${ok ? "got" : "locked"}"><span class="bi">${i}</span><b>${t}</b><small>${d}</small></div>`).join("")}</div>
       <h3 class="group-label">Haftalik yutuqlar</h3>
@@ -1681,6 +1689,9 @@
     });
   }
 
+  /* ---------- Test markazi (js/tests.js) uchun ko'prik ---------- */
+  const bridge = () => ({ store, esc, inline, plain, fold, svg, IC, ICX, chev, ring, sheet, toast, setChrome, emptyState, shuffle, view, $, loadJSON });
+
   /* ---------- Yo'naltirgich (router) ---------- */
   async function route() {
     const [path, query] = location.hash.replace(/^#/, "").split("?");
@@ -1695,7 +1706,8 @@
       else if (p[0] === "fan" && p.length === 3 && p[2] === "kitob") await pageBook(p[1]);
       else if (p[0] === "fan" && p.length === 3) await pageTopic(p[1], p[2], query);
       else if (p[0] === "fanlar") await pageFanlar();
-      else if (p[0] === "assyst" || p[0] === "testmarkazi") pageSoon("assyst", "Test markazi", "Bilimingizni tekshiring va mustahkamlang.", ["Mavzu bo'yicha", "Aralash", "Imtihon"], IC.assyst);
+      else if (p[0] === "assyst") { location.replace("#/testmarkazi"); return; }
+      else if (p[0] === "testmarkazi") await window.TM.page(bridge(), p, query);
       else if (p[0] === "reja") pageReja();
       else if (p[0] === "yutuqlar") await pageYutuq();
       else if (p[0] === "belgilar") pageBelgilar();
