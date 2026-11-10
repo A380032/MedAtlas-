@@ -48,10 +48,15 @@ const roomG = (room: string) => ({ roomAdmin: true, room });
 async function broadcast(room: string, obj: unknown, topic: string) {
   await lk("SendData", { room, data: b64(enc.encode(JSON.stringify(obj))), kind: "RELIABLE", topic }, roomG(room));
 }
-function perms(mode: string, speaker: boolean, screen: boolean) {
-  const src = ["MICROPHONE"]; if (screen) src.push("SCREEN_SHARE", "SCREEN_SHARE_AUDIO");
+// Diqqat: can_publish_sources bo'sh bo'lsa LiveKit HAMMA manbaga ruxsat beradi, shuning uchun bo'sh qoldirilmaydi.
+function perms(speaker: boolean, screen: boolean) {
+  const src: string[] = [];
+  if (speaker) src.push("MICROPHONE");
+  if (screen) src.push("SCREEN_SHARE", "SCREEN_SHARE_AUDIO");
+  if (!src.length) src.push("MICROPHONE");
   return { can_subscribe: true, can_publish: speaker || screen, can_publish_data: false, can_update_metadata: false, can_publish_sources: src };
 }
+const EMPTY_MS = 10 * 60 * 1000;   // bo'sh xona 10 daqiqada yopiladi
 
 /* ---------- Taqiqlangan so'zlar ---------- */
 function norm(s: string) {
@@ -138,6 +143,16 @@ Deno.serve(async (req) => {
     const { data } = await admin.from("room_mods").select("user_id").eq("room_id", roomId);
     return (data || []).map((x) => x.user_id as string);
   }
+  async function grantsOf(roomId: string, uid: string) {
+    const { data } = await admin.from("room_grants").select("speak,screen").eq("room_id", roomId).eq("user_id", uid).maybeSingle();
+    return { speak: !!data?.speak, screen: !!data?.screen };
+  }
+  async function setGrant(roomId: string, uid: string, patch: Record<string, boolean>) {
+    const g = await grantsOf(roomId, uid);
+    const row = { room_id: roomId, user_id: uid, ...g, ...patch };
+    await admin.from("room_grants").upsert(row);
+    return { speak: row.speak, screen: row.screen };
+  }
   async function nameOf(uid: string) {
     const { data } = await admin.from("profiles").select("name").eq("id", uid).maybeSingle();
     return String(data?.name || "Foydalanuvchi");
@@ -155,7 +170,7 @@ Deno.serve(async (req) => {
 
   try {
     if (action === "list") {
-      const { data: rows } = await admin.from("rooms").select("id,owner,title,topic,kind,mode,code,created_at")
+      const { data: rows } = await admin.from("rooms").select("id,owner,title,topic,kind,mode,code,created_at,last_seen")
         .is("ended_at", null).order("created_at", { ascending: false }).limit(100);
       const visible = (rows || []).filter((r) => r.kind === "open" || r.owner === me.id || isAdmin);
       const live: Record<string, number> = {};
@@ -163,7 +178,9 @@ Deno.serve(async (req) => {
         const lr = await lk("ListRooms", { names: visible.map((r) => r.id) }, { roomList: true });
         for (const x of lr.rooms || []) live[x.name] = Number(x.num_participants ?? x.numParticipants ?? 0);
       }
-      const stale = visible.filter((r) => !live[r.id] && Date.now() - new Date(r.created_at).getTime() > 30 * 60 * 1000);
+      const busy = visible.filter((r) => live[r.id]).map((r) => r.id);
+      if (busy.length) await admin.from("rooms").update({ last_seen: new Date().toISOString() }).in("id", busy);
+      const stale = visible.filter((r) => !live[r.id] && Date.now() - new Date(r.last_seen || r.created_at).getTime() > EMPTY_MS);
       if (stale.length) await admin.from("rooms").update({ ended_at: new Date().toISOString() }).in("id", stale.map((r) => r.id));
       const keep = visible.filter((r) => !stale.includes(r));
       const owners = [...new Set(keep.map((r) => r.owner))];
@@ -199,22 +216,32 @@ Deno.serve(async (req) => {
       const max = MAXP[room.mode] || 20;
       const cr = await lk("CreateRoom", { name: room.id, empty_timeout: 600, departure_timeout: 30, max_participants: max + 2 }, { roomCreate: true });
       const cnt = Number(cr.num_participants ?? cr.numParticipants ?? 0);
+      if (!cnt && Date.now() - new Date(room.last_seen || room.created_at).getTime() > EMPTY_MS) {
+        await admin.from("rooms").update({ ended_at: new Date().toISOString() }).eq("id", room.id);
+        return json({ error: "Xona 10 daqiqa bo'sh turgani uchun yopilgan" }, 404);
+      }
+      await admin.from("rooms").update({ last_seen: new Date().toISOString() }).eq("id", room.id);
       if (cnt >= max && !isOwner && !isAdmin) return json({ error: "Xona to'lgan" }, 409);
       const mods = await modsOf(room.id);
       const isMod = mods.includes(me.id);
       const name = (await nameOf(me.id)).slice(0, 60);
       const staff = isOwner || isAdmin || isMod;
-      const speaker = room.mode === "suhbat" || staff;
-      const src = ["microphone"]; if (staff) src.push("screen_share", "screen_share_audio");
+      const gr = await grantsOf(room.id, me.id);
+      const speaker = room.mode === "suhbat" || staff || gr.speak;
+      const screen = staff || gr.screen;
+      const src: string[] = [];
+      if (speaker) src.push("microphone");
+      if (screen) src.push("screen_share", "screen_share_audio");
+      if (!src.length) src.push("microphone");
       const token = await jwt({
         sub: me.id, name,
-        video: { room: room.id, roomJoin: true, canSubscribe: true, canPublish: speaker, canPublishSources: src, canPublishData: false, canUpdateOwnMetadata: false },
+        video: { room: room.id, roomJoin: true, canSubscribe: true, canPublish: speaker || screen, canPublishSources: src, canPublishData: false, canUpdateOwnMetadata: false },
       }, 6 * 3600);
       const { data: hist } = await admin.from("room_messages").select("id,user_id,body,created_at").eq("room_id", room.id).order("id", { ascending: false }).limit(60);
       return json({
         token, url: LK_URL,
         room: { id: room.id, title: room.title, topic: room.topic, kind: room.kind, mode: room.mode, owner: room.owner, code: isOwner || isAdmin ? room.code : null },
-        me: { owner: isOwner, admin: isAdmin, mod: isMod, speaker },
+        me: { owner: isOwner, admin: isAdmin, mod: isMod, speaker, screen },
         mods, admins: [...adminIds],
         history: (hist || []).reverse().map((m) => ({ id: m.id, uid: m.user_id, text: m.body, at: m.created_at })),
       });
@@ -241,7 +268,8 @@ Deno.serve(async (req) => {
     if (action === "hand") {
       const room = await getRoom(body.room_id);
       if (!room) return json({ error: "Xona topilmadi" }, 404);
-      await lk("UpdateParticipant", { room: room.id, identity: me.id, attributes: { hand: body.up ? "1" : "" } }, roomG(room.id));
+      const kind = body.up ? (body.kind === "screen" ? "screen" : "speak") : "";
+      await lk("UpdateParticipant", { room: room.id, identity: me.id, attributes: { hand: kind } }, roomG(room.id));
       return json({ ok: true });
     }
 
@@ -287,13 +315,16 @@ Deno.serve(async (req) => {
           await admin.from("room_mods").upsert({ room_id: room.id, user_id: target });
         } else await admin.from("room_mods").delete().eq("room_id", room.id).eq("user_id", target);
         const nowMods = await modsOf(room.id);
-        try { await lk("UpdateParticipant", { room: room.id, identity: target, permission: perms(room.mode, room.mode === "suhbat" || op === "makemod", op === "makemod") }, g); } catch { /* xonada yo'q */ }
+        const gr = await grantsOf(room.id, target);
+        const mk = op === "makemod";
+        try { await lk("UpdateParticipant", { room: room.id, identity: target, permission: perms(room.mode === "suhbat" || mk || gr.speak, mk || gr.screen) }, g); } catch { /* xonada yo'q */ }
         await broadcast(room.id, { t: "mods", mods: nowMods }, "sys");
         return json({ ok: true, mods: nowMods });
       }
       if (op === "kick") {
         await admin.from("room_bans").upsert({ room_id: room.id, user_id: target });
         await admin.from("room_mods").delete().eq("room_id", room.id).eq("user_id", target);
+        await admin.from("room_grants").delete().eq("room_id", room.id).eq("user_id", target);
         try { await lk("RemoveParticipant", { room: room.id, identity: target }, g); } catch { /* */ }
         return json({ ok: true });
       }
@@ -306,9 +337,26 @@ Deno.serve(async (req) => {
         }
         return json({ ok: true });
       }
-      if (op === "allow" || op === "deny") {
-        const allow = op === "allow";
-        await lk("UpdateParticipant", { room: room.id, identity: target, permission: perms(room.mode, allow, tMod), attributes: { hand: "" } }, g);
+      if (["allow", "deny", "allowscreen", "denyscreen"].includes(op)) {
+        const patch = op === "allow" || op === "deny" ? { speak: op === "allow" } : { screen: op === "allowscreen" };
+        const gr = await setGrant(room.id, target, patch);
+        const staffT = tOwner || tMod;
+        await lk("UpdateParticipant", {
+          room: room.id, identity: target,
+          permission: perms(room.mode === "suhbat" || staffT || gr.speak, staffT || gr.screen),
+          attributes: { hand: "" },
+        }, g);
+        if (op === "denyscreen") {
+          try {
+            const p = await lk("GetParticipant", { room: room.id, identity: target }, g);
+            for (const t of p.tracks || []) if (String(t.source).startsWith("SCREEN_SHARE") || t.source === 3 || t.source === 4)
+              await lk("MutePublishedTrack", { room: room.id, identity: target, track_sid: t.sid, muted: true }, g);
+          } catch { /* */ }
+        }
+        return json({ ok: true, grants: gr });
+      }
+      if (op === "dismiss") {
+        await lk("UpdateParticipant", { room: room.id, identity: target, attributes: { hand: "" } }, g);
         return json({ ok: true });
       }
       return json({ error: "op" }, 400);

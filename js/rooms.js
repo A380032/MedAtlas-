@@ -24,7 +24,8 @@
     send: '<path d="M4 12l16-8-6 16-2.5-6.5z"/>',
     chat: '<path d="M4 5h16v11H9l-5 4z"/>',
     full: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
-    ban: '<circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/>'
+    ban: '<circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/>',
+    pip: '<rect x="3" y="5" width="18" height="14" rx="2"/><rect x="12" y="11" width="7" height="6" rx="1"/>'
   };
   const ROLE = { talaba: "Talaba", oqituvchi: "O‘qituvchi" };
   const canShare = () => !!(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia);
@@ -230,13 +231,18 @@
   }
   function leave(silent) {
     if (!cur) return;
-    const lk = cur.lk; cur = null;
-    try { lk.disconnect(); } catch { /* */ }
+    const c = cur; cur = null;
+    c.closing = true;
+    try { c.lk.disconnect(); } catch { /* */ }
+    closeFloat(c);
     cleanup();
+    renderMini();
     if (!silent) A.toast("Xonadan chiqdingiz");
   }
-  window.addEventListener("hashchange", () => { if (cur && !location.hash.startsWith(BASE + "/" + cur.info.room.id)) leave(true); });
-  window.addEventListener("pagehide", () => leave(true));
+  // Ilova ichida boshqa sahifaga o'tilganda aloqa uzilmaydi: pastda kichik panel turadi
+  const onRoomPage = () => !!cur && location.hash.startsWith(BASE + "/" + cur.info.room.id);
+  window.addEventListener("hashchange", () => setTimeout(renderMini, 0));
+  window.addEventListener("pagehide", (e) => { if (!e.persisted) leave(true); });
 
   async function pageRoom(id, query, my = seq) {
     const retry = () => pageRoom(id, query, seq);
@@ -246,6 +252,7 @@
     if (my !== seq) return;
     if (!c.user) return needLogin();
     if (cur && cur.info.room.id === id) return buildRoom();
+    if (cur) leave(true);
     const code = new URLSearchParams(query || "").get("code") || "";
     let info;
     try { info = await call({ action: "token", room_id: id, code }); }
@@ -270,7 +277,7 @@
       </div>`;
     A.$("#rmJoin").addEventListener("click", async () => {
       const b = A.$("#rmJoin"); b.disabled = true; b.textContent = "Ulanmoqda…";
-      try { await connect(info, c.user); }
+      try { info.code = code; await connect(info, c.user); }
       catch (e) {
         console.error(e);
         leave(true);
@@ -283,7 +290,7 @@
   async function connect(info, user) {
     const L = await lib();
     const lk = new L.Room({ adaptiveStream: true, dynacast: true, audioCaptureDefaults: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
-    cur = { L, lk, info, me: user, speakers: new Set(), mods: info.mods || [], admins: info.admins || [], msgs: [], seen: new Set(), tab: "people", unread: 0, screen: null };
+    cur = { L, lk, info, me: user, speakers: new Set(), mods: info.mods || [], admins: info.admins || [], msgs: [], seen: new Set(), tab: "people", unread: 0, screen: null, retries: 0 };
     for (const m of info.history || []) { cur.msgs.push(m); cur.seen.add(m.id); }
     const live = () => cur && cur.lk === lk;
     lk.on(L.RoomEvent.TrackSubscribed, (track, pub, p) => {
@@ -302,19 +309,24 @@
       if (live() && pub.source === L.Track.Source.ScreenShare && cur.screen?.local) { cur.screen = null; renderStage(); }
       if (live()) renderBar();
     });
-    lk.on(L.RoomEvent.ActiveSpeakersChanged, (sp) => { if (!live()) return; cur.speakers = new Set(sp.map((p) => p.identity)); paintSpeaking(); });
+    lk.on(L.RoomEvent.ActiveSpeakersChanged, (sp) => { if (!live()) return; cur.speakers = new Set(sp.map((p) => p.identity)); paintSpeaking(); renderMini(); renderFloat(); });
+    lk.on(L.RoomEvent.ParticipantAttributesChanged, (ch, p) => {
+      if (!live() || !p || p.isLocal || !("hand" in (ch || {})) || !handOf(p) || !staff(lk.localParticipant.identity)) return;
+      const nm = profCache.get(p.identity)?.name || p.name || "Kimdir";
+      A.toast(`${nm} ${handOf(p) === "screen" ? "ekran ulashishni" : "so‘z"} so‘rayapti`);
+    });
     [L.RoomEvent.ParticipantConnected, L.RoomEvent.ParticipantDisconnected, L.RoomEvent.TrackMuted, L.RoomEvent.TrackUnmuted,
       L.RoomEvent.TrackPublished, L.RoomEvent.TrackUnpublished, L.RoomEvent.ParticipantAttributesChanged]
-      .forEach((ev) => lk.on(ev, () => { if (live()) { renderPeople(); renderBar(); } }));
+      .forEach((ev) => lk.on(ev, () => { if (live()) { renderPeople(); renderBar(); renderMini(); renderFloat(); } }));
     lk.on(L.RoomEvent.ParticipantPermissionsChanged, (prev, p) => {
       if (!live()) return;
-      if (p && p.isLocal) {
-        const can = !!p.permissions?.canPublish;
-        if (can && !info.me.speaker) A.toast("Sizga gapirishga ruxsat berildi");
-        if (!can && info.me.speaker && !staff(p.identity)) A.toast("Gapirish ruxsati olindi");
-        info.me.speaker = can;
+      if (p && p.isLocal && !staff(p.identity)) {
+        const sp = hasSrc(p, 2), sc = hasSrc(p, 3);
+        if (info.room.mode === "maruza" && sp !== !!info.me.speaker) A.toast(sp ? "Sizga so‘z berildi" : "So‘z olindi");
+        if (sc !== !!info.me.screen) A.toast(sc ? "Sizga ekran ulashishga ruxsat berildi" : "Ekran ulashish ruxsati olindi");
+        info.me.speaker = sp; info.me.screen = sc;
       }
-      renderPeople(); renderBar();
+      renderPeople(); renderBar(); renderMini();
     });
     lk.on(L.RoomEvent.DataReceived, (payload, participant) => {
       if (participant || !live()) return;           // faqat server xabarlari
@@ -334,18 +346,34 @@
       }
     });
     lk.on(L.RoomEvent.AudioPlaybackStatusChanged, () => { if (live()) renderBar(); });
-    lk.on(L.RoomEvent.Disconnected, (reason) => {
+    lk.on(L.RoomEvent.Reconnecting, () => { if (live()) A.toast("Aloqa uzildi, qayta ulanmoqda…"); });
+    lk.on(L.RoomEvent.Reconnected, () => { if (live()) A.toast("Qayta ulandi"); });
+    lk.on(L.RoomEvent.Disconnected, async (reason) => {
       const R = L.DisconnectReason || {};
-      const msg = reason === R.PARTICIPANT_REMOVED ? "Siz xonadan chiqarildingiz" : reason === R.ROOM_DELETED ? "Xona yopildi" : reason === R.CLIENT_INITIATED ? "" : "Aloqa uzildi";
-      if (live()) {
-        cur = null; cleanup();
-        if (msg) A.toast(msg);
-        if (location.hash.startsWith(BASE + "/")) location.hash = BASE;
+      if (!live() || cur.closing) return;
+      const final = reason === R.PARTICIPANT_REMOVED || reason === R.ROOM_DELETED || reason === R.CLIENT_INITIATED || reason === R.DUPLICATE_IDENTITY;
+      const c = cur;
+      if (!final && c.retries < 2 && navigator.onLine) {
+        // kutilmagan uzilish: yangi kalit bilan jimgina qayta ulanish
+        c.retries++;
+        A.toast("Aloqa uzildi, qayta ulanmoqda…");
+        try {
+          const fresh = await call({ action: "token", room_id: info.room.id, code: info.code || "" });
+          if (cur !== c) return;
+          cur = null; cleanup(); closeFloat(c);
+          await connect(Object.assign(fresh, { code: info.code }), user);
+          if (cur) cur.retries = c.retries;
+          return;
+        } catch { /* pastga */ }
       }
+      cur = null; cleanup(); closeFloat(c); renderMini();
+      const msg = reason === R.PARTICIPANT_REMOVED ? "Siz xonadan chiqarildingiz" : reason === R.ROOM_DELETED ? "Xona yopildi" : reason === R.DUPLICATE_IDENTITY ? "Bu hisob bilan boshqa qurilmadan kirildi" : reason === R.CLIENT_INITIATED ? "" : "Aloqa uzildi";
+      if (msg) A.toast(msg);
+      if (location.hash.startsWith(BASE + "/")) location.hash = BASE;
     });
     await lk.connect(info.url, info.token);
     try { await lk.startAudio(); } catch { /* */ }
-    buildRoom();
+    if (onRoomPage()) buildRoom(); else renderMini();
   }
 
   const wide = () => matchMedia("(min-width: 900px)").matches;
@@ -355,7 +383,11 @@
   const micOn = (p) => { const pub = p.getTrackPublication?.("microphone"); return !!(pub && pub.track && !pub.isMuted); };
   const sharing = (p) => { const pub = p.getTrackPublication?.("screen_share"); return !!(pub && !pub.isMuted && (pub.track || pub.isSubscribed !== false)); };
   const parts = () => [cur.lk.localParticipant, ...cur.lk.remoteParticipants.values()];
-  const canTalk = (p) => cur.info.room.mode === "suhbat" || staff(p.identity) || !!p.permissions?.canPublish;
+  // LiveKit manba raqamlari: 2 = mikrofon, 3 = ekran
+  const hasSrc = (p, n) => !!p.permissions?.canPublish && (p.permissions.canPublishSources || []).some((x) => x === n || String(x).toLowerCase() === (n === 2 ? "microphone" : "screen_share"));
+  const canTalk = (p) => cur.info.room.mode === "suhbat" || staff(p.identity) || hasSrc(p, 2);
+  const canScreen = (p) => staff(p.identity) || hasSrc(p, 3);
+  const handOf = (p) => { const h = p.attributes?.hand || ""; return h === "1" ? "speak" : h; };
 
   function buildRoom() {
     if (!cur) return;
@@ -389,8 +421,8 @@
     const list = parts();
     const pr = await profiles(list.map((p) => p.identity));
     if (!cur || cur.lk !== lk) return;
-    const order = list.map((p, i) => ({ p, prof: pr[i], hand: p.attributes?.hand === "1" }))
-      .sort((a, b) => ((b.p.identity === info.room.owner) - (a.p.identity === info.room.owner)) || (staff(b.p.identity) - staff(a.p.identity)) || (b.hand - a.hand) || (micOn(b.p) - micOn(a.p)));
+    const order = list.map((p, i) => ({ p, prof: pr[i], hand: handOf(p) }))
+      .sort((a, b) => ((b.p.identity === info.room.owner) - (a.p.identity === info.room.owner)) || (staff(b.p.identity) - staff(a.p.identity)) || (!!b.hand - !!a.hand) || (micOn(b.p) - micOn(a.p)));
     const speakers = order.filter((x) => canTalk(x.p));
     const listeners = order.filter((x) => !speakers.includes(x));
     const card = (x) => {
@@ -399,12 +431,20 @@
       const badge = id === info.room.owner ? `<span class="rm-badge crown" title="Xona egasi">${ico(I.crown, 12)}</span>`
         : (cur.mods.includes(id) || cur.admins.includes(id)) ? `<span class="rm-badge shield" title="Moderator">${ico(I.shield, 12)}</span>` : "";
       return `<button class="rm-p${cur.speakers.has(id) ? " talk" : ""}" data-id="${esc(id)}" type="button">
-        <span class="rm-pav">${avatar(x.prof, nm, 64)}${badge}${x.hand ? `<span class="rm-badge hand" title="Qo‘l ko‘tardi">✋</span>` : ""}${canTalk(x.p) && !micOn(x.p) ? `<span class="rm-badge mute">${ico(I.micOff, 12)}</span>` : ""}${sharing(x.p) ? `<span class="rm-badge scr" title="Ekran ulashmoqda">${ico(I.screen, 12)}</span>` : ""}</span>
+        <span class="rm-pav">${avatar(x.prof, nm, 64)}${badge}${x.hand ? `<span class="rm-badge hand" title="${x.hand === "screen" ? "Ekran ulashishni so‘rayapti" : "So‘z so‘rayapti"}">${x.hand === "screen" ? "🖥" : "✋"}</span>` : ""}${canTalk(x.p) && !micOn(x.p) ? `<span class="rm-badge mute">${ico(I.micOff, 12)}</span>` : ""}${sharing(x.p) ? `<span class="rm-badge scr" title="Ekran ulashmoqda">${ico(I.screen, 12)}</span>` : ""}</span>
         <span class="rm-pn">${esc(nm)}${x.p.isLocal ? " (siz)" : ""}</span>${sub ? `<span class="rm-ps">${esc(sub)}</span>` : ""}</button>`;
     };
-    el.innerHTML = `${info.room.mode === "maruza" ? `<h3 class="group-label">So‘zlovchilar</h3>` : ""}<div class="rm-grid">${speakers.map(card).join("")}</div>
+    const reqs = iAmStaff() ? order.filter((x) => x.hand && !x.p.isLocal) : [];
+    el.innerHTML = `${reqs.length ? `<div class="rm-reqs"><b class="small">So‘rovlar · ${reqs.length}</b>${reqs.map((x) => `<div class="rm-req">${avatar(x.prof, x.prof.name || x.p.name, 30)}<span>${esc(x.prof.name || x.p.name || "Foydalanuvchi")}<small>${x.hand === "screen" ? "ekran ulashmoqchi" : "gapirmoqchi"}</small></span>
+        <button class="btn primary" data-rq="${x.hand === "screen" ? "allowscreen" : "allow"}" data-id="${esc(x.p.identity)}">Ruxsat</button><button class="btn" data-rq="dismiss" data-id="${esc(x.p.identity)}">Rad</button></div>`).join("")}</div>` : ""}
+      ${info.room.mode === "maruza" ? `<h3 class="group-label">So‘zlovchilar</h3>` : ""}<div class="rm-grid">${speakers.map(card).join("")}</div>
       ${info.room.mode === "maruza" && listeners.length ? `<h3 class="group-label">Tinglovchilar · ${listeners.length}</h3><div class="rm-grid small">${listeners.map(card).join("")}</div>` : ""}`;
     el.querySelectorAll(".rm-p").forEach((b) => b.addEventListener("click", () => personSheet(b.dataset.id)));
+    el.querySelectorAll("[data-rq]").forEach((b) => b.addEventListener("click", async () => {
+      b.disabled = true;
+      try { await call({ action: "mod", room_id: info.room.id, op: b.dataset.rq, target: b.dataset.id }); }
+      catch (e) { b.disabled = false; A.toast(e.message); }
+    }));
     const sub = A.$("#rmSub");
     if (sub) sub.innerHTML = `${info.room.mode === "maruza" ? "Maruza" : "Suhbat"} · ${list.length} kishi${info.room.code ? ` · kod: <b>${esc(info.room.code)}</b>` : ""}`;
     renderTabs();
@@ -461,34 +501,66 @@
     });
   }
 
+  async function toggleScreen() {
+    const L = cur.L, local = cur.lk.localParticipant;
+    const on = !!local.getTrackPublication?.("screen_share")?.track;
+    if (on) { await local.setScreenShareEnabled(false); return; }
+    // Trafikni tejash: matn va slayd aniq, sekundiga 8 kadr
+    const pub = { screenShareEncoding: { maxBitrate: 900000, maxFramerate: 8 } };
+    if (L.ScreenSharePresets?.h720fps5) pub.screenShareSimulcastLayers = [L.ScreenSharePresets.h720fps5];
+    const cap = (audio) => ({ audio, resolution: { width: 1920, height: 1080, frameRate: 8 }, contentHint: "detail", selfBrowserSurface: "include", surfaceSwitching: "include" });
+    try { await local.setScreenShareEnabled(true, cap(true), pub); }
+    catch (e) {
+      const n = String(e?.name || "") + " " + String(e?.message || "");
+      if (/NotAllowed|denied|cancel|Permission/i.test(n)) return;          // foydalanuvchi bekor qildi
+      try { await local.setScreenShareEnabled(true, cap(false), pub); }      // Safari: ekran ovozisiz
+      catch (e2) {
+        const n2 = String(e2?.name || "") + " " + String(e2?.message || "");
+        if (!/NotAllowed|denied|cancel|Permission/i.test(n2)) A.toast("Ekranni ulashib bo‘lmadi: " + (e2?.message || e2?.name || "xato"));
+      }
+    }
+  }
+
+  function handSheet() {
+    const local = cur.lk.localParticipant, info = cur.info;
+    const needSpeak = !canTalk(local), needScreen = !canScreen(local) && canShare();
+    const ask = async (kind) => {
+      try { await call({ action: "hand", room_id: info.room.id, up: true, kind }); A.toast(kind === "screen" ? "Ekran ulashish so‘raldi. Ruxsat kuting" : "So‘z so‘raldi. Ruxsat kuting"); }
+      catch (e) { A.toast(e.message); }
+    };
+    if (needSpeak && !needScreen) return ask("speak");
+    if (needScreen && !needSpeak) return ask("screen");
+    const sh = A.sheet(`<h3>Nima so‘raysiz?</h3><div class="more-list">
+      <button class="rm-act" data-k="speak">${ico(I.mic)} So‘z so‘rash (gapirish)</button>
+      <button class="rm-act" data-k="screen">${ico(I.screen)} Ekran ulashishni so‘rash</button></div>
+      <div class="acts"><button class="btn" data-x="close">Bekor qilish</button></div>`);
+    sh.el.querySelectorAll("[data-k]").forEach((b) => b.addEventListener("click", () => { sh.close(); ask(b.dataset.k); }));
+  }
+
   function renderBar() {
     const el = A.$("#rmBar"); if (!el || !cur) return;
     const lk = cur.lk, info = cur.info, local = lk.localParticipant;
-    const talk = !!local.permissions?.canPublish || info.me.speaker || iAmStaff();
-    const handUp = local.attributes?.hand === "1";
+    const talk = canTalk(local), scr = canScreen(local);
+    const hand = handOf(local);
+    const canAsk = !talk || (!scr && canShare());
     const shareOn = !!local.getTrackPublication?.("screen_share")?.track;
     el.innerHTML = `${lk.canPlaybackAudio === false ? `<button class="rm-btn on" id="rmAudio" type="button">${ico(I.wave, 24)}<span>Ovozni yoqish</span></button>` : ""}
-      ${talk ? `<button class="rm-btn${micOn(local) ? " on" : ""}" id="rmMic" type="button">${ico(micOn(local) ? I.mic : I.micOff, 24)}<span>${micOn(local) ? "Mikrofon yoqiq" : "Mikrofon o‘chiq"}</span></button>`
-        : `<button class="rm-btn${handUp ? " on" : ""}" id="rmHand" type="button">${ico(I.hand, 24)}<span>${handUp ? "Qo‘lni tushirish" : "Qo‘l ko‘tarish"}</span></button>`}
-      ${iAmStaff() && canShare() ? `<button class="rm-btn${shareOn ? " on" : ""}" id="rmScr" type="button">${ico(I.screen, 24)}<span>${shareOn ? "Ulashishni to‘xtatish" : "Ekran ulashish"}</span></button>` : ""}
+      ${talk ? `<button class="rm-btn${micOn(local) ? " on" : ""}" id="rmMic" type="button">${ico(micOn(local) ? I.mic : I.micOff, 24)}<span>${micOn(local) ? "Mikrofon yoqiq" : "Mikrofon o‘chiq"}</span></button>` : ""}
+      ${canAsk ? `<button class="rm-btn${hand ? " on" : ""}" id="rmHand" type="button">${ico(I.hand, 24)}<span>${hand ? "So‘rovni bekor qilish" : "Qo‘l ko‘tarish"}</span></button>` : ""}
+      ${scr && canShare() ? `<button class="rm-btn${shareOn ? " on" : ""}" id="rmScr" type="button">${ico(I.screen, 24)}<span>${shareOn ? "Ulashishni to‘xtatish" : "Ekran ulashish"}</span></button>` : ""}
+      ${floatSupported() ? `<button class="rm-btn${cur.float ? " on" : ""}" id="rmPip" type="button">${ico(I.pip, 24)}<span>Suzuvchi oyna</span></button>` : ""}
       ${info.room.code ? `<button class="rm-btn" id="rmShare" type="button">${ico(I.share, 24)}<span>Taklif</span></button>` : ""}
       ${iAmOwner() ? `<button class="rm-btn danger" id="rmEnd" type="button">${ico(I.ban, 24)}<span>Yopish</span></button>` : ""}
       <button class="rm-btn danger" id="rmLeave" type="button">${ico(I.leave, 24)}<span>Chiqish</span></button>`;
     const $ = (s) => el.querySelector(s);
     $("#rmAudio")?.addEventListener("click", async () => { try { await lk.startAudio(); } catch { /* */ } renderBar(); });
-    $("#rmMic")?.addEventListener("click", async () => {
-      try { await local.setMicrophoneEnabled(!micOn(local)); } catch { A.toast("Mikrofonga ruxsat bering (brauzer sozlamalari)"); }
-      renderBar(); renderPeople();
-    });
+    $("#rmMic")?.addEventListener("click", async () => { await toggleMic(); renderBar(); renderPeople(); });
     $("#rmHand")?.addEventListener("click", async () => {
-      try { await call({ action: "hand", room_id: info.room.id, up: !handUp }); if (!handUp) A.toast("Qo‘l ko‘tardingiz. So‘z berilishini kuting"); }
-      catch (e) { A.toast(e.message); }
+      if (hand) { try { await call({ action: "hand", room_id: info.room.id, up: false }); } catch (e) { A.toast(e.message); } return; }
+      handSheet();
     });
-    $("#rmScr")?.addEventListener("click", async () => {
-      try { await local.setScreenShareEnabled(!shareOn, { audio: true }); }
-      catch (e) { if (!/denied|NotAllowed|cancel/i.test(String(e?.name || e?.message))) A.toast("Ekranni ulashib bo‘lmadi"); }
-      renderBar();
-    });
+    $("#rmScr")?.addEventListener("click", async () => { await toggleScreen(); renderBar(); });
+    $("#rmPip")?.addEventListener("click", () => (cur.float ? closeFloat(cur) : openFloat()));
     $("#rmShare")?.addEventListener("click", async () => {
       const txt = `ALVORA Med Konsilium: “${info.room.title}”. Kod: ${info.room.code}\n${location.origin}${location.pathname}${BASE}/${info.room.id}?code=${info.room.code}`;
       try { if (navigator.share) await navigator.share({ text: txt }); else { await navigator.clipboard.writeText(txt); A.toast("Taklif nusxalandi"); } } catch { /* */ }
@@ -502,6 +574,119 @@
         try { await call({ action: "mod", room_id: info.room.id, op: "end" }); } catch (e) { A.toast(e.message); }
       });
     });
+  }
+
+  async function toggleMic() {
+    if (!cur) return;
+    const local = cur.lk.localParticipant;
+    try { await local.setMicrophoneEnabled(!micOn(local)); } catch { A.toast("Mikrofonga ruxsat bering (brauzer sozlamalari)"); }
+    renderMini(); renderFloat();
+  }
+
+  /* ---------- Kichik panel (ilovaning boshqa sahifalarida) ---------- */
+  const speakerNow = () => {
+    if (!cur) return null;
+    const ids = [...cur.speakers];
+    const id = ids[0];
+    if (!id) return null;
+    const p = id === cur.lk.localParticipant.identity ? cur.lk.localParticipant : cur.lk.remoteParticipants.get(id);
+    const prof = profCache.get(id) || {};
+    return { id, name: p?.isLocal ? "Siz" : (prof.name || p?.name || "Kimdir"), prof };
+  };
+  function renderMini() {
+    let el = document.getElementById("rmMini");
+    if (!cur || onRoomPage()) { el?.remove(); return; }
+    if (!el) { el = document.createElement("div"); el.id = "rmMini"; el.className = "rm-mini"; document.body.appendChild(el); }
+    const local = cur.lk.localParticipant, sp = speakerNow();
+    el.innerHTML = `<a class="rm-mini-main" href="${BASE}/${esc(cur.info.room.id)}">
+        <span class="rm-mini-dot${sp ? " on" : ""}">${sp ? avatar(sp.prof, sp.name, 30) : ico(I.wave, 18)}</span>
+        <span class="rm-mini-t"><b>${esc(cur.info.room.title)}</b><small>${sp ? esc(sp.name) + " gapiryapti" : "Konsilium · qaytish uchun bosing"}</small></span></a>
+      ${canTalk(local) ? `<button class="rm-mini-b${micOn(local) ? " on" : ""}" id="rmMiniMic" aria-label="Mikrofon">${ico(micOn(local) ? I.mic : I.micOff, 20)}</button>` : ""}
+      ${floatSupported() ? `<button class="rm-mini-b${cur.float ? " on" : ""}" id="rmMiniPip" aria-label="Suzuvchi oyna">${ico(I.pip, 20)}</button>` : ""}
+      <button class="rm-mini-b danger" id="rmMiniOut" aria-label="Chiqish">${ico(I.leave, 20)}</button>`;
+    el.querySelector("#rmMiniMic")?.addEventListener("click", toggleMic);
+    el.querySelector("#rmMiniPip")?.addEventListener("click", () => (cur.float ? closeFloat(cur) : openFloat()));
+    el.querySelector("#rmMiniOut").addEventListener("click", () => leave());
+  }
+
+  /* ---------- Suzuvchi oyna (boshqa oynalar ustida) ---------- */
+  const floatSupported = () => !!window.documentPictureInPicture || !!(document.pictureInPictureEnabled && HTMLCanvasElement.prototype.captureStream);
+  async function openFloat() {
+    if (!cur || cur.float) return;
+    const c = cur;
+    try {
+      if (window.documentPictureInPicture) {
+        const w = await window.documentPictureInPicture.requestWindow({ width: 300, height: 132 });
+        const st = w.document.createElement("style");
+        st.textContent = `body{margin:0;font:14px/1.3 system-ui,-apple-system,sans-serif;background:#0f2a25;color:#e8f4f1;display:flex;align-items:center;gap:10px;padding:10px;box-sizing:border-box;height:100vh}
+          .av{width:56px;height:56px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#1b9a84;font-weight:700;font-size:22px;flex:none;box-shadow:0 0 0 3px transparent;transition:box-shadow .15s}
+          .av.on{box-shadow:0 0 0 3px #5fd1bf,0 0 0 7px rgba(95,209,191,.25)} .av img{width:100%;height:100%;object-fit:cover}
+          .t{flex:1;min-width:0} .t b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .t small{color:#9cc7bd}
+          button{border:0;border-radius:12px;width:40px;height:40px;display:grid;place-items:center;background:#24413b;color:#e8f4f1;cursor:pointer} button.on{background:#1b9a84} button.x{color:#ff8c8c}`;
+        w.document.head.appendChild(st);
+        c.float = { kind: "doc", win: w };
+        w.addEventListener("pagehide", () => { if (c.float?.win === w) { c.float = null; renderBar(); renderMini(); } });
+      } else {
+        const cv = document.createElement("canvas"); cv.width = 480; cv.height = 200;
+        const v = document.createElement("video"); v.muted = true; v.playsInline = true; v.className = "rm-pipv";
+        v.srcObject = cv.captureStream(4); document.body.appendChild(v);
+        c.float = { kind: "video", cv, v, imgs: new Map() };
+        c.float.timer = setInterval(() => drawFloatCanvas(c), 300);
+        drawFloatCanvas(c);
+        await v.play();
+        await v.requestPictureInPicture();
+        v.addEventListener("leavepictureinpicture", () => { if (c.float?.v === v) closeFloat(c); });
+      }
+      renderFloat(); renderBar(); renderMini();
+    } catch (e) {
+      closeFloat(c);
+      A.toast("Suzuvchi oynani ochib bo‘lmadi");
+    }
+  }
+  function closeFloat(c) {
+    const f = c?.float; if (!f) return;
+    c.float = null;
+    try { if (f.kind === "doc") f.win.close(); } catch { /* */ }
+    if (f.kind === "video") {
+      clearInterval(f.timer);
+      try { if (document.pictureInPictureElement === f.v) document.exitPictureInPicture(); } catch { /* */ }
+      f.v.remove();
+    }
+    if (cur === c) { renderBar(); renderMini(); }
+  }
+  function renderFloat() {
+    const f = cur?.float; if (!f || f.kind !== "doc") return;
+    const d = f.win.document, local = cur.lk.localParticipant, sp = speakerNow();
+    const prof = sp?.prof || {}, src = prof.photo || prof.avatar_url || "";
+    d.body.innerHTML = `<span class="av${sp ? " on" : ""}">${sp ? (src ? `<img src="${esc(src)}" referrerpolicy="no-referrer">` : esc((sp.name || "?")[0]).toUpperCase()) : "🎙"}</span>
+      <span class="t"><b>${esc(sp ? sp.name : cur.info.room.title)}</b><small>${sp ? "gapiryapti" : "Konsilium · jim"}</small></span>
+      ${canTalk(local) ? `<button id="m" class="${micOn(local) ? "on" : ""}" title="Mikrofon">${ico(micOn(local) ? I.mic : I.micOff, 20)}</button>` : ""}
+      <button id="x" class="x" title="Chiqish">${ico(I.leave, 20)}</button>`;
+    d.getElementById("m")?.addEventListener("click", toggleMic);
+    d.getElementById("x").addEventListener("click", () => leave());
+  }
+  function drawFloatCanvas(c) {
+    const f = c.float; if (!f || f.kind !== "video" || cur !== c) return;
+    const g = f.cv.getContext("2d"), W = f.cv.width, H = f.cv.height, sp = speakerNow();
+    g.fillStyle = "#0f2a25"; g.fillRect(0, 0, W, H);
+    const cx = 100, cy = H / 2, r = 62;
+    if (sp) { g.beginPath(); g.arc(cx, cy, r + 9, 0, Math.PI * 2); g.fillStyle = "rgba(95,209,191,.35)"; g.fill(); }
+    g.save(); g.beginPath(); g.arc(cx, cy, r, 0, Math.PI * 2); g.closePath(); g.clip();
+    g.fillStyle = "#1b9a84"; g.fillRect(cx - r, cy - r, r * 2, r * 2);
+    const src = sp?.prof?.photo || "";   // faqat o'z serverimizdagi rasm (data:) chiziladi
+    let drawn = false;
+    if (src.startsWith("data:")) {
+      let im = f.imgs.get(src);
+      if (!im) { im = new Image(); im.src = src; f.imgs.set(src, im); }
+      if (im.complete && im.naturalWidth) { g.drawImage(im, cx - r, cy - r, r * 2, r * 2); drawn = true; }
+    }
+    if (!drawn) { g.fillStyle = "#fff"; g.font = "bold 52px system-ui,sans-serif"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(sp ? (sp.name[0] || "?").toUpperCase() : "🎙", cx, cy + 2); }
+    g.restore();
+    g.textAlign = "left"; g.textBaseline = "alphabetic"; g.fillStyle = "#e8f4f1"; g.font = "bold 30px system-ui,sans-serif";
+    const t = sp ? sp.name : c.info.room.title;
+    g.fillText(t.length > 16 ? t.slice(0, 15) + "…" : t, 190, cy - 6);
+    g.fillStyle = "#9cc7bd"; g.font = "24px system-ui,sans-serif";
+    g.fillText(sp ? "gapiryapti" : "jim", 190, cy + 30);
   }
 
   function paintSpeaking() {
@@ -528,7 +713,9 @@
       <div class="more-list">
         ${can && micOn(p) ? `<button class="rm-act" data-op="mute">${ico(I.micOff)} Ovozini o‘chirish</button>` : ""}
         ${can && sharing(p) ? `<button class="rm-act" data-op="stopscreen">${ico(I.screen)} Ekran ulashishni to‘xtatish</button>` : ""}
-        ${can && lecture && !isModT && !isOwnerT ? (speaking ? `<button class="rm-act" data-op="deny">${ico(I.micOff)} So‘z berishni to‘xtatish</button>` : `<button class="rm-act" data-op="allow">${ico(I.mic)} So‘z berish${p.attributes?.hand === "1" ? " (qo‘l ko‘tardi)" : ""}</button>`) : ""}
+        ${can && lecture && !isModT && !isOwnerT ? (hasSrc(p, 2) ? `<button class="rm-act" data-op="deny">${ico(I.micOff)} So‘z berishni to‘xtatish</button>` : `<button class="rm-act" data-op="allow">${ico(I.mic)} So‘z berish${handOf(p) === "speak" ? " (so‘rayapti)" : ""}</button>`) : ""}
+        ${can && !isModT && !isOwnerT ? (hasSrc(p, 3) ? `<button class="rm-act" data-op="denyscreen">${ico(I.screen)} Ekran ulashish huquqini olish</button>` : `<button class="rm-act" data-op="allowscreen">${ico(I.screen)} Ekran ulashishga ruxsat berish${handOf(p) === "screen" ? " (so‘rayapti)" : ""}</button>`) : ""}
+        ${can && handOf(p) ? `<button class="rm-act" data-op="dismiss">${ico(I.hand)} So‘rovni rad etish</button>` : ""}
         ${owner && can && !isOwnerT ? (isModT ? `<button class="rm-act" data-op="unmod">${ico(I.shield)} Moderatorlikdan olish</button>` : `<button class="rm-act" data-op="makemod">${ico(I.shield)} Shu xonaga moderator qilish</button>`) : ""}
         ${can ? `<button class="rm-act danger" data-op="kick">${ico(I.leave)} Xonadan chiqarish</button>` : ""}
         ${!p.isLocal ? `<button class="rm-act" data-op="report">${ico(I.flag)} Shikoyat qilish</button>` : ""}
@@ -542,7 +729,7 @@
         const j = await call({ action: "mod", room_id: info.room.id, op, target: id });
         if (j.mods && cur) { cur.mods = j.mods; renderPeople(); }
         sh.close();
-        A.toast({ mute: "Ovozi o‘chirildi", stopscreen: "Ekran ulashish to‘xtatildi", allow: "So‘z berildi", deny: "So‘z olindi", kick: "Xonadan chiqarildi", makemod: "Moderator tayinlandi", unmod: "Moderatorlik olindi" }[op]);
+        A.toast({ mute: "Ovozi o‘chirildi", stopscreen: "Ekran ulashish to‘xtatildi", allow: "So‘z berildi", deny: "So‘z olindi", allowscreen: "Ekran ulashishga ruxsat berildi", denyscreen: "Ekran huquqi olindi", dismiss: "So‘rov rad etildi", kick: "Xonadan chiqarildi", makemod: "Moderator tayinlandi", unmod: "Moderatorlik olindi" }[op]);
       } catch (e) { b.disabled = false; A.toast(e.message); }
     }));
   }

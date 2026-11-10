@@ -961,3 +961,23 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
   .rm-body #rmPeople { display: block !important; }
   .rm-msgs { height: 56vh; }
 }
+
+/* Konsilium: so'rovlar, kichik panel */
+.rm-reqs { display: grid; gap: 8px; padding: 10px; margin-bottom: 12px; border-radius: 16px; background: color-mix(in srgb, var(--accent) 10%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+.rm-req { display: flex; align-items: center; gap: 10px; }
+.rm-req > span:not(.rm-av) { flex: 1; min-width: 0; font-weight: 600; font-size: .9rem; }
+.rm-req small { display: block; font-weight: 500; color: var(--ink-2); font-size: .78rem; }
+.rm-req .btn { padding: 7px 12px; }
+.rm-req .rm-av { font-size: .8rem; }
+.rm-mini { position: fixed; z-index: 55; left: 10px; right: 10px; bottom: calc(74px + var(--safe-b)); display: flex; align-items: center; gap: 6px; padding: 8px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.18); animation: fadeIn .2s ease both; }
+.rm-mini-main { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.rm-mini-dot { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+.rm-mini-dot.on .rm-av { box-shadow: 0 0 0 3px var(--accent); }
+.rm-mini-t { min-width: 0; display: grid; }
+.rm-mini-t b { font-size: .88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rm-mini-t small { font-size: .75rem; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rm-mini-b { flex: none; width: 40px; height: 40px; border: 0; border-radius: 12px; display: grid; place-items: center; background: var(--surface-2); color: var(--ink); cursor: pointer; }
+.rm-mini-b.on { background: var(--accent); color: var(--on-accent); }
+.rm-mini-b.danger { color: var(--bad, #d33); }
+.rm-pipv { position: fixed; width: 1px; height: 1px; opacity: 0; pointer-events: none; bottom: 0; left: 0; }
+@media (min-width: 900px) { .rm-mini { left: auto; right: 20px; bottom: 20px; width: 380px; } }

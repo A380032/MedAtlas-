@@ -300,7 +300,7 @@
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.16.2</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.17.0</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
