@@ -169,8 +169,21 @@
 
   /* ---------- Sahifalar ---------- */
   const navLinks = [...document.querySelectorAll(".tabbar a")];
+  navLinks.forEach((a) => a.addEventListener("click", (e) => {
+    const tab = a.dataset.tab, last = tabLast[tab];
+    if (!last || tab === curTab || last === a.getAttribute("href")) return;   // shu bo'limda bo'lsa — bosh sahifasiga
+    if (tab === "rooms" && !window.ROOMS?.active?.()) return;                 // xonadan chiqilgan bo'lsa — ro'yxat
+    if (tab === "assyst" && /\/run$/.test(last) && !localStorage.getItem("tq:tm:sess")) return;
+    e.preventDefault();
+    location.hash = last;
+  }));
   const srchBtn = $("#srchBtn"), accBtn = $("#accBtn");
+  // Har bir bo'lim oxirgi ochilgan joyini eslab qoladi (masalan, yarim qolgan test)
+  const tabLast = {}, TAB_KEEP = ["assyst", "sim", "rooms", "fanlar"];
+  let curTab = "";
   function setChrome(title, back, tab, opt = {}) {
+    curTab = tab;
+    if (TAB_KEEP.includes(tab)) tabLast[tab] = location.hash;
     view.classList.remove("wide");
     titleEl.textContent = title;
     $(".topbar").classList.toggle("is-home", !!opt.home);
@@ -301,7 +314,7 @@
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.18.0</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.18.1</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);

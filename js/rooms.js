@@ -291,6 +291,7 @@
     if (!cur) return;
     const c = cur; cur = null;
     c.closing = true;
+    clearInterval(c.aloneTimer);
     try { c.lk.disconnect(); } catch { /* */ }
     closeFloat(c);
     cleanup();
@@ -347,7 +348,7 @@
 
   async function connect(info, user) {
     const L = await lib();
-    const lk = new L.Room({ adaptiveStream: true, dynacast: true, audioCaptureDefaults: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
+    const lk = new L.Room({ adaptiveStream: true, dynacast: true, disconnectOnPageLeave: false, stopMicTrackOnMute: false, audioCaptureDefaults: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
     cur = { L, lk, info, me: user, speakers: new Set(), mods: info.mods || [], admins: info.admins || [], msgs: [], seen: new Set(), tab: "people", unread: 0, screen: null, retries: 0 };
     for (const m of info.history || []) { cur.msgs.push(m); cur.seen.add(m.id); }
     const live = () => cur && cur.lk === lk;
@@ -375,7 +376,7 @@
     });
     [L.RoomEvent.ParticipantConnected, L.RoomEvent.ParticipantDisconnected, L.RoomEvent.TrackMuted, L.RoomEvent.TrackUnmuted,
       L.RoomEvent.TrackPublished, L.RoomEvent.TrackUnpublished, L.RoomEvent.ParticipantAttributesChanged]
-      .forEach((ev) => lk.on(ev, () => { if (live()) { renderPeople(); renderBar(); renderMini(); renderFloat(); } }));
+      .forEach((ev) => lk.on(ev, () => { if (live()) { renderPeople(); renderBar(); renderMini(); renderFloat(); checkAlone(); } }));
     lk.on(L.RoomEvent.ParticipantPermissionsChanged, (prev, p) => {
       if (!live()) return;
       if (p && p.isLocal && !staff(p.identity)) {
@@ -432,7 +433,47 @@
     await lk.connect(info.url, info.token);
     try { await lk.startAudio(); } catch { /* */ }
     if (onRoomPage()) buildRoom(); else renderMini();
+    checkAlone();
   }
+
+  /* Xona egasi bo'lmagan odam yolg'iz qolsa, xona 5 daqiqadan keyin o'zi yopiladi */
+  const ALONE_MS = 5 * 60 * 1000;
+  function checkAlone() {
+    if (!cur) return;
+    const c = cur, alone = c.lk.remoteParticipants.size === 0 && !iAmOwner();
+    if (!alone) { if (c.aloneAt) { clearInterval(c.aloneTimer); c.aloneAt = 0; paintAlone(); } return; }
+    if (c.aloneAt) return;
+    c.aloneAt = Date.now();
+    A.toast("Xonada yolg‘iz qoldingiz. Hech kim kirmasa, xona 5 daqiqadan keyin yopiladi");
+    c.aloneTimer = setInterval(async () => {
+      if (cur !== c) { clearInterval(c.aloneTimer); return; }
+      paintAlone();
+      if (Date.now() - c.aloneAt >= ALONE_MS) {
+        clearInterval(c.aloneTimer);
+        try { await call({ action: "mod", room_id: c.info.room.id, op: "end" }); } catch { /* */ }
+        if (cur === c) { leave(true); A.toast("Xona 5 daqiqa davomida faqat sizda qolgani uchun yopildi"); if (location.hash.startsWith(BASE + "/")) location.hash = BASE; }
+      }
+    }, 1000);
+    paintAlone();
+  }
+  function paintAlone() {
+    const el = document.getElementById("rmAlone"); if (!el) return;
+    if (!cur || !cur.aloneAt) { el.hidden = true; return; }
+    const left = Math.max(0, ALONE_MS - (Date.now() - cur.aloneAt)), m = Math.floor(left / 60000), sec = Math.floor(left / 1000) % 60;
+    el.hidden = false;
+    el.textContent = `Xonada yolg‘iz qoldingiz. Hech kim kirmasa, xona ${m}:${String(sec).padStart(2, "0")} dan keyin yopiladi.`;
+  }
+  // Ilovaga qaytilganda ovozni tiklash va uzilgan bo'lsa qayta ulanish
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden || !cur) return;
+    try { cur.lk.startAudio(); } catch { /* */ }
+    if (cur.lk.state === "disconnected" && !cur.closing) {
+      const c = cur;
+      call({ action: "token", room_id: c.info.room.id, code: c.info.code || "" })
+        .then((fresh) => { if (cur !== c) return; cur = null; cleanup(); return connect(Object.assign(fresh, { code: c.info.code }), c.me); })
+        .catch(() => {});
+    }
+  });
 
   const wide = () => matchMedia("(min-width: 900px)").matches;
   const staff = (id) => !!cur && (id === cur.info.room.owner || cur.mods.includes(id) || cur.admins.includes(id));
@@ -453,11 +494,12 @@
     A.setChrome(r.title, true, "rooms");
     A.view.innerHTML = `<div class="rm-head"><h2>${esc(r.title)}</h2><p class="small muted" id="rmSub"></p>
         ${r.topic ? `<p class="muted" style="margin:4px 0 0">${esc(r.topic)}</p>` : ""}</div>
+      <p class="rm-alone small" id="rmAlone" hidden></p>
       <div id="rmStage"></div>
       <div class="rm-tabs seg" role="tablist" id="rmTabs"></div>
       <div class="rm-body"><section id="rmPeople" class="rm-pane"></section><section id="rmChat" class="rm-pane rm-chatpane"></section></div>
       <div class="rm-bar" id="rmBar"></div>`;
-    renderStage(); renderTabs(); renderPeople(); renderChat(false); renderBar();
+    renderStage(); renderTabs(); renderPeople(); renderChat(false); renderBar(); paintAlone();
   }
 
   function renderTabs() {

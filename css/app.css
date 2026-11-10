@@ -1001,3 +1001,4 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .acc-more .tm-acts { margin-top: 10px; }
 .acc-login h3 { margin: 0 0 4px; font-size: 1rem; }
 .acc-edit { margin-left: auto; flex: none; }
+.rm-alone { margin: 0 0 12px; padding: 10px 12px; border-radius: 14px; background: color-mix(in srgb, #e0a100 14%, var(--surface)); border: 1px solid color-mix(in srgb, #e0a100 35%, transparent); }
