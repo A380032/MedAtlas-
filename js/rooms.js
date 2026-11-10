@@ -99,12 +99,12 @@
 
   /* ---------- Ro'yxat ---------- */
   let listTimer = null;
-  async function pageList() {
-    A.setChrome("Konsilium", false, "rooms");
-    if (!navigator.onLine) return needNet(pageList);
-    A.view.innerHTML = head("Yuklanmoqda…");
+  async function pageList(my = seq) {
+    const again = () => pageList(seq);
+    if (!navigator.onLine) return needNet(again);
     let c;
-    try { c = await ctx(); } catch (e) { return failBox(e.message, pageList); }
+    try { c = await ctx(); } catch (e) { if (my === seq) failBox(e.message, again); return; }
+    if (my !== seq) return;
     if (!c.user) return needLogin();
     A.view.innerHTML = head("Suhbatda hamma gapiradi. Maruzada tinglovchilar qo‘l ko‘tarib so‘z oladi. Ekran orqali tushuntirish va yozishma ham bor.") + `
       <div class="tm-acts rm-top"><button class="btn primary" id="rmNew">${ico(I.plus, 18)} Xona ochish</button><button class="btn" id="rmCode">${ico(I.key, 18)} Kod bilan kirish</button><span id="rmAdm" style="display:contents"></span></div>
@@ -238,22 +238,23 @@
   window.addEventListener("hashchange", () => { if (cur && !location.hash.startsWith(BASE + "/" + cur.info.room.id)) leave(true); });
   window.addEventListener("pagehide", () => leave(true));
 
-  async function pageRoom(id, query) {
-    A.setChrome("Konsilium", true, "rooms");
-    const retry = () => pageRoom(id, query);
+  async function pageRoom(id, query, my = seq) {
+    const retry = () => pageRoom(id, query, seq);
     if (!navigator.onLine) return needNet(retry);
-    A.view.innerHTML = head("Xonaga ulanmoqda…");
     let c;
-    try { c = await ctx(); } catch (e) { return failBox(e.message, retry); }
+    try { c = await ctx(); } catch (e) { if (my === seq) failBox(e.message, retry); return; }
+    if (my !== seq) return;
     if (!c.user) return needLogin();
     if (cur && cur.info.room.id === id) return buildRoom();
     const code = new URLSearchParams(query || "").get("code") || "";
     let info;
     try { info = await call({ action: "token", room_id: id, code }); }
     catch (e) {
+      if (my !== seq) return;
       A.view.innerHTML = A.emptyState(A.ICX.warn, "Xonaga kirib bo‘lmadi", esc(e.message), `<a class="btn" href="${BASE}">Xonalar ro‘yxati</a>`);
       return;
     }
+    if (my !== seq) return;
     A.setChrome(info.room.title, true, "rooms");
     const r = info.room;
     A.view.innerHTML = `<div class="rm-pre">
@@ -575,15 +576,24 @@
     });
   }
 
-  async function page(api, p, query) {
+  // Sahifa darhol qaytadi (yo'naltirgich "yuklanmoqda" bloklarini ustiga chizmasligi uchun),
+  // qolgan ish fonda davom etadi.
+  let seq = 0;
+  function page(api, p, query) {
     A = api;
-    try {
-      if (p[1]) return await pageRoom(p[1], query);
-      return await pageList();
-    } catch (e) {
-      console.error(e);
-      failBox("Xato: " + (e?.message || e), () => page(api, p, query));
-    }
+    const my = ++seq;
+    const run = async () => {
+      try {
+        if (p[1]) await pageRoom(p[1], query, my);
+        else await pageList(my);
+      } catch (e) {
+        console.error(e);
+        if (my === seq) failBox("Xato: " + (e?.message || e), () => page(api, p, query));
+      }
+    };
+    A.setChrome("Konsilium", !!p[1], "rooms");
+    A.view.innerHTML = head(p[1] ? "Xonaga ulanmoqda…" : "Yuklanmoqda…");
+    run();
   }
   window.ROOMS = { page, active: () => !!cur };
 })();
