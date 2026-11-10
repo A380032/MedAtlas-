@@ -300,7 +300,7 @@
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.15.0</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.16.0</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1246,7 +1246,7 @@
     const accIco = acc.photo ? `<img src="${esc(acc.photo)}" alt="" referrerpolicy="no-referrer">` : ic('<circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.4 7-5.4s6.2 1.8 7 5.4"/>');
     const items = [
       ["#/profil", accIco, acc.name || "Profil", acc.name ? "Hisobim" : "Kirish va bulutga saqlash"],
-      ["#/xonalar", ic('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.2-5.2 6.5-5.2s5.9 1.8 6.5 5.2M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.9c2 .6 3.2 2.2 3.5 5.1"/>'), "Ovozli xonalar", "Talabalar bilan suhbat va maruzalar"],
+      ["#/konsilium", ic('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.2-5.2 6.5-5.2s5.9 1.8 6.5 5.2M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.9c2 .6 3.2 2.2 3.5 5.1"/>'), "Konsilium", "Jonli suhbat, maruza va ekran ulashish"],
       ["#/fanlar", ic('<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>'), "Fanlar", "Barcha fanlar va mavzular"],
       ["#/reja", ic('<rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/>'), "Reja", "Haftalik o‘quv reja"],
       ["#/yutuqlar", ic('<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6v4H9z"/>'), "Yutuqlar", "Ballar, belgilar va natijalar"],
@@ -1746,6 +1746,12 @@
   /* ---------- Test markazi (js/tests.js) uchun ko'prik ---------- */
   const bridge = () => ({ store, esc, inline, plain, fold, svg, IC, ICX, chev, ring, sheet, toast, setChrome, emptyState, shuffle, view, $, loadJSON, refresh: () => route() });
 
+  /* Eski keshdan qolgan sahifada skript bo'lmasa, uni yuklab olish */
+  const needScript = (g, src) => window[g] ? Promise.resolve() : new Promise((res, rej) => {
+    const s = document.createElement("script"); s.src = src + "?v=" + Date.now();
+    s.onload = () => res(); s.onerror = () => rej(new Error("script")); document.head.appendChild(s);
+  });
+
   /* ---------- Yo'naltirgich (router) ---------- */
   async function route() {
     const [path, query] = location.hash.replace(/^#/, "").split("?");
@@ -1762,7 +1768,8 @@
       else if (p[0] === "fanlar") await pageFanlar();
       else if (p[0] === "assyst") { location.replace("#/testmarkazi"); return; }
       else if (p[0] === "profil") await window.ACC.page(bridge());
-      else if (p[0] === "xonalar" || p[0] === "xona") await window.ROOMS.page(bridge(), p, query);
+      else if (p[0] === "xonalar" || p[0] === "xona") { location.replace(p[1] ? "#/konsilium/" + p[1] + (query ? "?" + query : "") : "#/konsilium"); return; }
+      else if (p[0] === "konsilium") { await needScript("ROOMS", "js/rooms.js"); await window.ROOMS.page(bridge(), p, query); }
       else if (p[0] === "testmarkazi") await window.TM.page(bridge(), p, query);
       else if (p[0] === "reja") pageReja();
       else if (p[0] === "yutuqlar") await pageYutuq();
@@ -1778,7 +1785,9 @@
       else pageNotFound();
     } catch (e) {
       console.error(e);
-      view.innerHTML = emptyState(ICX.warn, "Ma'lumot yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang — keyin u oflayn ham ochiladi.");
+      view.innerHTML = p[0] === "konsilium"
+        ? emptyState(ICX.warn, "Konsilium ochilmadi", "Bu bo‘lim faqat internet bilan ishlaydi. Internetni tekshirib, qayta urinib ko‘ring.", `<button class="btn primary" onclick="location.reload()">Qayta urinish</button>`)
+        : emptyState(ICX.warn, "Ma'lumot yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang — keyin u oflayn ham ochiladi.");
     }
     clearTimeout(skT);
     const y = pendingScroll; pendingScroll = 0;

@@ -922,3 +922,42 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .rm-rep { padding: 10px; border-radius: 12px; background: var(--bg); }
 .rm-rep p { margin: 4px 0 0; }
 @media (min-width: 900px) { .rm-bar { bottom: 16px; } }
+
+/* Konsilium: yorliqlar, yozishma, ekran */
+.rm-tabs { margin: 0 0 12px; }
+.rm-unread { display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--accent); color: var(--on-accent); font-size: .7rem; margin-left: 4px; }
+.rm-body[data-tab="people"] .rm-chatpane { display: none; }
+.rm-body[data-tab="chat"] #rmPeople { display: none; }
+.rm-chatpane { display: flex; flex-direction: column; gap: 8px; }
+.rm-msgs { height: min(52vh, 460px); overflow: auto; display: grid; align-content: start; gap: 8px; padding: 10px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+.rm-msg { display: flex; gap: 8px; align-items: flex-end; max-width: 88%; }
+.rm-msg .rm-av { flex: none; font-size: .8rem; }
+.rm-msg.me { margin-left: auto; flex-direction: row-reverse; }
+.rm-bub { background: var(--surface-2); border-radius: 14px 14px 14px 4px; padding: 6px 10px; min-width: 0; }
+.rm-msg.me .rm-bub { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); border-radius: 14px 14px 4px 14px; }
+.rm-bub small { display: block; font-size: .7rem; color: var(--ink-2); }
+.rm-bub p { margin: 2px 0 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+.rm-send { display: flex; gap: 8px; }
+.rm-send input { flex: 1; min-width: 0; font: inherit; color: var(--ink); background: var(--surface); border: 1.5px solid var(--line); border-radius: 14px; padding: 11px 12px; }
+.rm-send input:focus { outline: none; border-color: var(--accent); }
+.rm-send .btn { display: grid; place-items: center; padding: 0 14px; }
+.rm-stage { margin: 0 0 12px; border-radius: 18px; overflow: hidden; background: #000; border: 1px solid var(--line); }
+.rm-stage-v { background: #000; display: grid; place-items: center; }
+.rm-stage-v video { width: 100%; max-height: 62vh; object-fit: contain; display: block; }
+.rm-stage-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 10px; background: var(--surface); }
+.rm-stage-bar .small { display: inline-flex; align-items: center; gap: 6px; }
+.rm-stage-acts { display: flex; gap: 6px; }
+.rm-stage-acts .btn { padding: 6px 10px; display: inline-flex; align-items: center; }
+.rm-badge.shield { top: -4px; left: -4px; color: var(--accent); }
+.rm-badge.scr { bottom: -2px; left: -2px; color: var(--accent); }
+.rm-shot { width: 100%; border-radius: 12px; border: 1px solid var(--line); margin: 6px 0; }
+.rm-terms { margin: 10px 0 0; max-height: 40vh; overflow: auto; }
+.rm-rep.auto { border-left: 3px solid var(--bad, #d33); }
+.rm-bar { flex-wrap: wrap; }
+@media (min-width: 900px) {
+  .rm-tabs { display: none; }
+  .rm-body { display: grid; grid-template-columns: 1fr 360px; gap: 16px; align-items: start; }
+  .rm-body[data-tab] .rm-chatpane, .rm-body[data-tab] #rmPeople { display: flex; }
+  .rm-body #rmPeople { display: block !important; }
+  .rm-msgs { height: 56vh; }
+}

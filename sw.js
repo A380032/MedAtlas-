@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v0.15.0";
+const VERSION = "v0.16.0";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -63,7 +63,19 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // Qolgan hamma narsa (dizayn, kod, shriftlar): avval xotiradan, fonda yangilanadi
+  // Sahifa, kod va dizayn: avval internetdan (eski-yangi fayllar aralashmasligi uchun), bo'lmasa xotiradan
+  const isCode = req.mode === "navigate" || /\.(js|css|html|webmanifest)$/.test(url.pathname) || url.pathname.endsWith("/");
+  if (isCode) {
+    e.respondWith(
+      fetch(req, { cache: "no-cache" }).then((res) => {
+        if (res && res.ok) { const copy = res.clone(); caches.open(RUNTIME).then((c) => c.put(req, copy)); }
+        return res;
+      }).catch(async () => (await caches.match(req)) || (req.mode === "navigate" ? caches.match("index.html") : undefined))
+    );
+    return;
+  }
+
+  // Rasmlar va shriftlar: avval xotiradan, fonda yangilanadi
   e.respondWith(
     caches.match(req).then((hit) => {
       const net = fetch(req).then((res) => {
@@ -72,7 +84,7 @@ self.addEventListener("fetch", (e) => {
           caches.open(RUNTIME).then((c) => c.put(req, copy));
         }
         return res;
-      }).catch(() => hit || (req.mode === "navigate" ? caches.match("index.html") : undefined));
+      }).catch(() => hit);
       return hit || net;
     })
   );
