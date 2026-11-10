@@ -520,7 +520,7 @@ main.wide { max-width: none; padding: 0; }
   .tabbar a[aria-current="page"] { background: color-mix(in srgb, var(--accent) 13%, transparent); }
   .tabbar a[data-soft] { background: none; color: var(--ink-2); font-weight: 500; }
   .tabbar a[data-tab="home"] { order: 1; } .tabbar a[data-tab="assyst"] { order: 2; } .tabbar a[data-tab="sim"] { order: 3; }
-  .tabbar a[data-tab="search"] { order: 4; } .tabbar .more-btn { order: 5; }
+  .tabbar a[data-tab="rooms"] { order: 4; } .tabbar .more-btn { order: 5; }
   .sim-frame { height: calc(100dvh - 56px - var(--safe-t)); }
   .pdf-frame { height: calc(100dvh - 56px - var(--safe-t) - 52px); }
   .toast { bottom: 28px; }
@@ -981,3 +981,23 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .rm-mini-b.danger { color: var(--bad, #d33); }
 .rm-pipv { position: fixed; width: 1px; height: 1px; opacity: 0; pointer-events: none; bottom: 0; left: 0; }
 @media (min-width: 900px) { .rm-mini { left: auto; right: 20px; bottom: 20px; width: 380px; } }
+
+.rm-hist { width: 100%; text-align: left; font: inherit; cursor: pointer; }
+.rm-trans { height: auto; max-height: 50vh; }
+
+/* Sozlamalar: ixcham profil */
+.acc-sec { margin-bottom: 14px; }
+.acc-sec .acc-me { margin: 0 0 10px; gap: 12px; }
+.acc-sec .acc-av { width: 54px; height: 54px; font-size: 1.3rem; }
+.acc-sec .acc-me h2 { font-size: 1.12rem; }
+.acc-sec .acc-card { padding: 10px 12px; }
+.acc-sync { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: .84rem; color: var(--ink-2); padding: 8px 0 0; border-top: 1px solid var(--line); }
+.acc-sync .btn { padding: 6px 12px; font-size: .82rem; }
+.acc-more { margin-top: 10px; }
+.acc-more summary { cursor: pointer; font-weight: 600; font-size: .9rem; color: var(--ink-2); list-style: none; }
+.acc-more summary::-webkit-details-marker { display: none; }
+.acc-more summary::after { content: " ›"; }
+.acc-more[open] summary::after { content: " ⌄"; }
+.acc-more .tm-acts { margin-top: 10px; }
+.acc-login h3 { margin: 0 0 4px; font-size: 1rem; }
+.acc-edit { margin-left: auto; flex: none; }

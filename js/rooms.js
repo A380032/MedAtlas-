@@ -85,7 +85,7 @@
   const head = (t) => `<div class="hello"><h2>Konsilium</h2><p class="muted">${t}</p></div>`;
   const needLogin = () => {
     A.view.innerHTML = head("Mavzu bo‘yicha jonli suhbat, maruza va ekran orqali tushuntirish.") +
-      A.emptyState(I.users, "Avval hisobga kiring", "Konsiliumga faqat hisobga kirgan foydalanuvchilar qo‘shila oladi. Bu xavfsizlik uchun kerak.", `<a class="btn primary" href="#/profil">Kirish</a>`);
+      A.emptyState(I.users, "Avval hisobga kiring", "Konsiliumga faqat hisobga kirgan foydalanuvchilar qo‘shila oladi. Bu xavfsizlik uchun kerak.", `<a class="btn primary" href="#/sozlamalar">Kirish</a>`);
   };
   const needNet = (retry) => {
     A.view.innerHTML = head("Bu bo‘lim faqat internet bilan ishlaydi.") +
@@ -109,8 +109,10 @@
     if (!c.user) return needLogin();
     A.view.innerHTML = head("Suhbatda hamma gapiradi. Maruzada tinglovchilar qo‘l ko‘tarib so‘z oladi. Ekran orqali tushuntirish va yozishma ham bor.") + `
       <div class="tm-acts rm-top"><button class="btn primary" id="rmNew">${ico(I.plus, 18)} Xona ochish</button><button class="btn" id="rmCode">${ico(I.key, 18)} Kod bilan kirish</button><span id="rmAdm" style="display:contents"></span></div>
-      <div id="rmList" class="rm-list"><p class="small muted">Yuklanmoqda…</p></div>`;
+      <div id="rmList" class="rm-list"><p class="small muted">Yuklanmoqda…</p></div>
+      <h3 class="group-label">Mening konsiliumlarim</h3><div id="rmHist" class="rm-list"><p class="small muted">Yuklanmoqda…</p></div>`;
     A.$("#rmNew").addEventListener("click", createSheet);
+    drawHistory();
     A.$("#rmCode").addEventListener("click", codeSheet);
     const draw = async () => {
       if (!(location.hash === BASE || location.hash.startsWith(BASE + "?"))) { clearInterval(listTimer); return; }
@@ -222,6 +224,62 @@
       inp.value = ""; load();
     });
     load();
+  }
+
+  /* ---------- Tarix: qaysi xonada qaysi mavzu muhokama qilingan ---------- */
+  const OY = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentyabr", "oktyabr", "noyabr", "dekabr"];
+  const fmtDay = (s) => {
+    const d = new Date(s); if (isNaN(d)) return "";
+    const p = (n) => String(n).padStart(2, "0");
+    return `${d.getDate()}-${OY[d.getMonth()]}${d.getFullYear() !== new Date().getFullYear() ? " " + d.getFullYear() : ""}, ${p(d.getHours())}:${p(d.getMinutes())}`;
+  };
+  async function drawHistory() {
+    const el = A.$("#rmHist"); if (!el) return;
+    let j;
+    try { j = await call({ action: "history" }); } catch (e) { el.innerHTML = `<p class="small muted">${esc(e.message)}</p>`; return; }
+    const box = A.$("#rmHist"); if (!box) return;
+    const rs = j.rooms || [];
+    box.innerHTML = rs.length ? rs.map((r) => `<button class="rm-card rm-hist" type="button" data-h="${esc(r.id)}">
+        <span class="rm-ico ${r.mode}">${ico(r.mode === "maruza" ? I.wave : I.users, 20)}</span>
+        <span class="rm-txt"><b>${esc(r.title)}</b>${r.topic ? `<small>${esc(r.topic)}</small>` : ""}
+          <small class="muted">${fmtDay(r.last_at)} · ${esc(r.owner_name || "—")}${r.messages ? ` · ${r.messages} ta xabar` : ""}</small></span>
+        <span class="rm-cnt${r.ended_at ? "" : " on"}">${r.ended_at ? "yopilgan" : "faol"}</span></button>`).join("")
+      : `<p class="small muted">Hali birorta xonada qatnashmagansiz. Qatnashgan xonalaringiz va ularning mavzulari shu yerda saqlanadi.</p>`;
+    box.querySelectorAll("[data-h]").forEach((b) => b.addEventListener("click", () => transcriptSheet(rs.find((r) => r.id === b.dataset.h))));
+  }
+  async function transcriptSheet(r) {
+    if (!r) return;
+    const sh = A.sheet(`<h3>${esc(r.title)}</h3>
+      ${r.topic ? `<p class="muted small" style="margin:0">${esc(r.topic)}</p>` : ""}
+      <p class="small muted" style="margin:4px 0 8px">${r.mode === "maruza" ? "Maruza" : "Suhbat"} · ochgan: ${esc(r.owner_name || "—")} · ${fmtDay(r.created_at)}${r.ended_at ? " · yopilgan: " + fmtDay(r.ended_at) : ""}</p>
+      <div class="rm-msgs rm-trans" id="trBox"><p class="small muted">Yozishma yuklanmoqda…</p></div>
+      <div class="acts">${!r.ended_at ? `<a class="btn primary" href="${BASE}/${esc(r.id)}" data-x="close">Xonaga kirish</a>` : ""}<button class="btn" data-x="close">Yopish</button></div>`);
+    try {
+      const j = await call({ action: "transcript", room_id: r.id });
+      const t = (s) => { const d = new Date(s); return isNaN(d) ? "" : String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0"); };
+      sh.el.querySelector("#trBox").innerHTML = (j.messages || []).length
+        ? j.messages.map((m) => `<div class="rm-msg"><div class="rm-bub"><small>${esc(m.name)} · ${t(m.at)}</small><p>${esc(m.text)}</p></div></div>`).join("")
+        : `<p class="small muted" style="text-align:center;margin:14px 0">Bu xonada yozishma bo‘lmagan (faqat ovozli suhbat).</p>`;
+    } catch (e) { sh.el.querySelector("#trBox").innerHTML = `<p class="small muted">${esc(e.message)}</p>`; }
+  }
+
+  /* Chiqishda: oxirgi odam yoki xona egasi xonani yopib keta oladi */
+  function leaveFlow() {
+    if (!cur) return;
+    const c = cur, alone = c.lk.remoteParticipants.size === 0, owner = iAmOwner();
+    const goList = () => { if (location.hash.startsWith(BASE + "/")) location.hash = BASE; };
+    if (!alone && !owner) { leave(); goList(); return; }
+    const sh = A.sheet(`<h3>Xonadan chiqish</h3>
+      <p class="muted small" style="margin:0">${alone ? "Xonada sizdan boshqa hech kim qolmadi. Xonani yopib ketsangiz, u ro‘yxatdan o‘chadi va yangi xona ochishingiz mumkin bo‘ladi." : "Siz xona egasisiz. Xonani yopsangiz, hamma chiqariladi."}</p>
+      <p class="small muted" style="margin:6px 0 0">Ochiq qoldirilsa, bo‘sh xona 10 daqiqadan keyin o‘zi yopiladi.</p>
+      <div class="acts" style="flex-direction:column"><button class="btn danger" id="lvEnd">Xonani yopib chiqish</button><button class="btn" id="lvKeep">Ochiq qoldirib chiqish</button><button class="btn" data-x="close">Bekor qilish</button></div>`);
+    sh.el.querySelector("#lvKeep").addEventListener("click", () => { sh.close(); leave(); goList(); });
+    sh.el.querySelector("#lvEnd").addEventListener("click", async (e) => {
+      e.target.disabled = true;
+      const id = c.info.room.id;
+      try { await call({ action: "mod", room_id: id, op: "end" }); sh.close(); leave(true); A.toast("Xona yopildi"); goList(); }
+      catch (err) { e.target.disabled = false; A.toast(err.message); }
+    });
   }
 
   /* ---------- Xona ---------- */
@@ -470,7 +528,7 @@
         inp.disabled = false; inp.focus();
       });
     }
-    const t = (s) => { const d = new Date(s); return isNaN(d) ? "" : d.toLocaleTimeString("uz", { hour: "2-digit", minute: "2-digit" }); };
+    const t = (s) => { const d = new Date(s); return isNaN(d) ? "" : String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0"); };
     box.innerHTML = cur.msgs.length ? cur.msgs.map((m) => {
       const p = profCache.get(m.uid) || {}, mine = m.uid === myId;
       const tag = m.uid === cur.info.room.owner ? " · egasi" : (cur.mods.includes(m.uid) || cur.admins.includes(m.uid)) ? " · moderator" : "";
@@ -565,7 +623,7 @@
       const txt = `ALVORA Med Konsilium: “${info.room.title}”. Kod: ${info.room.code}\n${location.origin}${location.pathname}${BASE}/${info.room.id}?code=${info.room.code}`;
       try { if (navigator.share) await navigator.share({ text: txt }); else { await navigator.clipboard.writeText(txt); A.toast("Taklif nusxalandi"); } } catch { /* */ }
     });
-    $("#rmLeave").addEventListener("click", () => { leave(); location.hash = BASE; });
+    $("#rmLeave").addEventListener("click", leaveFlow);
     $("#rmEnd")?.addEventListener("click", () => {
       const sh = A.sheet(`<h3>Xona yopilsinmi?</h3><p class="muted small" style="margin:0">Hamma xonadan chiqariladi va xona ro‘yxatdan o‘chadi.</p>
         <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn danger" id="eYes">Ha, yopish</button></div>`);
@@ -606,7 +664,7 @@
       <button class="rm-mini-b danger" id="rmMiniOut" aria-label="Chiqish">${ico(I.leave, 20)}</button>`;
     el.querySelector("#rmMiniMic")?.addEventListener("click", toggleMic);
     el.querySelector("#rmMiniPip")?.addEventListener("click", () => (cur.float ? closeFloat(cur) : openFloat()));
-    el.querySelector("#rmMiniOut").addEventListener("click", () => leave());
+    el.querySelector("#rmMiniOut").addEventListener("click", leaveFlow);
   }
 
   /* ---------- Suzuvchi oyna (boshqa oynalar ustida) ---------- */

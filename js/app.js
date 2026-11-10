@@ -169,7 +169,7 @@
 
   /* ---------- Sahifalar ---------- */
   const navLinks = [...document.querySelectorAll(".tabbar a")];
-  const setBtn = $("#setBtn"), accBtn = $("#accBtn");
+  const srchBtn = $("#srchBtn"), accBtn = $("#accBtn");
   function setChrome(title, back, tab, opt = {}) {
     view.classList.remove("wide");
     titleEl.textContent = title;
@@ -177,7 +177,7 @@
     document.title = opt.home ? "ALVORA Med" : title + " · ALVORA Med";
     backBtn.hidden = !back;
     $("#rdSearch").hidden = !(tab === "fanlar" && back);
-    setBtn.hidden = !opt.home;
+    srchBtn.hidden = tab === "search" || (tab === "fanlar" && !!back);
     accBtn.hidden = !opt.home;
     navLinks.forEach((a) => {
       a.removeAttribute("aria-current"); a.removeAttribute("data-soft");
@@ -185,7 +185,7 @@
       else if (tab === "fanlar" && a.dataset.tab === "home") a.dataset.soft = "1";
     });
     const mb = $("#moreBtn");
-    if (mb) { if (["lib", "saved", "sozlamalar", "yutuq", "reja", "rooms"].includes(tab)) mb.setAttribute("aria-current", "page"); else mb.removeAttribute("aria-current"); }
+    if (mb) { if (["lib", "saved", "sozlamalar", "yutuq", "reja", "search"].includes(tab)) mb.setAttribute("aria-current", "page"); else mb.removeAttribute("aria-current"); }
   }
 
   async function courseStats(course) {
@@ -294,13 +294,14 @@
     setChrome("Sozlamalar", true, "sozlamalar");
     const th = store.get("theme", null);
     view.innerHTML = `<div class="hello"><h2>Sozlamalar</h2></div>
+      <section class="settings acc-sec" id="accBox"><p class="small muted" style="margin:0">Hisob yuklanmoqda…</p></section>
       <section class="settings">
         <div class="setting-col"><span>Ko'rinish</span>
           <div class="seg flat" role="group" style="margin:8px 0 0">
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.17.0</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.18.0</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -308,6 +309,8 @@
       view.querySelectorAll("[data-th]").forEach((x) => x.setAttribute("aria-selected", x === b));
     }));
     $("#installBtn").addEventListener("click", installHelp);
+    const box = $("#accBox");
+    window.ACC.page({ ...bridge(), view: box, setChrome: () => {}, compact: true }).catch(() => { box.innerHTML = `<p class="small muted" style="margin:0">Hisob ma’lumoti yuklanmadi</p>`; });
   }
 
   async function pageSubject(sid) {
@@ -1184,7 +1187,7 @@
     store.set("theme", cur === "dark" ? "light" : "dark");
     applyPrefs();
   });
-  setBtn.addEventListener("click", () => { location.hash = "#/sozlamalar"; });
+  srchBtn.addEventListener("click", () => { location.hash = "#/qidiruv"; setTimeout(() => $("#q")?.focus(), 200); });
   document.addEventListener("keydown", (e) => {
     if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName)) { e.preventDefault(); location.hash = "#/qidiruv"; setTimeout(() => $("#q")?.focus(), 150); }
   });
@@ -1245,14 +1248,13 @@
     const acc = window.ACC?.me?.() || {};
     const accIco = acc.photo ? `<img src="${esc(acc.photo)}" alt="" referrerpolicy="no-referrer">` : ic('<circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.4 7-5.4s6.2 1.8 7 5.4"/>');
     const items = [
-      ["#/profil", accIco, acc.name || "Profil", acc.name ? "Hisobim" : "Kirish va bulutga saqlash"],
-      ["#/konsilium", ic('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.2-5.2 6.5-5.2s5.9 1.8 6.5 5.2M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.9c2 .6 3.2 2.2 3.5 5.1"/>'), "Konsilium", "Jonli suhbat, maruza va ekran ulashish"],
+      ["#/sozlamalar", accIco, "Sozlamalar", acc.name ? acc.name + " · profil va ko‘rinish" : "Profil, kirish va ko‘rinish"],
       ["#/fanlar", ic('<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>'), "Fanlar", "Barcha fanlar va mavzular"],
       ["#/reja", ic('<rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/>'), "Reja", "Haftalik o‘quv reja"],
       ["#/yutuqlar", ic('<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6v4H9z"/>'), "Yutuqlar", "Ballar, belgilar va natijalar"],
       ["#/kutubxona", ic('<path d="M4 4h4v16H4zM9 4h4v16H9zM14.5 5.5l3.8-1 3.2 14.8-3.8 1z"/>'), "Kutubxona", "Kitoblar va qo‘llanmalar"],
       ["#/saqlangan", ic('<path d="M7 3h10v18l-5-4-5 4z"/>'), "Saqlangan", "Belgilar va saqlanganlar"],
-      ["#/sozlamalar", ic('<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/>'), "Sozlamalar", "Ko‘rinish va ilova haqida"]
+      ["#/qidiruv", ic('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>'), "Qidiruv", "Atamalar lug‘ati va kitoblarda qidirish"]
     ];
     moreBtn.setAttribute("aria-expanded", "true");
     const sh = sheet(`<h3>Menyu</h3><div class="more-list">${items.map(([h, i, t, d]) => `<a href="${h}" data-x="close"><span class="mi">${i}</span><span>${esc(t)}<small>${esc(d)}</small></span></a>`).join("")}</div>`);
@@ -1767,7 +1769,7 @@
       else if (p[0] === "fan" && p.length === 3) await pageTopic(p[1], p[2], query);
       else if (p[0] === "fanlar") await pageFanlar();
       else if (p[0] === "assyst") { location.replace("#/testmarkazi"); return; }
-      else if (p[0] === "profil") await window.ACC.page(bridge());
+      else if (p[0] === "profil") { location.replace("#/sozlamalar"); return; }
       else if (p[0] === "xonalar" || p[0] === "xona") { location.replace(p[1] ? "#/konsilium/" + p[1] + (query ? "?" + query : "") : "#/konsilium"); return; }
       else if (p[0] === "konsilium") { await needScript("ROOMS", "js/rooms.js"); await window.ROOMS.page(bridge(), p, query); }
       else if (p[0] === "testmarkazi") await window.TM.page(bridge(), p, query);

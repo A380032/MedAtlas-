@@ -221,6 +221,7 @@ Deno.serve(async (req) => {
         return json({ error: "Xona 10 daqiqa bo'sh turgani uchun yopilgan" }, 404);
       }
       await admin.from("rooms").update({ last_seen: new Date().toISOString() }).eq("id", room.id);
+      await admin.from("room_visits").upsert({ room_id: room.id, user_id: me.id, last_at: new Date().toISOString() }, { onConflict: "room_id,user_id" });
       if (cnt >= max && !isOwner && !isAdmin) return json({ error: "Xona to'lgan" }, 409);
       const mods = await modsOf(room.id);
       const isMod = mods.includes(me.id);
@@ -245,6 +246,41 @@ Deno.serve(async (req) => {
         mods, admins: [...adminIds],
         history: (hist || []).reverse().map((m) => ({ id: m.id, uid: m.user_id, text: m.body, at: m.created_at })),
       });
+    }
+
+    if (action === "history") {
+      const { data: vis } = await admin.from("room_visits").select("room_id,first_at,last_at").eq("user_id", me.id).order("last_at", { ascending: false }).limit(60);
+      const ids = (vis || []).map((v) => v.room_id);
+      if (!ids.length) return json({ rooms: [] });
+      const { data: rs } = await admin.from("rooms").select("id,owner,title,topic,mode,kind,created_at,ended_at").in("id", ids);
+      const owners = [...new Set((rs || []).map((r) => r.owner))];
+      const { data: profs } = owners.length ? await admin.from("profiles").select("id,name").in("id", owners) : { data: [] };
+      const pn: Record<string, string> = {}; for (const p of profs || []) pn[p.id] = p.name || "";
+      const by: Record<string, any> = {}; for (const r of rs || []) by[r.id] = r;
+      const counts: Record<string, number> = {};
+      await Promise.all(ids.map(async (id) => {
+        const { count } = await admin.from("room_messages").select("id", { count: "exact", head: true }).eq("room_id", id);
+        counts[id] = count || 0;
+      }));
+      return json({
+        rooms: (vis || []).filter((v) => by[v.room_id]).map((v) => {
+          const r = by[v.room_id];
+          return { id: r.id, title: r.title, topic: r.topic, mode: r.mode, kind: r.kind, owner_name: pn[r.owner] || "", mine: r.owner === me.id,
+            created_at: r.created_at, ended_at: r.ended_at, last_at: v.last_at, messages: counts[r.id] || 0 };
+        }),
+      });
+    }
+
+    if (action === "transcript") {
+      const room = await getRoom(body.room_id);
+      if (!room) return json({ error: "Xona topilmadi" }, 404);
+      const { data: v } = await admin.from("room_visits").select("room_id").eq("room_id", room.id).eq("user_id", me.id).maybeSingle();
+      if (!v && !isAdmin) return json({ error: "Bu xonada qatnashmagansiz" }, 403);
+      const { data: msgs } = await admin.from("room_messages").select("id,user_id,body,created_at").eq("room_id", room.id).order("id", { ascending: true }).limit(500);
+      const uids = [...new Set((msgs || []).map((m) => m.user_id))];
+      const { data: profs } = uids.length ? await admin.from("profiles").select("id,name").in("id", uids) : { data: [] };
+      const pn: Record<string, string> = {}; for (const p of profs || []) pn[p.id] = p.name || "Foydalanuvchi";
+      return json({ messages: (msgs || []).map((m) => ({ id: m.id, uid: m.user_id, name: pn[m.user_id] || "Foydalanuvchi", text: m.body, at: m.created_at })) });
     }
 
     if (action === "say") {
@@ -291,14 +327,25 @@ Deno.serve(async (req) => {
       const isOwner = room.owner === me.id;
       const mods = await modsOf(room.id);
       const isMod = mods.includes(me.id);
-      if (!isOwner && !isAdmin && !isMod) return json({ error: "Ruxsat yo'q" }, 403);
       const op = String(body.op || "");
       if (op === "end") {
-        if (!isOwner && !isAdmin) return json({ error: "Faqat xona egasi yopa oladi" }, 403);
+        if (!isOwner && !isAdmin) {
+          // xonada yolg'iz qolgan oxirgi odam ham yopib keta oladi
+          let alone = false;
+          const { data: vis } = await admin.from("room_visits").select("room_id").eq("room_id", room.id).eq("user_id", me.id).maybeSingle();
+          if (!vis) return json({ error: "Ruxsat yo'q" }, 403);
+          try {
+            const lp = await lk("ListParticipants", { room: room.id }, roomG(room.id));
+            const ps = lp.participants || [];
+            alone = ps.length <= 1 && ps.every((p: { identity: string }) => p.identity === me.id);
+          } catch { alone = true; }
+          if (!alone) return json({ error: "Xonada boshqalar bor. Faqat xona egasi yopa oladi" }, 403);
+        }
         await admin.from("rooms").update({ ended_at: new Date().toISOString() }).eq("id", room.id);
         try { await lk("DeleteRoom", { room: room.id }, { roomCreate: true }); } catch { /* */ }
         return json({ ok: true });
       }
+      if (!isOwner && !isAdmin && !isMod) return json({ error: "Ruxsat yo'q" }, 403);
       const target = String(body.target || "");
       if (!UUID.test(target)) return json({ error: "target" }, 400);
       if (target === me.id) return json({ error: "O'zingizga qo'llab bo'lmaydi" }, 400);

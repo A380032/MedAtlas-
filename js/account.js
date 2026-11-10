@@ -34,7 +34,7 @@
           paintBtn();
           if (user && user.id !== was) { pull(); loadPhoto(); }
           if (!user && was) { setPhoto(""); setProf({}); ls.del("tqsync:last"); ls.del("tqsync:dirty"); ls.del("tqsync:at"); }
-          if ((location.hash || "").startsWith("#/profil")) A?.refresh?.();
+          if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A?.refresh?.();
         }, 0);
       });
       const { data } = await sb.auth.getSession();
@@ -60,7 +60,7 @@
       const d = r.data, before = JSON.stringify([photo(), prof()]);
       setPhoto(d.photo || "");
       setProf({ name: d.name || "", faculty: d.faculty || "", course: d.course || "", role: d.role || "", note: d.role_note || "" });
-      if (before !== JSON.stringify([photo(), prof()])) { paintBtn(); if ((location.hash || "").startsWith("#/profil")) A?.refresh?.(); }
+      if (before !== JSON.stringify([photo(), prof()])) { paintBtn(); if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A?.refresh?.(); }
     } catch { /* oflayn */ }
   }
   function paintBtn() {
@@ -193,7 +193,7 @@
   async function googleLogin() {
     try {
       const c = await client();
-      const { error } = await c.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname + "#/profil" } });
+      const { error } = await c.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname + "#/sozlamalar" } });
       if (error) throw error;
     } catch (e) { A.toast("Google bilan kirib bo‘lmadi. Internetni tekshiring"); console.warn(e); }
   }
@@ -237,15 +237,13 @@
     const online = navigator.onLine;
     if (hasStoredSession() || user) { try { await client(); } catch { /* oflayn */ } }
     if (user) return pageIn();
-    A.view.innerHTML = `<div class="hello"><h2>Kirish</h2><p class="muted">Hisobga kirsangiz, reja, yutuqlar va test natijalaringiz bulutga saqlanadi va boshqa telefonda ham ko‘rinadi.</p></div>
-      <div class="acc-card">
+    A.view.innerHTML = `<div class="acc-login"><h3>Hisobga kirish</h3>
+        <p class="small muted" style="margin:0 0 10px">Kirsangiz, reja, yutuqlar va test natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi. Konsilium ham faqat hisob bilan ishlaydi.</p>
         ${online ? `<button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
         <div class="acc-or"><span>yoki</span></div>
-        <div id="tgBox" class="acc-tg"><small class="muted">Telegram tugmasi yuklanmoqda…</small></div>
-        <p class="small muted" style="margin:10px 0 0">Telefon raqami bilan kirish tez orada qo‘shiladi.</p>`
-        : A.emptyState(A.ICX.warn, "Internet kerak", "Kirish uchun internetga ulaning. Qolgan bo‘limlar internetsiz ishlayveradi.")}
-      </div>
-      <p class="small muted" style="margin:14px 2px">Kirmasdan ham ilova avvalgidek ishlaydi. <a href="#" id="pvLink">Maxfiylik</a></p>`;
+        <div id="tgBox" class="acc-tg"><small class="muted">Telegram tugmasi yuklanmoqda…</small></div>`
+        : `<p class="small muted" style="margin:0">Kirish uchun internetga ulaning. Qolgan bo‘limlar internetsiz ishlayveradi.</p>`}
+        <p class="small muted" style="margin:10px 0 0">Kirmasdan ham ilova avvalgidek ishlaydi. <a href="#" id="pvLink">Maxfiylik</a></p></div>`;
     A.$("#pvLink")?.addEventListener("click", (e) => { e.preventDefault(); privacy(); });
     if (online) {
       A.$("#gBtn").addEventListener("click", googleLogin);
@@ -339,19 +337,17 @@
     A.view.innerHTML = `<div class="acc-me">
         <button class="acc-av acc-av-btn" id="avBtn" type="button" aria-label="Profil rasmini o‘zgartirish">${avatarSrc() ? `<img src="${esc(avatarSrc())}" alt="" referrerpolicy="no-referrer">` : esc(name[0] || "?").toUpperCase()}<span class="acc-cam" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2.5h6L17 8h3v11H4zM12 16a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z"/></svg></span></button>
         <input type="file" id="avFile" accept="image/*" hidden>
-        <div><h2 style="margin:0">${esc(name)}</h2><p class="muted small" style="margin:2px 0 0">${prov}${sub ? " · " + esc(sub) : ""}</p>
-          ${(pf.role || pf.faculty || pf.course) ? `<div class="acc-info">${pf.role ? `<span>${esc(pf.role === "talaba" ? "Talaba" : pf.role === "oqituvchi" ? "O‘qituvchi" : (pf.note || "Boshqa"))}</span>` : ""}${pf.faculty ? `<span>${esc(pf.faculty)}</span>` : ""}${pf.course ? `<span>${esc(pf.course)}</span>` : ""}</div>` : ""}</div></div>
-      <div class="acc-card">
-        <div class="setting-row" style="border:0;padding-top:0"><span><b>Bulutga saqlash</b><br><small class="muted" id="accSync"></small></span><button class="btn" id="syncNow">Hozir saqlash</button></div>
-        <p class="small muted" style="margin:0">Reja, yutuqlar, ballar, test natijalari va belgilar avtomatik saqlanadi. Boshqa telefonda shu hisobga kirsangiz, hammasi shu yerda bo‘ladi.</p>
-      </div>
-      <div class="tm-acts" style="margin-top:14px">
-        <button class="btn" id="editBtn">Profilni tahrirlash</button>
-        <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
-        ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
-        <button class="btn" id="outBtn">Chiqish</button>
-        <button class="btn" id="pvBtn">Maxfiylik</button>
-        <button class="btn danger" id="delBtn">Akkauntni o‘chirish</button></div>`;
+        <div style="min-width:0"><h2 style="margin:0">${esc(name)}</h2><p class="muted small" style="margin:2px 0 0">${prov}${sub ? " · " + esc(sub) : ""}</p>
+          ${(pf.role || pf.faculty || pf.course) ? `<div class="acc-info">${pf.role ? `<span>${esc(pf.role === "talaba" ? "Talaba" : pf.role === "oqituvchi" ? "O‘qituvchi" : (pf.note || "Boshqa"))}</span>` : ""}${pf.faculty ? `<span>${esc(pf.faculty)}</span>` : ""}${pf.course ? `<span>${esc(pf.course)}</span>` : ""}</div>` : ""}</div>
+        <button class="btn acc-edit" id="editBtn">Tahrirlash</button></div>
+      <div class="acc-sync"><span>Bulutga saqlash · <span id="accSync"></span></span><button class="btn" id="syncNow">Saqlash</button></div>
+      <details class="acc-more"><summary>Hisob sozlamalari</summary>
+        <div class="tm-acts">
+          <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
+          ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
+          <button class="btn" id="pvBtn">Maxfiylik</button>
+          <button class="btn" id="outBtn">Chiqish</button>
+          <button class="btn danger" id="delBtn">Akkauntni o‘chirish</button></div></details>`;
     paintStatus();
     A.$("#syncNow").addEventListener("click", async () => { A.toast("Saqlanmoqda…"); ls.set("tqsync:dirty", "1"); await pull(); await push(); paintStatus(); A.toast("Saqlandi"); });
     const pick = () => A.$("#avFile").click();
@@ -399,7 +395,7 @@
   function boot(api) {
     A = api;
     paintBtn();
-    document.getElementById("accBtn")?.addEventListener("click", () => { location.hash = "#/profil"; });
+    document.getElementById("accBtn")?.addEventListener("click", () => { location.hash = "#/sozlamalar"; });
     if (hasStoredSession() || /[?&]code=/.test(location.search)) client().then(() => { paintBtn(); if (user) { pull(); loadPhoto(); } }).catch(() => {});
     window.addEventListener("online", () => { if (user) { pull(); } });
     document.addEventListener("visibilitychange", () => { if (!document.hidden && user) pull(); });
