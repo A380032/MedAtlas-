@@ -404,5 +404,5 @@
     window.addEventListener("online", () => { if (user) { pull(); } });
     document.addEventListener("visibilitychange", () => { if (!document.hidden && user) pull(); });
   }
-  window.ACC = { boot, page, touch, privacy, me: () => (user ? { name: displayName(), photo: avatarSrc() } : null), _t: { mergeKey, cropper, editProfile } };
+  window.ACC = { boot, page, touch, privacy, ctx: async () => { if (hasStoredSession() || user) { try { await client(); } catch { /* oflayn */ } } return { sb, user, url: URL_, key: KEY }; }, me: () => (user ? { name: displayName(), photo: avatarSrc() } : null), _t: { mergeKey, cropper, editProfile } };
 })();

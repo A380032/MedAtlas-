@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v0.14.1";
+const VERSION = "v0.15.0";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -11,6 +11,7 @@ const SHELL_FILES = [
   "js/app.js",
   "js/tests.js",
   "js/account.js",
+  "js/rooms.js",
   "vendor/supabase.min.js",
   "manifest.webmanifest",
   "data/precache.json",
