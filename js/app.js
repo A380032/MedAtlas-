@@ -300,7 +300,7 @@
           <span style="display:flex;flex-direction:column;gap:6px"><button class="btn" id="bkSave">Saqlash</button><button class="btn" id="bkLoad">Tiklash</button></span></div>
         <input type="file" id="bkFile" accept="application/json,.json" hidden>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.13.0 · offline ishlaydi</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.13.1 · offline ishlaydi</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);

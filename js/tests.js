@@ -42,7 +42,8 @@
     for (const e of idx) {
       try { banks.push(prep(await A.loadJSON("data/tests/" + e.id + ".json"), false)); } catch { /* yuklanmadi */ }
     }
-    for (const u of store.get("user", [])) banks.push(prep(u, true));
+    const gone = store.get("udel", []);
+    for (const u of store.get("user", [])) if (!gone.includes(u.id)) banks.push(prep(u, true));
     ctx = { banks, by: Object.fromEntries(banks.map((b) => [b.id, b])) };
     return ctx;
   }
@@ -143,6 +144,14 @@
     return bs.find((b) => b.id === id) || bs.find((b) => !b.user) || bs[0];
   };
 
+  function delUser(id) {
+    store.set("user", store.get("user", []).filter((x) => x.id !== id));
+    const g = store.get("udel", []); if (!g.includes(id)) { g.push(id); store.set("udel", g); }
+    store.set("st:" + id, {});
+    if (store.get("bank", "") === id) store.set("bank", "");
+    dropCtx();
+  }
+
   async function pageHome() {
     A.setChrome("Test markazi", false, "assyst");
     await loadBanks();
@@ -176,6 +185,7 @@
         ${A.ring(pct(s.ok, s.total), 62)}
         <div class="tm-bank-t"><b>${esc(b.title)}</b>
           <small>${s.total} ta savol · ishlangan ${s.ans} · to‘g‘ri ${s.ok}${s.ans ? ` (${pct(s.ok, s.ans)}%)` : ""}</small></div>
+        ${b.user ? `<button class="btn danger" id="delBank" style="margin-left:auto">O‘chirish</button>` : ""}
       </div>
       ${bs.length > 1 ? `<div class="chips tm-banks">${bs.map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title)}</button>`).join("")}</div>` : ""}
       <div class="tm-modes">${modes.map(([id, t, d]) => `<a class="tm-mode" href="${BASE}/${id}"><span class="tm-ico">${A.svg(ico[id], 26)}</span><span><b>${t}</b><small>${d}</small></span>${A.chev || ""}</a>`).join("")}</div>
@@ -193,6 +203,10 @@
         <a class="tm-mode" href="${BASE}/qoshish"><span class="tm-ico">${A.svg(ico.plus, 24)}</span><span><b>O‘z testim</b><small>Matn yoki fayldan qo‘shish</small></span></a>
       </div>`;
     A.view.querySelectorAll("[data-bank]").forEach((x) => x.addEventListener("click", () => { store.set("bank", x.dataset.bank); pageHome(); }));
+    A.$("#delBank")?.addEventListener("click", () => {
+      if (!confirm("“" + b.title + "” testi o‘chirilsinmi? Natijalar ham o‘chadi.")) return;
+      delUser(b.id); A.toast("Test o‘chirildi"); pageHome();
+    });
   }
 
   /* ---------- Mavzular ro'yxati ---------- */
@@ -666,8 +680,7 @@ Qoidalar: har savol "?" bilan boshlansin; to'g'ri javob "+", xato javob "-" bila
     });
     A.view.querySelectorAll("[data-del]").forEach((b) => b.addEventListener("click", () => {
       if (!confirm("Bu test o‘chirilsinmi? Natijalar ham o‘chadi.")) return;
-      store.set("user", store.get("user", []).filter((x) => x.id !== b.dataset.del));
-      store.set("st:" + b.dataset.del, {}); dropCtx(); pageAdd();
+      delUser(b.dataset.del); pageAdd();
     }));
     A.view.querySelectorAll("[data-ex]").forEach((b) => b.addEventListener("click", () => {
       const u = users.find((x) => x.id === b.dataset.ex);
