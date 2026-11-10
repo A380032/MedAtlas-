@@ -1,5 +1,5 @@
 /* Akkaunt (Google / Telegram) va ma'lumotlarni bulutga saqlash — Supabase.
-   Kirmagan foydalanuvchi uchun ilova avvalgidek ishlaydi; bu modul faqat kirilganda ishga tushadi. */
+   v1.0 dan boshlab ilovadan foydalanish uchun hisobga kirish majburiy (kirish ekrani: gate). */
 (() => {
   "use strict";
   const URL_ = "https://tcyskjcdxgppdqnlkucc.supabase.co";
@@ -34,7 +34,10 @@
           paintBtn();
           if (user && user.id !== was) { pull(); loadPhoto(); }
           if (!user && was) { setPhoto(""); setProf({}); ls.del("tqsync:last"); ls.del("tqsync:dirty"); ls.del("tqsync:at"); }
-          if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A?.refresh?.();
+          if (user && user.id !== was) { touchDevice(true); checkAdmin(); }
+          const gated = document.body.classList.contains("gated");
+          if ((user && gated) || (!user && was)) A?.refresh?.();
+          else if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A?.refresh?.();
         }, 0);
       });
       const { data } = await sb.auth.getSession();
@@ -193,7 +196,7 @@
   async function googleLogin() {
     try {
       const c = await client();
-      const { error } = await c.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname + "#/sozlamalar" } });
+      const { error } = await c.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname + "#/" } });
       if (error) throw error;
     } catch (e) { A.toast("Google bilan kirib bo‘lmadi. Internetni tekshiring"); console.warn(e); }
   }
@@ -225,7 +228,9 @@
   function privacy() {
     A.sheet(`<h3>Maxfiylik</h3>
       <p class="small" style="margin:0 0 8px">Hisobga kirganingizda quyidagilar saqlanadi: ismingiz, profil rasmingiz (Google yoki Telegramdan), Telegram username va ilovadagi natijalaringiz (reja, yutuqlar, ballar, test natijalari, belgilar).</p>
-      <p class="small" style="margin:0 0 8px">Telegram orqali kirganda telefon raqamingiz olinmaydi. Ma’lumotlaringiz boshqa foydalanuvchilarga ko‘rsatilmaydi va sotilmaydi.</p>
+      <p class="small" style="margin:0 0 8px">Telegram orqali kirganda telefon raqamingiz olinmaydi. O‘quv natijalaringizni faqat o‘zingiz ko‘rasiz. Konsiliumda esa xonadagilarga ismingiz, rasmingiz, fakultet va kursingiz ko‘rinadi. Ma’lumotlar sotilmaydi.</p>
+      <p class="small" style="margin:0 0 8px">Foydalanuvchilar sonini hisoblash uchun qurilmangiz noma’lum raqam bilan (platforma, brauzer, ilova versiyasi) sanaladi.</p>
+      <p class="small" style="margin:0 0 8px"><a href="privacy.html" target="_blank" rel="noopener">To‘liq maxfiylik siyosati</a></p>
       <p class="small" style="margin:0">“Akkauntni o‘chirish” tugmasi hisobingizni va bulutdagi barcha ma’lumotlaringizni butunlay o‘chiradi. Telefondagi nusxa saqlanib qoladi.</p>
       <div class="acts"><button class="btn primary" data-x="close">Tushunarli</button></div>`);
   }
@@ -242,8 +247,8 @@
         ${online ? `<button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
         <div class="acc-or"><span>yoki</span></div>
         <div id="tgBox" class="acc-tg"><small class="muted">Telegram tugmasi yuklanmoqda…</small></div>`
-        : `<p class="small muted" style="margin:0">Kirish uchun internetga ulaning. Qolgan bo‘limlar internetsiz ishlayveradi.</p>`}
-        <p class="small muted" style="margin:10px 0 0">Kirmasdan ham ilova avvalgidek ishlaydi. <a href="#" id="pvLink">Maxfiylik</a></p></div>`;
+        : `<p class="small muted" style="margin:0">Kirish uchun internetga ulaning.</p>`}
+        <p class="small muted" style="margin:10px 0 0"><a href="#" id="pvLink">Maxfiylik</a></p></div>`;
     A.$("#pvLink")?.addEventListener("click", (e) => { e.preventDefault(); privacy(); });
     if (online) {
       A.$("#gBtn").addEventListener("click", googleLogin);
@@ -332,7 +337,7 @@
   function pageIn() {
     const m = user.user_metadata || {};
     const name = displayName(), pf = prof();
-    const prov = user.app_metadata?.provider === "telegram" ? "Telegram" : user.app_metadata?.provider === "google" ? "Google" : "Hisob";
+    const prov = (m.telegram_id || user.app_metadata?.provider === "telegram") ? "Telegram" : user.app_metadata?.provider === "google" ? "Google" : "Hisob";
     const sub = m.telegram_username ? "@" + m.telegram_username : (user.app_metadata?.provider === "google" ? user.email : "");
     A.view.innerHTML = `<div class="acc-me">
         <button class="acc-av acc-av-btn" id="avBtn" type="button" aria-label="Profil rasmini o‘zgartirish">${avatarSrc() ? `<img src="${esc(avatarSrc())}" alt="" referrerpolicy="no-referrer">` : esc(name[0] || "?").toUpperCase()}<span class="acc-cam" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2.5h6L17 8h3v11H4zM12 16a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z"/></svg></span></button>
@@ -375,7 +380,8 @@
     A.$("#pvBtn").addEventListener("click", privacy);
     A.$("#outBtn").addEventListener("click", async () => {
       if (ls.get("tqsync:dirty") === "1") { await push(); }
-      await sb.auth.signOut(); user = null; paintBtn(); A.toast("Chiqdingiz"); location.hash = "#/";
+      await sb.auth.signOut(); user = null; ls.del("tqacc:admin"); paintBtn(); A.toast("Chiqdingiz");
+      if (location.hash === "#/" || !location.hash) A.refresh?.(); else location.hash = "#/";
     });
     A.$("#delBtn").addEventListener("click", () => {
       const sh = A.sheet(`<h3>Akkaunt o‘chirilsinmi?</h3><p class="muted small" style="margin:0">Hisobingiz va bulutdagi barcha ma’lumotlaringiz butunlay o‘chadi. Bu amalni qaytarib bo‘lmaydi. Telefondagi nusxa saqlanib qoladi.</p>
@@ -386,9 +392,88 @@
         if (error) { A.toast("O‘chirib bo‘lmadi. Keyinroq urinib ko‘ring"); return; }
         ["tqsync:last", "tqsync:dirty", "tqsync:at"].forEach(ls.del);
         try { await sb.auth.signOut(); } catch { /* */ }
-        user = null; paintBtn(); A.toast("Akkaunt o‘chirildi"); location.hash = "#/";
+        user = null; ls.del("tqacc:admin"); paintBtn(); A.toast("Akkaunt o‘chirildi");
+        if (location.hash === "#/" || !location.hash) A.refresh?.(); else location.hash = "#/";
       });
     });
+  }
+
+  /* ---------- Kirish ekrani (hisobsiz foydalanib bo'lmaydi) ---------- */
+  const signed = () => !!user || hasStoredSession();
+  const LOGO = `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">`;
+  const FEAT = [
+    [LOGO + '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>', "Qo‘llanmalar", "8+ fan, rasm va sxemalar bilan"],
+    [LOGO + '<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 10"/></svg>', "Test markazi", "3 700+ savol, xatolar ustida ishlash"],
+    [LOGO + '<path d="M6 3v6a4 4 0 0 0 8 0V3M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg>', "Simulyatorlar", "Virtual bemor va laboratoriya"],
+    [LOGO + '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.2-5.2 6.5-5.2s5.9 1.8 6.5 5.2M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.9c2 .6 3.2 2.2 3.5 5.1"/></svg>', "Konsilium", "Jonli muhokama va maruza"]
+  ];
+  async function gate(api) {
+    A = api;
+    const v = A.view;
+    v.classList.remove("wide");
+    const shell = (inner) => {
+      v.innerHTML = `<div class="gate">
+        <div class="gate-hero"><img src="icons/icon-192.png" alt="" width="72" height="72"><h1>ALVORA <b>Med</b></h1>
+          <p>Tibbiyot talabalari uchun qo‘llanma, test, simulyator va jonli muhokama bir joyda.</p></div>
+        <ul class="gate-feat">${FEAT.map(([i, t, d]) => `<li><span class="gi">${i}</span><span><b>${t}</b><small>${d}</small></span></li>`).join("")}</ul>
+        <div class="gate-card">${inner}</div>
+        <p class="gate-legal small muted">Kirish orqali <a href="terms.html" target="_blank" rel="noopener">Foydalanish shartlari</a> va <a href="privacy.html" target="_blank" rel="noopener">Maxfiylik siyosati</a>ga rozilik bildirasiz.</p>
+      </div>`;
+    };
+    if (/[?&]code=/.test(location.search)) {
+      shell(`<h2>Kirilmoqda…</h2><p class="small muted">Google hisobingiz tekshirilmoqda.</p>`);
+      try { await client(); } catch { /* */ }
+      if (user) { history.replaceState(null, "", location.pathname + (location.hash || "#/")); return A.refresh?.(); }
+    }
+    if (!navigator.onLine) {
+      shell(`<h2>Internet kerak</h2><p class="small muted">Birinchi marta kirish uchun internetga ulaning. Keyin kitoblar, testlar va simulyatorlar internetsiz ham ochiladi.</p>
+        <button class="btn primary" id="gRetry">Qayta urinish</button>`);
+      v.querySelector("#gRetry").addEventListener("click", () => A.refresh?.());
+      window.addEventListener("online", () => { if (document.body.classList.contains("gated")) A.refresh?.(); }, { once: true });
+      return;
+    }
+    shell(`<h2>Kirish yoki ro‘yxatdan o‘tish</h2>
+      <p class="small muted">Birinchi kirishda hisob o‘zi ochiladi. Natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi.</p>
+      <button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
+      <div class="acc-or"><span>yoki</span></div>
+      <div id="tgBox" class="acc-tg"><small class="muted">Telegram tugmasi yuklanmoqda…</small></div>`);
+    v.querySelector("#gBtn").addEventListener("click", googleLogin);
+    const box = v.querySelector("#tgBox");
+    box.innerHTML = "";
+    telegramWidget(box);
+    client().catch(() => {});
+  }
+
+  /* ---------- Qurilma va faollik (faqat statistika uchun, shaxsiy ma'lumotsiz) ---------- */
+  const today = () => { const d = new Date(); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); };
+  function devInfo() {
+    const ua = navigator.userAgent || "";
+    const ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const platform = ios ? "iOS" : /Android/.test(ua) ? "Android" : /Windows/.test(ua) ? "Windows" : /Mac OS X|Macintosh/.test(ua) ? "macOS" : /CrOS/.test(ua) ? "ChromeOS" : /Linux/.test(ua) ? "Linux" : "Boshqa";
+    const browser = /Telegram/i.test(ua) ? "Telegram" : /YaBrowser/.test(ua) ? "Yandex" : /SamsungBrowser/.test(ua) ? "Samsung" : /Edg\//.test(ua) ? "Edge" : /OPR\//.test(ua) ? "Opera" : /Firefox|FxiOS/.test(ua) ? "Firefox" : /CriOS|Chrome/.test(ua) ? "Chrome" : /Safari/.test(ua) ? "Safari" : "Boshqa";
+    const standalone = !!(window.matchMedia?.("(display-mode: standalone)").matches || navigator.standalone);
+    return { platform, browser, standalone };
+  }
+  async function touchDevice(force) {
+    if (!user || !sb || !navigator.onLine) return;
+    const key = user.id.slice(0, 8) + ":" + today();
+    if (!force && ls.get("tqdev:day") === key && Date.now() - Number(ls.get("tqdev:at") || 0) < 6 * 3600e3) return;
+    let id = ls.get("tqdev:id");
+    if (!id || !/^[0-9a-f-]{36}$/.test(id)) { id = crypto.randomUUID ? crypto.randomUUID() : "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (c ^ (Math.random() * 16) >> (c / 4)).toString(16)); ls.set("tqdev:id", id); }
+    const d = devInfo();
+    try {
+      const { error } = await sb.rpc("touch_device", { p_id: id, p_platform: d.platform, p_browser: d.browser, p_standalone: d.standalone, p_version: window.APP_VERSION || "" });
+      if (!error) { ls.set("tqdev:day", key); ls.set("tqdev:at", String(Date.now())); }
+    } catch { /* */ }
+  }
+  const isAdmin = () => !!user && ls.get("tqacc:admin") === user.id;
+  async function checkAdmin() {
+    if (!user || !sb || !navigator.onLine) return;
+    try {
+      const { data, error } = await sb.rpc("is_admin");
+      if (error) return;
+      if (data) ls.set("tqacc:admin", user.id); else ls.del("tqacc:admin");
+    } catch { /* */ }
   }
 
   /* ---------- Ishga tushirish ---------- */
@@ -396,9 +481,9 @@
     A = api;
     paintBtn();
     document.getElementById("accBtn")?.addEventListener("click", () => { location.hash = "#/sozlamalar"; });
-    if (hasStoredSession() || /[?&]code=/.test(location.search)) client().then(() => { paintBtn(); if (user) { pull(); loadPhoto(); } }).catch(() => {});
-    window.addEventListener("online", () => { if (user) { pull(); } });
-    document.addEventListener("visibilitychange", () => { if (!document.hidden && user) pull(); });
+    if (hasStoredSession() || /[?&]code=/.test(location.search)) client().then(() => { paintBtn(); if (user) { pull(); loadPhoto(); touchDevice(); checkAdmin(); } else if (!signed()) A.refresh?.(); }).catch(() => {});
+    window.addEventListener("online", () => { if (user) { pull(); touchDevice(); } });
+    document.addEventListener("visibilitychange", () => { if (!document.hidden && user) { pull(); touchDevice(); } });
   }
-  window.ACC = { boot, page, touch, privacy, ctx: async () => { if (hasStoredSession() || user) { try { await client(); } catch { /* oflayn */ } } return { sb, user, url: URL_, key: KEY }; }, me: () => (user ? { name: displayName(), photo: avatarSrc() } : null), _t: { mergeKey, cropper, editProfile } };
+  window.ACC = { boot, page, gate, signed, isAdmin, touch, privacy, ctx: async () => { if (hasStoredSession() || user) { try { await client(); } catch { /* oflayn */ } } return { sb, user, url: URL_, key: KEY }; }, me: () => (user ? { name: displayName(), photo: avatarSrc() } : null), _t: { mergeKey, cropper, editProfile } };
 })();

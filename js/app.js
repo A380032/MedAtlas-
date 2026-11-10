@@ -2,6 +2,8 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
+  const VERSION = "1.0.0";
+  window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
   const store = {
@@ -318,7 +320,7 @@
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.18.3</span></div>
+        <div class="setting-row small muted"><span>Versiya ${VERSION}</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1274,6 +1276,7 @@
       ["#/saqlangan", ic('<path d="M7 3h10v18l-5-4-5 4z"/>'), "Saqlangan", "Belgilar va saqlanganlar"],
       ["#/qidiruv", ic('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>'), "Qidiruv", "Atamalar lug‘ati va kitoblarda qidirish"]
     ];
+    if (window.ACC?.isAdmin?.()) items.push(["#/statistika", ic('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'), "Statistika", "Faqat siz ko‘rasiz: foydalanuvchilar va limitlar"]);
     moreBtn.setAttribute("aria-expanded", "true");
     const sh = sheet(`<h3>Menyu</h3><div class="more-list">${items.map(([h, i, t, d]) => `<a href="${h}" data-x="close"><span class="mi">${i}</span><span>${esc(t)}<small>${esc(d)}</small></span></a>`).join("")}</div>`);
     const done = () => moreBtn.setAttribute("aria-expanded", "false");
@@ -1781,6 +1784,15 @@
     const p = (path || "/").split("/").filter(Boolean);
     document.body.classList.remove("reading");
     hlBtn.hidden = true;
+    // v1.0: ilovadan foydalanish uchun hisobga kirish shart
+    if (!window.ACC?.signed?.()) {
+      document.body.classList.add("gated");
+      setChrome("ALVORA Med", false, "", { home: true });
+      try { await window.ACC.gate(bridge()); } catch (e) { console.error(e); }
+      window.scrollTo(0, 0);
+      return;
+    }
+    document.body.classList.remove("gated");
     const skT = setTimeout(() => { view.classList.remove("wide"); view.innerHTML = SKEL; }, 140);
     try {
       if (!p.length) await pageHome();
@@ -1805,6 +1817,7 @@
       else if (p[0] === "kutubxona") await pageLibrary();
       else if (p[0] === "saqlangan") await pageSaved();
       else if (p[0] === "xatolar") await pageWrong();
+      else if (p[0] === "statistika" && window.ACC?.isAdmin?.()) { await needScript("ADMIN", "js/admin.js"); await window.ADMIN.page(bridge()); }
       else pageNotFound();
     } catch (e) {
       console.error(e);
