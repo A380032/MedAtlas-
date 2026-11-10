@@ -309,6 +309,13 @@ Deno.serve(async (req) => {
       return json({ ok: true });
     }
 
+    if (action === "rec") {
+      const room = await getRoom(body.room_id);
+      if (!room) return json({ error: "Xona topilmadi" }, 404);
+      await lk("UpdateParticipant", { room: room.id, identity: me.id, attributes: { rec: body.on ? "1" : "" } }, roomG(room.id));
+      return json({ ok: true });
+    }
+
     if (action === "report") {
       const room = await getRoom(body.room_id);
       const target = String(body.target || "");

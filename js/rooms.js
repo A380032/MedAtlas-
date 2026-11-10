@@ -25,7 +25,7 @@
     chat: '<path d="M4 5h16v11H9l-5 4z"/>',
     full: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
     ban: '<circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/>',
-    pip: '<rect x="3" y="5" width="18" height="14" rx="2"/><rect x="12" y="11" width="7" height="6" rx="1"/>'
+    rec: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4" fill="currentColor"/>'
   };
   const ROLE = { talaba: "Talaba", oqituvchi: "O‘qituvchi" };
   const canShare = () => !!(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia);
@@ -293,7 +293,7 @@
     c.closing = true;
     clearInterval(c.aloneTimer);
     try { c.lk.disconnect(); } catch { /* */ }
-    closeFloat(c);
+    stopRec(c);
     cleanup();
     renderMini();
     if (!silent) A.toast("Xonadan chiqdingiz");
@@ -353,7 +353,7 @@
     for (const m of info.history || []) { cur.msgs.push(m); cur.seen.add(m.id); }
     const live = () => cur && cur.lk === lk;
     lk.on(L.RoomEvent.TrackSubscribed, (track, pub, p) => {
-      if (track.kind === "audio") { const el = track.attach(); el.classList.add("rm-audio"); el.hidden = true; document.body.appendChild(el); }
+      if (track.kind === "audio") { const el = track.attach(); el.classList.add("rm-audio"); el.hidden = true; document.body.appendChild(el); if (live() && cur.rec) recAddTrack(cur, track.mediaStreamTrack); }
       if (track.kind === "video" && pub.source === L.Track.Source.ScreenShare && live()) { cur.screen = { track, who: p.identity }; renderStage(); }
     });
     lk.on(L.RoomEvent.TrackUnsubscribed, (track, pub) => {
@@ -368,7 +368,7 @@
       if (live() && pub.source === L.Track.Source.ScreenShare && cur.screen?.local) { cur.screen = null; renderStage(); }
       if (live()) renderBar();
     });
-    lk.on(L.RoomEvent.ActiveSpeakersChanged, (sp) => { if (!live()) return; cur.speakers = new Set(sp.map((p) => p.identity)); paintSpeaking(); renderMini(); renderFloat(); });
+    lk.on(L.RoomEvent.ActiveSpeakersChanged, (sp) => { if (!live()) return; cur.speakers = new Set(sp.map((p) => p.identity)); paintSpeaking(); renderMini(); });
     lk.on(L.RoomEvent.ParticipantAttributesChanged, (ch, p) => {
       if (!live() || !p || p.isLocal || !("hand" in (ch || {})) || !handOf(p) || !staff(lk.localParticipant.identity)) return;
       const nm = profCache.get(p.identity)?.name || p.name || "Kimdir";
@@ -376,7 +376,7 @@
     });
     [L.RoomEvent.ParticipantConnected, L.RoomEvent.ParticipantDisconnected, L.RoomEvent.TrackMuted, L.RoomEvent.TrackUnmuted,
       L.RoomEvent.TrackPublished, L.RoomEvent.TrackUnpublished, L.RoomEvent.ParticipantAttributesChanged]
-      .forEach((ev) => lk.on(ev, () => { if (live()) { renderPeople(); renderBar(); renderMini(); renderFloat(); checkAlone(); } }));
+      .forEach((ev) => lk.on(ev, () => { if (live()) { renderPeople(); renderBar(); renderMini(); checkAlone(); if (cur?.rec) recSyncAudio(cur); } }));
     lk.on(L.RoomEvent.ParticipantPermissionsChanged, (prev, p) => {
       if (!live()) return;
       if (p && p.isLocal && !staff(p.identity)) {
@@ -419,13 +419,13 @@
         try {
           const fresh = await call({ action: "token", room_id: info.room.id, code: info.code || "" });
           if (cur !== c) return;
-          cur = null; cleanup(); closeFloat(c);
+          stopRec(c); cur = null; cleanup();
           await connect(Object.assign(fresh, { code: info.code }), user);
           if (cur) cur.retries = c.retries;
           return;
         } catch { /* pastga */ }
       }
-      cur = null; cleanup(); closeFloat(c); renderMini();
+      stopRec(c); cur = null; cleanup(); renderMini();
       const msg = reason === R.PARTICIPANT_REMOVED ? "Siz xonadan chiqarildingiz" : reason === R.ROOM_DELETED ? "Xona yopildi" : reason === R.DUPLICATE_IDENTITY ? "Bu hisob bilan boshqa qurilmadan kirildi" : reason === R.CLIENT_INITIATED ? "" : "Aloqa uzildi";
       if (msg) A.toast(msg);
       if (location.hash.startsWith(BASE + "/")) location.hash = BASE;
@@ -531,7 +531,7 @@
       const badge = id === info.room.owner ? `<span class="rm-badge crown" title="Xona egasi">${ico(I.crown, 12)}</span>`
         : (cur.mods.includes(id) || cur.admins.includes(id)) ? `<span class="rm-badge shield" title="Moderator">${ico(I.shield, 12)}</span>` : "";
       return `<button class="rm-p${cur.speakers.has(id) ? " talk" : ""}" data-id="${esc(id)}" type="button">
-        <span class="rm-pav">${avatar(x.prof, nm, 64)}${badge}${x.hand ? `<span class="rm-badge hand" title="${x.hand === "screen" ? "Ekran ulashishni so‘rayapti" : "So‘z so‘rayapti"}">${x.hand === "screen" ? "🖥" : "✋"}</span>` : ""}${canTalk(x.p) && !micOn(x.p) ? `<span class="rm-badge mute">${ico(I.micOff, 12)}</span>` : ""}${sharing(x.p) ? `<span class="rm-badge scr" title="Ekran ulashmoqda">${ico(I.screen, 12)}</span>` : ""}</span>
+        <span class="rm-pav">${avatar(x.prof, nm, 64)}${badge}${x.hand ? `<span class="rm-badge hand" title="${x.hand === "screen" ? "Ekran ulashishni so‘rayapti" : "So‘z so‘rayapti"}">${x.hand === "screen" ? "🖥" : "✋"}</span>` : ""}${canTalk(x.p) && !micOn(x.p) ? `<span class="rm-badge mute">${ico(I.micOff, 12)}</span>` : ""}${sharing(x.p) ? `<span class="rm-badge scr" title="Ekran ulashmoqda">${ico(I.screen, 12)}</span>` : ""}${x.p.attributes?.rec === "1" ? `<span class="rm-badge recb" title="Yozib olmoqda">●</span>` : ""}</span>
         <span class="rm-pn">${esc(nm)}${x.p.isLocal ? " (siz)" : ""}</span>${sub ? `<span class="rm-ps">${esc(sub)}</span>` : ""}</button>`;
     };
     const reqs = iAmStaff() ? order.filter((x) => x.hand && !x.p.isLocal) : [];
@@ -605,10 +605,10 @@
     const L = cur.L, local = cur.lk.localParticipant;
     const on = !!local.getTrackPublication?.("screen_share")?.track;
     if (on) { await local.setScreenShareEnabled(false); return; }
-    // Trafikni tejash: matn va slayd aniq, sekundiga 8 kadr
-    const pub = { screenShareEncoding: { maxBitrate: 900000, maxFramerate: 8 } };
-    if (L.ScreenSharePresets?.h720fps5) pub.screenShareSimulcastLayers = [L.ScreenSharePresets.h720fps5];
-    const cap = (audio) => ({ audio, resolution: { width: 1920, height: 1080, frameRate: 8 }, contentHint: "detail", selfBrowserSurface: "include", surfaceSwitching: "include" });
+    // Sifat va trafik muvozanati: sekundiga 15 kadr, matn aniq; sekin internetdagilarga yengilroq qatlam
+    const pub = { screenShareEncoding: { maxBitrate: 1500000, maxFramerate: 15 } };
+    if (L.ScreenSharePresets?.h720fps15) pub.screenShareSimulcastLayers = [L.ScreenSharePresets.h720fps15];
+    const cap = (audio) => ({ audio, resolution: { width: 1920, height: 1080, frameRate: 15 }, selfBrowserSurface: "include", surfaceSwitching: "include" });
     try { await local.setScreenShareEnabled(true, cap(true), pub); }
     catch (e) {
       const n = String(e?.name || "") + " " + String(e?.message || "");
@@ -648,7 +648,7 @@
       ${talk ? `<button class="rm-btn${micOn(local) ? " on" : ""}" id="rmMic" type="button">${ico(micOn(local) ? I.mic : I.micOff, 24)}<span>${micOn(local) ? "Mikrofon yoqiq" : "Mikrofon o‘chiq"}</span></button>` : ""}
       ${canAsk ? `<button class="rm-btn${hand ? " on" : ""}" id="rmHand" type="button">${ico(I.hand, 24)}<span>${hand ? "So‘rovni bekor qilish" : "Qo‘l ko‘tarish"}</span></button>` : ""}
       ${scr && canShare() ? `<button class="rm-btn${shareOn ? " on" : ""}" id="rmScr" type="button">${ico(I.screen, 24)}<span>${shareOn ? "Ulashishni to‘xtatish" : "Ekran ulashish"}</span></button>` : ""}
-      ${floatSupported() ? `<button class="rm-btn${cur.float ? " on" : ""}" id="rmPip" type="button">${ico(I.pip, 24)}<span>Suzuvchi oyna</span></button>` : ""}
+      ${recSupported() ? `<button class="rm-btn${cur.rec ? " rec" : ""}" id="rmRec" type="button">${ico(I.rec, 24)}<span>${cur.rec ? "To‘xtatish " + recTime(cur.rec) : "Yozib olish"}</span></button>` : ""}
       ${info.room.code ? `<button class="rm-btn" id="rmShare" type="button">${ico(I.share, 24)}<span>Taklif</span></button>` : ""}
       ${iAmOwner() ? `<button class="rm-btn danger" id="rmEnd" type="button">${ico(I.ban, 24)}<span>Yopish</span></button>` : ""}
       <button class="rm-btn danger" id="rmLeave" type="button">${ico(I.leave, 24)}<span>Chiqish</span></button>`;
@@ -660,7 +660,7 @@
       handSheet();
     });
     $("#rmScr")?.addEventListener("click", async () => { await toggleScreen(); renderBar(); });
-    $("#rmPip")?.addEventListener("click", () => (cur.float ? closeFloat(cur) : openFloat()));
+    $("#rmRec")?.addEventListener("click", () => (cur.rec ? stopRec() : startRec()));
     $("#rmShare")?.addEventListener("click", async () => {
       const txt = `ALVORA Med Konsilium: “${info.room.title}”. Kod: ${info.room.code}\n${location.origin}${location.pathname}${BASE}/${info.room.id}?code=${info.room.code}`;
       try { if (navigator.share) await navigator.share({ text: txt }); else { await navigator.clipboard.writeText(txt); A.toast("Taklif nusxalandi"); } } catch { /* */ }
@@ -680,7 +680,7 @@
     if (!cur) return;
     const local = cur.lk.localParticipant;
     try { await local.setMicrophoneEnabled(!micOn(local)); } catch { A.toast("Mikrofonga ruxsat bering (brauzer sozlamalari)"); }
-    renderMini(); renderFloat();
+    renderMini();
   }
 
   /* ---------- Kichik panel (ilovaning boshqa sahifalarida) ---------- */
@@ -702,92 +702,100 @@
         <span class="rm-mini-dot${sp ? " on" : ""}">${sp ? avatar(sp.prof, sp.name, 30) : ico(I.wave, 18)}</span>
         <span class="rm-mini-t"><b>${esc(cur.info.room.title)}</b><small>${sp ? esc(sp.name) + " gapiryapti" : "Konsilium · qaytish uchun bosing"}</small></span></a>
       ${canTalk(local) ? `<button class="rm-mini-b${micOn(local) ? " on" : ""}" id="rmMiniMic" aria-label="Mikrofon">${ico(micOn(local) ? I.mic : I.micOff, 20)}</button>` : ""}
-      ${floatSupported() ? `<button class="rm-mini-b${cur.float ? " on" : ""}" id="rmMiniPip" aria-label="Suzuvchi oyna">${ico(I.pip, 20)}</button>` : ""}
+      ${cur.rec ? `<button class="rm-mini-b rec" id="rmMiniRec" aria-label="Yozishni to‘xtatish">${ico(I.rec, 20)}</button>` : ""}
       <button class="rm-mini-b danger" id="rmMiniOut" aria-label="Chiqish">${ico(I.leave, 20)}</button>`;
     el.querySelector("#rmMiniMic")?.addEventListener("click", toggleMic);
-    el.querySelector("#rmMiniPip")?.addEventListener("click", () => (cur.float ? closeFloat(cur) : openFloat()));
+    el.querySelector("#rmMiniRec")?.addEventListener("click", () => stopRec());
     el.querySelector("#rmMiniOut").addEventListener("click", leaveFlow);
   }
 
-  /* ---------- Suzuvchi oyna (boshqa oynalar ustida) ---------- */
-  const floatSupported = () => !!window.documentPictureInPicture || !!(document.pictureInPictureEnabled && HTMLCanvasElement.prototype.captureStream);
-  async function openFloat() {
-    if (!cur || cur.float) return;
-    const c = cur;
-    try {
-      if (window.documentPictureInPicture) {
-        const w = await window.documentPictureInPicture.requestWindow({ width: 300, height: 132 });
-        const st = w.document.createElement("style");
-        st.textContent = `body{margin:0;font:14px/1.3 system-ui,-apple-system,sans-serif;background:#0f2a25;color:#e8f4f1;display:flex;align-items:center;gap:10px;padding:10px;box-sizing:border-box;height:100vh}
-          .av{width:56px;height:56px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#1b9a84;font-weight:700;font-size:22px;flex:none;box-shadow:0 0 0 3px transparent;transition:box-shadow .15s}
-          .av.on{box-shadow:0 0 0 3px #5fd1bf,0 0 0 7px rgba(95,209,191,.25)} .av img{width:100%;height:100%;object-fit:cover}
-          .t{flex:1;min-width:0} .t b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .t small{color:#9cc7bd}
-          button{border:0;border-radius:12px;width:40px;height:40px;display:grid;place-items:center;background:#24413b;color:#e8f4f1;cursor:pointer} button.on{background:#1b9a84} button.x{color:#ff8c8c}`;
-        w.document.head.appendChild(st);
-        c.float = { kind: "doc", win: w };
-        w.addEventListener("pagehide", () => { if (c.float?.win === w) { c.float = null; renderBar(); renderMini(); } });
-      } else {
-        const cv = document.createElement("canvas"); cv.width = 480; cv.height = 200;
-        const v = document.createElement("video"); v.muted = true; v.playsInline = true; v.className = "rm-pipv";
-        v.srcObject = cv.captureStream(4); document.body.appendChild(v);
-        c.float = { kind: "video", cv, v, imgs: new Map() };
-        c.float.timer = setInterval(() => drawFloatCanvas(c), 300);
-        drawFloatCanvas(c);
-        await v.play();
-        await v.requestPictureInPicture();
-        v.addEventListener("leavepictureinpicture", () => { if (c.float?.v === v) closeFloat(c); });
-      }
-      renderFloat(); renderBar(); renderMini();
-    } catch (e) {
-      closeFloat(c);
-      A.toast("Suzuvchi oynani ochib bo‘lmadi");
-    }
+  /* ---------- Yozib olish (har bir ishtirokchi o'zi uchun) ---------- */
+  // Ekran va xonadagi barcha ovozlar bitta videoga yoziladi va qurilmaga saqlanadi.
+  const recSupported = () => typeof MediaRecorder !== "undefined" && !!HTMLCanvasElement.prototype.captureStream && !!(window.AudioContext || window.webkitAudioContext);
+  function recMime() {
+    for (const m of ["video/webm;codecs=vp9,opus", "video/webm;codecs=vp8,opus", "video/webm", "video/mp4;codecs=avc1,mp4a.40.2", "video/mp4"])
+      if (MediaRecorder.isTypeSupported?.(m)) return m;
+    return "";
   }
-  function closeFloat(c) {
-    const f = c?.float; if (!f) return;
-    c.float = null;
-    try { if (f.kind === "doc") f.win.close(); } catch { /* */ }
-    if (f.kind === "video") {
-      clearInterval(f.timer);
-      try { if (document.pictureInPictureElement === f.v) document.exitPictureInPicture(); } catch { /* */ }
-      f.v.remove();
-    }
+  function recAddTrack(c, mst) {
+    const r = c.rec; if (!r || !mst || r.srcs.has(mst.id)) return;
+    try { const n = r.ac.createMediaStreamSource(new MediaStream([mst])); n.connect(r.dest); r.srcs.set(mst.id, n); } catch { /* */ }
+  }
+  function recSyncAudio(c) {
+    const r = c.rec; if (!r) return;
+    for (const p of [c.lk.localParticipant, ...c.lk.remoteParticipants.values()])
+      for (const pub of (p.trackPublications?.values?.() || [])) if (pub.kind === "audio" && pub.track?.mediaStreamTrack) recAddTrack(c, pub.track.mediaStreamTrack);
+  }
+  async function startRec() {
+    if (!cur || cur.rec) return;
+    const c = cur;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    const ac = new AC(); try { await ac.resume(); } catch { /* */ }
+    const dest = ac.createMediaStreamDestination();
+    // Jim fon signali: hech kim gapirmayotganda ham yozuv to'xtab qolmasligi uchun
+    try { const o = ac.createOscillator(), gz = ac.createGain(); gz.gain.value = 0; o.connect(gz).connect(dest); o.start(); } catch { /* */ }
+    const cv = document.createElement("canvas"); cv.width = 1280; cv.height = 720;
+    const g = cv.getContext("2d");
+    const vid = document.createElement("video"); vid.muted = true; vid.playsInline = true;
+    const r = c.rec = { ac, dest, cv, vid, srcs: new Map(), chunks: [], t0: Date.now(), track: null };
+    const draw = () => {
+      if (c.rec !== r) return;
+      const s = c.screen;
+      if (s && s.track !== r.track) { r.track = s.track; vid.srcObject = new MediaStream([s.track.mediaStreamTrack]); vid.play().catch(() => {}); }
+      if (!s && r.track) { r.track = null; vid.srcObject = null; }
+      g.fillStyle = "#0b1f1e"; g.fillRect(0, 0, 1280, 720);
+      if (s && vid.videoWidth) {
+        const k = Math.min(1280 / vid.videoWidth, 720 / vid.videoHeight), w = vid.videoWidth * k, h = vid.videoHeight * k;
+        g.drawImage(vid, (1280 - w) / 2, (720 - h) / 2, w, h);
+      } else {
+        const sp = speakerNow();
+        g.fillStyle = "#e8f4f1"; g.textAlign = "center"; g.font = "bold 44px system-ui,sans-serif";
+        g.fillText(c.info.room.title.slice(0, 40), 640, 330);
+        g.fillStyle = "#9cc7bd"; g.font = "30px system-ui,sans-serif";
+        g.fillText(sp ? sp.name + " gapiryapti" : "Konsilium · ALVORA Med", 640, 390);
+      }
+    };
+    r.timer = setInterval(draw, 1000 / 15); draw();
+    recSyncAudio(c);
+    const stream = new MediaStream([...cv.captureStream(15).getVideoTracks(), ...dest.stream.getAudioTracks()]);
+    const mime = recMime();
+    try { r.mr = new MediaRecorder(stream, { ...(mime ? { mimeType: mime } : {}), videoBitsPerSecond: 1500000, audioBitsPerSecond: 96000 }); }
+    catch { clearInterval(r.timer); ac.close(); c.rec = null; A.toast("Bu brauzer yozib olishni qo‘llamaydi"); return; }
+    r.mr.ondataavailable = (e) => { if (e.data && e.data.size) r.chunks.push(e.data); };
+    r.mr.onstop = () => saveRec(c, r);
+    r.mr.onerror = () => { A.toast("Yozib olishda xato chiqdi"); saveRec(c, r); };
+    r.mr.start(1000);
+    r.tick = setInterval(() => {
+      if (c !== cur || !c.rec) return;
+      const sp = document.querySelector("#rmRec span"); if (sp) sp.textContent = "To‘xtatish " + recTime(c.rec);
+    }, 1000);
+    call({ action: "rec", room_id: c.info.room.id, on: true }).catch(() => {});
+    A.toast("Yozib olish boshlandi. Xonadagilar buni ko‘radi");
+    renderBar(); renderMini();
+  }
+  function stopRec(c = cur) {
+    const r = c?.rec; if (!r) return;
+    try { r.mr.state !== "inactive" && r.mr.stop(); } catch { saveRec(c, r); }
+    call({ action: "rec", room_id: c.info.room.id, on: false }).catch(() => {});
+  }
+  function saveRec(c, r) {
+    if (r.saved) return; r.saved = true;
+    clearInterval(r.timer); clearInterval(r.tick);
+    try { r.ac.close(); } catch { /* */ }
+    if (c.rec === r) c.rec = null;
+    if (r.chunks.length) {
+      const type = r.mr?.mimeType || "video/webm";
+      const blob = new Blob(r.chunks, { type });
+      const d = new Date(), p = (n) => String(n).padStart(2, "0");
+      const name = `Konsilium-${c.info.room.title.replace(/[^\p{L}\p{N}]+/gu, "-").slice(0, 40)}-${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}.${/mp4/.test(type) ? "mp4" : "webm"}`;
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name;
+      document.body.appendChild(a); a.click();
+      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 60000);
+      A.toast("Yozuv saqlandi: " + name);
+    } else A.toast("Yozuv bo‘sh chiqdi. Qayta urinib ko‘ring");
     if (cur === c) { renderBar(); renderMini(); }
   }
-  function renderFloat() {
-    const f = cur?.float; if (!f || f.kind !== "doc") return;
-    const d = f.win.document, local = cur.lk.localParticipant, sp = speakerNow();
-    const prof = sp?.prof || {}, src = prof.photo || prof.avatar_url || "";
-    d.body.innerHTML = `<span class="av${sp ? " on" : ""}">${sp ? (src ? `<img src="${esc(src)}" referrerpolicy="no-referrer">` : esc((sp.name || "?")[0]).toUpperCase()) : "🎙"}</span>
-      <span class="t"><b>${esc(sp ? sp.name : cur.info.room.title)}</b><small>${sp ? "gapiryapti" : "Konsilium · jim"}</small></span>
-      ${canTalk(local) ? `<button id="m" class="${micOn(local) ? "on" : ""}" title="Mikrofon">${ico(micOn(local) ? I.mic : I.micOff, 20)}</button>` : ""}
-      <button id="x" class="x" title="Chiqish">${ico(I.leave, 20)}</button>`;
-    d.getElementById("m")?.addEventListener("click", toggleMic);
-    d.getElementById("x").addEventListener("click", () => leave());
-  }
-  function drawFloatCanvas(c) {
-    const f = c.float; if (!f || f.kind !== "video" || cur !== c) return;
-    const g = f.cv.getContext("2d"), W = f.cv.width, H = f.cv.height, sp = speakerNow();
-    g.fillStyle = "#0f2a25"; g.fillRect(0, 0, W, H);
-    const cx = 100, cy = H / 2, r = 62;
-    if (sp) { g.beginPath(); g.arc(cx, cy, r + 9, 0, Math.PI * 2); g.fillStyle = "rgba(95,209,191,.35)"; g.fill(); }
-    g.save(); g.beginPath(); g.arc(cx, cy, r, 0, Math.PI * 2); g.closePath(); g.clip();
-    g.fillStyle = "#1b9a84"; g.fillRect(cx - r, cy - r, r * 2, r * 2);
-    const src = sp?.prof?.photo || "";   // faqat o'z serverimizdagi rasm (data:) chiziladi
-    let drawn = false;
-    if (src.startsWith("data:")) {
-      let im = f.imgs.get(src);
-      if (!im) { im = new Image(); im.src = src; f.imgs.set(src, im); }
-      if (im.complete && im.naturalWidth) { g.drawImage(im, cx - r, cy - r, r * 2, r * 2); drawn = true; }
-    }
-    if (!drawn) { g.fillStyle = "#fff"; g.font = "bold 52px system-ui,sans-serif"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(sp ? (sp.name[0] || "?").toUpperCase() : "🎙", cx, cy + 2); }
-    g.restore();
-    g.textAlign = "left"; g.textBaseline = "alphabetic"; g.fillStyle = "#e8f4f1"; g.font = "bold 30px system-ui,sans-serif";
-    const t = sp ? sp.name : c.info.room.title;
-    g.fillText(t.length > 16 ? t.slice(0, 15) + "…" : t, 190, cy - 6);
-    g.fillStyle = "#9cc7bd"; g.font = "24px system-ui,sans-serif";
-    g.fillText(sp ? "gapiryapti" : "jim", 190, cy + 30);
-  }
+  const recTime = (r) => { const s = Math.floor((Date.now() - r.t0) / 1000); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
 
   function paintSpeaking() {
     if (!cur) return;

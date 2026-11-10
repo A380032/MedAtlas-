@@ -979,7 +979,6 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .rm-mini-b { flex: none; width: 40px; height: 40px; border: 0; border-radius: 12px; display: grid; place-items: center; background: var(--surface-2); color: var(--ink); cursor: pointer; }
 .rm-mini-b.on { background: var(--accent); color: var(--on-accent); }
 .rm-mini-b.danger { color: var(--bad, #d33); }
-.rm-pipv { position: fixed; width: 1px; height: 1px; opacity: 0; pointer-events: none; bottom: 0; left: 0; }
 @media (min-width: 900px) { .rm-mini { left: auto; right: 20px; bottom: 20px; width: 380px; } }
 
 .rm-hist { width: 100%; text-align: left; font: inherit; cursor: pointer; }
@@ -1002,3 +1001,5 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .acc-login h3 { margin: 0 0 4px; font-size: 1rem; }
 .acc-edit { margin-left: auto; flex: none; }
 .rm-alone { margin: 0 0 12px; padding: 10px 12px; border-radius: 14px; background: color-mix(in srgb, #e0a100 14%, var(--surface)); border: 1px solid color-mix(in srgb, #e0a100 35%, transparent); }
+.rm-btn.rec, .rm-mini-b.rec { background: #d93838; color: #fff; }
+.rm-badge.recb { top: 40%; right: -8px; color: #d93838; font-size: 14px; line-height: 1; }
