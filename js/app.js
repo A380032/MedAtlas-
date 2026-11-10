@@ -176,6 +176,7 @@
     $(".topbar").classList.toggle("is-home", !!opt.home);
     document.title = opt.home ? "ALVORA Med" : title + " · ALVORA Med";
     backBtn.hidden = !back;
+    $("#rdSearch").hidden = !(tab === "fanlar" && back);
     setBtn.hidden = !opt.home;
     accBtn.hidden = !opt.home;
     navLinks.forEach((a) => {
@@ -183,6 +184,8 @@
       if (a.dataset.tab === tab) a.setAttribute("aria-current", "page");
       else if (tab === "fanlar" && a.dataset.tab === "home") a.dataset.soft = "1";
     });
+    const mb = $("#moreBtn");
+    if (mb) { if (["lib", "saved", "sozlamalar"].includes(tab)) mb.setAttribute("aria-current", "page"); else mb.removeAttribute("aria-current"); }
   }
 
   async function courseStats(course) {
@@ -296,11 +299,8 @@
           <div class="seg flat" role="group" style="margin:8px 0 0">
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
         <div class="setting-row"><span>Ilovani telefonga o'rnatish</span><button class="btn" id="installBtn">Qanday?</button></div>
-        <div class="setting-row"><span>Zaxira nusxa<br><small class="muted">Reja, yutuqlar, ballar, belgilar va o‘qilganlar bitta faylga saqlanadi. Ma’lumotlar faqat shu telefonda turadi.</small></span>
-          <span style="display:flex;flex-direction:column;gap:6px"><button class="btn" id="bkSave">Saqlash</button><button class="btn" id="bkLoad">Tiklash</button></span></div>
-        <input type="file" id="bkFile" accept="application/json,.json" hidden>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.13.1 · offline ishlaydi</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.14.0</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -308,9 +308,6 @@
       view.querySelectorAll("[data-th]").forEach((x) => x.setAttribute("aria-selected", x === b));
     }));
     $("#installBtn").addEventListener("click", installHelp);
-    $("#bkSave").addEventListener("click", backupSave);
-    $("#bkLoad").addEventListener("click", () => $("#bkFile").click());
-    $("#bkFile").addEventListener("change", (e) => { const f = e.target.files[0]; if (f) backupLoad(f); e.target.value = ""; });
   }
 
   async function pageSubject(sid) {
@@ -1240,6 +1237,78 @@
     right: '<path d="M9 5l7 7-7 7"/>'
   };
 
+
+  /* ---------- Menyu varag'i (3 chiziq) ---------- */
+  const moreBtn = $("#moreBtn");
+  function openMore() {
+    const ic = (d) => `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+    const acc = window.ACC?.me?.() || {};
+    const accIco = acc.photo ? `<img src="${esc(acc.photo)}" alt="" referrerpolicy="no-referrer">` : ic('<circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.4 7-5.4s6.2 1.8 7 5.4"/>');
+    const items = [
+      ["#/profil", accIco, acc.name || "Profil", acc.name ? "Hisobim" : "Kirish va bulutga saqlash"],
+      ["#/kutubxona", ic('<path d="M4 4h4v16H4zM9 4h4v16H9zM14.5 5.5l3.8-1 3.2 14.8-3.8 1z"/>'), "Kutubxona", "Kitoblar va qo‘llanmalar"],
+      ["#/saqlangan", ic('<path d="M7 3h10v18l-5-4-5 4z"/>'), "Saqlangan", "Belgilar va saqlanganlar"],
+      ["#/sozlamalar", ic('<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/>'), "Sozlamalar", "Ko‘rinish va ilova haqida"]
+    ];
+    moreBtn.setAttribute("aria-expanded", "true");
+    const sh = sheet(`<h3>Menyu</h3><div class="more-list">${items.map(([h, i, t, d]) => `<a href="${h}" data-x="close"><span class="mi">${i}</span><span>${esc(t)}<small>${esc(d)}</small></span></a>`).join("")}</div>`);
+    const done = () => moreBtn.setAttribute("aria-expanded", "false");
+    sh.el.parentNode.addEventListener("click", done);
+    window.addEventListener("hashchange", done, { once: true });
+  }
+  moreBtn?.addEventListener("click", openMore);
+
+  /* ---------- O'qish paytidagi tezkor qidiruv ---------- */
+  function quickSearch() {
+    let mode = store.get("searchMode", "atama");
+    const sh = sheet(`<div class="qs"><h3>Qidiruv</h3>
+      <div class="seg flat" role="tablist"><button role="tab" data-qm="atama" aria-selected="${mode === "atama"}">Atamalar</button><button role="tab" data-qm="kitob" aria-selected="${mode === "kitob"}">Kitoblarda</button></div>
+      <label class="search-box"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input class="search-input" id="qsIn" type="search" autocomplete="off" enterkeyhint="search"></label>
+      <div class="qs-res" id="qsOut"><p class="small muted">Atamani yozing: izoh shu yerning o‘zida chiqadi, o‘qishingiz to‘xtamaydi.</p></div></div>`);
+    const inp = $("#qsIn", sh.el), out = $("#qsOut", sh.el);
+    const hl = (txt, terms) => {
+      const re = new RegExp("(" + terms.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "(?:'|‘|’)")).join("|") + ")", "gi");
+      return esc(txt).replace(re, (m) => `<mark>${m}</mark>`);
+    };
+    const run = async () => {
+      const raw = inp.value.trim(), q = fold(raw);
+      if (q.length < 2) { out.innerHTML = `<p class="small muted">Kamida 2 ta harf yozing.</p>`; return; }
+      if (mode === "atama") {
+        const g = await buildGlossary();
+        const r = searchTerms(g, raw);
+        const list = (r.hits.length ? r.hits : r.related.length ? r.related : r.byMean).slice(0, 6);
+        out.innerHTML = list.length ? list.map((x) => `<div class="gloss"><strong>${hl(x.term, r.terms)}</strong><span class="gloss-tag">${esc(x.abbrs.join(", "))}</span>${x.means.map((m) => `<p>${hl(m.t, r.terms)}</p>`).join("")}</div>`).join("")
+          : `<p class="small muted">“${esc(raw)}” lug‘atda topilmadi. “Kitoblarda” bo‘limida urinib ko‘ring.</p>`;
+      } else {
+        const index = await buildIndex();
+        const terms = q.split(/\s+/).filter(Boolean), stems = terms.map(stem), hits = [];
+        for (const x of index) {
+          const all = x.f + " " + x.ft;
+          if (!terms.every((w) => all.includes(w)) && !hasStems(all, stems)) continue;
+          const pos = x.f.indexOf(terms[0]);
+          hits.push({ x, pos: pos >= 0 ? pos : Math.max(0, x.f.indexOf(stems[0])), title: terms.every((w) => x.ft.includes(w)) });
+        }
+        hits.sort((a, b) => b.title - a.title);
+        out.innerHTML = hits.length ? hits.slice(0, 20).map((h) => {
+          const txt = plain(h.x.text), snip = txt.slice(Math.max(0, h.pos - 50), h.pos + terms[0].length + 90);
+          const href = `#/fan/${esc(h.x.sid)}/${esc(h.x.t.id)}${h.x.tab ? "?" + h.x.tab + (h.x.i != null ? "&s=" + h.x.i : "") + "&q=" + encodeURIComponent(terms.join(" ")) : ""}`;
+          return `<a class="result" href="${href}" data-x="close"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${esc(h.x.where || h.x.t.title)}</strong><div class="small muted">${esc(h.x.abbr)} · …${hl(snip, terms)}…</div></a>`;
+        }).join("") : `<p class="small muted">“${esc(raw)}” bo‘yicha hech narsa topilmadi.</p>`;
+      }
+    };
+    let t; inp.addEventListener("input", () => { clearTimeout(t); t = setTimeout(run, 150); });
+    sh.el.querySelectorAll("[data-qm]").forEach((b) => b.addEventListener("click", () => {
+      mode = b.dataset.qm; store.set("searchMode", mode);
+      sh.el.querySelectorAll("[data-qm]").forEach((x) => x.setAttribute("aria-selected", x === b));
+      inp.placeholder = mode === "atama" ? "Atama, masalan: gipoksiya" : "Atama yoki mavzu";
+      run();
+    }));
+    inp.placeholder = mode === "atama" ? "Atama, masalan: gipoksiya" : "Atama yoki mavzu";
+    setTimeout(() => inp.focus(), 250);
+  }
+  $("#rdSearch")?.addEventListener("click", quickSearch);
+
   /* Bo'sh holat */
   const emptyState = (icon, title, text, action = "") =>
     `<div class="empty-state"><span class="es-ico">${svg(icon, 44, 1.6)}</span><h3>${title}</h3><p>${text}</p>${action}</div>`;
@@ -1605,27 +1674,6 @@
       e.preventDefault(); e.stopPropagation();
       removeHighlight(b.dataset.del); pageBelgilar(); toast("Belgi o‘chirildi");
     }));
-  }
-
-  /* ---------- Zaxira nusxa ---------- */
-  function backupSave() {
-    const data = {};
-    for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("tq:")) data[k] = localStorage.getItem(k); }
-    download(`alvora-med-zaxira-${ymd(new Date())}.json`, JSON.stringify({ app: "alvora-med", v: 1, at: new Date().toISOString(), data }, null, 1), "application/json");
-    toast("Zaxira fayl saqlandi");
-  }
-  function backupLoad(file) {
-    const rd = new FileReader();
-    rd.onload = () => {
-      try {
-        const j = JSON.parse(rd.result);
-        if (j.app !== "alvora-med" || !j.data) throw new Error("bad");
-        if (!confirm("Zaxiradagi ma’lumotlar hozirgisi o‘rniga yozilsinmi? (reja, yutuqlar, belgilar, o‘qilganlar)")) return;
-        for (const [k, v] of Object.entries(j.data)) if (k.startsWith("tq:")) localStorage.setItem(k, v);
-        applyPrefs(); toast("Zaxiradan tiklandi"); route();
-      } catch { toast("Bu fayl ALVORA Med zaxirasi emas"); }
-    };
-    rd.readAsText(file);
   }
 
   /* ---------- Umumiy: yuqoriga, o'qish chizig'i, pastga tortib yangilash ---------- */

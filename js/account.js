@@ -32,8 +32,8 @@
         user = sess?.user || null;
         setTimeout(() => {
           paintBtn();
-          if (user && user.id !== was) { pull(); }
-          if (!user && was) { ls.del("tqsync:last"); ls.del("tqsync:dirty"); ls.del("tqsync:at"); }
+          if (user && user.id !== was) { pull(); loadPhoto(); }
+          if (!user && was) { setPhoto(""); ls.del("tqsync:last"); ls.del("tqsync:dirty"); ls.del("tqsync:at"); }
           if ((location.hash || "").startsWith("#/profil")) A?.refresh?.();
         }, 0);
       });
@@ -45,12 +45,25 @@
   const hasStoredSession = () => { try { for (let i = 0; i < localStorage.length; i++) if (/^sb-.*-auth-token$/.test(localStorage.key(i))) return true; } catch { /* */ } return false; };
 
   /* ---------- Yuqori paneldagi tugma ---------- */
+  const photo = () => { try { return localStorage.getItem("tqacc:photo") || ""; } catch { return ""; } };
+  const setPhoto = (v) => { try { v ? localStorage.setItem("tqacc:photo", v) : localStorage.removeItem("tqacc:photo"); } catch { /* */ } };
+  const avatarSrc = () => photo() || user?.user_metadata?.avatar_url || "";
+  async function loadPhoto() {
+    if (!user || !sb || !navigator.onLine) return;
+    try {
+      const r = await sb.from("profiles").select("photo").eq("id", user.id).maybeSingle();
+      if (!r.error && r.data) { const v = r.data.photo || ""; if (v !== photo()) { setPhoto(v); paintBtn(); } }
+    } catch { /* oflayn */ }
+  }
   function paintBtn() {
     const b = document.getElementById("accBtn");
     if (!b) return;
     const name = user?.user_metadata?.full_name || user?.user_metadata?.name || "";
-    if (user) { b.innerHTML = `<span class="acc-dot">${esc((name || "?").trim()[0] || "?").toUpperCase()}</span>`; b.setAttribute("aria-label", "Profil: " + name); }
-    else { b.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.4 7-5.4s6.2 1.8 7 5.4"/></svg>`; b.setAttribute("aria-label", "Kirish"); }
+    if (user) {
+      const src = avatarSrc();
+      b.innerHTML = `<span class="acc-dot">${src ? `<img src="${esc(src)}" alt="" referrerpolicy="no-referrer">` : esc((name || "?").trim()[0] || "?").toUpperCase()}</span>`;
+      b.setAttribute("aria-label", "Profil: " + name);
+    } else { b.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.4 7-5.4s6.2 1.8 7 5.4"/></svg>`; b.setAttribute("aria-label", "Kirish"); }
   }
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -235,24 +248,66 @@
     }
   }
 
+  function shrink(file, size) {
+    return new Promise((res, rej) => {
+      const url = URL.createObjectURL(file), img = new Image();
+      img.onload = () => {
+        URL.revokeObjectURL(url);
+        const side = Math.min(img.naturalWidth, img.naturalHeight);
+        if (!side) return rej(new Error("img"));
+        const c = document.createElement("canvas"); c.width = c.height = size;
+        c.getContext("2d").drawImage(img, (img.naturalWidth - side) / 2, (img.naturalHeight - side) / 2, side, side, 0, 0, size, size);
+        let q = 0.85, out = c.toDataURL("image/jpeg", q);
+        while (out.length > 60000 && q > 0.4) { q -= 0.1; out = c.toDataURL("image/jpeg", q); }
+        out.length < 80000 ? res(out) : rej(new Error("big"));
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); rej(new Error("fmt")); };
+      img.src = url;
+    });
+  }
+
   function pageIn() {
     const m = user.user_metadata || {};
     const name = m.full_name || m.name || "Foydalanuvchi";
     const prov = user.app_metadata?.provider === "telegram" ? "Telegram" : user.app_metadata?.provider === "google" ? "Google" : "Hisob";
     const sub = m.telegram_username ? "@" + m.telegram_username : (user.app_metadata?.provider === "google" ? user.email : "");
     A.view.innerHTML = `<div class="acc-me">
-        <span class="acc-av">${m.avatar_url ? `<img src="${esc(m.avatar_url)}" alt="" referrerpolicy="no-referrer">` : esc(name[0] || "?").toUpperCase()}</span>
+        <button class="acc-av acc-av-btn" id="avBtn" type="button" aria-label="Profil rasmini o‘zgartirish">${avatarSrc() ? `<img src="${esc(avatarSrc())}" alt="" referrerpolicy="no-referrer">` : esc(name[0] || "?").toUpperCase()}<span class="acc-cam" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2.5h6L17 8h3v11H4zM12 16a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z"/></svg></span></button>
+        <input type="file" id="avFile" accept="image/*" hidden>
         <div><h2 style="margin:0">${esc(name)}</h2><p class="muted small" style="margin:2px 0 0">${prov}${sub ? " · " + esc(sub) : ""}</p></div></div>
       <div class="acc-card">
         <div class="setting-row" style="border:0;padding-top:0"><span><b>Bulutga saqlash</b><br><small class="muted" id="accSync"></small></span><button class="btn" id="syncNow">Hozir saqlash</button></div>
         <p class="small muted" style="margin:0">Reja, yutuqlar, ballar, test natijalari va belgilar avtomatik saqlanadi. Boshqa telefonda shu hisobga kirsangiz, hammasi shu yerda bo‘ladi.</p>
       </div>
       <div class="tm-acts" style="margin-top:14px">
+        <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
+        ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
         <button class="btn" id="outBtn">Chiqish</button>
         <button class="btn" id="pvBtn">Maxfiylik</button>
         <button class="btn danger" id="delBtn">Akkauntni o‘chirish</button></div>`;
     paintStatus();
     A.$("#syncNow").addEventListener("click", async () => { A.toast("Saqlanmoqda…"); ls.set("tqsync:dirty", "1"); await pull(); await push(); paintStatus(); A.toast("Saqlandi"); });
+    const pick = () => A.$("#avFile").click();
+    A.$("#avBtn").addEventListener("click", pick);
+    A.$("#avChange").addEventListener("click", pick);
+    A.$("#avFile").addEventListener("change", async (e) => {
+      const f = e.target.files[0]; e.target.value = ""; if (!f) return;
+      if (!navigator.onLine) { A.toast("Rasm yuklash uchun internet kerak"); return; }
+      try {
+        A.toast("Rasm yuklanmoqda…");
+        const url = await shrink(f, 256);
+        const { error } = await sb.from("profiles").update({ photo: url, updated_at: new Date().toISOString() }).eq("id", user.id);
+        if (error) throw error;
+        setPhoto(url); paintBtn(); pageIn(); A.toast("Profil rasmi yangilandi");
+      } catch { A.toast("Rasmni yuklab bo‘lmadi. Boshqa rasm tanlang"); }
+    });
+    A.$("#avDel")?.addEventListener("click", async () => {
+      try {
+        const { error } = await sb.from("profiles").update({ photo: null, updated_at: new Date().toISOString() }).eq("id", user.id);
+        if (error) throw error;
+        setPhoto(""); paintBtn(); pageIn(); A.toast("Rasm olib tashlandi");
+      } catch { A.toast("Olib tashlab bo‘lmadi. Internetni tekshiring"); }
+    });
     A.$("#pvBtn").addEventListener("click", privacy);
     A.$("#outBtn").addEventListener("click", async () => {
       if (ls.get("tqsync:dirty") === "1") { await push(); }
@@ -277,9 +332,9 @@
     A = api;
     paintBtn();
     document.getElementById("accBtn")?.addEventListener("click", () => { location.hash = "#/profil"; });
-    if (hasStoredSession() || /[?&]code=/.test(location.search)) client().then(() => { paintBtn(); if (user) pull(); }).catch(() => {});
+    if (hasStoredSession() || /[?&]code=/.test(location.search)) client().then(() => { paintBtn(); if (user) { pull(); loadPhoto(); } }).catch(() => {});
     window.addEventListener("online", () => { if (user) { pull(); } });
     document.addEventListener("visibilitychange", () => { if (!document.hidden && user) pull(); });
   }
-  window.ACC = { boot, page, touch, privacy, _t: { mergeKey } };
+  window.ACC = { boot, page, touch, privacy, me: () => (user ? { name: user.user_metadata?.full_name || user.user_metadata?.name || "Foydalanuvchi", photo: avatarSrc() } : null), _t: { mergeKey } };
 })();

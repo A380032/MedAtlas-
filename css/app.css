@@ -71,7 +71,7 @@ h3 { font-size: 1.05rem; margin: 22px 0 10px; }
   position: fixed; inset: 0 0 auto var(--side); z-index: 10;
   height: calc(56px + var(--safe-t)); padding: var(--safe-t) 10px 0 10px;
   display: flex; align-items: center; gap: 4px;
-  background: color-mix(in srgb, var(--bg) 88%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  background: var(--bg);
 }
 .topbar-title {
   flex: 1; margin: 0 8px; font-size: 1.12rem; white-space: nowrap;
@@ -104,6 +104,10 @@ h3 { font-size: 1.05rem; margin: 22px 0 10px; }
 .tabbar svg { width: 24px; height: 24px; }
 .tabbar a[aria-current="page"], .tabbar a[data-soft] { color: var(--accent); font-weight: 700; }
 .tabbar .desk, .tabbar .side-brand { display: none; }
+.tabbar .more-btn { display: flex; flex-direction: column; align-items: center; gap: 2px; border: 0; background: none; cursor: pointer; color: var(--ink-2); font-size: .7rem; font-weight: 500; padding: 5px 0; border-radius: 12px; }
+.tabbar .more-btn[aria-expanded="true"] { color: var(--accent); font-weight: 700; }
+#rdSearch { display: none; }
+body.reading #rdSearch:not([hidden]) { display: grid; }
 
 /* ===== Bosh sahifa ===== */
 .hello { margin: 4px 0 18px; }
@@ -508,6 +512,7 @@ main.wide { max-width: none; padding: 0; }
   .topbar.is-home .topbar-title { display: block; }
   .tabbar { inset: 0 auto 0 0; width: var(--side); display: flex; flex-direction: column; gap: 4px; padding: 18px 14px; border-top: 0; border-right: 1px solid var(--line); box-shadow: none; }
   .tabbar .desk, .tabbar .side-brand { display: flex; }
+  .tabbar .more-btn { display: none; }
   .tabbar .side-brand { flex-direction: row; gap: 10px; font-size: 1.15rem; font-weight: 700; color: var(--ink); padding: 4px 8px 18px; }
   .tabbar .side-brand img { border-radius: 11px; }
   .tabbar a { flex-direction: row; gap: 12px; font-size: .95rem; padding: 11px 12px; border-radius: 14px; }
@@ -839,3 +844,21 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .acc-me { display: flex; align-items: center; gap: 14px; margin: 4px 0 16px; }
 .acc-av { flex: none; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent-2), var(--accent)); color: var(--on-accent); font-weight: 700; font-size: 1.6rem; }
 .acc-av img { width: 100%; height: 100%; object-fit: cover; }
+
+.acc-dot { overflow: hidden; }
+.acc-dot img { width: 100%; height: 100%; object-fit: cover; }
+.acc-av-btn { position: relative; border: 0; padding: 0; cursor: pointer; overflow: visible; }
+.acc-av-btn img { border-radius: 50%; }
+.acc-cam { position: absolute; right: -2px; bottom: -2px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); color: var(--accent); border: 1px solid var(--line); box-shadow: 0 1px 4px rgba(0,0,0,.18); }
+
+/* Menyu varag'i */
+.more-list { display: grid; gap: 4px; margin: 8px 0 4px; }
+.more-list a { display: flex; align-items: center; gap: 14px; padding: 13px 10px; border-radius: 14px; color: var(--ink); text-decoration: none; font-weight: 600; }
+.more-list a:active { background: var(--surface-2); }
+.more-list .mi { flex: none; width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); overflow: hidden; }
+.more-list .mi img { width: 100%; height: 100%; object-fit: cover; }
+.more-list small { display: block; color: var(--ink-2); font-weight: 500; font-size: .8rem; }
+/* O'qishdagi tezkor qidiruv */
+.qs .seg { margin: 4px 0 10px; }
+.qs-res { max-height: 52vh; overflow: auto; margin-top: 10px; }
+.qs-res .gloss { margin-bottom: 8px; }
