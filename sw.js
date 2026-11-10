@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v0.16.0";
+const VERSION = "v0.16.1";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -67,7 +67,7 @@ self.addEventListener("fetch", (e) => {
   const isCode = req.mode === "navigate" || /\.(js|css|html|webmanifest)$/.test(url.pathname) || url.pathname.endsWith("/");
   if (isCode) {
     e.respondWith(
-      fetch(req, { cache: "no-cache" }).then((res) => {
+      fetch(req).then((res) => {
         if (res && res.ok) { const copy = res.clone(); caches.open(RUNTIME).then((c) => c.put(req, copy)); }
         return res;
       }).catch(async () => (await caches.match(req)) || (req.mode === "navigate" ? caches.match("index.html") : undefined))

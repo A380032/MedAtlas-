@@ -30,19 +30,26 @@
   const canShare = () => !!(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia);
 
   /* ---------- Yordamchilar ---------- */
-  async function ctx() { return window.ACC?.ctx ? window.ACC.ctx() : {}; }
+  const withTimeout = (p, ms, msg) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error(msg)), ms))]);
+  async function ctx() {
+    if (!window.ACC?.ctx) return {};
+    return withTimeout(window.ACC.ctx(), 12000, "Hisob ma’lumoti yuklanmadi (kutish vaqti tugadi)");
+  }
   async function call(body) {
     const c = await ctx();
     if (!c.sb || !c.user) throw new Error("Avval hisobga kiring");
-    const { data: s } = await c.sb.auth.getSession();
+    const { data: s } = await withTimeout(c.sb.auth.getSession(), 10000, "Hisob sessiyasi ochilmadi");
     let r;
+    const ac = new AbortController(), tm = setTimeout(() => ac.abort(), 15000);
     try {
       r = await fetch(c.url + "/functions/v1/livekit", {
+        signal: ac.signal,
         method: "POST",
         headers: { "Content-Type": "application/json", apikey: c.key, Authorization: "Bearer " + (s.session?.access_token || "") },
         body: JSON.stringify(body)
       });
-    } catch { throw new Error("Internetga ulanib bo‘lmadi"); }
+    } catch { throw new Error("Server javob bermadi. Internetni tekshiring"); }
+    finally { clearTimeout(tm); }
     let j = {}; try { j = await r.json(); } catch { /* */ }
     if (!r.ok || j.error) { const e = new Error(j.error || "Xatolik"); e.kicked = !!j.kicked; throw e; }
     return j;
@@ -95,7 +102,9 @@
   async function pageList() {
     A.setChrome("Konsilium", false, "rooms");
     if (!navigator.onLine) return needNet(pageList);
-    const c = await ctx();
+    A.view.innerHTML = head("Yuklanmoqda…");
+    let c;
+    try { c = await ctx(); } catch (e) { return failBox(e.message, pageList); }
     if (!c.user) return needLogin();
     A.view.innerHTML = head("Suhbatda hamma gapiradi. Maruzada tinglovchilar qo‘l ko‘tarib so‘z oladi. Ekran orqali tushuntirish va yozishma ham bor.") + `
       <div class="tm-acts rm-top"><button class="btn primary" id="rmNew">${ico(I.plus, 18)} Xona ochish</button><button class="btn" id="rmCode">${ico(I.key, 18)} Kod bilan kirish</button><span id="rmAdm" style="display:contents"></span></div>
@@ -233,7 +242,9 @@
     A.setChrome("Konsilium", true, "rooms");
     const retry = () => pageRoom(id, query);
     if (!navigator.onLine) return needNet(retry);
-    const c = await ctx();
+    A.view.innerHTML = head("Xonaga ulanmoqda…");
+    let c;
+    try { c = await ctx(); } catch (e) { return failBox(e.message, retry); }
     if (!c.user) return needLogin();
     if (cur && cur.info.room.id === id) return buildRoom();
     const code = new URLSearchParams(query || "").get("code") || "";
@@ -566,8 +577,13 @@
 
   async function page(api, p, query) {
     A = api;
-    if (p[1]) return pageRoom(p[1], query);
-    return pageList();
+    try {
+      if (p[1]) return await pageRoom(p[1], query);
+      return await pageList();
+    } catch (e) {
+      console.error(e);
+      failBox("Xato: " + (e?.message || e), () => page(api, p, query));
+    }
   }
   window.ROOMS = { page, active: () => !!cur };
 })();
