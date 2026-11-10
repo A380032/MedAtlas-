@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v0.12.0";
+const VERSION = "v0.13.0";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -10,6 +10,8 @@ const SHELL_FILES = [
   "css/app.css",
   "js/app.js",
   "js/tests.js",
+  "js/account.js",
+  "vendor/supabase.min.js",
   "manifest.webmanifest",
   "data/precache.json",
   "icons/icon-192.png",
@@ -46,6 +48,7 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
+  if (url.origin !== location.origin) return;   // Supabase, Telegram va boshqa tashqi so'rovlar keshlanmaydi
 
   // Ma'lumot fayllari: avval internetdan (yangi kontent uchun), bo'lmasa xotiradan
   if (url.origin === location.origin && url.pathname.includes("/data/")) {

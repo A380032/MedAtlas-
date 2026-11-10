@@ -11,6 +11,7 @@
     },
     set(key, value) {
       try { localStorage.setItem("tq:" + key, JSON.stringify(value)); } catch { /* xotira yopiq */ }
+      if (window.ACC) window.ACC.touch(key);
     }
   };
 
@@ -168,7 +169,7 @@
 
   /* ---------- Sahifalar ---------- */
   const navLinks = [...document.querySelectorAll(".tabbar a")];
-  const setBtn = $("#setBtn");
+  const setBtn = $("#setBtn"), accBtn = $("#accBtn");
   function setChrome(title, back, tab, opt = {}) {
     view.classList.remove("wide");
     titleEl.textContent = title;
@@ -176,6 +177,7 @@
     document.title = opt.home ? "ALVORA Med" : title + " · ALVORA Med";
     backBtn.hidden = !back;
     setBtn.hidden = !opt.home;
+    accBtn.hidden = !opt.home;
     navLinks.forEach((a) => {
       a.removeAttribute("aria-current"); a.removeAttribute("data-soft");
       if (a.dataset.tab === tab) a.setAttribute("aria-current", "page");
@@ -298,7 +300,7 @@
           <span style="display:flex;flex-direction:column;gap:6px"><button class="btn" id="bkSave">Saqlash</button><button class="btn" id="bkLoad">Tiklash</button></span></div>
         <input type="file" id="bkFile" accept="application/json,.json" hidden>
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
-        <div class="setting-row small muted"><span>Versiya 0.12.0 · offline ishlaydi</span></div>
+        <div class="setting-row small muted"><span>Versiya 0.13.0 · offline ishlaydi</span></div>
       </section>`;
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
@@ -1690,7 +1692,7 @@
   }
 
   /* ---------- Test markazi (js/tests.js) uchun ko'prik ---------- */
-  const bridge = () => ({ store, esc, inline, plain, fold, svg, IC, ICX, chev, ring, sheet, toast, setChrome, emptyState, shuffle, view, $, loadJSON });
+  const bridge = () => ({ store, esc, inline, plain, fold, svg, IC, ICX, chev, ring, sheet, toast, setChrome, emptyState, shuffle, view, $, loadJSON, refresh: () => route() });
 
   /* ---------- Yo'naltirgich (router) ---------- */
   async function route() {
@@ -1707,6 +1709,7 @@
       else if (p[0] === "fan" && p.length === 3) await pageTopic(p[1], p[2], query);
       else if (p[0] === "fanlar") await pageFanlar();
       else if (p[0] === "assyst") { location.replace("#/testmarkazi"); return; }
+      else if (p[0] === "profil") await window.ACC.page(bridge());
       else if (p[0] === "testmarkazi") await window.TM.page(bridge(), p, query);
       else if (p[0] === "reja") pageReja();
       else if (p[0] === "yutuqlar") await pageYutuq();
@@ -1733,6 +1736,7 @@
   window.addEventListener("hashchange", route);
 
   applyPrefs();
+  window.ACC.boot(bridge());
   route();
 
   /* ---------- Offline ishlash ---------- */
