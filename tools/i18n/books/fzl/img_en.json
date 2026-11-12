@@ -945,5 +945,552 @@
     "smax": 16
    }
   ]
+ },
+ "p40_12.webp": {
+  "items": [
+   {
+    "box": [
+     576,
+     5,
+     591,
+     23
+    ],
+    "t": "B",
+    "f": "serifi",
+    "smax": 17
+   },
+   {
+    "box": [
+     44,
+     205,
+     82,
+     232
+    ],
+    "t": "St",
+    "f": "serif",
+    "smax": 24
+   },
+   {
+    "box": [
+     44,
+     339,
+     82,
+     366
+    ],
+    "t": "St",
+    "f": "serif",
+    "smax": 24
+   },
+   {
+    "box": [
+     112,
+     321,
+     260,
+     347
+    ],
+    "t": "Parabiotic focus",
+    "f": "serif",
+    "smax": 16
+   },
+   {
+    "box": [
+     398,
+     140,
+     419,
+     320
+    ],
+    "t": "phases of parabiosis",
+    "f": "serif",
+    "rot": 90,
+    "smax": 17
+   },
+   {
+    "box": [
+     528,
+     261,
+     668,
+     284
+    ],
+    "t": "Equalizing",
+    "f": "serif",
+    "smax": 17
+   },
+   {
+    "box": [
+     518,
+     343,
+     618,
+     365
+    ],
+    "t": "Paradoxical",
+    "f": "serif",
+    "smax": 17
+   },
+   {
+    "box": [
+     476,
+     400,
+     622,
+     423
+    ],
+    "t": "Inhibitory",
+    "f": "serif",
+    "smax": 17
+   }
+  ]
+ },
+ "p41_13.webp": {
+  "items": [
+   {
+    "box": [
+     192,
+     32,
+     558,
+     87
+    ],
+    "t": "1. Action potential arrives\nat the presynaptic terminal",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     160,
+     164,
+     595,
+     216
+    ],
+    "t": "2. Voltage-gated Ca²⁺ channels open,\nCa²⁺ enters the terminal",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     140,
+     294,
+     620,
+     347
+    ],
+    "t": "3. Vesicles fuse with the membrane,\nmediator is released by exocytosis",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     110,
+     425,
+     648,
+     478
+    ],
+    "t": "4. Mediator diffuses across the synaptic cleft\n(≈0.5 ms synaptic delay)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     175,
+     555,
+     590,
+     606
+    ],
+    "t": "5. Binds to postsynaptic receptors —\nion channels open",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     32,
+     680,
+     728,
+     742
+    ],
+    "t": "6. Postsynaptic potential:\nEPSP (depolarization) or IPSP (hyperpolarization)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     95,
+     812,
+     668,
+     871
+    ],
+    "t": "7. Mediator inactivation:\nenzyme (AChE), reuptake, diffusion",
+    "f": "dv",
+    "smax": 22
+   }
+  ]
+ },
+ "p50_15.webp": {
+  "items": [
+   {
+    "box": [
+     5,
+     301,
+     324,
+     320
+    ],
+    "t": "(a) Relationship of whole muscle and muscle fibers",
+    "f": "sansb",
+    "smax": 11,
+    "a": "l"
+   },
+   {
+    "box": [
+     389,
+     300,
+     532,
+     347
+    ],
+    "t": "(b) Relationship of\nmuscle fiber and\nmyofibrils",
+    "f": "sansb",
+    "smax": 11,
+    "a": "l"
+   }
+  ]
+ },
+ "p52_17.webp": {
+  "items": [
+   {
+    "box": [
+     252,
+     30,
+     615,
+     97
+    ],
+    "t": "1. Ca²⁺ binds to troponin C;\ntropomyosin shifts, exposing\nthe active sites on actin",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     243,
+     169,
+     625,
+     241
+    ],
+    "t": "2. Myosin head carrying ADP+Pi\nbinds to actin\n(a cross-bridge forms)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     98,
+     307,
+     497,
+     380
+    ],
+    "t": "3. Phosphate is released — the head\ntilts 45°: the “power stroke”,\nactin filament slides to the sarcomere centre",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     98,
+     479,
+     502,
+     532
+    ],
+    "t": "4. ADP is released, new ATP binds —\nthe head detaches from actin",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     574,
+     409,
+     750,
+     456
+    ],
+    "t": "While Ca²⁺ is present,\nthe cycle repeats",
+    "f": "dv",
+    "smax": 17,
+    "a": "l"
+   },
+   {
+    "box": [
+     33,
+     600,
+     352,
+     673
+    ],
+    "t": "Without ATP —\nthe head stays bound to actin:\nrigor mortis",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     423,
+     599,
+     718,
+     673
+    ],
+    "t": "5. ATP is hydrolysed —\nthe head is “cocked”\n(returns to the starting position)",
+    "f": "dv",
+    "smax": 20
+   }
+  ]
+ },
+ "p53_18.webp": {
+  "items": [
+   {
+    "box": [
+     9,
+     9,
+     292,
+     31
+    ],
+    "t": "A — single twitch (1 stimulus)",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   },
+   {
+    "box": [
+     113,
+     35,
+     182,
+     55
+    ],
+    "t": "contraction",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     354,
+     59,
+     436,
+     76
+    ],
+    "t": "latent period",
+    "f": "dv",
+    "a": "l",
+    "smax": 13
+   },
+   {
+    "box": [
+     220,
+     90,
+     306,
+     108
+    ],
+    "t": "relaxation",
+    "f": "dv",
+    "smax": 13,
+    "keep": [
+     "#3174ae"
+    ],
+    "lines": [
+     [
+      219,
+      110,
+      307,
+      90,
+      "#000000",
+      1
+     ]
+    ]
+   },
+   {
+    "box": [
+     10,
+     193,
+     520,
+     215
+    ],
+    "t": "B — incomplete tetanus (stimuli fall in the relaxation phase)",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   },
+   {
+    "box": [
+     10,
+     378,
+     520,
+     400
+    ],
+    "t": "C — complete tetanus (stimuli fall in the contraction phase)",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   },
+   {
+    "box": [
+     10,
+     562,
+     520,
+     584
+    ],
+    "t": "D — pessimum (very high frequency — contraction fades)",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   },
+   {
+    "box": [
+     215,
+     753,
+     542,
+     777
+    ],
+    "t": "Time, s (red lines — stimuli)",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p54_19.webp": {
+  "items": [
+   {
+    "box": [
+     402,
+     12,
+     430,
+     44
+    ],
+    "t": "B",
+    "f": "dvi",
+    "smax": 34,
+    "c": "#e06450"
+   },
+   {
+    "box": [
+     22,
+     354,
+     50,
+     389
+    ],
+    "t": "C",
+    "f": "dvi",
+    "smax": 34,
+    "c": "#e06450"
+   },
+   {
+    "box": [
+     568,
+     18,
+     673,
+     42
+    ],
+    "t": "Summation",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     62,
+     110,
+     182,
+     134
+    ],
+    "t": "Shortening",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     255,
+     141,
+     397,
+     162
+    ],
+    "t": "Relaxation",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     409,
+     125,
+     531,
+     169
+    ],
+    "t": "Single\ncontractions",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     9,
+     161,
+     119,
+     205
+    ],
+    "t": "Latent\nperiod",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     163,
+     300,
+     322,
+     322
+    ],
+    "t": "Time, 0.01 s",
+    "f": "dvi",
+    "smax": 16
+   }
+  ]
+ },
+ "p62_20.webp": {
+  "items": [
+   {
+    "box": [
+     428,
+     41,
+     752,
+     60
+    ],
+    "t": "Extracellular fluid ≈ 20 % (14 l)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     150,
+     143,
+     350,
+     181
+    ],
+    "t": "Intracellular fluid\n≈ 40 % (28 l)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     480,
+     143,
+     644,
+     181
+    ],
+    "t": "Interstitial fluid\n≈ 15 % (10.5 l)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     648,
+     134,
+     703,
+     189
+    ],
+    "t": "Plasma\n≈ 5 %\n(3.5 l)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     146,
+     280,
+     580,
+     299
+    ],
+    "t": "Total water ≈ 60 % of body mass (≈ 42 l in a 70-kg man)",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
  }
 }
