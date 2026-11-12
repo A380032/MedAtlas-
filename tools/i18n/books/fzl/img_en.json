@@ -4772,5 +4772,338 @@
     "smax": 16
    }
   ]
+ },
+ "p166_58.webp": {
+  "items": [
+   {
+    "box": [
+     268,
+     23,
+     507,
+     65
+    ],
+    "t": "CNS: stress, circadian rhythm,\ntemperature, emotions",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     214,
+     119,
+     557,
+     182
+    ],
+    "t": "Hypothalamus\nliberins (CRH, TRH, GnRH, GHRH)\nand statins (somatostatin, dopamine)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     312,
+     205,
+     398,
+     238
+    ],
+    "t": "portal\nblood system",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     488,
+     205,
+     704,
+     238
+    ],
+    "t": "axons\n(hypothalamo-hypophyseal tract)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     43,
+     272,
+     379,
+     317
+    ],
+    "t": "Adenohypophysis\nACTH, TSH, FSH, LH, GH, prolactin",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     417,
+     263,
+     703,
+     325
+    ],
+    "t": "Neurohypophysis\nvasopressin (ADH), oxytocin\n(synthesized in the hypothalamus)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     23,
+     379,
+     399,
+     439
+    ],
+    "t": "Peripheral glands:\nadrenal cortex, thyroid gland,\ngonads, liver (IGF-1)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     434,
+     391,
+     536,
+     426
+    ],
+    "t": "negative\nfeedback",
+    "f": "dv",
+    "smax": 13,
+    "c": "#b0443a"
+   },
+   {
+    "box": [
+     67,
+     493,
+     356,
+     536
+    ],
+    "t": "Peripheral hormones:\ncortisol, T₃/T₄, sex steroids",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p168_59.webp": {
+  "items": [
+   {
+    "box": [
+     292,
+     16,
+     360,
+     33
+    ],
+    "t": "Pituitary",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     416,
+     16,
+     446,
+     36
+    ],
+    "t": "Ht",
+    "f": "serif",
+    "smax": 18
+   },
+   {
+    "box": [
+     58,
+     141,
+     113,
+     159
+    ],
+    "t": "Tissues",
+    "f": "serif",
+    "smax": 12,
+    "a": "r"
+   },
+   {
+    "box": [
+     640,
+     156,
+     686,
+     173
+    ],
+    "t": "Bone",
+    "f": "serif",
+    "smax": 12,
+    "a": "r"
+   },
+   {
+    "box": [
+     700,
+     131,
+     749,
+     149
+    ],
+    "t": "Kidney",
+    "f": "serif",
+    "smax": 12,
+    "a": "r"
+   },
+   {
+    "box": [
+     646,
+     238,
+     690,
+     254
+    ],
+    "t": "Uterus",
+    "f": "serif",
+    "smax": 12,
+    "a": "r"
+   },
+   {
+    "box": [
+     58,
+     299,
+     112,
+     315
+    ],
+    "t": "Thyroid",
+    "f": "serif",
+    "smax": 12
+   },
+   {
+    "box": [
+     442,
+     514,
+     512,
+     536
+    ],
+    "t": "Adrenal",
+    "f": "serif",
+    "smax": 15,
+    "a": "l"
+   },
+   {
+    "box": [
+     670,
+     303,
+     746,
+     319
+    ],
+    "t": "Follicle",
+    "f": "serif",
+    "smax": 13
+   },
+   {
+    "box": [
+     642,
+     379,
+     740,
+     396
+    ],
+    "t": "Corpus luteum",
+    "f": "serif",
+    "smax": 13
+   },
+   {
+    "box": [
+     64,
+     362,
+     129,
+     391
+    ],
+    "t": "Mammary\ngland",
+    "f": "serif",
+    "smax": 13
+   },
+   {
+    "box": [
+     175,
+     176,
+     349,
+     205
+    ],
+    "t": "Somatotropin (GH)",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     178,
+     252,
+     349,
+     282
+    ],
+    "t": "Thyrotropin (TSH)",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     180,
+     328,
+     348,
+     356
+    ],
+    "t": "Lipotropin",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     180,
+     403,
+     348,
+     431
+    ],
+    "t": "Prolactin (LTH)",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     180,
+     478,
+     346,
+     507
+    ],
+    "t": "Adrenocorticotropin\n(ACTH)",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     436,
+     175,
+     604,
+     205
+    ],
+    "t": "Vasopressin\n(antidiuretin, ADH)",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     436,
+     249,
+     603,
+     280
+    ],
+    "t": "Oxytocin",
+    "f": "serifb",
+    "smax": 13
+   },
+   {
+    "box": [
+     437,
+     326,
+     605,
+     377
+    ],
+    "t": "Gonadotropic hormones:\nfollicle-stimulating hormone\n(FSH), luteinizing hormone (LH)",
+    "f": "serifb",
+    "smax": 12
+   },
+   {
+    "box": [
+     437,
+     422,
+     606,
+     454
+    ],
+    "t": "Melanocyte-stimulating\nhormone (MSH)",
+    "f": "serifb",
+    "smax": 13
+   }
+  ]
  }
 }
