@@ -125,7 +125,7 @@ SIKLIN = re.compile(r"(?:Siklin|Cyclin) D~1~")
 
 
 def fix(s, book):
-    if not s or not re.search(r"\d|[+−•]", s):
+    if not s:
         return s, []
     hits = []
     gcs = bool(GCS.search(s))

@@ -58,9 +58,9 @@ s0706	cGMF hosil bo‘ladi
 s0707	Natriyuretik peptid retseptori
 s0708	G-oqsillar tizimi
 s0709	**G-oqsillar** — GTF ni bog‘lovchi geterotrimer oqsillar (α, β, γ subbirliklar). Tinch holatda α-subbirlik GDF bilan bog‘langan. Retseptor faollanganda GDF GTF ga almashadi, α-GTF ajralib effektor fermentga ta’sir qiladi; α-subbirlikning o‘z GTFaza faolligi GTF ni GDF ga gidrolizlab signalni to‘xtatadi.
-s0710	**Gs** — adenilatsiklazani faollashtiradi (cAMF ↑);
-s0711	**Gi** — adenilatsiklazani ingibirlaydi (cAMF ↓);
-s0712	**Gq** — fosfolipaza C ni faollashtiradi. **Adenilatsiklaza tizimi:** adenilatsiklaza ATF dan **cAMF** hosil qiladi. cAMF **protein kinaza A** ning boshqaruvchi subbirliklariga bog‘lanib, katalitik subbirliklarni ajratadi; ular maqsad oqsillarni fosforlaydi (glikogenfosforilaza kinazasi, gormonga sezgir lipaza va boshqalar). cAMF **fosfodiesteraza** ta’sirida AMF gacha parchalanadi (kofein va teofillin fosfodiesterazani ingibirlab, cAMF ta’sirini uzaytiradi).
+s0710	**G~s~** — adenilatsiklazani faollashtiradi (cAMF ↑);
+s0711	**G~i~** — adenilatsiklazani ingibirlaydi (cAMF ↓);
+s0712	**G~q~** — fosfolipaza C ni faollashtiradi. **Adenilatsiklaza tizimi:** adenilatsiklaza ATF dan **cAMF** hosil qiladi. cAMF **protein kinaza A** ning boshqaruvchi subbirliklariga bog‘lanib, katalitik subbirliklarni ajratadi; ular maqsad oqsillarni fosforlaydi (glikogenfosforilaza kinazasi, gormonga sezgir lipaza va boshqalar). cAMF **fosfodiesteraza** ta’sirida AMF gacha parchalanadi (kofein va teofillin fosfodiesterazani ingibirlab, cAMF ta’sirini uzaytiradi).
 s0713	**Inozitolfosfat tizimi:** fosfolipaza C membranadagi fosfatidilinozitol-4,5-bisfosfat (FIF~2~) ni ikkita ikkilamchi vositachiga parchalaydi: **inozitol-1,4,5-trifosfat (IF~3~)** — endoplazmatik to‘rdan Ca^2+^
 s0714	ni chiqaradi; **diatsilglitserin (DAG)** — Ca^2+^ bilan birga **protein kinaza C** ni faollashtiradi. Ca^2+^ ning ko‘p ta’sirlari **kalmodulin** oqsili orqali amalga oshadi.
 s0715	Rasm 3.2
@@ -94,7 +94,7 @@ s0742	−, ^•^OH) ko‘p to‘yinmagan yog‘ kislotalarini oksidlaydi; membra
 s0743	**Fosfolipazalarning faollanishi** (ishemiya, Ca^2+^ ortiqchasi) — fosfolipidlar parchalanadi.
 s0744	**Detergent ta’siri** — o‘t kislotalari, yog‘ kislotalari ortiqchasi.
 s0745	**Mexanik va osmotik shikastlanish**, komplement tizimining membranani teshuvchi kompleksi, bakterial toksinlar.
-s0746	**Tug‘ma nuqsonlar** — membrana skeleti oqsillari (spektrin) nuqsoni — irsiy sferotsitoz; ion kanallari kasalliklari (kanalopatiyalar) — mukovistsidoz (CFTR Cl--kanali).
+s0746	**Tug‘ma nuqsonlar** — membrana skeleti oqsillari (spektrin) nuqsoni — irsiy sferotsitoz; ion kanallari kasalliklari (kanalopatiyalar) — mukovistsidoz (CFTR Cl^-^-kanali).
 s0747	6. Laboratoriya ishi
 s0748	1-ish: eritrotsitlarning osmotik chidamliligini aniqlash
 s0749	0,7 % dan 0,2 % gacha (har 0,02–0,05 % farq bilan) NaCl eritmalaridan 1 ml dan probirkalarga quying.
@@ -180,8 +180,8 @@ s0828	G-oqsil bilan bog‘langan
 s0829	Guanilatsiklaza
 s0830	Hujayra ichidagi retseptor
 s0831	Vabo toksini qanday ta’sir qiladi?
-s0832	Gi-oqsilni bloklaydi
-s0833	Gs-oqsilni doimiy faol holatda saqlaydi
+s0832	G~i~-oqsilni bloklaydi
+s0833	G~s~-oqsilni doimiy faol holatda saqlaydi
 s0834	Fosfodiesterazani faollashtiradi
 s0835	Na^+^,K^+^-ATFazani ingibirlaydi
 s0836	Adenilatsiklazani parchalaydi
@@ -193,7 +193,7 @@ s0841	Adenilatsiklazani
 s0842	Fosfolipaza C ni
 s0843	Kofein qanday ta’sir orqali cAMF miqdorini oshiradi?
 s0844	Adenilatsiklazani faollashtiradi
-s0845	Gs-oqsilni faollashtiradi
+s0845	G~s~-oqsilni faollashtiradi
 s0846	Fosfodiesterazani ingibirlaydi
 s0847	Protein kinaza A ni faollashtiradi
 s0848	Retseptorlarni ko‘paytiradi

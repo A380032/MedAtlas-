@@ -836,7 +836,7 @@
       "fermentlarning 7 sinfini va nomlanish tamoyillarini;",
       "ferment ta’sir mexanizmini (aktivlanish energiyasining kamayishi, ferment–substrat kompleksi);",
       "fermentlarning xususiyatlari: spetsifiklik, termolabillik, pH ga bog‘liqlik;",
-      "Mixaelis–Menten tenglamasi, Km va Vmax ma’nosini;",
+      "Mixaelis–Menten tenglamasi, K~m~ va V~max~ ma’nosini;",
       "ingibitsiya turlarini va dori vositalari — ferment ingibitorlarini;",
       "fermentlar faolligini boshqarish usullarini;",
       "izofermentlar va organospetsifik fermentlarning diagnostik ahamiyatini."
@@ -1074,7 +1074,7 @@
       },
       {
        "type": "p",
-       "text": "**Substrat konsentratsiyasiga bog‘liqlik.** Substrat kam bo‘lganda tezlik unga to‘g‘ri proporsional oshadi; substrat ko‘paygan sari barcha ferment molekulalari band bo‘lib, tezlik maksimal qiymatga (Vmax) yaqinlashadi — **giperbolik egri chiziq**. Bu bog‘liqlik **Mixaelis–Menten tenglamasi** bilan ifodalanadi:"
+       "text": "**Substrat konsentratsiyasiga bog‘liqlik.** Substrat kam bo‘lganda tezlik unga to‘g‘ri proporsional oshadi; substrat ko‘paygan sari barcha ferment molekulalari band bo‘lib, tezlik maksimal qiymatga (V~max~) yaqinlashadi — **giperbolik egri chiziq**. Bu bog‘liqlik **Mixaelis–Menten tenglamasi** bilan ifodalanadi:"
       },
       {
        "type": "p",
@@ -1348,7 +1348,7 @@
     "Ferment ta’sirining mexanizmini tushuntiring.",
     "Fermentlarning spetsifiklik turlarini sanang.",
     "Reaksiya tezligi harorat va pH ga qanday bog‘liq?",
-    "Mixaelis–Menten tenglamasini yozing. Km nimani bildiradi?",
+    "Mixaelis–Menten tenglamasini yozing. K~m~ nimani bildiradi?",
     "Raqobatli va noraqobatli ingibitsiyaning farqi nimada?",
     "Qaysi dori vositalari ferment ingibitorlari hisoblanadi?",
     "Fermentlar faolligi qanday usullar bilan boshqariladi?",
@@ -1368,10 +1368,10 @@
      "answer": 4
     },
     {
-     "q": "Mixaelis konstantasi (Km) nimani bildiradi?",
+     "q": "Mixaelis konstantasi (K~m~) nimani bildiradi?",
      "options": [
       "Maksimal reaksiya tezligini",
-      "Tezlik Vmax ning yarmiga teng bo‘lgan substrat konsentratsiyasini",
+      "Tezlik V~max~ ning yarmiga teng bo‘lgan substrat konsentratsiyasini",
       "Ferment konsentratsiyasini",
       "Ingibitor konsentratsiyasini",
       "Reaksiya muvozanat konstantasini"
@@ -1381,11 +1381,11 @@
     {
      "q": "Raqobatli ingibitsiyada kinetik ko‘rsatkichlar qanday o‘zgaradi?",
      "options": [
-      "Km o‘zgarmaydi, Vmax kamayadi",
-      "Km va Vmax kamayadi",
+      "K~m~ o‘zgarmaydi, V~max~ kamayadi",
+      "K~m~ va V~max~ kamayadi",
       "Ikkalasi ham o‘zgarmaydi",
-      "Vmax ortadi",
-      "Km ortadi, Vmax o‘zgarmaydi"
+      "V~max~ ortadi",
+      "K~m~ ortadi, V~max~ o‘zgarmaydi"
      ],
      "answer": 4
     },
@@ -1568,16 +1568,16 @@
      "back": "Oksidoreduktaza, transferaza, gidrolaza, liaza, izomeraza, ligaza, translokaza"
     },
     {
-     "front": "Km",
+     "front": "K~m~",
      "back": "v = V~max~/2 dagi [S]; kichik K~m~ — yuqori moyillik"
     },
     {
      "front": "Raqobatli ingibitsiya",
-     "back": "Km ↑, Vmax o‘zgarmaydi (statinlar, metotreksat, malonat)"
+     "back": "K~m~ ↑, V~max~ o‘zgarmaydi (statinlar, metotreksat, malonat)"
     },
     {
      "front": "Noraqobatli ingibitsiya",
-     "back": "Vmax ↓, Km o‘zgarmaydi"
+     "back": "V~max~ ↓, K~m~ o‘zgarmaydi"
     },
     {
      "front": "Qaytmas ingibitsiya",
@@ -1870,9 +1870,9 @@
        "type": "list",
        "ordered": false,
        "items": [
-        "**Gs** — adenilatsiklazani faollashtiradi (cAMF ↑);",
-        "**Gi** — adenilatsiklazani ingibirlaydi (cAMF ↓);",
-        "**Gq** — fosfolipaza C ni faollashtiradi. **Adenilatsiklaza tizimi:** adenilatsiklaza ATF dan **cAMF** hosil qiladi. cAMF **protein kinaza A** ning boshqaruvchi subbirliklariga bog‘lanib, katalitik subbirliklarni ajratadi; ular maqsad oqsillarni fosforlaydi (glikogenfosforilaza kinazasi, gormonga sezgir lipaza va boshqalar). cAMF **fosfodiesteraza** ta’sirida AMF gacha parchalanadi (kofein va teofillin fosfodiesterazani ingibirlab, cAMF ta’sirini uzaytiradi)."
+        "**G~s~** — adenilatsiklazani faollashtiradi (cAMF ↑);",
+        "**G~i~** — adenilatsiklazani ingibirlaydi (cAMF ↓);",
+        "**G~q~** — fosfolipaza C ni faollashtiradi. **Adenilatsiklaza tizimi:** adenilatsiklaza ATF dan **cAMF** hosil qiladi. cAMF **protein kinaza A** ning boshqaruvchi subbirliklariga bog‘lanib, katalitik subbirliklarni ajratadi; ular maqsad oqsillarni fosforlaydi (glikogenfosforilaza kinazasi, gormonga sezgir lipaza va boshqalar). cAMF **fosfodiesteraza** ta’sirida AMF gacha parchalanadi (kofein va teofillin fosfodiesterazani ingibirlab, cAMF ta’sirini uzaytiradi)."
        ],
        "start": 1
       },
@@ -1975,7 +1975,7 @@
        "items": [
         "**Detergent ta’siri** — o‘t kislotalari, yog‘ kislotalari ortiqchasi.",
         "**Mexanik va osmotik shikastlanish**, komplement tizimining membranani teshuvchi kompleksi, bakterial toksinlar.",
-        "**Tug‘ma nuqsonlar** — membrana skeleti oqsillari (spektrin) nuqsoni — irsiy sferotsitoz; ion kanallari kasalliklari (kanalopatiyalar) — mukovistsidoz (CFTR Cl--kanali)."
+        "**Tug‘ma nuqsonlar** — membrana skeleti oqsillari (spektrin) nuqsoni — irsiy sferotsitoz; ion kanallari kasalliklari (kanalopatiyalar) — mukovistsidoz (CFTR Cl^-^-kanali)."
        ],
        "start": 1
       },
@@ -2193,8 +2193,8 @@
     {
      "q": "Vabo toksini qanday ta’sir qiladi?",
      "options": [
-      "Gi-oqsilni bloklaydi",
-      "Gs-oqsilni doimiy faol holatda saqlaydi",
+      "G~i~-oqsilni bloklaydi",
+      "G~s~-oqsilni doimiy faol holatda saqlaydi",
       "Fosfodiesterazani faollashtiradi",
       "Na^+^,K^+^-ATFazani ingibirlaydi",
       "Adenilatsiklazani parchalaydi"
@@ -2216,7 +2216,7 @@
      "q": "Kofein qanday ta’sir orqali cAMF miqdorini oshiradi?",
      "options": [
       "Adenilatsiklazani faollashtiradi",
-      "Gs-oqsilni faollashtiradi",
+      "G~s~-oqsilni faollashtiradi",
       "Fosfodiesterazani ingibirlaydi",
       "Protein kinaza A ni faollashtiradi",
       "Retseptorlarni ko‘paytiradi"
@@ -2307,7 +2307,7 @@
      "back": "Na^+^ gradienti hisobiga: SGLT1, SGLT2"
     },
     {
-     "front": "Gs / Gi / Gq",
+     "front": "G~s~ / G~i~ / G~q~",
      "back": "Adenilatsiklaza ↑ / ↓ / fosfolipaza C ↑"
     },
     {
@@ -2613,7 +2613,7 @@
         ],
         [
          "Oligomitsin",
-         "ATF-sintaza (Fo)",
+         "ATF-sintaza (F~o~)",
          "ATF sintezi va (nafas nazorati tufayli) nafas to‘xtaydi"
         ],
         [
@@ -2915,7 +2915,7 @@
       "III kompleksni bloklaydi",
       "Protonlarni membranadan o‘tkazadi",
       "Sitoxrom c ni bog‘laydi",
-      "ATF-sintazaning proton kanalini (Fo) bloklaydi"
+      "ATF-sintazaning proton kanalini (F~o~) bloklaydi"
      ],
      "answer": 4
     },
@@ -3644,7 +3644,7 @@
       "Piruvat va KoA",
       "Ca^2+^ va insulin",
       "Atsetil-KoA va NADH",
-      "AMF va Fn"
+      "AMF va F~n~"
      ],
      "answer": 3
     },
@@ -3969,7 +3969,7 @@
          "Jigar, me’da osti bezi β-hujayralari"
         ],
         [
-         "Km glyukoza uchun",
+         "K~m~ glyukoza uchun",
          "≈ 0,1 mmol/l (moyilligi yuqori)",
          "≈ 10 mmol/l (moyilligi past)"
         ],
@@ -4079,7 +4079,7 @@
         [
          "Glyukagon (ochlik)",
          "Jigar",
-         "Gs → adenilatsiklaza → cAMF → protein kinaza A → fosforilaza kinazasi → fosforilaza fosforlanadi; glikogensintaza fosforlanadi",
+         "G~s~ → adenilatsiklaza → cAMF → protein kinaza A → fosforilaza kinazasi → fosforilaza fosforlanadi; glikogensintaza fosforlanadi",
          "Glikogenoliz ↑, glyukoza qonga"
         ],
         [
@@ -4430,7 +4430,7 @@
      "q": "Glyukokinazaning geksokinazadan farqi qaysi?",
      "options": [
       "Barcha to‘qimalarda bo‘ladi",
-      "Km juda past",
+      "K~m~ juda past",
       "Glyukoza-6-fosfat bilan ingibirlanadi",
       "K~m~ yuqori, glyukoza-6-fosfat bilan ingibirlanmaydi, insulin bilan induksiyalanadi",
       "Faqat mushakda bo‘ladi"
@@ -6078,7 +6078,7 @@
      "title": "Masala 3",
      "text": "Mukovistsidoz bilan og‘rigan 5 yoshli bola og‘irligi past, ishtahasi yaxshi bo‘lsa ham ozg‘in. Najas ko‘p miqdorda, yog‘li, hidi o‘tkir; najasda neytral yog‘ ko‘p, elastaza-1 keskin kamaygan. Kechqurun yaxshi ko‘rmaydi.",
      "ask": "Steatoreyaning sababi nima? “Tovuq ko‘rligi”ni tushuntiring. Qanday davolash kerak?",
-     "answer": "Mukovistsidozda CFTR Cl--kanali nuqsoni tufayli me’da osti bezi sekreti quyuq bo‘lib, yo‘llarni berkitadi; bez to‘qimasi fibrozga uchraydi — lipaza va boshqa fermentlar ichakka tushmaydi (ekzokrin yetishmovchilik). TAG parchalanmaydi — najasda neytral yog‘ ko‘p. Yog‘da eruvchi vitaminlar so‘rilmaydi: A vitamini yetishmasligi — rodopsin sintezi buzilib, qorong‘ida ko‘rish yomonlashadi. Davolash: ovqat bilan birga pankreatik ferment preparatlari (pankreatin), yog‘da eruvchi vitaminlar (A, D, E, K), kaloriyasi yuqori ovqat."
+     "answer": "Mukovistsidozda CFTR Cl^-^-kanali nuqsoni tufayli me’da osti bezi sekreti quyuq bo‘lib, yo‘llarni berkitadi; bez to‘qimasi fibrozga uchraydi — lipaza va boshqa fermentlar ichakka tushmaydi (ekzokrin yetishmovchilik). TAG parchalanmaydi — najasda neytral yog‘ ko‘p. Yog‘da eruvchi vitaminlar so‘rilmaydi: A vitamini yetishmasligi — rodopsin sintezi buzilib, qorong‘ida ko‘rish yomonlashadi. Davolash: ovqat bilan birga pankreatik ferment preparatlari (pankreatin), yog‘da eruvchi vitaminlar (A, D, E, K), kaloriyasi yuqori ovqat."
     }
    ],
    "cards": [
@@ -17924,7 +17924,7 @@
          "ENaC, Na^+^/H^+^ almashinuvchisi (NHE3), nutrientlar bilan simport"
         ],
         [
-         "Cl-",
+         "Cl^-^",
          "Cl^-^/HCO~3~^-^ almashinuvi; sekretsiya — CFTR kanali (cAMF orqali)"
         ],
         [
@@ -18234,7 +18234,7 @@
      "options": [
       "Na^+^,K^+^-ATFazani ingibirlaydi",
       "SGLT1 ni to‘sadi",
-      "Gs-oqsilni ADF-ribozillab cAMF ni oshiradi",
+      "G~s~-oqsilni ADF-ribozillab cAMF ni oshiradi",
       "Laktazani parchalaydi",
       "Gistaminni ajratadi"
      ],
@@ -20502,7 +20502,7 @@
        "rows": [
         [
          "Glyukagon (α-hujayralar)",
-         "Gs → cAMF → PKA (jigar, yog‘ to‘qimasi)",
+         "G~s~ → cAMF → PKA (jigar, yog‘ to‘qimasi)",
          "Jigarda glikogenoliz va glyukoneogenez ↑, glikoliz va lipogenez ↓, ketogenez ↑"
         ],
         [
@@ -21306,7 +21306,7 @@
          "—"
         ],
         [
-         "Cl-",
+         "Cl^-^",
          "110–250 mmol",
          "—"
         ],
@@ -22010,7 +22010,7 @@
          "GAMK",
          "Glutamat → glutamatdekarboksilaza (B~6~)",
          "Qamrab olish, GAMK-transaminaza → suksinat (GAMK shunti)",
-         "Asosiy tormozlovchi: GAMK-A (Cl- kanali — benzodiazepinlar, barbituratlar, etanol kuchaytiradi), GAMK-B"
+         "Asosiy tormozlovchi: GAMK-A (Cl^-^ kanali — benzodiazepinlar, barbituratlar, etanol kuchaytiradi), GAMK-B"
         ],
         [
          "Glitsin",

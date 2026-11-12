@@ -134,7 +134,7 @@ s0344 the structure of the active site and the allosteric site;
 s0345 the 7 classes of enzymes and the principles of naming;
 s0346 the mechanism of enzyme action (lowering of the activation energy, the enzyme–substrate complex);
 s0347 the properties of enzymes: specificity, thermolability, pH dependence;
-s0348 the Michaelis–Menten equation and the meaning of Km and Vmax;
+s0348 the Michaelis–Menten equation and the meaning of K~m~ and V~max~;
 s0349 the types of inhibition and drugs that are enzyme inhibitors;
 s0350 the methods of regulating enzyme activity;
 s0351 the diagnostic significance of isoenzymes and organ-specific enzymes.
@@ -203,7 +203,7 @@ s0413 Alkaline phosphatase
 s0414 Acid phosphatase (lysosomes)
 s0415 5. Kinetics of enzyme reactions
 s0416 **Dependence on enzyme concentration.** When the substrate is in excess, the reaction rate is directly proportional to the amount of enzyme. The determination of enzyme activity is based on this.
-s0417 **Dependence on substrate concentration.** When the substrate is low, the rate increases in direct proportion to it; as the substrate increases, all enzyme molecules become occupied and the rate approaches its maximum (Vmax) — a **hyperbolic curve**. This dependence is expressed by the **Michaelis–Menten equation**:
+s0417 **Dependence on substrate concentration.** When the substrate is low, the rate increases in direct proportion to it; as the substrate increases, all enzyme molecules become occupied and the rate approaches its maximum (V~max~) — a **hyperbolic curve**. This dependence is expressed by the **Michaelis–Menten equation**:
 s0418 v = V~max~ · [S] / (K~m~ + [S])
 s0419 The **Michaelis constant (K~m~)** is the substrate concentration (mol/l) at which the reaction rate equals half the maximum rate. K~m~ shows the **affinity** of the enzyme for the substrate: the smaller the K~m~, the higher the affinity. For example, the K~m~ of hexokinase for glucose is ≈ 0.1 mmol/l (high affinity, it works even when glucose is low), while that of glucokinase is ≈ 10 mmol/l (it works only when glucose is high — in the liver after a meal).
 s0420 To find K~m~ and V~max~ precisely, the double-reciprocal plot — the **Lineweaver–Burk plot** (1/v against 1/[S]) — is used: the straight line crosses the y-axis at 1/V~max~ and the x-axis at −1/K~m~.

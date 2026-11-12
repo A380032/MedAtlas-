@@ -134,7 +134,7 @@ s0344	faol markaz va allosterik markaz tuzilishini;
 s0345	fermentlarning 7 sinfini va nomlanish tamoyillarini;
 s0346	ferment ta’sir mexanizmini (aktivlanish energiyasining kamayishi, ferment–substrat kompleksi);
 s0347	fermentlarning xususiyatlari: spetsifiklik, termolabillik, pH ga bog‘liqlik;
-s0348	Mixaelis–Menten tenglamasi, Km va Vmax ma’nosini;
+s0348	Mixaelis–Menten tenglamasi, K~m~ va V~max~ ma’nosini;
 s0349	ingibitsiya turlarini va dori vositalari — ferment ingibitorlarini;
 s0350	fermentlar faolligini boshqarish usullarini;
 s0351	izofermentlar va organospetsifik fermentlarning diagnostik ahamiyatini.
@@ -203,7 +203,7 @@ s0413	Ishqoriy fosfataza
 s0414	Kislotali fosfataza (lizosomalar)
 s0415	5. Ferment reaksiyalari kinetikasi
 s0416	**Ferment konsentratsiyasiga bog‘liqlik.** Substrat ortiqcha bo‘lganda reaksiya tezligi ferment miqdoriga to‘g‘ri proporsional. Fermentlar faolligini aniqlash shunga asoslangan.
-s0417	**Substrat konsentratsiyasiga bog‘liqlik.** Substrat kam bo‘lganda tezlik unga to‘g‘ri proporsional oshadi; substrat ko‘paygan sari barcha ferment molekulalari band bo‘lib, tezlik maksimal qiymatga (Vmax) yaqinlashadi — **giperbolik egri chiziq**. Bu bog‘liqlik **Mixaelis–Menten tenglamasi** bilan ifodalanadi:
+s0417	**Substrat konsentratsiyasiga bog‘liqlik.** Substrat kam bo‘lganda tezlik unga to‘g‘ri proporsional oshadi; substrat ko‘paygan sari barcha ferment molekulalari band bo‘lib, tezlik maksimal qiymatga (V~max~) yaqinlashadi — **giperbolik egri chiziq**. Bu bog‘liqlik **Mixaelis–Menten tenglamasi** bilan ifodalanadi:
 s0418	v = V~max~ · [S] / (K~m~ + [S])
 s0419	**Mixaelis konstantasi (K~m~)** — reaksiya tezligi maksimal tezlikning yarmiga teng bo‘lgan substrat konsentratsiyasi (mol/l). K~m~ fermentning substratga **moyilligini (affinitet)** ko‘rsatadi: K~m~ qancha kichik bo‘lsa, moyillik shuncha yuqori. Masalan, geksokinazaning glyukoza uchun K~m~ ≈ 0,1 mmol/l (moyillik yuqori, glyukoza kam bo‘lsa ham ishlaydi), glyukokinazaniki ≈ 10 mmol/l (faqat glyukoza ko‘p bo‘lganda — ovqatdan keyin jigarda ishlaydi).
 s0420	K~m~ va V~max~ ni aniq topish uchun teskari qiymatlar grafigi — **Laynuiver–Berk grafigi** (1/v ning 1/[S] ga bog‘liqligi) ishlatiladi: to‘g‘ri chiziq y o‘qini 1/V~max~ da, x o‘qini −1/K~m~ da kesadi.

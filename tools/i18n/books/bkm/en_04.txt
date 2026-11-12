@@ -58,9 +58,9 @@ s0706 cGMP is formed
 s0707 Natriuretic peptide receptor
 s0708 The G protein system
 s0709 **G proteins** are GTP-binding heterotrimeric proteins (α, β, γ subunits). At rest the α subunit is bound to GDP. When the receptor is activated, GDP is exchanged for GTP, α-GTP dissociates and acts on the effector enzyme; the α subunit’s own GTPase activity hydrolyzes GTP to GDP and terminates the signal.
-s0710 **Gs** — activates adenylate cyclase (cAMP ↑);
-s0711 **Gi** — inhibits adenylate cyclase (cAMP ↓);
-s0712 **Gq** — activates phospholipase C. **The adenylate cyclase system:** adenylate cyclase forms **cAMP** from ATP. cAMP binds to the regulatory subunits of **protein kinase A** and releases the catalytic subunits; these phosphorylate target proteins (phosphorylase kinase, hormone-sensitive lipase and others). cAMP is broken down to AMP by **phosphodiesterase** (caffeine and theophylline inhibit phosphodiesterase and prolong the action of cAMP).
+s0710 **G~s~** — activates adenylate cyclase (cAMP ↑);
+s0711 **G~i~** — inhibits adenylate cyclase (cAMP ↓);
+s0712 **G~q~** — activates phospholipase C. **The adenylate cyclase system:** adenylate cyclase forms **cAMP** from ATP. cAMP binds to the regulatory subunits of **protein kinase A** and releases the catalytic subunits; these phosphorylate target proteins (phosphorylase kinase, hormone-sensitive lipase and others). cAMP is broken down to AMP by **phosphodiesterase** (caffeine and theophylline inhibit phosphodiesterase and prolong the action of cAMP).
 s0713 **The inositol phosphate system:** phospholipase C cleaves membrane phosphatidylinositol-4,5-bisphosphate (PIP~2~) into two second messengers: **inositol-1,4,5-trisphosphate (IP~3~)** — releases Ca^2+^ from the endoplasmic
 s0714 reticulum; **diacylglycerol (DAG)** — together with Ca^2+^ activates **protein kinase C**. Many effects of Ca^2+^ are carried out through the protein **calmodulin**.
 s0715 Figure 3.2
@@ -94,7 +94,7 @@ s0742 −, ^•^OH) oxidize polyunsaturated fatty acids; membrane permeability i
 s0743 **Activation of phospholipases** (ischemia, excess Ca^2+^) — phospholipids are broken down.
 s0744 **Detergent action** — excess bile acids and fatty acids.
 s0745 **Mechanical and osmotic damage**, the membrane attack complex of the complement system, bacterial toxins.
-s0746 **Congenital defects** — a defect of membrane skeleton proteins (spectrin) — hereditary spherocytosis; ion channel diseases (channelopathies) — cystic fibrosis (the CFTR Cl- channel).
+s0746 **Congenital defects** — a defect of membrane skeleton proteins (spectrin) — hereditary spherocytosis; ion channel diseases (channelopathies) — cystic fibrosis (the CFTR Cl^-^ channel).
 s0747 6. Laboratory work
 s0748 Experiment 1: determination of the osmotic resistance of erythrocytes
 s0749 Pour 1 ml each of NaCl solutions from 0.7% to 0.2% (in steps of 0.02–0.05%) into test tubes.
@@ -180,8 +180,8 @@ s0828 G protein–coupled
 s0829 Guanylate cyclase
 s0830 Intracellular receptor
 s0831 How cholera toxin acts:
-s0832 Blocks the Gi protein
-s0833 Keeps the Gs protein permanently active
+s0832 Blocks the G~i~ protein
+s0833 Keeps the G~s~ protein permanently active
 s0834 Activates phosphodiesterase
 s0835 Inhibits Na^+^,K^+^-ATPase
 s0836 Breaks down adenylate cyclase
@@ -193,7 +193,7 @@ s0841 Adenylate cyclase
 s0842 Phospholipase C
 s0843 How caffeine increases cAMP:
 s0844 Activates adenylate cyclase
-s0845 Activates the Gs protein
+s0845 Activates the G~s~ protein
 s0846 Inhibits phosphodiesterase
 s0847 Activates protein kinase A
 s0848 Increases the number of receptors
