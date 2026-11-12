@@ -11,7 +11,7 @@ Tuzatiladigan xatolar:
  3) jadval kataklarida bo'linib qolgan so'zlar (Gemoside rin -> Gemosiderin);
  4) yolg'iz * (ilova kursivni ko'rsatmaydi, ekranda * bo'lib chiqadi) olib tashlanadi;
     juft bo'lmagan ** (9-mavzu, carcinoma in situ) tuzatiladi;
- 6) ro'yxat bandiga yopishgan kichik sarlavhalar alohida blokka ajratiladi;
+ 6) ro'yxat bandiga yopishgan kichik sarlavhalar va kirish gaplari alohida blokka ajratiladi;
  5) ** ichidagi chetki bo'shliqlar, ikkitalik bo'shliqlar, "4- 11" kabi bo'shliqlar.
 """
 import json, re
@@ -168,6 +168,50 @@ for ti, (tu, te) in enumerate(zip(D["uz"]["topics"], D["en"]["topics"])):
             nh += split_heads(su["blocks"], se["blocks"], f"t{ti} {key}")
 if nh:
     log.append(f"{nh} ta yopishgan sarlavha alohida blokka ajratildi")
+
+
+# ---------- 1c) ro'yxatning oxirgi bandiga yopishib qolgan kirish gapi ("... va boshqalar. **Vazifalari:**")
+# keyingi ro'yxatdan oldin alohida paragraf bo'ladi
+BOLD_START = re.compile(r"(?<=[.;)]) (?=\*\*)")
+SENT = re.compile(r"(?<=[.;)]) (?=[A-ZА-ЯЁ‘“\"])")
+
+
+def tail_split(x):
+    if not x.rstrip().endswith(":"):
+        return None
+    m = list(BOLD_START.finditer(x)) or list(SENT.finditer(x))
+    if not m:
+        return None
+    k = m[-1].start()
+    return x[:k], x[k + 1:]
+
+
+def split_intro(bl_uz, bl_en, where):
+    n, i = 0, 0
+    while i < len(bl_uz):
+        a, b = bl_uz[i], bl_en[i]
+        if a["type"] == "box":
+            n += split_intro(a["parts"], b["parts"], where)
+        if a["type"] == "list" and i + 1 < len(bl_uz) and bl_uz[i + 1]["type"] == "list":
+            su, se = tail_split(a["items"][-1]), tail_split(b["items"][-1])
+            if su:
+                assert se, (where, i, b["items"][-1][-80:])
+                a["items"][-1], b["items"][-1] = su[0], se[0]
+                bl_uz.insert(i + 1, {"type": "p", "text": su[1]})
+                bl_en.insert(i + 1, {"type": "p", "text": se[1]})
+                n += 1
+                i += 1
+        i += 1
+    return n
+
+
+ni = 0
+for ti, (tu, te) in enumerate(zip(D["uz"]["topics"], D["en"]["topics"])):
+    for key in ("sections", "skills"):
+        for su, se in zip(tu[key], te[key]):
+            ni += split_intro(su["blocks"], se["blocks"], f"t{ti} {key}")
+if ni:
+    log.append(f"{ni} ta yopishgan kirish gapi alohida paragrafga ajratildi")
 
 # ---------- 3) jadvaldagi bo'lingan so'zlar (faqat uz) ----------
 WORDS = {"Gemoside rin": "Gemosiderin", "Gematoid in": "Gematoidin", "Gematinl ar": "Gematinlar",
