@@ -316,7 +316,12 @@ def renumber():
 WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Qaytaruvchanli k": "Qaytaruvchanlik", "Millisek undlar": "Millisekundlar", "Davomiy ligi": "Davomiyligi", "Mivakur iy": "Mivakuriy", "Sezilarl i kamaya di": "Sezilarli kamayadi",
          "5-HT3antagoni stlar": "5-HT3-antagonistlar", "D2antagoni stlar": "D2-antagonistlar",
          "5-HT3antagonist lar": "5-HT3-antagonistlar", "D2antagonist lar": "D2-antagonistlar",
-         "H1blokatorl ar": "H1-blokatorlar", "H2blokatorla r": "H2-blokatorlar"}
+         "H1blokatorl ar": "H1-blokatorlar", "H2blokatorla r": "H2-blokatorlar",
+         "Mineralokortikoidl ar": "Mineralokortikoidlar", "antagonist lari": "antagonistlari", "antagonist lar": "antagonistlar",
+         "Benzamidl ar": "Benzamidlar", "Alginatl ar": "Alginatlar", "So‘rilad igan": "So‘riladigan",
+         "Mxolinobl okatorlar": "M-xolinoblokatorlar", "Kannabi noidlar": "Kannabinoidlar", "Yumshatuvc hilar": "Yumshatuvchilar",
+         "Davomi yligi": "Davomiyligi", "benzotiazep in": "benzotiazepin", "Strofant in K": "Strofantin K",
+         "Levosimen dan": "Levosimendan"}
 
 # asl matndagi ma'no/imlo xatolari
 TEXT = {
@@ -331,6 +336,14 @@ TEXT = {
     "**mg/m2**": "**mg/m^2^**",
     "**aminofillin (eufillin**, teofillin + etilendiamin, suvda yaxshi eriydi**)**": "**aminofillin** (**eufillin**; teofillin + etilendiamin, suvda yaxshi eriydi)",
     "burunhalqumdan": "burun-halqumdan",
+    "Betaadrenoblokatorlar": "Beta-adrenoblokatorlar", "betablokator": "beta-blokator", "Betablokator": "Beta-blokator",
+    "alfablokator": "alfa-blokator", "Alfaglyukozidaza": "Alfa-glyukozidaza", "yurakqon": "yurak-qon",
+    "Kumbsmusbat": "Kumbs-musbat", "SHguruhlarini": "SH-guruhlarini", "betalaktamaza": "beta-laktamaza",
+    "DNKgiraza": "DNK-giraza", "RNKpolimeraza": "RNK-polimeraza", "grammusbat": "gram-musbat", "grammanfiy": "gram-manfiy",
+    "CHA2DS2- VASc": "CHA~2~DS~2~-VASc", "CHA2DS2-VASc": "CHA~2~DS~2~-VASc",
+    "izosorbid- 5-mononitrat": "izosorbid-5-mononitrat", "Natriy yodid 131I": "Natriy yodid ^131^I",
+    "Na + ko‘p": "Na+ ko‘p", "Fenoksimetilpenitsillin/ benzilpenitsillin": "Fenoksimetilpenitsillin/benzilpenitsillin",
+    "dori tanlang (7.2-jadval)": "dori tanlang (11.7-jadval)",   # yondosh holatlar jadvali — 11.7
     "atipik antidepressantlar (5bo‘lim)": "atipik antidepressantlar (3-bo‘lim)",   # antidepressantlar 3-bo'limda
     "(“Analginum 0,5” o‘rniga “Analgini 0,5”)": "(“Analgini 0,5” o‘rniga “Analginum 0,5”)",   # xato bosh kelishikda yozish
 }
@@ -358,6 +371,9 @@ def clean(s):
     o = s
     for a, b in list(WORDS.items()) + list(TEXT.items()):
         s = s.replace(a, b)
+    if s.startswith("**RETSEPT"):                                                # KO'Z -> KO‘Z, QAT'IY -> QAT’IY
+        s = re.sub(r"([OoGg])'", "\\1‘", s)
+        s = re.sub(r"([A-Za-z])'([A-Za-z])", "\\1’\\2", s)
     s = re.sub(r"\b([A-Z]{1,4})- (?!(?:va|yoki|hamda)\b)(?=\S)", r"\1-", s)       # T- limfotsitlar, (ST- T
     s = re.sub(r"(\d)- (?!(?:va|yoki|hamda)\b)(?=[a-z])", r"\1-", s)              # 2- barmoqlar, 7–10- kunga
     s = re.sub(r"(\d)– (?=\d)", r"\1–", s)                                         # 39– 40 °C, 25– 49%
@@ -465,6 +481,37 @@ def fig_order(bl, n):
     return n
 
 
+def box_join():
+    """Quti ichidagi xatboshi sahifada uzilgan: "... **agranulotsitoz**" | "**belgilari** (isitma ..." ;
+    "... yoki selektiv" | "TSOG-2 ingibitori + PPI. ..." -> bitta xatboshi."""
+    n = 0
+    def fix(parts):
+        nonlocal n
+        i = 0
+        while i + 1 < len(parts):
+            a, b = parts[i], parts[i + 1]
+            if a.get("type") == "p" and b.get("type") == "p":
+                x, y = a["text"], b["text"]
+                if x.endswith("**agranulotsitoz**") and y.startswith("**belgilari**"):
+                    a["text"] = x[:-2] + " " + y[2:]
+                    del parts[i + 1]; n += 1; continue
+                if x.endswith("yoki selektiv") and y.startswith("TSOG-2 ingibitori"):
+                    a["text"] = x + " " + y
+                    del parts[i + 1]; n += 1; continue
+            i += 1
+    def go(o):
+        if isinstance(o, dict):
+            if isinstance(o.get("parts"), list):
+                fix(o["parts"])
+            for v in o.values():
+                go(v)
+        elif isinstance(o, list):
+            for v in o:
+                go(v)
+    go(d)
+    return n
+
+
 def every(fn):
     n = 0
     for t in d["topics"]:
@@ -482,6 +529,7 @@ log.append(f"{every(join_sentences)} ta bo'lingan gap birlashtirildi")
 log.append(f"{list_tail()} ta uzilgan ro'yxat bandi tiklandi")
 log.append(f"{bullet_tail()} ta uzilgan belgili ro'yxat bandi tiklandi")
 log.append(f"{tables()} ta jadval tuzatishi")
+log.append(f"{box_join()} ta qutidagi uzilgan xatboshi birlashtirildi")
 log.append(f"{every(fig_order)} ta rasm guruhi tartibi tiklandi")
 log.append(f"{renumber()} ta kichik sarlavha raqami tuzatildi")
 cnt = [0]
