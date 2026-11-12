@@ -306,6 +306,8 @@ TEXT = {
     "37–416 hafta": "37–41^6^ hafta",
     "(1faza)": "(1-faza)",
     "“tovonquloq”": "“tovon-quloq”",
+    "Rahit": "Raxit",
+    "Atakstik": "Ataktik",
 }
 
 
