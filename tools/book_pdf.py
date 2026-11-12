@@ -74,7 +74,11 @@ def jpg(src_rel, maxpx=1400):
 
 def figure(b, single, cls=None):
     cap = f"<b>{esc(b.get('label', ''))}.</b> <i>{inline(b.get('caption', ''))}</i>" if b.get("label") else f"<i>{inline(b.get('caption', ''))}</i>"
-    return (f'<figure class="{cls or ("one" if single else "two")}"><img src="file://{esc(jpg(b["src"]))}" alt="">'
+    src = b["src"]
+    loc = re.sub(r"^data/", f"data/{lang}/", src)   # tarjima qilingan rasm (data/en/img/...) bo'lsa — shu
+    if lang != "uz" and os.path.exists(os.path.join(ROOT, loc)):
+        src = loc
+    return (f'<figure class="{cls or ("one" if single else "two")}"><img src="file://{esc(jpg(src))}" alt="">'
             f"<figcaption>{cap}</figcaption></figure>")
 
 

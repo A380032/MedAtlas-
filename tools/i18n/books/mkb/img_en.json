@@ -1,0 +1,5540 @@
+{
+ "ch01_al_immersion.webp": {
+  "items": [
+   {
+    "box": [
+     58,
+     72,
+     137,
+     92
+    ],
+    "t": "Objective",
+    "f": "serifb"
+   },
+   {
+    "box": [
+     74,
+     180,
+     140,
+     201
+    ],
+    "t": "Working",
+    "f": "serifb",
+    "a": "l"
+   },
+   {
+    "box": [
+     74,
+     205,
+     140,
+     226
+    ],
+    "t": "distance",
+    "f": "serifb",
+    "a": "l"
+   },
+   {
+    "box": [
+     18,
+     238,
+     110,
+     256
+    ],
+    "t": "Specimen",
+    "f": "serifb"
+   },
+   {
+    "box": [
+     530,
+     206,
+     608,
+     227
+    ],
+    "t": "Specimen",
+    "f": "serifb"
+   },
+   {
+    "box": [
+     622,
+     207,
+     670,
+     227
+    ],
+    "t": "Air",
+    "f": "serifb"
+   },
+   {
+    "box": [
+     200,
+     298,
+     760,
+     326
+    ],
+    "t": "Fig. 5. Path of rays in the immersion system",
+    "s": 20
+   }
+  ]
+ },
+ "ch01_al_kokk_shakl.webp": {
+  "items": [
+   {
+    "box": [
+     560,
+     336,
+     822,
+     534
+    ],
+    "t": "Fig. 9. Main forms of spherical bacteria: 1 – micrococci; 2, 3, 4 – diplococci; 5 – tetracocci; 6 – sarcinae; 7 – staphylococci; 8 – streptococci.",
+    "s": 17
+   }
+  ]
+ },
+ "ch01_al_mikroskoplar.webp": {
+  "items": [
+   {
+    "box": [
+     30,
+     462,
+     806,
+     558
+    ],
+    "t": "Fig. 6. Microscopes used in microbiological practice: 1, 2 – binocular microscopes; 3, 4 – laser confocal microscope; 5 – interference computer microscope; 6 – electron microscope.",
+    "s": 18
+   }
+  ]
+ },
+ "ch01_al_tayoqcha_shakl.webp": {
+  "items": [
+   {
+    "box": [
+     36,
+     540,
+     810,
+     672
+    ],
+    "t": "Fig. 10. Main forms of rod-shaped bacteria: 1 – intestinal rod; 2 – diplobacteria; 3 – streptobacteria; 4 – streptobacilli; 5, 6 – clostridia; 7 – causative agent of diphtheria; 8 – diphtheroids; 9 – causative agent of plague; 10 – coccobacteria; 11 – fusobacteria; 12 – mycobacteria; 13 – vibrios; 14 – spirilla; 15 – treponemes.",
+    "s": 18
+   }
+  ]
+ },
+ "ch03_al_xivchin.webp": {
+  "items": [
+   {
+    "box": [
+     56,
+     420,
+     792,
+     474
+    ],
+    "t": "Fig. 15. Bacterial flagella (diagram). 1 – monotrichous; 2 – lophotrichous; 3 – amphitrichous; 4 – peritrichous.",
+    "s": 18
+   }
+  ]
+ },
+ "ch01_al_shakl_jadval.webp": {
+  "items": [
+   {
+    "box": [
+     24,
+     26,
+     430,
+     104
+    ],
+    "t": "Thin-walled gram-negative\nbacteria",
+    "f": "serifb",
+    "c": "#eeeeee",
+    "s": 22
+   },
+   {
+    "box": [
+     444,
+     26,
+     852,
+     104
+    ],
+    "t": "Thick-walled gram-positive\nbacteria",
+    "f": "serifb",
+    "c": "#eeeeee",
+    "s": 22
+   },
+   {
+    "box": [
+     22,
+     119,
+     256,
+     152
+    ],
+    "t": "Meningococci",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#798a90"
+   },
+   {
+    "box": [
+     442,
+     119,
+     672,
+     152
+    ],
+    "t": "Pneumococci",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#77888e"
+   },
+   {
+    "box": [
+     22,
+     165,
+     256,
+     198
+    ],
+    "t": "Gonococci",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#708187"
+   },
+   {
+    "box": [
+     442,
+     165,
+     672,
+     198
+    ],
+    "t": "Streptococci",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#77888e"
+   },
+   {
+    "box": [
+     22,
+     211,
+     256,
+     244
+    ],
+    "t": "Veillonellae",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#76878c"
+   },
+   {
+    "box": [
+     442,
+     211,
+     672,
+     244
+    ],
+    "t": "Staphylococci",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#768589"
+   },
+   {
+    "box": [
+     22,
+     257,
+     256,
+     291
+    ],
+    "t": "Rods",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#76878f"
+   },
+   {
+    "box": [
+     442,
+     257,
+     672,
+     291
+    ],
+    "t": "Rods",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#74868b"
+   },
+   {
+    "box": [
+     22,
+     304,
+     256,
+     337
+    ],
+    "t": "Vibrios",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#788b92"
+   },
+   {
+    "box": [
+     442,
+     304,
+     672,
+     337
+    ],
+    "t": "Bacilli",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#6e8289"
+   },
+   {
+    "box": [
+     22,
+     351,
+     256,
+     384
+    ],
+    "t": "Campylobacteria",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#788991"
+   },
+   {
+    "box": [
+     442,
+     351,
+     672,
+     384
+    ],
+    "t": "Clostridia",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#718489"
+   },
+   {
+    "box": [
+     22,
+     397,
+     256,
+     430
+    ],
+    "t": "Spirilla",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#76878c"
+   },
+   {
+    "box": [
+     442,
+     397,
+     672,
+     430
+    ],
+    "t": "Corynebacteria",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#74868b"
+   },
+   {
+    "box": [
+     22,
+     443,
+     256,
+     477
+    ],
+    "t": "Spirochetes",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#788a8d"
+   },
+   {
+    "box": [
+     442,
+     443,
+     672,
+     477
+    ],
+    "t": "Mycobacteria",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#72838b"
+   },
+   {
+    "box": [
+     22,
+     489,
+     256,
+     522
+    ],
+    "t": "Rickettsiae",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#7a8c91"
+   },
+   {
+    "box": [
+     442,
+     489,
+     672,
+     522
+    ],
+    "t": "Bifidobacteria",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#758990"
+   },
+   {
+    "box": [
+     22,
+     536,
+     256,
+     568
+    ],
+    "t": "Chlamydiae",
+    "c": "#eeeeee",
+    "s": 22,
+    "a": "l",
+    "pad": 4,
+    "bg": "#758990"
+   },
+   {
+    "box": [
+     442,
+     536,
+     672,
+     568
+    ],
+    "t": "Actinomycetes",
+    "c": "#eeeeee",
+    "s": 22,
+    "bg": "#788b92"
+   }
+  ]
+ },
+ "ch01_mikroskop.webp": {
+  "items": [
+   {
+    "box": [
+     706,
+     6,
+     800,
+     22
+    ],
+    "t": "Eyepiece",
+    "f": "sans",
+    "s": 11,
+    "a": "l"
+   },
+   {
+    "box": [
+     40,
+     184,
+     148,
+     197
+    ],
+    "t": "Nosepiece",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     706,
+     204,
+     780,
+     217
+    ],
+    "t": "Arm",
+    "f": "sans",
+    "s": 11,
+    "a": "l"
+   },
+   {
+    "box": [
+     40,
+     208,
+     148,
+     221
+    ],
+    "t": "Objectives",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     4,
+     260,
+     147,
+     276
+    ],
+    "t": "Slide holder",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     704,
+     289,
+     840,
+     320
+    ],
+    "t": "Stage movement\nknobs",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     10,
+     302,
+     146,
+     315
+    ],
+    "t": "Stage",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     40,
+     357,
+     148,
+     370
+    ],
+    "t": "Condenser",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     706,
+     434,
+     820,
+     450
+    ],
+    "t": "Light control",
+    "f": "sans",
+    "s": 11,
+    "a": "l"
+   },
+   {
+    "box": [
+     20,
+     466,
+     147,
+     482
+    ],
+    "t": "Iris diaphragm",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     10,
+     555,
+     148,
+     571
+    ],
+    "t": "Light source",
+    "f": "sans",
+    "s": 11,
+    "a": "r"
+   },
+   {
+    "box": [
+     704,
+     555,
+     832,
+     570
+    ],
+    "t": "Fine focus knob",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     704,
+     575,
+     832,
+     590
+    ],
+    "t": "(fine adjustment)",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     704,
+     592,
+     832,
+     605
+    ],
+    "t": "Coarse focus knob",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     704,
+     610,
+     832,
+     627
+    ],
+    "t": "(coarse adjustment)",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     706,
+     636,
+     800,
+     652
+    ],
+    "t": "Base (foot)",
+    "f": "sans",
+    "s": 11,
+    "a": "l"
+   }
+  ]
+ },
+ "ch01_mh_mikroblar_olami.webp": {
+  "items": [
+   {
+    "box": [
+     300,
+     44,
+     550,
+     69
+    ],
+    "t": "WORLD OF MICROBES",
+    "s": 19
+   },
+   {
+    "box": [
+     30,
+     102,
+     148,
+     141
+    ],
+    "t": "Acellular\nforms",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     340,
+     106,
+     570,
+     134
+    ],
+    "t": "Cellular forms",
+    "f": "serifb",
+    "s": 20
+   },
+   {
+    "box": [
+     44,
+     154,
+     120,
+     172
+    ],
+    "t": "Prions",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     42,
+     211,
+     122,
+     229
+    ],
+    "t": "Viroids",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     46,
+     263,
+     120,
+     281
+    ],
+    "t": "Viruses",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     165,
+     153,
+     312,
+     171
+    ],
+    "t": "Domain Bacteria",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     322,
+     153,
+     457,
+     171
+    ],
+    "t": "Domain Archaea",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     558,
+     152,
+     720,
+     172
+    ],
+    "t": "Domain Eukarya",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     244,
+     183,
+     348,
+     201
+    ],
+    "t": "Prokaryotes",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     600,
+     182,
+     720,
+     200
+    ],
+    "t": "Eukaryotes",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     166,
+     220,
+     313,
+     326
+    ],
+    "t": "Thin-walled bacteria, gram-negative bacteria (proteobacteria and others)",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     323,
+     216,
+     458,
+     238
+    ],
+    "t": "Archaebacteria",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     476,
+     216,
+     622,
+     345
+    ],
+    "t": "Protozoa\n(kingdom\nProtozoa)\namoebae\nsporozoans\nflagellates\nciliates",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     636,
+     214,
+     806,
+     346
+    ],
+    "t": "Fungi\n(kingdom\nEumycota)\nphylum Zygomycota,\nphylum Ascomycota,\nphylum Basidiomycota,\nphylum Deuteromycota",
+    "f": "serifb",
+    "s": 14
+   },
+   {
+    "box": [
+     163,
+     388,
+     313,
+     457
+    ],
+    "t": "Gram-positive,\nthick-walled\nbacteria",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     160,
+     503,
+     303,
+     561
+    ],
+    "t": "Wall-less\nbacteria,\nmycoplasmas",
+    "f": "serifb",
+    "s": 16
+   }
+  ]
+ },
+ "ch02_al_gram_minus.webp": {
+  "items": [
+   {
+    "box": [
+     522,
+     46,
+     672,
+     105
+    ],
+    "t": "Braun\nlipoprotein",
+    "s": 24
+   },
+   {
+    "box": [
+     330,
+     54,
+     392,
+     78
+    ],
+    "t": "Pore",
+    "s": 24
+   },
+   {
+    "box": [
+     36,
+     105,
+     304,
+     134
+    ],
+    "t": "O-specific side chain",
+    "s": 24
+   },
+   {
+    "box": [
+     650,
+     134,
+     846,
+     164
+    ],
+    "t": "Lipopolysaccharide",
+    "s": 24
+   },
+   {
+    "box": [
+     678,
+     210,
+     852,
+     266
+    ],
+    "t": "Outer\nmembrane",
+    "s": 24,
+    "a": "l"
+   },
+   {
+    "box": [
+     678,
+     285,
+     856,
+     372
+    ],
+    "t": "Periplasmic\nspace and\npeptidoglycan",
+    "s": 24,
+    "a": "l"
+   },
+   {
+    "box": [
+     678,
+     387,
+     856,
+     458
+    ],
+    "t": "Cytoplasmic\nmembrane",
+    "s": 24,
+    "a": "l"
+   },
+   {
+    "box": [
+     164,
+     415,
+     296,
+     446
+    ],
+    "t": "Phospholipid",
+    "s": 24
+   },
+   {
+    "box": [
+     372,
+     412,
+     546,
+     443
+    ],
+    "t": "Peptidoglycan",
+    "s": 24
+   },
+   {
+    "box": [
+     254,
+     450,
+     454,
+     482
+    ],
+    "t": "Integral proteins",
+    "s": 24
+   }
+  ]
+ },
+ "ch02_al_gram_plus.webp": {
+  "items": [
+   {
+    "box": [
+     150,
+     7,
+     460,
+     46
+    ],
+    "t": "Lipoteichoic acid",
+    "s": 32
+   },
+   {
+    "box": [
+     480,
+     11,
+     720,
+     49
+    ],
+    "t": "Teichoic acid",
+    "s": 32
+   },
+   {
+    "box": [
+     22,
+     110,
+     59,
+     458
+    ],
+    "t": "Periplasmic space",
+    "rot": 90,
+    "s": 30
+   },
+   {
+    "box": [
+     134,
+     84,
+     174,
+     300
+    ],
+    "t": "Peptidoglycan",
+    "rot": 90,
+    "s": 30
+   },
+   {
+    "box": [
+     98,
+     370,
+     174,
+     528
+    ],
+    "t": "Plasma\nmembrane",
+    "rot": 90,
+    "s": 30
+   }
+  ]
+ },
+ "ch02_al_hujayra.webp": {
+  "items": [
+   {
+    "box": [
+     36,
+     24,
+     194,
+     56
+    ],
+    "t": "Mesosome",
+    "s": 28
+   },
+   {
+    "box": [
+     214,
+     24,
+     352,
+     56
+    ],
+    "t": "Nucleoid",
+    "s": 28
+   },
+   {
+    "box": [
+     372,
+     24,
+     516,
+     56
+    ],
+    "t": "Ribosome",
+    "s": 28
+   },
+   {
+    "box": [
+     524,
+     0,
+     676,
+     57
+    ],
+    "t": "Inclusion\nbodies",
+    "s": 26
+   },
+   {
+    "box": [
+     696,
+     20,
+     818,
+     56
+    ],
+    "t": "Capsule",
+    "s": 28
+   },
+   {
+    "box": [
+     136,
+     476,
+     244,
+     538
+    ],
+    "t": "Surface\nproteins",
+    "s": 26,
+    "a": "l"
+   },
+   {
+    "box": [
+     271,
+     479,
+     384,
+     536
+    ],
+    "t": "Cell\nwall",
+    "s": 26,
+    "a": "l"
+   },
+   {
+    "box": [
+     406,
+     470,
+     600,
+     543
+    ],
+    "t": "Periplasmic\nspace",
+    "s": 26,
+    "a": "l"
+   },
+   {
+    "box": [
+     624,
+     470,
+     818,
+     540
+    ],
+    "t": "Cytoplasmic\nmembrane",
+    "s": 26,
+    "a": "l"
+   },
+   {
+    "box": [
+     180,
+     596,
+     300,
+     627
+    ],
+    "t": "Flagellum",
+    "s": 28,
+    "a": "l"
+   }
+  ]
+ },
+ "ch02_al_gram_usul.webp": {
+  "items": [
+   {
+    "box": [
+     280,
+     22,
+     572,
+     48
+    ],
+    "t": "Gram staining",
+    "f": "serifb",
+    "c": "#f2f2f2",
+    "s": 20,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     212,
+     78,
+     836,
+     106
+    ],
+    "t": "The fixed smear is stained with gentian violet for 2 minutes.",
+    "c": "#eef2f6",
+    "s": 17,
+    "a": "l",
+    "bg": "grad"
+   },
+   {
+    "box": [
+     212,
+     142,
+     800,
+     170
+    ],
+    "t": "Lugol’s solution is added and left for 1 minute.",
+    "c": "#eef2f6",
+    "s": 17,
+    "a": "l",
+    "bg": "grad"
+   },
+   {
+    "box": [
+     212,
+     219,
+     800,
+     250
+    ],
+    "t": "Ethyl alcohol is added and left for 20–30 seconds.",
+    "c": "#eef2f6",
+    "s": 17,
+    "a": "l",
+    "bg": "grad"
+   },
+   {
+    "box": [
+     220,
+     282,
+     820,
+     342
+    ],
+    "t": "The preparation is rinsed with water and stained again\nwith aqueous fuchsin for 1–2 minutes.",
+    "c": "#eef2f6",
+    "s": 17,
+    "a": "l",
+    "bg": "grad"
+   },
+   {
+    "box": [
+     218,
+     352,
+     836,
+     432
+    ],
+    "t": "Gram-positive bacteria stain dark violet,\ngram-negative ones red.",
+    "c": "#eef2f6",
+    "s": 17,
+    "a": "l",
+    "bg": "grad"
+   }
+  ]
+ },
+ "ch03_mh_zamburug_1.webp": {
+  "items": [
+   {
+    "box": [
+     668,
+     18,
+     846,
+     49
+    ],
+    "t": "Chlamydospore",
+    "f": "serifb",
+    "s": 17
+   },
+   {
+    "box": [
+     660,
+     118,
+     800,
+     141
+    ],
+    "t": "Pseudohypha",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     732,
+     208,
+     856,
+     249
+    ],
+    "t": "Blastospore\ncluster",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     150,
+     358,
+     400,
+     387
+    ],
+    "t": "Pneumocysts",
+    "f": "serifb",
+    "s": 22
+   },
+   {
+    "box": [
+     36,
+     458,
+     416,
+     512
+    ],
+    "t": "Smear prepared from the lung:\nPneumocystis (carinii) jirovecii",
+    "s": 17
+   },
+   {
+    "box": [
+     536,
+     460,
+     800,
+     487
+    ],
+    "t": "C. albicans fungus",
+    "s": 17
+   }
+  ]
+ },
+ "ch03_mh_zamburug_2.webp": {
+  "items": [
+   {
+    "box": [
+     156,
+     15,
+     252,
+     44
+    ],
+    "t": "Conidia",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     174,
+     46,
+     244,
+     70
+    ],
+    "t": "Phialide",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     176,
+     90,
+     248,
+     114
+    ],
+    "t": "Metula",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     166,
+     208,
+     288,
+     258
+    ],
+    "t": "Penicillus",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     332,
+     250,
+     392,
+     275
+    ],
+    "t": "Septum",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     600,
+     35,
+     722,
+     57
+    ],
+    "t": "Macroconidium",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     600,
+     74,
+     716,
+     96
+    ],
+    "t": "Arthroconidium",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     610,
+     192,
+     730,
+     214
+    ],
+    "t": "Microconidium",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     610,
+     226,
+     750,
+     253
+    ],
+    "t": "Chlamydospore",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     444,
+     300,
+     716,
+     360
+    ],
+    "t": "“Ectothrix” arrangement\non the hair shaft",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     742,
+     302,
+     860,
+     328
+    ],
+    "t": "Pure culture",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     78,
+     358,
+     336,
+     390
+    ],
+    "t": "Morphology of fungi",
+    "f": "serifb",
+    "s": 16
+   }
+  ]
+ },
+ "ch04_al_spiroxeta.webp": {
+  "items": [
+   {
+    "box": [
+     98,
+     66,
+     180,
+     99
+    ],
+    "t": "AF",
+    "s": 30,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     196,
+     66,
+     254,
+     99
+    ],
+    "t": "PC",
+    "s": 30,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     268,
+     66,
+     336,
+     104
+    ],
+    "t": "OS",
+    "s": 30,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     365,
+     51,
+     739,
+     137
+    ],
+    "t": "AF  axial fibril\nPC  protoplasmic cylinder\nOS  outer sheath\nEO  entry opening",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     738,
+     78,
+     808,
+     106
+    ],
+    "t": "EO",
+    "s": 30,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     505,
+     216,
+     777,
+     262
+    ],
+    "t": "Protoplasmic\ncylinder",
+    "s": 21,
+    "a": "r"
+   },
+   {
+    "box": [
+     92,
+     241,
+     258,
+     261
+    ],
+    "t": "Nucleoid",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     45,
+     285,
+     225,
+     304
+    ],
+    "t": "Ribosome",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     34,
+     343,
+     276,
+     367
+    ],
+    "t": "Axial fibrils",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     636,
+     304,
+     781,
+     349
+    ],
+    "t": "Cell\nwall",
+    "s": 21,
+    "a": "r"
+   },
+   {
+    "box": [
+     124,
+     412,
+     314,
+     460
+    ],
+    "t": "Plasma\nmembrane",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     624,
+     406,
+     753,
+     456
+    ],
+    "t": "Micro-\ntubule",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     522,
+     464,
+     708,
+     492
+    ],
+    "t": "Outer sheath",
+    "s": 21
+   }
+  ]
+ },
+ "ch04_al_xlamidiya.webp": {
+  "items": [
+   {
+    "box": [
+     56,
+     16,
+     228,
+     68
+    ],
+    "t": "EB attachment\nand endocytosis",
+    "s": 18
+   },
+   {
+    "box": [
+     305,
+     16,
+     542,
+     68
+    ],
+    "t": "Inhibition of phagolysosome\nformation",
+    "s": 18
+   },
+   {
+    "box": [
+     608,
+     14,
+     764,
+     67
+    ],
+    "t": "Formation of\nRB from EB",
+    "s": 18
+   },
+   {
+    "box": [
+     76,
+     185,
+     226,
+     241
+    ],
+    "t": "Elementary\nbody (EB)",
+    "s": 18
+   },
+   {
+    "box": [
+     612,
+     182,
+     764,
+     236
+    ],
+    "t": "Reticulate\nbody (RB)",
+    "s": 18
+   },
+   {
+    "box": [
+     50,
+     363,
+     282,
+     415
+    ],
+    "t": "Exocytosis and lysis\nof the host cell",
+    "s": 18
+   },
+   {
+    "box": [
+     358,
+     363,
+     510,
+     415
+    ],
+    "t": "Formation of\nEB from RB",
+    "s": 18
+   },
+   {
+    "box": [
+     604,
+     362,
+     782,
+     419
+    ],
+    "t": "Multiplication by\nbinary fission",
+    "s": 18
+   }
+  ]
+ },
+ "ch04_mh_sodda.webp": {
+  "items": [
+   {
+    "box": [
+     104,
+     333,
+     320,
+     391
+    ],
+    "t": "Trypanosome in\na blood smear",
+    "s": 16
+   },
+   {
+    "box": [
+     460,
+     335,
+     850,
+     392
+    ],
+    "t": "Pure culture of Leishmania stained\nby Romanowsky–Giemsa",
+    "s": 16
+   },
+   {
+    "box": [
+     76,
+     783,
+     370,
+     836
+    ],
+    "t": "Structure of Leishmania\n(diagram)",
+    "s": 16
+   },
+   {
+    "box": [
+     528,
+     785,
+     820,
+     809
+    ],
+    "t": "Entamoeba coli cysts",
+    "s": 16
+   },
+   {
+    "box": [
+     100,
+     554,
+     186,
+     572
+    ],
+    "t": "Cytoplasm",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "box": [
+     352,
+     546,
+     404,
+     563
+    ],
+    "t": "Nucleus",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "box": [
+     138,
+     682,
+     198,
+     700
+    ],
+    "t": "Flagellum",
+    "f": "serifb",
+    "s": 11
+   }
+  ],
+  "also": [
+   "ch21_mh_sodda.webp"
+  ]
+ },
+ "ch12_al_embrion.webp": {
+  "items": [
+   {
+    "box": [
+     174,
+     9,
+     370,
+     67
+    ],
+    "t": "Chorioallantoic\nmembrane",
+    "s": 22
+   },
+   {
+    "box": [
+     18,
+     82,
+     130,
+     141
+    ],
+    "t": "Air\nsac",
+    "s": 22,
+    "a": "l"
+   },
+   {
+    "box": [
+     154,
+     91,
+     234,
+     119
+    ],
+    "t": "Shell",
+    "s": 22
+   },
+   {
+    "box": [
+     289,
+     87,
+     406,
+     149
+    ],
+    "t": "Amniotic\ncavity",
+    "s": 22,
+    "a": "l"
+   },
+   {
+    "box": [
+     512,
+     106,
+     736,
+     168
+    ],
+    "t": "Inoculation onto the\nchorioallantoic membrane",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     574,
+     280,
+     720,
+     376
+    ],
+    "t": "Inoculation\ninto the\namniotic cavity",
+    "s": 20,
+    "a": "l"
+   },
+   {
+    "box": [
+     600,
+     407,
+     748,
+     503
+    ],
+    "t": "Inoculation\ninto the\nallantoic cavity",
+    "s": 20,
+    "a": "l"
+   },
+   {
+    "box": [
+     246,
+     374,
+     352,
+     433
+    ],
+    "t": "Yolk\nsac",
+    "s": 22
+   },
+   {
+    "box": [
+     520,
+     550,
+     613,
+     577
+    ],
+    "t": "Inoculation",
+    "s": 20,
+    "a": "l"
+   },
+   {
+    "box": [
+     520,
+     578,
+     648,
+     611
+    ],
+    "t": "into the",
+    "s": 20,
+    "a": "l"
+   },
+   {
+    "box": [
+     520,
+     613,
+     626,
+     643
+    ],
+    "t": "yolk sac",
+    "s": 20,
+    "a": "l"
+   },
+   {
+    "box": [
+     163,
+     584,
+     270,
+     613
+    ],
+    "t": "Albumen",
+    "s": 22
+   },
+   {
+    "box": [
+     286,
+     583,
+     402,
+     649
+    ],
+    "t": "Allantoic\ncavity",
+    "s": 22
+   }
+  ]
+ },
+ "ch12_al_virus_oila.webp": {
+  "items": [
+   {
+    "box": [
+     176,
+     0,
+     372,
+     15
+    ],
+    "t": "Enveloped viruses",
+    "s": 15
+   },
+   {
+    "box": [
+     584,
+     0,
+     790,
+     15
+    ],
+    "t": "Nonenveloped viruses",
+    "s": 15
+   },
+   {
+    "box": [
+     60,
+     31,
+     500,
+     57
+    ],
+    "t": "Double-stranded DNA viruses",
+    "s": 21
+   },
+   {
+    "box": [
+     546,
+     31,
+     838,
+     57
+    ],
+    "t": "Double-stranded DNA viruses",
+    "s": 20
+   },
+   {
+    "box": [
+     548,
+     176,
+     840,
+     206
+    ],
+    "t": "Single-stranded DNA viruses",
+    "s": 20
+   },
+   {
+    "box": [
+     60,
+     254,
+     500,
+     282
+    ],
+    "t": "Single-stranded RNA viruses",
+    "s": 21
+   },
+   {
+    "box": [
+     548,
+     255,
+     840,
+     283
+    ],
+    "t": "Double-stranded RNA viruses",
+    "s": 20
+   },
+   {
+    "box": [
+     548,
+     409,
+     840,
+     436
+    ],
+    "t": "Single-stranded RNA viruses",
+    "s": 20
+   }
+  ]
+ },
+ "ch12_mh_gripp.webp": {
+  "items": [
+   {
+    "box": [
+     596,
+     28,
+     790,
+     52
+    ],
+    "t": "Hemagglutinin",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     606,
+     82,
+     806,
+     108
+    ],
+    "t": "Neuraminidase",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     699,
+     186,
+     806,
+     237
+    ],
+    "t": "Matrix\nprotein",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     743,
+     289,
+     820,
+     344
+    ],
+    "t": "Lipid\nbilayer",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     699,
+     362,
+     850,
+     388
+    ],
+    "t": "Polymerase",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     652,
+     432,
+     842,
+     458
+    ],
+    "t": "Nucleoprotein",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     801,
+     538,
+     860,
+     563
+    ],
+    "t": "RNA",
+    "f": "serifb",
+    "s": 19,
+    "a": "l"
+   }
+  ],
+  "also": [
+   "ch27_mh_gripp.webp"
+  ]
+ },
+ "ch14_al_ifa.webp": {
+  "items": [
+   {
+    "box": [
+     122,
+     98,
+     306,
+     123
+    ],
+    "t": "Patient’s (+) serum",
+    "s": 21
+   },
+   {
+    "box": [
+     100,
+     256,
+     313,
+     282
+    ],
+    "t": "Anti-human Ig",
+    "s": 21
+   },
+   {
+    "box": [
+     170,
+     285,
+     249,
+     307
+    ],
+    "t": "serum",
+    "s": 21
+   },
+   {
+    "box": [
+     131,
+     483,
+     334,
+     509
+    ],
+    "t": "substrate / chromogen",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     538,
+     56,
+     726,
+     83
+    ],
+    "t": "Patient’s (+) serum",
+    "s": 21
+   },
+   {
+    "box": [
+     416,
+     183,
+     830,
+     209
+    ],
+    "t": "(+) Diagnostic serum against the antigen",
+    "s": 20
+   },
+   {
+    "box": [
+     422,
+     329,
+     748,
+     363
+    ],
+    "t": "(+) Antibody (against the diagnostic",
+    "s": 20,
+    "a": "l"
+   },
+   {
+    "box": [
+     582,
+     369,
+     652,
+     394
+    ],
+    "t": "serum)",
+    "s": 20
+   },
+   {
+    "box": [
+     520,
+     524,
+     732,
+     549
+    ],
+    "t": "substrate / chromogen",
+    "s": 21
+   }
+  ]
+ },
+ "ch14_al_immunoblot.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     37,
+     283,
+     118
+    ],
+    "t": "Electrophoresis of the\npathogen’s antigen\nin gel",
+    "s": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     372,
+     186,
+     398,
+     388
+    ],
+    "t": "Patient’s serum",
+    "rot": 90,
+    "s": 22
+   },
+   {
+    "box": [
+     505,
+     205,
+     559,
+     493
+    ],
+    "t": "Anti-human Ig\nlabeled serum",
+    "rot": 90,
+    "s": 22
+   },
+   {
+    "box": [
+     505,
+     444,
+     527,
+     464
+    ],
+    "t": "+",
+    "s": 20,
+    "bg": "none",
+    "c": "#7a7a7a"
+   },
+   {
+    "box": [
+     729,
+     214,
+     757,
+     438
+    ],
+    "t": "Substrate / chromogen",
+    "rot": 90,
+    "s": 22,
+    "bg": "grad",
+    "c": "#555555"
+   },
+   {
+    "box": [
+     60,
+     547,
+     316,
+     598
+    ],
+    "t": "Transfer of the antigen\nto paper",
+    "s": 21
+   }
+  ],
+  "also": [
+   "ch29_al_immunoblot.webp"
+  ]
+ },
+ "ch14_al_pretsipitatsiya.webp": {
+  "items": [
+   {
+    "box": [
+     16,
+     248,
+     142,
+     312
+    ],
+    "t": "Antibody\nexcess zone",
+    "s": 21,
+    "c": "#eeeeee"
+   },
+   {
+    "box": [
+     336,
+     248,
+     474,
+     312
+    ],
+    "t": "Antigen\nexcess zone",
+    "s": 21,
+    "c": "#eeeeee"
+   },
+   {
+    "box": [
+     156,
+     392,
+     304,
+     452
+    ],
+    "t": "Equivalence\nzone",
+    "s": 21
+   },
+   {
+    "box": [
+     742,
+     138,
+     842,
+     168
+    ],
+    "t": "Antigen",
+    "s": 22,
+    "a": "l"
+   },
+   {
+    "box": [
+     740,
+     280,
+     860,
+     314
+    ],
+    "t": "Precipitate",
+    "s": 22,
+    "a": "l"
+   },
+   {
+    "box": [
+     742,
+     428,
+     842,
+     456
+    ],
+    "t": "Antibody",
+    "s": 22,
+    "a": "l"
+   }
+  ]
+ },
+ "ch14_mh_agglyutinatsiya.webp": {
+  "items": [
+   {
+    "cbox": [
+     59,
+     27,
+     92,
+     15
+    ],
+    "ang": 12,
+    "t": "Bacterium",
+    "bg": "#4b99a3",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "cbox": [
+     217,
+     92,
+     76,
+     15
+    ],
+    "ang": 32,
+    "t": "Bacterium",
+    "bg": "#4b99a3",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "cbox": [
+     125,
+     161,
+     74,
+     15
+    ],
+    "ang": 0,
+    "t": "Bacterium",
+    "bg": "#4b99a3",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "cbox": [
+     380,
+     49,
+     82,
+     15
+    ],
+    "ang": 8,
+    "t": "Bacterium",
+    "bg": "#4b99a3",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "cbox": [
+     381,
+     112,
+     76,
+     15
+    ],
+    "ang": 40,
+    "t": "Bacterium",
+    "bg": "#4b99a3",
+    "f": "serifb",
+    "s": 11
+   },
+   {
+    "box": [
+     287,
+     84,
+     364,
+     98
+    ],
+    "t": "antigens",
+    "f": "serifb",
+    "s": 10,
+    "bg": "#4b99a3"
+   },
+   {
+    "box": [
+     60,
+     188,
+     470,
+     232
+    ],
+    "t": "Agglutination reaction with IgM (a)\nand IgG (b) antibodies",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     540,
+     146,
+     660,
+     186
+    ],
+    "t": "Agglutination\npositive",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     696,
+     146,
+     808,
+     186
+    ],
+    "t": "Agglutination\nnegative",
+    "f": "serifb",
+    "s": 13
+   },
+   {
+    "box": [
+     556,
+     193,
+     804,
+     233
+    ],
+    "t": "Approximate agglutination\nreaction on a glass slide",
+    "f": "serifb",
+    "s": 14
+   },
+   {
+    "box": [
+     66,
+     451,
+     208,
+     474
+    ],
+    "t": "Agglutination",
+    "f": "serifb",
+    "s": 14
+   },
+   {
+    "box": [
+     388,
+     451,
+     422,
+     474
+    ],
+    "t": "SC",
+    "f": "serifb",
+    "s": 14
+   },
+   {
+    "box": [
+     466,
+     451,
+     514,
+     474
+    ],
+    "t": "AgC",
+    "f": "serifb",
+    "s": 14
+   },
+   {
+    "box": [
+     82,
+     486,
+     438,
+     509
+    ],
+    "t": "Extended agglutination reaction",
+    "f": "serifb",
+    "s": 14
+   },
+   {
+    "box": [
+     552,
+     404,
+     846,
+     490
+    ],
+    "t": "Agglutination reactions,\ntheir mechanism\nand results",
+    "s": 20,
+    "a": "l"
+   }
+  ]
+ },
+ "ch14_mh_kbr_iflr.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     95,
+     66,
+     128
+    ],
+    "t": "Patient’s\nserum",
+    "s": 10,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     0,
+     158,
+     86,
+     178
+    ],
+    "t": "Complement",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     108,
+     136,
+     188,
+     191
+    ],
+    "t": "Complex\nformation",
+    "s": 12,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     223,
+     123,
+     283,
+     177
+    ],
+    "t": "RBC\nand anti-\nRBC Ab",
+    "s": 10,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     214,
+     209,
+     293,
+     241
+    ],
+    "t": "Hemolytic\nsystem",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     331,
+     209,
+     396,
+     241
+    ],
+    "t": "No\nhemolysis",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     6,
+     245,
+     392,
+     272
+    ],
+    "t": "CFT scheme with the patient’s serum",
+    "s": 14,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     427,
+     18,
+     496,
+     37
+    ],
+    "t": "Antigen",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     430,
+     90,
+     496,
+     150
+    ],
+    "t": "Healthy\nperson’s\nserum",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     422,
+     159,
+     519,
+     179
+    ],
+    "t": "Complement",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     541,
+     145,
+     620,
+     177
+    ],
+    "t": "No\ncomplex",
+    "s": 12,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     655,
+     115,
+     728,
+     190
+    ],
+    "t": "RBC\nand\nanti-RBC\nAb",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     660,
+     208,
+     738,
+     240
+    ],
+    "t": "Hemolytic\nsystem",
+    "s": 11,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     767,
+     212,
+     832,
+     233
+    ],
+    "t": "Hemolysis",
+    "s": 12,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     440,
+     247,
+     823,
+     272
+    ],
+    "t": "CFT scheme with normal serum",
+    "s": 14,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     93,
+     414,
+     202,
+     439
+    ],
+    "t": "Bacterium",
+    "s": 15,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     523,
+     399,
+     632,
+     423
+    ],
+    "t": "Bacterium",
+    "s": 15,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     78,
+     487,
+     232,
+     513
+    ],
+    "t": "Fluorochrome",
+    "s": 17,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     603,
+     511,
+     740,
+     534
+    ],
+    "t": "Fluorochrome",
+    "s": 16,
+    "f": "serifb"
+   },
+   {
+    "box": [
+     146,
+     536,
+     500,
+     559
+    ],
+    "t": "Immunofluorescence reaction",
+    "s": 15,
+    "f": "serifb"
+   }
+  ]
+ },
+ "ch15_al_limfotsit.webp": {
+  "items": [
+   {
+    "box": [
+     36,
+     100,
+     200,
+     196
+    ],
+    "t": "Heparinized\nblood",
+    "s": 19
+   },
+   {
+    "box": [
+     312,
+     96,
+     512,
+     181
+    ],
+    "t": "Centrifuged at\n1500 rpm\nfor 45 min",
+    "s": 19
+   },
+   {
+    "box": [
+     34,
+     240,
+     202,
+     356
+    ],
+    "t": "Density\ngradient\nFicoll–Verografin\n(1.077)",
+    "s": 17
+   },
+   {
+    "box": [
+     640,
+     208,
+     786,
+     264
+    ],
+    "t": "Lymphocytes\nin the interphase",
+    "s": 18
+   },
+   {
+    "box": [
+     648,
+     346,
+     778,
+     372
+    ],
+    "t": "Erythrocytes",
+    "s": 19
+   }
+  ]
+ },
+ "ch15_al_erok.webp": {
+  "items": [
+   {
+    "box": [
+     63,
+     260,
+     197,
+     290
+    ],
+    "t": "Lymphocytes",
+    "s": 21
+   },
+   {
+    "box": [
+     672,
+     244,
+     810,
+     304
+    ],
+    "t": "Sheep\nerythrocytes",
+    "s": 21
+   }
+  ]
+ },
+ "ch17_al_klostridiya.webp": {
+  "items": [
+   {
+    "box": [
+     50,
+     293,
+     68,
+     312
+    ],
+    "t": "c",
+    "s": 20
+   },
+   {
+    "box": [
+     388,
+     562,
+     542,
+     592
+    ],
+    "t": "Opisthotonus",
+    "s": 20
+   }
+  ]
+ },
+ "ch03_al_murakkab.webp": {
+  "items": [
+   {
+    "box": [
+     28,
+     536,
+     52,
+     561
+    ],
+    "t": "c",
+    "s": 20
+   },
+   {
+    "box": [
+     473,
+     539,
+     493,
+     564
+    ],
+    "t": "d",
+    "s": 20
+   }
+  ]
+ },
+ "ch17_al_sporasiz_anaerob.webp": {
+  "items": [
+   {
+    "box": [
+     397,
+     274,
+     415,
+     296
+    ],
+    "t": "c",
+    "f": "sans",
+    "s": 19
+   },
+   {
+    "box": [
+     452,
+     273,
+     472,
+     297
+    ],
+    "t": "d",
+    "f": "sans",
+    "s": 19
+   }
+  ]
+ },
+ "ch12_al_ste.webp": {
+  "items": [
+   {
+    "box": [
+     282,
+     14,
+     517,
+     42
+    ],
+    "t": "Guarnieri bodies",
+    "s": 24
+   },
+   {
+    "box": [
+     200,
+     555,
+     315,
+     579
+    ],
+    "t": "Plaques",
+    "s": 20
+   },
+   {
+    "box": [
+     428,
+     558,
+     447,
+     581
+    ],
+    "t": "c",
+    "f": "sans",
+    "s": 20
+   },
+   {
+    "box": [
+     524,
+     569,
+     778,
+     599
+    ],
+    "t": "Hemadsorption",
+    "f": "sans",
+    "s": 21
+   }
+  ]
+ },
+ "ch28_mh_gepatit_a.webp": {
+  "items": [
+   {
+    "box": [
+     26,
+     70,
+     82,
+     97
+    ],
+    "t": "RNA",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     326,
+     50,
+     412,
+     77
+    ],
+    "t": "Capsid",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     493,
+     62,
+     604,
+     85
+    ],
+    "t": "Capsid",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     792,
+     64,
+     850,
+     90
+    ],
+    "t": "DNA",
+    "f": "serifb",
+    "s": 18
+   }
+  ]
+ },
+ "ch28_mh_rabdovirus.webp": {
+  "items": [
+   {
+    "box": [
+     490,
+     92,
+     660,
+     128
+    ],
+    "t": "Supercapsid",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     516,
+     186,
+     740,
+     223
+    ],
+    "t": "G glycoproteins",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     630,
+     320,
+     780,
+     354
+    ],
+    "t": "Polymerase",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     522,
+     446,
+     740,
+     482
+    ],
+    "t": "M matrix protein",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     488,
+     540,
+     760,
+     610
+    ],
+    "t": "RNA-associated\nnucleoprotein (N)",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   }
+  ]
+ },
+ "ch29_mh_hbv.webp": {
+  "items": [
+   {
+    "box": [
+     262,
+     206,
+     336,
+     229
+    ],
+    "t": "− strand",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     262,
+     287,
+     336,
+     311
+    ],
+    "t": "+ strand",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     538,
+     244,
+     704,
+     269
+    ],
+    "t": "Protein kinase",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     513,
+     329,
+     702,
+     355
+    ],
+    "t": "DNA polymerase",
+    "f": "serifb",
+    "s": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     206,
+     505,
+     566,
+     535
+    ],
+    "t": "Schematic structure of the hepatitis B virus",
+    "s": 18
+   }
+  ]
+ },
+ "ch29_mh_oiv.webp": {
+  "items": [
+   {
+    "box": [
+     38,
+     37,
+     125,
+     62
+    ],
+    "t": "HIV-1",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     350,
+     82,
+     568,
+     140
+    ],
+    "t": "Reverse\ntranscriptase (pol)",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     186,
+     118,
+     268,
+     147
+    ],
+    "t": "Envelope",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     82,
+     183,
+     272,
+     242
+    ],
+    "t": "gp 125 (HIV-1)\ngp 125 (HIV-2)",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     58,
+     270,
+     248,
+     332
+    ],
+    "t": "gp 41 (HIV-1)\ngp 36 (HIV-2)",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     58,
+     428,
+     224,
+     494
+    ],
+    "t": "p 26 (HIV-1)\np 26 (HIV-2)",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     43,
+     498,
+     142,
+     557
+    ],
+    "t": "Matrix\nprotein",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     681,
+     184,
+     724,
+     209
+    ],
+    "t": "p46",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     703,
+     271,
+     748,
+     296
+    ],
+    "t": "p21",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     728,
+     351,
+     772,
+     377
+    ],
+    "t": "p19",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     178,
+     544,
+     232,
+     569
+    ],
+    "t": "p17",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     698,
+     619,
+     748,
+     644
+    ],
+    "t": "p24",
+    "a": "l",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     200,
+     623,
+     282,
+     651
+    ],
+    "t": "Core",
+    "f": "serifb",
+    "s": 18
+   },
+   {
+    "box": [
+     330,
+     703,
+     596,
+     764
+    ],
+    "t": "RNA and nucleocapsid\nproteins",
+    "f": "serifb",
+    "s": 18
+   }
+  ]
+ },
+ "ch30_mh_chechak.webp": {
+  "items": [
+   {
+    "box": [
+     172,
+     26,
+     338,
+     57
+    ],
+    "t": "Supercapsid",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     52,
+     103,
+     144,
+     167
+    ],
+    "t": "Outer\nenvelope",
+    "a": "l",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     648,
+     122,
+     838,
+     186
+    ],
+    "t": "Tubular\nstructures",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     324,
+     440,
+     476,
+     466
+    ],
+    "t": "Lateral body",
+    "f": "serifb",
+    "s": 17,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     54,
+     520,
+     194,
+     574
+    ],
+    "t": "Core\nmembrane",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     250,
+     603,
+     590,
+     631
+    ],
+    "t": "Nucleocapsid (DNA + protein)",
+    "f": "serifb",
+    "s": 19
+   }
+  ]
+ },
+ "ch30_mh_gerpes.webp": {
+  "items": [
+   {
+    "box": [
+     600,
+     110,
+     790,
+     142
+    ],
+    "t": "Double-stranded DNA",
+    "a": "l",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     600,
+     260,
+     770,
+     320
+    ],
+    "t": "Icosahedral\ncapsid",
+    "a": "l",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     582,
+     368,
+     770,
+     400
+    ],
+    "t": "Capsomeres",
+    "a": "l",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     546,
+     453,
+     725,
+     482
+    ],
+    "t": "Supercapsid",
+    "a": "l",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     476,
+     506,
+     800,
+     537
+    ],
+    "t": "Glycoprotein spikes",
+    "a": "l",
+    "f": "serifb",
+    "s": 19
+   },
+   {
+    "box": [
+     200,
+     588,
+     630,
+     618
+    ],
+    "t": "Diagram of the structure of the herpes virus",
+    "s": 19
+   }
+  ]
+ },
+ "ch29_mh_trixofiton.webp": {
+  "items": [
+   {
+    "box": [
+     43,
+     66,
+     146,
+     92
+    ],
+    "t": "Arthroconidia",
+    "f": "serifb",
+    "s": 17
+   },
+   {
+    "box": [
+     384,
+     68,
+     500,
+     95
+    ],
+    "t": "Microconidia",
+    "f": "serifb",
+    "s": 17
+   },
+   {
+    "box": [
+     700,
+     68,
+     816,
+     95
+    ],
+    "t": "Macroconidia",
+    "f": "serifb",
+    "s": 17
+   },
+   {
+    "box": [
+     726,
+     312,
+     852,
+     344
+    ],
+    "t": "Chlamydospore",
+    "f": "serifb",
+    "s": 17
+   },
+   {
+    "box": [
+     112,
+     355,
+     396,
+     397
+    ],
+    "t": "Tissue form on the hair shaft",
+    "f": "serifb",
+    "s": 17
+   },
+   {
+    "box": [
+     560,
+     358,
+     670,
+     388
+    ],
+    "t": "Pure culture",
+    "f": "serifb",
+    "s": 17
+   }
+  ]
+ },
+ "ch22_mh_adenovirus_hcv.webp": {
+  "items": [
+   {
+    "box": [
+     730,
+     4,
+     860,
+     26
+    ],
+    "t": "Envelope proteins",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     420,
+     35,
+     523,
+     57
+    ],
+    "t": "Lipid envelope",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     458,
+     255,
+     500,
+     273
+    ],
+    "t": "RNA",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     782,
+     279,
+     846,
+     300
+    ],
+    "t": "Capsid",
+    "f": "serifb",
+    "s": 12
+   },
+   {
+    "box": [
+     546,
+     339,
+     750,
+     367
+    ],
+    "t": "Hepatitis C virus",
+    "s": 20
+   }
+  ],
+  "also": [
+   "ch29_mh_adenovirus_hcv.webp"
+  ]
+ },
+ "ch20_al_iersiniya.webp": {
+  "items": [
+   {
+    "box": [
+     36,
+     135,
+     77,
+     171
+    ],
+    "t": "S",
+    "s": 20
+   },
+   {
+    "box": [
+     765,
+     163,
+     808,
+     187
+    ],
+    "t": "DC",
+    "s": 19
+   }
+  ]
+ },
+ "ch18_al_sx_difteriya.webp": {
+  "items": [
+   {
+    "box": [
+     32,
+     32,
+     272,
+     110
+    ],
+    "t": "Material for examination: mucus taken from the throat with a sterile swab",
+    "s": 16,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     58,
+     145,
+     256,
+     169
+    ],
+    "t": "Bacterioscopy",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     36,
+     169,
+     274,
+     360
+    ],
+    "t": "Rods with volutin granules (Babes–Ernst) at both ends, which give the rod a dumbbell shape. In smears the diphtheria agents are arranged in the shape of «X» and «V».",
+    "s": 15,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     646,
+     24,
+     696,
+     190
+    ],
+    "t": "Enrichment\nmedium",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     774,
+     148,
+     818,
+     308
+    ],
+    "t": "PHA, AR, NR",
+    "rot": 90,
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     304,
+     246,
+     466,
+     364
+    ],
+    "t": "Blood\ntellurite\nagar",
+    "s": 21,
+    "ell": true,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     514,
+     276,
+     588,
+     326
+    ],
+    "t": "SA",
+    "s": 34,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     56,
+     379,
+     256,
+     406
+    ],
+    "t": "Bacterioscopy",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     360,
+     478,
+     406,
+     632
+    ],
+    "t": "Serum MPA",
+    "rot": 90,
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     526,
+     448,
+     644,
+     532
+    ],
+    "t": "Detection of\ntoxigenicity",
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     698,
+     574,
+     802,
+     612
+    ],
+    "t": "Pisu test",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     50,
+     706,
+     172,
+     800
+    ],
+    "t": "Antibiotic\nsuscepti-\nbility",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     224,
+     726,
+     356,
+     774
+    ],
+    "t": "Phagovar\ntyping",
+    "f": "sans",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     436,
+     746,
+     614,
+     797
+    ],
+    "t": "AR on a\nglass slide",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     690,
+     712,
+     824,
+     788
+    ],
+    "t": "Bacterio-\ncinogeny",
+    "f": "sans",
+    "s": 21,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     29,
+     898,
+     55,
+     1050
+    ],
+    "t": "Glucose (+)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     91,
+     898,
+     117,
+     1050
+    ],
+    "t": "Maltose (−)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     154,
+     898,
+     181,
+     1050
+    ],
+    "t": "Lactose (±)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     219,
+     898,
+     247,
+     1050
+    ],
+    "t": "Sucrose (±)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     283,
+     898,
+     310,
+     1050
+    ],
+    "t": "Mannitol (−)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch09_mh_antibiotikogramma.webp": {
+  "items": [
+   {
+    "box": [
+     4,
+     0,
+     30,
+     20
+    ],
+    "t": "a",
+    "f": "serifb",
+    "s": 15,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     424,
+     0,
+     444,
+     18
+    ],
+    "t": "b",
+    "f": "serifb",
+    "s": 15,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     334,
+     300,
+     352,
+     322
+    ],
+    "t": "c",
+    "f": "serifb",
+    "s": 15
+   },
+   {
+    "box": [
+     426,
+     304,
+     446,
+     324
+    ],
+    "t": "d",
+    "f": "serifb",
+    "s": 15
+   }
+  ]
+ },
+ "ch12_mh_t4_fag.webp": {
+  "items": [
+   {
+    "box": [
+     430,
+     272,
+     456,
+     294
+    ],
+    "t": "b",
+    "f": "sansb",
+    "s": 17
+   }
+  ]
+ },
+ "ch18_al_sx_kokyutal.webp": {
+  "items": [
+   {
+    "box": [
+     40,
+     62,
+     326,
+     156
+    ],
+    "t": "Material for examination:\nmucus from the upper\nrespiratory tract",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     538,
+     60,
+     810,
+     120
+    ],
+    "t": "Immunofluorescence\nreaction",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     206,
+     250,
+     370,
+     366
+    ],
+    "t": "Casein\ncharcoal\nagar",
+    "s": 20,
+    "ell": true,
+    "c": "#e8e8e8"
+   },
+   {
+    "box": [
+     472,
+     246,
+     622,
+     362
+    ],
+    "t": "Blood agar\nwith added\nmilk",
+    "s": 19,
+    "ell": true,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     36,
+     402,
+     220,
+     430
+    ],
+    "t": "Bacterioscopy",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     437,
+     458,
+     485,
+     618
+    ],
+    "t": "Pure culture",
+    "rot": 90,
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     652,
+     489,
+     816,
+     518
+    ],
+    "t": "Bioassay",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     630,
+     563,
+     828,
+     596
+    ],
+    "t": "Bacterioscopy",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     96,
+     628,
+     222,
+     726
+    ],
+    "t": "Antibiotic\nsuscepti-\nbility",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     512,
+     653,
+     804,
+     681
+    ],
+    "t": "AR with species antisera",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     54,
+     815,
+     86,
+     955
+    ],
+    "t": "MPA (−)",
+    "rot": 90,
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     112,
+     810,
+     146,
+     992
+    ],
+    "t": "Terazine MPA (−)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     176,
+     810,
+     208,
+     992
+    ],
+    "t": "Simmons medium (−)",
+    "rot": 90,
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     239,
+     810,
+     272,
+     980
+    ],
+    "t": "Ya’s agar (−)",
+    "rot": 90,
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     299,
+     810,
+     336,
+     988
+    ],
+    "t": "Urea (−)",
+    "rot": 90,
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     372,
+     930,
+     502,
+     996
+    ],
+    "t": "Patient’s\nserum",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     644,
+     926,
+     673,
+     990
+    ],
+    "t": "CFT",
+    "rot": 90,
+    "s": 24,
+    "bg": "#c9cbc3",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     769,
+     926,
+     801,
+     990
+    ],
+    "t": "IF",
+    "rot": 90,
+    "s": 24,
+    "bg": "#c9cbc3",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     343,
+     1011,
+     592,
+     1049
+    ],
+    "t": "Final result",
+    "s": 20,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch18_al_sx_pnevmokokk.webp": {
+  "items": [
+   {
+    "box": [
+     542,
+     16,
+     838,
+     142
+    ],
+    "t": "Material for examination: sputum, pleural fluid, pus, nasopharyngeal swab, blood",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     18,
+     170,
+     258,
+     218
+    ],
+    "t": "Bacterioscopy:\ngram-positive diplococci",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     318,
+     282,
+     380,
+     314
+    ],
+    "t": "BA",
+    "s": 24,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     444,
+     282,
+     500,
+     314
+    ],
+    "t": "SA",
+    "s": 24,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     666,
+     196,
+     822,
+     230
+    ],
+    "t": "Bioassay",
+    "s": 21,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     666,
+     426,
+     836,
+     504
+    ],
+    "t": "Capsular\nswelling\nreaction",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     60,
+     482,
+     260,
+     512
+    ],
+    "t": "Bacterioscopy",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     408,
+     596,
+     452,
+     622
+    ],
+    "t": "SA",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     663,
+     573,
+     857,
+     627
+    ],
+    "t": "Agglutination\nreaction",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     50,
+     712,
+     196,
+     794
+    ],
+    "t": "Antibiotic\nsuscepti-\nbility",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     253,
+     848,
+     518,
+     887
+    ],
+    "t": "Optochin susceptibility",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     538,
+     712,
+     578,
+     838
+    ],
+    "t": "Inulin (+)",
+    "rot": 90,
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     600,
+     692,
+     637,
+     840
+    ],
+    "t": "Bile (−)",
+    "rot": 90,
+    "s": 20,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch19_al_sx_sil_bakteriologik.webp": {
+  "items": [
+   {
+    "box": [
+     214,
+     90,
+     662,
+     200
+    ],
+    "t": "Material for examination: sputum, exudate, pus, gastric and bronchial lavage waters, cerebrospinal fluid, urine. Concentrated material",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     26,
+     260,
+     300,
+     291
+    ],
+    "t": "Inoculation on nutrient media",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     100,
+     291,
+     216,
+     402
+    ],
+    "t": "Löwen-\nstein–\nJensen\nand Finn 2",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     334,
+     260,
+     638,
+     420
+    ],
+    "t": "Cultivation in hemolyzed citrated blood for 7–14 days. Rapid diagnosis (Price method). Smears are stained by Ziehl–Neelsen and examined under the microscope",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     648,
+     268,
+     840,
+     388
+    ],
+    "t": "Bioassay: 2–3 ml is injected under the skin of guinea pigs",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     32,
+     496,
+     302,
+     547
+    ],
+    "t": "Growth on\nnutrient media",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     368,
+     498,
+     520,
+     527
+    ],
+    "t": "Cord factor",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     602,
+     510,
+     842,
+     634
+    ],
+    "t": "Autopsy and pathoanatomical examination; smears from organs and inoculation on media",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     450,
+     733,
+     750,
+     767
+    ],
+    "t": "Antibiotic susceptibility",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     336,
+     948,
+     838,
+     996
+    ],
+    "t": "1 – pH control 6.8; 2 – pH control 5.5; 3 – isoniazid\n4 – ethambutol; 5 – pyrazinamide; 6 – rifampicin; 7 – streptomycin",
+    "f": "sans",
+    "s": 14,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     26,
+     943,
+     228,
+     982
+    ],
+    "t": "Niacin test",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     29,
+     1000,
+     77,
+     1121
+    ],
+    "t": "Patient’s\nserum",
+    "rot": 90,
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     289,
+     1008,
+     326,
+     1102
+    ],
+    "t": "CFT",
+    "rot": 90,
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     361,
+     1008,
+     399,
+     1102
+    ],
+    "t": "PHA",
+    "rot": 90,
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     437,
+     1008,
+     472,
+     1102
+    ],
+    "t": "IF",
+    "rot": 90,
+    "s": 20,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch19_al_sx_sil_bakterioskopiya.webp": {
+  "items": [
+   {
+    "box": [
+     16,
+     43,
+     296,
+     124
+    ],
+    "t": "Microscopy: smear stained\nby Ziehl–Neelsen (result)",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     560,
+     22,
+     842,
+     175
+    ],
+    "t": "Material for examination: sputum, exudate, pus, gastric and bronchial lavage waters, cerebrospinal fluid, urine",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     560,
+     250,
+     842,
+     372
+    ],
+    "t": "Immunoluminescence method: with fluorochrome-labeled antibodies (result)",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     318,
+     338,
+     494,
+     370
+    ],
+    "t": "Concentration method",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     62,
+     442,
+     122,
+     648
+    ],
+    "t": "Homogenization",
+    "rot": 90,
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     669,
+     435,
+     736,
+     642
+    ],
+    "t": "Flotation",
+    "rot": 90,
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     200,
+     540,
+     580,
+     595
+    ],
+    "t": "Microscopy: smear stained\nby Ziehl–Neelsen (result)",
+    "s": 20,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch20_al_sx_eshirixioz.webp": {
+  "items": [
+   {
+    "box": [
+     592,
+     28,
+     854,
+     114
+    ],
+    "t": "Material for examination: feces, urine, blood, vomit, autopsy material, etc.",
+    "s": 18,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     400,
+     50,
+     584,
+     137
+    ],
+    "t": "Collected into\na glycerol\nmixture",
+    "s": 19,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     524,
+     230,
+     588,
+     262
+    ],
+    "t": "H₂S",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     596,
+     230,
+     642,
+     262
+    ],
+    "t": "Glu",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     644,
+     230,
+     707,
+     262
+    ],
+    "t": "Lac",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     709,
+     230,
+     760,
+     262
+    ],
+    "t": "Suc",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     761,
+     230,
+     853,
+     262
+    ],
+    "t": "Urea",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     542,
+     376,
+     834,
+     407
+    ],
+    "t": "Kligler medium",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     126,
+     481,
+     268,
+     547
+    ],
+    "t": "Gram\nstaining",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     460,
+     478,
+     728,
+     514
+    ],
+    "t": "Polyvalent OK serum",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     446,
+     590,
+     856,
+     624
+    ],
+    "t": "Agglutination with type-specific sera",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     240,
+     916,
+     430,
+     997
+    ],
+    "t": "Culture heated\nin a water bath",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     26,
+     983,
+     142,
+     1062
+    ],
+    "t": "Isolated\nE. coli",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     238,
+     1008,
+     430,
+     1100
+    ],
+    "t": "Extended AR\nwith OK serum",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     238,
+     1120,
+     430,
+     1164
+    ],
+    "t": "Live culture",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     756,
+     1073,
+     857,
+     1105
+    ],
+    "t": "C – 1:400",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     466,
+     877,
+     502,
+     911
+    ],
+    "t": "AG",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     523,
+     877,
+     559,
+     911
+    ],
+    "t": "AG",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     580,
+     877,
+     616,
+     911
+    ],
+    "t": "AG",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     642,
+     877,
+     678,
+     911
+    ],
+    "t": "AG",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     700,
+     877,
+     736,
+     911
+    ],
+    "t": "AG",
+    "s": 18,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch21_al_sx_dizenteriya.webp": {
+  "items": [
+   {
+    "box": [
+     596,
+     78,
+     852,
+     182
+    ],
+    "t": "Material for examination:\nfeces, vomit, autopsy\nmaterial, etc.",
+    "s": 20,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     404,
+     108,
+     546,
+     177
+    ],
+    "t": "Collected into\na glycerol\nmixture",
+    "s": 17,
+    "a": "l",
+    "bg": "#d2d6d7",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     294,
+     254,
+     652,
+     286
+    ],
+    "t": "Ploskirev and Endo media",
+    "s": 20,
+    "bg": "#d5dadb",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     312,
+     683,
+     352,
+     712
+    ],
+    "t": "AG",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     418,
+     683,
+     460,
+     712
+    ],
+    "t": "AG",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     476,
+     683,
+     518,
+     712
+    ],
+    "t": "AG",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     674,
+     644,
+     840,
+     726
+    ],
+    "t": "Sh. sonnei ferments\nto acid on day 5–6",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     168,
+     746,
+     682,
+     780
+    ],
+    "t": "Serological identification of Flexner",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     62,
+     808,
+     322,
+     834
+    ],
+    "t": "With group-specific Ag",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     400,
+     814,
+     780,
+     836
+    ],
+    "t": "With type-specific Ag",
+    "f": "sans",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     44,
+     924,
+     826,
+     968
+    ],
+    "t": "Result: genus Shigella, species Flexner, subtype Flexner 2b was isolated",
+    "s": 19,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch22_al_sx_qorin_tifi.webp": {
+  "items": [
+   {
+    "box": [
+     54,
+     58,
+     118,
+     82
+    ],
+    "t": "Day 4",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     282,
+     42,
+     402,
+     128
+    ],
+    "t": "Typhoid\non Russell\nmedium\nGl+, Lac−",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     528,
+     42,
+     616,
+     128
+    ],
+    "t": "Paratyphoid\non Russell\nmedium\nGl+, Lac−",
+    "s": 14,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     54,
+     200,
+     118,
+     222
+    ],
+    "t": "Day 5",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     352,
+     204,
+     584,
+     228
+    ],
+    "t": "Study of biochemical properties",
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     150,
+     366,
+     250,
+     386
+    ],
+    "t": "Typhoid",
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     404,
+     368,
+     494,
+     388
+    ],
+    "t": "Paratyphoid A",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     30,
+     500,
+     858,
+     548
+    ],
+    "t": "Scheme 13. Methods of bacteriological examination for the agents of typhoid and paratyphoid A and B in different periods of the disease. I – first-period test (hemoculture); II – second-period test (coproculture); III – third-period test (Widal reaction)",
+    "s": 14,
+    "a": "l",
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch22_al_sx_qorin_tifi_a.webp": {
+  "items": [
+   {
+    "box": [
+     8,
+     20,
+     262,
+     46
+    ],
+    "t": "Material for examination: blood",
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     264,
+     20,
+     584,
+     46
+    ],
+    "t": "Material for examination: feces, urine, bile",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     586,
+     20,
+     858,
+     46
+    ],
+    "t": "Material for examination: serum",
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     424,
+     64,
+     526,
+     106
+    ],
+    "t": "30% glycerol\nmixture",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     16,
+     96,
+     70,
+     182
+    ],
+    "t": "Rapoport\nmedium,\nday 1",
+    "rot": 90,
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     714,
+     58,
+     850,
+     140
+    ],
+    "t": "Widal reaction in\nthe 2nd week\nof illness",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     322,
+     162,
+     602,
+     200
+    ],
+    "t": "Differential diagnostic media\n(Endo, Ploskirev, bismuth sulfite agar)",
+    "s": 14,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     20,
+     316,
+     262,
+     354
+    ],
+    "t": "Growth without gas / with gas\nday 2",
+    "s": 14,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     26,
+     472,
+     262,
+     510
+    ],
+    "t": "Differential diagnostic media\nday 3",
+    "s": 14,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     379,
+     442,
+     482,
+     542
+    ],
+    "t": "Inoculation of\nsuspect\ncolonies on\ntwo-sugar\nRussell medium",
+    "s": 12,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     732,
+     216,
+     760,
+     232
+    ],
+    "t": "titer",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     732,
+     261,
+     760,
+     277
+    ],
+    "t": "titer",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     732,
+     309,
+     760,
+     325
+    ],
+    "t": "titer",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     732,
+     403,
+     760,
+     421
+    ],
+    "t": "titer",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     722,
+     236,
+     768,
+     257
+    ],
+    "t": "1:800",
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     722,
+     282,
+     768,
+     303
+    ],
+    "t": "1:200",
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     722,
+     325,
+     768,
+     343
+    ],
+    "t": "1:100",
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     722,
+     421,
+     768,
+     439
+    ],
+    "t": "1:100",
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     777,
+     219,
+     850,
+     257
+    ],
+    "t": "Typhoid\nO-Ag",
+    "s": 13,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     777,
+     265,
+     850,
+     303
+    ],
+    "t": "Typhoid\nH-Ag",
+    "s": 13,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     777,
+     309,
+     850,
+     347
+    ],
+    "t": "Paratyphoid\nA O-Ag",
+    "s": 11,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     777,
+     352,
+     850,
+     389
+    ],
+    "t": "Paratyphoid\nA H-Ag",
+    "s": 11,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     777,
+     394,
+     850,
+     432
+    ],
+    "t": "Paratyphoid\nB O-Ag",
+    "s": 11,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     777,
+     434,
+     850,
+     471
+    ],
+    "t": "Paratyphoid\nB H-Ag",
+    "s": 11,
+    "a": "l",
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch24_al_sx_kuydirgi.webp": {
+  "items": [
+   {
+    "box": [
+     60,
+     10,
+     604,
+     54
+    ],
+    "t": "Test material: fluid from vesicles and pustules, discharge from the carbuncle and wound, blood, sputum, feces and tissue fluid",
+    "s": 15,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     618,
+     10,
+     840,
+     58
+    ],
+    "t": "Animal hides, wool,\ndown",
+    "s": 16,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     44,
+     86,
+     242,
+     113
+    ],
+    "t": "Bacterioscopic",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     276,
+     86,
+     446,
+     113
+    ],
+    "t": "Bacteriological",
+    "s": 18,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     478,
+     88,
+     646,
+     114
+    ],
+    "t": "Biological test",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     660,
+     88,
+     830,
+     114
+    ],
+    "t": "Serological test",
+    "s": 17,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     284,
+     143,
+     334,
+     168
+    ],
+    "t": "MPA",
+    "s": 15,
+    "ell": true,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     343,
+     142,
+     388,
+     170
+    ],
+    "t": "BA",
+    "s": 17,
+    "ell": true,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     500,
+     143,
+     544,
+     166
+    ],
+    "t": "MPA",
+    "s": 14,
+    "ell": true,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     414,
+     150,
+     434,
+     196
+    ],
+    "t": "MPB",
+    "rot": 90,
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     593,
+     152,
+     612,
+     196
+    ],
+    "t": "MPB",
+    "rot": 90,
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     352,
+     270,
+     370,
+     322
+    ],
+    "t": "MPA",
+    "rot": 90,
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     530,
+     384,
+     551,
+     474
+    ],
+    "t": "MPB (+)",
+    "rot": 90,
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     110,
+     236,
+     180,
+     252
+    ],
+    "t": "Result",
+    "f": "serifi",
+    "s": 14,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     42,
+     268,
+     158,
+     296
+    ],
+    "t": "Bioassay",
+    "f": "serifb",
+    "s": 16,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     492,
+     218,
+     618,
+     236
+    ],
+    "t": "IF (pure culture)",
+    "s": 13,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     42,
+     309,
+     232,
+     335
+    ],
+    "t": "Catalase test (+)",
+    "s": 16,
+    "a": "l",
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     668,
+     281,
+     840,
+     331
+    ],
+    "t": "Test + control:\nAscoli reaction result",
+    "s": 14,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     654,
+     350,
+     830,
+     370
+    ],
+    "t": "Penicillin test",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     662,
+     458,
+     820,
+     477
+    ],
+    "t": "“String of pearls”",
+    "s": 15,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     34,
+     384,
+     106,
+     446
+    ],
+    "t": "Phage\nsuscepti-\nbility (+)",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     112,
+     384,
+     190,
+     458
+    ],
+    "t": "Antibiotic\nsuscepti-\nbility",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     214,
+     386,
+     286,
+     456
+    ],
+    "t": "Egg yolk\nagar (+)",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     290,
+     388,
+     364,
+     442
+    ],
+    "t": "Blood\nagar\n(hemol. −)",
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     389,
+     386,
+     427,
+     476
+    ],
+    "t": "Serum BA\ncapsule (+)",
+    "rot": 90,
+    "s": 11,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     448,
+     386,
+     476,
+     476
+    ],
+    "t": "Motility (−)",
+    "rot": 90,
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     488,
+     386,
+     516,
+     476
+    ],
+    "t": "Glucose (+)",
+    "rot": 90,
+    "s": 12,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     567,
+     386,
+     596,
+     476
+    ],
+    "t": "Gelatin (+)",
+    "rot": 90,
+    "s": 12,
+    "c": "#2a2a2a"
+   }
+  ]
+ },
+ "ch25_al_sx_zaxm.webp": {
+  "items": [
+   {
+    "box": [
+     54,
+     72,
+     808,
+     148
+    ],
+    "t": "Detection of T. pallidum from the lesion (hard chancre discharge, lymph node aspirate, rash fluid in secondary syphilis, cerebrospinal fluid)",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     54,
+     208,
+     424,
+     282
+    ],
+    "t": "Detection of typical forms of treponemes and study of their motility in dark field",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     442,
+     208,
+     808,
+     282
+    ],
+    "t": "Detection of treponemes in smears stained by Romanowsky–Giemsa and Morozov",
+    "s": 19,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     468,
+     338,
+     788,
+     368
+    ],
+    "t": "Stained by Morozov",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     72,
+     578,
+     384,
+     622
+    ],
+    "t": "Immunofluorescence\nreaction",
+    "s": 20,
+    "c": "#2a2a2a"
+   },
+   {
+    "box": [
+     432,
+     700,
+     794,
+     792
+    ],
+    "t": "Polymerase chain reaction (PCR): detection of a T. pallidum-specific DNA fragment",
+    "s": 19,
+    "c": "#2a2a2a"
+   }
+  ]
+ }
+}
