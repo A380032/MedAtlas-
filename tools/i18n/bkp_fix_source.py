@@ -131,6 +131,13 @@ def join_sentences(bl, n):
         if a["type"] == "box":
             n = join_sentences(a["parts"], n)
         if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
+                and a["text"].rstrip().endswith("-**") and re.match(r"\*\*[a-z]", bl[i + 1]["text"])):
+            # "... **Affektiv-**" | "**respirator xurujlar** — ..." — chiziqcha bilan bo'lingan so'z
+            a["text"] = a["text"].rstrip()[:-2] + bl[i + 1]["text"][2:]
+            del bl[i + 1]
+            n += 1
+            continue
+        if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
                 and a["text"].rstrip().endswith("**") and bl[i + 1]["text"].startswith("**va ")):
             # "... → **o‘ng qorincha gipertrofiyasi**" | "**va dilatatsiyasi** → ..." — bitta qalin ibora
             a["text"] = a["text"].rstrip()[:-2] + " " + bl[i + 1]["text"][2:]
@@ -258,7 +265,7 @@ def renumber():
 WORDS = {"Kuchay gan": "Kuchaygan", "Susayga n": "Susaygan", "Eshitilmayd i": "Eshitilmaydi", "O‘zgar magan": "O‘zgarmagan",
          "Bochkasim on": "Bochkasimon", "Kasallikla r": "Kasalliklar", "Perkussiy a": "Perkussiya",
          "Retikulotsitl ar": "Retikulotsitlar", "Rivojlanis h": "Rivojlanish", "chegarala ri": "chegaralari",
-         "35– 45%": "35–45%", "39– 40 °C": "39–40 °C", "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
+         "35– 45%": "35–45%", "qo‘loyoq": "qo‘l-oyoq", "Qo‘loyoq": "Qo‘l-oyoq", "39– 40 °C": "39–40 °C", "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
 
 
 # asl matndagi ma'no/imlo xatolari (asl PDF va darsliklar bilan solishtirib topilgan)
