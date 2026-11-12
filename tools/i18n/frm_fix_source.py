@@ -284,7 +284,7 @@ def bullet_tail():
             for i in range(len(bl) - 1):
                 a, b = bl[i], bl[i + 1]
                 if a["type"] == "list" and not a.get("ordered") and b["type"] == "p" \
-                        and re.match(r"[a-z‘]", b["text"]) and not re.search(r"[.:;!?)]\s*$", a["items"][-1]):
+                        and re.match(r"[a-z‘(]", b["text"]) and not re.search(r"[.:;!?)]\s*$", a["items"][-1]):
                     pieces = [x.strip() for x in re.split(r"\s•\s", b["text"])]
                     a["items"][-1] = a["items"][-1].rstrip() + " " + pieces[0]
                     a["items"] += pieces[1:]
@@ -313,7 +313,7 @@ def renumber():
 
 
 # ---------- 4) so'zlar ----------
-WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Qaytaruvchanli k": "Qaytaruvchanlik", "Millisek undlar": "Millisekundlar", "Sezilarl i kamaya di": "Sezilarli kamayadi",
+WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Qaytaruvchanli k": "Qaytaruvchanlik", "Millisek undlar": "Millisekundlar", "Davomiy ligi": "Davomiyligi", "Sezilarl i kamaya di": "Sezilarli kamayadi",
          "5-HT3antagoni stlar": "5-HT3-antagonistlar", "D2antagoni stlar": "D2-antagonistlar",
          "5-HT3antagonist lar": "5-HT3-antagonistlar", "D2antagonist lar": "D2-antagonistlar",
          "H1blokatorl ar": "H1-blokatorlar", "H2blokatorla r": "H2-blokatorlar"}

@@ -1,180 +1,184 @@
-s4733	enalapril, lizinopril, losartan, amlodipin, indapamid, gidroxlorotiazid, moksonidin, metildopa, spironolakton kabi preparatlarga retsept yozish;
-s4734	bemorga gipotenziv davo rejasini tuzish va kombinatsiyani tanlash;
-s4735	gipertonik krizda shoshilinch yordam ko‘rsatish.
-s4736	**AG da birinchi qator (asosiy) dorilarning 5 guruhi**: **APF ingibitorlari, ARB, kalsiy antagonistlari, tiazid/tiazidsimon diuretiklar** va (ma’lum ko‘rsatmalar bo‘lganda) **beta-blokatorlar**. Ular yurak-qon tomir asoratlari va o‘limni kamaytirishi isbotlangan.
-s4737	APF ingibitorlarining nojo‘ya ta’sirlari — **“KAPTOPRIL”**: **K**aliy oshishi (giperkaliyemiya), **A**ngionevrotik shish, **P**roteinuriya (kam, kaptopril), **T**a’m buzilishi, **O**rtostatik (birinchi doza) gipotenziya, **P**regnantlik (homiladorlik) — mumkin emas, **R**enal arteriya stenozi — mumkin emas, **I**ritatsion quruq yo‘tal, **L**eykopeniya (neytropeniya).
-s4738	**APF ingibitori + ARB** (yoki ular + aliskiren) kombinatsiyasi — “ikki tomonlama RAAT blokadasi” — **tavsiya etilmaydi**: qo‘shimcha foyda bermaydi, giperkaliyemiya, gipotenziya va o‘tkir buyrak shikastlanishi xavfini oshiradi.
-s4739	Klonidin ilgari MDH mamlakatlarida AG ning asosiy dorilaridan biri bo‘lgan. Zamonaviy tavsiyalarda u **muntazam davolash uchun tavsiya etilmaydi** (rikoshet, sedatsiya, organoprotektiv ta’sir isbotlanmagan). Shuningdek klonidin jinoiy maqsadlarda (spirt bilan qo‘shib) ishlatilishi mumkinligi sababli qat’iy nazoratda.
-s4740	Ko‘pchilik bemorlar uchun maqsadli AQB **130/80 mm sim. ust. dan past** (65 yoshdan katta va zaif keksalarda individual, odatda sistolik 130–139 mm sim. ust.). Davolashni ko‘pchilik bemorlarda **ikki dorining past dozalaridagi qat’iy kombinatsiyasi (bitta tabletkada)** bilan boshlash tavsiya etiladi; past xavfli 1-darajali AG va zaif keksalarda — monoterapiya bilan.
-s4741	Gipertonik krizda **qisqa ta’sirli nifedipinni til ostiga** berish, shuningdek AQB ni juda tez va keskin tushirish xavfli: miya, yurak va buyrak ishemiyasi (insult, infarkt) rivojlanishi mumkin. Asoratlanmagan krizda bemorni shoshilinch kasalxonaga yotqizish odatda talab qilinmaydi — tinch muhit, ichish uchun dori va 24–48 soatda nazorat yetarli.
-s4742	**O‘tkir gipotenziyada birinchi navbatda sababni aniqlash** kerak: gipovolemiya (qon yo‘qotish, suvsizlanish) — suyuqlik; anafilaksiya — adrenalin; septik shok — suyuqlik + noradrenalin; kardiogen shok — inotroplar; bradikardiya — atropin; buyrak usti bezi yetishmovchiligi — gidrokortizon. Vazopressorlar yetarli suyuqlik quyilmagan gipovolemiyada samarasiz va zararli.
-s4743	1. Arterial bosimni boshqarish va gipotenziv vositalar tasnifi
-s4744	AQB = **yurak otishi (daqiqalik hajm)** × **umumiy periferik qon tomir qarshiligi**. Uni boshqaruvchi asosiy tizimlar:
-s4745	**simpatik nerv tizimi** (vazomotor markaz, baroretseptorlar, alfa va beta-retseptorlar);
-s4746	**renin-angiotenzin-aldosteron tizimi (RAAT)**: renin → angiotenzinogendan angiotenzin I → APF → **angiotenzin II** (AT1-retseptorlar orqali kuchli vazokonstriksiya, aldosteron ajralishi, simpatik faollashuv, yurak va tomirlar remodellanishi);
-s4747	**buyrak** orqali natriy va suv ajralishi (qon aylanayotgan hajm);
-s4748	mahalliy omillar: NO, endotelin, prostatsiklin, bradikinin, natriyuretik peptidlar.
-s4749	Rasm 11.1
-s4750	Gipotenziv vositalarning ta’sir nuqtalari: markaziy, gangliyalar, simpatik nerv oxirlari, beta va alfa-adrenoretseptorlar, miotrop vositalar (TTA farmakologiya kafedrasi o‘quv materiali)
-s4751	Jadval 11.1. Gipotenziv vositalar tasnifi
-s4752	A. RAAT ga ta’sir etuvchilar
-s4753	APF ingibitorlari
-s4754	Enalapril, lizinopril, ramipril, perindopril, kaptopril, fozinopril, zofenopril
-s4755	Angiotenzin II retseptor (AT1) blokatorlari (ARB, sartanlar)
-s4756	Losartan, valsartan, irbesartan, telmisartan, kandesartan, olmesartan, azilsartan
-s4757	To‘g‘ridan-to‘g‘ri renin ingibitori
-s4758	Aliskiren
-s4759	Mineralokortikoid retseptor antagonistlari
-s4760	Spironolakton, eplerenon, finerenon
-s4761	ARNI (angiotenzin retseptori va neprilizin ingibitori)
-s4762	Sakubitril/valsartan (yurak yetishmovchiligida)
-s4763	B. Kalsiy kanallari blokatorlari
-s4764	Digidropiridinlar
-s4765	Amlodipin, lerkanidipin, felodipin, nifedipin (retard)
-s4766	Nodigidropiridinlar
-s4767	C. Diuretiklar
-s4768	Tiazid va tiazidsimonlar
-s4769	Gidroxlorotiazid, xlortalidon, indapamid
-s4770	Halqa diuretiklari
-s4771	Furosemid, torasemid
-s4772	D. Neyrotrop vositalar
-s4773	Beta-adrenoblokatorlar
-s4774	Bisoprolol, metoprolol, nebivolol, karvedilol
-s4775	Doksazozin, prazozin
-s4776	Markaziy ta’sirli
-s4777	Klonidin (klofelin), metildopa, moksonidin, rilmenidin
-s4778	Ganglioblokatorlar, simpatolitiklar
-s4779	Azametoniy, rezerpin (tarixan)
-s4780	E. Miotrop vazodilatatorlar
-s4781	Arteriolyar
-s4782	Gidralazin, minoksidil, diazoksid, bendazol (dibazol), magniy sulfat
-s4783	Aralash (arteriya + vena)
-s4784	Natriy nitroprussid
-s4785	2. Renin-angiotenzin-aldosteron tizimiga ta’sir etuvchi vositalar
-s4786	2.1. APF ingibitorlari
-s4787	**Mexanizm.** Angiotenzinga aylantiruvchi fermentni (APF, kininaza II) tormozlaydi:
-s4788	**angiotenzin II hosil bo‘lishi kamayadi** → vazodilatatsiya, aldosteron ajralishi kamayadi (natriy va suv chiqariladi, kaliy saqlanadi), simpatik faollik pasayadi;
-s4789	**bradikinin parchalanishi kamayadi** → bradikinin to‘planadi → NO va prostatsiklin ajralishi ortadi (qo‘shimcha vazodilatatsiya) — ammo **quruq yo‘tal** va **angionevrotik shish** shu bilan bog‘liq. **Organoprotektiv ta’sirlar:** chap qorincha gipertrofiyasi va tomirlar remodellanishini kamaytirish; **buyraklarni himoya qilish** — efferent arteriolani kengaytirib, koptokcha ichi bosimini va **proteinuriyani kamaytiradi** (diabetik nefropatiya).
-s4790	Jadval 11.2. APF ingibitorlarining xususiyatlari
-s4791	Kaptopril
-s4792	Faol shakl (prodori emas), SH-guruh saqlaydi; tez ta’sir
-s4793	Qisqa (kuniga 2–3 marta) — gipertonik krizda til ostiga
-s4794	Enalapril
-s4795	Prodori → enalaprilat (jigarda); enalaprilat venaga
-s4796	Kuniga 1–2 marta
-s4797	Lizinopril
-s4798	Faol, jigarda metabolizmga uchramaydi, buyrak orqali chiqadi
-s4799	Ramipril, perindopril
-s4800	Prodorilar; to‘qimalarga yaxshi kiradi
-s4801	Fozinopril
-s4802	Ikki yo‘l bilan chiqariladi (buyrak + jigar)
-s4803	Buyrak yetishmovchiligida qulay
-s4804	**Qo‘llanishi:** arterial gipertenziya (ayniqsa diabet, proteinuriya, chap qorincha gipertrofiyasi bilan), **surunkali yurak yetishmovchiligi** (otish fraksiyasi kamaygan — o‘limni kamaytiradi), miokard infarktidan keyin, diabetik va nodiabetik nefropatiya.
-s4805	Jadval 11.3. APF ingibitorlarining nojo‘ya ta’sirlari
-s4806	Mexanizm / izoh
-s4807	Quruq yo‘tal (5–20%)
-s4808	Bradikinin to‘planishi; ARB ga almashtiriladi
-s4809	Angionevrotik shish (kam, lekin xavfli)
-s4810	Bradikinin; qora tanlilarda ko‘proq; qayta buyurilmaydi
-s4811	Aldosteron kamayishi; ayniqsa buyrak yetishmovchiligi, kaliy saqlovchi diuretiklar, NYaQV bilan
-s4812	“Birinchi doza gipotenziyasi”
-s4813	Diuretik qabul qilgan, gipovolemik bemorlarda
-s4814	Buyrak funksiyasining yomonlashishi
-s4815	Ikki tomonlama buyrak arteriyasi stenozida — efferent arteriola kengayib, filtratsiya bosimi keskin pasayadi
-s4816	Teratogenlik (II–III trimestr)
-s4817	Homila buyragi rivojlanishi buzilishi, kam suvlilik — homiladorlikda mutlaqo mumkin emas
-s4818	Ta’m buzilishi, toshma, neytropeniya
-s4819	Ko‘proq kaptoprilda (SH-guruh)
-s4820	2.2. Angiotenzin II retseptor blokatorlari (ARB, sartanlar)
-s4821	**Mexanizm. AT1-retseptorlarni** tanlab bloklaydi — angiotenzin II ning barcha zararli ta’sirlari (APF dan tashqari yo‘llar bilan hosil bo‘lgan angiotenzin II ham) bartaraf etiladi. Bradikinin parchalanishiga ta’sir qilmaydi — shuning uchun **yo‘tal chaqirmaydi**, angionevrotik shish juda kam.
-s4822	**Qo‘llanishi:** APF ingibitorlari bilan bir xil (AG, yurak yetishmovchiligi, diabetik nefropatiya); APF ingibitorlarini ko‘tara olmaydigan bemorlarda. **Losartan** — siydik kislotasini chiqarishni oshiradi (podagra bilan birga AG). **Telmisartan** — uzoq ta’sirli.
-s4823	**Nojo‘ya ta’sirlar va qarshi ko‘rsatmalar** — APF ingibitorlari bilan o‘xshash: giperkaliyemiya, buyrak funksiyasining yomonlashishi (buyrak arteriyalari stenozida), **homiladorlikda mumkin emas**.
-s4824	2.3. Mineralokortikoid retseptor antagonistlari va renin ingibitori
-s4825	**Spironolakton** va **eplerenon** — aldosteron retseptorlarini bloklaydi (13-mavzuda batafsil). Qo‘llanishi: **rezistent AG** (uch dori fonida ham AQB yuqori — to‘rtinchi dori), birlamchi giperaldosteronizm, surunkali yurak yetishmovchiligi (o‘limni kamaytiradi), jigar sirrozida assit. Nojo‘ya ta’sirlar: **giperkaliyemiya**, spironolaktonda — **ginekomastiya**, hayz buzilishi (antiandrogen ta’sir); eplerenon selektivroq.
-s4826	**Aliskiren** — reninni bevosita tormozlaydi; hozir kam ishlatiladi.
-s4827	3. Kalsiy kanallari blokatorlari
-s4828	Mexanizm va tasnifi 10-mavzuda ko‘rilgan. AG da asosan **uzoq ta’sirli digidropiridinlar** (amlodipin, lerkanidipin, nifedipin GITS) ishlatiladi: arteriolalarni kengaytirib, periferik qarshilikni kamaytiradi.
-s4829	**Afzalliklari:** metabolik neytral, keksalarda va izolyatsiyalangan sistolik AG da samarali, qora tanlilarda yaxshi samara, insultning oldini olishda samarali, homiladorlikda (nifedipin) mumkin.
-s4830	**Nojo‘ya ta’sirlar: oyoq to‘piqlari shishi** (diuretik bilan kamaymaydi, APF ingibitori/ARB bilan kamayadi), bosh og‘rig‘i, yuz qizarishi, milk giperplaziyasi; verapamilda — qabziyat va bradikardiya.
-s4831	4. Diuretiklar
-s4832	Mexanizmi 13-mavzuda batafsil ko‘riladi. AG da asosan **tiazid va tiazidsimon** diuretiklar ishlatiladi: dastlab qon aylanayotgan hajmni kamaytiradi, keyinchalik tomir devorida natriy kamayishi hisobiga periferik qarshilikni pasaytiradi.
-s4833	**Indapamid** va **xlortalidon** (tiazidsimon) — uzoq ta’sirli, metabolik nojo‘ya ta’sirlari kam; kardiovaskulyar asoratlarni kamaytirishda isbotlangan.
-s4834	**Gidroxlorotiazid** — ko‘pincha kombinatsiyalangan tabletkalarda (12,5–25 mg).
-s4835	**Halqa diuretiklari** (furosemid, torasemid) AG da faqat **buyrak yetishmovchiligi** (KFT < 30 ml/daq) va yurak yetishmovchiligida shish bilan. **Tiazidlarning metabolik nojo‘ya ta’sirlari:** gipokaliyemiya, giponatriyemiya, **giperurikemiya** (podagra xuruji), giperglikemiya, dislipidemiya, giperkalsiyemiya — asosan yuqori dozalarda.
-s4836	5. Neyrotrop gipotenziv vositalar
-s4837	5.1. Markaziy ta’sirli vositalar
-s4838	Rasm 11.2
-s4839	Markaziy ta’sir etuvchi gipotenziv vositalarning ta’sir yo‘llari: klofelin va metildopa — alfa-2-adrenoretseptorlar, moksonidin — I1-imidazolin retseptorlari (TTA farmakologiya kafedrasi o‘quv materiali)
-s4840	Jadval 11.4. Markaziy ta’sirli gipotenziv vositalar
-s4841	Xususiyatlari va qo‘llanishi
-s4842	Klonidin (klofelin)
-s4843	Uzunchoq miyada alfa-2 va I1-imidazolin retseptorlarini qo‘zg‘atadi — simpatik tonus pasayadi
-s4844	Gipertonik kriz (til ostiga, venaga); opioid va alkogol abstinensiyasi
-s4845	Sedatsiya, og‘iz qurishi, bradikardiya; to‘satdan to‘xtatilganda rikoshet gipertonik kriz; spirt bilan birga — kuchli MNS tormozlanishi; dozadan oshganda — koma, bradikardiya, mioz
-s4846	Metildopa
-s4847	Alfa-metilnoradrenalinga aylanib, markaziy alfa-2 ni qo‘zg‘atadi
-s4848	Homiladorlik gipertenziyasida tanlov dori
-s4849	Sedatsiya, depressiya, Kumbsmusbat gemolitik anemiya, gepatit, giperprolaktinemiya
-s4850	Moksonidin, rilmenidin
-s4851	I1-imidazolin retseptorlarining tanlab agonisti
-s4852	Metabolik sindrom bilan AG (insulin sezgirligini yaxshilaydi); qo‘shimcha dori
-s4853	Sedatsiya va og‘iz qurishi klonidindan ancha kam; rikoshet kam
-s4854	5.2. Beta va alfa-adrenoblokatorlar
-s4855	**Beta-blokatorlar** (6-mavzu) AG da quyidagi hollarda birinchi qator: YuIK, infarktdan keyin, yurak yetishmovchiligi, taxiaritmiyalar, homiladorlik rejalashtirish, yosh bemorlarda simpatik giperfaollik. Keksalarda insultning oldini olishda boshqa guruhlardan biroz kuchsizroq. **Afzal preparatlar**: bisoprolol, nebivolol, karvedilol, metoprolol suksinat (atenolol emas).
-s4856	**Alfa-1-adrenoblokatorlar** (doksazozin) — rezistent AG da qo‘shimcha dori, ayniqsa **prostata giperplaziyasi** bilan birga.
-s4857	6. Miotrop vazodilatatorlar
-s4858	**Gidralazin** — arteriolalarni bevosita kengaytiradi; reflektor taxikardiya va suyuqlik ushlanishi kuchli (beta-blokator va diuretik bilan beriladi); uzoq qo‘llanganda — **dorivor lupus** (sekin atsetillovchilarda). Homiladorlikdagi og‘ir AG da venaga; qora tanli bemorlarda yurak yetishmovchiligida izosorbid dinitrat bilan.
-s4859	**Minoksidil** — KATF kanallarini ochadi; juda kuchli; rezistent AG da; **gipertrixoz** — shu sababli mahalliy eritmasi alopetsiyada ishlatiladi.
-s4860	**Natriy nitroprussid** — NO-donor; arteriya va venalarni kengaytiradi; ta’sir darhol boshlanadi va infuziya to‘xtatilganda 1–2 daqiqada tugaydi. **Gipertonik kriz** va aortaning qatlamlanishida (beta-blokator bilan) **venaga tomchilab**, qorong‘i tizim orqali (yorug‘likda parchalanadi). Uzoq qo‘llanganda **sianid intoksikatsiyasi** (antidot — natriy tiosulfat, gidroksokobalamin).
-s4861	**Bendazol (dibazol)** — kuchsiz miotrop spazmolitik; MDH mamlakatlarida yengil krizlarda papaverin bilan ishlatilgan; samaradorligi zamonaviy talablarga javob bermaydi.
-s4862	**Magniy sulfat** — **preeklampsiya va eklampsiyada talvasalarning oldini olish** (asosiy ko‘rsatma); gipotenziv ta’siri kuchsiz.
-s4863	7. Arterial gipertenziyani davolash tamoyillari
-s4864	7.1. Maqsadli AQB va boshlang‘ich davo
-s4865	Jadval 11.5. AG ni bosqichli dori bilan davolash (Yevropa tavsiyalari asosida)
-s4866	Davo
-s4867	APF ingibitori yoki ARB + kalsiy antagonisti yoki + tiazid/tiazidsimon diuretik (bitta tabletkada)
-s4868	Uch dori: APF ingibitori/ARB + kalsiy antagonisti + diuretik (bitta tabletkada)
-s4869	3 (rezistent AG)
-s4870	+ spironolakton (yoki boshqa diuretik, alfa-blokator, beta-blokator); mutaxassis maslahati
-s4871	Har qanday bosqichda
-s4872	Ko‘rsatma bo‘lsa (YuIK, yurak yetishmovchiligi, aritmiya) — beta-blokator qo‘shiladi
-s4873	**Hayot tarzini o‘zgartirish** har bir bosqichda: osh tuzini kuniga 5 g dan kam iste’mol qilish, vaznni kamaytirish, muntazam jismoniy faollik, spirtni cheklash, chekishni tashlash, sabzavot va mevalarga boy ovqatlanish.
-s4874	Jadval 11.6. Oqilona va noratsional kombinatsiyalar
-s4875	Oqilona
-s4876	Noratsional / xavfli
-s4877	APF ingibitori/ARB + kalsiy antagonisti
-s4878	APF ingibitori + ARB
-s4879	APF ingibitori/ARB + tiazid/tiazidsimon diuretik
-s4880	Verapamil yoki diltiazem + beta-blokator (bradikardiya, AV blokada)
-s4881	Kalsiy antagonisti (digidropiridin) + diuretik
-s4882	APF ingibitori/ARB + kaliy saqlovchi diuretik (spironolaktondan tashqari yurak yetishmovchiligida nazorat bilan) — giperkaliyemiya
-s4883	Digidropiridin + beta-blokator
-s4884	Beta-blokator + markaziy alfa-2-agonist (klonidin) — bradikardiya, rikoshet
-s4885	7.2. Alohida bemorlar guruhida dori tanlash
-s4886	Jadval 11.7. Yondosh holatlarga ko‘ra gipotenziv dori tanlash
-s4887	Yondosh holat
-s4888	Afzal dorilar
-s4889	Qandli diabet, proteinuriya, surunkali buyrak kasalligi
-s4890	APF ingibitori yoki ARB (+ SGLT2 ingibitori, finerenon)
-s4891	Yuqori dozali tiazidlar va betablokatorlar (metabolik)
-s4892	YuIK, infarktdan keyin
-s4893	Beta-blokator, APF ingibitori
-s4894	Qisqa ta’sirli nifedipin
-s4895	Surunkali yurak yetishmovchiligi
-s4896	APF ingibitori/ARB/ARNI, betablokator, MRA, diuretik
-s4897	Verapamil, diltiazem, alfablokatorlar, moksonidin
-s4898	Podagra
-s4899	Losartan, kalsiy antagonistlari
-s4900	Tiazid va halqa diuretiklari
-s4901	Kalsiy antagonistlari, APF ingibitori/ARB
-s4902	Prostata giperplaziyasi
-s4903	Alfa-1-blokator qo‘shimcha
-s4904	Metildopa, labetalol, nifedipin (retard)
-s4905	APF ingibitorlari, ARB, aliskiren (teratogen); spironolakton; atenolol
-s4906	Keksalar, izolyatsiyalangan sistolik AG
-s4907	Kalsiy antagonistlari, tiazidsimon diuretiklar
-s4908	Alfa-blokatorlar (ortostatik gipotenziya), klonidin
-s4909	Ikki tomonlama buyrak arteriyasi stenozi
-s4910	APF ingibitorlari, ARB
-s4911	Homiladorlikni rejalashtirayotgan yoki homilador bo‘lgan ayolda APF ingibitori yoki ARB qabul qilinayotgan bo‘lsa, ular **darhol** metildopa, labetalol yoki nifedipin bilan almashtiriladi. Reproduktiv yoshdagi ayollarga bu dorilarni buyurganda kontratsepsiya haqida maslahat berish kerak.
-s4912	7.3. Gipertonik kriz
+s4736	**APF ingibitori + ARB** (yoki ular + aliskiren) kombinatsiyasi — “ikki tomonlama RAAT blokadasi” — **tavsiya etilmaydi**: qo‘shimcha foyda bermaydi, giperkaliyemiya, gipotenziya va o‘tkir buyrak shikastlanishi xavfini oshiradi.
+s4737	Klonidin ilgari MDH mamlakatlarida AG ning asosiy dorilaridan biri bo‘lgan. Zamonaviy tavsiyalarda u **muntazam davolash uchun tavsiya etilmaydi** (rikoshet, sedatsiya, organoprotektiv ta’sir isbotlanmagan). Shuningdek klonidin jinoiy maqsadlarda (spirt bilan qo‘shib) ishlatilishi mumkinligi sababli qat’iy nazoratda.
+s4738	Ko‘pchilik bemorlar uchun maqsadli AQB **130/80 mm sim. ust. dan past** (65 yoshdan katta va zaif keksalarda individual, odatda sistolik 130–139 mm sim. ust.). Davolashni ko‘pchilik bemorlarda **ikki dorining past dozalaridagi qat’iy kombinatsiyasi (bitta tabletkada)** bilan boshlash tavsiya etiladi; past xavfli 1-darajali AG va zaif keksalarda — monoterapiya bilan.
+s4739	Gipertonik krizda **qisqa ta’sirli nifedipinni til ostiga** berish, shuningdek AQB ni juda tez va keskin tushirish xavfli: miya, yurak va buyrak ishemiyasi (insult, infarkt) rivojlanishi mumkin. Asoratlanmagan krizda bemorni shoshilinch kasalxonaga yotqizish odatda talab qilinmaydi — tinch muhit, ichish uchun dori va 24–48 soatda nazorat yetarli.
+s4740	**O‘tkir gipotenziyada birinchi navbatda sababni aniqlash** kerak: gipovolemiya (qon yo‘qotish, suvsizlanish) — suyuqlik; anafilaksiya — adrenalin; septik shok — suyuqlik + noradrenalin; kardiogen shok — inotroplar; bradikardiya — atropin; buyrak usti bezi yetishmovchiligi — gidrokortizon. Vazopressorlar yetarli suyuqlik quyilmagan gipovolemiyada samarasiz va zararli.
+s4741	1. Arterial bosimni boshqarish va gipotenziv vositalar tasnifi
+s4742	AQB = **yurak otishi (daqiqalik hajm)** × **umumiy periferik qon tomir qarshiligi**. Uni boshqaruvchi asosiy tizimlar:
+s4743	**simpatik nerv tizimi** (vazomotor markaz, baroretseptorlar, alfa va beta-retseptorlar);
+s4744	**renin-angiotenzin-aldosteron tizimi (RAAT)**: renin → angiotenzinogendan angiotenzin I → APF → **angiotenzin II** (AT1-retseptorlar orqali kuchli vazokonstriksiya, aldosteron ajralishi, simpatik faollashuv, yurak va tomirlar remodellanishi);
+s4745	**buyrak** orqali natriy va suv ajralishi (qon aylanayotgan hajm);
+s4746	mahalliy omillar: NO, endotelin, prostatsiklin, bradikinin, natriyuretik peptidlar.
+s4747	Rasm 11.1
+s4748	Gipotenziv vositalarning ta’sir nuqtalari: markaziy, gangliyalar, simpatik nerv oxirlari, beta va alfa-adrenoretseptorlar, miotrop vositalar (TTA farmakologiya kafedrasi o‘quv materiali)
+s4749	Jadval 11.1. Gipotenziv vositalar tasnifi
+s4750	A. RAAT ga ta’sir etuvchilar
+s4751	APF ingibitorlari
+s4752	Enalapril, lizinopril, ramipril, perindopril, kaptopril, fozinopril, zofenopril
+s4753	Angiotenzin II retseptor (AT1) blokatorlari (ARB, sartanlar)
+s4754	Losartan, valsartan, irbesartan, telmisartan, kandesartan, olmesartan, azilsartan
+s4755	To‘g‘ridan-to‘g‘ri renin ingibitori
+s4756	Aliskiren
+s4757	Mineralokortikoid retseptor antagonistlari
+s4758	Spironolakton, eplerenon, finerenon
+s4759	ARNI (angiotenzin retseptori va neprilizin ingibitori)
+s4760	Sakubitril/valsartan (yurak yetishmovchiligida)
+s4761	B. Kalsiy kanallari blokatorlari
+s4762	Digidropiridinlar
+s4763	Amlodipin, lerkanidipin, felodipin, nifedipin (retard)
+s4764	Nodigidropiridinlar
+s4765	C. Diuretiklar
+s4766	Tiazid va tiazidsimonlar
+s4767	Gidroxlorotiazid, xlortalidon, indapamid
+s4768	Halqa diuretiklari
+s4769	Furosemid, torasemid
+s4770	D. Neyrotrop vositalar
+s4771	Beta-adrenoblokatorlar
+s4772	Bisoprolol, metoprolol, nebivolol, karvedilol
+s4773	Doksazozin, prazozin
+s4774	Markaziy ta’sirli
+s4775	Klonidin (klofelin), metildopa, moksonidin, rilmenidin
+s4776	Ganglioblokatorlar, simpatolitiklar
+s4777	Azametoniy, rezerpin (tarixan)
+s4778	E. Miotrop vazodilatatorlar
+s4779	Arteriolyar
+s4780	Gidralazin, minoksidil, diazoksid, bendazol (dibazol), magniy sulfat
+s4781	Aralash (arteriya + vena)
+s4782	Natriy nitroprussid
+s4783	2. Renin-angiotenzin-aldosteron tizimiga ta’sir etuvchi vositalar
+s4784	2.1. APF ingibitorlari
+s4785	**Mexanizm.** Angiotenzinga aylantiruvchi fermentni (APF, kininaza II) tormozlaydi:
+s4786	**angiotenzin II hosil bo‘lishi kamayadi** → vazodilatatsiya, aldosteron ajralishi kamayadi (natriy va suv chiqariladi, kaliy saqlanadi), simpatik faollik pasayadi;
+s4787	**bradikinin parchalanishi kamayadi** → bradikinin to‘planadi → NO va prostatsiklin ajralishi ortadi (qo‘shimcha vazodilatatsiya) — ammo **quruq yo‘tal** va **angionevrotik shish** shu bilan bog‘liq. **Organoprotektiv ta’sirlar:** chap qorincha gipertrofiyasi va tomirlar remodellanishini kamaytirish; **buyraklarni himoya qilish** — efferent arteriolani kengaytirib, koptokcha ichi bosimini va **proteinuriyani kamaytiradi** (diabetik nefropatiya).
+s4788	Jadval 11.2. APF ingibitorlarining xususiyatlari
+s4789	Kaptopril
+s4790	Faol shakl (prodori emas), SH-guruh saqlaydi; tez ta’sir
+s4791	Qisqa (kuniga 2–3 marta) — gipertonik krizda til ostiga
+s4792	Enalapril
+s4793	Prodori → enalaprilat (jigarda); enalaprilat venaga
+s4794	Kuniga 1–2 marta
+s4795	Lizinopril
+s4796	Faol, jigarda metabolizmga uchramaydi, buyrak orqali chiqadi
+s4797	Ramipril, perindopril
+s4798	Prodorilar; to‘qimalarga yaxshi kiradi
+s4799	Fozinopril
+s4800	Ikki yo‘l bilan chiqariladi (buyrak + jigar)
+s4801	Buyrak yetishmovchiligida qulay
+s4802	**Qo‘llanishi:** arterial gipertenziya (ayniqsa diabet, proteinuriya, chap qorincha gipertrofiyasi bilan), **surunkali yurak yetishmovchiligi** (otish fraksiyasi kamaygan — o‘limni kamaytiradi), miokard infarktidan keyin, diabetik va nodiabetik nefropatiya.
+s4803	Jadval 11.3. APF ingibitorlarining nojo‘ya ta’sirlari
+s4804	Mexanizm / izoh
+s4805	Quruq yo‘tal (5–20%)
+s4806	Bradikinin to‘planishi; ARB ga almashtiriladi
+s4807	Angionevrotik shish (kam, lekin xavfli)
+s4808	Bradikinin; qora tanlilarda ko‘proq; qayta buyurilmaydi
+s4809	Aldosteron kamayishi; ayniqsa buyrak yetishmovchiligi, kaliy saqlovchi diuretiklar, NYaQV bilan
+s4810	“Birinchi doza gipotenziyasi”
+s4811	Diuretik qabul qilgan, gipovolemik bemorlarda
+s4812	Buyrak funksiyasining yomonlashishi
+s4813	Ikki tomonlama buyrak arteriyasi stenozida — efferent arteriola kengayib, filtratsiya bosimi keskin pasayadi
+s4814	Teratogenlik (II–III trimestr)
+s4815	Homila buyragi rivojlanishi buzilishi, kam suvlilik — homiladorlikda mutlaqo mumkin emas
+s4816	Ta’m buzilishi, toshma, neytropeniya
+s4817	Ko‘proq kaptoprilda (SH-guruh)
+s4818	2.2. Angiotenzin II retseptor blokatorlari (ARB, sartanlar)
+s4819	**Mexanizm. AT1-retseptorlarni** tanlab bloklaydi — angiotenzin II ning barcha zararli ta’sirlari (APF dan tashqari yo‘llar bilan hosil bo‘lgan angiotenzin II ham) bartaraf etiladi. Bradikinin parchalanishiga ta’sir qilmaydi — shuning uchun **yo‘tal chaqirmaydi**, angionevrotik shish juda kam.
+s4820	**Qo‘llanishi:** APF ingibitorlari bilan bir xil (AG, yurak yetishmovchiligi, diabetik nefropatiya); APF ingibitorlarini ko‘tara olmaydigan bemorlarda. **Losartan** — siydik kislotasini chiqarishni oshiradi (podagra bilan birga AG). **Telmisartan** — uzoq ta’sirli.
+s4821	**Nojo‘ya ta’sirlar va qarshi ko‘rsatmalar** — APF ingibitorlari bilan o‘xshash: giperkaliyemiya, buyrak funksiyasining yomonlashishi (buyrak arteriyalari stenozida), **homiladorlikda mumkin emas**.
+s4822	2.3. Mineralokortikoid retseptor antagonistlari va renin ingibitori
+s4823	**Spironolakton** va **eplerenon** — aldosteron retseptorlarini bloklaydi (13-mavzuda batafsil). Qo‘llanishi: **rezistent AG** (uch dori fonida ham AQB yuqori — to‘rtinchi dori), birlamchi giperaldosteronizm, surunkali yurak yetishmovchiligi (o‘limni kamaytiradi), jigar sirrozida assit. Nojo‘ya ta’sirlar: **giperkaliyemiya**, spironolaktonda — **ginekomastiya**, hayz buzilishi (antiandrogen ta’sir); eplerenon selektivroq.
+s4824	**Aliskiren** — reninni bevosita tormozlaydi; hozir kam ishlatiladi.
+s4825	3. Kalsiy kanallari blokatorlari
+s4826	Mexanizm va tasnifi 10-mavzuda ko‘rilgan. AG da asosan **uzoq ta’sirli digidropiridinlar** (amlodipin, lerkanidipin, nifedipin GITS) ishlatiladi: arteriolalarni kengaytirib, periferik qarshilikni kamaytiradi.
+s4827	**Afzalliklari:** metabolik neytral, keksalarda va izolyatsiyalangan sistolik AG da samarali, qora tanlilarda yaxshi samara, insultning oldini olishda samarali, homiladorlikda (nifedipin) mumkin.
+s4828	**Nojo‘ya ta’sirlar: oyoq to‘piqlari shishi** (diuretik bilan kamaymaydi, APF ingibitori/ARB bilan kamayadi), bosh og‘rig‘i, yuz qizarishi, milk giperplaziyasi; verapamilda — qabziyat va bradikardiya.
+s4829	4. Diuretiklar
+s4830	Mexanizmi 13-mavzuda batafsil ko‘riladi. AG da asosan **tiazid va tiazidsimon** diuretiklar ishlatiladi: dastlab qon aylanayotgan hajmni kamaytiradi, keyinchalik tomir devorida natriy kamayishi hisobiga periferik qarshilikni pasaytiradi.
+s4831	**Indapamid** va **xlortalidon** (tiazidsimon) — uzoq ta’sirli, metabolik nojo‘ya ta’sirlari kam; kardiovaskulyar asoratlarni kamaytirishda isbotlangan.
+s4832	**Gidroxlorotiazid** — ko‘pincha kombinatsiyalangan tabletkalarda (12,5–25 mg).
+s4833	**Halqa diuretiklari** (furosemid, torasemid) AG da faqat **buyrak yetishmovchiligi** (KFT < 30 ml/daq) va yurak yetishmovchiligida shish bilan. **Tiazidlarning metabolik nojo‘ya ta’sirlari:** gipokaliyemiya, giponatriyemiya, **giperurikemiya** (podagra xuruji), giperglikemiya, dislipidemiya, giperkalsiyemiya — asosan yuqori dozalarda.
+s4834	5. Neyrotrop gipotenziv vositalar
+s4835	5.1. Markaziy ta’sirli vositalar
+s4836	Rasm 11.2
+s4837	Markaziy ta’sir etuvchi gipotenziv vositalarning ta’sir yo‘llari: klofelin va metildopa — alfa-2-adrenoretseptorlar, moksonidin — I1-imidazolin retseptorlari (TTA farmakologiya kafedrasi o‘quv materiali)
+s4838	Jadval 11.4. Markaziy ta’sirli gipotenziv vositalar
+s4839	Xususiyatlari va qo‘llanishi
+s4840	Klonidin (klofelin)
+s4841	Uzunchoq miyada alfa-2 va I1-imidazolin retseptorlarini qo‘zg‘atadi — simpatik tonus pasayadi
+s4842	Gipertonik kriz (til ostiga, venaga); opioid va alkogol abstinensiyasi
+s4843	Sedatsiya, og‘iz qurishi, bradikardiya; to‘satdan to‘xtatilganda rikoshet gipertonik kriz; spirt bilan birga — kuchli MNS tormozlanishi; dozadan oshganda — koma, bradikardiya, mioz
+s4844	Metildopa
+s4845	Alfa-metilnoradrenalinga aylanib, markaziy alfa-2 ni qo‘zg‘atadi
+s4846	Homiladorlik gipertenziyasida tanlov dori
+s4847	Sedatsiya, depressiya, Kumbsmusbat gemolitik anemiya, gepatit, giperprolaktinemiya
+s4848	Moksonidin, rilmenidin
+s4849	I1-imidazolin retseptorlarining tanlab agonisti
+s4850	Metabolik sindrom bilan AG (insulin sezgirligini yaxshilaydi); qo‘shimcha dori
+s4851	Sedatsiya va og‘iz qurishi klonidindan ancha kam; rikoshet kam
+s4852	5.2. Beta va alfa-adrenoblokatorlar
+s4853	**Beta-blokatorlar** (6-mavzu) AG da quyidagi hollarda birinchi qator: YuIK, infarktdan keyin, yurak yetishmovchiligi, taxiaritmiyalar, homiladorlik rejalashtirish, yosh bemorlarda simpatik giperfaollik. Keksalarda insultning oldini olishda boshqa guruhlardan biroz kuchsizroq. **Afzal preparatlar**: bisoprolol, nebivolol, karvedilol, metoprolol suksinat (atenolol emas).
+s4854	**Alfa-1-adrenoblokatorlar** (doksazozin) — rezistent AG da qo‘shimcha dori, ayniqsa **prostata giperplaziyasi** bilan birga.
+s4855	6. Miotrop vazodilatatorlar
+s4856	**Gidralazin** — arteriolalarni bevosita kengaytiradi; reflektor taxikardiya va suyuqlik ushlanishi kuchli (beta-blokator va diuretik bilan beriladi); uzoq qo‘llanganda — **dorivor lupus** (sekin atsetillovchilarda). Homiladorlikdagi og‘ir AG da venaga; qora tanli bemorlarda yurak yetishmovchiligida izosorbid dinitrat bilan.
+s4857	**Minoksidil** — KATF kanallarini ochadi; juda kuchli; rezistent AG da; **gipertrixoz** — shu sababli mahalliy eritmasi alopetsiyada ishlatiladi.
+s4858	**Natriy nitroprussid** — NO-donor; arteriya va venalarni kengaytiradi; ta’sir darhol boshlanadi va infuziya to‘xtatilganda 1–2 daqiqada tugaydi. **Gipertonik kriz** va aortaning qatlamlanishida (beta-blokator bilan) **venaga tomchilab**, qorong‘i tizim orqali (yorug‘likda parchalanadi). Uzoq qo‘llanganda **sianid intoksikatsiyasi** (antidot — natriy tiosulfat, gidroksokobalamin).
+s4859	**Bendazol (dibazol)** — kuchsiz miotrop spazmolitik; MDH mamlakatlarida yengil krizlarda papaverin bilan ishlatilgan; samaradorligi zamonaviy talablarga javob bermaydi.
+s4860	**Magniy sulfat** — **preeklampsiya va eklampsiyada talvasalarning oldini olish** (asosiy ko‘rsatma); gipotenziv ta’siri kuchsiz.
+s4861	7. Arterial gipertenziyani davolash tamoyillari
+s4862	7.1. Maqsadli AQB va boshlang‘ich davo
+s4863	Jadval 11.5. AG ni bosqichli dori bilan davolash (Yevropa tavsiyalari asosida)
+s4864	Davo
+s4865	APF ingibitori yoki ARB + kalsiy antagonisti yoki + tiazid/tiazidsimon diuretik (bitta tabletkada)
+s4866	Uch dori: APF ingibitori/ARB + kalsiy antagonisti + diuretik (bitta tabletkada)
+s4867	3 (rezistent AG)
+s4868	+ spironolakton (yoki boshqa diuretik, alfa-blokator, beta-blokator); mutaxassis maslahati
+s4869	Har qanday bosqichda
+s4870	Ko‘rsatma bo‘lsa (YuIK, yurak yetishmovchiligi, aritmiya) — beta-blokator qo‘shiladi
+s4871	**Hayot tarzini o‘zgartirish** har bir bosqichda: osh tuzini kuniga 5 g dan kam iste’mol qilish, vaznni kamaytirish, muntazam jismoniy faollik, spirtni cheklash, chekishni tashlash, sabzavot va mevalarga boy ovqatlanish.
+s4872	Jadval 11.6. Oqilona va noratsional kombinatsiyalar
+s4873	Oqilona
+s4874	Noratsional / xavfli
+s4875	APF ingibitori/ARB + kalsiy antagonisti
+s4876	APF ingibitori + ARB
+s4877	APF ingibitori/ARB + tiazid/tiazidsimon diuretik
+s4878	Verapamil yoki diltiazem + beta-blokator (bradikardiya, AV blokada)
+s4879	Kalsiy antagonisti (digidropiridin) + diuretik
+s4880	APF ingibitori/ARB + kaliy saqlovchi diuretik (spironolaktondan tashqari yurak yetishmovchiligida nazorat bilan) — giperkaliyemiya
+s4881	Digidropiridin + beta-blokator
+s4882	Beta-blokator + markaziy alfa-2-agonist (klonidin) — bradikardiya, rikoshet
+s4883	7.2. Alohida bemorlar guruhida dori tanlash
+s4884	Jadval 11.7. Yondosh holatlarga ko‘ra gipotenziv dori tanlash
+s4885	Yondosh holat
+s4886	Afzal dorilar
+s4887	Qandli diabet, proteinuriya, surunkali buyrak kasalligi
+s4888	APF ingibitori yoki ARB (+ SGLT2 ingibitori, finerenon)
+s4889	Yuqori dozali tiazidlar va betablokatorlar (metabolik)
+s4890	YuIK, infarktdan keyin
+s4891	Beta-blokator, APF ingibitori
+s4892	Qisqa ta’sirli nifedipin
+s4893	Surunkali yurak yetishmovchiligi
+s4894	APF ingibitori/ARB/ARNI, betablokator, MRA, diuretik
+s4895	Verapamil, diltiazem, alfablokatorlar, moksonidin
+s4896	Podagra
+s4897	Losartan, kalsiy antagonistlari
+s4898	Tiazid va halqa diuretiklari
+s4899	Kalsiy antagonistlari, APF ingibitori/ARB
+s4900	Prostata giperplaziyasi
+s4901	Alfa-1-blokator qo‘shimcha
+s4902	Metildopa, labetalol, nifedipin (retard)
+s4903	APF ingibitorlari, ARB, aliskiren (teratogen); spironolakton; atenolol
+s4904	Keksalar, izolyatsiyalangan sistolik AG
+s4905	Kalsiy antagonistlari, tiazidsimon diuretiklar
+s4906	Alfa-blokatorlar (ortostatik gipotenziya), klonidin
+s4907	Ikki tomonlama buyrak arteriyasi stenozi
+s4908	APF ingibitorlari, ARB
+s4909	Homiladorlikni rejalashtirayotgan yoki homilador bo‘lgan ayolda APF ingibitori yoki ARB qabul qilinayotgan bo‘lsa, ular **darhol** metildopa, labetalol yoki nifedipin bilan almashtiriladi. Reproduktiv yoshdagi ayollarga bu dorilarni buyurganda kontratsepsiya haqida maslahat berish kerak.
+s4910	7.3. Gipertonik kriz
+s4911	**Gipertonik kriz** — AQB ning keskin oshishi (odatda > 180/120 mm sim. ust.). Ikki turi farqlanadi:
+s4912	**asoratlangan (shoshilinch) kriz** — maqsadli a’zolarning o‘tkir shikastlanishi bilan: gipertenziv ensefalopatiya, insult, o‘tkir koronar sindrom, o‘pka shishi, aortaning qatlamlanishi, eklampsiya, o‘tkir buyrak shikastlanishi. AQB **venaga yuboriladigan** dorilar bilan, **bosqichma-bosqich** pasaytiriladi (birinchi soatda o‘rtacha AQB ni 25% dan ko‘p emas; aortaning qatlamlanishida — tez, sistolik < 120 gacha);
+s4913	**asoratlanmagan kriz** — a’zolar shikastlanishisiz; AQB **ichish uchun** dorilar bilan 24–48 soat davomida asta-sekin pasaytiriladi.
+s4914	Jadval 11.8. Gipertonik krizda qo‘llanadigan dorilar
+s4915	Dorilar
+s4916	Asoratlanmagan kriz
+s4917	Kaptopril 25 mg ichishga yoki til ostiga; nifedipin retard, moksonidin, labetalol, klonidin ichishga
+s4918	Gipertenziv ensefalopatiya
+s4919	Labetalol, nikardipin, nitroprussid venaga
