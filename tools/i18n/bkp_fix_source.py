@@ -140,7 +140,9 @@ def join_sentences(bl, n):
         if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
                 and (not re.search(r"[.:;!?)»”\"*]\s*$", a["text"]) and re.match(r"[a-z‘’(]", bl[i + 1]["text"])
                      # "... **bo‘g‘im og‘riqlari**" | "(revmatizm), ..."
-                     or re.search(r"[^.:;!?]\*\*\s*$", a["text"]) and re.match(r"\([a-z]", bl[i + 1]["text"]))):
+                     or re.search(r"[^.:;!?]\*\*\s*$", a["text"]) and re.match(r"\([a-z]", bl[i + 1]["text"])
+                     # "... (ko‘pincha uglevodli)" | "ovqatlanish. Bolalar ..."
+                     or re.search(r"\)\s*$", a["text"]) and re.match(r"[a-z‘’]", bl[i + 1]["text"]))):
             a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
             del bl[i + 1]
             n += 1
@@ -289,6 +291,8 @@ def clean(s):
         s = s.replace(a, b)
     s = re.sub(r"\b([A-Z]{1,4})- (?!(?:va|yoki|hamda)\b)(?=\S)", r"\1-", s)       # T- limfotsitlar, (ST- T
     s = re.sub(r"(\d)- (?!(?:va|yoki|hamda)\b)(?=[a-z])", r"\1-", s)              # 2- barmoqlar, 7–10- kunga
+    s = re.sub(r"(\d)– (?=\d)", r"\1–", s)                                        # 39– 40 °C, 25– 49%
+    s = re.sub(r"(\d)(?=(?:kun|hafta|oy|yosh)[a-z‘]*\b)", r"\1-", s)               # 2haftada, 7–10kunga
     s = re.sub(r"(\d)- rasm\b", r"\1-rasm", s)                               # 9- rasm -> 9-rasm
     s = re.sub(r"\b([A-Z][a-z]+)- ([A-Z][a-z]+)", r"\1-\2", s)                # Obraztsov- Strajesko
     s = re.sub(r"([a-z‘’])- (?!(?:va|yoki|hamda)\b)([a-z])", r"\1-\2", s)   # olcha- qizil -> olcha-qizil
