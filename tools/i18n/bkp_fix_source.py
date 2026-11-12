@@ -335,8 +335,10 @@ def clean(s):
         s = s.replace(a, b)
     s = re.sub(r"\b([A-Z]{1,4})- (?!(?:va|yoki|hamda)\b)(?=\S)", r"\1-", s)       # T- limfotsitlar, (ST- T
     s = re.sub(r"(\d)- (?!(?:va|yoki|hamda)\b)(?=[a-z])", r"\1-", s)              # 2- barmoqlar, 7–10- kunga
-    s = re.sub(r"(\d)– (?=\d)", r"\1–", s)
-    s = re.sub(r"(?<=[a-z])– (?=[A-Z][a-z])", "–", s)                              # Botkin– Erb, Shenleyn– Genox                                        # 39– 40 °C, 25– 49%
+    s = re.sub(r"(\d)– (?=\d)", r"\1–", s)                                         # 39– 40 °C, 25– 49%
+    s = re.sub(r"(?<=[a-z])– (?=[A-Z][a-z])", "–", s)                              # Botkin– Erb, Shenleyn– Genox
+    s = re.sub(r"\b([IVX]+)– (?=[IVX]+\b)", r"\1–", s)                              # II– III
+    s = re.sub(r"(?<=\d)– (?=[A-Z]\d)", "–", s)                                     # C1– C4
     s = re.sub(r"(\d)(?=(?:kun|hafta|oy|yosh)[a-z‘]*\b)", r"\1-", s)               # 2haftada, 7–10kunga
     s = re.sub(r"(\d)- rasm\b", r"\1-rasm", s)                               # 9- rasm -> 9-rasm
     s = re.sub(r"\b([A-Z][a-z]+)- ([A-Z][a-z]+)", r"\1-\2", s)                # Obraztsov- Strajesko
