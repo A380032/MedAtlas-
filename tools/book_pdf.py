@@ -33,7 +33,9 @@ esc = lambda s: html.escape(str(s), quote=True)
 
 def inline(s):
     s = esc(s)
+    s = re.sub(r"\*\*\*(.+?)\*\*\*", r"<b><i>\1</i></b>", s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
+    s = re.sub(r"(?<![*\w])\*([^*\s](?:[^*]*?[^*\s])?)\*(?![*\w])", r"<i>\1</i>", s)   # *kursiv* (lotincha nomlar)
     s = re.sub(r"~([^~\s][^~]*?)~", r"<sub>\1</sub>", s)
     s = re.sub(r"\^([^\^\s][^\^]*?)\^", r"<sup>\1</sup>", s)
     return s
@@ -178,13 +180,32 @@ def build(pages=None):
                         (f'<div class="ps">{inline(pt["sub"])}</div>' if pt.get("sub") else "") + "</div></section>")
         s = ['<section class="page topic">', f'<div class="tno">{esc(L["topic"].format(n=n))}</div>',
              h(1, tp["title"], f"t{n}")]
-        s.append(f'<h2>{esc(L["goals"])}</h2>' + blocks(tp.get("goals", [])))
+        NUMD = CFG.get("numbered", False)   # mkb: bo'limlar asl kitobdagidek "1. Mashg'ulot maqsadi", "2. ..." deb raqamlanadi, lug'at yo'q
+        cnt = 1
+        if NUMD:
+            gl = tp.get("goals", [])
+            gh = "".join(f"<li>{inline(g['text'])}</li>" for g in gl) if gl and all(g["type"] == "p" for g in gl) else None
+            intro = f'<p>{inline(L["goals_intro"])}</p>' if L.get("goals_intro") else ""
+            s.append(h(2, f'1. {L["goals"]}', f"t{n}g") + (intro + f"<ul>{gh}</ul>" if gh else blocks(gl)))
+        else:
+            s.append(f'<h2>{esc(L["goals"])}</h2>' + blocks(tp.get("goals", [])))
         secs = tp.get("sections", [])
-        gloss = secs[-1] if secs and not re.match(r"\d+\.(\d+\.)?\s", secs[-1]["title"]) else None
+        gloss = None if NUMD else (secs[-1] if secs and not re.match(r"\d+\.(\d+\.)?\s", secs[-1]["title"]) else None)
         flat = bool(secs) and all(re.match(r"\d+\.\s", x["title"]) for x in secs)   # pfz: "1. ...", "2. ..."
         for k, sec in enumerate(secs if gloss is None else secs[:-1]):
-            s.append(h(2, sec["title"], f"t{n}s{k}") + blocks(sec["blocks"]))
-        if tp.get("skills"):
+            if NUMD:
+                cnt += 1
+                s.append(h(2, f'{cnt}. {sec["title"]}', f"t{n}s{k}") + blocks(sec["blocks"]))
+            else:
+                s.append(h(2, sec["title"], f"t{n}s{k}") + blocks(sec["blocks"]))
+        if tp.get("skills") and NUMD:
+            for j, sk in enumerate(tp["skills"]):
+                if n in CFG.get("skills_inline", []):   # asl kitobda alohida raqamli bo'lim emas, bo'lim ichidagi kichik sarlavha
+                    s.append(f'<h3>{inline(sk["title"])}</h3>' + blocks(sk["blocks"]))
+                    continue
+                cnt += 1
+                s.append(h(2, f'{cnt}. {sk["title"]}', f"t{n}sk{j}") + blocks(sk["blocks"]))
+        elif tp.get("skills"):
             if flat and CFG.get("skills_numbered", True):   # asl kitobdagidek raqamli bo'lim va mundarijada: "11. Amaliy ko'nikmalar"
                 s.append(h(2, f'{len(secs) + 1}. {L["skills"]}', f"t{n}sk"))
             else:
@@ -192,7 +213,9 @@ def build(pages=None):
             for sk in tp["skills"]:
                 s.append(f'<h3>{inline(sk["title"])}</h3>' + blocks(sk["blocks"]))
         if tp.get("questions"):
-            s.append(f'<h2>{esc(L["questions"])}</h2><ol class="qs">' + "".join(f"<li>{inline(q)}</li>" for q in tp["questions"]) + "</ol>")
+            cnt += 1
+            qh = h(2, f'{cnt}. {L["questions"]}', f"t{n}q") if NUMD else f'<h2>{esc(L["questions"])}</h2>'
+            s.append(qh + '<ol class="qs">' + "".join(f"<li>{inline(q)}</li>" for q in tp["questions"]) + "</ol>")
         if tp.get("quiz"):
             s.append(f'<h2>{esc(L["quiz"])}</h2><ol class="quiz">')
             for q in tp["quiz"]:
@@ -238,6 +261,8 @@ def build(pages=None):
             refs_html += f'<p class="refh"><b>{esc(title)}</b></p>'
         refs_html += f'<ol class="refs" start="{k + 1}">' + "".join(f"<li>{inline(r)}</li>" for r in items) + "</ol>"
         k += len(items)
+    if CFG.get("refs_note"):   # ro'yxatdan keyingi izoh (mkb: "Rasmlar manbalari. ...")
+        refs_html += f'<p class="refn">{inline(CFG["refs_note"])}</p>'
     body.append('<section class="page">' + h(2, L["refs"], "refs", "ch") + refs_html + "</section>")
 
     c = CFG["cover"]
@@ -262,6 +287,7 @@ def build(pages=None):
 
 
 CSS = f"""
+.refn {{ margin-top: 8pt; }}
 @page {{ size: A4; margin: {MARGIN['top']}mm {MARGIN['right']}mm {MARGIN['bottom']}mm {MARGIN['left']}mm; }}
 html {{ font-family: 'Liberation Serif', 'Times New Roman', serif; font-size: 12pt; color: #000; }}
 body {{ margin: 0; line-height: 1.28; text-align: justify; hyphens: manual; }}

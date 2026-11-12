@@ -1,0 +1,152 @@
+{
+  "lang": "uz",
+  "out": "data/books/mkb.pdf",
+  "pdf_title": "Mikrobiologiya, virusologiya va immunologiya: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Mikrobiologiya, virusologiya va immunologiya — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/mkb/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "Mikrobiologiya, virusologiya va immunologiya kafedrasi fani bo‘yicha"
+    ],
+    "title": "MIKROBIOLOGIYA, VIRUSOLOGIYA VA IMMUNOLOGIYA",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Mikrobiologiya, virusologiya va immunologiya: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Mikrobiologiya, virusologiya va immunologiya” fanining 30 ta amaliy mashg‘ulot mavzusini yagona tizimda yoritadi va ikki qismdan iborat. I qism (1–15-mavzular) 2026–2027 o‘quv yili kalendar-tematik rejasi asosida umumiy mikrobiologiya, virusologiya va immunologiyani qamrab oladi: mikroblar morfologiyasi va tuzilishi, bo‘yash usullari, fiziologiya va sof kultura ajratish, identifikatsiya, sanitar mikrobiologiya, antibiotiklar, normal mikroflora, infeksiya va genetika, umumiy virusologiya, tug‘ma va adaptiv immunitet, serologik reaksiyalar. II qism (16–30-mavzular) 2025–2026 o‘quv yili rejasi asosida xususiy bakteriologiya va virusologiyani — yiringli, jarohat, havo-tomchi, ichak, zoonoz, tanosil, transmissiv infeksiyalar qo‘zg‘atuvchilari hamda respirator, enteral, gemokontakt, gerpes va poks viruslarini o‘z ichiga oladi.",
+    "Har bir mavzuda tanlov mavzusi (TMI) yoritilgan, rangli bloklar (eslab qoling, klinik ahamiyati, yodlash usuli, diqqat), jadvallar, laboratoriya tashxisi algoritmlari, nazorat savollari, 15 tadan test topshirig‘i, 3 tadan vaziyatli masala va tezkor takrorlash jadvali berilgan. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma Muhamedov I.M., Aliyev Sh.R. va boshq. (Mikrobiologiya, virusologiya va immunologiya, 2019), Aliyev Sh.R., Muhamedov I.M., Nuruzova Z.A. va boshq. (Mikrobiologiyadan laboratoriya mashg‘ulotlariga doir qo‘llanma, 2013), Zverev V.V., Boychenko M.N., Borisov L.B. darsliklari, Rapid Review Microbiology and Immunology, Kaplan USMLE Step 1 Immunology and Microbiology hamda boshqa manbalar asosida tayyorlangan. Mikrofotosuratlar va sxemalar ushbu darsliklardan olingan, har birining tagida manbasi ko‘rsatilgan; qolgan sxemalar tuzuvchi tomonidan chizilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash va fundamental tibbiyot fakultetlari talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Mikrobiologiya, virusologiya va immunologiya — tibbiyotning poydevor fanlaridan biri. Shifokor ko‘rmaydigan, lekin kasallik chaqiradigan olam bilan ishlaydi: bakteriyalar, viruslar, zamburug‘lar, sodda jonivorlar va ularga qarshi turadigan immun tizim. Bu olamni faqat laboratoriyada — surtmani bo‘yab, koloniyani ekib, biokimyoviy reaksiyani kuzatib, antibiotikka sezgirlikni o‘lchab — “ko‘rish” mumkin. Shuning uchun bu fanning amaliy mashg‘uloti darslikdan kam emas: aynan shu yerda talaba qo‘zg‘atuvchini aniqlash algoritmini — namunadan tashxisgacha bo‘lgan yo‘lni — o‘z qo‘li bilan bosib o‘tadi."
+    },
+    {
+      "type": "p",
+      "text": "Ushbu qo‘llanma fanning 30 ta amaliy mashg‘ulot mavzusini bir butun tizimda yoritadi va ikki qismdan iborat:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**I qism** — umumiy mikrobiologiya, virusologiya va immunologiya (1–15-mavzular, 2026–2027 o‘quv yili kalendar-tematik rejasi asosida): mikroblar morfologiyasi va tuzilishi, bo‘yash usullari, fiziologiya va sof kultura ajratib olish, identifikatsiya, sanitar mikrobiologiya, antimikrob omillar, normal mikroflora, infeksiya va genetika, umumiy virusologiya hamda immunologiya.",
+        "**II qism** — xususiy mikrobiologiya va virusologiya (16–30-mavzular, 2025–2026 o‘quv yili rejasi asosida): yiringli, jarohat, havo-tomchi, ichak, zoonoz, tanosil va transmissiv infeksiyalar qo‘zg‘atuvchilari hamda respirator, enteral, gemokontakt, gerpes va poks viruslar."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Ikki qism bir-birini to‘ldiradi: umumiy bo‘limda o‘rganilgan usul (Gram bo‘yash, sof kultura ajratish, serologik reaksiya, PZR) xususiy bo‘limda muayyan qo‘zg‘atuvchiga tatbiq etiladi. Shuning uchun matnda o‘zaro havolalar berilgan — masalan, difteriya toksinining fag bilan bog‘liqligi 11-mavzudagi genetika bilan, antibiotikogramma 9-mavzu bilan bog‘lanadi."
+    },
+    {
+      "type": "p",
+      "text": "Har bir bob bir xil tuzilishga ega:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Mashg‘ulot maqsadi** — shu darsda nimani bilib, nimani uddalashingiz kerakligi.",
+        "**Nazariy qism** — mavzuning asosiy tushunchalari, jadvallar, sxemalar va darsliklardan olingan rasmlar bilan. Matn ichida to‘rt turdagi rangli blok uchraydi: **Eslab qoling** (yodlash shart bo‘lgan asosiy ma’lumot), **Klinik ahamiyati** (nazariyani amaliyot bilan bog‘laydi), **Yodlash usuli** (mnemonika), **Diqqat** (tez-tez uchraydigan xato yoki muhim ogohlantirish).",
+        "**TMI** (tanlov mavzusi) — rejada ko‘rsatilgan qo‘shimcha mavzu.",
+        "**Amaliy ko‘nikma** — laboratoriya ishining bosqichma-bosqich algoritmi.",
+        "**Nazorat savollari**, test topshiriqlari (har bobda 15 ta) va vaziyatli masalalar (javoblari bilan).",
+        "**Tezkor takrorlash jadvali** — imtihon oldidan bir qarashda takrorlash uchun."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rasmlarning aksariyati asosiy darsliklardan olingan va har birining tagida manbasi ko‘rsatilgan; bir qismi sxema sifatida tuzuvchi tomonidan chizilgan."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma asosiy darsliklarning o‘rnini bosmaydi, balki amaliy mashg‘ulotga tayyorgarlikni yengillashtiradi va tarqoq ma’lumotni bir tizimga soladi. Matnda keltirilgan davo va profilaktika ma’lumotlari umumiy tasavvur uchun berilgan: amaliy qarorlar har doim amaldagi protokollar va shifokor tayinlovi asosida qabul qilinadi."
+    },
+    {
+      "type": "p",
+      "text": "Muvaffaqiyat tilayman."
+    },
+    {
+      "type": "p",
+      "text": "**Tuzuvchi**"
+    }
+  ],
+  "parts": [
+    {
+      "before": 1,
+      "title": "I QISM",
+      "sub": "UMUMIY MIKROBIOLOGIYA, VIRUSOLOGIYA VA IMMUNOLOGIYA"
+    },
+    {
+      "before": 16,
+      "title": "II QISM",
+      "sub": "XUSUSIY MIKROBIOLOGIYA VA VIRUSOLOGIYA"
+    }
+  ],
+  "numbered": true,
+  "skills_inline": [
+    5,
+    6,
+    9,
+    11
+  ],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "goals_intro": "Ushbu mashg‘ulotda talaba quyidagilarni o‘zlashtiradi:",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savol:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu — asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Mohiyati",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    "Muhamedov I.M., Aliyev Sh.R., Rizayev J.A., Xo‘jayeva Sh.A. Mikrobiologiya, virusologiya va immunologiya. — Toshkent: Yangi asr avlodi, 2019. — 576 b.",
+    "Aliyev Sh.R., Muhamedov I.M., Nuruzova Z.A., Xo‘jayeva Sh.A., Davurov A.M., Rasulov F.X. Mikrobiologiyadan laboratoriya mashg‘ulotlariga doir qo‘llanma. — Toshkent: Yangi asr avlodi, 2013.",
+    "Mikrobiologiya va mikrobiologik tekshirish usullari (o‘quv qo‘llanma). — Toshkent.",
+    "Mikrobiologiya, immunologiya va virusologiya (o‘quv qo‘llanma). — Toshkent.",
+    "Зверев В.В., Бойченко М.Н. Медицинская микробиология, вирусология и иммунология. — Москва: ГЭОТАР-Медиа.",
+    "Борисов Л.Б. Медицинская микробиология, вирусология, иммунология. — Москва: МИА.",
+    "Хаитов Р.М. Иммунология. — Москва: ГЭОТАР-Медиа.",
+    "Rosenthal K.S., Tan M.J. Rapid Review Microbiology and Immunology. — Elsevier.",
+    "USMLE Step 1 Lecture Notes: Immunology and Microbiology. — Kaplan Medical, 2020.",
+    "Microbiology and Immunology (PrepLadder). — Lecture notes.",
+    "Levinson W. Review of Medical Microbiology and Immunology. — McGraw-Hill.",
+    "Bergey’s Manual of Determinative Bacteriology. — Williams & Wilkins.",
+    "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi. Mikrobiologiya, virusologiya va immunologiya fani kalendar-tematik rejasi (2026–2027 o‘quv yili). Davolash va fundamental tibbiyot fakultetlari, 2-kurs, 4-semestr.",
+    "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi. Mikrobiologiya, virusologiya va immunologiya fani kalendar-tematik rejasi (2025–2026 o‘quv yili). Davolash fakulteti."
+  ],
+  "refs_note": "**Rasmlar manbalari.** Qo‘llanmadagi mikrofotosuratlar, sxemalar va diagnostika algoritmlari asosan [1] va [2] manbalardan olingan; har bir rasm tagida manbasi ko‘rsatilgan. Yorug‘lik mikroskopining tuzilishini ko‘rsatuvchi rasm ochiq internet manbalaridan olinib, yorliqlari o‘zbek tiliga o‘girilgan."
+}
