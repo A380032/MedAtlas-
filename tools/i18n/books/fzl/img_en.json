@@ -7441,5 +7441,197 @@
     "a": "l"
    }
   ]
+ },
+ "p216_79.webp": {
+  "items": [
+   {
+    "box": [
+     314,
+     42,
+     328,
+     63
+    ],
+    "t": "b",
+    "f": "serifb",
+    "smax": 17,
+    "c": "#1a1a1a"
+   },
+   {
+    "box": [
+     327,
+     174,
+     340,
+     190
+    ],
+    "t": "c",
+    "f": "serifb",
+    "smax": 16,
+    "c": "#1a1a1a"
+   }
+  ]
+ },
+ "p218_81.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     14,
+     194,
+     49
+    ],
+    "t": "Stimulants:\nacetylcholine (M₃), gastrin (CCK₂),\nhistamine (H₂)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     32,
+     76,
+     178,
+     113
+    ],
+    "t": "Inhibitors:\nsomatostatin, secretin,\nprostaglandins, low pH",
+    "f": "dv",
+    "smax": 9,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     226,
+     45,
+     439,
+     81
+    ],
+    "t": "Covering (parietal) cell:\nCO₂ + H₂O → H₂CO₃ (carbonic anhydrase)\n→ H⁺ + HCO₃⁻",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     452,
+     20,
+     594,
+     44
+    ],
+    "t": "HCO₃⁻ to blood (for Cl⁻)\n— “alkaline tide”",
+    "f": "dv",
+    "smax": 8,
+    "lines": [
+     [
+      452,
+      55,
+      596,
+      44,
+      "#465569",
+      1
+     ]
+    ]
+   },
+   {
+    "box": [
+     606,
+     30,
+     745,
+     45
+    ],
+    "t": "Blood (basolateral side)",
+    "f": "dv",
+    "smax": 9,
+    "a": "l"
+   },
+   {
+    "box": [
+     452,
+     59,
+     594,
+     88
+    ],
+    "t": "H⁺/K⁺-ATPase (proton pump):\nH⁺ out, K⁺ in;\nCl⁻ via channels — HCl",
+    "f": "dv",
+    "smax": 8,
+    "lines": [
+     [
+      452,
+      92,
+      500,
+      93,
+      "#465569",
+      1
+     ],
+     [
+      500,
+      93,
+      560,
+      91,
+      "#465569",
+      1
+     ],
+     [
+      560,
+      91,
+      596,
+      90,
+      "#465569",
+      1
+     ]
+    ]
+   },
+   {
+    "box": [
+     630,
+     82,
+     730,
+     97
+    ],
+    "t": "Gastric lumen",
+    "f": "dv",
+    "smax": 9,
+    "a": "l"
+   }
+  ]
+ },
+ "p219_82.webp": {
+  "items": [
+   {
+    "box": [
+     40,
+     37,
+     715,
+     165
+    ],
+    "t": "1. COMPLEX-REFLEX (cephalic) phase\nsight, smell, taste of food, chewing;\nconditioned and unconditioned reflexes → vagus\n(≈ 30 % of the juice; “appetite juice”)",
+    "f": "dv",
+    "smax": 25,
+    "bg": "#dfebf7",
+    "pad": 3
+   },
+   {
+    "box": [
+     40,
+     246,
+     715,
+     404
+    ],
+    "t": "2. GASTRIC phase\nfood stretches the stomach (mechanoreceptors),\npeptides, amino acids → G-cells\nrelease gastrin; histamine (ECL-cells)\n(≈ 60 % of the juice)",
+    "f": "dv",
+    "smax": 25,
+    "bg": "#dfebf7",
+    "pad": 3
+   },
+   {
+    "box": [
+     40,
+     485,
+     715,
+     643
+    ],
+    "t": "3. INTESTINAL phase\nchyme passes into the duodenum:\nfirst slightly stimulates, then inhibits\n(secretin, CCK, GIP, enterogastrone)\n(≈ 10 %)",
+    "f": "dv",
+    "smax": 25,
+    "bg": "#dfebf7",
+    "pad": 3
+   }
+  ]
  }
 }
