@@ -1,0 +1,1394 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prescription Writing and Pharmacokinetics</title>
+<meta name="description" content="Pharmacology: a laboratory for writing prescriptions in Latin, finding errors in prescriptions, calculating doses and modeling the pharmacokinetics of drug concentration">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap">
+<style>
+/* Layout: klinik "stetoskop paneli" — sticky bo'limlar menyusi, keng matn ustuni, pastda doimiy tovush pleyeri */
+:root{
+  --bg:#EDF1F0; --surface:#FFFFFF; --sunk:#E2E9E7; --ink:#14211F; --muted:#56696A; --line:#CBD7D4;
+  --accent:#0D6871; --accent-soft:#D3E7E8; --on-accent:#FFFFFF;
+  --insp:#2D69AE; --exp:#B9730F; --bad:#AD3F37; --good:#2C7A4C; --warn:#9A6A00;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1615; --surface:#14201F; --sunk:#0A1211; --ink:#E1EBE9; --muted:#93A7A4; --line:#263836;
+  --accent:#53B8C0; --accent-soft:#16373A; --on-accent:#04201F;
+  --insp:#7EAFEA; --exp:#E7AA4E; --bad:#E58378; --good:#6FC592; --warn:#E0B44F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1615; --surface:#14201F; --sunk:#0A1211; --ink:#E1EBE9; --muted:#93A7A4; --line:#263836;
+  --accent:#53B8C0; --accent-soft:#16373A; --on-accent:#04201F;
+  --insp:#7EAFEA; --exp:#E7AA4E; --bad:#E58378; --good:#6FC592; --warn:#E0B44F; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;padding-bottom:96px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.25rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.muted{color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+a{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:8px}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top a{flex:none;text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.top a:hover{background:var(--sunk);color:var(--ink)}
+nav.top a.brand{color:var(--accent);font-family:var(--f-display);font-weight:800}
+
+/* hero */
+header.hero{padding-block:44px 28px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:36px;align-items:center}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:800;letter-spacing:-.02em;margin-block:10px 14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:1.08rem;max-width:60ch}
+.meta{margin-top:16px;font-size:.88rem;color:var(--muted);max-width:68ch}
+.phono{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px}
+.phono canvas{width:100%;height:150px;display:block;border-radius:8px;background:var(--sunk)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.phono .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* sections */
+section{padding-block:44px;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:8px;margin-bottom:22px;max-width:75ch}
+.sec-head .eyebrow{color:var(--muted)}
+.prose{max-width:72ch;display:grid;gap:12px}
+.prose ul,.prose ol{margin:0;padding-left:1.25em;display:grid;gap:4px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.hero-grid,.grid2{grid-template-columns:minmax(0,1fr)}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid3{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:.95rem}
+.note.warn{border-color:var(--warn)}
+.note b:first-child{display:block;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:2px}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.8rem;color:var(--muted);line-height:1.4}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-block:18px}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* play buttons */
+.play{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);border-radius:999px;padding:6px 14px 6px 10px;font-size:.88rem;font-weight:600;cursor:pointer;line-height:1.2}
+.play:hover{background:var(--accent-soft)}
+.play .ic{width:16px;height:16px;border-radius:50%;background:var(--accent);position:relative;flex:none}
+.play .ic::after{content:"";position:absolute;left:6px;top:4.5px;width:0;height:0;border-left:6px solid var(--on-accent);border-top:3.5px solid transparent;border-bottom:3.5px solid transparent}
+.play.on{background:var(--accent);color:var(--on-accent)}
+.play.on .ic{background:var(--on-accent)}
+.play.on .ic::after{left:5px;top:5px;border:0;width:6px;height:6px;background:var(--accent)}
+.play.big{font-size:1rem;padding:10px 20px 10px 14px}
+.play.big .ic{width:22px;height:22px}
+.play.big .ic::after{left:8.5px;top:6px;border-left-width:8px;border-top-width:5px;border-bottom-width:5px}
+.play.big.on .ic::after{left:7px;top:7px;width:8px;height:8px}
+
+/* sound cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:9px;align-content:start;min-width:0}
+.card h3{font-size:1.08rem}
+.card .alt{font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.card dl{margin:0;display:grid;gap:6px;font-size:.9rem}
+.card dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:0}
+.props{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-size:.74rem;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.chip.i{color:var(--insp);border-color:currentColor;background:transparent}
+.chip.e{color:var(--exp);border-color:currentColor;background:transparent}
+.sub-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-block:30px 12px}
+
+/* virtual patient */
+.vp{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.vp{grid-template-columns:minmax(0,1fr)}}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{border:0;background:transparent;padding:6px 13px;border-radius:999px;cursor:pointer;font-size:.88rem;font-weight:500;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+select{font:inherit;font-size:.92rem;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);max-width:100%}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.views{grid-template-columns:minmax(0,1fr)}.view svg{max-width:340px;margin:0 auto}}
+.view{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:8px;min-width:0}
+.view .lbl{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:2px 6px}
+.view svg{width:100%;height:auto;display:block}
+.body-fill{fill:var(--sunk);stroke:var(--muted);stroke-width:1.4}
+.lung-fill{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1;opacity:.95}
+.bone{fill:none;stroke:var(--muted);stroke-width:1.1;opacity:.55}
+.bone-s{fill:var(--surface);stroke:var(--muted);stroke-width:1.1;opacity:.8}
+.pt{cursor:pointer}
+.pt circle.hit{fill:transparent}
+.pt circle.dot{fill:var(--surface);stroke:var(--accent);stroke-width:2.2;transition:r .15s}
+.pt:hover circle.dot,.pt:focus-visible circle.dot{fill:var(--accent-soft)}
+.pt.sel circle.dot{fill:var(--accent);stroke:var(--ink)}
+.pt.chg circle.dot{stroke:var(--bad)}
+.pt:focus{outline:none}
+.pt:focus-visible circle.dot{stroke-width:3.5}
+.side-t{font-family:var(--f-mono);font-size:9px;fill:var(--muted)}
+.find{display:grid;gap:10px}
+.find h3{font-size:1.1rem}
+.kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:.92rem;align-items:baseline}
+.kv dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.kv dd{margin:0}
+.hid{filter:blur(6px);user-select:none}
+.palm{display:flex;gap:18px;align-items:center;padding:6px 0}
+.palm span{width:38px;height:48px;border-radius:18px 18px 12px 12px;background:var(--accent-soft);border:1.5px solid var(--accent);display:block}
+.palm span.vib{animation:vib .09s linear infinite}
+@keyframes vib{0%{transform:translateX(calc(var(--a,1px)*-1))}50%{transform:translateX(var(--a,1px))}100%{transform:translateX(calc(var(--a,1px)*-1))}}
+.sc-info{font-size:.9rem}
+label.tog{display:inline-flex;gap:8px;align-items:center;font-size:.9rem;cursor:pointer}
+
+/* topo sim */
+.topo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:20px;align-items:start}
+@media (max-width:820px){.topo{grid-template-columns:minmax(0,1fr)}}
+.levels{display:grid;gap:3px}
+.lv{display:grid;grid-template-columns:96px 1fr 28px;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:5px 10px;cursor:pointer;text-align:left;font-size:.86rem}
+.lv.rib{background:var(--sunk)}
+.lv .bar{height:8px;border-radius:4px;background:transparent}
+.lv.tapped .bar{background:var(--line)}
+.lv.show-aniq .bar{background:var(--accent)}
+.lv.show-quti .bar{background:var(--insp)}
+.lv.show-tomtoq .bar{background:var(--exp)}
+.lv.show-tt .bar{background:var(--warn)}
+.lv.mark{outline:2px dashed var(--ink);outline-offset:1px}
+.lv.correct{outline:2px solid var(--good);outline-offset:1px}
+.lv .m{font-family:var(--f-mono);font-size:.75rem;text-align:right}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 13px;cursor:pointer;font-size:.9rem;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fb{font-size:.95rem;padding:10px 12px;border-radius:8px;background:var(--sunk)}
+.fb.ok{color:var(--good)}
+.fb.no{color:var(--bad)}
+
+/* syndrome matrix */
+.mx td:first-child{font-weight:600;min-width:180px}
+.mx td{min-width:150px}
+.mx .acts{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+
+/* checklist */
+.ck ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ck li label{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;font-size:.92rem;cursor:pointer;padding:6px 8px;border-radius:6px}
+.ck li label:hover{background:var(--sunk)}
+.ck input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent)}
+.score{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-size:.9rem}
+.meter{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+
+/* quiz + cases */
+.opts{display:grid;gap:7px}
+.opt{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;text-align:left;cursor:pointer;font-size:.93rem;display:grid;grid-template-columns:24px 1fr;gap:8px}
+.opt .k{font-family:var(--f-mono);color:var(--muted)}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 12%,var(--surface))}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--surface))}
+.opt[disabled]{cursor:default}
+.expl{font-size:.9rem;border-left:3px solid var(--line);padding:4px 0 4px 12px}
+.q{display:grid;gap:10px;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.q .qn{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+.q p.t{font-weight:600}
+.qlist{display:grid;gap:12px}
+.case{display:grid;gap:12px}
+.ear{display:grid;gap:14px;max-width:720px}
+.ear>*,.case>*,.q>*,.find>*{min-width:0}
+.stat{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
+.stat b{color:var(--ink);font-weight:500}
+
+/* player */
+#player{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom,0px)}
+#player .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.3fr) auto;gap:14px;align-items:center;padding-block:10px}
+#plName{display:block;font-weight:600;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plSub{display:block;font-size:.8rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plScope{width:100%;height:44px;display:block;border-radius:6px;background:var(--sunk)}
+.phase{font-family:var(--f-mono);font-size:.74rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap;min-width:118px;text-align:center}
+.phase.i{color:var(--insp);border-color:var(--insp)}
+.phase.e{color:var(--exp);border-color:var(--exp)}
+.phase.p{color:var(--accent);border-color:var(--accent)}
+.vol{display:flex;gap:6px;align-items:center;font-size:.8rem;color:var(--muted)}
+.vol input{width:90px;accent-color:var(--accent)}
+@media (max-width:700px){#player .wrap{grid-template-columns:auto minmax(0,1fr) auto}#plScope{grid-column:1/-1;grid-row:2}.vol{display:none}}
+
+footer{border-top:1px solid var(--line);padding-block:30px 20px;font-size:.86rem;color:var(--muted)}
+footer .wrap{display:grid;gap:10px}
+ol.refs{margin:0;padding-left:1.3em;display:grid;gap:5px;font-size:.9rem}
+
+/* ===== Farmakologiya simulyatori: qo'shimcha uslublar ===== */
+:root{--paper:#FFFDF6;--paper-line:#D9D2BF;--paper-ink:#1E3A78;--paper-print:#4A4A44;--stamp:#3B5BA5;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand","Comic Sans MS",cursive}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#F1ECDD;--paper-line:#C9C0A8;--paper-ink:#1E3A78;--paper-print:#45453F}}
+:root[data-theme="dark"]{--paper:#F1ECDD;--paper-line:#C9C0A8;--paper-ink:#1E3A78;--paper-print:#45453F}
+body{padding-bottom:32px}
+
+/* --- retsept blankasi --- */
+.blank{background:var(--paper);color:var(--paper-print);border:1px solid var(--paper-line);border-radius:6px;
+  box-shadow:0 1px 0 rgba(0,0,0,.04),0 10px 26px -14px rgba(0,0,0,.35);padding:16px 18px 18px;position:relative;font-size:.86rem;line-height:1.35;min-width:0}
+.blank::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:repeating-linear-gradient(90deg,var(--stamp) 0 14px,transparent 14px 20px);opacity:.25;border-radius:6px 6px 0 0}
+.bl-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;margin-bottom:10px}
+.bl-shtamp{border:1.5px solid var(--stamp);color:var(--stamp);border-radius:4px;padding:5px 8px;font-size:.7rem;line-height:1.25;max-width:210px;opacity:.9}
+.bl-shtamp b{display:block;font-size:.74rem}
+.bl-title{text-align:right;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
+.bl-title b{display:block;font-family:var(--f-display);font-size:1.05rem;letter-spacing:0;text-transform:none;color:#2b2b27}
+.bl-f{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px;align-items:end;margin-block:5px}
+.bl-f span{white-space:nowrap;font-size:.76rem}
+.bl-f i{font-style:normal;font-family:var(--f-hand);color:var(--paper-ink);font-size:1.18rem;line-height:1;border-bottom:1px solid var(--paper-line);padding:0 4px 1px;min-height:1.3em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bl-rx{margin-top:12px;border-top:1px dashed var(--paper-line);padding-top:10px;display:grid;gap:4px;min-height:132px}
+.bl-line{font-family:var(--f-hand);color:var(--paper-ink);font-size:1.32rem;line-height:1.25;overflow-wrap:anywhere}
+.bl-line .gap{display:inline-block;min-width:3.2em;border-bottom:1.5px dotted var(--paper-ink);opacity:.45;height:.9em;vertical-align:baseline}
+.bl-line .tk{border-radius:4px;padding:0 2px;transition:background .15s}
+.bl-line .tk.bad{background:rgba(196,52,40,.16);text-decoration:underline wavy rgba(196,52,40,.8);text-underline-offset:3px}
+.bl-line .tk.good{background:rgba(44,122,76,.14)}
+.bl-sep{font-family:var(--f-hand);color:var(--paper-ink);font-size:1.2rem;text-align:center;opacity:.7}
+.bl-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:14px;font-size:.74rem}
+.bl-sign{font-family:var(--f-hand);color:var(--paper-ink);font-size:1.4rem;line-height:1;border-bottom:1px solid var(--paper-line);min-width:110px;padding:0 6px}
+.bl-seal{width:62px;height:62px;border-radius:50%;border:2px solid var(--stamp);color:var(--stamp);display:grid;place-items:center;text-align:center;font-size:.5rem;font-family:var(--f-mono);line-height:1.15;transform:rotate(-12deg);opacity:.75;flex:none;box-shadow:inset 0 0 0 3px var(--paper),inset 0 0 0 4px var(--stamp)}
+.bl-valid{font-size:.68rem;opacity:.8;margin-top:6px}
+.bl-note{position:absolute;right:12px;bottom:-10px;transform:translateY(100%);font-size:.72rem;color:var(--muted)}
+
+/* raqamli belgilar (tuzilish) */
+.mk{position:relative}
+.zone.mk:not(span){display:flex;align-items:center;gap:6px}
+.zone.mk>.bl-f,.zone.mk>.bl-shtamp{flex:1;min-width:0}
+span.zone.mk{display:inline}
+.pin{display:inline-block;vertical-align:.15em;margin-right:4px;flex:none;width:22px;height:22px;border-radius:50%;border:2px solid var(--paper);background:var(--accent);color:var(--on-accent);
+  font:600 .7rem/18px var(--f-mono);text-align:center;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);padding:0}
+.pin:hover,.pin[aria-pressed="true"]{background:var(--ink);color:var(--surface);transform:scale(1.1)}
+.zone{border-radius:4px;transition:outline-color .15s,background .15s;outline:2px solid transparent;outline-offset:2px}
+.zone.hl{outline-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.part-lat{font-family:var(--f-mono);font-size:.8rem;color:var(--accent)}
+.part-list{display:grid;gap:4px;margin-top:4px}
+.part-list button{display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:baseline;text-align:left;border:1px solid transparent;background:transparent;padding:4px 6px;border-radius:6px;cursor:pointer;font-size:.88rem}
+.part-list button:hover{background:var(--sunk)}
+.part-list button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.part-list .n{font-family:var(--f-mono);color:var(--muted)}
+.lang{font-family:var(--f-mono);font-size:.68rem;border-radius:999px;padding:1px 7px;border:1px solid currentColor;margin-left:6px;white-space:nowrap}
+.lang.lat{color:var(--accent)}.lang.uz{color:var(--muted)}
+
+/* konstruktor */
+.pt-card{display:grid;gap:6px;font-size:.93rem}
+.pt-card .who{display:flex;gap:10px;align-items:center}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.avatar svg{width:26px;height:26px}
+.task-goal{background:var(--sunk);border-radius:8px;padding:10px 12px;font-size:.93rem}
+.slot{display:grid;gap:7px;padding:12px 0;border-top:1px solid var(--line)}
+.slot .lbl{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);display:flex;gap:8px;align-items:center}
+.slot .lbl .st{font-size:.85rem;letter-spacing:0;text-transform:none}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.ch{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 11px;cursor:pointer;font-family:var(--f-mono);font-size:.86rem;text-align:left;line-height:1.3}
+.ch.long{font-family:var(--f-body);font-size:.9rem;width:100%}
+.ch:hover:not([disabled]){border-color:var(--accent)}
+.ch[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.ch.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--surface));box-shadow:none}
+.ch.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 13%,var(--surface));box-shadow:none}
+.ch.missed{border-color:var(--good);border-style:dashed}
+.ch[disabled]{cursor:default}
+.why{font-size:.88rem;border-left:3px solid var(--line);padding:2px 0 2px 10px}
+.why.no{border-color:var(--bad)}.why.ok{border-color:var(--good)}
+.fb-list{display:grid;gap:8px}
+.fb-list .ok{color:var(--good)}.fb-list .no{color:var(--bad)}
+.final{font-family:var(--f-mono);font-size:.84rem;white-space:pre-wrap;background:var(--sunk);border-radius:8px;padding:10px 12px}
+
+/* xatoni toping */
+.er .tk{cursor:pointer;border-bottom:1.5px dotted transparent}
+.er .tk:hover{border-bottom-color:var(--paper-ink)}
+.er .tk.mk1{background:rgba(30,58,120,.15);outline:1.5px solid rgba(30,58,120,.55)}
+.er .tk.hit{background:rgba(44,122,76,.18);outline:1.5px solid rgba(44,122,76,.9)}
+.er .tk.fp{background:rgba(196,52,40,.15);outline:1.5px solid rgba(196,52,40,.85)}
+.er .tk.miss{outline:2px dashed #B98500;background:rgba(185,133,0,.12)}
+
+/* hisob */
+.num-in{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.num-in input{font:inherit;font-family:var(--f-mono);font-size:1rem;width:140px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.steps{margin:0;padding-left:1.2em;display:grid;gap:3px;font-size:.92rem}
+
+/* farmakokinetika */
+.fk-ctl{display:grid;gap:12px;margin-bottom:16px}
+.fk-row{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:end}
+.fk-row>label{flex:1 1 170px;max-width:100%;display:grid;gap:4px;font-size:.78rem;font-family:var(--f-mono);color:var(--muted);letter-spacing:.03em;min-width:0}
+.fk-row>label.tog{display:inline-flex;font-family:var(--f-body);font-size:.9rem;color:var(--ink);letter-spacing:0}
+.fk-row input[type=range]{width:100%;accent-color:var(--accent)}
+.fk-row select{width:100%}
+.fk-row>label.tog{flex:0 1 auto}
+.fk-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:900px){.fk-grid{grid-template-columns:minmax(0,1fr)}}
+.fk-graph{display:grid;gap:10px}
+#pkCv{width:100%;height:330px;display:block;border-radius:8px;background:var(--sunk);touch-action:pan-y}
+@media (max-width:560px){#pkCv{height:260px}}
+#heroCv{height:170px}
+.verdict{border-radius:8px;padding:10px 12px;font-size:.93rem;display:grid;gap:3px}
+.verdict b{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+.verdict.ok{background:color-mix(in srgb,var(--good) 13%,var(--surface));color:var(--ink);border-left:3px solid var(--good)}
+.verdict.warn{background:color-mix(in srgb,var(--warn) 14%,var(--surface));border-left:3px solid var(--warn)}
+.verdict.bad{background:color-mix(in srgb,var(--bad) 13%,var(--surface));border-left:3px solid var(--bad)}
+.verdict .x{font-size:.88rem;color:var(--muted)}
+.kv dd.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+#adme svg{width:100%;height:auto;display:block;max-height:340px}
+.an rect.nd{fill:var(--surface);stroke:var(--line);stroke-width:1.4}
+.an .nd-on rect.nd{stroke:var(--accent);stroke-width:2.2}
+.an text{font-family:var(--f-body);font-size:12.5px;fill:var(--ink)}
+.an text.s{font-family:var(--f-mono);font-size:10.5px;fill:var(--muted)}
+.an text.v{font-family:var(--f-mono);font-size:11px;fill:var(--accent);font-weight:600}
+.an path.ar{fill:none;stroke:var(--line);stroke-width:2.2;marker-end:url(#arO)}
+.an path.ar.on{stroke:var(--accent);stroke-width:3;stroke-dasharray:7 6;animation:flow 1s linear infinite;marker-end:url(#arA)}
+.an path.ar.ex{stroke:var(--warn);stroke-width:2.6;marker-end:url(#arW)}
+@keyframes flow{to{stroke-dashoffset:-13}}
+.an .organ{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}
+.an .organ2{fill:color-mix(in srgb,var(--warn) 16%,var(--surface));stroke:var(--warn);stroke-width:1.2}
+.an .organ3{fill:color-mix(in srgb,var(--bad) 13%,var(--surface));stroke:var(--bad);stroke-width:1.2}
+.an .ink{fill:none;stroke:var(--muted);stroke-width:1.2}
+.tasks-st{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{font-family:var(--f-mono);font-size:.72rem;border-radius:999px;padding:2px 9px;background:var(--sunk);border:1px solid var(--line)}
+.tag.ok{color:var(--good);border-color:var(--good)}
+@media (max-width:560px){.blank{padding:14px 12px 16px}.bl-line{font-size:1.18rem}.bl-shtamp{max-width:150px}}
+
+.bl-sign{white-space:nowrap}
+.rx-mini{display:none}
+@media (max-width:900px){
+ .rx-mini{display:grid;gap:0;position:sticky;top:52px;z-index:5;background:var(--paper);border:1px solid var(--paper-line);border-radius:8px;padding:6px 10px;box-shadow:0 6px 16px -10px rgba(0,0,0,.4)}
+ .rx-mini .mono{font-size:.66rem;color:var(--paper-print);letter-spacing:.05em;text-transform:uppercase}
+ .rx-mini .bl-line{font-size:1.02rem;line-height:1.2}
+ #yozish .vp>div[style*="sticky"]{position:static!important}
+ #adme{overflow-x:auto;-webkit-overflow-scrolling:touch}
+ #adme svg{min-width:720px;max-height:none}
+}
+</style>
+</head><body>
+<nav class="top" aria-label="Sections"><div class="wrap">
+  <a class="brand" href="#top">Pharmacology</a>
+  <a href="#tuzilish">Prescription structure</a>
+  <a href="#yozish">Write a prescription</a>
+  <a href="#xato">Find the error</a>
+  <a href="#hisob">Calculations</a>
+  <a href="#fk">Pharmacokinetics</a>
+  <a href="#fkv">PK tasks</a>
+  <a href="#manba">Sources</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Pharmacology · Topics 1–3</div>
+    <h1>Prescription writing and <em>pharmacokinetics</em> laboratory</h1>
+    <p class="lede">A two-part practical simulator. In the first part you write a prescription in Latin for a virtual patient, find the errors in written prescriptions and calculate doses. In the second part the concentration of a drug in the blood is shown on a graph: change the dose, route, interval, and kidney and liver function, and watch whether the drug stays in the therapeutic window.</p>
+    <p class="meta">Compiled by: Asadbek Axmatkulov · ALVORA · Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd year · 2026<br>Topics 1–2 of the KTR (prescription writing: solid, soft and liquid dosage forms) and Topic 3 (general pharmacology: pharmacokinetics and pharmacodynamics).</p>
+  </div>
+  <div class="phono">
+    <div class="row" style="justify-content:space-between"><span class="eyebrow" style="color:var(--muted)">Theophylline · 300 mg every 8 hours</span><span class="mono muted" style="font-size:.78rem">extended-release tablet</span></div>
+    <canvas id="heroCv" aria-label="Repeated dosing: the concentration reaches steady state, with the peak and trough inside the therapeutic window"></canvas>
+    <div class="legend"><span><i style="background:var(--good)"></i>Therapeutic window</span><span><i style="background:var(--bad)"></i>Toxic zone</span><span><i style="background:var(--accent)"></i>Concentration</span></div>
+    <p class="muted" style="font-size:.82rem">After each dose the concentration rises and falls. After 4–5 half-lives the peak and trough stabilize: this is the steady state (Css).</p>
+  </div>
+</div></header>
+
+<main>
+<!-- ============ 01 TUZILISH ============ -->
+<section id="tuzilish"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">01 · Prescription structure</span><h2>The 9 parts of a prescription</h2>
+  <p class="muted">Click a number on the form: what the part is called, what is written in it and in which language is shown. Only parts 5, 6 and 7 are written in Latin; the rest are in the national language.</p></div>
+  <div class="grid2">
+    <div id="anatBlank"></div>
+    <div class="panel find" id="partInfo" aria-live="polite"></div>
+  </div>
+
+  <div class="sub-h"><h3>How dosage forms are written in a prescription</h3><span class="muted" style="font-size:.85rem">After Rp. comes the accusative or genitive case</span></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Dosage form</th><th>Nominative</th><th>In the prescription</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Tablet</td><td>Tabuletta</td><td>Tabulettas (accusative, plural)</td><td class="mono">Rp.: Tabulettas Paracetamoli 0.5 N. 20</td></tr>
+      <tr><td>Capsule</td><td>Capsula</td><td>Capsulas · in capsulis</td><td class="mono">Rp.: Omeprazoli 0.02<br>D.t.d. N. 28 in capsulis</td></tr>
+      <tr><td>Solution</td><td>Solutio</td><td>Solutionis</td><td class="mono">Rp.: Solutionis Diclofenaci natrii 2.5% — 3 ml</td></tr>
+      <tr><td>Suspension</td><td>Suspensio</td><td>Suspensionis</td><td class="mono">Rp.: Suspensionis Amoxicillini 250 mg/5 ml — 150 ml</td></tr>
+      <tr><td>Tincture</td><td>Tinctura</td><td>Tincturae</td><td class="mono">Rp.: Tincturae Valerianae 30 ml</td></tr>
+      <tr><td>Ointment</td><td>Unguentum</td><td>Unguenti</td><td class="mono">Rp.: Unguenti Tetracyclini ophthalmici 1% — 10.0</td></tr>
+      <tr><td>Suppository</td><td>Suppositorium</td><td>Suppositorium cum + ablative</td><td class="mono">Rp.: Suppositorium cum Paracetamolo 0.25</td></tr>
+    </tbody></table></div>
+
+  <div class="sub-h"><h3>Main abbreviations</h3></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Abbreviation</th><th>Full form</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">Rp.:</td><td>Recipe</td><td>Take</td></tr>
+      <tr><td class="mono">D.S.</td><td>Da. Signa.</td><td>Give. Label.</td></tr>
+      <tr><td class="mono">D.t.d. N.</td><td>Da tales doses numero</td><td>Give … such doses</td></tr>
+      <tr><td class="mono">M.f.</td><td>Misce, fiat</td><td>Mix, to make</td></tr>
+      <tr><td class="mono">in amp. · in caps. · in tab.</td><td>in ampullis · in capsulis · in tabulettis</td><td>In ampoules · in capsules · in tablets</td></tr>
+      <tr><td class="mono">q.s.</td><td>quantum satis</td><td>As much as needed</td></tr>
+      <tr><td class="mono">ad</td><td>ad</td><td>up to …</td></tr>
+    </tbody></table></div>
+  <div class="note" style="margin-top:16px"><b>Remember</b>Doses are written in grams (as a decimal fraction) or in milliliters: <span class="mono">0,5</span> (but not “500” or “.5”), <span class="mono">1,0</span> (but not “1”). Moving the decimal point one place changes the dose 10-fold. For officinal drugs (tincture, Validol) the concentration is not written.</div>
+</div></section>
+
+<!-- ============ 02 RETSEPT YOZISH ============ -->
+<section id="yozish"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">02 · Writing a prescription</span><h2>Write a prescription for a virtual patient</h2>
+  <p class="muted">67 cases across the 18 pharmacology topics: the drugs, doses and signatures are taken from the prescription samples in the manual. Read the patient's condition and assemble the prescription part by part: choose an option for each blank. Your choices appear on the form immediately. At the end the “Check” button grades each part and explains the cause of any error.</p></div>
+  <div class="controls">
+    <label class="muted" for="rxSel" style="font-size:.88rem">Case:</label>
+    <select id="rxSel"></select>
+    <span class="score" id="rxScore"></span>
+  </div>
+  <div class="vp">
+    <div class="find" id="rxTask"></div>
+    <div style="display:grid;gap:12px;position:sticky;top:64px">
+      <div id="rxBlank"></div>
+      <div class="btnrow"><button class="btn pri" id="rxCheck" type="button">Check</button><button class="btn" id="rxReset" type="button">Start over</button><button class="btn" id="rxNext" type="button">Next case →</button></div>
+      <div id="rxFb" aria-live="polite"></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 03 XATONI TOPING ============ -->
+<section id="xato"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">03 · Find the error</span><h2>Mark the errors in the prescription</h2>
+  <p class="muted">Each prescription contains one or more errors. Click the parts you consider erroneous to mark them, then press “Check”. Green: an error found correctly. Red: a part that was actually correct. Yellow frame: an error that was missed.</p></div>
+  <div class="controls"><span class="score" id="erScore"></span></div>
+  <div class="vp">
+    <div id="erBlank"></div>
+    <div class="find">
+      <div class="q" id="erQ"></div>
+      <div class="btnrow"><button class="btn pri" id="erCheck" type="button">Check</button><button class="btn" id="erNext" type="button">Next prescription →</button></div>
+      <div id="erFb" aria-live="polite"></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 04 HISOB ============ -->
+<section id="hisob"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">04 · Calculations</span><h2>Calculating percentages, mg/mL and a child's dose</h2>
+  <p class="muted">Type the answer as a number (a decimal fraction with a comma or a point). The solution is shown step by step after each problem.</p></div>
+  <div class="grid2">
+    <div class="q" id="hsQ"></div>
+    <div class="panel">
+      <h3 style="margin-bottom:10px">Formulas</h3>
+      <div class="prose" style="font-size:.93rem">
+        <p><b>Mass from percentage:</b> substance (g) = total mass or volume × percentage / 100</p>
+        <p><b>mg/mL from percentage:</b> multiply the percentage by 10: 1% = 10 mg/mL, 2.5% = 25 mg/mL, 0.1% = 1 mg/mL</p>
+        <p><b>Percentage from ratio:</b> 1:1000 = 0.1%, 1:5000 = 0.02% (percentage = 100 / the second number of the ratio)</p>
+        <p><b>Volume:</b> required volume (mL) = required dose (mg) / concentration (mg/mL)</p>
+        <p><b>Child's dose:</b> dose = mg/kg × body weight (kg)</p>
+        <p><b>Steady state:</b> Css is reached at about 4–5 × t½</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 05 FARMAKOKINETIKA ============ -->
+<section id="fk"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">05 · Pharmacokinetics laboratory</span><h2>The drug in the blood: absorption, distribution, elimination</h2>
+  <p class="muted">Choose the drug, route, dose and interval. The graph shows the concentration in the patient's blood. The green band is the therapeutic window, the red zone the toxic level. Move a finger or the mouse over the graph to see the concentration at any time.</p></div>
+
+  <div class="fk-ctl panel">
+    <div class="fk-row">
+      <label>Drug<select id="pkDrug"></select></label>
+      <label>Route of administration<select id="pkRoute"></select></label>
+      <label>Dose<select id="pkDose"></select></label>
+      <label>Interval (τ)<select id="pkTau"></select></label>
+      <label>Duration<select id="pkDur"></select></label>
+    </div>
+    <div class="fk-row">
+      <label>Body weight: <b id="pkWv" class="mono">70 kg</b><input type="range" id="pkW" min="40" max="120" step="1" value="70"></label>
+      <label>Kidney (CrCl)<select id="pkRen"></select></label>
+      <label>Liver<select id="pkHep"></select></label>
+      <label>Other drug<select id="pkInt"></select></label>
+    </div>
+    <div class="fk-row">
+      <label class="tog"><input type="checkbox" id="pkLD"> Start with a loading dose</label>
+      <button class="btn" id="pkSave" type="button">Save for comparison</button>
+      <button class="btn" id="pkClear" type="button" hidden>Delete saved</button>
+    </div>
+  </div>
+
+  <div class="fk-grid">
+    <div class="panel fk-graph">
+      <div class="row" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline"><b id="pkTitle"></b><span class="mono muted" id="pkHover" style="font-size:.8rem">Move over the graph</span></div>
+      <canvas id="pkCv" aria-label="Concentration–time graph"></canvas>
+      <div class="legend" id="pkLeg"></div>
+      <div id="pkVerdict" aria-live="polite"></div>
+    </div>
+    <div class="panel find">
+      <h3>Parameters</h3>
+      <dl class="kv" id="pkKv"></dl>
+      <div class="note" id="pkCalc"></div>
+    </div>
+  </div>
+
+  <div class="sub-h"><h3>The path of the drug in the body</h3><span class="muted" style="font-size:.85rem">The selected route is highlighted</span></div>
+  <div class="panel"><div id="adme"></div><p class="muted" id="admeTxt" style="font-size:.9rem;margin-top:8px"></p></div>
+  <div class="note warn" style="margin-top:16px"><b>About the model</b>The simulator is based on a one-compartment pharmacokinetic model: average literature parameters for adults are used. For phenytoin, saturable (Michaelis–Menten) elimination is used. In a real patient the values vary widely, so this is a teaching tool: in treatment the dose is chosen from the instructions, clinical guidelines and measured blood concentrations.</div>
+</div></section>
+
+<!-- ============ 06 FK VAZIFALARI ============ -->
+<section id="fkv"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">06 · Pharmacokinetics tasks</span><h2>Adjust the dose to the patient</h2>
+  <p class="muted">15 tasks. In each task the “Load the condition” button sets the laboratory to the required state. Then change the settings and grade the result with “Check”.</p></div>
+  <div class="qlist" id="pkTasks"></div>
+</div></section>
+
+<!-- ============ 07 MANBALAR ============ -->
+<section id="manba"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">07 · Sources</span><h2>References used</h2></div>
+  <ol class="refs">
+    <li>Asadbek Axmatkulov. Pharmacology: a manual for practical sessions, topics 1–3 (ALVORA Med, 2026).</li>
+    <li>Z.Z. Xakimov, M.J. Allayeva et al. Fundamentals of Prescription Writing. Tashkent, 2020.</li>
+    <li>S.S. Azizova. Pharmacology. Tashkent, 2006.</li>
+    <li>Д.А. Харкевич. Фармакология. Москва: ГЭОТАР-Медиа, 2010.</li>
+    <li>B.G. Katzung, A.J. Trevor. Basic and Clinical Pharmacology. McGraw-Hill.</li>
+    <li>D.E. Golan et al. Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 4th ed., 2017.</li>
+    <li>M. Rowland, T.N. Tozer. Clinical Pharmacokinetics and Pharmacodynamics: Concepts and Applications. Lippincott Williams &amp; Wilkins.</li>
+  </ol>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>ALVORA Med · Prescription Writing and Pharmacokinetics Simulator</p>
+  <p>© 2026 Asadbek Axmatkulov · TSMU, Faculty of General Medicine No. 2</p>
+</div></footer>
+<script>
+(function(){
+"use strict";
+/* ===================== MA'LUMOTLAR ===================== */
+/* Retsept qismlari (tuzilish) */
+const PARTS=[
+ {n:1,lat:"Inscriptio",uz:"Stamp",lang:"uz",z:"shtamp",t:"The stamp and code of the medical institution. It shows in which institution the prescription was written."},
+ {n:2,lat:"Datum",uz:"Date",lang:"uz",z:"sana",t:"The day, month and year the prescription was written. The prescription's validity period is counted from this date."},
+ {n:3,lat:"Nomen aegroti",uz:"Patient",lang:"uz",z:"bemor",t:"The patient's surname, first name, patronymic and age. For children the age must always be shown: it is needed to check the dose."},
+ {n:4,lat:"Nomen medici",uz:"Physician",lang:"uz",z:"shifokor",t:"The surname, first name and patronymic of the physician who wrote the prescription."},
+ {n:5,lat:"Invocatio",uz:"Invocation",lang:"lat",z:"rp",t:"The physician's address to the pharmacist: Rp.: (Recipe — take). Every drug begins with a new Rp."},
+ {n:6,lat:"Designatio materiarum",uz:"Drug and quantity",lang:"lat",z:"dori",t:"The dosage form, the name of the drug substance (in the genitive case) and the quantity. The quantity is written in grams as a decimal fraction (0.5) or in milliliters."},
+ {n:7,lat:"Subscriptio",uz:"Instruction to the pharmacist",lang:"lat",z:"sub",t:"Instruction to the pharmacist about the dosage form and the quantity to dispense: M.f. (mix, to make), D.t.d. N. (give … such doses), D.S. (give, label)."},
+ {n:8,lat:"Signatura",uz:"Method of use",lang:"uz",z:"sign",t:"How the patient should use the drug: the single amount, how many times a day, when in relation to meals, the route and duration. Vague words such as “internally” or “as known” are not written."},
+ {n:9,lat:"Signum et sigillum medici",uz:"Signature and seal",lang:"uz",z:"imzo",t:"The physician's signature and personal seal. Without them the prescription is not valid."}
+];
+
+/* Retsept yozish vaziyatlari. Qator elementi: matn yoki slot {k,l,o:[[matn,to'g'ri,izoh],...],long}
+   q: qator turi: "rp" (Rp. qatori), "sub" (ko'rsatma), "sign" (S.+signatura), "ds" (D.S. + signatura bir qatorda) */
+const RX=[
+{id:"parac",title:"Paracetamol, tablet",pt:{n:"Patient A., 30 years old",d:"Acute respiratory viral infection. Temperature 38.8 °C, headache. No liver disease, does not drink alcohol."},
+ goal:"Prescribe paracetamol as an antipyretic and analgesic in 0.5 g tablets (20 pieces). Write it in the abbreviated form.",
+ lines:[{q:"rp",p:["Rp.:",{k:"forma",l:"Dosage form",o:[["Tabulettas",1,"Correct: after Rp. (take), a tablet is written in the accusative plural."],["Tabulettae",0,"This is the nominative (plural). After Rp. the accusative is needed: Tabulettas."],["Tabulettis",0,"This is the ablative (in tabulettis, used in the expanded-form instruction). In the abbreviated form, Tabulettas is written."]]},
+   {k:"nom",l:"Name of the substance",o:[["Paracetamoli",1,"Correct: the substance name is in the genitive (Paracetamolum → Paracetamoli)."],["Paracetamolum",0,"Nominative. The name of the drug substance is written in the genitive in a prescription: Paracetamoli."],["Paracetamolo",0,"Ablative: only after “cum”, for example in a suppository (Suppositorium cum Paracetamolo)."]]},
+   {k:"doza",l:"Dose",o:[["0.5",1,"Correct: 0.5 g = 500 mg."],["500",0,"In a prescription the dose is written in grams as a decimal fraction; writing “500” is an error: it should be 0.5."],["5.0",0,"5.0 g = 5000 mg: 10 times more in one tablet. This is close to a dose that causes fatal liver injury."],["0.05",0,"0.05 g = 50 mg: 10 times less, no effect."]]},"N. 20"]},
+  {q:"ds",p:[{k:"sub",l:"Instruction",o:[["D.S.",1,"Correct: in the abbreviated form the number is shown on the Rp. line (N. 20), so only D.S. (give, label) is written."],["D.t.d. N. 20 in tabulettis",0,"D.t.d. is written in the expanded form. Here the number of tablets is already shown on the Rp. line and is not written twice."],["M.D.S.",0,"M. (Misce — mix) is written only for dosage forms that are mixed up in the pharmacy. A ready-made tablet is not mixed."]]},
+   {k:"sign",l:"Signatura",long:1,o:[["Take 1 tablet when the temperature rises above 38.5 °C; at least 4–6 hours between doses; no more than 8 tablets (4.0 g) per day.",1,"Correct: the single amount, the indication, the interval and the maximum daily dose are clearly written."],["Take 2 tablets every 2 hours.",0,"That is up to 12 g per day: the maximum daily dose for adults is 4 g. Such a dose leads to liver necrosis."],["Take when the temperature rises.",0,"The single amount, the interval between doses and the maximum daily dose are not given: the patient may choose the dose and overdose."],["Internally.",0,"“Internally” is a vague signature. How much, how many times a day and for how long must be stated precisely."]]}]}],
+ note:"At high doses paracetamol forms a toxic metabolite (NAPQI) in the liver. In adults the single dose is 0.5–1.0 g, the maximum daily dose 4.0 g. In liver disease and alcoholism the daily dose is reduced."},
+
+{id:"omep",title:"Omeprazole, capsule (expanded form)",pt:{n:"Patient B., 45 years old",d:"Duodenal ulcer, Helicobacter pylori test positive. An eradication regimen (omeprazole + amoxicillin + clarithromycin) is being prescribed for 14 days."},
+ goal:"Write the omeprazole of the regimen: 20 mg twice a day, 14 days. In the expanded form: the dose on the Rp. line, the number of capsules in D.t.d.",
+ lines:[{q:"rp",p:["Rp.:",{k:"nom",l:"Name of the substance",o:[["Omeprazoli",1,"Correct: genitive (Omeprazolum → Omeprazoli)."],["Omeprazolum",0,"Nominative. After Rp. the substance name is written in the genitive."],["Omeprazolo",0,"Ablative: used after “cum”, not needed here."]]},
+   {k:"doza",l:"Dose",o:[["0.02",1,"Correct: 0.02 g = 20 mg."],["0.2",0,"0.2 g = 200 mg: 10 times more."],["20 mg",0,"The word “mg” is not written in a prescription: the dose is in grams as a decimal fraction (0.02)."],["2.0",0,"2.0 g = 2000 mg: 100 times more."]]}]},
+  {q:"sub",p:[{k:"sub",l:"Instruction",o:[["D.t.d. N. 28 in capsulis",1,"Correct: 2 capsules a day × 14 days = 28 capsules, dispense in capsules."],["D.t.d. N. 14 in capsulis",0,"14 capsules last only 7 days: twice a day × 14 days = 28 pieces are needed."],["D.t.d. N. 28 in tabulettis",0,"The dosage form is a capsule, so “in capsulis” is written, not “in tabulettis”."],["D.S.",0,"In the expanded form the number of doses to dispense is shown with D.t.d. N.; D.S. alone is not enough."]]}]},
+  {q:"sign",p:[{k:"sign",l:"Signatura",long:1,o:[["Take 1 capsule twice a day, in the morning and evening, 30 minutes before meals, for 14 days.",1,"Correct: proton pump inhibitors block active (meal-activated) pumps, so they are taken 30–60 minutes before meals."],["Take 1 capsule twice a day after meals for 14 days.",0,"Proton pump inhibitors are taken 30–60 minutes before meals: then they effectively block the pumps activated by food."],["Take 1 capsule once a day for 3 days.",0,"In an eradication regimen omeprazole is given twice a day for 10–14 days. 3 days is not enough; the risk of resistance and relapse increases."],["Internally.",0,"Vague signature: the amount, number, relation to meals and duration are not written."]]}]}],
+ note:"In the expanded form the amount of one dose is written on the Rp. line and the number of doses with D.t.d. N. The abbreviated form: Rp.: Capsulas Omeprazoli 0.02 N. 28 / D.S. …"},
+
+{id:"diclo",title:"Diclofenac, solution in ampoules",pt:{n:"Patient V., 38 years old",d:"Acute lumbago (low back pain), severe pain. No gastric ulcer, kidney disease or asthma."},
+ goal:"Prescribe 5 ampoules of diclofenac sodium 2.5% solution, 3 mL each: once a day intramuscularly.",
+ lines:[{q:"rp",p:["Rp.:",{k:"forma",l:"Dosage form",o:[["Solutionis",1,"Correct: Solutio → genitive Solutionis (take of the solution)."],["Solutio",0,"Nominative. After Rp. a solution is written in the genitive: Solutionis."],["Solutionem",0,"Accusative. A solution is written in the genitive in a prescription."]]},
+   {k:"nom",l:"Name of the substance",o:[["Diclofenaci natrii",1,"Correct: both words are in the genitive."],["Diclofenacum natrium",0,"Nominative. The correct form: Diclofenaci natrii."],["Diclofenaci natrio",0,"Natrio is the ablative. The genitive is natrii."]]},
+   {k:"doza",l:"Concentration and volume",o:[["2.5% — 3 ml",1,"Correct: 25 mg/mL × 3 mL = 75 mg per ampoule."],["25% — 3 ml",0,"25% = 250 mg/mL: one ampoule would contain 750 mg, 10 times more."],["2.5% — 30 ml",0,"For a solution in ampoules the volume of a single ampoule is written (3 mL), and the number goes in D.t.d. N."]]}]},
+  {q:"sub",p:[{k:"sub",l:"Instruction",o:[["D.t.d. N. 5 in ampullis",1,"Correct: dispense 5 ampoules."],["D.S.",0,"For drugs in ampoules the number of ampoules is shown with D.t.d. N. … in ampullis."],["D.t.d. N. 5 in tabulettis",0,"The dosage form is a solution in ampoules: “in ampullis” is written."]]}]},
+  {q:"sign",p:[{k:"sign",l:"Signatura",long:1,o:[["Inject 3 mL once a day deep intramuscularly, 5 days.",1,"Correct: diclofenac solution in ampoules is injected deep intramuscularly; parenteral use is usually limited to 2–5 days."],["Inject 3 mL as an intravenous bolus.",0,"Diclofenac in ampoules is not given as an intravenous bolus; it is injected deep intramuscularly."],["Inject 3 mL subcutaneously.",0,"Subcutaneous injection is not intended: there is a risk of severe local irritation and tissue damage."],["Intramuscularly.",0,"Vague: the amount, number and duration are not written."]]}]}],
+ note:"Percentage form: 2.5% = 2.5 g / 100 mL = 25 mg/mL. When NSAIDs are given parenterally, gastrointestinal, renal and cardiovascular risks are taken into account."},
+
+{id:"amox",title:"Amoxicillin, suspension for a child",pt:{n:"Patient G., 4 years old, 16 kg",d:"Streptococcal tonsillitis (group A beta-hemolytic streptococcus, rapid test positive). No penicillin allergy."},
+ goal:"Prescribe amoxicillin suspension (250 mg/5 mL), 5 mL three times a day for 10 days. Calculate the total volume required.",
+ lines:[{q:"rp",p:["Rp.:",{k:"forma",l:"Dosage form",o:[["Suspensionis",1,"Correct: Suspensio → Suspensionis."],["Solutionis",0,"This is a solution. Amoxicillin is suspended as particles that do not dissolve in water: this is a suspension."],["Suspensio",0,"Nominative. In a prescription the genitive is used: Suspensionis."]]},
+   "Amoxicillini",{k:"doza",l:"Concentration and volume",o:[["250 mg/5 ml — 150 ml",1,"Correct: 5 mL × 3 times × 10 days = 150 mL."],["250 mg/5 ml — 50 ml",0,"50 mL lasts only 3 days. 5 mL × 3 × 10 days = 150 mL is needed."],["250 mg/5 ml — 1500 ml",0,"Calculation error: 5 × 3 × 10 = 150 mL, not 1500."]]}]},
+  {q:"ds",p:["D.S.",{k:"sign",l:"Signatura",long:1,o:[["Shake before use. Take 5 mL three times a day for 10 days.",1,"Correct: for a suspension “shake before use” must be written. The daily dose of 750 mg ≈ 47 mg/kg is in line with the ~50 mg/kg recommended for streptococcal tonsillitis."],["Take 5 mL three times a day for 10 days.",0,"In the signature of a suspension “Shake before use” must be written: if it is not shaken the particles settle and the dose will be wrong."],["Shake before use. Take 5 mL once a day for 10 days.",0,"250 mg per day ≈ 16 mg/kg: not enough. Amoxicillin acts in a time-dependent way and has a short t½ (~1 hour): it is given 2–3 times a day."],["Shake before use. Take 5 mL three times a day for 3 days.",0,"In streptococcal tonsillitis penicillins are given for 10 days to prevent rheumatic fever."]]}]}],
+ note:"A suspension must not be given intravenously. A child's dose is always checked per mg/kg: 16 kg × 50 mg/kg = 800 mg/day."},
+
+{id:"pilo",title:"Eye drops for glaucoma",pt:{n:"Patient D., 62 years old",d:"Open-angle glaucoma, intraocular pressure 30 mm Hg. The ophthalmologist recommended a muscarinic agonist."},
+ goal:"Prescribe 10 mL of pilocarpine hydrochloride 1% solution as eye drops.",
+ lines:[{q:"rp",p:["Rp.:","Solutionis",{k:"nom",l:"Name of the substance",o:[["Pilocarpini hydrochloridi",1,"Correct: a muscarinic agonist constricts the pupil, improves the outflow of aqueous humor and lowers the pressure."],["Atropini sulfatis",0,"Dangerous error! Atropine is a muscarinic antagonist: it dilates the pupil and impedes the outflow of aqueous humor. It is contraindicated in glaucoma and can trigger an acute glaucoma attack."],["Pilocarpinum hydrochloridum",0,"Nominative. In the genitive: Pilocarpini hydrochloridi."]]},
+   {k:"doza",l:"Concentration and volume",o:[["1% — 10 ml",1,"Correct: pilocarpine eye drops come in 1–2%."],["10% — 10 ml",0,"10% pilocarpine eye drops are not used: risk of a strong systemic muscarinic effect (bradycardia, bronchospasm, salivation)."],["1% — 1 ml",0,"1 mL does not last even a few days; eye drops are prescribed in a 5–10 mL bottle."]]}]},
+  {q:"ds",p:["D.S.",{k:"sign",l:"Signatura",long:1,o:[["Eye drops. Instill 1–2 drops into both eyes three times a day.",1,"Correct: the route, the amount and the number are shown."],["Take 20 drops three times a day by mouth.",0,"These are eye drops: not for drinking."],["Instill into the eye.",0,"Vague: how many drops and how many times a day are not written."]]}]}],
+ note:"Eye drops are prepared sterile. To reduce systemic absorption, after instillation the inner corner of the eye is pressed for 1–2 minutes."},
+
+{id:"tetra",title:"Eye ointment",pt:{n:"Patient E., 25 years old",d:"Bacterial blepharoconjunctivitis: eyelid redness, purulent discharge. No antibiotic allergy."},
+ goal:"Prescribe 10.0 g of tetracycline 1% eye ointment.",
+ lines:[{q:"rp",p:["Rp.:",{k:"forma",l:"Dosage form",o:[["Unguenti",1,"Correct: Unguentum → Unguenti."],["Unguentum",0,"Nominative. In a prescription the genitive: Unguenti."],["Unguento",0,"Ablative. In a prescription the genitive: Unguenti."]]},
+   {k:"doza",l:"Substance, concentration and quantity",o:[["Tetracyclini ophthalmici 1% — 10.0",1,"Correct: the eye ointment is 1% and sterile; the word “ophthalmici” is added."],["Tetracyclini 3% — 10.0",0,"3% tetracycline ointment is intended for the skin and is not put in the eye. For the eye a 1% ophthalmici ointment is prescribed."],["Tetracyclini ophthalmici 1% — 10 ml",0,"An ointment is measured by mass (in grams): 10.0."]]}]},
+  {q:"ds",p:["D.S.",{k:"sign",l:"Signatura",long:1,o:[["Apply behind the lower eyelid three times a day, 7 days.",1,"Correct: the site of application, the number and the duration are exact."],["Apply to the eye.",0,"Vague: where, how many times a day and for how long are not written."],["Apply a thick layer to the skin three times a day.",0,"Eye ointment is placed behind the lower eyelid."]]}]}],
+ note:"Eye dosage forms must be sterile. Systemic use of tetracycline is restricted in children under 8 years, while local eye ointment is used even in newborns."},
+
+{id:"supp",title:"Suppository for a child",pt:{n:"Patient J., 4 years old, 17 kg",d:"Acute respiratory infection, temperature 39.0 °C, vomiting: cannot take the drug by mouth."},
+ goal:"Prescribe paracetamol in 0.25 g rectal suppositories (10 pieces).",
+ lines:[{q:"rp",p:["Rp.:","Suppositorium cum",{k:"nom",l:"Name of the substance",o:[["Paracetamolo",1,"Correct: after the preposition “cum” (with) the substance name is written in the ablative."],["Paracetamoli",0,"After “cum” the ablative is needed, not the genitive: Paracetamolo."],["Paracetamolum",0,"Nominative. After “cum” the ablative: Paracetamolo."]]},
+   {k:"doza",l:"Dose",o:[["0.25",1,"Correct: 250 mg ≈ 15 mg/kg (17 kg); the single dose for children is 10–15 mg/kg."],["2.5",0,"2.5 g = 2500 mg ≈ 147 mg/kg in one dose: a toxic dose that damages the liver."],["0.025",0,"25 mg ≈ 1.5 mg/kg: no effect."]]}]},
+  {q:"sub",p:[{k:"sub",l:"Instruction",o:[["D.t.d. N. 10",1,"Correct: dispense 10 such suppositories."],["D.S.",0,"The number of suppositories is not shown: write D.t.d. N. 10."],["M.f. pulvis",0,"M.f. pulvis — “let a powder be made”. Here the dosage form is a suppository."]]}]},
+  {q:"sign",p:[{k:"sign",l:"Signatura",long:1,o:[["Insert 1 suppository into the rectum when the temperature is above 38.5 °C; not more than 4 times a day, at least 6 hours apart.",1,"Correct: at most 1.0 g per day ≈ 59 mg/kg, which does not exceed the permitted daily dose for children (60 mg/kg)."],["Take 1 suppository three times a day.",0,"A suppository is not taken by mouth: it is inserted into the rectum."],["Insert 1 suppository every 2 hours when the temperature is raised.",0,"Every 2 hours, 12 suppositories a day = 3.0 g ≈ 176 mg/kg: toxic. The interval must be at least 6 hours."]]}]}],
+ note:"For a suppository the dose of the active substance is written for one suppository. If the base is not stated, rectal suppositories are prepared on a 3.0 g base."},
+
+{id:"ceft",title:"Ceftriaxone, powder in a vial",pt:{n:"Patient Z., 50 years old, 72 kg",d:"Community-acquired pneumonia, moderately severe. No allergy to penicillins or cephalosporins. No allergy to lidocaine."},
+ goal:"Prescribe ceftriaxone in 1.0 g vials for 7 days: once a day intramuscularly, dissolved in 1% lidocaine.",
+ lines:[{q:"rp",p:["Rp.:",{k:"nom",l:"Name of the substance",o:[["Ceftriaxoni",1,"Correct: genitive (Ceftriaxonum → Ceftriaxoni)."],["Ceftriaxonum",0,"Nominative. The correct form: Ceftriaxoni."],["Ceftriaxono",0,"Ablative. The correct form: Ceftriaxoni."]]},
+   {k:"doza",l:"Dose",o:[["1.0",1,"Correct: 1.0 g in one vial."],["10.0",0,"10 g: 10 times more. In adults the daily dose is usually 1–2 g, maximum 4 g."],["1",0,"A whole number is not written without a digit after the decimal point: 1.0."]]}]},
+  {q:"sub",p:[{k:"sub",l:"Instruction",o:[["D.t.d. N. 7",1,"Correct: 7 vials for 7 days."],["D.t.d. N. 7 in ampullis",0,"Ceftriaxone is supplied in vials (sterile powder), not in ampoules."],["D.S.",0,"The number of vials is shown with D.t.d. N."]]}]},
+  {q:"sign",p:[{k:"sign",l:"Signatura",long:1,o:[["Dissolve the powder in the vial in 3.5 mL of 1% lidocaine solution and inject deep intramuscularly once a day, 7 days.",1,"Correct: ceftriaxone dissolved in lidocaine is given only intramuscularly."],["Dissolve the powder in 1% lidocaine solution and inject intravenously once a day.",0,"Dangerous error! Ceftriaxone diluted with lidocaine is given only intramuscularly; for intravenous use it is dissolved in water for injection."],["Dissolve the powder in Ringer's solution and give by intravenous drip.",0,"Mixing ceftriaxone with calcium-containing solutions (Ringer's) is prohibited: a calcium–ceftriaxone precipitate forms in the lungs and kidneys."]]}]}],
+ note:"A separate prescription is written for the lidocaine solution, and the two prescriptions are separated by the # sign: # Rp.: Solutionis Lidocaini 1% — 3.5 ml / D.t.d. N. 7 in ampullis / S. To dissolve ceftriaxone."},
+
+{id:"valer",title:"Valerian tincture",pt:{n:"Patient I., 40 years old",d:"Irritability, mild difficulty falling asleep. No comorbidities, does not drink alcohol."},
+ goal:"Prescribe 30 mL of valerian tincture: 20–25 drops three times a day.",
+ lines:[{q:"rp",p:["Rp.:",{k:"forma",l:"Dosage form",o:[["Tincturae",1,"Correct: Tinctura → Tincturae."],["Tinctura",0,"Nominative. In a prescription the genitive: Tincturae."],["Tincturam",0,"Accusative. In a prescription the genitive: Tincturae."]]},
+   {k:"doza",l:"Name and quantity",o:[["Valerianae 30 ml",1,"Correct: a tincture is an officinal drug, and its concentration is not written in the prescription."],["Valerianae 20% — 30 ml",0,"Even if valerian tincture is prepared in a 1:5 ratio, it is an officinal drug: its concentration is not written in the prescription."],["Valerianae 300 ml",0,"300 mL is far too much for a tincture taken as 20–25 drops three times a day: usually 25–30 mL is written."]]}]},
+  {q:"ds",p:["D.S.",{k:"sign",l:"Signatura",long:1,o:[["Take 20–25 drops three times a day.",1,"Correct."],["Take 20–25 mL three times a day.",0,"mL instead of drops: this is 20 times more (1 mL ≈ 20 drops). Almost the whole bottle would be taken in one dose."],["Take when sleep does not come.",0,"Vague: the amount and number are not written."]]}]}],
+ note:"Alcoholic tinctures are prescribed with caution to drivers and to patients who must avoid alcohol."},
+
+{id:"dexa",title:"Dexamethasone, mass–volume form",pt:{n:"Patient K., 33 years old",d:"Moderate acute exacerbation of bronchial asthma. After an inhaled bronchodilator, a short course of a systemic glucocorticoid is being prescribed."},
+ goal:"Prescribe 10 ampoules of dexamethasone solution containing 0.004 g (4 mg) per 1 mL (in mass–volume form).",
+ lines:[{q:"rp",p:["Rp.:","Solutionis",{k:"nom",l:"Name of the substance",o:[["Dexamethasoni",1,"Correct: genitive."],["Dexamethasonum",0,"Nominative. The correct form: Dexamethasoni."]]},
+   {k:"doza",l:"Mass and volume",o:[["0.004 — 1 ml",1,"Correct: mass–volume form: 0.004 g (4 mg) of substance in 1 mL of solution."],["0.4 — 1 ml",0,"0.4 g = 400 mg in one ampoule: 100 times more."],["4.0 — 1 ml",0,"4 g: 1000 times more."]]}]},
+  {q:"sub",p:["D.t.d. N. 10 in ampullis"]},
+  {q:"sign",p:[{k:"sign",l:"Signatura",long:1,o:[["Inject 1 mL once or twice a day, slowly intravenously or intramuscularly.",1,"Correct: the amount, the number and the route are shown."],["Inject intravenously.",0,"Vague: the single dose and the number of times a day are not written."],["Inject 10 mL as an intravenous push.",0,"10 mL = 10 ampoules (40 mg) at once: more than prescribed, and all the ampoules run out on the very first day."]]}]}],
+ note:"The mass–volume form equals the percent form: 0.004 g / 1 mL = 4 mg/mL = 0.4%."},
+
+{id:"amlo",title:"Hypertension and bronchial asthma",pt:{n:"Patient L., 58 years old",d:"Arterial hypertension, BP 165/100 mm Hg. Comorbidity: bronchial asthma. No edema, heart rate 76/min."},
+ goal:"Prescribe a suitable antihypertensive drug, 30 tablets.",
+ lines:[{q:"rp",p:["Rp.:","Tabulettas",{k:"nom",l:"Drug",o:[["Amlodipini",1,"Correct: a calcium channel blocker does not affect the bronchi and is safe in asthma."],["Propranololi",0,"Dangerous error! Propranolol is a nonselective beta-blocker: it also blocks β2 receptors in the bronchi and causes bronchospasm. Contraindicated in bronchial asthma."],["Amlodipinum",0,"Nominative. The correct form: Amlodipini."]]},
+   {k:"doza",l:"Dose",o:[["0.005",1,"Correct: 5 mg, the starting dose."],["0.05",0,"0.05 g = 50 mg: 5 times the maximum daily dose (10 mg)."],["5.0",0,"5 g: a thousand times more."]]},"N. 30"]},
+  {q:"ds",p:["D.S.",{k:"sign",l:"Signatura",long:1,o:[["Take 1 tablet once a day in the morning; taken continuously, monitor BP.",1,"Correct: the t½ of amlodipine is 35–50 hours, so once a day is enough; hypertension is treated continuously."],["Take 1 tablet 3 times a day.",0,"Amlodipine is long-acting (t½ 35–50 hours): it is given once a day. Three times a day leads to dose accumulation and hypotension."],["Take 1 tablet when you have a headache.",0,"Arterial hypertension is treated continuously; the drug is not taken only when symptoms appear."]]}]}],
+ note:"When choosing a drug, comorbidities are taken into account: in bronchial asthma nonselective beta-blockers are contraindicated."}
+];
+
+/* Xatoni toping: qatorlar, tokenlar [matn, xato izohi yoki 0] */
+const ER=[
+{t:"Paracetamol for fever in adults",fix:"Rp.: Tabulettas Paracetamoli 0.5 N. 20\nD.S. Take 1 tablet when the temperature rises above 38.5 °C; no more than 4 times a day.",
+ L:[[["Rp.:",0],["Tabulettas",0],["Paracetamolum",'The name of the substance is written in the genitive case: Paracetamoli.'],["500",'The dose is written in grams as a decimal fraction: 0.5.'],["N. 20",0]],[["D.S.",0],["Internally.",'“Internally” is a vague signature: the amount, the frequency and the duration must be written.']]]},
+{t:"Calcium chloride for hypocalcemia",fix:"Rp.: Solutionis Calcii chloridi 10% — 10 ml\nD.t.d. N. 10 in ampullis\nS. Inject 10 mL once a day intravenously, slowly (over 2–3 minutes).",
+ L:[[["Rp.:",0],["Solutionis",0],["Calcii chloridi",0],["10% — 10 ml",0]],[["D.t.d. N. 10 in ampullis",0]],[["S.",0],["10 mL per dose",0],["once a day",0],["intramuscularly",'Calcium chloride is given only slowly intravenously: if injected intramuscularly or subcutaneously it causes tissue necrosis.'],["to be injected.",0]]]},
+{t:"Paracetamol suppository for a child",fix:"Rp.: Suppositorium cum Paracetamolo 0.25\nD.t.d. N. 10\nS. Insert 1 suppository into the rectum three times a day.",
+ L:[[["Rp.:",0],["Suppositorium cum",0],["Paracetamoli",'After “cum” the ablative case is used: Paracetamolo.'],["0.25",0]],[["D.t.d. N. 10",0]],[["S.",0],["1 suppository",0],["three times a day",0],["to be taken by mouth.",'A suppository is not swallowed: it is inserted into the rectum.']]]},
+{t:"Camphor oil solution",fix:"Rp.: Solutionis Camphorae oleosae 20% — 2 ml\nD.t.d. N. 10 in ampullis\nS. Inject 2 mL subcutaneously twice a day.",
+ L:[[["Rp.:",0],["Solutionis",0],["Camphorae oleosae",0],["20% — 2 ml",0]],[["D.t.d. N. 10 in ampullis",0]],[["S.",0],["2 mL per dose",0],["twice a day",0],["intravenously",'Oil solutions are not injected intravenously: risk of fat embolism. Camphor oil solution is injected subcutaneously.'],["to be injected.",0]]]},
+{t:"Valerian tincture",fix:"Rp.: Tincturae Valerianae 30 ml\nD.S. Take 20–25 drops three times a day.",
+ L:[[["Rp.:",0],["Tincturae Valerianae",0],["20%",'A tincture is an officinal drug: its concentration is not written in the prescription.'],["— 30 ml",0]],[["D.S.",0],["Take 20–25 drops three times a day.",0]]]},
+{t:"Omeprazole in an eradication regimen",fix:"Rp.: Omeprazoli 0.02\nD.t.d. N. 28 in capsulis\nS. Take 1 capsule twice a day, 30 minutes before meals, for 14 days.",
+ L:[[["Rp.:",0],["Omeprazoli",0],["0.02",0]],[["D.t.d. N. 28",0],["in tabulettis",'The dosage form is a capsule: in capsulis.']],[["S.",0],["1 capsule twice a day",0],["after meals",'Proton pump inhibitors are taken 30–60 minutes before meals.'],["to be taken for 14 days.",0]]]},
+{t:"Ceftriaxone intramuscularly",fix:"Rp.: Ceftriaxoni 1.0\nD.t.d. N. 7\nS. Dissolve the powder in 3.5 mL of 1% lidocaine solution and inject deep intramuscularly once a day.",
+ L:[[["Rp.:",0],["Ceftriaxoni",0],["1.0",0]],[["D.t.d. N. 7",0]],[["S.",0],["Dissolve the powder in 3.5 mL of 1% lidocaine solution,",0],["once a day",0],["intravenously",'Ceftriaxone dissolved in lidocaine is given only intramuscularly.'],["to be injected.",0]]]},
+{t:"Eye ointment",fix:"Rp.: Unguenti Tetracyclini ophthalmici 1% — 10.0\nD.S. Apply behind the lower eyelid three times a day.",
+ L:[[["Rp.:",0],["Unguenti",0],["Tetracyclini 3%",'The 3% ointment is for the skin. For the eye a 1% sterile eye ointment is prescribed: Tetracyclini ophthalmici 1%.'],["— 10.0",0]],[["D.S.",0],["Apply behind the lower eyelid three times a day.",0]]]},
+{t:"Atropine in ampoules",fix:"Rp.: Solutionis Atropini sulfatis 0.1% — 1 ml\nD.t.d. N. 6 in ampullis\nS. Inject 1 mL subcutaneously.",
+ L:[[["Rp.:",0],["Solutionis",0],["Atropini sulfatis",0],["1%",'Atropine for injection comes as 0.1% (1 mg/mL). 1% is 10 times more, a List A toxic substance.'],["— 1 ml",0]],[["D.t.d. N. 6 in ampullis",0]],[["S.",0],["Inject 1 mL subcutaneously.",0]]]},
+{t:"Amlodipine for hypertension",fix:"Rp.: Tabulettas Amlodipini 0.005 N. 30\nD.S. Take 1 tablet once a day in the morning.",
+ L:[[["Rp.:",0],["Tabulettae",'After Rp. the accusative case is used: Tabulettas.'],["Amlodipini",0],["0.05",'0.05 g = 50 mg: 5 times the maximum daily dose (10 mg). The correct form: 0.005.'],["N. 30",0]],[["D.S.",0],["1 tablet",0],["three times a day",'Amlodipine is long-acting (t½ 35–50 hours): it is taken once a day.'],["to be taken by mouth.",0]]]}
+];
+
+/* Hisob-kitob */
+const HS=[
+ {q:"10% zinc ointment, 30.0 g. How many grams of zinc oxide does it contain?",a:3,tol:.01,u:"g",s:["Formula: substance = total mass × percentage / 100","30 × 10 / 100 = 3.0 g"]},
+ {q:"How many mg of lidocaine are in 1 mL of 2% lidocaine solution?",a:20,tol:.01,u:"mg",s:["2% = 2 g / 100 mL = 2000 mg / 100 mL","= 20 mg/mL (or percentage × 10 = 20 mg/mL)"]},
+ {q:"How many mg of diclofenac are in a 2.5% — 3 mL ampoule of diclofenac sodium?",a:75,tol:.01,u:"mg",s:["2.5% = 25 mg/mL","25 mg/mL × 3 mL = 75 mg"]},
+ {q:"How many mg of atropine are in 1 mL of 0.1% atropine sulfate solution?",a:1,tol:.01,u:"mg",s:["0.1% = 0.1 g / 100 mL = 100 mg / 100 mL","= 1 mg/mL"]},
+ {q:"A child weighs 18 kg. The single dose of paracetamol is 15 mg/kg. How many mg are given?",a:270,tol:.01,u:"mg",s:["Dose = mg/kg × weight","15 × 18 = 270 mg"]},
+ {q:"Paracetamol syrup 120 mg/5 mL. How many mL of syrup are needed to give 240 mg?",a:10,tol:.01,u:"mL",s:["Concentration: 120 mg / 5 mL = 24 mg/mL","Volume = 240 / 24 = 10 mL"]},
+ {q:"Gentamicin 3 mg/kg/day, patient 70 kg, the daily dose is given in 3 divided doses. What is the single dose in mg?",a:70,tol:.01,u:"mg",s:["Daily dose: 3 × 70 = 210 mg","Single dose: 210 / 3 = 70 mg"]},
+ {q:"Nitrofural (furacilin) solution 1:5000. What percentage is this?",a:.02,tol:.0001,u:"%",s:["1:5000 = 1 g of substance in 5000 mL","Percentage = 100 / 5000 = 0.02%"]},
+ {q:"How many grams of glucose are in 20 mL of 40% glucose solution?",a:8,tol:.01,u:"g",s:["Substance = volume × percentage / 100","20 × 40 / 100 = 8 g"]},
+ {q:"Amoxicillin suspension 250 mg/5 mL: 5 mL three times a day, 10 days. At least how many mL of suspension are needed?",a:150,tol:.01,u:"mL",s:["Per day: 5 mL × 3 = 15 mL","For 10 days: 15 × 10 = 150 mL"]},
+ {q:"Insulin 100 units/mL. The patient needs 12 units. How many mL?",a:.12,tol:.0001,u:"mL",s:["Volume = dose / concentration","12 / 100 = 0.12 mL (12 divisions on an insulin syringe)"]},
+ {q:"Theophylline t½ is 8 hours. About how many hours does it take to reach steady-state concentration with constant dosing? (5 × t½ rule)",a:40,tol:8.01,u:"hours",s:["Css is reached at 4–5 × t½","5 × 8 = 40 hours (at 4 × 8 = 32 hours, ~94%)"]},
+ {q:"The patient weighs 70 kg and took 10 g of paracetamol. How many mg/kg is this? (round to a whole number)",a:143,tol:1.01,u:"mg/kg",s:["10 g = 10,000 mg","10,000 / 70 ≈ 143 mg/kg","In adults, ingestion of about 150 mg/kg or more carries a high risk of liver damage: the blood concentration is measured and a decision is made about the antidote (acetylcysteine)."]}
+];
+
+/* ===================== FARMAKOKINETIKA ===================== */
+/* V: l/kg; t12: soat (me'yoriy buyrak va jigar); fe: buyrak orqali o'zgarmagan holda chiqariladigan ulush
+   routes: {po:{F,ka}, iv:{inf (soat)}, im:{F,ka}, pr:{F,ka}}; show: konsentratsiya ko'rsatish ko'paytiruvchisi */
+const RTN={po:"By mouth",iv:"Intravenous (infusion)",im:"Intramuscular",pr:"Rectal (suppository)"};
+const DRUGS={
+ theo:{n:"Theophylline",V:.5,t12:8,fe:.1,routes:{po:{F:.95,ka:.35,lbl:"By mouth (retard tablet)"},iv:{inf:.5,lbl:"Intravenous (infusion, theophylline equivalent)"}},doses:[100,150,200,250,300,350,400,450,500,600],d0:300,taus:[6,8,12,24],tau0:12,dur:[1,2,3,5,7],dur0:3,
+  unit:"mg/L",tr:[10,20],tox:20,ldT:10,mdT:12,
+  ints:[["none","No",1,1,1],["cip","Ciprofloxacin or erythromycin (CYP1A2 inhibitor)",.7,1,1],["smk","Smoking or rifampin (inducer)",1.7,1,1]],
+  info:"Bronchodilator. Narrow therapeutic window: 10–20 mg/L (5–15 in some guidelines). Above 20 mg/L: tachycardia, vomiting, arrhythmia and seizures. Metabolized mainly in the liver (CYP1A2)."},
+ dig:{n:"Digoxin",V:7,t12:38,fe:.7,routes:{po:{F:.7,ka:1.2},iv:{inf:.1}},doses:[.0625,.125,.25,.375,.5],d0:.25,taus:[12,24,48],tau0:24,dur:[3,5,7,10,14,21],dur0:14,
+  unit:"ng/mL",show:1000,tr:[.5,2],tox:2,ldT:1,mdT:1,
+  ints:[["none","No",1,1,1],["amio","Amiodarone or verapamil (P-glycoprotein inhibitor)",1,1,.6]],
+  info:"Cardiac glycoside. Very narrow therapeutic window: 0.5–2.0 ng/mL. Above 2 ng/mL: bradycardia, arrhythmia, nausea, yellow-green color vision. Excreted mainly by the kidneys; Vd is very large (accumulates in tissues)."},
+ gen:{n:"Gentamicin",V:.25,t12:2.5,fe:.95,routes:{iv:{inf:.5},im:{F:1,ka:2.5},po:{F:.005,ka:1}},doses:[40,60,80,100,120,140,160,200,240,280,320,360,400,480],d0:120,taus:[8,12,24,36,48],tau0:8,dur:[1,2,3,5,7],dur0:3,
+  unit:"mg/L",peak:[5,10],trough:2,tox:12,
+  ints:[["none","No",1,1,1]],
+  info:"Aminoglycoside. With conventional dosing the effective peak is 5–10 mg/L and the trough should be below 2 mg/L: if the trough is high, nephrotoxic and ototoxic effects increase. Excreted almost entirely by the kidneys. Nowadays it is often dosed once a day at 5–7 mg/kg."},
+ parac:{n:"Paracetamol",V:.9,t12:2,fe:.05,routes:{po:{F:.9,ka:3},pr:{F:.6,ka:.6},iv:{inf:.25}},doses:[250,500,750,1000],d0:1000,taus:[4,6,8,12],tau0:6,dur:[1,2,3],dur0:2,
+  unit:"mg/L",tr:[10,20],peakOnly:1,maxDay:4000,maxKg:60,
+  ints:[["none","No",1,1,1]],
+  info:"Antipyretic and analgesic. Effective concentration is about 10–20 mg/L: to reduce fever it is important that the peak reaches this window; the drug is given as needed. Maximum daily dose is 4 g in adults and 60 mg/kg in children. In overdose a toxic metabolite (NAPQI) accumulates in the liver; the antidote is acetylcysteine."},
+ phen:{n:"Phenytoin",V:.7,mm:{Vmax:7,Km:4},fe:0,routes:{po:{F:.9,ka:.35},iv:{inf:.5}},doses:[100,150,200,250,300,350,400,450,500,600],d0:300,taus:[8,12,24],tau0:24,dur:[7,14,21,28],dur0:21,
+  unit:"mg/L",tr:[10,20],tox:20,ldT:15,mdT:15,
+  ints:[["none","No",1,1,1],["flu","Fluconazole or isoniazid (inhibitor)",.6,1,1]],
+  info:"Anticonvulsant. Therapeutic window 10–20 mg/L: above 20 nystagmus, above 30 ataxia. Elimination is saturable (zero-order kinetics): a small dose increase raises the concentration sharply."},
+ amox:{n:"Amoxicillin",V:.4,t12:1.2,fe:.8,routes:{po:{F:.85,ka:1.3},iv:{inf:.5}},doses:[250,500,750,1000,1500],d0:500,taus:[6,8,12,24],tau0:8,dur:[1,2,3],dur0:2,
+  unit:"mg/L",mic:2,tmic:40,
+  ints:[["none","No",1,1,1],["prob","Probenecid (reduces renal secretion)",1,.5,1]],
+  info:"Beta-lactam antibiotic. Time-dependent action: what matters is the time the concentration stays above the microorganism's minimum inhibitory concentration (MIC). For penicillins the goal is C > MIC for at least 40–50% of the dosing interval. The MIC = 2 mg/L on the graph is taken as an example."}
+};
+/* Buyrak: kreatinin klirensi (ml/daq) va renal chiqarilish ko'paytiruvchisi */
+const REN=[["n","Normal (≥90 mL/min)",1],["l","Mildly reduced (60–89)",.75],["m","Moderate (30–59)",.45],["s","Severe (15–29)",.22],["e","End-stage (<15)",.08]];
+const HEP=[["n","Normal",1],["m","Moderately impaired (Child-Pugh B)",.6],["s","Severely impaired (Child-Pugh C)",.35]];
+
+/* ===================== FARMAKOKINETIK MODEL ===================== */
+const LN2=Math.LN2;
+const fnum=(x,d=1)=>{if(!isFinite(x))return"—";const p=Math.pow(10,d);let s=(Math.round(x*p)/p).toFixed(d);if(d>0)s=s.replace(/\.?0+$/,"");return s};
+const fsig=(x)=>{if(!isFinite(x))return"—";const a=Math.abs(x);return fnum(x,a>=100?0:a>=10?1:a>=1?2:a>=.1?2:3)};
+function fdose(d){return (d<1?fnum(d,4):fnum(d,0))+" mg"}
+
+function pkParams(st){
+  const d=DRUGS[st.drug],W=st.w,V=d.V*W;
+  const r=(REN.find(x=>x[0]===st.ren)||REN[0])[2],h=(HEP.find(x=>x[0]===st.hep)||HEP[0])[2];
+  const it=d.ints.find(x=>x[0]===st.int)||d.ints[0];
+  const ro=d.routes[st.route]||Object.values(d.routes)[0];
+  const F=st.route==="iv"?1:ro.F, ka=ro.ka||0, inf=st.route==="iv"?ro.inf:0;
+  const p={d,V,F,ka,inf,W,mm:!!d.mm};
+  if(d.mm){p.Vmax=d.mm.Vmax*W*h*it[2];p.Km=d.mm.Km}          /* Vmax: mg/sutka */
+  else{const k0=LN2/d.t12;p.k=k0*((1-d.fe)*h*it[2]+d.fe*r*it[3])*it[4];p.CL=p.k*V;p.t12=LN2/p.k}
+  return p;
+}
+/* Yuklama doza (mg) */
+function loadDose(st,p){const d=p.d;if(!d.ldT)return 0;const c=d.ldT/(d.show||1);return roundDose(c*p.V/p.F,d)}
+function roundDose(x,d){const step=d.show?.0625:x>200?50:25;return Math.max(step,Math.round(x/step)*step)}
+
+function simulate(st){
+  const p=pkParams(st),d=p.d,tau=st.tau;
+  const n=Math.max(1,Math.round(st.dur*24/tau)),T=n*tau;
+  const doses=[];for(let i=0;i<n;i++)doses.push({t:i*tau,D:st.dose});
+  if(st.ld&&d.ldT){doses[0].D=loadDose(st,p);doses[0].ld=1}
+  let C;
+  if(!p.mm){
+    const k=p.k,ka=Math.abs(p.ka-k)<1e-6?p.ka*1.001:p.ka,V=p.V,F=p.F,ti=p.inf;
+    C=t=>{let c=0;for(const ds of doses){const s=t-ds.t;if(s<0)break;
+      if(ti>0){const R=ds.D/ti;c+=s<=ti?R/(k*V)*(1-Math.exp(-k*s)):R/(k*V)*(1-Math.exp(-k*ti))*Math.exp(-k*(s-ti))}
+      else c+=F*ds.D*ka/(V*(ka-k))*(Math.exp(-k*s)-Math.exp(-ka*s))}
+      return c};
+    p.C=C;
+  }else{
+    /* RK4: G — ichakdagi miqdor (mg), A — markaziy kamera (mg) */
+    const dt=.05,V=p.V,ka=p.ka,Vm=p.Vmax/24,Km=p.Km,ti=p.inf,F=p.F;
+    const N=Math.ceil(T/dt),arr=new Float64Array(N+1);let G=0,A=0,di=0;
+    const rate=t=>{if(!(ti>0))return 0;let r=0;for(const ds of doses){if(t>=ds.t&&t<ds.t+ti)r+=ds.D/ti}return r};
+    const f=(t,G,A)=>{const c=A/V;return[-ka*G,ka*G+rate(t)-Vm*c/(Km+c)]};
+    for(let i=0;i<=N;i++){const t=i*dt;
+      while(di<doses.length&&doses[di].t<=t+1e-9){if(!(ti>0))G+=F*doses[di].D;di++}
+      arr[i]=A/V;if(i===N)break;
+      const k1=f(t,G,A),k2=f(t+dt/2,G+dt/2*k1[0],A+dt/2*k1[1]),k3=f(t+dt/2,G+dt/2*k2[0],A+dt/2*k2[1]),k4=f(t+dt,G+dt*k3[0],A+dt*k3[1]);
+      G+=dt/6*(k1[0]+2*k2[0]+2*k3[0]+k4[0]);A+=dt/6*(k1[1]+2*k2[1]+2*k3[1]+k4[1]);if(A<0)A=0;if(G<0)G=0}
+    C=t=>{const x=t/dt,i=Math.floor(x);if(i<0)return 0;if(i>=N)return arr[N];return arr[i]+(arr[i+1]-arr[i])*(x-i)};
+    p.C=C;
+  }
+  /* oxirgi dozalar oralig'i */
+  const t0=(n-1)*tau,M=400;let mx=0,mn=Infinity,auc=0,above=0,tmax=t0,prev=C(t0);
+  for(let i=0;i<=M;i++){const t=t0+tau*i/M,c=C(t);if(c>mx){mx=c;tmax=t}if(c<mn)mn=c;
+    if(i>0){auc+=(c+prev)/2*tau/M;if(d.mic&&(c+prev)/2>d.mic)above+=tau/M}prev=c}
+  const m={Cmax:mx,Cmin:mn,trough:C(T),Cavg:auc/tau,tmax:tmax-t0,pT:above/tau*100,n,T,doses};
+  let gmax=0;for(let i=0;i<=600;i++)gmax=Math.max(gmax,C(T*i/600));m.gmax=Math.max(gmax,mx);
+  if(!p.mm){m.CssAvg=p.F*st.dose/(p.CL*tau);m.tss=5*p.t12;m.ss=t0>=4*p.t12}
+  else{const R=p.F*st.dose*24/tau;m.R=R;m.CssAvg=R<p.Vmax?p.Km*R/(p.Vmax-R):Infinity;
+    m.t12=LN2*p.V*(p.Km+m.Cavg)/(p.Vmax/24);
+    m.ss=isFinite(m.CssAvg)&&Math.abs(m.Cavg-m.CssAvg)/m.CssAvg<.06}
+  m.daily=st.dose*24/tau+(st.ld&&d.ldT?0:0);
+  return {p,m,C};
+}
+function avgOver(C,a,tau){let s=0;const M=100;for(let i=0;i<M;i++)s+=C(a+tau*(i+.5)/M);return s/M}
+
+/* Holat (verdict): [daraja, sarlavha, izoh] */
+function verdict(st,sim){
+  const {p,m}=sim,d=p.d,k=d.show||1,u=" "+d.unit,f=x=>fsig(x*k);
+  const out=[];
+  if(st.drug==="gen"&&st.route==="po")return [["bad","Almost not absorbed from the gut","Aminoglycosides are polar molecules: less than 1% enters the blood when taken by mouth. In systemic infection they are given intravenously or intramuscularly; by mouth they are used only for intestinal decontamination."]];
+  if(d.mm&&!isFinite(m.CssAvg))out.push(["bad","No steady state: the concentration keeps rising",`The input rate (${fnum(m.R,0)} mg/day) is greater than the maximum elimination rate (Vmax ≈ ${fnum(p.Vmax,0)} mg/day). Elimination is saturated and the drug keeps accumulating.`]);
+  if(d.peak){
+    if(m.Cmax>d.tox)out.push(["bad","Peak at a toxic level",`Peak ${f(m.Cmax)}${u} > ${d.tox}${u}.`]);
+    if(m.trough>d.trough)out.push(["bad","Trough concentration is high",`Before the next dose ${f(m.trough)}${u} > ${d.trough}${u}: risk of nephrotoxicity and ototoxicity. Lengthen the interval or reduce the dose.`]);
+    if(m.Cmax<d.peak[0])out.push(["warn","Peak is low",`Peak ${f(m.Cmax)}${u} < ${d.peak[0]}${u}: the bactericidal effect may be insufficient.`]);
+    if(!out.length)out.push(["ok","On target",`Peak ${f(m.Cmax)}${u} (5–10), trough ${f(m.trough)}${u} (< 2).`]);
+  }else if(d.mic){
+    if(m.pT>=d.tmic)out.push(["ok","Time-dependent effect is sufficient",`For ${fnum(m.pT,0)}% of the dosing interval the concentration is above the MIC (${d.mic}${u}) (goal ≥ ${d.tmic}%).`]);
+    else out.push(["warn","Little time above the MIC",`Only ${fnum(m.pT,0)}% (goal ≥ ${d.tmic}%). Giving the daily dose in more divided doses is more effective than increasing it.`]);
+  }else if(d.tr){
+    const[a,b]=d.tr,cx=m.Cmax*k,cn=m.Cmin*k;
+    if(d.peakOnly){if(cx<a)out.push(["warn","Does not reach the effective concentration",`Peak ${f(m.Cmax)}${u} < ${a}${u}: the antipyretic and analgesic effect may be weak.`]);else out.push(["ok","Reaches the effective concentration",`Peak ${f(m.Cmax)}${u} (effective about ${a}–${b}${u}). Paracetamol is given as needed: a decline between doses is normal.`])}
+    else if(d.tox&&cx>d.tox)out.push(["bad","Toxic concentration",`Peak ${f(m.Cmax)}${u} is above the toxic limit (${fnum(d.tox*1,2)}${u}).`]);
+    else if(cx<a)out.push(["warn","Below the therapeutic window",`Even the peak is ${f(m.Cmax)}${u}: no effect is expected.`]);
+    else if(cn<a)out.push(["warn","Trough below the window",`Peak ${f(m.Cmax)}, trough ${f(m.Cmin)}${u}: between doses the concentration falls out of the window. Shorten the interval (divide the dose).`]);
+    else out.push(["ok","Within the therapeutic window",`In the last interval the concentration is ${f(m.Cmin)}–${f(m.Cmax)}${u} (window ${fnum(a,2)}–${fnum(b,2)}${u}).`]);
+  }
+  if(d.maxDay){const lim=st.w<40?d.maxKg*st.w:d.maxDay;const day=st.dose*24/st.tau;
+    if(day>lim)out.unshift(["bad","Daily dose exceeds the permitted dose",`${fnum(day,0)} mg/day > ${fnum(lim,0)} mg (${st.w<40?d.maxKg+" mg/kg":"4 g for adults"}). Even if the blood concentration does not exceed the window, toxic NAPQI accumulates in the liver: risk of hepatotoxicity.`]);
+    if(st.hep!=="n")out.push(["warn","Liver disease","In liver failure, alcoholism and starvation the daily dose of paracetamol is reduced (to about 2–3 g)."]);}
+  if(!m.ss)out.push(["warn","Steady state not yet reached",d.mm?"For phenytoin the time to steady state depends on the dose: as the dose approaches Vmax it takes weeks. Lengthen the duration.":`Css is reached in about ${fnum(m.tss/24,1)} days (5 × t½). Lengthen the duration or give a loading dose.`]);
+  return out;
+}
+
+/* ===== Kitobdagi retseptlar asosida vaziyatlar (3–18-mavzular) ===== */
+const TOPICS={1:"Solid and soft dosage forms",2:"Liquid dosage forms",3:"Afferent nervous system",4:"M- and M,N-cholinoceptors",5:"N-cholinoceptors",6:"Adrenoceptors",7:"Anesthesia, neuroleptics, anxiolytics",8:"Psychostimulants, antidepressants",9:"Respiratory system",10:"Antiarrhythmic and antianginal",11:"Antihypertensives",12:"Digestive system",13:"Diuretics",14:"Blood system",15:"Hormones, anti-inflammatory",16:"Antiseptics, synthetic antibacterials",17:"Antibiotics",18:"Antituberculosis and antiviral"};
+const TP0={parac:1,omep:1,diclo:2,amox:2,pilo:4,tetra:1,supp:1,ceft:2,valer:2,dexa:2,amlo:11};
+RX.forEach(t=>t.tp=TP0[t.id]||1);
+
+const FORMW={
+ Tabulettas:[["Tabulettae","Nominative (plural). After Rp. the accusative is needed: Tabulettas."],["Tabulettis","Ablative: “in tabulettis” is used in the extended form. In the abbreviated form: Tabulettas."]],
+ Capsulas:[["Capsulae","Nominative (plural). After Rp. the accusative: Capsulas."],["Capsulis","Ablative (in capsulis — in the extended form). Here: Capsulas."]],
+ Solutionis:[["Solutio","Nominative. In a prescription a solution is in the genitive: Solutionis."],["Solutionem","Accusative. A solution is written in the genitive: Solutionis."]],
+ Suspensionis:[["Suspensio","Nominative. The correct form: Suspensionis."],["Solutionis","This is a suspension: the substance is not dissolved, the particles remain suspended. Writing it as a solution is wrong."]],
+ Aerosoli:[["Aerosolum","Nominative. The correct form: Aerosoli."]],
+ Sirupi:[["Sirupus","Nominative. The correct form: Sirupi."],["Solutionis","This is a syrup (Sirupus): the dosage form is stated precisely in the prescription."]],
+ Cremoris:[["Cremor","Nominative. The correct form: Cremoris."],["Unguenti","This is a cream, not an ointment: the dosage form must be written precisely."]],
+ Unguenti:[["Unguentum","Nominative. The correct form: Unguenti."]],
+ Geli:[["Gelum","Nominative. The correct form: Geli."],["Unguenti","This is a gel, not an ointment: the dosage form must be written precisely."]]
+};
+const VAGUE={po:"To be taken by mouth.",inj:"To be injected.",eye:"Instill into the eye.",nose:"To be instilled into the nose.",top:"To be applied.",inh:"To be inhaled.",rect:"To be inserted."};
+function fmtG(v){const s=Number(v.toPrecision(6));if(s>=1)return (Number.isInteger(s)?s.toFixed(1):String(s));return String(s)}
+function massTxt(v){const mg=v*1000;if(mg>=1)return fnum(mg,mg<10?2:0)+" mg";return fnum(mg*1000,0)+" mcg"}
+function doseSlot(ds,dk){
+  if(dk==="g"){const v=parseFloat(ds.replace(",",".")),hi=fmtG(v*10),lo=fmtG(v/10);
+    return {k:"doza",l:"Dose",o:[[ds,1,`Correct: ${ds} g = ${massTxt(v)}.`],[hi,0,`${hi} g = ${massTxt(v*10)}: 10 times more than the required dose (${massTxt(v)}). The decimal point is shifted by one place.`],[lo,0,`${lo} g = ${massTxt(v/10)}: 10 times less, it will have no effect.`]]}}
+  if(dk==="%"){const m=/^([\d.,]+)%(.*)$/.exec(ds),c=parseFloat(m[1].replace(",",".")),rest=m[2];
+    const o=[[ds,1,`Correct: ${m[1]}% = ${fnum(c*10,2)} mg/mL.`]];
+    if(c*10<=100)o.push([fmtP(c*10)+"%"+rest,0,`${fmtP(c*10)}% = ${fnum(c*100,2)} mg/mL: the concentration is 10 times higher — risk of overdose.`]);
+    o.push([fmtP(c/10)+"%"+rest,0,`${fmtP(c/10)}% = ${fnum(c,3)} mg/mL: the concentration is 10 times lower, it will have no effect.`]);
+    if(o.length<3)o.push([fmtP(c/100)+"%"+rest,0,`The concentration is 100 times lower.`]);
+    return {k:"doza",l:"Concentration and volume",o}}
+  return null;
+}
+function fmtP(x){return String(Number(x.toPrecision(6)))}
+function subSlot(sb,shortN,sbw){
+  if(sb==="D.S.")return {k:"sub",l:"Instruction",o:[["D.S.",1,shortN?"Correct: the quantity is shown on the Rp. line (N.), so only D.S. is written.":"Correct: the drug is not divided into doses (vial, tube, canister), so only D.S. is written."],
+    [shortN?"D.t.d. "+shortN:"D.t.d. N. 10",0,shortN?"The quantity is shown on the Rp. line: it is not written twice. D.t.d. is used only in the extended form.":"D.t.d. (give such doses) is written only for divided dosage forms; this drug is dispensed in one container."],
+    ["M.D.S.",0,"M. (Misce — mix) is written only for compounded drugs mixed in the pharmacy; this is a ready-made drug."]]};
+  const m=/^(D\.t\.d\. N\. \d+)\s*(.*)$/.exec(sb),base=m[1],cont=m[2];
+  const SW={"in tabulettis":["in capsulis","The dosage form is a tablet: “in tabulettis”."],"in tabulettis obductis":["in capsulis","The dosage form is a film-coated tablet: “in tabulettis obductis”."],"in capsulis":["in tabulettis","The dosage form is a capsule: “in capsulis”."],"in ampullis":["in tabulettis","The drug comes in ampoules: “in ampullis”."],"in calamis":["in ampullis","Insulin comes in syringe pens (cartridges): “in calamis”."],"in syringis":["in ampullis","The drug comes in prefilled syringes: “in syringis”."],"":["in ampullis","This drug comes in a vial (powder or solution), not in an ampoule."]};
+  const sw=sbw||SW[cont]||SW[""];
+  const CU={"in ampullis":" in ampoules","in tabulettis":" in tablets","in tabulettis obductis":" in film-coated tablets","in capsulis":" in capsules","in calamis":" in syringe pens","in syringis":" in prefilled syringes","":""},nn=/\d+/.exec(base)[0];
+  return {k:"sub",l:"Instruction",o:[[sb,1,`Correct: give ${nn} such doses${CU[cont]??""}.`],["D.S.",0,"For a drug divided into doses, the number of doses to be dispensed is shown with D.t.d. N.; D.S. alone is not enough."],[base+" "+sw[0],0,sw[1]]]};
+}
+function mkRx(c){
+  const p=["Rp.:"];
+  if(c.f){if(FORMW[c.f])p.push({k:"forma",l:"Dosage form",o:[[c.f,1,/^(Tabulettas|Capsulas)$/.test(c.f)?"Correct: after the verb Rp. (take) the accusative case (plural).":"Correct: the dosage form is in the genitive case (“take of …”)."],...FORMW[c.f].map(x=>[x[0],0,x[1]])]});else p.push(c.f)}
+  const no=[[c.n[0],1,c.abl?"Correct: after “cum” the ablative case.":"Correct: the name of the substance is in the genitive case."]];
+  if(c.n[1])no.push([c.n[1],0,`Nominative. In a prescription the genitive case: ${c.n[0]}.`]);
+  (c.x||[]).forEach(x=>no.push([x[0],0,x[1]]));
+  p.push(no.length>1?{k:"nom",l:c.x?"Drug":"Name of the substance",o:no}:c.n[0]);
+  if(c.do)p.push({k:"doza",l:"Dose",o:c.do});else if(c.ds){const ds=doseSlot(c.ds,c.dk);p.push(ds||c.ds)}
+  if(c.tl)p.push(c.tl);
+  const shortN=c.sb==="D.S."&&c.tl&&/N\.\s*\d+/.test(c.tl)?(/N\.\s*\d+/.exec(c.tl)[0]):null;
+  const sub=subSlot(c.sb,shortN,c.sbw);
+  const so=[[c.s,1,c.sw||"Correct: the amount, the number and the method of use are written clearly and safely."],...c.w.map(x=>[x[0],0,x[1]]),[VAGUE[c.r]||"Internally.",0,"Vague signature: the single dose, the number of times a day, the route and the duration must be written clearly."]];
+  const sign={k:"sign",l:"Signatura",long:1,o:so};
+  const lines=[{q:"rp",p}];
+  if(c.sb==="D.S.")lines.push({q:"ds",p:[sub,sign]});else{lines.push({q:"sub",p:[sub]});lines.push({q:"sign",p:[sign]})}
+  return {id:c.id,tp:c.tp,title:c.t,pt:{n:c.p,d:c.d},goal:c.g,lines,note:c.nt};
+}
+const RXB=[
+/* 1–2 */
+{id:"gel",tp:1,t:"Diclofenac gel",p:"Patient O., 52 years old",d:"Osteoarthritis of the knee joint, mechanical pain. Skin intact, no wound. Does not want an oral NSAID (stomach disease).",g:"Prescribe 50.0 g of diclofenac 1% gel (topical use).",f:"Geli",n:["Diclofenaci","Diclofenacum"],ds:"1% — 50.0",dk:"%",sb:"D.S.",r:"top",s:"Rub a thin layer into the area of the knee joint 3–4 times a day; do not use for more than 14 days.",w:[["Apply a thick layer to open wounds and mucous membranes.","NSAID gel is applied only to intact skin: on wounds and mucous membranes absorption and irritation increase."]],nt:"Topical NSAIDs reduce systemic side effects, but these persist when applied to a large area for a long time."},
+/* 3 */
+{id:"lido",tp:3,t:"Lidocaine, infiltration anesthesia",p:"Patient R., 34 years old, 70 kg",d:"A cut wound on a finger; local infiltration anesthesia is needed for primary surgical debridement. No allergy to anesthetics.",g:"Prescribe 10 ampoules of 10 mL of lidocaine hydrochloride 1% solution.",f:"Solutionis",n:["Lidocaini hydrochloridi","Lidocainum hydrochloridum"],ds:"1% — 10 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"For infiltration anesthesia (maximum dose without epinephrine 4.5 mg/kg).",w:[["Inject up to 100 mL for infiltration anesthesia.","1% = 10 mg/mL: 100 mL = 1000 mg. At 70 kg the maximum dose without epinephrine is 4.5 mg/kg ≈ 315 mg (31 mL). If exceeded — seizures, arrhythmia, cardiac arrest."]],nt:"Amide anesthetic. In systemic toxicity: stop the injection, give oxygen, a benzodiazepine for seizures, and lipid emulsion in severe cases."},
+{id:"carbo",tp:3,t:"Activated charcoal",p:"Patient S., 28 years old",d:"Food poisoning: nausea, diarrhea 3 times, no fever. Also taking other drugs (a contraceptive).",g:"Prescribe 30 activated charcoal tablets of 0.25 g (in extended form).",n:["Carbonis activati","Carbo activatus"],ds:"0.25",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Take 4–8 tablets three times a day, 2 hours apart from other drugs.",w:[["Take 4–8 tablets at the same time as other drugs.","The adsorbent also binds other drugs and reduces their absorption (the contraceptive effect decreases): an interval of at least 2 hours is needed."]],nt:"Adsorbents are more effective in the first hours of poisoning. In poisoning with acids and alkalis activated charcoal is ineffective."},
+{id:"tetrac",tp:3,t:"Tetracaine eye drops",p:"Patient T., 50 years old",d:"Measurement of intraocular pressure with a tonometer is planned: superficial anesthesia of the cornea is needed.",g:"Prescribe 5 mL of tetracaine hydrochloride 0.5% solution.",f:"Solutionis",n:["Tetracaini hydrochloridi","Tetracainum hydrochloridum"],ds:"0.5% — 5 ml",dk:"%",sb:"D.S.",r:"eye",s:"Instill 1–2 drops into the eye (before an ophthalmologic procedure).",w:[["Instill 5–6 times a day for 2 weeks when the eye hurts.","Prolonged use of a local anesthetic in the eye damages the corneal epithelium and abolishes protective reflexes: only before a procedure."]],nt:"Tetracaine is a strong and toxic ester-type anesthetic, used only for superficial anesthesia."},
+/* 4 */
+{id:"neost",tp:4,t:"Neostigmine, intestinal atony",p:"Patient F., 60 years old",d:"Day 3 after appendectomy: abdominal distension, bowel sounds absent, no mechanical obstruction. No bronchial asthma.",g:"Prescribe 10 ampoules of 1 mL of neostigmine methylsulfate 0.05% solution.",f:"Solutionis",n:["Neostigmini methylsulfatis","Neostigminum methylsulfas"],x:[["Atropini sulfatis","Atropine is an M-cholinoceptor blocker: it further suppresses bowel peristalsis and deepens the atony."]],ds:"0.05% — 1 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"Inject 1 mL subcutaneously 1–2 times a day (for postoperative intestinal atony).",w:[["Inject 1 mL as an intravenous push.","In intestinal atony it is given subcutaneously; rapid intravenous injection causes marked bradycardia and bronchospasm."]],nt:"Anticholinesterase drugs are contraindicated in mechanical intestinal obstruction, bronchial asthma and bradycardia. In overdose the antidote is atropine."},
+{id:"atrop",tp:4,t:"Atropine, bradycardia",p:"Patient X., 66 years old",d:"Symptomatic sinus bradycardia: HR 38/min, BP 85/50, dizziness. No glaucoma.",g:"Prescribe 10 ampoules of 1 mL of atropine sulfate 0.1% solution.",f:"Solutionis",n:["Atropini sulfatis","Atropinum sulfas"],ds:"0.1% — 1 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"Inject 0.5–1 mL intravenously (in bradycardia).",w:[["Inject 10 mL intravenously.","10 mL of 0.1% = 10 mg: a toxic dose (tachycardia, hyperthermia, dry skin, psychosis). In bradycardia 0.5–1 mg, up to 3 mg in total."]],nt:"Atropine is a List A toxic substance. Use with caution in glaucoma and prostatic hyperplasia."},
+{id:"tropic",tp:4,t:"Tropicamide, fundus examination",p:"Patient H., 45 years old",d:"Diabetes mellitus, a fundus examination (retinopathy) is needed. No angle-closure glaucoma.",g:"Prescribe 5 mL of tropicamide 1% solution, which dilates the pupil for a short time.",f:"Solutionis",n:["Tropicamidi","Tropicamidum"],x:[["Pilocarpini hydrochloridi","Pilocarpine constricts the pupil (miosis): the fundus becomes harder to see."]],ds:"1% — 5 ml",dk:"%",sb:"D.S.",r:"eye",s:"Instill 1 drop into each eye 15–20 minutes before the fundus examination.",w:[["Instill into each eye three times a day for 2 weeks.","Tropicamide is instilled once for diagnosis; prolonged use leads to cycloplegia and increased intraocular pressure."]],nt:"Tropicamide is a short-acting (4–6 hours) M-cholinoceptor blocker. After the examination the patient must not drive for a few hours."},
+/* 5 */
+{id:"cytis",tp:5,t:"Cytisine, smoking cessation",p:"Patient Q., 42 years old",d:"Has smoked for 20 years, wants to quit. No cardiovascular disease, BP 125/80.",g:"Prescribe 100 cytisine tablets of 0.0015 g.",n:["Cytisini","Cytisinum"],ds:"0.0015",dk:"g",sb:"D.t.d. N. 100 in tabulettis",r:"po",s:"By the scheme: on days 1–3 take 1 tablet every 2 hours (6 a day), then reduce the dose gradually, taking it for 25 days in total; stop smoking completely from day 5.",w:[["Take 1 tablet once a day for 25 days while continuing to smoke.","Cytisine competes with nicotine at N-cholinoceptors: if smoking continues, nicotine toxicity increases. Smoking must be stopped from day 5."]],nt:"Cytisine is an N-cholinomimetic (partial agonist). Use with caution in arterial hypertension and severe atherosclerosis."},
+{id:"nicpl",tp:5,t:"Nicotine patch",p:"Patient P., 38 years old",d:"Smokes 20 cigarettes a day; nicotine replacement therapy was chosen.",g:"Prescribe 7 nicotine transdermal patches (15 mg/16 hours).",n:["Systematis therapeutici transdermalis Nicotini","Systema therapeuticum transdermale Nicotini"],ds:"15 mg/16 hours",sb:"D.t.d. N. 7",sbw:["in ampullis","This is a transdermal patch: “in ampullis” is not written, the number of patches is shown with D.t.d. N."],r:"top",s:"Every morning apply one patch to clean skin and remove it in the evening.",w:[["Apply 2–3 patches at the same time and continue smoking.","The nicotine dose becomes excessive: nausea, tachycardia, arrhythmia."]],nt:"Applying the patch to a different site each day reduces skin irritation."},
+{id:"azam",tp:5,t:"Azamethonium, hypertensive crisis",p:"Patient Z., 58 years old",d:"Hypertensive crisis, BP 210/120, other agents ineffective in the hospital setting.",g:"Prescribe 5 ampoules of 1 mL of azamethonium bromide 5% solution.",f:"Solutionis",n:["Azamethonii bromidi","Azamethonium bromidum"],ds:"5% — 1 ml",dk:"%",sb:"D.t.d. N. 5 in ampullis",r:"inj",s:"Inject 0.5–1 mL intramuscularly (in hypertensive crisis); the patient should lie down for 2 hours.",w:[["Inject 1 mL intramuscularly, then the patient gets up at once and goes home.","Ganglionic blockers cause severe orthostatic collapse: after the injection the patient must lie down for 2 hours."]],nt:"Ganglionic blockers block sympathetic and parasympathetic ganglia equally: atony of the intestine and urinary bladder, orthostatic hypotension."},
+/* 6 */
+{id:"adren",tp:6,t:"Epinephrine, anaphylaxis",p:"Patient A., 30 years old",d:"10 minutes after a bee sting: swelling of the lips and tongue, wheezing, BP 70/40, urticaria. Anaphylactic shock.",g:"Prescribe 10 ampoules of 1 mL of epinephrine hydrochloride 0.1% solution.",f:"Solutionis",n:["Epinephrini hydrochloridi","Epinephrinum hydrochloridum"],x:[["Dexamethasoni phosphatis","Glucocorticoids do not act within minutes: in anaphylaxis the first and main drug is epinephrine."]],ds:"0.1% — 1 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"In anaphylaxis inject 0.5 mL into the thigh muscle; if there is no effect repeat after 5 minutes.",w:[["Inject 1 mL undiluted as an intravenous push.","Giving 1 mg of undiluted epinephrine as an intravenous push (except in cardiac arrest) leads to ventricular fibrillation, extremely high BP and myocardial infarction. In anaphylaxis — 0.5 mg into the thigh muscle."]],nt:"0.1% = 1 mg/mL = 1:1000. In anaphylaxis 0.5 mg intramuscularly for adults, 0.01 mg/kg for children."},
+{id:"xylo",tp:6,t:"Xylometazoline, rhinitis",p:"Patient Y., 25 years old",d:"Acute viral rhinitis, nasal congestion, cannot sleep. No glaucoma or arterial hypertension.",g:"Prescribe 10 mL of xylometazoline hydrochloride 0.1% solution.",f:"Solutionis",n:["Xylometazolini hydrochloridi","Xylometazolinum hydrochloridum"],ds:"0.1% — 10 ml",dk:"%",sb:"D.S.",r:"nose",s:"Instill 1–2 drops into each nostril 2–3 times a day, for no more than 5 days.",w:[["Instill 1–2 drops into each nostril 3 times a day for a month.","Use for longer than 5–7 days causes drug-induced rhinitis (rebound swelling, dependence) and mucosal atrophy."]],nt:"0.1% solution for adults, 0.05% solution for children aged 2–6 years."},
+{id:"bisop",tp:6,t:"Bisoprolol, angina",p:"Patient M., 55 years old",d:"Exertional angina, BP 150/90, HR 88/min. No bronchial asthma or AV block.",g:"Prescribe 30 tablets of 0.005 g of a cardioselective beta-blocker.",n:["Bisoprololi","Bisoprololum"],x:[["Propranololi","Nonselective beta-blocker: because of the risk of bronchospasm and peripheral vasoconstriction from β2 blockade, it gives way to cardioselective agents in angina; it is taken several times a day."]],ds:"0.005",dk:"g",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Take 1 tablet once a day in the morning.",w:[["Stop the drug suddenly once the condition improves.","Abrupt withdrawal of a beta-blocker causes a “rebound syndrome”: risk of angina attacks and infarction. The dose is reduced gradually."]],nt:"On a beta-blocker, HR and BP are monitored: the goal is a resting HR of 55–60/min."},
+{id:"tamsu",tp:6,t:"Tamsulosin, prostatic hyperplasia",p:"Patient N., 64 years old",d:"Benign prostatic hyperplasia: difficulty urinating, urinates 3 times at night.",g:"Prescribe 30 tamsulosin capsules of 0.0004 g (in abbreviated form).",f:"Capsulas",n:["Tamsulosini","Tamsulosinum"],ds:"0.0004",dk:"g",tl:"N. 30",sb:"D.S.",r:"po",s:"Take 1 capsule once a day after breakfast (without chewing).",w:[["Chew the capsule.","Modified-release capsule: if chewed, the drug is absorbed all at once — risk of orthostatic hypotension and fainting."]],nt:"α1A-blocker. Dizziness is possible after the first dose: get up slowly."},
+/* 7 */
+{id:"halop",tp:7,t:"Haloperidol, psychomotor agitation",p:"Patient V., 29 years old",d:"Acute psychosis, psychomotor agitation, danger to self and others.",g:"Prescribe 10 ampoules of 1 mL of haloperidol 0.5% solution.",f:"Solutionis",n:["Haloperidoli","Haloperidolum"],ds:"0.5% — 1 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"Inject 1 mL intramuscularly (in psychomotor agitation).",w:[["If acute dystonia (torticollis, oculogyric crisis) appears, continue and increase the dose.","Acute dystonia is an extrapyramidal side effect of haloperidol: the neuroleptic dose is not increased, an M-cholinoceptor blocker (biperiden) is given."]],nt:"0.5% = 5 mg/mL. Haloperidol can prolong the QT interval: ECG monitoring."},
+{id:"diaztb",tp:7,t:"Diazepam, anxiety",p:"Patient L., 36 years old",d:"Severe anxiety before an exam, insomnia. Drinks alcohol, drives a car.",g:"Prescribe 20 diazepam tablets of 0.005 g.",n:["Diazepami","Diazepamum"],ds:"0.005",dk:"g",sb:"D.t.d. N. 20 in tabulettis",r:"po",s:"Take 1 tablet twice a day (for no more than 2 weeks); do not drink alcohol or drive during treatment.",w:[["Take 1 tablet twice a day for several months, alcohol need not be restricted.","With benzodiazepines taken longer than 2–4 weeks dependence develops; together with alcohol, CNS and respiratory depression increase."]],nt:"In benzodiazepine overdose the antidote is flumazenil."},
+{id:"diazamp",tp:7,t:"Diazepam, seizure",p:"Patient J., 22 years old, 65 kg",d:"Tonic-clonic seizure lasting more than 5 minutes, an intravenous catheter is in place.",g:"Prescribe 10 ampoules of 2 mL of diazepam 0.5% solution.",f:"Solutionis",n:["Diazepami","Diazepamum"],ds:"0.5% — 2 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"Inject 2 mL slowly intravenously (in seizures).",w:[["Inject 2 mL rapidly as an intravenous push.","Rapid injection causes respiratory center depression and apnea: give intravenously and slowly (≈5 mg/min), under respiratory monitoring."]],nt:"0.5% = 5 mg/mL, 2 mL = 10 mg."},
+/* 8 */
+{id:"amitr",tp:8,t:"Amitriptyline, depression",p:"Patient E., 45 years old",d:"Moderate depression, insomnia. No glaucoma, prostatic hyperplasia or conduction disorder.",g:"Prescribe 50 amitriptyline tablets of 0.025 g.",n:["Amitriptylini","Amitriptylinum"],ds:"0.025",dk:"g",sb:"D.t.d. N. 50 in tabulettis",r:"po",s:"Take 1 tablet in the evening, increase the dose gradually.",w:[["Take 1 tablet in the morning; stop if there is no effect in 3 days.","The antidepressant effect begins after 2–4 weeks; amitriptyline is a strong sedative — it is given in the evening."]],nt:"Tricyclic antidepressants are extremely dangerous in overdose (arrhythmia): the patient is not given a large supply."},
+{id:"sertr",tp:8,t:"Sertraline, depression",p:"Patient I., 33 years old",d:"Depressive episode, has heart disease (a tricyclic antidepressant is not recommended). Does not take another antidepressant.",g:"Prescribe 28 sertraline film-coated tablets of 0.05 g (in abbreviated form).",f:"Tabulettas",n:["Sertralini","Sertralinum"],ds:"0.05",dk:"g",tl:"obductas N. 28",sb:"D.S.",r:"po",s:"Take 1 tablet once a day in the morning after meals.",w:[["Take 1 tablet once a day together with an MAO inhibitor.","SSRIs and MAO inhibitors together — serotonin syndrome: hyperthermia, muscle rigidity, seizures, risk of death."]],nt:"The effect of SSRIs begins in 2–4 weeks; anxiety may increase in the first weeks."},
+{id:"coff",tp:8,t:"Caffeine, hypotension",p:"Patient G., 70 years old",d:"Arterial hypotension, weakness, drowsiness. No arrhythmia or glaucoma.",g:"Prescribe 10 ampoules of 1 mL of caffeine sodium benzoate 20% solution.",f:"Solutionis",n:["Coffeini-natrii benzoatis","Coffeinum-natrii benzoas"],ds:"20% — 1 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"Inject 1 mL subcutaneously 1–2 times a day (in hypotension).",w:[["Inject 1 mL in the evening before going to sleep.","Psychostimulant: given in the evening it causes insomnia. It is given in the first half of the day."]],nt:"Caffeine stimulates the CNS and raises vascular tone; contraindicated in arrhythmia, glaucoma and insomnia."},
+/* 9 */
+{id:"salb",tp:9,t:"Salbutamol aerosol",p:"Patient K., 24 years old",d:"Bronchial asthma, attacks of breathlessness 1–2 times a week. Receives an inhaled glucocorticoid as basic therapy.",g:"Prescribe a metered-dose salbutamol aerosol (100 mcg/dose, 200 doses).",f:"Aerosoli",n:["Salbutamoli","Salbutamolum"],ds:"0.0001/dosi — 200 dosi",sb:"D.S.",r:"inh",s:"Take 1–2 inhalations during an attack of breathlessness.",w:[["Even without an attack, take 2 inhalations 8 times a day regularly.","Regular and frequent use of a short-acting β2-agonist reduces receptor sensitivity and masks poor control of asthma; basic therapy is an inhaled glucocorticoid."]],nt:"Teaching inhaler technique is mandatory: with incorrect technique the drug does not reach the bronchi."},
+{id:"budneb",tp:9,t:"Budesonide, nebulizer",p:"Patient D., 4 years old",d:"Bronchial asthma, basic therapy is needed. Cannot use an inhaler with a spacer.",g:"Prescribe 20 units of budesonide suspension for a nebulizer (0.5 mg/mL, 2 mL).",f:"Suspensionis",n:["Budesonidi","Budesonidum"],ds:"pro inhalationibus 0.5 mg/ml — 2 ml",sb:"D.t.d. N. 20",sbw:["in tabulettis","This is a suspension for a nebulizer (2 mL nebules), not a tablet."],r:"inh",s:"Inhale 2 mL twice a day through a nebulizer (basic therapy in children); rinse the mouth after inhalation.",w:[["Inject 2 mL intravenously.","Nebulizer suspension is not injected intravenously: risk of particle embolism."]],nt:"After an inhaled glucocorticoid the mouth is rinsed: prevention of oral candidiasis."},
+{id:"predn",tp:9,t:"Prednisolone, asthma exacerbation",p:"Patient U., 41 years old",d:"Moderate exacerbation of bronchial asthma; inhaled bronchodilators gave insufficient effect.",g:"Prescribe 50 prednisolone tablets of 0.005 g (short course).",n:["Prednisoloni","Prednisolonum"],ds:"0.005",dk:"g",sb:"D.t.d. N. 50 in tabulettis",r:"po",s:"Take 8–10 tablets (40–50 mg) once a day in the morning for 5 days.",w:[["Take 8–10 tablets in the evening.","Glucocorticoids are given once in the morning, in line with the circadian rhythm: evening dosing suppresses the hypothalamic–pituitary–adrenal axis more and causes insomnia."]],nt:"A short course (5–7 days) can be stopped without tapering the dose; a long course is tapered gradually."},
+{id:"butam",tp:9,t:"Butamirate, dry cough",p:"Patient B., 35 years old",d:"After an acute respiratory infection: dry, tormenting cough, no sputum.",g:"Prescribe 200 mL of butamirate syrup (0.15%).",f:"Sirupi",n:["Butamirati","Butamiratum"],ds:"0.15% — 200 ml",dk:"%",sb:"D.S.",r:"po",s:"Take 15 mL three times a day before meals (in dry cough).",w:[["In cough with sputum take together with a mucolytic (acetylcysteine).","A centrally acting antitussive stops expectoration and the sputum accumulates in the bronchi: it is not given together with mucolytics."]],nt:"Antitussives are used only in dry, unproductive cough."},
+/* 10 */
+{id:"nitro",tp:10,t:"Nitroglycerin, angina attack",p:"Patient S., 62 years old",d:"Exertional angina. Does not take phosphodiesterase-5 inhibitors (sildenafil).",g:"Prescribe 40 nitroglycerin tablets of 0.0005 g.",n:["Nitroglycerini","Nitroglycerinum"],ds:"0.0005",dk:"g",sb:"D.t.d. N. 40 in tabulettis",r:"po",s:"In an angina attack place 1 tablet under the tongue; if it does not pass in 5 minutes repeat it and call an ambulance.",w:[["In an attack swallow 1 tablet with water.","When swallowed, nitroglycerin is almost completely broken down in the liver on first pass: it is placed under the tongue (acts in 1–2 minutes)."]],nt:"Nitrates and sildenafil together — severe hypotension. During an attack it is taken sitting down."},
+{id:"amiod",tp:10,t:"Amiodarone, arrhythmia",p:"Patient O., 68 years old",d:"Atrial fibrillation, heart failure. Amiodarone was chosen to maintain rhythm. Thyroid function is normal.",g:"Prescribe 30 amiodarone tablets of 0.2 g.",n:["Amiodaroni","Amiodaronum"],ds:"0.2",dk:"g",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Loading dose: 1 tablet three times a day for 1 week, then 1 tablet twice a day for 1 week, then 1 tablet a day.",w:[["Take 1 tablet three times a day for months.","If it is not reduced after the loading dose, amiodarone accumulates in the tissues and causes thyroid, lung and liver toxicity."]],nt:"The t½ of amiodarone is very long (40–55 days). Monitor thyroid, liver, lungs and eyes."},
+{id:"digtab",tp:10,t:"Digoxin, heart failure",p:"Patient R., 72 years old",d:"Permanent atrial fibrillation, HR 110/min, heart failure. Potassium 4.3 mmol/L, renal function is normal.",g:"Prescribe 30 digoxin tablets of 0.00025 g.",n:["Digoxini","Digoxinum"],ds:"0.00025",dk:"g",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Take 1/2–1 tablet once a day (with monitoring of pulse and potassium).",w:[["Take 2 tablets every day even if the pulse is below 50 or there is nausea.","Bradycardia, nausea, yellow-green color vision — signs of glycoside intoxication: stop the drug and consult a doctor."]],nt:"Digoxin has a narrow therapeutic index. Hypokalemia increases the risk of intoxication."},
+/* 11 */
+{id:"enal",tp:11,t:"Enalapril, hypertension",p:"Patient T., 54 years old",d:"Arterial hypertension, type 2 diabetes mellitus, microalbuminuria. Not pregnant, no history of angioedema.",g:"Prescribe 30 enalapril tablets of 0.01 g.",n:["Enalaprili","Enalaprilum"],ds:"0.01",dk:"g",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Take 1 tablet 1–2 times a day.",w:[["Continue even if the lips or tongue swell.","Angioedema is a reason to stop an ACE inhibitor at once: risk of airway obstruction."]],nt:"On ACE inhibitors, creatinine and potassium are monitored; a side effect is dry cough."},
+{id:"metdop",tp:11,t:"Hypertension in pregnancy",p:"Patient Z., 28 years old",d:"24 weeks of pregnancy, BP 150/95, no proteinuria.",g:"Prescribe 50 tablets of 0.25 g of an antihypertensive that is safe in pregnancy.",n:["Methyldopae","Methyldopa"],x:[["Enalaprili","ACE inhibitors are contraindicated in pregnancy: fetal kidney damage, oligohydramnios, risk of death."]],ds:"0.25",dk:"g",sb:"D.t.d. N. 50 in tabulettis",r:"po",s:"Take 1 tablet 2–3 times a day.",w:[["Stop the drug suddenly once BP normalizes.","Abrupt withdrawal of centrally acting agents leads to a rebound rise in BP: the dose is reduced gradually."]],nt:"In pregnancy methyldopa, nifedipine (extended-release) and labetalol are used; ACE inhibitors and sartans are not allowed."},
+{id:"capto",tp:11,t:"Captopril, sharp rise in BP",p:"Patient F., 61 years old",d:"Uncomplicated hypertensive crisis, BP 190/110, no signs of target organ damage.",g:"Prescribe 20 captopril tablets of 0.025 g.",n:["Captoprili","Captoprilum"],ds:"0.025",dk:"g",sb:"D.t.d. N. 20 in tabulettis",r:"po",s:"When BP rises sharply, take 1 tablet chewed or under the tongue.",w:[["When BP rises, swallow 4 tablets at once.","100 mg at once — risk of sharp hypotension and ischemia; in an uncomplicated crisis BP is not lowered by more than 25% in 1 hour."]],nt:"Captopril is a short-acting ACE inhibitor: long-acting ones are preferred for continuous treatment."},
+/* 12 */
+{id:"almag",tp:12,t:"Antacid suspension",p:"Patient H., 39 years old",d:"Functional dyspepsia, heartburn. Being treated with ciprofloxacin (cystitis).",g:"Prescribe 170 mL of “Almagel” suspension.",f:"Suspensionis",n:["“Almagel”"],ds:"170 ml",sb:"D.S.",r:"po",s:"Take 1–2 measuring spoons 1 hour after meals and at bedtime; 2 hours apart from other drugs; shake before use.",w:[["Take 1–2 measuring spoons together with ciprofloxacin.","Aluminum and magnesium chelate fluoroquinolones, tetracyclines and iron, sharply reducing their absorption: a 2-hour interval is needed."]],nt:"Antacids act only symptomatically; ulcer disease is treated with proton pump inhibitors."},
+{id:"metoc",tp:12,t:"Metoclopramide, vomiting",p:"Patient A., 48 years old",d:"Repeated vomiting after acute gastroenteritis. No intestinal obstruction or Parkinson's disease.",g:"Prescribe 5 ampoules of 2 mL of metoclopramide 0.5% solution.",f:"Solutionis",n:["Metoclopramidi","Metoclopramidum"],ds:"0.5% — 2 ml",dk:"%",sb:"D.t.d. N. 5 in ampullis",r:"inj",s:"Inject 2 mL intramuscularly or slowly intravenously, up to 3 times a day (no more than 5 days).",w:[["Inject 2 mL 3 times a day for a month.","Prolonged use raises the risk of extrapyramidal disorders and tardive dyskinesia: no more than 5 days."]],nt:"Metoclopramide is a D2 blocker: contraindicated in mechanical intestinal obstruction, bleeding and Parkinson's disease."},
+{id:"lactul",tp:12,t:"Lactulose, constipation",p:"Patient B., 67 years old",d:"Chronic constipation, moves little. No galactosemia.",g:"Prescribe 200 mL of lactulose syrup (66.7%).",f:"Sirupi",n:["Lactulosi","Lactulosum"],ds:"66.7% — 200 ml",dk:"%",sb:"D.S.",r:"po",s:"Take 15–30 mL once a day in the morning.",w:[["Take 200 mL at once.","Strong osmotic diarrhea, dehydration and electrolyte disturbance. The dose starts at 15–30 mL."]],nt:"Lactulose is an osmotic laxative; its effect begins in 1–2 days. It is also used in hepatic encephalopathy."},
+{id:"loper",tp:12,t:"Loperamide, diarrhea",p:"Patient D., 27 years old",d:"Traveler's diarrhea: watery diarrhea, no fever, no blood in the stool.",g:"Prescribe 10 loperamide hydrochloride capsules of 0.002 g (in abbreviated form).",f:"Capsulas",n:["Loperamidi hydrochloridi","Loperamidum hydrochloridum"],ds:"0.002",dk:"g",tl:"N. 10",sb:"D.S.",r:"po",s:"2 capsules after the first loose stool, then 1 capsule after each loose stool (no more than 8 a day).",w:[["Take 2 capsules after each loose stool, up to 16 a day.","More than 8 capsules a day (16 mg) — intestinal paralysis and cardiotoxicity (QT prolongation, arrhythmia)."]],nt:"Loperamide is not given in fever and bloody diarrhea (invasive infection)."},
+/* 13 */
+{id:"furamp",tp:13,t:"Furosemide, pulmonary edema",p:"Patient K., 70 years old",d:"Acute left ventricular failure, pulmonary edema: shortness of breath, moist rales in the lungs, BP 160/95.",g:"Prescribe 10 ampoules of 2 mL of furosemide 1% solution.",f:"Solutionis",n:["Furosemidi","Furosemidum"],ds:"1% — 2 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"Inject 2–4 mL slowly intravenously (in pulmonary edema).",w:[["Inject 40 mL (20 ampoules) at once as an intravenous push.","When 400 mg is given rapidly: ototoxicity (hearing loss), marked hypovolemia and hypokalemia."]],nt:"1% = 10 mg/mL, 2 mL = 20 mg. When given intravenously, the venodilating effect begins before diuresis."},
+{id:"furtab",tp:13,t:"Furosemide, chronic edema",p:"Patient L., 66 years old",d:"Chronic heart failure, leg edema. Potassium 4.0 mmol/L.",g:"Prescribe 30 furosemide tablets of 0.04 g.",n:["Furosemidi","Furosemidum"],ds:"0.04",dk:"g",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Take 1 tablet in the morning on an empty stomach (with monitoring of weight and potassium).",w:[["Take 1 tablet in the evening before going to sleep.","If a diuretic is taken in the evening, frequent urination at night (nocturia) disturbs sleep."]],nt:"Loop diuretics cause hypokalemia, hypomagnesemia and hyperuricemia."},
+{id:"spiro",tp:13,t:"Spironolactone, ascites",p:"Patient M., 57 years old",d:"Liver cirrhosis, ascites. Potassium 4.2 mmol/L, creatinine normal.",g:"Prescribe 30 spironolactone capsules of 0.1 g.",n:["Spironolactoni","Spironolactonum"],ds:"0.1",dk:"g",sb:"D.t.d. N. 30 in capsulis",r:"po",s:"Take 1 capsule once a day in the morning (in ascites due to liver cirrhosis).",w:[["Take together with potassium preparations (Asparkam), without monitoring potassium.","Potassium-sparing diuretic + potassium preparations — hyperkalemia, risk of cardiac arrest."]],nt:"Aldosterone antagonist. May cause gynecomastia in men."},
+/* 14 */
+{id:"aspir",tp:14,t:"Acetylsalicylic acid, antiplatelet",p:"Patient N., 60 years old",d:"Ischemic heart disease, 1 year after stenting. No history of stomach ulcer or bleeding.",g:"Prescribe 30 film-coated tablets of acetylsalicylic acid 0.1 g (in abbreviated form).",f:"Tabulettas",n:["Acidi acetylsalicylici","Acidum acetylsalicylicum"],ds:"0.1",dk:"g",tl:"obductas N. 30",sb:"D.S.",r:"po",s:"Take 1 tablet once a day after meals.",w:[["Take 1 tablet 3 times a day.","For the antiplatelet effect 75–100 mg once a day is enough (platelets are irreversibly inhibited for 7–10 days); increasing the dose only raises the risk of bleeding."]],nt:"Low-dose aspirin is antiplatelet; its high dose (1–3 g) is anti-inflammatory."},
+{id:"enox",tp:14,t:"Enoxaparin, thrombosis prophylaxis",p:"Patient O., 74 years old",d:"Femoral neck fracture, bed rest after surgery. Creatinine clearance 60 mL/min.",g:"Prescribe 10 prefilled syringes of enoxaparin sodium solution (0.04 g — 0.4 mL).",f:"Solutionis",n:["Enoxaparini natrii","Enoxaparinum natrium"],do:[["0.04 — 0.4 ml",1,"Correct: mass–volume form, 40 mg in 0.4 mL."],["0.4 — 0.4 ml",0,"0.4 g = 400 mg: 10 times more, risk of severe bleeding."],["4.0 — 0.4 ml",0,"4 g: 100 times more."]],sb:"D.t.d. N. 10 in syringis",r:"inj",s:"Inject 0.4 mL once a day under the skin of the abdomen (thrombosis prophylaxis).",w:[["Inject 0.4 mL intramuscularly.","An anticoagulant injected intramuscularly forms a large hematoma: subcutaneously only."]],nt:"Low-molecular-weight heparins accumulate in renal failure: at CrCl < 30 mL/min the dose is reduced."},
+{id:"warf",tp:14,t:"Warfarin, atrial fibrillation",p:"Patient P., 69 years old",d:"Atrial fibrillation, mitral stenosis (no mechanical valve prosthesis). A permanent anticoagulant is needed.",g:"Prescribe 100 warfarin tablets of 0.0025 g.",n:["Warfarini","Warfarinum"],ds:"0.0025",dk:"g",sb:"D.t.d. N. 100 in tabulettis",r:"po",s:"Take 2 tablets once a day in the evening at the same time; the next dose according to INR.",w:[["Take without INR monitoring; add ibuprofen for pain.","Together with NSAIDs the risk of bleeding rises sharply; the warfarin dose is chosen only by INR (goal 2.0–3.0)."]],nt:"Warfarin interacts with many drugs and with foods rich in vitamin K. The antidote is vitamin K."},
+/* 15 */
+{id:"glarg",tp:15,t:"Insulin glargine",p:"Patient Q., 50 years old",d:"Type 2 diabetes mellitus, HbA1c 9% on metformin. Basal insulin is being started.",g:"Prescribe 5 insulin glargine syringe pens (100 units/mL, 3 mL).",n:["Insulini glargini","Insulinum glarginum"],ds:"100 units/ml — 3 ml",sb:"D.t.d. N. 5 in calamis",r:"inj",s:"Once a day at the same time, 10 units subcutaneously; titrate the dose by the morning glucose.",w:[["Inject 10 units intravenously.","Glargine is given only subcutaneously: given intravenously the prolonged action is lost and there is a risk of severe hypoglycemia."]],nt:"Basal insulin is titrated by fasting morning glucose, by 2 units every 3 days."},
+{id:"levot",tp:15,t:"Levothyroxine, hypothyroidism",p:"Patient R., 45 years old",d:"Primary hypothyroidism, TSH 12 mIU/L. Also takes calcium and iron preparations.",g:"Prescribe 100 levothyroxine sodium tablets of 0.00005 g.",n:["Levothyroxini natrii","Levothyroxinum natrium"],ds:"0.00005",dk:"g",sb:"D.t.d. N. 100 in tabulettis",r:"po",s:"Take 1 tablet once a day in the morning, 30–60 minutes before breakfast.",w:[["Take 1 tablet with dinner, together with calcium and iron preparations.","Food, calcium and iron reduce levothyroxine absorption: take on an empty stomach and 4 hours apart from them."]],nt:"The dose is adjusted by TSH after 6–8 weeks. In the elderly and in heart disease, start with a small dose."},
+{id:"metf",tp:15,t:"Metformin, diabetes mellitus",p:"Patient S., 52 years old",d:"Newly diagnosed type 2 diabetes mellitus, obesity. Creatinine clearance 80 mL/min.",g:"Prescribe 60 metformin hydrochloride film-coated tablets of 0.5 g.",n:["Metformini hydrochloridi","Metforminum hydrochloridum"],ds:"0.5",dk:"g",sb:"D.t.d. N. 60 in tabulettis obductis",r:"po",s:"Take 1 tablet once a day with dinner, increasing by 1 tablet every week, up to 2 g a day.",w:[["From the very first day take 4 tablets (2 g) at once.","The dose is increased gradually: a large dose at once sharply increases gastrointestinal side effects (diarrhea, nausea)."]],nt:"At CrCl < 30 mL/min metformin is contraindicated (risk of lactic acidosis); it is temporarily stopped before iodinated contrast."},
+{id:"ibusus",tp:15,t:"Ibuprofen, suspension for a child",p:"Patient T., 3 years old, 14 kg",d:"Acute respiratory infection, temperature 39.2 °C. No signs of dehydration, drinking fluids well.",g:"Prescribe 100 mL of ibuprofen suspension (100 mg/5 mL).",f:"Suspensionis",n:["Ibuprofeni","Ibuprofenum"],ds:"100 mg/5 ml — 100 ml",sb:"D.S.",r:"po",s:"Shake before use. Take 7 mL (140 mg ≈ 10 mg/kg) when the temperature is above 38.5 °C, up to 3 times a day.",w:[["Shake before use. Take 7 mL every 2 hours.","Every 2 hours means 84 mL a day ≈ 120 mg/kg: several times the maximum daily dose (30–40 mg/kg). The interval is at least 6–8 hours."]],nt:"In a dehydrated child NSAIDs increase the risk of acute kidney injury."},
+{id:"gluc",tp:15,t:"Glucose 40%, hypoglycemic coma",p:"Patient U., 58 years old",d:"Took insulin, did not eat: unconscious, sweating, glucometer reads 1.9 mmol/L. A vein is accessible.",g:"Prescribe 10 ampoules of 20 mL of glucose 40% solution.",f:"Solutionis",n:["Glucosi","Glucosum"],ds:"40% — 20 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"20–40 mL as an intravenous push (in hypoglycemic coma).",w:[["Inject 20 mL intramuscularly.","Hypertonic glucose is not given intramuscularly (necrosis, slow absorption). If a vein cannot be found — glucagon 1 mg intramuscularly."]],nt:"40% = 400 mg/mL: 20 mL contains 8 g of glucose."},
+/* 16 */
+{id:"cipro",tp:16,t:"Ciprofloxacin, pyelonephritis",p:"Patient V., 40 years old",d:"Uncomplicated acute pyelonephritis, not pregnant. Drinks milk every day and takes an antacid.",g:"Prescribe 14 ciprofloxacin film-coated tablets of 0.5 g.",n:["Ciprofloxacini","Ciprofloxacinum"],ds:"0.5",dk:"g",sb:"D.t.d. N. 14 in tabulettis obductis",r:"po",s:"Take 1 tablet twice a day for 7 days, 2 hours before dairy products and antacids.",w:[["Take 1 tablet twice a day with milk and together with an antacid.","Calcium, magnesium and aluminum chelate fluoroquinolones, reducing their absorption 2–3 fold."]],nt:"Fluoroquinolones are not used in pregnancy, lactation and under 18 years (without indications); risk of tendinitis."},
+{id:"metro",tp:16,t:"Metronidazole",p:"Patient X., 31 years old",d:"Trichomoniasis (the sexual partner is also being treated). Not pregnant. Drinks alcohol on weekends.",g:"Prescribe 14 metronidazole tablets of 0.5 g.",n:["Metronidazoli","Metronidazolum"],ds:"0.5",dk:"g",sb:"D.t.d. N. 14 in tabulettis",r:"po",s:"Take 1 tablet twice a day for 7 days; do not drink alcohol during treatment and for 3 days after.",w:[["Take 1 tablet twice a day for 7 days, alcoholic drinks need not be restricted.","Metronidazole with alcohol causes a disulfiram-like reaction: flushing, nausea, tachycardia, hypotension."]],nt:"Metronidazole acts on anaerobes and protozoa; it gives a metallic taste in the mouth."},
+{id:"sulfac",tp:16,t:"Sulfacetamide eye drops",p:"Patient Y., 19 years old",d:"Acute bacterial conjunctivitis: red eye, purulent discharge. No allergy to sulfonamides.",g:"Prescribe 10 mL of sulfacetamide sodium 20% solution.",f:"Solutionis",n:["Sulfacetamidi natrii","Sulfacetamidum natrium"],ds:"20% — 10 ml",dk:"%",sb:"D.S.",r:"eye",s:"Instill 1–2 drops into each eye 4–6 times a day.",w:[["Take 20 drops three times a day by mouth.","These are eye drops: not for drinking."]],nt:"When instilling eye drops the dropper must not touch the eye: contamination of the bottle."},
+/* 17 */
+{id:"benpen",tp:17,t:"Benzylpenicillin",p:"Patient Z., 25 years old",d:"Streptococcal phlegmon, in hospital. No allergy to penicillin (history checked).",g:"Prescribe 30 vials of benzylpenicillin sodium salt of 1,000,000 units.",n:["Benzylpenicillini-natrii","Benzylpenicillinum-natrium"],ds:"1,000,000 units",sb:"D.t.d. N. 30",r:"inj",s:"Dissolve the contents of the vial in 2 mL of water for injection and inject 1 million units intramuscularly every 4 hours.",w:[["Dissolve the contents of the vial in 2 mL of water for injection and inject intramuscularly once a day.","The t½ of benzylpenicillin is ~30 minutes: it is given every 4 hours to maintain a therapeutic concentration."]],nt:"A separate prescription is written for the solvent: # Rp.: Aquae pro injectionibus 2 ml / D.t.d. N. 30 in ampullis."},
+{id:"azitr",tp:17,t:"Azithromycin",p:"Patient A., 36 years old",d:"Community-acquired pneumonia, mild course; has a penicillin allergy. QT is not prolonged.",g:"Prescribe 3 azithromycin film-coated tablets of 0.5 g.",n:["Azithromycini","Azithromycinum"],ds:"0.5",dk:"g",sb:"D.t.d. N. 3 in tabulettis obductis",r:"po",s:"Take 1 tablet once a day for 3 days.",w:[["Take 1 tablet three times a day for 10 days.","Azithromycin accumulates in the tissues (t½ ~68 hours): a 3-day course gives 7–10 days of effect; an excess dose risks QT prolongation and hepatotoxicity."]],nt:"Macrolides prolong the QT interval: caution with other QT-prolonging drugs."},
+{id:"doxy",tp:17,t:"Doxycycline",p:"Patient B., 30 years old",d:"Brucellosis (laboratory-confirmed), not pregnant.",g:"Prescribe 14 doxycycline capsules of 0.1 g (in abbreviated form).",f:"Capsulas",n:["Doxycyclini","Doxycyclinum"],ds:"0.1",dk:"g",tl:"N. 14",sb:"D.S.",r:"po",s:"Take 1 capsule twice a day with plenty of water, upright; avoid the sun.",w:[["Take 1 capsule in the evening before lying down, with a little water.","A capsule that stays in the esophagus causes erosive esophagitis: take with plenty of water and do not lie down for 30 minutes."]],nt:"Tetracyclines are not given to children under 8 years and to pregnant women (they accumulate in teeth and bone)."},
+{id:"gentam",tp:17,t:"Gentamicin in ampoules",p:"Patient D., 45 years old, 70 kg",d:"Gram-negative sepsis (in hospital), together with another antibiotic. Creatinine is normal.",g:"Prescribe 10 ampoules of 2 mL of gentamicin sulfate 4% solution.",f:"Solutionis",n:["Gentamicini sulfatis","Gentamicinum sulfas"],ds:"4% — 2 ml",dk:"%",sb:"D.t.d. N. 10 in ampullis",r:"inj",s:"5 mg/kg once a day intravenously or intramuscularly (with monitoring of renal function).",w:[["Inject together with furosemide, without renal monitoring, for 3 weeks.","Aminoglycoside + loop diuretic — ototoxicity and nephrotoxicity increase; the course usually does not exceed 7 days, creatinine is monitored."]],nt:"4% = 40 mg/mL, 2 mL = 80 mg. Not absorbed when taken by mouth."},
+/* 18 */
+{id:"isoni",tp:18,t:"Isoniazid, tuberculosis",p:"Patient E., 33 years old, 60 kg",d:"Pulmonary tuberculosis, newly diagnosed, drug-susceptible. Does not drink alcohol.",g:"Prescribe 30 isoniazid tablets of 0.3 g.",n:["Isoniazidi","Isoniazidum"],ds:"0.3",dk:"g",sb:"D.t.d. N. 30 in tabulettis",r:"po",s:"Take 1 tablet once a day in the morning on an empty stomach, together with pyridoxine.",w:[["Take 1 tablet once a day without pyridoxine.","Isoniazid is a vitamin B6 antagonist: without pyridoxine peripheral neuropathy develops."]],nt:"Tuberculosis is treated only with combinations (to prevent resistance); monitor for hepatotoxicity."},
+{id:"rifam",tp:18,t:"Rifampin",p:"Patient F., 28 years old, 60 kg",d:"Pulmonary tuberculosis, intensive phase. Takes combined oral contraceptives.",g:"Prescribe 60 rifampin capsules of 0.15 g (in abbreviated form).",f:"Capsulas",n:["Rifampicini","Rifampicinum"],ds:"0.15",dk:"g",tl:"N. 60",sb:"D.S.",r:"po",s:"Take 4 capsules (600 mg) once a day 1 hour before meals; urine may turn red; use an additional contraception method.",w:[["Take 4 capsules once a day with food; the contraceptive gives adequate protection.","Food reduces rifampin absorption. Rifampin is a strong CYP inducer: it lowers the effect of oral contraceptives."]],nt:"Rifampin lowers the concentration of many drugs (warfarin, contraceptives, antiretrovirals)."},
+{id:"acicr",tp:18,t:"Acyclovir cream, herpes labialis",p:"Patient G., 26 years old",d:"Recurrent herpes labialis: burning and itching at the edge of the lip have begun (prodrome), blisters are just appearing.",g:"Prescribe 5.0 g of acyclovir 5% cream.",f:"Cremoris",n:["Acicloviri","Aciclovirum"],ds:"5% — 5.0",dk:"%",sb:"D.S.",r:"top",s:"Apply to the blisters on the lip 5 times a day, starting from the first signs.",w:[["Apply once a day after the blisters have burst and crusted over.","Viral replication peaks in the first 24–48 hours: late and infrequent use is ineffective."]],nt:"Wash hands after applying the cream: prevents infection from reaching the eye."},
+{id:"oselt",tp:18,t:"Oseltamivir, influenza",p:"Patient H., 67 years old",d:"Influenza, symptoms began 24 hours ago; high risk of complications because of age and diabetes mellitus.",g:"Prescribe 10 oseltamivir capsules of 0.075 g (in abbreviated form).",f:"Capsulas",n:["Oseltamiviri","Oseltamivirum"],ds:"0.075",dk:"g",tl:"N. 10",sb:"D.S.",r:"po",s:"Take 1 capsule twice a day for 5 days.",w:[["Take 1 capsule once a day for 5 days.","Once a day is the prophylactic dose. The treatment dose is 75 mg twice a day; it is effective if started within 48 hours of symptom onset."]],nt:"Neuraminidase inhibitor. The dose is reduced in renal failure."}
+];
+RXB.forEach(c=>RX.push(mkRx(c)));
+RX.sort((a,b)=>a.tp-b.tp);
+
+/* Qo'shimcha "Xatoni toping" */
+ER.push(
+{t:"Epinephrine in anaphylaxis",fix:"Rp.: Solutionis Epinephrini hydrochloridi 0.1% — 1 ml\nD.t.d. N. 10 in ampullis\nS. In anaphylaxis inject 0.5 mL into the thigh muscle.",
+ L:[[["Rp.:",0],["Solutionis",0],["Epinephrini hydrochloridi",0],["0.1% — 1 ml",0]],[["D.t.d. N. 10 in ampullis",0]],[["S.",0],["In anaphylaxis",0],["1 mL as an intravenous push",'In anaphylaxis epinephrine is given 0.5 mg into the thigh muscle; giving 1 mg undiluted as an intravenous push is extremely dangerous (ventricular fibrillation).'],["to be injected.",0]]]},
+{t:"Nitroglycerin in an angina attack",fix:"Rp.: Nitroglycerini 0.0005\nD.t.d. N. 40 in tabulettis\nS. In an attack place 1 tablet under the tongue.",
+ L:[[["Rp.:",0],["Nitroglycerinum",'Genitive case: Nitroglycerini.'],["0.0005",0]],[["D.t.d. N. 40 in tabulettis",0]],[["S.",0],["In an attack, 1 tablet",0],["to be swallowed with water.",'Swallowed nitroglycerin is broken down in the liver: it is placed under the tongue.']]]},
+{t:"Warfarin",fix:"Rp.: Warfarini 0.0025\nD.t.d. N. 100 in tabulettis\nS. 2 tablets once a day in the evening; the next dose according to INR.",
+ L:[[["Rp.:",0],["Warfarini",0],["0.025",'0.025 g = 25 mg: 10 times more (a tablet is 2.5 mg = 0.0025).']],[["D.t.d. N. 100 in tabulettis",0]],[["S.",0],["2 tablets once a day in the evening;",0],["to be taken together with ibuprofen for pain.",'NSAIDs together with warfarin sharply raise the risk of bleeding.']]]},
+{t:"Insulin glargine",fix:"Rp.: Insulini glargini 100 units/ml — 3 ml\nD.t.d. N. 5 in calamis\nS. Once a day at the same time, 10 units subcutaneously.",
+ L:[[["Rp.:",0],["Insulini glargini",0],["100 units/ml — 3 ml",0]],[["D.t.d. N. 5",0],["in ampullis",'Insulin in syringe pens: in calamis.']],[["S.",0],["Once a day, 10 units",0],["intravenously",'Glargine is given only subcutaneously.'],["to be injected.",0]]]},
+{t:"Metronidazole",fix:"Rp.: Metronidazoli 0.5\nD.t.d. N. 14 in tabulettis\nS. 1 tablet twice a day for 7 days; no alcohol during treatment and for 3 days after.",
+ L:[[["Rp.:",0],["Metronidazoli",0],["0.5",0]],[["D.t.d. N. 14 in tabulettis",0]],[["S.",0],["1 tablet twice a day for 7 days;",0],["beer may be drunk during treatment.",'Metronidazole with alcohol causes a disulfiram-like reaction: alcoholic drinks are forbidden.']]]},
+{t:"Prednisolone",fix:"Rp.: Prednisoloni 0.005\nD.t.d. N. 50 in tabulettis\nS. Take 8 tablets once a day in the morning for 5 days.",
+ L:[[["Rp.:",0],["Prednisoloni",0],["0.005",0]],[["D.t.d. N. 50",0],["in capsulis",'Prednisolone comes as tablets: in tabulettis.']],[["S.",0],["8 tablets once a day",0],["in the evening",'Glucocorticoids are given in the morning, in line with the circadian rhythm.'],["to be taken for 5 days.",0]]]},
+{t:"Ciprofloxacin",fix:"Rp.: Ciprofloxacini 0.5\nD.t.d. N. 14 in tabulettis obductis\nS. 1 tablet twice a day for 7 days, taken 2 hours before dairy products.",
+ L:[[["Rp.:",0],["Ciprofloxacini",0],["0.5",0]],[["D.t.d. N. 14 in tabulettis obductis",0]],[["S.",0],["1 tablet twice a day for 7 days,",0],["to be taken with milk.",'Calcium reduces fluoroquinolone absorption 2–3 fold: keep 2 hours apart from dairy products.']]]},
+{t:"Levothyroxine",fix:"Rp.: Levothyroxini natrii 0.00005\nD.t.d. N. 100 in tabulettis\nS. 1 tablet in the morning, 30–60 minutes before breakfast.",
+ L:[[["Rp.:",0],["Levothyroxini natrii",0],["0.05",'0.05 g = 50 mg — a thousand times more! 50 mcg = 0.00005 g.']],[["D.t.d. N. 100 in tabulettis",0]],[["S.",0],["1 tablet",0],["to be taken with dinner.",'Food reduces absorption: in the morning, 30–60 minutes before breakfast.']]]}
+);
+
+/* Qo'shimcha hisob-kitob */
+HS.push(
+ {q:"How many mL of 0.1% epinephrine solution are needed to give 0.5 mg?",a:.5,tol:.001,u:"mL",s:["0.1% = 1 mg/mL","0.5 mg / 1 mg/mL = 0.5 mL"]},
+ {q:"How many mg of gentamicin are in a 4% — 2 mL ampoule of gentamicin sulfate?",a:80,tol:.01,u:"mg",s:["4% = 40 mg/mL","40 × 2 = 80 mg"]},
+ {q:"Heparin 5000 units/mL. Patient 75 kg, bolus 80 units/kg. How many mL of heparin are given?",a:1.2,tol:.001,u:"mL",s:["Dose: 80 × 75 = 6000 units","Volume: 6000 / 5000 = 1.2 mL"]},
+ {q:"The maximum dose of lidocaine without epinephrine is 4.5 mg/kg. Patient 60 kg. At most how many mL of 1% solution can be given?",a:27,tol:.01,u:"mL",s:["Maximum dose: 4.5 × 60 = 270 mg","1% = 10 mg/mL → 270 / 10 = 27 mL"]},
+ {q:"Ibuprofen suspension 100 mg/5 mL. Child 14 kg, single dose 10 mg/kg. How many mL?",a:7,tol:.01,u:"mL",s:["Dose: 10 × 14 = 140 mg","Concentration 20 mg/mL → 140 / 20 = 7 mL"]},
+ {q:"Enoxaparin 0.04 g — 0.4 mL. How many mg of enoxaparin are in 1 mL?",a:100,tol:.01,u:"mg",s:["0.04 g = 40 mg in 0.4 mL","40 / 0.4 = 100 mg/mL"]}
+);
+
+/* ===================== INTERFEYS ===================== */
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem("tq:farm:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("tq:farm:"+k,JSON.stringify(v))}catch(e){}}};
+function hsh(s){let h=2166136261;for(const c of s)h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0}
+function shuffled(arr,seed){const a=arr.map((x,i)=>[x,i]);let s=seed||1;for(let i=a.length-1;i>0;i--){s=(Math.imul(s,1103515245)+12345)>>>0;const j=s%(i+1);[a[i],a[j]]=[a[j],a[i]]}return a}
+const today=(()=>{const d=new Date();return String(d.getDate()).padStart(2,"0")+"."+String(d.getMonth()+1).padStart(2,"0")+"."+d.getFullYear()})();
+const CSSV=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+/* ---------- Retsept blankasi ---------- */
+function blankHTML(o){
+  const z=(id,h)=>o.zones?`<div class="zone mk" data-z="${id}">${h}</div>`:h;
+  return `<div class="blank${o.cls?" "+o.cls:""}">
+    <div class="bl-head">${z("shtamp",`<div class="bl-shtamp"><b>Medical institution</b>stamp and code</div>`)}
+      <div class="bl-title">Prescription form<b>Prescription</b><span style="text-transform:none;letter-spacing:0">sample</span></div></div>
+    ${z("sana",`<div class="bl-f"><span>Date:</span><i>${esc(o.date||today)}</i></div>`)}
+    ${z("bemor",`<div class="bl-f"><span>Patient's full name, age:</span><i>${esc(o.pat||"")}</i></div>`)}
+    ${z("shifokor",`<div class="bl-f"><span>Physician's full name:</span><i>${esc(o.doc||"Karimov A.B.")}</i></div>`)}
+    <div class="bl-rx">${o.rx||""}</div>
+    <div class="bl-foot">${z("imzo",`<div style="display:flex;gap:12px;align-items:flex-end"><div><div class="bl-sign">${o.sign===0?"":"A. Karimov"}</div><div>Physician's signature and personal seal</div></div><div class="bl-seal">PHYSICIAN<br>SEAL<br>№ 0000</div></div>`)}
+      <div class="bl-valid">The prescription validity period is stated</div></div>
+  </div>`;
+}
+
+/* ---------- 01 Tuzilish ---------- */
+(function(){
+  const rx=`<div class="bl-line"><span class="zone mk" data-z="rp">Rp.:</span> <span class="zone mk" data-z="dori">Omeprazoli 0.02</span></div>
+    <div class="bl-line"><span class="zone mk" data-z="sub">D.t.d. N. 28 in capsulis</span></div>
+    <div class="bl-line"><span class="zone mk" data-z="sign">S. Take 1 capsule twice a day, 30 minutes before meals, for 14 days.</span></div>`;
+  const host=$("#anatBlank");
+  host.innerHTML=blankHTML({zones:1,pat:"Aliyev B.S., 45 years old",rx});
+  for(const p of PARTS){const z=$(`[data-z="${p.z}"]`,host);if(!z)continue;
+    const b=document.createElement("button");b.type="button";b.className="pin";b.textContent=p.n;b.dataset.n=p.n;b.setAttribute("aria-label",`${p.n}. ${p.lat}`);
+    z.prepend(b)}
+  const info=$("#partInfo");
+  function sel(n){const p=PARTS.find(x=>x.n==n);
+    $$(".zone",host).forEach(z=>z.classList.toggle("hl",z.dataset.z===p.z));
+    $$(".pin",host).forEach(b=>b.setAttribute("aria-pressed",b.dataset.n==n));
+    info.innerHTML=`<span class="eyebrow" style="color:var(--muted)">Part ${p.n}</span><h3>${esc(p.uz)} <span class="lang ${p.lang==="lat"?"lat":"uz"}">${p.lang==="lat"?"in Latin":"in the national language"}</span></h3>
+      <div class="part-lat">${esc(p.lat)}</div><p>${esc(p.t)}</p>
+      <div class="part-list">${PARTS.map(q=>`<button type="button" data-n="${q.n}" aria-pressed="${q.n==n}"><span class="n">${q.n}</span><span>${esc(q.lat)} — ${esc(q.uz)}</span></button>`).join("")}</div>
+      <p class="muted" style="font-size:.85rem">Initial letters to help you remember: I-D-N-N-I-D-S-S-S.</p>`;
+    $$(".part-list button",info).forEach(b=>b.onclick=()=>sel(b.dataset.n));
+  }
+  host.addEventListener("click",e=>{const b=e.target.closest(".pin");if(b)sel(b.dataset.n);else{const z=e.target.closest(".zone");if(z){const p=PARTS.find(x=>x.z===z.dataset.z);if(p)sel(p.n)}}});
+  sel(5);
+})();
+
+/* ---------- 02 Retsept yozish ---------- */
+const RXS={i:store.get("rxI",0),pick:{},checked:false,done:store.get("rxDone",{})};
+const PERSON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>';
+const SUR={A:"Aliyev",B:"Boboyeva",V:"Valiyev",G:"G‘ofurov",D:"Davronova",E:"Ergashev",J:"Jo‘rayev",Z:"Zokirova",I:"Ismoilov",K:"Karimova",L:"Latipov"};
+function patName(s){const m=/^Bemor\s+(\S)\.,\s*(.*)$/.exec(s);return m?`${SUR[m[1]]||m[1]} ${m[1]}., ${m[2]}`:s}
+function rxSlots(t){const out=[];t.lines.forEach((ln,li)=>ln.p.forEach((x,pi)=>{if(typeof x!=="string")out.push({...x,id:li+"_"+pi})}));return out}
+function rxLineHTML(t,res){
+  return t.lines.map((ln,li)=>{
+    const parts=ln.p.map((x,pi)=>{
+      if(typeof x==="string")return esc(x);
+      const id=li+"_"+pi,v=RXS.pick[id];
+      if(v==null)return `<span class="gap" aria-label="not selected"></span>`;
+      const cls=res?(x.o[v][1]?" good":" bad"):"";
+      return `<span class="tk${cls}">${esc(x.o[v][0])}</span>`;
+    });
+    let s=parts.join(" ");
+    if(ln.q==="sign")s="S. "+s;
+    return `<div class="bl-line">${s}</div>`;
+  }).join("");
+}
+function rxRender(){
+  const t=RX[RXS.i],slots=rxSlots(t),res=RXS.checked;
+  $("#rxSel").value=RXS.i;
+  const nd=Object.keys(RXS.done).filter(k=>RXS.done[k]).length;
+  $("#rxScore").textContent=`Written correctly: ${nd} / ${RX.length}`;
+  $("#rxTask").innerHTML=`<div class="rx-mini" aria-hidden="true"><span class="mono">Prescription:</span>${rxLineHTML(t,res)}</div><div class="pt-card"><div class="who"><span class="avatar">${PERSON}</span><div><b>${esc(t.pt.n)}</b><div class="muted" style="font-size:.88rem">Topic ${t.tp} · ${esc(TOPICS[t.tp])}</div></div></div><p>${esc(t.pt.d)}</p></div>
+    <div class="task-goal"><b>Task.</b> ${esc(t.goal)}</div>
+    ${slots.map((s,si)=>{
+      const v=RXS.pick[s.id],opts=shuffled(s.o,hsh(t.id+s.id));
+      const st=res?(v!=null&&s.o[v][1]?'<span class="st ok" style="color:var(--good)">✓ correct</span>':'<span class="st" style="color:var(--bad)">✗ wrong</span>'):"";
+      let why="";
+      if(res){const ci=s.o.findIndex(o=>o[1]);
+        if(v!=null)why+=`<div class="why ${s.o[v][1]?"ok":"no"}">${esc(s.o[v][2])}</div>`;else why+=`<div class="why no">No option selected.</div>`;
+        if(v==null||!s.o[v][1]){const ex=s.o[ci][2].replace(/^Correct[.:]?\s*/,""),exc=ex?ex[0].toUpperCase()+ex.slice(1):"";why+=`<div class="why ok"><b>Correct option:</b> “${esc(s.o[ci][0])}”${/[.!]$/.test(s.o[ci][0])?"":"."} ${esc(exc)}</div>`}}
+      return `<div class="slot"><div class="lbl">${si+1}. ${esc(s.l)} ${st}</div><div class="chips">${opts.map(([o,oi])=>{
+        let c="ch"+(s.long?" long":"");if(res){if(oi===v)c+=o[1]?" right":" wrong";else if(o[1])c+=" missed"}
+        return `<button type="button" class="${c}" data-s="${s.id}" data-o="${oi}" aria-pressed="${oi===v}"${res?" disabled":""}>${esc(o[0])}</button>`}).join("")}</div>${why}</div>`}).join("")}`;
+  $("#rxBlank").innerHTML=blankHTML({pat:patName(t.pt.n),rx:rxLineHTML(t,res)});
+  $$("#rxTask .ch").forEach(b=>b.onclick=()=>{RXS.pick[b.dataset.s]=+b.dataset.o;rxRender()});
+  if(!res)$("#rxFb").innerHTML="";
+}
+function rxCheck(){
+  const t=RX[RXS.i],slots=rxSlots(t);RXS.checked=true;
+  const bad=slots.filter(s=>RXS.pick[s.id]==null||!s.o[RXS.pick[s.id]][1]).length;
+  if(bad===0){RXS.done[t.id]=1;store.set("rxDone",RXS.done)}
+  const full=t.lines.map(ln=>{let s=ln.p.map(x=>typeof x==="string"?x:x.o.find(o=>o[1])[0]).join(" ");return ln.q==="sign"?"S. "+s:s}).join("\n");
+  rxRender();
+  $("#rxFb").innerHTML=`<div class="fb ${bad?"no":"ok"}">${bad?`Out of ${slots.length} parts, ${bad} contain errors. The reason for each error is written under the choices.`:"The prescription was written completely correctly."}</div>
+    <div class="final" style="margin-top:8px">${esc(full)}</div>${t.note?`<div class="note" style="margin-top:8px"><b>Note</b>${esc(t.note)}</div>`:""}`;
+}
+(function(){
+  $("#rxSel").innerHTML=Object.keys(TOPICS).map(tp=>{const its=RX.map((t,i)=>[t,i]).filter(([t])=>t.tp==tp);return its.length?`<optgroup label="Topic ${tp}. ${esc(TOPICS[tp])}">${its.map(([t,i])=>`<option value="${i}">${i+1}. ${esc(t.title)}</option>`).join("")}</optgroup>`:""}).join("");
+  $("#rxSel").onchange=e=>{RXS.i=+e.target.value;RXS.pick={};RXS.checked=false;store.set("rxI",RXS.i);rxRender()};
+  $("#rxCheck").onclick=rxCheck;
+  $("#rxReset").onclick=()=>{RXS.pick={};RXS.checked=false;rxRender()};
+  $("#rxNext").onclick=()=>{RXS.i=(RXS.i+1)%RX.length;RXS.pick={};RXS.checked=false;store.set("rxI",RXS.i);rxRender();$("#yozish").scrollIntoView({block:"start"})};
+  if(RXS.i>=RX.length)RXS.i=0;rxRender();
+})();
+
+/* ---------- 03 Xatoni toping ---------- */
+const ERS={i:0,mk:new Set(),checked:false,ok:store.get("erOk",{})};
+function erRender(){
+  const e=ER[ERS.i],res=ERS.checked;
+  const rx=e.L.map((ln,li)=>`<div class="bl-line">${ln.map((tk,ti)=>{const id=li+"_"+ti;let c="tk";
+    if(res){if(tk[1]&&ERS.mk.has(id))c+=" hit";else if(tk[1])c+=" miss";else if(ERS.mk.has(id))c+=" fp"}else if(ERS.mk.has(id))c+=" mk1";
+    return `<span class="${c}" role="button" tabindex="0" data-id="${id}" aria-pressed="${ERS.mk.has(id)}">${esc(tk[0])}</span>`}).join(" ")}</div>`).join("");
+  $("#erBlank").innerHTML=blankHTML({cls:"er",pat:"Sample prescription",rx});
+  const ne=e.L.flat().filter(t=>t[1]).length;
+  $("#erQ").innerHTML=`<div class="qn">Prescription ${ERS.i+1} / ${ER.length}</div><p class="t">${esc(e.t)}</p><p class="muted" style="font-size:.9rem">This prescription contains ${ne} error(s). Tap the erroneous parts on the form.</p><p class="mono" style="font-size:.85rem">Marked: ${ERS.mk.size}</p>`;
+  $("#erScore").textContent=`Fully found: ${Object.keys(ERS.ok).length} / ${ER.length}`;
+  if(!res){$("#erFb").innerHTML="";
+    $$("#erBlank .tk").forEach(s=>{const tg=()=>{ERS.mk.has(s.dataset.id)?ERS.mk.delete(s.dataset.id):ERS.mk.add(s.dataset.id);erRender()};s.onclick=tg;s.onkeydown=ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();tg()}}})}
+}
+function erCheck(){
+  const e=ER[ERS.i];ERS.checked=true;let hit=0,miss=0,fp=0;const lines=[];
+  e.L.forEach((ln,li)=>ln.forEach((tk,ti)=>{const id=li+"_"+ti,m=ERS.mk.has(id);
+    if(tk[1]){if(m){hit++;lines.push(`<div class="ok">✓ “${esc(tk[0])}” — ${esc(tk[1])}</div>`)}else{miss++;lines.push(`<div class="no">○ Not found: “${esc(tk[0])}” — ${esc(tk[1])}</div>`)}}
+    else if(m){fp++;lines.push(`<div class="no">✗ “${esc(tk[0])}” is written correctly, this is not an error.</div>`)}}));
+  if(!miss&&!fp){ERS.ok[ERS.i]=1;store.set("erOk",ERS.ok)}
+  erRender();
+  $("#erFb").innerHTML=`<div class="fb ${miss||fp?"no":"ok"}">${miss||fp?`Found: ${hit}, not found: ${miss}, extra marked: ${fp}.`:"All errors were found correctly."}</div><div class="fb-list" style="margin-top:8px;font-size:.92rem">${lines.join("")}</div><p class="muted" style="font-size:.82rem;margin-top:8px">Correct way to write it:</p><div class="final">${esc(e.fix)}</div>`;
+}
+$("#erCheck").onclick=()=>{if(!ERS.checked)erCheck()};
+$("#erNext").onclick=()=>{ERS.i=(ERS.i+1)%ER.length;ERS.mk=new Set();ERS.checked=false;erRender()};
+erRender();
+
+/* ---------- 04 Hisob ---------- */
+const HSS={i:0,ok:store.get("hsOk",{})};
+function hsRender(){
+  const h=HS[HSS.i];
+  $("#hsQ").innerHTML=`<div class="qn">Problem ${HSS.i+1} / ${HS.length} · solved: <span id="hsN">${Object.keys(HSS.ok).length}</span></div><p class="t">${esc(h.q)}</p>
+   <div class="num-in"><input id="hsIn" inputmode="decimal" autocomplete="off" aria-label="Answer"><span class="mono">${esc(h.u)}</span><button class="btn pri" id="hsChk" type="button">Check</button><button class="btn" id="hsNx" type="button">Next →</button></div><div id="hsFb" aria-live="polite"></div>`;
+  const inp=$("#hsIn");
+  const chk=()=>{const v=parseFloat(inp.value.replace(/\s/g,"").replace(",","."));
+    if(!isFinite(v)){$("#hsFb").innerHTML=`<div class="fb no">Enter a number.</div>`;return}
+    const ok=Math.abs(v-h.a)<=h.tol;if(ok){HSS.ok[HSS.i]=1;store.set("hsOk",HSS.ok);$("#hsN").textContent=Object.keys(HSS.ok).length}
+    $("#hsFb").innerHTML=`<div class="fb ${ok?"ok":"no"}">${ok?"Correct.":"Incorrect."} Answer: <b>${fnum(h.a,4)} ${esc(h.u)}</b></div><ol class="steps" style="margin-top:8px">${h.s.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`};
+  $("#hsChk").onclick=chk;inp.onkeydown=e=>{if(e.key==="Enter")chk()};
+  $("#hsNx").onclick=()=>{HSS.i=(HSS.i+1)%HS.length;hsRender();$("#hsIn").focus({preventScroll:true})};
+}
+hsRender();
+
+/* ---------- 05 Farmakokinetika ---------- */
+const ST=Object.assign({drug:"theo",route:"po",dose:300,tau:12,dur:3,w:70,ren:"n",hep:"n",int:"none",ld:false},store.get("pk",{}));
+if(!DRUGS[ST.drug])ST.drug="theo";
+let SIM=null,GHOST=null,HOVER=null;
+function opt(v,t,s){return `<option value="${esc(v)}"${String(v)===String(s)?" selected":""}>${esc(t)}</option>`}
+function fillSelects(){
+  const d=DRUGS[ST.drug];
+  if(!d.routes[ST.route])ST.route=Object.keys(d.routes)[0];
+  if(!d.doses.includes(ST.dose))ST.dose=d.d0;
+  if(!d.taus.includes(ST.tau))ST.tau=d.tau0;
+  if(!d.dur.includes(ST.dur))ST.dur=d.dur0;
+  if(!d.ints.some(x=>x[0]===ST.int))ST.int="none";
+  $("#pkDrug").innerHTML=Object.entries(DRUGS).map(([k,x])=>opt(k,x.n,ST.drug)).join("");
+  $("#pkRoute").innerHTML=Object.entries(d.routes).map(([k,r])=>opt(k,r.lbl||RTN[k],ST.route)).join("");
+  $("#pkDose").innerHTML=d.doses.map(x=>opt(x,fdose(x),ST.dose)).join("");
+  $("#pkTau").innerHTML=d.taus.map(x=>opt(x,x===24?"every 24 hours (once a day)":`every ${x} hours (${fnum(24/x,1)} times a day)`,ST.tau)).join("");
+  $("#pkDur").innerHTML=d.dur.map(x=>opt(x,x+(x===1?" day":" days"),ST.dur)).join("");
+  $("#pkRen").innerHTML=REN.map(x=>opt(x[0],x[1],ST.ren)).join("");
+  $("#pkHep").innerHTML=HEP.map(x=>opt(x[0],x[1],ST.hep)).join("");
+  $("#pkInt").innerHTML=d.ints.map(x=>opt(x[0],x[1],ST.int)).join("");
+  $("#pkInt").disabled=d.ints.length<2;
+  $("#pkW").value=ST.w;$("#pkWv").textContent=ST.w+" kg";
+  $("#pkLD").checked=!!ST.ld;$("#pkLD").disabled=!d.ldT;$("#pkLD").parentElement.style.opacity=d.ldT?1:.5;
+}
+function bandDefs(d){const k=d.show||1;
+  if(d.peak)return{bands:[[d.peak[0],d.peak[1],"good","Effective peak"],[d.tox,null,"bad","Toxic peak"]],lines:[[d.trough,"warn","Trough limit"]]};
+  if(d.mic)return{bands:[],lines:[[d.mic,"good","MIC"]]};
+  const b=[[d.tr[0],d.tr[1],"good","Therapeutic window"]];if(d.tox)b.push([d.tox,null,"bad","Toxic"]);return{bands:b,lines:[]}}
+function drawPK(cv,sim,o={}){
+  const dpr=window.devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;if(!W||!H)return;
+  cv.width=W*dpr;cv.height=H*dpr;const g=cv.getContext("2d");g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,H);
+  const d=sim.p.d,k=d.show||1,T=sim.m.T,ink=CSSV("--ink"),mut=CSSV("--muted"),line=CSSV("--line"),acc=CSSV("--accent");
+  const L=o.mini?8:48,R=10,Tp=10,B=o.mini?8:30,pw=W-L-R,ph=H-Tp-B;
+  const bd=bandDefs(d);
+  let ymax=Math.max(sim.m.gmax*k*1.12,...bd.bands.map(b=>(b[1]||b[0])*1.25),...bd.lines.map(l=>l[0]*1.6));
+  if(GHOST&&!o.mini&&GHOST.drug===ST.drug)ymax=Math.max(ymax,GHOST.max*1.08);
+  const nice=x=>{const e=Math.pow(10,Math.floor(Math.log10(x))),f=x/e;return(f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10)*e};
+  const ystep=nice(ymax/5);ymax=Math.ceil(ymax/ystep)*ystep;
+  const X=t=>L+t/T*pw,Y=c=>Tp+ph-(c/ymax)*ph;
+  /* zonalar */
+  for(const b of bd.bands){const y1=Y(Math.min(b[1]==null?ymax:b[1],ymax)),y0=Y(b[0]);
+    g.fillStyle=CSSV("--"+b[2]);g.globalAlpha=b[2]==="bad"?.1:.13;g.fillRect(L,y1,pw,y0-y1);g.globalAlpha=1;
+    g.strokeStyle=CSSV("--"+b[2]);g.globalAlpha=.6;g.lineWidth=1;g.setLineDash([]);
+    g.beginPath();g.moveTo(L,y0);g.lineTo(L+pw,y0);if(b[1]!=null&&b[1]<ymax){g.moveTo(L,Y(b[1]));g.lineTo(L+pw,Y(b[1]))}g.stroke();g.globalAlpha=1;
+    if(!o.mini){g.fillStyle=CSSV("--"+b[2]);g.font="600 10.5px "+CSSV("--f-mono");g.textAlign="right";g.fillText(b[3],L+pw-4,(b[1]==null?Math.max(Tp+11,Y(b[0])-4):Y(b[0])-5))}}
+  for(const l of bd.lines){g.strokeStyle=CSSV("--"+l[1]);g.lineWidth=1.3;g.setLineDash([5,4]);g.beginPath();g.moveTo(L,Y(l[0]));g.lineTo(L+pw,Y(l[0]));g.stroke();g.setLineDash([]);
+    if(!o.mini){g.fillStyle=CSSV("--"+l[1]);g.font="600 10.5px "+CSSV("--f-mono");g.textAlign="right";g.fillText(l[2]+" "+fnum(l[0],2),L+pw-4,Y(l[0])-4)}}
+  /* o'qlar */
+  if(!o.mini){g.strokeStyle=line;g.lineWidth=1;g.fillStyle=mut;g.font="10.5px "+CSSV("--f-mono");g.textAlign="right";
+    for(let y=0;y<=ymax+1e-9;y+=ystep){g.globalAlpha=.5;g.beginPath();g.moveTo(L,Y(y));g.lineTo(L+pw,Y(y));g.stroke();g.globalAlpha=1;g.fillText(fnum(y,2),L-6,Y(y)+3.5)}
+    g.textAlign="center";const days=T>72,cands=days?[24,48,72,168]:[1,2,4,6,12,24],step=cands.find(s=>pw*s/T>=(days?44:40))||cands[cands.length-1];
+    for(let t=0;t<=T+1e-9;t+=step){g.fillText(days?(t/24)+"d":t+" h",X(t),H-B+16);g.globalAlpha=.25;g.beginPath();g.moveTo(X(t),Tp);g.lineTo(X(t),Tp+ph);g.stroke();g.globalAlpha=1}
+    g.save();g.translate(12,Tp+ph/2);g.rotate(-Math.PI/2);g.textAlign="center";g.fillText(d.unit,0,0);g.restore();
+    /* doza belgilari */
+    for(const ds of sim.m.doses){g.fillStyle=ds.ld?CSSV("--warn"):acc;const x=X(ds.t),s=ds.ld?6:4.5;g.beginPath();g.moveTo(x,Tp+ph);g.lineTo(x-s,Tp+ph+s*1.4);g.lineTo(x+s,Tp+ph+s*1.4);g.closePath();g.fill()}}
+  /* saqlangan egri */
+  const N=Math.min(1400,Math.max(300,Math.round(pw*1.5)));
+  if(GHOST&&!o.mini&&GHOST.drug===ST.drug){g.strokeStyle=mut;g.lineWidth=1.6;g.setLineDash([6,4]);g.beginPath();
+    GHOST.pts.forEach(([t,c],i)=>{if(t>T)return;const x=X(t),y=Y(c);i?g.lineTo(x,y):g.moveTo(x,y)});g.stroke();g.setLineDash([])}
+  /* egri */
+  g.strokeStyle=acc;g.lineWidth=o.mini?2:2.3;g.lineJoin="round";g.beginPath();
+  for(let i=0;i<=N;i++){const t=T*i/N,c=sim.C(t)*k,x=X(t),y=Y(Math.min(c,ymax));i?g.lineTo(x,y):g.moveTo(x,y)}g.stroke();
+  /* hover */
+  if(HOVER!=null&&!o.mini){const t=HOVER,c=sim.C(t)*k;g.strokeStyle=ink;g.globalAlpha=.5;g.lineWidth=1;g.beginPath();g.moveTo(X(t),Tp);g.lineTo(X(t),Tp+ph);g.stroke();g.globalAlpha=1;
+    g.fillStyle=acc;g.beginPath();g.arc(X(t),Y(Math.min(c,ymax)),4.5,0,7);g.fill();g.strokeStyle=CSSV("--surface");g.lineWidth=2;g.stroke()}
+  cv._map={L,pw,T};
+}
+function kvHTML(rows){return rows.map(([a,b])=>`<dt>${esc(a)}</dt><dd class="num">${b}</dd>`).join("")}
+function pkUpdate(){
+  store.set("pk",ST);
+  const sim=SIM=simulate(ST),{p,m}=sim,d=p.d,k=d.show||1,u=d.unit;
+  const f=x=>fsig(x*k)+" "+u;
+  $("#pkTitle").textContent=`${d.n} · ${fdose(ST.dose)} every ${ST.tau} hours · ${(d.routes[ST.route].lbl||RTN[ST.route]).toLowerCase()}`;
+  const bd=bandDefs(d);
+  $("#pkLeg").innerHTML=`<span><i style="background:var(--accent)"></i>Concentration</span>`+bd.bands.map(b=>`<span><i style="background:var(--${b[2]});opacity:.55"></i>${esc(b[3])}</span>`).join("")+bd.lines.map(l=>`<span><i style="background:var(--${l[1]})"></i>${esc(l[2])}</span>`).join("")+(GHOST&&GHOST.drug===ST.drug?`<span><i style="background:var(--muted)"></i>Saved: ${esc(GHOST.lbl)}</span>`:"")+`<span><i style="background:var(--accent);clip-path:polygon(50% 0,0 100%,100% 100%)"></i>Dose</span>`;
+  const rows=[];
+  if(p.mm){rows.push(["t½ (current)",fnum(m.t12,1)+" hours"],["Vmax",fnum(p.Vmax,0)+" mg/day"],["Km",fnum(p.Km,1)+" mg/L"])}
+  else rows.push(["t½",fnum(p.t12,1)+" hours"],["Clearance (CL)",fnum(p.CL,2)+" L/h"]);
+  rows.push(["Vd",fnum(p.V,0)+" L"],["F (bioavailability)",fnum(p.F*100,1)+"%"]);
+  if(d.peak)rows.push(["Peak",f(m.Cmax)],["Trough (before the dose)",f(m.trough)]);
+  else rows.push(["Cmax (last interval)",f(m.Cmax)],["Cmin (last interval)",f(m.Cmin)]);
+  rows.push(["Mean C",f(m.Cavg)]);
+  if(d.mic)rows.push(["Time C > MIC",fnum(m.pT,0)+"% of the interval"]);
+  if(!p.mm)rows.push(["Time to reach Css",`≈ ${fnum(m.tss,0)} hours (${fnum(m.tss/24,1)} days)`]);
+  rows.push(["Daily dose",`${fsig(ST.dose*24/ST.tau)} mg (${fsig(ST.dose*24/ST.tau/ST.w)} mg/kg)`]);
+  if(ST.ld&&d.ldT)rows.push(["Loading dose",fdose(m.doses[0].D)]);
+  $("#pkKv").innerHTML=kvHTML(rows);
+  /* formulalar */
+  let c="";
+  if(p.mm){const R=m.R,ct=d.mdT,Rn=p.Vmax*ct/(p.Km+ct);
+    c=`<b>Calculation</b>Input rate R = F × D × 24/τ = ${fnum(p.F,2)} × ${fnum(ST.dose,0)} × ${fnum(24/ST.tau,1)} = ${fnum(R,0)} mg/day.<br>${isFinite(m.CssAvg)?`Css = Km × R / (Vmax − R) = ${fnum(p.Km,1)} × ${fnum(R,0)} / (${fnum(p.Vmax,0)} − ${fnum(R,0)}) = <b>${fnum(m.CssAvg,1)} mg/L</b>.`:`R ≥ Vmax: no steady state.`}<br>For Css = ${ct} mg/L: R = Vmax × Css / (Km + Css) = ${fnum(Rn,0)} mg/day, i.e. by mouth ≈ ${fnum(Rn/p.F,0)} mg/day.<br>Loading dose = Css × Vd / F = ${ct} × ${fnum(p.V,0)} / ${fnum(p.F,2)} ≈ ${fnum(ct*p.V/p.F,0)} mg.`}
+  else{c=`<b>Calculation</b>k = 0.693 / t½ = ${fnum(p.k,3)} h⁻¹; CL = k × Vd = ${fnum(p.CL,2)} L/h.<br>Mean Css = F × D / (CL × τ) = ${fnum(p.F,2)} × ${fnum(ST.dose,4)} / (${fnum(p.CL,2)} × ${ST.tau}) = <b>${f(m.CssAvg)}</b>.`;
+    if(d.mdT){const ct=d.mdT/k,md=ct*p.CL*ST.tau/p.F;c+=`<br>Maintenance dose for Css = ${fnum(d.mdT,2)} ${u} = Css × CL × τ / F ≈ ${md<1?fnum(md,3):fnum(md,0)} mg every ${ST.tau} hours.`}
+    if(d.ldT){const ct=d.ldT/k,ld=ct*p.V/p.F;c+=`<br>Loading dose = Css × Vd / F = ${fnum(d.ldT,2)} ${u} × ${fnum(p.V,0)} L / ${fnum(p.F,2)} ≈ ${ld<1?fnum(ld,3):fnum(ld,0)} mg.`}
+    if(d.peak)c+=`<br>Trough = peak × e<sup>−k(τ − t<sub>inf</sub>)</sup>: if the interval is lengthened the trough decreases.`}
+  $("#pkCalc").innerHTML=c;
+  $("#pkVerdict").innerHTML=verdict(ST,sim).map(v=>`<div class="verdict ${v[0]}" style="margin-top:6px"><b>${v[0]==="ok"?"Result":v[0]==="warn"?"Caution":"Danger"}</b><span>${esc(v[1])}</span><span class="x">${esc(v[2])}</span></div>`).join("")+`<p class="muted" style="font-size:.85rem;margin-top:8px">${esc(d.info)}</p>`;
+  $("#pkClear").hidden=!(GHOST&&GHOST.drug===ST.drug);
+  drawPK($("#pkCv"),sim);
+  drawADME(sim);
+}
+(function(){
+  fillSelects();
+  const on=(id,fn)=>$(id).addEventListener("change",e=>{fn(e.target);HOVER=null;pkUpdate()});
+  on("#pkDrug",t=>{ST.drug=t.value;const d=DRUGS[ST.drug];ST.route=Object.keys(d.routes)[0];ST.dose=d.d0;ST.tau=d.tau0;ST.dur=d.dur0;ST.int="none";ST.ld=false;fillSelects()});
+  on("#pkRoute",t=>ST.route=t.value);on("#pkDose",t=>ST.dose=+t.value);on("#pkTau",t=>ST.tau=+t.value);on("#pkDur",t=>ST.dur=+t.value);
+  on("#pkRen",t=>ST.ren=t.value);on("#pkHep",t=>ST.hep=t.value);on("#pkInt",t=>ST.int=t.value);on("#pkLD",t=>ST.ld=t.checked);
+  $("#pkW").addEventListener("input",e=>{ST.w=+e.target.value;$("#pkWv").textContent=ST.w+" kg";pkUpdate()});
+  $("#pkSave").onclick=()=>{const sim=SIM,k=sim.p.d.show||1,T=sim.m.T,pts=[];for(let i=0;i<=800;i++){const t=T*i/800;pts.push([t,sim.C(t)*k])}
+    GHOST={drug:ST.drug,pts,max:Math.max(...pts.map(x=>x[1])),lbl:`${fdose(ST.dose)} / ${ST.tau} h, ${RTN[ST.route].toLowerCase()}`};pkUpdate()};
+  $("#pkClear").onclick=()=>{GHOST=null;pkUpdate()};
+  const cv=$("#pkCv");
+  const mv=e=>{const mp=cv._map;if(!mp||!SIM)return;const r=cv.getBoundingClientRect(),x=e.clientX-r.left;const t=Math.max(0,Math.min(mp.T,(x-mp.L)/mp.pw*mp.T));HOVER=t;
+    const k=SIM.p.d.show||1;$("#pkHover").textContent=`t = ${fnum(t,1)} h${t>=24?`(${fnum(t/24,1)} days)`:""} · C = ${fsig(SIM.C(t)*k)} ${SIM.p.d.unit}`;drawPK(cv,SIM)};
+  cv.addEventListener("pointermove",mv);cv.addEventListener("pointerdown",mv);
+  cv.addEventListener("pointerleave",()=>{HOVER=null;$("#pkHover").textContent="Move over the graph";drawPK(cv,SIM)});
+  pkUpdate();
+  /* hero */
+  const hs=simulate({drug:"theo",route:"po",dose:300,tau:8,dur:3,w:70,ren:"n",hep:"n",int:"none",ld:false});
+  const drawHero=()=>drawPK($("#heroCv"),hs,{mini:1});drawHero();
+  let rt;window.addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{drawHero();if(SIM)drawPK($("#pkCv"),SIM)},120)});
+  new MutationObserver(()=>setTimeout(()=>{drawHero();if(SIM){drawPK($("#pkCv"),SIM)}},30)).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+})();
+
+/* ---------- ADME sxemasi ---------- */
+function drawADME(sim){
+  const {p}=sim,d=p.d,r=ST.route,on=(...rs)=>rs.includes(r)?" on":"";
+  const fe=d.mm?0:d.fe,gutOn=r==="po",prOn=r==="pr",noAbs=r==="po"&&p.F<.05;
+  const node=(x,y,w,h,t,s,v,act,icon)=>`<g class="${act?"nd-on":""}"><rect class="nd" x="${x}" y="${y}" width="${w}" height="${h}" rx="10"/>${icon?`<g transform="translate(${x+w-34},${y+h-34})">${icon}</g>`:""}<text x="${x+12}" y="${y+22}" font-weight="600">${t}</text><text class="s" x="${x+12}" y="${y+39}">${s}</text>${v?`<text class="v" x="${x+12}" y="${y+h-11}">${v}</text>`:""}</g>`;
+  const IC={gut:`<path class="organ" d="M4 4 q14 -4 18 8 q3 10 -8 12 q-10 2 -7 12" />`,
+    liver:`<path class="organ2" d="M1 10 q20 -12 26 2 q2 12 -14 16 q-12 2 -12 -18 z"/>`,
+    blood:`<circle class="organ3" cx="9" cy="10" r="8"/><circle class="organ3" cx="21" cy="21" r="6.5"/>`,
+    kid:`<path class="organ" d="M12 2 q14 2 13 16 q-1 12 -13 10 q6 -7 0 -13 q-6 -7 0 -13z"/>`,
+    tis:`<rect class="organ" x="2" y="6" width="9" height="20" rx="3"/><rect class="organ" x="15" y="2" width="9" height="24" rx="3"/>`};
+  const svg=`<svg viewBox="0 0 900 362" class="an" role="img" aria-label="Pathway of drug absorption, distribution, metabolism and elimination">
+  <defs>${["O:var(--line)","A:var(--accent)","W:var(--warn)"].map(s=>{const[i,c]=s.split(":");return `<marker id="ar${i}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${c}"/></marker>`}).join("")}</defs>
+  ${node(16,16,190,64,"Mouth","tablet, capsule, solution","",gutOn)}
+  ${node(16,140,190,84,"Gastrointestinal tract","absorption",gutOn?`ka = ${fnum(p.ka,2)} h⁻¹`:"",gutOn,IC.gut)}
+  ${node(16,272,190,64,"Rectum","suppository",prOn?`F ≈ ${fnum(p.F*100,0)}%`:"",prOn)}
+  ${node(290,16,190,64,"Muscle","injection site",r==="im"?`F = ${fnum(p.F*100,0)}%, ka = ${fnum(p.ka,1)}`:"",r==="im")}
+  ${node(290,140,190,84,"Liver","first-pass effect",gutOn?`F = ${fnum(p.F*100,1)}%`:"",gutOn,IC.liver)}
+  ${node(530,16,200,64,"Intravenous","directly into the blood",r==="iv"?"F = 100%":"",r==="iv")}
+  ${node(530,130,200,120,"Blood","central compartment",`Vd = ${fnum(p.V,0)} L`,!noAbs,IC.blood)}
+  <text class="s" x="542" y="${130+62}">${p.mm?`Vmax ${fnum(p.Vmax,0)} mg/day`:`CL ${fnum(p.CL,2)} L/h`}</text>
+  <text class="s" x="542" y="${130+78}">${p.mm?"saturable elimination":`t½ ${fnum(p.t12,1)} h`}</text>
+  ${node(530,290,200,64,"Metabolites","breakdown in the liver",`${fnum((1-fe)*100,0)}%`,(1-fe)>.4)}
+  ${node(770,16,120,104,"Tissues","distribution","",!noAbs,IC.tis)}
+  ${node(770,250,120,104,"Kidney","in urine",`fe ${fnum(fe*100,0)}%`,fe>.4,IC.kid)}
+  <path class="ar${on("po")}" d="M111 80 V136"/>
+  <path class="ar${on("po")}" d="M206 182 H286"/><text class="s" x="246" y="172" text-anchor="middle">portal</text><text class="s" x="246" y="201" text-anchor="middle">vein</text>
+  <path class="ar${on("po")}" d="M480 190 H526"/>
+  <path class="ar${on("im")}" d="M480 48 C 520 50, 545 80, 560 126"/>
+  <path class="ar${on("iv")}" d="M630 80 V126"/>
+  <path class="ar${on("pr")}" d="M206 304 C 330 330, 440 300, 528 236"/><text class="s" x="352" y="340" text-anchor="middle">rectal veins: partly bypass the liver</text>
+  <path class="ar${noAbs?"":" on"}" d="M730 152 C 748 140, 752 112, 766 98"/><path class="ar" d="M768 112 C 755 132, 750 160, 732 172"/>
+  <path class="ar ex" d="M730 232 C 748 250, 752 280, 766 296"/>
+  <path class="ar ex" d="M630 250 V286"/>
+  </svg>`;
+  $("#adme").innerHTML=svg;
+  const t={po:noAbs?"When taken by mouth, gentamicin hardly passes from the gut into the blood (F < 1%): aminoglycosides are polar molecules.":`A drug taken by mouth is absorbed in the gut and reaches the liver first through the portal vein. Part of it is broken down in the liver (first-pass effect), so the fraction reaching the blood (F) is ${fnum(p.F*100,1)}%.`,
+    iv:"A drug given intravenously bypasses the absorption stage: F = 100%, the effect starts fastest. The duration of the infusion affects the height of the peak.",
+    im:`A drug given intramuscularly passes into the blood through capillaries (F = ${fnum(p.F*100,0)}%). The absorption rate depends on blood circulation: it slows sharply in shock.`,
+    pr:`A drug absorbed from the lower rectum partly bypasses the liver, but absorption is slow and unreliable (F ≈ ${fnum(p.F*100,0)}%).`}[r];
+  $("#admeTxt").textContent=t+(d.mm?" Phenytoin is metabolized by saturable enzymes in the liver: the elimination rate depends on the concentration.":` Elimination: ${fnum(fe*100,0)}% unchanged by the kidneys, the rest by metabolism in the liver. ${fe>.5?"In renal failure t½ is greatly prolonged.":"Liver function and interactions affect t½ more."}`);
+}
+
+/* ---------- 06 FK vazifalari ---------- */
+const PKT=[
+ {t:"Theophylline: bring the dose into the therapeutic window",d:"The patient weighs 70 kg and has bronchial asthma. Theophylline retard 300 mg every 12 hours was prescribed, but attacks continue. By changing the dose or the interval, make the concentration stay within the 10–20 mg/L window throughout the whole dosing interval at steady state.",
+  pre:{drug:"theo",route:"po",dose:300,tau:12,dur:3,w:70,ren:"n",hep:"n",int:"none",ld:false},
+  chk:(st,s)=>st.drug!=="theo"?[0,"The drug must be theophylline."]:s.m.Cmin<10?[0,`Trough ${fsig(s.m.Cmin)} mg/L: still below 10.`]:s.m.Cmax>20?[0,`Peak ${fsig(s.m.Cmax)} mg/L: in the toxic zone.`]:[1,`Correct: ${fsig(s.m.Cmin)}–${fsig(s.m.Cmax)} mg/L. Dividing the daily dose into several doses reduces the fluctuation: for example 300 mg every 8 hours.`]},
+ {t:"Gentamicin: trough concentration in renal failure",d:"The patient weighs 70 kg, creatinine clearance 30–59 mL/min. Gentamicin 120 mg intravenously every 8 hours. Keep the peak at 5–10 mg/L and bring the trough below 2 mg/L. Do not change the renal status.",
+  pre:{drug:"gen",route:"iv",dose:120,tau:8,dur:3,w:70,ren:"m",hep:"n",int:"none",ld:false},
+  chk:(st,s)=>st.drug!=="gen"||st.ren!=="m"?[0,"Keep gentamicin and the “Moderate” renal status."]:st.route==="po"?[0,"Gentamicin by mouth is not absorbed."]:s.m.trough>=2?[0,`Trough ${fsig(s.m.trough)} mg/L: still above 2.`]:s.m.Cmax<5||s.m.Cmax>10?[0,`Peak ${fsig(s.m.Cmax)} mg/L: it should be within 5–10.`]:[1,`Correct: peak ${fsig(s.m.Cmax)}, trough ${fsig(s.m.trough)} mg/L. In renal failure, for aminoglycosides it is usually the interval that is lengthened, not the dose: the peak ensures efficacy, a low trough ensures safety.`]},
+ {t:"Digoxin: after how many days is steady state reached?",d:"The patient weighs 70 kg, renal function is normal. Digoxin 0.25 mg once a day, no loading dose. Answer by looking at the graph in the lab or by calculating from t½: after about how many days is the steady-state concentration reached?",
+  pre:{drug:"dig",route:"po",dose:.25,tau:24,dur:14,w:70,ren:"n",hep:"n",int:"none",ld:false},num:{a:8,lo:6,hi:10,u:"days"},
+  ex:"t½ ≈ 38 hours, 5 × 38 = 190 hours ≈ 8 days. So if a quick effect is needed, a loading dose (Css × Vd / F) is given: turn on “Start with a loading dose” to see the difference. In renal failure t½ is prolonged to 3.5–5 days."},
+ {t:"Phenytoin: if we increase the dose from 300 to 400 mg",d:"The patient weighs 70 kg and takes phenytoin 300 mg once a day, the concentration is below the window. If the dose is raised to 400 mg (1.33 times), how does the steady-state concentration change? Check it in the lab with a 28-day duration.",
+  pre:{drug:"phen",route:"po",dose:300,tau:24,dur:28,w:70,ren:"n",hep:"n",int:"none",ld:false},
+  ch:[["Rises about 1.33 times (proportional to the dose)",0],["Rises more than 2 times",1],["Does not change",0],["Decreases",0]],
+  ex:()=>{const a=simulate({drug:"phen",route:"po",dose:300,tau:24,dur:28,w:70,ren:"n",hep:"n",int:"none"}).m.CssAvg,b=simulate({drug:"phen",route:"po",dose:400,tau:24,dur:28,w:70,ren:"n",hep:"n",int:"none"}).m.CssAvg;return `In the model Css ${fnum(a,1)} → ${fnum(b,1)} mg/L, i.e. ${fnum(b/a,1)} times. The enzymes that break down phenytoin become saturated even at therapeutic doses (zero-order kinetics: “PEA” — phenytoin, ethanol, aspirin). So the dose is raised in small steps (25–50 mg) and the concentration is monitored.`}},
+ {t:"Amoxicillin: same daily dose, different regimens",d:"The daily dose is 1500 mg. In which regimen is the time the concentration stays above the MIC the longest? In the lab compare the regimens 1500 mg every 24 hours, 750 mg every 12 hours and 500 mg every 8 hours (use “Save for comparison”).",
+  pre:{drug:"amox",route:"po",dose:1500,tau:24,dur:2,w:70,ren:"n",hep:"n",int:"none",ld:false},
+  ch:[["1500 mg once a day",0],["750 mg twice a day",0],["500 mg three times a day",1],["No difference: the daily dose is the same",0]],
+  ex:()=>{const v=[[1500,24],[750,12],[500,8]].map(([dd,t])=>simulate({drug:"amox",route:"po",dose:dd,tau:t,dur:2,w:70,ren:"n",hep:"n",int:"none"}).m.pT);return `In the model the time C > MIC is ${fnum(v[0],0)}%, ${fnum(v[1],0)}% and ${fnum(v[2],0)}%. Beta-lactams have a time-dependent effect and a short t½ (~1 hour): the time the concentration stays above the MIC matters more than a high peak. For aminoglycosides it is the opposite: the effect is concentration-dependent, so they can be given once a day in a large dose.`}},
+ {t:"Theophylline and ciprofloxacin",d:"The patient takes theophylline retard 400 mg every 8 hours and is stable. Ciprofloxacin was prescribed for pneumonia (a CYP1A2 inhibitor). Taking the drug interaction into account, bring the concentration back to the 10–20 mg/L window. Do not remove ciprofloxacin.",
+  pre:{drug:"theo",route:"po",dose:400,tau:8,dur:5,w:70,ren:"n",hep:"n",int:"cip",ld:false},
+  chk:(st,s)=>st.drug!=="theo"||st.int!=="cip"?[0,"Theophylline and ciprofloxacin must stay together."]:s.m.Cmax>20?[0,`Peak ${fsig(s.m.Cmax)} mg/L: in the toxic zone. Reduce the theophylline dose.`]:s.m.Cmin<10?[0,`Trough ${fsig(s.m.Cmin)} mg/L: below the window, the dose was reduced too much.`]:[1,`Correct: ${fsig(s.m.Cmin)}–${fsig(s.m.Cmax)} mg/L. The inhibitor reduces theophylline clearance by about 30%, so the dose is reduced by ~25–30% and the concentration is monitored.`]},
+ {t:"Digoxin: end-stage renal failure",d:"The patient weighs 70 kg, creatinine clearance is below 15 mL/min. Digoxin accumulates at the standard dose of 0.25 mg once a day. Without changing the renal status, keep the concentration in the 0.5–2.0 ng/mL window over a 21-day duration.",
+  pre:{drug:"dig",route:"po",dose:.25,tau:24,dur:21,w:70,ren:"e",hep:"n",int:"none",ld:false},
+  chk:(st,s)=>st.drug!=="dig"||st.ren!=="e"?[0,"Keep digoxin and the “End-stage” renal status."]:s.m.Cmax*1000>2?[0,`Peak ${fsig(s.m.Cmax*1000)} ng/mL: toxic.`]:s.m.Cmin*1000<.5?[0,`Trough ${fsig(s.m.Cmin*1000)} ng/mL: below the window.`]:!s.m.ss?[0,"Steady state not yet reached."]:[1,`Correct: ${fsig(s.m.Cmin*1000)}–${fsig(s.m.Cmax*1000)} ng/mL. 70% of digoxin is excreted by the kidneys: when clearance falls the dose is reduced or the interval is lengthened (e.g. 0.0625 mg once a day or 0.125 mg once every 2 days).`]},
+ {t:"Paracetamol: maximum daily dose",d:"The patient weighs 70 kg and has a severe headache. The patient is taking paracetamol 1000 mg every 4 hours on their own. Change the regimen so that the peak is effective (≥ 10 mg/L) and the daily dose does not exceed 4 g.",
+  pre:{drug:"parac",route:"po",dose:1000,tau:4,dur:2,w:70,ren:"n",hep:"n",int:"none",ld:false},
+  chk:(st,s)=>st.drug!=="parac"?[0,"The drug must be paracetamol."]:st.dose*24/st.tau>4000?[0,`Daily dose ${fnum(st.dose*24/st.tau,0)} mg: more than 4 g — risk of hepatotoxicity.`]:s.m.Cmax<10?[0,`Peak ${fsig(s.m.Cmax)} mg/L: does not reach the effective concentration.`]:[1,`Correct: peak ${fsig(s.m.Cmax)} mg/L, daily dose ${fnum(st.dose*24/st.tau,0)} mg. Paracetamol toxicity depends not on the mean blood concentration but on the total daily dose: when glutathione in the liver is exhausted, NAPQI accumulates.`]},
+ {t:"Paracetamol: by mouth or suppository",d:"Compare giving the same 500 mg dose by mouth and rectally (suppository). Which route gives a higher and faster peak?",
+  pre:{drug:"parac",route:"po",dose:500,tau:6,dur:1,w:70,ren:"n",hep:"n",int:"none",ld:false},
+  ch:[["Rectally: because it bypasses the liver",0],["By mouth: absorption is faster and more complete",1],["No difference",0],["The drug from a suppository does not enter the blood at all",0]],
+  ex:()=>{const a=simulate({drug:"parac",route:"po",dose:500,tau:6,dur:1,w:70,ren:"n",hep:"n",int:"none"}).m,b=simulate({drug:"parac",route:"pr",dose:500,tau:6,dur:1,w:70,ren:"n",hep:"n",int:"none"}).m;return `In the model the peak is: by mouth ${fsig(a.Cmax)} mg/L (at ${fnum(a.tmax,1)} hours), suppository ${fsig(b.Cmax)} mg/L (at ${fnum(b.tmax,1)} hours). Rectal absorption is slow and unreliable (F ≈ 30–70%). A suppository is chosen when oral intake is not possible (vomiting, an infant); in children the rectal dose is often taken slightly higher.`}},
+ {t:"Gentamicin by mouth",d:"In the lab try gentamicin by the “By mouth” route. Why is gentamicin not given as a tablet in sepsis?",
+  pre:{drug:"gen",route:"po",dose:240,tau:24,dur:2,w:70,ren:"n",hep:"n",int:"none",ld:false},
+  ch:[["It is broken down in stomach acid",0],["Polar molecule: almost not absorbed from the gut (F < 1%)",1],["It is completely broken down in the liver on first pass",0],["Because of its bitter taste",0]],
+  ex:"Aminoglycosides are strongly polar, water-soluble molecules: they do not cross the intestinal mucosa. Therefore in systemic infection they are given intravenously or intramuscularly. This property is used in preparing the bowel for surgery or in hepatic encephalopathy (neomycin)."},
+ {t:"Digoxin and amiodarone",d:"The patient weighs 70 kg and was taking digoxin 0.375 mg once a day, with the concentration in the window. Amiodarone was added for arrhythmia (a P-glycoprotein inhibitor). Without removing amiodarone, bring the digoxin concentration back to the 0.5–2.0 ng/mL window.",
+  pre:{drug:"dig",route:"po",dose:.375,tau:24,dur:14,w:70,ren:"n",hep:"n",int:"amio",ld:false},
+  chk:(st,s)=>st.drug!=="dig"||st.int!=="amio"?[0,"Digoxin and amiodarone must stay together."]:s.m.Cmax*1000>2?[0,`Peak ${fsig(s.m.Cmax*1000)} ng/mL: toxic.`]:s.m.Cmin*1000<.5?[0,`Trough ${fsig(s.m.Cmin*1000)} ng/mL: below the window.`]:[1,`Correct: ${fsig(s.m.Cmin*1000)}–${fsig(s.m.Cmax*1000)} ng/mL. Amiodarone reduces digoxin clearance and raises its concentration 1.5–2 fold: when amiodarone is started the digoxin dose is reduced by about half.`]},
+ {t:"Phenytoin and fluconazole",d:"The patient weighs 70 kg, phenytoin 300 mg once a day. Fluconazole was prescribed for candidiasis (a CYP2C9 inhibitor). Bring the concentration back to the 10–20 mg/L window over a 28-day duration, keep fluconazole.",
+  pre:{drug:"phen",route:"po",dose:300,tau:24,dur:28,w:70,ren:"n",hep:"n",int:"flu",ld:false},
+  chk:(st,s)=>st.drug!=="phen"||st.int!=="flu"?[0,"Phenytoin and fluconazole must stay together."]:s.m.Cmax>20?[0,`Peak ${fsig(s.m.Cmax)} mg/L: toxic (nystagmus, ataxia).`]:s.m.Cmin<10?[0,`Trough ${fsig(s.m.Cmin)} mg/L: below the window.`]:[1,`Correct: ${fsig(s.m.Cmin)}–${fsig(s.m.Cmax)} mg/L. The inhibitor reduces Vmax of the saturable enzymes: in nonlinear kinetics this raises the concentration several fold, so reducing the dose in small steps is enough.`]},
+ {t:"Theophylline: a smoking patient",d:"The patient weighs 70 kg and smokes 1 pack a day (CYP1A2 induction). Theophylline retard 300 mg every 8 hours is not working. Reach the 10–20 mg/L window over the whole dosing interval; keep the “Smoking” setting.",
+  pre:{drug:"theo",route:"po",dose:300,tau:8,dur:3,w:70,ren:"n",hep:"n",int:"smk",ld:false},
+  chk:(st,s)=>st.drug!=="theo"||st.int!=="smk"?[0,"Theophylline and the “Smoking” setting must be kept."]:s.m.Cmax>20?[0,`Peak ${fsig(s.m.Cmax)} mg/L: toxic.`]:s.m.Cmin<10?[0,`Trough ${fsig(s.m.Cmin)} mg/L: still below the window. Raise the dose or shorten the interval.`]:[1,`Correct: ${fsig(s.m.Cmin)}–${fsig(s.m.Cmax)} mg/L. In smokers theophylline t½ shortens to ~4–5 hours: a 1.5–2 times larger dose is needed. If the patient quits smoking and the dose is not reduced, poisoning develops.`]},
+ {t:"Amoxicillin: end-stage renal failure",d:"The patient weighs 70 kg, creatinine clearance below 15 mL/min, taking amoxicillin 500 mg every 8 hours. See the accumulation of concentration in the lab. What is the correct way to change the regimen?",
+  pre:{drug:"amox",route:"po",dose:500,tau:8,dur:3,w:70,ren:"e",hep:"n",int:"none",ld:false},
+  ch:[["Double the dose",0],["Lengthen the interval (every 12–24 hours)",1],["Do not change the regimen: penicillins are safe",0],["Add probenecid",0]],
+  ex:()=>{const a=simulate({drug:"amox",route:"po",dose:500,tau:8,dur:3,w:70,ren:"e",hep:"n",int:"none"}).m,b=simulate({drug:"amox",route:"po",dose:500,tau:24,dur:3,w:70,ren:"e",hep:"n",int:"none"}).m;return `In the model: 500 mg every 8 hours — mean C ${fsig(a.Cavg)} mg/L, time above MIC ${fnum(a.pT,0)}%; every 24 hours — mean C ${fsig(b.Cavg)} mg/L, time above MIC ${fnum(b.pT,0)}%. 80% of amoxicillin is excreted by the kidneys: at CrCl < 10–30 mL/min the interval is lengthened, otherwise a high concentration raises the risk of seizures (neurotoxicity).`}},
+ {t:"Theophylline: calculate the loading dose",d:"The patient weighs 70 kg, asthma attack, has not taken theophylline before. Vd = 0.5 L/kg, target concentration 10 mg/L, F ≈ 1. How many mg is the loading dose? (Formula: loading dose = Css × Vd / F.)",
+  pre:{drug:"theo",route:"iv",dose:300,tau:12,dur:2,w:70,ren:"n",hep:"n",int:"none",ld:true},num:{a:350,lo:330,hi:370,u:"mg"},
+  ex:"Vd = 0.5 × 70 = 35 L. Loading dose = 10 mg/L × 35 L / 1 = 350 mg (≈ 5 mg/kg). The loading dose ensures that Css is reached immediately; the subsequent maintenance dose depends on clearance. If the patient has taken theophylline before, the loading dose is reduced or not given."}
+];
+(function(){
+  const done=store.get("pkt",{});
+  $("#pkTasks").innerHTML=PKT.map((x,i)=>`<div class="q" data-i="${i}"><div class="tasks-st"><span class="qn">Task ${i+1}</span><span class="tag ok" ${done[i]?"":"hidden"}>completed</span></div><p class="t">${esc(x.t)}</p><p style="font-size:.93rem">${esc(x.d)}</p>
+    <div class="btnrow"><button class="btn" type="button" data-a="load">Load scenario</button>${x.chk?`<button class="btn pri" type="button" data-a="chk">Check</button>`:""}</div>
+    ${x.num?`<div class="num-in"><input inputmode="decimal" aria-label="Answer"><span class="mono">${x.num.u}</span><button class="btn pri" type="button" data-a="num">Submit answer</button></div>`:""}
+    ${x.ch?`<div class="opts">${x.ch.map((c,j)=>`<button class="opt" type="button" data-j="${j}"><span class="k">${"ABCD"[j]}</span><span>${esc(c[0])}</span></button>`).join("")}</div>`:""}
+    <div class="out" aria-live="polite"></div></div>`).join("");
+  const mark=(i,box)=>{done[i]=1;store.set("pkt",done);$(".tag",box).hidden=false};
+  $$("#pkTasks .q").forEach(box=>{const i=+box.dataset.i,x=PKT[i],out=$(".out",box);
+    box.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+      if(b.dataset.a==="load"){Object.assign(ST,x.pre);GHOST=null;HOVER=null;fillSelects();pkUpdate();$("#fk").scrollIntoView({block:"start"});out.innerHTML=`<div class="fb">The scenario has been loaded into the lab. Change the settings, then come back here.</div>`}
+      else if(b.dataset.a==="chk"){const r=x.chk(ST,simulate(ST));if(r[0])mark(i,box);out.innerHTML=`<div class="fb ${r[0]?"ok":"no"}">${esc(r[1])}</div>`}
+      else if(b.dataset.a==="num"){const v=parseFloat($("input",box).value.replace(",","."));if(!isFinite(v)){out.innerHTML=`<div class="fb no">Enter a number.</div>`;return}
+        const ok=v>=x.num.lo&&v<=x.num.hi;if(ok)mark(i,box);out.innerHTML=`<div class="fb ${ok?"ok":"no"}">${ok?"Correct.":"Incorrect."} Approximately ${x.num.a} ${x.num.u}.</div><div class="expl" style="margin-top:8px">${esc(x.ex)}</div>`}
+      else if(b.dataset.j!=null){const j=+b.dataset.j;$$(".opt",box).forEach((o,k)=>{o.disabled=true;if(x.ch[k][1])o.classList.add("right");else if(k===j)o.classList.add("wrong")});
+        if(x.ch[j][1])mark(i,box);out.innerHTML=`<div class="expl" style="margin-top:4px">${esc(typeof x.ex==="function"?x.ex():x.ex)}</div>`}
+    })});
+})();
+
+})();
+</script>
+</body></html>

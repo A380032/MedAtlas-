@@ -38,13 +38,16 @@
     if (ctx) return ctx;
     const banks = [];
     let idx = [];
-    try { idx = await A.loadJSON("data/tests/index.json"); } catch { /* oflayn */ }
+    let idxOk = false;
+    try { idx = await A.loadJSON("data/tests/index.json"); idxOk = true; } catch { /* oflayn */ }
+    const L = window.I18N?.lang || "uz";
     for (const e of idx) {
-      try { banks.push(prep(await A.loadJSON("data/tests/" + e.id + ".json"), false)); } catch { /* yuklanmadi */ }
+      if ((e.lang || "uz") !== L) continue;   // har bir til uchun alohida testlar
+      try { const b = prep(await A.loadJSON("data/tests/" + e.id + ".json"), false); b.course = e.course ? String(e.course) : ""; b.lang = e.lang || "uz"; banks.push(b); } catch { /* yuklanmadi */ }
     }
     const gone = store.get("udel", []);
     for (const u of store.get("user", [])) if (!gone.includes(u.id)) banks.push(prep(u, true));
-    ctx = { banks, by: Object.fromEntries(banks.map((b) => [b.id, b])) };
+    ctx = { banks, idxOk, by: Object.fromEntries(banks.map((b) => [b.id, b])) };
     return ctx;
   }
   const dropCtx = () => { ctx = null; };
@@ -139,9 +142,19 @@
     for (const q of b.questions) { const s = st[q._k]; if (s) { ans++; ok += s[0]; } }
     return { ans, ok, total: b.questions.length };
   }
+  const COURSES = ["1", "2", "3"];
+  const inCourse = (b, c) => !b.course || b.course === c;
+  function selCourse() {
+    const c = store.get("tm:course", null);
+    if (COURSES.includes(c)) return c;
+    const f = ctx.banks.find((b) => !b.user && b.course);
+    return f ? f.course : "3";
+  }
   const curBank = () => {
-    const bs = ctx.banks, id = store.get("bank", null);
-    return bs.find((b) => b.id === id) || bs.find((b) => !b.user) || bs[0];
+    const bs = ctx.banks, id = store.get("bank", null), c = selCourse();
+    const sel = bs.find((b) => b.id === id);
+    if (sel && (sel.user || inCourse(sel, c))) return sel;
+    return bs.find((b) => !b.user && inCourse(b, c)) || bs.find((b) => !b.user) || bs[0];
   };
 
   function delUser(id) {
@@ -166,11 +179,26 @@
       plus: '<path d="M12 5v14M5 12h14"/>',
       star: '<path d="M12 4l2.5 5.2 5.5.8-4 3.9.9 5.6L12 17l-4.9 2.5.9-5.6-4-3.9 5.5-.8z"/>'
     };
-    if (!bs.length) {
+    if (!bs.length && !ctx.idxOk) {
       A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2></div>${A.emptyState(A.ICX.warn, "Testlar yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang.")}`;
       return;
     }
-    const b = curBank();
+    const off = bs.filter((x) => !x.user), c = selCourse();
+    const courseTabs = off.length ? `<div class="seg flat tm-courses" role="group">${COURSES.map((k) => `<button data-course="${k}" aria-selected="${k === c}">${k}-kurs</button>`).join("")}</div>` : "";
+    const bCur = bs.length ? curBank() : null;
+    if (!bCur || !(bCur.user || inCourse(bCur, c))) {
+      const msg = !off.length ? ((window.I18N?.lang || "uz") !== "uz" ? "Inglizcha guruhlar uchun testlar tez orada qo‘shiladi." : "Testlar tez orada qo‘shiladi.") : "Bu kurs uchun testlar tez orada qo‘shiladi.";
+      const mine = bs.filter((x) => x.user);
+      A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2><p class="muted">Sessiya testlarini mavzu bo‘yicha va aralash ishlang, xatolaringizni takrorlang.</p></div>
+        ${courseTabs}
+        <div class="soon-card"><span class="soon-ico">${A.svg(ico.stat, 40, 1.6)}</span><h3>Tez orada</h3><p class="muted">${esc(msg)}</p></div>
+        ${mine.length ? `<h3 class="group-label">Mening testlarim</h3><div class="chips tm-banks">${mine.map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="false">${esc(x.title)}</button>`).join("")}</div>` : ""}
+        <div class="tm-modes tm-small"><a class="tm-mode" href="${BASE}/qoshish"><span class="tm-ico">${A.svg(ico.plus, 24)}</span><span><b>O‘z testim</b><small>Matn yoki fayldan qo‘shish</small></span></a></div>`;
+      A.view.querySelectorAll("[data-course]").forEach((x) => x.addEventListener("click", () => { store.set("tm:course", x.dataset.course); store.set("bank", ""); pageHome(); }));
+      A.view.querySelectorAll("[data-bank]").forEach((x) => x.addEventListener("click", () => { store.set("bank", x.dataset.bank); pageHome(); }));
+      return;
+    }
+    const b = bCur;
     const s = bankStats(b);
     const fvN = Object.keys(favs()).filter((x) => ctx.by[x.split(":")[0]]).length;
     const due = dueCards(bs);
@@ -181,13 +209,14 @@
     ];
     A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2><p class="muted">Sessiya testlarini mavzu bo‘yicha va aralash ishlang, xatolaringizni takrorlang.</p></div>
       ${sv ? `<a class="resume tm-resume" href="${BASE}/run"><span class="play">${A.svg(A.IC.play, 22, 0)}</span><span class="resume-txt"><small>Tugallanmagan test</small><strong>${sv.items.filter((x) => x.chk || x.sel.length).length} / ${sv.items.length} ta savol · davom ettirish</strong></span></a>` : ""}
+      ${courseTabs}
       <div class="tm-bank">
         ${A.ring(pct(s.ok, s.total), 62)}
         <div class="tm-bank-t"><b>${esc(b.title)}</b>
           <small>${s.total} ta savol · ishlangan ${s.ans} · to‘g‘ri ${s.ok}${s.ans ? ` (${pct(s.ok, s.ans)}%)` : ""}</small></div>
         ${b.user ? `<button class="btn danger" id="delBank" style="margin-left:auto">O‘chirish</button>` : ""}
       </div>
-      ${bs.length > 1 ? `<div class="chips tm-banks">${bs.map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title)}</button>`).join("")}</div>` : ""}
+      ${bs.filter((x) => x.user || inCourse(x, c)).length > 1 ? `<div class="chips tm-banks">${bs.filter((x) => x.user || inCourse(x, c)).map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title)}</button>`).join("")}</div>` : ""}
       <div class="tm-modes">${modes.map(([id, t, d]) => `<a class="tm-mode" href="${BASE}/${id}"><span class="tm-ico">${A.svg(ico[id], 26)}</span><span><b>${t}</b><small>${d}</small></span>${A.chev || ""}</a>`).join("")}</div>
       <h3 class="group-label">Tezkor</h3>
       <div class="tm-quick">
@@ -203,6 +232,7 @@
         <a class="tm-mode" href="${BASE}/qoshish"><span class="tm-ico">${A.svg(ico.plus, 24)}</span><span><b>O‘z testim</b><small>Matn yoki fayldan qo‘shish</small></span></a>
       </div>`;
     A.view.querySelectorAll("[data-bank]").forEach((x) => x.addEventListener("click", () => { store.set("bank", x.dataset.bank); pageHome(); }));
+    A.view.querySelectorAll("[data-course]").forEach((x) => x.addEventListener("click", () => { store.set("tm:course", x.dataset.course); store.set("bank", ""); pageHome(); }));
     A.$("#delBank")?.addEventListener("click", () => {
       if (!confirm("“" + b.title + "” testi o‘chirilsinmi? Natijalar ham o‘chadi.")) return;
       delUser(b.id); A.toast("Test o‘chirildi"); pageHome();
@@ -226,7 +256,7 @@
     }).join("");
     const users = ctx.banks.filter((x) => x.user);
     A.view.innerHTML = `<div class="hello"><h2>Mavzu bo‘yicha</h2><p class="muted">${esc(b.title)} · amaliy mashg‘ulotlar mavzulari</p></div>
-      ${ctx.banks.filter((x) => !x.user).length > 1 ? `<div class="chips">${ctx.banks.filter((x) => !x.user).map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title)}</button>`).join("")}</div>` : ""}
+      ${ctx.banks.filter((x) => !x.user && inCourse(x, selCourse())).length > 1 ? `<div class="chips">${ctx.banks.filter((x) => !x.user && inCourse(x, selCourse())).map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="${x.id === b.id}">${esc(x.title)}</button>`).join("")}</div>` : ""}
       <div class="tm-topics">${rows || A.emptyState(A.ICX.warn, "Mavzular yo‘q", "Bu testda mavzularga ajratilgan savollar yo‘q. “Aralash” bo‘limidan foydalaning.")}</div>
       ${users.length ? `<h3 class="group-label">Mening testlarim</h3><div class="tm-topics">${users.map((u) => `<a class="tm-topic" href="${BASE}/mavzu/b-${esc(u.id)}"><span class="tm-tn">★</span><span class="tm-tt"><b>${esc(u.title)}</b><small>${u.questions.length} ta savol</small></span></a>`).join("")}</div>` : ""}`;
     A.view.querySelectorAll("[data-bank]").forEach((x) => x.addEventListener("click", () => { store.set("bank", x.dataset.bank); pageTopics(); }));
@@ -696,6 +726,10 @@ Qoidalar: har savol "?" bilan boshlansin; to'g'ri javob "+", xato javob "-" bila
     if (p[1] !== "run") stopTick();
     const sub = p[1];
     if (!sub) return pageHome();
+    if (["mavzu", "aralash", "imtihon", "kartochka"].includes(sub)) {   // test bo'lmasa (masalan, tilga mos test hali yo'q) bosh sahifaga
+      await loadBanks();
+      if (!ctx.banks.length) { location.replace(BASE); return; }
+    }
     if (sub === "mavzu") return p[2] ? pageSetup("mavzu", p[2], query) : pageTopics();
     if (sub === "aralash") return pageSetup("aralash", null, query);
     if (sub === "imtihon") return pageSetup("imtihon", null, query);

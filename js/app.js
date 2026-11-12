@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -42,6 +42,7 @@
   /* ---------- Ma'lumotlarni yuklash ---------- */
   const cache = {};
   async function loadJSON(path) {
+    path = window.I18N.path(path);   // tanlangan tilda fayl bo'lsa shuni, bo'lmasa O'zbekchasini oladi
     if (!cache[path]) {
       cache[path] = fetch(path).then((r) => {
         if (!r.ok) throw new Error(path);
@@ -315,6 +316,10 @@
     view.innerHTML = `<div class="hello"><h2>Sozlamalar</h2></div>
       <section class="settings acc-sec" id="accBox"><p class="small muted" style="margin:0">Hisob yuklanmoqda…</p></section>
       <section class="settings">
+        <div class="setting-col"><span>${esc(t("Til"))}</span>
+          <div class="seg flat" role="group" style="margin:8px 0 0">
+            ${window.I18N.SUPPORTED.map((l) => `<button data-lang="${l}" aria-selected="${window.I18N.lang === l}">${esc(window.I18N.NAMES[l])}</button>`).join("")}</div>
+          <p class="small muted" style="margin:8px 0 0">${esc(t("Kontent tanlangan tilda ko‘rsatiladi. Hali tarjima qilinmagan bo‘limlar O‘zbekcha chiqadi."))}</p></div>
         <div class="setting-col"><span>Ko'rinish</span>
           <div class="seg flat" role="group" style="margin:8px 0 0">
             <button data-th="" aria-selected="${!th}">Avto</button><button data-th="light" aria-selected="${th === "light"}">Yorug‘</button><button data-th="dark" aria-selected="${th === "dark"}">Tungi</button></div></div>
@@ -322,6 +327,11 @@
         <div class="setting-row about"><span class="small"><strong>ALVORA Med</strong><br>Yaratuvchi jamoa: ALVORA<br>Muallif: Asadbek Axmatkulov, 2-son davolash ishi</span></div>
         <div class="setting-row small muted"><span>Versiya ${VERSION}</span></div>
       </section>`;
+    view.querySelectorAll("[data-lang]").forEach((b) => b.addEventListener("click", () => {
+      if (b.dataset.lang === window.I18N.lang) return;
+      store.set("lang", b.dataset.lang);   // hisobga ham saqlanadi (boshqa qurilmada ham shu til)
+      location.reload();
+    }));
     view.querySelectorAll("[data-th]").forEach((b) => b.addEventListener("click", () => {
       store.set("theme", b.dataset.th || null);
       applyPrefs();
@@ -374,8 +384,8 @@
     if (!f || !f.meta.pdf) return pageNotFound();
     setChrome("PDF · " + f.meta.abbr, true, "fanlar");
     view.classList.add("wide");
-    view.innerHTML = `<div class="pdf-bar"><span class="small muted">Ko‘rinmasa, yuklab oling</span><a class="btn" href="${esc(f.meta.pdf)}" download>Yuklab olish</a></div>
-      <iframe class="sim-frame pdf-frame" title="${esc(f.meta.name)} (PDF)" src="${esc(f.meta.pdf)}#view=FitH"></iframe>`;
+    view.innerHTML = `<div class="pdf-bar"><span class="small muted">Ko‘rinmasa, yuklab oling</span><a class="btn" href="${esc(window.I18N.path(f.meta.pdf))}" download>Yuklab olish</a></div>
+      <iframe class="sim-frame pdf-frame" title="${esc(f.meta.name)} (PDF)" src="${esc(window.I18N.path(f.meta.pdf))}#view=FitH"></iframe>`;
   }
 
   /* ---------- Qo'llanmani to'liq o'qish ---------- */
@@ -1032,7 +1042,7 @@
     if (!s) return pageNotFound();
     setChrome(s.name, true, "sim");
     view.classList.add("wide");
-    view.innerHTML = `<iframe class="sim-frame" title="${esc(s.name)}" src="${esc(s.file)}" loading="eager"></iframe>`;
+    view.innerHTML = `<iframe class="sim-frame" title="${esc(s.name)}" src="${esc(window.I18N.path(s.file))}" loading="eager"></iframe>`;
     const fr = $(".sim-frame", view);
     fr.addEventListener("load", () => {
       try {
@@ -1835,7 +1845,7 @@
 
   applyPrefs();
   window.ACC.boot(bridge());
-  route();
+  window.I18N.ready.then(() => { window.I18N.translateStatic(); route(); });
 
   /* ---------- Offline ishlash ---------- */
   if ("serviceWorker" in navigator && location.protocol !== "file:") {

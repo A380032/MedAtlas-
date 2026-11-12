@@ -189,7 +189,7 @@
     const el = document.getElementById("accSync");
     if (!el) return;
     const at = Number(ls.get("tqsync:at") || 0);
-    el.textContent = at ? "Oxirgi saqlash: " + new Date(at).toLocaleString("uz-UZ", { hour: "2-digit", minute: "2-digit", day: "numeric", month: "short" }) : "Hali saqlanmagan";
+    el.textContent = at ? "Oxirgi saqlash: " + new Date(at).toLocaleString(window.I18N.locale(), { hour: "2-digit", minute: "2-digit", day: "numeric", month: "short" }) : "Hali saqlanmagan";
   }
 
   /* ---------- Kirish usullari ---------- */

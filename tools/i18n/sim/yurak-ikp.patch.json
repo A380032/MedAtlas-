@@ -1,0 +1,7 @@
+[
+ [".toString().replace(\".\",\",\");", ".toString();", 1],
+ ["spike(t1-.09,sp.s4*.6,\"IV\")", "spike(t1-.09,sp.s4*.6,\"S4\")", 1],
+ ["spike(t1,(sp.s1??1)*.85,\"I\",true)", "spike(t1,(sp.s1??1)*.85,\"S1\",true)", 1],
+ ["spike(t2,s2,\"II\")", "spike(t2,s2,\"S2\")", 1],
+ ["spike(t2+.15,sp.s3*.6,\"III\")", "spike(t2+.15,sp.s3*.6,\"S3\")", 1]
+]

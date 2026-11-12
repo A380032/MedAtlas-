@@ -1,0 +1,2204 @@
+0	Biochemistry Laboratory
+1	Biochemistry: 20 clinical-laboratory cases — first the patient and theory, then the assay on the instruments, and finally interpretation of the result
+2	=
+3	=
+4	▶ Start
+5	■ Remove
+6	=
+7	: time is up
+8	Speed
+9	=
+10	=
+11	=
+12	=
+13	=
+14	Semester III — metabolism
+15	Semester IV — molecular and organ biochemistry
+16	⟦0⟧ clinical-laboratory cases based on the calendar-thematic plan (semesters III and IV) and the laboratory work in the manual. Each case has four stages: first you meet the patient, then the biochemical basis and method of the assay are explained in full, then you perform the assay yourself on the instruments, and finally you calculate and interpret the result.
+17	1 · Patient
+18	2 · Theory
+19	3 · Laboratory
+20	4 · Conclusion
+21	Completed: ⟦0⟧ / ⟦1⟧
+22	Manual: topic ⟦0⟧ · ⟦1⟧
+23	Best result: ⟦0⟧%
+24	Patient and task
+25	Theory and method
+26	Laboratory
+27	Result and conclusion
+28	First read the theory and answer the readiness question
+29	First complete the laboratory work
+30	← Cases
+31	↻ New patient
+32	<b>Task.</b><ol style='margin:6px 0 0'>
+33	=
+34	Go to theory →
+35	Biochemical basis
+36	Readiness question
+37	Go to laboratory →
+38	<b>Correct.</b>
+39	<b>Incorrect.</b>
+40	First complete the step “⟦0⟧”
+41	Procedure
+42	Lab notebook
+43	Laboratory work completed
+44	Steps not completed: ⟦0⟧. They count as errors.
+45	All results have been recorded in the lab notebook. Now calculate and interpret them.
+46	Go to result and conclusion →
+47	Assay results
+48	The values you measured and the laboratory's other results. Values above the reference range are shown in red, low values in blue.
+49	Parameter
+50	Result
+51	Reference range
+52	Calculation and report
+53	— select —
+54	Check result
+55	Fill in all fields and answer the questions
+56	could not be checked
+57	✓ Correct.
+58	✗ Incorrect.
+59	Step not completed: “
+60	Correct answers: ⟦0⟧ / ⟦1⟧. Procedure errors: ⟦2⟧⟦3⟧.
+61	(each reduces the result by 8%, at most 50%)
+62	<b>Conclusion.</b>
+63	Retry with a new patient
+64	List of cases
+65	Expected: ≈ ⟦0⟧⟦1⟧
+66	Correct answer:
+67	=
+68	=
+69	=
+70	Centrifuge the blood to separate ⟦0⟧ (⟦1⟧ rpm, ⟦2⟧ min)
+71	Centrifuge
+72	Blood was collected into a tube containing 3.2% sodium citrate (light-blue cap) at a 9:1 ratio. Centrifuge to separate plasma.
+73	Blood was collected into a tube with a clot activator (red cap) and left at room temperature for 30 minutes to clot. Centrifuge to separate serum.
+74	=
+75	=
+76	<rect x="80" y="140" width="250" height="52" rx="6" fill="#1D2A12"/><text x="95" y="172" font-family="IBM Plex Mono" font-size="20" fill="#7CFF9A">⟦0⟧ rpm  ⟦1⟧:00</text>
+77	<text x="205" y="240" text-anchor="middle" font-size="12" fill="#3A3127">Laboratory centrifuge</text>
+78	plasma / erythrocytes
+79	serum / clot
+80	patient blood
+81	balance (water)
+82	Rotation
+83	rpm
+84	Time
+85	Place the tube in the rotor
+86	Balance tube in the opposite slot
+87	Close the lid and start
+88	The tube with the patient's blood was placed in the rotor.
+89	A balance tube of equal volume was placed in the opposite slot.
+90	No tube in the rotor
+91	Rotor is unbalanced: no tube of equal weight was placed in the opposite slot (the centrifuge vibrates and the tube may break)
+92	⟦0⟧ rpm is too high: erythrocytes may be damaged and hemolysis may occur
+93	Separation incomplete: ⟦0⟧ rpm and ⟦1⟧ minutes are not enough (needed: ⟦2⟧ rpm, ⟦3⟧ min)
+94	Centrifugation finished: ⟦0⟧ separated.
+95	Patient serum
+96	⟦0⟧: select the test on the analyzer
+97	⟦0⟧: pipetting into the cuvettes
+98	⟦0⟧: mixing and incubation (⟦1⟧, ⟦2⟧ min)
+99	=
+100	⟦0⟧: zero against the blank and measure
+101	⟦0⟧: kinetic measurement (every minute, 3 min)
+102	=
+103	Sample
+104	=
+105	Blank
+106	=
+107	Standard
+108	Working reagent
+109	Distilled water
+110	Standard (⟦0⟧ ⟦1⟧)
+111	Biochemical analyzer — ⟦0⟧
+112	— analyzer software —
+113	MENU: select the test
+114	Program
+115	“⟦0⟧” is not the ordered test. Required test: ⟦1⟧
+116	Program selected: ⟦0⟧
+117	⟦0⟧\nMethod: ⟦1⟧\nMode: ⟦2⟧\nλ = ⟦3⟧ nm   Temperature: ⟦4⟧\nReagent: ⟦5⟧ µL   Sample: ⟦6⟧ µL   Incubation: ⟦7⟧ min⟦8⟧
+118	kinetic (ΔA/min), factor F =
+119	end point, against the standard
+120	Standard:
+121	Pipette volume
+122	Put on a new tip
+123	The pipette contains liquid — dispense it into a cuvette first
+124	A new disposable tip was put on the pipette.
+125	Pipette
+126	Click a vessel to aspirate liquid, then click a cuvette to dispense.
+127	=
+128	Reagent
+129	=
+130	Water
+131	Sample (patient)
+132	Aspirate
+133	Dispense into cuvette
+134	The cuvettes have already been mixed and placed in incubation
+135	No tip on the pipette
+136	Tip not changed: the tip contaminated with “⟦0⟧” was dipped into “⟦1⟧” (contamination)
+137	In the pipette: ⟦0⟧, ⟦1⟧ µL → select a cuvette
+138	First aspirate liquid from a vessel
+139	Cuvette ⟦0⟧: ⟦1⟧ µL — ⟦2⟧
+140	Mix and place in the thermostat
+141	Incubation
+142	Liquid left in the pipette
+143	Cuvette ⟦0⟧ is empty
+144	⟦0⟧: ⟦1⟧ ⟦2⟧ µL (needed ⟦3⟧ µL)
+145	Excess liquid in cuvette ⟦0⟧: ⟦1⟧
+146	Cuvettes are empty
+147	Pipetting error —
+148	All cuvettes were filled correctly.
+149	Incubation was stopped early (⟦0⟧ — needed ⟦1⟧:00): the reaction did not go to completion
+150	Incubation ran too long (⟦0⟧): color stability may be compromised
+151	Incubation completed.
+152	First prepare the cuvettes
+153	ZERO (blank)
+154	KINETICS (3 min)
+155	MEASURE
+156	Measuring chamber
+157	Place the cuvette in the measuring chamber
+158	First mix and incubate
+159	Zero was set against “⟦0⟧” — zero is set only against the blank (reagent blank)
+160	λ ⟦0⟧ nm  ⟦1⟧\nZERO set (⟦2⟧)\nA = 0.000
+161	The analyzer was zeroed against “⟦0⟧”.
+162	The cuvette was removed from the thermostat before incubation was finished
+163	First incubate
+164	λ ⟦0⟧ nm  ⟦1⟧  KINETICS\nA(0) = ⟦2⟧
+165	=
+166	ΔA/min (mean) = ⟦0⟧
+167	Lag phase was not awaited (insufficient pre-incubation): the rate in the first minute is low
+168	⟦0⟧: ΔA/min = ⟦1⟧ — recorded in the notebook
+169	Measurement was done without zeroing: the reagent's own color was added to the result
+170	λ ⟦0⟧ nm  ⟦1⟧\n⟦2⟧: A = ⟦3⟧
+171	⟦0⟧ — standard: A = <b>⟦1⟧</b>
+172	⟦0⟧ — sample: A = <b>⟦1⟧</b>
+173	Blank: A = ⟦0⟧
+174	⟦0⟧: measurement completed (A<sub>sample</sub> = ⟦1⟧, A<sub>standard</sub> = ⟦2⟧)
+175	=
+176	=
+177	=
+178	=
+179	=
+180	<g transform="translate(⟦0⟧,40)"><rect x="0" y="0" width="26" height="120" rx="10" fill="#E5E8EB" stroke="#6E7780"/><rect x="5" y="-14" width="16" height="16" rx="4" fill="#C8372D"/><rect x="4" y="30" width="18" height="16" rx="2" fill="#1D2A12"/><text x="13" y="42" font-family="IBM Plex Mono" font-size="8" fill="#7CFF9A" text-anchor="middle">⟦1⟧</text>⟦2⟧<text x="13" y="190" font-size="10" text-anchor="middle" fill="#3A3127">pipette</text></g>
+181	<rect x="⟦0⟧" y="150" width="⟦1⟧" height="80" rx="8" fill="#5B6670"/><text x="⟦2⟧" y="222" font-size="11" fill="#fff">Thermostat ⟦3⟧</text>
+182	(off)
+183	=
+184	=
+185	=
+186	=
+187	<rect x="⟦0⟧" y="118" width="26" height="60" rx="4" fill="#2B2F33"/><text x="⟦1⟧" y="194" font-size="9" text-anchor="middle" fill="#3A3127">chamber</text><text x="⟦2⟧" y="232" font-size="10.5" text-anchor="middle" fill="#3A3127">Semi-automatic analyzer</text>
+188	Measure and pour ⟦0⟧ mL ⟦1⟧ into the flask
+189	Add the indicators
+190	Fill the burette with titrant and bring it to the “0” mark
+191	Titration: ⟦0⟧
+192	Titrant: ⟦0⟧. Burette 25 mL, graduation 0.1 mL; one drop ≈ 0.05 mL.
+193	=
+194	=
+195	=
+196	<rect x="⟦0⟧" y="⟦1⟧" width="250" height="200" rx="10" fill="#fff" stroke="#8D959C"/><text x="⟦2⟧" y="⟦3⟧" font-size="12" font-weight="600" fill="#3A3127">Burette scale (magnified)</text>
+197	=
+198	=
+199	<text x="⟦0⟧" y="⟦1⟧" font-size="10" fill="#6B5F51">Read from the bottom of the meniscus</text>
+200	=
+201	Titration flask
+202	Volume
+203	Measure and pour ⟦0⟧
+204	⟦0⟧ mL taken — the method requires ⟦1⟧ mL (the calculation formula is set up for ⟦2⟧ mL)
+205	⟦0⟧ mL of ⟦1⟧ was poured into the flask.
+206	Add
+207	Select the substance to add
+208	“⟦0⟧” was not added
+209	“⟦0⟧” is not added in this method⟦1⟧
+210	The required substances were added.
+211	Fill the burette and bring it to “0”
+212	Burette filled, meniscus at the “0” mark, air bubble at the tip removed.
+213	First fill the burette
+214	1 drop (0.05 mL)
+215	0.5 mL
+216	2 mL stream
+217	Color changed — record the volume
+218	⟦0⟧: the color has not changed yet (⟦1⟧ mL) — continue titrating
+219	⟦0⟧: the end point was overshot (⟦1⟧ mL). Titrate dropwise when approaching the end point
+220	⟦0⟧: burette reading <b>⟦1⟧ mL</b>
+221	Titration completed.
+222	Graduated cylinder/pipette
+223	Indicators
+224	Burette stopcock
+225	Collect the ⟦0⟧ sample in a clean container and mix
+226	Dip the test strip for 1–2 s until all zones are immersed
+227	Blot excess urine by touching the strip to the edge of the container
+228	After ⟦0⟧ s, compare the zones with the color chart
+229	=
+230	=
+231	<text x="160" y="60" font-size="11" fill="#3A3127">Test strip (⟦0⟧ zones)</text>
+232	Take the sample and mix
+233	Fresh (⟦0⟧) ⟦1⟧ was mixed.
+234	Not older than 2 hours
+235	Dip
+236	Remove
+237	Dipped
+238	Strip dipped for ⟦0⟧ s — longer than 1–2 s: reagents are washed out
+239	Strip dipped too briefly: the zones were not fully wetted
+240	Strip dipped for ⟦0⟧ s.
+241	Touch to the edge to remove the excess
+242	First dip the strip
+243	Excess urine was removed late: drops may run into neighboring zones and the colors may mix
+244	Excess urine removed, strip held horizontally.
+245	=
+246	Record the readings
+247	Select the color from the chart for each zone
+248	Excess urine was not removed
+249	Result read at ⟦0⟧ s — colors have not fully developed (wait ⟦1⟧ s)
+250	Result read late (⟦0⟧ s): the color keeps changing, the result is unreliable
+251	⟦0⟧: read as “⟦1⟧”, actually “⟦2⟧”
+252	=
+253	Stopwatch
+254	Dipping: click “Dip” and after 1–2 seconds click “Remove”. The stopwatch starts from the moment the strip is removed.
+255	Select the correct sample for analysis
+256	Open the package and place the test on a dry, flat surface
+257	Dip the test strip up to the MAX mark for 10–15 s
+258	Apply ⟦0⟧ drops to the sample well (S)
+259	Wait ⟦0⟧ minutes
+260	Read the C and T zones and evaluate the result
+261	=
+262	=
+263	=
+264	=
+265	=
+266	=
+267	=
+268	Test cassette
+269	Sample: ⟦0⟧
+270	Open the package
+271	The test was removed from the package (expiry date checked) and placed on a flat surface.
+272	Strip dipped for ⟦0⟧ s — 10–15 s needed: the membrane did not absorb enough urine
+273	Strip dipped for ⟦0⟧ s — longer than 15 s: the conjugate may be washed away
+274	Test strip dipped for ⟦0⟧ s (not beyond the MAX mark).
+275	Drops
+276	Apply drops
+277	⟦0⟧ drops is too few — ⟦1⟧ drops needed: the liquid does not reach the end of the membrane
+278	⟦0⟧ drops is too many — ⟦1⟧ drops needed: excess liquid floods the result window
+279	⟦0⟧ drops were applied to well S.
+280	Timer (×30)
+281	Positive (C and T lines)
+282	Negative (C line only)
+283	Invalid (no C line)
+284	Record the result
+285	First place the sample
+286	Select the result
+287	Result read at ⟦0⟧ minutes — ⟦1⟧ minutes of waiting needed (a faint T line may not be visible yet)
+288	Result read at ⟦0⟧ minutes — a result after ⟦1⟧ minutes is unreliable
+289	Result was evaluated incorrectly: the correct answer is ⟦0⟧
+290	Result: ⟦0⟧.
+291	Wash and dry the hands
+292	Wipe the finger with alcohol and wait for the alcohol to evaporate
+293	Match the glucometer code to the code on the box and insert the test strip
+294	Prick the side of the fingertip with a lancet and wipe away the first drop
+295	Touch the second drop to the test strip and read the result
+296	Determine glucose in capillary blood with a glucometer
+297	=
+298	<text x="155" y="98" font-family="IBM Plex Mono" font-size="26" font-weight="600" text-anchor="middle" fill="#1D2A12">⟦0⟧</text><text x="155" y="116" font-size="10" text-anchor="middle" fill="#1D2A12">mmol/L</text>
+299	=
+300	<text x="155" y="86" font-family="IBM Plex Mono" font-size="13" text-anchor="middle" fill="#1D2A12">CODE ⟦0⟧</text><text x="155" y="108" font-size="20" text-anchor="middle" fill="#1D2A12">🩸</text>
+301	=
+302	=
+303	=
+304	<text x="480" y="225" font-size="11" text-anchor="middle" fill="#3A3127">Patient's finger</text>
+305	<text x="155" y="20" font-size="11" text-anchor="middle" fill="#3A3127">Code on the test strip box: ⟦0⟧</text>
+306	Wash the hands in warm water and dry them
+307	Hands were washed and dried (warm water improves capillary blood flow).
+308	Alcohol evaporated.
+309	Wipe with an alcohol swab
+310	The fingertip pad was wiped with 70% alcohol. Wait until the alcohol has evaporated completely (≈ 30 s).
+311	Code
+312	Insert the test strip
+313	The glucometer code (⟦0⟧) does not match the code on the test strip box (⟦1⟧) — the result will be wrong
+314	Code matches: ⟦0⟧.
+315	Prick with a lancet
+316	The side of the finger was pricked, a drop came out.
+317	Wipe off the first drop with dry cotton
+318	First prick the finger
+319	The first drop (mixed with tissue fluid) was wiped off.
+320	Squeeze the finger hard
+321	The finger was squeezed hard: tissue fluid mixes with the blood and lowers the result
+322	Touch the drop to the test strip
+323	First insert the test strip
+324	Hands were not washed: sugar remaining on the skin may falsely raise the result
+325	Pricked before the alcohol evaporated: the blood is diluted with alcohol, the result is lowered and hemolysis occurs
+326	The first drop was used: it contains tissue fluid, so the result is unreliable
+327	Glucometer: <b>⟦0⟧ mmol/L</b> (capillary blood)
+328	Glucometer code
+329	Observe and evaluate the result
+330	=
+331	=
+332	=
+333	Order violated: “⟦0⟧” was performed before the previous step
+334	Amount
+335	Select a reagent or mark a tube.
+336	⟦0⟧: set the amount and click the tube.
+337	Reagents
+338	First mark the tube (cancel the reagent selection and click the tube)
+339	All tubes
+340	The observation was interpreted incorrectly. ⟦0⟧
+341	⏸ Pause
+342	Add the ⟦0⟧ restriction enzyme to the PCR products
+343	Restriction: incubation at 37 °C (60 min)
+344	Place the gel in the chamber in the correct orientation and add buffer
+345	Load the samples into the wells (starting from the marker)
+346	Electrophoresis: set the voltage and time and start
+347	View the gel on the UV transilluminator and determine the genotypes
+348	PCR–RFLP analysis: β-globin gene
+349	A fragment of the β-globin gene amplified by PCR is cut with the ⟦0⟧ restriction enzyme; the fragments are separated by size on an agarose gel and visualized under UV light with ethidium bromide (or SYBR).
+350	Marker
+351	=
+352	=
+353	=
+354	=
+355	=
+356	UV transilluminator
+357	Horizontal electrophoresis chamber (TAE buffer, 1.2% agarose)
+358	⟦0⟧ + add buffer
+359	The ⟦0⟧ restriction enzyme and its buffer were added to each PCR product.
+360	Restriction lasted ⟦0⟧ — incompletely digested DNA gives an additional fragment (1.35 kb)
+361	Restriction completed.
+362	Wells on the cathode (−) side
+363	Wells on the anode (+) side
+364	First complete the restriction
+365	Gel placed backwards: DNA is negatively charged (phosphate residues) and moves toward the anode (+) — the samples run out of the gel
+366	Gel is correct: wells on the cathode (−) side, DNA moves toward the anode (+).
+367	First place the gel
+368	The marker is loaded into the first well (so as not to confuse the lanes)
+369	⟦0⟧: 10 µL of sample + loading dye loaded into the well
+370	Voltage
+371	V
+372	Start electrophoresis
+373	⟦0⟧ V is too high: the gel overheats and the bands are distorted into a “smile” shape
+374	⟦0⟧ V × ⟦1⟧ min is not enough: the fragments do not separate
+375	Electrophoresis finished (⟦0⟧ V, ⟦1⟧ min).
+376	View on the UV transilluminator
+377	First run the electrophoresis
+378	Viewing under UV light: use a screen/goggles that protect the eyes and skin.
+379	Determine the genotype for each lane
+380	HbAA (healthy)
+381	HbAS (heterozygous, carrier)
+382	HbSS (sickle cell anemia)
+383	Record the genotypes
+384	Select a genotype for all lanes
+385	⟦0⟧: assessed as ⟦1⟧ — actually ⟦2⟧
+386	Gel orientation
+387	Loading order
+388	Power supply
+389	Pipette the calibrators, control and patient serum into the wells (25 µL)
+390	Add the peroxidase conjugate (100 µL)
+391	Incubation: room temperature, 60 min, with shaking
+392	Wash the wells 5 times with wash buffer
+393	Add the TMB substrate and keep in the dark for 15 min
+394	Add the stop solution (H₂SO₄)
+395	Read at 450 nm and find the concentration from the calibration curve
+396	=
+397	Patient
+398	ELISA: ⟦0⟧ (sandwich method)
+399	=
+400	=
+401	=
+402	<text x="40" y="22" font-size="11" fill="#3A3127">Microplate strip (coated with anti-⟦0⟧ antibodies)</text>
+403	Pipette the samples (25 µL)
+404	Calibrators, control and patient serum were pipetted into the wells (a new tip for each).
+405	Add the conjugate (100 µL)
+406	The second, peroxidase-labeled antibody was added.
+407	Incubation was started without adding the conjugate
+408	Incubation ⟦0⟧ — shorter than 60 minutes: antigen–antibody binding is incomplete, the signal is low
+409	Incubation finished.
+410	Wash (once)
+411	First finish the incubation
+412	Washing after the substrate is not possible
+413	Washed 5 times: the unbound conjugate was removed.
+414	TMB, in the dark
+415	Washed only ⟦0⟧ times (5 needed): unbound conjugate remains and the background (K0) is high
+416	Reaction with the substrate shorter than 15 minutes
+417	Substrate left too long: the high calibrators become saturated
+418	Color developed (blue).
+419	Stop solution (50 µL)
+420	First complete the substrate step
+421	Reaction stopped: the blue color turned yellow.
+422	Read at 450 nm
+423	First add the stop solution
+424	Patient sample: OD<sub>450</sub> = <b>⟦0⟧</b>
+425	=
+426	=
+427	=
+428	=
+429	=
+430	<line x1="⟦0⟧" y1="⟦1⟧" x2="⟦2⟧" y2="⟦3⟧" stroke="#1F5FA0" stroke-dasharray="5 4"/><text x="⟦4⟧" y="⟦5⟧" font-size="10" text-anchor="end" fill="#1F5FA0">patient OD = ⟦6⟧</text>
+431	=
+432	Calibration curve — click where the patient's OD value crosses the curve
+433	=
+434	Record the concentration
+435	Click a point on the graph
+436	Read incorrectly from the curve: ⟦0⟧ — by interpolation ≈ ⟦1⟧ ⟦2⟧
+437	⟦0⟧: ≈ ⟦1⟧ ⟦2⟧ (from the curve).
+438	Number of washes
+439	PT: warm 50 µL of plasma at 37 °C for 3 min
+440	PT: add 100 µL of thromboplastin-calcium and record the clotting time
+441	aPTT: 50 µL of plasma + 50 µL of activator, incubate at 37 °C for 3 min
+442	aPTT: add 50 µL of CaCl₂ and record the clotting time
+443	Mixing test: aPTT with patient + normal plasma (1 : 1)
+444	Coagulometer (optical/mechanical clot detector)
+445	=
+446	=
+447	READY 37.0 °C
+448	<circle cx="⟦0⟧" cy="78" r="14" fill="#4B535B"/><text x="⟦1⟧" y="112" font-size="9" text-anchor="middle" fill="#333">incub.⟦2⟧</text>
+449	<rect x="560" y="60" width="60" height="40" rx="5" fill="#2B2F33"/><text x="590" y="120" font-size="9" text-anchor="middle" fill="#333">measuring channel</text>
+450	<text x="360" y="160" font-size="11" text-anchor="middle" fill="#3A3127">Coagulometer · citrated plasma</text>
+451	⟦0⟧: clot formed — <b>⟦1⟧ s</b>
+452	PT pre-warming
+453	Plasma was not warmed to 37 °C: the clotting time is falsely prolonged
+454	Add thromboplastin-Ca (100 µL)
+455	=
+456	aPTT incubation
+457	First complete the PT step
+458	Incubation with the activator was shorter than 3 minutes: contact activation is incomplete
+459	Add CaCl₂ (50 µL)
+460	=
+461	aPTT with the mixture (1 : 1)
+462	=
+463	The patient's plasma was mixed 1 : 1 with normal donor plasma and incubated with the activator for 3 minutes.
+464	Place the patient's point on the nomogram (time and concentration)
+465	Assess the point relative to the treatment line
+466	Rumack–Matthew nomogram (paracetamol)
+467	On the graph, click where the time after ingestion (hours) and the blood paracetamol concentration (mg/L) intersect. The y-axis is logarithmic.
+468	<path d="⟦0⟧" stroke="#B03A32" stroke-width="2" fill="none"/><text x="⟦1⟧" y="⟦2⟧" font-size="10" fill="#B03A32">“probable hepatotoxicity” (200 mg/L, 4 h)</text>
+469	<path d="⟦0⟧" stroke="#A3600D" stroke-width="2.2" stroke-dasharray="7 4" fill="none"/><text x="⟦1⟧" y="⟦2⟧" font-size="10" fill="#A3600D">treatment line (150 mg/L, 4 h)</text>
+470	<text x="⟦0⟧" y="⟦1⟧" font-size="11" text-anchor="middle">Time after ingestion, h</text><text x="14" y="⟦2⟧" font-size="11" transform="rotate(-90 14 ⟦3⟧)" text-anchor="middle">Paracetamol, mg/L</text>
+471	<circle cx="⟦0⟧" cy="⟦1⟧" r="6" fill="#1F5FA0"/><text x="⟦2⟧" y="⟦3⟧" font-size="11" fill="#1F5FA0">⟦4⟧ h; ⟦5⟧ mg/L</text>
+472	=
+473	The point is above the treatment line — N-acetylcysteine is required
+474	The point is below the line — no antidote is needed
+475	Record the assessment
+476	Place the point on the graph
+477	Select the assessment
+478	The point was placed incorrectly: needed — ⟦0⟧ h and ⟦1⟧ mg/L
+479	The point was placed correctly.
+480	The assessment is incorrect: at ⟦0⟧ h the treatment line is ≈ ⟦1⟧ mg/L, the patient has ⟦2⟧ mg/L
+481	The assessment is correct: the threshold value at ⟦0⟧ h is ≈ ⟦1⟧ mg/L.
+482	Conclusion
+483	=
+484	=
+485	=
+486	=
+487	=
+488	=
+489	=
+490	=
+491	=
+492	=
+493	=
+494	=
+495	=
+496	=
+497	=
+498	=
+499	=
+500	=
+501	=
+502	=
+503	Glucose (GOD-PAP)
+504	Total cholesterol (CHOD-PAP)
+505	Triglycerides (GPO-PAP)
+506	ALT (IFCC, kinetic)
+507	AST (IFCC, kinetic)
+508	Urea (urease)
+509	Uric acid (uricase)
+510	Total protein (biuret)
+511	Albumin (BCG)
+512	Iron (ferrozine)
+513	Creatine kinase (CK, kinetic)
+514	Total bilirubin (Jendrassik–Grof)
+515	Direct bilirubin (Jendrassik–Grof)
+516	Paracetamol (enzymatic)
+517	Creatinine (Jaffe)
+518	α-Amylase (kinetic)
+519	titration (burette)
+520	Scurvy: determining vitamin C in urine
+521	Bleeding gums, punctate subcutaneous hemorrhages. Ascorbic acid is titrated by the Tillmans method.
+522	Patient ⟦0⟧, ⟦1⟧ years old, ⟦2⟧
+523	Complaints
+524	Bleeding and swollen gums, loose teeth, weakness, small hemorrhages on the legs, slow healing of minor wounds.
+525	History
+526	Lives alone. For the last 5–6 months has eaten mainly bread, pasta and tea; has hardly eaten any fruit or vegetables. Smokes.
+527	Examination
+528	The gums are bluish-red, loose and bleed on touch. Punctate hemorrhages around the hair follicles on the shins (perifollicular petechiae), “corkscrew” hairs. The skin is dry.
+529	Platelet count is normal. A 24-hour urine sample has been collected (diuresis is given as the 24-hour urine volume).
+530	Determine ascorbic acid in the urine by the **Tillmans method** (titration with 2,6-dichlorophenolindophenol).
+531	Calculate the amount of vitamin C excreted in the 24-hour urine and compare it with the reference range.
+532	Explain the biochemical mechanism of the clinical signs.
+533	Ascorbic acid and collagen synthesis
+534	**Ascorbic acid (vitamin C)** is a water-soluble vitamin that is not synthesized in the human body (the enzyme L-gulonolactone oxidase is absent). It is a strong **reducing agent**: it is itself easily oxidized to dehydroascorbic acid and reduces other substances.
+535	**Collagen synthesis:** keeps the iron in the active site of prolyl and lysyl hydroxylases in the Fe²⁺ state. Without hydroxyproline and hydroxylysine, the collagen triple helix is not stable and does not form fibers.
+536	Synthesis of **norepinephrine** from dopamine (dopamine β-hydroxylase), synthesis of **carnitine**, intestinal absorption of iron (Fe³⁺ → Fe²⁺).
+537	Antioxidant: scavenges free radicals, regenerates vitamin E.
+538	Proline|(in the procollagen chain)
+539	4-Hydroxyproline
+540	Stable triple|helix → collagen fibers
+541	Ascorbate
+542	Dehydroascorbate
+543	Vitamin C deficiency:|unstable collagen → scurvy
+544	prolyl hydroxylase|(Fe²⁺, O₂, α-KG)
+545	Fe³⁺ → Fe²⁺ reduction
+546	Ascorbate keeps the iron of prolyl hydroxylase in the reduced (Fe²⁺) state. In deficiency, collagen is not hydroxylated — the vessel wall, gums and skin become fragile.
+547	Principle of the method (Tillmans reaction)
+548	**2,6-Dichlorophenolindophenol** (Tillmans reagent) is blue in the oxidized state and pink in acid medium; ascorbic acid reduces it to the **colorless leuco form**. Acidified urine is titrated with the dye: as long as ascorbate is present, each added drop is decolorized. When all the ascorbate has been oxidized, the excess dye gives a **pink color** — if it persists for **30 seconds**, the titration is finished.
+549	Ascorbic acid + DCPIP (blue) → Dehydroascorbic acid + DCPIP·H₂ (colorless)\n\nX (mg/day) = A × 0.088 × V / B\nA — 0.001 N DCPIP used, mL;  0.088 — ascorbic acid corresponding to 1 mL of 0.001 N dye, mg;\nV — daily diuresis, mL;  B — urine taken for titration, mL (10 mL)
+550	Reference values
+551	Ascorbic acid in 24-hour urine
+552	20–30 mg/day
+553	Ascorbic acid in blood plasma
+554	23–85 µmol/L
+555	Daily requirement (adults)
+556	70–100 mg; more in smokers
+557	Measure 10 mL of urine into the flask.
+558	Add 20 drops of 10% HCl to create an acidic medium (no indicator is needed — the dye itself is the indicator).
+559	Fill the burette with 0.001 N DCPIP solution and bring it to “0”.
+560	Titrate dropwise: shake after each drop. Record the burette reading when the pink color persists for **30 s**.
+561	Near the end point the pink color appears for a moment and then disappears again. This means ascorbate is still present — only a color that **persists for 30 seconds** counts. An extra drop raises the result.
+562	What determines the end point of the titration in the Tillmans method?
+563	The pink color of phenolphthalein
+564	The pink color of excess 2,6-dichlorophenolindophenol in acid medium that persists for 30 s
+565	Disappearance of the blue color when iodine is added
+566	Formation of a precipitate
+567	Ascorbate reduces the dye to the colorless form. When the ascorbate is used up, the oxidized dye gives a pink color in acid medium — this is the end point.
+568	Titration: ascorbic acid in urine (Tillmans)
+569	0.001 N 2,6-dichlorophenolindophenol (blue)
+570	Acidic medium
+571	Create an acidic medium (10% HCl)
+572	10% HCl, 20 drops
+573	Phenolphthalein
+574	the dye itself acts as the indicator
+575	10% NaOH
+576	ascorbate decomposes quickly in alkaline medium and the dye stays blue
+577	until the pink color persists for 30 s
+578	Near the end point each drop leaves a momentary pink trace. When the color **persists**, click the “Color changed” button.
+579	DCPIP used (A)
+580	Daily diuresis (V)
+581	1000–2000 mL
+582	Ascorbic acid (urine)
+583	Hemoglobin
+584	130–160 g/L
+585	Platelets
+586	180–320 × 10⁹/L
+587	Prothrombin time
+588	11–15 s
+589	Ascorbic acid excreted in 24-hour urine (X = A × 0.088 × V / B)
+590	mg/day
+591	Assess the result
+592	Normal
+593	Decreased — vitamin C deficiency
+594	Increased
+595	What is the main biochemical cause of gum bleeding in scurvy?
+596	Decreased platelet count
+597	Instability of collagen and fragility of the vessel wall due to failure of proline and lysine hydroxylation
+598	Impaired prothrombin synthesis due to vitamin K deficiency
+599	Increased fibrinolysis
+600	Platelets and prothrombin time are normal. Without ascorbate, prolyl hydroxylase does not work — the collagen triple helix is not stable, and capillaries and gum tissue become fragile.
+601	What is the vitamin C–related cause of the patient's mild anemia?
+602	Ascorbate reduces dietary Fe³⁺ to Fe²⁺ and enhances iron absorption; in deficiency, absorption decreases
+603	Ascorbate is a component of the first enzyme of heme synthesis
+604	Ascorbate is the erythropoietin receptor
+605	Ascorbate transports vitamin B12
+606	In the intestine only Fe²⁺ is absorbed well (via DMT1). Ascorbate reduces iron and forms a soluble complex.
+607	Urinary excretion of ascorbic acid is sharply reduced — the body's stores are depleted. The clinical picture is consistent with **scurvy** (vitamin C hypovitaminosis). Treatment: ascorbic acid preparations, a diet rich in fruit and vegetables; quit smoking (smokers need an extra 35 mg/day).
+608	tubes (serial dilution)
+609	Acute pancreatitis: urinary amylase (Wohlgemuth method)
+610	Girdle-like pain, vomiting. Urinary diastase is determined by the serial dilution method.
+611	Sudden onset of severe epigastric pain radiating to the back (girdle-like); persistent vomiting that brings no relief; nausea.
+612	The illness began 8 hours after eating a lot of fatty food and drinking alcohol at a wedding. Gallstone disease had been diagnosed previously.
+613	Temperature 37.8 °C, pulse 108/min, BP 100/65 mm Hg. The abdomen is distended and sharply tender in the epigastrium. No bluish discoloration around the umbilicus.
+614	Leukocytes 15.2 × 10⁹/L. A urine sample was brought for analysis.
+615	Determine α-amylase (diastase) activity in the urine by the **Wohlgemuth method**.
+616	Calculate the activity in Wohlgemuth units and compare it with the reference range.
+617	Explain the mechanism of the rise of enzyme activity in the blood and its diagnostic significance.
+618	α-Amylase and enzyme diagnostics
+619	**α-Amylase** (hydrolase class) hydrolyzes the internal **α-1,4-glycosidic bonds** in starch and glycogen: starch → dextrins → maltose. Activator — **Cl⁻ ions**, cofactor — Ca²⁺. Main sources: the salivary glands and the pancreas. Because the molecule is small (≈ 50 kDa), it is filtered in the renal glomeruli and appears in the urine (**diastase**).
+620	**In acute pancreatitis**, trypsinogen is activated prematurely inside the gland; trypsin activates other proenzymes (proelastase, prophospholipase A₂, chymotrypsinogen) — **autolytic digestion** begins. Amylase and lipase pass from the damaged acinar cells into the blood and then into the urine.
+621	Trypsinogen
+622	Trypsin
+623	Proelastase, prophospholipase A₂,|chymotrypsinogen → active
+624	Autolysis (necrosis)|of gland tissue
+625	Acinar cell|damage
+626	Blood amylase, lipase ↑
+627	Urinary diastase ↑ (Wohlgemuth)
+628	activation inside the gland
+629	release of enzymes
+630	renal filtration
+631	Normally, trypsinogen is activated only in the duodenum by enteropeptidase.
+632	Principle of the method (Wohlgemuth)
+633	The urine is serially diluted two-fold and the same amount of **starch** is added to each tube. After 30 minutes at 38 °C it is tested with **iodine**: starch — **blue**, dextrins — **violet-red**, maltose — no color (the **yellow** color of iodine remains). The tube with the **highest dilution** in which starch is completely digested is found.
+634	Activity (A) = mL of 0.1% starch solution digested by 1 mL of undiluted urine in 30 minutes at 38 °C\nA = 2 mL × D   (D — dilution of the highest-dilution tube with yellow color)\nFor example, if the last yellow tube is 1 : 32: A = 2 × 32 = 64 units
+635	Urinary diastase (Wohlgemuth)
+636	16–64 units
+637	Salivary amylase (Wohlgemuth)
+638	160–320 units
+639	Serum α-amylase (kinetic)
+640	28–100 IU/L
+641	Serum lipase
+642	< 60 IU/L
+643	Pour 1 mL of saline (0.9% NaCl — Cl⁻ activates amylase) into each of the 10 tubes.
+644	Add 1 mL of urine to tube 1, mix, and transfer 1 mL to tube 2; continue in this way up to tube 10, and discard 1 mL from tube 10. Dilutions: 1 : 2, 1 : 4 … 1 : 1024.
+645	Add 2 mL of 0.1% starch to each and place them in a 38 °C thermostat for 30 minutes.
+646	Cool (the reaction stops), add 1 drop of 0.1% iodine to each and assess the colors.
+647	If the dilution sequence is broken (for example, a tube is skipped during transfer), all subsequent dilution levels will be wrong. Mix the tube before each transfer.
+648	What does the yellow color after adding iodine indicate in the Wohlgemuth method?
+649	Starch is not digested
+650	Starch is partially digested to dextrins
+651	Starch is completely digested (to maltose) — the color of the iodine itself
+652	Amylase is inhibited
+653	Maltose gives no color with iodine, so the yellow color of the iodine solution remains. Blue — starch, violet-red — dextrins.
+654	Wohlgemuth method: 10 tubes
+655	Select a reagent, set the amount and click a tube. For serial dilution, cancel the reagent selection, mark the tube and click the “Transfer 1 mL to the next” button.
+656	=
+657	0.9% NaCl
+658	=
+659	Urine
+660	0.1% starch
+661	=
+662	0.1% iodine
+663	All tubes: 38 °C, 30 min
+664	Incubated at 38 °C for 30 minutes
+665	Transfer 1 mL to the next
+666	Mark a tube
+667	Transfer order violated: next — tube ⟦0⟧
+668	Tube ⟦0⟧ does not have enough liquid to transfer
+669	1 mL of the mixture was transferred from tube ⟦0⟧ to tube ⟦1⟧
+670	1 mL was discarded from tube 10
+671	Starch was added before the dilution was finished
+672	Iodine was added before incubation — amylase had no time to act
+673	Urine is added only to tube 1
+674	Pour 1 mL of 0.9% NaCl into each tube
+675	Add 1 mL of urine to tube 1
+676	Serial dilution (1 → 10), discard 1 mL from tube 10
+677	Add 2 mL of 0.1% starch to each
+678	Incubate at 38 °C for 30 minutes
+679	Cool and add 1 drop of iodine to each
+680	Which is the **highest-dilution** tube in which starch is completely digested (yellow)?
+681	The yellow color persisted up to 1 : ⟦0⟧; in the next tube it is violet-red (dextrins).
+682	Identify the highest-dilution yellow tube
+683	Last yellow tube
+684	Serum α-amylase
+685	Glucose
+686	3.9–6.1 mmol/L
+687	Calcium (total)
+688	2.15–2.55 mmol/L
+689	Urinary diastase activity (A = 2 × D)
+690	Normal (16–64)
+691	Sharply increased
+692	Decreased
+693	Why does amylase rise in the urine in pancreatitis while lipase is hardly excreted?
+694	Lipase is synthesized in the kidney
+695	The amylase molecule is small (≈ 50 kDa) and is filtered in the glomeruli; lipase, once filtered, is reabsorbed and broken down in the tubules
+696	Amylase is active only in the urine
+697	Lipase is rapidly broken down in the blood and is not found at all
+698	That is why diastase rises after blood amylase and stays elevated longer; lipase stays elevated in the blood for a long time (7–14 days) and is more specific for pancreatitis.
+699	What is the decrease in the patient's calcium related to?
+700	Loss of calcium in the urine
+701	Fatty acids released by lipase form insoluble soaps with Ca²⁺ (fat necrosis)
+702	Increased parathyroid hormone synthesis
+703	Vitamin D excess
+704	Calcium soaps are deposited in foci of necrosis in the peripancreatic fat tissue — hypocalcemia is a sign of a severe course.
+705	Urinary diastase is ⟦0⟧ units — several times above the reference range. The clinical picture (girdle-like pain, vomiting, fatty food and alcohol, gallstone disease) and the sharp rise of amylase and lipase in the blood confirm **acute pancreatitis**.
+706	glucose oxidase–peroxidase (Trinder)
+707	mmol/L
+708	Working reagent (GOD, POD, 4-AAP, phenol)
+709	Standard glucose (5.55 mmol/L)
+710	glucometer + analyzer
+711	Glucose tolerance test: diagnosis of diabetes mellitus
+712	Thirst, polyuria, overweight. Screening with a glucometer, then an OGTT by the GOD-PAP method in venous plasma.
+713	For the last 3 months: dry mouth, thirst, waking often at night to urinate, weakness, itchy skin.
+714	Mother had type 2 diabetes mellitus. Low physical activity, sedentary work.
+715	Body mass index ⟦0⟧ kg/m² (obesity), increased waist circumference. BP 145/90 mm Hg.
+716	Preparation
+717	For 3 days before the test ate a usual diet (carbohydrate ≥ 150 g/day); 10 hours since the last meal.
+718	Measure glucose in capillary blood with a glucometer (screening).
+719	Determine glucose in venous plasma in the fasting state and **2 hours** after drinking 75 g of glucose by the **glucose oxidase method**.
+720	Evaluate the OGTT result according to WHO criteria.
+721	Blood glucose homeostasis and its determination
+722	The blood glucose level is regulated by **insulin** (lowers it) and the counter-regulatory hormones — glucagon, epinephrine, cortisol, growth hormone (raise it). In muscle and adipose tissue, insulin brings **GLUT4** transporters to the membrane; in the liver it enhances glycogen synthesis and glycolysis and suppresses gluconeogenesis.
+723	**In type 2 diabetes mellitus** the main disturbance is **insulin resistance** (often with visceral obesity) and relative insufficiency of β-cell secretion. After a glucose load, tissues take it up slowly — hyperglycemia persists.
+724	Blood glucose ↑
+725	β-cell: insulin
+726	Insulin receptor|(tyrosine kinase)
+727	GLUT4 to the membrane|(muscle, fat)
+728	Glucose into the cell
+729	Insulin resistance|(obesity)
+730	Hyperglycemia|persists
+731	GLUT2, glucokinase
+732	PI3-kinase → Akt
+733	signal weakens
+734	uptake decreases
+735	In insulin resistance the same amount of insulin activates less GLUT4 — glucose stays in the blood longer.
+736	Principles of the methods
+737	The **glucose oxidase–peroxidase (GOD-PAP, Trinder)** method — for diagnosis in venous plasma.
+738	**Glucometer** — glucose oxidase (or glucose dehydrogenase) immobilized on the test strip passes electrons to the electrode (electrochemical biosensor). For self-monitoring and screening only; the diagnosis is made in venous plasma.
+739	β-D-glucose + O₂ + H₂O → (glucose oxidase) → gluconolactone + H₂O₂\n2H₂O₂ + 4-aminoantipyrine + phenol → (peroxidase) → pink quinoneimine + 4H₂O   (λ = 505 nm)\n\nC (mmol/L) = (A sample / A standard) × 5.55
+740	Evaluating the OGTT (venous plasma, WHO)
+741	Condition
+742	Fasting, mmol/L
+743	After 2 hours, mmol/L
+744	Impaired fasting glycemia
+745	Impaired glucose tolerance
+746	Diabetes mellitus
+747	For glucose, blood is collected into a tube with **sodium fluoride** (gray cap): fluoride inhibits enolase and stops erythrocyte glycolysis. Otherwise, at room temperature glucose falls by ≈ 5–7% every hour.
+748	Measure capillary blood with a glucometer (screening).
+749	Centrifuge the blood in the gray-cap tubes (0 and 120 min) to separate plasma.
+750	On the analyzer select the “Glucose (GOD-PAP)” program: blank (2 mL reagent + 20 µL water), standard (2 mL reagent + 20 µL standard), sample (2 mL reagent + 20 µL plasma).
+751	Mix and incubate at 37 °C for 15 minutes, zero against the blank, and measure the standard and the sample. Repeat for the second sample.
+752	Can diabetes mellitus be diagnosed from a glucometer result?
+753	Yes, any result is sufficient for diagnosis
+754	No: a glucometer is for screening and self-monitoring; the diagnosis is made by a laboratory method in venous plasma
+755	Only if the result is below 5 mmol/L
+756	Only if it was measured in the morning
+757	Glucometer error is up to ±15%; the diagnosis is made in venous plasma by a standardized method (GOD-PAP or hexokinase).
+758	Venous blood was collected fasting and 2 hours after the glucose drink into tubes with sodium fluoride + potassium oxalate (gray cap). Fluoride stops glycolysis, and oxalate prevents clotting.
+759	Glucose, 0 min
+760	Plasma (0 min, fasting)
+761	Glucose, 120 min
+762	Plasma (120 min)
+763	Glucometer (capillary blood)
+764	3.3–5.5 mmol/L
+765	Plasma glucose, 0 min
+766	Plasma glucose, 120 min
+767	< 7.8 mmol/L
+768	Glycated hemoglobin (HbA1c)
+769	Triglycerides
+770	< 1.7 mmol/L
+771	HDL cholesterol
+772	> 1.0 mmol/L
+773	Plasma glucose, fasting (0 min)
+774	Plasma glucose, after 2 hours
+775	OGTT conclusion (WHO)
+776	Why is the patient's fasting glucose below the diabetes threshold, yet the OGTT showed diabetes?
+777	Laboratory error
+778	At an early stage, hepatic glucose output is still partly controlled in the fasting state, but after the load insulin-resistant tissues take up glucose slowly
+779	The glucometer malfunctioned
+780	The patient did not fast
+781	In type 2 diabetes, postprandial hyperglycemia often appears before fasting hyperglycemia — that is why an OGTT is performed in risk groups.
+782	Which period of glycemia does HbA1c reflect?
+783	The last 24 hours
+784	The last 2–3 months (erythrocyte lifespan)
+785	Only the time of the test
+786	The last year
+787	Glucose binds non-enzymatically (glycation) to the valine at the N-terminus of the hemoglobin β-chain; since an erythrocyte lives ≈ 120 days, HbA1c shows the mean glycemia of the previous 2–3 months.
+788	Fasting glucose is in the “impaired fasting glycemia” range, but ≥ 11.1 mmol/L after 2 hours — **diabetes mellitus** by WHO criteria (HbA1c is also ≥ 6.5%). Together with obesity, arterial hypertension and dyslipidemia — type 2 diabetes mellitus on a background of metabolic syndrome.
+789	test strip + qualitative reactions
+790	Galactosemia: detecting a reducing sugar in urine
+791	Vomiting, jaundice and hepatomegaly in a breastfed newborn. Trommer and Seliwanoff reactions, glucose test strip.
+792	Newborn ⟦0⟧, ⟦1⟧ days old, ⟦2⟧
+793	boy
+794	Complaints (from the mother)
+795	Vomiting and diarrhea after breastfeeding, poor weight gain, irritability, yellowing of the sclerae and skin.
+796	Born at term, birth weight 3400 g. The condition worsened from day 5. The parents are relatives.
+797	Skin and sclerae are jaundiced, the liver extends 4 cm below the costal margin. Ophthalmoscopy shows “oil-drop” cataract in both eyes.
+798	Blood glucose 2.6 mmol/L. A urine sample was brought for analysis.
+799	Test the urine with a multi-parameter test strip (glucose oxidase zone).
+800	Detect reducing sugars in the urine by the **Trommer reaction** and fructose by the **Seliwanoff reaction**.
+801	Compare the results and determine the type of sugar in the urine and the disease.
+802	Galactose metabolism and its disorders
+803	The milk sugar **lactose** is broken down in the intestine by lactase into glucose and **galactose**. Galactose is converted to glucose in the liver (Leloir pathway). The key enzyme is **galactose-1-phosphate uridyltransferase (GALT)**; its hereditary (autosomal recessive) deficiency is **classic galactosemia**.
+804	Lactose (milk)
+805	Galactose
+806	Galactose-1-phosphate
+807	UDP-galactose → UDP-glucose|→ glucose-1-phosphate
+808	Galactitol|(lens)
+809	Cataract
+810	Gal-1-P accumulation: liver,|kidney, CNS damage
+811	galactokinase (ATP)
+812	=
+813	aldose reductase (NADPH)
+814	In GALT deficiency, galactose-1-phosphate accumulates (hepatotoxic), and excess galactose is reduced to galactitol — osmotic swelling and cataract in the lens.
+815	Principles of the methods
+816	**Trommer reaction:** in alkaline medium, reducing sugars (those with a free hemiacetal hydroxyl — glucose, galactose, fructose, lactose, maltose) reduce Cu²⁺ to Cu⁺ on heating: blue Cu(OH)₂ → yellow CuOH → **brick-red Cu₂O** precipitate.
+817	**Seliwanoff reaction:** in concentrated HCl, ketoses (fructose) are quickly converted to hydroxymethylfurfural and give a **red** color with resorcinol; aldoses (glucose, galactose) give almost no color on brief heating.
+818	The **glucose zone of the test strip** works on the glucose oxidase principle — it is **specific for glucose only**; it does not detect galactose, fructose or lactose.
+819	R–CHO + 2Cu(OH)₂ → (t°, OH⁻) → R–COOH + Cu₂O↓ (brick-red) + 2H₂O
+820	Reducing sugars in urine
+821	not detected (Trommer negative)
+822	Galactose in blood
+823	< 0.3 mmol/L
+824	GALT activity in erythrocytes
+825	18.5–28.5 IU/g Hb
+826	Test the urine for glucose with a test strip.
+827	Pour 1 mL of urine into tubes 1 and 2, and 1 mL of 1% glucose into tube 3 (control).
+828	Add 1 mL of 10% NaOH and 3–5 drops of 1% CuSO₄ to tubes 1 and 3 (Trommer).
+829	Add 1 mL of Seliwanoff reagent to tube 2.
+830	Heat the tubes to boiling and compare the colors.
+831	Do not add too much CuSO₄: excess Cu(OH)₂ turns into **black CuO** on heating and masks the result.
+832	What does it mean if the Trommer reaction in urine is positive but the glucose oxidase test strip is negative?
+833	The urine contains a lot of glucose
+834	The urine contains a reducing sugar other than glucose
+835	Both tests are wrong
+836	The urine contains sucrose
+837	Glucose oxidase detects only glucose, whereas Trommer detects any reducing sugar. Sucrose is not a reducing sugar.
+838	Urine test strip
+839	Ketone
+840	Protein
+841	Trommer and Seliwanoff reactions
+842	1: urine
+843	2: urine
+844	3: glucose
+845	=
+846	1% glucose
+847	=
+848	10% NaOH
+849	=
+850	1% CuSO₄
+851	=
+852	Seliwanoff reagent
+853	Heat the marked tube to boiling
+854	heated to boiling
+855	Seliwanoff reagent is added only to tube 2
+856	Tube 2 is for the Seliwanoff reaction — NaOH/CuSO₄ is not added to it
+857	Tube 3 is for the control (glucose)
+858	Glucose only into the control tube
+859	Too much CuSO₄ (> 5 drops): black CuO forms on heating
+860	The Trommer tube was heated without adding NaOH and CuSO₄
+861	Heated without adding the Seliwanoff reagent
+862	1 mL of urine into tubes 1 and 2, 1 mL of glucose into tube 3
+863	1 mL of NaOH + 3–5 drops of CuSO₄ into tubes 1 and 3 (Trommer)
+864	1 mL of Seliwanoff reagent into tube 2
+865	Heat all three tubes to boiling
+866	Evaluate the results of all three reactions and the test strip together. What sugar is in the urine?
+867	Fructose
+868	A reducing sugar that is neither glucose nor fructose (galactose)
+869	No reducing sugar
+870	Trommer is positive (a reducing sugar is present), the glucose oxidase zone is negative (not glucose), Seliwanoff is negative (not a ketose) — in a newborn this is typical of galactosuria.
+871	Compare the results and identify the type of sugar
+872	Test strip: glucose
+873	Trommer reaction (urine)
+874	positive (brick-red precipitate)
+875	Seliwanoff reaction (urine)
+876	Galactose-1-phosphate in erythrocytes
+877	< 0.1 mmol/L
+878	Blood glucose
+879	2.8–4.4 mmol/L (newborn)
+880	Total bilirubin
+881	< 205 µmol/L (2–3 weeks)
+882	ALT
+883	< 40 IU/L
+884	Deficiency of which enzyme?
+885	Galactokinase
+886	Galactose-1-phosphate uridyltransferase (GALT)
+887	Aldolase B
+888	Lactase
+889	Main treatment measure
+890	Insulin
+891	Immediately stop milk and products containing lactose/galactose and switch to a soy-based or lactose-free formula
+892	Fructose restriction
+893	Administration of glucagon
+894	How does cataract form in galactosemia?
+895	Galactose directly denatures lens proteins
+896	Aldose reductase reduces galactose to galactitol; it cannot leave the cell, which leads to osmotic swelling and breakdown of the lens fibers
+897	UDP-galactose accumulates
+898	Calcium precipitates
+899	Galactitol crosses the cell membrane poorly and accumulates in the lens. This process also consumes NADPH.
+900	What is the cause of the patient's hypoglycemia?
+901	Insulin excess
+902	Accumulated galactose-1-phosphate inhibits phosphoglucomutase and glycogenolysis/gluconeogenesis, along with liver damage
+903	Glucosuria
+904	Excess glycogen accumulation
+905	Gal-1-P “ties up” the phosphate pool and impairs glucose release in the liver.
+906	A reducing sugar that is neither glucose nor a ketose was found in the urine, galactose in the blood and galactose-1-phosphate in the erythrocytes are elevated, and GALT activity is sharply reduced — **classic galactosemia** (autosomal recessive). It is life-threatening (the risk of E. coli sepsis is also high); milk must be stopped immediately.
+907	qualitative reaction + test strip
+908	Diabetic ketoacidosis: detecting ketone bodies
+909	Type 1 diabetes, insulin discontinued, Kussmaul breathing. Legal test, test strip and anion gap.
+910	Severe thirst, polyuria, nausea and vomiting, abdominal pain, weakness, drowsiness.
+911	Type 1 diabetes since age 12, treated with insulin. Had influenza 3 days ago and stopped injecting insulin on their own because of loss of appetite.
+912	Consciousness is clouded (stupor). Skin and mucous membranes are dry. Breathing is deep, noisy and infrequent (**Kussmaul breathing**), with the smell of **acetone** (rotten apples) on the breath. Pulse 118/min, BP 95/60 mm Hg.
+913	Urine and arterial blood gas analyses were obtained.
+914	Detect ketone bodies in the urine by **Legal's test** (urine of a healthy person — control).
+915	Test the urine with a test strip (glucose, ketone).
+916	Calculate the anion gap and assess the acid–base status.
+917	Ketogenesis and diabetic ketoacidosis
+918	**In insulin deficiency** (with glucagon predominance), hormone-sensitive lipase is activated in adipose tissue — many **fatty acids** are released into the blood. In the liver they undergo β-oxidation and produce a lot of **acetyl-CoA**. Because oxaloacetate is consumed in gluconeogenesis, acetyl-CoA cannot enter the Krebs cycle and is converted to **ketone bodies** in the liver mitochondria.
+919	Insulin ↓, glucagon ↑
+920	Lipolysis ↑ → fatty acids
+921	β-oxidation|(liver)
+922	Acetyl-CoA ↑↑
+923	HMG-CoA
+924	Acetoacetate
+925	β-Hydroxybutyrate
+926	Acetone (in breath)
+927	Metabolic acidosis|(anion gap ↑)
+928	HMG-CoA synthase
+929	HMG-CoA lyase
+930	NADH (β-HB dehydrogenase)
+931	spontaneous −CO₂
+932	Because oxaloacetate is diverted to gluconeogenesis, acetyl-CoA cannot enter the Krebs cycle. Keto acids donate H⁺ — bicarbonate is consumed.
+933	**Legal's test:** acetoacetate and acetone give a red color with **sodium nitroprusside** in alkaline medium; when **acetic acid** is added, it turns **cherry-red (violet)**. Creatinine also gives a red color in alkali but turns yellow in acid — they are distinguished with a control.
+934	**Test strip:** the ketone zone is based on nitroprusside (acetoacetate, acetone); it **does not detect β-hydroxybutyrate**. The glucose zone uses glucose oxidase.
+935	Anion gap (AG) = Na⁺ − (Cl⁻ + HCO₃⁻)    normal: 8–16 mmol/L\nAG ↑ — accumulation of unmeasured anions (keto acids, lactate, salicylate, methanol metabolites)
+936	Arterial blood pH
+937	=
+938	22–26 mmol/L
+939	Blood ketone bodies (β-HB)
+940	< 0.6 mmol/L
+941	Urinary ketone bodies
+942	Pour 1 mL of the patient's urine into tube 1 and 1 mL of control urine into tube 2.
+943	Add 0.5 mL of 10% NaOH and 0.5 mL of freshly prepared 10% sodium nitroprusside to each — observe the red color.
+944	Add 1 mL of concentrated acetic acid to each and compare the colors.
+945	Test glucose and ketone with the test strip.
+946	Why is acetic acid added in Legal's test?
+947	To speed up the reaction
+948	To distinguish the color given by ketone bodies (cherry-red) from the false red color given by creatinine (which turns yellow in acid)
+949	To neutralize the urine
+950	To detect β-hydroxybutyrate
+951	In alkaline medium creatinine also gives a red color. After acetic acid, only the ketone color remains and deepens.
+952	Legal's test
+953	1: patient
+954	2: control
+955	Patient's urine
+956	Control urine
+957	=
+958	10% Na nitroprusside
+959	=
+960	Conc. acetic acid
+961	Patient's urine into tube 1
+962	Control urine into tube 2
+963	Acetic acid was added before NaOH and nitroprusside
+964	1 mL each of patient and control urine into the tubes
+965	0.5 mL of NaOH and 0.5 mL of nitroprusside into each
+966	1 mL of concentrated acetic acid into each
+967	What is the result after adding acetic acid?
+968	Both tubes are yellow — no ketones
+969	Tube 1 is cherry-red (violet), the control is yellow — the patient's urine contains ketone bodies
+970	Both are violet
+971	Tube 1 is yellow, the control is violet
+972	The patient's urine contains acetoacetate/acetone — Legal's test is positive. The red color in the control was due to creatinine and turned yellow in acid.
+973	Urine: glucose / ketone (test strip)
+974	≥ 55 mmol/L / +++
+975	negative / negative
+976	Blood glucose
+977	Arterial pH
+978	35–45 mm Hg
+979	=
+980	135–145 mmol/L
+981	=
+982	98–107 mmol/L
+983	=
+984	3.5–5.1 mmol/L
+985	β-Hydroxybutyrate (blood)
+986	Anion gap = Na⁺ − (Cl⁻ + HCO₃⁻)
+987	Acid–base status
+988	Compensated respiratory alkalosis
+989	High anion gap metabolic acidosis (with partial respiratory compensation)
+990	Normal anion gap hyperchloremic acidosis
+991	Metabolic alkalosis
+992	Why can the test strip underestimate the severity of ketoacidosis?
+993	The test strip detects only acetone
+994	In ketoacidosis the main ketone body is β-hydroxybutyrate (NADH/NAD⁺ is high), and nitroprusside does not detect it
+995	The urine is diluted
+996	Glucose blocks the ketone zone
+997	In severe cases the β-HB : acetoacetate ratio is up to 6–10 : 1. During treatment, as β-HB is converted to acetoacetate, the test strip result may temporarily “intensify”.
+998	What is the biochemical meaning of Kussmaul breathing?
+999	Compensating for oxygen deficiency
+1000	Partial compensation of metabolic acidosis: removing more CO₂ to raise the pH
+1001	Producing more acetone
+1002	Lowering glucose
+1003	The fall in pH stimulates the respiratory center; hyperventilation lowers pCO₂ and tries to correct the H₂CO₃/HCO₃⁻ ratio.
+1004	Hyperglycemia, ketonuria, sharply elevated blood β-hydroxybutyrate, pH ⟦0⟧, HCO₃⁻ ⟦1⟧ mmol/L, anion gap ⟦2⟧ mmol/L — **diabetic ketoacidosis**. Treatment: intravenous fluids, low-dose insulin infusion, potassium monitoring (insulin drives K⁺ into cells — risk of hypokalemia).
+1005	analyzer (CHOD-PAP, GPO-PAP)
+1006	Familial hypercholesterolemia: lipid profile
+1007	Young man, father had an infarction at 45. Total cholesterol and triglycerides on the analyzer, LDL by the Friedewald formula.
+1008	Patient ⟦0⟧, ⟦1⟧ years old, male
+1009	No complaints. Thickening of the Achilles tendons was found at a preventive examination.
+1010	Family history
+1011	Father died of myocardial infarction at 45; an uncle had coronary bypass surgery at a young age.
+1012	**Tendon xanthomas** on the Achilles tendons and the extensor tendons of the hands, **xanthelasmas** on the eyelids, **lipoid arc** on the cornea (arcus cornealis). Body weight is normal, non-smoker. BP 125/80.
+1013	Blood was drawn after a 12-hour fast.
+1014	Determine **total cholesterol** (CHOD-PAP) and **triglycerides** (GPO-PAP) in serum on the biochemical analyzer.
+1015	Calculate LDL cholesterol by the **Friedewald formula** and the atherogenic index.
+1016	Determine the type of dyslipidemia (Fredrickson) and its molecular cause.
+1017	Cholesterol transport and the LDL receptor
+1018	The liver releases cholesterol and triglycerides into the blood in **VLDL** (very-low-density lipoproteins). Under the action of lipoprotein lipase, VLDL → IDL → **LDL** (low-density lipoproteins; main protein apo B-100). LDL enters cells by endocytosis through **LDL receptors** (LDL-R). Intracellular cholesterol inhibits **HMG-CoA reductase** and reduces receptor synthesis (via SREBP).
+1019	**Familial hypercholesterolemia** (autosomal dominant) — a mutation of the **LDL receptor gene** (less often apo B-100 or PCSK9). LDL is cleared slowly from the blood; total cholesterol is 8–12 mmol/L in heterozygotes and > 15 mmol/L in homozygotes; premature atherosclerosis.
+1020	Liver: VLDL
+1021	IDL
+1022	LDL (apo B-100)
+1023	LDL receptor|(liver, tissues)
+1024	Cell cholesterol ↑ →|HMG-CoA reductase ↓
+1025	Blood LDL ↑ →|xanthomas, atherosclerosis
+1026	Statins: HMG-CoA|reductase inhibitor → LDL-R ↑
+1027	hepatic lipase
+1028	With a defective LDL receptor, LDL circulates in the blood for a long time, becomes oxidized and is taken up by macrophages (foam cells).
+1029	Total cholesterol (CHOD-PAP, 500 nm):\ncholesterol esters + H₂O → (cholesterol esterase) → cholesterol + fatty acids\ncholesterol + O₂ → (cholesterol oxidase) → cholest-4-en-3-one + H₂O₂\n2H₂O₂ + 4-aminoantipyrine + phenol → (peroxidase) → pink quinoneimine\n\nTriglycerides (GPO-PAP, 500 nm):\nTG → (lipase) → glycerol + fatty acids;  glycerol → (glycerol kinase, ATP) → glycerol-3-phosphate\nglycerol-3-phosphate + O₂ → (GPO) → dihydroxyacetone phosphate + H₂O₂ → (peroxidase) → pink color\n\nC = (A sample / A standard) × C standard
+1030	Friedewald formula (when TG < 4.5 mmol/L):  LDL-C = total C − HDL-C − TG / 2.2\nAtherogenic index:  AI = (total C − HDL-C) / HDL-C   (normal < 3.0)
+1031	Desirable level
+1032	Total cholesterol
+1033	< 5.2 mmol/L
+1034	LDL cholesterol
+1035	< 3.0 mmol/L
+1036	men > 1.0; women > 1.2 mmol/L
+1037	Atherogenic index
+1038	Centrifuge the blood to separate the serum.
+1039	For each test: blank (1 mL reagent + 10 µL water), standard (1 mL reagent + 10 µL standard), sample (1 mL reagent + 10 µL serum).
+1040	Incubate at 37 °C for 10 minutes, zero against the blank and measure.
+1041	Calculate and apply the Friedewald formula.
+1042	Why is TG divided by 2.2 in the Friedewald formula?
+1043	To convert TG from g/L to mmol/L
+1044	To estimate the cholesterol in VLDL: in VLDL the TG : cholesterol ratio is about 2.2 : 1 (in mmol/L)
+1045	To calculate HDL
+1046	It is a correction factor for laboratory error
+1047	Total C = LDL-C + HDL-C + VLDL-C. VLDL-C ≈ TG/2.2 (mmol/L). At TG ≥ 4.5 mmol/L this relationship breaks down — the formula is not applicable.
+1048	cholesterol esterase–cholesterol oxidase–peroxidase
+1049	Working reagent (CE, CHOD, POD, 4-AAP)
+1050	Standard cholesterol (5.17 mmol/L)
+1051	lipase–glycerol kinase–GPO–peroxidase
+1052	Working reagent (LPL, GK, GPO, POD)
+1053	Standard TG (2.29 mmol/L)
+1054	HDL cholesterol (direct)
+1055	Serum appearance (+4 °C, 12 hours)
+1056	clear, no cream layer
+1057	TSH
+1058	0.4–4.0 mIU/L
+1059	LDL-C (Friedewald)
+1060	Type of dyslipoproteinemia by Fredrickson
+1061	Type I (chylomicrons ↑)
+1062	Type IIa (LDL ↑, TG normal)
+1063	Type IIb (LDL and VLDL ↑)
+1064	Type IV (VLDL ↑)
+1065	What is the most likely molecular cause of the patient's hypercholesterolemia?
+1066	Lipoprotein lipase deficiency
+1067	A mutation in the LDL receptor gene (autosomal dominant)
+1068	Apo C-II deficiency
+1069	Excess of lecithin–cholesterol acyltransferase
+1070	TG is normal, LDL is sharply elevated, tendon xanthomas and early coronary disease in the family — familial hypercholesterolemia (IIa).
+1071	How do statins lower LDL in the blood?
+1072	They break LDL down directly in the blood
+1073	They inhibit HMG-CoA reductase and lower cell cholesterol; SREBP-2 is activated, LDL receptor synthesis increases, and LDL is cleared from the blood faster
+1074	They stop cholesterol absorption in the intestine
+1075	They activate lipoprotein lipase
+1076	In homozygotes (no receptor at all) statins are less effective — PCSK9 inhibitors and LDL apheresis are used.
+1077	Total cholesterol and LDL-C are sharply elevated, triglycerides are normal, the serum is clear — **type IIa hyperlipoproteinemia**. Together with tendon xanthomas, the lipoid arc and early coronary disease in the family, this is consistent with **heterozygous familial hypercholesterolemia**. Screening of relatives (cascade screening) and statin therapy are required.
+1078	titration (two indicators)
+1079	Duodenal ulcer: gastric juice acidity
+1080	Night and “hunger” pains, heartburn. Titration of gastric juice by the Töpfer method.
+1081	Epigastric pain appearing 2–3 hours after meals and at night (“hunger” pain) that eases after eating; heartburn, sour belching.
+1082	The illness worsens in spring and autumn. Smokes a lot, likes spicy food, frequent stress.
+1083	Tenderness on palpation in the right epigastrium. Endoscopy shows a 0.8 cm ulcer in the duodenal bulb; urease test (H. pylori) is positive.
+1084	Gastric juice was obtained with a thin tube (basal secretion).
+1085	Determine the **free HCl, bound HCl and total acidity** of the gastric juice by titration using the Töpfer method.
+1086	Calculate the results in titration units.
+1087	Assess the acid-forming function of the stomach.
+1088	Hydrochloric acid secretion
+1089	The **parietal cells** of the gastric fundic glands produce HCl. Carbonic anhydrase forms H₂CO₃ from CO₂ + H₂O; H⁺ is pumped into the lumen by the **H⁺/K⁺-ATPase** (“proton pump”) of the apical membrane, HCO₃⁻ is exchanged for Cl⁻ at the basolateral membrane, and Cl⁻ enters the lumen through channels. Secretion is enhanced by **histamine** (H₂ receptor, cAMP), **gastrin** and **acetylcholine** (Ca²⁺).
+1090	HCl: activates pepsinogen to pepsin and creates the optimal pH for pepsin (1.5–2.0), denatures proteins, has a bactericidal effect, and stimulates pancreatic secretion (via secretin).
+1091	=
+1092	=
+1093	H⁺ into the gastric lumen
+1094	HCO₃⁻ ⇄ Cl⁻ (into the blood)
+1095	=
+1096	Histamine (H₂), gastrin,|acetylcholine (M₃)
+1097	PPI (omeprazole) —|irreversibly blocks the pump
+1098	H⁺/K⁺-ATPase
+1099	In ulcer disease, H. pylori and hypersecretion overcome the mucosal defense factors.
+1100	Principle of the method (Töpfer)
+1101	Gastric juice is titrated with 0.1 N NaOH in the presence of **two indicators**: **dimethylaminoazobenzene** (red → yellow at pH 2.9–4.0) indicates free HCl; **phenolphthalein** (pink at pH 8.2–10) indicates total acidity. Three successive end points are recorded: **point 1** — the red color turns orange (free HCl neutralized); **point 2** — yellow color (lemon yellow); **point 3** — pink color (all acids neutralized).
+1102	The result is in titration units (t.u.) — mL of 0.1 N NaOH needed to neutralize 100 mL of juice\nWhen 5 mL of juice is taken: X = V (mL) × 20\nFree HCl = V₁ × 20;   Total acidity = V₃ × 20\nTotal HCl = (V₂ + V₃)/2 × 20;   Bound HCl = total HCl − free HCl
+1103	Reference values (basal secretion, t.u.)
+1104	Total acidity
+1105	40–60 t.u.
+1106	Free HCl
+1107	20–40 t.u.
+1108	Bound HCl
+1109	10–20 t.u.
+1110	Measure 5 mL of filtered gastric juice into the flask.
+1111	Add 1–2 drops of dimethylaminoazobenzene and 1–2 drops of phenolphthalein (red color).
+1112	Fill the burette with 0.1 N NaOH and bring it to “0”.
+1113	Titrate and record the three points in sequence: orange → yellow → pink.
+1114	Add dropwise as you approach each point and swirl. If you miss one point, you may also record the next one incorrectly.
+1115	What does point 1 (red → orange) indicate in the Töpfer method?
+1116	Total acidity
+1117	That free HCl has been neutralized
+1118	Bound HCl
+1119	Lactic acid
+1120	Dimethylaminoazobenzene changes color around pH ≈ 3 — at this point free (dissociated) HCl is neutralized.
+1121	Titration of gastric juice (Töpfer method)
+1122	gastric juice
+1123	0.1 N NaOH
+1124	Dimethylaminoazobenzene, 1–2 drops
+1125	Phenolphthalein, 1–2 drops
+1126	Lugol's solution
+1127	iodine does not indicate acidity
+1128	Methyl orange
+1129	Not used in the Töpfer method
+1130	Point 1: orange (free HCl)
+1131	Point 2: yellow
+1132	Point 3: pink (total acidity)
+1133	V₁ / V₂ / V₃ (NaOH)
+1134	Uffelmann's reaction (lactic acid)
+1135	H. pylori (urease test)
+1136	t.u.
+1137	Acid-forming function of the stomach
+1138	Normal (normacid)
+1139	Increased (hyperacid state)
+1140	Decreased (hypoacid state)
+1141	Achlorhydria
+1142	How does omeprazole (a proton pump inhibitor) act?
+1143	It competitively blocks H₂ receptors
+1144	It is activated in an acidic medium, forms a covalent (disulfide) bond with cysteine residues of the H⁺/K⁺-ATPase and irreversibly blocks the pump
+1145	It inhibits carbonic anhydrase
+1146	It neutralizes HCl
+1147	It stops the final common step of secretion, so acid is not produced even under the influence of histamine, gastrin and acetylcholine.
+1148	When does lactic acid (Uffelmann positive) appear in gastric juice?
+1149	In the hyperacid state
+1150	In the absence of HCl (achylia, gastric cancer), as a result of bacterial fermentation
+1151	When pepsin increases
+1152	It is always present normally
+1153	HCl creates a bactericidal barrier; when it is absent, lactic acid fermentation begins.
+1154	Free HCl and total acidity are above normal — a **hyperacid state**. Together with H. pylori infection, this is typical of duodenal ulcer disease. Treatment: eradication therapy (PPI + two antibiotics), quitting smoking, diet.
+1155	IFCC, based on NADH oxidation (coupled to LDH/MDH), with PLP added
+1156	IU/L
+1157	Working reagent (substrates, NADH, LDH/MDH, PLP)
+1158	analyzer (kinetic method)
+1159	Acute viral hepatitis: aminotransferases
+1160	Jaundice, dark urine, weakness. ALT and AST by the kinetic method, De Ritis ratio.
+1161	Weakness, loss of appetite, nausea, heaviness under the right ribs; for 3 days the sclerae have been yellow and the urine dark (“beer-colored”).
+1162	Had a dental procedure and a tattoo 2 months ago. Does not drink alcohol, has not taken any medications.
+1163	Skin and sclerae are jaundiced. The liver extends 2 cm below the costal margin and is tender on palpation. The spleen is not palpable.
+1164	Serum was collected. HBsAg — positive, anti-HBc IgM — positive.
+1165	Determine **ALT and AST** activity in serum by the **kinetic method** (IFCC).
+1166	Calculate the activity with the formula ΔA/min × F and find the **De Ritis ratio**.
+1167	Identify the syndrome of liver injury.
+1168	Transamination and enzyme diagnostics
+1169	**Aminotransferases** transfer the α-amino group of an amino acid to an α-keto acid. The coenzyme is **pyridoxal phosphate (B₆)**: it temporarily accepts the amino group, turning into pyridoxamine phosphate (“ping-pong” mechanism).
+1170	**ALT** (alanine aminotransferase): mainly in the **cytoplasm** of **liver** hepatocytes — the enzyme most specific for the liver.
+1171	**AST** (aspartate aminotransferase): in myocardium, liver, skeletal muscle and erythrocytes; in the cell it has cytoplasmic and **mitochondrial** isoenzymes.
+1172	When the hepatocyte membrane is damaged (**cytolysis syndrome**), cytoplasmic enzymes — ALT — are released first and in larger amounts; in deep (mitochondrial) damage AST also rises sharply.
+1173	L-Alanine
+1174	Pyruvate
+1175	Lactate
+1176	α-Ketoglutarate
+1177	L-Glutamate
+1178	NADH → NAD⁺|(A at 340 nm decreases)
+1179	Hepatocyte cytolysis → blood ALT ↑
+1180	ALT (PLP)
+1181	LDH (indicator enzyme)
+1182	In the kinetic method, the rate of oxidation of NADH (which absorbs at 340 nm) to NAD⁺ is measured; ΔA/min is proportional to the enzyme activity.
+1183	Principle of the method (IFCC, kinetic)
+1184	ALT: L-alanine + α-ketoglutarate → pyruvate + L-glutamate;   pyruvate + NADH + H⁺ → (LDH) → lactate + NAD⁺\nAST: L-aspartate + α-ketoglutarate → oxaloacetate + L-glutamate;   oxaloacetate + NADH + H⁺ → (MDH) → malate + NAD⁺\n\nActivity (IU/L) = ΔA/min × F,   F = 1746 (1.1 mL total volume, 0.1 mL sample, ε(NADH) = 6.3 L·mmol⁻¹·cm⁻¹)\nDe Ritis ratio = AST / ALT   (normal 1.33 ± 0.42)
+1185	Reference values (37 °C)
+1186	men < 41, women < 33 IU/L
+1187	AST
+1188	men < 37, women < 31 IU/L
+1189	De Ritis ratio
+1190	Interpretation
+1191	De Ritis < 1 — liver injury (viral hepatitis — cytolysis);
+1192	De Ritis > 2 — myocardial infarction or alcoholic hepatitis (mitochondrial AST is released).
+1193	Select the test on the analyzer; pour 1 mL of working reagent into the cuvette.
+1194	Add 100 µL of serum, mix, and wait 1 minute at 37 °C (lag phase).
+1195	Start the kinetic measurement: A is recorded every minute for 3 minutes; the analyzer gives the mean ΔA/min.
+1196	Calculate the activity as ΔA/min × 1746. Repeat for AST.
+1197	Hemolyzed serum falsely raises AST (erythrocytes contain ≈ 15 times more AST than plasma). The pyridoxal phosphate in the reagent prevents a falsely low result in vitamin B₆ deficiency.
+1198	On what basis is ALT activity calculated in the kinetic method?
+1199	On the final A value after incubation
+1200	On the decrease of NADH absorbance at 340 nm per minute (ΔA/min)
+1201	By comparison with a standard solution
+1202	On the time of color development
+1203	Enzyme activity is the reaction rate. In the indicator reaction NADH is consumed and its absorbance decreases: ΔA/min × F = IU/L.
+1204	ALT: ΔA/min
+1205	AST: ΔA/min
+1206	3.4–20.5 µmol/L
+1207	Direct bilirubin
+1208	< 5.1 µmol/L
+1209	Alkaline phosphatase
+1210	40–130 IU/L
+1211	=
+1212	< 55 IU/L
+1213	Albumin
+1214	35–50 g/L
+1215	ALT activity
+1216	AST activity
+1217	De Ritis ratio (AST/ALT)
+1218	Leading laboratory syndrome
+1219	Cholestasis
+1220	Cytolysis
+1221	Mesenchymal-inflammatory
+1222	Hepatocellular failure
+1223	Why does ALT rise more than AST in viral hepatitis?
+1224	ALT is found only in the kidney
+1225	ALT is located in the hepatocyte cytoplasm and is released first when the membrane is damaged; most of the AST is in the mitochondria
+1226	AST is rapidly broken down in the blood and cannot be measured
+1227	ALT works even without B₆
+1228	Therefore the De Ritis ratio is < 1. In alcoholic injury (mitochondria are damaged, B₆ is deficient) it is, on the contrary, > 2.
+1229	What is the role of pyridoxal phosphate in transamination?
+1230	Electron carrier
+1231	It temporarily accepts the amino group (pyridoxamine phosphate) and passes it to the keto acid; it forms a Schiff base
+1232	It transfers the carboxyl group
+1233	It donates a methyl group
+1234	PLP forms an aldimine with a lysine residue, and then a transaldimination with the amino acid — the “ping-pong” mechanism.
+1235	ALT ≈ ⟦0⟧ and AST ≈ ⟦1⟧ IU/L — 10–20 times above normal, De Ritis ≈ ⟦2⟧ (< 1). Conjugated bilirubin is elevated, alkaline phosphatase is slightly elevated. This is consistent with **acute viral hepatitis B** (HBsAg, anti-HBc IgM positive) with a predominant **cytolysis syndrome**.
+1236	qualitative reaction (FeCl₃)
+1237	Phenylketonuria: detecting phenylpyruvate in urine
+1238	7-month-old infant, lagging in psychomotor development, “mousy” odor. Følling's test, blood phenylalanine.
+1239	Patient ⟦0⟧, ⟦1⟧ months old, boy
+1240	Does not hold the head well, does not sit, little interest in the surroundings; occasional seizures, itchy skin rashes.
+1241	Born at home, newborn screening was not done. The parents are cousins.
+1242	Hair is light yellow, eyes are blue, skin is pale (unlike the family members). Eczema on the skin. The child's body and urine have a characteristic **“mousy” (musty) odor**. Muscle tone is increased.
+1243	Fresh urine and a dried blood spot were obtained.
+1244	Detect phenylpyruvic acid in the urine by **Følling's test** (FeCl₃); the urine of a healthy child is the control.
+1245	Assess the blood phenylalanine and tyrosine results and calculate the Phe/Tyr ratio.
+1246	Explain the enzyme defect and the mechanism of the clinical signs.
+1247	Phenylalanine and tyrosine metabolism
+1248	Phenylalanine (an essential amino acid) is converted to **tyrosine** in the liver by **phenylalanine hydroxylase**; the cofactor is **tetrahydrobiopterin (BH₄)**, and O₂ takes part. Catecholamines, thyroid hormones and **melanin** are formed from tyrosine.
+1249	**Classic phenylketonuria** (autosomal recessive) — a mutation in the phenylalanine hydroxylase (PAH) gene. Phenylalanine accumulates and is converted by transamination into **phenylpyruvate**, phenyllactate and phenylacetate (excreted in the urine — the “mousy” odor comes from phenylacetate). High Phe competitively reduces the entry of other large neutral amino acids (tyrosine, tryptophan) into the brain — neurotransmitter synthesis and myelination are impaired.
+1250	Phenylalanine
+1251	Tyrosine
+1252	Dopa → dopamine,|norepinephrine
+1253	Melanin
+1254	Phenylpyruvate
+1255	Phenyllactate, phenylacetate|(urine, “mousy” odor)
+1256	Intellectual disability, seizures,|pale skin and hair
+1257	=
+1258	When the main pathway is blocked, Phe is diverted to an alternative pathway — phenylpyruvate. Tyrosine decreases, and Phe also inhibits tyrosinase — hypopigmentation.
+1259	Principle of the method (Følling's test)
+1260	Phenylpyruvate (enol form) forms a **blue-green** complex with **iron(III) chloride**; the color fades within a few minutes. The test is qualitative (screening) — it is positive when blood Phe is above 1000 µmol/L; the diagnosis is confirmed by quantitative measurement of phenylalanine in the blood. False positives: salicylates (violet), bilirubin (green), homogentisic acid (transient blue).
+1261	Blood phenylalanine
+1262	35–120 µmol/L (< 2 mg/dL)
+1263	Blood tyrosine
+1264	40–100 µmol/L
+1265	Phe/Tyr ratio
+1266	Urinary phenylpyruvate (Følling)
+1267	Pour 1 mL of the patient's urine into tube 1 and 1 mL of a healthy child's urine into tube 2.
+1268	Add 2–3 drops of 10% FeCl₃ to each.
+1269	Start the stopwatch and observe the color within **30–60 seconds**.
+1270	The blue-green color fades quickly — if you look late, a positive result may be missed.
+1271	If Følling's test is positive, what is done to confirm the diagnosis?
+1272	Repeat the test 3 times
+1273	Quantitative determination of the phenylalanine (and tyrosine) concentration in blood, testing of the PAH gene
+1274	Determining glucose in urine
+1275	Nothing — the test is sufficient
+1276	The FeCl₃ test is a screening test and gives false results; the diagnosis is made by the blood Phe level.
+1277	Følling's test
+1278	=
+1279	10% FeCl₃
+1280	▶ Stopwatch
+1281	Observation time
+1282	The stopwatch has not been started — the time of color change cannot be observed
+1283	Pour 1 mL each of patient and control urine
+1284	Start the stopwatch and add 2–3 drops of FeCl₃ to each
+1285	Observe the color for 30–60 s
+1286	What result was observed at 30–60 seconds?
+1287	Yellow-brown color in both tubes — the test is negative
+1288	Blue-green color in the patient's urine, yellow in the control — Følling's test is positive
+1289	Violet color in the patient's urine — salicylates
+1290	Black precipitate in both
+1291	The blue-green color indicates phenylpyruvate in the urine; in the control it is the natural color of FeCl₃.
+1292	Følling's test (urine)
+1293	positive (blue-green)
+1294	35–120 µmol/L
+1295	Dihydropteridine reductase activity
+1296	normal
+1297	Urinary pterins
+1298	Defective enzyme
+1299	Tyrosinase
+1300	Phenylalanine hydroxylase
+1301	Homogentisate 1,2-dioxygenase
+1302	Fumarylacetoacetate hydrolase
+1303	Mainstay of treatment
+1304	A diet low in tyrosine
+1305	A diet restricted in phenylalanine (special amino acid formulas) with sufficient tyrosine
+1306	A protein-free diet
+1307	BH₄ preparations only
+1308	Why are the patient's hair and skin pale?
+1309	Melanocytes are absent
+1310	Tyrosine decreases and high phenylalanine competitively inhibits tyrosinase — melanin synthesis falls
+1311	Carotenoids are high
+1312	Hemoglobin is low
+1313	Tyrosine is the starting substance for melanin synthesis; because phenylalanine has a similar structure, it competes for the tyrosinase active site.
+1314	Why must mothers with phenylketonuria strictly follow the diet during pregnancy?
+1315	Milk production falls
+1316	The mother's high Phe level crosses the placenta (active transport) and causes microcephaly, heart defects and intellectual disability in the fetus (maternal PKU)
+1317	It does not affect the fetus
+1318	It only damages the mother's liver
+1319	Regardless of the fetal genotype, high Phe in the mother's blood has a teratogenic effect.
+1320	Følling's test is positive, blood phenylalanine ⟦0⟧ µmol/L (> 10 times the normal), tyrosine is low, Phe/Tyr ≈ ⟦1⟧. Pterins and DHPR are normal — not BH₄ deficiency, but **classic phenylketonuria** (PAH defect). The diagnosis was delayed; the diet should be started as soon as possible. Medical-genetic counseling for the parents (risk for subsequent children 25%).
+1321	analyzer (uricase)
+1322	Gout: serum uric acid
+1323	Acute pain in the big-toe joint at night. Uricase–peroxidase method, purine metabolism.
+1324	Sudden onset at night of unbearable pain in the joint at the base of the right big toe; the joint is swollen and red, and even the touch of a sheet is painful.
+1325	Yesterday at a party ate a lot of meat and liver and drank beer. Takes hydrochlorothiazide for hypertension. The father had “salt deposits”.
+1326	The first metatarsophalangeal joint is swollen, the skin is bright red and hot. Small whitish-yellow nodules on the auricle (**tophi**). Temperature 37.6 °C. Overweight.
+1327	Joint fluid was aspirated and examined under a polarizing microscope; serum was collected.
+1328	Determine uric acid in serum by the **uricase–peroxidase** method.
+1329	Calculate the result and compare it with the reference range.
+1330	Explain the mechanism of hyperuricemia and the principle of treatment.
+1331	Purine catabolism
+1332	Purine nucleotides (AMP, GMP) are broken down to **hypoxanthine** and **guanine**, then converted by **xanthine oxidase** into **xanthine** and **uric acid**. Humans lack uricase — uric acid is the end product of purine metabolism and is excreted mainly by the kidney. Part of the hypoxanthine and guanine is converted back into nucleotides by **HGPRT** (hypoxanthine-guanine phosphoribosyltransferase) (**salvage pathway**).
+1333	Causes of **hyperuricemia**: decreased excretion of uric acid (≈ 90%; thiazide diuretics, renal failure, alcohol — lactate competes with urate secretion) or increased production (purine-rich food, increased PRPP synthetase activity, HGPRT deficiency, tumor breakdown). The saturation limit of **sodium urate** in plasma is ≈ 400 µmol/L; above it, **needle-shaped crystals** precipitate in the joints and trigger neutrophilic inflammation (NLRP3 inflammasome, IL-1β).
+1334	AMP, GMP
+1335	Hypoxanthine, guanine
+1336	Xanthine
+1337	Uric acid
+1338	IMP, GMP (salvage pathway)
+1339	Allopurinol → alloxanthine
+1340	Na urate crystals →|gout, tophi, stones
+1341	HGPRT (PRPP)
+1342	Allopurinol is a hypoxanthine analog; xanthine oxidase converts it to alloxanthine, which tightly inhibits the enzyme (“suicide substrate”).
+1343	Principle of the method (uricase–peroxidase)
+1344	Uric acid + O₂ + 2H₂O → (uricase) → allantoin + CO₂ + H₂O₂\n2H₂O₂ + 4-aminoantipyrine + DHBS → (peroxidase) → red quinoneimine + 4H₂O   (λ = 520 nm)\n\nC (µmol/L) = (A sample / A standard) × 357
+1345	Uric acid (serum)
+1346	men 200–420; women 140–360 µmol/L
+1347	Uric acid (24-hour urine)
+1348	1.5–4.5 mmol/day
+1349	Separate the serum.
+1350	Blank: 1 mL reagent + 25 µL water; standard: 1 mL reagent + 25 µL standard (357 µmol/L); sample: 1 mL reagent + 25 µL serum.
+1351	Incubate at 37 °C for 10 minutes, zero against the blank and measure at 520 nm.
+1352	Ascorbic acid (a strong reducing agent) consumes H₂O₂ and falsely lowers the result. Find out whether the patient has taken large doses of vitamin C.
+1353	Which substance produces the colored product in the uricase method?
+1354	Allantoin
+1355	The H₂O₂ released in the uricase reaction — peroxidase oxidizes the chromogen
+1356	The intrinsic color of uric acid
+1357	CO₂
+1358	This is a Trinder-type coupled reaction: the amount of H₂O₂ equals the amount of uric acid.
+1359	uricase–peroxidase (Trinder)
+1360	µmol/L
+1361	Working reagent (uricase, POD, 4-AAP, DHBS)
+1362	Standard (357 µmol/L)
+1363	200–420 µmol/L
+1364	Joint fluid (polarizing microscope)
+1365	needle-shaped, negatively birefringent crystals
+1366	no crystals
+1367	Leukocytes (blood)
+1368	4–9 × 10⁹/L
+1369	ESR
+1370	< 15 mm/h
+1371	Creatinine
+1372	62–106 µmol/L
+1373	Serum uric acid
+1374	Hyperuricemia
+1375	Hypouricemia
+1376	How does allopurinol act?
+1377	It increases renal excretion of uric acid
+1378	It inhibits xanthine oxidase: less uric acid is formed, and hypoxanthine and xanthine (which are more soluble) are excreted
+1379	It breaks down uric acid like uricase
+1380	It stops neutrophil migration
+1381	Allopurinol is not started during an acute attack (mobilization of urate crystals worsens the attack); the attack is stopped with NSAIDs, colchicine or glucocorticoids.
+1382	Which drug may have contributed to the patient's hyperuricemia?
+1383	Metformin
+1384	Hydrochlorothiazide — competes with urate secretion in the proximal tubules and reduces its excretion
+1385	Amlodipine
+1386	Atorvastatin
+1387	Thiazide and loop diuretics and low-dose aspirin reduce urate excretion; losartan, on the contrary, has a uricosuric effect.
+1388	Serum uric acid ≈ ⟦0⟧ µmol/L — **hyperuricemia**. Sodium urate crystals in the joint fluid, tophi and the clinical picture confirm an **acute attack of gouty arthritis**. Risk factors: purine-rich food, alcohol (beer), thiazide diuretic, metabolic syndrome.
+1389	PCR–RFLP, gel electrophoresis
+1390	Sickle cell anemia: PCR–RFLP analysis
+1391	Painful crises and hemolytic anemia in a child. The β-globin gene is cut with MstII and family members are genotyped on a gel.
+1392	Patient ⟦0⟧, ⟦1⟧ years old, ⟦2⟧
+1393	Recurrent attacks of severe pain in the bones of the arms and legs, abdomen and chest (especially after chilling, dehydration or infection), weakness.
+1394	The parents are healthy, but both families had “anemia”. At age 1 the hands and feet swelled (dactylitis).
+1395	Pale skin, slightly icteric sclerae. The spleen is not palpable (autosplenectomy). Systolic murmur over the heart.
+1396	Sickle-shaped erythrocytes on the blood smear. DNA was isolated from family members, and a fragment of the β-globin gene was amplified by PCR.
+1397	Cut the PCR products with the **MstII** restriction enzyme and run **agarose gel electrophoresis**.
+1398	Determine the genotype of the patient, the parents and the sibling.
+1399	Determine the type of mutation and the probability of the disease in the next child.
+1400	Point mutation and RFLP
+1401	**HbS** — a **GAG → GTG** substitution (A → T transversion) in codon 6 of the β-globin gene: **valine** instead of glutamate (Glu6Val) — a **missense mutation**. In deoxygenated HbS, the hydrophobic valine binds to the hydrophobic “pocket” of the neighboring molecule and forms long **polymer fibers**; the erythrocyte takes a sickle shape, becomes fragile (hemolysis) and blocks capillaries (vaso-occlusive crises).
+1402	The **MstII** restriction enzyme recognizes the sequence **CCTNAGG**. In the normal β-globin gene, the codon 6 region is **CCTGAGG** — a cut site is present. The mutation (CCT**G**T**G**G) destroys this site. Therefore the normal allele is cut by MstII into two fragments (**1.15** and **0.2 kb**), whereas the HbS allele gives a single long (**1.35 kb**) fragment — **restriction fragment length polymorphism (RFLP)**.
+1403	=
+1404	MstII cuts
+1405	1.15 + 0.2 kb
+1406	=
+1407	No cut site
+1408	1.35 kb
+1409	Heterozygote (AS): 1.35 + 1.15 + 0.2
+1410	DNA is negatively charged due to its phosphate residues and moves toward the anode (+) in the gel; smaller fragments move faster and farther.
+1411	Steps of the method
+1412	Isolate DNA and amplify the β-globin gene fragment by PCR (ready).
+1413	Add MstII and buffer; restriction at 37 °C for 60 minutes.
+1414	Place the 1.2% agarose gel in the chamber so that the **wells are on the cathode (−) side**, and add TAE buffer.
+1415	Load the marker (fragments of known size) and the samples.
+1416	Run electrophoresis at 100 V for ≈ 40 minutes.
+1417	Genotype on the UV transilluminator by comparing the fragments with the marker.
+1418	Genotype
+1419	MstII fragments
+1420	Clinical condition
+1421	=
+1422	healthy
+1423	=
+1424	carrier (relative resistance to malaria)
+1425	=
+1426	sickle cell anemia
+1427	If restriction is incomplete, the normal allele also leaves a 1.35 kb fragment — a healthy person appears to be a false carrier. Observe the incubation time.
+1428	Which electrode do DNA fragments move toward during electrophoresis?
+1429	Toward the cathode (−), because DNA is positively charged
+1430	Toward the anode (+), because DNA is negatively charged due to its phosphate residues
+1431	Uncharged — only diffusion
+1432	In different directions depending on fragment size
+1433	That is why the wells must be on the cathode side; otherwise the samples run out of the gel into the buffer.
+1434	=
+1435	Father
+1436	Mother
+1437	Sibling
+1438	110–140 g/L
+1439	Reticulocytes
+1440	Hb electrophoresis (patient)
+1441	HbS ≈ 88%, HbF ≈ 10%, no HbA
+1442	HbA > 95%
+1443	Indirect bilirubin
+1444	< 17 µmol/L
+1445	LDH
+1446	< 250 IU/L
+1447	Haptoglobin
+1448	0.3–2.0 g/L
+1449	Type of mutation
+1450	Synonymous (silent) mutation
+1451	Missense mutation (Glu → Val)
+1452	Nonsense mutation
+1453	Frameshift (deletion)
+1454	Probability of the disease (HbSS) in these parents' next child
+1455	Why does HbS polymerize only in the deoxygenated state?
+1456	Oxygen oxidizes valine
+1457	In the deoxy-Hb (T-form) conformation, a hydrophobic “pocket” (Phe85, Leu88) in the β-chain opens, and the Val6 residue of the neighboring molecule binds to it
+1458	Oxygen immediately dissolves the polymer
+1459	Heme is released during deoxygenation
+1460	That is why hypoxia, acidosis (Bohr effect) and dehydration (hemoglobin concentration rises) trigger crises; HbF hinders polymerization (hydroxyurea raises HbF).
+1461	What is the RFLP method based on?
+1462	On reading the complete DNA sequence
+1463	On a change in fragment length when a mutation destroys or creates a restriction enzyme recognition site
+1464	On a change in protein charge
+1465	On the amount of mRNA
+1466	Not every mutation can be detected by RFLP — only those that alter a restriction site; for others, allele-specific PCR or sequencing is used.
+1467	The patient has only the 1.35 kb fragment — **HbSS (homozygote)**; the parents have 1.35 + 1.15 + 0.2 — **HbAS carriers**. Autosomal recessive inheritance: for each subsequent child the risk of disease is 25% and of being a carrier is 50%. Prenatal diagnosis can be done by this method using chorionic villus DNA.
+1468	analyzer (biuret, BCG)
+1469	Nephrotic syndrome: total protein and albumin
+1470	Morning facial swelling, anasarca, foamy urine. Total protein by biuret, albumin by bromocresol green; A/G ratio.
+1471	Swelling of the face and eyelids in the morning, swelling of the legs by the end of the day, foamy urine, weakness; gained 6 kg in 2 weeks.
+1472	Had tonsillitis 3 weeks before the illness.
+1473	The face is swollen, there is soft pitting edema of the legs, and free fluid in the abdomen (ascites). BP 120/80.
+1474	Urinary protein 6.8 g/day. Serum was collected.
+1475	Determine **total protein in serum by the biuret method**.
+1476	Determine **albumin with bromocresol green** (BCG).
+1477	Calculate the globulin content and the **albumin/globulin ratio**; explain the mechanism of the edema.
+1478	Plasma proteins and oncotic pressure
+1479	Blood plasma contains 65–85 g/L of protein; 55–65% of it is **albumin** (synthesized in the liver, ≈ 66 kDa). Albumin provides **≈ 80% of the plasma colloid osmotic (oncotic) pressure** and transports fatty acids, bilirubin, Ca²⁺, hormones and drugs.
+1480	**In nephrotic syndrome**, the glomerular filter (podocytes, negative charge of the basement membrane) is damaged and > 3.5 g/day of protein (mainly albumin) is lost in the urine. **Hypoalbuminemia** lowers the oncotic pressure — according to the **Starling forces**, fluid moves from the capillary into the interstitium (edema). The liver increases the synthesis of proteins and lipoproteins — **hyperlipidemia**; the large α₂-macroglobulin is retained (α₂ fraction ↑).
+1481	Glomerular filter|damage
+1482	Proteinuria > 3.5 g/day
+1483	Hypoalbuminemia
+1484	Oncotic pressure ↓
+1485	Fluid into the interstitium|→ edema, ascites
+1486	Liver: protein and lipoprotein|synthesis ↑ → hyperlipidemia
+1487	Hypovolemia → RAAS → Na⁺ and water|retention (edema worsens)
+1488	Starling forces
+1489	Both a fall in oncotic pressure (underfill) and primary sodium retention in the kidney (overfill) take part in the mechanism of edema.
+1490	**Biuret method:** in alkaline medium, **peptide bonds** form a violet complex with Cu²⁺ (540 nm); the color is proportional to the number of peptide bonds — that is, to total protein. 30 minutes at room temperature.
+1491	**Bromocresol green (BCG):** at pH 4.2 albumin binds the dye and changes its color from yellow to **green-blue** (628 nm); measured at 1 minute (if left longer, globulins also bind).
+1492	C = (A sample / A standard) × C standard   (total protein standard 70 g/L, albumin standard 40 g/L)\nGlobulins = total protein − albumin\nA/G ratio = albumin / globulins   (normal 1.2–2.0)
+1493	Total protein
+1494	65–85 g/L
+1495	A/G ratio
+1496	24-hour proteinuria
+1497	< 0.15 g/day
+1498	Biuret: 1 mL reagent + 20 µL water / standard / serum; 30 minutes at room temperature; 540 nm.
+1499	BCG: 1 mL reagent + 5 µL water / standard / serum; 1 minute; 628 nm.
+1500	Calculate the results.
+1501	Which structure of a protein does the biuret reaction detect?
+1502	Aromatic amino acids
+1503	Peptide bonds (complex with Cu²⁺ in alkaline medium)
+1504	Disulfide bonds
+1505	Free amino groups
+1506	Any peptide with at least two peptide bonds gives a violet color — that is why the method measures total protein.
+1507	biuret (Cu²⁺, alkaline medium)
+1508	room temperature
+1509	g/L
+1510	Biuret reagent
+1511	Standard protein (70 g/L)
+1512	bromocresol green, pH 4.2
+1513	BCG reagent
+1514	Standard albumin (40 g/L)
+1515	Electrophoresis: α₂-globulins
+1516	increased (≈ 18%)
+1517	Urine sediment
+1518	fatty casts, oval fat bodies
+1519	Nature of the dysproteinemia
+1520	Hyperproteinemia, monoclonal gammopathy
+1521	Hypoproteinemia, hypoalbuminemia, A/G decreased
+1522	Normal proteinogram
+1523	Only γ-globulins are increased
+1524	What is the main biochemical cause of the edema?
+1525	A sharp rise in hydrostatic pressure
+1526	A fall in plasma oncotic pressure due to albumin loss and movement of fluid into the interstitium
+1527	Stoppage of lymph flow
+1528	The effect of bacteria on capillaries
+1529	Albumin is the main source of oncotic pressure. When it is < 25 g/L, edema is usually obvious.
+1530	Why does the risk of thrombosis increase in nephrotic syndrome?
+1531	The platelet count falls
+1532	Small-molecule anticoagulant proteins (antithrombin III) are lost in the urine, and the liver increases synthesis of fibrinogen and other factors
+1533	Vitamin K increases
+1534	Heparin increases
+1535	Antithrombin III (≈ 58 kDa) passes through the filter like albumin; the large fibrinogen stays in the blood and is overproduced — hypercoagulability.
+1536	Total protein ≈ ⟦0⟧ g/L, albumin ≈ ⟦1⟧ g/L, A/G ≈ ⟦2⟧. Proteinuria > 3.5 g/day, hypoalbuminemia, hyperlipidemia and edema — **nephrotic syndrome**. Creatinine is normal — renal filtration function is preserved.
+1537	analyzer (ferrozine)
+1538	Iron deficiency anemia: serum iron
+1539	Menorrhagia, weakness, craving to eat chalk. Serum iron by the ferrozine method, transferrin saturation percentage.
+1540	Patient ⟦0⟧, ⟦1⟧ years old, female
+1541	Weakness, fatigue, shortness of breath when climbing stairs, dizziness; hair loss, brittle nails; craving to eat chalk and raw rice (**pica**).
+1542	For 1.5 years menstruation has been heavy and prolonged (7–8 days) (uterine fibroids). Eats little meat.
+1543	Pale skin and mucous membranes, cracks at the corners of the mouth (angular stomatitis), nails are flat and spoon-shaped (**koilonychia**). Pulse 96/min.
+1544	Non-hemolyzed serum was collected in the morning on an empty stomach.
+1545	Determine serum iron by the **ferrozine method**.
+1546	Calculate the **percent saturation of transferrin with iron**.
+1547	Determine the type of anemia and the mechanism of the disturbance of iron metabolism.
+1548	Iron metabolism
+1549	The body contains 3–4 g of iron: ≈ 2/3 in hemoglobin, the rest in ferritin and hemosiderin (stores), myoglobin and enzymes. In the intestine (duodenum) it is absorbed as **Fe²⁺** via DMT1 (Fe³⁺ is reduced by duodenal cytochrome b). It leaves the enterocyte into the blood through **ferroportin**, hephaestin oxidizes it to Fe³⁺ and it binds to **transferrin**. The liver hormone **hepcidin** degrades ferroportin and reduces iron absorption.
+1550	**In iron deficiency**: first the stores (ferritin) fall, then serum iron drops and transferrin synthesis rises (**TIBC** — total iron-binding capacity increases), and finally heme synthesis is impaired and **microcytic, hypochromic** anemia develops.
+1551	Dietary Fe³⁺
+1552	=
+1553	Enterocyte → ferroportin
+1554	Transferrin–Fe³⁺ (blood)
+1555	Bone marrow: heme → Hb
+1556	Ferritin (stores)
+1557	Blood loss → stores depleted|→ microcytic anemia
+1558	Dcytb, ascorbate
+1559	hephaestin (Fe²⁺→Fe³⁺)
+1560	TfR1 endocytosis
+1561	iron deficiency
+1562	Hepcidin increases in inflammation (anemia of chronic disease) and decreases in iron deficiency.
+1563	Principle of the method (ferrozine)
+1564	In acid medium, Fe³⁺ is released from transferrin → ascorbate reduces Fe³⁺ to Fe²⁺\nFe²⁺ + 3 ferrozine → violet complex   (λ = 562 nm)\n\nC (µmol/L) = (A sample / A standard) × 17.9\nTransferrin saturation (%) = serum iron / TIBC × 100
+1565	Serum iron
+1566	men 11–30; women 9–27 µmol/L
+1567	TIBC
+1568	45–77 µmol/L
+1569	Transferrin saturation
+1570	Ferritin
+1571	women 12–150; men 20–300 ng/mL
+1572	Separate the serum (without hemolysis!).
+1573	Blank: 1 mL reagent + 200 µL water; standard: 1 mL + 200 µL standard (17.9 µmol/L); sample: 1 mL + 200 µL serum.
+1574	10 minutes at room temperature, measure at 562 nm against the blank.
+1575	A hemolyzed sample is unsuitable — hemoglobin iron from the erythrocytes falsely raises the result. The daily fluctuation of iron is large (higher in the morning).
+1576	How do TIBC (transferrin) levels change in the blood in iron deficiency?
+1577	Decrease
+1578	No change
+1579	Increase — the liver increases transferrin synthesis
+1580	Fall to zero
+1581	When iron is scarce, the IRP/IRE system increases the synthesis of transferrin and TfR1 and decreases ferritin synthesis.
+1582	Iron
+1583	ferrozine, ascorbate as reducing agent
+1584	Working reagent (buffer pH 4.5, ascorbate, ferrozine)
+1585	Standard iron (17.9 µmol/L)
+1586	9–27 µmol/L
+1587	12–150 ng/mL
+1588	120–140 g/L
+1589	=
+1590	80–100 fL
+1591	=
+1592	27–33 pg
+1593	Type of anemia
+1594	Iron deficiency anemia (microcytic, hypochromic)
+1595	Anemia of chronic disease
+1596	Vitamin B₁₂ deficiency (megaloblastic) anemia
+1597	Hemolytic anemia
+1598	Which parameter best distinguishes iron deficiency from anemia of chronic disease?
+1599	Ferritin and TIBC: in iron deficiency ferritin ↓, TIBC ↑; in chronic inflammation ferritin N/↑, TIBC ↓
+1600	Serum iron is low in both. In inflammation, hepcidin “locks” iron inside macrophages — stores are present (ferritin is high) but cannot be used.
+1601	Why are erythrocytes small (microcytic) in iron deficiency?
+1602	Membrane lipids decrease
+1603	Heme and hemoglobin synthesis decrease; the erythroblast undergoes an extra division until Hb reaches the required concentration
+1604	Erythrocytes are destroyed
+1605	DNA synthesis stops
+1606	Ferrochelatase cannot insert Fe²⁺ into protoporphyrin IX — free (zinc) protoporphyrin rises in erythrocytes.
+1607	Serum iron ≈ ⟦0⟧ µmol/L, TIBC ⟦1⟧ µmol/L, transferrin saturation ≈ ⟦2⟧%, ferritin ⟦3⟧ ng/mL — iron stores are depleted. With microcytic, hypochromic anemia and sideropenic signs (pica, koilonychia, angular stomatitis) — **iron deficiency anemia due to chronic blood loss (menorrhagia)**.
+1608	centrifuge + coagulometer
+1609	Hemophilia A: coagulogram
+1610	Joint bleeding in a child. Prothrombin time, aPTT and mixing test on a coagulometer.
+1611	Patient ⟦0⟧, ⟦1⟧ years old, boy
+1612	After falling while playing football, the right knee joint swelled and began to hurt badly; cannot walk.
+1613	Bleeding did not stop for 2 days after a tooth extraction. Large bruises (hematomas) after minor knocks. His mother's brother died young of a “blood disease”.
+1614	The right knee joint is enlarged and hot, and movement is sharply painful (**hemarthrosis**). Intramuscular hematoma in the thigh. No petechiae.
+1615	Blood was collected into a tube with 3.2% sodium citrate (9 : 1). Platelets 260 × 10⁹/L.
+1616	Separate plasma from the citrated blood.
+1617	On the coagulometer, perform the **prothrombin time (PT)**, **aPTT** and the **mixing test**.
+1618	Calculate the INR and determine the type of hemostasis disorder.
+1619	Plasma hemostasis
+1620	The modern **cell-based model** of coagulation: **initiation** — tissue factor (TF) + VIIa produce small amounts of Xa and thrombin; **amplification** — thrombin activates platelets and factors V, VIII and XI; **propagation** — on the surface of the activated platelet the **tenase complex (IXa + VIIIa)** and the **prothrombinase complex (Xa + Va)** generate large amounts of thrombin. Thrombin converts fibrinogen to fibrin, and XIIIa cross-links it.
+1621	Laboratory tests are interpreted according to the classic “cascade”: **PT** — extrinsic and common pathways (VII, X, V, II, fibrinogen); **aPTT** — intrinsic and common pathways (XII, XI, IX, **VIII**, X, V, II). **Hemophilia A** — factor VIII deficiency (X-linked recessive): aPTT is prolonged, PT is normal.
+1622	XII → XIIa (contact)
+1623	=
+1624	=
+1625	Tenase: IXa + VIIIa
+1626	TF + VIIa (extrinsic pathway)
+1627	X → Xa; Xa + Va → thrombin
+1628	Fibrinogen → fibrin
+1629	VIII deficient
+1630	aPTT evaluates the left branch (XII→XI→IX→VIII) and the common pathway; PT evaluates the right branch (TF+VII) and the common pathway.
+1631	**PT:** thromboplastin (TF + phospholipid) and CaCl₂ are added to citrated plasma warmed to 37 °C; the clot formation time is recorded.
+1632	**aPTT:** plasma is incubated with a contact activator (kaolin/ellagic acid) and phospholipid for 3 minutes, then CaCl₂ is added and the time is measured.
+1633	**Mixing test:** the patient's plasma is mixed 1 : 1 with normal plasma. If the aPTT **normalizes** — a factor **deficiency**; if it does not normalize — an **inhibitor** (lupus anticoagulant, antibodies to factor VIII).
+1634	INR = (patient PT / mean normal PT)^ISI\nIn this laboratory: mean normal PT = 12.5 s;  thromboplastin ISI = 1.10
+1635	INR
+1636	=
+1637	Factor VIII activity
+1638	Hemophilia severity
+1639	severe (spontaneous bleeding)
+1640	moderate
+1641	The blood-to-citrate ratio must be exactly 9 : 1. If the plasma is not warmed to 37 °C, the clotting time is falsely prolonged.
+1642	Only aPTT is prolonged, PT is normal, and the aPTT normalizes in the mixing test. What does this indicate?
+1643	Factor VII deficiency
+1644	Deficiency of one of the intrinsic pathway factors (VIII, IX, XI or XII)
+1645	Lupus anticoagulant
+1646	Fibrinogen deficiency
+1647	Normal plasma supplies the missing factor up to ≈ 50% — this is enough to normalize the aPTT. With an inhibitor, the aPTT stays prolonged even in the mixture.
+1648	aPTT (1 : 1 mixture)
+1649	Fibrinogen
+1650	2–4 g/L
+1651	Factor IX activity
+1652	von Willebrand factor (antigen)
+1653	INR = (PT / 12.5)^1.10
+1654	Mixing test conclusion
+1655	aPTT normalized — factor deficiency
+1656	aPTT did not normalize — an inhibitor is present
+1657	PT is prolonged — extrinsic pathway disorder
+1658	The result is unclear
+1659	Hemophilia severity (by factor VIII)
+1660	Severe (< 1%)
+1661	Moderate (1–5%)
+1662	Mild (5–40%)
+1663	Why does hemophilia A occur almost only in boys?
+1664	Factor VIII is synthesized only in males
+1665	The factor VIII gene is on the X chromosome; in boys a mutation on the single X causes the disease, while girls are usually carriers
+1666	Testosterone breaks down factor VIII
+1667	It is inherited in an autosomal dominant manner
+1668	The disease of the patient's maternal uncle shows that the mother is a carrier. For the sons of a carrier mother the risk is 50%.
+1669	What type of bleeding occurs in hemophilia?
+1670	Petechial-spotted (microcirculatory)
+1671	Hematoma type: deep bleeding into joints and muscles, delayed bleeding
+1672	Only from the nose
+1673	There is no bleeding
+1674	Primary (platelet) hemostasis is intact — a plug forms, but because it is not reinforced by fibrin, bleeding starts again later.
+1675	PT and fibrinogen are normal, aPTT is prolonged and normalizes when mixed with normal plasma — an intrinsic pathway factor deficiency. Factor VIII ⟦0⟧% — **hemophilia A, moderate form** (X-linked recessive). Treatment: recombinant factor VIII concentrate; intramuscular injections and aspirin are contraindicated.
+1676	analyzer (kinetic) + troponin test
+1677	Myocardial infarction: cardiac markers
+1678	Retrosternal pain lasting more than 40 minutes. Creatine kinase by the kinetic method, troponin I immunochromatographic test.
+1679	Severe pressing retrosternal pain radiating to the left arm and lower jaw that began ⟦0⟧ hours ago; not relieved by nitroglycerin. Cold sweat, fear of death.
+1680	Has smoked for 20 years, arterial hypertension, hypercholesterolemia. Has not had intramuscular injections or done heavy physical work.
+1681	Skin is pale and moist. BP 150/95, pulse 92/min. ECG: ST-segment elevation in V1–V4, pathological Q waves.
+1682	Serum was collected.
+1683	Determine **creatine kinase (CK)** activity in serum by the **kinetic method**.
+1684	Determine **troponin I** with an immunochromatographic test cassette.
+1685	Calculate the CK-MB fraction and assess myocardial injury.
+1686	Muscle energetics and cardiac markers
+1687	**Creatine phosphate** is a rapidly used high-energy reserve in muscle: **creatine kinase** (CK) rephosphorylates ADP to form ATP. The phosphate of ATP formed in the mitochondria is transferred to creatine and delivered to the myofibrils (“creatine phosphate shuttle”). CK is a dimer: **MM** (skeletal muscle), **MB** (myocardium; 15–20% of total CK), **BB** (brain).
+1688	**Troponins** (C, I, T) — the regulatory complex of the thin filament. Cardiac troponin I and T have **cardiac-specific isoforms** — they are the most sensitive and specific markers of myocardial necrosis: they rise in 3–4 hours and remain elevated for 7–14 days.
+1689	Mitochondrion: ATP
+1690	Creatine → creatine phosphate
+1691	Myofibril: ADP → ATP
+1692	Actomyosin contraction
+1693	Coronary artery thrombosis →|ischemia → necrosis
+1694	Into the blood: myoglobin (1–2 h),|CK-MB (3–6 h), troponin (3–4 h)
+1695	Troponin elevated for 7–14 days
+1696	mit. CK
+1697	=
+1698	membrane breakdown
+1699	The smaller a marker is and the more freely it is in the cytoplasm, the earlier it appears; the structural part of the troponins is released gradually — they stay elevated for a long time.
+1700	CK (kinetic, NADPH formation, 340 nm — A increases):\ncreatine phosphate + ADP → (CK) → creatine + ATP\nATP + glucose → (hexokinase) → ADP + glucose-6-phosphate\nglucose-6-phosphate + NADP⁺ → (G6PD) → 6-phosphogluconate + NADPH\n\nActivity (IU/L) = ΔA/min × 8095\nCK-MB fraction (%) = CK-MB / total CK × 100   (> 6% — myocardial source)
+1701	**Troponin I test** — sandwich immunochromatography: labeled anti-cTnI antibodies form a complex with troponin, and the second antibodies in the **T** zone capture it; the **C** zone shows that the test worked.
+1702	Total CK
+1703	men < 190; women < 170 IU/L
+1704	=
+1705	< 25 IU/L (< 6% of total)
+1706	Troponin I (high-sensitivity)
+1707	< 0.04 ng/mL (99th percentile)
+1708	CK: 1 mL of working reagent (37 °C) + 20 µL of serum, mix and wait 2 minutes, then measure at 340 nm every minute for 3 minutes.
+1709	Apply 3 drops of serum to the S well of the troponin cassette and read after 15 minutes (not after 20 minutes).
+1710	N-acetylcysteine activates CK in the reagent (restores SH groups); AMP and diadenosine pentaphosphate inhibit erythrocyte adenylate kinase — so that hemolysis does not give a false result.
+1711	Which marker is still elevated in a patient who presents 7 days after the infarction?
+1712	Myoglobin
+1713	Troponin I/T
+1714	Myoglobin normalizes within 24 hours and CK-MB in 2–3 days; troponins stay elevated for 7–14 days.
+1715	CK
+1716	IFCC, based on NADPH formation (coupled with HK/G6PD), NAC-activated
+1717	Working reagent (CP, ADP, NADP⁺, HK, G6PD, NAC)
+1718	Rapid troponin I test
+1719	cTnI test cassette
+1720	CK: ΔA/min
+1721	CK-MB (immunoinhibition)
+1722	< 25 IU/L
+1723	Troponin I (rapid test)
+1724	Troponin I (quantitative)
+1725	< 0.04 ng/mL
+1726	< 37 IU/L
+1727	< 41 IU/L
+1728	Total CK activity
+1729	CK-MB fraction
+1730	Skeletal muscle injury
+1731	Acute myocardial infarction (myocardial necrosis)
+1732	Stable angina (no necrosis)
+1733	Hemolysis artifact
+1734	Why is troponin now preferred over CK-MB?
+1735	It is cheaper
+1736	Cardiac troponins have cardiac-specific isoforms — they do not rise with skeletal muscle injury, detect even small necrosis and remain elevated for a long time
+1737	It normalizes faster — reinfarction is easier to detect
+1738	It rises only in the first hour
+1739	For detecting reinfarction, however, CK-MB is convenient, since it normalizes in 2–3 days.
+1740	How is CK activity determined in the kinetic method?
+1741	By comparison with a standard
+1742	By the rate of NADPH formation in the coupled reactions (increase of A at 340 nm, ΔA/min) × factor
+1743	By measuring the color of creatine
+1744	By clot formation time
+1745	Hexokinase and G6PD are “indicator” enzymes; since CK is the rate-limiting step, the rate of NADPH formation equals CK activity.
+1746	Total CK ≈ ⟦0⟧ IU/L, CK-MB ≈ ⟦1⟧% (> 6% — cardiac source), troponin I positive, AST and LDH elevated, ALT normal. Together with the ST elevation on the ECG — **acute anterior-wall ST-elevation myocardial infarction**. Urgent reperfusion (coronary angioplasty or thrombolysis).
+1747	Jendrassik–Grof (diazo reaction⟦0⟧)
+1748	, with caffeine-benzoate accelerator
+1749	, without accelerator
+1750	Calibrator bilirubin (85.5 µmol/L)
+1751	analyzer + urine test strip
+1752	Jaundice: bilirubin fractions
+1753	Jaundice, brown urine, pale stools, itching. Total and direct bilirubin, urine bilirubin and urobilinogen.
+1754	Attack-like pain under the right ribs, followed by yellowing of the skin and sclerae, severe itching; urine is dark brown (“beer-colored”), stools are pale (clay-colored).
+1755	Gallstone disease for 5 years. The pain began after fatty food.
+1756	The skin has a greenish-yellow tint, scratch marks. The gallbladder area is tender on palpation. Ultrasound: the common bile duct is dilated to 12 mm, with a stone in its distal part.
+1757	Serum (protected from light) and fresh urine were collected.
+1758	Determine **total and direct bilirubin** in serum by the Jendrassik–Grof method and calculate indirect bilirubin.
+1759	Determine **bilirubin and urobilinogen** in the urine with a test strip.
+1760	Determine the type of jaundice.
+1761	Bilirubin metabolism and jaundice
+1762	Aged erythrocytes are broken down in macrophages: heme → (heme oxygenase) → **biliverdin** → (biliverdin reductase) → **bilirubin**. This **indirect (unconjugated)** bilirubin is insoluble in water, is transported in the blood bound to **albumin** and does not pass into the urine. In the liver, **UDP-glucuronyltransferase** conjugates it with glucuronic acid — **direct (conjugated)** bilirubin is water-soluble and is excreted with bile into the intestine. In the intestine, bacteria convert it to **urobilinogen**: part is absorbed and excreted in the urine, and the rest colors the stool as **stercobilin**.
+1763	Heme
+1764	Bilirubin (indirect)|+ albumin
+1765	Bilirubin diglucuronide|(direct)
+1766	Bile → intestine
+1767	Urobilinogen
+1768	Urobilinogen in urine
+1769	Stercobilin (stool color)
+1770	Stone: bile flow|stops → direct|bilirubin into the blood
+1771	UDP-GT (liver)
+1772	=
+1773	absorption
+1774	In complete mechanical obstruction, bilirubin does not reach the intestine: urobilinogen and stercobilin are not formed, and direct bilirubin passes into the blood and urine.
+1775	Principle of the method (Jendrassik–Grof)
+1776	Bilirubin forms red-violet **azobilirubin** with **diazotized sulfanilic acid**. Direct (water-soluble) bilirubin reacts without an accelerator; indirect bilirubin needs a **caffeine-benzoate** accelerator to be released from albumin — with it, **total** bilirubin is determined.
+1777	C = (A sample / A calibrator) × 85.5 µmol/L\nIndirect bilirubin = total − direct\nDirect fraction (%) = direct / total × 100
+1778	Reference values and differentiation of jaundice
+1779	Hemolytic
+1780	Parenchymal
+1781	Mechanical (obstructive)
+1782	Predominant fraction in blood
+1783	direct (> 50%)
+1784	Bilirubin in urine
+1785	absent
+1786	a lot
+1787	Stool color
+1788	dark
+1789	pale (acholic)
+1790	Alkaline phosphatase, GGT
+1791	slightly ↑
+1792	sharply ↑
+1793	< 5.1 µmol/L (≤ 25% of total)
+1794	traces (≤ 17 µmol/L)
+1795	Bilirubin breaks down in light — the sample is kept in the dark. Hemolyzed and lipemic serum alter the result.
+1796	Why is there no bilirubin in the urine in hemolytic jaundice?
+1797	Bilirubin is not formed
+1798	The increased indirect bilirubin is bound to albumin and is insoluble in water — it is not filtered in the glomeruli
+1799	The kidney breaks it down
+1800	It is entirely excreted in bile
+1801	Only water-soluble conjugated (direct) bilirubin can pass into the urine.
+1802	Diazo reagent + caffeine-benzoate
+1803	Diazo reagent (without accelerator)
+1804	Bilirubin
+1805	0 (absent)
+1806	3.2 (normal)
+1807	< 15.4 µmol/L
+1808	Urine: bilirubin / urobilinogen
+1809	+++ / absent
+1810	negative / traces
+1811	Stercobilin in stool
+1812	negative (acholia)
+1813	< 38 IU/L
+1814	< 33 IU/L
+1815	Type of jaundice
+1816	Hemolytic (prehepatic)
+1817	Parenchymal (hepatic)
+1818	Mechanical (posthepatic, obstructive)
+1819	Gilbert syndrome
+1820	Why is the patient's prothrombin time prolonged?
+1821	The liver parenchyma is completely destroyed
+1822	Because bile does not reach the intestine, fats and the fat-soluble vitamin K are not absorbed — γ-carboxylation of factors II, VII, IX and X is impaired
+1823	Platelets are decreased
+1824	Bilirubin inhibits thrombin
+1825	That is why PT normalizes quickly when vitamin K is given parenterally (unlike in parenchymal damage).
+1826	What is the itching of the skin related to?
+1827	The effect of indirect bilirubin on the skin
+1828	Accumulation of bile acids (and other pruritogens) in the blood in cholestasis
+1829	Histamine deficiency
+1830	Excess urobilinogen
+1831	Cholestasis syndrome: bile acids, cholesterol, alkaline phosphatase, GGT and direct bilirubin rise in the blood.
+1832	Total bilirubin ≈ ⟦0⟧ µmol/L, direct fraction ≈ ⟦1⟧%. The urine contains a lot of bilirubin and no urobilinogen, the stool is acholic, and alkaline phosphatase and GGT are sharply elevated — **mechanical (obstructive) jaundice**, cholestasis syndrome; the cause is a stone in the common bile duct (choledocholithiasis).
+1833	analyzer + nomogram
+1834	Paracetamol poisoning: detoxification in the liver
+1835	A large single dose of paracetamol was taken. Serum concentration by an enzymatic method, Rumack–Matthew nomogram.
+1836	Nausea, vomited once, slight weakness. No other complaints.
+1837	According to relatives, ⟦0⟧ hours ago took ⟦1⟧ paracetamol tablets (500 mg) at once. Does not drink alcohol, has not taken other medicines. Body weight ⟦2⟧ kg.
+1838	Condition is satisfactory, consciousness is clear. Skin is pale. Abdomen is soft, the liver is not enlarged. BP 115/75, pulse 88/min.
+1839	Serum was collected (≥ 4 hours after ingestion).
+1840	Determine the serum paracetamol concentration by an **enzymatic method**.
+1841	Plot the result on the **Rumack–Matthew nomogram** and assess whether an antidote is needed.
+1842	Calculate the ingested dose in mg/kg; explain the mechanism of hepatotoxicity.
+1843	Detoxification of xenobiotics
+1844	In the liver, xenobiotics are detoxified in two phases: **phase I** — the cytochrome **P450** system (microsomal oxidation) introduces a functional group; **phase II** — **conjugation** (glucuronic acid, sulfate, glutathione, glycine, acetylation) — produces a water-soluble product that can be excreted.
+1845	At a therapeutic dose, **paracetamol** is ≈ 55% glucuronidated, ≈ 30% sulfated, and 5–10% is oxidized via **CYP2E1** (and CYP3A4) to the reactive **NAPQI** (N-acetyl-p-benzoquinone imine); NAPQI is immediately detoxified by binding to **glutathione**. At a large dose (> 150 mg/kg) the conjugation pathways become saturated, a lot of NAPQI is formed, and the glutathione reserve (< 30%) is exhausted — NAPQI binds covalently to cysteine residues of hepatocyte proteins and causes **centrilobular necrosis** (in 24–72 hours).
+1846	Paracetamol
+1847	Glucuronide (≈ 55%)
+1848	Sulfate (≈ 30%)
+1849	NAPQI (5–10%)
+1850	Glutathione conjugate →|mercapturate (harmless)
+1851	When glutathione is depleted: protein|cysteines → necrosis
+1852	N-acetylcysteine →|cysteine → glutathione ↑
+1853	UDP-GT
+1854	=
+1855	=
+1856	Chronic alcoholism (CYP2E1 induction, reduced glutathione) and starvation increase the risk.
+1857	Principle of the method (enzymatic)
+1858	Paracetamol + H₂O → (arylacylamidase) → p-aminophenol + acetate\np-aminophenol + o-cresol → (periodate, alkaline medium) → blue indophenol   (λ = 615 nm)\n\nC (mg/L) = (A sample / A calibrator) × 200
+1859	Rumack–Matthew nomogram
+1860	In a single acute poisoning, the concentration taken **4–24 hours after ingestion** is plotted on the nomogram. The **treatment line** starts at **150 mg/L** at 4 hours and halves every 4 hours (half-life ≈ 4 hours). If the point is on or above the line — **N-acetylcysteine** is given (most effective within 8 hours). A value before 4 hours is unreliable (absorption is still ongoing).
+1861	Threshold concentration (at t hours) = 150 × 2^(−(t − 4)/4) mg/L\nDose (mg/kg) = number of tablets × 500 mg / body weight
+1862	Value
+1863	Therapeutic concentration
+1864	10–20 mg/L
+1865	Potentially toxic dose
+1866	> 150 mg/kg (or > 7.5 g)
+1867	Treatment line (4 hours)
+1868	150 mg/L
+1869	In the first 24 hours the patient may have almost no complaints and ALT may be normal — this is a “latent” period, not a sign of safety.
+1870	Why is the paracetamol concentration measured at least 4 hours after ingestion?
+1871	Because of laboratory working hours
+1872	Before 4 hours absorption and distribution are not complete — an early value underestimates the true load
+1873	After 4 hours paracetamol disappears
+1874	The antidote works only after 4 hours
+1875	The nomogram starts at 4 hours; decisions are not made on an earlier result.
+1876	arylacylamidase, o-cresol–periodate (indophenol)
+1877	mg/L
+1878	R1 (arylacylamidase) + R2 (o-cresol, periodate)
+1879	Calibrator (200 mg/L)
+1880	Paracetamol (serum)
+1881	therapeutic 10–20 mg/L
+1882	Time since ingestion
+1883	Ethanol (blood)
+1884	Serum paracetamol
+1885	Ingested dose
+1886	mg/kg
+1887	Treatment plan
+1888	Observation, antidote not needed
+1889	Immediate N-acetylcysteine (intravenous), monitoring of liver function
+1890	Activated charcoal only, after 24 hours
+1891	Hemodialysis
+1892	What is the mechanism of action of N-acetylcysteine?
+1893	It inhibits CYP2E1
+1894	It provides cysteine for glutathione synthesis (and directly binds NAPQI) and supports sulfation
+1895	It binds paracetamol in the stomach
+1896	It speeds up renal excretion
+1897	Glutathione is the tripeptide glutamyl-cysteinyl-glycine; cysteine is the rate-limiting amino acid for its synthesis.
+1898	Why is the patient's ALT normal so far?
+1899	There is no poisoning
+1900	Hepatocyte necrosis develops 24–72 hours after NAPQI accumulates and glutathione is depleted; at 6–8 hours the enzymes have not risen yet
+1901	ALT is not found in the liver
+1902	Paracetamol inhibits ALT
+1903	That is why the decision is made by the nomogram, not by clinical signs or ALT.
+1904	At ⟦0⟧ hours paracetamol is ≈ ⟦1⟧ mg/L, the treatment line at this time is ≈ ⟦2⟧ mg/L — the point is above the line. The dose is ≈ ⟦3⟧ mg/kg (toxic). Even though ALT is still normal, **N-acetylcysteine is started immediately**; liver function and INR are monitored for 24–72 hours.
+1905	immunochromatographic test
+1906	Early pregnancy: urinary chorionic gonadotropin
+1907	Menstruation 9 days late, home test negative. Immunochromatographic β-hCG test, quantitative dynamics.
+1908	Menstruation is ⟦0⟧ days late, morning nausea, breast tenderness, fatigue.
+1909	The menstrual cycle is regular, 28 days. The home test done last night after drinking a lot of fluid was “negative”.
+1910	General condition is satisfactory. Abdomen is soft and painless. No vaginal bleeding.
+1911	First morning urine and evening urine (after lots of fluid) were brought. Quantitative serum β-hCG is measured at a 48-hour interval.
+1912	Determine **β-hCG** in the urine with an **immunochromatographic test strip** (select the correct sample).
+1913	Explain why the home test was negative.
+1914	Assess the dynamics of serum β-hCG (percent rise in 48 hours).
+1915	Chorionic gonadotropin and hormones
+1916	**Human chorionic gonadotropin (hCG)** is a **glycoprotein hormone** produced by the trophoblast (later the placental syncytiotrophoblast): it consists of α and β subunits. The **α-subunit** is the same in LH, FSH and TSH; the **β-subunit** is specific — the tests are based on antibodies against it. hCG acts through LH receptors (G protein → adenylate cyclase → cAMP) to maintain the **corpus luteum** and continue progesterone synthesis (until weeks 8–10 of pregnancy).
+1917	hCG appears in the blood after implantation (6–8 days after fertilization), **doubles every 48–72 hours** in early pregnancy, and peaks at weeks 8–11.
+1918	Trophoblast
+1919	hCG (α + β)
+1920	LH receptor (corpus luteum)
+1921	G_s → cAMP → PKA
+1922	Progesterone synthesis ↑
+1923	Endometrium is maintained,|no menstruation
+1924	Urinary β-hCG → test strip
+1925	=
+1926	via the kidney
+1927	Without hCG, the corpus luteum regresses in 14 days — menstruation begins.
+1928	Principle of the method (immunochromatography)
+1929	The test strip contains **anti-β-hCG monoclonal antibodies** labeled with gold particles. Urine flows along the membrane by capillary force: if hCG is present, it forms a complex with the labeled antibody and is captured by the immobilized second antibody in the **T (test)** zone — a colored line (“sandwich”). Antiglobulins in the **C (control)** zone capture excess conjugate — showing that the test worked correctly.
+1930	C and T lines
+1931	positive (hCG ≥ 10–25 IU/L)
+1932	C only
+1933	No C
+1934	test invalid — repeat
+1935	48-hour rise (%) = (β-hCG₂ − β-hCG₁) / β-hCG₁ × 100\nIn a developing intrauterine pregnancy it is usually ≥ 53–66% (doubling ≈ 100%);\na slow rise raises suspicion of an ectopic or non-viable pregnancy
+1936	Collect the first morning urine (the most concentrated) in a clean container.
+1937	Open the test from its package and place it on a flat surface.
+1938	Dip the test strip for 10–15 seconds up to the MAX mark (do not go beyond the mark).
+1939	Read the result after 3–5 minutes (a result after 10 minutes is unreliable).
+1940	False-negative result: too early, diluted urine (after a lot of fluid), very high hCG (“hook” effect). False-positive: hCG preparations, trophoblastic tumors, a recent abortion.
+1941	Why do pregnancy tests use antibodies against the β-subunit?
+1942	The β-subunit is larger
+1943	The α-subunit is the same in LH, FSH and TSH — an antibody against it would also react with these hormones; the β-subunit is specific to hCG
+1944	The α-subunit is not excreted in the urine
+1945	The β-subunit is more heavily glycosylated
+1946	For specificity, the unique β-chain of hCG (especially the peptide at the C-terminus) is chosen.
+1947	β-hCG test strip (urine)
+1948	β-hCG test strip
+1949	First morning urine
+1950	Evening urine (after a lot of fluid)
+1951	The hCG concentration is low in diluted evening urine — risk of a false-negative result. In early pregnancy, first morning urine is used.
+1952	Urine: β-hCG (test strip)
+1953	negative (if not pregnant)
+1954	Serum β-hCG, day 1
+1955	< 5 IU/L (if not pregnant)
+1956	Serum β-hCG, after 48 hours
+1957	Progesterone
+1958	nmol/L
+1959	First trimester: 35–140 nmol/L
+1960	Ultrasound (transvaginal)
+1961	4 mm gestational sac in the uterine cavity
+1962	48-hour rise in β-hCG
+1963	Assess the dynamics
+1964	Consistent with normal development of an intrauterine pregnancy
+1965	Suspected ectopic pregnancy (slow rise)
+1966	The pregnancy has stopped (falling)
+1967	Trophoblastic tumor
+1968	Why might the home test have been negative?
+1969	There is no pregnancy
+1970	The evening urine after a lot of fluid was diluted — the hCG concentration was below the test sensitivity
+1971	The test does not detect the β-subunit
+1972	hCG is present only in the blood
+1973	Test sensitivity is 10–25 IU/L. In early pregnancy the urine should be collected in the morning.
+1974	What is the main physiological role of hCG?
+1975	To trigger ovulation
+1976	To maintain the corpus luteum and continue progesterone synthesis (until the placenta takes over this function)
+1977	To start milk secretion
+1978	To suppress the thyroid gland
+1979	Very high hCG (multiple pregnancy, hydatidiform mole) can also stimulate TSH receptors and cause gestational thyrotoxicosis — because of the shared α-subunit.
+1980	The morning urine β-hCG test is positive. Serum β-hCG rose by ⟦0⟧% in 48 hours (≈ doubled), and ultrasound shows a gestational sac in the uterine cavity — **a developing intrauterine pregnancy** (≈ 5 weeks). The negative home result was due to diluted evening urine (false negative).
+1981	enzyme immunoassay (ELISA)
+1982	Insulinoma: serum insulin by ELISA
+1983	Fasting hypoglycemia attacks. Sandwich ELISA, calibration curve, insulin/glucose ratio.
+1984	Attacks in the morning on an empty stomach and after exercise: heavy sweating, hand tremor, palpitations, hunger, confusion, once lost consciousness. They resolve quickly when sweets are eaten.
+1985	Attacks for 8 months; in recent months has had to eat frequently — gained 7 kg. No diabetes, does not take glucose-lowering drugs; nobody in the family takes them either.
+1986	Overweight. During an attack a glucometer showed 2.0 mmol/L; symptoms resolved within 10 minutes after taking glucose (**Whipple triad**).
+1987	Serum was collected during hypoglycemia in a supervised fasting test (simultaneously with glucose).
+1988	Determine insulin in serum by **sandwich ELISA**: find the concentration from the calibration curve.
+1989	Calculate the insulin (µIU/mL) / glucose (mg/dL) ratio.
+1990	Determine the cause of hypoglycemia (take the C-peptide result into account).
+1991	Insulin secretion and its regulation
+1992	In the β-cell, glucose enters via GLUT2, is phosphorylated by **glucokinase**, and produces **ATP** in glycolysis and oxidation. The rise in ATP/ADP closes the **ATP-sensitive K⁺ channels** (SUR1/Kir6.2) → membrane depolarization → opening of voltage-gated **Ca²⁺ channels** → exocytosis of insulin granules. **Proinsulin** is cleaved in the granules into insulin and **C-peptide** in equimolar amounts.
+1993	Normally insulin secretion almost stops when glucose is < 3.0 mmol/L. An **insulinoma** (β-cell tumor) escapes this control — even during hypoglycemia, insulin and C-peptide stay high.
+1994	Glucose (GLUT2)
+1995	Glycolysis → ATP ↑
+1996	K_ATP channels close
+1997	Depolarization →|Ca²⁺ entry
+1998	Exocytosis: insulin +|C-peptide (1 : 1)
+1999	Proinsulin
+2000	Insulinoma: glucose-independent|secretion → hypoglycemia
+2001	=
+2002	Sulfonylurea drugs close the K_ATP channels and release insulin by the same pathway.
+2003	Principle of the method (sandwich ELISA)
+2004	The plate wells are coated with **monoclonal antibodies** against one epitope of insulin. Insulin in the sample binds to them; a second **peroxidase-labeled** antibody (conjugate) against another epitope is added. After washing, the **TMB** substrate gives a blue color, which turns yellow when the **stop acid** is added (450 nm). Color intensity is **directly proportional** to the amount of insulin; the concentration is found from the **calibration curve**.
+2005	Insulin (µIU/mL) / glucose (mg/dL) ratio; glucose mg/dL = mmol/L × 18\nDuring hypoglycemia > 0.3 — typical of hyperinsulinism\nHOMA-IR = glucose (mmol/L) × insulin (µIU/mL) / 22.5 — assessed only when fasting, without hypoglycemia
+2006	Insulin (fasting)
+2007	2–25 µIU/mL
+2008	Insulin when glucose is < 3.0 mmol/L
+2009	< 3 µIU/mL
+2010	C-peptide
+2011	0.26–0.63 nmol/L (in hypoglycemia < 0.2)
+2012	Pipette 25 µL each of the calibrators (0–100 µIU/mL), control and patient serum.
+2013	Add 100 µL of conjugate and incubate for 60 minutes with shaking.
+2014	Wash 5 times.
+2015	100 µL of TMB, 15 minutes in the dark; 50 µL of stop solution.
+2016	Read at 450 nm; find the concentration from the curve.
+2017	If washing is insufficient, unbound conjugate remains — the background color rises in all wells (including K0) and low concentrations are read incorrectly.
+2018	In a sandwich ELISA, what is the relationship between color intensity and the amount of antigen?
+2019	Inversely proportional
+2020	Directly proportional: the more antigen, the more conjugate is captured
+2021	No relationship
+2022	It gives only a qualitative result
+2023	In a competitive ELISA, on the contrary, the relationship is inverse.
+2024	µIU/mL
+2025	Insulin (ELISA)
+2026	Glucose (simultaneous)
+2027	0.26–0.63 nmol/L
+2028	< 5 pmol/L
+2029	0.1 mmol/L (low)
+2030	> 2.7 in hypoglycemia
+2031	Sulfonylurea screen
+2032	Antibodies to insulin
+2033	Insulin (from the curve)
+2034	Insulin / glucose ratio (glucose in mg/dL)
+2035	Cause of hypoglycemia
+2036	Administration of exogenous insulin
+2037	Endogenous hyperinsulinism — insulinoma
+2038	Sulfonylurea intake
+2039	Adrenal insufficiency
+2040	Why is the C-peptide result important in diagnosis?
+2041	C-peptide raises glucose
+2042	Endogenous insulin is released together with C-peptide in equimolar amounts; insulin preparations contain no C-peptide — with exogenous insulin, insulin ↑ and C-peptide ↓
+2043	C-peptide is present only in insulinoma
+2044	C-peptide interferes with the ELISA
+2045	Both insulin and C-peptide are high in the patient and the sulfonylurea screen is negative — endogenous hyperinsulinism (insulinoma).
+2046	Why is β-hydroxybutyrate low during hypoglycemia?
+2047	Insulin suppresses lipolysis and ketogenesis — in hyperinsulinemic hypoglycemia ketones are not formed
+2048	Liver failure
+2049	Glucagon excess
+2050	In physiological hypoglycemia of fasting, by contrast, insulin is low and ketones are high.
+2051	At glucose ⟦0⟧ mmol/L, insulin ≈ ⟦1⟧ µIU/mL (inappropriately high), C-peptide and proinsulin are elevated, ketones are low, and the sulfonylurea screen is negative — **endogenous hyperinsulinism, insulinoma**. The next step is to locate the tumor (CT/MRI, endoscopic ultrasound) and surgery.
+2052	10-parameter test strip + calculation
+2053	Urinalysis: pyelonephritis and diabetes
+2054	A woman with type 2 diabetes with fever, flank pain and dysuria. 10-parameter test strip and CrCl by Cockcroft–Gault.
+2055	For 2 days: fever (38.6 °C), chills, pain in the right lumbar region, frequent painful urination, cloudy urine.
+2056	Type 2 diabetes mellitus for 12 years (metformin), poor glycemic control. Arterial hypertension.
+2057	Body weight ⟦0⟧ kg. Costovertebral angle tenderness (Pasternatsky sign) is positive on the right. BP 135/85, pulse 98/min.
+2058	A fresh morning midstream urine sample was collected. Serum creatinine ⟦0⟧ µmol/L.
+2059	Test the urine with a **10-parameter test strip** and read each zone against the color chart.
+2060	Interpret the pathological changes.
+2061	Calculate the creatinine clearance by the **Cockcroft–Gault** formula.
+2062	Renal biochemistry and urinalysis
+2063	Blood plasma is filtered in the renal glomeruli (≈ 180 L/day of primary urine); in the tubules glucose, amino acids, bicarbonate, water and salts are reabsorbed, and H⁺, NH₄⁺, creatinine and drugs are secreted. Glucose is fully reabsorbed in the proximal tubule via **SGLT2/SGLT1**; when blood glucose exceeds **≈ 10 mmol/L (renal threshold)**, the transporters become saturated and glucosuria appears.
+2064	Glomerular filtrate
+2065	Proximal tubule
+2066	Glucose → SGLT2 → blood
+2067	Glucose > 10 mmol/L →|glucosuria
+2068	Bacteria: NO₃⁻ → NO₂⁻|(nitrite test)
+2069	Neutrophils: leukocyte|esterase (pyuria)
+2070	reabsorption
+2071	saturation
+2072	Glucosuria creates a favorable environment for bacteria — the risk of urinary tract infection is high in diabetes.
+2073	Reactions of the test strip zones
+2074	Zone
+2075	Reaction principle
+2076	Comment
+2077	glucose oxidase → H₂O₂ → peroxidase + chromogen
+2078	specific; ascorbate causes a false negative
+2079	indicator “protein error” (tetrabromophenol blue)
+2080	mainly albumin; does not detect Bence Jones protein
+2081	sodium nitroprusside (Legal)
+2082	does not detect β-HB
+2083	conjugated only
+2084	Ehrlich reagent / diazo reaction
+2085	Blood
+2086	heme peroxidase activity (H₂O₂ + TMB)
+2087	erythrocytes, Hb, myoglobin
+2088	Nitrites
+2089	Griess reaction
+2090	nitrate-reducing bacteria
+2091	Leukocytes
+2092	leukocyte esterase
+2093	mixture of indicators
+2094	Specific gravity
+2095	indicator dependent on ion concentration
+2096	does not account for glucose and protein
+2097	Cockcroft–Gault: CrCl (mL/min) = [(140 − age) × weight (kg)] / [72 × creatinine (mg/dL)] × 0.85 (in women)\ncreatinine (mg/dL) = creatinine (µmol/L) / 88.4
+2098	Glucose, protein, ketone, bilirubin, blood, nitrite, leukocytes
+2099	negative (protein — traces possible)
+2100	traces (3.2 µmol/L)
+2101	Creatinine clearance
+2102	≥ 90 mL/min; 60–89 — mildly decreased; < 60 — significantly decreased
+2103	Mix the midstream portion of fresh (no older than 2 hours) morning urine.
+2104	Dip the test strip for 1–2 seconds until all zones are immersed.
+2105	Blot the excess urine by touching the container edge; hold the strip horizontally.
+2106	After 60 seconds (60–120 s for leukocytes), compare each zone with the chart.
+2107	If the strip is dipped for long, the reagents wash out; if the excess urine is not removed, the colors of neighboring zones mix. After 2 minutes the colors keep changing.
+2108	What does a positive nitrite zone indicate?
+2109	That the urine contains leukocytes
+2110	That the urine contains bacteria that reduce nitrate to nitrite (most often E. coli)
+2111	That the urine contains protein
+2112	That the diet contains a lot of nitrate
+2113	The Griess reaction is an indirect sign of bacteriuria; the urine must have stayed in the bladder for ≥ 4 hours (morning urine).
+2114	10-parameter urine test strip
+2115	Leukocytes, /µL
+2116	=
+2117	=
+2118	=
+2119	=
+2120	0.3 g/L
+2121	1 g/L
+2122	3 g/L
+2123	=
+2124	Density
+2125	=
+2126	=
+2127	=
+2128	Glucose, mmol/L
+2129	=
+2130	Test strip: leukocytes / nitrites
+2131	Protein / blood
+2132	0.3 g/L / +
+2133	28 mmol/L
+2134	Ketone / bilirubin / urobilinogen
+2135	− / − / traces
+2136	pH / density
+2137	Microscopy
+2138	leukocytes cover the whole field of view, leukocyte casts, many bacteria
+2139	leukocytes 0–5
+2140	Urine culture
+2141	E. coli 10⁶ CFU/mL
+2142	=
+2143	44–80 µmol/L (women)
+2144	Creatinine clearance (Cockcroft–Gault)
+2145	mL/min
+2146	Main interpretation of the urinalysis
+2147	Normal urine
+2148	Bacterial urinary tract infection (pyelonephritis) + glucosuria
+2149	Nephrotic syndrome
+2150	Hemolytic jaundice
+2151	How is glucosuria explained in a patient whose blood glucose is 13 mmol/L?
+2152	The kidney synthesizes glucose
+2153	Glucose has exceeded the renal threshold (≈ 10 mmol/L) — the SGLT transporters are saturated and part of the filtered glucose is not reabsorbed
+2154	The urine is contaminated
+2155	Glucosuria occurs only in kidney disease
+2156	SGLT2 inhibitors (dapagliflozin) deliberately increase glucosuria by exactly this mechanism and thereby lower glycemia.
+2157	What does the leukocyte esterase zone detect?
+2158	The enzyme of bacteria
+2159	The esterase of neutrophil granulocytes — leukocytes in the urine (pyuria), including broken-down cells
+2160	Erythrocytes
+2161	Glucose
+2162	Enzyme activity persists even if the leukocytes have broken down — so the test may be more sensitive than microscopy.
+2163	Leukocyturia, nitrites, bacteriuria, leukocyte casts, fever and flank pain — **acute pyelonephritis**. Glucosuria (blood glucose above the renal threshold) — decompensated **type 2 diabetes mellitus**. Creatinine clearance ≈ ⟦0⟧ mL/min — filtration is reduced; the doses of antibiotics and metformin are adjusted accordingly (metformin dose is reduced at GFR < 45 and stopped at < 30).
+2164	serum
+2165	min
+2166	µL
+2167	room
+2168	positive
+2169	negative
+2170	invalid
+2171	drop(s)
+2172	male
+2173	female
+2174	urine
+2175	units
+2176	=
+2177	plasma
+2178	lactase
+2179	=
+2180	lipoprotein lipase
+2181	endocytosis
+2182	calculate
+2183	clear
+2184	carbonic anhydrase
+2185	activates
+2186	=
+2187	tyrosinase
+2188	transamination
+2189	xanthine oxidase
+2190	=
+2191	decreased
+2192	mild
+2193	heme oxygenase
+2194	bacteria
+2195	indirect
+2196	both
+2197	present
+2198	light
+2199	h
+2200	glucokinase
+2201	diazo reaction
+2202	pyuria
+2203	=

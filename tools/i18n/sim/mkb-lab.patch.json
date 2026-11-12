@@ -1,0 +1,97 @@
+[
+[
+"(+x).toFixed(d).replace(\".\",\",\")",
+"(+x).toFixed(d)",
+1
+],
+[
+"+\"»\");});",
+"+\"”\");});",
+1
+],
+[
+"${st.streak?st.streak+\"Streaked up to sector \":\"Petri dish — ready for inoculation\"}",
+"${st.streak?\"Streaked up to sector \"+st.streak:\"Petri dish — ready for inoculation\"}",
+1
+],
+[
+"d:\"alfa-gemoliz\"",
+"d:\"alpha-hemolysis\"",
+1
+],
+[
+"short:\"alfa-gemoliz\"",
+"short:\"alpha-hemolysis\"",
+1
+],
+[
+"d:\"elektiv-differensial\"",
+"d:\"elective-differential\"",
+2
+],
+[
+"\"Kligler muhiti\"",
+"\"Kligler medium\"",
+11
+],
+[
+"short:\"Neysser\"",
+"short:\"Neisser\"",
+1
+],
+[
+"\"musbat: gp160, gp120, gp41, p66, p31, p24\"",
+"\"positive: gp160, gp120, gp41, p66, p31, p24\"",
+1
+],
+[
+"rrow(\"ASLO\"",
+"rrow(\"ASO\"",
+1
+],
+[
+"i===1?\"1,95\":i===0?\"0,04\":",
+"i===1?\"1.95\":i===0?\"0.04\":",
+1
+],
+[
+"\"1,2–2,5\"",
+"\"1.2–2.5\"",
+4
+],
+[
+"\"0,22\"",
+"\"0.22\"",
+1
+],
+[
+"\"9,1 %\"",
+"\"9.1 %\"",
+2
+],
+[
+"\"< 6,5 %\"",
+"\"< 6.5 %\"",
+2
+],
+[
+"\"1,3\"",
+"\"1.3\"",
+1
+],
+[
+"\"0,4 %\"",
+"\"0.4 %\"",
+1
+],
+[
+"<text x=\"${x}\" y=\"152\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"${g.r===\"−\"?\"#8A6200\":\"#246B61\"}\">${g.r}</text>",
+"<text x=\"${x}\" y=\"152\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"${g.r===\"−\"?\"#8A6200\":\"#246B61\"}\">${({K:\"A\",KG:\"AG\"})[g.r]||g.r}</text>",
+1
+],
+[
+"{n:\"Oxidase reagent\",d:\"sitoxromoksidaza\"}",
+"{n:\"Oxidase reagent\",d:\"cytochrome oxidase\"}",
+1
+]
+]

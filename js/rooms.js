@@ -193,7 +193,7 @@
     ]);
     await profiles([...(reps || []).flatMap((r) => [r.reporter, r.target]), ...(evs || []).map((e) => e.user_id)].filter(Boolean));
     const nm = (id) => esc(profCache.get(id)?.name || "Noma’lum");
-    const dt = (s) => new Date(s).toLocaleString("uz");
+    const dt = (s) => new Date(s).toLocaleString(window.I18N.locale());
     A.sheet(`<h3>Shikoyatlar va avtomatik chiqarishlar</h3><div class="rm-reps">
       ${(evs || []).map((e) => `<div class="rm-rep auto"><small class="muted">${dt(e.created_at)} · avtomatik</small><br><b>${nm(e.user_id)}</b><p>${esc(e.detail || "")}</p></div>`).join("")}
       ${(reps || []).map((r) => `<div class="rm-rep"><small class="muted">${dt(r.created_at)} · shikoyat</small><br><b>${nm(r.reporter)}</b> → <b>${nm(r.target)}</b><p>${esc(r.reason)}</p></div>`).join("")}

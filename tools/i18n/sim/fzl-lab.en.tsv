@@ -1,0 +1,892 @@
+0	Physiology Laboratory
+1	Normal physiology: a virtual laboratory based on 15 lab exercises — step-by-step work with instruments, measuring, calculating and evaluating the result
+2	Excitable tissues
+3	Blood physiology
+4	Heart and blood vessels
+5	Respiratory physiology
+6	Analyzers and higher nervous activity
+7	15 virtual cases based on the laboratory exercises in the normal physiology manual. In each one you work step by step with the instruments, measure, calculate and evaluate the result. If the sequence is violated or a step is done incorrectly, it is recorded as an error in the laboratory notebook.
+8	Completed: ⟦0⟧ / ⟦1⟧
+9	Best result: ⟦0⟧ %
+10	First complete step ⟦0⟧: «⟦1⟧»
+11	← Cases
+12	↻ New subject
+13	Procedure
+14	Laboratory notebook
+15	Results report
+16	— select —
+17	Check the result
+18	Fill in all fields and select a conclusion
+19	could not be checked
+20	✓ Correct.
+21	✗ Incorrect.
+22	Step not completed: «
+23	Correct answers: ⟦0⟧ / ⟦1⟧. Procedure errors: ⟦2⟧⟦3⟧.
+24	(each one lowers the result by 8 %, by 50 % at most)
+25	<b>Explanation.</b>
+26	Retry with a new subject
+27	List of cases
+28	Correct value:
+29	sciatic nerve
+30	gastrocnemius muscle
+31	myograph lever
+32	kymograph (smoked paper)
+33	→ to the electrostimulator
+34	=
+35	Stimulation threshold and the law of strength
+36	Frog nerve–muscle preparation, electrostimulator, kymograph
+37	<b>Object:</b> a frog nerve–muscle preparation (sciatic nerve + gastrocnemius muscle). <b>Task:</b> by stimulating the nerve indirectly and the muscle directly, determine their stimulation thresholds and the maximal stimulus strength for stimulation through the nerve, and demonstrate the law of strength.
+38	Fix the preparation in the clamp and connect its tendon to the myograph lever
+39	Moisten the preparation with Ringer's solution
+40	Place the electrodes on the sciatic nerve (indirect stimulation)
+41	Slowly raise the voltage from zero to find the threshold of the nerve
+42	Raise the strength to show the maximal contraction and that the amplitude does not grow at supramaximal strength
+43	Move the electrodes to the muscle and raise the voltage from zero to find the threshold of the muscle
+44	Kymogram (single twitches; the drum is advanced by hand; 1 mm = 4 px)
+45	Voltage
+46	=
+47	The preparation was fixed in the clamp and its tendon was connected to the lever with a thread.
+48	Mount the preparation
+49	Mount the preparation first
+50	The preparation was moistened with Ringer's solution.
+51	Moisten with Ringer's solution
+52	Electrodes → nerve
+53	Electrodes → muscle
+54	First determine the threshold and maximal strength through the nerve (steps 3–5)
+55	The electrodes were placed on the sciatic nerve.
+56	Needle electrodes were inserted into the muscle (direct stimulation).
+57	⚡ Single stimulus
+58	The preparation is not mounted
+59	The electrodes are not placed on the preparation
+60	The preparation is not moistened with Ringer's solution — it dries quickly and loses its excitability
+61	Note: moisten the preparation with Ringer's solution from time to time so that it does not dry out.
+62	A new sheet of paper was placed on the kymograph drum.
+63	To determine the threshold, the voltage had to be raised slowly starting from zero (from subthreshold values)
+64	=
+65	contraction, amplitude ≈
+66	no contraction
+67	Preparation
+68	Electrodes
+69	Electrostimulator
+70	On the electrostimulator, «−/+» changes the voltage by 0.05 V and «« »» by 0.5 V. After each stimulus the drum is advanced slightly by hand; the voltage is written below.
+71	Stimulation threshold of the nerve (indirect)
+72	Threshold:
+73	Maximal stimulus strength for stimulation through the nerve
+74	Maximal strength:
+75	V (a stronger stimulus does not increase the amplitude)
+76	Stimulation threshold of the muscle (direct)
+77	Conclusion: what do the results show?
+78	The threshold of the nerve is low — its excitability is higher than that of the muscle; the amplitude increases from threshold to maximum because more and more muscle fibers are excited (law of strength)
+79	The threshold of the muscle is low — its excitability is higher than that of the nerve; the increase in amplitude depends on the contraction force of each fiber increasing
+80	The whole muscle obeys the "all-or-none" law, so the amplitude does not depend on strength
+81	The higher the threshold, the higher the excitability
+82	Excitability is inversely proportional to the threshold strength: the threshold of the nerve is low, so its excitability is high. The whole muscle consists of fibers with different thresholds — as the strength increases, the number of excited fibers grows (law of strength). At maximal strength all fibers are excited; supramaximal strength does not increase the amplitude. An individual fiber, however, obeys the "all-or-none" law.
+83	In this preparation: the threshold of the nerve is ⟦0⟧ V and the maximal strength is ⟦1⟧ V; the threshold of the muscle is ⟦2⟧ V (≈ ⟦3⟧ times higher than that of the nerve).
+84	Single twitch and tetanus
+85	Phases of contraction, unfused and fused tetanus, optimum and pessimum
+86	<b>Object:</b> a frog nerve–muscle preparation, myograph, kymograph, time marker (100 Hz — each tooth is 10 ms). <b>Task:</b> measure the phases of a single twitch, record unfused and fused tetanus by stimulating at different frequencies, and demonstrate pessimum.
+87	Mount the preparation and moisten it with Ringer's solution
+88	Set the drum to «fast» speed and record a single twitch with one stimulus
+89	Switch the drum to «slow» speed and record unfused tetanus at a low frequency (2 s)
+90	Increase the frequency and record fused tetanus
+91	Show pessimum at 100 Hz and above, then show recovery of the contraction (optimum) by lowering the frequency
+92	The preparation was mounted and moistened with Ringer's solution. The electrodes are on the nerve.
+93	Mount and moisten the preparation
+94	fast (500 mm/s)
+95	slow (50 mm/s)
+96	=
+97	⚡ Series (2 s)
+98	Mount and moisten the preparation first
+99	On a slow drum a single twitch is recorded as a thin line — the phases cannot be measured. The «fast» speed is needed for the phases.
+100	Single twitch (
+101	=
+102	Tetanus cannot be recorded on a fast-rotating drum — in 2 s the tape moves more than 1 m. Choose the «slow» speed.
+103	=
+104	a series of separate single twitches
+105	the contractions partially summate
+106	the contractions summate completely
+107	a short rise at the beginning, then the contraction drops sharply
+108	=
+109	stimulus marker
+110	Drum
+111	Stimulator
+112	Lower lines: stimulus marker and time marker. On the «fast» drum each wave of the time marker is 10 ms; count the latent period from the stimulus mark until the curve begins to rise, the contraction phase up to the peak, and the relaxation until it returns to the baseline.
+113	You did not record at ⟦0⟧ Hz. ⟦1⟧ tetanus in this preparation: ⟦2⟧ Hz
+114	Unfused
+115	Fused
+116	Recording at ⟦0⟧ Hz: ⟦1⟧
+117	separate twitches
+118	unfused tetanus
+119	fused tetanus
+120	Latent period
+121	Contraction phase
+122	Relaxation phase
+123	Frequency at which unfused tetanus was recorded
+124	Frequency at which fused tetanus was recorded
+125	When does fused tetanus occur?
+126	When each subsequent stimulus falls in the contraction phase of the previous contraction
+127	When each subsequent stimulus falls in the relaxation phase of the previous contraction
+128	When the interval between stimuli is longer than the duration of a single twitch
+129	When the impulses fall in the absolute refractory period of the muscle
+130	If a stimulus falls in the relaxation phase of the previous contraction, unfused tetanus results; if it falls in the contraction phase, the contractions summate completely and fused tetanus results. The amplitude of tetanus is greater than that of a single twitch. At a very high frequency (above 100 Hz) the impulses exceed the lability of the neuromuscular synapse — pessimum; when the frequency is reduced, the contraction recovers (optimum).
+131	=
+132	In this preparation: latent period ⟦0⟧ ms, contraction ⟦1⟧ ms, relaxation ⟦2⟧ ms (single twitch ≈ ⟦3⟧ ms). By frequency: ⟦4⟧.
+133	Chronaxiometry in humans
+134	Determination of rheobase and chronaxie with an electronic chronaxiemeter
+135	<b>Subject:</b> a 34-year-old man who, 2 months after a humerus fracture, has difficulty extending his wrist (injury of the radial nerve is suspected). <b>Task:</b> determine the rheobase and chronaxie at the motor point of the wrist extensor muscles.
+136	<b>Subject:</b> a healthy 20-year-old student. <b>Task:</b> determine the rheobase and chronaxie at the motor point of the forearm ⟦0⟧ muscles with an electronic chronaxiemeter.
+137	Moisten the skin area with physiological saline
+138	Place the passive (indifferent) electrode on the scapular region
+139	Place the active electrode on the motor point of the muscle
+140	With long impulses (≥ 100 ms), slowly raise the voltage to find the rheobase
+141	Set the voltage to double the rheobase
+142	Reduce the impulse duration to find the shortest time that still causes a contraction (chronaxie)
+143	dorsal (extensor) surface of the forearm
+144	anterior (flexor) surface of the forearm
+145	motor point
+146	active electrode (cathode)
+147	passive electrode
+148	(over the scapula)
+149	The skin was moistened (contact resistance decreases).
+150	Moisten the skin
+151	The passive electrode was placed over the scapula.
+152	Passive electrode
+153	The active electrode was placed on the motor point.
+154	Active electrode
+155	⚡ Impulse
+156	The electrodes are not placed
+157	The skin is not moistened — the result will be incorrect
+158	⟦0⟧ V, ⟦1⟧ ms → ⟦2⟧
+159	(contraction present)
+160	The voltage had to be raised slowly starting from zero (from a value that causes no contraction)
+161	Preparation
+162	Impulse duration
+163	The chronaxiemeter delivers rectangular impulses. An impulse of 100 ms or longer acts practically like a direct current — the rheobase is determined in this mode. The voltage step is 0.5 V; the duration is reduced in steps of 0.01 ms.
+164	Rheobase
+165	Rheobase:
+166	Chronaxie
+167	Chronaxie:
+168	Evaluate the result:
+169	Chronaxie is within the normal range — muscle excitability is normal
+170	Chronaxie is sharply increased — excitability is reduced, typical of nerve injury
+171	Chronaxie is decreased — excitability is reduced
+172	Chronaxie cannot be evaluated because the rheobase is high
+173	Chronaxie is the shortest time a current equal to twice the rheobase needs to cause excitation; it is a measure of excitability in terms of time: the smaller the chronaxie, the higher the excitability. Normally it is 0.08–0.16 ms in flexor muscles and 0.16–0.32 ms in extensors. When a nerve is injured, the chronaxie of the muscle increases tens of times; with recovery it returns to normal.
+174	In this subject the rheobase is ⟦0⟧ V and the chronaxie is ⟦1⟧ ms. Threshold formula (Weiss–Lapicque): U = Rb·(1 + chr/t); when t = chr, U = 2·Rb.
+175	Counting red blood cells in the Goryaev chamber
+176	1:200 dilution, Egorov's rule, calculation formula
+177	healthy student
+178	complains of weakness, fatigue and dizziness
+179	a mountaineer who has lived for 3 months at a mountain base at 3500 m altitude
+180	<b>Subject:</b> ⟦0⟧-year-old ⟦1⟧, ⟦2⟧. <b>Task:</b> determine the number of red blood cells in capillary blood using the Goryaev chamber.
+181	Pour 4 ml of 3 % NaCl solution into a test tube
+182	Wipe the finger with alcohol and prick it; wipe away the first drop with cotton
+183	Take 0.02 ml of blood, add it to the test tube and mix (1 : 200)
+184	Cover the Goryaev chamber with the cover glass (until Newton's rings appear)
+185	Fill the chamber with the diluted blood and wait 1 minute
+186	Under the microscope (×8), count the red blood cells in the 1st large square according to Egorov's rule
+187	Add the results of the other 4 large squares and calculate the number of red blood cells
+188	3 % NaCl
+189	Alcohol 70 %
+190	Sahli pipette (0.02 ml)
+191	Goryaev chamber
+192	Pour in 4 ml of NaCl
+193	4 ml of 3 % NaCl was poured into the test tube.
+194	Wipe the finger with alcohol
+195	The fingertip was wiped with alcohol.
+196	Prick with a scarifier
+197	The finger must be wiped with alcohol before pricking (asepsis)
+198	The finger was pricked and a drop of blood appeared.
+199	Wipe away the 1st drop with cotton
+200	Not pricked yet
+201	The first drop was wiped away (it is mixed with tissue fluid).
+202	Take 0.02 ml of blood → test tube
+203	The finger has not been pricked
+204	The first drop was not wiped away — it contains tissue fluid, so the result will be low
+205	0.02 ml of blood was taken, the outside of the pipette was wiped and the blood was blown into the test tube.
+206	Mix
+207	There is no blood in the test tube yet
+208	Mixed: dilution 1 : 200.
+209	Cover with the cover glass
+210	The cover glass was slid on with friction — Newton's rings are visible.
+211	Fill the chamber
+212	Dilute and mix the blood first
+213	The chamber must first be covered with the cover glass — otherwise the chamber depth (0.1 mm) is disturbed
+214	The chamber was filled. Wait 1 minute for the red blood cells to settle.
+215	View under the microscope
+216	The chamber is not filled
+217	Only ⟦0⟧ s have passed — the red blood cells have not settled; they float at different focal planes
+218	Chamber
+219	Counting finished
+220	Clear the marks
+221	The 1st large square (16 small squares) is in the field of view. Mark each red blood cell you count by clicking it (click again to remove the mark). Egorov's rule: cells inside the square and on the upper and left lines are counted; cells on the lower and right lines are not.
+222	Counter
+223	Not counted yet
+224	Red blood cells you counted in the 1st large square: ⟦0⟧.
+225	Large square
+226	Red blood cells
+227	(you)
+228	Your colleague counted squares 2–5 diagonally. Now calculate the total number (A) and the red blood cell count: X = A × 4000 × 200 / 80 (per µL).
+229	Number of red blood cells in the 1st large square (by Egorov's rule)
+230	Correct number:
+231	Total in the 5 large squares (80 small squares), A
+232	A =
+233	Red blood cell count
+234	× 10¹²/L
+235	X = A × 10 000 / µL =
+236	The red blood cell count is normal
+237	The red blood cell count is decreased (erythropenia, typical of anemia)
+238	The red blood cell count is increased (erythrocytosis)
+239	Normal: 4.0–5.0 in men and 3.7–4.7 in women × 10¹²/L. At high altitude, hypoxia increases the production of erythropoietin in the kidney — absolute erythrocytosis develops.
+240	In the microscope image: <span style="color:#1F8A4C">green ring</span> — counted correctly, <span style="color:#E08A00">yellow broken ring</span> — missed (⟦0⟧), <span style="color:#C62828">red ×</span> — a cell that should not have been counted (on the lower/right line or outside) (⟦1⟧). Formula: X = A × 4000 × 200 / 80 = A × 10 000 (per µL), i.e. A/100 × 10¹²/L.
+241	Hemoglobin and color index by the Sahli method
+242	Sahli hemometer, acid hematin, calculating the color index
+243	complains of heavy menstrual bleeding, weakness and hair loss
+244	after gastric resection; has a burning tongue and numbness in the legs
+245	healthy donor
+246	<b>Subject:</b> ⟦0⟧-year-old ⟦1⟧, ⟦2⟧. Red blood cell count on the laboratory form: <b>⟦3⟧ × 10¹²/L</b>. <b>Task:</b> determine the hemoglobin level by the Sahli method and calculate the color index.
+247	Pour 0.1 N HCl into the middle test tube of the hemometer up to the lower mark (2)
+248	Wipe the finger with alcohol and prick it; wipe away the first drop
+249	Take 20 µL (0.02 ml) of blood, wipe the pipette tip, blow the blood into the HCl and mix
+250	Wait 5 minutes (formation of acid hematin)
+251	Add distilled water drop by drop and match the color to the standards
+252	Read the hemoglobin level from the scale
+253	graduated test tube
+254	Sahli hemometer (scale: g/dL)
+255	0.1 N HCl
+256	Distilled water
+257	(magni-
+258	fied)
+259	Pour HCl to the mark
+260	0.1 N HCl was poured into the middle test tube up to the «2» mark.
+261	The finger was wiped with alcohol.
+262	Prick
+263	The finger must be wiped with alcohol before pricking
+264	The finger was pricked.
+265	Wipe away the 1st drop
+266	The first drop was wiped away with cotton.
+267	20 µL of blood → HCl, mix
+268	There is no HCl in the test tube yet
+269	The first drop was not wiped away
+270	20 µL of blood was taken, the pipette tip was wiped, the blood was blown into the HCl and the pipette was rinsed with HCl. The stopwatch was started.
+271	+1 drop of water
+272	+5 drops
+273	Compare with the standard
+274	Only ⟦0⟧ have passed — acid hematin has not formed completely (the color is still pale). Water is added after 5 minutes; otherwise the result will be low.
+275	The test tube is much darker than the standards
+276	The test tube is slightly darker than the standards
+277	The colors are the same
+278	The test tube is lighter than the standards — too much water was added
+279	Too much water was added: the color is lighter than the standard. In this case the hemoglobin comes out higher than the true value; to get an accurate result the analysis must be restarted.
+280	Comparison:
+281	The colors have not been matched yet
+282	Read from the lower edge of the meniscus (magnified view on the right).
+283	Reading from the scale
+284	Time
+285	Matching
+286	Compare the color against a white background in daylight, placing the test tubes side by side. Add the water one drop at a time at the end: water added in excess cannot be taken back.
+287	Reading on the hemometer scale
+288	g/dL
+289	On the scale:
+290	Hemoglobin level
+291	g/L
+292	True hemoglobin:
+293	Color index (CI = Hb, g/L × 3 / first 3 digits of the red blood cell count)
+294	CI = ⟦0⟧ × 3 / ⟦1⟧ = ⟦2⟧
+295	Conclusion based on the color index:
+296	Normochromia (CI 0.85–1.05)
+297	Hypochromia (CI < 0.85) — typical of iron deficiency
+298	Hyperchromia (CI > 1.05) — typical of B₁₂/folate deficiency
+299	The CI shows the relative saturation of a single red blood cell with hemoglobin. In iron deficiency the red blood cells are small and pale (hypochromic), whereas in vitamin B₁₂ and folic acid deficiency they are large and saturated with hemoglobin (megalocytes) — hyperchromia. The Sahli method is subjective, with an error of up to ± 10 %.
+300	True hemoglobin ⟦0⟧ g/L; red blood cells ⟦1⟧ × 10¹²/L; CI = ⟦2⟧. Normal: 130–160 g/L in men, 120–140 g/L in women.
+301	ESR by the Panchenkov method
+302	Sodium citrate, capillary, 1 hour, plasma column
+303	fever, cough and chest pain for 5 days (pneumonia is suspected)
+304	32nd week of pregnancy, no complaints
+305	<b>Subject:</b> ⟦0⟧-year-old ⟦1⟧, ⟦2⟧. <b>Task:</b> determine the erythrocyte sedimentation rate by the Panchenkov method.
+306	Rinse the capillary with 5 % sodium citrate solution
+307	Draw citrate up to the «P» mark (50) and expel it onto a watch glass
+308	Draw blood from the finger up to the «K» mark twice and add it to the citrate (4 : 1)
+309	Mix, then draw the mixture into the capillary up to the «K» (0) mark
+310	Place the capillary upright in the stand and note the time
+311	After 1 hour measure the height of the plasma column
+312	Panchenkov apparatus
+313	watch glass
+314	5 % Na citrate
+315	=
+316	=
+317	⏰ Timer: 1 hour has passed.
+318	1 hour has passed
+319	Rinse the capillary with citrate
+320	The capillary was rinsed with 5 % sodium citrate.
+321	Draw citrate up to «P» and expel it onto the glass
+322	50 divisions of citrate were expelled onto the watch glass.
+323	Draw blood up to «K» and add it to the glass
+324	Blood was drawn up to the «K» mark ⟦0⟧ times and added to the watch glass.
+325	Too much blood was added — the blood-to-citrate ratio of 4 : 1 is disturbed
+326	Mix and draw into the capillary up to «K»
+327	Citrate has not been drawn
+328	Blood was drawn only once — it must be drawn twice to give a 4 : 1 ratio
+329	Blood has not been added yet
+330	The mixture was drawn up to the «K» (0) mark without air bubbles.
+331	Place upright in the stand (timer)
+332	There is no mixture in the capillary
+333	The capillary was placed upright and the timer was started.
+334	The capillary is not placed in the stand
+335	Only ⟦0⟧ minutes have passed — ESR is measured at 1 hour
+336	The measurement was delayed (⟦0⟧ minutes) — the red blood cells keep settling, so the result will be too high
+337	Read the plasma column in mm on the magnified scale.
+338	Measure the plasma column
+339	Work
+340	Timer
+341	Magnified view of the capillary: scale 0–100 mm. At the top is clear yellow plasma, at the bottom the settled red blood cells. ESR is the height of the plasma column after 1 hour (mm/h). The timer stops by itself at 60 minutes.
+342	ESR
+343	mm/h
+344	Correct result:
+345	ESR is normal
+346	ESR is increased — typical of an inflammatory process (nonspecific sign)
+347	ESR is increased for a physiological reason (pregnancy)
+348	ESR is decreased
+349	Normal: 1–10 mm/h in men and 2–15 mm/h in women. When fibrinogen and globulins increase, red blood cells form «rouleaux» and settle faster: in inflammation (pathological) and in the second half of pregnancy (physiological, up to 40–50 mm/h). ESR is a nonspecific indicator — it does not establish a diagnosis.
+350	In this subject the ESR is ⟦0⟧ mm/h.
+351	=
+352	=
+353	=
+354	=
+355	Determining blood group and Rh factor
+356	Anti-A, anti-B and anti-D Zoliclones (monoclonal reagents); evaluating agglutination
+357	<b>Subject:</b> a patient preparing for elective surgery. <b>Task:</b> determine the ABO blood group and Rh factor using Zoliclones.
+358	Label the plate: anti-A, anti-B, anti-D
+359	Add 1 drop (0.1 ml) of the corresponding Zoliclone to each mark
+360	Take blood from the finger and place a drop 10 times smaller next to each drop
+361	Mix each drop with a separate clean stick
+362	Rock the plate slowly and observe: anti-A, anti-B — 2.5 minutes, anti-D — 3 minutes
+363	Read the result (if there is agglutination with both Zoliclones — control with physiological saline)
+364	saline
+365	blood (on the tip of the stick)
+366	clean stick
+367	First label the plate (which reagent goes where)
+368	First select an instrument or reagent
+369	Wrong reagent: ⟦1⟧ was dropped on the spot marked «⟦0⟧»
+370	⟦0⟧: 1 drop (0.1 ml) was added.
+371	First add the reagent, then place the blood next to it
+372	A small drop of blood was placed next to ⟦0⟧.
+373	There is no blood in this spot yet
+374	⟦0⟧: mixed with a new clean stick.
+375	The plate was labeled.
+376	Label the plate
+377	Not mixed yet
+378	The plate is being rocked slowly.
+379	Rocking stopped.
+380	Rock
+381	The 4th spot was marked for control: physiological saline + blood + mixing.
+382	Control spot
+383	Read the result
+384	The three spots are not fully prepared
+385	Only ⟦0⟧ s have passed — the result is evaluated after 2.5 minutes (anti-D after 3 minutes); weak agglutination appears late
+386	The plate was not rocked — agglutination will be weak and may be missed
+387	Observation (⟦0⟧): anti-A — ⟦1⟧; anti-B — ⟦2⟧; anti-D — ⟦3⟧.
+388	agglutination present
+389	uniform pink-red, no agglutination
+390	no agglutination
+391	not yet (time may be insufficient)
+392	Control (saline): no agglutination — the result is reliable.
+393	Instrument in hand (then click a spot on the plate)
+394	Observation
+395	In blood group AB (IV) (agglutination with both Zoliclones) the control test with physiological saline was not performed
+396	Blood group (ABO)
+397	Group:
+398	Rh factor
+399	Rh⁺ (Rh-positive)
+400	Rh⁻ (Rh-negative)
+401	=
+402	=
+403	What does agglutination with a Zoliclone mean?
+404	The corresponding agglutinogen (antigen) is present on the red blood cells
+405	The corresponding agglutinin (antibody) is present in the plasma
+406	The blood clotting system has been activated
+407	Hemolysis of the red blood cells
+408	Zoliclones are monoclonal antibodies; they directly detect the antigen (agglutinogen) on the red blood cell membrane: agglutination with anti-A means antigen A is present, with anti-B antigen B, and with anti-D antigen D (Rh). If agglutination occurs with both Zoliclones (group AB), a control with physiological saline is run to exclude false agglutination.
+409	In this patient: ⟦0⟧, ⟦1⟧.
+410	Bleeding time (Duke) and clotting time (Sukharev)
+411	Filter paper, stopwatch, tilting the capillary
+412	pinpoint hemorrhages under the skin and bleeding gums over the last month; platelets 38 × 10⁹/L
+413	prolonged bleeding after minor injuries since childhood, bleeding into the knee joint (his mother's brother has the same disease)
+414	<b>Subject:</b> ⟦0⟧. <b>Task:</b> determine the bleeding time by the Duke method and the clotting time of capillary blood by the Sukharev method.
+415	Wipe the earlobe with alcohol and let it dry
+416	Puncture to a depth of 3–4 mm with a scarifier and start the stopwatch
+417	Every 30 seconds blot the drop of blood with filter paper (without touching the skin)
+418	Mark the time when no spot is left on the paper
+419	Draw 25–30 mm of blood from the finger into a Sukharev capillary and start the stopwatch
+420	Tilt the capillary every 30 seconds to find the beginning and the end of clotting
+421	earlobe
+422	filter paper
+423	Wipe with alcohol
+424	The earlobe was wiped with alcohol.
+425	Dry
+426	Wipe with alcohol first
+427	The skin was dried (if alcohol remains, the blood spreads and does not form a drop).
+428	Puncture (3–4 mm) + stopwatch
+429	Punctured and the stopwatch started. A drop of blood is coming out by itself (do not squeeze!).
+430	Blot on filter paper
+431	Interval ⟦0⟧ s — the drop must be blotted every 30 seconds
+432	First blotting at ⟦0⟧ s — it should be at 30 seconds
+433	⟦0⟧ — a spot remained on the paper.
+434	⟦0⟧ — no spot remained: the bleeding has stopped.
+435	Draw blood from the finger into the capillary + stopwatch
+436	The finger was wiped and pricked, the first drop was wiped away; 25–30 mm of blood was drawn into the capillary and the stopwatch was started.
+437	Tilt the capillary
+438	No blood has been drawn into the capillary
+439	The capillary is being tilted too often — tilt it every 30 seconds
+440	the blood column moves freely
+441	the blood column moves slowly, with difficulty — clotting has begun
+442	the blood column does not move, fibrin threads are visible in the capillary — clotting is complete
+443	Sukharev capillary (when tilted)
+444	Duke method
+445	Sukharev method
+446	Duke: the paper touches the drop but must not touch the skin wound — otherwise the clot is damaged. Sukharev: the beginning of clotting is the time when the movement of the column slows down; the end is the time when the column stops completely.
+447	Bleeding time (Duke)
+448	e.g. 3
+449	(first blotting with no spot left)
+450	Beginning of clotting (Sukharev)
+451	End of clotting (Sukharev)
+452	Evaluate the results:
+453	Bleeding and clotting times are normal — hemostasis is not impaired
+454	Bleeding time is prolonged, clotting time is normal — vascular-platelet hemostasis is impaired
+455	Clotting time is prolonged, bleeding time is normal — coagulation hemostasis is impaired
+456	Both values are shortened — hypercoagulation
+457	The Duke method assesses vascular-platelet (primary) hemostasis — normal 2–4 minutes; it is prolonged in thrombocytopenia. Capillary blood clotting (Sukharev): beginning 30 s – 2 minutes, end 3–5 minutes; it is prolonged in clotting-factor deficiency (hemophilia), while the bleeding time remains normal.
+458	In this subject: bleeding stopped at ⟦0⟧; clotting began at ⟦1⟧ and ended at ⟦2⟧ (accuracy ± 30 s with 30-second tilting).
+459	cubital fossa
+460	radial artery
+461	=
+462	mm Hg
+463	Cuff: 2–2.5 cm above the elbow
+464	Cuff: over the elbow crease
+465	There is air in the cuff — release the air first
+466	The cuff covers the elbow crease — the stethoscope cannot be placed; the cuff is tied 2–2.5 cm above the elbow
+467	The cuff was tied on the arm 2–2.5 cm above the elbow, so that one finger fits under it.
+468	First tie the cuff correctly
+469	The stethoscope was placed over the brachial artery in the cubital fossa.
+470	Stethoscope
+471	Palpate the radial pulse
+472	Inflate (hold)
+473	The cuff is not tied
+474	The valve is open — first close the valve, otherwise the air will escape
+475	slow (2–3 mm/s)
+476	fast (8 mm/s)
+477	open fully
+478	The cuff was inflated only to ⟦0⟧ mm — this is below the systolic pressure; the sounds are heard immediately and the systolic pressure cannot be determined
+479	The cuff was inflated unnecessarily high — it causes pain to the patient (20–30 mm above the point where the pulse disappears is enough)
+480	Note: after the pulse disappears, inflating a further 20–30 mm is recommended (so as not to miss the auscultatory gap).
+481	While inflating, you did not monitor the radial pulse by palpation (you need to know the pressure at which the pulse disappears)
+482	🔊 Sound
+483	🔇 Sound
+484	tap (muffled)
+485	TAP
+486	The air is being released too fast (> 4 mm/s) — the pressure falls too much between sounds, so the result will be inaccurate
+487	The stethoscope was not placed — no sounds were heard
+488	No sounds were heard — repeat the measurement.
+489	Cuff
+490	Palpation / auscultation
+491	Bulb
+492	Valve
+493	4th intercostal space, right sternal border
+494	4th intercostal space, left sternal border
+495	midway between V2 and V4
+496	5th intercostal space, midclavicular line
+497	anterior axillary line, at the level of V4
+498	midaxillary line, at the level of V4
+499	2nd intercostal space, on the right
+500	2nd intercostal space, on the left
+501	3rd intercostal space, on the left
+502	4th intercostal space, midclavicular line
+503	6th intercostal space, midclavicular line
+504	5th intercostal space, on the right
+505	right forearm
+506	left forearm
+507	left lower leg
+508	right lower leg
+509	=
+510	=
+511	=
+512	=
+513	=
+514	=
+515	=
+516	=
+517	=
+518	Recording and analyzing an ECG
+519	Placing electrodes, calibration, measuring intervals in lead II
+520	healthy 20-year-old student
+521	24-year-old athlete (long-distance runner), no complaints
+522	19-year-old student, excited before an exam, has drunk 2 cups of coffee
+523	<b>Subject:</b> ⟦0⟧. <b>Task:</b> record an ECG with correctly placed electrodes, measure the RR, PQ, QRS and QT intervals and the R wave amplitude in standard lead II, and evaluate the heart rate and rhythm.
+524	Lay the subject down, wipe the electrode sites with alcohol and apply gel
+525	Place the limb electrodes according to color
+526	Place the chest electrodes at points V1–V6
+527	Calibrate (1 mV = 10 mm) and choose the paper speed
+528	Record the ECG
+529	Measure the intervals and amplitude with calipers in lead II
+530	midclavicular
+531	=
+532	=
+533	First wipe the skin with alcohol and apply gel
+534	First select an electrode
+535	A limb electrode is placed here
+536	A chest electrode is placed here
+537	The skin was wiped with alcohol and gel was applied to the electrode sites.
+538	Alcohol + gel
+539	=
+540	=
+541	Calibration signal: 1 mV = ⟦0⟧ mm.
+542	Note: the standard gain is 10 mm/mV. With any other value the amplitude will have to be recalculated.
+543	Calibration 1 mV
+544	▶ Record ECG
+545	Select an electrode, then click a point on the body
+546	Paper speed
+547	Gain
+548	The limb electrodes are not all placed
+549	Paper speed not selected
+550	No calibration signal was given before recording — the amplitude cannot be evaluated
+551	The ⟦0⟧ electrode is in the wrong place (⟦1⟧); the correct place is ⟦2⟧
+552	The chest electrodes are not all placed
+553	=
+554	=
+555	Attention: in lead I the P wave and QRS came out negative.
+556	=
+557	Calipers: horizontal (time)
+558	Calipers: vertical (amplitude)
+559	Line 1
+560	Line 2
+561	Scroll the strip
+562	=
+563	Paper speed ⟦0⟧ mm/s (1 mm = ⟦1⟧ s), gain ⟦2⟧ mm/mV. Drag the caliper lines over the strip; the interval is shown in mm. A small square is 1 mm, a large square is 5 mm.
+564	RR interval
+565	=
+566	Heart rate (60 / RR)
+567	HR =
+568	PQ interval
+569	=
+570	QRS complex
+571	=
+572	QT interval
+573	=
+574	R wave amplitude in lead II
+575	=
+576	Evaluate the rhythm:
+577	Sinus rhythm, heart rate normal (60–90 /min)
+578	Sinus bradycardia (HR < 60 /min)
+579	Sinus tachycardia (HR > 90 /min)
+580	The rhythm does not originate from the sinus node (no P wave)
+581	Criteria of sinus rhythm: in lead II the P wave is positive and precedes every QRS, the PQ is constant and the RR intervals are equal. In athletes vagal tone is high — physiological sinus bradycardia; excitement and caffeine cause sinus tachycardia through sympathetic influence. Norms: PQ 0.12–0.20 s, QRS 0.06–0.10 s, QT depends on heart rate (approximately 0.36–0.44 s).
+582	In this recording: HR ⟦0⟧, RR ⟦1⟧ s, P ⟦2⟧ s, PQ ⟦3⟧ s, QRS ⟦4⟧ s, QT ⟦5⟧ s, R (II) ⟦6⟧ mV.⟦7⟧
+583	Because the arm electrodes were swapped, lead I is inverted and leads II and III have exchanged places.
+584	Measuring arterial blood pressure by the Korotkoff method
+585	Aneroid sphygmomanometer, stethoscope, Korotkoff sounds
+586	healthy 19-year-old student
+587	35-year-old teacher, preventive examination
+588	48-year-old driver, sometimes has headaches
+589	56-year-old man, pain in the occipital region, «floaters» before the eyes
+590	<b>Subject:</b> ⟦0⟧; sat quietly for 5 minutes, arm at heart level, palm facing up. <b>Task:</b> measure arterial blood pressure by the Korotkoff method and calculate the pulse pressure and mean arterial pressure.
+591	Tie the cuff on the arm 2–2.5 cm above the elbow
+592	Place the stethoscope over the brachial artery in the cubital fossa
+593	Palpate the radial pulse and inflate until the pulse disappears and a further 20–30 mm
+594	Open the valve and release the air slowly (2–3 mm/s)
+595	Mark the pressure at the first sound (systolic) and at the disappearance of sounds (diastolic)
+596	The measurement is finished. Enter what the manometer showed at the first and the last sounds you heard. If needed, you can repeat the measurement after 2–3 minutes.
+597	Hold down the «Inflate» button and watch the manometer needle. When you move the valve to the «slow» position the air escapes at 2–3 mm/s. The sounds are heard in the stethoscope (turn the sound on); a «TAP» sign also appears on the screen.
+598	Systolic pressure
+599	Systolic:
+600	Diastolic pressure
+601	Diastolic:
+602	Pulse pressure
+603	Pulse pressure = systolic − diastolic
+604	Mean arterial pressure
+605	Mean = diastolic + pulse pressure / 3 ≈
+606	Evaluate the result (WHO / European guidelines):
+607	Optimal pressure (< 120/80)
+608	Normal pressure (120–129/80–84)
+609	High-normal pressure (130–139/85–89)
+610	Arterial hypertension (≥ 140/90)
+611	Systolic pressure is the pressure at which the first clear Korotkoff sound appears (blood begins to pass through the compressed artery with turbulent flow); diastolic is the pressure at which the sounds disappear completely (the artery is fully open, flow is laminar). Normal pulse pressure is 40–50 and mean arterial pressure is ≈ 80–95 mm Hg.
+612	True pressure ⟦0⟧/⟦1⟧ mm Hg.⟦2⟧
+613	In your measurement the first sound was heard at ≈ ⟦0⟧ and the last at ≈ ⟦1⟧ mm Hg.
+614	Exercise test (Martinet–Kushelevsky)
+615	20 squats: pulse and pressure response, recovery
+616	<b>Subject:</b> ⟦0⟧-year-old student. <b>Task:</b> measure pulse and arterial blood pressure at rest, after 20 squats and at the end of the 3rd minute, and determine the type of cardiovascular response to exercise.
+617	Count the pulse for 10 s at rest
+618	Measure arterial blood pressure at rest
+619	Do 20 squats in 30 s
+620	Count the pulse for 10 s immediately after exercise
+621	Measure arterial blood pressure after exercise
+622	Measure pulse and pressure again at the end of the 3rd minute
+623	rest
+624	after exercise
+625	end of 3rd minute
+626	Current stage:
+627	⟦0⟧: measurement finished.
+628	10.0 s
+629	Count the pulse (10 s)
+630	Perform the exercise first
+631	⟦0⟧: the 10 s count is over — you should have counted the beats yourself.
+632	Radial artery:
+633	First measure the pulse and pressure at rest
+634	Release the air from the cuff
+635	Squats: ⟦0⟧/20
+636	20 squats were completed in 30 s. Measure the pulse immediately, then the pressure!
+637	20 squats (30 s)
+638	First measure the pulse and pressure after exercise
+639	The end of the 3rd minute has come (time was accelerated). Measure the pulse and pressure again.
+640	Wait until the end of the 3rd minute
+641	Pulse
+642	Test
+643	Counting the pulse: for 10 s a red dot lights up with every beat — count the beats yourself and multiply by 6. Measure the pressure by the Korotkoff method as before.
+644	Pulse at rest
+645	beats × 6)
+646	Pulse after exercise
+647	Increase in pulse
+648	(pulse₂ − pulse₁) / pulse₁ × 100 %
+649	Pressure at rest (systolic)
+650	Pressure after exercise (systolic)
+651	Pressure after exercise (diastolic)
+652	Did the values return to baseline at the end of the 3rd minute?
+653	Yes, recovered
+654	No, not recovered
+655	Recovered
+656	Not recovered (pulse
+657	, pressure
+658	Type of response to exercise:
+659	Normotonic (favorable): pulse increases by 50–75 %, systolic pressure rises by 15–30 mm, diastolic pressure stays the same or falls slightly, recovery within 3 minutes
+660	Hypertonic (unfavorable): systolic pressure rises sharply (> 40–50 mm) and diastolic pressure rises too, recovery is slow
+661	Hypotonic (asthenic, unfavorable): pulse accelerates sharply (> 100 %), pressure hardly changes, recovery is slow
+662	In the normotonic response the load is met by a proportional increase in stroke volume and heart rate; dilation of arterioles in the working muscles keeps the diastolic pressure from rising. In the hypotonic response cardiac output increases mainly through heart rate (stroke volume does not increase) — the heart works uneconomically. The hypertonic response is typical of impaired vascular tone.
+663	True values: pulse ⟦0⟧; pressure ⟦1⟧/⟦2⟧ → ⟦3⟧/⟦4⟧ → ⟦5⟧/⟦6⟧. Pulse increase ≈ ⟦7⟧ %.
+664	Measuring lung volumes with a water spirometer
+665	Tidal volume, ERV, VC, IRV, comparison with the predicted VC
+666	has had curvature of the thoracic spine (kyphoscoliosis) since childhood, gets short of breath on stairs
+667	<b>Subject:</b> ⟦0⟧-year-old ⟦1⟧, height ⟦2⟧ cm; ⟦3⟧. <b>Task:</b> determine the tidal volume, expiratory reserve volume (ERV), vital capacity (VC) and inspiratory reserve volume (IRV) with a water spirometer; compare the VC with the predicted value.
+668	Wipe the mouthpiece with alcohol and put a clip on the nose
+669	Tidal volume: after a quiet inspiration, exhale quietly into the spirometer 3 times
+670	ERV: after a quiet expiration, exhale maximally into the spirometer
+671	VC: inhale maximally and exhale maximally (3 times, the largest is taken)
+672	Calculate the IRV, predicted VC and percentage
+673	valve
+674	Water spirometer (Hutchinson)
+675	ml (magnified)
+676	The mouthpiece was not wiped with alcohol
+677	No nose clip — air escapes through the nose, so the result will be low
+678	Wipe the mouthpiece with alcohol
+679	The mouthpiece was wiped with alcohol.
+680	Nose clip
+681	The nose clip was put on.
+682	Reset the bell to zero (valve)
+683	The valve was opened, the bell was lowered to zero and the valve was closed.
+684	Quiet exhalation
+685	Three attempts are enough
+686	After a quiet inspiration, a quiet exhalation was made into the spirometer (attempt ⟦0⟧). Read the scale.
+687	Maximal exhalation after a quiet exhalation (ERV)
+688	The bell was not reset to zero — the previous air volume is added and the result will be wrong
+689	After a quiet exhalation, a maximal exhalation was made into the spirometer. Read the scale.
+690	Maximal inhalation, then maximal exhalation (VC)
+691	The bell was not reset to zero — the VC must be measured from zero each time
+692	VC: attempt ⟦0⟧. Read the scale.
+693	Subject
+694	The rise of the bell equals the volume of exhaled air. Scale: a small mark is 50 ml, the numbers are every 100 ml. Predicted VC (L) = (27.63 − 0.112 × age) × height (cm) / 1000 for men; (21.78 − 0.101 × age) × height / 1000 for women. Normally the actual VC is within ± 20 % of the predicted value.
+695	Tidal volume (average)
+696	Expiratory reserve volume (ERV)
+697	VC (the largest of the three attempts)
+698	Inspiratory reserve volume: IRV = VC − (TV + ERV)
+699	Predicted VC
+700	Actual VC as a percentage of the predicted value
+701	Conclusion:
+702	VC is within ± 20 % of the predicted value — external respiration is normal
+703	VC is markedly below the predicted value (< 80 %) — lung expansion is limited (restrictive disorder)
+704	VC is 50 % above the predicted value — obstructive disorder
+705	VC = TV + IRV + ERV. In chest-wall deformity (kyphoscoliosis) and diseases of the pleura and lung tissue, lung expansion is limited — VC decreases (restrictive disorder). An obstructive disorder is detected during forced expiration (FEV₁, Tiffeneau index).
+706	In this subject: TV attempts ⟦0⟧ ml; ERV ⟦1⟧ ml; VC attempts ⟦2⟧ ml; predicted VC ⟦3⟧ ml.
+707	on the right
+708	Determining visual acuity (Golovin–Sivtsev chart)
+709	Landolt rings, 5 m distance, each eye separately, V = d / D
+710	<b>Subject:</b> a 20-year-old student who does not wear glasses. <b>Task:</b> determine the visual acuity of each eye using the Landolt-ring part of the Golovin–Sivtsev chart. The subject says on which side the gap in the ring is.
+711	Switch on the Rot apparatus that illuminates the chart
+712	Seat the subject 5 m from the chart
+713	Cover the left eye with an occluder and test the right eye from top to bottom
+714	Cover the right eye with an occluder and test the left eye
+715	=
+716	=
+717	right (OD)
+718	left (OS)
+719	Point to a ring with the pointer (click) — the subject says where the gap is. Compare the answer with the ring itself. A row counts as read if all rings in it are named correctly.
+720	Rot apparatus (illumination)
+721	Distance 3 m — the chart is designed for 5 m.
+722	=
+723	Cover the left eye
+724	Cover the right eye
+725	Remove the occluder
+726	Room
+727	Occluder
+728	The chart is not illuminated (the Rot apparatus is off) — testing is done under standard illumination
+729	The subject is not at 5 m — the chart is designed for 5 m
+730	=
+731	=
+732	=
+733	Both eyes are open — each eye is tested separately, the other is covered with an occluder
+734	I can't see / not clear
+735	Gap
+736	Right eye
+737	Left eye
+738	Both eyes
+739	Visual acuity of the right eye (OD), V
+740	=
+741	Visual acuity of the left eye (OS), V
+742	=
+743	Calculate: if the subject sees the 1st row (D = 50 m) only from 3 m, V = d / D = ?
+744	V = 3 / 50 = 0.06
+745	Visual acuity is normal in both eyes (V ≥ 1.0)
+746	Visual acuity is reduced in the right eye and normal in the left
+747	Visual acuity is reduced in the left eye and normal in the right
+748	Visual acuity is reduced in both eyes
+749	Snellen formula: V = d / D. An eye that reads the 10th row (D = 5 m) from 5 m has V = 1.0 — normal; this corresponds to the ability to see two points separately at an angle of 1 minute of arc. The thickness of the Landolt ring and of its gap is 1/5 of the outer diameter. Each eye is tested separately because with both eyes open the better eye «hides» the result.
+750	In this subject: OD = ⟦0⟧, OS = ⟦1⟧.
+751	Rinne and Weber tuning-fork tests
+752	Air and bone conduction, lateralization
+753	healthy student, no complaints
+754	left ear has felt «blocked» for 3 days, which began after diving into water
+755	pain and reduced hearing in the right ear, caught a cold 5 days ago
+756	tinnitus and reduced hearing in the right ear; has worked in a noisy workshop for 10 years (mainly noise on the right side)
+757	hearing in the left ear is gradually decreasing, with ringing in the ear
+758	=
+759	<b>Subject:</b> ⟦0⟧. <b>Task:</b> perform the Rinne test (in both ears) and the Weber test with a C₁₂₈ tuning fork, and determine whether the sound-conducting or the sound-perceiving apparatus is damaged.
+760	Rinne test in the right ear: tuning fork on the mastoid process; when the sound disappears — in front of the ear canal
+761	Rinne test in the left ear
+762	Weber test: tuning fork on the top of the head (midline)
+763	right ear
+764	left ear
+765	right mastoid process
+766	left mastoid process
+767	in front of the right ear canal
+768	in front of the left ear canal
+769	top of the head
+770	00.0 s
+771	I can't hear it anymore.
+772	The tuning fork was struck on the knee and set vibrating; the stopwatch was started.
+773	Strike the tuning fork
+774	Take
+775	The tuning fork is not vibrating
+776	I don't hear anything.
+777	I hear it equally in both ears, in the middle of my head.
+778	I hear it louder in my right ear.
+779	I hear it louder in my left ear.
+780	I hear it.
+781	I don't hear it.
+782	Yes, I hear it again.
+783	No, I don't hear it.
+784	The tuning fork should have been moved from the mastoid process as soon as the subject stopped hearing the sound
+785	The tuning fork was moved late — the sound has faded and air conduction cannot be evaluated
+786	C₁₂₈ tuning fork
+787	Place the tuning fork
+788	Rinne: the stem of the vibrating tuning fork is placed on the mastoid process; as soon as the subject says «I can't hear it», move it in front of the ear canal (1–2 cm) and ask whether they hear it again. Set the tuning fork vibrating again before each test.
+789	Rinne test — right ear
+790	positive (air conduction is longer)
+791	negative (bone conduction is longer)
+792	Positive
+793	Negative
+794	Rinne test — left ear
+795	Weber test
+796	no lateralization (midline)
+797	lateralization to the right ear
+798	lateralization to the left ear
+799	Midline
+800	To the right
+801	To the left
+802	Hearing is normal
+803	The sound-conducting apparatus of the left ear is damaged
+804	The sound-conducting apparatus of the right ear is damaged
+805	The sound-perceiving apparatus of the right ear is damaged
+806	The sound-perceiving apparatus of the left ear is damaged
+807	Normally air conduction is about 2 times longer than bone conduction (Rinne positive), and in the Weber test the sound is heard in the midline. When sound conduction is impaired (earwax plug, otitis), Rinne is negative in that ear and in the Weber test the sound lateralizes to the diseased ear. When sound perception is impaired (inner ear, auditory nerve), Rinne is positive but both conduction times are shortened; in the Weber test the sound lateralizes to the healthy ear.
+808	In this subject: right ear — bone ⟦0⟧ s, air ⟦1⟧ s; left ear — bone ⟦2⟧ s, air ⟦3⟧ s.
+809	Sensorimotor reaction time and choice reaction
+810	Measure your own reaction: light, sound, discrimination
+811	<b>Subject:</b> you yourself. <b>Task:</b> on a chronoreflexometer, measure the simple reaction time to light and to sound, then the choice (discrimination) reaction: press for the red light, do not press for the green light. Press as fast as you can as soon as the signal appears (the button or the Space key). Turn the sound on for the sound series.
+812	Simple reaction to light: 10 attempts
+813	Simple reaction to sound: 10 attempts
+814	Choice reaction: red — press, green — do not press (15 signals)
+815	PRESS
+816	Chronoreflexometer
+817	=
+818	=
+819	Series in progress
+820	=
+821	=
+822	Get ready...
+823	Green signal — correct, not pressed.
+824	No response within 1.5 s — the attempt will be repeated.
+825	Pressed before the signal appeared — a false start. The attempt is given again.
+826	Pressed on the green signal — a discrimination error.
+827	Series finished
+828	Light, ms
+829	Sound, ms
+830	Choice (red), ms
+831	Presses on the green signal in the choice series (errors): ⟦0⟧. Calculate the mean values yourself.
+832	=
+833	Series
+834	1. Light (10)
+835	2. Sound (10)
+836	3. Choice (15)
+837	The browser and the screen add their own delay (10–40 ms), so the result may come out slightly longer than on a laboratory instrument.
+838	Mean reaction time to light
+839	Mean:
+840	Series not performed
+841	Mean reaction time to sound
+842	Mean time of the choice reaction (red signals)
+843	Number of discrimination errors in the choice series
+844	Errors:
+845	Why is the choice reaction time longer than the simple reaction time?
+846	Discriminating signals in the cortex (differentiation — internal inhibition) and choosing the response take additional central time
+847	The red light acts more slowly on the receptors of the eye
+848	The muscles are fatigued in the choice reaction
+849	The efferent part of the reflex arc is longer
+850	Most of the reaction time is central delay — perceiving the signal, analyzing it and choosing the motor program. The simple reaction is normally ≈ 180–220 ms to light and ≈ 140–180 ms to sound (the auditory pathway is short and fast). The choice reaction requires discriminating two signals (differentiation) and inhibiting the response — the time lengthens; errors depend on the type of higher nervous activity, fatigue and attention.
+851	Number of false starts: ⟦0⟧.
+852	clamp
+853	=
+854	=
+855	separate
+856	=
+857	=
+858	=
+859	=
+860	=
+861	=
+862	=
+863	extend
+864	=
+865	test tube
+866	scarifier
+867	cotton
+868	standard
+869	meniscus
+870	control
+871	min
+872	arm
+873	forearm
+874	tap
+875	red
+876	yellow
+877	green
+878	=
+879	mouthpiece
+880	above
+881	below
+882	on the left
+883	time marker: 1 wave = 10 ms
+884	time marker: 1 wave = 100 ms
+885	fingers
+886	flex
+887	woman
+888	closed
+889	black
+890	/min
+891	/min (in 10 s: 

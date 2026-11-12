@@ -1,0 +1,1 @@
+[["${P.sex}", "${P.sex===\"erkak\"?\"man\":\"woman\"}", 4], ["${P.v===\"bukuvchi\"?\"bukuvchi\":\"yozuvchi\"}", "${P.v===\"bukuvchi\"?\"flexor\":\"extensor\"}"], [".toFixed(d).replace(\".\",\",\")", ".toFixed(d)"], ["b.textContent.startsWith(s)", "b.textContent.startsWith(s===\"tez\"?\"fast\":\"slow\")"]]

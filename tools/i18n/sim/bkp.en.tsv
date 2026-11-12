@@ -1,0 +1,1516 @@
+0	Pediatric Propaedeutics Clinical Simulator
+1	History of the present illness
+2	When and how did the illness begin?
+3	Describe the main complaint in detail
+4	Was there a fever? How did it go?
+5	Is there a cough or difficulty breathing?
+6	Is there vomiting, diarrhea, or a change in stool?
+7	Has the amount or color of urine changed?
+8	What medicines were given at home?
+9	How is the child during physical exertion?
+10	Life history
+11	How did the pregnancy and delivery go?
+12	How is the child fed? (breast milk, complementary foods, diet)
+13	How are physical and psychomotor development?
+14	Has the child received vitamin D prophylaxis?
+15	Have vaccinations been given on schedule?
+16	What illnesses has the child had before?
+17	What is the allergy history?
+18	Epidemiological history
+19	Has there been contact with an infectious patient?
+20	Family history
+21	Are there hereditary or chronic diseases in the family?
+22	Social history
+23	What are the living conditions, walks and sun exposure?
+24	General condition
+25	Skin and mucous membranes
+26	Head, face, oral cavity
+27	Lymph nodes
+28	Chest (inspection, palpation)
+29	Cardiac area (inspection, palpation)
+30	Abdomen (palpation, liver, spleen)
+31	Limbs, musculoskeletal system
+32	Nervous system
+33	Condition satisfactory, alert, active.
+34	Skin pink, clean, moisture and elasticity preserved.
+35	Head shape normal, face symmetric, mucous membranes pink and moist.
+36	Peripheral lymph nodes not enlarged, painless.
+37	Chest normally shaped, both sides take part equally in breathing, vocal fremitus unchanged.
+38	Cardiac area unchanged on inspection, apex beat in the age-appropriate location, no thrill.
+39	Abdomen soft, painless; liver at the costal margin, spleen not palpable.
+40	Limbs normally shaped, no edema, joints unchanged, muscle tone normal.
+41	Meningeal signs negative, reflexes appropriate for age.
+42	Clear pulmonary (resonant) sound
+43	Dull (shortened) sound
+44	Hyperresonant (boxy) sound
+45	Tympanic sound
+46	Diminished vesicular breathing (normal at 0–6 months)
+47	Puerile breathing (normal from 6 months to 5–7 years)
+48	Vesicular breathing
+49	Bronchial breathing
+50	Diminished breathing
+51	No breath sounds
+52	Crepitations / fine moist rales on a background of diminished breathing
+53	Coarse and medium moist rales
+54	Dry wheezing rales, prolonged expiration
+55	Pleural friction rub
+56	Transmitted stridor (from the upper airways)
+57	Heart sounds clear, rhythmic, no murmur
+58	Harsh holosystolic murmur
+59	Blowing (high-frequency) holosystolic murmur
+60	Soft, short systolic (functional) murmur
+61	Accentuated S2
+62	Fixed splitting of S2
+63	Diastolic murmur
+64	Continuous systolic–diastolic (“machinery”) murmur
+65	Heart sounds muffled
+66	Anterior right, infraclavicular
+67	Anterior left, infraclavicular
+68	Anterior right, 4th intercostal space (middle lobe)
+69	Posterior left, suprascapular
+70	Posterior right, suprascapular
+71	Posterior left, infrascapular
+72	Posterior right, infrascapular
+73	=
+74	1 — Mitral valve (apex)
+75	=
+76	2 — Aortic valve (2nd intercostal space, right sternal border)
+77	=
+78	3 — Pulmonary valve (2nd intercostal space, left sternal border)
+79	=
+80	4 — Tricuspid valve (base of the xiphoid process)
+81	=
+82	5 — Erb's point (3rd–4th intercostal space, left sternal border)
+83	Complete blood count
+84	Urinalysis
+85	C-reactive protein
+86	Biochemistry: urea, creatinine, protein
+87	Serum iron, ferritin, TIBC
+88	Blood Ca, P, alkaline phosphatase
+89	ASO and complement C3
+90	Electrolytes and acid–base status
+91	Stool: coprogram, rotavirus test
+92	Chest X-ray
+93	Wrist and hand X-ray
+94	ECG
+95	Echocardiography
+96	Kidney ultrasound
+97	Peak flowmetry / spirometry
+98	Total IgE
+99	Blood glucose and HbA1c
+100	Bilirubin and its fractions
+101	Coagulogram
+102	TSH and free T4
+103	Lumbar puncture: CSF analysis
+104	Bacteriological culture (blood, urine, swab)
+105	Sweat test (sweat chlorides)
+106	Mantoux test / Diaskintest
+107	Bone marrow puncture (myelogram)
+108	Abdominal ultrasound
+109	EGD and H. pylori test
+110	Pleural puncture: fluid analysis
+111	Bronchoscopy
+112	Hb 124 g/L, red blood cells 4.3×10¹²/L, white blood cells 7.6×10⁹/L, differential appropriate for age, platelets 280×10⁹/L, ESR 6 mm/h.
+113	Straw-yellow, clear, specific gravity 1.015, no protein, white blood cells 1–2, no red blood cells.
+114	CRP 3 mg/L (normal < 5 mg/L).
+115	Urea 4.1 mmol/L, creatinine 42 µmol/L, total protein 66 g/L, ALT 18 U/L.
+116	Serum iron 15 µmol/L, ferritin 38 ng/mL, transferrin saturation 24%.
+117	Ca 2.45 mmol/L, P 1.6 mmol/L, alkaline phosphatase 230 U/L.
+118	ASO 110 IU/mL, C3 1.1 g/L.
+119	Na 139, K 4.3 mmol/L; pH 7.39, BE −1.
+120	Formed, no mucus or blood; coprogram unchanged; rotavirus test negative.
+121	No infiltrative changes in the lung fields, heart shadow of normal size.
+122	Bone structure and metaphyses appropriate for age.
+123	Sinus rhythm, heart rate appropriate for age, electrical axis normal.
+124	Cardiac chambers of normal size, septa intact, valves unchanged, EF 68%.
+125	Kidneys in the usual position, size appropriate for age, parenchyma unchanged.
+126	PEF 96% of predicted, bronchodilator test negative.
+127	Total IgE 35 kU/L (normal).
+128	Fasting glucose 4.6 mmol/L, HbA1c 5.1%.
+129	Total bilirubin 12 µmol/L, direct 3 µmol/L, indirect 9 µmol/L.
+130	Platelet count normal, clotting time 6 minutes, aPTT 32 s, PT 13 s, fibrinogen 2.6 g/L.
+131	TSH 2.1 mIU/L, free T4 15 pmol/L (normal).
+132	CSF clear, colorless, pressure normal; cell count 4 cells/µL (lymphocytes), protein 0.25 g/L, glucose 3.1 mmol/L.
+133	No pathogenic flora grew on culture.
+134	Sweat chlorides 22 mmol/L (normal < 30).
+135	Mantoux test: 3 mm papule (negative–doubtful), Diaskintest negative.
+136	Myelogram normocellular, blast cells 1.5% (normal < 5%).
+137	Liver, gallbladder, pancreas and spleen of appropriate size and echostructure for age. No free fluid.
+138	Mucosa of the esophagus, stomach and duodenum unchanged. H. pylori test negative.
+139	No fluid suitable for puncture was found in the pleural cavity.
+140	Mucosa of the trachea and bronchi unchanged, no foreign body.
+141	All
+142	Respiratory
+143	Cardiac
+144	Blood
+145	Digestive
+146	Urinary
+147	Bone
+148	Endocrine
+149	Nervous
+150	Skin
+151	Newborn
+152	Healthy child
+153	Introduction, history, general examination
+154	Physical development, the newborn
+155	Nervous system, fever
+156	Skin, subcutaneous fat, lymph nodes
+157	Musculoskeletal system
+158	Respiratory system: examination
+159	Respiratory system: semiotics and syndromes
+160	Cardiovascular system: anatomical and physiological features and examination
+161	Heart auscultation, pulse, ECG
+162	Cardiovascular lesion syndromes
+163	Hematopoietic system
+164	Digestive system: examination
+165	Digestive system: semiotics and syndromes
+166	Urinary and immune systems
+167	Feeding, case history
+168	=
+169	boy
+170	3 years
+171	=
+172	96 cm
+173	Respiratory system
+174	Fever up to 39 °C for 4 days, cough, weakness, rapid breathing.
+175	Doctor, my son has had a fever for four days, up to 39. His cough got worse, he is not eating, and since last night his breathing has become fast.
+176	Four days ago he had a runny nose and sneezed. On the second day the fever rose to 38.5, then it stayed at 39 and would not come down.
+177	Yes, 39–39.5. When I give paracetamol it comes down for an hour or two, then rises again. It has gone on for more than three days.
+178	At first a dry cough, from the second day it became wet. Since last night he has been breathing faster, and the spaces between his ribs pull in when he breathes.
+179	Only paracetamol and nose drops. We did not give antibiotics.
+180	All vaccinations are on schedule, including those against pneumococcal and Haemophilus infections.
+181	Many children in his kindergarten group have had colds.
+182	No one in the family has had tuberculosis or a long-lasting cough.
+183	He catches colds 2–3 times a year, has never had pneumonia.
+184	No allergy to medicines or food has been noticed.
+185	He vomited once while coughing, stool is normal.
+186	For the third day he has barely eaten, drinking water in small sips.
+187	Condition moderately severe, signs of intoxication present: weak, fussy, no appetite.
+188	Skin pale, mild cyanosis of the nasolabial triangle, worse when restless.
+189	Nasal flaring on breathing. Throat mucosa hyperemic.
+190	Dyspnea of mixed type (RR 46/min). Retraction of the intercostal and substernal areas. Vocal fremitus increased below the scapula on the right.
+191	Abdomen soft, painless. Liver 1.5 cm below the costal margin (appropriate for age). Spleen not palpable.
+192	Meningeal signs negative (no nuchal rigidity, Kernig negative).
+193	**White blood cells 16.8×10⁹/L**, **neutrophils 78% (band 9%)**, lymphocytes 18%, Hb 118 g/L, **ESR 32 mm/h**.
+194	**CRP 64 mg/L** (normal < 5).
+195	**Inhomogeneous infiltrative shadow in the right lower lobe.** No fluid in the pleural cavity. Heart shadow unchanged.
+196	Specific gravity 1.024, traces of protein, white blood cells 2–3 (in the setting of fever).
+197	Cannot be performed because of the patient's age (after 5 years).
+198	Acute community-acquired focal pneumonia, right lower lobe, respiratory failure grade I
+199	Acute obstructive bronchitis
+200	Acute simple bronchitis
+201	Pulmonary tuberculosis (primary tuberculosis complex)
+202	Bronchial asthma attack
+203	Exudative pleurisy
+204	Persistent high fever for more than 3 days, intoxication, tachypnea (≥ 40/min at 3 years — WHO criterion), intercostal retraction and nasal flaring point to pneumonia. Dullness of the percussion note below the right scapula, increased vocal fremitus and crepitations on a background of diminished breathing are the physical signs of an infiltration focus. On X-ray, infiltration in the right lower lobe, leukocytosis with a left shift and raised CRP confirm a bacterial process. SpO₂ 93% and dyspnea — respiratory failure grade I.
+205	In bronchitis the percussion note is unchanged and rales are scattered; in pneumonia the findings are focal and asymmetric.
+206	In children up to 5–6 years puerile breathing is normal (expiration is also heard well).
+207	Tachypnea thresholds (WHO): under 2 months ≥ 60, 2–12 months ≥ 50, 1–5 years ≥ 40 breaths/min.
+208	Vocal fremitus is increased in infiltration and decreased when there is fluid in the pleural cavity.
+209	=
+210	5 years
+211	=
+212	106 cm
+213	Cardiovascular
+214	Tires easily, short of breath when running, often has bronchitis.
+215	My daughter can't run like other children, she gets tired quickly and short of breath. She has bronchitis several times a year. She also gains little weight. The kindergarten nurse told me to have her heart checked.
+216	After running a little she gets short of breath, has to stop, and sweats. Her lips don't turn blue, she doesn't squat down to rest.
+217	She has been hospitalized with bronchitis 4–5 times a year and with pneumonia twice.
+218	In the 2nd month of pregnancy I had a bad cold with fever and took medicine. She was born at term, 3100 g.
+219	Walking and talking on time. But her weight gain was always poor, and as a baby she tired quickly and sweated when nursing.
+220	No congenital heart defect in the family. Her grandmother has hypertension.
+221	From infancy she sweated while feeding. After age three, tiredness and shortness of breath became noticeable.
+222	Mainly tiredness, shortness of breath and frequent bronchitis. No chest pain or fainting.
+223	No cough now. She coughs during bronchitis.
+224	Vaccinations complete.
+225	Condition satisfactory. Physical development slightly behind age (weight deficit ~ 10%).
+226	Skin pale, no cyanosis. Fingers unchanged (no “drumstick” clubbing).
+227	Slight bulge in the cardiac area (cardiac hump). Both sides take part equally in breathing.
+228	Apex beat strengthened, diffuse, in the 5th intercostal space 1.5 cm lateral to the midclavicular line. Systolic thrill (“cat purr”) in the 3rd–4th intercostal space at the left sternal border. Relative dullness border shifted to the left.
+229	Abdomen soft, liver 1 cm below the costal margin.
+230	No edema. Peripheral pulses good at all points.
+231	**6 mm defect in the perimembranous part of the ventricular septum, left-to-right shunt.** **Left atrium and left ventricle dilated.** Systolic pressure in the pulmonary artery 38 mm Hg (mildly raised). EF 70%.
+232	Sinus rhythm, HR 112. **Tall R wave in V5–V6 — signs of left ventricular hypertrophy.** Electrical axis normal.
+233	**Pulmonary vascular markings increased (arterial pattern).** **Heart shadow enlarged due to the left ventricle, CTR 0.58.**
+234	Hb 122 g/L, white blood cells 6.9×10⁹/L, ESR 7 mm/h — unchanged.
+235	Cannot be reliably performed because of the patient's age.
+236	Congenital heart defect: ventricular septal defect (VSD), perimembranous, circulatory failure grade I
+237	Atrial septal defect (ASD)
+238	Patent ductus arteriosus
+239	Functional (innocent) systolic murmur
+240	Tetralogy of Fallot
+241	Rheumatic mitral regurgitation
+242	Sweating and tiredness while feeding since infancy, poor weight gain, frequent bronchitis and pneumonias — characteristic of a pale (acyanotic) defect with pulmonary overcirculation. A harsh holosystolic murmur and systolic thrill in the 3rd–4th intercostal space at the left sternal border are the classic sign of VSD. Accentuated S2 over the pulmonary artery points to the onset of pulmonary hypertension. Echocardiography confirms a perimembranous VSD.
+243	VSD: the murmur is harsh, holosystolic, loudest at the Erb's point, with a thrill. ASD: soft murmur in the 2nd intercostal space on the left + fixed splitting of S2.
+244	Patent ductus arteriosus: continuous “machinery” murmur below the left clavicle.
+245	Functional murmur: soft, short, no thrill, changes with body position, does not radiate.
+246	In tetralogy of Fallot, a “blue” defect: cyanosis, spells, squatting.
+247	=
+248	10 months
+249	=
+250	70 cm
+251	Skeletal system
+252	Restless, sweats a lot, bald patch on the back of the head, no teeth yet, started sitting late.
+253	My son is very restless, doesn't sleep well at night, his head gets wet with sweat when he sleeps and when he feeds. The hair on the back of his head has fallen out. He is ten months old, still has not a single tooth, and only recently began to sit.
+254	No, we did not give vitamin D. The nurse told us to, but we forgot.
+255	From two months old I had little milk, so we switched to cow's milk. We started complementary food at 8 months, mostly semolina porridge.
+256	Born in November, we hardly went outside in winter. Our home is on the ground floor, little sun comes in.
+257	He held his head up at 3 months. Began sitting at 9 months, doesn't crawl yet. No teeth.
+258	I had anemia during pregnancy and did not take iron regularly. Born at term.
+259	Sweating and restlessness began at 3–4 months, then the back of the head became bald.
+260	Sweating, restlessness, absence of teeth and developmental delay.
+261	Tends toward constipation.
+262	No bone diseases in the family.
+263	Vaccinations on schedule.
+264	Condition moderately severe. Restless, easily excited, fearful.
+265	Skin pale, moist; red dermographism. Bald patch on the back of the head.
+266	Anterior fontanelle 3×3 cm, edges soft, pliable. Frontal and parietal bossing (“Olympian forehead”), flattened occiput. No teeth.
+267	Thickenings at the costochondral junctions — “rachitic rosary”. Harrison's groove is present.
+268	Abdomen enlarged, flattened (“frog belly”), muscular hypotonia, diastasis recti. Liver +2.5 cm, spleen edge can be palpated.
+269	Thickenings at the wrists — “rachitic bracelets”. Muscular hypotonia is marked, joints lax.
+270	Restlessness, sweating, irritability. Psychomotor development 1–2 months behind.
+271	**Ca 2.05 mmol/L (low)**, **P 0.95 mmol/L (markedly low)**, **alkaline phosphatase 980 U/L (markedly raised)**.
+272	**Metaphyses widened, cup-shaped, borders blurred with a “brush-like” fraying.** **Generalized osteoporosis.** Ossification centers delayed.
+273	**Hb 104 g/L** (mild anemia), white blood cells 8.1×10⁹/L, ESR 5 mm/h.
+274	Sulkovich test: **negative (−)** — urinary calcium excretion is reduced. Other values normal.
+275	Cannot be performed because of the patient's age.
+276	Rickets grade II (moderate), florid stage, subacute course
+277	Rickets grade I (mild), initial stage
+278	Rickets grade III (severe)
+279	Vitamin D-resistant (hypophosphatemic) rickets
+280	Congenital hypothyroidism
+281	Achondroplasia
+282	A child who did not receive vitamin D prophylaxis, was fed artificially (unadapted cow's milk) and was born in the autumn–winter season with little sun exposure — the classic risk factors of rickets. Changes in the nervous system (sweating, restlessness), bones (softening of the skull — craniotabes, bossing, rosary, bracelets, Harrison's groove) and muscles (hypotonia, “frog belly”), plus liver and spleen enlargement, are typical of grade II. Hypophosphatemia, a marked rise in alkaline phosphatase and metaphyseal changes on X-ray confirm the florid stage.
+283	Grade I: mainly nervous and autonomic changes, minimal bone changes. Grade II: moderate changes in bones, muscles and internal organs. Grade III: severe deformities, impaired static functions.
+284	In the initial stage Ca is normal, P slightly lowered; in the florid stage P falls sharply and alkaline phosphatase rises.
+285	Rickets prophylaxis: vitamin D from the 1st month of life, breast milk, walks.
+286	Ordinary doses of vitamin D do not help in hypophosphatemic rickets; family history is important.
+287	=
+288	2 years
+289	=
+290	84 cm
+291	Blood system
+292	Pale, tires easily, no appetite, eats chalk and soil.
+293	My daughter has become very pale. She tires quickly, plays little, doesn't eat. The strangest thing is that she wants to eat chalk from the wall and soil. She also catches colds often.
+294	She mostly drinks cow's milk, more than a liter a day. She doesn't eat meat or liver. She drinks a lot of tea, even at mealtimes.
+295	Pallor, weakness, no appetite. Wants to eat chalk, soil, ice. Hair is brittle, nails break.
+296	Hemoglobin had dropped to 90 during pregnancy. Born at term.
+297	Stool is normal, I haven't seen blood or black color in the stool.
+298	No thalassemia or other blood diseases in the family. No jaundice.
+299	She has been getting gradually paler for about 6 months.
+300	ARVI 5–6 times a year.
+301	Development appropriate for age, slowed slightly in recent months.
+302	Conditions are good, we go out for walks.
+303	I haven't noticed any change.
+304	Condition moderately severe. Weak, little movement.
+305	Skin and visible mucous membranes pale, skin dry. Fissures at the corners of the mouth (angular cheilitis). Nails brittle, thin. Hair dull, brittle. No jaundice.
+306	Tongue papillae atrophied, smooth (“lacquered tongue”). Sclerae not yellow.
+307	Lymph nodes not enlarged.
+308	Apex beat in the age-appropriate location. Tachycardia.
+309	Abdomen soft. Liver 1 cm below the costal margin (normal), spleen not palpable.
+310	No edema. Muscle tone slightly decreased.
+311	**Hb 86 g/L**, red blood cells 3.6×10¹²/L, **color index 0.7**, **MCV 64 fL**, **MCH 20 pg**, **hypochromia, microcytosis, anisocytosis**, reticulocytes 0.8%, white blood cells 7.1×10⁹/L, platelets 410×10⁹/L.
+312	**Serum iron 5.2 µmol/L**, **ferritin 6 ng/mL**, **TIBC 84 µmol/L (raised)**, **transferrin saturation 8%**.
+313	Occult blood (Gregersen) negative. No worm eggs found.
+314	Bilirubin 9 µmol/L (normal), ALT 16 U/L, total protein 64 g/L.
+315	Sinus tachycardia, HR 130. No other changes.
+316	Iron deficiency anemia, moderate (alimentary)
+317	Iron deficiency anemia, mild
+318	Beta thalassemia (minor)
+319	Hemolytic anemia
+320	Vitamin B12 deficiency anemia
+321	Aplastic anemia
+322	A sideropenic syndrome (dry skin, angular cheilitis, brittle nails and hair, pica — eating chalk and soil, lacquered tongue) and an anemic syndrome (pallor, tachycardia, functional systolic murmur) occur together. The cause is alimentary: drinking a lot of cow's milk and a meat-free diet, and tea reduces iron absorption; the mother had anemia of pregnancy. Hypochromic microcytic anemia, a sharp fall in ferritin and a rise in TIBC confirm the diagnosis. Hb 86 g/L — moderate degree (70–90 g/L).
+323	Degrees (by Hb): mild 90–110, moderate 70–90, severe < 70 g/L.
+324	Thalassemia also has microcytosis, but ferritin is normal or raised, target cells are seen, and family history is important.
+325	In hemolytic anemia: jaundice, splenomegaly, reticulocytosis, raised indirect bilirubin.
+326	A soft systolic murmur in anemia is functional, related to reduced blood viscosity and faster flow.
+327	=
+328	8 years
+329	=
+330	128 cm
+331	Urinary system
+332	Swelling of the face and eyelids in the morning, reddish-brown urine, headache.
+333	For three days my son's eyes have been puffy in the morning. Today his urine came out reddish, like meat washings. He urinates little and says his head hurts.
+334	About two and a half weeks ago he had a very sore throat, tonsillitis. Three days ago his eyelids swelled.
+335	Tonsillitis two and a half weeks ago. We gave an antibiotic for 3 days and stopped when he seemed to have recovered.
+336	Urine is reddish-brown, like meat washings. He urinates little, 3–4 times a day.
+337	The facial swelling is worse in the morning; by evening his legs swell. Headache, weakness.
+338	For the tonsillitis we gave amoxicillin for 3 days. Nothing now.
+339	No kidney disease or deafness in the family.
+340	No fever now, about 37.
+341	No allergies.
+342	Some classmates have had tonsillitis.
+343	Slightly nauseated, no vomiting.
+344	Condition moderately severe. Weak, complains of headache.
+345	Skin pale. Edema is soft, warm, whitish. No rash or hemorrhages.
+346	Edema of the face and eyelids ("nephritic face"), worse in the morning. Throat: tonsils slightly enlarged, no hyperemia.
+347	Apex beat slightly strengthened. BP 135/90 mm Hg (high for age).
+348	Abdomen soft. Pasternatsky's sign weakly positive on both sides.
+349	Pastosity in the shin area, pitting remains on pressure.
+350	Submandibular lymph nodes slightly enlarged, painless.
+351	Color **"meat washings"**, specific gravity 1.028, **protein 1.2 g/L**, **red blood cells cover the whole field of view (altered)**, **casts: hyaline 3–4, red cell 1–2**, white blood cells 3–4.
+352	**ASO 820 IU/mL (raised)**, **complement C3 0.42 g/L (low)**.
+353	**Urea 8.9 mmol/L**, creatinine 78 µmol/L (upper limit), total protein 62 g/L, cholesterol 4.6 mmol/L.
+354	Hb 112 g/L, white blood cells 10.2×10⁹/L, **ESR 28 mm/h**.
+355	Kidneys slightly enlarged, **parenchymal echogenicity increased**, pelvicalyceal system not dilated.
+356	Sinus rhythm, HR 92. No signs of left ventricular overload.
+357	Acute post-streptococcal glomerulonephritis, nephritic syndrome, renal function preserved
+358	Nephrotic syndrome (minimal change)
+359	IgA nephropathy (Berger disease)
+360	Acute pyelonephritis
+361	Hemolytic uremic syndrome
+362	Urolithiasis
+363	Edema, macrohematuria ("meat washings"), arterial hypertension and oliguria that began 2–3 weeks after streptococcal tonsillitis (latent period) are the classic picture of nephritic syndrome. A raised ASO and a low complement C3 confirm the post-streptococcal nature. Proteinuria of 1.2 g/L is below the nephrotic range, and there is no hypoproteinemia. Creatinine is at the upper limit of normal — function is preserved.
+364	Nephritic syndrome: hematuria + hypertension + edema (+ oliguria). Nephrotic syndrome: massive proteinuria (> 50 mg/kg/day), hypoalbuminemia, hypercholesterolemia, large edemas.
+365	In IgA nephropathy hematuria appears 1–2 days after the infection (at the same time as the pharyngitis), and C3 is normal.
+366	Normal BP in children (after age 1): systolic 90 + 2n, diastolic 60 + n (n = age in years).
+367	In hypertension an accentuated S2 is heard over the aorta.
+368	=
+369	1 year 2 months
+370	=
+371	77 cm
+372	Digestive system
+373	Watery diarrhea, vomiting, fever and reduced urination for 2 days.
+374	For two days my daughter has had watery diarrhea, 10–12 times a day. She is also vomiting and has a fever. Since this morning she has hardly urinated, and she cries without tears.
+375	Stool is watery, yellow, in large amounts, no mucus or blood, strong smell. 10–12 times a day. Vomiting 5–6 times; she brings up even what she drinks.
+376	In the last 8 hours she has urinated only once, very little. Her diaper is almost dry.
+377	It began two days ago with fever and vomiting, then diarrhea followed.
+378	Three days ago her 4-year-old brother also had diarrhea, and there are children like that in her kindergarten too.
+379	A week ago at the polyclinic she weighed 10 kg.
+380	About 38–38.5.
+381	Breast milk and the general family table. Now she drinks water greedily but throws it up.
+382	We gave nothing at home, only water.
+383	Vaccinated according to the schedule, has not received the rotavirus vaccine.
+384	Condition severe. Restless, irritable, crying, thirsty, drinks water greedily.
+385	Skin dry, pale. Skin pinch goes back slowly (~2 seconds). Capillary refill time 2–3 seconds. Extremities warm.
+386	Eyes sunken, cries without tears. Anterior fontanelle almost closed, slightly sunken. Lips and oral mucosa dry.
+387	Abdomen slightly distended, soft, diffusely painless. Bowel sounds increased. No signs of intussusception (colicky pain, "raspberry jelly" stool, abdominal mass).
+388	Meningeal signs negative. No convulsions.
+389	Tachycardia, pulse volume slightly decreased.
+390	Na 136 mmol/L (isotonic), **K 3.2 mmol/L (low)**; acid–base status: **pH 7.29**, **BE −8 mmol/L** — **metabolic acidosis**.
+391	Coprogram: white blood cells 2–3, no red blood cells, abundant neutral fat. **Rapid test for rotavirus antigen positive.**
+392	**Hematocrit 44%** (hemoconcentration), Hb 132 g/L, white blood cells 9.8×10⁹/L, lymphocytosis.
+393	**Specific gravity 1.030**, **acetone ++**, traces of protein.
+394	Urea 7.2 mmol/L (slightly raised), creatinine 48 µmol/L, glucose 3.8 mmol/L.
+395	Acute rotavirus gastroenteritis, dehydration grade II (isotonic)
+396	Acute gastroenteritis, dehydration grade I
+397	Acute gastroenteritis, dehydration grade III, hypovolemic shock
+398	Acute shigellosis (colitis syndrome)
+399	Intestinal intussusception
+400	Lactase deficiency
+401	Abundant watery stool without blood that joined fever and vomiting, a family cluster and a positive rotavirus test point to viral gastroenteritis. Weight loss (10 → 9.2 kg) = 8% — dehydration grade II (6–9%). The clinical signs agree: restlessness, thirst, sunken eyes and fontanelle, no tears, slow return of the skin pinch, oliguria. Na is normal — isotonic type. Metabolic acidosis and hypokalemia are present.
+402	Dehydration grades: I — < 5%, II — 6–9%, III — ≥ 10% loss of body weight.
+403	In grade III: lethargy or loss of consciousness, unable to drink, skin pinch returns very slowly (> 2 s), CRT > 3 s, cold extremities, hypotension.
+404	In shigellosis the stool is scant, with mucus and blood, and there is tenesmus (colitis syndrome).
+405	In intussusception there is paroxysmal pain, "raspberry jelly" stool and a sausage-shaped mass in the abdomen.
+406	=
+407	7 years
+408	=
+409	122 cm
+410	Choking attack that began at night, dry cough, difficulty breathing out.
+411	Last night after we came back from a visit, my son woke up choking. He can't breathe out, and a whistling sound comes from his chest. He has a dry cough and can only breathe sitting up.
+412	Yesterday at the visit he played with a cat. The choking began around 2 a.m.
+413	As an infant he had atopic dermatitis. When he plays with a cat his eyes itch and he sneezes.
+414	His mother (me) has allergic rhinitis, and his father had asthma as a child.
+415	4–5 times a year they said "obstructive bronchitis"; each time inhalation helped.
+416	We have no inhaler at home. Once we gave an aminophylline tablet.
+417	Dry, paroxysmal cough, almost no sputum. Exhalation is difficult, with a whistling sound.
+418	He often starts coughing when he runs, also in cold air.
+419	No fever.
+420	There are a lot of carpets and dust at home. We have no pets ourselves.
+421	Condition moderately severe. Forced position: sitting, leaning on the bed with his hands (orthopnea). Speaks in broken phrases.
+422	Skin pale, mild cyanosis of the lips and nasolabial triangle.
+423	Nasal mucosa pale, swollen, with mucous discharge. Bluish circles under the eyes.
+424	Chest barrel-shaped, widened. Expiratory dyspnea, accessory muscles take part in breathing, intercostal retraction. Vocal fremitus slightly diminished on both sides.
+425	Tachycardia. Cardiac borders are hard to determine (because of lung hyperinflation).
+426	Abdomen soft, liver at the costal margin (palpable because the diaphragm is pushed down).
+427	**PEF 58% of predicted.** **15 minutes after salbutamol inhalation PEF +22% — bronchial obstruction is reversible.**
+428	**Total IgE 640 kU/L (raised).** Specific IgE to cat epithelium positive.
+429	White blood cells 8.4×10⁹/L, **eosinophils 9%**, ESR 6 mm/h.
+430	**Lung fields hyperlucent, diaphragm domes low and flattened.** No infiltrative shadows.
+431	CRP 4 mg/L (normal).
+432	Bronchial asthma, atopic form, exacerbation (moderate attack)
+433	Foreign body aspiration
+434	Cystic fibrosis
+435	Community-acquired pneumonia
+436	Acute stenosing laryngotracheitis (croup)
+437	An attack of expiratory dyspnea with orthopnea and dry cough that began at night after contact with an allergen (a cat). A history of atopy (atopic dermatitis, allergic rhinitis), hereditary predisposition and recurrent "obstructive bronchitis" point to bronchial asthma. Physical findings: barrel-shaped chest, a hyperresonant (boxy) note over the whole lung, diffuse dry wheezes with prolonged expiration. PEF 58% and a rise of > 12% after a bronchodilator — reversible obstruction. Eosinophilia and high IgE confirm the atopic form. SpO₂ 93% and speaking in broken phrases — a moderate attack.
+438	In asthma the wheezes are diffuse and symmetric; in pneumonia they are focal and moist.
+439	With a foreign body, sudden onset, unilateral diminished breathing and wheezing are typical.
+440	A hyperresonant (boxy) note is a sign of increased lung aeration (emphysema, asthma attack).
+441	Bronchodilator test: an increase in PEF or FEV1 of ≥ 12% shows that the obstruction is reversible.
+442	=
+443	1 year 8 months
+444	=
+445	85 cm
+446	Runny nose and cough for 3 days; since yesterday evening his breathing is wheezy and exhaling is difficult.
+447	My son has had a cold for three days, a runny nose and a cough. Since yesterday evening his breathing has become wheezy, you can hear it from a distance, and it is hard for him to breathe out. His fever is not very high.
+448	Three days ago his nose began to run and he started sneezing. On the second day a cough joined in, and since yesterday evening his breathing has been wheezy and difficult.
+449	The cough was dry at first, now it is slightly wet, and the sputum doesn't come up. When he breathes out there is a whistling wheeze; breathing in is not so hard.
+450	About 37.5–38, one day it rose to 38.2. It comes down with paracetamol.
+451	This wheezing is the first time. Before, he only had ordinary colds.
+452	No skin rash, no food or drug allergy.
+453	No asthma or allergic diseases in the family.
+454	His sister had a cold a week ago and has recovered.
+455	His father smokes at home, mostly in the kitchen.
+456	We gave nose drops and paracetamol.
+457	Appetite slightly decreased, drinks water well.
+458	Condition moderately severe, restless. Intoxication is minimal.
+459	Skin pale, mild cyanosis of the nasolabial triangle when he is restless.
+460	Mucous discharge from the nose, posterior pharyngeal wall hyperemic.
+461	Chest slightly distended. Expiratory dyspnea (RR 44/min), accessory muscles take part in breathing, intercostal retraction. Wheezing audible from a distance. Vocal fremitus equal on both sides, slightly diminished.
+462	Abdomen soft, painless. Liver 1.5 cm below the costal margin.
+463	White blood cells 7.2×10⁹/L, **lymphocytes 62%**, neutrophils 30%, eosinophils 2%, Hb 120 g/L, ESR 9 mm/h — typical of a viral infection.
+464	**Lung fields hyperlucent, bronchovascular markings increased on both sides.** No infiltrative shadows.
+465	CRP 6 mg/L (slightly raised).
+466	Total IgE 28 kU/L (normal).
+467	Acute obstructive bronchitis (viral), respiratory failure grade I
+468	Bronchial asthma, first attack
+469	Acute bronchiolitis
+470	Acute focal pneumonia
+471	Expiratory dyspnea that began on day 2–3 of ARVI, wheezing audible from a distance, a hyperresonant note over the whole lung and diffuse dry wheezes — bronchial obstruction syndrome. At an early age obstruction is mainly due to mucosal swelling and hypersecretion. The wheezes are symmetric, there is no focal dullness or crepitation, and no infiltration on X-ray — pneumonia is ruled out. A first episode and no atopy or hereditary predisposition point to viral obstructive bronchitis rather than asthma. Passive smoking is a risk factor. SpO₂ 94% and dyspnea — respiratory failure grade I.
+472	Bronchial obstruction: expiratory dyspnea, hyperresonant note, prolonged expiration and dry wheezes.
+473	If obstructive bronchitis recurs more than 3 times or occurs against a background of atopy, think of bronchial asthma.
+474	Bronchiolitis occurs mainly before age 2 (most often before 6 months): diffuse fine moist rales and crepitations predominate.
+475	At an early age bronchial mucosal swelling and thick secretion play the main role in obstruction, so bronchodilators are less effective.
+476	=
+477	5 months
+478	=
+479	64 cm
+480	Breathes fast and with difficulty after a cold, is not feeding well.
+481	My daughter is five months old. For three days her nose has been blocked and running. Since yesterday she has been breathing rapidly and her chest draws in when she inhales. She stops feeding halfway, and her cough has increased.
+482	Three days ago a runny nose and sneezing began. Yesterday the cough got worse and her breathing became faster.
+483	The cough is frequent, dry-wet. When she inhales the spaces between her ribs and the area below the sternum sink in, and her nostrils flare.
+484	She breastfeeds. Since yesterday she stops halfway through a feed and takes half of the usual amount.
+485	The pregnancy went well, born at term, 3200 g.
+486	Her three-year-old brother came home from kindergarten with a cold, runny nose and cough.
+487	Her diapers are less wet than usual.
+488	About 37.5–38.
+489	She has not been ill until now.
+490	Vaccinations appropriate for age.
+491	No chronic diseases in the family.
+492	Condition severe. Restless, refuses to feed. Signs of respiratory failure are clear.
+493	Skin pale, cyanosis of the nasolabial triangle and periorbital area.
+494	Nasal flaring with each breath. Mucous nasal discharge. Anterior fontanelle 2×2 cm, not sunken.
+495	Chest distended. Mixed (mostly expiratory) dyspnea, RR 58/min. Intercostal and substernal areas retract sharply.
+496	Abdomen soft. Liver 2.5 cm below the costal margin (because the diaphragm is pushed down), spleen not palpable.
+497	Meningeal signs negative, muscle tone normal.
+498	White blood cells 8.1×10⁹/L, **lymphocytes 66%**, neutrophils 26%, Hb 112 g/L, ESR 8 mm/h.
+499	**Lung fields hyperlucent (hyperinflation), diaphragm low, bronchovascular markings increased.** No focal infiltration.
+500	CRP 7 mg/L.
+501	Na 137, K 4.6 mmol/L; pH 7.33, **pCO₂ 49 mm Hg** (slightly raised).
+502	Acute bronchiolitis (probably RSV), respiratory failure grade II
+503	Pertussis
+504	Bronchial asthma
+505	Congenital heart defect, heart failure
+506	Severe dyspnea, chest distension, a hyperresonant (boxy) note and diffuse fine moist rales with crepitations over the whole lung, developing 2–3 days after ARVI in an infant under 6 months, are typical of acute bronchiolitis. Swelling of the bronchioles and their filling with mucus cause obstruction of the small airways. Feeding reduced by half and decreased urination are signs of severity. SpO₂ 89% and a RR 30–50% above normal — respiratory failure grade II. Lymphocytosis indicates a viral cause. Bronchiolitis is diagnosed clinically; an X-ray is needed only in severe or unclear cases.
+507	Bronchiolitis is a disease of children under 2 years, most often under 6 months; the main causative agent is RSV.
+508	Signs: diffuse fine moist rales and crepitations (bronchiolitis), whereas in obstructive bronchitis dry wheezes predominate.
+509	Signs of severity: SpO₂ < 92%, RR ≥ 60/min, feeding reduced by 50%, apnea, lethargy.
+510	In a 0–6-month-old infant diminished vesicular breathing is normal; from 6 months to 5–7 years puerile breathing is heard.
+511	=
+512	4 years
+513	=
+514	102 cm
+515	Runny nose; the dry cough has become wet; fever 37.8 °C.
+516	My son has been coughing for four days. At first it was dry, now it has become wet, and he struggles because the sputum doesn't come up. His fever has not exceeded 38. I'm afraid it might turn into pneumonia.
+517	It began four days ago with a runny nose and sore throat, then a cough joined.
+518	Two days of dry cough, now wet, with a lot of sputum that he can't bring up. He isn't short of breath, his breathing isn't fast.
+519	Two days of 37.5–38, today 37.8. It comes down well with paracetamol.
+520	Many children in his kindergarten have had colds.
+521	Paracetamol, hot tea, honey. We did not give an antibiotic.
+522	No asthma or tuberculosis in the family.
+523	Appetite slightly decreased, but he is playing.
+524	Condition satisfactory, active, intoxication minimal.
+525	Mucous discharge from the nose. Posterior pharyngeal wall hyperemic, granular.
+526	Chest normally shaped, both sides take equal part in breathing. No dyspnea or intercostal retraction (RR 28/min). Vocal fremitus unchanged.
+527	White blood cells 8.4×10⁹/L, lymphocytes 52%, neutrophils 40%, ESR 11 mm/h.
+528	CRP 8 mg/L (slightly raised).
+529	Bronchovascular markings increased on both sides. **No infiltrative shadows.**
+530	Acute simple bronchitis (viral)
+531	Acute laryngotracheitis
+532	A cough that was first dry, then wet, in the setting of ARVI, subfebrile temperature and a satisfactory general condition. No tachypnea (the WHO threshold at age 4 is ≥ 40/min), no retractions or cyanosis, SpO₂ 98%. The percussion note is unchanged and the rales are symmetric on both sides — typical of simple bronchitis. In pneumonia there would be focal dullness, crepitations, tachypnea and intoxication. There are no signs of obstruction (expiratory dyspnea, dry wheezes). This child does not need an X-ray.
+533	In simple bronchitis the rales are diffuse and symmetric, and their amount and location change after coughing; the percussion note is unchanged.
+534	Reliable signs of pneumonia: tachypnea, retractions, focal dullness and crepitations, high fever for more than 3 days.
+535	Antibiotics are not indicated in simple viral bronchitis.
+536	Moist rales show liquid secretion in the bronchi, while dry rales show narrowed bronchi.
+537	=
+538	=
+539	87 cm
+540	Sudden barking cough at night, hoarse voice, noisy breathing.
+541	In the evening my daughter had a runny nose and a slight fever. At night she woke up and began to cough with a bark like a dog, and her voice became hoarse. When she breathes in there is a wheezing, noisy sound; we got very scared.
+542	In the evening she had a cold and a fever of 37.8. Around one o'clock a sudden barking cough and noisy breathing began.
+543	The cough is dry, harsh, "barking". Her voice is hoarse but not completely gone. Her breathing is noisy, audible even when she sits quietly.
+544	All vaccinations are on schedule, including the full diphtheria vaccination (DTP).
+545	About 37.8–38, not high.
+546	Influenza has been going around her kindergarten group.
+547	This is the first time.
+548	We gave nothing, we came straight away.
+549	Condition moderately severe. Restless, frightened, crying (crying worsens the stridor).
+550	Skin pale, mild cyanosis around the mouth.
+551	Voice hoarse. Serous nasal discharge. Throat hyperemic; the pharynx must not be examined by forcing a spatula (risk of laryngospasm).
+552	Inspiratory dyspnea: stridor is audible even at rest, the suprasternal notch, supraclavicular and intercostal areas retract on inspiration. RR 38/min.
+553	Cervical lymph nodes slightly enlarged, painless.
+554	White blood cells 5.6×10⁹/L, **lymphocytes 58%**, ESR 8 mm/h — viral infection.
+555	Nasopharyngeal swab: **Löffler's bacillus (C. diphtheriae) not found.** Rapid test for viral antigens: **parainfluenza virus positive.**
+556	No infiltrative changes in the lung fields.
+557	CRP 5 mg/L.
+558	Acute stenosing laryngotracheitis (croup), grade II stenosis
+559	Laryngeal diphtheria (true croup)
+560	Epiglottitis
+561	Croup, grade I stenosis
+562	The croup triad that began suddenly at night in the setting of ARVI: barking cough, hoarse voice and inspiratory dyspnea (stridor). Stridor is heard even at rest, with suprasternal and intercostal retraction and perioral cyanosis — grade II (subcompensated) stenosis. In grade I stridor occurs only when the child is agitated. Sudden onset, no aphonia, mild intoxication, full diphtheria vaccination and the absence of Löffler's bacillus in the swab confirm croup. Over the lungs only stridor transmitted from the upper airways is heard.
+563	Croup triad: barking cough + hoarse voice + inspiratory dyspnea (stridor).
+564	Degree of stenosis: I — stridor only when agitated; II — also at rest, with retractions and perioral cyanosis; III — generalized cyanosis, pulsus paradoxus; IV — asphyxia.
+565	True croup (diphtheria): gradual onset, aphonia, severe intoxication, fibrinous membrane, Löffler's bacillus.
+566	In croup the pharynx must not be examined by forcing a spatula: there is a risk of laryngospasm, and in epiglottitis of complete obstruction.
+567	=
+568	9 years
+569	=
+570	132 cm
+571	Fever again after pneumonia, pain in the right side, shortness of breath has increased.
+572	My daughter had pneumonia ten days ago, she got injections at home, and after three days we stopped. For three days she has had a fever of 38–39 again, her right side hurts, and she has become short of breath. She sleeps only lying on her right side.
+573	Ten days ago, with fever and cough, they said it was pneumonia. She took an antibiotic for three days, and when she felt better we stopped. Three days ago the fever returned.
+574	At first there was a stabbing pain in the right side on breathing in, worse when coughing. For two days the pain has lessened, but the shortness of breath has increased.
+575	38–39, rising in the evening, with chills.
+576	Ceftriaxone injections for 3 days, then we stopped. Now paracetamol.
+577	No one in the family or among the neighbors has had tuberculosis.
+578	The cough is dry, painful, in short bursts.
+579	Vaccinations complete, BCG given in the maternity hospital.
+580	Not seriously ill before.
+581	No chronic lung disease in the family.
+582	Condition severe, marked intoxication. Forced position — lies on the affected (right) side.
+583	Skin pale, mild cyanosis of the nasolabial triangle.
+584	Right half of the chest enlarged, lags behind in breathing, intercostal spaces smoothed in the lower part. Vocal fremitus not transmitted on the right below the angle of the scapula. Dyspnea mixed, RR 28/min.
+585	Apex beat and the border of relative cardiac dullness shifted 1 cm to the left. Tachycardia.
+586	Abdomen soft, painless. Liver at the costal margin.
+587	**Homogeneous opacity on the right below the 6th rib, upper border oblique (upward and outward), costophrenic angle not visible.** **Mediastinum shifted to the left.**
+588	Pleural aspirate: turbid, yellow; **protein 42 g/L**, **Rivalta test positive**, **white blood cells 4800/µL, neutrophils 86%**, pH 7.21, glucose 2.1 mmol/L — **exudate (parapneumonic)**.
+589	**White blood cells 17.6×10⁹/L**, **neutrophils 81%** (band 10%), Hb 114 g/L, **ESR 46 mm/h**.
+590	**CRP 128 mg/L.**
+591	Mantoux test: 4 mm papule, Diaskintest negative.
+592	No growth on blood culture (the culture was taken after antibiotics).
+593	Not performed because of pain and dyspnea; a restrictive pattern is expected.
+594	Right-sided parapneumonic exudative pleurisy
+595	Right-sided pneumothorax
+596	Tuberculous pleurisy
+597	Right lower lobe atelectasis
+598	Acute myocarditis
+599	Recurrence of fever after incompletely treated pneumonia, first pleural pain related to breathing (dry pleurisy), then less pain but more dyspnea — indicate fluid accumulating in the pleural cavity. Lying on the affected side, enlargement of that half of the chest, smoothed intercostal spaces, absent vocal fremitus, a dull percussion note, absent breath sounds and displacement of the heart to the healthy side — pleural fluid syndrome. Bronchial breathing is heard in the lung compressed above the fluid. X-ray and the aspirate (protein > 30 g/L, Rivalta +, neutrophils) confirm a parapneumonic exudate.
+600	Fluid in the pleura: vocal fremitus and breath sounds are diminished or absent, the percussion note is dull, the mediastinum shifts to the healthy side.
+601	In pneumothorax vocal fremitus and breath sounds are also absent, but the percussion note is tympanic.
+602	In atelectasis the mediastinum is pulled toward the affected side and that half of the chest sinks.
+603	Exudate: specific gravity > 1015, protein > 30 g/L, Rivalta positive; the opposite in a transudate.
+604	=
+605	1 year 9 months
+606	86 cm
+607	A coughing attack started suddenly while he was eating nuts; now he coughs and breathes with a wheeze.
+608	Yesterday at a visit my son was playing with walnuts and pistachios and apparently put them in his mouth. A hard cough suddenly came on, he turned blue, then calmed down. Since this morning he has been coughing and his breathing has become wheezy. He had no cold.
+609	Yesterday evening while eating a nut he suddenly had a severe coughing fit, turned blue and choked for a minute or two. Then he calmed down and slept. Today the cough and wheezing appeared.
+610	He coughs in fits from time to time. There is a wheeze on exhaling, it seems to be heard more on the right side.
+611	Healthy child, no wheezing or asthma before.
+612	No one at home has had a cold, and he has no runny nose either.
+613	No asthma in the family.
+614	We gave nothing.
+615	Condition moderately severe, restless. No signs of intoxication.
+616	Skin pink, mild cyanosis of the nasolabial triangle when restless.
+617	Nasal breathing free, no discharge, throat clear (no signs of ARVI).
+618	Chest asymmetric: the right half lags behind in breathing. Vocal fremitus diminished on the right. Dyspnea mixed, RR 36/min.
+619	**Right lung hyperlucent (local emphysema), on expiration the mediastinum shifts to the left (Holzknecht–Jacobson sign).** No radiopaque foreign body seen.
+620	**A piece of nut (foreign body) in the right main bronchus, mucosa swollen around it.** The foreign body was removed.
+621	White blood cells 8.0×10⁹/L, differential unchanged, ESR 6 mm/h.
+622	Foreign body of the right main bronchus (aspiration), check-valve obstruction
+623	Right-sided pneumonia
+624	Croup
+625	A sudden choking and coughing fit while eating (nuts) in a healthy child — the classic history of aspiration; the following 'quiet period' is often misleading. No ARVI and no fever. The findings are one-sided: the right half of the chest lags behind, vocal fremitus is diminished, the percussion note is hyperresonant (check-valve mechanism — air goes in but does not come out), breathing is diminished, with localized wheezing over the right bronchus. On X-ray the right lung is hyperlucent and on expiration the mediastinum shifts to the healthy side. Bronchoscopy is both a diagnostic and a therapeutic method.
+626	Foreign body: sudden onset (during eating or play), one-sided findings, no signs of ARVI.
+627	With check-valve obstruction there is local emphysema (hyperresonant note); with complete blockage, atelectasis (dull note, mediastinum toward the affected side).
+628	A foreign body most often falls into the right main bronchus: it is wider, shorter and more vertical in relation to the trachea.
+629	It is dangerous to give nuts, pistachios and seeds to children under 3 years.
+630	=
+631	=
+632	98 cm
+633	Constant cough, thick sputum, frequent pneumonia, abundant greasy stool, not gaining weight.
+634	My daughter has coughed since she was one year old, and her sputum is very thick and sticky. She gets pneumonia 3–4 times a year. She has a good appetite and eats a lot, but doesn't put on weight. Her stool is bulky, shiny and very foul-smelling.
+635	Constant cough, especially in the morning, thick, sticky, greenish-yellow sputum. Shortness of breath increases with exertion.
+636	Stool 4–5 times a day, bulky, shiny, greasy, sticks to the diaper, very foul-smelling. Her belly is bloated.
+637	Her height and weight lag behind her peers, she is thin. When I kiss her, her skin tastes salty.
+638	After birth the meconium passed late, intestinal obstruction was suspected, and she stayed in the hospital for a week.
+639	Her brother died of recurrent pneumonia at the age of 2. We (the parents) are cousins.
+640	Since age one, pneumonia 3–4 times a year, hospitalized several times.
+641	Her appetite is very good, she eats a lot but doesn't gain weight.
+642	Condition moderately severe. Physical development delayed: weight deficit ~18%, subcutaneous fat layer thin.
+643	Skin pale, dry. Fingertips like "drumsticks", nails watch-glass shaped.
+644	Nasal mucosa swollen, no nasal polyps. Lips slightly bluish.
+645	Chest barrel-shaped, anteroposterior diameter increased. Dyspnea mixed, RR 34/min, accessory muscles take part.
+646	Abdomen enlarged, distended (meteorism). Liver 3 cm below the costal margin, firm.
+647	Muscle hypotrophy, thin limbs.
+648	**Sweat chlorides 92 mmol/L** (88 mmol/L on repeat testing) — **normal < 30, ≥ 60 confirms the diagnosis.**
+649	Coprogram: **abundant neutral fat (steatorrhea)**, muscle fibers; **fecal elastase-1 45 µg/g (sharply reduced)**.
+650	**Lungs hyperinflated, bronchovascular markings sharply increased and deformed, foci of peribronchial infiltration**, bronchiectasis suspected.
+651	White blood cells 11.8×10⁹/L, neutrophils 68%, **Hb 102 g/L**, ESR 24 mm/h.
+652	Sputum culture: **Pseudomonas aeruginosa** and Staphylococcus aureus.
+653	CRP 22 mg/L.
+654	Cystic fibrosis, mixed pulmonary-intestinal form, severe course
+655	Celiac disease
+656	Primary immunodeficiency
+657	Rickets
+658	Iron deficiency anemia
+659	Chronic cough and thick sputum from an early age, recurrent pneumonias, steatorrhea (bulky, shiny, foul-smelling stool), failure to gain weight despite a good appetite, a history of meconium ileus, salty-tasting skin and the family history (consanguineous marriage, a brother's death) point to cystic fibrosis. 'Drumstick' fingers are a sign of chronic hypoxia. Sweat chlorides ≥ 60 mmol/L confirm the diagnosis; reduced fecal elastase shows exocrine pancreatic insufficiency. Pseudomonas aeruginosa in the sputum — chronic infection.
+660	Cystic fibrosis is an autosomal recessive disease: the secretions of all exocrine glands thicken (lungs, pancreas, intestine, sweat glands).
+661	Sweat test: chlorides < 30 mmol/L — normal, 30–59 — borderline, ≥ 60 — cystic fibrosis.
+662	Celiac disease also causes steatorrhea and weight deficit, but lung involvement is not typical; it appears after gluten-containing food is introduced.
+663	'Drumsticks' and 'watch glasses' are signs of chronic hypoxia (cystic fibrosis, bronchiectasis, cyanotic heart defects).
+664	=
+665	=
+666	94 cm
+667	Cough for 2.5 weeks, attacks worse at night, a whooping breath at the end of an attack.
+668	My daughter has been coughing for two and a half weeks. At first it was an ordinary cough, now it comes in fits: she coughs one cough after another, her face turns red and blue, her tongue sticks out, and at the end she takes a deep breath with a whistling sound. Sometimes she vomits. It is especially frequent at night.
+669	Two and a half weeks ago it began with a mild cough and a runny nose, without fever. A week later the cough became paroxysmal.
+670	15–20 attacks a day, mostly at night. An attack consists of a series of cough bursts, then a whistling deep breath, then coughing again. At the end she brings up sticky mucus or vomits. Between attacks she plays and feels fine.
+671	We did not get her vaccinated, not even DTP — we were against it ourselves.
+672	Our neighbor's son has been coughing for a month.
+673	There was no fever.
+674	Cough syrup and inhalations did not help.
+675	Between attacks the condition is satisfactory. An attack was observed during the examination: a series of coughs with reprises, facial cyanosis, sticky sputum at the end.
+676	Face puffy, eyelids swollen. Hemorrhage in the sclera of the right eye (subconjunctival). A small ulcer on the frenulum of the tongue (the tongue rubs against the teeth during coughing).
+677	Small petechiae on the skin of the face and neck.
+678	Between attacks the chest is unchanged, no dyspnea.
+679	Peripheral lymph nodes not enlarged.
+680	**White blood cells 28.4×10⁹/L**, **lymphocytes 72%**, neutrophils 22%, **ESR 4 mm/h** — lymphocytic leukocytosis, normal ESR.
+681	Swab from the posterior nasopharyngeal wall: **B. pertussis PCR positive.** Culture on Bordet–Gengou medium grew the pertussis bacillus.
+682	Bronchovascular markings slightly increased, no infiltration.
+683	CRP 3 mg/L (normal).
+684	Pertussis, spasmodic stage, moderate form
+685	Parapertussis
+686	Tuberculous bronchoadenitis (bitonal cough)
+687	A paroxysmal cough that developed after a catarrhal stage without fever in an unvaccinated child: series of coughs and a deep whistling inspiration (reprise), attacks mostly at night, with sticky sputum or vomiting at the end — the spasmodic stage of pertussis. Between attacks the child feels well and there are few physical changes in the lungs. Consequences of the attacks: facial puffiness, subconjunctival hemorrhage, petechiae, an ulcer of the frenulum. Lymphocytic leukocytosis with a normal ESR and a positive PCR confirm the diagnosis. 15–20 attacks a day — moderate form.
+688	Periods of pertussis: catarrhal (1–2 weeks), spasmodic (2–6 weeks, attacks with reprises), convalescence.
+689	Reprise — the deep whistling inspiration after a series of coughs in an attack (through a spasmodically narrowed glottis).
+690	In the blood: marked leukocytosis and lymphocytosis with a normal ESR — typical of pertussis.
+691	A bitonal cough is seen when the bifurcation lymph nodes are enlarged (tuberculous bronchoadenitis, lymphoma).
+692	=
+693	6 years
+694	=
+695	114 cm
+696	A murmur was found in the heart at a kindergarten checkup, tires easily, often has bronchitis.
+697	At the medical checkup in kindergarten they said my daughter has a murmur in her heart. She gets tired if she runs for long, and is a little thinner than her peers. She gets bronchitis three or four times a year. Her lips don't turn blue.
+698	The kindergarten doctor heard the murmur. My daughter only gets tired when she runs for a long time; she has had no chest pain or fainting.
+699	If she runs for long she gets tired and rests. Her lips don't turn blue, and she doesn't squat.
+700	Bronchitis 3–4 times a year, pneumonia once.
+701	In early pregnancy I had contact with a child who had rubella. Born at term, 3000 g.
+702	My mother's brother had a congenital heart defect and was operated on.
+703	Development on time, only her weight is slightly low.
+704	A murmur was never mentioned before, she was never examined.
+705	Condition satisfactory. Physical development below average, harmonious.
+706	Skin slightly pale, no cyanosis. Fingers unchanged.
+707	Chest normally shaped, slight bulge in the cardiac area.
+708	Epigastric pulsation (due to the right ventricle). Apex beat in the 5th intercostal space, in the midclavicular line. No thrill. The right border of relative dullness is widened to the right.
+709	Abdomen soft, liver at the costal margin.
+710	**12 mm defect in the middle part of the atrial septum (secundum ASD), left-to-right shunt.** **Right atrium and right ventricle dilated.** Systolic pressure in the pulmonary artery 30 mm Hg, EF 66%.
+711	Sinus rhythm, HR 100. **Right axis deviation, rSR' in V1 — incomplete right bundle branch block, signs of right ventricular hypertrophy.**
+712	**Heart shadow enlarged due to the right chambers, pulmonary artery arch prominent, pulmonary markings increased.** CTR 0.56.
+713	Hb 124 g/L, white blood cells 6.4×10⁹/L, ESR 6 mm/h — unchanged.
+714	Congenital heart defect: atrial septal defect (ASD), secundum, circulatory failure grade I
+715	Ventricular septal defect (VSD)
+716	Pulmonary artery stenosis
+717	ASD runs with few symptoms for a long time and is often found at a preventive checkup. Overfilling of the pulmonary circulation leads to frequent bronchitis, and overload of the right chambers to epigastric pulsation and widening of the right border. On auscultation a fixed splitting of S2 at the pulmonary point is the most characteristic sign of ASD; the murmur arises not from the hole in the septum but from increased flow through the pulmonary artery, so it is soft, without a thrill. ECG shows right ventricular signs and right bundle branch block, and echocardiography confirms secundum ASD. Contact with rubella in pregnancy is a risk factor.
+718	ASD: soft systolic murmur over the pulmonary artery + fixed splitting of S2, right bundle branch block on ECG.
+719	VSD: harsh holosystolic murmur at Erb's point, with a thrill.
+720	Functional murmur: soft, short, does not radiate, S2 unchanged, changes with body position.
+721	Rubella in the first trimester of pregnancy is an important cause of congenital heart defects.
+722	=
+723	=
+724	Gains little weight, tires quickly while feeding and playing, sweats, catches colds often.
+725	My daughter was born prematurely. She gains weight very slowly, and when she plays she tires quickly and sweats. We were hospitalized twice with pneumonia. At the polyclinic they said there is a murmur in her heart and told us to have it checked.
+726	Born prematurely at 34 weeks, 2100 g. Received oxygen for a week in the maternity hospital.
+727	Tires quickly, sweats, gains little weight. As a baby she often rested while feeding.
+728	Began walking at 15 months. Her weight has always been low.
+729	Pneumonia twice, ARVI 4–5 times a year.
+730	If she plays a lot she gets short of breath and sweats. Her lips don't turn blue.
+731	The murmur was first heard at 3 months, but we did not have it checked.
+732	No heart disease in the family.
+733	Vaccinations were given with some delay.
+734	Condition satisfactory. Weight deficit ~15%, subcutaneous fat layer thin.
+735	Skin pale, no cyanosis.
+736	Bulge in the cardiac area. Apex beat strengthened, shifted to the left and down (6th intercostal space). Systolic–diastolic thrill in the 2nd intercostal space on the left. The border of relative dullness is widened to the left.
+737	Peripheral pulse quick and high ("bounding"), also good in the femoral arteries. Diastolic pressure low, pulse pressure wide.
+738	Abdomen soft, liver 1.5 cm below the costal margin.
+739	**4 mm patent ductus arteriosus between the aorta and the pulmonary artery, continuous left-to-right flow.** **Left atrium and left ventricle dilated.** Pulmonary artery pressure 32 mm Hg, EF 69%.
+740	Sinus rhythm, HR 128. **Signs of left ventricular hypertrophy.**
+741	**Pulmonary markings increased in an arterial pattern, heart shadow enlarged due to the left chambers.** CTR 0.58.
+742	Hb 116 g/L, white blood cells 7.1×10⁹/L, ESR 7 mm/h.
+743	Congenital heart defect: patent ductus arteriosus (PDA), circulatory failure grade I
+744	Functional venous hum
+745	Rheumatic mitral stenosis
+746	Prematurity is the main risk factor for a patent ductus arteriosus. Overfilling of the pulmonary circulation leads to frequent pneumonias, tiring easily, sweating and lagging weight gain. A systolic–diastolic thrill in the 2nd intercostal space on the left and a continuous 'machinery' murmur, a 'bounding' peripheral pulse and a wide pulse pressure (low diastolic pressure — blood runs from the aorta into the pulmonary artery in diastole) are typical of PDA. The left chambers are loaded: displaced apex beat, left ventricular hypertrophy on ECG. Echocardiography confirms the diagnosis.
+747	PDA: continuous systolic–diastolic ('machinery') murmur in the 2nd intercostal space on the left or below the clavicle.
+748	A wide pulse pressure and a 'bounding' pulse are a sign of blood running off from the aorta in diastole (PDA, aortic regurgitation).
+749	The ductus arteriosus closes functionally within 10–15 hours and anatomically within 2–3 months; in premature infants it often stays open.
+750	A venous hum is also continuous, but it is heard above the clavicle and disappears when the jugular vein is compressed or the head is turned.
+751	=
+752	10 years
+753	=
+754	138 cm
+755	Fever 3 weeks after tonsillitis, joints swell and hurt in turn, palpitations.
+756	Three weeks ago my son had a very sore throat, and we treated it ourselves at home. For five days he has had a fever; first his knee swelled and hurt, then his ankle, now the other knee. His heart beats fast, and he gets short of breath on the stairs.
+757	Three weeks ago tonsillitis: high fever, sore throat. We gave no antibiotic, it passed with gargling and tea. Five days ago fever and joint pain began.
+758	The joints hurt in turn: when one joint gets better, another swells. His heart races, and he is weak.
+759	Tonsillitis 3–4 times a year.
+760	We gave ibuprofen; the joint pain subsides quickly.
+761	Her grandmother (my mother) has rheumatism and a heart defect.
+762	38–38.5, both day and night.
+763	He gets short of breath on the stairs, which was not the case before.
+764	Some children in his class have had tonsillitis.
+765	Condition moderately severe, weak, feverish.
+766	Skin pale. Pale pink, non-itchy ring-shaped spots with a cleared center (erythema marginatum) on the trunk and the inner surfaces of the limbs.
+767	Apex beat weakened, diffuse. Border of relative dullness widened 1 cm to the left. Tachycardia disproportionate to the temperature (persists even when the fever subsides).
+768	Left knee and right ankle joints swollen, skin red, warm, movement painful. Swelling of the right knee has subsided.
+769	No signs of chorea (involuntary movements).
+770	Submandibular lymph nodes slightly enlarged.
+771	**ASO 960 IU/mL (raised)**, complement C3 1.0 g/L (normal).
+772	**White blood cells 13.5×10⁹/L**, neutrophils 74%, Hb 112 g/L, **ESR 48 mm/h**.
+773	Sinus tachycardia, HR 118. **PQ interval 0.20 s — prolonged (first-degree AV block).** ST–T changes.
+774	**Mitral valve leaflets thickened, mitral regurgitation grade II.** Left ventricle slightly dilated, EF 58%. A small amount of fluid in the pericardium.
+775	**CRP 96 mg/L.**
+776	Throat swab: **group A beta-hemolytic streptococcus** grew.
+777	Heart shadow slightly enlarged (CTR 0.53), lung markings unchanged.
+778	Traces of protein, white blood cells 2–3, no red blood cells.
+779	Acute rheumatic fever: rheumatic carditis (mitral valvulitis), polyarthritis, erythema marginatum, circulatory failure grade I
+780	Reactive (postinfectious) arthritis
+781	Juvenile idiopathic arthritis
+782	Viral myocarditis
+783	Hemorrhagic vasculitis
+784	An illness that began 2–3 weeks after group A streptococcal tonsillitis. Major signs by the Jones criteria: carditis (blowing holosystolic murmur at the apex — mitral regurgitation, muffled sounds, tachycardia disproportionate to the temperature, widening of the cardiac border), migratory polyarthritis (large joints, improves quickly with NSAIDs) and erythema marginatum. Minor signs: fever, raised ESR and CRP, PQ prolongation. Evidence of the preceding streptococcal infection — raised ASO and streptococcus grown from the swab. Two or more major criteria plus minor signs and evidence of streptococcal infection confirm the diagnosis.
+785	Jones major criteria: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules.
+786	Minor criteria: fever, arthralgia, raised ESR/CRP, prolonged PQ interval.
+787	Rheumatic polyarthritis is 'flying' (migratory), in large joints, leaves no trace and passes quickly with anti-inflammatory drugs.
+788	Prophylaxis: treat streptococcal tonsillitis with a full 10-day course of antibiotics.
+789	=
+790	A rash on the legs and buttocks that does not disappear on pressure, swollen ankles, stomach ache.
+791	Two weeks ago my daughter had a cold. For three days small red-purple spots have appeared on her legs and buttocks, and they don't fade when pressed. Her ankles are swollen and painful, and yesterday she had cramping stomach pain.
+792	ARVI two weeks ago. Three days ago a rash appeared on the legs, and the next day the ankles swelled.
+793	The rash is on the legs, buttocks, and a little on the arms. It doesn't itch. Her ankles and knees hurt and she has difficulty walking.
+794	Yesterday there was cramping pain around the navel and she vomited once. Stool normal, no blood seen.
+795	Urine as usual, color unchanged.
+796	She took amoxicillin and paracetamol for the cold.
+797	She had a little rash after chocolate.
+798	This has not happened before. She doesn't usually have nosebleeds or bruises.
+799	No blood diseases or hemophilia in the family.
+800	Subfebrile, 37.2–37.5.
+801	Condition moderately severe. Walking is limited by joint pain.
+802	A symmetric, slightly raised small maculopapular hemorrhagic rash on the extensor surfaces of the limbs and buttocks that does not fade on pressure. Some elements have merged. No hemorrhages in the mucous membranes.
+803	Both ankle joints and the right knee are swollen, painful, movement limited.
+804	Abdomen soft, tenderness on palpation around the navel. Peritoneal signs negative. Liver and spleen not enlarged.
+805	Gums don't bleed, no traces of blood in the nose.
+806	White blood cells 10.8×10⁹/L, Hb 124 g/L, **platelets 320×10⁹/L (normal)**, ESR 22 mm/h.
+807	**Platelet count and function normal, clotting time normal**, aPTT 30 s, PT 12 s, fibrinogen 4.2 g/L (slightly raised).
+808	**Red blood cells 5–7 per field (microhematuria)**, protein 0.1 g/L, white blood cells 1–2.
+809	Occult blood (Gregersen) weakly positive.
+810	Urea 4.8 mmol/L, creatinine 48 µmol/L, total protein 68 g/L.
+811	Bowel wall slightly thickened in some segments, no free fluid.
+812	CRP 18 mg/L.
+813	Hemorrhagic vasculitis (Henoch–Schönlein purpura), cutaneous-articular-abdominal form
+814	Immune thrombocytopenic purpura
+815	Acute leukemia
+816	Meningococcemia
+817	Hemophilia A
+818	Acute rheumatic fever
+819	A symmetric, slightly raised ('palpable') hemorrhagic rash on the extensor surfaces of the legs and the buttocks, arthritis and abdominal pain 1–3 weeks after ARVI — the classic triad of hemorrhagic vasculitis. This is the vasculitis-purpura type of hemorrhagic syndrome: platelet count and coagulogram are normal. In ITP platelets are sharply reduced, the rash is asymmetric, with non-raised petechiae and ecchymoses. In leukemia there are lymphadenopathy, hepatosplenomegaly and changes in the blood count. Microhematuria points to the beginning of kidney involvement — the urine must be monitored.
+820	Types of hemorrhagic syndrome: hematoma (hemophilia), petechial-spotted (thrombocytopenia), vasculitis-purpura (hemorrhagic vasculitis).
+821	In hemorrhagic vasculitis platelets and blood clotting are normal.
+822	The main danger is kidney involvement (IgA nephritis): the urinalysis must be monitored during and after the illness.
+823	In meningococcemia the rash spreads quickly, is star-shaped, with necrosis in the center; the condition is severe, with high fever.
+824	=
+825	=
+826	103 cm
+827	Pale for a month, weak, feverish, bruises on the body, legs hurt.
+828	For a month my son has been very pale and weak, and he doesn't play. He has a fever from time to time. Bruises appear on his body by themselves, and his gums bleed. He says his legs hurt and doesn't want to walk.
+829	About a month ago weakness and pallor began, then fever joined in.
+830	Pallor, weakness, pain in the leg bones, bruises on the body, gums bleed when brushing teeth.
+831	From time to time 38–38.5, without any cause.
+832	Antibiotics were given twice, the fever did not go down.
+833	In recent months he has had frequent colds and sore throats.
+834	No blood diseases in the family.
+835	No contact with infectious patients.
+836	No appetite, lost 2 kg.
+837	Condition severe. Weak, marked intoxication.
+838	Skin and mucous membranes sharply pale. Petechiae and ecchymoses of various sizes and colors on the trunk and limbs, asymmetric.
+839	Gums swollen, bleed on touch. Tonsils enlarged.
+840	Cervical, axillary and inguinal lymph nodes enlarged up to 1.5–2 cm, painless, firm-elastic, not fused to each other or to the skin.
+841	Abdomen enlarged. Liver 4 cm and spleen 3 cm below the costal margin, firm, painless.
+842	Pain on pressure over the long tubular bones and the sternum (ossalgia). Joints not swollen.
+843	Meningeal signs negative.
+844	**Hb 78 g/L**, red blood cells 2.6×10¹²/L, **platelets 32×10⁹/L**, **white blood cells 3.1×10⁹/L**, **blast cells 46%**, few mature neutrophils, no intermediate forms (**"leukemic hiatus"**), **ESR 45 mm/h**.
+845	**Bone marrow blast cells 82%, lymphoblast type** (PAS reaction positive, myeloperoxidase negative). Normal hematopoiesis is sharply suppressed.
+846	Platelets low, bleeding time prolonged; aPTT 34 s, fibrinogen 2.9 g/L.
+847	**LDH 980 U/L (raised)**, **uric acid 0.48 mmol/L (raised)**, creatinine 40 µmol/L, bilirubin 11 µmol/L.
+848	**Liver and spleen enlarged, homogeneous. Intra-abdominal lymph nodes enlarged.**
+849	Mediastinum not widened, no infiltration in the lungs.
+850	Serum iron 18 µmol/L, ferritin 160 ng/mL — no iron deficiency.
+851	Acute lymphoblastic leukemia
+852	Infectious mononucleosis
+853	The three syndromes of bone marrow failure together: anemic (pallor, weakness, functional murmur), hemorrhagic (petechiae and ecchymoses, bleeding gums — thrombocytopenia) and infectious-intoxication (fever without cause, no response to antibiotics). A hyperplastic (lymphoproliferative) syndrome joins them: generalized lymphadenopathy, hepatosplenomegaly, ossalgia. Three-lineage cytopenia, blasts and a 'leukemic hiatus' in the blood, and > 20% blasts in the bone marrow (82%, lymphoblast type) confirm the diagnosis. In ITP only platelets are reduced, and in aplastic anemia there is no lymphadenopathy or organomegaly.
+854	Syndromes of acute leukemia: anemic, hemorrhagic, infectious-intoxication, hyperplastic (lymph nodes, liver, spleen, bone pain).
+855	The diagnosis is made when bone marrow blasts are ≥ 20%; the most common type in children is acute lymphoblastic leukemia.
+856	'Leukemic hiatus' — there are blasts and mature cells in the blood but no intermediate forms.
+857	In thrombocytopenia the rash is petechial-spotted, asymmetric and not raised.
+858	=
+859	8 months
+860	=
+861	68 cm
+862	Gains very little weight, thin, weak, does not sit.
+863	My son is eight months old but very thin, and his weight is hardly increasing. He is weak, plays little, and still does not sit. My milk had decreased by the time he was three months old.
+864	From three months I had little breast milk. We give cow's milk mixed with water, 3–4 times a day. Complementary food has not been started yet; sometimes we give tea with soaked bread.
+865	He held his head up at 4 months, began rolling over recently, does not sit.
+866	The pregnancy went well, born at term, 3200 g, 51 cm.
+867	He often catches colds, and he has had diarrhea twice.
+868	His stool is unstable: sometimes constipation, sometimes loose. No vomiting.
+869	Five children in the family, conditions are hard, the father is unemployed.
+870	Vaccinations are delayed.
+871	No hereditary diseases in the family.
+872	We did not give vitamin D.
+873	Condition moderately severe. Lethargic, little movement, emotional tone decreased. Weight deficit ~28% (expected ~8.6 kg).
+874	Skin pale, dry, hangs in folds, elasticity and tissue turgor decreased. Subcutaneous fat layer lost on the abdomen and trunk, thinned on the limbs, preserved on the face. Skin fold at the umbilical level 0.4 cm.
+875	Anterior fontanelle 2.5×2.5 cm, not sunken. Oral mucosa not dry.
+876	Abdominal wall thin, bowel loops visible. Liver 1.5 cm below the costal margin.
+877	Muscle hypotrophy and hypotonia, thin limbs.
+878	Psychomotor development 2 months behind, reflexes sluggish.
+879	**Hb 96 g/L**, red blood cells 3.5×10¹²/L, white blood cells 7.0×10⁹/L, ESR 8 mm/h.
+880	**Total protein 52 g/L**, **albumin 30 g/L (low)**, urea 2.4 mmol/L, glucose 3.6 mmol/L.
+881	Coprogram: starch, neutral fat in small amounts. No worm eggs or pathogenic flora.
+882	Unchanged.
+883	Na 136, K 3.8 mmol/L; pH 7.37.
+884	Ca 2.3 mmol/L, P 1.3 mmol/L, alkaline phosphatase 420 U/L.
+885	TSH 2.6 mIU/L, free T4 16 pmol/L (normal).
+886	Sweat chlorides 18 mmol/L (normal).
+887	Protein-energy malnutrition (hypotrophy) grade II, alimentary, acquired
+888	Hypotrophy grade I
+889	Hypotrophy grade III (marasmus)
+890	Rickets grade II
+891	A child born at term with normal weight and wrongly artificially fed from 3 months (diluted cow's milk, no complementary foods), in hard social conditions — alimentary acquired hypotrophy. Expected weight: 3200 g + monthly gains ≈ 8.6 kg; actual 6.2 kg — deficit ~28% → grade II (20–30%). The subcutaneous fat is lost on the abdomen and trunk, thinned on the limbs, preserved on the face; the skin fold is thin, tissue turgor and muscle tone are decreased, psychomotor development is delayed — consistent with grade II. Hypoalbuminemia and anemia show protein and iron deficiency.
+892	Grades of hypotrophy (weight deficit): I — 10–20%, II — 20–30%, III — > 30%.
+893	Order of loss of subcutaneous fat: first the abdomen, then the trunk and limbs, last the face (in grade III — 'Voltaire face').
+894	Monthly weight gain up to 1 year: 1st month 600 g, months 2–3 800 g, then decreasing by 50 g each month.
+895	Diseases that cause hypotrophy must be excluded: celiac disease, cystic fibrosis, congenital defects, hypothyroidism.
+896	=
+897	12 years
+898	=
+899	150 cm
+900	Pain in the upper abdomen on an empty stomach and at night for a year, belching.
+901	For a year my daughter has said her upper stomach hurts. It hurts more in the morning on an empty stomach and at night, and eases a little after she eats. She has belching and nausea. It got worse during exams.
+902	Pain in the epigastrium, above the navel. It wakes her on an empty stomach and at night (around 2–3 a.m.), and eases after eating. Sour belching, sometimes heartburn, nausea.
+903	It started about a year ago. It gets worse in autumn and spring, during exam periods.
+904	She goes to school in the morning without breakfast. She likes chips, fizzy drinks, spicy food.
+905	Her father has a duodenal ulcer, her mother has gastritis.
+906	Tends to constipation. No black stool or bloody vomiting.
+907	We give No-Spa (drotaverine), it helps for a while.
+908	Urine unchanged.
+909	No serious illnesses.
+910	Condition satisfactory. Physical development average, harmonious. Emotionally labile.
+911	Tongue moist, coated with a white fur at the root. Dental caries.
+912	Abdomen soft, takes part in breathing. Tenderness on palpation in the epigastrium and the pyloroduodenal area (Chauffard's triangle). Mendel's sign positive. Blumberg sign negative, the right iliac area is painless. Liver and spleen not enlarged, gallbladder points painless.
+913	Skin slightly pale, clean.
+914	**Mucosa of the gastric antrum and duodenal bulb hyperemic, swollen, nodular ('cobblestone').** No ulcer defect. **H. pylori urease test positive.**
+915	Hb 126 g/L, white blood cells 6.2×10⁹/L, ESR 7 mm/h.
+916	Liver, gallbladder, pancreas unchanged. No free fluid.
+917	Occult blood (Gregersen) negative, no worm eggs found.
+918	ALT 16 U/L, amylase 52 U/L (normal), bilirubin 10 µmol/L.
+919	Chronic gastroduodenitis associated with H. pylori, exacerbation
+920	Duodenal ulcer disease
+921	Acute appendicitis
+922	Functional dyspepsia
+923	Helminth infestation
+924	Epigastric pain lasting a long time (1 year), occurring on an empty stomach and at night and easing after eating, sour belching and heartburn, seasonal and stress-related exacerbations, an irregular diet and a family predisposition — typical of involvement of the pyloroduodenal zone. On palpation epigastric and pyloroduodenal tenderness, Mendel's sign positive. No fever, peritoneal signs or right iliac pain rules out acute appendicitis. EGD shows no ulcer, but inflammation of the mucosa and H. pylori — chronic gastroduodenitis.
+925	'Early' pain (after eating) — gastric body; 'late', hunger and night pain — the pyloroduodenal zone (duodenitis, ulcer).
+926	Acute appendicitis: pain moves from the epigastrium to the right iliac area, fever, vomiting, positive Blumberg sign, leukocytosis.
+927	Only EGD reliably detects an ulcer.
+928	Chauffard's triangle is the pyloroduodenal area; pain here is typical of duodenitis and ulcer.
+929	=
+930	For a week the face, legs and abdomen have been swelling more and more; urine is scant and foamy.
+931	A week ago my son's eyelids swelled, then his legs, and now his belly has swollen and become big too. His urine is scant and foamy. In a week his weight went up by 3 kg.
+932	He had a cold two weeks ago. A week ago his eyelids swelled in the morning, then the swelling spread quickly.
+933	Urine is scant, 3–4 times a day, very foamy. The color is as usual, not reddish.
+934	The swelling has spread over the whole body: face, legs, abdomen, scrotum. In a week his weight went from 16 to 19 kg. He is weak, his appetite has dropped.
+935	No kidney disease before.
+936	He had eczema and a cow's milk allergy.
+937	No kidney diseases in the family.
+938	Condition moderately severe, lethargic.
+939	Skin pale ('marbled'), cold. Edema soft, whitish, a deep pit remains on pressure, and it shifts when body position changes. Scrotum swollen.
+940	Large edema of the face and eyelids, the palpebral fissures are narrowed.
+941	Abdomen enlarged, fluctuation detected (ascites), umbilicus protruding. Liver 2 cm below the costal margin. Pasternatsky's sign negative.
+942	Large edema of the legs and shins, a deep and long-lasting pit remains on pressure.
+943	Heart sounds slightly muffled, BP normal.
+944	Pale yellow, **protein 6.6 g/L**, **daily proteinuria 3.2 g (≈ 170 mg/kg)**, red blood cells 0–1, **hyaline casts 4–6**, white blood cells 1–2.
+945	**Total protein 41 g/L**, **albumin 16 g/L**, **cholesterol 11.2 mmol/L**, urea 4.6 mmol/L, creatinine 35 µmol/L.
+946	Hb 128 g/L, white blood cells 8.8×10⁹/L, **platelets 480×10⁹/L**, **ESR 52 mm/h**.
+947	ASO 120 IU/mL (normal), **complement C3 1.2 g/L (normal)**.
+948	Kidneys slightly enlarged, parenchymal echogenicity slightly increased. **Free fluid in the abdominal cavity.**
+949	**Fibrinogen 5.8 g/L (raised)**, aPTT 28 s — tendency to hypercoagulation.
+950	Na 134, K 4.1 mmol/L.
+951	Nephrotic syndrome, primary (idiopathic), without hematuria and hypertension (probably minimal change)
+952	Acute glomerulonephritis, nephritic syndrome
+953	Quincke's edema (allergic)
+954	Heart failure
+955	Generalized soft, shifting edema (anasarca, ascites, scrotal edema), foamy urine and oliguria that developed after ARVI in a preschool child. Laboratory: the nephrotic tetrad — massive proteinuria (> 50 mg/kg/day, 3.2 g/day), hypoalbuminemia (16 g/L), hypercholesterolemia, edema. No hematuria or arterial hypertension, normal C3 and creatinine — typical of minimal change nephrotic syndrome, the most common type in children, which responds well to glucocorticoids. In nephritic syndrome there would be hematuria, hypertension and low C3.
+956	Nephrotic syndrome: proteinuria > 50 mg/kg/day (or > 40 mg/m²/h), albumin < 25 g/L, hypercholesterolemia, edema.
+957	Nephritic syndrome: hematuria, hypertension, edema, oliguria; C3 is often low.
+958	Nephrotic edema is soft, whitish and shifting; cardiac edema is in the dependent parts, worse toward evening, and bluish.
+959	In nephrotic syndrome the risk of hypercoagulation, thrombosis and infections increases.
+960	=
+961	=
+962	116 cm
+963	High fever with chills, pain in the lower back, frequent painful urination, cloudy urine.
+964	For two days my daughter's fever has not gone below 39, and she has chills. She vomited once. She says her back hurts, she goes to the toilet often, and it burns when she urinates. Her urine is cloudy and smells strong. She wet the bed at night.
+965	Two days ago the fever suddenly rose to 39.5 with chills, and she vomited once. Yesterday back pain appeared.
+966	She urinates often, in small amounts, painfully. Urine is cloudy with a strong smell. She wet the bed at night, which was not the case before.
+967	Pain in the right lower back and lower abdomen, weakness, no appetite.
+968	At one year of age they also said 'urinary infection' when she had a fever.
+969	39–39.5, with chills, comes down briefly with paracetamol.
+970	Vomited once. Tends to constipation, once every 2–3 days.
+971	We gave paracetamol.
+972	She washes herself and doesn't pay much attention to hygiene.
+973	Condition moderately severe, marked intoxication: weak, fussy.
+974	Skin pale, bluish shadows around the eyes. No edema.
+975	Abdomen soft, peritoneal signs negative. Tenderness on palpation in the right costovertebral angle and along the ureter. Pasternatsky's sign positive on the right. Slight tenderness above the pubis.
+976	Face not swollen, throat clear.
+977	Cloudy, specific gravity 1.012, **protein 0.3 g/L**, **white blood cells cover the whole field of view (pyuria)**, **many bacteria**, **nitrite test positive**, red blood cells 2–3, leukocyte casts.
+978	Urine culture: **E. coli 10⁶ CFU/mL**, sensitive to ceftriaxone and nitrofurantoin, resistant to ampicillin.
+979	**White blood cells 18.2×10⁹/L**, **neutrophils 82%** (band 11%), Hb 118 g/L, **ESR 40 mm/h**.
+980	**Right kidney enlarged, parenchyma swollen, pelvicalyceal system slightly dilated.** Left kidney unchanged. Bladder wall slightly thickened.
+981	**CRP 110 mg/L.**
+982	Urea 4.9 mmol/L, creatinine 46 µmol/L (normal).
+983	Abdominal organs unchanged, appendix not visualized, no free fluid.
+984	Acute pyelonephritis (right-sided), active stage, renal function preserved
+985	Acute cystitis
+986	Acute glomerulonephritis
+987	Nephrotic syndrome
+988	In a girl, high fever with chills, intoxication, back pain, dysuria and frequent urination, secondary enuresis, and a unilaterally positive Pasternatsky's sign are typical of an upper urinary tract infection. The urine shows pyuria, bacteriuria, a positive nitrite test, little protein (< 1 g/L) and leukocyte casts; culture grew E. coli 10⁶ CFU/mL. The blood shows neutrophilic leukocytosis and a high CRP, and on ultrasound the right kidney is enlarged — pyelonephritis. In cystitis there is little fever and intoxication and no back pain. Recurrent infection and constipation — vesicoureteral reflux should be investigated.
+989	Pyelonephritis: fever > 38.5 °C, intoxication, back pain, pyuria, bacteriuria, leukocytosis and raised CRP.
+990	Cystitis: dysuria, frequent urination, suprapubic pain; little fever and intoxication.
+991	In glomerulonephritis red blood cells and casts predominate in the urine, in pyelonephritis — white blood cells and bacteria.
+992	Significant bacteriuria on culture: ≥ 10⁵ CFU/mL in a midstream sample.
+993	=
+994	9 months
+995	=
+996	71 cm
+997	When crying, he stopped breathing and turned blue, then breathed in with a sound like a "rooster's crow"; his hands cramp.
+998	Today while my son was crying, his breathing suddenly stopped and he turned blue, then he breathed in with a sound like a rooster's crow. Yesterday the fingers of his hand cramped and stayed like that for a few minutes. He has no fever.
+999	Yesterday morning the fingers of his hand cramped and looked like an 'obstetrician's hand'. Today when he cried his breathing stopped and he turned blue, then he came to with noisy breathing.
+1000	We did not give vitamin D in winter. A week ago the doctor diagnosed rickets and started a therapeutic dose of vitamin D.
+1001	Mostly cow's milk, semolina porridge. Breast milk ended at 3 months.
+1002	It is March now, the weather has warmed, and we walk in the sun for a long time every day.
+1003	No fever, no cold.
+1004	Started sitting at 8 months, no teeth, sweats a lot.
+1005	Born at term, 3300 g.
+1006	No one in the family has had epilepsy or convulsions.
+1007	Condition moderately severe. Restless, timid, sweating.
+1008	Anterior fontanelle 2.5×2.5 cm, edges soft. Frontal bossing, occiput flattened and bald. No teeth.
+1009	Rachitic rosary, Harrison's groove.
+1010	During the examination: 'obstetrician's hand' posture of the hand, foot flexed downward (carpopedal spasm). Muscle hypotonia.
+1011	Chvostek's sign positive (tapping over the exit of the facial nerve makes the corner of the mouth and eyelid twitch). Trousseau's sign positive. Lust's sign positive. Meningeal signs negative, no fever.
+1012	Skin moist, pale, red dermographism.
+1013	**Total Ca 1.62 mmol/L (sharply low)**, **ionized Ca 0.78 mmol/L**, P 1.9 mmol/L, **alkaline phosphatase 640 U/L (raised)**.
+1014	Na 138, K 4.2 mmol/L; **pH 7.46 — shifted toward alkalosis**.
+1015	Glucose 4.4 mmol/L (normal) — no hypoglycemia.
+1016	Hb 108 g/L, white blood cells 8.0×10⁹/L, ESR 6 mm/h.
+1017	**Metaphyses widened, cup-shaped, borders blurred — signs of rickets**, a line of re-ossification is beginning.
+1018	CSF clear, cell count 3 cells/µL, protein 0.2 g/L — normal.
+1019	Spasmophilia (hypocalcemic tetany), manifest form: carpopedal spasm, laryngospasm; in the setting of rickets
+1020	Febrile seizures
+1021	Epilepsy
+1022	Hypoglycemic seizures
+1023	Rickets grade III
+1024	In rickets, the rapid passage of calcium into the bone in spring (more sunlight) and after a therapeutic dose of vitamin D is started causes hypocalcemia — spasmophilia. Manifest form: carpopedal spasm ('obstetrician's hand') and laryngospasm (apnea, cyanosis, then noisy breathing like a 'rooster's crow'). The signs of latent tetany — Chvostek, Trousseau, Lust — are positive. No fever rules out febrile seizures, and normal glucose rules out hypoglycemia. A sharp fall in total and ionized calcium and alkalosis confirm the diagnosis.
+1025	Spasmophilia — from 6 months to 2 years, in the setting of rickets, most often in spring or when vitamin D treatment is started.
+1026	Latent form: Chvostek, Trousseau, Lust, Maslov signs. Manifest form: laryngospasm, carpopedal spasm, eclampsia (generalized convulsions).
+1027	In laryngospasm breathing is noisy, like a 'rooster's crow' — this is inspiratory stridor.
+1028	Every child who comes in with convulsions needs glucose and calcium checked.
+1029	=
+1030	=
+1031	134 cm
+1032	Endocrine system
+1033	Drinking a lot of water and urinating a lot for 3 weeks, weight loss; today abdominal pain, vomiting, drowsiness.
+1034	For three weeks my daughter has been drinking a great deal of water, even getting up at night to drink, and urinating a lot; she started wetting the bed at night. She has lost three kilos. Today her stomach hurt and she vomited three times, and she became very weak and sleepy. There is a kind of apple smell from her mouth.
+1035	She drinks 4–5 liters of water a day, her thirst is never quenched. She urinates a lot, gets up 3–4 times at night, and wet the bed twice. In three weeks she went from 27 kg to 24 kg.
+1036	Urine is plentiful, clear, frequent. Today it decreased.
+1037	Since this morning abdominal pain, vomited three times. Stool is normal.
+1038	About three weeks ago she had influenza, and the thirst began after that.
+1039	Her grandmother has diabetes (started in old age), her uncle has autoimmune thyroiditis.
+1040	At first her appetite was very strong and she ate a lot, but she lost weight. For two days she has had no appetite.
+1041	Condition severe. Drowsy, answers questions slowly (not stupor). Signs of dehydration.
+1042	Skin dry, elasticity decreased, skin pinch returns slowly. Flushed cheeks (diabetic rubeosis). Capillary refill time 3 seconds.
+1043	Lips and tongue dry, tongue coated. Eyes sunken. Smell of acetone (rotten apples) on the breath.
+1044	Breathing deep, noisy, rhythmic — Kussmaul breathing (RR 30/min). Chest unchanged, no rales in the lungs.
+1045	Abdomen slightly tense, diffusely tender (pseudoperitonitis), bowel sounds decreased. Liver 2 cm below the costal margin.
+1046	Drowsiness. Meningeal signs negative, no focal signs.
+1047	**Blood glucose 24.6 mmol/L**, **HbA1c 11.2%**.
+1048	**pH 7.12**, **BE −18 mmol/L**, **HCO₃⁻ 8 mmol/L** — **severe metabolic acidosis**; Na 133, K 5.4 mmol/L.
+1049	**Glucose 3% (high)**, **ketone bodies +++**, **specific gravity 1.035**, traces of protein.
+1050	**White blood cells 14.0×10⁹/L** (stress), hematocrit 46%, Hb 140 g/L.
+1051	Urea 8.1 mmol/L, creatinine 74 µmol/L (dehydration), amylase 64 U/L.
+1052	Abdominal organs unchanged, appendix without signs of inflammation.
+1053	Type 1 diabetes mellitus, newly diagnosed, diabetic ketoacidosis (severe)
+1054	Acetonemic syndrome (acetonemic vomiting)
+1055	Diabetes insipidus
+1056	Bacterial meningitis
+1057	The classic triad that began after a viral infection — polyuria (secondary enuresis), polydipsia and weight loss (at first against a background of polyphagia) — is typical of type 1 diabetes. The untreated diabetes has progressed to ketoacidosis: abdominal pain and vomiting (pseudoperitonitis), dehydration, smell of acetone, deep noisy Kussmaul breathing (blowing off CO₂ to compensate for the acidosis), drowsiness. Hyperglycemia, glucosuria and ketonuria, pH 7.12 and bicarbonate 8 mmol/L — severe ketoacidosis. In acetonemic syndrome glucose is normal or low.
+1058	Signs of type 1 diabetes: polyuria, polydipsia, weight loss, secondary enuresis; it often appears after a viral infection.
+1059	Ketoacidosis: vomiting, abdominal pain, smell of acetone, Kussmaul breathing, dehydration, impaired consciousness.
+1060	Kussmaul breathing is deep, noisy breathing; it is seen in metabolic acidosis (diabetic coma, uremia).
+1061	In a child who comes in with abdominal pain and vomiting, checking blood glucose helps avoid missing diabetes.
+1062	=
+1063	3 months
+1064	=
+1065	56 cm
+1066	Very quiet, sleeps a lot, feeds sluggishly, constipation, prolonged jaundice.
+1067	My daughter is very quiet, hardly cries, and sleeps all day. She is sluggish at feeding and tires quickly. She is constipated, once every three or four days. After birth her jaundice lasted more than a month. She doesn't hold her head up yet and doesn't smile.
+1068	Born post-term at 42 weeks, 4200 g. We left the maternity hospital early and don't know the screening result.
+1069	Jaundice appeared on day 3 after birth and lasted a month and a half. She has been very sluggish since then.
+1070	Very quiet, cries little, her voice is low and hoarse. She sleeps a lot and has to be woken to feed.
+1071	Constipation: once every 3–4 days, stool hard.
+1072	Doesn't hold her head up, doesn't smile, responds sluggishly to sound.
+1073	Breast milk, but she feeds sluggishly and falls asleep quickly.
+1074	In our district many people have goiter (iodine deficiency).
+1075	Urine as usual.
+1076	Condition moderately severe. Lethargic, little movement, psychomotor development delayed.
+1077	Skin dry, thick, cold, marbled, slightly yellowish. Hair dry, brittle.
+1078	Face puffy, eyelids swollen, nose broad and flat. Tongue enlarged (macroglossia), protrudes from the mouth. Anterior fontanelle 4×4 cm, posterior fontanelle open.
+1079	Abdomen enlarged, distended. Umbilical hernia. Liver 2 cm below the costal margin.
+1080	Muscle hypotonia, reflexes sluggish. Doesn't hold her head up, doesn't follow with her eyes.
+1081	Bradycardia (98/min), heart sounds muffled.
+1082	Limbs short, hands broad, cold.
+1083	**TSH 186 mIU/L (sharply raised)**, **free T4 3.1 pmol/L (sharply low)** — primary hypothyroidism.
+1084	Total bilirubin 46 µmol/L, **indirect 38 µmol/L (raised)**, direct 8 µmol/L.
+1085	**Hb 96 g/L** (normochromic anemia), white blood cells 7.8×10⁹/L.
+1086	**Sinus bradycardia, HR 98, low wave voltage.**
+1087	**Cholesterol 6.8 mmol/L (raised)**, total protein 58 g/L, glucose 3.9 mmol/L.
+1088	Ca 2.4 mmol/L, P 1.7 mmol/L, alkaline phosphatase 180 U/L.
+1089	Congenital (primary) hypothyroidism, decompensated
+1090	Down syndrome
+1091	Prolonged neonatal jaundice (biliary atresia)
+1092	Post-term birth with a high birth weight, prolonged (1.5 months) jaundice, sluggish feeding, long sleep, a low hoarse voice, constipation and delayed psychomotor development — early signs of congenital hypothyroidism. On examination: puffy face, macroglossia, broad flat nose, widely open anterior and posterior fontanelles, dry cold skin, umbilical hernia, muscle hypotonia, bradycardia and muffled heart sounds. A sharp rise in TSH and a fall in T4 confirm the diagnosis. An iodine-deficient region and no neonatal screening are risk factors. The earlier treatment is started, the better mental development is preserved.
+1093	Congenital hypothyroidism is detected in all newborns by neonatal screening (TSH) in the first days of life.
+1094	Signs: prolonged jaundice, macroglossia, low voice, constipation, umbilical hernia, hypotonia, bradycardia, large fontanelle.
+1095	If treatment is started by the 2nd week of life, normal mental development is preserved.
+1096	Jaundice lasting more than 2 weeks in a term newborn requires excluding hypothyroidism, biliary atresia and hepatitis.
+1097	=
+1098	=
+1099	95 cm
+1100	Sudden fever of 39.8 °C, repeated vomiting, headache, red-purple rash on the legs.
+1101	Yesterday evening my son's fever suddenly rose to 39.8, he said his head hurts, and he vomited again and again. He closes his eyes against the light and cries when we touch him. This morning red-purple spots appeared on his legs and buttocks.
+1102	Yesterday evening it began suddenly with a fever of 39.8, chills and a headache. He vomited 4 times during the night.
+1103	He cries from the headache, dislikes light and noise, and cries when touched. This morning a rash appeared on his legs and buttocks, and it is spreading.
+1104	Vomiting 4 times, unrelated to food, brings no relief. No diarrhea.
+1105	A week ago a child in his kindergarten was hospitalized with 'meningitis'.
+1106	Routine vaccinations done, the meningococcal vaccine was not given.
+1107	39.5–40, hardly comes down with paracetamol.
+1108	We gave paracetamol, it did not help.
+1109	No seizures before.
+1110	Condition severe. Drowsy, fretful when disturbed. Forced position: on his side, head thrown back, legs drawn up to the abdomen ('pointing dog' position).
+1111	Skin pale, grayish. Irregular, star-shaped hemorrhagic rash on the legs and buttocks with necrosis in the center; it does not fade when pressed with a glass. The rash is spreading quickly.
+1112	Nuchal rigidity marked. Kernig's sign positive on both sides. Brudzinski's upper and lower signs positive. Generalized hyperesthesia, photophobia. No focal neurological signs, no convulsions.
+1113	Eyes shy away from light. Posterior pharyngeal wall slightly hyperemic.
+1114	Tachycardia, heart sounds slightly muffled.
+1115	Extremities cold, capillary refill time 3 seconds.
+1116	**CSF turbid, outflow pressure raised.** **Cell count 3200 cells/µL, neutrophils 90%**, **protein 1.8 g/L**, **glucose 1.1 mmol/L (low)**. Gram stain: **Gram-negative diplococci**.
+1117	**White blood cells 24×10⁹/L**, **neutrophils 86%, band 18%**, **platelets 120×10⁹/L**, ESR 32 mm/h.
+1118	Blood culture and CSF culture: **Neisseria meningitidis** grew. Meningococcus also in the nasopharyngeal swab.
+1119	**CRP 180 mg/L.**
+1120	**Fibrinogen 1.4 g/L (low), aPTT 46 s (prolonged), D-dimer raised** — DIC is beginning.
+1121	Na 132, K 3.9 mmol/L; pH 7.31, BE −7.
+1122	Blood glucose 5.4 mmol/L.
+1123	Urea 6.8 mmol/L, creatinine 52 µmol/L.
+1124	Meningococcal infection, mixed form: purulent meningitis + meningococcemia
+1125	Viral (serous) meningitis
+1126	Meningism (in the setting of ARVI)
+1127	Acute gastroenteritis
+1128	Sudden high fever, severe headache, repeated vomiting unrelated to food and bringing no relief, hyperesthesia and photophobia — general cerebral signs. Nuchal rigidity, Kernig and Brudzinski signs and the 'pointing dog' position — meningeal syndrome. A star-shaped hemorrhagic rash with central necrosis that does not fade on pressure and spreads rapidly — meningococcemia. In the CSF, neutrophilic pleocytosis, raised protein and lowered glucose — purulent meningitis; Gram-negative diplococci and N. meningitidis on culture identify the pathogen. Thrombocytopenia and coagulogram changes indicate the onset of DIC — an emergency.
+1129	Meningeal syndrome: general cerebral signs (headache, vomiting, hyperesthesia) + meningeal signs (nuchal rigidity, Kernig, Brudzinski) + CSF changes.
+1130	CSF in purulent meningitis: turbid, neutrophilic pleocytosis (hundreds to thousands), protein ↑, glucose ↓. In serous (viral): clear, lymphocytic pleocytosis, normal glucose.
+1131	Meningism — meningeal signs are present, but the CSF is normal (in the setting of severe infections).
+1132	A rash that does not fade on pressure together with fever may be meningococcemia — antibiotics and hospital care are needed immediately.
+1133	=
+1134	4 days old
+1135	=
+1136	51 cm
+1137	Jaundice appeared on the face on day 3, today it has spread to the trunk; she fed well.
+1138	My daughter is four days old. Yesterday her face began to turn yellow, and today her body has turned yellow too. She feeds well and is calm. Is the jaundice dangerous?
+1139	On the third day jaundice appeared on her face, and today it has spread to her chest and abdomen. For the first two days her skin was pink.
+1140	First pregnancy, born at term at 39 weeks, vaginally, 3350 g. Apgar 8/9.
+1141	Only breast milk, every 2–3 hours, she fed well. My milk came in on the second day.
+1142	6–7 wet diapers a day, urine pale yellow.
+1143	Stool is yellow-mustard in color, 4–5 times a day. There has been no colorless stool.
+1144	My blood group is B(III) Rh+, and my daughter's is also B(III) Rh+. No blood diseases in the family.
+1145	Her birth weight was 3350 g, today 3150 g.
+1146	Hepatitis B and BCG were given in the maternity hospital.
+1147	Condition satisfactory. Active, loud cry, good sucking reflex.
+1148	Face, neck and trunk down to the navel yellow (Kramer zone 2). Limbs, palms and soles not yellow. Skin clean, no rash.
+1149	Sclerae yellow. Anterior fontanelle 2×2 cm, flat. No cephalohematoma.
+1150	Abdomen soft. Liver 2 cm below the costal margin (normal for a newborn), spleen not palpable. Umbilical stump dry.
+1151	Physiological reflexes (sucking, rooting, Moro, Robinson) elicited well. Muscle tone normal (flexor hypertonus).
+1152	**Total bilirubin 158 µmol/L**, indirect 151 µmol/L, direct 7 µmol/L (< 20% — normal). Mother's and baby's blood group B(III) Rh+, direct Coombs test negative.
+1153	Hb 176 g/L, red blood cells 5.4×10¹²/L, reticulocytes 1.5%, white blood cells 11.2×10⁹/L — normal for a newborn, no signs of hemolysis.
+1154	Neonatal screening: TSH 3.4 mIU/L (normal).
+1155	Glucose 3.6 mmol/L.
+1156	Urine pale yellow, bilirubin negative.
+1157	Physiological (transient) neonatal jaundice
+1158	Hemolytic disease of the newborn (ABO or Rh incompatibility)
+1159	Breast milk jaundice
+1160	Biliary atresia
+1161	Neonatal sepsis
+1162	In a healthy term newborn jaundice appeared on day 3 (not in the first 24 hours), Kramer zone 2, the general condition is not impaired, she feeds well, and the urine and stool color are normal. Bilirubin 158 µmol/L is within the physiological range, mainly the indirect fraction. The mother's and baby's blood groups are compatible, the Coombs test is negative, and there is no anemia or reticulocytosis — no hemolysis. Weight loss of 6% is normal (up to 10%). This is a transient condition related to immature liver enzymes and the breakdown of red blood cells; it passes by day 7–10.
+1163	Physiological jaundice: appears on day 3, peaks on days 4–6, disappears by day 7–10; bilirubin ≤ 170 µmol/L, the condition is not impaired.
+1164	Signs of pathological jaundice: appearance on day 1, rapid rise, lasting longer than 2 weeks, rise in direct bilirubin, colorless stool, impaired condition.
+1165	Kramer scale: 1 — face and neck, 2 — down to the navel, 3 — down to the knees, 4 — forearms and shins, 5 — palms and soles.
+1166	Physiological weight loss after birth peaks on days 3–4, at 5–8% (up to 10%), and recovers by day 7–10.
+1167	=
+1168	2 days old
+1169	=
+1170	52 cm
+1171	Examination before discharge from the maternity hospital; skin red, tiny white dots on the nose.
+1172	My son is two days old. Please examine him before we go home — is everything all right? His skin is bright red, and there are tiny white dots on his nose and forehead. He lies with his fists clenched tight.
+1173	Second pregnancy, went well. Born at term at 40 weeks vaginally, 3400 g, 52 cm, Apgar 8/9.
+1174	Put to the breast within 30 minutes of birth. He fed every 2–3 hours and sucked well.
+1175	Urinated 2 times on the first day, 4 times today.
+1176	Black-green meconium passed on the first day; today the stool is turning greenish-yellow.
+1177	Hepatitis B and BCG vaccinations were given in the maternity hospital.
+1178	No hereditary diseases in the family. Mother's and baby's blood groups are the same.
+1179	His weight today is 3300 g.
+1180	Condition satisfactory. Active, loud cry, emotional. Signs of term birth.
+1181	Skin bright pink-red (simple erythema). White-yellow 1 mm nodules (milia) on the wings of the nose and forehead. No jaundice or rash.
+1182	Head circumference 35 cm, anterior fontanelle 2×2 cm, flat. Sutures closed. Eyes clean, oral mucosa pink.
+1183	Chest circumference 33 cm, breathing rhythmic, RR 44/min.
+1184	Abdomen soft. Liver 1.5 cm below the costal margin (normal). Umbilical stump dry, surrounding skin clean.
+1185	Limbs in a flexed position (flexor hypertonus), hands clenched into fists. Hip abduction not limited, Ortolani sign negative.
+1186	Sucking, rooting, proboscis, Babkin, Robinson (grasp), Moro, support and automatic walking, and Galant reflexes are elicited well and are symmetric.
+1187	Hb 188 g/L, red blood cells 5.6×10¹²/L, white blood cells 14.5×10⁹/L, platelets 260×10⁹/L — normal for a newborn.
+1188	Total bilirubin 62 µmol/L (normal for day 2).
+1189	Glucose 3.8 mmol/L.
+1190	Neonatal screening: TSH 2.9 mIU/L, phenylketonuria test negative.
+1191	Healthy term newborn; transient conditions: simple erythema, milia
+1192	Erythema toxicum
+1193	Neonatal vesiculopustulosis
+1194	Congenital hip dislocation (dysplasia)
+1195	Hemolytic disease of the newborn
+1196	Born at term, Apgar 8/9, weight and length normal (head circumference 1–2 cm greater than chest circumference — normal). The skin redness is simple erythema (brightest on day 2), and the white nodules on the nose are milia; both are transient conditions and need no treatment. Flexor hypertonus and clenched fists are typical of a newborn. All physiological reflexes are elicited symmetrically, the hip joints are normal, and the umbilical stump is clean. Weight loss of 3% is physiological. No additional tests are needed for a healthy newborn; neonatal screening is done in the standard way.
+1197	Apgar scale: at 1 and 5 minutes, 5 signs (heart rate, respiration, tone, reflexes, skin color), each scored 0–2; 8–10 — good condition.
+1198	Term newborn: weight 2500–4000 g, length 46–56 cm, head circumference 34–36 cm, chest circumference 32–34 cm.
+1199	Transient conditions: simple erythema, erythema toxicum, milia, physiological jaundice, physiological weight loss, sexual crisis.
+1200	Newborn reflexes: sucking, rooting, Babkin, Robinson, Moro, support, automatic walking, Galant — should be symmetric.
+1201	=
+1202	1 year 6 months
+1203	82 cm
+1204	Itchy red rash on the cheeks and in the folds, scratches at night and can't sleep.
+1205	My daughter's cheeks and the bends of her elbows and knees are red and itchy. She scratches at night and can't sleep, and her skin has become rough and dry. It gets worse when she eats milk or eggs.
+1206	When we switched her to cow's milk at four months, her cheeks turned red and began to itch. Then it spread to the folds.
+1207	Severe itching, especially at night. Worse with sweating and woolen clothes. The skin is dry, and the scratched places become crusted.
+1208	The rash gets worse after she eats cow's milk, eggs, oranges, chocolate.
+1209	Her father has bronchial asthma, and I (her mother) have hay fever.
+1210	A clear reaction to cow's milk and eggs. No drug allergy.
+1211	There are a lot of carpets at home, and we keep a cat. We use a strong powder for laundry.
+1212	She had obstructive bronchitis once.
+1213	We applied a cream, I don't know its name, it helped a little.
+1214	Condition satisfactory, restless, scratches from itching.
+1215	Erythema with indistinct borders, papules, excoriations (scratch marks) and yellowish crusts on the cheeks, in the bends of the elbows and knees, and on the neck. The skin is generally dry (xerosis) and rough. White dermographism.
+1216	Erythema on the cheeks, the nasolabial triangle is clear. An extra fold on the lower eyelid (Dennie–Morgan). 'Geographic' tongue.
+1217	Cervical and inguinal lymph nodes slightly enlarged, painless (reactive).
+1218	Lichenification has begun in the folds.
+1219	**Total IgE 380 kU/L (raised).** **Specific IgE to cow's milk protein and egg white positive.**
+1220	White blood cells 8.6×10⁹/L, **eosinophils 11%**, Hb 118 g/L, ESR 6 mm/h.
+1221	No worm eggs or Giardia cysts found. Signs of dysbiosis.
+1222	Atopic dermatitis, infantile-childhood form, moderate, food sensitization
+1223	Seborrheic dermatitis
+1224	Contact dermatitis
+1225	Scabies
+1226	Measles
+1227	An itchy, chronically relapsing eczematous rash that began after cow's milk was introduced in infancy — typical distribution on the cheeks and in the folds, xerosis, white dermographism, Dennie–Morgan fold. Family atopy (asthma in the father, hay fever in the mother), the link with food allergens, raised total and specific IgE and eosinophilia confirm atopic dermatitis. Seborrheic dermatitis occurs on the scalp and in the folds with greasy crusts, without itching; scabies has burrows between the fingers, severe itching at night and family contact.
+1228	Main signs of atopic dermatitis: itching, age-related distribution (face and extensor surfaces in an infant, flexures in an older child), chronic relapsing course, family atopy.
+1229	The 'atopic march': atopic dermatitis → food allergy → allergic rhinitis → bronchial asthma.
+1230	White dermographism and xerosis are skin signs typical of atopy.
+1231	Main treatment: skin care with emollients, eliminating allergens, topical glucocorticoids during flares.
+1232	=
+1233	1 year
+1234	=
+1235	76 cm
+1236	Scheduled preventive checkup at age 1, no complaints.
+1237	My son turned one year old today, and we came for a scheduled checkup. We have no complaints. Eight teeth have come in, and he has started walking. I want to know if everything is appropriate for his age.
+1238	Held his head up at 2 months, sat at 6 months, stood at 9 months. Began to walk independently at 11 months. Says 8–10 words: 'mama', 'dada', 'give', 'here'. Follows simple instructions.
+1239	Breast milk and complementary foods from 6 months: vegetable puree, porridge, meat, cottage cheese, fruit. Now he also eats from the family table.
+1240	All vaccinations done according to the schedule. Today it is time for the measles-rubella-mumps vaccine.
+1241	Took vitamin D regularly from 1 month.
+1242	Had ARVI once, no other illnesses.
+1243	Born at term, 3300 g, 51 cm.
+1244	Conditions are good, we go for walks every day.
+1245	Condition satisfactory, active, cheerful, interested in his surroundings. Physical development average, harmonious.
+1246	Head circumference 46 cm. Anterior fontanelle 0.5×0.5 cm (closing). Teeth 8 (4 above, 4 below) — appropriate for age.
+1247	Chest circumference 48 cm (greater than head circumference — normal). Chest normally shaped, no deformity.
+1248	Skin pink, clean, subcutaneous fat well developed and evenly distributed.
+1249	Legs straight, walks independently, muscle tone normal.
+1250	Psychomotor development appropriate for age: walks independently, 8–10 words, understands simple instructions.
+1251	Hb 122 g/L, red blood cells 4.4×10¹²/L, white blood cells 8.8×10⁹/L, lymphocytes 58% (appropriate for age), platelets 290×10⁹/L, ESR 5 mm/h.
+1252	Straw-yellow, clear, no protein, white blood cells 1–2, no red blood cells.
+1253	Glucose 4.5 mmol/L.
+1254	No worm eggs found.
+1255	Healthy child, health group I; physical development average, harmonious; psychomotor development appropriate for age
+1256	Rickets grade I, residual period
+1257	Iron deficiency anemia (latent)
+1258	Paratrophy grade I
+1259	Hypotrophy grade II
+1260	At 1 year weight is ~3 times the birth weight (3.3 → 10.2 kg), and length has increased by ~25 cm (51 → 76 cm) — normal. Head circumference 46 cm, chest circumference greater, anterior fontanelle closing, 8 teeth (formula n − 4: 12 − 4 = 8). Psychomotor development appropriate for age: independent walking, 8–10 words. No signs of rickets (received vitamin D prophylaxis), no anemia (Hb 122 g/L). At age 1 a complete blood count and urinalysis are done as screening. The next vaccination is against measles, rubella and mumps.
+1261	At 1 year: weight tripled, length +25 cm, head circumference ~46 cm, 8 teeth, independent walking, 8–10 words.
+1262	Number of primary teeth: n − 4 (n = months, up to 2 years); all 20 primary teeth have erupted by 2–2.5 years.
+1263	The anterior fontanelle closes at 12–18 months.
+1264	Health groups: I — healthy; II — functional changes, risk factors; III–V — chronic diseases.
+1265	=
+1266	=
+1267	Certificate for the school medical examination; she says her heart beats fast after physical education.
+1268	We need a medical certificate for school. My daughter is healthy, she only said her heart beats fast after running in physical education class. Please check that there is no murmur in her heart.
+1269	In physical education she runs as well as her peers. After running her heart beats fast and calms down in 2–3 minutes. No fainting, chest pain or shortness of breath.
+1270	Chickenpox at age 5, ARVI 1–2 times a year. No chronic diseases.
+1271	Everything done according to the schedule, including the revaccinations at age 6.
+1272	Does well at school, has friends, is in a good mood.
+1273	No heart disease or sudden death in the family.
+1274	Eats three meals a day, eats fruit and vegetables well, eats a lot of sweets.
+1275	A regular daily routine is kept, sleeps 9 hours, phone and computer 2–3 hours a day.
+1276	No complaints, we came only for the certificate.
+1277	Condition satisfactory. Physical development average, harmonious (weight and height between the 25th and 75th percentile). Posture straight. Sexual development Ma1 P1 Ax0 Me0 — appropriate for age.
+1278	12 permanent teeth, one caries. Throat clear.
+1279	Apex beat in the 5th intercostal space, 1 cm medial to the midclavicular line, localized. Cardiac borders appropriate for age. No thrill. After 10 squats the pulse rose to 108 and recovered in 2 minutes (normotonic reaction).
+1280	Spine straight, no scoliosis (Adams test negative). No flat feet.
+1281	Skin pink, clean.
+1282	Neurological status unchanged, no autonomic signs.
+1283	Hb 132 g/L, red blood cells 4.6×10¹²/L, white blood cells 6.4×10⁹/L, differential appropriate for age, ESR 6 mm/h.
+1284	Straw-yellow, clear, specific gravity 1.018, no protein, white blood cells 1–2.
+1285	Sinus rhythm, HR 80, respiratory arrhythmia appropriate for age. Electrical axis normal. No changes.
+1286	Glucose 4.8 mmol/L.
+1287	Healthy child, health group I; physical development average, harmonious
+1288	Vegetative dystonia (sympathicotonia)
+1289	Scoliosis grade I
+1290	Weight (10.5 + 2n ≈ 30.5 kg) and height (≈ 136 cm) are appropriate for age by the formulas. Pulse, respiratory rate and BP are within the age norm (systolic 90 + 2n = 110, diastolic 60 + n = 70 mm Hg). No heart murmur, sounds are clear, borders normal; the recovery of the pulse within 2 minutes after exertion is a normotonic reaction — tachycardia after exercise is physiological. No autonomic, orthopedic or other changes were found. At age 10 vesicular breathing is heard. For a preventive checkup a complete blood count and urinalysis are enough.
+1291	Weight (2–11 years): 10.5 + 2n kg; height: ~100 cm at 4 years, then +6 cm each year.
+1292	BP (after age 1): systolic 90 + 2n, diastolic 60 + n.
+1293	Normotonic reaction to exercise: the pulse rises by up to 50–75% and recovers in 2–3 minutes.
+1294	In children over 7 years vesicular breathing is heard.
+1295	Admission
+1296	History
+1297	Examination
+1298	Percussion and auscultation
+1299	Investigations
+1300	Diagnosis
+1301	Result
+1302	=
+1303	Child's "barking" cough
+1304	Child's coughing fit
+1305	Newborn's exhalation
+1306	Child's inhalation (from a distance)
+1307	=
+1308	=
+1309	=
+1310	▲ INHALATION
+1311	▼ EXHALATION
+1312	SYSTOLE
+1313	DIASTOLE
+1314	=
+1315	=
+1316	=
+1317	=
+1318	=
+1319	=
+1320	=
+1321	=
+1322	=
+1323	=
+1324	=
+1325	=
+1326	=
+1327	=
+1328	=
+1329	=
+1330	=
+1331	=
+1332	=
+1333	=
+1334	=
+1335	=
+1336	=
+1337	=
+1338	=
+1339	=
+1340	<g>\n   <ellipse class="hot" data-reg="head" cx="⟦0⟧" cy="⟦1⟧" rx="⟦2⟧" ry="⟦3⟧"><title>Head, face</title></ellipse>\n   <rect class="hot" data-reg="lymph" x="⟦4⟧" y="⟦5⟧" width="32" height="18" rx="6"><title>Neck, lymph nodes</title></rect>\n   <rect class="hot" data-reg="chest" x="⟦6⟧" y="⟦7⟧" width="⟦8⟧" height="⟦9⟧" rx="8"><title>Chest</title></rect>\n   <rect class="hot" data-reg="heart" x="⟦10⟧" y="⟦11⟧" width="⟦12⟧" height="⟦13⟧" rx="8"><title>Cardiac area</title></rect>\n   <rect class="hot" data-reg="abdomen" x="⟦14⟧" y="⟦15⟧" width="⟦16⟧" height="⟦17⟧" rx="10"><title>Abdomen</title></rect>\n   <rect class="hot" data-reg="limbs" x="⟦18⟧" y="⟦19⟧" width="⟦20⟧" height="⟦21⟧" rx="10"><title>Limbs</title></rect>\n  </g></svg>
+1341	Front
+1342	Back
+1343	=
+1344	=
+1345	=
+1346	=
+1347	FRONT VIEW
+1348	BACK VIEW
+1349	=
+1350	<text x="100" y="105" text-anchor="middle" font-size="10" fill="var(--muted)">Cardiac points are on the front view</text>
+1351	=
+1352	=
+1353	=
+1354	<svg viewBox="0 0 300 260" role="img" aria-label="X-ray schematic"><defs><filter id="bl"><feGaussianBlur stdDeviation="7"/></filter><filter id="bl2"><feGaussianBlur stdDeviation="2"/></filter></defs><rect width="300" height="260" fill="#0B0E10"/>
+1355	=
+1356	=
+1357	=
+1358	=
+1359	=
+1360	=
+1361	=
+1362	=
+1363	=
+1364	<path d="M70 50 Q60 ⟦0⟧ 64 ⟦1⟧ Q100 ⟦2⟧ 140 ⟦3⟧ L142 60 Q110 30 70 50Z" fill="#05080A" opacity=".55" filter="url(#bl2)"/><text x="96" y="120" fill="#C9CFD2" font-size="9" font-family="IBM Plex Mono,monospace" text-anchor="middle">lucency ↑</text>
+1365	=
+1366	=
+1367	=
+1368	<text x="150" y="252" text-anchor="middle" fill="#8E979D" font-size="9" font-family="IBM Plex Mono,monospace">SCHEMATIC IMAGE · FRONTAL PROJECTION</text></svg>
+1369	<svg viewBox="0 0 300 220" role="img" aria-label="Wrist X-ray schematic"><defs><filter id="wb"><feGaussianBlur stdDeviation="1.6"/></filter></defs><rect width="300" height="220" fill="#0B0E10"/>\n  <g filter="url(#wb)" fill="#9EA6AB" opacity=".75"><path d="M95 210 L95 92 Q78 84 74 70 Q110 82 135 70 Q132 86 120 92 L120 210Z"/><path d="M170 210 L170 100 Q158 94 156 82 Q182 92 200 82 Q198 96 190 100 L190 210Z"/></g>\n  <g stroke="#E2E6E8" stroke-width="2" fill="none" opacity=".8"><path d="M74 70 Q90 60 104 72 Q118 60 135 70"/><path d="M156 82 Q168 72 178 84 Q190 72 200 82"/></g>\n  <g stroke="#C5CBCE" stroke-width="1" opacity=".6">⟦0⟧</g>\n  <g fill="#7E868B" opacity=".55"><circle cx="110" cy="30" r="7"/><circle cx="160" cy="34" r="5"/></g>\n  <text x="150" y="212" text-anchor="middle" fill="#8E979D" font-size="9" font-family="IBM Plex Mono,monospace">SCHEMATIC: CUPPED, "BRUSH-LIKE" METAPHYSES</text></svg>
+1370	<svg viewBox="0 0 ⟦0⟧ ⟦1⟧" width="⟦2⟧" role="img" aria-label="ECG tracing"><rect width="⟦3⟧" height="⟦4⟧" fill="var(--ecg-paper)"/>
+1371	=
+1372	=
+1373	=
+1374	=
+1375	=
+1376	Differential diagnosis
+1377	Final diagnosis
+1378	<header class="topbar"><div class="brand"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="11" cy="9" r="4" fill="none" stroke="var(--accent)" stroke-width="2.4"/><path d="M11 13 v6 q0 8 8 8 q7 0 7-7 v-4" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round"/><circle cx="26" cy="13" r="3.6" fill="var(--accent)"/></svg>\n  <div><h1>Pediatric Clinical Simulator</h1><small>Pediatric propaedeutics · virtual patient visit · Compiled by: Asadbek Axmatkulov</small></div></div>\n  ⟦0⟧<button class="btn" id="norms">Age norms</button></header>
+1379	<button class="btn" id="home">← All patients</button>
+1380	<button class="case" data-case="⟦0⟧"><div class="row"><div class="avatar">⟦1⟧</div><div><h3>⟦2⟧, ⟦3⟧</h3><span class="tag">⟦4⟧</span><span class="topic" title="⟦5⟧">Topic ⟦6⟧</span></div>⟦7⟧</div><div class="cc">⟦8⟧</div></button>
+1381	=
+1382	=
+1383	<button class="btn sm" id="clr">Clear all results</button>
+1384	=
+1385	2–3 years
+1386	7–8 years
+1387	12–14 years
+1388	=
+1389	=
+1390	=
+1391	<div class="case-view"><aside class="side">\n   <div class="pcard"><div class="avatar">⟦0⟧</div><div><h3>⟦1⟧, ⟦2⟧</h3><div class="meta">⟦3⟧ · ⟦4⟧ · ⟦5⟧</div><span class="tag">⟦6⟧</span></div></div>\n   <div class="monitor"><div class="mon-top"><span>PED · MONITOR</span><span><b>●</b> SINUS</span></div>\n    <div class="mon-body"><canvas id="mon" aria-hidden="true"></canvas>\n    <div class="mon-nums"><div class="mn" style="color:var(--mon-hr)"><small>PULSE</small><span>⟦7⟧</span></div><div class="mn" style="color:var(--mon-sp)"><small>SpO₂ %</small><span>⟦8⟧</span></div><div class="mn" style="color:var(--mon-rr)"><small>RR /min</small><span>⟦9⟧</span></div></div></div>\n    <div class="mon-foot"><span style="color:var(--mon-bp)">BP ⟦10⟧</span><span class="⟦11⟧">T ⟦12⟧ °C</span></div></div>\n   <div class="figure-box"><span class="fig-hint">Tap an area to examine</span>⟦13⟧</div>\n  </aside><main class="pane-wrap" style="min-width:0">⟦14⟧<nav class="stages" aria-label="Stages">⟦15⟧</nav><div class="pane" id="pane">⟦16⟧</div></main></div>
+1392	<div class="restart"><button class="btn sm" id="restart">↺ Restart patient</button></div>
+1393	=
+1394	<button class="btn" data-go="⟦0⟧">← Back</button>
+1395	=
+1396	=
+1397	Next stage →
+1398	<div class="eyebrow">Stage 1</div><h2>Admission</h2>\n   <div class="complaint"><div class="who">⟦0⟧</div>“⟦1⟧”</div>\n   ⟦2⟧\n   <div class="eyebrow">Vital signs — compare with the age norm</div>\n   <div class="vit-grid">\n    ⟦3⟧\n   </div><p class="lead">Values marked in red are outside the age norm. Now take the history: the number of questions is limited to ⟦4⟧, so choose the most important ones.</p>⟦5⟧
+1399	The mother says:
+1400	<div class="sound-row"><button class="btn" id="hear">▶ ⟦0⟧</button><span class="synth">Synthesized teaching sound</span></div>
+1401	Pulse
+1402	Normal: ⟦0⟧–⟦1⟧
+1403	Respiratory rate
+1404	Temperature
+1405	=
+1406	Normal: 36.0–37.0
+1407	=
+1408	Normal: ≥ 95
+1409	BP
+1410	Systolic normal: ⟦0⟧–⟦1⟧
+1411	=
+1412	Start taking the history →
+1413	<div class="bub dr">⟦0⟧</div><div class="bub mom"><b>Mother</b>⟦1⟧</div>
+1414	I haven't noticed any particular change in this, everything is as usual.
+1415	<div class="empty">Choose one of the questions on the left — the mother's answer will appear here.</div>
+1416	<div class="eyebrow">Stage 2</div><h2>History</h2>\n   <div class="budget"><span>Questions left: <b>⟦0⟧</b> / ⟦1⟧</span><span class="dots">⟦2⟧</span></div>\n   <div class="qa"><div class="qlist">⟦3⟧</div>\n   <div class="chat" id="chat">⟦4⟧</div></div>⟦5⟧
+1417	=
+1418	=
+1419	<div class="eyebrow">Stage 3</div><h2>Physical examination</h2><p class="lead">Tap the areas on the child figure on the left or choose the buttons below. Findings are recorded on the examination sheet.</p>\n   <div class="chips">⟦0⟧</div>\n   ⟦1⟧\n   <div class="finding"><h3>Examination sheet</h3>⟦2⟧</div>⟦3⟧
+1420	=
+1421	<div class="finding"><div class="eyebrow">Finding</div><h3>⟦0⟧</h3><p style="margin:0">⟦1⟧</p></div>
+1422	=
+1423	=
+1424	<p class="muted" style="margin:0">No area has been examined yet.</p>
+1425	<div class="eyebrow">Stage 4</div><h2>Percussion and auscultation</h2>\n  <p class="lead">Tap a point — the sound plays (listen with headphones). Then mark what you heard. Checking all points earns points.</p>\n  <div><div class="mode" role="tablist">⟦0⟧</div>\n  <div class="muted" style="font-size:.84rem">Marked: ⟦1⟧ / ⟦2⟧</div></div>\n  <div class="ausc"><div class="mapbox">\n   ⟦3⟧\n  </div>\n  <div class="listen">⟦4⟧\n  </div></div>⟦5⟧
+1426	Lung percussion
+1427	Lung auscultation
+1428	Heart auscultation
+1429	=
+1430	Percussion
+1431	Stethoscope
+1432	Finger-on-finger percussion
+1433	HR
+1434	RR
+1435	=
+1436	<div class="empty">Choose a point on the map on the left.<br><br>⟦0⟧</div>
+1437	Cardiac points: 1 — mitral, 2 — aortic, 3 — pulmonary, 4 — tricuspid, 5 — Erb's point.
+1438	Examine the lungs by comparing symmetric points.
+1439	=
+1440	=
+1441	=
+1442	<div class="eyebrow">Stage 5</div><h2>Laboratory and instrumental investigations</h2>\n  <p class="lead">Select the necessary investigations and press “Get results”. Each unjustified investigation reduces your score — protect the child from unnecessary procedures.</p>\n  <div class="tests">⟦0⟧</div>\n  <div><button class="btn primary" id="order" ⟦1⟧>Get results (⟦2⟧)</button></div>\n  <div class="results">⟦3⟧</div>⟦4⟧
+1443	=
+1444	<p class="muted">No investigations ordered yet.</p>
+1445	<div class="eyebrow">Stage 6</div><h2>Diagnosis</h2>\n  <div class="finding"><h3>Differential diagnosis</h3><p class="muted" style="margin:0 0 8px">Select the diseases that need to be ruled out (up to 3).</p>\n  <div class="dx">⟦0⟧</div></div>\n  <div class="finding"><h3>Final clinical diagnosis</h3><div class="dx">⟦1⟧</div></div>\n  ⟦2⟧
+1446	=
+1447	=
+1448	View result →
+1449	=
+1450	<span>Answers cannot be changed after you finish.</span><button class="btn danger" id="finish">Yes, finish</button><button class="btn" id="cancel">Cancel</button>
+1451	<button class="btn" data-go="4">← Back</button><button class="btn primary" id="pre-finish" ⟦0⟧>Finish the visit</button>
+1452	Excellent
+1453	Good
+1454	Satisfactory
+1455	Needs review
+1456	=
+1457	Correct diagnosis
+1458	Your diagnosis:
+1459	<span class="miss">Important questions missed:</span> ⟦0⟧
+1460	<span class="ok">All the important history questions were asked.</span>
+1461	<span class="miss">Important areas not examined:</span> ⟦0⟧
+1462	<span class="ok">All the important areas were examined.</span>
+1463	<span class="miss">Errors in percussion and auscultation, or important points not checked:</span><ul style="margin-top:4px">⟦0⟧</ul>
+1464	<li>⟦0⟧ (⟦1⟧): correct answer — <b>⟦2⟧</b>⟦3⟧</li>
+1465	lung
+1466	, you: ⟦0⟧
+1467	, not marked
+1468	<span class="ok">The physical findings were interpreted correctly.</span>
+1469	<span class="miss">Necessary investigations not ordered:</span> ⟦0⟧
+1470	<span class="ok">The necessary investigations were ordered.</span>
+1471	<li><span class="miss">Unjustified investigations:</span> ⟦0⟧</li>
+1472	=
+1473	=
+1474	Get results (⟦0⟧)
+1475	=
+1476	=
+1477	=
+1478	=
+1479	=
+1480	=
+1481	=
+1482	=
+1483	=
+1484	=
+1485	=
+1486	=
+1487	=
+1488	girl
+1489	=
+1490	=
+1491	=
+1492	=
+1493	=
+1494	=
+1495	=
+1496	=
+1497	=
+1498	=
+1499	=
+1500	=
+1501	=
+1502	=
+1503	=
+1504	=
+1505	=
+1506	=
+1507	=
+1508	=
+1509	=
+1510	<div class="restart ask"><span>Best scores for all patients will be erased. Continue?</span><span style="display:flex;gap:6px"><button class="btn sm danger" id="clr-yes">Yes, clear</button><button class="btn sm" id="clr-no">No</button></span></div>
+1511	<section class="hero"><div><div class="eyebrow">⟦0⟧ patients in the queue</div><h2>Admit the patient, <em>examine</em> and make the diagnosis.</h2>\n  <p>In each case you take the history from the mother, examine the child, listen with a stethoscope, order tests and make a diagnosis. At the end you get a score for each stage and an analysis of your errors.</p></div>\n  <div class="steps">⟦1⟧</div></section>\n  <div class="filters" role="group" aria-label="Filter by system">⟦2⟧</div>\n  <div class="home-actions"><span class="muted" style="font-size:.88rem">Showing: ⟦3⟧ patients</span>⟦4⟧</div>\n  <div class="cases">⟦5⟧</div>\n  <div class="section-title"><h2>Reference</h2><span class="muted">can also be opened during a visit</span></div>\n  <div class="ref-grid"><div class="panel">⟦6⟧</div>\n  <div class="panel"><h3 style="font-size:1.05rem;margin-bottom:8px">Real recordings and videos</h3>\n  <p class="muted" style="margin:0 0 10px;font-size:.9rem">The sounds in the simulator are teaching sounds synthesized in the browser. Listen to recordings of real patients at the following open sources:</p>\n  <div class="links">\n   <a href="https://commons.wikimedia.org/w/index.php?search=heart+murmur&title=Special:MediaSearch&type=audio" target="_blank" rel="noopener">Wikimedia Commons — heart murmurs (audio) ↗</a>\n   <a href="https://commons.wikimedia.org/w/index.php?search=lung+sounds+crackles&title=Special:MediaSearch&type=audio" target="_blank" rel="noopener">Wikimedia Commons — lung sounds (audio) ↗</a>\n   <a href="https://commons.wikimedia.org/w/index.php?search=rickets+child&title=Special:MediaSearch&type=image" target="_blank" rel="noopener">Wikimedia Commons — signs of rickets (images) ↗</a>\n   <a href="https://www.youtube.com/results?search_query=pediatric+lung+auscultation+sounds" target="_blank" rel="noopener">YouTube — pediatric lung auscultation ↗</a>\n   <a href="https://www.youtube.com/results?search_query=ventricular+septal+defect+murmur+child" target="_blank" rel="noopener">YouTube — VSD murmur ↗</a>\n   <a href="https://www.youtube.com/results?search_query=skin+turgor+test+dehydration+child" target="_blank" rel="noopener">YouTube — skin pinch test in dehydration ↗</a>\n   <a href="https://commons.wikimedia.org/w/index.php?search=stridor&title=Special:MediaSearch&type=audio" target="_blank" rel="noopener">Wikimedia Commons — stridor and croup cough (audio) ↗</a>\n   <a href="https://www.youtube.com/results?search_query=whooping+cough+child+sound" target="_blank" rel="noopener">YouTube — pertussis attack and whoops ↗</a>\n   <a href="https://www.youtube.com/results?search_query=patent+ductus+arteriosus+machinery+murmur" target="_blank" rel="noopener">YouTube — patent ductus arteriosus, "machinery" murmur ↗</a>\n   <a href="https://www.youtube.com/results?search_query=meningeal+signs+kernig+brudzinski+child" target="_blank" rel="noopener">YouTube — testing for meningeal signs ↗</a>\n   <a href="https://www.youtube.com/results?search_query=newborn+primitive+reflexes+examination" target="_blank" rel="noopener">YouTube — newborn reflexes ↗</a>\n  </div><p class="note">Patients and results are fictional, created for teaching purposes. Make treatment decisions only on the basis of a real clinical examination and current guidelines.</p></div></div>\n  <footer class="credit"><div class="eyebrow">Compiled by</div><b>Asadbek Axmatkulov</b><span>Tashkent State Medical University, Faculty of General Medicine No. 2 · 2026</span></footer>
+1512	<h3 style="font-size:1.05rem;margin-bottom:8px">Key age-related values</h3><div class="tbl-wrap"><table><thead><tr><th>Age</th><th>Pulse /min</th><th>Respiratory rate /min</th><th>Systolic BP</th></tr></thead><tbody>⟦0⟧</tbody></table></div>\n  <ul style="font-size:.86rem;margin:10px 0 0;padding-left:18px;color:var(--muted)">\n   <li>BP (under 1 year): systolic 76 + 2n (n = months). After 1 year: systolic 90 + 2n, diastolic 60 + n (n = years).</li>\n   <li>Tachypnea (WHO): under 2 months ≥ 60, 2–12 months ≥ 50, 1–5 years ≥ 40 /min.</li>\n   <li>Weight (2–11 years): 10.5 + 2n kg. Height: ~100 cm at 4 years, then +6 cm each year.</li>\n   <li>Puerile breathing is normal from 6 months to 5–6 years. The anterior fontanelle closes at 12–18 months.</li>\n   <li>Neonatal jaundice (Kramer): 1 — face and neck, 2 — down to the navel, 3 — down to the knees, 4 — forearms and shins, 5 — palms and soles.</li></ul>
+1513	<div class="restart ask" id="rbar"><span>All answers will be erased. Continue?</span><span style="display:flex;gap:6px"><button class="btn sm danger" id="r-yes">Yes, restart</button><button class="btn sm" id="r-no">No</button></span></div>
+1514	<div class="eyebrow">⟦0⟧</div><h3 style="font-size:1rem">⟦1⟧</h3>\n   <canvas id="wave" class="wave"></canvas><div class="phase"><span id="phase-now"></span><span>⟦2⟧</span></div>\n   <div style="display:flex;gap:8px"><button class="btn" id="replay">▶ Listen again</button><button class="btn" id="stop">■ Stop</button></div>\n   <div class="opts">⟦3⟧</div>\n   <div class="synth">Synthesized teaching sound: it differs from a real recording and teaches the main differences (pitch, duration, phase).</div>
+1515	<div class="in"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:1.3rem">Age norms</h2><button class="btn" id="cl">Close</button></div>⟦0⟧</div>

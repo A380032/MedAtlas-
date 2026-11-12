@@ -1,0 +1,1671 @@
+0	Prescription Writing and Pharmacokinetics
+1	Pharmacology: a laboratory for writing prescriptions in Latin, finding errors in prescriptions, calculating doses and modeling the pharmacokinetics of drug concentration
+2	Sections
+3	Pharmacology
+4	Prescription structure
+5	Write a prescription
+6	Find the error
+7	Calculations
+8	Pharmacokinetics
+9	PK tasks
+10	Sources
+11	Pharmacology · Topics 1–3
+12	Prescription writing and
+13	pharmacokinetics
+14	laboratory
+15	A two-part practical simulator. In the first part you write a prescription in Latin for a virtual patient, find the errors in written prescriptions and calculate doses. In the second part the concentration of a drug in the blood is shown on a graph: change the dose, route, interval, and kidney and liver function, and watch whether the drug stays in the therapeutic window.
+16	Compiled by: Asadbek Axmatkulov · ALVORA · Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd year · 2026
+17	Topics 1–2 of the KTR (prescription writing: solid, soft and liquid dosage forms) and Topic 3 (general pharmacology: pharmacokinetics and pharmacodynamics).
+18	Theophylline · 300 mg every 8 hours
+19	extended-release tablet
+20	Repeated dosing: the concentration reaches steady state, with the peak and trough inside the therapeutic window
+21	Therapeutic window
+22	Toxic zone
+23	Concentration
+24	After each dose the concentration rises and falls. After 4–5 half-lives the peak and trough stabilize: this is the steady state (Css).
+25	01 · Prescription structure
+26	The 9 parts of a prescription
+27	Click a number on the form: what the part is called, what is written in it and in which language is shown. Only parts 5, 6 and 7 are written in Latin; the rest are in the national language.
+28	How dosage forms are written in a prescription
+29	After Rp. comes the accusative or genitive case
+30	Dosage form
+31	Nominative
+32	In the prescription
+33	Example
+34	Tablet
+35	=
+36	Tabulettas (accusative, plural)
+37	Rp.: Tabulettas Paracetamoli 0.5 N. 20
+38	Capsule
+39	=
+40	=
+41	Rp.: Omeprazoli 0.02
+42	=
+43	Solution
+44	=
+45	=
+46	Rp.: Solutionis Diclofenaci natrii 2.5% — 3 ml
+47	Suspension
+48	=
+49	=
+50	=
+51	Tincture
+52	=
+53	=
+54	=
+55	Ointment
+56	=
+57	=
+58	Rp.: Unguenti Tetracyclini ophthalmici 1% — 10.0
+59	Suppository
+60	=
+61	Suppositorium cum + ablative
+62	Rp.: Suppositorium cum Paracetamolo 0.25
+63	Main abbreviations
+64	Abbreviation
+65	Full form
+66	Meaning
+67	=
+68	=
+69	Take
+70	=
+71	=
+72	Give. Label.
+73	=
+74	=
+75	Give … such doses
+76	=
+77	=
+78	Mix, to make
+79	=
+80	=
+81	In ampoules · in capsules · in tablets
+82	=
+83	=
+84	As much as needed
+85	=
+86	up to …
+87	Remember
+88	Doses are written in grams (as a decimal fraction) or in milliliters:
+89	(but not “500” or “.5”),
+90	(but not “1”). Moving the decimal point one place changes the dose 10-fold. For officinal drugs (tincture, Validol) the concentration is not written.
+91	02 · Writing a prescription
+92	Write a prescription for a virtual patient
+93	67 cases across the 18 pharmacology topics: the drugs, doses and signatures are taken from the prescription samples in the manual. Read the patient's condition and assemble the prescription part by part: choose an option for each blank. Your choices appear on the form immediately. At the end the “Check” button grades each part and explains the cause of any error.
+94	Case:
+95	Check
+96	Start over
+97	Next case →
+98	03 · Find the error
+99	Mark the errors in the prescription
+100	Each prescription contains one or more errors. Click the parts you consider erroneous to mark them, then press “Check”. Green: an error found correctly. Red: a part that was actually correct. Yellow frame: an error that was missed.
+101	Next prescription →
+102	04 · Calculations
+103	Calculating percentages, mg/mL and a child's dose
+104	Type the answer as a number (a decimal fraction with a comma or a point). The solution is shown step by step after each problem.
+105	Formulas
+106	Mass from percentage:
+107	substance (g) = total mass or volume × percentage / 100
+108	mg/mL from percentage:
+109	multiply the percentage by 10: 1% = 10 mg/mL, 2.5% = 25 mg/mL, 0.1% = 1 mg/mL
+110	Percentage from ratio:
+111	1:1000 = 0.1%, 1:5000 = 0.02% (percentage = 100 / the second number of the ratio)
+112	Volume:
+113	required volume (mL) = required dose (mg) / concentration (mg/mL)
+114	Child's dose:
+115	dose = mg/kg × body weight (kg)
+116	Steady state:
+117	Css is reached at about 4–5 × t½
+118	05 · Pharmacokinetics laboratory
+119	The drug in the blood: absorption, distribution, elimination
+120	Choose the drug, route, dose and interval. The graph shows the concentration in the patient's blood. The green band is the therapeutic window, the red zone the toxic level. Move a finger or the mouse over the graph to see the concentration at any time.
+121	Drug
+122	Route of administration
+123	Dose
+124	Interval (τ)
+125	Duration
+126	Body weight:
+127	70 kg
+128	Kidney (CrCl)
+129	Liver
+130	Other drug
+131	Start with a loading dose
+132	Save for comparison
+133	Delete saved
+134	Move over the graph
+135	Concentration–time graph
+136	Parameters
+137	The path of the drug in the body
+138	The selected route is highlighted
+139	About the model
+140	The simulator is based on a one-compartment pharmacokinetic model: average literature parameters for adults are used. For phenytoin, saturable (Michaelis–Menten) elimination is used. In a real patient the values vary widely, so this is a teaching tool: in treatment the dose is chosen from the instructions, clinical guidelines and measured blood concentrations.
+141	06 · Pharmacokinetics tasks
+142	Adjust the dose to the patient
+143	15 tasks. In each task the “Load the condition” button sets the laboratory to the required state. Then change the settings and grade the result with “Check”.
+144	07 · Sources
+145	References used
+146	Asadbek Axmatkulov. Pharmacology: a manual for practical sessions, topics 1–3 (ALVORA Med, 2026).
+147	Z.Z. Xakimov, M.J. Allayeva et al. Fundamentals of Prescription Writing. Tashkent, 2020.
+148	S.S. Azizova. Pharmacology. Tashkent, 2006.
+149	=
+150	=
+151	D.E. Golan et al. Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 4th ed., 2017.
+152	=
+153	ALVORA Med · Prescription Writing and Pharmacokinetics Simulator
+154	© 2026 Asadbek Axmatkulov · TSMU, Faculty of General Medicine No. 2
+155	=
+156	Stamp
+157	The stamp and code of the medical institution. It shows in which institution the prescription was written.
+158	=
+159	Date
+160	The day, month and year the prescription was written. The prescription's validity period is counted from this date.
+161	=
+162	Patient
+163	The patient's surname, first name, patronymic and age. For children the age must always be shown: it is needed to check the dose.
+164	=
+165	Physician
+166	The surname, first name and patronymic of the physician who wrote the prescription.
+167	=
+168	Invocation
+169	The physician's address to the pharmacist: Rp.: (Recipe — take). Every drug begins with a new Rp.
+170	=
+171	Drug and quantity
+172	The dosage form, the name of the drug substance (in the genitive case) and the quantity. The quantity is written in grams as a decimal fraction (0.5) or in milliliters.
+173	=
+174	Instruction to the pharmacist
+175	Instruction to the pharmacist about the dosage form and the quantity to dispense: M.f. (mix, to make), D.t.d. N. (give … such doses), D.S. (give, label).
+176	=
+177	Method of use
+178	How the patient should use the drug: the single amount, how many times a day, when in relation to meals, the route and duration. Vague words such as “internally” or “as known” are not written.
+179	=
+180	Signature and seal
+181	The physician's signature and personal seal. Without them the prescription is not valid.
+182	Paracetamol, tablet
+183	Patient A., 30 years old
+184	Acute respiratory viral infection. Temperature 38.8 °C, headache. No liver disease, does not drink alcohol.
+185	Prescribe paracetamol as an antipyretic and analgesic in 0.5 g tablets (20 pieces). Write it in the abbreviated form.
+186	=
+187	Correct: after Rp. (take), a tablet is written in the accusative plural.
+188	=
+189	This is the nominative (plural). After Rp. the accusative is needed: Tabulettas.
+190	=
+191	This is the ablative (in tabulettis, used in the expanded-form instruction). In the abbreviated form, Tabulettas is written.
+192	Name of the substance
+193	=
+194	Correct: the substance name is in the genitive (Paracetamolum → Paracetamoli).
+195	=
+196	Nominative. The name of the drug substance is written in the genitive in a prescription: Paracetamoli.
+197	=
+198	Ablative: only after “cum”, for example in a suppository (Suppositorium cum Paracetamolo).
+199	Correct: 0.5 g = 500 mg.
+200	In a prescription the dose is written in grams as a decimal fraction; writing “500” is an error: it should be 0.5.
+201	5.0 g = 5000 mg: 10 times more in one tablet. This is close to a dose that causes fatal liver injury.
+202	0.05 g = 50 mg: 10 times less, no effect.
+203	=
+204	Instruction
+205	Correct: in the abbreviated form the number is shown on the Rp. line (N. 20), so only D.S. (give, label) is written.
+206	=
+207	D.t.d. is written in the expanded form. Here the number of tablets is already shown on the Rp. line and is not written twice.
+208	=
+209	M. (Misce — mix) is written only for dosage forms that are mixed up in the pharmacy. A ready-made tablet is not mixed.
+210	Take 1 tablet when the temperature rises above 38.5 °C; at least 4–6 hours between doses; no more than 8 tablets (4.0 g) per day.
+211	Correct: the single amount, the indication, the interval and the maximum daily dose are clearly written.
+212	Take 2 tablets every 2 hours.
+213	That is up to 12 g per day: the maximum daily dose for adults is 4 g. Such a dose leads to liver necrosis.
+214	Take when the temperature rises.
+215	The single amount, the interval between doses and the maximum daily dose are not given: the patient may choose the dose and overdose.
+216	Internally.
+217	“Internally” is a vague signature. How much, how many times a day and for how long must be stated precisely.
+218	At high doses paracetamol forms a toxic metabolite (NAPQI) in the liver. In adults the single dose is 0.5–1.0 g, the maximum daily dose 4.0 g. In liver disease and alcoholism the daily dose is reduced.
+219	Omeprazole, capsule (expanded form)
+220	Patient B., 45 years old
+221	Duodenal ulcer, Helicobacter pylori test positive. An eradication regimen (omeprazole + amoxicillin + clarithromycin) is being prescribed for 14 days.
+222	Write the omeprazole of the regimen: 20 mg twice a day, 14 days. In the expanded form: the dose on the Rp. line, the number of capsules in D.t.d.
+223	=
+224	Correct: genitive (Omeprazolum → Omeprazoli).
+225	=
+226	Nominative. After Rp. the substance name is written in the genitive.
+227	=
+228	Ablative: used after “cum”, not needed here.
+229	Correct: 0.02 g = 20 mg.
+230	0.2 g = 200 mg: 10 times more.
+231	=
+232	The word “mg” is not written in a prescription: the dose is in grams as a decimal fraction (0.02).
+233	2.0 g = 2000 mg: 100 times more.
+234	Correct: 2 capsules a day × 14 days = 28 capsules, dispense in capsules.
+235	=
+236	14 capsules last only 7 days: twice a day × 14 days = 28 pieces are needed.
+237	=
+238	The dosage form is a capsule, so “in capsulis” is written, not “in tabulettis”.
+239	In the expanded form the number of doses to dispense is shown with D.t.d. N.; D.S. alone is not enough.
+240	Take 1 capsule twice a day, in the morning and evening, 30 minutes before meals, for 14 days.
+241	Correct: proton pump inhibitors block active (meal-activated) pumps, so they are taken 30–60 minutes before meals.
+242	Take 1 capsule twice a day after meals for 14 days.
+243	Proton pump inhibitors are taken 30–60 minutes before meals: then they effectively block the pumps activated by food.
+244	Take 1 capsule once a day for 3 days.
+245	In an eradication regimen omeprazole is given twice a day for 10–14 days. 3 days is not enough; the risk of resistance and relapse increases.
+246	Vague signature: the amount, number, relation to meals and duration are not written.
+247	In the expanded form the amount of one dose is written on the Rp. line and the number of doses with D.t.d. N. The abbreviated form: Rp.: Capsulas Omeprazoli 0.02 N. 28 / D.S. …
+248	Diclofenac, solution in ampoules
+249	Patient V., 38 years old
+250	Acute lumbago (low back pain), severe pain. No gastric ulcer, kidney disease or asthma.
+251	Prescribe 5 ampoules of diclofenac sodium 2.5% solution, 3 mL each: once a day intramuscularly.
+252	Correct: Solutio → genitive Solutionis (take of the solution).
+253	Nominative. After Rp. a solution is written in the genitive: Solutionis.
+254	=
+255	Accusative. A solution is written in the genitive in a prescription.
+256	=
+257	Correct: both words are in the genitive.
+258	=
+259	Nominative. The correct form: Diclofenaci natrii.
+260	=
+261	Natrio is the ablative. The genitive is natrii.
+262	Concentration and volume
+263	2.5% — 3 ml
+264	Correct: 25 mg/mL × 3 mL = 75 mg per ampoule.
+265	=
+266	25% = 250 mg/mL: one ampoule would contain 750 mg, 10 times more.
+267	2.5% — 30 ml
+268	For a solution in ampoules the volume of a single ampoule is written (3 mL), and the number goes in D.t.d. N.
+269	=
+270	Correct: dispense 5 ampoules.
+271	For drugs in ampoules the number of ampoules is shown with D.t.d. N. … in ampullis.
+272	=
+273	The dosage form is a solution in ampoules: “in ampullis” is written.
+274	Inject 3 mL once a day deep intramuscularly, 5 days.
+275	Correct: diclofenac solution in ampoules is injected deep intramuscularly; parenteral use is usually limited to 2–5 days.
+276	Inject 3 mL as an intravenous bolus.
+277	Diclofenac in ampoules is not given as an intravenous bolus; it is injected deep intramuscularly.
+278	Inject 3 mL subcutaneously.
+279	Subcutaneous injection is not intended: there is a risk of severe local irritation and tissue damage.
+280	Intramuscularly.
+281	Vague: the amount, number and duration are not written.
+282	Percentage form: 2.5% = 2.5 g / 100 mL = 25 mg/mL. When NSAIDs are given parenterally, gastrointestinal, renal and cardiovascular risks are taken into account.
+283	Amoxicillin, suspension for a child
+284	Patient G., 4 years old, 16 kg
+285	Streptococcal tonsillitis (group A beta-hemolytic streptococcus, rapid test positive). No penicillin allergy.
+286	Prescribe amoxicillin suspension (250 mg/5 mL), 5 mL three times a day for 10 days. Calculate the total volume required.
+287	Correct: Suspensio → Suspensionis.
+288	This is a solution. Amoxicillin is suspended as particles that do not dissolve in water: this is a suspension.
+289	Nominative. In a prescription the genitive is used: Suspensionis.
+290	=
+291	=
+292	Correct: 5 mL × 3 times × 10 days = 150 mL.
+293	=
+294	50 mL lasts only 3 days. 5 mL × 3 × 10 days = 150 mL is needed.
+295	=
+296	Calculation error: 5 × 3 × 10 = 150 mL, not 1500.
+297	Shake before use. Take 5 mL three times a day for 10 days.
+298	Correct: for a suspension “shake before use” must be written. The daily dose of 750 mg ≈ 47 mg/kg is in line with the ~50 mg/kg recommended for streptococcal tonsillitis.
+299	Take 5 mL three times a day for 10 days.
+300	In the signature of a suspension “Shake before use” must be written: if it is not shaken the particles settle and the dose will be wrong.
+301	Shake before use. Take 5 mL once a day for 10 days.
+302	250 mg per day ≈ 16 mg/kg: not enough. Amoxicillin acts in a time-dependent way and has a short t½ (~1 hour): it is given 2–3 times a day.
+303	Shake before use. Take 5 mL three times a day for 3 days.
+304	In streptococcal tonsillitis penicillins are given for 10 days to prevent rheumatic fever.
+305	A suspension must not be given intravenously. A child's dose is always checked per mg/kg: 16 kg × 50 mg/kg = 800 mg/day.
+306	Eye drops for glaucoma
+307	Patient D., 62 years old
+308	Open-angle glaucoma, intraocular pressure 30 mm Hg. The ophthalmologist recommended a muscarinic agonist.
+309	Prescribe 10 mL of pilocarpine hydrochloride 1% solution as eye drops.
+310	=
+311	Correct: a muscarinic agonist constricts the pupil, improves the outflow of aqueous humor and lowers the pressure.
+312	=
+313	Dangerous error! Atropine is a muscarinic antagonist: it dilates the pupil and impedes the outflow of aqueous humor. It is contraindicated in glaucoma and can trigger an acute glaucoma attack.
+314	=
+315	Nominative. In the genitive: Pilocarpini hydrochloridi.
+316	=
+317	Correct: pilocarpine eye drops come in 1–2%.
+318	=
+319	10% pilocarpine eye drops are not used: risk of a strong systemic muscarinic effect (bradycardia, bronchospasm, salivation).
+320	=
+321	1 mL does not last even a few days; eye drops are prescribed in a 5–10 mL bottle.
+322	Eye drops. Instill 1–2 drops into both eyes three times a day.
+323	Correct: the route, the amount and the number are shown.
+324	Take 20 drops three times a day by mouth.
+325	These are eye drops: not for drinking.
+326	Instill into the eye.
+327	Vague: how many drops and how many times a day are not written.
+328	Eye drops are prepared sterile. To reduce systemic absorption, after instillation the inner corner of the eye is pressed for 1–2 minutes.
+329	Eye ointment
+330	Patient E., 25 years old
+331	Bacterial blepharoconjunctivitis: eyelid redness, purulent discharge. No antibiotic allergy.
+332	Prescribe 10.0 g of tetracycline 1% eye ointment.
+333	Correct: Unguentum → Unguenti.
+334	Nominative. In a prescription the genitive: Unguenti.
+335	=
+336	Ablative. In a prescription the genitive: Unguenti.
+337	Substance, concentration and quantity
+338	Tetracyclini ophthalmici 1% — 10.0
+339	Correct: the eye ointment is 1% and sterile; the word “ophthalmici” is added.
+340	Tetracyclini 3% — 10.0
+341	3% tetracycline ointment is intended for the skin and is not put in the eye. For the eye a 1% ophthalmici ointment is prescribed.
+342	=
+343	An ointment is measured by mass (in grams): 10.0.
+344	Apply behind the lower eyelid three times a day, 7 days.
+345	Correct: the site of application, the number and the duration are exact.
+346	Apply to the eye.
+347	Vague: where, how many times a day and for how long are not written.
+348	Apply a thick layer to the skin three times a day.
+349	Eye ointment is placed behind the lower eyelid.
+350	Eye dosage forms must be sterile. Systemic use of tetracycline is restricted in children under 8 years, while local eye ointment is used even in newborns.
+351	Suppository for a child
+352	Patient J., 4 years old, 17 kg
+353	Acute respiratory infection, temperature 39.0 °C, vomiting: cannot take the drug by mouth.
+354	Prescribe paracetamol in 0.25 g rectal suppositories (10 pieces).
+355	=
+356	Correct: after the preposition “cum” (with) the substance name is written in the ablative.
+357	After “cum” the ablative is needed, not the genitive: Paracetamolo.
+358	Nominative. After “cum” the ablative: Paracetamolo.
+359	Correct: 250 mg ≈ 15 mg/kg (17 kg); the single dose for children is 10–15 mg/kg.
+360	2.5 g = 2500 mg ≈ 147 mg/kg in one dose: a toxic dose that damages the liver.
+361	25 mg ≈ 1.5 mg/kg: no effect.
+362	=
+363	Correct: dispense 10 such suppositories.
+364	The number of suppositories is not shown: write D.t.d. N. 10.
+365	=
+366	M.f. pulvis — “let a powder be made”. Here the dosage form is a suppository.
+367	Insert 1 suppository into the rectum when the temperature is above 38.5 °C; not more than 4 times a day, at least 6 hours apart.
+368	Correct: at most 1.0 g per day ≈ 59 mg/kg, which does not exceed the permitted daily dose for children (60 mg/kg).
+369	Take 1 suppository three times a day.
+370	A suppository is not taken by mouth: it is inserted into the rectum.
+371	Insert 1 suppository every 2 hours when the temperature is raised.
+372	Every 2 hours, 12 suppositories a day = 3.0 g ≈ 176 mg/kg: toxic. The interval must be at least 6 hours.
+373	For a suppository the dose of the active substance is written for one suppository. If the base is not stated, rectal suppositories are prepared on a 3.0 g base.
+374	Ceftriaxone, powder in a vial
+375	Patient Z., 50 years old, 72 kg
+376	Community-acquired pneumonia, moderately severe. No allergy to penicillins or cephalosporins. No allergy to lidocaine.
+377	Prescribe ceftriaxone in 1.0 g vials for 7 days: once a day intramuscularly, dissolved in 1% lidocaine.
+378	=
+379	Correct: genitive (Ceftriaxonum → Ceftriaxoni).
+380	=
+381	Nominative. The correct form: Ceftriaxoni.
+382	=
+383	Ablative. The correct form: Ceftriaxoni.
+384	Correct: 1.0 g in one vial.
+385	10 g: 10 times more. In adults the daily dose is usually 1–2 g, maximum 4 g.
+386	A whole number is not written without a digit after the decimal point: 1.0.
+387	=
+388	Correct: 7 vials for 7 days.
+389	=
+390	Ceftriaxone is supplied in vials (sterile powder), not in ampoules.
+391	The number of vials is shown with D.t.d. N.
+392	Dissolve the powder in the vial in 3.5 mL of 1% lidocaine solution and inject deep intramuscularly once a day, 7 days.
+393	Correct: ceftriaxone dissolved in lidocaine is given only intramuscularly.
+394	Dissolve the powder in 1% lidocaine solution and inject intravenously once a day.
+395	Dangerous error! Ceftriaxone diluted with lidocaine is given only intramuscularly; for intravenous use it is dissolved in water for injection.
+396	Dissolve the powder in Ringer's solution and give by intravenous drip.
+397	Mixing ceftriaxone with calcium-containing solutions (Ringer's) is prohibited: a calcium–ceftriaxone precipitate forms in the lungs and kidneys.
+398	A separate prescription is written for the lidocaine solution, and the two prescriptions are separated by the # sign: # Rp.: Solutionis Lidocaini 1% — 3.5 ml / D.t.d. N. 7 in ampullis / S. To dissolve ceftriaxone.
+399	Valerian tincture
+400	Patient I., 40 years old
+401	Irritability, mild difficulty falling asleep. No comorbidities, does not drink alcohol.
+402	Prescribe 30 mL of valerian tincture: 20–25 drops three times a day.
+403	Correct: Tinctura → Tincturae.
+404	Nominative. In a prescription the genitive: Tincturae.
+405	=
+406	Accusative. In a prescription the genitive: Tincturae.
+407	Name and quantity
+408	=
+409	Correct: a tincture is an officinal drug, and its concentration is not written in the prescription.
+410	=
+411	Even if valerian tincture is prepared in a 1:5 ratio, it is an officinal drug: its concentration is not written in the prescription.
+412	=
+413	300 mL is far too much for a tincture taken as 20–25 drops three times a day: usually 25–30 mL is written.
+414	Take 20–25 drops three times a day.
+415	Correct.
+416	Take 20–25 mL three times a day.
+417	mL instead of drops: this is 20 times more (1 mL ≈ 20 drops). Almost the whole bottle would be taken in one dose.
+418	Take when sleep does not come.
+419	Vague: the amount and number are not written.
+420	Alcoholic tinctures are prescribed with caution to drivers and to patients who must avoid alcohol.
+421	Dexamethasone, mass–volume form
+422	Patient K., 33 years old
+423	Moderate acute exacerbation of bronchial asthma. After an inhaled bronchodilator, a short course of a systemic glucocorticoid is being prescribed.
+424	Prescribe 10 ampoules of dexamethasone solution containing 0.004 g (4 mg) per 1 mL (in mass–volume form).
+425	=
+426	Correct: genitive.
+427	=
+428	Nominative. The correct form: Dexamethasoni.
+429	Mass and volume
+430	0.004 — 1 ml
+431	Correct: mass–volume form: 0.004 g (4 mg) of substance in 1 mL of solution.
+432	0.4 — 1 ml
+433	0.4 g = 400 mg in one ampoule: 100 times more.
+434	4.0 — 1 ml
+435	4 g: 1000 times more.
+436	=
+437	Inject 1 mL once or twice a day, slowly intravenously or intramuscularly.
+438	Correct: the amount, the number and the route are shown.
+439	Inject intravenously.
+440	Vague: the single dose and the number of times a day are not written.
+441	Inject 10 mL as an intravenous push.
+442	10 mL = 10 ampoules (40 mg) at once: more than prescribed, and all the ampoules run out on the very first day.
+443	The mass–volume form equals the percent form: 0.004 g / 1 mL = 4 mg/mL = 0.4%.
+444	Hypertension and bronchial asthma
+445	Patient L., 58 years old
+446	Arterial hypertension, BP 165/100 mm Hg. Comorbidity: bronchial asthma. No edema, heart rate 76/min.
+447	Prescribe a suitable antihypertensive drug, 30 tablets.
+448	=
+449	Correct: a calcium channel blocker does not affect the bronchi and is safe in asthma.
+450	=
+451	Dangerous error! Propranolol is a nonselective beta-blocker: it also blocks β2 receptors in the bronchi and causes bronchospasm. Contraindicated in bronchial asthma.
+452	=
+453	Nominative. The correct form: Amlodipini.
+454	Correct: 5 mg, the starting dose.
+455	0.05 g = 50 mg: 5 times the maximum daily dose (10 mg).
+456	5 g: a thousand times more.
+457	=
+458	Take 1 tablet once a day in the morning; taken continuously, monitor BP.
+459	Correct: the t½ of amlodipine is 35–50 hours, so once a day is enough; hypertension is treated continuously.
+460	Take 1 tablet 3 times a day.
+461	Amlodipine is long-acting (t½ 35–50 hours): it is given once a day. Three times a day leads to dose accumulation and hypotension.
+462	Take 1 tablet when you have a headache.
+463	Arterial hypertension is treated continuously; the drug is not taken only when symptoms appear.
+464	When choosing a drug, comorbidities are taken into account: in bronchial asthma nonselective beta-blockers are contraindicated.
+465	Paracetamol for fever in adults
+466	Rp.: Tabulettas Paracetamoli 0.5 N. 20\nD.S. Take 1 tablet when the temperature rises above 38.5 °C; no more than 4 times a day.
+467	The name of the substance is written in the genitive case: Paracetamoli.
+468	The dose is written in grams as a decimal fraction: 0.5.
+469	“Internally” is a vague signature: the amount, the frequency and the duration must be written.
+470	Calcium chloride for hypocalcemia
+471	Rp.: Solutionis Calcii chloridi 10% — 10 ml\nD.t.d. N. 10 in ampullis\nS. Inject 10 mL once a day intravenously, slowly (over 2–3 minutes).
+472	=
+473	=
+474	10 mL per dose
+475	once a day
+476	intramuscularly
+477	Calcium chloride is given only slowly intravenously: if injected intramuscularly or subcutaneously it causes tissue necrosis.
+478	to be injected.
+479	Paracetamol suppository for a child
+480	Rp.: Suppositorium cum Paracetamolo 0.25\nD.t.d. N. 10\nS. Insert 1 suppository into the rectum three times a day.
+481	After “cum” the ablative case is used: Paracetamolo.
+482	1 suppository
+483	three times a day
+484	to be taken by mouth.
+485	A suppository is not swallowed: it is inserted into the rectum.
+486	Camphor oil solution
+487	Rp.: Solutionis Camphorae oleosae 20% — 2 ml\nD.t.d. N. 10 in ampullis\nS. Inject 2 mL subcutaneously twice a day.
+488	=
+489	=
+490	2 mL per dose
+491	twice a day
+492	Oil solutions are not injected intravenously: risk of fat embolism. Camphor oil solution is injected subcutaneously.
+493	Rp.: Tincturae Valerianae 30 ml\nD.S. Take 20–25 drops three times a day.
+494	=
+495	A tincture is an officinal drug: its concentration is not written in the prescription.
+496	=
+497	Omeprazole in an eradication regimen
+498	Rp.: Omeprazoli 0.02\nD.t.d. N. 28 in capsulis\nS. Take 1 capsule twice a day, 30 minutes before meals, for 14 days.
+499	=
+500	=
+501	The dosage form is a capsule: in capsulis.
+502	1 capsule twice a day
+503	after meals
+504	Proton pump inhibitors are taken 30–60 minutes before meals.
+505	to be taken for 14 days.
+506	Ceftriaxone intramuscularly
+507	Rp.: Ceftriaxoni 1.0\nD.t.d. N. 7\nS. Dissolve the powder in 3.5 mL of 1% lidocaine solution and inject deep intramuscularly once a day.
+508	Dissolve the powder in 3.5 mL of 1% lidocaine solution,
+509	Ceftriaxone dissolved in lidocaine is given only intramuscularly.
+510	Rp.: Unguenti Tetracyclini ophthalmici 1% — 10.0\nD.S. Apply behind the lower eyelid three times a day.
+511	=
+512	The 3% ointment is for the skin. For the eye a 1% sterile eye ointment is prescribed: Tetracyclini ophthalmici 1%.
+513	Apply behind the lower eyelid three times a day.
+514	Atropine in ampoules
+515	Rp.: Solutionis Atropini sulfatis 0.1% — 1 ml\nD.t.d. N. 6 in ampullis\nS. Inject 1 mL subcutaneously.
+516	Atropine for injection comes as 0.1% (1 mg/mL). 1% is 10 times more, a List A toxic substance.
+517	=
+518	=
+519	Inject 1 mL subcutaneously.
+520	Amlodipine for hypertension
+521	Rp.: Tabulettas Amlodipini 0.005 N. 30\nD.S. Take 1 tablet once a day in the morning.
+522	After Rp. the accusative case is used: Tabulettas.
+523	0.05 g = 50 mg: 5 times the maximum daily dose (10 mg). The correct form: 0.005.
+524	1 tablet
+525	Amlodipine is long-acting (t½ 35–50 hours): it is taken once a day.
+526	10% zinc ointment, 30.0 g. How many grams of zinc oxide does it contain?
+527	Formula: substance = total mass × percentage / 100
+528	30 × 10 / 100 = 3.0 g
+529	How many mg of lidocaine are in 1 mL of 2% lidocaine solution?
+530	2% = 2 g / 100 mL = 2000 mg / 100 mL
+531	= 20 mg/mL (or percentage × 10 = 20 mg/mL)
+532	How many mg of diclofenac are in a 2.5% — 3 mL ampoule of diclofenac sodium?
+533	2.5% = 25 mg/mL
+534	25 mg/mL × 3 mL = 75 mg
+535	How many mg of atropine are in 1 mL of 0.1% atropine sulfate solution?
+536	0.1% = 0.1 g / 100 mL = 100 mg / 100 mL
+537	= 1 mg/mL
+538	A child weighs 18 kg. The single dose of paracetamol is 15 mg/kg. How many mg are given?
+539	Dose = mg/kg × weight
+540	15 × 18 = 270 mg
+541	Paracetamol syrup 120 mg/5 mL. How many mL of syrup are needed to give 240 mg?
+542	Concentration: 120 mg / 5 mL = 24 mg/mL
+543	Volume = 240 / 24 = 10 mL
+544	Gentamicin 3 mg/kg/day, patient 70 kg, the daily dose is given in 3 divided doses. What is the single dose in mg?
+545	Daily dose: 3 × 70 = 210 mg
+546	Single dose: 210 / 3 = 70 mg
+547	Nitrofural (furacilin) solution 1:5000. What percentage is this?
+548	1:5000 = 1 g of substance in 5000 mL
+549	Percentage = 100 / 5000 = 0.02%
+550	How many grams of glucose are in 20 mL of 40% glucose solution?
+551	Substance = volume × percentage / 100
+552	20 × 40 / 100 = 8 g
+553	Amoxicillin suspension 250 mg/5 mL: 5 mL three times a day, 10 days. At least how many mL of suspension are needed?
+554	Per day: 5 mL × 3 = 15 mL
+555	For 10 days: 15 × 10 = 150 mL
+556	Insulin 100 units/mL. The patient needs 12 units. How many mL?
+557	Volume = dose / concentration
+558	12 / 100 = 0.12 mL (12 divisions on an insulin syringe)
+559	Theophylline t½ is 8 hours. About how many hours does it take to reach steady-state concentration with constant dosing? (5 × t½ rule)
+560	Css is reached at 4–5 × t½
+561	5 × 8 = 40 hours (at 4 × 8 = 32 hours, ~94%)
+562	The patient weighs 70 kg and took 10 g of paracetamol. How many mg/kg is this? (round to a whole number)
+563	=
+564	10 g = 10,000 mg
+565	10,000 / 70 ≈ 143 mg/kg
+566	In adults, ingestion of about 150 mg/kg or more carries a high risk of liver damage: the blood concentration is measured and a decision is made about the antidote (acetylcysteine).
+567	By mouth
+568	Intravenous (infusion)
+569	Intramuscular
+570	Rectal (suppository)
+571	Theophylline
+572	By mouth (retard tablet)
+573	Intravenous (infusion, theophylline equivalent)
+574	mg/L
+575	No
+576	Ciprofloxacin or erythromycin (CYP1A2 inhibitor)
+577	Smoking or rifampin (inducer)
+578	Bronchodilator. Narrow therapeutic window: 10–20 mg/L (5–15 in some guidelines). Above 20 mg/L: tachycardia, vomiting, arrhythmia and seizures. Metabolized mainly in the liver (CYP1A2).
+579	Digoxin
+580	ng/mL
+581	Amiodarone or verapamil (P-glycoprotein inhibitor)
+582	Cardiac glycoside. Very narrow therapeutic window: 0.5–2.0 ng/mL. Above 2 ng/mL: bradycardia, arrhythmia, nausea, yellow-green color vision. Excreted mainly by the kidneys; Vd is very large (accumulates in tissues).
+583	Gentamicin
+584	Aminoglycoside. With conventional dosing the effective peak is 5–10 mg/L and the trough should be below 2 mg/L: if the trough is high, nephrotoxic and ototoxic effects increase. Excreted almost entirely by the kidneys. Nowadays it is often dosed once a day at 5–7 mg/kg.
+585	Paracetamol
+586	Antipyretic and analgesic. Effective concentration is about 10–20 mg/L: to reduce fever it is important that the peak reaches this window; the drug is given as needed. Maximum daily dose is 4 g in adults and 60 mg/kg in children. In overdose a toxic metabolite (NAPQI) accumulates in the liver; the antidote is acetylcysteine.
+587	Phenytoin
+588	Fluconazole or isoniazid (inhibitor)
+589	Anticonvulsant. Therapeutic window 10–20 mg/L: above 20 nystagmus, above 30 ataxia. Elimination is saturable (zero-order kinetics): a small dose increase raises the concentration sharply.
+590	Amoxicillin
+591	Probenecid (reduces renal secretion)
+592	Beta-lactam antibiotic. Time-dependent action: what matters is the time the concentration stays above the microorganism's minimum inhibitory concentration (MIC). For penicillins the goal is C > MIC for at least 40–50% of the dosing interval. The MIC = 2 mg/L on the graph is taken as an example.
+593	Normal (≥90 mL/min)
+594	Mildly reduced (60–89)
+595	Moderate (30–59)
+596	Severe (15–29)
+597	End-stage (<15)
+598	Normal
+599	Moderately impaired (Child-Pugh B)
+600	Severely impaired (Child-Pugh C)
+601	Almost not absorbed from the gut
+602	Aminoglycosides are polar molecules: less than 1% enters the blood when taken by mouth. In systemic infection they are given intravenously or intramuscularly; by mouth they are used only for intestinal decontamination.
+603	No steady state: the concentration keeps rising
+604	The input rate (⟦0⟧ mg/day) is greater than the maximum elimination rate (Vmax ≈ ⟦1⟧ mg/day). Elimination is saturated and the drug keeps accumulating.
+605	Peak at a toxic level
+606	Peak ⟦0⟧⟦1⟧ > ⟦2⟧⟦3⟧.
+607	Trough concentration is high
+608	Before the next dose ⟦0⟧⟦1⟧ > ⟦2⟧⟦3⟧: risk of nephrotoxicity and ototoxicity. Lengthen the interval or reduce the dose.
+609	Peak is low
+610	Peak ⟦0⟧⟦1⟧ < ⟦2⟧⟦3⟧: the bactericidal effect may be insufficient.
+611	On target
+612	Peak ⟦0⟧⟦1⟧ (5–10), trough ⟦2⟧⟦3⟧ (< 2).
+613	Time-dependent effect is sufficient
+614	For ⟦0⟧% of the dosing interval the concentration is above the MIC (⟦1⟧⟦2⟧) (goal ≥ ⟦3⟧%).
+615	Little time above the MIC
+616	Only ⟦0⟧% (goal ≥ ⟦1⟧%). Giving the daily dose in more divided doses is more effective than increasing it.
+617	Does not reach the effective concentration
+618	Peak ⟦0⟧⟦1⟧ < ⟦2⟧⟦3⟧: the antipyretic and analgesic effect may be weak.
+619	Reaches the effective concentration
+620	Peak ⟦0⟧⟦1⟧ (effective about ⟦2⟧–⟦3⟧⟦4⟧). Paracetamol is given as needed: a decline between doses is normal.
+621	Toxic concentration
+622	Peak ⟦0⟧⟦1⟧ is above the toxic limit (⟦2⟧⟦3⟧).
+623	Below the therapeutic window
+624	Even the peak is ⟦0⟧⟦1⟧: no effect is expected.
+625	Trough below the window
+626	Peak ⟦0⟧, trough ⟦1⟧⟦2⟧: between doses the concentration falls out of the window. Shorten the interval (divide the dose).
+627	Within the therapeutic window
+628	In the last interval the concentration is ⟦0⟧–⟦1⟧⟦2⟧ (window ⟦3⟧–⟦4⟧⟦5⟧).
+629	Daily dose exceeds the permitted dose
+630	⟦0⟧ mg/day > ⟦1⟧ mg (⟦2⟧). Even if the blood concentration does not exceed the window, toxic NAPQI accumulates in the liver: risk of hepatotoxicity.
+631	4 g for adults
+632	Liver disease
+633	In liver failure, alcoholism and starvation the daily dose of paracetamol is reduced (to about 2–3 g).
+634	Steady state not yet reached
+635	For phenytoin the time to steady state depends on the dose: as the dose approaches Vmax it takes weeks. Lengthen the duration.
+636	Css is reached in about ⟦0⟧ days (5 × t½). Lengthen the duration or give a loading dose.
+637	Solid and soft dosage forms
+638	Liquid dosage forms
+639	Afferent nervous system
+640	M- and M,N-cholinoceptors
+641	N-cholinoceptors
+642	Adrenoceptors
+643	Anesthesia, neuroleptics, anxiolytics
+644	Psychostimulants, antidepressants
+645	Respiratory system
+646	Antiarrhythmic and antianginal
+647	Antihypertensives
+648	Digestive system
+649	Diuretics
+650	Blood system
+651	Hormones, anti-inflammatory
+652	Antiseptics, synthetic antibacterials
+653	Antibiotics
+654	Antituberculosis and antiviral
+655	Nominative (plural). After Rp. the accusative is needed: Tabulettas.
+656	Ablative: “in tabulettis” is used in the extended form. In the abbreviated form: Tabulettas.
+657	=
+658	Nominative (plural). After Rp. the accusative: Capsulas.
+659	=
+660	Ablative (in capsulis — in the extended form). Here: Capsulas.
+661	Nominative. In a prescription a solution is in the genitive: Solutionis.
+662	Accusative. A solution is written in the genitive: Solutionis.
+663	Nominative. The correct form: Suspensionis.
+664	This is a suspension: the substance is not dissolved, the particles remain suspended. Writing it as a solution is wrong.
+665	=
+666	Nominative. The correct form: Aerosoli.
+667	=
+668	Nominative. The correct form: Sirupi.
+669	This is a syrup (Sirupus): the dosage form is stated precisely in the prescription.
+670	=
+671	Nominative. The correct form: Cremoris.
+672	This is a cream, not an ointment: the dosage form must be written precisely.
+673	Nominative. The correct form: Unguenti.
+674	=
+675	Nominative. The correct form: Geli.
+676	This is a gel, not an ointment: the dosage form must be written precisely.
+677	To be taken by mouth.
+678	To be injected.
+679	To be instilled into the nose.
+680	To be applied.
+681	To be inhaled.
+682	To be inserted.
+683	Correct: ⟦0⟧ g = ⟦1⟧.
+684	⟦0⟧ g = ⟦1⟧: 10 times more than the required dose (⟦2⟧). The decimal point is shifted by one place.
+685	⟦0⟧ g = ⟦1⟧: 10 times less, it will have no effect.
+686	Correct: ⟦0⟧% = ⟦1⟧ mg/mL.
+687	⟦0⟧% = ⟦1⟧ mg/mL: the concentration is 10 times higher — risk of overdose.
+688	⟦0⟧% = ⟦1⟧ mg/mL: the concentration is 10 times lower, it will have no effect.
+689	The concentration is 100 times lower.
+690	Correct: the quantity is shown on the Rp. line (N.), so only D.S. is written.
+691	Correct: the drug is not divided into doses (vial, tube, canister), so only D.S. is written.
+692	=
+693	The quantity is shown on the Rp. line: it is not written twice. D.t.d. is used only in the extended form.
+694	D.t.d. (give such doses) is written only for divided dosage forms; this drug is dispensed in one container.
+695	M. (Misce — mix) is written only for compounded drugs mixed in the pharmacy; this is a ready-made drug.
+696	=
+697	The dosage form is a tablet: “in tabulettis”.
+698	The dosage form is a film-coated tablet: “in tabulettis obductis”.
+699	The dosage form is a capsule: “in capsulis”.
+700	The drug comes in ampoules: “in ampullis”.
+701	=
+702	Insulin comes in syringe pens (cartridges): “in calamis”.
+703	The drug comes in prefilled syringes: “in syringis”.
+704	This drug comes in a vial (powder or solution), not in an ampoule.
+705	in film-coated tablets
+706	in prefilled syringes
+707	Correct: give ⟦0⟧ such doses⟦1⟧.
+708	For a drug divided into doses, the number of doses to be dispensed is shown with D.t.d. N.; D.S. alone is not enough.
+709	Correct: after the verb Rp. (take) the accusative case (plural).
+710	Correct: the dosage form is in the genitive case (“take of …”).
+711	Correct: after “cum” the ablative case.
+712	Correct: the name of the substance is in the genitive case.
+713	Nominative. In a prescription the genitive case: ⟦0⟧.
+714	Correct: the amount, the number and the method of use are written clearly and safely.
+715	Vague signature: the single dose, the number of times a day, the route and the duration must be written clearly.
+716	Diclofenac gel
+717	Patient O., 52 years old
+718	Osteoarthritis of the knee joint, mechanical pain. Skin intact, no wound. Does not want an oral NSAID (stomach disease).
+719	Prescribe 50.0 g of diclofenac 1% gel (topical use).
+720	=
+721	=
+722	=
+723	Rub a thin layer into the area of the knee joint 3–4 times a day; do not use for more than 14 days.
+724	Apply a thick layer to open wounds and mucous membranes.
+725	NSAID gel is applied only to intact skin: on wounds and mucous membranes absorption and irritation increase.
+726	Topical NSAIDs reduce systemic side effects, but these persist when applied to a large area for a long time.
+727	Lidocaine, infiltration anesthesia
+728	Patient R., 34 years old, 70 kg
+729	A cut wound on a finger; local infiltration anesthesia is needed for primary surgical debridement. No allergy to anesthetics.
+730	Prescribe 10 ampoules of 10 mL of lidocaine hydrochloride 1% solution.
+731	=
+732	=
+733	For infiltration anesthesia (maximum dose without epinephrine 4.5 mg/kg).
+734	Inject up to 100 mL for infiltration anesthesia.
+735	1% = 10 mg/mL: 100 mL = 1000 mg. At 70 kg the maximum dose without epinephrine is 4.5 mg/kg ≈ 315 mg (31 mL). If exceeded — seizures, arrhythmia, cardiac arrest.
+736	Amide anesthetic. In systemic toxicity: stop the injection, give oxygen, a benzodiazepine for seizures, and lipid emulsion in severe cases.
+737	Activated charcoal
+738	Patient S., 28 years old
+739	Food poisoning: nausea, diarrhea 3 times, no fever. Also taking other drugs (a contraceptive).
+740	Prescribe 30 activated charcoal tablets of 0.25 g (in extended form).
+741	=
+742	=
+743	=
+744	Take 4–8 tablets three times a day, 2 hours apart from other drugs.
+745	Take 4–8 tablets at the same time as other drugs.
+746	The adsorbent also binds other drugs and reduces their absorption (the contraceptive effect decreases): an interval of at least 2 hours is needed.
+747	Adsorbents are more effective in the first hours of poisoning. In poisoning with acids and alkalis activated charcoal is ineffective.
+748	Tetracaine eye drops
+749	Patient T., 50 years old
+750	Measurement of intraocular pressure with a tonometer is planned: superficial anesthesia of the cornea is needed.
+751	Prescribe 5 mL of tetracaine hydrochloride 0.5% solution.
+752	=
+753	=
+754	0.5% — 5 ml
+755	Instill 1–2 drops into the eye (before an ophthalmologic procedure).
+756	Instill 5–6 times a day for 2 weeks when the eye hurts.
+757	Prolonged use of a local anesthetic in the eye damages the corneal epithelium and abolishes protective reflexes: only before a procedure.
+758	Tetracaine is a strong and toxic ester-type anesthetic, used only for superficial anesthesia.
+759	Neostigmine, intestinal atony
+760	Patient F., 60 years old
+761	Day 3 after appendectomy: abdominal distension, bowel sounds absent, no mechanical obstruction. No bronchial asthma.
+762	Prescribe 10 ampoules of 1 mL of neostigmine methylsulfate 0.05% solution.
+763	=
+764	=
+765	Atropine is an M-cholinoceptor blocker: it further suppresses bowel peristalsis and deepens the atony.
+766	0.05% — 1 ml
+767	Inject 1 mL subcutaneously 1–2 times a day (for postoperative intestinal atony).
+768	Inject 1 mL as an intravenous push.
+769	In intestinal atony it is given subcutaneously; rapid intravenous injection causes marked bradycardia and bronchospasm.
+770	Anticholinesterase drugs are contraindicated in mechanical intestinal obstruction, bronchial asthma and bradycardia. In overdose the antidote is atropine.
+771	Atropine, bradycardia
+772	Patient X., 66 years old
+773	Symptomatic sinus bradycardia: HR 38/min, BP 85/50, dizziness. No glaucoma.
+774	Prescribe 10 ampoules of 1 mL of atropine sulfate 0.1% solution.
+775	=
+776	0.1% — 1 ml
+777	Inject 0.5–1 mL intravenously (in bradycardia).
+778	Inject 10 mL intravenously.
+779	10 mL of 0.1% = 10 mg: a toxic dose (tachycardia, hyperthermia, dry skin, psychosis). In bradycardia 0.5–1 mg, up to 3 mg in total.
+780	Atropine is a List A toxic substance. Use with caution in glaucoma and prostatic hyperplasia.
+781	Tropicamide, fundus examination
+782	Patient H., 45 years old
+783	Diabetes mellitus, a fundus examination (retinopathy) is needed. No angle-closure glaucoma.
+784	Prescribe 5 mL of tropicamide 1% solution, which dilates the pupil for a short time.
+785	=
+786	=
+787	Pilocarpine constricts the pupil (miosis): the fundus becomes harder to see.
+788	=
+789	Instill 1 drop into each eye 15–20 minutes before the fundus examination.
+790	Instill into each eye three times a day for 2 weeks.
+791	Tropicamide is instilled once for diagnosis; prolonged use leads to cycloplegia and increased intraocular pressure.
+792	Tropicamide is a short-acting (4–6 hours) M-cholinoceptor blocker. After the examination the patient must not drive for a few hours.
+793	Cytisine, smoking cessation
+794	Patient Q., 42 years old
+795	Has smoked for 20 years, wants to quit. No cardiovascular disease, BP 125/80.
+796	Prescribe 100 cytisine tablets of 0.0015 g.
+797	=
+798	=
+799	=
+800	By the scheme: on days 1–3 take 1 tablet every 2 hours (6 a day), then reduce the dose gradually, taking it for 25 days in total; stop smoking completely from day 5.
+801	Take 1 tablet once a day for 25 days while continuing to smoke.
+802	Cytisine competes with nicotine at N-cholinoceptors: if smoking continues, nicotine toxicity increases. Smoking must be stopped from day 5.
+803	Cytisine is an N-cholinomimetic (partial agonist). Use with caution in arterial hypertension and severe atherosclerosis.
+804	Nicotine patch
+805	Patient P., 38 years old
+806	Smokes 20 cigarettes a day; nicotine replacement therapy was chosen.
+807	Prescribe 7 nicotine transdermal patches (15 mg/16 hours).
+808	=
+809	=
+810	15 mg/16 hours
+811	This is a transdermal patch: “in ampullis” is not written, the number of patches is shown with D.t.d. N.
+812	Every morning apply one patch to clean skin and remove it in the evening.
+813	Apply 2–3 patches at the same time and continue smoking.
+814	The nicotine dose becomes excessive: nausea, tachycardia, arrhythmia.
+815	Applying the patch to a different site each day reduces skin irritation.
+816	Azamethonium, hypertensive crisis
+817	Patient Z., 58 years old
+818	Hypertensive crisis, BP 210/120, other agents ineffective in the hospital setting.
+819	Prescribe 5 ampoules of 1 mL of azamethonium bromide 5% solution.
+820	=
+821	=
+822	=
+823	Inject 0.5–1 mL intramuscularly (in hypertensive crisis); the patient should lie down for 2 hours.
+824	Inject 1 mL intramuscularly, then the patient gets up at once and goes home.
+825	Ganglionic blockers cause severe orthostatic collapse: after the injection the patient must lie down for 2 hours.
+826	Ganglionic blockers block sympathetic and parasympathetic ganglia equally: atony of the intestine and urinary bladder, orthostatic hypotension.
+827	Epinephrine, anaphylaxis
+828	10 minutes after a bee sting: swelling of the lips and tongue, wheezing, BP 70/40, urticaria. Anaphylactic shock.
+829	Prescribe 10 ampoules of 1 mL of epinephrine hydrochloride 0.1% solution.
+830	=
+831	=
+832	=
+833	Glucocorticoids do not act within minutes: in anaphylaxis the first and main drug is epinephrine.
+834	In anaphylaxis inject 0.5 mL into the thigh muscle; if there is no effect repeat after 5 minutes.
+835	Inject 1 mL undiluted as an intravenous push.
+836	Giving 1 mg of undiluted epinephrine as an intravenous push (except in cardiac arrest) leads to ventricular fibrillation, extremely high BP and myocardial infarction. In anaphylaxis — 0.5 mg into the thigh muscle.
+837	0.1% = 1 mg/mL = 1:1000. In anaphylaxis 0.5 mg intramuscularly for adults, 0.01 mg/kg for children.
+838	Xylometazoline, rhinitis
+839	Patient Y., 25 years old
+840	Acute viral rhinitis, nasal congestion, cannot sleep. No glaucoma or arterial hypertension.
+841	Prescribe 10 mL of xylometazoline hydrochloride 0.1% solution.
+842	=
+843	=
+844	0.1% — 10 ml
+845	Instill 1–2 drops into each nostril 2–3 times a day, for no more than 5 days.
+846	Instill 1–2 drops into each nostril 3 times a day for a month.
+847	Use for longer than 5–7 days causes drug-induced rhinitis (rebound swelling, dependence) and mucosal atrophy.
+848	0.1% solution for adults, 0.05% solution for children aged 2–6 years.
+849	Bisoprolol, angina
+850	Patient M., 55 years old
+851	Exertional angina, BP 150/90, HR 88/min. No bronchial asthma or AV block.
+852	Prescribe 30 tablets of 0.005 g of a cardioselective beta-blocker.
+853	=
+854	=
+855	Nonselective beta-blocker: because of the risk of bronchospasm and peripheral vasoconstriction from β2 blockade, it gives way to cardioselective agents in angina; it is taken several times a day.
+856	Take 1 tablet once a day in the morning.
+857	Stop the drug suddenly once the condition improves.
+858	Abrupt withdrawal of a beta-blocker causes a “rebound syndrome”: risk of angina attacks and infarction. The dose is reduced gradually.
+859	On a beta-blocker, HR and BP are monitored: the goal is a resting HR of 55–60/min.
+860	Tamsulosin, prostatic hyperplasia
+861	Patient N., 64 years old
+862	Benign prostatic hyperplasia: difficulty urinating, urinates 3 times at night.
+863	Prescribe 30 tamsulosin capsules of 0.0004 g (in abbreviated form).
+864	=
+865	=
+866	=
+867	Take 1 capsule once a day after breakfast (without chewing).
+868	Chew the capsule.
+869	Modified-release capsule: if chewed, the drug is absorbed all at once — risk of orthostatic hypotension and fainting.
+870	α1A-blocker. Dizziness is possible after the first dose: get up slowly.
+871	Haloperidol, psychomotor agitation
+872	Patient V., 29 years old
+873	Acute psychosis, psychomotor agitation, danger to self and others.
+874	Prescribe 10 ampoules of 1 mL of haloperidol 0.5% solution.
+875	=
+876	=
+877	0.5% — 1 ml
+878	Inject 1 mL intramuscularly (in psychomotor agitation).
+879	If acute dystonia (torticollis, oculogyric crisis) appears, continue and increase the dose.
+880	Acute dystonia is an extrapyramidal side effect of haloperidol: the neuroleptic dose is not increased, an M-cholinoceptor blocker (biperiden) is given.
+881	0.5% = 5 mg/mL. Haloperidol can prolong the QT interval: ECG monitoring.
+882	Diazepam, anxiety
+883	Patient L., 36 years old
+884	Severe anxiety before an exam, insomnia. Drinks alcohol, drives a car.
+885	Prescribe 20 diazepam tablets of 0.005 g.
+886	=
+887	=
+888	Take 1 tablet twice a day (for no more than 2 weeks); do not drink alcohol or drive during treatment.
+889	Take 1 tablet twice a day for several months, alcohol need not be restricted.
+890	With benzodiazepines taken longer than 2–4 weeks dependence develops; together with alcohol, CNS and respiratory depression increase.
+891	In benzodiazepine overdose the antidote is flumazenil.
+892	Diazepam, seizure
+893	Patient J., 22 years old, 65 kg
+894	Tonic-clonic seizure lasting more than 5 minutes, an intravenous catheter is in place.
+895	Prescribe 10 ampoules of 2 mL of diazepam 0.5% solution.
+896	0.5% — 2 ml
+897	Inject 2 mL slowly intravenously (in seizures).
+898	Inject 2 mL rapidly as an intravenous push.
+899	Rapid injection causes respiratory center depression and apnea: give intravenously and slowly (≈5 mg/min), under respiratory monitoring.
+900	0.5% = 5 mg/mL, 2 mL = 10 mg.
+901	Amitriptyline, depression
+902	Patient E., 45 years old
+903	Moderate depression, insomnia. No glaucoma, prostatic hyperplasia or conduction disorder.
+904	Prescribe 50 amitriptyline tablets of 0.025 g.
+905	=
+906	=
+907	=
+908	Take 1 tablet in the evening, increase the dose gradually.
+909	Take 1 tablet in the morning; stop if there is no effect in 3 days.
+910	The antidepressant effect begins after 2–4 weeks; amitriptyline is a strong sedative — it is given in the evening.
+911	Tricyclic antidepressants are extremely dangerous in overdose (arrhythmia): the patient is not given a large supply.
+912	Sertraline, depression
+913	Patient I., 33 years old
+914	Depressive episode, has heart disease (a tricyclic antidepressant is not recommended). Does not take another antidepressant.
+915	Prescribe 28 sertraline film-coated tablets of 0.05 g (in abbreviated form).
+916	=
+917	=
+918	=
+919	Take 1 tablet once a day in the morning after meals.
+920	Take 1 tablet once a day together with an MAO inhibitor.
+921	SSRIs and MAO inhibitors together — serotonin syndrome: hyperthermia, muscle rigidity, seizures, risk of death.
+922	The effect of SSRIs begins in 2–4 weeks; anxiety may increase in the first weeks.
+923	Caffeine, hypotension
+924	Patient G., 70 years old
+925	Arterial hypotension, weakness, drowsiness. No arrhythmia or glaucoma.
+926	Prescribe 10 ampoules of 1 mL of caffeine sodium benzoate 20% solution.
+927	=
+928	=
+929	=
+930	Inject 1 mL subcutaneously 1–2 times a day (in hypotension).
+931	Inject 1 mL in the evening before going to sleep.
+932	Psychostimulant: given in the evening it causes insomnia. It is given in the first half of the day.
+933	Caffeine stimulates the CNS and raises vascular tone; contraindicated in arrhythmia, glaucoma and insomnia.
+934	Salbutamol aerosol
+935	Patient K., 24 years old
+936	Bronchial asthma, attacks of breathlessness 1–2 times a week. Receives an inhaled glucocorticoid as basic therapy.
+937	Prescribe a metered-dose salbutamol aerosol (100 mcg/dose, 200 doses).
+938	=
+939	=
+940	=
+941	0.0001/dosi — 200 dosi
+942	Take 1–2 inhalations during an attack of breathlessness.
+943	Even without an attack, take 2 inhalations 8 times a day regularly.
+944	Regular and frequent use of a short-acting β2-agonist reduces receptor sensitivity and masks poor control of asthma; basic therapy is an inhaled glucocorticoid.
+945	Teaching inhaler technique is mandatory: with incorrect technique the drug does not reach the bronchi.
+946	Budesonide, nebulizer
+947	Patient D., 4 years old
+948	Bronchial asthma, basic therapy is needed. Cannot use an inhaler with a spacer.
+949	Prescribe 20 units of budesonide suspension for a nebulizer (0.5 mg/mL, 2 mL).
+950	=
+951	=
+952	pro inhalationibus 0.5 mg/ml — 2 ml
+953	=
+954	This is a suspension for a nebulizer (2 mL nebules), not a tablet.
+955	Inhale 2 mL twice a day through a nebulizer (basic therapy in children); rinse the mouth after inhalation.
+956	Inject 2 mL intravenously.
+957	Nebulizer suspension is not injected intravenously: risk of particle embolism.
+958	After an inhaled glucocorticoid the mouth is rinsed: prevention of oral candidiasis.
+959	Prednisolone, asthma exacerbation
+960	Patient U., 41 years old
+961	Moderate exacerbation of bronchial asthma; inhaled bronchodilators gave insufficient effect.
+962	Prescribe 50 prednisolone tablets of 0.005 g (short course).
+963	=
+964	=
+965	Take 8–10 tablets (40–50 mg) once a day in the morning for 5 days.
+966	Take 8–10 tablets in the evening.
+967	Glucocorticoids are given once in the morning, in line with the circadian rhythm: evening dosing suppresses the hypothalamic–pituitary–adrenal axis more and causes insomnia.
+968	A short course (5–7 days) can be stopped without tapering the dose; a long course is tapered gradually.
+969	Butamirate, dry cough
+970	Patient B., 35 years old
+971	After an acute respiratory infection: dry, tormenting cough, no sputum.
+972	Prescribe 200 mL of butamirate syrup (0.15%).
+973	=
+974	=
+975	=
+976	0.15% — 200 ml
+977	Take 15 mL three times a day before meals (in dry cough).
+978	In cough with sputum take together with a mucolytic (acetylcysteine).
+979	A centrally acting antitussive stops expectoration and the sputum accumulates in the bronchi: it is not given together with mucolytics.
+980	Antitussives are used only in dry, unproductive cough.
+981	Nitroglycerin, angina attack
+982	Patient S., 62 years old
+983	Exertional angina. Does not take phosphodiesterase-5 inhibitors (sildenafil).
+984	Prescribe 40 nitroglycerin tablets of 0.0005 g.
+985	=
+986	=
+987	=
+988	In an angina attack place 1 tablet under the tongue; if it does not pass in 5 minutes repeat it and call an ambulance.
+989	In an attack swallow 1 tablet with water.
+990	When swallowed, nitroglycerin is almost completely broken down in the liver on first pass: it is placed under the tongue (acts in 1–2 minutes).
+991	Nitrates and sildenafil together — severe hypotension. During an attack it is taken sitting down.
+992	Amiodarone, arrhythmia
+993	Patient O., 68 years old
+994	Atrial fibrillation, heart failure. Amiodarone was chosen to maintain rhythm. Thyroid function is normal.
+995	Prescribe 30 amiodarone tablets of 0.2 g.
+996	=
+997	=
+998	Loading dose: 1 tablet three times a day for 1 week, then 1 tablet twice a day for 1 week, then 1 tablet a day.
+999	Take 1 tablet three times a day for months.
+1000	If it is not reduced after the loading dose, amiodarone accumulates in the tissues and causes thyroid, lung and liver toxicity.
+1001	The t½ of amiodarone is very long (40–55 days). Monitor thyroid, liver, lungs and eyes.
+1002	Digoxin, heart failure
+1003	Patient R., 72 years old
+1004	Permanent atrial fibrillation, HR 110/min, heart failure. Potassium 4.3 mmol/L, renal function is normal.
+1005	Prescribe 30 digoxin tablets of 0.00025 g.
+1006	=
+1007	=
+1008	Take 1/2–1 tablet once a day (with monitoring of pulse and potassium).
+1009	Take 2 tablets every day even if the pulse is below 50 or there is nausea.
+1010	Bradycardia, nausea, yellow-green color vision — signs of glycoside intoxication: stop the drug and consult a doctor.
+1011	Digoxin has a narrow therapeutic index. Hypokalemia increases the risk of intoxication.
+1012	Enalapril, hypertension
+1013	Patient T., 54 years old
+1014	Arterial hypertension, type 2 diabetes mellitus, microalbuminuria. Not pregnant, no history of angioedema.
+1015	Prescribe 30 enalapril tablets of 0.01 g.
+1016	=
+1017	=
+1018	Take 1 tablet 1–2 times a day.
+1019	Continue even if the lips or tongue swell.
+1020	Angioedema is a reason to stop an ACE inhibitor at once: risk of airway obstruction.
+1021	On ACE inhibitors, creatinine and potassium are monitored; a side effect is dry cough.
+1022	Hypertension in pregnancy
+1023	Patient Z., 28 years old
+1024	24 weeks of pregnancy, BP 150/95, no proteinuria.
+1025	Prescribe 50 tablets of 0.25 g of an antihypertensive that is safe in pregnancy.
+1026	=
+1027	=
+1028	ACE inhibitors are contraindicated in pregnancy: fetal kidney damage, oligohydramnios, risk of death.
+1029	Take 1 tablet 2–3 times a day.
+1030	Stop the drug suddenly once BP normalizes.
+1031	Abrupt withdrawal of centrally acting agents leads to a rebound rise in BP: the dose is reduced gradually.
+1032	In pregnancy methyldopa, nifedipine (extended-release) and labetalol are used; ACE inhibitors and sartans are not allowed.
+1033	Captopril, sharp rise in BP
+1034	Patient F., 61 years old
+1035	Uncomplicated hypertensive crisis, BP 190/110, no signs of target organ damage.
+1036	Prescribe 20 captopril tablets of 0.025 g.
+1037	=
+1038	=
+1039	When BP rises sharply, take 1 tablet chewed or under the tongue.
+1040	When BP rises, swallow 4 tablets at once.
+1041	100 mg at once — risk of sharp hypotension and ischemia; in an uncomplicated crisis BP is not lowered by more than 25% in 1 hour.
+1042	Captopril is a short-acting ACE inhibitor: long-acting ones are preferred for continuous treatment.
+1043	Antacid suspension
+1044	Patient H., 39 years old
+1045	Functional dyspepsia, heartburn. Being treated with ciprofloxacin (cystitis).
+1046	Prescribe 170 mL of “Almagel” suspension.
+1047	=
+1048	=
+1049	Take 1–2 measuring spoons 1 hour after meals and at bedtime; 2 hours apart from other drugs; shake before use.
+1050	Take 1–2 measuring spoons together with ciprofloxacin.
+1051	Aluminum and magnesium chelate fluoroquinolones, tetracyclines and iron, sharply reducing their absorption: a 2-hour interval is needed.
+1052	Antacids act only symptomatically; ulcer disease is treated with proton pump inhibitors.
+1053	Metoclopramide, vomiting
+1054	Patient A., 48 years old
+1055	Repeated vomiting after acute gastroenteritis. No intestinal obstruction or Parkinson's disease.
+1056	Prescribe 5 ampoules of 2 mL of metoclopramide 0.5% solution.
+1057	=
+1058	=
+1059	Inject 2 mL intramuscularly or slowly intravenously, up to 3 times a day (no more than 5 days).
+1060	Inject 2 mL 3 times a day for a month.
+1061	Prolonged use raises the risk of extrapyramidal disorders and tardive dyskinesia: no more than 5 days.
+1062	Metoclopramide is a D2 blocker: contraindicated in mechanical intestinal obstruction, bleeding and Parkinson's disease.
+1063	Lactulose, constipation
+1064	Patient B., 67 years old
+1065	Chronic constipation, moves little. No galactosemia.
+1066	Prescribe 200 mL of lactulose syrup (66.7%).
+1067	=
+1068	=
+1069	66.7% — 200 ml
+1070	Take 15–30 mL once a day in the morning.
+1071	Take 200 mL at once.
+1072	Strong osmotic diarrhea, dehydration and electrolyte disturbance. The dose starts at 15–30 mL.
+1073	Lactulose is an osmotic laxative; its effect begins in 1–2 days. It is also used in hepatic encephalopathy.
+1074	Loperamide, diarrhea
+1075	Patient D., 27 years old
+1076	Traveler's diarrhea: watery diarrhea, no fever, no blood in the stool.
+1077	Prescribe 10 loperamide hydrochloride capsules of 0.002 g (in abbreviated form).
+1078	=
+1079	=
+1080	=
+1081	2 capsules after the first loose stool, then 1 capsule after each loose stool (no more than 8 a day).
+1082	Take 2 capsules after each loose stool, up to 16 a day.
+1083	More than 8 capsules a day (16 mg) — intestinal paralysis and cardiotoxicity (QT prolongation, arrhythmia).
+1084	Loperamide is not given in fever and bloody diarrhea (invasive infection).
+1085	Furosemide, pulmonary edema
+1086	Patient K., 70 years old
+1087	Acute left ventricular failure, pulmonary edema: shortness of breath, moist rales in the lungs, BP 160/95.
+1088	Prescribe 10 ampoules of 2 mL of furosemide 1% solution.
+1089	=
+1090	=
+1091	=
+1092	Inject 2–4 mL slowly intravenously (in pulmonary edema).
+1093	Inject 40 mL (20 ampoules) at once as an intravenous push.
+1094	When 400 mg is given rapidly: ototoxicity (hearing loss), marked hypovolemia and hypokalemia.
+1095	1% = 10 mg/mL, 2 mL = 20 mg. When given intravenously, the venodilating effect begins before diuresis.
+1096	Furosemide, chronic edema
+1097	Patient L., 66 years old
+1098	Chronic heart failure, leg edema. Potassium 4.0 mmol/L.
+1099	Prescribe 30 furosemide tablets of 0.04 g.
+1100	Take 1 tablet in the morning on an empty stomach (with monitoring of weight and potassium).
+1101	Take 1 tablet in the evening before going to sleep.
+1102	If a diuretic is taken in the evening, frequent urination at night (nocturia) disturbs sleep.
+1103	Loop diuretics cause hypokalemia, hypomagnesemia and hyperuricemia.
+1104	Spironolactone, ascites
+1105	Patient M., 57 years old
+1106	Liver cirrhosis, ascites. Potassium 4.2 mmol/L, creatinine normal.
+1107	Prescribe 30 spironolactone capsules of 0.1 g.
+1108	=
+1109	=
+1110	=
+1111	Take 1 capsule once a day in the morning (in ascites due to liver cirrhosis).
+1112	Take together with potassium preparations (Asparkam), without monitoring potassium.
+1113	Potassium-sparing diuretic + potassium preparations — hyperkalemia, risk of cardiac arrest.
+1114	Aldosterone antagonist. May cause gynecomastia in men.
+1115	Acetylsalicylic acid, antiplatelet
+1116	Patient N., 60 years old
+1117	Ischemic heart disease, 1 year after stenting. No history of stomach ulcer or bleeding.
+1118	Prescribe 30 film-coated tablets of acetylsalicylic acid 0.1 g (in abbreviated form).
+1119	=
+1120	=
+1121	=
+1122	Take 1 tablet once a day after meals.
+1123	For the antiplatelet effect 75–100 mg once a day is enough (platelets are irreversibly inhibited for 7–10 days); increasing the dose only raises the risk of bleeding.
+1124	Low-dose aspirin is antiplatelet; its high dose (1–3 g) is anti-inflammatory.
+1125	Enoxaparin, thrombosis prophylaxis
+1126	Patient O., 74 years old
+1127	Femoral neck fracture, bed rest after surgery. Creatinine clearance 60 mL/min.
+1128	Prescribe 10 prefilled syringes of enoxaparin sodium solution (0.04 g — 0.4 mL).
+1129	=
+1130	=
+1131	0.04 — 0.4 ml
+1132	Correct: mass–volume form, 40 mg in 0.4 mL.
+1133	0.4 — 0.4 ml
+1134	0.4 g = 400 mg: 10 times more, risk of severe bleeding.
+1135	4.0 — 0.4 ml
+1136	4 g: 100 times more.
+1137	=
+1138	Inject 0.4 mL once a day under the skin of the abdomen (thrombosis prophylaxis).
+1139	Inject 0.4 mL intramuscularly.
+1140	An anticoagulant injected intramuscularly forms a large hematoma: subcutaneously only.
+1141	Low-molecular-weight heparins accumulate in renal failure: at CrCl < 30 mL/min the dose is reduced.
+1142	Warfarin, atrial fibrillation
+1143	Patient P., 69 years old
+1144	Atrial fibrillation, mitral stenosis (no mechanical valve prosthesis). A permanent anticoagulant is needed.
+1145	Prescribe 100 warfarin tablets of 0.0025 g.
+1146	=
+1147	=
+1148	Take 2 tablets once a day in the evening at the same time; the next dose according to INR.
+1149	Take without INR monitoring; add ibuprofen for pain.
+1150	Together with NSAIDs the risk of bleeding rises sharply; the warfarin dose is chosen only by INR (goal 2.0–3.0).
+1151	Warfarin interacts with many drugs and with foods rich in vitamin K. The antidote is vitamin K.
+1152	Insulin glargine
+1153	Patient Q., 50 years old
+1154	Type 2 diabetes mellitus, HbA1c 9% on metformin. Basal insulin is being started.
+1155	Prescribe 5 insulin glargine syringe pens (100 units/mL, 3 mL).
+1156	=
+1157	=
+1158	100 units/ml — 3 ml
+1159	=
+1160	Once a day at the same time, 10 units subcutaneously; titrate the dose by the morning glucose.
+1161	Inject 10 units intravenously.
+1162	Glargine is given only subcutaneously: given intravenously the prolonged action is lost and there is a risk of severe hypoglycemia.
+1163	Basal insulin is titrated by fasting morning glucose, by 2 units every 3 days.
+1164	Levothyroxine, hypothyroidism
+1165	Patient R., 45 years old
+1166	Primary hypothyroidism, TSH 12 mIU/L. Also takes calcium and iron preparations.
+1167	Prescribe 100 levothyroxine sodium tablets of 0.00005 g.
+1168	=
+1169	=
+1170	Take 1 tablet once a day in the morning, 30–60 minutes before breakfast.
+1171	Take 1 tablet with dinner, together with calcium and iron preparations.
+1172	Food, calcium and iron reduce levothyroxine absorption: take on an empty stomach and 4 hours apart from them.
+1173	The dose is adjusted by TSH after 6–8 weeks. In the elderly and in heart disease, start with a small dose.
+1174	Metformin, diabetes mellitus
+1175	Patient S., 52 years old
+1176	Newly diagnosed type 2 diabetes mellitus, obesity. Creatinine clearance 80 mL/min.
+1177	Prescribe 60 metformin hydrochloride film-coated tablets of 0.5 g.
+1178	=
+1179	=
+1180	=
+1181	Take 1 tablet once a day with dinner, increasing by 1 tablet every week, up to 2 g a day.
+1182	From the very first day take 4 tablets (2 g) at once.
+1183	The dose is increased gradually: a large dose at once sharply increases gastrointestinal side effects (diarrhea, nausea).
+1184	At CrCl < 30 mL/min metformin is contraindicated (risk of lactic acidosis); it is temporarily stopped before iodinated contrast.
+1185	Ibuprofen, suspension for a child
+1186	Patient T., 3 years old, 14 kg
+1187	Acute respiratory infection, temperature 39.2 °C. No signs of dehydration, drinking fluids well.
+1188	Prescribe 100 mL of ibuprofen suspension (100 mg/5 mL).
+1189	=
+1190	=
+1191	=
+1192	Shake before use. Take 7 mL (140 mg ≈ 10 mg/kg) when the temperature is above 38.5 °C, up to 3 times a day.
+1193	Shake before use. Take 7 mL every 2 hours.
+1194	Every 2 hours means 84 mL a day ≈ 120 mg/kg: several times the maximum daily dose (30–40 mg/kg). The interval is at least 6–8 hours.
+1195	In a dehydrated child NSAIDs increase the risk of acute kidney injury.
+1196	Glucose 40%, hypoglycemic coma
+1197	Patient U., 58 years old
+1198	Took insulin, did not eat: unconscious, sweating, glucometer reads 1.9 mmol/L. A vein is accessible.
+1199	Prescribe 10 ampoules of 20 mL of glucose 40% solution.
+1200	=
+1201	=
+1202	=
+1203	20–40 mL as an intravenous push (in hypoglycemic coma).
+1204	Inject 20 mL intramuscularly.
+1205	Hypertonic glucose is not given intramuscularly (necrosis, slow absorption). If a vein cannot be found — glucagon 1 mg intramuscularly.
+1206	40% = 400 mg/mL: 20 mL contains 8 g of glucose.
+1207	Ciprofloxacin, pyelonephritis
+1208	Patient V., 40 years old
+1209	Uncomplicated acute pyelonephritis, not pregnant. Drinks milk every day and takes an antacid.
+1210	Prescribe 14 ciprofloxacin film-coated tablets of 0.5 g.
+1211	=
+1212	=
+1213	=
+1214	Take 1 tablet twice a day for 7 days, 2 hours before dairy products and antacids.
+1215	Take 1 tablet twice a day with milk and together with an antacid.
+1216	Calcium, magnesium and aluminum chelate fluoroquinolones, reducing their absorption 2–3 fold.
+1217	Fluoroquinolones are not used in pregnancy, lactation and under 18 years (without indications); risk of tendinitis.
+1218	Metronidazole
+1219	Patient X., 31 years old
+1220	Trichomoniasis (the sexual partner is also being treated). Not pregnant. Drinks alcohol on weekends.
+1221	Prescribe 14 metronidazole tablets of 0.5 g.
+1222	=
+1223	=
+1224	=
+1225	Take 1 tablet twice a day for 7 days; do not drink alcohol during treatment and for 3 days after.
+1226	Take 1 tablet twice a day for 7 days, alcoholic drinks need not be restricted.
+1227	Metronidazole with alcohol causes a disulfiram-like reaction: flushing, nausea, tachycardia, hypotension.
+1228	Metronidazole acts on anaerobes and protozoa; it gives a metallic taste in the mouth.
+1229	Sulfacetamide eye drops
+1230	Patient Y., 19 years old
+1231	Acute bacterial conjunctivitis: red eye, purulent discharge. No allergy to sulfonamides.
+1232	Prescribe 10 mL of sulfacetamide sodium 20% solution.
+1233	=
+1234	=
+1235	=
+1236	Instill 1–2 drops into each eye 4–6 times a day.
+1237	When instilling eye drops the dropper must not touch the eye: contamination of the bottle.
+1238	Benzylpenicillin
+1239	Patient Z., 25 years old
+1240	Streptococcal phlegmon, in hospital. No allergy to penicillin (history checked).
+1241	Prescribe 30 vials of benzylpenicillin sodium salt of 1,000,000 units.
+1242	=
+1243	=
+1244	1,000,000 units
+1245	=
+1246	Dissolve the contents of the vial in 2 mL of water for injection and inject 1 million units intramuscularly every 4 hours.
+1247	Dissolve the contents of the vial in 2 mL of water for injection and inject intramuscularly once a day.
+1248	The t½ of benzylpenicillin is ~30 minutes: it is given every 4 hours to maintain a therapeutic concentration.
+1249	A separate prescription is written for the solvent: # Rp.: Aquae pro injectionibus 2 ml / D.t.d. N. 30 in ampullis.
+1250	Azithromycin
+1251	Patient A., 36 years old
+1252	Community-acquired pneumonia, mild course; has a penicillin allergy. QT is not prolonged.
+1253	Prescribe 3 azithromycin film-coated tablets of 0.5 g.
+1254	=
+1255	=
+1256	=
+1257	Take 1 tablet once a day for 3 days.
+1258	Take 1 tablet three times a day for 10 days.
+1259	Azithromycin accumulates in the tissues (t½ ~68 hours): a 3-day course gives 7–10 days of effect; an excess dose risks QT prolongation and hepatotoxicity.
+1260	Macrolides prolong the QT interval: caution with other QT-prolonging drugs.
+1261	Doxycycline
+1262	Patient B., 30 years old
+1263	Brucellosis (laboratory-confirmed), not pregnant.
+1264	Prescribe 14 doxycycline capsules of 0.1 g (in abbreviated form).
+1265	=
+1266	=
+1267	=
+1268	Take 1 capsule twice a day with plenty of water, upright; avoid the sun.
+1269	Take 1 capsule in the evening before lying down, with a little water.
+1270	A capsule that stays in the esophagus causes erosive esophagitis: take with plenty of water and do not lie down for 30 minutes.
+1271	Tetracyclines are not given to children under 8 years and to pregnant women (they accumulate in teeth and bone).
+1272	Gentamicin in ampoules
+1273	Patient D., 45 years old, 70 kg
+1274	Gram-negative sepsis (in hospital), together with another antibiotic. Creatinine is normal.
+1275	Prescribe 10 ampoules of 2 mL of gentamicin sulfate 4% solution.
+1276	=
+1277	=
+1278	=
+1279	5 mg/kg once a day intravenously or intramuscularly (with monitoring of renal function).
+1280	Inject together with furosemide, without renal monitoring, for 3 weeks.
+1281	Aminoglycoside + loop diuretic — ototoxicity and nephrotoxicity increase; the course usually does not exceed 7 days, creatinine is monitored.
+1282	4% = 40 mg/mL, 2 mL = 80 mg. Not absorbed when taken by mouth.
+1283	Isoniazid, tuberculosis
+1284	Patient E., 33 years old, 60 kg
+1285	Pulmonary tuberculosis, newly diagnosed, drug-susceptible. Does not drink alcohol.
+1286	Prescribe 30 isoniazid tablets of 0.3 g.
+1287	=
+1288	=
+1289	Take 1 tablet once a day in the morning on an empty stomach, together with pyridoxine.
+1290	Take 1 tablet once a day without pyridoxine.
+1291	Isoniazid is a vitamin B6 antagonist: without pyridoxine peripheral neuropathy develops.
+1292	Tuberculosis is treated only with combinations (to prevent resistance); monitor for hepatotoxicity.
+1293	Rifampin
+1294	Patient F., 28 years old, 60 kg
+1295	Pulmonary tuberculosis, intensive phase. Takes combined oral contraceptives.
+1296	Prescribe 60 rifampin capsules of 0.15 g (in abbreviated form).
+1297	=
+1298	=
+1299	=
+1300	Take 4 capsules (600 mg) once a day 1 hour before meals; urine may turn red; use an additional contraception method.
+1301	Take 4 capsules once a day with food; the contraceptive gives adequate protection.
+1302	Food reduces rifampin absorption. Rifampin is a strong CYP inducer: it lowers the effect of oral contraceptives.
+1303	Rifampin lowers the concentration of many drugs (warfarin, contraceptives, antiretrovirals).
+1304	Acyclovir cream, herpes labialis
+1305	Patient G., 26 years old
+1306	Recurrent herpes labialis: burning and itching at the edge of the lip have begun (prodrome), blisters are just appearing.
+1307	Prescribe 5.0 g of acyclovir 5% cream.
+1308	=
+1309	=
+1310	=
+1311	Apply to the blisters on the lip 5 times a day, starting from the first signs.
+1312	Apply once a day after the blisters have burst and crusted over.
+1313	Viral replication peaks in the first 24–48 hours: late and infrequent use is ineffective.
+1314	Wash hands after applying the cream: prevents infection from reaching the eye.
+1315	Oseltamivir, influenza
+1316	Patient H., 67 years old
+1317	Influenza, symptoms began 24 hours ago; high risk of complications because of age and diabetes mellitus.
+1318	Prescribe 10 oseltamivir capsules of 0.075 g (in abbreviated form).
+1319	=
+1320	=
+1321	Take 1 capsule twice a day for 5 days.
+1322	Take 1 capsule once a day for 5 days.
+1323	Once a day is the prophylactic dose. The treatment dose is 75 mg twice a day; it is effective if started within 48 hours of symptom onset.
+1324	Neuraminidase inhibitor. The dose is reduced in renal failure.
+1325	Epinephrine in anaphylaxis
+1326	Rp.: Solutionis Epinephrini hydrochloridi 0.1% — 1 ml\nD.t.d. N. 10 in ampullis\nS. In anaphylaxis inject 0.5 mL into the thigh muscle.
+1327	In anaphylaxis
+1328	1 mL as an intravenous push
+1329	In anaphylaxis epinephrine is given 0.5 mg into the thigh muscle; giving 1 mg undiluted as an intravenous push is extremely dangerous (ventricular fibrillation).
+1330	Nitroglycerin in an angina attack
+1331	Rp.: Nitroglycerini 0.0005\nD.t.d. N. 40 in tabulettis\nS. In an attack place 1 tablet under the tongue.
+1332	Genitive case: Nitroglycerini.
+1333	In an attack, 1 tablet
+1334	to be swallowed with water.
+1335	Swallowed nitroglycerin is broken down in the liver: it is placed under the tongue.
+1336	Warfarin
+1337	Rp.: Warfarini 0.0025\nD.t.d. N. 100 in tabulettis\nS. 2 tablets once a day in the evening; the next dose according to INR.
+1338	0.025 g = 25 mg: 10 times more (a tablet is 2.5 mg = 0.0025).
+1339	2 tablets once a day in the evening;
+1340	to be taken together with ibuprofen for pain.
+1341	NSAIDs together with warfarin sharply raise the risk of bleeding.
+1342	Rp.: Insulini glargini 100 units/ml — 3 ml\nD.t.d. N. 5 in calamis\nS. Once a day at the same time, 10 units subcutaneously.
+1343	=
+1344	Insulin in syringe pens: in calamis.
+1345	Once a day, 10 units
+1346	Glargine is given only subcutaneously.
+1347	Rp.: Metronidazoli 0.5\nD.t.d. N. 14 in tabulettis\nS. 1 tablet twice a day for 7 days; no alcohol during treatment and for 3 days after.
+1348	1 tablet twice a day for 7 days;
+1349	beer may be drunk during treatment.
+1350	Metronidazole with alcohol causes a disulfiram-like reaction: alcoholic drinks are forbidden.
+1351	Prednisolone
+1352	Rp.: Prednisoloni 0.005\nD.t.d. N. 50 in tabulettis\nS. Take 8 tablets once a day in the morning for 5 days.
+1353	=
+1354	Prednisolone comes as tablets: in tabulettis.
+1355	8 tablets once a day
+1356	Glucocorticoids are given in the morning, in line with the circadian rhythm.
+1357	to be taken for 5 days.
+1358	Ciprofloxacin
+1359	Rp.: Ciprofloxacini 0.5\nD.t.d. N. 14 in tabulettis obductis\nS. 1 tablet twice a day for 7 days, taken 2 hours before dairy products.
+1360	1 tablet twice a day for 7 days,
+1361	to be taken with milk.
+1362	Calcium reduces fluoroquinolone absorption 2–3 fold: keep 2 hours apart from dairy products.
+1363	Levothyroxine
+1364	Rp.: Levothyroxini natrii 0.00005\nD.t.d. N. 100 in tabulettis\nS. 1 tablet in the morning, 30–60 minutes before breakfast.
+1365	0.05 g = 50 mg — a thousand times more! 50 mcg = 0.00005 g.
+1366	to be taken with dinner.
+1367	Food reduces absorption: in the morning, 30–60 minutes before breakfast.
+1368	How many mL of 0.1% epinephrine solution are needed to give 0.5 mg?
+1369	0.1% = 1 mg/mL
+1370	0.5 mg / 1 mg/mL = 0.5 mL
+1371	How many mg of gentamicin are in a 4% — 2 mL ampoule of gentamicin sulfate?
+1372	4% = 40 mg/mL
+1373	40 × 2 = 80 mg
+1374	Heparin 5000 units/mL. Patient 75 kg, bolus 80 units/kg. How many mL of heparin are given?
+1375	Dose: 80 × 75 = 6000 units
+1376	Volume: 6000 / 5000 = 1.2 mL
+1377	The maximum dose of lidocaine without epinephrine is 4.5 mg/kg. Patient 60 kg. At most how many mL of 1% solution can be given?
+1378	Maximum dose: 4.5 × 60 = 270 mg
+1379	1% = 10 mg/mL → 270 / 10 = 27 mL
+1380	Ibuprofen suspension 100 mg/5 mL. Child 14 kg, single dose 10 mg/kg. How many mL?
+1381	Dose: 10 × 14 = 140 mg
+1382	Concentration 20 mg/mL → 140 / 20 = 7 mL
+1383	Enoxaparin 0.04 g — 0.4 mL. How many mg of enoxaparin are in 1 mL?
+1384	0.04 g = 40 mg in 0.4 mL
+1385	40 / 0.4 = 100 mg/mL
+1386	=
+1387	<div class="blank⟦0⟧">\n    <div class="bl-head">⟦1⟧\n      <div class="bl-title">Prescription form<b>Prescription</b><span style="text-transform:none;letter-spacing:0">sample</span></div></div>\n    ⟦2⟧\n    ⟦3⟧\n    ⟦4⟧\n    <div class="bl-rx">⟦5⟧</div>\n    <div class="bl-foot">⟦6⟧\n      <div class="bl-valid">The prescription validity period is stated</div></div>\n  </div>
+1388	<div class="bl-shtamp"><b>Medical institution</b>stamp and code</div>
+1389	<div class="bl-f"><span>Date:</span><i>⟦0⟧</i></div>
+1390	<div class="bl-f"><span>Patient's full name, age:</span><i>⟦0⟧</i></div>
+1391	<div class="bl-f"><span>Physician's full name:</span><i>⟦0⟧</i></div>
+1392	=
+1393	=
+1394	<div class="bl-line"><span class="zone mk" data-z="rp">Rp.:</span> <span class="zone mk" data-z="dori">Omeprazoli 0.02</span></div>\n    <div class="bl-line"><span class="zone mk" data-z="sub">D.t.d. N. 28 in capsulis</span></div>\n    <div class="bl-line"><span class="zone mk" data-z="sign">S. Take 1 capsule twice a day, 30 minutes before meals, for 14 days.</span></div>
+1395	Aliyev B.S., 45 years old
+1396	<span class="eyebrow" style="color:var(--muted)">Part ⟦0⟧</span><h3>⟦1⟧ <span class="lang ⟦2⟧">⟦3⟧</span></h3>\n      <div class="part-lat">⟦4⟧</div><p>⟦5⟧</p>\n      <div class="part-list">⟦6⟧</div>\n      <p class="muted" style="font-size:.85rem">Initial letters to help you remember: I-D-N-N-I-D-S-S-S.</p>
+1397	in Latin
+1398	in the national language
+1399	=
+1400	=
+1401	=
+1402	=
+1403	=
+1404	=
+1405	=
+1406	=
+1407	=
+1408	=
+1409	=
+1410	=
+1411	=
+1412	<span class="gap" aria-label="not selected"></span>
+1413	=
+1414	=
+1415	Written correctly: ⟦0⟧ / ⟦1⟧
+1416	<div class="rx-mini" aria-hidden="true"><span class="mono">Prescription:</span>⟦0⟧</div><div class="pt-card"><div class="who"><span class="avatar">⟦1⟧</span><div><b>⟦2⟧</b><div class="muted" style="font-size:.88rem">Topic ⟦3⟧ · ⟦4⟧</div></div></div><p>⟦5⟧</p></div>\n    <div class="task-goal"><b>Task.</b> ⟦6⟧</div>\n    ⟦7⟧
+1417	<span class="st ok" style="color:var(--good)">✓ correct</span>
+1418	<span class="st" style="color:var(--bad)">✗ wrong</span>
+1419	=
+1420	<div class="why no">No option selected.</div>
+1421	<div class="why ok"><b>Correct option:</b> “⟦0⟧”⟦1⟧ ⟦2⟧</div>
+1422	=
+1423	=
+1424	=
+1425	Out of ⟦0⟧ parts, ⟦1⟧ contain errors. The reason for each error is written under the choices.
+1426	The prescription was written completely correctly.
+1427	<div class="note" style="margin-top:8px"><b>Note</b>⟦0⟧</div>
+1428	<optgroup label="Topic ⟦0⟧. ⟦1⟧">⟦2⟧</optgroup>
+1429	=
+1430	=
+1431	Sample prescription
+1432	<div class="qn">Prescription ⟦0⟧ / ⟦1⟧</div><p class="t">⟦2⟧</p><p class="muted" style="font-size:.9rem">This prescription contains ⟦3⟧ error(s). Tap the erroneous parts on the form.</p><p class="mono" style="font-size:.85rem">Marked: ⟦4⟧</p>
+1433	Fully found: ⟦0⟧ / ⟦1⟧
+1434	=
+1435	<div class="ok">✓ “⟦0⟧” — ⟦1⟧</div>
+1436	<div class="no">○ Not found: “⟦0⟧” — ⟦1⟧</div>
+1437	<div class="no">✗ “⟦0⟧” is written correctly, this is not an error.</div>
+1438	Found: ⟦0⟧, not found: ⟦1⟧, extra marked: ⟦2⟧.
+1439	All errors were found correctly.
+1440	<div class="qn">Problem ⟦0⟧ / ⟦1⟧ · solved: <span id="hsN">⟦2⟧</span></div><p class="t">⟦3⟧</p>\n   <div class="num-in"><input id="hsIn" inputmode="decimal" autocomplete="off" aria-label="Answer"><span class="mono">⟦4⟧</span><button class="btn pri" id="hsChk" type="button">Check</button><button class="btn" id="hsNx" type="button">Next →</button></div><div id="hsFb" aria-live="polite"></div>
+1441	<div class="fb no">Enter a number.</div>
+1442	<div class="fb ⟦0⟧">⟦1⟧ Answer: <b>⟦2⟧ ⟦3⟧</b></div><ol class="steps" style="margin-top:8px">⟦4⟧</ol>
+1443	Incorrect.
+1444	=
+1445	=
+1446	every 24 hours (once a day)
+1447	every ⟦0⟧ hours (⟦1⟧ times a day)
+1448	=
+1449	Effective peak
+1450	Toxic peak
+1451	Trough limit
+1452	MIC
+1453	Toxic
+1454	=
+1455	=
+1456	=
+1457	=
+1458	=
+1459	=
+1460	=
+1461	=
+1462	d
+1463	=
+1464	=
+1465	=
+1466	⟦0⟧ · ⟦1⟧ every ⟦2⟧ hours · ⟦3⟧
+1467	<span><i style="background:var(--accent)"></i>Concentration</span>
+1468	=
+1469	=
+1470	<span><i style="background:var(--muted)"></i>Saved: ⟦0⟧</span>
+1471	<span><i style="background:var(--accent);clip-path:polygon(50% 0,0 100%,100% 100%)"></i>Dose</span>
+1472	t½ (current)
+1473	=
+1474	mg/day
+1475	=
+1476	=
+1477	Clearance (CL)
+1478	L/h
+1479	=
+1480	F (bioavailability)
+1481	Peak
+1482	Trough (before the dose)
+1483	Cmax (last interval)
+1484	Cmin (last interval)
+1485	Mean C
+1486	Time C > MIC
+1487	% of the interval
+1488	Time to reach Css
+1489	≈ ⟦0⟧ hours (⟦1⟧ days)
+1490	Daily dose
+1491	=
+1492	Loading dose
+1493	<b>Calculation</b>Input rate R = F × D × 24/τ = ⟦0⟧ × ⟦1⟧ × ⟦2⟧ = ⟦3⟧ mg/day.<br>⟦4⟧<br>For Css = ⟦5⟧ mg/L: R = Vmax × Css / (Km + Css) = ⟦6⟧ mg/day, i.e. by mouth ≈ ⟦7⟧ mg/day.<br>Loading dose = Css × Vd / F = ⟦8⟧ × ⟦9⟧ / ⟦10⟧ ≈ ⟦11⟧ mg.
+1494	Css = Km × R / (Vmax − R) = ⟦0⟧ × ⟦1⟧ / (⟦2⟧ − ⟦3⟧) = <b>⟦4⟧ mg/L</b>.
+1495	R ≥ Vmax: no steady state.
+1496	<b>Calculation</b>k = 0.693 / t½ = ⟦0⟧ h⁻¹; CL = k × Vd = ⟦1⟧ L/h.<br>Mean Css = F × D / (CL × τ) = ⟦2⟧ × ⟦3⟧ / (⟦4⟧ × ⟦5⟧) = <b>⟦6⟧</b>.
+1497	<br>Maintenance dose for Css = ⟦0⟧ ⟦1⟧ = Css × CL × τ / F ≈ ⟦2⟧ mg every ⟦3⟧ hours.
+1498	<br>Loading dose = Css × Vd / F = ⟦0⟧ ⟦1⟧ × ⟦2⟧ L / ⟦3⟧ ≈ ⟦4⟧ mg.
+1499	<br>Trough = peak × e<sup>−k(τ − t<sub>inf</sub>)</sup>: if the interval is lengthened the trough decreases.
+1500	=
+1501	Result
+1502	Caution
+1503	Danger
+1504	t = ⟦0⟧ h⟦1⟧ · C = ⟦2⟧ ⟦3⟧
+1505	(⟦0⟧ days)
+1506	=
+1507	=
+1508	=
+1509	=
+1510	=
+1511	<svg viewBox="0 0 900 362" class="an" role="img" aria-label="Pathway of drug absorption, distribution, metabolism and elimination">\n  <defs>⟦0⟧</defs>\n  ⟦1⟧\n  ⟦2⟧\n  ⟦3⟧\n  ⟦4⟧\n  ⟦5⟧\n  ⟦6⟧\n  ⟦7⟧\n  <text class="s" x="542" y="⟦8⟧">⟦9⟧</text>\n  <text class="s" x="542" y="⟦10⟧">⟦11⟧</text>\n  ⟦12⟧\n  ⟦13⟧\n  ⟦14⟧\n  <path class="ar⟦15⟧" d="M111 80 V136"/>\n  <path class="ar⟦16⟧" d="M206 182 H286"/><text class="s" x="246" y="172" text-anchor="middle">portal</text><text class="s" x="246" y="201" text-anchor="middle">vein</text>\n  <path class="ar⟦17⟧" d="M480 190 H526"/>\n  <path class="ar⟦18⟧" d="M480 48 C 520 50, 545 80, 560 126"/>\n  <path class="ar⟦19⟧" d="M630 80 V126"/>\n  <path class="ar⟦20⟧" d="M206 304 C 330 330, 440 300, 528 236"/><text class="s" x="352" y="340" text-anchor="middle">rectal veins: partly bypass the liver</text>\n  <path class="ar⟦21⟧" d="M730 152 C 748 140, 752 112, 766 98"/><path class="ar" d="M768 112 C 755 132, 750 160, 732 172"/>\n  <path class="ar ex" d="M730 232 C 748 250, 752 280, 766 296"/>\n  <path class="ar ex" d="M630 250 V286"/>\n  </svg>
+1512	=
+1513	=
+1514	=
+1515	=
+1516	Mouth
+1517	tablet, capsule, solution
+1518	Gastrointestinal tract
+1519	absorption
+1520	ka = ⟦0⟧ h⁻¹
+1521	Rectum
+1522	=
+1523	Muscle
+1524	injection site
+1525	=
+1526	first-pass effect
+1527	=
+1528	Intravenous
+1529	directly into the blood
+1530	=
+1531	Blood
+1532	central compartment
+1533	Vd = ⟦0⟧ L
+1534	Vmax ⟦0⟧ mg/day
+1535	CL ⟦0⟧ L/h
+1536	saturable elimination
+1537	t½ ⟦0⟧ h
+1538	Metabolites
+1539	breakdown in the liver
+1540	Tissues
+1541	Kidney
+1542	in urine
+1543	=
+1544	When taken by mouth, gentamicin hardly passes from the gut into the blood (F < 1%): aminoglycosides are polar molecules.
+1545	A drug taken by mouth is absorbed in the gut and reaches the liver first through the portal vein. Part of it is broken down in the liver (first-pass effect), so the fraction reaching the blood (F) is ⟦0⟧%.
+1546	A drug given intravenously bypasses the absorption stage: F = 100%, the effect starts fastest. The duration of the infusion affects the height of the peak.
+1547	A drug given intramuscularly passes into the blood through capillaries (F = ⟦0⟧%). The absorption rate depends on blood circulation: it slows sharply in shock.
+1548	A drug absorbed from the lower rectum partly bypasses the liver, but absorption is slow and unreliable (F ≈ ⟦0⟧%).
+1549	Phenytoin is metabolized by saturable enzymes in the liver: the elimination rate depends on the concentration.
+1550	Elimination: ⟦0⟧% unchanged by the kidneys, the rest by metabolism in the liver. ⟦1⟧
+1551	In renal failure t½ is greatly prolonged.
+1552	Liver function and interactions affect t½ more.
+1553	Theophylline: bring the dose into the therapeutic window
+1554	The patient weighs 70 kg and has bronchial asthma. Theophylline retard 300 mg every 12 hours was prescribed, but attacks continue. By changing the dose or the interval, make the concentration stay within the 10–20 mg/L window throughout the whole dosing interval at steady state.
+1555	The drug must be theophylline.
+1556	Trough ⟦0⟧ mg/L: still below 10.
+1557	Peak ⟦0⟧ mg/L: in the toxic zone.
+1558	Correct: ⟦0⟧–⟦1⟧ mg/L. Dividing the daily dose into several doses reduces the fluctuation: for example 300 mg every 8 hours.
+1559	Gentamicin: trough concentration in renal failure
+1560	The patient weighs 70 kg, creatinine clearance 30–59 mL/min. Gentamicin 120 mg intravenously every 8 hours. Keep the peak at 5–10 mg/L and bring the trough below 2 mg/L. Do not change the renal status.
+1561	Keep gentamicin and the “Moderate” renal status.
+1562	Gentamicin by mouth is not absorbed.
+1563	Trough ⟦0⟧ mg/L: still above 2.
+1564	Peak ⟦0⟧ mg/L: it should be within 5–10.
+1565	Correct: peak ⟦0⟧, trough ⟦1⟧ mg/L. In renal failure, for aminoglycosides it is usually the interval that is lengthened, not the dose: the peak ensures efficacy, a low trough ensures safety.
+1566	Digoxin: after how many days is steady state reached?
+1567	The patient weighs 70 kg, renal function is normal. Digoxin 0.25 mg once a day, no loading dose. Answer by looking at the graph in the lab or by calculating from t½: after about how many days is the steady-state concentration reached?
+1568	t½ ≈ 38 hours, 5 × 38 = 190 hours ≈ 8 days. So if a quick effect is needed, a loading dose (Css × Vd / F) is given: turn on “Start with a loading dose” to see the difference. In renal failure t½ is prolonged to 3.5–5 days.
+1569	Phenytoin: if we increase the dose from 300 to 400 mg
+1570	The patient weighs 70 kg and takes phenytoin 300 mg once a day, the concentration is below the window. If the dose is raised to 400 mg (1.33 times), how does the steady-state concentration change? Check it in the lab with a 28-day duration.
+1571	Rises about 1.33 times (proportional to the dose)
+1572	Rises more than 2 times
+1573	Does not change
+1574	Decreases
+1575	In the model Css ⟦0⟧ → ⟦1⟧ mg/L, i.e. ⟦2⟧ times. The enzymes that break down phenytoin become saturated even at therapeutic doses (zero-order kinetics: “PEA” — phenytoin, ethanol, aspirin). So the dose is raised in small steps (25–50 mg) and the concentration is monitored.
+1576	Amoxicillin: same daily dose, different regimens
+1577	The daily dose is 1500 mg. In which regimen is the time the concentration stays above the MIC the longest? In the lab compare the regimens 1500 mg every 24 hours, 750 mg every 12 hours and 500 mg every 8 hours (use “Save for comparison”).
+1578	1500 mg once a day
+1579	750 mg twice a day
+1580	500 mg three times a day
+1581	No difference: the daily dose is the same
+1582	In the model the time C > MIC is ⟦0⟧%, ⟦1⟧% and ⟦2⟧%. Beta-lactams have a time-dependent effect and a short t½ (~1 hour): the time the concentration stays above the MIC matters more than a high peak. For aminoglycosides it is the opposite: the effect is concentration-dependent, so they can be given once a day in a large dose.
+1583	Theophylline and ciprofloxacin
+1584	The patient takes theophylline retard 400 mg every 8 hours and is stable. Ciprofloxacin was prescribed for pneumonia (a CYP1A2 inhibitor). Taking the drug interaction into account, bring the concentration back to the 10–20 mg/L window. Do not remove ciprofloxacin.
+1585	Theophylline and ciprofloxacin must stay together.
+1586	Peak ⟦0⟧ mg/L: in the toxic zone. Reduce the theophylline dose.
+1587	Trough ⟦0⟧ mg/L: below the window, the dose was reduced too much.
+1588	Correct: ⟦0⟧–⟦1⟧ mg/L. The inhibitor reduces theophylline clearance by about 30%, so the dose is reduced by ~25–30% and the concentration is monitored.
+1589	Digoxin: end-stage renal failure
+1590	The patient weighs 70 kg, creatinine clearance is below 15 mL/min. Digoxin accumulates at the standard dose of 0.25 mg once a day. Without changing the renal status, keep the concentration in the 0.5–2.0 ng/mL window over a 21-day duration.
+1591	Keep digoxin and the “End-stage” renal status.
+1592	Peak ⟦0⟧ ng/mL: toxic.
+1593	Trough ⟦0⟧ ng/mL: below the window.
+1594	Steady state not yet reached.
+1595	Correct: ⟦0⟧–⟦1⟧ ng/mL. 70% of digoxin is excreted by the kidneys: when clearance falls the dose is reduced or the interval is lengthened (e.g. 0.0625 mg once a day or 0.125 mg once every 2 days).
+1596	Paracetamol: maximum daily dose
+1597	The patient weighs 70 kg and has a severe headache. The patient is taking paracetamol 1000 mg every 4 hours on their own. Change the regimen so that the peak is effective (≥ 10 mg/L) and the daily dose does not exceed 4 g.
+1598	The drug must be paracetamol.
+1599	Daily dose ⟦0⟧ mg: more than 4 g — risk of hepatotoxicity.
+1600	Peak ⟦0⟧ mg/L: does not reach the effective concentration.
+1601	Correct: peak ⟦0⟧ mg/L, daily dose ⟦1⟧ mg. Paracetamol toxicity depends not on the mean blood concentration but on the total daily dose: when glutathione in the liver is exhausted, NAPQI accumulates.
+1602	Paracetamol: by mouth or suppository
+1603	Compare giving the same 500 mg dose by mouth and rectally (suppository). Which route gives a higher and faster peak?
+1604	Rectally: because it bypasses the liver
+1605	By mouth: absorption is faster and more complete
+1606	No difference
+1607	The drug from a suppository does not enter the blood at all
+1608	In the model the peak is: by mouth ⟦0⟧ mg/L (at ⟦1⟧ hours), suppository ⟦2⟧ mg/L (at ⟦3⟧ hours). Rectal absorption is slow and unreliable (F ≈ 30–70%). A suppository is chosen when oral intake is not possible (vomiting, an infant); in children the rectal dose is often taken slightly higher.
+1609	Gentamicin by mouth
+1610	In the lab try gentamicin by the “By mouth” route. Why is gentamicin not given as a tablet in sepsis?
+1611	It is broken down in stomach acid
+1612	Polar molecule: almost not absorbed from the gut (F < 1%)
+1613	It is completely broken down in the liver on first pass
+1614	Because of its bitter taste
+1615	Aminoglycosides are strongly polar, water-soluble molecules: they do not cross the intestinal mucosa. Therefore in systemic infection they are given intravenously or intramuscularly. This property is used in preparing the bowel for surgery or in hepatic encephalopathy (neomycin).
+1616	Digoxin and amiodarone
+1617	The patient weighs 70 kg and was taking digoxin 0.375 mg once a day, with the concentration in the window. Amiodarone was added for arrhythmia (a P-glycoprotein inhibitor). Without removing amiodarone, bring the digoxin concentration back to the 0.5–2.0 ng/mL window.
+1618	Digoxin and amiodarone must stay together.
+1619	Correct: ⟦0⟧–⟦1⟧ ng/mL. Amiodarone reduces digoxin clearance and raises its concentration 1.5–2 fold: when amiodarone is started the digoxin dose is reduced by about half.
+1620	Phenytoin and fluconazole
+1621	The patient weighs 70 kg, phenytoin 300 mg once a day. Fluconazole was prescribed for candidiasis (a CYP2C9 inhibitor). Bring the concentration back to the 10–20 mg/L window over a 28-day duration, keep fluconazole.
+1622	Phenytoin and fluconazole must stay together.
+1623	Peak ⟦0⟧ mg/L: toxic (nystagmus, ataxia).
+1624	Trough ⟦0⟧ mg/L: below the window.
+1625	Correct: ⟦0⟧–⟦1⟧ mg/L. The inhibitor reduces Vmax of the saturable enzymes: in nonlinear kinetics this raises the concentration several fold, so reducing the dose in small steps is enough.
+1626	Theophylline: a smoking patient
+1627	The patient weighs 70 kg and smokes 1 pack a day (CYP1A2 induction). Theophylline retard 300 mg every 8 hours is not working. Reach the 10–20 mg/L window over the whole dosing interval; keep the “Smoking” setting.
+1628	Theophylline and the “Smoking” setting must be kept.
+1629	Peak ⟦0⟧ mg/L: toxic.
+1630	Trough ⟦0⟧ mg/L: still below the window. Raise the dose or shorten the interval.
+1631	Correct: ⟦0⟧–⟦1⟧ mg/L. In smokers theophylline t½ shortens to ~4–5 hours: a 1.5–2 times larger dose is needed. If the patient quits smoking and the dose is not reduced, poisoning develops.
+1632	Amoxicillin: end-stage renal failure
+1633	The patient weighs 70 kg, creatinine clearance below 15 mL/min, taking amoxicillin 500 mg every 8 hours. See the accumulation of concentration in the lab. What is the correct way to change the regimen?
+1634	Double the dose
+1635	Lengthen the interval (every 12–24 hours)
+1636	Do not change the regimen: penicillins are safe
+1637	Add probenecid
+1638	In the model: 500 mg every 8 hours — mean C ⟦0⟧ mg/L, time above MIC ⟦1⟧%; every 24 hours — mean C ⟦2⟧ mg/L, time above MIC ⟦3⟧%. 80% of amoxicillin is excreted by the kidneys: at CrCl < 10–30 mL/min the interval is lengthened, otherwise a high concentration raises the risk of seizures (neurotoxicity).
+1639	Theophylline: calculate the loading dose
+1640	The patient weighs 70 kg, asthma attack, has not taken theophylline before. Vd = 0.5 L/kg, target concentration 10 mg/L, F ≈ 1. How many mg is the loading dose? (Formula: loading dose = Css × Vd / F.)
+1641	Vd = 0.5 × 70 = 35 L. Loading dose = 10 mg/L × 35 L / 1 = 350 mg (≈ 5 mg/kg). The loading dose ensures that Css is reached immediately; the subsequent maintenance dose depends on clearance. If the patient has taken theophylline before, the loading dose is reduced or not given.
+1642	<div class="q" data-i="⟦0⟧"><div class="tasks-st"><span class="qn">Task ⟦1⟧</span><span class="tag ok" ⟦2⟧>completed</span></div><p class="t">⟦3⟧</p><p style="font-size:.93rem">⟦4⟧</p>\n    <div class="btnrow"><button class="btn" type="button" data-a="load">Load scenario</button>⟦5⟧</div>\n    ⟦6⟧\n    ⟦7⟧\n    <div class="out" aria-live="polite"></div></div>
+1643	<button class="btn pri" type="button" data-a="chk">Check</button>
+1644	<div class="num-in"><input inputmode="decimal" aria-label="Answer"><span class="mono">⟦0⟧</span><button class="btn pri" type="button" data-a="num">Submit answer</button></div>
+1645	=
+1646	=
+1647	<div class="fb">The scenario has been loaded into the lab. Change the settings, then come back here.</div>
+1648	=
+1649	<div class="fb ⟦0⟧">⟦1⟧ Approximately ⟦2⟧ ⟦3⟧.</div><div class="expl" style="margin-top:8px">⟦4⟧</div>
+1650	=
+1651	=
+1652	=
+1653	=
+1654	=
+1655	intravenously
+1656	hours
+1657	mcg
+1658	in ampoules
+1659	in tablets
+1660	in capsules
+1661	=
+1662	=
+1663	in the evening
+1664	days
+1665	⟦0⟧ / ⟦1⟧ h, ⟦2⟧
+1666	suppository
+1667	distribution
+1668	=
+1669	<div style="display:flex;gap:12px;align-items:flex-end"><div><div class="bl-sign">⟦0⟧</div><div>Physician's signature and personal seal</div></div><div class="bl-seal">PHYSICIAN<br>SEAL<br>№ 0000</div></div>
+1670	<div class="fb ⟦0⟧">⟦1⟧</div><div class="fb-list" style="margin-top:8px;font-size:.92rem">⟦2⟧</div><p class="muted" style="font-size:.82rem;margin-top:8px">Correct way to write it:</p><div class="final">⟦3⟧</div>

@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v1.0.0";
+const VERSION = "v1.1.0";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -8,6 +8,8 @@ const SHELL_FILES = [
   "./",
   "index.html",
   "css/app.css",
+  "js/i18n.js",
+  "js/lang-en.js",
   "js/app.js",
   "js/tests.js",
   "js/account.js",
