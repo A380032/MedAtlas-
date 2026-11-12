@@ -16,6 +16,7 @@ Bandning ixtiyoriy maydonlari:
   "lines": [[x0, y0, x1, y1, "#rrggbb", qalinlik], ...] — fon to'ldirilgandan keyin qayta chiziladigan chiziqlar
   "ell": true — quti o'rniga unga ichki chizilgan ellips to'ldiriladi (doira ichidagi yozuv)
   "cbox"+"ang": qiya yozuv (markaz, eni, bo'yi, burchak)
+  "src": [dx, dy] — fon sifatida (dx, dy) ga siljigan qo'shni sohadan nusxa olinadi (teksturali fon uchun)
 Natija: data/en/img/<id>/<nom>.webp (asl o'lcham bilan). Ilova (js/app.js) va tools/book_pdf.py
 inglizcha rejimda shu fayl bo'lsa uni ishlatadi, bo'lmasa asl rasmni."""
 import json, os, statistics, sys
@@ -161,7 +162,15 @@ def put(im, it):
     rot = it.get("rot", 0)
     pad = it.get("pad", 1)
     bg = it.get("bg")
-    if bg == "grad":   # chetlardan chiziqli interpolyatsiya (gradiyentli fon uchun)
+    if it.get("src"):   # teksturali fon: qo'shni sohadan nusxa
+        from PIL import ImageFilter
+        dx, dy = it["src"]
+        patch = im.crop((x0 + dx - 2, y0 + dy - 2, x1 + dx + 3, y1 + dy + 3))
+        m = Image.new("L", patch.size, 0)
+        ImageDraw.Draw(m).rectangle((2, 2, patch.size[0] - 3, patch.size[1] - 3), fill=255)
+        im.paste(patch, (x0 - 2, y0 - 2), m.filter(ImageFilter.GaussianBlur(1.2)))
+        fill = None
+    elif bg == "grad":   # chetlardan chiziqli interpolyatsiya (gradiyentli fon uchun)
         grad_fill(im, (x0, y0, x1, y1))
         fill = None
     elif bg == "none":
