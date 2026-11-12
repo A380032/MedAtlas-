@@ -8509,5 +8509,361 @@
     "c": "#3a1414"
    }
   ]
+ },
+ "p238_88.webp": {
+  "items": [
+   {
+    "box": [
+     304,
+     51,
+     324,
+     65
+    ],
+    "t": "S1",
+    "f": "sansb",
+    "smax": 12
+   },
+   {
+    "box": [
+     249,
+     96,
+     271,
+     110
+    ],
+    "t": "S2",
+    "f": "sansb",
+    "smax": 12
+   },
+   {
+    "box": [
+     262,
+     140,
+     283,
+     152
+    ],
+    "t": "S3",
+    "f": "sansb",
+    "smax": 12
+   },
+   {
+    "box": [
+     13,
+     172,
+     33,
+     186
+    ],
+    "t": "AG",
+    "f": "sans",
+    "smax": 10
+   },
+   {
+    "box": [
+     11,
+     218,
+     37,
+     231
+    ],
+    "t": "LG",
+    "f": "sans",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     17,
+     243,
+     31,
+     255
+    ],
+    "t": "M",
+    "f": "sans",
+    "smax": 10
+   },
+   {
+    "box": [
+     9,
+     266,
+     38,
+     280
+    ],
+    "t": "MV",
+    "f": "sans",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     570,
+     80,
+     594,
+     93
+    ],
+    "t": "PF",
+    "f": "sans",
+    "smax": 11
+   },
+   {
+    "box": [
+     714,
+     177,
+     739,
+     189
+    ],
+    "t": "NF",
+    "f": "sans",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     714,
+     215,
+     748,
+     229
+    ],
+    "t": "KTsF",
+    "f": "sans",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     714,
+     255,
+     740,
+     267
+    ],
+    "t": "MF",
+    "f": "sans",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     464,
+     332,
+     496,
+     349
+    ],
+    "t": "TSM",
+    "f": "sans",
+    "smax": 11,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     505,
+     330,
+     538,
+     348
+    ],
+    "t": "RTsF",
+    "f": "sans",
+    "smax": 11,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     574,
+     330,
+     605,
+     345
+    ],
+    "t": "TSM",
+    "f": "sans",
+    "smax": 11,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     609,
+     329,
+     643,
+     344
+    ],
+    "t": "RTsF",
+    "f": "sans",
+    "smax": 11,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     547,
+     387,
+     560,
+     400
+    ],
+    "t": "B",
+    "f": "serif",
+    "smax": 11
+   }
+  ]
+ },
+ "p239_89.webp": {
+  "items": [
+   {
+    "box": [
+     140,
+     34,
+     622,
+     128
+    ],
+    "t": "CAVITY DIGESTION (intestinal lumen)\npancreatic enzymes:\npolymers → oligomers",
+    "f": "dv",
+    "smax": 26,
+    "pad": 4
+   },
+   {
+    "box": [
+     36,
+     204,
+     725,
+     355
+    ],
+    "t": "MEMBRANE (PARIETAL) DIGESTION\nmembrane of glycocalyx and microvilli:\nadsorbed and membrane-bound\nenzymes (disaccharidases,\naminopeptidases) — oligomers → monomers",
+    "f": "dv",
+    "smax": 26,
+    "pad": 4
+   },
+   {
+    "box": [
+     118,
+     430,
+     644,
+     527
+    ],
+    "t": "ABSORPTION\nmonomers are transported into enterocytes\n(the digestion–absorption “conveyor”)",
+    "f": "dv",
+    "smax": 26,
+    "pad": 4
+   },
+   {
+    "box": [
+     124,
+     601,
+     637,
+     697
+    ],
+    "t": "INTRACELLULAR DIGESTION\nin the enterocyte cytoplasm\ndi- and tripeptides → amino acids",
+    "f": "dv",
+    "smax": 26,
+    "pad": 4
+   }
+  ]
+ },
+ "p240_90.webp": {
+  "items": [
+   {
+    "box": [
+     126,
+     8,
+     306,
+     34
+    ],
+    "t": "Glucose, galactose + Na⁺ (SGLT1 —\nsecondary active transport)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     150,
+     64,
+     288,
+     89
+    ],
+    "t": "Fructose (GLUT5 —\nfacilitated diffusion)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     150,
+     93,
+     290,
+     117
+    ],
+    "t": "Amino acids + Na⁺;\ndi-, tripeptides + H⁺ (PepT1)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     150,
+     128,
+     288,
+     152
+    ],
+    "t": "Micelles: fatty acids,\nmonoglycerides (diffusion)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     18,
+     82,
+     110,
+     97
+    ],
+    "t": "Intestinal lumen",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     340,
+     82,
+     456,
+     95
+    ],
+    "t": "Enterocyte",
+    "f": "dv",
+    "smax": 10,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     486,
+     38,
+     656,
+     61
+    ],
+    "t": "Monosaccharides (GLUT2),\namino acids → portal vein",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     508,
+     71,
+     632,
+     95
+    ],
+    "t": "Chylomicrons → lymph\n(lacteals)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     508,
+     99,
+     632,
+     122
+    ],
+    "t": "Na⁺/K⁺-ATPase:\ncreates the Na⁺ gradient",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     668,
+     82,
+     742,
+     96
+    ],
+    "t": "Blood / lymph",
+    "f": "dv",
+    "smax": 10
+   }
+  ]
  }
 }
