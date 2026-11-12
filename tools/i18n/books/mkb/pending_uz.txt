@@ -1,0 +1,31 @@
+# Manba (uz) xatolari — mkb_fix_source.py ga qo'shiladi. Format: kalit | muammo | tuzatish
+s0281,s0365,s0422 | "Sil–Nelsen" (s0430, s0467 da "Sil–Nilsen") — imlo bir xil emas | hammasi "Sil–Nilsen"
+s0455 | "Leffler" (s0464 da "Lyoffler") | "Lyoffler"
+s0368 | "Neyser" (s0430, s0464 da "Neysser") | "Neysser"
+s0585 | "Leffler" (s0464 da "Lyoffler") | "Lyoffler"
+s0783 | "IFL" — noaniq qisqartma (IFA yoki RIF bo‘lishi kerak, s0734 da "immunofluoressensiya") | aniqlashtirish kerak
+s1393,s1412 | Kligler muhiti "uch qandli" deyilgan, lekin tarkibida 2 ta qand (glyukoza, laktoza) sanalgan — Kligler = ikki qandli temirli agar (uch qandli — TSI) | "uch qandli" → "ikki qandli" (en tarjima shu tuzatilgan variantga mos yozilgan)
+s1859 "chorlamchi ammoniy birikmalari" -> "to‘rtlamchi ammoniy birikmalari" (quaternary ammonium compounds)
+s4142 "markyori" (typo) -> "markeri" (marker)
+s4041 question has no answer options in source (volutin granule detection method)
+s4215 "markyori" (typo) -> "markeri" (marker)
+s4278 "markyori" (typo) -> "markeri"
+s4385 "chayqaluvchi" (rocking) -- likely means "gull-wing" (chayka); translated as gull-wing
+s4431 question has no answer options in source (lactose-positive colony on Endo)
+s4637-s4639 questions have no answer options in source (flagellation type, enrichment medium, test)
+s4773 Proteus row: genus name cell missing in source table 22.2
+s4809/s4818/s4834 questions have no answer options in source
+s4954 Table 23.2 first row: causative agent name cell (Proteus) missing in source
+s5529 Table 26.1 endemic typhus row: vector (flea) cell missing in source
+s5419 question has no answer options in source
+s5576 "S, C yoki \"S\" harfi" -- duplicate S (likely "S, C yoki \"C\"" or similar); translated literally
+s5674 question has no answer options in source
+s5822 question has no answer options in source (classic system for propagating influenza virus)
+s5869 table row: complication of influenza has no description in source
+s6271/s6274/s6310: answer-option lists incomplete (only 2 of 3-5 options present)
+s6276: question has no answer options at all
+s6301: stray line "Gepatit D" between question blocks (looks like a leftover heading)
+s6458: options lack the correct answer (double-stranded DNA)
+s6474: options lack the correct answer (lymphocytes)
+s6475/s6476: option lists incomplete
+s6509: only one option present (Mantu test); correct answer PCR missing

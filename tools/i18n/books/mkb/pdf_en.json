@@ -1,0 +1,152 @@
+{
+  "lang": "en",
+  "out": "data/en/books/mkb.pdf",
+  "pdf_title": "Microbiology, Virology and Immunology: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Microbiology, Virology and Immunology — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/mkb/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Microbiology, Virology and Immunology"
+    ],
+    "title": "MICROBIOLOGY, VIROLOGY AND IMMUNOLOGY",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Microbiology, Virology and Immunology: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+    "",
+    "This manual covers the 30 practical-class topics of the subject “Microbiology, Virology and Immunology” in a single system and consists of two parts. Part I (topics 1–15), based on the calendar-thematic plan of the 2026–2027 academic year, covers general microbiology, virology and immunology: the morphology and structure of microbes, staining methods, physiology and isolation of pure cultures, identification, sanitary microbiology, antibiotics, normal microflora, infection and genetics, general virology, innate and adaptive immunity, and serologic reactions. Part II (topics 16–30), based on the plan of the 2025–2026 academic year, covers systematic bacteriology and virology — the causative agents of purulent, wound, airborne, intestinal, zoonotic, sexually transmitted and vector-borne infections, as well as respiratory, enteric, blood-borne, herpes and pox viruses.",
+    "Each topic includes an independent-work topic (TMI), colored boxes (Remember, Clinical significance, Memory aid, Caution), tables, laboratory diagnostic algorithms, review questions, 15 test questions, 3 clinical cases and a quick review table. The answers to the tests are given at the end of the book.",
+    "The manual is based on the textbooks of Muhamedov I.M., Aliyev Sh.R. et al. (Microbiology, Virology and Immunology, 2019), Aliyev Sh.R., Muhamedov I.M., Nuruzova Z.A. et al. (A manual for laboratory classes in microbiology, 2013), Zverev V.V., Boychenko M.N. and Borisov L.B., as well as Rapid Review Microbiology and Immunology, Kaplan USMLE Step 1 Immunology and Microbiology and other sources. The photomicrographs and diagrams were taken from these textbooks, with the source given under each; the remaining diagrams were drawn by the compiler.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before applying the clinical information in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for students of the general medicine and fundamental medicine faculties of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Microbiology, virology and immunology are among the foundation sciences of medicine. A physician works with a world that cannot be seen but causes disease: bacteria, viruses, fungi, protozoa and the immune system that stands against them. This world can be “seen” only in the laboratory — by staining a smear, plating a colony, observing a biochemical reaction and measuring antibiotic susceptibility. That is why the practical class in this subject is no less important than the textbook: it is here that the student walks, by their own hand, the algorithm for identifying a causative agent — the path from the specimen to the diagnosis."
+    },
+    {
+      "type": "p",
+      "text": "This manual covers the 30 practical-class topics of the subject in one integrated system and consists of two parts:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Part I** — general microbiology, virology and immunology (topics 1–15, based on the calendar-thematic plan of the 2026–2027 academic year): the morphology and structure of microbes, staining methods, physiology and isolation of pure cultures, identification, sanitary microbiology, antimicrobial factors, normal microflora, infection and genetics, general virology and immunology.",
+        "**Part II** — systematic microbiology and virology (topics 16–30, based on the plan of the 2025–2026 academic year): the causative agents of purulent, wound, airborne, intestinal, zoonotic, sexually transmitted and vector-borne infections, as well as respiratory, enteric, blood-borne, herpes and pox viruses."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The two parts complement each other: a method learned in the general part (Gram staining, isolation of a pure culture, a serologic reaction, PCR) is applied to a particular causative agent in the systematic part. For this reason cross-references are given in the text — for example, the link of diphtheria toxin to a phage ties in with the genetics in topic 11, and the antibiogram with topic 9."
+    },
+    {
+      "type": "p",
+      "text": "Each chapter has the same structure:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Learning objectives** — what you should know and be able to do after this class.",
+        "**Theory** — the main concepts of the topic, with tables, diagrams and figures taken from textbooks. Four kinds of colored boxes appear in the text: **Remember** (key information that must be memorized), **Clinical significance** (links theory with practice), **Memory aid** (a mnemonic), **Caution** (a frequent mistake or an important warning).",
+        "**Independent work (TMI)** — the additional topic given in the plan.",
+        "**Practical skill** — a step-by-step algorithm of a laboratory procedure.",
+        "**Review questions**, test questions (15 in each chapter) and clinical cases (with answers).",
+        "**Quick review table** — for revising at a glance before the exam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Most of the figures are taken from the main textbooks, with the source shown under each; some were drawn by the compiler as diagrams."
+    },
+    {
+      "type": "p",
+      "text": "The manual does not replace the main textbooks, but it makes preparation for the practical class easier and brings scattered information into one system. The treatment and prophylaxis information in the text is given for general orientation: practical decisions are always made on the basis of current protocols and a physician’s orders."
+    },
+    {
+      "type": "p",
+      "text": "I wish you success."
+    },
+    {
+      "type": "p",
+      "text": "**The compiler**"
+    }
+  ],
+  "parts": [
+    {
+      "before": 1,
+      "title": "PART I",
+      "sub": "GENERAL MICROBIOLOGY, VIROLOGY AND IMMUNOLOGY"
+    },
+    {
+      "before": 16,
+      "title": "PART II",
+      "sub": "SYSTEMATIC MICROBIOLOGY AND VIROLOGY"
+    }
+  ],
+  "numbered": true,
+  "skills_inline": [
+    5,
+    6,
+    9,
+    11
+  ],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "goals_intro": "In this class the student will master the following:",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Question:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Topic {n} — key concepts",
+    "q": "Concept",
+    "a": "Essence",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    "Muhamedov I.M., Aliyev Sh.R., Rizayev J.A., Xo‘jayeva Sh.A. Mikrobiologiya, virusologiya va immunologiya [Microbiology, Virology and Immunology]. — Tashkent: Yangi asr avlodi, 2019. — 576 p.",
+    "Aliyev Sh.R., Muhamedov I.M., Nuruzova Z.A., Xo‘jayeva Sh.A., Davurov A.M., Rasulov F.X. Mikrobiologiyadan laboratoriya mashg‘ulotlariga doir qo‘llanma [A manual for laboratory classes in microbiology]. — Tashkent: Yangi asr avlodi, 2013.",
+    "Mikrobiologiya va mikrobiologik tekshirish usullari [Microbiology and microbiological examination methods] (study manual). — Tashkent.",
+    "Mikrobiologiya, immunologiya va virusologiya [Microbiology, Immunology and Virology] (study manual). — Tashkent.",
+    "Зверев В.В., Бойченко М.Н. Медицинская микробиология, вирусология и иммунология [Medical Microbiology, Virology and Immunology]. — Moscow: GEOTAR-Media.",
+    "Борисов Л.Б. Медицинская микробиология, вирусология, иммунология [Medical Microbiology, Virology, Immunology]. — Moscow: MIA.",
+    "Хаитов Р.М. Иммунология [Immunology]. — Moscow: GEOTAR-Media.",
+    "Rosenthal K.S., Tan M.J. Rapid Review Microbiology and Immunology. — Elsevier.",
+    "USMLE Step 1 Lecture Notes: Immunology and Microbiology. — Kaplan Medical, 2020.",
+    "Microbiology and Immunology (PrepLadder). — Lecture notes.",
+    "Levinson W. Review of Medical Microbiology and Immunology. — McGraw-Hill.",
+    "Bergey’s Manual of Determinative Bacteriology. — Williams & Wilkins.",
+    "Ministry of Health of the Republic of Uzbekistan. Calendar-thematic plan of the subject Microbiology, Virology and Immunology (2026–2027 academic year). Faculties of General and Fundamental Medicine, 2nd year, 4th semester.",
+    "Ministry of Health of the Republic of Uzbekistan. Calendar-thematic plan of the subject Microbiology, Virology and Immunology (2025–2026 academic year). Faculty of General Medicine."
+  ],
+  "refs_note": "**Sources of figures.** The photomicrographs, diagrams and diagnostic algorithms in the manual were taken mainly from sources [1] and [2]; the source is shown under each figure. The figure showing the structure of the light microscope was taken from open internet sources, and its labels were translated."
+}

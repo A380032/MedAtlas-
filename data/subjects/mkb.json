@@ -809,7 +809,7 @@
        "type": "list",
        "ordered": false,
        "items": [
-        "**Kislotaga chidamli** bakteriyalar (mikobakteriyalar — sil, moxov): devorida ko‘p **mikol kislota** va mum bor; ular Gram bilan yomon bo‘yaladi, shuning uchun **Sil–Nelsen (Ziehl–Neelsen)** usulida bo‘yaladi (qizil tayoqchalar ko‘k fonda).",
+        "**Kislotaga chidamli** bakteriyalar (mikobakteriyalar — sil, moxov): devorida ko‘p **mikol kislota** va mum bor; ular Gram bilan yomon bo‘yaladi, shuning uchun **Sil–Nilsen (Ziehl–Neelsen)** usulida bo‘yaladi (qizil tayoqchalar ko‘k fonda).",
         "**Mikoplazmalar** — hujayra devori umuman yo‘q; shakli o‘zgaruvchan, beta-laktam antibiotiklarga tabiiy chidamli.",
         "**L-shakllar** — devori qisman yo‘qolgan (masalan, penitsillin ta’sirida) vaqtinchalik shakllar."
        ]
@@ -1031,10 +1031,10 @@
      "q": "Mikobakteriyalarni bo‘yashda qo‘llaniladigan usul:",
      "options": [
       "Gram",
-      "Sil–Nelsen (Ziehl–Neelsen)",
+      "Sil–Nilsen (Ziehl–Neelsen)",
       "Burri",
       "Ojeshko",
-      "Neyser"
+      "Neysser"
      ],
      "answer": 1
     },
@@ -1152,7 +1152,7 @@
     },
     {
      "front": "Devorisiz / kislotaga chidamli",
-     "back": "Mikoplazma (devorsiz); mikobakteriya (Sil–Nelsen)"
+     "back": "Mikoplazma (devorsiz); mikobakteriya (Sil–Nilsen)"
     },
     {
      "front": "Nomenklatura",
@@ -1245,7 +1245,7 @@
          "Flagellin oqsili",
          "Harakat, kemotaksis",
          "Ichak tayoqchasi, salmonella, vibrion",
-         "Osilgan tomchi, yarim suyuq agar, Leffler"
+         "Osilgan tomchi, yarim suyuq agar, Lyoffler"
         ],
         [
          "Pili (fimbriya)",
@@ -1663,7 +1663,7 @@
       "Burri–Gins",
       "Ojeshko",
       "Romanovskiy–Gimza",
-      "Leffler"
+      "Lyoffler"
      ],
      "answer": 2
     },
@@ -3982,7 +3982,7 @@
       },
       {
        "type": "p",
-       "text": "**Kligler muhiti (uch qandli temirli muhit)** — bitta probirkada ko‘p ma’lumot beradigan muhit. Tarkibida glyukoza (kam), laktoza (ko‘p), temir tuzi va indikator bor; probirka qiya yuza (aerob) va ustun (anaerob) qismidan iborat."
+       "text": "**Kligler muhiti (ikki qandli temirli muhit)** — bitta probirkada ko‘p ma’lumot beradigan muhit. Tarkibida glyukoza (kam), laktoza (ko‘p), temir tuzi va indikator bor; probirka qiya yuza (aerob) va ustun (anaerob) qismidan iborat."
       },
       {
        "type": "table",
@@ -4032,7 +4032,7 @@
        "w": 860,
        "h": 524,
        "label": "Rasm 7.1",
-       "caption": "Uch qandli Kligler muhitida ichak guruhi bakteriyalarining fermentativ faolligi: turli natijalar (kislota, gaz, H₂S). Manba: Aliyev Sh.R. va boshq., 2013."
+       "caption": "Ikki qandli Kligler muhitida ichak guruhi bakteriyalarining fermentativ faolligi: turli natijalar (kislota, gaz, H₂S). Manba: Aliyev Sh.R. va boshq., 2013."
       },
       {
        "type": "box",
@@ -5235,7 +5235,7 @@
       },
       {
        "type": "p",
-       "text": "**Dezinfeksiyalovchi va antiseptik moddalar guruhlari:** galogenlar (xlor, yod preparatlari), spirtlar (70% etanol eng samarali), oksidlovchilar (vodorod peroksid, kaliy permanganat), aldegidlar (formaldegid, glutaraldegid), fenollar, og‘ir metall tuzlari, yuza-faol moddalar (xlorgeksidin, chorlamchi ammoniy birikmalari), bo‘yoqlar (brilliant yashili)."
+       "text": "**Dezinfeksiyalovchi va antiseptik moddalar guruhlari:** galogenlar (xlor, yod preparatlari), spirtlar (70% etanol eng samarali), oksidlovchilar (vodorod peroksid, kaliy permanganat), aldegidlar (formaldegid, glutaraldegid), fenollar, og‘ir metall tuzlari, yuza-faol moddalar (xlorgeksidin, to‘rtlamchi ammoniy birikmalari), bo‘yoqlar (brilliant yashili)."
       },
       {
        "type": "box",
@@ -9242,7 +9242,7 @@
      "blocks": [
       {
        "type": "p",
-       "text": "T-limfotsitlar suyak ko‘migida hosil bo‘lib, **timusda** yetiladi. Antigenni **faqat MHC bilan birgalikda** taniydi (T-hujayra retseptori — TCR orqali). Umumiy markyori — **CD3** (TCR bilan bog‘langan kompleks)."
+       "text": "T-limfotsitlar suyak ko‘migida hosil bo‘lib, **timusda** yetiladi. Antigenni **faqat MHC bilan birgalikda** taniydi (T-hujayra retseptori — TCR orqali). Umumiy markeri — **CD3** (TCR bilan bog‘langan kompleks)."
       },
       {
        "type": "table",
@@ -9649,7 +9649,7 @@
    ],
    "quiz": [
     {
-     "q": "Barcha T-limfotsitlarning umumiy markyori:",
+     "q": "Barcha T-limfotsitlarning umumiy markeri:",
      "options": [
       "CD19",
       "CD3",
@@ -9660,7 +9660,7 @@
      "answer": 1
     },
     {
-     "q": "T-xelperlarning markyori va ishlaydigan MHC sinfi:",
+     "q": "T-xelperlarning markeri va ishlaydigan MHC sinfi:",
      "options": [
       "CD8, MHC I",
       "CD4, MHC II",
@@ -9704,7 +9704,7 @@
      "answer": 1
     },
     {
-     "q": "B-limfotsitlarning markyori:",
+     "q": "B-limfotsitlarning markeri:",
      "options": [
       "CD3",
       "CD19, CD20",
@@ -9991,7 +9991,7 @@
        "type": "list",
        "ordered": false,
        "items": [
-        "**Fermentlar:** **plazmakoagulaza** (fibrin qobiq — fagotsitozdan himoya, *S. aureus* ning asosiy markyori), gialuronidaza, fibrinolizin, letsitinaza, DNK-aza, beta-laktamaza;",
+        "**Fermentlar:** **plazmakoagulaza** (fibrin qobiq — fagotsitozdan himoya, *S. aureus* ning asosiy markeri), gialuronidaza, fibrinolizin, letsitinaza, DNK-aza, beta-laktamaza;",
         "**Toksinlar:** gemolizinlar (α, β, γ, δ), **leykotsidin**, **eksfoliativ toksin** (teri shilinish sindromi), **toksik shok sindromi toksini (TSST-1)** — superantigen, **enterotoksinlar** (A–E; termostabil — ovqatdan zaharlanish, 23-mavzu);",
         "**Yuza tuzilmalari:** **A oqsili** (IgG ning Fc qismiga bog‘lanib, opsonizatsiyani buzadi), teyxoy kislotalar, mikrokapsula."
        ]
@@ -11872,7 +11872,7 @@
        "type": "list",
        "ordered": false,
        "items": [
-        "**Kord faktor** (tregaloza-6,6-dimikolat) — virulentlikning asosiy markyori; fagosoma-lizosoma qo‘shilishini to‘xtatadi, makrofaglarni shikastlaydi;",
+        "**Kord faktor** (tregaloza-6,6-dimikolat) — virulentlikning asosiy markeri; fagosoma-lizosoma qo‘shilishini to‘xtatadi, makrofaglarni shikastlaydi;",
         "**Sulfatidlar** — fagolizosoma hosil bo‘lishini bloklaydi;",
         "**Mikol kislotalar va lipidlar** — chidamlilik va granulema shakllanishi;",
         "**Tuberkulin (oqsil tabiatli antigen)** — immun-allergik javobni chaqiradi."
@@ -12144,7 +12144,7 @@
      "answer": 2
     },
     {
-     "q": "Virulentlikning asosiy markyori hisoblanadigan omil:",
+     "q": "Virulentlikning asosiy markeri hisoblanadigan omil:",
      "options": [
       "Kord faktor",
       "Kapsula",
@@ -12300,7 +12300,7 @@
     },
     {
      "front": "Kord faktor",
-     "back": "Virulentlik markyori; fagolizosomani bloklaydi"
+     "back": "Virulentlik markeri; fagolizosomani bloklaydi"
     },
     {
      "front": "Patogenez",

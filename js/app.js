@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.7";
+  const VERSION = "1.1.8";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -125,7 +125,7 @@
         case "table": return `<div class="tbl">${b.title ? `<p class="tbl-title">${inline(b.title)}</p>` : ""}
           <div class="table-wrap" tabindex="0"><table><thead><tr>${b.head.map((h) => `<th>${inline(h)}</th>`).join("")}</tr></thead>
           <tbody>${b.rows.map((r) => `<tr>${r.map((c) => `<td>${inline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div></div>`;
-        case "img": return `<figure class="fig"><img loading="lazy" decoding="async" src="${esc(b.src)}" width="${b.w || ""}" height="${b.h || ""}" alt="${esc(plain(b.label + " " + (b.caption || "")).trim())}" data-zoom>
+        case "img": return `<figure class="fig"><img loading="lazy" decoding="async" src="${esc(window.I18N.path(b.src))}" width="${b.w || ""}" height="${b.h || ""}" alt="${esc(plain(b.label + " " + (b.caption || "")).trim())}" data-zoom>
           ${b.label || b.caption ? `<figcaption>${b.label ? `<strong>${esc(b.label)}.</strong> ` : ""}${inline(b.caption || "")}</figcaption>` : ""}</figure>`;
         case "box": return `<aside class="box box-${esc(b.kind)}"><div class="box-label">${esc(BOX_LABEL[b.kind] || "")}</div>${renderBlocks(b.parts)}</aside>`;
         default: return "";
