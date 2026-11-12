@@ -3794,5 +3794,265 @@
     "s": 8
    }
   ]
+ },
+ "p138_47.webp": {
+  "items": [
+   {
+    "box": [
+     284,
+     9,
+     544,
+     32
+    ],
+    "t": "Frank–Starling curves",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     7,
+     140,
+     33,
+     335
+    ],
+    "t": "Systolic volume, ml",
+    "f": "dv",
+    "rot": 90,
+    "smax": 17
+   },
+   {
+    "box": [
+     448,
+     376,
+     734,
+     394
+    ],
+    "t": "sympathetic / adrenaline (inotropy ↑)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     448,
+     398,
+     520,
+     415
+    ],
+    "t": "normal",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     448,
+     419,
+     734,
+     437
+    ],
+    "t": "heart failure (inotropy ↓)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     150,
+     480,
+     680,
+     503
+    ],
+    "t": "End-diastolic pressure (ventricular filling), mm Hg",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p139_48.webp": {
+  "items": [
+   {
+    "box": [
+     548,
+     18,
+     633,
+     35
+    ],
+    "t": "n. vagus",
+    "f": "serif",
+    "smax": 15,
+    "a": "l"
+   },
+   {
+    "box": [
+     513,
+     43,
+     673,
+     60
+    ],
+    "t": "preganglionic fiber",
+    "f": "serif",
+    "smax": 15,
+    "a": "l"
+   },
+   {
+    "box": [
+     86,
+     114,
+     198,
+     132
+    ],
+    "t": "n. sympathicus",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     106,
+     162,
+     197,
+     226
+    ],
+    "t": "Efferent\nadrenergic\nneuron",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     644,
+     159,
+     740,
+     224
+    ],
+    "t": "Efferent\ncholinergic\nneuron",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     28,
+     238,
+     196,
+     281
+    ],
+    "t": "Renshaw inhibitory\ncell",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     589,
+     279,
+     675,
+     322
+    ],
+    "t": "Afferent\nneuron",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     583,
+     414,
+     661,
+     456
+    ],
+    "t": "Myocardial\ncell",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     148,
+     474,
+     311,
+     517
+    ],
+    "t": "Myocardial stretch\nreceptor",
+    "f": "serif",
+    "smax": 15
+   }
+  ]
+ },
+ "p141_49.webp": {
+  "items": [
+   {
+    "box": [
+     212,
+     42,
+     520,
+     68
+    ],
+    "t": "Arterial pressure rises",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     155,
+     153,
+     580,
+     207
+    ],
+    "t": "Baroreceptors of the aortic arch and\ncarotid sinus are stretched",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     145,
+     281,
+     585,
+     336
+    ],
+    "t": "Afferents: depressor nerve (X pair)\nand Hering's nerve (IX pair)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     103,
+     409,
+     633,
+     490
+    ],
+    "t": "Medulla: nucleus tractus solitarius →\nvagal nucleus is activated,\nvasomotor (pressor) center is inhibited",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     36,
+     575,
+     320,
+     630
+    ],
+    "t": "Vagus: HR decreases\n(negative chronotropy)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     384,
+     562,
+     727,
+     642
+    ],
+    "t": "Sympathetic effect decreases:\ncontractility and vascular\ntone fall",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     192,
+     715,
+     541,
+     795
+    ],
+    "t": "Cardiac output and peripheral\nresistance decrease —\npressure returns to normal",
+    "f": "dv",
+    "smax": 22
+   }
+  ]
  }
 }
