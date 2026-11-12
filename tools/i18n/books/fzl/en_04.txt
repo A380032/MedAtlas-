@@ -1,192 +1,190 @@
-s0665 A student stimulated the nerve of a nerve-muscle preparation with a current of 2 V — the muscle contracted. He then raised the voltage from zero to 4 V very slowly (over several seconds) — the muscle did not contract.
-s0666 Why did the stronger current not evoke a response? Which law does this illustrate?
-s0667 This is the gradient law and the phenomenon of accommodation. When the current rises slowly, the membrane depolarizes gradually; meanwhile the Na^+^ channels are inactivated, K^+^ permeability increases and the critical level of depolarization rises. As a result, even when the current exceeds the initial threshold, no regenerative Na^+^ current arises and no action potential appears. For excitation, the stimulus strength must rise quickly enough.
-s0668 A physiotherapist placed a direct current electrode over the painful area of a patient. A student asked: “Which pole should be placed over the painful area to reduce pain?”
-s0669 Which pole should be placed there, and why? Which law is this based on?
-s0670 The anode is placed over the painful area. According to Pflüger's polar law, the membrane under the anode is hyperpolarized (anelectrotonus), its potential moves away from the critical level and excitability decreases — pain receptors and fibers are excited less. Under the cathode, by contrast, excitability increases because of depolarization (catelectrotonus), so the cathode is used to stimulate muscles and nerves.
-s0671 Threshold strength
-s0672 The smallest strength that evokes excitation; inversely proportional to excitability
-s0673 Law of strength
-s0674 Whole muscle: the response grows as strength increases (up to maximal)
-s0675 “All-or-none”
-s0676 A single fiber and the heart: the response is constant, maximal
-s0677 Pessimum
-s0678 Decrease of the response to an excessively strong or frequent stimulus
-s0679 The smallest effective current strength with prolonged action
-s0680 The shortest time needed for a current of one rheobase
-s0681 Chronaxie
-s0682 The shortest time needed for a current of 2 rheobases (Lapicque)
-s0683 Accommodation
-s0684 Adaptation to a slowly rising stimulus; the CLD rises
-s0685 Polar law
-s0686 Excitation under the cathode on closing, under the anode on opening
-s0687 Depolarization under the cathode, excitability increases
-s0688 Hyperpolarization under the anode, excitability decreases
-s0689 Cathodal depression
-s0690 Decrease in excitability with prolonged action of the cathode (Verigo)
-s0691 Excitability 0; 0.5–1 ms in nerve, 250–300 ms in the heart
-s0692 Supernormal period
-s0693 After-depolarization — excitability increased
-s0694 Lability
-s0695 Maximum number of impulses per 1 s (Vvedensky); 500–1000 in nerve
-s0696 Physiology of nerve fibers and synapses
-s0697 To teach the student the structure and types of nerve fibers, the mechanisms and laws of conduction of excitation along them, the lability of nerve fibers and the phenomenon of parabiosis, and the structure and types of synapses and the mechanism of synaptic transmission of excitation (using the neuromuscular synapse as an example).
-s0698 the structure of the neuron and the nerve fiber, and the difference between myelinated and unmyelinated fibers;
-s0699 the Erlanger–Gasser classification of nerve fibers (groups A, B, C);
-s0700 the mechanism of continuous conduction in an unmyelinated fiber and saltatory conduction in a myelinated fiber;
-s0701 the laws of conduction of excitation in a nerve;
-s0702 N.E. Vvedensky's doctrine of parabiosis and the phases of parabiosis;
-s0703 the classification of synapses and the stages of transmission of excitation in a chemical synapse;
-s0704 the action of acetylcholine at the neuromuscular synapse and the end-plate potential;
-s0705 the properties of synapses and the effects of drugs and poisons on them.
-s0706 demonstrate bilateral conduction and isolated conduction in a nerve fiber experimentally;
-s0707 identify the phases of parabiosis in a nerve-muscle preparation;
-s0708 prove that a synapse fatigues faster than a nerve.
-s0709 Conduction velocity depends on the **diameter** of the fiber and its **myelination**: the thicker the fiber and the thicker its myelin, the higher the velocity. The fastest are Aα fibers (up to 120 m/s), the slowest are C fibers (0.5–2 m/s).
-s0710 Vvedensky regarded parabiosis as **a peculiar localized, persistent (stationary) state of excitation**. This doctrine shows **the unity of the processes of excitation and inhibition**: inhibition can be a special form of excitation.
-s0711 The neuromuscular synapse has a high **safety factor**: the EPP produced by one impulse is 3–4 times larger than needed for an action potential. Therefore, normally every motor impulse is sure to excite the muscle fiber.
-s0712 Steps of the synapse — **“Arrives–Enters–Releases–Binds–Opens–Breaks down”**: the impulse **arrives**, Ca^2+^ **enters**, the neurotransmitter is **released**, it **binds** to the receptor, the channel **opens**, the neurotransmitter is **broken down**.
-s0713 1. Structure of the neuron and nerve fibers
-s0714 The **neuron** is the structural and functional unit of the nervous system. It consists of a body (soma), short branching processes — **dendrites** (which receive information) — and one long process — the **axon** (which transmits information). The site where the axon leaves the body — the **axon hillock** (initial segment) — has the lowest threshold: this is where the action potential is generated (the trigger zone).
-s0715 A **nerve fiber** is an axon surrounded by glial cells (**Schwann cells** in the periphery, **oligodendrocytes** in the CNS). In myelinated fibers the Schwann cell wraps the axon in many layers, forming a lipid-rich **myelin sheath**. The myelin is interrupted every 1–2 mm; these sites are called **nodes of Ranvier**, and voltage-gated Na^+^ channels are packed very densely in them.
-s0716 Figure 3.1
-s0717 Structure of a myelinated nerve fiber: the myelin sheath and nodes of Ranvier (Alaviya O.T., 2018)
-s0718 Table 3.1. Classification of nerve fibers (after Erlanger–Gasser)
-s0719 Type
-s0720 Diameter, µm
-s0721 Velocity, m/s
-s0722 Myelin
-s0723 Function
-s0724 Aα
-s0725 Motor fibers of skeletal muscles, afferents from muscle spindles
-s0726 Aβ
-s0727 Afferents from skin mechanoreceptors (touch, pressure)
-s0728 Aγ
-s0729 Motor fibers to muscle spindles
-s0730 Aδ
-s0731 Afferents for fast (sharp) pain and temperature
-s0732 B
-s0733 Thin
-s0734 Preganglionic fibers of the autonomic nervous system
-s0735 C
-s0736 Slow (aching) pain, temperature; postganglionic sympathetic fibers
-s0737 2. Conduction of excitation in a nerve fiber
-s0738 The inner surface of an excited region is positive, while that of the neighboring unexcited region is negative. **Local (circular) currents** arise between them, depolarize the neighboring region to the critical level and evoke a new action potential in it. In this way excitation spreads **without decrement**.
-s0739 **In an unmyelinated fiber** conduction is **continuous**: each neighboring segment of the membrane is excited in turn; the velocity is low.
-s0740 **In a myelinated fiber** conduction is **saltatory (jumping)**: myelin acts as an electrical insulator, so the action potential is generated only at the nodes of Ranvier and “jumps” from one
-s0741 node to the next (even skipping 2–3 nodes). This increases the velocity 50-fold and saves energy (the Na^+^/K^+^ pump works only at the nodes).
-s0742 Figure 3.2
-s0743 Conduction of excitation: I — continuous in an unmyelinated fiber; II — saltatory in a myelinated fiber (Alaviya O.T., 2018)
-s0744 **Multiple sclerosis** and **Guillain–Barré syndrome** are demyelinating diseases. When myelin is destroyed, saltatory conduction is disturbed: impulses slow down or stop. The result is paralysis, sensory disturbances and impaired vision. Electroneuromyography reveals a decrease in conduction velocity.
-s0745 Laws of conduction of excitation in a nerve
-s0746 Table 3.2. Laws of conduction of excitation
-s0747 Law
-s0748 Content
-s0749 Proof / significance
-s0750 Anatomical and physiological integrity
-s0751 Conduction stops when the fiber is cut or its physiological state is disturbed (cooling, procaine (novocaine), ligation)
-s0752 The basis of local anesthesia
-s0753 Bilateral conduction
-s0754 If the middle of a fiber is stimulated, excitation spreads in both directions
-s0755 Biocurrents are recorded on both sides; in the body, synapses ensure one-way direction
-s0756 Isolated conduction
-s0757 Each fiber in a nerve conducts excitation separately, without passing it to neighboring fibers
-s0758 Precise innervation of each muscle and receptor; resistance of myelin and tissue fluid
-s0759 Relative indefatigability
-s0760 A nerve hardly fatigues even when stimulated for hours
-s0761 Little energy is spent per impulse; Vvedensky's experiment
-s0762 Conduction without decrement
-s0763 The action potential amplitude does not decrease along the fiber
-s0764 It is regenerated at every point
-s0765 3. Lability of the nerve and parabiosis
-s0766 N.E. Vvedensky (1901) established that when various damaging agents (KCl, procaine (novocaine), ether, cold) act on part of a nerve, its lability decreases and it responds to excitation in a peculiar way. This state
-s0767 was called **parabiosis** (“beside life”). Parabiosis is a reversible process: when the damaging agent is removed, nerve function is restored.
-s0768 Figure 3.3
-s0769 The parabiosis experiment (A) and the phases of parabiosis (B): 1 — muscle contraction; 2 — stimulus strength (Alaviya O.T., 2018)
-s0770 Table 3.3. Phases of parabiosis
-s0771 Response to a weak stimulus
-s0772 Response to a strong stimulus
-s0773 Mechanism
-s0774 1. Equalizing (provisional)
-s0775 Weakened — the same response to strong and weak stimuli
-s0776 Lability decreases; frequently arriving impulses fall into the refractory period
-s0777 2. Paradoxical
-s0778 A larger response to a weak stimulus
-s0779 A weak response or none at all to a strong stimulus
-s0780 Lability is reduced further; strong (frequent) impulses deeply inhibit the region
-s0781 3. Inhibitory
-s0782 No response
-s0783 Persistent depolarization — inactivation of Na^+^ channels; excitation is not conducted
-s0784 The phases of parabiosis are seen in local anesthesia: after injection of procaine (novocaine), strong painful stimuli are blocked first (paradoxical phase), then all impulses stop (inhibitory phase). As the anesthetic is absorbed, the phases pass in reverse order and sensation is restored.
-s0785 4. Synapses: structure and classification
-s0786 A **synapse** (Greek synapsis — connection; a term of C. Sherrington) is a special structure that transmits excitation from one cell to another. Every synapse consists of a **presynaptic membrane**, a **synaptic cleft** and a **postsynaptic membrane**.
-s0787 Table 3.4. Classification of synapses
-s0788 Types
-s0789 Location
-s0790 Central (in the CNS) and peripheral (neuromuscular, neuroglandular, in autonomic ganglia)
-s0791 Between which structures
-s0792 Axodendritic, axosomatic, axoaxonal, dendrodendritic
-s0793 Mode of transmission
-s0794 Chemical (via a neurotransmitter), electrical (via gap junctions — connexons), mixed
-s0795 Effect
-s0796 Excitatory and inhibitory
-s0797 Neurotransmitter
-s0798 Cholinergic (acetylcholine), adrenergic (norepinephrine), dopaminergic, serotonergic, GABAergic, glycinergic, glutamatergic, peptidergic
-s0799 In **electrical synapses** the synaptic cleft is very narrow (2–4 nm), and neighboring cells are connected directly through protein channels (connexons); excitation passes without delay and in both directions. They are found in cardiac muscle, smooth muscles and some parts of the CNS.
-s0800 5. Transmission of excitation in a chemical synapse
-s0801 Most synapses in the human body are **chemical** synapses. In them the synaptic cleft is 20–50 nm wide; the presynaptic terminal contains **synaptic vesicles** that store the neurotransmitter, and the postsynaptic membrane carries **receptors** sensitive to it.
-s0802 Figure 3.4
-s0803 Stages of transmission of excitation in a chemical synapse
-s0804 The amount of neurotransmitter in one vesicle is called a **quantum** (one quantum of acetylcholine ≈ 5–10 thousand molecules). Even at rest some vesicles are released spontaneously, producing small **miniature potentials**.
-s0805 The terminal of a motor neuron axon forms a **neuromuscular synapse (end plate)** with a skeletal muscle fiber. The neurotransmitter is **acetylcholine (ACh)**; the postsynaptic membrane carries **N-cholinergic receptors** (ligand-gated Na^+^/K^+^ channels).
-s0806 The action potential arrives at the presynaptic terminal, and Ca^2+^ channels open.
-s0807 Under the action of Ca^2+^, vesicles containing ACh undergo exocytosis (100–300 quanta per impulse).
-s0808 ACh binds to N-cholinergic receptors, cation channels open and Na^+^ enters.
-s0809 An **end-plate potential (EPP)** arises on the postsynaptic membrane — like the local response, it is graded and summates.
-s0810 The EPP depolarizes the adjacent muscle membrane to the critical level and an **action potential** arises — the muscle contracts.
-s0811 ACh is broken down within 1–2 ms by the enzyme **acetylcholinesterase (AChE)** into choline and acetic acid; choline returns to the presynaptic terminal and is used to synthesize new ACh.
-s0812 Figure 3.5
-s0813 Structure of the neuromuscular synapse and transmission of excitation in it (Alaviya O.T., 2018)
-s0814 Properties of chemical synapses
-s0815 **One-way conduction** — the neurotransmitter is released only from the presynaptic terminal, and the receptors are only on the postsynaptic membrane.
-s0816 **Synaptic delay** — 0.2–0.5 ms at each synapse (for release of the neurotransmitter, its diffusion and binding to the receptor).
-s0817 **Low lability** — 100–150 impulses/s.
-s0818 **Rapid fatigue** — depletion of the neurotransmitter store, desensitization of receptors.
-s0819 **High sensitivity to chemicals** — drugs and poisons act selectively on synapses.
-s0820 **Summation and facilitation** — with successive impulses, transmitter release increases because Ca^2+^ accumulates.
-s0821 Table 3.5. Substances acting on the neuromuscular synapse
-s0822 Site of action
-s0823 Substance
-s0824 Result
-s0825 Block of ACh release
-s0826 Botulinum toxin
-s0827 Flaccid paralysis (botulism)
-s0828 Competitive blockade of N-cholinergic receptors
-s0829 Curare, tubocurarine, atracurium
-s0830 Muscle relaxation (used in anesthesia)
-s0831 Depolarizing blockade
-s0832 Suxamethonium (succinylcholine, Ditilin)
-s0833 First fibrillation, then relaxation
-s0834 AChE inhibitors
-s0835 Neostigmine (Proserin) (reversible); organophosphorus compounds (irreversible)
-s0836 Accumulation of ACh; in therapeutic doses muscle strength increases, in poisoning — convulsions and paralysis
-s0837 Autoantibodies to receptors
-s0838 Myasthenia gravis
-s0839 Muscle fatigability and weakness
-s0840 **Myasthenia gravis** is an autoimmune disease in which autoantibodies are formed against N-cholinergic receptors. The number of receptors decreases, the EPP becomes smaller and the safety factor falls: muscles tire quickly (drooping eyelids, double vision, difficulty swallowing). Treatment uses AChE inhibitors (pyridostigmine), which increase the amount of ACh in the synapse.
-s0841 6. Laboratory work
-s0842 Experiment 1: demonstrating isolated conduction in a nerve
-s0843 Isolate the frog's sciatic nerve together with its branches to both legs (or, in one leg, observe the branches to the gastrocnemius and other muscles).
-s0844 Stimulate part of the nerve trunk and observe which muscles contract.
-s0845 Change the site of stimulation. **Expected results and analysis:** each time only the muscles innervated by the stimulated fibers contract; excitation does not pass to neighboring fibers. This proves the law of isolated conduction.
-s0846 Experiment 2: Vvedensky's parabiosis experiment
-s0847 Prepare a nerve-muscle preparation. Place a piece of cotton wool soaked in KCl or procaine solution on the middle part of the nerve (the parabiotic region).
-s0848 Place the stimulating electrodes above the parabiotic region (closer to the center).
-s0849 Every 1–2 minutes stimulate alternately with weak and strong stimuli and record the muscle contractions.
-s0850 Note the sequence of phases.
-s0851 Remove the cotton wool, wash the nerve with Ringer's solution and observe the recovery of function.
-s0852 **Expected results and analysis:** first the responses to strong and weak stimuli become equal (equalizing phase), then the response to a weak stimulus becomes larger than to a strong one (paradoxical phase), and finally there is no response at all (inhibitory phase). After washing, the phases pass in reverse order and conduction is restored — parabiosis is a reversible process.
-s0853 Experiment 3: relative indefatigability of the nerve and rapid fatigue of the synapse
-s0854 Stimulate the nerve of a nerve-muscle preparation for a long time at a frequency of 30–50 Hz.
-s0855 Wait until the muscle stops contracting (becomes fatigued).
-s0856 Immediately place the electrodes directly on the muscle and stimulate it. **Expected results and analysis:** the muscle that does not contract when stimulated through the nerve contracts again when stimulated directly. Hence neither the muscle nor the nerve is fatigued — the **neuromuscular synapse** fatigues first (its neurotransmitter store is depleted). This shows that the synapse has the lowest lability.
+s0661 A student stimulated the nerve of a nerve-muscle preparation with a current of 2 V — the muscle contracted. He then raised the voltage from zero to 4 V very slowly (over several seconds) — the muscle did not contract.
+s0662 Why did the stronger current not evoke a response? Which law does this illustrate?
+s0663 This is the gradient law and the phenomenon of accommodation. When the current rises slowly, the membrane depolarizes gradually; meanwhile the Na^+^ channels are inactivated, K^+^ permeability increases and the critical level of depolarization rises. As a result, even when the current exceeds the initial threshold, no regenerative Na^+^ current arises and no action potential appears. For excitation, the stimulus strength must rise quickly enough.
+s0664 A physiotherapist placed a direct current electrode over the painful area of a patient. A student asked: “Which pole should be placed over the painful area to reduce pain?”
+s0665 Which pole should be placed there, and why? Which law is this based on?
+s0666 The anode is placed over the painful area. According to Pflüger's polar law, the membrane under the anode is hyperpolarized (anelectrotonus), its potential moves away from the critical level and excitability decreases — pain receptors and fibers are excited less. Under the cathode, by contrast, excitability increases because of depolarization (catelectrotonus), so the cathode is used to stimulate muscles and nerves.
+s0667 Threshold strength
+s0668 The smallest strength that evokes excitation; inversely proportional to excitability
+s0669 Law of strength
+s0670 Whole muscle: the response grows as strength increases (up to maximal)
+s0671 “All-or-none”
+s0672 A single fiber and the heart: the response is constant, maximal
+s0673 Pessimum
+s0674 Decrease of the response to an excessively strong or frequent stimulus
+s0675 The smallest effective current strength with prolonged action
+s0676 The shortest time needed for a current of one rheobase
+s0677 Chronaxie
+s0678 The shortest time needed for a current of 2 rheobases (Lapicque)
+s0679 Accommodation
+s0680 Adaptation to a slowly rising stimulus; the CLD rises
+s0681 Polar law
+s0682 Excitation under the cathode on closing, under the anode on opening
+s0683 Depolarization under the cathode, excitability increases
+s0684 Hyperpolarization under the anode, excitability decreases
+s0685 Cathodal depression
+s0686 Decrease in excitability with prolonged action of the cathode (Verigo)
+s0687 Excitability 0; 0.5–1 ms in nerve, 250–300 ms in the heart
+s0688 Supernormal period
+s0689 After-depolarization — excitability increased
+s0690 Lability
+s0691 Maximum number of impulses per 1 s (Vvedensky); 500–1000 in nerve
+s0692 Physiology of nerve fibers and synapses
+s0693 To teach the student the structure and types of nerve fibers, the mechanisms and laws of conduction of excitation along them, the lability of nerve fibers and the phenomenon of parabiosis, and the structure and types of synapses and the mechanism of synaptic transmission of excitation (using the neuromuscular synapse as an example).
+s0694 the structure of the neuron and the nerve fiber, and the difference between myelinated and unmyelinated fibers;
+s0695 the Erlanger–Gasser classification of nerve fibers (groups A, B, C);
+s0696 the mechanism of continuous conduction in an unmyelinated fiber and saltatory conduction in a myelinated fiber;
+s0697 the laws of conduction of excitation in a nerve;
+s0698 N.E. Vvedensky's doctrine of parabiosis and the phases of parabiosis;
+s0699 the classification of synapses and the stages of transmission of excitation in a chemical synapse;
+s0700 the action of acetylcholine at the neuromuscular synapse and the end-plate potential;
+s0701 the properties of synapses and the effects of drugs and poisons on them.
+s0702 demonstrate bilateral conduction and isolated conduction in a nerve fiber experimentally;
+s0703 identify the phases of parabiosis in a nerve-muscle preparation;
+s0704 prove that a synapse fatigues faster than a nerve.
+s0705 Conduction velocity depends on the **diameter** of the fiber and its **myelination**: the thicker the fiber and the thicker its myelin, the higher the velocity. The fastest are Aα fibers (up to 120 m/s), the slowest are C fibers (0.5–2 m/s).
+s0706 Vvedensky regarded parabiosis as **a peculiar localized, persistent (stationary) state of excitation**. This doctrine shows **the unity of the processes of excitation and inhibition**: inhibition can be a special form of excitation.
+s0707 The neuromuscular synapse has a high **safety factor**: the EPP produced by one impulse is 3–4 times larger than needed for an action potential. Therefore, normally every motor impulse is sure to excite the muscle fiber.
+s0708 Steps of the synapse — **“Arrives–Enters–Releases–Binds–Opens–Breaks down”**: the impulse **arrives**, Ca^2+^ **enters**, the neurotransmitter is **released**, it **binds** to the receptor, the channel **opens**, the neurotransmitter is **broken down**.
+s0709 1. Structure of the neuron and nerve fibers
+s0710 The **neuron** is the structural and functional unit of the nervous system. It consists of a body (soma), short branching processes — **dendrites** (which receive information) — and one long process — the **axon** (which transmits information). The site where the axon leaves the body — the **axon hillock** (initial segment) — has the lowest threshold: this is where the action potential is generated (the trigger zone).
+s0711 A **nerve fiber** is an axon surrounded by glial cells (**Schwann cells** in the periphery, **oligodendrocytes** in the CNS). In myelinated fibers the Schwann cell wraps the axon in many layers, forming a lipid-rich **myelin sheath**. The myelin is interrupted every 1–2 mm; these sites are called **nodes of Ranvier**, and voltage-gated Na^+^ channels are packed very densely in them.
+s0712 Figure 3.1
+s0713 Structure of a myelinated nerve fiber: the myelin sheath and nodes of Ranvier (Alaviya O.T., 2018)
+s0714 Table 3.1. Classification of nerve fibers (after Erlanger–Gasser)
+s0715 Type
+s0716 Diameter, µm
+s0717 Velocity, m/s
+s0718 Myelin
+s0719 Function
+s0720 Aα
+s0721 Motor fibers of skeletal muscles, afferents from muscle spindles
+s0722 Aβ
+s0723 Afferents from skin mechanoreceptors (touch, pressure)
+s0724 Aγ
+s0725 Motor fibers to muscle spindles
+s0726 Aδ
+s0727 Afferents for fast (sharp) pain and temperature
+s0728 B
+s0729 Thin
+s0730 Preganglionic fibers of the autonomic nervous system
+s0731 C
+s0732 Slow (aching) pain, temperature; postganglionic sympathetic fibers
+s0733 2. Conduction of excitation in a nerve fiber
+s0734 The inner surface of an excited region is positive, while that of the neighboring unexcited region is negative. **Local (circular) currents** arise between them, depolarize the neighboring region to the critical level and evoke a new action potential in it. In this way excitation spreads **without decrement**.
+s0735 **In an unmyelinated fiber** conduction is **continuous**: each neighboring segment of the membrane is excited in turn; the velocity is low.
+s0736 **In a myelinated fiber** conduction is **saltatory (jumping)**: myelin acts as an electrical insulator, so the action potential is generated only at the nodes of Ranvier and “jumps” from one node to the next (even skipping 2–3 nodes). This increases the velocity 50-fold and saves energy (the Na^+^/K^+^ pump works only at the nodes).
+s0737 Figure 3.2
+s0738 Conduction of excitation: I — continuous in an unmyelinated fiber; II — saltatory in a myelinated fiber (Alaviya O.T., 2018)
+s0739 **Multiple sclerosis** and **Guillain–Barré syndrome** are demyelinating diseases. When myelin is destroyed, saltatory conduction is disturbed: impulses slow down or stop. The result is paralysis, sensory disturbances and impaired vision. Electroneuromyography reveals a decrease in conduction velocity.
+s0740 Laws of conduction of excitation in a nerve
+s0741 Table 3.2. Laws of conduction of excitation
+s0742 Law
+s0743 Content
+s0744 Proof / significance
+s0745 Anatomical and physiological integrity
+s0746 Conduction stops when the fiber is cut or its physiological state is disturbed (cooling, procaine (novocaine), ligation)
+s0747 The basis of local anesthesia
+s0748 Bilateral conduction
+s0749 If the middle of a fiber is stimulated, excitation spreads in both directions
+s0750 Biocurrents are recorded on both sides; in the body, synapses ensure one-way direction
+s0751 Isolated conduction
+s0752 Each fiber in a nerve conducts excitation separately, without passing it to neighboring fibers
+s0753 Precise innervation of each muscle and receptor; resistance of myelin and tissue fluid
+s0754 Relative indefatigability
+s0755 A nerve hardly fatigues even when stimulated for hours
+s0756 Little energy is spent per impulse; Vvedensky's experiment
+s0757 Conduction without decrement
+s0758 The action potential amplitude does not decrease along the fiber
+s0759 It is regenerated at every point
+s0760 3. Lability of the nerve and parabiosis
+s0761 N.E. Vvedensky (1901) established that when various damaging agents (KCl, procaine (novocaine), ether, cold) act on part of a nerve, its lability decreases and it responds to excitation in a peculiar way. This state was called **parabiosis** (“beside life”). Parabiosis is a reversible process: when the damaging agent is removed, nerve function is restored.
+s0762 Figure 3.3
+s0763 The parabiosis experiment (A) and the phases of parabiosis (B): 1 — muscle contraction; 2 — stimulus strength (Alaviya O.T., 2018)
+s0764 Table 3.3. Phases of parabiosis
+s0765 Response to a weak stimulus
+s0766 Response to a strong stimulus
+s0767 Mechanism
+s0768 1. Equalizing (provisional)
+s0769 Weakened — the same response to strong and weak stimuli
+s0770 Lability decreases; frequently arriving impulses fall into the refractory period
+s0771 2. Paradoxical
+s0772 A larger response to a weak stimulus
+s0773 A weak response or none at all to a strong stimulus
+s0774 Lability is reduced further; strong (frequent) impulses deeply inhibit the region
+s0775 3. Inhibitory
+s0776 No response
+s0777 Persistent depolarization — inactivation of Na^+^ channels; excitation is not conducted
+s0778 The phases of parabiosis are seen in local anesthesia: after injection of procaine (novocaine), strong painful stimuli are blocked first (paradoxical phase), then all impulses stop (inhibitory phase). As the anesthetic is absorbed, the phases pass in reverse order and sensation is restored.
+s0779 4. Synapses: structure and classification
+s0780 A **synapse** (Greek synapsis — connection; a term of C. Sherrington) is a special structure that transmits excitation from one cell to another. Every synapse consists of a **presynaptic membrane**, a **synaptic cleft** and a **postsynaptic membrane**.
+s0781 Table 3.4. Classification of synapses
+s0782 Types
+s0783 Location
+s0784 Central (in the CNS) and peripheral (neuromuscular, neuroglandular, in autonomic ganglia)
+s0785 Between which structures
+s0786 Axodendritic, axosomatic, axoaxonal, dendrodendritic
+s0787 Mode of transmission
+s0788 Chemical (via a neurotransmitter), electrical (via gap junctions — connexons), mixed
+s0789 Effect
+s0790 Excitatory and inhibitory
+s0791 Neurotransmitter
+s0792 Cholinergic (acetylcholine), adrenergic (norepinephrine), dopaminergic, serotonergic, GABAergic, glycinergic, glutamatergic, peptidergic
+s0793 In **electrical synapses** the synaptic cleft is very narrow (2–4 nm), and neighboring cells are connected directly through protein channels (connexons); excitation passes without delay and in both directions. They are found in cardiac muscle, smooth muscles and some parts of the CNS.
+s0794 5. Transmission of excitation in a chemical synapse
+s0795 Most synapses in the human body are **chemical** synapses. In them the synaptic cleft is 20–50 nm wide; the presynaptic terminal contains **synaptic vesicles** that store the neurotransmitter, and the postsynaptic membrane carries **receptors** sensitive to it.
+s0796 Figure 3.4
+s0797 Stages of transmission of excitation in a chemical synapse
+s0798 The amount of neurotransmitter in one vesicle is called a **quantum** (one quantum of acetylcholine ≈ 5–10 thousand molecules). Even at rest some vesicles are released spontaneously, producing small **miniature potentials**.
+s0799 The terminal of a motor neuron axon forms a **neuromuscular synapse (end plate)** with a skeletal muscle fiber. The neurotransmitter is **acetylcholine (ACh)**; the postsynaptic membrane carries **N-cholinergic receptors** (ligand-gated Na^+^/K^+^ channels).
+s0800 The action potential arrives at the presynaptic terminal, and Ca^2+^ channels open.
+s0801 Under the action of Ca^2+^, vesicles containing ACh undergo exocytosis (100–300 quanta per impulse).
+s0802 ACh binds to N-cholinergic receptors, cation channels open and Na^+^ enters.
+s0803 An **end-plate potential (EPP)** arises on the postsynaptic membrane — like the local response, it is graded and summates.
+s0804 The EPP depolarizes the adjacent muscle membrane to the critical level and an **action potential** arises — the muscle contracts.
+s0805 ACh is broken down within 1–2 ms by the enzyme **acetylcholinesterase (AChE)** into choline and acetic acid; choline returns to the presynaptic terminal and is used to synthesize new ACh.
+s0806 Figure 3.5
+s0807 Structure of the neuromuscular synapse and transmission of excitation in it (Alaviya O.T., 2018)
+s0808 Properties of chemical synapses
+s0809 **One-way conduction** — the neurotransmitter is released only from the presynaptic terminal, and the receptors are only on the postsynaptic membrane.
+s0810 **Synaptic delay** — 0.2–0.5 ms at each synapse (for release of the neurotransmitter, its diffusion and binding to the receptor).
+s0811 **Low lability** — 100–150 impulses/s.
+s0812 **Rapid fatigue** — depletion of the neurotransmitter store, desensitization of receptors.
+s0813 **High sensitivity to chemicals** — drugs and poisons act selectively on synapses.
+s0814 **Summation and facilitation** — with successive impulses, transmitter release increases because Ca^2+^ accumulates.
+s0815 Table 3.5. Substances acting on the neuromuscular synapse
+s0816 Site of action
+s0817 Substance
+s0818 Result
+s0819 Block of ACh release
+s0820 Botulinum toxin
+s0821 Flaccid paralysis (botulism)
+s0822 Competitive blockade of N-cholinergic receptors
+s0823 Curare, tubocurarine, atracurium
+s0824 Muscle relaxation (used in anesthesia)
+s0825 Depolarizing blockade
+s0826 Suxamethonium (succinylcholine, Ditilin)
+s0827 First fibrillation, then relaxation
+s0828 AChE inhibitors
+s0829 Neostigmine (Proserin) (reversible); organophosphorus compounds (irreversible)
+s0830 Accumulation of ACh; in therapeutic doses muscle strength increases, in poisoning — convulsions and paralysis
+s0831 Autoantibodies to receptors
+s0832 Myasthenia gravis
+s0833 Muscle fatigability and weakness
+s0834 **Myasthenia gravis** is an autoimmune disease in which autoantibodies are formed against N-cholinergic receptors. The number of receptors decreases, the EPP becomes smaller and the safety factor falls: muscles tire quickly (drooping eyelids, double vision, difficulty swallowing). Treatment uses AChE inhibitors (pyridostigmine), which increase the amount of ACh in the synapse.
+s0835 6. Laboratory work
+s0836 Experiment 1: demonstrating isolated conduction in a nerve
+s0837 Isolate the frog's sciatic nerve together with its branches to both legs (or, in one leg, observe the branches to the gastrocnemius and other muscles).
+s0838 Stimulate part of the nerve trunk and observe which muscles contract.
+s0839 Change the site of stimulation. **Expected results and analysis:** each time only the muscles innervated by the stimulated fibers contract; excitation does not pass to neighboring fibers. This proves the law of isolated conduction.
+s0840 Experiment 2: Vvedensky's parabiosis experiment
+s0841 Prepare a nerve-muscle preparation. Place a piece of cotton wool soaked in KCl or procaine solution on the middle part of the nerve (the parabiotic region).
+s0842 Place the stimulating electrodes above the parabiotic region (closer to the center).
+s0843 Every 1–2 minutes stimulate alternately with weak and strong stimuli and record the muscle contractions.
+s0844 Note the sequence of phases.
+s0845 Remove the cotton wool, wash the nerve with Ringer's solution and observe the recovery of function.
+s0846 **Expected results and analysis:** first the responses to strong and weak stimuli become equal (equalizing phase), then the response to a weak stimulus becomes larger than to a strong one (paradoxical phase), and finally there is no response at all (inhibitory phase). After washing, the phases pass in reverse order and conduction is restored — parabiosis is a reversible process.
+s0847 Experiment 3: relative indefatigability of the nerve and rapid fatigue of the synapse
+s0848 Stimulate the nerve of a nerve-muscle preparation for a long time at a frequency of 30–50 Hz.
+s0849 Wait until the muscle stops contracting (becomes fatigued).
+s0850 Immediately place the electrodes directly on the muscle and stimulate it. **Expected results and analysis:** the muscle that does not contract when stimulated through the nerve contracts again when stimulated directly. Hence neither the muscle nor the nerve is fatigued — the **neuromuscular synapse** fatigues first (its neurotransmitter store is depleted). This shows that the synapse has the lowest lability.

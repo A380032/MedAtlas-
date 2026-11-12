@@ -1,246 +1,241 @@
-s4664	Qoldiq hajm (QH)
-s4665	Maksimal nafas chiqarishdan keyin ham o‘pkada qoladigan havo
-s4666	Jadval 17.2. O‘pka sig‘imlari (hajmlar yig‘indisi)
-s4667	Sig‘im
-s4668	O‘pkaning tiriklik sig‘imi (O‘TS)
-s4669	NH + NOZH + NChZH
-s4670	Erkaklarda 3500–5000, ayollarda 3000–4000
-s4671	Nafas olish sig‘imi
-s4672	NH + NOZH
-s4673	Funksional qoldiq sig‘im (FQS)
-s4674	NChZH + QH
-s4675	O‘pkaning umumiy hajmi (O‘UH)
-s4676	O‘TS + QH
-s4677	Rasm 17.1
-s4678	O‘pka hajmlari va sig‘imlari
-s4679	**Funksional qoldiq sig‘im** muhim ahamiyatga ega: u har bir nafas olishda kiradigan havoni (500 ml) suyultirib, alveolyar havo tarkibini nafas sikli davomida barqaror saqlaydi — gazlar konsentratsiyasi keskin tebranmaydi. **Qoldiq hajm** va FQS ni oddiy spirometr bilan o‘lchab bo‘lmaydi (geliy suyultirish usuli, bodipletizmografiya kerak).
-s4680	**O‘lim sababini aniqlashda** o‘pkaning suvga cho‘kishi muhim: tug‘ilgandan keyin nafas olgan chaqaloq o‘pkasida qoldiq (minimal) havo bo‘ladi va o‘pka bo‘lagi suvda cho‘kmaydi; o‘lik tug‘ilgan homila o‘pkasi esa cho‘kadi (sud tibbiyoti sinamasi).
-s4681	2. O‘pka ventilyatsiyasi
-s4682	**Nafas daqiqalik hajmi (NDH)** = nafas hajmi × nafas soni = 500 ml × 14–16 = **6–8 l/daq**. Og‘ir jismoniy ishda 100–150 l/daq gacha ortadi.
-s4683	**O‘lik bo‘shliq** — gaz almashinuvida qatnashmaydigan havo yo‘llari hajmi:
-s4684	**Anatomik o‘lik bo‘shliq** — burun-halqumdan terminal bronxiolalargacha: ≈ **150 ml** (≈ 2 ml/kg).
-s4685	**Fiziologik (funksional) o‘lik bo‘shliq** — anatomik + ventilyatsiyalanadigan, ammo qon bilan ta’minlanmagan alveolalar; sog‘lom odamda anatomik bilan deyarli teng. **Alveolyar ventilyatsiya** = (NH − o‘lik bo‘shliq) × nafas soni = (500 − 150) × 14 ≈ **4,2–5 l/daq**. Gaz almashinuvini aynan alveolyar ventilyatsiya belgilaydi.
-s4686	3. Spirometriya va spirografiya
-s4687	**Spirometriya** — o‘pka hajmlarini o‘lchash; **spirografiya** — nafas harakatlarini va hajm o‘zgarishlarini vaqt bo‘yicha grafik yozish. Zamonaviy kompyuter spirometrlari **“oqim–hajm” egri chizig‘ini** ham qayd qiladi.
-s4688	Rasm 17.2
-s4689	Spirogramma: o‘pka hajmlari va sig‘imlari (Alaviya O.T., 2018)
-s4690	Jadval 17.3. Spirografiyaning asosiy dinamik ko‘rsatkichlari
-s4691	FO‘TS (forsirlangan O‘TS)
-s4692	Maksimal nafas olgandan keyin imkon qadar tez va to‘liq chiqarilgan havo hajmi
-s4693	Kerakli qiymatning ≥ 80 % i
-s4694	FNChH~1~
-s4695	Forsirlangan nafas chiqarishning birinchi soniyasidagi hajm
-s4696	Tiffno indeksi (FNChH~1~ / O‘TS yoki FNChH~1~ / FO‘TS)
-s4697	Bronxlar o‘tkazuvchanligi ko‘rsatkichi
-s4698	≥ 70 % (yoshlarda 75–85 %)
-s4699	Nafas chiqarishning cho‘qqi tezligi (PEF)
-s4700	Forsirlangan nafas chiqarishdagi maksimal oqim tezligi
-s4701	Yosh, jins, bo‘yga bog‘liq; pikfloumetr bilan ham o‘lchanadi
-s4702	O‘pkaning maksimal ventilyatsiyasi (O‘MV)
-s4703	10–15 s davomida eng tez va chuqur nafasda 1 daqiqaga hisoblangan ventilyatsiya
-s4704	80–150 l/daq
-s4705	Nafas zahirasi
-s4706	O‘MV − NDH
-s4707	O‘MV ning 85 % idan ko‘p
-s4708	Jadval 17.4. Ventilyatsiya buzilishlarining turlari
-s4709	O‘TS
-s4710	Tiffno indeksi
-s4711	Obstruk tiv
-s4712	Havo yo‘llari o‘tkazuvchanligi pasaygan
-s4713	Me’yorda yoki biroz kamaygan
-s4714	Keskin kamaygan
-s4715	Bronxial astma, surunkali obstruktiv o‘pka kasalligi
-s4716	Restrikt iv
-s4717	O‘pkaning kengayish imkoniyati kamaygan
-s4718	Kamaygan
-s4719	Proporsion al kamaygan
-s4720	Me’yorda yoki oshgan
-s4721	O‘pka fibrozi, plevra bitishmalari, ko‘krak qafasi deformatsiyasi, semizlik
-s4722	Aralash
-s4723	Ikkalasi
-s4724	Kasallikning kech bosqichlari
-s4725	**Bronxolitik sinama** — salbutamol inhalyatsiyasidan 15–20 daqiqa keyin FNChH~1~ ning ≥ 12 % va ≥ 200 ml ga ortishi obstruksiyaning qaytarligini ko‘rsatadi va **bronxial astmaga** xos; surunkali obstruktiv o‘pka kasalligida obstruksiya to‘liq qaytmaydi.
-s4726	**Kerakli O‘TS** formula bo‘yicha hisoblanadi (Boldvin, Kurnan, Richards): erkaklarda O‘TS (l) = (27,63 − 0,112 × yosh) × bo‘y (sm) / 1000; ayollarda (21,78 − 0,101 × yosh) × bo‘y / 1000. Haqiqiy O‘TS kerakli qiymatning ± 15–20 % i oralig‘ida bo‘lsa — me’yor.
-s4727	4. Kislorodning qonda tashilishi
-s4728	Kislorod qonda ikki shaklda tashiladi:
-s4729	**Fizik erigan holda** — kam (100 ml qonda 0,3 ml; pO~2~ 100 mm sim. ust. da). Ammo aynan erigan O~2~ parsial bosim (kuchlanish) hosil qiladi va diffuziyani ta’minlaydi.
-s4730	**Gemoglobin bilan bog‘langan holda (oksigemoglobin)** — 98–99 %. **Qonning kislorod sig‘imi** — 1 l qon biriktira oladigan maksimal O~2~ miqdori: Hb 150 g/l × 1,34 ml ≈ **200 ml O~2~/l** (20 hajm %). Arterial qonda O~2~ ≈ 190–200 ml/l (saturatsiya 96–98 %), venoz qonda ≈ 140–150 ml/l (saturatsiya ≈ 75 %).
-s4731	**Arteriovenoz farq** — arterial va venoz qondagi O~2~ miqdori farqi: tinch holatda ≈ 50 ml/l. **Kislorodning to‘qimalar tomonidan o‘zlashtirilish koeffitsienti** = arteriovenoz farq / arterial qondagi O~2~ ≈ 25–30 %; jismoniy ishda 50–60 % gacha, yurak muskulida tinch holatda ham 60–70 %.
-s4732	Oksigemoglobin dissotsiatsiyasi egri chizig‘i
-s4733	Gemoglobinning O~2~ bilan to‘yinishi (saturatsiya, SO~2~) va pO~2~ o‘rtasidagi bog‘liqlik **S-simon** egri chiziq bilan ifodalanadi. S-shakl **kooperativ ta’sir** natijasi: bitta gem O~2~ ni biriktirgach, qolganlarining moyilligi ortadi.
-s4734	Rasm 17.3
-s4735	Oksigemoglobin dissotsiatsiyasi egri chizig‘i va uning siljishlari (Costanzo L.S., 2018 asosida chizilgan)
-s4736	Egri chiziqning fiziologik ahamiyati:
-s4737	**Yuqori tekis qismi** (pO~2~ 70–100 mm sim. ust.) — o‘pkada: pO~2~ biroz pasaysa ham (balandlik, o‘pka kasalliklari) saturatsiya yuqori qoladi — kislorod bilan ta’minlanish **ishonchli**.
-s4738	**Tik pastki qismi** (pO~2~ 10–40) — to‘qimalarda: pO~2~ ning ozgina pasayishi ko‘p O~2~ ajralishiga olib keladi — to‘qimalar O~2~ ni **oson oladi**. **P~50~** — gemoglobin 50 % to‘yingan pO~2~; me’yorda ≈ **26–27 mm sim. ust.** P~50~ ortishi (egri chiziq o‘ngga siljishi) — Hb ning O~2~ ga moyilligi kamaygan, to‘qimalarga O~2~ berish osonlashgan.
-s4739	Jadval 17.5. Egri chiziq siljishiga ta’sir qiluvchi omillar
-s4740	O‘ngga siljish (O~2~ berish osonlashadi)
-s4741	Chapga siljish (O~2~ ni ushlab turish kuchayadi)
-s4742	pCO~2~ ortishi va pH pasayishi (Bor effekti)
-s4743	pCO~2~ kamayishi, pH ortishi (alkaloz)
-s4744	Harorat ko‘tarilishi
-s4745	Harorat pasayishi
-s4746	2,3-difosfoglitserat (2,3-DFG) ko‘payishi (gipoksiya, baland tog‘, anemiya)
-s4747	2,3-DFG kamayishi (saqlangan konservalangan qon)
-s4748	Jismoniy ish (ishlayotgan muskulda barcha omillar)
-s4749	Fetal gemoglobin (HbF), karboksigemoglobin, methemoglobin
-s4750	5. Karbonat angidridning qonda tashilishi
-s4751	Jadval 17.6. CO~2~ ning qonda tashilish shakllari
-s4752	Shakl
-s4753	Izoh
-s4754	Bikarbonatlar (HCO~3~^-^)
-s4755	Plazmada natriy, eritrotsitlarda kaliy bikarbonati
-s4756	Karbgemoglobin (karbamin birikmalari)
-s4757	CO~2~ globinning aminoguruhlariga birikadi
-s4758	Fizik erigan holda
-s4759	Mexanizm (to‘qima kapillyarlarida):
-s4760	CO~2~ to‘qimadan plazmaga, so‘ngra eritrotsitga diffuziyalanadi.
-s4761	Eritrotsitda **karboangidraza** fermenti CO~2~ + H~2~O → H~2~CO~3~ reaksiyasini 13 000 marta tezlashtiradi.
-s4762	H~2~CO~3~ → H^+^ + HCO~3~^-^ ga dissotsiatsiyalanadi. H^+^ ni dezoksigemoglobin bog‘laydi (bufer).
-s4763	HCO~3~^-^ eritrotsitdan plazmaga chiqadi, uning o‘rniga Cl^-^ eritrotsitga kiradi — **xlorid siljishi  (Xamburger fenomeni)**.
-s4764	O‘pka kapillyarlarida barcha jarayonlar teskari yo‘nalishda boradi va CO~2~ alveolalarga chiqadi.
-s4765	Rasm 17.4
-s4766	CO~2~ ning qonda tashilishi: to‘qima va o‘pka kapillyarlarida eritrotsit ichidagi jarayonlar (Alaviya O.T., 2018)
-s4767	6. To‘qimalarda gaz almashinuvi va to‘qima nafasi
-s4768	To‘qima kapillyarlarida O~2~ qondan (pO~2~ 95–100) to‘qimaga (pO~2~ 20–40, ishlayotgan muskulda 5–10 mm sim. ust.), CO~2~ esa to‘qimadan (pCO~2~ 46–60) qonga (40) diffuziyalanadi. Diffuziyaga kapillyarlar zichligi, ochiq kapillyarlar soni, hujayralargacha masofa va to‘qimaning O~2~ iste’moli ta’sir qiladi. Muskullarda **mioglobin** O~2~ ni zahira qiladi va hujayra ichida tashiydi (O~2~ ga moyilligi gemoglobinnikidan yuqori — P~50~ ≈ 1–5 mm sim. ust.).
-s4769	**To‘qima (hujayra) nafasi** — mitoxondriyalarda nafas zanjiri (sitoxromlar, sitoxromoksidaza) orqali O~2~ ning oxirgi elektron aktseptori sifatida ishlatilishi va oksidlanish-fosforlanish yo‘li bilan ATF sintezi. Mitoxondriyalar me’yoriy ishlashi uchun hujayra ichida pO~2~ atigi 1–3 mm sim. ust. bo‘lishi yetarli (**kritik pO~2~**).
-s4770	**Sianidlar** (achchiq bodom, sianid tuzlari) **sitoxromoksidazani** bloklaydi — qonda kislorod yetarli bo‘lsa ham hujayralar uni ishlata olmaydi (**to‘qima gipoksiyasi**). Venoz qon kislorodga to‘yingan bo‘lib qoladi (arteriovenoz farq kichrayadi), teri pushti rangda bo‘ladi.
-s4771	7. Pulsoksimetriya
-s4772	**Pulsoksimetriya** — arterial qonning kislorodga to‘yinishini (**SpO~2~**) noinvaziv, uzluksiz aniqlash usuli. Datchik (odatda barmoqqa kiygiziladigan) ikki to‘lqin uzunligidagi nurni — **qizil (660 nm)** va **infraqizil (940 nm)** — o‘tkazadi. Oksigemoglobin infraqizil nurni, dezoksigemoglobin qizil nurni ko‘proq yutadi. Asbob faqat **pulsatsiyalanuvchi** (arterial) komponentni tahlil qilib, ikki nurning yutilish nisbati bo‘yicha SpO~2~ ni hisoblaydi va bir vaqtda puls chastotasini ko‘rsatadi.
-s4773	Jadval 17.7. SpO~2~ ni baholash
-s4774	SpO~2~
-s4775	Baholash
-s4776	Yengil gipoksemiya (surunkali o‘pka kasalliklarida maqsadli daraja 88–92 % bo‘lishi mumkin)
-s4777	O‘rtacha gipoksemiya — kislorod terapiyasi
-s4778	Og‘ir gipoksemiya
-s4779	1-ish: suvli (yoki quruq) spirometr bilan o‘pka hajmlarini aniqlash
-s4780	Mundshtukni spirt bilan arting, tekshiriluvchi burnini qisqich bilan yoping.
-s4781	**Nafas hajmi**: tinch nafas olgandan keyin spirometrga 3–5 marta tinch nafas chiqarib, o‘rtachasini hisoblang.
-s4782	**NChZH**: tinch nafas chiqargandan keyin spirometrga maksimal nafas chiqaring.
-s4783	**O‘TS**: maksimal nafas olib, spirometrga maksimal nafas chiqaring; uch marta takrorlab, eng katta natijani oling.
-s4784	**NOZH** = O‘TS − (NH + NChZH).
-s4785	Kerakli O‘TS ni formula bo‘yicha hisoblab, haqiqiy O‘TS bilan solishtiring.
-s4786	2-ish: spirogrammani yozish va tahlil qilish
-s4787	Kompyuter spirografida tinch nafasni (1 daqiqa) yozing — NH, nafas soni, NDH ni aniqlang.
-s4788	O‘TS manevrini bajaring.
-s4789	Forsirlangan nafas chiqarish manevri: maksimal nafas olib, imkon qadar tez va to‘liq chiqarish — FO‘TS, FNChH~1~, PEF ni aniqlang.
-s4790	Tiffno indeksini hisoblang.
-s4791	Natijalarni kerakli qiymatlar bilan solishtirib, ventilyatsiya buzilishi turini aniqlang.
-s4792	3-ish: pulsoksimetriya
-s4793	Tekshiriluvchining barmog‘i iliq, tirnog‘i laksiz bo‘lishi kerak; datchikni barmoqqa kiygizing.
-s4794	Signal (pletizmogramma to‘lqini) barqaror bo‘lishini kuting (10–20 s); SpO~2~ va puls ko‘rsatkichlarini yozing.
-s4795	Nafasni 30 s ushlab turgandan keyin va 20 marta o‘tirib-turgandan keyin o‘lchashni takrorlang.
-s4796	Barmoqni qattiq siqib (qon oqimini kamaytirib) signal sifati qanday o‘zgarishini kuzating. **Kutilgan natija:** sog‘lom odamda SpO~2~ 96–99 %; nafasni qisqa ushlab turish va yengil yuklama uni deyarli o‘zgartirmaydi (dissotsiatsiya egri chizig‘ining yuqori tekis qismi va O~2~ zahirasi tufayli). Periferik qon oqimi kamayganda signal yomonlashadi.
-s4797	Ko‘nikma: spirometriya natijasini talqin qilish
-s4798	FO‘TS (O‘TS) ni kerakli qiymatga nisbatan foizda baholang (≥ 80 % — me’yor).
-s4799	FNChH~1~ ni kerakli qiymatga nisbatan baholang.
-s4800	Tiffno indeksini hisoblang: < 70 % — obstruksiya.
-s4801	Indeks me’yorda, ammo FO‘TS kamaygan — restriksiya ehtimoli.
-s4802	Obstruksiyada bronxolitik sinama natijasiga ko‘ra qaytarligini baholang.
-s4803	Ko‘nikma: qonning kislorod ko‘rsatkichlarini hisoblash
-s4804	Kislorod sig‘imi = Hb (g/l) × 1,34.
-s4805	Arterial qondagi O~2~ = kislorod sig‘imi × SaO~2~ + 0,003 × pO~2~ (ml/l).
-s4806	Arteriovenoz farq = arterial O~2~ − venoz O~2~.
-s4807	O‘zlashtirish koeffitsienti = arteriovenoz farq / arterial O~2~ × 100 %.
-s4808	O‘pka hajmlarini sanang va ularning me’yoriy kattaligini ayting.
-s4809	O‘TS, FQS va O‘UH qanday hajmlardan iborat?
-s4810	Funksional qoldiq sig‘imning fiziologik ahamiyati nimada?
-s4811	Nafas daqiqalik hajmi va alveolyar ventilyatsiya qanday hisoblanadi?
-s4812	Anatomik va fiziologik o‘lik bo‘shliq nima?
-s4813	Nima uchun tez va yuzaki nafas samarasiz?
-s4814	Spirografiyaning asosiy ko‘rsatkichlari va Tiffno indeksi nima?
-s4815	Obstruktiv va restriktiv buzilishlar qanday farqlanadi?
-s4816	Kislorod qonda qanday shakllarda tashiladi? Kislorod sig‘imi nima?
-s4817	Oksigemoglobin dissotsiatsiyasi egri chizig‘ining shakli va fiziologik ahamiyatini tushuntiring.
-s4818	Egri chiziqni o‘ngga va chapga siljituvchi omillarni sanang.
-s4819	CO~2~ qonda qanday shakllarda tashiladi?
-s4820	Karboangidraza va xlorid siljishining roli qanday?
-s4821	Bor va Xolden effektlarini tushuntiring.
-s4822	Pulsoksimetriyaning tamoyili va cheklovlari qanday?
-s4823	Tinch nafasda nafas hajmi qancha?
-s4824	150 ml
-s4825	1500 ml
-s4826	≈ 500 ml
-s4827	3000 ml
-s4828	5000 ml
-s4829	O‘pkaning tiriklik sig‘imi qaysi hajmlardan iborat?
-s4830	Nafas hajmi + nafas olish zahira hajmi + nafas chiqarish zahira hajmi
-s4831	Nafas hajmi + qoldiq hajm
-s4832	Qoldiq hajm + nafas chiqarish zahira hajmi
-s4833	Faqat nafas olish zahira hajmi
-s4834	O‘UH + qoldiq hajm
-s4835	Oddiy spirometr bilan qaysi hajmni o‘lchab bo‘lmaydi?
-s4836	Nafas hajmi
-s4837	NOZH
-s4838	NChZH
-s4839	Qoldiq hajm
-s4840	Anatomik o‘lik bo‘shliq hajmi qancha?
-s4841	500 ml
-s4842	≈ 150 ml
-s4843	1200 ml
-s4844	50 ml
-s4845	2400 ml
-s4846	Tiffno indeksi qaysi buzilishda kamayadi?
-s4847	Restriktiv buzilishda
-s4848	Semizlikda
-s4849	Plevra bitishmalarida
-s4850	Obstruktiv buzilishda (bronxial astma)
-s4851	O‘pka fibrozida
-s4852	Qonda kislorodning asosiy qismi qanday shaklda tashiladi?
-s4853	Oksigemoglobin shaklida
-s4854	Bikarbonat shaklida
-s4855	Karbgemoglobin shaklida
-s4856	Mioglobin bilan
-s4857	Oksigemoglobin dissotsiatsiyasi egri chizig‘ini o‘ngga siljituvchi omil qaysi?
-s4858	pH ortishi
-s4859	Fetal gemoglobin
-s4860	pCO~2~ kamayishi
-s4861	2,3-DFG ko‘payishi
-s4862	Bor effekti nima?
-s4863	CO~2~ va H^+^ ko‘payganda Hb ning O~2~ ga moyilligi kamayishi
-s4864	Dezoksigemoglobinning CO~2~ ni yaxshi bog‘lashi
-s4865	HCO~3~^-^ va Cl^-^ almashinuvi
-s4866	CO ning Hb ga birikishi
-s4867	Mioglobinning O~2~ ni zahira qilishi
-s4868	CO~2~ ning asosiy qismi qanday shaklda tashiladi?
-s4869	Fizik erigan
-s4870	Eritrotsitda CO~2~ gidratatsiyasini qaysi ferment tezlashtiradi?
-s4871	Sitoxromoksidaza
-s4872	Katalaza
-s4873	Peroksidaza
-s4874	Laktatdegidrogenaza
-s4875	Xlorid siljishi (Xamburger fenomeni) nima?
-s4876	HCO~3~^-^ eritrotsitdan chiqqanda uning o‘rniga Cl^-^ ning kirishi
-s4877	Cl^-^ ning buyrakda reabsorbsiyasi
-s4878	Na^+^ va K^+^ almashinuvi
-s4879	H^+^ ning gemoglobin bilan bog‘lanishi
-s4880	O~2~ ning plazmaga chiqishi
-s4881	Me’yorda P~50~ qancha?
-s4882	5 mm sim. ust.
-s4883	100 mm sim. ust.
-s4884	60 mm sim. ust.
-s4885	26–27 mm sim. ust.
-s4886	Sianid bilan zaharlanishda gipoksiya mexanizmi qanday?
-s4887	Hb O~2~ ni bog‘lamaydi
-s4888	O‘pka ventilyatsiyasi buziladi
-s4889	Sitoxromoksidaza bloklanib, hujayralar O~2~ ni ishlata olmaydi
-s4890	Qon oqimi to‘xtaydi
-s4891	Eritrotsitlar parchalanadi
-s4892	Pulsoksimetr qaysi holatda noto‘g‘ri natija beradi?
-s4893	Sog‘lom odamda tinch holatda
-s4894	Yengil jismoniy yuklamada
-s4895	Tirnoqsiz barmoqda
-s4896	Nafas soni 16 bo‘lganda
-s4897	Is gazi bilan zaharlanishda (karboksigemoglobin)
-s4898	NH 500 ml, nafas soni 15 /daq, o‘lik bo‘shliq 150 ml bo‘lsa, alveolyar ventilyatsiya qancha?
-s4899	7,5 l/daq
-s4900	2,25 l/daq
-s4901	9,75 l/daq
-s4902	5,25 l/daq
-s4903	0,35 l/daq
-s4904	25 yoshli ayol yo‘tal va kechasi bo‘g‘ilish xurujlaridan shikoyat qiladi. Spirometriya: FO‘TS — kerakli qiymatning 88 %, FNChH~1~ — 58 %, Tiffno indeksi 62 %. Salbutamol inhalyatsiyasidan 20 daqiqa keyin FNChH~1~ 22 % ga (350 ml) ortdi.
-s4905	Ventilyatsiya buzilishining turi qaysi? Bronxolitik sinama natijasi nimani ko‘rsatadi?
-s4906	Obstruktiv buzilish: FNChH~1~ va Tiffno indeksi (< 70 %) kamaygan, FO‘TS deyarli me’yorda. Bronxlar torayganda havo yo‘llari qarshiligi oshadi (Puazeyl qonuniga ko‘ra radiusning to‘rtinchi darajasiga teskari), havoni tez chiqarish qiyinlashadi. Bronxolitik sinama musbat (≥ 12 % va ≥ 200 ml) — obstruksiya qaytar, bronxlar silliq muskullari spazmi β~2~-adrenomimetik ta’sirida bo‘shashgan. Bu bronxial astmaga xos.
-s4907	Alpinist 5000 m balandlikka chiqdi; u yerda atmosfera bosimi ≈ 405 mm sim. ust. Bir necha kundan keyin uning qonida 2,3-DFG ko‘paygani aniqlandi.
-s4908	Bu balandlikda alveolyar pO~2~ ni taxminan hisoblang. 2,3-DFG ko‘payishining moslashuv ahamiyati qanday?
-s4909	Nafas olingan havoda pO~2~ = (405 − 47) × 0,21 ≈ 75 mm sim. ust.; alveolalarda CO~2~ va ventilyatsiyani hisobga olganda pO~2~ ≈ 45–50 mm sim. ust. ga tushadi (giperventilyatsiya uni biroz oshiradi). Bunday pO~2~ da saturatsiya 80–85 % atrofida. Gipoksiya eritrotsitlarda 2,3-DFG sintezini kuchaytiradi; 2,3-DFG dezoksigemoglobin bilan bog‘lanib, uning O~2~ ga moyilligini kamaytiradi — dissotsiatsiya egri chizig‘i o‘ngga siljiydi. Natijada o‘pkada O~2~ biriktirish biroz kamaysa-da, to‘qimalarda O~2~ ajralishi sezilarli osonlashadi — to‘qimalarning kislorod bilan ta’minlanishi yaxshilanadi.
+s4645	NH + NOZH + NChZH
+s4646	Erkaklarda 3500–5000, ayollarda 3000–4000
+s4647	Nafas olish sig‘imi
+s4648	NH + NOZH
+s4649	Funksional qoldiq sig‘im (FQS)
+s4650	NChZH + QH
+s4651	O‘pkaning umumiy hajmi (O‘UH)
+s4652	O‘TS + QH
+s4653	Rasm 17.1
+s4654	O‘pka hajmlari va sig‘imlari
+s4655	**Funksional qoldiq sig‘im** muhim ahamiyatga ega: u har bir nafas olishda kiradigan havoni (500 ml) suyultirib, alveolyar havo tarkibini nafas sikli davomida barqaror saqlaydi — gazlar konsentratsiyasi keskin tebranmaydi. **Qoldiq hajm** va FQS ni oddiy spirometr bilan o‘lchab bo‘lmaydi (geliy suyultirish usuli, bodipletizmografiya kerak).
+s4656	**O‘lim sababini aniqlashda** o‘pkaning suvga cho‘kishi muhim: tug‘ilgandan keyin nafas olgan chaqaloq o‘pkasida qoldiq (minimal) havo bo‘ladi va o‘pka bo‘lagi suvda cho‘kmaydi; o‘lik tug‘ilgan homila o‘pkasi esa cho‘kadi (sud tibbiyoti sinamasi).
+s4657	2. O‘pka ventilyatsiyasi
+s4658	**Nafas daqiqalik hajmi (NDH)** = nafas hajmi × nafas soni = 500 ml × 14–16 = **6–8 l/daq**. Og‘ir jismoniy ishda 100–150 l/daq gacha ortadi.
+s4659	**O‘lik bo‘shliq** — gaz almashinuvida qatnashmaydigan havo yo‘llari hajmi:
+s4660	**Anatomik o‘lik bo‘shliq** — burun-halqumdan terminal bronxiolalargacha: ≈ **150 ml** (≈ 2 ml/kg).
+s4661	**Fiziologik (funksional) o‘lik bo‘shliq** — anatomik + ventilyatsiyalanadigan, ammo qon bilan ta’minlanmagan alveolalar; sog‘lom odamda anatomik bilan deyarli teng. **Alveolyar ventilyatsiya** = (NH − o‘lik bo‘shliq) × nafas soni = (500 − 150) × 14 ≈ **4,2–5 l/daq**. Gaz almashinuvini aynan alveolyar ventilyatsiya belgilaydi.
+s4662	3. Spirometriya va spirografiya
+s4663	**Spirometriya** — o‘pka hajmlarini o‘lchash; **spirografiya** — nafas harakatlarini va hajm o‘zgarishlarini vaqt bo‘yicha grafik yozish. Zamonaviy kompyuter spirometrlari **“oqim–hajm” egri chizig‘ini** ham qayd qiladi.
+s4664	Rasm 17.2
+s4665	Spirogramma: o‘pka hajmlari va sig‘imlari (Alaviya O.T., 2018)
+s4666	Jadval 17.3. Spirografiyaning asosiy dinamik ko‘rsatkichlari
+s4667	FO‘TS (forsirlangan O‘TS)
+s4668	Maksimal nafas olgandan keyin imkon qadar tez va to‘liq chiqarilgan havo hajmi
+s4669	Kerakli qiymatning ≥ 80 % i
+s4670	FNChH~1~
+s4671	Forsirlangan nafas chiqarishning birinchi soniyasidagi hajm
+s4672	Tiffno indeksi (FNChH~1~ / O‘TS yoki FNChH~1~ / FO‘TS)
+s4673	Bronxlar o‘tkazuvchanligi ko‘rsatkichi
+s4674	≥ 70 % (yoshlarda 75–85 %)
+s4675	Nafas chiqarishning cho‘qqi tezligi (PEF)
+s4676	Forsirlangan nafas chiqarishdagi maksimal oqim tezligi
+s4677	Yosh, jins, bo‘yga bog‘liq; pikfloumetr bilan ham o‘lchanadi
+s4678	O‘pkaning maksimal ventilyatsiyasi (O‘MV)
+s4679	10–15 s davomida eng tez va chuqur nafasda 1 daqiqaga hisoblangan ventilyatsiya
+s4680	80–150 l/daq
+s4681	Nafas zahirasi
+s4682	O‘MV − NDH
+s4683	O‘MV ning 85 % idan ko‘p
+s4684	Jadval 17.4. Ventilyatsiya buzilishlarining turlari
+s4685	O‘TS
+s4686	Tiffno indeksi
+s4687	Obstruktiv
+s4688	Havo yo‘llari o‘tkazuvchanligi pasaygan
+s4689	Me’yorda yoki biroz kamaygan
+s4690	Keskin kamaygan
+s4691	Bronxial astma, surunkali obstruktiv o‘pka kasalligi
+s4692	Restriktiv
+s4693	O‘pkaning kengayish imkoniyati kamaygan
+s4694	Kamaygan
+s4695	Proporsional kamaygan
+s4696	Me’yorda yoki oshgan
+s4697	O‘pka fibrozi, plevra bitishmalari, ko‘krak qafasi deformatsiyasi, semizlik
+s4698	Aralash
+s4699	Ikkalasi
+s4700	Kasallikning kech bosqichlari
+s4701	**Bronxolitik sinama** — salbutamol inhalyatsiyasidan 15–20 daqiqa keyin FNChH~1~ ning ≥ 12 % va ≥ 200 ml ga ortishi obstruksiyaning qaytarligini ko‘rsatadi va **bronxial astmaga** xos; surunkali obstruktiv o‘pka kasalligida obstruksiya to‘liq qaytmaydi.
+s4702	**Kerakli O‘TS** formula bo‘yicha hisoblanadi (Boldvin, Kurnan, Richards): erkaklarda O‘TS (l) = (27,63 − 0,112 × yosh) × bo‘y (sm) / 1000; ayollarda (21,78 − 0,101 × yosh) × bo‘y / 1000. Haqiqiy O‘TS kerakli qiymatning ± 15–20 % i oralig‘ida bo‘lsa — me’yor.
+s4703	4. Kislorodning qonda tashilishi
+s4704	Kislorod qonda ikki shaklda tashiladi:
+s4705	**Fizik erigan holda** — kam (100 ml qonda 0,3 ml; pO~2~ 100 mm sim. ust. da). Ammo aynan erigan O~2~ parsial bosim (kuchlanish) hosil qiladi va diffuziyani ta’minlaydi.
+s4706	**Gemoglobin bilan bog‘langan holda (oksigemoglobin)** — 98–99 %. **Qonning kislorod sig‘imi** — 1 l qon biriktira oladigan maksimal O~2~ miqdori: Hb 150 g/l × 1,34 ml ≈ **200 ml O~2~/l** (20 hajm %). Arterial qonda O~2~ ≈ 190–200 ml/l (saturatsiya 96–98 %), venoz qonda ≈ 140–150 ml/l (saturatsiya ≈ 75 %).
+s4707	**Arteriovenoz farq** — arterial va venoz qondagi O~2~ miqdori farqi: tinch holatda ≈ 50 ml/l. **Kislorodning to‘qimalar tomonidan o‘zlashtirilish koeffitsienti** = arteriovenoz farq / arterial qondagi O~2~ ≈ 25–30 %; jismoniy ishda 50–60 % gacha, yurak muskulida tinch holatda ham 60–70 %.
+s4708	Oksigemoglobin dissotsiatsiyasi egri chizig‘i
+s4709	Gemoglobinning O~2~ bilan to‘yinishi (saturatsiya, SO~2~) va pO~2~ o‘rtasidagi bog‘liqlik **S-simon** egri chiziq bilan ifodalanadi. S-shakl **kooperativ ta’sir** natijasi: bitta gem O~2~ ni biriktirgach, qolganlarining moyilligi ortadi.
+s4710	Rasm 17.3
+s4711	Oksigemoglobin dissotsiatsiyasi egri chizig‘i va uning siljishlari (Costanzo L.S., 2018 asosida chizilgan)
+s4712	Egri chiziqning fiziologik ahamiyati:
+s4713	**Yuqori tekis qismi** (pO~2~ 70–100 mm sim. ust.) — o‘pkada: pO~2~ biroz pasaysa ham (balandlik, o‘pka kasalliklari) saturatsiya yuqori qoladi — kislorod bilan ta’minlanish **ishonchli**.
+s4714	**Tik pastki qismi** (pO~2~ 10–40) — to‘qimalarda: pO~2~ ning ozgina pasayishi ko‘p O~2~ ajralishiga olib keladi — to‘qimalar O~2~ ni **oson oladi**. **P~50~** — gemoglobin 50 % to‘yingan pO~2~; me’yorda ≈ **26–27 mm sim. ust.** P~50~ ortishi (egri chiziq o‘ngga siljishi) — Hb ning O~2~ ga moyilligi kamaygan, to‘qimalarga O~2~ berish osonlashgan.
+s4715	Jadval 17.5. Egri chiziq siljishiga ta’sir qiluvchi omillar
+s4716	O‘ngga siljish (O~2~ berish osonlashadi)
+s4717	Chapga siljish (O~2~ ni ushlab turish kuchayadi)
+s4718	pCO~2~ ortishi va pH pasayishi (Bor effekti)
+s4719	pCO~2~ kamayishi, pH ortishi (alkaloz)
+s4720	Harorat ko‘tarilishi
+s4721	Harorat pasayishi
+s4722	2,3-difosfoglitserat (2,3-DFG) ko‘payishi (gipoksiya, baland tog‘, anemiya)
+s4723	2,3-DFG kamayishi (saqlangan konservalangan qon)
+s4724	Jismoniy ish (ishlayotgan muskulda barcha omillar)
+s4725	Fetal gemoglobin (HbF), karboksigemoglobin, methemoglobin
+s4726	5. Karbonat angidridning qonda tashilishi
+s4727	Jadval 17.6. CO~2~ ning qonda tashilish shakllari
+s4728	Shakl
+s4729	Izoh
+s4730	Bikarbonatlar (HCO~3~^-^)
+s4731	Plazmada natriy, eritrotsitlarda kaliy bikarbonati
+s4732	Karbgemoglobin (karbamin birikmalari)
+s4733	CO~2~ globinning aminoguruhlariga birikadi
+s4734	Fizik erigan holda
+s4735	Mexanizm (to‘qima kapillyarlarida):
+s4736	CO~2~ to‘qimadan plazmaga, so‘ngra eritrotsitga diffuziyalanadi.
+s4737	Eritrotsitda **karboangidraza** fermenti CO~2~ + H~2~O → H~2~CO~3~ reaksiyasini 13 000 marta tezlashtiradi.
+s4738	H~2~CO~3~ → H^+^ + HCO~3~^-^ ga dissotsiatsiyalanadi. H^+^ ni dezoksigemoglobin bog‘laydi (bufer).
+s4739	HCO~3~^-^ eritrotsitdan plazmaga chiqadi, uning o‘rniga Cl^-^ eritrotsitga kiradi — **xlorid siljishi (Xamburger fenomeni)**.
+s4740	O‘pka kapillyarlarida barcha jarayonlar teskari yo‘nalishda boradi va CO~2~ alveolalarga chiqadi.
+s4741	Rasm 17.4
+s4742	CO~2~ ning qonda tashilishi: to‘qima va o‘pka kapillyarlarida eritrotsit ichidagi jarayonlar (Alaviya O.T., 2018)
+s4743	6. To‘qimalarda gaz almashinuvi va to‘qima nafasi
+s4744	To‘qima kapillyarlarida O~2~ qondan (pO~2~ 95–100) to‘qimaga (pO~2~ 20–40, ishlayotgan muskulda 5–10 mm sim. ust.), CO~2~ esa to‘qimadan (pCO~2~ 46–60) qonga (40) diffuziyalanadi. Diffuziyaga kapillyarlar zichligi, ochiq kapillyarlar soni, hujayralargacha masofa va to‘qimaning O~2~ iste’moli ta’sir qiladi. Muskullarda **mioglobin** O~2~ ni zahira qiladi va hujayra ichida tashiydi (O~2~ ga moyilligi gemoglobinnikidan yuqori — P~50~ ≈ 1–5 mm sim. ust.).
+s4745	**To‘qima (hujayra) nafasi** — mitoxondriyalarda nafas zanjiri (sitoxromlar, sitoxromoksidaza) orqali O~2~ ning oxirgi elektron aktseptori sifatida ishlatilishi va oksidlanish-fosforlanish yo‘li bilan ATF sintezi. Mitoxondriyalar me’yoriy ishlashi uchun hujayra ichida pO~2~ atigi 1–3 mm sim. ust. bo‘lishi yetarli (**kritik pO~2~**).
+s4746	**Sianidlar** (achchiq bodom, sianid tuzlari) **sitoxromoksidazani** bloklaydi — qonda kislorod yetarli bo‘lsa ham hujayralar uni ishlata olmaydi (**to‘qima gipoksiyasi**). Venoz qon kislorodga to‘yingan bo‘lib qoladi (arteriovenoz farq kichrayadi), teri pushti rangda bo‘ladi.
+s4747	7. Pulsoksimetriya
+s4748	**Pulsoksimetriya** — arterial qonning kislorodga to‘yinishini (**SpO~2~**) noinvaziv, uzluksiz aniqlash usuli. Datchik (odatda barmoqqa kiygiziladigan) ikki to‘lqin uzunligidagi nurni — **qizil (660 nm)** va **infraqizil (940 nm)** — o‘tkazadi. Oksigemoglobin infraqizil nurni, dezoksigemoglobin qizil nurni ko‘proq yutadi. Asbob faqat **pulsatsiyalanuvchi** (arterial) komponentni tahlil qilib, ikki nurning yutilish nisbati bo‘yicha SpO~2~ ni hisoblaydi va bir vaqtda puls chastotasini ko‘rsatadi.
+s4749	Jadval 17.7. SpO~2~ ni baholash
+s4750	SpO~2~
+s4751	Baholash
+s4752	Yengil gipoksemiya (surunkali o‘pka kasalliklarida maqsadli daraja 88–92 % bo‘lishi mumkin)
+s4753	O‘rtacha gipoksemiya — kislorod terapiyasi
+s4754	Og‘ir gipoksemiya
+s4755	1-ish: suvli (yoki quruq) spirometr bilan o‘pka hajmlarini aniqlash
+s4756	Mundshtukni spirt bilan arting, tekshiriluvchi burnini qisqich bilan yoping.
+s4757	**Nafas hajmi**: tinch nafas olgandan keyin spirometrga 3–5 marta tinch nafas chiqarib, o‘rtachasini hisoblang.
+s4758	**NChZH**: tinch nafas chiqargandan keyin spirometrga maksimal nafas chiqaring.
+s4759	**O‘TS**: maksimal nafas olib, spirometrga maksimal nafas chiqaring; uch marta takrorlab, eng katta natijani oling.
+s4760	**NOZH** = O‘TS − (NH + NChZH).
+s4761	Kerakli O‘TS ni formula bo‘yicha hisoblab, haqiqiy O‘TS bilan solishtiring.
+s4762	2-ish: spirogrammani yozish va tahlil qilish
+s4763	Kompyuter spirografida tinch nafasni (1 daqiqa) yozing — NH, nafas soni, NDH ni aniqlang.
+s4764	O‘TS manevrini bajaring.
+s4765	Forsirlangan nafas chiqarish manevri: maksimal nafas olib, imkon qadar tez va to‘liq chiqarish — FO‘TS, FNChH~1~, PEF ni aniqlang.
+s4766	Tiffno indeksini hisoblang.
+s4767	Natijalarni kerakli qiymatlar bilan solishtirib, ventilyatsiya buzilishi turini aniqlang.
+s4768	3-ish: pulsoksimetriya
+s4769	Tekshiriluvchining barmog‘i iliq, tirnog‘i laksiz bo‘lishi kerak; datchikni barmoqqa kiygizing.
+s4770	Signal (pletizmogramma to‘lqini) barqaror bo‘lishini kuting (10–20 s); SpO~2~ va puls ko‘rsatkichlarini yozing.
+s4771	Nafasni 30 s ushlab turgandan keyin va 20 marta o‘tirib-turgandan keyin o‘lchashni takrorlang.
+s4772	Barmoqni qattiq siqib (qon oqimini kamaytirib) signal sifati qanday o‘zgarishini kuzating. **Kutilgan natija:** sog‘lom odamda SpO~2~ 96–99 %; nafasni qisqa ushlab turish va yengil yuklama uni deyarli o‘zgartirmaydi (dissotsiatsiya egri chizig‘ining yuqori tekis qismi va O~2~ zahirasi tufayli). Periferik qon oqimi kamayganda signal yomonlashadi.
+s4773	Ko‘nikma: spirometriya natijasini talqin qilish
+s4774	FO‘TS (O‘TS) ni kerakli qiymatga nisbatan foizda baholang (≥ 80 % — me’yor).
+s4775	FNChH~1~ ni kerakli qiymatga nisbatan baholang.
+s4776	Tiffno indeksini hisoblang: < 70 % — obstruksiya.
+s4777	Indeks me’yorda, ammo FO‘TS kamaygan — restriksiya ehtimoli.
+s4778	Obstruksiyada bronxolitik sinama natijasiga ko‘ra qaytarligini baholang.
+s4779	Ko‘nikma: qonning kislorod ko‘rsatkichlarini hisoblash
+s4780	Kislorod sig‘imi = Hb (g/l) × 1,34.
+s4781	Arterial qondagi O~2~ = kislorod sig‘imi × SaO~2~ + 0,003 × pO~2~ (ml/l).
+s4782	Arteriovenoz farq = arterial O~2~ − venoz O~2~.
+s4783	O‘zlashtirish koeffitsienti = arteriovenoz farq / arterial O~2~ × 100 %.
+s4784	O‘pka hajmlarini sanang va ularning me’yoriy kattaligini ayting.
+s4785	O‘TS, FQS va O‘UH qanday hajmlardan iborat?
+s4786	Funksional qoldiq sig‘imning fiziologik ahamiyati nimada?
+s4787	Nafas daqiqalik hajmi va alveolyar ventilyatsiya qanday hisoblanadi?
+s4788	Anatomik va fiziologik o‘lik bo‘shliq nima?
+s4789	Nima uchun tez va yuzaki nafas samarasiz?
+s4790	Spirografiyaning asosiy ko‘rsatkichlari va Tiffno indeksi nima?
+s4791	Obstruktiv va restriktiv buzilishlar qanday farqlanadi?
+s4792	Kislorod qonda qanday shakllarda tashiladi? Kislorod sig‘imi nima?
+s4793	Oksigemoglobin dissotsiatsiyasi egri chizig‘ining shakli va fiziologik ahamiyatini tushuntiring.
+s4794	Egri chiziqni o‘ngga va chapga siljituvchi omillarni sanang.
+s4795	CO~2~ qonda qanday shakllarda tashiladi?
+s4796	Karboangidraza va xlorid siljishining roli qanday?
+s4797	Bor va Xolden effektlarini tushuntiring.
+s4798	Pulsoksimetriyaning tamoyili va cheklovlari qanday?
+s4799	Tinch nafasda nafas hajmi qancha?
+s4800	150 ml
+s4801	1500 ml
+s4802	≈ 500 ml
+s4803	3000 ml
+s4804	5000 ml
+s4805	O‘pkaning tiriklik sig‘imi qaysi hajmlardan iborat?
+s4806	Nafas hajmi + nafas olish zahira hajmi + nafas chiqarish zahira hajmi
+s4807	Nafas hajmi + qoldiq hajm
+s4808	Qoldiq hajm + nafas chiqarish zahira hajmi
+s4809	Faqat nafas olish zahira hajmi
+s4810	O‘UH + qoldiq hajm
+s4811	Oddiy spirometr bilan qaysi hajmni o‘lchab bo‘lmaydi?
+s4812	Nafas hajmi
+s4813	NOZH
+s4814	NChZH
+s4815	Qoldiq hajm
+s4816	Anatomik o‘lik bo‘shliq hajmi qancha?
+s4817	500 ml
+s4818	≈ 150 ml
+s4819	1200 ml
+s4820	50 ml
+s4821	2400 ml
+s4822	Tiffno indeksi qaysi buzilishda kamayadi?
+s4823	Restriktiv buzilishda
+s4824	Semizlikda
+s4825	Plevra bitishmalarida
+s4826	Obstruktiv buzilishda (bronxial astma)
+s4827	O‘pka fibrozida
+s4828	Qonda kislorodning asosiy qismi qanday shaklda tashiladi?
+s4829	Oksigemoglobin shaklida
+s4830	Bikarbonat shaklida
+s4831	Karbgemoglobin shaklida
+s4832	Mioglobin bilan
+s4833	Oksigemoglobin dissotsiatsiyasi egri chizig‘ini o‘ngga siljituvchi omil qaysi?
+s4834	pH ortishi
+s4835	Fetal gemoglobin
+s4836	pCO~2~ kamayishi
+s4837	2,3-DFG ko‘payishi
+s4838	Bor effekti nima?
+s4839	CO~2~ va H^+^ ko‘payganda Hb ning O~2~ ga moyilligi kamayishi
+s4840	Dezoksigemoglobinning CO~2~ ni yaxshi bog‘lashi
+s4841	HCO~3~^-^ va Cl^-^ almashinuvi
+s4842	CO ning Hb ga birikishi
+s4843	Mioglobinning O~2~ ni zahira qilishi
+s4844	CO~2~ ning asosiy qismi qanday shaklda tashiladi?
+s4845	Fizik erigan
+s4846	Eritrotsitda CO~2~ gidratatsiyasini qaysi ferment tezlashtiradi?
+s4847	Sitoxromoksidaza
+s4848	Katalaza
+s4849	Peroksidaza
+s4850	Laktatdegidrogenaza
+s4851	Xlorid siljishi (Xamburger fenomeni) nima?
+s4852	HCO~3~^-^ eritrotsitdan chiqqanda uning o‘rniga Cl^-^ ning kirishi
+s4853	Cl^-^ ning buyrakda reabsorbsiyasi
+s4854	Na^+^ va K^+^ almashinuvi
+s4855	H^+^ ning gemoglobin bilan bog‘lanishi
+s4856	O~2~ ning plazmaga chiqishi
+s4857	Me’yorda P~50~ qancha?
+s4858	5 mm sim. ust.
+s4859	100 mm sim. ust.
+s4860	60 mm sim. ust.
+s4861	26–27 mm sim. ust.
+s4862	Sianid bilan zaharlanishda gipoksiya mexanizmi qanday?
+s4863	Hb O~2~ ni bog‘lamaydi
+s4864	O‘pka ventilyatsiyasi buziladi
+s4865	Sitoxromoksidaza bloklanib, hujayralar O~2~ ni ishlata olmaydi
+s4866	Qon oqimi to‘xtaydi
+s4867	Eritrotsitlar parchalanadi
+s4868	Pulsoksimetr qaysi holatda noto‘g‘ri natija beradi?
+s4869	Sog‘lom odamda tinch holatda
+s4870	Yengil jismoniy yuklamada
+s4871	Tirnoqsiz barmoqda
+s4872	Nafas soni 16 bo‘lganda
+s4873	Is gazi bilan zaharlanishda (karboksigemoglobin)
+s4874	NH 500 ml, nafas soni 15 /daq, o‘lik bo‘shliq 150 ml bo‘lsa, alveolyar ventilyatsiya qancha?
+s4875	7,5 l/daq
+s4876	2,25 l/daq
+s4877	9,75 l/daq
+s4878	5,25 l/daq
+s4879	0,35 l/daq
+s4880	25 yoshli ayol yo‘tal va kechasi bo‘g‘ilish xurujlaridan shikoyat qiladi. Spirometriya: FO‘TS — kerakli qiymatning 88 %, FNChH~1~ — 58 %, Tiffno indeksi 62 %. Salbutamol inhalyatsiyasidan 20 daqiqa keyin FNChH~1~ 22 % ga (350 ml) ortdi.
+s4881	Ventilyatsiya buzilishining turi qaysi? Bronxolitik sinama natijasi nimani ko‘rsatadi?
+s4882	Obstruktiv buzilish: FNChH~1~ va Tiffno indeksi (< 70 %) kamaygan, FO‘TS deyarli me’yorda. Bronxlar torayganda havo yo‘llari qarshiligi oshadi (Puazeyl qonuniga ko‘ra radiusning to‘rtinchi darajasiga teskari), havoni tez chiqarish qiyinlashadi. Bronxolitik sinama musbat (≥ 12 % va ≥ 200 ml) — obstruksiya qaytar, bronxlar silliq muskullari spazmi β~2~-adrenomimetik ta’sirida bo‘shashgan. Bu bronxial astmaga xos.
+s4883	Alpinist 5000 m balandlikka chiqdi; u yerda atmosfera bosimi ≈ 405 mm sim. ust. Bir necha kundan keyin uning qonida 2,3-DFG ko‘paygani aniqlandi.
+s4884	Bu balandlikda alveolyar pO~2~ ni taxminan hisoblang. 2,3-DFG ko‘payishining moslashuv ahamiyati qanday?
+s4885	Nafas olingan havoda pO~2~ = (405 − 47) × 0,21 ≈ 75 mm sim. ust.; alveolalarda CO~2~ va ventilyatsiyani hisobga olganda pO~2~ ≈ 45–50 mm sim. ust. ga tushadi (giperventilyatsiya uni biroz oshiradi). Bunday pO~2~ da saturatsiya 80–85 % atrofida. Gipoksiya eritrotsitlarda 2,3-DFG sintezini kuchaytiradi; 2,3-DFG dezoksigemoglobin bilan bog‘lanib, uning O~2~ ga moyilligini kamaytiradi — dissotsiatsiya egri chizig‘i o‘ngga siljiydi. Natijada o‘pkada O~2~ biriktirish biroz kamaysa-da, to‘qimalarda O~2~ ajralishi sezilarli osonlashadi — to‘qimalarning kislorod bilan ta’minlanishi yaxshilanadi.
