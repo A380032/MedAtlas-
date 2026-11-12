@@ -9193,5 +9193,266 @@
     ]
    }
   ]
+ },
+ "p261_94.webp": {
+  "items": [
+   {
+    "box": [
+     270,
+     6,
+     640,
+     23
+    ],
+    "t": "Forces creating the filtration pressure in the glomerulus",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     4,
+     38,
+     151,
+     68
+    ],
+    "t": "Hydrostatic pressure in\nglomerular capillaries",
+    "f": "dv",
+    "a": "r",
+    "smax": 11
+   },
+   {
+    "box": [
+     4,
+     104,
+     151,
+     120
+    ],
+    "t": "Plasma oncotic pressure",
+    "f": "dv",
+    "a": "r",
+    "smax": 11
+   },
+   {
+    "box": [
+     4,
+     159,
+     151,
+     189
+    ],
+    "t": "Hydrostatic pressure\nin the capsule",
+    "f": "dv",
+    "a": "r",
+    "smax": 11
+   },
+   {
+    "box": [
+     4,
+     219,
+     151,
+     247
+    ],
+    "t": "EFFECTIVE\nFILTRATION PRESSURE",
+    "f": "dv",
+    "a": "r",
+    "smax": 11
+   },
+   {
+    "box": [
+     340,
+     281,
+     570,
+     299
+    ],
+    "t": "Pressure, mm Hg (approximate)",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p263_95.webp": {
+  "items": [
+   {
+    "box": [
+     55,
+     273,
+     235,
+     299
+    ],
+    "t": "Na⁺ reabsorption",
+    "f": "dvs",
+    "smax": 17
+   },
+   {
+    "box": [
+     414,
+     284,
+     748,
+     310
+    ],
+    "t": "Water reabsorption after Na⁺",
+    "f": "dvs",
+    "smax": 17
+   },
+   {
+    "box": [
+     95,
+     413,
+     170,
+     432
+    ],
+    "t": "Artery",
+    "f": "serif",
+    "smax": 14,
+    "a": "r"
+   },
+   {
+    "box": [
+     128,
+     451,
+     176,
+     467
+    ],
+    "t": "Vein",
+    "f": "serif",
+    "smax": 14,
+    "a": "r"
+   },
+   {
+    "box": [
+     220,
+     531,
+     532,
+     558
+    ],
+    "t": "Formation of the osmotic gradient",
+    "f": "serif",
+    "smax": 19
+   },
+   {
+    "box": [
+     308,
+     565,
+     328,
+     582
+    ],
+    "t": "B",
+    "f": "serifi",
+    "smax": 14
+   }
+  ]
+ },
+ "p264_96.webp": {
+  "items": [
+   {
+    "box": [
+     259,
+     15,
+     504,
+     46
+    ],
+    "t": "Decrease of blood volume / arterial\npressure, Na⁺; sympathetic influence",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     284,
+     85,
+     479,
+     113
+    ],
+    "t": "Juxtaglomerular cells\nsecrete RENIN",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     294,
+     150,
+     468,
+     181
+    ],
+    "t": "Angiotensinogen (liver) →\nangiotensin I",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     272,
+     218,
+     490,
+     249
+    ],
+    "t": "ACE (mainly in lung endothelium)\n→ ANGIOTENSIN II",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     17,
+     285,
+     158,
+     316
+    ],
+    "t": "Arteriolar constriction\n(pressure ↑)",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     190,
+     285,
+     364,
+     316
+    ],
+    "t": "Aldosterone ↑ →\nNa⁺ and water reabsorption",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     394,
+     285,
+     504,
+     316
+    ],
+    "t": "Vasopressin ↑,\nthirst ↑",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     534,
+     288,
+     654,
+     313
+    ],
+    "t": "Sympathetic effect ↑",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     269,
+     353,
+     456,
+     384
+    ],
+    "t": "Blood volume and arterial\npressure return to normal",
+    "f": "dv",
+    "s": 11
+   },
+   {
+    "box": [
+     668,
+     218,
+     756,
+     246
+    ],
+    "t": "negative\nfeedback",
+    "f": "dv",
+    "c": "#b0443a",
+    "s": 10
+   }
+  ]
  }
 }

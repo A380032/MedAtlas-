@@ -4,7 +4,7 @@ Spetsifikatsiya: tools/i18n/books/<id>/img_en.json
   {"<nom>.webp": {"also": ["<dublikat>.webp"], "items": [
       {"box": [x0, y0, x1, y1], "t": "English text", ...ixtiyoriy...}, ...]}}
 Bandning ixtiyoriy maydonlari:
-  "f":  shrift — serif | serifb | serifi | sans | sansb | dv | dvb | dvi | dvc (DejaVu)   (standart: serif)
+  "f":  shrift — serif | serifb | serifi | sans | sansb | dv | dvb | dvi | dvc | dvs | dvsb (DejaVu)   (standart: serif)
   "s":  shrift o'lchami px (bo'lmasa qutiga sig'adigan eng kattasi tanlanadi)
   "smax": avtomatik tanlanadigan o'lchamning yuqori chegarasi px (asl yozuv o'lchamidan oshmasin)
   "a":  l | c | r — gorizontal tekislash (standart: c)
@@ -34,6 +34,8 @@ FONTS = {
     "dvb": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "dvi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
     "dvc": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf",
+    "dvs": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+    "dvsb": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
 }
 
 
