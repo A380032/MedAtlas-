@@ -209,6 +209,11 @@ def split_tables():
         t["rows"].append([bl[i + 3]["text"], bl[i + 4]["text"], bl[i + 5]["text"]])   # Grokk nafasi
         del bl[i + 1:i + 6]
         n += 1
+    bl, i = find_table("Jadval 8.1.")
+    if i > 0 and bl[i - 1].get("text") == "saqlangan)":          # jadval nomining oxiri jadvaldan oldin qolgan
+        bl[i]["title"] += " saqlangan)"
+        del bl[i - 1]
+        n += 1
     bl, i = find_table("Jadval 10.3.")
     if bl[i + 1].get("text") == "**Sinf Ta’rifi**":
         m = re.match(r"(IV) (.+)", bl[i + 2]["text"])
@@ -250,6 +255,22 @@ TEXT = {
     "Rus va ingliz adabiyotlarida (Grebenev, Mukhin)": "Rus adabiyotida (Grebenev, Muxin)",
     "jigarrangqizg‘ish": "jigarrang-qizg‘ish",
     "(qizil va kulrang jigarlanish bosqichi)": "(qizil jigarlanish bosqichi)",   # zangsimon balg'am
+    "5– 6 sm": "5–6 sm",
+    "(G. Sokolov, F. Yanovskiy, M. Obraztsov)": "(G. Sokolov, F. Yanovskiy, V. Obraztsov)",   # V.P. Obraztsov
+    "qiyosiy perkussiya o‘ng tomonda faqat III": "qiyosiy perkussiya faqat III",
+    "O‘rtach a": "O‘rtacha",
+    "Ekssudati v": "Ekssudativ",
+    "Obstrukti v": "Obstruktiv",
+    "Me’yor ga qaytadi": "Me’yorga qaytadi",
+    # astma balg'ami mnemonikasi: "3E" yo'q, uchinchi harf Sh (Sharko)
+    "**“3E + K + S”**: **E**ozinofillar, **K**urshman spirallari, **S**harko-Leyden":
+        "**“E + K + Sh”**: **E**ozinofillar, **K**urshman spirallari, **Sh**arko-Leyden",
+    "beta~2~- agonistlar": "beta~2~-agonistlar",
+    "beta2agonistlar": "beta2-agonistlar",
+    "(“pufflovchi” bemor)": "(“puflovchi” bemor)",
+    "NChHH1/ O‘FHS": "NChHH1/O‘FHS",
+    "FEV1/ FVC": "FEV1/FVC",
+    "Asosiy ta’sirlovchi oqsil": "Asosiy ishqoriy oqsil",   # major basic protein
 }
 
 
