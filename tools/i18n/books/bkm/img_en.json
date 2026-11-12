@@ -6769,5 +6769,968 @@
     "smax": 20
    }
   ]
+ },
+ "p269_51.webp": {
+  "items": [
+   {
+    "box": [
+     8,
+     71,
+     31,
+     306
+    ],
+    "t": "Total bilirubin, µmol/l",
+    "f": "dv",
+    "rot": 90,
+    "smax": 17
+   },
+   {
+    "box": [
+     454,
+     31,
+     735,
+     47
+    ],
+    "t": "Risk of bilirubin encephalopathy (≈ 340)",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 14
+   },
+   {
+    "box": [
+     114,
+     66,
+     293,
+     100
+    ],
+    "t": "Jaundice appearing on day 1\nis pathological",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 14
+   },
+   {
+    "box": [
+     512,
+     266,
+     734,
+     282
+    ],
+    "t": "Skin yellowing visible (≈ 85)",
+    "f": "dv",
+    "c": "#888888",
+    "smax": 14
+   },
+   {
+    "box": [
+     300,
+     394,
+     515,
+     415
+    ],
+    "t": "Newborn age, days",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     170,
+     437,
+     448,
+     456
+    ],
+    "t": "Physiological jaundice (full-term)",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   },
+   {
+    "box": [
+     496,
+     437,
+     708,
+     456
+    ],
+    "t": "Preterm newborn",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   }
+  ]
+ },
+ "p277_52.webp": {
+  "items": [
+   {
+    "box": [
+     140,
+     29,
+     337,
+     47
+    ],
+    "t": "Xenobiotic (RH) — lipophilic",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     383,
+     21,
+     631,
+     53
+    ],
+    "t": "NADPH–cytochrome P450 reductase\n(FAD, FMN) — electrons",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     193,
+     100,
+     552,
+     147
+    ],
+    "t": "Phase I — functionalization:\nmicrosomal oxidation (cytochrome P450)\nRH + O₂ + NADPH + H⁺ → ROH + H₂O + NADP⁺",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     25,
+     195,
+     341,
+     229
+    ],
+    "t": "Phase II — conjugation: glucuronide, sulfate,\nglutathione, acetyl, methyl, glycine",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     389,
+     195,
+     735,
+     229
+    ],
+    "t": "Sometimes activation: reactive intermediate\n(NAPQI, epoxides) → toxicity, carcinogenesis",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     27,
+     275,
+     340,
+     309
+    ],
+    "t": "Water-soluble, less toxic product →\nexcreted in urine or bile",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p281_53.webp": {
+  "items": [
+   {
+    "box": [
+     330,
+     29,
+     403,
+     45
+    ],
+    "t": "Ethanol",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     27,
+     103,
+     210,
+     153
+    ],
+    "t": "Alcohol dehydrogenase\n(cytosol; main pathway)\nNAD⁺ → NADH",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     263,
+     103,
+     471,
+     156
+    ],
+    "t": "MEOS — CYP2E1\n(microsomes; induced by\nchronic drinking)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     523,
+     112,
+     709,
+     147
+    ],
+    "t": "Catalase\n(peroxisomes; minor)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     179,
+     211,
+     554,
+     230
+    ],
+    "t": "Acetaldehyde (toxic: protein and DNA adducts)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     181,
+     286,
+     552,
+     322
+    ],
+    "t": "Aldehyde dehydrogenase (ALDH2, mitochondria)\nNAD⁺ → NADH; inhibited by disulfiram",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     40,
+     370,
+     320,
+     406
+    ],
+    "t": "Acetate → acetyl-CoA → Krebs cycle,\nfatty acids, ketone bodies",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     374,
+     371,
+     731,
+     407
+    ],
+    "t": "NADH/NAD⁺ ↑: lactic acidosis, hypoglycemia,\nfatty liver, hyperuricemia",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p290_54.webp": {
+  "items": [
+   {
+    "box": [
+     124,
+     17,
+     390,
+     47
+    ],
+    "t": "Hydrophilic hormones: peptides,\ncatecholamines (membrane receptors)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     538,
+     17,
+     726,
+     47
+    ],
+    "t": "Lipophilic hormones: steroids,\nthyroid hormones, calcitriol",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     15,
+     85,
+     281,
+     127
+    ],
+    "t": "G protein-coupled receptors\n→ adenylate cyclase (cAMP),\nphospholipase C (IP₃, Ca²⁺, DAG)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     313,
+     85,
+     488,
+     127
+    ],
+    "t": "Tyrosine kinase receptors\n(insulin, growth factors)\n→ IRS, PI3K/Akt, Ras-MAPK",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     526,
+     85,
+     739,
+     127
+    ],
+    "t": "Nuclear (intracellular) receptors\n→ hormone response element\nin DNA (HRE)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     170,
+     173,
+     386,
+     201
+    ],
+    "t": "Fast response (seconds–minutes):\nenzyme phosphorylation, channels",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     429,
+     166,
+     599,
+     209
+    ],
+    "t": "Slow response (hours–days):\ngene transcription,\nnew protein synthesis",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p292_55.webp": {
+  "items": [
+   {
+    "box": [
+     406,
+     26,
+     503,
+     41
+    ],
+    "t": "Cholesterol",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     296,
+     95,
+     612,
+     143
+    ],
+    "t": "Pregnenolone\n(CYP11A1 — side-chain cleavage enzyme;\nStAR protein — key step; ACTH, LH)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     290,
+     194,
+     396,
+     211
+    ],
+    "t": "Progesterone",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     237,
+     238,
+     340,
+     254
+    ],
+    "t": "21-hydroxylase",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     347,
+     238,
+     454,
+     254
+    ],
+    "t": "17α-hydroxylase",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     480,
+     274,
+     655,
+     306
+    ],
+    "t": "Dehydroepiandrosterone\n(DHEA)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     22,
+     282,
+     208,
+     297
+    ],
+    "t": "11-Deoxycorticosterone",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     248,
+     282,
+     438,
+     300
+    ],
+    "t": "17α-Hydroxyprogesterone",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     36,
+     353,
+     192,
+     400
+    ],
+    "t": "Aldosterone\n(zona glomerulosa;\naldosterone synthase)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     252,
+     353,
+     433,
+     401
+    ],
+    "t": "Cortisol\n(zona fasciculata;\n21- and 11β-hydroxylase)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     494,
+     360,
+     627,
+     391
+    ],
+    "t": "Androstenedione →\ntestosterone",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     390,
+     446,
+     534,
+     478
+    ],
+    "t": "Dihydrotestosterone\n(5α-reductase)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     583,
+     446,
+     734,
+     478
+    ],
+    "t": "Estradiol\n(aromatase, CYP19)",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p300_56.webp": {
+  "items": [
+   {
+    "box": [
+     36,
+     22,
+     366,
+     57
+    ],
+    "t": "Iodide (I⁻) from blood → NIS (Na⁺/I⁻ symporter)\non the basal membrane (enhanced by TSH)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     20,
+     104,
+     380,
+     138
+    ],
+    "t": "Pendrin → colloid; thyroid peroxidase (H₂O₂):\nI⁻ → I⁰ (oxidation)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     426,
+     104,
+     732,
+     139
+    ],
+    "t": "Thyrostatics: thiamazole, propylthiouracil\n(thyroid peroxidase inhibitors)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     238,
+     187,
+     542,
+     222
+    ],
+    "t": "Iodination of thyroglobulin tyrosines:\nMIT, DIT (organification)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     257,
+     269,
+     526,
+     302
+    ],
+    "t": "Coupling (thyroid peroxidase):\nDIT + DIT → T₄;  MIT + DIT → T₃",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     219,
+     352,
+     563,
+     386
+    ],
+    "t": "Colloid endocytosis → thyroglobulin proteolysis\nin lysosomes → T₄, T₃ into blood (TSH)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     222,
+     434,
+     560,
+     469
+    ],
+    "t": "Peripheral deiodinase (Se): T₄ → T₃ (active)\nor rT₃ (inactive)",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p302_57.webp": {
+  "items": [
+   {
+    "box": [
+     494,
+     30,
+     695,
+     50
+    ],
+    "t": "Decrease in blood Ca²⁺",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     29,
+     109,
+     412,
+     146
+    ],
+    "t": "Calcitonin (C cells):\ninhibits osteoclasts when Ca²⁺ ↑",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     467,
+     109,
+     716,
+     146
+    ],
+    "t": "Parathyroid glands:\nPTH secretion ↑ (CaSR)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     103,
+     207,
+     383,
+     245
+    ],
+    "t": "Bone: osteoclast activation\n(RANKL) → Ca²⁺ and phosphate released",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     459,
+     198,
+     725,
+     253
+    ],
+    "t": "Kidney: Ca²⁺ reabsorption ↑,\nphosphate reabsorption ↓;\n1α-hydroxylase ↑",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     341,
+     312,
+     559,
+     331
+    ],
+    "t": "Calcitriol (1,25(OH)₂D₃) ↑",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     303,
+     390,
+     567,
+     427
+    ],
+    "t": "Intestine: Ca²⁺, phosphate absorption ↑\n(calbindin, TRPV6)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     242,
+     486,
+     635,
+     506
+    ],
+    "t": "Blood Ca²⁺ normalizes (2.15–2.55 mmol/l)",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p310_58.webp": {
+  "items": [
+   {
+    "box": [
+     140,
+     34,
+     620,
+     89
+    ],
+    "t": "Glomerulus: ultrafiltration ≈ 180 l/day\n(protein-free plasma; GFR ≈ 90–120 ml/min)",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     48,
+     164,
+     710,
+     244
+    ],
+    "t": "Proximal tubule: glucose (SGLT2), amino acids,\n≈ 65 % of Na⁺ and water, HCO₃⁻, phosphate reabsorbed;\nsecretion of organic acids and bases",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     132,
+     320,
+     626,
+     374
+    ],
+    "t": "Loop of Henle: NKCC2 (Na⁺, K⁺, 2Cl⁻);\ncountercurrent — medullary hyperosmolality",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     187,
+     450,
+     584,
+     504
+    ],
+    "t": "Distal tubule: NCC (thiazides),\nCa²⁺ reabsorption (PTH)",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     102,
+     580,
+     657,
+     634
+    ],
+    "t": "Collecting duct: ENaC, K⁺ and H⁺ secretion\n(aldosterone); water — aquaporin-2 (vasopressin)",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     236,
+     718,
+     523,
+     748
+    ],
+    "t": "Final urine ≈ 1.5 l/day",
+    "f": "dv",
+    "smax": 24
+   }
+  ]
+ },
+ "p311_59.webp": {
+  "items": [
+   {
+    "box": [
+     312,
+     21,
+     611,
+     54
+    ],
+    "t": "Tubular cell: CO₂ + H₂O → H₂CO₃\n(carbonic anhydrase) → H⁺ + HCO₃⁻",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     259,
+     99,
+     438,
+     146
+    ],
+    "t": "H⁺ into urine\n(Na⁺/H⁺ exchanger,\nH⁺-ATPase)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     502,
+     107,
+     645,
+     140
+    ],
+    "t": "HCO₃⁻ into blood\n(new bicarbonate)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     27,
+     193,
+     200,
+     226
+    ],
+    "t": "1) Reabsorption of\nfiltered HCO₃⁻",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     249,
+     193,
+     446,
+     223
+    ],
+    "t": "2) Titratable acids:\nHPO₄²⁻ + H⁺ → H₂PO₄⁻",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     496,
+     193,
+     733,
+     226
+    ],
+    "t": "3) Ammoniagenesis: glutamine →\n(glutaminase) NH₃ + H⁺ → NH₄⁺",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p322_60.webp": {
+  "items": [
+   {
+    "box": [
+     158,
+     17,
+     352,
+     59
+    ],
+    "t": "Astrocyte: glutamate is taken up\n(EAAT) → glutamine\n(glutamine synthetase, ATP, NH₃)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     369,
+     23,
+     465,
+     37
+    ],
+    "t": "glutamine returns",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     483,
+     17,
+     623,
+     59
+    ],
+    "t": "Glutamatergic neuron:\nglutamine → glutamate\n(glutaminase)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     333,
+     77,
+     405,
+     91
+    ],
+    "t": "uptake",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     469,
+     77,
+     515,
+     91
+    ],
+    "t": "release",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     20,
+     108,
+     255,
+     138
+    ],
+    "t": "Glycolysis in astrocyte → lactate →\nto neuron (energy, “lactate shuttle”)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     293,
+     108,
+     472,
+     137
+    ],
+    "t": "Synaptic cleft: glutamate\n(NMDA, AMPA receptors)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     510,
+     109,
+     738,
+     138
+    ],
+    "t": "GABAergic neuron: glutamate →\nGABA (glutamate decarboxylase, B₆)",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
+ },
+ "p322_61.webp": {
+  "items": [
+   {
+    "box": [
+     27,
+     29,
+     384,
+     48
+    ],
+    "t": "Action potential reaches the presynaptic terminal",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     28,
+     112,
+     382,
+     131
+    ],
+    "t": "Voltage-gated Ca²⁺ channels open",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     435,
+     104,
+     732,
+     140
+    ],
+    "t": "Botulinum toxin cleaves SNARE\n→ no transmitter release",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     173,
+     189,
+     614,
+     225
+    ],
+    "t": "Vesicle exocytosis (SNARE proteins:\nsynaptobrevin, syntaxin, SNAP-25) → transmitter release",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     136,
+     275,
+     372,
+     328
+    ],
+    "t": "Ionotropic receptors\n(nAChR, NMDA/AMPA, GABA-A):\nfast response (ms)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     425,
+     275,
+     643,
+     326
+    ],
+    "t": "Metabotropic receptors\n(G protein: mAChR, adrenergic,\ndopamine, GABA-B): slow",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     210,
+     377,
+     577,
+     430
+    ],
+    "t": "Termination: enzymatic breakdown\n(acetylcholinesterase, MAO, COMT) or\nreuptake (transporters — SSRI target)",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
  }
 }
