@@ -12358,7 +12358,7 @@
     "t": "Sound waves →\nauricle, external auditory canal",
     "f": "dv",
     "smax": 21,
-    "bg": "#e1eaf7"
+    "bg": "#deeaf6"
    },
    {
     "box": [
@@ -12370,7 +12370,7 @@
     "t": "Tympanic membrane vibrates",
     "f": "dv",
     "smax": 21,
-    "bg": "#edfbff"
+    "bg": "#deeaf6"
    },
    {
     "box": [
@@ -12382,7 +12382,7 @@
     "t": "Auditory ossicles:\nmalleus → incus → stapes\n(pressure ≈ 20-fold amplified)",
     "f": "dv",
     "smax": 21,
-    "bg": "#e4effe"
+    "bg": "#deeaf6"
    },
    {
     "box": [
@@ -12394,7 +12394,7 @@
     "t": "Oval window → cochlear\nperilymph (scala vestibuli)",
     "f": "dv",
     "smax": 21,
-    "bg": "#deebf0"
+    "bg": "#deeaf6"
    },
    {
     "box": [
@@ -12406,7 +12406,7 @@
     "t": "Basilar membrane vibration —\n“traveling wave” (Békésy)",
     "f": "dv",
     "smax": 21,
-    "bg": "#e1eaf7"
+    "bg": "#deeaf6"
    },
    {
     "box": [
@@ -12418,7 +12418,7 @@
     "t": "Hair bundles of the hair cells of the organ\nof Corti bend against the tectorial membrane →\nK⁺ channels open → depolarization",
     "f": "dv",
     "smax": 21,
-    "bg": "#fdf5d1"
+    "bg": "#fcf4d0"
    },
    {
     "box": [
@@ -12430,7 +12430,7 @@
     "t": "Mediator (glutamate) → spiral\nganglion neurons → VIII nerve",
     "f": "dv",
     "smax": 21,
-    "bg": "#e2edf2"
+    "bg": "#deeaf4"
    },
    {
     "box": [
@@ -12442,7 +12442,271 @@
     "t": "Inferior colliculi → medial geniculate body →\ntemporal cortex (areas 41–42)",
     "f": "dv",
     "smax": 21,
-    "bg": "#d6f4e1"
+    "bg": "#d4f5e3"
+   }
+  ]
+ },
+ "p338_124.webp": {
+  "items": [
+   {
+    "box": [
+     230,
+     7,
+     560,
+     28
+    ],
+    "t": "Human hearing range (approximate)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     8,
+     100,
+     26,
+     318
+    ],
+    "t": "Sound pressure level, dB",
+    "f": "dv",
+    "rot": 90,
+    "smax": 14
+   },
+   {
+    "box": [
+     452,
+     100,
+     515,
+     137
+    ],
+    "t": "speech\nrange",
+    "f": "dv",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     188,
+     184,
+     290,
+     220
+    ],
+    "t": "audible\nrange",
+    "f": "dv",
+    "smax": 13,
+    "bg": "ring",
+    "a": "l"
+   },
+   {
+    "box": [
+     496,
+     174,
+     701,
+     191
+    ],
+    "t": "hearing threshold",
+    "f": "dv",
+    "smax": 12,
+    "a": "l"
+   },
+   {
+    "box": [
+     496,
+     193,
+     701,
+     210
+    ],
+    "t": "pain threshold (≈ 120–130 dB)",
+    "f": "dv",
+    "smax": 12,
+    "a": "l"
+   },
+   {
+    "box": [
+     330,
+     418,
+     465,
+     437
+    ],
+    "t": "Frequency, Hz",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p349_125.webp": {
+  "items": [
+   {
+    "box": [
+     207,
+     21,
+     518,
+     59
+    ],
+    "t": "Nociceptors (free nerve endings):\nmechanical, thermal, chemical, polymodal",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#f9dcd8"
+   },
+   {
+    "box": [
+     113,
+     104,
+     330,
+     158
+    ],
+    "t": "Aδ fibers (12–30 m/s):\nfirst — sharp, well\nlocalized pain",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#e1ebf5"
+   },
+   {
+    "box": [
+     369,
+     104,
+     642,
+     158
+    ],
+    "t": "C fibers (0.5–2 m/s):\nsecond — aching,\npoorly localized pain",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#deeaf6"
+   },
+   {
+    "box": [
+     216,
+     203,
+     509,
+     242
+    ],
+    "t": "Dorsal horn of the spinal cord\n(mediators: glutamate, substance P)",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#deeaf6"
+   },
+   {
+    "box": [
+     21,
+     295,
+     328,
+     349
+    ],
+    "t": "Neospinothalamic tract → ventral\nposterolateral nucleus of thalamus →\nsomatosensory cortex (localization)",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#e1ebf3"
+   },
+   {
+    "box": [
+     365,
+     287,
+     739,
+     357
+    ],
+    "t": "Paleospinothalamic and spinoreticular tracts →\nreticular formation, intralaminar nuclei →\nlimbic system, cingulate gyrus, insula\n(emotional and autonomic component)",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#deeaf6"
+   }
+  ]
+ },
+ "p350_126.webp": {
+  "items": [
+   {
+    "box": [
+     458,
+     20,
+     740,
+     86
+    ],
+    "t": "Descending inhibitory pathways:\nperiaqueductal gray matter,\nraphe nuclei (serotonin), locus coeruleus\n(noradrenaline), endogenous opioids",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#e7dbed"
+   },
+   {
+    "box": [
+     20,
+     35,
+     187,
+     71
+    ],
+    "t": "Thick Aβ fibers\n(touch, rubbing)",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#d4f7e4"
+   },
+   {
+    "box": [
+     227,
+     35,
+     420,
+     71
+    ],
+    "t": "Thin Aδ and C fibers\n(pain)",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#fcdcd9"
+   },
+   {
+    "box": [
+     266,
+     99,
+     390,
+     120
+    ],
+    "t": "+ (activates)",
+    "f": "dv",
+    "smax": 11,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     392,
+     104,
+     486,
+     122
+    ],
+    "t": "− (inhibits)",
+    "f": "dv",
+    "smax": 11,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     319,
+     142,
+     541,
+     193
+    ],
+    "t": "Inhibitory interneuron of\nthe dorsal horn\n(substantia gelatinosa)",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#fcf4d0"
+   },
+   {
+    "box": [
+     392,
+     211,
+     536,
+     228
+    ],
+    "t": "− (“closes the gate”)",
+    "f": "dv",
+    "smax": 11,
+    "bg": "#ffffff",
+    "c": "#b0443a"
+   },
+   {
+    "box": [
+     243,
+     249,
+     461,
+     285
+    ],
+    "t": "Projection (T) neuron\n→ spinothalamic tract → brain",
+    "f": "dv",
+    "smax": 13,
+    "bg": "#e1ebf5"
    }
   ]
  }
