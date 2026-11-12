@@ -5747,5 +5747,196 @@
     "smax": 15
    }
   ]
+ },
+ "p188_66.webp": {
+  "items": [
+   {
+    "box": [
+     88,
+     40,
+     436,
+     80
+    ],
+    "t": "ATMOSPHERIC AIR",
+    "f": "sansb",
+    "smax": 24,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     56,
+     167,
+     182,
+     194
+    ],
+    "t": "inhalation",
+    "f": "sansb",
+    "smax": 21,
+    "a": "r"
+   },
+   {
+    "box": [
+     349,
+     167,
+     478,
+     194
+    ],
+    "t": "exhalation",
+    "f": "sansb",
+    "smax": 21,
+    "a": "l"
+   },
+   {
+    "box": [
+     560,
+     141,
+     708,
+     201
+    ],
+    "t": "external\nrespiration",
+    "f": "sansb",
+    "smax": 23
+   },
+   {
+    "box": [
+     170,
+     273,
+     356,
+     321
+    ],
+    "t": "alveolar\nair",
+    "f": "sansb",
+    "smax": 21
+   },
+   {
+    "box": [
+     560,
+     350,
+     700,
+     448
+    ],
+    "t": "gas\ntransport\nby blood",
+    "f": "sansb",
+    "smax": 24
+   },
+   {
+    "box": [
+     30,
+     434,
+     182,
+     478
+    ],
+    "t": "arterial\nblood",
+    "f": "sansb",
+    "smax": 17
+   },
+   {
+    "box": [
+     338,
+     434,
+     440,
+     478
+    ],
+    "t": "venous\nblood",
+    "f": "sansb",
+    "smax": 17
+   },
+   {
+    "box": [
+     560,
+     569,
+     710,
+     628
+    ],
+    "t": "tissue\nrespiration",
+    "f": "sansb",
+    "smax": 23
+   },
+   {
+    "box": [
+     206,
+     598,
+     334,
+     626
+    ],
+    "t": "tissues",
+    "f": "sansb",
+    "smax": 23
+   }
+  ]
+ },
+ "p189_67.webp": {
+  "items": [
+   {
+    "box": [
+     241,
+     0,
+     338,
+     18
+    ],
+    "t": "Manometer",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     24,
+     67,
+     90,
+     86
+    ],
+    "t": "Trachea",
+    "f": "serif",
+    "smax": 15,
+    "a": "r"
+   },
+   {
+    "box": [
+     2,
+     128,
+     110,
+     165
+    ],
+    "t": "Glass\nbell jar",
+    "f": "serif",
+    "smax": 15,
+    "a": "r"
+   },
+   {
+    "box": [
+     20,
+     193,
+     95,
+     211
+    ],
+    "t": "Lungs",
+    "f": "serif",
+    "smax": 15,
+    "a": "r"
+   },
+   {
+    "box": [
+     2,
+     252,
+     95,
+     288
+    ],
+    "t": "Rubber\nmembrane",
+    "f": "serif",
+    "smax": 15,
+    "a": "r"
+   },
+   {
+    "box": [
+     650,
+     320,
+     665,
+     336
+    ],
+    "t": "B",
+    "f": "serifi",
+    "smax": 15
+   }
+  ]
  }
 }
