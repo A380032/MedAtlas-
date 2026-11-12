@@ -1,0 +1,8 @@
+# Manba (uz) xatolari — bkm_fix_source.py ga qo'shiladi. Format: kalit | muammo | tuzatish
+splitchk: Uglevodl ar, Kompl eks, Galaktotserebrozid aza, Mitoxondri ya, Karbamoilfosfatsint etaza, Ornitinkarbamoiltra nsferaza, Argininosuktsinatsin tetaza, Argininosuktsinatlia za, Gemoxrom atoz, Konyugatsiyal anmagan/angan, Bosqic h (s0039) | jadval katagida bo'lingan so'zlar | birlashtirish
+s0048,s0119,s0127,s0131,s0139,s0146,s0161 | tushib qolgan chiziqcha/bo'shliq: βoksidlanish, αketoglutarat, glyukoza-6fosfat, atsetil- KoA, 5’dezoksiadenozilkobalami n, 1,25digidroksi | β-oksidlanish, α-ketoglutarat, glyukoza-6-fosfat, atsetil-KoA, 5’-dezoksiadenozilkobalamin, 1,25-digidroksi
+s0120 | "Vernike– Korsakov" | "Vernike–Korsakov"
+s0111,s0364,s0430 | ** ichida oxirgi bo'shliq ("eruvchi **", "(LDG) **", "o‘zgarmaydi. **") | bo'shliqni olib tashlash
+s0404 | "harorat  optimumi" ikki bo'shliq | bitta
+s0172/s0173, s0429-s0431 | sahifa chegarasida bo'lingan xatboshi (s0172+s0173 = s0023 takrori) | birlashtirish (ikp_fix_source join_sentences kabi)
+s0393 | "108–1012 marta" — daraja yo'qolgan | "10^8^–10^12^ marta" (en: 10^8^–10^12^ — remapdan keyin en ga ham qo'yish)
