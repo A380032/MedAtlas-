@@ -276,6 +276,26 @@ def list_tail():
     return n
 
 
+def bullet_tail():
+    """Belgili (•) ro'yxat bandi sahifada uzilib, davomi va keyingi bandlar bitta p ga tushib qolgan:
+    "... himoya shilimshig‘ini ishlab" | "chiqaruvchi hujayralar kam. ... • Oshqozondan evakuatsiya: ..." """
+    n = 0
+    for t in d["topics"]:
+        for s in t["sections"]:
+            bl = s["blocks"]
+            for i in range(len(bl) - 1):
+                a, b = bl[i], bl[i + 1]
+                if a["type"] == "list" and not a.get("ordered") and b["type"] == "p" \
+                        and re.match(r"[a-z‘]", b["text"]) and not re.search(r"[.:;!?)]\s*$", a["items"][-1]):
+                    pieces = [x.strip() for x in re.split(r"\s•\s", b["text"])]
+                    a["items"][-1] = a["items"][-1].rstrip() + " " + pieces[0]
+                    a["items"] += pieces[1:]
+                    del bl[i + 1]
+                    n += 1
+                    break
+    return n
+
+
 def renumber():
     """Bo'lim ichidagi kichik sarlavhalar raqami bo'lim raqamiga moslanadi (9-bo'limda 10.1. -> 9.1.)."""
     n = 0
@@ -391,6 +411,7 @@ log.append(f"{every(join_lists)} ta bo'lingan ro'yxat birlashtirildi")
 log.append(f"{every(join_sentences)} ta bo'lingan gap birlashtirildi")
 log.append(f"{tables()} ta jadval tuzatildi")
 log.append(f"{list_tail()} ta uzilgan ro'yxat bandi tiklandi")
+log.append(f"{bullet_tail()} ta uzilgan belgili ro'yxat bandi tiklandi")
 log.append(f"{renumber()} ta kichik sarlavha raqami tuzatildi")
 cnt = [0]
 walk(d, cnt)
