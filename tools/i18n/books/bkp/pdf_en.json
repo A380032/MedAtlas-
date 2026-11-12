@@ -1,0 +1,150 @@
+{
+  "lang": "en",
+  "out": "data/en/books/bkp.pdf",
+  "pdf_title": "Propaedeutics of Childhood Diseases: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Propaedeutics of Childhood Diseases — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/bkp/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Propaedeutics of Childhood Diseases No. 1"
+    ],
+    "title": "PROPAEDEUTICS OF CHILDHOOD DISEASES",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Propaedeutics of Childhood Diseases: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+    "",
+    "This manual is based on the 15 practical class topics of the calendar-thematic plan of the course “Propaedeutics of Childhood Diseases”. Each topic fully covers the anatomical and physiological features of the child's body, examination methods, the semiotics of lesions and their clinical significance. At the end of each chapter there are algorithms for performing practical skills, review questions, test questions and clinical cases with answers. The answers to the tests are given at the end of the book. To make the material easier to memorize, “Remember”, “Clinical significance” and “Memory aid” boxes, tables and figures are used extensively.",
+    "The manual is based on the textbooks of Sh.I. Navruzova and N.A. Geppe, R.R. Kildiyarova, A.Sh. Arzikulov, B. Karakhodzhaev, I.M. Lysenko and T.A. Daminov. The figures are taken from these sources, and the source is given under each of them.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before applying the clinical information in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for 3rd-year students of the faculties of general medicine of medical higher education institutions.",
+    "This English edition is a translation of the Uzbek original."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Propaedeutics of childhood diseases is the “ABC” of pediatrics. This course teaches the age-specific anatomical and physiological features of the child's body, methods of examining healthy and sick children, and the main signs and syndromes of diseases (their semiotics). The more thoroughly a student masters propaedeutics, the more easily he or she will master faculty and hospital pediatrics, pediatric infectious diseases and pediatric surgery in later years."
+    },
+    {
+      "type": "p",
+      "text": "The manual follows the order of the 15 practical classes of the calendar-thematic plan. Each chapter corresponds to one practical class and has the same structure:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Learning objectives** — what the student should know and be able to do.",
+        "**Theoretical part** — anatomical and physiological features, examination methods and semiotics.",
+        "**Clinical part** — the practical significance of the knowledge acquired, clinical examples.",
+        "**Practical skills** — a step-by-step algorithm for each procedure.",
+        "**Review questions, test questions and clinical cases** — to check independent preparation. The answers to the clinical cases are given within the chapter, and the answers to the tests at the end of the book.",
+        "**Quick review** — key numbers and rules for a revision of a few minutes before an exam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Four kinds of colored boxes appear in the text:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yellow box — a rule, number or definition that must be memorized."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Blue box — the significance of the knowledge in clinical practice."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Green box — a technique or short rule that makes memorizing easier."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Orange box — common mistakes, dangerous situations and discrepancies between textbooks."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The figures are taken from the textbook “Bolalar kasalliklari propedevtikasi” edited by Sh.I. Navruzova and N.A. Geppe, the textbook “Пропедевтика детских болезней” edited by R.R. Kildiyarova and V.I. Makarova, and the manuals of A.Sh. Arzikulov, B. Karakhodzhaev and I.M. Lysenko. The source of each figure is given under it."
+    },
+    {
+      "type": "p",
+      "text": "I hope the manual will help students prepare for practical classes, write case histories and prepare for midterm and final examinations."
+    }
+  ],
+  "fig_per_row": 4,
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key facts on Topic {n}",
+    "q": "Question",
+    "a": "Answer",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    "Navruzova Sh.I., Geppe N.A. (eds.). Bolalar kasalliklari propedevtikasi [Propaedeutics of childhood diseases]. Textbook for medical students. — Moscow: GEOTAR-Media, 2019.",
+    "Кильдиярова Р.Р., Макарова В.И. (ред.). Пропедевтика детских болезней [Propaedeutics of childhood diseases]. Textbook. 2nd ed., corrected. — Moscow: GEOTAR-Media.",
+    "Arziqulov A.Sh., Alimdjonov I.I., Djalalova M.M. et al. Bolalar kasalliklari propedevtikasi [Propaedeutics of childhood diseases]. Textbook. — Andijan: ASMI, 2017.",
+    "Qoraxo‘jayev B., Salomov I.T., Abdullayeva M.N. Bolalar kasalliklari propedevtikasi [Propaedeutics of childhood diseases]. Textbook. — Tashkent: Yangi asr avlodi, 2006.",
+    "Лысенко И.М. (ред.). Пропедевтика детских болезней [Propaedeutics of childhood diseases]. Manual. — Vitebsk: VSMU, 2014.",
+    "Daminov T.A., Xalmatova B.T., Boboyeva U.R. Bolalar kasalliklari [Childhood diseases]. Textbook. — Tashkent, 2012.",
+    "Кельцев В.А. Пропедевтика детских болезней [Propaedeutics of childhood diseases]. Study manual.",
+    "World Health Organization. Emergency Triage Assessment and Treatment (ETAT): manual for participants. — Geneva: WHO, 2005.",
+    "World Health Organization, UNICEF. Integrated Management of Childhood Illness (IMCI): chart booklet. — Geneva: WHO, 2014.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention. — 2024.",
+    "Gewitz M.H., Baltimore R.S., Tani L.Y. et al. Revision of the Jones criteria for the diagnosis of acute rheumatic fever in the era of Doppler echocardiography // Circulation. — 2015. — Vol. 131(20). — P. 1806–1818.",
+    "World Health Organization, UNICEF. Ten steps to successful breastfeeding (revised 2018). Implementation guidance: protecting, promoting and supporting breastfeeding in facilities providing maternity and newborn services. — Geneva: WHO, 2018.",
+    "World Health Organization. WHO guideline for complementary feeding of infants and young children 6–23 months of age. — Geneva: WHO, 2023.",
+    "Schwartz G.J., Work D.F. Measurement and estimation of GFR in children and adolescents // Clin J Am Soc Nephrol. — 2009. — Vol. 4(11). — P. 1832–1843."
+  ]
+}

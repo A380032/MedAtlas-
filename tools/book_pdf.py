@@ -70,9 +70,9 @@ def jpg(src_rel, maxpx=1400):
     return dst
 
 
-def figure(b, single):
+def figure(b, single, cls=None):
     cap = f"<b>{esc(b.get('label', ''))}.</b> <i>{inline(b.get('caption', ''))}</i>" if b.get("label") else f"<i>{inline(b.get('caption', ''))}</i>"
-    return (f'<figure class="{"one" if single else "two"}"><img src="file://{esc(jpg(b["src"]))}" alt="">'
+    return (f'<figure class="{cls or ("one" if single else "two")}"><img src="file://{esc(jpg(b["src"]))}" alt="">'
             f"<figcaption>{cap}</figcaption></figure>")
 
 
@@ -94,6 +94,16 @@ def blocks(bl):
             while j < len(bl) and bl[j]["type"] == "img":
                 j += 1
             imgs = bl[i:j]
+            # pdf_<lang>.json "fig_per_row" (standart 2): 3+ ta kichik rasm bir qatorda ko'pi bilan shuncha
+            per = CFG.get("fig_per_row", 2)
+            if per > 2 and len(imgs) >= 3 and all(x.get("w", 1) <= 1.7 * x.get("h", 1) for x in imgs):
+                rows = -(-len(imgs) // per)
+                size = -(-len(imgs) // rows)
+                for k in range(0, len(imgs), size):
+                    row = imgs[k:k + size]
+                    out.append('<div class="figrow">' + "".join(figure(x, False, f"k{size}") for x in row) + "</div>")
+                i = j
+                continue
             for k in range(0, len(imgs), 2):
                 row = imgs[k:k + 2]
                 out.append('<div class="figrow">' + "".join(figure(x, len(row) == 1) for x in row) + "</div>")
@@ -242,6 +252,12 @@ figure.two {{ flex: 0 1 48%; }}
 figure.one {{ flex: 0 1 78%; }}
 figure img {{ display: block; margin: 0 auto 3pt; max-width: 100%; max-height: 82mm; object-fit: contain; }}
 figure.one img {{ max-height: 98mm; }}
+figure.k3 {{ flex: 0 1 31%; }}
+figure.k4 {{ flex: 0 1 23%; }}
+.figrow:has(figure.k3), .figrow:has(figure.k4) {{ gap: 4mm; }}
+figure.k3 img {{ max-height: 62mm; }}
+figure.k4 img {{ max-height: 50mm; }}
+figure.k3 figcaption, figure.k4 figcaption {{ font-size: 9pt; }}
 figcaption {{ font-size: 9.5pt; line-height: 1.2; text-align: center; }}
 .quiz > li {{ break-inside: avoid; margin-bottom: 6pt; }}
 .qq {{ font-weight: normal; }}

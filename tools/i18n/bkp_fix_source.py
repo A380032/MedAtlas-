@@ -15,7 +15,8 @@ Tuzatiladigan xatolar:
     ikkiga bo'lingan qatorlari birlashtiriladi;
  5) jadval kataklarida bo'linib qolgan so'zlar (Kuchay gan, Susayga n), chiziqcha oldidagi ortiqcha bo'shliqlar
     (T- limfotsitlar, 2- barmoqlar), ma'no xatolari (TEXT);
- 6) ** ichidagi chetki bo'shliqlar, ikkitalik bo'shliqlar, yolg'iz *.
+ 6) ** ichidagi chetki bo'shliqlar, ikkitalik bo'shliqlar, yolg'iz *;
+ 7) ketma-ket rasmlar raqam bo'yicha saralanadi (PDF dan aralash tartibda olingan).
 Darajalar (sm^2^, kg/m^2^, 10^9^/l) tools/fix_powers.py bilan tiklanadi.
 """
 import json, os, re
@@ -141,6 +142,13 @@ def join_sentences(bl, n):
                 and a["text"].rstrip().endswith("**") and bl[i + 1]["text"].startswith("**va ")):
             # "... → **o‘ng qorincha gipertrofiyasi**" | "**va dilatatsiyasi** → ..." — bitta qalin ibora
             a["text"] = a["text"].rstrip()[:-2] + " " + bl[i + 1]["text"][2:]
+            del bl[i + 1]
+            n += 1
+            continue
+        if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
+                and a["text"].rstrip().endswith(";") and re.match(r"[a-z‘]{3,}", bl[i + 1]["text"])):
+            # "... ko‘p — sanab bo‘lmaydi);" | "shakli (aylana, oval ...)" — sanoq sahifa chegarasida uzilgan
+            a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
             del bl[i + 1]
             n += 1
             continue
@@ -403,6 +411,31 @@ def walk(o, cnt):
                 walk(v, cnt)
 
 
+def fig_order(bl, n):
+    """Ketma-ket rasmlar (img) PDF dan noto'g'ri tartibda olingan (Rasm 4.3, 4.2, 4.5, 4.4 ...) — raqam bo'yicha saralanadi."""
+    def num(b):
+        m = re.search(r"(\d+)\.(\d+)", b.get("label", ""))
+        return (int(m.group(1)), int(m.group(2))) if m else None
+    i = 0
+    while i < len(bl):
+        if bl[i]["type"] != "img":
+            if bl[i]["type"] == "box":
+                n = fig_order(bl[i]["parts"], n)
+            i += 1
+            continue
+        j = i
+        while j < len(bl) and bl[j]["type"] == "img":
+            j += 1
+        run = bl[i:j]
+        if None not in [num(b) for b in run]:
+            srt = sorted(run, key=num)
+            if srt != run:
+                bl[i:j] = srt
+                n += 1
+        i = j
+    return n
+
+
 def every(fn):
     n = 0
     for t in d["topics"]:
@@ -420,6 +453,7 @@ log.append(f"{n} ta qo'shilib ketgan raqamli band ajratildi")
 log.append(f"{every(join_lists)} ta bo'lingan ro'yxat birlashtirildi")
 log.append(f"{every(join_sentences)} ta bo'lingan gap birlashtirildi")
 log.append(f"{tables()} ta jadval tuzatildi")
+log.append(f"{every(fig_order)} ta rasm guruhi tartibi tiklandi")
 log.append(f"{list_tail()} ta uzilgan ro'yxat bandi tiklandi")
 log.append(f"{bullet_tail()} ta uzilgan belgili ro'yxat bandi tiklandi")
 log.append(f"{renumber()} ta kichik sarlavha raqami tuzatildi")

@@ -1,0 +1,149 @@
+{
+  "lang": "uz",
+  "out": "data/books/bkp.pdf",
+  "pdf_title": "Bolalar kasalliklari propedevtikasi: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Bolalar kasalliklari propedevtikasi — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/bkp/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "1-son Bolalar kasalliklari propedevtikasi kafedrasi fani bo‘yicha"
+    ],
+    "title": "BOLALAR KASALLIKLARI PROPEDEVTIKASI",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Bolalar kasalliklari propedevtikasi: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Bolalar kasalliklari propedevtikasi” fanining kalendar-tematik rejasidagi 15 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Har bir mavzu bola organizmining anatomo-fiziologik xususiyatlari, tekshirish usullari, zararlanish semiotikasi va klinik ahamiyatini to‘liq qamrab oladi. Har bir bob oxirida amaliy ko‘nikmalarni bajarish algoritmlari, nazorat savollari, test topshiriqlari va javoblari bilan vaziyatli masalalar berilgan. Test javoblari kitob oxirida keltirilgan. Matnni yodlash oson bo‘lishi uchun “Eslab qoling”, “Klinik ahamiyati” va “Yodlash usuli” bloklari, jadvallar va rasmlardan keng foydalanilgan.",
+    "Qo‘llanma Sh.I. Navruzova va N.A. Geppe, R.R. Kildiyarova, A.Sh. Arziqulov, B. Qoraxo‘jayev, I.M. Lysenko va T.A. Daminov darsliklari asosida tayyorlangan. Rasmlar ushbu manbalardan olingan va har birining tagida manbasi ko‘rsatilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi fakulteti 3-kurs talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Bolalar kasalliklari propedevtikasi — pediatriyaning “alifbosi”. Bu fan bola organizmining yoshga xos anatomo-fiziologik xususiyatlarini, sog‘lom va kasal bolani tekshirish usullarini hamda kasalliklarning asosiy belgilari va sindromlarini (semiotikasini) o‘rgatadi. Talaba propedevtikani qanchalik puxta egallasa, keyingi kurslardagi fakultet va gospital pediatriya, bolalar yuqumli kasalliklari va bolalar jarrohligi fanlarini shunchalik oson o‘zlashtiradi."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma fanning kalendar-tematik rejasidagi 15 ta amaliy mashg‘ulot tartibida tuzilgan. Har bir bob bitta amaliy mashg‘ulotga to‘g‘ri keladi va bir xil tuzilishga ega:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Mashg‘ulot maqsadi** — talaba nimani bilishi va nimani bajara olishi kerakligi.",
+        "**Nazariy qism** — anatomo-fiziologik xususiyatlar, tekshirish usullari va semiotika.",
+        "**Klinik qism** — o‘rganilgan bilimning amaliyotdagi ahamiyati, klinik misollar.",
+        "**Amaliy ko‘nikmalar** — har bir muolajani bosqichma-bosqich bajarish algoritmi.",
+        "**Nazorat savollari, test topshiriqlari va vaziyatli masalalar** — mustaqil tayyorgarlikni tekshirish uchun. Vaziyatli masalalar javoblari bob ichida, test javoblari kitob oxirida berilgan.",
+        "**Tezkor takrorlash** — imtihon oldidan bir necha daqiqada ko‘rib chiqish uchun asosiy raqamlar va qoidalar."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Matn ichida to‘rt xil rangli blok uchraydi:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Sariq blok — albatta yodlash kerak bo‘lgan qoida, raqam yoki ta’rif."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Ko‘k blok — bilimning klinik amaliyotdagi ahamiyati."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yashil blok — yodlashni osonlashtiruvchi usul yoki qisqa qoida."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "To‘q sariq blok — ko‘p uchraydigan xatolar, xavfli holatlar va darsliklar orasidagi tafovutlar."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rasmlar Sh.I. Navruzova va N.A. Geppe tahriridagi “Bolalar kasalliklari propedevtikasi” darsligi, R.R. Kildiyarova va V.I. Makarova tahriridagi “Пропедевтика детских болезней” darsligi, A.Sh. Arziqulov, B. Qoraxo‘jayev va I.M. Lysenko qo‘llanmalaridan olingan. Har bir rasm tagida uning manbasi ko‘rsatilgan."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma talabalarga amaliy mashg‘ulotlarga tayyorlanish, kasallik tarixini yozish va oraliq hamda yakuniy nazoratlarga tayyorgarlik ko‘rishda yordam beradi degan umiddaman."
+    }
+  ],
+  "fig_per_row": 4,
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test savollari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savollar:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Qisqa ta’rif",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Foydalanilgan adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    "Navruzova Sh.I., Geppe N.A. (tahr.). Bolalar kasalliklari propedevtikasi: tibbiyot OTM talabalari uchun darslik. — Moskva: GEOTAR-Media, 2019.",
+    "Кильдиярова Р.Р., Макарова В.И. (ред.). Пропедевтика детских болезней: учебник. 2-е изд., испр. — Москва: ГЭОТАР-Медиа.",
+    "Arziqulov A.Sh., Alimdjonov I.I., Djalalova M.M. va boshq. Bolalar kasalliklari propedevtikasi: darslik. — Andijon: ADTI, 2017.",
+    "Qoraxo‘jayev B., Salomov I.T., Abdullayeva M.N. Bolalar kasalliklari propedevtikasi: darslik. — Toshkent: Yangi asr avlodi, 2006.",
+    "Лысенко И.М. (ред.). Пропедевтика детских болезней: пособие. — Витебск: ВГМУ, 2014.",
+    "Daminov T.A., Xalmatova B.T., Boboyeva U.R. Bolalar kasalliklari: darslik. — Toshkent, 2012.",
+    "Кельцев В.А. Пропедевтика детских болезней: учебное пособие.",
+    "World Health Organization. Emergency Triage Assessment and Treatment (ETAT): manual for participants. — Geneva: WHO, 2005.",
+    "World Health Organization, UNICEF. Integrated Management of Childhood Illness (IMCI): chart booklet. — Geneva: WHO, 2014.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention. — 2024.",
+    "Gewitz M.H., Baltimore R.S., Tani L.Y. va boshq. Revision of the Jones criteria for the diagnosis of acute rheumatic fever in the era of Doppler echocardiography // Circulation. — 2015. — Vol. 131(20). — P. 1806–1818.",
+    "World Health Organization, UNICEF. Ten steps to successful breastfeeding (revised 2018). Implementation guidance: protecting, promoting and supporting breastfeeding in facilities providing maternity and newborn services. — Geneva: WHO, 2018.",
+    "World Health Organization. WHO guideline for complementary feeding of infants and young children 6–23 months of age. — Geneva: WHO, 2023.",
+    "Schwartz G.J., Work D.F. Measurement and estimation of GFR in children and adolescents // Clin J Am Soc Nephrol. — 2009. — Vol. 4(11). — P. 1832–1843."
+  ]
+}
