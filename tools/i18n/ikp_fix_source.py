@@ -1,0 +1,273 @@
+"""python3 tools/i18n/ikp_fix_source.py
+Ichki kasalliklar propedevtikasi (ikp) kitobidagi manba xatolarini tuzatadi (asl PDF bilan solishtirib topilgan).
+Faqat data/subjects/ikp.json (uz) tuzatiladi va tarjimadan OLDIN ishga tushiriladi. Qayta ishga tushirilsa
+hech narsa o'zgarmaydi.
+
+Tuzatiladigan xatolar:
+ 1) ro'yxatning oxirgi bandiga yopishib qolgan xatboshilar (PDF'da chap chetdan boshlanadi) alohida blokka
+    chiqariladi; "**...:**" ko'rinishidagilari kichik sarlavha (sub) bo'ladi — jumladan har bir mavzu
+    maqsadidagi "Talaba bajara olishi kerak:" sarlavhasi. Ro'yxat: tools/i18n/books/ikp/glued.json;
+ 2) 2-mavzu umumiy ko'rik tartibi: bitta bandga qo'shilib ketgan 10–12-bandlar ajratiladi;
+ 3) sahifa chegarasida ikkiga bo'lingan ro'yxatlar va qutidagi gaplar birlashtiriladi;
+ 4) sahifa chegarasida ikki qatorga bo'lingan 3 ta jadval qatori birlashtiriladi; 14.7-jadval ichiga
+    tushib qolgan "Yodlash usuli" qutisi jadvaldan chiqariladi;
+ 5) jadval kataklarida bo'linib qolgan so'zlar (O‘zgarmag an, Tekshir uv), tushib qolgan chiziqchalar
+    (astasekin, teztez), "tashhis" -> "tashxis" (o'zbek imlosi);
+ 6) ** ichidagi chetki bo'shliqlar, ikkitalik bo'shliqlar, yolg'iz *.
+Darajalar (sm^2^, kg/m^2^, 10^9^/l) tools/fix_powers.py bilan tiklanadi.
+"""
+import json, os, re
+
+PATH = "data/subjects/ikp.json"
+d = json.load(open(PATH, encoding="utf8"))
+log = []
+
+
+def blocks(ti, key, si):
+    return d["topics"][ti][key][si]["blocks"]
+
+
+# ---------- 1) yopishgan xatboshilar ----------
+GLUED = json.load(open(os.path.join(os.path.dirname(__file__), "books", "ikp", "glued.json"), encoding="utf8"))
+
+
+def plain_map(s):
+    """** belgilarisiz matn va har bir belgining asl matndagi o'rni."""
+    out, idx, i = [], [], 0
+    while i < len(s):
+        if s.startswith("**", i):
+            i += 2
+            continue
+        out.append(s[i]); idx.append(i); i += 1
+    return "".join(out), idx
+
+
+def split_item(x):
+    p, idx = plain_map(x)
+    cuts = set()
+    for g in GLUED:
+        pre, post = g.split("‖")
+        k = p.find(pre + " " + post)
+        if k >= 0:
+            r = idx[k + len(pre) + 1]           # post boshlanishi (asl matnda)
+            if x[r - 2:r] == "**":
+                r -= 2
+            cuts.add(r)
+    if not cuts:
+        return None
+    cuts = sorted(cuts)
+    pieces = [x[:cuts[0]]] + [x[a:b] for a, b in zip(cuts, cuts[1:] + [len(x)])]
+    return [s.strip() for s in pieces]
+
+
+def split_glued(bl, n):
+    i = 0
+    while i < len(bl):
+        b = bl[i]
+        if b["type"] == "box":
+            n = split_glued(b["parts"], n)
+        if b["type"] == "list":
+            pieces = split_item(b["items"][-1])
+            if pieces:
+                b["items"][-1] = pieces[0]
+                new = []
+                for s in pieces[1:]:
+                    m = re.fullmatch(r"\*\*([^*]+:)\*\*", s)
+                    new.append({"type": "sub", "text": m.group(1)} if m else {"type": "p", "text": s})
+                bl[i + 1:i + 1] = new
+                n += len(new)
+                i += len(new)
+        i += 1
+    return n
+
+
+# ---------- 2) qo'shilib ketgan raqamli bandlar ----------
+def numbered(bl):
+    n = 0
+    for b in bl:
+        if b["type"] == "list" and b.get("ordered"):
+            out = []
+            for it in b["items"]:
+                k = b.get("start", 1) + len(out)
+                parts = re.split(r"\s(?=\d{1,2}\.\s?\*\*)", it)
+                if len(parts) > 1 and all(re.match(rf"{k + j}\.", p) for j, p in enumerate(parts[1:], 1)):
+                    out.append(parts[0])
+                    for p in parts[1:]:
+                        p = re.sub(r"^\d{1,2}\.\s?\*\*\s*", "**", p)
+                        out.append(p); n += 1
+                else:
+                    out.append(it)
+            b["items"] = out
+    return n
+
+
+# ---------- 3) bo'lingan ro'yxatlar va gaplar ----------
+def join_lists(bl, n):
+    i = 0
+    while i < len(bl):
+        a = bl[i]
+        if a["type"] == "box":
+            n = join_lists(a["parts"], n)
+        if i + 1 < len(bl) and a["type"] == "list" and bl[i + 1]["type"] == "list":
+            b = bl[i + 1]
+            same = a.get("ordered") == b.get("ordered")
+            cont = not a.get("ordered") or b.get("start", 1) == a.get("start", 1) + len(a["items"])
+            if same and cont:
+                a["items"] += b["items"]
+                del bl[i + 1]
+                n += 1
+                continue
+        i += 1
+    return n
+
+
+def join_sentences(bl, n):
+    """p + p: birinchisi gap belgisi bilan tugamagan, ikkinchisi kichik harf bilan boshlangan -> bitta p."""
+    i = 0
+    while i < len(bl):
+        a = bl[i]
+        if a["type"] == "box":
+            n = join_sentences(a["parts"], n)
+        if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
+                and not re.search(r"[.:;!?)»”\"*]\s*$", a["text"]) and re.match(r"[a-z‘’(]", bl[i + 1]["text"])):
+            a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
+            del bl[i + 1]
+            n += 1
+            continue
+        i += 1
+    return n
+
+
+# ---------- 4) jadvallar ----------
+ROWS = [  # (jadval nomi boshi, ikkinchi qatorning birinchi katagi, ustun qo'shuvchilari)
+    ("Jadval 1.6.", "omillar", [" ", " ", " "]),               # Kuchaytiruvchi va kamaytiruvchi | omillar
+    ("Jadval 7.15.", "qaytarligi", [" ", " ", " "]),           # Obstruksiyaning | qaytarligi
+    ("Jadval 11.16.", "yetishmovchilik", [" ", " ", " ", " ", " ", ""]),  # Mitral | yetishmovchilik; O‘zgarmag | an
+]
+
+
+def find_table(prefix):
+    for t in d["topics"]:
+        for s in t["sections"]:
+            for i, b in enumerate(s["blocks"]):
+                if b["type"] == "table" and b.get("title", "").startswith(prefix):
+                    return s["blocks"], i
+    raise KeyError(prefix)
+
+
+def tables():
+    n = 0
+    for prefix, first, js in ROWS:
+        bl, i = find_table(prefix)
+        rows = bl[i]["rows"]
+        ri = next((r for r, row in enumerate(rows) if row[0] == first), None)
+        if ri is None:
+            continue
+        a, b = rows[ri - 1], rows[ri]
+        for c, jn in enumerate(js):
+            if b[c].strip():
+                a[c] = (a[c].rstrip() + jn + b[c].lstrip()).strip()
+        del rows[ri]
+        n += 1
+    # 14.7-jadval: oxirgi 3 qator aslida jadvaldan keyingi "Yodlash usuli" qutisi
+    bl, i = find_table("Jadval 14.7.")
+    t = bl[i]
+    if len(t["rows"]) > 3 and t["rows"][3][0] == "YODLASH USULI":
+        text = " ".join(r[0].strip() for r in t["rows"][4:])
+        del t["rows"][3:]
+        bl.insert(i + 1, {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": text}]})
+        n += 1
+    return n
+
+
+# ---------- 5) so'zlar ----------
+WORDS = {"O‘zgarmag an": "O‘zgarmagan", "yetishmovch ilik": "yetishmovchilik", "yetishmovchili k": "yetishmovchilik",
+         "Tekshir uv": "Tekshiruv", "Balandl igi": "Balandligi", "pnevmoni ya": "pnevmoniya",
+         "Boshlan ishi": "Boshlanishi", "Joylash uvi": "Joylashuvi", "anamne z": "anamnez",
+         "Xususiy ati": "Xususiyati", "Tarqalis hi": "Tarqalishi", "Davomi yligi": "Davomiyligi",
+         "Nitrogli tserin": "Nitroglitserin", "Yondos h": "Yondosh", "Konfigura tsiya": "Konfiguratsiya",
+         "Splenome galiya": "Splenomegaliya", "Trapetsiya simon": "Trapetsiyasimon", "Emboliya lar": "Emboliyalar",
+         "Normosteni k": "Normostenik", "Konussimo n": "Konussimon", "Inglizc ha": "Inglizcha",
+         "irradiatsiyalanu vchi": "irradiatsiyalanuvchi", "To‘mtoqlashg an": "To‘mtoqlashgan",
+         "kuchayg an": "kuchaygan", "Popov- Savelyev": "Popov-Savelyev", "Vilson- Konovalov": "Vilson-Konovalov",
+         "NT- proBNP": "NT-proBNP", "astasekin": "asta-sekin", "Astasekin": "Asta-sekin", "teztez": "tez-tez",
+         "Teztez": "Tez-tez", "to‘mtoqtimpanik": "to‘mtoq-timpanik", "To‘mtoqtimpanik": "To‘mtoq-timpanik",
+         "qo‘loyoqlar": "qo‘l-oyoqlar", "Qo‘loyoqlar": "Qo‘l-oyoqlar", "qizilo‘ngachme’da": "qizilo‘ngach-me’da",
+         "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
+
+
+def stars(s):
+    return re.sub(r"\*+", lambda m: {1: "", 3: "**"}.get(len(m.group()), m.group()), s)
+
+
+def bold_space(s):
+    out, i = [], 0
+    for m in re.finditer(r"\*\*(.+?)\*\*", s):
+        out.append(s[i:m.start()])
+        x = m.group(1)
+        lead = " " if x[:1].isspace() else ""
+        trail = " " if x[-1:].isspace() else ""
+        out.append(f"{lead}**{x.strip()}**{trail}")
+        i = m.end()
+    out.append(s[i:])
+    return "".join(out)
+
+
+def clean(s):
+    o = s
+    for a, b in WORDS.items():
+        s = s.replace(a, b)
+    s = re.sub(r"([a-z‘’])- (?!(?:va|yoki|hamda)\b)([a-z])", r"\1-\2", s)   # olcha- qizil -> olcha-qizil
+    if s.count("**") % 2 == 0:
+        s = stars(s) if re.search(r"(?<!\*)\*(?!\*)|\*\*\*", s) else s
+        s = bold_space(s)
+    s = re.sub(r"(?<=\S) {2,}(?=\S)", " ", s)
+    s = re.sub(r"(\d)- (\d)", r"\1-\2", s)
+    s = re.sub(r" +([,;])", r"\1", s)
+    s = re.sub(r"\( +", "(", s)
+    s = re.sub(r" +\)", ")", s)
+    s = s.strip()
+    return s, s != o
+
+
+def walk(o, cnt):
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if k in ("id", "type", "kind", "src"):
+                continue
+            if isinstance(v, str):
+                o[k], ch = clean(v); cnt[0] += ch
+            else:
+                walk(v, cnt)
+    elif isinstance(o, list):
+        for i, v in enumerate(o):
+            if isinstance(v, str):
+                o[i], ch = clean(v); cnt[0] += ch
+            else:
+                walk(v, cnt)
+
+
+def every(fn):
+    n = 0
+    for t in d["topics"]:
+        n = fn(t["goals"], n)
+        for key in ("sections", "skills"):
+            for s in t[key]:
+                n = fn(s["blocks"], n)
+    return n
+
+
+n = every(split_glued)
+log.append(f"{n} ta yopishgan xatboshi/sarlavha alohida blokka chiqarildi")
+n = sum(numbered(s["blocks"]) for t in d["topics"] for s in t["sections"])
+log.append(f"{n} ta qo'shilib ketgan raqamli band ajratildi")
+log.append(f"{every(join_lists)} ta bo'lingan ro'yxat birlashtirildi")
+log.append(f"{every(join_sentences)} ta bo'lingan gap birlashtirildi")
+log.append(f"{tables()} ta jadval tuzatildi")
+cnt = [0]
+walk(d, cnt)
+log.append(f"{cnt[0]} ta matn tozalandi")
+
+with open(PATH, "w", encoding="utf8") as f:
+    json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
+print("\n".join(log))
