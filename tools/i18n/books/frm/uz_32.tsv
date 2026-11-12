@@ -1,227 +1,224 @@
-s6517	Kuchli analgetik va antipiretik, spazmolitik. **Agranulotsitoz** (kam, lekin o‘limga olib kelishi mumkin) tufayli ko‘p mamlakatlarda taqiqlangan yoki cheklangan; MDH mamlakatlarida keng ishlatiladi. Venaga tez yuborilganda — gipotenziya, anafilaksiya.
-s6518	6. Glyukokortikoidlar
-s6519	6.1. Mexanizm
-s6520	**Glyukokortikoidlar** (kortizol va sintetik analoglari) lipofil molekula sifatida hujayraga kirib, sitoplazmadagi **glyukokortikoid retseptor** bilan bog‘lanadi; kompleks yadroga o‘tib, genlar transkripsiyasini o‘zgartiradi:
-s6521	**transrepressiya** — yallig‘lanish genlari (NF-kappaB, AP-1 orqali) ekspressiyasini bostiradi: sitokinlar (IL-1, IL-6, TNF-alfa), TSOG-2, iNOS, adgeziya molekulalari kamayadi;
-s6522	**transaktivatsiya** — yallig‘lanishga qarshi oqsillar (**lipokortin-1 (anneksin-1)** — fosfolipaza A2 ni tormozlaydi — natijada **ham prostaglandinlar, ham leykotrienlar** kamayadi) sintezini oshiradi; metabolik nojo‘ya ta’sirlar ham asosan shu yo‘l bilan.
-s6523	6.2. Farmakologik ta’sirlar
-s6524	Jadval 15.9. Glyukokortikoidlarning ta’sirlari
-s6525	Yallig‘lanishning barcha bosqichlari (alteratsiya, ekssudatsiya, proliferatsiya) bostiriladi
-s6526	Immunosupressiv
-s6527	Limfotsitlar (ayniqsa T) soni va faolligi kamayadi, antitelo hosil bo‘lishi va sitokinlar sintezi kamayadi
-s6528	Antiallergik
-s6529	Semiz hujayralar va bazofillardan mediatorlar ajralishi kamayadi
-s6530	Antishok
-s6531	Katexolaminlarga tomirlar sezgirligi oshadi, AQB ko‘tariladi
-s6532	Uglevod almashinuvi
-s6533	Glyukoneogenez ↑ — giperglikemiya, “steroid diabet”
-s6534	Oqsil almashinuvi
-s6535	Katabolizm — mushak atrofiyasi, teri yupqalashishi, yaralar sekin bitishi, bolalarda o‘sish sekinlashishi
-s6536	Yog‘ almashinuvi
-s6537	Yog‘ning qayta taqsimlanishi — kushingoid (yuz, bo‘yin, qorin)
-s6538	Suv-tuz almashinuvi
-s6539	Natriy va suv ushlanishi, kaliy yo‘qotilishi (mineralokortikoid faollikka bog‘liq)
-s6540	Kalsiy almashinuvi
-s6541	Ichakda so‘rilish ↓, buyrakda chiqarilish ↑ — osteoporoz
-s6542	Neytrofillar ↑, limfotsitlar, eozinofillar va monotsitlar ↓
-s6543	6.3. Preparatlar
-s6544	Jadval 15.10. Glyukokortikoid preparatlarining qiyosiy tavsifi
-s6545	Ekvivalent doza (mg)
-s6546	Yallig‘lanishga qarshi faollik (kortizol = 1)
-s6547	Mineralokortikoid faollik
-s6548	Gidrokortizon (kortizol)
-s6549	1 (yuqori)
-s6550	Qisqa (8–12 soat)
-s6551	O‘rtacha (12–36 soat)
-s6552	Metilprednizolon
-s6553	Triamtsinolon
-s6554	Uzoq (36–72 soat)
-s6555	Betametazon
-s6556	125 (juda yuqori)
-s6557	— (mineralokortikoid sifatida)
-s6558	Mahalliy preparatlar: **ingalyatsion** (budesonid, flutikazon — 9-mavzu), **burun spreylari** (mometazon), **teri uchun** (gidrokortizon 1% — kuchsiz, betametazon, klobetazol — juda kuchli), **ko‘z tomchilari**, bo‘g‘im ichiga (triamtsinolon, betametazon depo).
-s6559	6.4. Qo‘llanishi
-s6560	**o‘rinbosar terapiya** — buyrak usti bezi yetishmovchiligi (Addison kasalligi — gidrokortizon + fludrokortizon), tug‘ma adrenogenital sindrom;
-s6561	**revmatik va autoimmun kasalliklar** — revmatoid artrit, tizimli qizil bo‘richa, vaskulitlar, polimialgiya;
-s6562	**allergik holatlar** — anafilaksiya (adrenalindan keyin, qo‘shimcha), angionevrotik shish, og‘ir dermatitlar, allergik rinit (mahalliy);
-s6563	**bronxial astma va XOOK** (ingalyatsion bazis davo; qo‘zg‘alishda tizimli);
-s6564	**buyrak kasalliklari** (nefrotik sindrom), **ichak** (Kron kasalligi, yarali kolit), **jigar** (autoimmun gepatit);
-s6565	**gematologiya va onkologiya** — leykozlar, limfomalar (kimyoterapiya sxemalarida), kimyoterapiya qusishi;
-s6566	**transplantologiya** — ko‘chirib o‘tkazilgan a’zo rad etilishining oldini olish;
-s6567	**miya shishi** (o‘sma atrofidagi — deksametazon), bakterial meningit (deksametazon), og‘ir COVID-19 va pnevmoniya (deksametazon);
-s6568	**homila o‘pkasini yetiltirish** — muddatidan oldin tug‘ruq xavfida (deksametazon, betametazon);
-s6569	**shok** — septik shok (vazopressorlarga chidamli), buyrak usti bezi krizi.
-s6570	6.5. Nojo‘ya ta’sirlar
-s6571	Jadval 15.11. Glyukokortikoidlarning nojo‘ya ta’sirlari (uzoq tizimli qo‘llashda)
-s6572	Endokrin-metabolik
-s6573	Kushingoid (oysimon yuz, qorin semizligi), steroid diabet, dislipidemiya, vazn ortishi, bolalarda o‘sishning sekinlashishi
-s6574	Gipotalamus-gipofiz-buyrak usti
-s6575	Buyrak usti bezi po‘stlog‘ining atrofiyasi — to‘satdan to‘xtatilganda o‘tkir buyrak usti bezi yetishmovchiligi
-s6576	Suyak-mushak
-s6577	Osteoporoz va sinishlar, son suyagi boshining aseptik nekrozi, steroid miopatiyasi
-s6578	Arterial gipertenziya, shish, gipokaliyemiya
-s6579	Yara (asosan NYaQV bilan birga), pankreatit
-s6580	Immun
-s6581	Infeksiyalar (bakterial, zamburug‘, sil faollashuvi, opportunistik), infeksiya belgilarining niqoblanishi
-s6582	Yupqalashish, strialar, ekximozlar, akne, yaralarning sekin bitishi
-s6583	Katarakta (orqa subkapsulyar), glaukoma
-s6584	Ruhiy
-s6585	Uyqusizlik, eyforiya, depressiya, steroid psixozi
-s6586	**Glyukokortikoidlar bilan uzoq davolashda profilaktika**: ertalab bir marta (sirkad ritmga mos) qabul qilish; eng past samarali doza; **kalsiy va D vitamini**, xavf yuqori bo‘lsa bisfosfonat (osteoporoz); NYaQV bilan birga bo‘lsa — PPI; glyukoza, AQB, ko‘z ichi bosimi nazorati; davolashdan oldin latent sil va gepatit B ni tekshirish; jonli vaksinalar mumkin emas.
-s6587	Jadval 15.12. Og‘riq va isitmada analgetik tanlash
-s6588	Bolada isitma
-s6589	Paratsetamol yoki ibuprofen (vaznga ko‘ra)
-s6590	Aspirin (Rey sindromi), metamizol
-s6591	Homiladorlikda og‘riq/isitma
-s6592	NYaQV (ayniqsa 20 haftadan keyin)
-s6593	Me’da yarasi anamnezi
-s6594	Paratsetamol; zarur bo‘lsa koksib + PPI
-s6595	Noselektiv NYaQV PPI siz
-s6596	YuIK, yurak yetishmovchiligi
-s6597	Paratsetamol; naproksen qisqa muddat
-s6598	Diklofenak, koksiblar, yuqori dozali NYaQV
-s6599	Surunkali buyrak kasalligi
-s6600	Barcha tizimli NYaQV
-s6601	Aspirin astmasi
-s6602	Paratsetamol (≤ 1 g), koksiblar (ehtiyotkorlik)
-s6603	Noselektiv NYaQV
-s6604	Podagra xuruji
-s6605	NYaQV (naproksen, indometatsin), kolxitsin yoki glyukokortikoid
-s6606	Aspirin (siydik kislotasi chiqarilishini o‘zgartiradi)
-s6607	NYaQV (diklofenak, ketorolak)
-s6608	Osteoartrit (bitta bo‘g‘im)
-s6609	Mahalliy NYaQV (gel), paratsetamol
-s6610	1-ko‘nikma. Insulin yuborishni o‘rgatish (shprits-ruchka)
-s6611	Qo‘llarni yuving; insulin nomi va muddatini tekshiring; NPX va aralash insulinni 10–20 marta ag‘darib aralashtiring (chayqatmasdan).
-s6612	Yangi igna o‘rnating, 2 TB bilan “test” (havoni chiqarish) qiling.
-s6613	Dozani tanlang.
-s6614	Qorin (eng tez so‘rilish — qisqa insulin uchun), son, yelka yoki dumba terisini burmaga oling.
-s6615	Ignani 90° (kalta igna) burchak ostida kiriting, tugmani bosing, **10 soniya** kutib ignani chiqaring.
-s6616	In’yeksiya joyini har safar almashtiring (lipodistrofiyaning oldini olish).
-s6617	Ochilgan ruchka xona haroratida 4 hafta, zaxiradagilar — sovutgichda (muzlatmasdan) saqlanadi.
-s6618	**RETSEPT 15.1. OKSITOTSIN** Rp.: Oxytocini 5 TB — 1 ml
-s6619	D.t.d. N. 10 in ampullis S. Tug‘ruqdan keyingi qon ketishning oldini olish uchun 10 TB mushak ichiga (akusher tomonidan).
-s6620	**RETSEPT 15.2. DESMOPRESSIN** Rp.: Desmopressini 0,0001
-s6621	D.t.d. N. 30 in tabulettis S. 1 tabletkadan kuniga 2–3 marta (markaziy qandsiz diabetda; natriy nazorati ostida).
-s6622	**RETSEPT 15.3. LEVOTIROKSIN** Rp.: Levothyroxini natrii 0,00005
-s6623	D.t.d. N. 100 in tabulettis S. 1 tabletkadan kuniga 1 marta ertalab nonushtadan 30–60 daqiqa oldin ichilsin.
-s6624	**RETSEPT 15.4. TIAMAZOL** Rp.: Thiamazoli 0,005
-s6625	D.t.d. N. 50 in tabulettis S. 2 tabletkadan kuniga 3 mahal ichilsin; isitma yoki tomoq og‘rig‘i paydo bo‘lsa darhol shifokorga murojaat qilinsin.
-s6626	**RETSEPT 15.5. INSULIN GLARGIN** Rp.: Insulini glargini 100 TB/ml — 3 ml
-s6627	D.t.d. N. 5 in calamis S. Kuniga 1 marta bir vaqtda 10 TB teri ostiga; doza ertalabki glyukoza bo‘yicha titrlansin.
-s6628	**RETSEPT 15.6. INSULIN ASPART** Rp.: Insulini asparti 100 TB/ml — 3 ml
-s6629	D.t.d. N. 5 in calamis S. Har asosiy ovqatdan oldin (0–10 daqiqa) teri ostiga, uglevod miqdoriga ko‘ra.
-s6630	**RETSEPT 15.7. METFORMIN** Rp.: Metformini hydrochloridi 0,5
-s6631	D.t.d. N. 60 in tabulettis obductis S. 1 tabletkadan kuniga 1 marta kechki ovqat bilan, har hafta 1 tabletkaga oshirib, kuniga 2 g gacha.
-s6632	**RETSEPT 15.8. GLIKLAZID MR** Rp.: Tabulettas Gliclazidi 0,06 modificatas N. 30
-s6633	D.S. 1/2–1 tabletkadan kuniga 1 marta nonushta bilan ichilsin.
-s6634	**RETSEPT 15.9. EMPAGLIFLOZIN** Rp.: Empagliflozini 0,01
-s6635	D.t.d. N. 30 in tabulettis obductis S. 1 tabletkadan kuniga 1 marta ertalab ichilsin.
-s6636	**RETSEPT 15.10. SEMAGLUTID** Rp.: Solutionis Semaglutidi 1,34 mg/ml — 1,5 ml
-s6637	D.t.d. N. 1 in calamo S. Haftada 1 marta 0,25 mg teri ostiga 4 hafta, keyin 0,5 mg.
-s6638	**RETSEPT 15.11. GLYUKAGON** Rp.: Glucagoni 0,001
-s6639	D.t.d. N. 1 S. Og‘ir gipoglikemiyada erituvchi bilan eritib 1 mg mushak ichiga yoki teri ostiga.
-s6640	**RETSEPT 15.12. GLYUKOZA 40%** Rp.: Solutionis Glucosi 40% — 20 ml
-s6641	D.t.d. N. 10 in ampullis S. 20–40 ml venaga oqim bilan (gipoglikemik komada).
-s6642	**RETSEPT 15.13. IBUPROFEN** Rp.: Ibuprofeni 0,4
-s6643	D.t.d. N. 20 in tabulettis obductis S. 1 tabletkadan kuniga 3 mahal ovqatdan keyin, 5 kundan ortiq emas.
-s6644	**RETSEPT 15.14. IBUPROFEN SUSPENZIYASI (BOLALAR UCHUN)** Rp.: Suspensionis Ibuprofeni 100 mg/5 ml — 100 ml
-s6645	D.S. 10 mg/kg dan harorat 38,5 °C dan oshganda, kuniga 3 martagacha; chayqatilsin.
-s6646	**RETSEPT 15.15. DIKLOFENAK (AMPULADA)** Rp.: Solutionis Diclofenaci natrii 2,5% — 3 ml
-s6647	D.t.d. N. 3 in ampullis S. 3 ml dan mushak ichiga chuqur kuniga 1 marta, 2–3 kun.
-s6648	**RETSEPT 15.16. SELEKOKSIB** Rp.: Capsulas Celecoxibi 0,2 N. 20
-s6649	D.S. 1 kapsuladan kuniga 1–2 marta ichilsin.
-s6650	**RETSEPT 15.17. PARATSETAMOL** Rp.: Paracetamoli 0,5
-s6651	D.t.d. N. 20 in tabulettis S. 1–2 tabletkadan har 6 soatda, kuniga 8 tabletkadan (4 g) ko‘p emas.
-s6652	**RETSEPT 15.18. PREDNIZOLON** Rp.: Prednisoloni 0,005
-s6653	D.t.d. N. 100 in tabulettis S. Sutkalik dozasi ertalab bir martada (soat 8 da), ovqatdan keyin; dozani to‘satdan to‘xtatmang.
-s6654	**RETSEPT 15.19. DEKSAMETAZON (AMPULADA)** Rp.: Solutionis Dexamethasoni phosphatis 0,4% — 1 ml
-s6655	D.t.d. N. 10 in ampullis S. 1–2 ml dan venaga yoki mushak ichiga.
-s6656	**RETSEPT 15.20. GIDROKORTIZON KREMI** Rp.: Cremoris Hydrocortisoni 1% — 15,0
-s6657	D.S. Terining zararlangan sohasiga kuniga 2 mahal yupqa surtilsin, 7 kundan ortiq emas.
-s6658	Gormonal preparatlar tasnifi. Nima uchun oqsil gormonlari ichishga berilmaydi?
-s6659	Gipotalamus va gipofiz gormonlari preparatlari va ularning qo‘llanishi.
-s6660	Oksitotsin va desmopressinning qo‘llanishi va xavflari.
-s6661	Levotiroksin bilan davolash tamoyillari.
-s6662	Antitireoid vositalar: mexanizm, qo‘llanish, nojo‘ya ta’sirlar. Homiladorlikda tanlov.
-s6663	Insulinning fiziologik ta’sirlari va insulin preparatlari tasnifi.
-s6664	Qaysi insulinni venaga yuborish mumkin? Diabetik ketoatsidozni davolash tamoyillari.
-s6665	Gipoglikemiya belgilari va shoshilinch yordam.
-s6666	Metforminning mexanizmi, afzalliklari va qarshi ko‘rsatmalari.
-s6667	Sulfonilmochevinalarning mexanizmi va xavfi.
-s6668	DPP-4 ingibitorlari, GPP-1 agonistlari va SGLT2 ingibitorlarining mexanizmi va afzalliklari.
-s6669	2-tip diabetni davolashning zamonaviy tamoyillari.
-s6670	Araxidon kislota kaskadi. TSOG-1 va TSOG-2 ning farqi.
-s6671	NYaQV mexanizmi va asosiy ta’sirlari. Tasnifi.
-s6672	NYaQV nojo‘ya ta’sirlari va ularning oldini olish.
-s6673	Paratsetamolning xususiyatlari, dozalari va zaharlanishi.
-s6674	Glyukokortikoidlarning mexanizmi va farmakologik ta’sirlari.
-s6675	Glyukokortikoid preparatlarining qiyosiy tavsifi.
-s6676	Glyukokortikoidlarning qo‘llanishi va nojo‘ya ta’sirlari.
-s6677	Glyukokortikoidlarni bekor qilish qoidalari. “Stress doza” nima?
-s6678	Tug‘ruq faoliyatini kuchaytirish va tug‘ruqdan keyingi qon ketishning oldini olish uchun gormon:
-s6679	Prolaktin
-s6680	Vazopressin
-s6681	Somatostatin
-s6682	Markaziy qandsiz diabetni davolashda tanlov dori:
-s6683	Tionamidlarning eng xavfli nojo‘ya ta’siri:
-s6684	Agranulotsitoz
-s6685	Osteoporoz
-s6686	Gipertrixoz
-s6687	Homiladorlikning I trimestrida tireotoksikozda tanlov dori:
-s6688	Tiamazol
-s6689	Propiltiourasil
-s6690	Levotiroksin
-s6691	Kaliy yodid uzoq muddat
-s6692	Venaga yuborish mumkin bo‘lgan insulin:
-s6693	Aralash insulin 70/30
-s6694	NPX insulin
-s6695	Qisqa ta’sirli (oddiy) inson insulini
-s6696	Insulin degludek
-s6697	Insulin glargin
-s6698	Hushsiz gipoglikemik bemorga uyda qarindoshlar yubora oladigan vosita:
-s6699	Jigarda glyukoneogenezni kamaytiruvchi, gipoglikemiya chaqirmaydigan 2-tip diabetning birinchi qator dorisi:
-s6700	Glibenklamid
-s6701	Repaglinid
-s6702	Beta-hujayralarda KATF kanallarini yopib insulin sekretsiyasini oshiruvchi vosita:
-s6703	Empagliflozin
-s6704	Sitagliptin
-s6705	Gliklazid
-s6706	Yurak yetishmovchiligi va surunkali buyrak kasalligida o‘limni kamaytiruvchi, glyukozuriya chaqiruvchi vositalar:
-s6707	Yurak yetishmovchiligida mumkin bo‘lmagan qand pasaytiruvchi vosita:
-s6708	Linagliptin
-s6709	Semaglutid
-s6710	NYaQV me’da shilliq qavatiga zararli ta’sirining asosiy sababi:
-s6711	TSOG-2 ning tormozlanishi
-s6712	TSOG-1 tormozlanishi va himoya prostaglandinlarining kamayishi
-s6713	Leykotrienlar sintezining kamayishi
-s6714	Kislota sekretsiyasining kamayishi
-s6715	Paratsetamol bilan zaharlanishda antidot:
-s6716	16 yoshgacha bo‘lgan bolalarga virusli infeksiyada isitma tushirish uchun mumkin bo‘lmagan dori:
-s6717	Ibuprofen
-s6718	Fizik sovutish
-s6719	Ko‘p suyuqlik
-s6720	Mineralokortikoid faolligi yo‘q, yallig‘lanishga qarshi faolligi eng yuqori glyukokortikoid:
-s6721	Kortizon
-s6722	Gidrokortizon
-s6723	Uzoq qabuldan keyin glyukokortikoidlarni to‘satdan to‘xtatishning asosiy xavfi:
-s6724	Giperglikemiya
-s6725	Kushingoid
-s6726	Katarakta
-s6727	O‘tkir buyrak usti bezi yetishmovchiligi
-s6728	58 yoshli erkak, 2-tip qandli diabet (HbA1c 8,4%), 2 yil oldin miokard infarktini o‘tkazgan, semizlik (TVI 34), KFT 65 ml/daq. Hozir faqat glibenklamid qabul qiladi; oxirgi oyda ikki marta kechasi gipoglikemiya bo‘lgan.
-s6729	1) Hozirgi davodagi kamchiliklar? 2) Optimal davo rejasi.
-s6730	1) Glibenklamid — gipoglikemiya xavfi eng yuqori sulfonilmochevina, vazn ortishiga olib keladi, yurak-qon tomir asoratlarini kamaytirmaydi. 2) Glibenklamidni to‘xtatish; metformin (KFT 65 da mumkin); aterosklerotik yurak-qon tomir kasalligi va semizlik tufayli glyukozadan qat’i nazar GPP-1 agonisti (semaglutid) va/yoki SGLT2 ingibitori (empagliflozin) — yurak-qon tomir asoratlarini kamaytiradi, vaznni pasaytiradi, gipoglikemiya chaqirmaydi; statin, aspirin, AQB nazorati; maqsadli HbA1c < 7%.
-s6731	19 yoshli talaba qiz 1-tip diabet bilan og‘riydi. Imtihon kuni nonushta qilmay, odatdagi insulin dozasini yuborgan. 2 soatdan keyin titrash, ko‘p terlash, chalkashlik paydo bo‘ldi, keyin hushini yo‘qotdi. Glyukometrda 1,9 mmol/l.
-s6732	1) Holat? 2) Shoshilinch yordam?
-s6733	1) Og‘ir gipoglikemiya (gipoglikemik koma). 2) Og‘ziga hech narsa quymaslik (aspiratsiya); glyukagon 1 mg mushak ichiga yoki teri ostiga (yoki burunga 3 mg) — atrofdagilar yuborishi mumkin; tibbiyot xodimi — 40% glyukoza 40–60 ml venaga oqim bilan, keyin 5–10% glyukoza infuziyasi; hushiga kelgach — uglevodli ovqat; sababini tahlil qilish va bemorni ovqatsiz insulin yubormaslikka o‘rgatish; glyukagon to‘plami har doim yonida bo‘lishi.
-s6734	45 yoshli ayol revmatoid artrit tufayli 6 oydan beri prednizolon 15 mg/sut qabul qiladi. Ahvoli yaxshilangani uchun dorini o‘zi to‘satdan to‘xtatgan. 3 kundan keyin keskin holsizlik, ko‘ngil aynash, qusish, qorinda og‘riq, AQB 80/50 mm sim. ust., glyukoza 3,2 mmol/l, natriy 128 mmol/l.
-s6735	1) Tashxis? 2) Patogenezi? 3) Davolash va profilaktika.
-s6736	1) O‘tkir buyrak usti bezi yetishmovchiligi (glyukokortikoid bekor qilish sindromi, ikkilamchi). 2) Uzoq ekzogen glyukokortikoid qabuli gipotalamus-gipofiz-buyrak usti o‘qini bostirgan (AKTG sekretsiyasi kamaygan, buyrak usti po‘stlog‘i atrofiyalangan); dori to‘xtatilganda o‘z kortizoli yetarli ishlab chiqarilmaydi. 3) Gidrokortizon 100 mg venaga darhol, keyin 200 mg/sutka infuziya yoki har 6 soatda; 0,9% NaCl va glyukoza quyish; holat barqarorlashgach peroral prednizolonga o‘tib, dozani asta-sekin (bir necha hafta-oylar davomida) kamaytirish. Bemorga glyukokortikoidlarni to‘satdan to‘xtatmaslik va stress holatlarida dozani oshirish zarurligini tushuntirish, “steroid kartochkasi” berish.
-s6737	Miometriy qisqarishi
-s6738	Tug‘ruq stimulyatsiyasi, qon ketish profilaktikasi
-s6739	Giperstimulyatsiya, suv intoksikatsiyasi
-s6740	Vazopressin analoglari
-s6741	Desmopressin, terlipressin
-s6742	V~2~ / V~1~
-s6743	Qandsiz diabet, enurez / qon ketish
+s6509	5.3. Paratsetamol
+s6510	**Paratsetamol (atsetaminofen)** — analgetik va antipiretik; yallig‘lanishga qarshi ta’siri juda kuchsiz. Mexanizmi to‘liq aniq emas: asosan MNS da TSOG ni tormozlaydi (periferiyada yallig‘lanish o‘chog‘idagi yuqori peroksidlar uni nofaollashtiradi), serotoninergik va kannabinoid tizimlarga ta’sir. Me’da shilliq qavati, trombotsitlar va buyrakka deyarli ta’sir qilmaydi — **bolalar, homiladorlar, keksalarda** va me’da kasalliklarida **birinchi tanlov** analgetik-antipiretik.
+s6511	**Doza:** kattalarga 500–1000 mg, kuniga **4 g dan ko‘p emas** (jigar kasalligi, alkogolizm, ochlik, kam vaznda — 2–3 g); bolalarga **10–15 mg/kg**, har 4–6 soatda, kuniga 60 mg/kg dan ko‘p emas.
+s6512	5.4. Metamizol (analgin)
+s6513	Kuchli analgetik va antipiretik, spazmolitik. **Agranulotsitoz** (kam, lekin o‘limga olib kelishi mumkin) tufayli ko‘p mamlakatlarda taqiqlangan yoki cheklangan; MDH mamlakatlarida keng ishlatiladi. Venaga tez yuborilganda — gipotenziya, anafilaksiya.
+s6514	6. Glyukokortikoidlar
+s6515	6.1. Mexanizm
+s6516	**Glyukokortikoidlar** (kortizol va sintetik analoglari) lipofil molekula sifatida hujayraga kirib, sitoplazmadagi **glyukokortikoid retseptor** bilan bog‘lanadi; kompleks yadroga o‘tib, genlar transkripsiyasini o‘zgartiradi:
+s6517	**transrepressiya** — yallig‘lanish genlari (NF-kappaB, AP-1 orqali) ekspressiyasini bostiradi: sitokinlar (IL-1, IL-6, TNF-alfa), TSOG-2, iNOS, adgeziya molekulalari kamayadi;
+s6518	**transaktivatsiya** — yallig‘lanishga qarshi oqsillar (**lipokortin-1 (anneksin-1)** — fosfolipaza A~2~ ni tormozlaydi — natijada **ham prostaglandinlar, ham leykotrienlar** kamayadi) sintezini oshiradi; metabolik nojo‘ya ta’sirlar ham asosan shu yo‘l bilan.
+s6519	6.2. Farmakologik ta’sirlar
+s6520	Jadval 15.9. Glyukokortikoidlarning ta’sirlari
+s6521	Yallig‘lanishning barcha bosqichlari (alteratsiya, ekssudatsiya, proliferatsiya) bostiriladi
+s6522	Immunosupressiv
+s6523	Limfotsitlar (ayniqsa T) soni va faolligi kamayadi, antitelo hosil bo‘lishi va sitokinlar sintezi kamayadi
+s6524	Antiallergik
+s6525	Semiz hujayralar va bazofillardan mediatorlar ajralishi kamayadi
+s6526	Antishok
+s6527	Katexolaminlarga tomirlar sezgirligi oshadi, AQB ko‘tariladi
+s6528	Uglevod almashinuvi
+s6529	Glyukoneogenez ↑ — giperglikemiya, “steroid diabet”
+s6530	Oqsil almashinuvi
+s6531	Katabolizm — mushak atrofiyasi, teri yupqalashishi, yaralar sekin bitishi, bolalarda o‘sish sekinlashishi
+s6532	Yog‘ almashinuvi
+s6533	Yog‘ning qayta taqsimlanishi — kushingoid (yuz, bo‘yin, qorin)
+s6534	Suv-tuz almashinuvi
+s6535	Natriy va suv ushlanishi, kaliy yo‘qotilishi (mineralokortikoid faollikka bog‘liq)
+s6536	Kalsiy almashinuvi
+s6537	Ichakda so‘rilish ↓, buyrakda chiqarilish ↑ — osteoporoz
+s6538	Neytrofillar ↑, limfotsitlar, eozinofillar va monotsitlar ↓
+s6539	6.3. Preparatlar
+s6540	Jadval 15.10. Glyukokortikoid preparatlarining qiyosiy tavsifi
+s6541	Ekvivalent doza (mg)
+s6542	Yallig‘lanishga qarshi faollik (kortizol = 1)
+s6543	Mineralokortikoid faollik
+s6544	Gidrokortizon (kortizol)
+s6545	1 (yuqori)
+s6546	Qisqa (8–12 soat)
+s6547	O‘rtacha (12–36 soat)
+s6548	Metilprednizolon
+s6549	Triamtsinolon
+s6550	Uzoq (36–72 soat)
+s6551	Betametazon
+s6552	125 (juda yuqori)
+s6553	— (mineralokortikoid sifatida)
+s6554	Mahalliy preparatlar: **ingalyatsion** (budesonid, flutikazon — 9-mavzu), **burun spreylari** (mometazon), **teri uchun** (gidrokortizon 1% — kuchsiz, betametazon, klobetazol — juda kuchli), **ko‘z tomchilari**, bo‘g‘im ichiga (triamtsinolon, betametazon depo).
+s6555	6.4. Qo‘llanishi
+s6556	**o‘rinbosar terapiya** — buyrak usti bezi yetishmovchiligi (Addison kasalligi — gidrokortizon + fludrokortizon), tug‘ma adrenogenital sindrom;
+s6557	**revmatik va autoimmun kasalliklar** — revmatoid artrit, tizimli qizil bo‘richa, vaskulitlar, polimialgiya;
+s6558	**allergik holatlar** — anafilaksiya (adrenalindan keyin, qo‘shimcha), angionevrotik shish, og‘ir dermatitlar, allergik rinit (mahalliy);
+s6559	**bronxial astma va XOOK** (ingalyatsion bazis davo; qo‘zg‘alishda tizimli);
+s6560	**buyrak kasalliklari** (nefrotik sindrom), **ichak** (Kron kasalligi, yarali kolit), **jigar** (autoimmun gepatit);
+s6561	**gematologiya va onkologiya** — leykozlar, limfomalar (kimyoterapiya sxemalarida), kimyoterapiya qusishi;
+s6562	**transplantologiya** — ko‘chirib o‘tkazilgan a’zo rad etilishining oldini olish;
+s6563	**miya shishi** (o‘sma atrofidagi — deksametazon), bakterial meningit (deksametazon), og‘ir COVID-19 va pnevmoniya (deksametazon);
+s6564	**homila o‘pkasini yetiltirish** — muddatidan oldin tug‘ruq xavfida (deksametazon, betametazon);
+s6565	**shok** — septik shok (vazopressorlarga chidamli), buyrak usti bezi krizi.
+s6566	6.5. Nojo‘ya ta’sirlar
+s6567	Jadval 15.11. Glyukokortikoidlarning nojo‘ya ta’sirlari (uzoq tizimli qo‘llashda)
+s6568	Endokrin-metabolik
+s6569	Kushingoid (oysimon yuz, qorin semizligi), steroid diabet, dislipidemiya, vazn ortishi, bolalarda o‘sishning sekinlashishi
+s6570	Gipotalamus-gipofiz-buyrak usti
+s6571	Buyrak usti bezi po‘stlog‘ining atrofiyasi — to‘satdan to‘xtatilganda o‘tkir buyrak usti bezi yetishmovchiligi
+s6572	Suyak-mushak
+s6573	Osteoporoz va sinishlar, son suyagi boshining aseptik nekrozi, steroid miopatiyasi
+s6574	Arterial gipertenziya, shish, gipokaliyemiya
+s6575	Yara (asosan NYaQV bilan birga), pankreatit
+s6576	Immun
+s6577	Infeksiyalar (bakterial, zamburug‘, sil faollashuvi, opportunistik), infeksiya belgilarining niqoblanishi
+s6578	Yupqalashish, strialar, ekximozlar, akne, yaralarning sekin bitishi
+s6579	Katarakta (orqa subkapsulyar), glaukoma
+s6580	Ruhiy
+s6581	Uyqusizlik, eyforiya, depressiya, steroid psixozi
+s6582	**Glyukokortikoidlar bilan uzoq davolashda profilaktika**: ertalab bir marta (sirkad ritmga mos) qabul qilish; eng past samarali doza; **kalsiy va D vitamini**, xavf yuqori bo‘lsa bisfosfonat (osteoporoz); NYaQV bilan birga bo‘lsa — PPI; glyukoza, AQB, ko‘z ichi bosimi nazorati; davolashdan oldin latent sil va gepatit B ni tekshirish; jonli vaksinalar mumkin emas.
+s6583	Jadval 15.12. Og‘riq va isitmada analgetik tanlash
+s6584	Bolada isitma
+s6585	Paratsetamol yoki ibuprofen (vaznga ko‘ra)
+s6586	Aspirin (Rey sindromi), metamizol
+s6587	Homiladorlikda og‘riq/isitma
+s6588	NYaQV (ayniqsa 20 haftadan keyin)
+s6589	Me’da yarasi anamnezi
+s6590	Paratsetamol; zarur bo‘lsa koksib + PPI
+s6591	Noselektiv NYaQV PPI siz
+s6592	YuIK, yurak yetishmovchiligi
+s6593	Paratsetamol; naproksen qisqa muddat
+s6594	Diklofenak, koksiblar, yuqori dozali NYaQV
+s6595	Surunkali buyrak kasalligi
+s6596	Barcha tizimli NYaQV
+s6597	Aspirin astmasi
+s6598	Paratsetamol (≤ 1 g), koksiblar (ehtiyotkorlik)
+s6599	Noselektiv NYaQV
+s6600	Podagra xuruji
+s6601	NYaQV (naproksen, indometatsin), kolxitsin yoki glyukokortikoid
+s6602	Aspirin (siydik kislotasi chiqarilishini o‘zgartiradi)
+s6603	NYaQV (diklofenak, ketorolak)
+s6604	Osteoartrit (bitta bo‘g‘im)
+s6605	Mahalliy NYaQV (gel), paratsetamol
+s6606	1-ko‘nikma. Insulin yuborishni o‘rgatish (shprits-ruchka)
+s6607	Qo‘llarni yuving; insulin nomi va muddatini tekshiring; NPX va aralash insulinni 10–20 marta ag‘darib aralashtiring (chayqatmasdan).
+s6608	Yangi igna o‘rnating, 2 TB bilan “test” (havoni chiqarish) qiling.
+s6609	Dozani tanlang.
+s6610	Qorin (eng tez so‘rilish — qisqa insulin uchun), son, yelka yoki dumba terisini burmaga oling.
+s6611	Ignani 90° (kalta igna) burchak ostida kiriting, tugmani bosing, **10 soniya** kutib ignani chiqaring.
+s6612	In’yeksiya joyini har safar almashtiring (lipodistrofiyaning oldini olish).
+s6613	Ochilgan ruchka xona haroratida 4 hafta, zaxiradagilar — sovutgichda (muzlatmasdan) saqlanadi.
+s6614	**RETSEPT 15.1. OKSITOTSIN** Rp.: Oxytocini 5 TB — 1 ml
+s6615	D.t.d. N. 10 in ampullis S. Tug‘ruqdan keyingi qon ketishning oldini olish uchun 10 TB mushak ichiga (akusher tomonidan).
+s6616	**RETSEPT 15.2. DESMOPRESSIN** Rp.: Desmopressini 0,0001
+s6617	D.t.d. N. 30 in tabulettis S. 1 tabletkadan kuniga 2–3 marta (markaziy qandsiz diabetda; natriy nazorati ostida).
+s6618	**RETSEPT 15.3. LEVOTIROKSIN** Rp.: Levothyroxini natrii 0,00005
+s6619	D.t.d. N. 100 in tabulettis S. 1 tabletkadan kuniga 1 marta ertalab nonushtadan 30–60 daqiqa oldin ichilsin.
+s6620	**RETSEPT 15.4. TIAMAZOL** Rp.: Thiamazoli 0,005
+s6621	D.t.d. N. 50 in tabulettis S. 2 tabletkadan kuniga 3 mahal ichilsin; isitma yoki tomoq og‘rig‘i paydo bo‘lsa darhol shifokorga murojaat qilinsin.
+s6622	**RETSEPT 15.5. INSULIN GLARGIN** Rp.: Insulini glargini 100 TB/ml — 3 ml
+s6623	D.t.d. N. 5 in calamis S. Kuniga 1 marta bir vaqtda 10 TB teri ostiga; doza ertalabki glyukoza bo‘yicha titrlansin.
+s6624	**RETSEPT 15.6. INSULIN ASPART** Rp.: Insulini asparti 100 TB/ml — 3 ml
+s6625	D.t.d. N. 5 in calamis S. Har asosiy ovqatdan oldin (0–10 daqiqa) teri ostiga, uglevod miqdoriga ko‘ra.
+s6626	**RETSEPT 15.7. METFORMIN** Rp.: Metformini hydrochloridi 0,5
+s6627	D.t.d. N. 60 in tabulettis obductis S. 1 tabletkadan kuniga 1 marta kechki ovqat bilan, har hafta 1 tabletkaga oshirib, kuniga 2 g gacha.
+s6628	**RETSEPT 15.8. GLIKLAZID MR** Rp.: Tabulettas Gliclazidi 0,06 modificatas N. 30
+s6629	D.S. 1/2–1 tabletkadan kuniga 1 marta nonushta bilan ichilsin.
+s6630	**RETSEPT 15.9. EMPAGLIFLOZIN** Rp.: Empagliflozini 0,01
+s6631	D.t.d. N. 30 in tabulettis obductis S. 1 tabletkadan kuniga 1 marta ertalab ichilsin.
+s6632	**RETSEPT 15.10. SEMAGLUTID** Rp.: Solutionis Semaglutidi 1,34 mg/ml — 1,5 ml
+s6633	D.t.d. N. 1 in calamo S. Haftada 1 marta 0,25 mg teri ostiga 4 hafta, keyin 0,5 mg.
+s6634	**RETSEPT 15.11. GLYUKAGON** Rp.: Glucagoni 0,001
+s6635	D.t.d. N. 1 S. Og‘ir gipoglikemiyada erituvchi bilan eritib 1 mg mushak ichiga yoki teri ostiga.
+s6636	**RETSEPT 15.12. GLYUKOZA 40%** Rp.: Solutionis Glucosi 40% — 20 ml
+s6637	D.t.d. N. 10 in ampullis S. 20–40 ml venaga oqim bilan (gipoglikemik komada).
+s6638	**RETSEPT 15.13. IBUPROFEN** Rp.: Ibuprofeni 0,4
+s6639	D.t.d. N. 20 in tabulettis obductis S. 1 tabletkadan kuniga 3 mahal ovqatdan keyin, 5 kundan ortiq emas.
+s6640	**RETSEPT 15.14. IBUPROFEN SUSPENZIYASI (BOLALAR UCHUN)** Rp.: Suspensionis Ibuprofeni 100 mg/5 ml — 100 ml
+s6641	D.S. 10 mg/kg dan harorat 38,5 °C dan oshganda, kuniga 3 martagacha; chayqatilsin.
+s6642	**RETSEPT 15.15. DIKLOFENAK (AMPULADA)** Rp.: Solutionis Diclofenaci natrii 2,5% — 3 ml
+s6643	D.t.d. N. 3 in ampullis S. 3 ml dan mushak ichiga chuqur kuniga 1 marta, 2–3 kun.
+s6644	**RETSEPT 15.16. SELEKOKSIB** Rp.: Capsulas Celecoxibi 0,2 N. 20
+s6645	D.S. 1 kapsuladan kuniga 1–2 marta ichilsin.
+s6646	**RETSEPT 15.17. PARATSETAMOL** Rp.: Paracetamoli 0,5
+s6647	D.t.d. N. 20 in tabulettis S. 1–2 tabletkadan har 6 soatda, kuniga 8 tabletkadan (4 g) ko‘p emas.
+s6648	**RETSEPT 15.18. PREDNIZOLON** Rp.: Prednisoloni 0,005
+s6649	D.t.d. N. 100 in tabulettis S. Sutkalik dozasi ertalab bir martada (soat 8 da), ovqatdan keyin; dozani to‘satdan to‘xtatmang.
+s6650	**RETSEPT 15.19. DEKSAMETAZON (AMPULADA)** Rp.: Solutionis Dexamethasoni phosphatis 0,4% — 1 ml
+s6651	D.t.d. N. 10 in ampullis S. 1–2 ml dan venaga yoki mushak ichiga.
+s6652	**RETSEPT 15.20. GIDROKORTIZON KREMI** Rp.: Cremoris Hydrocortisoni 1% — 15,0
+s6653	D.S. Terining zararlangan sohasiga kuniga 2 mahal yupqa surtilsin, 7 kundan ortiq emas.
+s6654	Gormonal preparatlar tasnifi. Nima uchun oqsil gormonlari ichishga berilmaydi?
+s6655	Gipotalamus va gipofiz gormonlari preparatlari va ularning qo‘llanishi.
+s6656	Oksitotsin va desmopressinning qo‘llanishi va xavflari.
+s6657	Levotiroksin bilan davolash tamoyillari.
+s6658	Antitireoid vositalar: mexanizm, qo‘llanish, nojo‘ya ta’sirlar. Homiladorlikda tanlov.
+s6659	Insulinning fiziologik ta’sirlari va insulin preparatlari tasnifi.
+s6660	Qaysi insulinni venaga yuborish mumkin? Diabetik ketoatsidozni davolash tamoyillari.
+s6661	Gipoglikemiya belgilari va shoshilinch yordam.
+s6662	Metforminning mexanizmi, afzalliklari va qarshi ko‘rsatmalari.
+s6663	Sulfonilmochevinalarning mexanizmi va xavfi.
+s6664	DPP-4 ingibitorlari, GPP-1 agonistlari va SGLT2 ingibitorlarining mexanizmi va afzalliklari.
+s6665	2-tip diabetni davolashning zamonaviy tamoyillari.
+s6666	Araxidon kislota kaskadi. TSOG-1 va TSOG-2 ning farqi.
+s6667	NYaQV mexanizmi va asosiy ta’sirlari. Tasnifi.
+s6668	NYaQV nojo‘ya ta’sirlari va ularning oldini olish.
+s6669	Paratsetamolning xususiyatlari, dozalari va zaharlanishi.
+s6670	Glyukokortikoidlarning mexanizmi va farmakologik ta’sirlari.
+s6671	Glyukokortikoid preparatlarining qiyosiy tavsifi.
+s6672	Glyukokortikoidlarning qo‘llanishi va nojo‘ya ta’sirlari.
+s6673	Glyukokortikoidlarni bekor qilish qoidalari. “Stress doza” nima?
+s6674	Tug‘ruq faoliyatini kuchaytirish va tug‘ruqdan keyingi qon ketishning oldini olish uchun gormon:
+s6675	Prolaktin
+s6676	Vazopressin
+s6677	Somatostatin
+s6678	Markaziy qandsiz diabetni davolashda tanlov dori:
+s6679	Tionamidlarning eng xavfli nojo‘ya ta’siri:
+s6680	Agranulotsitoz
+s6681	Osteoporoz
+s6682	Gipertrixoz
+s6683	Homiladorlikning I trimestrida tireotoksikozda tanlov dori:
+s6684	Tiamazol
+s6685	Propiltiourasil
+s6686	Levotiroksin
+s6687	Kaliy yodid uzoq muddat
+s6688	Venaga yuborish mumkin bo‘lgan insulin:
+s6689	Aralash insulin 70/30
+s6690	NPX insulin
+s6691	Qisqa ta’sirli (oddiy) inson insulini
+s6692	Insulin degludek
+s6693	Insulin glargin
+s6694	Hushsiz gipoglikemik bemorga uyda qarindoshlar yubora oladigan vosita:
+s6695	Jigarda glyukoneogenezni kamaytiruvchi, gipoglikemiya chaqirmaydigan 2-tip diabetning birinchi qator dorisi:
+s6696	Glibenklamid
+s6697	Repaglinid
+s6698	Beta-hujayralarda KATF kanallarini yopib insulin sekretsiyasini oshiruvchi vosita:
+s6699	Empagliflozin
+s6700	Sitagliptin
+s6701	Gliklazid
+s6702	Yurak yetishmovchiligi va surunkali buyrak kasalligida o‘limni kamaytiruvchi, glyukozuriya chaqiruvchi vositalar:
+s6703	Yurak yetishmovchiligida mumkin bo‘lmagan qand pasaytiruvchi vosita:
+s6704	Linagliptin
+s6705	Semaglutid
+s6706	NYaQV me’da shilliq qavatiga zararli ta’sirining asosiy sababi:
+s6707	TSOG-2 ning tormozlanishi
+s6708	TSOG-1 tormozlanishi va himoya prostaglandinlarining kamayishi
+s6709	Leykotrienlar sintezining kamayishi
+s6710	Kislota sekretsiyasining kamayishi
+s6711	Paratsetamol bilan zaharlanishda antidot:
+s6712	16 yoshgacha bo‘lgan bolalarga virusli infeksiyada isitma tushirish uchun mumkin bo‘lmagan dori:
+s6713	Ibuprofen
+s6714	Fizik sovutish
+s6715	Ko‘p suyuqlik
+s6716	Mineralokortikoid faolligi yo‘q, yallig‘lanishga qarshi faolligi eng yuqori glyukokortikoid:
+s6717	Kortizon
+s6718	Gidrokortizon
+s6719	Uzoq qabuldan keyin glyukokortikoidlarni to‘satdan to‘xtatishning asosiy xavfi:
+s6720	Giperglikemiya
+s6721	Kushingoid
+s6722	Katarakta
+s6723	O‘tkir buyrak usti bezi yetishmovchiligi
+s6724	58 yoshli erkak, 2-tip qandli diabet (HbA~1c~ 8,4%), 2 yil oldin miokard infarktini o‘tkazgan, semizlik (TVI 34), KFT 65 ml/daq. Hozir faqat glibenklamid qabul qiladi; oxirgi oyda ikki marta kechasi gipoglikemiya bo‘lgan.
+s6725	1) Hozirgi davodagi kamchiliklar? 2) Optimal davo rejasi.
+s6726	1) Glibenklamid — gipoglikemiya xavfi eng yuqori sulfonilmochevina, vazn ortishiga olib keladi, yurak-qon tomir asoratlarini kamaytirmaydi. 2) Glibenklamidni to‘xtatish; metformin (KFT 65 da mumkin); aterosklerotik yurak-qon tomir kasalligi va semizlik tufayli glyukozadan qat’i nazar GPP-1 agonisti (semaglutid) va/yoki SGLT2 ingibitori (empagliflozin) — yurak-qon tomir asoratlarini kamaytiradi, vaznni pasaytiradi, gipoglikemiya chaqirmaydi; statin, aspirin, AQB nazorati; maqsadli HbA~1c~ < 7%.
+s6727	19 yoshli talaba qiz 1-tip diabet bilan og‘riydi. Imtihon kuni nonushta qilmay, odatdagi insulin dozasini yuborgan. 2 soatdan keyin titrash, ko‘p terlash, chalkashlik paydo bo‘ldi, keyin hushini yo‘qotdi. Glyukometrda 1,9 mmol/l.
+s6728	1) Holat? 2) Shoshilinch yordam?
+s6729	1) Og‘ir gipoglikemiya (gipoglikemik koma). 2) Og‘ziga hech narsa quymaslik (aspiratsiya); glyukagon 1 mg mushak ichiga yoki teri ostiga (yoki burunga 3 mg) — atrofdagilar yuborishi mumkin; tibbiyot xodimi — 40% glyukoza 40–60 ml venaga oqim bilan, keyin 5–10% glyukoza infuziyasi; hushiga kelgach — uglevodli ovqat; sababini tahlil qilish va bemorni ovqatsiz insulin yubormaslikka o‘rgatish; glyukagon to‘plami har doim yonida bo‘lishi.
+s6730	45 yoshli ayol revmatoid artrit tufayli 6 oydan beri prednizolon 15 mg/sut qabul qiladi. Ahvoli yaxshilangani uchun dorini o‘zi to‘satdan to‘xtatgan. 3 kundan keyin keskin holsizlik, ko‘ngil aynash, qusish, qorinda og‘riq, AQB 80/50 mm sim. ust., glyukoza 3,2 mmol/l, natriy 128 mmol/l.
+s6731	1) Tashxis? 2) Patogenezi? 3) Davolash va profilaktika.
+s6732	1) O‘tkir buyrak usti bezi yetishmovchiligi (glyukokortikoid bekor qilish sindromi, ikkilamchi). 2) Uzoq ekzogen glyukokortikoid qabuli gipotalamus-gipofiz-buyrak usti o‘qini bostirgan (AKTG sekretsiyasi kamaygan, buyrak usti po‘stlog‘i atrofiyalangan); dori to‘xtatilganda o‘z kortizoli yetarli ishlab chiqarilmaydi. 3) Gidrokortizon 100 mg venaga darhol, keyin 200 mg/sutka infuziya yoki har 6 soatda; 0,9% NaCl va glyukoza quyish; holat barqarorlashgach peroral prednizolonga o‘tib, dozani asta-sekin (bir necha hafta-oylar davomida) kamaytirish. Bemorga glyukokortikoidlarni to‘satdan to‘xtatmaslik va stress holatlarida dozani oshirish zarurligini tushuntirish, “steroid kartochkasi” berish.

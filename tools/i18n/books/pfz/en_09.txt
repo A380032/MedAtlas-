@@ -39,7 +39,7 @@ s1640 Decreased amount of blood and interstitial fluid
 s1641 Weakened or absent arterial pulsation
 s1642 Decreased inflow of blood into the artery
 s1643 Pain, numbness, pins-and-needles sensation (paresthesia)
-s1644 Hypoxia and stimulation of nerve endings by metabolites (H+, K+, lactate, bradykinin)
+s1644 Hypoxia and stimulation of nerve endings by metabolites (H^+^, K^+^, lactate, bradykinin)
 s1645 Decreased function
 s1646 Hypoxia, energy deficiency
 s1647 the arterioles constrict or the inflow of blood into them decreases;
@@ -71,8 +71,8 @@ s1672 **organs with absolutely sufficient collaterals** — many anastomoses (li
 s1673 **organs with relatively sufficient (or relatively insufficient) collaterals** — anastomoses exist but open slowly (intestine, stomach, lungs, skin);
 s1674 **organs with absolutely insufficient collaterals** — “end” (terminal) arteries (myocardium, brain, kidney, spleen, retina): occlusion of an artery leads to infarction.
 s1675 Cell injury in ischemia and reperfusion injury
-s1676 The main mechanisms of cell injury in ischemia: cessation of oxidative phosphorylation → ATP deficiency → failure of the Na+/K+ pump → entry of sodium and water into the cell (cellular swelling) → anaerobic glycolysis and lactic acidosis → accumulation of Ca2+ inside the cell → activation of phospholipases and proteases → membrane injury → necrosis.
-s1677 **Reperfusion injury** is a paradoxical increase in injury when blood flow is restored after ischemia. Its mechanisms: formation of large amounts of reactive oxygen species (free radicals), massive entry of Ca2+ into cells, activation of leukocytes and plugging of microvessels (the no-reflow phenomenon), reperfusion arrhythmias.
+s1676 The main mechanisms of cell injury in ischemia: cessation of oxidative phosphorylation → ATP deficiency → failure of the Na^+^/K^+^ pump → entry of sodium and water into the cell (cellular swelling) → anaerobic glycolysis and lactic acidosis → accumulation of Ca^2+^ inside the cell → activation of phospholipases and proteases → membrane injury → necrosis.
+s1677 **Reperfusion injury** is a paradoxical increase in injury when blood flow is restored after ischemia. Its mechanisms: formation of large amounts of reactive oxygen species (free radicals), massive entry of Ca^2+^ into cells, activation of leukocytes and plugging of microvessels (the no-reflow phenomenon), reperfusion arrhythmias.
 s1678 In myocardial infarction, “time is myocardium”: the faster blood flow in the coronary artery is restored (thrombolysis or coronary angioplasty), the smaller the volume of necrosis. The same applies to ischemic stroke — thrombolysis is effective only in the first hours after the onset of symptoms (the “therapeutic window”). Along with reperfusion, measures are also taken to reduce its injurious effect.
 s1679 2. Stasis
 s1680 **Stasis** is the slowing and cessation of blood flow in the vessels of the microcirculation (mainly in the capillaries).
@@ -106,7 +106,7 @@ s1707 Increased activity of the coagulation system or weakening of the anticoagu
 s1708 Cancer, pregnancy and the postpartum period, oral contraceptives, hereditary thrombophilias (factor V Leiden mutation, antithrombin III deficiency), antiphospholipid syndrome
 s1709 Stages of thrombus formation
 s1710 **Platelet adhesion** — at the site of injury, platelets adhere to exposed collagen via von Willebrand factor.
-s1711 **Platelet activation and aggregation** — platelets change shape and release ADP, thromboxane A2 and serotonin; they stick to one another via fibrinogen bridges (the white head of the thrombus).
+s1711 **Platelet activation and aggregation** — platelets change shape and release ADP, thromboxane A~2~ and serotonin; they stick to one another via fibrinogen bridges (the white head of the thrombus).
 s1712 **Activation of the coagulation cascade** — thrombin is generated via tissue factor (the extrinsic pathway) and factor XII (the intrinsic pathway).
 s1713 **Conversion of fibrinogen to fibrin** — a fibrin network forms, in which red blood cells and leukocytes become trapped.
 s1714 **Clot retraction** — the thrombus becomes denser owing to the contractile proteins of platelets.
@@ -198,4 +198,3 @@ s1799 Place a crystal of table salt (sodium chloride) on the vessel wall.
 s1800 Observe the injury of the vessel wall at the site of the crystal, the adhesion and accumulation of platelets (in the frog — cells that perform the function of platelets) on the wall, and then the growth of the thrombus and the narrowing of the blood flow.
 s1801 Record the time of thrombus formation and the degree to which it has occluded the vascular lumen.
 s1802 **Analysis:** the hypertonic solution injures the endothelium (the first factor of Virchow's triad), as a result of which platelet adhesion and aggregation begin.
-s1803 Experiment 3: fat embolism

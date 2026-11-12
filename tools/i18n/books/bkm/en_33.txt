@@ -1,6 +1,47 @@
+s6350 CFTR
+s6351 Through which receptor does histamine enhance HCl secretion?
+s6352 H~1~
+s6353 M~3~
+s6354 CCK~2~
+s6355 H~2~
+s6356 Which enzyme activates trypsinogen in the intestine?
+s6357 Which factor produced in the stomach is required for the absorption of vitamin B~12~?
+s6358 Pepsinogen
+s6359 Rennin
+s6360 Where are ≈ 95% of bile acids reabsorbed?
+s6361 In the ileum
+s6362 In the gallbladder
+s6363 Which transporter is responsible for the intestinal absorption of glucose?
+s6364 PEPT1
+s6365 Which hormone stimulates the secretion of bicarbonate-rich juice by the pancreas?
+s6366 Secretin
+s6367 Somatostatin
+s6368 Which protein triggers the autoimmune response in celiac disease?
+s6369 Gliadin
+s6370 Casein
+s6371 Collagen
+s6372 Lactoglobulin
+s6373 What is the mechanism of diarrhea in lactose intolerance?
+s6374 Secretory (cAMP ↑)
+s6375 Osmotic (unabsorbed lactose and fermentation products)
+s6376 Motor (peristalsis ↑)
+s6377 Exudative
+s6378 What is the most specific laboratory marker of acute pancreatitis?
+s6379 CK
+s6380 What is the key enzyme of bile acid synthesis?
+s6381 7α-Hydroxylase
+s6382 It blocks SGLT1
+s6383 It ADP-ribosylates the Gs protein and increases cAMP
+s6384 It breaks down lactase
+s6385 It releases histamine
+s6386 What is the main energy source of the colonic epithelium?
+s6387 Butyrate
+s6388 A 45-year-old man presented after eating a large fatty meal and drinking alcohol with severe girdle-like pain in the upper abdomen and repeated vomiting. Serum lipase 1250 U/l (normal < 60), amylase 820 U/l, glucose 9.8 mmol/l, calcium 1.9 mmol/l.
+s6389 What is the diagnosis? Explain the biochemical mechanism of the disease. Why is calcium decreased and glucose increased?
+s6390 Acute pancreatitis. Alcohol and fatty food enhance secretion, raise the pressure in the ducts and damage the acinar cells; trypsinogen is converted to trypsin prematurely inside the gland and activates the other proenzymes (chymotrypsinogen, proelastase, prophospholipase A~2~) — the gland digests itself (autolysis): elastase destroys the vessels (hemorrhage), phospholipase A~2~ destroys membranes, and lipase breaks down adipose tissue. The enzymes are released into the blood (increased lipase and amylase). In foci of fat necrosis, free fatty acids form soaps with calcium, leading to hypocalcemia (a sign of a severe course). Damage to the islets of Langerhans and stress hormones cause hyperglycemia.
 s6391 A 25-year-old woman complains of bloating, rumbling and loose stools 1–2 hours after drinking milk or eating dairy products. After 50 g of lactose, blood glucose did not rise (+ 0.6 mmol/l), and breath hydrogen rose sharply.
 s6392 What is the diagnosis? Explain the biochemical mechanism of the symptoms. What recommendations would you give?
-s6393 Lactase deficiency (lactose intolerance). Without lactase, lactose is not broken down into glucose and galactose in the small intestine — blood glucose does not rise. Lactose passes into the colon, raises the osmotic pressure and retains water (osmotic diarrhea); bacteria ferment it to H2, CO2, methane and short-chain acids (bloating, rumbling; H2 is absorbed into the blood and exhaled). Recommendations: limit fresh milk; fermented dairy products (yogurt, cheese — little lactose, contain bacterial β-galactosidase), lactose-free milk or lactase preparations; prevention of calcium deficiency.
+s6393 Lactase deficiency (lactose intolerance). Without lactase, lactose is not broken down into glucose and galactose in the small intestine — blood glucose does not rise. Lactose passes into the colon, raises the osmotic pressure and retains water (osmotic diarrhea); bacteria ferment it to H~2~, CO~2~, methane and short-chain acids (bloating, rumbling; H~2~ is absorbed into the blood and exhaled). Recommendations: limit fresh milk; fermented dairy products (yogurt, cheese — little lactose, contain bacterial β-galactosidase), lactose-free milk or lactase preparations; prevention of calcium deficiency.
 s6394 A 7-year-old child is growth-retarded and thin, with a large abdomen and frequent, large, fatty, foul-smelling stools. Blood Hb 88 g/l, ferritin 5 µg/l, albumin 30 g/l. IgA antibodies against tissue transglutaminase are sharply increased. Intestinal biopsy shows villous atrophy.
 s6395 What is the diagnosis? Explain the mechanism of the disease. Why did iron deficiency and hypoalbuminemia develop? What is the treatment?
 s6396 Celiac disease (gluten enteropathy). The gliadin peptides of wheat, barley and rye are resistant to proteases; tissue transglutaminase deamidates them, and the deamidated peptides are presented to T lymphocytes with HLA-DQ2/DQ8 — inflammation; cytotoxic lymphocytes destroy the enterocytes, and the villi become atrophic. The absorptive surface and membrane enzymes decrease: the absorption of fats (steatorrhea), iron (in the duodenum — iron deficiency anemia), amino acids (hypoalbuminemia), calcium and vitamin D is impaired — growth retardation. Treatment — a lifelong strict gluten-free diet (rice, corn and buckwheat are allowed); iron and vitamin supplementation; a decrease in antibodies shows that the diet is being followed.
@@ -8,19 +49,19 @@ s6397 Saliva
 s6398 Amylase, mucin, lysozyme, IgA, thiocyanates; pH 6.4–7.4
 s6399 Appetite
 s6400 Ghrelin (↑), leptin, CCK, GLP-1, PYY (↓); NPY ↔ POMC
-s6401 Carbonic anhydrase + H+,K+-ATPase; ACh, gastrin, histamine (H2)
+s6401 Carbonic anhydrase + H^+^,K^+^-ATPase; ACh, gastrin, histamine (H~2~)
 s6402 Gastric protection
-s6403 Mucin, HCO3 -, prostaglandins
+s6403 Mucin, HCO~3~^-^, prostaglandins
 s6404 Pancreatic juice
 s6405 Zymogens (trypsinogen → enteropeptidase), amylase, lipase + colipase
 s6406 Regulation
-s6407 Secretin (HCO3 -), cholecystokinin (enzymes, bile)
+s6407 Secretin (HCO~3~^-^), cholecystokinin (enzymes, bile)
 s6408 Bile
 s6409 Bile acids (from cholesterol, 7α-hydroxylase), phospholipids, bilirubin
 s6410 ≈ 95% are reabsorbed in the ileum
 s6411 SGLT1 (glucose), GLUT5 (fructose), PEPT1, chylomicrons
 s6412 Lactose intolerance
-s6413 Lactase ↓ → osmotic diarrhea, H2 breath test
+s6413 Lactase ↓ → osmotic diarrhea, H~2~ breath test
 s6414 Celiac disease
 s6415 Gliadin, transglutaminase antibodies; gluten-free diet
 s6416 Pancreatitis
@@ -49,7 +90,7 @@ s6438 Pigments
 s6439 Conjugation of bilirubin and its excretion with bile
 s6440 Xenobiotics, drugs, hormones, ammonia, ethanol (topic 26)
 s6441 Vitamins and minerals
-s6442 A, D (25-hydroxylation), B12 store, synthesis of K-dependent factors; store of iron and copper
+s6442 A, D (25-hydroxylation), B~12~ store, synthesis of K-dependent factors; store of iron and copper
 s6443 Excretory
 s6444 Bile formation
 s6445 **Age-related features:** in newborns the activity of UDP-glucuronosyltransferase, some P450 isoforms and gluconeogenic enzymes is low (physiological jaundice, sensitivity to drugs, tendency to hypoglycemia); the synthesis of albumin and clotting factors is lower. In old age liver mass and blood flow decrease, and drug metabolism slows down.
@@ -57,7 +98,7 @@ s6446 2. Heme catabolism and bilirubin metabolism
 s6447 ≈ 250–300 mg of bilirubin is formed per day: ≈ 80% from the hemoglobin of senescent erythrocytes, the rest from myoglobin, cytochromes and ineffective erythropoiesis.
 s6448 Figure 25.1
 s6449 Bilirubin metabolism (drawn after Severin E.S.)
-s6450 **In macrophages** (spleen, Kupffer cells of the liver, bone marrow): **heme oxygenase** (microsomal, requires O2 and NADPH) cleaves the α-methene bridge of heme to form **biliverdin**, **CO** and Fe2+; **biliverdin reductase** (NADPH) reduces biliverdin to **bilirubin** (from green to yellow — the color change of a bruise).
+s6450 **In macrophages** (spleen, Kupffer cells of the liver, bone marrow): **heme oxygenase** (microsomal, requires O~2~ and NADPH) cleaves the α-methene bridge of heme to form **biliverdin**, **CO** and Fe^2+^; **biliverdin reductase** (NADPH) reduces biliverdin to **bilirubin** (from green to yellow — the color change of a bruise).
 s6451 **Transport in the blood:** bilirubin is insoluble in water (lipophilic) and is carried to the liver bound to **albumin** — **unconjugated (indirect, free)** bilirubin. It does not pass the renal filter — it is not found in urine. Its free (non-albumin-bound) fraction crosses the blood–brain barrier and is **neurotoxic**. Sulfonamides, salicylates and free fatty acids displace it from albumin.
 s6452 **In the liver:** hepatocytes take up bilirubin with membrane transporters (OATP) and bind it inside the cell to ligandin (glutathione S-transferase); in the endoplasmic reticulum, **UDP-glucuronosyltransferase (UGT1A1)** attaches two glucuronic acid residues from UDP-glucuronic acid — **bilirubin diglucuronide** (**conjugated, direct** bilirubin) — which is water-soluble.
 s6453 **Secretion into bile** — active transport (ATP) through the **MRP2** transporter; this is the **slowest (rate-limiting) step** of the process.
@@ -160,10 +201,3 @@ s6549 Ammonia, phenols, aromatic amino acids ↑
 s6550 **Liver fibrosis and cirrhosis** — in chronic damage (hepatitis B, C, alcohol, fatty liver disease) **stellate (Ito) cells** are activated, transform into myofibroblasts and synthesize a lot of collagen (types I, III); nodules form. Fibrosis markers — hyaluronic acid, type III procollagen peptide, elastography.
 s6551 6. Biochemical mechanisms of hepatic coma
 s6552 **Hepatic encephalopathy and coma** is a disturbance of central nervous system function in acute or chronic liver failure.
-s6553 **The ammonia hypothesis (the main one):** urea synthesis in the liver decreases, and ammonia from the intestine reaches the brain directly through portocaval shunts. In the brain, astrocytes convert NH3 into **glutamine** (glutamine synthetase) — glutamine accumulates and the astrocytes swell (osmotically), brain edema; **α-ketoglutarate** is consumed for glutamate — the Krebs cycle and ATP formation decrease; inhibitory and excitatory neurotransmission are disturbed (topic 13).
-s6554 **False neurotransmitters:** aromatic amino acids (phenylalanine, tyrosine, tryptophan) increase in the blood (the liver does not break them down), while branched-chain amino acids (valine, leucine, isoleucine — used in muscle) decrease — the **Fischer ratio** (BCAA/AAA) falls from 3–3.5 to < 1. Many aromatic amino acids enter the brain and form octopamine, phenylethanolamine (false transmitters) and serotonin; dopamine and norepinephrine decrease.
-s6555 **Enhanced GABAergic inhibition** (endogenous benzodiazepines).
-s6556 **Intestinal toxins:** mercaptans (the liver odor — “foetor hepaticus”), phenols, short-chain fatty acids, indole, skatole — the liver does not detoxify them.
-s6557 Hypoglycemia, electrolyte disturbances (hypokalemia, alkalosis — enhances the passage of NH3 into the brain), acidosis, renal failure (hepatorenal syndrome). **Principles of treatment:** temporary restriction of protein (but not complete), **lactulose** (in the colon bacteria ferment it and acidify the medium: NH3 → NH~4~^+^ — not absorbed, excreted from the intestine; laxative effect), bowel cleansing, nonabsorbable antibiotics (rifaximin — reduces the ammonia-producing bacteria), L-ornithine L-aspartate (enhances the synthesis of urea and glutamine), branched-chain amino acids, correction of hypokalemia; in severe cases liver transplantation.
-s6558 Experiment 1: determination of total and direct bilirubin in blood on a biochemical analyzer (Jendrassik–Grof method)
-s6559 **Principle of the method:** bilirubin forms red-violet azobilirubin with diazotized sulfanilic acid (the diazo reagent). Conjugated bilirubin reacts directly (**direct bilirubin**); unconjugated bilirubin requires an **accelerator** (caffeine benzoate) to be released from albumin — with it **total bilirubin** is determined. Indirect bilirubin = total − direct. Measurement — 546 nm (in an alkaline medium — 578 nm, blue color).

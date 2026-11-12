@@ -1,3 +1,12 @@
+s2473 HMG-CoA + 2 NADPH → **mevalonate** — **HMG-CoA reductase** (the key enzyme, in the membrane of the endoplasmic reticulum).
+s2474 Mevalonate → activated isoprenoid units (C5, at the expense of ATP) → geranyl and farnesyl pyrophosphate → **squalene** (C30).
+s2475 Squalene is cyclized to **lanosterol** and then, in ≈ 20 reactions, converted into **cholesterol**.
+s2476 Table 10.1. Regulation of HMG-CoA reductase
+s2477 Intracellular cholesterol (through the transcription factor SREBP)
+s2478 When it is high — the synthesis of the enzyme and of LDL receptors falls and the enzyme is degraded faster
+s2479 Activates it by dephosphorylation; increases its synthesis
+s2480 Glucagon, AMP kinase (low energy)
+s2481 Inactivate it by phosphorylation
 s2482 Thyroid hormones
 s2483 Increase the synthesis of the enzyme (but the removal of cholesterol and the number of LDL receptors increase more — hence hypercholesterolemia in hypothyroidism)
 s2484 Statins (atorvastatin, rosuvastatin)
@@ -9,7 +18,7 @@ s2489 Figure 10.2
 s2490 Entry of cholesterol into the cell through the LDL receptor and regulation of the intracellular cholesterol level (drawn after Severin E.S.)
 s2491 When free cholesterol increases inside the cell: the synthesis of HMG-CoA reductase and of LDL receptors falls, and **ACAT** (acyl-CoA:cholesterol acyltransferase) is activated, so the excess cholesterol is stored as esters.
 s2492 **Reverse transport. HDL** (apo A-I) are formed in the liver and intestine as “flat discs”; they take free cholesterol from peripheral cells through the ABCA1 transporter. **Lecithin-cholesterol acyltransferase (LCAT)** (activated by apo A-I) transfers a fatty acid from phosphatidylcholine to cholesterol and forms cholesterol esters; these move into the core of the HDL and the particle becomes spherical. HDL deliver cholesterol to the **liver** (SR-B1 receptors) or pass the cholesterol esters to other lipoproteins. For this reason HDL are **antiatherogenic** lipoproteins.
-s2493 **Removal.** Cholesterol is not broken down to CO2 and H2O in the body. It:
+s2493 **Removal.** Cholesterol is not broken down to CO~2~ and H~2~O in the body. It:
 s2494 is converted in the liver into **bile acids** (≈ 0.5 g per day; the key enzyme is 7α-hydroxylase) and leaves with the bile;
 s2495 passes unchanged with the bile into the intestine; part of it is reabsorbed, and the rest is converted by bacteria into **coprostanol** and excreted with the feces;
 s2496 a small amount leaves with sebum, and the metabolites of steroid hormones with the urine.
@@ -82,9 +91,9 @@ s2562 Demyelination
 s2563 In some sphingolipidoses (Gaucher, Fabry) **enzyme replacement therapy** is used.
 s2564 Experiment 1: determination of total cholesterol in serum by the enzymatic method (on a biochemical analyzer)
 s2565 Principle of the method (CHOD-PAP):
-s2566 **Cholesterol esterase**: cholesterol esters + H2O → cholesterol + fatty acids;
-s2567 **Cholesterol oxidase**: cholesterol + O2 → cholest-4-en-3-one + H2O2;
-s2568 **Peroxidase**: 2H2O2 + 4-aminoantipyrine + phenol → pink quinoneimine + 4H2O. The intensity of the color is proportional to the amount of total cholesterol (500 nm).
+s2566 **Cholesterol esterase**: cholesterol esters + H~2~O → cholesterol + fatty acids;
+s2567 **Cholesterol oxidase**: cholesterol + O~2~ → cholest-4-en-3-one + H~2~O~2~;
+s2568 **Peroxidase**: 2H~2~O~2~ + 4-aminoantipyrine + phenol → pink quinoneimine + 4H~2~O. The intensity of the color is proportional to the amount of total cholesterol (500 nm).
 s2569 Pour 1 ml of working reagent into each of three test tubes.
 s2570 Add 10 µl of serum to tube 1, 10 µl of standard (5.17 mmol/l) to tube 2 and 10 µl of water to tube 3.
 s2571 Mix and keep at 37 °C for 10 minutes.
@@ -125,7 +134,7 @@ s2605 What are the sphingolipidoses? Give examples.
 s2606 The key enzyme of cholesterol synthesis:
 s2607 Squalene synthase
 s2608 The substances for whose synthesis cholesterol is not a basis:
-s2609 Vitamin D3
+s2609 Vitamin D~3~
 s2610 Prostaglandins
 s2611 Testosterone
 s2612 The mechanism of action of statins:
@@ -140,7 +149,7 @@ s2620 Apo A-II
 s2621 The apoprotein that activates lecithin-cholesterol acyltransferase (LCAT):
 s2622 The main route of removal of cholesterol from the body:
 s2623 Conversion into bile acids and removal with the bile
-s2624 Oxidation to CO2 and H2O
+s2624 Oxidation to CO~2~ and H~2~O
 s2625 Excretion unchanged in the urine
 s2626 Removal with sweat
 s2627 Removal through the lungs
@@ -169,7 +178,7 @@ s2649 Fibrates
 s2650 Heparin
 s2651 The enzyme that is deficient in Gaucher disease:
 s2652 β-Glucocerebrosidase
-s2653 The enzyme that forms H2O2 in the enzymatic determination of cholesterol:
+s2653 The enzyme that forms H~2~O~2~ in the enzymatic determination of cholesterol:
 s2654 Cholesterol esterase
 s2655 Cholesterol oxidase
 s2656 The main cause of hypercholesterolemia in hypothyroidism:
@@ -185,9 +194,3 @@ s2665 A 45-year-old obese woman (BMI 34 kg/m^2^) complains of attacks of severe 
 s2666 What is the likely chemical composition of the stones? Explain the mechanism of their formation.
 s2667 Cholesterol stones (radiolucent). Obesity, female sex and estrogens increase cholesterol synthesis in the liver and its secretion into the bile, while the synthesis of bile acids falls relatively; the bile becomes supersaturated with cholesterol (lithogenic). Reduced motility of the gallbladder helps crystals to form. Small cholesterol stones can be dissolved with ursodeoxycholic acid; with frequent attacks — cholecystectomy.
 s2668 A 55-year-old man smokes and his blood pressure is 160/95 mm Hg. Tests: total cholesterol 6.8 mmol/l, HDL-CH 0.9 mmol/l, triglycerides 2.2 mmol/l.
-s2669 Calculate the atherogenic index and LDL-CH. Assess the risk.
-s2670 AI = (6.8 − 0.9) / 0.9 ≈ 6.6 (normal < 3.0). Friedewald formula: LDL-CH = 6.8 − 0.9 − 2.2 / 2.2 = 6.8 − 0.9 − 1.0 = 4.9 mmol/l (desirable < 3.0). HDL is low, LDL and TG are high — atherogenic dyslipidemia. Together with smoking and arterial hypertension the risk of cardiovascular disease is very high. Recommendations: stopping smoking, diet, physical activity, statins, control of blood pressure.
-s2671 Functions of cholesterol
-s2672 Membranes, bile acids, steroid hormones, vitamin D3
-s2673 Synthesis
-s2674 Acetyl-CoA → HMG-CoA → mevalonate → squalene → lanosterol → cholesterol

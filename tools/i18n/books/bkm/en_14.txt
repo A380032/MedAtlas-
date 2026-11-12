@@ -1,3 +1,9 @@
+s2669 Calculate the atherogenic index and LDL-CH. Assess the risk.
+s2670 AI = (6.8 − 0.9) / 0.9 ≈ 6.6 (normal < 3.0). Friedewald formula: LDL-CH = 6.8 − 0.9 − 2.2 / 2.2 = 6.8 − 0.9 − 1.0 = 4.9 mmol/l (desirable < 3.0). HDL is low, LDL and TG are high — atherogenic dyslipidemia. Together with smoking and arterial hypertension the risk of cardiovascular disease is very high. Recommendations: stopping smoking, diet, physical activity, statins, control of blood pressure.
+s2671 Functions of cholesterol
+s2672 Membranes, bile acids, steroid hormones, vitamin D~3~
+s2673 Synthesis
+s2674 Acetyl-CoA → HMG-CoA → mevalonate → squalene → lanosterol → cholesterol
 s2675 HMG-CoA reductase; cholesterol, glucagon, statins ↓; insulin ↑
 s2676 ≈ 70% of blood cholesterol; into the cell through the LDL receptor (apo B-100)
 s2677 Reverse transport; LCAT (apo A-I) forms cholesterol esters
@@ -15,7 +21,7 @@ s2688 Cholesterol high, bile acids low; ursodeoxycholic acid
 s2689 Sphingolipidoses
 s2690 Tay–Sachs, Gaucher, Niemann–Pick, Fabry, Krabbe — lysosomal enzymes
 s2691 Enzymatic method
-s2692 Cholesterol esterase → cholesterol oxidase (H2O2) → peroxidase
+s2692 Cholesterol esterase → cholesterol oxidase (H~2~O~2~) → peroxidase
 s2693 Digestion of proteins, absorption of amino acids and their distribution among tissues
 s2694 To teach the student the significance of proteins in the body, nitrogen balance and the biological value of proteins, the dynamic state of body proteins, the digestion of proteins in the gastrointestinal tract and its regulation, normal and pathological gastric juice, the absorption of amino acids and their distribution to the tissues, the features of protein digestion in children, and the putrefaction of proteins in the intestine and the detoxification of its products; to master the determination of the acidity of gastric juice.
 s2695 the functions of proteins and the daily requirement;
@@ -50,13 +56,13 @@ s2723 **The dynamic state of body proteins.** The body’s proteins are constant
 s2724 **The species and tissue specificity of proteins**: the protein composition of every species and tissue is genetically determined; therefore, if foreign proteins enter the body undigested (for example, parenterally), they cause an immune response. Dietary proteins are broken down to amino acids and lose their “species specificity”.
 s2725 2. Digestion of proteins in the stomach
 s2726 Proteins are not digested in the oral cavity. Gastric juice (1.5–2.5 l per day) contains **hydrochloric acid**, **pepsinogens**, mucus (mucin) and Castle’s intrinsic factor.
-s2727 **The formation of HCl** — in the **parietal cells** of the fundic glands: by carbonic anhydrase CO2 + H2O → H2CO3 → H+ + HCO3
-s2728 −; H+ is pumped into the gastric lumen in exchange for K+ by **H^+^,K^+^-ATPase** (the “proton pump”), and Cl- leaves through channels; HCO3
-s2729 − passes into the blood in exchange for Cl- (the “alkaline tide” after a meal).
-s2730 **The functions of HCl:** it denatures and swells proteins (opening the peptide bonds to enzymes); converts pepsinogen into pepsin and creates the optimal pH for pepsin (1.5–2); has a bactericidal action; regulates gastric emptying and the release of secretin in the duodenum; improves the absorption of iron (Fe3+
-s2731 → Fe2+).
+s2727 **The formation of HCl** — in the **parietal cells** of the fundic glands: by carbonic anhydrase CO~2~ + H~2~O → H~2~CO~3~ → H^+^ + HCO~3~
+s2728 −; H^+^ is pumped into the gastric lumen in exchange for K^+^ by **H^+^,K^+^-ATPase** (the “proton pump”), and Cl^-^ leaves through channels; HCO~3~
+s2729 − passes into the blood in exchange for Cl^-^ (the “alkaline tide” after a meal).
+s2730 **The functions of HCl:** it denatures and swells proteins (opening the peptide bonds to enzymes); converts pepsinogen into pepsin and creates the optimal pH for pepsin (1.5–2); has a bactericidal action; regulates gastric emptying and the release of secretin in the duodenum; improves the absorption of iron (Fe^3+^
+s2731 → Fe^2+^).
 s2732 **Pepsin** is synthesized in the chief cells as inactive **pepsinogen**; under the action of HCl and by **autocatalysis** a fragment of 42 amino acid residues is removed from the N-terminus and active pepsin is formed. Pepsin is an **endopeptidase**: it cleaves the peptide bonds formed by aromatic amino acids (phenylalanine, tyrosine, tryptophan) and leucine; proteins are broken down into large polypeptides. **Gastricsin** (pH 3–3.5) is important in the newborn’s stomach. Newborns also have **chymosin (rennin)**, the enzyme that curdles milk casein.
-s2733 **Regulation of gastric juice secretion:** nervous (the vagus — acetylcholine), humoral (**gastrin** — released by the G cells of the antrum under the action of protein products and distension of the stomach; **histamine** — through H2 receptors), and inhibitors — somatostatin, secretin, a low pH.
+s2733 **Regulation of gastric juice secretion:** nervous (the vagus — acetylcholine), humoral (**gastrin** — released by the G cells of the antrum under the action of protein products and distension of the stomach; **histamine** — through H~2~ receptors), and inhibitors — somatostatin, secretin, a low pH.
 s2734 Table 11.2. Normal acidity of gastric juice (fasting, in titration units)
 s2735 Normal (t.u.)
 s2736 Total acidity
@@ -64,7 +70,7 @@ s2737 Free HCl
 s2738 Bound HCl
 s2739 pH
 s2740 **Pathological gastric juice: a hyperacid state** (gastritis, peptic ulcer, Zollinger–Ellison syndrome — gastrinoma); **hyposecretion and achylia** (atrophic gastritis, gastric cancer, pernicious anemia — no HCl and no intrinsic factor). Pathological components: **lactic acid** (fermentation by bacteria in the absence of HCl — suspicion of gastric cancer), **blood**, bile.
-s2741 **The biochemical basis of treating acid-related diseases: antacids** (aluminium and magnesium hydroxides) neutralize HCl; **H~2~ blockers** (famotidine) block the action of histamine; **proton pump inhibitors** (omeprazole) irreversibly inhibit H+,K+-ATPase — the most powerful antisecretory agent. The main etiological factor in peptic ulcer is Helicobacter pylori (with the help of urease it breaks urea down to ammonia and survives in the acidic medium; the urea breath test is based on this).
+s2741 **The biochemical basis of treating acid-related diseases: antacids** (aluminium and magnesium hydroxides) neutralize HCl; **H~2~ blockers** (famotidine) block the action of histamine; **proton pump inhibitors** (omeprazole) irreversibly inhibit H^+^,K^+^-ATPase — the most powerful antisecretory agent. The main etiological factor in peptic ulcer is Helicobacter pylori (with the help of urease it breaks urea down to ammonia and survives in the acidic medium; the urea breath test is based on this).
 s2742 3. Digestion of proteins in the intestine
 s2743 The pancreatic proteases are synthesized as inactive **proenzymes** (this protects the gland tissue from self-digestion; the gland also contains a **trypsin inhibitor** protein). In the duodenum **enteropeptidase** (enterokinase) removes a hexapeptide from trypsinogen and forms **trypsin**; trypsin then activates the remaining trypsinogen by autocatalysis, as well as the other proenzymes.
 s2744 Figure 11.1
@@ -79,7 +85,7 @@ s2752 On the carboxyl side of aromatic amino acids (Phe, Tyr, Trp)
 s2753 Elastase
 s2754 Bonds of small neutral amino acids (glycine, alanine, serine)
 s2755 Carboxypeptidase A and B
-s2756 Exopeptidase (Zn2+)
+s2756 Exopeptidase (Zn^2+^)
 s2757 Removes amino acids from the C-terminus (B — lysine and arginine)
 s2758 Aminopeptidases (enterocytes)
 s2759 Exopeptidase
@@ -87,7 +93,7 @@ s2760 Removes amino acids from the N-terminus
 s2761 Di- and tripeptidases (enterocytes)
 s2762 Break di- and tripeptides down into amino acids
 s2763 Endopeptidases break the chain into fragments from inside, while exopeptidases release free amino acids from its ends. The last stage of digestion takes place on the surface of the enterocytes (membrane digestion) and inside them.
-s2764 **Acute pancreatitis** — premature activation of the pancreatic enzymes inside the gland (diseases of the bile ducts, alcohol, trauma): trypsin activates the other proenzymes, phospholipase A2 and elastase, and the gland tissue digests itself (autolysis, necrosis) and the blood vessels are damaged. Amylase and lipase rise in the blood. Principles of treatment: fasting (to reduce secretion), protease inhibitors (aprotinin — historically), pain relief, infusion therapy.
+s2764 **Acute pancreatitis** — premature activation of the pancreatic enzymes inside the gland (diseases of the bile ducts, alcohol, trauma): trypsin activates the other proenzymes, phospholipase A~2~ and elastase, and the gland tissue digests itself (autolysis, necrosis) and the blood vessels are damaged. Amylase and lipase rise in the blood. Principles of treatment: fasting (to reduce secretion), protease inhibitors (aprotinin — historically), pain relief, infusion therapy.
 s2765 4. Absorption and distribution of amino acids
 s2766 Free amino acids and di- and tripeptides are absorbed in the small intestine:
 s2767 free L-amino acids — by **symport with Na^+^** (secondary active transport) — with separate carriers for neutral, basic and acidic amino acids and imino acids;
@@ -112,7 +118,7 @@ s2785 Indole, skatole (the odor of feces)
 s2786 Tyrosine
 s2787 Phenol, cresol
 s2788 Cysteine, methionine
-s2789 H2S, methyl mercaptan
+s2789 H~2~S, methyl mercaptan
 s2790 Cadaverine
 s2791 Ornithine, arginine
 s2792 Putrescine
@@ -130,8 +136,3 @@ s2803 Free HCl = NaOH used up to mark 1 × 20;
 s2804 Total acidity = NaOH used up to mark 3 × 20;
 s2805 Total HCl (free + bound) = the mean of marks 2 and 3 × 20; bound HCl = total HCl − free HCl. **Evaluation:** total acidity 40–60, free HCl 20–40, bound HCl 10–20 t.u. If there is no free HCl — **achlorhydria**; if there is neither HCl nor pepsin — **achylia**.
 s2806 Experiment 2: determination of lactic acid in gastric juice (Uffelmann reaction)
-s2807 Add to a test tube 1 ml of 1% phenol solution and 1 drop of FeCl3 (a violet color — iron phenolate).
-s2808 Add gastric juice dropwise. **Result and analysis:** if lactic acid is present, the violet color turns **yellow-green** (iron lactate). In a healthy person there is no lactic acid in the gastric juice; it appears as a result of bacterial fermentation in the absence of HCl (achylia, gastric cancer).
-s2809 Experiment 3: determination of indican in urine (Obermayer reaction)
-s2810 Pour 2 ml of urine and 2 ml of Obermayer reagent (a solution of FeCl3 in concentrated HCl) into a test tube and mix.
-s2811 Add 1 ml of chloroform, invert several times and wait for the layers to separate. **Result and analysis:** indican is hydrolyzed to indoxyl, which is oxidized to **indigo blue** and colors the chloroform layer blue. The intensity of the color corresponds to the amount of indican; a deep blue color shows that putrefaction in the intestine has increased.

@@ -1,3 +1,4 @@
+s4759 Tympanic sound only on one side
 s4760 Damoiseau line
 s4761 Elevated lung borders
 s4762 By how much does the RR exceed the norm in grade II respiratory failure?
@@ -5,10 +6,10 @@ s4763 Up to 10%
 s4764 Up to 30%
 s4765 More than 50%
 s4766 The gas change typical of ventilatory respiratory failure:
-s4767 PaO2 ↓, PaCO2 ↑
-s4768 PaO2 ↓, PaCO2 ↓
-s4769 PaO2 ↑, PaCO2 ↑
-s4770 PaO2 normal, PaCO2 ↓
+s4767 PaO~2~ ↓, PaCO~2~ ↑
+s4768 PaO~2~ ↓, PaCO~2~ ↓
+s4769 PaO~2~ ↑, PaCO~2~ ↑
+s4770 PaO~2~ normal, PaCO~2~ ↓
 s4771 No change
 s4772 After what age are spirography and pneumotachometry usually performed?
 s4773 What does the Stange test measure?
@@ -18,13 +19,13 @@ s4776 Breath-holding time after a deep inspiration
 s4777 Respiratory rate
 s4778 Blood oxygen
 s4779 The formula and normal value of the Tiffeneau index:
-s4780 FEV1 / VC × 100%, normal ≥70%
+s4780 FEV~1~ / VC × 100%, normal ≥70%
 s4781 MVV − MV, normal 70%
-s4782 FEV1 / MV, normal 50%
+s4782 FEV~1~ / MV, normal 50%
 s4783 RR × TV, normal 70%
-s4784 VC / FEV1, normal 2
+s4784 VC / FEV~1~, normal 2
 s4785 How is the breathing reserve calculated?
-s4786 VC − FEV1
+s4786 VC − FEV~1~
 s4787 FVC / VC
 s4788 MVV − MV
 s4789 TV + VC
@@ -46,7 +47,7 @@ s4804 <50% — emergency care
 s4805 ≥80% of the personal best — asthma well controlled
 s4806 The daily variability on peak flowmetry indicating bronchial hyperreactivity:
 s4807 No change
-s4808 The normal SpO2 on pulse oximetry in a healthy child and the indication for oxygen:
+s4808 The normal SpO~2~ on pulse oximetry in a healthy child and the indication for oxygen:
 s4809 94–98%; oxygen is given if <92–94%
 s4810 Increased transparency (lucency) on an X-ray is typical of which condition?
 s4811 Bronchial tumor
@@ -121,26 +122,26 @@ s4879 The border of the pneumothorax
 s4880 A 2-year-old child suddenly woke at night with a harsh “barking” cough and noisy breathing. In the evening there was a runny nose and a temperature of 37.8 °C. On examination: the child is restless, the voice is hoarse, noisy inspiration (stridor) is heard even at rest, the suprasternal area and intercostal spaces retract on inspiration, perioral cyanosis, RR 42/min, pulse 140/min. In the lungs harsh breathing, transmitted rales.
 s4881 1) Which syndrome? 2) Determine the type of dyspnea and the degree of stenosis. 3) False or true croup? Justify. 4) What are the emergency measures?
 s4882 1) Croup syndrome (acute stenosing laryngotracheitis). 2) Inspiratory dyspnea; stridor at rest, retractions and perioral cyanosis — grade II (subcompensated) stenosis. 3) False croup: against a background of ARVI, sudden onset at night, hoarse voice (not aphonia), little intoxication. 4) Calm the child, moist fresh air, budesonide inhalation or dexamethasone, adrenaline inhalation, hospitalization; do not forcibly inspect the pharynx.
-s4883 A 12-year-old adolescent complains of cough and attacks of shortness of breath; the attacks worsen in spring, during the flowering season and after playing with a cat. The mother has pollinosis. Spirography: VC — 88% of predicted, FEV1 — 62%, Tiffeneau index 58%. After salbutamol inhalation FEV1 increased by 20%. Daily variability on peak flowmetry is 28%. Blood eosinophils 9%.
+s4883 A 12-year-old adolescent complains of cough and attacks of shortness of breath; the attacks worsen in spring, during the flowering season and after playing with a cat. The mother has pollinosis. Spirography: VC — 88% of predicted, FEV~1~ — 62%, Tiffeneau index 58%. After salbutamol inhalation FEV~1~ increased by 20%. Daily variability on peak flowmetry is 28%. Blood eosinophils 9%.
 s4884 1) Determine the type of ventilatory disorder. 2) Assess the result of the bronchodilator test. 3) Presumptive diagnosis? 4) What may be found in the sputum?
-s4885 1) Obstructive type: FEV1 and the Tiffeneau index (<70%) markedly reduced, VC almost normal. 2) An increase in FEV1 of ≥12% is a sign of reversible obstruction (bronchospasm). 3) Bronchial asthma (atopic): allergen-related attacks, hereditary predisposition, reversible obstruction, PEF variability >20%, eosinophilia. 4) Eosinophils, Curschmann spirals, Charcot–Leyden crystals.
-s4886 A 3-year-old child has been treated for pneumonia for 5 days. Today the condition suddenly became much worse: restless, marked dyspnea (RR 60/min), generalized cyanosis, pulse 160/min, SpO2 84%. The right half of the chest is enlarged and does not take part in breathing. On the right vocal fremitus cannot be detected, percussion gives a tympanic sound, breath sounds are not heard. The heart sounds are shifted to the left. X-ray: on the right a lucency without lung markings, the lung collapsed toward the root, the mediastinum shifted to the left; there are destruction cavities in the lung.
+s4885 1) Obstructive type: FEV~1~ and the Tiffeneau index (<70%) markedly reduced, VC almost normal. 2) An increase in FEV~1~ of ≥12% is a sign of reversible obstruction (bronchospasm). 3) Bronchial asthma (atopic): allergen-related attacks, hereditary predisposition, reversible obstruction, PEF variability >20%, eosinophilia. 4) Eosinophils, Curschmann spirals, Charcot–Leyden crystals.
+s4886 A 3-year-old child has been treated for pneumonia for 5 days. Today the condition suddenly became much worse: restless, marked dyspnea (RR 60/min), generalized cyanosis, pulse 160/min, SpO~2~ 84%. The right half of the chest is enlarged and does not take part in breathing. On the right vocal fremitus cannot be detected, percussion gives a tympanic sound, breath sounds are not heard. The heart sounds are shifted to the left. X-ray: on the right a lucency without lung markings, the lung collapsed toward the root, the mediastinum shifted to the left; there are destruction cavities in the lung.
 s4887 1) Which complication has developed? 2) What could be its cause? 3) Determine the degree of respiratory failure. 4) Emergency measures?
-s4888 1) Right-sided pneumothorax (probably valvular — the mediastinum is shifted and the condition is very severe). 2) Destructive (most often staphylococcal) pneumonia — rupture of a bulla or abscess into the pleural cavity (it may also be pyopneumothorax). 3) Grade III RF: RR >50% above normal (25–30 at 3 years), generalized cyanosis, SpO2 <85%, marked tachycardia. 4) Oxygen, urgent pleural puncture (2nd intercostal space, midclavicular line) and drainage of the pleural cavity, transfer to the surgical department.
+s4888 1) Right-sided pneumothorax (probably valvular — the mediastinum is shifted and the condition is very severe). 2) Destructive (most often staphylococcal) pneumonia — rupture of a bulla or abscess into the pleural cavity (it may also be pyopneumothorax). 3) Grade III RF: RR >50% above normal (25–30 at 3 years), generalized cyanosis, SpO~2~ <85%, marked tachycardia. 4) Oxygen, urgent pleural puncture (2nd intercostal space, midclavicular line) and drainage of the pleural cavity, transfer to the surgical department.
 s4889 Spirography, pneumotachometry
 s4890 Fluorography
 s4891 Bronchoscopy
 s4892 Up to 3–4 years rigid bronchoscope, under anesthesia
 s4893 TV + inspiratory reserve + expiratory reserve
 s4894 MV
-s4895 FEV1 / VC ≥70%
+s4895 FEV~1~ / VC ≥70%
 s4896 Restrictive / obstructive
-s4897 VC ↓, Tiffeneau normal / FEV1, Tiffeneau ↓
+s4897 VC ↓, Tiffeneau normal / FEV~1~, Tiffeneau ↓
 s4898 Reversible obstruction
-s4899 FEV1 ↑ ≥12% after salbutamol
+s4899 FEV~1~ ↑ ≥12% after salbutamol
 s4900 PEF variability
 s4901 >20% — hyperreactivity
-s4902 Normal SpO2
+s4902 Normal SpO~2~
 s4903 94–98%; <92% — oxygen
 s4904 Asthma sputum
 s4905 Exudate
@@ -158,19 +159,19 @@ s4916 Gradual, aphonia, membrane, Loeffler's bacillus
 s4917 Obstruction
 s4918 Expiratory dyspnea, box-like sound, whistling rales
 s4919 RF cut-off
-s4920 PaO2 <80, PaCO2 >40–45 mm
+s4920 PaO~2~ <80, PaCO~2~ >40–45 mm
 s4921 Degrees of RF (RR)
 s4922 I — up to +30%; II — +30–50%; III — >50% or bradypnea
 s4923 Stange and Genche tests
 s4924 Stange — holding time after inspiration; Genche — after expiration; shortening — reduced cardiorespiratory reserve
 s4925 Spirography parameters
-s4926 TV, MV = RR × TV, VC, FVC, FEV1, Tiffeneau = FEV1/VC ×100% (≥70%), MVV, breathing reserve = MVV − MV
+s4926 TV, MV = RR × TV, VC, FVC, FEV~1~, Tiffeneau = FEV~1~/VC ×100% (≥70%), MVV, breathing reserve = MVV − MV
 s4927 Restrictive and obstructive disorder
-s4928 Restrictive: VC↓↓, Tiffeneau normal (pneumonia, pleurisy, pneumofibrosis); obstructive: FEV1↓↓, Tiffeneau <70% (asthma, obstructive bronchitis)
+s4928 Restrictive: VC↓↓, Tiffeneau normal (pneumonia, pleurisy, pneumofibrosis); obstructive: FEV~1~↓↓, Tiffeneau <70% (asthma, obstructive bronchitis)
 s4929 Peak flow meter zones
 s4930 Green ≥80%; yellow 50–80% (step up treatment); red <50% (emergency care); variability >20% — hyperreactivity
 s4931 Normal blood gases
-s4932 PaO2 80–100 mm; PaCO2 35–45 mm; pH 7.35–7.45; SpO2 94–98%
+s4932 PaO~2~ 80–100 mm; PaCO~2~ 35–45 mm; pH 7.35–7.45; SpO~2~ 94–98%
 s4933 Findings of sputum analysis
 s4934 Elastic fibers — destruction; Curschmann/Charcot–Leyden/eosinophils — asthma; rusty — lobar pneumonia; mycobacteria (Ziehl–Neelsen) — tuberculosis
 s4935 Possibilities of bronchoscopy
@@ -244,5 +245,3 @@ s5002 Table 8.2. Anatomical features of the newborn's heart
 s5003 ≈20–25 g, 0.8% of the body mass (0.4–0.5% in adults); it increases 2 times by 1 year, 3 times by 2–3 years and 10 times by 15–16 years
 s5004 Shape
 s5005 Spherical (round) — the atria are relatively large, the ventricles insufficiently developed; after 6 years oval as in adults
-s5006 Ventricles
-s5007 The walls of the right and left ventricles are almost the same thickness (1.4:1); later the left ventricle develops rapidly (3 times heavier at 16 years)

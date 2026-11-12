@@ -1,3 +1,21 @@
+s3534 Assess uric acid excretion in daily urine: high — increased synthesis (tumors, enzyme defect); low — impaired excretion (kidneys, drugs).
+s3535 Assess creatinine and kidney function.
+s3536 Take drugs (diuretics, aspirin), alcohol, diet and chemotherapy into account.
+s3537 Choose the principle of treatment: a xanthine oxidase inhibitor or a uricosuric agent.
+s3538 Skill: explaining the mechanism of action of an antimetabolite
+s3539 Determine which natural metabolite the structure of the drug resembles.
+s3540 Write down which enzyme is inhibited and which reaction is blocked.
+s3541 Show which nucleotide synthesis stops and how DNA/RNA synthesis is affected.
+s3542 Explain why rapidly dividing cells are damaged more.
+s3543 Name the adverse effects (anemia, leukopenia, mucositis) and the protective measures (with methotrexate — folinic acid, leucovorin).
+s3544 List the functions of nucleotides in the body.
+s3545 How are nucleoproteins digested?
+s3546 Which substances supply the atoms of the purine ring?
+s3547 Name the main steps of de novo purine nucleotide synthesis.
+s3548 How is the synthesis of purine nucleotides regulated?
+s3549 What is the salvage pathway and what is its importance?
+s3550 What is the biochemical basis of Lesch–Nyhan syndrome?
+s3551 How are purines broken down? What is the role of xanthine oxidase?
 s3552 What is the normal uric acid level in blood?
 s3553 List the causes of primary and secondary hyperuricemia.
 s3554 Explain the biochemical basis of the treatment of gout.
@@ -13,7 +31,7 @@ s3563 From which source are the C2 and C8 atoms of the purine ring taken?
 s3564 From N10-formyl-tetrahydrofolate
 s3565 From glycine
 s3566 From aspartate
-s3567 From CO2
+s3567 From CO~2~
 s3568 From glutamine
 s3569 Which nucleotide is formed first in de novo synthesis of purine nucleotides?
 s3570 GMP
@@ -47,7 +65,7 @@ s3597 Thymidylate synthase
 s3598 How is hereditary orotic aciduria treated?
 s3599 With allopurinol
 s3600 With folic acid
-s3601 With vitamin B12
+s3601 With vitamin B~12~
 s3602 With protein restriction
 s3603 With uridine
 s3604 Which substrates does ribonucleotide reductase reduce?
@@ -82,14 +100,14 @@ s3632 What is the diagnosis? Explain the causes of the hyperuricemia and of the 
 s3633 Acute gouty arthritis. Purine-rich food (meat) and beer (purines + alcohol) increased uric acid formation; in the metabolism of alcohol lactate accumulates and reduces urate secretion in the kidney. When uric acid exceeds the saturation limit, monosodium urate crystals precipitate in cooler peripheral joints; neutrophils engulf them and release inflammatory mediators. During an attack — colchicine, NSAIDs or glucocorticoids; afterwards, long-term — allopurinol (a xanthine oxidase inhibitor), diet, restriction of alcohol, plenty of fluid.
 s3634 In a patient with lymphoma, 2 days after chemotherapy was started the volume of urine fell sharply. Uric acid in blood is 950 µmol/l, potassium and phosphate are increased, calcium is decreased, creatinine is increased.
 s3635 What condition is this? Explain its mechanism and the measures for preventing it.
-s3636 Tumor lysis syndrome. Under the action of chemotherapy many tumor cells break down and the purines of their nucleic acids are converted into uric acid; intracellular K+ and phosphate enter the blood, and phosphate binds calcium and causes hypocalcemia. Uric acid crystallizes in the renal tubules and causes acute renal failure. Prevention: allopurinol or rasburicase before chemotherapy (it breaks uric acid down to the much more soluble allantoin), plenty of fluid (hydration), monitoring of electrolytes.
-s3637 A 1-year-old child was found to have megaloblastic anemia and growth retardation. Treatment with folate and B12 gave no effect. Orotic acid in the urine is sharply increased, ammonia in blood is normal.
-s3638 What disease is this? Why does the anemia not respond to folate and B12? What is the treatment?
-s3639 Hereditary orotic aciduria — deficiency of UMP synthase. Orotic acid is not converted into UMP and is excreted in large amounts in the urine; pyrimidine nucleotides (UTP, CTP, dTTP) are lacking, and DNA synthesis is disturbed in rapidly dividing cells (megaloblastic anemia). The disease is caused not by a deficiency of folate or B12 but by an enzyme defect, and for that reason vitamins have no effect. The normal ammonia level rules out a disturbance of the ornithine cycle. Treatment — uridine (a source of UMP and, through UTP, a feedback inhibitor of carbamoyl phosphate synthetase II).
+s3636 Tumor lysis syndrome. Under the action of chemotherapy many tumor cells break down and the purines of their nucleic acids are converted into uric acid; intracellular K^+^ and phosphate enter the blood, and phosphate binds calcium and causes hypocalcemia. Uric acid crystallizes in the renal tubules and causes acute renal failure. Prevention: allopurinol or rasburicase before chemotherapy (it breaks uric acid down to the much more soluble allantoin), plenty of fluid (hydration), monitoring of electrolytes.
+s3637 A 1-year-old child was found to have megaloblastic anemia and growth retardation. Treatment with folate and B~12~ gave no effect. Orotic acid in the urine is sharply increased, ammonia in blood is normal.
+s3638 What disease is this? Why does the anemia not respond to folate and B~12~? What is the treatment?
+s3639 Hereditary orotic aciduria — deficiency of UMP synthase. Orotic acid is not converted into UMP and is excreted in large amounts in the urine; pyrimidine nucleotides (UTP, CTP, dTTP) are lacking, and DNA synthesis is disturbed in rapidly dividing cells (megaloblastic anemia). The disease is caused not by a deficiency of folate or B~12~ but by an enzyme defect, and for that reason vitamins have no effect. The normal ammonia level rules out a disturbance of the ornithine cycle. Treatment — uridine (a source of UMP and, through UTP, a feedback inhibitor of carbamoyl phosphate synthetase II).
 s3640 Functions of nucleotides
 s3641 Monomers of nucleic acids, ATP, coenzymes, cAMP, activated compounds
 s3642 The purine ring
-s3643 Glycine, glutamine, aspartate, CO2, 2 formyl-THF
+s3643 Glycine, glutamine, aspartate, CO~2~, 2 formyl-THF
 s3644 Purine synthesis
 s3645 PRPP → (amidophosphoribosyltransferase — key) → IMP → AMP, GMP
 s3646 Salvage pathway
@@ -124,7 +142,7 @@ s3674 **glucose-6-phosphate** — glycolysis, synthesis and breakdown of glycoge
 s3675 **dihydroxyacetone phosphate (DHAP)** — the link between glycolysis and the synthesis of triacylglycerols (glycerol-3-phosphate);
 s3676 **pyruvate** — glycolysis, gluconeogenesis, alanine metabolism (ALT), formation of acetyl-CoA and oxaloacetate;
 s3677 **acetyl-CoA** — synthesis of fatty acids, ketone bodies and cholesterol, and the Krebs cycle;
-s3678 **oxaloacetate, α-ketoglutarate** — transamination with aspartate and glutamate, gluconeogenesis. **An important rule: the pyruvate dehydrogenase reaction is irreversible**, and therefore **glucose is not synthesized** from acetyl-CoA (and hence from even-chain **fatty acids**): the 2 carbons of acetyl-CoA leave the Krebs cycle as 2 CO2, and the net amount of oxaloacetate does not increase. The propionyl-CoA part of odd-chain fatty acids (through succinyl-CoA) and the **glycerol** part of triacylglycerols are converted into glucose.
+s3678 **oxaloacetate, α-ketoglutarate** — transamination with aspartate and glutamate, gluconeogenesis. **An important rule: the pyruvate dehydrogenase reaction is irreversible**, and therefore **glucose is not synthesized** from acetyl-CoA (and hence from even-chain **fatty acids**): the 2 carbons of acetyl-CoA leave the Krebs cycle as 2 CO~2~, and the net amount of oxaloacetate does not increase. The propionyl-CoA part of odd-chain fatty acids (through succinyl-CoA) and the **glycerol** part of triacylglycerols are converted into glucose.
 s3679 2. Metabolism of the nitrogen-free residue of amino acids
 s3680 After deamination the carbon skeleton of amino acids (α-keto acids) is converted into one of seven products: pyruvate, acetyl-CoA, acetoacetyl-CoA, α-ketoglutarate, succinyl-CoA, fumarate, oxaloacetate.
 s3681 Table 15.1. Classification of amino acids by their carbon skeleton
@@ -150,7 +168,7 @@ s3700 The body can synthesize **nonessential amino acids** from the intermediate
 s3701 pyruvate + transamination → **alanine**;
 s3702 oxaloacetate → **aspartate** → asparagine;
 s3703 α-ketoglutarate → **glutamate** → glutamine, proline, arginine;
-s3704 3-phosphoglycerate → **serine** → glycine, cysteine (with the sulfur of methionine). The nitrogen is taken from other amino acids or from NH3 (glutamate dehydrogenase). **Essential amino acids** (valine, leucine, isoleucine, threonine, methionine, phenylalanine, tryptophan, lysine; in children also arginine and histidine) are not formed from carbohydrates and fats — they come only from food.
+s3704 3-phosphoglycerate → **serine** → glycine, cysteine (with the sulfur of methionine). The nitrogen is taken from other amino acids or from NH~3~ (glutamate dehydrogenase). **Essential amino acids** (valine, leucine, isoleucine, threonine, methionine, phenylalanine, tryptophan, lysine; in children also arginine and histidine) are not formed from carbohydrates and fats — they come only from food.
 s3705 **Synthesis of fats from carbohydrates:** excess glucose → pyruvate → acetyl-CoA (mitochondria) → into the cytosol in the form of citrate → synthesis of fatty acids; NADPH from the pentose phosphate pathway and from malic enzyme; glycerol-3-phosphate from DHAP. For this reason food rich in carbohydrates leads to obesity.
 s3706 5. Hormonal regulation of metabolism
 s3707 Table 15.2. The main metabolic effects of hormones
@@ -201,9 +219,5 @@ s3751 Protein synthesis ↓, breakdown ↑
 s3752 Negative nitrogen balance, urea ↑, wasting, slow healing of wounds
 s3753 Water and electrolytes
 s3754 Osmotic diuresis
-s3755 Dehydration, loss of K+
-s3756 **Mechanisms of the late complications:** **nonenzymatic glycosylation** of proteins (HbA1c, collagen, the basement membrane — microangiopathy, nephropathy, retinopathy); the **polyol pathway** — aldose reductase converts glucose into sorbitol (the lens of the eye, the nerves — cataract, neuropathy); oxidative stress.
-s3757 **HbA~1c~** (glycated hemoglobin) reflects the mean glycemia of the last 2–3 months (erythrocyte lifespan ≈ 120 days): normal < 6.0%; ≥ 6.5% — diagnostic criterion of diabetes mellitus. **Fructosamine** (glycated albumin) reflects the last 2–3 weeks.
-s3758 8. Metabolic syndrome
-s3759 **Metabolic syndrome** is a cluster of interrelated factors that develops on the basis of insulin resistance: **abdominal obesity** (waist circumference: men > 94 cm, women > 80 cm), **arterial hypertension** (≥ 130/85 mm Hg), **hyperglycemia** (fasting ≥ 5.6 mmol/l), **hypertriglyceridemia** (≥ 1.7 mmol/l), **decreased HDL cholesterol** (men < 1.0, women < 1.3 mmol/l). The diagnosis is made if three of them are present.
-s3760 **Biochemical basis:** visceral adipose tissue releases many free fatty acids and inflammatory cytokines (TNF-α, IL-6), and adiponectin decreases → insulin signaling in muscle and liver is impaired (IRS-1 phosphorylation) → compensatory hyperinsulinemia. In the liver VLDL synthesis increases (hypertriglyceridemia, small dense LDL) and HDL decreases. Hyperinsulinemia increases renal Na+ reabsorption and sympathetic activity (hypertension). Complications: type 2 diabetes mellitus, atherosclerosis, coronary heart disease, nonalcoholic fatty liver disease, gout, polycystic ovary syndrome.
+s3755 Dehydration, loss of K^+^
+s3756 **Mechanisms of the late complications:** **nonenzymatic glycosylation** of proteins (HbA~1c~, collagen, the basement membrane — microangiopathy, nephropathy, retinopathy); the **polyol pathway** — aldose reductase converts glucose into sorbitol (the lens of the eye, the nerves — cataract, neuropathy); oxidative stress.

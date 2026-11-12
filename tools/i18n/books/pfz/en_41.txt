@@ -1,3 +1,21 @@
+s8100 ACTH ↓, cortisol ↑
+s8101 ACTH ↑, cortisol ↓
+s8102 What is the cause of striae and muscle atrophy in hypercortisolism?
+s8103 Increased lipogenesis
+s8104 Increased thyroid hormones
+s8105 Increased protein catabolism
+s8106 Sodium retention
+s8107 Which are the signs of Conn syndrome?
+s8108 Hypotension, hyperkalemia, increased renin
+s8109 Hypoglycemia, hyperpigmentation
+s8110 Tetany, hypocalcemia
+s8111 Polyuria, hypernatremia, hypotension
+s8112 Hypertension, hypokalemia, decreased renin
+s8113 What is the cause of hyperpigmentation in Addison disease?
+s8114 A hereditary defect of melanin synthesis
+s8115 Increased ACTH and melanocyte-stimulating hormone due to decreased cortisol
+s8116 Ultraviolet radiation
+s8117 What is the cause of increased androgens in adrenogenital syndrome (21-hydroxylase deficiency)?
 s8118 Decreased cortisol with increased ACTH and hyperplasia of the adrenal cortex
 s8119 A gonadal tumor
 s8120 Increased LH
@@ -33,12 +51,12 @@ s8149 Prolactin ↓ only
 s8150 Over the last 2 years a 38-year-old woman has gained weight, mainly on the face and abdomen, while her arms and legs have become thinner. Broad purple-red striae on the abdominal skin, a round, flushed face, increased hair growth, menstrual disturbance. BP 165/100 mm Hg, blood glucose 8.2 mmol/l, potassium slightly decreased, lymphopenia. Cortisol high, ACTH high. A low dose of dexamethasone does not suppress cortisol, but a high dose does. MRI: a pituitary microadenoma.
 s8151 What is the disease? Determine the level of the disorder. Explain the pathogenesis of the main signs.
 s8152 Cushing disease — central (pituitary) hypercortisolism: a pituitary corticotroph adenoma produces excess ACTH, which stimulates both adrenal cortices (cortisol and ACTH both raised; the adenoma is partly sensitive to feedback — a high dose of dexamethasone suppresses it). Centripetal obesity — different sensitivity of adipose tissue in different regions to cortisol and insulin; striae, thin skin, thin limbs — protein catabolism; steroid diabetes — increased gluconeogenesis and insulin resistance; hypertension and hypokalemia — the mineralocorticoid effect of cortisol and increased vascular sensitivity; lymphopenia — immunosuppression; hirsutism and menstrual disturbance — increased adrenal androgens under the action of ACTH.
-s8153 A 42-year-old man has weakness, fatigue, weight loss, lack of appetite, dizziness and a craving for salty food. The skin, especially the palmar creases and elbows, and the oral mucosa are dark brown. BP 90/55 mm Hg. Blood: Na+ 128, K+ 5.9 mmol/l, glucose 3.2 mmol/l, cortisol low, ACTH sharply raised, antibodies to the adrenal cortex positive.
+s8153 A 42-year-old man has weakness, fatigue, weight loss, lack of appetite, dizziness and a craving for salty food. The skin, especially the palmar creases and elbows, and the oral mucosa are dark brown. BP 90/55 mm Hg. Blood: Na^+^ 128, K^+^ 5.9 mmol/l, glucose 3.2 mmol/l, cortisol low, ACTH sharply raised, antibodies to the adrenal cortex positive.
 s8154 What is the disease? What is the level of the disorder? How did the hyperpigmentation, hypotension, electrolyte disturbances and hypoglycemia develop?
 s8155 Primary chronic adrenocortical insufficiency (Addison disease), autoimmune adrenalitis. The gland itself is destroyed — cortisol is low and, through feedback, ACTH is sharply raised (primary level). ACTH and melanocyte-stimulating hormone are formed from a common precursor — proopiomelanocortin; their increase stimulates melanocytes — hyperpigmentation. Aldosterone deficiency leads to loss of sodium and water (hyponatremia, hypovolemia, hypotension) and potassium retention (hyperkalemia); craving for salt — sodium deficiency. In cortisol deficiency gluconeogenesis decreases — hypoglycemia; vascular sensitivity to catecholamines falls — hypotension worsens. With stress, infection or surgery an Addisonian crisis (collapse) may develop — the patient needs lifelong hormone replacement therapy.
-s8156 A 29-year-old woman has had palpitations, sweating, hand tremor, nervousness and insomnia for several months, and has lost 8 kg despite a good appetite; diarrhea. Her eyes are protruding and the thyroid gland is diffusely enlarged. Pulse 120 beats/min, BP 150/70 mm Hg. Blood: free T4 and T3 sharply raised, TSH very low, antibodies to TSH receptors positive.
+s8156 A 29-year-old woman has had palpitations, sweating, hand tremor, nervousness and insomnia for several months, and has lost 8 kg despite a good appetite; diarrhea. Her eyes are protruding and the thyroid gland is diffusely enlarged. Pulse 120 beats/min, BP 150/70 mm Hg. Blood: free T~4~ and T~3~ sharply raised, TSH very low, antibodies to TSH receptors positive.
 s8157 What is the disease? Explain its pathogenesis. What is the mechanism of the weight loss, tachycardia and large pulse pressure?
-s8158 Diffuse toxic goiter (Graves–Basedow disease). Autoantibodies that stimulate the TSH receptors continuously stimulate the gland in place of TSH — the gland enlarges diffusely and produces excess hormones; excess T3 and T4 suppress TSH through feedback (primary hyperfunction). Exophthalmos — autoimmune inflammation of the orbital tissues. Thyroid hormones increase basal metabolism (Na+/K+-ATPase activity, partial uncoupling of oxidation and phosphorylation, heat production) and enhance protein and fat catabolism — weight loss despite a good appetite, sweating. The number and sensitivity of beta-adrenoceptors increase — tachycardia, tremor, nervousness; stroke volume increases (systolic pressure rises) and peripheral vessels dilate (diastolic pressure falls) — large pulse pressure. Intestinal peristalsis accelerates — diarrhea.
+s8158 Diffuse toxic goiter (Graves–Basedow disease). Autoantibodies that stimulate the TSH receptors continuously stimulate the gland in place of TSH — the gland enlarges diffusely and produces excess hormones; excess T~3~ and T~4~ suppress TSH through feedback (primary hyperfunction). Exophthalmos — autoimmune inflammation of the orbital tissues. Thyroid hormones increase basal metabolism (Na^+^/K^+^-ATPase activity, partial uncoupling of oxidation and phosphorylation, heat production) and enhance protein and fat catabolism — weight loss despite a good appetite, sweating. The number and sensitivity of beta-adrenoceptors increase — tachycardia, tremor, nervousness; stroke volume increases (systolic pressure rises) and peripheral vessels dilate (diastolic pressure falls) — large pulse pressure. Intestinal peristalsis accelerates — diarrhea.
 s8159 Hierarchy
 s8160 Hypothalamus → pituitary → peripheral gland → target tissue
 s8161 Negative feedback
@@ -116,7 +134,7 @@ s8232 **Erectile (excitation) stage** — short (minutes), especially marked in 
 s8233 **Torpid (inhibition) stage** — inhibition of the CNS: the patient is apathetic, immobile and shows no interest in the surroundings, BP decreased, pulse rapid and weak (thready), skin pale-gray, cold sweat, oliguria.
 s8234 Stages by circulatory changes:
 s8235 **Compensated shock** — under the action of catecholamines, angiotensin II and vasopressin the vessels of the skin, muscles and internal organs (intestine, kidney) constrict and blood is directed mainly to the brain and heart — **centralization of the circulation**; BP is maintained.
-s8236 **Decompensated (progressive) shock** — with prolonged ischemia, lactate, H+, adenosine and histamine accumulate in the tissues; the **precapillary sphincters**, being sensitive to them, relax, while the **postcapillary venules** remain constricted — blood enters the capillaries but cannot leave (**stasis**, “sequestration”); hydrostatic pressure rises and plasma leaks into the tissue, the blood thickens, erythrocytes aggregate (**sludge**) and DIC develops. Venous return decreases and BP falls — **decentralization**: the brain and heart also become ischemic.
+s8236 **Decompensated (progressive) shock** — with prolonged ischemia, lactate, H^+^, adenosine and histamine accumulate in the tissues; the **precapillary sphincters**, being sensitive to them, relax, while the **postcapillary venules** remain constricted — blood enters the capillaries but cannot leave (**stasis**, “sequestration”); hydrostatic pressure rises and plasma leaks into the tissue, the blood thickens, erythrocytes aggregate (**sludge**) and DIC develops. Venous return decreases and BP falls — **decentralization**: the brain and heart also become ischemic.
 s8237 **Irreversible shock** — cells die en masse, and lysosomal enzymes, myocardial depressant factor (formed in pancreatic ischemia) and endotoxins (which enter the blood when the intestinal barrier fails) accumulate; treatment is ineffective.
 s8238 **Shock index (Allgöwer index)** = pulse / systolic BP. Normally about 0.5–0.7; around 1.0 — moderately severe shock (about 20–30 percent of blood volume lost); 1.5 or higher — severe shock.
 s8239 Some types of shock
@@ -141,14 +159,3 @@ s8257 Excitation in the erectile stage, inhibition in the torpid stage
 s8258 Often clouded, or fainting
 s8259 Microcirculation and multiple organ failure
 s8260 Main pathogenetic link
-s8261 Usually does not develop quickly
-s8262 Prognosis
-s8263 Serious; urgent care is needed
-s8264 Usually recovers quickly if the cause is removed
-s8265 4. Coma
-s8266 **Coma** — an extremely severe state resulting from profound inhibition of the CNS, with complete loss of consciousness, weakening or loss of responses to external stimuli, and disturbed reflexes and regulation of vital functions (respiration, circulation).
-s8267 Table 27.3. Types of coma
-s8268 Primary cerebral comas
-s8269 Traumatic, stroke (hemorrhagic, ischemic), tumors, meningitis and encephalitis, epileptic
-s8270 Endocrine comas
-s8271 Diabetic ketoacidotic, hyperosmolar, lactic acidotic, hypoglycemic (topic 10), hypothyroid (myxedema), adrenal (Addisonian crisis), thyrotoxic crisis

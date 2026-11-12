@@ -1057,7 +1057,7 @@
         const txt = plain(h.x.text);
         const raw2 = txt.slice(Math.max(0, h.pos - 50), h.pos + terms[0].length + 90);
         const href = `#/fan/${esc(h.x.sid)}/${esc(h.x.t.id)}${h.x.tab ? "?" + h.x.tab + (h.x.i != null ? "&s=" + h.x.i : "") + "&q=" + encodeURIComponent(terms.join(" ")) : ""}`;
-        return `<a class="result" href="${href}"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${esc(h.x.where || h.x.t.title)}</strong>
+        return `<a class="result" href="${href}"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${h.x.where ? inline(h.x.where) : esc(h.x.t.title)}</strong>
           <div class="small muted">${esc(h.x.abbr)} · …${hl(raw2, terms)}…</div></a>`;
       }).join("");
     };
@@ -1404,7 +1404,7 @@
         out.innerHTML = hits.length ? hits.slice(0, 20).map((h) => {
           const txt = plain(h.x.text), snip = txt.slice(Math.max(0, h.pos - 50), h.pos + terms[0].length + 90);
           const href = `#/fan/${esc(h.x.sid)}/${esc(h.x.t.id)}${h.x.tab ? "?" + h.x.tab + (h.x.i != null ? "&s=" + h.x.i : "") + "&q=" + encodeURIComponent(terms.join(" ")) : ""}`;
-          return `<a class="result" href="${href}" data-x="close"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${esc(h.x.where || h.x.t.title)}</strong><div class="small muted">${esc(h.x.abbr)} · …${hl(snip, terms)}…</div></a>`;
+          return `<a class="result" href="${href}" data-x="close"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${h.x.where ? inline(h.x.where) : esc(h.x.t.title)}</strong><div class="small muted">${esc(h.x.abbr)} · …${hl(snip, terms)}…</div></a>`;
         }).join("") : `<p class="small muted">“${esc(raw)}” bo‘yicha hech narsa topilmadi.</p>`;
       }
     };

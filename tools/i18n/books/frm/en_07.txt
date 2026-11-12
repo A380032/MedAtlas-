@@ -1,3 +1,5 @@
+s1347 Css
+s1348 The state in which intake and elimination are balanced
 s1349 Figure 3.5
 s1350 Change in plasma concentration with repeated use: steady state and the therapeutic window (compiler's diagram)
 s1351 **Loading dose** — a large initial dose for drugs with a long t½ (amiodarone, digoxin) to reach Css quickly: **Dload = Css × Vd / F**. **Maintenance dose** — to maintain Css: **Dmaint = Css × Cl × τ / F** (τ — dosing interval).
@@ -28,9 +30,9 @@ s1375 Etiotropic, pathogenetic, symptomatic, replacement, preventive
 s1376 Antibiotic — etiotropic; insulin — replacement; analgesic — symptomatic
 s1377 3.2. Molecular targets of drug action
 s1378 **Receptors** — specialized proteins that bind endogenous ligands (mediators, hormones).
-s1379 **Ion channels** — local anesthetics (Na+ channels), calcium antagonists (L-type Ca2+ channels), sulfonylureas (ATP-dependent K+ channels).
+s1379 **Ion channels** — local anesthetics (Na^+^ channels), calcium antagonists (L-type Ca^2+^ channels), sulfonylureas (ATP-dependent K^+^ channels).
 s1380 **Enzymes** — NSAIDs (cyclooxygenase), ACE inhibitors, neostigmine (acetylcholinesterase), statins (HMG-CoA reductase).
-s1381 **Transport systems** — omeprazole (H+/K+-ATPase), digoxin (Na+/K+-ATPase), furosemide (Na+-K+-2Cl– cotransporter), antidepressants (serotonin and norepinephrine reuptake).
+s1381 **Transport systems** — omeprazole (H^+^/K^+^-ATPase), digoxin (Na^+^/K^+^-ATPase), furosemide (Na^+^-K^+^-2Cl– cotransporter), antidepressants (serotonin and norepinephrine reuptake).
 s1382 **Nucleic acids and other targets** — cytostatics (DNA), antacids (chemical neutralization), osmotic diuretics (physicochemical action).
 s1383 Figure 3.6
 s1384 The four main types of receptors: I — ion channel; II — G protein-coupled; III — enzymatic (tyrosine kinase); IV — intracellular (nuclear) receptors (teaching material of the TMA Department of Pharmacology)
@@ -40,10 +42,10 @@ s1387 Mechanism
 s1388 I. Ionotropic (ion channel)
 s1389 Milliseconds
 s1390 The channel opens when the ligand binds
-s1391 N-cholinergic receptor, GABA-A, NMDA, 5-HT3
+s1391 N-cholinergic receptor, GABA-A, NMDA, 5-HT~3~
 s1392 II. G protein-coupled (metabotropic)
 s1393 Seconds
-s1394 Gs (adenylate cyclase ↑, cAMP ↑), Gi (cAMP ↓), Gq (phospholipase C ↑, IP3, Ca2+ ↑)
+s1394 G~s~ (adenylate cyclase ↑, cAMP ↑), G~i~ (cAMP ↓), G~q~ (phospholipase C ↑, IP~3~, Ca^2+^ ↑)
 s1395 M-cholinergic, adrenergic, opioid, histamine and dopamine receptors
 s1396 III. Enzymatic (kinase-linked)
 s1397 Minutes
@@ -70,7 +72,7 @@ s1417 Antagonist (blocker)
 s1418 Atropine, naloxone, propranolol
 s1419 Inverse agonist
 s1420 Negative (reduces basal activity)
-s1421 Some H1 blockers and beta-blockers
+s1421 Some H~1~ blockers and beta-blockers
 s1422 Agonist-antagonist
 s1423 Agonist at one receptor, antagonist at another
 s1424 Butorphanol, pentazocine (kappa agonist, mu antagonist)
@@ -211,7 +213,7 @@ s1558 Less stable in solution
 s1559 Stable, can be autoclaved
 s1560 **Mechanism of action.** Local anesthetics block the **voltage-gated sodium channels** of the nerve fiber membrane from the inside. Sodium ions stop entering the cell, no action potential is generated, and impulse conduction is blocked.
 s1561 Figure 3.10
-s1562 Effect of anesthetics on conduction of excitation along a nerve fiber: A — normal Na+ entry; B — anesthetic molecules block the sodium channels (teaching material of the TMA Department of Pharmacology)
+s1562 Effect of anesthetics on conduction of excitation along a nerve fiber: A — normal Na^+^ entry; B — anesthetic molecules block the sodium channels (teaching material of the TMA Department of Pharmacology)
 s1563 Important details of the mechanism:
 s1564 The anesthetic crosses the membrane **in the non-ionized (base) form**, and inside the cell it blocks the channel **in the ionized (cationic) form**.
 s1565 In inflamed tissue (pus), the medium is **acidic**, the anesthetic is more ionized and crosses the membrane poorly — anesthesia is **weak**.
@@ -232,5 +234,3 @@ s1579 Procaine (0.25–0.5%), lidocaine (0.25–0.5%), articaine
 s1580 Conduction (regional, nerve and plexus block)
 s1581 Injection around a nerve trunk or plexus
 s1582 Lidocaine (1–2%), articaine (in dentistry), bupivacaine, ropivacaine
-s1583 Spinal (subarachnoid)
-s1584 Into the cerebrospinal fluid (below L2–L3)

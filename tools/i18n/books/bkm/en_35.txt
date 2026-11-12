@@ -1,3 +1,35 @@
+s6722 **Types of reactions:** aliphatic and aromatic hydroxylation, epoxidation, N-, O- and S-dealkylation, deamination, N- and S-oxidation, dehalogenation.
+s6723 **Toxic activation (lethal synthesis):** some substances become more toxic under the action of P450: benzo(a)pyrene → diol epoxide (a carcinogen, topic 19), paracetamol → NAPQI, CCl~4~ → trichloromethyl radical (lipid peroxidation, liver necrosis), methanol → formaldehyde → formic acid (blindness, acidosis), ethylene glycol → oxalate (kidney).
+s6724 **Difference from mitochondrial oxidation:** microsomal oxidation does not produce ATP (energy is consumed — NADPH), has low substrate specificity and is inducible.
+s6725 3. Conjugation reactions
+s6726 Table 26.1. Phase II — conjugation reactions
+s6727 Donor (activated form)
+s6728 Substrates (examples)
+s6729 Glucuronidation (the most common)
+s6730 UDP-glucuronosyltransferases (UGT)
+s6731 Bilirubin, steroid hormones, paracetamol, morphine, phenols
+s6732 Sulfation
+s6733 PAPS (3’-phosphoadenosine-5’-phosphosulfate)
+s6734 Sulfotransferases
+s6735 Phenol, cresol, indoxyl, steroids, paracetamol, catecholamines
+s6736 Glutathione (GSH)
+s6737 Glutathione S-transferases
+s6738 Electrophilic substances, epoxides, NAPQI, heavy metals → mercapturic acids (in the urine)
+s6739 N-acetyltransferases (NAT2)
+s6740 Isoniazid, sulfonamides, procainamide, hydralazine, aromatic amines
+s6741 Methyltransferases (COMT, TPMT)
+s6742 Catecholamines, histamine, 6-mercaptopurine, nicotinamide
+s6743 With amino acids
+s6744 Glycine, taurine, glutamine (the substrate is activated as acyl-CoA)
+s6745 Acyltransferases
+s6746 Benzoic acid → hippuric acid; bile acids; phenylacetate → phenylacetylglutamine
+s6747 4. Detoxification of intestinal putrefaction products
+s6748 In the colon, undigested proteins and unabsorbed amino acids **putrefy** under the action of microorganisms (decarboxylation, deamination, breakdown of the side chain). The toxic substances formed are absorbed and reach the liver via the portal vein.
+s6749 Table 26.2. Putrefaction products and their detoxification
+s6750 Toxic product
+s6751 Detoxification in the liver
+s6752 Indole, skatole (methylindole)
+s6753 Oxidation (P450) → indoxyl, skatoxyl → conjugation with PAPS or UDP-glucuronic acid → indoxyl sulfate (potassium salt — animal indican), skatoxyl sulfate → urine
 s6754 Phenol, cresol
 s6755 Sulfate or glucuronide conjugates → urine
 s6756 Lysine, ornithine
@@ -13,7 +45,7 @@ s6765 **Bilirubin** — glucuronidation (topic 25).
 s6766 **Steroid hormones:** the cortisol ring is reduced and conjugated with glucuronic acid (17-hydroxycorticosteroids in the urine); androgens — 17-ketosteroids (sulfate and glucuronide conjugates); estrogens — hydroxylation, methylation, glucuronidation (enterohepatic circulation).
 s6767 **Catecholamines** — catechol-O-methyltransferase (COMT) and monoamine oxidase (MAO) → vanillylmandelic acid (VMA).
 s6768 **Peptide hormones** (insulin, glucagon, somatotropin) — proteolysis (insulinase); ≈ 50% of insulin is degraded in the liver on first pass.
-s6769 **Thyroid hormones** — deiodination, glucuronidation, sulfation. **Clinical importance:** in liver cirrhosis the inactivation of estrogens decreases — gynecomastia in men, “spider angiomas”, palmar erythema; the inactivation of aldosterone decreases — retention of Na+ and water (ascites); the breakdown of insulin decreases.
+s6769 **Thyroid hormones** — deiodination, glucuronidation, sulfation. **Clinical importance:** in liver cirrhosis the inactivation of estrogens decreases — gynecomastia in men, “spider angiomas”, palmar erythema; the inactivation of aldosterone decreases — retention of Na^+^ and water (ascites); the breakdown of insulin decreases.
 s6770 **Age-related features:** in newborns P450 and UGT activity is low (chloramphenicol — the “gray baby syndrome”, physiological jaundice); in children some P450s are more active; in the elderly liver mass, blood flow and phase I reactions decrease — drug doses must be reduced.
 s6771 6. Biotransformation of drugs and the factors that affect it
 s6772 **Influencing factors:** age, sex (pregnancy), genetic polymorphism, liver and kidney diseases, nutrition (protein deficiency decreases P450; aromatic hydrocarbons in grilled meat induce CYP1A2), smoking (CYP1A2 induction), alcohol (CYP2E1 induction), other drugs (induction and inhibition), circadian rhythm.
@@ -34,7 +66,7 @@ s6786 Because of pharmacogenetic polymorphism, people are divided into **poor**,
 s6787 **CYP2D6** — poor metabolizers (≈ 7% in Europe): toxicity of β-blockers and antidepressants, codeine is ineffective (not converted to morphine); in **ultrarapid** metabolizers (many gene copies), codeine is converted to large amounts of morphine and depresses the respiratory center (deaths in children).
 s6788 **CYP2C19** — in poor metabolizers **clopidogrel** is not activated (risk of thrombosis); proton pump inhibitors act more strongly.
 s6789 **CYP2C9** and **VKORC1** — the dose of **warfarin** is chosen according to the genotype.
-s6790 **NAT2** — in slow acetylators, isoniazid polyneuropathy (protection with B6), and lupus-like syndrome with hydralazine and procainamide.
+s6790 **NAT2** — in slow acetylators, isoniazid polyneuropathy (protection with B~6~), and lupus-like syndrome with hydralazine and procainamide.
 s6791 **TPMT** — in its deficiency 6-mercaptopurine and azathioprine cause severe bone marrow suppression — genotyping before treatment is recommended.
 s6792 **UGT1A1*28** (Gilbert) — irinotecan toxicity.
 s6793 **Pseudocholinesterase** — in the atypical variant suxamethonium causes prolonged apnea.
@@ -43,9 +75,9 @@ s6795 8. Detoxification of ethanol in the liver
 s6796 Figure 26.2
 s6797 Pathways of ethanol metabolism and its metabolic consequences (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
 s6798 ≈ 90% of ethanol is oxidized in the liver (2–10% is excreted unchanged by the lungs and in the urine); the rate is ≈ 7–10 g/hour (0.1–0.15‰ per hour).
-s6799 **Alcohol dehydrogenase (ADH)** — cytosol, NAD+; the main pathway (also a small amount in the stomach; women have less gastric ADH).
-s6800 **The microsomal ethanol-oxidizing system (MEOS) — CYP2E1** — NADPH, O2; it is induced 5–10 times by chronic drinking (“tolerance”); it generates free radicals and alters the metabolism of paracetamol and other drugs.
-s6801 **Catalase** — in peroxisomes, with H2O2 (of little importance). **Acetaldehyde** is the most toxic intermediate: adducts with proteins, DNA and phospholipids, damage to microtubules, depletion of glutathione. **Aldehyde dehydrogenase (ALDH)** oxidizes it to acetate: **ALDH2** — mitochondrial, low Km, the main one; ALDH1 — cytosolic.
+s6799 **Alcohol dehydrogenase (ADH)** — cytosol, NAD^+^; the main pathway (also a small amount in the stomach; women have less gastric ADH).
+s6800 **The microsomal ethanol-oxidizing system (MEOS) — CYP2E1** — NADPH, O~2~; it is induced 5–10 times by chronic drinking (“tolerance”); it generates free radicals and alters the metabolism of paracetamol and other drugs.
+s6801 **Catalase** — in peroxisomes, with H~2~O~2~ (of little importance). **Acetaldehyde** is the most toxic intermediate: adducts with proteins, DNA and phospholipids, damage to microtubules, depletion of glutathione. **Aldehyde dehydrogenase (ALDH)** oxidizes it to acetate: **ALDH2** — mitochondrial, low K~m~, the main one; ALDH1 — cytosolic.
 s6802 The **ALDH2*2** (Glu487Lys) variant occurs in ≈ 40% of the East Asian population: the enzyme is almost inactive, and after alcohol acetaldehyde accumulates and causes facial flushing, tachycardia and nausea (a protective factor, but the risk of esophageal cancer increases). **Disulfiram**, by inhibiting ALDH, causes the same reaction — it is used in the treatment of alcoholism; metronidazole and some cephalosporins also have a disulfiram-like effect.
 s6803 **Acetate** is converted to acetyl-CoA in various tissues.
 s6804 **The metabolic consequences of alcohol** are mainly due to an **increase in the NADH/NAD^+^ ratio** in the cytosol and mitochondria:
@@ -53,7 +85,7 @@ s6805 pyruvate is converted to lactate — **lactic acidosis**; lactate competes
 s6806 gluconeogenesis stops (pyruvate and oxaloacetate are reduced) — **hypoglycemia** when drinking on an empty stomach (dangerous, especially in children and diabetic patients);
 s6807 β-oxidation and the Krebs cycle slow down, and the synthesis of glycerol-3-phosphate and fatty acids increases — triacylglycerols accumulate: **fatty liver**, hyperlipidemia;
 s6808 a lot of acetyl-CoA and little oxaloacetate — **alcoholic ketoacidosis**;
-s6809 in chronic drinking: CYP2E1 induction, oxidative stress, activation of stellate cells — **alcoholic hepatitis** and **cirrhosis**; deficiency of thiamine (Wernicke–Korsakoff), folate and B6; pancreatitis; in methanol and ethylene glycol poisoning ethanol acts as an **antidote** as a competitive substrate for ADH (fomepizole — an ADH inhibitor). **Markers of chronic alcoholism:** GGT ↑, AST/ALT > 2, MCV ↑ (macrocytosis), **carbohydrate-deficient transferrin** (CDT) ↑, triacylglycerols and uric acid ↑.
+s6809 in chronic drinking: CYP2E1 induction, oxidative stress, activation of stellate cells — **alcoholic hepatitis** and **cirrhosis**; deficiency of thiamine (Wernicke–Korsakoff), folate and B~6~; pancreatitis; in methanol and ethylene glycol poisoning ethanol acts as an **antidote** as a competitive substrate for ADH (fomepizole — an ADH inhibitor). **Markers of chronic alcoholism:** GGT ↑, AST/ALT > 2, MCV ↑ (macrocytosis), **carbohydrate-deficient transferrin** (CDT) ↑, triacylglycerols and uric acid ↑.
 s6810 Experiment 1: determination of hippuric acid in urine (assessment of the detoxifying function of the liver — based on the Quick–Pytel test)
 s6811 **Principle of the method:** the liver conjugates benzoic acid with glycine and converts it into **hippuric acid**. The amount of hippuric acid excreted in the urine after a sodium benzoate load reflects the conjugating activity of the liver. Hippuric acid crystallizes in an acidic medium.
 s6812 The subject drinks 4 g of sodium benzoate dissolved in 30 ml of water on an empty stomach (for teaching purposes a prepared urine sample is used).
@@ -73,8 +105,8 @@ s6825 Recommend clinical measures: dose adjustment, choice of another drug, ther
 s6826 Skill: assessing the metabolic effects of alcohol by laboratory parameters
 s6827 Assess GGT, the AST/ALT ratio, MCV and CDT.
 s6828 Check lactate, glucose, ketone bodies, uric acid and triacylglycerols.
-s6829 Link each change to the increase in the NADH/NAD+ ratio.
-s6830 State the risk of vitamin deficiencies (B1, folate) and their prevention.
+s6829 Link each change to the increase in the NADH/NAD^+^ ratio.
+s6830 State the risk of vitamin deficiencies (B~1~, folate) and their prevention.
 s6831 What are xenobiotics and what is the aim of their detoxification?
 s6832 Describe the phases of biotransformation.
 s6833 What is the composition of the microsomal oxidation system?
@@ -89,7 +121,7 @@ s6841 Which factors affect drug biotransformation?
 s6842 Give examples of P450 inducers and inhibitors and explain their clinical importance.
 s6843 Give examples of pharmacogenetic polymorphisms.
 s6844 How is ethanol metabolized? What is the importance of the ALDH2 polymorphism?
-s6845 Explain the metabolic consequences of alcohol in relation to the NADH/NAD+ ratio.
+s6845 Explain the metabolic consequences of alcohol in relation to the NADH/NAD^+^ ratio.
 s6846 What is the electron donor in microsomal oxidation?
 s6847 Ascorbate
 s6848 Which P450 isoform metabolizes about half of all drugs?
@@ -121,7 +153,7 @@ s6873 Alcohol dehydrogenase
 s6874 Aldehyde dehydrogenase
 s6875 Which enzyme does disulfiram inhibit?
 s6876 What causes hypoglycemia after drinking alcohol on an empty stomach?
-s6877 NADH/NAD+ rises and gluconeogenesis stops
+s6877 NADH/NAD^+^ rises and gluconeogenesis stops
 s6878 Insulin secretion increases
 s6879 Glycogen synthesis is enhanced
 s6880 Glucose is not absorbed in the intestine
@@ -139,8 +171,3 @@ s6891 Carbohydrate-deficient transferrin (CDT)
 s6892 A 19-year-old girl in a depressed state took 20 tablets of paracetamol (10 g). On the first day she had no complaints other than nausea. On day 3 jaundice and pain under the right costal margin appeared: ALT 6800 U/l, AST 5200 U/l, bilirubin 85 µmol/l, INR 3.8.
 s6893 What is the biochemical mechanism of the liver damage? Why did the symptoms appear late? How does the antidote act?
 s6894 At a therapeutic dose paracetamol is detoxified mainly by glucuronidation and sulfation; a small part is converted by CYP2E1 into reactive NAPQI, which is immediately bound by glutathione. At a high dose the conjugation pathways become saturated, a lot of NAPQI is formed and the glutathione in hepatocytes is exhausted; NAPQI binds covalently to the cysteine residues of proteins, damages the mitochondria and causes oxidative stress — necrosis of the cells in the center of the liver lobules (where CYP2E1 is abundant). The necrosis and its signs (a sharp rise in ALT, impaired synthesis — INR) develop within 24–72 hours; the early period is almost asymptomatic, which makes it dangerous. The antidote is N-acetylcysteine: a source of cysteine for glutathione synthesis, and it binds NAPQI directly; it is most effective when given early (within 8–10 hours). The patient also needs psychiatric care.
-s6895 A 28-year-old woman with tuberculosis who is taking rifampicin became pregnant even though she was taking an oral contraceptive. In addition, she takes warfarin, and her INR has fallen to 1.3 (target 2–3).
-s6896 How do you explain these situations? What is the mechanism? What measures should be taken?
-s6897 Rifampicin is a potent P450 inducer: through the nuclear receptor PXR it enhances the synthesis of CYP3A4, CYP2C9 and other enzymes, as well as UGT and P-glycoprotein. As a result, the estrogens and progestins of the contraceptive (CYP3A4) are broken down rapidly and their blood concentration falls below the effective level — contraception fails. Warfarin (its S-enantiomer via CYP2C9) is metabolized rapidly — the anticoagulant effect decreases (INR fell, risk of thrombosis). Measures: barrier methods of contraception during treatment and for 4 weeks after it ends; increasing the warfarin dose under INR control (and reducing the dose again after rifampicin is stopped, as the induction wears off over 2 weeks — otherwise there is a risk of bleeding).
-s6898 A 50-year-old man has been drinking large amounts of alcohol for 20 years. He was brought in confused after heavy drinking on an empty stomach in the morning. Blood glucose 2.1 mmol/l, lactate 5.8 mmol/l, β-hydroxybutyrate 4.5 mmol/l, uric acid 560 µmol/l, triacylglycerols 4.8 mmol/l, GGT 420 U/l, MCV 104 fl.
-s6899 Explain all the biochemical changes in relation to alcohol metabolism.

@@ -61,11 +61,11 @@ s5668	III da chuqur
 s5669	Doimiy emas
 s5670	QRS
 s5671	III tarmoqda kertikli bo‘lishi mumkin; o‘ng ko‘krak tarmoqlarida baland R, chuqur S
-s5672	III da M yoki W shaklida bo‘lishi mumkin; V1–2 da R past, V5–6 da baland
+s5672	III da M yoki W shaklida bo‘lishi mumkin; V~1–2~ da R past, V~5–6~ da baland
 s5673	T tishchasi
-s5674	V1–V4 da past, ikki fazali yoki manfiy
-s5675	V1–V3 da manfiy
-s5676	V1–V3 (III) da manfiy bo‘lishi mumkin
+s5674	V~1~–V~4~ da past, ikki fazali yoki manfiy
+s5675	V~1~–V~3~ da manfiy
+s5676	V~1~–V~3~ (III) da manfiy bo‘lishi mumkin
 s5677	Tishchalar va QRS kengligi
 s5678	≤0,07 s
 s5679	≤0,09 s
@@ -74,7 +74,7 @@ s5681	Bolalar EKG sining asosiy xususiyatlari:
 s5682	tishchalar va intervallar **qisqa** (impuls tez o‘tadi, YuQS yuqori);
 s5683	**sinus nafas aritmiyasi** tez-tez uchraydi;
 s5684	erta yoshda **elektr o‘qining o‘ngga og‘ishi** (o‘ng qorincha nisbiy ustunligi), yosh bilan normogrammaga o‘tadi;
-s5685	o‘ng ko‘krak tarmoqlarida (V1–V3, ba’zan V4) **manfiy T tishchalar** me’yor bo‘lishi mumkin;
+s5685	o‘ng ko‘krak tarmoqlarida (V~1~–V~3~, ba’zan V~4~) **manfiy T tishchalar** me’yor bo‘lishi mumkin;
 s5686	III standart tarmoqda chuqur Q;
 s5687	ba’zi bolalarda **Giss tutami o‘ng oyoqchasining to‘liqsiz blokadasi** (me’yor varianti);
 s5688	**erta repolyarizatsiya sindromi** — o‘smirlarda ST segmentining biroz ko‘tarilishi (ko‘pincha me’yor varianti).
@@ -153,12 +153,11 @@ s5760	**WPW sindromi** (Wolff–Parkinson–White) — qo‘shimcha o‘tkazuvch
 s5761	**Blokadalar:** sinoatrial; **AV-blokadalar** — I daraja (PQ uzaygan), II daraja (ayrim QRS tushib qoladi — Mobits I/II), III daraja (to‘liq — bo‘lmalar va qorinchalar mustaqil qisqaradi, keskin bradikardiya, Morgagni–Adams–Stoks xurujlari; tug‘ma — onadagi TQYu bilan bog‘liq); **Giss tutami oyoqchalari blokadalari**.
 s5762	**Uzaygan QT sindromi** — tug‘ma yoki dori bilan bog‘liq; hushdan ketishlar va to‘satdan o‘lim xavfi.
 s5763	Gipertrofiya belgilari:
-s5764	**chap qorincha** — elektr o‘qining chapga og‘ishi (yosh me’yoridan), V5–6 da baland R, V1–2 da chuqur S, ST pasayishi va T manfiyligi chap ko‘krak tarmoqlarida;
-s5765	**o‘ng qorincha** — o‘qning keskin o‘ngga og‘ishi, V1–2 da baland R (qR), V5–6 da chuqur S;
+s5764	**chap qorincha** — elektr o‘qining chapga og‘ishi (yosh me’yoridan), V~5–6~ da baland R, V~1–2~ da chuqur S, ST pasayishi va T manfiyligi chap ko‘krak tarmoqlarida;
+s5765	**o‘ng qorincha** — o‘qning keskin o‘ngga og‘ishi, V~1–2~ da baland R (qR), V~5–6~ da chuqur S;
 s5766	**chap bo‘lma** — keng, ikki o‘rkachli P (“**P-mitrale**”) I, II, aVL da;
 s5767	**o‘ng bo‘lma** — baland, o‘tkir P (“**P-pulmonale**”) II, III, aVF da.
 s5768	**Miokard zararlanishi belgilari:** tishchalar vol’tajining pasayishi, QRS deformatsiyasi, aritmiya va blokadalar, ST segmentining izochiziqdan 1 mm dan ko‘p pasayishi, T tishchasining yassilanishi yoki manfiyligi.
 s5769	Arterial bosim o‘zgarishlari
 s5770	**Arterial gipertenziya** — **birlamchi (essensial)** — ko‘pincha o‘smirlarda, semizlik va irsiy moyillik bilan; **ikkilamchi (simptomatik)** — buyrak kasalliklari (glomerulonefrit, pielonefrit, polikistoz, buyrak arteriyasi stenozi — bolalarda eng ko‘p sabab), **aorta koarktatsiyasi**, endokrin kasalliklar (Itsenko–Kushing, feoxromotsitoma, tireotoksikoz, giperaldosteronizm), MNS zararlanishi (o‘sma, jarohat, ensefalit), dorilar (glyukokortikoidlar).
 s5771	**Arterial gipotenziya** — birlamchi (konstitutsional, vegetativ disfunksiya — vagotoniya) va ikkilamchi: buyrak usti bezi yetishmovchiligi, gipotireoz, gipofiz yetishmovchiligi, aorta stenozi, shok, kollaps, qon yo‘qotish, suvsizlanish, anafilaksiya.
-s5772	Batafsil — 10-mavzuda (distoniya sindromi).

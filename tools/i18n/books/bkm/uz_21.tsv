@@ -1,3 +1,22 @@
+s3959	Plazmidalar
+s3960	Mitoxondriya DNK si
+s3961	Odam genomi ≈ 3,1 × 10^9^ juft asos (gaploid), ≈ 20 000 oqsilni kodlovchi gen.
+s3962	Genetik o‘zgaruvchanlik elementlari:
+s3963	**rekombinatsiya** — DNK qismlarining almashinuvi (meyozda krossingover, immunoglobulin genlarining V(D)J-rekombinatsiyasi);
+s3964	**transpozonlar** (“sakrovchi genlar”) — genom ichida joyini o‘zgartiruvchi DNK qismlari; odamda LINE va Alu elementlari;
+s3965	**plazmidalar** — bakteriyalarning xromosomadan tashqari halqasimon DNK si; antibiotiklarga **chidamlilik genlarini** tashiydi; gen muhandisligida vektor;
+s3966	**bakteriofaglar** — bakteriyalar viruslari; transduksiya, gen muhandisligida vektor.
+s3967	3. DNK replikatsiyasi
+s3968	**Replikatsiya** — DNK ning o‘z nusxasini hosil qilishi; hujayra siklining **S-fazasida** kechadi.
+s3969	Tamoyillari:
+s3970	**yarim konservativ** — har bir yangi molekulada bitta eski va bitta yangi zanjir (Mezelson–Stal tajribasi);
+s3971	**matritsali va komplementar**;
+s3972	**antiparallel** — yangi zanjir faqat 5’→3’ yo‘nalishda uzaytiriladi;
+s3973	**uzlukli (yarim uzlukli)** — yetakchi zanjir uzluksiz, orqada qoluvchi zanjir **Okadzaki fragmentlari** ko‘rinishida;
+s3974	**praymer talab qiladi** — DNK-polimerazalar sintezni boshlay olmaydi, faqat mavjud 3’-OH ga nukleotid qo‘shadi;
+s3975	eukariotlarda ko‘p **replikatsiya boshlanish nuqtalari (ori)** — replikonlar.
+s3976	Rasm 16.1
+s3977	Replikatsiya vilkasidagi asosiy fermentlar va jarayonlar (Severin E.S. asosida chizilgan)
 s3978	Substratlar — **dNTF** (dATF, dGTF, dSTF, dTTF); pirofosfat ajralib, so‘ng gidrolizlanadi — jarayon qaytmas bo‘ladi.
 s3979	Jadval 16.3. Eukariot DNK-polimerazalari
 s3980	Polimeraza
@@ -8,7 +27,7 @@ s3984	Yetakchi zanjir sintezi; 3’→5’ ekzonukleaza (tuzatish)
 s3985	Reparatsiya (asoslarni kesib olish yo‘li)
 s3986	Mitoxondriya DNK si replikatsiyasi
 s3987	**Aniqlik:** DNK-polimerazalarning **3’→5’ ekzonukleaza (korrektorlik)** faolligi noto‘g‘ri qo‘shilgan nukleotidni darhol olib tashlaydi; mos kelmagan juftlarni tuzatish reparatsiyasi bilan birga xato ehtimoli ≈ 10^−9^–10^−10^.
-s3988	**Hujayra sikli bilan bog‘liqligi:** G1 → S → G2 → M; o‘tishlarni **siklinlar** va **siklinga bog‘liq kinazalar (CDK)** boshqaradi; nazorat nuqtalarida **p53** va **Rb** oqsillari DNK shikastlanganda siklni to‘xtatadi (18–19-mavzular). Replikatsiya litsenziyasi har siklda faqat bir marta beriladi.
+s3988	**Hujayra sikli bilan bog‘liqligi:** G~1~ → S → G~2~ → M; o‘tishlarni **siklinlar** va **siklinga bog‘liq kinazalar (CDK)** boshqaradi; nazorat nuqtalarida **p53** va **Rb** oqsillari DNK shikastlanganda siklni to‘xtatadi (18–19-mavzular). Replikatsiya litsenziyasi har siklda faqat bir marta beriladi.
 s3989	4. Replikatsiyadan keyingi o‘zgarishlar: metillanish, telomerlar
 s3990	**DNK metillanishi:** DNK-metiltransferazalar (S-adenozilmetionin donori) **CpG** dinukleotidlarida sitozinni 5-metilsitozinga aylantiradi. Promotorning metillanishi genni **o‘chiradi** — epigenetik boshqaruv (X-xromosoma inaktivatsiyasi, genomik imprinting; o‘smalarda supressor genlarning metillanib o‘chishi).
 s3991	**Telomerlar va telomeraza:** chiziqli DNK ning 3’-uchidagi praymer o‘rni to‘ldirilmaydi — har bo‘linishda xromosoma qisqaradi. Uchlarda **telomerlar** — (TTAGGG)n takrorlari. **Telomeraza** — o‘z **RNK-matritsasi** bo‘lgan **teskari transkriptaza**; telomerlarni uzaytiradi. U jinsiy, ildiz hujayralari va **o‘sma hujayralarining ≈ 85–90 %** ida faol (o‘lmaslik), somatik hujayralarda faolligi past — telomerlar qisqarishi **qarish** (Xeyflik chegarasi) bilan bog‘liq.
@@ -72,10 +91,10 @@ s4048	5 g achitqini 0,4 % li NaOH eritmasi bilan ezing, 20 daqiqa aralashtiring 
 s4049	Supernatantga sirka kislota qo‘shing — nukleoproteinlar oq parcha shaklida cho‘kadi.
 s4050	Cho‘kmani 10 % li sulfat kislota bilan 1 soat qaynatib gidrolizlang, sovutib filtrlang.
 s4051	2-ish: gidrolizat tarkibiy qismlariga sifat reaksiyalari
-s4052	**Oqsil qismi** — biuret reaksiyasi: gidrolizatga NaOH va CuSO4 qo‘shilganda binafsha rang.
-s4053	**Purin asoslari** — kumush probasi: ammiakli AgNO3 qo‘shilganda purin asoslarining kumush tuzlari — och-qo‘ng‘ir cho‘kma.
-s4054	**Pentoza** — orsin reaksiyasi (Bial): HCl va FeCl3 bilan qizdirilganda **yashil** rang (riboza); **difenilamin** reaksiyasi — **ko‘k** rang (dezoksiriboza, DNK).
-s4055	**Fosfat kislota** — molibden reaktivi: ammoniy molibdat va HNO3 bilan qizdirilganda **sariq** kristall cho‘kma (fosfomolibdat ammoniy). **Natija va tahlil:** barcha reaksiyalarning musbat bo‘lishi nukleoproteinlar tarkibida oqsil, azotli asoslar, pentoza va fosfat borligini tasdiqlaydi. Achitqida asosan RNK — orsin reaksiyasi aniq musbat.
+s4052	**Oqsil qismi** — biuret reaksiyasi: gidrolizatga NaOH va CuSO~4~ qo‘shilganda binafsha rang.
+s4053	**Purin asoslari** — kumush probasi: ammiakli AgNO~3~ qo‘shilganda purin asoslarining kumush tuzlari — och-qo‘ng‘ir cho‘kma.
+s4054	**Pentoza** — orsin reaksiyasi (Bial): HCl va FeCl~3~ bilan qizdirilganda **yashil** rang (riboza); **difenilamin** reaksiyasi — **ko‘k** rang (dezoksiriboza, DNK).
+s4055	**Fosfat kislota** — molibden reaktivi: ammoniy molibdat va HNO~3~ bilan qizdirilganda **sariq** kristall cho‘kma (fosfomolibdat ammoniy). **Natija va tahlil:** barcha reaksiyalarning musbat bo‘lishi nukleoproteinlar tarkibida oqsil, azotli asoslar, pentoza va fosfat borligini tasdiqlaydi. Achitqida asosan RNK — orsin reaksiyasi aniq musbat.
 s4056	3-ish: PZR elektroforegrammasini talqin qilish (vaziyatli)
 s4057	Gel rasmidagi yo‘lakchalarni aniqlang: marker (DNK fragmentlari uzunligi), musbat nazorat, manfiy nazorat, bemor namunalari.
 s4058	Bemor namunasidagi chiziqni musbat nazorat bilan solishtiring (uzunligi bir xil bo‘lishi kerak).
@@ -118,7 +137,7 @@ s4094	G = C
 s4095	T = G
 s4096	A + T = G + C
 s4097	Nukleosoma oqsil o‘zagi qanday tuzilgan?
-s4098	H1 gistonining tetrameri
+s4098	H~1~ gistonining tetrameri
 s4099	H2A, H2B, H3, H4 dan 2 tadan — oktamer
 s4100	Faqat H3 va H4 dimeri
 s4101	Nogiston oqsillar
@@ -188,30 +207,3 @@ s4164	Natijani qanday talqin qilasiz? Nima uchun RNK virusini aniqlashda “OT�
 s4165	Natija musbat: namunada virus RNK si bor, nazoratlar to‘g‘ri ishlagan. RNK viruslari genomini Taq-polimeraza ko‘paytira olmaydi — avval teskari transkriptaza yordamida RNK dan komplementar DNK (kDNK) sintezlanadi, so‘ng PZR bilan ko‘paytiriladi. Ct — fluorestsent signal chegaradan oshgan sikl raqami; Ct qancha kichik bo‘lsa, boshlang‘ich nusxalar shuncha ko‘p (Ct 18 — yuqori virus yuki, bemor yuqumli bo‘lishi ehtimoli katta).
 s4166	Chargaff qoidalari
 s4167	A = T, G = C; A + G = T + C
-s4168	Antiparallel o‘ng qo‘sh spiral, A=T (2), G≡C (3 vodorod bog‘)
-s4169	Nukleosoma
-s4170	Giston oktameri + ≈ 146 juft asos DNK
-s4171	Gibridizatsiya
-s4172	Komplementar zanjirlarning birlashishi; Tm G≡C ga bog‘liq
-s4173	mtDNK
-s4174	Halqasimon, 37 gen, ona orqali o‘tadi
-s4175	Replikatsiya
-s4176	Yarim konservativ, praymer kerak, dNTF, Okadzaki fragmentlari
-s4177	Fermentlar
-s4178	Gelikaza, topoizomeraza, praymaza, DNK-pol α/δ/ε, ligaza
-s4179	RNK-matritsali teskari transkriptaza; o‘smalarda faol
-s4180	CpG da 5-metilsitozin — genni o‘chiradi (epigenetika)
-s4181	Transkripsiya
-s4182	Praymersiz, NTF; RNK-pol II — mRNK (α-amanitin)
-s4183	Protsessing
-s4184	Kep, poli(A), splaysing (snRNK), alternativ splaysing
-s4185	PZR
-s4186	95 → 55–65 → 72 °C; Taq-polimeraza; 2^n^ nusxa
-s4187	Translyatsiya. Genlar ekspressiyasining boshqarilishi
-s4188	Talabaga genetik kod va uning xossalari, oqsil sintezlovchi tizimning komponentlari, ribosomalarda polipeptid zanjiri sintezining bosqichlari, posttranslyatsion modifikatsiya, oqsillarning taxlanishi va manzilga yetkazilishi, oqsil sintezi ingibitorlari (antibiotiklar, toksinlar), prokariot va eukariotlarda genlar ekspressiyasining boshqarilishi, hujayra differensirovkasi haqida bilim berish.
-s4189	genetik kodning xossalarini;
-s4190	tRNK tuzilishini va aminoatsil-tRNK-sintetazalarning rolini;
-s4191	ribosomalar tuzilishini (prokariot va eukariot);
-s4192	translyatsiyaning initsiatsiya, elongatsiya va terminatsiya bosqichlarini;
-s4193	asosiy posttranslyatsion modifikatsiyalarni;
-s4194	oqsil sintezini to‘suvchi antibiotiklar va toksinlarni;

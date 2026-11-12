@@ -1,5 +1,6 @@
+s2663 A 19-year-old man was given sevoflurane anesthesia and suxamethonium for intubation during knee arthroscopy. After 20 minutes, rigidity of the masticatory muscles, tachycardia of 150/min, a sharp rise in end-tidal CO~2~ and a rise in temperature to 39.5 °C were observed.
 s2664 1) Your diagnosis? 2) Pathogenesis? 3) Emergency treatment.
-s2665 1) Malignant hyperthermia. 2) Because of a hereditary (RYR1) defect, suxamethonium and the inhalational anesthetic triggered uncontrolled release of calcium from the sarcoplasmic reticulum in skeletal muscle — hypermetabolism, muscle rigidity, excessive production of CO2 and heat, rhabdomyolysis, hyperkalemia. 3) Stop sevoflurane immediately, hyperventilate with 100% oxygen, dantrolene 2.5 mg/kg intravenously (repeated), physical cooling, correction of acidosis and hyperkalemia, support of diuresis; observation in intensive care; warn the patient and his family about future anesthesia.
+s2665 1) Malignant hyperthermia. 2) Because of a hereditary (RYR1) defect, suxamethonium and the inhalational anesthetic triggered uncontrolled release of calcium from the sarcoplasmic reticulum in skeletal muscle — hypermetabolism, muscle rigidity, excessive production of CO~2~ and heat, rhabdomyolysis, hyperkalemia. 3) Stop sevoflurane immediately, hyperventilate with 100% oxygen, dantrolene 2.5 mg/kg intravenously (repeated), physical cooling, correction of acidosis and hyperkalemia, support of diuresis; observation in intensive care; warn the patient and his family about future anesthesia.
 s2666 A 52-year-old man has smoked 1 pack of cigarettes a day for 30 years. He had a myocardial infarction two years ago. He wants to stop smoking, but previous attempts have failed (irritability, insomnia, strong craving to smoke).
 s2667 1) What pharmacotherapy would you offer? 2) What causes the withdrawal symptoms?
 s2668 1) Together with counseling — varenicline (12 weeks) or cytisine (25 days), or combined nicotine replacement therapy (patch + gum). In stable ischemic heart disease, nicotine replacement therapy is much safer than smoking (no carbon monoxide or other harmful substances from smoke). 2) Chronic exposure to nicotine changes the number and sensitivity of N-cholinergic receptors in the CNS, and dopamine release in the mesolimbic system becomes nicotine-dependent; when nicotine is stopped, the dopamine deficit causes irritability, depression, insomnia and strong craving. Partial agonists stimulate the receptors moderately and soften these symptoms.
@@ -56,7 +57,7 @@ s2718 1. The adrenergic synapse
 s2719 1.1. Synthesis, release and inactivation of catecholamines
 s2720 **Synthesis** (in the nerve ending): **tyrosine** → (tyrosine hydroxylase — the slowest, rate-limiting step) → **DOPA** → (DOPA decarboxylase) → **dopamine** → (dopamine beta-hydroxylase in the vesicles) → **norepinephrine**. In the adrenal medulla, norepinephrine is converted into **epinephrine** by phenylethanolamine N-methyltransferase.
 s2721 **Storage:** norepinephrine is stored in vesicles together with ATP and chromogranins (VMAT carrier; **reserpine** blocks it).
-s2722 **Release:** Ca2+-dependent exocytosis when a nerve impulse arrives.
+s2722 **Release:** Ca^2+^-dependent exocytosis when a nerve impulse arrives.
 s2723 **Action on receptors:** postsynaptic alpha and beta receptors, presynaptic alpha-2 (negative feedback — reduces release) and beta-2 (enhances release) receptors.
 s2724 **Inactivation:** mainly (70–90%) by **neuronal reuptake** (NET, “uptake 1”; blocked by cocaine and tricyclic antidepressants); the rest — breakdown by the enzymes mitochondrial **MAO** (in the nerve ending) and **COMT** (in the effector cell and the liver). Metabolites — vanillylmandelic acid and metanephrines (measured in the diagnosis of pheochromocytoma).
 s2725 Figure 6.1
@@ -79,11 +80,11 @@ s2741 Heart; juxtaglomerular cells of the kidney
 s2742 Increased force and rate of contraction, conduction and automaticity of the heart; renin release
 s2743 Beta-2
 s2744 Bronchi, skeletal muscle and coronary vessels, uterus, liver
-s2745 Bronchodilation, vasodilation, uterine relaxation (tocolysis), glycogenolysis, entry of K+ into cells, muscle tremor
+s2745 Bronchodilation, vasodilation, uterine relaxation (tocolysis), glycogenolysis, entry of K^+^ into cells, muscle tremor
 s2746 Beta-3
 s2747 Adipose tissue, bladder detrusor
 s2748 Lipolysis, detrusor relaxation
-s2749 D1 (dopamine)
+s2749 D~1~ (dopamine)
 s2750 Renal, mesenteric and coronary vessels
 s2751 Vasodilation
 s2752 1.3. Classification of adrenergic drugs
@@ -158,7 +159,7 @@ s2820 Table 6.4. Dose-dependent effects of dopamine
 s2821 Dose (mcg/kg/min)
 s2822 Main receptors
 s2823 1–3 (low)
-s2824 D1
+s2824 D~1~
 s2825 Dilation of renal and mesenteric vessels, increased diuresis
 s2826 3–10 (medium)
 s2827 Increased force of cardiac contraction (inotropic)
@@ -169,6 +170,3 @@ s2831 2.4. Alpha-adrenomimetics
 s2832 **Phenylephrine (Mesaton)** — an alpha-1 agonist; it is not broken down by COMT and acts longer than epinephrine. It constricts the vessels, raises BP and causes reflex bradycardia. Uses: hypotension (during anesthesia), as a **mydriatic** (does not affect accommodation), rhinitis (in nasal drops).
 s2833 **Midodrine** — orally for orthostatic hypotension.
 s2834 **Imidazoline derivatives — decongestants** (xylometazoline, oxymetazoline, naphazoline, tetrahydrozoline) — alpha-2 (and alpha-1) agonists; they constrict the vessels of the nasal mucosa and reduce swelling. They are instilled into the nose in rhinitis, sinusitis and otitis.
-s2835 2.5. Beta-adrenomimetics
-s2836 **Isoprenaline (Isadrin)** — a beta-1 and beta-2 agonist. Tachycardia and bronchodilation. Rarely used now (temporarily in AV block, in bradycardia).
-s2837 **Beta-2 adrenomimetics** — the main drugs for bronchial asthma and COPD (in detail in topic 9):

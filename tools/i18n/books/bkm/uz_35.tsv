@@ -1,3 +1,35 @@
+s6722	**Reaksiya turlari:** alifatik va aromatik gidroksillanish, epoksidlanish, N-, O-, S-dealkillanish, dezaminlanish, N- va S-oksidlanish, degalogenlanish.
+s6723	**Toksik faollashuv (letal sintez):** ba’zi moddalar P450 ta’sirida zaharliroq bo‘ladi: benz(a)piren → diol-epoksid (kanserogen, 19-mavzu), paratsetamol → NAPQI, CCl~4~ → triklormetil radikali (lipid peroksidlanishi, jigar nekrozi), metanol → formaldegid → chumoli kislota (ko‘rlik, atsidoz), etilenglikol → oksalat (buyrak).
+s6724	**Mitoxondrial oksidlanishdan farqi:** mikrosomal oksidlanish ATF hosil qilmaydi (energiya sarflanadi — NADPH), substrat spetsifikligi past, induksiyalanadi.
+s6725	3. Konyugatsiya reaksiyalari
+s6726	Jadval 26.1. II faza — konyugatsiya reaksiyalari
+s6727	Donor (faollashgan shakl)
+s6728	Substratlar (misollar)
+s6729	Glukuronidlanish (eng ko‘p)
+s6730	UDF-glukuroniltransferazalar (UGT)
+s6731	Bilirubin, steroid gormonlar, paratsetamol, morfin, fenollar
+s6732	Sulfatlanish
+s6733	FAFS (3’-fosfoadenozin-5’-fosfosulfat)
+s6734	Sulfotransferazalar
+s6735	Fenol, kreazol, indoksil, steroidlar, paratsetamol, katexolaminlar
+s6736	Glutation (GSH)
+s6737	Glutation-S-transferazalar
+s6738	Elektrofil moddalar, epoksidlar, NAPQI, og‘ir metallar → merkapturat kislotalar (siydikda)
+s6739	N-atsetiltransferazalar (NAT2)
+s6740	Izoniazid, sulfanilamidlar, prokainamid, gidralazin, aromatik aminlar
+s6741	Metiltransferazalar (KOMT, TPMT)
+s6742	Katexolaminlar, gistamin, 6-merkaptopurin, nikotinamid
+s6743	Aminokislotalar bilan
+s6744	Glitsin, taurin, glutamin (substrat atsil-KoA shaklida faollashadi)
+s6745	Atsiltransferazalar
+s6746	Benzoy kislota → gippur kislota; o‘t kislotalari; fenilatsetat → fenilatsetilglutamin
+s6747	4. Ichakdagi chirish mahsulotlarining zararsizlantirilishi
+s6748	Yo‘g‘on ichakda hazm bo‘lmagan oqsillar va so‘rilmagan aminokislotalar mikroorganizmlar ta’sirida **chiriydi** (dekarboksillanish, dezaminlanish, yon zanjirning parchalanishi). Hosil bo‘lgan zaharli moddalar so‘rilib, darvoza vena orqali jigarga keladi.
+s6749	Jadval 26.2. Chirish mahsulotlari va ularning zararsizlantirilishi
+s6750	Zaharli mahsulot
+s6751	Jigarda zararsizlantirilishi
+s6752	Indol, skatol (metilindol)
+s6753	Oksidlanish (P450) → indoksil, skatoksil → FAFS yoki UDF-glyukuron kislota bilan konyugatsiya → indoksilsulfat (kaliy tuzi — hayvon indikani), skatoksilsulfat → siydik
 s6754	Fenol, kreazol
 s6755	Sulfat yoki glukuronid konyugatlari → siydik
 s6756	Lizin, ornitin
@@ -13,7 +45,7 @@ s6765	**Bilirubin** — glukuronidlanish (25-mavzu).
 s6766	**Steroid gormonlar:** kortizol halqasi qaytarilib, glukuron kislota bilan konyugatsiyalanadi (17-gidroksikortikosteroidlar siydikda); androgenlar — 17-ketosteroidlar (sulfat va glukuronid konyugatlari); estrogenlar — gidroksillanish, metillanish, glukuronidlanish (enterogepatik aylanish).
 s6767	**Katexolaminlar** — katexol-O-metiltransferaza (KOMT) va monoaminooksidaza (MAO) → vanililbodom kislota (VMK).
 s6768	**Peptid gormonlar** (insulin, glyukagon, somatotropin) — proteoliz (insulinaza); insulinning ≈ 50 % i birinchi o‘tishda jigarda parchalanadi.
-s6769	**Tireoid gormonlar** — deyodlanish, glukuronidlanish, sulfatlanish. **Klinik ahamiyati:** jigar sirrozida estrogenlar inaktivatsiyasi kamayadi — erkaklarda ginekomastiya, “tomir yulduzchalari”, palmar eritema; aldosteron inaktivatsiyasi kamayadi — Na+ va suv ushlanishi (assit); insulin parchalanishi kamayadi.
+s6769	**Tireoid gormonlar** — deyodlanish, glukuronidlanish, sulfatlanish. **Klinik ahamiyati:** jigar sirrozida estrogenlar inaktivatsiyasi kamayadi — erkaklarda ginekomastiya, “tomir yulduzchalari”, palmar eritema; aldosteron inaktivatsiyasi kamayadi — Na^+^ va suv ushlanishi (assit); insulin parchalanishi kamayadi.
 s6770	**Yoshga bog‘liq xususiyatlar:** chaqaloqlarda P450 va UGT faolligi past (xloramfenikol — “kul rang sindromi”, fiziologik sariqlik); bolalarda ba’zi P450 lar faolroq; keksalarda jigar massasi, qon oqimi va I faza reaksiyalari kamayadi — dorilar dozasini kamaytirish kerak.
 s6771	6. Dori vositalari biotransformatsiyasi va unga ta’sir etuvchi omillar
 s6772	**Ta’sir etuvchi omillar:** yosh, jins (homiladorlik), genetik polimorfizm, jigar va buyrak kasalliklari, ovqatlanish (oqsil yetishmasligi P450 ni kamaytiradi; qovurilgan go‘shtdagi aromatik uglevodorodlar CYP1A2 ni induksiya qiladi), chekish (CYP1A2 induksiyasi), alkogol (CYP2E1 induksiyasi), boshqa dorilar (induksiya va ingibirlash), sutkalik ritm.
@@ -34,7 +66,7 @@ s6786	Farmakogenetik polimorfizm tufayli odamlar dorilarni **sust**, **oraliq**,
 s6787	**CYP2D6** — sust metabolizmlovchilar (Yevropada ≈ 7 %): β-blokatorlar va antidepressantlar toksikligi, kodein samarasiz (morfinga aylanmaydi); **o‘ta tez** metabolizmlovchilarda (gen nusxalari ko‘p) kodein ko‘p morfinga aylanib, nafas markazini susaytiradi (bolalarda o‘lim hollari).
 s6788	**CYP2C19** — sust metabolizmlovchilarda **klopidogrel** faollashmaydi (tromboz xavfi); proton nasosi ingibitorlari kuchliroq ta’sir qiladi.
 s6789	**CYP2C9** va **VKORC1** — **varfarin** dozasi genotipga qarab tanlanadi.
-s6790	**NAT2** — sekin atsetillovchilarda izoniazid polineyropatiyasi (B6 bilan himoya), gidralazin va prokainamidda lyupus-sindrom.
+s6790	**NAT2** — sekin atsetillovchilarda izoniazid polineyropatiyasi (B~6~ bilan himoya), gidralazin va prokainamidda lyupus-sindrom.
 s6791	**TPMT** — yetishmovchiligida 6-merkaptopurin va azatioprin og‘ir suyak ko‘migi supressiyasini chaqiradi — davolashdan oldin genotiplash tavsiya etiladi.
 s6792	**UGT1A1*28** (Gilbert) — irinotekan toksikligi.
 s6793	**Psevdoxolinesteraza** — atipik variantda suksinilxolin uzoq apnoe chaqiradi.
@@ -43,9 +75,9 @@ s6795	8. Etanolning jigarda zararsizlantirilishi
 s6796	Rasm 26.2
 s6797	Etanol metabolizmi yo‘llari va uning metabolik oqibatlari (Lippincott’s Illustrated Reviews: Biochemistry asosida chizilgan)
 s6798	Etanolning ≈ 90 % i jigarda oksidlanadi (2–10 % — o‘pka va siydik bilan o‘zgarmagan holda); tezligi ≈ 7–10 g/soat (0,1–0,15 ‰/soat).
-s6799	**Alkogoldegidrogenaza (ADG)** — sitozol, NAD+; asosiy yo‘l (me’dada ham oz miqdorda; ayollarda me’da ADG si kamroq).
-s6800	**Mikrosomal etanol oksidlovchi tizim (MEOS) — CYP2E1** — NADPH, O2; surunkali ichishda 5–10 marta induksiyalanadi (“tolerantlik”); erkin radikallar hosil qiladi; paratsetamol va boshqa dorilar metabolizmini o‘zgartiradi.
-s6801	**Katalaza** — peroksisomalarda, H2O2 ishtirokida (kam ahamiyatli). **Atsetaldegid** — eng zaharli oraliq mahsulot: oqsillar, DNK va fosfolipidlar bilan adduktlar, mikronaychalar shikastlanishi, glutationni kamaytiradi. **Aldegiddegidrogenaza (ALDG)** uni atsetatga oksidlaydi: **ALDG2** — mitoxondrial, past Km, asosiy; ALDG1 — sitozol.
+s6799	**Alkogoldegidrogenaza (ADG)** — sitozol, NAD^+^; asosiy yo‘l (me’dada ham oz miqdorda; ayollarda me’da ADG si kamroq).
+s6800	**Mikrosomal etanol oksidlovchi tizim (MEOS) — CYP2E1** — NADPH, O~2~; surunkali ichishda 5–10 marta induksiyalanadi (“tolerantlik”); erkin radikallar hosil qiladi; paratsetamol va boshqa dorilar metabolizmini o‘zgartiradi.
+s6801	**Katalaza** — peroksisomalarda, H~2~O~2~ ishtirokida (kam ahamiyatli). **Atsetaldegid** — eng zaharli oraliq mahsulot: oqsillar, DNK va fosfolipidlar bilan adduktlar, mikronaychalar shikastlanishi, glutationni kamaytiradi. **Aldegiddegidrogenaza (ALDG)** uni atsetatga oksidlaydi: **ALDG2** — mitoxondrial, past K~m~, asosiy; ALDG1 — sitozol.
 s6802	**ALDG2*2** (Glu487Lys) varianti Sharqiy Osiyo aholisining ≈ 40 % ida uchraydi: ferment deyarli nofaol, alkogoldan keyin atsetaldegid to‘planib yuz qizarishi, taxikardiya, ko‘ngil aynishi chaqiradi (himoya omili, ammo qizilo‘ngach saratoni xavfi oshadi). **Disulfiram** ALDG ni ingibirlab xuddi shunday reaksiya chaqiradi — alkogolizmni davolashda ishlatiladi; metronidazol, ba’zi sefalosporinlar ham disulfiramga o‘xshash ta’sir qiladi.
 s6803	**Atsetat** turli to‘qimalarda atsetil-KoA ga aylanadi.
 s6804	**Alkogolning metabolik oqibatlari** — asosan sitozol va mitoxondriyada **NADH/NAD^+^ nisbatining oshishi** bilan bog‘liq:
@@ -53,7 +85,7 @@ s6805	piruvat laktatga aylanadi — **laktatatsidoz**; laktat buyrakda urat sekr
 s6806	glyukoneogenez to‘xtaydi (piruvat va oksaloatsetat qaytariladi) — och qoringa ichganda **gipoglikemiya** (xavfli, ayniqsa bolalar va diabet bemorlarida);
 s6807	β-oksidlanish va Krebs sikli sekinlashadi, gliserol-3-fosfat va yog‘ kislotalar sintezi kuchayadi — triatsilglitserinlar to‘planadi: **yog‘li gepatoz**, giperlipidemiya;
 s6808	atsetil-KoA ko‘p, oksaloatsetat kam — **alkogolli ketoatsidoz**;
-s6809	surunkali ichishda: CYP2E1 induksiyasi, oksidlanish stressi, yulduzsimon hujayralar faollashuvi — **alkogolli gepatit** va **sirroz**; tiamin (Vernike–Korsakov), folat, B6 yetishmasligi; pankreatit; metanol va etilenglikol bilan zaharlanishda etanol ADG uchun raqobatli substrat sifatida **antidot** bo‘ladi (fomepizol — ADG ingibitori). **Surunkali alkogolizm markerlari:** GGT ↑, AsAT/AlAT > 2, MCV ↑ (makrotsitoz), **uglevodi yetishmaydigan transferrin** (CDT) ↑, triatsilglitserinlar va siydik kislota ↑.
+s6809	surunkali ichishda: CYP2E1 induksiyasi, oksidlanish stressi, yulduzsimon hujayralar faollashuvi — **alkogolli gepatit** va **sirroz**; tiamin (Vernike–Korsakov), folat, B~6~ yetishmasligi; pankreatit; metanol va etilenglikol bilan zaharlanishda etanol ADG uchun raqobatli substrat sifatida **antidot** bo‘ladi (fomepizol — ADG ingibitori). **Surunkali alkogolizm markerlari:** GGT ↑, AsAT/AlAT > 2, MCV ↑ (makrotsitoz), **uglevodi yetishmaydigan transferrin** (CDT) ↑, triatsilglitserinlar va siydik kislota ↑.
 s6810	1-ish: siydikda gippur kislotani aniqlash (jigarning zararsizlantirish funksiyasini baholash — Kvik–Pytel sinamasi asosida)
 s6811	**Usul asosi:** jigar benzoy kislotani glitsin bilan konyugatsiyalab **gippur kislotaga** aylantiradi. Natriy benzoat yuklamasidan keyin siydik bilan chiqarilgan gippur kislota miqdori jigarning konyugatsiya faoliyatini aks ettiradi. Gippur kislota kislotali muhitda kristallanadi.
 s6812	Tekshiriluvchi och qoringa 4 g natriy benzoatni 30 ml suvda eritib ichadi (o‘quv maqsadida tayyor siydik namunasi ishlatiladi).
@@ -73,8 +105,8 @@ s6825	Klinik choralarni tavsiya qiling: dozani o‘zgartirish, boshqa dori tanla
 s6826	Ko‘nikma: alkogolning metabolik ta’sirini laboratoriya ko‘rsatkichlari bo‘yicha baholash
 s6827	GGT, AsAT/AlAT nisbati, MCV, CDT ni baholang.
 s6828	Laktat, glyukoza, keton tanachalari, siydik kislota, triatsilglitserinlarni tekshiring.
-s6829	Har bir o‘zgarishni NADH/NAD+ nisbati oshishi bilan bog‘lang.
-s6830	Vitaminlar yetishmasligi (B1, folat) xavfini va profilaktikasini ayting.
+s6829	Har bir o‘zgarishni NADH/NAD^+^ nisbati oshishi bilan bog‘lang.
+s6830	Vitaminlar yetishmasligi (B~1~, folat) xavfini va profilaktikasini ayting.
 s6831	Ksenobiotiklar nima va ularni zararsizlantirishning maqsadi qanday?
 s6832	Biotransformatsiyaning fazalarini tavsiflang.
 s6833	Mikrosomal oksidlanish tizimining tarkibi qanday?
@@ -89,7 +121,7 @@ s6841	Dorilar biotransformatsiyasiga qaysi omillar ta’sir qiladi?
 s6842	P450 induktorlari va ingibitorlariga misollar keltiring va klinik ahamiyatini tushuntiring.
 s6843	Farmakogenetik polimorfizmlarga misollar keltiring.
 s6844	Etanol qanday metabolizmlanadi? ALDG2 polimorfizmining ahamiyati nima?
-s6845	Alkogolning metabolik oqibatlarini NADH/NAD+ nisbati bilan bog‘lab tushuntiring.
+s6845	Alkogolning metabolik oqibatlarini NADH/NAD^+^ nisbati bilan bog‘lab tushuntiring.
 s6846	Mikrosomal oksidlanishda elektronlar donori qaysi?
 s6847	Askorbat
 s6848	Dorilarning taxminan yarmini metabolizmlaydigan P450 izoshakli qaysi?
@@ -121,7 +153,7 @@ s6873	Alkogoldegidrogenaza
 s6874	Aldegiddegidrogenaza
 s6875	Disulfiram qaysi fermentni ingibirlaydi?
 s6876	Alkogol ichgandan keyin och qoringa gipoglikemiya rivojlanishining sababi nima?
-s6877	NADH/NAD+ oshib, glyukoneogenez to‘xtaydi
+s6877	NADH/NAD^+^ oshib, glyukoneogenez to‘xtaydi
 s6878	Insulin sekretsiyasi oshadi
 s6879	Glikogen sintezi kuchayadi
 s6880	Glyukoza ichakda so‘rilmaydi
@@ -139,8 +171,3 @@ s6891	Uglevodi yetishmaydigan transferrin (CDT)
 s6892	19 yoshli qiz ruhiy tushkunlik holatida 20 tabletka paratsetamol (10 g) ichdi. Birinchi sutkada ko‘ngil aynishidan boshqa shikoyat yo‘q edi. 3-sutkada sariqlik, o‘ng qovurg‘a ostida og‘riq: AlAT 6800 U/l, AsAT 5200 U/l, bilirubin 85 mkmol/l, XNM 3,8.
 s6893	Jigar shikastlanishining biokimyoviy mexanizmi qanday? Nima uchun belgilar kechikib paydo bo‘ldi? Antidot qanday ta’sir qiladi?
 s6894	Terapevtik dozada paratsetamol asosan glukuronidlanish va sulfatlanish orqali zararsizlantiriladi; oz qismi CYP2E1 ta’sirida reaktiv NAPQI ga aylanib, glutation bilan darhol bog‘lanadi. Katta dozada konyugatsiya yo‘llari to‘yinadi, ko‘p NAPQI hosil bo‘ladi va gepatotsitlardagi glutation tugaydi; NAPQI oqsillarning sistein qoldiqlari bilan kovalent bog‘lanib, mitoxondriyalarni shikastlaydi, oksidlanish stressini chaqiradi — jigar bo‘lakchalari markazidagi (CYP2E1 ko‘p bo‘lgan) hujayralar nekrozi. Nekroz va uning belgilari (AlAT keskin oshishi, sintez buzilishi — XNM) 24–72 soatda rivojlanadi; erta davr deyarli belgisiz bo‘lgani uchun xavfli. Antidot — N-atsetilsistein: glutation sintezi uchun sistein manbai va NAPQI ni bevosita bog‘laydi; erta (8–10 soat ichida) berilganda eng samarali. Bemorga psixiatr yordami ham zarur.
-s6895	Tuberkulyoz bilan og‘rigan va rifampitsin qabul qilayotgan 28 yoshli ayol og‘iz orqali qabul qilinadigan kontratseptiv ichib yurganiga qaramay homilador bo‘lib qoldi. Bundan tashqari, u varfarin ham qabul qiladi va XNM 1,3 gacha tushib ketgan (maqsad 2–3).
-s6896	Bu holatlarni qanday tushuntirasiz? Mexanizmi qanday? Qanday choralar ko‘rish kerak?
-s6897	Rifampitsin kuchli P450 induktori: yadro retseptori PXR orqali CYP3A4, CYP2C9 va boshqa fermentlar, shuningdek UGT va P-glikoprotein sintezini kuchaytiradi. Natijada kontratseptivdagi estrogen va progestinlar (CYP3A4) tez parchalanib, ularning qondagi konsentratsiyasi samarali darajadan pasayadi — kontratseptsiya samarasiz bo‘ladi. Varfarin (S-enantiomeri CYP2C9 bilan) tez metabolizmlanadi — antikoagulyant ta’sir kamayadi (XNM pasaygan, tromboz xavfi). Choralar: davolash davrida va tugagandan keyin 4 hafta to‘siqli kontratseptsiya usullari; varfarin dozasini XNM nazoratida oshirish (rifampitsin to‘xtatilgach, induksiya 2 hafta davomida yo‘qolganda dozani qayta kamaytirish, aks holda qon ketish xavfi).
-s6898	50 yoshli erkak 20 yildan beri ko‘p miqdorda alkogol ichadi. Ertalab och qoringa ko‘p ichgandan keyin chalkash holatda keltirildi. Qonda glyukoza 2,1 mmol/l, laktat 5,8 mmol/l, β-gidroksibutirat 4,5 mmol/l, siydik kislota 560 mkmol/l, triatsilglitserinlar 4,8 mmol/l, GGT 420 U/l, MCV 104 fl.
-s6899	Barcha biokimyoviy o‘zgarishlarni alkogol metabolizmi bilan bog‘lab tushuntiring.

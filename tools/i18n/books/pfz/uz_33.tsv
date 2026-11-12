@@ -1,3 +1,8 @@
+s6687	Miokard ishemiyasida birinchi navbatda nima sodir bo‘ladi?
+s6688	Aerob oksidlanish to‘xtab, anaerob glikoliz va ATF kamayishi
+s6689	Darhol nekroz
+s6690	Fibroz
+s6691	Kalsiy hujayradan chiqishi
 s6692	Kollaps nima?
 s6693	Yurak qisqaruvchanligining birdan ortishi
 s6694	Arterial bosimning doimiy ko‘tarilishi
@@ -66,23 +71,23 @@ s6756	Daqiqalik nafas hajmi
 s6757	6–8 l
 s6758	O‘pkaning tiriklik sig‘imi (O‘TS)
 s6759	Erkaklarda 3,5–5 l, ayollarda 3–3,5 l (kerakli qiymatning 80 foizdan ko‘pi)
-s6760	Forsirlangan nafas chiqarishning 1-soniyadagi hajmi (FNCH1)
+s6760	Forsirlangan nafas chiqarishning 1-soniyadagi hajmi (FNCH~1~)
 s6761	Kerakli qiymatning 80 foizdan ko‘pi
-s6762	Tiffno indeksi (FNCH1 / O‘TS)
+s6762	Tiffno indeksi (FNCH~1~ / O‘TS)
 s6763	70–75 foiz va undan ko‘p
-s6764	Arterial qonda pO2
+s6764	Arterial qonda pO~2~
 s6765	80–100 mm sim. ust.
-s6766	Arterial qonda pCO2
-s6767	Arterial qonning O2 bilan to‘yinishi (SaO2)
+s6766	Arterial qonda pCO~2~
+s6767	Arterial qonning O~2~ bilan to‘yinishi (SaO~2~)
 s6768	95–98 foiz
-s6769	Venoz qonda pO2
+s6769	Venoz qonda pO~2~
 s6770	37–40 mm sim. ust.
 s6771	2. Nafas yetishmovchiligi
-s6772	**Nafas yetishmovchiligi** — tashqi nafas tizimi qonning me’yoriy gaz tarkibini ta’minlay olmaydigan yoki uni faqat kompensator mexanizmlarning zo‘riqishi hisobiga ta’minlaydigan holat. Arterial qonda pO2 60 mm sim. ust. dan past va (yoki) pCO2 45–50 mm sim. ust. dan yuqori bo‘lishi mezon hisoblanadi.
+s6772	**Nafas yetishmovchiligi** — tashqi nafas tizimi qonning me’yoriy gaz tarkibini ta’minlay olmaydigan yoki uni faqat kompensator mexanizmlarning zo‘riqishi hisobiga ta’minlaydigan holat. Arterial qonda pO~2~ 60 mm sim. ust. dan past va (yoki) pCO~2~ 45–50 mm sim. ust. dan yuqori bo‘lishi mezon hisoblanadi.
 s6773	Jadval 22.2. Nafas yetishmovchiligining tasnifi
 s6774	O‘tkir (daqiqalar, soatlar), surunkali (oylar, yillar)
 s6775	Qon gazlari
-s6776	Gipoksemik (I tur — pO2 past, pCO2 me’yorida yoki past), giperkapnik (II tur — pO2 past, pCO2 yuqori)
+s6776	Gipoksemik (I tur — pO~2~ past, pCO~2~ me’yorida yoki past), giperkapnik (II tur — pO~2~ past, pCO~2~ yuqori)
 s6777	Yashirin (faqat yuklamada), kompensatsiyalangan (tinch holatda hansirash, qon gazlari me’yorida), dekompensatsiyalangan (tinch holatda ham gipoksemiya, giperkapniya)
 s6778	Ventilyatsion, diffuzion, perfuzion, ventilyatsiya-perfuziya nomuvofiqligi
 s6779	**Hansirash (dispnoe)** — nafas olishning qiyinlashishi va havo yetishmasligi sezgisi bilan kechadigan nafas chastotasi, chuqurligi va ritmining o‘zgarishi. **Inspirator** hansirash (nafas olish qiyin — yuqori nafas yo‘llari torayishi, o‘pka shishi), **ekspirator** hansirash (nafas chiqarish qiyin — bronxial astma, emfizema), **aralash**.
@@ -90,18 +95,18 @@ s6780	3. Ventilyatsiya buzilishlari
 s6781	Obstruktiv tur
 s6782	Havo yo‘llari o‘tkazuvchanligining buzilishi — havo oqimiga qarshilik ortadi.
 s6783	**Sabablari:** bronxospazm (bronxial astma), shilliq qavat shishi va yallig‘lanishi, bronxlar ichida balg‘am to‘planishi (surunkali bronxit), bronx devorining tashqaridan siqilishi, emfizemada kichik bronxlarning nafas chiqarishda erta yopilishi (elastik tortish kamayishi), yuqori nafas yo‘llarining yot jism, shish, o‘sma, laringospazm bilan to‘silishi.
-s6784	**Spirogramma:** FNCH1 va **Tiffno indeksi kamaygan** (70 foizdan past), O‘TS me’yorida yoki biroz kamaygan, qoldiq hajm ortgan.
+s6784	**Spirogramma:** FNCH~1~ va **Tiffno indeksi kamaygan** (70 foizdan past), O‘TS me’yorida yoki biroz kamaygan, qoldiq hajm ortgan.
 s6785	Restriktiv tur
 s6786	O‘pkaning kengayish qobiliyati cheklanadi.
 s6787	o‘pkadan tashqari — plevra bo‘shlig‘ida suyuqlik (gidrotoraks) yoki havo (pnevmotoraks), plevra bitishmalari, ko‘krak qafasi deformatsiyalari (kifoskolioz), nafas mushaklari falajlari (poliomielit, miasteniya), semizlik, qorin bo‘shlig‘ida bosim ortishi;
 s6788	o‘pka ichi — pnevmoniya, o‘pka fibrozi, o‘pka shishi, atelektaz, surfaktant yetishmovchiligi, o‘pka rezeksiyasi.
-s6789	**Spirogramma: O‘TS kamaygan**, FNCH1 ham kamaygan, ammo Tiffno indeksi me’yorida yoki ortgan.
+s6789	**Spirogramma: O‘TS kamaygan**, FNCH~1~ ham kamaygan, ammo Tiffno indeksi me’yorida yoki ortgan.
 s6790	Jadval 22.3. Obstruktiv va restriktiv buzilishlarni farqlash
 s6791	Obstruktiv
 s6792	Restriktiv
 s6793	O‘TS
 s6794	Me’yorida yoki biroz kamaygan
-s6795	FNCH1
+s6795	FNCH~1~
 s6796	Kamaygan (O‘TS ga mutanosib)
 s6797	Tiffno indeksi
 s6798	70 foizdan past
@@ -126,10 +131,10 @@ s6816	Bradipnoe
 s6817	Siyrak nafas
 s6818	Nafas markazining tormozlanishi (kalla ichi bosimi ortishi, narkotik moddalar), yuqori nafas yo‘llari stenozi
 s6819	Chuqur, shovqinli, siyrak nafas
-s6820	Metabolik atsidoz (diabetik ketoatsidoz, uremiya): H+ ionlari kemoretseptorlarni qo‘zg‘atadi, CO2 chiqarilishi kuchayadi
+s6820	Metabolik atsidoz (diabetik ketoatsidoz, uremiya): H^+^ ionlari kemoretseptorlarni qo‘zg‘atadi, CO~2~ chiqarilishi kuchayadi
 s6821	Cheyn–Stoks nafasi
 s6822	Nafas chuqurligi asta-sekin ortib, so‘ng kamayadi, keyin apnoe; takrorlanadi
-s6823	Nafas markazining CO2 ga sezgirligi pasaygan (miya qon aylanishi buzilishi, yurak yetishmovchiligi, intoksikatsiyalar, uyqudagi keksalar): apnoeda CO2 to‘planib markazni qo‘zg‘atadi, giperventilyatsiyada CO2 kamayib markaz yana tormozlanadi
+s6823	Nafas markazining CO~2~ ga sezgirligi pasaygan (miya qon aylanishi buzilishi, yurak yetishmovchiligi, intoksikatsiyalar, uyqudagi keksalar): apnoeda CO~2~ to‘planib markazni qo‘zg‘atadi, giperventilyatsiyada CO~2~ kamayib markaz yana tormozlanadi
 s6824	Biot nafasi
 s6825	Bir xil chuqurlikdagi nafaslar va uzun apnoe pauzalari
 s6826	Nafas markazining organik shikastlanishi (meningit, ensefalit, miya travmasi) — og‘irroq prognoz
@@ -143,7 +148,7 @@ s6833	5. Diffuziya va perfuziya buzilishlari
 s6834	Diffuziya buzilishi
 s6835	Gazlarning alveola-kapillyar membrana orqali o‘tishi qiyinlashadi. Fik qonuniga ko‘ra diffuziya membrananing maydoniga va gazlar bosimi farqiga to‘g‘ri, membrana qalinligiga teskari mutanosib.
 s6836	**Sabablari:** membrana qalinlashishi (interstitsial o‘pka shishi, o‘pka fibrozi, pnevmokoniozlar, alveolitlar), diffuziya maydonining kamayishi (emfizema, o‘pka rezeksiyasi, atelektaz), qonning kapillyardan juda tez o‘tishi (jismoniy yuklama).
-s6837	**Xususiyati:** CO2 membrana orqali O2 ga nisbatan taxminan 20 marta oson o‘tadi — shuning uchun diffuziya buzilishida birinchi navbatda **gipoksemiya** rivojlanadi, pCO2 esa uzoq vaqt me’yorida qoladi yoki giperventilyatsiya hisobiga kamayadi.
+s6837	**Xususiyati:** CO~2~ membrana orqali O~2~ ga nisbatan taxminan 20 marta oson o‘tadi — shuning uchun diffuziya buzilishida birinchi navbatda **gipoksemiya** rivojlanadi, pCO~2~ esa uzoq vaqt me’yorida qoladi yoki giperventilyatsiya hisobiga kamayadi.
 s6838	Perfuziya buzilishi
 s6839	O‘pka kapillyarlari orqali qon oqimining kamayishi: o‘pka arteriyasi tromboemboliyasi, o‘pka gipertenziyasi, yurak yetishmovchiligi, shok, tug‘ma nuqsonlarda o‘ngdan chapga shuntlar.
 s6840	Ventilyatsiya-perfuziya munosabatining buzilishi
@@ -156,14 +161,13 @@ s6846	Rasm 22.2
 s6847	Gipoksiya turlari (etiologiyasi bo‘yicha)
 s6848	Ekzogen gipoksiya
 s6849	Nafas olinayotgan havoda kislorod parsial bosimining kamayishi.
-s6850	**Gipobarik** — balandlikka ko‘tarilganda (tog‘ kasalligi, uchuvchilarda): umumiy atmosfera bosimi va pO2 kamayadi.
+s6850	**Gipobarik** — balandlikka ko‘tarilganda (tog‘ kasalligi, uchuvchilarda): umumiy atmosfera bosimi va pO~2~ kamayadi.
 s6851	**Normobarik** — me’yoriy bosimda havoda kislorod kam (shaxta, quduq, yopiq xona, sun’iy nafas apparatining buzilishi).
-s6852	**Qon gazlari:** arterial pO2 va SaO2 kamaygan; giperventilyatsiya sababli **gipokapniya** va gaz alkalozi (nafas markazi tormozlanishi, bosh miya tomirlari spazmi).
+s6852	**Qon gazlari:** arterial pO~2~ va SaO~2~ kamaygan; giperventilyatsiya sababli **gipokapniya** va gaz alkalozi (nafas markazi tormozlanishi, bosh miya tomirlari spazmi).
 s6853	Respirator (nafas) gipoksiya
-s6854	Tashqi nafas yetishmovchiligi natijasida: ventilyatsiya, diffuziya, perfuziya buzilishlari va V/Q nomuvofiqligi (3- va 5-bandlar). **Qon gazlari:** arterial pO2 va SaO2 kamaygan, ko‘pincha **giperkapniya** va gaz atsidozi (ventilyatsiya buzilsa).
+s6854	Tashqi nafas yetishmovchiligi natijasida: ventilyatsiya, diffuziya, perfuziya buzilishlari va V/Q nomuvofiqligi (3- va 5-bandlar). **Qon gazlari:** arterial pO~2~ va SaO~2~ kamaygan, ko‘pincha **giperkapniya** va gaz atsidozi (ventilyatsiya buzilsa).
 s6855	Gemik (qon) gipoksiya
 s6856	Qonning kislorod sig‘imi kamayadi:
 s6857	**anemiyalar** — gemoglobin miqdorining kamayishi;
 s6858	**is gazi (CO) bilan zaharlanish** — karboksigemoglobin hosil bo‘ladi; CO gemoglobinga kisloroddan taxminan 200–300 marta kuchliroq bog‘lanadi, shuningdek oksigemoglobin dissotsiatsiya egri chizig‘ini chapga siljitib, kislorod ajralishini qiyinlashtiradi; teri “olcha-qizil” rangda;
-s6859	**metgemoglobin hosil qiluvchilar** (nitritlar, nitratlar, anilin, sulfanilamidlar) — temir Fe3+ holatiga o‘tadi, kislorod tashimaydi; qon jigarrang, teri kulrang-ko‘kimtir.
-s6860	**Qon gazlari:** arterial pO2 **me’yorida**, ammo qonning kislorod sig‘imi va kislorod miqdori kamaygan; arterio-venoz farq kamaygan.
+s6859	**metgemoglobin hosil qiluvchilar** (nitritlar, nitratlar, anilin, sulfanilamidlar) — temir Fe^3+^ holatiga o‘tadi, kislorod tashimaydi; qon jigarrang, teri kulrang-ko‘kimtir.

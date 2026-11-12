@@ -1,168 +1,169 @@
-s6744 Hyponatremia
-s6745 Thyroid hormones
-s6746 Nuclear receptors
-s6747 Hypothyroidism
-s6748 Thyrotoxicosis in overdose
-s6749 Thiamazole, PTU
-s6750 Thyroid peroxidase ↓
-s6751 Graves disease
-s6752 Insulins
-s6753 Aspart, lispro, regular, NPH, glargine, degludec
-s6754 Tyrosine kinase receptor
-s6755 Type 1, some type 2 diabetes, DKA
-s6756 Gluconeogenesis ↓
-s6757 Type 2 diabetes (first line)
-s6758 Gastrointestinal, lactic acidosis (GFR < 30)
-s6759 Gliclazide, glimepiride
-s6760 K~ATP~ closure
-s6761 Type 2 diabetes
-s6762 Hypoglycemia, weight
-s6763 Incretins
-s6764 Sitagliptin; semaglutide, liraglutide
-s6765 DPP-4 ↓; GLP-1 agonist
-s6766 Type 2 diabetes, obesity
-s6767 GLP-1: nausea, pancreatitis
-s6768 Empagliflozin, dapagliflozin
-s6769 Glucosuria
-s6770 Diabetes, HF, chronic kidney disease
-s6771 Ibuprofen, diclofenac, naproxen, ketorolac
-s6772 COX-1 and COX-2 ↓
-s6773 Pain, inflammation, fever
-s6774 Gastrointestinal bleeding, kidneys, cardiovascular
-s6775 Coxibs
-s6776 COX-2 ↓
-s6777 Patients at high gastric risk
-s6778 Cardiovascular thrombotic risk
-s6779 Central COX ↓
-s6780 Pain, fever (children, pregnant women)
-s6781 Hepatotoxicity (> 4 g); antidote — N-acetylcysteine
-s6782 Hydrocortisone, prednisolone, methylprednisolone, dexamethasone
-s6783 Gene transcription, phospholipase A~2~ ↓
-s6784 Inflammation, autoimmune, allergy, shock, replacement
-s6785 Cushingoid appearance, diabetes, osteoporosis, infections; adrenal insufficiency on withdrawal
-s6786 Table 15.13. Polypeptide hormones and anti-inflammatory drugs — summary
-s6787 Antiseptic and disinfectant agents. Synthetic antibacterial agents
-s6788 The fight against infections is waged in two directions: destroying microorganisms in the environment and on the skin surface (**antisepsis and disinfection**) and treating infection inside the body (**chemotherapy**). Proper hand disinfection is considered the most effective measure for preventing hospital-acquired infections. Synthetic antibacterial agents (fluoroquinolones, sulfonamides, nitrofurans, nitroimidazoles) are widely used to treat urinary tract, intestinal and anaerobic infections. Antibiotic **resistance** is a global health problem of the 21st century; that is why knowing the principles of rational use of antimicrobials is mandatory for every doctor.
-s6789 the concepts of antisepsis, disinfection and sterilization and the classification of antiseptics;
-s6790 the mechanism, spectrum of activity and uses of the main groups of antiseptics;
-s6791 the general principles of chemotherapy, the targets of antimicrobial drugs and the mechanisms of resistance;
-s6792 the mechanism, uses and adverse effects of sulfonamides, co-trimoxazole, quinolones and fluoroquinolones, nitrofurans, nitroimidazoles, oxazolidinones and 8-hydroxyquinolines.
-s6793 write prescriptions for drugs such as ethyl alcohol, chlorhexidine, povidone-iodine, hydrogen peroxide, potassium permanganate, brilliant green, ciprofloxacin, levofloxacin, co-trimoxazole, nitrofurantoin and metronidazole;
-s6794 perform the technique of hygienic hand disinfection;
-s6795 choose a synthetic antibacterial agent for a urinary tract infection.
-s6796 The main difference between antiseptic and chemotherapeutic agents is **selective action (selectivity)**. Antiseptics are protoplasmic poisons: they act on microbial and human cells **nonselectively**, so they are used only on surfaces. Chemotherapeutic agents act on targets specific to microbes and cause little harm to the macroorganism — they are used systemically.
-s6797 Common incorrect practices: 1) applying iodine and brilliant green **into an open wound** — this damages tissue and slows healing (only around the wound); 2) using boric acid in children — it is absorbed through the skin and may cause severe poisoning; 3) pouring alcohol onto an open wound. The most important thing in cleaning minor wounds is **irrigation with plenty of clean water or saline**.
-s6798 Laboratory conclusions: the effect of antiseptics depends on **concentration and contact time**; **organic matter** (blood, pus, protein) reduces the activity of most antiseptics — so a wound must first be cleaned mechanically.
-s6799 **Antimicrobial resistance** is a global threat that causes millions of deaths a year. Factors that worsen it: unjustified use of antibiotics in viral infections (ARVI, influenza), over-the-counter sales, wrong dose and duration, antibiotics in animal farming. The WHO **AWaRe** classification divides antibiotics into “Access” (can be widely used), “Watch” (use with caution) and “Reserve” groups.
-s6800 Sources of PABA reduce the effect of sulfonamides: **pus and necrotic tissue** (much PABA) and drugs that form PABA — **procaine (Novocaine), benzocaine (Anesthesin)**. That is why sulfonamides are ineffective when used together with procaine or in a purulent wound.
-s6801 Because of **serious adverse effects of fluoroquinolones** (FDA and EMA warnings), they are **not recommended as first choice** in uncomplicated cystitis, acute bronchitis and mild sinusitis: **tendinitis and tendon (Achilles) rupture** — especially in people over 60 and together with **glucocorticoids**; peripheral neuropathy (may be irreversible), CNS disorders (dizziness, insomnia, psychosis, **seizures** — especially with NSAIDs); **QT prolongation** and arrhythmias; aortic aneurysm and dissection; dysglycemia (hypo- and hyperglycemia), photosensitivity, C. difficile colitis; contraindicated **in children and adolescents** (damage to growing joint cartilage) and **in pregnancy and breastfeeding** (except for special indications).
-s6802 The spectrum of metronidazole — **“GET GAP on the Metro”**: **G**iardia, **E**ntamoeba, **T**richomonas, **G**ardnerella, **A**naerobes, **P** — H. pylori. In short: **“Anaerobes and protozoa — metronidazole”**.
-s6803 1. Basic concepts
-s6804 **Antisepsis** — destroying microorganisms on the skin, mucous membranes and wound surfaces or stopping their multiplication.
-s6805 **Disinfection** — destroying pathogenic microorganisms on objects in the environment (instruments, rooms, waste, clothing).
-s6806 **Sterilization** — complete destruction of all microorganisms, including spores (autoclave, dry heat, ethylene oxide, glutaraldehyde).
-s6807 **Chemotherapeutic agents** — agents that act selectively inside the body on microorganisms, parasites or tumor cells.
-s6808 Types of antimicrobial action: **bacteriostatic** (stops multiplication) and **bactericidal** (kills). The type of action depends on concentration, the type of microbe and the conditions of the environment.
-s6809 2. Antiseptic and disinfectant agents
-s6810 2.1. Requirements for antiseptics and factors affecting their activity
-s6811 An ideal antiseptic should be broad-spectrum, fast-acting, not lose its activity in the presence of organic matter (blood, pus), not damage tissue, not be absorbed, not cause allergy, and be inexpensive and stable. No such substance exists — each group has its own advantages and disadvantages.
-s6812 Factors affecting activity: **concentration** and contact time, temperature, the pH of the environment, **organic matter** (blood, pus and proteins inactivate most antiseptics), the type of microbe (spores, mycobacteria and non-enveloped viruses are the most resistant).
-s6813 2.2. Classification of antiseptics
-s6814 Table 16.1. Classification of antiseptic and disinfectant agents
-s6815 Alcohols
-s6816 Ethyl alcohol 70%, isopropyl alcohol
-s6817 Protein denaturation, membrane dissolution
-s6818 Antisepsis of hands and injection sites
-s6819 Halogens and halogen-containing agents
-s6820 Povidone-iodine, alcoholic iodine solution 5%, Lugol's solution; chloramine B, sodium hypochlorite, chlorinated lime
-s6821 Oxidation, halogenation of proteins
-s6822 Surgical field, skin, wounds (iodophors); disinfection (chlorine-containing agents)
-s6823 Oxidizing agents
-s6824 Hydrogen peroxide 3%, potassium permanganate
-s6825 Release of active oxygen
-s6826 Wound cleaning (mechanical action — foam), irrigation, gargling; gastric lavage in poisoning (KMnO4)
-s6827 Chlorhexidine
-s6828 Damage to the cell membrane
-s6829 Hands, surgical field, oral cavity, catheters
-s6830 Detergents (cationic surfactants)
-s6831 Benzalkonium chloride, cetylpyridinium, Miramistin, decamethoxine
-s6832 Disruption of membrane permeability
-s6833 Mucous membranes, preservative in eye drops, disinfection
-s6834 Aldehydes
-s6835 Formaldehyde (formalin), glutaraldehyde
-s6836 Alkylation of the amino groups of proteins
-s6837 Disinfection and sterilization of instruments, fixation of tissues
-s6838 Phenols
-s6839 Phenol (carbolic acid), resorcinol, cresol, triclosan
-s6840 Protein denaturation
-s6841 Disinfection; resorcinol — skin diseases
-s6842 Dyes
-s6843 Brilliant green, methylene blue, ethacridine lactate (Rivanol)
-s6844 Binding to the bacterial cell
-s6845 Skin, minor wounds, purulent skin diseases
-s6846 Salts of heavy metals
-s6847 Silver nitrate, silver sulfadiazine, Protargol, mercury compounds (historically), zinc sulfate
-s6848 Blocking the SH groups of proteins and enzymes
-s6849 Burns (silver sulfadiazine), conjunctivitis, astringent/caustic
-s6850 Acids and alkalis
-s6851 Boric acid, salicylic acid, ammonia solution
-s6852 Change in pH
-s6853 Skin diseases (rarely used; boric acid is contraindicated in children)
-s6854 Nitrofuran derivatives
-s6855 Furacilin (nitrofural)
-s6856 DNA damage
-s6857 Wound irrigation, gargling
-s6858 2.3. Features of the main antiseptics
-s6859 **Ethyl alcohol** — the **70%** concentration is the most effective: 96% alcohol rapidly coagulates the proteins on the cell surface, forms a protective layer and does not penetrate inside; at 70%, the presence of water improves denaturation. It acts on bacteria, fungi and enveloped viruses; **it does not act on spores**. It is not used on open wounds (pain, tissue necrosis). Alcohol-based antiseptics with added glycerin do not dry the skin of the hands.
-s6860 **Iodine preparations.** Alcoholic iodine solution — on the skin and around wounds; irritating, allergenic, and with long-term use — **iodism** (rhinitis, rash, increased salivation) and thyroid dysfunction. **Povidone-iodine** (an iodophor — a complex of iodine with polyvinylpyrrolidone) releases iodine slowly, irritates little, has a broad spectrum (including spores) and is widely used for surgical field antisepsis. It is not applied to large areas in newborns and pregnant women (iodine absorption — hypothyroidism).
-s6861 **Chlorhexidine** — a potent antiseptic with a long (residual) effect; it “sticks” well to the skin. The **chlorhexidine + alcohol** combination is **the most effective** for antisepsis of the surgical field and the central venous catheter site. Its activity decreases with organic matter and soap. It must not come into contact with the eye, the middle ear or the meninges (it damages them); with prolonged use as a mouthwash it stains the teeth.
-s6862 **Hydrogen peroxide 3%** — under the action of tissue catalase it releases oxygen, forms **foam** and cleans the wound mechanically; its antiseptic effect is weak and short. It helps stop capillary bleeding. Injecting it into deep closed cavities is dangerous (gas embolism).
-s6863 **Potassium permanganate** — a strong oxidizing agent; depending on the concentration it is antiseptic (0.01–0.1%), astringent and caustic (2–5%). In some poisonings (alkaloids, phosphorus) a 0.02–0.1% solution is used for gastric lavage; the **crystals** must be completely dissolved — they burn the mucosa.
-s6864 **Brilliant green 1–2%** — active against gram-positive bacteria (staphylococci); skin wounds, pyoderma, the umbilical wound. **Furacilin 0.02%** (1:5000) — irrigation of wounds and cavities; weak activity, many microorganisms are resistant.
-s6865 2.4. Hand disinfection
-s6866 According to the WHO, a large share of hospital-acquired infections is transmitted through the hands of health workers. **The 5 moments for hand hygiene** (WHO): 1) before touching a patient; 2) before an aseptic procedure; 3) after contact with body fluids; 4) after touching a patient; 5) after touching the patient's surroundings. If the hands are not visibly soiled, an **alcohol-based hand rub** (3–5 ml, rubbed for 20–30 seconds) is more effective than washing with soap; if they are visibly soiled, or after working with C. difficile or norovirus — soap and water (alcohol does not act on spores).
-s6867 2.5. Laboratory class: studying the mechanism of action of antiseptics
-s6868 This section corresponds to the 6th-semester class “Laboratory study of the mechanism of action of antiseptic agents”.
-s6869 **Experiment 1 (protein denaturation):** solutions of ethyl alcohol (70% and 96%), phenol, formaldehyde, silver nitrate and copper sulfate are added to egg white solution in test tubes — **precipitation (coagulation)** of the protein is observed. Conclusion: most antiseptics denature the proteins of the microbial cell.
-s6870 **Experiment 2 (effect of oxidizing agents):** when hydrogen peroxide is added to blood or a piece of meat, **foam** (oxygen) forms under the action of catalase; potassium permanganate solution becomes colorless on contact with organic matter (manganese(IV) oxide precipitates). Conclusion: the action of oxidizing agents is short and ends quickly in an organic environment.
-s6871 **Experiment 3 (effect of organic matter and concentration):** antiseptics of different concentrations are applied to a microbial culture (paper disk method) and the zones of growth inhibition are measured; when serum is added, the zones shrink.
-s6872 3. General principles of chemotherapy
-s6873 3.1. Targets of antimicrobial drugs
-s6874 Figure 16.1
-s6875 The main targets of antimicrobial drugs in the bacterial cell (author's diagram)
-s6876 3.2. Mechanisms of resistance
-s6877 Table 16.2. Mechanisms of bacterial resistance to antimicrobial drugs
-s6878 Drug-inactivating enzymes
-s6879 Beta-lactamases (penicillinases, extended-spectrum beta-lactamases — ESBL, carbapenemases); aminoglycoside-modifying enzymes
-s6880 Alteration of the target
-s6881 Penicillin-binding proteins (MRSA — PBP2a), DNA gyrase mutation (fluoroquinolones), ribosomal methylation (macrolides), alteration of the vancomycin target (VRE)
-s6882 Reduced entry into the cell
-s6883 Loss of porin channels (gram-negative bacteria)
-s6884 Active efflux of the drug (efflux pumps)
-s6885 Tetracyclines, fluoroquinolones, macrolides
-s6886 Alternative metabolic pathway
-s6887 Resistance to sulfonamides and trimethoprim
-s6888 Biofilm formation
-s6889 Infections of catheters and prostheses
-s6890 3.3. Basic principles of antimicrobial therapy
-s6891 **Establishing the indication** — when a bacterial infection is likely (antibiotics do not act on viral infections).
-s6892 **Identifying the pathogen** — where possible, take cultures before the antibiotic; first **empirical** therapy (according to the likely pathogens and local resistance), then switching to **targeted** therapy according to the results (de-escalation).
-s6893 **Penetration of the drug into the site of infection** (urine, CNS, bone, prostate).
-s6894 **Patient factors**: age, pregnancy, renal and hepatic function, allergy history, interactions.
-s6895 **Optimal dose, route and duration** — the shortest effective course possible.
-s6896 **Assessing effectiveness at 48–72 hours**.
-s6897 Combinations only when indicated (tuberculosis, severe sepsis, H. pylori, prevention of resistance).
-s6898 4. Synthetic antibacterial agents
-s6899 Table 16.3. Classification of synthetic antibacterial agents
-s6900 Sulfonamides
-s6901 Sulfamethoxazole, sulfadiazine, sulfasalazine, sulfacetamide (Sulfacyl sodium), silver sulfadiazine
-s6902 Competitively inhibit dihydropteroate synthetase (PABA antagonists) — bacteriostatic
-s6903 Diaminopyrimidines
-s6904 Trimethoprim
-s6905 Inhibits bacterial dihydrofolate reductase
-s6906 Combination
-s6907 Co-trimoxazole (sulfamethoxazole + trimethoprim 5:1)
-s6908 Two steps of folate synthesis — bactericidal
-s6909 Quinolones (1st generation)
-s6910 Nalidixic acid, pipemidic acid
-s6911 DNA gyrase inhibitors (urinary tract only)
+s6733 Myometrial contraction
+s6734 Labor stimulation, hemorrhage prevention
+s6735 Hyperstimulation, water intoxication
+s6736 Vasopressin analogs
+s6737 Desmopressin, terlipressin
+s6738 V~2~ / V~1~
+s6739 Diabetes insipidus, enuresis / bleeding
+s6740 Hyponatremia
+s6741 Thyroid hormones
+s6742 Nuclear receptors
+s6743 Hypothyroidism
+s6744 Thyrotoxicosis in overdose
+s6745 Thiamazole, PTU
+s6746 Thyroid peroxidase ↓
+s6747 Graves disease
+s6748 Insulins
+s6749 Aspart, lispro, regular, NPH, glargine, degludec
+s6750 Tyrosine kinase receptor
+s6751 Type 1, some type 2 diabetes, DKA
+s6752 Gluconeogenesis ↓
+s6753 Type 2 diabetes (first line)
+s6754 Gastrointestinal, lactic acidosis (GFR < 30)
+s6755 Gliclazide, glimepiride
+s6756 K~ATP~ closure
+s6757 Type 2 diabetes
+s6758 Hypoglycemia, weight
+s6759 Incretins
+s6760 Sitagliptin; semaglutide, liraglutide
+s6761 DPP-4 ↓; GLP-1 agonist
+s6762 Type 2 diabetes, obesity
+s6763 GLP-1: nausea, pancreatitis
+s6764 Empagliflozin, dapagliflozin
+s6765 Glucosuria
+s6766 Diabetes, HF, chronic kidney disease
+s6767 Ibuprofen, diclofenac, naproxen, ketorolac
+s6768 COX-1 and COX-2 ↓
+s6769 Pain, inflammation, fever
+s6770 Gastrointestinal bleeding, kidneys, cardiovascular
+s6771 Coxibs
+s6772 COX-2 ↓
+s6773 Patients at high gastric risk
+s6774 Cardiovascular thrombotic risk
+s6775 Central COX ↓
+s6776 Pain, fever (children, pregnant women)
+s6777 Hepatotoxicity (> 4 g); antidote — N-acetylcysteine
+s6778 Hydrocortisone, prednisolone, methylprednisolone, dexamethasone
+s6779 Gene transcription, phospholipase A~2~ ↓
+s6780 Inflammation, autoimmune, allergy, shock, replacement
+s6781 Cushingoid appearance, diabetes, osteoporosis, infections; adrenal insufficiency on withdrawal
+s6782 Table 15.13. Polypeptide hormones and anti-inflammatory drugs — summary
+s6783 Antiseptic and disinfectant agents. Synthetic antibacterial agents
+s6784 The fight against infections is waged in two directions: destroying microorganisms in the environment and on the skin surface (**antisepsis and disinfection**) and treating infection inside the body (**chemotherapy**). Proper hand disinfection is considered the most effective measure for preventing hospital-acquired infections. Synthetic antibacterial agents (fluoroquinolones, sulfonamides, nitrofurans, nitroimidazoles) are widely used to treat urinary tract, intestinal and anaerobic infections. Antibiotic **resistance** is a global health problem of the 21st century; that is why knowing the principles of rational use of antimicrobials is mandatory for every doctor.
+s6785 the concepts of antisepsis, disinfection and sterilization and the classification of antiseptics;
+s6786 the mechanism, spectrum of activity and uses of the main groups of antiseptics;
+s6787 the general principles of chemotherapy, the targets of antimicrobial drugs and the mechanisms of resistance;
+s6788 the mechanism, uses and adverse effects of sulfonamides, co-trimoxazole, quinolones and fluoroquinolones, nitrofurans, nitroimidazoles, oxazolidinones and 8-hydroxyquinolines.
+s6789 write prescriptions for drugs such as ethyl alcohol, chlorhexidine, povidone-iodine, hydrogen peroxide, potassium permanganate, brilliant green, ciprofloxacin, levofloxacin, co-trimoxazole, nitrofurantoin and metronidazole;
+s6790 perform the technique of hygienic hand disinfection;
+s6791 choose a synthetic antibacterial agent for a urinary tract infection.
+s6792 The main difference between antiseptic and chemotherapeutic agents is **selective action (selectivity)**. Antiseptics are protoplasmic poisons: they act on microbial and human cells **nonselectively**, so they are used only on surfaces. Chemotherapeutic agents act on targets specific to microbes and cause little harm to the macroorganism — they are used systemically.
+s6793 Common incorrect practices: 1) applying iodine and brilliant green **into an open wound** — this damages tissue and slows healing (only around the wound); 2) using boric acid in children — it is absorbed through the skin and may cause severe poisoning; 3) pouring alcohol onto an open wound. The most important thing in cleaning minor wounds is **irrigation with plenty of clean water or saline**.
+s6794 Laboratory conclusions: the effect of antiseptics depends on **concentration and contact time**; **organic matter** (blood, pus, protein) reduces the activity of most antiseptics — so a wound must first be cleaned mechanically.
+s6795 **Antimicrobial resistance** is a global threat that causes millions of deaths a year. Factors that worsen it: unjustified use of antibiotics in viral infections (ARVI, influenza), over-the-counter sales, wrong dose and duration, antibiotics in animal farming. The WHO **AWaRe** classification divides antibiotics into “Access” (can be widely used), “Watch” (use with caution) and “Reserve” groups.
+s6796 Sources of PABA reduce the effect of sulfonamides: **pus and necrotic tissue** (much PABA) and drugs that form PABA — **procaine (Novocaine), benzocaine (Anesthesin)**. That is why sulfonamides are ineffective when used together with procaine or in a purulent wound.
+s6797 Because of **serious adverse effects of fluoroquinolones** (FDA and EMA warnings), they are **not recommended as first choice** in uncomplicated cystitis, acute bronchitis and mild sinusitis: **tendinitis and tendon (Achilles) rupture** — especially in people over 60 and together with **glucocorticoids**; peripheral neuropathy (may be irreversible), CNS disorders (dizziness, insomnia, psychosis, **seizures** — especially with NSAIDs); **QT prolongation** and arrhythmias; aortic aneurysm and dissection; dysglycemia (hypo- and hyperglycemia), photosensitivity, C. difficile colitis; contraindicated **in children and adolescents** (damage to growing joint cartilage) and **in pregnancy and breastfeeding** (except for special indications).
+s6798 The spectrum of metronidazole — **“GET GAP on the Metro”**: **G**iardia, **E**ntamoeba, **T**richomonas, **G**ardnerella, **A**naerobes, **P** — H. pylori. In short: **“Anaerobes and protozoa — metronidazole”**.
+s6799 1. Basic concepts
+s6800 **Antisepsis** — destroying microorganisms on the skin, mucous membranes and wound surfaces or stopping their multiplication.
+s6801 **Disinfection** — destroying pathogenic microorganisms on objects in the environment (instruments, rooms, waste, clothing).
+s6802 **Sterilization** — complete destruction of all microorganisms, including spores (autoclave, dry heat, ethylene oxide, glutaraldehyde).
+s6803 **Chemotherapeutic agents** — agents that act selectively inside the body on microorganisms, parasites or tumor cells.
+s6804 Types of antimicrobial action: **bacteriostatic** (stops multiplication) and **bactericidal** (kills). The type of action depends on concentration, the type of microbe and the conditions of the environment.
+s6805 2. Antiseptic and disinfectant agents
+s6806 2.1. Requirements for antiseptics and factors affecting their activity
+s6807 An ideal antiseptic should be broad-spectrum, fast-acting, not lose its activity in the presence of organic matter (blood, pus), not damage tissue, not be absorbed, not cause allergy, and be inexpensive and stable. No such substance exists — each group has its own advantages and disadvantages.
+s6808 Factors affecting activity: **concentration** and contact time, temperature, the pH of the environment, **organic matter** (blood, pus and proteins inactivate most antiseptics), the type of microbe (spores, mycobacteria and non-enveloped viruses are the most resistant).
+s6809 2.2. Classification of antiseptics
+s6810 Table 16.1. Classification of antiseptic and disinfectant agents
+s6811 Alcohols
+s6812 Ethyl alcohol 70%, isopropyl alcohol
+s6813 Protein denaturation, membrane dissolution
+s6814 Antisepsis of hands and injection sites
+s6815 Halogens and halogen-containing agents
+s6816 Povidone-iodine, alcoholic iodine solution 5%, Lugol's solution; chloramine B, sodium hypochlorite, chlorinated lime
+s6817 Oxidation, halogenation of proteins
+s6818 Surgical field, skin, wounds (iodophors); disinfection (chlorine-containing agents)
+s6819 Oxidizing agents
+s6820 Hydrogen peroxide 3%, potassium permanganate
+s6821 Release of active oxygen
+s6822 Wound cleaning (mechanical action — foam), irrigation, gargling; gastric lavage in poisoning (KMnO~4~)
+s6823 Chlorhexidine
+s6824 Damage to the cell membrane
+s6825 Hands, surgical field, oral cavity, catheters
+s6826 Detergents (cationic surfactants)
+s6827 Benzalkonium chloride, cetylpyridinium, Miramistin, decamethoxine
+s6828 Disruption of membrane permeability
+s6829 Mucous membranes, preservative in eye drops, disinfection
+s6830 Aldehydes
+s6831 Formaldehyde (formalin), glutaraldehyde
+s6832 Alkylation of the amino groups of proteins
+s6833 Disinfection and sterilization of instruments, fixation of tissues
+s6834 Phenols
+s6835 Phenol (carbolic acid), resorcinol, cresol, triclosan
+s6836 Protein denaturation
+s6837 Disinfection; resorcinol — skin diseases
+s6838 Dyes
+s6839 Brilliant green, methylene blue, ethacridine lactate (Rivanol)
+s6840 Binding to the bacterial cell
+s6841 Skin, minor wounds, purulent skin diseases
+s6842 Salts of heavy metals
+s6843 Silver nitrate, silver sulfadiazine, Protargol, mercury compounds (historically), zinc sulfate
+s6844 Blocking the SH groups of proteins and enzymes
+s6845 Burns (silver sulfadiazine), conjunctivitis, astringent/caustic
+s6846 Acids and alkalis
+s6847 Boric acid, salicylic acid, ammonia solution
+s6848 Change in pH
+s6849 Skin diseases (rarely used; boric acid is contraindicated in children)
+s6850 Nitrofuran derivatives
+s6851 Furacilin (nitrofural)
+s6852 DNA damage
+s6853 Wound irrigation, gargling
+s6854 2.3. Features of the main antiseptics
+s6855 **Ethyl alcohol** — the **70%** concentration is the most effective: 96% alcohol rapidly coagulates the proteins on the cell surface, forms a protective layer and does not penetrate inside; at 70%, the presence of water improves denaturation. It acts on bacteria, fungi and enveloped viruses; **it does not act on spores**. It is not used on open wounds (pain, tissue necrosis). Alcohol-based antiseptics with added glycerin do not dry the skin of the hands.
+s6856 **Iodine preparations.** Alcoholic iodine solution — on the skin and around wounds; irritating, allergenic, and with long-term use — **iodism** (rhinitis, rash, increased salivation) and thyroid dysfunction. **Povidone-iodine** (an iodophor — a complex of iodine with polyvinylpyrrolidone) releases iodine slowly, irritates little, has a broad spectrum (including spores) and is widely used for surgical field antisepsis. It is not applied to large areas in newborns and pregnant women (iodine absorption — hypothyroidism).
+s6857 **Chlorhexidine** — a potent antiseptic with a long (residual) effect; it “sticks” well to the skin. The **chlorhexidine + alcohol** combination is **the most effective** for antisepsis of the surgical field and the central venous catheter site. Its activity decreases with organic matter and soap. It must not come into contact with the eye, the middle ear or the meninges (it damages them); with prolonged use as a mouthwash it stains the teeth.
+s6858 **Hydrogen peroxide 3%** — under the action of tissue catalase it releases oxygen, forms **foam** and cleans the wound mechanically; its antiseptic effect is weak and short. It helps stop capillary bleeding. Injecting it into deep closed cavities is dangerous (gas embolism).
+s6859 **Potassium permanganate** — a strong oxidizing agent; depending on the concentration it is antiseptic (0.01–0.1%), astringent and caustic (2–5%). In some poisonings (alkaloids, phosphorus) a 0.02–0.1% solution is used for gastric lavage; the **crystals** must be completely dissolved — they burn the mucosa.
+s6860 **Brilliant green 1–2%** — active against gram-positive bacteria (staphylococci); skin wounds, pyoderma, the umbilical wound. **Furacilin 0.02%** (1:5000) — irrigation of wounds and cavities; weak activity, many microorganisms are resistant.
+s6861 2.4. Hand disinfection
+s6862 According to the WHO, a large share of hospital-acquired infections is transmitted through the hands of health workers. **The 5 moments for hand hygiene** (WHO): 1) before touching a patient; 2) before an aseptic procedure; 3) after contact with body fluids; 4) after touching a patient; 5) after touching the patient's surroundings. If the hands are not visibly soiled, an **alcohol-based hand rub** (3–5 ml, rubbed for 20–30 seconds) is more effective than washing with soap; if they are visibly soiled, or after working with C. difficile or norovirus — soap and water (alcohol does not act on spores).
+s6863 2.5. Laboratory class: studying the mechanism of action of antiseptics
+s6864 This section corresponds to the 6th-semester class “Laboratory study of the mechanism of action of antiseptic agents”.
+s6865 **Experiment 1 (protein denaturation):** solutions of ethyl alcohol (70% and 96%), phenol, formaldehyde, silver nitrate and copper sulfate are added to egg white solution in test tubes — **precipitation (coagulation)** of the protein is observed. Conclusion: most antiseptics denature the proteins of the microbial cell.
+s6866 **Experiment 2 (effect of oxidizing agents):** when hydrogen peroxide is added to blood or a piece of meat, **foam** (oxygen) forms under the action of catalase; potassium permanganate solution becomes colorless on contact with organic matter (manganese(IV) oxide precipitates). Conclusion: the action of oxidizing agents is short and ends quickly in an organic environment.
+s6867 **Experiment 3 (effect of organic matter and concentration):** antiseptics of different concentrations are applied to a microbial culture (paper disk method) and the zones of growth inhibition are measured; when serum is added, the zones shrink.
+s6868 3. General principles of chemotherapy
+s6869 3.1. Targets of antimicrobial drugs
+s6870 Figure 16.1
+s6871 The main targets of antimicrobial drugs in the bacterial cell (author's diagram)
+s6872 3.2. Mechanisms of resistance
+s6873 Table 16.2. Mechanisms of bacterial resistance to antimicrobial drugs
+s6874 Drug-inactivating enzymes
+s6875 Beta-lactamases (penicillinases, extended-spectrum beta-lactamases — ESBL, carbapenemases); aminoglycoside-modifying enzymes
+s6876 Alteration of the target
+s6877 Penicillin-binding proteins (MRSA — PBP2a), DNA gyrase mutation (fluoroquinolones), ribosomal methylation (macrolides), alteration of the vancomycin target (VRE)
+s6878 Reduced entry into the cell
+s6879 Loss of porin channels (gram-negative bacteria)
+s6880 Active efflux of the drug (efflux pumps)
+s6881 Tetracyclines, fluoroquinolones, macrolides
+s6882 Alternative metabolic pathway
+s6883 Resistance to sulfonamides and trimethoprim
+s6884 Biofilm formation
+s6885 Infections of catheters and prostheses
+s6886 3.3. Basic principles of antimicrobial therapy
+s6887 **Establishing the indication** — when a bacterial infection is likely (antibiotics do not act on viral infections).
+s6888 **Identifying the pathogen** — where possible, take cultures before the antibiotic; first **empirical** therapy (according to the likely pathogens and local resistance), then switching to **targeted** therapy according to the results (de-escalation).
+s6889 **Penetration of the drug into the site of infection** (urine, CNS, bone, prostate).
+s6890 **Patient factors**: age, pregnancy, renal and hepatic function, allergy history, interactions.
+s6891 **Optimal dose, route and duration** — the shortest effective course possible.
+s6892 **Assessing effectiveness at 48–72 hours**.
+s6893 Combinations only when indicated (tuberculosis, severe sepsis, H. pylori, prevention of resistance).
+s6894 4. Synthetic antibacterial agents
+s6895 Table 16.3. Classification of synthetic antibacterial agents
+s6896 Sulfonamides
+s6897 Sulfamethoxazole, sulfadiazine, sulfasalazine, sulfacetamide (Sulfacyl sodium), silver sulfadiazine
+s6898 Competitively inhibit dihydropteroate synthetase (PABA antagonists) — bacteriostatic
+s6899 Diaminopyrimidines
+s6900 Trimethoprim
+s6901 Inhibits bacterial dihydrofolate reductase

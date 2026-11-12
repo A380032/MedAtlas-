@@ -1,3 +1,19 @@
+s7556 Hepatodepressive syndrome
+s7557 Decreased albumin, prothrombin, cholinesterase
+s7558 Hepatic coma
+s7559 Accumulation of ammonia, false neurotransmitters, mercaptans
+s7560 Portal vein pressure above 10–12 mm
+s7561 Portal hypertension + hypoalbuminemia + sodium retention
+s7562 Liver cirrhosis
+s7563 Fibrosis and regenerative nodules; failure + portal hypertension
+s7564 Indirect bilirubin
+s7565 Free, water-insoluble, absent from urine
+s7566 Conjugated with glucuronide, excreted in urine
+s7567 Hemolytic jaundice
+s7568 Indirect ↑, urobilin ↑, no bilirubin in urine
+s7569 Parenchymal jaundice
+s7570 Both fractions ↑, ALT ↑↑, urobilin and bilirubin present
+s7571 Direct ↑↑, no urobilin, acholic stool, itching
 s7572 Cholemia
 s7573 Itching, bradycardia, hypotension
 s7574 Acholia
@@ -22,12 +38,12 @@ s7592 **Main functions of the kidneys:** excretory (excretion of nitrogenous was
 s7593 **Urine formation** consists of three processes:
 s7594 **Glomerular ultrafiltration** — primary urine is filtered from the capillaries into Bowman's capsule (about 180 l per day). Effective filtration pressure = capillary hydrostatic pressure – (plasma oncotic pressure + intracapsular pressure) ≈ 70 – (30 + 20) = 20 mm Hg.
 s7595 **Tubular reabsorption** — 99 percent of the water and solutes are returned to the blood.
-s7596 **Tubular secretion** — certain substances (H+, K+, ammonia, drugs) are transferred from the blood into the urine.
+s7596 **Tubular secretion** — certain substances (H^+^, K^+^, ammonia, drugs) are transferred from the blood into the urine.
 s7597 **Clearance** — the volume of plasma cleared of a given substance by the kidneys in 1 minute: C = (U × V) / P, where U is the urine concentration of the substance, V is the minute diuresis and P is the plasma concentration.
 s7598 The clearance of a substance that is only filtered and neither reabsorbed nor secreted (inulin; in practice **endogenous creatinine** — the Rehberg–Tareev test) equals the **glomerular filtration rate (GFR)**.
 s7599 Table 25.1. Main parameters of renal function
 s7600 Glomerular filtration rate
-s7601 80–120 ml/min (per 1.73 m2)
+s7601 80–120 ml/min (per 1.73 m^2^)
 s7602 Tubular reabsorption
 s7603 97–99 percent
 s7604 Daily diuresis
@@ -72,7 +88,7 @@ s7642 De Toni–Debré–Fanconi syndrome
 s7643 Impaired reabsorption of many substances in the proximal tubule
 s7644 Glucosuria, aminoaciduria, phosphaturia, bicarbonaturia, rickets, acidosis
 s7645 Renal tubular acidosis
-s7646 Impaired H+ secretion (distal) or bicarbonate reabsorption (proximal)
+s7646 Impaired H^+^ secretion (distal) or bicarbonate reabsorption (proximal)
 s7647 Hyperchloremic metabolic acidosis, high urine pH
 s7648 Nephrogenic diabetes insipidus
 s7649 Insensitivity of the collecting ducts to ADH
@@ -168,8 +184,4 @@ s7738 **bone** — renal osteodystrophy;
 s7739 **water–electrolyte** — hyperkalemia, metabolic acidosis, hyperphosphatemia, hypocalcemia.
 s7740 8. Features of renal disorders in children
 s7741 In infants GFR and concentrating ability are low (they mature by 1–2 years) — they are sensitive to dehydration and to excessive fluid administration.
-s7742 Tubular bicarbonate reabsorption and H+ secretion are low — a tendency to metabolic acidosis.
-s7743 Congenital defects (urinary tract anomalies, vesicoureteral reflux) are the main cause of pyelonephritis.
-s7744 The main cause of nephrotic syndrome in children is **minimal change disease** (responds well to glucocorticoids).
-s7745 Hereditary tubulopathies (Fanconi syndrome, phosphate diabetes, renal tubular acidosis) often present in childhood with rickets-like changes and growth retardation.
-s7746 A frequent cause of acute kidney failure in children is **hemolytic uremic syndrome** (after diarrhea associated with Shiga toxin-producing Escherichia coli).
+s7742 Tubular bicarbonate reabsorption and H^+^ secretion are low — a tendency to metabolic acidosis.

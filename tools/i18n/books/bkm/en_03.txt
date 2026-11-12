@@ -49,14 +49,14 @@ s0481 **Evaluation:** normal salivary amylase activity is **160–320 units** (W
 s0482 Experiment 2: demonstrating the specificity of enzymes
 s0483 Pour 1 ml of diluted saliva into each of two test tubes.
 s0484 Add 1 ml of 1% starch to tube 1 and 1 ml of 1% sucrose solution to tube 2; keep at 38 °C for 15 minutes.
-s0485 Perform the Trommer (or Fehling) reaction in both tubes: add 1 ml of 10% NaOH and 3–5 drops of 1% CuSO4 and heat. **Result and analysis:** in tube 1 a red precipitate (Cu2O) — starch has been broken down to maltose, a reducing sugar. In tube 2 the reaction is negative — amylase does not break down sucrose (sucrose is acted on by sucrase). This shows the relative (group) specificity of the enzyme.
+s0485 Perform the Trommer (or Fehling) reaction in both tubes: add 1 ml of 10% NaOH and 3–5 drops of 1% CuSO~4~ and heat. **Result and analysis:** in tube 1 a red precipitate (Cu~2~O) — starch has been broken down to maltose, a reducing sugar. In tube 2 the reaction is negative — amylase does not break down sucrose (sucrose is acted on by sucrase). This shows the relative (group) specificity of the enzyme.
 s0486 Experiment 3: effect of temperature, activators and inhibitors on amylase activity
 s0487 Keep a saliva + starch mixture in three tubes at 0 °C (ice), 38 °C and 100 °C (previously boiled saliva) for 10 minutes; test with iodine.
-s0488 To three other tubes add, respectively, 1% NaCl (activator), 1% CuSO4 (inhibitor) and water, and keep with saliva + starch at 38 °C; test with iodine from time to time. **Result and analysis:** at 38 °C starch is broken down quickly; on ice — very slowly (reversible inactivation); with boiled saliva — not at all (denaturation). Cl- ions activate amylase (breakdown speeds up), Cu2+ ions inhibit it.
+s0488 To three other tubes add, respectively, 1% NaCl (activator), 1% CuSO~4~ (inhibitor) and water, and keep with saliva + starch at 38 °C; test with iodine from time to time. **Result and analysis:** at 38 °C starch is broken down quickly; on ice — very slowly (reversible inactivation); with boiled saliva — not at all (denaturation). Cl^-^ ions activate amylase (breakdown speeds up), Cu^2+^ ions inhibit it.
 s0489 Skill: determining the type of inhibition from a Lineweaver–Burk plot
 s0490 Draw the straight lines of 1/v against 1/[S] without inhibitor and with inhibitor.
-s0491 If the lines cross on the y-axis (1/Vmax) — Vmax is unchanged and Km has increased: **competitive inhibition**.
-s0492 If the lines cross on the x-axis (−1/Km) — Km is unchanged and Vmax has decreased: **noncompetitive inhibition**.
+s0491 If the lines cross on the y-axis (1/V~max~) — V~max~ is unchanged and K~m~ has increased: **competitive inhibition**.
+s0492 If the lines cross on the x-axis (−1/K~m~) — K~m~ is unchanged and V~max~ has decreased: **noncompetitive inhibition**.
 s0493 Conclude whether increasing the substrate concentration can abolish the inhibition.
 s0494 Skill: evaluating the result of enzyme diagnostics
 s0495 Determine which enzymes are increased.
@@ -176,7 +176,7 @@ s0608 Forms that catalyze one reaction but differ in structure (LDH1–5, CK)
 s0609 7 classes
 s0610 Oxidoreductase, transferase, hydrolase, lyase, isomerase, ligase, translocase
 s0611 Km
-s0612 [S] at v = Vmax/2; low Km — high affinity
+s0612 [S] at v = V~max~/2; low K~m~ — high affinity
 s0613 Competitive inhibition
 s0614 Km ↑, Vmax unchanged (statins, methotrexate, malonate)
 s0615 Noncompetitive inhibition
@@ -202,7 +202,7 @@ s0634 the causes and consequences of membrane damage.
 s0635 identify the type of transport according to the substance;
 s0636 explain the mechanism of hormone action by the signal transduction system;
 s0637 determine the osmotic resistance of erythrocytes.
-s0638 **Na^+^,K^+^-ATPase** uses 30–40% of the cell’s ATP (up to 70% in the brain). It maintains the membrane potential, cell volume and the Na+ gradient for secondary active transport. **Cardiac glycosides** (digoxin) inhibit this enzyme: Na+ increases inside the cell, Na+/Ca2+ exchange weakens, Ca2+ accumulates and myocardial contraction becomes stronger.
+s0638 **Na^+^,K^+^-ATPase** uses 30–40% of the cell’s ATP (up to 70% in the brain). It maintains the membrane potential, cell volume and the Na^+^ gradient for secondary active transport. **Cardiac glycosides** (digoxin) inhibit this enzyme: Na^+^ increases inside the cell, Na^+^/Ca^2+^ exchange weakens, Ca^2+^ accumulates and myocardial contraction becomes stronger.
 s0639 The consequence of cell damage is the release of intracellular enzymes into the blood (cytolysis). Therefore an increase in blood ALT, AST, CK and LDH activity is a biochemical sign of membrane damage.
 s0640 1. Structure and chemical composition of biological membranes
 s0641 **Biological membranes** are lipid-protein structures 6–10 nm thick that surround the cell and its organelles. The cell has a plasma membrane and internal membranes (the membranes of the nucleus, endoplasmic reticulum, Golgi apparatus, mitochondria and lysosomes).
@@ -214,4 +214,3 @@ s0646 **Cholesterol** — regulates the rigidity and fluidity of the membrane (a
 s0647 **Integral (transmembrane)** proteins — span the bilayer (channels, carriers, pumps, receptors).
 s0648 **Peripheral** proteins — bound to the membrane surface by ionic and hydrogen bonds.
 s0649 **Anchored** proteins — attached through a lipid “anchor” (a fatty acid, prenyl, glycosylphosphatidylinositol). **Fluid mosaic model** (S. Singer and G. Nicolson, 1972): the membrane is a fluid lipid bilayer in which proteins “float” and can move laterally.
-s0650 2. Functions and general properties of membranes

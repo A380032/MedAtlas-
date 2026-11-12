@@ -16,10 +16,10 @@ s0226 Lactate
 s0227 Acetyl-CoA
 s0228 Glycerol
 s0229 Urea
-s0230 The coenzyme of vitamin B1 (thiamine):
+s0230 The coenzyme of vitamin B~1~ (thiamine):
 s0231 Thiamine diphosphate
 s0232 FAD
-s0233 NAD+
+s0233 NAD^+^
 s0234 Pyridoxal phosphate
 s0235 Coenzyme A
 s0236 The coenzyme that takes part in transamination reactions:
@@ -39,15 +39,15 @@ s0249 9 kcal
 s0250 12 kcal
 s0251 2 kcal
 s0252 The vitamin whose deficiency causes pellagra:
-s0253 B1
-s0254 B2
+s0253 B~1~
+s0254 B~2~
 s0255 C
-s0256 B12
+s0256 B~12~
 s0257 PP (niacin)
 s0258 The vitamins in which hypervitaminosis is observed more often:
-s0259 B1 and B2
+s0259 B~1~ and B~2~
 s0260 C and PP
-s0261 B6 and B9
+s0261 B~6~ and B~9~
 s0262 A and D
 s0263 Pantothenic acid and biotin
 s0264 The substance that is a vitamin K antagonist (antivitamin):
@@ -93,15 +93,15 @@ s0303 Proteolysis
 s0304 Case 1
 s0305 A 48-year-old man has abused alcohol for 15 years and is poorly nourished. In the emergency department he was found to have confusion, impaired eye movements and an unsteady gait. Blood pyruvate and lactate levels are increased.
 s0306 Which vitamin deficiency is suspected? Why do pyruvate and lactate accumulate? What should be taken into account in treatment?
-s0307 Vitamin B1 (thiamine) deficiency — Wernicke encephalopathy. Thiamine diphosphate is the coenzyme of the pyruvate dehydrogenase complex and α-ketoglutarate dehydrogenase. In its deficiency pyruvate is not converted to acetyl-CoA, accumulates and is reduced to lactate (lactic acidosis); the Krebs cycle slows down and an ATP deficit develops in the brain. In treatment thiamine is given parenterally before glucose.
+s0307 Vitamin B~1~ (thiamine) deficiency — Wernicke encephalopathy. Thiamine diphosphate is the coenzyme of the pyruvate dehydrogenase complex and α-ketoglutarate dehydrogenase. In its deficiency pyruvate is not converted to acetyl-CoA, accumulates and is reduced to lactate (lactic acidosis); the Krebs cycle slows down and an ATP deficit develops in the brain. In treatment thiamine is given parenterally before glucose.
 s0308 Case 2
 s0309 People living in areas where they eat only maize were observed to have dermatitis on sun-exposed areas of skin, diarrhea and memory loss.
 s0310 What is the disease? What is its biochemical cause?
-s0311 Pellagra — niacin (vitamin PP) deficiency (“3 Ds”: dermatitis, diarrhea, dementia). In maize niacin is in a bound (non-absorbable) form and tryptophan is low — so the synthesis of niacin from tryptophan is also insufficient. Niacin is part of NAD+ and NADP+; when they are deficient many dehydrogenase reactions are impaired, and rapidly renewing tissues (skin, intestinal epithelium) and the nervous system are damaged.
+s0311 Pellagra — niacin (vitamin PP) deficiency (“3 Ds”: dermatitis, diarrhea, dementia). In maize niacin is in a bound (non-absorbable) form and tryptophan is low — so the synthesis of niacin from tryptophan is also insufficient. Niacin is part of NAD^+^ and NADP^+^; when they are deficient many dehydrogenase reactions are impaired, and rapidly renewing tissues (skin, intestinal epithelium) and the nervous system are damaged.
 s0312 Case 3
 s0313 A 9-month-old child is fed only cow’s milk and semolina porridge and is rarely taken outdoors. Examination shows a flattened occiput, a “rosary” on the ribs and “bracelets” on the wrists. Blood alkaline phosphatase is increased and phosphate is decreased.
 s0314 What is the diagnosis? Explain the biochemical mechanism.
-s0315 Rickets — vitamin D deficiency. Lack of sunlight reduces the synthesis of cholecalciferol in the skin, and the diet is also poor in vitamin D. The active form calcitriol (hydroxylated in the liver and kidney) provides the absorption of Ca2+ and phosphate in the intestine; in its deficiency bone mineralization is impaired and osteoid tissue increases (osteoblast activity — alkaline phosphatase rises). Treatment: vitamin D, sunbathing, proper feeding.
+s0315 Rickets — vitamin D deficiency. Lack of sunlight reduces the synthesis of cholecalciferol in the skin, and the diet is also poor in vitamin D. The active form calcitriol (hydroxylated in the liver and kidney) provides the absorption of Ca^2+^ and phosphate in the intestine; in its deficiency bone mineralization is impaired and osteoid tissue increases (osteoblast activity — alkaline phosphatase rises). Treatment: vitamin D, sunbathing, proper feeding.
 s0316 Metabolism
 s0317 The sum of chemical reactions in the body: catabolism + anabolism
 s0318 Catabolism
@@ -119,10 +119,10 @@ s0329 Val, Leu, Ile, Thr, Met, Lys, Phe, Trp
 s0330 Thiamine diphosphate — oxidative decarboxylation
 s0331 FMN, FAD — oxidation-reduction
 s0332 PP
-s0333 NAD+, NADP+ — dehydrogenases
-s0334 B6
+s0333 NAD^+^, NADP^+^ — dehydrogenases
+s0334 B~6~
 s0335 Pyridoxal phosphate — transamination, decarboxylation
-s0336 Folate, B12
+s0336 Folate, B~12~
 s0337 One-carbon groups; megaloblastic anemia in deficiency
 s0338 Carboxylation
 s0339 Antivitamins
@@ -145,7 +145,7 @@ s0355 Order of the classes: **“Over The Hill Lies Ivan’s Little Town”** �
 s0356 1. The concept of enzymes. Structure
 s0357 **Enzymes** are biological catalysts formed in living cells that accelerate chemical reactions. Almost all enzymes are **proteins** (except RNA molecules with catalytic activity — **ribozymes**). The science that studies enzymes is **enzymology**.
 s0358 **Simple enzymes** consist only of amino acids (pepsin, trypsin, ribonuclease).
-s0359 **Complex enzymes (holoenzyme)** = a protein part (**apoenzyme**) + a nonprotein part (**cofactor**). The cofactor may be a metal ion (Zn2+, Mg2+, Fe2+, Cu2+, Mn2+) or an organic substance — a **coenzyme**. A coenzyme firmly (covalently) bound to the apoenzyme is called a **prosthetic group** (for example, FAD in succinate dehydrogenase). The **active site** is the part of the enzyme molecule that binds the substrate and provides its chemical transformation. It is formed from amino acid residues located in different parts of the polypeptide chain when the tertiary structure forms, and consists of two parts:
+s0359 **Complex enzymes (holoenzyme)** = a protein part (**apoenzyme**) + a nonprotein part (**cofactor**). The cofactor may be a metal ion (Zn^2+^, Mg^2+^, Fe^2+^, Cu^2+^, Mn^2+^) or an organic substance — a **coenzyme**. A coenzyme firmly (covalently) bound to the apoenzyme is called a **prosthetic group** (for example, FAD in succinate dehydrogenase). The **active site** is the part of the enzyme molecule that binds the substrate and provides its chemical transformation. It is formed from amino acid residues located in different parts of the polypeptide chain when the tertiary structure forms, and consists of two parts:
 s0360 **the binding (contact) part** — recognizes and binds the substrate (determines specificity);
 s0361 **the catalytic part** — carries out the chemical transformation (often serine, histidine, cysteine, aspartate and glutamate residues).
 s0362 The **allosteric site** is a part located outside the active site that binds regulatory molecules (**effectors**). When an effector binds, the conformation of the enzyme and of its active site changes: an **activator** increases activity, an **inhibitor** decreases it. Allosteric enzymes usually consist of several subunits (quaternary structure).
@@ -176,7 +176,7 @@ s0386 Joining of two molecules using the energy of ATP
 s0387 Pyruvate carboxylase, DNA ligase, glutamine synthetase
 s0388 7. Translocases
 s0389 Transfer of ions and molecules across a membrane
-s0390 Na+,K+-ATPase, ATP synthase
+s0390 Na^+^,K^+^-ATPase, ATP synthase
 s0391 3. Mechanism of enzyme action
 s0392 For any chemical reaction to start, molecules must overcome the **activation energy** barrier. Enzymes carry the reaction along another route with a lower activation energy and increase its rate 10^8^–10^12^ times. The equilibrium of the reaction and the overall energy change (ΔG) do not change.
 s0393 Stages of an enzyme reaction:
@@ -204,19 +204,19 @@ s0414 Acid phosphatase (lysosomes)
 s0415 5. Kinetics of enzyme reactions
 s0416 **Dependence on enzyme concentration.** When the substrate is in excess, the reaction rate is directly proportional to the amount of enzyme. The determination of enzyme activity is based on this.
 s0417 **Dependence on substrate concentration.** When the substrate is low, the rate increases in direct proportion to it; as the substrate increases, all enzyme molecules become occupied and the rate approaches its maximum (Vmax) — a **hyperbolic curve**. This dependence is expressed by the **Michaelis–Menten equation**:
-s0418 v = Vmax · [S] / (Km + [S])
-s0419 The **Michaelis constant (K~m~)** is the substrate concentration (mol/l) at which the reaction rate equals half the maximum rate. Km shows the **affinity** of the enzyme for the substrate: the smaller the Km, the higher the affinity. For example, the Km of hexokinase for glucose is ≈ 0.1 mmol/l (high affinity, it works even when glucose is low), while that of glucokinase is ≈ 10 mmol/l (it works only when glucose is high — in the liver after a meal).
-s0420 To find Km and Vmax precisely, the double-reciprocal plot — the **Lineweaver–Burk plot** (1/v against 1/[S]) — is used: the straight line crosses the y-axis at 1/Vmax and the x-axis at −1/Km.
+s0418 v = V~max~ · [S] / (K~m~ + [S])
+s0419 The **Michaelis constant (K~m~)** is the substrate concentration (mol/l) at which the reaction rate equals half the maximum rate. K~m~ shows the **affinity** of the enzyme for the substrate: the smaller the K~m~, the higher the affinity. For example, the K~m~ of hexokinase for glucose is ≈ 0.1 mmol/l (high affinity, it works even when glucose is low), while that of glucokinase is ≈ 10 mmol/l (it works only when glucose is high — in the liver after a meal).
+s0420 To find K~m~ and V~max~ precisely, the double-reciprocal plot — the **Lineweaver–Burk plot** (1/v against 1/[S]) — is used: the straight line crosses the y-axis at 1/V~max~ and the x-axis at −1/K~m~.
 s0421 Figure 2.2
 s0422 The Michaelis–Menten curve and the Lineweaver–Burk plot; the effect of inhibitors (drawn after Severin E.S.)
 s0423 **Units of enzyme activity:** the international unit (IU, U) — the amount of enzyme that converts 1 µmol of substrate per minute; the **katal** (SI) — the amount of enzyme that converts 1 mol of substrate per second (1 U = 16.67 nkat). **Specific activity** is the activity per 1 mg of protein.
 s0424 6. Enzyme inhibitors
 s0425 **Inhibitors** are substances that reduce enzyme activity.
-s0426 **Irreversible inhibition** — the inhibitor binds covalently to a functional group of the active site: organophosphorus compounds (sarin, chlorophos) with the serine of acetylcholinesterase, aspirin acetylates cyclooxygenase, heavy metals (Hg2+, Pb2+) with SH groups, cyanides with the iron of cytochrome oxidase.
+s0426 **Irreversible inhibition** — the inhibitor binds covalently to a functional group of the active site: organophosphorus compounds (sarin, chlorophos) with the serine of acetylcholinesterase, aspirin acetylates cyclooxygenase, heavy metals (Hg^2+^, Pb^2+^) with SH groups, cyanides with the iron of cytochrome oxidase.
 s0427 **Reversible inhibition:**
 s0428 **Competitive** — the inhibitor is similar in structure to the substrate and competes with the substrate for the active site. Its effect can be abolished by increasing the substrate concentration. **K~m~ increases, V~max~ does not change.** Examples: malonate — succinate dehydrogenase; sulfonamides — folate synthesis from para-aminobenzoic acid in bacteria; methotrexate — dihydrofolate reductase; statins — HMG-CoA reductase.
 s0429 **Noncompetitive** — the inhibitor binds outside the active site and changes the enzyme’s conformation; the effect does not disappear even when the substrate is increased. **V~max~ decreases, K~m~ does not change.**
 s0430 **Allosteric inhibition** — binding of an effector to the allosteric site (see below).
-s0431 Many drugs are enzyme inhibitors: ACE inhibitors (captopril, enalapril — angiotensin-converting enzyme), statins (HMG-CoA reductase), allopurinol (xanthine oxidase — in gout), proton pump inhibitors (H+,K+-ATPase), NSAIDs (cyclooxygenase), neostigmine (acetylcholinesterase — in myasthenia). In methanol poisoning ethanol is given: ethanol **competes** with methanol for alcohol dehydrogenase and slows its conversion into toxic formaldehyde.
+s0431 Many drugs are enzyme inhibitors: ACE inhibitors (captopril, enalapril — angiotensin-converting enzyme), statins (HMG-CoA reductase), allopurinol (xanthine oxidase — in gout), proton pump inhibitors (H^+^,K^+^-ATPase), NSAIDs (cyclooxygenase), neostigmine (acetylcholinesterase — in myasthenia). In methanol poisoning ethanol is given: ethanol **competes** with methanol for alcohol dehydrogenase and slows its conversion into toxic formaldehyde.
 s0432 7. Regulation of enzyme activity
 s0433 **Change in the amount of enzyme** — induction or repression of synthesis (under the action of hormones and substrates; for example, cortisol induces the enzymes of gluconeogenesis, insulin induces glucokinase) and the rate of degradation.

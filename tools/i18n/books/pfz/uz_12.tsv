@@ -18,7 +18,7 @@ s2285	Gistamin, serotonin, prostaglandinlar, leykotriyenlar, sitokinlar, NO
 s2286	Plazma mediatorlari
 s2287	Kininlar, komplement, qon ivish va fibrinoliz mahsulotlari
 s2288	Xemoattraktantlar
-s2289	C5a, LTB4, IL-8, bakterial peptidlar
+s2289	C5a, LTB~4~, IL-8, bakterial peptidlar
 s2290	Tomir reaksiyalari
 s2291	Spazm → arterial giperemiya → venoz giperemiya → prestaz → staz
 s2292	Ekssudat
@@ -40,7 +40,7 @@ s2307	baqa ichak tutqichida leykotsitlar emigratsiyasini kuzatish va bosqichlari
 s2308	emigratsiyaga ion tarkibi o‘zgarishining ta’sirini tajribada aniqlash;
 s2309	fagotsitar son va fagotsitar indeksni hisoblash hamda baholash.
 s2310	Emigratsiyada fizik-kimyoviy omillarning roli: yallig‘lanish o‘chog‘idagi **atsidoz** va **K^+^ ionlarining ko‘payishi** endoteliy va leykotsitlar sirt xususiyatlarini o‘zgartirib, emigratsiyani kuchaytiradi; **Ca^2+^ ionlari** aksincha tomir devorini zichlashtiradi va o‘tkazuvchanlik hamda emigratsiyani susaytiradi. Bu qoida tajriba qismida tekshiriladi.
-s2311	Mieloperoksidaza tizimi = “uy oqartirgichi”: H2O2 + Cl− → HOCl. Yiringning yashil-sarg‘ish rangi aynan mieloperoksidaza (yashil pigmentli ferment) bilan bog‘liq.
+s2311	Mieloperoksidaza tizimi = “uy oqartirgichi”: H~2~O~2~ + Cl^−^ → HOCl. Yiringning yashil-sarg‘ish rangi aynan mieloperoksidaza (yashil pigmentli ferment) bilan bog‘liq.
 s2312	Kalsiy preparatlarining “yallig‘lanishga qarshi” va “allergiyaga qarshi” ta’siri haqidagi eski tasavvurlar aynan shu kabi tajribalarga asoslangan. Zamonaviy klinik amaliyotda kalsiy preparatlari bu maqsadda samarali vosita hisoblanmaydi; ulardan faqat gipokalsiyemiyada foydalaniladi.
 s2313	Fagotsitoz ko‘rsatkichlarining me’yoriy qiymatlari laboratoriyada qo‘llaniladigan usul va obyektga (mikrob turi, ekspozitsiya vaqti) bog‘liq. Natijani har doim shu laboratoriyaning nazorat ko‘rsatkichlari bilan solishtiring.
 s2314	1. Leykotsitlar emigratsiyasi
@@ -63,7 +63,7 @@ s2330	Leykotsit psevdopodiyalar chiqarib, endotelial hujayralar orasidan o‘tad
 s2331	PECAM-1 (CD31), kollagenazalar
 s2332	Xemotaksis
 s2333	To‘qimada xemoattraktantlar konsentratsiyasi gradienti bo‘yicha o‘choq tomon yo‘nalgan harakat
-s2334	C5a, LTB4, IL-8, bakterial N-formil peptidlar
+s2334	C5a, LTB~4~, IL-8, bakterial N-formil peptidlar
 s2335	**Leykotsitlar adgeziyasi yetishmovchiligi** — integrinlarning (CD18) irsiy nuqsoni bilan bog‘liq kam uchraydigan kasallik. Bunday bolalarda leykotsitlar tomirdan chiqa olmaydi: qonda neytrofillar ko‘p, ammo yiring hosil bo‘lmaydi, kindik qoldig‘i kech tushadi, takroriy og‘ir bakterial infeksiyalar kuzatiladi. Bu misol emigratsiyaning himoya ahamiyatini yaqqol ko‘rsatadi.
 s2336	Emigratsiyaning ketma-ketligi
 s2337	I.I. Mechnikov aniqlaganidek, o‘tkir yallig‘lanishda leykotsitlar ma’lum tartibda chiqadi:
@@ -90,12 +90,12 @@ s2357	Bakterial N-formil peptidlar, bakteriya hujayra devori komponentlari (lipo
 s2358	Komplement fragmentlari
 s2359	C5a (eng kuchli), C3a
 s2360	Lipid mediatorlar
-s2361	Leykotriyen B4, trombotsitlarni faollashtiruvchi omil
+s2361	Leykotriyen B~4~, trombotsitlarni faollashtiruvchi omil
 s2362	Xemokinlar
 s2363	IL-8 (CXCL8) — neytrofillar uchun; MCP-1 — monotsitlar uchun; eotaksin — eozinofillar uchun
 s2364	Boshqa
 s2365	Fibrin va kollagen parchalanish mahsulotlari
-s2366	Xemoattraktant leykotsit membranasidagi retseptorga bog‘lanadi → G-oqsil orqali signal uzatiladi → hujayra ichida Ca2+ ortadi, aktin polimerlanadi → leykotsit o‘choq tomon psevdopodiya chiqarib harakatlanadi.
+s2366	Xemoattraktant leykotsit membranasidagi retseptorga bog‘lanadi → G-oqsil orqali signal uzatiladi → hujayra ichida Ca^2+^ ortadi, aktin polimerlanadi → leykotsit o‘choq tomon psevdopodiya chiqarib harakatlanadi.
 s2367	3. Fagotsitoz
 s2368	**Fagotsitoz** (yunon. phagein — yutish, kytos — hujayra) — maxsus hujayralar (fagotsitlar) tomonidan yot zarrachalar, mikroorganizmlar va o‘lik hujayralarni faol yutish va hazm qilish. Fagotsitozni I.I. Mechnikov 1883 yilda kashf etgan va uni yallig‘lanishning asosiy himoya mexanizmi deb hisoblagan.
 s2369	Fagotsitlar:
@@ -115,7 +115,7 @@ s2382	Fagosoma lizosomalar bilan qo‘shiladi
 s2383	O‘ldirish va hazm qilish
 s2384	Kislorodga bog‘liq va bog‘liq bo‘lmagan mexanizmlar bilan mikrob o‘ldiriladi, gidrolitik fermentlar bilan parchalanadi
 s2385	Mikroblarni o‘ldirish mexanizmlari
-s2386	**Kislorodga bog‘liq mexanizm (“respirator portlash”):** fagotsitoz paytida kislorod sarfi keskin ortadi; NADF·H-oksidaza superoksid anion (O2−) hosil qiladi, undan vodorod peroksidi (H2O2) va gidroksil radikali paydo bo‘ladi; mieloperoksidaza H2O2 va xlor ionidan juda kuchli bakteritsid modda — gipoxlorit kislota (HOCl) hosil qiladi.
+s2386	**Kislorodga bog‘liq mexanizm (“respirator portlash”):** fagotsitoz paytida kislorod sarfi keskin ortadi; NADF·H-oksidaza superoksid anion (O~2~^−^) hosil qiladi, undan vodorod peroksidi (H~2~O~2~) va gidroksil radikali paydo bo‘ladi; mieloperoksidaza H~2~O~2~ va xlor ionidan juda kuchli bakteritsid modda — gipoxlorit kislota (HOCl) hosil qiladi.
 s2387	**Kislorodga bog‘liq bo‘lmagan mexanizm:** lizotsim (bakteriya devorini parchalaydi), defensinlar (membranada teshik hosil qiladi), laktoferrin (temirni bog‘lab, bakteriya o‘sishini to‘xtatadi), kation oqsillar, proteazalar, fagolizosomadagi kislotali muhit.
 s2388	Fagotsitozning tugallanganligi
 s2389	**Tugallangan fagotsitoz** — yutilgan mikrob o‘ldiriladi va to‘liq hazm qilinadi.
@@ -150,7 +150,7 @@ s2417	Keng shikastlanish, regeneratsiya qobiliyati past to‘qima (miokard, neyr
 s2418	5. Yallig‘lanishning umumiy belgilari
 s2419	Yallig‘lanish mahalliy jarayon bo‘lsa-da, butun organizmning javobi bilan kechadi.
 s2420	Jadval 7.7. Yallig‘lanishning umumiy belgilari
-s2421	IL-1, IL-6, TNF-alfa → gipotalamusda PGE2 → termoregulyatsiya markazi sozlamasining oshishi
+s2421	IL-1, IL-6, TNF-alfa → gipotalamusda PGE~2~ → termoregulyatsiya markazi sozlamasining oshishi
 s2422	Leykotsitoz (neytrofilyoz, chapga siljish)
 s2423	Sitokinlar va koloniya stimullovchi omillar ta’sirida suyak ko‘migidan leykotsitlar chiqishi va hosil bo‘lishining kuchayishi
 s2424	ECHT (eritrotsitlar cho‘kish tezligi) oshishi
@@ -180,4 +180,3 @@ s2447	Bu tajriba kafedra rejasida “Danilevskiy tajribasi” nomi bilan ko‘rs
 s2448	Ikkita baqada ichak tutqichi preparatini tayyorlang.
 s2449	Birinchi preparatga kaliy xlorid eritmasi (yoki zaif kislotali bufer eritma) tomizib turing.
 s2450	Ikkinchi preparatga kalsiy xlorid eritmasi tomizib turing.
-s2451	Ikkala preparatda bir xil vaqt davomida emigratsiya jadalligini (tomirdan chiqqan leykotsitlar sonini) solishtiring.

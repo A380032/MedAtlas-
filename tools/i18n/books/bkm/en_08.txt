@@ -1,5 +1,12 @@
+s1501 Glucose + 2NAD^+^ + 2ADP + 2Pi → 2 Pyruvate + 2NADH + 2H^+^ + 2ATP + 2H~2~O
+s1502 **Key (irreversible) enzymes:** hexokinase (glucokinase), **phosphofructokinase-1** (the main one), pyruvate kinase.
+s1503 Table 6.4. Regulation of phosphofructokinase-1
+s1504 Activators
+s1505 AMP, ADP (little energy)
+s1506 ATP (plenty of energy)
+s1507 Fructose-2,6-bisphosphate (increases under the action of insulin; the strongest activator)
 s1508 Citrate (enough products of the Krebs cycle)
-s1509 H+ (acidosis)
+s1509 H^+^ (acidosis)
 s1510 **Pyruvate kinase** is activated by fructose-1,6-bisphosphate (a “feed-forward signal” from the preceding step) and inhibited by ATP and alanine; in the liver it is phosphorylated and inactivated under the action of glucagon.
 s1511 Transfer of the hydrogen of cytosolic NADH into the mitochondria
 s1512 Under aerobic conditions the NADH formed in glycolysis must be oxidized in the respiratory chain, but the inner mitochondrial membrane is impermeable to NADH. The hydrogen passes through **shuttle mechanisms**:
@@ -12,7 +19,7 @@ s1518 2 + 2 × (1.5 or 2.5) = 5–7
 s1519 2 pyruvate → 2 acetyl-CoA
 s1520 2 NADH
 s1521 2 acetyl-CoA → Krebs cycle
-s1522 6 NADH, 2 FADH2, 2 GTP
+s1522 6 NADH, 2 FADH~2~, 2 GTP
 s1523 30–32 ATP (36–38 by the old calculation)
 s1524 **The Pasteur effect** is the fall in glucose consumption under aerobic conditions: when oxygen is present, more ATP and citrate are formed and they inhibit phosphofructokinase.
 s1525 6. Glycogenoses and aglycogenoses
@@ -44,8 +51,8 @@ s1550 Pour 1 ml of 1% starch and 1 ml of 1% glycogen solution into two test tube
 s1551 Add 1 drop of Lugol’s solution to each; then heat and cool. **Result and analysis:** starch gives a blue color and glycogen a red-brown one (iodine enters the spiral of the polysaccharide and forms a complex; because the branches of glycogen are short, the color is different). On heating the spiral is destroyed and the color disappears; on cooling it returns.
 s1552 Experiment 2: the Trommer reaction for reducing carbohydrates
 s1553 Pour 1 ml each of 1% glucose, sucrose and lactose solutions into test tubes.
-s1554 Add to each 1 ml of 10% NaOH and 3–5 drops of 1% CuSO4 (the blue Cu(OH)2 precipitate dissolves).
-s1555 Heat the upper part to boiling. **Result and analysis:** with glucose and lactose a yellow (CuOH) and then a red-brick (Cu2O) precipitate forms — they are reducing sugars (they have a free hemiacetal hydroxyl). Sucrose gives no reaction (both hemiacetal hydroxyls are used in the glycosidic bond), but after hydrolysis with acid it gives a positive reaction.
+s1554 Add to each 1 ml of 10% NaOH and 3–5 drops of 1% CuSO~4~ (the blue Cu(OH)2 precipitate dissolves).
+s1555 Heat the upper part to boiling. **Result and analysis:** with glucose and lactose a yellow (CuOH) and then a red-brick (Cu~2~O) precipitate forms — they are reducing sugars (they have a free hemiacetal hydroxyl). Sucrose gives no reaction (both hemiacetal hydroxyls are used in the glycosidic bond), but after hydrolysis with acid it gives a positive reaction.
 s1556 Experiment 3: the Seliwanoff reaction for fructose
 s1557 Add to a test tube 1 ml of 1% fructose solution and 1 ml of Seliwanoff reagent (a solution of resorcinol in concentrated HCl); heat to boiling.
 s1558 Compare with glucose. **Result and analysis:** fructose (a ketose) quickly gives a red color — in acid it is converted into hydroxymethylfurfural, which forms a colored compound with resorcinol. With glucose (an aldose) the color develops very slowly and is weak. Sucrose is also positive (it contains fructose). This reaction is used to detect fructose in urine (fructosuria).
@@ -82,7 +89,7 @@ s1588 Maltase
 s1589 Lactase
 s1590 Sucrase
 s1591 Isomaltase
-s1592 The transporter by which glucose is absorbed in the intestine together with Na+:
+s1592 The transporter by which glucose is absorbed in the intestine together with Na^+^:
 s1593 SGLT1
 s1594 The tissues in which the insulin-dependent glucose transporter is found:
 s1595 In the liver and erythrocytes
@@ -94,7 +101,7 @@ s1600 How glucokinase differs from hexokinase:
 s1601 It is found in all tissues
 s1602 Its Km is very low
 s1603 It is inhibited by glucose-6-phosphate
-s1604 High Km, not inhibited by glucose-6-phosphate, induced by insulin
+s1604 High K~m~, not inhibited by glucose-6-phosphate, induced by insulin
 s1605 It is found only in muscle
 s1606 The active form of glucose in glycogen synthesis:
 s1607 Glucose-1-phosphate
@@ -120,7 +127,7 @@ s1626 Triose phosphate isomerase
 s1627 Phosphofructokinase-1
 s1628 The strongest allosteric activator of phosphofructokinase-1:
 s1629 Fructose-2,6-bisphosphate
-s1630 H+
+s1630 H^+^
 s1631 The enzyme that catalyzes substrate-level phosphorylation in glycolysis:
 s1632 Hexokinase
 s1633 The ATP formed in the aerobic oxidation of glucose (current calculation):
@@ -154,14 +161,14 @@ s1660 Which enzyme is deficient? Why does lactate not rise? Explain the “secon
 s1661 McArdle disease (glycogenosis type V) — deficiency of muscle glycogen phosphorylase. Muscle glycogen is not broken down, and at the start of exercise no glucose-6-phosphate is formed for glycolysis — an ATP deficit, muscle cramps, damage to muscle cells and release of myoglobin into the urine (brown urine). Because there is no glycolysis, lactate does not rise. The “second wind” — after a few minutes blood flow increases and more glucose and fatty acids reach the muscle from the blood, so the energy supply improves.
 s1662 A 25-year-old woman complains of bloating, rumbling and loose stools 1–2 hours after drinking milk. She tolerates kefir and cheese well. In the hydrogen breath test, hydrogen in the exhaled air rose sharply after a lactose load.
 s1663 What is the diagnosis? Explain the mechanism of the signs and why she tolerates fermented milk products.
-s1664 Lactase deficiency (in adults, primary: a genetically determined fall in lactase activity). Lactose is not broken down or absorbed in the small intestine; in the large intestine it is osmotically active and retains water (osmotic diarrhea), and bacteria ferment it to H2, CO2 and short-chain acids (flatulence, pain; a rise in H2 in the breath). In fermented milk products most of the lactose has been broken down by lactic acid bacteria, and cheese contains very little lactose.
+s1664 Lactase deficiency (in adults, primary: a genetically determined fall in lactase activity). Lactose is not broken down or absorbed in the small intestine; in the large intestine it is osmotically active and retains water (osmotic diarrhea), and bacteria ferment it to H~2~, CO~2~ and short-chain acids (flatulence, pain; a rise in H~2~ in the breath). In fermented milk products most of the lactose has been broken down by lactic acid bacteria, and cheese contains very little lactose.
 s1665 Digestive enzymes
 s1666 Amylase (saliva, pancreas); sucrase-isomaltase, maltase, lactase (enterocytes)
 s1667 Absorption
 s1668 Glucose, galactose — SGLT1; fructose — GLUT5; into the blood — GLUT2
 s1669 Muscle, adipose tissue; insulin-dependent
 s1670 Hexokinase / glucokinase
-s1671 Low / high Km; inhibited / not inhibited by G-6-P
+s1671 Low / high K~m~; inhibited / not inhibited by G-6-P
 s1672 Glycogenesis
 s1673 G-1-P + UTP → UDP-glucose → glycogen synthase (key) + branching enzyme
 s1674 Glycogenolysis
@@ -194,12 +201,9 @@ s1700 give a biochemical explanation of the causes of hyper- and hypoglycemia.
 s1701 **Fructose-2,6-bisphosphate** is the “key” to glycolysis and gluconeogenesis in the liver: insulin increases its formation and thereby glycolysis, while glucagon (through cAMP) decreases it and increases gluconeogenesis.
 s1702 1. Anaerobic glycolysis
 s1703 When oxygen is lacking (intense muscle work, hypoxia) or in cells without mitochondria (**erythrocytes**), pyruvate is reduced to lactate by **lactate dehydrogenase**:
-s1704 Pyruvate + NADH + H+ → Lactate + NAD+
-s1705 This reaction regenerates NAD+ for glyceraldehyde-3-phosphate dehydrogenase and allows glycolysis to continue without oxygen.
-s1706 **The overall equation of anaerobic glycolysis:** Glucose + 2ADP + 2Pi → 2 Lactate + 2ATP + 2H2O
+s1704 Pyruvate + NADH + H^+^ → Lactate + NAD^+^
+s1705 This reaction regenerates NAD^+^ for glyceraldehyde-3-phosphate dehydrogenase and allows glycolysis to continue without oxygen.
+s1706 **The overall equation of anaerobic glycolysis:** Glucose + 2ADP + 2Pi → 2 Lactate + 2ATP + 2H~2~O
 s1707 The energy yield is **2 ATP** (≈ 15 times less than in aerobic oxidation), but it is fast and needs no oxygen. Anaerobic glycolysis is characteristic mainly of erythrocytes, the retina and lens of the eye, the renal medulla, white muscle fibers and tumor cells.
-s1708 **Alcoholic fermentation** (in yeast): pyruvate → acetaldehyde + CO2 (pyruvate decarboxylase, TDP) → ethanol (alcohol dehydrogenase, NADH). Fermentation is used in baking bread and in making wine and beer.
+s1708 **Alcoholic fermentation** (in yeast): pyruvate → acetaldehyde + CO~2~ (pyruvate decarboxylase, TDP) → ethanol (alcohol dehydrogenase, NADH). Fermentation is used in baking bread and in making wine and beer.
 s1709 **Lactic acidosis** — blood lactate > 5 mmol/l and pH < 7.35 (normal lactate 0.5–2.2 mmol/l). Causes: tissue hypoxia (shock, heart failure, sepsis, severe anemia — type A), liver failure (lactate is not used in gluconeogenesis), metformin, thiamine deficiency, mitochondrial diseases (type B). Tumor cells break glucose down to lactate even in the presence of oxygen
-s1710 — the **Warburg effect**; this underlies the detection of tumors in PET scanning (^18^F-fluorodeoxyglucose).
-s1711 2. Gluconeogenesis
-s1712 **Gluconeogenesis** is the synthesis of glucose from non-carbohydrate substances. It takes place mainly in the **liver** (≈ 90%) and in the **renal cortex** (up to ≈ 40% in prolonged starvation). Its significance: maintaining blood glucose during starvation, when the glycogen store is exhausted (after 12–24 hours) — the brain (≈ 120 g per day), the erythrocytes and the renal medulla need glucose.

@@ -54,7 +54,7 @@ s5528 7 days
 s5529 Hb 90 g/l, erythrocytes 3.0 × 10^12^/l. What is the color index?
 s5530 Microspherocytosis and decreased osmotic resistance of erythrocytes are typical of which disease?
 s5531 Iron deficiency anemia
-s5532 B12 deficiency anemia
+s5532 B~12~ deficiency anemia
 s5533 Aplastic anemia
 s5534 In which stage after acute blood loss are dilution of the blood and a fall in hemoglobin observed?
 s5535 Reflex stage
@@ -63,7 +63,7 @@ s5537 Recovery stage
 s5538 In the first hour
 s5539 Hydremic stage
 s5540 Reticulocytosis is typical of which anemia?
-s5541 Untreated B12 deficiency anemia
+s5541 Untreated B~12~ deficiency anemia
 s5542 Hemolytic anemia
 s5543 Iron deficiency anemia (before treatment)
 s5544 Anemia of chronic kidney failure
@@ -108,7 +108,7 @@ s5582 Hemoglobin below 130 g/l
 s5583 Hemoglobin below 110 g/l
 s5584 Hemoglobin below 100 g/l
 s5585 Megalocytes and Howell–Jolly bodies are typical of which anemia?
-s5586 Vitamin B12 and folic acid deficiency anemia
+s5586 Vitamin B~12~ and folic acid deficiency anemia
 s5587 Thalassemia
 s5588 Hereditary spherocytosis
 s5589 A 35-year-old man lost blood from the femoral artery in a car accident. In hospital 1 hour after the accident: pulse 125 beats/min, arterial pressure 90/60 mm Hg, pale skin, cold sweat. Blood test: Hb 138 g/l, erythrocytes 4.4 × 10^12^/l, hematocrit 42 %. The next day: Hb 92 g/l, hematocrit 28 %. On day 6, reticulocytes 6 %.
@@ -143,10 +143,10 @@ s5617 HbS, vaso-occlusive crises
 s5618 Supravital staining
 s5619 Detecting reticulocytes with brilliant cresyl blue
 s5620 Etiology and pathogenesis of deficiency anemias. Iron, vitamin B12 and folic acid deficiency anemias
-s5621 To explain to the student the importance of iron, vitamin B12 and folic acid in erythropoiesis, the causes, pathogenesis, hematological signs and clinical manifestations of iron deficiency and megaloblastic (B12 and folate deficiency) anemias, as well as aplastic anemia and anemia of chronic disease; to teach the student to study blood smears of patients with iron and folate deficiency anemias, to determine hemoglobin concentration and to calculate the color index.
+s5621 To explain to the student the importance of iron, vitamin B~12~ and folic acid in erythropoiesis, the causes, pathogenesis, hematological signs and clinical manifestations of iron deficiency and megaloblastic (B~12~ and folate deficiency) anemias, as well as aplastic anemia and anemia of chronic disease; to teach the student to study blood smears of patients with iron and folate deficiency anemias, to determine hemoglobin concentration and to calculate the color index.
 s5622 iron metabolism in the body and its regulation (hepcidin);
 s5623 the causes and stages of iron deficiency and the signs of iron deficiency anemia;
-s5624 the metabolism of vitamin B12 and folic acid and their role in DNA synthesis;
+s5624 the metabolism of vitamin B~12~ and folic acid and their role in DNA synthesis;
 s5625 the causes, pathogenesis and blood picture of megaloblastic anemias;
 s5626 the nature of pernicious (Addison–Biermer) anemia and the mechanism of funicular myelosis;
 s5627 the main features of aplastic anemia and anemia of chronic disease;
@@ -155,8 +155,8 @@ s5629 distinguish smears of iron deficiency and megaloblastic anemia;
 s5630 determine hemoglobin concentration and calculate the color index;
 s5631 interpret iron metabolism parameters (serum iron, ferritin, transferrin saturation).
 s5632 The body has **no** physiological mechanism for actively excreting iron — iron balance is maintained only by regulating intestinal absorption. Daily loss (epithelial shedding, sweating) is 1–2 mg, with an additional 0.5–1 mg in menstruating women. **Hepcidin** (produced in the liver) degrades ferroportin and stops iron absorption from the intestine and its release from macrophages; hepcidin increases with iron overload and inflammation (IL-6) and decreases with iron deficiency and hypoxia.
-s5633 **Funicular myelosis (subacute combined degeneration)** — a neurological complication specific to B12 deficiency: demyelination of the posterior and lateral columns of the spinal cord. Signs: paresthesias in the legs, loss of deep (vibration and joint-position) sensation, ataxia, spastic paresis, memory impairment. Folic acid deficiency does not cause such neurological signs.
-s5634 Treating a patient with B12 deficiency with folic acid alone is dangerous: blood values may partly improve, but the neurological disturbances worsen and become irreversible. In megaloblastic anemia, B12 and folate levels should be determined first, and folic acid alone should not be given until B12 deficiency has been ruled out.
+s5633 **Funicular myelosis (subacute combined degeneration)** — a neurological complication specific to B~12~ deficiency: demyelination of the posterior and lateral columns of the spinal cord. Signs: paresthesias in the legs, loss of deep (vibration and joint-position) sensation, ataxia, spastic paresis, memory impairment. Folic acid deficiency does not cause such neurological signs.
+s5634 Treating a patient with B~12~ deficiency with folic acid alone is dangerous: blood values may partly improve, but the neurological disturbances worsen and become irreversible. In megaloblastic anemia, B~12~ and folate levels should be determined first, and folic acid alone should not be given until B~12~ deficiency has been ruled out.
 s5635 1. Iron metabolism
 s5636 The adult body contains 3–5 g of iron: 65–70 percent in hemoglobin, 20–30 percent in stores (ferritin and hemosiderin), and the rest in myoglobin and enzymes (cytochromes, catalase).
 s5637 Figure 18.1
@@ -192,7 +192,7 @@ s5666 muscle weakness, urinary incontinence (weakened sphincters);
 s5667 delayed psychomotor development in children.
 s5668 **Blood picture:** hypochromic (color index below 0.85, MCH decreased), microcytic (MCV below 80 fl) anemia; anisocytosis (microcytosis), poikilocytosis, ring-shaped erythrocytes (annulocytes — with a wide pale center); reticulocytes normal or decreased (hyporegenerative); serum iron, ferritin and transferrin saturation decreased, total iron-binding capacity of serum increased.
 s5669 When iron deficiency anemia is found in adults, especially men and postmenopausal women, its cause — above all occult gastrointestinal bleeding (colon cancer, gastric cancer, ulcer) — must always be sought. Treating with iron preparations without identifying the cause is a dangerous mistake.
-s5670 3. Metabolism of vitamin B12 and folic acid
+s5670 3. Metabolism of vitamin B~12~ and folic acid
 s5671 Figure 18.2
-s5672 Absorption of vitamin B12
+s5672 Absorption of vitamin B~12~
 s5673 **Vitamin B~12~ (cobalamin)** is found only in animal products (meat, liver, eggs, milk). The daily requirement is 2–3 µg; the store in the liver lasts 3–5 years — which is why deficiency develops very slowly.

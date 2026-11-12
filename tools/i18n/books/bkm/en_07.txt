@@ -1,4 +1,9 @@
-s1294 Determine which coenzyme the vitamin is part of (B1 — TDP, B2 — FAD, PP — NAD+, B5 — CoA).
+s1289 Take into account that 1 NADH (2.5 ATP) is formed in the PDC reaction.
+s1290 Add the 3 NADH (7.5 ATP), 1 FADH~2~ (1.5 ATP) and 1 GTP (1 ATP) formed in the Krebs cycle.
+s1291 Find that the total is 12.5 ATP from pyruvate and 10 ATP from acetyl-CoA.
+s1292 If the calculation starts from another substrate (for example, lactate), add the extra NADH.
+s1293 Skill: identifying the disturbance of the common pathways in vitamin deficiency
+s1294 Determine which coenzyme the vitamin is part of (B~1~ — TDP, B~2~ — FAD, PP — NAD^+^, B~5~ — CoA).
 s1295 Indicate in which enzymes this coenzyme works (PDC, α-ketoglutarate dehydrogenase, succinate dehydrogenase, malate dehydrogenase).
 s1296 Name the metabolites that accumulate (pyruvate, lactate, α-ketoglutarate).
 s1297 Explain the clinical consequences (energy deficit, lactic acidosis, neurological disorders).
@@ -8,8 +13,8 @@ s1300 List the enzymes and coenzymes of the pyruvate dehydrogenase complex.
 s1301 How is the pyruvate dehydrogenase complex regulated?
 s1302 Why is glucose not synthesized from acetyl-CoA?
 s1303 Write the reactions of the Krebs cycle in order.
-s1304 In which reactions of the cycle is CO2 released?
-s1305 In which reactions of the cycle are NADH, FADH2 and GTP formed?
+s1304 In which reactions of the cycle is CO~2~ released?
+s1305 In which reactions of the cycle are NADH, FADH~2~ and GTP formed?
 s1306 How much ATP is formed in the oxidation of one acetyl-CoA?
 s1307 Why does the Krebs cycle work only under aerobic conditions?
 s1308 Explain the key enzymes of the Krebs cycle and their regulation.
@@ -22,7 +27,7 @@ s1314 In the cytosol
 s1315 In the mitochondrial matrix
 s1316 In the endoplasmic reticulum
 s1317 In the nucleus
-s1318 The coenzyme of enzyme E1 of the pyruvate dehydrogenase complex:
+s1318 The coenzyme of enzyme E~1~ of the pyruvate dehydrogenase complex:
 s1319 Lipoic acid
 s1320 The enzyme that catalyzes the first reaction of the Krebs cycle:
 s1321 Aconitase
@@ -37,9 +42,9 @@ s1329 The number of NADH formed in one turn of the Krebs cycle:
 s1330 The FAD-dependent enzyme of the Krebs cycle:
 s1331 The ATP formed in the oxidation of one acetyl-CoA in the Krebs cycle (current calculation):
 s1332 The substances that inhibit the pyruvate dehydrogenase complex:
-s1333 ADP and NAD+
+s1333 ADP and NAD^+^
 s1334 Pyruvate and CoA
-s1335 Ca2+ and insulin
+s1335 Ca^2+^ and insulin
 s1336 Acetyl-CoA and NADH
 s1337 AMP and Pi
 s1338 The enzyme that catalyzes the most important anaplerotic reaction:
@@ -74,25 +79,25 @@ s1366 Which enzyme deficiency is suspected? Why do carbohydrates worsen the cond
 s1367 Congenital deficiency of the pyruvate dehydrogenase complex. Pyruvate is not converted to acetyl-CoA and accumulates; it is converted to lactate (LDH) and to alanine (transamination). Carbohydrates form pyruvate through glycolysis and increase the acidosis. Because the brain obtains energy mainly from glucose oxidation, the neurological disorders are severe. Treatment: a ketogenic diet (low in carbohydrates, high in fats) — fatty acids and ketone bodies give acetyl-CoA bypassing the PDC; in some patients high-dose thiamine is effective.
 s1368 After rats were given an inhibitor of one of the Krebs cycle enzymes, succinate accumulated in the tissues while the amounts of fumarate and malate decreased.
 s1369 Which enzyme is inhibited? Name a possible inhibitor. How does this affect energy metabolism?
-s1370 Succinate dehydrogenase (complex II) is inhibited; malonate is its classic competitive inhibitor. Succinate is not converted to fumarate and the cycle stops: the following metabolites and oxaloacetate decrease, acetyl-CoA cannot enter the cycle; less FADH2 and NADH are formed and ATP synthesis falls. Increasing the succinate concentration partly overcomes the inhibition.
+s1370 Succinate dehydrogenase (complex II) is inhibited; malonate is its classic competitive inhibitor. Succinate is not converted to fumarate and the cycle stops: the following metabolites and oxaloacetate decrease, acetyl-CoA cannot enter the cycle; less FADH~2~ and NADH are formed and ATP synthesis falls. Increasing the succinate concentration partly overcomes the inhibition.
 s1371 In a patient after prolonged starvation, blood glucose is 3.0 mmol/l, ketone bodies are sharply increased and acetone is detected in the urine.
 s1372 How does the activity of the Krebs cycle in the liver change in starvation? Why do ketone bodies increase?
 s1373 In starvation, under the action of glucagon and cortisol, gluconeogenesis in the liver increases and oxaloacetate is used for it (it leaves for the cytosol as malate). At the same time the β-oxidation of fatty acids coming from adipose tissue increases and a lot of acetyl-CoA is formed. Because oxaloacetate is lacking, acetyl-CoA cannot form citrate and is not fully oxidized in the Krebs cycle — in the liver mitochondria it is converted into acetoacetate and β-hydroxybutyrate (ketone bodies); these serve as an energy source for other tissues (brain, muscle).
 s1374 Common pathways
 s1375 PDC + Krebs cycle + respiratory chain (in the mitochondria)
 s1376 PDC
-s1377 Pyruvate → acetyl-CoA + CO2 + NADH; irreversible
+s1377 Pyruvate → acetyl-CoA + CO~2~ + NADH; irreversible
 s1378 Coenzymes of the PDC
-s1379 TDP (B1), lipoate, CoA (B5), FAD (B2), NAD+ (PP)
+s1379 TDP (B~1~), lipoate, CoA (B~5~), FAD (B~2~), NAD^+^ (PP)
 s1380 Regulation of the PDC
-s1381 Acetyl-CoA, NADH, phosphorylation ↓; ADP, pyruvate, Ca2+, insulin (dephosphorylation) ↑
+s1381 Acetyl-CoA, NADH, phosphorylation ↓; ADP, pyruvate, Ca^2+^, insulin (dephosphorylation) ↑
 s1382 8 reactions: OAA → citrate → isocitrate → α-KG → succinyl-CoA → succinate → fumarate → malate → OAA
 s1383 Products
-s1384 2 CO2, 3 NADH, 1 FADH2, 1 GTP
+s1384 2 CO~2~, 3 NADH, 1 FADH~2~, 1 GTP
 s1385 10 from acetyl-CoA, 12.5 from pyruvate
 s1386 Key enzymes
 s1387 Citrate synthase, isocitrate dehydrogenase, α-ketoglutarate dehydrogenase
-s1388 ATP, NADH ↓; ADP, Ca2+ ↑
+s1388 ATP, NADH ↓; ADP, Ca^2+^ ↑
 s1389 Anabolic function
 s1390 Metabolites for the synthesis of glucose, amino acids, fatty acids and heme
 s1391 Anaplerotic reaction
@@ -121,7 +126,7 @@ s1413 2. Digestion and absorption of carbohydrates
 s1414 Table 6.1. Enzymes that digest carbohydrates
 s1415 Substrate → product
 s1416 Oral cavity
-s1417 Salivary α-amylase (pH 6.8; activated by Cl-)
+s1417 Salivary α-amylase (pH 6.8; activated by Cl^-^)
 s1418 Starch → dextrins, maltose (partly)
 s1419 Stomach
 s1420 — (amylase is inactivated in the acidic medium)
@@ -138,12 +143,12 @@ s1430 Lactase (β-galactosidase)
 s1431 Lactose → galactose + glucose
 s1432 α-Amylase cleaves only α1→4 glycosidic bonds; the α1→6 bonds at the branch points are broken down by isomaltase. Humans have no cellulase, which cleaves the β-glycosidic bond.
 s1433 **Absorption** takes place in the enterocytes of the small intestine (mainly the duodenum and jejunum):
-s1434 **Glucose and galactose** — symport with Na+ through **SGLT1** (secondary active transport, against the gradient);
+s1434 **Glucose and galactose** — symport with Na^+^ through **SGLT1** (secondary active transport, against the gradient);
 s1435 **Fructose** — facilitated diffusion through **GLUT5**;
 s1436 from the enterocyte into the blood — through **GLUT2** in the basolateral membrane. The absorbed monosaccharides reach the liver first through the **portal vein**.
-s1437 **Lactase deficiency** (milk intolerance) — in a large part of the world’s population lactase activity falls after childhood for genetic reasons (primary); in intestinal diseases (enteritis, celiac disease) it is secondary. Undigested lactose passes into the large intestine, where bacteria ferment it and form gases (H2, CO2, CH4) and organic acids — bloating, pain, osmotic diarrhea. Diagnosis: the hydrogen breath test, a lactose load. Treatment: a lactose-free diet, fermented milk products (in which lactose is partly broken down by bacteria), lactase preparations. **In newborns** congenital lactase deficiency is rare but runs severely.
+s1437 **Lactase deficiency** (milk intolerance) — in a large part of the world’s population lactase activity falls after childhood for genetic reasons (primary); in intestinal diseases (enteritis, celiac disease) it is secondary. Undigested lactose passes into the large intestine, where bacteria ferment it and form gases (H~2~, CO~2~, CH~4~) and organic acids — bloating, pain, osmotic diarrhea. Diagnosis: the hydrogen breath test, a lactose load. Treatment: a lactose-free diet, fermented milk products (in which lactose is partly broken down by bacteria), lactase preparations. **In newborns** congenital lactase deficiency is rare but runs severely.
 s1438 3. Entry of glucose into the cell and its phosphorylation
-s1439 Glucose enters the cell through **GLUT** transporters: GLUT1 (erythrocytes, the blood-brain barrier), GLUT2 (liver, pancreatic β-cells, enterocytes, kidney — high Km), GLUT3 (neurons — low Km), **GLUT4** (skeletal muscle, heart, adipose tissue — **insulin-dependent**).
+s1439 Glucose enters the cell through **GLUT** transporters: GLUT1 (erythrocytes, the blood-brain barrier), GLUT2 (liver, pancreatic β-cells, enterocytes, kidney — high K~m~), GLUT3 (neurons — low K~m~), **GLUT4** (skeletal muscle, heart, adipose tissue — **insulin-dependent**).
 s1440 In the cell glucose is phosphorylated at once and can no longer leave the cell:
 s1441 Glucose + ATP → Glucose-6-phosphate + ADP
 s1442 Table 6.2. Hexokinase and glucokinase
@@ -171,11 +176,11 @@ s1463 Synthesis and breakdown of glycogen (drawn after Sobirova R.A., 2006; Seve
 s1464 Glycogen synthesis (glycogenesis)
 s1465 Glucose → glucose-6-phosphate (hexokinase/glucokinase, ATP).
 s1466 Glucose-6-phosphate ⇄ glucose-1-phosphate (phosphoglucomutase).
-s1467 Glucose-1-phosphate + UTP → **UDP-glucose** + PPi (UDP-glucose pyrophosphorylase); the pyrophosphate is hydrolyzed — the reaction is irreversible.
+s1467 Glucose-1-phosphate + UTP → **UDP-glucose** + PP~i~ (UDP-glucose pyrophosphorylase); the pyrophosphate is hydrolyzed — the reaction is irreversible.
 s1468 The glucose residue of UDP-glucose is attached to the end of the glycogen chain by an α1→4 bond — **glycogen synthase** (the key enzyme). The “primer” protein for a new chain is **glycogenin**.
 s1469 The **branching enzyme** (amylo-1,4→1,6-transglycosylase) transfers a piece of the chain and forms an α1→6 branch. Adding one glucose to glycogen costs 2 high-energy bonds (ATP and UTP).
 s1470 Breakdown of glycogen (glycogenolysis)
-s1471 **Glycogen phosphorylase** (the key enzyme; coenzyme — pyridoxal phosphate) cleaves α1→4 bonds from the end of the chain with phosphate (phosphorolysis): glycogen(n) + Pi → glycogen(n−1) + glucose-1-phosphate.
+s1471 **Glycogen phosphorylase** (the key enzyme; coenzyme — pyridoxal phosphate) cleaves α1→4 bonds from the end of the chain with phosphate (phosphorolysis): glycogen(n) + P~i~ → glycogen(n−1) + glucose-1-phosphate.
 s1472 The **debranching enzyme** (transferase + amylo-1,6-glucosidase) removes the branch point, and free glucose is released.
 s1473 Glucose-1-phosphate → glucose-6-phosphate (phosphoglucomutase).
 s1474 **In the liver**: glucose-6-phosphatase → free glucose → into the blood. **In muscle** there is no glucose-6-phosphatase — glucose-6-phosphate enters glycolysis (muscle glycogen does not serve to maintain blood glucose).
@@ -192,23 +197,16 @@ s1484 Gs → adenylate cyclase → cAMP → protein kinase A → phosphorylase k
 s1485 Glycogenolysis ↑, glucose into the blood
 s1486 Adrenaline (stress, physical work)
 s1487 Liver, muscle
-s1488 β-receptors → cAMP (in the liver also α1 → IP3, Ca2+)
+s1488 β-receptors → cAMP (in the liver also α1 → IP~3~, Ca^2+^)
 s1489 Glycogenolysis ↑
 s1490 Insulin (after a meal)
 s1491 Activates phosphodiesterase and phosphoprotein phosphatase; induces glucokinase
 s1492 Glycogenesis ↑
-s1493 **Allosteric regulation:** in muscle AMP and Ca2+ (during contraction) activate phosphorylase; in the liver glucose inhibits phosphorylase; glucose-6-phosphate activates glycogen synthase.
+s1493 **Allosteric regulation:** in muscle AMP and Ca^2+^ (during contraction) activate phosphorylase; in the liver glucose inhibits phosphorylase; glucose-6-phosphate activates glycogen synthase.
 s1494 5. Aerobic oxidation of glucose. Glycolysis
-s1495 **Glycolysis** is the breakdown of glucose in the cytosol to **pyruvate** (10 reactions). Under aerobic conditions pyruvate is converted in the mitochondria into acetyl-CoA and oxidized in the Krebs cycle to CO2 and H2O — **aerobic oxidation**. Under anaerobic conditions pyruvate is reduced to lactate (topic 7).
+s1495 **Glycolysis** is the breakdown of glucose in the cytosol to **pyruvate** (10 reactions). Under aerobic conditions pyruvate is converted in the mitochondria into acetyl-CoA and oxidized in the Krebs cycle to CO~2~ and H~2~O — **aerobic oxidation**. Under anaerobic conditions pyruvate is reduced to lactate (topic 7).
 s1496 Figure 6.2
 s1497 Reactions of glycolysis; the key enzymes and the reactions in which ATP is formed (drawn after Sobirova R.A., 2006; Severin E.S.)
 s1498 The two stages of glycolysis:
 s1499 **The preparatory stage** (energy is consumed): glucose is phosphorylated at the expense of 2 ATP and split into two triose phosphates.
 s1500 **The stage of oxidation and energy production**: glyceraldehyde-3-phosphate is oxidized (NADH is formed) and 4 ATP are formed in two substrate-level phosphorylation reactions (phosphoglycerate kinase, pyruvate kinase). **The overall equation of glycolysis (aerobic):**
-s1501 Glucose + 2NAD+ + 2ADP + 2Pi → 2 Pyruvate + 2NADH + 2H+ + 2ATP + 2H2O
-s1502 **Key (irreversible) enzymes:** hexokinase (glucokinase), **phosphofructokinase-1** (the main one), pyruvate kinase.
-s1503 Table 6.4. Regulation of phosphofructokinase-1
-s1504 Activators
-s1505 AMP, ADP (little energy)
-s1506 ATP (plenty of energy)
-s1507 Fructose-2,6-bisphosphate (increases under the action of insulin; the strongest activator)

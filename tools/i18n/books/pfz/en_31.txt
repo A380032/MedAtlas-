@@ -1,3 +1,8 @@
+s6303 “Sawtooth” F waves
+s6304 Ventricular rhythm
+s6305 Completely irregular
+s6306 Often regular (if the ratio is constant)
+s6307 Many small re-entry circuits, ectopic foci
 s6308 One large re-entry circuit
 s6309 Consequences of atrial fibrillation
 s6310 **Loss of atrial systole** — ventricular filling decreases by about 20–30 percent; cardiac output falls significantly, especially in mitral stenosis and myocardial hypertrophy.
@@ -75,7 +80,7 @@ s6381 P and QRS are unrelated, the QRS rate is lower than the P rate
 s6382 What causes a Morgagni–Adams–Stokes attack in complete AV block?
 s6383 A sharp rise in arterial pressure
 s6384 Cerebral ischemia during the pause before the escape center starts
-s6385 A QRS wider than 0.12 s and rSR’ (“M” shape) in V1 are typical of which disturbance?
+s6385 A QRS wider than 0.12 s and rSR’ (“M” shape) in V~1~ are typical of which disturbance?
 s6386 Complete right bundle branch block
 s6387 Complete left bundle branch block
 s6388 Atrial flutter
@@ -140,7 +145,7 @@ s6446 PQ constant, QRS suddenly dropped; risk of progression to third degree
 s6447 P and QRS independent; AV dissociation
 s6448 Cerebral ischemia during a pause — fainting
 s6449 Bundle branch block
-s6450 QRS wider than 0.12 s; right — rSR’ in V1, left — wide R in V6
+s6450 QRS wider than 0.12 s; right — rSR’ in V~1~, left — wide R in V~6~
 s6451 WPW syndrome
 s6452 Kent bundle: short PQ, delta wave, wide QRS
 s6453 350–700 chaotic excitation; f waves, irregular RR
@@ -187,6 +192,3 @@ s6493 Increased resistance to ejection
 s6494 Aortic stenosis, arterial hypertension, pulmonary hypertension
 s6495 Direct myocardial damage
 s6496 Death of cardiomyocytes and reduced contractility
-s6497 Myocardial infarction, myocarditis, cardiomyopathies, toxic effects (alcohol), vitamin B1 deficiency
-s6498 Impaired diastolic filling
-s6499 The ventricles cannot relax and expand adequately

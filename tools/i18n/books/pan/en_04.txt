@@ -1,3 +1,4 @@
+s0441 Hematoidin
 s0442 Hemosiderin
 s0443 Melanin
 s0444 Hydronephrosis is an example of which type of atrophy?
@@ -83,7 +84,7 @@ s0523 describe gross specimens of ischemic infarction of the spleen, hemorrhagic
 s0524 describe microscopic slides of necrosis of the renal tubular epithelium, caseous necrosis and Councilman bodies;
 s0525 distinguish necrosis from apoptosis and relate the types of necrosis to clinical situations.
 s0526 **Reversible injury** — if the injurious agent is removed, the cell returns to normal. Its two main morphologic signs are **cellular swelling** and **fatty change**. The signs of **irreversible injury** are **severe mitochondrial dysfunction** (complete loss of the ability to produce ATP, amorphous densities in the matrix) and **profound disruption** of **membranes** (plasma and lysosomal membranes). These two phenomena are the cell's “point of no return”.
-s0527 Enzymes that protect against free radicals — **“CSG”**: **C**atalase, **S**uperoxide dismutase, **G**lutathione peroxidase. Remember the formation of the hydroxyl radical (•OH) as “**iron + peroxide = Fenton**”: this is why liver and heart cells are injured in hemochromatosis (iron overload).
+s0527 Enzymes that protect against free radicals — **“CSG”**: **C**atalase, **S**uperoxide dismutase, **G**lutathione peroxidase. Remember the formation of the hydroxyl radical (^•^OH) as “**iron + peroxide = Fenton**”: this is why liver and heart cells are injured in hemochromatosis (iron overload).
 s0528 Necrosis is always a **pathologic** process: it involves **a group of cells**, membrane integrity is lost, intracellular contents leak out and **provoke inflammation**. Apoptosis, in contrast, is often **physiological**, occurs in individual cells, the membrane is preserved and it **does not provoke** inflammation.
 s0529 Order of nuclear changes — **“Pyk-Rhex-Lys”**: **Pyk**nosis (shrinks) → karyo**rrhex**is (fragments) → karyo**lys**is (dissolves). Likewise for the cytoplasm: **coagulation → rhexis → lysis**.
 s0530 To remember the caspases of apoptosis: **“Intrinsic — 9, Extrinsic — 8, Executioners — 3 and 6”**. Imagine the intrinsic pathway as a **“mitochondrial gate”**: BCL2 is the gatekeeper (keeps it closed), BAX/BAK are the gate breakers, and cytochrome c is the “messenger of death” that comes out through the gate.
@@ -100,34 +101,34 @@ s0540 This is why a patient who died suddenly may have no gross or even microsco
 s0541 2.2. Mechanisms of cell injury
 s0542 ATP depletion
 s0543 ATP (adenosine triphosphate) is produced mainly in mitochondria by oxidative phosphorylation. **Hypoxia and ischemia** and mitochondrial poisons (cyanide) rapidly deplete ATP stores. A fall in ATP to 5–10% leads to the following consequences:
-s0544 the **Na^+^/K^+^-ATPase** (sodium pump) slows down — Na+ and water enter the cell and K+ leaves: **cellular swelling**, dilatation of the ER;
+s0544 the **Na^+^/K^+^-ATPase** (sodium pump) slows down — Na^+^ and water enter the cell and K^+^ leaves: **cellular swelling**, dilatation of the ER;
 s0545 **anaerobic glycolysis** increases — glycogen stores are exhausted, lactic acid accumulates and the **pH falls**: nuclear chromatin clumps (condensation) and enzyme activity changes;
 s0546 the **Ca^2+^ pump** fails — calcium increases in the cytoplasm;
 s0547 **ribosomes** detach from the rough ER and polysomes break down — **protein synthesis decreases**;
 s0548 misfolded proteins accumulate and trigger “ER stress” (the unfolded protein response) and apoptosis.
 s0549 Mitochondrial damage
-s0550 Mitochondria are damaged by increased cytosolic Ca2+, free radicals and hypoxia. A high-conductance channel opens in the inner membrane — the **mitochondrial permeability transition pore** — the membrane potential is lost and oxidative phosphorylation stops. In addition, **cytochrome c** and other proteins leak from the intermembrane space into the cytoplasm and initiate apoptosis. Thus mitochondrial damage leads the cell to death by one of two pathways: ATP exhaustion — **necrosis**, release of cytochrome c — **apoptosis**.
+s0550 Mitochondria are damaged by increased cytosolic Ca^2+^, free radicals and hypoxia. A high-conductance channel opens in the inner membrane — the **mitochondrial permeability transition pore** — the membrane potential is lost and oxidative phosphorylation stops. In addition, **cytochrome c** and other proteins leak from the intermembrane space into the cytoplasm and initiate apoptosis. Thus mitochondrial damage leads the cell to death by one of two pathways: ATP exhaustion — **necrosis**, release of cytochrome c — **apoptosis**.
 s0551 Disturbance of calcium homeostasis
-s0552 Normally the concentration of free cytosolic Ca2+ is 10,000 times lower than outside the cell. Under the influence of ischemia and toxins, Ca2+ enters the cytoplasm from outside the cell and from intracellular stores (mitochondria, ER). Excess Ca2+ activates the following enzymes:
+s0552 Normally the concentration of free cytosolic Ca^2+^ is 10,000 times lower than outside the cell. Under the influence of ischemia and toxins, Ca^2+^ enters the cytoplasm from outside the cell and from intracellular stores (mitochondria, ER). Excess Ca^2+^ activates the following enzymes:
 s0553 **phospholipases** — degrade membranes;
 s0554 **proteases** — degrade membrane and cytoskeletal proteins;
 s0555 **endonucleases** — degrade DNA and chromatin;
-s0556 **ATPases** — accelerate ATP depletion. In addition, Ca2+ opens the mitochondrial permeability pore and initiates apoptosis.
+s0556 **ATPases** — accelerate ATP depletion. In addition, Ca^2+^ opens the mitochondrial permeability pore and initiates apoptosis.
 s0557 Free radicals (oxidative stress)
-s0558 **Free radicals** are highly reactive molecules that have an unpaired electron in their outer orbit. The most important in cell injury are **reactive oxygen species (ROS)**: the superoxide anion (O2−), hydrogen peroxide (H2O2) and the most reactive — the hydroxyl radical (•OH).
+s0558 **Free radicals** are highly reactive molecules that have an unpaired electron in their outer orbit. The most important in cell injury are **reactive oxygen species (ROS)**: the superoxide anion (O~2~^−^), hydrogen peroxide (H~2~O~2~) and the most reactive — the hydroxyl radical (^•^OH).
 s0559 Sources of free radicals:
 s0560 normal metabolism — incomplete reduction of oxygen in mitochondria;
-s0561 ionizing radiation (hydrolyzes water to form •OH);
+s0561 ionizing radiation (hydrolyzes water to form ^•^OH);
 s0562 the “respiratory burst” of neutrophils and macrophages in inflammation (NADPH oxidase);
-s0563 metabolism of drugs and chemicals (CCl4, paracetamol (acetaminophen));
-s0564 transition metals — iron and copper (Fenton reaction: Fe2+ + H2O2 → Fe3+ + •OH + OH−);
+s0563 metabolism of drugs and chemicals (CCl~4~, paracetamol (acetaminophen));
+s0564 transition metals — iron and copper (Fenton reaction: Fe^2+^ + H~2~O~2~ → Fe^3+^ + ^•^OH + OH^−^);
 s0565 nitric oxide (NO) — forms peroxynitrite.
 s0566 Harmful effects of free radicals:
 s0567 **Lipid peroxidation in membranes** — a chain reaction with unsaturated fatty acids.
 s0568 **Oxidation of proteins** — protein folding is disrupted, enzyme activity is lost and degradation in proteasomes increases.
-s0569 **DNA damage** — single-strand breaks, mutations; contributes to cellular aging and malignant transformation. **The antioxidant defense system:** antioxidant vitamins (vitamins E, A, C, beta-carotene, glutathione), iron- and copper-binding proteins (transferrin, ferritin, lactoferrin, ceruloplasmin) and enzymes — **catalase** (breaks down H2O2), **superoxide dismutase** (converts O2− to H2O2), **glutathione peroxidase**.
+s0569 **DNA damage** — single-strand breaks, mutations; contributes to cellular aging and malignant transformation. **The antioxidant defense system:** antioxidant vitamins (vitamins E, A, C, beta-carotene, glutathione), iron- and copper-binding proteins (transferrin, ferritin, lactoferrin, ceruloplasmin) and enzymes — **catalase** (breaks down H~2~O~2~), **superoxide dismutase** (converts O~2~^−^ to H~2~O~2~), **glutathione peroxidase**.
 s0570 Membrane damage and DNA damage
 s0571 Membrane damage is the final stage in most types of injury. Its causes are ROS (lipid peroxidation), decreased phospholipid synthesis, activation of phospholipases and cytoskeletal disruption. As a result:
 s0572 damage to the **mitochondrial membrane** — ATP production stops and apoptotic factors are released;
 s0573 damage to the **plasma membrane** — osmotic balance is lost and intracellular contents leak out;
-s0574 damage to the **lysosomal membrane** — enzymes (RNase, DNase, proteases, phosphatases) are released into the cytoplasm and cause the cell to **“digest itself”** — this is the basis of the morphology of necrosis. **DNA damage** (by radiation, chemotherapy drugs, ROS) activates the **p53** protein: it arrests the cell cycle in the G1 phase and gives time for DNA repair. If the damage cannot be repaired, p53 initiates **apoptosis**.
+s0574 damage to the **lysosomal membrane** — enzymes (RNase, DNase, proteases, phosphatases) are released into the cytoplasm and cause the cell to **“digest itself”** — this is the basis of the morphology of necrosis. **DNA damage** (by radiation, chemotherapy drugs, ROS) activates the **p53** protein: it arrests the cell cycle in the G~1~ phase and gives time for DNA repair. If the damage cannot be repaired, p53 initiates **apoptosis**.

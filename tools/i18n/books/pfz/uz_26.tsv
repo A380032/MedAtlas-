@@ -21,7 +21,7 @@ s5332	Farqlovchi belgilar
 s5333	Ishqoriy fosfataza, filadelfiya xromosomasi, toksik donadorlik
 s5334	Eritrotsitlar patofiziologiyasi. Anemiyalar tasnifi. Postgemorragik va gemolitik anemiyalar
 s5335	Talabaga eritropoez bosqichlari va uning boshqarilishini, eritrotsitlar qatori hujayralarini baholash mezonlarini, eritrotsitlarning patologik shakllarini, anemiya tushunchasi va tasnifini, o‘tkir va surunkali postgemorragik anemiyalar hamda gemolitik anemiyalarning etiologiyasi, patogenezi va qon manzarasini tushuntirish; qon surtmalarida eritrotsitlarning patologik shakllarini aniqlash, retikulotsitlarni supravital bo‘yash usuli bilan aniqlash va gemoglobin konsentratsiyasini kolorimetrik usulda o‘lchashni o‘rgatish.
-s5336	eritropoez bosqichlari va uni boshqaruvchi omillarni (eritropoetin, temir, B12, foliy kislotasi);
+s5336	eritropoez bosqichlari va uni boshqaruvchi omillarni (eritropoetin, temir, B~12~, foliy kislotasi);
 s5337	qizil qon ko‘rsatkichlari va ularning me’yorini;
 s5338	eritrotsitlarning patologik shakllari (anizotsitoz, poykilotsitoz, anizoxromiya, regenerativ va degenerativ shakllar);
 s5339	anemiya ta’rifi va tasnifini (patogenetik, rang ko‘rsatkichi, regeneratsiya bo‘yicha);
@@ -33,7 +33,7 @@ s5344	gemoglobin konsentratsiyasini aniqlash va qizil qon indekslarini hisoblash
 s5345	anemiya turini qon tahlili bo‘yicha aniqlash.
 s5346	Anemiyaning umumiy belgilari gipoksiya va kompensator reaksiyalar bilan bog‘liq: holsizlik, tez charchash, bosh aylanishi, quloqda shovqin, ko‘z oldida “chivinlar”, hansirash, yurak urib ketishi, taxikardiya, teri va shilliq qavatlarning rangparligi, yurak cho‘qqisida funksional sistolik shovqin (qon yopishqoqligining kamayishi va oqim tezligining ortishi).
 s5347	O‘tkir qon yo‘qotishning birinchi soatlarida gemoglobin va gematokrit me’yorida bo‘lishi mumkin, chunki plazma va eritrotsitlar bir xil nisbatda yo‘qotilgan. Bu ko‘rsatkichlarga tayanib qon yo‘qotish hajmini kamsitish xavfli: bu vaqtda puls, arterial bosim, shok indeksi (puls / sistolik bosim) va klinik belgilar muhimroq.
-s5348	Retikulotsitlar soni — suyak ko‘migi eritropoetik faolligining eng oddiy ko‘rsatkichi. Gemoliz va o‘tkir qon yo‘qotishdan keyin (4–5 kundan) **retikulotsitoz**; aplastik anemiya, temir, B12 va foliy yetishmovchiligida (davodan oldin) **retikulotsitopeniya**. B12 yetishmovchiligi davolanganda 5–7-kuni kuzatiladigan “**retikulotsitar kriz**” davo samaradorligi belgisidir.
+s5348	Retikulotsitlar soni — suyak ko‘migi eritropoetik faolligining eng oddiy ko‘rsatkichi. Gemoliz va o‘tkir qon yo‘qotishdan keyin (4–5 kundan) **retikulotsitoz**; aplastik anemiya, temir, B~12~ va foliy yetishmovchiligida (davodan oldin) **retikulotsitopeniya**. B~12~ yetishmovchiligi davolanganda 5–7-kuni kuzatiladigan “**retikulotsitar kriz**” davo samaradorligi belgisidir.
 s5349	Eski Sali usuli (gemoglobinni xlorid kislota bilan gematinga aylantirib, standart rang bilan ko‘z bilan solishtirish) sub’yektiv va aniqligi past; hozir gemiglobinsianid fotometrik usul va avtomatik analizatorlar standart hisoblanadi. Gemiglobinsianid usulining reaktivlari zaharli (sianidlar) — ular bilan ishlashda ehtiyot choralariga rioya qiling.
 s5350	1. Eritropoez va uning boshqarilishi
 s5351	**Eritropoez** — eritrotsitlar hosil bo‘lishi; kattalarda qizil suyak ko‘migida kechadi. Ketma-ketlik: ildiz hujayra → eritroid o‘tmishdoshlar (BFU-E, CFU-E) → proeritroblast → bazofil, polixromatofil va oksifil (ortoxrom) normoblastlar (yadro chiqariladi) → **retikulotsit** (1–2 kun suyak ko‘migida, 1 kun qonda) → **yetuk eritrotsit** (hayot davomiyligi taxminan 120 kun).
@@ -41,9 +41,9 @@ s5352	Jadval 17.1. Eritropoezni boshqaruvchi asosiy omillar
 s5353	Buyrakning peritubulyar hujayralarida gipoksiyaga javoban hosil bo‘ladi; CFU-E ning ko‘payishi va differensiatsiyasini rag‘batlantiradi
 s5354	Temir
 s5355	Gemoglobin (gem) sintezi uchun
-s5356	B12 vitamini va foliy kislotasi
+s5356	B~12~ vitamini va foliy kislotasi
 s5357	DNK sintezi va hujayra bo‘linishi uchun
-s5358	Oqsillar, B6 vitamini, mis, C vitamini
+s5358	Oqsillar, B~6~ vitamini, mis, C vitamini
 s5359	Globin va gem sintezi, temir so‘rilishi
 s5360	Androgenlar, tireoid gormonlar
 s5361	Eritropoezni kuchaytiradi
@@ -66,7 +66,7 @@ s5377	2. Eritrotsitlarning patologik shakllari
 s5378	Jadval 17.3. Eritrotsitlarning patologik o‘zgarishlari
 s5379	Hajmi bo‘yicha (anizotsitoz)
 s5380	Mikrotsitlar (6,5 mkm dan kichik), makrotsitlar (8 mkm dan katta), megalotsitlar (10–12 mkm va undan katta, oval)
-s5381	Mikrotsitoz — temir yetishmovchiligi; megalotsitoz — B12 va foliy yetishmovchiligi
+s5381	Mikrotsitoz — temir yetishmovchiligi; megalotsitoz — B~12~ va foliy yetishmovchiligi
 s5382	Shakli bo‘yicha (poykilotsitoz)
 s5383	Sferotsitlar, elliptotsitlar, nishonsimon (mishen) hujayralar, o‘roqsimon hujayralar, shistotsitlar (parchalar), akantotsitlar
 s5384	Sferotsitoz — Minkovskiy–Shoffar kasalligi; o‘roqsimon — gemoglobinopatiya; shistotsitlar — mikroangiopatik gemoliz
@@ -81,7 +81,7 @@ s5392	Joli tanachalari (yadro qoldiqlari), Kebot halqalari, bazofil punktatsiya
 s5393	Megaloblast anemiya, splenektomiyadan keyin, qo‘rg‘oshin bilan zaharlanish
 s5394	Megaloblastik shakllar
 s5395	Megaloblastlar va megalotsitlar
-s5396	B12 va foliy kislotasi yetishmovchiligi
+s5396	B~12~ va foliy kislotasi yetishmovchiligi
 s5397	3. Eritrotsitozlar (poliglobuliyalar)
 s5398	**Eritrotsitoz** — qonda eritrotsitlar va gemoglobin miqdorining oshishi.
 s5399	**Birlamchi (haqiqiy politsitemiya, Vakez kasalligi)** — mieloproliferativ o‘sma kasalligi (JAK2 mutatsiyasi), eritropoetinga bog‘liq emas; leykotsitoz va trombotsitoz bilan kechadi.
@@ -91,7 +91,7 @@ s5402	4. Anemiya tushunchasi va tasnifi
 s5403	**Anemiya (kamqonlik)** — qon hajmi birligida gemoglobin (va ko‘pincha eritrotsitlar) miqdorining kamayishi. JSST mezoni: erkaklarda gemoglobin 130 g/l dan, ayollarda 120 g/l dan, homiladorlarda 110 g/l dan kam.
 s5404	Jadval 17.4. Anemiyalar tasnifi
 s5405	Patogenez bo‘yicha
-s5406	1) Qon yo‘qotish tufayli (postgemorragik — o‘tkir va surunkali); 2) eritropoez buzilishi tufayli (temir, B12, foliy yetishmovchiligi, aplastik, surunkali kasalliklar anemiyasi); 3) eritrotsitlarning ko‘p yemirilishi tufayli (gemolitik)
+s5406	1) Qon yo‘qotish tufayli (postgemorragik — o‘tkir va surunkali); 2) eritropoez buzilishi tufayli (temir, B~12~, foliy yetishmovchiligi, aplastik, surunkali kasalliklar anemiyasi); 3) eritrotsitlarning ko‘p yemirilishi tufayli (gemolitik)
 s5407	Rang ko‘rsatkichi (yoki MCH) bo‘yicha
 s5408	Gipoxrom (0,85 dan kam), normoxrom (0,85–1,05), giperxrom (1,05 dan ko‘p)
 s5409	Eritrotsitlar hajmi (MCV) bo‘yicha

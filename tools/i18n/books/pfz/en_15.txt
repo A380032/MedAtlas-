@@ -1,9 +1,9 @@
 s2868 9 days after receiving antitetanus horse serum, a patient developed fever, skin rashes, joint pain and enlarged lymph nodes. Protein was found in the urine, and the blood complement level was decreased.
 s2869 What condition has developed? Which type of allergic reaction does it belong to? Why did the signs appear after 9 days?
 s2870 Serum sickness — a type III (immune complex) allergic reaction. Foreign (horse) proteins persist in the body for a long time; within about a week antibodies (mainly IgG) are formed against them and create soluble immune complexes with the antigen still in the blood. These complexes deposit in vessel walls, renal glomeruli and joint synovium, activate complement (which is why blood complement falls), attract neutrophils and cause vasculitis, glomerulonephritis (proteinuria) and arthritis. The signs appeared after the time needed to form antibodies (7–14 days); because there was no prior sensitization, the reaction developed on the very first injection.
-s2871 A 32-year-old patient has had weight loss, prolonged fever, oral candidiasis and recurrent pneumonias over a year. Pneumocystis was found in the latest pneumonia. Blood CD4+ lymphocytes are 120 cells/µl.
+s2871 A 32-year-old patient has had weight loss, prolonged fever, oral candidiasis and recurrent pneumonias over a year. Pneumocystis was found in the latest pneumonia. Blood CD4^+^ lymphocytes are 120 cells/µl.
 s2872 What condition can be suspected? Explain the mechanism of the immunodeficiency.
-s2873 The AIDS stage of HIV infection (secondary immunodeficiency). HIV enters T helper cells via the CD4 molecule and coreceptors, inserts its genome into the cell DNA by means of reverse transcriptase, replicates and kills the cells. Loss of CD4+ T helper cells impairs cellular immunity (macrophage activation, cytotoxic T cells) and humoral immunity (help to B lymphocytes). When CD4+ cells fall below 200/µl, opportunistic infections develop — pneumocystis pneumonia, candidiasis, tuberculosis. The diagnosis should be confirmed by detecting antibodies to HIV and viral RNA, and antiretroviral therapy should be started.
+s2873 The AIDS stage of HIV infection (secondary immunodeficiency). HIV enters T helper cells via the CD4 molecule and coreceptors, inserts its genome into the cell DNA by means of reverse transcriptase, replicates and kills the cells. Loss of CD4^+^ T helper cells impairs cellular immunity (macrophage activation, cytotoxic T cells) and humoral immunity (help to B lymphocytes). When CD4^+^ cells fall below 200/µl, opportunistic infections develop — pneumocystis pneumonia, candidiasis, tuberculosis. The diagnosis should be confirmed by detecting antibodies to HIV and viral RNA, and antiretroviral therapy should be started.
 s2874 An altered immune response on repeated exposure to an allergen, accompanied by damage to the body's own tissues
 s2875 Sensitization
 s2876 Increased sensitivity after the first exposure to an allergen (7–14 days)
@@ -27,7 +27,7 @@ s2893 Rapid desensitization by giving the allergen stepwise, starting with a sma
 s2894 Primary immunodeficiencies
 s2895 Bruton, DiGeorge, severe combined, chronic granulomatous
 s2896 AIDS
-s2897 HIV damages CD4+ T helper cells; CD4+ below 200/µl
+s2897 HIV damages CD4^+^ T helper cells; CD4^+^ below 200/µl
 s2898 Disorders of water and electrolyte metabolism. Pathogenetic factors of edema
 s2899 To explain to the student the balance of water and electrolytes in the body, the mechanisms that regulate it, the types of water balance disorders (dehydration and hyperhydration), their causes, pathogenesis and consequences, disorders of the main electrolytes (sodium, potassium, calcium), and the pathogenetic factors and types of edema; to teach the student to observe experimentally the role of the osmotic and colloid-osmotic factors in edema formation in the frog lymph sac.
 s2900 the distribution of water in the body, water balance and its regulation;
@@ -123,18 +123,18 @@ s2989 Disorder
 s2990 Normal value and threshold
 s2991 Main causes
 s2992 Hyponatremia
-s2993 Na+ below 135 mmol/l
+s2993 Na^+^ below 135 mmol/l
 s2994 Hypoosmolar states, diuretics, excess ADH secretion, adrenal insufficiency
 s2995 Headache, nausea, convulsions, cerebral edema
-s2996 Na+ above 145 mmol/l
+s2996 Na^+^ above 145 mmol/l
 s2997 Water deficit, diabetes insipidus, hypertonic solutions
 s2998 Thirst, impaired consciousness, convulsions
 s2999 Hypokalemia
-s3000 K+ below 3.5 mmol/l
+s3000 K^+^ below 3.5 mmol/l
 s3001 Vomiting, diarrhea, diuretics, hyperaldosteronism, alkalosis, insulin therapy
 s3002 Muscle weakness, intestinal atony, arrhythmias; on the ECG — flattening of the T wave and appearance of a U wave
 s3003 Hyperkalemia
-s3004 K+ above 5.0–5.5 mmol/l
+s3004 K^+^ above 5.0–5.5 mmol/l
 s3005 Kidney failure, tissue breakdown (crush syndrome, hemolysis), acidosis, potassium-sparing diuretics, hypoaldosteronism
 s3006 Muscle weakness, bradycardia, cardiac arrest; on the ECG — tall peaked T wave
 s3007 **Disorders of calcium metabolism:** total plasma calcium is 2.2–2.6 mmol/l. **Hypocalcemia** (hypoparathyroidism, vitamin D deficiency, acute pancreatitis) increases neuromuscular excitability: tetany, Chvostek and Trousseau signs, laryngospasm. **Hypercalcemia** (hyperparathyroidism, bone metastases) causes weakness, constipation, polyuria, kidney stones and arrhythmias.

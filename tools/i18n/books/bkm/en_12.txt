@@ -1,3 +1,13 @@
+s2292 **Sources of NADPH:** the pentose phosphate pathway (the main one) and malic enzyme.
+s2293 **Elongation and desaturation:** palmitate is elongated in the endoplasmic reticulum to stearate and longer; desaturases introduce a double bond at position Δ9 (stearate → oleate). Linoleic and linolenic acids are not synthesized.
+s2294 Table 9.3. Regulation of acetyl-CoA carboxylase
+s2295 Citrate (allosteric; promotes polymerization)
+s2296 Palmitoyl-CoA (long-chain acyl-CoA)
+s2297 Insulin (dephosphorylation; induction of enzyme synthesis)
+s2298 Glucagon, adrenaline (cAMP → phosphorylation); AMP kinase (low energy)
+s2299 A carbohydrate-rich, low-fat diet
+s2300 Starvation, a fatty diet
+s2301 4. Ketone bodies
 s2302 **Ketone bodies** are acetoacetate, β-hydroxybutyrate and acetone. They are synthesized from acetyl-CoA only in the **liver mitochondria** (ketogenesis), are carried by the blood to other tissues and are oxidized there as an energy source.
 s2303 Figure 9.2
 s2304 Synthesis of ketone bodies in the liver and their use in peripheral tissues (drawn after Severin E.S.)
@@ -10,21 +20,21 @@ s2310 5. Metabolism of phospholipids and glycolipids
 s2311 **Synthesis of glycerophospholipids** (in the endoplasmic reticulum) — on the basis of phosphatidic acid or diacylglycerol:
 s2312 **phosphatidylcholine** and **phosphatidylethanolamine** — through the CDP-choline (CDP-ethanolamine) pathway; phosphatidylcholine is also formed from phosphatidylethanolamine by three methylations at the expense of S-adenosylmethionine;
 s2313 **phosphatidylinositol** — CDP-diacylglycerol + inositol;
-s2314 **lipotropic factors** (choline, methionine, vitamin B12, folate, serine) are needed for the synthesis of phosphatidylcholine and for the export of TAG from the liver in VLDL; when they are lacking, **fatty degeneration of the liver** develops. **Sphingolipids** are synthesized on the basis of **sphingosine**, formed from serine and palmitoyl-CoA: sphingosine + fatty acid → ceramide; ceramide + phosphocholine → **sphingomyelin**; ceramide + carbohydrates → **cerebrosides, gangliosides**.
-s2315 **Breakdown:** phospholipids by phospholipases (A1, A2, C, D); sphingolipids are broken down in the lysosomes by specific hydrolases. Congenital deficiencies of these enzymes are the **sphingolipidoses** (lysosomal storage diseases, topic 10).
+s2314 **lipotropic factors** (choline, methionine, vitamin B~12~, folate, serine) are needed for the synthesis of phosphatidylcholine and for the export of TAG from the liver in VLDL; when they are lacking, **fatty degeneration of the liver** develops. **Sphingolipids** are synthesized on the basis of **sphingosine**, formed from serine and palmitoyl-CoA: sphingosine + fatty acid → ceramide; ceramide + phosphocholine → **sphingomyelin**; ceramide + carbohydrates → **cerebrosides, gangliosides**.
+s2315 **Breakdown:** phospholipids by phospholipases (A~1~, A~2~, C, D); sphingolipids are broken down in the lysosomes by specific hydrolases. Congenital deficiencies of these enzymes are the **sphingolipidoses** (lysosomal storage diseases, topic 10).
 s2316 Experiment 1: determination of ketone bodies in urine (Legal test)
 s2317 Pour into a test tube 1 ml of urine, 0.5 ml of 10% NaOH and 0.5 ml of freshly prepared 10% sodium nitroprusside solution.
 s2318 Observe the red color that appears.
 s2319 Add 1 ml of concentrated acetic acid. **Result and analysis:** if acetone and acetoacetate are present, a red color forms in the alkaline medium; when acetic acid is added it turns **cherry-red (violet)** — a positive result. Creatinine also gives a red color in alkali, but after acetic acid it turns yellow (which excludes a false positive). β-Hydroxybutyrate is not detected by this test.
 s2320 Experiment 2: determination of acetoacetate in urine (Gerhardt test)
 s2321 Pour 2 ml of urine into a test tube and add 10% iron (III) chloride solution dropwise (the phosphates precipitate; filter off the precipitate).
-s2322 Add a few more drops of FeCl3 to the filtrate. **Result and analysis:** if acetoacetate is present, a **red-brown (wine) color** appears. On heating, acetoacetate is converted into acetone and the color disappears (whereas the color given by salicylates persists on heating).
+s2322 Add a few more drops of FeCl~3~ to the filtrate. **Result and analysis:** if acetoacetate is present, a **red-brown (wine) color** appears. On heating, acetoacetate is converted into acetone and the color disappears (whereas the color given by salicylates persists on heating).
 s2323 Experiment 3: detection of ketonuria with test strips (from a case)
 s2324 Dip the test strip into the urine for 1–2 s and shake off the excess on the edge of the container.
 s2325 After 60 s compare the color with the scale (−, +, ++, +++). **Evaluation:** positive in starvation, vomiting (especially in children — the acetonemic state), a carbohydrate-free diet and decompensated diabetes mellitus. In diabetes ketonuria is seen together with glucosuria.
 s2326 Skill: calculating the ATP formed in the oxidation of a fatty acid
 s2327 From the number of carbons find the number of acetyl-CoA (n/2) and the number of β-oxidation cycles (n/2 − 1).
-s2328 Calculate that each cycle gives 1 FADH2 (1.5 ATP) and 1 NADH (2.5 ATP).
+s2328 Calculate that each cycle gives 1 FADH~2~ (1.5 ATP) and 1 NADH (2.5 ATP).
 s2329 Add 10 ATP for each acetyl-CoA in the Krebs cycle.
 s2330 Subtract 2 ATP for the activation.
 s2331 If the fatty acid is unsaturated, subtract 1.5 ATP for each double bond.
@@ -69,7 +79,7 @@ s2369 Carnitine
 s2370 Malonyl-CoA
 s2371 Palmitate
 s2372 The coenzyme that is reduced in the first reaction of β-oxidation:
-s2373 NADP+
+s2373 NADP^+^
 s2374 The ATP formed in the complete oxidation of palmitic acid (current calculation):
 s2375 The key enzyme of fatty acid synthesis:
 s2376 Fatty acid synthase
@@ -78,8 +88,8 @@ s2378 Malic enzyme
 s2379 Thiolase
 s2380 Acetyl-CoA carboxylase
 s2381 The reducing equivalent used in fatty acid synthesis:
-s2382 FADH2
-s2383 FMNH2
+s2382 FADH~2~
+s2383 FMNH~2~
 s2384 NADPH
 s2385 Glutathione
 s2386 The form in which acetyl-CoA leaves the mitochondria for the cytosol:
@@ -130,7 +140,7 @@ s2430 With albumin; the brain and erythrocytes do not use them
 s2431 Carnitine shuttle system
 s2432 CPT-I (key; inhibited by malonyl-CoA), translocase, CPT-II
 s2433 β-oxidation
-s2434 Dehydrogenation (FAD) → hydration → dehydrogenation (NAD+) → thiolase
+s2434 Dehydrogenation (FAD) → hydration → dehydrogenation (NAD^+^) → thiolase
 s2435 7 cycles, 8 acetyl-CoA, 106 ATP
 s2436 FA synthesis
 s2437 Cytosol; acetyl-CoA carboxylase (biotin) — key; FA synthase; NADPH
@@ -143,7 +153,7 @@ s2443 Muscle, heart, kidney and, in starvation, the brain; the liver has no tran
 s2444 Ketosis
 s2445 Starvation, diabetes, a carbohydrate-free diet; ketoacidosis > 3 mmol/l
 s2446 Lipotropic factors
-s2447 Choline, methionine, B12, folate — prevent fatty degeneration of the liver
+s2447 Choline, methionine, B~12~, folate — prevent fatty degeneration of the liver
 s2448 Metabolism of complex lipids. Cholesterol metabolism. Regulation of lipid metabolism
 s2449 To teach the student sterols and steroids, the significance and biological functions of cholesterol in the body, the biosynthesis of cholesterol and its regulation, its transport in the blood, the significance of LDL receptors and lecithin-cholesterol acyltransferase, the routes of removal of cholesterol from the body, the biochemical basis of hypercholesterolemia, atherosclerosis and gallstone disease, and the dyslipoproteinemias and sphingolipidoses; to master the determination of serum cholesterol by the enzymatic method.
 s2450 the structure, sources and functions of cholesterol;
@@ -157,7 +167,7 @@ s2457 the age-related normal values of the lipid indices.
 s2458 determine total cholesterol in serum by the enzymatic method;
 s2459 calculate the atherogenic index and evaluate the lipid profile.
 s2460 1. Sterols and steroids. The significance of cholesterol
-s2461 **Steroids** are substances based on the cyclopentanoperhydrophenanthrene ring. **Sterols** are steroid alcohols with a hydroxyl group at position 3; the main sterol of animals is **cholesterol** (C27H45OH). The body contains ≈ 140 g of cholesterol; ≈ 90% of it is in the cells (in membranes) and the rest in the blood.
+s2461 **Steroids** are substances based on the cyclopentanoperhydrophenanthrene ring. **Sterols** are steroid alcohols with a hydroxyl group at position 3; the main sterol of animals is **cholesterol** (C~27~H~45~OH). The body contains ≈ 140 g of cholesterol; ≈ 90% of it is in the cells (in membranes) and the rest in the blood.
 s2462 The biological functions of cholesterol:
 s2463 **structural** — a component of membranes, regulating their fluidity and permeability; abundant in the myelin sheath;
 s2464 a basis for the synthesis of **bile acids** (liver);
@@ -169,12 +179,3 @@ s2469 Cholesterol is synthesized in all nucleated cells, mainly in the **liver**
 s2470 Figure 10.1
 s2471 The main stages of cholesterol biosynthesis and its regulation (drawn after Severin E.S.)
 s2472 3 acetyl-CoA → **HMG-CoA** (β-hydroxy-β-methylglutaryl-CoA) — in the cytosol (unlike ketone body synthesis, which takes place in the mitochondria).
-s2473 HMG-CoA + 2 NADPH → **mevalonate** — **HMG-CoA reductase** (the key enzyme, in the membrane of the endoplasmic reticulum).
-s2474 Mevalonate → activated isoprenoid units (C5, at the expense of ATP) → geranyl and farnesyl pyrophosphate → **squalene** (C30).
-s2475 Squalene is cyclized to **lanosterol** and then, in ≈ 20 reactions, converted into **cholesterol**.
-s2476 Table 10.1. Regulation of HMG-CoA reductase
-s2477 Intracellular cholesterol (through the transcription factor SREBP)
-s2478 When it is high — the synthesis of the enzyme and of LDL receptors falls and the enzyme is degraded faster
-s2479 Activates it by dephosphorylation; increases its synthesis
-s2480 Glucagon, AMP kinase (low energy)
-s2481 Inactivate it by phosphorylation

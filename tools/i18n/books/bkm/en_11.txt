@@ -1,3 +1,9 @@
+s2087 Compare serum taken on an empty stomach and 3–4 hours after a fatty meal (demonstration or figure).
+s2088 Leave the lipemic serum in the refrigerator (+4 °C) overnight: if a “cream” layer forms on top — chylomicrons; if the serum itself remains cloudy — there is a lot of VLDL.
+s2089 Compare the lipid profile results given by the teacher with the normal values and calculate the atherogenic index.
+s2090 Skill: identifying the cause of steatorrhea
+s2091 Confirm the increase of fat in the feces (coprogram: neutral fat or fatty acids).
+s2092 If there is a lot of neutral fat (TAG) — lipase deficiency (pancreatitis): fecal elastase-1 is reduced.
 s2093 If there are many fatty acids and soaps — lack of bile or impaired absorption.
 s2094 If there is jaundice, acholic feces and raised conjugated bilirubin in the blood — obstruction of the bile ducts.
 s2095 Check for signs of fat-soluble vitamin deficiency and recommend a diet.
@@ -112,10 +118,10 @@ s2203 Fatty acids, TAG, phospholipids, sphingolipids, steroids, eicosanoids
 s2204 Essential FA
 s2205 Linoleic (ω-6), α-linolenic (ω-3)
 s2206 Emulsification
-s2207 Bile acid salts, peristalsis, CO2
+s2207 Bile acid salts, peristalsis, CO~2~
 s2208 Pancreatic lipase
 s2209 + colipase; TAG → 2-MAG + 2 FA
-s2210 Phospholipase A2
+s2210 Phospholipase A~2~
 s2211 Phospholipid → lysophospholipid + FA
 s2212 Primary: cholic, chenodeoxycholic; conjugation — glycine, taurine
 s2213 Enterohepatic circulation
@@ -167,7 +173,7 @@ s2258 The **fatty acids** released by lipolysis are bound in the blood to **albu
 s2259 2. β-oxidation of fatty acids
 s2260 **β-oxidation** is the oxidation of fatty acids in the mitochondrial matrix with the successive removal of two-carbon fragments (acetyl-CoA) (F. Knoop, 1904). It takes place mainly in the heart, skeletal muscle, liver and kidney.
 s2261 **1. Activation of the fatty acid** (in the cytosol, on the outer mitochondrial membrane):
-s2262 Fatty acid + CoA-SH + ATP → Acyl-CoA + AMP + PPi (acyl-CoA synthetase; 2 high-energy bonds are used)
+s2262 Fatty acid + CoA-SH + ATP → Acyl-CoA + AMP + PP~i~ (acyl-CoA synthetase; 2 high-energy bonds are used)
 s2263 **2. Transport of the acyl residue into the mitochondria — the carnitine shuttle system.** The inner membrane is impermeable to acyl-CoA:
 s2264 **carnitine palmitoyltransferase I (CPT-I)** (outer membrane) transfers the acyl group to carnitine → acylcarnitine; this is the **key (regulated) step of β-oxidation**;
 s2265 **carnitine-acylcarnitine translocase** carries the acylcarnitine into the matrix;
@@ -177,33 +183,23 @@ s2268 Figure 9.1
 s2269 Activation of fatty acids, the carnitine shuttle system and the reactions of β-oxidation (drawn after Severin E.S.)
 s2270 **Dehydrogenation** — acyl-CoA dehydrogenase (FAD): acyl-CoA → trans-Δ2-enoyl-CoA + **FADH~2~**;
 s2271 **Hydration** — enoyl-CoA hydratase: → L-3-hydroxyacyl-CoA;
-s2272 **Dehydrogenation** — 3-hydroxyacyl-CoA dehydrogenase (NAD+): → 3-ketoacyl-CoA + **NADH**;
+s2272 **Dehydrogenation** — 3-hydroxyacyl-CoA dehydrogenase (NAD^+^): → 3-ketoacyl-CoA + **NADH**;
 s2273 **Thiolytic cleavage** — thiolase (+ CoA-SH): → **acetyl-CoA** + an acyl-CoA shortened by two carbons. The shortened acyl-CoA starts the cycle again. For a Cn fatty acid with an even number of carbons there are (n/2 − 1) cycles and n/2 acetyl-CoA are formed.
 s2274 Table 9.2. Energy yield of the complete oxidation of palmitic acid (C16)
 s2275 7 cycles of β-oxidation
-s2276 7 FADH2
+s2276 7 FADH~2~
 s2277 7 NADH
 s2278 8 acetyl-CoA → Krebs cycle
 s2279 Activation
 s2280 106 ATP (129–131 by the old calculation)
 s2281 The high energy value of fats is due to the fact that fatty acids are more reduced than carbohydrates.
-s2282 The oxidation of **unsaturated fatty acids** needs additional enzymes (isomerase, reductase); each double bond means one FADH2 less. From **odd-chain fatty acids** propionyl-CoA is formed at the end → methylmalonyl-CoA → (B12) succinyl-CoA → it can enter gluconeogenesis. **Very long chain** fatty acids (C22 and longer) are first shortened in the **peroxisomes** (here H2O2 is formed instead of FADH2).
+s2282 The oxidation of **unsaturated fatty acids** needs additional enzymes (isomerase, reductase); each double bond means one FADH~2~ less. From **odd-chain fatty acids** propionyl-CoA is formed at the end → methylmalonyl-CoA → (B~12~) succinyl-CoA → it can enter gluconeogenesis. **Very long chain** fatty acids (C22 and longer) are first shortened in the **peroxisomes** (here H~2~O~2~ is formed instead of FADH~2~).
 s2283 **Carnitine or CPT deficiency** and **medium-chain acyl-CoA dehydrogenase (MCAD) deficiency**: during starvation or illness fatty acids are not oxidized — **hypoketotic hypoglycemia** (ketone bodies are not formed and there is not enough ATP for gluconeogenesis), muscle weakness, cardiomyopathy and liver damage; one of the causes of sudden infant death syndrome. Treatment: avoiding long fasts, frequent carbohydrate feeding, carnitine preparations.
 s2284 3. Biosynthesis of fatty acids
 s2285 Fatty acids are synthesized in the **cytosol**, mainly in the **liver**, **adipose tissue** and the **lactating mammary gland**; the source is **acetyl-CoA** formed from excess carbohydrates. Synthesis increases under the action of **insulin**, after a carbohydrate-rich meal.
 s2286 **1. Export of acetyl-CoA from the mitochondria to the cytosol (the citrate shuttle).** Acetyl-CoA does not cross the mitochondrial membrane: it forms citrate with oxaloacetate, citrate leaves for the cytosol and is split again into acetyl-CoA and oxaloacetate by **citrate lyase** (ATP). Oxaloacetate is converted into malate and then, by **malic enzyme**, into pyruvate, and **NADPH** is formed.
 s2287 **2. Carboxylation of acetyl-CoA** (the key reaction):
-s2288 Acetyl-CoA + CO2 + ATP → **Malonyl-CoA** + ADP + Pi — **acetyl-CoA carboxylase** (coenzyme — **biotin**)
-s2289 **3. Fatty acid synthase** — a multienzyme complex (a dimer with 7 active sites in each subunit and an acyl-carrier part — the **pantetheine group** (B5)). In each cycle 2 carbons are added from malonyl-CoA (CO2 is released); **2 NADPH** are used for the reduction. In 7 cycles **palmitic acid** (C16:0) is formed.
+s2288 Acetyl-CoA + CO~2~ + ATP → **Malonyl-CoA** + ADP + P~i~ — **acetyl-CoA carboxylase** (coenzyme — **biotin**)
+s2289 **3. Fatty acid synthase** — a multienzyme complex (a dimer with 7 active sites in each subunit and an acyl-carrier part — the **pantetheine group** (B~5~)). In each cycle 2 carbons are added from malonyl-CoA (CO~2~ is released); **2 NADPH** are used for the reduction. In 7 cycles **palmitic acid** (C16:0) is formed.
 s2290 The overall equation of palmitate synthesis:
-s2291 8 Acetyl-CoA + 7 ATP + 14 NADPH + 14 H+ → Palmitate + 8 CoA-SH + 7 ADP + 7 Pi + 14 NADP+ + 6 H2O
-s2292 **Sources of NADPH:** the pentose phosphate pathway (the main one) and malic enzyme.
-s2293 **Elongation and desaturation:** palmitate is elongated in the endoplasmic reticulum to stearate and longer; desaturases introduce a double bond at position Δ9 (stearate → oleate). Linoleic and linolenic acids are not synthesized.
-s2294 Table 9.3. Regulation of acetyl-CoA carboxylase
-s2295 Citrate (allosteric; promotes polymerization)
-s2296 Palmitoyl-CoA (long-chain acyl-CoA)
-s2297 Insulin (dephosphorylation; induction of enzyme synthesis)
-s2298 Glucagon, adrenaline (cAMP → phosphorylation); AMP kinase (low energy)
-s2299 A carbohydrate-rich, low-fat diet
-s2300 Starvation, a fatty diet
-s2301 4. Ketone bodies
+s2291 8 Acetyl-CoA + 7 ATP + 14 NADPH + 14 H^+^ → Palmitate + 8 CoA-SH + 7 ADP + 7 P~i~ + 14 NADP^+^ + 6 H~2~O

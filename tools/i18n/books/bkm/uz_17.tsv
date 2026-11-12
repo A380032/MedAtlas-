@@ -1,3 +1,18 @@
+s3197	Karbamoilfosfat + ornitin → sitrullin + F~n~
+s3198	Ornitinkarbamoiltransferaza
+s3199	Sitrullin + aspartat + ATF → argininosuktsinat + AMF + PP~n~
+s3200	Argininosuktsinatsintetaza
+s3201	Sitozol
+s3202	Argininosuktsinat → arginin + fumarat
+s3203	Argininosuktsinatliaza
+s3204	Arginin + H~2~O → siydikchil + ornitin
+s3205	Arginaza (Mn^2+^; deyarli faqat jigarda)
+s3206	**Siydikchil molekulasidagi ikki azotning manbalari:** birinchisi — **ammiak** (glutamatning dezaminlanishi va glutaminaza reaksiyasidan), ikkinchisi — **aspartat** (oksaloatsetatning transaminlanishidan). Shu tariqa siklga barcha aminokislotalar azoti transaminlanish orqali yetkaziladi.
+s3207	**Energiya sarfi:** bitta siydikchil uchun 3 ATF (**4 makroergik bog‘**, chunki bitta ATF AMF + PP~n~ ga parchalanadi).
+s3208	**Krebs sikli bilan bog‘liqligi (“Krebs velosipedi”):** ornitin siklida hosil bo‘lgan **fumarat** Krebs siklida malat va oksaloatsetatga aylanadi; oksaloatsetat transaminlanib yana **aspartat** hosil qiladi va ornitin sikliga qaytadi. Malatdegidrogenaza reaksiyasida hosil bo‘lgan NADH siydikchil sinteziga sarflangan energiyaning bir qismini qoplaydi.
+s3209	Boshqarilishi:
+s3210	**N-atsetilglutamat** (atsetil-KoA + glutamat; uning sintezini arginin faollashtiradi) karbamoilfosfatsintetaza I ning majburiy allosterik aktivatori;
+s3211	oqsilga boy ovqat va ochlikda (aminokislotalar katabolizmi kuchaygan) sikl fermentlari sintezi induksiyalanadi (glyukagon, kortizol). **Siydikchil me’yorlari:** qon zardobida **2,5–8,3 mmol/l**; siydik bilan sutkasiga **20–35 g** (333–583 mmol).
 s3212	Jadval 13.2. Qonda siydikchil miqdorining o‘zgarishi
 s3213	Ortishi
 s3214	Kamayishi
@@ -16,20 +31,20 @@ s3226	Jadval 13.3. Ornitin sikli fermentlarining tug‘ma yetishmovchiligi
 s3227	Qon/siydikda o‘zgarishlar
 s3228	I tip giperammoniyemiya
 s3229	Karbamoilfosfatsintetaza I
-s3230	NH3 ↑↑; orot kislota me’yorida
+s3230	NH~3~ ↑↑; orot kislota me’yorida
 s3231	II tip giperammoniyemiya (eng ko‘p uchraydi, X-bog‘langan)
-s3232	NH3 ↑↑, glutamin ↑; siydikda orot kislota ↑ (karbamoilfosfat pirimidinlar sinteziga o‘tadi)
+s3232	NH~3~ ↑↑, glutamin ↑; siydikda orot kislota ↑ (karbamoilfosfat pirimidinlar sinteziga o‘tadi)
 s3233	Sitrullinemiya
 s3234	Sitrullin ↑↑
 s3235	Argininosuktsinaturiya
 s3236	Argininosuktsinat ↑↑
 s3237	Argininemiya
 s3238	Arginaza
-s3239	Arginin ↑↑; spastik paraparez, NH3 kamroq oshadi
+s3239	Arginin ↑↑; spastik paraparez, NH~3~ kamroq oshadi
 s3240	Chaqaloqlarda hayotning birinchi kunlarida (oqsil iste’moli boshlanganda) emishdan bosh tortish, qusish, letargiya, tutqanoq, koma kuzatiladi. Davolash: oqsilni cheklash, **natriy benzoat** va **fenilbutirat** (glitsin va glutamin bilan konyugatsiyalanib, azotni siydikchilni chetlab chiqaradi), arginin yoki sitrullin qo‘shimchasi, gemodializ, jigar transplantatsiyasi.
 s3241	**Orttirilgan (ikkilamchi) giperammoniyemiya** — asosan **jigar sirrozi va yetishmovchiligi**: siydikchil sintezi kamayadi, darvoza venasidagi ammiak portokaval anastomozlar orqali jigarni chetlab umumiy qonga tushadi — **jigar ensefalopatiyasi** (25-mavzu). Bolalarda virusli infeksiyalar paytida aspirin qabul qilish **Rey sindromini** (mitoxondriyalar shikastlanishi, giperammoniyemiya, jigar yog‘li distrofiyasi, ensefalopatiya) chaqirishi mumkin; shuning uchun bolalarga isitmada aspirin tavsiya etilmaydi.
 s3242	5. Bir uglerodli guruhlar almashinuvi. Serin va glitsin
-s3243	**Tetragidrofolat (TGF)** — folat kislota (B9) ning faol shakli; digidrofolatreduktaza (NADPH) ta’sirida hosil bo‘ladi. TGF **bir uglerodli guruhlarni** (metil −CH3, metilen =CH2, metenil =CH−, formil −CHO, formimino) tashiydi. Bir uglerodli guruhlarning asosiy manbayi — **serin** (serin + TGF → glitsin + N5,N10-metilen-TGF; serinoksimetiltransferaza, PALF) va **glitsin** (glitsinni parchalovchi tizim).
+s3243	**Tetragidrofolat (TGF)** — folat kislota (B~9~) ning faol shakli; digidrofolatreduktaza (NADPH) ta’sirida hosil bo‘ladi. TGF **bir uglerodli guruhlarni** (metil −CH~3~, metilen =CH~2~, metenil =CH−, formil −CHO, formimino) tashiydi. Bir uglerodli guruhlarning asosiy manbayi — **serin** (serin + TGF → glitsin + N5,N10-metilen-TGF; serinoksimetiltransferaza, PALF) va **glitsin** (glitsinni parchalovchi tizim).
 s3244	**Bir uglerodli guruhlar ishlatiladi:** purin nukleotidlari sintezi (C2 va C8 atomlari), **timidilat** sintezi (dUMF → dTMF), metionin regeneratsiyasi (gomotsistein → metionin), serin–glitsin o‘zaro aylanishi.
 s3245	**Glitsin** ishtirok etadigan sintezlar: oqsillar (kollagenning har uchinchi aminokislotasi), gem (suktsinil-KoA + glitsin), kreatin, purinlar, glutation, o‘t kislotalari konyugatsiyasi (glikoxol kislota), benzoat kislotani zararsizlantirish (gippur kislota).
 s3246	**Sulfanilamidlar** bakteriyalarda para-aminobenzoat kislotadan folat sintezini raqobatli ingibirlaydi (odam folatni ovqatdan oladi) — bakteriostatik ta’sir. **Metotreksat** digidrofolatreduktazani ingibirlaydi — TGF yetishmasligi timidilat va purinlar sintezini to‘xtatadi; tez bo‘linuvchi o‘sma hujayralari nobud bo‘ladi. **Folat yetishmovchiligi** — megaloblast anemiya; homiladorlikda — homilada nerv nayi nuqsonlari (shuning uchun homiladorlik rejalashtirilganda folat kislota buyuriladi).
@@ -42,14 +57,14 @@ s3252	nukleotidlar va DNK **metillanishi** (genlar ekspressiyasining epigenetik 
 s3253	karnitin, melatonin sintezi; yot moddalar va gormonlar (katexolaminlar — KOMT) zararsizlantirilishi. Metil guruhini bergan SAM **S-adenozilgomotsisteinga**, so‘ng **gomotsisteinga** aylanadi. Gomotsisteinning taqdiri:
 s3254	**remetillanish** — metioninga qaytadi: metil donori N5-metil-TGF, koferment — **metilkobalamin (B~12~)** (metioninsintaza);
 s3255	**transsulfurlanish** — serin bilan sistationin (sistationin-β-sintaza, **B~6~**), so‘ng **sistein** hosil bo‘ladi; sistein → taurin, glutation, sulfatlar (FAFS).
-s3256	**Giperhomotsisteinemiya** (me’yorda qonda 5–15 mkmol/l) — B12, folat yoki B6 yetishmovchiligi, buyrak yetishmovchiligi yoki tug‘ma ferment nuqsonlarida (sistationin-β-sintaza — **gomotsistinuriya**: gavhar chiqishi, skelet o‘zgarishlari, aqliy zaiflik, erta tromboz) kuzatiladi. Gomotsistein endoteliyni shikastlaydi va **ateroskleroz va tromboz** uchun mustaqil xavf omili. B12 yetishmovchiligida N5-metil- TGF ishlatilmaydi va to‘planadi (“folat tuzog‘i”) — boshqa TGF shakllari kamayib, megaloblast anemiya rivojlanadi.
+s3256	**Giperhomotsisteinemiya** (me’yorda qonda 5–15 mkmol/l) — B~12~, folat yoki B~6~ yetishmovchiligi, buyrak yetishmovchiligi yoki tug‘ma ferment nuqsonlarida (sistationin-β-sintaza — **gomotsistinuriya**: gavhar chiqishi, skelet o‘zgarishlari, aqliy zaiflik, erta tromboz) kuzatiladi. Gomotsistein endoteliyni shikastlaydi va **ateroskleroz va tromboz** uchun mustaqil xavf omili. B~12~ yetishmovchiligida N5-metil- TGF ishlatilmaydi va to‘planadi (“folat tuzog‘i”) — boshqa TGF shakllari kamayib, megaloblast anemiya rivojlanadi.
 s3257	7. Fenilalanin va tirozin almashinuvi
-s3258	**Fenilalanin** (almashinmaydigan) asosan jigarda **fenilalaningidroksilaza** (koferment — **tetragidrobiopterin, BH~4~**) ta’sirida **tirozinga** aylanadi. Tirozindan quyidagilar hosil bo‘ladi: **katexolaminlar** (dofamin, noradrenalin, adrenalin), **melanin** (melanotsitlarda tirozinaza), **tireoid gormonlar** (T3, T4); tirozinning oxirgi katabolizmi gomogentizin kislota orqali **fumarat** va **atsetoatsetatga** olib boradi.
+s3258	**Fenilalanin** (almashinmaydigan) asosan jigarda **fenilalaningidroksilaza** (koferment — **tetragidrobiopterin, BH~4~**) ta’sirida **tirozinga** aylanadi. Tirozindan quyidagilar hosil bo‘ladi: **katexolaminlar** (dofamin, noradrenalin, adrenalin), **melanin** (melanotsitlarda tirozinaza), **tireoid gormonlar** (T~3~, T~4~); tirozinning oxirgi katabolizmi gomogentizin kislota orqali **fumarat** va **atsetoatsetatga** olib boradi.
 s3259	Rasm 13.2
 s3260	Fenilalanin va tirozin almashinuvi; tug‘ma kasalliklarda bloklanadigan reaksiyalar (Severin E.S. asosida chizilgan)
 s3261	Jadval 13.4. Fenilalanin va tirozin almashinuvining tug‘ma kasalliklari
 s3262	Fenilketonuriya (FKU)
-s3263	Fenilalaningidroksilaza (klassik); kamdankam — BH4 sintezi
+s3263	Fenilalaningidroksilaza (klassik); kamdankam — BH~4~ sintezi
 s3264	Qonda fenilalanin ↑↑, siydikda fenilpiruvat, fenillaktat, fenilatsetat (“sichqon” hidi); davolanmasa — og‘ir aqliy zaiflik, tutqanoq, och rangli teri va soch (melanin kam)
 s3265	Alkaptonuriya
 s3266	Gomogentizatoksidaza
@@ -65,7 +80,7 @@ s3275	Tirozinaminotransferaza
 s3276	Ko‘z va teri shikastlanishi, aqliy zaiflik
 s3277	**Fenilketonuriya skriningi** barcha chaqaloqlarda hayotning 3–5-kunlarida (Guthrie testi yoki tandem mass-spektrometriya) o‘tkaziladi. Tashxis qo‘yilgach, bola **fenilalanini kam parhezga** o‘tkaziladi (maxsus aralashmalar; tirozin bunday bemorlar uchun almashinmaydigan bo‘lib qoladi). Parhez erta boshlansa, aqliy rivojlanish deyarli me’yorda bo‘ladi. FKU li onalar homiladorlik davrida ham parhezga amal qilishi kerak — aks holda yuqori fenilalanin homilada mikrotsefaliya va yurak nuqsonlarini chaqiradi. Fenilalanin manbalaridan biri — **aspartam** (sun’iy shirinlik).
 s3278	1-ish: qon zardobida siydikchilni ureaza usulida aniqlash
-s3279	**Usul asosi: ureaza** siydikchilni ammiak va CO2 ga parchalaydi; ammiak fenol va gipoxlorit bilan (natriy nitroprussid katalizatorligida) **ko‘k rangli indofenol** hosil qiladi (Bertlo reaksiyasi). Rang intensivligi siydikchil miqdoriga proporsional (546–600 nm). Analizatorlarda kinetik usul ishlatiladi: ammiak glutamatdegidrogenaza reaksiyasida NADH sarflanishi bo‘yicha o‘lchanadi (340 nm).
+s3279	**Usul asosi: ureaza** siydikchilni ammiak va CO~2~ ga parchalaydi; ammiak fenol va gipoxlorit bilan (natriy nitroprussid katalizatorligida) **ko‘k rangli indofenol** hosil qiladi (Bertlo reaksiyasi). Rang intensivligi siydikchil miqdoriga proporsional (546–600 nm). Analizatorlarda kinetik usul ishlatiladi: ammiak glutamatdegidrogenaza reaksiyasida NADH sarflanishi bo‘yicha o‘lchanadi (340 nm).
 s3280	Uchta probirkaga 1 ml dan ureaza tutuvchi bufer eritmasini quying.
 s3281	1-siga 10 mkl zardob, 2-siga 10 mkl standart (masalan, 8,33 mmol/l), 3-siga 10 mkl suv qo‘shing; 37 °C da 10 daqiqa saqlang.
 s3282	Fenol-nitroprussid va ishqoriy gipoxlorit reagentlarini qo‘shing, 37 °C da yana 10 daqiqa saqlang.
@@ -164,14 +179,3 @@ s3374	Ornitinkarbamoiltransferaza yetishmovchiligi (II tip giperammoniyemiya; X-
 s3375	Chaqaloqlar skriningida qonda fenilalanin 1200 mkmol/l (me’yor < 120) aniqlandi. Tirozin pasaygan.
 s3376	Tashxis qanday? Davolanmasa qanday oqibatlar bo‘ladi? Parhezning mohiyati nima?
 s3377	Klassik fenilketonuriya — fenilalaningidroksilaza yetishmovchiligi. Fenilalanin tirozinga aylanmaydi, to‘planadi va transaminlanib fenilpiruvat, fenillaktat, fenilatsetatga aylanadi (siydikda — “sichqon” hidi). Yuqori fenilalanin miyada boshqa yirik neytral aminokislotalarning (tirozin, triptofan) tashilishini to‘sadi, mielinlanish buziladi, neyromediatorlar (dofamin, serotonin) sintezi kamayadi — davolanmasa og‘ir aqliy zaiflik, tutqanoq; melanin kam — teri va soch och rangli. Davolash: hayotning birinchi haftalaridan fenilalanini kam parhez (maxsus aralashmalar), tirozin qo‘shimchasi; qonda fenilalanin muntazam nazorat qilinadi.
-s3378	60 yoshli vegetarian ayolda holsizlik, oyoqlarda uvishish, xotira pasayishi kuzatiladi. Qonda megaloblast anemiya, gomotsistein 45 mkmol/l (me’yor 5–15), metilmalon kislota oshgan.
-s3379	Qaysi vitamin yetishmaydi? Gomotsistein va metilmalon kislota nima uchun oshgan?
-s3380	B12 (kobalamin) yetishmovchiligi (vegetarianlarda ovqatda kam — u faqat hayvon mahsulotlarida bor). Metilkobalamin metioninsintazaning kofermenti: yetishmasa gomotsistein metioninga aylanmaydi (giperhomotsisteinemiya — tromboz va ateroskleroz xavfi), N5-metil-TGF to‘planib (“folat tuzog‘i”) boshqa folat shakllari kamayadi — timidilat va DNK sintezi buziladi (megaloblast anemiya). 5’-dezoksiadenozilkobalamin metilmalonil-KoA-mutazaning kofermenti: yetishmasa metilmalon kislota to‘planadi; g‘ayritabiiy yog‘ kislotalari mielinga kirib nerv tizimini shikastlaydi (funikulyar mieloz). Davolash — B12 parenteral.
-s3381	Ammiak manbalari
-s3382	Dezaminlanish, amidlar gidrolizi, MAO, asoslar dezaminlanishi, ichak
-s3383	Zaharlilik
-s3384	Miyada α-KG ↓ (Krebs sikli ↓), glutamin ↑ (shish)
-s3385	Vaqtincha bog‘lanish
-s3386	Glutaminsintetaza (glutamin), alanin
-s3387	Buyrak
-s3388	Glutaminaza → NH~4~^+^ chiqarish; atsidozda ↑

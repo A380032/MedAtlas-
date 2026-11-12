@@ -82,7 +82,7 @@ s0955 C% = (mg/ml) / 10
 s0956 From percentage to mg/ml
 s0957 mg/ml = C% × 10
 s0958 Dilution
-s0959 C1 × V1 = C2 × V2
+s0959 C~1~ × V~1~ = C~2~ × V~2~
 s0960 Substance per ml (ampoule)
 s0961 Required volume (ml)
 s0962 V = required dose (mg) / concentration (mg/ml)
@@ -94,7 +94,7 @@ s0967 2% = 20 mg/ml; 20 × 2 = **40 mg**.
 s0968 **Example 2.** A patient needs 4 mg of dexamethasone. The ampoule contains a 4 mg/ml solution. How many ml are drawn up?
 s0969 V = 4 / 4 = **1 ml**.
 s0970 **Example 3.** 200 ml of a 5% solution must be prepared from a 40% glucose solution. How much of the 40% solution is taken?
-s0971 C1 × V1 = C2 × V2 → 40 × V1 = 5 × 200 → V1 = **25 ml**; the remaining 175 ml of water for injection is added.
+s0971 C~1~ × V~1~ = C~2~ × V~2~ → 40 × V~1~ = 5 × 200 → V~1~ = **25 ml**; the remaining 175 ml of water for injection is added.
 s0972 **Example 4.** A 1000 ml infusion must be given over 8 hours. The drip set gives 1 ml = 20 drops. What is the rate?
 s0973 1000 × 20 / 480 ≈ **42 drops/minute**.
 s0974 **Example 5.** A child weighing 12 kg is prescribed amoxicillin 25 mg/kg 2 times a day. The suspension is 250 mg/5 ml. How many ml are given at a time?
@@ -143,10 +143,10 @@ s1016 For a dry powder: a prescription for the powder (D.t.d. N.), then **#** an
 s1017 State clearly in the signatura the route (intravenously, intramuscularly, subcutaneously), the rate and the number of injections.
 s1018 Check that no oily solution or suspension is prescribed intravenously.
 s1019 Skill 3. Preparing the required concentration from a concentrated solution
-s1020 Write down the volume and concentration of the required solution (C2, V2).
+s1020 Write down the volume and concentration of the required solution (C~2~, V~2~).
 s1021 Write down the concentration of the available solution (C1).
-s1022 Find the required volume from the formula V1 = C2 × V2 / C1.
-s1023 Add solvent in a volume of V2 – V1.
+s1022 Find the required volume from the formula V~1~ = C~2~ × V~2~ / C~1~.
+s1023 Add solvent in a volume of V~2~ – V~1~.
 s1024 Check the result with a reverse calculation.
 s1025 List the liquid dosage forms. What are their advantages and disadvantages?
 s1026 Into which types are solutions divided by solvent and by use?

@@ -1,3 +1,30 @@
+s4168 Antiparallel right-handed double helix, A=T (2), G≡C (3 hydrogen bonds)
+s4169 Nucleosome
+s4170 Histone octamer + ≈ 146 base pairs of DNA
+s4171 Hybridization
+s4172 Joining of complementary strands; Tm depends on G≡C
+s4173 mtDNA
+s4174 Circular, 37 genes, inherited through the mother
+s4175 Replication
+s4176 Semiconservative, primer required, dNTPs, Okazaki fragments
+s4177 Enzymes
+s4178 Helicase, topoisomerase, primase, DNA pol α/δ/ε, ligase
+s4179 Reverse transcriptase with an RNA template; active in tumors
+s4180 5-Methylcytosine in CpG — silences the gene (epigenetics)
+s4181 Transcription
+s4182 No primer, NTPs; RNA pol II — mRNA (α-amanitin)
+s4183 Processing
+s4184 Cap, poly(A), splicing (snRNA), alternative splicing
+s4185 PCR
+s4186 95 → 55–65 → 72 °C; Taq polymerase; 2^n^ copies
+s4187 Translation. Regulation of gene expression
+s4188 To give the student knowledge of the genetic code and its properties, the components of the protein-synthesizing system, the stages of polypeptide chain synthesis on ribosomes, post-translational modification, protein folding and targeting, inhibitors of protein synthesis (antibiotics, toxins), the regulation of gene expression in prokaryotes and eukaryotes, and cell differentiation.
+s4189 the properties of the genetic code;
+s4190 the structure of tRNA and the role of aminoacyl-tRNA synthetases;
+s4191 the structure of ribosomes (prokaryotic and eukaryotic);
+s4192 the initiation, elongation and termination stages of translation;
+s4193 the main post-translational modifications;
+s4194 the antibiotics and toxins that block protein synthesis;
 s4195 the operon model (the lactose operon) and the levels of regulation of gene expression in eukaryotes.
 s4196 determine a peptide sequence from an mRNA sequence using the genetic code table;
 s4197 predict the effect of a mutation on a protein;
@@ -30,7 +57,7 @@ s4223 **Aminoacyl-tRNA synthetases** — a separate enzyme for each amino acid; 
 s4224 **Ribosomes.**
 s4225 **Protein factors:** initiation (eIF), elongation (eEF), termination (eRF).
 s4226 **Energy sources:** ATP (activation), GTP (initiation, elongation, termination).
-s4227 Mg2+ and K+ ions.
+s4227 Mg^2+^ and K^+^ ions.
 s4228 Table 17.2. Structure of ribosomes
 s4229 Complete ribosome
 s4230 70S
@@ -47,7 +74,7 @@ s4240 A, P, E
 s4241 3. Stages of translation
 s4242 Figure 17.1
 s4243 Stages of translation (drawn after Severin E.S.)
-s4244 **Activation of amino acids:** amino acid + ATP → aminoacyl-AMP + PPi; aminoacyl-AMP + tRNA → aminoacyl-tRNA + AMP.
+s4244 **Activation of amino acids:** amino acid + ATP → aminoacyl-AMP + PP~i~; aminoacyl-AMP + tRNA → aminoacyl-tRNA + AMP.
 s4245 **Initiation (in eukaryotes):** the 40S subunit, the initiator **Met-tRNA~i~^Met^**, eIF2-GTP and other factors bind together to the **5’-cap of the mRNA** (eIF4E recognizes the cap) and move along the mRNA to the first **AUG** codon (**scanning**, the Kozak sequence). GTP is hydrolyzed and the 60S subunit joins — the **80S** initiation complex is formed, with Met-tRNAi in the **P site**. In prokaryotes the initiator is **formylmethionine-tRNA**, and 16S rRNA recognizes the **Shine–Dalgarno** sequence in the mRNA.
 s4246 **Elongation** — three steps repeated for each codon:
 s4247 The next aminoacyl-tRNA arrives at the **A site** with eEF1α-GTP (if the anticodon matches the codon, GTP is hydrolyzed).
@@ -184,52 +211,3 @@ s4377 18S rRNA
 s4378 28S rRNA
 s4379 Aminoacyl-tRNA synthetase
 s4380 Which factor takes part in translocation?
-s4381 eIF4E
-s4382 eRF1
-s4383 eEF1α
-s4384 CAP
-s4385 What is the mechanism of action of diphtheria toxin?
-s4386 It ADP-ribosylates eEF2
-s4387 It removes an adenine from 28S rRNA
-s4388 It binds to the 30S subunit
-s4389 It inhibits peptidyl transferase
-s4390 It blocks RNA polymerase II
-s4391 How do tetracyclines act?
-s4392 They cause premature chain termination
-s4393 They inactivate eEF2
-s4394 Which vitamin is required for the hydroxylation of proline and lysine in collagen?
-s4395 Vitamin K
-s4396 Vitamin B12
-s4397 Vitamin A
-s4398 Vitamin D
-s4399 What acts as the inducer in the lactose operon?
-s4400 Allolactose
-s4401 The repressor
-s4402 What is the weak activity of the lactose operon in the presence of abundant glucose called?
-s4403 Attenuation
-s4404 Catabolite repression
-s4405 Amplification
-s4406 Imprinting
-s4407 How does histone acetylation affect gene expression?
-s4408 It completely silences the gene
-s4409 It methylates DNA
-s4410 It stops splicing
-s4411 It loosens chromatin and activates transcription
-s4412 Which antibiotic can cause aplastic anemia by acting on mitochondrial ribosomes?
-s4413 Penicillin
-s4414 Ciprofloxacin
-s4415 Chloramphenicol
-s4416 Which small RNAs degrade mRNA or stop its translation in eukaryotes?
-s4417 MicroRNAs
-s4418 tRNA
-s4419 rRNA
-s4420 snRNA
-s4421 Telomerase RNA
-s4422 What type of mutation is the GAG → GUG substitution in the β-globin gene?
-s4423 Nonsense
-s4424 Frameshift
-s4425 Missense
-s4426 Synonymous (silent)
-s4427 Deletion
-s4428 An unvaccinated 6-year-old child has fever, sore throat, a gray, hard-to-remove membrane on the tonsils and swelling of the neck. A week later a heart rhythm disturbance developed (myocarditis).
-s4429 What is the disease? What is the molecular mechanism of action of the toxin? Why is the heart affected?

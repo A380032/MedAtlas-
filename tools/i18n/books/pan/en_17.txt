@@ -1,130 +1,131 @@
-s2286 Main function
-s2287 Killing of microbes (ROS, NO, lysosomal enzymes), amplification of inflammation (IL-1, TNF, IL-12)
-s2288 Suppression of inflammation, repair and fibrosis (growth factors: PDGF, TGF-beta), angiogenesis
-s2289 Result
-s2290 Defense, but tissue damage
-s2291 Repair, scar
-s2292 Functions of macrophages in chronic inflammation: **phagocytosis** of microbes and dead tissue; **presentation** of antigen to T lymphocytes; production of **cytokines** that regulate inflammation; control of **repair and fibrosis** by stimulating fibroblasts and angiogenesis. Macrophages and T lymphocytes activate each other and maintain the chronicity of inflammation (IFN-gamma ↔ IL-12).
-s2293 Lymphocytes, plasma cells and other cells
-s2294 **T lymphocytes** — CD4+ helper T cells regulate inflammation through cytokines: **Th1** (IFN-gamma — classical activation of macrophages; tuberculosis, autoimmune diseases), **Th2** (IL-4, IL-5, IL-13 — eosinophils and alternatively activated macrophages; allergy, parasites), **Th17** (IL-17 — recruits neutrophils).
-s2295 **B lymphocytes and plasma cells** — produce antibodies. The plasma cell has an eccentrically placed nucleus with “**cartwheel**” chromatin and basophilic cytoplasm; immunoglobulins can accumulate in its cytoplasm to form **Russell bodies**. In long-standing inflammation, lymphocytes, plasma cells and antigen-presenting cells form **lymphoid follicles** (**tertiary lymphoid organs** — for example, in the synovium in rheumatoid arthritis, in Hashimoto thyroiditis).
-s2296 **Eosinophils** — numerous in IgE-mediated allergic reactions and **parasitic infections**; the **major basic protein** in their granules is toxic to parasites but also damages the epithelium.
-s2297 **Mast cells** — release histamine and other mediators and participate in allergic and chronic inflammation.
-s2298 **Neutrophils** — may also be present in chronic inflammation (for example, chronic osteomyelitis, chronic lung damage) — “**acute-on-chronic**” inflammation.
-s2299 Multinucleated giant cells
-s2300 Multinucleated cells 40–50 µm or more in diameter formed by fusion of macrophages (epithelioid cells):
-s2301 **Pirogov–Langhans cells** — the nuclei (20 or more) are arranged at the periphery of the cell in a **horseshoe or ring** shape; characteristic of the tuberculous granuloma but also found in other granulomas;
-s2302 **foreign body giant cells** — the nuclei are scattered **haphazardly** in the cytoplasm (often in the center); the cytoplasm may contain foreign particles;
-s2303 **Touton cells** — a ring of nuclei in the center and foamy (lipid-laden) cytoplasm at the periphery; in xanthomas and fat necrosis.
-s2304 Figure 6.1
-s2305 Pirogov–Langhans giant cell: the nuclei are arranged in a horseshoe at the periphery of the cytoplasm (Strukov, Serov, Fig. 5-13)
-s2306 Figure 6.2
-s2307 Pirogov–Langhans giant cell (electron micrograph): many nuclei (N), mitochondria (M), lysosomes (L) (TMA study guide, 2018)
-s2308 6.3. Types of productive (proliferative) inflammation
-s2309 In A.I. Strukov's classification, in **productive (proliferative) inflammation** cell proliferation predominates; it usually runs a chronic course. Four types are distinguished:
-s2310 **1. Interstitial (diffuse) inflammation** — a **diffuse infiltrate** of lymphocytes, macrophages and plasma cells accumulates in the **stroma** of parenchymal organs (myocardium, liver, kidney, lung); degenerative and atrophic changes in the parenchyma. Examples: **interstitial myocarditis** (diphtheria, viral infections, rheumatic fever), interstitial nephritis, interstitial pneumonia, chronic hepatitis. Outcome — **diffuse sclerosis** of the organ (cardiosclerosis, nephrosclerosis, pneumosclerosis) and **cirrhosis**.
-s2311 **2. Granulomatous inflammation** — accompanied by the formation of granulomas (in detail below).
-s2312 **3. Productive inflammation forming polyps and condylomata acuminata** — in chronic inflammation of mucous membranes (or of surfaces lined by squamous epithelium), the stroma and epithelium grow and protrude outward:
-s2313 **inflammatory polyps** — in the mucosa of the nasal cavity, maxillary sinus, stomach, colon and cervix; polyps must be distinguished from tumors (adenomatous polyp);
-s2314 **condylomata acuminata** — in the squamous epithelium of the anus and external genitalia, most often associated with **papillomavirus** (types 6 and 11). **4. Productive inflammation around animal parasites** — around echinococcus, cysticercus and trichinella: macrophages, eosinophils, giant cells and a **fibrous capsule** form around the parasite (for example, the capsule around an echinococcal cyst).
-s2315 Figure 6.4
-s2316 Hepatic echinococcosis: a white, round, fluid-filled cyst in the liver surrounded by a fibrous capsule (TMA study guide, 2018)
-s2317 Figure 6.3
-s2318 Gastric polyp: a soft, gray-reddish lesion with small papillae on a thin stalk on the greater curvature (TMA study guide, 2018)
-s2319 Figure 6.5
-s2320 Interstitial myocarditis: an infiltrate of lymphocytes, macrophages and plasma cells in the myocardial stroma; degenerative changes in cardiomyocytes (TMA study guide, 2018)
-s2321 6.4. Granulomatous inflammation
-s2322 **Granulomatous inflammation** is a distinctive form of chronic inflammation whose main feature is the formation of **granulomas**. A **granuloma** (Latin granulum — grain, Greek -oma — tumor; i.e., a “nodule”) is a **localized focal** productive inflammation up to 1–2 mm in diameter, consisting mainly of a collection of **activated macrophages** (epithelioid cells), often surrounded by lymphocytes. Granuloma formation is the organism's attempt to **wall off** an agent that is difficult to eradicate.
-s2323 Morphogenesis of the granuloma
-s2324 Accumulation of **monocytes** in the focus of inflammation.
-s2325 Their transformation into **macrophages** and formation of a macrophage granuloma.
-s2326 Transformation of macrophages into **epithelioid cells** — large cells with pale pink, finely granular cytoplasm, indistinct borders and an elongated oval nucleus (resembling a “shoe sole”); they lie closely packed like epithelium. Epithelioid cells are poorly adapted to phagocytosis and better adapted to secretion (cytokines, enzymes).
-s2327 Fusion of epithelioid cells (or macrophages) to form **multinucleated giant cells**.
-s2328 By mechanism there are two types of granulomas:
-s2329 **Immune granulomas** — **type IV hypersensitivity** (T cell–mediated immune response): Th1 lymphocytes produce **IFN-gamma**, activate macrophages and transform them into epithelioid cells. In tuberculosis, syphilis, leprosy, sarcoidosis, fungal infections and Crohn disease.
-s2330 **Nonimmune granulomas (foreign body granulomas)** — without an immune response, around large inert foreign bodies (suture material, talc, coal particles, keratin, urate crystals). Epithelioid cells are few, **foreign body giant cells** are numerous; the foreign body is often visible in polarized light.
-s2331 Figure 6.6
-s2332 Foreign body granuloma: in the center two giant cells surround foreign particles (TMA study guide, 2018)
-s2333 Classification of granulomas
-s2334 Table 6.3. Classification of granulomas (after V.V. Serov and V.V. Shekhter, simplified)
-s2335 Infectious (tuberculosis, syphilis, leprosy, scleroma, brucellosis, tularemia, fungi, parasites); noninfectious (foreign bodies, dust — silicosis, asbestosis; drugs); of unknown etiology (sarcoidosis, Crohn disease, granulomatosis with polyangiitis)
-s2336 By pathogenesis
-s2337 Immune (hypersensitivity) and nonimmune (foreign body) granulomas
-s2338 By structure
-s2339 Mature macrophage granuloma (simple phagocytoma); epithelioid cell granuloma (epithelioidocytoma); giant cell granuloma
-s2340 By level of metabolism
-s2341 Slow-turnover (inert foreign bodies) and fast-turnover (toxic agents — tuberculosis) granulomas
-s2342 By specificity
-s2343 Specific — the causative agent can be suspected from the structure (tuberculosis, syphilis, leprosy, scleroma); nonspecific — the others
-s2344 **Outcomes of granulomas:** 1) **resorption** (the infiltrate disappears); 2) **fibrosis** — the granuloma turns into a scar (fibrous nodule); 3) **necrosis** — caseous necrosis in a tuberculous granuloma, later **calcification** (petrification); 4) **suppuration** (in fungal granulomas).
-s2345 Specific granulomas
-s2346 **Specific inflammation** is chronic inflammation caused by a particular agent (tuberculosis, syphilis, leprosy, scleroma) that forms granulomas of characteristic structure. Its general features: a specific causative agent; a **wavelike** chronic course (periods of exacerbation and remission); granulomas of characteristic structure; frequent **necrosis** (caseous or coagulative); a change in the tissue reaction depending on the immune status of the organism (with high resistance — a productive reaction, with low resistance — an alterative and exudative reaction).
-s2347 **1. The tuberculous granuloma (tubercle)** — the causative agent is Mycobacterium tuberculosis (Koch bacillus). Structure (from the center to the periphery):
-s2348 in the center — a focus of **caseous necrosis** (a structureless, granular, pink mass);
-s2349 around it — a layer of **epithelioid cells** (arranged like a palisade);
-s2350 among the epithelioid cells — **Pirogov–Langhans giant cells**;
-s2351 at the periphery — a layer of **lymphocytes**, a small number of plasma cells and macrophages;
-s2352 there are **no blood vessels** inside the granuloma (silver impregnation shows a network of argyrophilic fibers);
-s2353 with Ziehl–Neelsen staining, **acid-fast red bacilli** are found in epithelioid and giant cells. A granuloma without caseous necrosis is an **epithelioid cell (proliferative) tubercle**. Granulomas merge to form large foci; when they are surrounded by a capsule — a **tuberculoma**. Scattered small (millet-sized) granulomas in the organs — **miliary tuberculosis**.
-s2354 Figure 6.7
-s2355 Tuberculous granuloma: caseous necrosis in the center, surrounded by epithelioid cells, numerous Pirogov–Langhans giant cells and lymphocytes (Robbins, 9th ed., Fig. 3-23)
-s2356 Figure 6.8
-s2357 Caseous necrosis in the center of a tuberculous granuloma (Strukov, Serov, Fig. 5-12)
-s2358 Figure 6.9
-s2359 Epithelioid cell granuloma in the liver (tuberculosis): epithelioid cells in the liver tissue, with a Pirogov–Langhans giant cell in the center (arrow) (TMA study guide, 2018)
-s2360 Figure 6.10
-s2361 Miliary tuberculosis of the lung: numerous hard, whitish-yellow, millet-sized nodules beneath the pleura and on the cut surface (TMA study guide, 2018)
-s2362 **2. The syphilitic granuloma — gumma** (Latin gummi — gum) — the causative agent is Treponema pallidum; characteristic of **tertiary syphilis**. Structure:
-s2363 in the center — an extensive focus of **coagulative (gummatous) necrosis**: a gummy, stretchy mass in which the outlines of vessels are sometimes preserved (unlike caseous necrosis);
-s2364 around it — **lymphocytes, plasma cells** (very numerous), macrophages, fibroblasts, few epithelioid and giant cells;
-s2365 **productive endovasculitis** — the walls of small vessels thicken and their lumen narrows (**obliterating endarteritis**), with plasma cells around them (**perivasculitis**);
-s2366 at the periphery — a vascular connective tissue capsule. Gummas occur in the liver, bones, skin, brain, heart and other organs; on healing they leave a **deep stellate scar** (in the liver — **“hepar lobatum” (lobulated liver)**). Besides gummas, tertiary syphilis also produces **gummatous infiltration** (diffuse) — most importantly **syphilitic mesaortitis**: a lymphoplasmacytic infiltrate around the vasa vasorum in the media of the ascending aorta and arch, destruction of elastic fibers and a “**shagreen skin**” (tree-bark) appearance of the intima; its complications — **aortic aneurysm** and aortic valve insufficiency.
-s2367 Figure 6.11
-s2368 Syphilitic granuloma (gumma): lymphocytes, plasma cells, fibroblasts and productive vasculitis in small vessels (Strukov, Serov, Fig. 5-14)
-s2369 Figure 6.12
-s2370 Syphilitic mesaortitis: an infiltrate of lymphoid, plasma and epithelioid cells in the aortic wall around the vasa vasorum (TMA study guide, 2018)
-s2371 Figure 6.13
-s2372 The liver in visceral syphilis: the liver is enlarged, hard, coarsely bumpy and divided by scars into lobes (“hepar lobatum”) (TMA study guide, 2018)
-s2373 Figure 6.14
-s2374 Syphilitic aneurysm of the aortic arch (a complication of syphilitic mesaortitis) (TMA study guide, 2018)
-s2375 **3. The leprosy granuloma — leproma** (Greek lepra — leprosy) — the causative agent is Mycobacterium leprae (Hansen bacillus). Structure: macrophages, epithelioid and giant cells, lymphocytes, plasma cells. Inside macrophages, numerous mycobacteria accumulate in the form of a “**cigarette pack**”; fat vacuoles appear in them, and large **Virchow (lepra) cells** form. Lepromas occur in the skin, mucous membranes, **peripheral nerves**, lymph nodes and internal organs.
-s2376 Depending on the immune status, leprosy has two main forms:
-s2377 **lepromatous form** — low immunity (Th2 response): numerous Virchow cells **filled with mycobacteria**, skin nodules (“**leonine face**”), highly contagious;
-s2378 **tuberculoid form** — high immunity (Th1 response): tuberculosis-like epithelioid cell granulomas, **few** mycobacteria, mainly nerves are affected (loss of sensation, trophic ulcers).
-s2379 Figure 6.15
-s2380 Lepromatous leprosy — leproma: a nodule composed of macrophages, lymphocytes and plasma cells (Strukov, Serov, Fig. 5-15a)
-s2381 **4. The scleroma granuloma** — the causative agent is Klebsiella rhinoscleromatis (Volkovich–Frisch bacillus). Mainly in the upper respiratory tract — the nose (**rhinoscleroma**), larynx and trachea. Structure: plasma cells, epithelioid cells, lymphocytes, **hyaline (Russell) bodies**; most characteristic are **Mikulicz cells**: large macrophages with pale, foamy cytoplasm containing Volkovich–Frisch bacilli. Outcome — coarse sclerosis and scars, narrowing of the airways (stenosis, risk of asphyxia).
-s2382 Figure 6.16
-s2383 Rhinoscleroma: a specific granuloma composed of various cells — plasma cells, Mikulicz cells, hyaline bodies (TMA study guide, 2018)
-s2384 Table 6.4. Comparative characteristics of specific granulomas
-s2385 Disease
-s2386 Causative agent
-s2387 Characteristic cells
-s2388 M. tuberculosis
-s2389 Tubercle
-s2390 Caseous (in the center)
-s2391 Epithelioid cells, Pirogov–Langhans giant cells, lymphocytes; no vessels
-s2392 Syphilis
-s2393 T. pallidum
-s2394 Gumma
-s2395 Coagulative (gummatous), extensive
-s2396 Many plasma cells, lymphocytes; productive endovasculitis
-s2397 Leprosy
-s2398 M. leprae
-s2399 Leproma
-s2400 Usually absent
-s2401 Virchow cells (foamy macrophages filled with bacteria)
-s2402 Scleroma
-s2403 K. rhinoscleromatis
-s2404 Scleroma granuloma
-s2405 Mikulicz cells, plasma cells, Russell bodies
-s2406 Sarcoidosis
-s2407 Unknown
-s2408 “Stamped-out” granulomas
-s2409 Epithelioid cells, giant cells (Schaumann and asteroid bodies)
-s2410 Figure 6.17
-s2411 Sarcoidosis: uniform noncaseating epithelioid cell granulomas, lymphoid cells and a few giant cells (TMA study guide, 2018)
-s2412 6.5. Repair (regeneration)
-s2413 **Regeneration** (Latin regeneratio — renewal) is the **restoration (re-formation)** of the structural elements of cells and tissues. Restoration of damaged tissue is called **repair**, and it occurs in two ways: **regeneration** (by proliferation of cells) and **scar formation** (replacement by connective tissue).
-s2414 Types of regeneration
-s2415 **Physiological regeneration** — continuous renewal of worn-out cells throughout life: blood cells, epithelium of the skin and mucous membranes, endometrium (menstrual cycle).
+s2284 IL-4, IL-13 (Th2 lymphocytes)
+s2285 Main function
+s2286 Killing of microbes (ROS, NO, lysosomal enzymes), amplification of inflammation (IL-1, TNF, IL-12)
+s2287 Suppression of inflammation, repair and fibrosis (growth factors: PDGF, TGF-beta), angiogenesis
+s2288 Result
+s2289 Defense, but tissue damage
+s2290 Repair, scar
+s2291 Functions of macrophages in chronic inflammation: **phagocytosis** of microbes and dead tissue; **presentation** of antigen to T lymphocytes; production of **cytokines** that regulate inflammation; control of **repair and fibrosis** by stimulating fibroblasts and angiogenesis. Macrophages and T lymphocytes activate each other and maintain the chronicity of inflammation (IFN-gamma ↔ IL-12).
+s2292 Lymphocytes, plasma cells and other cells
+s2293 **T lymphocytes** — CD4^+^ helper T cells regulate inflammation through cytokines: **Th1** (IFN-gamma — classical activation of macrophages; tuberculosis, autoimmune diseases), **Th2** (IL-4, IL-5, IL-13 — eosinophils and alternatively activated macrophages; allergy, parasites), **Th17** (IL-17 — recruits neutrophils).
+s2294 **B lymphocytes and plasma cells** — produce antibodies. The plasma cell has an eccentrically placed nucleus with “**cartwheel**” chromatin and basophilic cytoplasm; immunoglobulins can accumulate in its cytoplasm to form **Russell bodies**. In long-standing inflammation, lymphocytes, plasma cells and antigen-presenting cells form **lymphoid follicles** (**tertiary lymphoid organs** — for example, in the synovium in rheumatoid arthritis, in Hashimoto thyroiditis).
+s2295 **Eosinophils** — numerous in IgE-mediated allergic reactions and **parasitic infections**; the **major basic protein** in their granules is toxic to parasites but also damages the epithelium.
+s2296 **Mast cells** — release histamine and other mediators and participate in allergic and chronic inflammation.
+s2297 **Neutrophils** — may also be present in chronic inflammation (for example, chronic osteomyelitis, chronic lung damage) — “**acute-on-chronic**” inflammation.
+s2298 Multinucleated giant cells
+s2299 Multinucleated cells 40–50 µm or more in diameter formed by fusion of macrophages (epithelioid cells):
+s2300 **Pirogov–Langhans cells** — the nuclei (20 or more) are arranged at the periphery of the cell in a **horseshoe or ring** shape; characteristic of the tuberculous granuloma but also found in other granulomas;
+s2301 **foreign body giant cells** — the nuclei are scattered **haphazardly** in the cytoplasm (often in the center); the cytoplasm may contain foreign particles;
+s2302 **Touton cells** — a ring of nuclei in the center and foamy (lipid-laden) cytoplasm at the periphery; in xanthomas and fat necrosis.
+s2303 Figure 6.1
+s2304 Pirogov–Langhans giant cell: the nuclei are arranged in a horseshoe at the periphery of the cytoplasm (Strukov, Serov, Fig. 5-13)
+s2305 Figure 6.2
+s2306 Pirogov–Langhans giant cell (electron micrograph): many nuclei (N), mitochondria (M), lysosomes (L) (TMA study guide, 2018)
+s2307 6.3. Types of productive (proliferative) inflammation
+s2308 In A.I. Strukov's classification, in **productive (proliferative) inflammation** cell proliferation predominates; it usually runs a chronic course. Four types are distinguished:
+s2309 **1. Interstitial (diffuse) inflammation** — a **diffuse infiltrate** of lymphocytes, macrophages and plasma cells accumulates in the **stroma** of parenchymal organs (myocardium, liver, kidney, lung); degenerative and atrophic changes in the parenchyma. Examples: **interstitial myocarditis** (diphtheria, viral infections, rheumatic fever), interstitial nephritis, interstitial pneumonia, chronic hepatitis. Outcome — **diffuse sclerosis** of the organ (cardiosclerosis, nephrosclerosis, pneumosclerosis) and **cirrhosis**.
+s2310 **2. Granulomatous inflammation** — accompanied by the formation of granulomas (in detail below).
+s2311 **3. Productive inflammation forming polyps and condylomata acuminata** — in chronic inflammation of mucous membranes (or of surfaces lined by squamous epithelium), the stroma and epithelium grow and protrude outward:
+s2312 **inflammatory polyps** — in the mucosa of the nasal cavity, maxillary sinus, stomach, colon and cervix; polyps must be distinguished from tumors (adenomatous polyp);
+s2313 **condylomata acuminata** — in the squamous epithelium of the anus and external genitalia, most often associated with **papillomavirus** (types 6 and 11). **4. Productive inflammation around animal parasites** — around echinococcus, cysticercus and trichinella: macrophages, eosinophils, giant cells and a **fibrous capsule** form around the parasite (for example, the capsule around an echinococcal cyst).
+s2314 Figure 6.4
+s2315 Hepatic echinococcosis: a white, round, fluid-filled cyst in the liver surrounded by a fibrous capsule (TMA study guide, 2018)
+s2316 Figure 6.3
+s2317 Gastric polyp: a soft, gray-reddish lesion with small papillae on a thin stalk on the greater curvature (TMA study guide, 2018)
+s2318 Figure 6.5
+s2319 Interstitial myocarditis: an infiltrate of lymphocytes, macrophages and plasma cells in the myocardial stroma; degenerative changes in cardiomyocytes (TMA study guide, 2018)
+s2320 6.4. Granulomatous inflammation
+s2321 **Granulomatous inflammation** is a distinctive form of chronic inflammation whose main feature is the formation of **granulomas**. A **granuloma** (Latin granulum — grain, Greek -oma — tumor; i.e., a “nodule”) is a **localized focal** productive inflammation up to 1–2 mm in diameter, consisting mainly of a collection of **activated macrophages** (epithelioid cells), often surrounded by lymphocytes. Granuloma formation is the organism's attempt to **wall off** an agent that is difficult to eradicate.
+s2322 Morphogenesis of the granuloma
+s2323 Accumulation of **monocytes** in the focus of inflammation.
+s2324 Their transformation into **macrophages** and formation of a macrophage granuloma.
+s2325 Transformation of macrophages into **epithelioid cells** — large cells with pale pink, finely granular cytoplasm, indistinct borders and an elongated oval nucleus (resembling a “shoe sole”); they lie closely packed like epithelium. Epithelioid cells are poorly adapted to phagocytosis and better adapted to secretion (cytokines, enzymes).
+s2326 Fusion of epithelioid cells (or macrophages) to form **multinucleated giant cells**.
+s2327 By mechanism there are two types of granulomas:
+s2328 **Immune granulomas** — **type IV hypersensitivity** (T cell–mediated immune response): Th1 lymphocytes produce **IFN-gamma**, activate macrophages and transform them into epithelioid cells. In tuberculosis, syphilis, leprosy, sarcoidosis, fungal infections and Crohn disease.
+s2329 **Nonimmune granulomas (foreign body granulomas)** — without an immune response, around large inert foreign bodies (suture material, talc, coal particles, keratin, urate crystals). Epithelioid cells are few, **foreign body giant cells** are numerous; the foreign body is often visible in polarized light.
+s2330 Figure 6.6
+s2331 Foreign body granuloma: in the center two giant cells surround foreign particles (TMA study guide, 2018)
+s2332 Classification of granulomas
+s2333 Table 6.3. Classification of granulomas (after V.V. Serov and V.V. Shekhter, simplified)
+s2334 Infectious (tuberculosis, syphilis, leprosy, scleroma, brucellosis, tularemia, fungi, parasites); noninfectious (foreign bodies, dust — silicosis, asbestosis; drugs); of unknown etiology (sarcoidosis, Crohn disease, granulomatosis with polyangiitis)
+s2335 By pathogenesis
+s2336 Immune (hypersensitivity) and nonimmune (foreign body) granulomas
+s2337 By structure
+s2338 Mature macrophage granuloma (simple phagocytoma); epithelioid cell granuloma (epithelioidocytoma); giant cell granuloma
+s2339 By level of metabolism
+s2340 Slow-turnover (inert foreign bodies) and fast-turnover (toxic agents — tuberculosis) granulomas
+s2341 By specificity
+s2342 Specific — the causative agent can be suspected from the structure (tuberculosis, syphilis, leprosy, scleroma); nonspecific — the others
+s2343 **Outcomes of granulomas:** 1) **resorption** (the infiltrate disappears); 2) **fibrosis** — the granuloma turns into a scar (fibrous nodule); 3) **necrosis** — caseous necrosis in a tuberculous granuloma, later **calcification** (petrification); 4) **suppuration** (in fungal granulomas).
+s2344 Specific granulomas
+s2345 **Specific inflammation** is chronic inflammation caused by a particular agent (tuberculosis, syphilis, leprosy, scleroma) that forms granulomas of characteristic structure. Its general features: a specific causative agent; a **wavelike** chronic course (periods of exacerbation and remission); granulomas of characteristic structure; frequent **necrosis** (caseous or coagulative); a change in the tissue reaction depending on the immune status of the organism (with high resistance — a productive reaction, with low resistance — an alterative and exudative reaction).
+s2346 **1. The tuberculous granuloma (tubercle)** — the causative agent is Mycobacterium tuberculosis (Koch bacillus). Structure (from the center to the periphery):
+s2347 in the center — a focus of **caseous necrosis** (a structureless, granular, pink mass);
+s2348 around it — a layer of **epithelioid cells** (arranged like a palisade);
+s2349 among the epithelioid cells — **Pirogov–Langhans giant cells**;
+s2350 at the periphery — a layer of **lymphocytes**, a small number of plasma cells and macrophages;
+s2351 there are **no blood vessels** inside the granuloma (silver impregnation shows a network of argyrophilic fibers);
+s2352 with Ziehl–Neelsen staining, **acid-fast red bacilli** are found in epithelioid and giant cells. A granuloma without caseous necrosis is an **epithelioid cell (proliferative) tubercle**. Granulomas merge to form large foci; when they are surrounded by a capsule — a **tuberculoma**. Scattered small (millet-sized) granulomas in the organs — **miliary tuberculosis**.
+s2353 Figure 6.7
+s2354 Tuberculous granuloma: caseous necrosis in the center, surrounded by epithelioid cells, numerous Pirogov–Langhans giant cells and lymphocytes (Robbins, 9th ed., Fig. 3-23)
+s2355 Figure 6.8
+s2356 Caseous necrosis in the center of a tuberculous granuloma (Strukov, Serov, Fig. 5-12)
+s2357 Figure 6.9
+s2358 Epithelioid cell granuloma in the liver (tuberculosis): epithelioid cells in the liver tissue, with a Pirogov–Langhans giant cell in the center (arrow) (TMA study guide, 2018)
+s2359 Figure 6.10
+s2360 Miliary tuberculosis of the lung: numerous hard, whitish-yellow, millet-sized nodules beneath the pleura and on the cut surface (TMA study guide, 2018)
+s2361 **2. The syphilitic granuloma — gumma** (Latin gummi — gum) — the causative agent is Treponema pallidum; characteristic of **tertiary syphilis**. Structure:
+s2362 in the center — an extensive focus of **coagulative (gummatous) necrosis**: a gummy, stretchy mass in which the outlines of vessels are sometimes preserved (unlike caseous necrosis);
+s2363 around it — **lymphocytes, plasma cells** (very numerous), macrophages, fibroblasts, few epithelioid and giant cells;
+s2364 **productive endovasculitis** — the walls of small vessels thicken and their lumen narrows (**obliterating endarteritis**), with plasma cells around them (**perivasculitis**);
+s2365 at the periphery — a vascular connective tissue capsule. Gummas occur in the liver, bones, skin, brain, heart and other organs; on healing they leave a **deep stellate scar** (in the liver — **“hepar lobatum” (lobulated liver)**). Besides gummas, tertiary syphilis also produces **gummatous infiltration** (diffuse) — most importantly **syphilitic mesaortitis**: a lymphoplasmacytic infiltrate around the vasa vasorum in the media of the ascending aorta and arch, destruction of elastic fibers and a “**shagreen skin**” (tree-bark) appearance of the intima; its complications — **aortic aneurysm** and aortic valve insufficiency.
+s2366 Figure 6.11
+s2367 Syphilitic granuloma (gumma): lymphocytes, plasma cells, fibroblasts and productive vasculitis in small vessels (Strukov, Serov, Fig. 5-14)
+s2368 Figure 6.12
+s2369 Syphilitic mesaortitis: an infiltrate of lymphoid, plasma and epithelioid cells in the aortic wall around the vasa vasorum (TMA study guide, 2018)
+s2370 Figure 6.13
+s2371 The liver in visceral syphilis: the liver is enlarged, hard, coarsely bumpy and divided by scars into lobes (“hepar lobatum”) (TMA study guide, 2018)
+s2372 Figure 6.14
+s2373 Syphilitic aneurysm of the aortic arch (a complication of syphilitic mesaortitis) (TMA study guide, 2018)
+s2374 **3. The leprosy granuloma — leproma** (Greek lepra — leprosy) — the causative agent is Mycobacterium leprae (Hansen bacillus). Structure: macrophages, epithelioid and giant cells, lymphocytes, plasma cells. Inside macrophages, numerous mycobacteria accumulate in the form of a “**cigarette pack**”; fat vacuoles appear in them, and large **Virchow (lepra) cells** form. Lepromas occur in the skin, mucous membranes, **peripheral nerves**, lymph nodes and internal organs.
+s2375 Depending on the immune status, leprosy has two main forms:
+s2376 **lepromatous form** — low immunity (Th2 response): numerous Virchow cells **filled with mycobacteria**, skin nodules (“**leonine face**”), highly contagious;
+s2377 **tuberculoid form** — high immunity (Th1 response): tuberculosis-like epithelioid cell granulomas, **few** mycobacteria, mainly nerves are affected (loss of sensation, trophic ulcers).
+s2378 Figure 6.15
+s2379 Lepromatous leprosy — leproma: a nodule composed of macrophages, lymphocytes and plasma cells (Strukov, Serov, Fig. 5-15a)
+s2380 **4. The scleroma granuloma** — the causative agent is Klebsiella rhinoscleromatis (Volkovich–Frisch bacillus). Mainly in the upper respiratory tract — the nose (**rhinoscleroma**), larynx and trachea. Structure: plasma cells, epithelioid cells, lymphocytes, **hyaline (Russell) bodies**; most characteristic are **Mikulicz cells**: large macrophages with pale, foamy cytoplasm containing Volkovich–Frisch bacilli. Outcome — coarse sclerosis and scars, narrowing of the airways (stenosis, risk of asphyxia).
+s2381 Figure 6.16
+s2382 Rhinoscleroma: a specific granuloma composed of various cells — plasma cells, Mikulicz cells, hyaline bodies (TMA study guide, 2018)
+s2383 Table 6.4. Comparative characteristics of specific granulomas
+s2384 Disease
+s2385 Causative agent
+s2386 Characteristic cells
+s2387 M. tuberculosis
+s2388 Tubercle
+s2389 Caseous (in the center)
+s2390 Epithelioid cells, Pirogov–Langhans giant cells, lymphocytes; no vessels
+s2391 Syphilis
+s2392 T. pallidum
+s2393 Gumma
+s2394 Coagulative (gummatous), extensive
+s2395 Many plasma cells, lymphocytes; productive endovasculitis
+s2396 Leprosy
+s2397 M. leprae
+s2398 Leproma
+s2399 Usually absent
+s2400 Virchow cells (foamy macrophages filled with bacteria)
+s2401 Scleroma
+s2402 K. rhinoscleromatis
+s2403 Scleroma granuloma
+s2404 Mikulicz cells, plasma cells, Russell bodies
+s2405 Sarcoidosis
+s2406 Unknown
+s2407 “Stamped-out” granulomas
+s2408 Epithelioid cells, giant cells (Schaumann and asteroid bodies)
+s2409 Figure 6.17
+s2410 Sarcoidosis: uniform noncaseating epithelioid cell granulomas, lymphoid cells and a few giant cells (TMA study guide, 2018)
+s2411 6.5. Repair (regeneration)
+s2412 **Regeneration** (Latin regeneratio — renewal) is the **restoration (re-formation)** of the structural elements of cells and tissues. Restoration of damaged tissue is called **repair**, and it occurs in two ways: **regeneration** (by proliferation of cells) and **scar formation** (replacement by connective tissue).
+s2413 Types of regeneration
+s2414 **Physiological regeneration** — continuous renewal of worn-out cells throughout life: blood cells, epithelium of the skin and mucous membranes, endometrium (menstrual cycle).

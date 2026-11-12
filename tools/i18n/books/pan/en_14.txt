@@ -39,14 +39,14 @@ s1857 Dilation of arterioles, rapid increase in venular permeability (the first 
 s1858 Serotonin
 s1859 Platelets
 s1860 Increased vascular permeability
-s1861 Prostaglandins (PGE2, PGI2)
+s1861 Prostaglandins (PGE~2~, PGI~2~)
 s1862 Many cells (from arachidonic acid, cyclooxygenase pathway)
 s1863 Vasodilation, pain, fever
 s1864 Thromboxane A~2~
 s1865 Vasoconstriction, platelet aggregation
-s1866 Leukotrienes (LTB4; LTC4, D4, E4)
+s1866 Leukotrienes (LTB~4~; LTC~4~, D~4~, E~4~)
 s1867 Leukocytes, mast cells (lipoxygenase pathway)
-s1868 LTB4 — potent chemotaxis; LTC4–E4 — bronchospasm, increased permeability
+s1868 LTB~4~ — potent chemotaxis; LTC~4~–E~4~ — bronchospasm, increased permeability
 s1869 Platelet-activating factor
 s1870 Leukocytes, endothelium
 s1871 Platelet aggregation, permeability, leukocyte adhesion
@@ -80,7 +80,7 @@ s1898 Plasma (kinin system, when Hageman factor is activated)
 s1899 Increased permeability, vasodilation, pain
 s1900 Coagulation system (thrombin, fibrin)
 s1901 Formation of fibrin; thrombin activates endothelium and leukocytes
-s1902 Aspirin and other nonsteroidal anti-inflammatory drugs (ibuprofen, diclofenac) block **cyclooxygenase** and reduce prostaglandin synthesis — they relieve pain, fever and inflammation. Glucocorticoids block the release of arachidonic acid (phospholipase A2) and the synthesis of cytokines — therefore their anti-inflammatory effect is much stronger, but they also suppress immunity.
+s1902 Aspirin and other nonsteroidal anti-inflammatory drugs (ibuprofen, diclofenac) block **cyclooxygenase** and reduce prostaglandin synthesis — they relieve pain, fever and inflammation. Glucocorticoids block the release of arachidonic acid (phospholipase A~2~) and the synthesis of cytokines — therefore their anti-inflammatory effect is much stronger, but they also suppress immunity.
 s1903 5.4. Vascular reactions in acute inflammation
 s1904 1. Changes in blood flow and vessel caliber:
 s1905 **brief arteriolar spasm** (a few seconds, neuroreflex);
@@ -128,11 +128,11 @@ s1946 Phagocytosis
 s1947 **Phagocytosis** is the engulfment and digestion of foreign particles, microbes and tissue debris by special cells (phagocytes). I.I. Mechnikov divided phagocytes into **microphages** (neutrophils) and **macrophages**. Stages of phagocytosis:
 s1948 **Recognition and attachment** — phagocyte receptors recognize microbes directly (mannose receptors, “scavenger” receptors, Toll-like receptors) or through **opsonins**. The main opsonins are **IgG** (via the Fc receptor), the **C3b** fragment of complement and mannose-binding lectin.
 s1949 **Engulfment** — the phagocyte surrounds the microbe with pseudopodia, and a **phagosome** forms; it fuses with a lysosome to become a **phagolysosome**.
-s1950 **Killing and degradation:** – **the oxygen-dependent mechanism** (the most effective) — the “**respiratory burst**”: NADPH oxidase (phagocyte oxidase) produces superoxide and H2O2; **myeloperoxidase**, in the presence of chloride ions, converts H2O2 into the potent bactericidal **hypochlorite (HOCl^−^)**; – **nitric oxide** (in macrophages) and peroxynitrite; – **the oxygen-independent mechanism** — lysosomal enzymes (lysozyme, elastase), defensins, cathelicidins, lactoferrin, major basic protein of eosinophils. 4. **Neutrophil extracellular traps (NETs)** — neutrophils form a net of chromatin and antimicrobial proteins that traps microbes (with neutrophil death). **Complete phagocytosis** — the engulfed microbe is killed and digested. **Incomplete phagocytosis (endocytobiosis)** — the microbe survives and even multiplies inside the phagocyte; this is characteristic of tubercle mycobacteria, gonococci, leishmaniae and the causative agent of leprosy. In such cases the phagocyte becomes a “vehicle” that spreads infection through the organism.
+s1950 **Killing and degradation:** – **the oxygen-dependent mechanism** (the most effective) — the “**respiratory burst**”: NADPH oxidase (phagocyte oxidase) produces superoxide and H~2~O~2~; **myeloperoxidase**, in the presence of chloride ions, converts H~2~O~2~ into the potent bactericidal **hypochlorite (HOCl^−^)**; – **nitric oxide** (in macrophages) and peroxynitrite; – **the oxygen-independent mechanism** — lysosomal enzymes (lysozyme, elastase), defensins, cathelicidins, lactoferrin, major basic protein of eosinophils. 4. **Neutrophil extracellular traps (NETs)** — neutrophils form a net of chromatin and antimicrobial proteins that traps microbes (with neutrophil death). **Complete phagocytosis** — the engulfed microbe is killed and digested. **Incomplete phagocytosis (endocytobiosis)** — the microbe survives and even multiplies inside the phagocyte; this is characteristic of tubercle mycobacteria, gonococci, leishmaniae and the causative agent of leprosy. In such cases the phagocyte becomes a “vehicle” that spreads infection through the organism.
 s1951 **Chronic granulomatous disease** — a hereditary defect of NADPH oxidase (most often X-linked): phagocytes engulf microbes, but because there is no “respiratory burst” they cannot kill catalase-positive microbes (staphylococcus, Aspergillus) — recurrent severe infections and granulomas. **Chédiak–Higashi syndrome** — impaired fusion of phagosomes and lysosomes (giant granules), albinism and infections.
 s1952 5.6. General (systemic) manifestations of inflammation
 s1953 Local inflammation affects the whole organism — the **acute phase reaction** (systemic inflammatory response). It develops under the action of cytokines (**TNF, IL-1, IL-6**) and prostaglandins:
-s1954 **fever** — cytokines (endogenous pyrogens) increase PGE2 synthesis in the hypothalamus and raise the “set point” of the thermoregulatory center;
+s1954 **fever** — cytokines (endogenous pyrogens) increase PGE~2~ synthesis in the hypothalamus and raise the “set point” of the thermoregulatory center;
 s1955 **acute phase proteins** — the liver increases synthesis of **C-reactive protein (CRP)**, fibrinogen, serum amyloid A (SAA) and hepcidin; fibrinogen makes red cells stick together in “stacks” (rouleaux) — the **ESR increases**; in chronic inflammation SAA leads to **AA amyloidosis**, and hepcidin to **anemia**;
 s1956 **leukocytosis** — leukocytes increase in the blood (neutrophils in bacterial infections, a left shift — young forms); **lymphocytosis** in viral infections, **eosinophilia** in allergy and parasitic diseases; in some infections (typhoid fever, some viruses) — **leukopenia**;
 s1957 tachycardia, changes in blood pressure, chills, loss of appetite, drowsiness, weakness;

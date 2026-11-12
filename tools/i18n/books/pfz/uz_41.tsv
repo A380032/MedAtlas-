@@ -1,3 +1,21 @@
+s8100	AKTG ↓, kortizol ↑
+s8101	AKTG ↑, kortizol ↓
+s8102	Giperkortitsizmda strialar va mushak atrofiyasining sababi nima?
+s8103	Lipogenez kuchayishi
+s8104	Tireoid gormonlar ortishi
+s8105	Oqsil katabolizmining kuchayishi
+s8106	Natriy tutilishi
+s8107	Kon sindromining belgilari qaysi?
+s8108	Gipotenziya, giperkaliyemiya, renin ortgan
+s8109	Gipoglikemiya, giperpigmentatsiya
+s8110	Tetaniya, gipokalsiyemiya
+s8111	Poliuriya, gipernatriyemiya, gipotenziya
+s8112	Gipertenziya, gipokaliyemiya, renin kamaygan
+s8113	Addison kasalligida giperpigmentatsiyaning sababi nima?
+s8114	Melanin sintezining irsiy nuqsoni
+s8115	Kortizol kamayishi tufayli AKTG va melanotsitlarni stimullovchi gormon ko‘payishi
+s8116	Ultrabinafsha nurlanish
+s8117	Adrenogenital sindromda (21-gidroksilaza yetishmovchiligi) androgenlar ko‘payishining sababi nima?
 s8118	Kortizol kamayib, AKTG ortishi va buyrak usti po‘stlog‘i giperplaziyasi
 s8119	Gonadalar o‘smasi
 s8120	LG ortishi
@@ -33,12 +51,12 @@ s8149	Faqat prolaktin ↓
 s8150	38 yoshli ayol oxirgi 2 yilda vazni ortgan, asosan yuz va qorin sohasida, qo‘l-oyoqlari esa ingichkalashgan. Qorin terisida binafsha-qizil keng strialar, yuzi yumaloq va qizargan, sochlari ko‘paygan, hayz buzilgan. AB 165/100 mm sim. ust., qonda glyukoza 8,2 mmol/l, kaliy biroz kamaygan, limfopeniya. Kortizol yuqori, AKTG yuqori. Kichik doza deksametazon kortizolni bostirmaydi, katta doza esa bostiradi. MRT da gipofiz mikroadenomasi.
 s8151	Qanday kasallik? Buzilish darajasini aniqlang. Asosiy belgilarning patogenezini tushuntiring.
 s8152	Itsenko–Kushing kasalligi — markaziy (gipofizar) giperkortitsizm: gipofiz kortikotrop adenomasi ortiqcha AKTG ishlab chiqaradi, u ikkala buyrak usti po‘stlog‘ini stimullaydi (kortizol va AKTG ikkalasi ortgan; adenoma teskari aloqaga qisman sezgir — katta doza deksametazon bostiradi). Sentripetal semizlik — turli sohalardagi yog‘ to‘qimasining kortizol va insulinga turlicha sezgirligi; strialar, yupqa teri, ingichka qo‘l-oyoqlar — oqsil katabolizmi; steroid diabet — glyukoneogenez kuchayishi va insulinorezistentlik; gipertenziya va gipokaliyemiya — kortizolning mineralokortikoid ta’siri va tomirlar sezgirligi ortishi; limfopeniya — immunosupressiya; girsutizm va hayz buzilishi — AKTG ta’sirida buyrak usti androgenlarining ortishi.
-s8153	42 yoshli erkak holsizlik, tez charchash, vazn yo‘qotish, ishtahasizlik, bosh aylanishi, tuzli ovqatga ishtiyoq. Teri, ayniqsa kaft burmalari, tirsaklar va og‘iz shilliq qavati to‘q jigarrang. AB 90/55 mm sim. ust. Qonda: Na+ 128, K+ 5,9 mmol/l, glyukoza 3,2 mmol/l, kortizol past, AKTG keskin yuqori, buyrak usti po‘stlog‘iga qarshi antitanachalar musbat.
+s8153	42 yoshli erkak holsizlik, tez charchash, vazn yo‘qotish, ishtahasizlik, bosh aylanishi, tuzli ovqatga ishtiyoq. Teri, ayniqsa kaft burmalari, tirsaklar va og‘iz shilliq qavati to‘q jigarrang. AB 90/55 mm sim. ust. Qonda: Na^+^ 128, K^+^ 5,9 mmol/l, glyukoza 3,2 mmol/l, kortizol past, AKTG keskin yuqori, buyrak usti po‘stlog‘iga qarshi antitanachalar musbat.
 s8154	Qanday kasallik? Buzilish darajasi qanday? Giperpigmentatsiya, gipotenziya, elektrolit buzilishlari va gipoglikemiya qanday rivojlangan?
 s8155	Birlamchi surunkali buyrak usti po‘stlog‘i yetishmovchiligi (Addison kasalligi), autoimmun adrenalit. Bez o‘zida yemirilgan — kortizol kam, teskari aloqa bo‘yicha AKTG keskin ortgan (birlamchi daraja). AKTG va melanotsitlarni stimullovchi gormon umumiy o‘tmishdosh — proopiomelanokortindan hosil bo‘ladi, ularning ortishi melanotsitlarni stimullaydi — giperpigmentatsiya. Aldosteron yetishmovchiligi natriy va suv yo‘qotilishiga (giponatriyemiya, gipovolemiya, gipotenziya) va kaliy tutilishiga (giperkaliyemiya) olib keladi; tuzga ishtiyoq — natriy tanqisligi. Kortizol yetishmovchiligida glyukoneogenez kamayadi — gipoglikemiya; tomirlarning katexolaminlarga sezgirligi pasayadi — gipotenziya kuchayadi. Stress, infeksiya yoki jarrohlikda Addison krizi (kollaps) rivojlanishi mumkin — bemor doimiy o‘rinbosar gormon davosiga muhtoj.
-s8156	29 yoshli ayolda bir necha oydan beri yurak urib ketishi, terlash, qo‘llar titrashi, asabiylik, uyqusizlik, ishtaha yaxshi bo‘lishiga qaramay 8 kg vazn yo‘qotish, ich ketishi. Ko‘zlari bo‘rtgan, qalqonsimon bez diffuz kattalashgan. Puls 120 marta/daqiqa, AB 150/70 mm sim. ust. Qonda: erkin T4 va T3 keskin oshgan, TTG juda past, TTG retseptorlariga antitanachalar musbat.
+s8156	29 yoshli ayolda bir necha oydan beri yurak urib ketishi, terlash, qo‘llar titrashi, asabiylik, uyqusizlik, ishtaha yaxshi bo‘lishiga qaramay 8 kg vazn yo‘qotish, ich ketishi. Ko‘zlari bo‘rtgan, qalqonsimon bez diffuz kattalashgan. Puls 120 marta/daqiqa, AB 150/70 mm sim. ust. Qonda: erkin T~4~ va T~3~ keskin oshgan, TTG juda past, TTG retseptorlariga antitanachalar musbat.
 s8157	Qanday kasallik? Patogenezini tushuntiring. Vazn yo‘qotish, taxikardiya va katta puls bosimining mexanizmi qanday?
-s8158	Diffuz toksik bo‘qoq (Bazedov–Greyvs kasalligi). TTG retseptorlarini stimullovchi autoantitanachalar TTG o‘rniga bezni doimiy stimullaydi — bez diffuz kattalashadi va gormonlarni ortiqcha ishlab chiqaradi; ortiqcha T3 va T4 teskari aloqa bo‘yicha TTG ni bostiradi (birlamchi giperfunksiya). Ekzoftalm — ko‘z orbitasi to‘qimalarining autoimmun yallig‘lanishi. Tireoid gormonlar asosiy almashinuvni oshiradi (Na+/K+-ATFaza faolligi, oksidlanish va fosforlanishning qisman ajralishi, issiqlik hosil bo‘lishi), oqsil va yog‘ katabolizmini kuchaytiradi — ishtaha yaxshi bo‘lsa ham vazn yo‘qotish, terlash. Beta-adrenoretseptorlar soni va sezgirligi ortadi — taxikardiya, titrash, asabiylik; zarb hajmi ortadi (sistolik bosim ko‘tariladi), periferik tomirlar kengayadi (diastolik bosim pasayadi) — katta puls bosimi. Ichak peristaltikasi tezlashadi — ich ketishi.
+s8158	Diffuz toksik bo‘qoq (Bazedov–Greyvs kasalligi). TTG retseptorlarini stimullovchi autoantitanachalar TTG o‘rniga bezni doimiy stimullaydi — bez diffuz kattalashadi va gormonlarni ortiqcha ishlab chiqaradi; ortiqcha T~3~ va T~4~ teskari aloqa bo‘yicha TTG ni bostiradi (birlamchi giperfunksiya). Ekzoftalm — ko‘z orbitasi to‘qimalarining autoimmun yallig‘lanishi. Tireoid gormonlar asosiy almashinuvni oshiradi (Na^+^/K^+^-ATFaza faolligi, oksidlanish va fosforlanishning qisman ajralishi, issiqlik hosil bo‘lishi), oqsil va yog‘ katabolizmini kuchaytiradi — ishtaha yaxshi bo‘lsa ham vazn yo‘qotish, terlash. Beta-adrenoretseptorlar soni va sezgirligi ortadi — taxikardiya, titrash, asabiylik; zarb hajmi ortadi (sistolik bosim ko‘tariladi), periferik tomirlar kengayadi (diastolik bosim pasayadi) — katta puls bosimi. Ichak peristaltikasi tezlashadi — ich ketishi.
 s8159	Iyerarxiya
 s8160	Gipotalamus → gipofiz → periferik bez → nishon to‘qima
 s8161	Manfiy teskari aloqa
@@ -116,7 +134,7 @@ s8232	**Erektil (qo‘zg‘alish) bosqichi** — qisqa (daqiqalar), ayniqsa trav
 s8233	**Torpid (tormozlanish) bosqichi** — MNT ning tormozlanishi: bemor befarq, harakatsiz, atrofga qiziqish yo‘q, AB pasaygan, puls tez va kuchsiz (ipsimon), teri rangpar-kulrang, sovuq ter, oliguriya.
 s8234	Qon aylanish o‘zgarishlari bo‘yicha bosqichlar:
 s8235	**Kompensatsiyalangan shok** — katexolaminlar, angiotenzin II, vazopressin ta’sirida terining, mushaklarning, ichki a’zolarning (ichak, buyrak) tomirlari torayadi, qon asosan miya va yurakka yo‘naltiriladi — **qon aylanish sentralizatsiyasi**; AB saqlanadi.
-s8236	**Dekompensatsiyalangan (progressiv) shok** — uzoq ishemiyada to‘qimalarda laktat, H+, adenozin, gistamin to‘planadi; **prekapillyar sfinkterlar** ularga sezgir bo‘lib bo‘shashadi, **postkapillyar venulalar** esa torayib qoladi — qon kapillyarlarga kiradi, lekin chiqa olmaydi (**qon turg‘unligi**, “sekvestratsiya”); gidrostatik bosim ortib plazma to‘qimaga chiqadi, qon quyuqlashadi, eritrotsitlar yopishadi (**sladj**), DVS-sindrom rivojlanadi. Venoz qaytish kamayadi, AB pasayadi — **detsentralizatsiya**: miya va yurak ham ishemiyaga uchraydi.
+s8236	**Dekompensatsiyalangan (progressiv) shok** — uzoq ishemiyada to‘qimalarda laktat, H^+^, adenozin, gistamin to‘planadi; **prekapillyar sfinkterlar** ularga sezgir bo‘lib bo‘shashadi, **postkapillyar venulalar** esa torayib qoladi — qon kapillyarlarga kiradi, lekin chiqa olmaydi (**qon turg‘unligi**, “sekvestratsiya”); gidrostatik bosim ortib plazma to‘qimaga chiqadi, qon quyuqlashadi, eritrotsitlar yopishadi (**sladj**), DVS-sindrom rivojlanadi. Venoz qaytish kamayadi, AB pasayadi — **detsentralizatsiya**: miya va yurak ham ishemiyaga uchraydi.
 s8237	**Qaytmas shok** — hujayralar ommaviy nobud bo‘ladi, lizosomal fermentlar, miokardni susaytiruvchi omil (oshqozon osti bezi ishemiyasida hosil bo‘ladi), endotoksinlar (ichak to‘sig‘i buzilib qonga o‘tadi) to‘planadi; davo samarasiz.
 s8238	**Shok indeksi (Algover indeksi)** = puls / sistolik AB. Me’yorda taxminan 0,5–0,7; 1,0 atrofida — o‘rtacha og‘irlikdagi shok (taxminan 20–30 foiz qon hajmi yo‘qotilgan); 1,5 va undan yuqori — og‘ir shok.
 s8239	Shokning ayrim turlari
@@ -141,14 +159,3 @@ s8257	Erektil bosqichda qo‘zg‘alish, torpidda tormozlanish
 s8258	Ko‘pincha xira yoki hushdan ketish
 s8259	Mikrotsirkulyatsiya va ko‘p a’zolar yetishmovchiligi
 s8260	Asosiy patogenetik bo‘g‘in
-s8261	Odatda tez rivojlanmaydi
-s8262	Prognoz
-s8263	Og‘ir, tez yordam zarur
-s8264	Sabab bartaraf qilinsa, odatda tez tiklanadi
-s8265	4. Koma
-s8266	**Koma** — MNT ning chuqur tormozlanishi natijasida ongning to‘liq yo‘qolishi, tashqi ta’sirlarga javob reaksiyalarining susayishi yoki yo‘qolishi, reflekslar va hayotiy muhim funksiyalarning (nafas, qon aylanish) boshqarilishining buzilishi bilan kechadigan o‘ta og‘ir holat.
-s8267	Jadval 27.3. Komaning turlari
-s8268	Birlamchi miya (serebral) komalari
-s8269	Travmatik, insult (qon quyilish, ishemik), o‘smalar, meningit va ensefalit, epileptik
-s8270	Endokrin komalar
-s8271	Diabetik ketoatsidotik, giperosmolyar, laktatsidotik, gipoglikemik (10-mavzu), gipotireoid (miksedematoz), buyrak usti (Addison krizi), tireotoksik kriz

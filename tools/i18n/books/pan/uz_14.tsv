@@ -39,14 +39,14 @@ s1857	Arteriolalar kengayishi, venulalar o‘tkazuvchanligining tez ortishi (bir
 s1858	Serotonin
 s1859	Trombotsitlar
 s1860	Tomir o‘tkazuvchanligi ortishi
-s1861	Prostaglandinlar (PGE2, PGI2)
+s1861	Prostaglandinlar (PGE~2~, PGI~2~)
 s1862	Ko‘p hujayralar (araxidon kislotasidan, siklooksigenaza yo‘li)
 s1863	Tomirlar kengayishi, og‘riq, isitma
 s1864	Tromboksan A~2~
 s1865	Tomir torayishi, trombotsitlar agregatsiyasi
-s1866	Leykotriyenlar (LTB4; LTC4, D4, E4)
+s1866	Leykotriyenlar (LTB~4~; LTC~4~, D~4~, E~4~)
 s1867	Leykotsitlar, semiz hujayralar (lipooksigenaza yo‘li)
-s1868	LTB4 — kuchli xemotaksis; LTC4–E4 — bronxospazm, o‘tkazuvchanlik ortishi
+s1868	LTB~4~ — kuchli xemotaksis; LTC~4~–E~4~ — bronxospazm, o‘tkazuvchanlik ortishi
 s1869	Trombotsitlarni faollashtiruvchi omil
 s1870	Leykotsitlar, endoteliy
 s1871	Trombotsitlar agregatsiyasi, o‘tkazuvchanlik, leykotsitlar adgeziyasi
@@ -80,7 +80,7 @@ s1898	Plazma (kinin tizimi, Xageman omili faollashganda)
 s1899	O‘tkazuvchanlik ortishi, tomirlar kengayishi, og‘riq
 s1900	Ivish tizimi (trombin, fibrin)
 s1901	Fibrin hosil bo‘lishi; trombin endoteliy va leykotsitlarni faollashtiradi
-s1902	Aspirin va boshqa nosteroid yallig‘lanishga qarshi dorilar (ibuprofen, diklofenak) **siklooksigenazani** to‘sib, prostaglandinlar sintezini kamaytiradi — og‘riq, isitma va yallig‘lanishni susaytiradi. Glyukokortikoidlar esa araxidon kislotasi ajralishini (fosfolipaza A2 ni) va sitokinlar sintezini to‘sadi — shuning uchun ularning yallig‘lanishga qarshi ta’siri ancha kuchli, ammo immunitetni ham susaytiradi.
+s1902	Aspirin va boshqa nosteroid yallig‘lanishga qarshi dorilar (ibuprofen, diklofenak) **siklooksigenazani** to‘sib, prostaglandinlar sintezini kamaytiradi — og‘riq, isitma va yallig‘lanishni susaytiradi. Glyukokortikoidlar esa araxidon kislotasi ajralishini (fosfolipaza A~2~ ni) va sitokinlar sintezini to‘sadi — shuning uchun ularning yallig‘lanishga qarshi ta’siri ancha kuchli, ammo immunitetni ham susaytiradi.
 s1903	5.4. O‘tkir yallig‘lanishda tomir reaksiyalari
 s1904	1. Qon oqimi va tomir diametrining o‘zgarishi:
 s1905	**qisqa muddatli arteriolalar spazmi** (bir necha soniya, nerv-reflektor);
@@ -128,11 +128,11 @@ s1946	Fagotsitoz
 s1947	**Fagotsitoz** — maxsus hujayralar (fagotsitlar) tomonidan yot zarrachalar, mikroblar va to‘qima qoldiqlarining yutilishi va hazm qilinishi. I.I. Mechnikov fagotsitlarni **mikrofaglar** (neytrofillar) va **makrofaglar** ga ajratgan. Fagotsitoz bosqichlari:
 s1948	**Tanib olish va birikish** — fagotsitlar retseptorlari mikroblarni bevosita (mannoza retseptorlari, “axlat” retseptorlari, Toll-simon retseptorlar) yoki **opsoninlar** orqali taniydi. Asosiy opsoninlar — **IgG** (Fc-retseptor orqali), komplementning **C3b** fragmenti, mannoza bog‘lovchi lektin.
 s1949	**Yutish** — fagotsit psevdopodiyalari bilan mikrobni o‘rab oladi, **fagosoma** hosil bo‘ladi; u lizosoma bilan qo‘shilib, **fagolizosoma**ga aylanadi.
-s1950	**O‘ldirish va parchalash:** – **kislorodga bog‘liq mexanizm** (eng samarali) — “**nafas portlashi**”: NADF-oksidaza (fagotsit oksidazasi) superoksid va H2O2 hosil qiladi; **mieloperoksidaza** xlor ionlari ishtirokida H2O2 ni kuchli bakteritsid **gipoxlorit (HOCl^−^)** ga aylantiradi; – **azot oksidi** (makrofaglarda) va peroksinitrit; – **kislorodga bog‘liq bo‘lmagan mexanizm** — lizosoma fermentlari (lizotsim, elastaza), defensinlar, katelitsidinlar, laktoferrin, eozinofillarning asosiy oqsili. 4. **Neytrofil hujayradan tashqari tuzoqlari (NET)** — neytrofillar xromatin va antimikrob oqsillardan to‘r hosil qilib, mikroblarni ushlaydi (neytrofil o‘limi bilan). **Tugallangan fagotsitoz** — yutilgan mikrob halok bo‘ladi va hazm qilinadi. **Tugallanmagan fagotsitoz (endotsitobioz)** — mikrob fagotsit ichida tirik qoladi va hatto ko‘payadi; bu sil mikobakteriyalari, gonokokklar, leyshmaniyalar, moxov qo‘zg‘atuvchisi uchun xos. Bunday hollarda fagotsit infeksiyani organizmga tarqatuvchi “transport”ga aylanadi.
+s1950	**O‘ldirish va parchalash:** – **kislorodga bog‘liq mexanizm** (eng samarali) — “**nafas portlashi**”: NADF-oksidaza (fagotsit oksidazasi) superoksid va H~2~O~2~ hosil qiladi; **mieloperoksidaza** xlor ionlari ishtirokida H~2~O~2~ ni kuchli bakteritsid **gipoxlorit (HOCl^−^)** ga aylantiradi; – **azot oksidi** (makrofaglarda) va peroksinitrit; – **kislorodga bog‘liq bo‘lmagan mexanizm** — lizosoma fermentlari (lizotsim, elastaza), defensinlar, katelitsidinlar, laktoferrin, eozinofillarning asosiy oqsili. 4. **Neytrofil hujayradan tashqari tuzoqlari (NET)** — neytrofillar xromatin va antimikrob oqsillardan to‘r hosil qilib, mikroblarni ushlaydi (neytrofil o‘limi bilan). **Tugallangan fagotsitoz** — yutilgan mikrob halok bo‘ladi va hazm qilinadi. **Tugallanmagan fagotsitoz (endotsitobioz)** — mikrob fagotsit ichida tirik qoladi va hatto ko‘payadi; bu sil mikobakteriyalari, gonokokklar, leyshmaniyalar, moxov qo‘zg‘atuvchisi uchun xos. Bunday hollarda fagotsit infeksiyani organizmga tarqatuvchi “transport”ga aylanadi.
 s1951	**Surunkali granulematoz kasallik** — NADF-oksidazaning irsiy nuqsoni (ko‘pincha X-xromosoma bilan bog‘liq): fagotsitlar mikroblarni yutadi, ammo “nafas portlashi” bo‘lmagani uchun katalaza- musbat mikroblarni (stafilokokk, Aspergillus) o‘ldira olmaydi — takroriy og‘ir infeksiyalar va granulyomalar. **Chediak-Xigasi sindromi** — fagosoma va lizosomalar qo‘shilishining buzilishi (gigant granulalar), albinizm va infeksiyalar.
 s1952	5.6. Yallig‘lanishning umumiy (tizimli) ko‘rinishlari
 s1953	Mahalliy yallig‘lanish butun organizmga ta’sir ko‘rsatadi — **o‘tkir faza reaksiyasi** (tizimli yallig‘lanish javobi). U sitokinlar (**TNF, IL-1, IL-6**) va prostaglandinlar ta’sirida rivojlanadi:
-s1954	**isitma** — sitokinlar (endogen pirogenlar) gipotalamusda PGE2 sintezini kuchaytirib, termoregulyatsiya markazining “o‘rnatilgan nuqtasini” ko‘taradi;
+s1954	**isitma** — sitokinlar (endogen pirogenlar) gipotalamusda PGE~2~ sintezini kuchaytirib, termoregulyatsiya markazining “o‘rnatilgan nuqtasini” ko‘taradi;
 s1955	**o‘tkir faza oqsillari** — jigarda **S-reaktiv oqsil (SRO)**, fibrinogen, zardob amiloid A (SAA), gepsidin sintezi ortadi; fibrinogen eritrotsitlarni “tangachalar” shaklida yopishtiradi — **EChT oshadi**; surunkali yallig‘lanishda SAA **AA-amiloidoz**ga, gepsidin **anemiya**ga olib keladi;
 s1956	**leykotsitoz** — qonda leykotsitlar ko‘payadi (bakterial infeksiyalarda neytrofillar, chapga siljish — yosh shakllar); virusli infeksiyalarda **limfotsitoz**, allergiya va parazitlarda **eozinofiliya**; ba’zi infeksiyalarda (qorin tifi, ba’zi viruslar) — **leykopeniya**;
 s1957	taxikardiya, qon bosimining o‘zgarishi, titrash, ishtaha yo‘qolishi, uyquchanlik, holsizlik;

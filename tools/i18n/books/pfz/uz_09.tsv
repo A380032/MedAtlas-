@@ -39,7 +39,7 @@ s1640	Qon va to‘qimalararo suyuqlik miqdorining kamayishi
 s1641	Arteriya pulsatsiyasining susayishi yoki yo‘qolishi
 s1642	Arteriyaga qon kelishining kamayishi
 s1643	Og‘riq, uvishish, chumoli o‘rmalash hissi (paresteziya)
-s1644	Gipoksiya va metabolitlarning (H+, K+, laktat, bradikinin) asab oxirlarini ta’sirlashi
+s1644	Gipoksiya va metabolitlarning (H^+^, K^+^, laktat, bradikinin) asab oxirlarini ta’sirlashi
 s1645	Funksiyaning pasayishi
 s1646	Gipoksiya, energiya yetishmasligi
 s1647	arteriolalar torayadi yoki ularga qon kelishi kamayadi;
@@ -71,8 +71,8 @@ s1672	**kollaterallari mutlaq yetarli** — anastomozlar ko‘p (oyoq-qo‘llar,
 s1673	**kollaterallari nisbatan yetarli** (yoki nisbatan yetarli emas) — anastomozlar bor, lekin sekin ochiladi (ichak, me’da, o‘pka, teri);
 s1674	**kollaterallari mutlaq yetarli emas** — “oxirgi” (terminal) arteriyalar (miokard, bosh miya, buyrak, taloq, ko‘z to‘r pardasi): arteriya berkilganda infarkt rivojlanadi.
 s1675	Ishemiyada hujayra shikastlanishi va reperfuzion shikastlanish
-s1676	Ishemiyada hujayra shikastlanishining asosiy mexanizmlari: oksidlovchi fosforlanish to‘xtashi → ATF yetishmasligi → Na+/K+-nasosi ishdan chiqishi → hujayraga natriy va suv kirishi (hujayra shishi) → anaerob glikoliz va laktatsidoz → Ca2+ ning hujayra ichida to‘planishi → fosfolipazalar va proteazalar faollashishi → membranalar shikastlanishi → nekroz.
-s1677	**Reperfuzion shikastlanish** — ishemiyadan keyin qon oqimi tiklanganda shikastlanishning paradoksal kuchayishi. Mexanizmlari: kislorodning faol shakllari (erkin radikallar) ko‘p hosil bo‘lishi, hujayraga Ca2+ ning ko‘p kirishi, leykotsitlarning faollashishi va mikrotomirlarni berkitishi (“qayta oqmaslik” — no-reflow hodisasi), reperfuzion aritmiyalar.
+s1676	Ishemiyada hujayra shikastlanishining asosiy mexanizmlari: oksidlovchi fosforlanish to‘xtashi → ATF yetishmasligi → Na^+^/K^+^-nasosi ishdan chiqishi → hujayraga natriy va suv kirishi (hujayra shishi) → anaerob glikoliz va laktatsidoz → Ca^2+^ ning hujayra ichida to‘planishi → fosfolipazalar va proteazalar faollashishi → membranalar shikastlanishi → nekroz.
+s1677	**Reperfuzion shikastlanish** — ishemiyadan keyin qon oqimi tiklanganda shikastlanishning paradoksal kuchayishi. Mexanizmlari: kislorodning faol shakllari (erkin radikallar) ko‘p hosil bo‘lishi, hujayraga Ca^2+^ ning ko‘p kirishi, leykotsitlarning faollashishi va mikrotomirlarni berkitishi (“qayta oqmaslik” — no-reflow hodisasi), reperfuzion aritmiyalar.
 s1678	Miokard infarktida “vaqt — miokard”: koronar arteriyadagi qon oqimini tezroq tiklash (trombolizis yoki koronar angioplastika) nekroz hajmini kamaytiradi. Ishemik insultda ham shunday — tromboliz faqat simptomlar boshlanganidan keyingi birinchi soatlarda samarali (“terapevtik oyna”). Reperfuziya bilan birga uning shikastlovchi ta’sirini kamaytirish choralari ham ko‘riladi.
 s1679	2. Staz
 s1680	**Staz** — mikrotsirkulyatsiya tomirlarida (asosan kapillyarlarda) qon oqimining sekinlashib, to‘xtab qolishi.
@@ -106,7 +106,7 @@ s1707	Qon ivish tizimining faolligi ortishi yoki antikoagulyant tizimning susayi
 s1708	O‘smalar, homiladorlik va tug‘ruqdan keyingi davr, peroral kontratseptivlar, irsiy trombofiliyalar (V omil Leyden mutatsiyasi, antitrombin III yetishmovchiligi), antifosfolipid sindrom
 s1709	Tromb hosil bo‘lishi bosqichlari
 s1710	**Trombotsitlar adgeziyasi** — shikastlangan joyda ochilgan kollagenga trombotsitlar Villebrand omili orqali yopishadi.
-s1711	**Trombotsitlar faollashishi va agregatsiyasi** — trombotsitlar shaklini o‘zgartiradi, ADF, tromboksan A2, serotonin ajratadi; fibrinogen ko‘prigi orqali bir-biriga yopishadi (oq tromb boshchasi).
+s1711	**Trombotsitlar faollashishi va agregatsiyasi** — trombotsitlar shaklini o‘zgartiradi, ADF, tromboksan A~2~, serotonin ajratadi; fibrinogen ko‘prigi orqali bir-biriga yopishadi (oq tromb boshchasi).
 s1712	**Qon ivish kaskadining faollashishi** — to‘qima omili (tashqi yo‘l) va XII omil (ichki yo‘l) orqali trombin hosil bo‘ladi.
 s1713	**Fibrinogenning fibringa aylanishi** — fibrin to‘ri hosil bo‘lib, unga eritrotsitlar va leykotsitlar ilashadi.
 s1714	**Tromb retraksiyasi** — trombotsitlar qisqaruvchi oqsillari hisobiga tromb zichlashadi.
@@ -198,4 +198,3 @@ s1799	Tomir devoriga osh tuzi (natriy xlorid) kristalini qo‘ying.
 s1800	Kristall qo‘yilgan joyda tomir devori shikastlanishini, trombotsitlarning (baqada — trombotsitlar vazifasini bajaruvchi hujayralarning) devorga yopishishi va to‘planishini, keyin tromb kattalashib, qon oqimini toraytirishini kuzating.
 s1801	Tromb hosil bo‘lish vaqtini va uning tomir yo‘lini qanchalik berkitganini qayd qiling.
 s1802	**Tahlil:** gipertonik eritma endoteliyni shikastlaydi (Virxov triadasining birinchi omili), natijada trombotsitlar adgeziyasi va agregatsiyasi boshlanadi.
-s1803	3-tajriba: yog‘ emboliyasi

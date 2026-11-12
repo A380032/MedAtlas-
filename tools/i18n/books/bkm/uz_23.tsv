@@ -1,4 +1,53 @@
-s4430	Difteriya. Corynebacterium diphtheriae toksini hujayraga endotsitoz bilan kiradi, uning A-fragmenti NAD+ dan ADF-riboza qoldig‘ini elongatsiya omili eEF2 ga (diftamid qoldig‘iga) ko‘chiradi — eEF2 inaktivlanadi, translokatsiya va oqsil sintezi to‘xtaydi, hujayra nobud bo‘ladi. Bitta toksin molekulasi hujayrani o‘ldirishga yetadi. Toksin qon orqali tarqalib, ayniqsa oqsil sintezi faol bo‘lgan miokard va nerv to‘qimasini zararlaydi. Davolash — antitoksik zardob (toksinni hujayraga kirguncha neytrallaydi), antibiotiklar; oldini olish — vaksina (anatoksin).
+s4381	eIF4E
+s4382	eRF1
+s4383	eEF1α
+s4384	CAP
+s4385	Difteriya toksinining ta’sir mexanizmi qanday?
+s4386	eEF2 ni ADF-ribozillaydi
+s4387	28S rRNK dan adeninni olib tashlaydi
+s4388	30S subbirlikka bog‘lanadi
+s4389	Peptidiltransferazani ingibirlaydi
+s4390	RNK-polimeraza II ni to‘sadi
+s4391	Tetratsiklinlar qanday ta’sir qiladi?
+s4392	Zanjirni muddatidan oldin uzadi
+s4393	eEF2 ni inaktivlaydi
+s4394	Kollagendagi prolin va lizinning gidroksillanishi uchun qaysi vitamin zarur?
+s4395	K vitamini
+s4396	B~12~ vitamini
+s4397	A vitamini
+s4398	D vitamini
+s4399	Laktoza operonida induktor vazifasini nima bajaradi?
+s4400	Allolaktoza
+s4401	Repressor
+s4402	Glyukoza ko‘p bo‘lganda laktoza operonining sust ishlashi qanday ataladi?
+s4403	Attenuatsiya
+s4404	Katabolit repressiya
+s4405	Amplifikatsiya
+s4406	Imprinting
+s4407	Gistonlarning atsetillanishi gen ekspressiyasiga qanday ta’sir qiladi?
+s4408	Genni butunlay o‘chiradi
+s4409	DNK ni metillaydi
+s4410	Splaysingni to‘xtatadi
+s4411	Xromatinni bo‘shatib transkripsiyani faollashtiradi
+s4412	Qaysi antibiotik mitoxondriya ribosomalariga ta’sir qilib aplastik anemiya chaqirishi mumkin?
+s4413	Penitsillin
+s4414	Siprofloksatsin
+s4415	Xloramfenikol
+s4416	Eukariotlarda mRNK ni parchalaydigan yoki translyatsiyasini to‘xtatadigan kichik RNK lar qaysi?
+s4417	MikroRNK
+s4418	tRNK
+s4419	rRNK
+s4420	snRNK
+s4421	Telomeraza RNK si
+s4422	β-globin genida GAG → GUG almashinuvi qanday mutatsiya hisoblanadi?
+s4423	Nonsens
+s4424	Ramka siljishi
+s4425	Missens
+s4426	Sinonim (jim)
+s4427	Delesiya
+s4428	Emlanmagan 6 yoshli bolada isitma, tomoq og‘rig‘i, bodomcha bezlarida kulrang, qiyin ko‘chadigan parda, bo‘yin shishi aniqlandi. Bir haftadan keyin yurak ritmi buzildi (miokardit).
+s4429	Qanday kasallik? Toksinning molekular ta’sir mexanizmi qanday? Nima uchun yurak zararlanadi?
+s4430	Difteriya. Corynebacterium diphtheriae toksini hujayraga endotsitoz bilan kiradi, uning A-fragmenti NAD^+^ dan ADF-riboza qoldig‘ini elongatsiya omili eEF2 ga (diftamid qoldig‘iga) ko‘chiradi — eEF2 inaktivlanadi, translokatsiya va oqsil sintezi to‘xtaydi, hujayra nobud bo‘ladi. Bitta toksin molekulasi hujayrani o‘ldirishga yetadi. Toksin qon orqali tarqalib, ayniqsa oqsil sintezi faol bo‘lgan miokard va nerv to‘qimasini zararlaydi. Davolash — antitoksik zardob (toksinni hujayraga kirguncha neytrallaydi), antibiotiklar; oldini olish — vaksina (anatoksin).
 s4431	Bemor zotiljam bilan og‘rigan; shifokor 70S ribosomaga ta’sir qiluvchi antibiotiklardan birini tanlamoqchi. Bemor homilador ayol (II trimestr).
 s4432	Oqsil sintezini to‘suvchi qaysi antibiotiklar homiladorlikda qo‘llanilmaydi va nima uchun? Qaysi guruh nisbatan xavfsiz?
 s4433	Tetratsiklinlar (30S — aminoatsil-tRNK ning bog‘lanishini to‘sadi) kalsiy bilan xelat hosil qilib, homila suyaklari va tishlarida to‘planadi (tish rangining o‘zgarishi, suyak o‘sishining sekinlashuvi). Aminoglikozidlar (30S — kodning noto‘g‘ri o‘qilishi) homilada ototoksik (karlik). Xloramfenikol (50S) — chaqaloqlarda “kul rang sindromi” (jigarda glukuronidlash yetishmasligi) va mitoxondriya ribosomalari orqali suyak ko‘migi supressiyasi. Makrolidlar (azitromitsin — 50S, translokatsiyani to‘sadi) nisbatan xavfsiz hisoblanadi. Tanlab ta’sir 70S va 80S ribosomalarning tuzilish farqiga asoslangan.
@@ -105,7 +154,7 @@ s4533	**Nukleotidlarni kesib olish (NER):** katta shikastlanishlar (timin dimerl
 s4534	**Pigmentli kseroderma** — NER fermentlarining (XP-A … XP-G) irsiy nuqsoni (autosom-retsessiv). Quyosh nuri ta’sirida timin dimerlari tuzatilmaydi: teri juda sezgir, sepkillar, erta yoshda (10 yoshgacha) ko‘p sonli **teri saratoni** (bazalioma, melanoma). Oldini olish — quyoshdan to‘liq himoya.
 s4535	**Mos kelmaslikni tuzatish (MMR):** replikatsiyadan keyin noto‘g‘ri juftlashgan asoslar va kichik halqalarni **MSH2/MSH6** taniydi, **MLH1/PMS2** yangi zanjirni kesadi; yangi zanjir ekzonukleaza bilan olib tashlanib qayta sintezlanadi. Nuqsonida — **mikrosatellit beqarorligi** va **Lynch sindromi** (irsiy nopolipoz yo‘g‘on ichak saratoni, endometriy saratoni).
 s4536	Ikki zanjirli uzilishlar reparatsiyasi:
-s4537	**gomologik rekombinatsiya** — opa-singil xromatiddan matritsa sifatida foydalanadi (S va G2 fazalarda), aniq; **BRCA1, BRCA2** oqsillari ishtirok etadi — nuqsonida sut bezi va tuxumdon saratoni xavfi keskin oshadi; ATM kinazasi uzilishni sezadi (ataksiya-telangiektaziya);
+s4537	**gomologik rekombinatsiya** — opa-singil xromatiddan matritsa sifatida foydalanadi (S va G~2~ fazalarda), aniq; **BRCA1, BRCA2** oqsillari ishtirok etadi — nuqsonida sut bezi va tuxumdon saratoni xavfi keskin oshadi; ATM kinazasi uzilishni sezadi (ataksiya-telangiektaziya);
 s4538	**uchlarni gomologiyasiz ulash (NHEJ)** — Ku oqsillari va DNK-PK; tez, ammo ba’zan nukleotidlar yo‘qoladi (xatolarga moyil). **SOS-reparatsiya (translezion sintez):** shikastlangan joyni maxsus kam aniq DNK-polimerazalar “aylanib o‘tadi” — mutatsiyalar ehtimoli yuqori.
 s4539	4. Genetik o‘zgaruvchanlik. Odam genomi. Oqsillar polimorfizmi
 s4540	**Genetik o‘zgaruvchanlik mexanizmlari:** mutatsiyalar, meyozdagi rekombinatsiya (krossingover), xromosomalarning mustaqil taqsimlanishi, transpozonlar.
@@ -161,23 +210,8 @@ s4589	Rasm 18.2
 s4590	Apoptozning tashqi va ichki yo‘llari (Severin E.S. asosida chizilgan)
 s4591	**Kaspazalar** — faol markazida sistein tutuvchi, aspartatdan keyin kesuvchi proteazalar; prokaspaza shaklida sintezlanadi. **Initsiator** (8, 9) va **effektor** (3, 6, 7) kaspazalar farqlanadi. Effektor kaspazalar sitoskelet oqsillari, yadro laminlari, DNK-reparatsiya fermentlari (PARP) ni parchalaydi va **kaspazaga bog‘liq DNKaza** ni faollashtiradi.
 s4592	**Bcl-2 oilasi** — antiapoptotik (Bcl-2, Bcl-xL) va proapoptotik (Bax, Bak, Bid, Bad) oqsillar mitoxondriya tashqi membranasining o‘tkazuvchanligini boshqaradi;
-s4593	**p53** (“genom qo‘riqchisi”) — DNK shikastlanganda to‘planadi, hujayra siklini G1 da to‘xtatadi (p21) va reparatsiyani faollashtiradi; tuzatib bo‘lmasa — Bax, PUMA, NOXA orqali apoptozni ishga tushiradi;
+s4593	**p53** (“genom qo‘riqchisi”) — DNK shikastlanganda to‘planadi, hujayra siklini G~1~ da to‘xtatadi (p21) va reparatsiyani faollashtiradi; tuzatib bo‘lmasa — Bax, PUMA, NOXA orqali apoptozni ishga tushiradi;
 s4594	**IAP** oqsillari (apoptoz ingibitorlari) kaspazalarni to‘sadi;
 s4595	o‘sish omillari va PI3K/Akt yo‘li — omon qolish signallari. **Apoptoz buzilishi:** kamayishi — o‘smalar (Bcl-2 ortiqcha ifodasi follikulyar limfomada t(14;18); p53 mutatsiyalari), autoimmun kasalliklar; kuchayishi — neyrodegenerativ kasalliklar (Altsgeymer, Parkinson), miokard infarkti va insultda penumbra zonasi, OITS da CD4 limfotsitlar o‘limi.
 s4596	7. Klonlash va gen terapiyasi asoslari
 s4597	**Klonlash: gen (molekular) klonlash** — genni vektorga kiritib, bakteriya yoki hujayra kulturasida ko‘paytirish (rekombinant oqsillar ishlab chiqarish); **hujayra klonlari** — bitta hujayradan kelib chiqqan genetik bir xil hujayralar (monoklonal antitelolar — gibridomalar); **reproduktiv klonlash** — somatik hujayra yadrosini ko‘chirib o‘tkazish (“Dolli” qo‘yi); **terapevtik klonlash** — bemorga mos ildiz hujayralarini olish. Klonlarning klinik ahamiyati: monoklonal gammopatiyalar (mieloma) va o‘smalarning **klonal** kelib chiqishi.
-s4598	**Gen terapiyasi** — kasallikni davolash maqsadida hujayralarga genetik material kiritish.
-s4599	Jadval 18.4. Gen terapiyasining strategiyalari va vektorlari
-s4600	Yo‘nalish
-s4601	Gen qo‘shish (o‘rnini bosish)
-s4602	Nuqsonli gen o‘rniga normal nusxani kiritish (adenozindezaminaza yetishmovchiligi — birinchi gen terapiyasi, 1990; spinal mushak atrofiyasi; gemofiliya B)
-s4603	Gen tahriri
-s4604	CRISPR-Cas9 — DNK ni aniq joydan kesib tuzatish (o‘roqsimon hujayrali anemiya va β-talassemiyada BCL11A orqali HbF ni oshirish)
-s4605	Gen ekspressiyasini o‘chirish
-s4606	Antisens oligonukleotidlar, siRNK (transtiretin amiloidozi)
-s4607	Hujayra terapiyasi
-s4608	CAR-T hujayralar — bemor T-limfotsitlariga o‘sma antigeniga qarshi retseptor geni kiritiladi (B-hujayrali leykozlar)
-s4609	Virus vektorlari
-s4610	Retroviruslar va lentiviruslar (genomga integratsiya — ildiz hujayralar uchun; insersion mutagenez xavfi), adenoviruslar, adeno-assotsiirlangan viruslar (AAV — integratsiyasiz, xavfsizroq)
-s4611	Virussiz usullar
-s4612	Liposomalar, lipid nanozarrachalar, elektroporatsiya, “yalang‘och” DNK

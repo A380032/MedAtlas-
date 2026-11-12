@@ -1,3 +1,12 @@
+s2473	GMG-KoA + 2 NADPH → **mevalonat** — **GMG-KoA-reduktaza** (kalit ferment, endoplazmatik to‘r membranasida).
+s2474	Mevalonat → faollashgan izoprenoid birliklar (C5, ATF hisobiga) → geranil- va farnezilpirofosfat → **skvalen** (C30).
+s2475	Skvalen siklizatsiyalanib **lanosteringa**, so‘ngra ≈ 20 reaksiyada **xolesteringa** aylanadi.
+s2476	Jadval 10.1. GMG-KoA-reduktazaning boshqarilishi
+s2477	Hujayra ichidagi xolesterin (transkripsiya omili SREBP orqali)
+s2478	Ko‘p bo‘lsa — ferment va LDL-retseptorlar sintezi kamayadi, ferment parchalanishi tezlashadi
+s2479	Defosforlanish orqali faollashtiradi; sintezni kuchaytiradi
+s2480	Glyukagon, AMF-kinaza (energiya kam)
+s2481	Fosforlanish orqali nofaol qiladi
 s2482	Tireoid gormonlar
 s2483	Ferment sintezini oshiradi (ammo xolesterin chiqarilishi va LDL-retseptorlar ko‘proq ortadi — gipotireozda giperxolesterinemiya)
 s2484	Statinlar (atorvastatin, rozuvastatin)
@@ -9,7 +18,7 @@ s2489	Rasm 10.2
 s2490	LDL-retseptor orqali xolesterinning hujayraga kirishi va hujayra ichidagi xolesterin miqdorining boshqarilishi (Severin E.S. asosida chizilgan)
 s2491	Hujayra ichida erkin xolesterin ko‘paysa: GMG-KoA-reduktaza va LDL-retseptorlar sintezi kamayadi, **AXAT** (atsil-KoA:xolesterin-atsiltransferaza) faollashib, ortiqcha xolesterin efir shaklida to‘planadi.
 s2492	**Teskari tashilish. YuZLP** (apo A-I) jigar va ichakda “yassi diskcha” shaklida hosil bo‘ladi; periferik hujayralardan ABCA1 tashuvchisi orqali erkin xolesterinni oladi. **Lesitin-xolesterin- atsiltransferaza (LXAT)** (apo A-I faollashtiradi) fosfatidilxolindan yog‘ kislotasini xolesteringa ko‘chirib, xolesterin efirlarini hosil qiladi; ular YuZLP yadrosiga o‘tadi va zarracha sharsimon bo‘ladi. YuZLP xolesterinni **jigarga** yetkazadi (SR-B1 retseptorlari) yoki xolesterin efirlarini boshqa lipoproteinlarga beradi. Shu sababli YuZLP — **antiaterogen** lipoproteinlar.
-s2493	**Chiqarilishi.** Xolesterin organizmda CO2 va H2O gacha parchalanmaydi. U:
+s2493	**Chiqarilishi.** Xolesterin organizmda CO~2~ va H~2~O gacha parchalanmaydi. U:
 s2494	jigarda **o‘t kislotalariga** aylanadi (sutkasiga ≈ 0,5 g; kalit ferment — 7α-gidroksilaza) va o‘t bilan chiqadi;
 s2495	o‘zgarmagan holda o‘t bilan ichakka chiqadi; qisman qayta so‘riladi, qolgani bakteriyalar ta’sirida **koprostanolga** aylanib, najas bilan chiqariladi;
 s2496	oz miqdori teri yog‘i bilan, steroid gormonlar metabolitlari esa siydik bilan chiqadi.
@@ -82,9 +91,9 @@ s2562	Demiyelinizatsiya
 s2563	Ayrim sfingolipidozlarda (Gosher, Fabri) **ferment o‘rnini bosuvchi terapiya** qo‘llaniladi.
 s2564	1-ish: qon zardobida umumiy xolesterinni fermentativ usulda aniqlash (biokimyoviy analizatorda)
 s2565	Usul asosi (XOD-PAP):
-s2566	**Xolesterinesteraza**: xolesterin efirlari + H2O → xolesterin + yog‘ kislotalari;
-s2567	**Xolesterinoksidaza**: xolesterin + O2 → xolest-4-en-3-on + H2O2;
-s2568	**Peroksidaza**: 2H2O2 + 4-aminoantipirin + fenol → pushti rangli xinonimin + 4H2O. Rang intensivligi umumiy xolesterin miqdoriga proporsional (500 nm).
+s2566	**Xolesterinesteraza**: xolesterin efirlari + H~2~O → xolesterin + yog‘ kislotalari;
+s2567	**Xolesterinoksidaza**: xolesterin + O~2~ → xolest-4-en-3-on + H~2~O~2~;
+s2568	**Peroksidaza**: 2H~2~O~2~ + 4-aminoantipirin + fenol → pushti rangli xinonimin + 4H~2~O. Rang intensivligi umumiy xolesterin miqdoriga proporsional (500 nm).
 s2569	Uchta probirkaga 1 ml dan ishchi reagent quying.
 s2570	1-siga 10 mkl zardob, 2-siga 10 mkl standart (5,17 mmol/l), 3-siga 10 mkl suv qo‘shing.
 s2571	Aralashtirib, 37 °C da 10 daqiqa saqlang.
@@ -125,7 +134,7 @@ s2605	Sfingolipidozlar nima? Misollar keltiring.
 s2606	Xolesterin sintezining kalit fermenti qaysi?
 s2607	Skvalensintaza
 s2608	Xolesterin qaysi moddalarning sintezi uchun asos bo‘lmaydi?
-s2609	Vitamin D3
+s2609	Vitamin D~3~
 s2610	Prostaglandinlar
 s2611	Testosteron
 s2612	Statinlarning ta’sir mexanizmi qanday?
@@ -140,7 +149,7 @@ s2620	Apo A-II
 s2621	Lesitin-xolesterin-atsiltransferazani (LXAT) qaysi apoprotein faollashtiradi?
 s2622	Xolesterinning organizmdan chiqarilishining asosiy yo‘li qaysi?
 s2623	O‘t kislotalariga aylanib, o‘t bilan chiqishi
-s2624	CO2 va H2O gacha oksidlanishi
+s2624	CO~2~ va H~2~O gacha oksidlanishi
 s2625	Siydik bilan o‘zgarmagan holda chiqishi
 s2626	Ter bilan chiqishi
 s2627	O‘pka orqali chiqishi
@@ -169,7 +178,7 @@ s2649	Fibratlar
 s2650	Geparin
 s2651	Gosher kasalligida qaysi ferment yetishmaydi?
 s2652	β-Glyukotserebrozidaza
-s2653	Fermentativ usulda xolesterin aniqlashda H2O2 hosil qiluvchi ferment qaysi?
+s2653	Fermentativ usulda xolesterin aniqlashda H~2~O~2~ hosil qiluvchi ferment qaysi?
 s2654	Xolesterinesteraza
 s2655	Xolesterinoksidaza
 s2656	Gipotireozda giperxolesterinemiya rivojlanishining asosiy sababi nima?
@@ -185,9 +194,3 @@ s2665	45 yoshli semiz ayol (TVI 34 kg/m^2^) yog‘li ovqatdan keyin o‘ng qovur
 s2666	Toshlarning kimyoviy tarkibi qanday bo‘lishi ehtimoli bor? Hosil bo‘lish mexanizmini tushuntiring.
 s2667	Xolesterin toshlari (rentgen-manfiy). Semirish, ayol jinsi va estrogenlar jigarda xolesterin sintezi va uning o‘tga chiqarilishini oshiradi, o‘t kislotalari sintezi esa nisbatan kamayadi; o‘t xolesteringa o‘ta to‘yingan (litogen) bo‘lib qoladi. O‘t pufagi motorikasining susayishi kristallar hosil bo‘lishiga yordam beradi. Mayda xolesterin toshlari ursodezoksixol kislota bilan eritilishi mumkin; tez-tez xurujlarda — xolesistektomiya.
 s2668	55 yoshli erkak chekadi, arterial bosimi 160/95 mm sim. ust. Tahlil: umumiy xolesterin 6,8 mmol/l, YuZLP-XS 0,9 mmol/l, triglitseridlar 2,2 mmol/l.
-s2669	Aterogenlik koeffitsientini va PZLP-XS ni hisoblang. Xavfni baholang.
-s2670	KA = (6,8 − 0,9) / 0,9 ≈ 6,6 (me’yor < 3,0). Fridvald formulasi: PZLP-XS = 6,8 − 0,9 − 2,2 / 2,2 = 6,8 − 0,9 − 1,0 = 4,9 mmol/l (maqbul < 3,0). YuZLP past, PZLP va TG yuqori — aterogen dislipidemiya. Chekish va arterial gipertenziya bilan birga yurak-qon tomir kasalliklari xavfi juda yuqori. Tavsiya: chekishni tashlash, parhez, jismoniy faollik, statinlar, bosimni nazorat qilish.
-s2671	Xolesterin vazifalari
-s2672	Membranalar, o‘t kislotalari, steroid gormonlar, vitamin D3
-s2673	Sintez
-s2674	Atsetil-KoA → GMG-KoA → mevalonat → skvalen → lanosterin → xolesterin

@@ -1,3 +1,18 @@
+s4598 **Gene therapy** is the introduction of genetic material into cells in order to treat a disease.
+s4599 Table 18.4. Strategies and vectors of gene therapy
+s4600 Approach
+s4601 Gene addition (replacement)
+s4602 Introduction of a normal copy in place of the defective gene (adenosine deaminase deficiency — the first gene therapy, 1990; spinal muscular atrophy; hemophilia B)
+s4603 Gene editing
+s4604 CRISPR-Cas9 — cutting DNA at a precise site and correcting it (increasing HbF via BCL11A in sickle cell anemia and β-thalassemia)
+s4605 Silencing of gene expression
+s4606 Antisense oligonucleotides, siRNA (transthyretin amyloidosis)
+s4607 Cell therapy
+s4608 CAR-T cells — a gene for a receptor against a tumor antigen is introduced into the patient's T lymphocytes (B-cell leukemias)
+s4609 Viral vectors
+s4610 Retroviruses and lentiviruses (integration into the genome — for stem cells; risk of insertional mutagenesis), adenoviruses, adeno-associated viruses (AAV — no integration, safer)
+s4611 Nonviral methods
+s4612 Liposomes, lipid nanoparticles, electroporation, “naked” DNA
 s4613 Methods
 s4614 Ex vivo (cells are taken from the body, the gene is introduced and the cells are returned) and in vivo (the vector is delivered directly into the body)
 s4615 Problems: immune response, insertional mutagenesis (leukemia), short duration of expression, high cost, ethical issues (modification of germ cells is prohibited).
@@ -227,7 +242,7 @@ s4838 TP53
 s4839 “Guardian of the genome”: cell cycle arrest when DNA is damaged, repair, apoptosis
 s4840 Mutated in ≈ 50% of tumors; Li–Fraumeni syndrome
 s4841 RB1
-s4842 Binds the transcription factor E2F and stops the G1→S transition
+s4842 Binds the transcription factor E2F and stops the G~1~→S transition
 s4843 Retinoblastoma, osteosarcoma
 s4844 APC
 s4845 Ensures the degradation of β-catenin (the Wnt pathway)
@@ -250,7 +265,3 @@ s4861 4. The multistage theory of carcinogenesis
 s4862 A tumor develops not as a result of a single mutation but as a result of successive changes in several (usually 4–7) genes over years (in the colon: APC → KRAS → SMAD4 → TP53 — the **Vogelstein model**: normal epithelium → adenoma → carcinoma).
 s4863 Figure 19.2
 s4864 The multistage model of carcinogenesis (drawn after Harper’s Illustrated Biochemistry)
-s4865 As a result of **neoplastic transformation**, the cell acquires tumor features (the “hallmarks of cancer” according to Hanahan and Weinberg): self-sufficiency in growth signals, insensitivity to growth-inhibitory signals, evasion of apoptosis, unlimited division (**telomerase** activity), **angiogenesis** (VEGF), invasion and metastasis, reprogramming of energy metabolism, evasion of immune surveillance (PD-L1), genome instability, tumor-promoting inflammation.
-s4866 5. Biochemical features of tumor cells
-s4867 **The Warburg effect (aerobic glycolysis):** tumor cells break down glucose mainly to lactate even when oxygen is sufficient; they take up a lot of glucose (GLUT1, hexokinase II ↑) — this is the basis of diagnosis by **PET-CT**, which relies on the accumulation of ^18^F-fluorodeoxyglucose. Glycolytic intermediates are used for the synthesis of nucleotides, lipids and amino acids; the M2 isoform of pyruvate kinase is expressed.
-s4868 **Glutamine “addiction”** — glutamine is a source of nitrogen and carbon (glutaminolysis).

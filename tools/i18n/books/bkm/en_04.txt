@@ -1,3 +1,4 @@
+s0650 2. Functions and general properties of membranes
 s0651 Functions:
 s0652 **Barrier** — separates the internal environment of the cell and organelles, compartmentalization.
 s0653 **Transport** — selective passage of substances.
@@ -8,7 +9,7 @@ s0657 **Intercellular contact** — gap junctions, adhesion molecules, antigenic
 s0658 **Electrogenic** — generation of the membrane potential and conduction of excitation. **General properties:**
 s0659 **Transverse asymmetry** — the composition of the outer and inner leaflets differs: the outer leaflet is rich in phosphatidylcholine, sphingomyelin and glycolipids, the inner in phosphatidylserine and phosphatidylethanolamine. The movement of lipids from one leaflet to the other (“flip-flop”) is very slow and is carried out by special enzymes (flippases). Carbohydrate parts are only on the outer surface (glycocalyx).
 s0660 **Fluidity** — lateral movement of lipids and proteins; fluidity increases when unsaturated fatty acids increase and when the temperature rises, while cholesterol and saturated fatty acids reduce it.
-s0661 **Selective permeability** — small hydrophobic molecules (O2, CO2, steroids) pass freely; ions and polar molecules pass only through special proteins.
+s0661 **Selective permeability** — small hydrophobic molecules (O~2~, CO~2~, steroids) pass freely; ions and polar molecules pass only through special proteins.
 s0662 In apoptosis phosphatidylserine moves to the outer leaflet of the membrane — this is an “eat me” signal for macrophages. When platelets are activated, phosphatidylserine also moves outward and forms a surface for the clotting factor complexes.
 s0663 3. Transport of substances across the membrane
 s0664 Figure 3.1
@@ -19,22 +20,22 @@ s0668 Relative to the gradient
 s0669 Simple diffusion
 s0670 Not consumed
 s0671 Down the concentration gradient
-s0672 O2, CO2, urea, ethanol, steroid hormones
+s0672 O~2~, CO~2~, urea, ethanol, steroid hormones
 s0673 Facilitated diffusion: channels
-s0674 Na+, K+, Ca2+, Cl- ion channels; aquaporins (water)
+s0674 Na^+^, K^+^, Ca^2+^, Cl^-^ ion channels; aquaporins (water)
 s0675 Facilitated diffusion: carriers
 s0676 Glucose transporters GLUT1–GLUT5
 s0677 Primary active transport
 s0678 ATP hydrolysis
 s0679 Against the gradient
-s0680 Na+,K+-ATPase (3 Na+ out, 2 K+ in), Ca2+-ATPase, H+,K+-ATPase (stomach)
+s0680 Na^+^,K^+^-ATPase (3 Na^+^ out, 2 K^+^ in), Ca^2+^-ATPase, H^+^,K^+^-ATPase (stomach)
 s0681 Secondary active transport
-s0682 Energy of the Na+ gradient
-s0683 Symport: Na+-glucose (SGLT1 in the intestine, SGLT2 in the kidney), Na+-amino acids; antiport: Na+/Ca2+, Na+/H+
+s0682 Energy of the Na^+^ gradient
+s0683 Symport: Na^+^-glucose (SGLT1 in the intestine, SGLT2 in the kidney), Na^+^-amino acids; antiport: Na^+^/Ca^2+^, Na^+^/H^+^
 s0684 Endocytosis and exocytosis
 s0685 Consumed
 s0686 Pinocytosis, phagocytosis, receptor-mediated endocytosis (LDL, transferrin), secretion
-s0687 **Carriers** (uniport, symport, antiport) have enzyme-like properties: specificity, saturation (Vmax), competitive inhibition. For example, GLUT4 is insulin-sensitive (muscle, adipose tissue): insulin moves it from intracellular vesicles to the membrane.
+s0687 **Carriers** (uniport, symport, antiport) have enzyme-like properties: specificity, saturation (V~max~), competitive inhibition. For example, GLUT4 is insulin-sensitive (muscle, adipose tissue): insulin moves it from intracellular vesicles to the membrane.
 s0688 4. Membrane receptors and signal transduction
 s0689 Signaling molecules (**ligands**, first messengers) are hormones, neurotransmitters, cytokines and growth factors. Hydrophilic ligands (peptide hormones, catecholamines) do not cross the membrane and act through **membrane receptors**; hydrophobic ligands (steroid and thyroid hormones, calcitriol) cross the membrane, bind to **intracellular (nuclear) receptors** and change gene transcription.
 s0690 Table 3.2. The main types of membrane receptors
@@ -60,8 +61,8 @@ s0709 **G proteins** are GTP-binding heterotrimeric proteins (α, β, γ subunit
 s0710 **Gs** — activates adenylate cyclase (cAMP ↑);
 s0711 **Gi** — inhibits adenylate cyclase (cAMP ↓);
 s0712 **Gq** — activates phospholipase C. **The adenylate cyclase system:** adenylate cyclase forms **cAMP** from ATP. cAMP binds to the regulatory subunits of **protein kinase A** and releases the catalytic subunits; these phosphorylate target proteins (phosphorylase kinase, hormone-sensitive lipase and others). cAMP is broken down to AMP by **phosphodiesterase** (caffeine and theophylline inhibit phosphodiesterase and prolong the action of cAMP).
-s0713 **The inositol phosphate system:** phospholipase C cleaves membrane phosphatidylinositol-4,5-bisphosphate (PIP2) into two second messengers: **inositol-1,4,5-trisphosphate (IP~3~)** — releases Ca2+ from the endoplasmic
-s0714 reticulum; **diacylglycerol (DAG)** — together with Ca2+ activates **protein kinase C**. Many effects of Ca2+ are carried out through the protein **calmodulin**.
+s0713 **The inositol phosphate system:** phospholipase C cleaves membrane phosphatidylinositol-4,5-bisphosphate (PIP~2~) into two second messengers: **inositol-1,4,5-trisphosphate (IP~3~)** — releases Ca^2+^ from the endoplasmic
+s0714 reticulum; **diacylglycerol (DAG)** — together with Ca^2+^ activates **protein kinase C**. Many effects of Ca^2+^ are carried out through the protein **calmodulin**.
 s0715 Figure 3.2
 s0716 The adenylate cyclase and inositol phosphate signaling systems (drawn after Severin E.S.)
 s0717 Table 3.3. Second messengers
@@ -74,23 +75,23 @@ s0723 Protein kinase A, ion channels
 s0724 cGMP
 s0725 Guanylate cyclase (NO, natriuretic peptide)
 s0726 Protein kinase G — smooth muscle relaxation
-s0727 IP3
+s0727 IP~3~
 s0728 Phospholipase C
-s0729 Ca2+ channels of the endoplasmic reticulum
+s0729 Ca^2+^ channels of the endoplasmic reticulum
 s0730 DAG
 s0731 Protein kinase C
-s0732 Ca2+
+s0732 Ca^2+^
 s0733 Enters through channels or is released from stores
 s0734 Calmodulin, protein kinase C, muscle contraction
 s0735 NO
 s0736 NO synthase (from arginine)
 s0737 Soluble guanylate cyclase
-s0738 Cholera toxin ADP-ribosylates the α subunit of the Gs protein and abolishes its GTPase activity — the G protein stays permanently active, cAMP rises sharply in the intestinal epithelium, and Cl- and water move into the intestinal lumen — severe diarrhea. Pertussis toxin, in contrast, blocks the Gi protein. Nitroglycerin releases NO and dilates vessels through cGMP; sildenafil inhibits phosphodiesterase-5, which breaks down cGMP.
+s0738 Cholera toxin ADP-ribosylates the α subunit of the G~s~ protein and abolishes its GTPase activity — the G protein stays permanently active, cAMP rises sharply in the intestinal epithelium, and Cl^-^ and water move into the intestinal lumen — severe diarrhea. Pertussis toxin, in contrast, blocks the G~i~ protein. Nitroglycerin releases NO and dilates vessels through cGMP; sildenafil inhibits phosphodiesterase-5, which breaks down cGMP.
 s0739 5. Membrane damage
 s0740 Membrane damage is a key link in the pathogenesis of many diseases:
-s0741 **Lipid peroxidation (LPO)** — free radicals (O2
-s0742 −, •OH) oxidize polyunsaturated fatty acids; membrane permeability increases, enzymes and receptors fail. Antioxidant defense: vitamins E and C, glutathione, superoxide dismutase, catalase, glutathione peroxidase.
-s0743 **Activation of phospholipases** (ischemia, excess Ca2+) — phospholipids are broken down.
+s0741 **Lipid peroxidation (LPO)** — free radicals (O~2~
+s0742 −, ^•^OH) oxidize polyunsaturated fatty acids; membrane permeability increases, enzymes and receptors fail. Antioxidant defense: vitamins E and C, glutathione, superoxide dismutase, catalase, glutathione peroxidase.
+s0743 **Activation of phospholipases** (ischemia, excess Ca^2+^) — phospholipids are broken down.
 s0744 **Detergent action** — excess bile acids and fatty acids.
 s0745 **Mechanical and osmotic damage**, the membrane attack complex of the complement system, bacterial toxins.
 s0746 **Congenital defects** — a defect of membrane skeleton proteins (spectrin) — hereditary spherocytosis; ion channel diseases (channelopathies) — cystic fibrosis (the CFTR Cl- channel).
@@ -126,7 +127,7 @@ s0775 What is transverse asymmetry?
 s0776 What factors affect membrane fluidity?
 s0777 Describe the types of passive transport.
 s0778 What is the difference between primary and secondary active transport?
-s0779 What is the significance of Na+,K+-ATPase?
+s0779 What is the significance of Na^+^,K^+^-ATPase?
 s0780 List the main types of membrane receptors.
 s0781 How do G proteins work?
 s0782 Explain the adenylate cyclase system.
@@ -150,13 +151,13 @@ s0799 In the inner (cytoplasmic) leaflet
 s0800 Equally in both leaflets
 s0801 In the glycocalyx
 s0802 Only in the mitochondria
-s0803 The number of ions transported by Na+,K+-ATPase per ATP:
-s0804 3 Na+ out, 2 K+ in
-s0805 2 Na+ out, 3 K+ in
-s0806 1 Na+ and 1 K+
-s0807 3 Na+ in, 2 K+ out
-s0808 Only Na+
-s0809 The type of transport of glucose absorbed together with Na+ in the intestine:
+s0803 The number of ions transported by Na^+^,K^+^-ATPase per ATP:
+s0804 3 Na^+^ out, 2 K^+^ in
+s0805 2 Na^+^ out, 3 K^+^ in
+s0806 1 Na^+^ and 1 K^+^
+s0807 3 Na^+^ in, 2 K^+^ out
+s0808 Only Na^+^
+s0809 The type of transport of glucose absorbed together with Na^+^ in the intestine:
 s0810 Facilitated diffusion
 s0811 Secondary active transport (symport)
 s0812 Pinocytosis
@@ -167,11 +168,11 @@ s0816 In the Golgi apparatus
 s0817 In lysosomes
 s0818 Inside the cell (in the cytoplasm and nucleus)
 s0819 The second messenger formed by adenylate cyclase:
-s0820 The messengers formed from PIP2 by phospholipase C:
-s0821 IP3 and DAG
+s0820 The messengers formed from PIP~2~ by phospholipase C:
+s0821 IP~3~ and DAG
 s0822 cAMP and cGMP
 s0823 Arachidonic acid and prostaglandins
-s0824 Ca2+ and calmodulin
+s0824 Ca^2+^ and calmodulin
 s0825 NO and cGMP
 s0826 The type to which the insulin receptor belongs:
 s0827 Ion channel–linked
@@ -182,12 +183,12 @@ s0831 How cholera toxin acts:
 s0832 Blocks the Gi protein
 s0833 Keeps the Gs protein permanently active
 s0834 Activates phosphodiesterase
-s0835 Inhibits Na+,K+-ATPase
+s0835 Inhibits Na^+^,K^+^-ATPase
 s0836 Breaks down adenylate cyclase
 s0837 The enzyme inhibited by cardiac glycosides:
-s0838 Ca2+-ATPase
-s0839 Na+,K+-ATPase
-s0840 H+,K+-ATPase
+s0838 Ca^2+^-ATPase
+s0839 Na^+^,K^+^-ATPase
+s0840 H^+^,K^+^-ATPase
 s0841 Adenylate cyclase
 s0842 Phospholipase C
 s0843 How caffeine increases cAMP:
@@ -213,13 +214,13 @@ s0862 Vitamin A
 s0863 Vitamin D
 s0864 Vitamin K
 s0865 Vitamin E
-s0866 Vitamin B12
+s0866 Vitamin B~12~
 s0867 A patient who came from an endemic area has watery “rice-water” diarrhea of up to 15–20 liters a day, severe dehydration and a fall in blood pressure. Vibrio cholerae was detected in the stool.
 s0868 Explain the biochemical mechanism of the diarrhea. Why is glucose added to the rehydration solution?
-s0869 Cholera toxin ADP-ribosylates the α subunit of the Gs protein in enterocytes; its GTPase activity is lost and adenylate cyclase is permanently activated. cAMP rises and, through protein kinase A, phosphorylates the CFTR Cl- channel — Cl-, followed by Na+ and water, moves into the intestinal lumen. The glucose in the oral rehydration solution provides, through SGLT1 (Na+-glucose symport), the absorption of Na+ and, with it, of water by osmosis; this carrier is not impaired by cAMP.
+s0869 Cholera toxin ADP-ribosylates the α subunit of the G~s~ protein in enterocytes; its GTPase activity is lost and adenylate cyclase is permanently activated. cAMP rises and, through protein kinase A, phosphorylates the CFTR Cl^-^ channel — Cl^-^, followed by Na^+^ and water, moves into the intestinal lumen. The glucose in the oral rehydration solution provides, through SGLT1 (Na^+^-glucose symport), the absorption of Na^+^ and, with it, of water by osmosis; this carrier is not impaired by cAMP.
 s0870 A patient with chronic heart failure takes digoxin. After losing potassium because of diarrhea, he developed nausea, yellowish spots in his vision and heart rhythm disturbances.
 s0871 What is the mechanism of action of digoxin? Why does hypokalemia increase the toxicity?
-s0872 Digoxin inhibits Na+,K+-ATPase in cardiomyocytes — Na+ increases inside the cell, the Na+/Ca2+ exchanger removes less Ca2+, Ca2+ accumulates in the cell and contraction becomes stronger (a positive inotropic effect). Digoxin competes with K+ for the same site on the ATPase: when K+ falls, digoxin binds to the enzyme more and its effect (toxicity) increases — arrhythmias develop.
+s0872 Digoxin inhibits Na^+^,K^+^-ATPase in cardiomyocytes — Na^+^ increases inside the cell, the Na^+^/Ca^2+^ exchanger removes less Ca^2+^, Ca^2+^ accumulates in the cell and contraction becomes stronger (a positive inotropic effect). Digoxin competes with K^+^ for the same site on the ATPase: when K^+^ falls, digoxin binds to the enzyme more and its effect (toxicity) increases — arrhythmias develop.
 s0873 An 8-year-old child has recurrent jaundice, anemia and an enlarged spleen. The blood smear shows small spherical erythrocytes, and osmotic resistance is reduced: hemolysis begins at 0.60% NaCl. His father has the same disease.
 s0874 What is the diagnosis? What is its biochemical basis?
 s0875 Hereditary spherocytosis (Minkowski–Chauffard disease). Because of a defect of membrane skeleton proteins (spectrin, ankyrin), the lipid bilayer is poorly bound to the cytoskeleton, pieces of membrane are lost, the erythrocyte becomes spherical and its surface/volume ratio decreases. Such cells tolerate swelling poorly (reduced osmotic resistance) and are trapped and destroyed in the spleen — hemolytic anemia, raised bilirubin (jaundice), splenomegaly.
@@ -232,11 +233,3 @@ s0881 Outside phosphatidylcholine, sphingomyelin, glycolipids; inside phosphatid
 s0882 The “buffer” of membrane fluidity
 s0883 Passive transport
 s0884 Simple and facilitated diffusion (channels, GLUT)
-s0885 Primary active
-s0886 Na+,K+-ATPase: 3 Na+ out, 2 K+ in
-s0887 Secondary active
-s0888 At the expense of the Na+ gradient: SGLT1, SGLT2
-s0889 Gs / Gi / Gq
-s0890 Adenylate cyclase ↑ / ↓ / phospholipase C ↑
-s0891 Second messengers
-s0892 cAMP, cGMP, IP3, DAG, Ca2+, NO

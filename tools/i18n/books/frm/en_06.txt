@@ -16,7 +16,7 @@ s1184 **Prodrug** — a drug that is inactive itself and is converted into an ac
 s1185 Inducers: **“Rifa, Pheno, Carba and Pheny drank, smoked and ate St John's wort”** — rifampicin, phenobarbital, carbamazepine, phenytoin, alcohol, smoking, St John's wort. Inhibitors: **“MAKC CIMA GRAPE”** — **MA**crolides, **K**etoconazole (azoles), **C**iprofloxacin, **CIM**etidine, **A**miodarone, **GRAPE**fruit.
 s1186 **The “4–5 half-lives” rule:** with repeated use at a constant dose, steady-state concentration (Css) is reached after about **4–5 × t½**; when the drug is stopped, it also takes **4–5 × t½** for it to be almost completely (94–97%) eliminated from the body. 1 t½ → 50%, 2 → 75%, 3 → 87.5%, 4 → 93.75%, 5 → 96.9%.
 s1187 Zero-order kinetics: **“PEA”** — **P**henytoin, **E**thanol, **A**spirin (at high doses). Zero order is a “saturated pump” that removes the same amount every hour.
-s1188 G proteins and receptors: **“QISS”** — **Q**q (α1, M1, M3, H1), **I**i (α2, M2, D2), **S**s (β1, β2, D1, H2, V2). Odd-numbered M receptors (M1, M3) — Gq; even (M2) — Gi.
+s1188 G proteins and receptors: **“QISS”** — **Q**q (α~1~, M~1~, M~3~, H~1~), **I**i (α~2~, M~2~, D~2~), **S**s (β~1~, β~2~, D~1~, H~2~, V~2~). Odd-numbered M receptors (M~1~, M~3~) — G~q~; even (M~2~) — G~i~.
 s1189 Do not confuse potency with efficacy: furosemide 40 mg is **more effective** than hydrochlorothiazide (25 mg) (it produces a stronger diuresis), even though it is less potent per mg. Bumetanide (1 mg) is **more potent** than furosemide (40 mg), but their efficacy is the same.
 s1190 **Amide anesthetics have two “i”s in their names**: l**i**doca**i**ne, art**i**ca**i**ne, bup**i**vaca**i**ne, rop**i**vaca**i**ne, mep**i**vaca**i**ne. Esters have one “i”: procaine, tetracaine, benzocaine, cocaine.
 s1191 Maximum doses differ slightly between sources (especially for procaine). Always calculate the dose in **mg/kg** and reduce it according to the patient's condition (old age, liver disease, pregnancy, heart failure). The doses of anesthetics injected into different sites at the same time **add up**.
@@ -82,7 +82,7 @@ s1250 **Passive diffusion** — along the concentration gradient, without energy
 s1251 **Filtration** (through aqueous pores) — water-soluble substances of small molecular weight (up to 100–200 Da).
 s1252 **Active transport** — with the help of carrier proteins, with energy (ATP) expenditure, against the gradient; it can be saturated and competitively inhibited (levodopa, iron, 5-fluorouracil).
 s1253 **Facilitated diffusion** — with a carrier but along the gradient, without energy (glucose).
-s1254 **Pinocytosis (endocytosis)** — engulfment of large molecules by the membrane (vitamin B12 — intrinsic factor complex). **Ionization and pH.** Most drugs are weak acids or bases. Their non-ionized (lipophilic) fraction crosses the membrane. The degree of ionization depends on the pH of the medium and the pKa of the substance (**Henderson–Hasselbalch equation**):
+s1254 **Pinocytosis (endocytosis)** — engulfment of large molecules by the membrane (vitamin B~12~ — intrinsic factor complex). **Ionization and pH.** Most drugs are weak acids or bases. Their non-ionized (lipophilic) fraction crosses the membrane. The degree of ionization depends on the pH of the medium and the pKa of the substance (**Henderson–Hasselbalch equation**):
 s1255 weak **acids** (acetylsalicylic acid, barbiturates) are poorly ionized in an **acidic** medium and are well absorbed;
 s1256 weak **bases** (alkaloids: morphine, atropine) are poorly ionized in an **alkaline** medium.
 s1257 2.3. Bioavailability and the first-pass effect
@@ -99,7 +99,7 @@ s1267 **binding to plasma proteins** (acidic drugs — to albumin, basic drugs �
 s1268 **biological barriers**: the blood–brain barrier (BBB), the placental barrier, the blood–ocular and blood–testis barriers.
 s1269 **The blood–brain barrier** — tight junctions of the endothelium of brain capillaries and the P-glycoprotein pump. Lipophilic substances (diazepam, thiopental) cross well; quaternary ammonium compounds (neostigmine, metocinium) and many antibiotics cross poorly. In inflammation (meningitis), the permeability of the barrier increases — benzylpenicillin reaches the cerebrospinal fluid.
 s1270 **The placental barrier** — lipophilic, small-molecule drugs cross easily. Therefore, during pregnancy any drug is regarded as potentially dangerous.
-s1271 **Volume of distribution (Vd)** — a notional volume that relates the amount of drug in the body to its plasma concentration: **Vd = D / C0**. Small Vd (5–15 l) — the drug is mainly in the blood (heparin, warfarin); large Vd (hundreds of liters) — the drug accumulates in the tissues (digoxin, amiodarone, chloroquine). In poisoning with drugs of large Vd, hemodialysis is ineffective.
+s1271 **Volume of distribution (Vd)** — a notional volume that relates the amount of drug in the body to its plasma concentration: **Vd = D / C~0~**. Small Vd (5–15 l) — the drug is mainly in the blood (heparin, warfarin); large Vd (hundreds of liters) — the drug accumulates in the tissues (digoxin, amiodarone, chloroquine). In poisoning with drugs of large Vd, hemodialysis is ineffective.
 s1272 **Depot formation** — accumulation of a drug in a tissue: thiopental — in adipose tissue, tetracyclines — in bone and teeth, iodine — in the thyroid gland, amiodarone — in fat and the lungs.
 s1273 2.5. Biotransformation (metabolism)
 s1274 Biotransformation takes place mainly in the **liver** (also in the intestinal wall, lungs, kidneys and blood). Its aim is to make a lipophilic substance **hydrophilic** (water-soluble) and so make its excretion easier.
@@ -164,7 +164,7 @@ s1332 F
 s1333 AUC (oral) / AUC (intravenous) × 100%
 s1334 Volume of distribution
 s1335 Vd
-s1336 Vd = Dose / C0
+s1336 Vd = Dose / C~0~
 s1337 Clearance
 s1338 Cl
 s1339 The volume of plasma completely cleared of the drug per unit of time (ml/min): Cl = Vd × kel
@@ -175,5 +175,3 @@ s1343 Half-life
 s1344 t½
 s1345 The time it takes for the plasma concentration to fall by half: t½ = 0.693 × Vd / Cl
 s1346 Steady-state concentration
-s1347 Css
-s1348 The state in which intake and elimination are balanced

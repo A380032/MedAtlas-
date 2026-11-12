@@ -1,10 +1,24 @@
-s7906 Excitatory / inhibitory
-s7907 Glutamate / GABA (glutamate decarboxylase, B6)
-s7908 Vision
-s7909 11-cis → all-trans-retinal → transducin → cGMP ↓ → hyperpolarization
-s7910 Alzheimer
-s7911 β-Amyloid, tau; cholinesterase inhibitors
-s7912 Parkinson
-s7913 Dopamine ↓; L-DOPA + carbidopa
-s7914 Depression, schizophrenia
-s7915 Serotonin ↓ (SSRIs); dopamine ↑ (D2 blockers)
+s7891 Acute poisoning with an organophosphorus compound. The poison phosphorylates the serine in the active site of acetylcholinesterase and inhibits it irreversibly; acetylcholine accumulates in the synapses. Through M-cholinergic receptors — miosis, blurred vision, increased salivary and bronchial secretion, bronchospasm, bradycardia, diarrhea; through N-receptors — muscle fibrillation, then paralysis (respiratory muscles); in the CNS — agitation, seizures, coma. A decrease in blood cholinesterase activity confirms the diagnosis. Treatment: washing the poison off the skin, high-dose atropine (stops the muscarinic signs), oxime reactivators (pralidoxime — detaches the phosphate group from the enzyme, effective if given early), benzodiazepines (seizures), artificial ventilation.
+s7892 BBB
+s7893 Tight junctions, astrocytes; glucose (GLUT1) and ketone bodies cross; dopamine does not
+s7894 Brain lipids
+s7895 Phospholipids, cerebrosides, gangliosides, cholesterol; no TAG
+s7896 Myelin
+s7897 ≈ 75% lipid; multiple sclerosis; sphingolipidoses
+s7898 20% of O~2~; glucose; ketone bodies in starvation
+s7899 Excitotoxicity
+s7900 Ischemia → glutamate → NMDA → Ca^2+^ → neuronal death
+s7901 Astrocytes
+s7902 Glutamate–glutamine cycle, NH~3~ detoxification, lactate
+s7903 Transmitters
+s7904 Acetylcholine (AChE), catecholamines (MAO, COMT), serotonin, glutamate, GABA
+s7905 Excitatory / inhibitory
+s7906 Glutamate / GABA (glutamate decarboxylase, B~6~)
+s7907 Vision
+s7908 11-cis → all-trans-retinal → transducin → cGMP ↓ → hyperpolarization
+s7909 Alzheimer
+s7910 β-Amyloid, tau; cholinesterase inhibitors
+s7911 Parkinson
+s7912 Dopamine ↓; L-DOPA + carbidopa
+s7913 Depression, schizophrenia
+s7914 Serotonin ↓ (SSRIs); dopamine ↑ (D~2~ blockers)

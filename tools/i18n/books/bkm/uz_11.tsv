@@ -1,3 +1,9 @@
+s2087	Och qoringa va yog‘li ovqatdan 3–4 soat keyin olingan zardoblarni solishtiring (namoyish yoki rasm).
+s2088	Lipemik zardobni muzlatgichda (+4 °C) bir kecha qoldiring: yuqorida “qaymoq” qatlami hosil bo‘lsa — xilomikronlar; zardobning o‘zi loyqa qolsa — ZPLP ko‘p.
+s2089	O‘qituvchi bergan lipid spektri natijalarini me’yor bilan solishtiring va aterogenlik koeffitsientini hisoblang.
+s2090	Ko‘nikma: steatoreya sababini aniqlash
+s2091	Najasda yog‘ ko‘payganini tasdiqlang (koprogramma: neytral yog‘ yoki yog‘ kislotalari).
+s2092	Neytral yog‘ (TAG) ko‘p bo‘lsa — lipaza yetishmovchiligi (pankreatit): najas elastaza-1 kamayadi.
 s2093	Yog‘ kislotalari va sovunlar ko‘p bo‘lsa — o‘t yetishmasligi yoki so‘rilish buzilishi.
 s2094	Sariqlik, axolik najas, qonda bog‘langan bilirubin oshgan bo‘lsa — o‘t yo‘llari tiqilishi.
 s2095	Yog‘da eruvchi vitaminlar yetishmovchiligi belgilarini tekshiring va parhezni tavsiya qiling.
@@ -112,10 +118,10 @@ s2203	Yog‘ kislotalari, TAG, fosfolipidlar, sfingolipidlar, steroidlar, eykoza
 s2204	Almashinmaydigan YK
 s2205	Linol (ω-6), α-linolen (ω-3)
 s2206	Emulsiyalanish
-s2207	O‘t kislotalari tuzlari, peristaltika, CO2
+s2207	O‘t kislotalari tuzlari, peristaltika, CO~2~
 s2208	Pankreatik lipaza
 s2209	+ kolipaza; TAG → 2-MAG + 2 YK
-s2210	Fosfolipaza A2
+s2210	Fosfolipaza A~2~
 s2211	Fosfolipid → lizofosfolipid + YK
 s2212	Birlamchi: xol, xenodezoksixol; konyugatsiya — glitsin, taurin
 s2213	Enterogepatik aylanish
@@ -167,7 +173,7 @@ s2258	Lipoliz natijasida hosil bo‘lgan **yog‘ kislotalari** qonda **albumin*
 s2259	2. Yog‘ kislotalarining β-oksidlanishi
 s2260	**β-oksidlanish** — yog‘ kislotalarining mitoxondriya matriksida ketma-ket ikki uglerodli bo‘laklar (atsetil-KoA) ajratib oksidlanishi (F. Knoop, 1904). Asosan yurak, skelet mushaklari, jigar va buyrakda boradi.
 s2261	**1. Yog‘ kislotasining faollanishi** (sitozolda, mitoxondriya tashqi membranasida):
-s2262	Yog‘ kislota + KoA-SH + ATF → Atsil-KoA + AMF + PPn (atsil-KoA-sintetaza; 2 makroergik bog‘ sarflanadi)
+s2262	Yog‘ kislota + KoA-SH + ATF → Atsil-KoA + AMF + PP~n~ (atsil-KoA-sintetaza; 2 makroergik bog‘ sarflanadi)
 s2263	**2. Atsil qoldig‘ining mitoxondriyaga tashilishi — karnitin moki tizimi.** Ichki membrana atsil-KoA ni o‘tkazmaydi:
 s2264	**karnitinpalmitoiltransferaza I (KPT-I)** (tashqi membrana) atsil guruhni karnitinga ko‘chiradi → atsilkarnitin; bu **β-oksidlanishning kalit (boshqariluvchi) bosqichi**;
 s2265	**karnitin-atsilkarnitin translokaza** atsilkarnitinni matriksga o‘tkazadi;
@@ -177,33 +183,23 @@ s2268	Rasm 9.1
 s2269	Yog‘ kislotalarining faollanishi, karnitin moki tizimi va β-oksidlanish reaksiyalari (Severin E.S. asosida chizilgan)
 s2270	**Degidrogenlanish** — atsil-KoA-degidrogenaza (FAD): atsil-KoA → trans-Δ2-enoil-KoA + **FADH~2~**;
 s2271	**Gidratatsiya** — enoil-KoA-gidrataza: → L-3-gidroksiatsil-KoA;
-s2272	**Degidrogenlanish** — 3-gidroksiatsil-KoA-degidrogenaza (NAD+): → 3-ketoatsil-KoA + **NADH**;
+s2272	**Degidrogenlanish** — 3-gidroksiatsil-KoA-degidrogenaza (NAD^+^): → 3-ketoatsil-KoA + **NADH**;
 s2273	**Tiolitik parchalanish** — tiolaza (+ KoA-SH): → **atsetil-KoA** + ikki uglerodga qisqargan atsil- KoA. Qisqargan atsil-KoA siklni qaytadan boshlaydi. Cn juft uglerodli yog‘ kislota uchun (n/2 − 1) ta sikl boradi va n/2 ta atsetil-KoA hosil bo‘ladi.
 s2274	Jadval 9.2. Palmitin kislota (C16) to‘liq oksidlanishining energetik samarasi
 s2275	7 ta β-oksidlanish sikli
-s2276	7 FADH2
+s2276	7 FADH~2~
 s2277	7 NADH
 s2278	8 atsetil-KoA → Krebs sikli
 s2279	Faollanish
 s2280	106 ATF (eski hisobda 129–131)
 s2281	Yog‘larning yuqori energetik qiymati yog‘ kislotalarining uglevodlarga nisbatan ko‘proq qaytarilganligi bilan bog‘liq.
-s2282	**To‘yinmagan yog‘ kislotalari** oksidlanishida qo‘shimcha fermentlar (izomeraza, reduktaza) kerak; har bir qo‘sh bog‘ bitta FADH2 ni kamaytiradi. **Toq uglerodli yog‘ kislotalaridan** oxirida propionil- KoA hosil bo‘ladi → metilmalonil-KoA → (B12) suktsinil-KoA → glyukoneogenezga kirishi mumkin. **Juda uzun zanjirli** (C22 va uzunroq) yog‘ kislotalari avval **peroksisomalarda** qisqartiriladi (bunda FADH2 o‘rniga H2O2 hosil bo‘ladi).
+s2282	**To‘yinmagan yog‘ kislotalari** oksidlanishida qo‘shimcha fermentlar (izomeraza, reduktaza) kerak; har bir qo‘sh bog‘ bitta FADH~2~ ni kamaytiradi. **Toq uglerodli yog‘ kislotalaridan** oxirida propionil- KoA hosil bo‘ladi → metilmalonil-KoA → (B~12~) suktsinil-KoA → glyukoneogenezga kirishi mumkin. **Juda uzun zanjirli** (C22 va uzunroq) yog‘ kislotalari avval **peroksisomalarda** qisqartiriladi (bunda FADH~2~ o‘rniga H~2~O~2~ hosil bo‘ladi).
 s2283	**Karnitin yoki KPT tanqisligi** va **o‘rta zanjirli atsil-KoA-degidrogenaza (MCAD) yetishmovchiligi**: ochlik yoki kasallik paytida yog‘ kislotalari oksidlanmaydi — **gipoketotik gipoglikemiya** (keton tanachalari hosil bo‘lmaydi, glyukoneogenez uchun ATF yetishmaydi), mushaklar kuchsizligi, kardiomiopatiya, jigar shikastlanishi; chaqaloqlarning to‘satdan o‘lim sindromi sabablaridan biri. Davolash: uzoq ochlikdan saqlanish, tez-tez uglevodli ovqatlantirish, karnitin preparatlari.
 s2284	3. Yog‘ kislotalari biosintezi
 s2285	Yog‘ kislotalari **sitozolda**, asosan **jigar**, **yog‘ to‘qimasi** va **laktatsiyadagi sut bezida** sintezlanadi; manbayi — ortiqcha uglevodlardan hosil bo‘lgan **atsetil-KoA**. Sintez **insulin** ta’sirida, uglevodga boy ovqatdan keyin kuchayadi.
 s2286	**1. Atsetil-KoA ning mitoxondriyadan sitozolga chiqishi (sitrat moki mexanizmi).** Atsetil-KoA mitoxondriya membranasidan o‘tmaydi: u oksaloatsetat bilan sitrat hosil qiladi, sitrat sitozolga chiqadi va **sitratliaza** ta’sirida (ATF) qayta atsetil-KoA va oksaloatsetatga parchalanadi. Oksaloatsetat malatga, so‘ng **malik-fermet** ta’sirida piruvatga aylanadi va bunda **NADPH** hosil bo‘ladi.
 s2287	**2. Atsetil-KoA ning karboksillanishi** (kalit reaksiya):
-s2288	Atsetil-KoA + CO2 + ATF → **Malonil-KoA** + ADF + Fn — **atsetil-KoA-karboksilaza** (koferment — **biotin**)
-s2289	**3. Yog‘ kislotalari sintazasi** — multifermentli kompleks (dimer, har bir subbirlikda 7 ta faol markaz va atsil tashuvchi qism — **pantotein guruh** (B5)). Har bir siklda malonil-KoA dan 2 uglerod qo‘shiladi (CO2 ajraladi); qaytarilish uchun **2 NADPH** sarflanadi. 7 siklda **palmitin kislota** (C16:0) hosil bo‘ladi.
+s2288	Atsetil-KoA + CO~2~ + ATF → **Malonil-KoA** + ADF + F~n~ — **atsetil-KoA-karboksilaza** (koferment — **biotin**)
+s2289	**3. Yog‘ kislotalari sintazasi** — multifermentli kompleks (dimer, har bir subbirlikda 7 ta faol markaz va atsil tashuvchi qism — **pantotein guruh** (B~5~)). Har bir siklda malonil-KoA dan 2 uglerod qo‘shiladi (CO~2~ ajraladi); qaytarilish uchun **2 NADPH** sarflanadi. 7 siklda **palmitin kislota** (C16:0) hosil bo‘ladi.
 s2290	Palmitat sintezining yakuniy tenglamasi:
-s2291	8 Atsetil-KoA + 7 ATF + 14 NADPH + 14 H+ → Palmitat + 8 KoA-SH + 7 ADF + 7 Fn + 14 NADP+ + 6 H2O
-s2292	**NADPH manbalari:** pentozofosfat yo‘l (asosiy) va malik-fermet.
-s2293	**Uzaytirish va to‘yinmagan holatga o‘tkazish:** palmitat endoplazmatik to‘rda stearatga va undan uzunroqqa uzaytiriladi; desaturazalar Δ9 holatda qo‘sh bog‘ kiritadi (stearat → oleat). Linol va linolen kislotalar sintezlanmaydi.
-s2294	Jadval 9.3. Atsetil-KoA-karboksilazaning boshqarilishi
-s2295	Sitrat (allosterik; polimerlanishni kuchaytiradi)
-s2296	Palmitoil-KoA (uzun zanjirli atsil-KoA)
-s2297	Insulin (defosforlanish; ferment sintezi induksiyasi)
-s2298	Glyukagon, adrenalin (cAMF → fosforlanish); AMFkinaza (energiya kam)
-s2299	Uglevodga boy, yog‘i kam ovqat
-s2300	Ochlik, yog‘li ovqat
-s2301	4. Keton tanachalari
+s2291	8 Atsetil-KoA + 7 ATF + 14 NADPH + 14 H^+^ → Palmitat + 8 KoA-SH + 7 ADF + 7 F~n~ + 14 NADP^+^ + 6 H~2~O

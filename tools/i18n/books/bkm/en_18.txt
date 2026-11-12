@@ -1,7 +1,18 @@
+s3378 A 60-year-old vegetarian woman has weakness, numbness in the legs and memory loss. The blood shows megaloblastic anemia, homocysteine 45 µmol/l (normal 5–15) and increased methylmalonic acid.
+s3379 Which vitamin is deficient? Why are homocysteine and methylmalonic acid increased?
+s3380 Vitamin B~12~ (cobalamin) deficiency (low in the diet of vegetarians — it is found only in animal products). Methylcobalamin is the coenzyme of methionine synthase: when it is lacking, homocysteine is not converted into methionine (hyperhomocysteinemia — a risk of thrombosis and atherosclerosis), N5-methyl-THF accumulates (the “folate trap”) and the other forms of folate fall — the synthesis of thymidylate and DNA is impaired (megaloblastic anemia). 5′-deoxyadenosylcobalamin is the coenzyme of methylmalonyl-CoA mutase: when it is lacking, methylmalonic acid accumulates; abnormal fatty acids are incorporated into myelin and damage the nervous system (subacute combined degeneration). Treatment — parenteral B~12~.
+s3381 Sources of ammonia
+s3382 Deamination, hydrolysis of amides, MAO, deamination of bases, the intestine
+s3383 Toxicity
+s3384 In the brain α-KG ↓ (Krebs cycle ↓), glutamine ↑ (swelling)
+s3385 Temporary binding
+s3386 Glutamine synthetase (glutamine), alanine
+s3387 Kidney
+s3388 Glutaminase → excretion of NH~4~^+^; ↑ in acidosis
 s3389 Ornithine cycle
 s3390 CPS-I (key) → OCT → ASS → ASL → arginase; in the liver
 s3391 Nitrogens
-s3392 1 — NH3, 2 — aspartate
+s3392 1 — NH~3~, 2 — aspartate
 s3393 3 ATP (4 high-energy bonds)
 s3394 Activator
 s3395 In blood 2.5–8.3 mmol/l; in urine 20–35 g/day
@@ -12,9 +23,9 @@ s3399 One-carbon groups; purines, thymidylate; sulfonamides, methotrexate
 s3400 SAM
 s3401 Methyl donor: adrenaline, creatine, choline, DNA methylation
 s3402 Homocysteine
-s3403 B12, folate, B6; its rise — a risk of thrombosis and atherosclerosis
+s3403 B~12~, folate, B~6~; its rise — a risk of thrombosis and atherosclerosis
 s3404 PKU
-s3405 Phenylalanine hydroxylase (BH4); screening, diet
+s3405 Phenylalanine hydroxylase (BH~4~); screening, diet
 s3406 Alkaptonuria / albinism
 s3407 Homogentisate oxidase / tyrosinase
 s3408 Metabolism of nucleotides
@@ -34,14 +45,14 @@ s3421 1. Functions of nucleotides. Digestion of nucleoproteins
 s3422 **Nucleotides** are compounds consisting of a nitrogenous base (purine: adenine, guanine; pyrimidine: cytosine, uracil, thymine), a pentose (ribose or deoxyribose) and 1–3 phosphate residues.
 s3423 monomers of the nucleic acids (DNA, RNA);
 s3424 **energy** — ATP is the universal energy carrier; GTP (protein synthesis, gluconeogenesis), UTP (glycogen synthesis), CTP (phospholipid synthesis);
-s3425 components of **coenzymes** — NAD+, NADP+, FAD, CoA;
+s3425 components of **coenzymes** — NAD^+^, NADP^+^, FAD, CoA;
 s3426 **second messengers** — cAMP, cGMP;
 s3427 **activated intermediates** — UDP-glucose, CDP-choline, S-adenosylmethionine, PAPS;
 s3428 **allosteric effectors** — they regulate the activity of many enzymes. **Digestion of nucleoproteins:** in the stomach nucleoproteins are split into the protein part (histones) and the nucleic acids; in the intestine the pancreatic **nucleases** (DNase, RNase) break the nucleic acids down into oligonucleotides, **phosphodiesterases** into mononucleotides, **nucleotidases** into nucleosides, and **nucleosidases (phosphorylases)** into the nitrogenous base and the pentose. The purine and pyrimidine bases that come with food are almost not used for the synthesis of nucleic acids in the body — they are broken down. Therefore nucleotides are **not an essential factor**: they are synthesized from amino acids and other simple substances.
 s3429 2. Synthesis of purine nucleotides
 s3430 De novo synthesis
 s3431 Purine nucleotides are synthesized mainly in the **liver**, in the cytosol, on the basis of **phosphoribosyl pyrophosphate (PRPP)** — the purine ring is “assembled” step by step on ribose-5-phosphate.
-s3432 **Sources of the atoms of the purine ring:** glycine (C4, C5, N7), the amide nitrogen of glutamine (N3, N9), aspartate (N1), CO2 (C6), N10-formyl-THF (C2, C8).
+s3432 **Sources of the atoms of the purine ring:** glycine (C4, C5, N7), the amide nitrogen of glutamine (N3, N9), aspartate (N1), CO~2~ (C6), N10-formyl-THF (C2, C8).
 s3433 Figure 14.1
 s3434 De novo synthesis of purine nucleotides and the salvage pathway (drawn after Severin E.S.)
 s3435 Ribose-5-phosphate + ATP → **PRPP** (PRPP synthetase).
@@ -91,12 +102,12 @@ s3478 Reduce inflammation (migration of neutrophils, tubulin)
 s3479 **Diet:** restriction of purine-rich food, alcohol (especially beer) and fructose-containing drinks, drinking plenty of fluid, alkalinization of the urine (urate becomes more soluble).
 s3480 5. Synthesis and breakdown of pyrimidine nucleotides
 s3481 The pyrimidine ring is first assembled free and then attached to PRPP:
-s3482 Glutamine + CO2 + 2ATP → carbamoyl phosphate — **carbamoyl phosphate synthetase II** (in the cytosol; the **key enzyme**; inhibited by UTP, activated by PRPP and ATP). (Unlike carbamoyl phosphate synthetase I of the ornithine cycle: that one is in the mitochondria and uses NH3.)
+s3482 Glutamine + CO~2~ + 2ATP → carbamoyl phosphate — **carbamoyl phosphate synthetase II** (in the cytosol; the **key enzyme**; inhibited by UTP, activated by PRPP and ATP). (Unlike carbamoyl phosphate synthetase I of the ornithine cycle: that one is in the mitochondria and uses NH~3~.)
 s3483 Carbamoyl phosphate + aspartate → carbamoyl aspartate (aspartate carbamoyltransferase) → dihydroorotate → **orotic acid** (dihydroorotate dehydrogenase — in the mitochondria).
 s3484 Orotate + PRPP → orotidine monophosphate → **UMP** (a bifunctional enzyme — **UMP synthase**: orotate phosphoribosyltransferase and OMP decarboxylase).
 s3485 UMP → UDP → **UTP** → **CTP** (CTP synthetase, the amide group of glutamine). In humans the first three enzymes are combined in one multifunctional protein (CAD).
-s3486 **Breakdown:** cytosine and uracil → β-alanine, NH3, CO2; thymine → β-aminoisobutyric acid. The products are readily soluble in water and do not cause diseases like hyperuricemia.
-s3487 **Hereditary orotic aciduria** — UMP synthase deficiency: a lot of **orotic acid** in the urine (crystals), megaloblastic anemia (not enough pyrimidine nucleotides and DNA synthesis; it is not cured by folate or B12),
+s3486 **Breakdown:** cytosine and uracil → β-alanine, NH~3~, CO~2~; thymine → β-aminoisobutyric acid. The products are readily soluble in water and do not cause diseases like hyperuricemia.
+s3487 **Hereditary orotic aciduria** — UMP synthase deficiency: a lot of **orotic acid** in the urine (crystals), megaloblastic anemia (not enough pyrimidine nucleotides and DNA synthesis; it is not cured by folate or B~12~),
 s3488 growth retardation. Treatment — **uridine**: it is converted into UMP and makes up the shortage of nucleotides, and through UTP it inhibits carbamoyl phosphate synthetase II and reduces the formation of orotic acid. Orotic aciduria is also seen in ornithine carbamoyltransferase deficiency (topic 13), but there is hyperammonemia there and no anemia.
 s3489 6. Synthesis of deoxyribonucleotides and thymidylate nucleotides
 s3490 **Ribonucleotide reductase** reduces ribonucleoside **diphosphates** (ADP, GDP, CDP, UDP) to deoxyribonucleoside diphosphates. The reductant is **thioredoxin** (which is regenerated at the expense of thioredoxin reductase and NADPH). The enzyme is regulated allosterically in a complex way: **dATP** is an inhibitor for all substrates and ATP an activator; the various dNTPs change the substrate specificity and keep the balance of deoxyribonucleotides. The activity of the enzyme is highest in the S phase of the cell cycle.
@@ -129,11 +140,11 @@ s3516 Herpes, HIV
 s3517 7. Age-related features of nucleotide metabolism
 s3518 In the first days of life the blood uric acid of newborns is high (a lot of cells, especially erythrocytes, are broken down) and urate crystals may be deposited in the renal tubules — a **uric acid infarct** (a physiological state; the urine is brick-red and it passes within 1–2 weeks). During growth the synthesis of nucleotides is intense. Hyperuricemia is more common in old age and, in women, after the menopause (estrogens increase the excretion of urate).
 s3519 Experiment 1: determination of uric acid in serum by the uricase method
-s3520 **Principle of the method: uricase** oxidizes uric acid to allantoin, CO2 and **H~2~O~2~**; peroxidase, at the expense of H2O2, oxidizes a chromogen and forms a colored compound (the Trinder reaction, 520 nm). The intensity of the color is proportional to the amount of uric acid.
+s3520 **Principle of the method: uricase** oxidizes uric acid to allantoin, CO~2~ and **H~2~O~2~**; peroxidase, at the expense of H~2~O~2~, oxidizes a chromogen and forms a colored compound (the Trinder reaction, 520 nm). The intensity of the color is proportional to the amount of uric acid.
 s3521 Pour 1 ml of working reagent (uricase, peroxidase, chromogen) into each of three test tubes.
 s3522 Add 25 µl of serum to tube 1, 25 µl of standard (for example, 357 µmol/l) to tube 2 and 25 µl of water to tube 3.
 s3523 Keep at 37 °C for 10 minutes and measure against the control at 520 nm. **Calculation:** C (µmol/l) = (Esample / Estandard) × Cstandard
-s3524 **Evaluation:** 200–420 µmol/l in men, 140–360 in women. Ascorbic acid (a strong reductant) can use up the H2O2 and falsely lower the result.
+s3524 **Evaluation:** 200–420 µmol/l in men, 140–360 in women. Ascorbic acid (a strong reductant) can use up the H~2~O~2~ and falsely lower the result.
 s3525 Experiment 2: the murexide test for uric acid
 s3526 Put a small amount of uric acid (or scrapings from a urate stone) into a porcelain dish and add 2–3 drops of concentrated nitric acid.
 s3527 Evaporate carefully on a water bath (a red-yellow residue).
@@ -143,21 +154,3 @@ s3530 Place a drop of the urine sediment (after centrifugation) on a slide.
 s3531 Examine under the microscope. **Result and analysis:** in acidic urine, uric acid crystals are yellow-brown and rhomboid, barrel-shaped or in rosettes; amorphous urates form a brick-red sediment. Large amounts indicate a urate diathesis or a tendency to urate stones.
 s3532 Skill: identifying the cause of hyperuricemia
 s3533 Compare blood uric acid with the normal value for the sex.
-s3534 Assess uric acid excretion in daily urine: high — increased synthesis (tumors, enzyme defect); low — impaired excretion (kidneys, drugs).
-s3535 Assess creatinine and kidney function.
-s3536 Take drugs (diuretics, aspirin), alcohol, diet and chemotherapy into account.
-s3537 Choose the principle of treatment: a xanthine oxidase inhibitor or a uricosuric agent.
-s3538 Skill: explaining the mechanism of action of an antimetabolite
-s3539 Determine which natural metabolite the structure of the drug resembles.
-s3540 Write down which enzyme is inhibited and which reaction is blocked.
-s3541 Show which nucleotide synthesis stops and how DNA/RNA synthesis is affected.
-s3542 Explain why rapidly dividing cells are damaged more.
-s3543 Name the adverse effects (anemia, leukopenia, mucositis) and the protective measures (with methotrexate — folinic acid, leucovorin).
-s3544 List the functions of nucleotides in the body.
-s3545 How are nucleoproteins digested?
-s3546 Which substances supply the atoms of the purine ring?
-s3547 Name the main steps of de novo purine nucleotide synthesis.
-s3548 How is the synthesis of purine nucleotides regulated?
-s3549 What is the salvage pathway and what is its importance?
-s3550 What is the biochemical basis of Lesch–Nyhan syndrome?
-s3551 How are purines broken down? What is the role of xanthine oxidase?

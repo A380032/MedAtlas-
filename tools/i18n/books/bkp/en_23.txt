@@ -38,7 +38,7 @@ s4571 Expiratory dyspnea, whistling breathing heard at a distance; accessory mus
 s4572 Vocal fremitus weakened, chest rigid
 s4573 Box-like sound; the lower lung border shifted downward, its excursion reduced; the borders of relative cardiac dullness reduced; the liver and spleen displaced downward (should not be mistaken for enlargement)
 s4574 Breathing harsh or weakened, prolonged expiration; dry whistling rales on expiration; in bronchiolitis + many fine-bubbling moist rales and crepitation
-s4575 FEV1, Tiffeneau index, peak flow and small airway flows reduced — obstructive type; daily PEF variability >20%
+s4575 FEV~1~, Tiffeneau index, peak flow and small airway flows reduced — obstructive type; daily PEF variability >20%
 s4576 The lungs are hyperinflated (increased transparency), the ribs horizontal, the diaphragm low and flattened, increased bronchovascular markings
 s4577 Blood (in asthma)
 s4578 Eosinophilia, raised IgE
@@ -46,14 +46,15 @@ s4579 Figure 7.9
 s4580 X-ray in the obstructive syndrome: increased transparency of the lung fields, horizontal ribs, increased bronchovascular markings (Kildiyarova, Figure 8.11)
 s4581 **Emphysema** (persistent increase in lung airiness): barrel chest, widened intercostal spaces, reduced excursion; weakened vocal fremitus; **box-like** sound, lowered lower borders; **weakened** breathing; on X-ray increased lung transparency, a flattened and low diaphragm. Local (unilateral) emphysema — foreign body (valve mechanism), congenital lobar emphysema.
 s4582 Syndrome of a cavity in the lung
+s4583 An (emptied) abscess, tuberculous cavern, bronchiectasis, suppurated cyst, bullae in destructive (staphylococcal) pneumonia. Signs: restricted respiratory movement on the affected side; vocal fremitus **increased** (if there is a dense inflammatory ridge around the cavity); **tympanic** sound on percussion (shortened if the cavity is small or deep); **amphoric** breathing; **coarse-bubbling consonant** moist rales; increased bronchophony (metallic). X-ray — **a ring-shaped shadow**, possibly with air and a fluid level inside. When an abscess ruptures into a bronchus — “a mouthful” of purulent, fetid sputum.
 s4584 Syndrome of respiratory disorders in newborns (respiratory distress)
 s4585 Pneumopathies: atelectasis of the newborn, **hyaline membrane disease**, edematous-hemorrhagic syndrome, meconium aspiration, transient tachypnea of the newborn; mainly **in preterm babies** (surfactant deficiency). Signs: restlessness or lethargy, cyanosis, **frothy discharge on the lips**, retraction of the compliant parts of the chest (sternum, intercostal spaces), **“seesaw” breathing** (thoracoabdominal asynchrony), respiratory arrhythmia and **apnea**, **“grunting” expiration**, weakened breathing, scattered fine-bubbling rales and crepitation, tachycardia, muffled heart sounds, muscle hypotonia, seizures. Severity is assessed with the **Silverman** (preterm) and **Downes** (term) scales (see topic 2).
 s4586 Escape of fluid from the capillaries into the interstitium and the alveoli: **cardiac** (left ventricular failure, mitral stenosis) and **noncardiac** (drowning, toxic gases, severe pneumonia, sepsis, rapid and large-volume infusion, nephrotic and nephritic syndromes) causes. Signs: restlessness, fear of death, orthopnea, **cough with frothy, sometimes pink sputum**, rapidly increasing dyspnea and cyanosis, cold sweat, a rapid weak pulse; on percussion a shortened sound in the lower posterior parts; on auscultation **many bilateral fine-bubbling non-consonant** rales, later medium- and coarse-bubbling (“boiling samovar” breathing).
 s4587 7.9. Respiratory failure (RF) syndrome
 s4588 **Main idea:** RF is a condition in which the normal gas composition of the blood is not maintained, or is maintained only **through strain** of the external respiratory apparatus. The cut-offs in children: **PaO~2~ <80 mm Hg**, **PaCO~2~ >40–45 mm Hg**. RF accompanies any respiratory disease and diseases of other organs (CNS, heart, muscles).
 s4589 Types (by pathogenesis):
-s4590 **Ventilatory (hypercapnic)** — lung ventilation is insufficient: PaO2 low, **PaCO~2~ high**; the clinical picture is related to **hypercapnia**: headache, sweating, tachycardia, arterial hypertension, drowsiness, tremor, later cerebral edema and coma.
-s4591 **Parenchymal (diffusion, hypoxemic)** — the ventilation-perfusion ratio or alveolar-capillary diffusion is disturbed: PaO2 low, PaCO2 normal or low; the clinical picture is related to **hypoxemia**: cyanosis, restlessness → CNS depression, tachycardia, arrhythmia, muffled heart sounds, arterial hypotension.
+s4590 **Ventilatory (hypercapnic)** — lung ventilation is insufficient: PaO~2~ low, **PaCO~2~ high**; the clinical picture is related to **hypercapnia**: headache, sweating, tachycardia, arterial hypertension, drowsiness, tremor, later cerebral edema and coma.
+s4591 **Parenchymal (diffusion, hypoxemic)** — the ventilation-perfusion ratio or alveolar-capillary diffusion is disturbed: PaO~2~ low, PaCO~2~ normal or low; the clinical picture is related to **hypoxemia**: cyanosis, restlessness → CNS depression, tachycardia, arrhythmia, muffled heart sounds, arterial hypotension.
 s4592 Causes of acute RF:
 s4593 **Obstructive (mechanical)** — upper airway obstruction (croup, epiglottitis, foreign body, tongue falling back in unconsciousness), bronchospasm (asthma), viscous secretions (cystic fibrosis), exudate in the bronchi (bronchitis, bronchiolitis, aspiration).
 s4594 **Restrictive** — reduced compliance of the lungs and chest wall: pneumonia, pleurisy, pneumothorax, atelectasis, pulmonary edema, meteorism and a high diaphragm, rib injury.
@@ -79,14 +80,14 @@ s4613 Pulse
 s4614 Normal or slightly rapid
 s4615 Rapid
 s4616 Markedly rapid or bradycardia, BP reduced
-s4617 PaO2, mm Hg
-s4618 SpO2
-s4619 PaCO2
+s4617 PaO~2~, mm Hg
+s4618 SpO~2~
+s4619 PaCO~2~
 s4620 Normal or slightly low
 s4621 Normal or slightly raised
 s4622 Raised (>50)
 s4623 pH
-s4624 **Grade IV — hypoxic coma:** unconscious; the respiration-pulse ratio is severely disturbed; the skin is gray with purple-blue patches; pathological types of breathing; dilated pupils, seizures; PaO2 <50 mm, pH <7.2.
+s4624 **Grade IV — hypoxic coma:** unconscious; the respiration-pulse ratio is severely disturbed; the skin is gray with purple-blue patches; pathological types of breathing; dilated pupils, seizures; PaO~2~ <50 mm, pH <7.2.
 s4625 7.10. Clinical section
 s4626 Distinguishing the syndromes in one table
 s4627 Table 7.14. Physical and X-ray signs of the main respiratory syndromes
@@ -121,8 +122,8 @@ s4655 The affected side is restricted
 s4656 Coarse-bubbling consonant
 s4657 Ring-shaped shadow
 s4658 A child in an attack of bronchial asthma
-s4659 Bronchial asthma is chronic allergic inflammation and hyperreactivity of the bronchi with recurrent attacks of reversible obstruction. Signs of an attack: expiratory dyspnea, whistling breathing heard at a distance, orthopnea, dry cough, box-like sound, dry whistling rales. Diagnosis: history (allergy, heredity, recurrent attacks), reversible obstruction on spirometry (FEV1 ↑ ≥12% after salbutamol), daily variability >20% on peak flowmetry, eosinophilia, raised IgE, Curschmann spirals and Charcot–Leyden crystals in the sputum.
-s4660 In an asthma attack, **a “silent chest”** (breath sounds and rales are no longer heard), inability to speak, cyanosis, lethargy and SpO2 <90% are signs of **a life-threatening** attack: urgent oxygen, salbutamol inhalation (via a spacer or nebulizer), systemic glucocorticoids, admission to the intensive care unit.
+s4659 Bronchial asthma is chronic allergic inflammation and hyperreactivity of the bronchi with recurrent attacks of reversible obstruction. Signs of an attack: expiratory dyspnea, whistling breathing heard at a distance, orthopnea, dry cough, box-like sound, dry whistling rales. Diagnosis: history (allergy, heredity, recurrent attacks), reversible obstruction on spirometry (FEV~1~ ↑ ≥12% after salbutamol), daily variability >20% on peak flowmetry, eosinophilia, raised IgE, Curschmann spirals and Charcot–Leyden crystals in the sputum.
+s4660 In an asthma attack, **a “silent chest”** (breath sounds and rales are no longer heard), inability to speak, cyanosis, lethargy and SpO~2~ <90% are signs of **a life-threatening** attack: urgent oxygen, salbutamol inhalation (via a spacer or nebulizer), systemic glucocorticoids, admission to the intensive care unit.
 s4661 Skill 1. Performing and assessing peak flowmetry
 s4662 Set the peak flow meter pointer to zero; show the child the technique.
 s4663 The child stands and holds the peak flow meter horizontally (the fingers should not touch the scale).
@@ -132,9 +133,9 @@ s4666 Measure in the morning and evening; calculate the daily variability: (even
 s4667 Compare the result with the norm for height and the personal best (the “traffic light” zones).
 s4668 Skill 2. Assessing a spirogram
 s4669 Determine the child's data (age, sex, height) and find the predicted values.
-s4670 Compare the actual values of VC, FEV1, Tiffeneau index and MVV with the predicted values (in %).
-s4671 Determine the type of ventilatory disorder: restrictive (VC ↓, Tiffeneau normal), obstructive (FEV1, Tiffeneau ↓), mixed.
-s4672 If there is a bronchodilator test — calculate the increase in FEV1 (≥12% — reversible obstruction).
+s4670 Compare the actual values of VC, FEV~1~, Tiffeneau index and MVV with the predicted values (in %).
+s4671 Determine the type of ventilatory disorder: restrictive (VC ↓, Tiffeneau normal), obstructive (FEV~1~, Tiffeneau ↓), mixed.
+s4672 If there is a bronchodilator test — calculate the increase in FEV~1~ (≥12% — reversible obstruction).
 s4673 Write the conclusion.
 s4674 Skill 3. “Reading” a chest X-ray
 s4675 Check the patient's details, the date and the projection.
@@ -148,7 +149,7 @@ s4682 Conclusion (e.g., “right lower lobe infiltration”, “left-sided exuda
 s4683 Skill 4. Performing pulse oximetry
 s4684 Place the pulse oximeter sensor on the child's finger (in a newborn — on the hand or foot).
 s4685 The child should be calm and the hand warm (a cold hand or movement gives an erroneous result).
-s4686 Once the pulse wave has stabilized (15–30 s), record the SpO2 and pulse rate.
+s4686 Once the pulse wave has stabilized (15–30 s), record the SpO~2~ and pulse rate.
 s4687 Assessment: ≥95% — normal; 92–94% — borderline; <92% — hypoxemia, oxygen therapy.
 s4688 Skill 5. Identifying the syndrome on the basis of physical examination findings
 s4689 Inspection data: type of dyspnea, symmetry of the chest, its participation in breathing.
@@ -179,7 +180,7 @@ s4713 From 15 years
 s4714 The normal value of the Tiffeneau index:
 s4715 Typical of an obstructive ventilatory disorder:
 s4716 VC sharply reduced, Tiffeneau normal
-s4717 FEV1 and Tiffeneau index reduced
+s4717 FEV~1~ and Tiffeneau index reduced
 s4718 All parameters normal
 s4719 MVV increased
 s4720 MV reduced
@@ -221,5 +222,3 @@ s4755 Onset at night
 s4756 On percussion in the bronchial obstruction syndrome:
 s4757 Dull sound
 s4758 Box-like sound
-s4759 Tympanic sound only on one side
-s4583 An (emptied) abscess, tuberculous cavern, bronchiectasis, suppurated cyst, bullae in destructive (staphylococcal) pneumonia. Signs: restricted respiratory movement on the affected side; vocal fremitus **increased** (if there is a dense inflammatory ridge around the cavity); **tympanic** sound on percussion (shortened if the cavity is small or deep); **amphoric** breathing; **coarse-bubbling consonant** moist rales; increased bronchophony (metallic). X-ray — **a ring-shaped shadow**, possibly with air and a fluid level inside. When an abscess ruptures into a bronchus — “a mouthful” of purulent, fetid sputum.

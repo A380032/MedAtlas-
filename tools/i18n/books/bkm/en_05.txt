@@ -1,3 +1,11 @@
+s0885 Primary active
+s0886 Na^+^,K^+^-ATPase: 3 Na^+^ out, 2 K^+^ in
+s0887 Secondary active
+s0888 At the expense of the Na^+^ gradient: SGLT1, SGLT2
+s0889 Gs / Gi / Gq
+s0890 Adenylate cyclase ↑ / ↓ / phospholipase C ↑
+s0891 Second messengers
+s0892 cAMP, cGMP, IP~3~, DAG, Ca^2+^, NO
 s0893 Tyrosine kinase receptors
 s0894 Insulin, EGF
 s0895 Intracellular receptors
@@ -30,7 +38,7 @@ s0921 ΔG°’, kJ/mol
 s0922 Phosphoenolpyruvate
 s0923 1,3-bisphosphoglycerate
 s0924 Creatine phosphate
-s0925 ATP → ADP + Pi
+s0925 ATP → ADP + P~i~
 s0926 Glucose-6-phosphate
 s0927 Glycerol-3-phosphate
 s0928 The intermediate value of ATP allows it to accept energy from compounds with a higher potential and pass it on to those with a lower potential. In the human body an amount of ATP close to body weight (≈ 40–60 kg) is formed and broken down per day, yet at any moment the body contains only ≈ 50–100 g of ATP — the **ATP–ADP cycle** turns over very rapidly.
@@ -38,8 +46,8 @@ s0929 Routes of ATP formation:
 s0930 **Oxidative phosphorylation** — in the mitochondria at the expense of the respiratory chain energy (≈ 90%).
 s0931 **Substrate-level phosphorylation** — direct transfer of a phosphate group from a high-energy substrate to ADP: in glycolysis (1,3-bisphosphoglycerate → 3-phosphoglycerate, phosphoenolpyruvate → pyruvate) and in the Krebs cycle (succinyl-CoA → succinate, GTP is formed).
 s0932 2. Biological oxidation. The respiratory chain
-s0933 **Biological oxidation** is the sum of the oxidation-reduction reactions that take place in living cells. Oxidation is the removal of electrons (and often of hydrogen atoms), reduction is their addition. Hydrogen atoms removed from substrates (2H+ + 2e−) pass to **NAD^+^** or **FAD**, are then delivered to oxygen through the **respiratory (electron transport) chain**, and water is formed. This process is called **tissue respiration**.
-s0934 The respiratory chain is located in the **inner mitochondrial membrane**. Electrons move along the carriers from the side with a low (negative) **redox potential** to the side with a high (positive) one: NAD+/NADH (−0.32 V) → ... → ½O2/H2O (+0.82 V). The total potential difference is ≈ 1.14 V and the free energy released is ≈ 220 kJ/mol (from NADH).
+s0933 **Biological oxidation** is the sum of the oxidation-reduction reactions that take place in living cells. Oxidation is the removal of electrons (and often of hydrogen atoms), reduction is their addition. Hydrogen atoms removed from substrates (2H^+^ + 2e−) pass to **NAD^+^** or **FAD**, are then delivered to oxygen through the **respiratory (electron transport) chain**, and water is formed. This process is called **tissue respiration**.
+s0934 The respiratory chain is located in the **inner mitochondrial membrane**. Electrons move along the carriers from the side with a low (negative) **redox potential** to the side with a high (positive) one: NAD^+^/NADH (−0.32 V) → ... → ½O~2~/H~2~O (+0.82 V). The total potential difference is ≈ 1.14 V and the free energy released is ≈ 220 kJ/mol (from NADH).
 s0935 Table 4.2. Complexes of the respiratory chain
 s0936 Complex
 s0937 Name
@@ -49,7 +57,7 @@ s0940 Protons
 s0941 NADH dehydrogenase (NADH:CoQ oxidoreductase)
 s0942 FMN, iron-sulfur centers
 s0943 Passes electrons from NADH to CoQ
-s0944 4 H+
+s0944 4 H^+^
 s0945 Succinate dehydrogenase
 s0946 FAD, Fe-S centers
 s0947 Passes electrons from succinate to CoQ (a Krebs cycle enzyme)
@@ -65,26 +73,26 @@ s0956 A mobile carrier on the outer surface of the membrane
 s0957 IV
 s0958 Cytochrome oxidase
 s0959 Cytochromes a, a3, CuA, CuB
-s0960 Passes electrons to O2, water is formed
-s0961 2 H+
+s0960 Passes electrons to O~2~, water is formed
+s0961 2 H^+^
 s0962 V
 s0963 ATP synthase (FoF1)
-s0964 Fo — proton channel, F1 — catalytic part
-s0965 ATP synthesis at the expense of the energy of the H+ flow
-s0966 ≈ 3–4 H+ / ATP
-s0967 **Cytochromes** are heme-containing proteins; their iron passes between the Fe3+ ⇄ Fe2+ states and carries one electron at a time.
+s0964 F~o~ — proton channel, F~1~ — catalytic part
+s0965 ATP synthesis at the expense of the energy of the H^+^ flow
+s0966 ≈ 3–4 H^+^ / ATP
+s0967 **Cytochromes** are heme-containing proteins; their iron passes between the Fe^3+^ ⇄ Fe^2+^ states and carries one electron at a time.
 s0968 Figure 4.1
 s0969 The respiratory chain in the inner mitochondrial membrane, the proton gradient and ATP synthase; sites of action of inhibitors (drawn after Severin E.S.)
 s0970 3. Oxidative phosphorylation
 s0971 **Oxidative phosphorylation** is ATP synthesis coupled to electron transport in the respiratory chain. Its mechanism is explained by **P. Mitchell’s chemiosmotic theory** (1961, Nobel Prize 1978):
 s0972 Complexes I, III and IV pump protons from the matrix into the **intermembrane space** at the expense of the energy of electron transport.
 s0973 The inner membrane is impermeable to protons — an **electrochemical proton gradient** (ΔμH+) is formed: a chemical part (ΔpH ≈ 0.5–1) and an electrical part (Δψ ≈ 150–180 mV).
-s0974 Protons return to the matrix only through the **F~o~ channel of ATP synthase**; this flow drives the rotation of F1 (rotational catalysis, P. Boyer) and the synthesis of ATP from ADP + Pi. The **P/O ratio** is the number of ATP molecules formed per 1 atom of oxygen (2 electrons). According to current data, oxidation of NADH yields **≈ 2.5 ATP** and oxidation of FADH2 (succinate) **≈ 1.5 ATP** (older textbooks give whole numbers — 3 and 2).
-s0975 **Respiratory control** is the dependence of the rate of respiration (O2 consumption) on the ADP concentration. When ATP is used and ADP increases, ATP synthase speeds up, the proton gradient decreases and the respiratory chain speeds up. When ADP is low, the gradient is high and the electron flow slows down. Thanks to this, ATP formation is matched to the cell’s needs.
-s0976 ATP is exported to the cytosol by the **ADP/ATP translocase** (antiport); phosphate enters by symport with H+.
+s0974 Protons return to the matrix only through the **F~o~ channel of ATP synthase**; this flow drives the rotation of F~1~ (rotational catalysis, P. Boyer) and the synthesis of ATP from ADP + P~i~. The **P/O ratio** is the number of ATP molecules formed per 1 atom of oxygen (2 electrons). According to current data, oxidation of NADH yields **≈ 2.5 ATP** and oxidation of FADH~2~ (succinate) **≈ 1.5 ATP** (older textbooks give whole numbers — 3 and 2).
+s0975 **Respiratory control** is the dependence of the rate of respiration (O~2~ consumption) on the ADP concentration. When ATP is used and ADP increases, ATP synthase speeds up, the proton gradient decreases and the respiratory chain speeds up. When ADP is low, the gradient is high and the electron flow slows down. Thanks to this, ATP formation is matched to the cell’s needs.
+s0976 ATP is exported to the cytosol by the **ADP/ATP translocase** (antiport); phosphate enters by symport with H^+^.
 s0977 Transfer of cytosolic NADH into the mitochondria
 s0978 The inner membrane is impermeable to NADH; the hydrogen of NADH formed in the cytosol in glycolysis enters through **shuttle mechanisms**:
-s0979 **The malate-aspartate shuttle** (liver, heart, kidney) — hydrogen passes to NAD+ in the mitochondria (≈ 2.5 ATP).
+s0979 **The malate-aspartate shuttle** (liver, heart, kidney) — hydrogen passes to NAD^+^ in the mitochondria (≈ 2.5 ATP).
 s0980 **The glycerol phosphate shuttle** (skeletal muscle, brain) — hydrogen passes to FAD (≈ 1.5 ATP).
 s0981 4. Respiratory chain inhibitors and uncouplers
 s0982 Table 4.3. Substances that affect oxidative phosphorylation
@@ -100,9 +108,9 @@ s0991 Succinate is not oxidized
 s0992 Antimycin A
 s0993 Complex III
 s0994 Electrons do not pass to cytochrome c
-s0995 Cyanides, CO, H2S, azides
+s0995 Cyanides, CO, H~2~S, azides
 s0996 Complex IV (cytochrome oxidase)
-s0997 Electrons do not pass to O2 — tissue hypoxia
+s0997 Electrons do not pass to O~2~ — tissue hypoxia
 s0998 Oligomycin
 s0999 ATP synthase (Fo)
 s1000 ATP synthesis and (because of respiratory control) respiration stop
@@ -110,13 +118,13 @@ s1001 2,4-dinitrophenol, high-dose thyroxine, thermogenin (UCP-1), salicylates (
 s1002 Uncouplers — carry protons bypassing ATP synthase
 s1003 Respiration speeds up, ATP synthesis decreases, energy is dissipated as heat
 s1004 **Uncouplers** are substances that uncouple oxidation from phosphorylation. In **brown adipose tissue** the protein thermogenin (UCP-1) is a physiological uncoupler: it returns protons to the matrix and the energy is released as heat — **non-shivering thermogenesis** in newborns and hibernating animals.
-s1005 **Cyanide poisoning**: cytochrome oxidase is blocked, the tissues cannot use oxygen (venous blood is as red as arterial blood, O2 is not used), anaerobic glycolysis increases and lactic acidosis develops. Treatment: sodium nitrite (converts hemoglobin to methemoglobin, which binds cyanide — cyanmethemoglobin), sodium thiosulfate (converts cyanide into the less toxic thiocyanate with the participation of rhodanese), hydroxocobalamin. **In CO poisoning** hemoglobin is converted to carboxyhemoglobin and cytochrome oxidase is also inhibited; treatment — oxygen (hyperbaric oxygenation).
+s1005 **Cyanide poisoning**: cytochrome oxidase is blocked, the tissues cannot use oxygen (venous blood is as red as arterial blood, O~2~ is not used), anaerobic glycolysis increases and lactic acidosis develops. Treatment: sodium nitrite (converts hemoglobin to methemoglobin, which binds cyanide — cyanmethemoglobin), sodium thiosulfate (converts cyanide into the less toxic thiocyanate with the participation of rhodanese), hydroxocobalamin. **In CO poisoning** hemoglobin is converted to carboxyhemoglobin and cytochrome oxidase is also inhibited; treatment — oxygen (hyperbaric oxygenation).
 s1006 5. Extramitochondrial oxidation. Reactive oxygen species
 s1007 ≈ 90% of oxygen is reduced to water in the respiratory chain; the rest is used by other routes:
-s1008 **Oxidases** — pass hydrogen directly to O2, forming H2O2 (amino acid oxidases, xanthine oxidase).
-s1009 **Oxygenases** — attach oxygen atoms to the substrate: **monooxygenases** (hydroxylases, cytochrome P450 — in the endoplasmic reticulum, metabolism of xenobiotics and steroids) and **dioxygenases**. **Reactive oxygen species (ROS)** are incompletely reduced active forms of oxygen: the superoxide anion radical (O~2~^−^), hydrogen peroxide (H2O2), the hydroxyl radical (•OH). They are formed by the “leakage” of electrons from the respiratory chain, in phagocytes (NADPH oxidase — the “respiratory burst”) and under ionizing radiation. Normally ROS take part in killing bacteria and in signaling, but in excess they damage lipids, proteins and DNA (oxidative stress).
+s1008 **Oxidases** — pass hydrogen directly to O~2~, forming H~2~O~2~ (amino acid oxidases, xanthine oxidase).
+s1009 **Oxygenases** — attach oxygen atoms to the substrate: **monooxygenases** (hydroxylases, cytochrome P450 — in the endoplasmic reticulum, metabolism of xenobiotics and steroids) and **dioxygenases**. **Reactive oxygen species (ROS)** are incompletely reduced active forms of oxygen: the superoxide anion radical (O~2~^−^), hydrogen peroxide (H~2~O~2~), the hydroxyl radical (^•^OH). They are formed by the “leakage” of electrons from the respiratory chain, in phagocytes (NADPH oxidase — the “respiratory burst”) and under ionizing radiation. Normally ROS take part in killing bacteria and in signaling, but in excess they damage lipids, proteins and DNA (oxidative stress).
 s1010 Antioxidant defense:
-s1011 enzymes: **superoxide dismutase** (2O~2~^−^ + 2H+ → H2O2 + O2), **catalase** (2H2O2 → 2H2O + O2), **glutathione peroxidase** (contains selenium; converts H2O2 to water at the expense of reduced glutathione), glutathione reductase (uses NADPH);
+s1011 enzymes: **superoxide dismutase** (2O~2~^−^ + 2H^+^ → H~2~O~2~ + O~2~), **catalase** (2H~2~O~2~ → 2H~2~O + O~2~), **glutathione peroxidase** (contains selenium; converts H~2~O~2~ to water at the expense of reduced glutathione), glutathione reductase (uses NADPH);
 s1012 nonenzymatic antioxidants: vitamins E and C, β-carotene, glutathione, uric acid, bilirubin.
 s1013 6. Mitochondrial diseases
 s1014 The mitochondria have their own DNA (mtDNA); it encodes 13 proteins of the respiratory chain and is inherited only **through the mother**. Mutations of mtDNA or of nuclear genes encoding respiratory chain proteins cause **mitochondrial diseases**. They mainly affect tissues with high energy needs — the brain, skeletal and heart muscle, the optic nerve: Leber hereditary optic neuropathy, MELAS syndrome (myopathy, encephalopathy, lactic acidosis, stroke-like episodes), Kearns–Sayre syndrome. Their common biochemical sign is increased blood lactate and pyruvate.
@@ -130,21 +138,21 @@ s1021 Place the tubes in a 37 °C water bath and observe the time of decolorizat
 s1022 Experiment 2: determination of catalase activity
 s1023 Pour 1 ml of 3% hydrogen peroxide solution into a test tube.
 s1024 Add 1 drop of blood (or liver homogenate).
-s1025 Repeat in another tube with boiled blood. **Result and analysis:** when fresh blood is added, vigorous foaming (O2 bubbles) occurs — catalase breaks down H2O2 into water and oxygen. With boiled blood there is no reaction — the enzyme is denatured. Catalase activity is determined quantitatively by the Bach–Zubkova method: the undecomposed H2O2 is titrated with potassium permanganate.
+s1025 Repeat in another tube with boiled blood. **Result and analysis:** when fresh blood is added, vigorous foaming (O~2~ bubbles) occurs — catalase breaks down H~2~O~2~ into water and oxygen. With boiled blood there is no reaction — the enzyme is denatured. Catalase activity is determined quantitatively by the Bach–Zubkova method: the undecomposed H~2~O~2~ is titrated with potassium permanganate.
 s1026 Experiment 3: determination of peroxidase activity (benzidine or guaiac test)
 s1027 Pour 1 ml of diluted blood (or potato juice) and 5 drops of benzidine (or guaiac resin) solution into a test tube.
-s1028 Add 3–5 drops of 3% H2O2.
-s1029 **Result and analysis:** a blue (or blue-green) color appears — peroxidase (in blood, the pseudoperoxidase activity of hemoglobin) oxidizes the substrate at the expense of the oxygen of H2O2. This reaction underlies the detection of occult blood in stool and urine.
+s1028 Add 3–5 drops of 3% H~2~O~2~.
+s1029 **Result and analysis:** a blue (or blue-green) color appears — peroxidase (in blood, the pseudoperoxidase activity of hemoglobin) oxidizes the substrate at the expense of the oxygen of H~2~O~2~. This reaction underlies the detection of occult blood in stool and urine.
 s1030 Skill: calculating the ATP formed in the oxidation of a substrate
-s1031 Determine the number of NADH and FADH2 formed in the oxidation of the substrate.
-s1032 Multiply the number of NADH by 2.5 and of FADH2 by 1.5.
+s1031 Determine the number of NADH and FADH~2~ formed in the oxidation of the substrate.
+s1032 Multiply the number of NADH by 2.5 and of FADH~2~ by 1.5.
 s1033 Add the ATP (GTP) formed at the substrate level.
 s1034 Subtract the ATP used (for example, for activation).
 s1035 Take into account through which shuttle the cytosolic NADH passes.
 s1036 Skill: analyzing respiratory chain disorders in poisoning
 s1037 Determine which complex or ATP synthase the poison acts on.
-s1038 Distinguish whether it is an inhibitor (electron flow stops, O2 consumption decreases) or an uncoupler (O2 consumption increases, ATP decreases, heat increases).
-s1039 State the expected biochemical changes: rise in lactate, increase of O2 in venous blood, hyperthermia.
+s1038 Distinguish whether it is an inhibitor (electron flow stops, O~2~ consumption decreases) or an uncoupler (O~2~ consumption increases, ATP decreases, heat increases).
+s1039 State the expected biochemical changes: rise in lactate, increase of O~2~ in venous blood, hyperthermia.
 s1040 Explain the antidote or the principle of treatment.
 s1041 How are exergonic and endergonic reactions coupled?
 s1042 Give examples of high-energy compounds.
@@ -154,7 +162,7 @@ s1045 List the complexes and mobile carriers of the respiratory chain.
 s1046 In what order do electrons move in the respiratory chain, and why?
 s1047 What is the essence of the chemiosmotic theory?
 s1048 How does ATP synthase work?
-s1049 What is the P/O ratio? What is it for NADH and FADH2?
+s1049 What is the P/O ratio? What is it for NADH and FADH~2~?
 s1050 What is respiratory control?
 s1051 How does cytosolic NADH enter the mitochondria?
 s1052 Name the respiratory chain inhibitors and their sites of action.
@@ -182,13 +190,3 @@ s1073 Koshland’s induced fit theory
 s1074 The Watson–Crick model
 s1075 The Singer–Nicolson model
 s1076 The P/O ratio for the oxidation of NADH (current data):
-s1077 The respiratory chain complex inhibited by rotenone:
-s1078 The physiological uncoupling protein of brown adipose tissue:
-s1079 Myoglobin
-s1080 Thermogenin (UCP-1)
-s1081 Ubiquinone
-s1082 Calmodulin
-s1083 An example of substrate-level phosphorylation:
-s1084 Oxidation of NADH in the respiratory chain
-s1085 Oxidation of succinate to fumarate
-s1086 Conversion of glucose to glucose-6-phosphate

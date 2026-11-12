@@ -1,3 +1,4 @@
+s3904 Lipoproteins and their role
 s3905 Table 12.6. Blood lipoproteins
 s3906 Lipoprotein
 s3907 Main function
@@ -30,8 +31,8 @@ s3933 Figure 12.2
 s3934 Stages of atherosclerotic plaque formation (based on Kumar V. et al., 2015)
 s3935 6. Obesity
 s3936 **Obesity** — excess accumulation of adipose tissue in the body that poses a risk to health. The main cause is a long-term excess of energy intake over expenditure.
-s3937 Table 12.8. Assessment by body mass index (BMI = weight (kg) / height (m)2) (WHO)
-s3938 BMI, kg/m2
+s3937 Table 12.8. Assessment by body mass index (BMI = weight (kg) / height (m)^2^) (WHO)
+s3938 BMI, kg/m^2^
 s3939 Assessment
 s3940 below 18.5
 s3941 Underweight
@@ -88,7 +89,7 @@ s3991 Assess the speed of onset (minutes or days).
 s3992 Check skin moisture, type of breathing and acetone odor on the breath.
 s3993 Measure blood glucose immediately with a glucometer.
 s3994 Determine ketone bodies (blood or urine), blood gases and pH, and lactate.
-s3995 Calculate plasma osmolarity: 2 × (Na+ + K+) + glucose + urea.
+s3995 Calculate plasma osmolarity: 2 × (Na^+^ + K^+^) + glucose + urea.
 s3996 Determine the type of coma on the basis of the data obtained.
 s3997 Skill: assessing the degree of obesity and metabolic risk
 s3998 Measure height (m) and weight (kg) and calculate BMI.
@@ -188,15 +189,15 @@ s4091 Atherosclerosis only
 s4092 Obesity only
 s4093 Hypoglycemia only
 s4094 Neuropathy, angiopathy and infection together
-s4095 A 72-year-old woman has type 2 diabetes mellitus and takes oral agents. She has had diarrhea for a week and drank little fluid. She was brought to hospital with clouded consciousness. The skin and mucous membranes are very dry, breathing is rapid and shallow, there is no acetone odor. Blood: glucose 48 mmol/l, Na+ 152 mmol/l, K+ 4.8 mmol/l, urea 18 mmol/l, pH 7.36; no ketone bodies in the urine.
+s4095 A 72-year-old woman has type 2 diabetes mellitus and takes oral agents. She has had diarrhea for a week and drank little fluid. She was brought to hospital with clouded consciousness. The skin and mucous membranes are very dry, breathing is rapid and shallow, there is no acetone odor. Blood: glucose 48 mmol/l, Na^+^ 152 mmol/l, K^+^ 4.8 mmol/l, urea 18 mmol/l, pH 7.36; no ketone bodies in the urine.
 s4096 What coma has developed? Calculate the plasma osmolarity. Why is there no ketoacidosis?
 s4097 Hyperosmolar (hyperglycemic, non-ketoacidotic) coma. Plasma osmolarity = 2 × (152 + 4.8) + 48 + 18 ≈ 380 mOsm/kg (normal 280–295) — markedly increased. Diarrhea and low fluid intake started the dehydration, hyperglycemia aggravated it through osmotic diuresis, and reduced renal perfusion cut glucose excretion, raising glycemia further. Hyperosmolarity led to dehydration of neurons and impaired consciousness. In type 2 diabetes the residual insulin secretion, although insufficient to ensure glucose uptake by tissues, is enough to suppress lipolysis in adipose tissue and ketogenesis in the liver — which is why there are no ketone bodies and no acidosis.
 s4098 A 48-year-old man, height 175 cm, weight 100 kg, waist circumference 112 cm. Arterial pressure 145/90 mm Hg. Blood: fasting glucose 6.3 mmol/l, triglycerides 2.6 mmol/l, total cholesterol 6.2 mmol/l, HDL 0.9 mmol/l.
 s4099 What syndrome does the patient have? Calculate the atherogenic index. Explain the pathogenesis.
-s4100 Metabolic syndrome: abdominal obesity (waist circumference 112 cm; BMI ≈ 32.7 kg/m2 — class I obesity) and four additional criteria — raised triglycerides, low HDL, arterial hypertension and raised fasting glycemia. Atherogenic index = (6.2 − 0.9) / 0.9 ≈ 5.9 — the risk of atherosclerosis is high. Pathogenesis: visceral adipose tissue releases large amounts of free fatty acids and inflammatory cytokines, which cause insulin resistance; compensatory hyperinsulinemia increases renal sodium retention and sympathetic activity, causing arterial hypertension; in the liver, synthesis of VLDL and triglycerides increases and HDL decreases. Because the beta-cell reserve is beginning to be exhausted, glycemia is rising — the risk of type 2 diabetes is high.
-s4101 A 30-year-old patient has had type 1 diabetes mellitus for 12 years, with poor glycemic control (HbA1c 10.5 %). Recently his vision has deteriorated, he has numbness in his feet and reduced sensation in a “stocking” distribution, and persistent protein is found in the urine.
+s4100 Metabolic syndrome: abdominal obesity (waist circumference 112 cm; BMI ≈ 32.7 kg/m^2^ — class I obesity) and four additional criteria — raised triglycerides, low HDL, arterial hypertension and raised fasting glycemia. Atherogenic index = (6.2 − 0.9) / 0.9 ≈ 5.9 — the risk of atherosclerosis is high. Pathogenesis: visceral adipose tissue releases large amounts of free fatty acids and inflammatory cytokines, which cause insulin resistance; compensatory hyperinsulinemia increases renal sodium retention and sympathetic activity, causing arterial hypertension; in the liver, synthesis of VLDL and triglycerides increases and HDL decreases. Because the beta-cell reserve is beginning to be exhausted, glycemia is rising — the risk of type 2 diabetes is high.
+s4101 A 30-year-old patient has had type 1 diabetes mellitus for 12 years, with poor glycemic control (HbA~1c~ 10.5 %). Recently his vision has deteriorated, he has numbness in his feet and reduced sensation in a “stocking” distribution, and persistent protein is found in the urine.
 s4102 What complications have developed in the patient? What is their common pathogenetic mechanism?
-s4103 Late microangiopathic and neuropathic complications of diabetes: diabetic retinopathy (deteriorating vision), diabetic nephropathy (proteinuria) and distal symmetric polyneuropathy (sensory loss in a “stocking” distribution). The common mechanism is many years of poorly controlled hyperglycemia (HbA1c 10.5 %): non-enzymatic glycation of proteins and accumulation of advanced glycation end products (thickening of basement membranes), activation of the polyol pathway and sorbitol accumulation in cells that take up glucose independently of insulin, activation of protein kinase C, oxidative stress and endothelial dysfunction. Good glycemic control slows the development of these complications.
+s4103 Late microangiopathic and neuropathic complications of diabetes: diabetic retinopathy (deteriorating vision), diabetic nephropathy (proteinuria) and distal symmetric polyneuropathy (sensory loss in a “stocking” distribution). The common mechanism is many years of poorly controlled hyperglycemia (HbA~1c~ 10.5 %): non-enzymatic glycation of proteins and accumulation of advanced glycation end products (thickening of basement membranes), activation of the polyol pathway and sorbitol accumulation in cells that take up glucose independently of insulin, activation of protein kinase C, oxidative stress and endothelial dysfunction. Good glycemic control slows the development of these complications.
 s4104 Chronic hyperglycemia due to impaired insulin secretion and/or action
 s4105 Autoimmune destruction of beta cells; absolute insulin deficiency
 s4106 Insulin resistance + beta-cell dysfunction
@@ -210,7 +211,7 @@ s4113 Lactic acidotic coma
 s4114 Lactic acid accumulation; hypoxia, metformin
 s4115 Late complications
 s4116 Retinopathy, nephropathy, neuropathy, macroangiopathy, diabetic foot
-s4117 HbA1c
+s4117 HbA~1c~
 s4118 Average glycemia over the last 2–3 months
 s4119 Atherosclerosis
 s4120 Lipid accumulation and fibrous plaques in the arterial intima — chronic inflammation
@@ -221,7 +222,7 @@ s4124 Antiatherogenic (“good”) cholesterol
 s4125 Unstable plaque
 s4126 Large lipid core, thin cap; if it ruptures — thrombosis
 s4127 BMI
-s4128 Weight (kg) / height (m)2; above 30 — obesity
+s4128 Weight (kg) / height (m)^2^; above 30 — obesity
 s4129 Adipocyte hormone, reduces appetite
 s4130 Metabolic syndrome
 s4131 Abdominal obesity + dyslipidemia, hypertension, hyperglycemia
@@ -241,4 +242,4 @@ s4144 distinguish necrosis from apoptosis by morphological and biochemical signs
 s4145 identify the injured organ from blood markers of cell injury (enzymes).
 s4146 **Oxidative stress** — a shift in the balance between free radical formation and antioxidant defense in favor of the radicals. It plays an important role in reperfusion injury, atherosclerosis, the complications of diabetes mellitus, aging, radiation injury and many inflammatory diseases.
 s4147 The “**4P**” effects of calcium overload: **P**hospholipases (break down the membrane), **P**rotein- and DNA-cleaving enzymes — proteases (disrupt the cytoskeleton) and endonucleases (cleave DNA), **P**hosphorylation uncoupling (mitochondria are damaged, ATP falls), **P**ulling of fibrils (contracture of myofibrils).
-s4148 Both **decreased** and **increased** apoptosis cause disease. Insufficient apoptosis — tumors (p53 mutation, Bcl-2 excess), autoimmune diseases (autoreactive lymphocytes are not eliminated). Excessive apoptosis — neurodegenerative diseases (Alzheimer, Parkinson), death of CD4+ lymphocytes in AIDS, part of ischemic injury.
+s4148 Both **decreased** and **increased** apoptosis cause disease. Insufficient apoptosis — tumors (p53 mutation, Bcl-2 excess), autoimmune diseases (autoreactive lymphocytes are not eliminated). Excessive apoptosis — neurodegenerative diseases (Alzheimer, Parkinson), death of CD4^+^ lymphocytes in AIDS, part of ischemic injury.

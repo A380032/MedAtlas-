@@ -38,7 +38,7 @@ s4571	Ekspirator hansirash, uzoqdan eshitiladigan hushtaksimon nafas; yordamchi 
 s4572	Ovoz titrashi susaygan, ko‘krak qafasi rigid
 s4573	Qutisimon tusli tovush; o‘pka pastki chegarasi pastga siljigan, ekskursiyasi kamaygan; yurak nisbiy bo‘g‘iqlik chegaralari kichraygan; jigar va taloq pastga tushgan (kattalashgan deb xato qilinmasin)
 s4574	Nafas dag‘al yoki susaygan, nafas chiqarish uzaygan; nafas chiqarishda quruq hushtaksimon xirillashlar; bronxiolitda + ko‘p mayda pufakchali nam xirillashlar va krepitatsiya
-s4575	FEV1, Tiffno indeksi, cho‘qqi tezlik, mayda bronxlardagi tezliklar kamaygan — obstruktiv tur; PEF kunlik o‘zgaruvchanligi >20%
+s4575	FEV~1~, Tiffno indeksi, cho‘qqi tezlik, mayda bronxlardagi tezliklar kamaygan — obstruktiv tur; PEF kunlik o‘zgaruvchanligi >20%
 s4576	O‘pka shishgan (tiniqligi oshgan), qovurg‘alar gorizontal, diafragma pastda va yassilashgan, bronx-tomir surati kuchaygan
 s4577	Qon (astmada)
 s4578	Eozinofiliya, IgE oshgan
@@ -53,8 +53,8 @@ s4586	Kapillyarlardan suyuqlikning interstitsiyga va alveolalarga chiqishi: **ka
 s4587	7.9. Nafas yetishmovchiligi (NYe) sindromi
 s4588	**Asosiy g‘oya:** NYe — qonning me’yoriy gaz tarkibi saqlanmaydigan yoki faqat tashqi nafas apparatining **zo‘riqishi hisobiga** saqlanadigan holat. Bolalarda chegara: **PaO~2~ <80 mm sim. ust.**, **PaCO~2~ >40–45 mm sim. ust.** NYe istalgan nafas kasalligiga va boshqa a’zolar (MNS, yurak, mushaklar) kasalliklariga hamroh bo‘ladi.
 s4589	Turlari (patogenezi bo‘yicha):
-s4590	**Ventilyatsion (giperkapnik)** — o‘pka ventilyatsiyasi yetishmaydi: PaO2 past, **PaCO~2~ yuqori**; klinikasi **giperkapniya** bilan bog‘liq: bosh og‘rig‘i, terlash, taxikardiya, arterial gipertenziya, uyquchanlik, tremor, keyinchalik miya shishi va koma.
-s4591	**Parenximatoz (diffuzion, gipoksemik)** — ventilyatsiya-perfuziya nisbati yoki alveola-kapillyar diffuziya buziladi: PaO2 past, PaCO2 me’yorda yoki past; klinikasi **gipoksemiya** bilan bog‘liq: sianoz, bezovtalik → MNS ezilishi, taxikardiya, aritmiya, yurak tonlari bo‘g‘iqligi, arterial gipotenziya.
+s4590	**Ventilyatsion (giperkapnik)** — o‘pka ventilyatsiyasi yetishmaydi: PaO~2~ past, **PaCO~2~ yuqori**; klinikasi **giperkapniya** bilan bog‘liq: bosh og‘rig‘i, terlash, taxikardiya, arterial gipertenziya, uyquchanlik, tremor, keyinchalik miya shishi va koma.
+s4591	**Parenximatoz (diffuzion, gipoksemik)** — ventilyatsiya-perfuziya nisbati yoki alveola-kapillyar diffuziya buziladi: PaO~2~ past, PaCO~2~ me’yorda yoki past; klinikasi **gipoksemiya** bilan bog‘liq: sianoz, bezovtalik → MNS ezilishi, taxikardiya, aritmiya, yurak tonlari bo‘g‘iqligi, arterial gipotenziya.
 s4592	O‘tkir NYe sabablari:
 s4593	**Obstruktiv (mexanik)** — yuqori yo‘llar to‘silishi (krup, epiglottit, yot jism, hushsizlikda til orqaga ketishi), bronxospazm (astma), yopishqoq sekret (mukovissidoz), bronxlarga ekssudat (bronxit, bronxiolit, aspiratsiya).
 s4594	**Restriktiv** — o‘pka va ko‘krak qafasi cho‘ziluvchanligi pasayishi: zotiljam, plevrit, pnevmotoraks, atelektaz, o‘pka shishi, meteorizm va diafragmaning yuqori turishi, qovurg‘a jarohati.
@@ -80,14 +80,14 @@ s4613	Puls
 s4614	Me’yorda yoki biroz tez
 s4615	Tezlashgan
 s4616	Keskin tezlashgan yoki bradikardiya, AQB pasaygan
-s4617	PaO2, mm sim. ust.
-s4618	SpO2
-s4619	PaCO2
+s4617	PaO~2~, mm sim. ust.
+s4618	SpO~2~
+s4619	PaCO~2~
 s4620	Me’yorda yoki biroz past
 s4621	Me’yorda yoki biroz oshgan
 s4622	Oshgan (>50)
 s4623	pH
-s4624	**IV daraja — gipoksik koma:** hush yo‘q; nafas-puls nisbati keskin buzilgan; teri kulrang, binafsha-ko‘k dog‘lar bilan; patologik nafas turlari; qorachiqlar kengaygan, talvasalar; PaO2 <50 mm, pH <7,2.
+s4624	**IV daraja — gipoksik koma:** hush yo‘q; nafas-puls nisbati keskin buzilgan; teri kulrang, binafsha-ko‘k dog‘lar bilan; patologik nafas turlari; qorachiqlar kengaygan, talvasalar; PaO~2~ <50 mm, pH <7,2.
 s4625	7.10. Klinik qism
 s4626	Sindromlarni bitta jadvalda farqlash
 s4627	Jadval 7.14. Nafas a’zolari asosiy sindromlarining fizikal va rentgen belgilari
@@ -122,8 +122,8 @@ s4655	Kasal tomon cheklangan
 s4656	Yirik pufakchali jarangdor
 s4657	Halqasimon soya
 s4658	Bronxial astma xurujidagi bola
-s4659	Bronxial astma — bronxlarning surunkali allergik yallig‘lanishi va giperreaktivligi; takrorlanuvchi qaytar obstruksiya xurujlari bilan kechadi. Xuruj belgilari: ekspirator hansirash, uzoqdan eshitiladigan hushtaksimon nafas, ortopnoe, quruq yo‘tal, qutisimon tovush, quruq hushtaksimon xirillashlar. Tashxis: anamnez (allergiya, irsiyat, xurujlar takrorlanishi), spirometriyada qaytar obstruksiya (salbutamoldan keyin FEV1 ↑ ≥12%), pikfloumetriyada kunlik o‘zgaruvchanlik >20%, eozinofiliya, IgE oshishi, balg‘amda Kurshman spirallari va Sharko–Leyden kristallari.
-s4660	Astma xurujida **“jim o‘pka”** (nafas va xirillashlar eshitilmay qolishi), gapira olmaslik, sianoz, lanjlik, SpO2 <90% — **hayot uchun xavfli** xuruj belgilari: shoshilinch kislorod, salbutamol ingalyatsiyasi (spacer yoki nebulayzer orqali), tizimli glyukokortikoidlar, reanimatsiya bo‘limiga yotqizish.
+s4659	Bronxial astma — bronxlarning surunkali allergik yallig‘lanishi va giperreaktivligi; takrorlanuvchi qaytar obstruksiya xurujlari bilan kechadi. Xuruj belgilari: ekspirator hansirash, uzoqdan eshitiladigan hushtaksimon nafas, ortopnoe, quruq yo‘tal, qutisimon tovush, quruq hushtaksimon xirillashlar. Tashxis: anamnez (allergiya, irsiyat, xurujlar takrorlanishi), spirometriyada qaytar obstruksiya (salbutamoldan keyin FEV~1~ ↑ ≥12%), pikfloumetriyada kunlik o‘zgaruvchanlik >20%, eozinofiliya, IgE oshishi, balg‘amda Kurshman spirallari va Sharko–Leyden kristallari.
+s4660	Astma xurujida **“jim o‘pka”** (nafas va xirillashlar eshitilmay qolishi), gapira olmaslik, sianoz, lanjlik, SpO~2~ <90% — **hayot uchun xavfli** xuruj belgilari: shoshilinch kislorod, salbutamol ingalyatsiyasi (spacer yoki nebulayzer orqali), tizimli glyukokortikoidlar, reanimatsiya bo‘limiga yotqizish.
 s4661	1-ko‘nikma. Pikfloumetriya o‘tkazish va baholash
 s4662	Pikfloumetr ko‘rsatkichini nolga qo‘yish; bolaga usulni ko‘rsatish.
 s4663	Bola tik turadi, pikfloumetrni gorizontal ushlaydi (barmoqlar shkalaga tegmasin).
@@ -133,9 +133,9 @@ s4666	Ertalab va kechqurun o‘lchash; kunlik o‘zgaruvchanlikni hisoblash: (ke
 s4667	Natijani bo‘yga mos me’yor va shaxsiy eng yaxshi ko‘rsatkich bilan solishtirish (“svetofor” zonalari).
 s4668	2-ko‘nikma. Spirogrammani baholash
 s4669	Bola ma’lumotlarini (yoshi, jinsi, bo‘yi) aniqlash, mo‘ljaldagi qiymatlarni topish.
-s4670	O‘TS, FEV1, Tiffno indeksi, O‘MV haqiqiy qiymatlarini mo‘ljaldagi bilan solishtirish (% da).
-s4671	Ventilyatsiya buzilishi turini aniqlash: restriktiv (O‘TS ↓, Tiffno me’yorda), obstruktiv (FEV1, Tiffno ↓), aralash.
-s4672	Bronxolitik sinama bo‘lsa — FEV1 ortishini hisoblash (≥12% — qaytar obstruksiya).
+s4670	O‘TS, FEV~1~, Tiffno indeksi, O‘MV haqiqiy qiymatlarini mo‘ljaldagi bilan solishtirish (% da).
+s4671	Ventilyatsiya buzilishi turini aniqlash: restriktiv (O‘TS ↓, Tiffno me’yorda), obstruktiv (FEV~1~, Tiffno ↓), aralash.
+s4672	Bronxolitik sinama bo‘lsa — FEV~1~ ortishini hisoblash (≥12% — qaytar obstruksiya).
 s4673	Xulosa yozish.
 s4674	3-ko‘nikma. Ko‘krak qafasi rentgenogrammasini “o‘qish”
 s4675	Bemor ma’lumotlari, sana, proeksiyani tekshirish.
@@ -149,7 +149,7 @@ s4682	Xulosa (masalan: “o‘ng pastki bo‘lak infiltratsiyasi”, “chap tom
 s4683	4-ko‘nikma. Pulsoksimetriya o‘tkazish
 s4684	Pulsoksimetr datchigini bola barmog‘iga (chaqaloqda — kaft yoki oyoq kaftiga) qo‘yish.
 s4685	Bola tinch, qo‘l iliq bo‘lishi kerak (sovuq qo‘l, harakat — xato natija).
-s4686	Puls to‘lqini barqarorlashgach (15–30 s) SpO2 va puls qiymatini yozish.
+s4686	Puls to‘lqini barqarorlashgach (15–30 s) SpO~2~ va puls qiymatini yozish.
 s4687	Baholash: ≥95% — me’yor; 92–94% — chegaraviy; <92% — gipoksemiya, kislorod terapiyasi.
 s4688	5-ko‘nikma. Fizikal tekshiruv natijalari asosida sindromni aniqlash
 s4689	Ko‘rik ma’lumotlari: hansirash turi, ko‘krak qafasi simmetrikligi, nafasda qatnashishi.
@@ -180,7 +180,7 @@ s4713	15 yoshdan
 s4714	Tiffno indeksining me’yoriy qiymati:
 s4715	Obstruktiv ventilyatsiya buzilishi uchun xos:
 s4716	O‘TS keskin kamaygan, Tiffno me’yorda
-s4717	FEV1 va Tiffno indeksi kamaygan
+s4717	FEV~1~ va Tiffno indeksi kamaygan
 s4718	Barcha ko‘rsatkichlar me’yorda
 s4719	O‘MV ortgan
 s4720	NMH kamaygan
@@ -222,4 +222,3 @@ s4755	Tunda boshlanishi
 s4756	Bronx obstruksiyasi sindromida perkussiyada:
 s4757	Bo‘g‘iq tovush
 s4758	Qutisimon tovush
-s4759	Timpanik tovush faqat bir tomonda

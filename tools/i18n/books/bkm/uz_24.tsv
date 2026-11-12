@@ -1,3 +1,18 @@
+s4598	**Gen terapiyasi** — kasallikni davolash maqsadida hujayralarga genetik material kiritish.
+s4599	Jadval 18.4. Gen terapiyasining strategiyalari va vektorlari
+s4600	Yo‘nalish
+s4601	Gen qo‘shish (o‘rnini bosish)
+s4602	Nuqsonli gen o‘rniga normal nusxani kiritish (adenozindezaminaza yetishmovchiligi — birinchi gen terapiyasi, 1990; spinal mushak atrofiyasi; gemofiliya B)
+s4603	Gen tahriri
+s4604	CRISPR-Cas9 — DNK ni aniq joydan kesib tuzatish (o‘roqsimon hujayrali anemiya va β-talassemiyada BCL11A orqali HbF ni oshirish)
+s4605	Gen ekspressiyasini o‘chirish
+s4606	Antisens oligonukleotidlar, siRNK (transtiretin amiloidozi)
+s4607	Hujayra terapiyasi
+s4608	CAR-T hujayralar — bemor T-limfotsitlariga o‘sma antigeniga qarshi retseptor geni kiritiladi (B-hujayrali leykozlar)
+s4609	Virus vektorlari
+s4610	Retroviruslar va lentiviruslar (genomga integratsiya — ildiz hujayralar uchun; insersion mutagenez xavfi), adenoviruslar, adeno-assotsiirlangan viruslar (AAV — integratsiyasiz, xavfsizroq)
+s4611	Virussiz usullar
+s4612	Liposomalar, lipid nanozarrachalar, elektroporatsiya, “yalang‘och” DNK
 s4613	Usullar
 s4614	Ex vivo (hujayralar tanadan olinib, gen kiritilib qaytariladi) va in vivo (vektor bevosita organizmga)
 s4615	Muammolari: immun javob, insersion mutagenez (leykoz), ekspressiyaning qisqa davomiyligi, yuqori narx, etik masalalar (jinsiy hujayralarni o‘zgartirish taqiqlangan).
@@ -227,7 +242,7 @@ s4838	TP53
 s4839	“Genom qo‘riqchisi”: DNK shikastlanganda siklni to‘xtatish, reparatsiya, apoptoz
 s4840	O‘smalarning ≈ 50 % ida mutatsiya; Li–Fraumeni sindromi
 s4841	RB1
-s4842	E2F transkripsiya omilini bog‘lab, G1→S o‘tishini to‘xtatadi
+s4842	E2F transkripsiya omilini bog‘lab, G~1~→S o‘tishini to‘xtatadi
 s4843	Retinoblastoma, osteosarkoma
 s4844	APC
 s4845	β-katenin parchalanishini ta’minlaydi (Wnt yo‘li)
@@ -250,7 +265,3 @@ s4861	4. Kanserogenezning ko‘p bosqichli nazariyasi
 s4862	O‘sma bitta mutatsiya natijasida emas, balki bir necha (odatda 4–7) genning ketma-ket o‘zgarishlari natijasida yillar davomida rivojlanadi (yo‘g‘on ichakda: APC → KRAS → SMAD4 → TP53 — **Vogelshteyn modeli**: normal epiteliy → adenoma → karsinoma).
 s4863	Rasm 19.2
 s4864	Kanserogenezning ko‘p bosqichli modeli (Harper’s Illustrated Biochemistry asosida chizilgan)
-s4865	**Neoplastik transformatsiya** natijasida hujayra o‘sma belgilariga ega bo‘ladi (Xanaxan va Vaynberg bo‘yicha “saraton belgilari”): o‘sish signallarining mustaqilligi, o‘sishni to‘xtatuvchi signallarga sezgirlikning yo‘qolishi, apoptozdan qochish, cheksiz bo‘linish (**telomeraza** faolligi), **angiogenez** (VEGF), invaziya va metastaz, energiya metabolizmining qayta tuzilishi, immun nazoratdan qochish (PD-L1), genom beqarorligi, o‘smani rag‘batlantiruvchi yallig‘lanish.
-s4866	5. O‘sma hujayralarining biokimyoviy xususiyatlari
-s4867	**Varburg effekti (aerob glikoliz):** o‘sma hujayralari kislorod yetarli bo‘lsa ham glyukozani asosan laktatgacha parchalaydi; glyukozani ko‘p o‘zlashtiradi (GLUT1, geksokinaza II ↑) — bu **PET-KT** da ^18^F-ftordezoksiglyukoza to‘planishiga asoslangan tashxisning asosi. Glikoliz oraliq mahsulotlari nukleotidlar, lipidlar va aminokislotalar sintezi uchun ishlatiladi; piruvatkinazaning M2 izoshakli ifodalanadi.
-s4868	**Glutamin “ishtiyoqi”** — glutamin azot va uglerod manbai (glutaminoliz).

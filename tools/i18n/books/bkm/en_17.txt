@@ -1,3 +1,18 @@
+s3197 Carbamoyl phosphate + ornithine → citrulline + P~i~
+s3198 Ornithine carbamoyltransferase
+s3199 Citrulline + aspartate + ATP → argininosuccinate + AMP + PP~i~
+s3200 Argininosuccinate synthetase
+s3201 Cytosol
+s3202 Argininosuccinate → arginine + fumarate
+s3203 Argininosuccinate lyase
+s3204 Arginine + H~2~O → urea + ornithine
+s3205 Arginase (Mn^2+^; almost only in the liver)
+s3206 **The sources of the two nitrogens of the urea molecule:** the first is **ammonia** (from the deamination of glutamate and the glutaminase reaction), the second is **aspartate** (from the transamination of oxaloacetate). In this way the nitrogen of all amino acids is delivered to the cycle through transamination.
+s3207 **Energy cost:** 3 ATP for one urea (**4 high-energy bonds**, because one ATP is split into AMP + PP~i~).
+s3208 **The link with the Krebs cycle (the “Krebs bicycle”):** the **fumarate** formed in the ornithine cycle is converted in the Krebs cycle into malate and oxaloacetate; oxaloacetate is transaminated back into **aspartate** and returns to the ornithine cycle. The NADH formed in the malate dehydrogenase reaction recovers part of the energy spent on urea synthesis.
+s3209 Regulation:
+s3210 **N-acetylglutamate** (acetyl-CoA + glutamate; its synthesis is activated by arginine) is the obligatory allosteric activator of carbamoyl phosphate synthetase I;
+s3211 with a protein-rich diet and in starvation (when amino acid catabolism increases) the synthesis of the cycle enzymes is induced (glucagon, cortisol). **Normal values of urea:** in serum **2.5–8.3 mmol/l**; in the urine **20–35 g** (333–583 mmol) per day.
 s3212 Table 13.2. Changes in the blood urea level
 s3213 Increase
 s3214 Decrease
@@ -16,20 +31,20 @@ s3226 Table 13.3. Congenital deficiency of the ornithine cycle enzymes
 s3227 Changes in blood/urine
 s3228 Hyperammonemia type I
 s3229 Carbamoyl phosphate synthetase I
-s3230 NH3 ↑↑; orotic acid normal
+s3230 NH~3~ ↑↑; orotic acid normal
 s3231 Hyperammonemia type II (the most common, X-linked)
-s3232 NH3 ↑↑, glutamine ↑; orotic acid ↑ in the urine (carbamoyl phosphate goes into pyrimidine synthesis)
+s3232 NH~3~ ↑↑, glutamine ↑; orotic acid ↑ in the urine (carbamoyl phosphate goes into pyrimidine synthesis)
 s3233 Citrullinemia
 s3234 Citrulline ↑↑
 s3235 Argininosuccinic aciduria
 s3236 Argininosuccinate ↑↑
 s3237 Argininemia
 s3238 Arginase
-s3239 Arginine ↑↑; spastic paraparesis, NH3 rises less
+s3239 Arginine ↑↑; spastic paraparesis, NH~3~ rises less
 s3240 In newborns, in the first days of life (when protein intake begins), refusal to feed, vomiting, lethargy, seizures and coma are seen. Treatment: restriction of protein, **sodium benzoate** and **phenylbutyrate** (they conjugate with glycine and glutamine and remove nitrogen bypassing urea), supplements of arginine or citrulline, hemodialysis, liver transplantation.
 s3241 **Acquired (secondary) hyperammonemia** — mainly in **liver cirrhosis and failure**: urea synthesis falls and the ammonia of the portal vein bypasses the liver through portocaval anastomoses and enters the general circulation — **hepatic encephalopathy** (topic 25). In children, taking aspirin during viral infections may cause **Reye syndrome** (damage to the mitochondria, hyperammonemia, fatty degeneration of the liver, encephalopathy); for this reason aspirin is not recommended for children with fever.
 s3242 5. Metabolism of one-carbon groups. Serine and glycine
-s3243 **Tetrahydrofolate (THF)** is the active form of folic acid (B9); it is formed by dihydrofolate reductase (NADPH). THF carries **one-carbon groups** (methyl −CH3, methylene =CH2, methenyl =CH−, formyl −CHO, formimino). The main sources of one-carbon groups are **serine** (serine + THF → glycine + N5,N10-methylene-THF; serine hydroxymethyltransferase, PLP) and **glycine** (the glycine cleavage system).
+s3243 **Tetrahydrofolate (THF)** is the active form of folic acid (B~9~); it is formed by dihydrofolate reductase (NADPH). THF carries **one-carbon groups** (methyl −CH~3~, methylene =CH~2~, methenyl =CH−, formyl −CHO, formimino). The main sources of one-carbon groups are **serine** (serine + THF → glycine + N5,N10-methylene-THF; serine hydroxymethyltransferase, PLP) and **glycine** (the glycine cleavage system).
 s3244 **One-carbon groups are used for:** the synthesis of purine nucleotides (atoms C2 and C8), the synthesis of **thymidylate** (dUMP → dTMP), the regeneration of methionine (homocysteine → methionine), and the interconversion of serine and glycine.
 s3245 Syntheses in which **glycine** takes part: proteins (every third amino acid of collagen), heme (succinyl-CoA + glycine), creatine, purines, glutathione, conjugation of bile acids (glycocholic acid), detoxification of benzoic acid (hippuric acid).
 s3246 **Sulfonamides** competitively inhibit the synthesis of folate from para-aminobenzoic acid in bacteria (humans obtain folate from food) — a bacteriostatic effect. **Methotrexate** inhibits dihydrofolate reductase — a lack of THF stops the synthesis of thymidylate and purines; rapidly dividing tumor cells die. **Folate deficiency** — megaloblastic anemia; in pregnancy — neural tube defects in the fetus (which is why folic acid is prescribed when a pregnancy is planned).
@@ -42,14 +57,14 @@ s3252 **methylation** of nucleotides and DNA (epigenetic regulation of gene expr
 s3253 synthesis of carnitine and melatonin; detoxification of foreign substances and hormones (catecholamines — COMT). After giving up its methyl group, SAM is converted into **S-adenosylhomocysteine** and then into **homocysteine**. The fate of homocysteine:
 s3254 **remethylation** — it returns to methionine: the methyl donor is N5-methyl-THF and the coenzyme is **methylcobalamin (B~12~)** (methionine synthase);
 s3255 **transsulfuration** — with serine it forms cystathionine (cystathionine β-synthase, **B~6~**) and then **cysteine**; cysteine → taurine, glutathione, sulfates (PAPS).
-s3256 **Hyperhomocysteinemia** (normal blood level 5–15 µmol/l) is seen in deficiency of B12, folate or B6, in renal failure or in congenital enzyme defects (cystathionine β-synthase — **homocystinuria**: dislocation of the lens, skeletal changes, mental retardation, early thrombosis). Homocysteine damages the endothelium and is an independent risk factor for **atherosclerosis and thrombosis**. In B12 deficiency N5-methyl-THF is not used and accumulates (the “folate trap”) — the other forms of THF fall and megaloblastic anemia develops.
+s3256 **Hyperhomocysteinemia** (normal blood level 5–15 µmol/l) is seen in deficiency of B~12~, folate or B~6~, in renal failure or in congenital enzyme defects (cystathionine β-synthase — **homocystinuria**: dislocation of the lens, skeletal changes, mental retardation, early thrombosis). Homocysteine damages the endothelium and is an independent risk factor for **atherosclerosis and thrombosis**. In B~12~ deficiency N5-methyl-THF is not used and accumulates (the “folate trap”) — the other forms of THF fall and megaloblastic anemia develops.
 s3257 7. Metabolism of phenylalanine and tyrosine
-s3258 **Phenylalanine** (essential) is converted into **tyrosine** mainly in the liver by **phenylalanine hydroxylase** (coenzyme — **tetrahydrobiopterin, BH~4~**). From tyrosine are formed: the **catecholamines** (dopamine, noradrenaline, adrenaline), **melanin** (tyrosinase in melanocytes) and the **thyroid hormones** (T3, T4); the final catabolism of tyrosine leads through homogentisic acid to **fumarate** and **acetoacetate**.
+s3258 **Phenylalanine** (essential) is converted into **tyrosine** mainly in the liver by **phenylalanine hydroxylase** (coenzyme — **tetrahydrobiopterin, BH~4~**). From tyrosine are formed: the **catecholamines** (dopamine, noradrenaline, adrenaline), **melanin** (tyrosinase in melanocytes) and the **thyroid hormones** (T~3~, T~4~); the final catabolism of tyrosine leads through homogentisic acid to **fumarate** and **acetoacetate**.
 s3259 Figure 13.2
 s3260 Metabolism of phenylalanine and tyrosine; the reactions blocked in the congenital diseases (drawn after Severin E.S.)
 s3261 Table 13.4. Congenital diseases of phenylalanine and tyrosine metabolism
 s3262 Phenylketonuria (PKU)
-s3263 Phenylalanine hydroxylase (classic); rarely — synthesis of BH4
+s3263 Phenylalanine hydroxylase (classic); rarely — synthesis of BH~4~
 s3264 Phenylalanine ↑↑ in the blood, phenylpyruvate, phenyllactate and phenylacetate in the urine (a “mousy” odor); if untreated — severe mental retardation, seizures, pale skin and hair (little melanin)
 s3265 Alkaptonuria
 s3266 Homogentisate oxidase
@@ -65,7 +80,7 @@ s3275 Tyrosine aminotransferase
 s3276 Damage to the eyes and skin, mental retardation
 s3277 **Screening for phenylketonuria** is carried out in all newborns on days 3–5 of life (the Guthrie test or tandem mass spectrometry). Once the diagnosis is made, the child is put on a **diet low in phenylalanine** (special formulas; tyrosine becomes essential for such patients). If the diet is started early, mental development is almost normal. Mothers with PKU must follow the diet during pregnancy as well — otherwise a high phenylalanine level causes microcephaly and heart defects in the fetus. One source of phenylalanine is **aspartame** (an artificial sweetener).
 s3278 Experiment 1: determination of urea in serum by the urease method
-s3279 **Principle of the method: urease** breaks urea down into ammonia and CO2; the ammonia forms **blue indophenol** with phenol and hypochlorite (catalyzed by sodium nitroprusside) (the Berthelot reaction). The intensity of the color is proportional to the amount of urea (546–600 nm). Analyzers use a kinetic method: the ammonia is measured by the consumption of NADH in the glutamate dehydrogenase reaction (340 nm).
+s3279 **Principle of the method: urease** breaks urea down into ammonia and CO~2~; the ammonia forms **blue indophenol** with phenol and hypochlorite (catalyzed by sodium nitroprusside) (the Berthelot reaction). The intensity of the color is proportional to the amount of urea (546–600 nm). Analyzers use a kinetic method: the ammonia is measured by the consumption of NADH in the glutamate dehydrogenase reaction (340 nm).
 s3280 Pour 1 ml of urease-containing buffer solution into each of three test tubes.
 s3281 Add 10 µl of serum to tube 1, 10 µl of standard (for example, 8.33 mmol/l) to tube 2 and 10 µl of water to tube 3; keep at 37 °C for 10 minutes.
 s3282 Add the phenol-nitroprusside and alkaline hypochlorite reagents and keep at 37 °C for another 10 minutes.
@@ -164,14 +179,3 @@ s3374 Ornithine carbamoyltransferase deficiency (hyperammonemia type II; X-linke
 s3375 Newborn screening found a blood phenylalanine level of 1200 µmol/l (normal < 120). Tyrosine is reduced.
 s3376 What is the diagnosis? What are the consequences if it is not treated? What is the essence of the diet?
 s3377 Classic phenylketonuria — phenylalanine hydroxylase deficiency. Phenylalanine is not converted into tyrosine, accumulates and is transaminated into phenylpyruvate, phenyllactate and phenylacetate (a “mousy” odor in the urine). A high phenylalanine level blocks the transport of other large neutral amino acids (tyrosine, tryptophan) into the brain, myelination is impaired and the synthesis of neurotransmitters (dopamine, serotonin) falls — if untreated, severe mental retardation and seizures; melanin is low — the skin and hair are pale. Treatment: from the first weeks of life a diet low in phenylalanine (special formulas) with tyrosine supplements; blood phenylalanine is monitored regularly.
-s3378 A 60-year-old vegetarian woman has weakness, numbness in the legs and memory loss. The blood shows megaloblastic anemia, homocysteine 45 µmol/l (normal 5–15) and increased methylmalonic acid.
-s3379 Which vitamin is deficient? Why are homocysteine and methylmalonic acid increased?
-s3380 Vitamin B12 (cobalamin) deficiency (low in the diet of vegetarians — it is found only in animal products). Methylcobalamin is the coenzyme of methionine synthase: when it is lacking, homocysteine is not converted into methionine (hyperhomocysteinemia — a risk of thrombosis and atherosclerosis), N5-methyl-THF accumulates (the “folate trap”) and the other forms of folate fall — the synthesis of thymidylate and DNA is impaired (megaloblastic anemia). 5′-deoxyadenosylcobalamin is the coenzyme of methylmalonyl-CoA mutase: when it is lacking, methylmalonic acid accumulates; abnormal fatty acids are incorporated into myelin and damage the nervous system (subacute combined degeneration). Treatment — parenteral B12.
-s3381 Sources of ammonia
-s3382 Deamination, hydrolysis of amides, MAO, deamination of bases, the intestine
-s3383 Toxicity
-s3384 In the brain α-KG ↓ (Krebs cycle ↓), glutamine ↑ (swelling)
-s3385 Temporary binding
-s3386 Glutamine synthetase (glutamine), alanine
-s3387 Kidney
-s3388 Glutaminase → excretion of NH~4~^+^; ↑ in acidosis

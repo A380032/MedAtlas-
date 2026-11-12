@@ -28,6 +28,11 @@ log = []
 
 # ---------- 1) matn almashtirishlar (faqat uz) ----------
 LIT = [
+    # formula yozuvidagi uzilishlar (fix_formulas.py dan oldin)
+    ("Na+aminokislotalar", "Na^+^-aminokislotalar"), ("+ NH 3 +", "+ NH~3~ +"),
+    ("oksaloatsetat + NADH + H +", "oksaloatsetat + NADH + H^+^"),
+    ("Aminokislota + α-KG α-ketokislota + glutamat; qaytar; NH ⇄ 3 ajralmaydi",
+     "Aminokislota + α-KG ⇄ α-ketokislota + glutamat; qaytar; NH~3~ ajralmaydi"),
     # jadval kataklarida bo'lingan so'zlar
     ("Uglevodl ar", "Uglevodlar"), ("Kompl eks", "Kompleks"), ("Galaktotserebrozid aza", "Galaktotserebrozidaza"),
     ("Mitoxondri ya", "Mitoxondriya"), ("Karbamoilfosfatsint etaza", "Karbamoilfosfatsintetaza"),

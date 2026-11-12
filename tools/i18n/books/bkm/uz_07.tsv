@@ -1,4 +1,9 @@
-s1294	Vitamin qaysi kofermentga kirishini aniqlang (B1 — TDF, B2 — FAD, PP — NAD+, B5 — KoA).
+s1289	PDK reaksiyasida 1 NADH (2,5 ATF) hosil bo‘lishini hisobga oling.
+s1290	Krebs siklida 3 NADH (7,5 ATF), 1 FADH~2~ (1,5 ATF) va 1 GTF (1 ATF) hosil bo‘lishini qo‘shing.
+s1291	Piruvatdan jami 12,5 ATF, atsetil-KoA dan 10 ATF ekanini toping.
+s1292	Agar hisob boshqa substratdan boshlansa (masalan, laktat), qo‘shimcha NADH larni qo‘shing.
+s1293	Ko‘nikma: vitamin yetishmovchiligida umumiy yo‘llar buzilishini aniqlash
+s1294	Vitamin qaysi kofermentga kirishini aniqlang (B~1~ — TDF, B~2~ — FAD, PP — NAD^+^, B~5~ — KoA).
 s1295	Bu koferment qaysi fermentlarda ishlashini ko‘rsating (PDK, α-ketoglutaratdegidrogenaza, suktsinatdegidrogenaza, malatdegidrogenaza).
 s1296	To‘planadigan metabolitlarni ayting (piruvat, laktat, α-ketoglutarat).
 s1297	Klinik oqibatlarni (energiya taqchilligi, laktatatsidoz, nevrologik buzilishlar) tushuntiring.
@@ -8,8 +13,8 @@ s1300	Piruvatdegidrogenaza kompleksining fermentlari va kofermentlarini sanang.
 s1301	Piruvatdegidrogenaza kompleksi qanday boshqariladi?
 s1302	Nima uchun atsetil-KoA dan glyukoza sintezlanmaydi?
 s1303	Krebs siklining reaksiyalarini ketma-ket yozing.
-s1304	Siklda qaysi reaksiyalarda CO2 ajraladi?
-s1305	Siklda qaysi reaksiyalarda NADH, FADH2 va GTF hosil bo‘ladi?
+s1304	Siklda qaysi reaksiyalarda CO~2~ ajraladi?
+s1305	Siklda qaysi reaksiyalarda NADH, FADH~2~ va GTF hosil bo‘ladi?
 s1306	Bitta atsetil-KoA oksidlanishida qancha ATF hosil bo‘ladi?
 s1307	Krebs sikli nima uchun faqat aerob sharoitda ishlaydi?
 s1308	Krebs siklining kalit fermentlari va ularning boshqarilishini tushuntiring.
@@ -22,7 +27,7 @@ s1314	Sitozolda
 s1315	Mitoxondriya matriksida
 s1316	Endoplazmatik to‘rda
 s1317	Yadroda
-s1318	Piruvatdegidrogenaza kompleksining E1 fermenti kofermenti qaysi?
+s1318	Piruvatdegidrogenaza kompleksining E~1~ fermenti kofermenti qaysi?
 s1319	Lipoy kislota
 s1320	Krebs siklining birinchi reaksiyasini qaysi ferment katalizlaydi?
 s1321	Akonitaza
@@ -37,9 +42,9 @@ s1329	Krebs siklining bir aylanishida nechta NADH hosil bo‘ladi?
 s1330	FAD ga bog‘liq Krebs sikli fermenti qaysi?
 s1331	Bitta atsetil-KoA Krebs siklida oksidlanganda (zamonaviy hisob) qancha ATF hosil bo‘ladi?
 s1332	Piruvatdegidrogenaza kompleksini qaysi moddalar ingibirlaydi?
-s1333	ADF va NAD+
+s1333	ADF va NAD^+^
 s1334	Piruvat va KoA
-s1335	Ca2+ va insulin
+s1335	Ca^2+^ va insulin
 s1336	Atsetil-KoA va NADH
 s1337	AMF va Fn
 s1338	Eng muhim anaplerotik reaksiyani katalizlovchi ferment qaysi?
@@ -74,25 +79,25 @@ s1366	Qaysi fermentning yetishmovchiligi gumon qilinadi? Nima uchun uglevodlar h
 s1367	Piruvatdegidrogenaza kompleksining tug‘ma yetishmovchiligi. Piruvat atsetil-KoA ga aylanmaydi va to‘planadi; u laktatga (LDG) va alaninga (transaminlanish) aylanadi. Uglevodlar glikoliz orqali piruvat hosil qilib, atsidozni kuchaytiradi. Miya energiyani asosan glyukoza oksidlanishidan olgani uchun nevrologik buzilishlar og‘ir. Davolash: ketogen parhez (uglevodlar kam, yog‘lar ko‘p) — yog‘ kislotalari va keton tanachalari PDK ni chetlab atsetil-KoA beradi; ba’zi bemorlarda tiamin katta dozada samarali.
 s1368	Kalamushlarga Krebs siklining qaysidir fermenti ingibitori yuborilgach, to‘qimalarda suktsinat to‘planib, fumarat va malat miqdori kamaydi.
 s1369	Qaysi ferment ingibirlangan? Mumkin bo‘lgan ingibitorni ayting. Bu energiya almashinuviga qanday ta’sir qiladi?
-s1370	Suktsinatdegidrogenaza (II kompleks) ingibirlangan; malonat uning klassik raqobatli ingibitori. Suktsinat fumaratga aylanmaydi, sikl to‘xtaydi: keyingi metabolitlar va oksaloatsetat kamayadi, atsetil-KoA siklga kira olmaydi; FADH2 va NADH kam hosil bo‘lib, ATF sintezi pasayadi. Suktsinat konsentratsiyasini oshirish ingibitsiyani qisman bartaraf etadi.
+s1370	Suktsinatdegidrogenaza (II kompleks) ingibirlangan; malonat uning klassik raqobatli ingibitori. Suktsinat fumaratga aylanmaydi, sikl to‘xtaydi: keyingi metabolitlar va oksaloatsetat kamayadi, atsetil-KoA siklga kira olmaydi; FADH~2~ va NADH kam hosil bo‘lib, ATF sintezi pasayadi. Suktsinat konsentratsiyasini oshirish ingibitsiyani qisman bartaraf etadi.
 s1371	Uzoq vaqt ochlikda yurgan bemorda qonda glyukoza 3,0 mmol/l, keton tanachalari keskin oshgan, siydikda atseton aniqlandi.
 s1372	Ochlikda jigarda Krebs siklining faolligi qanday o‘zgaradi? Nima uchun keton tanachalari ko‘payadi?
 s1373	Ochlikda glyukagon va kortizol ta’sirida jigarda glyukoneogenez kuchayadi, buning uchun oksaloatsetat sarflanadi (malat ko‘rinishida sitozolga chiqadi). Bir vaqtda yog‘ to‘qimasidan kelgan yog‘ kislotalarining β-oksidlanishi kuchayib, ko‘p atsetil-KoA hosil bo‘ladi. Oksaloatsetat yetishmagani uchun atsetil-KoA sitrat hosil qila olmaydi va Krebs siklida to‘liq oksidlanmaydi — u jigar mitoxondriyalarida atsetoatsetat va β-gidroksibutiratga (keton tanachalari) aylanadi; ular boshqa to‘qimalar (miya, mushak) uchun energiya manbayi bo‘ladi.
 s1374	Umumiy yo‘llar
 s1375	PDK + Krebs sikli + nafas zanjiri (mitoxondriyada)
 s1376	PDK
-s1377	Piruvat → atsetil-KoA + CO2 + NADH; qaytmas
+s1377	Piruvat → atsetil-KoA + CO~2~ + NADH; qaytmas
 s1378	PDK kofermentlari
-s1379	TDF (B1), lipoat, KoA (B5), FAD (B2), NAD+ (PP)
+s1379	TDF (B~1~), lipoat, KoA (B~5~), FAD (B~2~), NAD^+^ (PP)
 s1380	PDK boshqarilishi
-s1381	Atsetil-KoA, NADH, fosforlanish ↓; ADF, piruvat, Ca2+, insulin (defosforlanish) ↑
+s1381	Atsetil-KoA, NADH, fosforlanish ↓; ADF, piruvat, Ca^2+^, insulin (defosforlanish) ↑
 s1382	8 reaksiya: OA → sitrat → izotsitrat → α-KG → suktsinil-KoA → suktsinat → fumarat → malat → OA
 s1383	Mahsulotlar
-s1384	2 CO2, 3 NADH, 1 FADH2, 1 GTF
+s1384	2 CO~2~, 3 NADH, 1 FADH~2~, 1 GTF
 s1385	Atsetil-KoA dan 10, piruvatdan 12,5
 s1386	Kalit fermentlar
 s1387	Sitratsintaza, izotsitratdegidrogenaza, α-ketoglutaratdegidrogenaza
-s1388	ATF, NADH ↓; ADF, Ca2+ ↑
+s1388	ATF, NADH ↓; ADF, Ca^2+^ ↑
 s1389	Anabolik vazifa
 s1390	Glyukoza, aminokislotalar, yog‘ kislotalari, gem sintezi uchun metabolitlar
 s1391	Anaplerotik reaksiya
@@ -121,7 +126,7 @@ s1413	2. Uglevodlarning hazmlanishi va so‘rilishi
 s1414	Jadval 6.1. Uglevodlarni hazmlovchi fermentlar
 s1415	Substrat → mahsulot
 s1416	Og‘iz bo‘shlig‘i
-s1417	So‘lak α-amilazasi (pH 6,8; Cl- faollashtiradi)
+s1417	So‘lak α-amilazasi (pH 6,8; Cl^-^ faollashtiradi)
 s1418	Kraxmal → dekstrinlar, maltoza (qisman)
 s1419	Me’da
 s1420	— (kislotali muhitda amilaza faolsizlanadi)
@@ -138,12 +143,12 @@ s1430	Laktaza (β-galaktozidaza)
 s1431	Laktoza → galaktoza + glyukoza
 s1432	α-Amilaza faqat α1→4 glikozid bog‘larni uzadi; tarmoqlanish joylaridagi α1→6 bog‘larni izomaltaza parchalaydi. Odamda β-glikozid bog‘ni parchalovchi sellyulaza yo‘q.
 s1433	**So‘rilish** — ingichka ichakning (asosan o‘n ikki barmoq va och ichak) enterotsitlarida:
-s1434	**Glyukoza va galaktoza** — **SGLT1** orqali Na+ bilan simport (ikkilamchi faol transport, gradientga qarshi);
+s1434	**Glyukoza va galaktoza** — **SGLT1** orqali Na^+^ bilan simport (ikkilamchi faol transport, gradientga qarshi);
 s1435	**Fruktoza** — **GLUT5** orqali yengillashgan diffuziya;
 s1436	enterotsitdan qonga — bazolateral membranadagi **GLUT2** orqali. So‘rilgan monosaxaridlar **darvoza venasi** orqali avval jigarga keladi.
-s1437	**Laktaza yetishmovchiligi** (sutni ko‘tara olmaslik) — dunyo aholisining katta qismida laktaza faolligi bolalikdan keyin genetik sabab bilan pasayadi (birlamchi); ichak kasalliklarida (enterit, seliakiya) — ikkilamchi. Hazmlanmagan laktoza yo‘g‘on ichakka o‘tadi, bakteriyalar uni bijg‘itib gazlar (H2, CO2, CH4) va organik kislotalar hosil qiladi — qorin damlashi, og‘riq, osmotik diareya. Tashxis: vodorodli nafas testi, laktozaga yuklama. Davolash: laktozasiz parhez, nordon sut mahsulotlari (laktoza bakteriyalar bilan qisman parchalangan), laktaza preparatlari. **Chaqaloqlarda** tug‘ma laktaza yetishmovchiligi kam uchraydi, ammo og‘ir kechadi.
+s1437	**Laktaza yetishmovchiligi** (sutni ko‘tara olmaslik) — dunyo aholisining katta qismida laktaza faolligi bolalikdan keyin genetik sabab bilan pasayadi (birlamchi); ichak kasalliklarida (enterit, seliakiya) — ikkilamchi. Hazmlanmagan laktoza yo‘g‘on ichakka o‘tadi, bakteriyalar uni bijg‘itib gazlar (H~2~, CO~2~, CH~4~) va organik kislotalar hosil qiladi — qorin damlashi, og‘riq, osmotik diareya. Tashxis: vodorodli nafas testi, laktozaga yuklama. Davolash: laktozasiz parhez, nordon sut mahsulotlari (laktoza bakteriyalar bilan qisman parchalangan), laktaza preparatlari. **Chaqaloqlarda** tug‘ma laktaza yetishmovchiligi kam uchraydi, ammo og‘ir kechadi.
 s1438	3. Glyukozaning hujayraga kirishi va fosforlanishi
-s1439	Glyukoza hujayraga **GLUT** tashuvchilari orqali kiradi: GLUT1 (eritrotsitlar, gematoensefalik to‘siq), GLUT2 (jigar, me’da osti bezi β-hujayralari, enterotsitlar, buyrak — Km yuqori), GLUT3 (neyronlar — Km past), **GLUT4** (skelet mushaklari, yurak, yog‘ to‘qimasi — **insulinga bog‘liq**).
+s1439	Glyukoza hujayraga **GLUT** tashuvchilari orqali kiradi: GLUT1 (eritrotsitlar, gematoensefalik to‘siq), GLUT2 (jigar, me’da osti bezi β-hujayralari, enterotsitlar, buyrak — K~m~ yuqori), GLUT3 (neyronlar — K~m~ past), **GLUT4** (skelet mushaklari, yurak, yog‘ to‘qimasi — **insulinga bog‘liq**).
 s1440	Hujayrada glyukoza darhol fosforlanadi va hujayradan chiqa olmaydi:
 s1441	Glyukoza + ATF → Glyukoza-6-fosfat + ADF
 s1442	Jadval 6.2. Geksokinaza va glyukokinaza
@@ -171,11 +176,11 @@ s1463	Glikogen sintezi va parchalanishi (Sobirova R.A., 2006; Severin E.S. asosi
 s1464	Glikogen sintezi (glikogenez)
 s1465	Glyukoza → glyukoza-6-fosfat (geksokinaza/glyukokinaza, ATF).
 s1466	Glyukoza-6-fosfat ⇄ glyukoza-1-fosfat (fosfoglyukomutaza).
-s1467	Glyukoza-1-fosfat + UTF → **UDF-glyukoza** + PPn (UDF-glyukozopirofosforilaza); pirofosfat gidrolizlanadi — reaksiya qaytmas.
+s1467	Glyukoza-1-fosfat + UTF → **UDF-glyukoza** + PP~n~ (UDF-glyukozopirofosforilaza); pirofosfat gidrolizlanadi — reaksiya qaytmas.
 s1468	UDF-glyukozadagi glyukoza qoldig‘i glikogen zanjirining uchiga α1→4 bog‘ bilan biriktiriladi — **glikogensintaza** (kalit ferment). Yangi zanjir uchun “zatravka” oqsil — **glikogenin**.
 s1469	**Tarmoqlovchi ferment** (amilo-1,4→1,6-transglikozilaza) zanjir bo‘lagini ko‘chirib, α1→6 tarmoq hosil qiladi. Bitta glyukozani glikogenga qo‘shish uchun 2 ta makroergik bog‘ (ATF va UTF) sarflanadi.
 s1470	Glikogenning parchalanishi (glikogenoliz)
-s1471	**Glikogenfosforilaza** (kalit ferment; koferment — piridoksalfosfat) zanjir uchidan α1→4 bog‘larni fosfat bilan uzadi (fosforoliz): glikogenn + Fn → glikogenn−1 + glyukoza-1-fosfat.
+s1471	**Glikogenfosforilaza** (kalit ferment; koferment — piridoksalfosfat) zanjir uchidan α1→4 bog‘larni fosfat bilan uzadi (fosforoliz): glikogenn + F~n~ → glikogenn−1 + glyukoza-1-fosfat.
 s1472	**Tarmoqsizlantiruvchi ferment** (transferaza + amilo-1,6-glyukozidaza) tarmoqlanish joyini olib tashlaydi, erkin glyukoza ajraladi.
 s1473	Glyukoza-1-fosfat → glyukoza-6-fosfat (fosfoglyukomutaza).
 s1474	**Jigarda**: glyukoza-6-fosfataza → erkin glyukoza → qonga. **Mushakda** glyukoza-6-fosfataza yo‘q — glyukoza-6-fosfat glikolizga kiradi (mushak glikogeni qondagi glyukozani saqlashga xizmat qilmaydi).
@@ -192,23 +197,16 @@ s1484	Gs → adenilatsiklaza → cAMF → protein kinaza A → fosforilaza kinaz
 s1485	Glikogenoliz ↑, glyukoza qonga
 s1486	Adrenalin (stress, jismoniy ish)
 s1487	Jigar, mushak
-s1488	β-retseptorlar → cAMF (jigarda α1 → IF3, Ca2+ ham)
+s1488	β-retseptorlar → cAMF (jigarda α1 → IF~3~, Ca^2+^ ham)
 s1489	Glikogenoliz ↑
 s1490	Insulin (ovqatdan keyin)
 s1491	Fosfodiesteraza va fosfoprotein fosfatazani faollashtiradi; glyukokinazani induksiyalaydi
 s1492	Glikogenez ↑
-s1493	**Allosterik boshqarish:** mushakda AMF va Ca2+ (qisqarish paytida) fosforilazani faollashtiradi; jigarda glyukoza fosforilazani ingibirlaydi; glyukoza-6-fosfat glikogensintazani faollashtiradi.
+s1493	**Allosterik boshqarish:** mushakda AMF va Ca^2+^ (qisqarish paytida) fosforilazani faollashtiradi; jigarda glyukoza fosforilazani ingibirlaydi; glyukoza-6-fosfat glikogensintazani faollashtiradi.
 s1494	5. Glyukozaning aerob oksidlanishi. Glikoliz
-s1495	**Glikoliz** — glyukozaning sitozolda **piruvatgacha** parchalanishi (10 reaksiya). Aerob sharoitda piruvat mitoxondriyada atsetil-KoA ga aylanib, Krebs siklida CO2 va H2O gacha oksidlanadi — **aerob oksidlanish**. Anaerob sharoitda piruvat laktatga qaytariladi (7-mavzu).
+s1495	**Glikoliz** — glyukozaning sitozolda **piruvatgacha** parchalanishi (10 reaksiya). Aerob sharoitda piruvat mitoxondriyada atsetil-KoA ga aylanib, Krebs siklida CO~2~ va H~2~O gacha oksidlanadi — **aerob oksidlanish**. Anaerob sharoitda piruvat laktatga qaytariladi (7-mavzu).
 s1496	Rasm 6.2
 s1497	Glikoliz reaksiyalari; kalit fermentlar va ATF hosil bo‘ladigan reaksiyalar (Sobirova R.A., 2006; Severin E.S. asosida chizilgan)
 s1498	Glikolizning ikki bosqichi:
 s1499	**Tayyorlov bosqichi** (energiya sarflanadi): glyukoza 2 ta ATF hisobiga fosforlanadi va ikkita triozofosfatga bo‘linadi.
 s1500	**Oksidlanish va energiya hosil qilish bosqichi**: glitseraldegid-3-fosfat oksidlanadi (NADH hosil bo‘ladi) va ikkita substrat darajasida fosforlanish reaksiyasida (fosfoglitseratkinaza, piruvatkinaza) 4 ta ATF hosil bo‘ladi. **Glikolizning yakuniy tenglamasi (aerob):**
-s1501	Glyukoza + 2NAD+ + 2ADF + 2Fn → 2 Piruvat + 2NADH + 2H+ + 2ATF + 2H2O
-s1502	**Kalit (qaytmas) fermentlar:** geksokinaza (glyukokinaza), **fosfofruktokinaza-1** (eng asosiy), piruvatkinaza.
-s1503	Jadval 6.4. Fosfofruktokinaza-1 ning boshqarilishi
-s1504	Faollashtiruvchilar
-s1505	AMF, ADF (energiya kam)
-s1506	ATF (energiya ko‘p)
-s1507	Fruktoza-2,6-bisfosfat (insulin ta’sirida ko‘payadi; eng kuchli aktivator)

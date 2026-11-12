@@ -49,14 +49,14 @@ s0481	**Baholash:** me’yorda so‘lak amilazasi faolligi **160–320 birlik** 
 s0482	2-ish: fermentlarning spetsifikligini ko‘rsatish
 s0483	Ikkita probirkaga 1 ml dan suyultirilgan so‘lak quying.
 s0484	1-probirkaga 1 ml 1 % kraxmal, 2-probirkaga 1 ml 1 % saxaroza eritmasini qo‘shing; 38 °C da 15 daqiqa saqlang.
-s0485	Ikkala probirkada Trommer (yoki Feling) reaksiyasini bajaring: 1 ml 10 % NaOH va 3–5 tomchi 1 % CuSO4 qo‘shib qizdiring. **Natija va tahlil:** 1-probirkada qizil cho‘kma (Cu2O) — kraxmal maltozagacha parchalangan, maltoza qaytaruvchi qand. 2-probirkada reaksiya manfiy — amilaza saxarozani parchalamaydi (saxarozaga saxaraza ta’sir qiladi). Bu fermentning nisbiy (guruh) spetsifikligini ko‘rsatadi.
+s0485	Ikkala probirkada Trommer (yoki Feling) reaksiyasini bajaring: 1 ml 10 % NaOH va 3–5 tomchi 1 % CuSO~4~ qo‘shib qizdiring. **Natija va tahlil:** 1-probirkada qizil cho‘kma (Cu~2~O) — kraxmal maltozagacha parchalangan, maltoza qaytaruvchi qand. 2-probirkada reaksiya manfiy — amilaza saxarozani parchalamaydi (saxarozaga saxaraza ta’sir qiladi). Bu fermentning nisbiy (guruh) spetsifikligini ko‘rsatadi.
 s0486	3-ish: amilaza faolligiga harorat va aktivator, ingibitorlar ta’siri
 s0487	Uchta probirkada so‘lak + kraxmal aralashmasini 0 °C (muz), 38 °C va 100 °C da (oldindan qaynatilgan so‘lak) 10 daqiqa saqlang; yod bilan sinang.
-s0488	Boshqa uchta probirkaga mos ravishda 1 % NaCl (aktivator), 1 % CuSO4 (ingibitor) va suv qo‘shib, so‘lak + kraxmal bilan 38 °C da saqlang; vaqti-vaqti bilan yod bilan sinab boring. **Natija va tahlil:** 38 °C da kraxmal tez parchalanadi; muzda — juda sekin (qaytar inaktivatsiya); qaynatilgan so‘lakda — parchalanmaydi (denaturatsiya). Cl- ionlari amilazani faollashtiradi (parchalanish tezlashadi), Cu2+ ionlari ingibirlaydi.
+s0488	Boshqa uchta probirkaga mos ravishda 1 % NaCl (aktivator), 1 % CuSO~4~ (ingibitor) va suv qo‘shib, so‘lak + kraxmal bilan 38 °C da saqlang; vaqti-vaqti bilan yod bilan sinab boring. **Natija va tahlil:** 38 °C da kraxmal tez parchalanadi; muzda — juda sekin (qaytar inaktivatsiya); qaynatilgan so‘lakda — parchalanmaydi (denaturatsiya). Cl^-^ ionlari amilazani faollashtiradi (parchalanish tezlashadi), Cu^2+^ ionlari ingibirlaydi.
 s0489	Ko‘nikma: Laynuiver–Berk grafigi bo‘yicha ingibitsiya turini aniqlash
 s0490	Ingibitorsiz va ingibitor ishtirokidagi 1/v ning 1/[S] ga bog‘liqlik to‘g‘ri chiziqlarini chizing.
-s0491	Chiziqlar y o‘qida (1/Vmax) kesishsa — Vmax o‘zgarmagan, Km ortgan: **raqobatli ingibitsiya**.
-s0492	Chiziqlar x o‘qida (−1/Km) kesishsa — Km o‘zgarmagan, Vmax kamaygan: **noraqobatli ingibitsiya**.
+s0491	Chiziqlar y o‘qida (1/V~max~) kesishsa — V~max~ o‘zgarmagan, K~m~ ortgan: **raqobatli ingibitsiya**.
+s0492	Chiziqlar x o‘qida (−1/K~m~) kesishsa — K~m~ o‘zgarmagan, V~max~ kamaygan: **noraqobatli ingibitsiya**.
 s0493	Substrat konsentratsiyasini oshirish ingibitsiyani yo‘qota oladimi — xulosa qiling.
 s0494	Ko‘nikma: enzimodiagnostika natijasini baholash
 s0495	Qaysi fermentlar oshganini aniqlang.
@@ -176,7 +176,7 @@ s0608	Bir reaksiyani katalizlovchi, tuzilishi farqli shakllar (LDG1–5, KFK)
 s0609	7 sinf
 s0610	Oksidoreduktaza, transferaza, gidrolaza, liaza, izomeraza, ligaza, translokaza
 s0611	Km
-s0612	v = Vmax/2 dagi [S]; kichik Km — yuqori moyillik
+s0612	v = V~max~/2 dagi [S]; kichik K~m~ — yuqori moyillik
 s0613	Raqobatli ingibitsiya
 s0614	Km ↑, Vmax o‘zgarmaydi (statinlar, metotreksat, malonat)
 s0615	Noraqobatli ingibitsiya
@@ -202,7 +202,7 @@ s0634	membranalar shikastlanishining sabablari va oqibatlarini.
 s0635	transport turini moddaga qarab aniqlash;
 s0636	gormon ta’sir mexanizmini signal o‘tkazish tizimi bo‘yicha tushuntirish;
 s0637	eritrotsitlarning osmotik chidamliligini aniqlash.
-s0638	**Na^+^,K^+^-ATFaza** hujayra ATF ining 30–40 % ini (miyada 70 % gacha) sarflaydi. U membrana potensialini, hujayra hajmini va ikkilamchi faol transport uchun Na+ gradientini ta’minlaydi. **Yurak glikozidlari** (digoksin) bu fermentni ingibirlaydi: hujayra ichida Na+ ko‘payadi, Na+/Ca2+ almashinuvi susayadi, Ca2+ to‘planib miokard qisqarishi kuchayadi.
+s0638	**Na^+^,K^+^-ATFaza** hujayra ATF ining 30–40 % ini (miyada 70 % gacha) sarflaydi. U membrana potensialini, hujayra hajmini va ikkilamchi faol transport uchun Na^+^ gradientini ta’minlaydi. **Yurak glikozidlari** (digoksin) bu fermentni ingibirlaydi: hujayra ichida Na^+^ ko‘payadi, Na^+^/Ca^2+^ almashinuvi susayadi, Ca^2+^ to‘planib miokard qisqarishi kuchayadi.
 s0639	Hujayra shikastlanishining oqibati — hujayra ichidagi fermentlarning qonga chiqishi (sitoliz). Shuning uchun qonda AlAT, AsAT, KFK, LDG faolligining oshishi membranalar shikastlanishining biokimyoviy belgisi hisoblanadi.
 s0640	1. Biologik membranalarning tuzilishi va kimyoviy tarkibi
 s0641	**Biologik membranalar** — hujayra va uning organellalarini o‘rab turuvchi, qalinligi 6–10 nm bo‘lgan lipid-oqsil tuzilmalar. Hujayrada plazmatik membrana va ichki membranalar (yadro, endoplazmatik to‘r, Golji apparati, mitoxondriya, lizosoma membranalari) bor.
@@ -214,4 +214,3 @@ s0646	**Xolesterin** — membrana qattiqligi va suyuqligini boshqaradi (“bufer
 s0647	**Integral (transmembran)** oqsillar — qo‘sh qavatni kesib o‘tadi (kanallar, tashuvchilar, nasoslar, retseptorlar).
 s0648	**Periferik** oqsillar — membrana yuzasiga ion va vodorod bog‘lar bilan bog‘langan.
 s0649	**Langarli** oqsillar — lipid “langar” (yog‘ kislota, prenil, glikozilfosfatidilinozitol) orqali biriktirilgan. **Suyuq-mozaik model** (S. Singer va G. Nikolson, 1972): membrana — suyuq lipid qo‘sh qavat bo‘lib, unda oqsillar “suzib yuradi” va lateral harakatlana oladi.
-s0650	2. Membranalarning vazifalari va umumiy xususiyatlari

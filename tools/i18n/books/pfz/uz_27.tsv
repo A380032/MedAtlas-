@@ -54,7 +54,7 @@ s5528	7 kun
 s5529	Hb 90 g/l, eritrotsitlar 3,0 × 10^12^/l. Rang ko‘rsatkichi qancha?
 s5530	Mikrosferotsitoz va eritrotsitlar osmotik chidamliligining pasayishi qaysi kasallikka xos?
 s5531	Temir yetishmovchilik anemiyasi
-s5532	B12 yetishmovchilik anemiyasi
+s5532	B~12~ yetishmovchilik anemiyasi
 s5533	Aplastik anemiya
 s5534	O‘tkir qon yo‘qotishdan keyin qonning suyulishi va gemoglobin pasayishi qaysi bosqichda kuzatiladi?
 s5535	Reflektor bosqich
@@ -63,7 +63,7 @@ s5537	Tiklanish bosqichi
 s5538	Birinchi soatda
 s5539	Gidremik bosqich
 s5540	Retikulotsitoz qaysi anemiyaga xos?
-s5541	Davolanmagan B12 yetishmovchilik anemiyasi
+s5541	Davolanmagan B~12~ yetishmovchilik anemiyasi
 s5542	Gemolitik anemiya
 s5543	Temir yetishmovchilik anemiyasi (davodan oldin)
 s5544	Surunkali buyrak yetishmovchiligidagi anemiya
@@ -108,7 +108,7 @@ s5582	Gemoglobin 130 g/l dan kam
 s5583	Gemoglobin 110 g/l dan kam
 s5584	Gemoglobin 100 g/l dan kam
 s5585	Megalotsitlar va Joli tanachalari qaysi anemiyaga xos?
-s5586	B12 va foliy kislotasi yetishmovchilik anemiyasi
+s5586	B~12~ va foliy kislotasi yetishmovchilik anemiyasi
 s5587	Talassemiya
 s5588	Irsiy sferotsitoz
 s5589	35 yoshli erkak avtohalokatda son arteriyasidan qon yo‘qotdi. Voqeadan 1 soat o‘tib shifoxonada: puls 125 marta/daqiqa, arterial bosim 90/60 mm sim. ust., teri rangpar, sovuq ter. Qon tahlili: Hb 138 g/l, eritrotsitlar 4,4 × 10^12^/l, gematokrit 42 %. Ertasi kuni: Hb 92 g/l, gematokrit 28 %. 6-kuni retikulotsitlar 6 %.
@@ -143,10 +143,10 @@ s5617	HbS, vazookklyuziv krizlar
 s5618	Supravital bo‘yash
 s5619	Retikulotsitlarni brilliant krezil ko‘k bilan aniqlash
 s5620	Taqchil anemiyalarning etiologiyasi va patogenezi. Temir, B12 vitamini va foliy kislotasi yetishmovchilik anemiyalari
-s5621	Talabaga temir, B12 vitamini va foliy kislotasining eritropoezdagi ahamiyatini, temir yetishmovchilik va megaloblast (B12 va foliy yetishmovchilik) anemiyalarining sabablari, patogenezi, gematologik belgilari va klinik ko‘rinishlarini, shuningdek aplastik anemiya va surunkali kasalliklar anemiyasini tushuntirish; temir va foliy taqchil anemiyali bemorlar qon surtmalarini o‘rganish, gemoglobin konsentratsiyasini aniqlash va rang ko‘rsatkichini hisoblashni o‘rgatish.
+s5621	Talabaga temir, B~12~ vitamini va foliy kislotasining eritropoezdagi ahamiyatini, temir yetishmovchilik va megaloblast (B~12~ va foliy yetishmovchilik) anemiyalarining sabablari, patogenezi, gematologik belgilari va klinik ko‘rinishlarini, shuningdek aplastik anemiya va surunkali kasalliklar anemiyasini tushuntirish; temir va foliy taqchil anemiyali bemorlar qon surtmalarini o‘rganish, gemoglobin konsentratsiyasini aniqlash va rang ko‘rsatkichini hisoblashni o‘rgatish.
 s5622	organizmda temir almashinuvini va uning boshqarilishini (gepsidin);
 s5623	temir yetishmovchiligining sabablari, bosqichlari va temir yetishmovchilik anemiyasining belgilarini;
-s5624	B12 vitamini va foliy kislotasi almashinuvi va ularning DNK sintezidagi rolini;
+s5624	B~12~ vitamini va foliy kislotasi almashinuvi va ularning DNK sintezidagi rolini;
 s5625	megaloblast anemiyalarning sabablari, patogenezi va qon manzarasini;
 s5626	pernitsioz (Addison–Birmer) anemiyasining mohiyatini va funikulyar mieloz mexanizmini;
 s5627	aplastik anemiya va surunkali kasalliklar anemiyasining asosiy xususiyatlarini;
@@ -155,8 +155,8 @@ s5629	temir yetishmovchilik va megaloblast anemiya surtmalarini farqlash;
 s5630	gemoglobin konsentratsiyasini aniqlash va rang ko‘rsatkichini hisoblash;
 s5631	temir almashinuvi ko‘rsatkichlarini (zardob temiri, ferritin, transferrinning temir bilan to‘yinishi) talqin qilish.
 s5632	Organizmda temirni faol chiqarib yuboruvchi fiziologik mexanizm **yo‘q** — temir balansi faqat ichakda so‘rilishni boshqarish orqali saqlanadi. Sutkalik yo‘qotish (epiteliy ko‘chishi, terlash) 1–2 mg, hayz ko‘ruvchi ayollarda qo‘shimcha 0,5–1 mg. **Gepsidin** (jigarda hosil bo‘ladi) ferroportinni parchalab, temirning ichakdan so‘rilishini va makrofaglardan chiqishini to‘xtatadi; temir ortiqchaligi va yallig‘lanishda (IL-6) gepsidin ko‘payadi, temir yetishmovchiligi va gipoksiyada kamayadi.
-s5633	**Funikulyar mieloz** — faqat B12 yetishmovchiligiga xos nevrologik asorat: orqa miyaning orqa va yon ustunlarida demielinizatsiya. Belgilari: oyoqlarda paresteziyalar, chuqur (vibratsion va mushak-bo‘g‘im) sezgining yo‘qolishi, ataksiya, spastik parezlar, xotira buzilishi. Foliy kislotasi yetishmovchiligida bunday nevrologik belgilar bo‘lmaydi.
-s5634	B12 yetishmovchiligi bor bemorni faqat foliy kislotasi bilan davolash xavfli: qon ko‘rsatkichlari qisman yaxshilanishi mumkin, ammo nevrologik buzilishlar kuchayib, qaytmas bo‘lib qoladi. Megaloblast anemiyada avval B12 va folat miqdorini aniqlash, B12 yetishmovchiligi istisno qilinmaguncha faqat foliy kislotasi bermaslik kerak.
+s5633	**Funikulyar mieloz** — faqat B~12~ yetishmovchiligiga xos nevrologik asorat: orqa miyaning orqa va yon ustunlarida demielinizatsiya. Belgilari: oyoqlarda paresteziyalar, chuqur (vibratsion va mushak-bo‘g‘im) sezgining yo‘qolishi, ataksiya, spastik parezlar, xotira buzilishi. Foliy kislotasi yetishmovchiligida bunday nevrologik belgilar bo‘lmaydi.
+s5634	B~12~ yetishmovchiligi bor bemorni faqat foliy kislotasi bilan davolash xavfli: qon ko‘rsatkichlari qisman yaxshilanishi mumkin, ammo nevrologik buzilishlar kuchayib, qaytmas bo‘lib qoladi. Megaloblast anemiyada avval B~12~ va folat miqdorini aniqlash, B~12~ yetishmovchiligi istisno qilinmaguncha faqat foliy kislotasi bermaslik kerak.
 s5635	1. Temir almashinuvi
 s5636	Kattalar organizmida 3–5 g temir bor: uning 65–70 foizi gemoglobin tarkibida, 20–30 foizi depoda (ferritin va gemosiderin), qolgani mioglobin va fermentlarda (sitoxromlar, katalaza).
 s5637	Rasm 18.1
@@ -192,7 +192,7 @@ s5666	mushak holsizligi, siydik tutolmaslik (sfinkterlar susayishi);
 s5667	bolalarda psixomotor rivojlanishning orqada qolishi.
 s5668	**Qon manzarasi:** gipoxrom (rang ko‘rsatkichi 0,85 dan kam, MCH kamaygan), mikrotsitar (MCV 80 fl dan kam) anemiya; anizotsitoz (mikrotsitoz), poykilotsitoz, eritrotsitlar halqasimon (anulotsitlar — markazi keng oqargan); retikulotsitlar me’yorda yoki kamaygan (giporegenerator); zardob temiri, ferritin va transferrinning temir bilan to‘yinishi kamaygan, zardobning umumiy temir bog‘lash qobiliyati oshgan.
 s5669	Kattalarda, ayniqsa erkaklar va menopauzadagi ayollarda temir yetishmovchilik anemiyasi aniqlansa, uning sababini — avvalo oshqozon-ichak yo‘llaridan yashirin qon ketishni (yo‘g‘on ichak raki, oshqozon raki, yara) — albatta izlash kerak. Temir preparatlari bilan davolab, sababni aniqlamaslik xavfli xato hisoblanadi.
-s5670	3. B12 vitamini va foliy kislotasi almashinuvi
+s5670	3. B~12~ vitamini va foliy kislotasi almashinuvi
 s5671	Rasm 18.2
-s5672	B12 vitaminining so‘rilishi
+s5672	B~12~ vitaminining so‘rilishi
 s5673	**B~12~ vitamini (kobalamin)** faqat hayvon mahsulotlarida bo‘ladi (go‘sht, jigar, tuxum, sut). Sutkalik ehtiyoj 2–3 mkg; jigardagi zahira 3–5 yilga yetadi — shuning uchun yetishmovchilik juda sekin rivojlanadi.

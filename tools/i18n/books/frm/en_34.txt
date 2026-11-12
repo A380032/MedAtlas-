@@ -1,215 +1,219 @@
-s6912 Fluoroquinolones
-s6913 2nd generation: ciprofloxacin, ofloxacin, norfloxacin; 3rd–4th generations (“respiratory”): levofloxacin, moxifloxacin, gemifloxacin
-s6914 Inhibitors of DNA gyrase (topoisomerase II) and topoisomerase IV — bactericidal
-s6915 Nitrofurans
-s6916 Nitrofurantoin, furazolidone, nifuroxazide, furazidin (Furagin), nitrofural (Furacilin)
-s6917 Reactive metabolites that damage DNA and proteins
-s6918 Nitroimidazoles
-s6919 Metronidazole, tinidazole, ornidazole, secnidazole
-s6920 Reduced in the anaerobic cell to form radicals that damage DNA — bactericidal
-s6921 Oxazolidinones
-s6922 Linezolid, tedizolid
-s6923 Block the initiation of protein synthesis on the 50S ribosomal subunit
-s6924 8-Hydroxyquinolines
-s6925 Nitroxoline, clioquinol
-s6926 Chelate metal ions
-s6927 Fosfomycin (a synthetic antibiotic)
-s6928 Fosfomycin trometamol
-s6929 Blocks the first step of cell wall synthesis
-s6930 4.1. Sulfonamides and co-trimoxazole
-s6931 **Mechanism.** Bacteria synthesize folic acid themselves from **PABA** (para-aminobenzoic acid) (humans obtain it from food). Sulfonamides are structurally similar to PABA — they **competitively inhibit dihydropteroate synthetase**. **Trimethoprim** inhibits **dihydrofolate reductase** at the next step. Together (**co-trimoxazole**) they produce sequential blockade, synergy and a bactericidal effect.
-s6932 **Uses of co-trimoxazole:** urinary tract infections (if local resistance is low), **Pneumocystis jirovecii pneumonia** (treatment and prevention — the drug of choice in HIV infection), nocardiosis, toxoplasmosis, skin infections caused by MRSA, shigellosis. **Sulfasalazine** — ulcerative colitis and rheumatoid arthritis (5-aminosalicylic acid is released in the intestine). **Sulfacetamide** eye drops (conjunctivitis), **silver sulfadiazine** — burns.
-s6933 Table 16.4. Adverse effects of sulfonamides and co-trimoxazole
-s6934 Allergic reactions, including Stevens–Johnson syndrome and toxic epidermal necrolysis
-s6935 The most dangerous; stop immediately
-s6936 Crystalluria
-s6937 Precipitates in acidic urine — drink plenty of fluids
-s6938 Hematologic: agranulocytosis, megaloblastic anemia (trimethoprim), hemolysis in G6PD deficiency
-s6939 Trimethoprim acts like amiloride (especially with ACE inhibitors)
-s6940 Kernicterus in newborns
-s6941 Displaces bilirubin from albumin — contraindicated in late pregnancy and in infants under 2 months
-s6942 Teratogenicity (1st trimester — folate antagonism)
-s6943 Enhances the effect of warfarin
-s6944 CYP2C9 inhibition
-s6945 4.2. Fluoroquinolones
-s6946 **Mechanism.** By inhibiting bacterial **DNA gyrase** (topoisomerase II; mainly in gram-negatives) and **topoisomerase IV** (mainly in gram-positives), they stop DNA replication — a **concentration-dependent bactericidal** effect.
-s6947 Table 16.5. Generations and spectrum of fluoroquinolones
-s6948 Spectrum
-s6949 1st (non-fluorinated quinolones)
-s6950 Nalidixic acid
-s6951 Gram-negatives (concentration only in urine)
-s6952 Historically — urinary tract
-s6953 Ciprofloxacin, ofloxacin, norfloxacin
-s6954 Gram-negatives (including Pseudomonas aeruginosa — ciprofloxacin), partly gram-positives, atypicals
-s6955 Complicated urinary tract infections, pyelonephritis, intestinal infections (salmonellosis, shigellosis), prostatitis, Pseudomonas infections, anthrax
-s6956 3rd–4th (“respiratory”)
-s6957 Levofloxacin, moxifloxacin
-s6958 + pneumococci (including penicillin-resistant ones), atypicals (mycoplasma, chlamydia, legionella); moxifloxacin — anaerobes
-s6959 Community-acquired pneumonia (alternative), severe sinusitis; drug-resistant tuberculosis (reserve)
-s6960 Because of **serious adverse effects of fluoroquinolones** (FDA and EMA warnings), they are **not recommended as first choice** in uncomplicated cystitis, acute bronchitis and mild sinusitis:
-s6961 **tendinitis and tendon (Achilles) rupture** — especially in people over 60 and together with **glucocorticoids**;
-s6962 peripheral neuropathy (may be irreversible), CNS disorders (dizziness, insomnia, psychosis, **seizures** — especially with NSAIDs);
-s6963 **QT prolongation** and arrhythmias;
-s6964 aortic aneurysm and dissection;
-s6965 dysglycemia (hypo- and hyperglycemia), photosensitivity, C. difficile colitis;
-s6966 contraindicated **in children and adolescents** (damage to growing joint cartilage) and **in pregnancy and breastfeeding** (except for special indications).
-s6967 **Interactions: antacids, calcium, iron, zinc and dairy products** form chelates with fluoroquinolones and sharply reduce their absorption (take 2 hours before or 6 hours after); ciprofloxacin inhibits CYP1A2 and increases the concentrations of **theophylline** and caffeine; it enhances the effect of warfarin.
-s6968 4.3. Nitrofurans
-s6969 **Nitrofurantoin** reaches therapeutic concentrations **only in urine** (low in blood). The **first-line** drug for **uncomplicated cystitis** (in women) (5 days), prevention of recurrent urinary tract infection. Resistance develops rarely. Ineffective and toxic at GFR < 30–45 ml/min. Adverse effects: nausea, brown urine; with long-term use — **pulmonary reactions** (acute pneumonitis, chronic fibrosis), peripheral neuropathy, hepatitis; hemolysis in G6PD deficiency and in newborns.
-s6970 **Nifuroxazide** — not absorbed from the intestine, used in bacterial diarrhea (in CIS countries). **Furazolidone** — intestinal infections, giardiasis; inhibits MAO, **disulfiram-like reaction with alcohol**. **Furazidin (Furagin)** — urinary tract.
-s6971 4.4. Nitroimidazoles
-s6972 In the cells of anaerobic microorganisms and protozoa, the nitro group of **metronidazole** is **reduced**, forming free radicals that damage DNA (this process does not occur in aerobic cells — the basis of its selective action).
-s6973 **Spectrum: anaerobic bacteria** (Bacteroides fragilis, Clostridioides difficile, Fusobacterium), **protozoa** (Trichomonas vaginalis, Giardia lamblia, Entamoeba histolytica), Gardnerella (bacterial vaginosis), H. pylori.
-s6974 **Uses:** anaerobic infections (abdominal, pelvic, abscesses — often with other antibiotics), **trichomoniasis** (both partners are treated), bacterial vaginosis, amebiasis, giardiasis, mild C. difficile colitis (vancomycin/fidaxomicin are now preferred), H. pylori eradication, prophylaxis in colorectal surgery.
-s6975 **Adverse effects: metallic taste in the mouth**, nausea, dark urine, **disulfiram-like reaction with alcohol** (facial flushing, tachycardia, vomiting — no alcohol during treatment and for 48–72 hours afterward), peripheral neuropathy and encephalopathy (with long-term and high-dose use), enhances the effect of warfarin; caution in the 1st trimester of pregnancy.
-s6976 4.5. Oxazolidinones and others
-s6977 **Linezolid** — active against gram-positive bacteria, including **MRSA** and **vancomycin-resistant enterococci (VRE)**; oral bioavailability ≈ 100%. A reserve antibiotic. Adverse effects: **myelosuppression** (thrombocytopenia — with use for more than 2 weeks), peripheral and optic neuropathy, lactic acidosis; inhibits MAO — **serotonin syndrome with SSRIs**, hypertension with tyramine.
-s6978 **Nitroxoline** (5-NOK) — urinary tract infections; colors the urine bright yellow.
-s6979 **Fosfomycin trometamol** — **a single dose in uncomplicated cystitis** (3 g), first line; also allowed in pregnant women.
-s6980 Table 16.6. Choice of synthetic antibacterial agent in urinary tract infections (adults)
-s6981 Clinical situation
-s6982 Alternative
-s6983 Uncomplicated acute cystitis in women
-s6984 Nitrofurantoin for 5 days or fosfomycin 3 g once
-s6985 Pivmecillinam; co-trimoxazole (resistance < 20%)
-s6986 Fluoroquinolones are not recommended
-s6987 Acute pyelonephritis (mild-moderate)
-s6988 Ciprofloxacin or levofloxacin for 7 days (resistance < 10%), cephalosporins
-s6989 Co-trimoxazole (if susceptible)
-s6990 Nitrofurantoin and fosfomycin are ineffective (low tissue concentration)
-s6991 Cystitis / asymptomatic bacteriuria in pregnancy
-s6992 Fosfomycin, amoxicillin/clavulanate, cephalexin
-s6993 Nitrofurantoin (not in the weeks before delivery)
-s6994 Fluoroquinolones, co-trimoxazole (1st and 3rd trimesters) — contraindicated
-s6995 Acute prostatitis in men
-s6996 Fluoroquinolones (2–4 weeks)
-s6997 Co-trimoxazole
-s6998 Penetrate the prostate well
-s6999 Table 16.7. Synthetic agents in other infections
-s7000 Infection
-s7001 Trichomoniasis, bacterial vaginosis
-s7002 Metronidazole (also the partner — in trichomoniasis)
-s7003 Anaerobic abdominal infection
-s7004 Metronidazole + a cephalosporin or a fluoroquinolone
-s7005 Pneumocystis pneumonia
-s7006 Co-trimoxazole (high dose)
-s7007 MRSA (severe)
-s7008 Linezolid, vancomycin
-s7009 Giardiasis, amebiasis
-s7010 Metronidazole, tinidazole
-s7011 Conjunctivitis (bacterial)
-s7012 Ofloxacin or sulfacetamide drops
-s7013 Skill 1. Hygienic hand disinfection with an alcohol-based hand rub (according to the WHO, 20–30 seconds)
-s7014 Put 3–5 ml of antiseptic into the palm (an amount that wets the hands completely).
-s7015 Rub palm to palm.
-s7016 Right palm over the back of the left hand (including between the fingers), and vice versa.
-s7017 Rub palm to palm with the fingers interlaced.
-s7018 Rub the backs of the bent fingers against the opposite palm.
-s7019 Rub the thumbs with a rotational movement.
-s7020 Rub the fingertips against the opposite palm with a rotational movement.
-s7021 Continue until the hands are dry (without wiping).
-s7022 **PRESCRIPTION 16.1. ETHYL ALCOHOL 70%** Rp.: Spiritus aethylici 70% — 100 ml
-s7023 D.S. For wiping the hands and the injection site.
-s7024 **PRESCRIPTION 16.2. CHLORHEXIDINE** Rp.: Solutionis Chlorhexidini bigluconatis 0.05% — 100 ml
-s7025 D.S. For irrigating wounds and rinsing the mouth.
-s7026 **PRESCRIPTION 16.3. POVIDONE-IODINE** Rp.: Solutionis Povidoni-iodi 10% — 120 ml
-s7027 D.S. For treating the surgical field and the skin around wounds.
-s7028 **PRESCRIPTION 16.4. ALCOHOLIC IODINE SOLUTION** Rp.: Solutionis Iodi spirituosae 5% — 10 ml
-s7029 D.S. For applying to the skin around a wound.
-s7030 **PRESCRIPTION 16.5. HYDROGEN PEROXIDE** Rp.: Solutionis Hydrogenii peroxydi 3% — 100 ml
-s7031 D.S. For cleaning wounds.
-s7032 **PRESCRIPTION 16.6. POTASSIUM PERMANGANATE** Rp.: Kalii permanganatis 5.0
-s7033 D.S. Dissolve a few crystals completely in water to prepare a 0.05% (pale pink) solution; for irrigating a wound.
-s7034 **PRESCRIPTION 16.7. BRILLIANT GREEN** Rp.: Solutionis Viridis nitentis spirituosae 1% — 10 ml
-s7035 D.S. Apply to minor skin wounds and pustules.
-s7036 **PRESCRIPTION 16.8. CIPROFLOXACIN** Rp.: Ciprofloxacini 0.5
-s7037 D.t.d. N. 14 in tabulettis obductis S. Take 1 tablet 2 times a day for 7 days, 2 hours before dairy products and antacids.
-s7038 **PRESCRIPTION 16.9. LEVOFLOXACIN** Rp.: Levofloxacini 0.5
-s7039 D.t.d. N. 7 in tabulettis obductis S. Take 1 tablet once a day.
-s7040 **PRESCRIPTION 16.10. CO-TRIMOXAZOLE** Rp.: Tabulettas “Co-trimoxazolum 960” N. 6
-s7041 D.S. Take 1 tablet 2 times a day for 3 days, with plenty of fluids.
-s7042 **PRESCRIPTION 16.11. NITROFURANTOIN** Rp.: Capsulas Nitrofurantoini 0.1 N. 10
-s7043 D.S. Take 1 capsule 2 times a day with food for 5 days.
-s7044 **PRESCRIPTION 16.12. FOSFOMYCIN** Rp.: Granulorum Fosfomycini trometamoli 3.0
-s7045 D.t.d. N. 1 S. Dissolve the contents of the sachet in 1/2 glass of water and take once in the evening after emptying the bladder.
-s7046 **PRESCRIPTION 16.13. METRONIDAZOLE (TABLETS)** Rp.: Metronidazoli 0.5
-s7047 D.t.d. N. 14 in tabulettis S. Take 1 tablet 2 times a day for 7 days; no alcohol during treatment and for 3 days afterward.
-s7048 **PRESCRIPTION 16.14. METRONIDAZOLE (INFUSION)** Rp.: Solutionis Metronidazoli 0.5% — 100 ml
-s7049 D.t.d. N. 10 S. 100 ml as an intravenous drip 3 times a day.
-s7050 **PRESCRIPTION 16.15. SULFACETAMIDE EYE DROPS** Rp.: Solutionis Sulfacetamidi natrii 20% — 10 ml
-s7051 D.S. Instill 1–2 drops into each eye 4–6 times a day.
-s7052 Concepts of antisepsis, disinfection and sterilization. The difference between antiseptic and chemotherapeutic agents.
-s7053 Requirements for antiseptics and factors affecting their activity.
-s7054 Classification and mechanisms of antiseptics.
-s7055 Why is 70% alcohol more effective than 96% alcohol?
-s7056 Features of iodine preparations, chlorhexidine, hydrogen peroxide and potassium permanganate.
-s7057 The 5 moments for hand hygiene and the disinfection technique.
-s7058 How is the mechanism of action of antiseptics studied in a laboratory experiment?
-s7059 Targets of antimicrobial drugs in the bacterial cell.
-s7060 Mechanisms of resistance. The AWaRe classification.
-s7061 Basic principles of antimicrobial therapy.
-s7062 Mechanism of sulfonamides and trimethoprim. Uses and adverse effects of co-trimoxazole.
-s7063 Why are sulfonamides ineffective in a purulent environment and with procaine?
-s7064 Mechanism, generations and spectrum of fluoroquinolones.
-s7065 Adverse effects, contraindications and interactions of fluoroquinolones.
-s7066 Uses and limitations of nitrofurantoin.
-s7067 Mechanism, spectrum, uses and adverse effects of metronidazole.
-s7068 Features of linezolid.
-s7069 The most effective concentration of ethyl alcohol for hand antisepsis:
-s7070 Which microorganisms does ethyl alcohol not act on?
-s7071 Fungi
-s7072 Escherichia coli
-s7073 Enveloped viruses
-s7074 Staphylococci
-s7075 Bacterial spores
-s7076 An antiseptic that cleans a wound mechanically by forming foam:
-s7077 Ethyl alcohol
-s7078 Hydrogen peroxide
-s7079 Brilliant green
-s7080 Furacilin
-s7081 The combination considered most effective for surgical field antisepsis:
-s7082 Chlorhexidine + alcohol
-s7083 Brilliant green + iodine
-s7084 Boric acid + phenol
-s7085 Potassium permanganate + alcohol
-s7086 Furacilin + hydrogen peroxide
-s7087 An aldehyde used to sterilize instruments:
-s7088 Ethacridine
-s7089 Glutaraldehyde
-s7090 Povidone-iodine
-s7091 Phenol
-s7092 Mechanism of action of sulfonamides:
-s7093 Disruption of cell wall synthesis
-s7094 Competitive inhibition of dihydropteroate synthetase (PABA antagonism)
-s7095 Inhibition of DNA gyrase
-s7096 Inhibition of RNA polymerase
-s7097 Blockade of the 30S ribosome
-s7098 A local anesthetic that reduces the antibacterial effect of sulfonamides:
-s7099 The drug of choice for treating and preventing Pneumocystis pneumonia in HIV infection:
-s7100 Nitrofurantoin
-s7101 Linezolid
-s7102 Mechanism of action of fluoroquinolones:
-s7103 Inhibition of beta-lactamase
-s7104 Disruption of folic acid synthesis
-s7105 Blockade of the 50S ribosome
-s7106 Inhibition of DNA gyrase and topoisomerase IV
-s7107 An adverse effect of fluoroquinolones whose risk increases when they are used together with glucocorticoids:
-s7108 Disulfiram-like reaction
-s7109 Tendon rupture
-s7110 A group that must not be used in children and pregnant women (joint cartilage damage):
-s7111 Penicillins
-s7112 Cephalosporins
-s7113 Fosfomycin
-s7114 A drug used as a single dose in uncomplicated cystitis:
-s7115 Sulfasalazine
-s7116 A drug that reaches therapeutic concentrations only in urine and is ineffective in pyelonephritis:
-s7117 Levofloxacin
-s7118 A drug that acts on anaerobes and protozoa and causes a disulfiram-like reaction with alcohol:
-s7119 Nitroxoline
-s7120 A synthetic antibacterial agent active against MRSA and VRE that may cause serotonin syndrome with SSRIs:
-s7121 A 26-year-old woman (not pregnant) has complained of frequent painful urination and suprapubic discomfort for 1 day. No fever or back pain. No comorbidities. A friend advised her to take ciprofloxacin.
-s7122 1) Diagnosis? 2) Optimal treatment? 3) Why is ciprofloxacin not the first choice?
-s7123 1) Uncomplicated acute cystitis. 2) Nitrofurantoin 100 mg 2 times a day for 5 days or fosfomycin trometamol 3 g once; plenty of fluids. 3) Fluoroquinolones are not recommended in uncomplicated cystitis because of the risk of serious adverse effects (tendons, nerves, aorta, QT) and their contribution to resistance — they are reserved for pyelonephritis and complicated infections.
-s7124 A 70-year-old man is taking levofloxacin for community-acquired pneumonia; he also takes prednisolone 30 mg/day for a COPD exacerbation. On day 5, while walking, he felt a “snap” and sharp pain above the heel and cannot push off with his foot.
-s7125 1) What complication? 2) Risk factors? 3) Management.
-s7126 1) Achilles tendon rupture — a serious adverse effect of fluoroquinolones. 2) Age > 60, concomitant use of glucocorticoids (especially dangerous); renal failure and transplantation are also risk factors. 3) Stop levofloxacin immediately and switch to an antibiotic of another group (beta-lactam + macrolide), immobilize the leg, an orthopedic consultation (conservative or surgical treatment); record the adverse effect in the medical records; avoid fluoroquinolones in the future.
+s6902 Combination
+s6903 Co-trimoxazole (sulfamethoxazole + trimethoprim 5:1)
+s6904 Two steps of folate synthesis — bactericidal
+s6905 Quinolones (1st generation)
+s6906 Nalidixic acid, pipemidic acid
+s6907 DNA gyrase inhibitors (urinary tract only)
+s6908 Fluoroquinolones
+s6909 2nd generation: ciprofloxacin, ofloxacin, norfloxacin; 3rd–4th generations (“respiratory”): levofloxacin, moxifloxacin, gemifloxacin
+s6910 Inhibitors of DNA gyrase (topoisomerase II) and topoisomerase IV — bactericidal
+s6911 Nitrofurans
+s6912 Nitrofurantoin, furazolidone, nifuroxazide, furazidin (Furagin), nitrofural (Furacilin)
+s6913 Reactive metabolites that damage DNA and proteins
+s6914 Nitroimidazoles
+s6915 Metronidazole, tinidazole, ornidazole, secnidazole
+s6916 Reduced in the anaerobic cell to form radicals that damage DNA — bactericidal
+s6917 Oxazolidinones
+s6918 Linezolid, tedizolid
+s6919 Block the initiation of protein synthesis on the 50S ribosomal subunit
+s6920 8-Hydroxyquinolines
+s6921 Nitroxoline, clioquinol
+s6922 Chelate metal ions
+s6923 Fosfomycin (a synthetic antibiotic)
+s6924 Fosfomycin trometamol
+s6925 Blocks the first step of cell wall synthesis
+s6926 4.1. Sulfonamides and co-trimoxazole
+s6927 **Mechanism.** Bacteria synthesize folic acid themselves from **PABA** (para-aminobenzoic acid) (humans obtain it from food). Sulfonamides are structurally similar to PABA — they **competitively inhibit dihydropteroate synthetase**. **Trimethoprim** inhibits **dihydrofolate reductase** at the next step. Together (**co-trimoxazole**) they produce sequential blockade, synergy and a bactericidal effect.
+s6928 **Uses of co-trimoxazole:** urinary tract infections (if local resistance is low), **Pneumocystis jirovecii pneumonia** (treatment and prevention — the drug of choice in HIV infection), nocardiosis, toxoplasmosis, skin infections caused by MRSA, shigellosis. **Sulfasalazine** — ulcerative colitis and rheumatoid arthritis (5-aminosalicylic acid is released in the intestine). **Sulfacetamide** eye drops (conjunctivitis), **silver sulfadiazine** — burns.
+s6929 Table 16.4. Adverse effects of sulfonamides and co-trimoxazole
+s6930 Allergic reactions, including Stevens–Johnson syndrome and toxic epidermal necrolysis
+s6931 The most dangerous; stop immediately
+s6932 Crystalluria
+s6933 Precipitates in acidic urine — drink plenty of fluids
+s6934 Hematologic: agranulocytosis, megaloblastic anemia (trimethoprim), hemolysis in G6PD deficiency
+s6935 Trimethoprim acts like amiloride (especially with ACE inhibitors)
+s6936 Kernicterus in newborns
+s6937 Displaces bilirubin from albumin — contraindicated in late pregnancy and in infants under 2 months
+s6938 Teratogenicity (1st trimester — folate antagonism)
+s6939 Enhances the effect of warfarin
+s6940 CYP2C9 inhibition
+s6941 4.2. Fluoroquinolones
+s6942 **Mechanism.** By inhibiting bacterial **DNA gyrase** (topoisomerase II; mainly in gram-negatives) and **topoisomerase IV** (mainly in gram-positives), they stop DNA replication — a **concentration-dependent bactericidal** effect.
+s6943 Table 16.5. Generations and spectrum of fluoroquinolones
+s6944 Spectrum
+s6945 1st (non-fluorinated quinolones)
+s6946 Nalidixic acid
+s6947 Gram-negatives (concentration only in urine)
+s6948 Historically — urinary tract
+s6949 Ciprofloxacin, ofloxacin, norfloxacin
+s6950 Gram-negatives (including Pseudomonas aeruginosa — ciprofloxacin), partly gram-positives, atypicals
+s6951 Complicated urinary tract infections, pyelonephritis, intestinal infections (salmonellosis, shigellosis), prostatitis, Pseudomonas infections, anthrax
+s6952 3rd–4th (“respiratory”)
+s6953 Levofloxacin, moxifloxacin
+s6954 + pneumococci (including penicillin-resistant ones), atypicals (mycoplasma, chlamydia, legionella); moxifloxacin — anaerobes
+s6955 Community-acquired pneumonia (alternative), severe sinusitis; drug-resistant tuberculosis (reserve)
+s6956 Because of **serious adverse effects of fluoroquinolones** (FDA and EMA warnings), they are **not recommended as first choice** in uncomplicated cystitis, acute bronchitis and mild sinusitis:
+s6957 **tendinitis and tendon (Achilles) rupture** — especially in people over 60 and together with **glucocorticoids**;
+s6958 peripheral neuropathy (may be irreversible), CNS disorders (dizziness, insomnia, psychosis, **seizures** — especially with NSAIDs);
+s6959 **QT prolongation** and arrhythmias;
+s6960 aortic aneurysm and dissection;
+s6961 dysglycemia (hypo- and hyperglycemia), photosensitivity, C. difficile colitis;
+s6962 contraindicated **in children and adolescents** (damage to growing joint cartilage) and **in pregnancy and breastfeeding** (except for special indications).
+s6963 **Interactions: antacids, calcium, iron, zinc and dairy products** form chelates with fluoroquinolones and sharply reduce their absorption (take 2 hours before or 6 hours after); ciprofloxacin inhibits CYP1A2 and increases the concentrations of **theophylline** and caffeine; it enhances the effect of warfarin.
+s6964 4.3. Nitrofurans
+s6965 **Nitrofurantoin** reaches therapeutic concentrations **only in urine** (low in blood). The **first-line** drug for **uncomplicated cystitis** (in women) (5 days), prevention of recurrent urinary tract infection. Resistance develops rarely. Ineffective and toxic at GFR < 30–45 ml/min. Adverse effects: nausea, brown urine; with long-term use — **pulmonary reactions** (acute pneumonitis, chronic fibrosis), peripheral neuropathy, hepatitis; hemolysis in G6PD deficiency and in newborns.
+s6966 **Nifuroxazide** — not absorbed from the intestine, used in bacterial diarrhea (in CIS countries). **Furazolidone** — intestinal infections, giardiasis; inhibits MAO, **disulfiram-like reaction with alcohol**. **Furazidin (Furagin)** — urinary tract.
+s6967 4.4. Nitroimidazoles
+s6968 In the cells of anaerobic microorganisms and protozoa, the nitro group of **metronidazole** is **reduced**, forming free radicals that damage DNA (this process does not occur in aerobic cells — the basis of its selective action).
+s6969 **Spectrum: anaerobic bacteria** (Bacteroides fragilis, Clostridioides difficile, Fusobacterium), **protozoa** (Trichomonas vaginalis, Giardia lamblia, Entamoeba histolytica), Gardnerella (bacterial vaginosis), H. pylori.
+s6970 **Uses:** anaerobic infections (abdominal, pelvic, abscesses — often with other antibiotics), **trichomoniasis** (both partners are treated), bacterial vaginosis, amebiasis, giardiasis, mild C. difficile colitis (vancomycin/fidaxomicin are now preferred), H. pylori eradication, prophylaxis in colorectal surgery.
+s6971 **Adverse effects: metallic taste in the mouth**, nausea, dark urine, **disulfiram-like reaction with alcohol** (facial flushing, tachycardia, vomiting — no alcohol during treatment and for 48–72 hours afterward), peripheral neuropathy and encephalopathy (with long-term and high-dose use), enhances the effect of warfarin; caution in the 1st trimester of pregnancy.
+s6972 4.5. Oxazolidinones and others
+s6973 **Linezolid** — active against gram-positive bacteria, including **MRSA** and **vancomycin-resistant enterococci (VRE)**; oral bioavailability ≈ 100%. A reserve antibiotic. Adverse effects: **myelosuppression** (thrombocytopenia — with use for more than 2 weeks), peripheral and optic neuropathy, lactic acidosis; inhibits MAO — **serotonin syndrome with SSRIs**, hypertension with tyramine.
+s6974 **Nitroxoline** (5-NOK) — urinary tract infections; colors the urine bright yellow.
+s6975 **Fosfomycin trometamol** — **a single dose in uncomplicated cystitis** (3 g), first line; also allowed in pregnant women.
+s6976 Table 16.6. Choice of synthetic antibacterial agent in urinary tract infections (adults)
+s6977 Clinical situation
+s6978 Alternative
+s6979 Uncomplicated acute cystitis in women
+s6980 Nitrofurantoin for 5 days or fosfomycin 3 g once
+s6981 Pivmecillinam; co-trimoxazole (resistance < 20%)
+s6982 Fluoroquinolones are not recommended
+s6983 Acute pyelonephritis (mild-moderate)
+s6984 Ciprofloxacin or levofloxacin for 7 days (resistance < 10%), cephalosporins
+s6985 Co-trimoxazole (if susceptible)
+s6986 Nitrofurantoin and fosfomycin are ineffective (low tissue concentration)
+s6987 Cystitis / asymptomatic bacteriuria in pregnancy
+s6988 Fosfomycin, amoxicillin/clavulanate, cephalexin
+s6989 Nitrofurantoin (not in the weeks before delivery)
+s6990 Fluoroquinolones, co-trimoxazole (1st and 3rd trimesters) — contraindicated
+s6991 Acute prostatitis in men
+s6992 Fluoroquinolones (2–4 weeks)
+s6993 Co-trimoxazole
+s6994 Penetrate the prostate well
+s6995 Table 16.7. Synthetic agents in other infections
+s6996 Infection
+s6997 Trichomoniasis, bacterial vaginosis
+s6998 Metronidazole (also the partner — in trichomoniasis)
+s6999 Anaerobic abdominal infection
+s7000 Metronidazole + a cephalosporin or a fluoroquinolone
+s7001 Pneumocystis pneumonia
+s7002 Co-trimoxazole (high dose)
+s7003 MRSA (severe)
+s7004 Linezolid, vancomycin
+s7005 Giardiasis, amebiasis
+s7006 Metronidazole, tinidazole
+s7007 Conjunctivitis (bacterial)
+s7008 Ofloxacin or sulfacetamide drops
+s7009 Skill 1. Hygienic hand disinfection with an alcohol-based hand rub (according to the WHO, 20–30 seconds)
+s7010 Put 3–5 ml of antiseptic into the palm (an amount that wets the hands completely).
+s7011 Rub palm to palm.
+s7012 Right palm over the back of the left hand (including between the fingers), and vice versa.
+s7013 Rub palm to palm with the fingers interlaced.
+s7014 Rub the backs of the bent fingers against the opposite palm.
+s7015 Rub the thumbs with a rotational movement.
+s7016 Rub the fingertips against the opposite palm with a rotational movement.
+s7017 Continue until the hands are dry (without wiping).
+s7018 **PRESCRIPTION 16.1. ETHYL ALCOHOL 70%** Rp.: Spiritus aethylici 70% — 100 ml
+s7019 D.S. For wiping the hands and the injection site.
+s7020 **PRESCRIPTION 16.2. CHLORHEXIDINE** Rp.: Solutionis Chlorhexidini bigluconatis 0.05% — 100 ml
+s7021 D.S. For irrigating wounds and rinsing the mouth.
+s7022 **PRESCRIPTION 16.3. POVIDONE-IODINE** Rp.: Solutionis Povidoni-iodi 10% — 120 ml
+s7023 D.S. For treating the surgical field and the skin around wounds.
+s7024 **PRESCRIPTION 16.4. ALCOHOLIC IODINE SOLUTION** Rp.: Solutionis Iodi spirituosae 5% — 10 ml
+s7025 D.S. For applying to the skin around a wound.
+s7026 **PRESCRIPTION 16.5. HYDROGEN PEROXIDE** Rp.: Solutionis Hydrogenii peroxydi 3% — 100 ml
+s7027 D.S. For cleaning wounds.
+s7028 **PRESCRIPTION 16.6. POTASSIUM PERMANGANATE** Rp.: Kalii permanganatis 5.0
+s7029 D.S. Dissolve a few crystals completely in water to prepare a 0.05% (pale pink) solution; for irrigating a wound.
+s7030 **PRESCRIPTION 16.7. BRILLIANT GREEN** Rp.: Solutionis Viridis nitentis spirituosae 1% — 10 ml
+s7031 D.S. Apply to minor skin wounds and pustules.
+s7032 **PRESCRIPTION 16.8. CIPROFLOXACIN** Rp.: Ciprofloxacini 0.5
+s7033 D.t.d. N. 14 in tabulettis obductis S. Take 1 tablet 2 times a day for 7 days, 2 hours before dairy products and antacids.
+s7034 **PRESCRIPTION 16.9. LEVOFLOXACIN** Rp.: Levofloxacini 0.5
+s7035 D.t.d. N. 7 in tabulettis obductis S. Take 1 tablet once a day.
+s7036 **PRESCRIPTION 16.10. CO-TRIMOXAZOLE** Rp.: Tabulettas “Co-trimoxazolum 960” N. 6
+s7037 D.S. Take 1 tablet 2 times a day for 3 days, with plenty of fluids.
+s7038 **PRESCRIPTION 16.11. NITROFURANTOIN** Rp.: Capsulas Nitrofurantoini 0.1 N. 10
+s7039 D.S. Take 1 capsule 2 times a day with food for 5 days.
+s7040 **PRESCRIPTION 16.12. FOSFOMYCIN** Rp.: Granulorum Fosfomycini trometamoli 3.0
+s7041 D.t.d. N. 1 S. Dissolve the contents of the sachet in 1/2 glass of water and take once in the evening after emptying the bladder.
+s7042 **PRESCRIPTION 16.13. METRONIDAZOLE (TABLETS)** Rp.: Metronidazoli 0.5
+s7043 D.t.d. N. 14 in tabulettis S. Take 1 tablet 2 times a day for 7 days; no alcohol during treatment and for 3 days afterward.
+s7044 **PRESCRIPTION 16.14. METRONIDAZOLE (INFUSION)** Rp.: Solutionis Metronidazoli 0.5% — 100 ml
+s7045 D.t.d. N. 10 S. 100 ml as an intravenous drip 3 times a day.
+s7046 **PRESCRIPTION 16.15. SULFACETAMIDE EYE DROPS** Rp.: Solutionis Sulfacetamidi natrii 20% — 10 ml
+s7047 D.S. Instill 1–2 drops into each eye 4–6 times a day.
+s7048 Concepts of antisepsis, disinfection and sterilization. The difference between antiseptic and chemotherapeutic agents.
+s7049 Requirements for antiseptics and factors affecting their activity.
+s7050 Classification and mechanisms of antiseptics.
+s7051 Why is 70% alcohol more effective than 96% alcohol?
+s7052 Features of iodine preparations, chlorhexidine, hydrogen peroxide and potassium permanganate.
+s7053 The 5 moments for hand hygiene and the disinfection technique.
+s7054 How is the mechanism of action of antiseptics studied in a laboratory experiment?
+s7055 Targets of antimicrobial drugs in the bacterial cell.
+s7056 Mechanisms of resistance. The AWaRe classification.
+s7057 Basic principles of antimicrobial therapy.
+s7058 Mechanism of sulfonamides and trimethoprim. Uses and adverse effects of co-trimoxazole.
+s7059 Why are sulfonamides ineffective in a purulent environment and with procaine?
+s7060 Mechanism, generations and spectrum of fluoroquinolones.
+s7061 Adverse effects, contraindications and interactions of fluoroquinolones.
+s7062 Uses and limitations of nitrofurantoin.
+s7063 Mechanism, spectrum, uses and adverse effects of metronidazole.
+s7064 Features of linezolid.
+s7065 The most effective concentration of ethyl alcohol for hand antisepsis:
+s7066 Which microorganisms does ethyl alcohol not act on?
+s7067 Fungi
+s7068 Escherichia coli
+s7069 Enveloped viruses
+s7070 Staphylococci
+s7071 Bacterial spores
+s7072 An antiseptic that cleans a wound mechanically by forming foam:
+s7073 Ethyl alcohol
+s7074 Hydrogen peroxide
+s7075 Brilliant green
+s7076 Furacilin
+s7077 The combination considered most effective for surgical field antisepsis:
+s7078 Chlorhexidine + alcohol
+s7079 Brilliant green + iodine
+s7080 Boric acid + phenol
+s7081 Potassium permanganate + alcohol
+s7082 Furacilin + hydrogen peroxide
+s7083 An aldehyde used to sterilize instruments:
+s7084 Ethacridine
+s7085 Glutaraldehyde
+s7086 Povidone-iodine
+s7087 Phenol
+s7088 Mechanism of action of sulfonamides:
+s7089 Disruption of cell wall synthesis
+s7090 Competitive inhibition of dihydropteroate synthetase (PABA antagonism)
+s7091 Inhibition of DNA gyrase
+s7092 Inhibition of RNA polymerase
+s7093 Blockade of the 30S ribosome
+s7094 A local anesthetic that reduces the antibacterial effect of sulfonamides:
+s7095 The drug of choice for treating and preventing Pneumocystis pneumonia in HIV infection:
+s7096 Nitrofurantoin
+s7097 Linezolid
+s7098 Mechanism of action of fluoroquinolones:
+s7099 Inhibition of beta-lactamase
+s7100 Disruption of folic acid synthesis
+s7101 Blockade of the 50S ribosome
+s7102 Inhibition of DNA gyrase and topoisomerase IV
+s7103 An adverse effect of fluoroquinolones whose risk increases when they are used together with glucocorticoids:
+s7104 Disulfiram-like reaction
+s7105 Tendon rupture
+s7106 A group that must not be used in children and pregnant women (joint cartilage damage):
+s7107 Penicillins
+s7108 Cephalosporins
+s7109 Fosfomycin
+s7110 A drug used as a single dose in uncomplicated cystitis:
+s7111 Sulfasalazine
+s7112 A drug that reaches therapeutic concentrations only in urine and is ineffective in pyelonephritis:
+s7113 Levofloxacin
+s7114 A drug that acts on anaerobes and protozoa and causes a disulfiram-like reaction with alcohol:
+s7115 Nitroxoline
+s7116 A synthetic antibacterial agent active against MRSA and VRE that may cause serotonin syndrome with SSRIs:
+s7117 A 26-year-old woman (not pregnant) has complained of frequent painful urination and suprapubic discomfort for 1 day. No fever or back pain. No comorbidities. A friend advised her to take ciprofloxacin.
+s7118 1) Diagnosis? 2) Optimal treatment? 3) Why is ciprofloxacin not the first choice?
+s7119 1) Uncomplicated acute cystitis. 2) Nitrofurantoin 100 mg 2 times a day for 5 days or fosfomycin trometamol 3 g once; plenty of fluids. 3) Fluoroquinolones are not recommended in uncomplicated cystitis because of the risk of serious adverse effects (tendons, nerves, aorta, QT) and their contribution to resistance — they are reserved for pyelonephritis and complicated infections.
+s7120 A 70-year-old man is taking levofloxacin for community-acquired pneumonia; he also takes prednisolone 30 mg/day for a COPD exacerbation. On day 5, while walking, he felt a “snap” and sharp pain above the heel and cannot push off with his foot.

@@ -1,3 +1,4 @@
+s0441	Gematoidin
 s0442	Gemosiderin
 s0443	Melanin
 s0444	Gidronefroz qaysi atrofiya turiga misol bo‘ladi?
@@ -83,7 +84,7 @@ s0523	taloq ishemik infarkti, o‘pka gemorragik infarkti, oyoq gangrenasi, gang
 s0524	buyrak kanalchalari epiteliysi nekrozi, kazeoz nekroz, Kaunsilmen tanachalari mikropreparatlarini tavsiflash;
 s0525	nekroz va apoptozni farqlash, nekroz turlarini klinik vaziyatlar bilan bog‘lash.
 s0526	**Qaytar zararlanish** — zararli omil olib tashlansa, hujayra normal holatiga qaytadi. Uning ikki asosiy morfologik belgisi: **hujayra shishi** va **yog‘ o‘zgarishi**. **Qaytmas zararlanish** belgilari — **mitoxondriyalarning og‘ir disfunksiyasi** (ATF hosil qilish qobiliyatini butunlay yo‘qotishi, matriksda amorf zichliklar) va **membranalar** (plazmatik va lizosoma membranalari) **chuqur buzilishi**. Bu ikki hodisa — hujayraning “qaytib bo‘lmaydigan nuqtasi”.
-s0527	Erkin radikallardan himoya qiluvchi fermentlar — **“KaSuG”**: **Ka**talaza, **Su**peroksiddismutaza, **G**lutationperoksidaza. Gidroksil radikal (•OH) hosil bo‘lishini “**temir + peroksid = Fenton**” deb eslang: shuning uchun gemoxromatozda (temir ortiqchaligi) jigar va yurak hujayralari zararlanadi.
+s0527	Erkin radikallardan himoya qiluvchi fermentlar — **“KaSuG”**: **Ka**talaza, **Su**peroksiddismutaza, **G**lutationperoksidaza. Gidroksil radikal (^•^OH) hosil bo‘lishini “**temir + peroksid = Fenton**” deb eslang: shuning uchun gemoxromatozda (temir ortiqchaligi) jigar va yurak hujayralari zararlanadi.
 s0528	Nekroz har doim **patologik** jarayon: u **bir guruh hujayralar**ni qamrab oladi, membranalar butunligi buziladi, hujayra ichidagi moddalar tashqariga chiqadi va **yallig‘lanish chaqiradi**. Apoptoz esa ko‘pincha **fiziologik**, alohida hujayralarda yuz beradi, membrana saqlanadi va yallig‘lanish **chaqirmaydi**.
 s0529	Yadro o‘zgarishlari tartibi — **“Pi-Rek-Liz”**: **Pi**knoz (burishadi) → kario**rek**sis (parchalanadi) → kario**liz** (eriydi). Xuddi shunday sitoplazma uchun: **koagulyatsiya → reksis → liz**.
 s0530	Apoptoz kaspazalarini eslab qolish: **“Ichki — 9, Tashqi — 8, Ijro — 3 va 6”**. Ichki yo‘lni **“mitoxondriya darvozasi”** deb tasavvur qiling: BCL2 — darvoza qo‘riqchisi (yopiq tutadi), BAX/BAK — darvozani buzuvchilar, sitoxrom c — darvozadan chiqqan “o‘lim xabarchisi”.
@@ -100,34 +101,34 @@ s0540	Shu sababli to‘satdan vafot etgan bemorda miokard infarktining makroskop
 s0541	2.2. Hujayra zararlanishining mexanizmlari
 s0542	ATF kamayishi
 s0543	ATF (adenozintrifosfat) asosan mitoxondriyalarda oksidlanishli fosforlanish yo‘li bilan hosil bo‘ladi. **Gipoksiya va ishemiya**, mitoxondriya zaharlari (sianid) ATF zahiralarini tez kamaytiradi. ATF ning 5–10% gacha kamayishi quyidagi oqibatlarga olib keladi:
-s0544	**Na^+^/K^+^-ATFaza** (natriy nasosi) ishi susayadi — hujayraga Na+ va suv kiradi, K+ chiqadi: **hujayra shishi**, EPT kengayishi;
+s0544	**Na^+^/K^+^-ATFaza** (natriy nasosi) ishi susayadi — hujayraga Na^+^ va suv kiradi, K^+^ chiqadi: **hujayra shishi**, EPT kengayishi;
 s0545	**anaerob glikoliz** kuchayadi — glikogen zahiralari tugaydi, sut kislotasi to‘planadi, **pH pasayadi**: yadro xromatini to‘planib qoladi (kondensatsiya), fermentlar faolligi o‘zgaradi;
 s0546	**Ca^2+^ nasosi** ishdan chiqadi — sitoplazmada kalsiy ko‘payadi;
 s0547	**ribosomalar** donador EPT dan ajraladi, polisomalar parchalanadi — **oqsil sintezi kamayadi**;
 s0548	noto‘g‘ri buklangan oqsillar to‘planib, “EPT stressi” (javob bermagan oqsillar reaksiyasi) va apoptozni chaqiradi.
 s0549	Mitoxondriyalarning zararlanishi
-s0550	Mitoxondriyalar sitoplazmadagi Ca2+ ortishi, erkin radikallar va gipoksiya ta’sirida zararlanadi. Ichki membranada yuqori o‘tkazuvchanlikka ega kanal — **mitoxondrial o‘tkazuvchanlik o‘tish teshigi** (permeability transition pore) ochiladi, membrana potensiali yo‘qoladi va oksidlanishli fosforlanish to‘xtaydi. Bundan tashqari, membranalararo bo‘shliqdan **sitoxrom c** va boshqa oqsillar sitoplazmaga chiqib, apoptozni boshlaydi. Shunday qilib, mitoxondriyalar zararlanishi hujayrani ikki yo‘ldan biri bilan o‘limga olib keladi: ATF tugashi — **nekroz**, sitoxrom c chiqishi — **apoptoz**.
+s0550	Mitoxondriyalar sitoplazmadagi Ca^2+^ ortishi, erkin radikallar va gipoksiya ta’sirida zararlanadi. Ichki membranada yuqori o‘tkazuvchanlikka ega kanal — **mitoxondrial o‘tkazuvchanlik o‘tish teshigi** (permeability transition pore) ochiladi, membrana potensiali yo‘qoladi va oksidlanishli fosforlanish to‘xtaydi. Bundan tashqari, membranalararo bo‘shliqdan **sitoxrom c** va boshqa oqsillar sitoplazmaga chiqib, apoptozni boshlaydi. Shunday qilib, mitoxondriyalar zararlanishi hujayrani ikki yo‘ldan biri bilan o‘limga olib keladi: ATF tugashi — **nekroz**, sitoxrom c chiqishi — **apoptoz**.
 s0551	Kalsiy gomeostazining buzilishi
-s0552	Normada sitoplazmadagi erkin Ca2+ konsentratsiyasi hujayradan tashqaridagidan 10 000 marta kam. Ishemiya va toksinlar ta’sirida Ca2+ hujayra tashqarisidan va hujayra ichi zahiralaridan (mitoxondriyalar, EPT) sitoplazmaga chiqadi. Ortiqcha Ca2+ quyidagi fermentlarni faollashtiradi:
+s0552	Normada sitoplazmadagi erkin Ca^2+^ konsentratsiyasi hujayradan tashqaridagidan 10 000 marta kam. Ishemiya va toksinlar ta’sirida Ca^2+^ hujayra tashqarisidan va hujayra ichi zahiralaridan (mitoxondriyalar, EPT) sitoplazmaga chiqadi. Ortiqcha Ca^2+^ quyidagi fermentlarni faollashtiradi:
 s0553	**fosfolipazalar** — membranalarni parchalaydi;
 s0554	**proteazalar** — membrana va sitoskelet oqsillarini parchalaydi;
 s0555	**endonukleazalar** — DNK va xromatinni parchalaydi;
-s0556	**ATFazalar** — ATF tugashini tezlashtiradi. Bundan tashqari, Ca2+ mitoxondrial o‘tkazuvchanlik teshigini ochadi va apoptozni boshlaydi.
+s0556	**ATFazalar** — ATF tugashini tezlashtiradi. Bundan tashqari, Ca^2+^ mitoxondrial o‘tkazuvchanlik teshigini ochadi va apoptozni boshlaydi.
 s0557	Erkin radikallar (oksidlovchi stress)
-s0558	**Erkin radikallar** — tashqi orbitasida juftlashmagan elektroni bo‘lgan, o‘ta faol molekulalar. Hujayra zararlanishida eng muhimi — **kislorodning faol shakllari (KFSH)**: superoksid anion (O2−), vodorod peroksid (H2O2) va eng faoli — gidroksil radikal (•OH).
+s0558	**Erkin radikallar** — tashqi orbitasida juftlashmagan elektroni bo‘lgan, o‘ta faol molekulalar. Hujayra zararlanishida eng muhimi — **kislorodning faol shakllari (KFSH)**: superoksid anion (O~2~^−^), vodorod peroksid (H~2~O~2~) va eng faoli — gidroksil radikal (^•^OH).
 s0559	Erkin radikallar hosil bo‘lish manbalari:
 s0560	normal metabolizm — mitoxondriyalarda kislorodning to‘liq qaytarilmasligi;
-s0561	ionlovchi nurlanish (suvni gidroliz qilib •OH hosil qiladi);
+s0561	ionlovchi nurlanish (suvni gidroliz qilib ^•^OH hosil qiladi);
 s0562	yallig‘lanishda neytrofil va makrofaglarning “nafas portlashi” (NADF-oksidaza);
-s0563	dorilar va kimyoviy moddalar metabolizmi (CCl4, paratsetamol);
-s0564	o‘tish metallari — temir va mis (Fenton reaksiyasi: Fe2+ + H2O2 → Fe3+ + •OH + OH−);
+s0563	dorilar va kimyoviy moddalar metabolizmi (CCl~4~, paratsetamol);
+s0564	o‘tish metallari — temir va mis (Fenton reaksiyasi: Fe^2+^ + H~2~O~2~ → Fe^3+^ + ^•^OH + OH^−^);
 s0565	azot oksidi (NO) — peroksinitrit hosil qiladi.
 s0566	Erkin radikallarning zararli ta’siri:
 s0567	**Membranalarda lipidlarning perekisli oksidlanishi** — to‘yinmagan yog‘ kislotalari bilan zanjir reaksiyasi.
 s0568	**Oqsillarning oksidlanishi** — oqsillarning buklanishi buziladi, fermentlar faolligi yo‘qoladi, proteasomalarda parchalanish kuchayadi.
-s0569	**DNK zararlanishi** — bir zanjirli uzilishlar, mutatsiyalar; hujayra qarishi va o‘sma o‘zgarishiga hissa qo‘shadi. **Antioksidant himoya tizimi:** antioksidant vitaminlar (E, A, C vitaminlari, beta-karotin, glutation), temir va misni bog‘lovchi oqsillar (transferrin, ferritin, laktoferrin, seruloplazmin) va fermentlar — **katalaza** (H2O2 ni parchalaydi), **superoksiddismutaza** (O2− ni H2O2 ga aylantiradi), **glutationperoksidaza**.
+s0569	**DNK zararlanishi** — bir zanjirli uzilishlar, mutatsiyalar; hujayra qarishi va o‘sma o‘zgarishiga hissa qo‘shadi. **Antioksidant himoya tizimi:** antioksidant vitaminlar (E, A, C vitaminlari, beta-karotin, glutation), temir va misni bog‘lovchi oqsillar (transferrin, ferritin, laktoferrin, seruloplazmin) va fermentlar — **katalaza** (H~2~O~2~ ni parchalaydi), **superoksiddismutaza** (O~2~^−^ ni H~2~O~2~ ga aylantiradi), **glutationperoksidaza**.
 s0570	Membranalarning zararlanishi va DNK zararlanishi
 s0571	Membrana zararlanishi ko‘pchilik zararlanish turlarida yakuniy bosqich hisoblanadi. Uning sabablari: KFSH (lipidlar perekisli oksidlanishi), fosfolipidlar sintezining kamayishi, fosfolipazalar faollashuvi, sitoskelet buzilishi. Natijada:
 s0572	**mitoxondriya membranasi** zararlanishi — ATF hosil bo‘lishi to‘xtaydi, apoptoz omillari chiqadi;
 s0573	**plazmatik membrana** zararlanishi — osmotik muvozanat buziladi, hujayra ichidagi moddalar chiqib ketadi;
-s0574	**lizosoma membranasi** zararlanishi — fermentlar (RNKaza, DNKaza, proteazalar, fosfatazalar) sitoplazmaga chiqib, hujayrani **“o‘z-o‘zini hazm qilish”**ga olib keladi — bu nekroz morfologiyasining asosi. **DNK zararlanishi** (nurlanish, kimyoterapiya dorilari, KFSH ta’sirida) **p53** oqsilini faollashtiradi: u hujayra siklini G1 fazasida to‘xtatib, DNK reparatsiyasiga vaqt beradi. Zararlanish tuzatib bo‘lmaydigan darajada bo‘lsa, p53 **apoptozni** boshlaydi.
+s0574	**lizosoma membranasi** zararlanishi — fermentlar (RNKaza, DNKaza, proteazalar, fosfatazalar) sitoplazmaga chiqib, hujayrani **“o‘z-o‘zini hazm qilish”**ga olib keladi — bu nekroz morfologiyasining asosi. **DNK zararlanishi** (nurlanish, kimyoterapiya dorilari, KFSH ta’sirida) **p53** oqsilini faollashtiradi: u hujayra siklini G~1~ fazasida to‘xtatib, DNK reparatsiyasiga vaqt beradi. Zararlanish tuzatib bo‘lmaydigan darajada bo‘lsa, p53 **apoptozni** boshlaydi.

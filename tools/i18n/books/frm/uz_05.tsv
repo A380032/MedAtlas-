@@ -82,7 +82,7 @@ s0955	C% = (mg/ml) / 10
 s0956	Foizdan mg/ml ga
 s0957	mg/ml = C% × 10
 s0958	Suyultirish
-s0959	C1 × V1 = C2 × V2
+s0959	C~1~ × V~1~ = C~2~ × V~2~
 s0960	Bir ml dagi modda (ampula)
 s0961	Kerakli hajm (ml)
 s0962	V = kerakli doza (mg) / konsentratsiya (mg/ml)
@@ -94,7 +94,7 @@ s0967	2% = 20 mg/ml; 20 × 2 = **40 mg**.
 s0968	**2-misol.** Bemorga 4 mg deksametazon kerak. Ampulada 4 mg/ml eritma bor. Qancha ml olinadi?
 s0969	V = 4 / 4 = **1 ml**.
 s0970	**3-misol.** 40% li glyukoza eritmasidan 200 ml 5% li eritma tayyorlash kerak. 40% li eritmadan qancha olinadi?
-s0971	C1 × V1 = C2 × V2 → 40 × V1 = 5 × 200 → V1 = **25 ml**; qolgan 175 ml in’yeksiya uchun suv qo‘shiladi.
+s0971	C~1~ × V~1~ = C~2~ × V~2~ → 40 × V~1~ = 5 × 200 → V~1~ = **25 ml**; qolgan 175 ml in’yeksiya uchun suv qo‘shiladi.
 s0972	**4-misol.** 1000 ml infuziyani 8 soatda yuborish kerak. Tomizgich 1 ml = 20 tomchi. Tezlik qancha?
 s0973	1000 × 20 / 480 ≈ **42 tomchi/daqiqa**.
 s0974	**5-misol.** Vazni 12 kg bo‘lgan bolaga amoksitsillin 25 mg/kg dan kuniga 2 marta buyurildi. Suspenziya 250 mg/5 ml. Bir martada necha ml beriladi?
@@ -143,10 +143,10 @@ s1016	Quruq kukun bo‘lsa: kukunga retsept (D.t.d. N.), keyin **#** va erituvch
 s1017	Signaturada yuborish yo‘lini (venaga, mushak ichiga, teri ostiga), tezligini va sonini aniq yozing.
 s1018	Moyli eritma va suspenziya venaga yozilmaganini tekshiring.
 s1019	3-ko‘nikma. Konsentrlangan eritmadan kerakli konsentratsiyani tayyorlash
-s1020	Kerakli eritmaning hajmi va konsentratsiyasini yozing (C2, V2).
+s1020	Kerakli eritmaning hajmi va konsentratsiyasini yozing (C~2~, V~2~).
 s1021	Mavjud eritmaning konsentratsiyasini yozing (C1).
-s1022	V1 = C2 × V2 / C1 formulasidan kerakli hajmni toping.
-s1023	V2 – V1 hajmda erituvchi qo‘shing.
+s1022	V~1~ = C~2~ × V~2~ / C~1~ formulasidan kerakli hajmni toping.
+s1023	V~2~ – V~1~ hajmda erituvchi qo‘shing.
 s1024	Natijani teskari hisob bilan tekshiring.
 s1025	Suyuq dori shakllarini sanab bering. Ularning afzallik va kamchiliklari nimada?
 s1026	Eritmalar erituvchisiga va qo‘llanishiga ko‘ra qanday turlarga bo‘linadi?

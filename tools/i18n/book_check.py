@@ -79,6 +79,9 @@ for p, a, b in pairs:
             if mark == "**" and a.count(mark) % 2 and not b.count(mark) % 2:
                 # asl matndagi ** juft emas (manba xatosi) - tarjimada to'g'rilangan
                 warns.append(f"{p}: asl matnda '**' juft emas (manba xatosi), tarjimada tuzatildi"); continue
+            if mark in ("~", "^") and b.count(mark) > a.count(mark):
+                # tarjimada formula bor, aslida so'z bilan (masalan, "suv ust." -> "cm H~2~O")
+                warns.append(f"{p}: '{mark}' tarjimada ko'proq ({a.count(mark)} < {b.count(mark)}) | {b[:100]}"); continue
             errs.append(f"{p}: '{mark}' soni {a.count(mark)} != {b.count(mark)} | {b[:120]}")
     if b.count("**") % 2:
         errs.append(f"{p}: ** juft emas")

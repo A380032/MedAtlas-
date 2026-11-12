@@ -1,4 +1,53 @@
-s4430 Diphtheria. The toxin of Corynebacterium diphtheriae enters the cell by endocytosis, and its A fragment transfers an ADP-ribose residue from NAD+ to the elongation factor eEF2 (to the diphthamide residue) — eEF2 is inactivated, translocation and protein synthesis stop, and the cell dies. A single toxin molecule is enough to kill a cell. The toxin spreads through the blood and damages especially the myocardium and nerve tissue, where protein synthesis is active. Treatment — antitoxic serum (neutralizes the toxin before it enters the cells) and antibiotics; prevention — vaccine (toxoid).
+s4381 eIF4E
+s4382 eRF1
+s4383 eEF1α
+s4384 CAP
+s4385 What is the mechanism of action of diphtheria toxin?
+s4386 It ADP-ribosylates eEF2
+s4387 It removes an adenine from 28S rRNA
+s4388 It binds to the 30S subunit
+s4389 It inhibits peptidyl transferase
+s4390 It blocks RNA polymerase II
+s4391 How do tetracyclines act?
+s4392 They cause premature chain termination
+s4393 They inactivate eEF2
+s4394 Which vitamin is required for the hydroxylation of proline and lysine in collagen?
+s4395 Vitamin K
+s4396 Vitamin B~12~
+s4397 Vitamin A
+s4398 Vitamin D
+s4399 What acts as the inducer in the lactose operon?
+s4400 Allolactose
+s4401 The repressor
+s4402 What is the weak activity of the lactose operon in the presence of abundant glucose called?
+s4403 Attenuation
+s4404 Catabolite repression
+s4405 Amplification
+s4406 Imprinting
+s4407 How does histone acetylation affect gene expression?
+s4408 It completely silences the gene
+s4409 It methylates DNA
+s4410 It stops splicing
+s4411 It loosens chromatin and activates transcription
+s4412 Which antibiotic can cause aplastic anemia by acting on mitochondrial ribosomes?
+s4413 Penicillin
+s4414 Ciprofloxacin
+s4415 Chloramphenicol
+s4416 Which small RNAs degrade mRNA or stop its translation in eukaryotes?
+s4417 MicroRNAs
+s4418 tRNA
+s4419 rRNA
+s4420 snRNA
+s4421 Telomerase RNA
+s4422 What type of mutation is the GAG → GUG substitution in the β-globin gene?
+s4423 Nonsense
+s4424 Frameshift
+s4425 Missense
+s4426 Synonymous (silent)
+s4427 Deletion
+s4428 An unvaccinated 6-year-old child has fever, sore throat, a gray, hard-to-remove membrane on the tonsils and swelling of the neck. A week later a heart rhythm disturbance developed (myocarditis).
+s4429 What is the disease? What is the molecular mechanism of action of the toxin? Why is the heart affected?
+s4430 Diphtheria. The toxin of Corynebacterium diphtheriae enters the cell by endocytosis, and its A fragment transfers an ADP-ribose residue from NAD^+^ to the elongation factor eEF2 (to the diphthamide residue) — eEF2 is inactivated, translocation and protein synthesis stop, and the cell dies. A single toxin molecule is enough to kill a cell. The toxin spreads through the blood and damages especially the myocardium and nerve tissue, where protein synthesis is active. Treatment — antitoxic serum (neutralizes the toxin before it enters the cells) and antibiotics; prevention — vaccine (toxoid).
 s4431 A patient has pneumonia; the physician wants to choose one of the antibiotics that act on the 70S ribosome. The patient is a pregnant woman (second trimester).
 s4432 Which antibiotics that block protein synthesis are not used in pregnancy, and why? Which group is relatively safe?
 s4433 Tetracyclines (30S — block the binding of aminoacyl-tRNA) form chelates with calcium and accumulate in fetal bones and teeth (tooth discoloration, slowed bone growth). Aminoglycosides (30S — misreading of the code) are ototoxic to the fetus (deafness). Chloramphenicol (50S) — the “gray baby syndrome” in newborns (insufficient glucuronidation in the liver) and bone marrow suppression through mitochondrial ribosomes. Macrolides (azithromycin — 50S, blocks translocation) are considered relatively safe. The selective action is based on the structural difference between 70S and 80S ribosomes.
@@ -105,7 +154,7 @@ s4533 **Nucleotide excision repair (NER):** bulky lesions (thymine dimers, benzo
 s4534 **Xeroderma pigmentosum** is a hereditary defect of the NER enzymes (XP-A … XP-G) (autosomal recessive). Thymine dimers formed under sunlight are not repaired: the skin is very sensitive, there are freckles, and multiple **skin cancers** (basal cell carcinoma, melanoma) appear at an early age (before 10 years). Prevention — complete protection from the sun.
 s4535 **Mismatch repair (MMR):** after replication, mispaired bases and small loops are recognized by **MSH2/MSH6**, and **MLH1/PMS2** nick the new strand; the new strand is removed by an exonuclease and resynthesized. Its defect causes **microsatellite instability** and **Lynch syndrome** (hereditary nonpolyposis colorectal cancer, endometrial cancer).
 s4536 Repair of double-strand breaks:
-s4537 **homologous recombination** — uses the sister chromatid as a template (in the S and G2 phases) and is accurate; the **BRCA1 and BRCA2** proteins take part — their defect sharply increases the risk of breast and ovarian cancer; the ATM kinase senses the break (ataxia-telangiectasia);
+s4537 **homologous recombination** — uses the sister chromatid as a template (in the S and G~2~ phases) and is accurate; the **BRCA1 and BRCA2** proteins take part — their defect sharply increases the risk of breast and ovarian cancer; the ATM kinase senses the break (ataxia-telangiectasia);
 s4538 **nonhomologous end joining (NHEJ)** — Ku proteins and DNA-PK; fast, but nucleotides are sometimes lost (error-prone). **SOS repair (translesion synthesis):** special low-fidelity DNA polymerases “bypass” the damaged site — the probability of mutations is high.
 s4539 4. Genetic variability. The human genome. Protein polymorphism
 s4540 **Mechanisms of genetic variability:** mutations, recombination in meiosis (crossing-over), independent assortment of chromosomes, transposons.
@@ -161,23 +210,8 @@ s4589 Figure 18.2
 s4590 The extrinsic and intrinsic pathways of apoptosis (drawn after Severin E.S.)
 s4591 **Caspases** are proteases with cysteine in the active site that cleave after aspartate; they are synthesized as procaspases. **Initiator** (8, 9) and **effector** (3, 6, 7) caspases are distinguished. Effector caspases cleave cytoskeletal proteins, nuclear lamins and DNA repair enzymes (PARP) and activate **caspase-activated DNase**.
 s4592 The **Bcl-2 family** — antiapoptotic (Bcl-2, Bcl-xL) and proapoptotic (Bax, Bak, Bid, Bad) proteins regulate the permeability of the outer mitochondrial membrane;
-s4593 **p53** (“guardian of the genome”) accumulates when DNA is damaged, arrests the cell cycle in G1 (p21) and activates repair; if the damage cannot be repaired, it triggers apoptosis through Bax, PUMA and NOXA;
+s4593 **p53** (“guardian of the genome”) accumulates when DNA is damaged, arrests the cell cycle in G~1~ (p21) and activates repair; if the damage cannot be repaired, it triggers apoptosis through Bax, PUMA and NOXA;
 s4594 **IAP** proteins (inhibitors of apoptosis) block caspases;
 s4595 growth factors and the PI3K/Akt pathway — survival signals. **Disorders of apoptosis:** decreased apoptosis — tumors (overexpression of Bcl-2 in follicular lymphoma, t(14;18); p53 mutations) and autoimmune diseases; increased apoptosis — neurodegenerative diseases (Alzheimer, Parkinson), the penumbra zone in myocardial infarction and stroke, death of CD4 lymphocytes in AIDS.
 s4596 7. Basics of cloning and gene therapy
 s4597 **Cloning: gene (molecular) cloning** — inserting a gene into a vector and propagating it in bacteria or cell culture (production of recombinant proteins); **cell clones** — genetically identical cells derived from a single cell (monoclonal antibodies — hybridomas); **reproductive cloning** — somatic cell nuclear transfer (“Dolly” the sheep); **therapeutic cloning** — obtaining stem cells matched to the patient. The clinical importance of clones: monoclonal gammopathies (myeloma) and the **clonal** origin of tumors.
-s4598 **Gene therapy** is the introduction of genetic material into cells in order to treat a disease.
-s4599 Table 18.4. Strategies and vectors of gene therapy
-s4600 Approach
-s4601 Gene addition (replacement)
-s4602 Introduction of a normal copy in place of the defective gene (adenosine deaminase deficiency — the first gene therapy, 1990; spinal muscular atrophy; hemophilia B)
-s4603 Gene editing
-s4604 CRISPR-Cas9 — cutting DNA at a precise site and correcting it (increasing HbF via BCL11A in sickle cell anemia and β-thalassemia)
-s4605 Silencing of gene expression
-s4606 Antisense oligonucleotides, siRNA (transthyretin amyloidosis)
-s4607 Cell therapy
-s4608 CAR-T cells — a gene for a receptor against a tumor antigen is introduced into the patient's T lymphocytes (B-cell leukemias)
-s4609 Viral vectors
-s4610 Retroviruses and lentiviruses (integration into the genome — for stem cells; risk of insertional mutagenesis), adenoviruses, adeno-associated viruses (AAV — no integration, safer)
-s4611 Nonviral methods
-s4612 Liposomes, lipid nanoparticles, electroporation, “naked” DNA
