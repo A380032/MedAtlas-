@@ -313,7 +313,7 @@ def renumber():
 
 
 # ---------- 4) so'zlar ----------
-WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Qaytaruvchanli k": "Qaytaruvchanlik", "Millisek undlar": "Millisekundlar", "Davomiy ligi": "Davomiyligi", "Sezilarl i kamaya di": "Sezilarli kamayadi",
+WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Qaytaruvchanli k": "Qaytaruvchanlik", "Millisek undlar": "Millisekundlar", "Davomiy ligi": "Davomiyligi", "Mivakur iy": "Mivakuriy", "Sezilarl i kamaya di": "Sezilarli kamayadi",
          "5-HT3antagoni stlar": "5-HT3-antagonistlar", "D2antagoni stlar": "D2-antagonistlar",
          "5-HT3antagonist lar": "5-HT3-antagonistlar", "D2antagonist lar": "D2-antagonistlar",
          "H1blokatorl ar": "H1-blokatorlar", "H2blokatorla r": "H2-blokatorlar"}
