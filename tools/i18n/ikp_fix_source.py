@@ -12,7 +12,9 @@ Tuzatiladigan xatolar:
  4) sahifa chegarasida ikki qatorga bo'lingan 3 ta jadval qatori birlashtiriladi; 14.7-jadval ichiga
     tushib qolgan "Yodlash usuli" qutisi jadvaldan chiqariladi;
  5) jadval kataklarida bo'linib qolgan so'zlar (O‘zgarmag an, Tekshir uv), tushib qolgan chiziqchalar
-    (astasekin, teztez), "tashhis" -> "tashxis" (o'zbek imlosi);
+    (astasekin, teztez), "tashhis" -> "tashxis" (o'zbek imlosi); 4.7- va 10.3-jadvallarning keyingi sahifaga
+    o'tgan qatorlari jadvalga qaytariladi; bo'lim ichidagi kichik sarlavhalar raqami (9-bo'limda "10.1.")
+    tuzatiladi; ma'no xatolari (TEXT: stepaj — kichik boldir nervi, bel/bo'ksa nisbati, zangsimon balg'am va b.);
  6) ** ichidagi chetki bo'shliqlar, ikkitalik bo'shliqlar, yolg'iz *.
 Darajalar (sm^2^, kg/m^2^, 10^9^/l) tools/fix_powers.py bilan tiklanadi.
 """
@@ -180,6 +182,42 @@ def tables():
     return n
 
 
+def renumber():
+    """Bo'lim ichidagi kichik sarlavhalar raqami bo'lim raqamiga moslanadi (9-bo'limda 10.1. -> 9.1.)."""
+    n = 0
+    for t in d["topics"]:
+        for s in t["sections"]:
+            m = re.match(r"(\d+)\.", s["title"])
+            if not m:
+                continue
+            for b in s["blocks"]:
+                if b["type"] in ("h", "sub"):
+                    m2 = re.match(r"(\d+)\.(\d+)\.", b["text"])
+                    if m2 and m2.group(1) != m.group(1):
+                        b["text"] = m.group(1) + b["text"][len(m2.group(1)):]
+                        n += 1
+    return n
+
+
+def split_tables():
+    """Keyingi sahifaga o'tgan jadval qatorlari (takrorlangan sarlavha qatori + oddiy xatboshilar) jadvalga qaytariladi."""
+    n = 0
+    bl, i = find_table("Jadval 4.7.")
+    if bl[i + 1].get("text") == "**Nafas turi Ta’rifi Sabablari**":
+        t = bl[i]
+        t["rows"][-1][1] += " " + bl[i + 2]["text"]                 # ... uzoq pauzalar bilan | almashinadi
+        t["rows"].append([bl[i + 3]["text"], bl[i + 4]["text"], bl[i + 5]["text"]])   # Grokk nafasi
+        del bl[i + 1:i + 6]
+        n += 1
+    bl, i = find_table("Jadval 10.3.")
+    if bl[i + 1].get("text") == "**Sinf Ta’rifi**":
+        m = re.match(r"(IV) (.+)", bl[i + 2]["text"])
+        bl[i]["rows"].append([m.group(1), m.group(2)])
+        del bl[i + 1:i + 3]
+        n += 1
+    return n
+
+
 # ---------- 5) so'zlar ----------
 WORDS = {"O‘zgarmag an": "O‘zgarmagan", "yetishmovch ilik": "yetishmovchilik", "yetishmovchili k": "yetishmovchilik",
          "Tekshir uv": "Tekshiruv", "Balandl igi": "Balandligi", "pnevmoni ya": "pnevmoniya",
@@ -194,6 +232,25 @@ WORDS = {"O‘zgarmag an": "O‘zgarmagan", "yetishmovch ilik": "yetishmovchilik
          "Teztez": "Tez-tez", "to‘mtoqtimpanik": "to‘mtoq-timpanik", "To‘mtoqtimpanik": "To‘mtoq-timpanik",
          "qo‘loyoqlar": "qo‘l-oyoqlar", "Qo‘loyoqlar": "Qo‘l-oyoqlar", "qizilo‘ngachme’da": "qizilo‘ngach-me’da",
          "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
+
+
+# asl matndagi ma'no/imlo xatolari (asl PDF va darsliklar bilan solishtirib topilgan)
+TEXT = {
+    "o‘sishrivojlanish": "o‘sish-rivojlanish",
+    "Grip epidemiyasi": "Gripp epidemiyasi",
+    # bo'yin venasi: me'yor to'sh burchagidan 3 sm gacha (keyingi qutidagi bilan bir xil)
+    "to‘sh burchagidan **4 sm dan yuqori** bo‘lsa, markaziy venoz bosim oshgan":
+        "to‘sh burchagidan **3 sm dan yuqori** bo‘lsa, markaziy venoz bosim oshgan",
+    "Katta boldir nervi falaji": "Kichik boldir nervi falaji",          # stepaj — n. peroneus
+    "qo‘ziqorin yeganda og‘riq kuchayishi": "nordon ovqat yeganda og‘riq kuchayishi",   # so'lak bezi toshi
+    "**O**’sma": "**O‘**sma",
+    "Bel aylanasining son aylanasiga nisbati": "Bel aylanasining bo‘ksa aylanasiga nisbati",
+    "IgAvaskulit": "IgA-vaskulit",
+    "(Grave kasalligida)": "(Greyvs kasalligida)",
+    "Rus va ingliz adabiyotlarida (Grebenev, Mukhin)": "Rus adabiyotida (Grebenev, Muxin)",
+    "jigarrangqizg‘ish": "jigarrang-qizg‘ish",
+    "(qizil va kulrang jigarlanish bosqichi)": "(qizil jigarlanish bosqichi)",   # zangsimon balg'am
+}
 
 
 def stars(s):
@@ -215,8 +272,10 @@ def bold_space(s):
 
 def clean(s):
     o = s
-    for a, b in WORDS.items():
+    for a, b in list(WORDS.items()) + list(TEXT.items()):
         s = s.replace(a, b)
+    s = re.sub(r"(\d)- rasm\b", r"\1-rasm", s)                               # 9- rasm -> 9-rasm
+    s = re.sub(r"\b([A-Z][a-z]+)- ([A-Z][a-z]+)", r"\1-\2", s)                # Obraztsov- Strajesko
     s = re.sub(r"([a-z‘’])- (?!(?:va|yoki|hamda)\b)([a-z])", r"\1-\2", s)   # olcha- qizil -> olcha-qizil
     if s.count("**") % 2 == 0:
         s = stars(s) if re.search(r"(?<!\*)\*(?!\*)|\*\*\*", s) else s
@@ -264,6 +323,8 @@ log.append(f"{n} ta qo'shilib ketgan raqamli band ajratildi")
 log.append(f"{every(join_lists)} ta bo'lingan ro'yxat birlashtirildi")
 log.append(f"{every(join_sentences)} ta bo'lingan gap birlashtirildi")
 log.append(f"{tables()} ta jadval tuzatildi")
+log.append(f"{split_tables()} ta sahifaga bo'lingan jadval tiklandi")
+log.append(f"{renumber()} ta kichik sarlavha raqami tuzatildi")
 cnt = [0]
 walk(d, cnt)
 log.append(f"{cnt[0]} ta matn tozalandi")
