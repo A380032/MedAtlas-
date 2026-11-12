@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.4";
+  const VERSION = "1.1.5";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -384,8 +384,18 @@
     if (!f || !f.meta.pdf) return pageNotFound();
     setChrome("PDF · " + f.meta.abbr, true, "fanlar");
     view.classList.add("wide");
-    view.innerHTML = `<div class="pdf-bar"><span class="small muted">Ko‘rinmasa, yuklab oling</span><a class="btn" href="${esc(window.I18N.path(f.meta.pdf))}" download>Yuklab olish</a></div>
-      <iframe class="sim-frame pdf-frame" title="${esc(f.meta.name)} (PDF)" src="${esc(window.I18N.path(f.meta.pdf))}#view=FitH"></iframe>`;
+    const url = window.I18N.path(f.meta.pdf);
+    // Telefon va planshetda katta PDF'ni ilova ichiga (iframe) joylash iPhone'da sahifani yopib qo'yadi,
+    // Android'da esa umuman ko'rinmaydi — shuning uchun u yerda PDF telefonning o'z ko'ruvchisida ochiladi.
+    const touch = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform || ""));
+    if (touch) {
+      view.classList.remove("wide");
+      view.innerHTML = emptyState(IC.book, `<span>${esc(f.meta.name)}</span> <span>(PDF)</span>`, "Telefonda PDF nusxa telefonning o‘z PDF ko‘ruvchisida ochiladi. Fayl katta — Wi-Fi orqali ochish tavsiya etiladi.",
+        `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">PDF’ni ochish</a> <a class="btn" href="${esc(url)}" download>Yuklab olish</a>`);
+      return;
+    }
+    view.innerHTML = `<div class="pdf-bar"><span class="small muted">Ko‘rinmasa, yuklab oling</span><a class="btn" href="${esc(url)}" download>Yuklab olish</a></div>
+      <iframe class="sim-frame pdf-frame" title="${esc(f.meta.name)} (PDF)" src="${esc(url)}#view=FitH"></iframe>`;
   }
 
   /* ---------- Qo'llanmani to'liq o'qish ---------- */
@@ -415,20 +425,70 @@
       <details class="sec book-toc" open><summary>Mundarija</summary><div class="sec-body"><ol class="toc-list">
         ${tp.map((t) => `<li><button class="toc-link" data-go="bk-${esc(t.id)}"><span class="muted">${t.no}.</span> ${esc(t.title)}</button></li>`).join("")}
       </ol></div></details>
-      <div class="bookread prose">${tp.map((t) => `<section class="book-topic" id="bk-${esc(t.id)}">
-        <p class="book-no">${t.no}-mavzu</p><h2>${esc(t.title)}</h2>${topicHTML(t)}
-        <p style="margin-top:16px"><a class="btn" href="#/fan/${esc(sid)}/${esc(t.id)}?test">Shu mavzu bo'yicha test</a></p></section>`).join("")}</div>`;
+      <div class="bookread prose">${tp.map((t, i) => `<section class="book-topic" id="bk-${esc(t.id)}" data-bi="${i}"></section>`).join("")}</div>`;
     document.body.classList.add("reading");
+    /* Butun kitobni birdaniga chizish iPhone'da xotirani to'ldirib, sahifani yopib qo'yardi
+       ("A problem repeatedly occurred"). Shuning uchun faqat ekranga yaqin mavzular chiziladi,
+       uzoqlashganlari bo'sh joy (o'lchangan balandlik) bilan almashtiriladi. */
+    const secs = [...view.querySelectorAll(".book-topic")];
+    const chars = tp.map((t) => JSON.stringify(t).length);
+    const estH = (i) => Math.max(600, Math.round(chars[i] * 0.42));
+    const real = {};
+    const paint = (i) => {
+      const el = secs[i];
+      if (!el || el.dataset.on === "1") return;
+      const t = tp[i], above = el.getBoundingClientRect().top < 0, before = el.offsetHeight;
+      el.style.height = "";
+      el.innerHTML = `<p class="book-no">${t.no}-mavzu</p><h2>${esc(t.title)}</h2>${topicHTML(t)}
+        <p style="margin-top:16px"><a class="btn" href="#/fan/${esc(sid)}/${esc(t.id)}?test">Shu mavzu bo'yicha test</a></p>`;
+      el.dataset.on = "1";
+      real[i] = el.offsetHeight;
+      if (above) window.scrollBy(0, real[i] - before);   // yuqorida chizilgan mavzu o'qilayotgan joyni surib yubormasin
+    };
+    const blank = (i) => {
+      const el = secs[i];
+      if (!el || el.dataset.on !== "1") return;
+      real[i] = el.offsetHeight;
+      el.style.height = real[i] + "px";
+      el.innerHTML = "";
+      el.dataset.on = "";
+    };
+    secs.forEach((el, i) => { el.style.height = estH(i) + "px"; });
+    // kuzatuvchi xabarlari kechikib kelishi mumkin (masalan, mundarijadan sakraganda), shuning uchun
+    // qaror har safar elementning hozirgi joyiga qarab qabul qilinadi
+    const dist = (el, k) => { const r = el.getBoundingClientRect(), h = window.innerHeight; return r.bottom > -k * h && r.top < (k + 1) * h; };
+    const io = "IntersectionObserver" in window ? new IntersectionObserver((ents) => {
+      for (const e of ents) {
+        const i = +e.target.dataset.bi;
+        if (dist(e.target, 1.5)) paint(i);
+        else if (!dist(e.target, 3)) blank(i);   // oraliq masofada o'zgartirilmaydi (tez-tez chizib-o'chirmaslik uchun)
+      }
+    }, { rootMargin: "150% 0px 150% 0px" }) : null;
+    paint(0);   // birinchi mavzu darhol ko'rinsin (mundarija uzun bo'lsa ham)
+    if (io) secs.forEach((el) => io.observe(el)); else secs.forEach((_, i) => paint(i));
+    const prune = () => secs.forEach((el, i) => { if (el.dataset.on === "1" && !dist(el, 3)) blank(i); });
+    const goTopic = (i, off = 0) => {
+      paint(i); if (i + 1 < secs.length) paint(i + 1);
+      window.scrollTo(0, Math.max(0, secs[i].getBoundingClientRect().top + window.scrollY - 70 + off));
+      setTimeout(prune, 400);
+    };
     view.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => {
-      document.getElementById(b.dataset.go)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const el = document.getElementById(b.dataset.go);
+      if (el) goTopic(+el.dataset.bi);
     }));
-    const key = "bookpos:" + sid;
-    const pos = store.get(key, 0);
-    if (pos > 0) setTimeout(() => window.scrollTo(0, pos), 50);
+    // o'qish joyi: qaysi mavzu va uning ichida qancha pastda (piksel balandlik o'zgarsa ham to'g'ri qaytadi)
+    const key = "bookat:" + sid;
+    const at = store.get(key, null);
+    if (at && at.i >= 0 && at.i < secs.length) setTimeout(() => goTopic(at.i, at.off || 0), 50);
+    const where = () => {
+      const y = 80;
+      for (let i = 0; i < secs.length; i++) { const r = secs[i].getBoundingClientRect(); if (r.bottom > y) return { i, off: Math.max(0, Math.round(y - 10 - r.top)) }; }
+      return { i: secs.length - 1, off: 0 };
+    };
     let tmr;
-    const onScroll = () => { clearTimeout(tmr); tmr = setTimeout(() => { if (location.hash.endsWith("/kitob")) { store.set(key, Math.round(window.scrollY)); store.set("lastBook", { sid, name: s.data.name }); } }, 300); };
+    const onScroll = () => { clearTimeout(tmr); tmr = setTimeout(() => { if (location.hash.endsWith("/kitob")) { prune(); store.set(key, where()); store.set("lastBook", { sid, name: s.data.name }); } }, 300); };
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("hashchange", () => window.removeEventListener("scroll", onScroll), { once: true });
+    window.addEventListener("hashchange", () => { window.removeEventListener("scroll", onScroll); io?.disconnect(); }, { once: true });
   }
 
   /* ---------- Aralash imtihon ---------- */

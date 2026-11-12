@@ -463,6 +463,8 @@ window.I18N.register("en", {
 "{0} ta savol · ishlangan {1} · to'g'ri {2}": "{0} questions · attempted {1} · correct {2}",
 "Mukammal qo'llanma · {0} ta amaliy mashg'ulot mavzusi · Asadbek Axmatkulov, 2026": "Complete manual · {0} practical-class topics · Asadbek Axmatkulov, 2026",
 "PDF nusxasini ochish": "Open PDF copy",
+"Telefonda PDF nusxa telefonning o‘z PDF ko‘ruvchisida ochiladi. Fayl katta — Wi-Fi orqali ochish tavsiya etiladi.": "On a phone, the PDF copy opens in the phone’s own PDF viewer. The file is large, so opening it over Wi-Fi is recommended.",
+"PDF’ni ochish": "Open the PDF",
 "{0}-mavzu": "Topic {0}",
 "Talaba bilishi kerak:": "The student should know:",
 "Talaba bajara olishi kerak:": "The student should be able to:",
