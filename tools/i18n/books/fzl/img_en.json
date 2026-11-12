@@ -4267,5 +4267,128 @@
     "smax": 11
    }
   ]
+ },
+ "p151_53.webp": {
+  "items": [
+   {
+    "box": [
+     626,
+     2,
+     644,
+     18
+    ],
+    "t": "C",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p153_54.webp": {
+  "items": [
+   {
+    "box": [
+     200,
+     17,
+     540,
+     36
+    ],
+    "t": "Starling equilibrium (mm Hg)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     60,
+     57,
+     195,
+     73
+    ],
+    "t": "Arterial end",
+    "f": "dvb",
+    "smax": 14
+   },
+   {
+    "box": [
+     60,
+     80,
+     195,
+     111
+    ],
+    "t": "hydrostatic 30–35\noncotic 25",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     550,
+     57,
+     670,
+     73
+    ],
+    "t": "Venous end",
+    "f": "dvb",
+    "smax": 14
+   },
+   {
+    "box": [
+     550,
+     80,
+     670,
+     111
+    ],
+    "t": "hydrostatic 15\noncotic 25",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     260,
+     182,
+     480,
+     203
+    ],
+    "t": "Capillary (blood flow →)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     150,
+     259,
+     232,
+     291
+    ],
+    "t": "filtration\n(+7…+10)",
+    "f": "dv",
+    "a": "l",
+    "smax": 12,
+    "c": "#2f6fb0"
+   },
+   {
+    "box": [
+     633,
+     259,
+     735,
+     291
+    ],
+    "t": "reabsorption\n(−7…−10)",
+    "f": "dv",
+    "a": "l",
+    "smax": 12,
+    "c": "#2e8758"
+   },
+   {
+    "box": [
+     140,
+     303,
+     600,
+     320
+    ],
+    "t": "Tissue fluid; the excess (≈ 2–4 l/day) returns via the lymph",
+    "f": "dv",
+    "smax": 12,
+    "c": "#8a8a8a"
+   }
+  ]
  }
 }
