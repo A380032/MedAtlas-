@@ -131,6 +131,13 @@ def join_sentences(bl, n):
         if a["type"] == "box":
             n = join_sentences(a["parts"], n)
         if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
+                and a["text"].rstrip().endswith("**") and bl[i + 1]["text"].startswith("**va ")):
+            # "... → **o‘ng qorincha gipertrofiyasi**" | "**va dilatatsiyasi** → ..." — bitta qalin ibora
+            a["text"] = a["text"].rstrip()[:-2] + " " + bl[i + 1]["text"][2:]
+            del bl[i + 1]
+            n += 1
+            continue
+        if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
                 and (not re.search(r"[.:;!?)»”\"*]\s*$", a["text"]) and re.match(r"[a-z‘’(]", bl[i + 1]["text"])
                      # "... **bo‘g‘im og‘riqlari**" | "(revmatizm), ..."
                      or re.search(r"[^.:;!?]\*\*\s*$", a["text"]) and re.match(r"\([a-z]", bl[i + 1]["text"]))):
@@ -251,7 +258,7 @@ WORDS = {"O‘zgarmag an": "O‘zgarmagan", "yetishmovch ilik": "yetishmovchilik
          "Mikroaspiratsi ya": "Mikroaspiratsiya", "Makroaspiratsi ya": "Makroaspiratsiya",
          "Kompressio n": "Kompression", "Balg‘a m": "Balg‘am", "cho‘qqiorqa": "cho‘qqi-orqa",
          "Joylashu vi": "Joylashuvi", "Bosgand a chuqurc ha": "Bosganda chuqurcha", "Chegar a": "Chegara",
-         "(5– 25 yosh)": "(5–25 yosh)", "1– 2 sm": "1–2 sm", "0,02– 0,04 s": "0,02–0,04 s"}
+         "(5– 25 yosh)": "(5–25 yosh)", "1– 2 sm": "1–2 sm", "0,02– 0,04 s": "0,02–0,04 s", "har 3– 4 haftada": "har 3–4 haftada"}
 
 
 # asl matndagi ma'no/imlo xatolari (asl PDF va darsliklar bilan solishtirib topilgan)
