@@ -1,0 +1,154 @@
+{
+  "lang": "uz",
+  "out": "data/books/fzl.pdf",
+  "pdf_title": "Normal fiziologiya: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Normal fiziologiya — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/fzl/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "Normal va patologik fiziologiya kafedrasi fani bo‘yicha"
+    ],
+    "title": "NORMAL FIZIOLOGIYA",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Normal fiziologiya: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Normal fiziologiya” fanining kalendar-tematik rejasidagi (2-kurs, III–IV semestr) 30 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Unda qo‘zg‘aluvchan to‘qimalar fiziologiyasi, qon tizimi, yurak-qon tomir tizimi, moddalar va energiya almashinuvi, termoregulyatsiya, endokrin bezlar, nafas, hazm va ayirish tizimlari, markaziy va vegetativ nerv tizimi, analizatorlar hamda oliy nerv faoliyati fiziologiyasi yoritilgan.",
+    "Har bir bob mashg‘ulot maqsadi, nazariy qism (“Eslab qoling”, “Klinik ahamiyati”, “Yodlash usuli”, “Diqqat” bloklari bilan), laboratoriya (amaliy) ishi, amaliy ko‘nikmalar algoritmlari, nazorat savollari, 15 ta test topshirig‘i, 3 ta vaziyatli masala va tezkor takrorlash jadvalidan iborat. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma O.T. Alaviya “Normal fiziologiya” (2006, 2018), Sh.Q. Qodirov “Normal fiziologiya” va G.F. Babskiy tahriridagi “Odam fiziologiyasi” darsliklari asosida, L.S. Costanzo “Physiology” darsligi va boshqa xorijiy manbalar bilan to‘ldirilgan holda tayyorlangan. Rasmlar ushbu manbalardan olingan yoki ular asosida chizilgan va har birining tagida manbasi ko‘rsatilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi, pediatriya va tibbiy profilaktika fakultetlari 2-kurs talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Hurmatli talaba! Normal fiziologiya — sog‘lom organizm, uning tizimlari, a’zolari, to‘qimalari va hujayralari hayot faoliyatini, bu faoliyatning boshqarilish mexanizmlari va tashqi muhitga moslashuvini o‘rganuvchi fan. U anatomiya, gistologiya va biokimyo bilan birga tibbiyotning poydevori hisoblanadi: patologik fiziologiya, farmakologiya va barcha klinik fanlarda “kasallikda nima buzilgan?” degan savolga javob berish uchun avval “me’yorda qanday ishlaydi?” degan savolga javob bilish kerak."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma kafedraning kalendar-tematik rejasidagi 30 ta amaliy mashg‘ulot mavzusiga mos tuzilgan: III semestrda (1–15-mavzular) qo‘zg‘aluvchan to‘qimalar, qon tizimi, yurak-qon tomir tizimi, termoregulyatsiya va endokrin bezlar; IV semestrda (16–30-mavzular) nafas, hazm, moddalar almashinuvi, ayirish, markaziy nerv tizimi, vegetativ nerv tizimi, analizatorlar va oliy nerv faoliyati fiziologiyasi. Har bir bob bir xil tartibda qurilgan:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Mashg‘ulot maqsadi** — mashg‘ulot oxirida nimani bilish va nimani bajara olish kerakligi;",
+        "**nazariy qism** — mavzuning asosiy tushunchalari, jadvallar, sxemalar va rasmlar;",
+        "**laboratoriya ishi** — mashg‘ulotda bajariladigan tajribalar, tekshirish usullari va natijalar tahlili;",
+        "**amaliy ko‘nikmalar** — qadamma-qadam algoritmlar;",
+        "**nazorat savollari, test topshiriqlari va vaziyatli masalalar** — o‘zini tekshirish uchun;",
+        "**tezkor takrorlash** — imtihon oldidan bir qarashda takrorlash jadvali."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Matn ichidagi rangli bloklar quyidagilarni bildiradi:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Eng muhim ta’riflar, raqamlar va tasniflar — albatta yodlash kerak."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Mavzuning klinik amaliyotdagi ahamiyati, bemor bilan bog‘liq misollar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yodlashni osonlashtiruvchi usullar va qisqartmalar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Ko‘p uchraydigan xatolar, xavfli holatlar va darsliklar orasidagi tafovutlar."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Laboratoriya ishlaridagi hayvonlar ustidagi tajribalar fiziologiyaning klassik modellaridir; hozirgi kunda ular ko‘pincha video, kompyuter modellari yoki talabalarning o‘zida bajariladigan noinvaziv tekshiruvlar bilan almashtiriladi va bioetika talablariga rioya qilgan holda, o‘qituvchi nazoratida o‘tkaziladi. Qo‘llanmadagi raqamlar (me’yoriy ko‘rsatkichlar) turli darsliklarda biroz farq qilishi mumkin — bunday hollarda kafedrada qabul qilingan qiymatlarga amal qiling. Har bir mavzuni asosiy darslik bilan birga o‘qish tavsiya etiladi."
+    },
+    {
+      "type": "p",
+      "text": "Tuzuvchi"
+    }
+  ],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savollar:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Qisqa ta’rif",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Foydalanilgan adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    {
+      "h": "Asosiy adabiyotlar"
+    },
+    "Alaviya O.T., Qodirov Sh.Q., Qodirov A.N., Hamroqulov Sh.H., Halilov E.H. Normal fiziologiya. Darslik. — Toshkent: Yangi asr avlodi, 2006.",
+    "Alyaviya O.T., Qodirov Sh.Q., Nishanova A.A. Fiziologiya. Darslik. — Toshkent, 2018.",
+    "Qodirov A. Normal fiziologiya. Tibbiyot institutlari talabalari uchun o‘quv adabiyoti. — Toshkent.",
+    "Babskiy E.B., Zubkov A.A., Kositskiy G.I., Xodorov B.I. Odam fiziologiyasi / Akad. E.B. Babskiy tahriri ostida; V. Rahimov va T. G‘ulomov tarjimasi. — Toshkent: Meditsina, 1972.",
+    {
+      "h": "Qo‘shimcha adabiyotlar"
+    },
+    "Судаков К.В. (ред.) Нормальная физиология. Учебник. — М.: ГЭОТАР-Медиа, 2015.",
+    "Смирнов В.М. (ред.) Физиология человека. Учебник. — М.: Медицина, 2002.",
+    "Ткаченко Б.И. (ред.) Нормальная физиология человека. Учебник. — М.: Медицина, 2005.",
+    "Costanzo L.S. Physiology. 6th ed. — Philadelphia: Elsevier, 2018.",
+    "Hall J.E., Hall M.E. Guyton and Hall Textbook of Medical Physiology. 14th ed. — Philadelphia: Elsevier, 2021.",
+    "Barrett K.E., Barman S.M., Brooks H.L., Yuan J. Ganong‘s Review of Medical Physiology. 26th ed. — McGraw-Hill, 2019.",
+    "Boron W.F., Boulpaep E.L. Medical Physiology. 3rd ed. — Philadelphia: Elsevier, 2017."
+  ]
+}

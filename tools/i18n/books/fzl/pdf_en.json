@@ -1,0 +1,154 @@
+{
+  "lang": "en",
+  "out": "data/en/books/fzl.pdf",
+  "pdf_title": "Normal Physiology: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Normal Physiology — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/fzl/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Normal and Pathological Physiology"
+    ],
+    "title": "NORMAL PHYSIOLOGY",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Normal Physiology: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+    "",
+    "This manual is based on the 30 practical-class topics of the calendar-thematic plan of the subject “Normal Physiology” (2nd year, semesters III–IV). It covers the physiology of excitable tissues, the blood system, the cardiovascular system, metabolism and energy, thermoregulation, the endocrine glands, the respiratory, digestive and excretory systems, the central and autonomic nervous system, the analyzers (sensory systems) and higher nervous activity.",
+    "Each chapter consists of the learning objectives, theory (with “Remember”, “Clinical significance”, “Memory aid” and “Caution” boxes), a laboratory (practical) work, algorithms of practical skills, review questions, 15 test questions, 3 clinical cases and a quick review table. The answers to the tests are given at the end of the book.",
+    "The manual is based on the textbooks “Normal fiziologiya” by O.T. Alavia (2006, 2018), “Normal fiziologiya” by Sh.Q. Qodirov and “Odam fiziologiyasi” (Human Physiology) edited by G.F. Babsky, supplemented by L.S. Costanzo’s “Physiology” and other international sources. The figures are taken from these sources or drawn on their basis, and the source is given under each of them.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before applying the clinical information in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for 2nd-year students of the general medicine, pediatrics and preventive medicine faculties of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Dear student! Normal physiology is the science that studies the vital activity of a healthy organism, its systems, organs, tissues and cells, the mechanisms that regulate this activity and its adaptation to the external environment. Together with anatomy, histology and biochemistry it is the foundation of medicine: in pathological physiology, pharmacology and all clinical subjects, to answer the question “what is disturbed in disease?” one must first know the answer to the question “how does it work normally?”."
+    },
+    {
+      "type": "p",
+      "text": "The manual follows the 30 practical-class topics of the department’s calendar-thematic plan: in semester III (topics 1–15) — excitable tissues, the blood system, the cardiovascular system, thermoregulation and the endocrine glands; in semester IV (topics 16–30) — the physiology of respiration, digestion, metabolism, excretion, the central nervous system, the autonomic nervous system, the analyzers and higher nervous activity. Every chapter is built in the same order:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Learning objectives** — what you should know and be able to do by the end of the class;",
+        "**theory** — the main concepts of the topic, tables, diagrams and figures;",
+        "**laboratory work** — the experiments, examination methods and analysis of the results performed in class;",
+        "**practical skills** — step-by-step algorithms;",
+        "**review questions, test questions and clinical cases** — for self-assessment;",
+        "**quick review** — a table for revising at a glance before the exam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The colored boxes in the text mean the following:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "The most important definitions, numbers and classifications — they must be memorized."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "The significance of the topic in clinical practice, examples related to patients."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Techniques and abbreviations that make memorizing easier."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Common mistakes, dangerous situations and discrepancies between textbooks."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The animal experiments in the laboratory works are classic models of physiology; today they are often replaced by videos, computer models or non-invasive examinations performed on the students themselves, and they are carried out in compliance with the requirements of bioethics and under the teacher’s supervision. The numbers (reference values) in the manual may differ slightly between textbooks — in such cases, follow the values accepted at the department. It is recommended to read each topic together with the main textbook."
+    },
+    {
+      "type": "p",
+      "text": "The compiler"
+    }
+  ],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key concepts of topic {n}",
+    "q": "Concept",
+    "a": "Brief definition",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    {
+      "h": "Main references"
+    },
+    "Alavia O.T., Qodirov Sh.Q., Qodirov A.N., Hamroqulov Sh.H., Halilov E.H. Normal fiziologiya [Normal physiology]. Textbook. — Tashkent: Yangi asr avlodi, 2006.",
+    "Alyavia O.T., Qodirov Sh.Q., Nishanova A.A. Fiziologiya [Physiology]. Textbook. — Tashkent, 2018.",
+    "Qodirov A. Normal fiziologiya [Normal physiology]. A study text for students of medical institutes. — Tashkent.",
+    "Babsky E.B., Zubkov A.A., Kositsky G.I., Khodorov B.I. Odam fiziologiyasi [Human physiology] / ed. by Acad. E.B. Babsky; translated by V. Rahimov and T. G‘ulomov. — Tashkent: Meditsina, 1972.",
+    {
+      "h": "Additional references"
+    },
+    "Sudakov K.V. (ed.) Normalnaya fiziologiya [Normal physiology]. Textbook. — Moscow: GEOTAR-Media, 2015.",
+    "Smirnov V.M. (ed.) Fiziologiya cheloveka [Human physiology]. Textbook. — Moscow: Meditsina, 2002.",
+    "Tkachenko B.I. (ed.) Normalnaya fiziologiya cheloveka [Normal human physiology]. Textbook. — Moscow: Meditsina, 2005.",
+    "Costanzo L.S. Physiology. 6th ed. — Philadelphia: Elsevier, 2018.",
+    "Hall J.E., Hall M.E. Guyton and Hall Textbook of Medical Physiology. 14th ed. — Philadelphia: Elsevier, 2021.",
+    "Barrett K.E., Barman S.M., Brooks H.L., Yuan J. Ganong’s Review of Medical Physiology. 26th ed. — McGraw-Hill, 2019.",
+    "Boron W.F., Boulpaep E.L. Medical Physiology. 3rd ed. — Philadelphia: Elsevier, 2017."
+  ]
+}
