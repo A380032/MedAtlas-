@@ -7633,5 +7633,169 @@
     "pad": 3
    }
   ]
+ },
+ "p226_83.webp": {
+  "items": [
+   {
+    "box": [
+     3,
+     76,
+     120,
+     121
+    ],
+    "t": "Blood\nvessel",
+    "f": "sans",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     3,
+     130,
+     50,
+     152
+    ],
+    "t": "Nerve",
+    "f": "sans",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     640,
+     236,
+     756,
+     303
+    ],
+    "t": "Glands of the\ngastrointestinal\ntract",
+    "f": "sans",
+    "smax": 16,
+    "a": "r"
+   },
+   {
+    "box": [
+     3,
+     317,
+     178,
+     360
+    ],
+    "t": "Myenteric\nplexus",
+    "f": "sans",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     640,
+     348,
+     756,
+     391
+    ],
+    "t": "Mucous\nmembrane",
+    "f": "sans",
+    "smax": 16,
+    "a": "r"
+   },
+   {
+    "box": [
+     690,
+     400,
+     756,
+     421
+    ],
+    "t": "Lumen",
+    "f": "sans",
+    "smax": 16,
+    "a": "r"
+   },
+   {
+    "box": [
+     3,
+     404,
+     126,
+     447
+    ],
+    "t": "Submucosal\nplexus",
+    "f": "sans",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     630,
+     430,
+     756,
+     473
+    ],
+    "t": "Submucosa",
+    "f": "sans",
+    "smax": 16,
+    "a": "r"
+   },
+   {
+    "box": [
+     640,
+     482,
+     756,
+     526
+    ],
+    "t": "Circular\nmuscle layer",
+    "f": "sans",
+    "smax": 16,
+    "a": "r"
+   },
+   {
+    "box": [
+     3,
+     512,
+     146,
+     578
+    ],
+    "t": "Connective\ntissue\nlayer",
+    "f": "sans",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     640,
+     530,
+     756,
+     576
+    ],
+    "t": "Longitudinal\nmuscle layer",
+    "f": "sans",
+    "smax": 16,
+    "a": "r"
+   }
+  ]
+ },
+ "p227_84.webp": {
+  "items": [
+   {
+    "box": [
+     2,
+     5,
+     100,
+     58
+    ],
+    "t": "Pressure,\nmm Hg",
+    "f": "sansb",
+    "smax": 15,
+    "a": "l"
+   },
+   {
+    "box": [
+     628,
+     308,
+     672,
+     325
+    ],
+    "t": "min",
+    "f": "sansb",
+    "smax": 13,
+    "a": "l"
+   }
+  ]
  }
 }
