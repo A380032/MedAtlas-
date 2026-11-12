@@ -6356,5 +6356,413 @@
     "a": "l"
    }
   ]
+ },
+ "p201_73.webp": {
+  "items": [
+   {
+    "box": [
+     160,
+     7,
+     660,
+     27
+    ],
+    "t": "Lung volumes and capacities (young adult male, approximate)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     7,
+     175,
+     27,
+     280
+    ],
+    "t": "Volume, ml",
+    "f": "dv",
+    "rot": 90,
+    "smax": 14
+   },
+   {
+    "box": [
+     118,
+     140,
+     210,
+     171
+    ],
+    "t": "Inspiratory\ncapacity 3500",
+    "f": "dv",
+    "a": "r",
+    "smax": 12
+   },
+   {
+    "box": [
+     364,
+     117,
+     484,
+     164
+    ],
+    "t": "Inspiratory\nreserve volume\n(IRV) 3000",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     509,
+     170,
+     622,
+     216
+    ],
+    "t": "Vital capacity\n(VC)\n4700",
+    "f": "dv",
+    "a": "l",
+    "smax": 12
+   },
+   {
+    "box": [
+     631,
+     207,
+     754,
+     252
+    ],
+    "t": "Total lung\ncapacity (TLC)\n5900",
+    "f": "dv",
+    "a": "l",
+    "smax": 12
+   },
+   {
+    "box": [
+     361,
+     243,
+     488,
+     259
+    ],
+    "t": "Tidal volume (TV) 500",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     364,
+     281,
+     486,
+     326
+    ],
+    "t": "Expiratory\nreserve volume\n(ERV) 1200",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     214,
+     327,
+     339,
+     357
+    ],
+    "t": "Functional residual\ncapacity (FRC) 2400",
+    "f": "dv",
+    "a": "r",
+    "smax": 12
+   },
+   {
+    "box": [
+     364,
+     363,
+     486,
+     393
+    ],
+    "t": "Residual volume\n(RV) 1200",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
+ },
+ "p202_74.webp": {
+  "items": [
+   {
+    "box": [
+     600,
+     5,
+     714,
+     26
+    ],
+    "t": "INSPIRATION",
+    "f": "sansb",
+    "smax": 15,
+    "a": "r"
+   },
+   {
+    "box": [
+     98,
+     106,
+     202,
+     146
+    ],
+    "t": "Inspiratory\nreserve volume",
+    "f": "sansb",
+    "smax": 14,
+    "lines": [
+     [
+      149.5,
+      104,
+      149.5,
+      148,
+      "#111111",
+      2
+     ]
+    ]
+   },
+   {
+    "box": [
+     490,
+     107,
+     576,
+     144
+    ],
+    "t": "Inspiratory\ncapacity",
+    "f": "sansb",
+    "smax": 14,
+    "lines": [
+     [
+      533,
+      105,
+      533,
+      147,
+      "#111111",
+      3
+     ]
+    ]
+   },
+   {
+    "box": [
+     382,
+     133,
+     502,
+     167
+    ],
+    "t": "Vital\ncapacity",
+    "f": "sansb",
+    "smax": 14,
+    "lines": [
+     [
+      443.5,
+      131,
+      443.5,
+      170,
+      "#111111",
+      2
+     ]
+    ]
+   },
+   {
+    "box": [
+     551,
+     203,
+     670,
+     204
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     551,
+     205,
+     670,
+     232
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     551,
+     233,
+     670,
+     235
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     551,
+     203,
+     670,
+     235
+    ],
+    "t": "Total lung\ncapacity",
+    "f": "sansb",
+    "smax": 14,
+    "bg": "none",
+    "lines": [
+     [
+      603.5,
+      201,
+      603.5,
+      238,
+      "#111111",
+      2
+     ]
+    ]
+   },
+   {
+    "box": [
+     642,
+     230,
+     753,
+     232
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     642,
+     233,
+     753,
+     265
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     642,
+     230,
+     753,
+     265
+    ],
+    "t": "Tidal\nvolume",
+    "f": "sansb",
+    "smax": 14,
+    "bg": "none"
+   },
+   {
+    "box": [
+     236,
+     246,
+     352,
+     285
+    ],
+    "t": "Expiratory\nreserve volume",
+    "f": "sansb",
+    "smax": 14,
+    "lines": [
+     [
+      290,
+      244,
+      290,
+      288,
+      "#111111",
+      3
+     ]
+    ]
+   },
+   {
+    "box": [
+     78,
+     292,
+     197,
+     297
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     78,
+     298,
+     197,
+     347
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6
+   },
+   {
+    "box": [
+     78,
+     292,
+     197,
+     347
+    ],
+    "t": "Maximal\nexpiration\nlevel",
+    "f": "sansb",
+    "smax": 14,
+    "bg": "none"
+   },
+   {
+    "box": [
+     398,
+     299,
+     552,
+     335
+    ],
+    "t": "Functional\nresidual capacity",
+    "f": "sansb",
+    "smax": 14
+   },
+   {
+    "box": [
+     244,
+     319,
+     344,
+     353
+    ],
+    "t": "Residual\nvolume",
+    "f": "sansb",
+    "smax": 14,
+    "lines": [
+     [
+      290.5,
+      317,
+      290.5,
+      356,
+      "#111111",
+      2
+     ]
+    ]
+   },
+   {
+    "box": [
+     620,
+     304,
+     730,
+     322
+    ],
+    "t": "EXPIRATION",
+    "f": "sansb",
+    "smax": 15
+   },
+   {
+    "box": [
+     386,
+     377,
+     446,
+     396
+    ],
+    "t": "Time",
+    "f": "sansb",
+    "smax": 15
+   },
+   {
+    "box": [
+     4,
+     100,
+     27,
+     345
+    ],
+    "t": "Lung volume, ml",
+    "f": "sansb",
+    "rot": 90,
+    "smax": 15
+   }
+  ]
  }
 }
