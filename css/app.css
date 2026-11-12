@@ -243,6 +243,11 @@ tr:last-child td { border-bottom: 0; }
 }
 .flash-back { transform: rotateY(180deg); background: var(--ink); color: var(--bg); }
 .flash-hint { font-size: .8rem; opacity: .6; margin-top: 12px; }
+/* ko'p ustunli kartochka orqasi (ustun nomi: qiymat) */
+.flash-inner:has(.flash-cells) { min-height: 320px; }
+.flash-back:has(.flash-cells) { justify-content: flex-start; overflow-y: auto; padding: 18px 20px; }
+.flash-cells { text-align: left; font-size: .95rem; line-height: 1.45; margin: auto 0; }
+.flash-cells div + div { margin-top: 7px; }
 
 /* ===== Qidiruv ===== */
 .search-input {

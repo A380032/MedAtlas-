@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.6";
+  const VERSION = "1.1.7";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -46,10 +46,21 @@
     if (!cache[path]) {
       cache[path] = fetch(path).then((r) => {
         if (!r.ok) throw new Error(path);
-        return r.json();
+        return r.json().then(normCards);
       }).catch((e) => { delete cache[path]; throw e; });
     }
     return cache[path];
+  }
+  // Ko'p ustunli "Tezkor takrorlash" jadvali (cards_head + har kartochkada cells): back ustun nomlari bilan yig'iladi
+  function normCards(d) {
+    for (const t of d?.topics || []) {
+      if (!t.cards_head) continue;
+      for (const c of t.cards || []) {
+        if (c.back == null) c.back = (c.cells || []).map((x, i) => (x && x !== "—" ? `**${t.cards_head[i + 1]}:** ${x}` : "")).filter(Boolean).join(" · ");
+        c.head = t.cards_head;
+      }
+    }
+    return d;
   }
   const catalog = () => loadJSON("data/catalog.json");
 
@@ -413,7 +424,8 @@
       if (t.cases?.length) parts.push(`<h3>Vaziyatli masalalar</h3>` + t.cases.map((c) => `<article class="case"><h4>${esc(c.title)}</h4><p>${inline(c.text)}</p>
         ${c.ask ? `<p class="ask"><strong>Savollar:</strong> ${inline(c.ask)}</p>` : ""}
         <details class="reveal"><summary>Javobni ko'rish</summary><p>${inline(c.answer)}</p></details></article>`).join(""));
-      if (t.cards?.length) parts.push(`<h3>Tezkor takrorlash</h3><div class="table-wrap" tabindex="0"><table><tbody>${t.cards.map((c) => `<tr><td><strong>${inline(c.front)}</strong></td><td>${inline(c.back)}</td></tr>`).join("")}</tbody></table></div>`);
+      if (t.cards?.length && t.cards_head) parts.push(`<h3>Tezkor takrorlash</h3>${t.cards_title ? `<p class="small muted" style="margin:0 0 6px">${inline(t.cards_title)}</p>` : ""}<div class="table-wrap" tabindex="0"><table><thead><tr>${t.cards_head.map((h) => `<th>${inline(h)}</th>`).join("")}</tr></thead><tbody>${t.cards.map((c) => `<tr><td><strong>${inline(c.front)}</strong></td>${(c.cells || []).map((x) => `<td>${inline(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+      else if (t.cards?.length) parts.push(`<h3>Tezkor takrorlash</h3><div class="table-wrap" tabindex="0"><table><tbody>${t.cards.map((c) => `<tr><td><strong>${inline(c.front)}</strong></td><td>${inline(c.back)}</td></tr>`).join("")}</tbody></table></div>`);
       return parts.join("");
     };
     view.innerHTML = `
@@ -760,7 +772,7 @@
       const c = deck[i];
       el.innerHTML = `<div class="flash" id="flash"><div class="flash-inner" role="button" tabindex="0" aria-label="Kartochkani aylantirish">
           <div class="flash-face"><strong style="font-size:1.15rem">${inline(c.front)}</strong><span class="flash-hint">Javobni ko'rish uchun bosing</span></div>
-          <div class="flash-face flash-back"><span style="font-size:1.1rem">${inline(c.back)}</span></div>
+          <div class="flash-face flash-back">${c.cells && c.head ? `<div class="flash-cells">${c.cells.map((x, k) => (x && x !== "—" ? `<div><b>${inline(c.head[k + 1])}:</b> ${inline(x)}</div>` : "")).join("")}</div>` : `<span style="font-size:1.1rem">${inline(c.back)}</span>`}</div>
         </div></div>
         <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
           <button class="btn" id="prev" ${i === 0 ? "disabled" : ""}>Oldingi</button>

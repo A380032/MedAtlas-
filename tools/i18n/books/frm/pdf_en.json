@@ -1,0 +1,205 @@
+{
+  "lang": "en",
+  "out": "data/en/books/frm.pdf",
+  "pdf_title": "Pharmacology: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Pharmacology — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/frm/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Pharmacology"
+    ],
+    "title": "PHARMACOLOGY",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Pharmacology: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+    "",
+    "This manual is based on the 18 practical class topics of the calendar-thematic plan of the course “Pharmacology” approved for the 2026–2027 academic year. The book consists of two parts: Part I covers the 9 topics of the 5th semester (prescription writing, general pharmacology, drugs acting on the peripheral and central nervous systems and on the respiratory system), and Part II covers the 9 topics of the 6th semester (drugs acting on the cardiovascular, digestive, urinary and blood systems, hormonal and anti-inflammatory preparations, antiseptics and chemotherapeutic agents).",
+    "At the end of each chapter there are algorithms for practical skills (prescription writing), review questions, test questions and clinical cases. The answers to the tests are given at the end of the book.",
+    "The manual is based on D.A. Kharkevich's textbook “Pharmacology” (2010), S.S. Azizova's textbook “Pharmacology” (2006), the manual “Fundamentals of Prescription Writing” of the TMA Department of Pharmacology (2020), the works of V.V. Maisky, B.G. Katzung, Kaplan USMLE, First Aid, the Color Atlas of Pharmacology and other textbooks, as well as modern clinical guidelines. The figures are taken from these sources, and the source is given under each of them. The figures on the cover are taken from the teaching material of the TMA Department of Pharmacology.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before applying the clinical information in practice, especially doses, it is recommended to compare it with the main textbooks and the current official prescribing information.",
+    "The manual is intended for 3rd-year students of the faculties of general medicine of medical higher education institutions.",
+    "This English edition is a translation of the Uzbek original. Drug names are given as International Nonproprietary Names (INN), with the name used in the original in brackets where it differs."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Pharmacology is the bridge between theoretical medicine and clinical practice. Whatever disease a doctor deals with, the main tool in his or her hands remains the drug. A correctly chosen drug cures the patient, while a wrongly chosen drug or a wrong dose causes harm. That is why a thorough knowledge of pharmacology is essential for every future doctor."
+    },
+    {
+      "type": "p",
+      "text": "This manual follows the calendar-thematic plan of the Department of Pharmacology of Tashkent State Medical University approved for the 2026–2027 academic year. The book consists of two parts:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Part I (5th semester)** — prescription writing, general pharmacology, drugs acting on the peripheral and central nervous systems and on the respiratory system (Topics 1–9);",
+        "**Part II (6th semester)** — drugs acting on the cardiovascular, digestive, urinary and blood systems, hormonal preparations, anti-inflammatory, antiseptic and chemotherapeutic agents (Topics 10–18)."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Each topic has the same structure:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Learning objectives** — what the student should know and be able to do.",
+        "**Theoretical part** — classification of drug groups, mechanism of action, pharmacological effects, uses, adverse effects and contraindications.",
+        "**Clinical part** — drug choice, interactions, poisonings and their management.",
+        "**Practical skills** — algorithms for writing prescriptions and prescriptions for the main drugs.",
+        "**Review questions, 15 test questions and 3 clinical cases** (with answers).",
+        "**Quick review table** — for revision before an exam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The colored boxes in the text mean the following:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yellow box — information that must be memorized (classification, mechanism, key numbers)."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Blue box — the clinical significance of the information and its use in practice."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Green box — a technique that makes memorizing easier (mnemonic, association)."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Orange box — dangerous mistakes, differences between textbooks, outdated or changed information."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**GRAY BOX — SAMPLE PRESCRIPTION** Rp.: The Latin part"
+    },
+    {
+      "type": "p",
+      "text": "D.S. The signatura (in the patient's language)."
+    },
+    {
+      "type": "p",
+      "text": "The manual is based mainly on D.A. Kharkevich's textbook “Pharmacology”, S.S. Azizova's Uzbek-language textbook “Pharmacology”, the department's teaching manual “Fundamentals of Prescription Writing”, and Katzung, Kaplan, First Aid and other international sources. Where textbooks differ or information has been updated, this is pointed out separately."
+    },
+    {
+      "type": "p",
+      "text": "Doses are given for educational purposes. In practice, always rely on the official prescribing information of the preparation and the current clinical protocols."
+    }
+  ],
+  "parts": [
+    {
+      "before": 1,
+      "title": "PART I. PRACTICAL CLASSES OF THE 5TH SEMESTER",
+      "sub": "Prescription writing. General pharmacology. Neurotropic drugs. Drugs acting on the respiratory system"
+    },
+    {
+      "before": 10,
+      "title": "PART II. PRACTICAL CLASSES OF THE 6TH SEMESTER",
+      "sub": "Drugs acting on the cardiovascular, digestive, urinary and blood systems. Hormones. Anti-inflammatory and chemotherapeutic agents"
+    }
+  ],
+  "rx": [
+    "**PRESCRIPTION ",
+    "**GRAY BOX"
+  ],
+  "skills_numbered": false,
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review table",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key facts on Topic {n}",
+    "q": "Question",
+    "a": "Answer",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    {
+      "h": "Main textbooks"
+    },
+    "Харкевич Д.А. Фармакология [Pharmacology]. Textbook. 10th ed. — Moscow: GEOTAR-Media, 2010. — 908 p.",
+    "Azizova S.S. Farmakologiya [Pharmacology]. Textbook. — Tashkent: Yangi asr avlodi, 2006.",
+    "Xakimov Z.Z., Allayeva M.J., Mustanov T.B. et al. Retseptura asoslari [Fundamentals of prescription writing]. Teaching manual. — Tashkent: TMA, 2020.",
+    "Майский В.В. Фармакология [Pharmacology]. Study manual. Parts I–II. — Moscow, 2003.",
+    {
+      "h": "Additional literature"
+    },
+    "Katzung B.G., Trevor A.J. Basic and Clinical Pharmacology / Katzung & Trevor’s Pharmacology: Examination and Board Review. — McGraw-Hill.",
+    "Golan D.E. et al. Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy. 4th ed. — Wolters Kluwer, 2017.",
+    "Kaplan Medical. USMLE Step 1 Lecture Notes: Pharmacology. — Kaplan, 2018.",
+    "Le T., Bhushan V. et al. First Aid for the USMLE Step 1. 30th ed. — McGraw-Hill, 2020.",
+    "Lüllmann H., Mohr K., Hein L., Bieger D. Color Atlas of Pharmacology. — Thieme.",
+    "Годован В.В. Фармакология в рисунках и схемах [Pharmacology in figures and diagrams]. In 2 vols. — Odesa: Odesa Medical University.",
+    "Xususiy farmakologiya [Special pharmacology]. Study manual (in Uzbek).",
+    "PrepLadder, DAMS: Pharmacology review notes.",
+    {
+      "h": "Internet sources and regulatory documents"
+    },
+    "Ministry of Health of the Republic of Uzbekistan. Materials on the “Electronic prescription” system (2025–2026). — spot.uz, lex.uz.",
+    "World Health Organization. Model List of Essential Medicines. — who.int.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention. — ginasthma.org.",
+    "European Society of Cardiology (ESC). Clinical practice guidelines on arterial hypertension, heart failure, atrial fibrillation and chronic coronary syndromes. — escardio.org.",
+    "American Diabetes Association. Standards of Care in Diabetes. — diabetesjournals.org.",
+    "Malfertheiner P. et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. — Gut, 2022.",
+    "World Health Organization. Consolidated guidelines on tuberculosis: Module 4 — Treatment. — who.int.",
+    "World Health Organization. Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring. — who.int.",
+    "World Health Organization. The WHO AWaRe Antibiotic Book. — who.int."
+  ]
+}
