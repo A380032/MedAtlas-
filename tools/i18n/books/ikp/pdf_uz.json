@@ -1,0 +1,159 @@
+{
+  "lang": "uz",
+  "out": "data/books/ikp.pdf",
+  "pdf_title": "Ichki kasalliklar propedevtikasi: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Ichki kasalliklar propedevtikasi — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/ikp/pdf_cover.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "2-son ichki kasalliklar propedevtikasi kafedrasi fani bo‘yicha"
+    ],
+    "title": "ICHKI KASALLIKLAR PROPEDEVTIKASI",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Ichki kasalliklar propedevtikasi: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Ichki kasalliklar propedevtikasi” fanining 2026–2027 o‘quv yili uchun tasdiqlangan kalendar-tematik rejasidagi (V semestr) 14 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Unda bemorni so‘rab-surishtirish, umumiy ko‘rik, palpatsiya, perkussiya va auskultatsiya usullari, nafas a’zolari va yurak-qon tomir tizimi kasalliklaridagi asosiy sindromlar hamda revmatizm, yurak nuqsonlari va infeksion endokardit simptomatologiyasi yoritilgan.",
+    "Har bir bob mashg‘ulot maqsadi, nazariy qism (“Eslab qoling”, “Klinik ahamiyati”, “Yodlash usuli”, “Diqqat” bloklari bilan), klinik qism, amaliy ko‘nikmalar algoritmlari, nazorat savollari, 15 ta test topshirig‘i, 3 ta vaziyatli masala va tezkor takrorlash jadvalidan iborat. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma A. Gadayev, M.Sh. Karimov, X.S. Axmedovning “Ichki kasalliklar propedevtikasi” (2012) va N.M. Kamolov, M.U. Qo‘yliyevning “Ichki kasalliklar” (1991) darsliklari asosida, rus va ingliz tilidagi asosiy propedevtika darsliklari (N.A. Muxin, V.S. Moiseyev; A.L. Grebenev; Bates’ Guide; Macleod’s Clinical Examination) hamda zamonaviy xalqaro klinik ko‘rsatmalar (GINA 2025, GOLD 2026, ESC 2023, ESC/EACTS 2025, AHA 2015) bilan to‘ldirilgan holda tayyorlangan. Rasmlar asosiy darsliklardan olingan va har birining tagida manbasi ko‘rsatilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar va manbalar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar va amaldagi klinik protokollar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi fakulteti 3-kurs talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Hurmatli talaba! Ichki kasalliklar propedevtikasi — klinik tibbiyotga kirish eshigi. Aynan shu fanda siz birinchi marta bemor bilan yuzma-yuz uchrashasiz, uning shikoyatlarini tinglaysiz, ko‘krak qafasini tukillatib, yurak tonlarini eshitasiz. Bu bosqichda o‘zlashtirilgan ko‘nikmalar butun shifokorlik faoliyatingiz davomida asosiy qurolingiz bo‘lib qoladi: eng zamonaviy apparat ham bemorni to‘g‘ri so‘rab-surishtirish va sinchkovlik bilan ko‘zdan kechirishning o‘rnini bosa olmaydi."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma kafedraning 2026–2027 o‘quv yili uchun tasdiqlangan kalendar-tematik rejasidagi 14 ta amaliy mashg‘ulot mavzusini qamrab oladi:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "1–3-mavzular — bemorni tekshirishning umumiy tamoyillari: so‘rab-surishtirish, kasallik tarixi sxemasi, umumiy ko‘rik, isitma, antropometriya va palpatsiya;",
+        "4–9-mavzular — nafas a’zolari: shikoyatlar, ko‘rik, palpatsiya, perkussiya, auskultatsiya va asosiy o‘pka sindromlari (bronx obstruksiyasi, emfizema, zichlashish, plevra bo‘shlig‘ida suyuqlik va havo, o‘pkada bo‘shliq);",
+        "10–14-mavzular — yurak-qon tomir tizimi: ko‘rik va palpatsiya, perkussiya va puls, auskultatsiya, revmatizm, mitral va aortal nuqsonlar, infeksion endokardit."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**Qo‘llanmadan qanday foydalanish kerak?** Har bir bob bir xil tuzilishga ega. Avval “Mashg‘ulot maqsadi” bilan tanishib, nimani bilishingiz va nimani bajara olishingiz kerakligini aniqlang. Nazariy qismdagi rangli bloklar asosiy fikrlarni ajratib ko‘rsatadi:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Sariq blok — albatta yodlash kerak bo‘lgan ma’lumot: me’yoriy ko‘rsatkichlar, tasniflar, asosiy ta’riflar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Ko‘k blok — ma’lumotning amaliyotdagi ahamiyati, klinik misollar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yashil blok — yodlashni osonlashtiruvchi usullar va qisqartmalar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "To‘q sariq blok — tez-tez uchraydigan xatolar, darsliklar orasidagi tafovutlar va yangilangan xalqaro me’yorlar."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "“Klinik qism” bobdagi bilimlarni bemor to‘shagi yonida qanday qo‘llashni, kasallik tarixiga qanday yozishni ko‘rsatadi. “Amaliy ko‘nikmalar” bo‘limidagi algoritmlarni amaliy mashg‘ulotda bosqichma-bosqich bajarib ko‘ring. Bob oxiridagi nazorat savollari, testlar va vaziyatli masalalar bilimingizni tekshirish uchun mo‘ljallangan; test javoblari kitob oxirida berilgan. “Tezkor takrorlash” jadvali imtihon oldidan qisqa takrorlash uchun qulay."
+    },
+    {
+      "type": "p",
+      "text": "Ayrim me’yorlar o‘zbek tilidagi darslik, rus va ingliz adabiyotlarida biroz farq qilishi mumkin. Bunday hollarda qo‘llanmada barcha manbalar ko‘rsatilgan va zamonaviy xalqaro ko‘rsatmalarga muvofiq qiymat tavsiya etilgan."
+    },
+    {
+      "type": "p",
+      "text": "Muvaffaqiyat tilayman!"
+    },
+    {
+      "type": "p",
+      "text": "Tuzuvchi"
+    }
+  ],
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savollar:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Qisqa ta’rif",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Foydalanilgan adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    "Gadayev A., Karimov M.Sh., Axmedov X.S. Ichki kasalliklar propedevtikasi: darslik. — Toshkent: Muharrir, 2012. — 708 b.",
+    "Kamolov N.M., Qo‘yliyev M.U. Ichki kasalliklar: o‘quv qo‘llanma. — Toshkent: Ibn Sino nomidagi nashriyot, 1991. — 440 b.",
+    "Мухин Н.А., Моисеев В.С. Пропедевтика внутренних болезней: учебник. 2-е изд., доп. и перераб. — М.: ГЭОТАР-Медиа, 2020.",
+    "Гребенев А.Л. Пропедевтика внутренних болезней: учебник. 6-е изд. — М.: Медицина, 2001. — 592 с.",
+    "Bickley L.S., Szilagyi P.G., Hoffman R.M., Soriano R.P. Bates’ Guide to Physical Examination and History Taking. 13th ed. — Philadelphia: Wolters Kluwer, 2021.",
+    "Innes J.A., Dover A.R., Fairhurst K. (eds). Macleod’s Clinical Examination. 15th ed. — Elsevier, 2023.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention. 2025 update. — ginasthma.org.",
+    "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global Strategy for the Diagnosis, Management, and Prevention of COPD. 2026 Report. — goldcopd.org.",
+    "Metlay J.P., Waterer G.W., Long A.C. et al. Diagnosis and treatment of adults with community-acquired pneumonia. An official clinical practice guideline of the ATS and IDSA // Am J Respir Crit Care Med. — 2019. — Vol. 200, № 7. — P. e45–e67.",
+    "Lim W.S., van der Eerden M.M., Laing R. et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study (CURB-65) // Thorax. — 2003. — Vol. 58. — P. 377–382.",
+    "Light R.W., Macgregor M.I., Luchsinger P.C., Ball W.C. Pleural effusions: the diagnostic separation of transudates and exudates // Ann Intern Med. — 1972. — Vol. 77. — P. 507–513.",
+    "Gewitz M.H., Baltimore R.S., Tani L.Y. et al. Revision of the Jones Criteria for the diagnosis of acute rheumatic fever in the era of Doppler echocardiography: a scientific statement from the American Heart Association // Circulation. — 2015. — Vol. 131. — P. 1806–1818.",
+    "Delgado V., Ajmone Marsan N., de Waha S. et al. 2023 ESC Guidelines for the management of endocarditis // Eur Heart J. — 2023. — Vol. 44. — P. 3948–4042.",
+    "Fowler V.G., Durack D.T., Selton-Suty C. et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: updating the modified Duke criteria // Clin Infect Dis. — 2023. — Vol. 77, № 4. — P. 518–526.",
+    "Praz F., Borger M.A., Lanz J. et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease // Eur Heart J. — 2025.",
+    "McDonagh T.A., Metra M., Adamo M. et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure // Eur Heart J. — 2021. — Vol. 42. — P. 3599–3726.",
+    "World Health Organization. Obesity: preventing and managing the global epidemic. WHO Technical Report Series 894. — Geneva, 2000.",
+    "World Health Organization, UNICEF, ICCIDD. Assessment of iodine deficiency disorders and monitoring their elimination. 3rd ed. — Geneva, 2007.",
+    "Teasdale G., Jennett B. Assessment of coma and impaired consciousness. A practical scale // Lancet. — 1974. — Vol. 2. — P. 81–84."
+  ]
+}

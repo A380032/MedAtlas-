@@ -1,0 +1,159 @@
+{
+  "lang": "en",
+  "out": "data/en/books/ikp.pdf",
+  "pdf_title": "Propaedeutics of Internal Medicine: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Propaedeutics of Internal Medicine — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/ikp/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Propaedeutics of Internal Medicine No. 2"
+    ],
+    "title": "PROPAEDEUTICS OF INTERNAL MEDICINE",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Propaedeutics of Internal Medicine: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026. English edition, translated from the Uzbek original.",
+    "",
+    "This manual is based on the 14 practical class topics of the calendar-thematic plan (semester V) of the course “Propaedeutics of Internal Medicine” approved for the 2026–2027 academic year. It covers history taking, general inspection, palpation, percussion and auscultation, the main syndromes in diseases of the respiratory and cardiovascular systems, and the symptoms of rheumatism, heart valve defects and infective endocarditis.",
+    "Each chapter consists of learning objectives, a theoretical part (with “Remember”, “Clinical significance”, “Memory aid” and “Caution” boxes), a clinical part, practical skill algorithms, review questions, 15 test questions, 3 clinical cases and a quick review table. The answers to the test questions are given at the end of the book.",
+    "The manual is based on the textbooks “Propaedeutics of Internal Diseases” by A. Gadayev, M.Sh. Karimov and X.S. Axmedov (2012) and “Internal Diseases” by N.M. Kamolov and M.U. Qo‘yliyev (1991), supplemented by the main Russian- and English-language propaedeutics textbooks (N.A. Mukhin, V.S. Moiseyev; A.L. Grebenev; Bates’ Guide; Macleod’s Clinical Examination) and current international clinical guidelines (GINA 2025, GOLD 2026, ESC 2023, ESC/EACTS 2025, AHA 2015). The figures are taken from the main textbooks, and the source is given under each figure. Labels inside some figures remain in the language of the original source.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks and sources listed. The compiler selected the material, defined its structure and checked it. Before clinical information is applied in practice, it is recommended to compare it with the main textbooks and the current clinical protocols.",
+    "The manual is intended for 3rd-year students of the faculties of general medicine of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Dear student! Propaedeutics of internal medicine is the gateway to clinical medicine. It is in this subject that you meet a patient face to face for the first time, listen to the complaints, percuss the chest and listen to the heart sounds. The skills mastered at this stage remain your main tools throughout your career as a physician: even the most modern equipment cannot replace careful history taking and attentive physical examination."
+    },
+    {
+      "type": "p",
+      "text": "The manual covers the 14 practical class topics of the department's calendar-thematic plan approved for the 2026–2027 academic year:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "topics 1–3 — the general principles of examining a patient: history taking, the case history scheme, general inspection, fever, anthropometry and palpation;",
+        "topics 4–9 — the respiratory system: complaints, inspection, palpation, percussion, auscultation and the main pulmonary syndromes (bronchial obstruction, emphysema, consolidation, fluid and air in the pleural cavity, a cavity in the lung);",
+        "topics 10–14 — the cardiovascular system: inspection and palpation, percussion and the pulse, auscultation, rheumatism, mitral and aortic defects, infective endocarditis."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**How should the manual be used?** Every chapter has the same structure. First read the “Learning objectives” to find out what you should know and be able to do. The colored boxes in the theoretical part highlight the key points:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yellow box — information that must be memorized: normal values, classifications, key definitions."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Blue box — the practical significance of the information, clinical examples."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Green box — techniques and abbreviations that make memorizing easier."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Orange box — common mistakes, discrepancies between textbooks and updated international standards."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The “Clinical part” shows how to apply the knowledge of the chapter at the bedside and how to record it in the case history. Practice the algorithms in the “Practical skills” section step by step in the practical class. The review questions, tests and clinical cases at the end of each chapter are intended to check your knowledge; the answers to the tests are given at the end of the book. The “Quick review” table is convenient for a short revision before an exam."
+    },
+    {
+      "type": "p",
+      "text": "Some normal values differ slightly between the Uzbek textbook and the Russian and English literature. In such cases the manual cites all the sources and recommends the value that agrees with current international guidelines."
+    },
+    {
+      "type": "p",
+      "text": "I wish you success!"
+    },
+    {
+      "type": "p",
+      "text": "The compiler"
+    }
+  ],
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key facts on Topic {n}",
+    "q": "Question",
+    "a": "Answer",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    "Gadayev A., Karimov M.Sh., Axmedov X.S. Ichki kasalliklar propedevtikasi [Propaedeutics of internal diseases]. Textbook. — Tashkent: Muharrir, 2012. — 708 p.",
+    "Kamolov N.M., Qo‘yliyev M.U. Ichki kasalliklar [Internal diseases]. Study manual. — Tashkent: Ibn Sino Publishing House, 1991. — 440 p.",
+    "Мухин Н.А., Моисеев В.С. Пропедевтика внутренних болезней [Propaedeutics of internal diseases]. Textbook. 2nd ed., enlarged and revised. — Moscow: GEOTAR-Media, 2020.",
+    "Гребенев А.Л. Пропедевтика внутренних болезней [Propaedeutics of internal diseases]. Textbook. 6th ed. — Moscow: Meditsina, 2001. — 592 p.",
+    "Bickley L.S., Szilagyi P.G., Hoffman R.M., Soriano R.P. Bates’ Guide to Physical Examination and History Taking. 13th ed. — Philadelphia: Wolters Kluwer, 2021.",
+    "Innes J.A., Dover A.R., Fairhurst K. (eds). Macleod’s Clinical Examination. 15th ed. — Elsevier, 2023.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention. 2025 update. — ginasthma.org.",
+    "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global Strategy for the Diagnosis, Management, and Prevention of COPD. 2026 Report. — goldcopd.org.",
+    "Metlay J.P., Waterer G.W., Long A.C. et al. Diagnosis and treatment of adults with community-acquired pneumonia. An official clinical practice guideline of the ATS and IDSA // Am J Respir Crit Care Med. — 2019. — Vol. 200, № 7. — P. e45–e67.",
+    "Lim W.S., van der Eerden M.M., Laing R. et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study (CURB-65) // Thorax. — 2003. — Vol. 58. — P. 377–382.",
+    "Light R.W., Macgregor M.I., Luchsinger P.C., Ball W.C. Pleural effusions: the diagnostic separation of transudates and exudates // Ann Intern Med. — 1972. — Vol. 77. — P. 507–513.",
+    "Gewitz M.H., Baltimore R.S., Tani L.Y. et al. Revision of the Jones Criteria for the diagnosis of acute rheumatic fever in the era of Doppler echocardiography: a scientific statement from the American Heart Association // Circulation. — 2015. — Vol. 131. — P. 1806–1818.",
+    "Delgado V., Ajmone Marsan N., de Waha S. et al. 2023 ESC Guidelines for the management of endocarditis // Eur Heart J. — 2023. — Vol. 44. — P. 3948–4042.",
+    "Fowler V.G., Durack D.T., Selton-Suty C. et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: updating the modified Duke criteria // Clin Infect Dis. — 2023. — Vol. 77, № 4. — P. 518–526.",
+    "Praz F., Borger M.A., Lanz J. et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease // Eur Heart J. — 2025.",
+    "McDonagh T.A., Metra M., Adamo M. et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure // Eur Heart J. — 2021. — Vol. 42. — P. 3599–3726.",
+    "World Health Organization. Obesity: preventing and managing the global epidemic. WHO Technical Report Series 894. — Geneva, 2000.",
+    "World Health Organization, UNICEF, ICCIDD. Assessment of iodine deficiency disorders and monitoring their elimination. 3rd ed. — Geneva, 2007.",
+    "Teasdale G., Jennett B. Assessment of coma and impaired consciousness. A practical scale // Lancet. — 1974. — Vol. 2. — P. 81–84."
+  ]
+}
