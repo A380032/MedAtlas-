@@ -1,0 +1,153 @@
+{
+  "lang": "uz",
+  "out": "data/books/bkm.pdf",
+  "pdf_title": "Biokimyo: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Biokimyo — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/bkm/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "Tibbiy va biologik kimyo kafedrasi fani bo‘yicha"
+    ],
+    "title": "BIOKIMYO",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Biokimyo: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Biokimyo” fanining kalendar-tematik rejasidagi (2-kurs, III–IV semestr) 30 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Unda moddalar almashinuviga kirish, fermentlar, biologik membranalar va biologik oksidlanish, uglevodlar, lipidlar, oqsillar, aminokislotalar va nukleotidlar almashinuvi, molekular biologiya, onkogenez, qon, biriktiruvchi to‘qima, mushak, hazm tizimi, jigar, endokrin tizim, buyrak va asab tizimi biokimyosi yoritilgan.",
+    "Har bir bob mashg‘ulot maqsadi, nazariy qism (“Eslab qoling”, “Klinik ahamiyati”, “Yodlash usuli”, “Diqqat” bloklari bilan), laboratoriya (amaliy) ishi, amaliy ko‘nikmalar algoritmlari, nazorat savollari, 15 ta test topshirig‘i, 3 ta vaziyatli masala va tezkor takrorlash jadvalidan iborat. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma R.A. Sobirova va hammualliflarning “Biologik kimyo” (2006) va “Biokimyo” darsliklari asosida, E.S. Severin tahriridagi “Биохимия” hamda Harper va Lippincott biokimyo darsliklari bilan to‘ldirilgan holda tayyorlangan. Metabolik yo‘llar sxemalari ushbu manbalar asosida chizilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi, pediatriya va tibbiy profilaktika fakultetlari 2-kurs talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Hurmatli talaba! Biokimyo — tirik organizmning kimyoviy tarkibi, moddalar va energiya almashinuvi, bu jarayonlarning boshqarilishi va irsiy axborotning amalga oshirilishini molekular darajada o‘rganuvchi fan. U normal fiziologiya, patologik fiziologiya, farmakologiya va barcha klinik fanlar uchun poydevor hisoblanadi: kasallikning mohiyatini, laboratoriya tahlillarining ma’nosini va dorilarning ta’sir mexanizmini tushunish uchun avval organizmda moddalar qanday o‘zgarishini bilish kerak."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma kafedraning kalendar-tematik rejasidagi 30 ta amaliy mashg‘ulot mavzusiga mos tuzilgan: III semestrda (1–15-mavzular) moddalar almashinuviga kirish, fermentlar, biologik membranalar, biologik oksidlanish, uglevodlar, lipidlar, oqsillar, aminokislotalar va nukleotidlar almashinuvi hamda ularning o‘zaro bog‘liqligi; IV semestrda (16–30-mavzular) molekular biologiya, onkogenez, qon, temir almashinuvi va gemostaz, biriktiruvchi to‘qima, mushak, oshqozon-ichak tizimi, jigar, zararsizlantirish, endokrin tizim, buyrak va asab tizimi biokimyosi. Har bir bob bir xil tartibda qurilgan:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Mashg‘ulot maqsadi** — mashg‘ulot oxirida nimani bilish va nimani bajara olish kerakligi;",
+        "**nazariy qism** — mavzuning asosiy tushunchalari, metabolik yo‘llar sxemalari, jadvallar va grafiklar;",
+        "**laboratoriya ishi** — mashg‘ulotda bajariladigan sifat reaksiyalari, miqdoriy aniqlash usullari va natijalar tahlili;",
+        "**amaliy ko‘nikmalar** — laboratoriya natijalarini talqin qilish bo‘yicha qadamma-qadam algoritmlar;",
+        "**nazorat savollari, test topshiriqlari va vaziyatli masalalar** — o‘zini tekshirish uchun;",
+        "**tezkor takrorlash** — imtihon oldidan bir qarashda takrorlash jadvali."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Matn ichidagi rangli bloklar quyidagilarni bildiradi:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Eng muhim ta’riflar, raqamlar va tasniflar — albatta yodlash kerak."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Mavzuning klinik amaliyotdagi ahamiyati, kasalliklar va laboratoriya tashxisi bilan bog‘liq misollar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yodlashni osonlashtiruvchi usullar va qisqartmalar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Ko‘p uchraydigan xatolar, xavfli holatlar va darsliklar orasidagi tafovutlar."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanmadagi me’yoriy ko‘rsatkichlar turli darsliklar va laboratoriyalarda biroz farq qilishi mumkin — bunday hollarda kafedrada va tekshiruv o‘tkazgan laboratoriyada qabul qilingan qiymatlarga amal qiling. Laboratoriya ishlarini faqat o‘qituvchi nazoratida, kislotalar, ishqorlar va biologik materiallar bilan ishlash xavfsizlik qoidalariga rioya qilgan holda bajaring. Har bir mavzuni asosiy darslik bilan birga o‘qish tavsiya etiladi."
+    },
+    {
+      "type": "p",
+      "text": "Tuzuvchi"
+    }
+  ],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savollar:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Qisqa ta’rif",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Foydalanilgan adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    {
+      "h": "Asosiy adabiyotlar"
+    },
+    "Sobirova R.A., Abrorov O.A., Inoyatova F.X., Aripov A.N. Biologik kimyo. Darslik. — Toshkent: Yangi asr avlodi, 2006.",
+    "Sobirova R.A., Yuldashev N.M. Biokimyo. I qism. Darslik. — Toshkent: Luksprint, 2021.",
+    "Biokimyo fanidan kalendar-tematik reja (III–IV semestr, 2025–2026 o‘quv yili). — Toshkent Davlat Tibbiyot Universiteti, Tibbiy va biologik kimyo kafedrasi.",
+    {
+      "h": "Qo‘shimcha adabiyotlar"
+    },
+    "Severin E.S., Aleynikova T.L., Osipov E.V., Silayeva S.A. Biologicheskaya ximiya. — Moskva: Meditsinskoye informatsionnoye agentstvo, 2008.",
+    "Severin E.S. (red.) Biokhimiya. Uchebnik. 5-e izd. — Moskva: GEOTAR-Media, 2015.",
+    "Rodwell V.W., Bender D.A., Botham K.M., Kennelly P.J., Weil P.A. Harper’s Illustrated Biochemistry. 32nd ed. — New York: McGraw-Hill, 2023.",
+    "Abali E.E., Cline S.D., Franklin D.S., Viselli S.M. Lippincott Illustrated Reviews: Biochemistry. 8th ed. — Philadelphia: Wolters Kluwer, 2021.",
+    "Nelson D.L., Cox M.M. Lehninger Principles of Biochemistry. 8th ed. — New York: W.H. Freeman, 2021.",
+    "Baynes J.W., Dominiczak M.H. Medical Biochemistry. 6th ed. — Elsevier, 2023.",
+    "Burtis C.A., Bruns D.E. Tietz Fundamentals of Clinical Chemistry and Molecular Diagnostics. 8th ed. — Elsevier, 2019."
+  ]
+}

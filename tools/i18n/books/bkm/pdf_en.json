@@ -1,0 +1,153 @@
+{
+  "lang": "en",
+  "out": "data/en/books/bkm.pdf",
+  "pdf_title": "Biochemistry: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Biochemistry — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/bkm/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Medical and Biological Chemistry"
+    ],
+    "title": "BIOCHEMISTRY",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Biochemistry: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+    "",
+    "This manual is based on the 30 practical-class topics of the calendar-thematic plan of the subject “Biochemistry” (2nd year, semesters III–IV). It covers an introduction to metabolism, enzymes, biological membranes and biological oxidation, the metabolism of carbohydrates, lipids, proteins, amino acids and nucleotides, molecular biology, oncogenesis, and the biochemistry of blood, connective tissue, muscle, the digestive system, the liver, the endocrine system, the kidneys and the nervous system.",
+    "Each chapter consists of the learning objectives, theory (with “Remember”, “Clinical significance”, “Memory aid” and “Caution” boxes), a laboratory (practical) work, algorithms of practical skills, review questions, 15 test questions, 3 clinical cases and a quick review table. The answers to the tests are given at the end of the book.",
+    "The manual is based on the textbooks “Biologik kimyo” (2006) and “Biokimyo” by R.A. Sobirova and co-authors, supplemented by “Биохимия” edited by E.S. Severin and by the Harper and Lippincott biochemistry textbooks. The diagrams of metabolic pathways were drawn on the basis of these sources.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before applying the clinical information in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for 2nd-year students of the general medicine, pediatrics and preventive medicine faculties of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Dear student! Biochemistry is the science that studies, at the molecular level, the chemical composition of a living organism, the metabolism of substances and energy, the regulation of these processes and the expression of hereditary information. It is the foundation of normal physiology, pathological physiology, pharmacology and all clinical subjects: to understand the essence of a disease, the meaning of laboratory tests and the mechanism of action of drugs, one must first know how substances are transformed in the body."
+    },
+    {
+      "type": "p",
+      "text": "The manual follows the 30 practical-class topics of the department’s calendar-thematic plan: in semester III (topics 1–15) — an introduction to metabolism, enzymes, biological membranes, biological oxidation, the metabolism of carbohydrates, lipids, proteins, amino acids and nucleotides and their integration; in semester IV (topics 16–30) — molecular biology, oncogenesis, blood, iron metabolism and hemostasis, and the biochemistry of connective tissue, muscle, the gastrointestinal tract, the liver, detoxification, the endocrine system, the kidneys and the nervous system. Every chapter is built in the same order:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Learning objectives** — what you should know and be able to do by the end of the class;",
+        "**theory** — the main concepts of the topic, diagrams of metabolic pathways, tables and graphs;",
+        "**laboratory work** — qualitative reactions, quantitative methods and analysis of the results performed in class;",
+        "**practical skills** — step-by-step algorithms for interpreting laboratory results;",
+        "**review questions, test questions and clinical cases** — for self-assessment;",
+        "**quick review** — a table for revising at a glance before the exam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The colored boxes in the text mean the following:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "The most important definitions, numbers and classifications — they must be memorized."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "The significance of the topic in clinical practice, examples related to diseases and laboratory diagnosis."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Techniques and abbreviations that make memorizing easier."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Common mistakes, dangerous situations and discrepancies between textbooks."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The reference values in the manual may differ slightly between textbooks and laboratories — in such cases, follow the values accepted at the department and in the laboratory that performed the test. Perform laboratory work only under the teacher’s supervision and in compliance with the safety rules for working with acids, alkalis and biological materials. It is recommended to read each topic together with the main textbook."
+    },
+    {
+      "type": "p",
+      "text": "The compiler"
+    }
+  ],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key concepts of topic {n}",
+    "q": "Concept",
+    "a": "Brief definition",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    {
+      "h": "Main references"
+    },
+    "Sobirova R.A., Abrorov O.A., Inoyatova F.X., Aripov A.N. Biologik kimyo [Biological chemistry]. Textbook. — Tashkent: Yangi asr avlodi, 2006.",
+    "Sobirova R.A., Yuldashev N.M. Biokimyo [Biochemistry]. Part I. Textbook. — Tashkent: Luksprint, 2021.",
+    "Calendar-thematic plan of the subject Biochemistry (semesters III–IV, 2025–2026 academic year). — Tashkent State Medical University, Department of Medical and Biological Chemistry.",
+    {
+      "h": "Additional references"
+    },
+    "Severin E.S., Aleynikova T.L., Osipov E.V., Silayeva S.A. Biologicheskaya khimiya [Biological chemistry]. — Moscow: Meditsinskoye informatsionnoye agentstvo, 2008.",
+    "Severin E.S. (ed.) Biokhimiya [Biochemistry]. Textbook. 5th ed. — Moscow: GEOTAR-Media, 2015.",
+    "Rodwell V.W., Bender D.A., Botham K.M., Kennelly P.J., Weil P.A. Harper’s Illustrated Biochemistry. 32nd ed. — New York: McGraw-Hill, 2023.",
+    "Abali E.E., Cline S.D., Franklin D.S., Viselli S.M. Lippincott Illustrated Reviews: Biochemistry. 8th ed. — Philadelphia: Wolters Kluwer, 2021.",
+    "Nelson D.L., Cox M.M. Lehninger Principles of Biochemistry. 8th ed. — New York: W.H. Freeman, 2021.",
+    "Baynes J.W., Dominiczak M.H. Medical Biochemistry. 6th ed. — Elsevier, 2023.",
+    "Burtis C.A., Bruns D.E. Tietz Fundamentals of Clinical Chemistry and Molecular Diagnostics. 8th ed. — Elsevier, 2019."
+  ]
+}
