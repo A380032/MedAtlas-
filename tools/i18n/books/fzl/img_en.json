@@ -2727,5 +2727,312 @@
     "smax": 11
    }
   ]
+ },
+ "p106_35.webp": {
+  "items": [
+   {
+    "box": [
+     178,
+     28,
+     357,
+     47
+    ],
+    "t": "Intrinsic pathway (contact)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     193,
+     62,
+     332,
+     101
+    ],
+    "t": "Collagen, negatively\ncharged surface",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     490,
+     133,
+     625,
+     153
+    ],
+    "t": "Extrinsic pathway",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     521,
+     169,
+     726,
+     208
+    ],
+    "t": "Tissue factor (III)\nfrom damaged tissue",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     372,
+     305,
+     462,
+     335
+    ],
+    "t": "also\nactivates IX",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     104,
+     408,
+     314,
+     443
+    ],
+    "t": "positive feedback:\nactivates V, VIII, XI, XIII",
+    "f": "dv",
+    "smax": 13,
+    "lines": [
+     [
+      124.0,
+      398.0,
+      122.7,
+      402.6,
+      "#ac6868",
+      2
+     ],
+     [
+      121.7,
+      406.3,
+      120.4,
+      410.9,
+      "#ac6868",
+      2
+     ],
+     [
+      119.3,
+      414.7,
+      118.0,
+      419.2,
+      "#ac6868",
+      2
+     ],
+     [
+      117.0,
+      423.0,
+      115.7,
+      427.6,
+      "#ac6868",
+      2
+     ],
+     [
+      114.7,
+      431.3,
+      113.4,
+      435.9,
+      "#ac6868",
+      2
+     ],
+     [
+      112.3,
+      439.7,
+      111.0,
+      444.2,
+      "#ac6868",
+      2
+     ],
+     [
+      158,
+      406,
+      158,
+      410,
+      "#979797",
+      1
+     ],
+     [
+      158,
+      414,
+      158,
+      418,
+      "#979797",
+      1
+     ],
+     [
+      158,
+      422,
+      158,
+      426,
+      "#979797",
+      1
+     ],
+     [
+      158,
+      430,
+      158,
+      434,
+      "#979797",
+      1
+     ],
+     [
+      158,
+      438,
+      158,
+      442,
+      "#979797",
+      1
+     ]
+    ]
+   },
+   {
+    "box": [
+     171,
+     460,
+     365,
+     501
+    ],
+    "t": "Tenase complex:\nIXa + VIIIa + Ca²⁺ + PF3",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     397,
+     460,
+     572,
+     501
+    ],
+    "t": "Prothrombinase:\nXa + Va + Ca²⁺ + PF3",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     21,
+     545,
+     261,
+     576
+    ],
+    "t": "Prothrombin (II) → THROMBIN (IIa)",
+    "f": "dv",
+    "s": 12
+   },
+   {
+    "box": [
+     19,
+     621,
+     263,
+     663
+    ],
+    "t": "Fibrinogen (I) → fibrin monomer\n→ fibrin polymer (soluble)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     31,
+     703,
+     251,
+     745
+    ],
+    "t": "XIIIa (fibrin-stabilizing factor)\n→ insoluble fibrin",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p108_36.webp": {
+  "items": [
+   {
+    "box": [
+     81,
+     15,
+     229,
+     49
+    ],
+    "t": "Plasminogen\n(synthesized in the liver)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     16,
+     74,
+     294,
+     129
+    ],
+    "t": "Activators:\ntissue activator (t-PA, endothelium),\nurokinase (kidney), XIIa, kallikrein;\nstreptokinase (bacterial)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     306,
+     88,
+     384,
+     100
+    ],
+    "t": "activates",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     409,
+     92,
+     481,
+     111
+    ],
+    "t": "PLASMIN",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     310,
+     109,
+     380,
+     122
+    ],
+    "t": "inhibits",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     527,
+     127,
+     745,
+     161
+    ],
+    "t": "Fibrin degradation products,\nD-dimer",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     397,
+     149,
+     491,
+     167
+    ],
+    "t": "Fibrin (clot)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     47,
+     159,
+     263,
+     205
+    ],
+    "t": "Inhibitors:\nPAI-1 (activator inhibitor),\nα₂-antiplasmin, α₂-macroglobulin",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
  }
 }
