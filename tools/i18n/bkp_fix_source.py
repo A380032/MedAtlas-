@@ -338,6 +338,7 @@ TEXT = {
     "qisqargantimpanik": "qisqargan-timpanik",
     "mikrotsirkulyatorgematoma": "mikrotsirkulyator-gematoma",
     "(Xbog‘langan,": "(X-bog‘langan,",
+    "refleksları": "reflekslari",
     "≥105 /ml": "≥10^5^/ml",
 }
 
