@@ -1,0 +1,80 @@
+{
+  "lang": "en",
+  "out": "data/en/books/pfz.pdf",
+  "pdf_title": "Pathological Physiology: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Pathological Physiology — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/pfz/pdf_cover.jpg",
+    "top": ["MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN", "TASHKENT STATE MEDICAL UNIVERSITY", "Department of Normal and Pathological Physiology"],
+    "title": "PATHOLOGICAL PHYSIOLOGY",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Pathological Physiology: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026. English edition, translated from the Uzbek original.",
+    "",
+    "This manual is based on the 27 practical class topics of the calendar-thematic plan (semesters V–VI) of the course “Pathological Physiology” approved for the 2026–2027 academic year. It covers general nosology, etiology and pathogenesis, typical pathological processes (local circulatory disorders, inflammation, allergy, tumors, hypoxia), metabolic disorders, and the pathophysiology of the blood, cardiovascular, respiratory, digestive, hepatobiliary, renal and endocrine systems.",
+    "Each chapter consists of learning objectives, a theoretical part (with “Remember”, “Clinical significance”, “Memory aid” and “Caution” boxes), an experimental (practical) part, practical skill algorithms, review questions, 15 test questions, 3 clinical cases and a quick review table. The answers to the test questions are given at the end of the book.",
+    "The manual is based on the textbooks “Pathological Physiology” by N.H. Abdullayev (2008), “Pathological Physiology” by A.A. Haqberdiyev and “Pathophysiology” by R.Q. Azimov (2010), supplemented by the main Russian-language textbooks of pathophysiology (V.V. Novitskiy, Ye.D. Goldberg; N.N. Zayko, Yu.V. Bits; A.V. Ataman). The figures are taken from these sources or drawn on their basis, and the source is given under each figure. Labels inside some figures remain in the language of the original source.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before clinical information is applied in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for 3rd-year students of the faculties of general medicine of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {"type": "p", "text": "Dear student! Pathological physiology (pathophysiology) is the science that studies the vital activity of the diseased organism and the causes, mechanisms of development and outcomes of diseases. It serves as a bridge between the biomedical sciences (physiology, biochemistry, histology) and the clinical disciplines: the clinical thinking that answers the question “what is happening to the patient?” is formed precisely in this subject."},
+    {"type": "p", "text": "The manual follows the 27 practical class topics of the department's calendar-thematic plan. Every chapter is built in the same order:"},
+    {"type": "list", "ordered": false, "items": [
+      "**Learning objectives** — what you should know and be able to do by the end of the class;",
+      "**theoretical part** — the main concepts of the topic, tables, diagrams and figures;",
+      "**experimental part** — the experiments performed in the class and their analysis;",
+      "**practical skills** — step-by-step algorithms;",
+      "**review questions, test questions and clinical cases** — for self-assessment;",
+      "**quick review** — a table for reviewing the topic at a glance before an exam."
+    ]},
+    {"type": "p", "text": "The colored boxes in the text mean the following:"},
+    {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The most important definitions, numbers and classifications — they must be memorized."}]},
+    {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The significance of the topic in clinical practice, examples related to patients."}]},
+    {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Techniques and abbreviations that make memorizing easier."}]},
+    {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Common mistakes, dangerous situations and discrepancies between textbooks."}]},
+    {"type": "p", "text": "The animal experiments in the experimental part are classic models accepted in the department's practice; they are carried out under the teacher's supervision in compliance with the requirements of bioethics. It is recommended to read each topic of the manual together with the main textbook."},
+    {"type": "p", "text": "The compiler"}
+  ],
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key facts on Topic {n}",
+    "q": "Question",
+    "a": "Answer",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {"eslab": "REMEMBER", "klinik": "CLINICAL SIGNIFICANCE", "yodlash": "MEMORY AID", "diqqat": "CAUTION"},
+  "refs": [
+    "Abdullayev N.H. Patologik fiziologiya [Pathological physiology]. Textbook. — Tashkent, 2008. — 480 p.",
+    "Haqberdiyev A.A. Patologik fiziologiya [Pathological physiology]. Textbook. — Tashkent.",
+    "Azimov R.Q. Patofiziologiya [Pathophysiology]. Study manual. — Tashkent, 2010.",
+    "Новицкий В.В., Гольдберг Е.Д., Уразова О.И. Патофизиология [Pathophysiology]. Textbook in 2 vols. — Moscow: GEOTAR-Media, 2009.",
+    "Зайко Н.Н., Быць Ю.В. и др. Патологическая физиология [Pathological physiology]. Textbook. — Moscow: MEDpress-inform, 2002.",
+    "Атаман А.В. Патологическая физиология в вопросах и ответах [Pathological physiology in questions and answers]. — Kyiv, 2000.",
+    "Kumar V., Abbas A.K., Aster J.C. Robbins and Cotran Pathologic Basis of Disease. 9th ed. — Elsevier, 2015.",
+    "Hall J.E. Guyton and Hall Textbook of Medical Physiology. 13th ed. — Elsevier, 2016.",
+    "World Health Organization. International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). — 2022."
+  ]
+}

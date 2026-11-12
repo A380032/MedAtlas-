@@ -51,6 +51,7 @@ NUM = re.compile(r"\d+(?:\.\d+)?")
 
 
 def nums(s, src):
+    s = re.sub(r"\b(\d),(\d)(?=[,\d]*-[A-Za-z])", r"\1.\2", s)  # kimyoviy lokantlar: 2,4-dinitrofenol
     if src:
         s = re.sub(r"(\d),(\d)", r"\1.\2", s)
         s = re.sub(r"(\d) (\d{3})\b", r"\1\2", s)       # 30 000 -> 30000
@@ -85,7 +86,7 @@ for p, a, b in pairs:
         warns.append(f"{p}: qo'shtirnoqlar juft emas | {b[:100]}")
     if re.search(r"[«»]", b):
         errs.append(f"{p}: «» qolgan")
-    if re.search(r"\d,\d", re.sub(r"\b\d{1,3}(?:,\d{3})+\b", "", b)):
+    if re.search(r"\d,\d", re.sub(r"\b\d(?:,\d)+-[A-Za-z]|\b\d{1,3}(?:,\d{3})+\b", "", b)):
         errs.append(f"{p}: o'nli vergul qolgan | {b[:120]}")
     nu, ne = nums(a, True), nums(b, False)
     lost = nu - ne

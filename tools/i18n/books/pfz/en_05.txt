@@ -1,56 +1,3 @@
-s0682 Place mouse 3 in the thermostat at +40 °C and keep it there until signs of hyperthermia (increased motor activity and rapid breathing) appear.
-s0683 Place each mouse in turn in the pressure chamber and lower the pressure at the same rate (corresponding to an “ascent” of about 1000 m per minute).
-s0684 Using the manometer reading, record the “altitude” and the time at which each stage appears: motor excitation, rapid breathing, cyanosis of the ears and tail, lying on the side, convulsions, agonal (slow, deep) breathing.
-s0685 As soon as agonal breathing appears, immediately return the pressure to normal and observe the animal's recovery time.
-s0686 Enter the results in the table and compare them.
-s0687 Table 2.8. Sample table for recording the results of the experiment
-s0688 Parameter
-s0689 Control (+20 °C)
-s0690 Cooled (+5 °C)
-s0691 Heated (+40 °C)
-s0692 Initial respiratory rate
-s0693 “Altitude” of excitation
-s0694 “Altitude” of cyanosis
-s0695 “Altitude” of convulsions
-s0696 “Altitude” and time of agonal breathing
-s0697 Recovery time
-s0698 Expected results and their analysis
-s0699 **The heated mouse** is the least resistant to hypoxia: convulsions and agonal breathing appear at a lower “altitude” and sooner. The reason is that in hyperthermia metabolism and the oxygen demand of tissues rise sharply, while oxygen delivery is reduced.
-s0700 **The cooled mouse** (with reduced body temperature) is the most resistant to hypoxia: the signs appear at a higher “altitude” and later. The reason is that in hypothermia metabolism slows, the central nervous system is inhibited and oxygen demand decreases.
-s0701 **The control mouse** shows an intermediate result.
-s0702 **Conclusion:** the same cause (a decreased partial pressure of oxygen in the air) under different external conditions (ambient temperature) leads to different development and outcomes of hypoxia. This confirms the important role of external conditions in the development of a pathological process.
-s0703 Skill: creating a model of hypoxic hypoxia in a pressure chamber
-s0704 Check the sealing of the pressure chamber and the functioning of the manometer.
-s0705 Record the animal's initial parameters (respiratory rate, movement, color, temperature).
-s0706 Place the animal in the pressure chamber and close the lid tightly.
-s0707 Lower the pressure evenly with the pump; convert the manometer reading into meters using the altitude table.
-s0708 Record the “altitude” and the time whenever a new sign appears.
-s0709 As soon as agonal breathing appears, immediately restore the pressure.
-s0710 Observe the animal's recovery and record the result in the protocol.
-s0711 Skill: analyzing the results of the experiment
-s0712 Enter in the table the “altitude” and the time at which the signs appeared for each group.
-s0713 Compare with the control group and determine whether resistance increased or decreased.
-s0714 Explain the difference by the level of metabolism and oxygen demand.
-s0715 Distinguish the cause (hypoxia) and the condition (temperature) and write a conclusion.
-s0716 State the clinical significance of the result (artificial hypothermia, the sensitivity of a febrile patient to hypoxia).
-s0717 Into what groups are external conditions divided? Give examples.
-s0718 Why can the same factor be a cause in one case and a condition in another?
-s0719 Explain the stages of hyperthermia and the pathogenesis of heatstroke.
-s0720 How does hyperthermia differ from fever?
-s0721 What are the stages and clinical degrees of hypothermia?
-s0722 For what purpose is artificial hypothermia used in medicine?
-s0723 List the zones of the effect of altitude on the organism.
-s0724 Explain the pathogenesis of mountain sickness.
-s0725 How does decompression sickness develop and how is it prevented?
-s0726 On what factors does the harmful effect of electric current depend?
-s0727 What are the direct and indirect actions of ionizing radiation?
-s0728 List the forms and periods of acute radiation sickness.
-s0729 Explain the pathogenesis of crush syndrome.
-s0730 By what properties is the pathogenicity of biological factors determined?
-s0731 Why does the resistance to hypoxia of heated and cooled mice differ in the experiment?
-s0732 What is the main difference between hyperthermia and fever?
-s0733 In hyperthermia, body temperature is always above 42 °C
-s0734 In hyperthermia, heat loss is insufficient and the thermoregulatory center is not reset
 s0735 Hyperthermia is caused by pyrogens
 s0736 There is no sweating in fever
 s0737 Antipyretics are effective in hyperthermia
@@ -179,3 +126,100 @@ s0859 The blood-brain barrier protects the brain, but many drugs (for example, s
 s0860 **“Thin — stomach, stout — vessels”**: people of the asthenic type are more prone to peptic ulcer and tuberculosis, whereas people of the hypersthenic type are prone to hypertension, atherosclerosis and diabetes.
 s0861 **“Congenital”** and **“hereditary”** are not the same concept. A congenital disease is present at birth, but it may not be hereditary (for example, defects caused by the rubella virus or alcohol during pregnancy). A hereditary disease, in contrast, may appear long after birth (Huntington chorea — at the age of 30–50). Conditions that develop under the influence of external factors and resemble a hereditary disease but are not passed from generation to generation are called **phenocopies**.
 s0862 Although anesthesia increases resistance to hypoxia, narcotic substances in large doses depress the respiratory center and can themselves lead to hypoxia (respiratory hypoxia). That is why the dose is strictly fixed in the experiment, and in the clinic anesthesia is always performed under monitoring of respiration and blood oxygen.
+s0863 1. Characteristics of internal conditions
+s0864 **Internal conditions** are the properties of the organism itself that determine the result of the action of the cause of disease. Internal conditions are the main reason why the same cause (for example, an infection or hypoxia) produces different results in different people.
+s0865 Table 3.1. Internal conditions
+s0866 Reactivity and resistance
+s0867 The ability of the organism to respond to a stimulus and to resist it
+s0868 State of the nervous system
+s0869 Type of higher nervous activity, the balance of excitation and inhibition, sleep, anesthesia, stress
+s0870 State of the endocrine system
+s0871 Levels of hormones of the pituitary, adrenal, thyroid and pancreatic glands
+s0872 Constitution
+s0873 Hereditary and acquired, relatively stable morphological and functional features of the organism
+s0874 Heredity
+s0875 Hereditary diseases and hereditary predisposition to diseases
+s0876 Age and sex
+s0877 Childhood, maturity and old age; features of the female and male organism
+s0878 Biological barriers
+s0879 State of the skin, mucous membranes and blood-tissue barriers
+s0880 Previous state
+s0881 Previous diseases, immunity, fatigue, nutritional status
+s0882 2. Reactivity and its types
+s0883 **Reactivity** is the property of the organism to respond to influences of the external and internal environment by changing its vital activity. Reactivity is characteristic of all levels of the living organism — molecule, cell, tissue, organ, system and the whole organism.
+s0884 The concept of “reactivity” was introduced into medicine at the beginning of the 20th century; in this period anaphylaxis and serum sickness were discovered, and C. Pirquet proposed the term “allergy” (altered reactivity). I.I. Mechnikov (immunological reactivity), A.A. Bogomolets and N.N. Sirotinin (constitutional and evolutionary approaches) made a great contribution to the doctrine of reactivity. Avicenna (Ibn Sina) emphasized the need to take into account the patient's “temperament” in treatment.
+s0885 Figure 3.1
+s0886 Types of reactivity (based on data from N.H. Abdullaev, 2008)
+s0887 Table 3.2. Types of reactivity
+s0888 Type
+s0889 Biological (species) reactivity
+s0890 Hereditarily determined features of response characteristic of a particular biological species
+s0891 Resistance of humans to cattle plague and of dogs to measles; hibernation in animals
+s0892 Group reactivity
+s0893 Features characteristic of individuals belonging to one group
+s0894 Differences related to age, sex, constitution and blood group
+s0895 Individual reactivity
+s0896 Reactivity of each organism determined by its hereditary and acquired features
+s0897 Different course of the same infection in different people
+s0898 Specific (immunological)
+s0899 Formation of antibodies and sensitized lymphocytes in response to a particular antigen
+s0900 Immunity, allergy, autoimmune reactions
+s0901 Nonspecific
+s0902 Responding in the same way to different factors
+s0903 Stress, phagocytosis, fever, barrier functions
+s0904 Physiological
+s0905 The normal response of a healthy organism
+s0906 Adaptation to physical work, immunity after vaccination
+s0907 Pathological
+s0908 An abnormal response with limited adaptive capacity under the influence of a disease factor
+s0909 Allergy, immunodeficiency, decreased reactivity in traumatic shock
+s0910 Forms of expression of reactivity
+s0911 Table 3.3. Forms of expression of reactivity
+s0912 Clinical picture
+s0913 Normergy
+s0914 A normal response appropriate to the stimulus
+s0915 The usual (typical) course of the disease
+s0916 Hyperergy
+s0917 An increased, excessive response
+s0918 The disease runs a violent, severe course: high fever, intense inflammation, allergic reactions
+s0919 Hypoergy
+s0920 A weakened response
+s0921 The disease is sluggish, with vague signs; “asymptomatic” pneumonia in the elderly and in cachexia
+s0922 Dysergy
+s0923 A distorted, abnormal response
+s0924 Unexpected, unusual reactions (for example, a paradoxical response to drugs)
+s0925 Anergy
+s0926 Almost complete absence of a response
+s0927 Severe sepsis, AIDS, extreme cachexia, a negative tuberculin test
+s0928 A hypoergic course is particularly dangerous: in an elderly patient or a patient with diabetes mellitus, pneumonia may occur without fever or leukocytosis, with only weakness and clouding of consciousness. The “mildness” of the signs reflects not the mildness of the disease but the weakness of the organism's response, and it increases the risk of late diagnosis.
+s0929 3. Resistance and its relationship to reactivity
+s0930 **Resistance** is the ability of the organism to withstand and resist the action of pathogenic factors. Resistance is one of the important manifestations of reactivity.
+s0931 Table 3.4. Types of resistance
+s0932 Passive
+s0933 Resistance related to the structural features of the organism
+s0934 The barrier of the skin, bones and mucous membranes; the thick skin of some animals
+s0935 Active
+s0936 Due to active engagement of protective-adaptive mechanisms
+s0937 Phagocytosis, antibody formation, detoxification of poisons
+s0938 Primary (innate)
+s0939 Hereditarily determined resistance
+s0940 Species immunity
+s0941 Secondary (acquired)
+s0942 Acquired during life
+s0943 Immunity after disease or vaccination, hardening
+s0944 Specific
+s0945 Resistance to a particular factor
+s0946 Immunity to a certain infection
+s0947 General resistance to various factors
+s0948 Resistance of a hardened person to cold, hypoxia and infections
+s0949 Reactivity and resistance do not always change in the same direction:
+s0950 Table 3.5. Interrelationship of reactivity and resistance
+s0951 State
+s0952 Reactivity
+s0953 Resistance
+s0954 Hardening, physical exercise
+s0955 Increases
+s0956 Increased resistance to infections and cold
+s0957 Hibernation, anesthesia, hypothermia
+s0958 Decreases
+s0959 Increases with respect to hypoxia and certain poisons and microbes

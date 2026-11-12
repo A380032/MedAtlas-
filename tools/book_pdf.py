@@ -3,7 +3,7 @@ Kitob JSON faylidan (data/<lang>/subjects/<id>.json) asl PDF dizayniga o'xshash 
 Kitobga kirmagan qismlar (muqova, annotatsiya, so'zboshi, adabiyotlar, yorliqlar) va chiqish yo'li:
 tools/i18n/books/<id>/pdf_<lang>.json.
 
-Tartib: muqova -> annotatsiya -> mundarija -> so'zboshi -> 11 mavzu (maqsad, nazariy qism, amaliy
+Tartib: muqova -> annotatsiya -> mundarija -> so'zboshi -> mavzular (maqsad, nazariy qism, amaliy
 ko'nikmalar, nazorat savollari, testlar, vaziyatli masalalar, tezkor takrorlash, atamalar lug'ati)
 -> test javoblari -> adabiyotlar.
 Ikki bosqich: 1) PDF yasaladi va sarlavhalar qaysi sahifaga tushgani pdftotext bilan topiladi;
@@ -133,11 +133,15 @@ def build(pages=None):
              h(1, tp["title"], f"t{n}")]
         s.append(f'<h2>{esc(L["goals"])}</h2>' + blocks(tp.get("goals", [])))
         secs = tp.get("sections", [])
-        gloss = secs[-1] if secs and not re.match(r"\d+\.\d+\.", secs[-1]["title"]) else None
+        gloss = secs[-1] if secs and not re.match(r"\d+\.(\d+\.)?\s", secs[-1]["title"]) else None
+        flat = bool(secs) and all(re.match(r"\d+\.\s", x["title"]) for x in secs)   # pfz: "1. ...", "2. ..."
         for k, sec in enumerate(secs if gloss is None else secs[:-1]):
             s.append(h(2, sec["title"], f"t{n}s{k}") + blocks(sec["blocks"]))
         if tp.get("skills"):
-            s.append(f'<h2>{esc(L["skills"])}</h2>')
+            if flat:   # asl kitobdagidek raqamli bo'lim va mundarijada: "11. Amaliy ko'nikmalar"
+                s.append(h(2, f'{len(secs) + 1}. {L["skills"]}', f"t{n}sk"))
+            else:
+                s.append(f'<h2>{esc(L["skills"])}</h2>')
             for sk in tp["skills"]:
                 s.append(f'<h3>{inline(sk["title"])}</h3>' + blocks(sk["blocks"]))
         if tp.get("questions"):
@@ -173,7 +177,7 @@ def build(pages=None):
 
     c = CFG["cover"]
     cover = (f'<section class="cover"><div class="ctop">{"".join(f"<div>{esc(x)}</div>" for x in c["top"])}</div>'
-             f'<div class="cban"><div class="ct">{esc(c["title"])}</div><div class="cp">{esc(c["part"])}</div>'
+             f'<div class="cban"><div class="ct">{esc(c["title"])}</div>{f'<div class="cp">{esc(c["part"])}</div>' if c.get("part") else ""}'
              f'<div class="cs">{esc(c["sub"])}</div></div><div class="ck">{esc(c["kind"])}</div>'
              f'<img class="cimg" src="file://{ROOT}/{esc(c["image"])}" alt="">'
              f'<div class="cby">{esc(c["by_label"])} <b>{esc(c["by"])}</b><div><i>{esc(c["affil"])}</i></div></div>'

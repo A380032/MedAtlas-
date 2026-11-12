@@ -1,46 +1,3 @@
-s0537 The action of high temperature. Hyperthermia
-s0538 **Hyperthermia** is a rise in body temperature resulting from insufficient heat loss relative to heat production. It occurs with high external temperature, high air humidity (sweat does not evaporate), heat-insulating clothing and heavy physical work.
-s0539 Table 2.2. Stages of hyperthermia
-s0540 Mechanism
-s0541 Signs
-s0542 Compensation (adaptation)
-s0543 Thermolysis increases: skin vessels dilate, sweating increases, breathing becomes rapid; thermogenesis decreases
-s0544 Body temperature almost normal, flushed skin, profuse sweating, tachycardia
-s0545 Decompensation
-s0546 Thermoregulatory mechanisms are insufficient, heat accumulates
-s0547 Body temperature rises above 40–41 °C, weakness, headache, nausea, dehydration
-s0548 Heatstroke (severe decompensation)
-s0549 Injury of the thermoregulatory center, cerebral edema, collapse
-s0550 Sweating stops, the skin is dry and hot, loss of consciousness, convulsions, disturbed breathing and cardiac activity
-s0551 Figure 2.1
-s0552 Pathogenesis of heatstroke (based on V.V. Novitsky, 2009, Fig. 2.2)
-s0553 **Sunstroke** is overheating, hyperemia and edema of the brain and its membranes resulting from the direct action of the sun's rays on the head. Its main signs are severe headache, vomiting and impaired consciousness.
-s0554 **A burn** is the local action of high temperature. By depth, degrees I–IV are distinguished. With extensive burns (more than 15–20% of the body surface, and even less in children and the elderly), **burn disease** develops: it runs through the periods of burn shock, toxemia, septicotoxemia and recovery.
-s0555 The action of low temperature. Hypothermia
-s0556 **Hypothermia** is a fall in body temperature below normal (below 35 °C) resulting from heat loss exceeding heat production. In cold water the body cools much faster than in air, because the thermal conductivity of water is about 25 times higher than that of air.
-s0557 Table 2.3. Stages of hypothermia
-s0558 Compensation
-s0559 Thermogenesis increases (shivering, increased metabolism), thermolysis decreases (skin vessels constrict)
-s0560 Pale skin, “goose bumps”, shivering, tachycardia, raised arterial pressure
-s0561 Thermoregulatory mechanisms are exhausted, the central nervous system is inhibited
-s0562 Body temperature falls, shivering stops, drowsiness, bradycardia, slow breathing, hypoxia
-s0563 Terminal stage
-s0564 The activity of the vital centers ceases
-s0565 Below 24–25 °C — ventricular fibrillation or respiratory arrest
-s0566 Table 2.4. Degrees of clinical hypothermia
-s0567 Degree
-s0568 Body temperature
-s0569 Main signs
-s0570 Mild
-s0571 32–35 °C
-s0572 Shivering, tachycardia, apathy, impaired coordination of movements
-s0573 Moderate
-s0574 28–32 °C
-s0575 Shivering disappears, drowsiness, bradycardia, arrhythmias
-s0576 Severe
-s0577 Below 28 °C
-s0578 Coma, loss of reflexes, risk of ventricular fibrillation
-s0579 **Artificial hypothermia** is used in medicine: in heart and brain operations, cooling the body to 28–32 °C reduces the oxygen demand of tissues and increases their resistance to hypoxia. In resuscitation after cardiac arrest, targeted temperature management protects the brain. This rule is also confirmed in the experimental part of the session.
 s0580 **Frostbite** is the local action of low temperature. Its main mechanism is vascular spasm, slowing of blood flow, stasis and thrombosis, tissue ischemia and necrosis. The fingers, ears, nose and feet are most often affected.
 s0581 3. Changes in atmospheric (barometric) pressure
 s0582 Decreased atmospheric pressure. Mountain sickness and altitude sickness
@@ -143,3 +100,56 @@ s0678 Procedure
 s0679 Assess the initial state of the mice: motor activity, respiratory rate (per minute), color of the skin, ears and tail, rectal temperature.
 s0680 Leave mouse 1 at room temperature (+20 °C) — control.
 s0681 Place mouse 2 in the vessel at +5 °C and keep it there until its body temperature falls noticeably (until signs of chilling appear).
+s0682 Place mouse 3 in the thermostat at +40 °C and keep it there until signs of hyperthermia (increased motor activity and rapid breathing) appear.
+s0683 Place each mouse in turn in the pressure chamber and lower the pressure at the same rate (corresponding to an “ascent” of about 1000 m per minute).
+s0684 Using the manometer reading, record the “altitude” and the time at which each stage appears: motor excitation, rapid breathing, cyanosis of the ears and tail, lying on the side, convulsions, agonal (slow, deep) breathing.
+s0685 As soon as agonal breathing appears, immediately return the pressure to normal and observe the animal's recovery time.
+s0686 Enter the results in the table and compare them.
+s0687 Table 2.8. Sample table for recording the results of the experiment
+s0688 Parameter
+s0689 Control (+20 °C)
+s0690 Cooled (+5 °C)
+s0691 Heated (+40 °C)
+s0692 Initial respiratory rate
+s0693 “Altitude” of excitation
+s0694 “Altitude” of cyanosis
+s0695 “Altitude” of convulsions
+s0696 “Altitude” and time of agonal breathing
+s0697 Recovery time
+s0698 Expected results and their analysis
+s0699 **The heated mouse** is the least resistant to hypoxia: convulsions and agonal breathing appear at a lower “altitude” and sooner. The reason is that in hyperthermia metabolism and the oxygen demand of tissues rise sharply, while oxygen delivery is reduced.
+s0700 **The cooled mouse** (with reduced body temperature) is the most resistant to hypoxia: the signs appear at a higher “altitude” and later. The reason is that in hypothermia metabolism slows, the central nervous system is inhibited and oxygen demand decreases.
+s0701 **The control mouse** shows an intermediate result.
+s0702 **Conclusion:** the same cause (a decreased partial pressure of oxygen in the air) under different external conditions (ambient temperature) leads to different development and outcomes of hypoxia. This confirms the important role of external conditions in the development of a pathological process.
+s0703 Skill: creating a model of hypoxic hypoxia in a pressure chamber
+s0704 Check the sealing of the pressure chamber and the functioning of the manometer.
+s0705 Record the animal's initial parameters (respiratory rate, movement, color, temperature).
+s0706 Place the animal in the pressure chamber and close the lid tightly.
+s0707 Lower the pressure evenly with the pump; convert the manometer reading into meters using the altitude table.
+s0708 Record the “altitude” and the time whenever a new sign appears.
+s0709 As soon as agonal breathing appears, immediately restore the pressure.
+s0710 Observe the animal's recovery and record the result in the protocol.
+s0711 Skill: analyzing the results of the experiment
+s0712 Enter in the table the “altitude” and the time at which the signs appeared for each group.
+s0713 Compare with the control group and determine whether resistance increased or decreased.
+s0714 Explain the difference by the level of metabolism and oxygen demand.
+s0715 Distinguish the cause (hypoxia) and the condition (temperature) and write a conclusion.
+s0716 State the clinical significance of the result (artificial hypothermia, the sensitivity of a febrile patient to hypoxia).
+s0717 Into what groups are external conditions divided? Give examples.
+s0718 Why can the same factor be a cause in one case and a condition in another?
+s0719 Explain the stages of hyperthermia and the pathogenesis of heatstroke.
+s0720 How does hyperthermia differ from fever?
+s0721 What are the stages and clinical degrees of hypothermia?
+s0722 For what purpose is artificial hypothermia used in medicine?
+s0723 List the zones of the effect of altitude on the organism.
+s0724 Explain the pathogenesis of mountain sickness.
+s0725 How does decompression sickness develop and how is it prevented?
+s0726 On what factors does the harmful effect of electric current depend?
+s0727 What are the direct and indirect actions of ionizing radiation?
+s0728 List the forms and periods of acute radiation sickness.
+s0729 Explain the pathogenesis of crush syndrome.
+s0730 By what properties is the pathogenicity of biological factors determined?
+s0731 Why does the resistance to hypoxia of heated and cooled mice differ in the experiment?
+s0732 What is the main difference between hyperthermia and fever?
+s0733 In hyperthermia, body temperature is always above 42 °C
+s0734 In hyperthermia, heat loss is insufficient and the thermoregulatory center is not reset

@@ -1,200 +1,192 @@
-s5887	miokardning asosiy xususiyatlarini (avtomatizm, qo‘zg‘aluvchanlik, o‘tkazuvchanlik, qisqaruvchanlik) va o‘tkazuvchi tizim tuzilishini;
-s5888	markaziy gemodinamika ko‘rsatkichlarini;
-s5889	EKG tishlari, segmentlari va intervallarining kelib chiqishi, amplitudasi va davomiyligini;
-s5890	aritmiyalarning tasnifi va rivojlanish mexanizmlarini (avtomatizm buzilishi, trigger faollik, re-entry);
-s5891	sinus taxikardiyasi, bradikardiyasi va aritmiyasining sabablari va EKG belgilarini;
-s5892	ekstrasistoliyalarning turlari, sabablari, nazariyalari va EKG belgilarini.
-s5893	EKG ni yozib olish va uning asosiy ko‘rsatkichlarini hisoblash (yurak qisqarishlar soni, intervallar);
-s5894	sinus ritmini aniqlash;
-s5895	avtomatizm buzilishlari va ekstrasistoliyalarni EKG da aniqlash.
-s5896	Standart qog‘oz tezligi 25 mm/s bo‘lganda: 1 mm (kichik katak) = 0,04 s, 5 mm (katta katak) = 0,2 s. Yurak qisqarishlar soni = 60 / RR (soniyada) yoki 300 / RR orasidagi katta kataklar soni. **Sinus ritmi mezonlari:** har bir QRS dan oldin P tishi, P II tarmoqda musbat, PQ doimiy (0,12–0,20 s), RR intervallar bir xil (farq 10 foizdan kam), chastota 60–90 marta/daqiqa.
-s5897	Qorincha ekstrasistolalarining “xavfli” belgilari: politop, juft va guruhli, erta (“R on T”) ekstrasistolalar, ayniqsa o‘tkir miokard infarkti fonida — ular qorinchalar fibrillyatsiyasiga o‘tish xavfini bildiradi. Ekstrasistoladan keyingi uzaygan pauzadan so‘ng keladigan qisqarish kuchliroq bo‘ladi (Frank–Starling qonuni) — bemor buni “yurak to‘xtab, keyin kuchli urdi” deb his qiladi.
-s5898	1. Miokardning xususiyatlari va yurak faoliyatining boshqarilishi
-s5899	Jadval 19.1. Miokardning asosiy xususiyatlari
-s5900	Xususiyat
-s5901	Buzilishi
-s5902	Avtomatizm
-s5903	Tashqi ta’sirsiz impuls hosil qilish qobiliyati (asosan sinus tugunida)
-s5904	Sinus taxi-, bradikardiya, aritmiya, sinus tugunining zaiflik sindromi, ektopik ritmlar
-s5905	Qo‘zg‘aluvchanlik
-s5906	Ta’sirga javoban qo‘zg‘alish qobiliyati
-s5907	Ekstrasistoliyalar, paroksizmal taxikardiyalar
-s5908	O‘tkazuvchanlik
-s5909	Impulsni yurak bo‘ylab o‘tkazish
-s5910	Blokadalar, erta qo‘zg‘alish sindromlari
-s5911	Qisqaruvchanlik
-s5912	Qo‘zg‘alishga javoban qisqarish
-s5913	Refrakterlik
-s5914	Qo‘zg‘alishdan keyin vaqtincha qo‘zg‘almaslik
-s5915	Re-entry mexanizmida ahamiyatli
-s5916	Jadval 19.2. O‘tkazuvchi tizim markazlari
-s5917	Markaz
-s5918	Avtomatizm chastotasi
-s5919	I tartibli — sinus (sinoatrial) tugun
-s5920	O‘ng bo‘lmacha, yuqori kovak vena quyilish joyi
-s5921	60–80 marta/daqiqa
-s5922	II tartibli — atrioventrikulyar (AV) birikma
-s5923	Bo‘lmachalararo to‘siqning pastki qismi
-s5924	40–60 marta/daqiqa
-s5925	III tartibli — Gis tutami oyoqchalari va Purkine tolalari
-s5926	Qorinchalar
-s5927	20–40 marta/daqiqa
-s5928	Yurak faoliyatini **simpatik** nervlar (noradrenalin, beta1-retseptorlar: qisqarishlar soni, kuchi, o‘tkazuvchanlik va qo‘zg‘aluvchanlik ortadi) va **parasimpatik** (adashgan nerv, atsetilxolin: qisqarishlar soni va AV o‘tkazuvchanlik kamayadi) boshqaradi; gumoral omillar (katexolaminlar, tireoid gormonlar, K+, Ca2+) ham ta’sir qiladi.
-s5929	**Markaziy gemodinamika ko‘rsatkichlari:** zarb hajmi (60–80 ml), daqiqalik hajm (4,5–5,5 l/daqiqa) = zarb hajmi × yurak qisqarishlari soni, yurak indeksi (2,5–4,0 l/daqiqa/m2), umumiy periferik tomir qarshiligi, markaziy venoz bosim (5–10 sm suv ust.). Miokard energiyasini asosan yog‘ kislotalarining aerob oksidlanishidan oladi; kislorod ekstraksiyasi tinch holatda ham yuqori (70– 75 %), shuning uchun ehtiyoj ortganda asosan koronar qon oqimining ortishi hisobiga qoplanadi.
-s5930	2. EKG ning asosiy elementlari
-s5931	**Elektrokardiografiya (EKG)** — yurak qo‘zg‘alishida hosil bo‘ladigan elektr potensiallarini tana yuzasidan qayd qilish usuli. Standart 12 ta tarmoq: 3 ta standart (I, II, III), 3 ta kuchaytirilgan (aVR, aVL, aVF) va 6 ta ko‘krak (V1–V6) tarmoqlari.
-s5932	Rasm 19.1
-s5933	Me’yoriy sinus ritmi (sxematik EKG)
-s5934	Jadval 19.3. EKG elementlari va ularning me’yori
-s5935	Element
-s5936	Nimani aks ettiradi
-s5937	P tishi
-s5938	Bo‘lmachalar depolyarizatsiyasi
-s5939	0,08–0,10 s, amplitudasi 2,5 mm gacha; II tarmoqda musbat
-s5940	PQ (PR) intervali
-s5941	Impulsning bo‘lmachalardan qorinchalarga o‘tish vaqti
-s5942	0,12–0,20 s
-s5943	QRS kompleksi
-s5944	Qorinchalar depolyarizatsiyasi
-s5945	0,06–0,10 s
-s5946	Q tishi
-s5947	Qorinchalararo to‘siq depolyarizatsiyasi
-s5948	0,03 s dan qisqa, R ning 1/4 qismidan kichik
-s5949	ST segmenti
-s5950	Qorinchalarning to‘liq qo‘zg‘algan holati
-s5951	Izoliniyada (0,5–1 mm og‘ish mumkin)
-s5952	T tishi
-s5953	Qorinchalar repolyarizatsiyasi
-s5954	Asimmetrik, ko‘pchilik tarmoqlarda musbat
-s5955	QT intervali
-s5956	Qorinchalarning elektr sistolasi
-s5957	Yurak urishlar soniga bog‘liq, odatda 0,35– 0,44 s
-s5958	RR intervali
-s5959	Yurak sikli davomiyligi
-s5960	0,6–1,0 s (60–100 marta/daqiqa)
-s5961	3. Aritmiyalar tasnifi va mexanizmlari
-s5962	**Aritmiya** — yurak qisqarishlari chastotasi, muntazamligi, qo‘zg‘alish manbai yoki impuls o‘tkazilishi ketma-ketligining buzilishi.
-s5963	Jadval 19.4. Aritmiyalar tasnifi (miokard xususiyatlari bo‘yicha)
-s5964	Avtomatizm buzilishi (nomotop)
-s5965	Sinus taxikardiyasi, sinus bradikardiyasi, sinus aritmiyasi, sinus tugunining zaiflik sindromi
-s5966	Avtomatizm buzilishi (geterotop)
-s5967	Sirpanuvchi (o‘rinbosar) ritmlar va kompleksler: bo‘lmacha, AV birikma, idioventrikulyar ritmlar
-s5968	Qo‘zg‘aluvchanlik buzilishi
-s5969	O‘tkazuvchanlik buzilishi
-s5970	Blokadalar (sinoatrial, bo‘lmachalar ichi, AV, Gis tutami oyoqchalari), erta qo‘zg‘alish sindromlari (WPW)
-s5971	Aralash buzilishlar
-s5972	Bo‘lmachalar va qorinchalar fibrillyatsiyasi va titrashi (20-mavzu)
-s5973	Jadval 19.5. Aritmiyalarning elektrofiziologik mexanizmlari
-s5974	Avtomatizmning o‘zgarishi
-s5975	Sinus tugunida yoki ektopik o‘choqda diastolik depolyarizatsiya tezligining o‘zgarishi
-s5976	Sinus taxikardiyasi, ektopik bo‘lmacha taxikardiyasi
-s5977	Trigger faollik
-s5978	Erta yoki kechikkan postdepolyarizatsiyalar (oldingi potensialdan keyingi “qo‘shimcha to‘lqin”)
-s5979	Glikozidlar intoksikatsiyasi, QT uzaygan sindromda “pirouet” taxikardiyasi
-s5980	Qo‘zg‘alish to‘lqinining qayta kirishi (re-entry)
-s5981	Impuls bir yo‘lda blokadaga uchrab, boshqa yo‘l orqali qaytib, ilgari qo‘zg‘algan sohani qayta qo‘zg‘atadi; bir tomonlama blokada va sekin o‘tkazish sharti
-s5982	Ko‘pchilik ekstrasistoliyalar va paroksizmal taxikardiyalar, bo‘lmachalar titrashi
-s5983	4. Avtomatizm buzilishlari
-s5984	Sinus taxikardiyasi
-s5985	Sinus tugunidan chiqqan impulslar chastotasining tinch holatda **90 (100) marta/daqiqadan** ortishi.
-s5986	**Sabablari:** fiziologik — jismoniy yuklama, hayajon; patologik — isitma (har 1 °C ga taxminan 8–10 marta/daqiqa), anemiya, gipoksiya, gipovolemiya, gipotenziya, tireotoksikoz, yurak yetishmovchiligi, miokardit, feoxromotsitoma, dorilar (atropin, adrenomimetiklar, kofein).
-s5987	**Mexanizmi:** simpatik ta’sirning kuchayishi yoki parasimpatik ta’sirning susayishi — sinus tugun hujayralarida diastolik depolyarizatsiya tezlashadi.
-s5988	**EKG:** sinus ritmi saqlangan, RR intervallar qisqargan, chastota 90 dan ko‘p.
-s5989	Rasm 19.2
-s5990	**Oqibatlari:** diastola qisqaradi → qorinchalarning qonga to‘lishi va koronar qon oqimi (asosan diastolada) kamayadi, miokardning kislorodga ehtiyoji ortadi → ishemiyaga moyil bemorlarda stenokardiya xurujlari.
-s5991	Sinus bradikardiyasi
-s5992	Sinus tuguni impulslari chastotasining **60 marta/daqiqadan** kamayishi.
-s5993	**Sabablari:** fiziologik — sportchilarda (vagotoniya), uyquda; patologik — adashgan nerv tonusining ortishi (kalla ichi bosimi oshishi, mexanik sariqlik — o‘t kislotalari ta’siri), gipotireoz, gipotermiya, sinus tugunining zaiflik sindromi, miokard infarkti (pastki devor), dorilar (beta-adrenoblokatorlar, yurak glikozidlari, verapamil).
-s5994	**EKG:** sinus ritmi, RR intervallar uzaygan, chastota 60 dan kam.
-s5995	Rasm 19.3
-s5996	Sinus aritmiyasi
-s5997	Sinus tugunidan chiqqan impulslarning **notekis** ketishi: RR intervallar farqi 0,1–0,15 s dan (yoki 10 foizdan) ko‘p.
-s5998	**Nafas aritmiyasi** — nafas olishda chastota ortadi, chiqarishda kamayadi (adashgan nerv tonusining nafas fazalari bilan o‘zgarishi); bolalar va o‘smirlarda fiziologik.
-s5999	**Nafasga bog‘liq bo‘lmagan aritmiya** — miokardda organik o‘zgarishlar, intoksikatsiyalar.
-s6000	Rasm 19.4
-s6001	**Sinus tugunining zaiflik sindromi** — sinus tugunining organik shikastlanishi (ishemiya, fibroz, kardiomiopatiyalar) natijasida avtomatizmning pasayishi: doimiy bradikardiya, sinoatrial blokadalar, sinus tugunining to‘xtashi, bradikardiyaning taxiaritmiyalar bilan almashinishi (“taxi-bradi sindromi”). Uzoq pauzalarda bosh miya ishemiyasi tufayli hushdan ketish xurujlari (**Morgani–Adams–Stoks**) bo‘ladi; davo — doimiy elektrokardiostimulyator.
-s6002	Sirpanuvchi (o‘rinbosar) ritmlar
-s6003	Sinus tuguni faoliyati susayganda yoki impulslar o‘tmay qolganda pastki tartibli markazlar impuls hosil qila boshlaydi: AV birikma ritmi (40–60 marta/daqiqa, P teskari yoki QRS bilan qo‘shilgan), idioventrikulyar ritm (20–40 marta/daqiqa, keng deformatsiyalangan QRS). Bu himoya (kompensator) mexanizm — asistoliyaning oldini oladi.
-s6004	5. Qo‘zg‘aluvchanlik buzilishlari. Ekstrasistoliya
-s6005	**Ekstrasistoliya** — yurakning yoki uning bir qismining navbatdan tashqari (muddatidan oldin) qisqarishi; impuls ektopik (sinus tugunidan tashqari) o‘choqdan chiqadi.
-s6006	**funksional** — hayajon, chekish, kuchli choy va qahva, alkogol, vegetativ disfunksiya, oshqozon-ichak kasalliklari (reflektor);
-s6007	**organik** — yurak ishemik kasalligi, miokard infarkti, miokarditlar, kardiomiopatiyalar, yurak nuqsonlari, arterial gipertenziya;
-s6008	**toksik va elektrolit** — yurak glikozidlari intoksikatsiyasi, gipokaliyemiya, gipomagniyemiya, adrenomimetiklar, tireotoksikoz.
-s6009	**Ekstrasistoliyaning nazariyalari va mexanizmlari:** re-entry (qo‘zg‘alish to‘lqinining qayta kirishi), ektopik o‘choq avtomatizmining oshishi, trigger faollik (postdepolyarizatsiyalar).
-s6010	**Kompensator pauza** — ekstrasistoladan keyingi navbatdagi me’yoriy qisqarishgacha uzaygan oraliq:
-s6011	**to‘liq kompensator pauza** — ekstrasistoladan oldingi va keyingi RR yig‘indisi ikkita me’yoriy RR ga teng; qorincha ekstrasistolasiga xos (sinus tuguni “razryadsizlanmaydi”, uning ritmi buzilmaydi; ekstrasistoladan keyingi sinus impulsi refrakter qorinchalarga to‘g‘ri keladi);
-s6012	**to‘liq bo‘lmagan kompensator pauza** — yig‘indi ikkita RR dan kam; bo‘lmacha va AV ekstrasistolalariga xos (ektopik impuls sinus tugunini ham qo‘zg‘atib, uning siklini “qayta boshlaydi”).
-s6013	Jadval 19.6. Ekstrasistolalarning EKG belgilari
-s6014	Bo‘lmacha ekstrasistolasi
-s6015	AV birikma ekstrasistolasi
-s6016	Qorincha ekstrasistolasi
-s6017	Muddatidan oldin
-s6018	Ha
-s6019	Bor, shakli o‘zgargan (yoki teskari)
-s6020	Teskari P (QRS dan oldin yoki keyin) yoki yo‘q
-s6021	Tor, o‘zgarmagan
-s6022	Keng (0,12 s dan ko‘p), deformatsiyalangan
-s6023	O‘zgarmagan
-s6024	QRS ning asosiy tishiga qarama-qarshi yo‘nalgan
-s6025	Kompensator pauza
-s6026	To‘liq bo‘lmagan
-s6027	Ko‘pincha to‘liq bo‘lmagan
-s6028	To‘liq
-s6029	Rasm 19.5
-s6030	Rasm 19.6
-s6031	Ekstrasistoliyaning turlari: **yakka**, **juft** (ketma-ket ikkita), **guruhli** (uch va undan ko‘p — “yugurishlar”, paroksizmal taxikardiyaga o‘tish); **allorhitmiya** — muntazam takrorlanuvchi: **bigeminiya** (har bir me’yoriy qisqarishdan keyin ekstrasistola), **trigeminiya** (har ikkitadan keyin); **monotop** (bir o‘choqdan) va **politop** (har xil shakldagi, turli o‘choqlardan); erta (“R on T” — oldingi qisqarish T tishiga tushuvchi).
-s6032	**Gemodinamik oqibatlari:** ekstrasistolada qorinchalar qonga yetarli to‘lmaydi — zarb hajmi kichik, periferiyada puls to‘lqini sezilmasligi mumkin (**puls defitsiti**); tez-tez ekstrasistoliyalar daqiqalik hajm va koronar qon oqimini kamaytiradi.
-s6033	6. Tajriba qismi: EKG yozish va tahlil qilish
-s6034	**Maqsad:** me’yoriy EKG ni yozib olish va avtomatizm hamda qo‘zg‘aluvchanlik buzilishlari bo‘lgan bemorlar EKG sini tahlil qilish.
-s6035	**Jihozlar:** elektrokardiograf, elektrodlar, kontakt gel, sirkul (o‘lchagich), turli aritmiyalar EKG namunalari to‘plami.
-s6036	EKG yozish tartibi
-s6037	Tekshiriluvchini chalqancha yotqizing, mushaklari bo‘shashgan bo‘lsin, tinch nafas olsin.
-s6038	Elektrodlar qo‘yiladigan joylarni gel bilan namlang.
-s6039	Oyoq-qo‘l elektrodlarini qo‘ying: qizil — o‘ng qo‘l, sariq — chap qo‘l, yashil — chap oyoq, qora (yerga ulash) — o‘ng oyoq.
-s6040	Ko‘krak elektrodlarini qo‘ying: V1 — to‘sh suyagining o‘ng chetida IV qovurg‘alararo oraliqda; V2 — chap chetida IV oraliqda; V4 — chap o‘rta o‘mrov chizig‘ida V oraliqda; V3 — V2 va V4 o‘rtasida; V5 — oldingi qo‘ltiq osti chizig‘ida V4 sathida; V6 — o‘rta qo‘ltiq osti chizig‘ida shu sathda.
-s6041	Kalibrlash signalini (1 mV = 10 mm) va qog‘oz tezligini (25 yoki 50 mm/s) tekshiring.
-s6042	Barcha 12 tarmoqni yozing; II tarmoqni uzunroq (ritm tahlili uchun) yozing.
-s6043	EKG tahlili rejasi
-s6044	Ritmni aniqlang: sinus yoki sinus emas, muntazam yoki notekis.
-s6045	Yurak qisqarishlar sonini hisoblang.
-s6046	P, PQ, QRS, QT davomiyligini o‘lchang.
-s6047	Yurakning elektr o‘qini aniqlang.
-s6048	P tishi, QRS kompleksi, ST segmenti va T tishining shaklini baholang.
-s6049	Jadval 19.7. Tahlil natijalarini qayd qilish namunasi
-s6050	EKG 1
-s6051	EKG 2
-s6052	EKG 3
-s6053	Ritm (sinus, muntazamlik)
-s6054	Qisqarishlar soni
-s6055	PQ, s
-s6056	QRS, s
-s6057	Navbatdan tashqari komplekslar
-s6058	Ko‘nikma: yurak qisqarishlar sonini EKG bo‘yicha hisoblash
-s6059	Qog‘oz tezligini aniqlang (25 mm/s).
-s6060	Ikki qo‘shni R tishi orasidagi masofani mm da o‘lchang.
-s6061	Masofani 0,04 ga ko‘paytirib, RR ni soniyada toping.
-s6062	Qisqarishlar soni = 60 / RR.
-s6063	Ritm notekis bo‘lsa, 6 soniyalik bo‘lakdagi QRS lar sonini 10 ga ko‘paytiring.
-s6064	Ko‘nikma: ekstrasistolani EKG da aniqlash va turini belgilash
-s6065	Muddatidan oldin keluvchi kompleksni toping (RR qisqargan).
-s6066	Undan oldin P tishi bor-yo‘qligini va uning shaklini tekshiring.
-s6067	QRS kengligini o‘lchang: 0,12 s dan kam — supraventrikulyar, ko‘p — qorincha.
-s6068	T tishi yo‘nalishini baholang.
-s6069	Kompensator pauzani o‘lchang: ekstrasistoladan oldingi va keyingi RR yig‘indisini ikkita me’yoriy RR bilan solishtiring.
-s6070	Ekstrasistolalar soni, ketma-ketligi (bigeminiya, juftlar) va shakllari (monotop yoki politop) haqida xulosa yozing.
-s6071	Miokardning asosiy xususiyatlarini va ularning buzilishlarini sanang.
-s6072	O‘tkazuvchi tizim markazlari va ularning avtomatizm chastotasi qanday?
-s6073	Yurak faoliyatini simpatik va parasimpatik nervlar qanday boshqaradi?
-s6074	Markaziy gemodinamika ko‘rsatkichlarini sanang.
-s6075	EKG ning P, QRS, T tishlari va PQ, QT intervallari nimani aks ettiradi?
-s6076	Sinus ritmining EKG mezonlari qanday?
-s6077	Aritmiyalarning tasnifini tushuntiring.
-s6078	Aritmiyalarning elektrofiziologik mexanizmlarini (avtomatizm, trigger faollik, re-entry) tushuntiring.
-s6079	Sinus taxikardiyasining sabablari, mexanizmi va oqibatlari qanday?
-s6080	Sinus bradikardiyasining sabablarini sanang.
-s6081	Sinus aritmiyasi nima? Nafas aritmiyasining mexanizmi qanday?
-s6082	Sinus tugunining zaiflik sindromi qanday namoyon bo‘ladi?
-s6083	Ekstrasistoliyaning sabablari va mexanizmlari qanday?
-s6084	Bo‘lmacha va qorincha ekstrasistolalari EKG da qanday farqlanadi?
-s6085	To‘liq va to‘liq bo‘lmagan kompensator pauza nima uchun yuzaga keladi?
-s6086	I tartibli avtomatizm markazi qaysi?
+s6308	Bitta katta re-entry halqasi
+s6309	Xilpillovchi aritmiyaning oqibatlari
+s6310	**Bo‘lmachalar sistolasining yo‘qolishi** — qorinchalarning to‘lishi taxminan 20–30 foizga kamayadi, ayniqsa mitral stenozda va miokard gipertrofiyasida yurak chiqarishi sezilarli kamayadi.
+s6311	**Taxisistoliya** — diastola qisqaradi, qorinchalar qonga yetarli to‘lmaydi, koronar qon oqimi kamayadi, miokardning kislorodga ehtiyoji ortadi; uzoq davom etsa yurak yetishmovchiligi.
+s6312	**Puls defitsiti** — kichik zarb hajmli qisqarishlar periferiyaga puls to‘lqini bermaydi: yurak cho‘qqisidagi qisqarishlar soni bilakdagi pulsdan ko‘p.
+s6313	**Tromboemboliyalar** — qisqarmaydigan bo‘lmachada (ayniqsa chap bo‘lmacha quloqchasida) qon turib qolib, tromb hosil bo‘ladi; tromb bo‘lagi katta qon aylanish doirasiga tushib, **ishemik insult**, buyrak, ichak, oyoq arteriyalari emboliyasini keltirib chiqaradi.
+s6314	Qorinchalar fibrillyatsiyasi va titrashi
+s6315	**Qorinchalar fibrillyatsiyasi** — qorinchalar miokardi alohida tolalarining tartibsiz, muvofiqlashmagan qo‘zg‘alishi va qisqarishi; yurak haydash funksiyasi to‘xtaydi — bu **klinik o‘limning** eng ko‘p uchraydigan mexanizmi. EKG da tartibsiz, har xil shakl va amplitudali to‘lqinlar, QRS va T farqlanmaydi. **Qorinchalar titrashi** — muntazam, katta amplitudali “sinusoidal” to‘lqinlar (200–300 marta/daqiqa), tezda fibrillyatsiyaga o‘tadi.
+s6316	**Sabablari:** o‘tkir miokard infarkti va ishemiya, elektr toki urishi, giper- va gipokaliyemiya, glikozid intoksikatsiyasi, QT uzaygan sindrom, gipotermiya, og‘ir gipoksiya.
+s6317	**Yordam:** zudlik bilan yurak-o‘pka reanimatsiyasi va **elektr defibrillyatsiya** — kuchli elektr impulsi barcha miokard hujayralarini bir vaqtda depolyarizatsiyalaydi, shundan so‘ng sinus tuguni ritmni qayta tiklashi mumkin.
+s6318	6. Tajriba qismi: o‘tkazuvchanlik buzilishlarini o‘rganish
+s6319	Stannius ligaturalari (baqa yuragida)
+s6320	**Maqsad:** avtomatizm markazlarining iyerarxiyasini va impuls o‘tkazilishining to‘xtashi oqibatlarini ko‘rsatish.
+s6321	Baqani immobilizatsiya qilib, ko‘krak qafasini oching va yurakni ochiq qoldiring; yurak qisqarishlarini sanang.
+s6322	**I ligatura** — venoz sinus va bo‘lmachalar chegarasiga ip bog‘lang: venoz sinus avvalgi ritmda qisqarishda davom etadi, bo‘lmachalar va qorincha vaqtincha to‘xtaydi, so‘ng sekinroq ritmda qisqara boshlaydi (AV markazining avtomatizmi).
+s6323	**II ligatura** — bo‘lmachalar va qorincha chegarasiga ip bog‘lang (uni qattiq siqib, AV soha qo‘zg‘atilsa): qorincha o‘z ritmida qisqara boshlaydi.
+s6324	**III ligatura** — qorinchaning pastki uchdan bir qismini ajrating: cho‘qqi qismi qisqarmaydi (avtomatizm markazi yo‘q), lekin ta’sirlansa javob beradi.
+s6325	Har bir bosqichda qismlarning qisqarishlar sonini jadvalga yozing va xulosa qiling.
+s6326	EKG namunalarini tahlil qilish
+s6327	Taqdim etilgan EKG larda PQ intervali, P va QRS nisbati, QRS kengligi va RR muntazamligini o‘lchab, o‘tkazuvchanlik buzilishi turini aniqlang.
+s6328	Ko‘nikma: AV qamal darajasini EKG bo‘yicha aniqlash
+s6329	Barcha P tishlarini belgilang va ularning muntazamligini tekshiring.
+s6330	Har bir P dan keyin QRS bor-yo‘qligini aniqlang.
+s6331	PQ intervallarini ketma-ket o‘lchang.
+s6332	PQ doimiy uzaygan, P:QRS = 1:1 bo‘lsa — I daraja.
+s6333	PQ asta-sekin uzayib, QRS tushib qolsa — II daraja Mobits I; PQ doimiy, QRS to‘satdan tushsa — II daraja Mobits II.
+s6334	P va QRS bir-biriga bog‘liq bo‘lmasa — III daraja; QRS kengligiga qarab o‘rinbosar markaz joyini aniqlang.
+s6335	Ko‘nikma: bo‘lmachalar fibrillyatsiyasini aniqlash va puls defitsitini hisoblash
+s6336	EKG da P tishlari yo‘qligini va f to‘lqinlarni toping.
+s6337	RR intervallar notekisligini sirkul bilan tasdiqlang.
+s6338	6 soniyalik bo‘lakdagi QRS sonini 10 ga ko‘paytirib, o‘rtacha chastotani toping.
+s6339	Bemorda bir vaqtda yurak cho‘qqisida qisqarishlarni (auskultatsiya) va bilak pulsini 1 daqiqa sanang.
+s6340	Puls defitsiti = yurak qisqarishlari soni – puls soni.
+s6341	Yurak o‘tkazuvchi tizimi qanday qismlardan iborat? AV tugundagi kechikishning ahamiyati nima?
+s6342	O‘tkazuvchanlik buzilishining sabablari va mexanizmlarini sanang.
+s6343	Qamallar joylashuvi va darajasi bo‘yicha qanday tasniflanadi?
+s6344	Sinoatrial qamalning EKG belgisi qanday?
+s6345	I darajali AV qamalning EKG belgilari qanday?
+s6346	Mobits I va Mobits II turidagi AV qamallar qanday farqlanadi? Qaysi biri xavfliroq?
+s6347	To‘liq AV qamalda qanday o‘zgarishlar bo‘ladi? Morgani–Adams–Stoks xuruji qanday rivojlanadi?
+s6348	Gis tutami o‘ng va chap oyoqchalari qamalining EKG belgilarini sanang.
+s6349	WPW sindromining mohiyati va EKG belgilari qanday?
+s6350	Bo‘lmachalar fibrillyatsiyasining sabablari va mexanizmi qanday?
+s6351	Bo‘lmachalar fibrillyatsiyasi va titrashi EKG da qanday farqlanadi?
+s6352	Xilpillovchi aritmiyaning gemodinamik oqibatlarini tushuntiring.
+s6353	Xilpillovchi aritmiyada tromboemboliyalar nima uchun rivojlanadi?
+s6354	Puls defitsiti nima va qanday aniqlanadi?
+s6355	Qorinchalar fibrillyatsiyasining sabablari, EKG belgilari va yordam choralari qanday?
+s6356	AV tugunda impuls o‘tishining fiziologik sekinlashishi nima uchun zarur?
+s6357	Sinus tuguni ritmini tezlashtirish uchun
+s6358	Qorinchalar repolyarizatsiyasi uchun
+s6359	Bo‘lmachalar qisqarishi tugab, qorinchalar qonga to‘lishi uchun
+s6360	Purkine tolalari avtomatizmini oshirish uchun
+s6361	Koronar qon oqimini kamaytirish uchun
+s6362	I darajali AV qamalning EKG belgisi qaysi?
+s6363	QRS kompleksining davriy tushib qolishi
+s6364	P va QRS ning mustaqil ritmi
+s6365	Delta to‘lqin
+s6366	PQ intervalining 0,20 s dan uzayishi, har bir P dan keyin QRS
+s6367	f to‘lqinlar
+s6368	PQ intervali asta-sekin uzayib, so‘ng QRS tushib qolishi qaysi qamalga xos?
+s6369	III darajali AV qamal
+s6370	Qaysi AV qamal to‘liq qamalga o‘tish xavfi eng yuqori?
+s6371	II daraja, Mobits II turi
+s6372	I daraja
+s6373	II daraja, Mobits I turi
+s6374	Vagotoniyadagi o‘tkinchi qamal
+s6375	Glikozidlar sabab bo‘lgan I daraja
+s6376	To‘liq AV qamalning EKG belgisi qaysi?
+s6377	PQ qisqargan, delta to‘lqin
+s6378	RR butunlay notekis, P yo‘q
+s6379	“Arra tishi” to‘lqinlar
+s6380	Muddatidan oldin keng QRS
+s6381	P va QRS bir-biriga bog‘liq emas, QRS chastotasi P dan kam
+s6382	Morgani–Adams–Stoks xuruji to‘liq AV qamalda nima sababdan yuzaga keladi?
+s6383	Arterial bosimning keskin ko‘tarilishi
+s6384	O‘rinbosar markaz ishga tushguncha bo‘lgan pauzada miya ishemiyasi
+s6385	QRS ning 0,12 s dan kengligi va V1 da rSR’ (“M” shakli) qaysi buzilishga xos?
+s6386	Gis tutami o‘ng oyoqchasining to‘liq qamali
+s6387	Gis tutami chap oyoqchasining to‘liq qamali
+s6388	Bo‘lmachalar titrashi
+s6389	WPW sindromining EKG belgisi qaysi?
+s6390	PQ uzaygan, QRS tor
+s6391	P yo‘q, f to‘lqinlar
+s6392	PQ qisqargan, delta to‘lqin, QRS kengaygan
+s6393	QRS ning davriy tushishi
+s6394	QT uzaygan
+s6395	Bo‘lmachalar fibrillyatsiyasining EKG belgisi qaysi?
+s6396	Har bir QRS oldida musbat P
+s6397	“Arra tishi” F to‘lqinlar, muntazam RR
+s6398	PQ uzaygan
+s6399	P yo‘q, f to‘lqinlar, RR butunlay notekis
+s6400	Keng QRS, to‘liq kompensator pauza
+s6401	Bo‘lmachalar titrashining (trepetaniyasining) asosiy mexanizmi qaysi?
+s6402	Sinus tuguni avtomatizmining oshishi
+s6403	O‘ng bo‘lmachadagi yagona katta re-entry halqasi
+s6404	AV qamal
+s6405	Trigger faollik qorinchalarda
+s6406	Gis tutami qamali
+s6407	Xilpillovchi aritmiyada ishemik insultning asosiy sababi nima?
+s6408	Chap bo‘lmacha quloqchasida hosil bo‘lgan trombning emboliyasi
+s6409	Arterial gipertenziya kriz
+s6410	Venoz tromboz
+s6411	Puls defitsiti nima?
+s6412	Arterial bosimning pasayishi
+s6413	Puls to‘lqinining tezlashishi
+s6414	Yurak qisqarishlari soni bilan bilakdagi puls soni orasidagi farq
+s6415	Sistolik va diastolik bosim farqi
+s6416	Nafas olishda pulsning kamayishi
+s6417	Mitral stenozli bemorda bo‘lmachalar fibrillyatsiyasi rivojlanganda yurak chiqarishi keskin kamayishining asosiy sababi nima?
+s6418	Qorinchalar to‘lishida bo‘lmachalar sistolasi hissasining yo‘qolishi
+s6419	Qorinchalar fibrillyatsiyasida birinchi navbatdagi samarali chora qaysi?
+s6420	Atropin yuborish
+s6421	Elektr defibrillyatsiya va yurak-o‘pka reanimatsiyasi
+s6422	Yurak glikozidlari
+s6423	Kaliy preparatlari
+s6424	Kuzatish
+s6425	Stannius tajribasida venoz sinus va bo‘lmachalar chegarasiga I ligatura qo‘yilganda nima kuzatiladi?
+s6426	Butun yurak bir xil ritmda qisqarishda davom etadi
+s6427	Venoz sinus to‘xtaydi, qorincha tezlashadi
+s6428	Faqat qorincha cho‘qqisi qisqaradi
+s6429	Venoz sinus avvalgi ritmda qisqaradi, bo‘lmachalar va qorincha to‘xtab, so‘ng sekinroq ritmda qisqaradi
+s6430	66 yoshli erkak bir necha marta to‘satdan hushdan ketgan, yiqilganda yuzi oqarib, keyin tirishishlar bo‘lgan, 20–30 soniyadan so‘ng o‘ziga kelgan. Puls 34 marta/daqiqa, muntazam. EKG: P tishlari 76 marta/daqiqa, QRS 34 marta/daqiqa, keng (0,14 s), P va QRS orasida doimiy bog‘liqlik yo‘q.
+s6431	EKG xulosasi qanday? Hushdan ketish xurujlarining mexanizmini tushuntiring. Qanday davo kerak?
+s6432	III darajali (to‘liq) AV qamal; o‘rinbosar ritm qorinchalardan (keng QRS, 34 marta/daqiqa — idioventrikulyar ritm). Bo‘lmachalar sinus tugunidan, qorinchalar o‘z markazidan mustaqil qo‘zg‘aladi (AV dissotsiatsiya). Qamal paydo bo‘lgan yoki chuqurlashgan paytda qorinchalar markazi bir necha soniya kechikib ishga tushadi; shu davrda yurak chiqarishi to‘xtaydi, miya ishemiyasi rivojlanadi — Morgani–Adams–Stoks xurujlari (hushdan ketish, keyin gipoksik tirishishlar). Doimiy bradikardiya daqiqalik hajmni kamaytirib, yurak yetishmovchiligiga olib keladi. Davo — doimiy elektrokardiostimulyator.
+s6433	62 yoshli ayol ko‘p yillardan beri mitral stenoz bilan og‘riydi. Oxirgi oyda yurak notekis urishi va hansirash kuchaygan. To‘satdan chap qo‘l va oyog‘ida kuchsizlik, nutq buzilishi paydo bo‘ldi. Yurak qisqarishlari 118 marta/daqiqa, bilakdagi puls 92 marta/daqiqa. EKG: P yo‘q, mayda notekis to‘lqinlar, RR intervallar har xil.
+s6434	Qanday aritmiya? Puls defitsitini hisoblang va mexanizmini tushuntiring. Nevrologik belgilar nima bilan bog‘liq?
+s6435	Bo‘lmachalar fibrillyatsiyasi (taxisistolik shakli). Mitral stenozda chap bo‘lmacha bosim ostida kengayadi va fibrozlanadi — ko‘plab re-entry halqalari uchun substrat hosil bo‘ladi. Puls defitsiti = 118 – 92 = 26: qisqa diastoladan keyingi qisqarishlarda qorinchalar qonga yetarli to‘lmaydi, zarb hajmi kichik bo‘lib, puls to‘lqini bilakkacha yetmaydi. Bo‘lmacha samarali qisqarmagani uchun chap bo‘lmacha quloqchasida qon turib qolib tromb hosil bo‘ladi; tromb bo‘lagi o‘ng o‘rta miya arteriyasiga tushib, ishemik insult (chap tomonlama gemiparez, nutq buzilishi) keltirib chiqargan — kardioembolik insult. Bunday bemorlarga antikoagulyant profilaktika va ritm yoki chastotani nazorat qilish zarur.
+s6436	20 yoshli talabada vaqti-vaqti bilan to‘satdan boshlanib, to‘satdan tugaydigan kuchli yurak urib ketishi xurujlari bo‘ladi. Xurujdan tashqari EKG: PQ 0,10 s, QRS boshlanishida qiya ko‘tarilish, QRS 0,12 s.
+s6437	Qanday sindrom? Xurujlarning mexanizmi qanday? Qanday xavfli asorat bo‘lishi mumkin?
+s6438	Volf–Parkinson–Uayt (WPW) sindromi: qo‘shimcha o‘tkazuvchi yo‘l (Kent tutami) orqali impuls AV tugundagi kechikishsiz qorinchalarga o‘tadi — PQ qisqargan, delta to‘lqin va keng QRS. Qo‘shimcha yo‘l va AV tugun yopiq halqa hosil qiladi — re-entry mexanizmi bo‘yicha paroksizmal supraventrikulyar taxikardiya xurujlari rivojlanadi. Agar bo‘lmachalar fibrillyatsiyasi qo‘shilsa, juda tez impulslar qo‘shimcha yo‘l orqali (AV tugun “filtri”siz) qorinchalarga o‘tib, qorinchalar fibrillyatsiyasi va to‘satdan o‘limga olib kelishi mumkin. Radikal davo — qo‘shimcha yo‘lning kateter ablatsiyasi.
+s6439	Qamal (blokada)
+s6440	Impuls o‘tkazilishining sekinlashishi yoki to‘xtashi
+s6441	Butun P–QRS–T kompleksining tushib qolishi
+s6442	PQ 0,20 s dan uzun, P:QRS = 1:1
+s6443	Mobits I
+s6444	PQ asta-sekin uzayib, QRS tushadi (Samoylov–Venkebax davri)
+s6445	Mobits II
+s6446	PQ doimiy, QRS to‘satdan tushadi; III darajaga o‘tish xavfi
+s6447	P va QRS mustaqil; AV dissotsiatsiya
+s6448	Pauza vaqtida miya ishemiyasi — hushdan ketish
+s6449	Oyoqchalar qamali
+s6450	QRS 0,12 s dan keng; o‘ng — V1 da rSR’, chap — V6 da keng R
+s6451	WPW sindromi
+s6452	Kent tutami: qisqa PQ, delta to‘lqin, keng QRS
+s6453	350–700 tartibsiz qo‘zg‘alish; f to‘lqinlar, notekis RR
+s6454	250–350 muntazam; “arra tishi” F to‘lqinlar
+s6455	Puls defitsiti
+s6456	Yurak qisqarishlari soni minus bilak pulsi
+s6457	Chap bo‘lmacha quloqchasidagi tromb — insult
+s6458	Klinik o‘lim mexanizmi; defibrillyatsiya
+s6459	Stannius ligaturalari
+s6460	Avtomatizm markazlari iyerarxiyasini ko‘rsatadi
+s6461	Yurak qon-tomir tizimi faoliyati buzilishining tipik ko‘rinishlari. Kompensatsiya mexanizmlari (seminar)
+s6462	Talabaga yurak qon-tomir tizimi faoliyati buzilishlarining tipik shakllarini — yurak yetishmovchiligi, yurak nuqsonlari, koronar yetishmovchilik, arterial gipertenziya va gipotenziya, perikard patologiyasini — ularning sabablari, gemodinamik o‘zgarishlari, kardial va ekstrakardial kompensatsiya mexanizmlari hamda dekompensatsiya rivojlanishini tushuntirish; olingan bilimlarni vaziyatli masalalarda qo‘llashni o‘rgatish.
+s6463	qon aylanish yetishmovchiligining ta’rifi va tasnifini;
+s6464	yurak yetishmovchiligining sabablari (zo‘riqish, miokard shikastlanishi, diastolik to‘lish buzilishi) va patogenezini;
+s6465	yurakning kardial (tezkor va uzoq muddatli) va ekstrakardial kompensatsiya mexanizmlarini;
+s6466	miokard gipertrofiyasining bosqichlari va gipertrofiyalangan yurakning xususiyatlarini;
+s6467	yurak nuqsonlaridagi gemodinamik o‘zgarishlarni;
+s6468	koronar yetishmovchilik, miokard infarkti va arterial gipertenziya patogenezini.
+s6469	yurak yetishmovchiligi belgilarini ularning patogenezi bilan bog‘lab tushuntirish;
+s6470	yurak nuqsonlarida gemodinamika o‘zgarishini sxema shaklida tasvirlash;
+s6471	vaziyatli masalalarda kompensatsiya va dekompensatsiya belgilarini ajratish.
+s6472	Gipertrofiyalangan miokard “nomukammal” — **muvozanatsiz o‘sish**: kardiomiotsitlar massasi ortadi, lekin kapillyarlar soni, nerv oxirlari, mitoxondriyalar va sarkoplazmatik to‘r miokard o‘sishidan orqada qoladi. Natijada diffuziya masofasi uzayadi (nisbiy koronar yetishmovchilik), energiya ta’minoti va kalsiy almashinuvi buziladi, qisqarish va bo‘shashish tezligi kamayadi, fibroz rivojlanadi. Shu sababli gipertrofiya uzoq muddatda dekompensatsiyaga va aritmiyalarga olib keladi.
+s6473	Stenoz — “**tor eshik oldidagi navbat**”: yuklama eshik oldidagi bo‘limga tushadi (bosim). Yetishmovchilik — “**qaytib keluvchi mehmonlar**”: ikkala bo‘lim ham ortiqcha hajmni qabul qiladi (hajm).
+s6474	1. Qon aylanish yetishmovchiligi va uning shakllari
+s6475	**Qon aylanish yetishmovchiligi** — yurak qon-tomir tizimining to‘qima va a’zolarni ularning ehtiyojiga mos ravishda qon bilan ta’minlay olmaslik holati. U yurak, tomir yoki aralash sabablarga ko‘ra rivojlanadi.
+s6476	**Yurak yetishmovchiligi** — yurakning nasos funksiyasi buzilishi tufayli yurak chiqarishi to‘qimalar ehtiyojini qoplay olmaydigan, yoki faqat qorinchalarda to‘lish bosimi ortishi hisobiga qoplanadigan klinik sindrom.
+s6477	Jadval 21.1. Yurak yetishmovchiligining tasnifi
+s6478	Kechishi
+s6479	O‘tkir (soatlar, daqiqalar — infarkt, aritmiya, tamponada), surunkali (oylar, yillar)
+s6480	Asosiy shikastlangan qism
+s6481	Chap qorincha, o‘ng qorincha, total (ikki qorinchali)
+s6482	Yurak siklining fazasi
+s6483	Sistolik (qisqaruvchanlik kamaygan, chiqarish fraksiyasi past), diastolik (bo‘shashish va to‘lish buzilgan, chiqarish fraksiyasi saqlangan)
+s6484	Miokardial (shikastlanish), zo‘riqishdan (hajm yoki bosim bilan ortiqcha yuklanish), aralash
+s6485	Gemodinamika yo‘nalishi
+s6486	Orqaga (dimlanish), oldinga (a’zolar gipoperfuziyasi)
+s6487	Jadval 21.2. Yurak yetishmovchiligining patogenetik sabablari
+s6488	Shakli
+s6489	Hajm bilan zo‘riqish (oldingi yuklama ↑)
+s6490	Qorinchaga diastolada ortiqcha qon tushadi
+s6491	Klapanlar yetishmovchiligi, gipervolemiya, chap-o‘ng shuntlar
+s6492	Bosim bilan zo‘riqish (keyingi yuklama ↑)
+s6493	Qon chiqarishga qarshilik ortgan
+s6494	Aortal stenoz, arterial gipertenziya, o‘pka gipertenziyasi
+s6495	Miokardning bevosita shikastlanishi
+s6496	Kardiomiotsitlarning nobud bo‘lishi va qisqaruvchanlik kamayishi
+s6497	Miokard infarkti, miokarditlar, kardiomiopatiyalar, toksik ta’sirlar (alkogol), avitaminoz B1
+s6498	Diastolik to‘lishning buzilishi
+s6499	Qorinchalar yetarli kengaya olmaydi
