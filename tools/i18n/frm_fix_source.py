@@ -329,6 +329,8 @@ TEXT = {
     "V2antagonistlari": "V2-antagonistlari",
     "H1blokator": "H1-blokator",
     "**mg/m2**": "**mg/m^2^**",
+    "**aminofillin (eufillin**, teofillin + etilendiamin, suvda yaxshi eriydi**)**": "**aminofillin** (**eufillin**; teofillin + etilendiamin, suvda yaxshi eriydi)",
+    "burunhalqumdan": "burun-halqumdan",
     "atipik antidepressantlar (5bo‘lim)": "atipik antidepressantlar (3-bo‘lim)",   # antidepressantlar 3-bo'limda
     "(“Analginum 0,5” o‘rniga “Analgini 0,5”)": "(“Analgini 0,5” o‘rniga “Analginum 0,5”)",   # xato bosh kelishikda yozish
 }
