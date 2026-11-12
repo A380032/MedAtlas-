@@ -1,0 +1,217 @@
+s4182 Nucleosome
+s4183 Histone octamer + ≈ 146 base pairs of DNA
+s4184 Hybridization
+s4185 Joining of complementary strands; Tm depends on G≡C
+s4186 mtDNA
+s4187 Circular, 37 genes, inherited through the mother
+s4188 Replication
+s4189 Semiconservative, primer required, dNTPs, Okazaki fragments
+s4190 Enzymes
+s4191 Helicase, topoisomerase, primase, DNA pol α/δ/ε, ligase
+s4192 Reverse transcriptase with an RNA template; active in tumors
+s4193 5-Methylcytosine in CpG — silences the gene (epigenetics)
+s4194 Transcription
+s4195 No primer, NTPs; RNA pol II — mRNA (α-amanitin)
+s4196 Processing
+s4197 Cap, poly(A), splicing (snRNA), alternative splicing
+s4198 PCR
+s4199 95 → 55–65 → 72 °C; Taq polymerase; 2n copies
+s4200 Translation. Regulation of gene expression
+s4201 To give the student knowledge of the genetic code and its properties, the components of the protein-synthesizing system, the stages of polypeptide chain synthesis on ribosomes, post-translational modification, protein folding and targeting, inhibitors of protein synthesis (antibiotics, toxins), the regulation of gene expression in prokaryotes and eukaryotes, and cell differentiation.
+s4202 the properties of the genetic code;
+s4203 the structure of tRNA and the role of aminoacyl-tRNA synthetases;
+s4204 the structure of ribosomes (prokaryotic and eukaryotic);
+s4205 the initiation, elongation and termination stages of translation;
+s4206 the main post-translational modifications;
+s4207 the antibiotics and toxins that block protein synthesis;
+s4208 the operon model (the lactose operon) and the levels of regulation of gene expression in eukaryotes. **The student should be able to:**
+s4209 determine a peptide sequence from an mRNA sequence using the genetic code table;
+s4210 predict the effect of a mutation on a protein;
+s4211 explain the basis of the selective action of antibiotics.
+s4212 1. The genetic code and its properties
+s4213 The **genetic code** is the system that matches the sequence of mRNA nucleotides to the sequence of amino acids in a protein. The 4 kinds of nucleotides form 64 **codons** (triplets): 61 of them code for amino acids and 3 are **stop codons** (UAA, UAG, UGA). **AUG** is the start codon (methionine).
+s4214 Table 17.1. Properties of the genetic code
+s4215 Property
+s4216 Meaning
+s4217 Triplet
+s4218 Each amino acid is coded by three nucleotides
+s4219 Degenerate
+s4220 One amino acid is coded by several codons (leucine, serine, arginine — 6 each); only Met and Trp — one each
+s4221 Unambiguous (specific)
+s4222 Each codon codes for only one amino acid
+s4223 Nonoverlapping
+s4224 Each nucleotide belongs to only one codon
+s4225 Commaless (continuous)
+s4226 There are no separators between codons — the reading frame is set from the start codon
+s4227 Colinear
+s4228 The sequences in the gene and in the protein are in the same order
+s4229 Universal
+s4230 Almost the same in all organisms (small differences in mitochondria: UGA — tryptophan)
+s4231 **Wobble hypothesis:** pairing between the 3rd nucleotide of the codon and the 1st nucleotide of the anticodon is less strict (for example, inosine pairs with U, C and A) — therefore the 61 codons can be read by ≈ 40 different tRNAs.
+s4232 2. Components of the protein-synthesizing system
+s4233 **Amino acids** (20 standard ones; selenocysteine — the UGA codon in a special context).
+s4234 **mRNA** — the template.
+s4235 **tRNA** — the “adapter”: a “cloverleaf” secondary structure and an L-shaped tertiary structure; the **anticodon loop** (recognizes the codon) and the **CCA at the 3’-end** (the amino acid is attached).
+s4236 **Aminoacyl-tRNA synthetases** — a separate enzyme for each amino acid; they activate the amino acid and attach it to the corresponding tRNA (2 high-energy bonds are consumed). They are the **main guarantee of the fidelity** of translation — they hydrolyze a wrongly attached amino acid (proofreading).
+s4237 **Ribosomes.**
+s4238 **Protein factors:** initiation (eIF), elongation (eEF), termination (eRF).
+s4239 **Energy sources:** ATP (activation), GTP (initiation, elongation, termination).
+s4240 Mg2+ and K+ ions.
+s4241 Table 17.2. Structure of ribosomes
+s4242 Complete ribosome
+s4243 70S
+s4244 80S
+s4245 Small subunit
+s4246 30S (16S rRNA)
+s4247 40S (18S rRNA)
+s4248 Large subunit
+s4249 50S (23S, 5S rRNA)
+s4250 60S (28S, 5.8S, 5S rRNA)
+s4251 Active sites
+s4252 A (aminoacyl), P (peptidyl), E (exit)
+s4253 A, P, E
+s4254 3. Stages of translation
+s4255 Figure 17.1
+s4256 Stages of translation (drawn after Severin E.S.)
+s4257 **Activation of amino acids:** amino acid + ATP → aminoacyl-AMP + PPi; aminoacyl-AMP + tRNA → aminoacyl-tRNA + AMP.
+s4258 **Initiation (in eukaryotes):** the 40S subunit, the initiator **Met-tRNA~i~^Met^**, eIF2-GTP and other factors bind together to the **5’-cap of the mRNA** (eIF4E recognizes the cap) and move along the mRNA to the first **AUG** codon (**scanning**, the Kozak sequence). GTP is hydrolyzed and the 60S subunit joins — the **80S** initiation complex is formed, with Met-tRNAi in the **P site**. In prokaryotes the initiator is **formylmethionine-tRNA**, and 16S rRNA recognizes the **Shine–Dalgarno** sequence in the mRNA.
+s4259 **Elongation** — three steps repeated for each codon:
+s4260 The next aminoacyl-tRNA arrives at the **A site** with eEF1α-GTP (if the anticodon matches the codon, GTP is hydrolyzed).
+s4261 **Peptidyl transferase** transfers the peptide in the P site to the amino group of the amino acid in the A site — a peptide bond is formed. This activity belongs to the **28S rRNA** of the 60S subunit (a **ribozyme**; in prokaryotes, 23S rRNA).
+s4262 **Translocation** — under the action of eEF2-GTP the ribosome moves one codon along the mRNA; the peptidyl-tRNA moves to the P site, and the empty tRNA moves to the E site and is released. **4 high-energy bonds** are consumed for each peptide bond (2 in activation, 2 GTP in elongation). Many ribosomes read one mRNA at the same time — a **polysome**.
+s4263 **Termination:** when a stop codon enters the A site, **release factors** (eRF1, eRF3-GTP) bind instead of a tRNA; peptidyl transferase transfers the peptide to water (hydrolysis), the polypeptide is released and the ribosome dissociates into subunits.
+s4264 4. Post-translational modification and protein targeting
+s4265 **Folding:** a polypeptide often reaches its correct conformation spontaneously; **chaperones** (heat shock proteins — Hsp70, Hsp60/chaperonins) prevent misfolding and aggregation. Misfolded proteins are degraded by the **ubiquitin–proteasome** system. Folding disorders — **prion diseases**, Alzheimer disease (β-amyloid), Parkinson disease (α-synuclein), cystic fibrosis (CFTR ΔF508).
+s4266 **Targeting:** secretory and membrane proteins are directed to the **rough endoplasmic reticulum** by an N-terminal **signal peptide** (SRP — signal recognition particle) and are then sorted in the Golgi apparatus. Lysosomal enzymes are directed to lysosomes by the **mannose-6-phosphate** tag (I-cell disease — absence of this tag). Mitochondrial and nuclear proteins have special signal sequences.
+s4267 Table 17.3. Main post-translational modifications
+s4268 Modification
+s4269 Example
+s4270 Proinsulin → insulin + C-peptide; activation of proenzymes (trypsinogen); cleavage of the signal peptide
+s4271 Phosphorylation (Ser, Thr, Tyr)
+s4272 Glycogen phosphorylase, receptor tyrosine kinases
+s4273 Glycosylation (N- and O-)
+s4274 Immunoglobulins, hormones, membrane proteins
+s4275 Hydroxylation (Pro, Lys)
+s4276 Collagen — ascorbic acid is required (scurvy, topic 22)
+s4277 γ-Carboxylation (Glu)
+s4278 Prothrombin, factors VII, IX, X — vitamin K is required
+s4279 Acetylation, methylation
+s4280 Histones (chromatin activity)
+s4281 Lipidation (prenylation, myristoylation)
+s4282 Ras proteins — membrane attachment
+s4283 Formation of disulfide bonds
+s4284 Insulin, immunoglobulins
+s4285 Ubiquitination
+s4286 A tag for degradation in the proteasome
+s4287 5. Inhibitors of protein synthesis
+s4288 Table 17.4. Antibiotics and toxins that block protein synthesis
+s4289 Target
+s4290 Streptomycin, gentamicin (aminoglycosides)
+s4291 30S
+s4292 Disrupt initiation, cause misreading of the code
+s4293 Tetracyclines
+s4294 Block the binding of aminoacyl-tRNA to the A site
+s4295 Chloramphenicol
+s4296 50S
+s4297 Inhibits peptidyl transferase (also affects mitochondrial ribosomes)
+s4298 Erythromycin, azithromycin (macrolides)
+s4299 Block translocation
+s4300 Linezolid
+s4301 Blocks formation of the initiation complex
+s4302 Puromycin
+s4303 Prokaryotic and eukaryotic
+s4304 Aminoacyl-tRNA analog — causes premature chain termination
+s4305 Cycloheximide
+s4306 Eukaryotic peptidyl transferase
+s4307 Diphtheria toxin
+s4308 eEF2
+s4309 Inactivates it by ADP-ribosylation — translocation stops
+s4310 Ricin (castor bean), Shiga toxin
+s4311 60S (28S rRNA)
+s4312 Removes an adenine (N-glycosidase) — the ribosome is inactive
+s4313 The **selective action** of antibiotics is based on the difference in structure between prokaryotic (70S) and eukaryotic (80S) ribosomes. Because mitochondria contain 70S-type ribosomes, chloramphenicol can damage the bone marrow (aplastic anemia; in newborns, the “gray baby syndrome” — due to insufficient glucuronidation).
+s4314 6. Regulation of gene expression in prokaryotes
+s4315 An **operon** (Jacob and Monod, 1961) is a group of structural genes under the control of one promoter and operator that is transcribed as a single polycistronic mRNA.
+s4316 Figure 17.2
+s4317 Regulation of the lactose operon — induction (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
+s4318 **Lactose operon (inducible):** structural genes — lacZ (β-galactosidase), lacY (permease), lacA (transacetylase). In the absence of lactose the **repressor** binds to the operator and blocks transcription. Lactose (more precisely, allolactose — the **inducer**) binds to the repressor and releases it from the operator — the genes are expressed. **Positive control:** when glucose is low, cAMP increases, and the **cAMP–CAP** complex binds to the promoter and enhances transcription (catabolite repression — when glucose is present, the lactose operon works weakly).
+s4319 **Tryptophan operon (repressible):** when tryptophan is abundant it acts as a **corepressor**, activating the repressor, and the genes for the synthetic enzymes are switched off; an additional mechanism is **attenuation**.
+s4320 7. Regulation of gene expression in eukaryotes
+s4321 In eukaryotes, regulation operates at many levels:
+s4322 **Chromatin level** — histone **acetylation** (histone acetyltransferases) loosens chromatin and activates transcription, while deacetylation silences it; **DNA methylation** (CpG) silences the gene — **epigenetic** regulation; genomic imprinting (Prader–Willi and Angelman syndromes).
+s4323 **Transcription level** — the main level: **transcription factors** bind to the promoter, **enhancers** (which work even thousands of base pairs away) and silencers. Examples: **steroid hormone receptors** — bind the hormone and then bind to hormone response elements in DNA (GRE); cAMP → PKA → **CREB**; metals → the metallothionein gene; hypoxia → HIF-1 → the erythropoietin gene.
+s4324 **Gene amplification** — an increase in the number of gene copies (HER2, MYC in tumors; the dihydrofolate reductase gene in methotrexate resistance).
+s4325 **Gene rearrangement** — V(D)J recombination of immunoglobulin genes.
+s4326 **Post-transcriptional level** — alternative splicing, RNA editing, mRNA stability (the transferrin receptor mRNA is regulated by iron, topic 21), **microRNAs** and siRNAs (RNA interference) degrade mRNA or stop translation.
+s4327 **Translation level** — phosphorylation of eIF2 (under stress, and in heme deficiency globin synthesis stops in reticulocytes); iron-dependent translation of ferritin mRNA (IRE/IRP).
+s4328 **Post-translational level** — phosphorylation, proteolysis, degradation by ubiquitination. **Cell differentiation:** the genome is the same in all somatic cells, but in each cell type only a certain set of genes is expressed (globin in erythrocyte precursors, insulin in β-cells). This **selective expression** is provided by tissue-specific transcription factors and epigenetic marks; in ontogenesis the **homeotic (HOX) genes** determine the body plan. For example, the switch from fetal hemoglobin (HbF) to adult hemoglobin (HbA) is the silencing of the γ-globin gene and the activation of the β-globin gene.
+s4329 **Hydroxycarbamide** (hydroxyurea) in sickle cell anemia reactivates expression of the γ-globin gene and increases the amount of HbF — HbF reduces the polymerization of HbS.
+s4330 Experiment 1: solving translation problems using the genetic code table
+s4331 Find the first AUG codon in the given mRNA sequence — the reading frame starts there.
+s4332 Divide the sequence into codons of three and determine the amino acids from the table.
+s4333 Continue up to the stop codon. **Example:** 5’-GCC **AUG** UUU GGC UGG AAA UAG CC-3’ → Met–Phe–Gly–Trp–Lys (UAG — stop).
+s4334 Experiment 2: determining the effect of a mutation on a protein
+s4335 Compare the normal and mutant sequences.
+s4336 Determine the type of mutation: substitution (missense, nonsense, synonymous), insertion or deletion (frameshift).
+s4337 Predict its effect on the protein structure. **Example:** codon 6 of the β-globin gene GAG → GUG: glutamate → valine (missense) — HbS (sickle cell anemia). Deletion of a single nucleotide shifts the reading frame — all subsequent amino acids change, and a premature stop codon often appears.
+s4338 Experiment 3: comparing the effects of protein synthesis inhibitors (working with a table)
+s4339 Write the target of each antibiotic (30S, 50S, 80S, eEF2) in the table.
+s4340 Mark its toxicity to humans and the reason (effect on mitochondrial ribosomes, on eukaryotic ribosomes). **Results and analysis:** substances that act selectively on prokaryotic ribosomes are used as antibiotics; those that block eukaryotic ribosomes (cycloheximide, ricin, diphtheria toxin) are toxic to humans.
+s4341 Skill: writing the flow of information from DNA to protein step by step
+s4342 Write the template strand from the DNA coding strand.
+s4343 Write the mRNA from the template (T → U).
+s4344 Find the start codon in the mRNA and divide it into codons.
+s4345 Write the peptide sequence using the genetic code table.
+s4346 Show the tRNA anticodons (complementary and antiparallel to the codon).
+s4347 Skill: assessing the effect of an antibiotic on bacterial and human cells
+s4348 Determine which process (replication, transcription, translation, cell wall) the antibiotic blocks.
+s4349 Show the difference in the target structure between prokaryotes and eukaryotes.
+s4350 State the likelihood of an effect on mitochondria and the adverse effects (ototoxicity, aplastic anemia, tooth discoloration).
+s4351 What is the genetic code? List its properties.
+s4352 Name the start and stop codons.
+s4353 What is the structure of tRNA and what is its function?
+s4354 What is the role of aminoacyl-tRNA synthetases?
+s4355 How do prokaryotic and eukaryotic ribosomes differ?
+s4356 Describe the initiation stage of translation.
+s4357 What steps make up elongation?
+s4358 Which enzyme catalyzes the formation of the peptide bond?
+s4359 How does translation termination take place?
+s4360 How much energy is consumed for the formation of one peptide bond?
+s4361 Name the main post-translational modifications with examples.
+s4362 What are the functions of chaperones and the proteasome?
+s4363 List the antibiotics and toxins that block protein synthesis.
+s4364 How is the lactose operon regulated?
+s4365 At what levels is gene expression regulated in eukaryotes?
+s4366 What does the “degenerate” property of the genetic code mean?
+s4367 One codon codes for several amino acids
+s4368 Codons overlap
+s4369 One amino acid is coded by several codons
+s4370 The code is the same in all organisms
+s4371 There are commas between codons
+s4372 Which codon is the start codon?
+s4373 UAA
+s4374 AUG
+s4375 UGA
+s4376 UAG
+s4377 GUG
+s4378 To which part of tRNA is the amino acid attached?
+s4379 To the anticodon loop
+s4380 To the D loop
+s4381 To the TψC loop
+s4382 To the 5’-end
+s4383 To the CCA at the 3’-end
+s4384 Which is the small subunit of the eukaryotic ribosome?
+s4385 40S
+s4386 60S
+s4387 In eukaryotes, peptidyl transferase activity belongs to what?
+s4388 The eEF1 protein
+s4389 The eEF2 protein
+s4390 18S rRNA
+s4391 28S rRNA
+s4392 Aminoacyl-tRNA synthetase
+s4393 Which factor takes part in translocation?
+s4394 eIF4E
+s4395 eRF1
+s4396 eEF1α
+s4397 CAP
+s4398 What is the mechanism of action of diphtheria toxin?
