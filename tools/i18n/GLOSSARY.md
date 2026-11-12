@@ -418,6 +418,45 @@ Jami: 345 ta termin. Tarjimada shu lug‘at hamma joyda bir xil ishlatiladi.
 | Burri–Gins (tush) | Burri–Gins (India ink) |
 | Sabouraud muhiti (Sabure) | Sabouraud medium |
 
+## Patologik anatomiya (pan kitobi) (34)
+
+| O‘zbekcha | English |
+|---|---|
+| Qo‘ng‘ir atrofiya | Brown atrophy |
+| “Muskat jigar” | Nutmeg liver |
+| “Sagosimon taloq” | Sago spleen |
+| “G‘oz jigari” | “Goose liver” (fatty liver) |
+| “Tukli yurak” | “Hairy heart” (fibrinous pericarditis) |
+| “Sirlangan (glazurlangan) taloq” | “Glazed spleen” (hyalinosis of the capsule) |
+| O‘pkaning qo‘ng‘ir induratsiyasi | Brown induration of the lung |
+| Gon o‘chog‘i / Ranke kompleksi | Ghon focus / Ranke complex |
+| Kaunsilmen tanachalari | Councilman bodies |
+| Rassel tanachalari | Russell bodies |
+| Pirogov–Langxans gigant hujayrasi | Pirogov–Langhans giant cell |
+| Epiteloid hujayralar | Epithelioid cells |
+| Quruq / nam gangrena | Dry / wet gangrene |
+| Yotoq yara | Bedsore (decubitus ulcer) |
+| Sekvestr | Sequestrum |
+| Oq / qizil infarkt | White (anemic) / red (hemorrhagic) infarct |
+| Paradoksal emboliya | Paradoxical embolism |
+| Yog‘ emboliyasi | Fat embolism |
+| Distrofik / metastatik ohaklanish | Dystrophic / metastatic calcification |
+| Kongo qizili | Congo red |
+| Krupoz / difteritik yallig‘lanish | Croupous / diphtheritic inflammation |
+| Kataral yallig‘lanish | Catarrhal inflammation |
+| Chirituvchi yallig‘lanish | Putrefactive inflammation |
+| Invaziyasiz saraton (carcinoma in situ) | Noninvasive cancer (carcinoma in situ) |
+| Gialin membranalar kasalligi | Hyaline membrane disease |
+| Yadro sariqligi (kernikterus) | Kernicterus |
+| Homila istisqosi | Hydrops fetalis |
+| Potter sekvensiyasi | Potter sequence |
+| Gomer-Rayt psevdorozetkalari | Homer Wright pseudorosettes |
+| Vilms o‘smasi | Wilms tumor (nephroblastoma) |
+| Spru (chillashir) | Sprue |
+| Ruhiy zo‘riqish (hujayra stressi) | Stress (cellular stress) |
+| FKU / VMK | PKU / VMA |
+| XKCh (eng yuqori ruxsat etilgan konsentratsiya) | MAC (maximum allowable concentration) |
+
 ## Fan qisqartmalari (faqat ingliz rejimida)
 | Uzbek | English |
 |---|---|
