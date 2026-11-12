@@ -1,214 +1,209 @@
-s5991 Table 23.3. Markers of myocardial injury
-s5992 Onset of rise
-s5993 Peak
-s5994 Return to normal
-s5995 High-sensitivity troponin I or T
-s5996 1–3 hours
-s5997 24–48 hours
-s5998 7–14 days
-s5999 The “gold standard” — the most sensitive and specific; 0/1- or 0/2-hour algorithm
-s6000 1–2 hours
-s6001 6–10 hours
-s6002 24 hours
-s6003 Early but nonspecific (also in skeletal muscle)
-s6004 3–6 hours
-s6005 12–24 hours
-s6006 48–72 hours
-s6007 Convenient for detecting reinfarction
-s6008 CK (total)
-s6009 4–6 hours
-s6010 3–4 days
-s6011 Also in skeletal muscle injury
-s6012 6–12 hours
-s6013 4–7 days
-s6014 Now almost never used
-s6015 LDH (LDH-1, LDH-2)
-s6016 8–12 hours
-s6017 10–14 days
-s6018 LDH-1 > LDH-2 (“flipped ratio”); late diagnosis
-s6019 **Creatine kinase isoenzymes** (dimers of M and B subunits): **CK-MM** — skeletal muscle (≈ 95% of total activity), **CK-MB** — myocardium (15–40% of myocardial CK), **CK-BB** — brain, smooth muscle; there is also a mitochondrial CK. Normal total CK is < 190 U/l in men and < 170 U/l in women; CK-MB < 25 U/l or < 6% of the total.
-s6020 **Modern diagnosis of myocardial infarction** (universal definition): troponin above the 99th percentile of normal with a **rise-and-fall pattern** + clinical signs of ischemia or ECG changes. Troponin can also rise in myocarditis, PE, sepsis, renal failure and heart failure (myocardial injury without infarction).
-s6021 8. Secretory function of the endothelium
-s6022 The endothelium (≈ 1.5 kg, ≈ 1000 m^2^) is an active endocrine organ; it regulates vascular tone, hemostasis, inflammation and permeability.
-s6023 Table 23.4. Endothelial factors
-s6024 Action
-s6025 Vasodilators
-s6026 Nitric oxide (NO) — synthesized by eNOS from arginine (BH4, NADPH) → guanylate cyclase in smooth muscle → cGMP; prostacyclin (PGI~2~); endothelium-derived hyperpolarizing factor; bradykinin
-s6027 Vasoconstrictors
-s6028 Endothelin-1 (the most potent), angiotensin II (ACE on the endothelium), thromboxane A2
-s6029 Antithrombotic
-s6030 NO, PGI2, thrombomodulin, heparan sulfate, t-PA, TFPI
-s6031 Prothrombotic
-s6032 von Willebrand factor, tissue factor, PAI-1
-s6033 Inflammation and adhesion
-s6034 Selectins (E, P), ICAM-1, VCAM-1, IL-6, MCP-1
-s6035 VEGF, PDGF (smooth muscle proliferation)
-s6036 **Endothelial dysfunction** is a decrease in the formation and biological activity of NO (oxidative stress converts NO to peroxynitrite, asymmetric dimethylarginine inhibits eNOS) with a predominance of vasoconstrictor, prothrombotic and inflammatory factors. Risk factors: hypercholesterolemia (oxidized LDL), arterial hypertension, diabetes mellitus (glycation products), smoking, **hyperhomocysteinemia** (deficiency of B6, B12, folate), obesity. Endothelial dysfunction is the first stage of **atherosclerosis** (topic 10) and the basis for the development of hypertension, thrombosis and coronary heart disease.
-s6037 Experiment 1: determination of creatine kinase activity in blood serum (“Biotest” kit, kinetic method)
-s6038 **Principle of the method (coupled reactions):** creatine phosphate + ADP → (CK) → creatine + ATP; ATP + glucose → (hexokinase) → ADP + glucose-6-phosphate; glucose-6-phosphate + NADP+ → (G6PD) → 6-phosphogluconate + NADPH. The rate of NADPH formation at 340 nm is proportional to CK activity. N-acetylcysteine activates CK, while AMP and diadenosine pentaphosphate inhibit erythrocyte myokinase.
-s6039 Warm the working reagent to 37 °C; add 1 ml of reagent and 20 µl of serum to the cuvette and mix.
-s6040 After 2 minutes of incubation record the absorbance at 340 nm, then measure every minute for 3 minutes.
-s6041 Calculate the mean ΔE/min. **Calculation:** activity (U/l) = ΔE/min × 8095 (based on the millimolar extinction coefficient of NADPH, 6.22, and the sample dilution).
-s6042 **Interpretation:** < 190 U/l in men, < 170 U/l in women. Hemolysis falsely increases the result (adenylate kinase and ATP from erythrocytes). Physiological increases occur after intramuscular injections and heavy physical exertion.
-s6043 Experiment 2: determination of CK-MB by the immunoinhibition method (demonstration)
-s6044 **Principle of the method:** antibodies against the M subunit completely inhibit CK-MM and half of CK-MB (its M part); the remaining activity (B subunit) is multiplied by 2.
-s6045 Incubate the serum with the antibody-containing reagent.
-s6046 Measure the residual activity as in Experiment 1; × 2. **Results and analysis:** CK-MB > 25 U/l and > 6% of total CK are characteristic of myocardial injury; today this method has been replaced by troponin determination.
-s6047 Skill: interpreting markers in chest pain
-s6048 Determine the time elapsed since the onset of pain.
-s6049 Determine high-sensitivity troponin on arrival and after 1–3 hours; assess the dynamics.
-s6050 With early presentation (< 3 hours), a first negative result does not exclude infarction.
-s6051 With late presentation (> 3–4 days), troponin is still high, while CK-MB may have returned to normal.
-s6052 Detect reinfarction by a renewed rise in CK-MB.
-s6053 Exclude causes of troponin elevation without infarction.
-s6054 Skill: assessing the biochemical features of a myopathy
-s6055 Determine serum CK (MM), AST, ALT, LDH, aldolase and myoglobin.
-s6056 Assess creatine and creatinine in the urine.
-s6057 Very high CK (> 10,000 U/l) and brown urine — rhabdomyolysis (monitor potassium and creatinine).
-s6058 Very high CK and proximal weakness in a young boy — dystrophin gene analysis.
-s6059 List the main muscle proteins and their functions.
-s6060 What are the composition and function of the troponin complex?
-s6061 Explain the sliding filament theory of muscle contraction.
-s6062 What is the role of Ca2+ and ATP in muscle contraction and relaxation?
-s6063 How does the regulation of smooth muscle contraction differ from that of skeletal muscle?
-s6064 List the extractive substances of muscle.
-s6065 By what pathways is ATP regenerated in muscle?
-s6066 How is creatine synthesized? What is the diagnostic importance of creatinine?
-s6067 What are the biochemical basis and features of Duchenne muscular dystrophy?
-s6068 What is special about the metabolism of the heart muscle?
-s6069 What are the effects and diagnostic importance of natriuretic peptides?
-s6070 Name the creatine kinase isoenzymes.
-s6071 Describe the dynamics of the biochemical markers of myocardial infarction.
-s6072 What factors does the endothelium produce?
-s6073 What is endothelial dysfunction and what are its causes?
-s6074 Which protein binds Ca2+ in skeletal muscle?
-s6075 Troponin I
-s6076 Troponin T
-s6077 Troponin C
-s6078 Which enzyme returns Ca2+ to the sarcoplasmic reticulum during muscle relaxation?
-s6079 Ca2+-ATPase (SERCA)
-s6080 Creatine kinase
-s6081 Myosin ATPase
-s6082 Adenylate kinase
-s6083 Which pathway regenerates ATP the fastest?
-s6084 The creatine kinase reaction
-s6085 In which organs does creatine synthesis take place?
-s6086 In muscle and brain
-s6087 In the heart and lungs
-s6088 In the kidney and liver
-s6089 In the intestine and spleen
-s6090 Only in muscle
-s6091 Which protein is absent in Duchenne muscular dystrophy?
-s6092 Titin
-s6093 Myosin
-s6094 Actin
-s6095 What is rigor mortis due to?
-s6096 Lack of Ca2+
-s6097 Breakdown of myosin
-s6098 Absence of troponin
-s6099 Failure of myosin to detach from actin in the absence of ATP
-s6100 Accumulation of lactate
-s6101 What is the main energy source of the heart muscle at rest?
-s6102 Fatty acids
-s6103 Which is the most sensitive and specific marker of myocardial infarction?
-s6104 LDH
-s6105 High-sensitivity troponin
-s6106 Total CK
-s6107 Which marker rises the earliest after myocardial infarction but is not specific?
-s6108 Troponin
-s6109 What is the main laboratory marker of heart failure?
-s6110 NT-proBNP
-s6111 CK-BB
-s6112 Amylase
-s6113 From which amino acid is nitric oxide synthesized in the endothelium?
-s6114 Which creatine kinase isoenzyme is specific to the myocardium?
-s6115 CK-MM
-s6116 Mitochondrial CK
-s6117 LDH-1
-s6118 In smooth muscle, with which protein does Ca2+ combine to activate myosin light chain kinase?
-s6119 Calsequestrin
-s6120 Which is the most potent endothelial vasoconstrictor?
-s6121 Endothelin-1
-s6122 Prostacyclin
-s6123 Nitric oxide
-s6124 Bradykinin
-s6125 What change is observed in the urine in muscular dystrophies?
-s6126 Creatinine increases, there is no creatine
-s6127 Urea decreases sharply
-s6128 Uric acid increases
-s6129 Creatinuria, decreased creatinine excretion
-s6130 A 58-year-old man presented with severe crushing chest pain lasting for 2 hours. On arrival high-sensitivity troponin T was 18 ng/l (normal < 14), and 74 ng/l 1 hour later; myoglobin was increased; CK-MB 28 U/l.
-s6131 What is the diagnosis? Explain the dynamics of the markers. Why do myocardial cells die?
-s6132 Acute myocardial infarction: troponin above the 99th percentile with a sharp rise within 1 hour (dynamics) together with clinical signs of ischemia. Myoglobin is a small molecule and is released the earliest, but it is also present in skeletal muscle; CK-MB rises at 3–6 hours; troponin becomes detectable at 1–3 hours and persists for 7–14 days (the sarcomere-bound fraction is released slowly). Coronary thrombosis cuts off oxygen: β-oxidation and oxidative phosphorylation stop, and anaerobic glycolysis cannot meet the ATP demand; lactate and H+ accumulate; Na+,K+-ATPase and Ca2+-ATPases fail, Na+ and Ca2+ increase inside the cell, phospholipases and proteases are activated, and the membranes are destroyed — necrosis, and the enzymes are released into the blood.
-s6133 A 5-year-old boy tires quickly, has difficulty climbing stairs and pushes on his legs with his hands when getting up from the floor; his calf muscles are enlarged. Serum CK 15,000 U/l, ALT and AST increased.
-s6134 What is the disease? Explain the biochemical changes. How can the diagnosis be confirmed?
-s6135 Duchenne muscular dystrophy (X-linked recessive). Because dystrophin is absent, the cytoskeleton is not linked to the sarcolemma and the extracellular matrix; the membrane tears during contraction, Ca2+ enters and activates calpains, and the fibers undergo necrosis — CK (MM), aminotransferases, LDH and aldolase are released into the blood (the increase in ALT/AST must not be mistaken for liver disease). The enlarged calves are a pseudohypertrophy due to fat and connective tissue; the way of getting up from the floor is the Gowers sign. Confirmation: molecular analysis of the DMD gene (deletions — MLPA, sequencing), immunohistochemical demonstration of the absence of dystrophin in a muscle biopsy.
-s6136 A 25-year-old man presented after a marathon with severe muscle pain and weakness; his urine is dark brown. CK 85,000 U/l, potassium 6.2 mmol/l, creatinine 280 µmol/l. The urine test strip is positive for “blood”, but there are no erythrocytes on microscopy.
-s6137 What condition is this? Explain the laboratory results. Why are the kidneys damaged?
-s6138 Rhabdomyolysis after heavy physical exertion. As a result of ATP depletion and Ca2+ accumulation in muscle cells, the fibers break down and CK, myoglobin and K+ are released into the blood (hyperkalemia — dangerous for the heart). The test strip detects the peroxidase activity of heme — myoglobin also gives a positive result, while erythrocytes are absent (myoglobinuria). Myoglobin is filtered in the glomeruli, precipitates in the tubules in acidic urine and causes oxidative injury through heme iron; together with dehydration and vasoconstriction this leads to acute kidney injury (creatinine increased). Treatment: abundant intravenous fluids, correction of hyperkalemia, alkalinization of the urine, dialysis if necessary.
-s6139 Contractile proteins
-s6140 Myosin (ATPase), actin
-s6141 Regulatory proteins
-s6142 Tropomyosin, troponin C, I, T
-s6143 Contraction
-s6144 Ca2+ → TnC → cross-bridge cycle; ATP for detachment
-s6145 Relaxation
-s6146 SERCA (ATP is consumed)
-s6147 Smooth muscle
-s6148 Ca2+–calmodulin → myosin light chain kinase
-s6149 ATP resynthesis
-s6150 Creatine phosphate (the fastest) → glycolysis → aerobic oxidation
-s6151 Kidney (guanidinoacetate) + liver (SAM) → creatine → creatinine
-s6152 Duchenne
-s6153 Dystrophin absent; CK ↑↑, creatinuria
-s6154 Myocardium
-s6155 Aerobic; fatty acids are the main source
-s6156 Infarction markers
-s6157 Troponin (gold standard), myoglobin (early), CK-MB
-s6158 Natriuretic peptides
-s6159 ANP, BNP, NT-proBNP — heart failure
-s6160 Endothelium
-s6161 NO, PGI2 (dilation); endothelin-1 (constriction)
-s6162 Biochemistry of the gastrointestinal system
-s6163 To give the student knowledge of the composition and functions of saliva, gastric juice, pancreatic juice, bile and intestinal juice, the biochemical regulation of taste and appetite, the regulation of digestive juice secretion, the breakdown products of organic substances in the intestine, the absorption of water and salts and its disorders, and the biochemical basis of pancreatitis, celiac disease and inflammatory bowel diseases.
-s6164 the composition and functions of saliva;
-s6165 taste receptors and the hormones that regulate appetite (ghrelin, leptin);
-s6166 the mechanism of HCl secretion and its regulation;
-s6167 the enzymes of pancreatic juice and their activation;
-s6168 the composition of bile and the enterohepatic circulation of bile acids;
-s6169 intestinal juice and membrane digestion;
-s6170 the mechanisms of absorption of monosaccharides, amino acids, lipids, water and electrolytes;
-s6171 the biochemical basis of pancreatitis, celiac disease, lactose intolerance, Crohn disease and ulcerative colitis. **The student should be able to:**
-s6172 perform qualitative reactions for the components of saliva and bile;
-s6173 interpret the results of amylase in blood and urine and of serum lipase;
-s6174 identify the biochemical features of the malabsorption syndrome.
-s6175 1. Saliva
-s6176 Saliva consists of the secretions of three pairs of major glands (parotid — serous; submandibular and sublingual — mixed) and many minor glands; 1–1.5 l is secreted per day; pH 6.4–7.4.
-s6177 **Composition:** water (≈ 99.4%); organic substances — **mucin** (a glycoprotein that makes the food bolus slippery), **α-amylase** (ptyalin — breaks down starch into dextrins; activated by Cl-), lingual lipase (important in infants), **lysozyme** (breaks down the bacterial wall), lactoferrin, **secretory IgA**, histatins, kallikrein, growth factors (epidermal growth factor); inorganic — Na+, K+ (more than in plasma), Ca2+, phosphates, HCO~3~^−^, Cl-, **thiocyanates** (rhodanides; abundant in smokers), F-.
-s6178 **Functions:** digestive (the start of carbohydrate digestion), protective (antibacterial, buffering, remineralization of enamel — saturated with Ca2+ and phosphate), moistening and swallowing of food, taste perception (dissolves taste substances), excretory (urea, drugs, heavy metals).
-s6179 Reduced salivary secretion (xerostomia — Sjögren syndrome, radiation, anticholinergic drugs) increases dental caries and oral infections. Caries — **lactic acid**, formed when bacteria (Streptococcus mutans) ferment sucrose, dissolves the hydroxyapatite of enamel; fluoride forms the more resistant **fluorapatite** in enamel.
-s6180 2. Taste perception. Regulation of appetite and hunger
-s6181 **Biochemical basis of taste perception:** there are five basic tastes. **Sweet** (T1R2/T1R3), **umami** (T1R1/T1R3 — L-glutamate) and **bitter** (the T2R family, ≈ 25 types) are G protein-coupled receptors; the G protein **gustducin** → phospholipase Cβ2 → IP3 → Ca2+ → TRPM5 channel → depolarization. **Salty** — direct entry of Na+ through ENaC sodium channels; **sour** — H+ ions (the OTOP1 proton channel). Zinc (gustin) is required for taste perception — in Zn deficiency taste is impaired (hypogeusia).
-s6182 **Regulation of appetite and hunger** — two groups of neurons in the **arcuate nucleus** of the hypothalamus:
-s6183 **orexigenic** (increase appetite): **neuropeptide Y** and AgRP;
-s6184 **anorexigenic** (satiety): **POMC → α-MSH** (melanocortin-4 receptor) and CART.
-s6185 Table 24.1. Peripheral signals that regulate appetite
-s6186 Signal
-s6187 Ghrelin
-s6188 Stomach (increases in fasting)
-s6189 Increases appetite (NPY/AgRP ↑) — the “hunger hormone”
-s6190 Leptin
-s6191 Adipose tissue (proportional to fat mass)
-s6192 Long-term satiety signal (POMC ↑, NPY ↓), increases energy expenditure
-s6193 β-cells
-s6194 Central anorexigenic effect
-s6195 Cholecystokinin
-s6196 Duodenum
-s6197 Short-term satiety (vagus nerve)
-s6198 GLP-1, PYY3-36
-s6199 L cells of the small and large intestine
-s6200 Satiety, slows gastric emptying
-s6201 Glucose, amino acids, gastric distension
-s6202 Satiety
-s6203 In **obesity** leptin is usually high, but **leptin resistance** develops; defects of the leptin or MC4R genes lead to severe monogenic obesity. GLP-1 receptor agonists (semaglutide, liraglutide) are used to treat obesity and type 2 diabetes.
-s6204 3. Gastric juice
+s6022 8. Secretory function of the endothelium
+s6023 The endothelium (≈ 1.5 kg, ≈ 1000 m^2^) is an active endocrine organ; it regulates vascular tone, hemostasis, inflammation and permeability.
+s6024 Table 23.4. Endothelial factors
+s6025 Action
+s6026 Vasodilators
+s6027 Nitric oxide (NO) — synthesized by eNOS from arginine (BH4, NADPH) → guanylate cyclase in smooth muscle → cGMP; prostacyclin (PGI~2~); endothelium-derived hyperpolarizing factor; bradykinin
+s6028 Vasoconstrictors
+s6029 Endothelin-1 (the most potent), angiotensin II (ACE on the endothelium), thromboxane A2
+s6030 Antithrombotic
+s6031 NO, PGI2, thrombomodulin, heparan sulfate, t-PA, TFPI
+s6032 Prothrombotic
+s6033 von Willebrand factor, tissue factor, PAI-1
+s6034 Inflammation and adhesion
+s6035 Selectins (E, P), ICAM-1, VCAM-1, IL-6, MCP-1
+s6036 VEGF, PDGF (smooth muscle proliferation)
+s6037 **Endothelial dysfunction** is a decrease in the formation and biological activity of NO (oxidative stress converts NO to peroxynitrite, asymmetric dimethylarginine inhibits eNOS) with a predominance of vasoconstrictor, prothrombotic and inflammatory factors. Risk factors: hypercholesterolemia (oxidized LDL), arterial hypertension, diabetes mellitus (glycation products), smoking, **hyperhomocysteinemia** (deficiency of B6, B12, folate), obesity. Endothelial dysfunction is the first stage of **atherosclerosis** (topic 10) and the basis for the development of hypertension, thrombosis and coronary heart disease.
+s6038 Experiment 1: determination of creatine kinase activity in blood serum (“Biotest” kit, kinetic method)
+s6039 **Principle of the method (coupled reactions):** creatine phosphate + ADP → (CK) → creatine + ATP; ATP + glucose → (hexokinase) → ADP + glucose-6-phosphate; glucose-6-phosphate + NADP+ → (G6PD) → 6-phosphogluconate + NADPH. The rate of NADPH formation at 340 nm is proportional to CK activity. N-acetylcysteine activates CK, while AMP and diadenosine pentaphosphate inhibit erythrocyte myokinase.
+s6040 Warm the working reagent to 37 °C; add 1 ml of reagent and 20 µl of serum to the cuvette and mix.
+s6041 After 2 minutes of incubation record the absorbance at 340 nm, then measure every minute for 3 minutes.
+s6042 Calculate the mean ΔE/min. **Calculation:** activity (U/l) = ΔE/min × 8095 (based on the millimolar extinction coefficient of NADPH, 6.22, and the sample dilution).
+s6043 **Interpretation:** < 190 U/l in men, < 170 U/l in women. Hemolysis falsely increases the result (adenylate kinase and ATP from erythrocytes). Physiological increases occur after intramuscular injections and heavy physical exertion.
+s6044 Experiment 2: determination of CK-MB by the immunoinhibition method (demonstration)
+s6045 **Principle of the method:** antibodies against the M subunit completely inhibit CK-MM and half of CK-MB (its M part); the remaining activity (B subunit) is multiplied by 2.
+s6046 Incubate the serum with the antibody-containing reagent.
+s6047 Measure the residual activity as in Experiment 1; × 2. **Results and analysis:** CK-MB > 25 U/l and > 6% of total CK are characteristic of myocardial injury; today this method has been replaced by troponin determination.
+s6048 Skill: interpreting markers in chest pain
+s6049 Determine the time elapsed since the onset of pain.
+s6050 Determine high-sensitivity troponin on arrival and after 1–3 hours; assess the dynamics.
+s6051 With early presentation (< 3 hours), a first negative result does not exclude infarction.
+s6052 With late presentation (> 3–4 days), troponin is still high, while CK-MB may have returned to normal.
+s6053 Detect reinfarction by a renewed rise in CK-MB.
+s6054 Exclude causes of troponin elevation without infarction.
+s6055 Skill: assessing the biochemical features of a myopathy
+s6056 Determine serum CK (MM), AST, ALT, LDH, aldolase and myoglobin.
+s6057 Assess creatine and creatinine in the urine.
+s6058 Very high CK (> 10,000 U/l) and brown urine — rhabdomyolysis (monitor potassium and creatinine).
+s6059 Very high CK and proximal weakness in a young boy — dystrophin gene analysis.
+s6060 List the main muscle proteins and their functions.
+s6061 What are the composition and function of the troponin complex?
+s6062 Explain the sliding filament theory of muscle contraction.
+s6063 What is the role of Ca2+ and ATP in muscle contraction and relaxation?
+s6064 How does the regulation of smooth muscle contraction differ from that of skeletal muscle?
+s6065 List the extractive substances of muscle.
+s6066 By what pathways is ATP regenerated in muscle?
+s6067 How is creatine synthesized? What is the diagnostic importance of creatinine?
+s6068 What are the biochemical basis and features of Duchenne muscular dystrophy?
+s6069 What is special about the metabolism of the heart muscle?
+s6070 What are the effects and diagnostic importance of natriuretic peptides?
+s6071 Name the creatine kinase isoenzymes.
+s6072 Describe the dynamics of the biochemical markers of myocardial infarction.
+s6073 What factors does the endothelium produce?
+s6074 What is endothelial dysfunction and what are its causes?
+s6075 Which protein binds Ca2+ in skeletal muscle?
+s6076 Troponin I
+s6077 Troponin T
+s6078 Troponin C
+s6079 Which enzyme returns Ca2+ to the sarcoplasmic reticulum during muscle relaxation?
+s6080 Ca2+-ATPase (SERCA)
+s6081 Creatine kinase
+s6082 Myosin ATPase
+s6083 Adenylate kinase
+s6084 Which pathway regenerates ATP the fastest?
+s6085 The creatine kinase reaction
+s6086 In which organs does creatine synthesis take place?
+s6087 In muscle and brain
+s6088 In the heart and lungs
+s6089 In the kidney and liver
+s6090 In the intestine and spleen
+s6091 Only in muscle
+s6092 Which protein is absent in Duchenne muscular dystrophy?
+s6093 Titin
+s6094 Myosin
+s6095 Actin
+s6096 What is rigor mortis due to?
+s6097 Lack of Ca2+
+s6098 Breakdown of myosin
+s6099 Absence of troponin
+s6100 Failure of myosin to detach from actin in the absence of ATP
+s6101 Accumulation of lactate
+s6102 What is the main energy source of the heart muscle at rest?
+s6103 Fatty acids
+s6104 Which is the most sensitive and specific marker of myocardial infarction?
+s6105 LDH
+s6106 High-sensitivity troponin
+s6107 Total CK
+s6108 Which marker rises the earliest after myocardial infarction but is not specific?
+s6109 Troponin
+s6110 What is the main laboratory marker of heart failure?
+s6111 NT-proBNP
+s6112 CK-BB
+s6113 Amylase
+s6114 From which amino acid is nitric oxide synthesized in the endothelium?
+s6115 Which creatine kinase isoenzyme is specific to the myocardium?
+s6116 CK-MM
+s6117 Mitochondrial CK
+s6118 LDH-1
+s6119 In smooth muscle, with which protein does Ca2+ combine to activate myosin light chain kinase?
+s6120 Calsequestrin
+s6121 Which is the most potent endothelial vasoconstrictor?
+s6122 Endothelin-1
+s6123 Prostacyclin
+s6124 Nitric oxide
+s6125 Bradykinin
+s6126 What change is observed in the urine in muscular dystrophies?
+s6127 Creatinine increases, there is no creatine
+s6128 Urea decreases sharply
+s6129 Uric acid increases
+s6130 Creatinuria, decreased creatinine excretion
+s6131 A 58-year-old man presented with severe crushing chest pain lasting for 2 hours. On arrival high-sensitivity troponin T was 18 ng/l (normal < 14), and 74 ng/l 1 hour later; myoglobin was increased; CK-MB 28 U/l.
+s6132 What is the diagnosis? Explain the dynamics of the markers. Why do myocardial cells die?
+s6133 Acute myocardial infarction: troponin above the 99th percentile with a sharp rise within 1 hour (dynamics) together with clinical signs of ischemia. Myoglobin is a small molecule and is released the earliest, but it is also present in skeletal muscle; CK-MB rises at 3–6 hours; troponin becomes detectable at 1–3 hours and persists for 7–14 days (the sarcomere-bound fraction is released slowly). Coronary thrombosis cuts off oxygen: β-oxidation and oxidative phosphorylation stop, and anaerobic glycolysis cannot meet the ATP demand; lactate and H+ accumulate; Na+,K+-ATPase and Ca2+-ATPases fail, Na+ and Ca2+ increase inside the cell, phospholipases and proteases are activated, and the membranes are destroyed — necrosis, and the enzymes are released into the blood.
+s6134 A 5-year-old boy tires quickly, has difficulty climbing stairs and pushes on his legs with his hands when getting up from the floor; his calf muscles are enlarged. Serum CK 15,000 U/l, ALT and AST increased.
+s6135 What is the disease? Explain the biochemical changes. How can the diagnosis be confirmed?
+s6136 Duchenne muscular dystrophy (X-linked recessive). Because dystrophin is absent, the cytoskeleton is not linked to the sarcolemma and the extracellular matrix; the membrane tears during contraction, Ca2+ enters and activates calpains, and the fibers undergo necrosis — CK (MM), aminotransferases, LDH and aldolase are released into the blood (the increase in ALT/AST must not be mistaken for liver disease). The enlarged calves are a pseudohypertrophy due to fat and connective tissue; the way of getting up from the floor is the Gowers sign. Confirmation: molecular analysis of the DMD gene (deletions — MLPA, sequencing), immunohistochemical demonstration of the absence of dystrophin in a muscle biopsy.
+s6137 A 25-year-old man presented after a marathon with severe muscle pain and weakness; his urine is dark brown. CK 85,000 U/l, potassium 6.2 mmol/l, creatinine 280 µmol/l. The urine test strip is positive for “blood”, but there are no erythrocytes on microscopy.
+s6138 What condition is this? Explain the laboratory results. Why are the kidneys damaged?
+s6139 Rhabdomyolysis after heavy physical exertion. As a result of ATP depletion and Ca2+ accumulation in muscle cells, the fibers break down and CK, myoglobin and K+ are released into the blood (hyperkalemia — dangerous for the heart). The test strip detects the peroxidase activity of heme — myoglobin also gives a positive result, while erythrocytes are absent (myoglobinuria). Myoglobin is filtered in the glomeruli, precipitates in the tubules in acidic urine and causes oxidative injury through heme iron; together with dehydration and vasoconstriction this leads to acute kidney injury (creatinine increased). Treatment: abundant intravenous fluids, correction of hyperkalemia, alkalinization of the urine, dialysis if necessary.
+s6140 Contractile proteins
+s6141 Myosin (ATPase), actin
+s6142 Regulatory proteins
+s6143 Tropomyosin, troponin C, I, T
+s6144 Contraction
+s6145 Ca2+ → TnC → cross-bridge cycle; ATP for detachment
+s6146 Relaxation
+s6147 SERCA (ATP is consumed)
+s6148 Smooth muscle
+s6149 Ca2+–calmodulin → myosin light chain kinase
+s6150 ATP resynthesis
+s6151 Creatine phosphate (the fastest) → glycolysis → aerobic oxidation
+s6152 Kidney (guanidinoacetate) + liver (SAM) → creatine → creatinine
+s6153 Duchenne
+s6154 Dystrophin absent; CK ↑↑, creatinuria
+s6155 Myocardium
+s6156 Aerobic; fatty acids are the main source
+s6157 Infarction markers
+s6158 Troponin (gold standard), myoglobin (early), CK-MB
+s6159 Natriuretic peptides
+s6160 ANP, BNP, NT-proBNP — heart failure
+s6161 Endothelium
+s6162 NO, PGI2 (dilation); endothelin-1 (constriction)
+s6163 Biochemistry of the gastrointestinal system
+s6164 To give the student knowledge of the composition and functions of saliva, gastric juice, pancreatic juice, bile and intestinal juice, the biochemical regulation of taste and appetite, the regulation of digestive juice secretion, the breakdown products of organic substances in the intestine, the absorption of water and salts and its disorders, and the biochemical basis of pancreatitis, celiac disease and inflammatory bowel diseases.
+s6165 the composition and functions of saliva;
+s6166 taste receptors and the hormones that regulate appetite (ghrelin, leptin);
+s6167 the mechanism of HCl secretion and its regulation;
+s6168 the enzymes of pancreatic juice and their activation;
+s6169 the composition of bile and the enterohepatic circulation of bile acids;
+s6170 intestinal juice and membrane digestion;
+s6171 the mechanisms of absorption of monosaccharides, amino acids, lipids, water and electrolytes;
+s6172 the biochemical basis of pancreatitis, celiac disease, lactose intolerance, Crohn disease and ulcerative colitis.
+s6173 perform qualitative reactions for the components of saliva and bile;
+s6174 interpret the results of amylase in blood and urine and of serum lipase;
+s6175 identify the biochemical features of the malabsorption syndrome.
+s6176 1. Saliva
+s6177 Saliva consists of the secretions of three pairs of major glands (parotid — serous; submandibular and sublingual — mixed) and many minor glands; 1–1.5 l is secreted per day; pH 6.4–7.4.
+s6178 **Composition:** water (≈ 99.4%); organic substances — **mucin** (a glycoprotein that makes the food bolus slippery), **α-amylase** (ptyalin — breaks down starch into dextrins; activated by Cl-), lingual lipase (important in infants), **lysozyme** (breaks down the bacterial wall), lactoferrin, **secretory IgA**, histatins, kallikrein, growth factors (epidermal growth factor); inorganic — Na+, K+ (more than in plasma), Ca2+, phosphates, HCO~3~^−^, Cl-, **thiocyanates** (rhodanides; abundant in smokers), F-.
+s6179 **Functions:** digestive (the start of carbohydrate digestion), protective (antibacterial, buffering, remineralization of enamel — saturated with Ca2+ and phosphate), moistening and swallowing of food, taste perception (dissolves taste substances), excretory (urea, drugs, heavy metals).
+s6180 Reduced salivary secretion (xerostomia — Sjögren syndrome, radiation, anticholinergic drugs) increases dental caries and oral infections. Caries — **lactic acid**, formed when bacteria (Streptococcus mutans) ferment sucrose, dissolves the hydroxyapatite of enamel; fluoride forms the more resistant **fluorapatite** in enamel.
+s6181 2. Taste perception. Regulation of appetite and hunger
+s6182 **Biochemical basis of taste perception:** there are five basic tastes. **Sweet** (T1R2/T1R3), **umami** (T1R1/T1R3 — L-glutamate) and **bitter** (the T2R family, ≈ 25 types) are G protein-coupled receptors; the G protein **gustducin** → phospholipase Cβ2 → IP3 → Ca2+ → TRPM5 channel → depolarization. **Salty** — direct entry of Na+ through ENaC sodium channels; **sour** — H+ ions (the OTOP1 proton channel). Zinc (gustin) is required for taste perception — in Zn deficiency taste is impaired (hypogeusia).
+s6183 **Regulation of appetite and hunger** — two groups of neurons in the **arcuate nucleus** of the hypothalamus:
+s6184 **orexigenic** (increase appetite): **neuropeptide Y** and AgRP;
+s6185 **anorexigenic** (satiety): **POMC → α-MSH** (melanocortin-4 receptor) and CART.
+s6186 Table 24.1. Peripheral signals that regulate appetite
+s6187 Signal
+s6188 Ghrelin
+s6189 Stomach (increases in fasting)
+s6190 Increases appetite (NPY/AgRP ↑) — the “hunger hormone”
+s6191 Leptin
+s6192 Adipose tissue (proportional to fat mass)
+s6193 Long-term satiety signal (POMC ↑, NPY ↓), increases energy expenditure
+s6194 β-cells
+s6195 Central anorexigenic effect
+s6196 Cholecystokinin
+s6197 Duodenum
+s6198 Short-term satiety (vagus nerve)
+s6199 GLP-1, PYY3-36
+s6200 L cells of the small and large intestine
+s6201 Satiety, slows gastric emptying
+s6202 Glucose, amino acids, gastric distension
+s6203 Satiety
+s6204 In **obesity** leptin is usually high, but **leptin resistance** develops; defects of the leptin or MC4R genes lead to severe monogenic obesity. GLP-1 receptor agonists (semaglutide, liraglutide) are used to treat obesity and type 2 diabetes.
+s6205 3. Gastric juice
+s6206 2–2.5 l per day; pH 1.5–2.0 (during digestion).
+s6207 Table 24.2. Composition of gastric juice
+s6208 Component
+s6209 Cells
+s6210 Parietal (oxyntic) cells
+s6211 Activates pepsinogen, denatures proteins, bactericidal, converts iron into a soluble form, stimulates the release of secretin
+s6212 Intrinsic factor (Castle factor)
+s6213 Parietal cells
+s6214 Binds vitamin B12 and ensures its absorption in the ileum
+s6215 Pepsinogen I, II
+s6216 Chief cells
+s6217 Converted into pepsin by HCl and pepsin (pH optimum 1.5–2.0)
+s6218 Gastricsin, rennin (in infants — chymosin)
+s6219 Break down proteins; curdle milk (caseinogen → casein)
+s6220 Gastric lipase
+s6221 Triacylglycerols of short-chain fatty acids (milk fat)
+s6222 Mucin, HCO3 -
+s6223 Accessory (neck) and surface epithelial cells
+s6224 The mucus–bicarbonate barrier — protects the gastric wall from self-digestion
+s6225 Antral G cells (into the blood)
+s6226 Stimulates the secretion of HCl and pepsinogen
+s6227 Mechanism of HCl secretion:
+s6228 Figure 24.1
+s6229 HCl secretion in the gastric parietal cell and its regulation (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
+s6230 In the parietal cell, **carbonic anhydrase** forms H2CO3 from CO2 and H2O; H+ is pumped into the lumen by the **H^+^,K^+^-ATPase** (proton pump) in the apical membrane (against a ≈ 106-fold concentration gradient), and HCO~3~^−^ passes into the blood across the basolateral membrane in exchange for Cl- (the postprandial **“alkaline tide”** — the urine becomes alkaline). Cl- and K+ leave into the lumen through apical channels. **Stimulators:** acetylcholine (vagus nerve, M3), gastrin, **histamine** (from ECL cells, H2 receptor — cAMP); **inhibitors:** somatostatin, prostaglandin E2, secretin, GIP, pH < 2 (feedback).

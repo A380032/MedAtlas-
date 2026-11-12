@@ -1,213 +1,217 @@
-s3963	**transpozonlar** (“sakrovchi genlar”) — genom ichida joyini o‘zgartiruvchi DNK qismlari; odamda LINE va Alu elementlari;
-s3964	**plazmidalar** — bakteriyalarning xromosomadan tashqari halqasimon DNK si; antibiotiklarga **chidamlilik genlarini** tashiydi; gen muhandisligida vektor;
-s3965	**bakteriofaglar** — bakteriyalar viruslari; transduksiya, gen muhandisligida vektor.
-s3966	3. DNK replikatsiyasi
-s3967	**Replikatsiya** — DNK ning o‘z nusxasini hosil qilishi; hujayra siklining **S-fazasida** kechadi.
-s3968	Tamoyillari:
-s3969	**yarim konservativ** — har bir yangi molekulada bitta eski va bitta yangi zanjir (Mezelson–Stal tajribasi);
-s3970	**matritsali va komplementar**;
-s3971	**antiparallel** — yangi zanjir faqat 5’→3’ yo‘nalishda uzaytiriladi;
-s3972	**uzlukli (yarim uzlukli)** — yetakchi zanjir uzluksiz, orqada qoluvchi zanjir **Okadzaki fragmentlari** ko‘rinishida;
-s3973	**praymer talab qiladi** — DNK-polimerazalar sintezni boshlay olmaydi, faqat mavjud 3’-OH ga nukleotid qo‘shadi;
-s3974	eukariotlarda ko‘p **replikatsiya boshlanish nuqtalari (ori)** — replikonlar.
-s3975	Rasm 16.1
-s3976	Replikatsiya vilkasidagi asosiy fermentlar va jarayonlar (Severin E.S. asosida chizilgan)
-s3977	Substratlar — **dNTF** (dATF, dGTF, dSTF, dTTF); pirofosfat ajralib, so‘ng gidrolizlanadi — jarayon qaytmas bo‘ladi.
-s3978	Jadval 16.3. Eukariot DNK-polimerazalari
-s3979	Polimeraza
-s3980	α (praymaza bilan)
-s3981	Praymer sintezi, Okadzaki fragmentlarini boshlash
-s3982	Orqada qoluvchi zanjir sintezi; 3’→5’ ekzonukleaza (tuzatish)
-s3983	Yetakchi zanjir sintezi; 3’→5’ ekzonukleaza (tuzatish)
-s3984	Reparatsiya (asoslarni kesib olish yo‘li)
-s3985	Mitoxondriya DNK si replikatsiyasi
-s3986	**Aniqlik:** DNK-polimerazalarning **3’→5’ ekzonukleaza (korrektorlik)** faolligi noto‘g‘ri qo‘shilgan nukleotidni darhol olib tashlaydi; mos kelmagan juftlarni tuzatish reparatsiyasi bilan birga xato ehtimoli ≈ 10^−9^–10^−10^.
-s3987	**Hujayra sikli bilan bog‘liqligi:** G1 → S → G2 → M; o‘tishlarni **siklinlar** va **siklinga bog‘liq kinazalar (CDK)** boshqaradi; nazorat nuqtalarida **p53** va **Rb** oqsillari DNK shikastlanganda siklni to‘xtatadi (18–19-mavzular). Replikatsiya litsenziyasi har siklda faqat bir marta beriladi.
-s3988	4. Replikatsiyadan keyingi o‘zgarishlar: metillanish, telomerlar
-s3989	**DNK metillanishi:** DNK-metiltransferazalar (S-adenozilmetionin donori) **CpG** dinukleotidlarida sitozinni 5-metilsitozinga aylantiradi. Promotorning metillanishi genni **o‘chiradi** — epigenetik boshqaruv (X-xromosoma inaktivatsiyasi, genomik imprinting; o‘smalarda supressor genlarning metillanib o‘chishi).
-s3990	**Telomerlar va telomeraza:** chiziqli DNK ning 3’-uchidagi praymer o‘rni to‘ldirilmaydi — har bo‘linishda xromosoma qisqaradi. Uchlarda **telomerlar** — (TTAGGG)n takrorlari. **Telomeraza** — o‘z **RNK-matritsasi** bo‘lgan **teskari transkriptaza**; telomerlarni uzaytiradi. U jinsiy, ildiz hujayralari va **o‘sma hujayralarining ≈ 85–90 %** ida faol (o‘lmaslik), somatik hujayralarda faolligi past — telomerlar qisqarishi **qarish** (Xeyflik chegarasi) bilan bog‘liq.
-s3991	5. Transkripsiya
-s3992	**Transkripsiya** — DNK matritsasida RNK sintezi. Matritsa bo‘lib DNK ning bitta zanjiri (antisens, kodlamaydigan) xizmat qiladi; RNK unga komplementar va kodlovchi zanjirga (T o‘rniga U bilan) o‘xshash; sintez 5’→3’ yo‘nalishda, **praymer talab qilinmaydi**, substratlar — NTF.
-s3993	Jadval 16.4. Eukariot RNK-polimerazalari
-s3994	α-Amanitinga sezgirlik
-s3995	RNK-polimeraza I
-s3996	Yadrocha
-s3997	28S, 18S, 5,8S rRNK
-s3998	Sezgir emas
-s3999	RNK-polimeraza II
-s4000	Nukleoplazma
-s4001	mRNK (pre-mRNK), ko‘p mikroRNK
-s4002	Juda sezgir
-s4003	RNK-polimeraza III
-s4004	tRNK, 5S rRNK
-s4005	Bosqichlari:
-s4006	**Initsiatsiya** — umumiy transkripsiya omillari (TFIID TATA-box ga bog‘lanadi) va RNK-polimeraza II **promotorga** birikib, DNK ni ≈ 14 juft asos oralig‘ida ochadi; TFIIH polimeraza CTD-domenini fosforlaydi.
-s4007	**Elongatsiya** — polimeraza DNK bo‘ylab harakatlanib RNK zanjirini uzaytiradi (≈ 40 nukleotid/s).
-s4008	**Terminatsiya** — terminatsiya signallarida (prokariotlarda rho-omil yoki GC-boy soch to‘g‘nog‘ich) sintez to‘xtaydi. Bakteriyalarda bitta RNK-polimeraza (σ-subbirligi promotorni taniydi) — **rifampitsin** shu fermentni ingibirlaydi.
-s4009	6. RNK ning posttranskripsion o‘zgarishlari (protsessing)
-s4010	Rasm 16.2
-s4011	Eukariot mRNK sining hosil bo‘lishi va yetilishi (Lippincott’s Illustrated Reviews: Biochemistry asosida chizilgan)
-s4012	mRNK yetilishi:
-s4013	**5’-kep** — 7-metilguanozin 5’-5’-trifosfat bog‘i bilan; mRNK ni ekzonukleazalardan himoya qiladi, ribosomaning bog‘lanishi uchun zarur;
-s4014	**3’-poliadenillanish** — AAUAAA signalidan keyin kesilib, poli(A)-polimeraza ≈ 200 adenilat qo‘shadi; barqarorlik va eksport;
-s4015	**splaysing** — intronlarni olib tashlash va ekzonlarni tikish; **splaysosoma** (kichik yadro RNK lari — snRNK va oqsillar) GU…AG chegaralarini taniydi. **Alternativ splaysing** — bitta gendan bir nechta oqsil (masalan, kalsitonin va CGRP) hosil bo‘ladi;
-s4016	**RNK tahriri** — alohida nukleotidlar o‘zgarishi (apo B-100 jigarda, apo B-48 ichakda — C→U tahrir, 8-mavzu). **rRNK yetilishi:** 45S prekursor yadrochada kesilib 28S, 18S, 5,8S rRNK lari hosil bo‘ladi; nukleotidlar metillanadi.
-s4017	**tRNK yetilishi:** 5’- va 3’-uchlari kesiladi, 3’-uchiga **CCA** qo‘shiladi (aminokislota biriktiriladigan joy), asoslar modifikatsiyalanadi (psevdouridin, digidrouridin, inozin), ba’zilarida intron olinadi.
-s4018	Splaysing buzilishlari: β-talassemiyaning ko‘p shakllari — β-globin geni intronidagi mutatsiyalar noto‘g‘ri splaysingga olib keladi. Tizimli qizil yuguruk (SLE) da snRNP larga qarshi autoantitelolar (anti-Sm) hosil bo‘ladi.
-s4019	7. Replikatsiya va transkripsiya ingibitorlari
-s4020	Jadval 16.5. Matritsali sintezlarga ta’sir qiluvchi moddalar
-s4021	Ftorxinolonlar (siprofloksatsin)
-s4022	Bakterial DNK-giraza (topoizomeraza II) ingibitori
-s4023	Antibakterial
-s4024	Doksorubitsin, etopozid
-s4025	Topoizomeraza II ingibitori, interkalyatsiya
-s4026	O‘smaga qarshi
-s4027	Irinotekan, topotekan
-s4028	Topoizomeraza I ingibitori
-s4029	Sisplatin, alkillovchi moddalar
-s4030	DNK zanjirlari orasida ko‘ndalang bog‘lar
-s4031	Zanjir terminatorlari (3’-OH yo‘q)
-s4032	Virusga qarshi
-s4033	Rifampitsin
-s4034	Bakterial RNK-polimeraza
-s4035	Sil, antibakterial
-s4036	Aktinomitsin D
-s4037	DNK ga interkalyatsiya, transkripsiyani to‘xtatadi
-s4038	α-Amanitin
-s4039	Eukariot RNK-polimeraza II
-s4040	Oq poganka zahari — jigar nekrozi
-s4041	8. Rekombinant DNK va PZR ning tibbiyotda qo‘llanilishi
-s4042	**Rekombinant DNK texnologiyasi: restriktazalar** (DNK ni ma’lum palindrom ketma-ketliklarda kesuvchi bakterial endonukleazalar) yordamida gen kesib olinadi, **DNK-ligaza** bilan **vektorga** (plazmida, virus) tikiladi va bakteriya, achitqi yoki hayvon hujayralariga kiritiladi. Shu yo‘l bilan olinadi: inson **insulini**, o‘sish gormoni, eritropoetin, interferonlar, qon ivish omillari (VIII), gepatit B ga qarshi vaksina, monoklonal antitelolar.
-s4043	**Polimeraza zanjir reaksiyasi (PZR):** in vitro DNK ning ma’lum qismini ko‘paytirish. Har bir sikl: **denaturatsiya** (94–95 °C) → **praymerlarning bog‘lanishi (otjig)** (50–65 °C) → **elongatsiya** (72 °C, termostabil **Taq-polimeraza**). 30–35 siklda nusxalar soni ≈ 2^n^ marta (milliardlab) ortadi. Natija agaroza gel-elektroforezida yoki real vaqtda (fluorestsent zondlar) aniqlanadi.
-s4044	**PZR asosida tashxis:** infeksiyalar (SARS-CoV-2, OIV, gepatit B va C virus yuki, sil mikobakteriyalari), irsiy kasalliklar (mukovistsidoz, fenilketonuriya mutatsiyalari), o‘smalar (BCR-ABL), shaxsni identifikatsiya qilish va otalikni aniqlash (sud tibbiyoti), prenatal tashxis. **Teskari transkripsiya PZR (OT-PZR)** RNK viruslarini aniqlaydi.
-s4045	1-ish: achitqidan nukleoproteinlarni ajratish va gidrolizlash
-s4046	**Usul asosi:** nukleoproteinlar kuchsiz ishqorda eriydi va kislota qo‘shilganda cho‘kadi; kislotali gidrolizda ular oqsil, purin asoslari, pentoza va fosfat kislotaga parchalanadi.
-s4047	5 g achitqini 0,4 % li NaOH eritmasi bilan ezing, 20 daqiqa aralashtiring va sentrifugalang.
-s4048	Supernatantga sirka kislota qo‘shing — nukleoproteinlar oq parcha shaklida cho‘kadi.
-s4049	Cho‘kmani 10 % li sulfat kislota bilan 1 soat qaynatib gidrolizlang, sovutib filtrlang.
-s4050	2-ish: gidrolizat tarkibiy qismlariga sifat reaksiyalari
-s4051	**Oqsil qismi** — biuret reaksiyasi: gidrolizatga NaOH va CuSO4 qo‘shilganda binafsha rang.
-s4052	**Purin asoslari** — kumush probasi: ammiakli AgNO3 qo‘shilganda purin asoslarining kumush tuzlari — och-qo‘ng‘ir cho‘kma.
-s4053	**Pentoza** — orsin reaksiyasi (Bial): HCl va FeCl3 bilan qizdirilganda **yashil** rang (riboza); **difenilamin** reaksiyasi — **ko‘k** rang (dezoksiriboza, DNK).
-s4054	**Fosfat kislota** — molibden reaktivi: ammoniy molibdat va HNO3 bilan qizdirilganda **sariq** kristall cho‘kma (fosfomolibdat ammoniy). **Natija va tahlil:** barcha reaksiyalarning musbat bo‘lishi nukleoproteinlar tarkibida oqsil, azotli asoslar, pentoza va fosfat borligini tasdiqlaydi. Achitqida asosan RNK — orsin reaksiyasi aniq musbat.
-s4055	3-ish: PZR elektroforegrammasini talqin qilish (vaziyatli)
-s4056	Gel rasmidagi yo‘lakchalarni aniqlang: marker (DNK fragmentlari uzunligi), musbat nazorat, manfiy nazorat, bemor namunalari.
-s4057	Bemor namunasidagi chiziqni musbat nazorat bilan solishtiring (uzunligi bir xil bo‘lishi kerak).
-s4058	Manfiy nazoratda chiziq bo‘lmasligi kerak (bo‘lsa — ifloslanish, natija noto‘g‘ri). **Natija va tahlil:** bemor yo‘lakchasida kutilgan uzunlikdagi chiziq — musbat natija (patogen DNK si yoki mutant allel bor).
-s4059	Ko‘nikma: DNK ketma-ketligi bo‘yicha komplementar zanjir va mRNK ni yozish
-s4060	Berilgan zanjirning yo‘nalishini belgilang (5’→3’).
-s4061	Komplementar zanjirni antiparallel yozing: A↔T, G↔C (3’→5’).
-s4062	Matritsa zanjiri bo‘yicha mRNK ni yozing: T o‘rniga U; mRNK kodlovchi zanjir bilan bir xil (U bilan).
-s4063	Misol: kodlovchi 5’-ATG GCT TAA-3’ → matritsa 3’-TAC CGA ATT-5’ → mRNK 5’-AUG GCU UAA-3’.
-s4064	Ko‘nikma: PZR natijasini klinik talqin qilish
-s4065	Tekshiruv maqsadini aniqlang (infeksiya, mutatsiya, virus yuki).
-s4066	Nazoratlar to‘g‘ri ishlaganini tekshiring.
-s4067	Sifat (bor/yo‘q) yoki miqdor (real vaqt PZR: Ct qiymati — qanchalik kichik bo‘lsa, boshlang‘ich DNK shuncha ko‘p) natijani baholang.
-s4068	Soxta musbat (ifloslanish) va soxta manfiy (ingibitorlar, namuna sifati) sabablarini hisobga oling.
-s4069	DNK va RNK ning kimyoviy tarkibi va tuzilishidagi farqlarni ayting.
-s4070	Chargaff qoidalarini ta’riflang.
-s4071	Uotson–Krik modelining asosiy belgilarini sanang.
-s4072	Nukleosoma va xromatin qanday tuzilgan?
-s4073	DNK denaturatsiyasi va gibridizatsiyasi nima? Ularning amaliy ahamiyati qanday?
-s4074	Mitoxondriya genomining xususiyatlari qanday?
-s4075	Prokariot va eukariot genlarining farqlarini ayting.
-s4076	Replikatsiyaning asosiy tamoyillarini sanang.
-s4077	Replikatsiyada qaysi fermentlar ishtirok etadi?
-s4078	Okadzaki fragmentlari qanday hosil bo‘ladi va birlashtiriladi?
-s4079	Telomeraza nima? Uning qarish va o‘smalardagi ahamiyati qanday?
-s4080	DNK metillanishining biologik roli qanday?
-s4081	Transkripsiya bosqichlarini va eukariot RNK-polimerazalarini tavsiflang.
-s4082	mRNK ning posttranskripsion o‘zgarishlarini ayting.
-s4083	PZR ning tamoyili va tibbiyotda qo‘llanilishini tushuntiring.
-s4084	DNK tarkibida qaysi azotli asos uchramaydi?
-s4085	Adenin
-s4086	Guanin
-s4087	Sitozin
-s4088	Timin
-s4089	Uratsil
-s4090	Chargaff qoidasiga ko‘ra DNK da qaysi tenglik to‘g‘ri?
-s4091	A = G
-s4092	A = C
-s4093	G = C
-s4094	T = G
-s4095	A + T = G + C
-s4096	Nukleosoma oqsil o‘zagi qanday tuzilgan?
-s4097	H1 gistonining tetrameri
-s4098	H2A, H2B, H3, H4 dan 2 tadan — oktamer
-s4099	Faqat H3 va H4 dimeri
-s4100	Nogiston oqsillar
-s4101	Protaminlar
-s4102	Replikatsiyaning yarim konservativ ekanligi nimani bildiradi?
-s4103	Faqat bir zanjir nusxalanadi
-s4104	Har bir yangi molekulada bitta eski va bitta yangi zanjir bor
-s4105	Yangi molekulalar butunlay yangi zanjirlardan iborat
-s4106	Faqat genning yarmi nusxalanadi
-s4107	Replikatsiya faqat S-fazaning yarmida kechadi
-s4108	Okadzaki fragmentlarini birlashtiruvchi ferment qaysi?
-s4109	Gelikaza
-s4110	Praymaza
-s4111	DNK-ligaza
-s4112	Topoizomeraza
-s4113	Telomeraza
-s4114	Telomeraza qanday ferment hisoblanadi?
-s4115	RNK-matritsali teskari transkriptaza
-s4116	Restriktaza
-s4117	RNK-polimeraza
-s4118	Eukariotlarda mRNK sintezini qaysi ferment amalga oshiradi?
-s4119	DNK-polimeraza α
-s4120	Replikatsiyani transkripsiyadan farqlovchi belgi qaysi?
-s4121	Matritsa sifatida DNK ishlatiladi
-s4122	Sintez 5’→3’ yo‘nalishda boradi
-s4123	Komplementarlik tamoyili
-s4124	Praymer talab qilinadi
-s4125	Fosfodiefir bog‘lari hosil bo‘ladi
-s4126	Splaysing nima?
-s4127	mRNK ning 5’-uchiga kep qo‘shilishi
-s4128	Intronlarni olib tashlash va ekzonlarni birlashtirish
-s4129	Poli(A)-dum qo‘shilishi
-s4130	tRNK ga CCA qo‘shilishi
-s4131	DNK metillanishi
-s4132	Oq poganka zahari α-amanitin qaysi fermentni ingibirlaydi?
-s4133	DNK-giraza
-s4134	Teskari transkriptaza
-s4135	Topoizomeraza I
-s4136	Rifampitsinning ta’sir nishoni qaysi?
-s4137	Ribosomaning 30S subbirligi
-s4138	Topoizomeraza II
-s4139	DNK erish harorati (Tm) qaysi omilga bog‘liq?
-s4140	Adenin miqdoriga
-s4141	Timin miqdoriga
-s4142	G≡C juftlari ulushiga
-s4143	Pentoza turiga
-s4144	Fosfat miqdoriga
-s4145	PZR da elongatsiya bosqichini qaysi ferment amalga oshiradi?
-s4146	Taq-polimeraza
-s4147	Mitoxondriya DNK sining xususiyati qaysi?
-s4148	Chiziqli tuzilishga ega
-s4149	Ota orqali o‘tadi
-s4150	Gistonlar bilan bog‘langan
-s4151	Ko‘p intronlar tutadi
-s4152	Faqat ona orqali o‘tadi
-s4153	Pentoza turini aniqlashda difenilamin reaksiyasi qanday rang beradi?
-s4154	Yashil (riboza)
-s4155	Ko‘k (dezoksiriboza)
-s4156	Oila o‘rmondan yig‘ilgan qo‘ziqorinlarni yedi. 10–12 soatdan keyin qusish, ich ketish, qorinda og‘riq boshlandi; 3-kuni sariqlik, qonda AlAT 3500 U/l, protrombin indeksi keskin pasaydi.
-s4157	Qaysi zahar sababchi? Uning molekular ta’sir mexanizmi qanday? Nima uchun aynan jigar zararlanadi?
-s4158	Oq poganka (Amanita phalloides) zahari — α-amanitin. U eukariot RNK-polimeraza II ni ingibirlaydi: mRNK sintezi to‘xtaydi, oqsillar (shu jumladan qon ivish omillari) sintezlanmaydi, hujayra nobud bo‘ladi. Zahar ichakdan so‘rilib, portal qon orqali avval jigarga tushadi, gepatotsitlarga OATP tashuvchilari orqali faol kiradi va enterogepatik aylanishda qayta-qayta ta’sir qiladi — jigar nekrozi. Protrombin indeksining pasayishi jigarda oqsil sintezi buzilganini ko‘rsatadi.
-s4159	Bemorda sil kasalligi aniqlandi va rifampitsin bilan davolash boshlandi. Bir necha haftadan keyin uning siydigi, ko‘z yoshi to‘q sariq-qizil rangga kirdi. Bemor dori odam hujayralarida ham RNK sintezini to‘xtatadimi, deb so‘radi.
-s4160	Rifampitsinning ta’sir mexanizmi qanday? Nima uchun u odam hujayralariga deyarli ta’sir qilmaydi?
-s4161	Rifampitsin bakteriyalarning DNK ga bog‘liq RNK-polimerazasining β-subbirligiga bog‘lanib, transkripsiyaning initsiatsiyasini (zanjirning uzayishini boshlashni) to‘xtatadi. Eukariot RNK-polimerazalari tuzilishi jihatidan farq qiladi va rifampitsinga sezgir emas — shuning uchun tanlab ta’sir qiladi. To‘q sariq rang preparatning o‘z rangi (zararsiz). Shuningdek, rifampitsin jigarda sitoxrom P450 ni induksiya qiladi — boshqa dorilar bilan o‘zaro ta’sirni hisobga olish kerak.
-s4162	Bemordan burun-halqum surtmasi olinib, real vaqtdagi OT-PZR bilan virusli infeksiyaga tekshirildi. Natija: Ct = 18 (musbat nazorat Ct = 25, manfiy nazoratda signal yo‘q).
-s4163	Natijani qanday talqin qilasiz? Nima uchun RNK virusini aniqlashda “OT” bosqichi kerak? Ct qiymati nimani bildiradi?
-s4164	Natija musbat: namunada virus RNK si bor, nazoratlar to‘g‘ri ishlagan. RNK viruslari genomini Taq-polimeraza ko‘paytira olmaydi — avval teskari transkriptaza yordamida RNK dan komplementar DNK (kDNK) sintezlanadi, so‘ng PZR bilan ko‘paytiriladi. Ct — fluorestsent signal chegaradan oshgan sikl raqami; Ct qancha kichik bo‘lsa, boshlang‘ich nusxalar shuncha ko‘p (Ct 18 — yuqori virus yuki, bemor yuqumli bo‘lishi ehtimoli katta).
-s4165	Chargaff qoidalari
-s4166	A = T, G = C; A + G = T + C
-s4167	Antiparallel o‘ng qo‘sh spiral, A=T (2), G≡C (3 vodorod bog‘)
-s4168	Nukleosoma
-s4169	Giston oktameri + ≈ 146 juft asos DNK
-s4170	Gibridizatsiya
-s4171	Komplementar zanjirlarning birlashishi; Tm G≡C ga bog‘liq
-s4172	mtDNK
-s4173	Halqasimon, 37 gen, ona orqali o‘tadi
-s4174	Replikatsiya
-s4175	Yarim konservativ, praymer kerak, dNTF, Okadzaki fragmentlari
+s3978	Substratlar — **dNTF** (dATF, dGTF, dSTF, dTTF); pirofosfat ajralib, so‘ng gidrolizlanadi — jarayon qaytmas bo‘ladi.
+s3979	Jadval 16.3. Eukariot DNK-polimerazalari
+s3980	Polimeraza
+s3981	α (praymaza bilan)
+s3982	Praymer sintezi, Okadzaki fragmentlarini boshlash
+s3983	Orqada qoluvchi zanjir sintezi; 3’→5’ ekzonukleaza (tuzatish)
+s3984	Yetakchi zanjir sintezi; 3’→5’ ekzonukleaza (tuzatish)
+s3985	Reparatsiya (asoslarni kesib olish yo‘li)
+s3986	Mitoxondriya DNK si replikatsiyasi
+s3987	**Aniqlik:** DNK-polimerazalarning **3’→5’ ekzonukleaza (korrektorlik)** faolligi noto‘g‘ri qo‘shilgan nukleotidni darhol olib tashlaydi; mos kelmagan juftlarni tuzatish reparatsiyasi bilan birga xato ehtimoli ≈ 10^−9^–10^−10^.
+s3988	**Hujayra sikli bilan bog‘liqligi:** G1 → S → G2 → M; o‘tishlarni **siklinlar** va **siklinga bog‘liq kinazalar (CDK)** boshqaradi; nazorat nuqtalarida **p53** va **Rb** oqsillari DNK shikastlanganda siklni to‘xtatadi (18–19-mavzular). Replikatsiya litsenziyasi har siklda faqat bir marta beriladi.
+s3989	4. Replikatsiyadan keyingi o‘zgarishlar: metillanish, telomerlar
+s3990	**DNK metillanishi:** DNK-metiltransferazalar (S-adenozilmetionin donori) **CpG** dinukleotidlarida sitozinni 5-metilsitozinga aylantiradi. Promotorning metillanishi genni **o‘chiradi** — epigenetik boshqaruv (X-xromosoma inaktivatsiyasi, genomik imprinting; o‘smalarda supressor genlarning metillanib o‘chishi).
+s3991	**Telomerlar va telomeraza:** chiziqli DNK ning 3’-uchidagi praymer o‘rni to‘ldirilmaydi — har bo‘linishda xromosoma qisqaradi. Uchlarda **telomerlar** — (TTAGGG)n takrorlari. **Telomeraza** — o‘z **RNK-matritsasi** bo‘lgan **teskari transkriptaza**; telomerlarni uzaytiradi. U jinsiy, ildiz hujayralari va **o‘sma hujayralarining ≈ 85–90 %** ida faol (o‘lmaslik), somatik hujayralarda faolligi past — telomerlar qisqarishi **qarish** (Xeyflik chegarasi) bilan bog‘liq.
+s3992	5. Transkripsiya
+s3993	**Transkripsiya** — DNK matritsasida RNK sintezi. Matritsa bo‘lib DNK ning bitta zanjiri (antisens, kodlamaydigan) xizmat qiladi; RNK unga komplementar va kodlovchi zanjirga (T o‘rniga U bilan) o‘xshash; sintez 5’→3’ yo‘nalishda, **praymer talab qilinmaydi**, substratlar — NTF.
+s3994	Jadval 16.4. Eukariot RNK-polimerazalari
+s3995	α-Amanitinga sezgirlik
+s3996	RNK-polimeraza I
+s3997	Yadrocha
+s3998	28S, 18S, 5,8S rRNK
+s3999	Sezgir emas
+s4000	RNK-polimeraza II
+s4001	Nukleoplazma
+s4002	mRNK (pre-mRNK), ko‘p mikroRNK
+s4003	Juda sezgir
+s4004	RNK-polimeraza III
+s4005	tRNK, 5S rRNK
+s4006	Bosqichlari:
+s4007	**Initsiatsiya** — umumiy transkripsiya omillari (TFIID TATA-box ga bog‘lanadi) va RNK-polimeraza II **promotorga** birikib, DNK ni ≈ 14 juft asos oralig‘ida ochadi; TFIIH polimeraza CTD-domenini fosforlaydi.
+s4008	**Elongatsiya** — polimeraza DNK bo‘ylab harakatlanib RNK zanjirini uzaytiradi (≈ 40 nukleotid/s).
+s4009	**Terminatsiya** — terminatsiya signallarida (prokariotlarda rho-omil yoki GC-boy soch to‘g‘nog‘ich) sintez to‘xtaydi. Bakteriyalarda bitta RNK-polimeraza (σ-subbirligi promotorni taniydi) — **rifampitsin** shu fermentni ingibirlaydi.
+s4010	6. RNK ning posttranskripsion o‘zgarishlari (protsessing)
+s4011	Rasm 16.2
+s4012	Eukariot mRNK sining hosil bo‘lishi va yetilishi (Lippincott’s Illustrated Reviews: Biochemistry asosida chizilgan)
+s4013	mRNK yetilishi:
+s4014	**5’-kep** — 7-metilguanozin 5’-5’-trifosfat bog‘i bilan; mRNK ni ekzonukleazalardan himoya qiladi, ribosomaning bog‘lanishi uchun zarur;
+s4015	**3’-poliadenillanish** — AAUAAA signalidan keyin kesilib, poli(A)-polimeraza ≈ 200 adenilat qo‘shadi; barqarorlik va eksport;
+s4016	**splaysing** — intronlarni olib tashlash va ekzonlarni tikish; **splaysosoma** (kichik yadro RNK lari — snRNK va oqsillar) GU…AG chegaralarini taniydi. **Alternativ splaysing** — bitta gendan bir nechta oqsil (masalan, kalsitonin va CGRP) hosil bo‘ladi;
+s4017	**RNK tahriri** — alohida nukleotidlar o‘zgarishi (apo B-100 jigarda, apo B-48 ichakda — C→U tahrir, 8-mavzu). **rRNK yetilishi:** 45S prekursor yadrochada kesilib 28S, 18S, 5,8S rRNK lari hosil bo‘ladi; nukleotidlar metillanadi.
+s4018	**tRNK yetilishi:** 5’- va 3’-uchlari kesiladi, 3’-uchiga **CCA** qo‘shiladi (aminokislota biriktiriladigan joy), asoslar modifikatsiyalanadi (psevdouridin, digidrouridin, inozin), ba’zilarida intron olinadi.
+s4019	Splaysing buzilishlari: β-talassemiyaning ko‘p shakllari — β-globin geni intronidagi mutatsiyalar noto‘g‘ri splaysingga olib keladi. Tizimli qizil yuguruk (SLE) da snRNP larga qarshi autoantitelolar (anti-Sm) hosil bo‘ladi.
+s4020	7. Replikatsiya va transkripsiya ingibitorlari
+s4021	Jadval 16.5. Matritsali sintezlarga ta’sir qiluvchi moddalar
+s4022	Ftorxinolonlar (siprofloksatsin)
+s4023	Bakterial DNK-giraza (topoizomeraza II) ingibitori
+s4024	Antibakterial
+s4025	Doksorubitsin, etopozid
+s4026	Topoizomeraza II ingibitori, interkalyatsiya
+s4027	O‘smaga qarshi
+s4028	Irinotekan, topotekan
+s4029	Topoizomeraza I ingibitori
+s4030	Sisplatin, alkillovchi moddalar
+s4031	DNK zanjirlari orasida ko‘ndalang bog‘lar
+s4032	Zanjir terminatorlari (3’-OH yo‘q)
+s4033	Virusga qarshi
+s4034	Rifampitsin
+s4035	Bakterial RNK-polimeraza
+s4036	Sil, antibakterial
+s4037	Aktinomitsin D
+s4038	DNK ga interkalyatsiya, transkripsiyani to‘xtatadi
+s4039	α-Amanitin
+s4040	Eukariot RNK-polimeraza II
+s4041	Oq poganka zahari — jigar nekrozi
+s4042	8. Rekombinant DNK va PZR ning tibbiyotda qo‘llanilishi
+s4043	**Rekombinant DNK texnologiyasi: restriktazalar** (DNK ni ma’lum palindrom ketma-ketliklarda kesuvchi bakterial endonukleazalar) yordamida gen kesib olinadi, **DNK-ligaza** bilan **vektorga** (plazmida, virus) tikiladi va bakteriya, achitqi yoki hayvon hujayralariga kiritiladi. Shu yo‘l bilan olinadi: inson **insulini**, o‘sish gormoni, eritropoetin, interferonlar, qon ivish omillari (VIII), gepatit B ga qarshi vaksina, monoklonal antitelolar.
+s4044	**Polimeraza zanjir reaksiyasi (PZR):** in vitro DNK ning ma’lum qismini ko‘paytirish. Har bir sikl: **denaturatsiya** (94–95 °C) → **praymerlarning bog‘lanishi (otjig)** (50–65 °C) → **elongatsiya** (72 °C, termostabil **Taq-polimeraza**). 30–35 siklda nusxalar soni ≈ 2^n^ marta (milliardlab) ortadi. Natija agaroza gel-elektroforezida yoki real vaqtda (fluorestsent zondlar) aniqlanadi.
+s4045	**PZR asosida tashxis:** infeksiyalar (SARS-CoV-2, OIV, gepatit B va C virus yuki, sil mikobakteriyalari), irsiy kasalliklar (mukovistsidoz, fenilketonuriya mutatsiyalari), o‘smalar (BCR-ABL), shaxsni identifikatsiya qilish va otalikni aniqlash (sud tibbiyoti), prenatal tashxis. **Teskari transkripsiya PZR (OT-PZR)** RNK viruslarini aniqlaydi.
+s4046	1-ish: achitqidan nukleoproteinlarni ajratish va gidrolizlash
+s4047	**Usul asosi:** nukleoproteinlar kuchsiz ishqorda eriydi va kislota qo‘shilganda cho‘kadi; kislotali gidrolizda ular oqsil, purin asoslari, pentoza va fosfat kislotaga parchalanadi.
+s4048	5 g achitqini 0,4 % li NaOH eritmasi bilan ezing, 20 daqiqa aralashtiring va sentrifugalang.
+s4049	Supernatantga sirka kislota qo‘shing — nukleoproteinlar oq parcha shaklida cho‘kadi.
+s4050	Cho‘kmani 10 % li sulfat kislota bilan 1 soat qaynatib gidrolizlang, sovutib filtrlang.
+s4051	2-ish: gidrolizat tarkibiy qismlariga sifat reaksiyalari
+s4052	**Oqsil qismi** — biuret reaksiyasi: gidrolizatga NaOH va CuSO4 qo‘shilganda binafsha rang.
+s4053	**Purin asoslari** — kumush probasi: ammiakli AgNO3 qo‘shilganda purin asoslarining kumush tuzlari — och-qo‘ng‘ir cho‘kma.
+s4054	**Pentoza** — orsin reaksiyasi (Bial): HCl va FeCl3 bilan qizdirilganda **yashil** rang (riboza); **difenilamin** reaksiyasi — **ko‘k** rang (dezoksiriboza, DNK).
+s4055	**Fosfat kislota** — molibden reaktivi: ammoniy molibdat va HNO3 bilan qizdirilganda **sariq** kristall cho‘kma (fosfomolibdat ammoniy). **Natija va tahlil:** barcha reaksiyalarning musbat bo‘lishi nukleoproteinlar tarkibida oqsil, azotli asoslar, pentoza va fosfat borligini tasdiqlaydi. Achitqida asosan RNK — orsin reaksiyasi aniq musbat.
+s4056	3-ish: PZR elektroforegrammasini talqin qilish (vaziyatli)
+s4057	Gel rasmidagi yo‘lakchalarni aniqlang: marker (DNK fragmentlari uzunligi), musbat nazorat, manfiy nazorat, bemor namunalari.
+s4058	Bemor namunasidagi chiziqni musbat nazorat bilan solishtiring (uzunligi bir xil bo‘lishi kerak).
+s4059	Manfiy nazoratda chiziq bo‘lmasligi kerak (bo‘lsa — ifloslanish, natija noto‘g‘ri). **Natija va tahlil:** bemor yo‘lakchasida kutilgan uzunlikdagi chiziq — musbat natija (patogen DNK si yoki mutant allel bor).
+s4060	Ko‘nikma: DNK ketma-ketligi bo‘yicha komplementar zanjir va mRNK ni yozish
+s4061	Berilgan zanjirning yo‘nalishini belgilang (5’→3’).
+s4062	Komplementar zanjirni antiparallel yozing: A↔T, G↔C (3’→5’).
+s4063	Matritsa zanjiri bo‘yicha mRNK ni yozing: T o‘rniga U; mRNK kodlovchi zanjir bilan bir xil (U bilan).
+s4064	Misol: kodlovchi 5’-ATG GCT TAA-3’ → matritsa 3’-TAC CGA ATT-5’ → mRNK 5’-AUG GCU UAA-3’.
+s4065	Ko‘nikma: PZR natijasini klinik talqin qilish
+s4066	Tekshiruv maqsadini aniqlang (infeksiya, mutatsiya, virus yuki).
+s4067	Nazoratlar to‘g‘ri ishlaganini tekshiring.
+s4068	Sifat (bor/yo‘q) yoki miqdor (real vaqt PZR: Ct qiymati — qanchalik kichik bo‘lsa, boshlang‘ich DNK shuncha ko‘p) natijani baholang.
+s4069	Soxta musbat (ifloslanish) va soxta manfiy (ingibitorlar, namuna sifati) sabablarini hisobga oling.
+s4070	DNK va RNK ning kimyoviy tarkibi va tuzilishidagi farqlarni ayting.
+s4071	Chargaff qoidalarini ta’riflang.
+s4072	Uotson–Krik modelining asosiy belgilarini sanang.
+s4073	Nukleosoma va xromatin qanday tuzilgan?
+s4074	DNK denaturatsiyasi va gibridizatsiyasi nima? Ularning amaliy ahamiyati qanday?
+s4075	Mitoxondriya genomining xususiyatlari qanday?
+s4076	Prokariot va eukariot genlarining farqlarini ayting.
+s4077	Replikatsiyaning asosiy tamoyillarini sanang.
+s4078	Replikatsiyada qaysi fermentlar ishtirok etadi?
+s4079	Okadzaki fragmentlari qanday hosil bo‘ladi va birlashtiriladi?
+s4080	Telomeraza nima? Uning qarish va o‘smalardagi ahamiyati qanday?
+s4081	DNK metillanishining biologik roli qanday?
+s4082	Transkripsiya bosqichlarini va eukariot RNK-polimerazalarini tavsiflang.
+s4083	mRNK ning posttranskripsion o‘zgarishlarini ayting.
+s4084	PZR ning tamoyili va tibbiyotda qo‘llanilishini tushuntiring.
+s4085	DNK tarkibida qaysi azotli asos uchramaydi?
+s4086	Adenin
+s4087	Guanin
+s4088	Sitozin
+s4089	Timin
+s4090	Uratsil
+s4091	Chargaff qoidasiga ko‘ra DNK da qaysi tenglik to‘g‘ri?
+s4092	A = G
+s4093	A = C
+s4094	G = C
+s4095	T = G
+s4096	A + T = G + C
+s4097	Nukleosoma oqsil o‘zagi qanday tuzilgan?
+s4098	H1 gistonining tetrameri
+s4099	H2A, H2B, H3, H4 dan 2 tadan — oktamer
+s4100	Faqat H3 va H4 dimeri
+s4101	Nogiston oqsillar
+s4102	Protaminlar
+s4103	Replikatsiyaning yarim konservativ ekanligi nimani bildiradi?
+s4104	Faqat bir zanjir nusxalanadi
+s4105	Har bir yangi molekulada bitta eski va bitta yangi zanjir bor
+s4106	Yangi molekulalar butunlay yangi zanjirlardan iborat
+s4107	Faqat genning yarmi nusxalanadi
+s4108	Replikatsiya faqat S-fazaning yarmida kechadi
+s4109	Okadzaki fragmentlarini birlashtiruvchi ferment qaysi?
+s4110	Gelikaza
+s4111	Praymaza
+s4112	DNK-ligaza
+s4113	Topoizomeraza
+s4114	Telomeraza
+s4115	Telomeraza qanday ferment hisoblanadi?
+s4116	RNK-matritsali teskari transkriptaza
+s4117	Restriktaza
+s4118	RNK-polimeraza
+s4119	Eukariotlarda mRNK sintezini qaysi ferment amalga oshiradi?
+s4120	DNK-polimeraza α
+s4121	Replikatsiyani transkripsiyadan farqlovchi belgi qaysi?
+s4122	Matritsa sifatida DNK ishlatiladi
+s4123	Sintez 5’→3’ yo‘nalishda boradi
+s4124	Komplementarlik tamoyili
+s4125	Praymer talab qilinadi
+s4126	Fosfodiefir bog‘lari hosil bo‘ladi
+s4127	Splaysing nima?
+s4128	mRNK ning 5’-uchiga kep qo‘shilishi
+s4129	Intronlarni olib tashlash va ekzonlarni birlashtirish
+s4130	Poli(A)-dum qo‘shilishi
+s4131	tRNK ga CCA qo‘shilishi
+s4132	DNK metillanishi
+s4133	Oq poganka zahari α-amanitin qaysi fermentni ingibirlaydi?
+s4134	DNK-giraza
+s4135	Teskari transkriptaza
+s4136	Topoizomeraza I
+s4137	Rifampitsinning ta’sir nishoni qaysi?
+s4138	Ribosomaning 30S subbirligi
+s4139	Topoizomeraza II
+s4140	DNK erish harorati (Tm) qaysi omilga bog‘liq?
+s4141	Adenin miqdoriga
+s4142	Timin miqdoriga
+s4143	G≡C juftlari ulushiga
+s4144	Pentoza turiga
+s4145	Fosfat miqdoriga
+s4146	PZR da elongatsiya bosqichini qaysi ferment amalga oshiradi?
+s4147	Taq-polimeraza
+s4148	Mitoxondriya DNK sining xususiyati qaysi?
+s4149	Chiziqli tuzilishga ega
+s4150	Ota orqali o‘tadi
+s4151	Gistonlar bilan bog‘langan
+s4152	Ko‘p intronlar tutadi
+s4153	Faqat ona orqali o‘tadi
+s4154	Pentoza turini aniqlashda difenilamin reaksiyasi qanday rang beradi?
+s4155	Yashil (riboza)
+s4156	Ko‘k (dezoksiriboza)
+s4157	Oila o‘rmondan yig‘ilgan qo‘ziqorinlarni yedi. 10–12 soatdan keyin qusish, ich ketish, qorinda og‘riq boshlandi; 3-kuni sariqlik, qonda AlAT 3500 U/l, protrombin indeksi keskin pasaydi.
+s4158	Qaysi zahar sababchi? Uning molekular ta’sir mexanizmi qanday? Nima uchun aynan jigar zararlanadi?
+s4159	Oq poganka (Amanita phalloides) zahari — α-amanitin. U eukariot RNK-polimeraza II ni ingibirlaydi: mRNK sintezi to‘xtaydi, oqsillar (shu jumladan qon ivish omillari) sintezlanmaydi, hujayra nobud bo‘ladi. Zahar ichakdan so‘rilib, portal qon orqali avval jigarga tushadi, gepatotsitlarga OATP tashuvchilari orqali faol kiradi va enterogepatik aylanishda qayta-qayta ta’sir qiladi — jigar nekrozi. Protrombin indeksining pasayishi jigarda oqsil sintezi buzilganini ko‘rsatadi.
+s4160	Bemorda sil kasalligi aniqlandi va rifampitsin bilan davolash boshlandi. Bir necha haftadan keyin uning siydigi, ko‘z yoshi to‘q sariq-qizil rangga kirdi. Bemor dori odam hujayralarida ham RNK sintezini to‘xtatadimi, deb so‘radi.
+s4161	Rifampitsinning ta’sir mexanizmi qanday? Nima uchun u odam hujayralariga deyarli ta’sir qilmaydi?
+s4162	Rifampitsin bakteriyalarning DNK ga bog‘liq RNK-polimerazasining β-subbirligiga bog‘lanib, transkripsiyaning initsiatsiyasini (zanjirning uzayishini boshlashni) to‘xtatadi. Eukariot RNK-polimerazalari tuzilishi jihatidan farq qiladi va rifampitsinga sezgir emas — shuning uchun tanlab ta’sir qiladi. To‘q sariq rang preparatning o‘z rangi (zararsiz). Shuningdek, rifampitsin jigarda sitoxrom P450 ni induksiya qiladi — boshqa dorilar bilan o‘zaro ta’sirni hisobga olish kerak.
+s4163	Bemordan burun-halqum surtmasi olinib, real vaqtdagi OT-PZR bilan virusli infeksiyaga tekshirildi. Natija: Ct = 18 (musbat nazorat Ct = 25, manfiy nazoratda signal yo‘q).
+s4164	Natijani qanday talqin qilasiz? Nima uchun RNK virusini aniqlashda “OT” bosqichi kerak? Ct qiymati nimani bildiradi?
+s4165	Natija musbat: namunada virus RNK si bor, nazoratlar to‘g‘ri ishlagan. RNK viruslari genomini Taq-polimeraza ko‘paytira olmaydi — avval teskari transkriptaza yordamida RNK dan komplementar DNK (kDNK) sintezlanadi, so‘ng PZR bilan ko‘paytiriladi. Ct — fluorestsent signal chegaradan oshgan sikl raqami; Ct qancha kichik bo‘lsa, boshlang‘ich nusxalar shuncha ko‘p (Ct 18 — yuqori virus yuki, bemor yuqumli bo‘lishi ehtimoli katta).
+s4166	Chargaff qoidalari
+s4167	A = T, G = C; A + G = T + C
+s4168	Antiparallel o‘ng qo‘sh spiral, A=T (2), G≡C (3 vodorod bog‘)
+s4169	Nukleosoma
+s4170	Giston oktameri + ≈ 146 juft asos DNK
+s4171	Gibridizatsiya
+s4172	Komplementar zanjirlarning birlashishi; Tm G≡C ga bog‘liq
+s4173	mtDNK
+s4174	Halqasimon, 37 gen, ona orqali o‘tadi
+s4175	Replikatsiya
+s4176	Yarim konservativ, praymer kerak, dNTF, Okadzaki fragmentlari
+s4177	Fermentlar
+s4178	Gelikaza, topoizomeraza, praymaza, DNK-pol α/δ/ε, ligaza
+s4179	RNK-matritsali teskari transkriptaza; o‘smalarda faol
+s4180	CpG da 5-metilsitozin — genni o‘chiradi (epigenetika)
+s4181	Transkripsiya
+s4182	Praymersiz, NTF; RNK-pol II — mRNK (α-amanitin)
+s4183	Protsessing
+s4184	Kep, poli(A), splaysing (snRNK), alternativ splaysing
+s4185	PZR
+s4186	95 → 55–65 → 72 °C; Taq-polimeraza; 2^n^ nusxa
+s4187	Translyatsiya. Genlar ekspressiyasining boshqarilishi
+s4188	Talabaga genetik kod va uning xossalari, oqsil sintezlovchi tizimning komponentlari, ribosomalarda polipeptid zanjiri sintezining bosqichlari, posttranslyatsion modifikatsiya, oqsillarning taxlanishi va manzilga yetkazilishi, oqsil sintezi ingibitorlari (antibiotiklar, toksinlar), prokariot va eukariotlarda genlar ekspressiyasining boshqarilishi, hujayra differensirovkasi haqida bilim berish.
+s4189	genetik kodning xossalarini;
+s4190	tRNK tuzilishini va aminoatsil-tRNK-sintetazalarning rolini;
+s4191	ribosomalar tuzilishini (prokariot va eukariot);
+s4192	translyatsiyaning initsiatsiya, elongatsiya va terminatsiya bosqichlarini;
+s4193	asosiy posttranslyatsion modifikatsiyalarni;
+s4194	oqsil sintezini to‘suvchi antibiotiklar va toksinlarni;

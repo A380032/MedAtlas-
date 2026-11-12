@@ -342,6 +342,26 @@ OPS = [
 for op, name in OPS:
     both(op, name)
 
+# Mashg'ulot maqsadi: "... **Talaba bajara olishi kerak:**" birinchi ro'yxatning oxirgi bandiga yopishib qolgan
+# (barcha 30 mavzuda) -> alohida "sub" blok sifatida ikkinchi ro'yxat oldiga.
+GSUB = re.compile(r"\s*\*\*([^*]+:)\*\*$")
+for doc in (uz, en):
+    if doc is None:
+        continue
+    k = 0
+    for tp in doc["topics"]:
+        g = tp.get("goals", [])
+        for j in range(len(g) - 1):
+            if g[j]["type"] == "list" and g[j + 1]["type"] == "list" and g[j]["items"]:
+                m = GSUB.search(g[j]["items"][-1])
+                if m:
+                    g[j]["items"][-1] = g[j]["items"][-1][:m.start()]
+                    g.insert(j + 1, {"type": "sub", "text": m.group(1)})
+                    k += 1
+                    break
+    if k:
+        log.append(f"maqsad: 'bajara olishi kerak' sarlavhasi ajratildi ({k})")
+
 for doc, path in ((uz, PATH), (en, en_path)):
     if doc is None:
         continue

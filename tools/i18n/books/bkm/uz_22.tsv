@@ -1,216 +1,235 @@
-s4176	Fermentlar
-s4177	Gelikaza, topoizomeraza, praymaza, DNK-pol α/δ/ε, ligaza
-s4178	RNK-matritsali teskari transkriptaza; o‘smalarda faol
-s4179	CpG da 5-metilsitozin — genni o‘chiradi (epigenetika)
-s4180	Transkripsiya
-s4181	Praymersiz, NTF; RNK-pol II — mRNK (α-amanitin)
-s4182	Protsessing
-s4183	Kep, poli(A), splaysing (snRNK), alternativ splaysing
-s4184	PZR
-s4185	95 → 55–65 → 72 °C; Taq-polimeraza; 2^n^ nusxa
-s4186	Translyatsiya. Genlar ekspressiyasining boshqarilishi
-s4187	Talabaga genetik kod va uning xossalari, oqsil sintezlovchi tizimning komponentlari, ribosomalarda polipeptid zanjiri sintezining bosqichlari, posttranslyatsion modifikatsiya, oqsillarning taxlanishi va manzilga yetkazilishi, oqsil sintezi ingibitorlari (antibiotiklar, toksinlar), prokariot va eukariotlarda genlar ekspressiyasining boshqarilishi, hujayra differensirovkasi haqida bilim berish.
-s4188	genetik kodning xossalarini;
-s4189	tRNK tuzilishini va aminoatsil-tRNK-sintetazalarning rolini;
-s4190	ribosomalar tuzilishini (prokariot va eukariot);
-s4191	translyatsiyaning initsiatsiya, elongatsiya va terminatsiya bosqichlarini;
-s4192	asosiy posttranslyatsion modifikatsiyalarni;
-s4193	oqsil sintezini to‘suvchi antibiotiklar va toksinlarni;
-s4194	operon modelini (laktoza operoni) va eukariotlarda genlar ekspressiyasini boshqarish darajalarini. **Talaba bajara olishi kerak:**
-s4195	mRNK ketma-ketligi bo‘yicha genetik kod jadvali yordamida peptid ketma-ketligini aniqlash;
-s4196	mutatsiyaning oqsilga ta’sirini bashorat qilish;
-s4197	antibiotiklarning tanlab ta’sir qilish asosini tushuntirish.
-s4198	1. Genetik kod va uning xossalari
-s4199	**Genetik kod** — mRNK nukleotidlari ketma-ketligini oqsil aminokislotalari ketma-ketligiga mos keltirish tizimi. 4 xil nukleotiddan 64 ta **kodon** (triplet) hosil bo‘ladi: 61 tasi aminokislotalarni kodlaydi, 3 tasi — **stop-kodonlar** (UAA, UAG, UGA). **AUG** — start-kodon (metionin).
-s4200	Jadval 17.1. Genetik kodning xossalari
-s4201	Xossa
-s4202	Mazmuni
-s4203	Triplet
-s4204	Har bir aminokislota uchta nukleotid bilan kodlanadi
-s4205	Aynigan (degeneratsiyalangan)
-s4206	Bitta aminokislotani bir necha kodon kodlaydi (leysin, serin, arginin — 6 tadan); faqat Met va Trp — bittadan
-s4207	Bir ma’noli (spetsifik)
-s4208	Har bir kodon faqat bitta aminokislotani kodlaydi
-s4209	Ustma-ust tushmaydigan
-s4210	Har bir nukleotid faqat bitta kodon tarkibida
-s4211	Vergulsiz (uzluksiz)
-s4212	Kodonlar orasida ajratuvchi belgilar yo‘q — o‘qish ramkasi start-kodondan belgilanadi
-s4213	Kolinear
-s4214	Gen va oqsildagi ketma-ketliklar bir xil tartibda
-s4215	Universal
-s4216	Barcha organizmlarda deyarli bir xil (mitoxondriyada kichik farqlar: UGA — triptofan)
-s4217	**Tebranish (wobble) gipotezasi:** kodonning 3-nukleotidi va antikodonning 1-nukleotidi orasidagi juftlashish erkinroq (masalan, inozin U, C, A bilan juftlashadi) — shuning uchun 61 kodonni ≈ 40 xil tRNK o‘qiy oladi.
-s4218	2. Oqsil sintezlovchi tizimning komponentlari
-s4219	**Aminokislotalar** (20 xil standart; selenotsistein — UGA kodoni maxsus kontekstda).
-s4220	**mRNK** — matritsa.
-s4221	**tRNK** — “adapter”: “beda bargi” shaklidagi ikkilamchi tuzilish, L-shaklidagi uchlamchi tuzilish; **antikodon halqasi** (kodonni taniydi) va **3’-uchidagi CCA** (aminokislota biriktiriladi).
-s4222	**Aminoatsil-tRNK-sintetazalar** — har bir aminokislota uchun alohida ferment; aminokislotani faollashtiradi va tegishli tRNK ga biriktiradi (2 makroergik bog‘ sarflanadi). Ular translyatsiya **aniqligining asosiy kafolati** — xato biriktirilgan aminokislotani gidrolizlaydi (korrektorlik).
-s4223	**Ribosomalar.**
-s4224	**Oqsil omillari:** initsiatsiya (eIF), elongatsiya (eEF), terminatsiya (eRF).
-s4225	**Energiya manbalari:** ATF (faollashuv), GTF (initsiatsiya, elongatsiya, terminatsiya).
-s4226	Mg2+, K+ ionlari.
-s4227	Jadval 17.2. Ribosomalar tuzilishi
-s4228	To‘liq ribosoma
-s4229	70S
-s4230	80S
-s4231	Kichik subbirlik
-s4232	30S (16S rRNK)
-s4233	40S (18S rRNK)
-s4234	Katta subbirlik
-s4235	50S (23S, 5S rRNK)
-s4236	60S (28S, 5,8S, 5S rRNK)
-s4237	Faol markazlar
-s4238	A (aminoatsil), P (peptidil), E (chiqish)
-s4239	A, P, E
-s4240	3. Translyatsiya bosqichlari
-s4241	Rasm 17.1
-s4242	Translyatsiya bosqichlari (Severin E.S. asosida chizilgan)
-s4243	**Aminokislotalarning faollanishi:** aminokislota + ATF → aminoatsil-AMF + PPi; aminoatsil-AMF + tRNK → aminoatsil-tRNK + AMF.
-s4244	**Initsiatsiya (eukariotlarda):** 40S subbirlik, initsiator **Met-tRNK~i~^Met^**, eIF2-GTF va boshqa omillar birgalikda **mRNK ning 5’-kepiga** bog‘lanadi (eIF4E kepni taniydi) va mRNK bo‘ylab birinchi **AUG** kodonigacha harakatlanadi (**skanerlash**, Kozak ketma-ketligi). GTF gidrolizlanib, 60S subbirlik qo‘shiladi — Met-tRNKi **P-markazda** joylashgan **80S** initsiatsiya kompleksi hosil bo‘ladi. Prokariotlarda initsiator — **formilmetionin-tRNK**, 16S rRNK mRNK dagi **Shayn–Dalgarno** ketma-ketligini taniydi.
-s4245	**Elongatsiya** — har bir kodon uchun takrorlanuvchi uch qadam:
-s4246	Navbatdagi aminoatsil-tRNK eEF1α-GTF bilan **A-markazga** keladi (antikodon kodonga mos kelsa, GTF gidrolizlanadi).
-s4247	**Peptidiltransferaza** P-markazdagi peptidni A-markazdagi aminokislotaning amin guruhiga ko‘chiradi — peptid bog‘i hosil bo‘ladi. Bu faollik 60S subbirlikning **28S rRNK** siga xos (**ribozim**; prokariotlarda 23S rRNK).
-s4248	**Translokatsiya** — eEF2-GTF ta’sirida ribosoma mRNK bo‘ylab bitta kodonga siljiydi; peptidil-tRNK P-markazga, bo‘sh tRNK E-markazga o‘tib ajraladi. Har bir peptid bog‘i uchun **4 makroergik bog‘** sarflanadi (faollashuvda 2, elongatsiyada 2 GTF). Bitta mRNK ni bir vaqtda ko‘plab ribosomalar o‘qiydi — **polisoma**.
-s4249	**Terminatsiya:** A-markazga stop-kodon kelganda tRNK o‘rniga **relizing-omillar** (eRF1, eRF3-GTF) bog‘lanadi; peptidiltransferaza peptidni suvga ko‘chiradi (gidroliz), polipeptid ajraladi, ribosoma subbirliklarga ajraladi.
-s4250	4. Posttranslyatsion modifikatsiya va oqsillarning manzilga yetkazilishi
-s4251	**Taxlanish (folding):** polipeptid ko‘pincha o‘z-o‘zidan to‘g‘ri konformatsiyaga keladi; **shaperonlar** (issiqlik shoki oqsillari — Hsp70, Hsp60/shaperoninlar) noto‘g‘ri taxlanish va agregatsiyani oldini oladi. Noto‘g‘ri taxlangan oqsillar **ubikvitin–proteasoma** tizimi orqali parchalanadi. Taxlanish buzilishi — **prion kasalliklari**, Altsgeymer (β-amiloid), Parkinson (α-sinuklein), mukovistsidoz (CFTR ΔF508).
-s4252	**Manzilga yetkazish:** sekretor va membrana oqsillari N-uchidagi **signal peptid** orqali (SRP — signalni taniydigan zarracha) **donador endoplazmatik retikulumga** yo‘naltiriladi, so‘ng Golji apparatida saralanadi. Lizosoma fermentlari **mannoza-6-fosfat** belgisi bilan lizosomalarga yo‘naltiriladi (I-hujayra kasalligi — bu belgining yo‘qligi). Mitoxondriya va yadro oqsillari maxsus signal ketma-ketliklariga ega.
-s4253	Jadval 17.3. Asosiy posttranslyatsion modifikatsiyalar
-s4254	Modifikatsiya
-s4255	Misol
-s4256	Proinsulin → insulin + C-peptid; profermentlar (tripsinogen) faollashuvi; signal peptidning kesilishi
-s4257	Fosforlanish (Ser, Thr, Tyr)
-s4258	Glikogenfosforilaza, retseptor tirozinkinazalari
-s4259	Glikozillanish (N- va O-)
-s4260	Immunoglobulinlar, gormonlar, membrana oqsillari
-s4261	Gidroksillanish (Pro, Lys)
-s4262	Kollagen — askorbin kislota zarur (singa, 22-mavzu)
-s4263	γ-Karboksillanish (Glu)
-s4264	Protrombin, VII, IX, X omillari — K vitamini zarur
-s4265	Atsetillanish, metillanish
-s4266	Gistonlar (xromatin faolligi)
-s4267	Lipidlanish (prenillanish, miristillanish)
-s4268	Ras oqsillari — membranaga birikish
-s4269	Disulfid bog‘lari hosil bo‘lishi
-s4270	Insulin, immunoglobulinlar
-s4271	Ubikvitinlanish
-s4272	Proteasomada parchalash uchun belgi
-s4273	5. Oqsil sintezi ingibitorlari
-s4274	Jadval 17.4. Oqsil sintezini to‘suvchi antibiotiklar va toksinlar
-s4275	Nishon
-s4276	Streptomitsin, gentamitsin (aminoglikozidlar)
-s4277	30S
-s4278	Initsiatsiyani buzadi, kodni noto‘g‘ri o‘qishga olib keladi
-s4279	Tetratsiklinlar
-s4280	Aminoatsil-tRNK ning A-markazga bog‘lanishini to‘sadi
-s4281	Xloramfenikol (levomitsetin)
-s4282	50S
-s4283	Peptidiltransferazani ingibirlaydi (mitoxondriya ribosomalariga ham ta’sir qiladi)
-s4284	Eritromitsin, azitromitsin (makrolidlar)
-s4285	Translokatsiyani to‘sadi
-s4286	Linezolid
-s4287	Initsiatsiya kompleksi hosil bo‘lishini to‘sadi
-s4288	Puromitsin
-s4289	Prokariot va eukariot
-s4290	Aminoatsil-tRNK analogi — zanjirni muddatidan oldin uzadi
-s4291	Sikloheksimid
-s4292	Eukariot peptidiltransferazasi
-s4293	Difteriya toksini
-s4294	eEF2
-s4295	ADF-ribozillab inaktivlaydi — translokatsiya to‘xtaydi
-s4296	Ritsin (kanakunjut), shiga toksini
-s4297	60S (28S rRNK)
-s4298	Adeninni olib tashlaydi (N-glikozidaza) — ribosoma nofaol
-s4299	Antibiotiklarning **tanlab ta’siri** prokariot (70S) va eukariot (80S) ribosomalarining tuzilishidagi farqqa asoslangan. Mitoxondriyada 70S tipidagi ribosomalar bo‘lgani uchun xloramfenikol suyak ko‘migini zararlashi mumkin (aplastik anemiya; chaqaloqlarda “kul rang sindromi” — glukuronidlash yetishmovchiligi bilan).
-s4300	6. Prokariotlarda genlar ekspressiyasining boshqarilishi
-s4301	**Operon** (Jakob va Mono, 1961) — bitta promotor va operator nazoratidagi, bitta polisistron mRNK sifatida transkripsiyalanadigan struktur genlar guruhi.
-s4302	Rasm 17.2
-s4303	Laktoza operonining boshqarilishi — induksiya (Lippincott’s Illustrated Reviews: Biochemistry asosida chizilgan)
-s4304	**Laktoza operoni (induksiyalanuvchi):** struktur genlar — lacZ (β-galaktozidaza), lacY (permeaza), lacA (transatsetilaza). Laktoza bo‘lmaganda **repressor** operatorga bog‘lanib transkripsiyani to‘sadi. Laktoza (aniqrog‘i allolaktoza — **induktor**) repressorga bog‘lanib, uni operatordan ajratadi — genlar ishlaydi. **Musbat boshqarish:** glyukoza kam bo‘lsa cAMF ko‘payadi, **cAMF–CAP** kompleksi promotorga bog‘lanib transkripsiyani kuchaytiradi (katabolit repressiya — glyukoza bor bo‘lsa laktoza operoni sust ishlaydi).
-s4305	**Triptofan operoni (repressiyalanuvchi):** triptofan ko‘p bo‘lsa u **korepressor** sifatida repressorni faollashtiradi va sintez fermentlari genlari o‘chadi; qo‘shimcha — **attenuatsiya** mexanizmi.
-s4306	7. Eukariotlarda genlar ekspressiyasining boshqarilishi
-s4307	Eukariotlarda boshqarish ko‘p darajali:
-s4308	**Xromatin darajasi** — gistonlar **atsetillanishi** (gistonatsetiltransferazalar) xromatinni bo‘shatib transkripsiyani faollashtiradi, deatsetillanish o‘chiradi; **DNK metillanishi** (CpG) genni o‘chiradi — **epigenetik** boshqaruv; genomik imprinting (Prader–Villi va Angelman sindromlari).
-s4309	**Transkripsiya darajasi** — asosiy daraja: **transkripsiya omillari** promotor, **enxanserlar** (minglab juft asos uzoqlikda ham ishlaydi) va saylenserlarga bog‘lanadi. Misollar: **steroid gormon retseptorlari** — gormon bilan birikib DNK dagi gormonga javob elementlariga (GRE) bog‘lanadi; cAMF → PKA → **CREB**; metallar → metallotioneinlar geni; gipoksiya → HIF-1 → eritropoetin geni.
-s4310	**Gen amplifikatsiyasi** — gen nusxalari sonining oshishi (o‘smalarda HER2, MYC; metotreksatga chidamlilikda digidrofolatreduktaza geni).
-s4311	**Gen qayta tuzilishi** — immunoglobulin genlarining V(D)J-rekombinatsiyasi.
-s4312	**Posttranskripsion daraja** — alternativ splaysing, RNK tahriri, mRNK barqarorligi (transferrin retseptori mRNK si — temir bilan boshqariladi, 21-mavzu), **mikroRNK** va siRNK (RNK-interferensiya) mRNK ni parchalaydi yoki translyatsiyani to‘xtatadi.
-s4313	**Translyatsiya darajasi** — eIF2 fosforlanishi (stress, gem yetishmasligida retikulotsitlarda globin sintezi to‘xtaydi); ferritin mRNK sining temirga bog‘liq translyatsiyasi (IRE/IRP).
-s4314	**Posttranslyatsion daraja** — fosforlanish, proteoliz, ubikvitinlanib parchalanish. **Hujayra differensirovkasi:** barcha somatik hujayralarda genom bir xil, ammo har bir hujayra turida genlarning faqat ma’lum to‘plami ifodalanadi (eritrotsit prekursorlarida globin, β-hujayralarda insulin). Bu **tanlab ekspressiya** to‘qimaga xos transkripsiya omillari va epigenetik belgilar bilan ta’minlanadi; ontogenezda **gomeozis (HOX) genlari** tana rejasini belgilaydi. Masalan, homila gemoglobini (HbF) dan kattalar gemoglobiniga (HbA) o‘tish — γ-globin genining o‘chib, β-globin genining yoqilishi.
-s4315	**Gidroksimochevina** o‘roqsimon hujayrali anemiyada γ-globin genining ekspressiyasini qayta faollashtirib, HbF miqdorini oshiradi — HbF HbS polimerlanishini kamaytiradi.
-s4316	1-ish: genetik kod jadvali yordamida translyatsiya masalalarini yechish
-s4317	Berilgan mRNK ketma-ketligida birinchi AUG kodonini toping — o‘qish ramkasi boshlanadi.
-s4318	Kodonlarni uchtadan ajrating va jadvaldan aminokislotalarni aniqlang.
-s4319	Stop-kodongacha davom eting. **Misol:** 5’-GCC **AUG** UUU GGC UGG AAA UAG CC-3’ → Met–Phe–Gly–Trp–Lys (UAG — stop).
-s4320	2-ish: mutatsiyaning oqsilga ta’sirini aniqlash
-s4321	Normal va mutant ketma-ketlikni solishtiring.
-s4322	Mutatsiya turini aniqlang: almashtirish (missens, nonsens, sinonim), qo‘shilish yoki yo‘qolish (ramka siljishi).
-s4323	Oqsil tuzilishiga ta’sirini bashorat qiling. **Misol:** β-globin geni 6-kodoni GAG → GUG: glutamat → valin (missens) — HbS (o‘roqsimon hujayrali anemiya). Bitta nukleotidning yo‘qolishi o‘qish ramkasini siljitadi — keyingi barcha aminokislotalar o‘zgaradi, ko‘pincha muddatidan oldin stop-kodon paydo bo‘ladi.
-s4324	3-ish: oqsil sintezi ingibitorlari ta’sirini solishtirish (jadval bilan ishlash)
-s4325	Har bir antibiotikning nishonini (30S, 50S, 80S, eEF2) jadvalga yozing.
-s4326	Odamga toksikligini va sababini (mitoxondriya ribosomalari, eukariot ribosomalariga ta’sir) belgilang. **Natija va tahlil:** prokariot ribosomalariga tanlab ta’sir qiluvchi moddalar antibiotik sifatida ishlatiladi; eukariot ribosomalarini to‘suvchilar (sikloheksimid, ritsin, difteriya toksini) odam uchun zaharli.
-s4327	Ko‘nikma: DNK dan oqsilgacha axborot oqimini bosqichma-bosqich yozish
-s4328	DNK kodlovchi zanjiridan matritsa zanjirini yozing.
-s4329	Matritsa bo‘yicha mRNK ni yozing (T → U).
-s4330	mRNK da start-kodonni toping va kodonlarga ajrating.
-s4331	Genetik kod jadvalidan peptid ketma-ketligini yozing.
-s4332	tRNK antikodonlarini (kodonga komplementar va antiparallel) ko‘rsating.
-s4333	Ko‘nikma: antibiotik ta’sirini bakteriya va odam hujayrasi uchun baholash
-s4334	Antibiotik qaysi jarayonni (replikatsiya, transkripsiya, translyatsiya, hujayra devori) to‘sishini aniqlang.
-s4335	Nishon tuzilmaning prokariot va eukariotlardagi farqini ko‘rsating.
-s4336	Mitoxondriyaga ta’sir ehtimolini va nojo‘ya ta’sirlarni (ototoksiklik, aplastik anemiya, tishlarning rangi o‘zgarishi) ayting.
-s4337	Genetik kod nima? Uning xossalarini sanang.
-s4338	Start va stop-kodonlarni ayting.
-s4339	tRNK tuzilishi qanday va uning vazifasi nima?
-s4340	Aminoatsil-tRNK-sintetazalarning roli qanday?
-s4341	Prokariot va eukariot ribosomalarining farqi nimada?
-s4342	Translyatsiyaning initsiatsiya bosqichini tavsiflang.
-s4343	Elongatsiya qanday qadamlardan iborat?
-s4344	Peptid bog‘i hosil bo‘lishini qaysi ferment katalizlaydi?
-s4345	Translyatsiya terminatsiyasi qanday kechadi?
-s4346	Bitta peptid bog‘i hosil bo‘lishiga qancha energiya sarflanadi?
-s4347	Asosiy posttranslyatsion modifikatsiyalarni misollar bilan ayting.
-s4348	Shaperonlar va proteasomaning vazifasi qanday?
-s4349	Oqsil sintezini to‘suvchi antibiotiklar va toksinlarni sanang.
-s4350	Laktoza operoni qanday boshqariladi?
-s4351	Eukariotlarda genlar ekspressiyasi qaysi darajalarda boshqariladi?
-s4352	Genetik kodning “aynigan” xossasi nimani bildiradi?
-s4353	Bitta kodon bir nechta aminokislotani kodlaydi
-s4354	Kodonlar ustma-ust tushadi
-s4355	Bitta aminokislotani bir necha kodon kodlaydi
-s4356	Kod barcha organizmlarda bir xil
-s4357	Kodonlar orasida vergul bor
-s4358	Qaysi kodon start-kodon hisoblanadi?
-s4359	UAA
-s4360	AUG
-s4361	UGA
-s4362	UAG
-s4363	GUG
-s4364	Aminokislota tRNK ning qaysi qismiga biriktiriladi?
-s4365	Antikodon halqasiga
-s4366	D-halqaga
-s4367	TψC-halqaga
-s4368	5’-uchiga
-s4369	3’-uchidagi CCA ga
-s4370	Eukariot ribosomasining kichik subbirligi qaysi?
-s4371	40S
-s4372	60S
-s4373	Peptidiltransferaza faolligi eukariotlarda nimaga xos?
-s4374	eEF1 oqsiliga
-s4375	eEF2 oqsiliga
-s4376	18S rRNK ga
-s4377	28S rRNK ga
-s4378	Aminoatsil-tRNK-sintetazaga
-s4379	Translokatsiyada qaysi omil ishtirok etadi?
-s4380	eIF4E
-s4381	eRF1
-s4382	eEF1α
-s4383	CAP
-s4384	Difteriya toksinining ta’sir mexanizmi qanday?
-s4385	eEF2 ni ADF-ribozillaydi
-s4386	28S rRNK dan adeninni olib tashlaydi
-s4387	30S subbirlikka bog‘lanadi
-s4388	Peptidiltransferazani ingibirlaydi
-s4389	RNK-polimeraza II ni to‘sadi
-s4390	Tetratsiklinlar qanday ta’sir qiladi?
-s4391	Zanjirni muddatidan oldin uzadi
+s4195	operon modelini (laktoza operoni) va eukariotlarda genlar ekspressiyasini boshqarish darajalarini.
+s4196	mRNK ketma-ketligi bo‘yicha genetik kod jadvali yordamida peptid ketma-ketligini aniqlash;
+s4197	mutatsiyaning oqsilga ta’sirini bashorat qilish;
+s4198	antibiotiklarning tanlab ta’sir qilish asosini tushuntirish.
+s4199	1. Genetik kod va uning xossalari
+s4200	**Genetik kod** — mRNK nukleotidlari ketma-ketligini oqsil aminokislotalari ketma-ketligiga mos keltirish tizimi. 4 xil nukleotiddan 64 ta **kodon** (triplet) hosil bo‘ladi: 61 tasi aminokislotalarni kodlaydi, 3 tasi — **stop-kodonlar** (UAA, UAG, UGA). **AUG** — start-kodon (metionin).
+s4201	Jadval 17.1. Genetik kodning xossalari
+s4202	Xossa
+s4203	Mazmuni
+s4204	Triplet
+s4205	Har bir aminokislota uchta nukleotid bilan kodlanadi
+s4206	Aynigan (degeneratsiyalangan)
+s4207	Bitta aminokislotani bir necha kodon kodlaydi (leysin, serin, arginin — 6 tadan); faqat Met va Trp — bittadan
+s4208	Bir ma’noli (spetsifik)
+s4209	Har bir kodon faqat bitta aminokislotani kodlaydi
+s4210	Ustma-ust tushmaydigan
+s4211	Har bir nukleotid faqat bitta kodon tarkibida
+s4212	Vergulsiz (uzluksiz)
+s4213	Kodonlar orasida ajratuvchi belgilar yo‘q — o‘qish ramkasi start-kodondan belgilanadi
+s4214	Kolinear
+s4215	Gen va oqsildagi ketma-ketliklar bir xil tartibda
+s4216	Universal
+s4217	Barcha organizmlarda deyarli bir xil (mitoxondriyada kichik farqlar: UGA — triptofan)
+s4218	**Tebranish (wobble) gipotezasi:** kodonning 3-nukleotidi va antikodonning 1-nukleotidi orasidagi juftlashish erkinroq (masalan, inozin U, C, A bilan juftlashadi) — shuning uchun 61 kodonni ≈ 40 xil tRNK o‘qiy oladi.
+s4219	2. Oqsil sintezlovchi tizimning komponentlari
+s4220	**Aminokislotalar** (20 xil standart; selenotsistein — UGA kodoni maxsus kontekstda).
+s4221	**mRNK** — matritsa.
+s4222	**tRNK** — “adapter”: “beda bargi” shaklidagi ikkilamchi tuzilish, L-shaklidagi uchlamchi tuzilish; **antikodon halqasi** (kodonni taniydi) va **3’-uchidagi CCA** (aminokislota biriktiriladi).
+s4223	**Aminoatsil-tRNK-sintetazalar** — har bir aminokislota uchun alohida ferment; aminokislotani faollashtiradi va tegishli tRNK ga biriktiradi (2 makroergik bog‘ sarflanadi). Ular translyatsiya **aniqligining asosiy kafolati** — xato biriktirilgan aminokislotani gidrolizlaydi (korrektorlik).
+s4224	**Ribosomalar.**
+s4225	**Oqsil omillari:** initsiatsiya (eIF), elongatsiya (eEF), terminatsiya (eRF).
+s4226	**Energiya manbalari:** ATF (faollashuv), GTF (initsiatsiya, elongatsiya, terminatsiya).
+s4227	Mg2+, K+ ionlari.
+s4228	Jadval 17.2. Ribosomalar tuzilishi
+s4229	To‘liq ribosoma
+s4230	70S
+s4231	80S
+s4232	Kichik subbirlik
+s4233	30S (16S rRNK)
+s4234	40S (18S rRNK)
+s4235	Katta subbirlik
+s4236	50S (23S, 5S rRNK)
+s4237	60S (28S, 5,8S, 5S rRNK)
+s4238	Faol markazlar
+s4239	A (aminoatsil), P (peptidil), E (chiqish)
+s4240	A, P, E
+s4241	3. Translyatsiya bosqichlari
+s4242	Rasm 17.1
+s4243	Translyatsiya bosqichlari (Severin E.S. asosida chizilgan)
+s4244	**Aminokislotalarning faollanishi:** aminokislota + ATF → aminoatsil-AMF + PPi; aminoatsil-AMF + tRNK → aminoatsil-tRNK + AMF.
+s4245	**Initsiatsiya (eukariotlarda):** 40S subbirlik, initsiator **Met-tRNK~i~^Met^**, eIF2-GTF va boshqa omillar birgalikda **mRNK ning 5’-kepiga** bog‘lanadi (eIF4E kepni taniydi) va mRNK bo‘ylab birinchi **AUG** kodonigacha harakatlanadi (**skanerlash**, Kozak ketma-ketligi). GTF gidrolizlanib, 60S subbirlik qo‘shiladi — Met-tRNKi **P-markazda** joylashgan **80S** initsiatsiya kompleksi hosil bo‘ladi. Prokariotlarda initsiator — **formilmetionin-tRNK**, 16S rRNK mRNK dagi **Shayn–Dalgarno** ketma-ketligini taniydi.
+s4246	**Elongatsiya** — har bir kodon uchun takrorlanuvchi uch qadam:
+s4247	Navbatdagi aminoatsil-tRNK eEF1α-GTF bilan **A-markazga** keladi (antikodon kodonga mos kelsa, GTF gidrolizlanadi).
+s4248	**Peptidiltransferaza** P-markazdagi peptidni A-markazdagi aminokislotaning amin guruhiga ko‘chiradi — peptid bog‘i hosil bo‘ladi. Bu faollik 60S subbirlikning **28S rRNK** siga xos (**ribozim**; prokariotlarda 23S rRNK).
+s4249	**Translokatsiya** — eEF2-GTF ta’sirida ribosoma mRNK bo‘ylab bitta kodonga siljiydi; peptidil-tRNK P-markazga, bo‘sh tRNK E-markazga o‘tib ajraladi. Har bir peptid bog‘i uchun **4 makroergik bog‘** sarflanadi (faollashuvda 2, elongatsiyada 2 GTF). Bitta mRNK ni bir vaqtda ko‘plab ribosomalar o‘qiydi — **polisoma**.
+s4250	**Terminatsiya:** A-markazga stop-kodon kelganda tRNK o‘rniga **relizing-omillar** (eRF1, eRF3-GTF) bog‘lanadi; peptidiltransferaza peptidni suvga ko‘chiradi (gidroliz), polipeptid ajraladi, ribosoma subbirliklarga ajraladi.
+s4251	4. Posttranslyatsion modifikatsiya va oqsillarning manzilga yetkazilishi
+s4252	**Taxlanish (folding):** polipeptid ko‘pincha o‘z-o‘zidan to‘g‘ri konformatsiyaga keladi; **shaperonlar** (issiqlik shoki oqsillari — Hsp70, Hsp60/shaperoninlar) noto‘g‘ri taxlanish va agregatsiyani oldini oladi. Noto‘g‘ri taxlangan oqsillar **ubikvitin–proteasoma** tizimi orqali parchalanadi. Taxlanish buzilishi — **prion kasalliklari**, Altsgeymer (β-amiloid), Parkinson (α-sinuklein), mukovistsidoz (CFTR ΔF508).
+s4253	**Manzilga yetkazish:** sekretor va membrana oqsillari N-uchidagi **signal peptid** orqali (SRP — signalni taniydigan zarracha) **donador endoplazmatik retikulumga** yo‘naltiriladi, so‘ng Golji apparatida saralanadi. Lizosoma fermentlari **mannoza-6-fosfat** belgisi bilan lizosomalarga yo‘naltiriladi (I-hujayra kasalligi — bu belgining yo‘qligi). Mitoxondriya va yadro oqsillari maxsus signal ketma-ketliklariga ega.
+s4254	Jadval 17.3. Asosiy posttranslyatsion modifikatsiyalar
+s4255	Modifikatsiya
+s4256	Misol
+s4257	Proinsulin → insulin + C-peptid; profermentlar (tripsinogen) faollashuvi; signal peptidning kesilishi
+s4258	Fosforlanish (Ser, Thr, Tyr)
+s4259	Glikogenfosforilaza, retseptor tirozinkinazalari
+s4260	Glikozillanish (N- va O-)
+s4261	Immunoglobulinlar, gormonlar, membrana oqsillari
+s4262	Gidroksillanish (Pro, Lys)
+s4263	Kollagen — askorbin kislota zarur (singa, 22-mavzu)
+s4264	γ-Karboksillanish (Glu)
+s4265	Protrombin, VII, IX, X omillari — K vitamini zarur
+s4266	Atsetillanish, metillanish
+s4267	Gistonlar (xromatin faolligi)
+s4268	Lipidlanish (prenillanish, miristillanish)
+s4269	Ras oqsillari — membranaga birikish
+s4270	Disulfid bog‘lari hosil bo‘lishi
+s4271	Insulin, immunoglobulinlar
+s4272	Ubikvitinlanish
+s4273	Proteasomada parchalash uchun belgi
+s4274	5. Oqsil sintezi ingibitorlari
+s4275	Jadval 17.4. Oqsil sintezini to‘suvchi antibiotiklar va toksinlar
+s4276	Nishon
+s4277	Streptomitsin, gentamitsin (aminoglikozidlar)
+s4278	30S
+s4279	Initsiatsiyani buzadi, kodni noto‘g‘ri o‘qishga olib keladi
+s4280	Tetratsiklinlar
+s4281	Aminoatsil-tRNK ning A-markazga bog‘lanishini to‘sadi
+s4282	Xloramfenikol (levomitsetin)
+s4283	50S
+s4284	Peptidiltransferazani ingibirlaydi (mitoxondriya ribosomalariga ham ta’sir qiladi)
+s4285	Eritromitsin, azitromitsin (makrolidlar)
+s4286	Translokatsiyani to‘sadi
+s4287	Linezolid
+s4288	Initsiatsiya kompleksi hosil bo‘lishini to‘sadi
+s4289	Puromitsin
+s4290	Prokariot va eukariot
+s4291	Aminoatsil-tRNK analogi — zanjirni muddatidan oldin uzadi
+s4292	Sikloheksimid
+s4293	Eukariot peptidiltransferazasi
+s4294	Difteriya toksini
+s4295	eEF2
+s4296	ADF-ribozillab inaktivlaydi — translokatsiya to‘xtaydi
+s4297	Ritsin (kanakunjut), shiga toksini
+s4298	60S (28S rRNK)
+s4299	Adeninni olib tashlaydi (N-glikozidaza) — ribosoma nofaol
+s4300	Antibiotiklarning **tanlab ta’siri** prokariot (70S) va eukariot (80S) ribosomalarining tuzilishidagi farqqa asoslangan. Mitoxondriyada 70S tipidagi ribosomalar bo‘lgani uchun xloramfenikol suyak ko‘migini zararlashi mumkin (aplastik anemiya; chaqaloqlarda “kul rang sindromi” — glukuronidlash yetishmovchiligi bilan).
+s4301	6. Prokariotlarda genlar ekspressiyasining boshqarilishi
+s4302	**Operon** (Jakob va Mono, 1961) — bitta promotor va operator nazoratidagi, bitta polisistron mRNK sifatida transkripsiyalanadigan struktur genlar guruhi.
+s4303	Rasm 17.2
+s4304	Laktoza operonining boshqarilishi — induksiya (Lippincott’s Illustrated Reviews: Biochemistry asosida chizilgan)
+s4305	**Laktoza operoni (induksiyalanuvchi):** struktur genlar — lacZ (β-galaktozidaza), lacY (permeaza), lacA (transatsetilaza). Laktoza bo‘lmaganda **repressor** operatorga bog‘lanib transkripsiyani to‘sadi. Laktoza (aniqrog‘i allolaktoza — **induktor**) repressorga bog‘lanib, uni operatordan ajratadi — genlar ishlaydi. **Musbat boshqarish:** glyukoza kam bo‘lsa cAMF ko‘payadi, **cAMF–CAP** kompleksi promotorga bog‘lanib transkripsiyani kuchaytiradi (katabolit repressiya — glyukoza bor bo‘lsa laktoza operoni sust ishlaydi).
+s4306	**Triptofan operoni (repressiyalanuvchi):** triptofan ko‘p bo‘lsa u **korepressor** sifatida repressorni faollashtiradi va sintez fermentlari genlari o‘chadi; qo‘shimcha — **attenuatsiya** mexanizmi.
+s4307	7. Eukariotlarda genlar ekspressiyasining boshqarilishi
+s4308	Eukariotlarda boshqarish ko‘p darajali:
+s4309	**Xromatin darajasi** — gistonlar **atsetillanishi** (gistonatsetiltransferazalar) xromatinni bo‘shatib transkripsiyani faollashtiradi, deatsetillanish o‘chiradi; **DNK metillanishi** (CpG) genni o‘chiradi — **epigenetik** boshqaruv; genomik imprinting (Prader–Villi va Angelman sindromlari).
+s4310	**Transkripsiya darajasi** — asosiy daraja: **transkripsiya omillari** promotor, **enxanserlar** (minglab juft asos uzoqlikda ham ishlaydi) va saylenserlarga bog‘lanadi. Misollar: **steroid gormon retseptorlari** — gormon bilan birikib DNK dagi gormonga javob elementlariga (GRE) bog‘lanadi; cAMF → PKA → **CREB**; metallar → metallotioneinlar geni; gipoksiya → HIF-1 → eritropoetin geni.
+s4311	**Gen amplifikatsiyasi** — gen nusxalari sonining oshishi (o‘smalarda HER2, MYC; metotreksatga chidamlilikda digidrofolatreduktaza geni).
+s4312	**Gen qayta tuzilishi** — immunoglobulin genlarining V(D)J-rekombinatsiyasi.
+s4313	**Posttranskripsion daraja** — alternativ splaysing, RNK tahriri, mRNK barqarorligi (transferrin retseptori mRNK si — temir bilan boshqariladi, 21-mavzu), **mikroRNK** va siRNK (RNK-interferensiya) mRNK ni parchalaydi yoki translyatsiyani to‘xtatadi.
+s4314	**Translyatsiya darajasi** — eIF2 fosforlanishi (stress, gem yetishmasligida retikulotsitlarda globin sintezi to‘xtaydi); ferritin mRNK sining temirga bog‘liq translyatsiyasi (IRE/IRP).
+s4315	**Posttranslyatsion daraja** — fosforlanish, proteoliz, ubikvitinlanib parchalanish. **Hujayra differensirovkasi:** barcha somatik hujayralarda genom bir xil, ammo har bir hujayra turida genlarning faqat ma’lum to‘plami ifodalanadi (eritrotsit prekursorlarida globin, β-hujayralarda insulin). Bu **tanlab ekspressiya** to‘qimaga xos transkripsiya omillari va epigenetik belgilar bilan ta’minlanadi; ontogenezda **gomeozis (HOX) genlari** tana rejasini belgilaydi. Masalan, homila gemoglobini (HbF) dan kattalar gemoglobiniga (HbA) o‘tish — γ-globin genining o‘chib, β-globin genining yoqilishi.
+s4316	**Gidroksimochevina** o‘roqsimon hujayrali anemiyada γ-globin genining ekspressiyasini qayta faollashtirib, HbF miqdorini oshiradi — HbF HbS polimerlanishini kamaytiradi.
+s4317	1-ish: genetik kod jadvali yordamida translyatsiya masalalarini yechish
+s4318	Berilgan mRNK ketma-ketligida birinchi AUG kodonini toping — o‘qish ramkasi boshlanadi.
+s4319	Kodonlarni uchtadan ajrating va jadvaldan aminokislotalarni aniqlang.
+s4320	Stop-kodongacha davom eting. **Misol:** 5’-GCC **AUG** UUU GGC UGG AAA UAG CC-3’ → Met–Phe–Gly–Trp–Lys (UAG — stop).
+s4321	2-ish: mutatsiyaning oqsilga ta’sirini aniqlash
+s4322	Normal va mutant ketma-ketlikni solishtiring.
+s4323	Mutatsiya turini aniqlang: almashtirish (missens, nonsens, sinonim), qo‘shilish yoki yo‘qolish (ramka siljishi).
+s4324	Oqsil tuzilishiga ta’sirini bashorat qiling. **Misol:** β-globin geni 6-kodoni GAG → GUG: glutamat → valin (missens) — HbS (o‘roqsimon hujayrali anemiya). Bitta nukleotidning yo‘qolishi o‘qish ramkasini siljitadi — keyingi barcha aminokislotalar o‘zgaradi, ko‘pincha muddatidan oldin stop-kodon paydo bo‘ladi.
+s4325	3-ish: oqsil sintezi ingibitorlari ta’sirini solishtirish (jadval bilan ishlash)
+s4326	Har bir antibiotikning nishonini (30S, 50S, 80S, eEF2) jadvalga yozing.
+s4327	Odamga toksikligini va sababini (mitoxondriya ribosomalari, eukariot ribosomalariga ta’sir) belgilang. **Natija va tahlil:** prokariot ribosomalariga tanlab ta’sir qiluvchi moddalar antibiotik sifatida ishlatiladi; eukariot ribosomalarini to‘suvchilar (sikloheksimid, ritsin, difteriya toksini) odam uchun zaharli.
+s4328	Ko‘nikma: DNK dan oqsilgacha axborot oqimini bosqichma-bosqich yozish
+s4329	DNK kodlovchi zanjiridan matritsa zanjirini yozing.
+s4330	Matritsa bo‘yicha mRNK ni yozing (T → U).
+s4331	mRNK da start-kodonni toping va kodonlarga ajrating.
+s4332	Genetik kod jadvalidan peptid ketma-ketligini yozing.
+s4333	tRNK antikodonlarini (kodonga komplementar va antiparallel) ko‘rsating.
+s4334	Ko‘nikma: antibiotik ta’sirini bakteriya va odam hujayrasi uchun baholash
+s4335	Antibiotik qaysi jarayonni (replikatsiya, transkripsiya, translyatsiya, hujayra devori) to‘sishini aniqlang.
+s4336	Nishon tuzilmaning prokariot va eukariotlardagi farqini ko‘rsating.
+s4337	Mitoxondriyaga ta’sir ehtimolini va nojo‘ya ta’sirlarni (ototoksiklik, aplastik anemiya, tishlarning rangi o‘zgarishi) ayting.
+s4338	Genetik kod nima? Uning xossalarini sanang.
+s4339	Start va stop-kodonlarni ayting.
+s4340	tRNK tuzilishi qanday va uning vazifasi nima?
+s4341	Aminoatsil-tRNK-sintetazalarning roli qanday?
+s4342	Prokariot va eukariot ribosomalarining farqi nimada?
+s4343	Translyatsiyaning initsiatsiya bosqichini tavsiflang.
+s4344	Elongatsiya qanday qadamlardan iborat?
+s4345	Peptid bog‘i hosil bo‘lishini qaysi ferment katalizlaydi?
+s4346	Translyatsiya terminatsiyasi qanday kechadi?
+s4347	Bitta peptid bog‘i hosil bo‘lishiga qancha energiya sarflanadi?
+s4348	Asosiy posttranslyatsion modifikatsiyalarni misollar bilan ayting.
+s4349	Shaperonlar va proteasomaning vazifasi qanday?
+s4350	Oqsil sintezini to‘suvchi antibiotiklar va toksinlarni sanang.
+s4351	Laktoza operoni qanday boshqariladi?
+s4352	Eukariotlarda genlar ekspressiyasi qaysi darajalarda boshqariladi?
+s4353	Genetik kodning “aynigan” xossasi nimani bildiradi?
+s4354	Bitta kodon bir nechta aminokislotani kodlaydi
+s4355	Kodonlar ustma-ust tushadi
+s4356	Bitta aminokislotani bir necha kodon kodlaydi
+s4357	Kod barcha organizmlarda bir xil
+s4358	Kodonlar orasida vergul bor
+s4359	Qaysi kodon start-kodon hisoblanadi?
+s4360	UAA
+s4361	AUG
+s4362	UGA
+s4363	UAG
+s4364	GUG
+s4365	Aminokislota tRNK ning qaysi qismiga biriktiriladi?
+s4366	Antikodon halqasiga
+s4367	D-halqaga
+s4368	TψC-halqaga
+s4369	5’-uchiga
+s4370	3’-uchidagi CCA ga
+s4371	Eukariot ribosomasining kichik subbirligi qaysi?
+s4372	40S
+s4373	60S
+s4374	Peptidiltransferaza faolligi eukariotlarda nimaga xos?
+s4375	eEF1 oqsiliga
+s4376	eEF2 oqsiliga
+s4377	18S rRNK ga
+s4378	28S rRNK ga
+s4379	Aminoatsil-tRNK-sintetazaga
+s4380	Translokatsiyada qaysi omil ishtirok etadi?
+s4381	eIF4E
+s4382	eRF1
+s4383	eEF1α
+s4384	CAP
+s4385	Difteriya toksinining ta’sir mexanizmi qanday?
+s4386	eEF2 ni ADF-ribozillaydi
+s4387	28S rRNK dan adeninni olib tashlaydi
+s4388	30S subbirlikka bog‘lanadi
+s4389	Peptidiltransferazani ingibirlaydi
+s4390	RNK-polimeraza II ni to‘sadi
+s4391	Tetratsiklinlar qanday ta’sir qiladi?
+s4392	Zanjirni muddatidan oldin uzadi
+s4393	eEF2 ni inaktivlaydi
+s4394	Kollagendagi prolin va lizinning gidroksillanishi uchun qaysi vitamin zarur?
+s4395	K vitamini
+s4396	B12 vitamini
+s4397	A vitamini
+s4398	D vitamini
+s4399	Laktoza operonida induktor vazifasini nima bajaradi?
+s4400	Allolaktoza
+s4401	Repressor
+s4402	Glyukoza ko‘p bo‘lganda laktoza operonining sust ishlashi qanday ataladi?
+s4403	Attenuatsiya
+s4404	Katabolit repressiya
+s4405	Amplifikatsiya
+s4406	Imprinting
+s4407	Gistonlarning atsetillanishi gen ekspressiyasiga qanday ta’sir qiladi?
+s4408	Genni butunlay o‘chiradi
+s4409	DNK ni metillaydi
+s4410	Splaysingni to‘xtatadi
+s4411	Xromatinni bo‘shatib transkripsiyani faollashtiradi
+s4412	Qaysi antibiotik mitoxondriya ribosomalariga ta’sir qilib aplastik anemiya chaqirishi mumkin?
+s4413	Penitsillin
+s4414	Siprofloksatsin
+s4415	Xloramfenikol
+s4416	Eukariotlarda mRNK ni parchalaydigan yoki translyatsiyasini to‘xtatadigan kichik RNK lar qaysi?
+s4417	MikroRNK
+s4418	tRNK
+s4419	rRNK
+s4420	snRNK
+s4421	Telomeraza RNK si
+s4422	β-globin genida GAG → GUG almashinuvi qanday mutatsiya hisoblanadi?
+s4423	Nonsens
+s4424	Ramka siljishi
+s4425	Missens
+s4426	Sinonim (jim)
+s4427	Delesiya
+s4428	Emlanmagan 6 yoshli bolada isitma, tomoq og‘rig‘i, bodomcha bezlarida kulrang, qiyin ko‘chadigan parda, bo‘yin shishi aniqlandi. Bir haftadan keyin yurak ritmi buzildi (miokardit).
+s4429	Qanday kasallik? Toksinning molekular ta’sir mexanizmi qanday? Nima uchun yurak zararlanadi?

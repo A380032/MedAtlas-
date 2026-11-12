@@ -1,156 +1,161 @@
-s7354 After a head injury a patient is passing 9 l of colorless urine per day and has intense thirst. Urine specific gravity 1.002, osmolality 90 mOsm/kg; blood Na+ 152 mmol/l, osmolality 305 mOsm/kg, glucose 5.1 mmol/l. After desmopressin was given, the urine volume fell sharply and the specific gravity rose to 1.018.
-s7355 What is the diagnosis? Why is the urine dilute? What does the desmopressin test show?
-s7356 Central (hypothalamic–pituitary) diabetes insipidus — the synthesis or secretion of vasopressin is impaired because of the injury. Without vasopressin the V2 receptor → cAMP → aquaporin-2 pathway in the collecting ducts does not work and water is not reabsorbed — a large amount of low-osmolality urine is excreted; the water loss raises plasma osmolality and Na+ and stimulates the thirst center. Glucose is normal (not diabetes mellitus). The response to the synthetic vasopressin analog desmopressin (concentration of the urine) shows that the renal receptors are preserved and the defect is central; in nephrogenic diabetes insipidus there is no response. Treatment — desmopressin.
-s7357 Insulin secretion
-s7358 Glucose → ATP ↑ → KATP closes → Ca2+ → exocytosis; C-peptide
-s7359 Insulin signaling
-s7360 IRS → PI3K/Akt (GLUT4, glycogen, lipolysis ↓); Ras-MAPK
-s7361 Contrainsular hormones
-s7362 Glucagon, epinephrine, cortisol, somatotropin, thyroid hormones
-s7363 Diagnosis of diabetes
-s7364 Fasting ≥ 7.0; GTT at 2 hours ≥ 11.1; HbA1c ≥ 6.5%
-s7365 NIS, thyroperoxidase, thyroglobulin; T4 → T3 (deiodinase, Se)
-s7366 Effects
-s7367 Basal metabolism ↑, growth, brain development
-s7368 Endemic goiter
-s7369 Iodine ↓ → T4 ↓ → TSH ↑ → hyperplasia; iodized salt
-s7370 Calcium regulation
-s7371 PTH (Ca ↑, P ↓), calcitriol (Ca ↑, P ↑), calcitonin (Ca ↓)
-s7372 Rickets
-s7373 Vit. D ↓ → phosphate ↓, ALP ↑↑, PTH ↑; prophylaxis 400–500 IU/day
-s7374 Water–salt balance
-s7375 Vasopressin (AQP2), RAAS (angiotensin II, aldosterone), ANP
-s7376 Insulin ELISA
-s7377 “Sandwich”, peroxidase, 450 nm; HOMA-IR > 2.7 — resistance
-s7378 Biochemistry of the kidney. Normal and pathological components of urine
-s7379 To give the student knowledge of the mechanism of urine formation (filtration, reabsorption, secretion), the role of the kidneys in maintaining acid–base balance, the specific features of metabolism and energy supply in the kidney, the endocrine functions of the kidney, the general properties of urine and their age-related features, the normal and pathological chemical composition of urine, and the formation and prevention of kidney stones.
-s7380 the mechanisms of glomerular filtration and tubular reabsorption and secretion;
-s7381 the pathways by which the kidney excretes H+ and regenerates bicarbonate (ammoniagenesis);
-s7382 the features of metabolism and energy supply in renal tissue;
-s7383 the endocrine functions of the kidney (renin, erythropoietin, calcitriol);
-s7384 the physical properties and normal chemical composition of urine;
-s7385 pathological components (protein, glucose, ketone bodies, bilirubin, blood) and their diagnostic importance;
-s7386 the types of kidney stones and the biochemical basis of their prevention. **The student should be able to:**
-s7387 detect normal and pathological components of urine with test strips;
-s7388 calculate the GFR from creatinine;
-s7389 interpret the results of urinalysis.
-s7390 1. Mechanism of urine formation
-s7391 ≈ 1.2 l of blood passes through the kidneys per minute (≈ 20–25% of the cardiac output). Each kidney has ≈ 1 million **nephrons**.
-s7392 Figure 29.1
-s7393 The main functions of the parts of the nephron (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
-s7394 **1. Glomerular filtration** — under hydrostatic pressure, plasma passes through the glomerular filter (fenestrated endothelium, basement membrane — type IV collagen, negatively charged heparan sulfate, podocytes). Substances with a molecular mass < 60–70 kDa that are not negatively charged pass through the filter; albumin (66 kDa, negative charge) hardly passes. **Primary urine** is ≈ 180 l per day — its composition is close to that of protein-free plasma. The **glomerular filtration rate (GFR)** is 90–120 ml/min/1.73 m^2^; it is the main indicator of kidney function.
-s7395 **2. Tubular reabsorption** — ≈ 99% of the filtrate is reabsorbed:
-s7396 **proximal tubule** — glucose (**SGLT2**, SGLT1; completely), amino acids, ≈ 65% of Na+ and water, HCO~3~^−^ (≈ 80%), K+, phosphate, urate, small proteins (endocytosis — megalin, cubilin), vitamins; the energy comes from Na+,K+-ATPase;
-s7397 **loop of Henle** — in the descending limb water, in the ascending limb Na+, K+ and 2Cl- via **NKCC2** (the target of furosemide); the countercurrent mechanism creates an osmotic gradient in the renal medulla (urea also contributes);
-s7398 **distal tubule** — NaCl (**NCC**, the target of thiazides), Ca2+ (PTH);
-s7399 **collecting ducts** — Na+ (ENaC, aldosterone), water (**aquaporin-2**, vasopressin). **Renal threshold:** when the maximum capacity of the transporters is exceeded, the substance passes into the urine — for glucose ≈ 8.9–10 mmol/l in the blood. **SGLT2 inhibitors** (dapagliflozin, empagliflozin) deliberately increase glucosuria, treating type 2 diabetes and protecting the heart and kidneys.
-s7400 **3. Secretion** — active transport from the blood into the tubular lumen: H+, K+, NH3, organic anions (urate, para-aminohippurate, penicillin, diuretics — OAT transporters) and cations (creatinine partly, metformin — OCT2).
-s7401 **Clearance** is the volume of plasma completely cleared of a substance in 1 minute: C = (U × V) / P (U — concentration in urine, P — concentration in plasma, V — urine flow per minute). Inulin clearance = GFR; para-aminohippurate clearance — renal plasma flow. In practice GFR is estimated from **creatinine** (the CKD-EPI formula; age and sex are taken into account) or from **cystatin C**.
-s7402 2. The role of the kidneys in acid–base balance
-s7403 ≈ 50–100 mmol of nonvolatile acids (sulfuric acid from sulfur-containing amino acids, phosphoric acid, organic acids) are formed in the body per day; only the kidneys can excrete them (the lungs excrete only CO2).
-s7404 Figure 29.2
-s7405 H+ excretion and bicarbonate regeneration in the kidney (drawn after Severin E.S.)
-s7406 In the tubular cells **carbonic anhydrase** forms H2CO3; H+ is secreted into the urine (Na+/H+ exchanger NHE3 — proximal; H+-ATPase and H+,K+-ATPase — intercalated cells of the collecting ducts), and HCO~3~^−^ passes into the blood. In the urine H+ is bound in three ways:
-s7407 **Reabsorption of filtered bicarbonate** — H+ + HCO3 - → H2CO3 → CO2 + H2O (brush-border carbonic anhydrase); CO2 enters the cell.
-s7408 **Titratable acids** — H+ is bound mainly by the phosphate buffer: HPO4 2- + H+ → H2PO4 - (≈ 10–30 mmol per day).
-s7409 **Ammoniagenesis** (the main adaptive mechanism) — in the proximal tubules **glutamine** → **glutaminase** → glutamate + NH3 → (glutamate dehydrogenase) α-ketoglutarate + NH3; NH3 binds H+ and is excreted as **NH~4~^+^** (≈ 30–50 mmol per day, up to 300 mmol in acidosis). α-Ketoglutarate is used in gluconeogenesis, and **new HCO~3~^-^** is formed. Urine pH is normally 5.0–7.0 (on average ≈ 6.0); acidic with a meat diet, alkaline with a plant and dairy diet.
-s7410 **Renal tubular acidosis:** type I (distal) — H+ secretion is impaired, urine pH > 5.5, nephrocalcinosis and stones; type II (proximal) — HCO~3~^−^ reabsorption is impaired (together with Fanconi syndrome: glucosuria, aminoaciduria, phosphaturia); type IV — aldosterone deficiency or resistance, hyperkalemia.
-s7411 3. Specific features of metabolism and energy supply in the kidney
-s7412 The kidneys make up ≈ 0.5% of body weight but consume ≈ 10% of the body's oxygen; ≈ 70–80% of the energy is spent on the work of **Na^+^,K^+^-ATPase** (which drives secondary active transport).
-s7413 **Cortex** (proximal tubules) — aerobic; energy sources: **fatty acids**, ketone bodies, lactate, glutamine, citrate; many mitochondria; little glycolysis.
-s7414 **Medulla** — little oxygen, **anaerobic glycolysis** predominates (glucose is the main source) — very sensitive to ischemia (papillary necrosis).
-s7415 The kidney is an organ of **gluconeogenesis** (second after the liver; in prolonged fasting and acidosis up to 40% of blood glucose); substrates — glutamine, lactate, glycerol.
-s7416 Amino acid metabolism: **the first step of creatine synthesis** (guanidinoacetate), synthesis of **arginine** from citrulline, metabolism of glycine and serine.
-s7417 Small proteins and peptide hormones (insulin, PTH, β2-microglobulin) are reabsorbed in the tubules and degraded in lysosomes — in kidney failure the insulin requirement decreases. **Endocrine functions of the kidney: renin** (RAAS, topic 28), **erythropoietin** (in hypoxia — HIF; anemia in kidney failure), **calcitriol** (1α-hydroxylase), prostaglandins (vasodilation), kinins (kallikrein), urodilatin.
-s7418 **The role of the kidneys in calcium, phosphorus and bicarbonate metabolism:** ≈ 98% of Ca2+ is reabsorbed (in the distal part it is regulated by PTH and calcitriol); phosphate — in the proximal tubule via NaPi-IIa (PTH and FGF-23 reduce it); bicarbonate — reabsorption and formation of new bicarbonate. **In chronic kidney disease:** phosphate is retained and calcitriol decreases → hypocalcemia → secondary hyperparathyroidism → renal osteodystrophy; metabolic acidosis (excretion of NH~4~^+^ decreases); anemia (low erythropoietin); hyperkalemia; uremia — urea, creatinine and “uremic toxins” (indoxyl sulfate, p-cresyl sulfate, guanidines) accumulate.
-s7419 4. General properties of urine and their age-related features
-s7420 Table 29.1. Physical properties of urine (in adults)
-s7421 Changes
-s7422 Daily volume (diuresis)
-s7423 1.0–2.0 l (≈ 75% of the fluid drunk)
-s7424 Polyuria > 2 l (diabetes mellitus and insipidus); oliguria < 0.5 l; anuria < 0.1 l
-s7425 Color
-s7426 Straw-yellow (urochrome, urobilin)
-s7427 Dark brown — bilirubin; red — blood, hemoglobin, myoglobin, beetroot; colorless — polyuria
-s7428 Clarity
-s7429 Clear
-s7430 Turbid — salts, leukocytes, bacteria
-s7431 Specific gravity
-s7432 High — glucosuria, proteinuria, dehydration; low (< 1.005) — diabetes insipidus; fixed at 1.010 (isosthenuria) — kidney failure
-s7433 50–1200 mOsm/kg
-s7434 Alkaline — plant diet, urinary tract infection (urease), type I tubular acidosis
-s7435 Odor
-s7436 Characteristic, faint
-s7437 Acetone (ketosis), ammonia (infection), “mousy” (phenylketonuria), “maple syrup” (leucinosis)
-s7438 **Age-related features:** in newborns there is oliguria in the first days, a low specific gravity (1.002–1.006 — the concentrating ability is immature), physiological proteinuria and the “uric acid infarct” (topic 14); the daily diuresis is approximately: up to 1 year 300–600 ml, ≈ 900 ml at 5 years, ≈ 1200 ml at 10 years; creatinine excretion increases with muscle mass. In the elderly GFR decreases by ≈ 1 ml/min per year, the concentrating ability declines, and nocturia appears.
-s7439 5. Chemical composition of urine
-s7440 ≈ 50–70 g of dry matter is excreted in the urine per day.
-s7441 Table 29.2. The main organic and inorganic components of urine (daily)
-s7442 330–580 mmol (20–35 g)
-s7443 ≈ 85–90% of nitrogen; depends on protein intake and catabolism
-s7444 Men 8.8–17.7, women 7.1–15.9 mmol
-s7445 Proportional to muscle mass, constant
-s7446 1.5–4.5 mmol
-s7447 Purine metabolism
-s7448 Ammonia (NH~4~^+^)
-s7449 30–50 mmol
-s7450 Depends on acid–base status
-s7451 0.4–1.0 g
-s7452 Rich in glycine and histidine
-s7453 Hippuric acid, indican
-s7454 Small amounts
-s7455 Detoxification products (topic 26)
-s7456 Urobilin(ogen)
-s7457 1–4 mg
-s7458 Bilirubin metabolism
-s7459 17-Ketosteroids, catecholamine metabolites
-s7460 In mg amounts
-s7461 Hormone metabolism
-s7462 100–260 mmol
-s7463 Depends on dietary salt
-s7464 K+
-s7465 35–90 mmol
-s7466 110–250 mmol
-s7467 2.5–7.5 mmol
-s7468 Phosphates
-s7469 13–42 mmol
-s7470 Sulfates
-s7471 ≈ 20 mmol
-s7472 From sulfur-containing amino acids
-s7473 6. Pathological components of urine
-s7474 **Proteinuria** — urine protein > 150 mg/day (in a healthy person albumin < 30 mg/day).
-s7475 **Glomerular** — damage to the filter (glomerulonephritis, **diabetic nephropathy**, amyloidosis): selective (albumin) or nonselective (large proteins as well); **nephrotic syndrome** — > 3.5 g/day, hypoalbuminemia, edema, hyperlipidemia (topic 20).
-s7476 **Tubular** — small proteins (β2-microglobulin, α1-microglobulin, retinol-binding protein) are not reabsorbed: pyelonephritis, heavy metals, nephrotoxic drugs.
-s7477 **Overflow (prerenal)** — many small proteins in the blood: **Bence Jones protein** (myeloma), myoglobin (rhabdomyolysis), hemoglobin (intravascular hemolysis).
-s7478 **Postrenal** — inflammation of the urinary tract, blood.
-s7479 **Functional** — physical exertion, fever, orthostatic (in adolescents).
-s7480 **Microalbuminuria** (albumin 30–300 mg/day or an albumin/creatinine ratio of 3–30 mg/mmol) is the earliest sign of **diabetic nephropathy** and an indicator of cardiovascular risk; it is checked every year in diabetes mellitus and hypertension. Ordinary test strips do not detect it.
-s7481 **Glucosuria** — when blood glucose exceeds the renal threshold (diabetes mellitus, steroids, stress) or when the threshold is lowered (**renal glucosuria** — SGLT2 gene mutation, pregnancy, Fanconi syndrome, SGLT2 inhibitors).
-s7482 **Ketonuria** — acetoacetate and acetone: decompensated diabetes mellitus, starvation, repeated vomiting (hyperemesis of pregnancy), ketogenic diet, acetonemic vomiting in children, alcoholic ketoacidosis.
-s7483 **Bilirubinuria** (conjugated only) — hepatocellular and obstructive jaundice; **urobilinogenuria** — hemolytic and hepatocellular jaundice (topic 25).
-s7484 **Hematuria** (erythrocytes — glomerulonephritis, stones, tumors, infection), **hemoglobinuria** (intravascular hemolysis: G6PD deficiency, incompatible blood transfusion, burns), **myoglobinuria** (rhabdomyolysis) — the “blood” zone of the test strip is positive in all three (peroxidase activity of heme); microscopy is needed to distinguish them.
-s7485 **Leukocyturia and nitrites** — urinary tract infection: gram-negative bacteria (E. coli) reduce nitrates to nitrites.
-s7486 **Other pathological components:** phenylpyruvate (phenylketonuria — green color with FeCl3), homogentisic acid (alkaptonuria — the urine darkens in air), porphyrins and porphobilinogen (porphyrias), cystine, aminoaciduria (Fanconi, Hartnup disease), oxalates, orotic acid (topic 14), GAGs (mucopolysaccharidoses), 5-hydroxyindoleacetic acid (carcinoid tumor), vanillylmandelic acid (pheochromocytoma), hCG (pregnancy).
-s7487 7. Kidney stones and the biochemical basis of their prevention
-s7488 Stone formation results from **supersaturation** of the urine with salts, a lack of crystallization inhibitors (citrate, Mg2+, Tamm–Horsfall protein, nephrocalcin, GAGs) and impaired urine flow.
-s7489 Table 29.3. Types of kidney stones
-s7490 Stone
-s7491 Proportion
-s7492 Causes and risk factors
-s7493 Prevention
-s7494 Calcium oxalate
-s7495 Hypercalciuria, hyperoxaluria (spinach, rhubarb, chocolate, tea; increased oxalate absorption in intestinal diseases; hereditary — glyoxylate metabolism), hypocitraturia, low water intake
-s7496 Plenty of fluids (> 2–2.5 l of urine), oxalate restriction, normal calcium intake (binds oxalate in the intestine), salt restriction, potassium citrate, thiazides (in hypercalciuria)
-s7497 Calcium phosphate
-s7498 Alkaline urine, hyperparathyroidism, type I tubular acidosis
-s7499 Elimination of the cause
-s7500 Urate (uric acid)
-s7501 Hyperuricosuria (gout, chemotherapy of tumors), persistently acidic urine (pH < 5.5), metabolic syndrome
-s7502 Alkalinization of the urine (potassium citrate, pH 6.5–7), allopurinol, purine restriction — urate stones dissolve
-s7503 Struvite (magnesium ammonium phosphate)
-s7504 Infection with urease-producing bacteria (Proteus): urea → NH3 → alkaline urine; “staghorn” stones
-s7505 Treatment of the infection, removal of the stone
-s7506 Cystine
-s7507 Cystinuria — hereditary; reabsorption of the dibasic amino acids (cystine, ornithine, arginine, lysine — “COAL”) is impaired; cystine is poorly soluble (hexagonal crystals)
-s7508 Plenty of fluids, alkalinization, thiol drugs (tiopronin)
-s7509 Experiment 1: detection of the normal and pathological components of urine with test strips
+s7357 Central (hypothalamic–pituitary) diabetes insipidus — the synthesis or secretion of vasopressin is impaired because of the injury. Without vasopressin the V2 receptor → cAMP → aquaporin-2 pathway in the collecting ducts does not work and water is not reabsorbed — a large amount of low-osmolality urine is excreted; the water loss raises plasma osmolality and Na+ and stimulates the thirst center. Glucose is normal (not diabetes mellitus). The response to the synthetic vasopressin analog desmopressin (concentration of the urine) shows that the renal receptors are preserved and the defect is central; in nephrogenic diabetes insipidus there is no response. Treatment — desmopressin.
+s7358 Insulin secretion
+s7359 Glucose → ATP ↑ → KATP closes → Ca2+ → exocytosis; C-peptide
+s7360 Insulin signaling
+s7361 IRS → PI3K/Akt (GLUT4, glycogen, lipolysis ↓); Ras-MAPK
+s7362 Contrainsular hormones
+s7363 Glucagon, epinephrine, cortisol, somatotropin, thyroid hormones
+s7364 Diagnosis of diabetes
+s7365 Fasting ≥ 7.0; GTT at 2 hours ≥ 11.1; HbA1c ≥ 6.5%
+s7366 NIS, thyroperoxidase, thyroglobulin; T4 → T3 (deiodinase, Se)
+s7367 Effects
+s7368 Basal metabolism ↑, growth, brain development
+s7369 Endemic goiter
+s7370 Iodine ↓ → T4 ↓ → TSH ↑ → hyperplasia; iodized salt
+s7371 Calcium regulation
+s7372 PTH (Ca ↑, P ↓), calcitriol (Ca ↑, P ↑), calcitonin (Ca ↓)
+s7373 Rickets
+s7374 Vit. D ↓ → phosphate ↓, ALP ↑↑, PTH ↑; prophylaxis 400–500 IU/day
+s7375 Water–salt balance
+s7376 Vasopressin (AQP2), RAAS (angiotensin II, aldosterone), ANP
+s7377 Insulin ELISA
+s7378 “Sandwich”, peroxidase, 450 nm; HOMA-IR > 2.7 — resistance
+s7379 Biochemistry of the kidney. Normal and pathological components of urine
+s7380 To give the student knowledge of the mechanism of urine formation (filtration, reabsorption, secretion), the role of the kidneys in maintaining acid–base balance, the specific features of metabolism and energy supply in the kidney, the endocrine functions of the kidney, the general properties of urine and their age-related features, the normal and pathological chemical composition of urine, and the formation and prevention of kidney stones.
+s7381 the mechanisms of glomerular filtration and tubular reabsorption and secretion;
+s7382 the pathways by which the kidney excretes H+ and regenerates bicarbonate (ammoniagenesis);
+s7383 the features of metabolism and energy supply in renal tissue;
+s7384 the endocrine functions of the kidney (renin, erythropoietin, calcitriol);
+s7385 the physical properties and normal chemical composition of urine;
+s7386 pathological components (protein, glucose, ketone bodies, bilirubin, blood) and their diagnostic importance;
+s7387 the types of kidney stones and the biochemical basis of their prevention.
+s7388 detect normal and pathological components of urine with test strips;
+s7389 calculate the GFR from creatinine;
+s7390 interpret the results of urinalysis.
+s7391 1. Mechanism of urine formation
+s7392 ≈ 1.2 l of blood passes through the kidneys per minute (≈ 20–25% of the cardiac output). Each kidney has ≈ 1 million **nephrons**.
+s7393 Figure 29.1
+s7394 The main functions of the parts of the nephron (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
+s7395 **1. Glomerular filtration** — under hydrostatic pressure, plasma passes through the glomerular filter (fenestrated endothelium, basement membrane — type IV collagen, negatively charged heparan sulfate, podocytes). Substances with a molecular mass < 60–70 kDa that are not negatively charged pass through the filter; albumin (66 kDa, negative charge) hardly passes. **Primary urine** is ≈ 180 l per day — its composition is close to that of protein-free plasma. The **glomerular filtration rate (GFR)** is 90–120 ml/min/1.73 m^2^; it is the main indicator of kidney function.
+s7396 **2. Tubular reabsorption** — ≈ 99% of the filtrate is reabsorbed:
+s7397 **proximal tubule** — glucose (**SGLT2**, SGLT1; completely), amino acids, ≈ 65% of Na+ and water, HCO~3~^−^ (≈ 80%), K+, phosphate, urate, small proteins (endocytosis — megalin, cubilin), vitamins; the energy comes from Na+,K+-ATPase;
+s7398 **loop of Henle** — in the descending limb water, in the ascending limb Na+, K+ and 2Cl- via **NKCC2** (the target of furosemide); the countercurrent mechanism creates an osmotic gradient in the renal medulla (urea also contributes);
+s7399 **distal tubule** — NaCl (**NCC**, the target of thiazides), Ca2+ (PTH);
+s7400 **collecting ducts** — Na+ (ENaC, aldosterone), water (**aquaporin-2**, vasopressin). **Renal threshold:** when the maximum capacity of the transporters is exceeded, the substance passes into the urine — for glucose ≈ 8.9–10 mmol/l in the blood. **SGLT2 inhibitors** (dapagliflozin, empagliflozin) deliberately increase glucosuria, treating type 2 diabetes and protecting the heart and kidneys.
+s7401 **3. Secretion** — active transport from the blood into the tubular lumen: H+, K+, NH3, organic anions (urate, para-aminohippurate, penicillin, diuretics — OAT transporters) and cations (creatinine partly, metformin — OCT2).
+s7402 **Clearance** is the volume of plasma completely cleared of a substance in 1 minute: C = (U × V) / P (U — concentration in urine, P — concentration in plasma, V — urine flow per minute). Inulin clearance = GFR; para-aminohippurate clearance — renal plasma flow. In practice GFR is estimated from **creatinine** (the CKD-EPI formula; age and sex are taken into account) or from **cystatin C**.
+s7403 2. The role of the kidneys in acid–base balance
+s7404 ≈ 50–100 mmol of nonvolatile acids (sulfuric acid from sulfur-containing amino acids, phosphoric acid, organic acids) are formed in the body per day; only the kidneys can excrete them (the lungs excrete only CO2).
+s7405 Figure 29.2
+s7406 H+ excretion and bicarbonate regeneration in the kidney (drawn after Severin E.S.)
+s7407 In the tubular cells **carbonic anhydrase** forms H2CO3; H+ is secreted into the urine (Na+/H+ exchanger NHE3 — proximal; H+-ATPase and H+,K+-ATPase — intercalated cells of the collecting ducts), and HCO~3~^−^ passes into the blood. In the urine H+ is bound in three ways:
+s7408 **Reabsorption of filtered bicarbonate** — H+ + HCO3 - → H2CO3 → CO2 + H2O (brush-border carbonic anhydrase); CO2 enters the cell.
+s7409 **Titratable acids** — H+ is bound mainly by the phosphate buffer: HPO4 2- + H+ → H2PO4 - (≈ 10–30 mmol per day).
+s7410 **Ammoniagenesis** (the main adaptive mechanism) — in the proximal tubules **glutamine** → **glutaminase** → glutamate + NH3 → (glutamate dehydrogenase) α-ketoglutarate + NH3; NH3 binds H+ and is excreted as **NH~4~^+^** (≈ 30–50 mmol per day, up to 300 mmol in acidosis). α-Ketoglutarate is used in gluconeogenesis, and **new HCO~3~^-^** is formed. Urine pH is normally 5.0–7.0 (on average ≈ 6.0); acidic with a meat diet, alkaline with a plant and dairy diet.
+s7411 **Renal tubular acidosis:** type I (distal) — H+ secretion is impaired, urine pH > 5.5, nephrocalcinosis and stones; type II (proximal) — HCO~3~^−^ reabsorption is impaired (together with Fanconi syndrome: glucosuria, aminoaciduria, phosphaturia); type IV — aldosterone deficiency or resistance, hyperkalemia.
+s7412 3. Specific features of metabolism and energy supply in the kidney
+s7413 The kidneys make up ≈ 0.5% of body weight but consume ≈ 10% of the body's oxygen; ≈ 70–80% of the energy is spent on the work of **Na^+^,K^+^-ATPase** (which drives secondary active transport).
+s7414 **Cortex** (proximal tubules) — aerobic; energy sources: **fatty acids**, ketone bodies, lactate, glutamine, citrate; many mitochondria; little glycolysis.
+s7415 **Medulla** — little oxygen, **anaerobic glycolysis** predominates (glucose is the main source) — very sensitive to ischemia (papillary necrosis).
+s7416 The kidney is an organ of **gluconeogenesis** (second after the liver; in prolonged fasting and acidosis up to 40% of blood glucose); substrates — glutamine, lactate, glycerol.
+s7417 Amino acid metabolism: **the first step of creatine synthesis** (guanidinoacetate), synthesis of **arginine** from citrulline, metabolism of glycine and serine.
+s7418 Small proteins and peptide hormones (insulin, PTH, β2-microglobulin) are reabsorbed in the tubules and degraded in lysosomes — in kidney failure the insulin requirement decreases. **Endocrine functions of the kidney: renin** (RAAS, topic 28), **erythropoietin** (in hypoxia — HIF; anemia in kidney failure), **calcitriol** (1α-hydroxylase), prostaglandins (vasodilation), kinins (kallikrein), urodilatin.
+s7419 **The role of the kidneys in calcium, phosphorus and bicarbonate metabolism:** ≈ 98% of Ca2+ is reabsorbed (in the distal part it is regulated by PTH and calcitriol); phosphate — in the proximal tubule via NaPi-IIa (PTH and FGF-23 reduce it); bicarbonate — reabsorption and formation of new bicarbonate. **In chronic kidney disease:** phosphate is retained and calcitriol decreases → hypocalcemia → secondary hyperparathyroidism → renal osteodystrophy; metabolic acidosis (excretion of NH~4~^+^ decreases); anemia (low erythropoietin); hyperkalemia; uremia — urea, creatinine and “uremic toxins” (indoxyl sulfate, p-cresyl sulfate, guanidines) accumulate.
+s7420 4. General properties of urine and their age-related features
+s7421 Table 29.1. Physical properties of urine (in adults)
+s7422 Changes
+s7423 Daily volume (diuresis)
+s7424 1.0–2.0 l (≈ 75% of the fluid drunk)
+s7425 Polyuria > 2 l (diabetes mellitus and insipidus); oliguria < 0.5 l; anuria < 0.1 l
+s7426 Color
+s7427 Straw-yellow (urochrome, urobilin)
+s7428 Dark brown — bilirubin; red — blood, hemoglobin, myoglobin, beetroot; colorless — polyuria
+s7429 Clarity
+s7430 Clear
+s7431 Turbid — salts, leukocytes, bacteria
+s7432 Specific gravity
+s7433 High — glucosuria, proteinuria, dehydration; low (< 1.005) — diabetes insipidus; fixed at 1.010 (isosthenuria) — kidney failure
+s7434 50–1200 mOsm/kg
+s7435 Alkaline — plant diet, urinary tract infection (urease), type I tubular acidosis
+s7436 Odor
+s7437 Characteristic, faint
+s7438 Acetone (ketosis), ammonia (infection), “mousy” (phenylketonuria), “maple syrup” (leucinosis)
+s7439 **Age-related features:** in newborns there is oliguria in the first days, a low specific gravity (1.002–1.006 — the concentrating ability is immature), physiological proteinuria and the “uric acid infarct” (topic 14); the daily diuresis is approximately: up to 1 year 300–600 ml, ≈ 900 ml at 5 years, ≈ 1200 ml at 10 years; creatinine excretion increases with muscle mass. In the elderly GFR decreases by ≈ 1 ml/min per year, the concentrating ability declines, and nocturia appears.
+s7440 5. Chemical composition of urine
+s7441 ≈ 50–70 g of dry matter is excreted in the urine per day.
+s7442 Table 29.2. The main organic and inorganic components of urine (daily)
+s7443 330–580 mmol (20–35 g)
+s7444 ≈ 85–90% of nitrogen; depends on protein intake and catabolism
+s7445 Men 8.8–17.7, women 7.1–15.9 mmol
+s7446 Proportional to muscle mass, constant
+s7447 1.5–4.5 mmol
+s7448 Purine metabolism
+s7449 Ammonia (NH~4~^+^)
+s7450 30–50 mmol
+s7451 Depends on acid–base status
+s7452 0.4–1.0 g
+s7453 Rich in glycine and histidine
+s7454 Hippuric acid, indican
+s7455 Small amounts
+s7456 Detoxification products (topic 26)
+s7457 Urobilin(ogen)
+s7458 1–4 mg
+s7459 Bilirubin metabolism
+s7460 17-Ketosteroids, catecholamine metabolites
+s7461 In mg amounts
+s7462 Hormone metabolism
+s7463 100–260 mmol
+s7464 Depends on dietary salt
+s7465 K+
+s7466 35–90 mmol
+s7467 110–250 mmol
+s7468 2.5–7.5 mmol
+s7469 Phosphates
+s7470 13–42 mmol
+s7471 Sulfates
+s7472 ≈ 20 mmol
+s7473 From sulfur-containing amino acids
+s7474 6. Pathological components of urine
+s7475 **Proteinuria** — urine protein > 150 mg/day (in a healthy person albumin < 30 mg/day).
+s7476 **Glomerular** — damage to the filter (glomerulonephritis, **diabetic nephropathy**, amyloidosis): selective (albumin) or nonselective (large proteins as well); **nephrotic syndrome** — > 3.5 g/day, hypoalbuminemia, edema, hyperlipidemia (topic 20).
+s7477 **Tubular** — small proteins (β2-microglobulin, α1-microglobulin, retinol-binding protein) are not reabsorbed: pyelonephritis, heavy metals, nephrotoxic drugs.
+s7478 **Overflow (prerenal)** — many small proteins in the blood: **Bence Jones protein** (myeloma), myoglobin (rhabdomyolysis), hemoglobin (intravascular hemolysis).
+s7479 **Postrenal** — inflammation of the urinary tract, blood.
+s7480 **Functional** — physical exertion, fever, orthostatic (in adolescents).
+s7481 **Microalbuminuria** (albumin 30–300 mg/day or an albumin/creatinine ratio of 3–30 mg/mmol) is the earliest sign of **diabetic nephropathy** and an indicator of cardiovascular risk; it is checked every year in diabetes mellitus and hypertension. Ordinary test strips do not detect it.
+s7482 **Glucosuria** — when blood glucose exceeds the renal threshold (diabetes mellitus, steroids, stress) or when the threshold is lowered (**renal glucosuria** — SGLT2 gene mutation, pregnancy, Fanconi syndrome, SGLT2 inhibitors).
+s7483 **Ketonuria** — acetoacetate and acetone: decompensated diabetes mellitus, starvation, repeated vomiting (hyperemesis of pregnancy), ketogenic diet, acetonemic vomiting in children, alcoholic ketoacidosis.
+s7484 **Bilirubinuria** (conjugated only) — hepatocellular and obstructive jaundice; **urobilinogenuria** — hemolytic and hepatocellular jaundice (topic 25).
+s7485 **Hematuria** (erythrocytes — glomerulonephritis, stones, tumors, infection), **hemoglobinuria** (intravascular hemolysis: G6PD deficiency, incompatible blood transfusion, burns), **myoglobinuria** (rhabdomyolysis) — the “blood” zone of the test strip is positive in all three (peroxidase activity of heme); microscopy is needed to distinguish them.
+s7486 **Leukocyturia and nitrites** — urinary tract infection: gram-negative bacteria (E. coli) reduce nitrates to nitrites.
+s7487 **Other pathological components:** phenylpyruvate (phenylketonuria — green color with FeCl3), homogentisic acid (alkaptonuria — the urine darkens in air), porphyrins and porphobilinogen (porphyrias), cystine, aminoaciduria (Fanconi, Hartnup disease), oxalates, orotic acid (topic 14), GAGs (mucopolysaccharidoses), 5-hydroxyindoleacetic acid (carcinoid tumor), vanillylmandelic acid (pheochromocytoma), hCG (pregnancy).
+s7488 7. Kidney stones and the biochemical basis of their prevention
+s7489 Stone formation results from **supersaturation** of the urine with salts, a lack of crystallization inhibitors (citrate, Mg2+, Tamm–Horsfall protein, nephrocalcin, GAGs) and impaired urine flow.
+s7490 Table 29.3. Types of kidney stones
+s7491 Stone
+s7492 Proportion
+s7493 Causes and risk factors
+s7494 Prevention
+s7495 Calcium oxalate
+s7496 Hypercalciuria, hyperoxaluria (spinach, rhubarb, chocolate, tea; increased oxalate absorption in intestinal diseases; hereditary — glyoxylate metabolism), hypocitraturia, low water intake
+s7497 Plenty of fluids (> 2–2.5 l of urine), oxalate restriction, normal calcium intake (binds oxalate in the intestine), salt restriction, potassium citrate, thiazides (in hypercalciuria)
+s7498 Calcium phosphate
+s7499 Alkaline urine, hyperparathyroidism, type I tubular acidosis
+s7500 Elimination of the cause
+s7501 Urate (uric acid)
+s7502 Hyperuricosuria (gout, chemotherapy of tumors), persistently acidic urine (pH < 5.5), metabolic syndrome
+s7503 Alkalinization of the urine (potassium citrate, pH 6.5–7), allopurinol, purine restriction — urate stones dissolve
+s7504 Struvite (magnesium ammonium phosphate)
+s7505 Infection with urease-producing bacteria (Proteus): urea → NH3 → alkaline urine; “staghorn” stones
+s7506 Treatment of the infection, removal of the stone
+s7507 Cystine
+s7508 Cystinuria — hereditary; reabsorption of the dibasic amino acids (cystine, ornithine, arginine, lysine — “COAL”) is impaired; cystine is poorly soluble (hexagonal crystals)
+s7509 Plenty of fluids, alkalinization, thiol drugs (tiopronin)
+s7510 Experiment 1: detection of the normal and pathological components of urine with test strips
+s7511 **Principle of the method:** on multiparameter test strips each zone works through its own specific chemical reaction.
+s7512 Table 29.4. Reactions of the test strip zones
+s7513 Zone
+s7514 Basis of the reaction
+s7515 Glucose oxidase → H2O2 → peroxidase + chromogen
+s7516 Specific; ascorbate gives a false negative result
+s7517 “Protein error” of the indicator (tetrabromophenol blue): the color changes when protein binds

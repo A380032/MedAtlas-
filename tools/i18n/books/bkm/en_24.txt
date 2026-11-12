@@ -1,267 +1,256 @@
-s4597 **Gene therapy** is the introduction of genetic material into cells in order to treat a disease.
-s4598 Table 18.4. Strategies and vectors of gene therapy
-s4599 Approach
-s4600 Gene addition (replacement)
-s4601 Introduction of a normal copy in place of the defective gene (adenosine deaminase deficiency — the first gene therapy, 1990; spinal muscular atrophy; hemophilia B)
-s4602 Gene editing
-s4603 CRISPR-Cas9 — cutting DNA at a precise site and correcting it (increasing HbF via BCL11A in sickle cell anemia and β-thalassemia)
-s4604 Silencing of gene expression
-s4605 Antisense oligonucleotides, siRNA (transthyretin amyloidosis)
-s4606 Cell therapy
-s4607 CAR-T cells — a gene for a receptor against a tumor antigen is introduced into the patient's T lymphocytes (B-cell leukemias)
-s4608 Viral vectors
-s4609 Retroviruses and lentiviruses (integration into the genome — for stem cells; risk of insertional mutagenesis), adenoviruses, adeno-associated viruses (AAV — no integration, safer)
-s4610 Nonviral methods
-s4611 Liposomes, lipid nanoparticles, electroporation, “naked” DNA
-s4612 Methods
-s4613 Ex vivo (cells are taken from the body, the gene is introduced and the cells are returned) and in vivo (the vector is delivered directly into the body)
-s4614 Problems: immune response, insertional mutagenesis (leukemia), short duration of expression, high cost, ethical issues (modification of germ cells is prohibited).
-s4615 Experiment 1: identifying the type of mutation from a sequence
-s4616 Compare the coding strand sequences of normal and patient DNA.
-s4617 Identify the differing nucleotide and its position.
-s4618 Convert the codon to mRNA and find the amino acid in the genetic code table.
-s4619 Name the type of mutation (synonymous, missense, nonsense, frameshift). **Example:** normal …TGG… (Trp) → mutant …TGA… (stop) — a nonsense mutation: the protein is shortened.
-s4620 Experiment 2: diagnosis of sickle cell anemia by the RFLP method (case-based)
-s4621 **Principle of the method:** the A→T mutation in the β-globin gene (GAG→GTG) destroys the cutting site of the restriction enzyme MstII.
-s4622 Amplify the relevant part of the β-globin gene by PCR.
-s4623 Treat with MstII and perform electrophoresis.
-s4624 Compare the fragments. **Results and analysis:** the normal allele gives two short fragments (1.15 and 0.2 kb), and the mutant allele gives one long fragment (1.35 kb); in a heterozygote (HbAS) all three fragments are seen.
-s4625 Experiment 3: introduction to methods for detecting signs of apoptosis (demonstration)
-s4626 **DNA electrophoresis** — a “ladder” in apoptosis (fragments that are multiples of ≈ 180–200 base pairs) and a “smear” in necrosis.
-s4627 Staining with **annexin V** — detects phosphatidylserine in the outer leaflet of the membrane (flow cytometry).
-s4628 The **TUNEL method** — labels the ends of DNA breaks.
-s4629 **Caspase-3 activity** — with a fluorogenic substrate. **Results and analysis:** using the methods together reliably distinguishes apoptosis from necrosis.
-s4630 Skill: choosing a method of molecular diagnosis for a hereditary disease
-s4631 Determine the mode of inheritance of the disease and the known mutations.
-s4632 If there is a single known mutation — PCR, RFLP or allele-specific PCR.
-s4633 If there are many different mutations — gene sequencing.
-s4634 Chromosomal changes — karyotype, FISH.
-s4635 Trinucleotide expansion — special PCR or Southern blot.
-s4636 Skill: distinguishing apoptosis from necrosis
-s4637 Assess the cell volume and membrane integrity.
-s4638 Determine whether there is an inflammatory reaction.
-s4639 Assess the pattern of DNA fragmentation (ladder or smear).
-s4640 Take caspase activity and the annexin V result into account.
-s4641 List the factors that damage DNA.
-s4642 How do ultraviolet and ionizing radiation damage DNA?
-s4643 How are mutations classified?
-s4644 What is the difference between missense, nonsense and frameshift mutations?
-s4645 How does base excision repair proceed?
-s4646 How are nucleotide excision repair and xeroderma pigmentosum related?
-s4647 Explain the mismatch repair system and Lynch syndrome.
-s4648 How are double-strand breaks repaired? What is the role of BRCA1/2?
-s4649 What is protein polymorphism? Give examples.
-s4650 What does pharmacogenetics study?
-s4651 Which DNA technologies are used to diagnose hereditary diseases?
-s4652 State the differences between apoptosis and necrosis.
-s4653 Describe the extrinsic and intrinsic pathways of apoptosis.
-s4654 What is the role of the p53 and Bcl-2 proteins?
-s4655 List the principles and vectors of gene therapy.
-s4656 What damage do ultraviolet rays cause in DNA?
-s4657 Double-strand breaks
-s4658 Deamination of cytosine
-s4659 Alkylation of guanine
-s4660 Thymine dimers
-s4661 Depurination
-s4662 Which repair system is defective in xeroderma pigmentosum?
-s4663 Base excision
-s4664 Mismatch repair
-s4665 Homologous recombination
-s4666 Nucleotide excision
-s4667 Direct repair
-s4668 Which repair system is defective in Lynch syndrome?
-s4669 Nonhomologous end joining
-s4670 Photoreactivation
-s4671 What kind of mutation converts a codon into a stop codon?
-s4672 Synonymous
-s4673 Transversion
-s4674 What kind of mutation is ΔF508 in cystic fibrosis?
-s4675 In-frame deletion (3 nucleotides)
-s4676 Nonsense mutation
-s4677 Trinucleotide expansion
-s4678 Splicing mutation
-s4679 Synonymous mutation
-s4680 Which enzyme initiates base excision repair?
-s4681 DNA glycosylase
-s4682 Photolyase
-s4683 Which feature is characteristic of apoptosis?
-s4684 Cell swelling
-s4685 Membrane destruction
-s4686 Inflammatory reaction
-s4687 No ATP requirement
-s4688 Cleavage of DNA into fragments of ≈ 180–200 base pairs
-s4689 What is released from mitochondria in the intrinsic pathway of apoptosis?
-s4690 Caspase-8
-s4691 Fas ligand
-s4692 Bcl-2
-s4693 Which protein is antiapoptotic?
-s4694 Bax
-s4695 Bak
-s4696 p53
-s4697 Caspase-3
-s4698 Which protein is called the “guardian of the genome”?
-s4699 Rb
-s4700 Ras
-s4701 Myc
-s4702 Which proteins take part in repair by homologous recombination?
-s4703 XP-A, XP-C
-s4704 MSH2, MLH1
-s4705 BRCA1, BRCA2
-s4706 Ku proteins and photolyase
-s4707 Slow and fast acetylators of isoniazid are associated with polymorphism of which enzyme?
-s4708 Cytochrome P450 2D6
-s4709 Pseudocholinesterase
-s4710 N-acetyltransferase
-s4711 G6PD
-s4712 Glutathione transferase
-s4713 In which disease was the first gene therapy used?
-s4714 Hemophilia A
-s4715 Adenosine deaminase deficiency
-s4716 Cystic fibrosis
-s4717 Phenylketonuria
-s4718 Duchenne muscular dystrophy
-s4719 Which viral vector does not integrate into the genome and is relatively safe?
-s4720 Retrovirus
-s4721 Lentivirus
-s4722 HIV
-s4723 Bacteriophage
-s4724 Adeno-associated virus
-s4725 Which lipid moves to the outer leaflet of the membrane in apoptosis and is detected with annexin V?
-s4726 Phosphatidylserine
-s4727 Cardiolipin
-s4728 An 8-year-old child has many freckles, dryness and ulcers on sun-exposed areas of the skin; a basal cell carcinoma was found on the face. The parents are related and healthy.
-s4729 What is the disease? What is its molecular basis? What is the mode of inheritance?
-s4730 Xeroderma pigmentosum. Ultraviolet rays form covalent bonds between adjacent pyrimidines in DNA — thymine dimers. They are repaired by the nucleotide excision repair (NER) system; in this disease the XP proteins (enzymes that recognize and excise the damage) are defective — the dimers accumulate and lead to mutations during replication, including in p53 and other genes, so skin cancer develops at an early age. The inheritance is autosomal recessive (consanguineous marriage increases the risk). Treatment and prevention — complete protection from sunlight and early removal of tumors.
-s4731 A 35-year-old woman's mother and maternal aunt died of breast cancer before the age of 45. Genetic testing of the woman found a frameshift mutation in the BRCA1 gene (heterozygous).
-s4732 What is the function of the BRCA1 protein? Why does even a single mutant allele increase the risk of cancer? Which group of drugs is used in treatment?
-s4733 BRCA1 takes part in the accurate repair of DNA double-strand breaks by homologous recombination (a tumor suppressor). In an inherited mutation one allele is inactive in all cells; if the second allele is lost by a somatic mutation during life (Knudson's “two-hit” hypothesis), homologous recombination does not work, the genome becomes unstable and a tumor develops. Therefore the inheritance appears dominant (risk ≈ 60–70%). PARP inhibitors (olaparib) are used in treatment: by blocking the repair of single-strand breaks, PARP inhibition selectively kills tumor cells with defective homologous recombination (synthetic lethality).
-s4734 In a patient with chronic lymphocytic leukemia, an excess of the Bcl-2 protein was found in the tumor cells. The effect of chemotherapy is poor. The drug venetoclax was recommended.
-s4735 How does Bcl-2 excess contribute to tumor growth? Why is chemotherapy ineffective? What is the mechanism of action of venetoclax?
-s4736 Bcl-2 is an antiapoptotic protein: it blocks Bax and Bak and prevents the increase in mitochondrial membrane permeability and the release of cytochrome c. As a result, damaged tumor cells do not undergo apoptosis and accumulate. Many chemotherapy drugs damage DNA and trigger the intrinsic apoptotic pathway through p53 — when Bcl-2 is in excess, this pathway is blocked. Venetoclax is a Bcl-2 inhibitor (a BH3 mimetic): it releases the proapoptotic proteins and restores apoptosis in tumor cells.
-s4737 UV rays
-s4738 Thymine dimers → NER
-s4739 Ionizing radiation
-s4740 Double-strand breaks → homologous recombination, NHEJ
-s4741 Mutations
-s4742 Synonymous, missense, nonsense, frameshift, expansion
-s4743 BER
-s4744 DNA glycosylase → AP endonuclease → pol β → ligase
-s4745 NER defect
-s4746 Xeroderma pigmentosum
-s4747 MMR defect
-s4748 Lynch syndrome, microsatellite instability
-s4749 BRCA1/2
-s4750 Homologous recombination; breast and ovarian cancer
-s4751 Polymorphism
-s4752 AB0, HLA, Hb variants, CYP450, N-acetyltransferase
-s4753 Caspases, DNA “ladder”, no inflammation
-s4754 Pathways
-s4755 Extrinsic (Fas → caspase-8), intrinsic (cytochrome c → caspase-9)
-s4756 Regulators
-s4757 p53, Bax/Bak (pro), Bcl-2 (anti)
-s4758 Gene therapy
-s4759 Gene addition, CRISPR, siRNA, CAR-T; AAV and lentivirus vectors
-s4760 Biochemistry of oncogenesis
-s4761 To give the student knowledge of chemical, physical and viral carcinogenesis, the biochemical features of tumor cells, proto-oncogenes, oncogenes and tumor suppressor genes, the mechanisms of neoplastic transformation and the multistage theory of carcinogenesis, invasion and metastasis, tumor markers, and the biochemical principles of tumor diagnosis and treatment.
-s4762 the types of carcinogenic factors and the metabolic activation of procarcinogens;
-s4763 the stages of carcinogenesis (initiation, promotion, progression);
-s4764 the mechanisms by which proto-oncogenes are converted into oncogenes;
-s4765 the main tumor suppressor genes (TP53, RB1, APC, BRCA);
-s4766 the metabolic features of tumor cells (the Warburg effect);
-s4767 the biochemical basis of invasion and metastasis;
-s4768 tumor markers and their clinical importance;
-s4769 the mechanism of multidrug resistance. **The student should be able to:**
-s4770 interpret tumor marker results;
-s4771 show the activation pathway of a carcinogen in a scheme;
-s4772 explain the mechanism of targeted therapy.
-s4773 1. Carcinogenic factors
-s4774 Table 19.1. Classification of carcinogenic factors
-s4775 Tumor
-s4776 Chemical: polycyclic aromatic hydrocarbons
-s4777 Benzo(a)pyrene (tobacco smoke, charred meat)
-s4778 Lung, larynx, urinary bladder
-s4779 Aromatic amines
-s4780 2-Naphthylamine, benzidine (dye industry)
-s4781 Urinary bladder
-s4782 N-Nitroso compounds
-s4783 Nitrosamines (formed from nitrites in the stomach)
-s4784 Stomach, esophagus
-s4785 Mycotoxins
-s4786 Aflatoxin B~1~ (moldy nuts, grain)
-s4787 Liver (TP53 codon 249)
-s4788 Inorganic substances
-s4789 Asbestos, arsenic, chromium, nickel, cadmium, benzene
-s4790 Mesothelioma, skin, lung, leukemia
-s4791 Skin (melanoma, basal cell carcinoma)
-s4792 Leukemia, thyroid cancer
-s4793 Biological: DNA viruses
-s4794 Human papillomavirus (HPV 16, 18)
-s4795 Cervical cancer
-s4796 Hepatitis B virus; Epstein–Barr virus
-s4797 Liver cancer; Burkitt lymphoma, nasopharyngeal cancer
-s4798 RNA viruses
-s4799 Hepatitis C virus, HTLV-1
-s4800 Liver cancer, T-cell leukemia
-s4801 Bacteria
-s4802 Helicobacter pylori
-s4803 Gastric cancer, MALT lymphoma
-s4804 Hormones
-s4805 Estrogens (long-term use)
-s4806 Endometrium, breast
-s4807 2. Chemical carcinogenesis
-s4808 Most chemical carcinogens are **procarcinogens**: they are not active themselves but are converted in the body by the **cytochrome P450** system (topic 26) into electrophilic **ultimate carcinogens**, which form covalent **adducts** with nucleophilic centers of DNA (most often the N7 or N2 atom of guanine). Direct-acting carcinogens (alkylating agents) do not require activation.
-s4809 Figure 19.1
-s4810 Conversion of benzo(a)pyrene into an ultimate carcinogen and its detoxification (drawn after Severin E.S.)
-s4811 **Cytochrome P450 polymorphism and carcinogenesis:** smokers with highly inducible variants of CYP1A1 have a higher risk of lung cancer; gene variants of detoxifying enzymes (glutathione S-transferase GSTM1, N-acetyltransferase NAT2) affect the risk: for example, the risk is higher in smokers who lack the GSTM1 gene (null genotype); in slow acetylators, bladder cancer caused by aromatic amines is more common.
-s4812 Tobacco smoke contains more than 60 carcinogens. Benzo(a)pyrene diol epoxide causes G→T transversions at certain “hot spots” of the TP53 gene (codons 157, 248, 273) — the very same mutations are found in lung cancer in smokers. This is evidence of a direct molecular link between smoking and cancer.
-s4813 3. Proto-oncogenes, oncogenes and tumor suppressor genes
-s4814 **Proto-oncogenes** are normal genes that stimulate cell growth, division and differentiation. As a result of an activating mutation they become **oncogenes** (a **dominant** effect — one allele is enough; “a stuck gas pedal”).
-s4815 Mechanisms of proto-oncogene activation:
-s4816 **Point mutation** — the RAS protein loses its GTPase activity and remains permanently active (codons 12, 13, 61; in ≈ 30% of tumors);
-s4817 **Gene amplification** — MYC (N-MYC in neuroblastoma), HER2/neu (≈ 20% of breast cancers);
-s4818 **Chromosomal translocation** — the gene comes under a strong promoter (Burkitt lymphoma: t(8;14) — MYC next to an immunoglobulin gene) or a hybrid protein is formed (chronic myeloid leukemia: t(9;22) — **BCR-ABL**, a constitutively active tyrosine kinase);
-s4819 **Integration next to a viral promoter** (insertional mutagenesis).
-s4820 Table 19.2. Functions of proto-oncogene products
-s4821 Growth factors
-s4822 SIS (platelet-derived growth factor)
-s4823 Growth factor receptors (tyrosine kinases)
-s4824 EGFR (ERBB1), HER2 (ERBB2), RET, KIT
-s4825 Signal transduction proteins
-s4826 RAS (G protein), RAF, BRAF (kinases), ABL
-s4827 Transcription factors
-s4828 MYC, FOS, JUN
-s4829 Cell cycle regulators
-s4830 Cyclin D1, CDK4
-s4831 Apoptosis inhibitors
-s4832 BCL-2
-s4833 **Tumor suppressor genes** are genes that stop cell division and ensure DNA repair and apoptosis (the “brakes”). For a tumor to develop, **both alleles** must be inactive (a **recessive** effect) — **Knudson's “two-hit” hypothesis**: in the hereditary form the first mutation is inborn and the second is somatic.
-s4834 Table 19.3. Main tumor suppressor genes
-s4835 Gene
-s4836 Tumors associated with its defect
-s4837 TP53
-s4838 “Guardian of the genome”: cell cycle arrest when DNA is damaged, repair, apoptosis
-s4839 Mutated in ≈ 50% of tumors; Li–Fraumeni syndrome
-s4840 RB1
-s4841 Binds the transcription factor E2F and stops the G1→S transition
-s4842 Retinoblastoma, osteosarcoma
-s4843 APC
-s4844 Ensures the degradation of β-catenin (the Wnt pathway)
-s4845 Familial adenomatous polyposis, colorectal cancer
-s4846 Homologous recombination repair
-s4847 Breast, ovarian and prostate cancer
-s4848 PTEN
-s4849 A phosphatase that stops the PI3K/Akt pathway
-s4850 Glioblastoma, endometrial cancer
-s4851 NF1
-s4852 A protein that activates RAS GTPase
-s4853 Neurofibromatosis
-s4854 VHL
-s4855 Targets HIF for degradation
-s4856 Kidney cancer, hemangioblastoma
-s4857 CDKN2A (p16)
-s4858 Inhibitor of CDK4/6
-s4859 Melanoma, pancreatic cancer
-s4860 4. The multistage theory of carcinogenesis
-s4861 A tumor develops not as a result of a single mutation but as a result of successive changes in several (usually 4–7) genes over years (in the colon: APC → KRAS → SMAD4 → TP53 — the **Vogelstein model**: normal epithelium → adenoma → carcinoma).
-s4862 Figure 19.2
-s4863 The multistage model of carcinogenesis (drawn after Harper’s Illustrated Biochemistry)
+s4613 Methods
+s4614 Ex vivo (cells are taken from the body, the gene is introduced and the cells are returned) and in vivo (the vector is delivered directly into the body)
+s4615 Problems: immune response, insertional mutagenesis (leukemia), short duration of expression, high cost, ethical issues (modification of germ cells is prohibited).
+s4616 Experiment 1: identifying the type of mutation from a sequence
+s4617 Compare the coding strand sequences of normal and patient DNA.
+s4618 Identify the differing nucleotide and its position.
+s4619 Convert the codon to mRNA and find the amino acid in the genetic code table.
+s4620 Name the type of mutation (synonymous, missense, nonsense, frameshift). **Example:** normal …TGG… (Trp) → mutant …TGA… (stop) — a nonsense mutation: the protein is shortened.
+s4621 Experiment 2: diagnosis of sickle cell anemia by the RFLP method (case-based)
+s4622 **Principle of the method:** the A→T mutation in the β-globin gene (GAG→GTG) destroys the cutting site of the restriction enzyme MstII.
+s4623 Amplify the relevant part of the β-globin gene by PCR.
+s4624 Treat with MstII and perform electrophoresis.
+s4625 Compare the fragments. **Results and analysis:** the normal allele gives two short fragments (1.15 and 0.2 kb), and the mutant allele gives one long fragment (1.35 kb); in a heterozygote (HbAS) all three fragments are seen.
+s4626 Experiment 3: introduction to methods for detecting signs of apoptosis (demonstration)
+s4627 **DNA electrophoresis** — a “ladder” in apoptosis (fragments that are multiples of ≈ 180–200 base pairs) and a “smear” in necrosis.
+s4628 Staining with **annexin V** — detects phosphatidylserine in the outer leaflet of the membrane (flow cytometry).
+s4629 The **TUNEL method** — labels the ends of DNA breaks.
+s4630 **Caspase-3 activity** — with a fluorogenic substrate. **Results and analysis:** using the methods together reliably distinguishes apoptosis from necrosis.
+s4631 Skill: choosing a method of molecular diagnosis for a hereditary disease
+s4632 Determine the mode of inheritance of the disease and the known mutations.
+s4633 If there is a single known mutation — PCR, RFLP or allele-specific PCR.
+s4634 If there are many different mutations — gene sequencing.
+s4635 Chromosomal changes — karyotype, FISH.
+s4636 Trinucleotide expansion — special PCR or Southern blot.
+s4637 Skill: distinguishing apoptosis from necrosis
+s4638 Assess the cell volume and membrane integrity.
+s4639 Determine whether there is an inflammatory reaction.
+s4640 Assess the pattern of DNA fragmentation (ladder or smear).
+s4641 Take caspase activity and the annexin V result into account.
+s4642 List the factors that damage DNA.
+s4643 How do ultraviolet and ionizing radiation damage DNA?
+s4644 How are mutations classified?
+s4645 What is the difference between missense, nonsense and frameshift mutations?
+s4646 How does base excision repair proceed?
+s4647 How are nucleotide excision repair and xeroderma pigmentosum related?
+s4648 Explain the mismatch repair system and Lynch syndrome.
+s4649 How are double-strand breaks repaired? What is the role of BRCA1/2?
+s4650 What is protein polymorphism? Give examples.
+s4651 What does pharmacogenetics study?
+s4652 Which DNA technologies are used to diagnose hereditary diseases?
+s4653 State the differences between apoptosis and necrosis.
+s4654 Describe the extrinsic and intrinsic pathways of apoptosis.
+s4655 What is the role of the p53 and Bcl-2 proteins?
+s4656 List the principles and vectors of gene therapy.
+s4657 What damage do ultraviolet rays cause in DNA?
+s4658 Double-strand breaks
+s4659 Deamination of cytosine
+s4660 Alkylation of guanine
+s4661 Thymine dimers
+s4662 Depurination
+s4663 Which repair system is defective in xeroderma pigmentosum?
+s4664 Base excision
+s4665 Mismatch repair
+s4666 Homologous recombination
+s4667 Nucleotide excision
+s4668 Direct repair
+s4669 Which repair system is defective in Lynch syndrome?
+s4670 Nonhomologous end joining
+s4671 Photoreactivation
+s4672 What kind of mutation converts a codon into a stop codon?
+s4673 Synonymous
+s4674 Transversion
+s4675 What kind of mutation is ΔF508 in cystic fibrosis?
+s4676 In-frame deletion (3 nucleotides)
+s4677 Nonsense mutation
+s4678 Trinucleotide expansion
+s4679 Splicing mutation
+s4680 Synonymous mutation
+s4681 Which enzyme initiates base excision repair?
+s4682 DNA glycosylase
+s4683 Photolyase
+s4684 Which feature is characteristic of apoptosis?
+s4685 Cell swelling
+s4686 Membrane destruction
+s4687 Inflammatory reaction
+s4688 No ATP requirement
+s4689 Cleavage of DNA into fragments of ≈ 180–200 base pairs
+s4690 What is released from mitochondria in the intrinsic pathway of apoptosis?
+s4691 Caspase-8
+s4692 Fas ligand
+s4693 Bcl-2
+s4694 Which protein is antiapoptotic?
+s4695 Bax
+s4696 Bak
+s4697 p53
+s4698 Caspase-3
+s4699 Which protein is called the “guardian of the genome”?
+s4700 Rb
+s4701 Ras
+s4702 Myc
+s4703 Which proteins take part in repair by homologous recombination?
+s4704 XP-A, XP-C
+s4705 MSH2, MLH1
+s4706 BRCA1, BRCA2
+s4707 Ku proteins and photolyase
+s4708 Slow and fast acetylators of isoniazid are associated with polymorphism of which enzyme?
+s4709 Cytochrome P450 2D6
+s4710 Pseudocholinesterase
+s4711 N-acetyltransferase
+s4712 G6PD
+s4713 Glutathione transferase
+s4714 In which disease was the first gene therapy used?
+s4715 Hemophilia A
+s4716 Adenosine deaminase deficiency
+s4717 Cystic fibrosis
+s4718 Phenylketonuria
+s4719 Duchenne muscular dystrophy
+s4720 Which viral vector does not integrate into the genome and is relatively safe?
+s4721 Retrovirus
+s4722 Lentivirus
+s4723 HIV
+s4724 Bacteriophage
+s4725 Adeno-associated virus
+s4726 Which lipid moves to the outer leaflet of the membrane in apoptosis and is detected with annexin V?
+s4727 Phosphatidylserine
+s4728 Cardiolipin
+s4729 An 8-year-old child has many freckles, dryness and ulcers on sun-exposed areas of the skin; a basal cell carcinoma was found on the face. The parents are related and healthy.
+s4730 What is the disease? What is its molecular basis? What is the mode of inheritance?
+s4731 Xeroderma pigmentosum. Ultraviolet rays form covalent bonds between adjacent pyrimidines in DNA — thymine dimers. They are repaired by the nucleotide excision repair (NER) system; in this disease the XP proteins (enzymes that recognize and excise the damage) are defective — the dimers accumulate and lead to mutations during replication, including in p53 and other genes, so skin cancer develops at an early age. The inheritance is autosomal recessive (consanguineous marriage increases the risk). Treatment and prevention — complete protection from sunlight and early removal of tumors.
+s4732 A 35-year-old woman's mother and maternal aunt died of breast cancer before the age of 45. Genetic testing of the woman found a frameshift mutation in the BRCA1 gene (heterozygous).
+s4733 What is the function of the BRCA1 protein? Why does even a single mutant allele increase the risk of cancer? Which group of drugs is used in treatment?
+s4734 BRCA1 takes part in the accurate repair of DNA double-strand breaks by homologous recombination (a tumor suppressor). In an inherited mutation one allele is inactive in all cells; if the second allele is lost by a somatic mutation during life (Knudson's “two-hit” hypothesis), homologous recombination does not work, the genome becomes unstable and a tumor develops. Therefore the inheritance appears dominant (risk ≈ 60–70%). PARP inhibitors (olaparib) are used in treatment: by blocking the repair of single-strand breaks, PARP inhibition selectively kills tumor cells with defective homologous recombination (synthetic lethality).
+s4735 In a patient with chronic lymphocytic leukemia, an excess of the Bcl-2 protein was found in the tumor cells. The effect of chemotherapy is poor. The drug venetoclax was recommended.
+s4736 How does Bcl-2 excess contribute to tumor growth? Why is chemotherapy ineffective? What is the mechanism of action of venetoclax?
+s4737 Bcl-2 is an antiapoptotic protein: it blocks Bax and Bak and prevents the increase in mitochondrial membrane permeability and the release of cytochrome c. As a result, damaged tumor cells do not undergo apoptosis and accumulate. Many chemotherapy drugs damage DNA and trigger the intrinsic apoptotic pathway through p53 — when Bcl-2 is in excess, this pathway is blocked. Venetoclax is a Bcl-2 inhibitor (a BH3 mimetic): it releases the proapoptotic proteins and restores apoptosis in tumor cells.
+s4738 UV rays
+s4739 Thymine dimers → NER
+s4740 Ionizing radiation
+s4741 Double-strand breaks → homologous recombination, NHEJ
+s4742 Mutations
+s4743 Synonymous, missense, nonsense, frameshift, expansion
+s4744 BER
+s4745 DNA glycosylase → AP endonuclease → pol β → ligase
+s4746 NER defect
+s4747 Xeroderma pigmentosum
+s4748 MMR defect
+s4749 Lynch syndrome, microsatellite instability
+s4750 BRCA1/2
+s4751 Homologous recombination; breast and ovarian cancer
+s4752 Polymorphism
+s4753 AB0, HLA, Hb variants, CYP450, N-acetyltransferase
+s4754 Caspases, DNA “ladder”, no inflammation
+s4755 Pathways
+s4756 Extrinsic (Fas → caspase-8), intrinsic (cytochrome c → caspase-9)
+s4757 Regulators
+s4758 p53, Bax/Bak (pro), Bcl-2 (anti)
+s4759 Gene therapy
+s4760 Gene addition, CRISPR, siRNA, CAR-T; AAV and lentivirus vectors
+s4761 Biochemistry of oncogenesis
+s4762 To give the student knowledge of chemical, physical and viral carcinogenesis, the biochemical features of tumor cells, proto-oncogenes, oncogenes and tumor suppressor genes, the mechanisms of neoplastic transformation and the multistage theory of carcinogenesis, invasion and metastasis, tumor markers, and the biochemical principles of tumor diagnosis and treatment.
+s4763 the types of carcinogenic factors and the metabolic activation of procarcinogens;
+s4764 the stages of carcinogenesis (initiation, promotion, progression);
+s4765 the mechanisms by which proto-oncogenes are converted into oncogenes;
+s4766 the main tumor suppressor genes (TP53, RB1, APC, BRCA);
+s4767 the metabolic features of tumor cells (the Warburg effect);
+s4768 the biochemical basis of invasion and metastasis;
+s4769 tumor markers and their clinical importance;
+s4770 the mechanism of multidrug resistance.
+s4771 interpret tumor marker results;
+s4772 show the activation pathway of a carcinogen in a scheme;
+s4773 explain the mechanism of targeted therapy.
+s4774 1. Carcinogenic factors
+s4775 Table 19.1. Classification of carcinogenic factors
+s4776 Tumor
+s4777 Chemical: polycyclic aromatic hydrocarbons
+s4778 Benzo(a)pyrene (tobacco smoke, charred meat)
+s4779 Lung, larynx, urinary bladder
+s4780 Aromatic amines
+s4781 2-Naphthylamine, benzidine (dye industry)
+s4782 Urinary bladder
+s4783 N-Nitroso compounds
+s4784 Nitrosamines (formed from nitrites in the stomach)
+s4785 Stomach, esophagus
+s4786 Mycotoxins
+s4787 Aflatoxin B~1~ (moldy nuts, grain)
+s4788 Liver (TP53 codon 249)
+s4789 Inorganic substances
+s4790 Asbestos, arsenic, chromium, nickel, cadmium, benzene
+s4791 Mesothelioma, skin, lung, leukemia
+s4792 Skin (melanoma, basal cell carcinoma)
+s4793 Leukemia, thyroid cancer
+s4794 Biological: DNA viruses
+s4795 Human papillomavirus (HPV 16, 18)
+s4796 Cervical cancer
+s4797 Hepatitis B virus; Epstein–Barr virus
+s4798 Liver cancer; Burkitt lymphoma, nasopharyngeal cancer
+s4799 RNA viruses
+s4800 Hepatitis C virus, HTLV-1
+s4801 Liver cancer, T-cell leukemia
+s4802 Bacteria
+s4803 Helicobacter pylori
+s4804 Gastric cancer, MALT lymphoma
+s4805 Hormones
+s4806 Estrogens (long-term use)
+s4807 Endometrium, breast
+s4808 2. Chemical carcinogenesis
+s4809 Most chemical carcinogens are **procarcinogens**: they are not active themselves but are converted in the body by the **cytochrome P450** system (topic 26) into electrophilic **ultimate carcinogens**, which form covalent **adducts** with nucleophilic centers of DNA (most often the N7 or N2 atom of guanine). Direct-acting carcinogens (alkylating agents) do not require activation.
+s4810 Figure 19.1
+s4811 Conversion of benzo(a)pyrene into an ultimate carcinogen and its detoxification (drawn after Severin E.S.)
+s4812 **Cytochrome P450 polymorphism and carcinogenesis:** smokers with highly inducible variants of CYP1A1 have a higher risk of lung cancer; gene variants of detoxifying enzymes (glutathione S-transferase GSTM1, N-acetyltransferase NAT2) affect the risk: for example, the risk is higher in smokers who lack the GSTM1 gene (null genotype); in slow acetylators, bladder cancer caused by aromatic amines is more common.
+s4813 Tobacco smoke contains more than 60 carcinogens. Benzo(a)pyrene diol epoxide causes G→T transversions at certain “hot spots” of the TP53 gene (codons 157, 248, 273) — the very same mutations are found in lung cancer in smokers. This is evidence of a direct molecular link between smoking and cancer.
+s4814 3. Proto-oncogenes, oncogenes and tumor suppressor genes
+s4815 **Proto-oncogenes** are normal genes that stimulate cell growth, division and differentiation. As a result of an activating mutation they become **oncogenes** (a **dominant** effect — one allele is enough; “a stuck gas pedal”).
+s4816 Mechanisms of proto-oncogene activation:
+s4817 **Point mutation** — the RAS protein loses its GTPase activity and remains permanently active (codons 12, 13, 61; in ≈ 30% of tumors);
+s4818 **Gene amplification** — MYC (N-MYC in neuroblastoma), HER2/neu (≈ 20% of breast cancers);
+s4819 **Chromosomal translocation** — the gene comes under a strong promoter (Burkitt lymphoma: t(8;14) — MYC next to an immunoglobulin gene) or a hybrid protein is formed (chronic myeloid leukemia: t(9;22) — **BCR-ABL**, a constitutively active tyrosine kinase);
+s4820 **Integration next to a viral promoter** (insertional mutagenesis).
+s4821 Table 19.2. Functions of proto-oncogene products
+s4822 Growth factors
+s4823 SIS (platelet-derived growth factor)
+s4824 Growth factor receptors (tyrosine kinases)
+s4825 EGFR (ERBB1), HER2 (ERBB2), RET, KIT
+s4826 Signal transduction proteins
+s4827 RAS (G protein), RAF, BRAF (kinases), ABL
+s4828 Transcription factors
+s4829 MYC, FOS, JUN
+s4830 Cell cycle regulators
+s4831 Cyclin D1, CDK4
+s4832 Apoptosis inhibitors
+s4833 BCL-2
+s4834 **Tumor suppressor genes** are genes that stop cell division and ensure DNA repair and apoptosis (the “brakes”). For a tumor to develop, **both alleles** must be inactive (a **recessive** effect) — **Knudson's “two-hit” hypothesis**: in the hereditary form the first mutation is inborn and the second is somatic.
+s4835 Table 19.3. Main tumor suppressor genes
+s4836 Gene
+s4837 Tumors associated with its defect
+s4838 TP53
+s4839 “Guardian of the genome”: cell cycle arrest when DNA is damaged, repair, apoptosis
+s4840 Mutated in ≈ 50% of tumors; Li–Fraumeni syndrome
+s4841 RB1
+s4842 Binds the transcription factor E2F and stops the G1→S transition
+s4843 Retinoblastoma, osteosarcoma
+s4844 APC
+s4845 Ensures the degradation of β-catenin (the Wnt pathway)
+s4846 Familial adenomatous polyposis, colorectal cancer
+s4847 Homologous recombination repair
+s4848 Breast, ovarian and prostate cancer
+s4849 PTEN
+s4850 A phosphatase that stops the PI3K/Akt pathway
+s4851 Glioblastoma, endometrial cancer
+s4852 NF1
+s4853 A protein that activates RAS GTPase
+s4854 Neurofibromatosis
+s4855 VHL
+s4856 Targets HIF for degradation
+s4857 Kidney cancer, hemangioblastoma
+s4858 CDKN2A (p16)
+s4859 Inhibitor of CDK4/6
+s4860 Melanoma, pancreatic cancer
+s4861 4. The multistage theory of carcinogenesis
+s4862 A tumor develops not as a result of a single mutation but as a result of successive changes in several (usually 4–7) genes over years (in the colon: APC → KRAS → SMAD4 → TP53 — the **Vogelstein model**: normal epithelium → adenoma → carcinoma).
+s4863 Figure 19.2
+s4864 The multistage model of carcinogenesis (drawn after Harper’s Illustrated Biochemistry)
+s4865 As a result of **neoplastic transformation**, the cell acquires tumor features (the “hallmarks of cancer” according to Hanahan and Weinberg): self-sufficiency in growth signals, insensitivity to growth-inhibitory signals, evasion of apoptosis, unlimited division (**telomerase** activity), **angiogenesis** (VEGF), invasion and metastasis, reprogramming of energy metabolism, evasion of immune surveillance (PD-L1), genome instability, tumor-promoting inflammation.
+s4866 5. Biochemical features of tumor cells
+s4867 **The Warburg effect (aerobic glycolysis):** tumor cells break down glucose mainly to lactate even when oxygen is sufficient; they take up a lot of glucose (GLUT1, hexokinase II ↑) — this is the basis of diagnosis by **PET-CT**, which relies on the accumulation of ^18^F-fluorodeoxyglucose. Glycolytic intermediates are used for the synthesis of nucleotides, lipids and amino acids; the M2 isoform of pyruvate kinase is expressed.
+s4868 **Glutamine “addiction”** — glutamine is a source of nitrogen and carbon (glutaminolysis).

@@ -1,213 +1,217 @@
-s3963 **transposons** (“jumping genes”) — DNA segments that change their position within the genome; in humans, LINE and Alu elements;
-s3964 **plasmids** — extrachromosomal circular DNA of bacteria; they carry **antibiotic resistance genes**; vectors in genetic engineering;
-s3965 **bacteriophages** — viruses of bacteria; transduction, vectors in genetic engineering.
-s3966 3. DNA replication
-s3967 **Replication** is the copying of DNA; it takes place in the **S phase** of the cell cycle.
-s3968 Principles:
-s3969 **semiconservative** — each new molecule contains one old and one new strand (the Meselson–Stahl experiment);
-s3970 **template-directed and complementary**;
-s3971 **antiparallel** — the new strand is elongated only in the 5’→3’ direction;
-s3972 **discontinuous (semidiscontinuous)** — the leading strand is synthesized continuously, the lagging strand as **Okazaki fragments**;
-s3973 **requires a primer** — DNA polymerases cannot start synthesis; they only add nucleotides to an existing 3’-OH;
-s3974 in eukaryotes there are many **origins of replication (ori)** — replicons.
-s3975 Figure 16.1
-s3976 The main enzymes and processes at the replication fork (drawn after Severin E.S.)
-s3977 The substrates are **dNTPs** (dATP, dGTP, dCTP, dTTP); pyrophosphate is released and then hydrolyzed, which makes the process irreversible.
-s3978 Table 16.3. Eukaryotic DNA polymerases
-s3979 Polymerase
-s3980 α (with primase)
-s3981 Primer synthesis, initiation of Okazaki fragments
-s3982 Synthesis of the lagging strand; 3’→5’ exonuclease (proofreading)
-s3983 Synthesis of the leading strand; 3’→5’ exonuclease (proofreading)
-s3984 Repair (base excision pathway)
-s3985 Replication of mitochondrial DNA
-s3986 **Fidelity:** the **3’→5’ exonuclease (proofreading)** activity of DNA polymerases immediately removes a wrongly inserted nucleotide; together with mismatch repair, the error rate is ≈ 10^−9^–10^−10^.
-s3987 **Relation to the cell cycle:** G1 → S → G2 → M; the transitions are controlled by **cyclins** and **cyclin-dependent kinases (CDKs)**; at the checkpoints the **p53** and **Rb** proteins arrest the cycle when DNA is damaged (topics 18–19). Replication licensing is granted only once per cycle.
-s3988 4. Post-replicative modifications: methylation, telomeres
-s3989 **DNA methylation:** DNA methyltransferases (donor — S-adenosylmethionine) convert cytosine in **CpG** dinucleotides to 5-methylcytosine. Methylation of a promoter **silences** the gene — epigenetic regulation (X-chromosome inactivation, genomic imprinting; silencing of tumor suppressor genes by methylation in tumors).
-s3990 **Telomeres and telomerase:** the primer site at the 3’-end of linear DNA is not filled in, so the chromosome shortens with every division. The ends carry **telomeres** — (TTAGGG)n repeats. **Telomerase** is a **reverse transcriptase** with its own **RNA template**; it lengthens telomeres. It is active in germ cells, stem cells and **≈ 85–90% of tumor cells** (immortality), while its activity in somatic cells is low — telomere shortening is associated with **aging** (the Hayflick limit).
-s3991 5. Transcription
-s3992 **Transcription** is the synthesis of RNA on a DNA template. One DNA strand (antisense, noncoding) serves as the template; the RNA is complementary to it and similar to the coding strand (with U instead of T); synthesis proceeds in the 5’→3’ direction, **no primer is required**, and the substrates are NTPs.
-s3993 Table 16.4. Eukaryotic RNA polymerases
-s3994 Sensitivity to α-amanitin
-s3995 RNA polymerase I
-s3996 Nucleolus
-s3997 28S, 18S, 5.8S rRNA
-s3998 Not sensitive
-s3999 RNA polymerase II
-s4000 Nucleoplasm
-s4001 mRNA (pre-mRNA), most microRNAs
-s4002 Highly sensitive
-s4003 RNA polymerase III
-s4004 tRNA, 5S rRNA
-s4005 Stages:
-s4006 **Initiation** — the general transcription factors (TFIID binds to the TATA box) and RNA polymerase II bind to the **promoter** and open the DNA over ≈ 14 base pairs; TFIIH phosphorylates the CTD domain of the polymerase.
-s4007 **Elongation** — the polymerase moves along the DNA and elongates the RNA chain (≈ 40 nucleotides/s).
-s4008 **Termination** — synthesis stops at termination signals (in prokaryotes, the rho factor or a GC-rich hairpin). Bacteria have a single RNA polymerase (the σ subunit recognizes the promoter) — **rifampicin** inhibits this enzyme.
-s4009 6. Post-transcriptional modifications of RNA (processing)
-s4010 Figure 16.2
-s4011 Formation and maturation of eukaryotic mRNA (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
-s4012 Maturation of mRNA:
-s4013 **5’-cap** — 7-methylguanosine attached by a 5’-5’-triphosphate bond; it protects the mRNA from exonucleases and is required for ribosome binding;
-s4014 **3’-polyadenylation** — after cleavage downstream of the AAUAAA signal, poly(A) polymerase adds ≈ 200 adenylate residues; stability and export;
-s4015 **splicing** — removal of introns and joining of exons; the **spliceosome** (small nuclear RNAs — snRNAs — and proteins) recognizes the GU…AG boundaries. **Alternative splicing** — several proteins are produced from one gene (for example, calcitonin and CGRP);
-s4016 **RNA editing** — changes of individual nucleotides (apo B-100 in the liver, apo B-48 in the intestine — C→U editing, topic 8). **Maturation of rRNA:** the 45S precursor is cleaved in the nucleolus to form 28S, 18S and 5.8S rRNAs; nucleotides are methylated.
-s4017 **Maturation of tRNA:** the 5’- and 3’-ends are trimmed, **CCA** is added to the 3’-end (the amino acid attachment site), bases are modified (pseudouridine, dihydrouridine, inosine), and in some an intron is removed.
-s4018 Splicing defects: many forms of β-thalassemia — mutations in an intron of the β-globin gene lead to aberrant splicing. In systemic lupus erythematosus (SLE), autoantibodies against snRNPs (anti-Sm) are produced.
-s4019 7. Inhibitors of replication and transcription
-s4020 Table 16.5. Substances that affect template-directed syntheses
-s4021 Fluoroquinolones (ciprofloxacin)
-s4022 Inhibitor of bacterial DNA gyrase (topoisomerase II)
-s4023 Antibacterial
-s4024 Doxorubicin, etoposide
-s4025 Topoisomerase II inhibitor, intercalation
-s4026 Antitumor
-s4027 Irinotecan, topotecan
-s4028 Topoisomerase I inhibitor
-s4029 Cisplatin, alkylating agents
-s4030 Cross-links between DNA strands
-s4031 Chain terminators (no 3’-OH)
-s4032 Antiviral
-s4033 Rifampicin
-s4034 Bacterial RNA polymerase
-s4035 Tuberculosis, antibacterial
-s4036 Actinomycin D
-s4037 Intercalates into DNA, stops transcription
-s4038 α-Amanitin
-s4039 Eukaryotic RNA polymerase II
-s4040 Death cap toxin — liver necrosis
-s4041 8. Use of recombinant DNA and PCR in medicine
-s4042 **Recombinant DNA technology: restriction enzymes** (bacterial endonucleases that cut DNA at specific palindromic sequences) are used to cut out a gene, which is joined into a **vector** (plasmid, virus) with **DNA ligase** and introduced into bacteria, yeast or animal cells. This is how the following are obtained: human **insulin**, growth hormone, erythropoietin, interferons, clotting factors (VIII), hepatitis B vaccine, monoclonal antibodies.
-s4043 **Polymerase chain reaction (PCR):** in vitro amplification of a specific DNA segment. Each cycle: **denaturation** (94–95 °C) → **primer binding (annealing)** (50–65 °C) → **elongation** (72 °C, thermostable **Taq polymerase**). In 30–35 cycles the number of copies increases ≈ 2^n^ times (billions). The result is detected by agarose gel electrophoresis or in real time (fluorescent probes).
-s4044 **PCR-based diagnosis:** infections (SARS-CoV-2, HIV, hepatitis B and C viral load, mycobacteria of tuberculosis), hereditary diseases (mutations in cystic fibrosis and phenylketonuria), tumors (BCR-ABL), personal identification and paternity testing (forensic medicine), prenatal diagnosis. **Reverse transcription PCR (RT-PCR)** detects RNA viruses.
-s4045 Experiment 1: isolation and hydrolysis of nucleoproteins from yeast
-s4046 **Principle of the method:** nucleoproteins dissolve in weak alkali and precipitate when acid is added; on acid hydrolysis they break down into protein, purine bases, pentose and phosphoric acid.
-s4047 Grind 5 g of yeast with 0.4% NaOH solution, stir for 20 minutes and centrifuge.
-s4048 Add acetic acid to the supernatant — the nucleoproteins precipitate as white flakes.
-s4049 Hydrolyze the precipitate by boiling with 10% sulfuric acid for 1 hour, cool and filter.
-s4050 Experiment 2: qualitative reactions for the components of the hydrolysate
-s4051 **Protein part** — the biuret reaction: a violet color when NaOH and CuSO4 are added to the hydrolysate.
-s4052 **Purine bases** — the silver test: when ammoniacal AgNO3 is added, the silver salts of the purine bases form a light brown precipitate.
-s4053 **Pentose** — the orcinol (Bial) reaction: a **green** color on heating with HCl and FeCl3 (ribose); the **diphenylamine** reaction — a **blue** color (deoxyribose, DNA).
-s4054 **Phosphoric acid** — the molybdate reagent: on heating with ammonium molybdate and HNO3, a **yellow** crystalline precipitate (ammonium phosphomolybdate). **Results and analysis:** positive results of all the reactions confirm that nucleoproteins contain protein, nitrogenous bases, pentose and phosphate. Yeast contains mainly RNA, so the orcinol reaction is clearly positive.
-s4055 Experiment 3: interpretation of a PCR electropherogram (case-based)
-s4056 Identify the lanes on the gel image: marker (lengths of DNA fragments), positive control, negative control, patient samples.
-s4057 Compare the band in the patient sample with the positive control (the length must be the same).
-s4058 There must be no band in the negative control (if there is one — contamination, the result is invalid). **Results and analysis:** a band of the expected length in the patient lane is a positive result (pathogen DNA or a mutant allele is present).
-s4059 Skill: writing the complementary strand and the mRNA from a DNA sequence
-s4060 Mark the direction of the given strand (5’→3’).
-s4061 Write the complementary strand antiparallel: A↔T, G↔C (3’→5’).
-s4062 Write the mRNA from the template strand: U instead of T; the mRNA is identical to the coding strand (with U).
-s4063 Example: coding 5’-ATG GCT TAA-3’ → template 3’-TAC CGA ATT-5’ → mRNA 5’-AUG GCU UAA-3’.
-s4064 Skill: clinical interpretation of a PCR result
-s4065 Determine the purpose of the test (infection, mutation, viral load).
-s4066 Check that the controls worked correctly.
-s4067 Assess a qualitative (present/absent) or quantitative result (real-time PCR: the Ct value — the smaller it is, the more starting DNA there is).
-s4068 Consider the causes of false positives (contamination) and false negatives (inhibitors, sample quality).
-s4069 State the differences in the chemical composition and structure of DNA and RNA.
-s4070 State Chargaff's rules.
-s4071 List the main features of the Watson–Crick model.
-s4072 How are the nucleosome and chromatin organized?
-s4073 What are DNA denaturation and hybridization? What is their practical importance?
-s4074 What are the features of the mitochondrial genome?
-s4075 State the differences between prokaryotic and eukaryotic genes.
-s4076 List the main principles of replication.
-s4077 Which enzymes take part in replication?
-s4078 How are Okazaki fragments formed and joined?
-s4079 What is telomerase? What is its importance in aging and in tumors?
-s4080 What is the biological role of DNA methylation?
-s4081 Describe the stages of transcription and the eukaryotic RNA polymerases.
-s4082 State the post-transcriptional modifications of mRNA.
-s4083 Explain the principle of PCR and its use in medicine.
-s4084 Which nitrogenous base is not found in DNA?
-s4085 Adenine
-s4086 Guanine
-s4087 Cytosine
-s4088 Thymine
-s4089 Uracil
-s4090 According to Chargaff's rule, which equality is true for DNA?
-s4091 A = G
-s4092 A = C
-s4093 G = C
-s4094 T = G
-s4095 A + T = G + C
-s4096 How is the protein core of the nucleosome organized?
-s4097 A tetramer of histone H1
-s4098 2 each of H2A, H2B, H3, H4 — an octamer
-s4099 Only an H3 and H4 dimer
-s4100 Nonhistone proteins
-s4101 Protamines
-s4102 What does it mean that replication is semiconservative?
-s4103 Only one strand is copied
-s4104 Each new molecule has one old and one new strand
-s4105 The new molecules consist entirely of new strands
-s4106 Only half of the gene is copied
-s4107 Replication takes place only in half of the S phase
-s4108 Which enzyme joins Okazaki fragments?
-s4109 Helicase
-s4110 Primase
-s4111 DNA ligase
-s4112 Topoisomerase
-s4113 Telomerase
-s4114 What kind of enzyme is telomerase?
-s4115 A reverse transcriptase with an RNA template
-s4116 A restriction enzyme
-s4117 An RNA polymerase
-s4118 Which enzyme carries out mRNA synthesis in eukaryotes?
-s4119 DNA polymerase α
-s4120 Which feature distinguishes replication from transcription?
-s4121 DNA is used as the template
-s4122 Synthesis proceeds in the 5’→3’ direction
-s4123 The principle of complementarity
-s4124 A primer is required
-s4125 Phosphodiester bonds are formed
-s4126 What is splicing?
-s4127 Addition of a cap to the 5’-end of mRNA
-s4128 Removal of introns and joining of exons
-s4129 Addition of a poly(A) tail
-s4130 Addition of CCA to tRNA
-s4131 DNA methylation
-s4132 Which enzyme is inhibited by α-amanitin, the death cap toxin?
-s4133 DNA gyrase
-s4134 Reverse transcriptase
-s4135 Topoisomerase I
-s4136 What is the target of rifampicin?
-s4137 The 30S ribosomal subunit
-s4138 Topoisomerase II
-s4139 On which factor does the DNA melting temperature (Tm) depend?
-s4140 The adenine content
-s4141 The thymine content
-s4142 The proportion of G≡C pairs
-s4143 The type of pentose
-s4144 The phosphate content
-s4145 Which enzyme carries out the elongation step in PCR?
-s4146 Taq polymerase
-s4147 Which is a feature of mitochondrial DNA?
-s4148 It has a linear structure
-s4149 It is inherited through the father
-s4150 It is bound to histones
-s4151 It contains many introns
-s4152 It is inherited only through the mother
-s4153 What color does the diphenylamine reaction give in identifying the type of pentose?
-s4154 Green (ribose)
-s4155 Blue (deoxyribose)
-s4156 A family ate mushrooms gathered in the forest. After 10–12 hours vomiting, diarrhea and abdominal pain began; on day 3 jaundice appeared, blood ALT was 3500 U/l and the prothrombin index fell sharply.
-s4157 Which toxin is responsible? What is its molecular mechanism of action? Why is the liver specifically affected?
-s4158 The toxin of the death cap (Amanita phalloides) — α-amanitin. It inhibits eukaryotic RNA polymerase II: mRNA synthesis stops, proteins (including clotting factors) are not synthesized, and the cell dies. The toxin is absorbed from the intestine and reaches the liver first via the portal blood, actively enters hepatocytes through OATP transporters and acts again and again through the enterohepatic circulation — liver necrosis. The fall in the prothrombin index shows that protein synthesis in the liver is impaired.
-s4159 A patient was diagnosed with tuberculosis and treatment with rifampicin was started. After a few weeks his urine and tears turned orange-red. The patient asked whether the drug also stops RNA synthesis in human cells.
-s4160 What is the mechanism of action of rifampicin? Why does it have almost no effect on human cells?
-s4161 Rifampicin binds to the β subunit of the bacterial DNA-dependent RNA polymerase and blocks the initiation of transcription (the start of chain elongation). Eukaryotic RNA polymerases differ in structure and are not sensitive to rifampicin — hence its selective action. The orange color is the drug's own color (harmless). In addition, rifampicin induces cytochrome P450 in the liver — interactions with other drugs must be taken into account.
-s4162 A nasopharyngeal swab was taken from a patient and tested for a viral infection by real-time RT-PCR. Result: Ct = 18 (positive control Ct = 25, no signal in the negative control).
-s4163 How do you interpret the result? Why is the “RT” step needed to detect an RNA virus? What does the Ct value mean?
-s4164 The result is positive: the sample contains viral RNA and the controls worked correctly. Taq polymerase cannot amplify the genome of RNA viruses — first, complementary DNA (cDNA) is synthesized from the RNA by reverse transcriptase and then amplified by PCR. Ct is the number of the cycle at which the fluorescent signal crosses the threshold; the smaller the Ct, the more starting copies there are (Ct 18 — a high viral load, the patient is likely to be infectious).
-s4165 Chargaff's rules
-s4166 A = T, G = C; A + G = T + C
-s4167 Antiparallel right-handed double helix, A=T (2), G≡C (3 hydrogen bonds)
-s4168 Nucleosome
-s4169 Histone octamer + ≈ 146 base pairs of DNA
-s4170 Hybridization
-s4171 Joining of complementary strands; Tm depends on G≡C
-s4172 mtDNA
-s4173 Circular, 37 genes, inherited through the mother
-s4174 Replication
-s4175 Semiconservative, primer required, dNTPs, Okazaki fragments
+s3978 The substrates are **dNTPs** (dATP, dGTP, dCTP, dTTP); pyrophosphate is released and then hydrolyzed, which makes the process irreversible.
+s3979 Table 16.3. Eukaryotic DNA polymerases
+s3980 Polymerase
+s3981 α (with primase)
+s3982 Primer synthesis, initiation of Okazaki fragments
+s3983 Synthesis of the lagging strand; 3’→5’ exonuclease (proofreading)
+s3984 Synthesis of the leading strand; 3’→5’ exonuclease (proofreading)
+s3985 Repair (base excision pathway)
+s3986 Replication of mitochondrial DNA
+s3987 **Fidelity:** the **3’→5’ exonuclease (proofreading)** activity of DNA polymerases immediately removes a wrongly inserted nucleotide; together with mismatch repair, the error rate is ≈ 10^−9^–10^−10^.
+s3988 **Relation to the cell cycle:** G1 → S → G2 → M; the transitions are controlled by **cyclins** and **cyclin-dependent kinases (CDKs)**; at the checkpoints the **p53** and **Rb** proteins arrest the cycle when DNA is damaged (topics 18–19). Replication licensing is granted only once per cycle.
+s3989 4. Post-replicative modifications: methylation, telomeres
+s3990 **DNA methylation:** DNA methyltransferases (donor — S-adenosylmethionine) convert cytosine in **CpG** dinucleotides to 5-methylcytosine. Methylation of a promoter **silences** the gene — epigenetic regulation (X-chromosome inactivation, genomic imprinting; silencing of tumor suppressor genes by methylation in tumors).
+s3991 **Telomeres and telomerase:** the primer site at the 3’-end of linear DNA is not filled in, so the chromosome shortens with every division. The ends carry **telomeres** — (TTAGGG)n repeats. **Telomerase** is a **reverse transcriptase** with its own **RNA template**; it lengthens telomeres. It is active in germ cells, stem cells and **≈ 85–90% of tumor cells** (immortality), while its activity in somatic cells is low — telomere shortening is associated with **aging** (the Hayflick limit).
+s3992 5. Transcription
+s3993 **Transcription** is the synthesis of RNA on a DNA template. One DNA strand (antisense, noncoding) serves as the template; the RNA is complementary to it and similar to the coding strand (with U instead of T); synthesis proceeds in the 5’→3’ direction, **no primer is required**, and the substrates are NTPs.
+s3994 Table 16.4. Eukaryotic RNA polymerases
+s3995 Sensitivity to α-amanitin
+s3996 RNA polymerase I
+s3997 Nucleolus
+s3998 28S, 18S, 5.8S rRNA
+s3999 Not sensitive
+s4000 RNA polymerase II
+s4001 Nucleoplasm
+s4002 mRNA (pre-mRNA), most microRNAs
+s4003 Highly sensitive
+s4004 RNA polymerase III
+s4005 tRNA, 5S rRNA
+s4006 Stages:
+s4007 **Initiation** — the general transcription factors (TFIID binds to the TATA box) and RNA polymerase II bind to the **promoter** and open the DNA over ≈ 14 base pairs; TFIIH phosphorylates the CTD domain of the polymerase.
+s4008 **Elongation** — the polymerase moves along the DNA and elongates the RNA chain (≈ 40 nucleotides/s).
+s4009 **Termination** — synthesis stops at termination signals (in prokaryotes, the rho factor or a GC-rich hairpin). Bacteria have a single RNA polymerase (the σ subunit recognizes the promoter) — **rifampicin** inhibits this enzyme.
+s4010 6. Post-transcriptional modifications of RNA (processing)
+s4011 Figure 16.2
+s4012 Formation and maturation of eukaryotic mRNA (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
+s4013 Maturation of mRNA:
+s4014 **5’-cap** — 7-methylguanosine attached by a 5’-5’-triphosphate bond; it protects the mRNA from exonucleases and is required for ribosome binding;
+s4015 **3’-polyadenylation** — after cleavage downstream of the AAUAAA signal, poly(A) polymerase adds ≈ 200 adenylate residues; stability and export;
+s4016 **splicing** — removal of introns and joining of exons; the **spliceosome** (small nuclear RNAs — snRNAs — and proteins) recognizes the GU…AG boundaries. **Alternative splicing** — several proteins are produced from one gene (for example, calcitonin and CGRP);
+s4017 **RNA editing** — changes of individual nucleotides (apo B-100 in the liver, apo B-48 in the intestine — C→U editing, topic 8). **Maturation of rRNA:** the 45S precursor is cleaved in the nucleolus to form 28S, 18S and 5.8S rRNAs; nucleotides are methylated.
+s4018 **Maturation of tRNA:** the 5’- and 3’-ends are trimmed, **CCA** is added to the 3’-end (the amino acid attachment site), bases are modified (pseudouridine, dihydrouridine, inosine), and in some an intron is removed.
+s4019 Splicing defects: many forms of β-thalassemia — mutations in an intron of the β-globin gene lead to aberrant splicing. In systemic lupus erythematosus (SLE), autoantibodies against snRNPs (anti-Sm) are produced.
+s4020 7. Inhibitors of replication and transcription
+s4021 Table 16.5. Substances that affect template-directed syntheses
+s4022 Fluoroquinolones (ciprofloxacin)
+s4023 Inhibitor of bacterial DNA gyrase (topoisomerase II)
+s4024 Antibacterial
+s4025 Doxorubicin, etoposide
+s4026 Topoisomerase II inhibitor, intercalation
+s4027 Antitumor
+s4028 Irinotecan, topotecan
+s4029 Topoisomerase I inhibitor
+s4030 Cisplatin, alkylating agents
+s4031 Cross-links between DNA strands
+s4032 Chain terminators (no 3’-OH)
+s4033 Antiviral
+s4034 Rifampicin
+s4035 Bacterial RNA polymerase
+s4036 Tuberculosis, antibacterial
+s4037 Actinomycin D
+s4038 Intercalates into DNA, stops transcription
+s4039 α-Amanitin
+s4040 Eukaryotic RNA polymerase II
+s4041 Death cap toxin — liver necrosis
+s4042 8. Use of recombinant DNA and PCR in medicine
+s4043 **Recombinant DNA technology: restriction enzymes** (bacterial endonucleases that cut DNA at specific palindromic sequences) are used to cut out a gene, which is joined into a **vector** (plasmid, virus) with **DNA ligase** and introduced into bacteria, yeast or animal cells. This is how the following are obtained: human **insulin**, growth hormone, erythropoietin, interferons, clotting factors (VIII), hepatitis B vaccine, monoclonal antibodies.
+s4044 **Polymerase chain reaction (PCR):** in vitro amplification of a specific DNA segment. Each cycle: **denaturation** (94–95 °C) → **primer binding (annealing)** (50–65 °C) → **elongation** (72 °C, thermostable **Taq polymerase**). In 30–35 cycles the number of copies increases ≈ 2^n^ times (billions). The result is detected by agarose gel electrophoresis or in real time (fluorescent probes).
+s4045 **PCR-based diagnosis:** infections (SARS-CoV-2, HIV, hepatitis B and C viral load, mycobacteria of tuberculosis), hereditary diseases (mutations in cystic fibrosis and phenylketonuria), tumors (BCR-ABL), personal identification and paternity testing (forensic medicine), prenatal diagnosis. **Reverse transcription PCR (RT-PCR)** detects RNA viruses.
+s4046 Experiment 1: isolation and hydrolysis of nucleoproteins from yeast
+s4047 **Principle of the method:** nucleoproteins dissolve in weak alkali and precipitate when acid is added; on acid hydrolysis they break down into protein, purine bases, pentose and phosphoric acid.
+s4048 Grind 5 g of yeast with 0.4% NaOH solution, stir for 20 minutes and centrifuge.
+s4049 Add acetic acid to the supernatant — the nucleoproteins precipitate as white flakes.
+s4050 Hydrolyze the precipitate by boiling with 10% sulfuric acid for 1 hour, cool and filter.
+s4051 Experiment 2: qualitative reactions for the components of the hydrolysate
+s4052 **Protein part** — the biuret reaction: a violet color when NaOH and CuSO4 are added to the hydrolysate.
+s4053 **Purine bases** — the silver test: when ammoniacal AgNO3 is added, the silver salts of the purine bases form a light brown precipitate.
+s4054 **Pentose** — the orcinol (Bial) reaction: a **green** color on heating with HCl and FeCl3 (ribose); the **diphenylamine** reaction — a **blue** color (deoxyribose, DNA).
+s4055 **Phosphoric acid** — the molybdate reagent: on heating with ammonium molybdate and HNO3, a **yellow** crystalline precipitate (ammonium phosphomolybdate). **Results and analysis:** positive results of all the reactions confirm that nucleoproteins contain protein, nitrogenous bases, pentose and phosphate. Yeast contains mainly RNA, so the orcinol reaction is clearly positive.
+s4056 Experiment 3: interpretation of a PCR electropherogram (case-based)
+s4057 Identify the lanes on the gel image: marker (lengths of DNA fragments), positive control, negative control, patient samples.
+s4058 Compare the band in the patient sample with the positive control (the length must be the same).
+s4059 There must be no band in the negative control (if there is one — contamination, the result is invalid). **Results and analysis:** a band of the expected length in the patient lane is a positive result (pathogen DNA or a mutant allele is present).
+s4060 Skill: writing the complementary strand and the mRNA from a DNA sequence
+s4061 Mark the direction of the given strand (5’→3’).
+s4062 Write the complementary strand antiparallel: A↔T, G↔C (3’→5’).
+s4063 Write the mRNA from the template strand: U instead of T; the mRNA is identical to the coding strand (with U).
+s4064 Example: coding 5’-ATG GCT TAA-3’ → template 3’-TAC CGA ATT-5’ → mRNA 5’-AUG GCU UAA-3’.
+s4065 Skill: clinical interpretation of a PCR result
+s4066 Determine the purpose of the test (infection, mutation, viral load).
+s4067 Check that the controls worked correctly.
+s4068 Assess a qualitative (present/absent) or quantitative result (real-time PCR: the Ct value — the smaller it is, the more starting DNA there is).
+s4069 Consider the causes of false positives (contamination) and false negatives (inhibitors, sample quality).
+s4070 State the differences in the chemical composition and structure of DNA and RNA.
+s4071 State Chargaff's rules.
+s4072 List the main features of the Watson–Crick model.
+s4073 How are the nucleosome and chromatin organized?
+s4074 What are DNA denaturation and hybridization? What is their practical importance?
+s4075 What are the features of the mitochondrial genome?
+s4076 State the differences between prokaryotic and eukaryotic genes.
+s4077 List the main principles of replication.
+s4078 Which enzymes take part in replication?
+s4079 How are Okazaki fragments formed and joined?
+s4080 What is telomerase? What is its importance in aging and in tumors?
+s4081 What is the biological role of DNA methylation?
+s4082 Describe the stages of transcription and the eukaryotic RNA polymerases.
+s4083 State the post-transcriptional modifications of mRNA.
+s4084 Explain the principle of PCR and its use in medicine.
+s4085 Which nitrogenous base is not found in DNA?
+s4086 Adenine
+s4087 Guanine
+s4088 Cytosine
+s4089 Thymine
+s4090 Uracil
+s4091 According to Chargaff's rule, which equality is true for DNA?
+s4092 A = G
+s4093 A = C
+s4094 G = C
+s4095 T = G
+s4096 A + T = G + C
+s4097 How is the protein core of the nucleosome organized?
+s4098 A tetramer of histone H1
+s4099 2 each of H2A, H2B, H3, H4 — an octamer
+s4100 Only an H3 and H4 dimer
+s4101 Nonhistone proteins
+s4102 Protamines
+s4103 What does it mean that replication is semiconservative?
+s4104 Only one strand is copied
+s4105 Each new molecule has one old and one new strand
+s4106 The new molecules consist entirely of new strands
+s4107 Only half of the gene is copied
+s4108 Replication takes place only in half of the S phase
+s4109 Which enzyme joins Okazaki fragments?
+s4110 Helicase
+s4111 Primase
+s4112 DNA ligase
+s4113 Topoisomerase
+s4114 Telomerase
+s4115 What kind of enzyme is telomerase?
+s4116 A reverse transcriptase with an RNA template
+s4117 A restriction enzyme
+s4118 An RNA polymerase
+s4119 Which enzyme carries out mRNA synthesis in eukaryotes?
+s4120 DNA polymerase α
+s4121 Which feature distinguishes replication from transcription?
+s4122 DNA is used as the template
+s4123 Synthesis proceeds in the 5’→3’ direction
+s4124 The principle of complementarity
+s4125 A primer is required
+s4126 Phosphodiester bonds are formed
+s4127 What is splicing?
+s4128 Addition of a cap to the 5’-end of mRNA
+s4129 Removal of introns and joining of exons
+s4130 Addition of a poly(A) tail
+s4131 Addition of CCA to tRNA
+s4132 DNA methylation
+s4133 Which enzyme is inhibited by α-amanitin, the death cap toxin?
+s4134 DNA gyrase
+s4135 Reverse transcriptase
+s4136 Topoisomerase I
+s4137 What is the target of rifampicin?
+s4138 The 30S ribosomal subunit
+s4139 Topoisomerase II
+s4140 On which factor does the DNA melting temperature (Tm) depend?
+s4141 The adenine content
+s4142 The thymine content
+s4143 The proportion of G≡C pairs
+s4144 The type of pentose
+s4145 The phosphate content
+s4146 Which enzyme carries out the elongation step in PCR?
+s4147 Taq polymerase
+s4148 Which is a feature of mitochondrial DNA?
+s4149 It has a linear structure
+s4150 It is inherited through the father
+s4151 It is bound to histones
+s4152 It contains many introns
+s4153 It is inherited only through the mother
+s4154 What color does the diphenylamine reaction give in identifying the type of pentose?
+s4155 Green (ribose)
+s4156 Blue (deoxyribose)
+s4157 A family ate mushrooms gathered in the forest. After 10–12 hours vomiting, diarrhea and abdominal pain began; on day 3 jaundice appeared, blood ALT was 3500 U/l and the prothrombin index fell sharply.
+s4158 Which toxin is responsible? What is its molecular mechanism of action? Why is the liver specifically affected?
+s4159 The toxin of the death cap (Amanita phalloides) — α-amanitin. It inhibits eukaryotic RNA polymerase II: mRNA synthesis stops, proteins (including clotting factors) are not synthesized, and the cell dies. The toxin is absorbed from the intestine and reaches the liver first via the portal blood, actively enters hepatocytes through OATP transporters and acts again and again through the enterohepatic circulation — liver necrosis. The fall in the prothrombin index shows that protein synthesis in the liver is impaired.
+s4160 A patient was diagnosed with tuberculosis and treatment with rifampicin was started. After a few weeks his urine and tears turned orange-red. The patient asked whether the drug also stops RNA synthesis in human cells.
+s4161 What is the mechanism of action of rifampicin? Why does it have almost no effect on human cells?
+s4162 Rifampicin binds to the β subunit of the bacterial DNA-dependent RNA polymerase and blocks the initiation of transcription (the start of chain elongation). Eukaryotic RNA polymerases differ in structure and are not sensitive to rifampicin — hence its selective action. The orange color is the drug's own color (harmless). In addition, rifampicin induces cytochrome P450 in the liver — interactions with other drugs must be taken into account.
+s4163 A nasopharyngeal swab was taken from a patient and tested for a viral infection by real-time RT-PCR. Result: Ct = 18 (positive control Ct = 25, no signal in the negative control).
+s4164 How do you interpret the result? Why is the “RT” step needed to detect an RNA virus? What does the Ct value mean?
+s4165 The result is positive: the sample contains viral RNA and the controls worked correctly. Taq polymerase cannot amplify the genome of RNA viruses — first, complementary DNA (cDNA) is synthesized from the RNA by reverse transcriptase and then amplified by PCR. Ct is the number of the cycle at which the fluorescent signal crosses the threshold; the smaller the Ct, the more starting copies there are (Ct 18 — a high viral load, the patient is likely to be infectious).
+s4166 Chargaff's rules
+s4167 A = T, G = C; A + G = T + C
+s4168 Antiparallel right-handed double helix, A=T (2), G≡C (3 hydrogen bonds)
+s4169 Nucleosome
+s4170 Histone octamer + ≈ 146 base pairs of DNA
+s4171 Hybridization
+s4172 Joining of complementary strands; Tm depends on G≡C
+s4173 mtDNA
+s4174 Circular, 37 genes, inherited through the mother
+s4175 Replication
+s4176 Semiconservative, primer required, dNTPs, Okazaki fragments
+s4177 Enzymes
+s4178 Helicase, topoisomerase, primase, DNA pol α/δ/ε, ligase
+s4179 Reverse transcriptase with an RNA template; active in tumors
+s4180 5-Methylcytosine in CpG — silences the gene (epigenetics)
+s4181 Transcription
+s4182 No primer, NTPs; RNA pol II — mRNA (α-amanitin)
+s4183 Processing
+s4184 Cap, poly(A), splicing (snRNA), alternative splicing
+s4185 PCR
+s4186 95 → 55–65 → 72 °C; Taq polymerase; 2^n^ copies
+s4187 Translation. Regulation of gene expression
+s4188 To give the student knowledge of the genetic code and its properties, the components of the protein-synthesizing system, the stages of polypeptide chain synthesis on ribosomes, post-translational modification, protein folding and targeting, inhibitors of protein synthesis (antibiotics, toxins), the regulation of gene expression in prokaryotes and eukaryotes, and cell differentiation.
+s4189 the properties of the genetic code;
+s4190 the structure of tRNA and the role of aminoacyl-tRNA synthetases;
+s4191 the structure of ribosomes (prokaryotic and eukaryotic);
+s4192 the initiation, elongation and termination stages of translation;
+s4193 the main post-translational modifications;
+s4194 the antibiotics and toxins that block protein synthesis;

@@ -1,205 +1,183 @@
-s4392 They inactivate eEF2
-s4393 Which vitamin is required for the hydroxylation of proline and lysine in collagen?
-s4394 Vitamin K
-s4395 Vitamin B12
-s4396 Vitamin A
-s4397 Vitamin D
-s4398 What acts as the inducer in the lactose operon?
-s4399 Allolactose
-s4400 The repressor
-s4401 What is the weak activity of the lactose operon in the presence of abundant glucose called?
-s4402 Attenuation
-s4403 Catabolite repression
-s4404 Amplification
-s4405 Imprinting
-s4406 How does histone acetylation affect gene expression?
-s4407 It completely silences the gene
-s4408 It methylates DNA
-s4409 It stops splicing
-s4410 It loosens chromatin and activates transcription
-s4411 Which antibiotic can cause aplastic anemia by acting on mitochondrial ribosomes?
-s4412 Penicillin
-s4413 Ciprofloxacin
-s4414 Chloramphenicol
-s4415 Which small RNAs degrade mRNA or stop its translation in eukaryotes?
-s4416 MicroRNAs
-s4417 tRNA
-s4418 rRNA
-s4419 snRNA
-s4420 Telomerase RNA
-s4421 What type of mutation is the GAG → GUG substitution in the β-globin gene?
-s4422 Nonsense
-s4423 Frameshift
-s4424 Missense
-s4425 Synonymous (silent)
-s4426 Deletion
-s4427 An unvaccinated 6-year-old child has fever, sore throat, a gray, hard-to-remove membrane on the tonsils and swelling of the neck. A week later a heart rhythm disturbance developed (myocarditis).
-s4428 What is the disease? What is the molecular mechanism of action of the toxin? Why is the heart affected?
-s4429 Diphtheria. The toxin of Corynebacterium diphtheriae enters the cell by endocytosis, and its A fragment transfers an ADP-ribose residue from NAD+ to the elongation factor eEF2 (to the diphthamide residue) — eEF2 is inactivated, translocation and protein synthesis stop, and the cell dies. A single toxin molecule is enough to kill a cell. The toxin spreads through the blood and damages especially the myocardium and nerve tissue, where protein synthesis is active. Treatment — antitoxic serum (neutralizes the toxin before it enters the cells) and antibiotics; prevention — vaccine (toxoid).
-s4430 A patient has pneumonia; the physician wants to choose one of the antibiotics that act on the 70S ribosome. The patient is a pregnant woman (second trimester).
-s4431 Which antibiotics that block protein synthesis are not used in pregnancy, and why? Which group is relatively safe?
-s4432 Tetracyclines (30S — block the binding of aminoacyl-tRNA) form chelates with calcium and accumulate in fetal bones and teeth (tooth discoloration, slowed bone growth). Aminoglycosides (30S — misreading of the code) are ototoxic to the fetus (deafness). Chloramphenicol (50S) — the “gray baby syndrome” in newborns (insufficient glucuronidation in the liver) and bone marrow suppression through mitochondrial ribosomes. Macrolides (azithromycin — 50S, blocks translocation) are considered relatively safe. The selective action is based on the structural difference between 70S and 80S ribosomes.
-s4433 A patient has been diagnosed with sickle cell anemia. In the coding strand of the β-globin gene, codon 6 is GTG instead of GAG.
-s4434 What kind of mutation is this? What change occurs in the protein and how does it lead to the disease? What is the basis of treatment with hydroxycarbamide?
-s4435 A point missense mutation: GAG → GUG in the mRNA; in the protein, glutamate at position 6 (negatively charged, hydrophilic) is replaced by valine (hydrophobic) — HbS. Deoxygenated HbS molecules form long polymers through hydrophobic interactions; the erythrocytes become sickle-shaped, occlude small vessels (painful crises) and are rapidly destroyed (hemolytic anemia). Hydroxycarbamide reactivates expression of the γ-globin gene and increases the proportion of fetal hemoglobin (HbF); HbF blocks the polymerization of HbS.
-s4436 Genetic code
-s4437 Triplet, degenerate, unambiguous, nonoverlapping, universal
-s4438 Codons
-s4439 64; AUG — start (Met); UAA, UAG, UGA — stop
-s4440 Aminoacyl-tRNA synthetase
-s4441 Activates the amino acid, ensures fidelity
-s4442 Ribosome
-s4443 80S (40S + 60S); 70S (30S + 50S)
-s4444 Initiation
-s4445 Cap, scanning, Met-tRNAi in the P site
-s4446 Elongation
-s4447 Arrival at the A site → peptidyl transferase (28S rRNA) → translocation (eEF2)
-s4448 4 high-energy bonds / peptide bond
-s4449 Post-translational
-s4450 Proteolysis, phosphorylation, glycosylation, hydroxylation (vit. C), carboxylation (vit. K)
-s4451 Antibiotics
-s4452 Tetracycline, aminoglycoside (30S); chloramphenicol, macrolide (50S)
-s4453 Toxins
-s4454 Diphtheria (eEF2), ricin (28S rRNA)
-s4455 Lactose operon
-s4456 Repressor + inducer (allolactose); cAMP–CAP
-s4457 Eukaryotic regulation
-s4458 Chromatin, transcription factors, splicing, microRNA, translation
-s4459 DNA damage and repair. Apoptosis. Basics of gene therapy
-s4460 To give the student knowledge of the causes and types of DNA damage, molecular mutations (substitution, deletion, insertion), repair systems and their defects, genetic variability and protein polymorphism, the molecular basis of hereditary diseases, the use of DNA technologies in medicine, the differences between apoptosis and necrosis, the regulation of apoptosis, and the basics of cloning and gene therapy.
-s4461 the physical, chemical and biological factors that damage DNA;
-s4462 the classification of mutations and their effect on proteins;
-s4463 the main repair systems (BER, NER, MMR, repair of double-strand breaks);
-s4464 the diseases associated with repair defects;
-s4465 protein polymorphism and its clinical importance;
-s4466 the extrinsic and intrinsic pathways of apoptosis and the proteins that regulate it;
-s4467 the principles and vectors of gene therapy. **The student should be able to:**
-s4468 identify the type of mutation from a sequence;
-s4469 distinguish apoptosis from necrosis by biochemical features;
-s4470 choose a method of molecular diagnosis for a hereditary disease.
-s4471 Diseases associated with repair defects: **xeroderma pigmentosum** (NER), **Lynch syndrome** (MMR), **BRCA1/2** (homologous recombination), **ataxia-telangiectasia** (ATM), **Fanconi anemia** (cross-link repair), **Bloom syndrome** (helicase). The common feature is a predisposition to tumors.
-s4472 1. Causes of DNA damage
-s4473 Tens of thousands of DNA lesions occur in each cell per day; most of them are corrected by the repair systems.
-s4474 Table 18.1. Factors that damage DNA
-s4475 Factors
-s4476 Type of damage
-s4477 Spontaneous (internal)
-s4478 Water, reactive oxygen species, replication errors
-s4479 Depurination, deamination of cytosine to uracil, 8-oxoguanine, mispairing
-s4480 Physical
-s4481 Ultraviolet radiation
-s4482 Thymine (pyrimidine) dimers
-s4483 Ionizing radiation (X-rays, γ-rays)
-s4484 Single- and double-strand breaks, free radicals
-s4485 Chemical
-s4486 Alkylating agents (nitrosamines, sulfur mustard, cyclophosphamide)
-s4487 Alkylation of bases (O^6^-methylguanine)
-s4488 Benzo(a)pyrene, aflatoxin B~1~
-s4489 Bulky adducts (with guanine)
-s4490 Intercalators (acridines, doxorubicin)
-s4491 Base analogs (5-bromouracil)
-s4492 Mispairing
-s4493 Biological
-s4494 Viruses (HPV, hepatitis B, retroviruses), transposons
-s4495 Integration into DNA, gene disruption
-s4496 2. Mutations
-s4497 A **mutation** is a heritable change in the nucleotide sequence of DNA. Mutations in germ cells are passed on to offspring (hereditary diseases), while somatic mutations lead to tumors and aging.
-s4498 **By level:** gene (point), chromosomal (deletion, duplication, inversion, translocation — the Philadelphia chromosome t(9;22)), genomic (aneuploidy — Down syndrome, trisomy 21).
-s4499 Table 18.2. Molecular (gene) mutations and their effect on proteins
-s4500 Mutation
-s4501 Effect on the protein
-s4502 The codon changes, the amino acid does not
-s4503 None
-s4504 Because of the degeneracy of the code
-s4505 A different amino acid is coded
-s4506 Activity is changed or preserved
-s4507 HbS (Glu6Val)
-s4508 The codon becomes a stop codon
-s4509 A shortened, often inactive protein
-s4510 Some forms of β^0^-thalassemia
-s4511 Insertion or deletion of a number of nucleotides that is not a multiple of 3
-s4512 All subsequent amino acids change
-s4513 Tay–Sachs disease, many forms of Duchenne muscular dystrophy
-s4514 In-frame deletion
-s4515 Loss of 3 nucleotides
-s4516 One amino acid is missing
-s4517 Cystic fibrosis (ΔF508)
-s4518 Trinucleotide repeat expansion
-s4519 Increase of (CAG)n, (CGG)n
-s4520 Toxic protein or gene silencing
-s4521 Huntington disease, fragile X syndrome
-s4522 Splicing mutations
-s4523 At the intron–exon boundary
-s4524 Abnormal mRNA
-s4525 β^+^-thalassemia
-s4526 **Transition** — a purine is replaced by a purine or a pyrimidine by a pyrimidine; **transversion** — a purine is replaced by a pyrimidine.
-s4527 3. DNA repair
-s4528 Figure 18.1
-s4529 Types of DNA damage, repair systems and their defects (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
-s4530 **Direct repair:** O^6^-methylguanine-DNA methyltransferase transfers the methyl group to itself (a “suicide” enzyme); in bacteria **photolyase** splits thymine dimers under the action of light (absent in humans).
-s4531 **Base excision repair (BER):** a damaged base (uracil, 8-oxoguanine, an alkylated base) is recognized by a specific **DNA glycosylase**, which cleaves the N-glycosidic bond; the resulting apurinic/apyrimidinic (AP) site is cut by **AP endonuclease**; DNA polymerase β fills the gap and DNA ligase seals it. This is also why DNA contains thymine instead of uracil: uracil formed by deamination of cytosine is recognized as “foreign”.
-s4532 **Nucleotide excision repair (NER):** bulky lesions (thymine dimers, benzo(a)pyrene adducts) — a complex of XP proteins cuts the damaged strand on both sides and removes a fragment of ≈ 24–32 nucleotides; DNA polymerase δ/ε and ligase fill it in.
-s4533 **Xeroderma pigmentosum** is a hereditary defect of the NER enzymes (XP-A … XP-G) (autosomal recessive). Thymine dimers formed under sunlight are not repaired: the skin is very sensitive, there are freckles, and multiple **skin cancers** (basal cell carcinoma, melanoma) appear at an early age (before 10 years). Prevention — complete protection from the sun.
-s4534 **Mismatch repair (MMR):** after replication, mispaired bases and small loops are recognized by **MSH2/MSH6**, and **MLH1/PMS2** nick the new strand; the new strand is removed by an exonuclease and resynthesized. Its defect causes **microsatellite instability** and **Lynch syndrome** (hereditary nonpolyposis colorectal cancer, endometrial cancer).
-s4535 Repair of double-strand breaks:
-s4536 **homologous recombination** — uses the sister chromatid as a template (in the S and G2 phases) and is accurate; the **BRCA1 and BRCA2** proteins take part — their defect sharply increases the risk of breast and ovarian cancer; the ATM kinase senses the break (ataxia-telangiectasia);
-s4537 **nonhomologous end joining (NHEJ)** — Ku proteins and DNA-PK; fast, but nucleotides are sometimes lost (error-prone). **SOS repair (translesion synthesis):** special low-fidelity DNA polymerases “bypass” the damaged site — the probability of mutations is high.
-s4538 4. Genetic variability. The human genome. Protein polymorphism
-s4539 **Mechanisms of genetic variability:** mutations, recombination in meiosis (crossing-over), independent assortment of chromosomes, transposons.
-s4540 **The human genome:** ≈ 3.1 × 10^9^ base pairs; the protein-coding part is ≈ 1.5%; the rest consists of introns, regulatory elements, repetitive sequences (Alu, LINE, microsatellites) and pseudogenes. The genomes of two people are ≈ 99.9% identical; the differences consist mainly of **single nucleotide polymorphisms (SNPs)** and copy number variations.
-s4541 **Polymorphism** means gene variants that occur in a population with a frequency of ≥ 1%. **Protein polymorphism** means several variants (allelic forms) of one protein:
-s4542 **AB0 blood groups** — glycosyltransferase variants;
-s4543 the **HLA system** — very high polymorphism (transplantation, susceptibility to autoimmune diseases);
-s4544 **hemoglobin variants** — HbS, HbC, HbE (more than 300);
-s4545 **glucose-6-phosphate dehydrogenase** variants (topic 7);
-s4546 **cytochrome P450** polymorphism (CYP2D6, CYP2C19) — “fast” or “slow” drug metabolizers (**pharmacogenetics**);
-s4547 **N-acetyltransferase** — slow and fast acetylators of isoniazid;
-s4548 **pseudocholinesterase** — with the atypical variant suxamethonium acts for a long time (apnea);
-s4549 **α~1~-antitrypsin** variants (PiZZ — emphysema, liver cirrhosis).
-s4550 5. Hereditary diseases and DNA technologies
-s4551 **Monogenic diseases:** autosomal dominant (familial hypercholesterolemia, Marfan syndrome, Huntington disease), autosomal recessive (phenylketonuria, cystic fibrosis, sickle cell anemia, glycogenoses), X-linked (hemophilia A and B, Duchenne muscular dystrophy, G6PD deficiency, Lesch–Nyhan syndrome). **Mitochondrial** — through the mother. **Multifactorial** — type 2 diabetes, atherosclerosis, hypertension.
-s4552 DNA technologies in medicine:
-s4553 **PCR** and real-time PCR — detection of mutations and infections (topic 16);
-s4554 **restriction fragment length polymorphism (RFLP)** — if a mutation changes a restriction enzyme cutting site, the fragment lengths differ (diagnosis of sickle cell anemia);
-s4555 **Southern blot** (DNA), **Northern blot** (RNA), **Western blot** (protein);
-s4556 **sequencing** — the Sanger method, next-generation sequencing (whole exome/genome);
-s4557 **FISH** — detection of chromosomal changes with fluorescent probes;
-s4558 **DNA microarrays** — expression of thousands of genes or SNPs;
-s4559 **genetic fingerprinting** (microsatellites) — forensic medicine, paternity testing;
-s4560 **prenatal diagnosis** — chorionic villi, amniocytes, cell-free fetal DNA in maternal blood.
-s4561 6. Apoptosis and necrosis
-s4562 **Apoptosis** is an energy-requiring, genetically programmed cell death. Its importance: embryogenesis (tissue between the fingers), the immune system (elimination of autoreactive lymphocytes), elimination of damaged and tumor cells, tissue homeostasis.
-s4563 Table 18.3. Differences between apoptosis and necrosis
-s4564 Apoptosis
-s4565 Necrosis
-s4566 Cause
-s4567 Physiological and pathological signals, DNA damage
-s4568 Severe injury: ischemia, toxins, temperature
-s4569 Extent
-s4570 Individual cells
-s4571 Groups of cells
-s4572 Cell volume
-s4573 Decreases (shrinks)
-s4574 Swells
-s4575 Membrane
-s4576 Remains intact; phosphatidylserine moves to the outer leaflet
-s4577 Is destroyed
-s4578 Chromatin
-s4579 Condenses; DNA is cut into fragments of ≈ 180–200 base pairs (a “ladder”)
-s4580 Is degraded randomly
-s4581 Required
-s4582 Not required (ATP is depleted)
-s4583 (ATP)
-s4584 Phagocytosis of apoptotic bodies, no inflammation
-s4585 Cell contents are released — inflammation
-s4586 Caspases
-s4587 Lysosomal enzymes, calpains
-s4588 Figure 18.2
-s4589 The extrinsic and intrinsic pathways of apoptosis (drawn after Severin E.S.)
-s4590 **Caspases** are proteases with cysteine in the active site that cleave after aspartate; they are synthesized as procaspases. **Initiator** (8, 9) and **effector** (3, 6, 7) caspases are distinguished. Effector caspases cleave cytoskeletal proteins, nuclear lamins and DNA repair enzymes (PARP) and activate **caspase-activated DNase**.
-s4591 The **Bcl-2 family** — antiapoptotic (Bcl-2, Bcl-xL) and proapoptotic (Bax, Bak, Bid, Bad) proteins regulate the permeability of the outer mitochondrial membrane;
-s4592 **p53** (“guardian of the genome”) accumulates when DNA is damaged, arrests the cell cycle in G1 (p21) and activates repair; if the damage cannot be repaired, it triggers apoptosis through Bax, PUMA and NOXA;
-s4593 **IAP** proteins (inhibitors of apoptosis) block caspases;
-s4594 growth factors and the PI3K/Akt pathway — survival signals. **Disorders of apoptosis:** decreased apoptosis — tumors (overexpression of Bcl-2 in follicular lymphoma, t(14;18); p53 mutations) and autoimmune diseases; increased apoptosis — neurodegenerative diseases (Alzheimer, Parkinson), the penumbra zone in myocardial infarction and stroke, death of CD4 lymphocytes in AIDS.
-s4595 7. Basics of cloning and gene therapy
-s4596 **Cloning: gene (molecular) cloning** — inserting a gene into a vector and propagating it in bacteria or cell culture (production of recombinant proteins); **cell clones** — genetically identical cells derived from a single cell (monoclonal antibodies — hybridomas); **reproductive cloning** — somatic cell nuclear transfer (“Dolly” the sheep); **therapeutic cloning** — obtaining stem cells matched to the patient. The clinical importance of clones: monoclonal gammopathies (myeloma) and the **clonal** origin of tumors.
+s4430 Diphtheria. The toxin of Corynebacterium diphtheriae enters the cell by endocytosis, and its A fragment transfers an ADP-ribose residue from NAD+ to the elongation factor eEF2 (to the diphthamide residue) — eEF2 is inactivated, translocation and protein synthesis stop, and the cell dies. A single toxin molecule is enough to kill a cell. The toxin spreads through the blood and damages especially the myocardium and nerve tissue, where protein synthesis is active. Treatment — antitoxic serum (neutralizes the toxin before it enters the cells) and antibiotics; prevention — vaccine (toxoid).
+s4431 A patient has pneumonia; the physician wants to choose one of the antibiotics that act on the 70S ribosome. The patient is a pregnant woman (second trimester).
+s4432 Which antibiotics that block protein synthesis are not used in pregnancy, and why? Which group is relatively safe?
+s4433 Tetracyclines (30S — block the binding of aminoacyl-tRNA) form chelates with calcium and accumulate in fetal bones and teeth (tooth discoloration, slowed bone growth). Aminoglycosides (30S — misreading of the code) are ototoxic to the fetus (deafness). Chloramphenicol (50S) — the “gray baby syndrome” in newborns (insufficient glucuronidation in the liver) and bone marrow suppression through mitochondrial ribosomes. Macrolides (azithromycin — 50S, blocks translocation) are considered relatively safe. The selective action is based on the structural difference between 70S and 80S ribosomes.
+s4434 A patient has been diagnosed with sickle cell anemia. In the coding strand of the β-globin gene, codon 6 is GTG instead of GAG.
+s4435 What kind of mutation is this? What change occurs in the protein and how does it lead to the disease? What is the basis of treatment with hydroxycarbamide?
+s4436 A point missense mutation: GAG → GUG in the mRNA; in the protein, glutamate at position 6 (negatively charged, hydrophilic) is replaced by valine (hydrophobic) — HbS. Deoxygenated HbS molecules form long polymers through hydrophobic interactions; the erythrocytes become sickle-shaped, occlude small vessels (painful crises) and are rapidly destroyed (hemolytic anemia). Hydroxycarbamide reactivates expression of the γ-globin gene and increases the proportion of fetal hemoglobin (HbF); HbF blocks the polymerization of HbS.
+s4437 Genetic code
+s4438 Triplet, degenerate, unambiguous, nonoverlapping, universal
+s4439 Codons
+s4440 64; AUG — start (Met); UAA, UAG, UGA — stop
+s4441 Aminoacyl-tRNA synthetase
+s4442 Activates the amino acid, ensures fidelity
+s4443 Ribosome
+s4444 80S (40S + 60S); 70S (30S + 50S)
+s4445 Initiation
+s4446 Cap, scanning, Met-tRNAi in the P site
+s4447 Elongation
+s4448 Arrival at the A site → peptidyl transferase (28S rRNA) → translocation (eEF2)
+s4449 4 high-energy bonds / peptide bond
+s4450 Post-translational
+s4451 Proteolysis, phosphorylation, glycosylation, hydroxylation (vit. C), carboxylation (vit. K)
+s4452 Antibiotics
+s4453 Tetracycline, aminoglycoside (30S); chloramphenicol, macrolide (50S)
+s4454 Toxins
+s4455 Diphtheria (eEF2), ricin (28S rRNA)
+s4456 Lactose operon
+s4457 Repressor + inducer (allolactose); cAMP–CAP
+s4458 Eukaryotic regulation
+s4459 Chromatin, transcription factors, splicing, microRNA, translation
+s4460 DNA damage and repair. Apoptosis. Basics of gene therapy
+s4461 To give the student knowledge of the causes and types of DNA damage, molecular mutations (substitution, deletion, insertion), repair systems and their defects, genetic variability and protein polymorphism, the molecular basis of hereditary diseases, the use of DNA technologies in medicine, the differences between apoptosis and necrosis, the regulation of apoptosis, and the basics of cloning and gene therapy.
+s4462 the physical, chemical and biological factors that damage DNA;
+s4463 the classification of mutations and their effect on proteins;
+s4464 the main repair systems (BER, NER, MMR, repair of double-strand breaks);
+s4465 the diseases associated with repair defects;
+s4466 protein polymorphism and its clinical importance;
+s4467 the extrinsic and intrinsic pathways of apoptosis and the proteins that regulate it;
+s4468 the principles and vectors of gene therapy.
+s4469 identify the type of mutation from a sequence;
+s4470 distinguish apoptosis from necrosis by biochemical features;
+s4471 choose a method of molecular diagnosis for a hereditary disease.
+s4472 Diseases associated with repair defects: **xeroderma pigmentosum** (NER), **Lynch syndrome** (MMR), **BRCA1/2** (homologous recombination), **ataxia-telangiectasia** (ATM), **Fanconi anemia** (cross-link repair), **Bloom syndrome** (helicase). The common feature is a predisposition to tumors.
+s4473 1. Causes of DNA damage
+s4474 Tens of thousands of DNA lesions occur in each cell per day; most of them are corrected by the repair systems.
+s4475 Table 18.1. Factors that damage DNA
+s4476 Factors
+s4477 Type of damage
+s4478 Spontaneous (internal)
+s4479 Water, reactive oxygen species, replication errors
+s4480 Depurination, deamination of cytosine to uracil, 8-oxoguanine, mispairing
+s4481 Physical
+s4482 Ultraviolet radiation
+s4483 Thymine (pyrimidine) dimers
+s4484 Ionizing radiation (X-rays, γ-rays)
+s4485 Single- and double-strand breaks, free radicals
+s4486 Chemical
+s4487 Alkylating agents (nitrosamines, sulfur mustard, cyclophosphamide)
+s4488 Alkylation of bases (O^6^-methylguanine)
+s4489 Benzo(a)pyrene, aflatoxin B~1~
+s4490 Bulky adducts (with guanine)
+s4491 Intercalators (acridines, doxorubicin)
+s4492 Base analogs (5-bromouracil)
+s4493 Mispairing
+s4494 Biological
+s4495 Viruses (HPV, hepatitis B, retroviruses), transposons
+s4496 Integration into DNA, gene disruption
+s4497 2. Mutations
+s4498 A **mutation** is a heritable change in the nucleotide sequence of DNA. Mutations in germ cells are passed on to offspring (hereditary diseases), while somatic mutations lead to tumors and aging.
+s4499 **By level:** gene (point), chromosomal (deletion, duplication, inversion, translocation — the Philadelphia chromosome t(9;22)), genomic (aneuploidy — Down syndrome, trisomy 21).
+s4500 Table 18.2. Molecular (gene) mutations and their effect on proteins
+s4501 Mutation
+s4502 Effect on the protein
+s4503 The codon changes, the amino acid does not
+s4504 None
+s4505 Because of the degeneracy of the code
+s4506 A different amino acid is coded
+s4507 Activity is changed or preserved
+s4508 HbS (Glu6Val)
+s4509 The codon becomes a stop codon
+s4510 A shortened, often inactive protein
+s4511 Some forms of β^0^-thalassemia
+s4512 Insertion or deletion of a number of nucleotides that is not a multiple of 3
+s4513 All subsequent amino acids change
+s4514 Tay–Sachs disease, many forms of Duchenne muscular dystrophy
+s4515 In-frame deletion
+s4516 Loss of 3 nucleotides
+s4517 One amino acid is missing
+s4518 Cystic fibrosis (ΔF508)
+s4519 Trinucleotide repeat expansion
+s4520 Increase of (CAG)n, (CGG)n
+s4521 Toxic protein or gene silencing
+s4522 Huntington disease, fragile X syndrome
+s4523 Splicing mutations
+s4524 At the intron–exon boundary
+s4525 Abnormal mRNA
+s4526 β^+^-thalassemia
+s4527 **Transition** — a purine is replaced by a purine or a pyrimidine by a pyrimidine; **transversion** — a purine is replaced by a pyrimidine.
+s4528 3. DNA repair
+s4529 Figure 18.1
+s4530 Types of DNA damage, repair systems and their defects (drawn after Lippincott’s Illustrated Reviews: Biochemistry)
+s4531 **Direct repair:** O^6^-methylguanine-DNA methyltransferase transfers the methyl group to itself (a “suicide” enzyme); in bacteria **photolyase** splits thymine dimers under the action of light (absent in humans).
+s4532 **Base excision repair (BER):** a damaged base (uracil, 8-oxoguanine, an alkylated base) is recognized by a specific **DNA glycosylase**, which cleaves the N-glycosidic bond; the resulting apurinic/apyrimidinic (AP) site is cut by **AP endonuclease**; DNA polymerase β fills the gap and DNA ligase seals it. This is also why DNA contains thymine instead of uracil: uracil formed by deamination of cytosine is recognized as “foreign”.
+s4533 **Nucleotide excision repair (NER):** bulky lesions (thymine dimers, benzo(a)pyrene adducts) — a complex of XP proteins cuts the damaged strand on both sides and removes a fragment of ≈ 24–32 nucleotides; DNA polymerase δ/ε and ligase fill it in.
+s4534 **Xeroderma pigmentosum** is a hereditary defect of the NER enzymes (XP-A … XP-G) (autosomal recessive). Thymine dimers formed under sunlight are not repaired: the skin is very sensitive, there are freckles, and multiple **skin cancers** (basal cell carcinoma, melanoma) appear at an early age (before 10 years). Prevention — complete protection from the sun.
+s4535 **Mismatch repair (MMR):** after replication, mispaired bases and small loops are recognized by **MSH2/MSH6**, and **MLH1/PMS2** nick the new strand; the new strand is removed by an exonuclease and resynthesized. Its defect causes **microsatellite instability** and **Lynch syndrome** (hereditary nonpolyposis colorectal cancer, endometrial cancer).
+s4536 Repair of double-strand breaks:
+s4537 **homologous recombination** — uses the sister chromatid as a template (in the S and G2 phases) and is accurate; the **BRCA1 and BRCA2** proteins take part — their defect sharply increases the risk of breast and ovarian cancer; the ATM kinase senses the break (ataxia-telangiectasia);
+s4538 **nonhomologous end joining (NHEJ)** — Ku proteins and DNA-PK; fast, but nucleotides are sometimes lost (error-prone). **SOS repair (translesion synthesis):** special low-fidelity DNA polymerases “bypass” the damaged site — the probability of mutations is high.
+s4539 4. Genetic variability. The human genome. Protein polymorphism
+s4540 **Mechanisms of genetic variability:** mutations, recombination in meiosis (crossing-over), independent assortment of chromosomes, transposons.
+s4541 **The human genome:** ≈ 3.1 × 10^9^ base pairs; the protein-coding part is ≈ 1.5%; the rest consists of introns, regulatory elements, repetitive sequences (Alu, LINE, microsatellites) and pseudogenes. The genomes of two people are ≈ 99.9% identical; the differences consist mainly of **single nucleotide polymorphisms (SNPs)** and copy number variations.
+s4542 **Polymorphism** means gene variants that occur in a population with a frequency of ≥ 1%. **Protein polymorphism** means several variants (allelic forms) of one protein:
+s4543 **AB0 blood groups** — glycosyltransferase variants;
+s4544 the **HLA system** — very high polymorphism (transplantation, susceptibility to autoimmune diseases);
+s4545 **hemoglobin variants** — HbS, HbC, HbE (more than 300);
+s4546 **glucose-6-phosphate dehydrogenase** variants (topic 7);
+s4547 **cytochrome P450** polymorphism (CYP2D6, CYP2C19) — “fast” or “slow” drug metabolizers (**pharmacogenetics**);
+s4548 **N-acetyltransferase** — slow and fast acetylators of isoniazid;
+s4549 **pseudocholinesterase** — with the atypical variant suxamethonium acts for a long time (apnea);
+s4550 **α~1~-antitrypsin** variants (PiZZ — emphysema, liver cirrhosis).
+s4551 5. Hereditary diseases and DNA technologies
+s4552 **Monogenic diseases:** autosomal dominant (familial hypercholesterolemia, Marfan syndrome, Huntington disease), autosomal recessive (phenylketonuria, cystic fibrosis, sickle cell anemia, glycogenoses), X-linked (hemophilia A and B, Duchenne muscular dystrophy, G6PD deficiency, Lesch–Nyhan syndrome). **Mitochondrial** — through the mother. **Multifactorial** — type 2 diabetes, atherosclerosis, hypertension.
+s4553 DNA technologies in medicine:
+s4554 **PCR** and real-time PCR — detection of mutations and infections (topic 16);
+s4555 **restriction fragment length polymorphism (RFLP)** — if a mutation changes a restriction enzyme cutting site, the fragment lengths differ (diagnosis of sickle cell anemia);
+s4556 **Southern blot** (DNA), **Northern blot** (RNA), **Western blot** (protein);
+s4557 **sequencing** — the Sanger method, next-generation sequencing (whole exome/genome);
+s4558 **FISH** — detection of chromosomal changes with fluorescent probes;
+s4559 **DNA microarrays** — expression of thousands of genes or SNPs;
+s4560 **genetic fingerprinting** (microsatellites) — forensic medicine, paternity testing;
+s4561 **prenatal diagnosis** — chorionic villi, amniocytes, cell-free fetal DNA in maternal blood.
+s4562 6. Apoptosis and necrosis
+s4563 **Apoptosis** is an energy-requiring, genetically programmed cell death. Its importance: embryogenesis (tissue between the fingers), the immune system (elimination of autoreactive lymphocytes), elimination of damaged and tumor cells, tissue homeostasis.
+s4564 Table 18.3. Differences between apoptosis and necrosis
+s4565 Apoptosis
+s4566 Necrosis
+s4567 Cause
+s4568 Physiological and pathological signals, DNA damage
+s4569 Severe injury: ischemia, toxins, temperature
+s4570 Extent
+s4571 Individual cells
+s4572 Groups of cells
+s4573 Cell volume
+s4574 Decreases (shrinks)
+s4575 Swells
+s4576 Membrane
+s4577 Remains intact; phosphatidylserine moves to the outer leaflet
+s4578 Is destroyed
+s4579 Chromatin
+s4580 Condenses; DNA is cut into fragments of ≈ 180–200 base pairs (a “ladder”)
+s4581 Is degraded randomly
+s4582 Required
+s4583 Not required (ATP is depleted)
+s4584 (ATP)
+s4585 Phagocytosis of apoptotic bodies, no inflammation
+s4586 Cell contents are released — inflammation
+s4587 Caspases
+s4588 Lysosomal enzymes, calpains
+s4589 Figure 18.2
+s4590 The extrinsic and intrinsic pathways of apoptosis (drawn after Severin E.S.)
+s4591 **Caspases** are proteases with cysteine in the active site that cleave after aspartate; they are synthesized as procaspases. **Initiator** (8, 9) and **effector** (3, 6, 7) caspases are distinguished. Effector caspases cleave cytoskeletal proteins, nuclear lamins and DNA repair enzymes (PARP) and activate **caspase-activated DNase**.
+s4592 The **Bcl-2 family** — antiapoptotic (Bcl-2, Bcl-xL) and proapoptotic (Bax, Bak, Bid, Bad) proteins regulate the permeability of the outer mitochondrial membrane;
+s4593 **p53** (“guardian of the genome”) accumulates when DNA is damaged, arrests the cell cycle in G1 (p21) and activates repair; if the damage cannot be repaired, it triggers apoptosis through Bax, PUMA and NOXA;
+s4594 **IAP** proteins (inhibitors of apoptosis) block caspases;
+s4595 growth factors and the PI3K/Akt pathway — survival signals. **Disorders of apoptosis:** decreased apoptosis — tumors (overexpression of Bcl-2 in follicular lymphoma, t(14;18); p53 mutations) and autoimmune diseases; increased apoptosis — neurodegenerative diseases (Alzheimer, Parkinson), the penumbra zone in myocardial infarction and stroke, death of CD4 lymphocytes in AIDS.
+s4596 7. Basics of cloning and gene therapy
+s4597 **Cloning: gene (molecular) cloning** — inserting a gene into a vector and propagating it in bacteria or cell culture (production of recombinant proteins); **cell clones** — genetically identical cells derived from a single cell (monoclonal antibodies — hybridomas); **reproductive cloning** — somatic cell nuclear transfer (“Dolly” the sheep); **therapeutic cloning** — obtaining stem cells matched to the patient. The clinical importance of clones: monoclonal gammopathies (myeloma) and the **clonal** origin of tumors.
+s4598 **Gene therapy** is the introduction of genetic material into cells in order to treat a disease.
+s4599 Table 18.4. Strategies and vectors of gene therapy
+s4600 Approach
+s4601 Gene addition (replacement)
+s4602 Introduction of a normal copy in place of the defective gene (adenosine deaminase deficiency — the first gene therapy, 1990; spinal muscular atrophy; hemophilia B)
+s4603 Gene editing
+s4604 CRISPR-Cas9 — cutting DNA at a precise site and correcting it (increasing HbF via BCL11A in sickle cell anemia and β-thalassemia)
+s4605 Silencing of gene expression
+s4606 Antisense oligonucleotides, siRNA (transthyretin amyloidosis)
+s4607 Cell therapy
+s4608 CAR-T cells — a gene for a receptor against a tumor antigen is introduced into the patient's T lymphocytes (B-cell leukemias)
+s4609 Viral vectors
+s4610 Retroviruses and lentiviruses (integration into the genome — for stem cells; risk of insertional mutagenesis), adenoviruses, adeno-associated viruses (AAV — no integration, safer)
+s4611 Nonviral methods
+s4612 Liposomes, lipid nanoparticles, electroporation, “naked” DNA
