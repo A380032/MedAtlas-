@@ -167,7 +167,11 @@ def build(pages=None):
             for c in tp["cases"]:
                 s.append(f'<div class="case"><h3>{inline(c["title"])}</h3><p>{inline(c["text"])}</p>'
                          f'<p><b>{esc(L["ask"])}</b> {inline(c["ask"])}</p><p><b>{esc(L["answer"])}</b> {inline(c["answer"])}</p></div>')
-        if tp.get("cards"):
+        if tp.get("cards") and tp.get("cards_head"):
+            # ko'p ustunli tezkor takrorlash jadvali (asl kitobdagidek)
+            s.append(f'<h2>{esc(L["review"])}</h2>' + table(tp["cards_head"], [[c["front"]] + c["cells"] for c in tp["cards"]],
+                                                         tp.get("cards_title", "")))
+        elif tp.get("cards"):
             ntab = sum(1 for x in secs for b in x["blocks"] if b["type"] == "table" and b.get("title")) + \
                 sum(1 for x in tp.get("skills", []) for b in x["blocks"] if b["type"] == "table" and b.get("title"))
             title = L["review_table"].format(n=n, m=ntab + 1) + " " + L["review_caption"].format(n=n)
