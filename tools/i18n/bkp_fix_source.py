@@ -256,7 +256,7 @@ def renumber():
 WORDS = {"Kuchay gan": "Kuchaygan", "Susayga n": "Susaygan", "Eshitilmayd i": "Eshitilmaydi", "O‘zgar magan": "O‘zgarmagan",
          "Bochkasim on": "Bochkasimon", "Kasallikla r": "Kasalliklar", "Perkussiy a": "Perkussiya",
          "Retikulotsitl ar": "Retikulotsitlar", "Rivojlanis h": "Rivojlanish", "chegarala ri": "chegaralari",
-         "35– 45%": "35–45%", "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
+         "35– 45%": "35–45%", "39– 40 °C": "39–40 °C", "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
 
 
 # asl matndagi ma'no/imlo xatolari (asl PDF va darsliklar bilan solishtirib topilgan)
