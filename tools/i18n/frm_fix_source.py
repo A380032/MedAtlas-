@@ -308,6 +308,7 @@ TEXT = {
     "D2antagonistlar": "D2-antagonistlar",
     "V2antagonistlari": "V2-antagonistlari",
     "H1blokator": "H1-blokator",
+    "**mg/m2**": "**mg/m^2^**",
 }
 
 
