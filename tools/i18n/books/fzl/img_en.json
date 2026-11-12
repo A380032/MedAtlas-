@@ -2007,5 +2007,477 @@
     "smax": 19
    }
   ]
+ },
+ "p77_27.webp": {
+  "items": [
+   {
+    "box": [
+     390,
+     133,
+     446,
+     157
+    ],
+    "t": "Heme",
+    "f": "sansb",
+    "smax": 19
+   },
+   {
+    "box": [
+     266,
+     313,
+     300,
+     327
+    ],
+    "t": "1 nm",
+    "f": "dvi",
+    "smax": 11
+   },
+   {
+    "box": [
+     526,
+     537,
+     622,
+     561
+    ],
+    "t": "Globin",
+    "f": "sansb",
+    "smax": 20
+   }
+  ]
+ },
+ "p85_28.webp": {
+  "items": [
+   {
+    "box": [
+     38,
+     9,
+     167,
+     30
+    ],
+    "t": "Neutrophil",
+    "f": "serifb",
+    "smax": 18
+   },
+   {
+    "box": [
+     222,
+     9,
+     342,
+     30
+    ],
+    "t": "Eosinophil",
+    "f": "serifb",
+    "smax": 18
+   },
+   {
+    "box": [
+     422,
+     9,
+     516,
+     31
+    ],
+    "t": "Basophil",
+    "f": "serifb",
+    "smax": 18
+   },
+   {
+    "box": [
+     571,
+     11,
+     669,
+     30
+    ],
+    "t": "Monocyte",
+    "f": "serifb",
+    "smax": 18
+   }
+  ]
+ },
+ "p85_29.webp": {
+  "items": [
+   {
+    "box": [
+     222,
+     7,
+     634,
+     28
+    ],
+    "t": "Leukocyte formula — normal ranges (adults)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     2,
+     47,
+     97,
+     65
+    ],
+    "t": "Monocytes",
+    "f": "dv",
+    "a": "r",
+    "smax": 14
+   },
+   {
+    "box": [
+     2,
+     93,
+     97,
+     111
+    ],
+    "t": "Lymphocytes",
+    "f": "dv",
+    "a": "r",
+    "smax": 14
+   },
+   {
+    "box": [
+     2,
+     131,
+     97,
+     170
+    ],
+    "t": "Segmented\nneutrophils",
+    "f": "dv",
+    "a": "r",
+    "smax": 14
+   },
+   {
+    "box": [
+     2,
+     179,
+     97,
+     216
+    ],
+    "t": "Band\nneutrophils",
+    "f": "dv",
+    "a": "r",
+    "smax": 14
+   },
+   {
+    "box": [
+     2,
+     233,
+     97,
+     253
+    ],
+    "t": "Eosinophils",
+    "f": "dv",
+    "a": "r",
+    "smax": 14
+   },
+   {
+    "box": [
+     148,
+     233,
+     210,
+     252
+    ],
+    "t": "0.5–5 %",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     2,
+     279,
+     97,
+     297
+    ],
+    "t": "Basophils",
+    "f": "dv",
+    "a": "r",
+    "smax": 14
+   },
+   {
+    "box": [
+     230,
+     341,
+     626,
+     361
+    ],
+    "t": "Relative to the total leukocyte count, %",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p87_30.webp": {
+  "items": [
+   {
+    "box": [
+     19,
+     13,
+     141,
+     48
+    ],
+    "t": "1. Chemotaxis —\nmovement to the\ninflammation focus",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     179,
+     13,
+     271,
+     48
+    ],
+    "t": "2. Adhesion and\nrecognition\nvia opsonins",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     311,
+     19,
+     435,
+     44
+    ],
+    "t": "3. Engulfment —\na phagosome forms",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     469,
+     19,
+     589,
+     44
+    ],
+    "t": "4. Phagolysosome —\nlysosomes fuse",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     629,
+     13,
+     741,
+     48
+    ],
+    "t": "5. Killing and digestion:\noxygen radicals,\nenzymes",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
+ },
+ "p88_31.webp": {
+  "items": [
+   {
+    "box": [
+     371,
+     10,
+     495,
+     40
+    ],
+    "t": "Pluripotent stem cell\n(red bone marrow)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     321,
+     64,
+     423,
+     86
+    ],
+    "t": "Myeloid progenitor",
+    "f": "dv",
+    "s": 9
+   },
+   {
+    "box": [
+     498,
+     64,
+     600,
+     86
+    ],
+    "t": "Lymphoid progenitor",
+    "f": "dv",
+    "s": 9
+   },
+   {
+    "box": [
+     227,
+     114,
+     289,
+     136
+    ],
+    "t": "Myeloblast",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     428,
+     113,
+     525,
+     138
+    ],
+    "t": "T-lymphocyte\n(matures in thymus)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     551,
+     113,
+     649,
+     138
+    ],
+    "t": "B-lymphocyte →\nplasma cell",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     673,
+     113,
+     746,
+     138
+    ],
+    "t": "NK cell\n(natural killer)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     17,
+     163,
+     167,
+     190
+    ],
+    "t": "Neutrophil\n(band → segmented)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     197,
+     168,
+     244,
+     183
+    ],
+    "t": "Eosinophil",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     275,
+     168,
+     321,
+     183
+    ],
+    "t": "Basophil",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     344,
+     164,
+     455,
+     190
+    ],
+    "t": "Monocyte → tissue\nmacrophage",
+    "f": "dv",
+    "smax": 10
+   }
+  ]
+ },
+ "p95_32.webp": {
+  "items": [
+   {
+    "box": [
+     13,
+     18,
+     123,
+     33
+    ],
+    "t": "Pluripotent stem cell",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     161,
+     18,
+     239,
+     33
+    ],
+    "t": "Megakaryoblast",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     276,
+     18,
+     356,
+     33
+    ],
+    "t": "Promegakaryocyte",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     382,
+     13,
+     476,
+     38
+    ],
+    "t": "Thrombopoietin\n(liver, kidney)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     399,
+     51,
+     452,
+     65
+    ],
+    "t": "enhances",
+    "f": "dv",
+    "smax": 9,
+    "a": "l"
+   },
+   {
+    "box": [
+     303,
+     71,
+     445,
+     103
+    ],
+    "t": "Megakaryocyte\n(50–100 µm, polyploid nucleus;\nin bone marrow)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     481,
+     71,
+     616,
+     103
+    ],
+    "t": "Cytoplasm fragments split off:\n1000–5000 platelets\nfrom 1 megakaryocyte",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     653,
+     71,
+     743,
+     103
+    ],
+    "t": "Platelets circulate\n7–10 days;\n1/3 kept in the spleen",
+    "f": "dv",
+    "smax": 10
+   }
+  ]
  }
 }
