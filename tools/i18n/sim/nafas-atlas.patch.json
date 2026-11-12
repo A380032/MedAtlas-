@@ -1,0 +1,27 @@
+[
+ [
+  "String(m.age).replace(\".\",\",\")",
+  "String(m.age)",
+  2
+ ],
+ [
+  "String(m.dur).replace(\".\",\",\")",
+  "String(m.dur)",
+  1
+ ],
+ [
+  "data-title=\"Vezikulyar nafas\"",
+  "data-title=\"Vesicular breathing\"",
+  1
+ ],
+ [
+  "data-title=\"Bronxial nafas\"",
+  "data-title=\"Bronchial breathing\"",
+  1
+ ],
+ [
+  "data-sub=\"Traxeya ustida\"",
+  "data-sub=\"Over the trachea\"",
+  1
+ ]
+]

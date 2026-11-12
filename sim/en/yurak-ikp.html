@@ -1,0 +1,1781 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cardiac physical examination</title>
+<meta name="description" content="Propaedeutics of Internal Diseases: an interactive simulator for cardiac inspection, palpation, percussion, auscultation, pulse, arterial blood pressure and acquired valvular heart disease">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: klinik "stetoskop paneli" — sticky bo'limlar menyusi, keng matn ustuni, pastda doimiy tovush pleyeri */
+:root{
+  --bg:#EDF1F0; --surface:#FFFFFF; --sunk:#E2E9E7; --ink:#14211F; --muted:#56696A; --line:#CBD7D4;
+  --accent:#0D6871; --accent-soft:#D3E7E8; --on-accent:#FFFFFF;
+  --insp:#2D69AE; --exp:#B9730F; --bad:#AD3F37; --good:#2C7A4C; --warn:#9A6A00;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1615; --surface:#14201F; --sunk:#0A1211; --ink:#E1EBE9; --muted:#93A7A4; --line:#263836;
+  --accent:#53B8C0; --accent-soft:#16373A; --on-accent:#04201F;
+  --insp:#7EAFEA; --exp:#E7AA4E; --bad:#E58378; --good:#6FC592; --warn:#E0B44F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1615; --surface:#14201F; --sunk:#0A1211; --ink:#E1EBE9; --muted:#93A7A4; --line:#263836;
+  --accent:#53B8C0; --accent-soft:#16373A; --on-accent:#04201F;
+  --insp:#7EAFEA; --exp:#E7AA4E; --bad:#E58378; --good:#6FC592; --warn:#E0B44F; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;padding-bottom:96px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.25rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.muted{color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+a{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:8px}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top a{flex:none;text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.top a:hover{background:var(--sunk);color:var(--ink)}
+nav.top a.brand{color:var(--accent);font-family:var(--f-display);font-weight:800}
+
+/* hero */
+header.hero{padding-block:44px 28px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:36px;align-items:center}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:800;letter-spacing:-.02em;margin-block:10px 14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:1.08rem;max-width:60ch}
+.meta{margin-top:16px;font-size:.88rem;color:var(--muted);max-width:68ch}
+.phono{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px}
+.phono canvas{width:100%;height:150px;display:block;border-radius:8px;background:var(--sunk)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.phono .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* sections */
+section{padding-block:44px;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:8px;margin-bottom:22px;max-width:75ch}
+.sec-head .eyebrow{color:var(--muted)}
+.prose{max-width:72ch;display:grid;gap:12px}
+.prose ul,.prose ol{margin:0;padding-left:1.25em;display:grid;gap:4px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.hero-grid,.grid2{grid-template-columns:minmax(0,1fr)}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid3{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:.95rem}
+.note.warn{border-color:var(--warn)}
+.note b:first-child{display:block;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:2px}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.8rem;color:var(--muted);line-height:1.4}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-block:18px}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* play buttons */
+.play{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);border-radius:999px;padding:6px 14px 6px 10px;font-size:.88rem;font-weight:600;cursor:pointer;line-height:1.2}
+.play:hover{background:var(--accent-soft)}
+.play .ic{width:16px;height:16px;border-radius:50%;background:var(--accent);position:relative;flex:none}
+.play .ic::after{content:"";position:absolute;left:6px;top:4.5px;width:0;height:0;border-left:6px solid var(--on-accent);border-top:3.5px solid transparent;border-bottom:3.5px solid transparent}
+.play.on{background:var(--accent);color:var(--on-accent)}
+.play.on .ic{background:var(--on-accent)}
+.play.on .ic::after{left:5px;top:5px;border:0;width:6px;height:6px;background:var(--accent)}
+.play.big{font-size:1rem;padding:10px 20px 10px 14px}
+.play.big .ic{width:22px;height:22px}
+.play.big .ic::after{left:8.5px;top:6px;border-left-width:8px;border-top-width:5px;border-bottom-width:5px}
+.play.big.on .ic::after{left:7px;top:7px;width:8px;height:8px}
+
+/* sound cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:9px;align-content:start;min-width:0}
+.card h3{font-size:1.08rem}
+.card .alt{font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.card dl{margin:0;display:grid;gap:6px;font-size:.9rem}
+.card dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:0}
+.props{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-size:.74rem;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.chip.i{color:var(--insp);border-color:currentColor;background:transparent}
+.chip.e{color:var(--exp);border-color:currentColor;background:transparent}
+.sub-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-block:30px 12px}
+
+/* virtual patient */
+.vp{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.vp{grid-template-columns:minmax(0,1fr)}}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{border:0;background:transparent;padding:6px 13px;border-radius:999px;cursor:pointer;font-size:.88rem;font-weight:500;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+select{font:inherit;font-size:.92rem;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);max-width:100%}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.views{grid-template-columns:minmax(0,1fr)}.view svg{max-width:340px;margin:0 auto}}
+.view{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:8px;min-width:0}
+.view .lbl{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:2px 6px}
+.view svg{width:100%;height:auto;display:block}
+.body-fill{fill:var(--sunk);stroke:var(--muted);stroke-width:1.4}
+.lung-fill{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1;opacity:.95}
+.bone{fill:none;stroke:var(--muted);stroke-width:1.1;opacity:.55}
+.bone-s{fill:var(--surface);stroke:var(--muted);stroke-width:1.1;opacity:.8}
+.pt{cursor:pointer}
+.pt circle.hit{fill:transparent}
+.pt circle.dot{fill:var(--surface);stroke:var(--accent);stroke-width:2.2;transition:r .15s}
+.pt:hover circle.dot,.pt:focus-visible circle.dot{fill:var(--accent-soft)}
+.pt.sel circle.dot{fill:var(--accent);stroke:var(--ink)}
+.pt.chg circle.dot{stroke:var(--bad)}
+.pt:focus{outline:none}
+.pt:focus-visible circle.dot{stroke-width:3.5}
+.side-t{font-family:var(--f-mono);font-size:9px;fill:var(--muted)}
+.find{display:grid;gap:10px}
+.find h3{font-size:1.1rem}
+.kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:.92rem;align-items:baseline}
+.kv dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.kv dd{margin:0}
+.hid{filter:blur(6px);user-select:none}
+.palm{display:flex;gap:18px;align-items:center;padding:6px 0}
+.palm span{width:38px;height:48px;border-radius:18px 18px 12px 12px;background:var(--accent-soft);border:1.5px solid var(--accent);display:block}
+.palm span.vib{animation:vib .09s linear infinite}
+@keyframes vib{0%{transform:translateX(calc(var(--a,1px)*-1))}50%{transform:translateX(var(--a,1px))}100%{transform:translateX(calc(var(--a,1px)*-1))}}
+.sc-info{font-size:.9rem}
+label.tog{display:inline-flex;gap:8px;align-items:center;font-size:.9rem;cursor:pointer}
+
+/* topo sim */
+.topo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:20px;align-items:start}
+@media (max-width:820px){.topo{grid-template-columns:minmax(0,1fr)}}
+.levels{display:grid;gap:3px}
+.lv{display:grid;grid-template-columns:96px 1fr 28px;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:5px 10px;cursor:pointer;text-align:left;font-size:.86rem}
+.lv.rib{background:var(--sunk)}
+.lv .bar{height:8px;border-radius:4px;background:transparent}
+.lv.tapped .bar{background:var(--line)}
+.lv.show-aniq .bar{background:var(--accent)}
+.lv.show-quti .bar{background:var(--insp)}
+.lv.show-tomtoq .bar{background:var(--exp)}
+.lv.show-tt .bar{background:var(--warn)}
+.lv.mark{outline:2px dashed var(--ink);outline-offset:1px}
+.lv.correct{outline:2px solid var(--good);outline-offset:1px}
+.lv .m{font-family:var(--f-mono);font-size:.75rem;text-align:right}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 13px;cursor:pointer;font-size:.9rem;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fb{font-size:.95rem;padding:10px 12px;border-radius:8px;background:var(--sunk)}
+.fb.ok{color:var(--good)}
+.fb.no{color:var(--bad)}
+
+/* syndrome matrix */
+.mx td:first-child{font-weight:600;min-width:180px}
+.mx td{min-width:150px}
+.mx .acts{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+
+/* checklist */
+.ck ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ck li label{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;font-size:.92rem;cursor:pointer;padding:6px 8px;border-radius:6px}
+.ck li label:hover{background:var(--sunk)}
+.ck input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent)}
+.score{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-size:.9rem}
+.meter{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+
+/* quiz + cases */
+.opts{display:grid;gap:7px}
+.opt{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;text-align:left;cursor:pointer;font-size:.93rem;display:grid;grid-template-columns:24px 1fr;gap:8px}
+.opt .k{font-family:var(--f-mono);color:var(--muted)}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 12%,var(--surface))}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--surface))}
+.opt[disabled]{cursor:default}
+.expl{font-size:.9rem;border-left:3px solid var(--line);padding:4px 0 4px 12px}
+.q{display:grid;gap:10px;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.q .qn{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+.q p.t{font-weight:600}
+.qlist{display:grid;gap:12px}
+.case{display:grid;gap:12px}
+.ear{display:grid;gap:14px;max-width:720px}
+.ear>*,.case>*,.q>*,.find>*{min-width:0}
+.stat{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
+.stat b{color:var(--ink);font-weight:500}
+
+/* player */
+#player{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom,0px)}
+#player .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.3fr) auto;gap:14px;align-items:center;padding-block:10px}
+#plName{display:block;font-weight:600;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plSub{display:block;font-size:.8rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plScope{width:100%;height:44px;display:block;border-radius:6px;background:var(--sunk)}
+.phase{font-family:var(--f-mono);font-size:.74rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap;min-width:118px;text-align:center}
+.phase.i{color:var(--insp);border-color:var(--insp)}
+.phase.e{color:var(--exp);border-color:var(--exp)}
+.phase.p{color:var(--accent);border-color:var(--accent)}
+.vol{display:flex;gap:6px;align-items:center;font-size:.8rem;color:var(--muted)}
+.vol input{width:90px;accent-color:var(--accent)}
+@media (max-width:700px){#player .wrap{grid-template-columns:auto minmax(0,1fr) auto}#plScope{grid-column:1/-1;grid-row:2}.vol{display:none}}
+
+footer{border-top:1px solid var(--line);padding-block:30px 20px;font-size:.86rem;color:var(--muted)}
+footer .wrap{display:grid;gap:10px}
+ol.refs{margin:0;padding-left:1.3em;display:grid;gap:5px;font-size:.9rem}
+
+/* ===== Yurak simulyatori: qo'shimcha uslublar ===== */
+:root{--sys:var(--insp);--dia:var(--exp)}
+.rib{fill:none;stroke:color-mix(in srgb,var(--muted) 45%,var(--sunk));stroke-width:8;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
+.cartl{fill:none;stroke:color-mix(in srgb,var(--accent) 22%,var(--surface));stroke-width:7;stroke-linecap:round;stroke-linejoin:round;opacity:.95}
+.stern{fill:color-mix(in srgb,var(--muted) 30%,var(--surface));stroke:var(--muted);stroke-width:1.1;opacity:.95}
+.clav{fill:none;stroke:color-mix(in srgb,var(--muted) 55%,var(--sunk));stroke-width:9;stroke-linecap:round}
+.musc{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.35}
+.nip{fill:none;stroke:var(--muted);stroke-width:1.3;opacity:.7}
+.valve ellipse{fill:var(--surface);stroke:var(--ink);stroke-width:1;opacity:.9}
+.valve text{font-family:var(--f-mono);font-size:7.5px;font-weight:600;fill:var(--ink);text-anchor:middle;pointer-events:none}
+.apring{fill:color-mix(in srgb,var(--good) 25%,transparent);stroke:var(--good);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:beat var(--T,.83s) ease-out infinite}
+.guide{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;opacity:.55;fill:none}
+.cart{fill:none;stroke:var(--muted);stroke-width:1.1;opacity:.5}
+.heart-rel{fill:color-mix(in srgb,var(--exp) 20%,transparent);stroke:var(--exp);stroke-width:1.6}
+.heart-abs{fill:color-mix(in srgb,var(--bad) 22%,transparent);stroke:var(--bad);stroke-width:1.2;stroke-dasharray:4 3}
+.heart-user{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-dasharray:5 4}
+.ptn{font-family:var(--f-mono);font-size:9px;font-weight:600;fill:var(--accent);pointer-events:none;text-anchor:middle}
+.pt.sel .ptn{fill:var(--on-accent)}
+.pmark{stroke:var(--surface);stroke-width:1.2}
+.pmark.aniq{fill:var(--insp)}.pmark.bogiq{fill:var(--exp)}.pmark.tomtoq{fill:var(--bad)}
+.ap-user{fill:var(--ink);stroke:var(--surface);stroke-width:1.5}
+.ap-true{fill:none;stroke:var(--good);stroke-width:2.2}
+#vpSvg.perc,#apSvg{cursor:crosshair}
+.hand{width:50px;height:62px;display:grid;place-items:center;--T:.83s}
+.hand i{display:block;width:40px;height:52px;border-radius:18px 18px 12px 12px;background:var(--accent-soft);border:1.5px solid var(--accent)}
+.hand.beat{animation:beat var(--T) ease-out infinite}
+.hand.beat.s{animation-name:beatS}
+.hand.beat.w{animation-name:beatW}
+.hand i.vib{animation:vib .07s linear infinite;--a:1.4px}
+.hand.none i{opacity:.45}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.09)}32%{transform:scale(1)}}
+@keyframes beatS{0%,100%{transform:scale(1) translateY(0)}14%{transform:scale(1.2) translateY(-4px)}40%{transform:scale(1) translateY(0)}}
+@keyframes beatW{0%,100%{transform:scale(1)}12%{transform:scale(1.035)}30%{transform:scale(1)}}
+.palm{gap:14px}
+.palm p{flex:1;min-width:0}
+.lv.pk{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 28px}
+.lv.pk.sel{outline:2px solid var(--accent);outline-offset:1px}
+.lv.show-bogiq .bar{background:var(--exp)}
+.lv.show-tomtoq .bar{background:var(--bad)}
+.lv.show-aniq .bar{background:var(--insp)}
+.phc{width:100%;height:70px;display:block;border-radius:6px;background:var(--sunk)}
+.cards .card .play{justify-self:start}
+.pcv{width:100%;height:150px;display:block;border-radius:8px;background:var(--sunk)}
+.gauge{width:100%;max-width:260px;display:block;margin:0 auto}
+.gauge .face{fill:var(--surface);stroke:var(--line);stroke-width:2}
+.gauge .tk{stroke:var(--ink);stroke-width:1}
+.gauge .tk.b{stroke-width:2}
+.gauge .tl{font-family:var(--f-mono);font-size:8.5px;fill:var(--muted);text-anchor:middle;dominant-baseline:middle}
+.gauge .ndl{stroke:var(--bad);stroke-width:2.6;stroke-linecap:round}
+.gauge .hub{fill:var(--ink)}
+.gauge .dig{font-family:var(--f-mono);font-size:15px;fill:var(--ink);text-anchor:middle}
+.gauge .unit{font-family:var(--f-mono);font-size:8px;fill:var(--muted);text-anchor:middle}
+.bp-ind{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:.88rem;justify-content:center}
+.bp-ind span{display:inline-flex;align-items:center;gap:7px}
+.dotl{width:12px;height:12px;border-radius:50%;background:var(--sunk);border:1px solid var(--line);transition:background .08s}
+.dotl.on{background:var(--good);border-color:var(--good)}
+.dotl.snd{background:var(--accent);border-color:var(--accent)}
+.bp-rec{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem;color:var(--muted);justify-content:center}
+.bp-rec b{color:var(--ink);font-weight:500}
+details.step{border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+details.step>summary{cursor:pointer;padding:9px 12px;font-weight:600;font-size:.93rem;list-style:none;display:flex;justify-content:space-between;gap:8px}
+details.step>summary::-webkit-details-marker{display:none}
+details.step>summary::after{content:"+";font-family:var(--f-mono);color:var(--muted)}
+details.step[open]>summary::after{content:"−"}
+details.step>div{padding:0 12px 12px;font-size:.93rem;display:grid;gap:8px}
+.steps{display:grid;gap:6px}
+.case-h{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.mxw td{min-width:170px;font-size:.88rem}
+.mxw td:first-child{min-width:110px;font-weight:600}
+.mxw .acts{display:flex;flex-direction:column;gap:6px;align-items:flex-start;margin-top:6px}
+.kbd{font-family:var(--f-mono);font-size:.78rem;background:var(--sunk);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+
+.pchart{width:100%;height:118px;display:block;border-radius:8px;background:var(--sunk)}
+.psense{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;font-size:.9rem;margin:0}
+.psense dt{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.psense dd{margin:0}
+.how{font-size:.88rem;border-left:3px solid var(--line);padding:2px 0 2px 10px;color:var(--muted)}
+</style>
+</head><body>
+<nav class="top" aria-label="Sections"><div class="wrap">
+  <a class="brand" href="#top">Heart</a>
+  <a href="#bemor">Virtual patient</a>
+  <a href="#palp">Palpation</a>
+  <a href="#perk">Percussion</a>
+  <a href="#ausk">Sounds</a>
+  <a href="#shovqin">Murmurs</a>
+  <a href="#puls">Pulse</a>
+  <a href="#ab">Blood pressure</a>
+  <a href="#nuqson">Valve defects</a>
+  <a href="#quloq">Ear training</a>
+  <a href="#holat">Clinical cases</a>
+  <a href="#manba">Sources</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Propaedeutics of Internal Diseases · Topics 10–14</div>
+    <h1>Heart <em>inspection, percussion</em> and auscultation</h1>
+    <p class="lede">An interactive practice session on the physical examination of the cardiovascular system. Palpate a virtual patient, find the heart borders by percussion, listen to heart sounds and murmurs, measure arterial blood pressure by the Korotkoff method, and learn to tell mitral from aortic valve defects.</p>
+    <p class="meta">Compiled by: Asadbek Axmatkulov · ALVORA · Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd year · 2026<br>Practical sessions 10–14 of the KTR: cardiac inspection and palpation, percussion and pulse, auscultation, rheumatic fever and mitral defects, infective endocarditis and aortic defects.</p>
+  </div>
+  <div class="phono">
+    <div class="row" style="justify-content:space-between"><span class="eyebrow" style="color:var(--muted)">Phonocardiogram · cardiac apex</span><span class="mono muted" style="font-size:.78rem">72 / min</span></div>
+    <canvas id="heroCv" aria-label="Normal phonocardiogram: at the apex S1 is louder than S2, systole is shorter than diastole"></canvas>
+    <div class="legend"><span><i style="background:var(--sys)"></i>Systole</span><span><i style="background:var(--dia)"></i>Diastole</span><span><i style="background:var(--bad)"></i>Murmur</span></div>
+    <div class="row"><button class="play big" type="button" data-play="lib:norm_apex"><span class="ic"></span>Normal heart sounds</button><button class="play big" type="button" data-play="lib:bedana"><span class="ic"></span>“Quail rhythm”</button></div>
+    <p class="muted" style="font-size:.82rem">Listen with headphones: heart sounds are low-frequency and are poorly heard on a phone speaker. Sounds are synthesized in real time in the browser.</p>
+  </div>
+</div></header>
+
+<main>
+<!-- ============ 01 VIRTUAL BEMOR ============ -->
+<section id="bemor"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">01 · Virtual patient</span><h2>Examine the patient: palpate, percuss, listen</h2>
+  <p class="muted">Choose a method and a patient (17 patients). In palpation, click a point: the graph shows how to palpate, what is felt under the palm, and when the impulse and thrill occur relative to the carotid pulse. In percussion, click anywhere on the chest: the percussion note sounds. In auscultation, listen to the 5 standard points and the areas where murmurs radiate. In practice mode the patient's diagnosis is hidden, and you find it yourself.</p></div>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Examination method">
+      <button type="button" data-mode="palp" aria-pressed="false">Palpation</button>
+      <button type="button" data-mode="perk" aria-pressed="false">Percussion</button>
+      <button type="button" data-mode="ausk" aria-pressed="true">Auscultation</button>
+    </div>
+    <select id="scSel" aria-label="Patient"></select>
+    <label class="tog"><input type="checkbox" id="hideF"> Practice mode: hide the diagnosis</label>
+    <label class="tog"><input type="checkbox" id="valvF" checked> Projection of the heart and valves</label>
+  </div>
+  <div class="vp">
+    <div class="view"><div class="lbl"><span>Chest · anterior surface</span><span id="vpHint">Click a point</span></div>
+      <svg id="vpSvg" viewBox="0 0 320 330" role="group" aria-label="Anterior surface of the chest"></svg>
+      <div class="legend" id="vpLeg" style="padding:4px 6px"></div>
+    </div>
+    <div class="find panel">
+      <h3 id="vpName"></h3>
+      <dl class="kv"><dt>Complaints</dt><dd id="vpSh"></dd><dt>Inspection</dt><dd id="vpKo"></dd><dt>Pulse</dt><dd id="vpPu"></dd><dt>BP</dt><dd id="vpAB"></dd></dl>
+      <div class="note"><b id="vpPtT">Selected point</b><span id="vpPt">Select a point in the picture.</span></div>
+      <div id="vpPalm" hidden style="display:grid;gap:10px">
+        <p class="how" id="vpHow"></p>
+        <div class="palm" style="align-items:flex-start"><div class="hand" id="vpHand" aria-hidden="true"><i></i></div><dl class="psense" id="vpSense"></dl></div>
+        <canvas class="pchart" id="vpPc" aria-label="Graph over time of the carotid pulse and of the impulse and thrill under the palm"></canvas>
+        <div class="legend"><span><i style="background:var(--accent)"></i>Carotid pulse</span><span><i style="background:var(--good)"></i>Impulse under the palm</span><span><i style="background:var(--bad)"></i>Thrill</span></div>
+        <p class="sc-info" id="vpPalmT"></p>
+      </div>
+      <p id="vpRes" class="sc-info"></p>
+      <div id="vpDx" hidden style="display:grid;gap:8px">
+        <label for="dxSel" class="eyebrow" style="color:var(--muted)">Your diagnosis</label>
+        <select id="dxSel"></select>
+        <div class="btnrow"><button class="btn pri" id="dxChk" type="button">Check</button><button class="btn" id="dxNew" type="button">New patient</button><button class="btn" id="dxShow" type="button">Show findings</button></div>
+        <div class="fb" id="dxFb" hidden></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 02 PAYPASLASH ============ -->
+<section id="palp"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">02 · Palpation</span><h2>Apex beat, cardiac impulse and the “cat's purr”</h2>
+  <p class="muted">First palpate approximately with the palm between the 3rd–6th ribs, then precisely with 2–3 fingertips. In women the breast is displaced upward and to the right.</p></div>
+  <div class="grid2">
+    <div class="panel find">
+      <h3>Practice: where is the apex beat?</h3>
+      <p class="muted" style="font-size:.92rem">Choose a patient and click on the chest where the apex beat should be. The program tells you which intercostal space you chose and the distance relative to the midclavicular line.</p>
+      <div class="controls" style="margin:0"><select id="apSel" aria-label="Patient"></select><button class="btn" id="apShow" type="button">Show answer</button></div>
+      <div class="view"><svg id="apSvg" viewBox="0 0 320 330" role="img" aria-label="Apex beat localization practice"></svg></div>
+      <div class="fb" id="apFb">Click the correct place on the chest.</div>
+    </div>
+    <div class="prose">
+      <div class="tbl"><table>
+        <thead><tr><th>Feature</th><th>Normal</th><th>Abnormal change</th></tr></thead>
+        <tbody>
+          <tr><td>Location</td><td>5th intercostal space, 1–1.5 cm medial to the left midclavicular line</td><td>Shifted left: left ventricular dilatation. Shifted left and down (6th–7th space): aortic regurgitation</td></tr>
+          <tr><td>Area</td><td>1–2 cm²</td><td>Wide (diffuse): dilatation; limited: emphysema, obesity</td></tr>
+          <tr><td>Height</td><td>Moderate</td><td>High: thyrotoxicosis, fever, dilatation; low: obesity, pericardial effusion</td></tr>
+          <tr><td>Force</td><td>Moderate</td><td>Increased: hypertrophy; decreased: myocarditis, pericarditis</td></tr>
+          <tr><td>Resistance</td><td>Elastic</td><td>Resistant, “dome-shaped”: aortic stenosis, arterial hypertension, aortic regurgitation</td></tr>
+        </tbody></table></div>
+      <div class="note"><b>Remember</b>The 5 features of the apex beat: Location, Area, Height, Force, Resistance.</div>
+    </div>
+  </div>
+  <div class="sub-h"><h3>The “cat's purr” and epigastric pulsation</h3></div>
+  <div class="grid2">
+    <div class="tbl"><table>
+      <thead><tr><th>Location</th><th>Phase</th><th>Disease</th></tr></thead>
+      <tbody>
+        <tr><td>Cardiac apex</td><td>Diastolic (presystolic)</td><td>Mitral stenosis</td></tr>
+        <tr><td>2nd space, right of the sternum; radiates to the neck</td><td>Systolic</td><td>Aortic stenosis</td></tr>
+        <tr><td>2nd space, left of the sternum</td><td>Systolic</td><td>Pulmonary artery stenosis</td></tr>
+        <tr><td>Left sternal border, 3rd–4th space</td><td>Systolic</td><td>Ventricular septal defect</td></tr>
+        <tr><td>2nd space, left of the sternum</td><td>Systolic-diastolic</td><td>Patent ductus arteriosus</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <p>A “cat's purr” is always a sign of an <b>organic</b> defect. To determine its phase, the pulse over the carotid artery is palpated at the same time: a thrill coinciding with the pulse is systolic, a thrill coinciding with the pause after the pulse is diastolic.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Cause of epigastric pulsation</th><th>Sign</th></tr></thead>
+        <tbody>
+          <tr><td>Right ventricular hypertrophy</td><td>Taps against the fingertip, increases on inspiration</td></tr>
+          <tr><td>Abdominal aorta</td><td>Taps against the palm surface from above downward, decreases on inspiration</td></tr>
+          <tr><td>Liver pulsation</td><td>The whole liver expands and contracts: tricuspid regurgitation</td></tr>
+        </tbody></table></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 03 PERKUSSIYA ============ -->
+<section id="perk"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">03 · Percussion</span><h2>Find the heart borders by ear</h2>
+  <p class="muted">The pleximeter finger is placed parallel to the border and moved from the clear sound toward the dull sound. Sequence: right, upper, left border. Click each point, choose the first place where the sound changes and press “Border is here”. When all three borders are found, the heart configuration is drawn.</p></div>
+  <div class="topo">
+    <div class="view"><div class="lbl"><span>Relative dullness</span><span id="pkHint"></span></div>
+      <svg id="pkSvg" viewBox="0 0 320 330" role="img" aria-label="Percussion lines and borders found"></svg>
+      <div class="legend" style="padding:4px 6px"><span><i style="background:var(--insp)"></i>Clear pulmonary sound</span><span><i style="background:var(--exp)"></i>Muffled (relative dullness)</span></div>
+    </div>
+    <div class="find">
+      <div class="controls" style="margin:0"><select id="pkSel" aria-label="Patient"></select><label class="tog"><input type="checkbox" id="pkHide"> Hide the patient</label></div>
+      <div class="seg" id="pkStep" role="group" aria-label="Border"><button type="button" data-st="r" aria-pressed="true">1. Right</button><button type="button" data-st="u" aria-pressed="false">2. Upper</button><button type="button" data-st="l" aria-pressed="false">3. Left</button></div>
+      <p class="muted" id="pkInst" style="font-size:.92rem"></p>
+      <div class="levels" id="pkLv"></div>
+      <div class="btnrow"><button class="btn pri" id="pkMark" type="button">Border is here</button><button class="btn" id="pkChk" type="button">Check</button><button class="btn" id="pkReset" type="button">Reset</button></div>
+      <div class="fb" id="pkFb" hidden></div>
+      <div class="panel" id="pkSum" hidden></div>
+    </div>
+  </div>
+  <div class="sub-h"><h3>Normal borders and their shifts</h3></div>
+  <div class="grid2">
+    <div class="tbl"><table>
+      <thead><tr><th>Border</th><th>Relative dullness</th><th>Forming structure</th><th>Absolute dullness</th></tr></thead>
+      <tbody>
+        <tr><td>Right</td><td>4th space, 1–1.5 cm outside the right sternal border</td><td>Right atrium</td><td>Left sternal border</td></tr>
+        <tr><td>Upper</td><td>3rd rib, left parasternal line</td><td>Left atrial appendage, pulmonary artery conus</td><td>4th rib</td></tr>
+        <tr><td>Left</td><td>5th space, 1–1.5 cm medial to the midclavicular line</td><td>Left ventricle</td><td>1–2 cm inside the relative border</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <div class="note"><b>Remember</b>Relative dullness “4-3-5”: right border in the 4th space, upper border at the 3rd rib, left border in the 5th space. Transverse diameter 11–13 cm. Vascular bundle in the 2nd space 5–6 cm.</div>
+      <p><b>Whichever border is displaced, that chamber is enlarged:</b> right border — right atrium, upper — left atrium, left — left ventricle.</p>
+    </div>
+  </div>
+  <div class="tbl" style="margin-top:16px"><table>
+    <thead><tr><th>Defect</th><th>Right</th><th>Upper</th><th>Left</th><th>Configuration</th><th>Vascular bundle</th></tr></thead>
+    <tbody>
+      <tr><td>Mitral stenosis</td><td>To the right</td><td>Upward (2nd rib)</td><td>Unchanged</td><td>Mitral</td><td>Unchanged</td></tr>
+      <tr><td>Mitral regurgitation</td><td>Later to the right</td><td>Upward</td><td>To the left</td><td>Mitral</td><td>Unchanged</td></tr>
+      <tr><td>Aortic stenosis</td><td>Unchanged</td><td>Unchanged</td><td>To the left (moderate)</td><td>Aortic</td><td>Slightly widened</td></tr>
+      <tr><td>Aortic regurgitation</td><td>Unchanged</td><td>Unchanged</td><td>To the left and down (marked)</td><td>Aortic (“sitting duck”)</td><td>Widened</td></tr>
+      <tr><td>Exudative pericarditis</td><td>To the right</td><td>Upward</td><td>To the left</td><td>Trapezoid</td><td>Widened</td></tr>
+    </tbody></table></div>
+</div></section>
+
+<!-- ============ 04 TONLAR ============ -->
+<section id="ausk"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">04 · Auscultation</span><h2>Auscultation points and heart sounds</h2>
+  <p class="muted">The heart is auscultated with the patient standing, supine and lying on the left side, in held inspiration and held expiration. The bell of the stethoscope is used for low-frequency sounds (S3, S4, the murmur of mitral stenosis), the diaphragm for high-frequency ones.</p></div>
+  <div class="grid2">
+    <div class="tbl"><table>
+      <thead><tr><th>№</th><th>Valve</th><th>Auscultation point</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Mitral</td><td>Cardiac apex (5th space, 1–1.5 cm medial to the midclavicular line)</td></tr>
+        <tr><td class="num">2</td><td>Aortic</td><td>2nd space, right of the sternum</td></tr>
+        <tr><td class="num">3</td><td>Pulmonary artery</td><td>2nd space, left of the sternum</td></tr>
+        <tr><td class="num">4</td><td>Tricuspid</td><td>Base of the xiphoid process, slightly to the right</td></tr>
+        <tr><td class="num">5</td><td>Aortic (additional)</td><td>Botkin–Erb point: where the 3rd–4th ribs join the sternum, on the left</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <div class="note"><b>Remember</b>Order: Mitral — Aortic — Pulmonary — Tricuspid — Botkin.</div>
+      <div class="tbl"><table>
+        <thead><tr><th>Feature</th><th>S1</th><th>S2</th></tr></thead>
+        <tbody>
+          <tr><td>When</td><td>After the long pause</td><td>After the short pause</td></tr>
+          <tr><td>Where loudest</td><td>Apex, xiphoid process</td><td>Base of the heart (2nd space)</td></tr>
+          <tr><td>Duration</td><td>0.09–0.12 s</td><td>0.05–0.07 s</td></tr>
+          <tr><td>Timbre</td><td>Lower</td><td>Higher</td></tr>
+          <tr><td>With the carotid pulse</td><td>Coincides</td><td>Does not coincide</td></tr>
+        </tbody></table></div>
+    </div>
+  </div>
+  <div class="sub-h"><h3>Library of sounds and triple rhythms</h3><span class="muted" style="font-size:.88rem">Diagram on the card: phonocardiogram of the sound</span></div>
+  <div class="cards" id="libTon"></div>
+</div></section>
+
+<!-- ============ 05 SHOVQINLAR ============ -->
+<section id="shovqin"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">05 · Murmurs</span><h2>Listen to the murmur and describe it</h2>
+  <p class="muted">A murmur arises when blood flow is turbulent: when an orifice narrows, when blood flows backward through an incompetent valve, when blood viscosity falls, or when flow accelerates.</p></div>
+  <div class="grid2">
+    <div class="prose">
+      <h3>Plan for describing a murmur</h3>
+      <ol>
+        <li><b>Phase:</b> systolic or diastolic (compared with the carotid pulse)</li>
+        <li><b>Relation to the sounds:</b> does it start after the sound or “swallow” it</li>
+        <li><b>Epicenter:</b> the point where it is heard best</li>
+        <li><b>Radiation:</b> along the direction of blood flow</li>
+        <li><b>Intensity:</b> grade 1–6 on the Levine scale</li>
+        <li><b>Shape:</b> crescendo, decrescendo, diamond-shaped, plateau</li>
+        <li><b>Timbre:</b> harsh, sawing, blowing, rumbling, musical</li>
+        <li><b>Dependence on position, breathing and exertion</b></li>
+      </ol>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th>Feature</th><th>Organic</th><th>Functional</th></tr></thead>
+      <tbody>
+        <tr><td>Phase</td><td>Systolic and diastolic</td><td>Usually systolic</td></tr>
+        <tr><td>Timbre</td><td>Harsh, sawing</td><td>Soft, blowing</td></tr>
+        <tr><td>Duration</td><td>Long</td><td>Short</td></tr>
+        <tr><td>Force</td><td>Often loud</td><td>Quiet (grade 1–2)</td></tr>
+        <tr><td>Radiation</td><td>Wide</td><td>Limited</td></tr>
+        <tr><td>Sounds</td><td>Altered</td><td>Unchanged</td></tr>
+        <tr><td>Position and exertion</td><td>Changes little</td><td>Variable</td></tr>
+        <tr><td>“Cat's purr”</td><td>May be present</td><td>Never</td></tr>
+      </tbody></table></div>
+  </div>
+  <div class="sub-h"><h3>Library of murmurs</h3><span class="muted" style="font-size:.88rem">Each murmur sounds at its epicenter</span></div>
+  <div class="cards" id="libMur"></div>
+  <div class="note" style="margin-top:16px;max-width:75ch"><b>Remember</b>To hear a diastolic murmur well: in mitral stenosis the patient lies on the left side (bell, at the apex); in aortic regurgitation the patient leans forward and holds expiration (diaphragm, at the Botkin–Erb point). Almost any diastolic murmur is organic.</div>
+</div></section>
+
+<!-- ============ 06 PULS ============ -->
+<section id="puls"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">06 · Arterial pulse</span><h2>How the pulse wave feels under the finger</h2>
+  <p class="muted">Choose the pulse type. The graph shows the pulse wave in the radial artery, and the small lines above it are the heart contractions. The circle shows the beat under the finger.</p></div>
+  <div class="grid2">
+    <div class="panel find">
+      <div class="controls" style="margin:0"><select id="puSel" aria-label="Pulse type"></select><div class="hand" id="puHand" aria-hidden="true"><i></i></div></div>
+      <canvas id="puCv" class="pcv" aria-label="Pulse wave graph"></canvas>
+      <div class="stat" id="puStat"></div>
+      <p id="puTxt" class="sc-info"></p>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th>Feature</th><th>Normal</th><th>Abnormal change</th></tr></thead>
+      <tbody>
+        <tr><td>Symmetry</td><td>Same in both arms</td><td>Pulsus differens: mitral stenosis (Popov–Savelyev sign), aortic aneurysm</td></tr>
+        <tr><td>Rhythm</td><td>Regular</td><td>Irregular: extrasystole, atrial fibrillation</td></tr>
+        <tr><td>Rate</td><td>60–80 (60–90) / min</td><td>Tachycardia, bradycardia</td></tr>
+        <tr><td>Deficit</td><td>None</td><td>Atrial fibrillation</td></tr>
+        <tr><td>Filling</td><td>Well filled</td><td>Poorly filled: blood loss, shock</td></tr>
+        <tr><td>Tension</td><td>Moderate</td><td>Hard (durus): hypertension; soft (mollis)</td></tr>
+        <tr><td>Volume</td><td>Moderate</td><td>Large: aortic regurgitation; small, thready: aortic stenosis, shock</td></tr>
+        <tr><td>Form</td><td>Moderate</td><td>Fast and high: aortic regurgitation; slow and small: aortic stenosis</td></tr>
+      </tbody></table></div>
+  </div>
+</div></section>
+
+<!-- ============ 07 ARTERIAL BOSIM ============ -->
+<section id="ab"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">07 · Arterial blood pressure</span><h2>Measure blood pressure by the Korotkoff method</h2>
+  <p class="muted">First, by the palpatory method, inflate until the pulse in the radial artery disappears, then add another 20–30 mm Hg. Deflate at 2–3 mm Hg/s. Press “Systolic” when the first sound appears and “Diastolic” when the sounds disappear completely.</p></div>
+  <div class="grid2">
+    <div class="panel find">
+      <div class="controls" style="margin:0"><select id="bpSel" aria-label="Patient"></select></div>
+      <svg class="gauge" id="bpG" viewBox="0 0 220 220" role="img" aria-label="Manometer"></svg>
+      <div class="bp-ind"><span><i class="dotl" id="bpPulse"></i>Radial artery pulse</span><span><i class="dotl" id="bpSnd"></i>Sound in the phonendoscope <b id="bpPhL" class="mono" style="font-weight:500"></b></span></div>
+      <div class="btnrow" style="justify-content:center">
+        <button class="btn" id="bpPump" type="button">Inflate +20</button>
+        <button class="btn pri" id="bpDefl" type="button">Deflate</button>
+        <button class="btn" id="bpDump" type="button">Deflate fully</button>
+      </div>
+      <div class="btnrow" style="justify-content:center;align-items:center">
+        <span class="muted" style="font-size:.85rem">Speed:</span>
+        <div class="seg" id="bpRate" role="group" aria-label="Deflation rate"><button type="button" data-r="2" aria-pressed="false">2</button><button type="button" data-r="3" aria-pressed="true">3</button><button type="button" data-r="6" aria-pressed="false">6</button></div>
+        <span class="muted" style="font-size:.85rem">mm/s</span>
+      </div>
+      <div class="btnrow" style="justify-content:center">
+        <button class="btn" id="bpSys" type="button">Systolic ✓</button>
+        <button class="btn" id="bpDia" type="button">Diastolic ✓</button>
+        <button class="btn pri" id="bpEval" type="button">Evaluation</button>
+      </div>
+      <div class="bp-rec"><span>Systolic: <b id="bpRS">—</b></span><span>Diastolic: <b id="bpRD">—</b></span></div>
+      <div class="btnrow" style="justify-content:center"><label class="tog"><input type="checkbox" id="bpDig" checked> Digital readout</label><label class="tog"><input type="checkbox" id="bpPh"> Show Korotkoff phases</label></div>
+      <div class="fb" id="bpFb" hidden></div>
+    </div>
+    <div class="prose">
+      <div class="tbl"><table>
+        <thead><tr><th>Phase</th><th>Description</th><th>Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="num">I</td><td>Clear, repeated sounds appear</td><td>Systolic pressure</td></tr>
+          <tr><td class="num">II</td><td>The sounds take on a murmur-like quality</td><td>—</td></tr>
+          <tr><td class="num">III</td><td>The sounds are clear and loud again</td><td>—</td></tr>
+          <tr><td class="num">IV</td><td>The sounds suddenly become muffled</td><td>Diastolic pressure in the case of an “endless tone”</td></tr>
+          <tr><td class="num">V</td><td>The sounds disappear completely</td><td>Diastolic pressure in adults</td></tr>
+        </tbody></table></div>
+      <div class="note warn"><b>Avoid errors</b>“Auscultatory gap”: between phases I and II the sounds temporarily disappear. If the cuff is inflated without the palpatory method, the lower limit of the gap is recorded as systolic pressure and the pressure is underestimated by 20–40 mm Hg.</div>
+      <div class="tbl"><table>
+        <thead><tr><th>Category (ESH 2023)</th><th>Systolic</th><th></th><th>Diastolic</th></tr></thead>
+        <tbody>
+          <tr><td>Optimal</td><td class="num">&lt;120</td><td>and</td><td class="num">&lt;80</td></tr>
+          <tr><td>Normal</td><td class="num">120–129</td><td>and/or</td><td class="num">80–84</td></tr>
+          <tr><td>High normal</td><td class="num">130–139</td><td>and/or</td><td class="num">85–89</td></tr>
+          <tr><td>Grade 1 hypertension</td><td class="num">140–159</td><td>and/or</td><td class="num">90–99</td></tr>
+          <tr><td>Grade 2 hypertension</td><td class="num">160–179</td><td>and/or</td><td class="num">100–109</td></tr>
+          <tr><td>Grade 3 hypertension</td><td class="num">≥180</td><td>and/or</td><td class="num">≥110</td></tr>
+          <tr><td>Isolated systolic</td><td class="num">≥140</td><td>and</td><td class="num">&lt;90</td></tr>
+        </tbody></table></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 08 NUQSONLAR ============ -->
+<section id="nuqson"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">08 · Acquired valve defects</span><h2>Four defects, five methods: in one table</h2>
+  <p class="muted">Scroll the table horizontally. The buttons in the Auscultation row sound the defect at its epicenter and at its radiation site.</p></div>
+  <div class="tbl mxw" id="mxTbl"></div>
+</div></section>
+
+<!-- ============ 09 QULOQ MASHQI ============ -->
+<section id="quloq"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">09 · Ear training</span><h2>Listen and identify</h2>
+  <p class="muted">The sound is chosen at random. Listen and mark the correct answer. Listen again if needed.</p></div>
+  <div class="ear" id="ear"></div>
+</div></section>
+
+<!-- ============ 10 KLINIK HOLATLAR ============ -->
+<section id="holat"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">10 · Clinical cases</span><h2>At the bedside</h2>
+  <p class="muted">In each case, open the stages one by one, listen to the points in auscultation and choose the diagnosis.</p></div>
+  <div class="qlist" id="cases"></div>
+</div></section>
+
+<!-- ============ MANBALAR ============ -->
+<section id="manba"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Sources</span><h2>References</h2></div>
+  <ol class="refs">
+    <li>Axmatkulov A. Propaedeutics of Internal Diseases: a comprehensive manual, topics 10–14. ALVORA, 2026.</li>
+    <li>Gadayev A.G., Karimov M.Sh., Axmedov X.S. Propaedeutics of Internal Diseases. Tashkent: Muharrir, 2012.</li>
+    <li>Bickley L.S., Szilagyi P.G., Hoffman R.M., Soriano R.P. Bates’ Guide to Physical Examination and History Taking. 13th ed. Wolters Kluwer, 2021.</li>
+    <li>ESC/EACTS Scientific Document Group. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. European Heart Journal, 2025.</li>
+    <li>Mancia G., Kreutz R., Brunström M. et al. 2023 ESH Guidelines for the management of arterial hypertension. Journal of Hypertension, 2023;41(12):1874–2071.</li>
+  </ol>
+  <p class="muted" style="font-size:.88rem;margin-top:14px;max-width:75ch">The sounds are not real recordings: they are synthesized with the Web Audio API from the physical description of heart sounds and murmurs (frequency, duration, shape, phase). For teaching purposes, the features are slightly exaggerated. They do not replace listening to a real patient or a teacher's explanation.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>ALVORA Med · Cardiac physical examination simulator</p>
+  <p>© 2026 Asadbek Axmatkulov · TSMU, Faculty of General Medicine No. 2</p>
+</div></footer>
+
+<div id="player" hidden><div class="wrap">
+  <button class="play on" id="plStop" type="button" aria-label="Stop"><span class="ic"></span>Stop</button>
+  <div style="min-width:0"><b id="plName"></b><span id="plSub"></span></div>
+  <canvas id="plScope" aria-hidden="true"></canvas>
+  <div style="display:flex;gap:10px;align-items:center"><span class="phase" id="plPhase">—</span><label class="vol">Sound <input type="range" id="vol" min="0" max="1.5" step="0.05" value="0.9"></label></div>
+</div></div>
+<script>
+(function(){
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const R=(a,b)=>a+Math.random()*(b-a);
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* =========================================================
+   AUDIO ENGINE (Web Audio API sintezi)
+   ========================================================= */
+const AU={ctx:null,master:null,an:null,noise:null,vol:0.9};
+function ctx(){
+  if(!AU.ctx){
+    const C=window.AudioContext||window.webkitAudioContext; if(!C) return null;
+    const c=new C(); AU.ctx=c;
+    const m=c.createGain(); m.gain.value=AU.vol;
+    const comp=c.createDynamicsCompressor(); comp.threshold.value=-14; comp.knee.value=8; comp.ratio.value=4; comp.attack.value=.002; comp.release.value=.12;
+    const an=c.createAnalyser(); an.fftSize=1024;
+    m.connect(comp); comp.connect(an); an.connect(c.destination);
+    AU.master=m; AU.an=an;
+    const len=c.sampleRate*3, b=c.createBuffer(1,len,c.sampleRate), d=b.getChannelData(0);
+    for(let i=0;i<len;i++) d[i]=Math.random()*2-1;
+    AU.noise=b;
+  }
+  if(AU.ctx.state==="suspended") AU.ctx.resume();
+  return AU.ctx;
+}
+window.__heart={AU};
+let V=null, playBtn=null;
+function voice(){
+  stop(true);
+  const c=ctx(); const out=c.createGain(); out.gain.value=1; out.connect(AU.master);
+  V={c,out,nodes:[],t0:c.currentTime+0.08,tl:[],end:0,breath:null};
+  return V;
+}
+function stop(keepPlayer){
+  if(V){
+    const v=V; V=null; const t=v.c.currentTime;
+    try{v.out.gain.cancelScheduledValues(t); v.out.gain.setValueAtTime(v.out.gain.value,t); v.out.gain.linearRampToValueAtTime(0,t+.06);}catch(e){}
+    setTimeout(()=>{v.nodes.forEach(n=>{try{n.stop()}catch(e){}}); try{v.out.disconnect()}catch(e){}},180);
+  }
+  if(playBtn){playBtn.classList.remove("on"); playBtn=null;}
+  if(!keepPlayer) $("#player").hidden=true;
+}
+function nz(v,t,d){const s=v.c.createBufferSource(); s.buffer=AU.noise; s.loop=true; s.start(t,Math.random()*2); s.stop(t+d+.1); v.nodes.push(s); return s;}
+function osc(v,type,f,t,d){const o=v.c.createOscillator(); o.type=type; o.frequency.setValueAtTime(f,t); o.start(t); o.stop(t+d+.05); v.nodes.push(o); return o;}
+function filt(v,node,list){let n=node; for(const [type,f,q,g] of list){const b=v.c.createBiquadFilter(); b.type=type; b.frequency.value=f; if(q!=null) b.Q.value=q; if(g!=null) b.gain.value=g; n.connect(b); n=b;} return n;}
+function gn(v,node,val){const g=v.c.createGain(); g.gain.value=val||0; node.connect(g); return g;}
+function ramp(p,pts){p.setValueAtTime(pts[0][1],pts[0][0]); let last=pts[0][0]; for(let i=1;i<pts.length;i++){const t=Math.max(pts[i][0],last+1e-4); p.linearRampToValueAtTime(pts[i][1],t); last=t;}}
+
+/* ---- Yurak tonlari ---- */
+const TK={
+  s1:{f:52,d:.10,h:[1,.5,.22],nz:.35,nf:190},
+  clap:{f:70,d:.075,h:[1,.75,.5],nz:.75,nf:460},
+  s2:{f:80,d:.06,h:[1,.6,.3],nz:.42,nf:320},
+  metal:{f:96,d:.07,h:[1,.85,.65],nz:.7,nf:760},
+  s3:{f:38,d:.09,h:[1,.35,.1],nz:.12,nf:100},
+  s4:{f:35,d:.08,h:[1,.35,.1],nz:.12,nf:100},
+  os:{f:125,d:.035,h:[1,.65,.35],nz:.65,nf:640},
+  ej:{f:135,d:.03,h:[1,.6,.3],nz:.6,nf:720},
+  muf:{f:46,d:.09,h:[1,.3,.08],nz:.15,nf:150}
+};
+function tone(v,t,k,a){
+  if(!(a>0)) return; const p=TK[k]; const mult=[1,2.03,3.1];
+  p.h.forEach((ha,i)=>{ if(!ha) return; const f=p.f*mult[i];
+    const o=osc(v,"sine",f,t,p.d*1.5); o.frequency.exponentialRampToValueAtTime(f*.82,t+p.d);
+    const g=v.c.createGain(); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(a*ha*.55,t+.006); g.gain.exponentialRampToValueAtTime(.0004,t+p.d*1.4);
+    o.connect(g); g.connect(v.out); });
+  const n=nz(v,t,p.d); const b=filt(v,n,[["bandpass",p.nf,.9]]); const g=gn(v,b,0);
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(a*p.nz*.6,t+.003); g.gain.exponentialRampToValueAtTime(.0004,t+p.d*.8); g.connect(v.out);
+}
+
+/* ---- Shovqinlar ---- */
+function nzMur(v,t0,t1,filters,pts,am){
+  const n=nz(v,t0,t1-t0+.05); const out=filt(v,n,filters); const g=gn(v,out,0);
+  if(am){
+    const lfo=osc(v,am.type||"sine",am.f,t0,t1-t0+.05), lg=v.c.createGain(); lg.gain.value=am.d; lfo.connect(lg);
+    const mg=v.c.createGain(); mg.gain.value=1-am.d; lg.connect(mg.gain); g.connect(mg); mg.connect(v.out);
+  } else g.connect(v.out);
+  ramp(g.gain,pts);
+}
+const MUR={
+  mr(v,b,a){ nzMur(v,b.t1,b.t2+.02,[["highpass",160,.7],["bandpass",430,.8],["peaking",650,1,4]],[[b.t1,0],[b.t1+.025,a*.9],[b.t2-.04,a*.75],[b.t2+.012,0]]); },
+  tr(v,b,a){ const k=b.insp?1.7:.75; nzMur(v,b.t1,b.t2+.02,[["highpass",130,.7],["bandpass",320,.8]],[[b.t1,0],[b.t1+.03,a*.8*k],[b.t2-.04,a*.65*k],[b.t2+.012,0]]); },
+  as(v,b,a){ const s=b.t1+.07, e=b.t2-.035, m=s+(e-s)*.45; nzMur(v,s,e,[["highpass",120,.7],["bandpass",300,.7],["peaking",180,1.2,5]],[[s,0],[m,a],[e,0]],{f:42,d:.45,type:"sawtooth"}); },
+  late(v,b,a){ const s=b.t1+b.sys*.52, e=b.t2+.01; nzMur(v,s,e,[["highpass",170,.7],["bandpass",470,.8]],[[s,0],[s+.03,a*.55],[b.t2-.015,a],[e,0]]); },
+  func(v,b,a){ const s=b.t1+.06, e=s+b.sys*.5, m=s+(e-s)*.4; nzMur(v,s,e,[["highpass",120,.7],["bandpass",240,1]],[[s,0],[m,a*.7],[e,0]]); },
+  ar(v,b,a){ const s=b.t2+.008, e=b.t2+b.dia*.72; nzMur(v,s,e,[["highpass",300,.7],["bandpass",700,.7],["peaking",1000,1,3]],[[s,0],[s+.02,a*.75],[e,0]]); },
+  ms(v,b,a,rh){ a*=2.2; const s=b.t2+.11, e=b.next+.005; const pts=[[s,0],[s+.04,a*.9],[s+b.dia*.45,a*.3]];
+    if(rh!=="af") pts.push([b.next-.2,a*.3],[b.next-.015,a*1.05],[b.next,0]); else pts.push([s+b.dia*.75,0],[e,0]);
+    nzMur(v,s,e,[["lowpass",210,.7],["bandpass",95,.9],["peaking",140,1.2,6]],pts,{f:24,d:.4}); },
+  flint(v,b,a,rh){ if(rh==="af") return; const s=b.next-.2, e=b.next; nzMur(v,s,e,[["lowpass",190,.7],["bandpass",100,.9]],[[s,0],[e-.02,a*2],[e,0]],{f:22,d:.4}); },
+  fr(v,b,a){
+    const s0=b.t1-.12, e0=b.t2+.22; const n=nz(v,s0,e0-s0);
+    const bp=v.c.createBiquadFilter(); bp.type="bandpass"; bp.Q.value=1.5; bp.frequency.value=500;
+    const hp=v.c.createBiquadFilter(); hp.type="highpass"; hp.frequency.value=220;
+    n.connect(hp); hp.connect(bp); const g=gn(v,bp,0); g.connect(v.out); g.gain.setValueAtTime(0,s0);
+    let last=s0;
+    for(const [x,y] of [[b.t1-.11,b.t1-.03],[b.t1+.06,b.t2-.06],[b.t2+.06,b.t2+.2]]){ let t=x;
+      while(t<y){ const d=R(.012,.03), amp=a*R(.45,1.1); bp.frequency.setValueAtTime(R(300,950),t);
+        g.gain.setValueAtTime(0,Math.max(t,last)); g.gain.linearRampToValueAtTime(amp,t+.004); g.gain.linearRampToValueAtTime(0,t+d);
+        last=t+d; t+=d+R(.004,.02); } }
+  }
+};
+const sysOf=T=>Math.min(.42,.16+.2*Math.sqrt(T));
+const BRC=4.2, BRI=1.7; /* nafas sikli: 4,2 s, shundan 1,7 s nafas olish */
+
+function playHeart(sp,o){
+  const c=ctx(); if(!c) return noAudio();
+  o=o||{};
+  const v=voice();
+  const hr=sp.hr||72, rh=sp.rh||"reg", dur=o.dur||9.5;
+  const insp=t=>((t-v.t0)%BRC)<BRI;
+  const beats=[]; let t=v.t0+.12; const T0=60/hr;
+  while(t<v.t0+dur){
+    let T=T0, a1=1;
+    if(rh==="af"){ T=T0*R(.6,1.4); a1=R(.55,1.3); }
+    if(rh==="avb"){ a1=R(.6,1.1); if(Math.random()<.3) a1=2.1; }
+    beats.push({t1:t,T,a1}); t+=T;
+  }
+  for(const b of beats){
+    b.sys=sysOf(b.T); if(rh==="af") b.sys=Math.min(b.sys,b.T*.55);
+    b.t2=b.t1+b.sys; b.next=b.t1+b.T; b.dia=b.T-b.sys; b.insp=insp(b.t2);
+    v.tl.push([b.t1,b.t2,"s"],[b.t2,b.next,"d"]);
+    if(sp.s4 && rh!=="af") tone(v,b.t1-.09,"s4",sp.s4);
+    tone(v,b.t1,(sp.clap||b.a1>2)?"clap":(sp.muf?"muf":"s1"),(sp.s1??1)*b.a1);
+    if(sp.ej) tone(v,b.t1+.06,"ej",sp.ej);
+    if(sp.click) tone(v,b.t1+b.sys*.48,"ej",sp.click);
+    let gap=0; if(sp.split==="phys") gap=b.insp?.045:0; else if(sp.split==="fixed") gap=.055;
+    const s2=sp.s2??.6, k2=sp.metal?"metal":(sp.muf?"muf":"s2");
+    if(gap>0){ tone(v,b.t2,k2,s2*.78); tone(v,b.t2+gap,"s2",s2*.62); } else tone(v,b.t2,k2,s2);
+    if(sp.os) tone(v,b.t2+.09,"os",sp.os);
+    if(sp.s3) tone(v,b.t2+.15,"s3",sp.s3);
+    for(const [k,a] of (sp.mur||[])) if(MUR[k]) MUR[k](v,b,a,rh);
+  }
+  if(sp.breath) v.breath=true;
+  v.end=beats[beats.length-1].next;
+  return v;
+}
+
+/* ---- Perkutor tovushlar ---- */
+const PK={aniq:{f:118,d:.24,a:.95,lp:420},bogiq:{f:175,d:.11,a:.55,lp:620},tomtoq:{f:250,d:.045,a:.32,lp:950}};
+const PKN={aniq:"Clear pulmonary sound",bogiq:"Muffled sound (relative dullness)",tomtoq:"Dull sound"};
+function percTone(v,t,kind){
+  const p=PK[kind];
+  const o=osc(v,"sine",p.f,t,p.d*1.4); o.frequency.exponentialRampToValueAtTime(p.f*.9,t+p.d);
+  const g=v.c.createGain(); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(p.a*.5,t+.004); g.gain.exponentialRampToValueAtTime(.0005,t+p.d*1.3); o.connect(g); g.connect(v.out);
+  const n=nz(v,t,p.d*1.2), f=filt(v,n,[["lowpass",p.lp,.7],["highpass",60,.7]]), gg=gn(v,f,0);
+  gg.gain.setValueAtTime(0,t); gg.gain.linearRampToValueAtTime(p.a,t+.003); gg.gain.exponentialRampToValueAtTime(.0005,t+p.d); gg.connect(v.out);
+  const n2=nz(v,t,.02), f2=filt(v,n2,[["bandpass",2200,1]]), g2=gn(v,f2,0);
+  g2.gain.setValueAtTime(0,t); g2.gain.linearRampToValueAtTime(.22,t+.001); g2.gain.exponentialRampToValueAtTime(.0005,t+.015); g2.connect(v.out);
+}
+function playPerc(kind){
+  const c=ctx(); if(!c) return noAudio(); const v=voice();
+  for(let k=0;k<2;k++){ const t=v.t0+k*.42; percTone(v,t,kind); v.tl.push([t,t+.2,"p"]); }
+  v.end=v.t0+.9; return v;
+}
+function noAudio(){ const p=$("#player"); p.hidden=false; $("#plName").textContent="Sound could not be played"; $("#plSub").textContent="The browser does not support the Web Audio API. Open it in a recent version of Chrome, Safari or Firefox."; return null; }
+
+/* ---- Pleyer va ossillogramma ---- */
+const hist=[]; let raf=0;
+function startPlayer(t,s){
+  const p=$("#player"); p.hidden=false; $("#plName").textContent=t; $("#plSub").textContent=s;
+  hist.length=0; cancelAnimationFrame(raf); raf=requestAnimationFrame(loop);
+}
+const PH={s:"Systole",d:"Diastole",p:"Tap","":"Pause"};
+function loop(){
+  if(!V){ drawScope(); return; }
+  const an=AU.an, buf=new Float32Array(an.fftSize); an.getFloatTimeDomainData(buf);
+  let pk=0; for(let i=0;i<buf.length;i++){const x=Math.abs(buf[i]); if(x>pk) pk=x;}
+  const t=AU.ctx.currentTime; let ph="";
+  for(const [a,b,k] of V.tl) if(t>=a&&t<=b){ph=k;break;}
+  hist.push([pk,ph]); if(hist.length>600) hist.shift();
+  const el=$("#plPhase");
+  let lab=t<V.t0?"…":PH[ph];
+  if(V.breath && t>=V.t0) lab+=((t-V.t0)%BRC)<BRI?" · inspiration":" · expiration";
+  el.textContent=lab; el.className="phase "+(ph==="s"?"i":ph==="d"?"e":ph);
+  drawScope();
+  if(t>V.end+.35){ stop(true); el.textContent="Finished"; el.className="phase"; return; }
+  raf=requestAnimationFrame(loop);
+}
+function drawScope(){
+  const cv=$("#plScope"); const dpr=window.devicePixelRatio||1; const w=cv.clientWidth, h=cv.clientHeight; if(!w) return;
+  if(cv.width!==Math.round(w*dpr)){cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr);}
+  const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+  const col={s:css("--sys"),d:css("--dia"),p:css("--accent"),"":css("--muted")};
+  const n=Math.floor(w/2); const start=Math.max(0,hist.length-n);
+  let mx=.05; for(let i=start;i<hist.length;i++) mx=Math.max(mx,hist[i][0]);
+  for(let i=start;i<hist.length;i++){
+    const [pk,ph]=hist[i]; const a=Math.sqrt(pk/mx)*(h/2-3);
+    x.fillStyle=col[ph]||col[""]; x.fillRect((i-start)*2,h/2-a,1.4,Math.max(1,a*2));
+  }
+}
+$("#plStop").addEventListener("click",()=>stop());
+$("#vol").addEventListener("input",e=>{AU.vol=+e.target.value; if(AU.master) AU.master.gain.value=AU.vol;});
+
+/* ---- Statik fonokardiogramma ---- */
+function drawPhono(cv,sp,opt){
+  opt=opt||{};
+  const dpr=window.devicePixelRatio||1, w=cv.clientWidth, h=cv.clientHeight; if(!w) return;
+  cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr);
+  const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+  const hr=sp.hr||72, T=60/hr, sys=sysOf(T), dia=T-sys, cyc=opt.cycles||2, span=T*cyc+.12;
+  const X=t=>6+(t/span)*(w-12), mid=h*.52, H=h*.42;
+  const cS=css("--sys"), cD=css("--dia"), cT=css("--ink"), cM=css("--bad"), cL=css("--line"), cMu=css("--muted");
+  let seed=11; const rnd=()=>{seed=(seed*16807)%2147483647; return seed/2147483647;};
+  for(let k=0;k<cyc;k++){ const t1=.06+k*T;
+    x.globalAlpha=.13; x.fillStyle=cS; x.fillRect(X(t1),0,X(t1+sys)-X(t1),h);
+    x.fillStyle=cD; x.fillRect(X(t1+sys),0,X(t1+T)-X(t1+sys),h); x.globalAlpha=1; }
+  x.fillStyle=cL; x.fillRect(0,mid,w,1);
+  const lab=(t,s)=>{ x.fillStyle=cMu; x.font="9px "+css("--f-mono"); x.textAlign="center"; x.fillText(s,X(t),h-3); };
+  const spike=(t,a,s,wide)=>{ if(!(a>0)) return; x.strokeStyle=cT; x.lineWidth=1.2; const n=wide?7:5;
+    for(let i=0;i<n;i++){ const xx=X(t)+i*1.5, hh=Math.min(1.25,a)*H*(1-i/n)*(i%2?.7:1); x.beginPath(); x.moveTo(xx,mid-hh); x.lineTo(xx,mid+hh); x.stroke(); }
+    if(s) lab(t+.01,s); };
+  const env=(t0,t1,f)=>{ x.strokeStyle=cM; x.lineWidth=1; x.globalAlpha=.85;
+    for(let px=X(t0);px<=X(t1);px+=1.6){ const t=t0+(px-X(t0))/(X(t1)-X(t0)||1)*(t1-t0); const e=f(t); if(e<=0) continue; const hh=e*H*.8*(.45+.55*rnd());
+      x.beginPath(); x.moveTo(px,mid-hh); x.lineTo(px,mid+hh); x.stroke(); } x.globalAlpha=1; };
+  const lin=(pts)=>t=>{ for(let i=1;i<pts.length;i++){ const [a,va]=pts[i-1],[b,vb]=pts[i]; if(t>=a&&t<=b) return va+(vb-va)*(t-a)/((b-a)||1); } return 0; };
+  for(let k=0;k<cyc;k++){
+    const t1=.06+k*T, t2=t1+sys, nx=t1+T, b={t1,t2,next:nx,sys,dia};
+    for(const [m,a0] of (sp.mur||[])){ const a=Math.min(1.1,a0);
+      if(m==="mr"||m==="tr") env(t1,t2,lin([[t1,0],[t1+.025,a*.9],[t2-.04,a*.75],[t2,0]]));
+      if(m==="as"){ const s=t1+.07,e=t2-.035; env(s,e,lin([[s,0],[s+(e-s)*.45,a],[e,0]])); }
+      if(m==="late"){ const s=t1+sys*.52; env(s,t2,lin([[s,0],[s+.03,a*.55],[t2-.015,a],[t2,0]])); }
+      if(m==="func"){ const s=t1+.06,e=s+sys*.5; env(s,e,lin([[s,0],[s+(e-s)*.4,a*.7],[e,0]])); }
+      if(m==="ar"){ const s=t2+.008,e=t2+dia*.72; env(s,e,lin([[s,0],[s+.02,a*.75],[e,0]])); }
+      if(m==="ms"){ const s=t2+.11; env(s,nx,lin([[s,0],[s+.04,a*.8],[s+dia*.45,a*.3],[nx-.2,a*.3],[nx-.015,a*.95],[nx,0]])); }
+      if(m==="flint"){ const s=nx-.2; env(s,nx,lin([[s,0],[nx-.02,a*.8],[nx,0]])); }
+      if(m==="fr"){ for(const [p,q] of [[t1-.11,t1-.03],[t1+.06,t2-.06],[t2+.06,t2+.2]]) env(p,q,()=>a*.75); }
+    }
+    if(sp.s4) spike(t1-.09,sp.s4*.6,"S4");
+    spike(t1,(sp.s1??1)*.85,"S1",true);
+    if(sp.ej) spike(t1+.06,sp.ej*.6,"EC");
+    if(sp.click) spike(t1+sys*.48,sp.click*.6,"EC");
+    const s2=(sp.s2??.6)*.85;
+    if(sp.split) { spike(t2,s2*.8,""); spike(t2+(sp.split==="fixed"?.055:.045),s2*.62,""); lab(t2+.025,"S2 A₂P₂"); }
+    else spike(t2,s2,"S2");
+    if(sp.os) spike(t2+.09,sp.os*.65,"OS");
+    if(sp.s3) spike(t2+.15,sp.s3*.6,"S3");
+  }
+}
+
+/* =========================================================
+   GEOMETRIYA: anatomik ko‘krak qafasi
+   x — o‘rta chiziqdan sm (+ bemorning chap tomoni), y — bo‘yinturuq o‘ymasidan pastga sm.
+   Joylashuv qovurg‘a sathi bilan beriladi: L = 3 — III qovurg‘a, L = 3,5 — III qovurg‘alararo oraliq.
+   Old qovurg‘alar: yuqorilari to‘sh tomon pastga og‘adi, V–VII qovurg‘a tog‘aylari to‘sh tomon ko‘tariladi.
+   ========================================================= */
+const SCL=8.5, OX=160, OY=50;
+const SX=1.9;                       /* to‘sh tanasining yarim kengligi, sm */
+const RIBX=[SX,9.5,13.5];           /* to‘sh chekkasi, o‘rta-o‘mrov, oldingi qo‘ltiq osti chiziqlari */
+const RIBY=[null,[2,1.5,.9],[5,4.2,3],[7.8,6.8,5.2],[10.3,9.4,7.4],[12.6,12,9.8],[14.6,14.8,12.2],[16.3,17.6,14.8]];
+const CART=[0,1.1,1.5,2.3,3.2,4.4,6,7.6]; /* qovurg‘a tog‘ayining to‘sh chekkasidan uzunligi, sm */
+function ribY(k,x){
+  x=Math.abs(x); if(k<1) return 0; if(k>7) return ribY(7,x)+(k-7)*(ribY(7,x)-ribY(6,x));
+  const [y0,y1,y2]=RIBY[k]; if(x<=SX) return y0; const [x0,x1,x2]=RIBX;
+  return y0*((x-x1)*(x-x2))/((x0-x1)*(x0-x2))+y1*((x-x0)*(x-x2))/((x1-x0)*(x1-x2))+y2*((x-x0)*(x-x1))/((x2-x0)*(x2-x1));
+}
+function Ly(L,x){ if(L<0) return L*2; if(L<1) return ribY(1,x)*L; const k=Math.floor(L), f=L-k; return ribY(k,x)+(ribY(k+1,x)-ribY(k,x))*f; }
+const PX=x=>OX+x*SCL;
+const PY=(L,x)=>OY+Ly(L,x||0)*SCL;
+const toPx=pts=>pts.map(([x,L])=>[PX(x),PY(L,x)]);
+function fromPx(px,py){
+  const x=(px-OX)/SCL, y=(py-OY)/SCL;
+  if(y<0) return {x,L:y/2,y};
+  if(y<ribY(1,x)) return {x,L:y/Math.max(ribY(1,x),.1),y};
+  for(let k=1;k<=9;k++){ const a=ribY(k,x), b=ribY(k+1,x); if(y<=b) return {x,L:k+(y-a)/(b-a),y}; }
+  return {x,L:10,y};
+}
+const costalY=x=>{ x=Math.min(Math.abs(x),13.6); return 16.4+x*.38+x*x*.012; };   /* qovurg‘a ravog‘i */
+function smooth(pts){
+  const n=pts.length; let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for(let i=0;i<n;i++){ const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    d+=`C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`; }
+  return d+"Z";
+}
+function inPoly(p,poly){ let c=false; for(let i=0,j=poly.length-1;i<poly.length;j=i++){ const [xi,yi]=poly[i],[xj,yj]=poly[j]; if(((yi>p[1])!==(yj>p[1])) && (p[0]<(xj-xi)*(p[1]-yi)/(yj-yi)+xi)) c=!c; } return c; }
+/* Nisbiy to‘mtoqlik konturi */
+function relPts(g){
+  const bw=g.bw/2, up=g.up, r=g.r, l=g.l, aL=g.aL;
+  const waist={n:[4.3,up+.62],flat:[5,up+.85],deep:[3.6,up+.78],trap:[6,up+1]}[g.waist];
+  const pts=[[-bw,1.7],[bw,1.7]];
+  if(up>2.3) pts.push([bw,up-.15],[Math.max(3,bw+.25),up]); else pts.push([bw+.7,up+.12]);
+  pts.push(waist,[l-1.3,aL-.85],[l,aL],[l-1.7,aL+.28],[.4,Math.max(aL+.42,5.95)],[r+.35,5.8],[r,4.5],[r+(g.waist==="trap"?.25:.45),3.55],[-bw,Math.max(2.9,up-.1)]);
+  return pts;
+}
+/* Mutlaq to‘mtoqlik konturi */
+function absPts(g){
+  const ar=g.absR??SX, au=g.absU??(g.up+1), l=g.l, aL=g.aL;
+  return [[ar,au],[ar+(l-ar)*.45,au+.25],[l-1.6,aL-.05],[l-2.3,aL+.25],[Math.max(ar,.4),Math.max(aL+.4,5.95)],[ar-.1,5.5]];
+}
+const RN=["","I","II","III","IV","V","VI","VII"];
+function ribPath(k,sd,x0,x1){ let d=""; for(let x=x0;x<=x1+1e-6;x+=.35){ d+=(d?"L":"M")+PX(sd*x).toFixed(1)+","+(OY+ribY(k,x)*SCL).toFixed(1); } return d; }
+function chestSVG(){
+  const P=(x,y)=>`${PX(x).toFixed(1)},${(OY+y*SCL).toFixed(1)}`;
+  /* tana: bo‘yin, yelkalar, yon devorlar */
+  let s=`<path class="body-fill" d="M${P(-3.6,-5.2)} C${P(-3.8,-3)} ${P(-5.5,-2.4)} ${P(-9,-2.2)} C${P(-13,-2)} ${P(-16.5,-1.4)} ${P(-17.6,1.2)} C${P(-18,4)} ${P(-16.6,7)} ${P(-15.6,10)} C${P(-15,16)} ${P(-14.6,23)} ${P(-14,31.5)} L${P(14,31.5)} C${P(14.6,23)} ${P(15,16)} ${P(15.6,10)} C${P(16.6,7)} ${P(18,4)} ${P(17.6,1.2)} C${P(16.5,-1.4)} ${P(13,-2)} ${P(9,-2.2)} C${P(5.5,-2.4)} ${P(3.8,-3)} ${P(3.6,-5.2)} Z"/>`;
+  /* to‘sh-o‘mrov-so‘rg‘ichsimon mushaklar */
+  for(const sd of [-1,1]) s+=`<path class="musc" d="M${P(sd*3.2,-5.2)} C${P(sd*2.8,-3)} ${P(sd*2.1,-1.4)} ${P(sd*1.4,-.2)}"/>`;
+  /* qovurg‘alar: suyak qismi va tog‘ay qismi */
+  for(let k=1;k<=7;k++) for(const sd of [-1,1]){
+    const xs=k===1?2.6:SX, xj=xs+CART[k];
+    s+=`<path class="rib" d="${ribPath(k,sd,xj,14.4)}"/><path class="cartl" d="${ribPath(k,sd,xs,xj+.2)}"/>`;
+  }
+  for(const [k,x0] of [[8,10.6],[9,12],[10,13.2]]) for(const sd of [-1,1]) s+=`<path class="rib" d="${ribPath(k,sd,x0,14.4)}"/>`;
+  /* qovurg‘a ravog‘i (VII–X tog‘aylar) */
+  for(const sd of [-1,1]){ let d=""; for(let x=1;x<=13.4;x+=.4) d+=(d?"L":"M")+P(sd*x,costalY(x)); s+=`<path class="cartl" style="stroke-width:5" d="${d}"/>`; }
+  /* to‘sh: dasta, tana, xanjarsimon o‘simta */
+  s+=`<path class="stern" d="M${P(-3,0)} Q${P(0,.9)} ${P(3,0)} L${P(2.4,4.9)} L${P(SX,5.3)} L${P(SX,15.6)} L${P(1.3,16.3)} L${P(.75,19.4)} L${P(0,20)} L${P(-.75,19.4)} L${P(-1.3,16.3)} L${P(-SX,15.6)} L${P(-SX,5.3)} L${P(-2.4,4.9)} Z"/>`;
+  s+=`<path class="bone" style="opacity:.7" d="M${P(-2.3,5)} L${P(2.3,5)}"/><path class="bone" style="opacity:.5" d="M${P(-1.3,16.3)} L${P(1.3,16.3)}"/>`;
+  /* o‘mrov suyaklari */
+  for(const sd of [-1,1]) s+=`<path class="clav" d="M${P(sd*2.7,.15)} C${P(sd*6,1.3)} ${P(sd*10,-.4)} ${P(sd*15.6,-1.2)}"/>`;
+  /* ko‘krak so‘rg‘ichlari (IV oraliq, o‘rta-o‘mrov chizig‘i) */
+  for(const sd of [-1,1]) s+=`<circle class="nip" cx="${PX(sd*10)}" cy="${PY(4.5,10)}" r="3.2"/>`;
+  /* topografik chiziqlar */
+  for(const [x,t] of [[9.5,"midclav. line"],[13.5,"ant. axillary line"]]) for(const sd of [-1,1]){
+    s+=`<line class="guide" x1="${PX(sd*x)}" y1="${OY+(x>10?3:.6)*SCL}" x2="${PX(sd*x)}" y2="${OY+30*SCL}"/>`;
+    if(sd>0) s+=`<text class="side-t" transform="translate(${PX(x)-3},${OY+29.5*SCL}) rotate(-90)">${t}</text>`; }
+  /* qovurg‘a raqamlari */
+  for(let k=1;k<=7;k++) s+=`<text class="side-t" x="${PX(-15)}" y="${(PY(k,14.6)+3).toFixed(1)}" text-anchor="end">${RN[k]}</text>`;
+  s+=`<text class="side-t" x="${PX(-16.5)}" y="${OY+31*SCL}">RIGHT</text><text class="side-t" x="${PX(16.5)}" y="${OY+31*SCL}" text-anchor="end">LEFT</text>`;
+  return s;
+}
+function ptSVG(k,x,L,lab,name,sel){
+  return `<g class="pt${sel?" sel":""}" data-k="${k}" tabindex="0" role="button" aria-label="${esc(name)}" transform="translate(${PX(x).toFixed(1)},${PY(L,x).toFixed(1)})"><circle class="hit" r="15"/><circle class="dot" r="7.5"/><text class="ptn" y="3">${lab}</text></g>`;
+}
+/* Qopqoqlarning anatomik proyeksiyasi (qo‘llanma 12.2) */
+const VALV=[["M","Mitral",1.6,3.05],["A","Aortic",-.2,3.0],["P","Pulmonary artery",1.5,2.5],["T","Tricuspid",0,4.05]];
+function valvesSVG(){ return VALV.map(([k,n,x,L])=>`<g class="valve" aria-hidden="true"><ellipse cx="${PX(x)}" cy="${PY(L,x)}" rx="6.5" ry="4.2"/><text x="${PX(x)}" y="${PY(L,x)+2.8}">${k}</text></g>`).join(""); }
+
+/* =========================================================
+   MA’LUMOTLAR
+   ========================================================= */
+/* Auskultatsiya nuqtalari (x — sm, o‘rta chiziqdan; L — qovurg‘a sathi: 3 = III qovurg‘a, 3,5 = III oraliq) */
+const AP={
+  m:{lab:"1",n:"1 · Cardiac apex (mitral valve)"},
+  a:{lab:"2",n:"2 · 2nd space, right of the sternum (aorta)",x:-2.95,L:2.5},
+  p:{lab:"3",n:"3 · 2nd space, left of the sternum (pulmonary artery)",x:2.95,L:2.5},
+  t:{lab:"4",n:"4 · Base of the xiphoid process (tricuspid valve)",x:-.6,L:6.6},
+  b:{lab:"5",n:"5 · Botkin–Erb point (3rd space, left sternal border)",x:2.55,L:3.5},
+  q:{lab:"Q",n:"Left axillary region",x:12.6,L:5},
+  k:{lab:"U",n:"Right carotid artery",x:-2.6,L:-1.55}
+};
+const PP={
+  apex:{n:"Apex beat region"},
+  ps:{n:"Left sternal border, 3rd–4th space",x:2.9,L:3.95},
+  epi:{n:"Epigastric region",x:0,L:9.3},
+  a2:{n:"2nd space, right of the sternum",x:-2.95,L:2.5},
+  p2:{n:"2nd space, left of the sternum",x:2.95,L:2.5},
+  k:{n:"Carotid artery",x:-2.6,L:-1.55}
+};
+const PHOW={
+  apex:"Place the palm between the 3rd–6th ribs with its base toward the sternum and the fingers toward the axilla (approximate palpation). When the impulse is found, determine its 5 features with the tips of 2–3 flexed fingers. In women the breast is displaced upward and to the right.",
+  ps:"Place the palm transversely on the left sternal border, 3rd–4th spaces. In healthy adults no impulse is felt here; a palpable diffuse impulse indicates right ventricular enlargement.",
+  epi:"Direct the fingers from beneath the xiphoid process upward toward the heart; ask the patient to take a deep breath. If it taps against the fingertip — right ventricle; against the palm surface — abdominal aorta.",
+  a2:"Place the palm on the 2nd space, right of the sternum. With the other hand palpate the pulse in the carotid artery: if the thrill coincides with the pulse, it is systolic.",
+  p2:"Place the palm on the 2nd space, left of the sternum. In pulmonary hypertension the tap of S2 can be felt by the hand here.",
+  k:"Palpate the carotid artery at the level of the thyroid cartilage, on the inner edge of the sternocleidomastoid muscle. Never press both at the same time!"
+};
+
+/* Bemor holatlari. geo: r — o‘ng chegara (sm), up — yuqori chegara sathi, l — chap chegara (sm), aL — chap chegara aniqlanadigan oraliq, bw — tomir tutami kengligi */
+const SC={
+  norm:{name:"Healthy person (normal)",hr:72,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal",
+    sh:"No complaints, came for a preventive examination.",
+    ko:"The cardiac region is unchanged. No pathological pulsations are visible. Skin color is normal.",
+    pu:"72/min, regular, equal in both arms, well filled, moderately tense.",ab:"120/78 mm Hg",
+    palp:{apex:"In the 5th space, 1–1.5 cm medial to the midclavicular line; area 1–2 cm², moderate height and force, not resistant.",ps:"Cardiac impulse is not detected.",epi:"No epigastric pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Carotid pulse is normal, simultaneous with the apex beat."},
+    pa:{apex:"n",ps:"0",epi:"0",a2:"0",p2:"0",k:"n"},
+    perk:"Relative dullness: right border in the 4th space 1–1.5 cm outside the right sternal border, upper border at the 3rd rib, left in the 5th space 1–1.5 cm medial to the midclavicular line. Configuration is normal, vascular bundle 5–6 cm.",
+    au:{m:{s1:1,s2:.55},a:{s1:.5,s2:1},p:{s1:.5,s2:.95,split:"phys",breath:true},t:{s1:.9,s2:.5},b:{s1:.7,s2:.7},q:{s1:.35,s2:.2},k:{s1:.15,s2:.35}},
+    tx:{m:"S1 is louder than S2 (about 1.5–2 times). No murmur.",a:"S2 is louder than S1.",p:"S2 is louder than S1; on inspiration S2 splits briefly (physiological splitting).",t:"S1 is loud, S2 is quieter.",b:"Both sounds are of about equal intensity.",q:"Sounds are quiet, no murmur.",k:"Quiet transmitted sounds, no murmur."},
+    key:"All findings are normal: borders “4-3-5”, S1 loud at the apex, S2 loud at the base, no murmur."},
+  ms:{name:"Mitral stenosis",hr:88,
+    geo:{r:-4.75,up:2,l:8.5,aL:5.5,waist:"flat",bw:5.5,absR:.2},konf:"Mitral",
+    sh:"Shortness of breath on exertion, nocturnal cough, occasional blood-streaked sputum, palpitations, easy fatigue.",
+    ko:"Facies mitralis: bluish-red patches on the cheeks, cyanosis of the lips. Pulsation is visible at the left sternal border and in the epigastric region.",
+    pu:"88/min, regular, small; smaller in the left arm (pulsus differens).",ab:"110/75 mm Hg",
+    palp:{apex:"Not displaced (5th space), localized, weak: the left ventricle is small. Diastolic (presystolic) “cat's purr” at the apex: the thrill is felt after the carotid pulse, before the next beat.",ps:"Cardiac impulse at the left sternal border in the 3rd–4th spaces: right ventricular hypertrophy.",epi:"Epigastric pulsation taps against the fingertip and increases on inspiration: right ventricle.",a2:"No thrill.",p2:"The tap of S2 may be felt by the hand (pulmonary hypertension).",k:"Pulse is small."},
+    pa:{apex:"wv",ps:"s",epi:"s",a2:"0",p2:"w",k:"w"},
+    perk:"Upper border up to the 2nd rib (left atrium), right border shifted to the right (right atrium and right ventricle). Left border unchanged. The cardiac waist is smoothed out: mitral configuration. Absolute dullness is enlarged.",
+    au:{m:{s1:1.6,clap:true,s2:.5,os:.65,mur:[["ms",.9]]},a:{s1:.6,s2:.8},p:{s1:.6,s2:1.5,split:"fixed"},t:{s1:1.1,s2:.5},b:{s1:.9,s2:.7,os:.5,mur:[["ms",.3]]},q:{s1:.5,s2:.2},k:{s1:.2,s2:.35}},
+    tx:{m:"“Snapping” S1; opening snap of the mitral valve after S2 (“quail rhythm”). Diastolic murmur: low-pitched, rumbling, intensifying in presystole, not radiating; best heard on the left side.",a:"Sounds are unchanged.",p:"Accentuated and split S2: pulmonary hypertension.",t:"S1 is loud.",b:"Opening snap and a quiet diastolic murmur.",q:"The murmur does not radiate to the axilla.",k:"No murmur."},
+    key:"Snapping S1 + opening snap (“quail rhythm”) + presystolic crescendo diastolic murmur at the apex + accentuated S2 over the pulmonary artery; borders upward and to the right, mitral configuration."},
+  mr:{name:"Mitral valve regurgitation",hr:80,
+    geo:{r:-4,up:2.5,l:10.5,aL:5.5,waist:"flat",bw:5.5},konf:"Mitral",
+    sh:"Shortness of breath on exertion, palpitations, weakness.",
+    ko:"Apex beat is visible, increased.",
+    pu:"80/min, regular, satisfactorily filled.",ab:"125/80 mm Hg",
+    palp:{apex:"Shifted left: in the 5th space 1 cm lateral to the midclavicular line; wide, high, increased.",ps:"Cardiac impulse is not detected.",epi:"No epigastric pulsation.",a2:"No thrill.",p2:"The tap of S2 may be felt.",k:"Pulse is normal."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"0",p2:"w",k:"n"},
+    perk:"Left border to the left (left ventricle), upper border upward (left atrium); the right border shifts to the right later. The cardiac waist is smoothed out: mitral configuration.",
+    au:{m:{s1:.3,s2:.55,s3:.5,mur:[["mr",1]]},a:{s1:.4,s2:.9},p:{s1:.4,s2:1.4},t:{s1:.6,s2:.5,mur:[["mr",.25]]},b:{s1:.5,s2:.7,mur:[["mr",.45]]},q:{s1:.25,s2:.25,mur:[["mr",.6]]},k:{s1:.15,s2:.3}},
+    tx:{m:"S1 sharply decreased; a blowing systolic murmur merging with S1 and occupying the whole of systole; S3.",a:"Sounds are unchanged, no murmur.",p:"Accentuated S2 (increased pressure in the pulmonary circulation).",t:"The systolic murmur is transmitted quietly.",b:"The systolic murmur is transmitted.",q:"The systolic murmur radiates to the left axillary region.",k:"No murmur."},
+    key:"Decreased S1 at the apex + a systolic murmur merging with S1 and radiating to the axilla + accentuated S2 over the pulmonary artery; borders to the left and upward."},
+  as:{name:"Aortic stenosis",hr:64,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"deep",bw:6.2},konf:"Aortic",
+    sh:"Squeezing retrosternal pain on exertion, dizziness, fainted twice while climbing stairs, shortness of breath.",
+    ko:"Skin is pale, the apex beat is barely visible.",
+    pu:"64/min, regular, slow and small (pulsus tardus et parvus).",ab:"105/85 mm Hg (narrow pulse pressure)",
+    palp:{apex:"Slightly displaced to the left, strong, resistant (“heaving”): concentric hypertrophy.",ps:"No cardiac impulse.",epi:"No epigastric pulsation.",a2:"Systolic “cat's purr”: the thrill coincides with the carotid pulse and radiates to the neck vessels.",p2:"No thrill or weakly transmitted.",k:"Pulse rises slowly and is small; the thrill is transmitted."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"v",p2:"0",k:"wv"},
+    perk:"Left border moderately displaced to the left, cardiac waist deepened: aortic configuration. Vascular bundle slightly widened (post-stenotic aortic dilatation).",
+    au:{m:{s1:.6,s2:.35,s4:.45,mur:[["as",.35]]},a:{s1:.5,s2:.2,ej:.4,mur:[["as",1.2]]},p:{s1:.5,s2:.6,mur:[["as",.5]]},t:{s1:.7,s2:.4,mur:[["as",.25]]},b:{s1:.6,s2:.4,mur:[["as",.7]]},q:{s1:.3,s2:.2},k:{s1:.1,s2:.15,mur:[["as",.9]]}},
+    tx:{m:"S1 decreased, S4; the systolic murmur is transmitted quietly.",a:"Harsh, sawing, diamond-shaped (crescendo–decrescendo) systolic murmur; S2 decreased; early systolic ejection click.",p:"The systolic murmur is transmitted.",t:"The systolic murmur is quiet.",b:"The systolic murmur is transmitted.",q:"The murmur is barely audible.",k:"The systolic murmur radiates to the carotid artery."},
+    key:"Harsh diamond-shaped systolic murmur in the 2nd space on the right, radiating to the carotid arteries + decreased S2 over the aorta + systolic thrill + pulsus tardus et parvus; angina pectoris, syncope, shortness of breath."},
+  ar:{name:"Aortic valve regurgitation",hr:84,
+    geo:{r:-3.25,up:3,l:11.5,aL:6.5,waist:"deep",bw:7},konf:"Aortic (“sitting duck”)",
+    sh:"Palpitations, a sensation of pulsation in the neck, dizziness, shortness of breath on exertion.",
+    ko:"Skin is pale. “Dance of the carotids”, de Musset's sign (head bobbing), Quincke's capillary pulse. Apex beat is visible.",
+    pu:"84/min, rapid, high and large (pulsus celer, altus, magnus): “water-hammer” pulse.",ab:"165/40 mm Hg (wide pulse pressure)",
+    palp:{apex:"Displaced to the left and down: in the 6th space 2 cm lateral to the midclavicular line; wide, high, strong, resistant (“dome-shaped”).",ps:"No cardiac impulse.",epi:"No epigastric pulsation.",a2:"No thrill.",p2:"No thrill.",k:"The carotid artery pulsates sharply and high (“dance of the carotids”)."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"0",p2:"0",k:"s"},
+    perk:"Left border sharply displaced to the left and down (left ventricular dilatation), cardiac waist deepened: aortic configuration. Vascular bundle widened.",
+    au:{m:{s1:.45,s2:.4,mur:[["ar",.35],["flint",.25]]},a:{s1:.5,s2:.3,mur:[["ar",.7],["func",.35]]},p:{s1:.5,s2:.7},t:{s1:.6,s2:.4},b:{s1:.5,s2:.3,mur:[["ar",1]]},q:{s1:.3,s2:.2},k:{s1:.2,s2:.25,mur:[["func",.3]]}},
+    tx:{m:"S1 decreased; the diastolic murmur is transmitted to the apex; presystolic Austin Flint murmur.",a:"S2 decreased; protodiastolic murmur; functional systolic murmur of relative stenosis.",p:"Sounds are unchanged.",t:"Sounds are quiet.",b:"A soft, blowing, decrescendo protodiastolic murmur beginning immediately after S2. It is best heard when the patient leans forward and holds expiration.",q:"The murmur is barely audible.",k:"Systolic flow murmur."},
+    key:"Protodiastolic murmur at the Botkin–Erb point + decreased S2 over the aorta + rapid, high pulse + wide pulse pressure (low diastolic pressure) + peripheral vascular signs; left border to the left and down."},
+  ah:{name:"Arterial hypertension, left ventricular hypertrophy",hr:76,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"deep",bw:6},konf:"Aortic",
+    sh:"Headache in the occipital region, dizziness, ringing in the ears, “flies” before the eyes.",
+    ko:"Face is flushed. The apex beat may be visible.",
+    pu:"76/min, regular, tense (pulsus durus).",ab:"168/102 mm Hg",
+    palp:{apex:"Slightly displaced to the left, increased, resistant.",ps:"No cardiac impulse.",epi:"No epigastric pulsation.",a2:"The tap of S2 may be felt.",p2:"No thrill.",k:"Pulse is tense."},
+    pa:{apex:"s",ps:"0",epi:"0",a2:"w",p2:"0",k:"s"},
+    perk:"Left border displaced 1 cm to the left, cardiac waist slightly deepened: tendency toward aortic configuration. Vascular bundle slightly widened.",
+    au:{m:{s1:.85,s2:.55,s4:.45},a:{s1:.5,s2:1.6,metal:true},p:{s1:.5,s2:.8},t:{s1:.8,s2:.5},b:{s1:.7,s2:.9},q:{s1:.35,s2:.2},k:{s1:.15,s2:.4}},
+    tx:{m:"Presystolic “gallop” (S4): a hypertrophied, poorly compliant ventricle.",a:"Accentuated S2: over the aorta, S2 is louder than over the pulmonary artery, with a metallic quality.",p:"S2 is quieter than over the aorta.",t:"Sounds are as usual.",b:"S2 is transmitted, loud.",q:"No murmur.",k:"No murmur."},
+    key:"Accentuated S2 over the aorta + resistant apex beat displaced to the left + S4 + high BP and tense pulse."},
+  rk:{name:"Acute rheumatic fever, primary rheumatic carditis",hr:112,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal (left border slightly widened)",
+    sh:"Had tonsillitis 2–3 weeks ago. Temperature 38 °C, migrating pain and swelling in the large joints, palpitations, weakness.",
+    ko:"Knee and ankle joints are swollen and red. Skin is pale.",
+    pu:"112/min, regular, soft; tachycardia is out of proportion to the fever.",ab:"105/65 mm Hg",
+    palp:{apex:"Slightly displaced to the left, decreased, diffuse.",ps:"No cardiac impulse.",epi:"No epigastric pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is rapid, soft."},
+    pa:{apex:"w",ps:"0",epi:"0",a2:"0",p2:"0",k:"n"},
+    perk:"Left border shifted 1 cm to the left (left ventricular dilatation). Other borders normal.",
+    au:{m:{s1:.4,s2:.4,s3:.6,mur:[["mr",.3]]},a:{s1:.4,s2:.5},p:{s1:.4,s2:.55},t:{s1:.45,s2:.35},b:{s1:.4,s2:.4,mur:[["mr",.15]]},q:{s1:.2,s2:.15},k:{s1:.1,s2:.2}},
+    tx:{m:"Sounds are muffled, S1 decreased; protodiastolic gallop rhythm (S3); soft, blowing systolic murmur at the apex (relative mitral regurgitation).",a:"Sounds are muffled.",p:"Sounds are muffled.",t:"Sounds are muffled.",b:"A quiet systolic murmur is transmitted.",q:"The murmur is barely audible.",k:"No murmur."},
+    key:"Association with streptococcal tonsillitis + migrating polyarthritis + signs of carditis: tachycardia, muffled sounds, decreased S1, S3, soft systolic murmur at the apex."},
+  per:{name:"Exudative pericarditis",hr:108,
+    geo:{r:-5.5,up:2,l:11.5,aL:5.5,waist:"trap",bw:7,absR:-4.3,absU:2.4},konf:"Trapezoid",
+    sh:"Heaviness in the cardiac region, shortness of breath; the patient has to sit leaning forward.",
+    ko:"Neck veins are distended, face is puffy. The cardiac region slightly bulges, the apex beat is not visible.",
+    pu:"108/min, small; on inspiration the pulse wave decreases sharply (paradoxical pulse).",ab:"100/70 mm Hg",
+    palp:{apex:"Apex beat is not palpable (or is felt very weakly well inside the left border of relative dullness).",ps:"No impulse.",epi:"No epigastric pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is small, decreases further on inspiration."},
+    pa:{apex:"0",ps:"0",epi:"0",a2:"0",p2:"0",k:"w"},
+    perk:"Borders enlarged in all directions, cardiac waist absent: trapezoid (triangular) configuration. Absolute dullness almost merges with relative dullness. Vascular bundle widened.",
+    au:{m:{s1:.22,s2:.18,muf:true},a:{s1:.15,s2:.25,muf:true},p:{s1:.15,s2:.22,muf:true},t:{s1:.2,s2:.15,muf:true},b:{s1:.2,s2:.18,muf:true},q:{s1:.1,s2:.08,muf:true},k:{s1:.1,s2:.15}},
+    tx:{m:"Sounds sharply muffled, tachycardia.",a:"Sounds sharply muffled.",p:"Sounds sharply muffled.",t:"Sounds sharply muffled.",b:"Sounds sharply muffled.",q:"Sounds are barely audible.",k:"Quiet sounds."},
+    key:"Borders enlarged in all directions, trapezoid configuration + apex beat not detectable + sharply muffled sounds + paradoxical pulse, distended neck veins."},
+  frik:{name:"Dry (fibrinous) pericarditis",hr:96,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal",
+    sh:"Acute, stabbing pain in the cardiac region: worsens with inspiration, cough and lying on the back, decreases on leaning forward. Low-grade fever.",
+    ko:"The patient sits leaning forward. Breathing is shallow.",
+    pu:"96/min, regular.",ab:"115/75 mm Hg",
+    palp:{apex:"In the usual place, unchanged.",ps:"A rough thrill is felt at the left sternal border (pericardial friction).",epi:"No epigastric pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is normal."},
+    pa:{apex:"n",ps:"v",epi:"0",a2:"0",p2:"0",k:"n"},
+    perk:"Borders unchanged.",
+    au:{m:{s1:.7,s2:.45,mur:[["fr",.35]]},a:{s1:.45,s2:.8},p:{s1:.45,s2:.8,mur:[["fr",.4]]},t:{s1:.7,s2:.4,mur:[["fr",.5]]},b:{s1:.5,s2:.5,mur:[["fr",1]]},q:{s1:.3,s2:.2},k:{s1:.15,s2:.3}},
+    tx:{m:"The friction rub is transmitted quietly.",a:"Sounds are unchanged.",p:"The friction rub is quiet.",t:"Friction rub.",b:"Pericardial friction rub: scratching, resembling “walking on snow”, in systole and diastole, does not radiate; intensifies with stethoscope pressure and on leaning forward, persists when the breath is held.",q:"No murmur.",k:"No murmur."},
+    key:"At the left sternal border, in the area of absolute dullness, a scratching, non-radiating friction rub that persists when the breath is held + positional acute pain."}
+};
+/* Paypaslash ma’lumotlari: ap5 — cho‘qqi turtkisining 5 xususiyati (Joyi, Maydoni, Balandligi, Kuchi, Rezistentligi);
+   apR — turtki radiusi (sm); pm — har bir nuqtada [zarba kuchi 0–3, titrash fazasi: null | "s" | "d" | "sd"] */
+const EXT={
+  norm:{ap5:["5th space, 1–1.5 cm medial to the midclavicular line","1–2 cm² (diameter 1.5–2 cm)","Moderate","Moderate","Not resistant (elastic)"],apR:.9,
+    pm:{apex:[2,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]}},
+  ms:{ap5:["5th space, in place","Limited (1 cm²)","Low","Weakened","Not resistant"],apR:.6,
+    pm:{apex:[1,"d"],ps:[3,null],epi:[3,null],a2:[0,null],p2:[1,null],k:[1,null]}},
+  mr:{ap5:["5th space, 1 cm outside the midclavicular line","Wide (2.5–3 cm²)","High","Increased","Moderately resistant"],apR:1.3,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[1,null],k:[2,null]}},
+  as:{ap5:["5th space, at the midclavicular line","Slightly widened (2 cm²)","Moderate","Strong","Resistant, “heaving”"],apR:1,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,"s"],p2:[0,null],k:[1,"s"]}},
+  ar:{ap5:["6th space, 2 cm outside the midclavicular line","Wide (3–4 cm²)","High","Strong","Resistant, “dome-shaped”"],apR:1.5,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[3,null]}},
+  ah:{ap5:["5th space, at the midclavicular line","1.5–2 cm²","Moderate","Increased","Resistant"],apR:.95,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[1,null],p2:[0,null],k:[3,null]}},
+  rk:{ap5:["5th space, at the midclavicular line","Diffuse (2.5 cm²)","Low","Weakened","Not resistant"],apR:1.2,
+    pm:{apex:[1,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[1,null]}},
+  per:{ap5:["Not detected","—","—","—","—"],apR:0,
+    pm:{apex:[0,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[1,null]}},
+  frik:{ap5:["5th space, 1–1.5 cm medial to the midclavicular line","1–2 cm²","Moderate","Moderate","Not resistant"],apR:.9,
+    pm:{apex:[2,null],ps:[0,"sd"],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]}}
+};
+for(const id in EXT) Object.assign(SC[id],EXT[id]);
+
+/* Qo‘shimcha virtual bemorlar */
+Object.assign(SC,{
+  msmr:{name:"Combined mitral valve disease, atrial fibrillation",hr:100,rh:"af",
+    geo:{r:-4.75,up:2,l:10,aL:5.5,waist:"flat",bw:5.5,absR:.2},konf:"Mitral",
+    sh:"Shortness of breath on exertion, palpitations and “skipped beats”, cough, leg swelling in the evening. Followed for rheumatic valve disease for 20 years.",
+    ko:"Facies mitralis, acrocyanosis, swelling of the shins.",
+    pu:"Irregular, waves vary, 84/min; heart rate 100/min: pulse deficit 16.",ab:"110/70 mm Hg",
+    ap5:["5th space, at the midclavicular line","Widened (2.5 cm²)","Moderate","Increased","Not resistant"],apR:1.15,
+    pm:{apex:[2,"d"],ps:[2,null],epi:[2,null],a2:[0,null],p2:[1,null],k:[1,null]},
+    palp:{apex:"Slightly displaced to the left (regurgitation component), widened. Diastolic thrill at the apex; no presystolic accentuation because of fibrillation.",ps:"Right ventricular impulse.",epi:"Epigastric pulsation: right ventricle.",a2:"No thrill.",p2:"The tap of S2 is felt.",k:"Pulse is irregular, waves vary."},
+    perk:"Borders enlarged upward (left atrium), to the right (right atrium) and to the left (left ventricle); mitral configuration.",
+    au:{m:{s1:1.1,s2:.5,os:.4,mur:[["mr",.7],["ms",.7]]},a:{s1:.5,s2:.7},p:{s1:.5,s2:1.4},t:{s1:.8,s2:.5},b:{s1:.7,s2:.6,mur:[["mr",.35],["ms",.25]]},q:{s1:.3,s2:.2,mur:[["mr",.45]]},k:{s1:.15,s2:.3}},
+    tx:{m:"Rhythm is irregular, S1 intensity varies; systolic murmur and diastolic rumble (presystolic accentuation disappears in fibrillation).",a:"Sounds are irregular.",p:"S2 accentuation.",t:"Sounds are irregular.",b:"Both murmurs are transmitted quietly.",q:"The systolic murmur radiates to the axilla.",k:"No murmur."},
+    key:"Both systolic and diastolic murmurs at the apex + irregular rhythm and pulse deficit + accentuated S2 over the pulmonary artery; borders upward, to the right and to the left."},
+  mvp:{name:"Mitral valve prolapse",hr:84,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal",
+    sh:"Stabbing pain in the cardiac region unrelated to exertion, palpitations and a sense of “skipped beats”, easy fatigue, anxiety.",
+    ko:"Asthenic build, tall stature, flat chest, hypermobile joints.",
+    pu:"84/min, occasional extrasystoles.",ab:"110/70 mm Hg",
+    ap5:["5th space, 1–1.5 cm medial to the midclavicular line","1–2 cm²","Moderate","Moderate","Not resistant"],apR:.9,
+    pm:{apex:[2,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]},
+    palp:{apex:"In the usual place, features normal.",ps:"No impulse.",epi:"No pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is normal."},
+    perk:"Borders unchanged.",
+    au:{m:{s1:.9,s2:.55,click:.8,mur:[["late",.7]]},a:{s1:.5,s2:1},p:{s1:.5,s2:.95},t:{s1:.9,s2:.5},b:{s1:.7,s2:.65,click:.4,mur:[["late",.3]]},q:{s1:.35,s2:.2,mur:[["late",.3]]},k:{s1:.15,s2:.35}},
+    tx:{m:"Mid-systolic click followed by a late systolic murmur that crescendos up to S2. On standing the click moves closer to S1 and the murmur lengthens.",a:"Sounds are unchanged.",p:"Sounds are unchanged.",t:"Sounds are unchanged.",b:"The click and murmur are transmitted quietly.",q:"The late systolic murmur radiates quietly to the axilla.",k:"No murmur."},
+    key:"Mid-systolic click at the apex + late systolic murmur; sounds and borders unchanged; asthenic build. Confirmation: echocardiography."},
+  tr:{name:"Tricuspid valve regurgitation",hr:96,rh:"af",
+    geo:{r:-5.75,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5,absR:-.6},konf:"Right chambers enlarged (close to trapezoid)",
+    sh:"Leg swelling, heaviness under the right ribs, abdominal enlargement, weakness. Rheumatic mitral valve disease previously diagnosed.",
+    ko:"Acrocyanosis, yellowish-bluish skin tint. Neck veins are distended and pulsate in systole (positive venous pulse). Epigastric pulsation, ascites, leg swelling.",
+    pu:"96/min, arrhythmic (atrial fibrillation), waves vary.",ab:"105/70 mm Hg",
+    ap5:["5th space, at the midclavicular line","Wide, diffuse","Low","Weakened","Not resistant"],apR:1.2,
+    pm:{apex:[1,null],ps:[3,null],epi:[3,null],a2:[0,null],p2:[0,null],k:[2,null]},
+    palp:{apex:"Slightly displaced to the left: the enlarged right ventricle pushes the left ventricle aside; diffuse, weak.",ps:"Strong diffuse impulse at the left sternal border and its lower part: right ventricular dilatation.",epi:"Epigastric pulsation taps against the fingertip and increases on inspiration; the liver expands as a whole in systole (true liver pulsation).",a2:"No thrill.",p2:"No thrill.",k:"Neck veins fill in systole: positive venous pulse."},
+    perk:"Right border sharply shifted to the right (right atrium), left border slightly to the left (the right ventricle pushes the left aside). Absolute dullness enlarged. Liver enlarged.",
+    au:{m:{s1:.6,s2:.5,mur:[["tr",.2]]},a:{s1:.4,s2:.6},p:{s1:.5,s2:.75},t:{s1:.5,s2:.5,mur:[["tr",.9]],breath:true},b:{s1:.5,s2:.55,mur:[["tr",.4]],breath:true},q:{s1:.25,s2:.2},k:{s1:.15,s2:.3}},
+    tx:{m:"Rhythm is irregular; murmur is transmitted quietly.",a:"Sounds are quiet, irregular.",p:"Sounds are irregular.",t:"S1 decreased; the systolic murmur intensifies at the height of inspiration (Rivero-Carvallo sign). The respiratory phase is shown in the player.",b:"The systolic murmur is transmitted and intensifies on inspiration.",q:"No murmur.",k:"No murmur."},
+    key:"Systolic murmur at the base of the xiphoid process intensifying on inspiration (Rivero-Carvallo) + positive venous pulse and liver pulsation + marked shift of the right border + systemic venous congestion."},
+  dkmp:{name:"Dilated cardiomyopathy, heart failure",hr:104,
+    geo:{r:-4.5,up:2.5,l:12.5,aL:6.5,waist:"n",bw:6},konf:"“Bovine heart”: enlarged in all directions",
+    sh:"Shortness of breath even at rest, nocturnal attacks of suffocation, dyspnea worse when lying down (orthopnea), weakness, leg swelling.",
+    ko:"Semi-sitting position (orthopnea), acrocyanosis, distended neck veins, leg swelling.",
+    pu:"104/min, regular, small; large and small waves alternate (pulsus alternans).",ab:"95/65 mm Hg",
+    ap5:["6th space, near the anterior axillary line","Wide, diffuse (4 cm²)","Low","Weak","Not resistant"],apR:1.6,
+    pm:{apex:[1,null],ps:[1,null],epi:[1,null],a2:[0,null],p2:[0,null],k:[1,null]},
+    palp:{apex:"Sharply displaced to the left and down, wide, diffuse, low and weak: a dilated ventricle with reduced myocardial contractility.",ps:"Weak diffuse impulse.",epi:"Weak pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is small, waves alternate."},
+    perk:"All borders enlarged: left border in the 6th space near the anterior axillary line, right border to the right, upper border up to the 2nd space. “Bovine heart”.",
+    au:{m:{s1:.3,s2:.35,s3:.85,mur:[["mr",.4]]},a:{s1:.35,s2:.45},p:{s1:.35,s2:.7},t:{s1:.4,s2:.35,s3:.3,mur:[["tr",.25]]},b:{s1:.35,s2:.4,s3:.4,mur:[["mr",.2]]},q:{s1:.2,s2:.15,mur:[["mr",.3]]},k:{s1:.1,s2:.2}},
+    tx:{m:"Sounds are muffled, S1 decreased; protodiastolic gallop rhythm (S3); systolic murmur of relative mitral regurgitation.",a:"Sounds are muffled.",p:"S2 is relatively loud (pulmonary congestion).",t:"S3, murmur of relative tricuspid regurgitation.",b:"The gallop rhythm is transmitted.",q:"The systolic murmur radiates quietly.",k:"No murmur."},
+    key:"All borders enlarged + weak diffuse apex beat displaced to the left and down + S3 (gallop rhythm) + muffled sounds + alternating pulse and signs of heart failure."},
+  anem:{name:"Iron deficiency anemia: functional murmur",hr:104,
+    geo:{r:-3.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal",
+    sh:"Weakness, dizziness, shortness of breath and palpitations on exertion, hair loss, craving to eat chalk. Menstrual periods are heavy and prolonged.",
+    ko:"Skin and mucous membranes are pale, nails are brittle and spoon-shaped (koilonychia), cracks at the corners of the mouth.",
+    pu:"104/min, regular, soft.",ab:"105/65 mm Hg",
+    ap5:["5th space, 1–1.5 cm medial to the midclavicular line","1.5–2 cm²","Slightly high","Moderate","Not resistant"],apR:1,
+    pm:{apex:[2,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[2,null]},
+    palp:{apex:"In the usual place; because of tachycardia the impulses are frequent.",ps:"No impulse.",epi:"No pulsation.",a2:"No thrill.",p2:"No thrill (a functional murmur has no “cat's purr”).",k:"Pulse is rapid, soft."},
+    perk:"Borders unchanged.",
+    au:{m:{s1:1.1,s2:.6,mur:[["func",.45]]},a:{s1:.6,s2:1},p:{s1:.6,s2:1,mur:[["func",.55]]},t:{s1:.9,s2:.5},b:{s1:.7,s2:.7,mur:[["func",.3]]},q:{s1:.35,s2:.2},k:{s1:.15,s2:.35,mur:[["func",.2]]}},
+    tx:{m:"Sounds are loud (tachycardia); a short, soft, blowing systolic murmur, sounds unchanged.",a:"Sounds are unchanged.",p:"Soft short systolic murmur (best heard here).",t:"Sounds are unchanged.",b:"Quiet systolic murmur.",q:"The murmur does not radiate.",k:"A continuous “venous hum” may be heard over the neck veins."},
+    key:"Quiet, short, soft systolic murmur; sounds and borders unchanged, no thrill + pallor, tachycardia: functional (anemic) murmur. Check hemoglobin and ferritin in the blood."},
+  tir:{name:"Thyrotoxicosis: hyperkinetic heart",hr:118,
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal (left border slightly widened)",
+    sh:"Palpitations, sweating, heat intolerance, hand tremor, weight loss despite a good appetite, nervousness.",
+    ko:"Skin is warm and moist, eyes are bright (exophthalmos), finger tremor, thyroid gland enlarged.",
+    pu:"118/min, regular, rapid and high (celer et altus).",ab:"150/60 mm Hg (wide pulse pressure)",
+    ap5:["5th space, at the midclavicular line","Diffuse (2.5 cm²)","High","Increased","Not resistant"],apR:1.15,
+    pm:{apex:[3,null],ps:[1,null],epi:[1,null],a2:[0,null],p2:[0,null],k:[3,null]},
+    palp:{apex:"Slightly displaced to the left, high, increased, diffuse: hyperkinetic circulation.",ps:"Weak pulsation.",epi:"Weak pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is rapid, high."},
+    perk:"Left border shifted 1 cm to the left, other borders normal.",
+    au:{m:{s1:1.5,s2:.7,mur:[["func",.5]]},a:{s1:.7,s2:1.2},p:{s1:.7,s2:1.2,mur:[["func",.4]]},t:{s1:1.2,s2:.6},b:{s1:.9,s2:.9,mur:[["func",.3]]},q:{s1:.45,s2:.25},k:{s1:.2,s2:.4,mur:[["func",.25]]}},
+    tx:{m:"Both sounds, especially S1, are accentuated; functional systolic murmur; tachycardia.",a:"Sounds are accentuated.",p:"Sounds are accentuated, quiet systolic murmur.",t:"Sounds are accentuated.",b:"Quiet systolic murmur.",q:"The murmur does not radiate.",k:"A systolic murmur may be heard over the thyroid gland."},
+    key:"Persistent tachycardia (even in sleep), accentuated sounds, functional systolic murmur, wide pulse pressure + signs of thyrotoxicosis (exophthalmos, tremor, weight loss)."},
+  avb:{name:"Complete atrioventricular block",hr:38,rh:"avb",
+    geo:{r:-3.25,up:3,l:9.5,aL:5.5,waist:"n",bw:5.5},konf:"Normal (left ventricle slightly enlarged)",
+    sh:"Dizziness, darkening before the eyes, two brief episodes of syncope with convulsions (Morgagni–Adams–Stokes attacks), weakness.",
+    ko:"Intermittent large “cannon” waves are visible in the neck veins.",
+    pu:"38/min, regular, large, slow.",ab:"170/70 mm Hg",
+    ap5:["5th space, at the midclavicular line","2 cm²","High","Increased","Not resistant"],apR:1,
+    pm:{apex:[3,null],ps:[0,null],epi:[0,null],a2:[0,null],p2:[0,null],k:[3,null]},
+    palp:{apex:"Infrequent, strong impulse: the stroke volume is large with every contraction.",ps:"No impulse.",epi:"No pulsation.",a2:"No thrill.",p2:"No thrill.",k:"Pulse is infrequent, large; intermittent large waves in the neck veins."},
+    perk:"Left border slightly displaced to the left.",
+    au:{m:{s1:.9,s2:.6},a:{s1:.5,s2:1},p:{s1:.5,s2:.9},t:{s1:.9,s2:.5},b:{s1:.7,s2:.7},q:{s1:.35,s2:.2},k:{s1:.15,s2:.35}},
+    tx:{m:"Bradycardia (38/min); intensity of S1 varies, occasionally a very loud Strazhesko “cannon sound”.",a:"Bradycardia, S2 as usual.",p:"Bradycardia.",t:"Intensity of S1 varies.",b:"Bradycardia.",q:"No murmur.",k:"No murmur."},
+    key:"Infrequent regular pulse (30–40), variable intensity of S1 and Strazhesko's “cannon sound”, syncope attacks. Confirmation: ECG."},
+  cp:{name:"Chronic cor pulmonale (pulmonary emphysema)",hr:96,
+    geo:{r:-4.25,up:3,l:8.5,aL:5.5,waist:"n",bw:5.5,absR:3.4,absU:5},konf:"Normal, right border displaced",
+    sh:"Smoker for 30 years. Cough, sputum, shortness of breath on exertion, leg swelling in recent months.",
+    ko:"Diffuse warm cyanosis, barrel-shaped chest, distended neck veins; pulsation in the epigastric region.",
+    pu:"96/min, regular.",ab:"125/80 mm Hg",
+    ap5:["Not detected (covered by emphysematous lung)","—","—","—","—"],apR:0,
+    pm:{apex:[0,null],ps:[2,null],epi:[3,null],a2:[0,null],p2:[1,null],k:[1,null]},
+    palp:{apex:"Apex beat is not detected or is very weak: the hyperinflated lung covers the heart.",ps:"Right ventricular impulse is felt.",epi:"Epigastric pulsation taps against the fingertip and increases on inspiration: right ventricular hypertrophy.",a2:"No thrill.",p2:"The tap of S2 is felt (pulmonary hypertension).",k:"Pulse is normal."},
+    perk:"Hyperresonant (box-like) note over the lungs. Absolute cardiac dullness is sharply reduced (emphysema). Right border of relative dullness shifted to the right (right chambers).",
+    au:{m:{s1:.35,s2:.25},a:{s1:.25,s2:.35},p:{s1:.3,s2:.85},t:{s1:.4,s2:.3,mur:[["tr",.3]],breath:true},b:{s1:.3,s2:.4},q:{s1:.15,s2:.1},k:{s1:.1,s2:.2}},
+    tx:{m:"Sounds are muffled (emphysema).",a:"Sounds are muffled.",p:"S2 accentuation: pulmonary hypertension.",t:"Quiet systolic murmur, intensifies on inspiration (relative tricuspid regurgitation).",b:"Sounds are muffled.",q:"Sounds are barely audible.",k:"No murmur."},
+    key:"History of lung disease + diffuse cyanosis + epigastric pulsation (right ventricle) + accentuated S2 over the pulmonary artery + reduced absolute dullness and muffled sounds."}
+});
+const SC_ORDER=["norm","ms","mr","msmr","mvp","as","ar","tr","ah","rk","dkmp","per","frik","anem","tir","avb","cp"];
+function apexOf(id){ const s=SC[id], g=s.geo; return s.apR?{x:g.l-.25,L:g.aL}:{x:8.25,L:5.5}; }
+
+
+/* Tovushlar kutubxonasi */
+const LIB=[
+  {id:"norm_apex",g:"ton",n:"Normal sounds: apex",alt:"S1 > S2 · 72/min",sp:{hr:72,s1:1,s2:.55},pt:"Cardiac apex",d:"S1 is longer and lower and follows the long pause; at the apex it is louder than S2.",k:"Healthy person"},
+  {id:"norm_base",g:"ton",n:"Normal sounds: base of the heart",alt:"S2 > S1",sp:{hr:72,s1:.5,s2:1},pt:"2nd space, right of the sternum",d:"At the base of the heart S2 is louder than S1, shorter and higher-pitched.",k:"Healthy person"},
+  {id:"clap",g:"ton",n:"“Snapping” S1",alt:"Loud S1",sp:{hr:84,s1:1.6,clap:true,s2:.5},pt:"Cardiac apex",d:"The ventricle is underfilled; the valve leaflets close quickly and tightly from a wide-open position.",k:"Mitral stenosis, tachycardia, extrasystole"},
+  {id:"s1weak",g:"ton",n:"Decreased S1",alt:"Soft S1",sp:{hr:76,s1:.28,s2:.55},pt:"Cardiac apex",d:"No closed-valve period, or myocardial contractility is reduced: at the apex S1 is quieter than S2.",k:"Mitral regurgitation, myocarditis, cardiosclerosis"},
+  {id:"s2a",g:"ton",n:"Accentuated S2 over the aorta",alt:"Loud A2",sp:{hr:76,s1:.5,s2:1.6,metal:true},pt:"2nd space, right of the sternum",d:"Pressure in the aorta is raised or the wall is thickened: S2 is strong, sometimes metallic.",k:"Arterial hypertension, aortic atherosclerosis"},
+  {id:"s2p",g:"ton",n:"Accentuated S2 over the pulmonary artery",alt:"Loud P2",sp:{hr:84,s1:.5,s2:1.5},pt:"2nd space, left of the sternum",d:"Pressure in the pulmonary circulation is raised.",k:"Mitral valve disease, chronic cor pulmonale"},
+  {id:"split_phys",g:"ton",n:"Physiological splitting of S2",alt:"Physiological split S2",sp:{hr:64,s1:.5,s2:.95,split:"phys",breath:true},pt:"2nd space, left of the sternum",d:"Only on inspiration: more blood returns to the right ventricle and the pulmonary valve closes later. The respiratory phase is shown in the player.",k:"Young people, healthy person"},
+  {id:"split_fix",g:"ton",n:"Fixed (pathological) splitting of S2",alt:"Fixed split S2",sp:{hr:78,s1:.5,s2:1,split:"fixed"},pt:"2nd space, left of the sternum",d:"Does not depend on the respiratory phase, heard in every cycle.",k:"Pulmonary hypertension, atrial septal defect, right bundle branch block"},
+  {id:"s3",g:"ton",n:"Protodiastolic gallop rhythm (S3)",alt:"S3 gallop",sp:{hr:108,s1:.6,s2:.6,s3:.9},pt:"Cardiac apex (bell of the stethoscope)",d:"A ventricle with reduced tone vibrates during rapid filling; with tachycardia a “galloping horse” is heard.",k:"Myocarditis, myocardial infarction, heart failure"},
+  {id:"s4",g:"ton",n:"Presystolic gallop rhythm (S4)",alt:"S4 gallop",sp:{hr:86,s1:.8,s2:.6,s4:.9},pt:"Cardiac apex (bell of the stethoscope)",d:"A hypertrophied, poorly compliant ventricle is filled by atrial systole; a low-pitched sound before S1.",k:"Arterial hypertension, aortic stenosis, ischemia"},
+  {id:"bedana",g:"ton",n:"“Quail rhythm”",alt:"Loud S1 + S2 + opening snap",sp:{hr:80,s1:1.6,clap:true,s2:.6,os:.85},pt:"Cardiac apex",d:"Snapping S1 + S2 + mitral opening snap (0.07–0.13 s after S2): a three-beat “quail rhythm”.",k:"Mitral stenosis only"},
+  {id:"muffled",g:"ton",n:"Both sounds muffled",alt:"Muffled heart sounds",sp:{hr:100,s1:.22,s2:.18,muf:true},pt:"All points",d:"Sound conduction is reduced or myocardial contractility is weakened.",k:"Exudative pericarditis, myocarditis, obesity, emphysema"},
+  {id:"cannon",g:"ton",n:"Strazhesko's “cannon sound”",alt:"Complete AV block · 38/min",sp:{hr:38,rh:"avb",s1:.9,s2:.6},pt:"Cardiac apex",d:"Bradycardia, intensity of S1 varies; S1 is very loud when atrial and ventricular systole coincide.",k:"Complete AV block"},
+  {id:"af",g:"ton",n:"Atrial fibrillation",alt:"Irregularly irregular",sp:{hr:104,rh:"af",s1:.9,s2:.6},pt:"Cardiac apex",d:"Sounds are irregular, intensity of S1 varies; pulse rate is lower than heart rate (pulse deficit).",k:"Mitral stenosis, coronary heart disease, thyrotoxicosis"},
+  {id:"m_mr",g:"mur",n:"Mitral regurgitation",alt:"Holosystolic murmur",sp:SC.mr.au.m,hr:80,pt:"Apex; radiates to the left axilla",d:"Systolic, merges with S1, blowing, occupies the whole of systole; intensifies in the left lateral position.",k:"Rheumatic fever, prolapse, endocarditis, dilatation"},
+  {id:"m_ms",g:"mur",n:"Mitral stenosis",alt:"Diastolic rumble",sp:SC.ms.au.m,hr:88,pt:"Apex; does not radiate",d:"Mesodiastolic, low-pitched, rumbling, intensifies in presystole; preceded by an opening snap.",k:"Rheumatic mitral stenosis"},
+  {id:"m_as",g:"mur",n:"Aortic stenosis",alt:"Diamond-shaped systolic murmur",sp:SC.as.au.a,hr:64,pt:"2nd space on the right; to the carotid arteries",d:"Systolic, harsh, saw-like, crescendo–decrescendo; S2 is decreased over the aorta.",k:"Degenerative calcification, bicuspid valve, rheumatic fever"},
+  {id:"m_ar",g:"mur",n:"Aortic regurgitation",alt:"Protodiastolic murmur",sp:SC.ar.au.b,hr:84,pt:"Botkin–Erb point; to the apex",d:"Diastolic, begins immediately after S2, soft, blowing, decrescendo.",k:"Rheumatic fever, infective endocarditis, aortic dilatation"},
+  {id:"m_tr",g:"mur",n:"Tricuspid regurgitation",alt:"Rivero-Carvallo sign",sp:{hr:88,s1:.5,s2:.5,mur:[["tr",.6]],breath:true},pt:"Base of the xiphoid process",d:"The systolic murmur intensifies on inspiration: more blood enters the right heart. The respiratory phase is shown in the player.",k:"Right ventricular dilatation, endocarditis"},
+  {id:"m_func",g:"mur",n:"Functional (innocent) systolic murmur",alt:"Innocent murmur",sp:{hr:88,s1:.9,s2:.6,mur:[["func",.45]]},pt:"Apex or over the pulmonary artery",d:"Short, soft, quiet (grade 1–2), sounds unchanged; varies with position and load.",k:"Anemia, fever, thyrotoxicosis, adolescents"},
+  {id:"m_fr",g:"mur",n:"Pericardial friction rub",alt:"Pericardial friction rub",sp:SC.frik.au.b,hr:96,pt:"Left sternal border (absolute dullness)",d:"Scratching, in systole and diastole, does not radiate; intensifies with pressure, persists when the breath is held.",k:"Dry pericarditis, uremia"}
+];
+LIB.forEach(o=>{ if(o.hr) o.sp=Object.assign({},o.sp,{hr:o.hr}); });
+const LIBM=Object.fromEntries(LIB.map(o=>[o.id,o]));
+
+/* Puls turlari */
+const PT={
+  norm:{n:"Normal pulse",hr:72,up:.1,A:1,tau:.45,nb:.12,tn:.36,t:"Regular, 72/min, moderately full and tense. The wave rises quickly, and there is a dicrotic notch after the peak."},
+  celer:{n:"Rapid and high pulse (celer et altus)",hr:84,up:.065,A:1.75,tau:.17,nb:.04,tn:.3,t:"The wave rises sharply and falls quickly: a “water-hammer” beat under the finger. Typical of aortic regurgitation (Corrigan's pulse)."},
+  tardus:{n:"Slow and small pulse (tardus et parvus)",hr:62,up:.27,A:.55,tau:.6,nb:.02,tn:.45,t:"The wave rises slowly, its peak is late and low. Typical of aortic stenosis."},
+  paradox:{n:"Paradoxical pulse",hr:104,up:.1,A:.85,tau:.35,nb:.06,tn:.32,resp:.55,t:"On inspiration the pulse wave sharply decreases (systolic pressure falls by more than 10 mm Hg). Cardiac tamponade, exudative and constrictive pericarditis, severe asthma attack."},
+  alt:{n:"Alternating pulse (alternans)",hr:92,up:.1,A:1,tau:.4,nb:.08,tn:.33,alt:.5,t:"Large and small waves alternate rhythmically. A sign of severe damage to the left ventricular myocardium."},
+  af:{n:"Irregular pulse, pulse deficit",hr:118,up:.09,A:1,tau:.38,nb:.06,tn:.3,af:true,t:"Atrial fibrillation: the waves are irregular and of different sizes. Contractions after a short diastole do not eject enough blood into the artery, so the pulse rate is lower than the heart rate."},
+  fil:{n:"Thready pulse (filiformis)",hr:128,up:.08,A:.28,tau:.3,nb:.02,tn:.28,t:"Very rapid, small and poorly filled, barely felt. Shock, collapse, massive blood loss."}
+};
+
+/* AB o‘lchash uchun bemorlar */
+const BPP=[
+  {id:"n",n:"Healthy woman, 34 years old",s:118,d:76,hr:72},
+  {id:"ag",n:"Man, 58 years old: headache",s:166,d:104,hr:78},
+  {id:"gap",n:"Woman, 67 years old: long-standing hypertension",s:184,d:98,gap:[160,138],hr:70},
+  {id:"ar",n:"Man, 31 years old: aortic regurgitation",s:164,d:44,inf:true,hr:84}
+];
+
+/* Nuqsonlar jadvali */
+const MX={
+  cols:[["ms","Mitral stenosis"],["mr","Mitral regurgitation"],["as","Aortic stenosis"],["ar","Aortic regurgitation"]],
+  rows:[
+    ["Hemodynamics",["Left atrial pressure ↑ → pulmonary hypertension → right ventricular hypertrophy","Volume load on the left atrium and left ventricle, dilatation","Pressure load on the left ventricle, concentric hypertrophy","Volume load on the left ventricle, eccentric hypertrophy and marked dilatation"]],
+    ["Complaints",["Early shortness of breath, cough, hemoptysis, palpitations","Absent for a long time; shortness of breath, palpitations","Angina, syncope, shortness of breath","Palpitations, pulsation in the neck, dizziness"]],
+    ["Inspection",["Facies mitralis, cardiac impulse, epigastric pulsation","Apex beat is increased","Skin is pale","“Dance of the carotids”, de Musset's and Quincke's signs"]],
+    ["Palpation",["Diastolic “cat's purr” at the apex, weak impulse","Apex beat to the left, wide, strong","Systolic thrill in the 2nd space on the right; the impulse is resistant","Impulse to the left and down, “dome-shaped”"]],
+    ["Percussion",["Borders upward and to the right; mitral configuration","To the left and upward; mitral configuration","To the left (moderate); aortic configuration","Sharply to the left and down; aortic configuration"]],
+    ["Auscultation",["Snapping S1, opening snap, diastolic murmur intensifying in presystole; accentuated S2 over the pulmonary artery","Decreased S1, systolic murmur at the apex radiating to the axilla; accentuated S2 over the pulmonary artery","Harsh diamond-shaped systolic murmur in the 2nd space on the right, to the carotid arteries; S2 decreased over the aorta","Protodiastolic murmur at the Botkin–Erb point; S2 decreased over the aorta"]],
+    ["Pulse and BP",["Pulse is small, pulsus differens, often atrial fibrillation","Unchanged","Pulsus tardus et parvus; narrow pulse pressure","Pulsus celer, altus, magnus; systolic ↑, diastolic ↓↓"]]
+  ],
+  play:{ms:[["m","Apex"],["p","Pulmonary artery"]],mr:[["m","Apex"],["q","Axilla"]],as:[["a","2nd space on the right"],["k","Carotid artery"]],ar:[["b","Botkin–Erb"],["a","2nd space on the right"]]}
+};
+
+/* Klinik holatlar */
+const CASES=[
+  {sc:"ms",who:"Woman, 32 years old",steps:[
+    ["Complaints and history","Shortness of breath on exertion over the past year, nocturnal cough, blood streaks in the sputum twice, palpitations. As a child she often had tonsillitis, and at age 14 her joints ached."],
+    ["Inspection","Bluish-red patches on the cheeks, cyanosis of the lips. Pulsation at the left sternal border and in the epigastric region."],
+    ["Palpation","Apex beat in the 5th space, localized, weak. Thrill at the apex: felt after the carotid pulse, before the next beat."],
+    ["Percussion","Upper border at the 2nd rib, right border 3 cm outside the right sternal border, left border unchanged. The cardiac waist is smoothed out."],
+    ["Auscultation",["m","p","b"]],
+    ["Pulse and BP","88/min, regular, small, smaller in the left arm. BP 110/75 mm Hg."]],
+    opts:["Mitral stenosis","Mitral valve regurgitation","Aortic stenosis","Aortic valve regurgitation","Exudative pericarditis"],ans:0,
+    ex:"Facies mitralis, hemoptysis, diastolic thrill at the apex, a shift of the borders upward and to the right, and a diastolic murmur intensifying in presystole with a “quail rhythm”: mitral stenosis. Accentuated S2 over the pulmonary artery indicates pulmonary hypertension. Confirmation: echocardiography (orifice area under 1.5 cm²: significant stenosis)."},
+  {sc:"mr",who:"Man, 46 years old",steps:[
+    ["Complaints and history","Shortness of breath on exertion, palpitations, weakness. Had rheumatic fever in youth."],
+    ["Inspection","Apex beat is visible, increased."],
+    ["Palpation","Apex beat in the 5th space 1 cm outside the midclavicular line, wide, strong."],
+    ["Percussion","Left border shifted to the left, upper border to the 2nd space; the cardiac waist is smoothed out."],
+    ["Auscultation",["m","q","p"]],
+    ["Pulse and BP","80/min, regular. BP 125/80 mm Hg."]],
+    opts:["Mitral stenosis","Mitral valve regurgitation","Aortic stenosis","Functional systolic murmur","Tricuspid regurgitation"],ans:1,
+    ex:"Decreased S1 at the apex, a blowing systolic murmur merging with S1 and radiating to the left axillary region, S3, accentuated S2 over the pulmonary artery, and a shift of the borders to the left and upward: mitral valve regurgitation. A functional murmur does not change the sounds and the heart borders are not enlarged."},
+  {sc:"as",who:"Man, 71 years old",steps:[
+    ["Complaints and history","Squeezing retrosternal pain on exertion, fainted twice while climbing stairs, shortness of breath in recent months."],
+    ["Inspection","Skin is pale."],
+    ["Palpation","Apex beat slightly displaced to the left, strong, resistant. Thrill in the 2nd space to the right of the sternum, simultaneous with the carotid pulse."],
+    ["Percussion","Left border 1 cm to the left, cardiac waist deepened."],
+    ["Auscultation",["a","k","m"]],
+    ["Pulse and BP","64/min, regular, rises slowly and is small. BP 105/85 mm Hg."]],
+    opts:["Arterial hypertension","Aortic stenosis","Aortic valve regurgitation","Mitral valve regurgitation","Angina, without valve disease"],ans:1,
+    ex:"The triad of angina, syncope and shortness of breath, a harsh diamond-shaped systolic murmur in the 2nd space on the right radiating to the carotid arteries with a systolic thrill, decreased S2 over the aorta, pulsus tardus et parvus and narrow pulse pressure: aortic stenosis. Symptomatic severe aortic stenosis is an indication for valve replacement."},
+  {sc:"ar",who:"Man, 29 years old",steps:[
+    ["Complaints and history","Palpitations, a sensation of pulsation in the neck, dizziness. Treated for infective endocarditis 2 years ago."],
+    ["Inspection","Strong pulsation of the carotid arteries, head bobbing in time with the heartbeat, capillary pulsation under the nails."],
+    ["Palpation","Apex beat in the 6th space 2 cm outside the midclavicular line, wide, high, strong, resistant."],
+    ["Percussion","Left border sharply displaced to the left and down, cardiac waist deepened, vascular bundle widened."],
+    ["Auscultation",["b","a","m"]],
+    ["Pulse and BP","84/min, rapid and high. BP 165/40 mm Hg."]],
+    opts:["Aortic stenosis","Aortic valve regurgitation","Mitral stenosis","Thyrotoxicosis","Arterial hypertension"],ans:1,
+    ex:"Peripheral signs (dance of the carotids, de Musset, Quincke), a dome-shaped apex beat displaced to the left and down, aortic configuration, a protodiastolic murmur at the Botkin–Erb point beginning immediately after S2, pulsus celer et altus and a wide pulse pressure (165/40): aortic valve regurgitation. The previous endocarditis destroyed the valve leaflets."},
+  {sc:"rk",who:"Girl, 16 years old",steps:[
+    ["Complaints and history","Had tonsillitis 2.5 weeks ago. Now fever 38.2 °C, migrating pain in the knee and ankle joints, palpitations, weakness."],
+    ["Inspection","Right knee and left ankle joints are swollen and red, movement is painful. Skin is pale."],
+    ["Palpation","Apex beat slightly displaced to the left, weakened, diffuse."],
+    ["Percussion","Left border shifted 1 cm to the left."],
+    ["Auscultation",["m","b"]],
+    ["Pulse and BP","112/min, regular, soft. BP 105/65 mm Hg. Blood: ESR 48 mm/h, antistreptolysin-O titer raised."]],
+    opts:["Infective endocarditis","Acute rheumatic fever, primary rheumatic carditis","Mitral stenosis","Dry pericarditis","Functional murmur in anemia"],ans:1,
+    ex:"Migrating polyarthritis and signs of carditis 2–3 weeks after streptococcal tonsillitis (tachycardia out of proportion to the fever, muffled sounds, decreased S1, S3, soft systolic murmur at the apex) plus laboratory confirmation of streptococcal infection: acute rheumatic fever, primary rheumatic carditis (Jones criteria: carditis and polyarthritis)."},
+  {sc:"ar",who:"Man, 38 years old",steps:[
+    ["Complaints and history","Fever up to 38.5–39 °C in the evenings for 3 weeks, chills, heavy sweating, weight loss, weakness. A tooth was extracted 2 weeks before the fever began."],
+    ["Inspection","Skin is pale, “café au lait” in color. Petechial hemorrhages on the conjunctiva (Lukin–Libman sign). Painful red nodules on the fingertips (Osler), painless spots on the palms (Janeway)."],
+    ["Palpation","Apex beat slightly displaced to the left. Spleen is palpable."],
+    ["Percussion","Left border shifted 1 cm to the left."],
+    ["Auscultation",["b","a"]],
+    ["Pulse and BP","104/min, rapid. BP 140/55 mm Hg."]],
+    opts:["Acute rheumatic fever","Infective endocarditis, aortic valve affected","Aortic stenosis","Sepsis, heart not involved","Mitral stenosis"],ans:1,
+    ex:"Prolonged fever and chills, probable bacteremia after the tooth extraction, peripheral signs (Osler nodes, Janeway lesions, Lukin–Libman sign), splenomegaly and a newly appeared regurgitant (aortic) diastolic murmur: infective endocarditis. Confirmation: blood cultures (at least 3 sets) and vegetations on echocardiography (Duke criteria)."},
+  {sc:"frik",who:"Man, 24 years old",steps:[
+    ["Complaints and history","Had a cold a week ago. Acute stabbing pain in the cardiac region: worsens on breathing in and when lying on the back, decreases on leaning forward. Temperature 37.6 °C."],
+    ["Inspection","The patient sits leaning forward, breathing is shallow."],
+    ["Palpation","Rough thrill at the left sternal border."],
+    ["Percussion","Borders unchanged."],
+    ["Auscultation",["b","m"]],
+    ["Pulse and BP","96/min, regular. BP 115/75 mm Hg."]],
+    opts:["Myocardial infarction","Dry (fibrinous) pericarditis","Dry pleurisy with a pleuropericardial rub","Exudative pericarditis","Aortic valve regurgitation"],ans:1,
+    ex:"Acute positional pain and a scratching murmur in systole and diastole heard at the left sternal border in the area of absolute dullness, not radiating anywhere: a pericardial friction rub, dry pericarditis. Unlike a pleuropericardial rub, it does not disappear when the breath is held. When exudate accumulates, the rub disappears and the sounds become muffled."}
+];
+
+/* =========================================================
+   UMUMIY: tovush tugmalari
+   ========================================================= */
+function playSpec(spec,btn){
+  if(btn && btn.classList.contains("on")){ stop(); return; }
+  const [k,a,b]=spec.split(":"); let v=null, title="", sub="";
+  if(k==="lib"){ const o=LIBM[a]; v=playHeart(o.sp); title=o.n; sub=o.pt; }
+  else if(k==="sc"){ const s=SC[a]; v=playHeart(Object.assign({hr:s.hr,rh:s.rh},s.au[b])); title=s.name; sub=AP[b].n; }
+  else if(k==="perc"){ v=playPerc(a); title=PKN[a]; }
+  if(!v) return;
+  if(btn){ btn.classList.add("on"); playBtn=btn; }
+  startPlayer((btn&&btn.dataset.title)||title,(btn&&btn.dataset.sub)||sub);
+}
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-play]"); if(!b) return; playSpec(b.dataset.play,b); });
+function svgPt(svg,e){ const p=svg.createSVGPoint(); p.x=e.clientX; p.y=e.clientY; const q=p.matrixTransform(svg.getScreenCTM().inverse()); return [q.x,q.y]; }
+const lc1=t=>/^[IVX]+ /.test(t)?t:t[0].toLowerCase()+t.slice(1);
+const fmt=n=>(Math.round(n*10)/10).toString();
+function levelName(L){ const k=Math.floor(L), f=L-k; if(L<1) return "Above the 1st rib"; if(f<.25) return `Level of rib ${RN[k]||"VII"}`; if(f>.75) return `Level of rib ${RN[k+1]||"VII"}`; return `Intercostal space ${RN[k]||"VII"}`; }
+function mclName(x){ if(x<0) return "to the right of the sternum"; const d=x-9.5; if(Math.abs(d)<.3) return "at the midclavicular line"; return d<0?`${fmt(-d)} cm medial to the midclavicular line`:`${fmt(d)} cm outside the midclavicular line`; }
+
+/* =========================================================
+   01 · VIRTUAL BEMOR
+   ========================================================= */
+const VP={mode:"ausk",sc:"norm",hide:false,reveal:false,sel:null,marks:[],last:null};
+const IMPT=["Not felt","Weak","Moderate","Strong, heaving"];
+const THT={s:"Systolic: simultaneous with the carotid pulse",d:"Diastolic: after the pulse, before the next beat",sd:"In systole and diastole, rough (friction)"};
+const AP5L=["Location","Area","Height","Force","Resistance"];
+$("#scSel").innerHTML=SC_ORDER.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+$("#dxSel").innerHTML=`<option value="">— select —</option>`+SC_ORDER.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+function vpHidden(){ return VP.hide&&!VP.reveal; }
+function renderVP(focusK){
+  const s=SC[VP.sc], g=s.geo, hid=vpHidden(), svg=$("#vpSvg");
+  svg.classList.toggle("perc",VP.mode==="perk");
+  let h=chestSVG();
+  if(VP.mode==="perk" && !hid) h+=`<path class="heart-rel" d="${smooth(toPx(relPts(g)))}"/><path class="heart-abs" d="${smooth(toPx(absPts(g)))}"/>`;
+  if(VP.mode!=="perk" && $("#valvF").checked && !hid) h+=`<path class="heart-rel" style="opacity:.45" d="${smooth(toPx(relPts(g)))}"/>`+(VP.mode==="ausk"?valvesSVG():"");
+  if(VP.mode==="palp" && s.apR){ const a0=apexOf(VP.sc); h+=`<circle class="apring" style="--T:${(60/s.hr).toFixed(3)}s" cx="${PX(a0.x)}" cy="${PY(a0.L,a0.x)}" r="${(8+s.apR*SCL).toFixed(1)}"/>`; }
+  h+=VP.marks.map(m=>`<circle class="pmark ${m.k}" cx="${m.x}" cy="${m.y}" r="4.5"/>`).join("");
+  const ap=apexOf(VP.sc);
+  if(VP.mode==="ausk") for(const k of Object.keys(AP)){ const p=AP[k]; h+=ptSVG(k,k==="m"?ap.x:p.x,k==="m"?ap.L:p.L,p.lab,p.n,VP.sel===k); }
+  if(VP.mode==="palp") for(const k of Object.keys(PP)){ const p=PP[k]; h+=ptSVG(k,k==="apex"?ap.x:p.x,k==="apex"?ap.L:p.L,"",p.n,VP.sel===k); }
+  svg.innerHTML=h;
+  if(focusK){ const el=svg.querySelector(`.pt[data-k="${focusK}"]`); if(el) el.focus(); }
+  $("#vpName").textContent=hid?"Unknown patient":s.name;
+  $("#vpSh").textContent=s.sh; $("#vpKo").textContent=s.ko; $("#vpPu").textContent=s.pu; $("#vpAB").textContent=s.ab;
+  $("#vpHint").textContent=VP.mode==="perk"?"Click anywhere":"Click a point";
+  $("#vpLeg").innerHTML=VP.mode==="perk"?`<span><i style="background:var(--insp)"></i>Clear</span><span><i style="background:var(--exp)"></i>Impaired</span><span><i style="background:var(--bad)"></i>Dull</span>${hid?"":`<span class="muted">Yellow area: relative dullness, red: absolute dullness</span>`}`:"";
+  $("#vpDx").hidden=!VP.hide; $("#scSel").hidden=VP.hide;
+  showSel();
+}
+function showSel(){
+  const s=SC[VP.sc], hid=vpHidden(), k=VP.sel, palm=$("#vpPalm");
+  if(VP.mode==="perk"){ palm.hidden=true; $("#vpPtT").textContent="Percussion"; $("#vpPt").textContent=VP.last?PKN[VP.last]:"Click anywhere on the chest and compare the sound.";
+    $("#vpRes").textContent=hid?"Practice mode: find the borders by sound yourself.":s.perk; return; }
+  if(!k){ palm.hidden=true; $("#vpPtT").textContent="Selected point"; $("#vpPt").textContent="Select a point in the picture."; $("#vpRes").textContent=""; return; }
+  if(VP.mode==="palp"){ const [imp,th]=s.pm[k]||[0,null]; $("#vpPtT").textContent=PP[k].n; $("#vpPt").textContent="The sensation under the palm is shown below: the tap and thrill are compared with the carotid pulse.";
+    palm.hidden=false; $("#vpHow").textContent=PHOW[k];
+    $("#vpSense").innerHTML=(k==="apex"?s.ap5.map((v,i)=>`<dt>${AP5L[i]}</dt><dd>${esc(v)}</dd>`).join("")+`<dt>Thrill</dt><dd>${th?esc(THT[th]):"None"}</dd>`
+      :`<dt>Tap</dt><dd>${IMPT[imp]}</dd><dt>Thrill</dt><dd>${th?esc(THT[th]):"None"}</dd>`);
+    $("#vpPalmT").innerHTML=hid?"<span class=\"muted\">Practice mode: describe the finding yourself.</span>":`<b>Comment:</b> ${esc(s.palp[k])}`; $("#vpRes").textContent=""; palpStart(); }
+  else { palm.hidden=true; $("#vpPtT").textContent=AP[k].n; $("#vpPt").textContent="Systole and diastole are shown in color on the player below.";
+    $("#vpRes").textContent=hid?"Practice mode: describe what you hear yourself.":s.tx[k]; }
+}
+function vpSelect(k,kb){
+  VP.sel=k; renderVP(kb?k:null);
+  if(VP.mode==="ausk"){ const s=SC[VP.sc]; const v=playHeart(Object.assign({hr:s.hr,rh:s.rh},s.au[k])); if(v) startPlayer(vpHidden()?"Unknown patient":s.name,AP[k].n); }
+}
+function classify(p){
+  const g=SC[VP.sc].geo, c=fromPx(p[0],p[1]);
+  if(c.y<1.2||Math.abs(c.x)>14.6||c.y>costalY(c.x)+.3) return null;
+  if(inPoly(p,toPx(absPts(g)))) return "tomtoq";
+  if(inPoly(p,toPx(relPts(g)))) return "bogiq";
+  if(c.x<-.3 && c.L>5.6) return "tomtoq";
+  return "aniq";
+}
+/* Paypaslash: uyqu arteriyasi pulsi va kaft ostidagi his vaqt bo‘yicha */
+const PL={raf:0,t0:0};
+function palpF(){ const s=SC[VP.sc], [imp,th]=s.pm[VP.sel]||[0,null], T=60/s.hr; return {s,imp,th,T,sys:sysOf(T),ka:Math.max(.45,Math.min(1.3,((s.pm.k||[2])[0]||1)/2))}; }
+function impAt(u,f){ if(!f.imp) return 0; const a=f.imp/3, pk=.07, dur=f.imp===3?.3:.2; if(u<pk) return a*Math.sin(Math.PI/2*u/pk); return u<dur?a*(1-(u-pk)/(dur-pk)):0; }
+function carAt(u,f){ const c=.11; return f.ka*(Math.exp(-Math.pow((u-c)/.05,2))+.25*Math.exp(-Math.pow((u-c-.13)/.06,2))); }
+function thAt(u,f){ const t2=f.sys;
+  if(f.th==="s") return (u>.05&&u<t2-.03)?Math.sin(Math.PI*(u-.05)/(t2-.08)):0;
+  if(f.th==="d"){ if(u<t2+.1) return 0; const x=(u-t2-.1)/(f.T-t2-.1); return f.s.rh==="af"?(x<.6?.75*(1-x/.6):0):(x<.45?.55*(1-x/.45)+.2:.25+.75*(x-.45)/.55); }
+  if(f.th==="sd") return ((u>.06&&u<t2-.05)||(u>t2+.06&&u<t2+.2)||(u>f.T-.11&&u<f.T-.03))?.8:0;
+  return 0; }
+function palpStart(){ if(!PL.raf){ PL.t0=performance.now(); PL.raf=requestAnimationFrame(palpLoop); } }
+function palpLoop(now){
+  if(VP.mode!=="palp"||!VP.sel||$("#vpPalm").hidden){ PL.raf=0; return; }
+  const f=palpF(), cv=$("#vpPc"), dpr=window.devicePixelRatio||1, w=cv.clientWidth, h=cv.clientHeight;
+  if(w){ if(cv.width!==Math.round(w*dpr)){ cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr); }
+    const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+    const N=3, span=f.T*N, L0=58, X=t=>L0+t/span*(w-L0-6), tc=((now-PL.t0)/1000)%span;
+    for(let k=0;k<N;k++){ x.globalAlpha=.14; x.fillStyle=css("--sys"); x.fillRect(X(k*f.T),0,X(k*f.T+f.sys)-X(k*f.T),h); x.globalAlpha=1; }
+    x.font="10px "+css("--f-mono"); x.fillStyle=css("--muted"); x.textAlign="left";
+    x.fillText("Carotid art.",4,h*.3); x.fillText("Palm",4,h*.78); x.fillText("sistola",X(.02),11);
+    const row=(y0,amp,fn,col)=>{ x.strokeStyle=col; x.lineWidth=2; x.beginPath(); for(let px=L0;px<=w-6;px+=1.5){ const t=(px-L0)/(w-L0-6)*span, y=y0-fn(t%f.T,f)*amp; px===L0?x.moveTo(px,y):x.lineTo(px,y); } x.stroke(); };
+    x.fillStyle=css("--line"); x.fillRect(L0,h*.38,w-L0-6,1); x.fillRect(L0,h*.9,w-L0-6,1);
+    row(h*.38,h*.27,carAt,css("--accent"));
+    if(f.th){ x.strokeStyle=css("--bad"); x.lineWidth=1; let sd=5; for(let px=L0;px<=w-6;px+=2){ const t=(px-L0)/(w-L0-6)*span, a=thAt(t%f.T,f); if(a<=0) continue; sd=(sd*16807)%2147483647; const hh=a*h*.14*(.5+.5*sd/2147483647); x.beginPath(); x.moveTo(px,h*.9-hh); x.lineTo(px,h*.9); x.stroke(); } }
+    row(h*.9,h*.3,impAt,css("--good"));
+    x.fillStyle=css("--ink"); x.fillRect(X(tc)-1,0,2,h);
+    const u=tc%f.T, hand=$("#vpHand"); hand.style.transform=`scale(${(1+impAt(u,f)*.22).toFixed(3)})`;
+    hand.className="hand"+(f.imp?"":" none"); hand.querySelector("i").className=thAt(u,f)>.05?"vib":"";
+  }
+  PL.raf=requestAnimationFrame(palpLoop);
+}
+$("#valvF").addEventListener("change",()=>renderVP());
+$("#vpSvg").addEventListener("click",e=>{
+  if(VP.mode==="perk"){ const p=svgPt($("#vpSvg"),e), kind=classify(p); if(!kind) return;
+    VP.last=kind; VP.marks.push({x:p[0].toFixed(1),y:p[1].toFixed(1),k:kind}); if(VP.marks.length>16) VP.marks.shift(); renderVP();
+    if(playPerc(kind)) startPlayer(PKN[kind],"Percussion"); return; }
+  const pt=e.target.closest(".pt"); if(pt) vpSelect(pt.dataset.k);
+});
+$("#vpSvg").addEventListener("keydown",e=>{ const pt=e.target.closest(".pt"); if(pt&&(e.key==="Enter"||e.key===" ")){ e.preventDefault(); vpSelect(pt.dataset.k,true); } });
+$$("[data-mode]").forEach(b=>b.addEventListener("click",()=>{ VP.mode=b.dataset.mode; VP.sel=null; $$("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",x===b)); stop(); renderVP(); }));
+$("#scSel").addEventListener("change",e=>{ VP.sc=e.target.value; VP.sel=null; VP.marks=[]; VP.last=null; stop(); renderVP(); });
+function vpNew(){ const pool=SC_ORDER.filter(x=>x!==VP.sc); VP.sc=pool[Math.floor(Math.random()*pool.length)]; VP.reveal=false; VP.sel=null; VP.marks=[]; VP.last=null; $("#dxSel").value=""; $("#dxFb").hidden=true; stop(); renderVP(); }
+$("#hideF").addEventListener("change",e=>{ VP.hide=e.target.checked; if(VP.hide) vpNew(); else { VP.reveal=false; $("#scSel").value=VP.sc; renderVP(); } });
+$("#dxNew").addEventListener("click",vpNew);
+$("#dxShow").addEventListener("click",()=>{ VP.reveal=true; renderVP(); });
+$("#dxChk").addEventListener("click",()=>{
+  const v=$("#dxSel").value, fb=$("#dxFb"); if(!v){ fb.hidden=false; fb.className="fb"; fb.textContent="First select a diagnosis."; return; }
+  const s=SC[VP.sc], ok=v===VP.sc; fb.hidden=false; fb.className="fb "+(ok?"ok":"no");
+  fb.textContent=(ok?"Correct! ":`Incorrect. In this patient: ${s.name}.`)+"Key signs: "+s.key;
+  VP.reveal=true; renderVP();
+});
+
+/* =========================================================
+   02 · CHO‘QQI TURTKISI MASHQI
+   ========================================================= */
+const APS={sc:"norm",u:null,show:false};
+const AP_LIST=["norm","mr","as","ar","dkmp","tir"];
+$("#apSel").innerHTML=AP_LIST.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+function renderAp(){
+  const t=apexOf(APS.sc); let h=chestSVG();
+  if(APS.show||APS.u) { if(APS.show) h+=`<circle class="ap-true" cx="${PX(t.x)}" cy="${PY(t.L,t.x)}" r="10"/>`; }
+  if(APS.u) h+=`<circle class="ap-user" cx="${APS.u[0].toFixed(1)}" cy="${APS.u[1].toFixed(1)}" r="5"/>`;
+  $("#apSvg").innerHTML=h;
+}
+$("#apSvg").addEventListener("click",e=>{
+  const p=svgPt($("#apSvg"),e), c=fromPx(p[0],p[1]); APS.u=p;
+  const t=apexOf(APS.sc), ok=Math.abs(c.L-t.L)<=.3&&Math.abs(c.x-t.x)<=1.2;
+  const fb=$("#apFb"); fb.className="fb "+(ok?"ok":"no");
+  fb.textContent=`Your choice: ${levelName(c.L)}, ${mclName(c.x)}.`+(ok?"Correct! ":"Incorrect. ")+`In this patient the apex beat is: ${SC[APS.sc].palp.apex}`;
+  APS.show=true; renderAp();
+});
+$("#apSel").addEventListener("change",e=>{ APS.sc=e.target.value; APS.u=null; APS.show=false; $("#apFb").className="fb"; $("#apFb").textContent="Click the correct place on the chest."; renderAp(); });
+$("#apShow").addEventListener("click",()=>{ APS.show=true; renderAp(); const fb=$("#apFb"); fb.className="fb"; fb.textContent=`Answer: ${SC[APS.sc].palp.apex}`; });
+
+/* =========================================================
+   03 · PERKUSSIYA MASHQI
+   ========================================================= */
+const PK_LIST=["norm","ms","mr","as","ar","tr","dkmp","per"];
+const PKS={sc:"norm",hide:false,step:"r",tap:{r:{},u:{},l:{}},mark:{r:null,u:null,l:null},ok:{},sel:null};
+$("#pkSel").innerHTML=PK_LIST.map(id=>`<option value="${id}">${esc(SC[id].name)}</option>`).join("");
+const UL={1.5:"1st intercostal space",2:"2nd rib",2.5:"2nd intercostal space",3:"3rd rib",3.5:"3rd intercostal space",4:"4th rib"};
+function pkPos(step){
+  const g=SC[PKS.sc].geo;
+  if(step==="r") return [-9.5,-8,-6.5,-5.5,-4.75,-4,-3.25,-2.5].map(x=>({x,L:4.5,lab:x===-9.5?"Right midclavicular line":`${fmt(-x-SX)} cm from the right sternal border`,kind:x>=g.r?"bogiq":"aniq"}));
+  if(step==="u") return [1.5,2,2.5,3,3.5,4].map(L=>({x:3,L,lab:UL[L],kind:L>=g.up?"bogiq":"aniq"}));
+  return [13.5,12.5,11.5,10.5,9.5,8.5,7.5,6.5].map(x=>({x,L:g.aL,lab:x===13.5?"Anterior axillary line":x===9.5?"Midclavicular line":x>9.5?`${fmt(x-9.5)} cm outside the midclavicular line`:`${fmt(9.5-x)} cm medial to the midclavicular line`,kind:x<=g.l?"bogiq":"aniq"}));
+}
+const pkAns=step=>pkPos(step).findIndex(p=>p.kind==="bogiq");
+function pkInst(){
+  const g=SC[PKS.sc].geo;
+  return {r:"Right border. First find the lower border of the lung along the right midclavicular line (6th rib), then rise one space to the 4th space and move the pleximeter medially, parallel to the sternum.",
+    u:"Upper border. Along the left parasternal line downward from the 1st space, with the pleximeter placed parallel to the ribs.",
+    l:`Left border. In intercostal space ${RN[Math.floor(g.aL)]} (at the level of the apex beat), from the anterior axillary line toward the sternum, with the pleximeter placed vertically.`}[PKS.step];
+}
+function renderPk(){
+  const s=SC[PKS.sc], g=s.geo, pos=pkPos(PKS.step), allOk=PKS.ok.r&&PKS.ok.u&&PKS.ok.l;
+  $$("#pkStep button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.st===PKS.step));
+  $("#pkInst").textContent=pkInst();
+  $("#pkHint").textContent=PKS.hide&&!allOk?"Unknown patient":s.name;
+  $("#pkLv").innerHTML=pos.map((p,i)=>{ const tp=PKS.tap[PKS.step][i]; const mk=PKS.mark[PKS.step]===i;
+    const cls=["lv","pk",tp?"show-"+p.kind:"",PKS.sel===i?"sel":"",mk&&PKS.ok[PKS.step]===true?"correct":mk&&PKS.ok[PKS.step]===false?"mark":""].filter(Boolean).join(" ");
+    return `<button type="button" class="${cls}" data-i="${i}"><span>${esc(p.lab)}</span><span class="bar"></span><span class="m">${mk?"◆":""}</span></button>`; }).join("");
+  let h=chestSVG();
+  if(allOk) h+=`<path class="heart-rel" d="${smooth(toPx(relPts(g)))}"/>`;
+  for(const st of ["r","u","l"]){ const ps=pkPos(st);
+    if(st===PKS.step && ps.length) h+=`<line class="guide" style="stroke:var(--accent);opacity:.9" x1="${PX(ps[0].x)}" y1="${PY(ps[0].L,ps[0].x)}" x2="${PX(ps[ps.length-1].x)}" y2="${PY(ps[ps.length-1].L,ps[ps.length-1].x)}"/>`;
+    for(const i of Object.keys(PKS.tap[st])){ const p=ps[i]; h+=`<circle class="pmark ${p.kind}" cx="${PX(p.x)}" cy="${PY(p.L,p.x)}" r="4"/>`; }
+    const m=PKS.mark[st]; if(m!=null){ const p=ps[m]; h+=`<rect x="${PX(p.x)-5}" y="${PY(p.L,p.x)-5}" width="10" height="10" transform="rotate(45 ${PX(p.x)} ${PY(p.L,p.x)})" style="fill:none;stroke:var(--ink);stroke-width:1.8"/>`; }
+  }
+  $("#pkSvg").innerHTML=h;
+  const sum=$("#pkSum");
+  if(allOk){ const w=Math.abs(g.r)+g.l; sum.hidden=false;
+    sum.innerHTML=`<h3 style="margin-bottom:6px">${esc(s.name)}</h3><p class="sc-info">Transverse dimension: ${fmt(Math.abs(g.r))} + ${fmt(g.l)} = <b>${fmt(w)} cm</b> (normal 11–13 cm). Configuration: <b>${esc(s.konf)}</b>.</p><p class="sc-info" style="margin-top:6px">${esc(s.perk)}</p>`; }
+  else sum.hidden=true;
+}
+$("#pkLv").addEventListener("click",e=>{ const b=e.target.closest(".lv"); if(!b) return; const i=+b.dataset.i, p=pkPos(PKS.step)[i];
+  PKS.tap[PKS.step][i]=1; PKS.sel=i; renderPk(); if(playPerc(p.kind)) startPlayer(PKN[p.kind],p.lab); });
+$("#pkMark").addEventListener("click",()=>{ const fb=$("#pkFb"); if(PKS.sel==null){ fb.hidden=false; fb.className="fb"; fb.textContent="First click a point and listen to the sound."; return; } PKS.mark[PKS.step]=PKS.sel; delete PKS.ok[PKS.step]; fb.hidden=true; renderPk(); });
+$("#pkChk").addEventListener("click",()=>{
+  const st=PKS.step, fb=$("#pkFb"), m=PKS.mark[st], a=pkAns(st), pos=pkPos(st); fb.hidden=false;
+  if(m==null){ fb.className="fb"; fb.textContent="First mark the border."; return; }
+  const ok=m===a; PKS.ok[st]=ok; fb.className="fb "+(ok?"ok":"no");
+  const nm={r:"Right",u:"Upper",l:"Left"}[st];
+  fb.textContent=ok?`Correct! ${nm} border: ${lc1(pos[a].lab)}. The border is marked at the edge of the pleximeter on the side of the clear sound.`
+    :`Incorrect. The first point where the sound becomes muffled: ${lc1(pos[a].lab)}. Move from the clear sound toward the dull one and mark where the change begins.`;
+  if(ok){ const nx={r:"u",u:"l"}[st]; if(nx&&!PKS.ok[nx]) setTimeout(()=>{ PKS.step=nx; PKS.sel=null; renderPk(); },900); }
+  renderPk();
+});
+$("#pkReset").addEventListener("click",()=>pkInit(PKS.hide));
+$("#pkStep").addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b) return; PKS.step=b.dataset.st; PKS.sel=null; $("#pkFb").hidden=true; renderPk(); });
+function pkInit(rand){
+  if(rand){ const pool=PK_LIST.filter(x=>x!==PKS.sc); PKS.sc=pool[Math.floor(Math.random()*pool.length)]; }
+  PKS.step="r"; PKS.tap={r:{},u:{},l:{}}; PKS.mark={r:null,u:null,l:null}; PKS.ok={}; PKS.sel=null; $("#pkFb").hidden=true; renderPk();
+}
+$("#pkSel").addEventListener("change",e=>{ PKS.sc=e.target.value; pkInit(false); });
+$("#pkHide").addEventListener("change",e=>{ PKS.hide=e.target.checked; $("#pkSel").hidden=PKS.hide; if(!PKS.hide) $("#pkSel").value=PKS.sc; pkInit(PKS.hide); });
+
+/* =========================================================
+   04–05 · KUTUBXONA
+   ========================================================= */
+function libCards(g){ return LIB.filter(o=>o.g===g).map(o=>`<article class="card"><h3>${esc(o.n)}</h3><span class="alt">${esc(o.alt)}</span><canvas class="phc" data-ph="${o.id}" aria-hidden="true"></canvas><dl><dt>Where it is heard</dt><dd>${esc(o.pt)}</dd><dt>Description</dt><dd>${esc(o.d)}</dd><dt>When it occurs</dt><dd>${esc(o.k)}</dd></dl><button class="play" type="button" data-play="lib:${o.id}"><span class="ic"></span>Listen</button></article>`).join(""); }
+$("#libTon").innerHTML=libCards("ton");
+$("#libMur").innerHTML=libCards("mur");
+function drawAllPhono(){ $$("canvas[data-ph]").forEach(cv=>drawPhono(cv,LIBM[cv.dataset.ph].sp)); drawPhono($("#heroCv"),LIBM.norm_apex.sp,{cycles:2}); }
+
+/* =========================================================
+   06 · PULS
+   ========================================================= */
+const PU={id:"norm",beats:[],raf:0,vis:false,t0:0};
+$("#puSel").innerHTML=Object.entries(PT).map(([k,p])=>`<option value="${k}">${esc(p.n)}</option>`).join("");
+function puGen(){
+  const p=PT[PU.id], out=[]; let t=0, i=0, prev=60/p.hr;
+  while(t<64){ let T=60/p.hr; if(p.af) T*=R(.55,1.45);
+    let A=p.A; if(p.alt && i%2) A*=p.alt;
+    if(p.resp){ const f=(1+Math.sin(2*Math.PI*t/4.5-Math.PI/2))/2; A*=1-p.resp*f; }
+    if(p.af){ A*=Math.max(0,Math.min(1.15,(prev-.3)/.35)); }
+    out.push({t,T,A,pulse:A>=.12}); prev=T; t+=T; i++; }
+  PU.beats=out;
+  const hb=out.filter(b=>b.t<60).length, pl=out.filter(b=>b.t<60&&b.pulse).length;
+  $("#puStat").innerHTML=`<span>Heart rate: <b>${hb}</b>/min</span><span>Pulse: <b>${pl}</b>/min</span>${hb-pl>0?`<span>Pulse deficit: <b>${hb-pl}</b></span>`:""}`;
+  $("#puTxt").textContent=p.t;
+}
+function puVal(t){ const p=PT[PU.id]; let v=0;
+  for(const b of PU.beats){ if(b.t>t) break; const u=t-b.t; if(u>2.5||!b.pulse) continue;
+    const g=u<p.up?Math.pow(Math.sin(Math.PI/2*u/p.up),1.5):Math.exp(-(u-p.up)/p.tau)+p.nb*Math.exp(-Math.pow((u-p.tn)/.035,2));
+    v+=b.A*g; }
+  return v; }
+function puDraw(now){
+  const cv=$("#puCv"), dpr=window.devicePixelRatio||1, w=cv.clientWidth, h=cv.clientHeight; if(!w) return;
+  if(cv.width!==Math.round(w*dpr)){ cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr); }
+  const x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,w,h);
+  const span=6, tNow=2.6+((now-PU.t0)/1000)%57, t0=tNow-span, base=h*.86, sc=h*.3;
+  x.fillStyle=css("--line"); x.fillRect(0,base,w,1);
+  x.strokeStyle=css("--accent"); x.lineWidth=2; x.beginPath();
+  for(let px=0;px<=w;px+=2){ const t=t0+px/w*span, y=base-puVal(t)*sc; if(px===0) x.moveTo(px,y); else x.lineTo(px,y); }
+  x.stroke();
+  x.font="10px "+css("--f-mono"); x.textAlign="center";
+  for(const b of PU.beats){ if(b.t<t0||b.t>tNow) continue; const px=(b.t-t0)/span*w;
+    x.fillStyle=b.pulse?css("--muted"):css("--bad"); x.fillRect(px-1,6,2,10); if(!b.pulse) x.fillText("×",px,28); }
+  const hand=$("#puHand"); hand.style.transform=`scale(${(1+Math.min(.35,puVal(tNow)*.14)).toFixed(3)})`;
+}
+function puLoop(now){ if(!PU.vis){ PU.raf=0; return; } puDraw(now); PU.raf=requestAnimationFrame(puLoop); }
+$("#puSel").addEventListener("change",e=>{ PU.id=e.target.value; PU.t0=performance.now(); puGen(); });
+puGen(); PU.t0=performance.now();
+
+/* =========================================================
+   07 · ARTERIAL BOSIM (Korotkov)
+   ========================================================= */
+const B={i:0,p:0,defl:false,rate:3,acc:0,last:0,raf:0,rec:{s:null,d:null},maxP:0,rates:new Set(),hiss:null,vis:false};
+$("#bpSel").innerHTML=BPP.map((p,i)=>`<option value="${i}">${esc(p.n)}</option>`).join("");
+(function(){ let s=`<circle class="face" cx="110" cy="110" r="102"/>`;
+  for(let v=0;v<=300;v+=10){ const a=(135+v*.9)*Math.PI/180, big=v%50===0, r1=big?84:89, r2=97;
+    s+=`<line class="tk${big?" b":""}" x1="${(110+r1*Math.cos(a)).toFixed(1)}" y1="${(110+r1*Math.sin(a)).toFixed(1)}" x2="${(110+r2*Math.cos(a)).toFixed(1)}" y2="${(110+r2*Math.sin(a)).toFixed(1)}"/>`;
+    if(v%20===0) s+=`<text class="tl" x="${(110+69*Math.cos(a)).toFixed(1)}" y="${(110+69*Math.sin(a)).toFixed(1)}">${v}</text>`; }
+  s+=`<text class="unit" x="110" y="146">mm Hg</text><text class="dig" id="bpDigT" x="110" y="170">0</text><line class="ndl" id="bpN" x1="110" y1="110" x2="110" y2="30"/><circle class="hub" cx="110" cy="110" r="6"/>`;
+  $("#bpG").innerHTML=s; })();
+const bpCur=()=>BPP[B.i];
+function bpDraw(){ const a=(135+B.p*.9)*Math.PI/180, n=$("#bpN"); n.setAttribute("x2",(110+80*Math.cos(a)).toFixed(1)); n.setAttribute("y2",(110+80*Math.sin(a)).toFixed(1));
+  const d=$("#bpDigT"); d.textContent=$("#bpDig").checked?Math.round(B.p):""; }
+function kPhase(p){ const P=bpCur(); if(p>=P.s) return 0; if(P.gap&&p<=P.gap[0]&&p>=P.gap[1]) return 0;
+  if(P.inf){ if(p<=2) return 0; if(p<=P.d) return 4; } else if(p<=P.d) return 0;
+  const f=(P.s-p)/(P.s-P.d); return f<.12?1:f<.32?2:f<.82?3:4; }
+let BV=null;
+function bpVoice(){ const c=ctx(); if(!c) return null; if(!BV){ const out=c.createGain(); out.gain.value=1; out.connect(AU.master); BV={c,out,nodes:[]}; } BV.nodes=[]; return BV; }
+function kTap(ph){ const v=bpVoice(); if(!v) return; const t=v.c.currentTime+.02, amp={1:.5,2:.55,3:1,4:.42}[ph];
+  tone(v,t,ph===3?"clap":ph===4?"muf":"s2",amp);
+  if(ph===2){ const n=nz(v,t,.13), f=filt(v,n,[["bandpass",260,.8]]), g=gn(v,f,0); ramp(g.gain,[[t,0],[t+.02,.35],[t+.12,0]]); g.connect(v.out); } }
+function flash(el){ el.classList.add("on"); setTimeout(()=>el.classList.remove("on"),160); }
+function bpBeat(){ const P=bpCur();
+  if(B.p<P.s-2) flash($("#bpPulse"));
+  const ph=B.p>0?kPhase(B.p):0;
+  if(ph){ kTap(ph); const s=$("#bpSnd"); s.classList.add("snd"); setTimeout(()=>s.classList.remove("snd"),160); }
+  $("#bpPhL").textContent=$("#bpPh").checked&&ph?`(phase ${RN[ph]})`:""; }
+function hiss(on){ const c=AU.ctx; if(!c) return;
+  if(on&&!B.hiss){ const s=c.createBufferSource(); s.buffer=AU.noise; s.loop=true; const hp=c.createBiquadFilter(); hp.type="highpass"; hp.frequency.value=2600; const g=c.createGain(); g.gain.value=.02*(B.rate/3); s.connect(hp); hp.connect(g); g.connect(AU.master); s.start(); B.hiss={s,g}; }
+  else if(!on&&B.hiss){ try{B.hiss.s.stop()}catch(e){} B.hiss=null; } }
+function bpTick(ts){
+  const dt=B.last?Math.min(.1,(ts-B.last)/1000):0; B.last=ts;
+  if(B.defl){ B.p=Math.max(0,B.p-B.rate*dt); B.rates.add(B.rate); if(B.p<=0){ B.defl=false; hiss(false); bpBtns(); } }
+  B.acc+=dt; const T=60/bpCur().hr; if(B.acc>=T){ B.acc-=T; bpBeat(); }
+  bpDraw();
+  if(B.vis||B.defl) B.raf=requestAnimationFrame(bpTick); else { B.raf=0; B.last=0; }
+}
+function bpRun(){ if(!B.raf){ B.last=0; B.raf=requestAnimationFrame(bpTick); } }
+function bpBtns(){ $("#bpDefl").textContent=B.defl?"Stop":"Deflate"; }
+function bpReset(){ B.p=0; B.defl=false; hiss(false); B.rec={s:null,d:null}; B.maxP=0; B.rates=new Set(); $("#bpRS").textContent="—"; $("#bpRD").textContent="—"; $("#bpFb").hidden=true; bpBtns(); bpDraw(); }
+$("#bpPump").addEventListener("click",()=>{ ctx(); B.defl=false; hiss(false); B.p=Math.min(300,B.p+20); B.maxP=Math.max(B.maxP,B.p); bpBtns(); bpRun(); });
+$("#bpDefl").addEventListener("click",()=>{ ctx(); if(B.p<=0) return; B.defl=!B.defl; hiss(B.defl); bpBtns(); bpRun(); });
+$("#bpDump").addEventListener("click",()=>{ B.p=0; B.defl=false; hiss(false); bpBtns(); bpDraw(); });
+$("#bpRate").addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b) return; B.rate=+b.dataset.r; $$("#bpRate button").forEach(x=>x.setAttribute("aria-pressed",x===b)); if(B.hiss) B.hiss.g.gain.value=.02*(B.rate/3); });
+$("#bpSys").addEventListener("click",()=>{ B.rec.s=Math.round(B.p/2)*2; $("#bpRS").textContent=B.rec.s; });
+$("#bpDia").addEventListener("click",()=>{ B.rec.d=Math.round(B.p/2)*2; $("#bpRD").textContent=B.rec.d; });
+$("#bpSel").addEventListener("change",e=>{ B.i=+e.target.value; bpReset(); });
+$("#bpDig").addEventListener("change",bpDraw);
+function bpClass(s,d){ if(s>=180||d>=110) return "Grade 3 hypertension"; if(s>=160||d>=100) return "Grade 2 hypertension"; if(s>=140||d>=90) return d<90?"isolated systolic hypertension (grade 1)":"Grade 1 hypertension"; if(s>=130||d>=85) return "high normal"; if(s>=120||d>=80) return "normal"; return "optimal"; }
+$("#bpEval").addEventListener("click",()=>{
+  const P=bpCur(), r=B.rec, fb=$("#bpFb"), out=[]; fb.hidden=false;
+  if(r.s==null||r.d==null){ fb.className="fb"; fb.textContent="First measure, then mark the systolic and diastolic pressure."; return; }
+  let ok=true;
+  if(B.maxP<P.s+15){ ok=false; out.push(`Not enough air was pumped into the cuff (peak pressure ${Math.round(B.maxP)}). After the radial pulse disappears, add another 20–30 mm Hg.`); }
+  if(Math.abs(r.s-P.s)<=4) out.push(`Systolic: ${r.s}, correct (true value ${P.s}).`);
+  else { ok=false; if(P.gap&&Math.abs(r.s-P.gap[1])<=5) out.push(`Systolic: ${r.s}. This is the lower limit of the auscultatory gap. Sounds were heard from ${P.s} to ${P.gap[0]} and then disappeared down to ${P.gap[1]}. The true systolic pressure is ${P.s}.`);
+    else out.push(`Systolic: ${r.s}, incorrect. The true value is ${P.s}: the number at which the first clear sound appeared.`); }
+  if(P.inf){ if(Math.abs(r.d-P.d)<=5) out.push(`Diastolic: ${r.d}, correct. “Infinite tone”: sounds are heard down to zero, so diastolic pressure is recorded in phase IV, at the number where the sounds become sharply muffled.`);
+    else { ok=false; out.push(`Diastolic: ${r.d}, incorrect. This patient has the “infinite tone” phenomenon: sounds are heard down to zero. Diastolic pressure is recorded at the number where the sounds become sharply muffled (phase IV), that is, at ${P.d}.`); } }
+  else if(Math.abs(r.d-P.d)<=4) out.push(`Diastolic: ${r.d}, correct (true value ${P.d}).`);
+  else { ok=false; out.push(`Diastolic: ${r.d}, incorrect. The true value is ${P.d}: the number at which the sounds disappear completely (phase V).`); }
+  if(B.rates.has(6)) out.push("Deflating the cuff at 6 mm/s increases the error. Recommended: 2–3 mm Hg/s.");
+  out.push(P.inf?`Conclusion: ${P.s}/${P.d} mm Hg. Pulse pressure ${P.s-P.d}: the wide pulse pressure typical of aortic regurgitation.`:`Conclusion: ${P.s}/${P.d} mm Hg, ${bpClass(P.s,P.d)}.`);
+  fb.className="fb "+(ok?"ok":"no"); fb.innerHTML=out.map(esc).join("<br>");
+});
+
+/* =========================================================
+   08 · NUQSONLAR JADVALI
+   ========================================================= */
+(function(){ let h=`<table><thead><tr><th></th>${MX.cols.map(c=>`<th>${esc(c[1])}</th>`).join("")}</tr></thead><tbody>`;
+  for(const [r,vals] of MX.rows){ h+=`<tr><td>${esc(r)}</td>${vals.map((v,i)=>{ let acts=""; if(r==="Auscultation"){ const id=MX.cols[i][0]; acts=`<div class="acts">${MX.play[id].map(([k,l])=>`<button class="play" type="button" data-play="sc:${id}:${k}" data-sub="${esc(AP[k].n)}"><span class="ic"></span>${esc(l)}</button>`).join("")}</div>`; } return `<td>${esc(v)}${acts}</td>`; }).join("")}</tr>`; }
+  $("#mxTbl").innerHTML=h+"</tbody></table>"; })();
+
+/* =========================================================
+   09 · QULOQ MASHQI
+   ========================================================= */
+const EAR={q:null,n:0,ok:0,done:false};
+function earNew(){ const q=LIB[Math.floor(Math.random()*LIB.length)]; const others=shuffle(LIB.filter(o=>o.g===q.g&&o.id!==q.id)).slice(0,3); EAR.q={o:q,opts:shuffle([q,...others])}; EAR.done=false; earDraw(); }
+function earDraw(){ const q=EAR.q;
+  $("#ear").innerHTML=`<div class="q"><div class="stat"><span>Answers: <b>${EAR.n}</b></span><span>Correct: <b>${EAR.ok}</b></span></div>
+    <p class="t">${q.o.g==="ton"?"Which sound or rhythm is heard?":"Which murmur is heard?"}</p>
+    <div class="btnrow"><button class="play big" type="button" data-play="lib:${q.o.id}" data-title="Ear training" data-sub="${esc("Auscultation site: "+q.o.pt.split(";")[0])}"><span class="ic"></span>Listen</button></div>
+    <div class="opts">${q.opts.map((o,i)=>`<button class="opt" type="button" data-i="${i}"><span class="k">${"ABCD"[i]}</span><span>${esc(o.n)}</span></button>`).join("")}</div>
+    <div id="earEx"></div></div>`; }
+$("#ear").addEventListener("click",e=>{
+  const b=e.target.closest(".opt"); if(b&&!EAR.done){ EAR.done=true; const i=+b.dataset.i, q=EAR.q, ok=q.opts[i]===q.o; EAR.n++; if(ok) EAR.ok++;
+    $$("#ear .opt").forEach((x,j)=>{ x.disabled=true; if(q.opts[j]===q.o) x.classList.add("right"); else if(j===i) x.classList.add("wrong"); });
+    $("#ear .stat").innerHTML=`<span>Answers: <b>${EAR.n}</b></span><span>Correct: <b>${EAR.ok}</b></span>`;
+    $("#earEx").innerHTML=`<p class="expl"><b>${ok?"Correct.":"Incorrect."}</b> ${esc(q.o.n)}: ${esc(q.o.d)} (${esc(q.o.k)})</p><div class="btnrow" style="margin-top:8px"><button class="btn pri" type="button" id="earNext">Next sound</button></div>`; return; }
+  if(e.target.closest("#earNext")){ stop(); earNew(); }
+});
+earNew();
+
+/* =========================================================
+   10 · KLINIK HOLATLAR
+   ========================================================= */
+$("#cases").innerHTML=CASES.map((c,ci)=>`<article class="q case" data-c="${ci}">
+  <div class="case-h"><span class="qn">Case ${ci+1}</span><b>${esc(c.who)}</b></div>
+  <div class="steps">${c.steps.map(([t,x])=>`<details class="step"><summary>${esc(t)}</summary><div>${Array.isArray(x)
+    ?`<p class="muted" style="font-size:.88rem">Listen to the points and describe the findings.</p><div class="btnrow">${x.map(k=>`<button class="play" type="button" data-play="sc:${c.sc}:${k}" data-title="Case ${ci+1}" data-sub="${esc(AP[k].n)}"><span class="ic"></span>${esc(AP[k].n)}</button>`).join("")}</div>`
+    :`<p>${esc(x)}</p>`}</div></details>`).join("")}</div>
+  <p class="t">Most likely diagnosis?</p>
+  <div class="opts">${c.opts.map((o,i)=>`<button class="opt" type="button" data-i="${i}"><span class="k">${"ABCDE"[i]}</span><span>${esc(o)}</span></button>`).join("")}</div>
+  <div class="expl" hidden></div></article>`).join("");
+$("#cases").addEventListener("click",e=>{
+  const b=e.target.closest(".opt"); if(!b) return; const art=b.closest(".case"), c=CASES[+art.dataset.c], i=+b.dataset.i;
+  if(art.dataset.done) return; art.dataset.done="1";
+  $$(".opt",art).forEach((x,j)=>{ x.disabled=true; if(j===c.ans) x.classList.add("right"); else if(j===i) x.classList.add("wrong"); });
+  const au=c.steps.find(s=>Array.isArray(s[1]))[1].map(k=>`${AP[k].n}: ${SC[c.sc].tx[k]}`).join(" ");
+  const ex=$(".expl",art); ex.hidden=false; ex.innerHTML=`<p><b>${i===c.ans?"Correct.":"Incorrect."}</b> ${esc(c.ex)}</p><p class="muted" style="margin-top:6px"><b>Auscultation:</b> ${esc(au)}</p>`;
+});
+
+/* =========================================================
+   ISHGA TUSHIRISH
+   ========================================================= */
+renderVP(); renderAp(); renderPk();
+requestAnimationFrame(drawAllPhono);
+let rzT; window.addEventListener("resize",()=>{ clearTimeout(rzT); rzT=setTimeout(drawAllPhono,150); });
+new MutationObserver(()=>setTimeout(drawAllPhono,30)).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",()=>setTimeout(drawAllPhono,30));
+if("IntersectionObserver" in window){
+  new IntersectionObserver(es=>{ for(const en of es){ PU.vis=en.isIntersecting; if(PU.vis&&!PU.raf) PU.raf=requestAnimationFrame(puLoop); } }).observe($("#puCv"));
+  new IntersectionObserver(es=>{ for(const en of es){ B.vis=en.isIntersecting; if(B.vis) bpRun(); } }).observe($("#bpG"));
+} else { PU.vis=true; PU.raf=requestAnimationFrame(puLoop); B.vis=true; bpRun(); }
+
+})();
+</script>
+</body></html>

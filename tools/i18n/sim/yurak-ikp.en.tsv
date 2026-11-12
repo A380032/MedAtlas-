@@ -1,0 +1,977 @@
+0	Cardiac physical examination
+1	Propaedeutics of Internal Diseases: an interactive simulator for cardiac inspection, palpation, percussion, auscultation, pulse, arterial blood pressure and acquired valvular heart disease
+2	Sections
+3	Heart
+4	Virtual patient
+5	Palpation
+6	Percussion
+7	Sounds
+8	Murmurs
+9	Pulse
+10	Blood pressure
+11	Valve defects
+12	Ear training
+13	Clinical cases
+14	Sources
+15	Propaedeutics of Internal Diseases · Topics 10–14
+16	inspection, percussion
+17	and auscultation
+18	An interactive practice session on the physical examination of the cardiovascular system. Palpate a virtual patient, find the heart borders by percussion, listen to heart sounds and murmurs, measure arterial blood pressure by the Korotkoff method, and learn to tell mitral from aortic valve defects.
+19	Compiled by: Asadbek Axmatkulov · ALVORA · Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd year · 2026
+20	Practical sessions 10–14 of the KTR: cardiac inspection and palpation, percussion and pulse, auscultation, rheumatic fever and mitral defects, infective endocarditis and aortic defects.
+21	Phonocardiogram · cardiac apex
+22	72 / min
+23	Normal phonocardiogram: at the apex S1 is louder than S2, systole is shorter than diastole
+24	Systole
+25	Diastole
+26	Murmur
+27	Normal heart sounds
+28	“Quail rhythm”
+29	Listen with headphones: heart sounds are low-frequency and are poorly heard on a phone speaker. Sounds are synthesized in real time in the browser.
+30	01 · Virtual patient
+31	Examine the patient: palpate, percuss, listen
+32	Choose a method and a patient (17 patients). In palpation, click a point: the graph shows how to palpate, what is felt under the palm, and when the impulse and thrill occur relative to the carotid pulse. In percussion, click anywhere on the chest: the percussion note sounds. In auscultation, listen to the 5 standard points and the areas where murmurs radiate. In practice mode the patient's diagnosis is hidden, and you find it yourself.
+33	Examination method
+34	Auscultation
+35	Patient
+36	Practice mode: hide the diagnosis
+37	Projection of the heart and valves
+38	Chest · anterior surface
+39	Click a point
+40	Anterior surface of the chest
+41	Complaints
+42	Inspection
+43	BP
+44	Selected point
+45	Select a point in the picture.
+46	Graph over time of the carotid pulse and of the impulse and thrill under the palm
+47	Carotid pulse
+48	Impulse under the palm
+49	Thrill
+50	Your diagnosis
+51	Check
+52	New patient
+53	Show findings
+54	02 · Palpation
+55	Apex beat, cardiac impulse and the “cat's purr”
+56	First palpate approximately with the palm between the 3rd–6th ribs, then precisely with 2–3 fingertips. In women the breast is displaced upward and to the right.
+57	Practice: where is the apex beat?
+58	Choose a patient and click on the chest where the apex beat should be. The program tells you which intercostal space you chose and the distance relative to the midclavicular line.
+59	Patient
+60	Show answer
+61	Apex beat localization practice
+62	Click the correct place on the chest.
+63	Feature
+64	Normal
+65	Abnormal change
+66	Location
+67	5th intercostal space, 1–1.5 cm medial to the left midclavicular line
+68	Shifted left: left ventricular dilatation. Shifted left and down (6th–7th space): aortic regurgitation
+69	Area
+70	1–2 cm²
+71	Wide (diffuse): dilatation; limited: emphysema, obesity
+72	Height
+73	Moderate
+74	High: thyrotoxicosis, fever, dilatation; low: obesity, pericardial effusion
+75	Force
+76	Increased: hypertrophy; decreased: myocarditis, pericarditis
+77	Resistance
+78	Elastic
+79	Resistant, “dome-shaped”: aortic stenosis, arterial hypertension, aortic regurgitation
+80	Remember
+81	The 5 features of the apex beat: Location, Area, Height, Force, Resistance.
+82	The “cat's purr” and epigastric pulsation
+83	Phase
+84	Disease
+85	Cardiac apex
+86	Diastolic (presystolic)
+87	Mitral stenosis
+88	2nd space, right of the sternum; radiates to the neck
+89	Systolic
+90	Aortic stenosis
+91	2nd space, left of the sternum
+92	Pulmonary artery stenosis
+93	Left sternal border, 3rd–4th space
+94	Ventricular septal defect
+95	Systolic-diastolic
+96	Patent ductus arteriosus
+97	A “cat's purr” is always a sign of an
+98	organic
+99	defect. To determine its phase, the pulse over the carotid artery is palpated at the same time: a thrill coinciding with the pulse is systolic, a thrill coinciding with the pause after the pulse is diastolic.
+100	Cause of epigastric pulsation
+101	Sign
+102	Right ventricular hypertrophy
+103	Taps against the fingertip, increases on inspiration
+104	Abdominal aorta
+105	Taps against the palm surface from above downward, decreases on inspiration
+106	Liver pulsation
+107	The whole liver expands and contracts: tricuspid regurgitation
+108	03 · Percussion
+109	Find the heart borders by ear
+110	The pleximeter finger is placed parallel to the border and moved from the clear sound toward the dull sound. Sequence: right, upper, left border. Click each point, choose the first place where the sound changes and press “Border is here”. When all three borders are found, the heart configuration is drawn.
+111	Relative dullness
+112	Percussion lines and borders found
+113	Clear pulmonary sound
+114	Muffled (relative dullness)
+115	Hide the patient
+116	Border
+117	1. Right
+118	2. Upper
+119	3. Left
+120	Border is here
+121	Reset
+122	Normal borders and their shifts
+123	Forming structure
+124	Absolute dullness
+125	Right
+126	4th space, 1–1.5 cm outside the right sternal border
+127	Right atrium
+128	Left sternal border
+129	Upper
+130	3rd rib, left parasternal line
+131	Left atrial appendage, pulmonary artery conus
+132	4th rib
+133	Left
+134	5th space, 1–1.5 cm medial to the midclavicular line
+135	Left ventricle
+136	1–2 cm inside the relative border
+137	Relative dullness “4-3-5”: right border in the 4th space, upper border at the 3rd rib, left border in the 5th space. Transverse diameter 11–13 cm. Vascular bundle in the 2nd space 5–6 cm.
+138	Whichever border is displaced, that chamber is enlarged:
+139	right border — right atrium, upper — left atrium, left — left ventricle.
+140	Defect
+141	Configuration
+142	Vascular bundle
+143	To the right
+144	Upward (2nd rib)
+145	Unchanged
+146	Mitral
+147	Mitral regurgitation
+148	Later to the right
+149	Upward
+150	To the left
+151	To the left (moderate)
+152	Aortic
+153	Slightly widened
+154	Aortic regurgitation
+155	To the left and down (marked)
+156	Aortic (“sitting duck”)
+157	Widened
+158	Exudative pericarditis
+159	Trapezoid
+160	04 · Auscultation
+161	Auscultation points and heart sounds
+162	The heart is auscultated with the patient standing, supine and lying on the left side, in held inspiration and held expiration. The bell of the stethoscope is used for low-frequency sounds (S3, S4, the murmur of mitral stenosis), the diaphragm for high-frequency ones.
+163	Valve
+164	Auscultation point
+165	Cardiac apex (5th space, 1–1.5 cm medial to the midclavicular line)
+166	2nd space, right of the sternum
+167	Pulmonary artery
+168	Tricuspid
+169	Base of the xiphoid process, slightly to the right
+170	Aortic (additional)
+171	Botkin–Erb point: where the 3rd–4th ribs join the sternum, on the left
+172	Order: Mitral — Aortic — Pulmonary — Tricuspid — Botkin.
+173	Feature
+174	S1
+175	S2
+176	When
+177	After the long pause
+178	After the short pause
+179	Where loudest
+180	Apex, xiphoid process
+181	Base of the heart (2nd space)
+182	Duration
+183	0.09–0.12 s
+184	0.05–0.07 s
+185	Timbre
+186	Lower
+187	Higher
+188	With the carotid pulse
+189	Coincides
+190	Does not coincide
+191	Library of sounds and triple rhythms
+192	Diagram on the card: phonocardiogram of the sound
+193	05 · Murmurs
+194	Listen to the murmur and describe it
+195	A murmur arises when blood flow is turbulent: when an orifice narrows, when blood flows backward through an incompetent valve, when blood viscosity falls, or when flow accelerates.
+196	Plan for describing a murmur
+197	Phase:
+198	systolic or diastolic (compared with the carotid pulse)
+199	Relation to the sounds:
+200	does it start after the sound or “swallow” it
+201	Epicenter:
+202	the point where it is heard best
+203	Radiation:
+204	along the direction of blood flow
+205	Intensity:
+206	grade 1–6 on the Levine scale
+207	Shape:
+208	crescendo, decrescendo, diamond-shaped, plateau
+209	Timbre:
+210	harsh, sawing, blowing, rumbling, musical
+211	Dependence on position, breathing and exertion
+212	Organic
+213	Functional
+214	Phase
+215	Systolic and diastolic
+216	Usually systolic
+217	Harsh, sawing
+218	Soft, blowing
+219	Long
+220	Short
+221	Often loud
+222	Quiet (grade 1–2)
+223	Radiation
+224	Wide
+225	Limited
+226	Altered
+227	Position and exertion
+228	Changes little
+229	Variable
+230	“Cat's purr”
+231	May be present
+232	Never
+233	Library of murmurs
+234	Each murmur sounds at its epicenter
+235	To hear a diastolic murmur well: in mitral stenosis the patient lies on the left side (bell, at the apex); in aortic regurgitation the patient leans forward and holds expiration (diaphragm, at the Botkin–Erb point). Almost any diastolic murmur is organic.
+236	06 · Arterial pulse
+237	How the pulse wave feels under the finger
+238	Choose the pulse type. The graph shows the pulse wave in the radial artery, and the small lines above it are the heart contractions. The circle shows the beat under the finger.
+239	Pulse type
+240	Pulse wave graph
+241	Symmetry
+242	Same in both arms
+243	Pulsus differens: mitral stenosis (Popov–Savelyev sign), aortic aneurysm
+244	Rhythm
+245	Regular
+246	Irregular: extrasystole, atrial fibrillation
+247	Rate
+248	60–80 (60–90) / min
+249	Tachycardia, bradycardia
+250	Deficit
+251	None
+252	Atrial fibrillation
+253	Filling
+254	Well filled
+255	Poorly filled: blood loss, shock
+256	Tension
+257	Hard (durus): hypertension; soft (mollis)
+258	Volume
+259	Large: aortic regurgitation; small, thready: aortic stenosis, shock
+260	Form
+261	Fast and high: aortic regurgitation; slow and small: aortic stenosis
+262	07 · Arterial blood pressure
+263	Measure blood pressure by the Korotkoff method
+264	First, by the palpatory method, inflate until the pulse in the radial artery disappears, then add another 20–30 mm Hg. Deflate at 2–3 mm Hg/s. Press “Systolic” when the first sound appears and “Diastolic” when the sounds disappear completely.
+265	Manometer
+266	Radial artery pulse
+267	Sound in the phonendoscope
+268	Inflate +20
+269	Deflate
+270	Deflate fully
+271	Speed:
+272	Deflation rate
+273	mm/s
+274	Systolic ✓
+275	Diastolic ✓
+276	Evaluation
+277	Systolic:
+278	Diastolic:
+279	Digital readout
+280	Show Korotkoff phases
+281	Description
+282	Significance
+283	=
+284	Clear, repeated sounds appear
+285	Systolic pressure
+286	=
+287	The sounds take on a murmur-like quality
+288	=
+289	The sounds are clear and loud again
+290	=
+291	The sounds suddenly become muffled
+292	Diastolic pressure in the case of an “endless tone”
+293	=
+294	The sounds disappear completely
+295	Diastolic pressure in adults
+296	Avoid errors
+297	“Auscultatory gap”: between phases I and II the sounds temporarily disappear. If the cuff is inflated without the palpatory method, the lower limit of the gap is recorded as systolic pressure and the pressure is underestimated by 20–40 mm Hg.
+298	Category (ESH 2023)
+299	Diastolic
+300	Optimal
+301	and
+302	Normal
+303	and/or
+304	High normal
+305	Grade 1 hypertension
+306	Grade 2 hypertension
+307	Grade 3 hypertension
+308	Isolated systolic
+309	08 · Acquired valve defects
+310	Four defects, five methods: in one table
+311	Scroll the table horizontally. The buttons in the Auscultation row sound the defect at its epicenter and at its radiation site.
+312	09 · Ear training
+313	Listen and identify
+314	The sound is chosen at random. Listen and mark the correct answer. Listen again if needed.
+315	10 · Clinical cases
+316	At the bedside
+317	In each case, open the stages one by one, listen to the points in auscultation and choose the diagnosis.
+318	References
+319	Axmatkulov A. Propaedeutics of Internal Diseases: a comprehensive manual, topics 10–14. ALVORA, 2026.
+320	Gadayev A.G., Karimov M.Sh., Axmedov X.S. Propaedeutics of Internal Diseases. Tashkent: Muharrir, 2012.
+321	=
+322	=
+323	Mancia G., Kreutz R., Brunström M. et al. 2023 ESH Guidelines for the management of arterial hypertension. Journal of Hypertension, 2023;41(12):1874–2071.
+324	The sounds are not real recordings: they are synthesized with the Web Audio API from the physical description of heart sounds and murmurs (frequency, duration, shape, phase). For teaching purposes, the features are slightly exaggerated. They do not replace listening to a real patient or a teacher's explanation.
+325	ALVORA Med · Cardiac physical examination simulator
+326	© 2026 Asadbek Axmatkulov · TSMU, Faculty of General Medicine No. 2
+327	Stop
+328	Sound
+329	Muffled sound (relative dullness)
+330	Dull sound
+331	Sound could not be played
+332	The browser does not support the Web Audio API. Open it in a recent version of Chrome, Safari or Firefox.
+333	Tap
+334	Pause
+335	· inspiration
+336	· expiration
+337	Finished
+338	=
+339	=
+340	=
+341	=
+342	=
+343	=
+344	=
+345	=
+346	=
+347	=
+348	EC
+349	S2 A₂P₂
+350	OS
+351	=
+352	=
+353	=
+354	=
+355	=
+356	=
+357	=
+358	midclav. line
+359	ant. axillary line
+360	=
+361	=
+362	<text class="side-t" x="⟦0⟧" y="⟦1⟧">RIGHT</text><text class="side-t" x="⟦2⟧" y="⟦3⟧" text-anchor="end">LEFT</text>
+363	=
+364	=
+365	=
+366	=
+367	=
+368	1 · Cardiac apex (mitral valve)
+369	2 · 2nd space, right of the sternum (aorta)
+370	3 · 2nd space, left of the sternum (pulmonary artery)
+371	4 · Base of the xiphoid process (tricuspid valve)
+372	5 · Botkin–Erb point (3rd space, left sternal border)
+373	=
+374	Left axillary region
+375	=
+376	Right carotid artery
+377	Apex beat region
+378	Epigastric region
+379	Carotid artery
+380	Place the palm between the 3rd–6th ribs with its base toward the sternum and the fingers toward the axilla (approximate palpation). When the impulse is found, determine its 5 features with the tips of 2–3 flexed fingers. In women the breast is displaced upward and to the right.
+381	Place the palm transversely on the left sternal border, 3rd–4th spaces. In healthy adults no impulse is felt here; a palpable diffuse impulse indicates right ventricular enlargement.
+382	Direct the fingers from beneath the xiphoid process upward toward the heart; ask the patient to take a deep breath. If it taps against the fingertip — right ventricle; against the palm surface — abdominal aorta.
+383	Place the palm on the 2nd space, right of the sternum. With the other hand palpate the pulse in the carotid artery: if the thrill coincides with the pulse, it is systolic.
+384	Place the palm on the 2nd space, left of the sternum. In pulmonary hypertension the tap of S2 can be felt by the hand here.
+385	Palpate the carotid artery at the level of the thyroid cartilage, on the inner edge of the sternocleidomastoid muscle. Never press both at the same time!
+386	Healthy person (normal)
+387	No complaints, came for a preventive examination.
+388	The cardiac region is unchanged. No pathological pulsations are visible. Skin color is normal.
+389	72/min, regular, equal in both arms, well filled, moderately tense.
+390	120/78 mm Hg
+391	In the 5th space, 1–1.5 cm medial to the midclavicular line; area 1–2 cm², moderate height and force, not resistant.
+392	Cardiac impulse is not detected.
+393	No epigastric pulsation.
+394	No thrill.
+395	Carotid pulse is normal, simultaneous with the apex beat.
+396	Relative dullness: right border in the 4th space 1–1.5 cm outside the right sternal border, upper border at the 3rd rib, left in the 5th space 1–1.5 cm medial to the midclavicular line. Configuration is normal, vascular bundle 5–6 cm.
+397	S1 is louder than S2 (about 1.5–2 times). No murmur.
+398	S2 is louder than S1.
+399	S2 is louder than S1; on inspiration S2 splits briefly (physiological splitting).
+400	S1 is loud, S2 is quieter.
+401	Both sounds are of about equal intensity.
+402	Sounds are quiet, no murmur.
+403	Quiet transmitted sounds, no murmur.
+404	All findings are normal: borders “4-3-5”, S1 loud at the apex, S2 loud at the base, no murmur.
+405	Shortness of breath on exertion, nocturnal cough, occasional blood-streaked sputum, palpitations, easy fatigue.
+406	Facies mitralis: bluish-red patches on the cheeks, cyanosis of the lips. Pulsation is visible at the left sternal border and in the epigastric region.
+407	88/min, regular, small; smaller in the left arm (pulsus differens).
+408	110/75 mm Hg
+409	Not displaced (5th space), localized, weak: the left ventricle is small. Diastolic (presystolic) “cat's purr” at the apex: the thrill is felt after the carotid pulse, before the next beat.
+410	Cardiac impulse at the left sternal border in the 3rd–4th spaces: right ventricular hypertrophy.
+411	Epigastric pulsation taps against the fingertip and increases on inspiration: right ventricle.
+412	The tap of S2 may be felt by the hand (pulmonary hypertension).
+413	Pulse is small.
+414	Upper border up to the 2nd rib (left atrium), right border shifted to the right (right atrium and right ventricle). Left border unchanged. The cardiac waist is smoothed out: mitral configuration. Absolute dullness is enlarged.
+415	“Snapping” S1; opening snap of the mitral valve after S2 (“quail rhythm”). Diastolic murmur: low-pitched, rumbling, intensifying in presystole, not radiating; best heard on the left side.
+416	Sounds are unchanged.
+417	Accentuated and split S2: pulmonary hypertension.
+418	S1 is loud.
+419	Opening snap and a quiet diastolic murmur.
+420	The murmur does not radiate to the axilla.
+421	No murmur.
+422	Snapping S1 + opening snap (“quail rhythm”) + presystolic crescendo diastolic murmur at the apex + accentuated S2 over the pulmonary artery; borders upward and to the right, mitral configuration.
+423	Mitral valve regurgitation
+424	Shortness of breath on exertion, palpitations, weakness.
+425	Apex beat is visible, increased.
+426	80/min, regular, satisfactorily filled.
+427	125/80 mm Hg
+428	Shifted left: in the 5th space 1 cm lateral to the midclavicular line; wide, high, increased.
+429	The tap of S2 may be felt.
+430	Pulse is normal.
+431	Left border to the left (left ventricle), upper border upward (left atrium); the right border shifts to the right later. The cardiac waist is smoothed out: mitral configuration.
+432	S1 sharply decreased; a blowing systolic murmur merging with S1 and occupying the whole of systole; S3.
+433	Sounds are unchanged, no murmur.
+434	Accentuated S2 (increased pressure in the pulmonary circulation).
+435	The systolic murmur is transmitted quietly.
+436	The systolic murmur is transmitted.
+437	The systolic murmur radiates to the left axillary region.
+438	Decreased S1 at the apex + a systolic murmur merging with S1 and radiating to the axilla + accentuated S2 over the pulmonary artery; borders to the left and upward.
+439	Squeezing retrosternal pain on exertion, dizziness, fainted twice while climbing stairs, shortness of breath.
+440	Skin is pale, the apex beat is barely visible.
+441	64/min, regular, slow and small (pulsus tardus et parvus).
+442	105/85 mm Hg (narrow pulse pressure)
+443	Slightly displaced to the left, strong, resistant (“heaving”): concentric hypertrophy.
+444	No cardiac impulse.
+445	Systolic “cat's purr”: the thrill coincides with the carotid pulse and radiates to the neck vessels.
+446	No thrill or weakly transmitted.
+447	Pulse rises slowly and is small; the thrill is transmitted.
+448	Left border moderately displaced to the left, cardiac waist deepened: aortic configuration. Vascular bundle slightly widened (post-stenotic aortic dilatation).
+449	S1 decreased, S4; the systolic murmur is transmitted quietly.
+450	Harsh, sawing, diamond-shaped (crescendo–decrescendo) systolic murmur; S2 decreased; early systolic ejection click.
+451	The systolic murmur is quiet.
+452	The murmur is barely audible.
+453	The systolic murmur radiates to the carotid artery.
+454	Harsh diamond-shaped systolic murmur in the 2nd space on the right, radiating to the carotid arteries + decreased S2 over the aorta + systolic thrill + pulsus tardus et parvus; angina pectoris, syncope, shortness of breath.
+455	Aortic valve regurgitation
+456	Palpitations, a sensation of pulsation in the neck, dizziness, shortness of breath on exertion.
+457	Skin is pale. “Dance of the carotids”, de Musset's sign (head bobbing), Quincke's capillary pulse. Apex beat is visible.
+458	84/min, rapid, high and large (pulsus celer, altus, magnus): “water-hammer” pulse.
+459	165/40 mm Hg (wide pulse pressure)
+460	Displaced to the left and down: in the 6th space 2 cm lateral to the midclavicular line; wide, high, strong, resistant (“dome-shaped”).
+461	The carotid artery pulsates sharply and high (“dance of the carotids”).
+462	Left border sharply displaced to the left and down (left ventricular dilatation), cardiac waist deepened: aortic configuration. Vascular bundle widened.
+463	S1 decreased; the diastolic murmur is transmitted to the apex; presystolic Austin Flint murmur.
+464	S2 decreased; protodiastolic murmur; functional systolic murmur of relative stenosis.
+465	Sounds are quiet.
+466	A soft, blowing, decrescendo protodiastolic murmur beginning immediately after S2. It is best heard when the patient leans forward and holds expiration.
+467	Systolic flow murmur.
+468	Protodiastolic murmur at the Botkin–Erb point + decreased S2 over the aorta + rapid, high pulse + wide pulse pressure (low diastolic pressure) + peripheral vascular signs; left border to the left and down.
+469	Arterial hypertension, left ventricular hypertrophy
+470	Headache in the occipital region, dizziness, ringing in the ears, “flies” before the eyes.
+471	Face is flushed. The apex beat may be visible.
+472	76/min, regular, tense (pulsus durus).
+473	168/102 mm Hg
+474	Slightly displaced to the left, increased, resistant.
+475	Pulse is tense.
+476	Left border displaced 1 cm to the left, cardiac waist slightly deepened: tendency toward aortic configuration. Vascular bundle slightly widened.
+477	Presystolic “gallop” (S4): a hypertrophied, poorly compliant ventricle.
+478	Accentuated S2: over the aorta, S2 is louder than over the pulmonary artery, with a metallic quality.
+479	S2 is quieter than over the aorta.
+480	Sounds are as usual.
+481	S2 is transmitted, loud.
+482	Accentuated S2 over the aorta + resistant apex beat displaced to the left + S4 + high BP and tense pulse.
+483	Acute rheumatic fever, primary rheumatic carditis
+484	Normal (left border slightly widened)
+485	Had tonsillitis 2–3 weeks ago. Temperature 38 °C, migrating pain and swelling in the large joints, palpitations, weakness.
+486	Knee and ankle joints are swollen and red. Skin is pale.
+487	112/min, regular, soft; tachycardia is out of proportion to the fever.
+488	105/65 mm Hg
+489	Slightly displaced to the left, decreased, diffuse.
+490	Pulse is rapid, soft.
+491	Left border shifted 1 cm to the left (left ventricular dilatation). Other borders normal.
+492	Sounds are muffled, S1 decreased; protodiastolic gallop rhythm (S3); soft, blowing systolic murmur at the apex (relative mitral regurgitation).
+493	Sounds are muffled.
+494	A quiet systolic murmur is transmitted.
+495	Association with streptococcal tonsillitis + migrating polyarthritis + signs of carditis: tachycardia, muffled sounds, decreased S1, S3, soft systolic murmur at the apex.
+496	Heaviness in the cardiac region, shortness of breath; the patient has to sit leaning forward.
+497	Neck veins are distended, face is puffy. The cardiac region slightly bulges, the apex beat is not visible.
+498	108/min, small; on inspiration the pulse wave decreases sharply (paradoxical pulse).
+499	100/70 mm Hg
+500	Apex beat is not palpable (or is felt very weakly well inside the left border of relative dullness).
+501	No impulse.
+502	Pulse is small, decreases further on inspiration.
+503	Borders enlarged in all directions, cardiac waist absent: trapezoid (triangular) configuration. Absolute dullness almost merges with relative dullness. Vascular bundle widened.
+504	Sounds sharply muffled, tachycardia.
+505	Sounds sharply muffled.
+506	Sounds are barely audible.
+507	Quiet sounds.
+508	Borders enlarged in all directions, trapezoid configuration + apex beat not detectable + sharply muffled sounds + paradoxical pulse, distended neck veins.
+509	Dry (fibrinous) pericarditis
+510	Acute, stabbing pain in the cardiac region: worsens with inspiration, cough and lying on the back, decreases on leaning forward. Low-grade fever.
+511	The patient sits leaning forward. Breathing is shallow.
+512	96/min, regular.
+513	115/75 mm Hg
+514	In the usual place, unchanged.
+515	A rough thrill is felt at the left sternal border (pericardial friction).
+516	Borders unchanged.
+517	The friction rub is transmitted quietly.
+518	The friction rub is quiet.
+519	Friction rub.
+520	Pericardial friction rub: scratching, resembling “walking on snow”, in systole and diastole, does not radiate; intensifies with stethoscope pressure and on leaning forward, persists when the breath is held.
+521	At the left sternal border, in the area of absolute dullness, a scratching, non-radiating friction rub that persists when the breath is held + positional acute pain.
+522	1–2 cm² (diameter 1.5–2 cm)
+523	Not resistant (elastic)
+524	5th space, in place
+525	Limited (1 cm²)
+526	Low
+527	Weakened
+528	Not resistant
+529	5th space, 1 cm outside the midclavicular line
+530	Wide (2.5–3 cm²)
+531	High
+532	Increased
+533	Moderately resistant
+534	5th space, at the midclavicular line
+535	Slightly widened (2 cm²)
+536	Strong
+537	Resistant, “heaving”
+538	6th space, 2 cm outside the midclavicular line
+539	Wide (3–4 cm²)
+540	Resistant, “dome-shaped”
+541	1.5–2 cm²
+542	Resistant
+543	Diffuse (2.5 cm²)
+544	Not detected
+545	Combined mitral valve disease, atrial fibrillation
+546	Shortness of breath on exertion, palpitations and “skipped beats”, cough, leg swelling in the evening. Followed for rheumatic valve disease for 20 years.
+547	Facies mitralis, acrocyanosis, swelling of the shins.
+548	Irregular, waves vary, 84/min; heart rate 100/min: pulse deficit 16.
+549	110/70 mm Hg
+550	Widened (2.5 cm²)
+551	Slightly displaced to the left (regurgitation component), widened. Diastolic thrill at the apex; no presystolic accentuation because of fibrillation.
+552	Right ventricular impulse.
+553	Epigastric pulsation: right ventricle.
+554	The tap of S2 is felt.
+555	Pulse is irregular, waves vary.
+556	Borders enlarged upward (left atrium), to the right (right atrium) and to the left (left ventricle); mitral configuration.
+557	Rhythm is irregular, S1 intensity varies; systolic murmur and diastolic rumble (presystolic accentuation disappears in fibrillation).
+558	Sounds are irregular.
+559	S2 accentuation.
+560	Both murmurs are transmitted quietly.
+561	The systolic murmur radiates to the axilla.
+562	Both systolic and diastolic murmurs at the apex + irregular rhythm and pulse deficit + accentuated S2 over the pulmonary artery; borders upward, to the right and to the left.
+563	Mitral valve prolapse
+564	Stabbing pain in the cardiac region unrelated to exertion, palpitations and a sense of “skipped beats”, easy fatigue, anxiety.
+565	Asthenic build, tall stature, flat chest, hypermobile joints.
+566	84/min, occasional extrasystoles.
+567	In the usual place, features normal.
+568	No pulsation.
+569	Mid-systolic click followed by a late systolic murmur that crescendos up to S2. On standing the click moves closer to S1 and the murmur lengthens.
+570	The click and murmur are transmitted quietly.
+571	The late systolic murmur radiates quietly to the axilla.
+572	Mid-systolic click at the apex + late systolic murmur; sounds and borders unchanged; asthenic build. Confirmation: echocardiography.
+573	Tricuspid valve regurgitation
+574	Right chambers enlarged (close to trapezoid)
+575	Leg swelling, heaviness under the right ribs, abdominal enlargement, weakness. Rheumatic mitral valve disease previously diagnosed.
+576	Acrocyanosis, yellowish-bluish skin tint. Neck veins are distended and pulsate in systole (positive venous pulse). Epigastric pulsation, ascites, leg swelling.
+577	96/min, arrhythmic (atrial fibrillation), waves vary.
+578	105/70 mm Hg
+579	Wide, diffuse
+580	Slightly displaced to the left: the enlarged right ventricle pushes the left ventricle aside; diffuse, weak.
+581	Strong diffuse impulse at the left sternal border and its lower part: right ventricular dilatation.
+582	Epigastric pulsation taps against the fingertip and increases on inspiration; the liver expands as a whole in systole (true liver pulsation).
+583	Neck veins fill in systole: positive venous pulse.
+584	Right border sharply shifted to the right (right atrium), left border slightly to the left (the right ventricle pushes the left aside). Absolute dullness enlarged. Liver enlarged.
+585	Rhythm is irregular; murmur is transmitted quietly.
+586	Sounds are quiet, irregular.
+587	S1 decreased; the systolic murmur intensifies at the height of inspiration (Rivero-Carvallo sign). The respiratory phase is shown in the player.
+588	The systolic murmur is transmitted and intensifies on inspiration.
+589	Systolic murmur at the base of the xiphoid process intensifying on inspiration (Rivero-Carvallo) + positive venous pulse and liver pulsation + marked shift of the right border + systemic venous congestion.
+590	Dilated cardiomyopathy, heart failure
+591	“Bovine heart”: enlarged in all directions
+592	Shortness of breath even at rest, nocturnal attacks of suffocation, dyspnea worse when lying down (orthopnea), weakness, leg swelling.
+593	Semi-sitting position (orthopnea), acrocyanosis, distended neck veins, leg swelling.
+594	104/min, regular, small; large and small waves alternate (pulsus alternans).
+595	95/65 mm Hg
+596	6th space, near the anterior axillary line
+597	Wide, diffuse (4 cm²)
+598	Weak
+599	Sharply displaced to the left and down, wide, diffuse, low and weak: a dilated ventricle with reduced myocardial contractility.
+600	Weak diffuse impulse.
+601	Weak pulsation.
+602	Pulse is small, waves alternate.
+603	All borders enlarged: left border in the 6th space near the anterior axillary line, right border to the right, upper border up to the 2nd space. “Bovine heart”.
+604	Sounds are muffled, S1 decreased; protodiastolic gallop rhythm (S3); systolic murmur of relative mitral regurgitation.
+605	S2 is relatively loud (pulmonary congestion).
+606	S3, murmur of relative tricuspid regurgitation.
+607	The gallop rhythm is transmitted.
+608	The systolic murmur radiates quietly.
+609	All borders enlarged + weak diffuse apex beat displaced to the left and down + S3 (gallop rhythm) + muffled sounds + alternating pulse and signs of heart failure.
+610	Iron deficiency anemia: functional murmur
+611	Weakness, dizziness, shortness of breath and palpitations on exertion, hair loss, craving to eat chalk. Menstrual periods are heavy and prolonged.
+612	Skin and mucous membranes are pale, nails are brittle and spoon-shaped (koilonychia), cracks at the corners of the mouth.
+613	104/min, regular, soft.
+614	Slightly high
+615	In the usual place; because of tachycardia the impulses are frequent.
+616	No thrill (a functional murmur has no “cat's purr”).
+617	Sounds are loud (tachycardia); a short, soft, blowing systolic murmur, sounds unchanged.
+618	Soft short systolic murmur (best heard here).
+619	Quiet systolic murmur.
+620	The murmur does not radiate.
+621	A continuous “venous hum” may be heard over the neck veins.
+622	Quiet, short, soft systolic murmur; sounds and borders unchanged, no thrill + pallor, tachycardia: functional (anemic) murmur. Check hemoglobin and ferritin in the blood.
+623	Thyrotoxicosis: hyperkinetic heart
+624	Palpitations, sweating, heat intolerance, hand tremor, weight loss despite a good appetite, nervousness.
+625	Skin is warm and moist, eyes are bright (exophthalmos), finger tremor, thyroid gland enlarged.
+626	118/min, regular, rapid and high (celer et altus).
+627	150/60 mm Hg (wide pulse pressure)
+628	Slightly displaced to the left, high, increased, diffuse: hyperkinetic circulation.
+629	Pulse is rapid, high.
+630	Left border shifted 1 cm to the left, other borders normal.
+631	Both sounds, especially S1, are accentuated; functional systolic murmur; tachycardia.
+632	Sounds are accentuated.
+633	Sounds are accentuated, quiet systolic murmur.
+634	A systolic murmur may be heard over the thyroid gland.
+635	Persistent tachycardia (even in sleep), accentuated sounds, functional systolic murmur, wide pulse pressure + signs of thyrotoxicosis (exophthalmos, tremor, weight loss).
+636	Complete atrioventricular block
+637	Normal (left ventricle slightly enlarged)
+638	Dizziness, darkening before the eyes, two brief episodes of syncope with convulsions (Morgagni–Adams–Stokes attacks), weakness.
+639	Intermittent large “cannon” waves are visible in the neck veins.
+640	38/min, regular, large, slow.
+641	170/70 mm Hg
+642	2 cm²
+643	Infrequent, strong impulse: the stroke volume is large with every contraction.
+644	Pulse is infrequent, large; intermittent large waves in the neck veins.
+645	Left border slightly displaced to the left.
+646	Bradycardia (38/min); intensity of S1 varies, occasionally a very loud Strazhesko “cannon sound”.
+647	Bradycardia, S2 as usual.
+648	Bradycardia.
+649	Intensity of S1 varies.
+650	Infrequent regular pulse (30–40), variable intensity of S1 and Strazhesko's “cannon sound”, syncope attacks. Confirmation: ECG.
+651	Chronic cor pulmonale (pulmonary emphysema)
+652	Normal, right border displaced
+653	Smoker for 30 years. Cough, sputum, shortness of breath on exertion, leg swelling in recent months.
+654	Diffuse warm cyanosis, barrel-shaped chest, distended neck veins; pulsation in the epigastric region.
+655	Not detected (covered by emphysematous lung)
+656	Apex beat is not detected or is very weak: the hyperinflated lung covers the heart.
+657	Right ventricular impulse is felt.
+658	Epigastric pulsation taps against the fingertip and increases on inspiration: right ventricular hypertrophy.
+659	The tap of S2 is felt (pulmonary hypertension).
+660	Hyperresonant (box-like) note over the lungs. Absolute cardiac dullness is sharply reduced (emphysema). Right border of relative dullness shifted to the right (right chambers).
+661	Sounds are muffled (emphysema).
+662	S2 accentuation: pulmonary hypertension.
+663	Quiet systolic murmur, intensifies on inspiration (relative tricuspid regurgitation).
+664	History of lung disease + diffuse cyanosis + epigastric pulsation (right ventricle) + accentuated S2 over the pulmonary artery + reduced absolute dullness and muffled sounds.
+665	Normal sounds: apex
+666	S1 > S2 · 72/min
+667	S1 is longer and lower and follows the long pause; at the apex it is louder than S2.
+668	Healthy person
+669	Normal sounds: base of the heart
+670	=
+671	At the base of the heart S2 is louder than S1, shorter and higher-pitched.
+672	“Snapping” S1
+673	=
+674	The ventricle is underfilled; the valve leaflets close quickly and tightly from a wide-open position.
+675	Mitral stenosis, tachycardia, extrasystole
+676	Decreased S1
+677	=
+678	No closed-valve period, or myocardial contractility is reduced: at the apex S1 is quieter than S2.
+679	Mitral regurgitation, myocarditis, cardiosclerosis
+680	Accentuated S2 over the aorta
+681	=
+682	Pressure in the aorta is raised or the wall is thickened: S2 is strong, sometimes metallic.
+683	Arterial hypertension, aortic atherosclerosis
+684	Accentuated S2 over the pulmonary artery
+685	=
+686	Pressure in the pulmonary circulation is raised.
+687	Mitral valve disease, chronic cor pulmonale
+688	Physiological splitting of S2
+689	=
+690	Only on inspiration: more blood returns to the right ventricle and the pulmonary valve closes later. The respiratory phase is shown in the player.
+691	Young people, healthy person
+692	Fixed (pathological) splitting of S2
+693	=
+694	Does not depend on the respiratory phase, heard in every cycle.
+695	Pulmonary hypertension, atrial septal defect, right bundle branch block
+696	Protodiastolic gallop rhythm (S3)
+697	=
+698	Cardiac apex (bell of the stethoscope)
+699	A ventricle with reduced tone vibrates during rapid filling; with tachycardia a “galloping horse” is heard.
+700	Myocarditis, myocardial infarction, heart failure
+701	Presystolic gallop rhythm (S4)
+702	=
+703	A hypertrophied, poorly compliant ventricle is filled by atrial systole; a low-pitched sound before S1.
+704	Arterial hypertension, aortic stenosis, ischemia
+705	=
+706	Snapping S1 + S2 + mitral opening snap (0.07–0.13 s after S2): a three-beat “quail rhythm”.
+707	Mitral stenosis only
+708	Both sounds muffled
+709	=
+710	All points
+711	Sound conduction is reduced or myocardial contractility is weakened.
+712	Exudative pericarditis, myocarditis, obesity, emphysema
+713	Strazhesko's “cannon sound”
+714	Complete AV block · 38/min
+715	Bradycardia, intensity of S1 varies; S1 is very loud when atrial and ventricular systole coincide.
+716	Complete AV block
+717	=
+718	Sounds are irregular, intensity of S1 varies; pulse rate is lower than heart rate (pulse deficit).
+719	Mitral stenosis, coronary heart disease, thyrotoxicosis
+720	Holosystolic murmur
+721	Apex; radiates to the left axilla
+722	Systolic, merges with S1, blowing, occupies the whole of systole; intensifies in the left lateral position.
+723	Rheumatic fever, prolapse, endocarditis, dilatation
+724	Diastolic rumble
+725	Apex; does not radiate
+726	Mesodiastolic, low-pitched, rumbling, intensifies in presystole; preceded by an opening snap.
+727	Rheumatic mitral stenosis
+728	Diamond-shaped systolic murmur
+729	2nd space on the right; to the carotid arteries
+730	Systolic, harsh, saw-like, crescendo–decrescendo; S2 is decreased over the aorta.
+731	Degenerative calcification, bicuspid valve, rheumatic fever
+732	Protodiastolic murmur
+733	Botkin–Erb point; to the apex
+734	Diastolic, begins immediately after S2, soft, blowing, decrescendo.
+735	Rheumatic fever, infective endocarditis, aortic dilatation
+736	Tricuspid regurgitation
+737	Rivero-Carvallo sign
+738	Base of the xiphoid process
+739	The systolic murmur intensifies on inspiration: more blood enters the right heart. The respiratory phase is shown in the player.
+740	Right ventricular dilatation, endocarditis
+741	Functional (innocent) systolic murmur
+742	=
+743	Apex or over the pulmonary artery
+744	Short, soft, quiet (grade 1–2), sounds unchanged; varies with position and load.
+745	Anemia, fever, thyrotoxicosis, adolescents
+746	Pericardial friction rub
+747	=
+748	Left sternal border (absolute dullness)
+749	Scratching, in systole and diastole, does not radiate; intensifies with pressure, persists when the breath is held.
+750	Dry pericarditis, uremia
+751	Normal pulse
+752	Regular, 72/min, moderately full and tense. The wave rises quickly, and there is a dicrotic notch after the peak.
+753	Rapid and high pulse (celer et altus)
+754	The wave rises sharply and falls quickly: a “water-hammer” beat under the finger. Typical of aortic regurgitation (Corrigan's pulse).
+755	Slow and small pulse (tardus et parvus)
+756	The wave rises slowly, its peak is late and low. Typical of aortic stenosis.
+757	Paradoxical pulse
+758	On inspiration the pulse wave sharply decreases (systolic pressure falls by more than 10 mm Hg). Cardiac tamponade, exudative and constrictive pericarditis, severe asthma attack.
+759	Alternating pulse (alternans)
+760	Large and small waves alternate rhythmically. A sign of severe damage to the left ventricular myocardium.
+761	Irregular pulse, pulse deficit
+762	Atrial fibrillation: the waves are irregular and of different sizes. Contractions after a short diastole do not eject enough blood into the artery, so the pulse rate is lower than the heart rate.
+763	Thready pulse (filiformis)
+764	Very rapid, small and poorly filled, barely felt. Shock, collapse, massive blood loss.
+765	Healthy woman, 34 years old
+766	Man, 58 years old: headache
+767	Woman, 67 years old: long-standing hypertension
+768	Man, 31 years old: aortic regurgitation
+769	Hemodynamics
+770	Left atrial pressure ↑ → pulmonary hypertension → right ventricular hypertrophy
+771	Volume load on the left atrium and left ventricle, dilatation
+772	Pressure load on the left ventricle, concentric hypertrophy
+773	Volume load on the left ventricle, eccentric hypertrophy and marked dilatation
+774	Complaints
+775	Early shortness of breath, cough, hemoptysis, palpitations
+776	Absent for a long time; shortness of breath, palpitations
+777	Angina, syncope, shortness of breath
+778	Palpitations, pulsation in the neck, dizziness
+779	Facies mitralis, cardiac impulse, epigastric pulsation
+780	Apex beat is increased
+781	Skin is pale
+782	“Dance of the carotids”, de Musset's and Quincke's signs
+783	Diastolic “cat's purr” at the apex, weak impulse
+784	Apex beat to the left, wide, strong
+785	Systolic thrill in the 2nd space on the right; the impulse is resistant
+786	Impulse to the left and down, “dome-shaped”
+787	Borders upward and to the right; mitral configuration
+788	To the left and upward; mitral configuration
+789	To the left (moderate); aortic configuration
+790	Sharply to the left and down; aortic configuration
+791	Snapping S1, opening snap, diastolic murmur intensifying in presystole; accentuated S2 over the pulmonary artery
+792	Decreased S1, systolic murmur at the apex radiating to the axilla; accentuated S2 over the pulmonary artery
+793	Harsh diamond-shaped systolic murmur in the 2nd space on the right, to the carotid arteries; S2 decreased over the aorta
+794	Protodiastolic murmur at the Botkin–Erb point; S2 decreased over the aorta
+795	Pulse and BP
+796	Pulse is small, pulsus differens, often atrial fibrillation
+797	Pulsus tardus et parvus; narrow pulse pressure
+798	Pulsus celer, altus, magnus; systolic ↑, diastolic ↓↓
+799	Apex
+800	Axilla
+801	2nd space on the right
+802	Botkin–Erb
+803	Woman, 32 years old
+804	Complaints and history
+805	Shortness of breath on exertion over the past year, nocturnal cough, blood streaks in the sputum twice, palpitations. As a child she often had tonsillitis, and at age 14 her joints ached.
+806	Bluish-red patches on the cheeks, cyanosis of the lips. Pulsation at the left sternal border and in the epigastric region.
+807	Apex beat in the 5th space, localized, weak. Thrill at the apex: felt after the carotid pulse, before the next beat.
+808	Upper border at the 2nd rib, right border 3 cm outside the right sternal border, left border unchanged. The cardiac waist is smoothed out.
+809	88/min, regular, small, smaller in the left arm. BP 110/75 mm Hg.
+810	Facies mitralis, hemoptysis, diastolic thrill at the apex, a shift of the borders upward and to the right, and a diastolic murmur intensifying in presystole with a “quail rhythm”: mitral stenosis. Accentuated S2 over the pulmonary artery indicates pulmonary hypertension. Confirmation: echocardiography (orifice area under 1.5 cm²: significant stenosis).
+811	Man, 46 years old
+812	Shortness of breath on exertion, palpitations, weakness. Had rheumatic fever in youth.
+813	Apex beat in the 5th space 1 cm outside the midclavicular line, wide, strong.
+814	Left border shifted to the left, upper border to the 2nd space; the cardiac waist is smoothed out.
+815	80/min, regular. BP 125/80 mm Hg.
+816	Functional systolic murmur
+817	Decreased S1 at the apex, a blowing systolic murmur merging with S1 and radiating to the left axillary region, S3, accentuated S2 over the pulmonary artery, and a shift of the borders to the left and upward: mitral valve regurgitation. A functional murmur does not change the sounds and the heart borders are not enlarged.
+818	Man, 71 years old
+819	Squeezing retrosternal pain on exertion, fainted twice while climbing stairs, shortness of breath in recent months.
+820	Skin is pale.
+821	Apex beat slightly displaced to the left, strong, resistant. Thrill in the 2nd space to the right of the sternum, simultaneous with the carotid pulse.
+822	Left border 1 cm to the left, cardiac waist deepened.
+823	64/min, regular, rises slowly and is small. BP 105/85 mm Hg.
+824	Arterial hypertension
+825	Angina, without valve disease
+826	The triad of angina, syncope and shortness of breath, a harsh diamond-shaped systolic murmur in the 2nd space on the right radiating to the carotid arteries with a systolic thrill, decreased S2 over the aorta, pulsus tardus et parvus and narrow pulse pressure: aortic stenosis. Symptomatic severe aortic stenosis is an indication for valve replacement.
+827	Man, 29 years old
+828	Palpitations, a sensation of pulsation in the neck, dizziness. Treated for infective endocarditis 2 years ago.
+829	Strong pulsation of the carotid arteries, head bobbing in time with the heartbeat, capillary pulsation under the nails.
+830	Apex beat in the 6th space 2 cm outside the midclavicular line, wide, high, strong, resistant.
+831	Left border sharply displaced to the left and down, cardiac waist deepened, vascular bundle widened.
+832	84/min, rapid and high. BP 165/40 mm Hg.
+833	Thyrotoxicosis
+834	Peripheral signs (dance of the carotids, de Musset, Quincke), a dome-shaped apex beat displaced to the left and down, aortic configuration, a protodiastolic murmur at the Botkin–Erb point beginning immediately after S2, pulsus celer et altus and a wide pulse pressure (165/40): aortic valve regurgitation. The previous endocarditis destroyed the valve leaflets.
+835	Girl, 16 years old
+836	Had tonsillitis 2.5 weeks ago. Now fever 38.2 °C, migrating pain in the knee and ankle joints, palpitations, weakness.
+837	Right knee and left ankle joints are swollen and red, movement is painful. Skin is pale.
+838	Apex beat slightly displaced to the left, weakened, diffuse.
+839	Left border shifted 1 cm to the left.
+840	112/min, regular, soft. BP 105/65 mm Hg. Blood: ESR 48 mm/h, antistreptolysin-O titer raised.
+841	Infective endocarditis
+842	Dry pericarditis
+843	Functional murmur in anemia
+844	Migrating polyarthritis and signs of carditis 2–3 weeks after streptococcal tonsillitis (tachycardia out of proportion to the fever, muffled sounds, decreased S1, S3, soft systolic murmur at the apex) plus laboratory confirmation of streptococcal infection: acute rheumatic fever, primary rheumatic carditis (Jones criteria: carditis and polyarthritis).
+845	Man, 38 years old
+846	Fever up to 38.5–39 °C in the evenings for 3 weeks, chills, heavy sweating, weight loss, weakness. A tooth was extracted 2 weeks before the fever began.
+847	Skin is pale, “café au lait” in color. Petechial hemorrhages on the conjunctiva (Lukin–Libman sign). Painful red nodules on the fingertips (Osler), painless spots on the palms (Janeway).
+848	Apex beat slightly displaced to the left. Spleen is palpable.
+849	104/min, rapid. BP 140/55 mm Hg.
+850	Acute rheumatic fever
+851	Infective endocarditis, aortic valve affected
+852	Sepsis, heart not involved
+853	Prolonged fever and chills, probable bacteremia after the tooth extraction, peripheral signs (Osler nodes, Janeway lesions, Lukin–Libman sign), splenomegaly and a newly appeared regurgitant (aortic) diastolic murmur: infective endocarditis. Confirmation: blood cultures (at least 3 sets) and vegetations on echocardiography (Duke criteria).
+854	Man, 24 years old
+855	Had a cold a week ago. Acute stabbing pain in the cardiac region: worsens on breathing in and when lying on the back, decreases on leaning forward. Temperature 37.6 °C.
+856	The patient sits leaning forward, breathing is shallow.
+857	Rough thrill at the left sternal border.
+858	96/min, regular. BP 115/75 mm Hg.
+859	Myocardial infarction
+860	Dry pleurisy with a pleuropericardial rub
+861	Acute positional pain and a scratching murmur in systole and diastole heard at the left sternal border in the area of absolute dullness, not radiating anywhere: a pericardial friction rub, dry pericarditis. Unlike a pleuropericardial rub, it does not disappear when the breath is held. When exudate accumulates, the rub disappears and the sounds become muffled.
+862	Above the 1st rib
+863	Level of rib ⟦0⟧
+864	Intercostal space ⟦0⟧
+865	to the right of the sternum
+866	at the midclavicular line
+867	⟦0⟧ cm medial to the midclavicular line
+868	⟦0⟧ cm outside the midclavicular line
+869	Not felt
+870	Strong, heaving
+871	Systolic: simultaneous with the carotid pulse
+872	Diastolic: after the pulse, before the next beat
+873	In systole and diastole, rough (friction)
+874	=
+875	<option value="">— select —</option>
+876	=
+877	Unknown patient
+878	=
+879	Click anywhere
+880	<span><i style="background:var(--insp)"></i>Clear</span><span><i style="background:var(--exp)"></i>Impaired</span><span><i style="background:var(--bad)"></i>Dull</span>⟦0⟧
+881	<span class="muted">Yellow area: relative dullness, red: absolute dullness</span>
+882	Click anywhere on the chest and compare the sound.
+883	Practice mode: find the borders by sound yourself.
+884	The sensation under the palm is shown below: the tap and thrill are compared with the carotid pulse.
+885	=
+886	<dt>Thrill</dt><dd>⟦0⟧</dd>
+887	<dt>Tap</dt><dd>⟦0⟧</dd><dt>Thrill</dt><dd>⟦1⟧</dd>
+888	<span class="muted">Practice mode: describe the finding yourself.</span>
+889	<b>Comment:</b> ⟦0⟧
+890	Systole and diastole are shown in color on the player below.
+891	Practice mode: describe what you hear yourself.
+892	=
+893	Carotid art.
+894	Palm
+895	=
+896	=
+897	First select a diagnosis.
+898	Correct!
+899	Incorrect. In this patient: ⟦0⟧.
+900	Key signs:
+901	Your choice: ⟦0⟧, ⟦1⟧.
+902	Incorrect.
+903	In this patient the apex beat is: ⟦0⟧
+904	Answer: ⟦0⟧
+905	1st intercostal space
+906	2nd rib
+907	2nd intercostal space
+908	3rd rib
+909	3rd intercostal space
+910	Right midclavicular line
+911	⟦0⟧ cm from the right sternal border
+912	Anterior axillary line
+913	Midclavicular line
+914	⟦0⟧ cm outside the midclavicular line
+915	⟦0⟧ cm medial to the midclavicular line
+916	Right border. First find the lower border of the lung along the right midclavicular line (6th rib), then rise one space to the 4th space and move the pleximeter medially, parallel to the sternum.
+917	Upper border. Along the left parasternal line downward from the 1st space, with the pleximeter placed parallel to the ribs.
+918	Left border. In intercostal space ⟦0⟧ (at the level of the apex beat), from the anterior axillary line toward the sternum, with the pleximeter placed vertically.
+919	=
+920	<h3 style="margin-bottom:6px">⟦0⟧</h3><p class="sc-info">Transverse dimension: ⟦1⟧ + ⟦2⟧ = <b>⟦3⟧ cm</b> (normal 11–13 cm). Configuration: <b>⟦4⟧</b>.</p><p class="sc-info" style="margin-top:6px">⟦5⟧</p>
+921	First click a point and listen to the sound.
+922	First mark the border.
+923	Correct! ⟦0⟧ border: ⟦1⟧. The border is marked at the edge of the pleximeter on the side of the clear sound.
+924	Incorrect. The first point where the sound becomes muffled: ⟦0⟧. Move from the clear sound toward the dull one and mark where the change begins.
+925	<article class="card"><h3>⟦0⟧</h3><span class="alt">⟦1⟧</span><canvas class="phc" data-ph="⟦2⟧" aria-hidden="true"></canvas><dl><dt>Where it is heard</dt><dd>⟦3⟧</dd><dt>Description</dt><dd>⟦4⟧</dd><dt>When it occurs</dt><dd>⟦5⟧</dd></dl><button class="play" type="button" data-play="lib:⟦6⟧"><span class="ic"></span>Listen</button></article>
+926	<span>Heart rate: <b>⟦0⟧</b>/min</span><span>Pulse: <b>⟦1⟧</b>/min</span>⟦2⟧
+927	<span>Pulse deficit: <b>⟦0⟧</b></span>
+928	=
+929	<text class="unit" x="110" y="146">mm Hg</text><text class="dig" id="bpDigT" x="110" y="170">0</text><line class="ndl" id="bpN" x1="110" y1="110" x2="110" y2="30"/><circle class="hub" cx="110" cy="110" r="6"/>
+930	(phase ⟦0⟧)
+931	=
+932	=
+933	isolated systolic hypertension (grade 1)
+934	high normal
+935	normal
+936	First measure, then mark the systolic and diastolic pressure.
+937	Not enough air was pumped into the cuff (peak pressure ⟦0⟧). After the radial pulse disappears, add another 20–30 mm Hg.
+938	Systolic: ⟦0⟧, correct (true value ⟦1⟧).
+939	Systolic: ⟦0⟧. This is the lower limit of the auscultatory gap. Sounds were heard from ⟦1⟧ to ⟦2⟧ and then disappeared down to ⟦3⟧. The true systolic pressure is ⟦4⟧.
+940	Systolic: ⟦0⟧, incorrect. The true value is ⟦1⟧: the number at which the first clear sound appeared.
+941	Diastolic: ⟦0⟧, correct. “Infinite tone”: sounds are heard down to zero, so diastolic pressure is recorded in phase IV, at the number where the sounds become sharply muffled.
+942	Diastolic: ⟦0⟧, incorrect. This patient has the “infinite tone” phenomenon: sounds are heard down to zero. Diastolic pressure is recorded at the number where the sounds become sharply muffled (phase IV), that is, at ⟦1⟧.
+943	Diastolic: ⟦0⟧, correct (true value ⟦1⟧).
+944	Diastolic: ⟦0⟧, incorrect. The true value is ⟦1⟧: the number at which the sounds disappear completely (phase V).
+945	Deflating the cuff at 6 mm/s increases the error. Recommended: 2–3 mm Hg/s.
+946	Conclusion: ⟦0⟧/⟦1⟧ mm Hg. Pulse pressure ⟦2⟧: the wide pulse pressure typical of aortic regurgitation.
+947	Conclusion: ⟦0⟧/⟦1⟧ mm Hg, ⟦2⟧.
+948	=
+949	=
+950	=
+951	=
+952	=
+953	=
+954	=
+955	<div class="q"><div class="stat"><span>Answers: <b>⟦0⟧</b></span><span>Correct: <b>⟦1⟧</b></span></div>\n    <p class="t">⟦2⟧</p>\n    <div class="btnrow"><button class="play big" type="button" data-play="lib:⟦3⟧" data-title="Ear training" data-sub="⟦4⟧"><span class="ic"></span>Listen</button></div>\n    <div class="opts">⟦5⟧</div>\n    <div id="earEx"></div></div>
+956	Which sound or rhythm is heard?
+957	Which murmur is heard?
+958	Auscultation site:
+959	=
+960	<span>Answers: <b>⟦0⟧</b></span><span>Correct: <b>⟦1⟧</b></span>
+961	<p class="expl"><b>⟦0⟧</b> ⟦1⟧: ⟦2⟧ (⟦3⟧)</p><div class="btnrow" style="margin-top:8px"><button class="btn pri" type="button" id="earNext">Next sound</button></div>
+962	Correct.
+963	<article class="q case" data-c="⟦0⟧">\n  <div class="case-h"><span class="qn">Case ⟦1⟧</span><b>⟦2⟧</b></div>\n  <div class="steps">⟦3⟧</div>\n  <p class="t">Most likely diagnosis?</p>\n  <div class="opts">⟦4⟧</div>\n  <div class="expl" hidden></div></article>
+964	=
+965	<p class="muted" style="font-size:.88rem">Listen to the points and describe the findings.</p><div class="btnrow">⟦0⟧</div>
+966	<button class="play" type="button" data-play="sc:⟦0⟧:⟦1⟧" data-title="Case ⟦2⟧" data-sub="⟦3⟧"><span class="ic"></span>⟦4⟧</button>
+967	=
+968	<p><b>⟦0⟧</b> ⟦1⟧</p><p class="muted" style="margin-top:6px"><b>Auscultation:</b> ⟦2⟧</p>
+969	=
+970	=
+971	=
+972	=
+973	=
+974	=
+975	=
+976	=

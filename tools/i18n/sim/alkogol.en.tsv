@@ -1,0 +1,923 @@
+0	Alcohol and the Body
+1	Sections
+2	Body map
+3	Calculator
+4	Formulas
+5	Metabolism
+6	By the textbook
+7	Methanol and others
+8	Withdrawal
+9	Treatment
+10	Clinical cases
+11	=
+12	=
+13	Pharmacology · Independent study
+14	Ethanol and alcoholism: a map across the body
+15	Interactive guide: choose an organ on the map to see how alcohol affects it, calculate blood alcohol for your own example, work through the formulas step by step, solve clinical cases and test yourself in the quiz.
+16	Compiled by: Asadbek Axmatkulov · Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd year · Department of Pharmacology · 2026
+17	1 · Body map
+18	How alcohol affects each organ
+19	Timeline
+20	Duration of drinking:
+21	Outline color:
+22	no damage
+23	mild, reversible
+24	moderate
+25	severe, irreversible
+26	Anatomical diagram of the human body
+27	=
+28	=
+29	=
+30	=
+31	=
+32	=
+33	=
+34	=
+35	=
+36	=
+37	=
+38	=
+39	=
+40	=
+41	=
+42	Anatomical diagram: EMBL-EBI Expression Atlas anatomogram (CC BY 4.0); color and interactivity added.
+43	2 · Simulator
+44	Blood alcohol calculator
+45	Enter weight, sex and the drinks consumed — the blood alcohol curve is drawn using the Widmark formula and zero-order elimination. The calculation is for educational purposes; the actual concentration varies by ±20–30% from person to person.
+46	Sex
+47	Male (r = 0.68)
+48	Female (r = 0.55)
+49	Body weight, kg
+50	Duration of drinking, hours
+51	Stomach state
+52	On an empty stomach
+53	With food
+54	Drinks
+55	β (elimination rate) = 0.15 ‰/h — an average value. In chronic drinkers it reaches 0.20–0.25 (MEOS induction).
+56	Blood alcohol concentration graph
+57	Select a time:
+58	Calculation steps (with your numbers)
+59	3 · Formulas
+60	Let's understand the formulas
+61	Under each formula it is explained what the letters mean, with a simple example. In the example: a 70 kg man drank 200 ml of vodka (40%).
+62	Step 1
+63	Mass of pure ethanol in a drink
+64	A = V ×
+65	=
+66	pure ethanol, grams
+67	=
+68	drink volume, ml
+69	alcohol fraction (by volume)
+70	ethanol density, g/ml (1 ml of alcohol is not 1 g!)
+71	=
+72	of ethanol. This is ≈ 6 standard drinks (WHO: 1 standard drink = 10 g).
+73	Step 2
+74	Widmark formula — maximum concentration
+75	=
+76	=
+77	=
+78	blood concentration, ‰ (g/L)
+79	=
+80	body weight, kg
+81	=
+82	Widmark coefficient — the fraction of body water: man 0.68, woman 0.55
+83	. For a woman with the same weight and dose: 63 / (70 × 0.55) =
+84	— the concentration is higher because there is less water.
+85	Step 3
+86	Concentration over time
+87	=
+88	=
+89	elimination rate ≈ 0.15 ‰/h (0.10–0.20)
+90	=
+91	time elapsed after absorption has finished, hours
+92	After 4 hours: 1.32 − 0.15 × 4 =
+93	. The graph falls as a straight line — this is
+94	zero-order kinetics
+95	: a constant amount (≈ 7–10 g) is broken down per hour, not a fraction.
+96	Step 4
+97	Time for the body to clear alcohol
+98	time for the concentration to fall to zero, hours
+99	8.8 hours
+100	. A person who drank at 11 PM last night is still not fully sober at 8 AM.
+101	Units
+102	Converting between ‰, g/L, mg% and mmol/L
+103	1 ‰ = 1 g/L = 100 mg% = 21.7 mmol/L
+104	=
+105	mg per 100 ml of blood (mg/dL) — this unit is used in the department textbook
+106	1000 mg/L ÷ 46 (molar mass of ethanol)
+107	In the textbook, "intoxicated — 100–200 mg%" =
+108	; "acute poisoning — 300–400 mg%" =
+109	; "death — 500–800 mg%" =
+110	Toxicology
+111	Osmolar gap — detecting methanol and ethylene glycol
+112	=
+113	calc
+114	= 2Na + glucose + urea + ethanol
+115	Gap = Osm
+116	measured
+117	=
+118	units
+119	all in mmol/L; ethanol (mmol/L) = ‰ × 21.7
+120	normal
+121	gap &lt; 10 mOsm/kg
+122	Na 140, glucose 5, urea 6, ethanol 0: calculated = 291. Measured 325 → gap
+123	— there is an "unknown" osmotically active substance in the blood: methanol or ethylene glycol is suspected. To calculate, use
+124	the calculator in section 5
+125	Energy
+126	"Empty" calories
+127	E = A × 7.1 kcal
+128	energy released by the oxidation of 1 g of ethanol, kcal (department textbook)
+129	63 g × 7.1 =
+130	447 kcal
+131	— almost a full meal, but with no vitamins, protein or minerals. This is the reason for thiamine, folic acid and protein deficiency in alcoholics.
+132	Clinical scale
+133	Maddrey discriminant function
+134	DF = 4.6 × (PT
+135	patient
+136	− PT
+137	control
+138	) + bilirubin
+139	PT
+140	prothrombin time, seconds
+141	=
+142	mg/dL (µmol/L ÷ 17.1)
+143	PT 20 s (control 12 s), bilirubin 8 mg/dL: 4.6 × 8 + 8 =
+144	. DF ≥ 32 — severe alcoholic hepatitis, an indication for prednisolone 40 mg/day for 28 days.
+145	4 · Pharmacokinetics and pharmacodynamics
+146	Ethanol in the body: from absorption to elimination
+147	Ethanol
+148	=
+149	~20% is absorbed in the stomach, the rest in the small intestine; 90–98% is oxidized in the liver, 2–10% is excreted unchanged through the lungs, urine and sweat
+150	ADH
+151	=
+152	inhibited by fomepizole
+153	Acetaldehyde
+154	=
+155	Toxic: facial flushing, nausea, tachycardia; forms adducts with proteins; IARC group 1 carcinogen
+156	ALDH2
+157	inhibited by disulfiram and metronidazole
+158	Acetic acid
+159	CH₃COOH → acetyl-CoA
+160	CO₂ + H₂O (7.1 kcal/g) or fatty acid synthesis
+161	Diagram of ethanol metabolism
+162	Lüllmann, Color Atlas of Pharmacology (2005): ethanol → acetaldehyde → acetic acid; NADH/NAD⁺ ↑ → fatty acid oxidation ↓, synthesis ↑ → fatty liver → cell necrosis → cirrhosis.
+163	Absorption
+164	Fast on an empty stomach (peak within 30–60 minutes); food — especially fats and carbohydrates — slows absorption and lowers the peak. Carbonated drinks speed up gastric emptying.
+165	Distribution
+166	Soluble in water and distributed evenly through all body water (hence the Widmark r is the water fraction). Crosses the blood-brain barrier and the placenta freely and passes into breast milk.
+167	Zero-order kinetics
+168	ADH becomes saturated at low concentrations: ≈ 7–10 g of ethanol or ≈ 0.15 ‰ is broken down per hour. "Sobering" remedies do not speed it up.
+169	=
+170	Induced by chronic drinking: tolerance develops and more NAPQI is formed from paracetamol. Acute drinking, on the contrary, can inhibit the metabolism of other drugs.
+171	Increase in NADH/NAD⁺
+172	Gluconeogenesis is inhibited (hypoglycemia), lactate accumulates, fatty acid oxidation decreases — fatty liver (hepatic steatosis), hyperuricemia.
+173	Mechanism of action (CNS)
+174	GABA
+175	activity is enhanced, NMDA-glutamate receptors are blocked and mesolimbic dopamine release increases. As the dose rises, the effect "descends" from the cortex to the medulla oblongata.
+176	Blood, ‰
+177	Level
+178	Clinical signs
+179	Subclinical
+180	Elevated mood, slowed reaction time
+181	Mild intoxication
+182	Euphoria, reduced self-control, impaired coordination
+183	Moderate intoxication
+184	Ataxia, dysarthria, nystagmus, nausea, vomiting
+185	Severe intoxication
+186	Stupor, amnesia, hypothermia, hypoglycemia
+187	Alcoholic coma
+188	Loss of reflexes, respiratory depression, aspiration of vomit — risk of death (5–8 ‰ — lethal)
+189	The limits are approximate; in chronic drinkers they are higher because of tolerance.
+190	Department textbook and Kharkevich: ethyl alcohol
+191	Below are the main points from the Department of Pharmacology's teaching material and D.A. Kharkevich's textbook. Green blocks show differences from modern recommendations.
+192	General description
+193	A colorless, highly flammable, light liquid with a characteristic smell.
+194	In medicine it is used mainly as an antiseptic and a solvent; because it is widely consumed in beverages, its resorptive action must be known.
+195	It has a general depressant (narcotic-type) effect on the CNS.
+196	Local action — depends on concentration
+197	40% — dilates skin vessels and causes hyperemia (irritant, warming compress).
+198	70% — the most effective for skin antisepsis: it penetrates the deep layers of the epidermis.
+199	95–96% — rapidly coagulates proteins, giving an astringent effect; disinfection of cutting instruments.
+200	Modern note.
+201	For hand antisepsis the WHO recommends 60–80% alcohol-based products; 96% alcohol penetrates poorly and is less effective.
+202	Stages of CNS action
+203	A small dose weakens inhibition in the cortex — "false excitation": critical thinking decreases, emotion increases.
+204	First analgesia, then a long period of excitation, then the "surgical" stage — consciousness is lost.
+205	The narcotic margin is very narrow: the surgical stage quickly passes into the agonal stage (paralysis of the respiratory and circulatory centers). For this reason ethanol is not used for anesthesia.
+206	Other resorptive effects
+207	Skin vessels dilate — heat loss increases and body temperature falls (risk of rapid freezing in the cold).
+208	Suppresses the secretion of antidiuretic hormone — diuresis increases.
+209	Stomach: concentrations up to 20% increase secretion; higher concentrations reduce HCl and pepsin production and cause pylorospasm.
+210	1 g of ethanol provides 7.1 kcal, but the energy is not stored; alcohol cannot be a nutrient or plastic material.
+211	Blood levels (according to the textbook)
+212	Intoxication: 100–200 mg% (1–2 ‰).
+213	Acute poisoning: 300–400 mg% (3–4 ‰).
+214	Death: 500–800 mg% (5–8 ‰).
+215	Treatment: gastric lavage, oxygen, in severe cases hemodialysis and symptomatic therapy.
+216	The analeptics mentioned in the textbook are no longer recommended. The main measures are to secure the airway, place the patient on the side, thiamine, then glucose, infusion and warming. Gastric lavage only within 1 hour of drinking and if the airway is protected.
+217	Alcoholism — chronic poisoning
+218	Mental work, memory and thinking decline; Korsakoff psychosis, alcoholic delirium (delirium tremens).
+219	Polyneuritis, chronic gastritis, hepatitis, cirrhosis, fatty degeneration of the heart and kidneys.
+220	Functional cumulation: even when ethanol is not detected in the blood, changes in the CNS keep accumulating.
+221	Treatment of alcoholism (according to the textbook)
+222	Teturam (disulfiram, Antabuse)
+223	— inhibits ALDH; when given with a small amount of alcohol, acetaldehyde accumulates and causes vomiting and an unpleasant state — a conditioned-reflex aversion to alcohol develops.
+224	Esperal
+225	— a long-acting form of disulfiram implanted under the skin.
+226	Apomorphine (a central emetic) — together with alcohol.
+227	Naltrexone — an opioid receptor antagonist.
+228	Disulfiram only with the patient's consent and under supervision; caution above age 50 and in heart, liver and kidney disease. "Emetic therapy" with apomorphine is no longer used. First line: naltrexone and acamprosate + psychotherapy (
+229	section 7
+230	Use in medicine
+231	Antiseptic: hands, injection site, surgical field (70%).
+232	Solvent and preservative: tinctures (in 40% or 70% alcohol), extracts.
+233	Warming compress (40%).
+234	Its vapor to break down foam in pulmonary edema (rarely used now; antifomsilane is preferred).
+235	Antidote in methanol and ethylene glycol poisoning (when fomepizole is not available).
+236	Related topics in the manual
+237	Related topics in the manual:
+238	Topic 2 — tinctures, alcoholic solutions
+239	Topic 3 — zero-order kinetics, CYP inducers, antidotes
+240	Topic 7 — benzodiazepines in withdrawal
+241	Topic 15 — paracetamol and alcohol
+242	Topic 16 — ethyl alcohol as an antiseptic
+243	5 · Toxicology
+244	Methanol, ethylene glycol and other "surrogates"
+245	They are also broken down by ADH, but their metabolites are extremely toxic. Ethanol and fomepizole occupy ADH and stop the formation of the toxic metabolite — hence they are antidotes.
+246	Substance
+247	Source
+248	Toxic metabolite
+249	Clinical picture
+250	Treatment
+251	Methanol
+252	Counterfeit vodka, technical alcohol, windshield washer fluid
+253	Formaldehyde → formic acid
+254	12–24 hour latent period; visual disturbance ("snowstorm"), blindness; severe metabolic acidosis; necrosis of the basal ganglia
+255	Fomepizole or ethanol; hemodialysis; sodium bicarbonate; folic acid
+256	Ethylene glycol
+257	Antifreeze, brake fluid
+258	Glycolate, oxalate
+259	Intoxication-like state; acidosis; acute kidney injury; calcium oxalate crystals in the urine; hypocalcemia
+260	Fomepizole or ethanol; hemodialysis; thiamine and pyridoxine
+261	Isopropanol
+262	Technical and medical alcohol (in some countries)
+263	Acetone
+264	Severe intoxication, gastritis; ketosis
+265	without acidosis
+266	, osmolar gap ↑
+267	Symptomatic; no antidote needed
+268	Osmolar gap calculator
+269	Na⁺, mmol/L
+270	Glucose, mmol/L
+271	Urea, mmol/L
+272	Ethanol, ‰
+273	Measured osmolality, mOsm/kg
+274	6 · Withdrawal syndrome
+275	The hours after drinking stops
+276	With chronic ethanol exposure, GABA
+277	receptor sensitivity decreases and NMDA receptors increase. If ethanol is stopped abruptly, the "brake" is lost and the "accelerator" remains — excitation of the CNS and the sympathetic system.
+278	Benzodiazepines — first choice
+279	Diazepam or chlordiazepoxide titrated to symptoms (using the CIWA-Ar scale). In liver failure — lorazepam or oxazepam (no active metabolites).
+280	Thiamine for everyone
+281	Prophylactic 100–300 mg; if Wernicke is suspected, 500 mg intravenously three times a day — before glucose.
+282	What is not done
+283	Giving neuroleptics alone (they lower the seizure threshold), leaving the patient tied up, giving alcohol "as treatment".
+284	7 · Pharmacotherapy
+285	Drugs for treating alcohol dependence
+286	Drug
+287	Mechanism
+288	Use and note
+289	Prescription example
+290	Naltrexone
+291	Mu-opioid receptor antagonist — reduces the "reward" gained from drinking
+292	Reduces craving and heavy drinking; contraindicated in people taking opioids and in acute hepatitis
+293	Rp.: Naltrexoni 0.05
+294	=
+295	S. 1 tab. once a day
+296	Acamprosate
+297	Normalizes the glutamate (NMDA) system
+298	Maintaining abstinence; excreted by the kidneys — convenient in liver disease
+299	Rp.: Acamprosati 0.333
+300	=
+301	S. 2 tab. 3 times a day
+302	Disulfiram
+303	Irreversibly inhibits ALDH — acetaldehyde accumulates
+304	Severe reaction on drinking; only with the patient's consent and under supervision
+305	Rp.: Disulfirami 0.25
+306	Nalmefene
+307	Opioid receptor modulator
+308	"As needed" — to reduce the amount of drinking
+309	Diazepam
+310	— substitutes for ethanol
+311	Drug of first choice for withdrawal and delirium
+312	Rp.: Sol. Diazepami 0.5% — 2 ml
+313	=
+314	S. 2 ml slowly intravenously
+315	Thiamine (B₁)
+316	Coenzyme of transketolase and pyruvate dehydrogenase
+317	For every patient with alcoholism; in Wernicke's, a high dose intravenously
+318	Rp.: Sol. Thiamini chloridi 5% — 1 ml
+319	S. 2 ml IM or IV
+320	Dangerous interactions with ethanol
+321	Result
+322	Metronidazole, tinidazole, cefoperazone, furazolidone, chlorpropamide
+323	Disulfiram-like reaction (ALDH is inhibited)
+324	Benzodiazepines, opioids, barbiturates, antihistamines, neuroleptics
+325	CNS and respiratory depression is enhanced — risk of death
+326	Paracetamol (in a chronic drinker)
+327	CYP2E1 induction → more NAPQI → hepatotoxicity at a lower dose
+328	Insulin, sulfonylureas
+329	Hypoglycemia (gluconeogenesis is inhibited)
+330	Metformin
+331	Risk of lactic acidosis
+332	NSAIDs, aspirin
+333	Risk of gastrointestinal bleeding
+334	Warfarin
+335	Effect is enhanced in acute drinking and decreased in chronic drinking
+336	8 · Clinical cases
+337	You are the emergency department doctor
+338	Each case has three steps. Choose an answer — whether it is right or wrong, and why, is shown immediately.
+339	9 · Screening
+340	AUDIT — the WHO screening questionnaire
+341	A standard 10-question questionnaire for assessing alcohol consumption in general practice. Mark the answers to practice an interview with a patient — the score and recommendation are calculated automatically. Answers are not saved anywhere.
+342	10 · Test yourself
+343	15 questions
+344	Sources
+345	Department of Pharmacology teaching material: "Ethyl alcohol" (based on the Uzbek edition of D.A. Kharkevich's textbook).
+346	Kharkevich D.A. Pharmacology. — Moscow: GEOTAR-Media, 2010.
+347	Azizova S.S. Pharmacology. — Tashkent, 2006.
+348	Luellmann H. et al. Color Atlas of Pharmacology, 3rd ed. — Thieme, 2005. (Alcohol abuse — figures)
+349	Le T., Bhushan V. First Aid for the USMLE Step 1, 2020. (Gastrointestinal, Cardiovascular, Neurology — figures)
+350	=
+351	=
+352	=
+353	=
+354	Images from textbooks are given for educational purposes only, with the source indicated. Doses are for educational purposes; in practice follow current clinical protocols.
+355	Enlarge image
+356	Close ✕
+357	=
+358	One night (acute)
+359	A single episode of heavy drinking: mainly the CNS, stomach and metabolism are affected; the cause of death is respiratory depression and aspiration of vomit.
+360	1–5 years of regular drinking
+361	Fatty liver in almost everyone; tolerance and dependence develop. Most changes at this stage reverse if drinking stops.
+362	5–10 years
+363	Alcoholic hepatitis, pancreatitis, cardiomyopathy and polyneuropathy are added; in pregnancy — fetal alcohol syndrome.
+364	10+ years
+365	Cirrhosis, chronic pancreatitis, Wernicke–Korsakoff syndrome, increased cancer risk — many changes are irreversible.
+366	No damage
+367	Mild, reversible
+368	Moderate
+369	Severe, irreversible
+370	=
+371	Brain
+372	Brain MRI (sagittal): arrow — cerebellum. In chronic alcoholism the cerebellar vermis atrophies — wide-based, staggering gait. Source:
+373	Enhances GABA<sub>A</sub> action, blocks NMDA receptors
+374	Mesolimbic dopamine release — the basis of euphoria and dependence
+375	Memory formation in the hippocampus stops — a "blackout"
+376	Euphoria, ataxia, dysarthria, nystagmus
+377	In severe cases coma, inhibition of the respiratory center
+378	Secure the airway, place on the side
+379	Measure glucose; <b>thiamine 100–500 mg IV before glucose</b>
+380	Infusion, warming; analeptics are not recommended
+381	Thiamine (B₁) deficiency: transketolase and pyruvate dehydrogenase do not work
+382	Acetaldehyde and excitotoxic damage to neurons
+383	Chronic GABA/NMDA adaptation — excitation when drinking stops (withdrawal)
+384	<b>Wernicke encephalopathy</b>: ophthalmoplegia, ataxia, confusion (triad); the mammillary bodies are damaged
+385	<b>Korsakoff syndrome</b>: anterograde amnesia, confabulation
+386	Degeneration of the cerebellar vermis, brain atrophy, dementia
+387	Withdrawal: tremor (6–24 hours), seizures (12–48 hours), <b>alcoholic delirium</b> (48–96 hours)
+388	In Wernicke's, thiamine 500 mg IV three times a day
+389	In withdrawal and delirium — benzodiazepines (diazepam)
+390	Neuroleptics only as an add-on — they lower the seizure threshold
+391	In a patient who has been drinking, give <b>thiamine</b> before glucose — otherwise Wernicke encephalopathy is triggered.
+392	Heart
+393	Dilated cardiomyopathy (gross specimen, cross-section): the cavities of both ventricles (RV, LV) are sharply dilated and the walls are thinned. Alcohol is one of the main causes of secondary DCM. Source:
+394	Release of catecholamines, electrolyte disturbances (K⁺, Mg²⁺ ↓)
+395	Peripheral vasodilation — heat loss
+396	<b>"Holiday heart" syndrome</b>: atrial fibrillation after heavy drinking
+397	Tachycardia, facial flushing
+398	Restore electrolytes (potassium, magnesium)
+399	Sinus rhythm often returns on its own
+400	Direct toxic effect of ethanol and acetaldehyde on cardiomyocytes
+401	Thiamine deficiency — "wet" beriberi
+402	<b>Alcoholic dilated cardiomyopathy</b> — heart failure
+403	Arterial hypertension (with more than 30 g of ethanol a day)
+404	Arrhythmias, sudden death
+405	Complete abstinence — in the early stage function partly recovers
+406	Standard treatment of heart failure (ACE inhibitor/ARNI, beta-blocker, MRA, SGLT2 inhibitor)
+407	Thiamine
+408	The old idea that a small dose "benefits the heart" has not been confirmed in modern studies — WHO: there is no safe dose.
+409	Lungs
+410	Vomiting and cough reflexes are suppressed
+411	When unconscious, vomit enters the airways
+412	<b>Aspiration pneumonia</b>, Mendelson syndrome
+413	Respiratory depression
+414	Place on the side, suction
+415	Amoxicillin/clavulanate for aspiration pneumonia
+416	Mucociliary clearance and the activity of alveolar macrophages decrease
+417	High risk of pneumonia (<i>Klebsiella</i>, pneumococcus, anaerobes)
+418	Increased risk of tuberculosis
+419	Lung abscess
+420	Pneumococcal and influenza vaccination
+421	Antibiotics covering anaerobes (clindamycin or amoxicillin/clavulanate)
+422	Never leave an intoxicated person lying on their back — aspiration of vomit is the most common cause of death.
+423	Liver
+424	Fatty liver (histology, hematoxylin-eosin): large fat droplets in hepatocytes — reversible if drinking stops. Source:
+425	Alcoholic hepatitis: a Mallory–Denk body (arrow) in a swollen hepatocyte — an eosinophilic aggregate of damaged keratin filaments. Source:
+426	Alcoholic cirrhosis (trichrome stain): fibrous septa (arrows) surrounding a regenerative nodule. Source:
+427	Cirrhosis gross specimen: micronodular liver and a hepatocellular carcinoma nodule (arrow). Source:
+428	CT in cirrhosis: irregular liver surface (red arrows), splenomegaly (white arrows). Source:
+429	Consequences of liver cirrhosis: portal hypertension → esophageal and gastric varices, ascites; ammonia is not detoxified → hepatic encephalopathy. Source: Luellmann, Color Atlas of Pharmacology, 2005.
+430	More than 90% of ethanol is oxidized here
+431	Excess NADH — gluconeogenesis is inhibited
+432	<b>Hypoglycemia</b> (especially on an empty stomach, in children)
+433	Lactic acidosis
+434	Measure glucose, 40% glucose IV (after thiamine)
+435	NADH/NAD⁺ ↑ → fatty acid oxidation ↓, triglyceride synthesis ↑
+436	Free radicals from acetaldehyde and CYP2E1 → inflammation
+437	Activation of stellate cells → fibrosis
+438	<b>Fatty liver</b> — in 90% of drinkers, reversible
+439	<b>Alcoholic hepatitis</b>: jaundice, fever; AST/ALT > 2, GGT ↑, Mallory bodies
+440	<b>Cirrhosis</b>: ascites, esophageal varices, encephalopathy, hepatocellular carcinoma
+441	Complete abstinence — the main treatment
+442	In severe hepatitis (Maddrey ≥ 32) prednisolone 40 mg for 28 days
+443	In ascites spironolactone ± furosemide; in encephalopathy lactulose, rifaximin
+444	For varices propranolol or carvedilol
+445	The sequence: <b>fatty liver → hepatitis → cirrhosis</b>. Only the first is fully reversible. Clue: <b>an AST/ALT ratio greater than 2</b>.
+446	Esophagus and stomach
+447	Esophageal varices (endoscopy, red arrows) — a consequence of portal hypertension in cirrhosis; if they rupture, life-threatening bleeding. Source:
+448	Esophageal varices on CT (red arrows; Ao — aorta). Source:
+449	Direct irritant effect on the mucosa, HCl secretion ↑
+450	The lower esophageal sphincter relaxes
+451	<b>Acute erosive gastritis</b>
+452	<b>Mallory–Weiss syndrome</b>: tear of the cardia from severe vomiting — vomiting blood
+453	Reflux
+454	PPI (omeprazole, pantoprazole)
+455	Endoscopic hemostasis for bleeding
+456	Chronic damage; portal hypertension in cirrhosis
+457	Chronic gastritis, GERD
+458	<b>Bleeding from esophageal varices</b> — high risk of death
+459	Esophageal cancer
+460	For variceal bleeding: terlipressin or octreotide, endoscopic ligation, ceftriaxone prophylaxis
+461	Prophylaxis: propranolol or carvedilol
+462	In a patient with cirrhosis who vomits blood, think of <b>varices</b> first: vasoactive drug + antibiotic + endoscopy.
+463	Pancreas
+464	Acute pancreatitis (CT): edema (red arrows) around the gland (yellow arrows). Source:
+465	Chronic pancreatitis (CT): calcifications (arrows) in the gland tissue — often due to alcohol. Source:
+466	Spasm of the sphincter of Oddi, thickening of secretions
+467	Premature activation of enzymes in acinar cells
+468	<b>Acute pancreatitis</b> (the second cause after gallstones): girdle-like pain, amylase/lipase ↑
+469	Fluids (lactated Ringer's), pain relief
+470	Early enteral feeding; antibiotics only for infected necrosis
+471	Recurrent inflammation — fibrosis, protein plugs, calcifications
+472	<b>Chronic pancreatitis</b>: constant pain, calcifications
+473	Exocrine insufficiency — steatorrhea, weight loss
+474	Endocrine insufficiency — pancreatogenic (type 3c) diabetes mellitus
+475	Pancreatin (lipase 25,000–50,000 units with each meal)
+476	Insulin; analgesics; stop smoking
+477	In chronic pancreatitis the dose of pancreatin is set by <b>lipase units</b> and taken with meals.
+478	Blood and bone marrow
+479	Platelet function and count temporarily decrease
+480	Tendency to bleed (with injury)
+481	Usually recovers in 1–2 weeks
+482	Direct toxic effect on the bone marrow
+483	Folic acid deficiency (diet, absorption)
+484	Hypersplenism (portal hypertension)
+485	In cirrhosis the synthesis of clotting factors decreases
+486	<b>Macrocytosis</b> (MCV ↑) — even without anemia, a screening sign
+487	Megaloblastic anemia from folate deficiency
+488	Thrombocytopenia, leukopenia
+489	Coagulopathy (INR ↑)
+490	Folic acid 5 mg/day, check B₁₂
+491	Vitamin K (in coagulopathy)
+492	Unexplained <b>MCV ↑ and GGT ↑</b> — laboratory signs of hidden alcohol consumption.
+493	Peripheral nerves and muscles
+494	Lying in one position for a long time — muscle compression
+495	Acute <b>rhabdomyolysis</b>, "Saturday night palsy" (radial nerve compression)
+496	Plenty of fluids, monitor creatine kinase and potassium
+497	Axonal degeneration: ethanol toxicity + deficiency of thiamine and other B vitamins
+498	<b>Alcoholic polyneuropathy</b>: numbness, burning in a "stocking-glove" pattern, weakness of the legs
+499	Chronic proximal myopathy
+500	Osteoporosis, aseptic necrosis of the femoral head
+501	Abstinence, B vitamins (thiamine)
+502	For neuropathic pain gabapentin, pregabalin or duloxetine
+503	Polyneuropathy begins distally — first the <b>feet</b>.
+504	Fetus
+505	Newborns with fetal alcohol syndrome: small head, short palpebral fissures, smooth philtrum, thin upper lip. Source: Luellmann, Color Atlas of Pharmacology, 2005.
+506	Ethanol and acetaldehyde cross the placenta freely; the fetal liver can hardly break them down
+507	Drinking at any stage of pregnancy is dangerous; especially during organogenesis
+508	Do not drink when planning a pregnancy and throughout pregnancy
+509	Disrupted neuronal migration, apoptosis
+510	<b>Fetal alcohol syndrome</b>: microcephaly, flattened philtrum, thin upper lip, short palpebral fissures
+511	Growth retardation, intellectual disability, behavioral disorders
+512	Heart defects
+513	No cure — only prevention
+514	Early diagnosis and rehabilitation
+515	In pregnancy there is <b>no safe dose</b>. Fetal alcohol syndrome is the main cause of preventable intellectual disability.
+516	Metabolism
+517	NADH ↑ → gluconeogenesis ↓, lactate ↑
+518	Secretion of antidiuretic hormone decreases
+519	Hypoglycemia, lactic acidosis, <b>alcoholic ketoacidosis</b>
+520	Increased diuresis, dehydration
+521	Hypothermia (vasodilation)
+522	Thiamine + glucose, fluids
+523	In ketoacidosis glucose and fluids (insulin is usually not needed)
+524	Nutritional deficiency, renal losses
+525	Hypomagnesemia, hypokalemia, hypophosphatemia
+526	Hyperuricemia — gout
+527	In men gynecomastia, testicular atrophy (estrogen ↑ in cirrhosis)
+528	Refeeding syndrome
+529	Replenish electrolytes and vitamins
+530	Start feeding gradually, monitor phosphate
+531	Do not assume that coma in an intoxicated person is due to alcohol alone: rule out <b>hypoglycemia</b> and head injury.
+532	Cancer risk
+533	Acetaldehyde forms adducts with DNA
+534	No clinical significance with a single drinking episode
+535	Acetaldehyde — an IARC group 1 carcinogen
+536	Higher estrogen levels, folate deficiency, synergy with smoking
+537	Cancers of the mouth, pharynx, larynx and esophagus
+538	Hepatocellular carcinoma (on a background of cirrhosis)
+539	Colon and breast cancer
+540	Reduce or stop drinking; stop smoking
+541	Screening in at-risk groups (liver ultrasound every 6 months in cirrhosis)
+542	Alcohol and tobacco together — the risk of oral and esophageal cancer rises <b>multiplicatively</b>.
+543	=
+544	=
+545	=
+546	=
+547	=
+548	=
+549	=
+550	=
+551	=
+552	=
+553	=
+554	=
+555	=
+556	=
+557	=
+558	=
+559	=
+560	=
+561	=
+562	=
+563	<div class="blk"><h4>Images from textbooks (click to enlarge)</h4><div class="gallery">⟦0⟧</div></div>
+564	=
+565	=
+566	<div class="ph"><span class="eyebrow">Selected organ</span><h2>⟦0⟧</h2>\n   <span class="sev"><i style="background:⟦1⟧"></i>⟦2⟧: ⟦3⟧</span></div>\n   <div class="tabs" role="tablist">\n     <button role="tab" aria-selected="⟦4⟧" data-t="acute">Acute effect</button>\n     <button role="tab" aria-selected="⟦5⟧" data-t="chronic">Chronic complications</button>\n   </div>\n   <div class="blocks">\n     <div class="blk"><h4>Mechanism</h4>⟦6⟧</div>\n     <div class="blk"><h4>Clinical picture</h4>⟦7⟧</div>\n     <div class="blk"><h4>Treatment and pharmacology</h4>⟦8⟧</div>\n     ⟦9⟧\n   </div>\n   <p class="remember"><b>Remember.</b> ⟦10⟧</p>
+567	=
+568	Beer
+569	Wine
+570	Champagne
+571	Vodka
+572	Cognac
+573	Other
+574	=
+575	<div class="drink" data-i="⟦0⟧">\n   <div class="field"><label for="dt⟦1⟧">Drink</label><select id="dt⟦2⟧" data-k="n">⟦3⟧</select></div>\n   <div class="field"><label for="dv⟦4⟧">Volume, ml</label><input id="dv⟦5⟧" type="number" min="1" step="10" value="⟦6⟧" data-k="v"></div>\n   <div class="field"><label for="da⟦7⟧">Alcohol, %</label><input id="da⟦8⟧" type="number" min="0.5" max="96" step="0.5" value="⟦9⟧" data-k="a"></div>\n   <div class="field"><label for="dc⟦10⟧">Count</label><input id="dc⟦11⟧" type="number" min="0" max="30" step="1" value="⟦12⟧" data-k="c"></div>\n   <button class="x" aria-label="Delete" data-del="⟦13⟧">×</button></div>
+576	=
+577	<p class="note-sm">Add a drink.</p>
+578	=
+579	=
+580	Sober
+581	There is almost no alcohol in the blood.
+582	Subclinical effect
+583	Elevated mood, slowed reaction time. Driving is dangerous.
+584	Euphoria, reduced self-control, impaired coordination.
+585	Ataxia, dysarthria, nystagmus, nausea, vomiting.
+586	Stupor, amnesia, hypothermia, hypoglycemia — medical help is needed.
+587	Risk of alcoholic coma
+588	Respiratory depression, aspiration — emergency help! 5–8 ‰ — lethal.
+589	⟦0⟧ h 0 min
+590	⟦0⟧ h ⟦1⟧ min
+591	⟦0⟧ after drinking began — ⟦1⟧ ‰
+592	<div class="kpi"><small>Pure ethanol</small><b>⟦0⟧ g</b><span>⟦1⟧ standard drinks</span></div>\n   <div class="kpi"><small>Peak</small><b>⟦2⟧ ‰</b><span>at ⟦3⟧</span></div>\n   <div class="kpi"><small>Full clearance</small><b>⟦4⟧ h</b><span>β = 0.15 ‰/h</span></div>\n   <div class="kpi"><small>Energy</small><b>⟦5⟧</b><span>kcal (7.1 kcal/g)</span></div>
+593	=
+594	⟦0⟧ × ⟦1⟧ ml × ⟦2⟧% × 0.789 = <b>⟦3⟧ g</b> (⟦4⟧)
+595	<div><b>1. Ethanol mass</b> — A = V × %/100 × 0.789<br>⟦0⟧<br>Total A = <b>⟦1⟧ g</b></div>\n   <div><b>2. Widmark</b> — C<sub>max</sub> = A / (m × r) = ⟦2⟧ / (⟦3⟧ × ⟦4⟧) = <b>⟦5⟧ ‰</b><br><span class="note-sm">This is the theoretical maximum if everything were absorbed at once. The peak on the graph (⟦6⟧ ‰) is lower because drinking lasted ⟦7⟧ hours and absorption was gradual⟦8⟧, and during this time the liver had already started breaking alcohol down.</span></div>\n   <div><b>3. Elimination</b> — per hour β × m × r = 0.15 × ⟦9⟧ × ⟦10⟧ = <b>⟦11⟧ g</b> of ethanol is broken down (zero order).</div>\n   <div><b>4. Clearance time</b> — approximately C<sub>max</sub> / β = ⟦12⟧ / 0.15 ≈ <b>⟦13⟧ h</b> (in the simulation: ⟦14⟧ h).</div>
+596	and food slowed absorption (~10% is broken down on first pass)
+597	=
+598	=
+599	=
+600	=
+601	=
+602	=
+603	=
+604	=
+605	<h3>Result</h3>\n   <p class="worked">Osm<sub>calc</sub> = 2 × ⟦0⟧ + ⟦1⟧ + ⟦2⟧ + ⟦3⟧ × 21.7 = <b>⟦4⟧</b> mOsm/kg</p>\n   <p class="worked">Gap = ⟦5⟧ − ⟦6⟧ = <b>⟦7⟧</b></p>\n   <div class="stage-now"><i style="background:⟦8⟧"></i><div><b>⟦9⟧</b><br><span class="note-sm">⟦10⟧</span></div></div>
+606	Elevated osmolar gap
+607	Osmolar gap is normal
+608	There is an unmeasured osmotically active substance in the blood: methanol, ethylene glycol, isopropanol or acetone. With anion-gap metabolic acidosis and visual disturbance — methanol; with kidney injury and oxalate crystals — ethylene glycol. Decide on fomepizole (or ethanol) and hemodialysis.
+609	Toxic alcohols are unlikely, but with a late presentation (the substance has already been metabolized) the gap may be normal — rely on the clinical picture.
+610	Tremor, sweating, tachycardia, insomnia
+611	Alcoholic hallucinosis (consciousness preserved)
+612	Withdrawal seizures
+613	Alcoholic delirium (delirium tremens)
+614	<div class="tlrow"><span>⟦0⟧</span><div class="tltrack"><div class="tlbar" style="left:⟦1⟧%;width:⟦2⟧%;background:var(⟦3⟧)">⟦4⟧–⟦5⟧ h</div></div></div>
+615	=
+616	<span style="left:⟦0⟧%">⟦1⟧ h</span>
+617	An unconscious young man found on the street
+618	A 22-year-old man was brought in by his friends: he drank a lot of vodka at a party. Strong smell of alcohol, traces of vomit around the mouth, responds weakly to sound and pain.
+619	=
+620	RR 10/min
+621	=
+622	BP 90/60
+623	Glucose 2.8 mmol/L
+624	T 35.2 °C
+625	What do you do first?
+626	Clear the airway, place on the side, give oxygen
+627	Correct. In an unconscious intoxicated patient the main cause of death is aspiration of vomit and respiratory depression. Start with ABC.
+628	Give flumazenil intravenously
+629	It is not proven that a benzodiazepine was taken; flumazenil can provoke seizures and does not act on ethanol.
+630	Gastric lavage through a tube
+631	In an unconscious patient with an unprotected airway, gastric lavage leads to aspiration. Ethanol is absorbed quickly — lavage has little benefit.
+632	Give cordiamine (an analeptic)
+633	Analeptics are not recommended in modern practice: the effect is short and they cause seizures.
+634	Glucose 2.8 mmol/L. What do you do?
+635	Thiamine 100–500 mg IV, then 40% glucose
+636	Correct. In a patient who has been drinking, glucose without thiamine can trigger Wernicke encephalopathy. The hypoglycemia is due to excess NADH — gluconeogenesis is inhibited.
+637	40% glucose immediately, thiamine later
+638	Hypoglycemia must be corrected, but if glucose is given without thiamine there is a risk of Wernicke's. Thiamine first (or at the same time).
+639	Give insulin
+640	Insulin in hypoglycemia is wrong and dangerous.
+641	Observe, it will recover on its own
+642	Hypoglycemia damages the brain — correct it immediately.
+643	BP 90/60, temperature 35.2 °C. Next step?
+644	Warm infusion (0.9% NaCl), warming, monitoring, protection from vomiting
+645	Correct. Hypotension is due to vasodilation and dehydration, hypothermia to heat loss. The patient is in intensive care or an observation ward, protected from aspiration.
+646	Norepinephrine immediately
+647	Fluids first; vasopressors are ineffective in hypovolemia.
+648	Furosemide to "flush out the alcohol"
+649	A diuretic increases dehydration; it hardly speeds up ethanol elimination.
+650	Wake the patient with caffeine
+651	"Sobering" agents do not speed up ethanol metabolism.
+652	The patient regained consciousness after 8 hours. Blood ethanol had been 3.6 ‰. Before discharge: brief advice on alcohol consumption (AUDIT), and an explanation of the risks to relatives.
+653	Vision impaired after "cheap alcohol"
+654	A 45-year-old man drank cheap alcohol bought at the market. After 18 hours his vision became blurred ("as if it were snowing"), with abdominal pain and deep, noisy breathing.
+655	pH 7.12
+656	HCO₃⁻ 8 mmol/L
+657	Anion gap 30
+658	Osmolar gap 28
+659	Ethanol 0 ‰
+660	Most likely diagnosis?
+661	Methanol poisoning
+662	Correct. A latent period + visual disturbance + anion-gap and osmolar-gap metabolic acidosis — the classic signs of methanol (formic acid).
+663	Severe ethanol poisoning
+664	There is no ethanol in the blood; ethanol does not cause such severe acidosis and visual disturbance.
+665	Diabetic ketoacidosis
+666	There is no information about glucose; visual disturbance and an osmolar gap are not typical of DKA.
+667	Ethylene glycol poisoning
+668	Ethylene glycol also causes acidosis and an osmolar gap, but its main sign is kidney injury and oxalate crystals, not vision.
+669	Specific antidote?
+670	Fomepizole (if unavailable — ethanol intravenously or by mouth)
+671	Correct. Both occupy ADH and stop the formation of formaldehyde and formic acid from methanol. The target ethanol level is ≈ 1–1.5 ‰.
+672	N-acetylcysteine
+673	Antidote for paracetamol.
+674	Naloxone
+675	Opioid antidote.
+676	Atropine
+677	Antidote for organophosphate poisoning.
+678	What is needed besides the antidote?
+679	Hemodialysis, sodium bicarbonate, folic acid
+680	Correct. Hemodialysis removes methanol and formic acid (indicated in severe acidosis and visual disturbance), bicarbonate reduces acidosis, folic acid speeds up the breakdown of formic acid.
+681	Observation only
+682	Methanol poisoning leads to blindness and death — active treatment is needed.
+683	Acidifying the urine
+684	It worsens acidosis.
+685	Gastric lavage — the main measure
+686	After 18 hours the methanol has already been absorbed.
+687	Fomepizole and hemodialysis were started. Vision partly recovered. The sanitary service was notified to find other people who drank from the same batch — group poisonings are common.
+688	Day 3 in the trauma ward: the patient is agitated
+689	A 52-year-old man was admitted with a femoral fracture. On the night of day 3 he became agitated, sweats, his hands tremble, he says "insects are crawling on the wall" and does not know the place or time. Relatives: he drinks 0.5 L of vodka every day.
+690	T 38.1 °C
+691	HR 124
+692	BP 165/100
+693	=
+694	Diagnosis?
+695	Correct. 48–96 hours after drinking stops: confusion, visual hallucinations, autonomic hyperactivity (fever, tachycardia, hypertension, sweating). Also rule out fat embolism and infection.
+696	Schizophrenia episode
+697	Confusion and autonomic signs are typical of delirium, not psychosis.
+698	Sepsis only
+699	There is a fever, but the clinical picture and timing fit withdrawal; sepsis is ruled out, but the main diagnosis is delirium.
+700	Fat embolism
+701	An important differential after a femoral fracture, but the hallucinations and history point to delirium.
+702	Main drug?
+703	Diazepam intravenously, titrated to symptoms
+704	Correct. Benzodiazepines substitute for ethanol through GABA<sub>A</sub>, reducing seizures and death.
+705	Haloperidol alone
+706	It lowers the seizure threshold and does not treat the cause of delirium; only as an add-on to benzodiazepines.
+707	Give the patient alcohol
+708	Not a method of treatment.
+709	Morphine
+710	It increases respiratory depression and does not treat delirium.
+711	Additional measures?
+712	Thiamine IV in a high dose, fluids, restore K⁺ and Mg²⁺, monitoring
+713	Correct. In alcoholic delirium the risk of dehydration, hypokalemia, hypomagnesemia and Wernicke's is high.
+714	Leave the patient tied up
+715	Restraint only temporarily; without sedation it is dangerous (rhabdomyolysis, aspiration).
+716	Glucose infusion without thiamine
+717	It can trigger Wernicke encephalopathy.
+718	Start naltrexone
+719	Naltrexone is for the long-term treatment of dependence, not for acute delirium.
+720	With diazepam and thiamine the delirium resolved in 3 days. Later a consultation with an addiction specialist was arranged and a plan was made to treat the dependence with naltrexone or acamprosate. Prevention: when an alcohol-drinking patient is admitted, monitor with CIWA-Ar and give prophylactic thiamine.
+721	A confused patient who staggers
+722	A 48-year-old man who has been drinking heavily for 15 years and eats poorly. For 2 days he has been confused and staggers when walking, with bilateral nystagmus, and cannot move his eyeballs sideways.
+723	Glucose 4.2 mmol/L
+724	Ethanol 0.4 ‰
+725	BP 110/70
+726	Wernicke encephalopathy
+727	Correct. The classic triad: ophthalmoplegia (nystagmus), ataxia, confusion. The cause is thiamine deficiency; the triad does not have to be complete.
+728	Simple intoxication
+729	Blood ethanol is low; the signs do not fit drinking.
+730	Ischemic stroke
+731	Symmetric eye-movement disturbance and the history point to Wernicke's; it is excluded with CT/MRI.
+732	Hepatic encephalopathy
+733	There is no asterixis or signs of liver failure; ophthalmoplegia is not typical.
+734	Treatment?
+735	Thiamine 500 mg IV three times a day for 3–5 days
+736	Correct. High-dose parenteral thiamine, then oral. Magnesium is also checked (needed for the effect of thiamine).
+737	Vitamin B₁₂
+738	B₁₂ deficiency gives a different clinical picture (funicular myelosis).
+739	Glucose first, then thiamine
+740	The reverse order — glucose consumes thiamine and makes the condition worse.
+741	Untreated, mortality is ~20% and the risk of progression to Korsakoff's is high.
+742	What develops if untreated?
+743	Korsakoff syndrome: anterograde amnesia and confabulation
+744	Correct. The mammillary bodies and thalamus are damaged — memory is impaired irreversibly.
+745	Parkinson's disease
+746	Not related.
+747	Myasthenia
+748	Schizophrenia
+749	Two days after thiamine, eye movements recovered and the ataxia decreased, but the memory impairment partly persisted. Conclusion: thiamine prophylaxis for every patient with alcoholism.
+750	Metronidazole and a glass of wine
+751	A 30-year-old woman is taking metronidazole for trichomoniasis. She drank a glass of wine at a birthday party; 15 minutes later her face flushed, her heart is beating fast, she has a headache and feels nauseous.
+752	HR 118
+753	BP 95/60
+754	=
+755	No rash, no wheezing
+756	Mechanism?
+757	ALDH inhibition — accumulation of acetaldehyde (disulfiram-like reaction)
+758	Correct. Metronidazole inhibits aldehyde dehydrogenase; acetaldehyde causes vasodilation, tachycardia and nausea.
+759	Anaphylaxis
+760	No urticaria, bronchospasm or swelling; the timing in relation to drinking points to a disulfiram-like reaction.
+761	Serotonin syndrome
+762	No clonus or hyperreflexia, no serotonergic drugs.
+763	Hypoglycemia
+764	The clinical picture does not fit.
+765	Help?
+766	Lay down, fluids, symptomatic treatment; in severe cases oxygen and monitoring
+767	Correct. The reaction usually passes within a few hours; infusion for severe hypotension.
+768	Add disulfiram
+769	It intensifies the reaction.
+770	Epinephrine 0.5 mg intramuscularly
+771	Not needed unless there are signs of anaphylaxis.
+772	Drink more alcohol
+773	Acetaldehyde increases again.
+774	Which other drugs give such a reaction with alcohol?
+775	Tinidazole, cefoperazone, furazolidone, chlorpropamide
+776	Correct. The patient is told not to drink alcohol during treatment and for 48–72 hours after it ends.
+777	Amoxicillin, azithromycin
+778	They do not cause a disulfiram-like reaction.
+779	Paracetamol
+780	Another risk (hepatotoxicity), but not disulfiram-like.
+781	Omeprazole
+782	Does not cause it.
+783	The reaction passed in 3 hours. Conclusion: when prescribing metronidazole, tell the patient not to drink alcohol both verbally and in the prescription's signature line.
+784	<button data-c="⟦0⟧" aria-pressed="⟦1⟧"><span class="st">Case ⟦2⟧</span>⟦3⟧</button>
+785	<h3>Case ⟦0⟧. ⟦1⟧</h3><p>⟦2⟧</p><div class="vitals">⟦3⟧</div><div class="steps">⟦4⟧</div>
+786	=
+787	=
+788	<p class="qtext">Step ⟦0⟧. ⟦1⟧</p><div class="opts">⟦2⟧</div>
+789	=
+790	=
+791	<br><b>Correct answer:</b>
+792	See the result
+793	Next step
+794	<p class="qtext">Result: ⟦0⟧ / ⟦1⟧</p><p class="expl">⟦2⟧</p><div class="btnrow"><button class="btn ghost" id="crestart">Start over</button>⟦3⟧</div>
+795	<button class="btn" id="cnextcase">Next case</button>
+796	Never
+797	Less than once a month
+798	Monthly
+799	Weekly
+800	Daily or almost daily
+801	How often do you drink an alcoholic beverage?
+802	Once a month or less
+803	2–4 times a month
+804	2–3 times a week
+805	4 or more times a week
+806	How many standard drinks do you usually have on a day when you drink? (1 standard = 10 g ethanol ≈ 330 ml beer, 100 ml wine or 30 ml vodka)
+807	10 or more
+808	How often do you have 6 or more standard drinks on one occasion?
+809	During the past year, how often have you found that you were not able to stop drinking once you had started?
+810	During the past year, how often have you failed to do what was normally expected of you because of drinking?
+811	During the past year, how often have you needed a drink in the morning to get yourself going after a heavy drinking night?
+812	During the past year, how often have you had a feeling of guilt or remorse after drinking?
+813	During the past year, how often have you been unable to remember what happened the night before because you had been drinking?
+814	Have you or someone else been injured because of your drinking?
+815	No
+816	Yes, but not in the past year
+817	Yes, during the past year
+818	Has a relative, friend or doctor expressed concern about your drinking and suggested you cut down?
+819	Zone I · 0–7
+820	Low risk
+821	Provide information about alcohol
+822	Zone II · 8–15
+823	Hazardous drinking
+824	Simple advice: the benefits of cutting down, limits
+825	Zone III · 16–19
+826	Harmful drinking
+827	Brief counseling + continued monitoring
+828	Zone IV · 20–40
+829	Possible dependence
+830	Refer to an addiction specialist or psychiatrist, pharmacotherapy
+831	=
+832	=
+833	<div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="audreset">Clear</button><button class="btn ghost" id="audsample">Fill in with a sample patient</button></div>
+834	=
+835	<p class="note-sm">Mark the answers.</p>
+836	=
+837	Through which sequence of enzymes is ethanol mainly broken down?
+838	MAO → COMT
+839	ADH → ALDH2
+840	CYP3A4 → UDP-glucuronyltransferase
+841	Catalase → peroxidase
+842	Alcohol dehydrogenase oxidizes ethanol to acetaldehyde, and aldehyde dehydrogenase (ALDH2) oxidizes it to acetic acid.
+843	What kinetics does ethanol elimination follow?
+844	First-order
+845	Zero-order
+846	Biphasic
+847	Cumulative
+848	ADH becomes saturated at low concentrations — a constant amount per unit of time (≈ 7–10 g/h; ≈ 0.15 ‰/h) is broken down.
+849	A 70 kg man drank 63 g of ethanol (r = 0.68). What is C<sub>max</sub> by Widmark?
+850	C = A/(m × r) = 63 / (70 × 0.68) = 63 / 47.6 ≈ 1.32 ‰.
+851	How many grams of pure ethanol are in 500 ml of beer (5%)?
+852	=
+853	=
+854	=
+855	=
+856	A = 500 × 0.05 × 0.789 ≈ 19.7 g ≈ 20 g — about 2 standard drinks.
+857	How many per mille is "300–400 mg%" in the department textbook?
+858	100 mg% = 1 g/L = 1 ‰, so 300–400 mg% = 3–4 ‰ — acute poisoning.
+859	Why is the concentration higher in a woman at the same weight and dose?
+860	Women have more ADH
+861	The fraction of body water (r) is smaller
+862	β is greater in women
+863	Absorption is slower in women
+864	The Widmark coefficient is the fraction of body water: man 0.68, woman 0.55. Smaller r → larger C.
+865	The most effective ethanol concentration for skin antisepsis:
+866	70% (60–80%) alcohol, together with water, denatures proteins better and penetrates; 96% coagulates at the surface and does not penetrate deeper.
+867	The cause of Wernicke encephalopathy:
+868	Folic acid deficiency
+869	B₁₂ deficiency
+870	Thiamine (B₁) deficiency
+871	Pyridoxine deficiency
+872	In thiamine deficiency transketolase and pyruvate dehydrogenase do not work. The triad: ophthalmoplegia, ataxia, confusion.
+873	What is given before glucose to an intoxicated, unconscious patient?
+874	Flumazenil
+875	Furosemide
+876	Glucose without thiamine can trigger Wernicke encephalopathy.
+877	A laboratory sign typical of alcoholic hepatitis:
+878	ALT/AST > 2
+879	AST/ALT > 2
+880	Only bilirubin ↑
+881	Amylase ↑
+882	In alcoholic injury AST is two or more times higher than ALT; GGT also rises.
+883	The first-choice drug in alcohol withdrawal and delirium:
+884	Haloperidol
+885	Benzodiazepines
+886	Benzodiazepines substitute for ethanol through GABA<sub>A</sub> and prevent seizures.
+887	Which drug causes a disulfiram-like reaction when alcohol is drunk?
+888	Amoxicillin
+889	Metronidazole
+890	Azithromycin
+891	Metronidazole (also tinidazole, cefoperazone) inhibits ALDH — acetaldehyde accumulates.
+892	The antidote in methanol poisoning:
+893	Fomepizole or ethanol
+894	Deferoxamine
+895	Fomepizole (or ethanol) occupies ADH and stops the formation of formaldehyde and formic acid.
+896	Osmolar gap 30, anion-gap acidosis, visual disturbance — the most likely cause:
+897	Visual disturbance + acidosis + osmolar gap — methanol. Isopropanol gives ketosis without acidosis.
+898	The mechanism of action of disulfiram (Teturam):
+899	Blocks opioid receptors
+900	Irreversibly inhibits ALDH
+901	Normalizes NMDA
+902	Activates ADH
+903	ALDH is inhibited and acetaldehyde accumulates — flushing, vomiting and tachycardia when alcohol is drunk; a conditioned-reflex aversion develops.
+904	<div class="qtext">Result: ⟦0⟧ / ⟦1⟧</div><p>⟦2⟧</p><div class="btnrow"><button class="btn" id="restart">Start over</button></div>
+905	Excellent — the topic is well mastered.
+906	Good. Review the explanations of the wrong answers again.
+907	Review the map and formulas sections once more and retake the test.
+908	<div class="qtop"><span>Question ⟦0⟧ / ⟦1⟧</span><span>Correct: ⟦2⟧</span></div>\n   <div class="qtext">⟦3⟧</div>\n   <div class="opts">⟦4⟧</div>\n   <div id="ex"></div>\n   <div class="btnrow"><button class="btn" id="nx" ⟦5⟧>⟦6⟧</button></div>
+909	=
+910	Next question
+911	=
+912	<b>Correct.</b>
+913	<b>Incorrect.</b>
+914	=
+915	=
+916	=
+917	=
+918	=
+919	=
+920	=
+921	<span class="eyebrow">Result</span><div class="kpi" style="border:0;padding:0;background:none"><b style="font-size:40px">⟦0⟧ <span style="font-size:18px;color:var(--muted)">/ 40</span></b><span>⟦1⟧ / 10 questions answered</span></div>⟦2⟧<p class="note-sm">AUDIT-C (questions 1–3): ⟦3⟧ points — ≥ 4 in men and ≥ 3 in women indicates hazardous drinking.</p>
+922	Ethanol catabolism and its consequences in the liver: increased NADH/NAD⁺ → fatty acid oxidation decreases, synthesis increases → fatty liver → necrosis → cirrhosis. Source: Luellmann, Color Atlas of Pharmacology, 3rd ed., 2005.
