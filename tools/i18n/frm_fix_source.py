@@ -204,11 +204,11 @@ def tables():
         n += 1
     # 13.1: keyingi betda sarlavha takrori (4 ta p) va oxirgi qatorning davomi
     bl, i = find_table("Jadval 13.1.")
-    if bl[i + 1].get("text", "").startswith("**Filtrlangan Na+") and bl[i + 5].get("text") == "(suvning reabsorbsiyasi) akvaporin-2":
+    if bl[i + 1].get("text", "").startswith("**Filtrlangan Na+") and bl[i + 4].get("text", "").endswith("(suvning reabsorbsiyasi) akvaporin-2"):
         r = bl[i]["rows"][-1]
         r[0] += " (suvning reabsorbsiyasi)"
         r[2] += " akvaporin-2"
-        del bl[i + 1:i + 6]
+        del bl[i + 1:i + 5]
         n += 1
     # 9.5: jadval nomining oxiri ("yo‘l)") jadvaldan oldin alohida p bo'lib qolgan
     bl, i = find_table("Jadval 9.5.")
