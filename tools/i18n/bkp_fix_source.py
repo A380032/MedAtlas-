@@ -244,6 +244,38 @@ def tables():
     return n
 
 
+def list_tail():
+    """Ro'yxat bandi sahifada uzilib, davomi (keyingi bandlar va xatboshi bilan) bitta p ga tushib qolgan:
+    "... bilak arteriyasida puls" | "saqlansin. ... 2. **Chimchilash simptomi.** ... 3. ... **Dermografizm** — ..." """
+    n = 0
+    for t in d["topics"]:
+        for s in t["sections"]:
+            bl = s["blocks"]
+            for i in range(len(bl) - 1):
+                a, b = bl[i], bl[i + 1]
+                if a["type"] == "list" and a.get("ordered") and b["type"] == "p" and re.match(r"[a-z‘]", b["text"]) \
+                        and not re.search(r"[.:;!?)]\s*$", a["items"][-1]):
+                    head, _, rest = b["text"].partition(" **Dermografizm**")
+                    k = a.get("start", 1) + len(a["items"])
+                    parts, pos = [], 0
+                    for m in re.finditer(r"\s(\d{1,2})\.\s(?=[A-ZО‘“*])", head):   # keyingi band raqami ketma-ket bo'lsa
+                        if int(m.group(1)) == k + len(parts):
+                            parts.append((pos, m.start(), m.end()))
+                            pos = m.end()
+                    cuts = [0] + [e for _, _, e in parts]
+                    ends = [st for _, st, _ in parts] + [len(head)]
+                    pieces = [head[c:e].strip() for c, e in zip(cuts, ends)]
+                    a["items"][-1] += " " + pieces[0]
+                    a["items"] += pieces[1:]
+                    if rest:
+                        b["text"] = "**Dermografizm**" + rest
+                    else:
+                        del bl[i + 1]
+                    n += 1
+                    break
+    return n
+
+
 def renumber():
     """Bo'lim ichidagi kichik sarlavhalar raqami bo'lim raqamiga moslanadi (9-bo'limda 10.1. -> 9.1.)."""
     n = 0
@@ -349,6 +381,7 @@ log.append(f"{n} ta qo'shilib ketgan raqamli band ajratildi")
 log.append(f"{every(join_lists)} ta bo'lingan ro'yxat birlashtirildi")
 log.append(f"{every(join_sentences)} ta bo'lingan gap birlashtirildi")
 log.append(f"{tables()} ta jadval tuzatildi")
+log.append(f"{list_tail()} ta uzilgan ro'yxat bandi tiklandi")
 log.append(f"{renumber()} ta kichik sarlavha raqami tuzatildi")
 cnt = [0]
 walk(d, cnt)
