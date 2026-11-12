@@ -1,210 +1,208 @@
-s1506	Glyukoza + 2NAD+ + 2ADF + 2Fn → 2 Piruvat + 2NADH + 2H+ + 2ATF + 2H2O
-s1507	**Kalit (qaytmas) fermentlar:** geksokinaza (glyukokinaza), **fosfofruktokinaza-1** (eng asosiy), piruvatkinaza.
-s1508	Jadval 6.4. Fosfofruktokinaza-1 ning boshqarilishi
-s1509	Faollashtiruvchilar
-s1510	AMF, ADF (energiya kam)
-s1511	ATF (energiya ko‘p)
-s1512	Fruktoza-2,6-bisfosfat (insulin ta’sirida ko‘payadi; eng kuchli aktivator)
-s1513	Sitrat (Krebs sikli mahsulotlari yetarli)
-s1514	H+ (atsidoz)
-s1515	**Piruvatkinaza** fruktoza-1,6-bisfosfat bilan faollashadi (oldingi bosqichdan “oldinga signal”), ATF va alanin bilan ingibirlanadi; jigarda glyukagon ta’sirida fosforlanib nofaol bo‘ladi.
-s1516	Sitozoldagi NADH vodorodining mitoxondriyaga o‘tkazilishi
-s1517	Glikolizda hosil bo‘lgan NADH aerob sharoitda nafas zanjirida oksidlanishi kerak, ammo mitoxondriya ichki membranasi NADH ni o‘tkazmaydi. Vodorod **moki mexanizmlar** orqali o‘tadi:
-s1518	**Malat-aspartat mexanizmi** (jigar, buyrak, yurak): sitozolda oksaloatsetat NADH hisobiga malatga qaytariladi, malat mitoxondriyaga kirib, yana oksaloatsetatga oksidlanadi va matriksda NADH hosil bo‘ladi (≈ 2,5 ATF). Oksaloatsetat aspartat shaklida qaytadi.
-s1519	**Glitserofosfat mexanizmi** (skelet mushaklari, miya): dioksiatsetonfosfat NADH hisobiga glitserol-3-fosfatga qaytariladi; mitoxondriya membranasidagi FAD-bog‘liq glitserol-3- fosfatdegidrogenaza uni qayta oksidlaydi, elektronlar KoQ ga o‘tadi (≈ 1,5 ATF).
-s1520	Jadval 6.5. Glyukozaning aerob oksidlanishining energetik samarasi
-s1521	Bosqich
-s1522	Glikoliz (sof)
-s1523	2 ATF + 2 NADH
-s1524	2 + 2 × (1,5 yoki 2,5) = 5–7
-s1525	2 piruvat → 2 atsetil-KoA
-s1526	2 NADH
-s1527	2 atsetil-KoA → Krebs sikli
-s1528	6 NADH, 2 FADH2, 2 GTF
-s1529	30–32 ATF (eski hisobda 36–38)
-s1530	**Paster effekti** — aerob sharoitda glyukoza iste’molining kamayishi: kislorod bo‘lganda ATF va sitrat ko‘p hosil bo‘lib, fosfofruktokinazani ingibirlaydi.
-s1531	6. Glikogenozlar va aglikogenozlar
-s1532	**Glikogenozlar** — glikogen parchalanishi fermentlarining tug‘ma yetishmovchiligi; to‘qimalarda glikogen (ba’zan g‘ayritabiiy tuzilishli) ortiqcha to‘planadi.
-s1533	Jadval 6.6. Asosiy glikogenozlar
-s1534	Tur
-s1535	Yetishmaydigan ferment
-s1536	Asosiy belgilari
-s1537	Girke kasalligi
-s1538	Glyukoza-6-fosfataza (jigar, buyrak)
-s1539	Og‘ir och qoringa gipoglikemiya, gepatomegaliya, laktatatsidoz, giperlipidemiya, giperurikemiya
-s1540	Pompe kasalligi
-s1541	Lizosomal α-1,4-glyukozidaza (kislotali maltaza)
-s1542	Kardiomegaliya, mushaklar kuchsizligi; chaqaloqlarda yurak yetishmovchiligi
-s1543	Kori (Forbs) kasalligi
-s1544	Tarmoqsizlantiruvchi ferment
-s1545	Kalta tarmoqli glikogen to‘planadi; gepatomegaliya, yengilroq gipoglikemiya
-s1546	Mak-Ardl kasalligi
-s1547	Mushak glikogenfosforilazasi
-s1548	Jismoniy yuklamada mushak og‘rig‘i va tortishishi, mioglobinuriya; laktat ko‘tarilmaydi
-s1549	VI
-s1550	Xers kasalligi
-s1551	Jigar glikogenfosforilazasi
-s1552	Gepatomegaliya, yengil gipoglikemiya
-s1553	**Aglikogenoz** (glikogenoz 0) — jigar **glikogensintazasining** yetishmovchiligi: glikogen deyarli to‘planmaydi, ovqatlar orasida og‘ir gipoglikemiya (ertalab tutqanoqlar), ovqatdan keyin giperglikemiya va laktat oshishi. Tez-tez ovqatlantirish, kechasi kraxmal berish tavsiya etiladi.
-s1554	**Girke kasalligida** glyukoza-6-fosfat glyukozaga aylanmaydi — jigar glikogenoliz va glyukoneogenez orqali qonga glyukoza bera olmaydi. To‘plangan glyukoza-6-fosfat glikolizga o‘tib laktat va piruvat ko‘payadi (laktatatsidoz), pentozofosfat yo‘li orqali purinlar ko‘p hosil bo‘lib siydik kislota oshadi (podagra), atsetil-KoA dan yog‘lar sintezi kuchayadi (giperlipidemiya, jigar yog‘li distrofiyasi). Davolash — tez-tez ovqatlantirish, kechasi xom makkajo‘xori kraxmali (sekin parchalanadi).
-s1555	1-ish: kraxmal va glikogenga yod reaksiyasi
-s1556	Ikkita probirkaga 1 ml 1 % kraxmal va 1 ml 1 % glikogen eritmasini quying.
-s1557	Har biriga 1 tomchi Lyugol eritmasi qo‘shing; so‘ng qizdiring va sovuting. **Natija va tahlil:** kraxmal ko‘k, glikogen qizil-qo‘ng‘ir rang beradi (yod polisaxarid spirali ichiga kirib kompleks hosil qiladi; glikogen tarmoqlari kalta bo‘lgani uchun rangi boshqa). Qizdirilganda spiral buziladi va rang yo‘qoladi, sovutilganda qaytadi.
-s1558	2-ish: qaytaruvchi uglevodlarga Trommer reaksiyasi
-s1559	Probirkalarga 1 ml dan 1 % glyukoza, saxaroza va laktoza eritmalarini quying.
-s1560	Har biriga 1 ml 10 % NaOH va 3–5 tomchi 1 % CuSO4 qo‘shing (ko‘k Cu(OH)2 cho‘kmasi eriydi).
-s1561	Yuqori qismini qaynaguncha qizdiring. **Natija va tahlil:** glyukoza va laktoza bilan sariq (CuOH), so‘ng qizil-g‘isht (Cu2O) cho‘kma hosil bo‘ladi — ular qaytaruvchi qandlar (erkin yarim atsetal gidroksil bor). Saxaroza reaksiya bermaydi (ikkala yarim atsetal gidroksil glikozid bog‘ hosil qilishga sarflangan), ammo kislota bilan gidrolizlangandan keyin musbat reaksiya beradi.
-s1562	3-ish: fruktozaga Selivanov reaksiyasi
-s1563	Probirkaga 1 ml 1 % fruktoza eritmasi va 1 ml Selivanov reaktivi (rezorsinning konsentrlangan HCl dagi eritmasi) qo‘shing; qaynaguncha qizdiring.
-s1564	Glyukoza bilan solishtiring. **Natija va tahlil:** fruktoza (ketoza) tez qizil rang beradi — kislotada oksimetilfurfurolga aylanib, rezorsin bilan rangli birikma hosil qiladi. Glyukoza (aldoza) bilan rang juda sekin va kuchsiz. Saxaroza ham musbat (tarkibida fruktoza bor). Bu reaksiya siydikda fruktozani (fruktozuriya) aniqlashda ishlatiladi.
-s1565	Ko‘nikma: glyukoza oksidlanishida hosil bo‘ladigan ATF ni hisoblash
-s1566	Glikolizda sof 2 ATF va 2 NADH hosil bo‘lishini yozing.
-s1567	Sitozoldagi NADH qaysi moki mexanizm orqali o‘tishini aniqlang (malat-aspartat — 2,5, glitserofosfat — 1,5 ATF).
-s1568	2 piruvatning atsetil-KoA ga aylanishida 2 NADH (5 ATF) qo‘shing.
-s1569	2 atsetil-KoA ning Krebs siklida oksidlanishida 20 ATF qo‘shing.
-s1570	Jami 30–32 ATF ekanini ko‘rsating; anaerob sharoit bilan (2 ATF) solishtiring.
-s1571	Ko‘nikma: glikogenoz turini aniqlash
-s1572	Qaysi a’zo zararlanganini aniqlang: jigar (gepatomegaliya, gipoglikemiya) yoki mushak (yuklamaga chidamsizlik, mioglobinuriya).
-s1573	Gipoglikemiya darajasi va laktat, siydik kislota, lipidlar oshganini baholang.
-s1574	Glyukagon sinamasi natijasini tahlil qiling: glyukoza ko‘tarilmasa — glikogen parchalanmaydi.
-s1575	Yetishmaydigan fermentni va glikogenoz turini belgilang.
-s1576	Parhez tamoyilini tushuntiring.
-s1577	Ovqatdagi asosiy uglevodlarni sanang. Ularning organizmdagi vazifalari qanday?
-s1578	Kraxmal qayerda va qaysi fermentlar ta’sirida hazmlanadi?
-s1579	Membrana hazmida qaysi fermentlar ishtirok etadi?
-s1580	Glyukoza, galaktoza va fruktoza qanday so‘riladi?
-s1581	Laktaza yetishmovchiligining sabablari va belgilari qanday?
-s1582	GLUT tashuvchilarining turlari va joylashuvi qanday?
-s1583	Geksokinaza va glyukokinazaning farqi nimada?
-s1584	Glikogen sintezi reaksiyalarini yozing.
-s1585	Glikogen qanday parchalanadi? Jigar va mushak glikogenining farqi nimada?
-s1586	Glikogen almashinuvi qanday boshqariladi?
-s1587	Glikoliz reaksiyalarini va kalit fermentlarini sanang.
-s1588	Fosfofruktokinaza-1 qanday boshqariladi?
-s1589	Moki mexanizmlarni tushuntiring.
-s1590	Glyukozaning aerob oksidlanishida qancha ATF hosil bo‘ladi?
-s1591	Glikogenozlar va aglikogenozlarning biokimyoviy asosi nima?
-s1592	Kraxmalning α1→6 glikozid bog‘larini qaysi ferment parchalaydi?
-s1593	α-Amilaza
-s1594	Maltaza
-s1595	Laktaza
-s1596	Saxaraza
-s1597	Izomaltaza
-s1598	Ichakda glyukoza qaysi tashuvchi orqali Na+ bilan birga so‘riladi?
-s1599	SGLT1
-s1600	Insulinga bog‘liq glyukoza tashuvchisi qaysi to‘qimalarda bo‘ladi?
-s1601	Jigar va eritrotsitlarda
-s1602	Skelet mushaklari va yog‘ to‘qimasida
-s1603	Neyronlarda
-s1604	Enterotsitlarda
-s1605	Buyrak kanalchalarida
-s1606	Glyukokinazaning geksokinazadan farqi qaysi?
-s1607	Barcha to‘qimalarda bo‘ladi
-s1608	Km juda past
-s1609	Glyukoza-6-fosfat bilan ingibirlanadi
-s1610	Km yuqori, glyukoza-6-fosfat bilan ingibirlanmaydi, insulin bilan induksiyalanadi
-s1611	Faqat mushakda bo‘ladi
-s1612	Glikogen sintezida glyukozaning faol shakli qaysi?
-s1613	Glyukoza-1-fosfat
-s1614	Fruktoza-6-fosfat
-s1615	UDF-glyukoza
-s1616	GDF-glyukoza
-s1617	Mushakda glikogen parchalanganda qonga erkin glyukoza chiqmasligining sababi qaysi?
-s1618	Glikogenfosforilaza yo‘q
-s1619	Fosfoglyukomutaza yo‘q
-s1620	Glyukoza-6-fosfataza yo‘q
-s1621	GLUT4 yo‘q
-s1622	Glikogen kam
-s1623	Glyukagon jigarda glikogen almashinuviga qanday ta’sir qiladi?
-s1624	cAMF orqali fosforilazani faollashtirib, glikogenolizni kuchaytiradi
-s1625	Glikogensintazani faollashtiradi
-s1626	Glyukokinazani induksiyalaydi
-s1627	Ta’sir qilmaydi
-s1628	Glikolizning asosiy kalit fermenti qaysi?
-s1629	Aldolaza
-s1630	Enolaza
-s1631	Fosfoglyukoizomeraza
-s1632	Triozofosfatizomeraza
-s1633	Fosfofruktokinaza-1
-s1634	Fosfofruktokinaza-1 ning eng kuchli allosterik aktivatori qaysi?
-s1635	Fruktoza-2,6-bisfosfat
-s1636	H+
-s1637	Glikolizda substrat darajasida fosforlanishni qaysi ferment katalizlaydi?
-s1638	Geksokinaza
-s1639	Glyukozaning aerob oksidlanishida (zamonaviy hisob) qancha ATF hosil bo‘ladi?
-s1640	Girke kasalligida qaysi ferment yetishmaydi?
-s1641	Glyukoza-6-fosfataza
-s1642	Lizosomal α-1,4-glyukozidaza
-s1643	Glikogensintaza
-s1644	Malat-aspartat moki mexanizmining ahamiyati qanday?
-s1645	Atsetil-KoA ni sitozolga chiqaradi
-s1646	Sitozoldagi NADH vodorodini mitoxondriyaga o‘tkazadi
-s1647	ATF ni sitozolga chiqaradi
-s1648	Yog‘ kislotalarini mitoxondriyaga kiritadi
-s1649	Piruvatni mitoxondriyaga kiritadi
-s1650	Laktaza yetishmovchiligida diareyaning mexanizmi qanday?
-s1651	Sekretor (cAMF ortishi)
-s1652	Yallig‘lanish
-s1653	Ichak motorikasining susayishi
-s1654	O‘t kislotalari ta’siri
-s1655	Hazmlanmagan laktozaning osmotik va bijg‘ish ta’siri
-s1656	Mak-Ardl kasalligi (V tur glikogenoz) uchun xos belgi qaysi?
-s1657	Og‘ir och qoringa gipoglikemiya
-s1658	Kardiomegaliya
-s1659	Jismoniy yuklamada mushak og‘rig‘i va mioglobinuriya
-s1660	Giperurikemiya
-s1661	Gepatomegaliya
-s1662	1 yoshli bolada qorin kattalashgan (jigar 5 sm chiqib turadi), “qo‘g‘irchoq yuz”, o‘sishdan orqada qolish kuzatiladi. Ertalab och qoringa glyukoza 1,8 mmol/l, laktat, triglitseridlar va siydik kislota oshgan. Glyukagon yuborilganda glyukoza ko‘tarilmadi, laktat esa yanada oshdi.
-s1663	Tashxis qanday? Barcha biokimyoviy o‘zgarishlarni tushuntiring.
-s1664	Girke kasalligi (I tur glikogenoz) — glyukoza-6-fosfataza yetishmovchiligi. Jigarda glikogen to‘planadi (gepatomegaliya), glikogenoliz va glyukoneogenezning oxirgi reaksiyasi buzilgani uchun qonga glyukoza chiqmaydi — och qoringa og‘ir gipoglikemiya; glyukagon glikogenolizni kuchaytiradi, ammo glyukoza-6-fosfat glikolizga o‘tib laktat ko‘payadi. Glyukoza-6-fosfat ortiqchasi pentozofosfat yo‘li orqali purinlar sintezini kuchaytiradi (siydik kislota ↑), glikoliz orqali atsetil-KoA va glitserin ko‘payib yog‘lar sintezi ortadi (giperlipidemiya). Insulin past, glyukagon yuqori bo‘lgani ham lipidlarni oshiradi.
-s1665	22 yoshli yigit sport zalida mashg‘ulotning dastlabki daqiqalarida mushaklarda kuchli og‘riq va tortishish sezadi; dam olgach, mashq davom ettira oladi (“ikkinchi nafas” fenomeni). Og‘ir yuklamadan keyin siydigi qo‘ng‘ir rangda bo‘ldi. Ishemik yuklama sinamasida qonda laktat ko‘tarilmadi.
-s1666	Qaysi ferment yetishmaydi? Laktat nima uchun ko‘tarilmaydi? “Ikkinchi nafas” fenomenini tushuntiring.
-s1667	Mak-Ardl kasalligi (V tur glikogenoz) — mushak glikogenfosforilazasi yetishmovchiligi. Mushak glikogeni parchalanmaydi, yuklamaning boshida glikoliz uchun glyukoza-6-fosfat hosil bo‘lmaydi — ATF taqchilligi, mushak tortishishi, mushak hujayralari shikastlanib mioglobin siydikka chiqadi (qo‘ng‘ir siydik). Glikoliz bo‘lmagani uchun laktat ko‘tarilmaydi. “Ikkinchi nafas” — bir necha daqiqadan keyin qon oqimi kuchayib, mushakka qondan glyukoza va yog‘ kislotalari ko‘p kela boshlaydi, energiya ta’minoti yaxshilanadi.
-s1668	25 yoshli ayol sut ichgandan 1–2 soat o‘tib qorin damlashi, quldirash va suyuq ich ketishidan shikoyat qiladi. Kefir va pishloqni yaxshi ko‘taradi. Vodorodli nafas testida laktoza yuklamasidan keyin chiqarilgan havoda vodorod keskin oshdi.
-s1669	Tashxis qanday? Belgilarning mexanizmini va nordon sut mahsulotlarini ko‘tara olish sababini tushuntiring.
-s1670	Laktaza yetishmovchiligi (kattalarda birlamchi, genetik sababli laktaza faolligining pasayishi). Laktoza ingichka ichakda parchalanmaydi va so‘rilmaydi; yo‘g‘on ichakda u osmotik faol bo‘lib suvni ushlab qoladi (osmotik diareya), bakteriyalar uni bijg‘itib H2, CO2 va qisqa zanjirli kislotalar hosil qiladi (meteorizm, og‘riq; nafasda H2 oshishi). Nordon sut mahsulotlarida laktozaning katta qismi sut kislota bakteriyalari tomonidan parchalangan, pishloqda esa laktoza juda kam.
-s1671	Hazm fermentlari
-s1672	Amilaza (so‘lak, me’da osti bezi); saxaraza-izomaltaza, maltaza, laktaza (enterotsitlar)
-s1673	So‘rilish
-s1674	Glyukoza, galaktoza — SGLT1; fruktoza — GLUT5; qonga — GLUT2
-s1675	Mushak, yog‘ to‘qimasi; insulinga bog‘liq
-s1676	Geksokinaza / glyukokinaza
-s1677	Km past / yuqori; G-6-F ingibirlaydi / ingibirlamaydi
-s1678	Glikogenez
-s1679	G-1-F + UTF → UDF-glyukoza → glikogensintaza (kalit) + tarmoqlovchi ferment
-s1680	Glikogenoliz
-s1681	Glikogenfosforilaza (kalit, PALF) + tarmoqsizlantiruvchi ferment
-s1682	Jigar va mushak
-s1683	Jigarda glyukoza-6-fosfataza bor — glyukoza qonga; mushakda yo‘q
-s1684	Glyukagon, adrenalin — fosforlanish → parchalanish; insulin — defosforlanish → sintez
-s1685	Glikoliz kalit fermentlari
-s1686	Geksokinaza, fosfofruktokinaza-1, piruvatkinaza
-s1687	FFK-1
-s1688	Aktivator — AMF, fruktoza-2,6-bisfosfat; ingibitor — ATF, sitrat
-s1689	Glikoliz natijasi
-s1690	2 piruvat, 2 NADH, sof 2 ATF
-s1691	Aerob oksidlanish
-s1692	30–32 ATF
-s1693	Glikogenozlar
-s1694	I — Girke (G-6-fosfataza), II — Pompe, III — Kori, V — Mak-Ardl, VI — Xers
-s1695	Glyukoneogenez. Pentozofosfat yo‘l. Fruktoza va galaktoza almashinuvi. Glyukoza gomeostazi
-s1696	Talabaga anaerob glikoliz va uning ahamiyati, glyukoneogenez, Kori va glyukoza-alanin sikllari, glikoliz va glyukoneogenezning o‘zaro boshqarilishi, glyukoza oksidlanishining pentozofosfat yo‘li, fruktoza va galaktoza almashinuvi va ularning irsiy buzilishlari, qonda glyukoza gomeostazining boshqarilishi va yoshga bog‘liqligini o‘rgatish; qonda glyukozani glyukometr va fermentativ usulda aniqlashni egallash.
-s1697	anaerob glikoliz va spirtli bijg‘ish reaksiyalari, ularning energetik samarasini;
-s1698	glyukoneogenez substratlari, “aylanma yo‘l” reaksiyalari va energiya sarfini;
-s1699	Kori va glyukoza-alanin sikllarini;
-s1700	glikoliz va glyukoneogenezning reciprok (qarama-qarshi) boshqarilishini;
-s1701	pentozofosfat yo‘lining bosqichlari va ahamiyatini;
-s1702	fruktoza va galaktoza almashinuvini, irsiy fruktozemiya va galaktozemiyani;
-s1703	qonda glyukoza miqdorining me’yori va gormonal boshqarilishini. **Talaba bajara olishi kerak:**
-s1704	qonda glyukozani glyukometr va glyukozooksidaza usulida aniqlash;
-s1705	glyukozaga tolerantlik testini baholash;
-s1706	giper- va gipoglikemiya sabablarini biokimyoviy asoslash.
-s1707	**Fruktoza-2,6-bisfosfat** jigarda glikoliz va glyukoneogenez “kaliti”: insulin uning hosil bo‘lishini oshirib glikolizni kuchaytiradi, glyukagon esa (cAMF orqali) uni kamaytirib glyukoneogenezni kuchaytiradi.
-s1708	1. Anaerob glikoliz
-s1709	Kislorod yetishmaganda (intensiv mushak ishi, gipoksiya) yoki mitoxondriyasi bo‘lmagan hujayralarda (**eritrotsitlar**) piruvat **laktatdegidrogenaza** ta’sirida laktatga qaytariladi:
-s1710	Piruvat + NADH + H+ → Laktat + NAD+
-s1711	Bu reaksiya glitseraldegid-3-fosfatdegidrogenaza uchun NAD+ ni tiklaydi va glikolizning kislorodsiz davom etishini ta’minlaydi.
-s1712	**Anaerob glikolizning yakuniy tenglamasi:** Glyukoza + 2ADF + 2Fn → 2 Laktat + 2ATF + 2H2O
-s1713	Energetik samarasi — **2 ATF** (aerob oksidlanishdagidan ≈ 15 marta kam), ammo tez va kislorodsiz. Anaerob glikoliz ko‘proq eritrotsitlar, ko‘z to‘r pardasi va gavhari, buyrak mag‘iz qavati, oq mushak tolalari, o‘sma hujayralari uchun xos.
-s1714	**Spirtli bijg‘ish** (achitqilarda): piruvat → atsetaldegid + CO2 (piruvatdekarboksilaza, TDF) → etanol (alkogoldegidrogenaza, NADH). Bijg‘ish non pishirish, vino va pivo tayyorlashda ishlatiladi.
-s1715	**Laktatatsidoz** — qonda laktat > 5 mmol/l va pH < 7,35 (me’yorda laktat 0,5–2,2 mmol/l). Sabablari: to‘qima gipoksiyasi (shok, yurak yetishmovchiligi, sepsis, og‘ir anemiya — A tip), jigar yetishmovchiligi (laktat glyukoneogenezda ishlatilmaydi), metformin, tiamin yetishmovchiligi, mitoxondrial kasalliklar (B tip). O‘sma hujayralari kislorod bo‘lsa ham glyukozani laktatgacha
+s1504	AMF, ADF (energiya kam)
+s1505	ATF (energiya ko‘p)
+s1506	Fruktoza-2,6-bisfosfat (insulin ta’sirida ko‘payadi; eng kuchli aktivator)
+s1507	Sitrat (Krebs sikli mahsulotlari yetarli)
+s1508	H+ (atsidoz)
+s1509	**Piruvatkinaza** fruktoza-1,6-bisfosfat bilan faollashadi (oldingi bosqichdan “oldinga signal”), ATF va alanin bilan ingibirlanadi; jigarda glyukagon ta’sirida fosforlanib nofaol bo‘ladi.
+s1510	Sitozoldagi NADH vodorodining mitoxondriyaga o‘tkazilishi
+s1511	Glikolizda hosil bo‘lgan NADH aerob sharoitda nafas zanjirida oksidlanishi kerak, ammo mitoxondriya ichki membranasi NADH ni o‘tkazmaydi. Vodorod **moki mexanizmlar** orqali o‘tadi:
+s1512	**Malat-aspartat mexanizmi** (jigar, buyrak, yurak): sitozolda oksaloatsetat NADH hisobiga malatga qaytariladi, malat mitoxondriyaga kirib, yana oksaloatsetatga oksidlanadi va matriksda NADH hosil bo‘ladi (≈ 2,5 ATF). Oksaloatsetat aspartat shaklida qaytadi.
+s1513	**Glitserofosfat mexanizmi** (skelet mushaklari, miya): dioksiatsetonfosfat NADH hisobiga glitserol-3-fosfatga qaytariladi; mitoxondriya membranasidagi FAD-bog‘liq glitserol-3- fosfatdegidrogenaza uni qayta oksidlaydi, elektronlar KoQ ga o‘tadi (≈ 1,5 ATF).
+s1514	Jadval 6.5. Glyukozaning aerob oksidlanishining energetik samarasi
+s1515	Glikoliz (sof)
+s1516	2 ATF + 2 NADH
+s1517	2 + 2 × (1,5 yoki 2,5) = 5–7
+s1518	2 piruvat → 2 atsetil-KoA
+s1519	2 NADH
+s1520	2 atsetil-KoA → Krebs sikli
+s1521	6 NADH, 2 FADH2, 2 GTF
+s1522	30–32 ATF (eski hisobda 36–38)
+s1523	**Paster effekti** — aerob sharoitda glyukoza iste’molining kamayishi: kislorod bo‘lganda ATF va sitrat ko‘p hosil bo‘lib, fosfofruktokinazani ingibirlaydi.
+s1524	6. Glikogenozlar va aglikogenozlar
+s1525	**Glikogenozlar** — glikogen parchalanishi fermentlarining tug‘ma yetishmovchiligi; to‘qimalarda glikogen (ba’zan g‘ayritabiiy tuzilishli) ortiqcha to‘planadi.
+s1526	Jadval 6.6. Asosiy glikogenozlar
+s1527	Tur
+s1528	Yetishmaydigan ferment
+s1529	Asosiy belgilari
+s1530	Girke kasalligi
+s1531	Glyukoza-6-fosfataza (jigar, buyrak)
+s1532	Og‘ir och qoringa gipoglikemiya, gepatomegaliya, laktatatsidoz, giperlipidemiya, giperurikemiya
+s1533	Pompe kasalligi
+s1534	Lizosomal α-1,4-glyukozidaza (kislotali maltaza)
+s1535	Kardiomegaliya, mushaklar kuchsizligi; chaqaloqlarda yurak yetishmovchiligi
+s1536	Kori (Forbs) kasalligi
+s1537	Tarmoqsizlantiruvchi ferment
+s1538	Kalta tarmoqli glikogen to‘planadi; gepatomegaliya, yengilroq gipoglikemiya
+s1539	Mak-Ardl kasalligi
+s1540	Mushak glikogenfosforilazasi
+s1541	Jismoniy yuklamada mushak og‘rig‘i va tortishishi, mioglobinuriya; laktat ko‘tarilmaydi
+s1542	VI
+s1543	Xers kasalligi
+s1544	Jigar glikogenfosforilazasi
+s1545	Gepatomegaliya, yengil gipoglikemiya
+s1546	**Aglikogenoz** (glikogenoz 0) — jigar **glikogensintazasining** yetishmovchiligi: glikogen deyarli to‘planmaydi, ovqatlar orasida og‘ir gipoglikemiya (ertalab tutqanoqlar), ovqatdan keyin giperglikemiya va laktat oshishi. Tez-tez ovqatlantirish, kechasi kraxmal berish tavsiya etiladi.
+s1547	**Girke kasalligida** glyukoza-6-fosfat glyukozaga aylanmaydi — jigar glikogenoliz va glyukoneogenez orqali qonga glyukoza bera olmaydi. To‘plangan glyukoza-6-fosfat glikolizga o‘tib laktat va piruvat ko‘payadi (laktatatsidoz), pentozofosfat yo‘li orqali purinlar ko‘p hosil bo‘lib siydik kislota oshadi (podagra), atsetil-KoA dan yog‘lar sintezi kuchayadi (giperlipidemiya, jigar yog‘li distrofiyasi). Davolash — tez-tez ovqatlantirish, kechasi xom makkajo‘xori kraxmali (sekin parchalanadi).
+s1548	1-ish: kraxmal va glikogenga yod reaksiyasi
+s1549	Ikkita probirkaga 1 ml 1 % kraxmal va 1 ml 1 % glikogen eritmasini quying.
+s1550	Har biriga 1 tomchi Lyugol eritmasi qo‘shing; so‘ng qizdiring va sovuting. **Natija va tahlil:** kraxmal ko‘k, glikogen qizil-qo‘ng‘ir rang beradi (yod polisaxarid spirali ichiga kirib kompleks hosil qiladi; glikogen tarmoqlari kalta bo‘lgani uchun rangi boshqa). Qizdirilganda spiral buziladi va rang yo‘qoladi, sovutilganda qaytadi.
+s1551	2-ish: qaytaruvchi uglevodlarga Trommer reaksiyasi
+s1552	Probirkalarga 1 ml dan 1 % glyukoza, saxaroza va laktoza eritmalarini quying.
+s1553	Har biriga 1 ml 10 % NaOH va 3–5 tomchi 1 % CuSO4 qo‘shing (ko‘k Cu(OH)2 cho‘kmasi eriydi).
+s1554	Yuqori qismini qaynaguncha qizdiring. **Natija va tahlil:** glyukoza va laktoza bilan sariq (CuOH), so‘ng qizil-g‘isht (Cu2O) cho‘kma hosil bo‘ladi — ular qaytaruvchi qandlar (erkin yarim atsetal gidroksil bor). Saxaroza reaksiya bermaydi (ikkala yarim atsetal gidroksil glikozid bog‘ hosil qilishga sarflangan), ammo kislota bilan gidrolizlangandan keyin musbat reaksiya beradi.
+s1555	3-ish: fruktozaga Selivanov reaksiyasi
+s1556	Probirkaga 1 ml 1 % fruktoza eritmasi va 1 ml Selivanov reaktivi (rezorsinning konsentrlangan HCl dagi eritmasi) qo‘shing; qaynaguncha qizdiring.
+s1557	Glyukoza bilan solishtiring. **Natija va tahlil:** fruktoza (ketoza) tez qizil rang beradi — kislotada oksimetilfurfurolga aylanib, rezorsin bilan rangli birikma hosil qiladi. Glyukoza (aldoza) bilan rang juda sekin va kuchsiz. Saxaroza ham musbat (tarkibida fruktoza bor). Bu reaksiya siydikda fruktozani (fruktozuriya) aniqlashda ishlatiladi.
+s1558	Ko‘nikma: glyukoza oksidlanishida hosil bo‘ladigan ATF ni hisoblash
+s1559	Glikolizda sof 2 ATF va 2 NADH hosil bo‘lishini yozing.
+s1560	Sitozoldagi NADH qaysi moki mexanizm orqali o‘tishini aniqlang (malat-aspartat — 2,5, glitserofosfat — 1,5 ATF).
+s1561	2 piruvatning atsetil-KoA ga aylanishida 2 NADH (5 ATF) qo‘shing.
+s1562	2 atsetil-KoA ning Krebs siklida oksidlanishida 20 ATF qo‘shing.
+s1563	Jami 30–32 ATF ekanini ko‘rsating; anaerob sharoit bilan (2 ATF) solishtiring.
+s1564	Ko‘nikma: glikogenoz turini aniqlash
+s1565	Qaysi a’zo zararlanganini aniqlang: jigar (gepatomegaliya, gipoglikemiya) yoki mushak (yuklamaga chidamsizlik, mioglobinuriya).
+s1566	Gipoglikemiya darajasi va laktat, siydik kislota, lipidlar oshganini baholang.
+s1567	Glyukagon sinamasi natijasini tahlil qiling: glyukoza ko‘tarilmasa — glikogen parchalanmaydi.
+s1568	Yetishmaydigan fermentni va glikogenoz turini belgilang.
+s1569	Parhez tamoyilini tushuntiring.
+s1570	Ovqatdagi asosiy uglevodlarni sanang. Ularning organizmdagi vazifalari qanday?
+s1571	Kraxmal qayerda va qaysi fermentlar ta’sirida hazmlanadi?
+s1572	Membrana hazmida qaysi fermentlar ishtirok etadi?
+s1573	Glyukoza, galaktoza va fruktoza qanday so‘riladi?
+s1574	Laktaza yetishmovchiligining sabablari va belgilari qanday?
+s1575	GLUT tashuvchilarining turlari va joylashuvi qanday?
+s1576	Geksokinaza va glyukokinazaning farqi nimada?
+s1577	Glikogen sintezi reaksiyalarini yozing.
+s1578	Glikogen qanday parchalanadi? Jigar va mushak glikogenining farqi nimada?
+s1579	Glikogen almashinuvi qanday boshqariladi?
+s1580	Glikoliz reaksiyalarini va kalit fermentlarini sanang.
+s1581	Fosfofruktokinaza-1 qanday boshqariladi?
+s1582	Moki mexanizmlarni tushuntiring.
+s1583	Glyukozaning aerob oksidlanishida qancha ATF hosil bo‘ladi?
+s1584	Glikogenozlar va aglikogenozlarning biokimyoviy asosi nima?
+s1585	Kraxmalning α1→6 glikozid bog‘larini qaysi ferment parchalaydi?
+s1586	α-Amilaza
+s1587	Maltaza
+s1588	Laktaza
+s1589	Saxaraza
+s1590	Izomaltaza
+s1591	Ichakda glyukoza qaysi tashuvchi orqali Na+ bilan birga so‘riladi?
+s1592	SGLT1
+s1593	Insulinga bog‘liq glyukoza tashuvchisi qaysi to‘qimalarda bo‘ladi?
+s1594	Jigar va eritrotsitlarda
+s1595	Skelet mushaklari va yog‘ to‘qimasida
+s1596	Neyronlarda
+s1597	Enterotsitlarda
+s1598	Buyrak kanalchalarida
+s1599	Glyukokinazaning geksokinazadan farqi qaysi?
+s1600	Barcha to‘qimalarda bo‘ladi
+s1601	Km juda past
+s1602	Glyukoza-6-fosfat bilan ingibirlanadi
+s1603	Km yuqori, glyukoza-6-fosfat bilan ingibirlanmaydi, insulin bilan induksiyalanadi
+s1604	Faqat mushakda bo‘ladi
+s1605	Glikogen sintezida glyukozaning faol shakli qaysi?
+s1606	Glyukoza-1-fosfat
+s1607	Fruktoza-6-fosfat
+s1608	UDF-glyukoza
+s1609	GDF-glyukoza
+s1610	Mushakda glikogen parchalanganda qonga erkin glyukoza chiqmasligining sababi qaysi?
+s1611	Glikogenfosforilaza yo‘q
+s1612	Fosfoglyukomutaza yo‘q
+s1613	Glyukoza-6-fosfataza yo‘q
+s1614	GLUT4 yo‘q
+s1615	Glikogen kam
+s1616	Glyukagon jigarda glikogen almashinuviga qanday ta’sir qiladi?
+s1617	cAMF orqali fosforilazani faollashtirib, glikogenolizni kuchaytiradi
+s1618	Glikogensintazani faollashtiradi
+s1619	Glyukokinazani induksiyalaydi
+s1620	Ta’sir qilmaydi
+s1621	Glikolizning asosiy kalit fermenti qaysi?
+s1622	Aldolaza
+s1623	Enolaza
+s1624	Fosfoglyukoizomeraza
+s1625	Triozofosfatizomeraza
+s1626	Fosfofruktokinaza-1
+s1627	Fosfofruktokinaza-1 ning eng kuchli allosterik aktivatori qaysi?
+s1628	Fruktoza-2,6-bisfosfat
+s1629	H+
+s1630	Glikolizda substrat darajasida fosforlanishni qaysi ferment katalizlaydi?
+s1631	Geksokinaza
+s1632	Glyukozaning aerob oksidlanishida (zamonaviy hisob) qancha ATF hosil bo‘ladi?
+s1633	Girke kasalligida qaysi ferment yetishmaydi?
+s1634	Glyukoza-6-fosfataza
+s1635	Lizosomal α-1,4-glyukozidaza
+s1636	Glikogensintaza
+s1637	Malat-aspartat moki mexanizmining ahamiyati qanday?
+s1638	Atsetil-KoA ni sitozolga chiqaradi
+s1639	Sitozoldagi NADH vodorodini mitoxondriyaga o‘tkazadi
+s1640	ATF ni sitozolga chiqaradi
+s1641	Yog‘ kislotalarini mitoxondriyaga kiritadi
+s1642	Piruvatni mitoxondriyaga kiritadi
+s1643	Laktaza yetishmovchiligida diareyaning mexanizmi qanday?
+s1644	Sekretor (cAMF ortishi)
+s1645	Yallig‘lanish
+s1646	Ichak motorikasining susayishi
+s1647	O‘t kislotalari ta’siri
+s1648	Hazmlanmagan laktozaning osmotik va bijg‘ish ta’siri
+s1649	Mak-Ardl kasalligi (V tur glikogenoz) uchun xos belgi qaysi?
+s1650	Og‘ir och qoringa gipoglikemiya
+s1651	Kardiomegaliya
+s1652	Jismoniy yuklamada mushak og‘rig‘i va mioglobinuriya
+s1653	Giperurikemiya
+s1654	Gepatomegaliya
+s1655	1 yoshli bolada qorin kattalashgan (jigar 5 sm chiqib turadi), “qo‘g‘irchoq yuz”, o‘sishdan orqada qolish kuzatiladi. Ertalab och qoringa glyukoza 1,8 mmol/l, laktat, triglitseridlar va siydik kislota oshgan. Glyukagon yuborilganda glyukoza ko‘tarilmadi, laktat esa yanada oshdi.
+s1656	Tashxis qanday? Barcha biokimyoviy o‘zgarishlarni tushuntiring.
+s1657	Girke kasalligi (I tur glikogenoz) — glyukoza-6-fosfataza yetishmovchiligi. Jigarda glikogen to‘planadi (gepatomegaliya), glikogenoliz va glyukoneogenezning oxirgi reaksiyasi buzilgani uchun qonga glyukoza chiqmaydi — och qoringa og‘ir gipoglikemiya; glyukagon glikogenolizni kuchaytiradi, ammo glyukoza-6-fosfat glikolizga o‘tib laktat ko‘payadi. Glyukoza-6-fosfat ortiqchasi pentozofosfat yo‘li orqali purinlar sintezini kuchaytiradi (siydik kislota ↑), glikoliz orqali atsetil-KoA va glitserin ko‘payib yog‘lar sintezi ortadi (giperlipidemiya). Insulin past, glyukagon yuqori bo‘lgani ham lipidlarni oshiradi.
+s1658	22 yoshli yigit sport zalida mashg‘ulotning dastlabki daqiqalarida mushaklarda kuchli og‘riq va tortishish sezadi; dam olgach, mashq davom ettira oladi (“ikkinchi nafas” fenomeni). Og‘ir yuklamadan keyin siydigi qo‘ng‘ir rangda bo‘ldi. Ishemik yuklama sinamasida qonda laktat ko‘tarilmadi.
+s1659	Qaysi ferment yetishmaydi? Laktat nima uchun ko‘tarilmaydi? “Ikkinchi nafas” fenomenini tushuntiring.
+s1660	Mak-Ardl kasalligi (V tur glikogenoz) — mushak glikogenfosforilazasi yetishmovchiligi. Mushak glikogeni parchalanmaydi, yuklamaning boshida glikoliz uchun glyukoza-6-fosfat hosil bo‘lmaydi — ATF taqchilligi, mushak tortishishi, mushak hujayralari shikastlanib mioglobin siydikka chiqadi (qo‘ng‘ir siydik). Glikoliz bo‘lmagani uchun laktat ko‘tarilmaydi. “Ikkinchi nafas” — bir necha daqiqadan keyin qon oqimi kuchayib, mushakka qondan glyukoza va yog‘ kislotalari ko‘p kela boshlaydi, energiya ta’minoti yaxshilanadi.
+s1661	25 yoshli ayol sut ichgandan 1–2 soat o‘tib qorin damlashi, quldirash va suyuq ich ketishidan shikoyat qiladi. Kefir va pishloqni yaxshi ko‘taradi. Vodorodli nafas testida laktoza yuklamasidan keyin chiqarilgan havoda vodorod keskin oshdi.
+s1662	Tashxis qanday? Belgilarning mexanizmini va nordon sut mahsulotlarini ko‘tara olish sababini tushuntiring.
+s1663	Laktaza yetishmovchiligi (kattalarda birlamchi, genetik sababli laktaza faolligining pasayishi). Laktoza ingichka ichakda parchalanmaydi va so‘rilmaydi; yo‘g‘on ichakda u osmotik faol bo‘lib suvni ushlab qoladi (osmotik diareya), bakteriyalar uni bijg‘itib H2, CO2 va qisqa zanjirli kislotalar hosil qiladi (meteorizm, og‘riq; nafasda H2 oshishi). Nordon sut mahsulotlarida laktozaning katta qismi sut kislota bakteriyalari tomonidan parchalangan, pishloqda esa laktoza juda kam.
+s1664	Hazm fermentlari
+s1665	Amilaza (so‘lak, me’da osti bezi); saxaraza-izomaltaza, maltaza, laktaza (enterotsitlar)
+s1666	So‘rilish
+s1667	Glyukoza, galaktoza — SGLT1; fruktoza — GLUT5; qonga — GLUT2
+s1668	Mushak, yog‘ to‘qimasi; insulinga bog‘liq
+s1669	Geksokinaza / glyukokinaza
+s1670	Km past / yuqori; G-6-F ingibirlaydi / ingibirlamaydi
+s1671	Glikogenez
+s1672	G-1-F + UTF → UDF-glyukoza → glikogensintaza (kalit) + tarmoqlovchi ferment
+s1673	Glikogenoliz
+s1674	Glikogenfosforilaza (kalit, PALF) + tarmoqsizlantiruvchi ferment
+s1675	Jigar va mushak
+s1676	Jigarda glyukoza-6-fosfataza bor — glyukoza qonga; mushakda yo‘q
+s1677	Glyukagon, adrenalin — fosforlanish → parchalanish; insulin — defosforlanish → sintez
+s1678	Glikoliz kalit fermentlari
+s1679	Geksokinaza, fosfofruktokinaza-1, piruvatkinaza
+s1680	FFK-1
+s1681	Aktivator — AMF, fruktoza-2,6-bisfosfat; ingibitor — ATF, sitrat
+s1682	Glikoliz natijasi
+s1683	2 piruvat, 2 NADH, sof 2 ATF
+s1684	Aerob oksidlanish
+s1685	30–32 ATF
+s1686	Glikogenozlar
+s1687	I — Girke (G-6-fosfataza), II — Pompe, III — Kori, V — Mak-Ardl, VI — Xers
+s1688	Glyukoneogenez. Pentozofosfat yo‘l. Fruktoza va galaktoza almashinuvi. Glyukoza gomeostazi
+s1689	Talabaga anaerob glikoliz va uning ahamiyati, glyukoneogenez, Kori va glyukoza-alanin sikllari, glikoliz va glyukoneogenezning o‘zaro boshqarilishi, glyukoza oksidlanishining pentozofosfat yo‘li, fruktoza va galaktoza almashinuvi va ularning irsiy buzilishlari, qonda glyukoza gomeostazining boshqarilishi va yoshga bog‘liqligini o‘rgatish; qonda glyukozani glyukometr va fermentativ usulda aniqlashni egallash.
+s1690	anaerob glikoliz va spirtli bijg‘ish reaksiyalari, ularning energetik samarasini;
+s1691	glyukoneogenez substratlari, “aylanma yo‘l” reaksiyalari va energiya sarfini;
+s1692	Kori va glyukoza-alanin sikllarini;
+s1693	glikoliz va glyukoneogenezning reciprok (qarama-qarshi) boshqarilishini;
+s1694	pentozofosfat yo‘lining bosqichlari va ahamiyatini;
+s1695	fruktoza va galaktoza almashinuvini, irsiy fruktozemiya va galaktozemiyani;
+s1696	qonda glyukoza miqdorining me’yori va gormonal boshqarilishini. **Talaba bajara olishi kerak:**
+s1697	qonda glyukozani glyukometr va glyukozooksidaza usulida aniqlash;
+s1698	glyukozaga tolerantlik testini baholash;
+s1699	giper- va gipoglikemiya sabablarini biokimyoviy asoslash.
+s1700	**Fruktoza-2,6-bisfosfat** jigarda glikoliz va glyukoneogenez “kaliti”: insulin uning hosil bo‘lishini oshirib glikolizni kuchaytiradi, glyukagon esa (cAMF orqali) uni kamaytirib glyukoneogenezni kuchaytiradi.
+s1701	1. Anaerob glikoliz
+s1702	Kislorod yetishmaganda (intensiv mushak ishi, gipoksiya) yoki mitoxondriyasi bo‘lmagan hujayralarda (**eritrotsitlar**) piruvat **laktatdegidrogenaza** ta’sirida laktatga qaytariladi:
+s1703	Piruvat + NADH + H+ → Laktat + NAD+
+s1704	Bu reaksiya glitseraldegid-3-fosfatdegidrogenaza uchun NAD+ ni tiklaydi va glikolizning kislorodsiz davom etishini ta’minlaydi.
+s1705	**Anaerob glikolizning yakuniy tenglamasi:** Glyukoza + 2ADF + 2Fn → 2 Laktat + 2ATF + 2H2O
+s1706	Energetik samarasi — **2 ATF** (aerob oksidlanishdagidan ≈ 15 marta kam), ammo tez va kislorodsiz. Anaerob glikoliz ko‘proq eritrotsitlar, ko‘z to‘r pardasi va gavhari, buyrak mag‘iz qavati, oq mushak tolalari, o‘sma hujayralari uchun xos.
+s1707	**Spirtli bijg‘ish** (achitqilarda): piruvat → atsetaldegid + CO2 (piruvatdekarboksilaza, TDF) → etanol (alkogoldegidrogenaza, NADH). Bijg‘ish non pishirish, vino va pivo tayyorlashda ishlatiladi.
+s1708	**Laktatatsidoz** — qonda laktat > 5 mmol/l va pH < 7,35 (me’yorda laktat 0,5–2,2 mmol/l). Sabablari: to‘qima gipoksiyasi (shok, yurak yetishmovchiligi, sepsis, og‘ir anemiya — A tip), jigar yetishmovchiligi (laktat glyukoneogenezda ishlatilmaydi), metformin, tiamin yetishmovchiligi, mitoxondrial kasalliklar (B tip). O‘sma hujayralari kislorod bo‘lsa ham glyukozani laktatgacha
+s1709	parchalaydi — **Varburg effekti**; bu PET-tekshiruvda (^18^F-ftordezoksiglyukoza) o‘smalarni aniqlash asosida yotadi.
+s1710	2. Glyukoneogenez
+s1711	**Glyukoneogenez** — uglevod bo‘lmagan moddalardan glyukoza sintezi. U asosan **jigarda** (≈ 90 %) va **buyrak po‘stloq qismida** (uzoq ochlikda ≈ 40 % gacha) boradi. Ahamiyati: ochlik paytida, glikogen zahirasi tugaganda (12–24 soatdan keyin), qonda glyukozani saqlash — miya (sutkasiga ≈ 120 g), eritrotsitlar va buyrak mag‘iz qavati glyukozaga muhtoj.

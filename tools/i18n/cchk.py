@@ -65,7 +65,7 @@ def main():
             errs.append(f"MARK {k}: ** juft emas")
         if re.search(r"[«»]", b):
             errs.append(f"MARK {k}: «» qolgan")
-        if re.search(r"\d,\d", re.sub(r"\b\d+(?:,\d+)+\s*(?:-[A-Za-z]|→)|\b\d{1,3}(?:,\d{3})+\b", "", b)):
+        if re.search(r"\d,\d", re.sub(r"\b\d+(?:,\d+)+\s*(?:-[A-Za-z]|→|\(OH\))|\b\d{1,3}(?:,\d{3})+\b", "", b)):
             errs.append(f"MARK {k}: o'nli vergul qolgan | {b[:110]}")
         lost = nums(a, True) - nums(b, False)
         gain = nums(b, False) - nums(a, True)

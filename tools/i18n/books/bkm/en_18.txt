@@ -1,156 +1,157 @@
-s3390 A 60-year-old vegetarian woman has weakness, numbness in the legs and memory loss. The blood shows megaloblastic anemia, homocysteine 45 µmol/l (normal 5–15) and increased methylmalonic acid.
-s3391 Which vitamin is deficient? Why are homocysteine and methylmalonic acid increased?
-s3392 Vitamin B12 (cobalamin) deficiency (low in the diet of vegetarians — it is found only in animal products). Methylcobalamin is the coenzyme of methionine synthase: when it is lacking, homocysteine is not converted into methionine (hyperhomocysteinemia — a risk of thrombosis and atherosclerosis), N5-methyl-THF accumulates (the “folate trap”) and the other forms of folate fall — the synthesis of thymidylate and DNA is impaired (megaloblastic anemia). 5′-deoxyadenosylcobalamin is the coenzyme of methylmalonyl-CoA mutase: when it is lacking, methylmalonic acid accumulates; abnormal fatty acids are incorporated into myelin and damage the nervous system (subacute combined degeneration). Treatment — parenteral B12.
-s3393 Sources of ammonia
-s3394 Deamination, hydrolysis of amides, MAO, deamination of bases, the intestine
-s3395 Toxicity
-s3396 In the brain α-KG ↓ (Krebs cycle ↓), glutamine ↑ (swelling)
-s3397 Temporary binding
-s3398 Glutamine synthetase (glutamine), alanine
-s3399 Kidney
-s3400 Glutaminase → excretion of NH4 +; ↑ in acidosis
-s3401 Ornithine cycle
-s3402 CPS-I (key) → OCT → ASS → ASL → arginase; in the liver
-s3403 Nitrogens
-s3404 1 — NH3, 2 — aspartate
-s3405 3 ATP (4 high-energy bonds)
-s3406 Activator
-s3407 In blood 2.5–8.3 mmol/l; in urine 20–35 g/day
-s3408 Hyperammonemia type II
-s3409 OCT deficiency; orotic acid ↑
-s3410 THF
-s3411 One-carbon groups; purines, thymidylate; sulfonamides, methotrexate
-s3412 SAM
-s3413 Methyl donor: adrenaline, creatine, choline, DNA methylation
-s3414 Homocysteine
-s3415 B12, folate, B6; its rise — a risk of thrombosis and atherosclerosis
-s3416 PKU
-s3417 Phenylalanine hydroxylase (BH4); screening, diet
-s3418 Alkaptonuria / albinism
-s3419 Homogentisate oxidase / tyrosinase
-s3420 Metabolism of nucleotides
-s3421 To give the student knowledge of the digestion of nucleoproteins, the functions of nucleotides, the synthesis of purine nucleotides (the de novo and salvage pathways), its regulation and their breakdown, the formation of uric acid, hyperuricemia and gout, the synthesis and breakdown of pyrimidine nucleotides, the biosynthesis of deoxyribonucleotides and thymidylate nucleotides, the disorders of nucleotide metabolism and the drugs that act on these pathways; to master the determination of uric acid in blood and urine.
-s3422 the digestion of nucleoproteins and the functions of nucleotides;
-s3423 the sources of the atoms of the purine ring and the synthesis of IMP;
-s3424 the regulation of purine nucleotide synthesis and the salvage pathway;
-s3425 the breakdown of purines to uric acid;
-s3426 the types of hyperuricemia, gout and Lesch–Nyhan syndrome;
-s3427 the synthesis of pyrimidine nucleotides and orotic aciduria;
-s3428 the ribonucleotide reductase and thymidylate synthase reactions;
-s3429 the mechanism of action of the antimetabolites (antitumor and antiviral drugs). **The student should be able to:**
-s3430 determine uric acid in serum and evaluate the result;
-s3431 perform the murexide test for uric acid;
-s3432 explain the biochemical basis of the treatment of hyperuricemia.
-s3433 1. Functions of nucleotides. Digestion of nucleoproteins
-s3434 **Nucleotides** are compounds consisting of a nitrogenous base (purine: adenine, guanine; pyrimidine: cytosine, uracil, thymine), a pentose (ribose or deoxyribose) and 1–3 phosphate residues.
-s3435 monomers of the nucleic acids (DNA, RNA);
-s3436 **energy** — ATP is the universal energy carrier; GTP (protein synthesis, gluconeogenesis), UTP (glycogen synthesis), CTP (phospholipid synthesis);
-s3437 components of **coenzymes** — NAD+, NADP+, FAD, CoA;
-s3438 **second messengers** — cAMP, cGMP;
-s3439 **activated intermediates** — UDP-glucose, CDP-choline, S-adenosylmethionine, PAPS;
-s3440 **allosteric effectors** — they regulate the activity of many enzymes. **Digestion of nucleoproteins:** in the stomach nucleoproteins are split into the protein part (histones) and the nucleic acids; in the intestine the pancreatic **nucleases** (DNase, RNase) break the nucleic acids down into oligonucleotides, **phosphodiesterases** into mononucleotides, **nucleotidases** into nucleosides, and **nucleosidases (phosphorylases)** into the nitrogenous base and the pentose. The purine and pyrimidine bases that come with food are almost not used for the synthesis of nucleic acids in the body — they are broken down. Therefore nucleotides are **not an essential factor**: they are synthesized from amino acids and other simple substances.
-s3441 2. Synthesis of purine nucleotides
-s3442 De novo synthesis
-s3443 Purine nucleotides are synthesized mainly in the **liver**, in the cytosol, on the basis of **phosphoribosyl pyrophosphate (PRPP)** — the purine ring is “assembled” step by step on ribose-5-phosphate.
-s3444 **Sources of the atoms of the purine ring:** glycine (C4, C5, N7), the amide nitrogen of glutamine (N3, N9), aspartate (N1), CO2 (C6), N10-formyl-THF (C2, C8).
-s3445 Figure 14.1
-s3446 De novo synthesis of purine nucleotides and the salvage pathway (drawn after Severin E.S.)
-s3447 Ribose-5-phosphate + ATP → **PRPP** (PRPP synthetase).
-s3448 PRPP + glutamine → 5-phosphoribosylamine — **amidophosphoribosyltransferase** (the **key enzyme**).
-s3449 In 9 reactions **inosine monophosphate (IMP)** is formed (6 ATP are used).
-s3450 From IMP: **AMP** (the amino group of aspartate, the energy of GTP) and **GMP** (the amide group of glutamine, the energy of ATP). **Regulation:** PRPP synthetase and amidophosphoribosyltransferase are inhibited by the end products — **AMP, GMP and IMP** (negative feedback), while PRPP activates them. In addition there is **reciprocal regulation**: GTP is needed for the synthesis of AMP and ATP for the synthesis of GMP — this keeps the balance of adenine and guanine nucleotides.
-s3451 The salvage (reutilization) pathway
-s3452 The free purine bases formed by the breakdown of nucleotides combine with PRPP and are converted back into nucleotides — energy is saved:
-s3453 **hypoxanthine-guanine phosphoribosyltransferase (HGPRT)**: hypoxanthine + PRPP → IMP; guanine + PRPP → GMP;
-s3454 **adenine phosphoribosyltransferase (APRT)**: adenine + PRPP → AMP. The salvage pathway is especially important in the **brain** and erythrocytes (where de novo synthesis is low).
-s3455 **Lesch–Nyhan syndrome** — complete congenital deficiency of **HGPRT** (X-linked recessive, in boys). The salvage pathway does not work: PRPP accumulates and sharply increases de novo synthesis, so purines
-s3456 are formed in excess and broken down — **severe hyperuricemia**, uric acid stones, gouty arthritis; neurological disorders (choreoathetosis, mental retardation) and **self-injury** (biting the lips and fingers). Allopurinol reduces the hyperuricemia but does not correct the neurological signs.
-s3457 3. Breakdown of purine nucleotides. Uric acid
-s3458 Purine nucleotides are converted by nucleotidases, adenosine deaminase, purine nucleoside phosphorylase and guanase into **hypoxanthine** and **xanthine**, and then by **xanthine oxidase** (which contains molybdenum, FAD and Fe; active in the liver and intestine) into **uric acid**.
-s3459 Figure 14.2
-s3460 Breakdown of the purine bases to uric acid and the xanthine oxidase inhibitors (drawn after Severin E.S.)
-s3461 In humans and other primates uric acid is the **end product** of purine metabolism (in most mammals it is converted by **uricase** into the readily soluble allantoin; humans do not have this enzyme). Uric acid is a weak acid and at physiological pH is in the form of **urate** (sodium urate); it is poorly soluble in water. About 2/3 of it is excreted by the kidneys and 1/3 through the intestine. Uric acid is also a strong **antioxidant**.
-s3462 Table 14.1. Normal values of uric acid
-s3463 Serum: men
-s3464 200–420 µmol/l
-s3465 Serum: women
-s3466 140–360 µmol/l
-s3467 120–320 µmol/l
-s3468 Daily urine
-s3469 1.5–4.5 mmol (≈ 0.25–0.75 g)
-s3470 **Adenosine deaminase deficiency** — dATP accumulates in lymphocytes and inhibits ribonucleotide reductase, DNA synthesis stops — **severe combined immunodeficiency** (no T and B lymphocytes); the first gene therapy was used in exactly this disease (topic 18).
-s3471 4. Hyperuricemia and gout
-s3472 **Hyperuricemia** is a rise of uric acid in the blood (> 420 µmol/l in men, > 360 in women).
-s3473 **Primary hyperuricemia** (in ≈ 90% of cases — a hereditary reduction of urate excretion by the kidney; less often — increased synthesis: raised PRPP synthetase activity, partial HGPRT deficiency).
-s3474 Secondary hyperuricemia:
-s3475 increased formation — extensive breakdown of cells: leukemias, lymphomas, chemotherapy of tumors (**tumor lysis syndrome**), hemolytic anemia, psoriasis; food rich in purines (meat, liver, kidney, fish, beer), excess fructose, type I glycogenosis;
-s3476 reduced excretion — renal failure, thiazide diuretics, low-dose aspirin, lactic acidosis and ketoacidosis (lactate and ketone bodies compete with urate for secretion), alcohol, lead poisoning. **Gout** is a disease in which urate crystals (monosodium urate) are deposited in joints and tissues. **Acute gouty arthritis** — most often the 1st metatarsophalangeal joint of the big toe; the crystals are taken up by neutrophils and inflammatory mediators are released (severe pain, swelling, redness). In chronic gout **tophi** (deposits of urate under the skin), **urate stones** in the kidney and urate nephropathy develop.
-s3477 Table 14.2. The biochemical basis of the treatment of hyperuricemia and gout
-s3478 Drug
-s3479 Xanthine oxidase inhibitors
-s3480 Allopurinol (an analogue of hypoxanthine; alloxanthine — its active metabolite), febuxostat
-s3481 Reduce the formation of uric acid; hypoxanthine and xanthine (which are more soluble) are excreted; the salvage pathway uses up PRPP and so also reduces de novo synthesis
-s3482 Uricosuric agents
-s3483 Probenecid, benzbromarone
-s3484 Reduce the reabsorption of urate in the renal tubules
-s3485 Uricase preparations
-s3486 Rasburicase, pegloticase
-s3487 Break uric acid down into allantoin (in tumor lysis syndrome)
-s3488 In an acute attack
-s3489 Colchicine, NSAIDs, glucocorticoids
-s3490 Reduce inflammation (migration of neutrophils, tubulin)
-s3491 **Diet:** restriction of purine-rich food, alcohol (especially beer) and fructose-containing drinks, drinking plenty of fluid, alkalinization of the urine (urate becomes more soluble).
-s3492 5. Synthesis and breakdown of pyrimidine nucleotides
-s3493 The pyrimidine ring is first assembled free and then attached to PRPP:
-s3494 Glutamine + CO2 + 2ATP → carbamoyl phosphate — **carbamoyl phosphate synthetase II** (in the cytosol; the **key enzyme**; inhibited by UTP, activated by PRPP and ATP). (Unlike carbamoyl phosphate synthetase I of the ornithine cycle: that one is in the mitochondria and uses NH3.)
-s3495 Carbamoyl phosphate + aspartate → carbamoyl aspartate (aspartate carbamoyltransferase) → dihydroorotate → **orotic acid** (dihydroorotate dehydrogenase — in the mitochondria).
-s3496 Orotate + PRPP → orotidine monophosphate → **UMP** (a bifunctional enzyme — **UMP synthase**: orotate phosphoribosyltransferase and OMP decarboxylase).
-s3497 UMP → UDP → **UTP** → **CTP** (CTP synthetase, the amide group of glutamine). In humans the first three enzymes are combined in one multifunctional protein (CAD).
-s3498 **Breakdown:** cytosine and uracil → β-alanine, NH3, CO2; thymine → β-aminoisobutyric acid. The products are readily soluble in water and do not cause diseases like hyperuricemia.
-s3499 **Hereditary orotic aciduria** — UMP synthase deficiency: a lot of **orotic acid** in the urine (crystals), megaloblastic anemia (not enough pyrimidine nucleotides and DNA synthesis; it is not cured by folate or B12),
-s3500 growth retardation. Treatment — **uridine**: it is converted into UMP and makes up the shortage of nucleotides, and through UTP it inhibits carbamoyl phosphate synthetase II and reduces the formation of orotic acid. Orotic aciduria is also seen in ornithine carbamoyltransferase deficiency (topic 13), but there is hyperammonemia there and no anemia.
-s3501 6. Synthesis of deoxyribonucleotides and thymidylate nucleotides
-s3502 **Ribonucleotide reductase** reduces ribonucleoside **diphosphates** (ADP, GDP, CDP, UDP) to deoxyribonucleoside diphosphates. The reductant is **thioredoxin** (which is regenerated at the expense of thioredoxin reductase and NADPH). The enzyme is regulated allosterically in a complex way: **dATP** is an inhibitor for all substrates and ATP an activator; the various dNTPs change the substrate specificity and keep the balance of deoxyribonucleotides. The activity of the enzyme is highest in the S phase of the cell cycle.
-s3503 **Thymidylate nucleotides:** dUMP + N5,N10-methylene-THF → **dTMP** + dihydrofolate — **thymidylate synthase**. Dihydrofolate is converted back into THF by **dihydrofolate reductase** (NADPH). These reactions are vital for rapidly dividing cells (tumors, bone marrow, intestinal epithelium).
-s3504 Table 14.3. Drugs that block the synthesis of nucleotides (antimetabolites)
-s3505 Target enzyme or process
-s3506 Use
-s3507 Tumors, rheumatoid arthritis, psoriasis
-s3508 Trimethoprim
-s3509 Bacterial dihydrofolate reductase
-s3510 Antibacterial (with sulfamethoxazole)
-s3511 5-Fluorouracil
-s3512 Thymidylate synthase (irreversibly)
-s3513 Tumors of the colon and the breast
-s3514 Hydroxyurea
-s3515 Ribonucleotide reductase
-s3516 Myeloproliferative diseases, sickle cell anemia
-s3517 6-Mercaptopurine, 6-thioguanine
-s3518 Purine synthesis (PRPP amidotransferase, the conversions of IMP)
-s3519 Leukemias
-s3520 Mycophenolic acid
-s3521 IMP dehydrogenase (synthesis of GMP)
-s3522 Immunosuppressant (in transplantation)
-s3523 Leflunomide
-s3524 Dihydroorotate dehydrogenase
-s3525 Rheumatoid arthritis
-s3526 Acyclovir, zidovudine
-s3527 Viral DNA polymerase / reverse transcriptase (chain terminators)
-s3528 Herpes, HIV
-s3529 7. Age-related features of nucleotide metabolism
-s3530 In the first days of life the blood uric acid of newborns is high (a lot of cells, especially erythrocytes, are broken down) and urate crystals may be deposited in the renal tubules — a **uric acid infarct** (a physiological state; the urine is brick-red and it passes within 1–2 weeks). During growth the synthesis of nucleotides is intense. Hyperuricemia is more common in old age and, in women, after the menopause (estrogens increase the excretion of urate).
-s3531 Experiment 1: determination of uric acid in serum by the uricase method
-s3532 **Principle of the method: uricase** oxidizes uric acid to allantoin, CO2 and **H~2~O~2~**; peroxidase, at the expense of H2O2, oxidizes a chromogen and forms a colored compound (the Trinder reaction, 520 nm). The intensity of the color is proportional to the amount of uric acid.
-s3533 Pour 1 ml of working reagent (uricase, peroxidase, chromogen) into each of three test tubes.
-s3534 Add 25 µl of serum to tube 1, 25 µl of standard (for example, 357 µmol/l) to tube 2 and 25 µl of water to tube 3.
-s3535 Keep at 37 °C for 10 minutes and measure against the control at 520 nm. **Calculation:** C (µmol/l) = (Esample / Estandard) × Cstandard
-s3536 **Evaluation:** 200–420 µmol/l in men, 140–360 in women. Ascorbic acid (a strong reductant) can use up the H2O2 and falsely lower the result.
-s3537 Experiment 2: the murexide test for uric acid
-s3538 Put a small amount of uric acid (or scrapings from a urate stone) into a porcelain dish and add 2–3 drops of concentrated nitric acid.
-s3539 Evaporate carefully on a water bath (a red-yellow residue).
-s3540 After cooling, add 1 drop of 10% ammonia solution. **Result and analysis: violet-red** color appears (murexide — the ammonium salt of purpuric acid); with NaOH it is blue-violet. This reaction is characteristic of purines and uric acid; it is used to determine the chemical composition of kidney stones.
-s3541 Experiment 3: microscopic examination of uric acid crystals in urine (demonstration)
-s3542 Place a drop of the urine sediment (after centrifugation) on a slide.
-s3543 Examine under the microscope. **Result and analysis:** in acidic urine, uric acid crystals are yellow-brown and rhomboid, barrel-shaped or in rosettes; amorphous urates form a brick-red sediment. Large amounts indicate a urate diathesis or a tendency to urate stones.
-s3544 Skill: identifying the cause of hyperuricemia
-s3545 Compare blood uric acid with the normal value for the sex.
+s3379 Vitamin B12 (cobalamin) deficiency (low in the diet of vegetarians — it is found only in animal products). Methylcobalamin is the coenzyme of methionine synthase: when it is lacking, homocysteine is not converted into methionine (hyperhomocysteinemia — a risk of thrombosis and atherosclerosis), N5-methyl-THF accumulates (the “folate trap”) and the other forms of folate fall — the synthesis of thymidylate and DNA is impaired (megaloblastic anemia). 5′-deoxyadenosylcobalamin is the coenzyme of methylmalonyl-CoA mutase: when it is lacking, methylmalonic acid accumulates; abnormal fatty acids are incorporated into myelin and damage the nervous system (subacute combined degeneration). Treatment — parenteral B12.
+s3380 Sources of ammonia
+s3381 Deamination, hydrolysis of amides, MAO, deamination of bases, the intestine
+s3382 Toxicity
+s3383 In the brain α-KG ↓ (Krebs cycle ↓), glutamine ↑ (swelling)
+s3384 Temporary binding
+s3385 Glutamine synthetase (glutamine), alanine
+s3386 Kidney
+s3387 Glutaminase → excretion of NH~4~^+^; ↑ in acidosis
+s3388 Ornithine cycle
+s3389 CPS-I (key) → OCT → ASS → ASL → arginase; in the liver
+s3390 Nitrogens
+s3391 1 — NH3, 2 — aspartate
+s3392 3 ATP (4 high-energy bonds)
+s3393 Activator
+s3394 In blood 2.5–8.3 mmol/l; in urine 20–35 g/day
+s3395 Hyperammonemia type II
+s3396 OCT deficiency; orotic acid ↑
+s3397 THF
+s3398 One-carbon groups; purines, thymidylate; sulfonamides, methotrexate
+s3399 SAM
+s3400 Methyl donor: adrenaline, creatine, choline, DNA methylation
+s3401 Homocysteine
+s3402 B12, folate, B6; its rise — a risk of thrombosis and atherosclerosis
+s3403 PKU
+s3404 Phenylalanine hydroxylase (BH4); screening, diet
+s3405 Alkaptonuria / albinism
+s3406 Homogentisate oxidase / tyrosinase
+s3407 Metabolism of nucleotides
+s3408 To give the student knowledge of the digestion of nucleoproteins, the functions of nucleotides, the synthesis of purine nucleotides (the de novo and salvage pathways), its regulation and their breakdown, the formation of uric acid, hyperuricemia and gout, the synthesis and breakdown of pyrimidine nucleotides, the biosynthesis of deoxyribonucleotides and thymidylate nucleotides, the disorders of nucleotide metabolism and the drugs that act on these pathways; to master the determination of uric acid in blood and urine.
+s3409 the digestion of nucleoproteins and the functions of nucleotides;
+s3410 the sources of the atoms of the purine ring and the synthesis of IMP;
+s3411 the regulation of purine nucleotide synthesis and the salvage pathway;
+s3412 the breakdown of purines to uric acid;
+s3413 the types of hyperuricemia, gout and Lesch–Nyhan syndrome;
+s3414 the synthesis of pyrimidine nucleotides and orotic aciduria;
+s3415 the ribonucleotide reductase and thymidylate synthase reactions;
+s3416 the mechanism of action of the antimetabolites (antitumor and antiviral drugs). **The student should be able to:**
+s3417 determine uric acid in serum and evaluate the result;
+s3418 perform the murexide test for uric acid;
+s3419 explain the biochemical basis of the treatment of hyperuricemia.
+s3420 1. Functions of nucleotides. Digestion of nucleoproteins
+s3421 **Nucleotides** are compounds consisting of a nitrogenous base (purine: adenine, guanine; pyrimidine: cytosine, uracil, thymine), a pentose (ribose or deoxyribose) and 1–3 phosphate residues.
+s3422 monomers of the nucleic acids (DNA, RNA);
+s3423 **energy** — ATP is the universal energy carrier; GTP (protein synthesis, gluconeogenesis), UTP (glycogen synthesis), CTP (phospholipid synthesis);
+s3424 components of **coenzymes** — NAD+, NADP+, FAD, CoA;
+s3425 **second messengers** — cAMP, cGMP;
+s3426 **activated intermediates** — UDP-glucose, CDP-choline, S-adenosylmethionine, PAPS;
+s3427 **allosteric effectors** — they regulate the activity of many enzymes. **Digestion of nucleoproteins:** in the stomach nucleoproteins are split into the protein part (histones) and the nucleic acids; in the intestine the pancreatic **nucleases** (DNase, RNase) break the nucleic acids down into oligonucleotides, **phosphodiesterases** into mononucleotides, **nucleotidases** into nucleosides, and **nucleosidases (phosphorylases)** into the nitrogenous base and the pentose. The purine and pyrimidine bases that come with food are almost not used for the synthesis of nucleic acids in the body — they are broken down. Therefore nucleotides are **not an essential factor**: they are synthesized from amino acids and other simple substances.
+s3428 2. Synthesis of purine nucleotides
+s3429 De novo synthesis
+s3430 Purine nucleotides are synthesized mainly in the **liver**, in the cytosol, on the basis of **phosphoribosyl pyrophosphate (PRPP)** — the purine ring is “assembled” step by step on ribose-5-phosphate.
+s3431 **Sources of the atoms of the purine ring:** glycine (C4, C5, N7), the amide nitrogen of glutamine (N3, N9), aspartate (N1), CO2 (C6), N10-formyl-THF (C2, C8).
+s3432 Figure 14.1
+s3433 De novo synthesis of purine nucleotides and the salvage pathway (drawn after Severin E.S.)
+s3434 Ribose-5-phosphate + ATP → **PRPP** (PRPP synthetase).
+s3435 PRPP + glutamine → 5-phosphoribosylamine — **amidophosphoribosyltransferase** (the **key enzyme**).
+s3436 In 9 reactions **inosine monophosphate (IMP)** is formed (6 ATP are used).
+s3437 From IMP: **AMP** (the amino group of aspartate, the energy of GTP) and **GMP** (the amide group of glutamine, the energy of ATP). **Regulation:** PRPP synthetase and amidophosphoribosyltransferase are inhibited by the end products — **AMP, GMP and IMP** (negative feedback), while PRPP activates them. In addition there is **reciprocal regulation**: GTP is needed for the synthesis of AMP and ATP for the synthesis of GMP — this keeps the balance of adenine and guanine nucleotides.
+s3438 The salvage (reutilization) pathway
+s3439 The free purine bases formed by the breakdown of nucleotides combine with PRPP and are converted back into nucleotides — energy is saved:
+s3440 **hypoxanthine-guanine phosphoribosyltransferase (HGPRT)**: hypoxanthine + PRPP → IMP; guanine + PRPP → GMP;
+s3441 **adenine phosphoribosyltransferase (APRT)**: adenine + PRPP → AMP. The salvage pathway is especially important in the **brain** and erythrocytes (where de novo synthesis is low).
+s3442 **Lesch–Nyhan syndrome** — complete congenital deficiency of **HGPRT** (X-linked recessive, in boys). The salvage pathway does not work: PRPP accumulates and sharply increases de novo synthesis, so purines
+s3443 are formed in excess and broken down — **severe hyperuricemia**, uric acid stones, gouty arthritis; neurological disorders (choreoathetosis, mental retardation) and **self-injury** (biting the lips and fingers). Allopurinol reduces the hyperuricemia but does not correct the neurological signs.
+s3444 3. Breakdown of purine nucleotides. Uric acid
+s3445 Purine nucleotides are converted by nucleotidases, adenosine deaminase, purine nucleoside phosphorylase and guanase into **hypoxanthine** and **xanthine**, and then by **xanthine oxidase** (which contains molybdenum, FAD and Fe; active in the liver and intestine) into **uric acid**.
+s3446 Figure 14.2
+s3447 Breakdown of the purine bases to uric acid and the xanthine oxidase inhibitors (drawn after Severin E.S.)
+s3448 In humans and other primates uric acid is the **end product** of purine metabolism (in most mammals it is converted by **uricase** into the readily soluble allantoin; humans do not have this enzyme). Uric acid is a weak acid and at physiological pH is in the form of **urate** (sodium urate); it is poorly soluble in water. About 2/3 of it is excreted by the kidneys and 1/3 through the intestine. Uric acid is also a strong **antioxidant**.
+s3449 Table 14.1. Normal values of uric acid
+s3450 Serum: men
+s3451 200–420 µmol/l
+s3452 Serum: women
+s3453 140–360 µmol/l
+s3454 120–320 µmol/l
+s3455 Daily urine
+s3456 1.5–4.5 mmol (≈ 0.25–0.75 g)
+s3457 **Adenosine deaminase deficiency** — dATP accumulates in lymphocytes and inhibits ribonucleotide reductase, DNA synthesis stops — **severe combined immunodeficiency** (no T and B lymphocytes); the first gene therapy was used in exactly this disease (topic 18).
+s3458 4. Hyperuricemia and gout
+s3459 **Hyperuricemia** is a rise of uric acid in the blood (> 420 µmol/l in men, > 360 in women).
+s3460 **Primary hyperuricemia** (in ≈ 90% of cases — a hereditary reduction of urate excretion by the kidney; less often — increased synthesis: raised PRPP synthetase activity, partial HGPRT deficiency).
+s3461 Secondary hyperuricemia:
+s3462 increased formation — extensive breakdown of cells: leukemias, lymphomas, chemotherapy of tumors (**tumor lysis syndrome**), hemolytic anemia, psoriasis; food rich in purines (meat, liver, kidney, fish, beer), excess fructose, type I glycogenosis;
+s3463 reduced excretion — renal failure, thiazide diuretics, low-dose aspirin, lactic acidosis and ketoacidosis (lactate and ketone bodies compete with urate for secretion), alcohol, lead poisoning. **Gout** is a disease in which urate crystals (monosodium urate) are deposited in joints and tissues. **Acute gouty arthritis** — most often the 1st metatarsophalangeal joint of the big toe; the crystals are taken up by neutrophils and inflammatory mediators are released (severe pain, swelling, redness). In chronic gout **tophi** (deposits of urate under the skin), **urate stones** in the kidney and urate nephropathy develop.
+s3464 Table 14.2. The biochemical basis of the treatment of hyperuricemia and gout
+s3465 Drug
+s3466 Xanthine oxidase inhibitors
+s3467 Allopurinol (an analogue of hypoxanthine; alloxanthine — its active metabolite), febuxostat
+s3468 Reduce the formation of uric acid; hypoxanthine and xanthine (which are more soluble) are excreted; the salvage pathway uses up PRPP and so also reduces de novo synthesis
+s3469 Uricosuric agents
+s3470 Probenecid, benzbromarone
+s3471 Reduce the reabsorption of urate in the renal tubules
+s3472 Uricase preparations
+s3473 Rasburicase, pegloticase
+s3474 Break uric acid down into allantoin (in tumor lysis syndrome)
+s3475 In an acute attack
+s3476 Colchicine, NSAIDs, glucocorticoids
+s3477 Reduce inflammation (migration of neutrophils, tubulin)
+s3478 **Diet:** restriction of purine-rich food, alcohol (especially beer) and fructose-containing drinks, drinking plenty of fluid, alkalinization of the urine (urate becomes more soluble).
+s3479 5. Synthesis and breakdown of pyrimidine nucleotides
+s3480 The pyrimidine ring is first assembled free and then attached to PRPP:
+s3481 Glutamine + CO2 + 2ATP → carbamoyl phosphate — **carbamoyl phosphate synthetase II** (in the cytosol; the **key enzyme**; inhibited by UTP, activated by PRPP and ATP). (Unlike carbamoyl phosphate synthetase I of the ornithine cycle: that one is in the mitochondria and uses NH3.)
+s3482 Carbamoyl phosphate + aspartate → carbamoyl aspartate (aspartate carbamoyltransferase) → dihydroorotate → **orotic acid** (dihydroorotate dehydrogenase — in the mitochondria).
+s3483 Orotate + PRPP → orotidine monophosphate → **UMP** (a bifunctional enzyme — **UMP synthase**: orotate phosphoribosyltransferase and OMP decarboxylase).
+s3484 UMP → UDP → **UTP** → **CTP** (CTP synthetase, the amide group of glutamine). In humans the first three enzymes are combined in one multifunctional protein (CAD).
+s3485 **Breakdown:** cytosine and uracil → β-alanine, NH3, CO2; thymine → β-aminoisobutyric acid. The products are readily soluble in water and do not cause diseases like hyperuricemia.
+s3486 **Hereditary orotic aciduria** — UMP synthase deficiency: a lot of **orotic acid** in the urine (crystals), megaloblastic anemia (not enough pyrimidine nucleotides and DNA synthesis; it is not cured by folate or B12),
+s3487 growth retardation. Treatment — **uridine**: it is converted into UMP and makes up the shortage of nucleotides, and through UTP it inhibits carbamoyl phosphate synthetase II and reduces the formation of orotic acid. Orotic aciduria is also seen in ornithine carbamoyltransferase deficiency (topic 13), but there is hyperammonemia there and no anemia.
+s3488 6. Synthesis of deoxyribonucleotides and thymidylate nucleotides
+s3489 **Ribonucleotide reductase** reduces ribonucleoside **diphosphates** (ADP, GDP, CDP, UDP) to deoxyribonucleoside diphosphates. The reductant is **thioredoxin** (which is regenerated at the expense of thioredoxin reductase and NADPH). The enzyme is regulated allosterically in a complex way: **dATP** is an inhibitor for all substrates and ATP an activator; the various dNTPs change the substrate specificity and keep the balance of deoxyribonucleotides. The activity of the enzyme is highest in the S phase of the cell cycle.
+s3490 **Thymidylate nucleotides:** dUMP + N5,N10-methylene-THF → **dTMP** + dihydrofolate — **thymidylate synthase**. Dihydrofolate is converted back into THF by **dihydrofolate reductase** (NADPH). These reactions are vital for rapidly dividing cells (tumors, bone marrow, intestinal epithelium).
+s3491 Table 14.3. Drugs that block the synthesis of nucleotides (antimetabolites)
+s3492 Target enzyme or process
+s3493 Use
+s3494 Tumors, rheumatoid arthritis, psoriasis
+s3495 Trimethoprim
+s3496 Bacterial dihydrofolate reductase
+s3497 Antibacterial (with sulfamethoxazole)
+s3498 5-Fluorouracil
+s3499 Thymidylate synthase (irreversibly)
+s3500 Tumors of the colon and the breast
+s3501 Hydroxyurea
+s3502 Ribonucleotide reductase
+s3503 Myeloproliferative diseases, sickle cell anemia
+s3504 6-Mercaptopurine, 6-thioguanine
+s3505 Purine synthesis (PRPP amidotransferase, the conversions of IMP)
+s3506 Leukemias
+s3507 Mycophenolic acid
+s3508 IMP dehydrogenase (synthesis of GMP)
+s3509 Immunosuppressant (in transplantation)
+s3510 Leflunomide
+s3511 Dihydroorotate dehydrogenase
+s3512 Rheumatoid arthritis
+s3513 Acyclovir, zidovudine
+s3514 Viral DNA polymerase / reverse transcriptase (chain terminators)
+s3515 Herpes, HIV
+s3516 7. Age-related features of nucleotide metabolism
+s3517 In the first days of life the blood uric acid of newborns is high (a lot of cells, especially erythrocytes, are broken down) and urate crystals may be deposited in the renal tubules — a **uric acid infarct** (a physiological state; the urine is brick-red and it passes within 1–2 weeks). During growth the synthesis of nucleotides is intense. Hyperuricemia is more common in old age and, in women, after the menopause (estrogens increase the excretion of urate).
+s3518 Experiment 1: determination of uric acid in serum by the uricase method
+s3519 **Principle of the method: uricase** oxidizes uric acid to allantoin, CO2 and **H~2~O~2~**; peroxidase, at the expense of H2O2, oxidizes a chromogen and forms a colored compound (the Trinder reaction, 520 nm). The intensity of the color is proportional to the amount of uric acid.
+s3520 Pour 1 ml of working reagent (uricase, peroxidase, chromogen) into each of three test tubes.
+s3521 Add 25 µl of serum to tube 1, 25 µl of standard (for example, 357 µmol/l) to tube 2 and 25 µl of water to tube 3.
+s3522 Keep at 37 °C for 10 minutes and measure against the control at 520 nm. **Calculation:** C (µmol/l) = (Esample / Estandard) × Cstandard
+s3523 **Evaluation:** 200–420 µmol/l in men, 140–360 in women. Ascorbic acid (a strong reductant) can use up the H2O2 and falsely lower the result.
+s3524 Experiment 2: the murexide test for uric acid
+s3525 Put a small amount of uric acid (or scrapings from a urate stone) into a porcelain dish and add 2–3 drops of concentrated nitric acid.
+s3526 Evaporate carefully on a water bath (a red-yellow residue).
+s3527 After cooling, add 1 drop of 10% ammonia solution. **Result and analysis: violet-red** color appears (murexide — the ammonium salt of purpuric acid); with NaOH it is blue-violet. This reaction is characteristic of purines and uric acid; it is used to determine the chemical composition of kidney stones.
+s3528 Experiment 3: microscopic examination of uric acid crystals in urine (demonstration)
+s3529 Place a drop of the urine sediment (after centrifugation) on a slide.
+s3530 Examine under the microscope. **Result and analysis:** in acidic urine, uric acid crystals are yellow-brown and rhomboid, barrel-shaped or in rosettes; amorphous urates form a brick-red sediment. Large amounts indicate a urate diathesis or a tendency to urate stones.
+s3531 Skill: identifying the cause of hyperuricemia
+s3532 Compare blood uric acid with the normal value for the sex.
+s3533 Assess uric acid excretion in daily urine: high — increased synthesis (tumors, enzyme defect); low — impaired excretion (kidneys, drugs).
+s3534 Assess creatinine and kidney function.
+s3535 Take drugs (diuretics, aspirin), alcohol, diet and chemotherapy into account.

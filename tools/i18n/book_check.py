@@ -2,7 +2,7 @@
 Asl data/subjects/<id>.json va data/en/subjects/<id>.json ni solishtiradi:
  1) tuzilma bir xil (kalitlar, ro'yxat uzunliklari, raqam/boolean qiymatlar, id/type/kind/src)
  2) har bir matn juftida: **, ~, ^ belgilar soni; qo'shtirnoqlar juftligi; raqamlar (o'nli vergul -> nuqta);
-    o'nli vergul qolmaganligi; uzunlik nisbati
+    o'nli vergul qolmaganligi (kimyoviy lokantlar — 1,25-, 1,4→ — istisno); uzunlik nisbati
  3) inglizcha matnda qolib ketgan o'zbekcha so'zlar (wordfreq + o'zbekcha belgilar)
  4) test variantlari takrorlanmasligi
 Xato bo'lsa chiqish kodi 1."""
@@ -86,7 +86,7 @@ for p, a, b in pairs:
         warns.append(f"{p}: qo'shtirnoqlar juft emas | {b[:100]}")
     if re.search(r"[«»]", b):
         errs.append(f"{p}: «» qolgan")
-    if re.search(r"\d,\d", re.sub(r"\b\d(?:,\d)+-[A-Za-z]|\b\d{1,3}(?:,\d{3})+\b", "", b)):
+    if re.search(r"\d,\d", re.sub(r"\b\d+(?:,\d+)+\s*(?:-[A-Za-z]|→|\(OH\))|\b\d{1,3}(?:,\d{3})+\b", "", b)):
         errs.append(f"{p}: o'nli vergul qolgan | {b[:120]}")
     nu, ne = nums(a, True), nums(b, False)
     lost = nu - ne

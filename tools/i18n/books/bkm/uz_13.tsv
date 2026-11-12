@@ -1,197 +1,192 @@
-s2479	GMG-KoA + 2 NADPH → **mevalonat** — **GMG-KoA-reduktaza** (kalit ferment, endoplazmatik to‘r membranasida).
-s2480	Mevalonat → faollashgan izoprenoid birliklar (C5, ATF hisobiga) → geranil- va farnezilpirofosfat → **skvalen** (C30).
-s2481	Skvalen siklizatsiyalanib **lanosteringa**, so‘ngra ≈ 20 reaksiyada **xolesteringa** aylanadi.
-s2482	Jadval 10.1. GMG-KoA-reduktazaning boshqarilishi
-s2483	Hujayra ichidagi xolesterin (transkripsiya omili SREBP orqali)
-s2484	Ko‘p bo‘lsa — ferment va LDL-retseptorlar sintezi kamayadi, ferment parchalanishi tezlashadi
-s2485	Defosforlanish orqali faollashtiradi; sintezni kuchaytiradi
-s2486	Glyukagon, AMF-kinaza (energiya kam)
-s2487	Fosforlanish orqali nofaol qiladi
-s2488	Tireoid gormonlar
-s2489	Ferment sintezini oshiradi (ammo xolesterin chiqarilishi va LDL-retseptorlar ko‘proq ortadi — gipotireozda giperxolesterinemiya)
-s2490	Statinlar (atorvastatin, rozuvastatin)
-s2491	Raqobatli ingibitorlar; hujayrada xolesterin kamayib, LDL-retseptorlar ko‘payadi — qonda PZLP kamayadi
-s2492	3. Xolesterinning tashilishi va chiqarilishi
-s2493	Xolesterin qonda lipoproteinlar tarkibida tashiladi (8-mavzu); umumiy xolesterinning ≈ 2/3 qismi **xolesterin efirlari** shaklida.
-s2494	**To‘qimalarga tashilishi.** Jigarda sintezlangan ZPLP qonda LPL ta’sirida OZLP ga, so‘ng **PZLP** ga aylanadi — qondagi xolesterinning ≈ 70 % i PZLP tarkibida. PZLP hujayralarga **LDL-retseptorlar ** (apo B-100 va apo E ni taniydi) orqali endotsitoz yo‘li bilan kiradi (M. Braun va J. Goldstayn, Nobel mukofoti 1985).
-s2495	Rasm 10.2
-s2496	LDL-retseptor orqali xolesterinning hujayraga kirishi va hujayra ichidagi xolesterin miqdorining boshqarilishi (Severin E.S. asosida chizilgan)
-s2497	Hujayra ichida erkin xolesterin ko‘paysa: GMG-KoA-reduktaza va LDL-retseptorlar sintezi kamayadi, **AXAT** (atsil-KoA:xolesterin-atsiltransferaza) faollashib, ortiqcha xolesterin efir shaklida to‘planadi.
-s2498	**Teskari tashilish. YuZLP** (apo A-I) jigar va ichakda “yassi diskcha” shaklida hosil bo‘ladi; periferik hujayralardan ABCA1 tashuvchisi orqali erkin xolesterinni oladi. **Lesitin-xolesterin- atsiltransferaza (LXAT)** (apo A-I faollashtiradi) fosfatidilxolindan yog‘ kislotasini xolesteringa ko‘chirib, xolesterin efirlarini hosil qiladi; ular YuZLP yadrosiga o‘tadi va zarracha sharsimon bo‘ladi. YuZLP xolesterinni **jigarga** yetkazadi (SR-B1 retseptorlari) yoki xolesterin efirlarini boshqa lipoproteinlarga beradi. Shu sababli YuZLP — **antiaterogen** lipoproteinlar.
-s2499	**Chiqarilishi.** Xolesterin organizmda CO2 va H2O gacha parchalanmaydi. U:
-s2500	jigarda **o‘t kislotalariga** aylanadi (sutkasiga ≈ 0,5 g; kalit ferment — 7α-gidroksilaza) va o‘t bilan chiqadi;
-s2501	o‘zgarmagan holda o‘t bilan ichakka chiqadi; qisman qayta so‘riladi, qolgani bakteriyalar ta’sirida **koprostanolga** aylanib, najas bilan chiqariladi;
-s2502	oz miqdori teri yog‘i bilan, steroid gormonlar metabolitlari esa siydik bilan chiqadi.
-s2503	4. Giperxolesterinemiya va ateroskleroz
-s2504	**Ateroskleroz** — yirik va o‘rta arteriyalarning intimasida lipidlar (asosan xolesterin va uning efirlari) to‘planib, fibroz blyashkalar hosil bo‘lishi bilan kechadigan surunkali kasallik. Uning asoratlari — yurak ishemik kasalligi, miokard infarkti, insult — dunyoda o‘limning asosiy sabablaridan.
-s2505	Aterogenezning biokimyoviy bosqichlari:
-s2506	Endoteliy shikastlanishi (giperxolesterinemiya, arterial gipertenziya, chekish, giperglikemiya, gomotsistein).
-s2507	PZLP intimaga kirib, u yerda **oksidlanadi** yoki glikozillanadi (modifikatsiyalangan PZLP).
-s2508	Monotsitlar intimaga o‘tib makrofaglarga aylanadi; ular modifikatsiyalangan PZLP ni **“tozalovchi” (scavenger) retseptorlar** orqali cheksiz yutadi (bu retseptorlar xolesterin bilan boshqarilmaydi) — **ko‘pikli hujayralar** hosil bo‘ladi.
-s2509	Yallig‘lanish sitokinlari ta’sirida silliq mushak hujayralari ko‘payadi, kollagen to‘planadi — fibroz qopqoqli blyashka hosil bo‘ladi; blyashka yorilishi tromboz chaqiradi. **Xavf omillari:** PZLP-xolesterin oshishi, YuZLP-xolesterin pasayishi, lipoprotein(a) yuqoriligi, arterial gipertenziya, chekish, qandli diabet, semirish, kam harakatlilik, irsiyat, yosh va erkak jinsi.
-s2510	**Aterogenlik koeffitsienti (A.N. Klimov):** KA = (umumiy XS − YuZLP-XS) / YuZLP-XS; me’yor < 3,0; > 4 — yuqori xavf.
-s2511	**Oilaviy giperxolesterinemiya** (IIa tip giperlipoproteinemiya) — LDL-retseptor genining mutatsiyasi (autosom-dominant). Geterozigotalarda (≈ 1:250) umumiy xolesterin 8–12 mmol/l, 30–50 yoshda yurak ishemik kasalligi; gomozigotalarda (≈ 1:1 000 000) xolesterin 15–25 mmol/l, bolalikda pay ksantomalari va miokard infarkti. PZLP hujayralarga kirmaydi, hujayra xolesterinni “kam” deb sezib, sintezni kamaytirmaydi. Davolash: statinlar, ezetimib (ichakda so‘rilishni kamaytiradi), PCSK9 ingibitorlari, og‘ir hollarda LDL-aferez.
-s2512	Jadval 10.2. Dislipoproteinemiyalarning Fredrikson tasnifi (asosiy turlari)
-s2513	Tip
-s2514	Ko‘paygan lipoproteinlar
-s2515	Qonda
-s2516	Sababi (birlamchi)
-s2517	Aterogenligi
-s2518	TG ↑↑↑
-s2519	LPL yoki apo C-II yetishmovchiligi
-s2520	Past; pankreatit xavfi
-s2521	IIa
-s2522	XS ↑↑
-s2523	LDL-retseptor nuqsoni (oilaviy giperxolesterinemiya)
-s2524	Juda yuqori
-s2525	IIb
-s2526	PZLP + ZPLP
-s2527	XS ↑↑, TG ↑
-s2528	Aralash (kombinatsiyalangan)
-s2529	Yuqori
-s2530	Qoldiq XM, OZLP
-s2531	XS ↑, TG ↑
-s2532	Apo E nuqsoni (E2/E2)
-s2533	TG ↑↑
-s2534	Oilaviy gipertriglitseridemiya; ko‘pincha ikkilamchi (diabet, semirish, alkogol)
-s2535	O‘rtacha
-s2536	XM + ZPLP
-s2537	Aralash
-s2538	O‘rtacha; pankreatit xavfi
-s2539	**Ikkilamchi** dislipoproteinemiyalar: qandli diabet, gipotireoz, nefrotik sindrom, xolestaz, semirish, alkogolizm, ayrim dorilar.
-s2540	5. O‘t tosh kasalligi
-s2541	O‘tda xolesterin o‘t kislotalari va fosfatidilxolin bilan mitsellalar hosil qilib erigan holda bo‘ladi. Ular nisbati buzilganda (xolesterin ko‘p yoki o‘t kislotalari/fosfolipidlar kam) o‘t **xolesteringa o‘ta to‘yingan (“litogen”)** bo‘lib qoladi; o‘t pufagida xolesterin kristallari cho‘kadi va **xolesterin toshlari ** hosil bo‘ladi (barcha toshlarning ≈ 80 % i). Xavf omillari: ayol jinsi, homiladorlik, estrogenlar, semirish, tez ozish, yuqori kaloriyali parhez, o‘t pufagi motorikasining susayishi, yonbosh ichak kasalliklari (o‘t kislotalari qayta so‘rilmaydi).
-s2542	**Davolashning biokimyoviy asoslari: ursodezoksixol** (va xenodezoksixol) kislota preparatlari — o‘t kislotalari fondini oshirib, o‘tdagi xolesterin eruvchanligini yaxshilaydi va jigarda xolesterin sintezini kamaytiradi (mayda xolesterin toshlarini eritadi); jarrohlik (xolesistektomiya). **Pigment toshlar ** (kalsiy bilirubinat) gemolitik anemiyalar va o‘t yo‘llari infeksiyasida hosil bo‘ladi.
-s2543	6. Yog‘lar almashinuvining boshqarilishi va buzilishlari
-s2544	**To‘qlik davrida** (insulin ↑): glyukozadan yog‘ kislotalari va TAG sintezi kuchayadi (jigarda), ZPLP hosil bo‘ladi; yog‘ to‘qimasida LPL faollanadi, yog‘ zahiraga to‘planadi; lipoliz ingibirlanadi.
-s2545	**Ochlik davrida** (glyukagon, adrenalin, kortizol ↑): yog‘ to‘qimasida lipoliz kuchayadi, yog‘ kislotalari mushak va jigarda oksidlanadi, jigarda keton tanachalari hosil bo‘ladi.
-s2546	**Semirish** — energiya iste’molining sarfdan uzoq vaqt ortiqligi natijasida yog‘ to‘qimasining ko‘payishi (tana massasi indeksi ≥ 30 kg/m^2^). Yog‘ to‘qimasi endokrin a’zo: **leptin** (to‘qlik signali, gipotalamusga ta’sir qiladi), adiponektin, sitokinlar ishlab chiqaradi. Semirishda leptinga rezistentlik, insulinga rezistentlik, dislipidemiya, arterial gipertenziya rivojlanadi — **metabolik sindrom** (15- mavzu). **Bolalarda semirish** ko‘pincha ortiqcha ovqatlanish va kam harakatlilik bilan bog‘liq; kamdan-kam hollarda leptin yoki uning retseptori genining nuqsoni sabab bo‘ladi.
-s2547	**Sfingolipidozlar ** — sfingolipidlarni lizosomalarda parchalovchi fermentlarning tug‘ma yetishmovchiligi; lipidlar ko‘proq nerv to‘qimasi, jigar va taloqda to‘planadi.
-s2548	Jadval 10.3. Asosiy sfingolipidozlar
-s2549	To‘planadigan lipid
-s2550	Tey–Saks kasalligi
-s2551	Geksozaminidaza A
-s2552	GM2-gangliozid
-s2553	Rivojlanish regressi, ko‘r bo‘lish, to‘r pardada “olcha dog‘i”
-s2554	Gosher kasalligi
-s2555	β- Glyukotserebrozida za
-s2556	Glyukotserebrozi d
-s2557	Gepatosplenomegaliya, suyak shikastlanishi, sitopeniyalar
-s2558	Niman–Pik kasalligi
-s2559	Sfingomielinaza
-s2560	Gepatosplenomegaliya, nevrologik buzilishlar, “olcha dog‘i”
-s2561	Fabri kasalligi
-s2562	α-Galaktozidaza A
-s2563	Globotriaozilsera mid
-s2564	Og‘riqli neyropatiya, buyrak va yurak shikastlanishi (X-bog‘langan)
-s2565	Krabbe kasalligi
-s2566	Galaktotserebrozid aza
-s2567	Galaktotserebrozi d
-s2568	Demiyelinizatsiya
-s2569	Ayrim sfingolipidozlarda (Gosher, Fabri) **ferment o‘rnini bosuvchi terapiya** qo‘llaniladi.
-s2570	1-ish: qon zardobida umumiy xolesterinni fermentativ usulda aniqlash (biokimyoviy analizatorda)
-s2571	Usul asosi (XOD-PAP):
-s2572	**Xolesterinesteraza**: xolesterin efirlari + H2O → xolesterin + yog‘ kislotalari;
-s2573	**Xolesterinoksidaza**: xolesterin + O2 → xolest-4-en-3-on + H2O2;
-s2574	**Peroksidaza**: 2H2O2 + 4-aminoantipirin + fenol → pushti rangli xinonimin + 4H2O. Rang intensivligi umumiy xolesterin miqdoriga proporsional (500 nm).
-s2575	Uchta probirkaga 1 ml dan ishchi reagent quying.
-s2576	1-siga 10 mkl zardob, 2-siga 10 mkl standart (5,17 mmol/l), 3-siga 10 mkl suv qo‘shing.
-s2577	Aralashtirib, 37 °C da 10 daqiqa saqlang.
-s2578	500 nm da nazoratga nisbatan optik zichlikni o‘lchang (analizatorda avtomatik). **Hisoblash:** C (mmol/l) = (Enamuna / Estandart) × 5,17
-s2579	**Baholash:** < 5,2 mmol/l — maqbul; 5,2–6,2 — chegaraviy yuqori; ≥ 6,2 — yuqori. Tahlil 12–14 soatlik ochlikdan keyin olinadi.
-s2580	2-ish: xolesteringa sifat reaksiyasi (Liberman–Burxard reaksiyasi)
-s2581	Quruq probirkaga 1 ml xolesterinning xloroformdagi eritmasini quying.
-s2582	10 tomchi sirka angidridi va 1–2 tomchi konsentrlangan sulfat kislota qo‘shing (ehtiyot bo‘ling!).
-s2583	Rang o‘zgarishini kuzating. **Natija va tahlil:** avval pushti, so‘ng ko‘k va **yashil** rang hosil bo‘ladi — xolesterinning sulfat kislota ta’sirida degidratatsiyalanib, rangli birikmalar hosil qilishi. Bu reaksiya ilgari xolesterinni miqdoriy aniqlash (Ilk usuli) asosi bo‘lgan.
-s2584	3-ish: lipid spektri natijalarini talqin qilish (vaziyat bo‘yicha)
-s2585	O‘qituvchi bergan natijalar bo‘yicha: umumiy xolesterin, triglitseridlar, PZLP- va YuZLP- xolesterinni me’yor bilan solishtiring; aterogenlik koeffitsientini hisoblang; Fredrikson tasnifi bo‘yicha dislipoproteinemiya turini aniqlang. Agar PZLP-XS to‘g‘ridan-to‘g‘ri o‘lchanmagan bo‘lsa, Fridvald formulasi bilan hisoblang (TG < 4,5 mmol/l bo‘lganda): PZLP-XS = umumiy XS − YuZLP- XS − TG / 2,2.
-s2586	Ko‘nikma: lipid spektri bo‘yicha ateroskleroz xavfini baholash
-s2587	Qonni 12–14 soat ochlikdan keyin olishni ta’minlang.
-s2588	Umumiy XS, TG, YuZLP-XS va PZLP-XS ni me’yor bilan solishtiring.
-s2589	Boshqa xavf omillarini (yosh, jins, chekish, gipertenziya, diabet, irsiyat) qo‘shib baholang.
-s2590	Dislipidemiya turini aniqlang va ikkilamchi sabablarni (gipotireoz, diabet, nefrotik sindrom) istisno qilishni tavsiya qiling.
-s2591	Ko‘nikma: statinlarning ta’sir mexanizmini tushuntirish
-s2592	GMG-KoA-reduktaza xolesterin sintezining kalit fermenti ekanini ko‘rsating.
-s2593	Statinlar uning raqobatli ingibitori ekanini ayting.
-s2594	Hujayrada xolesterin kamayganda SREBP faollanib, LDL-retseptorlar sintezi ortishini tushuntiring.
-s2595	Natijada qondan PZLP olinishi kuchayib, PZLP-XS kamayishini ko‘rsating.
-s2596	Nojo‘ya ta’sirlarini (miopatiya — KFK oshishi, transaminazalar oshishi) va nazorat tahlillarini ayting.
-s2597	Xolesterinning tuzilishi va biologik vazifalari qanday?
-s2598	Xolesterinning ekzogen va endogen manbalari qanday?
-s2599	Xolesterin biosintezining asosiy bosqichlarini sanang.
-s2600	GMG-KoA-reduktaza qanday boshqariladi?
-s2601	Statinlar qanday ta’sir qiladi?
-s2602	Xolesterin qonda qanday tashiladi?
-s2603	LDL-retseptorlarning ahamiyati qanday?
-s2604	LXAT qanday reaksiyani katalizlaydi va uning ahamiyati qanday?
-s2605	Teskari xolesterin tashilishi nima?
-s2606	Xolesterin organizmdan qanday chiqariladi?
-s2607	Aterosklerozning biokimyoviy mexanizmini tushuntiring.
-s2608	Aterogenlik koeffitsienti qanday hisoblanadi?
-s2609	Oilaviy giperxolesterinemiyaning biokimyoviy asosi nima?
-s2610	O‘t tosh kasalligi qanday hosil bo‘ladi va qanday davolanadi?
-s2611	Sfingolipidozlar nima? Misollar keltiring.
-s2612	Xolesterin sintezining kalit fermenti qaysi?
-s2613	Skvalensintaza
-s2614	Xolesterin qaysi moddalarning sintezi uchun asos bo‘lmaydi?
-s2615	Vitamin D3
-s2616	Prostaglandinlar
-s2617	Testosteron
-s2618	Statinlarning ta’sir mexanizmi qanday?
-s2619	Ichakda xolesterin so‘rilishini kamaytiradi
-s2620	O‘t kislotalarini bog‘laydi
-s2621	GMG-KoA-reduktazani raqobatli ingibirlaydi
-s2622	LPL ni faollashtiradi
-s2623	LXAT ni ingibirlaydi
-s2624	Qondagi xolesterinning asosiy qismi qaysi lipoproteinlar tarkibida?
-s2625	LDL-retseptorlar qaysi apoproteinni taniydi?
-s2626	Apo A-II
-s2627	Lesitin-xolesterin-atsiltransferazani (LXAT) qaysi apoprotein faollashtiradi?
-s2628	Xolesterinning organizmdan chiqarilishining asosiy yo‘li qaysi?
-s2629	O‘t kislotalariga aylanib, o‘t bilan chiqishi
-s2630	CO2 va H2O gacha oksidlanishi
-s2631	Siydik bilan o‘zgarmagan holda chiqishi
-s2632	Ter bilan chiqishi
-s2633	O‘pka orqali chiqishi
-s2634	Makrofaglar ko‘pikli hujayralarga qanday aylanadi?
-s2635	Xilomikronlarni yutib
-s2636	Modifikatsiyalangan PZLP ni “tozalovchi” retseptorlar orqali cheksiz yutib
-s2637	YuZLP ni yutib
-s2638	LDL-retseptorlar ko‘payishi hisobiga
-s2639	Glyukozani yutib
-s2640	Antiaterogen lipoproteinlar qaysilar?
-s2641	Lipoprotein(a)
-s2642	Oilaviy giperxolesterinemiyaning sababi nima?
-s2643	LPL yetishmovchiligi
-s2644	Apo C-II yetishmovchiligi
-s2645	LXAT yetishmovchiligi
-s2646	LDL-retseptor geni mutatsiyasi
-s2647	Apo A-I yetishmovchiligi
-s2648	Aterogenlik koeffitsientining me’yori qancha?
-s2649	1,7 dan ko‘p
-s2650	5,2 dan kam
-s2651	Xolesterin toshlarini eritish uchun qaysi preparat qo‘llaniladi?
-s2652	Ursodezoksixol kislota
-s2653	Statinlar
-s2654	Pankreatin
-s2655	Fibratlar
-s2656	Geparin
-s2657	Gosher kasalligida qaysi ferment yetishmaydi?
-s2658	β-Glyukotserebrozidaza
-s2659	Galaktotserebrozidaza
-s2660	Fermentativ usulda xolesterin aniqlashda H2O2 hosil qiluvchi ferment qaysi?
-s2661	Xolesterinesteraza
-s2662	Xolesterinoksidaza
-s2663	Gipotireozda giperxolesterinemiya rivojlanishining asosiy sababi nima?
-s2664	Xolesterin sintezining kuchayishi
-s2665	Ichakda so‘rilishning kuchayishi
-s2666	LXAT faolligining oshishi
-s2667	O‘t kislotalari sintezining kuchayishi
-s2668	LDL-retseptorlar sonining kamayishi va xolesterin chiqarilishining susayishi
-s2669	12 yoshli bolada Axill paylari sohasida qattiq tugunchalar (pay ksantomalari), qovoqlarda sariq dog‘lar (ksantelazmalar) aniqlandi. Umumiy xolesterin 16 mmol/l, triglitseridlar me’yorida. Otasi 38 yoshida miokard infarktidan vafot etgan, onasining xolesterini 9 mmol/l.
-s2670	Tashxis qanday? Biokimyoviy mexanizmini tushuntiring. Statinlar samarasi nima uchun cheklangan bo‘lishi mumkin?
-s2671	Gomozigot oilaviy giperxolesterinemiya (IIa tip) — LDL-retseptor genining ikkala allelida mutatsiya (ota-onaning ikkalasi geterozigota). PZLP hujayralarga kirmaydi va qonda to‘planadi; hujayralar xolesterin “taqchilligini” sezib, GMG-KoA-reduktaza va sintezni kamaytirmaydi. Ortiqcha PZLP makrofaglar tomonidan “tozalovchi” retseptorlar orqali yutiladi — ksantomalar va erta ateroskleroz. Statinlar asosan LDL-retseptorlar sonini oshirish orqali ta’sir qiladi; retseptorlar butunlay ishlamasa, samara kam bo‘ladi — LDL-aferez, PCSK9 ingibitorlari va boshqa usullar kerak.
-s2672	45 yoshli semiz ayol (TVI 34 kg/m^2^) yog‘li ovqatdan keyin o‘ng qovurg‘a ostida kuchli og‘riq xurujlaridan shikoyat qiladi. Ultratovushda o‘t pufagida mayda rentgen-manfiy toshlar aniqlandi.
-s2673	Toshlarning kimyoviy tarkibi qanday bo‘lishi ehtimoli bor? Hosil bo‘lish mexanizmini tushuntiring.
-s2674	Xolesterin toshlari (rentgen-manfiy). Semirish, ayol jinsi va estrogenlar jigarda xolesterin sintezi va uning o‘tga chiqarilishini oshiradi, o‘t kislotalari sintezi esa nisbatan kamayadi; o‘t xolesteringa o‘ta to‘yingan (litogen) bo‘lib qoladi. O‘t pufagi motorikasining susayishi kristallar hosil bo‘lishiga yordam beradi. Mayda xolesterin toshlari ursodezoksixol kislota bilan eritilishi mumkin; tez-tez xurujlarda — xolesistektomiya.
-s2675	55 yoshli erkak chekadi, arterial bosimi 160/95 mm sim. ust. Tahlil: umumiy xolesterin 6,8 mmol/l, YuZLP-XS 0,9 mmol/l, triglitseridlar 2,2 mmol/l.
+s2479	Glyukagon, AMF-kinaza (energiya kam)
+s2480	Fosforlanish orqali nofaol qiladi
+s2481	Tireoid gormonlar
+s2482	Ferment sintezini oshiradi (ammo xolesterin chiqarilishi va LDL-retseptorlar ko‘proq ortadi — gipotireozda giperxolesterinemiya)
+s2483	Statinlar (atorvastatin, rozuvastatin)
+s2484	Raqobatli ingibitorlar; hujayrada xolesterin kamayib, LDL-retseptorlar ko‘payadi — qonda PZLP kamayadi
+s2485	3. Xolesterinning tashilishi va chiqarilishi
+s2486	Xolesterin qonda lipoproteinlar tarkibida tashiladi (8-mavzu); umumiy xolesterinning ≈ 2/3 qismi **xolesterin efirlari** shaklida.
+s2487	**To‘qimalarga tashilishi.** Jigarda sintezlangan ZPLP qonda LPL ta’sirida OZLP ga, so‘ng **PZLP** ga aylanadi — qondagi xolesterinning ≈ 70 % i PZLP tarkibida. PZLP hujayralarga **LDL-retseptorlar** (apo B-100 va apo E ni taniydi) orqali endotsitoz yo‘li bilan kiradi (M. Braun va J. Goldstayn, Nobel mukofoti 1985).
+s2488	Rasm 10.2
+s2489	LDL-retseptor orqali xolesterinning hujayraga kirishi va hujayra ichidagi xolesterin miqdorining boshqarilishi (Severin E.S. asosida chizilgan)
+s2490	Hujayra ichida erkin xolesterin ko‘paysa: GMG-KoA-reduktaza va LDL-retseptorlar sintezi kamayadi, **AXAT** (atsil-KoA:xolesterin-atsiltransferaza) faollashib, ortiqcha xolesterin efir shaklida to‘planadi.
+s2491	**Teskari tashilish. YuZLP** (apo A-I) jigar va ichakda “yassi diskcha” shaklida hosil bo‘ladi; periferik hujayralardan ABCA1 tashuvchisi orqali erkin xolesterinni oladi. **Lesitin-xolesterin- atsiltransferaza (LXAT)** (apo A-I faollashtiradi) fosfatidilxolindan yog‘ kislotasini xolesteringa ko‘chirib, xolesterin efirlarini hosil qiladi; ular YuZLP yadrosiga o‘tadi va zarracha sharsimon bo‘ladi. YuZLP xolesterinni **jigarga** yetkazadi (SR-B1 retseptorlari) yoki xolesterin efirlarini boshqa lipoproteinlarga beradi. Shu sababli YuZLP — **antiaterogen** lipoproteinlar.
+s2492	**Chiqarilishi.** Xolesterin organizmda CO2 va H2O gacha parchalanmaydi. U:
+s2493	jigarda **o‘t kislotalariga** aylanadi (sutkasiga ≈ 0,5 g; kalit ferment — 7α-gidroksilaza) va o‘t bilan chiqadi;
+s2494	o‘zgarmagan holda o‘t bilan ichakka chiqadi; qisman qayta so‘riladi, qolgani bakteriyalar ta’sirida **koprostanolga** aylanib, najas bilan chiqariladi;
+s2495	oz miqdori teri yog‘i bilan, steroid gormonlar metabolitlari esa siydik bilan chiqadi.
+s2496	4. Giperxolesterinemiya va ateroskleroz
+s2497	**Ateroskleroz** — yirik va o‘rta arteriyalarning intimasida lipidlar (asosan xolesterin va uning efirlari) to‘planib, fibroz blyashkalar hosil bo‘lishi bilan kechadigan surunkali kasallik. Uning asoratlari — yurak ishemik kasalligi, miokard infarkti, insult — dunyoda o‘limning asosiy sabablaridan.
+s2498	Aterogenezning biokimyoviy bosqichlari:
+s2499	Endoteliy shikastlanishi (giperxolesterinemiya, arterial gipertenziya, chekish, giperglikemiya, gomotsistein).
+s2500	PZLP intimaga kirib, u yerda **oksidlanadi** yoki glikozillanadi (modifikatsiyalangan PZLP).
+s2501	Monotsitlar intimaga o‘tib makrofaglarga aylanadi; ular modifikatsiyalangan PZLP ni **“tozalovchi” (scavenger) retseptorlar** orqali cheksiz yutadi (bu retseptorlar xolesterin bilan boshqarilmaydi) — **ko‘pikli hujayralar** hosil bo‘ladi.
+s2502	Yallig‘lanish sitokinlari ta’sirida silliq mushak hujayralari ko‘payadi, kollagen to‘planadi — fibroz qopqoqli blyashka hosil bo‘ladi; blyashka yorilishi tromboz chaqiradi. **Xavf omillari:** PZLP-xolesterin oshishi, YuZLP-xolesterin pasayishi, lipoprotein(a) yuqoriligi, arterial gipertenziya, chekish, qandli diabet, semirish, kam harakatlilik, irsiyat, yosh va erkak jinsi.
+s2503	**Aterogenlik koeffitsienti (A.N. Klimov):** KA = (umumiy XS − YuZLP-XS) / YuZLP-XS; me’yor < 3,0; > 4 — yuqori xavf.
+s2504	**Oilaviy giperxolesterinemiya** (IIa tip giperlipoproteinemiya) — LDL-retseptor genining mutatsiyasi (autosom-dominant). Geterozigotalarda (≈ 1:250) umumiy xolesterin 8–12 mmol/l, 30–50 yoshda yurak ishemik kasalligi; gomozigotalarda (≈ 1:1 000 000) xolesterin 15–25 mmol/l, bolalikda pay ksantomalari va miokard infarkti. PZLP hujayralarga kirmaydi, hujayra xolesterinni “kam” deb sezib, sintezni kamaytirmaydi. Davolash: statinlar, ezetimib (ichakda so‘rilishni kamaytiradi), PCSK9 ingibitorlari, og‘ir hollarda LDL-aferez.
+s2505	Jadval 10.2. Dislipoproteinemiyalarning Fredrikson tasnifi (asosiy turlari)
+s2506	Tip
+s2507	Ko‘paygan lipoproteinlar
+s2508	Qonda
+s2509	Sababi (birlamchi)
+s2510	Aterogenligi
+s2511	TG ↑↑↑
+s2512	LPL yoki apo C-II yetishmovchiligi
+s2513	Past; pankreatit xavfi
+s2514	IIa
+s2515	XS ↑↑
+s2516	LDL-retseptor nuqsoni (oilaviy giperxolesterinemiya)
+s2517	Juda yuqori
+s2518	IIb
+s2519	PZLP + ZPLP
+s2520	XS ↑↑, TG ↑
+s2521	Aralash (kombinatsiyalangan)
+s2522	Yuqori
+s2523	Qoldiq XM, OZLP
+s2524	XS ↑, TG ↑
+s2525	Apo E nuqsoni (E2/E2)
+s2526	TG ↑↑
+s2527	Oilaviy gipertriglitseridemiya; ko‘pincha ikkilamchi (diabet, semirish, alkogol)
+s2528	O‘rtacha
+s2529	XM + ZPLP
+s2530	Aralash
+s2531	O‘rtacha; pankreatit xavfi
+s2532	**Ikkilamchi** dislipoproteinemiyalar: qandli diabet, gipotireoz, nefrotik sindrom, xolestaz, semirish, alkogolizm, ayrim dorilar.
+s2533	5. O‘t tosh kasalligi
+s2534	O‘tda xolesterin o‘t kislotalari va fosfatidilxolin bilan mitsellalar hosil qilib erigan holda bo‘ladi. Ular nisbati buzilganda (xolesterin ko‘p yoki o‘t kislotalari/fosfolipidlar kam) o‘t **xolesteringa o‘ta to‘yingan (“litogen”)** bo‘lib qoladi; o‘t pufagida xolesterin kristallari cho‘kadi va **xolesterin toshlari** hosil bo‘ladi (barcha toshlarning ≈ 80 % i). Xavf omillari: ayol jinsi, homiladorlik, estrogenlar, semirish, tez ozish, yuqori kaloriyali parhez, o‘t pufagi motorikasining susayishi, yonbosh ichak kasalliklari (o‘t kislotalari qayta so‘rilmaydi).
+s2535	**Davolashning biokimyoviy asoslari: ursodezoksixol** (va xenodezoksixol) kislota preparatlari — o‘t kislotalari fondini oshirib, o‘tdagi xolesterin eruvchanligini yaxshilaydi va jigarda xolesterin sintezini kamaytiradi (mayda xolesterin toshlarini eritadi); jarrohlik (xolesistektomiya). **Pigment toshlar** (kalsiy bilirubinat) gemolitik anemiyalar va o‘t yo‘llari infeksiyasida hosil bo‘ladi.
+s2536	6. Yog‘lar almashinuvining boshqarilishi va buzilishlari
+s2537	**To‘qlik davrida** (insulin ↑): glyukozadan yog‘ kislotalari va TAG sintezi kuchayadi (jigarda), ZPLP hosil bo‘ladi; yog‘ to‘qimasida LPL faollanadi, yog‘ zahiraga to‘planadi; lipoliz ingibirlanadi.
+s2538	**Ochlik davrida** (glyukagon, adrenalin, kortizol ↑): yog‘ to‘qimasida lipoliz kuchayadi, yog‘ kislotalari mushak va jigarda oksidlanadi, jigarda keton tanachalari hosil bo‘ladi.
+s2539	**Semirish** — energiya iste’molining sarfdan uzoq vaqt ortiqligi natijasida yog‘ to‘qimasining ko‘payishi (tana massasi indeksi ≥ 30 kg/m^2^). Yog‘ to‘qimasi endokrin a’zo: **leptin** (to‘qlik signali, gipotalamusga ta’sir qiladi), adiponektin, sitokinlar ishlab chiqaradi. Semirishda leptinga rezistentlik, insulinga rezistentlik, dislipidemiya, arterial gipertenziya rivojlanadi — **metabolik sindrom** (15- mavzu). **Bolalarda semirish** ko‘pincha ortiqcha ovqatlanish va kam harakatlilik bilan bog‘liq; kamdan-kam hollarda leptin yoki uning retseptori genining nuqsoni sabab bo‘ladi.
+s2540	**Sfingolipidozlar** — sfingolipidlarni lizosomalarda parchalovchi fermentlarning tug‘ma yetishmovchiligi; lipidlar ko‘proq nerv to‘qimasi, jigar va taloqda to‘planadi.
+s2541	Jadval 10.3. Asosiy sfingolipidozlar
+s2542	To‘planadigan lipid
+s2543	Tey–Saks kasalligi
+s2544	Geksozaminidaza A
+s2545	GM2-gangliozid
+s2546	Rivojlanish regressi, ko‘r bo‘lish, to‘r pardada “olcha dog‘i”
+s2547	Gosher kasalligi
+s2548	β- Glyukotserebrozida za
+s2549	Glyukotserebrozi d
+s2550	Gepatosplenomegaliya, suyak shikastlanishi, sitopeniyalar
+s2551	Niman–Pik kasalligi
+s2552	Sfingomielinaza
+s2553	Gepatosplenomegaliya, nevrologik buzilishlar, “olcha dog‘i”
+s2554	Fabri kasalligi
+s2555	α-Galaktozidaza A
+s2556	Globotriaozilsera mid
+s2557	Og‘riqli neyropatiya, buyrak va yurak shikastlanishi (X-bog‘langan)
+s2558	Krabbe kasalligi
+s2559	Galaktotserebrozidaza
+s2560	Galaktotserebrozi d
+s2561	Demiyelinizatsiya
+s2562	Ayrim sfingolipidozlarda (Gosher, Fabri) **ferment o‘rnini bosuvchi terapiya** qo‘llaniladi.
+s2563	1-ish: qon zardobida umumiy xolesterinni fermentativ usulda aniqlash (biokimyoviy analizatorda)
+s2564	Usul asosi (XOD-PAP):
+s2565	**Xolesterinesteraza**: xolesterin efirlari + H2O → xolesterin + yog‘ kislotalari;
+s2566	**Xolesterinoksidaza**: xolesterin + O2 → xolest-4-en-3-on + H2O2;
+s2567	**Peroksidaza**: 2H2O2 + 4-aminoantipirin + fenol → pushti rangli xinonimin + 4H2O. Rang intensivligi umumiy xolesterin miqdoriga proporsional (500 nm).
+s2568	Uchta probirkaga 1 ml dan ishchi reagent quying.
+s2569	1-siga 10 mkl zardob, 2-siga 10 mkl standart (5,17 mmol/l), 3-siga 10 mkl suv qo‘shing.
+s2570	Aralashtirib, 37 °C da 10 daqiqa saqlang.
+s2571	500 nm da nazoratga nisbatan optik zichlikni o‘lchang (analizatorda avtomatik). **Hisoblash:** C (mmol/l) = (Enamuna / Estandart) × 5,17
+s2572	**Baholash:** < 5,2 mmol/l — maqbul; 5,2–6,2 — chegaraviy yuqori; ≥ 6,2 — yuqori. Tahlil 12–14 soatlik ochlikdan keyin olinadi.
+s2573	2-ish: xolesteringa sifat reaksiyasi (Liberman–Burxard reaksiyasi)
+s2574	Quruq probirkaga 1 ml xolesterinning xloroformdagi eritmasini quying.
+s2575	10 tomchi sirka angidridi va 1–2 tomchi konsentrlangan sulfat kislota qo‘shing (ehtiyot bo‘ling!).
+s2576	Rang o‘zgarishini kuzating. **Natija va tahlil:** avval pushti, so‘ng ko‘k va **yashil** rang hosil bo‘ladi — xolesterinning sulfat kislota ta’sirida degidratatsiyalanib, rangli birikmalar hosil qilishi. Bu reaksiya ilgari xolesterinni miqdoriy aniqlash (Ilk usuli) asosi bo‘lgan.
+s2577	3-ish: lipid spektri natijalarini talqin qilish (vaziyat bo‘yicha)
+s2578	O‘qituvchi bergan natijalar bo‘yicha: umumiy xolesterin, triglitseridlar, PZLP- va YuZLP- xolesterinni me’yor bilan solishtiring; aterogenlik koeffitsientini hisoblang; Fredrikson tasnifi bo‘yicha dislipoproteinemiya turini aniqlang. Agar PZLP-XS to‘g‘ridan-to‘g‘ri o‘lchanmagan bo‘lsa, Fridvald formulasi bilan hisoblang (TG < 4,5 mmol/l bo‘lganda): PZLP-XS = umumiy XS − YuZLP- XS − TG / 2,2.
+s2579	Ko‘nikma: lipid spektri bo‘yicha ateroskleroz xavfini baholash
+s2580	Qonni 12–14 soat ochlikdan keyin olishni ta’minlang.
+s2581	Umumiy XS, TG, YuZLP-XS va PZLP-XS ni me’yor bilan solishtiring.
+s2582	Boshqa xavf omillarini (yosh, jins, chekish, gipertenziya, diabet, irsiyat) qo‘shib baholang.
+s2583	Dislipidemiya turini aniqlang va ikkilamchi sabablarni (gipotireoz, diabet, nefrotik sindrom) istisno qilishni tavsiya qiling.
+s2584	Ko‘nikma: statinlarning ta’sir mexanizmini tushuntirish
+s2585	GMG-KoA-reduktaza xolesterin sintezining kalit fermenti ekanini ko‘rsating.
+s2586	Statinlar uning raqobatli ingibitori ekanini ayting.
+s2587	Hujayrada xolesterin kamayganda SREBP faollanib, LDL-retseptorlar sintezi ortishini tushuntiring.
+s2588	Natijada qondan PZLP olinishi kuchayib, PZLP-XS kamayishini ko‘rsating.
+s2589	Nojo‘ya ta’sirlarini (miopatiya — KFK oshishi, transaminazalar oshishi) va nazorat tahlillarini ayting.
+s2590	Xolesterinning tuzilishi va biologik vazifalari qanday?
+s2591	Xolesterinning ekzogen va endogen manbalari qanday?
+s2592	Xolesterin biosintezining asosiy bosqichlarini sanang.
+s2593	GMG-KoA-reduktaza qanday boshqariladi?
+s2594	Statinlar qanday ta’sir qiladi?
+s2595	Xolesterin qonda qanday tashiladi?
+s2596	LDL-retseptorlarning ahamiyati qanday?
+s2597	LXAT qanday reaksiyani katalizlaydi va uning ahamiyati qanday?
+s2598	Teskari xolesterin tashilishi nima?
+s2599	Xolesterin organizmdan qanday chiqariladi?
+s2600	Aterosklerozning biokimyoviy mexanizmini tushuntiring.
+s2601	Aterogenlik koeffitsienti qanday hisoblanadi?
+s2602	Oilaviy giperxolesterinemiyaning biokimyoviy asosi nima?
+s2603	O‘t tosh kasalligi qanday hosil bo‘ladi va qanday davolanadi?
+s2604	Sfingolipidozlar nima? Misollar keltiring.
+s2605	Xolesterin sintezining kalit fermenti qaysi?
+s2606	Skvalensintaza
+s2607	Xolesterin qaysi moddalarning sintezi uchun asos bo‘lmaydi?
+s2608	Vitamin D3
+s2609	Prostaglandinlar
+s2610	Testosteron
+s2611	Statinlarning ta’sir mexanizmi qanday?
+s2612	Ichakda xolesterin so‘rilishini kamaytiradi
+s2613	O‘t kislotalarini bog‘laydi
+s2614	GMG-KoA-reduktazani raqobatli ingibirlaydi
+s2615	LPL ni faollashtiradi
+s2616	LXAT ni ingibirlaydi
+s2617	Qondagi xolesterinning asosiy qismi qaysi lipoproteinlar tarkibida?
+s2618	LDL-retseptorlar qaysi apoproteinni taniydi?
+s2619	Apo A-II
+s2620	Lesitin-xolesterin-atsiltransferazani (LXAT) qaysi apoprotein faollashtiradi?
+s2621	Xolesterinning organizmdan chiqarilishining asosiy yo‘li qaysi?
+s2622	O‘t kislotalariga aylanib, o‘t bilan chiqishi
+s2623	CO2 va H2O gacha oksidlanishi
+s2624	Siydik bilan o‘zgarmagan holda chiqishi
+s2625	Ter bilan chiqishi
+s2626	O‘pka orqali chiqishi
+s2627	Makrofaglar ko‘pikli hujayralarga qanday aylanadi?
+s2628	Xilomikronlarni yutib
+s2629	Modifikatsiyalangan PZLP ni “tozalovchi” retseptorlar orqali cheksiz yutib
+s2630	YuZLP ni yutib
+s2631	LDL-retseptorlar ko‘payishi hisobiga
+s2632	Glyukozani yutib
+s2633	Antiaterogen lipoproteinlar qaysilar?
+s2634	Lipoprotein(a)
+s2635	Oilaviy giperxolesterinemiyaning sababi nima?
+s2636	LPL yetishmovchiligi
+s2637	Apo C-II yetishmovchiligi
+s2638	LXAT yetishmovchiligi
+s2639	LDL-retseptor geni mutatsiyasi
+s2640	Apo A-I yetishmovchiligi
+s2641	Aterogenlik koeffitsientining me’yori qancha?
+s2642	1,7 dan ko‘p
+s2643	5,2 dan kam
+s2644	Xolesterin toshlarini eritish uchun qaysi preparat qo‘llaniladi?
+s2645	Ursodezoksixol kislota
+s2646	Statinlar
+s2647	Pankreatin
+s2648	Fibratlar
+s2649	Geparin
+s2650	Gosher kasalligida qaysi ferment yetishmaydi?
+s2651	β-Glyukotserebrozidaza
+s2652	Fermentativ usulda xolesterin aniqlashda H2O2 hosil qiluvchi ferment qaysi?
+s2653	Xolesterinesteraza
+s2654	Xolesterinoksidaza
+s2655	Gipotireozda giperxolesterinemiya rivojlanishining asosiy sababi nima?
+s2656	Xolesterin sintezining kuchayishi
+s2657	Ichakda so‘rilishning kuchayishi
+s2658	LXAT faolligining oshishi
+s2659	O‘t kislotalari sintezining kuchayishi
+s2660	LDL-retseptorlar sonining kamayishi va xolesterin chiqarilishining susayishi
+s2661	12 yoshli bolada Axill paylari sohasida qattiq tugunchalar (pay ksantomalari), qovoqlarda sariq dog‘lar (ksantelazmalar) aniqlandi. Umumiy xolesterin 16 mmol/l, triglitseridlar me’yorida. Otasi 38 yoshida miokard infarktidan vafot etgan, onasining xolesterini 9 mmol/l.
+s2662	Tashxis qanday? Biokimyoviy mexanizmini tushuntiring. Statinlar samarasi nima uchun cheklangan bo‘lishi mumkin?
+s2663	Gomozigot oilaviy giperxolesterinemiya (IIa tip) — LDL-retseptor genining ikkala allelida mutatsiya (ota-onaning ikkalasi geterozigota). PZLP hujayralarga kirmaydi va qonda to‘planadi; hujayralar xolesterin “taqchilligini” sezib, GMG-KoA-reduktaza va sintezni kamaytirmaydi. Ortiqcha PZLP makrofaglar tomonidan “tozalovchi” retseptorlar orqali yutiladi — ksantomalar va erta ateroskleroz. Statinlar asosan LDL-retseptorlar sonini oshirish orqali ta’sir qiladi; retseptorlar butunlay ishlamasa, samara kam bo‘ladi — LDL-aferez, PCSK9 ingibitorlari va boshqa usullar kerak.
+s2664	45 yoshli semiz ayol (TVI 34 kg/m^2^) yog‘li ovqatdan keyin o‘ng qovurg‘a ostida kuchli og‘riq xurujlaridan shikoyat qiladi. Ultratovushda o‘t pufagida mayda rentgen-manfiy toshlar aniqlandi.
+s2665	Toshlarning kimyoviy tarkibi qanday bo‘lishi ehtimoli bor? Hosil bo‘lish mexanizmini tushuntiring.
+s2666	Xolesterin toshlari (rentgen-manfiy). Semirish, ayol jinsi va estrogenlar jigarda xolesterin sintezi va uning o‘tga chiqarilishini oshiradi, o‘t kislotalari sintezi esa nisbatan kamayadi; o‘t xolesteringa o‘ta to‘yingan (litogen) bo‘lib qoladi. O‘t pufagi motorikasining susayishi kristallar hosil bo‘lishiga yordam beradi. Mayda xolesterin toshlari ursodezoksixol kislota bilan eritilishi mumkin; tez-tez xurujlarda — xolesistektomiya.
+s2667	55 yoshli erkak chekadi, arterial bosimi 160/95 mm sim. ust. Tahlil: umumiy xolesterin 6,8 mmol/l, YuZLP-XS 0,9 mmol/l, triglitseridlar 2,2 mmol/l.
+s2668	Aterogenlik koeffitsientini va PZLP-XS ni hisoblang. Xavfni baholang.
+s2669	KA = (6,8 − 0,9) / 0,9 ≈ 6,6 (me’yor < 3,0). Fridvald formulasi: PZLP-XS = 6,8 − 0,9 − 2,2 / 2,2 = 6,8 − 0,9 − 1,0 = 4,9 mmol/l (maqbul < 3,0). YuZLP past, PZLP va TG yuqori — aterogen dislipidemiya. Chekish va arterial gipertenziya bilan birga yurak-qon tomir kasalliklari xavfi juda yuqori. Tavsiya: chekishni tashlash, parhez, jismoniy faollik, statinlar, bosimni nazorat qilish.
+s2670	Xolesterin vazifalari

@@ -1,233 +1,241 @@
-s0650	**Langarli** oqsillar — lipid “langar” (yog‘ kislota, prenil, glikozilfosfatidilinozitol) orqali biriktirilgan. **Suyuq-mozaik model** (S. Singer va G. Nikolson, 1972): membrana — suyuq lipid qo‘sh qavat bo‘lib, unda oqsillar “suzib yuradi” va lateral harakatlana oladi.
-s0651	2. Membranalarning vazifalari va umumiy xususiyatlari
-s0652	Vazifalari:
-s0653	**To‘siq (barer)** — hujayra va organellalar ichki muhitini ajratadi, kompartmentalizatsiya.
-s0654	**Transport** — moddalarni tanlab o‘tkazish.
-s0655	**Retseptor (signal)** — gormonlar, mediatorlar va boshqa signallarni qabul qilish.
-s0656	**Fermentativ** — membranaga bog‘langan fermentlar (nafas zanjiri, ATF-sintaza, adenilatsiklaza).
-s0657	**Energiya o‘zgartirish** — mitoxondriyada elektrokimyoviy gradient hosil bo‘lishi va ATF sintezi.
-s0658	**Hujayralararo aloqa** — tirqishli birikmalar, adgeziya molekulalari, antigenlik (qon guruhlari, gistomoslik antigenlari).
-s0659	**Elektrogen** — membrana potensiali hosil qilish va qo‘zg‘alishni o‘tkazish. **Umumiy xususiyatlari:**
-s0660	**Ko‘ndalang asimmetriya** — tashqi va ichki qavatlar tarkibi har xil: tashqi qavatda fosfatidilxolin, sfingomielin va glikolipidlar, ichki qavatda fosfatidilserin va fosfatidiletanolamin ko‘p. Lipidlarning bir qavatdan ikkinchisiga o‘tishi (“flip-flop”) juda sekin va maxsus fermentlar (flippazalar) bilan amalga oshadi. Uglevod qismlar faqat tashqi yuzada (glikokaliks).
-s0661	**Suyuqlik** — lipidlar va oqsillarning lateral harakati; to‘yinmagan yog‘ kislotalari ko‘payganda va harorat oshganda suyuqlik ortadi, xolesterin va to‘yingan yog‘ kislotalari uni kamaytiradi.
-s0662	**Tanlab o‘tkazuvchanlik** — gidrofob kichik molekulalar (O2, CO2, steroidlar) erkin o‘tadi; ionlar va qutbli molekulalar faqat maxsus oqsillar orqali o‘tadi.
-s0663	Apoptozda fosfatidilserin membrananing tashqi qavatiga chiqadi — bu makrofaglar uchun “meni yut” signali. Trombotsitlar faollanganda ham fosfatidilserin tashqariga chiqib, ivish omillari kompleksi uchun yuza hosil qiladi.
-s0664	3. Moddalarning membrana orqali tashilishi
-s0665	Rasm 3.1
-s0666	Moddalarning membrana orqali tashilish turlari (Severin E.S. asosida chizilgan)
-s0667	Jadval 3.1. Membrana transportining turlari
-s0668	Turi
-s0669	Gradient bo‘yicha
-s0670	Oddiy diffuziya
-s0671	Sarflanmaydi
-s0672	Konsentratsiya gradienti bo‘yicha
-s0673	O2, CO2, mochevina, etanol, steroid gormonlar
-s0674	Yengillashgan diffuziya: kanallar
-s0675	Na+, K+, Ca2+, Cl- ion kanallari; akvaporinlar (suv)
-s0676	Yengillashgan diffuziya: tashuvchilar
-s0677	Glyukoza tashuvchilari GLUT1– GLUT5
-s0678	Birlamchi faol transport
-s0679	ATF gidrolizi
-s0680	Gradientga qarshi
-s0681	Na+,K+-ATFaza (3 Na+ tashqariga, 2 K+ ichkariga), Ca2+-ATFaza, H+,K+- ATFaza (me’da)
-s0682	Ikkilamchi faol transport
-s0683	Na+ gradienti energiyasi
-s0684	Simport: Na+-glyukoza (SGLT1 ichakda, SGLT2 buyrakda), Na+aminokislotalar; antiport: Na+/Ca2+, Na+/H+
-s0685	Endotsitoz va ekzotsitoz
-s0686	Sarflanadi
-s0687	Pinotsitoz, fagotsitoz, retseptor orqali endotsitoz (LDL, transferrin), sekretsiya
-s0688	**Tashuvchilar** (uniport, simport, antiport) ferment kabi xossalarga ega: spetsifiklik, to‘yinish (Vmax), raqobatli ingibitsiya. Masalan, GLUT4 insulinga sezgir (mushak, yog‘ to‘qimasi): insulin uni hujayra ichidagi pufakchalardan membranaga chiqaradi.
-s0689	4. Membrana retseptorlari va signal o‘tkazish
-s0690	Signal molekulalari (**ligandlar**, birlamchi vositachilar) — gormonlar, neyromediatorlar, sitokinlar, o‘sish omillari. Gidrofil ligandlar (peptid gormonlar, katexolaminlar) membranadan o‘tmaydi va **membrana retseptorlari** orqali ta’sir qiladi; gidrofob ligandlar (steroid va tireoid gormonlar, kalsitriol) membranadan o‘tib, **hujayra ichidagi (yadro) retseptorlari** bilan bog‘lanadi va genlar transkripsiyasini o‘zgartiradi.
-s0691	Jadval 3.2. Membrana retseptorlarining asosiy turlari
-s0692	Retseptor turi
-s0693	Signal o‘tkazish mexanizmi
-s0694	Ion kanali bilan bog‘langan (ionotrop)
-s0695	Ligand bog‘langanda kanal ochiladi — tez javob (millisekundlar)
-s0696	N-xolinoretseptor, GAMKA, NMDA-glutamat retseptori
-s0697	G-oqsil bilan bog‘langan (7 marta membranani kesib o‘tuvchi)
-s0698	G-oqsil faollanib, effektor fermentni boshqaradi; ikkilamchi vositachilar
-s0699	β- va α-adrenoretseptorlar, glyukagon, vazopressin, Mxolinoretseptorlar
-s0700	Tirozinkinaza faolligiga ega
-s0701	Ligand bog‘langach dimerlanish va autofosforlanish; signal oqsillari (Ras, MAP-kinazalar, PI3-kinaza)
-s0702	Insulin retseptori, epidermal o‘sish omili (EGF) retseptori
-s0703	Tirozinkinazalar bilan bog‘langan (JAK-STAT)
-s0704	Retseptorga bog‘langan JAKkinazalar STAT oqsillarni fosforlaydi
-s0705	O‘sish gormoni, prolaktin, eritropoetin, interferonlar
-s0706	Guanilatsiklaza faolligiga ega
-s0707	cGMF hosil bo‘ladi
-s0708	Natriyuretik peptid retseptori
-s0709	G-oqsillar tizimi
-s0710	**G-oqsillar** — GTF ni bog‘lovchi geterotrimer oqsillar (α, β, γ subbirliklar). Tinch holatda α-subbirlik GDF bilan bog‘langan. Retseptor faollanganda GDF GTF ga almashadi, α-GTF ajralib effektor fermentga ta’sir qiladi; α-subbirlikning o‘z GTFaza faolligi GTF ni GDF ga gidrolizlab signalni to‘xtatadi.
-s0711	**Gs** — adenilatsiklazani faollashtiradi (cAMF ↑);
-s0712	**Gi** — adenilatsiklazani ingibirlaydi (cAMF ↓);
-s0713	**Gq** — fosfolipaza C ni faollashtiradi. **Adenilatsiklaza tizimi:** adenilatsiklaza ATF dan **cAMF** hosil qiladi. cAMF **protein kinaza A** ning boshqaruvchi subbirliklariga bog‘lanib, katalitik subbirliklarni ajratadi; ular maqsad oqsillarni fosforlaydi (glikogenfosforilaza kinazasi, gormonga sezgir lipaza va boshqalar). cAMF **fosfodiesteraza** ta’sirida AMF gacha parchalanadi (kofein va teofillin fosfodiesterazani ingibirlab, cAMF ta’sirini uzaytiradi).
-s0714	**Inozitolfosfat tizimi:** fosfolipaza C membranadagi fosfatidilinozitol-4,5-bisfosfat (FIF2) ni ikkita ikkilamchi vositachiga parchalaydi: **inozitol-1,4,5-trifosfat (IF~3~)** — endoplazmatik to‘rdan Ca2+
-s0715	ni chiqaradi; **diatsilglitserin (DAG)** — Ca2+ bilan birga **protein kinaza C** ni faollashtiradi. Ca2+ ning ko‘p ta’sirlari **kalmodulin** oqsili orqali amalga oshadi.
-s0716	Rasm 3.2
-s0717	Adenilatsiklaza va inozitolfosfat signal tizimlari (Severin E.S. asosida chizilgan)
-s0718	Jadval 3.3. Ikkilamchi vositachilar
-s0719	Ikkilamchi vositachi
-s0720	Hosil qiluvchi ferment
-s0721	Ta’sir nishoni
-s0722	cAMF
-s0723	Adenilatsiklaza
-s0724	Protein kinaza A, ion kanallari
-s0725	cGMF
-s0726	Guanilatsiklaza (NO, natriyuretik peptid)
-s0727	Protein kinaza G — silliq mushak bo‘shashishi
-s0728	IF3
-s0729	Fosfolipaza C
-s0730	Endoplazmatik to‘rdagi Ca2+-kanallar
-s0731	DAG
-s0732	Protein kinaza C
-s0733	Ca2+
-s0734	Kanallar orqali kiradi yoki depodan chiqadi
-s0735	Kalmodulin, protein kinaza C, mushak qisqarishi
-s0736	NO
-s0737	NO-sintaza (arginindan)
-s0738	Eruvchan guanilatsiklaza
-s0739	Vabo toksini Gs-oqsilning α-subbirligini ADF-ribozillab, uning GTFaza faolligini yo‘qotadi — G-oqsil doimiy faol qoladi, ichak epiteliysida cAMF keskin ko‘payadi, Cl- va suv ichak bo‘shlig‘iga chiqadi — og‘ir diareya. Ko‘kyo‘tal toksini esa Gi-oqsilni bloklaydi. Nitroglitserin NO ajratib, cGMF orqali tomirlarni kengaytiradi; sildenafil cGMF ni parchalovchi fosfodiesteraza-5 ni ingibirlaydi.
-s0740	5. Membranalarning shikastlanishi
-s0741	Membranalar shikastlanishi ko‘plab kasalliklar patogenezining asosiy bo‘g‘ini:
-s0742	**Lipidlarning perekisli oksidlanishi (LPO)** — erkin radikallar (O2
-s0743	−, •OH) ko‘p to‘yinmagan yog‘ kislotalarini oksidlaydi; membrana o‘tkazuvchanligi ortadi, ferment va retseptorlar ishdan chiqadi. Antioksidant himoya: vitamin E, C, glutation, superoksiddismutaza, katalaza, glutationperoksidaza.
-s0744	**Fosfolipazalarning faollanishi** (ishemiya, Ca2+ ortiqchasi) — fosfolipidlar parchalanadi.
-s0745	**Detergent ta’siri** — o‘t kislotalari, yog‘ kislotalari ortiqchasi.
-s0746	**Mexanik va osmotik shikastlanish**, komplement tizimining membranani teshuvchi kompleksi, bakterial toksinlar.
-s0747	**Tug‘ma nuqsonlar** — membrana skeleti oqsillari (spektrin) nuqsoni — irsiy sferotsitoz; ion kanallari kasalliklari (kanalopatiyalar) — mukovistsidoz (CFTR Cl--kanali).
-s0748	6. Laboratoriya ishi
-s0749	1-ish: eritrotsitlarning osmotik chidamliligini aniqlash
-s0750	0,7 % dan 0,2 % gacha (har 0,02–0,05 % farq bilan) NaCl eritmalaridan 1 ml dan probirkalarga quying.
-s0751	Har bir probirkaga 1 tomchi qon qo‘shib, aralashtiring va 1 soat qoldiring (yoki sentrifugalang).
-s0752	Eritma pushti rangga kirgan va cho‘kma bor eng yuqori konsentratsiyali probirka — **minimal  chidamlilik** (gemoliz boshlanishi).
-s0753	Cho‘kma butunlay yo‘q, eritma shaffof qizil (“lak qon”) bo‘lgan probirka — **maksimal  chidamlilik** (to‘liq gemoliz). **Baholash:** me’yorda minimal chidamlilik 0,46–0,48 %, maksimal — 0,32–0,34 % NaCl. Irsiy sferotsitozda chidamlilik pasayadi (gemoliz yuqoriroq konsentratsiyada boshlanadi), talassemiya va temir tanqisligi anemiyasida — ortadi (yupqa, yassi eritrotsitlar).
-s0754	**Tahlil:** gipotonik muhitda suv osmos orqali eritrotsitga kiradi, u shishib, membranasi yoriladi va gemoglobin chiqadi. Chidamlilik membrananing tarkibi, sitoskelet holati va hujayra shakliga (sirt/hajm nisbati) bog‘liq.
-s0755	2-ish: membrana o‘tkazuvchanligiga detergent va haroratning ta’siri (namoyish)
-s0756	Uchta probirkaga 2 ml 0,9 % NaCl dagi eritrotsitlar suspenziyasini quying.
-s0757	1-probirkaga 3 tomchi 1 % li o‘t kislota tuzi (yoki saponin), 2-probirkaga 3 tomchi etanol qo‘shing; 3-probirkani 60 °C da 10 daqiqa qizdiring.
-s0758	Nazorat probirkasi bilan solishtiring. **Natija va tahlil:** detergent va qizdirish ta’sirida membrana lipidlari va oqsillari buziladi — gemoliz (eritma shaffof qizil). Bu membrana butunligi buzilishining oqibatini ko‘rsatadi.
-s0759	Ko‘nikma: moddaning transport turini aniqlash
-s0760	Moddaning tabiatini aniqlang: gidrofob kichik molekula, ion, qutbli molekula yoki makromolekula.
-s0761	Gradient yo‘nalishini aniqlang: gradient bo‘yicha — passiv, gradientga qarshi — faol.
-s0762	Faol transportda energiya manbayini aniqlang: ATF (birlamchi) yoki boshqa ion gradienti (ikkilamchi).
-s0763	To‘yinish va spetsifiklik bormi — tashuvchi ishtirokini tekshiring.
-s0764	Misol bilan xulosa qiling (masalan, ichakda glyukoza — SGLT1 ikkilamchi faol, keyin GLUT2 orqali qonga yengillashgan diffuziya).
-s0765	Ko‘nikma: gormon ta’sir mexanizmini tushuntirish
-s0766	Gormonning kimyoviy tabiatini aniqlang (gidrofil yoki gidrofob).
-s0767	Retseptor joylashuvini aniqlang (membrana yoki hujayra ichi).
-s0768	Membrana retseptori bo‘lsa — G-oqsil turini va ikkilamchi vositachini aniqlang.
-s0769	Protein kinaza va fosforlanadigan nishon oqsilni ko‘rsating.
-s0770	Signal qanday to‘xtatilishini tushuntiring (GTFaza, fosfodiesteraza, fosfatazalar).
-s0771	Biologik membranalarning kimyoviy tarkibi qanday?
-s0772	Membrana lipidlarining turlari va xususiyatlari qanday?
-s0773	Integral va periferik oqsillarning farqi nimada?
-s0774	Suyuq-mozaik model nimani tushuntiradi?
-s0775	Membranalarning asosiy vazifalarini sanang.
-s0776	Ko‘ndalang asimmetriya nima?
-s0777	Membrana suyuqligiga qanday omillar ta’sir qiladi?
-s0778	Passiv transport turlarini tavsiflang.
-s0779	Birlamchi va ikkilamchi faol transportning farqi nimada?
-s0780	Na+,K+-ATFazaning ahamiyati qanday?
-s0781	Membrana retseptorlarining asosiy turlarini sanang.
-s0782	G-oqsillar qanday ishlaydi?
-s0783	Adenilatsiklaza tizimini tushuntiring.
-s0784	Inozitolfosfat tizimi qanday ishlaydi?
-s0785	Membranalar shikastlanishining sabablari va oqibatlari qanday?
-s0786	Membranada lipid qo‘sh qavat hosil bo‘lishiga fosfolipidlarning qaysi xossasi sabab bo‘ladi?
-s0787	Suvda yaxshi erishi
-s0788	Musbat zaryadi
-s0789	Faqat gidrofobligi
-s0790	Kovalent bog‘lar hosil qilishi
-s0791	Amfifilligi
-s0792	Membrana suyuqligini boshqaruvchi “bufer” lipid qaysi?
-s0793	Fosfatidilxolin
-s0794	Sfingomielin
-s0795	Xolesterin
-s0796	Gangliozid
-s0797	Triatsilglitserin
-s0798	Fosfatidilserin asosan membrananing qaysi qavatida joylashgan?
-s0799	Tashqi qavatida
-s0800	Ichki (sitoplazmatik) qavatida
-s0801	Ikkala qavatida teng
-s0802	Glikokaliksda
-s0803	Faqat mitoxondriyada
-s0804	Na+,K+-ATFaza bitta ATF hisobiga qancha ionni tashiydi?
-s0805	3 Na+ tashqariga, 2 K+ ichkariga
-s0806	2 Na+ tashqariga, 3 K+ ichkariga
-s0807	1 Na+ va 1 K+
-s0808	3 Na+ ichkariga, 2 K+ tashqariga
-s0809	Faqat Na+
-s0810	Ichakda glyukozaning Na+ bilan birga so‘rilishi qanday transport?
-s0811	Yengillashgan diffuziya
-s0812	Ikkilamchi faol transport (simport)
-s0813	Pinotsitoz
-s0814	Steroid gormonlarning retseptorlari qayerda joylashgan?
-s0815	Plazmatik membranada
-s0816	Mitoxondriya tashqi membranasida
-s0817	Golji apparatida
-s0818	Lizosomalarda
-s0819	Hujayra ichida (sitoplazma va yadroda)
-s0820	Adenilatsiklaza qaysi ikkilamchi vositachini hosil qiladi?
-s0821	Fosfolipaza C ta’sirida FIF2 dan qaysi vositachilar hosil bo‘ladi?
-s0822	IF3 va DAG
-s0823	cAMF va cGMF
-s0824	Araxidon kislota va prostaglandinlar
-s0825	Ca2+ va kalmodulin
-s0826	NO va cGMF
-s0827	Insulin retseptori qaysi turga kiradi?
-s0828	Ion kanali bilan bog‘langan
-s0829	G-oqsil bilan bog‘langan
-s0830	Guanilatsiklaza
-s0831	Hujayra ichidagi retseptor
-s0832	Vabo toksini qanday ta’sir qiladi?
-s0833	Gi-oqsilni bloklaydi
-s0834	Gs-oqsilni doimiy faol holatda saqlaydi
-s0835	Fosfodiesterazani faollashtiradi
-s0836	Na+,K+-ATFazani ingibirlaydi
-s0837	Adenilatsiklazani parchalaydi
-s0838	Yurak glikozidlari qaysi fermentni ingibirlaydi?
-s0839	Ca2+-ATFazani
-s0840	Na+,K+-ATFazani
-s0841	H+,K+-ATFazani
-s0842	Adenilatsiklazani
-s0843	Fosfolipaza C ni
-s0844	Kofein qanday ta’sir orqali cAMF miqdorini oshiradi?
-s0845	Adenilatsiklazani faollashtiradi
-s0846	Gs-oqsilni faollashtiradi
-s0847	Fosfodiesterazani ingibirlaydi
-s0848	Protein kinaza A ni faollashtiradi
-s0849	Retseptorlarni ko‘paytiradi
-s0850	Me’yorda eritrotsitlar osmotik chidamliligining minimal chegarasi qancha?
-s0851	0,9 % NaCl
-s0852	0,7 % NaCl
-s0853	0,2 % NaCl
-s0854	0,46–0,48 % NaCl
-s0855	0,1 % NaCl
-s0856	Insulinga sezgir glyukoza tashuvchisi qaysi?
-s0857	GLUT1
-s0858	GLUT2
-s0859	GLUT4
-s0860	GLUT5
-s0861	SGLT2
-s0862	Lipidlarning perekisli oksidlanishidan himoya qiluvchi yog‘da eruvchi vitamin qaysi?
-s0863	Vitamin A
-s0864	Vitamin D
-s0865	Vitamin K
-s0866	Vitamin E
-s0867	Vitamin B12
-s0868	Endemik hududdan kelgan bemorda kuniga 15–20 litrgacha suyuq, “guruch qaynatmasi”ga o‘xshash ich ketishi, keskin suvsizlanish va qon bosimining pasayishi kuzatilmoqda. Najasda Vibrio cholerae aniqlandi.
-s0869	Diareyaning biokimyoviy mexanizmini tushuntiring. Rehidratatsiya eritmasiga nima uchun glyukoza qo‘shiladi?
-s0870	Vabo toksini enterotsitlarda Gs-oqsilning α-subbirligini ADF-ribozillaydi; uning GTFaza faolligi yo‘qoladi va adenilatsiklaza doimiy faollashadi. cAMF ko‘payib, protein kinaza A orqali CFTR Cl--kanalini fosforlaydi — Cl-, ortidan Na+ va suv ichak bo‘shlig‘iga chiqadi. Og‘iz orqali rehidratatsiya eritmasidagi glyukoza SGLT1 (Na+-glyukoza simporti) orqali Na+ ni, ular bilan birga osmos bo‘yicha suvni so‘rilishini ta’minlaydi; bu tashuvchi cAMF ta’sirida buzilmaydi.
-s0871	Surunkali yurak yetishmovchiligi bilan og‘rigan bemor digoksin qabul qiladi. U ich ketishi tufayli kaliy yo‘qotgach, ko‘ngil aynishi, ko‘rishda sarg‘ish dog‘lar va yurak ritmi buzilishi paydo bo‘ldi.
-s0872	Digoksinning ta’sir mexanizmi qanday? Gipokaliyemiya nima uchun zaharlanishni kuchaytiradi?
-s0873	Digoksin kardiomiotsitlarda Na+,K+-ATFazani ingibirlaydi — hujayra ichida Na+ ko‘payadi, Na+/Ca2+ almashinuvchisi Ca2+ ni kamroq chiqaradi, hujayrada Ca2+ to‘planib qisqarish kuchayadi (musbat inotrop ta’sir). Digoksin K+ bilan ATFazaning bir xil joyi uchun raqobatlashadi: K+ kamayganda digoksin fermentga ko‘proq bog‘lanadi va ta’siri (toksikligi) kuchayadi — aritmiyalar rivojlanadi.
-s0874	8 yoshli bolada vaqti-vaqti bilan sariqlik, kamqonlik va taloq kattalashishi kuzatiladi. Qon surtmasida mayda sharsimon eritrotsitlar, osmotik chidamlilik pasaygan: gemoliz 0,60 % NaCl da boshlanadi. Otasida ham shunday kasallik bor.
-s0875	Tashxis qanday? Biokimyoviy asosi nima?
-s0876	Irsiy sferotsitoz (Minkovskiy–Shoffar kasalligi). Membrana skeleti oqsillari (spektrin, ankirin) nuqsoni tufayli lipid qo‘sh qavat sitoskeletga yaxshi bog‘lanmaydi, membrana bo‘laklari yo‘qoladi, eritrotsit sharsimon bo‘lib, sirt/hajm nisbati kamayadi. Bunday hujayralar shishishga kam chidaydi (osmotik chidamlilik pasaygan) va taloqda ushlanib parchalanadi — gemolitik anemiya, bilirubin oshishi (sariqlik), splenomegaliya.
-s0877	Membrana tarkibi
-s0878	Lipidlar ≈ 40 %, oqsillar 50–60 %, uglevodlar 2–10 %
-s0879	Suyuq-mozaik model
-s0880	Suyuq lipid qo‘sh qavat + unda harakatlanuvchi oqsillar (Singer– Nikolson)
-s0881	Asimmetriya
-s0882	Tashqarida fosfatidilxolin, sfingomielin, glikolipidlar; ichkarida fosfatidilserin
+s0649	2. Membranalarning vazifalari va umumiy xususiyatlari
+s0650	Vazifalari:
+s0651	**To‘siq (barer)** — hujayra va organellalar ichki muhitini ajratadi, kompartmentalizatsiya.
+s0652	**Transport** — moddalarni tanlab o‘tkazish.
+s0653	**Retseptor (signal)** — gormonlar, mediatorlar va boshqa signallarni qabul qilish.
+s0654	**Fermentativ** — membranaga bog‘langan fermentlar (nafas zanjiri, ATF-sintaza, adenilatsiklaza).
+s0655	**Energiya o‘zgartirish** — mitoxondriyada elektrokimyoviy gradient hosil bo‘lishi va ATF sintezi.
+s0656	**Hujayralararo aloqa** — tirqishli birikmalar, adgeziya molekulalari, antigenlik (qon guruhlari, gistomoslik antigenlari).
+s0657	**Elektrogen** — membrana potensiali hosil qilish va qo‘zg‘alishni o‘tkazish. **Umumiy xususiyatlari:**
+s0658	**Ko‘ndalang asimmetriya** — tashqi va ichki qavatlar tarkibi har xil: tashqi qavatda fosfatidilxolin, sfingomielin va glikolipidlar, ichki qavatda fosfatidilserin va fosfatidiletanolamin ko‘p. Lipidlarning bir qavatdan ikkinchisiga o‘tishi (“flip-flop”) juda sekin va maxsus fermentlar (flippazalar) bilan amalga oshadi. Uglevod qismlar faqat tashqi yuzada (glikokaliks).
+s0659	**Suyuqlik** — lipidlar va oqsillarning lateral harakati; to‘yinmagan yog‘ kislotalari ko‘payganda va harorat oshganda suyuqlik ortadi, xolesterin va to‘yingan yog‘ kislotalari uni kamaytiradi.
+s0660	**Tanlab o‘tkazuvchanlik** — gidrofob kichik molekulalar (O2, CO2, steroidlar) erkin o‘tadi; ionlar va qutbli molekulalar faqat maxsus oqsillar orqali o‘tadi.
+s0661	Apoptozda fosfatidilserin membrananing tashqi qavatiga chiqadi — bu makrofaglar uchun “meni yut” signali. Trombotsitlar faollanganda ham fosfatidilserin tashqariga chiqib, ivish omillari kompleksi uchun yuza hosil qiladi.
+s0662	3. Moddalarning membrana orqali tashilishi
+s0663	Rasm 3.1
+s0664	Moddalarning membrana orqali tashilish turlari (Severin E.S. asosida chizilgan)
+s0665	Jadval 3.1. Membrana transportining turlari
+s0666	Turi
+s0667	Gradient bo‘yicha
+s0668	Oddiy diffuziya
+s0669	Sarflanmaydi
+s0670	Konsentratsiya gradienti bo‘yicha
+s0671	O2, CO2, mochevina, etanol, steroid gormonlar
+s0672	Yengillashgan diffuziya: kanallar
+s0673	Na+, K+, Ca2+, Cl- ion kanallari; akvaporinlar (suv)
+s0674	Yengillashgan diffuziya: tashuvchilar
+s0675	Glyukoza tashuvchilari GLUT1– GLUT5
+s0676	Birlamchi faol transport
+s0677	ATF gidrolizi
+s0678	Gradientga qarshi
+s0679	Na+,K+-ATFaza (3 Na+ tashqariga, 2 K+ ichkariga), Ca2+-ATFaza, H+,K+- ATFaza (me’da)
+s0680	Ikkilamchi faol transport
+s0681	Na+ gradienti energiyasi
+s0682	Simport: Na+-glyukoza (SGLT1 ichakda, SGLT2 buyrakda), Na+aminokislotalar; antiport: Na+/Ca2+, Na+/H+
+s0683	Endotsitoz va ekzotsitoz
+s0684	Sarflanadi
+s0685	Pinotsitoz, fagotsitoz, retseptor orqali endotsitoz (LDL, transferrin), sekretsiya
+s0686	**Tashuvchilar** (uniport, simport, antiport) ferment kabi xossalarga ega: spetsifiklik, to‘yinish (Vmax), raqobatli ingibitsiya. Masalan, GLUT4 insulinga sezgir (mushak, yog‘ to‘qimasi): insulin uni hujayra ichidagi pufakchalardan membranaga chiqaradi.
+s0687	4. Membrana retseptorlari va signal o‘tkazish
+s0688	Signal molekulalari (**ligandlar**, birlamchi vositachilar) — gormonlar, neyromediatorlar, sitokinlar, o‘sish omillari. Gidrofil ligandlar (peptid gormonlar, katexolaminlar) membranadan o‘tmaydi va **membrana retseptorlari** orqali ta’sir qiladi; gidrofob ligandlar (steroid va tireoid gormonlar, kalsitriol) membranadan o‘tib, **hujayra ichidagi (yadro) retseptorlari** bilan bog‘lanadi va genlar transkripsiyasini o‘zgartiradi.
+s0689	Jadval 3.2. Membrana retseptorlarining asosiy turlari
+s0690	Retseptor turi
+s0691	Signal o‘tkazish mexanizmi
+s0692	Ion kanali bilan bog‘langan (ionotrop)
+s0693	Ligand bog‘langanda kanal ochiladi — tez javob (millisekundlar)
+s0694	N-xolinoretseptor, GAMKA, NMDA-glutamat retseptori
+s0695	G-oqsil bilan bog‘langan (7 marta membranani kesib o‘tuvchi)
+s0696	G-oqsil faollanib, effektor fermentni boshqaradi; ikkilamchi vositachilar
+s0697	β- va α-adrenoretseptorlar, glyukagon, vazopressin, Mxolinoretseptorlar
+s0698	Tirozinkinaza faolligiga ega
+s0699	Ligand bog‘langach dimerlanish va autofosforlanish; signal oqsillari (Ras, MAP-kinazalar, PI3-kinaza)
+s0700	Insulin retseptori, epidermal o‘sish omili (EGF) retseptori
+s0701	Tirozinkinazalar bilan bog‘langan (JAK-STAT)
+s0702	Retseptorga bog‘langan JAKkinazalar STAT oqsillarni fosforlaydi
+s0703	O‘sish gormoni, prolaktin, eritropoetin, interferonlar
+s0704	Guanilatsiklaza faolligiga ega
+s0705	cGMF hosil bo‘ladi
+s0706	Natriyuretik peptid retseptori
+s0707	G-oqsillar tizimi
+s0708	**G-oqsillar** — GTF ni bog‘lovchi geterotrimer oqsillar (α, β, γ subbirliklar). Tinch holatda α-subbirlik GDF bilan bog‘langan. Retseptor faollanganda GDF GTF ga almashadi, α-GTF ajralib effektor fermentga ta’sir qiladi; α-subbirlikning o‘z GTFaza faolligi GTF ni GDF ga gidrolizlab signalni to‘xtatadi.
+s0709	**Gs** — adenilatsiklazani faollashtiradi (cAMF ↑);
+s0710	**Gi** — adenilatsiklazani ingibirlaydi (cAMF ↓);
+s0711	**Gq** — fosfolipaza C ni faollashtiradi. **Adenilatsiklaza tizimi:** adenilatsiklaza ATF dan **cAMF** hosil qiladi. cAMF **protein kinaza A** ning boshqaruvchi subbirliklariga bog‘lanib, katalitik subbirliklarni ajratadi; ular maqsad oqsillarni fosforlaydi (glikogenfosforilaza kinazasi, gormonga sezgir lipaza va boshqalar). cAMF **fosfodiesteraza** ta’sirida AMF gacha parchalanadi (kofein va teofillin fosfodiesterazani ingibirlab, cAMF ta’sirini uzaytiradi).
+s0712	**Inozitolfosfat tizimi:** fosfolipaza C membranadagi fosfatidilinozitol-4,5-bisfosfat (FIF2) ni ikkita ikkilamchi vositachiga parchalaydi: **inozitol-1,4,5-trifosfat (IF~3~)** — endoplazmatik to‘rdan Ca2+
+s0713	ni chiqaradi; **diatsilglitserin (DAG)** — Ca2+ bilan birga **protein kinaza C** ni faollashtiradi. Ca2+ ning ko‘p ta’sirlari **kalmodulin** oqsili orqali amalga oshadi.
+s0714	Rasm 3.2
+s0715	Adenilatsiklaza va inozitolfosfat signal tizimlari (Severin E.S. asosida chizilgan)
+s0716	Jadval 3.3. Ikkilamchi vositachilar
+s0717	Ikkilamchi vositachi
+s0718	Hosil qiluvchi ferment
+s0719	Ta’sir nishoni
+s0720	cAMF
+s0721	Adenilatsiklaza
+s0722	Protein kinaza A, ion kanallari
+s0723	cGMF
+s0724	Guanilatsiklaza (NO, natriyuretik peptid)
+s0725	Protein kinaza G — silliq mushak bo‘shashishi
+s0726	IF3
+s0727	Fosfolipaza C
+s0728	Endoplazmatik to‘rdagi Ca2+-kanallar
+s0729	DAG
+s0730	Protein kinaza C
+s0731	Ca2+
+s0732	Kanallar orqali kiradi yoki depodan chiqadi
+s0733	Kalmodulin, protein kinaza C, mushak qisqarishi
+s0734	NO
+s0735	NO-sintaza (arginindan)
+s0736	Eruvchan guanilatsiklaza
+s0737	Vabo toksini Gs-oqsilning α-subbirligini ADF-ribozillab, uning GTFaza faolligini yo‘qotadi — G-oqsil doimiy faol qoladi, ichak epiteliysida cAMF keskin ko‘payadi, Cl- va suv ichak bo‘shlig‘iga chiqadi — og‘ir diareya. Ko‘kyo‘tal toksini esa Gi-oqsilni bloklaydi. Nitroglitserin NO ajratib, cGMF orqali tomirlarni kengaytiradi; sildenafil cGMF ni parchalovchi fosfodiesteraza-5 ni ingibirlaydi.
+s0738	5. Membranalarning shikastlanishi
+s0739	Membranalar shikastlanishi ko‘plab kasalliklar patogenezining asosiy bo‘g‘ini:
+s0740	**Lipidlarning perekisli oksidlanishi (LPO)** — erkin radikallar (O2
+s0741	−, •OH) ko‘p to‘yinmagan yog‘ kislotalarini oksidlaydi; membrana o‘tkazuvchanligi ortadi, ferment va retseptorlar ishdan chiqadi. Antioksidant himoya: vitamin E, C, glutation, superoksiddismutaza, katalaza, glutationperoksidaza.
+s0742	**Fosfolipazalarning faollanishi** (ishemiya, Ca2+ ortiqchasi) — fosfolipidlar parchalanadi.
+s0743	**Detergent ta’siri** — o‘t kislotalari, yog‘ kislotalari ortiqchasi.
+s0744	**Mexanik va osmotik shikastlanish**, komplement tizimining membranani teshuvchi kompleksi, bakterial toksinlar.
+s0745	**Tug‘ma nuqsonlar** — membrana skeleti oqsillari (spektrin) nuqsoni — irsiy sferotsitoz; ion kanallari kasalliklari (kanalopatiyalar) — mukovistsidoz (CFTR Cl--kanali).
+s0746	6. Laboratoriya ishi
+s0747	1-ish: eritrotsitlarning osmotik chidamliligini aniqlash
+s0748	0,7 % dan 0,2 % gacha (har 0,02–0,05 % farq bilan) NaCl eritmalaridan 1 ml dan probirkalarga quying.
+s0749	Har bir probirkaga 1 tomchi qon qo‘shib, aralashtiring va 1 soat qoldiring (yoki sentrifugalang).
+s0750	Eritma pushti rangga kirgan va cho‘kma bor eng yuqori konsentratsiyali probirka — **minimal chidamlilik** (gemoliz boshlanishi).
+s0751	Cho‘kma butunlay yo‘q, eritma shaffof qizil (“lak qon”) bo‘lgan probirka — **maksimal chidamlilik** (to‘liq gemoliz). **Baholash:** me’yorda minimal chidamlilik 0,46–0,48 %, maksimal — 0,32–0,34 % NaCl. Irsiy sferotsitozda chidamlilik pasayadi (gemoliz yuqoriroq konsentratsiyada boshlanadi), talassemiya va temir tanqisligi anemiyasida — ortadi (yupqa, yassi eritrotsitlar).
+s0752	**Tahlil:** gipotonik muhitda suv osmos orqali eritrotsitga kiradi, u shishib, membranasi yoriladi va gemoglobin chiqadi. Chidamlilik membrananing tarkibi, sitoskelet holati va hujayra shakliga (sirt/hajm nisbati) bog‘liq.
+s0753	2-ish: membrana o‘tkazuvchanligiga detergent va haroratning ta’siri (namoyish)
+s0754	Uchta probirkaga 2 ml 0,9 % NaCl dagi eritrotsitlar suspenziyasini quying.
+s0755	1-probirkaga 3 tomchi 1 % li o‘t kislota tuzi (yoki saponin), 2-probirkaga 3 tomchi etanol qo‘shing; 3-probirkani 60 °C da 10 daqiqa qizdiring.
+s0756	Nazorat probirkasi bilan solishtiring. **Natija va tahlil:** detergent va qizdirish ta’sirida membrana lipidlari va oqsillari buziladi — gemoliz (eritma shaffof qizil). Bu membrana butunligi buzilishining oqibatini ko‘rsatadi.
+s0757	Ko‘nikma: moddaning transport turini aniqlash
+s0758	Moddaning tabiatini aniqlang: gidrofob kichik molekula, ion, qutbli molekula yoki makromolekula.
+s0759	Gradient yo‘nalishini aniqlang: gradient bo‘yicha — passiv, gradientga qarshi — faol.
+s0760	Faol transportda energiya manbayini aniqlang: ATF (birlamchi) yoki boshqa ion gradienti (ikkilamchi).
+s0761	To‘yinish va spetsifiklik bormi — tashuvchi ishtirokini tekshiring.
+s0762	Misol bilan xulosa qiling (masalan, ichakda glyukoza — SGLT1 ikkilamchi faol, keyin GLUT2 orqali qonga yengillashgan diffuziya).
+s0763	Ko‘nikma: gormon ta’sir mexanizmini tushuntirish
+s0764	Gormonning kimyoviy tabiatini aniqlang (gidrofil yoki gidrofob).
+s0765	Retseptor joylashuvini aniqlang (membrana yoki hujayra ichi).
+s0766	Membrana retseptori bo‘lsa — G-oqsil turini va ikkilamchi vositachini aniqlang.
+s0767	Protein kinaza va fosforlanadigan nishon oqsilni ko‘rsating.
+s0768	Signal qanday to‘xtatilishini tushuntiring (GTFaza, fosfodiesteraza, fosfatazalar).
+s0769	Biologik membranalarning kimyoviy tarkibi qanday?
+s0770	Membrana lipidlarining turlari va xususiyatlari qanday?
+s0771	Integral va periferik oqsillarning farqi nimada?
+s0772	Suyuq-mozaik model nimani tushuntiradi?
+s0773	Membranalarning asosiy vazifalarini sanang.
+s0774	Ko‘ndalang asimmetriya nima?
+s0775	Membrana suyuqligiga qanday omillar ta’sir qiladi?
+s0776	Passiv transport turlarini tavsiflang.
+s0777	Birlamchi va ikkilamchi faol transportning farqi nimada?
+s0778	Na+,K+-ATFazaning ahamiyati qanday?
+s0779	Membrana retseptorlarining asosiy turlarini sanang.
+s0780	G-oqsillar qanday ishlaydi?
+s0781	Adenilatsiklaza tizimini tushuntiring.
+s0782	Inozitolfosfat tizimi qanday ishlaydi?
+s0783	Membranalar shikastlanishining sabablari va oqibatlari qanday?
+s0784	Membranada lipid qo‘sh qavat hosil bo‘lishiga fosfolipidlarning qaysi xossasi sabab bo‘ladi?
+s0785	Suvda yaxshi erishi
+s0786	Musbat zaryadi
+s0787	Faqat gidrofobligi
+s0788	Kovalent bog‘lar hosil qilishi
+s0789	Amfifilligi
+s0790	Membrana suyuqligini boshqaruvchi “bufer” lipid qaysi?
+s0791	Fosfatidilxolin
+s0792	Sfingomielin
+s0793	Xolesterin
+s0794	Gangliozid
+s0795	Triatsilglitserin
+s0796	Fosfatidilserin asosan membrananing qaysi qavatida joylashgan?
+s0797	Tashqi qavatida
+s0798	Ichki (sitoplazmatik) qavatida
+s0799	Ikkala qavatida teng
+s0800	Glikokaliksda
+s0801	Faqat mitoxondriyada
+s0802	Na+,K+-ATFaza bitta ATF hisobiga qancha ionni tashiydi?
+s0803	3 Na+ tashqariga, 2 K+ ichkariga
+s0804	2 Na+ tashqariga, 3 K+ ichkariga
+s0805	1 Na+ va 1 K+
+s0806	3 Na+ ichkariga, 2 K+ tashqariga
+s0807	Faqat Na+
+s0808	Ichakda glyukozaning Na+ bilan birga so‘rilishi qanday transport?
+s0809	Yengillashgan diffuziya
+s0810	Ikkilamchi faol transport (simport)
+s0811	Pinotsitoz
+s0812	Steroid gormonlarning retseptorlari qayerda joylashgan?
+s0813	Plazmatik membranada
+s0814	Mitoxondriya tashqi membranasida
+s0815	Golji apparatida
+s0816	Lizosomalarda
+s0817	Hujayra ichida (sitoplazma va yadroda)
+s0818	Adenilatsiklaza qaysi ikkilamchi vositachini hosil qiladi?
+s0819	Fosfolipaza C ta’sirida FIF2 dan qaysi vositachilar hosil bo‘ladi?
+s0820	IF3 va DAG
+s0821	cAMF va cGMF
+s0822	Araxidon kislota va prostaglandinlar
+s0823	Ca2+ va kalmodulin
+s0824	NO va cGMF
+s0825	Insulin retseptori qaysi turga kiradi?
+s0826	Ion kanali bilan bog‘langan
+s0827	G-oqsil bilan bog‘langan
+s0828	Guanilatsiklaza
+s0829	Hujayra ichidagi retseptor
+s0830	Vabo toksini qanday ta’sir qiladi?
+s0831	Gi-oqsilni bloklaydi
+s0832	Gs-oqsilni doimiy faol holatda saqlaydi
+s0833	Fosfodiesterazani faollashtiradi
+s0834	Na+,K+-ATFazani ingibirlaydi
+s0835	Adenilatsiklazani parchalaydi
+s0836	Yurak glikozidlari qaysi fermentni ingibirlaydi?
+s0837	Ca2+-ATFazani
+s0838	Na+,K+-ATFazani
+s0839	H+,K+-ATFazani
+s0840	Adenilatsiklazani
+s0841	Fosfolipaza C ni
+s0842	Kofein qanday ta’sir orqali cAMF miqdorini oshiradi?
+s0843	Adenilatsiklazani faollashtiradi
+s0844	Gs-oqsilni faollashtiradi
+s0845	Fosfodiesterazani ingibirlaydi
+s0846	Protein kinaza A ni faollashtiradi
+s0847	Retseptorlarni ko‘paytiradi
+s0848	Me’yorda eritrotsitlar osmotik chidamliligining minimal chegarasi qancha?
+s0849	0,9 % NaCl
+s0850	0,7 % NaCl
+s0851	0,2 % NaCl
+s0852	0,46–0,48 % NaCl
+s0853	0,1 % NaCl
+s0854	Insulinga sezgir glyukoza tashuvchisi qaysi?
+s0855	GLUT1
+s0856	GLUT2
+s0857	GLUT4
+s0858	GLUT5
+s0859	SGLT2
+s0860	Lipidlarning perekisli oksidlanishidan himoya qiluvchi yog‘da eruvchi vitamin qaysi?
+s0861	Vitamin A
+s0862	Vitamin D
+s0863	Vitamin K
+s0864	Vitamin E
+s0865	Vitamin B12
+s0866	Endemik hududdan kelgan bemorda kuniga 15–20 litrgacha suyuq, “guruch qaynatmasi”ga o‘xshash ich ketishi, keskin suvsizlanish va qon bosimining pasayishi kuzatilmoqda. Najasda Vibrio cholerae aniqlandi.
+s0867	Diareyaning biokimyoviy mexanizmini tushuntiring. Rehidratatsiya eritmasiga nima uchun glyukoza qo‘shiladi?
+s0868	Vabo toksini enterotsitlarda Gs-oqsilning α-subbirligini ADF-ribozillaydi; uning GTFaza faolligi yo‘qoladi va adenilatsiklaza doimiy faollashadi. cAMF ko‘payib, protein kinaza A orqali CFTR Cl--kanalini fosforlaydi — Cl-, ortidan Na+ va suv ichak bo‘shlig‘iga chiqadi. Og‘iz orqali rehidratatsiya eritmasidagi glyukoza SGLT1 (Na+-glyukoza simporti) orqali Na+ ni, ular bilan birga osmos bo‘yicha suvni so‘rilishini ta’minlaydi; bu tashuvchi cAMF ta’sirida buzilmaydi.
+s0869	Surunkali yurak yetishmovchiligi bilan og‘rigan bemor digoksin qabul qiladi. U ich ketishi tufayli kaliy yo‘qotgach, ko‘ngil aynishi, ko‘rishda sarg‘ish dog‘lar va yurak ritmi buzilishi paydo bo‘ldi.
+s0870	Digoksinning ta’sir mexanizmi qanday? Gipokaliyemiya nima uchun zaharlanishni kuchaytiradi?
+s0871	Digoksin kardiomiotsitlarda Na+,K+-ATFazani ingibirlaydi — hujayra ichida Na+ ko‘payadi, Na+/Ca2+ almashinuvchisi Ca2+ ni kamroq chiqaradi, hujayrada Ca2+ to‘planib qisqarish kuchayadi (musbat inotrop ta’sir). Digoksin K+ bilan ATFazaning bir xil joyi uchun raqobatlashadi: K+ kamayganda digoksin fermentga ko‘proq bog‘lanadi va ta’siri (toksikligi) kuchayadi — aritmiyalar rivojlanadi.
+s0872	8 yoshli bolada vaqti-vaqti bilan sariqlik, kamqonlik va taloq kattalashishi kuzatiladi. Qon surtmasida mayda sharsimon eritrotsitlar, osmotik chidamlilik pasaygan: gemoliz 0,60 % NaCl da boshlanadi. Otasida ham shunday kasallik bor.
+s0873	Tashxis qanday? Biokimyoviy asosi nima?
+s0874	Irsiy sferotsitoz (Minkovskiy–Shoffar kasalligi). Membrana skeleti oqsillari (spektrin, ankirin) nuqsoni tufayli lipid qo‘sh qavat sitoskeletga yaxshi bog‘lanmaydi, membrana bo‘laklari yo‘qoladi, eritrotsit sharsimon bo‘lib, sirt/hajm nisbati kamayadi. Bunday hujayralar shishishga kam chidaydi (osmotik chidamlilik pasaygan) va taloqda ushlanib parchalanadi — gemolitik anemiya, bilirubin oshishi (sariqlik), splenomegaliya.
+s0875	Membrana tarkibi
+s0876	Lipidlar ≈ 40 %, oqsillar 50–60 %, uglevodlar 2–10 %
+s0877	Suyuq-mozaik model
+s0878	Suyuq lipid qo‘sh qavat + unda harakatlanuvchi oqsillar (Singer– Nikolson)
+s0879	Asimmetriya
+s0880	Tashqarida fosfatidilxolin, sfingomielin, glikolipidlar; ichkarida fosfatidilserin
+s0881	Membrana suyuqligining “buferi”
+s0882	Passiv transport
+s0883	Oddiy va yengillashgan diffuziya (kanallar, GLUT)
+s0884	Birlamchi faol
+s0885	Na+,K+-ATFaza: 3 Na+ tashqariga, 2 K+ ichkariga
+s0886	Ikkilamchi faol
+s0887	Na+ gradienti hisobiga: SGLT1, SGLT2
+s0888	Gs / Gi / Gq
+s0889	Adenilatsiklaza ↑ / ↓ / fosfolipaza C ↑

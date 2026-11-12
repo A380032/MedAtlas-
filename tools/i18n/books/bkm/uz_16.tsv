@@ -1,189 +1,188 @@
-s3017	Jadval 12.3. Asosiy biogen aminlar
-s3018	Biogen amin
-s3019	Gistidin
-s3020	Allergiya va yallig‘lanish mediatori (tomir kengayishi, o‘tkazuvchanlik oshishi, bronxospazm, qichishish — H1); me’da shirasi sekretsiyasi (H2); MNT da neyromediator
-s3021	Triptofan (→ 5gidroksitriptofan)
-s3022	Serotonin
-s3023	Neyromediator (kayfiyat, uyqu, ishtaha); ichak motorikasi; tomirlarni toraytiradi; trombotsitlar agregatsiyasi; epifizda melatonin hosil bo‘ladi
-s3024	Glutamat
-s3025	GAMK (γ-aminomoy kislota)
-s3026	MNT ning asosiy tormozlovchi mediatori
-s3027	Tirozin (→ DOFA)
-s3028	Dofamin, noradrenalin, adrenalin (katexolaminlar)
-s3029	Neyromediatorlar; buyrak usti bezi mag‘iz qavati gormonlari
-s3030	Etanolamin
-s3031	Fosfolipidlar sintezi
-s3032	Sistein (sisteinsulfin kislota orqali)
-s3033	Taurin
-s3034	O‘t kislotalari konyugatsiyasi; antioksidant
-s3035	Ornitin
-s3036	Putressin → spermidin, spermin (poliaminlar)
-s3037	Hujayra o‘sishi va bo‘linishi, nuklein kislotalarni barqarorlashtirish
-s3038	**Gistamin** allergik reaksiyalarda semiz hujayralar va bazofillardan ajraladi: eshakem, Kvinke shishi, bronxospazm, anafilaktik shokda arterial bosimning keskin pasayishi. **Antigistamin preparatlar**: H1- blokatorlar (difengidramin, loratadin, setirizin) — allergiyada; H2-blokatorlar (famotidin) — me’da shirasi sekretsiyasini kamaytiradi. B6 vitamini yetishmovchiligida glutamatdekarboksilaza faolligi
-s3039	pasayib GAMK kamayadi — chaqaloqlarda **tutqanoqlar** (izoniazid bilan davolashda B6 qo‘shib beriladi).
-s3040	Biogen aminlarning zararsizlantirilishi
-s3041	Biogen aminlar ta’siri qisqa bo‘lishi uchun ular tez parchalanadi:
-s3042	**Monoaminooksidazalar (MAO)** — mitoxondriya tashqi membranasida, FAD tutuvchi; oksidlovchi dezaminlanish: R-CH2-NH2 + O2 + H2O → R-CHO + NH3 + H2O2. MAO-A serotonin va noradrenalinni, MAO-B dofaminni parchalaydi. Hosil bo‘lgan aldegidlar kislotalarga oksidlanadi (serotonin → 5-gidroksiindolsirka kislota; katexolaminlar → vanililbodom kislota) va siydik bilan chiqadi.
-s3043	**Diaminooksidaza (gistaminaza)** — gistamin, putressin, kadaverinni oksidlaydi.
-s3044	**Metillanish** — **katexol-O-metiltransferaza (KOMT)** katexolaminlarni S-adenozilmetionin hisobiga metillaydi; gistamin ham metillanadi.
-s3045	**MAO ingibitorlari** (moklobemid — MAO-A, selegilin — MAO-B) va **serotonin qayta qamrab olinishining selektiv ingibitorlari** (fluoksetin) — antidepressantlar: sinapsda serotonin va noradrenalin ko‘payadi. Parkinson kasalligida (qora substansiyada dofamin yetishmasligi) **L-DOFA** (levodopa) — dofamin o‘tmaydigan gematoensefalik to‘siqdan o‘tadi va miyada dofaminga aylanadi; periferik dekarboksilaza ingibitori (karbidopa) bilan birga beriladi. MAO ingibitorlarini qabul qilayotgan bemor tiraminga boy ovqat (qattiq pishloq, vino) iste’mol qilsa, gipertonik kriz (“pishloq reaksiyasi”) rivojlanishi mumkin. **Feoxromotsitoma** (katexolamin ishlab chiqaruvchi o‘sma) siydikda vanililbodom kislota va metanefrinlar oshishi bilan tashxislanadi; **karsinoid o‘sma** — siydikda 5-gidroksiindolsirka kislota oshishi bilan.
-s3046	1-ish: qon zardobida AlAT va AsAT faolligini biokimyoviy analizatorda aniqlash (kinetik usul)
-s3047	Usul asosi (IFCC):
-s3048	**AlAT**: L-alanin + α-ketoglutarat → piruvat + L-glutamat; piruvat + NADH + H+ → laktat + NAD+ (indikator ferment — **laktatdegidrogenaza**);
-s3049	**AsAT**: L-aspartat + α-ketoglutarat → oksaloatsetat + L-glutamat; oksaloatsetat + NADH + H +
-s3050	→ malat + NAD+ (indikator ferment — **malatdegidrogenaza**). NADH 340 nm da nur yutadi, NAD+ esa yutmaydi; optik zichlikning **kamayish tezligi** ferment faolligiga proporsional. Reagentga piridoksalfosfat qo‘shiladi (B6 yetishmovchiligida soxta past natijani oldini olish uchun).
-s3051	Kyuvetaga 1 ml ishchi reagent (substratlar, NADH, LDG yoki MDG, PALF) quying va 37 °C da 5 daqiqa isiting.
-s3052	100 mkl qon zardobi qo‘shib aralashtiring.
-s3053	1 daqiqadan keyin 340 nm da optik zichlikni o‘lchang va 3 daqiqa davomida har daqiqada qayd qiling (analizatorda avtomatik).
-s3054	O‘rtacha ΔE/daq ni hisoblang. **Hisoblash:** faollik (XB/l) = ΔE/daq × F (F — reagent va kyuveta uchun omil, NADH ning mol yutish koeffitsientidan; masalan, 1746).
-s3055	**Baholash:** jadvaldagi me’yorlar bilan solishtiring, de Ritis koeffitsientini hisoblang. Gemolizlangan zardob AsAT ni soxta oshiradi (eritrotsitlarda AsAT ko‘p).
-s3056	2-ish: Raytman–Frenkel usuli (kolorimetrik) bilan aminotransferazalarni aniqlash (tarixiy usul)
-s3057	**Usul asosi:** transaminlanishda hosil bo‘lgan piruvat (yoki oksaloatsetatdan spontan hosil bo‘lgan piruvat) **2,4-dinitrofenilgidrazin** bilan gidrazon hosil qiladi; ishqoriy muhitda u qizil-qo‘ng‘ir rang beradi. Rang intensivligi piruvat miqdoriga, demak ferment faolligiga proporsional. Natija mkmol piruvat / (soat · ml) da ifodalanadi; me’yor: AlAT 0,1–0,68, AsAT 0,1–0,45 mmol/(soat · l).
-s3058	3-ish: aminokislotalarga ningidrin reaksiyasi
-s3059	Probirkaga 1 ml 1 % li glitsin (yoki oqsil gidrolizati) eritmasini va 5 tomchi 0,1 % li ningidrin eritmasini qo‘shing.
-s3060	1–2 daqiqa qaynating. **Natija va tahlil:** α-aminokislotalar ningidrin bilan **ko‘k-binafsha** rang (Ruemann ko‘ki) beradi: aminokislota oksidlovchi dezaminlanib, dekarboksillanadi, ajralgan ammiak ningidrin bilan rangli birikma hosil qiladi. Prolin va gidroksiprolin sariq rang beradi. Bu reaksiya aminokislotalarni xromatografiyada aniqlash asosida yotadi.
-s3061	Ko‘nikma: aminotransferazalar natijasini klinik baholash
-s3062	AlAT va AsAT ni jins bo‘yicha me’yor bilan solishtiring; necha marta oshganini aniqlang.
-s3063	De Ritis koeffitsientini hisoblang.
-s3064	< 1 bo‘lsa — gepatotsitlar sitolizi (gepatit) haqida o‘ylang; > 2 bo‘lsa — miokard yoki mushak shikastlanishi, alkogol gepatiti.
-s3065	Boshqa ko‘rsatkichlar bilan solishtiring: bilirubin, ishqoriy fosfataza, GGT (jigar); KFK-MB, troponinlar (yurak).
-s3066	Namunada gemoliz yo‘qligini tekshiring.
-s3067	Ko‘nikma: biogen amin almashinuviga ta’sir qiluvchi dorining mexanizmini tushuntirish
-s3068	Dori qaysi bosqichga ta’sir qilishini aniqlang: sintez (dekarboksilaza), retseptor, qayta qamrab olinish yoki parchalanish (MAO, KOMT).
-s3069	Sinapsda yoki to‘qimada biogen amin miqdori qanday o‘zgarishini ayting.
-s3070	Klinik samarani tushuntiring (antidepressant, antigistamin, antiparkinson).
-s3071	Nojo‘ya ta’sirlar va ovqat bilan o‘zaro ta’sirni (tiramin) ko‘rsating.
-s3072	Hujayradagi aminokislotalar qanday yo‘llar bilan sarflanadi?
-s3073	Transaminlanish nima? Reaksiya tenglamasini yozing.
-s3074	Piridoksalfosfatning transaminlanishdagi roli qanday?
-s3075	AlAT va AsAT qaysi reaksiyalarni katalizlaydi va qayerda joylashgan?
-s3076	Aminotransferazalarning klinik-diagnostik ahamiyati qanday?
-s3077	De Ritis koeffitsienti nima va uni qanday baholash kerak?
-s3078	Oksidlovchi dezaminlanish qanday boradi?
-s3079	Glutamatdegidrogenaza qanday boshqariladi?
-s3080	Transdezaminlanish nima va uning ahamiyati qanday?
-s3081	Glyukogen va ketogen aminokislotalarni ayting.
-s3082	Dekarboksillanish reaksiyasi qanday boradi va uning kofermenti qaysi?
-s3083	Asosiy biogen aminlar va ularning vazifalarini sanang.
-s3084	Gistaminning allergiya va yallig‘lanishdagi ahamiyati qanday?
-s3085	Biogen aminlar qanday zararsizlantiriladi?
-s3086	MAO ingibitorlari va L-DOFA ning ta’sir mexanizmini tushuntiring.
-s3087	Aminotransferazalarning kofermenti qaysi?
-s3088	Transaminlanishda amin guruhining asosiy akseptori qaysi?
-s3089	α-Ketoglutarat
-s3090	AlAT qaysi reaksiyani katalizlaydi?
-s3091	Glutamat → α-ketoglutarat + NH3
-s3092	Alanin + α-ketoglutarat ⇄ piruvat + glutamat
-s3093	Gistidin → gistamin + CO2
-s3094	Glutamat + NH3 → glutamin
-s3095	Virusli gepatitda qaysi ferment ko‘proq oshadi?
-s3096	De Ritis koeffitsientining me’yori qancha?
-s3097	0,5 dan kam
-s3098	10 dan ko‘p
-s3099	Faol oksidlovchi dezaminlanishga uchraydigan yagona aminokislota qaysi?
-s3100	Aspartat
-s3101	Leytsin
-s3102	Glutamatdegidrogenazani qaysi modda allosterik faollashtiradi?
-s3103	GTF
-s3104	Aminokislotalar dezaminlanishining asosiy yo‘li qaysi?
-s3105	Gidrolitik dezaminlanish
-s3106	Qaytaruvchi dezaminlanish
-s3107	L-aminokislotalar oksidazasi orqali
-s3108	Transdezaminlanish (bilvosita dezaminlanish)
-s3109	Molekula ichidagi dezaminlanish
-s3110	Faqat ketogen aminokislotalar qaysilar?
-s3111	Alanin va serin
-s3112	Glutamat va aspartat
-s3113	Fenilalanin va tirozin
-s3114	Valin va izoleytsin
-s3115	Leytsin va lizin
-s3116	Gistidin dekarboksillanganda qaysi modda hosil bo‘ladi?
-s3117	GAMK
-s3118	Dofamin
-s3119	MNT ning asosiy tormozlovchi mediatori qaysi aminokislotadan hosil bo‘ladi?
-s3120	Biogen aminlarni oksidlovchi dezaminlab zararsizlantiruvchi ferment qaysi?
-s3121	Glutamatdegidrogenaza
-s3122	Monoaminooksidaza
-s3123	Dekarboksilaza
-s3124	Aminotransferaza
-s3125	Serotonin qaysi aminokislotadan hosil bo‘ladi?
-s3126	Fenilalanin
-s3127	Parkinson kasalligini davolashda L-DOFA nima uchun dofamin o‘rniga beriladi?
-s3128	Dofamin ichakda so‘rilmaydi
-s3129	L-DOFA kuchliroq ta’sir qiladi
-s3130	Dofamin jigarda parchalanmaydi
-s3131	L-DOFA MAO ni ingibirlaydi
-s3132	Dofamin gematoensefalik to‘siqdan o‘tmaydi, L-DOFA o‘tib miyada dofaminga aylanadi
-s3133	Gemolizlangan zardobda qaysi ferment soxta oshgan chiqadi?
-s3134	25 yoshli bemorda holsizlik, ishtaha yo‘qligi, ko‘ngil aynishi, o‘ng qovurg‘a ostida og‘irlik; 3 kundan keyin sariqlik paydo bo‘ldi. Tahlil: AlAT 1200 XB/l, AsAT 680 XB/l, bilirubin 85 mkmol/l (asosan bog‘langan va erkin), HBsAg musbat.
-s3135	De Ritis koeffitsientini hisoblang va natijani talqin qiling. Nima uchun AlAT ko‘proq oshgan?
-s3136	De Ritis = 680 / 1200 ≈ 0,57 (< 1) — gepatotsitlar sitolizi (o‘tkir virusli gepatit B). AlAT asosan gepatotsitlarning sitozolida joylashgan va jigarda eng ko‘p; membrana shikastlanganda u birinchi bo‘lib qonga chiqadi. AsAT ning katta qismi mitoxondriyada — u faqat chuqur (nekrotik) shikastlanishda ko‘p chiqadi. AlAT oshishi sariqlikdan oldin boshlanadi va gepatit faolligining sezgir belgisi.
-s3137	58 yoshli erkak 8 soat oldin to‘sh ortida kuchli og‘riq bo‘lganini aytdi. Tahlil: AsAT 180 XB/l, AlAT 45 XB/l, KFK-MB va troponin I keskin oshgan.
-s3138	De Ritis koeffitsientini hisoblang. Qaysi a’zo shikastlangan?
-s3139	De Ritis = 180 / 45 = 4 (> 2) — miokard shikastlanishi. Yurak mushagida AsAT ko‘p, AlAT esa kam; miokard infarktida kardiomiotsitlar nekrozga uchrab, AsAT, KFK-MB, LDG1 va troponinlar qonga chiqadi. AsAT 6–12 soatdan keyin oshadi, 24–48 soatda eng yuqori, 4–7 kunda me’yorlashadi; hozirgi kunda troponinlar eng spetsifik belgi hisoblanadi.
-s3140	Depressiyani davolash uchun MAO ingibitori qabul qilayotgan bemor ziyofatda qattiq pishloq yeb, qizil vino ichgach, kuchli bosh og‘rig‘i, terlash, yurak urishi paydo bo‘ldi; arterial bosim 210/120 mm sim. ust.
-s3141	Bu holatning biokimyoviy mexanizmini tushuntiring.
-s3142	“Pishloq reaksiyasi” — gipertonik kriz. Pishloq va vinoda tiramin (tirozinning dekarboksillanish mahsuloti) ko‘p. Me’yorda u ichak devori va jigarda MAO bilan parchalanadi. MAO ingibirlanganda tiramin qonga o‘tib, simpatik nerv uchlaridan noradrenalinni siqib chiqaradi (bilvosita simpatomimetik); noradrenalin ham MAO bilan parchalanmagani uchun ta’siri kuchayadi — tomirlar torayadi, arterial bosim keskin oshadi. MAO ingibitorlarini qabul qiluvchilarga tiraminga boy ovqatlar taqiqlanadi.
-s3143	Transaminlanish
-s3144	Aminokislota + α-KG α-ketokislota + glutamat; qaytar; NH ⇄ 3 ajralmaydi
-s3145	Piridoksalfosfat (B6) — transaminlanish va dekarboksillanishda
-s3146	Alanin piruvat; jigar sitozoli; gepatitda ↑↑ ⇄
-s3147	Aspartat oksaloatsetat; yurak, jigar; miokard infarktida ↑ ⇄
-s3148	De Ritis
-s3149	AsAT/AlAT: me’yor 1,33; < 1 — gepatit; > 2 — infarkt, alkogol
-s3150	Oksidlovchi dezaminlanish
-s3151	Glutamatdegidrogenaza: glutamat → α-KG + NH3 + NADH
-s3152	GDG boshqarilishi
-s3153	ADF, GDF ↑; ATF, GTF, NADH ↓
-s3154	Transdezaminlanish
-s3155	Transaminlanish + GDG — asosiy yo‘l
-s3156	Ketogen aminokislotalar
-s3157	Leytsin, lizin
-s3158	Dekarboksillanish
-s3159	Aminokislota → biogen amin + CO2; PALF
-s3160	Biogen aminlar
-s3161	Gistamin (gistidin), serotonin (triptofan), GAMK (glutamat), katexolaminlar (tirozin)
-s3162	MAO (FAD), diaminooksidaza, KOMT (metillanish)
-s3163	Dorilar
-s3164	Antigistaminlar, MAO ingibitorlari, L-DOFA + karbidopa
-s3165	Ammiakning zararsizlantirilishi. Alohida aminokislotalar almashinuvi va nasliy buzilishlari
-s3166	Talabaga ammiakning hosil bo‘lish manbalari va zaharli ta’siri, uning vaqtincha va oxirgi zararsizlantirilish yo‘llari, siydikchil (mochevina) sintezi va uning transaminlanish hamda Krebs sikli bilan bog‘liqligi, giperammoniyemiya turlari va oqibatlari, serin, glitsin, metionin, fenilalanin va tirozin almashinuvi, bir uglerodli guruhlar va transmetillanish, aminokislotalar almashinuvining tug‘ma kasalliklari haqida bilim berish; qon zardobida siydikchilni aniqlashni egallash.
-s3167	ammiakning manbalari va zaharli ta’sir mexanizmlarini;
-s3168	ammiakning vaqtincha bog‘lanishini (glutamin, alanin) va buyrakda ammoniy tuzlari hosil bo‘lishini;
-s3169	ornitin siklining reaksiyalari, fermentlari, energiya sarfi va boshqarilishini;
-s3170	qon va siydikda siydikchilning me’yori va o‘zgarishlarini;
-s3171	tug‘ma va orttirilgan giperammoniyemiyalarni;
-s3172	tetragidrofolat va bir uglerodli guruhlarning ahamiyatini;
-s3173	metionin almashinuvi, S-adenozilmetionin va transmetillanishni, gomotsisteinni;
-s3174	fenilalanin va tirozin almashinuvi va uning tug‘ma kasalliklarini. **Talaba bajara olishi kerak:**
-s3175	qon zardobida siydikchilni aniqlash va natijani baholash;
-s3176	siydikda fenilpiruvatni aniqlash (Felling sinamasi);
-s3177	giperammoniyemiya sababini biokimyoviy asoslash.
-s3178	1. Ammiakning hosil bo‘lishi va zaharliligi
-s3179	Ammiak manbalari:
-s3180	aminokislotalarning dezaminlanishi (asosan glutamatning oksidlovchi dezaminlanishi);
-s3181	amidlarning (glutamin, asparagin) gidrolizi;
-s3182	biogen aminlarning MAO ta’sirida oksidlanishi;
-s3183	purin va pirimidin asoslarining dezaminlanishi (adenin, sitozin);
-s3184	ichakda bakteriyalar ta’sirida oqsillarning chirishi va siydikchilning parchalanishi (darvoza venasi orqali jigarga keladi). Odam organizmida sutkasiga ≈ 15–20 g ammiak hosil bo‘ladi, ammo qonda uning miqdori juda past: **11–35 mkmol/l** (me’yorda < 50 mkmol/l).
-s3185	**Zaharli ta’siri** (ayniqsa bosh miyaga):
-s3186	miyada ammiak α-ketoglutarat bilan glutamat hosil qiladi (qaytaruvchi aminlanish) — **α- ketoglutarat kamayadi**, Krebs sikli susayadi, ATF hosil bo‘lishi pasayadi;
-s3187	glutamat va glutamin ko‘payadi — astrotsitlarda **osmotik shish** (glutamin), neyromediatorlar muvozanati buziladi (glutamat ↓ yoki ↑, GAMK ↑);
-s3188	NH4
-s3189	+ K+ kanallarini va Na+,K+-ATFazani buzadi, membrana potensiali o‘zgaradi;
-s3190	qon pH i ishqoriy tomonga siljiydi. Klinik belgilari: ko‘ngil aynishi, qusish, letargiya, tremor, tutqanoq, koma.
-s3191	2. Ammiakning vaqtincha zararsizlantirilishi va tashilishi
-s3192	To‘qimalarda hosil bo‘lgan ammiak darhol bog‘lanadi va zaharsiz shakllarda jigar va buyrakka tashiladi:
-s3193	**Glutamin sintezi** (asosiy yo‘l; miya, mushak va boshqa to‘qimalar): glutamat + NH3 + ATF → **glutamin** + ADF + Fn — **glutaminsintetaza**. Glutamin — ammiakning asosiy transport shakli (qonda eng ko‘p aminokislota).
-s3194	**Alanin hosil bo‘lishi** (mushaklar): piruvat transaminlanib alaninga aylanadi va jigarga boradi — **glyukoza-alanin sikli** (7-mavzu).
-s3195	**Asparagin sintezi** (kamroq). **Buyrakda** glutamin **glutaminaza** ta’sirida glutamat va NH3 ga parchalanadi; NH3 kanalchalar yo‘liga chiqib H+ ni bog‘laydi va **ammoniy tuzlari** (NH4
-s3196	+) shaklida siydik bilan chiqariladi (sutkasiga ≈ 0,5– 1 g). Bu jarayon **atsidozda keskin kuchayadi** — buyrakning kislota-asos muvozanatini saqlashdagi muhim mexanizmi (29-mavzu).
-s3197	3. Siydikchil sintezi (ornitin sikli)
-s3198	Ammiakning **oxirgi zararsizlantirilishi** — **jigarda** siydikchil (mochevina) sintezi. Siklni H. Krebs va K. Xenzeleyt (1932) ochgan. Siydikchil — kam zaharli, suvda yaxshi eriydigan, neytral modda; organizmdagi azotning ≈ 80–90 % i shu shaklda chiqariladi.
-s3199	Rasm 13.1
-s3200	Ornitin (siydikchil) sikli (Sobirova R.A., 2006; Severin E.S. asosida chizilgan)
-s3201	Jadval 13.1. Ornitin sikli reaksiyalari
-s3202	NH3 + CO2 + 2ATF → karbamoilfosfat + 2ADF + Fn
-s3203	Karbamoilfosfatsintetaza I (kalit ferment)
-s3204	Mitoxondri ya
-s3205	Karbamoilfosfat + ornitin → sitrullin + Fn
+s3018	MNT ning asosiy tormozlovchi mediatori
+s3019	Tirozin (→ DOFA)
+s3020	Dofamin, noradrenalin, adrenalin (katexolaminlar)
+s3021	Neyromediatorlar; buyrak usti bezi mag‘iz qavati gormonlari
+s3022	Etanolamin
+s3023	Fosfolipidlar sintezi
+s3024	Sistein (sisteinsulfin kislota orqali)
+s3025	Taurin
+s3026	O‘t kislotalari konyugatsiyasi; antioksidant
+s3027	Ornitin
+s3028	Putressin → spermidin, spermin (poliaminlar)
+s3029	Hujayra o‘sishi va bo‘linishi, nuklein kislotalarni barqarorlashtirish
+s3030	**Gistamin** allergik reaksiyalarda semiz hujayralar va bazofillardan ajraladi: eshakem, Kvinke shishi, bronxospazm, anafilaktik shokda arterial bosimning keskin pasayishi. **Antigistamin preparatlar**: H1- blokatorlar (difengidramin, loratadin, setirizin) — allergiyada; H2-blokatorlar (famotidin) — me’da shirasi sekretsiyasini kamaytiradi. B6 vitamini yetishmovchiligida glutamatdekarboksilaza faolligi
+s3031	pasayib GAMK kamayadi — chaqaloqlarda **tutqanoqlar** (izoniazid bilan davolashda B6 qo‘shib beriladi).
+s3032	Biogen aminlarning zararsizlantirilishi
+s3033	Biogen aminlar ta’siri qisqa bo‘lishi uchun ular tez parchalanadi:
+s3034	**Monoaminooksidazalar (MAO)** — mitoxondriya tashqi membranasida, FAD tutuvchi; oksidlovchi dezaminlanish: R-CH2-NH2 + O2 + H2O → R-CHO + NH3 + H2O2. MAO-A serotonin va noradrenalinni, MAO-B dofaminni parchalaydi. Hosil bo‘lgan aldegidlar kislotalarga oksidlanadi (serotonin → 5-gidroksiindolsirka kislota; katexolaminlar → vanililbodom kislota) va siydik bilan chiqadi.
+s3035	**Diaminooksidaza (gistaminaza)** — gistamin, putressin, kadaverinni oksidlaydi.
+s3036	**Metillanish** — **katexol-O-metiltransferaza (KOMT)** katexolaminlarni S-adenozilmetionin hisobiga metillaydi; gistamin ham metillanadi.
+s3037	**MAO ingibitorlari** (moklobemid — MAO-A, selegilin — MAO-B) va **serotonin qayta qamrab olinishining selektiv ingibitorlari** (fluoksetin) — antidepressantlar: sinapsda serotonin va noradrenalin ko‘payadi. Parkinson kasalligida (qora substansiyada dofamin yetishmasligi) **L-DOFA** (levodopa) — dofamin o‘tmaydigan gematoensefalik to‘siqdan o‘tadi va miyada dofaminga aylanadi; periferik dekarboksilaza ingibitori (karbidopa) bilan birga beriladi. MAO ingibitorlarini qabul qilayotgan bemor tiraminga boy ovqat (qattiq pishloq, vino) iste’mol qilsa, gipertonik kriz (“pishloq reaksiyasi”) rivojlanishi mumkin. **Feoxromotsitoma** (katexolamin ishlab chiqaruvchi o‘sma) siydikda vanililbodom kislota va metanefrinlar oshishi bilan tashxislanadi; **karsinoid o‘sma** — siydikda 5-gidroksiindolsirka kislota oshishi bilan.
+s3038	1-ish: qon zardobida AlAT va AsAT faolligini biokimyoviy analizatorda aniqlash (kinetik usul)
+s3039	Usul asosi (IFCC):
+s3040	**AlAT**: L-alanin + α-ketoglutarat → piruvat + L-glutamat; piruvat + NADH + H+ → laktat + NAD+ (indikator ferment — **laktatdegidrogenaza**);
+s3041	**AsAT**: L-aspartat + α-ketoglutarat → oksaloatsetat + L-glutamat; oksaloatsetat + NADH + H +
+s3042	→ malat + NAD+ (indikator ferment — **malatdegidrogenaza**). NADH 340 nm da nur yutadi, NAD+ esa yutmaydi; optik zichlikning **kamayish tezligi** ferment faolligiga proporsional. Reagentga piridoksalfosfat qo‘shiladi (B6 yetishmovchiligida soxta past natijani oldini olish uchun).
+s3043	Kyuvetaga 1 ml ishchi reagent (substratlar, NADH, LDG yoki MDG, PALF) quying va 37 °C da 5 daqiqa isiting.
+s3044	100 mkl qon zardobi qo‘shib aralashtiring.
+s3045	1 daqiqadan keyin 340 nm da optik zichlikni o‘lchang va 3 daqiqa davomida har daqiqada qayd qiling (analizatorda avtomatik).
+s3046	O‘rtacha ΔE/daq ni hisoblang. **Hisoblash:** faollik (XB/l) = ΔE/daq × F (F — reagent va kyuveta uchun omil, NADH ning mol yutish koeffitsientidan; masalan, 1746).
+s3047	**Baholash:** jadvaldagi me’yorlar bilan solishtiring, de Ritis koeffitsientini hisoblang. Gemolizlangan zardob AsAT ni soxta oshiradi (eritrotsitlarda AsAT ko‘p).
+s3048	2-ish: Raytman–Frenkel usuli (kolorimetrik) bilan aminotransferazalarni aniqlash (tarixiy usul)
+s3049	**Usul asosi:** transaminlanishda hosil bo‘lgan piruvat (yoki oksaloatsetatdan spontan hosil bo‘lgan piruvat) **2,4-dinitrofenilgidrazin** bilan gidrazon hosil qiladi; ishqoriy muhitda u qizil-qo‘ng‘ir rang beradi. Rang intensivligi piruvat miqdoriga, demak ferment faolligiga proporsional. Natija mkmol piruvat / (soat · ml) da ifodalanadi; me’yor: AlAT 0,1–0,68, AsAT 0,1–0,45 mmol/(soat · l).
+s3050	3-ish: aminokislotalarga ningidrin reaksiyasi
+s3051	Probirkaga 1 ml 1 % li glitsin (yoki oqsil gidrolizati) eritmasini va 5 tomchi 0,1 % li ningidrin eritmasini qo‘shing.
+s3052	1–2 daqiqa qaynating. **Natija va tahlil:** α-aminokislotalar ningidrin bilan **ko‘k-binafsha** rang (Ruemann ko‘ki) beradi: aminokislota oksidlovchi dezaminlanib, dekarboksillanadi, ajralgan ammiak ningidrin bilan rangli birikma hosil qiladi. Prolin va gidroksiprolin sariq rang beradi. Bu reaksiya aminokislotalarni xromatografiyada aniqlash asosida yotadi.
+s3053	Ko‘nikma: aminotransferazalar natijasini klinik baholash
+s3054	AlAT va AsAT ni jins bo‘yicha me’yor bilan solishtiring; necha marta oshganini aniqlang.
+s3055	De Ritis koeffitsientini hisoblang.
+s3056	< 1 bo‘lsa — gepatotsitlar sitolizi (gepatit) haqida o‘ylang; > 2 bo‘lsa — miokard yoki mushak shikastlanishi, alkogol gepatiti.
+s3057	Boshqa ko‘rsatkichlar bilan solishtiring: bilirubin, ishqoriy fosfataza, GGT (jigar); KFK-MB, troponinlar (yurak).
+s3058	Namunada gemoliz yo‘qligini tekshiring.
+s3059	Ko‘nikma: biogen amin almashinuviga ta’sir qiluvchi dorining mexanizmini tushuntirish
+s3060	Dori qaysi bosqichga ta’sir qilishini aniqlang: sintez (dekarboksilaza), retseptor, qayta qamrab olinish yoki parchalanish (MAO, KOMT).
+s3061	Sinapsda yoki to‘qimada biogen amin miqdori qanday o‘zgarishini ayting.
+s3062	Klinik samarani tushuntiring (antidepressant, antigistamin, antiparkinson).
+s3063	Nojo‘ya ta’sirlar va ovqat bilan o‘zaro ta’sirni (tiramin) ko‘rsating.
+s3064	Hujayradagi aminokislotalar qanday yo‘llar bilan sarflanadi?
+s3065	Transaminlanish nima? Reaksiya tenglamasini yozing.
+s3066	Piridoksalfosfatning transaminlanishdagi roli qanday?
+s3067	AlAT va AsAT qaysi reaksiyalarni katalizlaydi va qayerda joylashgan?
+s3068	Aminotransferazalarning klinik-diagnostik ahamiyati qanday?
+s3069	De Ritis koeffitsienti nima va uni qanday baholash kerak?
+s3070	Oksidlovchi dezaminlanish qanday boradi?
+s3071	Glutamatdegidrogenaza qanday boshqariladi?
+s3072	Transdezaminlanish nima va uning ahamiyati qanday?
+s3073	Glyukogen va ketogen aminokislotalarni ayting.
+s3074	Dekarboksillanish reaksiyasi qanday boradi va uning kofermenti qaysi?
+s3075	Asosiy biogen aminlar va ularning vazifalarini sanang.
+s3076	Gistaminning allergiya va yallig‘lanishdagi ahamiyati qanday?
+s3077	Biogen aminlar qanday zararsizlantiriladi?
+s3078	MAO ingibitorlari va L-DOFA ning ta’sir mexanizmini tushuntiring.
+s3079	Aminotransferazalarning kofermenti qaysi?
+s3080	Transaminlanishda amin guruhining asosiy akseptori qaysi?
+s3081	α-Ketoglutarat
+s3082	AlAT qaysi reaksiyani katalizlaydi?
+s3083	Glutamat → α-ketoglutarat + NH3
+s3084	Alanin + α-ketoglutarat ⇄ piruvat + glutamat
+s3085	Gistidin → gistamin + CO2
+s3086	Glutamat + NH3 → glutamin
+s3087	Virusli gepatitda qaysi ferment ko‘proq oshadi?
+s3088	De Ritis koeffitsientining me’yori qancha?
+s3089	0,5 dan kam
+s3090	10 dan ko‘p
+s3091	Faol oksidlovchi dezaminlanishga uchraydigan yagona aminokislota qaysi?
+s3092	Aspartat
+s3093	Leytsin
+s3094	Glutamatdegidrogenazani qaysi modda allosterik faollashtiradi?
+s3095	GTF
+s3096	Aminokislotalar dezaminlanishining asosiy yo‘li qaysi?
+s3097	Gidrolitik dezaminlanish
+s3098	Qaytaruvchi dezaminlanish
+s3099	L-aminokislotalar oksidazasi orqali
+s3100	Transdezaminlanish (bilvosita dezaminlanish)
+s3101	Molekula ichidagi dezaminlanish
+s3102	Faqat ketogen aminokislotalar qaysilar?
+s3103	Alanin va serin
+s3104	Glutamat va aspartat
+s3105	Fenilalanin va tirozin
+s3106	Valin va izoleytsin
+s3107	Leytsin va lizin
+s3108	Gistidin dekarboksillanganda qaysi modda hosil bo‘ladi?
+s3109	GAMK
+s3110	Dofamin
+s3111	MNT ning asosiy tormozlovchi mediatori qaysi aminokislotadan hosil bo‘ladi?
+s3112	Biogen aminlarni oksidlovchi dezaminlab zararsizlantiruvchi ferment qaysi?
+s3113	Glutamatdegidrogenaza
+s3114	Monoaminooksidaza
+s3115	Dekarboksilaza
+s3116	Aminotransferaza
+s3117	Serotonin qaysi aminokislotadan hosil bo‘ladi?
+s3118	Fenilalanin
+s3119	Parkinson kasalligini davolashda L-DOFA nima uchun dofamin o‘rniga beriladi?
+s3120	Dofamin ichakda so‘rilmaydi
+s3121	L-DOFA kuchliroq ta’sir qiladi
+s3122	Dofamin jigarda parchalanmaydi
+s3123	L-DOFA MAO ni ingibirlaydi
+s3124	Dofamin gematoensefalik to‘siqdan o‘tmaydi, L-DOFA o‘tib miyada dofaminga aylanadi
+s3125	Gemolizlangan zardobda qaysi ferment soxta oshgan chiqadi?
+s3126	25 yoshli bemorda holsizlik, ishtaha yo‘qligi, ko‘ngil aynishi, o‘ng qovurg‘a ostida og‘irlik; 3 kundan keyin sariqlik paydo bo‘ldi. Tahlil: AlAT 1200 XB/l, AsAT 680 XB/l, bilirubin 85 mkmol/l (asosan bog‘langan va erkin), HBsAg musbat.
+s3127	De Ritis koeffitsientini hisoblang va natijani talqin qiling. Nima uchun AlAT ko‘proq oshgan?
+s3128	De Ritis = 680 / 1200 ≈ 0,57 (< 1) — gepatotsitlar sitolizi (o‘tkir virusli gepatit B). AlAT asosan gepatotsitlarning sitozolida joylashgan va jigarda eng ko‘p; membrana shikastlanganda u birinchi bo‘lib qonga chiqadi. AsAT ning katta qismi mitoxondriyada — u faqat chuqur (nekrotik) shikastlanishda ko‘p chiqadi. AlAT oshishi sariqlikdan oldin boshlanadi va gepatit faolligining sezgir belgisi.
+s3129	58 yoshli erkak 8 soat oldin to‘sh ortida kuchli og‘riq bo‘lganini aytdi. Tahlil: AsAT 180 XB/l, AlAT 45 XB/l, KFK-MB va troponin I keskin oshgan.
+s3130	De Ritis koeffitsientini hisoblang. Qaysi a’zo shikastlangan?
+s3131	De Ritis = 180 / 45 = 4 (> 2) — miokard shikastlanishi. Yurak mushagida AsAT ko‘p, AlAT esa kam; miokard infarktida kardiomiotsitlar nekrozga uchrab, AsAT, KFK-MB, LDG1 va troponinlar qonga chiqadi. AsAT 6–12 soatdan keyin oshadi, 24–48 soatda eng yuqori, 4–7 kunda me’yorlashadi; hozirgi kunda troponinlar eng spetsifik belgi hisoblanadi.
+s3132	Depressiyani davolash uchun MAO ingibitori qabul qilayotgan bemor ziyofatda qattiq pishloq yeb, qizil vino ichgach, kuchli bosh og‘rig‘i, terlash, yurak urishi paydo bo‘ldi; arterial bosim 210/120 mm sim. ust.
+s3133	Bu holatning biokimyoviy mexanizmini tushuntiring.
+s3134	“Pishloq reaksiyasi” — gipertonik kriz. Pishloq va vinoda tiramin (tirozinning dekarboksillanish mahsuloti) ko‘p. Me’yorda u ichak devori va jigarda MAO bilan parchalanadi. MAO ingibirlanganda tiramin qonga o‘tib, simpatik nerv uchlaridan noradrenalinni siqib chiqaradi (bilvosita simpatomimetik); noradrenalin ham MAO bilan parchalanmagani uchun ta’siri kuchayadi — tomirlar torayadi, arterial bosim keskin oshadi. MAO ingibitorlarini qabul qiluvchilarga tiraminga boy ovqatlar taqiqlanadi.
+s3135	Transaminlanish
+s3136	Aminokislota + α-KG α-ketokislota + glutamat; qaytar; NH ⇄ 3 ajralmaydi
+s3137	Piridoksalfosfat (B6) — transaminlanish va dekarboksillanishda
+s3138	Alanin piruvat; jigar sitozoli; gepatitda ↑↑ ⇄
+s3139	Aspartat oksaloatsetat; yurak, jigar; miokard infarktida ↑ ⇄
+s3140	De Ritis
+s3141	AsAT/AlAT: me’yor 1,33; < 1 — gepatit; > 2 — infarkt, alkogol
+s3142	Oksidlovchi dezaminlanish
+s3143	Glutamatdegidrogenaza: glutamat → α-KG + NH3 + NADH
+s3144	GDG boshqarilishi
+s3145	ADF, GDF ↑; ATF, GTF, NADH ↓
+s3146	Transdezaminlanish
+s3147	Transaminlanish + GDG — asosiy yo‘l
+s3148	Ketogen aminokislotalar
+s3149	Leytsin, lizin
+s3150	Dekarboksillanish
+s3151	Aminokislota → biogen amin + CO2; PALF
+s3152	Biogen aminlar
+s3153	Gistamin (gistidin), serotonin (triptofan), GAMK (glutamat), katexolaminlar (tirozin)
+s3154	MAO (FAD), diaminooksidaza, KOMT (metillanish)
+s3155	Dorilar
+s3156	Antigistaminlar, MAO ingibitorlari, L-DOFA + karbidopa
+s3157	Ammiakning zararsizlantirilishi. Alohida aminokislotalar almashinuvi va nasliy buzilishlari
+s3158	Talabaga ammiakning hosil bo‘lish manbalari va zaharli ta’siri, uning vaqtincha va oxirgi zararsizlantirilish yo‘llari, siydikchil (mochevina) sintezi va uning transaminlanish hamda Krebs sikli bilan bog‘liqligi, giperammoniyemiya turlari va oqibatlari, serin, glitsin, metionin, fenilalanin va tirozin almashinuvi, bir uglerodli guruhlar va transmetillanish, aminokislotalar almashinuvining tug‘ma kasalliklari haqida bilim berish; qon zardobida siydikchilni aniqlashni egallash.
+s3159	ammiakning manbalari va zaharli ta’sir mexanizmlarini;
+s3160	ammiakning vaqtincha bog‘lanishini (glutamin, alanin) va buyrakda ammoniy tuzlari hosil bo‘lishini;
+s3161	ornitin siklining reaksiyalari, fermentlari, energiya sarfi va boshqarilishini;
+s3162	qon va siydikda siydikchilning me’yori va o‘zgarishlarini;
+s3163	tug‘ma va orttirilgan giperammoniyemiyalarni;
+s3164	tetragidrofolat va bir uglerodli guruhlarning ahamiyatini;
+s3165	metionin almashinuvi, S-adenozilmetionin va transmetillanishni, gomotsisteinni;
+s3166	fenilalanin va tirozin almashinuvi va uning tug‘ma kasalliklarini. **Talaba bajara olishi kerak:**
+s3167	qon zardobida siydikchilni aniqlash va natijani baholash;
+s3168	siydikda fenilpiruvatni aniqlash (Felling sinamasi);
+s3169	giperammoniyemiya sababini biokimyoviy asoslash.
+s3170	1. Ammiakning hosil bo‘lishi va zaharliligi
+s3171	Ammiak manbalari:
+s3172	aminokislotalarning dezaminlanishi (asosan glutamatning oksidlovchi dezaminlanishi);
+s3173	amidlarning (glutamin, asparagin) gidrolizi;
+s3174	biogen aminlarning MAO ta’sirida oksidlanishi;
+s3175	purin va pirimidin asoslarining dezaminlanishi (adenin, sitozin);
+s3176	ichakda bakteriyalar ta’sirida oqsillarning chirishi va siydikchilning parchalanishi (darvoza venasi orqali jigarga keladi). Odam organizmida sutkasiga ≈ 15–20 g ammiak hosil bo‘ladi, ammo qonda uning miqdori juda past: **11–35 mkmol/l** (me’yorda < 50 mkmol/l).
+s3177	**Zaharli ta’siri** (ayniqsa bosh miyaga):
+s3178	miyada ammiak α-ketoglutarat bilan glutamat hosil qiladi (qaytaruvchi aminlanish) — **α-ketoglutarat kamayadi**, Krebs sikli susayadi, ATF hosil bo‘lishi pasayadi;
+s3179	glutamat va glutamin ko‘payadi — astrotsitlarda **osmotik shish** (glutamin), neyromediatorlar muvozanati buziladi (glutamat ↓ yoki ↑, GAMK ↑);
+s3180	NH4
+s3181	+ K+ kanallarini va Na+,K+-ATFazani buzadi, membrana potensiali o‘zgaradi;
+s3182	qon pH i ishqoriy tomonga siljiydi. Klinik belgilari: ko‘ngil aynishi, qusish, letargiya, tremor, tutqanoq, koma.
+s3183	2. Ammiakning vaqtincha zararsizlantirilishi va tashilishi
+s3184	To‘qimalarda hosil bo‘lgan ammiak darhol bog‘lanadi va zaharsiz shakllarda jigar va buyrakka tashiladi:
+s3185	**Glutamin sintezi** (asosiy yo‘l; miya, mushak va boshqa to‘qimalar): glutamat + NH3 + ATF → **glutamin** + ADF + Fn — **glutaminsintetaza**. Glutamin — ammiakning asosiy transport shakli (qonda eng ko‘p aminokislota).
+s3186	**Alanin hosil bo‘lishi** (mushaklar): piruvat transaminlanib alaninga aylanadi va jigarga boradi — **glyukoza-alanin sikli** (7-mavzu).
+s3187	**Asparagin sintezi** (kamroq). **Buyrakda** glutamin **glutaminaza** ta’sirida glutamat va NH3 ga parchalanadi; NH3 kanalchalar yo‘liga chiqib H+ ni bog‘laydi va **ammoniy tuzlari** (NH4
+s3188	+) shaklida siydik bilan chiqariladi (sutkasiga ≈ 0,5– 1 g). Bu jarayon **atsidozda keskin kuchayadi** — buyrakning kislota-asos muvozanatini saqlashdagi muhim mexanizmi (29-mavzu).
+s3189	3. Siydikchil sintezi (ornitin sikli)
+s3190	Ammiakning **oxirgi zararsizlantirilishi** — **jigarda** siydikchil (mochevina) sintezi. Siklni H. Krebs va K. Xenzeleyt (1932) ochgan. Siydikchil — kam zaharli, suvda yaxshi eriydigan, neytral modda; organizmdagi azotning ≈ 80–90 % i shu shaklda chiqariladi.
+s3191	Rasm 13.1
+s3192	Ornitin (siydikchil) sikli (Sobirova R.A., 2006; Severin E.S. asosida chizilgan)
+s3193	Jadval 13.1. Ornitin sikli reaksiyalari
+s3194	NH3 + CO2 + 2ATF → karbamoilfosfat + 2ADF + Fn
+s3195	Karbamoilfosfatsintetaza I (kalit ferment)
+s3196	Karbamoilfosfat + ornitin → sitrullin + Fn
+s3197	Ornitinkarbamoiltransferaza
+s3198	Sitrullin + aspartat + ATF → argininosuktsinat + AMF + PPn
+s3199	Argininosuktsinatsintetaza
+s3200	Sitozol
+s3201	Argininosuktsinat → arginin + fumarat
+s3202	Argininosuktsinatliaza
+s3203	Arginin + H2O → siydikchil + ornitin
+s3204	Arginaza (Mn2+; deyarli faqat jigarda)
+s3205	**Siydikchil molekulasidagi ikki azotning manbalari:** birinchisi — **ammiak** (glutamatning dezaminlanishi va glutaminaza reaksiyasidan), ikkinchisi — **aspartat** (oksaloatsetatning transaminlanishidan). Shu tariqa siklga barcha aminokislotalar azoti transaminlanish orqali yetkaziladi.

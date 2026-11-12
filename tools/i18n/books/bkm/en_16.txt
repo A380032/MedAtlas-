@@ -1,189 +1,188 @@
-s3017 Table 12.3. The main biogenic amines
-s3018 Biogenic amine
-s3019 Histidine
-s3020 A mediator of allergy and inflammation (vasodilation, increased permeability, bronchospasm, itching — H1); secretion of gastric juice (H2); a neurotransmitter in the CNS
-s3021 Tryptophan (→ 5-hydroxytryptophan)
-s3022 Serotonin
-s3023 A neurotransmitter (mood, sleep, appetite); intestinal motility; constricts vessels; platelet aggregation; melatonin is formed from it in the pineal gland
-s3024 Glutamate
-s3025 GABA (γ-aminobutyric acid)
-s3026 The main inhibitory mediator of the CNS
-s3027 Tyrosine (→ DOPA)
-s3028 Dopamine, noradrenaline, adrenaline (catecholamines)
-s3029 Neurotransmitters; hormones of the adrenal medulla
-s3030 Ethanolamine
-s3031 Synthesis of phospholipids
-s3032 Cysteine (through cysteine sulfinic acid)
-s3033 Taurine
-s3034 Conjugation of bile acids; an antioxidant
-s3035 Ornithine
-s3036 Putrescine → spermidine, spermine (polyamines)
-s3037 Cell growth and division, stabilization of nucleic acids
-s3038 **Histamine** is released from mast cells and basophils in allergic reactions: urticaria, Quincke edema, bronchospasm, and a sharp fall of blood pressure in anaphylactic shock. **Antihistamines**: H1 blockers (diphenhydramine, loratadine, cetirizine) — in allergy; H2 blockers (famotidine) — reduce the secretion of gastric juice. In vitamin B6 deficiency the activity of glutamate decarboxylase
-s3039 falls and GABA decreases — **seizures** in newborns (B6 is given together with isoniazid treatment).
-s3040 Detoxification of the biogenic amines
-s3041 So that the action of the biogenic amines is short, they are broken down quickly:
-s3042 **Monoamine oxidases (MAO)** — on the outer mitochondrial membrane, containing FAD; oxidative deamination: R-CH2-NH2 + O2 + H2O → R-CHO + NH3 + H2O2. MAO-A breaks down serotonin and noradrenaline, MAO-B dopamine. The aldehydes formed are oxidized to acids (serotonin → 5-hydroxyindoleacetic acid; catecholamines → vanillylmandelic acid) and excreted in the urine.
-s3043 **Diamine oxidase (histaminase)** — oxidizes histamine, putrescine and cadaverine.
-s3044 **Methylation** — **catechol-O-methyltransferase (COMT)** methylates catecholamines at the expense of S-adenosylmethionine; histamine is also methylated.
-s3045 **MAO inhibitors** (moclobemide — MAO-A, selegiline — MAO-B) and **selective serotonin reuptake inhibitors** (fluoxetine) are antidepressants: serotonin and noradrenaline increase in the synapse. In Parkinson disease (a lack of dopamine in the substantia nigra) **L-DOPA** (levodopa) is used — it crosses the blood-brain barrier, which dopamine cannot, and is converted into dopamine in the brain; it is given together with a peripheral decarboxylase inhibitor (carbidopa). If a patient taking MAO inhibitors eats food rich in tyramine (hard cheese, wine), a hypertensive crisis (the “cheese reaction”) may develop. **Pheochromocytoma** (a catecholamine-producing tumor) is diagnosed by a rise in vanillylmandelic acid and metanephrines in the urine; a **carcinoid tumor** by a rise in 5-hydroxyindoleacetic acid in the urine.
-s3046 Experiment 1: determination of ALT and AST activity in serum on a biochemical analyzer (kinetic method)
-s3047 Principle of the method (IFCC):
-s3048 **ALT**: L-alanine + α-ketoglutarate → pyruvate + L-glutamate; pyruvate + NADH + H+ → lactate + NAD+ (the indicator enzyme is **lactate dehydrogenase**);
-s3049 **AST**: L-aspartate + α-ketoglutarate → oxaloacetate + L-glutamate; oxaloacetate + NADH + H+
-s3050 → malate + NAD+ (the indicator enzyme is **malate dehydrogenase**). NADH absorbs light at 340 nm while NAD+ does not; the **rate of fall** of the optical density is proportional to the enzyme activity. Pyridoxal phosphate is added to the reagent (to avoid a falsely low result in B6 deficiency).
-s3051 Pour 1 ml of working reagent (substrates, NADH, LDH or MDH, PLP) into a cuvette and warm it at 37 °C for 5 minutes.
-s3052 Add 100 µl of serum and mix.
-s3053 After 1 minute measure the optical density at 340 nm and record it every minute for 3 minutes (automatically on the analyzer).
-s3054 Calculate the mean ΔE/min. **Calculation:** activity (IU/l) = ΔE/min × F (F is the factor for the reagent and cuvette, derived from the molar absorption coefficient of NADH; for example, 1746).
-s3055 **Evaluation:** compare with the normal values in the table and calculate the De Ritis ratio. Hemolyzed serum falsely raises AST (erythrocytes contain a lot of AST).
-s3056 Experiment 2: determination of the aminotransferases by the Reitman–Frankel method (colorimetric) (a historical method)
-s3057 **Principle of the method:** the pyruvate formed in transamination (or the pyruvate formed spontaneously from oxaloacetate) forms a hydrazone with **2,4-dinitrophenylhydrazine**; in an alkaline medium it gives a red-brown color. The intensity of the color is proportional to the amount of pyruvate and therefore to the enzyme activity. The result is expressed in µmol pyruvate / (hour · ml); normal values: ALT 0.1–0.68, AST 0.1–0.45 mmol/(hour · l).
-s3058 Experiment 3: the ninhydrin reaction for amino acids
-s3059 Add to a test tube 1 ml of 1% glycine solution (or a protein hydrolysate) and 5 drops of 0.1% ninhydrin solution.
-s3060 Boil for 1–2 minutes. **Result and analysis:** α-amino acids give a **blue-violet** color with ninhydrin (Ruhemann’s purple): the amino acid undergoes oxidative deamination and decarboxylation, and the ammonia released forms a colored compound with ninhydrin. Proline and hydroxyproline give a yellow color. This reaction underlies the detection of amino acids in chromatography.
-s3061 Skill: clinical evaluation of an aminotransferase result
-s3062 Compare ALT and AST with the normal values for the sex; determine how many times they are increased.
-s3063 Calculate the De Ritis ratio.
-s3064 If it is < 1 — think of cytolysis of hepatocytes (hepatitis); if > 2 — damage to the myocardium or muscle, alcoholic hepatitis.
-s3065 Compare with the other indices: bilirubin, alkaline phosphatase, GGT (liver); CK-MB, troponins (heart).
-s3066 Check that there is no hemolysis in the sample.
-s3067 Skill: explaining the mechanism of a drug that affects the metabolism of a biogenic amine
-s3068 Determine which step the drug acts on: synthesis (decarboxylase), the receptor, reuptake or breakdown (MAO, COMT).
-s3069 State how the amount of the biogenic amine changes in the synapse or in the tissue.
-s3070 Explain the clinical effect (antidepressant, antihistamine, antiparkinsonian).
-s3071 Indicate the adverse effects and the interaction with food (tyramine).
-s3072 In what ways are the amino acids of the cell used?
-s3073 What is transamination? Write the equation of the reaction.
-s3074 What is the role of pyridoxal phosphate in transamination?
-s3075 Which reactions do ALT and AST catalyze and where are they located?
-s3076 What is the clinical and diagnostic significance of the aminotransferases?
-s3077 What is the De Ritis ratio and how should it be evaluated?
-s3078 How does oxidative deamination proceed?
-s3079 How is glutamate dehydrogenase regulated?
-s3080 What is transdeamination and what is its significance?
-s3081 Name the glucogenic and ketogenic amino acids.
-s3082 How does the decarboxylation reaction proceed and what is its coenzyme?
-s3083 List the main biogenic amines and their functions.
-s3084 What is the significance of histamine in allergy and inflammation?
-s3085 How are the biogenic amines detoxified?
-s3086 Explain the mechanism of action of MAO inhibitors and L-DOPA.
-s3087 The coenzyme of the aminotransferases:
-s3088 The main acceptor of the amino group in transamination:
-s3089 α-Ketoglutarate
-s3090 The reaction catalyzed by ALT:
-s3091 Glutamate → α-ketoglutarate + NH3
-s3092 Alanine + α-ketoglutarate ⇄ pyruvate + glutamate
-s3093 Histidine → histamine + CO2
-s3094 Glutamate + NH3 → glutamine
-s3095 The enzyme that rises more in viral hepatitis:
-s3096 The normal value of the De Ritis ratio:
-s3097 Less than 0.5
-s3098 More than 10
-s3099 The only amino acid that undergoes active oxidative deamination:
-s3100 Aspartate
-s3101 Leucine
-s3102 The substance that allosterically activates glutamate dehydrogenase:
-s3103 GTP
-s3104 The main route of deamination of amino acids:
-s3105 Hydrolytic deamination
-s3106 Reductive deamination
-s3107 Through L-amino acid oxidase
-s3108 Transdeamination (indirect deamination)
-s3109 Intramolecular deamination
-s3110 The amino acids that are purely ketogenic:
-s3111 Alanine and serine
-s3112 Glutamate and aspartate
-s3113 Phenylalanine and tyrosine
-s3114 Valine and isoleucine
-s3115 Leucine and lysine
-s3116 The substance formed by the decarboxylation of histidine:
-s3117 GABA
-s3118 Dopamine
-s3119 The amino acid from which the main inhibitory mediator of the CNS is formed:
-s3120 The enzyme that detoxifies biogenic amines by oxidative deamination:
-s3121 Glutamate dehydrogenase
-s3122 Monoamine oxidase
-s3123 Decarboxylase
-s3124 Aminotransferase
-s3125 The amino acid from which serotonin is formed:
-s3126 Phenylalanine
-s3127 Why L-DOPA is given instead of dopamine in the treatment of Parkinson disease:
-s3128 Dopamine is not absorbed in the intestine
-s3129 L-DOPA acts more strongly
-s3130 Dopamine is not broken down in the liver
-s3131 L-DOPA inhibits MAO
-s3132 Dopamine does not cross the blood-brain barrier, while L-DOPA does and is converted into dopamine in the brain
-s3133 The enzyme that is falsely increased in hemolyzed serum:
-s3134 A 25-year-old patient has weakness, loss of appetite, nausea and heaviness under the right costal margin; jaundice appeared 3 days later. Tests: ALT 1200 IU/l, AST 680 IU/l, bilirubin 85 µmol/l (mainly conjugated and free), HBsAg positive.
-s3135 Calculate the De Ritis ratio and interpret the result. Why has ALT risen more?
-s3136 De Ritis = 680 / 1200 ≈ 0.57 (< 1) — cytolysis of hepatocytes (acute viral hepatitis B). ALT is located mainly in the cytosol of hepatocytes and is most abundant in the liver; when the membrane is damaged it is the first to be released into the blood. A large part of AST is in the mitochondria — it is released in quantity only in deep (necrotic) damage. The rise of ALT begins before the jaundice and is a sensitive sign of the activity of hepatitis.
-s3137 A 58-year-old man says he had severe pain behind the sternum 8 hours ago. Tests: AST 180 IU/l, ALT 45 IU/l, CK-MB and troponin I sharply increased.
-s3138 Calculate the De Ritis ratio. Which organ is damaged?
-s3139 De Ritis = 180 / 45 = 4 (> 2) — damage to the myocardium. The heart muscle contains a lot of AST and little ALT; in myocardial infarction the cardiomyocytes undergo necrosis and AST, CK-MB, LDH1 and troponins are released into the blood. AST rises after 6–12 hours, peaks at 24–48 hours and normalizes in 4–7 days; today the troponins are considered the most specific marker.
-s3140 A patient taking a MAO inhibitor for depression ate hard cheese and drank red wine at a party, after which he developed a severe headache, sweating and palpitations; his blood pressure is 210/120 mm Hg.
-s3141 Explain the biochemical mechanism of this condition.
-s3142 The “cheese reaction” — a hypertensive crisis. Cheese and wine contain a lot of tyramine (the decarboxylation product of tyrosine). Normally it is broken down by MAO in the intestinal wall and the liver. When MAO is inhibited, tyramine passes into the blood and displaces noradrenaline from the sympathetic nerve endings (an indirect sympathomimetic); because noradrenaline is also not broken down by MAO, its effect is stronger — the vessels constrict and blood pressure rises sharply. People taking MAO inhibitors are forbidden foods rich in tyramine.
-s3143 Transamination
-s3144 Amino acid + α-KG ⇄ α-keto acid + glutamate; reversible; no NH3 is released
-s3145 Pyridoxal phosphate (B6) — in transamination and decarboxylation
-s3146 Alanine ⇄ pyruvate; liver cytosol; ↑↑ in hepatitis
-s3147 Aspartate ⇄ oxaloacetate; heart, liver; ↑ in myocardial infarction
-s3148 De Ritis
-s3149 AST/ALT: normal 1.33; < 1 — hepatitis; > 2 — infarction, alcohol
-s3150 Oxidative deamination
-s3151 Glutamate dehydrogenase: glutamate → α-KG + NH3 + NADH
-s3152 Regulation of GDH
-s3153 ADP, GDP ↑; ATP, GTP, NADH ↓
-s3154 Transdeamination
-s3155 Transamination + GDH — the main route
-s3156 Ketogenic amino acids
-s3157 Leucine, lysine
-s3158 Decarboxylation
-s3159 Amino acid → biogenic amine + CO2; PLP
-s3160 Biogenic amines
-s3161 Histamine (histidine), serotonin (tryptophan), GABA (glutamate), catecholamines (tyrosine)
-s3162 MAO (FAD), diamine oxidase, COMT (methylation)
-s3163 Drugs
-s3164 Antihistamines, MAO inhibitors, L-DOPA + carbidopa
-s3165 Detoxification of ammonia. Metabolism of individual amino acids and its hereditary disorders
-s3166 To give the student knowledge of the sources and toxic action of ammonia, the routes of its temporary and final detoxification, the synthesis of urea and its link with transamination and the Krebs cycle, the types and consequences of hyperammonemia, the metabolism of serine, glycine, methionine, phenylalanine and tyrosine, one-carbon groups and transmethylation, and the congenital diseases of amino acid metabolism; to master the determination of urea in serum.
-s3167 the sources of ammonia and the mechanisms of its toxic action;
-s3168 the temporary binding of ammonia (glutamine, alanine) and the formation of ammonium salts in the kidney;
-s3169 the reactions, enzymes, energy cost and regulation of the ornithine cycle;
-s3170 the normal values and the changes of urea in blood and urine;
-s3171 congenital and acquired hyperammonemias;
-s3172 the significance of tetrahydrofolate and one-carbon groups;
-s3173 the metabolism of methionine, S-adenosylmethionine and transmethylation, and homocysteine;
-s3174 the metabolism of phenylalanine and tyrosine and its congenital diseases. **The student should be able to:**
-s3175 determine urea in serum and evaluate the result;
-s3176 determine phenylpyruvate in urine (the Fölling test);
-s3177 give a biochemical explanation of the cause of hyperammonemia.
-s3178 1. Formation and toxicity of ammonia
-s3179 Sources of ammonia:
-s3180 deamination of amino acids (mainly the oxidative deamination of glutamate);
-s3181 hydrolysis of amides (glutamine, asparagine);
-s3182 oxidation of biogenic amines by MAO;
-s3183 deamination of purine and pyrimidine bases (adenine, cytosine);
-s3184 putrefaction of proteins and breakdown of urea by bacteria in the intestine (it reaches the liver through the portal vein). About 15–20 g of ammonia is formed per day in the human body, but its level in the blood is very low: **11–35 µmol/l** (normally < 50 µmol/l).
-s3185 **Its toxic action** (especially on the brain):
-s3186 in the brain ammonia forms glutamate with α-ketoglutarate (reductive amination) — **α-ketoglutarate falls**, the Krebs cycle slows down and ATP formation decreases;
-s3187 glutamate and glutamine increase — **osmotic swelling** of the astrocytes (glutamine) and a disturbed balance of neurotransmitters (glutamate ↓ or ↑, GABA ↑);
-s3188 NH4
-s3189 + disrupts K+ channels and Na+,K+-ATPase, and the membrane potential changes;
-s3190 the blood pH shifts to the alkaline side. Clinical signs: nausea, vomiting, lethargy, tremor, seizures, coma.
-s3191 2. Temporary detoxification and transport of ammonia
-s3192 The ammonia formed in the tissues is bound at once and transported to the liver and kidney in nontoxic forms:
-s3193 **Synthesis of glutamine** (the main route; brain, muscle and other tissues): glutamate + NH3 + ATP → **glutamine** + ADP + Pi — **glutamine synthetase**. Glutamine is the main transport form of ammonia (the most abundant amino acid in the blood).
-s3194 **Formation of alanine** (muscles): pyruvate is transaminated into alanine and goes to the liver — the **glucose-alanine cycle** (topic 7).
-s3195 **Synthesis of asparagine** (less important). **In the kidney** glutamine is broken down by **glutaminase** into glutamate and NH3; NH3 passes into the tubular lumen, binds H+ and is excreted in the urine as **ammonium salts** (NH4
-s3196 +) (≈ 0.5–1 g per day). This process **increases sharply in acidosis** — an important mechanism by which the kidney maintains the acid-base balance (topic 29).
-s3197 3. Synthesis of urea (the ornithine cycle)
-s3198 The **final detoxification** of ammonia is the synthesis of urea in the **liver**. The cycle was discovered by H. Krebs and K. Henseleit (1932). Urea is a slightly toxic, highly water-soluble, neutral substance; ≈ 80–90% of the body’s nitrogen is excreted in this form.
-s3199 Figure 13.1
-s3200 The ornithine (urea) cycle (drawn after Sobirova R.A., 2006; Severin E.S.)
-s3201 Table 13.1. Reactions of the ornithine cycle
-s3202 NH3 + CO2 + 2ATP → carbamoyl phosphate + 2ADP + Pi
-s3203 Carbamoyl phosphate synthetase I (the key enzyme)
-s3204 Mitochondria
-s3205 Carbamoyl phosphate + ornithine → citrulline + Pi
+s3018 The main inhibitory mediator of the CNS
+s3019 Tyrosine (→ DOPA)
+s3020 Dopamine, noradrenaline, adrenaline (catecholamines)
+s3021 Neurotransmitters; hormones of the adrenal medulla
+s3022 Ethanolamine
+s3023 Synthesis of phospholipids
+s3024 Cysteine (through cysteine sulfinic acid)
+s3025 Taurine
+s3026 Conjugation of bile acids; an antioxidant
+s3027 Ornithine
+s3028 Putrescine → spermidine, spermine (polyamines)
+s3029 Cell growth and division, stabilization of nucleic acids
+s3030 **Histamine** is released from mast cells and basophils in allergic reactions: urticaria, Quincke edema, bronchospasm, and a sharp fall of blood pressure in anaphylactic shock. **Antihistamines**: H1 blockers (diphenhydramine, loratadine, cetirizine) — in allergy; H2 blockers (famotidine) — reduce the secretion of gastric juice. In vitamin B6 deficiency the activity of glutamate decarboxylase
+s3031 falls and GABA decreases — **seizures** in newborns (B6 is given together with isoniazid treatment).
+s3032 Detoxification of the biogenic amines
+s3033 So that the action of the biogenic amines is short, they are broken down quickly:
+s3034 **Monoamine oxidases (MAO)** — on the outer mitochondrial membrane, containing FAD; oxidative deamination: R-CH2-NH2 + O2 + H2O → R-CHO + NH3 + H2O2. MAO-A breaks down serotonin and noradrenaline, MAO-B dopamine. The aldehydes formed are oxidized to acids (serotonin → 5-hydroxyindoleacetic acid; catecholamines → vanillylmandelic acid) and excreted in the urine.
+s3035 **Diamine oxidase (histaminase)** — oxidizes histamine, putrescine and cadaverine.
+s3036 **Methylation** — **catechol-O-methyltransferase (COMT)** methylates catecholamines at the expense of S-adenosylmethionine; histamine is also methylated.
+s3037 **MAO inhibitors** (moclobemide — MAO-A, selegiline — MAO-B) and **selective serotonin reuptake inhibitors** (fluoxetine) are antidepressants: serotonin and noradrenaline increase in the synapse. In Parkinson disease (a lack of dopamine in the substantia nigra) **L-DOPA** (levodopa) is used — it crosses the blood-brain barrier, which dopamine cannot, and is converted into dopamine in the brain; it is given together with a peripheral decarboxylase inhibitor (carbidopa). If a patient taking MAO inhibitors eats food rich in tyramine (hard cheese, wine), a hypertensive crisis (the “cheese reaction”) may develop. **Pheochromocytoma** (a catecholamine-producing tumor) is diagnosed by a rise in vanillylmandelic acid and metanephrines in the urine; a **carcinoid tumor** by a rise in 5-hydroxyindoleacetic acid in the urine.
+s3038 Experiment 1: determination of ALT and AST activity in serum on a biochemical analyzer (kinetic method)
+s3039 Principle of the method (IFCC):
+s3040 **ALT**: L-alanine + α-ketoglutarate → pyruvate + L-glutamate; pyruvate + NADH + H+ → lactate + NAD+ (the indicator enzyme is **lactate dehydrogenase**);
+s3041 **AST**: L-aspartate + α-ketoglutarate → oxaloacetate + L-glutamate; oxaloacetate + NADH + H+
+s3042 → malate + NAD+ (the indicator enzyme is **malate dehydrogenase**). NADH absorbs light at 340 nm while NAD+ does not; the **rate of fall** of the optical density is proportional to the enzyme activity. Pyridoxal phosphate is added to the reagent (to avoid a falsely low result in B6 deficiency).
+s3043 Pour 1 ml of working reagent (substrates, NADH, LDH or MDH, PLP) into a cuvette and warm it at 37 °C for 5 minutes.
+s3044 Add 100 µl of serum and mix.
+s3045 After 1 minute measure the optical density at 340 nm and record it every minute for 3 minutes (automatically on the analyzer).
+s3046 Calculate the mean ΔE/min. **Calculation:** activity (IU/l) = ΔE/min × F (F is the factor for the reagent and cuvette, derived from the molar absorption coefficient of NADH; for example, 1746).
+s3047 **Evaluation:** compare with the normal values in the table and calculate the De Ritis ratio. Hemolyzed serum falsely raises AST (erythrocytes contain a lot of AST).
+s3048 Experiment 2: determination of the aminotransferases by the Reitman–Frankel method (colorimetric) (a historical method)
+s3049 **Principle of the method:** the pyruvate formed in transamination (or the pyruvate formed spontaneously from oxaloacetate) forms a hydrazone with **2,4-dinitrophenylhydrazine**; in an alkaline medium it gives a red-brown color. The intensity of the color is proportional to the amount of pyruvate and therefore to the enzyme activity. The result is expressed in µmol pyruvate / (hour · ml); normal values: ALT 0.1–0.68, AST 0.1–0.45 mmol/(hour · l).
+s3050 Experiment 3: the ninhydrin reaction for amino acids
+s3051 Add to a test tube 1 ml of 1% glycine solution (or a protein hydrolysate) and 5 drops of 0.1% ninhydrin solution.
+s3052 Boil for 1–2 minutes. **Result and analysis:** α-amino acids give a **blue-violet** color with ninhydrin (Ruhemann’s purple): the amino acid undergoes oxidative deamination and decarboxylation, and the ammonia released forms a colored compound with ninhydrin. Proline and hydroxyproline give a yellow color. This reaction underlies the detection of amino acids in chromatography.
+s3053 Skill: clinical evaluation of an aminotransferase result
+s3054 Compare ALT and AST with the normal values for the sex; determine how many times they are increased.
+s3055 Calculate the De Ritis ratio.
+s3056 If it is < 1 — think of cytolysis of hepatocytes (hepatitis); if > 2 — damage to the myocardium or muscle, alcoholic hepatitis.
+s3057 Compare with the other indices: bilirubin, alkaline phosphatase, GGT (liver); CK-MB, troponins (heart).
+s3058 Check that there is no hemolysis in the sample.
+s3059 Skill: explaining the mechanism of a drug that affects the metabolism of a biogenic amine
+s3060 Determine which step the drug acts on: synthesis (decarboxylase), the receptor, reuptake or breakdown (MAO, COMT).
+s3061 State how the amount of the biogenic amine changes in the synapse or in the tissue.
+s3062 Explain the clinical effect (antidepressant, antihistamine, antiparkinsonian).
+s3063 Indicate the adverse effects and the interaction with food (tyramine).
+s3064 In what ways are the amino acids of the cell used?
+s3065 What is transamination? Write the equation of the reaction.
+s3066 What is the role of pyridoxal phosphate in transamination?
+s3067 Which reactions do ALT and AST catalyze and where are they located?
+s3068 What is the clinical and diagnostic significance of the aminotransferases?
+s3069 What is the De Ritis ratio and how should it be evaluated?
+s3070 How does oxidative deamination proceed?
+s3071 How is glutamate dehydrogenase regulated?
+s3072 What is transdeamination and what is its significance?
+s3073 Name the glucogenic and ketogenic amino acids.
+s3074 How does the decarboxylation reaction proceed and what is its coenzyme?
+s3075 List the main biogenic amines and their functions.
+s3076 What is the significance of histamine in allergy and inflammation?
+s3077 How are the biogenic amines detoxified?
+s3078 Explain the mechanism of action of MAO inhibitors and L-DOPA.
+s3079 The coenzyme of the aminotransferases:
+s3080 The main acceptor of the amino group in transamination:
+s3081 α-Ketoglutarate
+s3082 The reaction catalyzed by ALT:
+s3083 Glutamate → α-ketoglutarate + NH3
+s3084 Alanine + α-ketoglutarate ⇄ pyruvate + glutamate
+s3085 Histidine → histamine + CO2
+s3086 Glutamate + NH3 → glutamine
+s3087 The enzyme that rises more in viral hepatitis:
+s3088 The normal value of the De Ritis ratio:
+s3089 Less than 0.5
+s3090 More than 10
+s3091 The only amino acid that undergoes active oxidative deamination:
+s3092 Aspartate
+s3093 Leucine
+s3094 The substance that allosterically activates glutamate dehydrogenase:
+s3095 GTP
+s3096 The main route of deamination of amino acids:
+s3097 Hydrolytic deamination
+s3098 Reductive deamination
+s3099 Through L-amino acid oxidase
+s3100 Transdeamination (indirect deamination)
+s3101 Intramolecular deamination
+s3102 The amino acids that are purely ketogenic:
+s3103 Alanine and serine
+s3104 Glutamate and aspartate
+s3105 Phenylalanine and tyrosine
+s3106 Valine and isoleucine
+s3107 Leucine and lysine
+s3108 The substance formed by the decarboxylation of histidine:
+s3109 GABA
+s3110 Dopamine
+s3111 The amino acid from which the main inhibitory mediator of the CNS is formed:
+s3112 The enzyme that detoxifies biogenic amines by oxidative deamination:
+s3113 Glutamate dehydrogenase
+s3114 Monoamine oxidase
+s3115 Decarboxylase
+s3116 Aminotransferase
+s3117 The amino acid from which serotonin is formed:
+s3118 Phenylalanine
+s3119 Why L-DOPA is given instead of dopamine in the treatment of Parkinson disease:
+s3120 Dopamine is not absorbed in the intestine
+s3121 L-DOPA acts more strongly
+s3122 Dopamine is not broken down in the liver
+s3123 L-DOPA inhibits MAO
+s3124 Dopamine does not cross the blood-brain barrier, while L-DOPA does and is converted into dopamine in the brain
+s3125 The enzyme that is falsely increased in hemolyzed serum:
+s3126 A 25-year-old patient has weakness, loss of appetite, nausea and heaviness under the right costal margin; jaundice appeared 3 days later. Tests: ALT 1200 IU/l, AST 680 IU/l, bilirubin 85 µmol/l (mainly conjugated and free), HBsAg positive.
+s3127 Calculate the De Ritis ratio and interpret the result. Why has ALT risen more?
+s3128 De Ritis = 680 / 1200 ≈ 0.57 (< 1) — cytolysis of hepatocytes (acute viral hepatitis B). ALT is located mainly in the cytosol of hepatocytes and is most abundant in the liver; when the membrane is damaged it is the first to be released into the blood. A large part of AST is in the mitochondria — it is released in quantity only in deep (necrotic) damage. The rise of ALT begins before the jaundice and is a sensitive sign of the activity of hepatitis.
+s3129 A 58-year-old man says he had severe pain behind the sternum 8 hours ago. Tests: AST 180 IU/l, ALT 45 IU/l, CK-MB and troponin I sharply increased.
+s3130 Calculate the De Ritis ratio. Which organ is damaged?
+s3131 De Ritis = 180 / 45 = 4 (> 2) — damage to the myocardium. The heart muscle contains a lot of AST and little ALT; in myocardial infarction the cardiomyocytes undergo necrosis and AST, CK-MB, LDH1 and troponins are released into the blood. AST rises after 6–12 hours, peaks at 24–48 hours and normalizes in 4–7 days; today the troponins are considered the most specific marker.
+s3132 A patient taking a MAO inhibitor for depression ate hard cheese and drank red wine at a party, after which he developed a severe headache, sweating and palpitations; his blood pressure is 210/120 mm Hg.
+s3133 Explain the biochemical mechanism of this condition.
+s3134 The “cheese reaction” — a hypertensive crisis. Cheese and wine contain a lot of tyramine (the decarboxylation product of tyrosine). Normally it is broken down by MAO in the intestinal wall and the liver. When MAO is inhibited, tyramine passes into the blood and displaces noradrenaline from the sympathetic nerve endings (an indirect sympathomimetic); because noradrenaline is also not broken down by MAO, its effect is stronger — the vessels constrict and blood pressure rises sharply. People taking MAO inhibitors are forbidden foods rich in tyramine.
+s3135 Transamination
+s3136 Amino acid + α-KG ⇄ α-keto acid + glutamate; reversible; no NH3 is released
+s3137 Pyridoxal phosphate (B6) — in transamination and decarboxylation
+s3138 Alanine ⇄ pyruvate; liver cytosol; ↑↑ in hepatitis
+s3139 Aspartate ⇄ oxaloacetate; heart, liver; ↑ in myocardial infarction
+s3140 De Ritis
+s3141 AST/ALT: normal 1.33; < 1 — hepatitis; > 2 — infarction, alcohol
+s3142 Oxidative deamination
+s3143 Glutamate dehydrogenase: glutamate → α-KG + NH3 + NADH
+s3144 Regulation of GDH
+s3145 ADP, GDP ↑; ATP, GTP, NADH ↓
+s3146 Transdeamination
+s3147 Transamination + GDH — the main route
+s3148 Ketogenic amino acids
+s3149 Leucine, lysine
+s3150 Decarboxylation
+s3151 Amino acid → biogenic amine + CO2; PLP
+s3152 Biogenic amines
+s3153 Histamine (histidine), serotonin (tryptophan), GABA (glutamate), catecholamines (tyrosine)
+s3154 MAO (FAD), diamine oxidase, COMT (methylation)
+s3155 Drugs
+s3156 Antihistamines, MAO inhibitors, L-DOPA + carbidopa
+s3157 Detoxification of ammonia. Metabolism of individual amino acids and its hereditary disorders
+s3158 To give the student knowledge of the sources and toxic action of ammonia, the routes of its temporary and final detoxification, the synthesis of urea and its link with transamination and the Krebs cycle, the types and consequences of hyperammonemia, the metabolism of serine, glycine, methionine, phenylalanine and tyrosine, one-carbon groups and transmethylation, and the congenital diseases of amino acid metabolism; to master the determination of urea in serum.
+s3159 the sources of ammonia and the mechanisms of its toxic action;
+s3160 the temporary binding of ammonia (glutamine, alanine) and the formation of ammonium salts in the kidney;
+s3161 the reactions, enzymes, energy cost and regulation of the ornithine cycle;
+s3162 the normal values and the changes of urea in blood and urine;
+s3163 congenital and acquired hyperammonemias;
+s3164 the significance of tetrahydrofolate and one-carbon groups;
+s3165 the metabolism of methionine, S-adenosylmethionine and transmethylation, and homocysteine;
+s3166 the metabolism of phenylalanine and tyrosine and its congenital diseases. **The student should be able to:**
+s3167 determine urea in serum and evaluate the result;
+s3168 determine phenylpyruvate in urine (the Fölling test);
+s3169 give a biochemical explanation of the cause of hyperammonemia.
+s3170 1. Formation and toxicity of ammonia
+s3171 Sources of ammonia:
+s3172 deamination of amino acids (mainly the oxidative deamination of glutamate);
+s3173 hydrolysis of amides (glutamine, asparagine);
+s3174 oxidation of biogenic amines by MAO;
+s3175 deamination of purine and pyrimidine bases (adenine, cytosine);
+s3176 putrefaction of proteins and breakdown of urea by bacteria in the intestine (it reaches the liver through the portal vein). About 15–20 g of ammonia is formed per day in the human body, but its level in the blood is very low: **11–35 µmol/l** (normally < 50 µmol/l).
+s3177 **Its toxic action** (especially on the brain):
+s3178 in the brain ammonia forms glutamate with α-ketoglutarate (reductive amination) — **α-ketoglutarate falls**, the Krebs cycle slows down and ATP formation decreases;
+s3179 glutamate and glutamine increase — **osmotic swelling** of the astrocytes (glutamine) and a disturbed balance of neurotransmitters (glutamate ↓ or ↑, GABA ↑);
+s3180 NH4
+s3181 + disrupts K+ channels and Na+,K+-ATPase, and the membrane potential changes;
+s3182 the blood pH shifts to the alkaline side. Clinical signs: nausea, vomiting, lethargy, tremor, seizures, coma.
+s3183 2. Temporary detoxification and transport of ammonia
+s3184 The ammonia formed in the tissues is bound at once and transported to the liver and kidney in nontoxic forms:
+s3185 **Synthesis of glutamine** (the main route; brain, muscle and other tissues): glutamate + NH3 + ATP → **glutamine** + ADP + Pi — **glutamine synthetase**. Glutamine is the main transport form of ammonia (the most abundant amino acid in the blood).
+s3186 **Formation of alanine** (muscles): pyruvate is transaminated into alanine and goes to the liver — the **glucose-alanine cycle** (topic 7).
+s3187 **Synthesis of asparagine** (less important). **In the kidney** glutamine is broken down by **glutaminase** into glutamate and NH3; NH3 passes into the tubular lumen, binds H+ and is excreted in the urine as **ammonium salts** (NH4
+s3188 +) (≈ 0.5–1 g per day). This process **increases sharply in acidosis** — an important mechanism by which the kidney maintains the acid-base balance (topic 29).
+s3189 3. Synthesis of urea (the ornithine cycle)
+s3190 The **final detoxification** of ammonia is the synthesis of urea in the **liver**. The cycle was discovered by H. Krebs and K. Henseleit (1932). Urea is a slightly toxic, highly water-soluble, neutral substance; ≈ 80–90% of the body’s nitrogen is excreted in this form.
+s3191 Figure 13.1
+s3192 The ornithine (urea) cycle (drawn after Sobirova R.A., 2006; Severin E.S.)
+s3193 Table 13.1. Reactions of the ornithine cycle
+s3194 NH3 + CO2 + 2ATP → carbamoyl phosphate + 2ADP + Pi
+s3195 Carbamoyl phosphate synthetase I (the key enzyme)
+s3196 Carbamoyl phosphate + ornithine → citrulline + Pi
+s3197 Ornithine carbamoyltransferase
+s3198 Citrulline + aspartate + ATP → argininosuccinate + AMP + PPi
+s3199 Argininosuccinate synthetase
+s3200 Cytosol
+s3201 Argininosuccinate → arginine + fumarate
+s3202 Argininosuccinate lyase
+s3203 Arginine + H2O → urea + ornithine
+s3204 Arginase (Mn2+; almost only in the liver)
+s3205 **The sources of the two nitrogens of the urea molecule:** the first is **ammonia** (from the deamination of glutamate and the glutaminase reaction), the second is **aspartate** (from the transamination of oxaloacetate). In this way the nitrogen of all amino acids is delivered to the cycle through transamination.

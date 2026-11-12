@@ -1,215 +1,214 @@
-s6018	Jadval 23.3. Miokard shikastlanishi markerlari
-s6019	Oshish boshlanishi
-s6020	Cho‘qq i
-s6021	Me’yorga qaytish
-s6022	Yuqori sezgir troponin I yoki T
-s6023	1–3 soat
-s6024	24–48 soat
-s6025	7–14 kun
-s6026	“Oltin standart” — eng sezgir va spetsifik; 0/1 yoki 0/2 soatlik algoritm
-s6027	1–2 soat
-s6028	6–10 soat
-s6029	24 soat
-s6030	Erta, ammo nospetsifik (skelet mushagida ham)
-s6031	3–6 soat
-s6032	12–24 soat
-s6033	48–72 soat
-s6034	Qayta infarktni aniqlash uchun qulay
-s6035	KFK (umumiy)
-s6036	4–6 soat
-s6037	3–4 kun
-s6038	Skelet mushagi shikastlanishida ham
-s6039	6–12 soat
-s6040	4–7 kun
-s6041	Hozir deyarli ishlatilmaydi
-s6042	LDG (LDG-1, LDG-2)
-s6043	8–12 soat
-s6044	10–14 kun
-s6045	LDG-1 > LDG-2 (“teskari nisbat”); kech tashxis
-s6046	**Kreatinkinaza izofermentlari** (dimerlar, M va B subbirliklar): **KFK-MM** — skelet mushagi (umumiy faollikning ≈ 95 %), **KFK-MB** — miokard (miokard KFK sining 15–40 % i), **KFK-BB** — miya, silliq mushaklar; shuningdek mitoxondrial KFK. Umumiy KFK me’yori erkaklarda < 190, ayollarda < 170 U/l; KFK-MB < 25 U/l yoki umumiyning < 6 %.
-s6047	**Miokard infarktining zamonaviy tashxisi** (universal ta’rif): troponinning me’yorning 99- persentilidan yuqori bo‘lib, **oshib-pasayish dinamikasi** + ishemiya klinikasi yoki EKG o‘zgarishlari. Troponin miokardit, TELA, sepsis, buyrak yetishmovchiligi, yurak yetishmovchiligida ham oshishi mumkin (infarktsiz miokard shikastlanishi).
-s6048	8. Endoteliyning sekretor faoliyati
-s6049	Endoteliy (≈ 1,5 kg, ≈ 1000 m^2^) — faol endokrin a’zo; tomir tonusi, gemostaz, yallig‘lanish va o‘tkazuvchanlikni boshqaradi.
-s6050	Jadval 23.4. Endotelial omillar
-s6051	Ta’sir
-s6052	Vazodilatatorlar
-s6053	Azot oksidi (NO) — eNOS argininidan (BH4, NADPH) sintezlaydi → silliq mushakda guanilatsiklaza → cGMF; prostatsiklin (PGI~2~); endotelial giperpolyarizatsiya omili; bradikinin
-s6054	Vazokonstriktorlar
-s6055	Endotelin-1 (eng kuchli), angiotenzin II (APF endoteliyda), tromboksan A2
-s6056	Antitrombotik
-s6057	NO, PGI2, trombomodulin, geparansulfat, t-PA, TOYI
-s6058	Protrombotik
-s6059	fon Villebrand omili, to‘qima omili, PAI-1
-s6060	Yallig‘lanish va adgeziya
-s6061	Selektinlar (E, P), ICAM-1, VCAM-1, IL-6, MCP-1
-s6062	VEGF, PDGF (silliq mushak proliferatsiyasi)
-s6063	**Endotelial disfunksiya** — NO hosil bo‘lishi va biologik faolligining kamayishi (oksidlanish stressi NO ni peroksinitritga aylantiradi, asimmetrik dimetilarginin eNOS ni ingibirlaydi), vazokonstriktor, protrombotik va yallig‘lanish omillarining ustunligi. Xavf omillari: giperxolesterinemiya (oksidlangan PZLP), arterial gipertenziya, qandli diabet (glikozillanish mahsulotlari), chekish, **giperhomotsisteinemiya** (B6, B12, folat yetishmasligi), semizlik. Endotelial disfunksiya **ateroskleroz**ning (10-mavzu) birinchi bosqichi va gipertenziya, tromboz, YuIK rivojlanishining asosi.
-s6064	1-ish: qon zardobida kreatinkinaza faolligini aniqlash (“Biotest” to‘plami, kinetik usul)
-s6065	**Usul asosi (bog‘langan reaksiyalar):** kreatinfosfat + ADF → (KFK) → kreatin + ATF; ATF + glyukoza → (geksokinaza) → ADF + glyukoza-6-fosfat; glyukoza-6-fosfat + NADP+ → (G6FDG) → 6-fosfoglyukonat + NADPH. 340 nm da NADPH hosil bo‘lish tezligi KFK faolligiga proporsional. N-atsetilsistein KFK ni faollashtiradi, AMF va diadenozinpentafosfat eritrotsit miokinazasini ingibirlaydi.
-s6066	Ishchi reagentni 37 °C gacha isiting; kyuvetaga 1 ml reagent va 20 mkl zardob qo‘shing, aralashtiring.
-s6067	2 daqiqa inkubatsiyadan keyin 340 nm da optik zichlikni qayd qiling, so‘ng 3 daqiqa davomida har daqiqada o‘lchang.
-s6068	O‘rtacha ΔE/daqiqa ni hisoblang. **Hisoblash:** faollik (U/l) = ΔE/daq × 8095 (NADPH ning millimolyar ekstinksiya koeffitsienti 6,22 va namuna suyultirilishi asosida).
-s6069	**Baholash:** erkaklarda < 190, ayollarda < 170 U/l. Gemoliz natijani soxta oshiradi (eritrotsitlardan adenilatkinaza va ATF). Mushak ichiga in’eksiya, og‘ir jismoniy yuklamadan keyin fiziologik oshadi.
-s6070	2-ish: KFK-MB ni immuninhibitsiya usulida aniqlash (namoyish)
-s6071	**Usul asosi:** M subbirlikka qarshi antitelolar KFK-MM ni to‘liq, KFK-MB ning esa yarmini (M qismini) ingibirlaydi; qolgan faollik (B subbirlik) 2 ga ko‘paytiriladi.
-s6072	Zardobni antitelo tutuvchi reagent bilan inkubatsiya qiling.
-s6073	Qoldiq faollikni 1-ishdagi kabi o‘lchang; × 2. **Natija va tahlil:** KFK-MB > 25 U/l va umumiy KFK ning > 6 % i miokard shikastlanishiga xos; bugungi kunda bu usulni troponin aniqlash almashtirgan.
-s6074	Ko‘nikma: ko‘krak og‘rig‘ida markerlarni talqin qilish
-s6075	Og‘riq boshlanganidan beri o‘tgan vaqtni aniqlang.
-s6076	Yuqori sezgir troponinni kelganda va 1–3 soatdan keyin aniqlang; dinamikani baholang.
-s6077	Erta murojaat (< 3 soat) bo‘lsa, birinchi manfiy natija infarktni istisno qilmaydi.
-s6078	Kech murojaat (> 3–4 kun) — troponin hali yuqori, KFK-MB me’yorga qaytgan bo‘lishi mumkin.
-s6079	Qayta infarktni KFK-MB qayta oshishi bo‘yicha aniqlang.
-s6080	Infarktsiz troponin oshishi sabablarini istisno qiling.
-s6081	Ko‘nikma: miopatiyaning biokimyoviy belgilarini baholash
-s6082	Zardobda KFK (MM), AsAT, AlAT, LDG, aldolaza, miyoglobinni aniqlang.
-s6083	Siydikda kreatin va kreatininni baholang.
-s6084	KFK juda yuqori (> 10 000 U/l) va siydik qo‘ng‘ir — rabdomioliz (kaliy va kreatininni nazorat qiling).
-s6085	Yosh o‘g‘il bolada KFK ning juda yuqoriligi va proksimal zaiflik — distrofin gen tahlili.
-s6086	Mushakning asosiy oqsillarini va ularning vazifalarini sanang.
-s6087	Troponin kompleksining tarkibi va vazifasi qanday?
-s6088	Mushak qisqarishining sirpanuvchi filamentlar nazariyasini tushuntiring.
-s6089	Mushak qisqarishi va bo‘shashishida Ca2+ va ATF ning roli qanday?
-s6090	Silliq mushak qisqarishining boshqarilishi skelet mushagidan qanday farq qiladi?
-s6091	Mushakning ekstraktiv moddalarini sanang.
-s6092	Mushakda ATF qanday yo‘llar bilan qayta tiklanadi?
-s6093	Kreatin qanday sintezlanadi? Kreatininning diagnostik ahamiyati nima?
-s6094	Dyushenn mushak distrofiyasining biokimyoviy asosi va belgilari qanday?
-s6095	Yurak mushagi metabolizmining o‘ziga xosligi nimada?
-s6096	Natriyuretik peptidlarning ta’siri va diagnostik ahamiyati qanday?
-s6097	Kreatinkinaza izofermentlarini ayting.
-s6098	Miokard infarktining biokimyoviy markerlari dinamikasini tavsiflang.
-s6099	Endoteliy qanday omillarni ishlab chiqaradi?
-s6100	Endotelial disfunksiya nima va uning sabablari qanday?
-s6101	Skelet mushagida Ca2+ ni bog‘lovchi oqsil qaysi?
-s6102	Troponin I
-s6103	Troponin T
-s6104	Troponin C
-s6105	Mushak bo‘shashishida Ca2+ ni sarkoplazmatik retikulumga qaytaradigan ferment qaysi?
-s6106	Ca2+-ATFaza (SERCA)
-s6107	Kreatinkinaza
-s6108	Miozin ATFazasi
-s6109	Adenilatkinaza
-s6110	ATF ni eng tez qayta tiklaydigan yo‘l qaysi?
-s6111	Kreatinkinaza reaksiyasi
-s6112	Kreatin sintezi qaysi a’zolarda kechadi?
-s6113	Mushak va miyada
-s6114	Yurak va o‘pkada
-s6115	Buyrak va jigarda
-s6116	Ichak va taloqda
-s6117	Faqat mushakda
-s6118	Dyushenn mushak distrofiyasida qaysi oqsil yo‘q?
-s6119	Titin
-s6120	Miozin
-s6121	Aktin
-s6122	Rigor mortis (o‘lik qotishi) nimaga bog‘liq?
-s6123	Ca2+ yetishmasligiga
-s6124	Miozinning parchalanishiga
-s6125	Troponin yo‘qligiga
-s6126	ATF yo‘qligida miozin aktindan ajralmasligiga
-s6127	Laktat to‘planishiga
-s6128	Yurak mushagining tinch holatdagi asosiy energiya manbai qaysi?
-s6129	Yog‘ kislotalar
-s6130	Miokard infarktida eng sezgir va spetsifik marker qaysi?
-s6131	LDG
-s6132	Yuqori sezgir troponin
-s6133	Umumiy KFK
-s6134	Miokard infarktidan keyin eng erta oshadigan, ammo spetsifik bo‘lmagan marker qaysi?
-s6135	Troponin
-s6136	Yurak yetishmovchiligining asosiy laboratoriya markeri qaysi?
-s6137	NT-proBNP
-s6138	KFK-BB
-s6139	Amilaza
-s6140	Endoteliydagi azot oksidi qaysi aminokislotadan sintezlanadi?
-s6141	Kreatinkinazaning miokardga xos izofermenti qaysi?
-s6142	KFK-MM
-s6143	Mitoxondrial KFK
-s6144	LDG-1
-s6145	Silliq mushakda Ca2+ qaysi oqsil bilan birikib miozin yengil zanjiri kinazasini faollashtiradi?
-s6146	Kalsekvestrin
-s6147	Eng kuchli endotelial vazokonstriktor qaysi?
-s6148	Endotelin-1
-s6149	Prostatsiklin
-s6150	Azot oksidi
-s6151	Bradikinin
-s6152	Mushak distrofiyalarida siydikda qanday o‘zgarish kuzatiladi?
-s6153	Kreatinin ko‘payadi, kreatin yo‘q
-s6154	Siydikchil keskin kamayadi
-s6155	Siydik kislota ko‘payadi
-s6156	Kreatinuriya, kreatinin chiqarilishi kamayadi
-s6157	58 yoshli erkak ko‘krak qafasida 2 soatdan beri davom etayotgan kuchli siquvchi og‘riq bilan keldi. Kelganda yuqori sezgir troponin T 18 ng/l (me’yor < 14), 1 soatdan keyin 74 ng/l; miyoglobin oshgan; KFK-MB 28 U/l.
-s6158	Tashxis qanday? Markerlar dinamikasini tushuntiring. Miokard hujayralari nima uchun nobud bo‘ladi?
-s6159	O‘tkir miokard infarkti: troponinning 99-persentildan yuqori bo‘lishi va 1 soatda keskin oshishi (dinamika) ishemiya klinikasi bilan birga. Miyoglobin kichik molekula bo‘lgani uchun eng erta chiqadi, ammo skelet mushagida ham bor; KFK-MB 3–6 soatda oshadi; troponin 1–3 soatda aniqlana boshlaydi va 7–14 kun saqlanadi (sarkomer bilan bog‘langan qismi sekin chiqadi). Koronar tromboz natijasida kislorod to‘xtaydi: β-oksidlanish va oksidlanishli fosforlanish to‘xtaydi, anaerob glikoliz ATF ehtiyojini qoplay olmaydi; laktat va H+ to‘planadi; Na+,K+-ATFaza va Ca2+-ATFazalar ishdan chiqib, hujayra ichida Na+ va Ca2+ ko‘payadi, fosfolipazalar va proteazalar faollashadi, membranalar yemiriladi — nekroz va fermentlar qonga chiqadi.
-s6160	5 yoshli o‘g‘il bola tez charchaydi, zinapoyadan qiyin chiqadi, poldan turishda qo‘llari bilan oyoqlariga tayanadi; boldir mushaklari kattalashgan. Zardobda KFK 15 000 U/l, AlAT va AsAT oshgan.
-s6161	Qanday kasallik? Biokimyoviy o‘zgarishlarni tushuntiring. Tashxisni qanday tasdiqlash mumkin?
-s6162	Dyushenn mushak distrofiyasi (X-bog‘langan retsessiv). Distrofin yo‘qligi sababli sitoskelet sarkolemma va hujayra tashqi matriksi bilan bog‘lanmaydi; qisqarishda membrana yirtiladi, Ca2+ kirib kalpainlarni faollashtiradi, tolalar nekrozga uchraydi — KFK (MM), aminotransferazalar, LDG, aldolaza qonga chiqadi (AlAT/AsAT oshishi jigar kasalligi bilan adashtirilmasligi kerak). Kattalashgan boldir — yog‘ va biriktiruvchi to‘qima hisobiga psevdogipertrofiya; poldan turish usuli — Govers belgisi. Tasdiqlash: DMD genining molekular tahlili (delesiyalar — MLPA, sekvenirlash), mushak biopsiyasida distrofin yo‘qligini immunogistokimyoviy aniqlash.
-s6163	25 yoshli erkak marafondan keyin kuchli mushak og‘rig‘i va holsizlik bilan keldi, siydigi to‘q qo‘ng‘ir rangda. KFK 85 000 U/l, kaliy 6,2 mmol/l, kreatinin 280 mkmol/l. Siydikda test-chiziq “qon”ga musbat, ammo mikroskopda eritrotsitlar yo‘q.
-s6164	Bu qanday holat? Laboratoriya natijalarini tushuntiring. Nima uchun buyrak zararlangan?
-s6165	Og‘ir jismoniy yuklamadan keyingi rabdomioliz. Mushak hujayralarida ATF tugashi va Ca2+ to‘planishi natijasida tolalar parchalanib, KFK, miyoglobin va K+ qonga chiqadi (giperkaliemiya — yurak uchun xavfli). Test-chiziq gem peroksidaza faolligini aniqlaydi — miyoglobin ham musbat natija beradi, eritrotsitlar esa yo‘q (miyoglobinuriya). Miyoglobin koptokchalarda filtrlanib, kislotali siydikda kanalchalarda cho‘kadi va gem temiri orqali oksidlanish shikastlanishini chaqiradi; degidratatsiya va vazokonstriksiya bilan birga o‘tkir buyrak yetishmovchiligi (kreatinin oshgan). Davolash: ko‘p vena ichi suyuqlik, giperkaliemiyani tuzatish, siydikni ishqoriylashtirish, zarurat bo‘lsa dializ.
-s6166	Qisqaruvchi oqsillar
-s6167	Miozin (ATFaza), aktin
-s6168	Boshqaruvchi oqsillar
-s6169	Tropomiozin, troponin C, I, T
-s6170	Qisqarish
-s6171	Ca2+ → TnC → ko‘ndalang ko‘priklar sikli; ATF ajralish uchun
-s6172	Bo‘shashish
-s6173	SERCA (ATF sarflanadi)
-s6174	Silliq mushak
-s6175	Ca2+-kalmodulin → miozin yengil zanjiri kinazasi
-s6176	ATF resintezi
-s6177	Kreatinfosfat (eng tez) → glikoliz → aerob oksidlanish
-s6178	Buyrak (guanidinoatsetat) + jigar (SAM) → kreatin → kreatinin
-s6179	Dyushenn
-s6180	Distrofin yo‘q; KFK ↑↑, kreatinuriya
-s6181	Miokard
-s6182	Aerob; yog‘ kislotalar asosiy manba
-s6183	Infarkt markerlari
-s6184	Troponin (oltin standart), miyoglobin (erta), KFK-MB
-s6185	Natriyuretik peptidlar
-s6186	ANP, BNP, NT-proBNP — yurak yetishmovchiligi
-s6187	Endoteliy
-s6188	NO, PGI2 (dilatatsiya); endotelin-1 (konstriksiya)
-s6189	Oshqozon-ichak tizimi biokimyosi
-s6190	Talabaga so‘lak, me’da shirasi, me’da osti bezi shirasi, o‘t (safro) va ichak shirasining tarkibi va vazifalari, ta’m bilish va ishtahaning biokimyoviy boshqarilishi, hazm shiralari sekretsiyasining boshqarilishi, ichakda organik moddalar parchalanish mahsulotlari, suv va tuzlarning so‘rilishi va uning buzilishlari, pankreatit, seliakiya, yallig‘lanishli ichak kasalliklarining biokimyoviy asoslari haqida bilim berish.
-s6191	so‘lakning tarkibi va vazifalarini;
-s6192	ta’m retseptorlari va ishtahani boshqaruvchi gormonlarni (grelin, leptin);
-s6193	HCl sekretsiyasi mexanizmini va uning boshqarilishini;
-s6194	me’da osti bezi shirasining fermentlari va ularning faollashuvini;
-s6195	o‘tning tarkibi, o‘t kislotalarining enterogepatik aylanishini;
-s6196	ichak shirasi va membrana hazmini;
-s6197	monosaxaridlar, aminokislotalar, lipidlar, suv va elektrolitlarning so‘rilish mexanizmlarini;
-s6198	pankreatit, seliakiya, laktoza intoleransi, Kron kasalligi va yarali kolitning biokimyoviy asoslarini. **Talaba bajara olishi kerak:**
-s6199	so‘lak va o‘t tarkibiy qismlariga sifat reaksiyalarini bajarish;
-s6200	qon va siydikda amilaza va zardobda lipaza natijalarini baholash;
-s6201	so‘rilish buzilishi sindromining biokimyoviy belgilarini aniqlash.
-s6202	1. So‘lak
-s6203	So‘lak uchta juft katta (quloq oldi — seroz, jag‘ osti va til osti — aralash) va ko‘plab mayda bezlar sekretidan iborat; sutkasiga 1–1,5 l ajraladi; pH 6,4–7,4.
-s6204	**Tarkibi:** suv (≈ 99,4 %); organik moddalar — **mutsin** (glikoprotein, ovqat luqmasini sirpanchiq qiladi), **α-amilaza** (ptialin — kraxmalni dekstrinlarga parchalaydi; Cl- faollashtiradi), til lipazasi (chaqaloqlarda muhim), **lizotsim** (bakteriya devorini parchalaydi), laktoferrin, **sekretor IgA**, gistatinlar, kallikrein, o‘sish omillari (epidermal o‘sish omili); noorganik — Na+, K+ (plazmadan ko‘p), Ca2+, fosfatlar, HCO3
-s6205	-, Cl-, **rodanidlar** (tiotsianat; chekuvchilarda ko‘p), F-.
-s6206	**Vazifalari:** hazm (uglevodlar hazmining boshlanishi), himoya (antibakterial, bufer, emalni remineralizatsiya qilish — Ca2+ va fosfat bilan to‘yingan), ovqatni namlash va yutish, ta’m sezishni ta’minlash (ta’m moddalarini eritadi), ekskretor (siydikchil, dorilar, og‘ir metallar).
-s6207	So‘lak sekretsiyasining kamayishi (kserostomiya — Shegren sindromi, nurlanish, antixolinergik dorilar) tish kariesi va og‘iz bo‘shlig‘i infeksiyalarini kuchaytiradi. Karies — bakteriyalar (Streptococcus mutans) saxarozani bijg‘itib hosil qilgan **sut kislota** emal gidroksiapatitini eritadi; ftor emal tarkibida chidamliroq **ftorapatit** hosil qiladi.
-s6208	2. Ta’m bilish. Ishtaha va ochlik hissining boshqarilishi
-s6209	**Ta’m bilishning biokimyoviy asoslari:** besh asosiy ta’m. **Shirin** (T1R2/T1R3), **umami ** (T1R1/T1R3 — L-glutamat) va **achchiq** (T2R oilasi, ≈ 25 xil) — G-oqsil bilan bog‘langan retseptorlar; G-oqsil **gustdutsin** → fosfolipaza Cβ2 → IP3 → Ca2+ → TRPM5 kanali → depolyarizatsiya. **Sho‘r** — ENaC natriy kanallari orqali bevosita Na+ kirishi; **nordon** — H+ ionlari (OTOP1 proton kanali). Ta’m sezgisiga sink (gustin) zarur — Zn yetishmasligida ta’m buziladi (gipogevziya).
-s6210	**Ishtaha va ochlikning boshqarilishi** — gipotalamusning **arkuat yadrosida** ikki neyron guruhi:
-s6211	**oreksigen** (ishtahani oshiruvchi): **neyropeptid Y** va AgRP;
-s6212	**anoreksigen** (to‘qlik): **POMK → α-MSG** (melanokortin-4 retseptori) va CART.
-s6213	Jadval 24.1. Ishtahani boshqaruvchi periferik signallar
-s6214	Signal
-s6215	Grelin
-s6216	Me’da (ochlikda ko‘payadi)
-s6217	Ishtahani oshiradi (NPY/AgRP ↑) — “ochlik gormoni”
-s6218	Leptin
-s6219	Yog‘ to‘qimasi (yog‘ massasiga proporsional)
-s6220	Uzoq muddatli to‘qlik signali (POMK ↑, NPY ↓), energiya sarfini oshiradi
-s6221	β-hujayralar
-s6222	Markaziy anoreksigen ta’sir
-s6223	Xolesistokinin
-s6224	O‘n ikki barmoq ichak
-s6225	Qisqa muddatli to‘qlik (adashgan nerv)
-s6226	GLP-1, PYY3-36
-s6227	Ingichka va yo‘g‘on ichak Lhujayralari
-s6228	To‘qlik, me’da bo‘shashini sekinlashtiradi
-s6229	Glyukoza, aminokislotalar, me’da cho‘zilishi
-s6230	To‘qlik
-s6231	**Semizlikda** odatda leptin ko‘p, ammo **leptinga rezistentlik** rivojlanadi; leptin yoki MC4R genlarining nuqsonlari og‘ir monogen semizlikka olib keladi. GLP-1 retseptori agonistlari (semaglutid, liraglutid) semizlik va 2-tip diabetni davolashda qo‘llaniladi.
-s6232	3. Me’da shirasi
+s5991	Jadval 23.3. Miokard shikastlanishi markerlari
+s5992	Oshish boshlanishi
+s5993	Cho‘qqi
+s5994	Me’yorga qaytish
+s5995	Yuqori sezgir troponin I yoki T
+s5996	1–3 soat
+s5997	24–48 soat
+s5998	7–14 kun
+s5999	“Oltin standart” — eng sezgir va spetsifik; 0/1 yoki 0/2 soatlik algoritm
+s6000	1–2 soat
+s6001	6–10 soat
+s6002	24 soat
+s6003	Erta, ammo nospetsifik (skelet mushagida ham)
+s6004	3–6 soat
+s6005	12–24 soat
+s6006	48–72 soat
+s6007	Qayta infarktni aniqlash uchun qulay
+s6008	KFK (umumiy)
+s6009	4–6 soat
+s6010	3–4 kun
+s6011	Skelet mushagi shikastlanishida ham
+s6012	6–12 soat
+s6013	4–7 kun
+s6014	Hozir deyarli ishlatilmaydi
+s6015	LDG (LDG-1, LDG-2)
+s6016	8–12 soat
+s6017	10–14 kun
+s6018	LDG-1 > LDG-2 (“teskari nisbat”); kech tashxis
+s6019	**Kreatinkinaza izofermentlari** (dimerlar, M va B subbirliklar): **KFK-MM** — skelet mushagi (umumiy faollikning ≈ 95 %), **KFK-MB** — miokard (miokard KFK sining 15–40 % i), **KFK-BB** — miya, silliq mushaklar; shuningdek mitoxondrial KFK. Umumiy KFK me’yori erkaklarda < 190, ayollarda < 170 U/l; KFK-MB < 25 U/l yoki umumiyning < 6 %.
+s6020	**Miokard infarktining zamonaviy tashxisi** (universal ta’rif): troponinning me’yorning 99-persentilidan yuqori bo‘lib, **oshib-pasayish dinamikasi** + ishemiya klinikasi yoki EKG o‘zgarishlari. Troponin miokardit, TELA, sepsis, buyrak yetishmovchiligi, yurak yetishmovchiligida ham oshishi mumkin (infarktsiz miokard shikastlanishi).
+s6021	8. Endoteliyning sekretor faoliyati
+s6022	Endoteliy (≈ 1,5 kg, ≈ 1000 m^2^) — faol endokrin a’zo; tomir tonusi, gemostaz, yallig‘lanish va o‘tkazuvchanlikni boshqaradi.
+s6023	Jadval 23.4. Endotelial omillar
+s6024	Ta’sir
+s6025	Vazodilatatorlar
+s6026	Azot oksidi (NO) — eNOS argininidan (BH4, NADPH) sintezlaydi → silliq mushakda guanilatsiklaza → cGMF; prostatsiklin (PGI~2~); endotelial giperpolyarizatsiya omili; bradikinin
+s6027	Vazokonstriktorlar
+s6028	Endotelin-1 (eng kuchli), angiotenzin II (APF endoteliyda), tromboksan A2
+s6029	Antitrombotik
+s6030	NO, PGI2, trombomodulin, geparansulfat, t-PA, TOYI
+s6031	Protrombotik
+s6032	fon Villebrand omili, to‘qima omili, PAI-1
+s6033	Yallig‘lanish va adgeziya
+s6034	Selektinlar (E, P), ICAM-1, VCAM-1, IL-6, MCP-1
+s6035	VEGF, PDGF (silliq mushak proliferatsiyasi)
+s6036	**Endotelial disfunksiya** — NO hosil bo‘lishi va biologik faolligining kamayishi (oksidlanish stressi NO ni peroksinitritga aylantiradi, asimmetrik dimetilarginin eNOS ni ingibirlaydi), vazokonstriktor, protrombotik va yallig‘lanish omillarining ustunligi. Xavf omillari: giperxolesterinemiya (oksidlangan PZLP), arterial gipertenziya, qandli diabet (glikozillanish mahsulotlari), chekish, **giperhomotsisteinemiya** (B6, B12, folat yetishmasligi), semizlik. Endotelial disfunksiya **ateroskleroz**ning (10-mavzu) birinchi bosqichi va gipertenziya, tromboz, YuIK rivojlanishining asosi.
+s6037	1-ish: qon zardobida kreatinkinaza faolligini aniqlash (“Biotest” to‘plami, kinetik usul)
+s6038	**Usul asosi (bog‘langan reaksiyalar):** kreatinfosfat + ADF → (KFK) → kreatin + ATF; ATF + glyukoza → (geksokinaza) → ADF + glyukoza-6-fosfat; glyukoza-6-fosfat + NADP+ → (G6FDG) → 6-fosfoglyukonat + NADPH. 340 nm da NADPH hosil bo‘lish tezligi KFK faolligiga proporsional. N-atsetilsistein KFK ni faollashtiradi, AMF va diadenozinpentafosfat eritrotsit miokinazasini ingibirlaydi.
+s6039	Ishchi reagentni 37 °C gacha isiting; kyuvetaga 1 ml reagent va 20 mkl zardob qo‘shing, aralashtiring.
+s6040	2 daqiqa inkubatsiyadan keyin 340 nm da optik zichlikni qayd qiling, so‘ng 3 daqiqa davomida har daqiqada o‘lchang.
+s6041	O‘rtacha ΔE/daqiqa ni hisoblang. **Hisoblash:** faollik (U/l) = ΔE/daq × 8095 (NADPH ning millimolyar ekstinksiya koeffitsienti 6,22 va namuna suyultirilishi asosida).
+s6042	**Baholash:** erkaklarda < 190, ayollarda < 170 U/l. Gemoliz natijani soxta oshiradi (eritrotsitlardan adenilatkinaza va ATF). Mushak ichiga in’eksiya, og‘ir jismoniy yuklamadan keyin fiziologik oshadi.
+s6043	2-ish: KFK-MB ni immuninhibitsiya usulida aniqlash (namoyish)
+s6044	**Usul asosi:** M subbirlikka qarshi antitelolar KFK-MM ni to‘liq, KFK-MB ning esa yarmini (M qismini) ingibirlaydi; qolgan faollik (B subbirlik) 2 ga ko‘paytiriladi.
+s6045	Zardobni antitelo tutuvchi reagent bilan inkubatsiya qiling.
+s6046	Qoldiq faollikni 1-ishdagi kabi o‘lchang; × 2. **Natija va tahlil:** KFK-MB > 25 U/l va umumiy KFK ning > 6 % i miokard shikastlanishiga xos; bugungi kunda bu usulni troponin aniqlash almashtirgan.
+s6047	Ko‘nikma: ko‘krak og‘rig‘ida markerlarni talqin qilish
+s6048	Og‘riq boshlanganidan beri o‘tgan vaqtni aniqlang.
+s6049	Yuqori sezgir troponinni kelganda va 1–3 soatdan keyin aniqlang; dinamikani baholang.
+s6050	Erta murojaat (< 3 soat) bo‘lsa, birinchi manfiy natija infarktni istisno qilmaydi.
+s6051	Kech murojaat (> 3–4 kun) — troponin hali yuqori, KFK-MB me’yorga qaytgan bo‘lishi mumkin.
+s6052	Qayta infarktni KFK-MB qayta oshishi bo‘yicha aniqlang.
+s6053	Infarktsiz troponin oshishi sabablarini istisno qiling.
+s6054	Ko‘nikma: miopatiyaning biokimyoviy belgilarini baholash
+s6055	Zardobda KFK (MM), AsAT, AlAT, LDG, aldolaza, miyoglobinni aniqlang.
+s6056	Siydikda kreatin va kreatininni baholang.
+s6057	KFK juda yuqori (> 10 000 U/l) va siydik qo‘ng‘ir — rabdomioliz (kaliy va kreatininni nazorat qiling).
+s6058	Yosh o‘g‘il bolada KFK ning juda yuqoriligi va proksimal zaiflik — distrofin gen tahlili.
+s6059	Mushakning asosiy oqsillarini va ularning vazifalarini sanang.
+s6060	Troponin kompleksining tarkibi va vazifasi qanday?
+s6061	Mushak qisqarishining sirpanuvchi filamentlar nazariyasini tushuntiring.
+s6062	Mushak qisqarishi va bo‘shashishida Ca2+ va ATF ning roli qanday?
+s6063	Silliq mushak qisqarishining boshqarilishi skelet mushagidan qanday farq qiladi?
+s6064	Mushakning ekstraktiv moddalarini sanang.
+s6065	Mushakda ATF qanday yo‘llar bilan qayta tiklanadi?
+s6066	Kreatin qanday sintezlanadi? Kreatininning diagnostik ahamiyati nima?
+s6067	Dyushenn mushak distrofiyasining biokimyoviy asosi va belgilari qanday?
+s6068	Yurak mushagi metabolizmining o‘ziga xosligi nimada?
+s6069	Natriyuretik peptidlarning ta’siri va diagnostik ahamiyati qanday?
+s6070	Kreatinkinaza izofermentlarini ayting.
+s6071	Miokard infarktining biokimyoviy markerlari dinamikasini tavsiflang.
+s6072	Endoteliy qanday omillarni ishlab chiqaradi?
+s6073	Endotelial disfunksiya nima va uning sabablari qanday?
+s6074	Skelet mushagida Ca2+ ni bog‘lovchi oqsil qaysi?
+s6075	Troponin I
+s6076	Troponin T
+s6077	Troponin C
+s6078	Mushak bo‘shashishida Ca2+ ni sarkoplazmatik retikulumga qaytaradigan ferment qaysi?
+s6079	Ca2+-ATFaza (SERCA)
+s6080	Kreatinkinaza
+s6081	Miozin ATFazasi
+s6082	Adenilatkinaza
+s6083	ATF ni eng tez qayta tiklaydigan yo‘l qaysi?
+s6084	Kreatinkinaza reaksiyasi
+s6085	Kreatin sintezi qaysi a’zolarda kechadi?
+s6086	Mushak va miyada
+s6087	Yurak va o‘pkada
+s6088	Buyrak va jigarda
+s6089	Ichak va taloqda
+s6090	Faqat mushakda
+s6091	Dyushenn mushak distrofiyasida qaysi oqsil yo‘q?
+s6092	Titin
+s6093	Miozin
+s6094	Aktin
+s6095	Rigor mortis (o‘lik qotishi) nimaga bog‘liq?
+s6096	Ca2+ yetishmasligiga
+s6097	Miozinning parchalanishiga
+s6098	Troponin yo‘qligiga
+s6099	ATF yo‘qligida miozin aktindan ajralmasligiga
+s6100	Laktat to‘planishiga
+s6101	Yurak mushagining tinch holatdagi asosiy energiya manbai qaysi?
+s6102	Yog‘ kislotalar
+s6103	Miokard infarktida eng sezgir va spetsifik marker qaysi?
+s6104	LDG
+s6105	Yuqori sezgir troponin
+s6106	Umumiy KFK
+s6107	Miokard infarktidan keyin eng erta oshadigan, ammo spetsifik bo‘lmagan marker qaysi?
+s6108	Troponin
+s6109	Yurak yetishmovchiligining asosiy laboratoriya markeri qaysi?
+s6110	NT-proBNP
+s6111	KFK-BB
+s6112	Amilaza
+s6113	Endoteliydagi azot oksidi qaysi aminokislotadan sintezlanadi?
+s6114	Kreatinkinazaning miokardga xos izofermenti qaysi?
+s6115	KFK-MM
+s6116	Mitoxondrial KFK
+s6117	LDG-1
+s6118	Silliq mushakda Ca2+ qaysi oqsil bilan birikib miozin yengil zanjiri kinazasini faollashtiradi?
+s6119	Kalsekvestrin
+s6120	Eng kuchli endotelial vazokonstriktor qaysi?
+s6121	Endotelin-1
+s6122	Prostatsiklin
+s6123	Azot oksidi
+s6124	Bradikinin
+s6125	Mushak distrofiyalarida siydikda qanday o‘zgarish kuzatiladi?
+s6126	Kreatinin ko‘payadi, kreatin yo‘q
+s6127	Siydikchil keskin kamayadi
+s6128	Siydik kislota ko‘payadi
+s6129	Kreatinuriya, kreatinin chiqarilishi kamayadi
+s6130	58 yoshli erkak ko‘krak qafasida 2 soatdan beri davom etayotgan kuchli siquvchi og‘riq bilan keldi. Kelganda yuqori sezgir troponin T 18 ng/l (me’yor < 14), 1 soatdan keyin 74 ng/l; miyoglobin oshgan; KFK-MB 28 U/l.
+s6131	Tashxis qanday? Markerlar dinamikasini tushuntiring. Miokard hujayralari nima uchun nobud bo‘ladi?
+s6132	O‘tkir miokard infarkti: troponinning 99-persentildan yuqori bo‘lishi va 1 soatda keskin oshishi (dinamika) ishemiya klinikasi bilan birga. Miyoglobin kichik molekula bo‘lgani uchun eng erta chiqadi, ammo skelet mushagida ham bor; KFK-MB 3–6 soatda oshadi; troponin 1–3 soatda aniqlana boshlaydi va 7–14 kun saqlanadi (sarkomer bilan bog‘langan qismi sekin chiqadi). Koronar tromboz natijasida kislorod to‘xtaydi: β-oksidlanish va oksidlanishli fosforlanish to‘xtaydi, anaerob glikoliz ATF ehtiyojini qoplay olmaydi; laktat va H+ to‘planadi; Na+,K+-ATFaza va Ca2+-ATFazalar ishdan chiqib, hujayra ichida Na+ va Ca2+ ko‘payadi, fosfolipazalar va proteazalar faollashadi, membranalar yemiriladi — nekroz va fermentlar qonga chiqadi.
+s6133	5 yoshli o‘g‘il bola tez charchaydi, zinapoyadan qiyin chiqadi, poldan turishda qo‘llari bilan oyoqlariga tayanadi; boldir mushaklari kattalashgan. Zardobda KFK 15 000 U/l, AlAT va AsAT oshgan.
+s6134	Qanday kasallik? Biokimyoviy o‘zgarishlarni tushuntiring. Tashxisni qanday tasdiqlash mumkin?
+s6135	Dyushenn mushak distrofiyasi (X-bog‘langan retsessiv). Distrofin yo‘qligi sababli sitoskelet sarkolemma va hujayra tashqi matriksi bilan bog‘lanmaydi; qisqarishda membrana yirtiladi, Ca2+ kirib kalpainlarni faollashtiradi, tolalar nekrozga uchraydi — KFK (MM), aminotransferazalar, LDG, aldolaza qonga chiqadi (AlAT/AsAT oshishi jigar kasalligi bilan adashtirilmasligi kerak). Kattalashgan boldir — yog‘ va biriktiruvchi to‘qima hisobiga psevdogipertrofiya; poldan turish usuli — Govers belgisi. Tasdiqlash: DMD genining molekular tahlili (delesiyalar — MLPA, sekvenirlash), mushak biopsiyasida distrofin yo‘qligini immunogistokimyoviy aniqlash.
+s6136	25 yoshli erkak marafondan keyin kuchli mushak og‘rig‘i va holsizlik bilan keldi, siydigi to‘q qo‘ng‘ir rangda. KFK 85 000 U/l, kaliy 6,2 mmol/l, kreatinin 280 mkmol/l. Siydikda test-chiziq “qon”ga musbat, ammo mikroskopda eritrotsitlar yo‘q.
+s6137	Bu qanday holat? Laboratoriya natijalarini tushuntiring. Nima uchun buyrak zararlangan?
+s6138	Og‘ir jismoniy yuklamadan keyingi rabdomioliz. Mushak hujayralarida ATF tugashi va Ca2+ to‘planishi natijasida tolalar parchalanib, KFK, miyoglobin va K+ qonga chiqadi (giperkaliemiya — yurak uchun xavfli). Test-chiziq gem peroksidaza faolligini aniqlaydi — miyoglobin ham musbat natija beradi, eritrotsitlar esa yo‘q (miyoglobinuriya). Miyoglobin koptokchalarda filtrlanib, kislotali siydikda kanalchalarda cho‘kadi va gem temiri orqali oksidlanish shikastlanishini chaqiradi; degidratatsiya va vazokonstriksiya bilan birga o‘tkir buyrak yetishmovchiligi (kreatinin oshgan). Davolash: ko‘p vena ichi suyuqlik, giperkaliemiyani tuzatish, siydikni ishqoriylashtirish, zarurat bo‘lsa dializ.
+s6139	Qisqaruvchi oqsillar
+s6140	Miozin (ATFaza), aktin
+s6141	Boshqaruvchi oqsillar
+s6142	Tropomiozin, troponin C, I, T
+s6143	Qisqarish
+s6144	Ca2+ → TnC → ko‘ndalang ko‘priklar sikli; ATF ajralish uchun
+s6145	Bo‘shashish
+s6146	SERCA (ATF sarflanadi)
+s6147	Silliq mushak
+s6148	Ca2+-kalmodulin → miozin yengil zanjiri kinazasi
+s6149	ATF resintezi
+s6150	Kreatinfosfat (eng tez) → glikoliz → aerob oksidlanish
+s6151	Buyrak (guanidinoatsetat) + jigar (SAM) → kreatin → kreatinin
+s6152	Dyushenn
+s6153	Distrofin yo‘q; KFK ↑↑, kreatinuriya
+s6154	Miokard
+s6155	Aerob; yog‘ kislotalar asosiy manba
+s6156	Infarkt markerlari
+s6157	Troponin (oltin standart), miyoglobin (erta), KFK-MB
+s6158	Natriyuretik peptidlar
+s6159	ANP, BNP, NT-proBNP — yurak yetishmovchiligi
+s6160	Endoteliy
+s6161	NO, PGI2 (dilatatsiya); endotelin-1 (konstriksiya)
+s6162	Oshqozon-ichak tizimi biokimyosi
+s6163	Talabaga so‘lak, me’da shirasi, me’da osti bezi shirasi, o‘t (safro) va ichak shirasining tarkibi va vazifalari, ta’m bilish va ishtahaning biokimyoviy boshqarilishi, hazm shiralari sekretsiyasining boshqarilishi, ichakda organik moddalar parchalanish mahsulotlari, suv va tuzlarning so‘rilishi va uning buzilishlari, pankreatit, seliakiya, yallig‘lanishli ichak kasalliklarining biokimyoviy asoslari haqida bilim berish.
+s6164	so‘lakning tarkibi va vazifalarini;
+s6165	ta’m retseptorlari va ishtahani boshqaruvchi gormonlarni (grelin, leptin);
+s6166	HCl sekretsiyasi mexanizmini va uning boshqarilishini;
+s6167	me’da osti bezi shirasining fermentlari va ularning faollashuvini;
+s6168	o‘tning tarkibi, o‘t kislotalarining enterogepatik aylanishini;
+s6169	ichak shirasi va membrana hazmini;
+s6170	monosaxaridlar, aminokislotalar, lipidlar, suv va elektrolitlarning so‘rilish mexanizmlarini;
+s6171	pankreatit, seliakiya, laktoza intoleransi, Kron kasalligi va yarali kolitning biokimyoviy asoslarini. **Talaba bajara olishi kerak:**
+s6172	so‘lak va o‘t tarkibiy qismlariga sifat reaksiyalarini bajarish;
+s6173	qon va siydikda amilaza va zardobda lipaza natijalarini baholash;
+s6174	so‘rilish buzilishi sindromining biokimyoviy belgilarini aniqlash.
+s6175	1. So‘lak
+s6176	So‘lak uchta juft katta (quloq oldi — seroz, jag‘ osti va til osti — aralash) va ko‘plab mayda bezlar sekretidan iborat; sutkasiga 1–1,5 l ajraladi; pH 6,4–7,4.
+s6177	**Tarkibi:** suv (≈ 99,4 %); organik moddalar — **mutsin** (glikoprotein, ovqat luqmasini sirpanchiq qiladi), **α-amilaza** (ptialin — kraxmalni dekstrinlarga parchalaydi; Cl- faollashtiradi), til lipazasi (chaqaloqlarda muhim), **lizotsim** (bakteriya devorini parchalaydi), laktoferrin, **sekretor IgA**, gistatinlar, kallikrein, o‘sish omillari (epidermal o‘sish omili); noorganik — Na+, K+ (plazmadan ko‘p), Ca2+, fosfatlar, HCO~3~^−^, Cl-, **rodanidlar** (tiotsianat; chekuvchilarda ko‘p), F-.
+s6178	**Vazifalari:** hazm (uglevodlar hazmining boshlanishi), himoya (antibakterial, bufer, emalni remineralizatsiya qilish — Ca2+ va fosfat bilan to‘yingan), ovqatni namlash va yutish, ta’m sezishni ta’minlash (ta’m moddalarini eritadi), ekskretor (siydikchil, dorilar, og‘ir metallar).
+s6179	So‘lak sekretsiyasining kamayishi (kserostomiya — Shegren sindromi, nurlanish, antixolinergik dorilar) tish kariesi va og‘iz bo‘shlig‘i infeksiyalarini kuchaytiradi. Karies — bakteriyalar (Streptococcus mutans) saxarozani bijg‘itib hosil qilgan **sut kislota** emal gidroksiapatitini eritadi; ftor emal tarkibida chidamliroq **ftorapatit** hosil qiladi.
+s6180	2. Ta’m bilish. Ishtaha va ochlik hissining boshqarilishi
+s6181	**Ta’m bilishning biokimyoviy asoslari:** besh asosiy ta’m. **Shirin** (T1R2/T1R3), **umami** (T1R1/T1R3 — L-glutamat) va **achchiq** (T2R oilasi, ≈ 25 xil) — G-oqsil bilan bog‘langan retseptorlar; G-oqsil **gustdutsin** → fosfolipaza Cβ2 → IP3 → Ca2+ → TRPM5 kanali → depolyarizatsiya. **Sho‘r** — ENaC natriy kanallari orqali bevosita Na+ kirishi; **nordon** — H+ ionlari (OTOP1 proton kanali). Ta’m sezgisiga sink (gustin) zarur — Zn yetishmasligida ta’m buziladi (gipogevziya).
+s6182	**Ishtaha va ochlikning boshqarilishi** — gipotalamusning **arkuat yadrosida** ikki neyron guruhi:
+s6183	**oreksigen** (ishtahani oshiruvchi): **neyropeptid Y** va AgRP;
+s6184	**anoreksigen** (to‘qlik): **POMK → α-MSG** (melanokortin-4 retseptori) va CART.
+s6185	Jadval 24.1. Ishtahani boshqaruvchi periferik signallar
+s6186	Signal
+s6187	Grelin
+s6188	Me’da (ochlikda ko‘payadi)
+s6189	Ishtahani oshiradi (NPY/AgRP ↑) — “ochlik gormoni”
+s6190	Leptin
+s6191	Yog‘ to‘qimasi (yog‘ massasiga proporsional)
+s6192	Uzoq muddatli to‘qlik signali (POMK ↑, NPY ↓), energiya sarfini oshiradi
+s6193	β-hujayralar
+s6194	Markaziy anoreksigen ta’sir
+s6195	Xolesistokinin
+s6196	O‘n ikki barmoq ichak
+s6197	Qisqa muddatli to‘qlik (adashgan nerv)
+s6198	GLP-1, PYY3-36
+s6199	Ingichka va yo‘g‘on ichak L-hujayralari
+s6200	To‘qlik, me’da bo‘shashini sekinlashtiradi
+s6201	Glyukoza, aminokislotalar, me’da cho‘zilishi
+s6202	To‘qlik
+s6203	**Semizlikda** odatda leptin ko‘p, ammo **leptinga rezistentlik** rivojlanadi; leptin yoki MC4R genlarining nuqsonlari og‘ir monogen semizlikka olib keladi. GLP-1 retseptori agonistlari (semaglutid, liraglutid) semizlik va 2-tip diabetni davolashda qo‘llaniladi.
+s6204	3. Me’da shirasi
