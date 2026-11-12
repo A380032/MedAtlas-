@@ -1492,5 +1492,520 @@
     "smax": 15
    }
   ]
+ },
+ "p64_21.webp": {
+  "items": [
+   {
+    "box": [
+     40,
+     312,
+     162,
+     338
+    ],
+    "t": "Blood sampling",
+    "f": "serif",
+    "smax": 16
+   },
+   {
+    "box": [
+     251,
+     301,
+     355,
+     325
+    ],
+    "t": "Centrifugation",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     612,
+     129,
+     708,
+     151
+    ],
+    "t": "plasma 55%",
+    "f": "serif",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     620,
+     208,
+     748,
+     278
+    ],
+    "t": "leukocytes and\nplatelets —\nless than 1%",
+    "f": "serif",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     613,
+     302,
+     756,
+     324
+    ],
+    "t": "erythrocytes 45%",
+    "f": "serif",
+    "smax": 16,
+    "a": "l"
+   }
+  ]
+ },
+ "p64_22.webp": {
+  "items": [
+   {
+    "box": [
+     612,
+     22,
+     754,
+     66
+    ],
+    "t": "Erythrocytes\n(4.5–5)×10¹²/l",
+    "f": "dvi",
+    "smax": 17,
+    "a": "r"
+   },
+   {
+    "box": [
+     312,
+     104,
+     435,
+     167
+    ],
+    "t": "Formed\nelements\n40–45 %",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     64,
+     142,
+     218,
+     181
+    ],
+    "t": "Dry matter\n9–10%",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     99,
+     263,
+     162,
+     287
+    ],
+    "t": "WATER",
+    "f": "dvb",
+    "smax": 18
+   },
+   {
+    "box": [
+     342,
+     243,
+     416,
+     268
+    ],
+    "t": "BLOOD",
+    "f": "dvb",
+    "smax": 18,
+    "bg": "grad"
+   },
+   {
+    "box": [
+     205,
+     279,
+     294,
+     319
+    ],
+    "t": "Plasma\n55–60 %",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     92,
+     327,
+     180,
+     369
+    ],
+    "t": "Water\n90–91 %",
+    "f": "dvi",
+    "smax": 17
+   },
+   {
+    "box": [
+     620,
+     319,
+     750,
+     363
+    ],
+    "t": "Leukocytes\n(6–9)×10⁹/l",
+    "f": "dvi",
+    "smax": 17,
+    "a": "r"
+   },
+   {
+    "box": [
+     352,
+     433,
+     524,
+     477
+    ],
+    "t": "Platelets\n(250–400)×10⁹/l",
+    "f": "dvi",
+    "smax": 17,
+    "a": "r"
+   }
+  ]
+ },
+ "p66_23.webp": {
+  "items": [
+   {
+    "box": [
+     322,
+     8,
+     502,
+     37
+    ],
+    "t": "Erythrocytes",
+    "f": "serifb",
+    "smax": 22
+   },
+   {
+    "box": [
+     40,
+     545,
+     222,
+     591
+    ],
+    "t": "Hypotonic\nsolution",
+    "f": "serifb",
+    "smax": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     277,
+     539,
+     447,
+     584
+    ],
+    "t": "Isotonic\nsolution",
+    "f": "serifb",
+    "smax": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     526,
+     541,
+     717,
+     585
+    ],
+    "t": "Hypertonic\nsolution",
+    "f": "serifb",
+    "smax": 18,
+    "a": "l"
+   }
+  ]
+ },
+ "p74_24.webp": {
+  "items": [
+   {
+    "box": [
+     13,
+     13,
+     89,
+     35
+    ],
+    "t": "Pluripotent\nstem cell",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     115,
+     13,
+     167,
+     35
+    ],
+    "t": "Myeloid\nprogenitor",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     193,
+     12,
+     269,
+     35
+    ],
+    "t": "BFU-E / CFU-E\n(EPO-sensitive)",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     292,
+     13,
+     362,
+     29
+    ],
+    "t": "Proerythroblast",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     297,
+     64,
+     356,
+     87
+    ],
+    "t": "Basophilic\nnormoblast",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     382,
+     61,
+     447,
+     93
+    ],
+    "t": "Polychromato-\nphilic normoblast\n(Hb synthesis)",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     473,
+     61,
+     559,
+     93
+    ],
+    "t": "Oxyphilic\nnormoblast\n(nucleus expelled)",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     584,
+     61,
+     671,
+     93
+    ],
+    "t": "Reticulocyte\n(1–2 days in blood;\nnorm 0.5–1.5 %)",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     696,
+     63,
+     747,
+     89
+    ],
+    "t": "Erythrocyte\n(120 days)",
+    "f": "dv",
+    "smax": 9
+   }
+  ]
+ },
+ "p75_25.webp": {
+  "items": [
+   {
+    "box": [
+     40,
+     33,
+     492,
+     82
+    ],
+    "t": "Decrease of O₂ in tissues (hypoxia):\nblood loss, high altitude, anemia",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     85,
+     150,
+     447,
+     203
+    ],
+    "t": "Renal peritubular cells\n(HIF-1 is activated)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     88,
+     277,
+     439,
+     354
+    ],
+    "t": "Erythropoietin (EPO)\nsynthesis rises (90 % kidneys,\n10 % liver)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     103,
+     425,
+     424,
+     500
+    ],
+    "t": "Red bone marrow:\nCFU-E proliferation and\ndifferentiation accelerate",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     93,
+     569,
+     437,
+     623
+    ],
+    "t": "Reticulocytes and erythrocytes\nincrease (in 3–5 days)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     53,
+     695,
+     474,
+     747
+    ],
+    "t": "Blood oxygen capacity increases —\nO₂ delivery to tissues is restored",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     526,
+     437,
+     738,
+     493
+    ],
+    "t": "negative feedback:\nEPO synthesis decreases",
+    "f": "dv",
+    "smax": 18
+   }
+  ]
+ },
+ "p76_26.webp": {
+  "items": [
+   {
+    "box": [
+     484,
+     11,
+     694,
+     61
+    ],
+    "t": "Peripheral\nblood",
+    "f": "dvb",
+    "smax": 20
+   },
+   {
+    "box": [
+     366,
+     40,
+     438,
+     62
+    ],
+    "t": "days",
+    "f": "dvb",
+    "smax": 20,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     342,
+     121,
+     481,
+     142
+    ],
+    "t": "erythrocytes",
+    "f": "dvb",
+    "smax": 15,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     358,
+     200,
+     563,
+     222
+    ],
+    "t": "erythrocytes/h",
+    "f": "dvb",
+    "smax": 18,
+    "bg": "#ffffff",
+    "keep": [
+     "#2828d0",
+     "#e8305a",
+     "#f04060"
+    ]
+   },
+   {
+    "box": [
+     4,
+     232,
+     207,
+     273
+    ],
+    "t": "Erythroblastic\nlineage",
+    "f": "dvb",
+    "smax": 15
+   },
+   {
+    "box": [
+     332,
+     259,
+     491,
+     329
+    ],
+    "t": "Neuro-\nhumoral\nregulation",
+    "f": "dvb",
+    "smax": 19
+   },
+   {
+    "box": [
+     131,
+     344,
+     239,
+     389
+    ],
+    "t": "Bone\nmarrow",
+    "f": "dvb",
+    "smax": 19
+   },
+   {
+    "box": [
+     551,
+     303,
+     752,
+     374
+    ],
+    "t": "Reticulo-\nendothelial\nsystem",
+    "f": "dvb",
+    "smax": 19
+   },
+   {
+    "box": [
+     331,
+     435,
+     514,
+     480
+    ],
+    "t": "Amino acids\nIron",
+    "f": "dvb",
+    "smax": 19
+   }
+  ]
  }
 }
