@@ -6,7 +6,7 @@ files = []
 for base, _, names in os.walk(os.path.join(root, "data")):
     for n in sorted(names):
         p = os.path.relpath(os.path.join(base, n), root).replace(os.sep, "/")
-        if p != "data/precache.json" and not p.startswith("data/books/"):
+        if p != "data/precache.json" and "/books/" not in p:  # PDF kitoblar (data/books, data/<til>/books) oflayn ro'yxatga kirmaydi
             files.append(p)
 for base, _, names in os.walk(os.path.join(root, "sim")):
     for n in sorted(names):

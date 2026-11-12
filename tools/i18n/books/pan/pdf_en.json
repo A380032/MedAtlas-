@@ -1,0 +1,82 @@
+{
+  "lang": "en",
+  "out": "data/en/books/pan.pdf",
+  "pdf_title": "Pathological Anatomy: Complete Study Manual. Part 1",
+  "author": "Asadbek Axmatkulov",
+  "running": "Pathological Anatomy — Complete Study Manual. Part 1",
+  "cover": {
+    "image": "tools/i18n/books/pan/pdf_cover.jpg",
+    "top": ["MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN", "TASHKENT STATE MEDICAL UNIVERSITY", "Department of Pathological Anatomy"],
+    "title": "PATHOLOGICAL ANATOMY",
+    "part": "PART 1",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Pathological Anatomy: Complete Study Manual. Part 1.** A study manual for practical classes. — Tashkent, 2026. English edition, translated from the Uzbek original.",
+    "",
+    "This manual is based on the 11 practical class topics of the 5th-semester calendar-thematic plan of the course “Pathological Anatomy” and covers general pathological anatomy: the response of the cell to injurious agents, cell injury and cell death, degenerations, inflammation and repair, hemodynamic disorders, immunopathological processes and amyloidosis, tumors, infectious diseases, and the pathology of newborns and children.",
+    "At the end of each chapter there are algorithms for describing gross specimens and microscopic slides, review questions, test questions and clinical (clinicopathological) cases. The answers to the test questions are given at the end of the book.",
+    "The manual is based on the textbook “Pathological Anatomy” by M.S. Abdullakhodjaeva, the textbook “Pathological Anatomy” by A.I. Strukov and V.V. Serov, the study manual “General Pathological Anatomy” of the Tashkent Medical Academy, and Robbins and Cotran “Pathologic Basis of Disease”, Pathoma and the Kaplan USMLE review books. The figures are taken from these sources, and the source is given under each figure. Labels inside some figures remain in the language of the original source.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before clinical information is applied in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for 3rd-year students of the faculties of general medicine, pediatrics and preventive medicine of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {"type": "p", "text": "Pathological anatomy is a fundamental science that studies the material basis of disease, that is, the structural changes that occur in cells, tissues and organs during disease. It links theoretical medicine with the clinic: it is impossible to understand the signs of disease, make a diagnosis and choose the right treatment without knowing the essence of pathological processes. Today the pathologist is the specialist who makes the final diagnosis on biopsy and surgical material, and treatment tactics are often based on the pathologist's conclusion."},
+    {"type": "p", "text": "This first part of the manual is devoted to **general pathological anatomy** and follows the order of the 11 practical classes in the 5th-semester calendar-thematic plan of the course. Each chapter corresponds to one practical class and has the same structure:"},
+    {"type": "list", "ordered": false, "items": [
+      "**Learning objectives** — what the student should know and be able to do.",
+      "**Theoretical part** — the definition, causes, mechanisms of development, gross and microscopic appearance and outcomes of the pathological process.",
+      "**Clinicopathological section** — the significance of the process studied in clinical practice, clinical examples.",
+      "**Practical skills** — the description of the gross specimens and microscopic slides studied in the class, with conclusions.",
+      "**Review questions, test questions and clinical cases** — for checking independent preparation. The answers to the clinical cases are given within the chapter, and the answers to the test questions at the end of the book.",
+      "**Quick review** — the key definitions, numbers and rules, to look over in a few minutes before an exam."
+    ]},
+    {"type": "p", "text": "Four kinds of colored box appear in the text:"},
+    {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Yellow box — a rule, number or definition that must be memorized."}]},
+    {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Blue box — the significance of the knowledge in clinical practice."}]},
+    {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Green box — a technique or short rule that makes memorizing easier."}]},
+    {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Orange box — common mistakes, concepts that are easily confused, and discrepancies between textbooks."}]},
+    {"type": "p", "text": "The main sources of the manual are the textbook “Pathological Anatomy” by M.S. Abdullakhodjaeva and the textbook “Pathological Anatomy” by A.I. Strukov and V.V. Serov; modern molecular mechanisms and clinical examples have been added from Robbins and Cotran's “Pathologic Basis of Disease”, Pathoma and Kaplan. The descriptions of gross specimens and microscopic slides rely on the study manual “General Pathological Anatomy” of the Tashkent Medical Academy. The figures are taken from these sources, and the source is given under each figure. Where the textbooks differ in classification or terminology, both points of view are given."},
+    {"type": "p", "text": "I hope that the manual will help students prepare for practical classes, describe gross specimens and microscopic slides, and prepare for midterm and final assessments."}
+  ],
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Questions:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Key facts on Topic {n}",
+    "q": "Question",
+    "a": "Answer",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {"eslab": "REMEMBER", "klinik": "CLINICAL SIGNIFICANCE", "yodlash": "MEMORY AID", "diqqat": "CAUTION"},
+  "refs": [
+    "Abdullakhodjaeva M.S. Patologik anatomiya. 1-qism. Umumiy patologik anatomiya [Pathological anatomy. Part 1. General pathological anatomy]. — Tashkent: Tafakkur-Bo‘stoni, 2012.",
+    "Abdullakhodjaeva M.S. Patologik anatomiya. 2-qism. Xususiy patologik anatomiya [Pathological anatomy. Part 2. Special pathological anatomy]. — Tashkent: Tafakkur-Bo‘stoni, 2012.",
+    "Strukov A.I., Serov V.V. Патологическая анатомия [Pathological anatomy]. 6th ed. — Moscow: GEOTAR-Media, 2015.",
+    "Strukov A.I. Патологик анатомия [Pathological anatomy] (translated from the revised 2nd edition). — Tashkent: Meditsina, 1973.",
+    "Умумий патологик анатомия: ўқув қўлланма [General pathological anatomy: a study manual]. — Tashkent: Tashkent Medical Academy, 2018.",
+    "Хусусий патологик анатомия: ўқув қўлланма [Special pathological anatomy: a study manual]. — Tashkent: Tashkent Medical Academy, 2018.",
+    "Kumar V., Abbas A.K., Aster J.C. Robbins and Cotran Pathologic Basis of Disease. 9th ed. — Philadelphia: Elsevier Saunders, 2015.",
+    "Klatt E.C., Kumar V. Robbins and Cotran Review of Pathology. 3rd ed. — Philadelphia: Saunders Elsevier, 2010.",
+    "Sattar H.A. Fundamentals of Pathology: Medical Course and Step 1 Review. — Chicago: Pathoma LLC, 2011.",
+    "Kaplan USMLE Step 1 Lecture Notes: Pathology. — New York: Kaplan, 2016.",
+    "Mishra D. Pathology (Notespaedia). — New Delhi."
+  ]
+}
