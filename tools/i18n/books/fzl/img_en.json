@@ -2479,5 +2479,253 @@
     "smax": 10
    }
   ]
+ },
+ "p96_33.webp": {
+  "items": [
+   {
+    "box": [
+     135,
+     36,
+     572,
+     102
+    ],
+    "t": "Vessel wall injury:\nsubendothelial collagen is exposed",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     55,
+     184,
+     650,
+     278
+    ],
+    "t": "1. ADHESION\nplatelets stick to collagen via von Willebrand\nfactor and the GPIb receptor",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     40,
+     361,
+     667,
+     454
+    ],
+    "t": "2. ACTIVATION and SECRETION\nshape change (pseudopods);\nADP, serotonin, TxA₂, Ca²⁺, PF3, PF4 are released",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     358,
+     490,
+     646,
+     570
+    ],
+    "t": "ADP and TxA₂ recruit\nnew platelets\n(positive feedback)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     75,
+     609,
+     630,
+     701
+    ],
+    "t": "3. AGGREGATION\nGPIIb/IIIa receptors link platelets\nto each other via fibrinogen",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     155,
+     784,
+     550,
+     850
+    ],
+    "t": "Platelet (white) thrombus —\nprimary hemostatic plug",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     160,
+     932,
+     545,
+     1023
+    ],
+    "t": "4. RETRACTION\nthrombosthenin contracts —\nthe clot becomes denser",
+    "f": "dv",
+    "smax": 24
+   }
+  ]
+ },
+ "p97_34.webp": {
+  "items": [
+   {
+    "box": [
+     20,
+     26,
+     113,
+     48
+    ],
+    "t": "Blood vessel",
+    "f": "serif",
+    "smax": 15,
+    "a": "l"
+   },
+   {
+    "box": [
+     435,
+     77,
+     508,
+     94
+    ],
+    "t": "Platelet",
+    "f": "serif",
+    "smax": 13,
+    "a": "l"
+   },
+   {
+    "box": [
+     421,
+     163,
+     480,
+     177
+    ],
+    "t": "Collagen",
+    "f": "serif",
+    "smax": 12,
+    "a": "l"
+   },
+   {
+    "box": [
+     82,
+     169,
+     180,
+     201
+    ],
+    "t": "Endothelial\ninjury",
+    "f": "serif",
+    "smax": 12,
+    "a": "l"
+   },
+   {
+    "box": [
+     609,
+     213,
+     752,
+     251
+    ],
+    "t": "Platelet shape\nchange",
+    "f": "serif",
+    "smax": 13,
+    "a": "l"
+   },
+   {
+    "box": [
+     157,
+     250,
+     315,
+     270
+    ],
+    "t": "Platelet adhesion",
+    "f": "serif",
+    "smax": 13,
+    "a": "l"
+   },
+   {
+    "box": [
+     245,
+     314,
+     340,
+     349
+    ],
+    "t": "Platelet\nactivation",
+    "f": "serif",
+    "smax": 13
+   },
+   {
+    "box": [
+     230,
+     383,
+     311,
+     412
+    ],
+    "t": "Slowing of\nblood flow",
+    "f": "serif",
+    "smax": 11
+   },
+   {
+    "box": [
+     391,
+     417,
+     454,
+     435
+    ],
+    "t": "Secretion",
+    "f": "sansb",
+    "smax": 11,
+    "a": "l"
+   },
+   {
+    "box": [
+     219,
+     446,
+     330,
+     462
+    ],
+    "t": "Vasoconstriction",
+    "f": "sansb",
+    "smax": 11
+   },
+   {
+    "box": [
+     548,
+     367,
+     622,
+     384
+    ],
+    "t": "Fibrinogen",
+    "f": "serif",
+    "smax": 11,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     595,
+     526,
+     692,
+     561
+    ],
+    "t": "Platelet\naggregation",
+    "f": "serif",
+    "smax": 13,
+    "a": "l"
+   },
+   {
+    "box": [
+     204,
+     521,
+     272,
+     549
+    ],
+    "t": "Serotonin\nPDGF",
+    "f": "sansb",
+    "smax": 11
+   },
+   {
+    "box": [
+     354,
+     521,
+     390,
+     549
+    ],
+    "t": "ADP\nPAF",
+    "f": "sansb",
+    "smax": 11
+   }
+  ]
  }
 }
