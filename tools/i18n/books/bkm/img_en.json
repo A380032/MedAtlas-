@@ -1,0 +1,5598 @@
+{
+ "p13_1.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     15,
+     141,
+     56
+    ],
+    "t": "Food (proteins, fats,\ncarbohydrates, vitamins,\nminerals, water)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     171,
+     23,
+     280,
+     51
+    ],
+    "t": "Digestion\n(gastrointestinal tract)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     316,
+     25,
+     401,
+     49
+    ],
+    "t": "Absorption\n(small intestine)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     443,
+     19,
+     575,
+     53
+    ],
+    "t": "Intermediary metabolism\n(in cells:\ncatabolism + anabolism)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     615,
+     14,
+     740,
+     60
+    ],
+    "t": "Excretion of\nend products\n(CO₂, H₂O, urea,\nuric acid, creatinine)",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
+ },
+ "p13_2.webp": {
+  "items": [
+   {
+    "box": [
+     132,
+     30,
+     607,
+     48
+    ],
+    "t": "Stage I: breakdown of polymers into monomers (digestion)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     74,
+     74,
+     229,
+     90
+    ],
+    "t": "Polysaccharides",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     315,
+     74,
+     425,
+     93
+    ],
+    "t": "Proteins",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     514,
+     74,
+     663,
+     93
+    ],
+    "t": "Fats (TAG)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     69,
+     150,
+     231,
+     183
+    ],
+    "t": "Glucose and other\nmonosaccharides",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     529,
+     150,
+     647,
+     186
+    ],
+    "t": "Fatty acids\n+ glycerol",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     284,
+     159,
+     457,
+     175
+    ],
+    "t": "Amino acids",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     48,
+     226,
+     237,
+     244
+    ],
+    "t": "Stage II: specific pathways",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     91,
+     269,
+     194,
+     285
+    ],
+    "t": "Pyruvate",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     291,
+     269,
+     465,
+     288
+    ],
+    "t": "NH₃ → urea",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     74,
+     352,
+     209,
+     368
+    ],
+    "t": "Acetyl-CoA",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     241,
+     417,
+     531,
+     435
+    ],
+    "t": "Stage III: common pathway of catabolism",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     356,
+     454,
+     501,
+     489
+    ],
+    "t": "Citric acid cycle\n(Krebs cycle)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     319,
+     555,
+     508,
+     588
+    ],
+    "t": "Respiratory chain and\noxidative phosphorylation",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     265,
+     649,
+     342,
+     665
+    ],
+    "t": "ATP",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p25_3.webp": {
+  "items": [
+   {
+    "box": [
+     100,
+     7,
+     330,
+     25
+    ],
+    "t": "Dependence on temperature",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     497,
+     7,
+     691,
+     25
+    ],
+    "t": "Dependence on pH",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     80,
+     64,
+     204,
+     104
+    ],
+    "t": "optimum ≈ 37–40 °C\ndenaturation\nabove 50–60 °C",
+    "f": "dv",
+    "lines": [
+     [
+      196,
+      62,
+      181,
+      106,
+      "#a8473a",
+      3
+     ]
+    ],
+    "a": "l",
+    "c": "#7f7f7f",
+    "bg": "#ffffff",
+    "smax": 11
+   },
+   {
+    "box": [
+     6,
+     100,
+     22,
+     180
+    ],
+    "t": "Activity, %",
+    "f": "dv",
+    "rot": 90,
+    "smax": 13
+   },
+   {
+    "box": [
+     385,
+     100,
+     401,
+     180
+    ],
+    "t": "Activity, %",
+    "f": "dv",
+    "rot": 90,
+    "smax": 13
+   },
+   {
+    "box": [
+     163,
+     278,
+     267,
+     292
+    ],
+    "t": "Temperature, °C",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     481,
+     304,
+     568,
+     317
+    ],
+    "t": "pepsin (pH 1.5–2)",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     640,
+     304,
+     734,
+     317
+    ],
+    "t": "trypsin (pH 7.8–8.5)",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     481,
+     318,
+     600,
+     331
+    ],
+    "t": "salivary amylase (pH 6.8)",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   }
+  ]
+ },
+ "p26_4.webp": {
+  "items": [
+   {
+    "box": [
+     98,
+     7,
+     331,
+     25
+    ],
+    "t": "Michaelis–Menten curve",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     500,
+     7,
+     687,
+     25
+    ],
+    "t": "Lineweaver–Burk plot",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     6,
+     95,
+     22,
+     230
+    ],
+    "t": "Reaction rate v",
+    "f": "dv",
+    "rot": 90,
+    "smax": 13
+   },
+   {
+    "box": [
+     112,
+     313,
+     316,
+     329
+    ],
+    "t": "Substrate concentration [S]",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     268,
+     243,
+     324,
+     256
+    ],
+    "t": "no inhibitor",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     268,
+     257,
+     356,
+     270
+    ],
+    "t": "competitive inhibitor",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     268,
+     271,
+     366,
+     284
+    ],
+    "t": "noncompetitive inhibitor",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     466,
+     31,
+     522,
+     45
+    ],
+    "t": "no inhibitor",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     466,
+     45,
+     620,
+     58
+    ],
+    "t": "competitive: Kₘ ↑, Vₘₐₓ unchanged",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   },
+   {
+    "box": [
+     466,
+     59,
+     626,
+     71
+    ],
+    "t": "noncompetitive: Vₘₐₓ ↓, Kₘ unchanged",
+    "f": "dv",
+    "a": "l",
+    "smax": 10
+   }
+  ]
+ },
+ "p27_5.webp": {
+  "items": [
+   {
+    "box": [
+     22,
+     12,
+     76,
+     24
+    ],
+    "t": "Substrate A",
+    "f": "dv",
+    "smax": 7
+   },
+   {
+    "box": [
+     112,
+     9,
+     188,
+     27
+    ],
+    "t": "Enzyme 1\n(key, allosteric)",
+    "f": "dv",
+    "smax": 7
+   },
+   {
+    "box": [
+     320,
+     12,
+     368,
+     24
+    ],
+    "t": "Enzyme 2",
+    "f": "dv",
+    "smax": 7
+   },
+   {
+    "box": [
+     588,
+     12,
+     636,
+     24
+    ],
+    "t": "Enzyme 3",
+    "f": "dv",
+    "smax": 7
+   },
+   {
+    "box": [
+     675,
+     12,
+     748,
+     24
+    ],
+    "t": "End product P",
+    "f": "dv",
+    "smax": 7
+   },
+   {
+    "box": [
+     394,
+     35,
+     466,
+     50
+    ],
+    "t": "negative feedback\n(allosteric inhibition)",
+    "f": "dv",
+    "smax": 7
+   }
+  ]
+ },
+ "p36_6.webp": {
+  "items": [
+   {
+    "box": [
+     18,
+     19,
+     196,
+     34
+    ],
+    "t": "Extracellular environment",
+    "f": "dv",
+    "smax": 12,
+    "a": "l"
+   },
+   {
+    "box": [
+     97,
+     39,
+     157,
+     63
+    ],
+    "t": "O₂, CO₂,\nsteroids",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     380,
+     39,
+     441,
+     64
+    ],
+    "t": "glucose\n(GLUT)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     647,
+     52,
+     752,
+     63
+    ],
+    "t": "macromolecules",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     537,
+     153,
+     599,
+     176
+    ],
+    "t": "Na⁺,K⁺-\nATPase",
+    "f": "dvb",
+    "c": "#ffffff",
+    "smax": 8
+   },
+   {
+    "box": [
+     522,
+     233,
+     615,
+     244
+    ],
+    "t": "ATP → ADP + Pᵢ",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     92,
+     255,
+     163,
+     283
+    ],
+    "t": "Simple\ndiffusion",
+    "f": "dvb",
+    "smax": 11
+   },
+   {
+    "box": [
+     209,
+     255,
+     318,
+     283
+    ],
+    "t": "Ion channel\n(facilitated)",
+    "f": "dvb",
+    "smax": 11
+   },
+   {
+    "box": [
+     327,
+     255,
+     495,
+     283
+    ],
+    "t": "Carrier protein\n(facilitated diffusion)",
+    "f": "dvb",
+    "smax": 11
+   },
+   {
+    "box": [
+     518,
+     255,
+     621,
+     283
+    ],
+    "t": "Primary active\ntransport",
+    "f": "dvb",
+    "smax": 11
+   },
+   {
+    "box": [
+     641,
+     268,
+     758,
+     282
+    ],
+    "t": "Endo-/exocytosis",
+    "f": "dvb",
+    "smax": 11
+   },
+   {
+    "box": [
+     18,
+     299,
+     100,
+     314
+    ],
+    "t": "Cytoplasm",
+    "f": "dv",
+    "smax": 12,
+    "a": "l"
+   }
+  ]
+ },
+ "p38_7.webp": {
+  "items": [
+   {
+    "box": [
+     168,
+     21,
+     346,
+     54
+    ],
+    "t": "Hormone\n(epinephrine, glucagon)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     432,
+     21,
+     669,
+     54
+    ],
+    "t": "Hormone\n(vasopressin V1, angiotensin II)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     158,
+     99,
+     355,
+     132
+    ],
+    "t": "Receptor\n(G protein-coupled)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     500,
+     107,
+     602,
+     124
+    ],
+    "t": "Receptor",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     202,
+     177,
+     312,
+     209
+    ],
+    "t": "Gs protein\n(GDP → GTP)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     505,
+     184,
+     595,
+     202
+    ],
+    "t": "Gq protein",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     194,
+     259,
+     322,
+     279
+    ],
+    "t": "Adenylate cyclase",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     491,
+     260,
+     610,
+     278
+    ],
+    "t": "Phospholipase C",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     225,
+     334,
+     288,
+     349
+    ],
+    "t": "cAMP",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     526,
+     334,
+     575,
+     349
+    ],
+    "t": "PIP₂",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     498,
+     410,
+     540,
+     425
+    ],
+    "t": "IP₃",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     54,
+     410,
+     183,
+     425
+    ],
+    "t": "Protein kinase A",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     227,
+     402,
+     350,
+     434
+    ],
+    "t": "Phosphodiesterase\n(cAMP → AMP)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     25,
+     480,
+     210,
+     513
+    ],
+    "t": "Phosphorylation of proteins\n→ cellular response",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     432,
+     488,
+     575,
+     505
+    ],
+    "t": "Ca²⁺ ↑ (from the ER)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     523,
+     564,
+     655,
+     579
+    ],
+    "t": "Protein kinase C",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p46_8.webp": {
+  "items": [
+   {
+    "box": [
+     24,
+     19,
+     299,
+     35
+    ],
+    "t": "Intermembrane space (much H⁺, “+”)",
+    "f": "dv",
+    "a": "l",
+    "smax": 12
+   },
+   {
+    "box": [
+     206,
+     32,
+     520,
+     47
+    ],
+    "t": "Electrons: NADH → I → CoQ → III → cyt c → IV → O₂",
+    "f": "dv",
+    "smax": 11,
+    "c": "#a8901f"
+   },
+   {
+    "box": [
+     92,
+     109,
+     152,
+     132
+    ],
+    "t": "✖ rotenone,\namytal",
+    "f": "dv",
+    "c": "#a3222c",
+    "smax": 9
+   },
+   {
+    "box": [
+     232,
+     114,
+     313,
+     126
+    ],
+    "t": "✖ antimycin A",
+    "f": "dv",
+    "c": "#a3222c",
+    "smax": 9
+   },
+   {
+    "box": [
+     489,
+     108,
+     563,
+     132
+    ],
+    "t": "✖ cyanide, CO,\nH₂S, azide",
+    "f": "dv",
+    "c": "#a3222c",
+    "smax": 9
+   },
+   {
+    "box": [
+     643,
+     108,
+     693,
+     132
+    ],
+    "t": "✖ oligo-\nmycin",
+    "f": "dv",
+    "c": "#a3222c",
+    "smax": 9
+   },
+   {
+    "box": [
+     389,
+     120,
+     422,
+     131
+    ],
+    "t": "cyt c",
+    "f": "dvb",
+    "smax": 9
+   },
+   {
+    "box": [
+     195,
+     192,
+     223,
+     206
+    ],
+    "t": "CoQ",
+    "f": "dvb",
+    "smax": 9
+   },
+   {
+    "box": [
+     41,
+     197,
+     137,
+     223
+    ],
+    "t": "NADH dehydro-\ngenase",
+    "f": "dvb",
+    "c": "#ffffff",
+    "smax": 9
+   },
+   {
+    "box": [
+     296,
+     197,
+     361,
+     221
+    ],
+    "t": "Cytochrome\nbc₁",
+    "f": "dvb",
+    "c": "#ffffff",
+    "smax": 9
+   },
+   {
+    "box": [
+     453,
+     197,
+     518,
+     221
+    ],
+    "t": "Cytochrome\noxidase",
+    "f": "dvb",
+    "c": "#ffffff",
+    "smax": 9
+   },
+   {
+    "box": [
+     614,
+     197,
+     665,
+     221
+    ],
+    "t": "ATP\nsynthase",
+    "f": "dvb",
+    "c": "#ffffff",
+    "smax": 9
+   },
+   {
+    "box": [
+     167,
+     268,
+     250,
+     297
+    ],
+    "t": "Succinate\ndehydrogenase",
+    "f": "dvb",
+    "bg": "#579bd3",
+    "c": "#ffffff",
+    "smax": 9
+   },
+   {
+    "box": [
+     585,
+     335,
+     694,
+     348
+    ],
+    "t": "ADP + Pᵢ → ATP",
+    "f": "dvb",
+    "smax": 11,
+    "c": "#6a2c91"
+   },
+   {
+    "box": [
+     124,
+     343,
+     293,
+     357
+    ],
+    "t": "succinate → fumarate (FADH₂)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     24,
+     364,
+     182,
+     379
+    ],
+    "t": "Matrix (little H⁺, “−”)",
+    "f": "dv",
+    "a": "l",
+    "smax": 12
+   },
+   {
+    "box": [
+     684,
+     201,
+     741,
+     237
+    ],
+    "t": "inner\nmembrane",
+    "f": "dv",
+    "c": "#9a9a9a",
+    "smax": 9
+   }
+  ]
+ },
+ "p55_9.webp": {
+  "items": [
+   {
+    "box": [
+     491,
+     16,
+     591,
+     53
+    ],
+    "t": "E3: dihydrolipoyl\ndehydrogenase\n(FAD, NAD⁺)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     351,
+     45,
+     446,
+     84
+    ],
+    "t": "E2: dihydrolipoyl\ntransacetylase\n(lipoate, CoA)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     28,
+     81,
+     106,
+     107
+    ],
+    "t": "Pyruvate\n(from the cytosol)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     154,
+     81,
+     311,
+     107
+    ],
+    "t": "E1: pyruvate dehydrogenase\n(TPP)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     500,
+     87,
+     582,
+     100
+    ],
+    "t": "Acetyl-CoA",
+    "f": "dv",
+    "smax": 10
+   }
+  ]
+ },
+ "p56_10.webp": {
+  "items": [
+   {
+    "box": [
+     398,
+     94,
+     601,
+     109
+    ],
+    "t": "acetyl-CoA + H₂O → CoA-SH",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     313,
+     152,
+     448,
+     169
+    ],
+    "t": "Oxaloacetate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     180,
+     219,
+     258,
+     236
+    ],
+    "t": "Malate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     503,
+     219,
+     582,
+     236
+    ],
+    "t": "Citrate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     105,
+     382,
+     199,
+     398
+    ],
+    "t": "Fumarate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     563,
+     381,
+     656,
+     398
+    ],
+    "t": "Isocitrate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     167,
+     543,
+     271,
+     559
+    ],
+    "t": "Succinate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     316,
+     610,
+     446,
+     626
+    ],
+    "t": "Succinyl-CoA",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     475,
+     507,
+     492,
+     529
+    ],
+    "t": "",
+    "f": "dv",
+    "bg": "#ffffff",
+    "smax": 13
+   },
+   {
+    "box": [
+     476,
+     533,
+     490,
+     556
+    ],
+    "t": "",
+    "f": "dv",
+    "bg": "#dce8f4",
+    "smax": 13
+   },
+   {
+    "box": [
+     480,
+     543,
+     606,
+     562
+    ],
+    "t": "α-Ketoglutarate",
+    "f": "dvb",
+    "smax": 13
+   },
+   {
+    "box": [
+     273,
+     234,
+     371,
+     264
+    ],
+    "t": "malate\ndehydrogenase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     396,
+     242,
+     475,
+     255
+    ],
+    "t": "citrate synthase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     201,
+     324,
+     275,
+     338
+    ],
+    "t": "fumarase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     484,
+     325,
+     560,
+     338
+    ],
+    "t": "aconitase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     188,
+     435,
+     288,
+     465
+    ],
+    "t": "succinate\ndehydrogenase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     472,
+     435,
+     571,
+     465
+    ],
+    "t": "isocitrate\ndehydrogenase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     270,
+     518,
+     367,
+     546
+    ],
+    "t": "succinyl-CoA\nsynthetase",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     389,
+     509,
+     475,
+     532
+    ],
+    "t": "α-ketoglutarate\ndehydrogenase\ncomplex",
+    "f": "dvi",
+    "c": "#2e7d55",
+    "smax": 10
+   },
+   {
+    "box": [
+     298,
+     332,
+     462,
+     378
+    ],
+    "t": "Citric acid\ncycle",
+    "f": "dvb",
+    "smax": 18
+   },
+   {
+    "box": [
+     316,
+     407,
+     444,
+     456
+    ],
+    "t": "1 acetyl-CoA →\n2 CO₂ + 3 NADH\n+ FADH₂ + GTP",
+    "f": "dv",
+    "c": "#b03a2e",
+    "smax": 13
+   },
+   {
+    "box": [
+     200,
+     671,
+     320,
+     686
+    ],
+    "t": "GDP + Pᵢ → GTP",
+    "f": "dv",
+    "c": "#b03a2e",
+    "smax": 13
+   }
+  ]
+ },
+ "p66_11.webp": {
+  "items": [
+   {
+    "box": [
+     352,
+     39,
+     482,
+     64
+    ],
+    "t": "Glucose",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     416,
+     105,
+     540,
+     126
+    ],
+    "t": "hexokinase",
+    "f": "dv",
+    "a": "l",
+    "smax": 16
+   },
+   {
+    "box": [
+     318,
+     167,
+     517,
+     192
+    ],
+    "t": "Glucose-6-phosphate",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     346,
+     242,
+     525,
+     264
+    ],
+    "t": "phosphoglucomutase",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     548,
+     233,
+     742,
+     274
+    ],
+    "t": "glucose-6-phosphatase\n(liver and kidney only)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     170,
+     315,
+     365,
+     339
+    ],
+    "t": "Glucose-1-phosphate",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     440,
+     315,
+     701,
+     339
+    ],
+    "t": "Free glucose → blood",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     171,
+     380,
+     361,
+     421
+    ],
+    "t": "UDP-glucose\npyrophosphorylase (UTP)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     57,
+     462,
+     218,
+     487
+    ],
+    "t": "UDP-glucose",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     391,
+     454,
+     693,
+     495
+    ],
+    "t": "glycogen phosphorylase\n(+ debranching enzyme)",
+    "f": "dv",
+    "c": "#b31b1b",
+    "smax": 16
+   },
+   {
+    "box": [
+     124,
+     528,
+     361,
+     568
+    ],
+    "t": "glycogen synthase\n(+ branching enzyme)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 16
+   },
+   {
+    "box": [
+     193,
+     609,
+     316,
+     634
+    ],
+    "t": "Glycogen",
+    "f": "dv",
+    "smax": 20
+   }
+  ]
+ },
+ "p77_14.webp": {
+  "items": [
+   {
+    "box": [
+     568,
+     18,
+     613,
+     31
+    ],
+    "t": "Liver",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     77,
+     33,
+     259,
+     47
+    ],
+    "t": "Working muscle / erythrocytes",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     656,
+     44,
+     717,
+     57
+    ],
+    "t": "Urea",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     321,
+     57,
+     440,
+     67
+    ],
+    "t": "blood (glucose–alanine cycle)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 8
+   },
+   {
+    "box": [
+     133,
+     60,
+     197,
+     79
+    ],
+    "t": "glycolysis +\ntransamination",
+    "f": "dv",
+    "smax": 8
+   },
+   {
+    "box": [
+     240,
+     60,
+     287,
+     72
+    ],
+    "t": "Alanine",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     471,
+     60,
+     518,
+     72
+    ],
+    "t": "Alanine",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     557,
+     71,
+     629,
+     83
+    ],
+    "t": "gluconeogenesis",
+    "f": "dv",
+    "smax": 8
+   },
+   {
+    "box": [
+     133,
+     91,
+     206,
+     111
+    ],
+    "t": "anaerobic glycolysis\n(2 ATP)",
+    "f": "dv",
+    "smax": 8
+   },
+   {
+    "box": [
+     554,
+     97,
+     629,
+     116
+    ],
+    "t": "gluconeogenesis\n(6 ATP)",
+    "f": "dv",
+    "smax": 8
+   },
+   {
+    "box": [
+     353,
+     101,
+     417,
+     110
+    ],
+    "t": "blood (Cori cycle)",
+    "f": "dv",
+    "c": "#c0661a",
+    "smax": 8
+   },
+   {
+    "box": [
+     44,
+     103,
+     101,
+     116
+    ],
+    "t": "Glucose",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     658,
+     108,
+     715,
+     121
+    ],
+    "t": "Glucose",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     240,
+     104,
+     287,
+     115
+    ],
+    "t": "Lactate",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     471,
+     104,
+     518,
+     115
+    ],
+    "t": "Lactate",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     364,
+     130,
+     396,
+     140
+    ],
+    "t": "blood",
+    "f": "dv",
+    "smax": 8
+   }
+  ]
+ },
+ "p68_12.webp": {
+  "items": [
+   {
+    "box": [
+     172,
+     24,
+     261,
+     42
+    ],
+    "t": "Glucose",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     66,
+     382,
+     91
+    ],
+    "t": "hexokinase / glucokinase\nATP → ADP",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 10
+   },
+   {
+    "box": [
+     153,
+     118,
+     281,
+     135
+    ],
+    "t": "Glucose-6-phosphate",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     159,
+     352,
+     175
+    ],
+    "t": "phosphoglucose isomerase",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     155,
+     199,
+     280,
+     214
+    ],
+    "t": "Fructose-6-phosphate",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     240,
+     377,
+     267
+    ],
+    "t": "phosphofructokinase-1\nATP → ADP (key enzyme)",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 10
+   },
+   {
+    "box": [
+     140,
+     292,
+     295,
+     308
+    ],
+    "t": "Fructose-1,6-bisphosphate",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     74,
+     362,
+     214,
+     377
+    ],
+    "t": "Dihydroxyacetone phosphate",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     268,
+     363,
+     325,
+     376
+    ],
+    "t": "aldolase",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     188,
+     404,
+     267,
+     429
+    ],
+    "t": "triose phosphate\nisomerase",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     120,
+     455,
+     314,
+     473
+    ],
+    "t": "Glyceraldehyde-3-phosphate (×2)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     497,
+     419,
+     524
+    ],
+    "t": "glyceraldehyde-3-phosphate\ndehydrogenase; NAD⁺ → NADH; Pᵢ",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     128,
+     549,
+     307,
+     566
+    ],
+    "t": "1,3-Bisphosphoglycerate (×2)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     590,
+     409,
+     618
+    ],
+    "t": "phosphoglycerate kinase\nADP → ATP (substrate level)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 10
+   },
+   {
+    "box": [
+     142,
+     642,
+     292,
+     659
+    ],
+    "t": "3-Phosphoglycerate (×2)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     684,
+     341,
+     699
+    ],
+    "t": "phosphoglycerate mutase",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     142,
+     723,
+     292,
+     740
+    ],
+    "t": "2-Phosphoglycerate (×2)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     765,
+     363,
+     780
+    ],
+    "t": "enolase (inhibited by F⁻)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     139,
+     817,
+     295,
+     834
+    ],
+    "t": "Phosphoenolpyruvate (×2)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     219,
+     858,
+     410,
+     885
+    ],
+    "t": "pyruvate kinase\nADP → ATP (substrate level)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 10
+   },
+   {
+    "box": [
+     166,
+     910,
+     268,
+     926
+    ],
+    "t": "Pyruvate (×2)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     211,
+     952,
+     244,
+     965
+    ],
+    "t": "LDH",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     239,
+     998,
+     410,
+     1043
+    ],
+    "t": "Mitochondria:\nacetyl-CoA → Krebs cycle\n(aerobic conditions)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     46,
+     1005,
+     173,
+     1036
+    ],
+    "t": "Lactate (×2)\n(anaerobic conditions)",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
+ },
+ "p76_13.webp": {
+  "items": [
+   {
+    "box": [
+     95,
+     39,
+     189,
+     58
+    ],
+    "t": "Lactate",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     313,
+     28,
+     580,
+     72
+    ],
+    "t": "Alanine and other\nglucogenic amino acids",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     228,
+     102,
+     270,
+     118
+    ],
+    "t": "LDH",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     386,
+     101,
+     509,
+     118
+    ],
+    "t": "transamination",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     247,
+     158,
+     341,
+     177
+    ],
+    "t": "Pyruvate",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     298,
+     218,
+     510,
+     255
+    ],
+    "t": "1) pyruvate carboxylase\n(biotin, ATP; mitochondria)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 14
+   },
+   {
+    "box": [
+     179,
+     285,
+     408,
+     349
+    ],
+    "t": "Oxaloacetate\n(mitochondria → to the\ncytosol as malate)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     298,
+     379,
+     521,
+     396
+    ],
+    "t": "2) PEP carboxykinase (GTP)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 14
+   },
+   {
+    "box": [
+     206,
+     435,
+     382,
+     458
+    ],
+    "t": "Phosphoenolpyruvate",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     518,
+     436,
+     625,
+     455
+    ],
+    "t": "Glycerol",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     337,
+     495,
+     495,
+     532
+    ],
+    "t": "(reversible reactions\nof glycolysis)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     532,
+     504,
+     653,
+     523
+    ],
+    "t": "glycerol kinase",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     356,
+     570,
+     510,
+     589
+    ],
+    "t": "Triose phosphates",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     324,
+     670,
+     544,
+     691
+    ],
+    "t": "Fructose-1,6-bisphosphate",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     438,
+     730,
+     658,
+     748
+    ],
+    "t": "3) fructose-1,6-bisphosphatase",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 14
+   },
+   {
+    "box": [
+     347,
+     787,
+     520,
+     806
+    ],
+    "t": "Fructose-6-phosphate",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     344,
+     888,
+     523,
+     911
+    ],
+    "t": "Glucose-6-phosphate",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     437,
+     948,
+     627,
+     967
+    ],
+    "t": "4) glucose-6-phosphatase",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 14
+   },
+   {
+    "box": [
+     376,
+     1005,
+     489,
+     1027
+    ],
+    "t": "Glucose",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p78_15.webp": {
+  "items": [
+   {
+    "box": [
+     414,
+     28,
+     563,
+     47
+    ],
+    "t": "Glucose-6-phosphate",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     492,
+     76,
+     701,
+     118
+    ],
+    "t": "glucose-6-phosphate\ndehydrogenase (key enzyme)\nNADP⁺ → NADPH",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     398,
+     149,
+     579,
+     168
+    ],
+    "t": "6-phosphogluconolactone",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     460,
+     196,
+     545,
+     211
+    ],
+    "t": "lactonase",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     353,
+     242,
+     497,
+     261
+    ],
+    "t": "6-phosphogluconate",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     314,
+     289,
+     465,
+     333
+    ],
+    "t": "6-phosphogluconate\ndehydrogenase\nNADP⁺ → NADPH, CO₂",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     178,
+     373,
+     320,
+     390
+    ],
+    "t": "Ribulose-5-phosphate",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     374,
+     357,
+     732,
+     409
+    ],
+    "t": "2 NADPH\n→ synthesis of fatty acids and cholesterol,\nreduction of glutathione, microsomal oxidation",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     229,
+     458,
+     562,
+     526
+    ],
+    "t": "Nonoxidative phase:\ntransketolase (TPP), transaldolase\n→ fructose-6-phosphate, glyceraldehyde-3-phosphate\n(return to glycolysis)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     21,
+     471,
+     185,
+     514
+    ],
+    "t": "Ribose-5-phosphate\n→ nucleotides,\nnucleic acids",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p88_16.webp": {
+  "items": [
+   {
+    "box": [
+     204,
+     33,
+     583,
+     92
+    ],
+    "t": "Dietary TAG,\nphospholipids, cholesterol esters",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     273,
+     163,
+     514,
+     247
+    ],
+    "t": "Emulsification\n(bile acids,\nperistalsis)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     241,
+     318,
+     545,
+     427
+    ],
+    "t": "Pancreatic lipase\n+ colipase;\nphospholipase A₂;\ncholesterol esterase",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     222,
+     498,
+     565,
+     582
+    ],
+    "t": "2-Monoacylglycerols,\nfatty acids, cholesterol,\nlysophospholipids",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     258,
+     652,
+     528,
+     713
+    ],
+    "t": "Mixed micelles\n(with bile acids)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     36,
+     782,
+     376,
+     867
+    ],
+    "t": "Enterocyte:\nresynthesis of TAG,\nphospholipids and\ncholesterol esters",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     441,
+     782,
+     724,
+     867
+    ],
+    "t": "Short- and medium-chain\nfatty acids →\nportal vein",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     41,
+     937,
+     372,
+     997
+    ],
+    "t": "Chylomicrons\n(apo B-48) → lymph → blood",
+    "f": "dv",
+    "smax": 20
+   }
+  ]
+ },
+ "p90_17.webp": {
+  "items": [
+   {
+    "box": [
+     274,
+     32,
+     344,
+     50
+    ],
+    "t": "Intestine",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     226,
+     116,
+     390,
+     155
+    ],
+    "t": "Chylomicrons\n(apo B-48, C-II, E)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     199,
+     211,
+     417,
+     269
+    ],
+    "t": "Lipoprotein lipase\n(capillary endothelium;\nactivated by apo C-II)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     31,
+     325,
+     240,
+     364
+    ],
+    "t": "Muscle, adipose tissue:\nfatty acids",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     370,
+     334,
+     556,
+     355
+    ],
+    "t": "Chylomicron remnants",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     467,
+     390,
+     588,
+     409
+    ],
+    "t": "apo E receptor",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     425,
+     441,
+     494,
+     462
+    ],
+    "t": "Liver",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     223,
+     525,
+     398,
+     564
+    ],
+    "t": "VLDL\n(apo B-100, C-II, E)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     279,
+     627,
+     399,
+     646
+    ],
+    "t": "IDL",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     532,
+     680,
+     589,
+     712
+    ],
+    "t": "reverse\ntransport",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     226,
+     741,
+     453,
+     798
+    ],
+    "t": "LDL\n(apo B-100) — cholesterol\nto tissues",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     214,
+     854,
+     466,
+     892
+    ],
+    "t": "Tissues: LDL receptors\n(endocytosis)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     379,
+     920,
+     475,
+     951
+    ],
+    "t": "excess\ncholesterol",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     328,
+     980,
+     540,
+     1038
+    ],
+    "t": "HDL\n(apo A-I) — cholesterol\nfrom tissues to the liver",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p98_18.webp": {
+  "items": [
+   {
+    "box": [
+     315,
+     37,
+     529,
+     60
+    ],
+    "t": "Fatty acid (cytosol)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     428,
+     98,
+     582,
+     133
+    ],
+    "t": "acyl-CoA synthetase\nATP → AMP + PPᵢ",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     364,
+     175,
+     482,
+     195
+    ],
+    "t": "Acyl-CoA",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     428,
+     236,
+     594,
+     274
+    ],
+    "t": "malonyl-CoA inhibits\nCPT-I",
+    "f": "dv",
+    "c": "#b31b1b",
+    "smax": 13
+   },
+   {
+    "box": [
+     278,
+     306,
+     568,
+     370
+    ],
+    "t": "Acyl-carnitine\n(carnitine shuttle:\nCPT-I → translocase → CPT-II)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     322,
+     444,
+     523,
+     466
+    ],
+    "t": "Acyl-CoA (matrix)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     427,
+     505,
+     663,
+     540
+    ],
+    "t": "1) acyl-CoA dehydrogenase\nFAD → FADH₂",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     325,
+     582,
+     521,
+     602
+    ],
+    "t": "trans-Δ²-Enoyl-CoA",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     426,
+     643,
+     611,
+     663
+    ],
+    "t": "2) enoyl-CoA hydratase",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     314,
+     720,
+     534,
+     740
+    ],
+    "t": "L-3-Hydroxyacyl-CoA",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     426,
+     782,
+     690,
+     820
+    ],
+    "t": "3) 3-hydroxyacyl-CoA\ndehydrogenase; NAD⁺ → NADH",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     338,
+     859,
+     509,
+     878
+    ],
+    "t": "3-Ketoacyl-CoA",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     337,
+     920,
+     421,
+     955
+    ],
+    "t": "4) thiolase\n+ CoA-SH",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     36,
+     989,
+     325,
+     1034
+    ],
+    "t": "Acyl-CoA (shortened by 2 C)\n→ returns to the cycle",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     394,
+     989,
+     695,
+     1034
+    ],
+    "t": "Acetyl-CoA → Krebs cycle\n(in the liver — ketone bodies)",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p100_19.webp": {
+  "items": [
+   {
+    "box": [
+     126,
+     34,
+     405,
+     57
+    ],
+    "t": "Liver mitochondria (synthesis)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     294,
+     85,
+     428,
+     103
+    ],
+    "t": "2 Acetyl-CoA",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     365,
+     140,
+     417,
+     156
+    ],
+    "t": "thiolase",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     275,
+     193,
+     445,
+     211
+    ],
+    "t": "Acetoacetyl-CoA",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     372,
+     248,
+     498,
+     282
+    ],
+    "t": "HMG-CoA synthase\n(key enzyme)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     317,
+     317,
+     423,
+     335
+    ],
+    "t": "HMG-CoA",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     379,
+     371,
+     489,
+     388
+    ],
+    "t": "HMG-CoA lyase",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     305,
+     425,
+     447,
+     442
+    ],
+    "t": "Acetoacetate",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     384,
+     480,
+     460,
+     511
+    ],
+    "t": "spontaneous\n− CO₂",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     56,
+     550,
+     220,
+     572
+    ],
+    "t": "β-Hydroxybutyrate",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     281,
+     542,
+     479,
+     581
+    ],
+    "t": "Acetone\n(exhaled through the lungs)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     522,
+     555,
+     552,
+     570
+    ],
+    "t": "blood",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     258,
+     611,
+     288,
+     627
+    ],
+    "t": "blood",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     171,
+     640,
+     734,
+     663
+    ],
+    "t": "Peripheral tissues (muscle, brain, kidney) — oxidation",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     326,
+     692,
+     469,
+     710
+    ],
+    "t": "Acetoacetate",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     398,
+     747,
+     632,
+     798
+    ],
+    "t": "succinyl-CoA–\nacetoacetate CoA transferase\n(absent in the liver)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     312,
+     832,
+     483,
+     850
+    ],
+    "t": "Acetoacetyl-CoA",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     403,
+     887,
+     455,
+     903
+    ],
+    "t": "thiolase",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     275,
+     939,
+     521,
+     957
+    ],
+    "t": "2 Acetyl-CoA → Krebs cycle",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p107_20.webp": {
+  "items": [
+   {
+    "box": [
+     454,
+     21,
+     554,
+     34
+    ],
+    "t": "3 Acetyl-CoA",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     510,
+     57,
+     642,
+     69
+    ],
+    "t": "thiolase, HMG-CoA synthase",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     462,
+     92,
+     545,
+     105
+    ],
+    "t": "HMG-CoA",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     465,
+     126,
+     621,
+     151
+    ],
+    "t": "HMG-CoA reductase (key enzyme)\n2 NADPH",
+    "f": "dv",
+    "c": "#b31b1b",
+    "smax": 10
+   },
+   {
+    "box": [
+     499,
+     169,
+     730,
+     208
+    ],
+    "t": "Inhibited by: cholesterol (via SREBP),\nglucagon (phosphorylation), statins\nActivated by: insulin",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     347,
+     182,
+     437,
+     195
+    ],
+    "t": "Mevalonate",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     398,
+     226,
+     419,
+     238
+    ],
+    "t": "ATP",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     312,
+     257,
+     472,
+     285
+    ],
+    "t": "Isoprenoid units\n(isopentenyl pyrophosphate, C₅)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     341,
+     326,
+     443,
+     341
+    ],
+    "t": "Squalene (C₃₀)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     347,
+     388,
+     438,
+     401
+    ],
+    "t": "Lanosterol",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     399,
+     424,
+     476,
+     438
+    ],
+    "t": "≈ 20 reactions",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     337,
+     458,
+     447,
+     473
+    ],
+    "t": "Cholesterol (C₂₇)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     20,
+     522,
+     159,
+     537
+    ],
+    "t": "Bile acids (liver)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     196,
+     515,
+     387,
+     543
+    ],
+    "t": "Steroid hormones\n(adrenal glands, gonads)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     435,
+     522,
+     551,
+     536
+    ],
+    "t": "Vitamin D₃ (skin)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     617,
+     522,
+     724,
+     535
+    ],
+    "t": "Membranes",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
+ },
+ "p108_21.webp": {
+  "items": [
+   {
+    "box": [
+     310,
+     24,
+     463,
+     61
+    ],
+    "t": "LDL (apo B-100)\nin the blood",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     289,
+     114,
+     484,
+     151
+    ],
+    "t": "LDL receptor\n(cell membrane)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     239,
+     203,
+     535,
+     241
+    ],
+    "t": "Endocytosis\n(clathrin-coated vesicle)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     217,
+     293,
+     556,
+     327
+    ],
+    "t": "Lysosome: apo B-100 → amino acids;\ncholesterol esters → free cholesterol",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     316,
+     383,
+     457,
+     420
+    ],
+    "t": "Free cholesterol\n(inside the cell)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     29,
+     472,
+     218,
+     510
+    ],
+    "t": "HMG-CoA reductase ↓\n(synthesis decreases)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     277,
+     481,
+     489,
+     501
+    ],
+    "t": "Synthesis of LDL receptors ↓",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     551,
+     472,
+     731,
+     510
+    ],
+    "t": "ACAT ↑ → cholesterol\nesters accumulate",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p118_22.webp": {
+  "items": [
+   {
+    "box": [
+     291,
+     17,
+     478,
+     30
+    ],
+    "t": "Duodenum (pH 7.5–8.5)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     463,
+     43,
+     586,
+     56
+    ],
+    "t": "Procarboxypeptidases",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     616,
+     43,
+     734,
+     56
+    ],
+    "t": "Carboxypeptidases A, B",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     38,
+     82,
+     125,
+     104
+    ],
+    "t": "Enteropeptidase\n(enterocytes)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     184,
+     87,
+     250,
+     100
+    ],
+    "t": "Trypsinogen",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     276,
+     83,
+     332,
+     96
+    ],
+    "t": "autocatalysis",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     362,
+     86,
+     409,
+     99
+    ],
+    "t": "Trypsin",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     491,
+     86,
+     557,
+     98
+    ],
+    "t": "Proelastase",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     648,
+     86,
+     703,
+     98
+    ],
+    "t": "Elastase",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     481,
+     129,
+     567,
+     142
+    ],
+    "t": "Chymotrypsinogen",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     642,
+     129,
+     708,
+     142
+    ],
+    "t": "Chymotrypsin",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     179,
+     160,
+     279,
+     174
+    ],
+    "t": "Stomach (pH 1.5–2)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     25,
+     183,
+     138,
+     206
+    ],
+    "t": "HCl\n(parietal cells)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     172,
+     184,
+     262,
+     206
+    ],
+    "t": "Pepsinogen\n(chief cells)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     277,
+     186,
+     329,
+     196
+    ],
+    "t": "autocatalysis",
+    "f": "dv",
+    "smax": 9
+   },
+   {
+    "box": [
+     363,
+     190,
+     409,
+     203
+    ],
+    "t": "Pepsin",
+    "f": "dv",
+    "smax": 10
+   }
+  ]
+ },
+ "p120_23.webp": {
+  "items": [
+   {
+    "box": [
+     49,
+     26,
+     137,
+     44
+    ],
+    "t": "Tryptophan",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     238,
+     26,
+     314,
+     41
+    ],
+    "t": "Tyrosine",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     395,
+     26,
+     528,
+     43
+    ],
+    "t": "Cysteine, methionine",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     605,
+     26,
+     709,
+     43
+    ],
+    "t": "Lysine, ornithine",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     41,
+     100,
+     145,
+     116
+    ],
+    "t": "Indole, skatole",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     223,
+     100,
+     329,
+     116
+    ],
+    "t": "Phenol, cresol",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     390,
+     100,
+     535,
+     118
+    ],
+    "t": "H₂S, mercaptans",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     578,
+     100,
+     735,
+     118
+    ],
+    "t": "Cadaverine, putrescine",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     200,
+     168,
+     537,
+     201
+    ],
+    "t": "Liver: microsomal oxidation\n+ conjugation (PAPS, UDP-glucuronic acid)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     243,
+     246,
+     494,
+     279
+    ],
+    "t": "Indoxyl sulfate (indican) and other\nconjugates → urine",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p128_24.webp": {
+  "items": [
+   {
+    "box": [
+     77,
+     33,
+     236,
+     51
+    ],
+    "t": "L-Amino acid",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     349,
+     33,
+     503,
+     55
+    ],
+    "t": "α-Ketoglutarate",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     162,
+     97,
+     304,
+     132
+    ],
+    "t": "aminotransferase\n(pyridoxal phosphate)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     430,
+     105,
+     517,
+     124
+    ],
+    "t": "NH₂ group",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     529,
+     89,
+     744,
+     139
+    ],
+    "t": "glutamate dehydrogenase\nNAD⁺ → NADH\n(oxidative deamination)",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 15
+   },
+   {
+    "box": [
+     33,
+     168,
+     279,
+     227
+    ],
+    "t": "α-Keto acid\n(carbon skeleton →\nenergy, glucose, ketones)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     370,
+     187,
+     482,
+     205
+    ],
+    "t": "Glutamate",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     314,
+     293,
+     537,
+     314
+    ],
+    "t": "NH₃ → urea synthesis",
+    "f": "dv",
+    "smax": 18
+   }
+  ]
+ },
+ "p129_25.webp": {
+  "items": [
+   {
+    "box": [
+     62,
+     21,
+     128,
+     35
+    ],
+    "t": "Histidine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     231,
+     21,
+     302,
+     37
+    ],
+    "t": "Tryptophan",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     409,
+     21,
+     486,
+     35
+    ],
+    "t": "Glutamate",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     595,
+     21,
+     656,
+     35
+    ],
+    "t": "Tyrosine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     98,
+     59,
+     219,
+     73
+    ],
+    "t": "histidine decarboxylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     270,
+     59,
+     340,
+     73
+    ],
+    "t": "hydroxylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     450,
+     59,
+     581,
+     73
+    ],
+    "t": "glutamate decarboxylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     628,
+     59,
+     730,
+     73
+    ],
+    "t": "tyrosine hydroxylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     20,
+     90,
+     170,
+     131
+    ],
+    "t": "Histamine\n(allergy, inflammation,\ngastric secretion)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     364,
+     90,
+     530,
+     130
+    ],
+    "t": "GABA\n(main inhibitory\nneurotransmitter of the CNS)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     205,
+     102,
+     328,
+     118
+    ],
+    "t": "5-Hydroxytryptophan",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     595,
+     103,
+     656,
+     116
+    ],
+    "t": "DOPA",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     270,
+     148,
+     355,
+     160
+    ],
+    "t": "decarboxylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     629,
+     148,
+     745,
+     160
+    ],
+    "t": "DOPA decarboxylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     187,
+     179,
+     347,
+     219
+    ],
+    "t": "Serotonin\n(mood, sleep, intestinal\nmotility, vascular tone)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     588,
+     192,
+     663,
+     205
+    ],
+    "t": "Dopamine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     628,
+     237,
+     737,
+     251
+    ],
+    "t": "hydroxylase (vit. C)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     190,
+     272,
+     343,
+     288
+    ],
+    "t": "Melatonin (pineal gland)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     577,
+     273,
+     675,
+     286
+    ],
+    "t": "Norepinephrine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     629,
+     310,
+     756,
+     323
+    ],
+    "t": "methyltransferase (SAM)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     584,
+     345,
+     666,
+     359
+    ],
+    "t": "Epinephrine",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
+ },
+ "p137_26.webp": {
+  "items": [
+   {
+    "box": [
+     433,
+     20,
+     491,
+     33
+    ],
+    "t": "Cytosol",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     475,
+     47,
+     609,
+     71
+    ],
+    "t": "Aspartate (2nd nitrogen)\n+ ATP → AMP + PPᵢ",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     488,
+     111,
+     595,
+     126
+    ],
+    "t": "Argininosuccinate",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     413,
+     145,
+     541,
+     158
+    ],
+    "t": "argininosuccinate lyase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     466,
+     173,
+     617,
+     211
+    ],
+    "t": "Fumarate\n(→ malate → oxaloacetate\n→ aspartate; Krebs cycle)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     351,
+     185,
+     411,
+     199
+    ],
+    "t": "Arginine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     389,
+     226,
+     472,
+     239
+    ],
+    "t": "arginase (+H₂O)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     107,
+     246,
+     201,
+     261
+    ],
+    "t": "Mitochondrion",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     308,
+     271,
+     478,
+     297
+    ],
+    "t": "Urea\n→ blood → kidney",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     30,
+     277,
+     147,
+     290
+    ],
+    "t": "NH₃ + CO₂ + 2 ATP",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     534,
+     277,
+     591,
+     289
+    ],
+    "t": "Ornithine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     662,
+     273,
+     749,
+     294
+    ],
+    "t": "argininosuccinate\nsynthetase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     90,
+     312,
+     256,
+     344
+    ],
+    "t": "carbamoyl phosphate synthetase I\n(key enzyme; activated by\nN-acetylglutamate)",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 10
+   },
+   {
+    "box": [
+     445,
+     322,
+     597,
+     335
+    ],
+    "t": "returns to the mitochondrion",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     25,
+     364,
+     143,
+     377
+    ],
+    "t": "Carbamoyl phosphate",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     194,
+     364,
+     252,
+     377
+    ],
+    "t": "Ornithine",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     129,
+     398,
+     228,
+     419
+    ],
+    "t": "ornithine carbamoyl-\ntransferase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     192,
+     440,
+     254,
+     452
+    ],
+    "t": "Citrulline",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
+ },
+ "p141_27.webp": {
+  "items": [
+   {
+    "box": [
+     463,
+     26,
+     560,
+     41
+    ],
+    "t": "Phenylalanine",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     406,
+     70,
+     584,
+     97
+    ],
+    "t": "phenylalanine hydroxylase (BH₄)\n✖ PHENYLKETONURIA",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 11
+   },
+   {
+    "box": [
+     590,
+     70,
+     726,
+     99
+    ],
+    "t": "transamination\n(increased in PKU)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     524,
+     120,
+     704,
+     153
+    ],
+    "t": "Phenylpyruvate, phenyllactate,\nphenylacetate (in urine)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     373,
+     128,
+     445,
+     143
+    ],
+    "t": "Tyrosine",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     281,
+     174,
+     408,
+     201
+    ],
+    "t": "tyrosine hydroxylase /\ntyrosinase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     413,
+     180,
+     523,
+     196
+    ],
+    "t": "thyroid gland",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     560,
+     174,
+     687,
+     203
+    ],
+    "t": "transamination\n✖ tyrosinemia type II",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 11
+   },
+   {
+    "box": [
+     194,
+     230,
+     261,
+     245
+    ],
+    "t": "DOPA",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     345,
+     229,
+     472,
+     246
+    ],
+    "t": "Thyroxine (T₃, T₄)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     523,
+     229,
+     689,
+     247
+    ],
+    "t": "p-Hydroxyphenylpyruvate",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     278,
+     274,
+     359,
+     300
+    ],
+    "t": "tyrosinase\n✖ ALBINISM",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 11
+   },
+   {
+    "box": [
+     609,
+     280,
+     734,
+     296
+    ],
+    "t": "hydroxylase (vit. C)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     25,
+     323,
+     204,
+     370
+    ],
+    "t": "Catecholamines\n(dopamine, norepinephrine,\nepinephrine)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     277,
+     339,
+     361,
+     354
+    ],
+    "t": "Melanin",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     522,
+     339,
+     689,
+     357
+    ],
+    "t": "Homogentisic acid",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     609,
+     393,
+     756,
+     419
+    ],
+    "t": "homogentisate oxidase\n✖ ALKAPTONURIA",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 11
+   },
+   {
+    "box": [
+     509,
+     448,
+     703,
+     463
+    ],
+    "t": "Fumarate + acetoacetate",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p148_28.webp": {
+  "items": [
+   {
+    "box": [
+     35,
+     28,
+     236,
+     72
+    ],
+    "t": "Ribose 5-phosphate\n(pentose phosphate pathway)",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     142,
+     102,
+     273,
+     119
+    ],
+    "t": "PRPP synthetase",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     97,
+     160,
+     175,
+     179
+    ],
+    "t": "PRPP",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     142,
+     220,
+     421,
+     258
+    ],
+    "t": "amidophosphoribosyltransferase\n(key enzyme; inhibited by AMP, GMP, IMP)",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 16
+   },
+   {
+    "box": [
+     39,
+     298,
+     231,
+     317
+    ],
+    "t": "5-Phosphoribosylamine",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     294,
+     287,
+     724,
+     330
+    ],
+    "t": "Salvage pathway: hypoxanthine, guanine + PRPP\n→ IMP, GMP (HGPRT); adenine → AMP (APRT)",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     250,
+     361,
+     486,
+     399
+    ],
+    "t": "9 reactions: glycine, glutamine,\naspartate, CO₂, 2 formyl-THF",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     222,
+     429,
+     423,
+     471
+    ],
+    "t": "IMP\n(inosine monophosphate)",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     267,
+     502,
+     389,
+     522
+    ],
+    "t": "aspartate, GTP",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     409,
+     502,
+     530,
+     522
+    ],
+    "t": "glutamine, ATP",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     98,
+     560,
+     293,
+     578
+    ],
+    "t": "AMP → ADP → ATP",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     350,
+     560,
+     549,
+     579
+    ],
+    "t": "GMP → GDP → GTP",
+    "f": "dv",
+    "smax": 19
+   }
+  ]
+ },
+ "p149_29.webp": {
+  "items": [
+   {
+    "box": [
+     22,
+     27,
+     228,
+     43
+    ],
+    "t": "AMP → adenosine → inosine",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     130,
+     73,
+     327,
+     103
+    ],
+    "t": "adenosine deaminase;\npurine nucleoside phosphorylase",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     501,
+     125,
+     734,
+     160
+    ],
+    "t": "Allopurinol, febuxostat\n(xanthine oxidase inhibitors)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     71,
+     133,
+     180,
+     152
+    ],
+    "t": "Hypoxanthine",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     245,
+     134,
+     454,
+     152
+    ],
+    "t": "GMP → guanosine → guanine",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     231,
+     182,
+     346,
+     196
+    ],
+    "t": "xanthine oxidase",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 12
+   },
+   {
+    "box": [
+     353,
+     184,
+     415,
+     198
+    ],
+    "t": "guanase",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     310,
+     226,
+     389,
+     242
+    ],
+    "t": "Xanthine",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     354,
+     272,
+     466,
+     286
+    ],
+    "t": "xanthine oxidase",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 12
+   },
+   {
+    "box": [
+     290,
+     311,
+     410,
+     345
+    ],
+    "t": "Uric acid\n(urate) → urine",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p157_30.webp": {
+  "items": [
+   {
+    "box": [
+     58,
+     19,
+     128,
+     34
+    ],
+    "t": "Glucose",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     311,
+     19,
+     415,
+     32
+    ],
+    "t": "Amino acids",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     626,
+     19,
+     724,
+     34
+    ],
+    "t": "Fatty acids",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     94,
+     53,
+     134,
+     67
+    ],
+    "t": "glycolysis",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     158,
+     54,
+     247,
+     67
+    ],
+    "t": "gluconeogenesis",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 10
+   },
+   {
+    "box": [
+     258,
+     53,
+     319,
+     67
+    ],
+    "t": "glucogenic AA",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     34,
+     86,
+     135,
+     99
+    ],
+    "t": "Glycerol → DHAP",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     211,
+     86,
+     270,
+     99
+    ],
+    "t": "Pyruvate",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     399,
+     87,
+     461,
+     100
+    ],
+    "t": "ketogenic AA",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     473,
+     86,
+     574,
+     101
+    ],
+    "t": "NH₃ → urea",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     625,
+     86,
+     694,
+     100
+    ],
+    "t": "β-oxidation",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     699,
+     85,
+     754,
+     100
+    ],
+    "t": "lipogenesis",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     34,
+     120,
+     126,
+     143
+    ],
+    "t": "oxaloacetate →\ngluconeogenesis",
+    "f": "dv",
+    "c": "#4a7a24",
+    "smax": 10
+   },
+   {
+    "box": [
+     246,
+     120,
+     306,
+     143
+    ],
+    "t": "PDH\n(irreversible)",
+    "f": "dv",
+    "c": "#b71c1c",
+    "smax": 10
+   },
+   {
+    "box": [
+     329,
+     125,
+     392,
+     138
+    ],
+    "t": "glucogenic AA",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     405,
+     162,
+     487,
+     175
+    ],
+    "t": "Acetyl-CoA",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     229,
+     216,
+     358,
+     253
+    ],
+    "t": "Krebs cycle\n(oxaloacetate, α-KG,\nsuccinyl-CoA, fumarate)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     391,
+     221,
+     501,
+     248
+    ],
+    "t": "Ketone bodies\n(liver)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     546,
+     227,
+     622,
+     240
+    ],
+    "t": "Cholesterol",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
+ },
+ "p160_31.webp": {
+  "items": [
+   {
+    "box": [
+     8,
+     44,
+     31,
+     345
+    ],
+    "t": "Share of energy source, relative %",
+    "f": "dv",
+    "rot": 90,
+    "smax": 17
+   },
+   {
+    "box": [
+     59,
+     381,
+     96,
+     398
+    ],
+    "t": "1 h",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     192,
+     381,
+     223,
+     398
+    ],
+    "t": "4 h",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     316,
+     381,
+     358,
+     398
+    ],
+    "t": "16 h",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     415,
+     381,
+     466,
+     398
+    ],
+    "t": "2 d",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     501,
+     381,
+     552,
+     398
+    ],
+    "t": "5 d",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     561,
+     381,
+     623,
+     398
+    ],
+    "t": "10 d",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     690,
+     381,
+     753,
+     398
+    ],
+    "t": "40 d",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     113,
+     403,
+     689,
+     424
+    ],
+    "t": "Time after a meal (h — hours, d — days; logarithmic scale)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     168,
+     456,
+     380,
+     475
+    ],
+    "t": "Glucose from food",
+    "f": "dv",
+    "a": "l",
+    "smax": 16
+   },
+   {
+    "box": [
+     437,
+     456,
+     576,
+     475
+    ],
+    "t": "Gluconeogenesis",
+    "f": "dv",
+    "a": "l",
+    "smax": 16
+   },
+   {
+    "box": [
+     165,
+     479,
+     287,
+     498
+    ],
+    "t": "Liver glycogen",
+    "f": "dv",
+    "a": "l",
+    "smax": 16
+   },
+   {
+    "box": [
+     437,
+     479,
+     696,
+     498
+    ],
+    "t": "Ketone bodies (for the brain)",
+    "f": "dv",
+    "a": "l",
+    "smax": 16
+   }
+  ]
+ },
+ "p169_32.webp": {
+  "items": [
+   {
+    "box": [
+     28,
+     24,
+     335,
+     61
+    ],
+    "t": "Origin of replication (ori)\n— ORC proteins bind",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     386,
+     24,
+     732,
+     61
+    ],
+    "t": "Topoisomerase (gyrase) — relieves\nsupercoiling",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     157,
+     112,
+     582,
+     149
+    ],
+    "t": "Helicase — separates the strands (ATP)\nSSB proteins — stabilize single-stranded DNA",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     189,
+     207,
+     551,
+     227
+    ],
+    "t": "Primase — RNA primer (≈ 10 nucleotides)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     120,
+     285,
+     324,
+     322
+    ],
+    "t": "Leading strand: continuous\nsynthesis 5'→3' (DNA pol ε)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     377,
+     285,
+     657,
+     322
+    ],
+    "t": "Lagging strand: Okazaki\nfragments (DNA pol α, δ)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     317,
+     373,
+     691,
+     410
+    ],
+    "t": "Primer removal (RNase H, FEN1)\ngap filling (DNA pol δ)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     226,
+     468,
+     512,
+     488
+    ],
+    "t": "DNA ligase — joins the fragments",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     214,
+     546,
+     523,
+     583
+    ],
+    "t": "Chromosome ends: telomerase\n(reverse transcriptase, RNA template)",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p171_33.webp": {
+  "items": [
+   {
+    "box": [
+     164,
+     31,
+     596,
+     51
+    ],
+    "t": "Gene: promoter (TATA box) — exons and introns",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     187,
+     111,
+     572,
+     149
+    ],
+    "t": "General transcription factors (TFIID...)\n+ RNA polymerase II → initiation complex",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     201,
+     208,
+     558,
+     229
+    ],
+    "t": "Primary transcript (pre-mRNA, hnRNA)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     48,
+     288,
+     208,
+     327
+    ],
+    "t": "5' cap\n(7-methylguanosine)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     282,
+     288,
+     477,
+     327
+    ],
+    "t": "Splicing: introns\nare removed (spliceosome)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     538,
+     288,
+     724,
+     327
+    ],
+    "t": "3' poly(A) tail\n(≈ 200 A)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     217,
+     380,
+     540,
+     418
+    ],
+    "t": "Mature mRNA → through nuclear pores\nto the cytoplasm → translation",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p179_34.webp": {
+  "items": [
+   {
+    "box": [
+     108,
+     32,
+     599,
+     79
+    ],
+    "t": "Amino acid activation (cytosol):\naminoacyl-tRNA synthetase, ATP → AMP + PPᵢ",
+    "f": "dv",
+    "smax": 21
+   },
+   {
+    "box": [
+     76,
+     152,
+     642,
+     203
+    ],
+    "t": "Initiation: 40S + Met-tRNAi + eIF + GTP\nbinds the cap and finds AUG (scanning) → 80S",
+    "f": "dv",
+    "smax": 21
+   },
+   {
+    "box": [
+     108,
+     273,
+     598,
+     369
+    ],
+    "t": "Elongation (for each codon):\n1) aminoacyl-tRNA to the A site (eEF1, GTP)\n2) peptidyl transferase (28S rRNA — ribozyme)\n3) translocation (eEF2, GTP)",
+    "f": "dv",
+    "smax": 21
+   },
+   {
+    "box": [
+     660,
+     311,
+     747,
+     329
+    ],
+    "t": "n times",
+    "f": "dv",
+    "smax": 21
+   },
+   {
+    "box": [
+     108,
+     440,
+     600,
+     490
+    ],
+    "t": "Termination: UAA, UAG, UGA stop codons\nrelease factors (eRF), GTP",
+    "f": "dv",
+    "smax": 21
+   },
+   {
+    "box": [
+     42,
+     561,
+     668,
+     611
+    ],
+    "t": "Post-translational modification: folding (chaperones),\nproteolysis, phosphorylation, glycosylation, hydroxylation...",
+    "f": "dv",
+    "smax": 21
+   }
+  ]
+ },
+ "p182_35.webp": {
+  "items": [
+   {
+    "box": [
+     135,
+     38,
+     232,
+     56
+    ],
+    "t": "(regulator)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     253,
+     38,
+     342,
+     56
+    ],
+    "t": "(promoter)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     364,
+     38,
+     448,
+     56
+    ],
+    "t": "(operator)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     471,
+     38,
+     601,
+     56
+    ],
+    "t": "(structural genes)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     372,
+     78,
+     451,
+     93
+    ],
+    "t": "lacI expression",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     303,
+     122,
+     435,
+     141
+    ],
+    "t": "Repressor protein",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     475,
+     168,
+     557,
+     196
+    ],
+    "t": "inactive\nwith inducer",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     27,
+     220,
+     335,
+     270
+    ],
+    "t": "Lactose ABSENT: repressor binds\nthe operator → RNA polymerase cannot pass\n→ genes are off",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     384,
+     220,
+     732,
+     270
+    ],
+    "t": "Lactose PRESENT: allolactose removes the repressor\nfrom the operator → transcription\n(enhanced by cAMP–CAP when glucose is low)",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p189_36.webp": {
+  "items": [
+   {
+    "box": [
+     284,
+     21,
+     413,
+     34
+    ],
+    "t": "DNA damage",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     19,
+     78,
+     196,
+     117
+    ],
+    "t": "Base modification\n(deamination, oxidation,\nalkylation)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     238,
+     78,
+     360,
+     118
+    ],
+    "t": "Pyrimidine dimers,\nbulky adducts\n(UV, benzo[a]pyrene)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     405,
+     78,
+     534,
+     117
+    ],
+    "t": "Mismatched\nbases (replication\nerrors)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     582,
+     78,
+     713,
+     117
+    ],
+    "t": "Double-strand\nbreaks\n(ionizing radiation)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     33,
+     155,
+     182,
+     195
+    ],
+    "t": "Base excision repair\n(BER): DNA glycosylase,\nAP endonuclease, pol β",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     229,
+     155,
+     356,
+     195
+    ],
+    "t": "Nucleotide excision\nrepair (NER):\nXP proteins",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     418,
+     155,
+     521,
+     194
+    ],
+    "t": "Mismatch\nrepair (MMR):\nMSH2, MLH1",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     572,
+     155,
+     740,
+     195
+    ],
+    "t": "Homologous recombination\n(BRCA1/2) or\nend joining (NHEJ)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     109,
+     214,
+     156,
+     226
+    ],
+    "t": "defect",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     293,
+     214,
+     339,
+     226
+    ],
+    "t": "defect",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     472,
+     214,
+     518,
+     225
+    ],
+    "t": "defect",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     658,
+     214,
+     704,
+     226
+    ],
+    "t": "defect",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     44,
+     242,
+     172,
+     270
+    ],
+    "t": "MUTYH-associated\npolyposis",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     220,
+     248,
+     361,
+     264
+    ],
+    "t": "Xeroderma pigmentosum",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     396,
+     242,
+     545,
+     270
+    ],
+    "t": "Lynch syndrome\n(colorectal cancer)",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     596,
+     242,
+     717,
+     268
+    ],
+    "t": "Breast/ovarian\ncancer",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
+ },
+ "p192_37.webp": {
+  "items": [
+   {
+    "box": [
+     24,
+     20,
+     268,
+     52
+    ],
+    "t": "Extrinsic pathway: Fas ligand, TNF-α\n→ death receptors (Fas, TNFR1)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     314,
+     20,
+     631,
+     52
+    ],
+    "t": "Intrinsic (mitochondrial) pathway: DNA damage,\noxidative stress, lack of growth factors",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     112,
+     102,
+     277,
+     120
+    ],
+    "t": "Caspase-8 (initiator)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     321,
+     102,
+     526,
+     120
+    ],
+    "t": "p53 → Bax, Bak ↑ (Bcl-2 ↓)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     575,
+     102,
+     731,
+     120
+    ],
+    "t": "Bcl-2 (antiapoptotic)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     263,
+     182,
+     524,
+     214
+    ],
+    "t": "Release of cytochrome c from mitochondria\n→ apoptosome (Apaf-1)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     274,
+     264,
+     439,
+     282
+    ],
+    "t": "Caspase-9 (initiator)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     119,
+     337,
+     316,
+     354
+    ],
+    "t": "Effector caspases 3, 6, 7",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     35,
+     404,
+     399,
+     437
+    ],
+    "t": "Chromatin condensation, DNA fragmentation,\napoptotic bodies → phagocytosis (without inflammation)",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p200_38.webp": {
+  "items": [
+   {
+    "box": [
+     287,
+     20,
+     498,
+     52
+    ],
+    "t": "Benzo[a]pyrene (tobacco smoke)\n— procarcinogen",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     300,
+     114,
+     487,
+     131
+    ],
+    "t": "Benzo[a]pyrene-7,8-epoxide",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     396,
+     157,
+     507,
+     173
+    ],
+    "t": "epoxide hydrolase",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     332,
+     198,
+     454,
+     216
+    ],
+    "t": "7,8-Dihydrodiol",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     288,
+     277,
+     497,
+     310
+    ],
+    "t": "7,8-Dihydrodiol-9,10-epoxide\n(ultimate carcinogen)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     24,
+     354,
+     384,
+     387
+    ],
+    "t": "Adduct with DNA guanines → TP53, KRAS\nmutations (G→T transversion) → lung cancer",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     428,
+     354,
+     735,
+     387
+    ],
+    "t": "Conjugation with glutathione S-transferase\n→ excretion (detoxification)",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ }
+}

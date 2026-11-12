@@ -4,13 +4,16 @@ Spetsifikatsiya: tools/i18n/books/<id>/img_en.json
   {"<nom>.webp": {"also": ["<dublikat>.webp"], "items": [
       {"box": [x0, y0, x1, y1], "t": "English text", ...ixtiyoriy...}, ...]}}
 Bandning ixtiyoriy maydonlari:
-  "f":  shrift — serif | serifb | serifi | sans | sansb   (standart: serif)
+  "f":  shrift — serif | serifb | serifi | sans | sansb | dv | dvb | dvi | dvc (DejaVu)   (standart: serif)
   "s":  shrift o'lchami px (bo'lmasa qutiga sig'adigan eng kattasi tanlanadi)
+  "smax": avtomatik tanlanadigan o'lchamning yuqori chegarasi px (asl yozuv o'lchamidan oshmasin)
   "a":  l | c | r — gorizontal tekislash (standart: c)
   "bg": "#rrggbb" | "ring" (quti cheti medianasi) | "none" (standart: qutidagi eng ko'p rang — fon)
   "c":  matn rangi (standart: qutidagi eng to'q piksellar rangi)
   "rot": 90 | 270 — vertikal yozuv (pastdan yuqoriga = 90)
   "pad": ichki chekinish px (standart 1)
+  "keep": ["#rrggbb", ...] — shu ranglarga yaqin piksellar saqlanadi (yozuv ustidan o'tgan grafik chizig'i)
+  "lines": [[x0, y0, x1, y1, "#rrggbb", qalinlik], ...] — fon to'ldirilgandan keyin qayta chiziladigan chiziqlar
   "ell": true — quti o'rniga unga ichki chizilgan ellips to'ldiriladi (doira ichidagi yozuv)
   "cbox"+"ang": qiya yozuv (markaz, eni, bo'yi, burchak)
 Natija: data/en/img/<id>/<nom>.webp (asl o'lcham bilan). Ilova (js/app.js) va tools/book_pdf.py
@@ -26,6 +29,10 @@ FONTS = {
     "serifi": "/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf",
     "sans": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
     "sansb": "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "dv": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",          # matplotlib/graphviz diagrammalari
+    "dvb": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "dvi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
+    "dvc": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf",
 }
 
 
@@ -97,8 +104,8 @@ def wrap(draw, text, font, width):
     return lines
 
 
-def layout(draw, text, fname, w, h, size=None):
-    sizes = [size] if size else range(max(6, int(h)), 5, -1)
+def layout(draw, text, fname, w, h, size=None, smax=None):
+    sizes = [size] if size else range(max(6, int(min(h, smax or h))), 5, -1)
     for s in sizes:
         font = ImageFont.truetype(FONTS[fname], s)
         lines = wrap(draw, text, font, w) if not size else wrap(draw, text, font, w if "\n" not in text else 10 ** 6)
@@ -172,13 +179,23 @@ def put(im, it):
         else:
             ImageDraw.Draw(m).rectangle((x0, y0, x1, y1), fill=255)
         m = m.filter(ImageFilter.GaussianBlur(1.2))
+        if it.get("keep"):   # shu ranglarga yaqin piksellar (grafik chiziqlari) o'chirilmaydi
+            ks = [hexrgb(k) for k in it["keep"]]
+            mp, px = m.load(), im.load()
+            for yy in range(max(0, y0 - 3), min(im.size[1], y1 + 4)):
+                for xx in range(max(0, x0 - 3), min(im.size[0], x1 + 4)):
+                    p = px[xx, yy]
+                    if any(sum((p[i] - k[i]) ** 2 for i in range(3)) < 70 ** 2 for k in ks):
+                        mp[xx, yy] = 0
         im.paste(Image.new("RGB", im.size, fill), (0, 0), m)
+    for ln in it.get("lines", []):   # o'chib ketgan grafik chizig'ini qayta chizish: [x0, y0, x1, y1, "#rang", qalinlik]
+        ImageDraw.Draw(im).line(ln[:4], fill=hexrgb(ln[4]), width=ln[5])
     bw, bh = x1 - x0 + 1, y1 - y0 + 1
     if rot in (90, 270):
         bw, bh = bh, bw
     layer = Image.new("RGBA", (bw, bh), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
-    font, lines, lh = layout(d, it["t"], it.get("f", "serif"), bw - 2 * pad, bh - 2 * pad, it.get("s"))
+    font, lines, lh = layout(d, it["t"], it.get("f", "serif"), bw - 2 * pad, bh - 2 * pad, it.get("s"), it.get("smax"))
     total = len(lines) * lh
     y = (bh - total) / 2 + (lh - font.size) * 0.3
     for l in lines:
