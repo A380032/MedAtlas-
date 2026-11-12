@@ -5938,5 +5938,126 @@
     "smax": 15
    }
   ]
+ },
+ "p189_68.webp": {
+  "items": [
+   {
+    "box": [
+     200,
+     21,
+     345,
+     39
+    ],
+    "t": "INHALATION",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     490,
+     21,
+     650,
+     39
+    ],
+    "t": "EXHALATION",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     9,
+     40,
+     51,
+     180
+    ],
+    "t": "Volume\nchange, l",
+    "f": "dv",
+    "rot": 90,
+    "smax": 15
+   },
+   {
+    "box": [
+     9,
+     215,
+     51,
+     392
+    ],
+    "t": "Alveolar\npressure, cm H₂O",
+    "f": "dv",
+    "rot": 90,
+    "smax": 15
+   },
+   {
+    "box": [
+     9,
+     428,
+     51,
+     600
+    ],
+    "t": "Intrapleural\npressure, cm H₂O",
+    "f": "dv",
+    "rot": 90,
+    "smax": 15
+   },
+   {
+    "box": [
+     380,
+     621,
+     450,
+     641
+    ],
+    "t": "Time, s",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p191_69.webp": {
+  "items": [
+   {
+    "box": [
+     296,
+     7,
+     458,
+     26
+    ],
+    "t": "alveolar lumen",
+    "f": "sansb",
+    "smax": 15
+   },
+   {
+    "box": [
+     28,
+     243,
+     150,
+     281
+    ],
+    "t": "venous\nblood flow",
+    "f": "sansb",
+    "smax": 15
+   },
+   {
+    "box": [
+     596,
+     241,
+     724,
+     281
+    ],
+    "t": "arterial\nblood flow",
+    "f": "sansb",
+    "smax": 15
+   },
+   {
+    "box": [
+     346,
+     506,
+     412,
+     525
+    ],
+    "t": "cells",
+    "f": "sansb",
+    "smax": 15
+   }
+  ]
  }
 }
