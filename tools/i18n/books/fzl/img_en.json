@@ -1,0 +1,949 @@
+{
+ "p13_1.webp": {
+  "items": [
+   {
+    "box": [
+     17,
+     15,
+     131,
+     38
+    ],
+    "t": "Stimulus\n(internal change)",
+    "f": "dv",
+    "s": 10
+   },
+   {
+    "box": [
+     197,
+     14,
+     256,
+     37
+    ],
+    "t": "Receptor\n(sensor)",
+    "f": "dv",
+    "s": 10
+   },
+   {
+    "box": [
+     286,
+     14,
+     407,
+     38
+    ],
+    "t": "Control center\n(CNS, endocrine glands)",
+    "f": "dv",
+    "s": 9
+   },
+   {
+    "box": [
+     414,
+     6,
+     486,
+     25
+    ],
+    "t": "nerve impulse\nor hormone",
+    "f": "dv",
+    "s": 8
+   },
+   {
+    "box": [
+     489,
+     14,
+     566,
+     38
+    ],
+    "t": "Effector\n(muscle, gland)",
+    "f": "dv",
+    "s": 9
+   },
+   {
+    "box": [
+     598,
+     13,
+     742,
+     38
+    ],
+    "t": "Result:\nvalue returns to normal",
+    "f": "dv",
+    "s": 10
+   },
+   {
+    "box": [
+     500,
+     47,
+     557,
+     67
+    ],
+    "t": "feedback\n(negative)",
+    "f": "dv",
+    "s": 9,
+    "c": "#a94442"
+   }
+  ]
+ },
+ "p15_2.webp": {
+  "items": [
+   {
+    "box": [
+     30,
+     356,
+     228,
+     394
+    ],
+    "t": "Voltage-gated\nNa⁺ channel",
+    "f": "dv",
+    "s": 13
+   },
+   {
+    "box": [
+     255,
+     354,
+     412,
+     399
+    ],
+    "t": "Na⁺/K⁺ pump\n(Na⁺/K⁺-ATPase)",
+    "f": "dv",
+    "s": 13
+   },
+   {
+    "box": [
+     438,
+     356,
+     548,
+     378
+    ],
+    "t": "Leak channel",
+    "f": "dv",
+    "s": 13
+   },
+   {
+    "box": [
+     568,
+     356,
+     759,
+     394
+    ],
+    "t": "Voltage-gated\nK⁺ channel",
+    "f": "dv",
+    "s": 13
+   }
+  ]
+ },
+ "p17_3.webp": {
+  "items": [
+   {
+    "box": [
+     11,
+     8,
+     109,
+     37
+    ],
+    "t": "extracellular\nspace",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     613,
+     78,
+     709,
+     105
+    ],
+    "t": "organic\nanions",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     79,
+     118,
+     105,
+     145
+    ],
+    "t": "mV",
+    "f": "sansb",
+    "bg": "ring",
+    "smax": 16
+   },
+   {
+    "box": [
+     112,
+     245,
+     190,
+     274
+    ],
+    "t": "sodium\nchannel",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     475,
+     245,
+     544,
+     272
+    ],
+    "t": "potassium\nchannel",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     577,
+     245,
+     669,
+     274
+    ],
+    "t": "Cl⁻ transport\nchannel",
+    "f": "dv",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     11,
+     291,
+     95,
+     306
+    ],
+    "t": "cytoplasm",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     86,
+     324,
+     164,
+     363
+    ],
+    "t": "normally\nclosed",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     484,
+     328,
+     558,
+     364
+    ],
+    "t": "normally\nopen",
+    "f": "sans",
+    "smax": 12,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     283,
+     337,
+     398,
+     352
+    ],
+    "t": "Na⁺/K⁺-ATPase",
+    "f": "dvi",
+    "smax": 13
+   },
+   {
+    "box": [
+     10,
+     368,
+     183,
+     387
+    ],
+    "t": "A. Resting potential",
+    "f": "sansb",
+    "smax": 15
+   },
+   {
+    "box": [
+     155,
+     433,
+     299,
+     450
+    ],
+    "t": "action potential",
+    "f": "sans",
+    "smax": 13
+   },
+   {
+    "box": [
+     192,
+     478,
+     302,
+     492
+    ],
+    "t": "depolarization",
+    "f": "sans",
+    "smax": 13
+   },
+   {
+    "box": [
+     171,
+     542,
+     291,
+     556
+    ],
+    "t": "resting potential",
+    "f": "sans",
+    "smax": 13
+   },
+   {
+    "box": [
+     170,
+     584,
+     304,
+     599
+    ],
+    "t": "hyperpolarization",
+    "f": "sans",
+    "smax": 13
+   },
+   {
+    "box": [
+     180,
+     619,
+     255,
+     637
+    ],
+    "t": "Time, ms",
+    "f": "sansb",
+    "smax": 13
+   },
+   {
+    "box": [
+     551,
+     621,
+     626,
+     639
+    ],
+    "t": "Time, ms",
+    "f": "sansb",
+    "smax": 13
+   },
+   {
+    "box": [
+     53,
+     400,
+     68,
+     599
+    ],
+    "t": "Membrane potential, mV",
+    "f": "sans",
+    "rot": 90,
+    "smax": 12
+   },
+   {
+    "box": [
+     434,
+     429,
+     449,
+     593
+    ],
+    "t": "Ion conductance",
+    "f": "sans",
+    "rot": 90,
+    "smax": 12
+   },
+   {
+    "box": [
+     324,
+     990,
+     417,
+     1019
+    ],
+    "t": "membrane charge\nreversal",
+    "f": "sans",
+    "smax": 12,
+    "a": "l"
+   },
+   {
+    "box": [
+     7,
+     1040,
+     212,
+     1062
+    ],
+    "t": "B. Action potential",
+    "f": "sansb",
+    "smax": 15
+   }
+  ]
+ },
+ "p17_4.webp": {
+  "items": [
+   {
+    "box": [
+     8,
+     88,
+     29,
+     314
+    ],
+    "t": "Membrane potential, mV",
+    "f": "dv",
+    "rot": 90,
+    "smax": 15
+   },
+   {
+    "box": [
+     362,
+     21,
+     436,
+     54
+    ],
+    "t": "overshoot\n(+30 mV)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     107,
+     61,
+     256,
+     95
+    ],
+    "t": "2 — depolarization\n(Na⁺ enters)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14,
+    "keep": [
+     "#3174ae"
+    ]
+   },
+   {
+    "box": [
+     428,
+     100,
+     574,
+     135
+    ],
+    "t": "3 — repolarization\n(K⁺ exits)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14,
+    "keep": [
+     "#3174ae"
+    ],
+    "lines": [
+     [
+      428,
+      130,
+      574,
+      130,
+      "#a0a0a0",
+      1
+     ]
+    ]
+   },
+   {
+    "box": [
+     120,
+     174,
+     290,
+     209
+    ],
+    "t": "1 — local response\n(slow depolarization)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14,
+    "keep": [
+     "#3174ae"
+    ]
+   },
+   {
+    "box": [
+     93,
+     253,
+     381,
+     271
+    ],
+    "t": "critical level of depolarization (−55 mV)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14,
+    "c": "#c0392b",
+    "keep": [
+     "#3174ae"
+    ]
+   },
+   {
+    "box": [
+     482,
+     292,
+     680,
+     310
+    ],
+    "t": "resting potential (−70 mV)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     465,
+     366,
+     662,
+     387
+    ],
+    "t": "4 — trace hyperpolarization",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     376,
+     422,
+     456,
+     444
+    ],
+    "t": "Time, ms",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p26_5.webp": {
+  "items": [
+   {
+    "box": [
+     136,
+     8,
+     686,
+     29
+    ],
+    "t": "Whole-muscle contraction as stimulus strength increases (law of strength)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     7,
+     95,
+     29,
+     312
+    ],
+    "t": "Contraction amplitude, %",
+    "f": "dv",
+    "rot": 90,
+    "smax": 15
+   },
+   {
+    "box": [
+     98,
+     382,
+     164,
+     416
+    ],
+    "t": "sub-\nthreshold",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     190,
+     381,
+     259,
+     400
+    ],
+    "t": "threshold",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     272,
+     382,
+     364,
+     417
+    ],
+    "t": "supra-\nthreshold",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     373,
+     382,
+     447,
+     415
+    ],
+    "t": "sub-\nmaximal",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     466,
+     381,
+     542,
+     398
+    ],
+    "t": "maximal",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     558,
+     382,
+     634,
+     415
+    ],
+    "t": "supra-\nmaximal",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     658,
+     382,
+     720,
+     417
+    ],
+    "t": "excessive",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p27_6.webp": {
+  "items": [
+   {
+    "box": [
+     205,
+     109,
+     542,
+     149
+    ],
+    "t": "Any strength–duration combination\nabove this line causes excitation",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     7,
+     18,
+     33,
+     442
+    ],
+    "t": "Stimulus strength (threshold), in rheobase units",
+    "f": "dv",
+    "rot": 90,
+    "smax": 16
+   },
+   {
+    "box": [
+     150,
+     264,
+     240,
+     283
+    ],
+    "t": "2 rheobase",
+    "f": "dv",
+    "a": "l",
+    "smax": 16
+   },
+   {
+    "box": [
+     660,
+     376,
+     734,
+     392
+    ],
+    "t": "rheobase",
+    "f": "dv",
+    "a": "r",
+    "smax": 16
+   },
+   {
+    "box": [
+     213,
+     409,
+     311,
+     431
+    ],
+    "t": "chronaxie",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     572,
+     409,
+     752,
+     431
+    ],
+    "t": "utilization time",
+    "f": "dv",
+    "a": "l",
+    "smax": 17
+   },
+   {
+    "box": [
+     288,
+     493,
+     514,
+     517
+    ],
+    "t": "Stimulus duration, ms",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p28_7.webp": {
+  "items": [
+   {
+    "box": [
+     173,
+     88,
+     256,
+     109
+    ],
+    "t": "excitation",
+    "f": "dv",
+    "a": "l",
+    "smax": 15
+   },
+   {
+    "box": [
+     8,
+     140,
+     32,
+     262
+    ],
+    "t": "Current strength",
+    "f": "dv",
+    "rot": 90,
+    "smax": 16
+   },
+   {
+    "box": [
+     554,
+     209,
+     716,
+     229
+    ],
+    "t": "initial threshold",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     322,
+     256,
+     604,
+     275
+    ],
+    "t": "steeply rising current — response",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     322,
+     276,
+     604,
+     295
+    ],
+    "t": "slowly rising current — no response",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     322,
+     296,
+     604,
+     316
+    ],
+    "t": "threshold rise (accommodation)",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     366,
+     405,
+     454,
+     427
+    ],
+    "t": "Time, ms",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p29_8.webp": {
+  "items": [
+   {
+    "box": [
+     106,
+     61,
+     268,
+     126
+    ],
+    "t": "CATHODE (−):\ncatelectrotonus —\ndepolarization,\nexcitability increases",
+    "f": "dv",
+    "a": "l",
+    "smax": 13,
+    "keep": [
+     "#3174ae"
+    ]
+   },
+   {
+    "box": [
+     7,
+     52,
+     31,
+     280
+    ],
+    "t": "Membrane potential, mV",
+    "f": "dv",
+    "rot": 90,
+    "smax": 16
+   },
+   {
+    "box": [
+     655,
+     85,
+     690,
+     101
+    ],
+    "t": "CLD",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     572,
+     171,
+     751,
+     233
+    ],
+    "t": "ANODE (+):\nanelectrotonus —\nhyperpolarization,\nexcitability decreases",
+    "f": "dv",
+    "a": "l",
+    "smax": 13,
+    "keep": [
+     "#3174ae"
+    ]
+   },
+   {
+    "box": [
+     226,
+     319,
+     570,
+     340
+    ],
+    "t": "Distance along the nerve (circuit closed)",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p30_9.webp": {
+  "items": [
+   {
+    "box": [
+     155,
+     20,
+     281,
+     39
+    ],
+    "t": "action potential",
+    "f": "dv",
+    "a": "l",
+    "smax": 14
+   },
+   {
+    "box": [
+     8,
+     62,
+     31,
+     212
+    ],
+    "t": "Potential, mV",
+    "f": "dv",
+    "rot": 90,
+    "smax": 16
+   },
+   {
+    "box": [
+     249,
+     165,
+     389,
+     184
+    ],
+    "t": "trace depolarization",
+    "f": "dv",
+    "a": "l",
+    "smax": 14,
+    "bg": "ring"
+   },
+   {
+    "box": [
+     403,
+     225,
+     562,
+     242
+    ],
+    "t": "trace hyperpolarization",
+    "f": "dv",
+    "a": "l",
+    "smax": 14,
+    "keep": [
+     "#3174ae"
+    ]
+   },
+   {
+    "box": [
+     8,
+     248,
+     32,
+     555
+    ],
+    "t": "Excitability, % (norm = 100)",
+    "f": "dv",
+    "rot": 90,
+    "smax": 16
+   },
+   {
+    "box": [
+     439,
+     380,
+     735,
+     456
+    ],
+    "t": "1 — local response (excitability increased)\n2 — absolute refractoriness\n3 — relative refractoriness\n4 — supernormal period (exaltation)\n5 — subnormal period",
+    "f": "dv",
+    "a": "r",
+    "smax": 13,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     322,
+     551,
+     492,
+     572
+    ],
+    "t": "Time, ms (schematic)",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ }
+}
