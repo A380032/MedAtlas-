@@ -145,6 +145,13 @@ def join_sentences(bl, n):
             n += 1
             continue
         if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
+                and re.search(r"\s(va|yoki|hamda)\s*$", a["text"])):
+            # "... ikkinchi kesishuvi; IgG va" | "IgM kattalar darajasiga ..." — bog'lovchida uzilgan gap
+            a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
+            del bl[i + 1]
+            n += 1
+            continue
+        if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
                 and (not re.search(r"[.:;!?)»”\"*]\s*$", a["text"]) and re.match(r"[a-z‘’(]", bl[i + 1]["text"])
                      # "... **bo‘g‘im og‘riqlari**" | "(revmatizm), ..."
                      or re.search(r"[^.:;!?]\*\*\s*$", a["text"]) and re.match(r"\([a-z]", bl[i + 1]["text"])
@@ -330,6 +337,7 @@ TEXT = {
     "Atakstik": "Ataktik",
     "qisqargantimpanik": "qisqargan-timpanik",
     "mikrotsirkulyatorgematoma": "mikrotsirkulyator-gematoma",
+    "(Xbog‘langan,": "(X-bog‘langan,",
 }
 
 
