@@ -185,7 +185,7 @@ def put(im, it):
             for yy in range(max(0, y0 - 3), min(im.size[1], y1 + 4)):
                 for xx in range(max(0, x0 - 3), min(im.size[0], x1 + 4)):
                     p = px[xx, yy]
-                    if any(sum((p[i] - k[i]) ** 2 for i in range(3)) < 70 ** 2 for k in ks):
+                    if max(p) - min(p) > 40 and any(sum((p[i] - k[i]) ** 2 for i in range(3)) < 70 ** 2 for k in ks):
                         mp[xx, yy] = 0
         im.paste(Image.new("RGB", im.size, fill), (0, 0), m)
     for ln in it.get("lines", []):   # o'chib ketgan grafik chizig'ini qayta chizish: [x0, y0, x1, y1, "#rang", qalinlik]
