@@ -309,6 +309,7 @@ TEXT = {
     "Rahit": "Raxit",
     "Atakstik": "Ataktik",
     "qisqargantimpanik": "qisqargan-timpanik",
+    "mikrotsirkulyatorgematoma": "mikrotsirkulyator-gematoma",
 }
 
 
