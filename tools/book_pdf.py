@@ -172,8 +172,22 @@ def build(pages=None):
         ans = "; ".join(f"{i}-{'ABCDEFG'[q['answer']]}" for i, q in enumerate(tp.get("quiz", []), 1))
         rows.append(f'<p class="ans"><b>{esc(L["answers_row"].format(n=n))}</b> {ans}.</p>')
     body.append('<section class="page">' + h(2, L["answers"], "answers", "ch") + "".join(rows) + "</section>")
-    body.append('<section class="page">' + h(2, L["refs"], "refs", "ch") + '<ol class="refs">' +
-                "".join(f"<li>{inline(r)}</li>" for r in CFG["refs"]) + "</ol></section>")
+    # refs: satr yoki {"h": "guruh nomi"}; raqamlash guruhlar orasida davom etadi
+    groups, k = [], 0
+    for r in CFG["refs"]:
+        if isinstance(r, dict):
+            groups.append([r["h"], []])
+        else:
+            if not groups:
+                groups.append([None, []])
+            groups[-1][1].append(r)
+    refs_html = ""
+    for title, items in groups:
+        if title:
+            refs_html += f'<p class="refh"><b>{esc(title)}</b></p>'
+        refs_html += f'<ol class="refs" start="{k + 1}">' + "".join(f"<li>{inline(r)}</li>" for r in items) + "</ol>"
+        k += len(items)
+    body.append('<section class="page">' + h(2, L["refs"], "refs", "ch") + refs_html + "</section>")
 
     c = CFG["cover"]
     cover = (f'<section class="cover"><div class="ctop">{"".join(f"<div>{esc(x)}</div>" for x in c["top"])}</div>'

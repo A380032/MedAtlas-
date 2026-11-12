@@ -1,0 +1,150 @@
+{
+  "lang": "uz",
+  "out": "data/books/pfz.pdf",
+  "pdf_title": "Patologik fiziologiya: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Patologik fiziologiya — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/pfz/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "Normal va patologik fiziologiya kafedrasi fani bo‘yicha"
+    ],
+    "title": "PATOLOGIK FIZIOLOGIYA",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Patologik fiziologiya: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Patologik fiziologiya” fanining 2026–2027 o‘quv yili uchun tasdiqlangan kalendar-tematik rejasidagi (V–VI semestr) 27 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Unda umumiy nozologiya, etiologiya va patogenez, tipik patologik jarayonlar (qon aylanishining mahalliy buzilishlari, yallig‘lanish, allergiya, o‘smalar, gipoksiya), moddalar almashinuvi buzilishlari hamda qon, yurak-qon tomir, nafas, hazm, jigar, buyrak va endokrin tizimlar patofiziologiyasi yoritilgan.",
+    "Har bir bob mashg‘ulot maqsadi, nazariy qism (“Eslab qoling”, “Klinik ahamiyati”, “Yodlash usuli”, “Diqqat” bloklari bilan), tajriba (amaliy) qismi, amaliy ko‘nikmalar algoritmlari, nazorat savollari, 15 ta test topshirig‘i, 3 ta vaziyatli masala va tezkor takrorlash jadvalidan iborat. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma N.H. Abdullayev “Patologik fiziologiya” (2008), A.A. Haqberdiyev “Patologik fiziologiya”, R.Q. Azimov “Patofiziologiya” (2010) darsliklari asosida, rus tilidagi asosiy patofiziologiya darsliklari (V.V. Novitskiy, Ye.D. Goldberg; N.N. Zayko, Yu.V. Bits; A.V. Ataman) bilan to‘ldirilgan holda tayyorlangan. Rasmlar ushbu manbalardan olingan yoki ular asosida chizilgan va har birining tagida manbasi ko‘rsatilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi fakulteti 3-kurs talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Hurmatli talaba! Patologik fiziologiya (patofiziologiya) — kasal organizm hayot faoliyatini, kasalliklarning kelib chiqish sabablari, rivojlanish mexanizmlari va oqibatlarini o‘rganuvchi fan. U tibbiy-biologik fanlar (fiziologiya, biokimyo, gistologiya) bilan klinik fanlar orasidagi ko‘prik vazifasini bajaradi: “bemorda nima bo‘lyapti?” degan savolga javob beruvchi klinik fikrlash aynan shu fanda shakllanadi."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma kafedraning kalendar-tematik rejasidagi 27 ta amaliy mashg‘ulot mavzusiga mos tuzilgan. Har bir bob bir xil tartibda qurilgan:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Mashg‘ulot maqsadi** — mashg‘ulot oxirida nimani bilish va nimani bajara olish kerakligi;",
+        "**nazariy qism** — mavzuning asosiy tushunchalari, jadvallar, sxemalar va rasmlar;",
+        "**tajriba qismi** — mashg‘ulotda bajariladigan eksperimentlar va ularning tahlili;",
+        "**amaliy ko‘nikmalar** — qadamma-qadam algoritmlar;",
+        "**nazorat savollari, test topshiriqlari va vaziyatli masalalar** — o‘zini tekshirish uchun;",
+        "**tezkor takrorlash** — imtihon oldidan bir qarashda takrorlash jadvali."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Matn ichidagi rangli bloklar quyidagilarni bildiradi:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Eng muhim ta’riflar, raqamlar va tasniflar — albatta yodlash kerak."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Mavzuning klinik amaliyotdagi ahamiyati, bemor bilan bog‘liq misollar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yodlashni osonlashtiruvchi usullar va qisqartmalar."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Ko‘p uchraydigan xatolar, xavfli holatlar va darsliklar orasidagi tafovutlar."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Tajriba qismidagi hayvonlar ustidagi eksperimentlar kafedra amaliyotida qabul qilingan klassik modellardir; ular bioetika talablariga rioya qilgan holda, o‘qituvchi nazoratida o‘tkaziladi. Qo‘llanmadagi har bir mavzuni asosiy darslik bilan birga o‘qish tavsiya etiladi."
+    },
+    {
+      "type": "p",
+      "text": "Tuzuvchi"
+    }
+  ],
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savollar:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Qisqa ta’rif",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Foydalanilgan adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    {
+      "h": "Asosiy adabiyotlar"
+    },
+    "Abdullayev N.H. Patologik fiziologiya. Darslik. — Toshkent, 2008. — 480 b.",
+    "Haqberdiyev A.A. Patologik fiziologiya. Darslik. — Toshkent.",
+    "Azimov R.Q. Patofiziologiya. O‘quv qo‘llanma. — Toshkent, 2010.",
+    {
+      "h": "Qo‘shimcha adabiyotlar"
+    },
+    "Новицкий В.В., Гольдберг Е.Д., Уразова О.И. Патофизиология. Учебник: в 2 т. — М.: ГЭОТАР-Медиа, 2009.",
+    "Зайко Н.Н., Быць Ю.В. и др. Патологическая физиология. Учебник. — М.: МЕДпресс-информ, 2002.",
+    "Атаман А.В. Патологическая физиология в вопросах и ответах. — Киев, 2000.",
+    "Kumar V., Abbas A.K., Aster J.C. Robbins and Cotran Pathologic Basis of Disease. 9th ed. — Elsevier, 2015.",
+    "Hall J.E. Guyton and Hall Textbook of Medical Physiology. 13th ed. — Elsevier, 2016.",
+    "Jahon sog‘liqni saqlash tashkiloti. Kasalliklar va sog‘liq bilan bog‘liq muammolarning xalqaro statistik tasnifi, 11-qayta ko‘rib chiqish (KXT-11). — 2022."
+  ]
+}
