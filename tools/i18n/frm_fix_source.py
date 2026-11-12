@@ -209,6 +209,19 @@ def tables():
         bl[i]["title"] += " yo‘l)"
         del bl[i - 1]
         n += 1
+    # sahifa/qator chegarasida ikkiga bo'lingan qatorlar (ikkinchi qatorning birinchi katagi)
+    for prefix, first in (("Jadval 1.2.", "(XPN, INN)"), ("Jadval 12.4.", "antagonistlar"),
+                          ("Jadval 16.4.", "(trimetoprim), G6FDG yetishmovchiligida gemoliz")):
+        bl, i = find_table(prefix)
+        rows = bl[i]["rows"]
+        ri = next((r for r, row in enumerate(rows) if row[0] == first), None)
+        if ri:
+            a, b = rows[ri - 1], rows[ri]
+            for c in range(len(a)):
+                if b[c].strip():
+                    a[c] = re.sub(r"-$", "-", a[c].rstrip()) + ("" if a[c].endswith("-") else " ") + b[c].lstrip()
+            del rows[ri]
+            n += 1
     # jadval kataklaridagi bo'lingan so'zlar
     for t in d["topics"]:
         for s in t["sections"] + t["skills"]:
@@ -309,6 +322,7 @@ TEXT = {
     "V2antagonistlari": "V2-antagonistlari",
     "H1blokator": "H1-blokator",
     "**mg/m2**": "**mg/m^2^**",
+    "(“Analginum 0,5” o‘rniga “Analgini 0,5”)": "(“Analgini 0,5” o‘rniga “Analginum 0,5”)",   # xato bosh kelishikda yozish
 }
 
 
