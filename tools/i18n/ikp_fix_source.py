@@ -222,6 +222,15 @@ def split_tables():
         bl[i]["rows"].append([m.group(1), m.group(2)])
         del bl[i + 1:i + 3]
         n += 1
+    bl, i = find_table("Jadval 12.15.")
+    rows = bl[i]["rows"]
+    for k in range(len(rows) - 1):
+        if rows[k][0] == "Bo‘lmachalararo" and rows[k + 1][0] == "to‘siq nuqsoni":   # PDF qatori ikkiga bo'lingan
+            a, b = rows[k], rows[k + 1]
+            rows[k] = [a[0] + " " + b[0], a[1] + " " + b[1], a[2] + " " + b[2]]
+            del rows[k + 1]
+            n += 1
+            break
     return n
 
 
@@ -238,11 +247,18 @@ WORDS = {"O‘zgarmag an": "O‘zgarmagan", "yetishmovch ilik": "yetishmovchilik
          "NT- proBNP": "NT-proBNP", "astasekin": "asta-sekin", "Astasekin": "Asta-sekin", "teztez": "tez-tez",
          "Teztez": "Tez-tez", "to‘mtoqtimpanik": "to‘mtoq-timpanik", "To‘mtoqtimpanik": "To‘mtoq-timpanik",
          "qo‘loyoqlar": "qo‘l-oyoqlar", "Qo‘loyoqlar": "Qo‘l-oyoqlar", "qizilo‘ngachme’da": "qizilo‘ngach-me’da",
-         "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
+         "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS",
+         "Mikroaspiratsi ya": "Mikroaspiratsiya", "Makroaspiratsi ya": "Makroaspiratsiya",
+         "Kompressio n": "Kompression", "Balg‘a m": "Balg‘am", "cho‘qqiorqa": "cho‘qqi-orqa",
+         "Joylashu vi": "Joylashuvi", "Bosgand a chuqurc ha": "Bosganda chuqurcha", "Chegar a": "Chegara",
+         "(5– 25 yosh)": "(5–25 yosh)", "1– 2 sm": "1–2 sm", "0,02– 0,04 s": "0,02–0,04 s"}
 
 
 # asl matndagi ma'no/imlo xatolari (asl PDF va darsliklar bilan solishtirib topilgan)
 TEXT = {
+    "(“spat-poraspat”)": "(“spat — pora — spat”)",
+    "Erta sistolik (izgish) toni": "Erta sistolik (haydash) toni",          # rus. "тон изгнания"
+    "Past, g‘ichirlovchi, presistolada": "Past, g‘uvullovchi, presistolada",  # mitral stenoz shovqini — g'uvullovchi
     "o‘sishrivojlanish": "o‘sish-rivojlanish",
     "Grip epidemiyasi": "Gripp epidemiyasi",
     # bo'yin venasi: me'yor to'sh burchagidan 3 sm gacha (keyingi qutidagi bilan bir xil)
