@@ -131,7 +131,9 @@ def join_sentences(bl, n):
         if a["type"] == "box":
             n = join_sentences(a["parts"], n)
         if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
-                and not re.search(r"[.:;!?)»”\"*]\s*$", a["text"]) and re.match(r"[a-z‘’(]", bl[i + 1]["text"])):
+                and (not re.search(r"[.:;!?)»”\"*]\s*$", a["text"]) and re.match(r"[a-z‘’(]", bl[i + 1]["text"])
+                     # "... **bo‘g‘im og‘riqlari**" | "(revmatizm), ..."
+                     or re.search(r"[^.:;!?]\*\*\s*$", a["text"]) and re.match(r"\([a-z]", bl[i + 1]["text"]))):
             a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
             del bl[i + 1]
             n += 1
