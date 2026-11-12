@@ -297,7 +297,7 @@ def renumber():
 WORDS = {"Kuchay gan": "Kuchaygan", "Susayga n": "Susaygan", "Eshitilmayd i": "Eshitilmaydi", "O‘zgar magan": "O‘zgarmagan",
          "Bochkasim on": "Bochkasimon", "Kasallikla r": "Kasalliklar", "Perkussiy a": "Perkussiya",
          "Retikulotsitl ar": "Retikulotsitlar", "Rivojlanis h": "Rivojlanish", "chegarala ri": "chegaralari",
-         "35– 45%": "35–45%", "qo‘loyoq": "qo‘l-oyoq", "Qo‘loyoq": "Qo‘l-oyoq", "39– 40 °C": "39–40 °C", "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
+         "35– 45%": "35–45%", "Mun– Barde": "Mun–Barde", "qo‘loyoq": "qo‘l-oyoq", "Qo‘loyoq": "Qo‘l-oyoq", "39– 40 °C": "39–40 °C", "tashhis": "tashxis", "Tashhis": "Tashxis", "TASHHIS": "TASHXIS"}
 
 
 # asl matndagi ma'no/imlo xatolari (asl PDF va darsliklar bilan solishtirib topilgan)
@@ -330,7 +330,8 @@ def clean(s):
         s = s.replace(a, b)
     s = re.sub(r"\b([A-Z]{1,4})- (?!(?:va|yoki|hamda)\b)(?=\S)", r"\1-", s)       # T- limfotsitlar, (ST- T
     s = re.sub(r"(\d)- (?!(?:va|yoki|hamda)\b)(?=[a-z])", r"\1-", s)              # 2- barmoqlar, 7–10- kunga
-    s = re.sub(r"(\d)– (?=\d)", r"\1–", s)                                        # 39– 40 °C, 25– 49%
+    s = re.sub(r"(\d)– (?=\d)", r"\1–", s)
+    s = re.sub(r"(?<=[a-z])– (?=[A-Z][a-z])", "–", s)                              # Botkin– Erb, Shenleyn– Genox                                        # 39– 40 °C, 25– 49%
     s = re.sub(r"(\d)(?=(?:kun|hafta|oy|yosh)[a-z‘]*\b)", r"\1-", s)               # 2haftada, 7–10kunga
     s = re.sub(r"(\d)- rasm\b", r"\1-rasm", s)                               # 9- rasm -> 9-rasm
     s = re.sub(r"\b([A-Z][a-z]+)- ([A-Z][a-z]+)", r"\1-\2", s)                # Obraztsov- Strajesko
