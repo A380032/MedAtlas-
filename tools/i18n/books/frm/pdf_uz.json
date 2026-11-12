@@ -1,0 +1,204 @@
+{
+  "lang": "uz",
+  "out": "data/books/frm.pdf",
+  "pdf_title": "Farmakologiya: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Farmakologiya — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/frm/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "Farmakologiya kafedrasi fani bo‘yicha"
+    ],
+    "title": "FARMAKOLOGIYA",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Farmakologiya: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma “Farmakologiya” fanining 2026–2027 o‘quv yili uchun tasdiqlangan kalendar-tematik rejasidagi 18 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Kitob ikki qismdan iborat: I qism 5-semestrning 9 ta mavzusini (retseptura, umumiy farmakologiya, periferik va markaziy nerv tizimiga hamda nafas a’zolariga ta’sir etuvchi vositalar), II qism 6-semestrning 9 ta mavzusini (yurak-qon tomir, hazm, siydik ajratish va qon tizimiga ta’sir etuvchi vositalar, gormonal va yallig‘lanishga qarshi preparatlar, antiseptiklar va kimyoterapevtik vositalar) o‘z ichiga oladi.",
+    "Har bir bob oxirida amaliy ko‘nikmalar (retsept yozish) algoritmlari, nazorat savollari, test topshiriqlari va vaziyatli masalalar berilgan. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma D.A. Xarkevichning “Farmakologiya” darsligi (2010), S.S. Azizovaning “Farmakologiya” darsligi (2006), TTA farmakologiya kafedrasining “Retseptura asoslari” qo‘llanmasi (2020), V.V. Mayskiy, B.G. Katzung, Kaplan USMLE, First Aid, Color Atlas of Pharmacology va boshqa darsliklar, shuningdek zamonaviy klinik tavsiyalar asosida tayyorlangan. Rasmlar ushbu manbalardan olingan va har birining tagida manbasi ko‘rsatilgan. Muqovadagi rasmlar TTA farmakologiya kafedrasining o‘quv materialidan olingan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni, ayniqsa dozalarni, amaliyotda qo‘llashdan oldin asosiy darsliklar va amaldagi rasmiy yo‘riqnomalar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi fakulteti 3-kurs talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Farmakologiya — nazariy tibbiyot bilan klinik amaliyot o‘rtasidagi ko‘prik. Shifokor qaysi kasallik bilan shug‘ullanmasin, uning qo‘lidagi asosiy vosita dori bo‘lib qoladi. Dori to‘g‘ri tanlanganda bemorni davolaydi, noto‘g‘ri tanlanganda yoki noto‘g‘ri dozada berilganda esa zarar keltiradi. Shu sababli farmakologiyani puxta bilish har bir bo‘lajak shifokor uchun shart."
+    },
+    {
+      "type": "p",
+      "text": "Ushbu qo‘llanma Toshkent Davlat Tibbiyot Universiteti farmakologiya kafedrasining 2026–2027 o‘quv yili uchun tasdiqlangan kalendar-tematik rejasiga mos ravishda tuzilgan. Kitob ikki qismdan iborat:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**I qism (5-semestr)** — retseptura, umumiy farmakologiya, periferik va markaziy nerv tizimiga hamda nafas a’zolariga ta’sir etuvchi vositalar (1–9-mavzular);",
+        "**II qism (6-semestr)** — yurak-qon tomir, hazm, siydik ajratish va qon tizimiga ta’sir etuvchi vositalar, gormonal preparatlar, yallig‘lanishga qarshi, antiseptik va kimyoterapevtik vositalar (10–18-mavzular)."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Har bir mavzu bir xil tuzilishga ega:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Mashg‘ulot maqsadi** — talaba nimani bilishi va nimani bajara olishi kerakligi.",
+        "**Nazariy qism** — dori guruhlarining tasnifi, ta’sir mexanizmi, farmakologik ta’sirlari, qo‘llanishi, nojo‘ya ta’sirlari va qarshi ko‘rsatmalari.",
+        "**Klinik qism** — dori tanlash, o‘zaro ta’sirlar, zaharlanishlar va ularga yordam.",
+        "**Amaliy ko‘nikmalar** — retsept yozish algoritmlari va asosiy preparatlarning retseptlari.",
+        "**Nazorat savollari, 15 ta test va 3 ta vaziyatli masala** (javoblari bilan).",
+        "**Tezkor takrorlash jadvali** — imtihon oldidan takrorlash uchun."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Matn ichidagi rangli bloklar quyidagi ma’noni bildiradi:"
+    },
+    {
+      "type": "box",
+      "kind": "eslab",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Sariq blok — albatta yodlash kerak bo‘lgan ma’lumot (tasnif, mexanizm, asosiy raqamlar)."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "klinik",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Ko‘k blok — ma’lumotning klinik ahamiyati, amaliyotdagi qo‘llanishi."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "yodlash",
+      "parts": [
+        {
+          "type": "p",
+          "text": "Yashil blok — yodlashni osonlashtiruvchi usul (mnemonika, assotsiatsiya)."
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "kind": "diqqat",
+      "parts": [
+        {
+          "type": "p",
+          "text": "To‘q sariq blok — xavfli xatolar, darsliklar orasidagi farqlar, eskirgan yoki o‘zgargan ma’lumotlar."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "**KULRANG BLOK — RETSEPT NAMUNASI** Rp.: Lotincha qism"
+    },
+    {
+      "type": "p",
+      "text": "D.S. Signatura (davlat tilida)."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma asosan D.A. Xarkevichning “Farmakologiya” darsligi, S.S. Azizovaning o‘zbek tilidagi “Farmakologiya” darsligi, kafedraning “Retseptura asoslari” o‘quv-uslubiy qo‘llanmasi hamda Katzung, Kaplan, First Aid va boshqa xalqaro manbalar asosida tayyorlangan. Darsliklar orasida farq bo‘lgan yoki ma’lumot yangilangan joylarda bu alohida ko‘rsatilgan."
+    },
+    {
+      "type": "p",
+      "text": "Dozalar o‘quv maqsadida keltirilgan. Amaliyotda har doim preparatning rasmiy yo‘riqnomasi va amaldagi klinik protokollarga tayaning."
+    }
+  ],
+  "parts": [
+    {
+      "before": 1,
+      "title": "I QISM. 5-SEMESTR AMALIY MASHG‘ULOTLARI",
+      "sub": "Retseptura. Umumiy farmakologiya. Neyrotrop vositalar. Nafas a’zolariga ta’sir etuvchi vositalar"
+    },
+    {
+      "before": 10,
+      "title": "II QISM. 6-SEMESTR AMALIY MASHG‘ULOTLARI",
+      "sub": "Yurak-qon tomir, hazm, siydik ajratish va qon tizimiga ta’sir etuvchi vositalar. Gormonlar. Yallig‘lanishga qarshi va kimyoterapevtik vositalar"
+    }
+  ],
+  "rx": [
+    "**RETSEPT ",
+    "**KULRANG BLOK"
+  ],
+  "skills_numbered": false,
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savollar:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash jadvali",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Qisqa ta’rif",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Foydalanilgan adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    {
+      "h": "Asosiy darsliklar"
+    },
+    "Харкевич Д.А. Фармакология: учебник. 10-е изд. — М.: ГЭОТАР-Медиа, 2010. — 908 с.",
+    "Azizova S.S. Farmakologiya: darslik. — Toshkent: Yangi asr avlodi, 2006.",
+    "Xakimov Z.Z., Allayeva M.J., Mustanov T.B. va boshq. Retseptura asoslari: o‘quv-uslubiy qo‘llanma. — Toshkent: TTA, 2020.",
+    "Майский В.В. Фармакология: учебное пособие. Ч. I–II. — М., 2003.",
+    {
+      "h": "Qo‘shimcha adabiyotlar"
+    },
+    "Katzung B.G., Trevor A.J. Basic and Clinical Pharmacology / Katzung & Trevor’s Pharmacology: Examination and Board Review. — McGraw-Hill.",
+    "Golan D.E. et al. Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy. 4th ed. — Wolters Kluwer, 2017.",
+    "Kaplan Medical. USMLE Step 1 Lecture Notes: Pharmacology. — Kaplan, 2018.",
+    "Le T., Bhushan V. et al. First Aid for the USMLE Step 1. 30th ed. — McGraw-Hill, 2020.",
+    "Lüllmann H., Mohr K., Hein L., Bieger D. Color Atlas of Pharmacology. — Thieme.",
+    "Годован В.В. Фармакология в рисунках и схемах: в 2 т. — Одесса: Одесский медуниверситет.",
+    "Xususiy farmakologiya: o‘quv qo‘llanma (o‘zbek tilida).",
+    "PrepLadder, DAMS: Pharmacology review notes.",
+    {
+      "h": "Internet manbalari va me’yoriy hujjatlar"
+    },
+    "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi. “Elektron retsept” tizimi to‘g‘risidagi materiallar (2025–2026). — spot.uz, lex.uz.",
+    "World Health Organization. Model List of Essential Medicines. — who.int.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention. — ginasthma.org.",
+    "European Society of Cardiology (ESC). Arterial gipertenziya, yurak yetishmovchiligi, bo‘lmachalar fibrillyatsiyasi va surunkali koronar sindromlar bo‘yicha klinik tavsiyalar. — escardio.org.",
+    "American Diabetes Association. Standards of Care in Diabetes. — diabetesjournals.org.",
+    "Malfertheiner P. et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. — Gut, 2022.",
+    "World Health Organization. Consolidated guidelines on tuberculosis: Module 4 — Treatment. — who.int.",
+    "World Health Organization. Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring. — who.int.",
+    "World Health Organization. The WHO AWaRe Antibiotic Book. — who.int."
+  ]
+}

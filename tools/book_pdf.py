@@ -84,6 +84,28 @@ def table(head, rows, title=""):
     return f'{cap}<table><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table>'
 
 
+RX_SIGNED = re.compile(r"(?:^|\s)(?:M\.)?D\.S\.|(?:^|\s)S\.\s")
+RX_SPLIT = re.compile(r"\s+(?=#|Rp\.:|M\.f\.|M\.D\.S\.|D\.t\.d\.|D\.S\.|S\.\s)")
+RX_ING = re.compile(r"(?<=\d)\s+(?=[A-Z][a-z]{2,})")
+
+
+def rx_box(parts):
+    """Retsept (asl kitobdagidek kulrang blok): sarlavha, "Rp.: ..." va har bir ko'rsatma alohida qatorda."""
+    full = " ".join(parts)
+    m = re.match(r"\*\*(.+?)\*\*\s*(.*)$", full)
+    title, rest = (m.group(1), m.group(2)) if m else ("", full)
+    lines = []
+    for seg in RX_SPLIT.split(rest):
+        if re.match(r"(?:#|Rp\.:|M\.f\.|M\.D\.S\.|D\.t\.d\.|D\.S\.|S\.\s)", seg) is None or seg.startswith(("Rp.:", "# Rp.:")):
+            subs = RX_ING.split(seg)
+        else:
+            subs = [seg]
+        for k, x in enumerate(subs):
+            cls = "rl0" if x.startswith(("Rp.:", "#")) else "rl1"
+            lines.append(f'<div class="{cls}">{inline(x)}</div>')
+    return f'<div class="rx"><div class="rxt">{inline(title)}</div>{"".join(lines)}</div>'
+
+
 def blocks(bl):
     out, i = [], 0
     while i < len(bl):
@@ -107,6 +129,15 @@ def blocks(bl):
             for k in range(0, len(imgs), 2):
                 row = imgs[k:k + 2]
                 out.append('<div class="figrow">' + "".join(figure(x, len(row) == 1) for x in row) + "</div>")
+            i = j
+            continue
+        if t == "p" and CFG.get("rx") and b["text"].startswith(tuple(CFG["rx"])):
+            parts, j = [b["text"]], i + 1
+            while (j < len(bl) and bl[j]["type"] == "p" and not bl[j]["text"].startswith("**") and len(parts) < 5
+                   and (not RX_SIGNED.search(" ".join(parts)) or "# Rp.:" in parts[-1])):
+                parts.append(bl[j]["text"])
+                j += 1
+            out.append(rx_box(parts))
             i = j
             continue
         if t == "p":
@@ -134,11 +165,17 @@ def build(pages=None):
 
     def h(level, text, key, cls=""):
         toc.append((level, text, key))
-        return f'<h{level} class="{cls}">{inline(text)}</h{level}>'
+        tag = "div" if level == 0 else f"h{level}"
+        return f'<{tag} class="{cls}">{inline(text)}</{tag}>'
 
     # So'zboshi
     body.append('<section class="page">' + h(2, CFG["preface_title"], "preface", "ch") + blocks(CFG["preface"]) + "</section>")
+    parts = {x["before"]: x for x in CFG.get("parts", [])}   # qism sahifalari (frm: I qism, II qism)
     for n, tp in enumerate(BOOK["topics"], 1):
+        if n in parts:
+            pt = parts[n]
+            body.append('<section class="page partp"><div class="pban">' + h(0, pt["title"], f"p{n}", "pt") +
+                        (f'<div class="ps">{inline(pt["sub"])}</div>' if pt.get("sub") else "") + "</div></section>")
         s = ['<section class="page topic">', f'<div class="tno">{esc(L["topic"].format(n=n))}</div>',
              h(1, tp["title"], f"t{n}")]
         s.append(f'<h2>{esc(L["goals"])}</h2>' + blocks(tp.get("goals", [])))
@@ -148,7 +185,7 @@ def build(pages=None):
         for k, sec in enumerate(secs if gloss is None else secs[:-1]):
             s.append(h(2, sec["title"], f"t{n}s{k}") + blocks(sec["blocks"]))
         if tp.get("skills"):
-            if flat:   # asl kitobdagidek raqamli bo'lim va mundarijada: "11. Amaliy ko'nikmalar"
+            if flat and CFG.get("skills_numbered", True):   # asl kitobdagidek raqamli bo'lim va mundarijada: "11. Amaliy ko'nikmalar"
                 s.append(h(2, f'{len(secs) + 1}. {L["skills"]}', f"t{n}sk"))
             else:
                 s.append(f'<h2>{esc(L["skills"])}</h2>')
@@ -213,10 +250,13 @@ def build(pages=None):
     imprint = '<section class="imprint">' + "".join(f"<p>{inline(p)}</p>" if p else '<div class="gap"></div>' for p in CFG["imprint"]) + "</section>"
     tl = []
     for level, text, key in toc:
-        if level == 1 or key in ("preface", "answers", "refs"):
+        if level == 0:
+            tl.append(f'<div class="te tpart"><span class="tt">{inline(text)}</span><span class="dots"></span><span class="tn">{num(key)}</span></div>')
+        elif level == 1 or key in ("preface", "answers", "refs"):
             tl.append(f'<div class="te"><span class="tt">{inline(text)}</span><span class="dots"></span><span class="tn">{num(key)}</span></div>')
         else:
-            tl.append(f'<div class="te"><span class="tt">{inline(text)}</span><span class="dots"></span><span class="tn">{num(key)}</span></div>')
+            cls = "te te2" if CFG.get("toc_indent") else "te"
+            tl.append(f'<div class="{cls}"><span class="tt">{inline(text)}</span><span class="dots"></span><span class="tn">{num(key)}</span></div>')
     tocs = f'<section class="toc"><h2 class="toch">{esc(CFG["toc_title"])}</h2>{"".join(tl)}</section>'
     return f"<!DOCTYPE html><html lang=\"{lang}\"><head><meta charset=\"utf-8\"><style>{CSS}</style></head><body>{cover}{imprint}{tocs}{''.join(body)}</body></html>", toc
 
@@ -285,6 +325,14 @@ figcaption {{ font-size: 9.5pt; line-height: 1.2; text-align: center; }}
 .imprint {{ font-size: 11pt; }}
 .imprint .gap {{ height: 10pt; }}
 .toc {{ font-size: 11pt; }}
+.rx {{ break-inside: avoid; background: #f2f2f2; border: .6pt solid #7f7f7f; padding: 3pt 8pt 4pt; margin: 6pt 0 8pt; font-size: 11.5pt; text-align: left; line-height: 1.25; }}
+.rxt {{ font-weight: bold; font-size: 10.5pt; margin-bottom: 1pt; }}
+.rl1 {{ padding-left: 9mm; }}
+.te2 {{ padding-left: 6mm; }}
+.tpart {{ font-weight: bold; color: #1f3864; margin-top: 4pt; }}
+.partp .pban {{ margin-top: 70mm; text-align: center; }}
+div.pt {{ display: block; background: #1f3864; color: #fff; font-size: 20pt; font-weight: bold; padding: 4pt 6pt 3pt; margin: 0; border: 0; line-height: 1.2; }}
+.ps {{ background: #2e75b6; color: #fff; font-size: 13pt; font-style: italic; padding: 3pt 8pt 5pt; line-height: 1.25; }}
 .toch {{ text-align: center; color: #1f3864; font-size: 14pt; margin: 0 0 10pt; }}
 .te {{ display: flex; align-items: baseline; margin: 0 0 2.5pt; text-align: left; }}
 .tt {{ flex: 0 1 auto; }}
@@ -295,7 +343,7 @@ figcaption {{ font-size: 9.5pt; line-height: 1.2; text-align: center; }}
 
 def norm(s):
     s = unicodedata.normalize("NFKC", s)
-    s = re.sub(r"[\*~\^]", "", s)
+    s = re.sub(r"[\*~\^\-‐]", "", s)   # pdftotext satr oxiridagi defisni olib tashlaydi ("Anti-\ninflammatory")
     return re.sub(r"[\s­]+", "", s).lower()
 
 
@@ -331,7 +379,7 @@ def locate(pdf, toc):
                 cur = i
                 break
         else:
-            sys.exit(f"Sarlavha topilmadi: {text}")
+            sys.exit(f"Sarlavha topilmadi: {text} (oxirgi: {list(res.items())[-4:]}, toc: {[t for _, t, _ in toc][max(0, len(res) - 4):len(res)]})")
     return res, start + 1
 
 
