@@ -298,6 +298,7 @@
 
   /* ---------- Profilni tahrirlash ---------- */
   const FACULTIES = ["Davolash ishi", "Pediatriya", "Tibbiy-profilaktika", "Stomatologiya", "Farmatsiya", "Tibbiy pedagogika", "Xalqaro fakultet", "Oliy hamshiralik ishi"];
+  const trF = (s) => (s && window.t && window.I18N?.lang !== "uz" ? window.t(s) : s);   // fakultet nomi tanlangan tilda
   function editProfile() {
     const pf = prof();
     const sel = (v, o) => (v === o ? " selected" : "");
@@ -308,9 +309,9 @@
         <label class="field">Kimsiz?
           <select id="pfRole"><option value="">Ko‘rsatmayman</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
         <label class="field" id="pfNoteBox" ${pf.role === "boshqa" ? "" : "hidden"}>Kim ekaningizni yozing<input id="pfNote" maxlength="60" value="${esc(pf.note || "")}" placeholder="masalan, shifokor, rezident" autocomplete="off"></label>
-        <label class="field">Fakultet<input id="pfFac" list="pfFacList" maxlength="80" value="${esc(pf.faculty || "")}" placeholder="Tanlang yoki yozing" autocomplete="off"><datalist id="pfFacList">${FACULTIES.map((f) => `<option value="${esc(f)}">`).join("")}</datalist></label>
+        <label class="field">Fakultet<input id="pfFac" list="pfFacList" maxlength="80" value="${esc(trF(pf.faculty || ""))}" placeholder="Tanlang yoki yozing" autocomplete="off"><datalist id="pfFacList">${FACULTIES.map((f) => `<option value="${esc(trF(f))}">`).join("")}</datalist></label>
         <label class="field">Kurs
-          <select id="pfCourse"><option value="">Ko‘rsatmayman</option>${courses.map((c) => `<option${sel(pf.course, c)}>${c}</option>`).join("")}</select></label>
+          <select id="pfCourse"><option value="">Ko‘rsatmayman</option>${courses.map((c) => `<option value="${esc(c)}"${sel(pf.course, c)}>${c}</option>`).join("")}</select></label>
         <p class="small muted" style="margin:0">Hammasi ixtiyoriy. Kirish usulingiz (Google yoki Telegram) bu yerda o‘zgarmaydi.</p>
       </div>
       <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="pfSave">Saqlash</button></div>`);
@@ -456,13 +457,13 @@
   }
   async function touchDevice(force) {
     if (!user || !sb || !navigator.onLine) return;
-    const key = user.id.slice(0, 8) + ":" + today();
+    const key = user.id.slice(0, 8) + ":" + today() + ":" + (window.I18N?.lang || "uz");
     if (!force && ls.get("tqdev:day") === key && Date.now() - Number(ls.get("tqdev:at") || 0) < 6 * 3600e3) return;
     let id = ls.get("tqdev:id");
     if (!id || !/^[0-9a-f-]{36}$/.test(id)) { id = crypto.randomUUID ? crypto.randomUUID() : "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (c ^ (Math.random() * 16) >> (c / 4)).toString(16)); ls.set("tqdev:id", id); }
     const d = devInfo();
     try {
-      const { error } = await sb.rpc("touch_device", { p_id: id, p_platform: d.platform, p_browser: d.browser, p_standalone: d.standalone, p_version: window.APP_VERSION || "" });
+      const { error } = await sb.rpc("touch_device", { p_id: id, p_platform: d.platform, p_browser: d.browser, p_standalone: d.standalone, p_version: window.APP_VERSION || "", p_lang: window.I18N?.lang || "uz" });
       if (!error) { ls.set("tqdev:day", key); ls.set("tqdev:at", String(Date.now())); }
     } catch { /* */ }
   }

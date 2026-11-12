@@ -5,6 +5,7 @@
   let A = null, seq = 0;
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const num = (n) => Number(n || 0).toLocaleString("ru-RU").replace(/,/g, " ");
+  const LANGN = { uz: "O‘zbekcha", en: "English", "?": "Aniqlanmagan (eski versiya)" };
   const MON = ["yan", "fev", "mar", "apr", "may", "iyn", "iyl", "avg", "sen", "okt", "noy", "dek"];
   const day = (s) => { const d = new Date(s); return isNaN(d) ? "—" : d.getDate() + "-" + MON[d.getMonth()]; };
   const when = (s) => {
@@ -49,10 +50,10 @@
   async function load(my) {
     const c = await window.ACC.ctx();
     if (!c.sb || !c.user) throw new Error("Hisobga kiring");
-    const { data, error } = await c.sb.rpc("admin_stats");
+    const [{ data, error }, lg] = await Promise.all([c.sb.rpc("admin_stats"), c.sb.rpc("admin_lang_stats").then((x) => x, () => ({}))]);
     if (error) throw new Error(/forbidden/.test(error.message) ? "Bu sahifa faqat admin uchun" : "Statistika yuklanmadi");
     if (my !== seq) return;
-    draw(data);
+    draw({ ...data, ...(lg && lg.data ? lg.data : {}) });
   }
 
   function draw(s) {
@@ -85,6 +86,8 @@
         <section class="ad-card"><h3>Fakultet</h3>${bars(s.faculty)}</section>
         <section class="ad-card"><h3>Kurs</h3>${bars(s.course)}</section>
         <section class="ad-card"><h3>Rol</h3>${bars(s.role, ROLE)}</section>
+        <section class="ad-card"><h3>Ilova tili</h3>${bars(s.lang, LANGN)}<small class="muted">Hisobi bor foydalanuvchilar, oxirgi qurilmadagi til bo‘yicha</small></section>
+        <section class="ad-card"><h3>Ilova tili · 30 kunda faol</h3>${bars(s.lang30, LANGN)}</section>
       </div>
       <h3 class="group-label">Konsilium</h3>
       <div class="ad-grid">

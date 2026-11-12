@@ -45,7 +45,7 @@
       if (m) return p.out.replace(/\{(\d+)\}/g, (x, i) => {
         const g = m[+i + 1] ?? "";
         const inner = tr(g);          // ichki bo'lak ham tarjima bo'lishi mumkin (masalan, oy nomi)
-        return inner == null ? g : inner;
+        return inner == null ? g : (g.match(/^\s*/)[0] + inner + g.match(/\s*$/)[0]);
       });
     }
     /* "A · B" kabi birikmalarni bo'lib tarjima qilish */
@@ -70,7 +70,8 @@
 
   /* ---------- DOM tarjimasi ---------- */
   const ATTRS = ["aria-label", "title", "placeholder", "alt"];
-  const SKIP = /^(SCRIPT|STYLE|TEXTAREA|INPUT|SELECT|OPTION|NOSCRIPT|CODE|PRE)$/;
+  const SKIP = /^(SCRIPT|STYLE|TEXTAREA|NOSCRIPT|CODE|PRE)$/;          // matn tugunlari uchun (OPTION matni tarjima qilinadi)
+  const SKIP_ATTR = /^(SCRIPT|STYLE|NOSCRIPT)$/;                          // atributlar (placeholder, title...) INPUT/TEXTAREA da ham tarjima qilinadi
   const done = new WeakMap();   // tugun -> oxirgi tarjima qilingan qiymat
 
   function textNode(n) {
@@ -91,13 +92,13 @@
   function walk(root) {
     if (!root) return;
     if (root.nodeType === 3) { if (root.parentElement && !SKIP.test(root.parentElement.tagName)) textNode(root); return; }
-    if (root.nodeType !== 1 || SKIP.test(root.tagName) || root.closest?.("[data-notr]")) return;
+    if (root.nodeType !== 1 || SKIP_ATTR.test(root.tagName) || root.closest?.("[data-notr]")) return;
     attrs(root);
     const w = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
     let n;
     while ((n = w.nextNode())) {
       if (n.nodeType === 3) { const p = n.parentElement; if (p && !SKIP.test(p.tagName) && !p.closest("[data-notr]")) textNode(n); }
-      else if (!SKIP.test(n.tagName)) attrs(n);
+      else if (!SKIP_ATTR.test(n.tagName)) attrs(n);
     }
   }
 

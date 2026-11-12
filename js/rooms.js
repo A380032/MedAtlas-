@@ -173,7 +173,7 @@
   function codeSheet() {
     const sh = A.sheet(`<h3>Kod bilan kirish</h3>
       <label class="field">Xona kodi (6 belgi)<input id="cIn" maxlength="6" autocapitalize="characters" autocomplete="off" placeholder="masalan, 3F9A1C" style="text-transform:uppercase;letter-spacing:.2em"></label>
-      <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="cOk">Kirish</button></div>`);
+      <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="cOk">Kirish​</button></div>`);
     const inp = sh.el.querySelector("#cIn");
     setTimeout(() => inp.focus(), 250);
     const go = async () => {
@@ -231,7 +231,9 @@
   const fmtDay = (s) => {
     const d = new Date(s); if (isNaN(d)) return "";
     const p = (n) => String(n).padStart(2, "0");
-    return `${d.getDate()}-${OY[d.getMonth()]}${d.getFullYear() !== new Date().getFullYear() ? " " + d.getFullYear() : ""}, ${p(d.getHours())}:${p(d.getMinutes())}`;
+    const yr = d.getFullYear() !== new Date().getFullYear() ? " " + d.getFullYear() : "";
+    if (window.I18N && window.I18N.lang === "en") return `${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()]} ${d.getDate()}${yr}, ${p(d.getHours())}:${p(d.getMinutes())}`;
+    return `${d.getDate()}-${OY[d.getMonth()]}${yr}, ${p(d.getHours())}:${p(d.getMinutes())}`;
   };
   async function drawHistory() {
     const el = A.$("#rmHist"); if (!el) return;
@@ -656,8 +658,8 @@
       ${app.pub ? `<button class="rm-btn${app.muted ? "" : " on"}" id="rmApp" type="button" title="Simulyator va ilova ovozlari xonadagilarga eshitiladi">${ico(I.wave, 24)}<span>${app.muted ? "Ilova ovozi o‘chiq" : "Ilova ovozi yoqiq"}</span></button>` : ""}
       ${recSupported() ? `<button class="rm-btn${cur.rec ? " rec" : ""}" id="rmRec" type="button">${ico(I.rec, 24)}<span>${cur.rec ? "To‘xtatish " + recTime(cur.rec) : "Yozib olish"}</span></button>` : ""}
       ${info.room.code ? `<button class="rm-btn" id="rmShare" type="button">${ico(I.share, 24)}<span>Taklif</span></button>` : ""}
-      ${iAmOwner() ? `<button class="rm-btn danger" id="rmEnd" type="button">${ico(I.ban, 24)}<span>Yopish</span></button>` : ""}
-      <button class="rm-btn danger" id="rmLeave" type="button">${ico(I.leave, 24)}<span>Chiqish</span></button>`;
+      ${iAmOwner() ? `<button class="rm-btn danger" id="rmEnd" type="button">${ico(I.ban, 24)}<span>Yopish​</span></button>` : ""}
+      <button class="rm-btn danger" id="rmLeave" type="button">${ico(I.leave, 24)}<span>Chiqish​</span></button>`;
     const $ = (s) => el.querySelector(s);
     $("#rmAudio")?.addEventListener("click", async () => { try { await lk.startAudio(); } catch { /* */ } renderBar(); });
     $("#rmMic")?.addEventListener("click", async () => { await toggleMic(); renderBar(); renderPeople(); });
@@ -897,7 +899,7 @@
     sh.el.querySelectorAll("[data-op]").forEach((b) => b.addEventListener("click", async () => {
       const op = b.dataset.op;
       if (op === "report") { sh.close(); return reportSheet(id, nm); }
-      if (op === "kick" && !confirm(`${nm} xonadan chiqarilsinmi? U bu xonaga qayta kira olmaydi.`)) return;
+      if (op === "kick" && !confirm(window.t(`${nm} xonadan chiqarilsinmi? U bu xonaga qayta kira olmaydi.`))) return;
       b.disabled = true;
       try {
         const j = await call({ action: "mod", room_id: info.room.id, op, target: id });

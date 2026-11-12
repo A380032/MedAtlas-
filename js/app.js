@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.0";
+  const VERSION = "1.1.1";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -194,7 +194,7 @@
     view.classList.remove("wide");
     titleEl.textContent = title;
     $(".topbar").classList.toggle("is-home", !!opt.home);
-    document.title = opt.home ? "ALVORA Med" : title + " · ALVORA Med";
+    document.title = window.t(opt.home ? "ALVORA Med" : title + " · ALVORA Med");
     backBtn.hidden = !back;
     $("#rdSearch").hidden = !(tab === "fanlar" && back);
     srchBtn.hidden = tab === "search" || (tab === "fanlar" && !!back);
@@ -1165,7 +1165,7 @@
       <div id="wbox"></div>
       <p style="margin-top:18px"><button class="btn" id="wclear">Ro‘yxatni tozalash</button></p>`;
     runQuiz($("#wbox"), w, "xatolar");
-    $("#wclear").addEventListener("click", () => { if (confirm("Barcha xato savollar o‘chirilsinmi?")) { store.set("wrong", {}); pageWrong(); } });
+    $("#wclear").addEventListener("click", () => { if (confirm(window.t("Barcha xato savollar o‘chirilsinmi?"))) { store.set("wrong", {}); pageWrong(); } });
   }
 
   /* ---------- Saqlanganlar ---------- */
@@ -1250,8 +1250,10 @@
   const weekStart = (d) => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); return addDays(x, -((x.getDay() + 6) % 7)); };
   const MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
   const DAYS = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"];
-  const fmtDay = (d) => `${d.getDate()}-${MONTHS[d.getMonth()]}`;
-  const weekLabel = (ws) => { const we = addDays(ws, 6); return ws.getMonth() === we.getMonth() ? `${ws.getDate()}–${we.getDate()} ${MONTHS[ws.getMonth()]}` : `${fmtDay(ws)} – ${fmtDay(we)}`; };
+  const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const isEn = () => !!window.I18N && window.I18N.lang === "en";
+  const fmtDay = (d) => (isEn() ? `${MONTHS_EN[d.getMonth()]} ${d.getDate()}` : `${d.getDate()}-${MONTHS[d.getMonth()]}`);
+  const weekLabel = (ws) => { const we = addDays(ws, 6); return ws.getMonth() === we.getMonth() ? (isEn() ? `${MONTHS_EN[ws.getMonth()]} ${ws.getDate()}–${we.getDate()}` : `${ws.getDate()}–${we.getDate()} ${MONTHS[ws.getMonth()]}`) : `${fmtDay(ws)} – ${fmtDay(we)}`; };
   const nowHM = () => { const d = new Date(); return pad(d.getHours()) + ":" + pad(d.getMinutes()); };
   const getRes = () => store.get("res", {});
   const getPlan = () => store.get("plan", []);

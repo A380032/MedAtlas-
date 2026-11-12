@@ -234,7 +234,7 @@
     A.view.querySelectorAll("[data-bank]").forEach((x) => x.addEventListener("click", () => { store.set("bank", x.dataset.bank); pageHome(); }));
     A.view.querySelectorAll("[data-course]").forEach((x) => x.addEventListener("click", () => { store.set("tm:course", x.dataset.course); store.set("bank", ""); pageHome(); }));
     A.$("#delBank")?.addEventListener("click", () => {
-      if (!confirm("“" + b.title + "” testi o‘chirilsinmi? Natijalar ham o‘chadi.")) return;
+      if (!confirm(window.t("“" + b.title + "” testi o‘chirilsinmi? Natijalar ham o‘chadi."))) return;
       delUser(b.id); A.toast("Test o‘chirildi"); pageHome();
     });
   }
@@ -700,7 +700,7 @@ Qoidalar: har savol "?" bilan boshlansin; to'g'ri javob "+", xato javob "-" bila
       if (!$("#aTitle").value) $("#aTitle").value = f.name.replace(/\.[^.]+$/, "");
       upd();
     });
-    $("#aAi").addEventListener("click", async () => { try { await navigator.clipboard.writeText(AI_PROMPT); A.toast("Nusxalandi. AI ga konspektingiz bilan birga yuboring"); } catch { A.toast("Nusxalab bo‘lmadi"); } });
+    $("#aAi").addEventListener("click", async () => { try { await navigator.clipboard.writeText(window.t ? window.t(AI_PROMPT) : AI_PROMPT); A.toast("Nusxalandi. AI ga konspektingiz bilan birga yuboring"); } catch { A.toast("Nusxalab bo‘lmadi"); } });
     $("#aSave").addEventListener("click", () => {
       const r = upd(); if (!r.qs.length) return;
       const arr = store.get("user", []);
@@ -709,7 +709,7 @@ Qoidalar: har savol "?" bilan boshlansin; to'g'ri javob "+", xato javob "-" bila
       A.toast(`Saqlandi: ${r.qs.length} ta savol`); pageAdd();
     });
     A.view.querySelectorAll("[data-del]").forEach((b) => b.addEventListener("click", () => {
-      if (!confirm("Bu test o‘chirilsinmi? Natijalar ham o‘chadi.")) return;
+      if (!confirm(window.t("Bu test o‘chirilsinmi? Natijalar ham o‘chadi."))) return;
       delUser(b.dataset.del); pageAdd();
     }));
     A.view.querySelectorAll("[data-ex]").forEach((b) => b.addEventListener("click", () => {

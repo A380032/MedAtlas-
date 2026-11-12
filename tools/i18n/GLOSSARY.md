@@ -417,3 +417,12 @@ Jami: 345 ta termin. Tarjimada shu lug‘at hamma joyda bir xil ishlatiladi.
 | Levenshteyn–Yensen | Löwenstein–Jensen |
 | Burri–Gins (tush) | Burri–Gins (India ink) |
 | Sabouraud muhiti (Sabure) | Sabouraud medium |
+
+## Fan qisqartmalari (faqat ingliz rejimida)
+| Uzbek | English |
+|---|---|
+| ANT / GST / BIO / LAT | ANA / HIS / BIO / LAT |
+| FIZ / BKM / MKB | PHY / BCH / MIC |
+| BKP / IKP | PPD (Pediatric Propaedeutics) / IMP (Internal Medicine Propaedeutics) |
+| FRM / PAN / PFZ | PHM / PAT / PPH |
+| UMUM | GEN |
