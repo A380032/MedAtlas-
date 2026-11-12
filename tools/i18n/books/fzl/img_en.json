@@ -3341,5 +3341,292 @@
     "smax": 27
    }
   ]
+ },
+ "p126_41.webp": {
+  "items": [
+   {
+    "box": [
+     100,
+     7,
+     344,
+     22
+    ],
+    "t": "A — sinus node cell (pacemaker)",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     503,
+     7,
+     672,
+     22
+    ],
+    "t": "B — ventricular cardiomyocyte",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     436,
+     28,
+     538,
+     41
+    ],
+    "t": "absolute refractoriness",
+    "f": "dv",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     229,
+     64,
+     338,
+     78
+    ],
+    "t": "0 — Ca²⁺ (L-channels)",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     494,
+     89,
+     618,
+     104
+    ],
+    "t": "2 — plateau (Ca²⁺ enters)",
+    "f": "dv",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     245,
+     165,
+     294,
+     178
+    ],
+    "t": "threshold",
+    "f": "dv",
+    "smax": 10
+   },
+   {
+    "box": [
+     81,
+     242,
+     192,
+     279
+    ],
+    "t": "4 — slow diastolic\ndepolarization\n(I_f, Ca²⁺ T-channels)",
+    "f": "dv",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     627,
+     253,
+     748,
+     267
+    ],
+    "t": "4 — rest (−90 mV)",
+    "f": "dv",
+    "smax": 10,
+    "a": "l"
+   },
+   {
+    "box": [
+     196,
+     315,
+     250,
+     331
+    ],
+    "t": "Time, s",
+    "f": "dv",
+    "smax": 12
+   },
+   {
+    "box": [
+     561,
+     315,
+     615,
+     331
+    ],
+    "t": "Time, s",
+    "f": "dv",
+    "smax": 12
+   }
+  ]
+ },
+ "p126_42.webp": {
+  "items": [
+   {
+    "box": [
+     181,
+     7,
+     209,
+     25
+    ],
+    "t": "mV",
+    "f": "serif",
+    "smax": 15
+   },
+   {
+    "box": [
+     221,
+     30,
+     381,
+     52
+    ],
+    "t": "Action potential",
+    "f": "dvb",
+    "smax": 15
+   },
+   {
+    "box": [
+     424,
+     32,
+     557,
+     65
+    ],
+    "t": "Single contraction\ncurve",
+    "f": "dvb",
+    "smax": 14
+   },
+   {
+    "cbox": [
+     487,
+     152,
+     98,
+     24
+    ],
+    "ang": -79,
+    "t": "relaxation",
+    "f": "dvb",
+    "s": 14
+   },
+   {
+    "cbox": [
+     315,
+     178,
+     90,
+     22
+    ],
+    "ang": 63,
+    "t": "contraction",
+    "f": "dvb",
+    "s": 14
+   },
+   {
+    "box": [
+     266,
+     374,
+     412,
+     396
+    ],
+    "t": "excitability",
+    "f": "dvb",
+    "smax": 15
+   }
+  ]
+ },
+ "p128_43.webp": {
+  "items": [
+   {
+    "box": [
+     209,
+     54,
+     296,
+     88
+    ],
+    "t": "SA node\nexcitation",
+    "f": "serifb",
+    "smax": 14
+   },
+   {
+    "box": [
+     259,
+     141,
+     390,
+     177
+    ],
+    "t": "P = atrial\ndepolarization",
+    "f": "serifb",
+    "smax": 14
+   },
+   {
+    "box": [
+     7,
+     308,
+     184,
+     369
+    ],
+    "t": "TP interval\n= ventricular relaxation\nand filling period",
+    "f": "serifb",
+    "smax": 14,
+    "a": "l"
+   },
+   {
+    "box": [
+     517,
+     309,
+     752,
+     341
+    ],
+    "t": "PR segment = AV node\nexcitation, central delay",
+    "f": "serifb",
+    "smax": 14,
+    "a": "l"
+   },
+   {
+    "box": [
+     238,
+     432,
+     334,
+     452
+    ],
+    "t": "Segments",
+    "f": "serifb",
+    "smax": 15
+   },
+   {
+    "box": [
+     21,
+     633,
+     142,
+     681
+    ],
+    "t": "T wave =\nventricular\nrepolarization",
+    "f": "serifb",
+    "smax": 14,
+    "a": "l"
+   },
+   {
+    "box": [
+     547,
+     641,
+     744,
+     704
+    ],
+    "t": "QRS complex = ventricular\ndepolarization (with\nsimultaneous atrial\nrepolarization)",
+    "f": "serifb",
+    "smax": 14,
+    "a": "l"
+   },
+   {
+    "box": [
+     347,
+     745,
+     462,
+     836
+    ],
+    "t": "ST segment =\nventricular\ncontraction and\nrelaxation period",
+    "f": "serifb",
+    "smax": 14,
+    "a": "l"
+   }
+  ]
  }
 }
