@@ -320,6 +320,7 @@ def clean(s):
     o = s
     for a, b in list(WORDS.items()) + list(TEXT.items()):
         s = s.replace(a, b)
+    s = re.sub(r"glomerulonefrit \(proteinuriya,$", "glomerulonefrit (proteinuriya, gematuriya)", s)  # Jadval 14.2: katak sahifadan o'tgan
     s = re.sub(r"(\d)- rasm\b", r"\1-rasm", s)                               # 9- rasm -> 9-rasm
     s = re.sub(r"\b([A-Z][a-z]+)- ([A-Z][a-z]+)", r"\1-\2", s)                # Obraztsov- Strajesko
     s = re.sub(r"([a-z‘’])- (?!(?:va|yoki|hamda)\b)([a-z])", r"\1-\2", s)   # olcha- qizil -> olcha-qizil
