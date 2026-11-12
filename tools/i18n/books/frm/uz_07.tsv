@@ -17,7 +17,7 @@ s1364	Digoksin yurakka — to‘g‘ridan-to‘g‘ri; ammiak hidlatish nafasni 
 s1365	Klinik maqsad
 s1366	Asosiy — nojo‘ya
 s1367	Atropin: spazmolitik (asosiy), og‘iz qurishi (nojo‘ya)
-s1368	Qaytaruvchanli k
+s1368	Qaytaruvchanlik
 s1369	Qaytar — qaytmas
 s1370	Neostigmin — qaytar; fosfororganik birikmalar xolinesterazani qaytmas tormozlaydi
 s1371	Tanlab ta’sir
@@ -38,7 +38,7 @@ s1385	Jadval 3.7. Retseptorlar turlari
 s1386	Ta’sir tezligi
 s1387	Mexanizm
 s1388	I. Ionotrop (ion kanalli)
-s1389	Millisek undlar
+s1389	Millisekundlar
 s1390	Ligand bog‘lanishi bilan kanal ochiladi
 s1391	N-xolinoretseptor, GAMKA, NMDA, 5-HT3
 s1392	II. G-oqsil bilan bog‘langan (metabotrop)
@@ -189,49 +189,48 @@ s1536	Surgilar (ichakni qitiqlovchi)
 s1537	Bisakodil, senna (12-mavzuda)
 s1538	4.1. Mahalliy anestetiklar
 s1539	**Mahalliy anestetiklar** — qo‘llangan joyda og‘riq sezuvchanligini (keyinroq boshqa sezgilarni ham) **qaytar** yo‘qotuvchi vositalar. Ular hushni o‘chirmaydi.
-s1540	**Tarix.** 1879-yilda rus olimi **V.K. Anrep** kokainning mahalliy anestetik ta’sirini aniqlagan; 1884-yilda K. Koller uni oftalmologiyaga joriy etgan. 1905-yilda A. Eynxorn kokaindan zaharsizroq
-s1541	**prokain (novokain)** ni sintez qilgan; 1943-yilda N. Lofgren birinchi amid anestetik — **lidokain** ni yaratgan.
-s1542	**Kimyoviy tuzilishi.** Molekula uch qismdan iborat: **lipofil aromatik halqa** — **oraliq zanjir (efir yoki amid bog‘)** — **gidrofil amin guruhi**. Oraliq bog‘ga ko‘ra ikki guruh ajratiladi.
-s1543	Rasm 3.9
-s1544	Mahalliy anestetiklarning kimyoviy tuzilishi: kokain, novokain, dikain (murakkab efirlar), lidokain va trimekain (amidlar) (TTA farmakologiya kafedrasi o‘quv materiali)
-s1545	Jadval 3.12. Murakkab efirlar va amidlar guruhining farqlari
-s1546	Belgi
-s1547	Murakkab efirlar (prokain, tetrakain, benzokain, kokain)
-s1548	Amidlar (lidokain, artikain, bupivakain, ropivakain, mepivakain)
-s1549	Parchalanishi
-s1550	Qonda psevdoxolinesteraza (butirilxolinesteraza) ta’sirida, tez
-s1551	Jigarda mikrosomal fermentlar ta’sirida, sekinroq
-s1552	Ta’sir davomiyligi
-s1553	Odatda qisqa (kokain, tetrakain bundan mustasno)
-s1554	O‘rtacha va uzoq
-s1555	Allergik reaksiyalar
-s1556	Ko‘proq (metaboliti — paraaminobenzoy kislota, PABK)
-s1557	Juda kam
-s1558	Barqarorligi
-s1559	Eritmada kamroq barqaror
-s1560	Barqaror, avtoklavlash mumkin
-s1561	**Ta’sir mexanizmi.** Mahalliy anestetiklar nerv tolasi membranasidagi **potensialga bog‘liq natriy kanallarini** ichki tomondan bloklaydi. Natriy ionlarining hujayraga kirishi to‘xtaydi, harakat potensiali hosil bo‘lmaydi va impuls o‘tkazilishi bloklanadi.
-s1562	Rasm 3.10
-s1563	Anestetiklarning nerv tolasi bo‘ylab qo‘zg‘alish o‘tkazilishiga ta’siri: A — normada Na+ kirishi; B — anestetik molekulalari natriy kanallarini bloklaydi (TTA farmakologiya kafedrasi o‘quv materiali)
-s1564	Mexanizmning muhim tafsilotlari:
-s1565	Anestetik membranadan **ionlanmagan (asos) shaklda** o‘tadi, hujayra ichida esa **ionlangan (kation) shaklda** kanalni bloklaydi.
-s1566	Yallig‘langan to‘qimada (yiringda) muhit **kislotali**, anestetik ko‘proq ionlanib, membranadan yomon o‘tadi — anesteziya **zaif**.
-s1567	Kanallar **ochiq va faollashgan holatida** yaxshiroq bloklanadi (**“foydalanishga bog‘liq blokada”**) — tez-tez impuls o‘tkazuvchi og‘riq tolalari oldin bloklanadi.
-s1568	**Tolalarning sezgirligi:** ingichka, miyelinsiz C-tolalar va A-delta tolalar (og‘riq, harorat) oldin, keyin teginish va bosim, eng oxirida **harakat** (qalin A-alfa) tolalari bloklanadi. Sezgilarning yo‘qolish tartibi: **og‘riq → harorat → teginish → chuqur bosim → harakat**.
-s1569	**Vazokonstriktor qo‘shish.** Mahalliy anestetik eritmasiga **adrenalin** (epinefrin, odatda 1:100 000 – 1:200 000) qo‘shilsa: 1) qon tomirlar torayadi, anestetik sekin so‘riladi — ta’sir **uzayadi**; 2) qonga kam o‘tadi — **tizimli toksiklik kamayadi**, maksimal doza oshiriladi; 3) qon ketish kamayadi. Lekin adrenalinli eritmalar **barmoqlar, quloq suprasi, burun uchi, jinsiy olat** anesteziyasida (oxirgi arteriyalar — nekroz xavfi), og‘ir yurak kasalliklari, tireotoksikoz va MAO ingibitorlari qabul qilayotganlarda **ishlatilmaydi**.
-s1570	4.2. Mahalliy anesteziya turlari
-s1571	Jadval 3.13. Mahalliy anesteziya turlari va qo‘llanadigan anestetiklar
-s1572	Anesteziya turi
-s1573	Mohiyati
-s1574	Qo‘llanadigan anestetiklar
-s1575	Yuza (terminal, applikatsion)
-s1576	Shilliq qavat va jarohat yuzasiga surtish, tomizish, purkash
-s1577	Lidokain (2–10%), tetrakain (dikain, 0,25–2%), benzokain (anestezin), kokain, oksibuprokain (ko‘zda)
-s1578	Infiltratsion
-s1579	To‘qimalarni qatlamma-qatlam anestetik eritmasi bilan “shimdirish”
-s1580	Prokain (0,25–0,5%), lidokain (0,25–0,5%), artikain
-s1581	O‘tkazuvchi (regionar, nerv va chigal blokadasi)
-s1582	Nerv stvoli yoki chigal atrofiga yuborish
-s1583	Lidokain (1–2%), artikain (stomatologiyada), bupivakain, ropivakain
-s1584	Spinal (subaraxnoidal)
-s1585	Orqa miya suyuqligiga (L2–L3 dan pastda)
+s1540	**Tarix.** 1879-yilda rus olimi **V.K. Anrep** kokainning mahalliy anestetik ta’sirini aniqlagan; 1884-yilda K. Koller uni oftalmologiyaga joriy etgan. 1905-yilda A. Eynxorn kokaindan zaharsizroq **prokain (novokain)** ni sintez qilgan; 1943-yilda N. Lofgren birinchi amid anestetik — **lidokain** ni yaratgan.
+s1541	**Kimyoviy tuzilishi.** Molekula uch qismdan iborat: **lipofil aromatik halqa** — **oraliq zanjir (efir yoki amid bog‘)** — **gidrofil amin guruhi**. Oraliq bog‘ga ko‘ra ikki guruh ajratiladi.
+s1542	Rasm 3.9
+s1543	Mahalliy anestetiklarning kimyoviy tuzilishi: kokain, novokain, dikain (murakkab efirlar), lidokain va trimekain (amidlar) (TTA farmakologiya kafedrasi o‘quv materiali)
+s1544	Jadval 3.12. Murakkab efirlar va amidlar guruhining farqlari
+s1545	Belgi
+s1546	Murakkab efirlar (prokain, tetrakain, benzokain, kokain)
+s1547	Amidlar (lidokain, artikain, bupivakain, ropivakain, mepivakain)
+s1548	Parchalanishi
+s1549	Qonda psevdoxolinesteraza (butirilxolinesteraza) ta’sirida, tez
+s1550	Jigarda mikrosomal fermentlar ta’sirida, sekinroq
+s1551	Ta’sir davomiyligi
+s1552	Odatda qisqa (kokain, tetrakain bundan mustasno)
+s1553	O‘rtacha va uzoq
+s1554	Allergik reaksiyalar
+s1555	Ko‘proq (metaboliti — paraaminobenzoy kislota, PABK)
+s1556	Juda kam
+s1557	Barqarorligi
+s1558	Eritmada kamroq barqaror
+s1559	Barqaror, avtoklavlash mumkin
+s1560	**Ta’sir mexanizmi.** Mahalliy anestetiklar nerv tolasi membranasidagi **potensialga bog‘liq natriy kanallarini** ichki tomondan bloklaydi. Natriy ionlarining hujayraga kirishi to‘xtaydi, harakat potensiali hosil bo‘lmaydi va impuls o‘tkazilishi bloklanadi.
+s1561	Rasm 3.10
+s1562	Anestetiklarning nerv tolasi bo‘ylab qo‘zg‘alish o‘tkazilishiga ta’siri: A — normada Na+ kirishi; B — anestetik molekulalari natriy kanallarini bloklaydi (TTA farmakologiya kafedrasi o‘quv materiali)
+s1563	Mexanizmning muhim tafsilotlari:
+s1564	Anestetik membranadan **ionlanmagan (asos) shaklda** o‘tadi, hujayra ichida esa **ionlangan (kation) shaklda** kanalni bloklaydi.
+s1565	Yallig‘langan to‘qimada (yiringda) muhit **kislotali**, anestetik ko‘proq ionlanib, membranadan yomon o‘tadi — anesteziya **zaif**.
+s1566	Kanallar **ochiq va faollashgan holatida** yaxshiroq bloklanadi (**“foydalanishga bog‘liq blokada”**) — tez-tez impuls o‘tkazuvchi og‘riq tolalari oldin bloklanadi.
+s1567	**Tolalarning sezgirligi:** ingichka, miyelinsiz C-tolalar va A-delta tolalar (og‘riq, harorat) oldin, keyin teginish va bosim, eng oxirida **harakat** (qalin A-alfa) tolalari bloklanadi. Sezgilarning yo‘qolish tartibi: **og‘riq → harorat → teginish → chuqur bosim → harakat**.
+s1568	**Vazokonstriktor qo‘shish.** Mahalliy anestetik eritmasiga **adrenalin** (epinefrin, odatda 1:100 000 – 1:200 000) qo‘shilsa: 1) qon tomirlar torayadi, anestetik sekin so‘riladi — ta’sir **uzayadi**; 2) qonga kam o‘tadi — **tizimli toksiklik kamayadi**, maksimal doza oshiriladi; 3) qon ketish kamayadi. Lekin adrenalinli eritmalar **barmoqlar, quloq suprasi, burun uchi, jinsiy olat** anesteziyasida (oxirgi arteriyalar — nekroz xavfi), og‘ir yurak kasalliklari, tireotoksikoz va MAO ingibitorlari qabul qilayotganlarda **ishlatilmaydi**.
+s1569	4.2. Mahalliy anesteziya turlari
+s1570	Jadval 3.13. Mahalliy anesteziya turlari va qo‘llanadigan anestetiklar
+s1571	Anesteziya turi
+s1572	Mohiyati
+s1573	Qo‘llanadigan anestetiklar
+s1574	Yuza (terminal, applikatsion)
+s1575	Shilliq qavat va jarohat yuzasiga surtish, tomizish, purkash
+s1576	Lidokain (2–10%), tetrakain (dikain, 0,25–2%), benzokain (anestezin), kokain, oksibuprokain (ko‘zda)
+s1577	Infiltratsion
+s1578	To‘qimalarni qatlamma-qatlam anestetik eritmasi bilan “shimdirish”
+s1579	Prokain (0,25–0,5%), lidokain (0,25–0,5%), artikain
+s1580	O‘tkazuvchi (regionar, nerv va chigal blokadasi)
+s1581	Nerv stvoli yoki chigal atrofiga yuborish
+s1582	Lidokain (1–2%), artikain (stomatologiyada), bupivakain, ropivakain
+s1583	Spinal (subaraxnoidal)
+s1584	Orqa miya suyuqligiga (L2–L3 dan pastda)

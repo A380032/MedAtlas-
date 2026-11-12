@@ -125,6 +125,13 @@ def join_sentences(bl, n):
             n += 1
             continue
         if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
+                and not re.search(r"[.:;!?)»”\]*]\s*$", a["text"]) and re.match(r"\*\*[a-z‘(]", bl[i + 1]["text"])):
+            # "... A. Eynxorn kokaindan zaharsizroq" | "**prokain (novokain)** ni sintez qilgan; ..."
+            a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
+            del bl[i + 1]
+            n += 1
+            continue
+        if (i + 1 < len(bl) and a["type"] == "p" and bl[i + 1]["type"] == "p"
                 and a["text"].rstrip().endswith(";") and re.match(r"[a-z‘]{3,}", bl[i + 1]["text"])):
             # "... ko‘p — sanab bo‘lmaydi);" | "shakli (aylana, oval ...)" — sanoq sahifa chegarasida uzilgan
             a["text"] = a["text"].rstrip() + " " + bl[i + 1]["text"].lstrip()
@@ -306,7 +313,7 @@ def renumber():
 
 
 # ---------- 4) so'zlar ----------
-WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Sezilarl i kamaya di": "Sezilarli kamayadi",
+WORDS = {"Glyukok ortikoidl ar": "Glyukokortikoidlar", "Qaytaruvchanli k": "Qaytaruvchanlik", "Millisek undlar": "Millisekundlar", "Sezilarl i kamaya di": "Sezilarli kamayadi",
          "5-HT3antagoni stlar": "5-HT3-antagonistlar", "D2antagoni stlar": "D2-antagonistlar",
          "5-HT3antagonist lar": "5-HT3-antagonistlar", "D2antagonist lar": "D2-antagonistlar",
          "H1blokatorl ar": "H1-blokatorlar", "H2blokatorla r": "H2-blokatorlar"}
