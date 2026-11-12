@@ -304,6 +304,8 @@ WORDS = {"Kuchay gan": "Kuchaygan", "Susayga n": "Susaygan", "Eshitilmayd i": "E
 TEXT = {
     "(370–416 hafta)": "(37^0^–41^6^ hafta)",      # daraja belgisi yo'qolgan: 37 0/7 – 41 6/7 hafta
     "37–416 hafta": "37–41^6^ hafta",
+    "(1faza)": "(1-faza)",
+    "“tovonquloq”": "“tovon-quloq”",
 }
 
 
