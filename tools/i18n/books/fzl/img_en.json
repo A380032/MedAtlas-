@@ -4054,5 +4054,218 @@
     "smax": 22
    }
   ]
+ },
+ "p149_50.webp": {
+  "items": [
+   {
+    "box": [
+     26,
+     4,
+     90,
+     26
+    ],
+    "t": "cm/s",
+    "f": "sansb",
+    "smax": 20
+   },
+   {
+    "box": [
+     76,
+     392,
+     162,
+     431
+    ],
+    "t": "Aorta",
+    "f": "sansb",
+    "smax": 28
+   },
+   {
+    "box": [
+     243,
+     391,
+     442,
+     429
+    ],
+    "t": "Arterioles",
+    "f": "sansb",
+    "smax": 28
+   },
+   {
+    "box": [
+     554,
+     381,
+     700,
+     416
+    ],
+    "t": "Veins",
+    "f": "sansb",
+    "smax": 28
+   },
+   {
+    "box": [
+     116,
+     429,
+     310,
+     469
+    ],
+    "t": "Arteries",
+    "f": "sansb",
+    "smax": 28
+   },
+   {
+    "box": [
+     368,
+     435,
+     568,
+     477
+    ],
+    "t": "Capillaries",
+    "f": "sansb",
+    "smax": 28
+   }
+  ]
+ },
+ "p150_51.webp": {
+  "items": [
+   {
+    "box": [
+     150,
+     7,
+     670,
+     25
+    ],
+    "t": "Blood pressure in different parts of the vascular system (systemic circulation)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     644,
+     36,
+     741,
+     51
+    ],
+    "t": "mean pressure",
+    "f": "dv",
+    "a": "l",
+    "smax": 12
+   },
+   {
+    "box": [
+     107,
+     45,
+     180,
+     59
+    ],
+    "t": "systolic 120",
+    "f": "dv",
+    "a": "l",
+    "smax": 11,
+    "c": "#b0443a"
+   },
+   {
+    "box": [
+     107,
+     176,
+     180,
+     190
+    ],
+    "t": "diastolic 80",
+    "f": "dv",
+    "a": "l",
+    "smax": 11,
+    "c": "#b0443a"
+   },
+   {
+    "box": [
+     388,
+     93,
+     520,
+     136
+    ],
+    "t": "largest drop —\nin arterioles\n(“resistance vessels”)",
+    "f": "dv",
+    "a": "l",
+    "smax": 11
+   },
+   {
+    "box": [
+     7,
+     100,
+     27,
+     280
+    ],
+    "t": "Pressure, mm Hg",
+    "f": "dv",
+    "rot": 90,
+    "smax": 13
+   },
+   {
+    "box": [
+     194,
+     359,
+     267,
+     390
+    ],
+    "t": "Large\narteries",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     282,
+     359,
+     356,
+     374
+    ],
+    "t": "Arterioles",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     371,
+     359,
+     445,
+     376
+    ],
+    "t": "Capillaries",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     465,
+     359,
+     528,
+     374
+    ],
+    "t": "Venules",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     559,
+     359,
+     612,
+     374
+    ],
+    "t": "Veins",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     645,
+     359,
+     704,
+     390
+    ],
+    "t": "Venae\ncavae",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
  }
 }
