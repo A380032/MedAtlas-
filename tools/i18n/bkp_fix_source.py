@@ -308,6 +308,7 @@ TEXT = {
     "“tovonquloq”": "“tovon-quloq”",
     "Rahit": "Raxit",
     "Atakstik": "Ataktik",
+    "qisqargantimpanik": "qisqargan-timpanik",
 }
 
 
