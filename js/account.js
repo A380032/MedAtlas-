@@ -28,6 +28,7 @@
     if (!sb) {
       sb = window.supabase.createClient(URL_, KEY, { auth: { flowType: "pkce", persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
       sb.auth.onAuthStateChange((ev, sess) => {
+        if (ev === "PASSWORD_RECOVERY") setTimeout(() => newPassSheet(true), 300);
         const was = user?.id;
         user = sess?.user || null;
         setTimeout(() => {
@@ -224,6 +225,99 @@
     box.appendChild(s);
   }
 
+
+  /* ---------- Email + parol bilan kirish ---------- */
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const pwBlock = () => `<form class="acc-pw" id="pwForm" novalidate>
+      <label class="field" id="pwNameBox" hidden>Ismingiz<input id="pwName" maxlength="60" autocomplete="name" placeholder="Ism Familiya"></label>
+      <label class="field">Email<input id="pwEmail" type="email" inputmode="email" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="email@gmail.com"></label>
+      <label class="field">Parol<input id="pwPass" type="password" autocomplete="current-password" placeholder="Kamida 6 ta belgi"></label>
+      <button class="btn primary acc-pw-go" id="pwGo" type="submit">Kirish</button>
+      <div class="acc-pw-links"><a href="#" id="pwMode">Ro‘yxatdan o‘tish</a><a href="#" id="pwForgot">Parolni unutdim</a></div>
+    </form><div class="acc-or"><span>yoki</span></div>`;
+  function bindPw(root) {
+    let reg = false;
+    const q = (s) => root.querySelector(s);
+    const go = q("#pwGo"), pass = q("#pwPass");
+    const msg = (e) => {
+      const m = String(e?.message || e || "");
+      if (/invalid login|invalid credentials/i.test(m)) return "Email yoki parol noto‘g‘ri";
+      if (/already|registered/i.test(m)) return "Bu email bilan hisob bor. “Kirish”ni bosing";
+      if (/rate|too many|seconds/i.test(m)) return "Juda ko‘p urinish. Biroz kutib qayta urinib ko‘ring";
+      if (/password/i.test(m)) return "Parol kamida 6 ta belgidan iborat bo‘lsin";
+      if (/confirm/i.test(m)) return "Email tasdiqlanmagan";
+      return "Kirib bo‘lmadi. Internetni tekshiring";
+    };
+    q("#pwMode").addEventListener("click", (e) => {
+      e.preventDefault(); reg = !reg;
+      q("#pwNameBox").hidden = !reg;
+      go.textContent = reg ? "Ro‘yxatdan o‘tish" : "Kirish";
+      q("#pwMode").textContent = reg ? "Hisobim bor, kirish" : "Ro‘yxatdan o‘tish";
+      pass.autocomplete = reg ? "new-password" : "current-password";
+    });
+    q("#pwForgot").addEventListener("click", async (e) => {
+      e.preventDefault();
+      const email = q("#pwEmail").value.trim();
+      if (!EMAIL_RE.test(email)) { A.toast("Avval email manzilingizni yozing"); return; }
+      try {
+        const c = await client();
+        const { error } = await c.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
+        if (error) throw error;
+        A.toast("Parolni tiklash havolasi emailingizga yuborildi");
+      } catch (er) { A.toast(msg(er)); }
+    });
+    q("#pwForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = q("#pwEmail").value.trim(), pw = pass.value;
+      if (!EMAIL_RE.test(email)) { A.toast("Email manzilni to‘g‘ri yozing"); return; }
+      if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
+      if (!navigator.onLine) { A.toast("Kirish uchun internet kerak"); return; }
+      go.disabled = true;
+      try {
+        const c = await client();
+        if (reg) {
+          const nm = q("#pwName").value.trim();
+          const { data, error } = await c.auth.signUp({ email, password: pw, options: { data: nm ? { full_name: nm } : {} } });
+          if (error) throw error;
+          if (!data.session) { A.toast("Hisob ochildi. Emailingizni tasdiqlang yoki “Kirish”ni bosing"); }
+        } else {
+          const { error } = await c.auth.signInWithPassword({ email, password: pw });
+          if (error) throw error;
+        }
+      } catch (er) { A.toast(msg(er)); console.warn(er); }
+      go.disabled = false;
+    });
+  }
+
+  /* Yangi parol o'rnatish (tiklash havolasidan kelganda yoki profil sozlamalaridan) */
+  function newPassSheet(recovery) {
+    const m = user?.user_metadata || {};
+    const needEmail = !recovery && (m.telegram_id || /@telegram\.alvoramed\.app$/.test(user?.email || ""));
+    const sh = A.sheet(`<h3>${recovery ? "Yangi parol" : "Parol o‘rnatish"}</h3>
+      <p class="muted small" style="margin:0">${recovery ? "Yangi parolni yozing." : needEmail ? "Email va parol qo‘shing. Keyin Telegramsiz ham, shu email va parol bilan kira olasiz." : "Parol o‘rnating. Keyin Googlesiz ham, shu email va parol bilan kira olasiz."}</p>
+      <div class="pf-form">
+        ${needEmail ? `<label class="field">Email<input id="npEmail" type="email" inputmode="email" autocomplete="username" autocapitalize="none" placeholder="email@gmail.com"></label>` : ""}
+        <label class="field">Yangi parol<input id="npPass" type="password" autocomplete="new-password" placeholder="Kamida 6 ta belgi"></label>
+      </div>
+      <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="npSave">Saqlash</button></div>`);
+    sh.el.querySelector("#npSave").addEventListener("click", async () => {
+      const email = sh.el.querySelector("#npEmail")?.value.trim();
+      const pw = sh.el.querySelector("#npPass").value;
+      if (needEmail && !EMAIL_RE.test(email || "")) { A.toast("Email manzilni to‘g‘ri yozing"); return; }
+      if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
+      if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
+      try {
+        const c = await client();
+        const { error } = await c.auth.updateUser(needEmail ? { email, password: pw } : { password: pw });
+        if (error) throw error;
+        sh.close(); A.toast(needEmail ? "Saqlandi. Endi email va parol bilan kira olasiz" : "Parol saqlandi");
+        if (recovery) { history.replaceState(null, "", location.pathname + "#/"); A.refresh?.(); }
+      } catch (er) {
+        A.toast(/already|registered/i.test(er?.message || "") ? "Bu email boshqa hisobda ishlatilgan" : /same/i.test(er?.message || "") ? "Yangi parol eskisidan farq qilsin" : "Saqlab bo‘lmadi. Qayta urinib ko‘ring");
+      }
+    });
+  }
+
   /* ---------- Profil sahifasi ---------- */
   function privacy() {
     A.sheet(`<h3>Maxfiylik</h3>
@@ -244,13 +338,14 @@
     if (user) return pageIn();
     A.view.innerHTML = `<div class="acc-login"><h3>Hisobga kirish</h3>
         <p class="small muted" style="margin:0 0 10px">Kirsangiz, reja, yutuqlar va test natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi. Konsilium ham faqat hisob bilan ishlaydi.</p>
-        ${online ? `<button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
+        ${online ? `${pwBlock()}<button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
         <div class="acc-or"><span>yoki</span></div>
         <div id="tgBox" class="acc-tg"><small class="muted">Telegram tugmasi yuklanmoqda…</small></div>`
         : `<p class="small muted" style="margin:0">Kirish uchun internetga ulaning.</p>`}
         <p class="small muted" style="margin:10px 0 0"><a href="#" id="pvLink">Maxfiylik</a></p></div>`;
     A.$("#pvLink")?.addEventListener("click", (e) => { e.preventDefault(); privacy(); });
     if (online) {
+      bindPw(A.view);
       A.$("#gBtn").addEventListener("click", googleLogin);
       const box = A.$("#tgBox");
       box.innerHTML = "";
@@ -351,6 +446,7 @@
         <div class="tm-acts">
           <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
           ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
+          <button class="btn" id="pwSet">Parol o‘rnatish</button>
           <button class="btn" id="pvBtn">Maxfiylik</button>
           <button class="btn" id="outBtn">Chiqish</button>
           <button class="btn danger" id="delBtn">Akkauntni o‘chirish</button></div></details>`;
@@ -379,6 +475,7 @@
       } catch { A.toast("Olib tashlab bo‘lmadi. Internetni tekshiring"); }
     });
     A.$("#pvBtn").addEventListener("click", privacy);
+    A.$("#pwSet").addEventListener("click", () => newPassSheet(false));
     A.$("#outBtn").addEventListener("click", async () => {
       if (ls.get("tqsync:dirty") === "1") { await push(); }
       await sb.auth.signOut(); user = null; ls.del("tqacc:admin"); paintBtn(); A.toast("Chiqdingiz");
@@ -434,10 +531,12 @@
       return;
     }
     shell(`<h2>Kirish yoki ro‘yxatdan o‘tish</h2>
-      <p class="small muted">Birinchi kirishda hisob o‘zi ochiladi. Natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi.</p>
+      <p class="small muted"> Natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi.</p>
+      ${pwBlock()}
       <button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
       <div class="acc-or"><span>yoki</span></div>
       <div id="tgBox" class="acc-tg"><small class="muted">Telegram tugmasi yuklanmoqda…</small></div>`);
+    bindPw(v);
     v.querySelector("#gBtn").addEventListener("click", googleLogin);
     const box = v.querySelector("#tgBox");
     box.innerHTML = "";

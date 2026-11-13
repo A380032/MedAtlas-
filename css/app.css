@@ -1070,3 +1070,12 @@ body.gated #view { max-width: none; padding: 0; }
 .ad-tbl tr:last-child td { border-bottom: 0; }
 .ad-tbl td small { display: block; color: var(--ink-2); }
 .hello #adRe { margin-left: 8px; padding: 4px 12px; font-size: .8rem; vertical-align: middle; }
+
+/* Email + parol bilan kirish */
+.acc-pw { display: grid; gap: 10px; text-align: left; }
+.acc-pw .field { display: grid; gap: 6px; font-weight: 600; font-size: .9rem; margin: 0; }
+.acc-pw input { font: inherit; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 12px; padding: 12px; width: 100%; }
+.acc-pw input:focus { outline: none; border-color: var(--accent); }
+.acc-pw .acc-pw-go { width: 100%; padding: 13px; border-radius: 14px; font-size: 1rem; font-weight: 600; }
+.acc-pw-links { display: flex; justify-content: space-between; gap: 10px; font-size: .88rem; }
+.acc-pw-links a { color: var(--accent); text-decoration: none; font-weight: 600; }
