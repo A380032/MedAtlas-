@@ -419,12 +419,12 @@
       <div class="pf-form">
         <label class="field">Ismingiz<input id="pfName" maxlength="60" value="${esc(pf.name || "")}" placeholder="${esc(provName())}" autocomplete="off"></label>
         <label class="field">Kimsiz?
-          <select id="pfRole"><option value="">Ko‘rsatmayman</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
+          <select id="pfRole"><option value="">Tanlang</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
         <label class="field" id="pfNoteBox" ${pf.role === "boshqa" ? "" : "hidden"}>Kim ekaningizni yozing<input id="pfNote" maxlength="60" value="${esc(pf.note || "")}" placeholder="masalan, shifokor, rezident" autocomplete="off"></label>
         <label class="field">Fakultet<input id="pfFac" list="pfFacList" maxlength="80" value="${esc(trF(pf.faculty || ""))}" placeholder="Tanlang yoki yozing" autocomplete="off"><datalist id="pfFacList">${FACULTIES.map((f) => `<option value="${esc(trF(f))}">`).join("")}</datalist></label>
         <label class="field">Kurs
           <select id="pfCourse"><option value="">Ko‘rsatmayman</option>${courses.map((c) => `<option value="${esc(c)}"${sel(pf.course, c)}>${c}</option>`).join("")}</select></label>
-        <p class="small muted" style="margin:0">Hammasi ixtiyoriy. Kirish usulingiz (Google yoki Telegram) bu yerda o‘zgarmaydi.</p>
+        <p class="small muted" style="margin:0">Kimligingiz (talaba uchun fakultet va kurs ham) majburiy. Kirish usulingiz (Google yoki Telegram) bu yerda o‘zgarmaydi.</p>
       </div>
       <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="pfSave">Saqlash</button></div>`);
     const q = (id) => sh.el.querySelector(id);
@@ -432,6 +432,8 @@
     q("#pfSave").addEventListener("click", async () => {
       if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
       const role = q("#pfRole").value || null;
+      if (!role) { A.toast("Kimligingizni tanlang"); return; }
+      if (role === "talaba" && (!q("#pfFac").value.trim() || !q("#pfCourse").value)) { A.toast("Fakultet va kursni tanlang"); return; }
       const row = {
         name: q("#pfName").value.trim().slice(0, 60) || null,
         faculty: q("#pfFac").value.trim().slice(0, 80) || null,
@@ -463,6 +465,7 @@
         <div class="tm-acts">
           <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
           ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
+          <button class="btn" id="devBtn">Qurilmalarim</button>
           <button class="btn" id="pwSet">Parol o‘rnatish</button>
           <button class="btn" id="pvBtn">Maxfiylik</button>
           <button class="btn" id="outBtn">Chiqish</button>
@@ -493,6 +496,7 @@
     });
     A.$("#pvBtn").addEventListener("click", privacy);
     A.$("#pwSet").addEventListener("click", () => newPassSheet(false));
+    A.$("#devBtn").addEventListener("click", devicesSheet);
     A.$("#outBtn").addEventListener("click", async () => {
       if (ls.get("tqsync:dirty") === "1") { await push(); }
       await sb.auth.signOut(); user = null; ls.del("tqacc:admin"); paintBtn(); A.toast("Chiqdingiz");
@@ -526,6 +530,7 @@
     A = api;
     const v = A.view;
     v.classList.remove("wide");
+    if (!langAsked()) { langPick(v, () => gate(api)); return; }
     const shell = (inner) => {
       v.innerHTML = `<div class="gate">
         <div class="gate-hero"><img src="icons/icon-192.png" alt="" width="72" height="72"><h1>ALVORA <b>Med</b></h1>
@@ -561,6 +566,137 @@
     client().catch(() => {});
   }
 
+
+  /* ---------- Qurilmalar (bitta hisobga 3 tagacha) va majburiy profil ---------- */
+  const COURSES = ["1-kurs", "2-kurs", "3-kurs", "4-kurs", "5-kurs", "6-kurs", "Magistratura", "Ordinatura", "Boshqa"];
+  function modal(html) {
+    const back = document.createElement("div");
+    back.className = "sheet-back";
+    back.innerHTML = `<div class="sheet" role="dialog" aria-modal="true">${html}</div>`;
+    document.body.appendChild(back);
+    document.body.classList.add("noscroll");
+    const close = () => { back.remove(); if (!document.querySelector(".sheet-back,.lightbox")) document.body.classList.remove("noscroll"); };
+    return { el: back.querySelector(".sheet"), close };
+  }
+  const devName = (d) => esc((d.platform || "Qurilma") + " · " + (d.browser || "") + (d.standalone ? " (ilova)" : ""));
+  const devDate = (x) => { try { return new Date(x).toLocaleDateString(window.I18N.locale(), { day: "numeric", month: "short" }); } catch { return ""; } };
+  const thisDev = () => ls.get("tqdev:id");
+  function deviceRows(list) {
+    return list.map((d) => `<div class="acc-dev"><span><b>${devName(d)}</b><small>${esc(devDate(d.last_seen))}${d.id === thisDev() ? " · bu qurilma" : ""}</small></span>${d.id === thisDev() ? "" : `<button class="btn" data-rm="${esc(d.id)}">Chiqarish</button>`}</div>`).join("");
+  }
+  let devLock = null;
+  function deviceLimit(list) {
+    if (devLock) return;
+    devLock = modal(`<h3>Qurilmalar soni chegaraga yetdi</h3>
+      <p class="muted small" style="margin:0">Bitta hisobga 3 tagacha qurilma ulash mumkin. Davom etish uchun quyidagilardan birini chiqarib tashlang yoki shu qurilmadan chiqing.</p>
+      <div class="acc-devs">${deviceRows(list)}</div>
+      <div class="acts"><button class="btn" id="dlOut">Bu qurilmadan chiqish</button></div>`);
+    const el = devLock.el;
+    el.querySelectorAll("[data-rm]").forEach((b) => b.addEventListener("click", async () => {
+      b.disabled = true;
+      try {
+        const { error } = await sb.rpc("remove_device", { p_id: b.dataset.rm });
+        if (error) throw error;
+        devLock.close(); devLock = null;
+        A.toast("Qurilma chiqarildi");
+        touchDevice(true);
+      } catch { b.disabled = false; A.toast("Bajarib bo‘lmadi. Internetni tekshiring"); }
+    }));
+    el.querySelector("#dlOut").addEventListener("click", async () => {
+      devLock.close(); devLock = null;
+      await sb.auth.signOut(); user = null; ls.del("tqacc:admin"); paintBtn();
+      if (location.hash === "#/" || !location.hash) A.refresh?.(); else location.hash = "#/";
+    });
+  }
+  async function devicesSheet() {
+    if (!navigator.onLine) { A.toast("Buning uchun internet kerak"); return; }
+    try {
+      const c = await client();
+      const { data, error } = await c.rpc("my_devices");
+      if (error) throw error;
+      const sh = A.sheet(`<h3>Qurilmalarim</h3><p class="muted small" style="margin:0">Bitta hisobga 3 tagacha qurilma ulash mumkin.</p><div class="acc-devs">${deviceRows(data || [])}</div><div class="acts"><button class="btn" data-x="close">Yopish</button></div>`);
+      sh.el.querySelectorAll("[data-rm]").forEach((b) => b.addEventListener("click", async () => {
+        b.disabled = true;
+        const { error: e2 } = await c.rpc("remove_device", { p_id: b.dataset.rm });
+        if (e2) { b.disabled = false; A.toast("Bajarib bo‘lmadi"); return; }
+        b.closest(".acc-dev").remove(); A.toast("Qurilma chiqarildi");
+      }));
+    } catch { A.toast("Qurilmalar ro‘yxatini olib bo‘lmadi"); }
+  }
+
+  const profOK = (r) => !!r && !!r.role && (r.role !== "talaba" || (!!r.faculty && !!r.course));
+  let profLock = null, profChecked = "";
+  async function checkProfile() {
+    if (!user || !sb || !navigator.onLine || profLock || profChecked === user.id) return;
+    try {
+      const { data, error } = await sb.from("profiles").select("faculty,course,role,role_note").eq("id", user.id).maybeSingle();
+      if (error) return;
+      if (profOK(data)) { profChecked = user.id; return; }
+      profileGate(data || {});
+    } catch { /* */ }
+  }
+  function profileGate(pf) {
+    if (profLock) return;
+    const sel = (v, o) => (v === o ? " selected" : "");
+    profLock = modal(`<h3>Qisqacha o‘zingiz haqingizda</h3>
+      <p class="muted small" style="margin:0">Ilovani sizga moslash uchun ayting. Bu ma’lumot Konsiliumda xonadagilarga ko‘rinadi.</p>
+      <div class="pf-form">
+        <label class="field">Kimsiz?
+          <select id="ogRole"><option value="">Tanlang</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
+        <label class="field" id="ogFacBox" hidden>Fakultet
+          <select id="ogFac"><option value="">Tanlang</option>${FACULTIES.map((f) => `<option value="${esc(f)}"${sel(pf.faculty, f)}>${esc(trF(f))}</option>`).join("")}</select></label>
+        <label class="field" id="ogCourseBox" hidden>Kurs
+          <select id="ogCourse"><option value="">Tanlang</option>${COURSES.map((c) => `<option value="${esc(c)}"${sel(pf.course, c)}>${c}</option>`).join("")}</select></label>
+        <label class="field" id="ogNoteBox" hidden>Kim ekaningizni yozing<input id="ogNote" maxlength="60" value="${esc(pf.role_note || "")}" placeholder="masalan, shifokor, rezident" autocomplete="off"></label>
+      </div>
+      <div class="acts"><button class="btn" id="ogOut">Chiqish</button><button class="btn primary" id="ogSave">Davom etish</button></div>`);
+    const el = profLock.el, q = (i) => el.querySelector(i);
+    const upd = () => {
+      const r = q("#ogRole").value;
+      q("#ogFacBox").hidden = !(r === "talaba" || r === "oqituvchi");
+      q("#ogCourseBox").hidden = r !== "talaba";
+      q("#ogNoteBox").hidden = r !== "boshqa";
+    };
+    q("#ogRole").addEventListener("change", upd); upd();
+    q("#ogOut").addEventListener("click", async () => {
+      profLock.close(); profLock = null;
+      await sb.auth.signOut(); user = null; ls.del("tqacc:admin"); paintBtn();
+      if (location.hash === "#/" || !location.hash) A.refresh?.(); else location.hash = "#/";
+    });
+    q("#ogSave").addEventListener("click", async () => {
+      const role = q("#ogRole").value;
+      const row = { role: role || null, faculty: q("#ogFac").value || null, course: q("#ogCourse").value || null, role_note: role === "boshqa" ? (q("#ogNote").value.trim().slice(0, 60) || null) : null, updated_at: new Date().toISOString() };
+      if (role !== "talaba" && role !== "oqituvchi") row.faculty = null;
+      if (role !== "talaba") row.course = null;
+      if (!role) { A.toast("Kimligingizni tanlang"); return; }
+      if (role === "talaba" && (!row.faculty || !row.course)) { A.toast("Fakultet va kursni tanlang"); return; }
+      if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
+      const { error } = await sb.from("profiles").update(row).eq("id", user.id);
+      if (error) { A.toast("Saqlab bo‘lmadi. Qayta urinib ko‘ring"); return; }
+      const cur = prof();
+      setProf({ name: cur.name || "", faculty: row.faculty || "", course: row.course || "", role: row.role || "", note: row.role_note || "" });
+      profChecked = user.id; profLock.close(); profLock = null; paintBtn();
+      if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A.refresh?.();
+      A.toast("Rahmat!");
+    });
+  }
+
+  /* ---------- Birinchi kirishda til tanlash ---------- */
+  const langAsked = () => ls.get("tqlang:asked") === "1" || ls.get("tq:lang") !== null;
+  function langPick(v, done) {
+    const names = window.I18N?.NAMES || { uz: "O‘zbekcha", en: "English" };
+    v.innerHTML = `<div class="gate"><div class="gate-hero"><img src="icons/icon-192.png" alt="" width="72" height="72"><h1>ALVORA <b>Med</b></h1></div>
+      <div class="gate-card"><h2>Tilni tanlang · Choose your language</h2>
+        <div class="acc-langs">${(window.I18N?.SUPPORTED || ["uz", "en"]).map((l) => `<button class="btn primary" data-pl="${l}">${esc(names[l] || l)}</button>`).join("")}</div>
+        <p class="small muted" style="margin:10px 0 0">Keyinroq Sozlamalardan o‘zgartirish mumkin. · You can change it later in Settings.</p></div></div>`;
+    v.querySelectorAll("[data-pl]").forEach((b) => b.addEventListener("click", () => {
+      ls.set("tqlang:asked", "1");
+      if (b.dataset.pl === (window.I18N?.lang || "uz")) { done(); return; }
+      A.store.set("lang", b.dataset.pl);
+      location.reload();
+    }));
+  }
+
   /* ---------- Qurilma va faollik (faqat statistika uchun, shaxsiy ma'lumotsiz) ---------- */
   const today = () => { const d = new Date(); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); };
   function devInfo() {
@@ -579,8 +715,11 @@
     if (!id || !/^[0-9a-f-]{36}$/.test(id)) { id = crypto.randomUUID ? crypto.randomUUID() : "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (c ^ (Math.random() * 16) >> (c / 4)).toString(16)); ls.set("tqdev:id", id); }
     const d = devInfo();
     try {
-      const { error } = await sb.rpc("touch_device", { p_id: id, p_platform: d.platform, p_browser: d.browser, p_standalone: d.standalone, p_version: window.APP_VERSION || "", p_lang: window.I18N?.lang || "uz" });
-      if (!error) { ls.set("tqdev:day", key); ls.set("tqdev:at", String(Date.now())); }
+      const { data, error } = await sb.rpc("register_device", { p_id: id, p_platform: d.platform, p_browser: d.browser, p_standalone: d.standalone, p_version: window.APP_VERSION || "", p_lang: window.I18N?.lang || "uz" });
+      if (error) return;
+      if (data && data.ok === false) { deviceLimit(data.devices || []); return; }
+      ls.set("tqdev:day", key); ls.set("tqdev:at", String(Date.now()));
+      checkProfile();
     } catch { /* */ }
   }
   const isAdmin = () => !!user && ls.get("tqacc:admin") === user.id;
