@@ -112,7 +112,7 @@
      810,
      672
     ],
-    "t": "Fig. 10. Main forms of rod-shaped bacteria: 1 – intestinal rod; 2 – diplobacteria; 3 – streptobacteria; 4 – streptobacilli; 5, 6 – clostridia; 7 – causative agent of diphtheria; 8 – diphtheroids; 9 – causative agent of plague; 10 – coccobacteria; 11 – fusobacteria; 12 – mycobacteria; 13 – vibrios; 14 – spirilla; 15 – treponemes.",
+    "t": "Fig. 10. Main forms of rod-shaped bacteria: 1 – Escherichia coli; 2 – diplobacteria; 3 – streptobacteria; 4 – streptobacilli; 5, 6 – clostridia; 7 – causative agent of diphtheria; 8 – diphtheroids; 9 – causative agent of plague; 10 – coccobacteria; 11 – fusobacteria; 12 – mycobacteria; 13 – vibrios; 14 – spirilla; 15 – treponemes.",
     "s": 18
    }
   ]
@@ -1356,6 +1356,30 @@
     "t": "Morphology of fungi",
     "f": "serifb",
     "s": 16
+   },
+   {
+    "box": [
+     584,
+     242,
+     612,
+     255
+    ],
+    "t": "Hair",
+    "f": "serifb",
+    "s": 11,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     478,
+     364,
+     724,
+     388
+    ],
+    "t": "Microsporum cookei",
+    "f": "serifb",
+    "s": 18,
+    "bg": "#ffffff"
    }
   ]
  },
@@ -2345,7 +2369,7 @@
      804,
      233
     ],
-    "t": "Approximate agglutination\nreaction on a glass slide",
+    "t": "Presumptive slide\nagglutination reaction",
     "f": "serifb",
     "s": 14
    },
@@ -2669,7 +2693,7 @@
      786,
      264
     ],
-    "t": "Lymphocytes\nin the interphase",
+    "t": "Lymphocytes\nat the interface",
     "s": 18
    },
    {
@@ -3012,29 +3036,32 @@
     "t": "HIV-1",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
      350,
-     82,
-     568,
-     140
+     78,
+     586,
+     143
     ],
     "t": "Reverse\ntranscriptase (pol)",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
-     186,
-     118,
-     268,
-     147
+     182,
+     108,
+     270,
+     150
     ],
     "t": "Envelope",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3043,10 +3070,11 @@
      272,
      242
     ],
-    "t": "gp 125 (HIV-1)\ngp 125 (HIV-2)",
+    "t": "gp 120 (HIV-1)\ngp 125 (HIV-2)",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3058,7 +3086,8 @@
     "t": "gp 41 (HIV-1)\ngp 36 (HIV-2)",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3067,22 +3096,24 @@
      224,
      494
     ],
-    "t": "p 26 (HIV-1)\np 26 (HIV-2)",
+    "t": "p 24 (HIV-1)\np 26 (HIV-2)",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
      43,
      498,
-     142,
-     557
+     160,
+     567
     ],
     "t": "Matrix\nprotein",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3094,7 +3125,8 @@
     "t": "p46",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3106,7 +3138,8 @@
     "t": "p21",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3118,7 +3151,8 @@
     "t": "p19",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3130,7 +3164,8 @@
     "t": "p17",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3142,7 +3177,8 @@
     "t": "p24",
     "a": "l",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
@@ -3153,18 +3189,20 @@
     ],
     "t": "Core",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    },
    {
     "box": [
      330,
-     703,
-     596,
-     764
+     700,
+     600,
+     772
     ],
     "t": "RNA and nucleocapsid\nproteins",
     "f": "serifb",
-    "s": 18
+    "s": 18,
+    "bg": "#ffffff"
    }
   ]
  },
@@ -3594,7 +3632,7 @@
      802,
      612
     ],
-    "t": "Pisu test",
+    "t": "Pizu test",
     "s": 17,
     "c": "#2a2a2a"
    },
@@ -3616,7 +3654,7 @@
      356,
      774
     ],
-    "t": "Phagovar\ntyping",
+    "t": "Phage\ntyping",
     "f": "sans",
     "s": 17,
     "c": "#2a2a2a"
@@ -3639,7 +3677,7 @@
      824,
      788
     ],
-    "t": "Bacterio-\ncinogeny",
+    "t": "Bacteriocin\ntyping",
     "f": "sans",
     "s": 21,
     "c": "#2a2a2a"
@@ -3905,7 +3943,7 @@
      146,
      992
     ],
-    "t": "Terazine MPA (−)",
+    "t": "Tyrosine MPA (−)",
     "rot": 90,
     "s": 16,
     "c": "#2a2a2a"
@@ -3929,7 +3967,7 @@
      272,
      980
     ],
-    "t": "Ya’s agar (−)",
+    "t": "Semisolid agar (−)",
     "rot": 90,
     "s": 16,
     "c": "#2a2a2a"
@@ -3977,7 +4015,7 @@
      801,
      990
     ],
-    "t": "IF",
+    "t": "ELISA",
     "rot": 90,
     "s": 24,
     "bg": "#c9cbc3",
@@ -4154,7 +4192,7 @@
      662,
      200
     ],
-    "t": "Material for examination: sputum, exudate, pus, gastric and bronchial lavage waters, cerebrospinal fluid, urine. Concentrated material",
+    "t": "Material for examination: sputum, exudate, pus, gastric and bronchial washings, cerebrospinal fluid, urine. Concentrated material",
     "s": 19,
     "c": "#2a2a2a"
    },
@@ -4231,7 +4269,7 @@
      842,
      634
     ],
-    "t": "Autopsy and pathoanatomical examination; smears from organs and inoculation on media",
+    "t": "Autopsy and pathological examination; smears from organs and inoculation on media",
     "s": 17,
     "c": "#2a2a2a"
    },
@@ -4313,7 +4351,7 @@
      472,
      1102
     ],
-    "t": "IF",
+    "t": "ELISA",
     "rot": 90,
     "s": 20,
     "c": "#2a2a2a"
@@ -4340,7 +4378,7 @@
      842,
      175
     ],
-    "t": "Material for examination: sputum, exudate, pus, gastric and bronchial lavage waters, cerebrospinal fluid, urine",
+    "t": "Material for examination: sputum, exudate, pus, gastric and bronchial washings, cerebrospinal fluid, urine",
     "s": 19,
     "c": "#2a2a2a"
    },
@@ -4351,7 +4389,7 @@
      842,
      372
     ],
-    "t": "Immunoluminescence method: with fluorochrome-labeled antibodies (result)",
+    "t": "Immunofluorescence method: with fluorochrome-labeled antibodies (result)",
     "s": 19,
     "c": "#2a2a2a"
    },
@@ -4579,7 +4617,7 @@
      857,
      1105
     ],
-    "t": "C – 1:400",
+    "t": "K – 1:400",
     "s": 18,
     "c": "#2a2a2a"
    },
@@ -4686,7 +4724,7 @@
      352,
      712
     ],
-    "t": "AG",
+    "t": "A+",
     "s": 19,
     "c": "#2a2a2a"
    },
@@ -4697,7 +4735,7 @@
      460,
      712
     ],
-    "t": "AG",
+    "t": "A+",
     "s": 19,
     "c": "#2a2a2a"
    },
@@ -4708,7 +4746,7 @@
      518,
      712
     ],
-    "t": "AG",
+    "t": "A+",
     "s": 19,
     "c": "#2a2a2a"
    },
@@ -4730,7 +4768,7 @@
      682,
      780
     ],
-    "t": "Serological identification of Flexner",
+    "t": "Serological identification of Sh. flexneri",
     "s": 20,
     "c": "#2a2a2a"
    },
@@ -4764,7 +4802,7 @@
      826,
      968
     ],
-    "t": "Result: genus Shigella, species Flexner, subtype Flexner 2b was isolated",
+    "t": "Result: genus Shigella, species Sh. flexneri, subserotype 2b was isolated",
     "s": 19,
     "c": "#2a2a2a"
    }
@@ -4982,7 +5020,7 @@
      732,
      216,
      760,
-     232
+     234
     ],
     "t": "titer",
     "s": 12,
@@ -4993,7 +5031,7 @@
      732,
      261,
      760,
-     277
+     279
     ],
     "t": "titer",
     "s": 12,
@@ -5004,7 +5042,7 @@
      732,
      309,
      760,
-     325
+     327
     ],
     "t": "titer",
     "s": 12,
@@ -5015,7 +5053,7 @@
      732,
      403,
      760,
-     421
+     423
     ],
     "t": "titer",
     "s": 12,
@@ -5024,7 +5062,7 @@
    {
     "box": [
      722,
-     236,
+     233,
      768,
      257
     ],
@@ -5035,7 +5073,7 @@
    {
     "box": [
      722,
-     282,
+     279,
      768,
      303
     ],
@@ -5046,7 +5084,7 @@
    {
     "box": [
      722,
-     325,
+     322,
      768,
      343
     ],
@@ -5057,7 +5095,7 @@
    {
     "box": [
      722,
-     421,
+     418,
      768,
      439
     ],
@@ -5345,7 +5383,7 @@
      668,
      281,
      840,
-     331
+     339
     ],
     "t": "Test + control:\nAscoli reaction result",
     "s": 14,
@@ -5402,7 +5440,7 @@
      286,
      456
     ],
-    "t": "Egg yolk\nagar (+)",
+    "t": "Egg yolk\nagar (−)",
     "s": 12,
     "c": "#2a2a2a"
    },
@@ -5474,7 +5512,7 @@
      54,
      72,
      808,
-     148
+     154
     ],
     "t": "Detection of T. pallidum from the lesion (hard chancre discharge, lymph node aspirate, rash fluid in secondary syphilis, cerebrospinal fluid)",
     "s": 19,
@@ -5518,7 +5556,7 @@
      72,
      578,
      384,
-     622
+     629
     ],
     "t": "Immunofluorescence\nreaction",
     "s": 20,
