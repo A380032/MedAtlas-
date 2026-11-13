@@ -4,7 +4,7 @@ Spetsifikatsiya: tools/i18n/books/<id>/img_en.json
   {"<nom>.webp": {"also": ["<dublikat>.webp"], "items": [
       {"box": [x0, y0, x1, y1], "t": "English text", ...ixtiyoriy...}, ...]}}
 Bandning ixtiyoriy maydonlari:
-  "f":  shrift — serif | serifb | serifi | sans | sansb | dv | dvb | dvi | dvc | dvbi | dvs | dvsb (DejaVu)   (standart: serif)
+  "f":  shrift — serif | serifb | serifi | serifbi | sans | sansb | dv | dvb | dvi | dvc | dvbi | dvs | dvsb (DejaVu) | inter | interm | interb   (standart: serif)
   "s":  shrift o'lchami px (bo'lmasa qutiga sig'adigan eng kattasi tanlanadi)
   "smax": avtomatik tanlanadigan o'lchamning yuqori chegarasi px (asl yozuv o'lchamidan oshmasin)
   "a":  l | c | r — gorizontal tekislash (standart: c)
@@ -16,6 +16,7 @@ Bandning ixtiyoriy maydonlari:
   "lines": [[x0, y0, x1, y1, "#rrggbb", qalinlik], ...] — fon to'ldirilgandan keyin qayta chiziladigan chiziqlar
   "ell": true — quti o'rniga unga ichki chizilgan ellips to'ldiriladi (doira ichidagi yozuv)
   "cbox"+"ang": qiya yozuv (markaz, eni, bo'yi, burchak)
+  "ss": k — yozuvni k marta katta chizib kichraytirish (standart: shrift ≤ 11 px bo'lsa 4, aks holda 1)
   "src": [dx, dy] — fon sifatida (dx, dy) ga siljigan qo'shni sohadan nusxa olinadi (teksturali fon uchun)
 Natija: data/en/img/<id>/<nom>.webp (asl o'lcham bilan). Ilova (js/app.js) va tools/book_pdf.py
 inglizcha rejimda shu fayl bo'lsa uni ishlatadi, bo'lmasa asl rasmni."""
@@ -28,6 +29,7 @@ FONTS = {
     "serif": "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
     "serifb": "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf",
     "serifi": "/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf",
+    "serifbi": "/usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf",
     "sans": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
     "sansb": "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
     "dv": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",          # matplotlib/graphviz diagrammalari
@@ -37,6 +39,9 @@ FONTS = {
     "dvbi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf",
     "dvs": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
     "dvsb": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+    "inter": "/usr/share/fonts/opentype/inter/Inter-Regular.otf",     # matplotlib (Inter) grafiklari
+    "interm": "/usr/share/fonts/opentype/inter/Inter-Medium.otf",
+    "interb": "/usr/share/fonts/opentype/inter/Inter-Bold.otf",
 }
 
 
@@ -205,17 +210,23 @@ def put(im, it):
     bw, bh = x1 - x0 + 1, y1 - y0 + 1
     if rot in (90, 270):
         bw, bh = bh, bw
-    layer = Image.new("RGBA", (bw, bh), (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
+    d = ImageDraw.Draw(Image.new("RGBA", (bw, bh), (0, 0, 0, 0)))
     font, lines, lh = layout(d, it["t"], it.get("f", "serif"), bw - 2 * pad, bh - 2 * pad, it.get("s"), it.get("smax"))
+    ext = 0 if rot else int(font.size * 0.35) + 2   # pastki chiziq osti (descender) qirqilmasin
+    K = it.get("ss", 4 if font.size <= 11 else 1)   # mayda yozuv: kattalashtirib chizib, kichraytirish (asl rasmdagidek silliq)
+    fontk = ImageFont.truetype(FONTS[it.get("f", "serif")], font.size * K) if K > 1 else font
+    layer = Image.new("RGBA", (bw * K, (bh + ext) * K), col + (0,))
+    d = ImageDraw.Draw(layer)
     total = len(lines) * lh
     y = (bh - total) / 2 + (lh - font.size) * 0.3
     for l in lines:
-        tw = d.textlength(l, font=font)
+        tw = d.textlength(l, font=fontk) / K
         a = it.get("a", "c")
         x = pad if a == "l" else (bw - pad - tw if a == "r" else (bw - tw) / 2)
-        d.text((x, y), l, font=font, fill=col + (255,))
+        d.text((x * K, y * K), l, font=fontk, fill=col + (255,))
         y += lh
+    if K > 1:
+        layer = layer.resize((bw, bh + ext), Image.LANCZOS)
     if rot:
         layer = layer.rotate(rot, expand=True)
     im.paste(layer, (x0, y0), layer)

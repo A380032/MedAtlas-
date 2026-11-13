@@ -1,0 +1,4493 @@
+{
+ "p15_1.webp": {
+  "items": [
+   {
+    "box": [
+     282,
+     19,
+     386,
+     51
+    ],
+    "t": "Pathogenic\nfactor acts",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     284,
+     93,
+     384,
+     125
+    ],
+    "t": "Latent\nperiod",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     275,
+     167,
+     394,
+     195
+    ],
+    "t": "Prodromal period",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     276,
+     237,
+     393,
+     270
+    ],
+    "t": "Manifest period\n(clinical signs)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     284,
+     311,
+     384,
+     344
+    ],
+    "t": "Outcome of\nthe disease",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     21,
+     388,
+     140,
+     416
+    ],
+    "t": "Full recovery",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     179,
+     388,
+     301,
+     416
+    ],
+    "t": "Partial recovery",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     340,
+     386,
+     516,
+     418
+    ],
+    "t": "Relapse /\ntransition to a chronic form",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     555,
+     386,
+     738,
+     418
+    ],
+    "t": "Death\n(via terminal states)",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p17_2.webp": {
+  "items": [
+   {
+    "box": [
+     24,
+     22,
+     351,
+     62
+    ],
+    "t": "Contributing conditions\n(chilling, starvation, stress, fatigue)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     397,
+     22,
+     735,
+     63
+    ],
+    "t": "Hindering conditions\n(proper nutrition, hardening, vaccination)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     297,
+     84,
+     387,
+     103
+    ],
+    "t": "enhance",
+    "f": "dv",
+    "smax": 17,
+    "a": "l"
+   },
+   {
+    "box": [
+     470,
+     85,
+     567,
+     105
+    ],
+    "t": "weaken",
+    "f": "dv",
+    "smax": 17,
+    "a": "l"
+   },
+   {
+    "box": [
+     94,
+     127,
+     239,
+     167
+    ],
+    "t": "Cause\n(etiological factor)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     315,
+     129,
+     438,
+     164
+    ],
+    "t": "ORGANISM",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     514,
+     129,
+     622,
+     164
+    ],
+    "t": "DISEASE",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p20_3.webp": {
+  "items": [
+   {
+    "box": [
+     165,
+     35,
+     395,
+     98
+    ],
+    "t": "Blood loss",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     117,
+     177,
+     443,
+     249
+    ],
+    "t": "Decrease in circulating\nblood volume",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     104,
+     328,
+     456,
+     399
+    ],
+    "t": "Decrease in venous\nreturn to the heart",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     102,
+     479,
+     458,
+     550
+    ],
+    "t": "Fall in stroke volume\nand cardiac output",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     99,
+     629,
+     461,
+     693
+    ],
+    "t": "Arterial pressure falls",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     593,
+     732,
+     732,
+     754
+    ],
+    "t": "vicious circle",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     37,
+     794,
+     523,
+     866
+    ],
+    "t": "Coronary blood flow\ndecreases → myocardial hypoxia",
+    "f": "dv",
+    "smax": 29
+   },
+   {
+    "box": [
+     90,
+     945,
+     470,
+     1016
+    ],
+    "t": "Myocardial contractility\nweakens further",
+    "f": "dv",
+    "smax": 29
+   }
+  ]
+ },
+ "p29_4.webp": {
+  "items": [
+   {
+    "box": [
+     344,
+     25,
+     604,
+     74
+    ],
+    "t": "High temperature + humidity,\nheavy physical work",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     376,
+     131,
+     572,
+     180
+    ],
+    "t": "Decreased\nheat loss",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     356,
+     237,
+     592,
+     286
+    ],
+    "t": "Rise in body temperature\n(hyperthermia)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     64,
+     343,
+     411,
+     392
+    ],
+    "t": "Profuse sweating →\ndehydration, loss of Na⁺ and Cl⁻",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     368,
+     424,
+     556,
+     473
+    ],
+    "t": "Dilation of\nskin vessels",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     75,
+     506,
+     400,
+     554
+    ],
+    "t": "Blood thickens,\ncirculating blood volume falls",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     594,
+     583,
+     692,
+     599
+    ],
+    "t": "vicious circle",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     235,
+     628,
+     487,
+     676
+    ],
+    "t": "Arterial pressure falls\n(collapse)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     242,
+     734,
+     480,
+     783
+    ],
+    "t": "Cerebral hypoxia\nand edema",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     27,
+     840,
+     398,
+     888
+    ],
+    "t": "Heat stroke:\nloss of consciousness, seizures, risk of death",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     448,
+     839,
+     732,
+     888
+    ],
+    "t": "Failure of the\nthermoregulatory center",
+    "f": "dv",
+    "smax": 20
+   }
+  ]
+ },
+ "p34_5.webp": {
+  "items": [
+   {
+    "box": [
+     321,
+     22,
+     463,
+     61
+    ],
+    "t": "3 white mice\n(of equal weight)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     24,
+     109,
+     227,
+     165
+    ],
+    "t": "Mouse 1:\nroom temperature (+20 °C)\n— control",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     271,
+     109,
+     513,
+     165
+    ],
+    "t": "Mouse 2:\ncooled (+5 °C, until\nbody temperature falls)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     558,
+     117,
+     735,
+     156
+    ],
+    "t": "Mouse 3:\nheated (+40 °C)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     280,
+     213,
+     504,
+     269
+    ],
+    "t": "Lowering the chamber pressure\nat the same rate\n(“ascent to altitude”)",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     250,
+     317,
+     534,
+     390
+    ],
+    "t": "Recording the “altitude” and time\nat which each stage appears:\nexcitation → change in breathing →\ncyanosis → convulsions → agonal breathing",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p42_6.webp": {
+  "items": [
+   {
+    "box": [
+     183,
+     17,
+     273,
+     41
+    ],
+    "t": "REACTIVITY",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     19,
+     80,
+     110,
+     108
+    ],
+    "t": "Biological (species)\nreactivity",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     147,
+     80,
+     310,
+     108
+    ],
+    "t": "Group reactivity\n(age, sex, constitution)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     346,
+     80,
+     415,
+     107
+    ],
+    "t": "Individual\nreactivity",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     228,
+     146,
+     302,
+     174
+    ],
+    "t": "Physiological\n(normal)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     463,
+     148,
+     530,
+     172
+    ],
+    "t": "Pathological",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     90,
+     212,
+     190,
+     240
+    ],
+    "t": "Specific\n(immunological)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     226,
+     214,
+     304,
+     238
+    ],
+    "t": "Nonspecific",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     340,
+     214,
+     421,
+     238
+    ],
+    "t": "Hyperergy",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     458,
+     214,
+     535,
+     238
+    ],
+    "t": "Hypoergy",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     571,
+     214,
+     638,
+     238
+    ],
+    "t": "Dysergy",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     675,
+     214,
+     740,
+     238
+    ],
+    "t": "Anergy",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p49_9.webp": {
+  "items": [
+   {
+    "box": [
+     306,
+     27,
+     494,
+     74
+    ],
+    "t": "3 white mice",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     29,
+     134,
+     224,
+     209
+    ],
+    "t": "Mouse 1:\nphysiological saline\n— control",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     278,
+     134,
+     521,
+     209
+    ],
+    "t": "Mouse 2:\nnarcotic agent\n(inhibition, sleep)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     575,
+     134,
+     730,
+     209
+    ],
+    "t": "Mouse 3:\ncaffeine\n(excitation)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     233,
+     269,
+     567,
+     322
+    ],
+    "t": "“Ascent to altitude” at the same\nrate in the pressure chamber",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     198,
+     382,
+     601,
+     435
+    ],
+    "t": "Comparing the “altitude” and time\nat which the stages of hypoxia appear",
+    "f": "dv",
+    "smax": 22
+   }
+  ]
+ },
+ "p60_11.webp": {
+  "items": [
+   {
+    "box": [
+     228,
+     27,
+     496,
+     80
+    ],
+    "t": "Impaired outflow of\nblood through the veins",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     176,
+     140,
+     548,
+     193
+    ],
+    "t": "Venules and capillaries dilate,\nblood flow slows",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     29,
+     254,
+     317,
+     307
+    ],
+    "t": "Hydrostatic pressure in\nthe capillaries rises",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     371,
+     254,
+     730,
+     307
+    ],
+    "t": "O₂ falls and CO₂ rises in the blood\n(reduced Hb increases)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     65,
+     367,
+     282,
+     414
+    ],
+    "t": "Edema (transudate)",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     336,
+     367,
+     627,
+     413
+    ],
+    "t": "Cyanosis, fall in temperature",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     317,
+     474,
+     548,
+     520
+    ],
+    "t": "Tissue hypoxia",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     313,
+     581,
+     553,
+     633
+    ],
+    "t": "Dystrophy, atrophy,\nsclerosis (induration)",
+    "f": "dv",
+    "smax": 22
+   }
+  ]
+ },
+ "p70_12.webp": {
+  "items": [
+   {
+    "box": [
+     22,
+     20,
+     232,
+     84
+    ],
+    "t": "Damage to the vessel wall\n(endothelium)\n(atherosclerosis, inflammation,\ninjury, catheter)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     273,
+     20,
+     485,
+     84
+    ],
+    "t": "Slowing and turbulence\nof blood flow\n(venous stasis, arrhythmia,\naneurysm, prolonged bed rest)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     526,
+     20,
+     737,
+     84
+    ],
+    "t": "Increased blood coagulability\n(hypercoagulation)\n(tumor, pregnancy,\nthrombophilias)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     330,
+     128,
+     428,
+     158
+    ],
+    "t": "THROMBOSIS",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p72_13.webp": {
+  "items": [
+   {
+    "box": [
+     20,
+     19,
+     175,
+     45
+    ],
+    "t": "Intestinal and\nsplenic veins",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     262,
+     18,
+     370,
+     47
+    ],
+    "t": "Portal vein\n(liver)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     33,
+     79,
+     161,
+     108
+    ],
+    "t": "Veins of the\nsystemic circulation",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     260,
+     79,
+     372,
+     108
+    ],
+    "t": "Right atrium\nand ventricle",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     598,
+     72,
+     709,
+     101
+    ],
+    "t": "Branches of the\npulmonary artery",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     434,
+     98,
+     550,
+     118
+    ],
+    "t": "paradoxical embolism\n(patent foramen ovale)",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     219,
+     146,
+     413,
+     188
+    ],
+    "t": "Pulmonary veins,\nleft atrium and ventricle,\naorta",
+    "f": "dv",
+    "smax": 13
+   },
+   {
+    "box": [
+     568,
+     140,
+     740,
+     182
+    ],
+    "t": "Systemic arteries:\nbrain, kidney, spleen,\nintestine, legs",
+    "f": "dv",
+    "smax": 13
+   }
+  ]
+ },
+ "p81_14.webp": {
+  "items": [
+   {
+    "box": [
+     103,
+     23,
+     248,
+     61
+    ],
+    "t": "Phlogogenic factor",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     53,
+     113,
+     298,
+     156
+    ],
+    "t": "Primary alteration\n(direct action of the factor)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     26,
+     208,
+     325,
+     288
+    ],
+    "t": "Mediators of inflammation\n(histamine, serotonin, kinins,\nprostaglandins, leukotrienes,\ncytokines, complement)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     59,
+     340,
+     292,
+     402
+    ],
+    "t": "Secondary alteration\n(lysosomal enzymes,\nfree radicals, acidosis)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     339,
+     349,
+     602,
+     392
+    ],
+    "t": "Vascular reactions and\nmicrocirculatory disturbance",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     213,
+     453,
+     444,
+     497
+    ],
+    "t": "Exudation\n(increased permeability)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     490,
+     454,
+     734,
+     497
+    ],
+    "t": "Leukocyte emigration\nand phagocytosis",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     363,
+     548,
+     576,
+     592
+    ],
+    "t": "Proliferation and\nrepair (reparation)",
+    "f": "dv",
+    "smax": 18
+   }
+  ]
+ },
+ "p93_17.webp": {
+  "items": [
+   {
+    "box": [
+     58,
+     20,
+     182,
+     55
+    ],
+    "t": "1. Approach\n(chemotaxis)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     32,
+     99,
+     208,
+     134
+    ],
+    "t": "2. Adhesion\n(opsonins: IgG, C3b)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     22,
+     179,
+     217,
+     214
+    ],
+    "t": "3. Engulfment\n(phagosome formation)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     53,
+     276,
+     186,
+     306
+    ],
+    "t": "4. Phagolysosome",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     229,
+     259,
+     460,
+     324
+    ],
+    "t": "Oxygen-dependent:\nNADPH oxidase → O₂⁻, H₂O₂\nmyeloperoxidase → HOCl\n(“respiratory burst”)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     502,
+     266,
+     736,
+     316
+    ],
+    "t": "Oxygen-independent:\nlysozyme, defensins,\nlactoferrin, proteases",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     242,
+     369,
+     447,
+     399
+    ],
+    "t": "5. Killing and digestion",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p103_18.webp": {
+  "items": [
+   {
+    "box": [
+     155,
+     39,
+     604,
+     110
+    ],
+    "t": "Allergen (first exposure)",
+    "f": "dv",
+    "smax": 31
+   },
+   {
+    "box": [
+     41,
+     195,
+     719,
+     341
+    ],
+    "t": "I. Immunological stage\nsensitization: formation of IgE (or IgG, IgM,\nsensitized T lymphocytes)\n(7–14 days)",
+    "f": "dv",
+    "smax": 31
+   },
+   {
+    "box": [
+     149,
+     427,
+     611,
+     499
+    ],
+    "t": "Repeated exposure to the allergen",
+    "f": "dv",
+    "smax": 31
+   },
+   {
+    "box": [
+     75,
+     584,
+     684,
+     730
+    ],
+    "t": "II. Pathochemical stage\nrelease of mediators: histamine,\nleukotrienes, prostaglandins, PAF,\ncomplement, cytokines",
+    "f": "dv",
+    "smax": 31
+   },
+   {
+    "box": [
+     79,
+     815,
+     680,
+     960
+    ],
+    "t": "III. Pathophysiological stage\n(clinical manifestations): bronchospasm,\nincreased vascular permeability, edema,\nhypotension, itching",
+    "f": "dv",
+    "smax": 31
+   }
+  ]
+ },
+ "p105_19.webp": {
+  "items": [
+   {
+    "box": [
+     232,
+     24,
+     493,
+     87
+    ],
+    "t": "Allergen + IgE\non the surface of mast cells\nand basophils (FcεRI)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     269,
+     140,
+     456,
+     204
+    ],
+    "t": "Degranulation:\nhistamine, tryptase,\nleukotrienes, PAF",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     214,
+     257,
+     511,
+     301
+    ],
+    "t": "Increased permeability →\nplasma leaks into the tissue",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     559,
+     257,
+     709,
+     301
+    ],
+    "t": "Bronchospasm,\nlaryngeal edema",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     26,
+     354,
+     220,
+     399
+    ],
+    "t": "Sharp dilation\nof vessels",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     269,
+     354,
+     478,
+     399
+    ],
+    "t": "Decrease in circulating\nblood volume",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     536,
+     357,
+     733,
+     396
+    ],
+    "t": "Asphyxia, hypoxia",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     133,
+     451,
+     362,
+     496
+    ],
+    "t": "Sharp fall in arterial\npressure (shock)",
+    "f": "dv",
+    "smax": 18
+   }
+  ]
+ },
+ "p118_21.webp": {
+  "items": [
+   {
+    "box": [
+     435,
+     29,
+     706,
+     77
+    ],
+    "t": "Heart failure",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     300,
+     140,
+     614,
+     189
+    ],
+    "t": "Cardiac output decreases",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     30,
+     252,
+     372,
+     301
+    ],
+    "t": "Renal perfusion decreases",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     40,
+     363,
+     310,
+     419
+    ],
+    "t": "Renin → angiotensin II\n→ aldosterone",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     365,
+     367,
+     605,
+     415
+    ],
+    "t": "ADH secretion increases",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     219,
+     481,
+     613,
+     537
+    ],
+    "t": "Na⁺ and water are retained,\ncirculating blood volume increases",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     430,
+     600,
+     668,
+     649
+    ],
+    "t": "Venous pressure rises",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     399,
+     711,
+     699,
+     767
+    ],
+    "t": "Hydrostatic pressure in\nthe capillaries rises",
+    "f": "dv",
+    "smax": 23
+   },
+   {
+    "box": [
+     370,
+     830,
+     729,
+     878
+    ],
+    "t": "Edema (begins in the legs)",
+    "f": "dv",
+    "smax": 23
+   }
+  ]
+ },
+ "p139_24.webp": {
+  "items": [
+   {
+    "box": [
+     296,
+     15,
+     489,
+     34
+    ],
+    "t": "Acid–base imbalance",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     263,
+     67,
+     322,
+     89
+    ],
+    "t": "ACIDOSIS\npH < 7.35",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     463,
+     67,
+     522,
+     89
+    ],
+    "t": "ALKALOSIS\npH > 7.45",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     17,
+     128,
+     168,
+     161
+    ],
+    "t": "Respiratory acidosis\npCO₂ ↑ (> 45 mm Hg)\nhypoventilation",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     201,
+     123,
+     384,
+     166
+    ],
+    "t": "Metabolic acidosis\nHCO₃⁻ ↓ (< 22 mmol/l)\nketoacidosis, lactic acidosis,\nrenal failure, diarrhea",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     417,
+     128,
+     568,
+     161
+    ],
+    "t": "Respiratory alkalosis\npCO₂ ↓ (< 35 mm Hg)\nhyperventilation",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     601,
+     123,
+     742,
+     166
+    ],
+    "t": "Metabolic alkalosis\nHCO₃⁻ ↑ (> 26 mmol/l)\nvomiting, diuretics,\nhyperaldosteronism",
+    "f": "dv",
+    "smax": 11
+   }
+  ]
+ },
+ "p153_26.webp": {
+  "items": [
+   {
+    "box": [
+     39,
+     37,
+     643,
+     144
+    ],
+    "t": "Endothelial dysfunction\n(hypertension, smoking, hyperglycemia,\nexcess LDL)",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     168,
+     225,
+     514,
+     302
+    ],
+    "t": "LDL enters the intima\nand is oxidized",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     81,
+     383,
+     602,
+     490
+    ],
+    "t": "Monocytes enter →\nmacrophages → foam cells\n(fatty streaks)",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     92,
+     572,
+     590,
+     679
+    ],
+    "t": "Migration and proliferation\nof smooth muscle cells,\ncollagen synthesis",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     110,
+     760,
+     572,
+     837
+    ],
+    "t": "Fibrous plaque\n(lipid core + fibrous cap)",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     126,
+     918,
+     556,
+     1025
+    ],
+    "t": "Complicated plaque:\nrupture, thrombosis, calcification,\nhemorrhage",
+    "f": "dv",
+    "smax": 30
+   }
+  ]
+ },
+ "p161_27.webp": {
+  "items": [
+   {
+    "box": [
+     306,
+     20,
+     552,
+     70
+    ],
+    "t": "Damaging factor\n(hypoxia, toxins, radicals,\nmicrobes, immune factors)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     224,
+     116,
+     406,
+     151
+    ],
+    "t": "Impaired energy\nsupply (ATP ↓)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     397,
+     178,
+     532,
+     213
+    ],
+    "t": "Damage to the\ngenetic apparatus",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     179,
+     240,
+     434,
+     290
+    ],
+    "t": "Ion and water imbalance\n(Na⁺, Ca²⁺ in the cell ↑,\nK⁺ ↓, cell swelling)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     510,
+     317,
+     737,
+     368
+    ],
+    "t": "Impaired regulatory\nmechanisms (receptors,\nsecond messengers)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     179,
+     395,
+     434,
+     445
+    ],
+    "t": "Rise of Ca²⁺ in the cytoplasm →\nactivation of phospholipases,\nproteases, endonucleases",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     235,
+     468,
+     313,
+     478
+    ],
+    "t": "vicious circle",
+    "f": "dv",
+    "smax": 11
+   },
+   {
+    "box": [
+     22,
+     503,
+     237,
+     569
+    ],
+    "t": "Damage to membranes\nand enzymes\n(lipid peroxidation,\nphospholipases)",
+    "f": "dv",
+    "smax": 15
+   },
+   {
+    "box": [
+     356,
+     518,
+     610,
+     553
+    ],
+    "t": "Reversible changes (dystrophy)\nor irreversible — necrosis, apoptosis",
+    "f": "dv",
+    "smax": 15
+   }
+  ]
+ },
+ "p194_33.webp": {
+  "items": [
+   {
+    "box": [
+     382,
+     21,
+     676,
+     57
+    ],
+    "t": "Mutation of a hematopoietic cell\n→ leukemic clone",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     316,
+     103,
+     512,
+     155
+    ],
+    "t": "Bone marrow filled with\nblast or leukemic\ncells",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     555,
+     111,
+     736,
+     147
+    ],
+    "t": "Intoxication: fever,\nsweating, weight loss",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     196,
+     209,
+     384,
+     245
+    ],
+    "t": "Displacement of\nnormal hematopoiesis",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     426,
+     201,
+     651,
+     253
+    ],
+    "t": "Leukemic infiltration:\nliver, spleen, lymph nodes,\nmeninges, gums, skin",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     23,
+     299,
+     162,
+     335
+    ],
+    "t": "Anemic syndrome\n(erythrocytes ↓)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     204,
+     299,
+     375,
+     335
+    ],
+    "t": "Hemorrhagic syndrome\n(platelets ↓)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     417,
+     299,
+     593,
+     335
+    ],
+    "t": "Infectious complications\n(mature neutrophils ↓)",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p206_35.webp": {
+  "items": [
+   {
+    "box": [
+     323,
+     23,
+     427,
+     60
+    ],
+    "t": "HEMOLYSIS",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     25,
+     111,
+     347,
+     171
+    ],
+    "t": "Intravascular hemolysis\n(in the blood: incompatible blood,\nmalaria, toxins, prosthetic valve)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     393,
+     111,
+     734,
+     171
+    ],
+    "t": "Extravascular hemolysis\n(in splenic macrophages:\nspherocytosis, thalassemia, autoimmune)",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     45,
+     222,
+     327,
+     282
+    ],
+    "t": "Hemoglobinemia,\nhemoglobinuria (dark urine),\ndecreased haptoglobin",
+    "f": "dv",
+    "smax": 18
+   },
+   {
+    "box": [
+     427,
+     231,
+     701,
+     273
+    ],
+    "t": "Indirect bilirubin ↑ (jaundice),\nsplenomegaly, gallstones",
+    "f": "dv",
+    "smax": 18
+   }
+  ]
+ },
+ "p216_37.webp": {
+  "items": [
+   {
+    "box": [
+     64,
+     29,
+     346,
+     88
+    ],
+    "t": "Dietary B₁₂\n(animal products)",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     31,
+     165,
+     379,
+     224
+    ],
+    "t": "Stomach: released from protein\n(HCl, pepsin)",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     437,
+     153,
+     727,
+     236
+    ],
+    "t": "Parietal cells of the\ngastric fundus:\nCastle's intrinsic factor",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     288,
+     301,
+     498,
+     360
+    ],
+    "t": "B₁₂ + intrinsic factor\ncomplex",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     250,
+     425,
+     535,
+     484
+    ],
+    "t": "Absorption in the\nterminal ileum",
+    "f": "dv",
+    "smax": 24
+   },
+   {
+    "box": [
+     213,
+     549,
+     573,
+     608
+    ],
+    "t": "Transcobalamin → tissues\n(3–5-year store in the liver)",
+    "f": "dv",
+    "smax": 24
+   }
+  ]
+ },
+ "p226_38.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     235,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     233,
+     27
+    ],
+    "t": "Normal sinus rhythm, 75 beats/min",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p228_39.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     223,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     221,
+     27
+    ],
+    "t": "Sinus tachycardia, 125 beats/min",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p228_40.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     217,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     215,
+     27
+    ],
+    "t": "Sinus bradycardia, 45 beats/min",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p228_41.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     206,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     204,
+     27
+    ],
+    "t": "Sinus arrhythmia (respiratory)",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p230_42.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     491,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     489,
+     27
+    ],
+    "t": "Atrial extrasystole (altered P, narrow QRS, incomplete compensatory pause)",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p230_43.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     540,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     538,
+     27
+    ],
+    "t": "Ventricular extrasystole (no P, wide QRS, inverted T, complete compensatory pause)",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p237_44.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     402,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     400,
+     27
+    ],
+    "t": "First-degree AV block: PQ 0.32 s, every P is followed by a QRS",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p238_45.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     689,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     687,
+     27
+    ],
+    "t": "Second-degree AV block, Mobitz I (Wenckebach periods): PQ lengthens progressively until a QRS is dropped",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p238_46.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     573,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     571,
+     27
+    ],
+    "t": "Second-degree AV block, Mobitz II: PQ constant, some P waves are not followed by a QRS",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p238_47.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     637,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     635,
+     27
+    ],
+    "t": "Third-degree (complete) AV block: P and QRS are independent, idioventricular rhythm 30 beats/min",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p240_48.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     365,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     348,
+     27
+    ],
+    "t": "Atrial fibrillation: no P, f waves, irregular RR intervals",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p240_49.webp": {
+  "items": [
+   {
+    "box": [
+     6,
+     8,
+     378,
+     28
+    ],
+    "t": " ",
+    "bg": "#fefafa",
+    "s": 6
+   },
+   {
+    "box": [
+     10,
+     9,
+     326,
+     27
+    ],
+    "t": "Atrial flutter: “sawtooth” F waves, 4:1 conduction",
+    "f": "dvb",
+    "s": 11,
+    "a": "l",
+    "bg": "none",
+    "c": "#1f2a44"
+   }
+  ]
+ },
+ "p248_50.webp": {
+  "items": [
+   {
+    "box": [
+     20,
+     18,
+     222,
+     87
+    ],
+    "t": "1. Emergency stage\nthe load rises suddenly; work per\nunit mass increases,\nmitochondria are overstrained,\nprotein synthesis is activated",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     266,
+     25,
+     492,
+     80
+    ],
+    "t": "2. Stage of stable hyperfunction\n(relatively stable)\nmyocardial mass has increased,\nwork per unit mass is normalized",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     536,
+     18,
+     739,
+     87
+    ],
+    "t": "3. Stage of gradual exhaustion\nand cardiosclerosis\ncapillaries, innervation and\nmitochondria lag behind\n→ decompensation",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p249_51.webp": {
+  "items": [
+   {
+    "box": [
+     314,
+     21,
+     558,
+     51
+    ],
+    "t": "Decreased cardiac output",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     23,
+     105,
+     174,
+     141
+    ],
+    "t": "Increased ADH\n(vasopressin)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     216,
+     97,
+     386,
+     149
+    ],
+    "t": "Renal perfusion ↓\n→ renin–angiotensin–\naldosterone system",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     427,
+     105,
+     610,
+     141
+    ],
+    "t": "Activation of the\nsympathoadrenal system",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     667,
+     168,
+     747,
+     187
+    ],
+    "t": "vicious circle",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     171,
+     207,
+     337,
+     258
+    ],
+    "t": "Na⁺ and water retention,\nblood volume ↑\n(preload ↑)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     381,
+     207,
+     610,
+     258
+    ],
+    "t": "Tachycardia,\nperipheral vasoconstriction\n(afterload ↑)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     146,
+     315,
+     350,
+     345
+    ],
+    "t": "Edema, venous congestion",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     393,
+     305,
+     605,
+     356
+    ],
+    "t": "Myocardial oxygen\ndemand ↑, remodeling,\nfibrosis, apoptosis",
+    "f": "dv",
+    "smax": 16
+   }
+  ]
+ },
+ "p262_53.webp": {
+  "items": [
+   {
+    "box": [
+     380,
+     34,
+     651,
+     134
+    ],
+    "t": "Exogenous\n(low O₂ in the air:\nmountains, closed room)",
+    "f": "dv",
+    "smax": 28
+   },
+   {
+    "box": [
+     308,
+     196,
+     723,
+     296
+    ],
+    "t": "Respiratory:\nimpaired ventilation,\ndiffusion, perfusion",
+    "f": "dv",
+    "smax": 28
+   },
+   {
+    "box": [
+     381,
+     357,
+     650,
+     457
+    ],
+    "t": "Hemic (blood):\nanemia, carbon monoxide,\nmethemoglobin",
+    "f": "dv",
+    "smax": 28
+   },
+   {
+    "box": [
+     37,
+     458,
+     227,
+     520
+    ],
+    "t": "HYPOXIA",
+    "f": "dv",
+    "smax": 28
+   },
+   {
+    "box": [
+     333,
+     519,
+     698,
+     618
+    ],
+    "t": "Circulatory:\nischemic,\ncongestive, shock",
+    "f": "dv",
+    "smax": 28
+   },
+   {
+    "box": [
+     350,
+     681,
+     681,
+     780
+    ],
+    "t": "Tissue (histotoxic):\ncyanide, mitochondrial\ndamage",
+    "f": "dv",
+    "smax": 28
+   },
+   {
+    "box": [
+     353,
+     842,
+     677,
+     913
+    ],
+    "t": "Mixed, overload\n(exertional) hypoxia",
+    "f": "dv",
+    "smax": 28
+   }
+  ]
+ },
+ "p284_56.webp": {
+  "items": [
+   {
+    "box": [
+     186,
+     26,
+     556,
+     75
+    ],
+    "t": "Senescent erythrocytes\n(spleen and bone marrow macrophages)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     161,
+     133,
+     582,
+     203
+    ],
+    "t": "Indirect (free, unconjugated)\nbilirubin — insoluble in water,\ncarried in the blood by albumin",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     138,
+     260,
+     605,
+     331
+    ],
+    "t": "Liver cell:\nuptake → conjugation with glucuronic acid\nby UDP-glucuronyltransferase",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     194,
+     388,
+     548,
+     438
+    ],
+    "t": "Direct (conjugated) bilirubin —\nwater-soluble, with bile to the intestine",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     214,
+     495,
+     528,
+     544
+    ],
+    "t": "Bacteria in the intestine:\nurobilinogen (mesobilinogen)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     28,
+     612,
+     337,
+     662
+    ],
+    "t": "Stercobilinogen → stercobilin\n(stool color)",
+    "f": "dv",
+    "smax": 20
+   },
+   {
+    "box": [
+     389,
+     602,
+     731,
+     672
+    ],
+    "t": "Partly reabsorbed and returns to the liver\n(enterohepatic circulation);\na small part in the urine — urobilin",
+    "f": "dv",
+    "smax": 20
+   }
+  ]
+ },
+ "p297_58.webp": {
+  "items": [
+   {
+    "box": [
+     270,
+     16,
+     516,
+     51
+    ],
+    "t": "ACUTE RENAL FAILURE\n(acute kidney injury)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     20,
+     89,
+     247,
+     160
+    ],
+    "t": "Prerenal\nrenal perfusion ↓\n\nshock, blood loss, dehydration,\nheart failure",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     283,
+     89,
+     504,
+     160
+    ],
+    "t": "Renal\nparenchymal damage\n\nacute tubular necrosis (ischemia,\nnephrotoxins), glomerulonephritis",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     541,
+     89,
+     739,
+     160
+    ],
+    "t": "Postrenal\nurine outflow obstructed\n\nstones, prostate adenoma,\ntumors",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     229,
+     200,
+     559,
+     229
+    ],
+    "t": "Oliguria / anuria → azotemia, hyperkalemia,\nmetabolic acidosis, overhydration",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p307_61.webp": {
+  "items": [
+   {
+    "box": [
+     237,
+     19,
+     545,
+     47
+    ],
+    "t": "MECHANISMS OF ENDOCRINE DISORDERS",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     21,
+     89,
+     214,
+     149
+    ],
+    "t": "Central (hypothalamus,\npituitary) — impaired\nregulation\n(tumor, trauma, infection)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     254,
+     89,
+     528,
+     149
+    ],
+    "t": "In the gland itself\n(primary) — impaired synthesis\nor secretion\n(autoimmune, tumor, enzyme defect)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     567,
+     89,
+     738,
+     149
+    ],
+    "t": "Extraglandular\n(peripheral) — impaired transport,\nmetabolism or receptors\n(resistance)",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p322_63.webp": {
+  "items": [
+   {
+    "box": [
+     58,
+     38,
+     554,
+     149
+    ],
+    "t": "Preagonal state\nconsciousness clouded, BP very low,\npulse thready, breathing rapid and shallow",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     68,
+     232,
+     544,
+     375
+    ],
+    "t": "Terminal pause\n(from a few seconds\nto 2–4 minutes)\nbreathing stops, bradycardia",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     97,
+     458,
+     516,
+     601
+    ],
+    "t": "Agony\nactivity of the bulbar centers:\ngasping breathing, brief rise\nin BP, convulsions",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     40,
+     685,
+     572,
+     827
+    ],
+    "t": "Clinical death\n(4–6 minutes at normal temperature)\nbreathing and heartbeat have stopped,\nno reflexes — REVERSIBLE",
+    "f": "dv",
+    "smax": 30
+   },
+   {
+    "box": [
+     47,
+     911,
+     566,
+     1021
+    ],
+    "t": "Biological death\nirreversible changes\n(first of all in the cerebral cortex)",
+    "f": "dv",
+    "smax": 30
+   }
+  ]
+ },
+ "p285_57.webp": {
+  "items": [
+   {
+    "box": [
+     219,
+     18,
+     457,
+     51
+    ],
+    "t": "JAUNDICE\n(blood bilirubin > 20.5 µmol/l)",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     20,
+     91,
+     187,
+     178
+    ],
+    "t": "Prehepatic (hemolytic)\nbilirubin formation ↑\n\nindirect ↑ in blood\nno bilirubin in urine,\nurobilin ↑; dark stool",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     225,
+     91,
+     451,
+     178
+    ],
+    "t": "Hepatic (parenchymal)\nhepatocytes damaged\n\nindirect and direct ↑ in blood\nbilirubin in urine, urobilin ↑;\npaler stool",
+    "f": "dv",
+    "smax": 14
+   },
+   {
+    "box": [
+     489,
+     91,
+     739,
+     178
+    ],
+    "t": "Posthepatic (obstructive)\nbile outflow blocked\n\ndirect ↑↑, bile acids ↑ in blood\nbilirubin in urine (dark),\nno urobilin; white (acholic) stool",
+    "f": "dv",
+    "smax": 14
+   }
+  ]
+ },
+ "p127_22.webp": {
+  "items": [
+   {
+    "box": [
+     25,
+     23,
+     394,
+     119
+    ],
+    "t": "INSULIN\n(β cells)\n• glucose entry into cells (GLUT4)\n• glycogenesis, lipogenesis, protein synthesis\n• stops gluconeogenesis",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     439,
+     23,
+     734,
+     119
+    ],
+    "t": "COUNTER-INSULIN HORMONES\nglucagon, epinephrine, cortisol,\ngrowth hormone, thyroid hormones\n• glycogenolysis, gluconeogenesis\n• lipolysis",
+    "f": "dv",
+    "smax": 17
+   },
+   {
+    "box": [
+     334,
+     141,
+     421,
+     162
+    ],
+    "t": "lowers",
+    "f": "dv",
+    "a": "l",
+    "s": 13
+   },
+   {
+    "box": [
+     484,
+     144,
+     545,
+     159
+    ],
+    "t": "raises",
+    "f": "dv",
+    "a": "l",
+    "s": 13
+   },
+   {
+    "box": [
+     258,
+     184,
+     538,
+     229
+    ],
+    "t": "Blood glucose\n3.3–5.5 mmol/l (fasting)",
+    "f": "dv",
+    "smax": 17
+   }
+  ]
+ },
+ "p273_55.webp": {
+  "items": [
+   {
+    "box": [
+     30,
+     24,
+     360,
+     168
+    ],
+    "t": "AGGRESSIVE FACTORS\n  • Helicobacter pylori\n  • HCl and pepsin hypersecretion\n  • NSAIDs, glucocorticoids\n  • smoking, stress\n  • bile acid reflux\n  • impaired evacuation",
+    "f": "dv",
+    "smax": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     398,
+     123,
+     480,
+     139
+    ],
+    "t": "increase",
+    "f": "dv",
+    "smax": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     505,
+     150,
+     733,
+     220
+    ],
+    "t": "If the balance shifts\ntoward aggression →\nULCER",
+    "f": "dv",
+    "smax": 19
+   },
+   {
+    "box": [
+     398,
+     201,
+     471,
+     217
+    ],
+    "t": "weaken",
+    "f": "dv",
+    "smax": 19,
+    "a": "l"
+   },
+   {
+    "box": [
+     26,
+     212,
+     364,
+     337
+    ],
+    "t": "PROTECTIVE FACTORS\n  • mucus–bicarbonate barrier\n  • prostaglandins (E₂, I₂)\n  • good blood supply\n  • rapid epithelial renewal\n  • antroduodenal “acid brake”",
+    "f": "dv",
+    "smax": 19,
+    "a": "l"
+   }
+  ]
+ },
+ "p57_10.webp": {
+  "items": [
+   {
+    "box": [
+     357,
+     9,
+     473,
+     38
+    ],
+    "t": "ARTERIAL HYPEREMIA\n(dilation of arterioles)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#fbf1cc",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     15,
+     59,
+     167,
+     90
+    ],
+    "t": "Neurotonic\ntone of vasodilator nerves rises\n(acetylcholine, NO)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#deeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     193,
+     59,
+     312,
+     91
+    ],
+    "t": "Neuroparalytic\nsympathetic (vasoconstrictor)\ninfluence is lost",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dee9f4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     341,
+     59,
+     485,
+     90
+    ],
+    "t": "Neuromyoparalytic (metabolic)\nlocal metabolites: adenosine,\nCO₂, H⁺, K⁺, lactate",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dde9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     514,
+     59,
+     608,
+     90
+    ],
+    "t": "Humoral\nhistamine, bradykinin,\nprostaglandins, NO",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#ddeaf3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     637,
+     59,
+     744,
+     94
+    ],
+    "t": "Reactive (postischemic)\nrestoration of blood flow\nafter ischemia",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dce8f3",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p83_15.webp": {
+  "items": [
+   {
+    "box": [
+     18,
+     10,
+     129,
+     55
+    ],
+    "t": "1. Brief spasm\nof arterioles\n(seconds)",
+    "f": "dv",
+    "smax": 12,
+    "bg": "#deeaf5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     169,
+     20,
+     300,
+     49
+    ],
+    "t": "2. Arterial hyperemia\n(10–30 minutes)",
+    "f": "dv",
+    "smax": 12,
+    "bg": "#f9e3d6",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     340,
+     20,
+     463,
+     49
+    ],
+    "t": "3. Venous hyperemia\n(hours, days)",
+    "f": "dv",
+    "smax": 12,
+    "bg": "#deeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     503,
+     20,
+     654,
+     49
+    ],
+    "t": "4. Prestasis\n(pendulum-like movement)",
+    "f": "dv",
+    "smax": 12,
+    "bg": "#deeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     693,
+     22,
+     745,
+     48
+    ],
+    "t": "5. Stasis",
+    "f": "dv",
+    "smax": 12,
+    "bg": "#fef2cd",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p91_16.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     10,
+     101,
+     36
+    ],
+    "t": "1. Margination\n(leukocytes move to\nthe vessel wall)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dbe9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     128,
+     14,
+     227,
+     32
+    ],
+    "t": "2. Rolling\nselectins: P-, E-selectin",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dde9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     253,
+     10,
+     353,
+     36
+    ],
+    "t": "3. Firm adhesion\nintegrins (LFA-1, Mac-1)\n+ ICAM-1, VCAM-1",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#deeaf3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     384,
+     10,
+     498,
+     36
+    ],
+    "t": "4. Diapedesis (transmigration)\nbetween endothelial cells\n(PECAM-1)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#deeaf3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     529,
+     10,
+     665,
+     36
+    ],
+    "t": "5. Chemotaxis\ntoward the focus of inflammation\n(C5a, LTB₄, IL-8, bacterial peptides)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#deeaf5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     691,
+     15,
+     749,
+     31
+    ],
+    "t": "6. Phagocytosis",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#e1eedc",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p117_20.webp": {
+  "items": [
+   {
+    "box": [
+     11,
+     9,
+     144,
+     35
+    ],
+    "t": "Hydrostatic factor\ncapillary pressure ↑\n(heart failure, venous thrombosis)",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     162,
+     9,
+     271,
+     35
+    ],
+    "t": "Oncotic factor\nplasma albumin ↓\n(nephrotic syndrome,\nstarvation, cirrhosis)",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     290,
+     9,
+     403,
+     35
+    ],
+    "t": "Membranogenic factor\nvascular permeability ↑\n(inflammation, allergy, toxins)",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     421,
+     9,
+     513,
+     35
+    ],
+    "t": "Osmotic factor\nNa⁺ and osmotically active\nsubstances build up in tissue",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     531,
+     7,
+     648,
+     37
+    ],
+    "t": "Lymphogenic factor\nimpaired lymph outflow\n(lymph node removal,\nfilariasis)",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     666,
+     9,
+     751,
+     35
+    ],
+    "t": "Neurohumoral factor\nRAAS, aldosterone, ADH\n→ Na⁺ and water retention",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     358,
+     55,
+     456,
+     80
+    ],
+    "t": "EDEMA\n(excess accumulation of\ninterstitial fluid)",
+    "f": "dv",
+    "smax": 8,
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p173_29.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     18,
+     114,
+     38
+    ],
+    "t": "Carcinogenic factor\n(chemical, physical, viral)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#f7e2d3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     138,
+     10,
+     290,
+     46
+    ],
+    "t": "1. INITIATION\nIrreversible DNA damage:\nactivation of proto-oncogenes,\ninactivation of tumor suppressor genes",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dee9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     321,
+     10,
+     459,
+     46
+    ],
+    "t": "2. PROMOTION\nStimulation of proliferation\nof the initiated cell\n(hormones, chronic inflammation)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dde9f2",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     490,
+     18,
+     617,
+     38
+    ],
+    "t": "Transformed cell\n(start of the tumor clone)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#f8eec8",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     644,
+     10,
+     745,
+     46
+    ],
+    "t": "3. PROGRESSION\nNew mutations, growing\nmalignancy:\ninvasion, metastasis",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dce9f2",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p174_30.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     14,
+     74,
+     34
+    ],
+    "t": "Primary tumor",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dee9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     104,
+     13,
+     190,
+     36
+    ],
+    "t": "Detachment of cells\n(E-cadherin ↓)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#d7e7f2",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     219,
+     10,
+     302,
+     35
+    ],
+    "t": "Invasion of basement\nmembrane and stroma\n(metalloproteinases)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dbe8f1",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     332,
+     13,
+     400,
+     31
+    ],
+    "t": "Entry into vessel\n(intravasation)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dae7f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     430,
+     10,
+     533,
+     35
+    ],
+    "t": "Survival in blood or\nlymph flow (platelet\n“shield”)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dde9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     563,
+     13,
+     628,
+     31
+    ],
+    "t": "Exit from vessel\n(extravasation)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#d9e7f2",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     657,
+     13,
+     746,
+     31
+    ],
+    "t": "Growth at a new site,\nangiogenesis → metastasis",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#f6e1d1",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p181_31.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     11,
+     59,
+     28
+    ],
+    "t": "Myeloblast",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#deeaf5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     128,
+     10,
+     181,
+     30
+    ],
+    "t": "Promyelocyte",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dfe9f5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     247,
+     32,
+     285,
+     49
+    ],
+    "t": "Myelocyte",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#ddeaf5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     317,
+     30,
+     375,
+     50
+    ],
+    "t": "Metamyelocyte\n(juvenile)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#deeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     405,
+     30,
+     489,
+     53
+    ],
+    "t": "Band\nneutrophil",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#fcf4cd",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     509,
+     30,
+     578,
+     50
+    ],
+    "t": "Segmented\nneutrophil",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#e2eedc",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     610,
+     26,
+     745,
+     55
+    ],
+    "t": "Shift to the right →\n5 or more segments\n(B₁₂ deficiency)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dde9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     90,
+     47,
+     216,
+     76
+    ],
+    "t": "← Shift to the left:\nyoung forms increase in blood\n(purulent infection, sepsis)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#f5e2d3",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p182_32.webp": {
+  "items": [
+   {
+    "box": [
+     325,
+     13,
+     406,
+     36
+    ],
+    "t": "LEUKOCYTOSIS",
+    "f": "dv",
+    "smax": 10,
+    "bg": "#fcf3cb",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     191,
+     65,
+     348,
+     101
+    ],
+    "t": "Redistributive\n(from the marginal pool)\nexercise, stress, epinephrine",
+    "f": "dv",
+    "smax": 10,
+    "bg": "#deeaf5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     380,
+     65,
+     545,
+     101
+    ],
+    "t": "Accelerated release\nfrom the bone marrow\n(glucocorticoids, endotoxin)",
+    "f": "dv",
+    "smax": 10,
+    "bg": "#deeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     17,
+     65,
+     159,
+     105
+    ],
+    "t": "True (absolute)\nincreased leukopoiesis\n(G-CSF, GM-CSF, IL-1, IL-6)",
+    "f": "dv",
+    "smax": 10,
+    "bg": "#deeaf3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     577,
+     70,
+     743,
+     98
+    ],
+    "t": "Relative (hemoconcentration)\ndehydration, blood thickening",
+    "f": "dv",
+    "smax": 10,
+    "bg": "#dee9f4",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p205_34.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     19,
+     91,
+     35
+    ],
+    "t": "Acute blood loss",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#fce3d5",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     122,
+     10,
+     271,
+     44
+    ],
+    "t": "1. Reflex (vascular) stage\nfirst hours\nvasospasm, release of blood from depots,\ntachycardia; Hb and Ht still unchanged",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dde9f3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     301,
+     10,
+     436,
+     44
+    ],
+    "t": "2. Hydremic stage\n1–3 days\ntissue fluid passes into the blood\n→ blood is diluted, Hb and Ht fall",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#dee9f4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     466,
+     10,
+     607,
+     44
+    ],
+    "t": "3. Bone marrow stage\nfrom day 4–5\nerythropoietin → erythropoiesis ↑,\nreticulocytosis",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#deeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     637,
+     14,
+     747,
+     43
+    ],
+    "t": "Recovery\n(if iron stores are\nsufficient, 4–6 weeks)",
+    "f": "dv",
+    "smax": 8,
+    "bg": "#e1efdb",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p214_36.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     15,
+     104,
+     35
+    ],
+    "t": "Dietary iron\n(10–20 mg per day)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dce9f1",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     137,
+     11,
+     260,
+     39
+    ],
+    "t": "Duodenal enterocytes:\nabsorption 1–2 mg\n(Fe³⁺ → Fe²⁺, DMT1)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dee9f4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     491,
+     10,
+     576,
+     34
+    ],
+    "t": "Bone marrow\n(hemoglobin synthesis)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#e2eedb",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     152,
+     59,
+     244,
+     78
+    ],
+    "t": "Hepcidin (liver)\nblocks ferroportin",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#f9e4d6",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     286,
+     51,
+     366,
+     68
+    ],
+    "t": "Ferroportin → blood",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dfeaf4",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     399,
+     50,
+     444,
+     69
+    ],
+    "t": "Transferrin\n(transport)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dceaf3",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     476,
+     50,
+     590,
+     74
+    ],
+    "t": "Stores: ferritin, hemosiderin\n(liver, spleen, bone marrow)",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#d9e9f2",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     650,
+     68,
+     745,
+     96
+    ],
+    "t": "Macrophages: reuse of\niron from senescent\nerythrocytes",
+    "f": "dv",
+    "smax": 9,
+    "bg": "#dce8f1",
+    "c": "#1c1c1c"
+   },
+   {
+    "box": [
+     604,
+     30,
+     644,
+     43
+    ],
+    "t": "120 days",
+    "f": "dv",
+    "s": 8,
+    "bg": "#ffffff",
+    "c": "#1c1c1c"
+   }
+  ]
+ },
+ "p150_25.webp": {
+  "items": [
+   {
+    "box": [
+     219,
+     25,
+     612,
+     74
+    ],
+    "t": "Absolute insulin deficiency\n+ excess of counter-insulin hormones",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#fae4d7"
+   },
+   {
+    "box": [
+     121,
+     130,
+     407,
+     199
+    ],
+    "t": "Glucose entry into cells\ndecreases,\ngluconeogenesis increases",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#e0eaf5"
+   },
+   {
+    "box": [
+     466,
+     140,
+     689,
+     189
+    ],
+    "t": "Lipolysis increases →\nfree fatty acids",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#dfeaf5"
+   },
+   {
+    "box": [
+     162,
+     256,
+     331,
+     299
+    ],
+    "t": "Hyperglycemia",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#dfeaf6"
+   },
+   {
+    "box": [
+     27,
+     365,
+     393,
+     414
+    ],
+    "t": "Glucosuria → osmotic diuresis\n→ dehydration, loss of Na⁺ and K⁺",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#dfebf5"
+   },
+   {
+    "box": [
+     444,
+     355,
+     732,
+     424
+    ],
+    "t": "Ketone bodies in the liver\n(acetoacetic, β-hydroxybutyric\nacids, acetone)",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#dfebf6"
+   },
+   {
+    "box": [
+     190,
+     480,
+     426,
+     529
+    ],
+    "t": "Hypovolemia, decreased\nrenal perfusion",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#e0eaf5"
+   },
+   {
+    "box": [
+     370,
+     585,
+     566,
+     634
+    ],
+    "t": "Metabolic acidosis\n(Kussmaul breathing)",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#dfebf6"
+   },
+   {
+    "box": [
+     269,
+     690,
+     507,
+     733
+    ],
+    "t": "KETOACIDOTIC COMA",
+    "f": "dv",
+    "smax": 20,
+    "bg": "#fff3cd"
+   }
+  ]
+ },
+ "p306_60.webp": {
+  "items": [
+   {
+    "box": [
+     193,
+     21,
+     495,
+     76
+    ],
+    "t": "HYPOTHALAMUS\nliberins (CRH, TRH, GnRH, GHRH)\nstatins (somatostatin, dopamine)",
+    "f": "dv",
+    "smax": 16,
+    "bg": "#fef3ce"
+   },
+   {
+    "box": [
+     281,
+     96,
+     385,
+     116
+    ],
+    "t": "portal vessels",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     434,
+     96,
+     500,
+     111
+    ],
+    "t": "axons",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     45,
+     145,
+     333,
+     183
+    ],
+    "t": "ADENOHYPOPHYSIS\nACTH, TSH, LH/FSH, GH, prolactin",
+    "f": "dv",
+    "smax": 16,
+    "bg": "#deebf6"
+   },
+   {
+    "box": [
+     376,
+     137,
+     622,
+     192
+    ],
+    "t": "NEUROHYPOPHYSIS\nADH, oxytocin\n(synthesized in the hypothalamus)",
+    "f": "dv",
+    "smax": 16,
+    "bg": "#deeaf6"
+   },
+   {
+    "box": [
+     649,
+     146,
+     746,
+     178
+    ],
+    "t": "long feedback\nloop (–)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     193,
+     219,
+     313,
+     239
+    ],
+    "t": "tropic hormones",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     317,
+     212,
+     413,
+     243
+    ],
+    "t": "short feedback\nloop (–)",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     23,
+     267,
+     355,
+     322
+    ],
+    "t": "Peripheral glands:\nadrenal cortex, thyroid gland,\ngonads; liver (IGF-1)",
+    "f": "dv",
+    "smax": 16,
+    "bg": "#deeaf6"
+   },
+   {
+    "box": [
+     194,
+     342,
+     328,
+     362
+    ],
+    "t": "peripheral hormones",
+    "f": "dv",
+    "smax": 16
+   },
+   {
+    "box": [
+     111,
+     383,
+     268,
+     421
+    ],
+    "t": "Target tissues\n(hormone action)",
+    "f": "dv",
+    "smax": 16,
+    "bg": "#e3efdc"
+   }
+  ]
+ },
+ "p318_62.webp": {
+  "items": [
+   {
+    "box": [
+     78,
+     28,
+     476,
+     105
+    ],
+    "t": "Shock-inducing factor\n(blood loss, pain, endotoxin,\ncardiac damage, allergen)",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#fae4d6"
+   },
+   {
+    "box": [
+     58,
+     169,
+     496,
+     223
+    ],
+    "t": "Circulating blood volume ↓ or\ncardiac output ↓ or vascular tone ↓",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#dfeaf6"
+   },
+   {
+    "box": [
+     30,
+     286,
+     524,
+     364
+    ],
+    "t": "Compensation: sympathoadrenal system,\nRAAS, ADH → tachycardia, vasoconstriction,\ncentralization of the circulation",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#dfebf6"
+   },
+   {
+    "box": [
+     70,
+     427,
+     484,
+     505
+    ],
+    "t": "Ischemia of peripheral organs (skin,\nintestine, kidney, muscle), hypoxia,\nlactic acidosis",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#deeaf6"
+   },
+   {
+    "box": [
+     621,
+     455,
+     739,
+     475
+    ],
+    "t": "vicious circle",
+    "f": "dv",
+    "smax": 22
+   },
+   {
+    "box": [
+     36,
+     568,
+     518,
+     668
+    ],
+    "t": "Microcirculatory disturbance:\nprecapillary sphincters relax,\nvenules remain constricted → blood stasis,\nplasma leakage, sludge, DIC",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#dfeaf6"
+   },
+   {
+    "box": [
+     37,
+     731,
+     517,
+     809
+    ],
+    "t": "Decentralization of the circulation:\nvenous return and cardiac output fall further,\nischemia of the brain and heart",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#dfeaf6"
+   },
+   {
+    "box": [
+     44,
+     872,
+     510,
+     950
+    ],
+    "t": "Multiple organ failure\n(shock lung, shock kidney, liver, intestine)\n→ irreversible shock",
+    "f": "dv",
+    "smax": 22,
+    "bg": "#fef3ce"
+   }
+  ]
+ },
+ "p46_7.webp": {
+  "items": [
+   {
+    "box": [
+     60,
+     440,
+     94,
+     472
+    ],
+    "t": "a",
+    "s": 24,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     250,
+     440,
+     284,
+     472
+    ],
+    "t": "b",
+    "s": 24,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     456,
+     440,
+     490,
+     472
+    ],
+    "t": "c",
+    "s": 24,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     654,
+     440,
+     688,
+     472
+    ],
+    "t": "d",
+    "s": 24,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   }
+  ]
+ },
+ "p46_8.webp": {
+  "items": [
+   {
+    "box": [
+     129,
+     198,
+     149,
+     217
+    ],
+    "t": "a",
+    "s": 14,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     374,
+     198,
+     394,
+     217
+    ],
+    "t": "b",
+    "s": 14,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     635,
+     198,
+     655,
+     217
+    ],
+    "t": "c",
+    "s": 14,
+    "f": "serifbi",
+    "bg": "#ffffff"
+   }
+  ]
+ },
+ "p130_23.webp": {
+  "items": [
+   {
+    "box": [
+     108,
+     33,
+     210,
+     51
+    ],
+    "t": "Normal",
+    "f": "inter",
+    "s": 13,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     108,
+     54,
+     326,
+     72
+    ],
+    "t": "Impaired glucose tolerance",
+    "f": "inter",
+    "s": 13,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     108,
+     75,
+     240,
+     93
+    ],
+    "t": "Diabetes mellitus",
+    "f": "inter",
+    "s": 13,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     14,
+     120,
+     33,
+     305
+    ],
+    "t": "Blood glucose, mmol/l",
+    "f": "inter",
+    "s": 13,
+    "bg": "#ffffff",
+    "rot": 90
+   },
+   {
+    "box": [
+     718,
+     159,
+     749,
+     177
+    ],
+    "t": "11.1",
+    "f": "inter",
+    "s": 11,
+    "bg": "#ffffff",
+    "c": "#666666"
+   },
+   {
+    "box": [
+     720,
+     228,
+     747,
+     246
+    ],
+    "t": "7.8",
+    "f": "inter",
+    "s": 11,
+    "bg": "#ffffff",
+    "c": "#666666"
+   },
+   {
+    "box": [
+     230,
+     433,
+     580,
+     454
+    ],
+    "t": "Time after glucose intake, min",
+    "f": "inter",
+    "s": 13,
+    "bg": "#ffffff"
+   }
+  ]
+ },
+ "p271_54.webp": {
+  "items": [
+   {
+    "box": [
+     116,
+     14,
+     210,
+     30
+    ],
+    "t": "basal secretion",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "c": "#8a8a8a"
+   },
+   {
+    "box": [
+     264,
+     14,
+     330,
+     30
+    ],
+    "t": "stimulant",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "a": "l",
+    "c": "#8a8a8a"
+   },
+   {
+    "box": [
+     597,
+     21,
+     752,
+     36
+    ],
+    "t": "Normal",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     597,
+     38,
+     752,
+     53
+    ],
+    "t": "Excitable (hypersecretory)",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     597,
+     55,
+     752,
+     70
+    ],
+    "t": "Asthenic",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     597,
+     72,
+     752,
+     87
+    ],
+    "t": "Inhibited (inert)",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     597,
+     89,
+     752,
+     104
+    ],
+    "t": "Weak (hypo-, anacid)",
+    "f": "inter",
+    "s": 10,
+    "bg": "#ffffff",
+    "a": "l"
+   },
+   {
+    "box": [
+     9,
+     80,
+     29,
+     270
+    ],
+    "t": "Secretion volume (arbitrary units)",
+    "f": "inter",
+    "s": 11,
+    "bg": "#ffffff",
+    "rot": 90
+   },
+   {
+    "box": [
+     245,
+     361,
+     370,
+     380
+    ],
+    "t": "Time, min",
+    "f": "inter",
+    "s": 12,
+    "bg": "#ffffff"
+   }
+  ]
+ },
+ "p299_59.webp": {
+  "items": [
+   {
+    "box": [
+     52,
+     4,
+     412,
+     22
+    ],
+    "t": "Normal: specific gravity 1008–1026, daytime diuresis predominates",
+    "f": "interb",
+    "s": 10,
+    "bg": "#ffffff",
+    "c": "#1f3a5f"
+   },
+   {
+    "box": [
+     428,
+     5,
+     735,
+     24
+    ],
+    "t": "Isosthenuria + nocturia: specific gravity 1009–1011",
+    "f": "interb",
+    "s": 10,
+    "bg": "#ffffff",
+    "c": "#1f3a5f"
+   },
+   {
+    "box": [
+     280,
+     31,
+     314,
+     45
+    ],
+    "t": "night",
+    "f": "inter",
+    "s": 9,
+    "c": "#9a9a9a"
+   },
+   {
+    "box": [
+     641,
+     31,
+     675,
+     45
+    ],
+    "t": "night",
+    "f": "inter",
+    "s": 9,
+    "c": "#9a9a9a"
+   },
+   {
+    "box": [
+     7,
+     50,
+     25,
+     200
+    ],
+    "t": "Specific gravity, 1000 + …",
+    "f": "inter",
+    "s": 11,
+    "bg": "#ffffff",
+    "rot": 90
+   },
+   {
+    "box": [
+     165,
+     246,
+     272,
+     265
+    ],
+    "t": "Portion (hour)",
+    "f": "inter",
+    "s": 11,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     526,
+     246,
+     633,
+     265
+    ],
+    "t": "Portion (hour)",
+    "f": "inter",
+    "s": 11,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     230,
+     265,
+     530,
+     281
+    ],
+    "t": "Numbers above the bars — portion volume, ml",
+    "f": "inter",
+    "s": 9,
+    "bg": "#ffffff",
+    "c": "#8a8a8a"
+   }
+  ]
+ },
+ "p260_52.webp": {
+  "items": [
+   {
+    "box": [
+     14,
+     11,
+     730,
+     30
+    ],
+    "t": "Normal breathing (eupnea), 15 breaths/min",
+    "f": "interb",
+    "s": 11,
+    "bg": "#ffffff",
+    "a": "l",
+    "c": "#1f2a44"
+   },
+   {
+    "box": [
+     14,
+     102,
+     730,
+     122
+    ],
+    "t": "Kussmaul breathing: deep, noisy, slow (ketoacidosis, uremia)",
+    "f": "interb",
+    "s": 11,
+    "bg": "#ffffff",
+    "a": "l",
+    "c": "#1f2a44"
+   },
+   {
+    "box": [
+     14,
+     194,
+     730,
+     213
+    ],
+    "t": "Cheyne–Stokes breathing: waves that gradually deepen and then become shallow, followed by apnea",
+    "f": "interb",
+    "s": 11,
+    "bg": "#ffffff",
+    "a": "l",
+    "c": "#1f2a44"
+   },
+   {
+    "box": [
+     14,
+     285,
+     730,
+     305
+    ],
+    "t": "Biot's breathing: breaths of equal depth and long apneic pauses",
+    "f": "interb",
+    "s": 11,
+    "bg": "#ffffff",
+    "a": "l",
+    "c": "#1f2a44"
+   },
+   {
+    "box": [
+     14,
+     376,
+     730,
+     396
+    ],
+    "t": "Gasping (agonal) breathing: infrequent, short, strong “gasps”",
+    "f": "interb",
+    "s": 11,
+    "bg": "#ffffff",
+    "a": "l",
+    "c": "#1f2a44"
+   },
+   {
+    "box": [
+     340,
+     471,
+     420,
+     490
+    ],
+    "t": "Time, s",
+    "f": "inter",
+    "s": 12,
+    "bg": "#ffffff"
+   }
+  ]
+ }
+}
