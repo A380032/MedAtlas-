@@ -531,7 +531,7 @@
       return;
     }
     shell(`<h2>Kirish yoki ro‘yxatdan o‘tish</h2>
-      <p class="small muted"> Natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi.</p>
+      <p class="small muted">Birinchi kirishda hisob o‘zi ochiladi. Natijalaringiz bulutga saqlanadi va boshqa qurilmada ham ko‘rinadi.</p>
       ${pwBlock()}
       <button class="acc-google" id="gBtn">${G}<span>Google bilan kirish</span></button>
       <div class="acc-or"><span>yoki</span></div>
