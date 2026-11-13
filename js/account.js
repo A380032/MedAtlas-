@@ -228,9 +228,11 @@
 
   /* ---------- Email + parol bilan kirish ---------- */
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const phoneOf = (v) => { if (/[@a-z]/i.test(v)) return null; let d = String(v).replace(/\D/g, ""); if (d.length === 9) d = "998" + d; return /^[0-9]{9,15}$/.test(d) ? d : null; };
+  const fnPost = (name, body, token) => fetch(URL_ + "/functions/v1/" + name, { method: "POST", headers: { "Content-Type": "application/json", apikey: KEY, ...(token ? { Authorization: "Bearer " + token } : {}) }, body: JSON.stringify(body) });
   const pwBlock = () => `<form class="acc-pw" id="pwForm" novalidate>
       <label class="field" id="pwNameBox" hidden>Ismingiz<input id="pwName" maxlength="60" autocomplete="name" placeholder="Ism Familiya"></label>
-      <label class="field">Email<input id="pwEmail" type="email" inputmode="email" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="email@gmail.com"></label>
+      <label class="field"><span id="pwIdLbl">Email yoki telefon raqam</span><input id="pwEmail" type="text" inputmode="email" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="email@gmail.com yoki +998 90 123 45 67"></label>
       <label class="field">Parol<input id="pwPass" type="password" autocomplete="current-password" placeholder="Kamida 6 ta belgi"></label>
       <button class="btn primary acc-pw-go" id="pwGo" type="submit">Kirish</button>
       <div class="acc-pw-links"><a href="#" id="pwMode">Ro‘yxatdan o‘tish</a><a href="#" id="pwForgot">Parolni unutdim</a></div>
@@ -251,6 +253,7 @@
     q("#pwMode").addEventListener("click", (e) => {
       e.preventDefault(); reg = !reg;
       q("#pwNameBox").hidden = !reg;
+      q("#pwIdLbl").textContent = reg ? "Email" : "Email yoki telefon raqam";
       go.textContent = reg ? "Ro‘yxatdan o‘tish" : "Kirish";
       q("#pwMode").textContent = reg ? "Hisobim bor, kirish" : "Ro‘yxatdan o‘tish";
       pass.autocomplete = reg ? "new-password" : "current-password";
@@ -258,6 +261,7 @@
     q("#pwForgot").addEventListener("click", async (e) => {
       e.preventDefault();
       const email = q("#pwEmail").value.trim();
+      if (phoneOf(email)) { A.toast("Telegram hisobi uchun: Telegram orqali kirib, Profildan yangi parol o‘rnating"); return; }
       if (!EMAIL_RE.test(email)) { A.toast("Avval email manzilingizni yozing"); return; }
       try {
         const c = await client();
@@ -269,13 +273,20 @@
     q("#pwForm").addEventListener("submit", async (e) => {
       e.preventDefault();
       const email = q("#pwEmail").value.trim(), pw = pass.value;
-      if (!EMAIL_RE.test(email)) { A.toast("Email manzilni to‘g‘ri yozing"); return; }
+      const ph = reg ? null : phoneOf(email);
+      if (!ph && !EMAIL_RE.test(email)) { A.toast(reg ? "Email manzilni to‘g‘ri yozing" : "Email yoki telefon raqamni to‘g‘ri yozing"); return; }
       if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
       if (!navigator.onLine) { A.toast("Kirish uchun internet kerak"); return; }
       go.disabled = true;
       try {
         const c = await client();
-        if (reg) {
+        if (ph) {
+          const r = await fnPost("phone-auth", { action: "login", phone: ph, password: pw });
+          const j = await r.json().catch(() => ({}));
+          if (!r.ok || !j.access_token) throw new Error("invalid login credentials");
+          const { error } = await c.auth.setSession({ access_token: j.access_token, refresh_token: j.refresh_token });
+          if (error) throw error;
+        } else if (reg) {
           const nm = q("#pwName").value.trim();
           const { data, error } = await c.auth.signUp({ email, password: pw, options: { data: nm ? { full_name: nm } : {} } });
           if (error) throw error;
@@ -292,28 +303,34 @@
   /* Yangi parol o'rnatish (tiklash havolasidan kelganda yoki profil sozlamalaridan) */
   function newPassSheet(recovery) {
     const m = user?.user_metadata || {};
-    const needEmail = !recovery && (m.telegram_id || /@telegram\.alvoramed\.app$/.test(user?.email || ""));
-    const sh = A.sheet(`<h3>${recovery ? "Yangi parol" : "Parol o‘rnatish"}</h3>
-      <p class="muted small" style="margin:0">${recovery ? "Yangi parolni yozing." : needEmail ? "Email va parol qo‘shing. Keyin Telegramsiz ham, shu email va parol bilan kira olasiz." : "Parol o‘rnating. Keyin Googlesiz ham, shu email va parol bilan kira olasiz."}</p>
+    const tg = !recovery && !!(m.telegram_id || user?.app_metadata?.provider === "telegram");
+    const sh = A.sheet(`<h3>${recovery ? "Yangi parol" : tg ? "Telefon raqam va parol" : "Parol o‘rnatish"}</h3>
+      <p class="muted small" style="margin:0">${recovery ? "Yangi parolni yozing." : tg ? "Telegramga ulangan telefon raqamingizni va o‘zingiz o‘ylagan parolni yozing. Keyin Telegramsiz ham, shu raqam va parol bilan kira olasiz." : "Yangi parolni yozing. Keyin shu parol bilan ham kira olasiz."}</p>
       <div class="pf-form">
-        ${needEmail ? `<label class="field">Email<input id="npEmail" type="email" inputmode="email" autocomplete="username" autocapitalize="none" placeholder="email@gmail.com"></label>` : ""}
-        <label class="field">Yangi parol<input id="npPass" type="password" autocomplete="new-password" placeholder="Kamida 6 ta belgi"></label>
+        ${tg ? `<label class="field">Telefon raqam<input id="npPhone" type="tel" inputmode="tel" autocomplete="username" placeholder="+998 90 123 45 67"></label>` : ""}
+        <label class="field">Parol<input id="npPass" type="password" autocomplete="new-password" placeholder="Kamida 6 ta belgi"></label>
       </div>
       <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="npSave">Saqlash</button></div>`);
     sh.el.querySelector("#npSave").addEventListener("click", async () => {
-      const email = sh.el.querySelector("#npEmail")?.value.trim();
+      const ph = tg ? phoneOf(sh.el.querySelector("#npPhone").value) : null;
       const pw = sh.el.querySelector("#npPass").value;
-      if (needEmail && !EMAIL_RE.test(email || "")) { A.toast("Email manzilni to‘g‘ri yozing"); return; }
+      if (tg && !ph) { A.toast("Telefon raqamni to‘g‘ri yozing"); return; }
       if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
       if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
       try {
         const c = await client();
-        const { error } = await c.auth.updateUser(needEmail ? { email, password: pw } : { password: pw });
+        if (tg) {
+          const { data: ss } = await c.auth.getSession();
+          const r = await fnPost("phone-auth", { action: "set", phone: ph }, ss.session?.access_token);
+          if (r.status === 409) { A.toast("Bu raqam boshqa hisobga ulangan"); return; }
+          if (!r.ok) throw new Error("save");
+        }
+        const { error } = await c.auth.updateUser({ password: pw });
         if (error) throw error;
-        sh.close(); A.toast(needEmail ? "Saqlandi. Endi email va parol bilan kira olasiz" : "Parol saqlandi");
+        sh.close(); A.toast(tg ? "Saqlandi. Endi telefon raqam va parol bilan kira olasiz" : "Parol saqlandi");
         if (recovery) { history.replaceState(null, "", location.pathname + "#/"); A.refresh?.(); }
       } catch (er) {
-        A.toast(/already|registered/i.test(er?.message || "") ? "Bu email boshqa hisobda ishlatilgan" : /same/i.test(er?.message || "") ? "Yangi parol eskisidan farq qilsin" : "Saqlab bo‘lmadi. Qayta urinib ko‘ring");
+        A.toast(/same/i.test(er?.message || "") ? "Yangi parol eskisidan farq qilsin" : "Saqlab bo‘lmadi. Qayta urinib ko‘ring");
       }
     });
   }
