@@ -15,7 +15,7 @@ for name in names:
     font = tr.get("f", "dv"); gs = tr.get("smax", B["smax"])
     items = []; used = set()
     for k, v in tr.items():
-        if k in ("x", "f", "smax", "also", "c"): continue
+        if k in ("x", "f", "smax", "also", "c", "s"): continue
         ids = k if isinstance(k, tuple) else (k,)
         used.update(ids)
         if v is None: continue
@@ -32,6 +32,8 @@ for name in names:
                     it["box"] = [it["box"][i] + x[i] for i in range(4)]
                 elif a != "t": it[a] = x
             if "s" in it: it.pop("smax", None)
+        if tr.get("s") and "s" not in it:
+            it["s"] = tr["s"]; it.pop("smax", None)
         items.append(it)
     items += tr.get("x", [])
     miss = sorted(set(bl) - used)

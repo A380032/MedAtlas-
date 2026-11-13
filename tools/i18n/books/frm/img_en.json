@@ -1,0 +1,5270 @@
+{
+ "p14_1.webp": {
+  "items": [
+   {
+    "box": [
+     444,
+     24,
+     757,
+     43
+    ],
+    "t": "1. Inscriptio — institution stamp, code",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     75,
+     757,
+     91
+    ],
+    "t": "2. Datum — date",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     102,
+     757,
+     121
+    ],
+    "t": "3. Nomen aegroti — patient's full name, age",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     148,
+     757,
+     164
+    ],
+    "t": "4. Nomen medici — physician's full name",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     179,
+     757,
+     197
+    ],
+    "t": "5. Invocatio — Rp.: (Recipe — take)",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     200,
+     757,
+     218
+    ],
+    "t": "6. Designatio materiarum — drug name, dose",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     221,
+     757,
+     240
+    ],
+    "t": "7. Subscriptio — dosage form, quantity",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     242,
+     757,
+     261
+    ],
+    "t": "8. Signatura — directions for use (in the state language)",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     444,
+     320,
+     757,
+     339
+    ],
+    "t": "9. Signum et sigillum medici — signature, seal",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#2e4a70"
+   },
+   {
+    "box": [
+     39,
+     24,
+     240,
+     40
+    ],
+    "t": "Stamp of the medical institution",
+    "f": "dvsi",
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#555555",
+    "s": 10
+   },
+   {
+    "box": [
+     292,
+     23,
+     322,
+     39
+    ],
+    "t": "Code",
+    "f": "dvs",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     100,
+     50,
+     292,
+     72
+    ],
+    "t": "PRESCRIPTION",
+    "f": "dvsb",
+    "bg": "#ffffff",
+    "c": "#1f3864",
+    "s": 17
+   },
+   {
+    "box": [
+     136,
+     80,
+     184,
+     98
+    ],
+    "t": "20__",
+    "f": "dvs",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     39,
+     107,
+     152,
+     126
+    ],
+    "t": "Patient's full name",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     39,
+     130,
+     73,
+     147
+    ],
+    "t": "Age",
+    "f": "dvs",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     39,
+     153,
+     165,
+     172
+    ],
+    "t": "Physician's full name",
+    "f": "dvs",
+    "smax": 11,
+    "a": "l",
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     175,
+     187,
+     203,
+     207
+    ],
+    "t": "0.5",
+    "f": "dvsi",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     84,
+     231,
+     335,
+     252
+    ],
+    "t": "S. Take 1 tablet 3 times a day",
+    "f": "dvsi",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     96,
+     252,
+     300,
+     273
+    ],
+    "t": "after meals.",
+    "f": "dvsi",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     39,
+     304,
+     320,
+     323
+    ],
+    "t": "Physician's signature and personal seal",
+    "f": "dvs",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     40,
+     325,
+     250,
+     341
+    ],
+    "t": "L.S.  (seal of the institution)",
+    "f": "dvsi",
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#555555",
+    "s": 9
+   }
+  ]
+ },
+ "p21_2.webp": {
+  "items": [
+   {
+    "box": [
+     114,
+     108,
+     130,
+     124
+    ],
+    "t": "a",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     190,
+     245,
+     207,
+     261
+    ],
+    "t": "b",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     338,
+     249,
+     354,
+     262
+    ],
+    "t": "c",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   }
+  ]
+ },
+ "p36_8.webp": {
+  "items": [
+   {
+    "box": [
+     519,
+     372,
+     537,
+     392
+    ],
+    "t": "b",
+    "f": "serifi",
+    "bg": "#ffffff",
+    "s": 15
+   },
+   {
+    "box": [
+     580,
+     728,
+     597,
+     748
+    ],
+    "t": "b",
+    "f": "serifi",
+    "bg": "#ffffff",
+    "s": 15
+   },
+   {
+    "box": [
+     40,
+     409,
+     500,
+     432
+    ],
+    "t": "Infusion apparatus (a) and infundir pot (b)",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     4,
+     782,
+     756,
+     806
+    ],
+    "t": "Electrically heated infusion apparatus (a) and infundir pot with a magnetic stirrer (b)",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p43_11.webp": {
+  "items": [
+   {
+    "box": [
+     340,
+     63,
+     453,
+     81
+    ],
+    "t": "Mouthpiece",
+    "f": "sansb",
+    "smax": 16,
+    "a": "l"
+   },
+   {
+    "box": [
+     279,
+     148,
+     340,
+     170
+    ],
+    "t": "Screen",
+    "f": "sansb",
+    "smax": 18,
+    "a": "l"
+   },
+   {
+    "box": [
+     256,
+     273,
+     435,
+     315
+    ],
+    "t": "Piercing\nbutton",
+    "f": "sansb",
+    "smax": 21
+   },
+   {
+    "box": [
+     69,
+     348,
+     279,
+     370
+    ],
+    "t": "Capsule chamber",
+    "f": "sansb",
+    "smax": 21
+   }
+  ]
+ },
+ "p43_12.webp": {
+  "items": [
+   {
+    "box": [
+     382,
+     10,
+     481,
+     39
+    ],
+    "t": "Lid",
+    "f": "sansb",
+    "smax": 24
+   },
+   {
+    "box": [
+     198,
+     26,
+     311,
+     68
+    ],
+    "t": "Dose\ncounter",
+    "f": "sansb",
+    "smax": 24
+   },
+   {
+    "box": [
+     6,
+     42,
+     136,
+     67
+    ],
+    "t": "Cartridge",
+    "f": "sansb",
+    "s": 20
+   },
+   {
+    "box": [
+     559,
+     54,
+     646,
+     80
+    ],
+    "t": "Button",
+    "f": "sansb",
+    "smax": 24
+   },
+   {
+    "box": [
+     420,
+     288,
+     598,
+     310
+    ],
+    "t": "Control window",
+    "f": "sansb",
+    "smax": 24
+   },
+   {
+    "box": [
+     55,
+     336,
+     137,
+     392
+    ],
+    "t": "Cartridge\ncover",
+    "f": "sansb",
+    "smax": 24
+   },
+   {
+    "box": [
+     369,
+     336,
+     477,
+     388
+    ],
+    "t": "Protective\ncap",
+    "f": "sansb",
+    "smax": 24
+   }
+  ]
+ },
+ "p44_13.webp": {
+  "items": [
+   {
+    "box": [
+     543,
+     12,
+     645,
+     33
+    ],
+    "t": "Mouthpiece",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     543,
+     45,
+     649,
+     62
+    ],
+    "t": "Uniblock",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     545,
+     132,
+     714,
+     149
+    ],
+    "t": "Dosing chamber",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     547,
+     154,
+     753,
+     178
+    ],
+    "t": "Dose-release button",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     543,
+     202,
+     692,
+     226
+    ],
+    "t": "Capillary tube",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     543,
+     250,
+     673,
+     267
+    ],
+    "t": "Outer housing",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     544,
+     329,
+     659,
+     346
+    ],
+    "t": "Clear base",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     544,
+     403,
+     612,
+     420
+    ],
+    "t": "Spring",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     544,
+     491,
+     645,
+     512
+    ],
+    "t": "Cartridge",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   }
+  ]
+ },
+ "p52_15.webp": {
+  "items": [
+   {
+    "box": [
+     428,
+     9,
+     540,
+     31
+    ],
+    "t": "Absorption",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 17
+   },
+   {
+    "box": [
+     86,
+     134,
+     215,
+     172
+    ],
+    "t": "Tissue",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#1a1a1a",
+    "s": 32
+   },
+   {
+    "box": [
+     520,
+     135,
+     636,
+     165
+    ],
+    "t": "PLASMA",
+    "f": "sans",
+    "a": "r",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 22
+   },
+   {
+    "box": [
+     268,
+     192,
+     322,
+     214
+    ],
+    "t": "Depot",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     582,
+     206,
+     634,
+     228
+    ],
+    "t": "Depot",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     409,
+     486,
+     426,
+     502
+    ],
+    "t": " ",
+    "f": "sans",
+    "bg": "#ffffff",
+    "lines": [
+     [
+      415,
+      484,
+      415,
+      504,
+      "#a04c84",
+      3
+     ],
+     [
+      423,
+      485,
+      410,
+      503,
+      "#6a676b",
+      2
+     ]
+    ],
+    "s": 6
+   },
+   {
+    "arc": [
+     409,
+     595,
+     98,
+     89
+    ],
+    "band": [
+     84,
+     112
+    ],
+    "span": [
+     168,
+     10
+    ],
+    "t": "Biotransformation",
+    "f": "sans",
+    "s": 15,
+    "sp": 5.5
+   },
+   {
+    "box": [
+     346,
+     606,
+     484,
+     646
+    ],
+    "t": "Metabolites and\nconjugates",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     98,
+     624,
+     304,
+     664
+    ],
+    "t": "Sites of drug action\n(receptors)",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     164,
+     741,
+     330,
+     762
+    ],
+    "t": "- free drug",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     164,
+     765,
+     360,
+     787
+    ],
+    "t": "- bound drug",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     164,
+     789,
+     345,
+     812
+    ],
+    "t": "- metabolites",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     164,
+     833,
+     335,
+     853
+    ],
+    "t": "- conjugates",
+    "f": "sansb",
+    "a": "l",
+    "s": 15
+   },
+   {
+    "box": [
+     448,
+     736,
+     578,
+     764
+    ],
+    "t": "Excretion",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 19
+   },
+   {
+    "box": [
+     0,
+     909,
+     600,
+     933
+    ],
+    "t": "Fig. II.1. Pharmacokinetics of drugs (diagram).",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p54_16.webp": {
+  "items": [
+   {
+    "box": [
+     26,
+     12,
+     52,
+     740
+    ],
+    "t": "Serum concentration of the drug, mg/l",
+    "f": "sansb",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 20
+   },
+   {
+    "box": [
+     262,
+     60,
+     440,
+     122
+    ],
+    "t": "Maximum\nconcentration",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 22
+   },
+   {
+    "box": [
+     196,
+     703,
+     400,
+     738
+    ],
+    "t": "Time: hours",
+    "f": "sansb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 27
+   },
+   {
+    "box": [
+     20,
+     762,
+     700,
+     812
+    ],
+    "t": "Fig. II.4. Determination of the bioavailability of a substance after enteral administration (after Kalant et al.).",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p56_17.webp": {
+  "items": [
+   {
+    "box": [
+     33,
+     52,
+     105,
+     131
+    ],
+    "t": "Glomerulus\nwith capsule",
+    "f": "sans",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     33,
+     163,
+     55,
+     291
+    ],
+    "t": "Proximal tubule",
+    "f": "sans",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     33,
+     309,
+     105,
+     376
+    ],
+    "t": "Nephron\nloop (loop\nof Henle)",
+    "f": "sans",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     32,
+     409,
+     57,
+     531
+    ],
+    "t": "Distal tubule",
+    "f": "sans",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 15
+   },
+   {
+    "box": [
+     469,
+     55,
+     705,
+     114
+    ],
+    "t": "Passive filtration\n(all low-molecular-weight\nsubstances dissolved in plasma)",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     467,
+     157,
+     705,
+     214
+    ],
+    "t": "Active reabsorption\n(amino acids, glucose,\nuric acid)",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     113,
+     182,
+     292,
+     243
+    ],
+    "t": "Active secretion\n(strong organic\nacids and bases)",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     467,
+     315,
+     705,
+     356
+    ],
+    "t": "Passive reabsorption\n(lipophilic compounds)",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     109,
+     334,
+     282,
+     375
+    ],
+    "t": "Passive excretion\n(lipophilic compounds)",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     300,
+     556,
+     394,
+     573
+    ],
+    "t": "Excretion",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     32,
+     574,
+     400,
+     596
+    ],
+    "t": "Note: a diagram of the nephron is shown.",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 16
+   },
+   {
+    "box": [
+     70,
+     604,
+     245,
+     628
+    ],
+    "t": "Active transport",
+    "f": "sansb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 15
+   },
+   {
+    "box": [
+     70,
+     632,
+     245,
+     655
+    ],
+    "t": "Passive diffusion",
+    "f": "sansb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 15
+   },
+   {
+    "box": [
+     16,
+     691,
+     748,
+     741
+    ],
+    "t": "Fig. II.8. Main processes affecting the renal excretion of pharmacological substances (diagram).",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p56_18.webp": {
+  "items": [
+   {
+    "box": [
+     150,
+     10,
+     450,
+     38
+    ],
+    "t": "Systemic circulation",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 17
+   },
+   {
+    "box": [
+     213,
+     150,
+     333,
+     175
+    ],
+    "t": "Gallbladder",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 16
+   },
+   {
+    "box": [
+     20,
+     250,
+     88,
+     275
+    ],
+    "t": "Liver",
+    "f": "sansb",
+    "a": "l",
+    "s": 17
+   },
+   {
+    "box": [
+     145,
+     455,
+     172,
+     520
+    ],
+    "t": "Bile",
+    "f": "sansb",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 17
+   },
+   {
+    "box": [
+     112,
+     566,
+     202,
+     591
+    ],
+    "t": "Intestine",
+    "f": "sansb",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 17
+   },
+   {
+    "box": [
+     222,
+     687,
+     320,
+     711
+    ],
+    "t": "Excretion",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     14,
+     736,
+     420,
+     756
+    ],
+    "t": "Fig. II.10. Enterohepatic circulation of substances (diagram).",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   }
+  ]
+ },
+ "p57_19.webp": {
+  "items": [
+   {
+    "box": [
+     520,
+     27,
+     730,
+     42
+    ],
+    "t": "Minimum toxic concentration",
+    "f": "dvs",
+    "a": "r",
+    "bg": "#ffffff",
+    "c": "#b0703a",
+    "s": 10
+   },
+   {
+    "box": [
+     130,
+     76,
+     270,
+     95
+    ],
+    "t": "Therapeutic window",
+    "f": "dvs",
+    "a": "l",
+    "c": "#4f6f3f",
+    "s": 11
+   },
+   {
+    "box": [
+     378,
+     84,
+     645,
+     103
+    ],
+    "t": "Steady state (Css) after ≈ 4–5 × t½",
+    "f": "dvs",
+    "s": 11
+   },
+   {
+    "box": [
+     530,
+     191,
+     730,
+     206
+    ],
+    "t": "Minimum effective concentration",
+    "f": "dvs",
+    "a": "r",
+    "c": "#4f7f3f",
+    "s": 10
+   },
+   {
+    "box": [
+     10,
+     45,
+     29,
+     236
+    ],
+    "t": "Plasma concentration",
+    "f": "dvs",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     220,
+     289,
+     580,
+     311
+    ],
+    "t": "Time, h (dose every 8 h, t½ = 8 h)",
+    "f": "dvs",
+    "bg": "#ffffff",
+    "s": 12
+   }
+  ]
+ },
+ "p59_20.webp": {
+  "items": [
+   {
+    "box": [
+     205,
+     14,
+     548,
+     46
+    ],
+    "t": "TYPES OF RECEPTORS",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "c": "#1c1c70",
+    "s": 24
+   },
+   {
+    "box": [
+     16,
+     58,
+     90,
+     79
+    ],
+    "t": "IONS",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     111,
+     58,
+     186,
+     79
+    ],
+    "t": "IONS",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     23,
+     191,
+     41,
+     212
+    ],
+    "t": "R",
+    "f": "sansb",
+    "s": 16,
+    "c": "#ffffff"
+   },
+   {
+    "box": [
+     295,
+     190,
+     313,
+     210
+    ],
+    "t": "R",
+    "f": "sansb",
+    "s": 16,
+    "c": "#222222"
+   },
+   {
+    "box": [
+     449,
+     224,
+     471,
+     244
+    ],
+    "t": "E",
+    "f": "sansb",
+    "s": 16,
+    "c": "#222222",
+    "bg": "grad"
+   },
+   {
+    "box": [
+     579,
+     181,
+     597,
+     201
+    ],
+    "t": "R",
+    "f": "sansb",
+    "s": 16,
+    "c": "#222222"
+   },
+   {
+    "box": [
+     577,
+     235,
+     598,
+     255
+    ],
+    "t": "E",
+    "f": "sansb",
+    "s": 16,
+    "c": "#222222"
+   },
+   {
+    "box": [
+     689,
+     319,
+     707,
+     339
+    ],
+    "t": "R",
+    "f": "sansb",
+    "s": 16,
+    "c": "#ffffff"
+   },
+   {
+    "box": [
+     698,
+     168,
+     757,
+     196
+    ],
+    "t": "CELL\nMEMBRANE",
+    "f": "serifb",
+    "s": 9
+   },
+   {
+    "box": [
+     410,
+     292,
+     508,
+     323
+    ],
+    "t": "SECOND\nMESSENGER",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     514,
+     292,
+     640,
+     323
+    ],
+    "t": "PROTEIN\nPHOSPHORYLATION",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "cbox": [
+     655,
+     304,
+     36,
+     14
+    ],
+    "ang": 62,
+    "t": " ",
+    "f": "sansb",
+    "s": 6,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "t": " ",
+    "f": "sans",
+    "s": 6,
+    "bg": "none",
+    "lines": [
+     [
+      674.2,
+      275.8,
+      670.8,
+      277.5,
+      "#1c1c1c",
+      2
+     ],
+     [
+      670.8,
+      277.5,
+      667.7,
+      279.5,
+      "#1c1c1c",
+      2
+     ],
+     [
+      667.7,
+      279.5,
+      664.6,
+      281.7,
+      "#1c1c1c",
+      2
+     ],
+     [
+      664.6,
+      281.7,
+      661.7,
+      284.1,
+      "#1c1c1c",
+      2
+     ],
+     [
+      661.7,
+      284.1,
+      659.0,
+      286.8,
+      "#1c1c1c",
+      2
+     ],
+     [
+      659.0,
+      286.8,
+      656.5,
+      289.6,
+      "#1c1c1c",
+      2
+     ],
+     [
+      656.5,
+      289.6,
+      654.2,
+      292.5,
+      "#1c1c1c",
+      2
+     ],
+     [
+      654.2,
+      292.5,
+      652.1,
+      295.6,
+      "#1c1c1c",
+      2
+     ],
+     [
+      652.1,
+      295.6,
+      650.2,
+      298.9,
+      "#1c1c1c",
+      2
+     ],
+     [
+      650.2,
+      298.9,
+      648.6,
+      302.3,
+      "#1c1c1c",
+      2
+     ],
+     [
+      648.6,
+      302.3,
+      647.2,
+      305.8,
+      "#1c1c1c",
+      2
+     ],
+     [
+      647.2,
+      305.8,
+      646.0,
+      309.3,
+      "#1c1c1c",
+      2
+     ],
+     [
+      646.0,
+      309.3,
+      645.1,
+      313.0,
+      "#1c1c1c",
+      2
+     ],
+     [
+      645.1,
+      313.0,
+      644.4,
+      316.7,
+      "#1c1c1c",
+      2
+     ]
+    ]
+   },
+   {
+    "arc": [
+     698,
+     325,
+     43,
+     150
+    ],
+    "band": [
+     44,
+     44.1
+    ],
+    "span": [
+     151,
+     150
+    ],
+    "t": "NUCLEUS",
+    "f": "sansb",
+    "s": 7,
+    "sp": 0.8,
+    "c": "#222222"
+   },
+   {
+    "box": [
+     672,
+     349,
+     724,
+     375
+    ],
+    "t": "mRNA\nsynthesis",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     76,
+     453,
+     137,
+     473
+    ],
+    "t": "agonist",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     146,
+     453,
+     159,
+     473
+    ],
+    "t": "R",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     177,
+     453,
+     252,
+     473
+    ],
+    "t": "receptor",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     291,
+     453,
+     366,
+     473
+    ],
+    "t": "proteins",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     382,
+     453,
+     397,
+     473
+    ],
+    "t": "E",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     415,
+     453,
+     512,
+     473
+    ],
+    "t": "enzymes",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p60_21.webp": {
+  "items": [
+   {
+    "box": [
+     60,
+     7,
+     370,
+     25
+    ],
+    "t": "a) Potency and efficacy",
+    "f": "dvs",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     440,
+     7,
+     738,
+     25
+    ],
+    "t": "b) Therapeutic index (quantal curves)",
+    "f": "dvs",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     81,
+     30,
+     234,
+     42
+    ],
+    "t": "A — full agonist (EC50 = 1)",
+    "f": "dvs",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     81,
+     42,
+     234,
+     54
+    ],
+    "t": "B — lower potency (EC50 = 20)",
+    "f": "dvs",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     81,
+     54,
+     234,
+     67
+    ],
+    "t": "C — partial agonist (Emax = 55%)",
+    "f": "dvs",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     455,
+     30,
+     582,
+     42
+    ],
+    "t": "Therapeutic effect (ED50 = 4)",
+    "f": "dvs",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     455,
+     42,
+     582,
+     54
+    ],
+    "t": "Toxic effect (TD50 = 160)",
+    "f": "dvs",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     8,
+     95,
+     24,
+     195
+    ],
+    "t": "Effect, % Emax",
+    "f": "dvs",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     382,
+     50,
+     398,
+     220
+    ],
+    "t": "Patients responding, %",
+    "f": "dvs",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     95,
+     264,
+     335,
+     282
+    ],
+    "t": "Dose (concentration), log scale",
+    "f": "dvs",
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     510,
+     264,
+     670,
+     282
+    ],
+    "t": "Dose, log scale",
+    "f": "dvs",
+    "bg": "#ffffff",
+    "s": 9
+   }
+  ]
+ },
+ "p63_22.webp": {
+  "items": [
+   {
+    "box": [
+     58,
+     19,
+     144,
+     38
+    ],
+    "t": "Anesthetic",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     246,
+     3,
+     362,
+     38
+    ],
+    "t": "Astringent\nagent",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     408,
+     0,
+     506,
+     37
+    ],
+    "t": "Coating\nagent",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     556,
+     2,
+     686,
+     37
+    ],
+    "t": "Adsorbent\nagent",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     123,
+     110,
+     139,
+     123
+    ],
+    "t": "E",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     127,
+     139,
+     141
+    ],
+    "t": "P",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     145,
+     139,
+     158
+    ],
+    "t": "I",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     162,
+     139,
+     176
+    ],
+    "t": "T",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     180,
+     139,
+     193
+    ],
+    "t": "H",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     197,
+     139,
+     211
+    ],
+    "t": "E",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     215,
+     139,
+     228
+    ],
+    "t": "L",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     232,
+     139,
+     246
+    ],
+    "t": "I",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     250,
+     139,
+     263
+    ],
+    "t": "U",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     123,
+     267,
+     139,
+     280
+    ],
+    "t": "M",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     3,
+     286,
+     186,
+     304
+    ],
+    "t": "Afferent fibers with",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     3,
+     304,
+     178,
+     321
+    ],
+    "t": "sensory endings",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     218,
+     310,
+     375,
+     331
+    ],
+    "t": "Irritant agent",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     0,
+     370,
+     748,
+     426
+    ],
+    "t": "Fig. 1.2. Main direction of action of agents that prevent excitation of sensory nerve endings.",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 16
+   }
+  ]
+ },
+ "p64_23.webp": {
+  "items": [
+   {
+    "box": [
+     95,
+     0,
+     445,
+     18
+    ],
+    "t": "Chemical structure of some anesthetics",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     120,
+     18,
+     380,
+     35
+    ],
+    "t": "Plant-derived agents",
+    "f": "sansi",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     150,
+     35,
+     350,
+     52
+    ],
+    "t": "Benzoylecgonine ester",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     165,
+     141,
+     335,
+     157
+    ],
+    "t": "cocaine hydrochloride",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     160,
+     157,
+     335,
+     173
+    ],
+    "t": "Synthetic agents",
+    "f": "sansi",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     110,
+     179,
+     385,
+     198
+    ],
+    "t": "Esters of para-aminobenzoic acid",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     15,
+     306,
+     160,
+     322
+    ],
+    "t": "Novocaine (procaine)",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     270,
+     304,
+     420,
+     320
+    ],
+    "t": "Dicaine (tetracaine)",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     160,
+     330,
+     345,
+     349
+    ],
+    "t": "Substituted anilides",
+    "f": "sansi",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     75,
+     462,
+     165,
+     477
+    ],
+    "t": "Lidocaine",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     330,
+     460,
+     430,
+     475
+    ],
+    "t": "Trimecaine",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   }
+  ]
+ },
+ "p65_24.webp": {
+  "items": [
+   {
+    "box": [
+     116,
+     192,
+     400,
+     216
+    ],
+    "t": "Propagation of excitation",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     603,
+     188,
+     624,
+     247
+    ],
+    "t": "Axon",
+    "f": "sansb",
+    "rot": 90,
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     186,
+     544,
+     526,
+     571
+    ],
+    "t": "Block of conduction of excitation",
+    "f": "serifb",
+    "s": 16
+   },
+   {
+    "box": [
+     133,
+     711,
+     300,
+     731
+    ],
+    "t": "axon membrane",
+    "f": "sansb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     133,
+     734,
+     320,
+     754
+    ],
+    "t": "anesthetic molecule",
+    "f": "sansb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     497,
+     126,
+     513,
+     141
+    ],
+    "t": " ",
+    "f": "sans",
+    "bg": "#ffffff",
+    "lines": [
+     [
+      508,
+      134,
+      508,
+      153,
+      "#111111",
+      3
+     ],
+     [
+      499,
+      143,
+      517,
+      143,
+      "#111111",
+      3
+     ]
+    ],
+    "s": 6
+   },
+   {
+    "box": [
+     489,
+     125,
+     503,
+     141
+    ],
+    "t": "b",
+    "f": "serifi",
+    "bg": "none",
+    "c": "#222222",
+    "s": 11
+   },
+   {
+    "box": [
+     497,
+     293,
+     513,
+     307
+    ],
+    "t": " ",
+    "f": "sans",
+    "bg": "#ffffff",
+    "lines": [
+     [
+      508,
+      282,
+      508,
+      301,
+      "#111111",
+      3
+     ],
+     [
+      499,
+      291,
+      517,
+      291,
+      "#111111",
+      3
+     ]
+    ],
+    "s": 6
+   },
+   {
+    "box": [
+     489,
+     294,
+     503,
+     310
+    ],
+    "t": "b",
+    "f": "serifi",
+    "bg": "none",
+    "c": "#222222",
+    "s": 11
+   },
+   {
+    "box": [
+     37,
+     371,
+     59,
+     393
+    ],
+    "t": "B",
+    "f": "sansbi",
+    "bg": "#ffffff",
+    "s": 16
+   },
+   {
+    "box": [
+     12,
+     788,
+     748,
+     812
+    ],
+    "t": "Fig. 1.1. Effect of anesthetics on the conduction of excitation along a nerve fiber.",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p76_25.webp": {
+  "items": [
+   {
+    "box": [
+     38,
+     24,
+     100,
+     42
+    ],
+    "t": "Midbrain",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     38,
+     73,
+     90,
+     89
+    ],
+    "t": "Pons",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     52,
+     124,
+     115,
+     151
+    ],
+    "t": "Medulla\noblongata",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "r",
+    "s": 10
+   },
+   {
+    "box": [
+     32,
+     204,
+     62,
+     276
+    ],
+    "t": "Carotid\nsinus",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "c",
+    "rot": 90,
+    "s": 10
+   },
+   {
+    "box": [
+     34,
+     377,
+     55,
+     516
+    ],
+    "t": "Skeletal muscles",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "c",
+    "rot": 90,
+    "s": 11
+   },
+   {
+    "box": [
+     515,
+     30,
+     562,
+     45
+    ],
+    "t": "Eye",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     512,
+     98,
+     605,
+     141
+    ],
+    "t": "Lacrimal and\nsalivary\nglands",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     514,
+     169,
+     605,
+     198
+    ],
+    "t": "Trachea and\nbronchi",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     515,
+     235,
+     575,
+     253
+    ],
+    "t": "Heart",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     513,
+     285,
+     595,
+     302
+    ],
+    "t": "Arteriole",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     513,
+     312,
+     655,
+     341
+    ],
+    "t": "Liver with bile ducts\nand gallbladder",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     513,
+     353,
+     595,
+     369
+    ],
+    "t": "Stomach",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     513,
+     377,
+     625,
+     393
+    ],
+    "t": "Small intestine",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     514,
+     397,
+     655,
+     428
+    ],
+    "t": "Proximal part of\nthe large intestine",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     515,
+     443,
+     655,
+     471
+    ],
+    "t": "Adrenal medulla",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     514,
+     479,
+     625,
+     519
+    ],
+    "t": "Kidney with\nadrenal gland",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     514,
+     530,
+     655,
+     557
+    ],
+    "t": "Distal part of\nthe large intestine",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     516,
+     579,
+     605,
+     596
+    ],
+    "t": "Rectum",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     518,
+     617,
+     645,
+     634
+    ],
+    "t": "Urinary bladder",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     246,
+     692,
+     445,
+     707
+    ],
+    "t": "– cholinergic neurons",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     246,
+     707,
+     445,
+     722
+    ],
+    "t": "– adrenergic neurons",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     246,
+     724,
+     475,
+     741
+    ],
+    "t": "– sensory (afferent) neurons",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     28,
+     765,
+     754,
+     813
+    ],
+    "t": "Fig. 3.1. General scheme of cholinergic and adrenergic innervation. C, Th, L, S — segments of the spinal cord.",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p77_26.webp": {
+  "items": [
+   {
+    "box": [
+     98,
+     45,
+     181,
+     60
+    ],
+    "t": "Mitochondrion",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "r",
+    "s": 10
+   },
+   {
+    "box": [
+     232,
+     44,
+     262,
+     58
+    ],
+    "t": "CoA",
+    "f": "dvb",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     150,
+     76,
+     197,
+     90
+    ],
+    "t": "AcCoA",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     198,
+     70,
+     228,
+     84
+    ],
+    "t": "ChAT",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 9
+   },
+   {
+    "box": [
+     154,
+     94,
+     198,
+     108
+    ],
+    "t": "choline",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     244,
+     87,
+     270,
+     100
+    ],
+    "t": "ACh",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     132,
+     147,
+     171,
+     161
+    ],
+    "t": "Choline",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "r",
+    "s": 9
+   },
+   {
+    "box": [
+     25,
+     156,
+     55,
+     170
+    ],
+    "t": "blood",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 9
+   },
+   {
+    "box": [
+     84,
+     174,
+     131,
+     187
+    ],
+    "t": "Acetate",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     142,
+     167,
+     195,
+     191
+    ],
+    "t": "Acetic\nacid",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     369,
+     146,
+     498,
+     160
+    ],
+    "t": "Cholinergic receptors",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     132,
+     223,
+     348,
+     245
+    ],
+    "t": "E n d   p l a t e",
+    "f": "dv",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     150,
+     246,
+     332,
+     263
+    ],
+    "t": "S k e l e t a l   m u s c l e",
+    "f": "dv",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     486,
+     222,
+     516,
+     237
+    ],
+    "t": "1 mV",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     225,
+     378,
+     240,
+     415
+    ],
+    "t": "Nerve",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "rot": 90,
+    "s": 10
+   },
+   {
+    "box": [
+     250,
+     357,
+     266,
+     423
+    ],
+    "t": "impulses",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "rot": 90,
+    "s": 10
+   },
+   {
+    "box": [
+     2,
+     438,
+     76,
+     467
+    ],
+    "t": "Presynaptic\nmembrane",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     22,
+     524,
+     101,
+     553
+    ],
+    "t": "Postsynaptic\nmembrane",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     483,
+     553,
+     531,
+     568
+    ],
+    "t": "−90 mV",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 9
+   },
+   {
+    "box": [
+     378,
+     584,
+     446,
+     611
+    ],
+    "t": "Nerve\nimpulses",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   }
+  ]
+ },
+ "p77_27.webp": {
+  "items": [
+   {
+    "box": [
+     258,
+     6,
+     334,
+     35
+    ],
+    "t": "Anionic\nsite",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     416,
+     5,
+     498,
+     34
+    ],
+    "t": "Esteratic\nsite",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     40,
+     54,
+     205,
+     83
+    ],
+    "t": "Schematic structure of\nacetylcholinesterase",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     348,
+     45,
+     392,
+     61
+    ],
+    "t": "Protein",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     55,
+     287,
+     170,
+     303
+    ],
+    "t": "Acetylcholine",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     30,
+     447,
+     170,
+     462
+    ],
+    "t": "Proserine (neostigmine)",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     65,
+     570,
+     155,
+     587
+    ],
+    "t": "Edrophonium",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     88,
+     694,
+     122,
+     710
+    ],
+    "t": "DFP",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "s": 10
+   },
+   {
+    "box": [
+     240,
+     705,
+     345,
+     722
+    ],
+    "t": "Hydrophobic part",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     237,
+     737,
+     455,
+     754
+    ],
+    "t": "Bond that undergoes hydrolysis",
+    "f": "dv",
+    "bg": "#ffffff",
+    "c": "#333333",
+    "a": "l",
+    "s": 10
+   }
+  ]
+ },
+ "p94_28.webp": {
+  "items": [
+   {
+    "box": [
+     25,
+     17,
+     535,
+     38
+    ],
+    "t": "Chemical structure of some N-cholinomimetics",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     95,
+     43,
+     435,
+     62
+    ],
+    "t": "Plant-derived compounds (alkaloids)",
+    "f": "sansi",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     165,
+     65,
+     350,
+     81
+    ],
+    "t": "Tertiary amines",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     78,
+     165,
+     148,
+     180
+    ],
+    "t": "Nicotine",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     312,
+     166,
+     458,
+     184
+    ],
+    "t": "Lobeline hydrochloride",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     165,
+     202,
+     310,
+     219
+    ],
+    "t": "Secondary amines",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     222,
+     300,
+     288,
+     315
+    ],
+    "t": "Cytisine",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   }
+  ]
+ },
+ "p96_29.webp": {
+  "items": [
+   {
+    "box": [
+     8,
+     17,
+     416,
+     38
+    ],
+    "t": "Chemical structure of some ganglionic blockers",
+    "f": "sansb",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     55,
+     38,
+     355,
+     56
+    ],
+    "t": "Bis-quaternary ammonium compounds",
+    "f": "serifi",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     125,
+     84,
+     255,
+     102
+    ],
+    "t": "Benzohexonium",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     160,
+     152,
+     260,
+     168
+    ],
+    "t": "Pentamine",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     155,
+     247,
+     255,
+     264
+    ],
+    "t": "Hygronium",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     125,
+     263,
+     290,
+     281
+    ],
+    "t": "Tertiary amines",
+    "f": "serifi",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     160,
+     379,
+     250,
+     396
+    ],
+    "t": "Pirilene",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 12
+   }
+  ]
+ },
+ "p98_30.webp": {
+  "items": [
+   {
+    "box": [
+     167,
+     106,
+     183,
+     142
+    ],
+    "t": "Nerve",
+    "f": "serif",
+    "bg": "#ffffff",
+    "rot": 90,
+    "s": 11
+   },
+   {
+    "box": [
+     191,
+     102,
+     207,
+     151
+    ],
+    "t": "impulse",
+    "f": "serif",
+    "bg": "#ffffff",
+    "rot": 90,
+    "s": 11
+   },
+   {
+    "box": [
+     167,
+     409,
+     183,
+     445
+    ],
+    "t": "Nerve",
+    "f": "serif",
+    "bg": "#ffffff",
+    "rot": 90,
+    "s": 11
+   },
+   {
+    "box": [
+     191,
+     405,
+     207,
+     453
+    ],
+    "t": "impulse",
+    "f": "serif",
+    "bg": "#ffffff",
+    "rot": 90,
+    "s": 11
+   },
+   {
+    "box": [
+     348,
+     242,
+     403,
+     258
+    ],
+    "t": "Agent",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     404,
+     240,
+     487,
+     258
+    ],
+    "t": "Nerve impulse",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     487,
+     187,
+     531,
+     203
+    ],
+    "t": "−90 mV",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     483,
+     452,
+     535,
+     467
+    ],
+    "t": "−90 mV",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     364,
+     505,
+     419,
+     521
+    ],
+    "t": "Agent",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     430,
+     507,
+     522,
+     525
+    ],
+    "t": "Nerve impulse",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     447,
+     549,
+     592,
+     567
+    ],
+    "t": "Acetylcholine",
+    "f": "serif",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     447,
+     567,
+     592,
+     597
+    ],
+    "t": "Acetylcholine hydrolysis\nproducts",
+    "f": "serif",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     446,
+     597,
+     592,
+     612
+    ],
+    "t": "Acetylcholinesterase",
+    "f": "serif",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     446,
+     613,
+     592,
+     631
+    ],
+    "t": "Cholinergic receptor",
+    "f": "serif",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     446,
+     637,
+     592,
+     655
+    ],
+    "t": "Curare-like agents",
+    "f": "serif",
+    "bg": "#ffffff",
+    "a": "l",
+    "s": 11
+   }
+  ]
+ },
+ "p98_31.webp": {
+  "items": [
+   {
+    "box": [
+     55,
+     4,
+     485,
+     25
+    ],
+    "t": "Chemical structure of some curare-like compounds",
+    "f": "serifb",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     145,
+     27,
+     385,
+     43
+    ],
+    "t": "Quaternary ammonium compounds",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     145,
+     44,
+     385,
+     61
+    ],
+    "t": "Plant-derived agents",
+    "f": "serifi",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     190,
+     232,
+     340,
+     250
+    ],
+    "t": "Tubocurarine chloride",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     180,
+     256,
+     320,
+     272
+    ],
+    "t": "Synthetic agents",
+    "f": "serifi",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     285,
+     371,
+     385,
+     388
+    ],
+    "t": "Pancuronium",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     293,
+     522,
+     397,
+     541
+    ],
+    "t": "Pipecuronium",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     195,
+     730,
+     290,
+     747
+    ],
+    "t": "Atracurium",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     170,
+     807,
+     320,
+     823
+    ],
+    "t": "Ditilin (suxamethonium)",
+    "f": "serif",
+    "bg": "#ffffff",
+    "s": 11
+   }
+  ]
+ },
+ "p109_32.webp": {
+  "items": [
+   {
+    "box": [
+     403,
+     75,
+     512,
+     108
+    ],
+    "t": "Sympathetic\nganglion",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     516,
+     162,
+     613,
+     194
+    ],
+    "t": "Effector\ncell",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     228,
+     239,
+     408,
+     260
+    ],
+    "t": "Varicosity",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     442,
+     246,
+     508,
+     265
+    ],
+    "t": "Tyrosine",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     388,
+     291,
+     433,
+     308
+    ],
+    "t": "DOPA",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     357,
+     330,
+     432,
+     349
+    ],
+    "t": "Dopamine",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     27,
+     348,
+     167,
+     385
+    ],
+    "t": "Adrenergic\nfiber",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     204,
+     388,
+     241,
+     405
+    ],
+    "t": "MAO",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "s": 11
+   },
+   {
+    "box": [
+     22,
+     443,
+     158,
+     476
+    ],
+    "t": "Deaminated\nmetabolites",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     178,
+     443,
+     228,
+     460
+    ],
+    "t": "PreAR",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "s": 10
+   },
+   {
+    "box": [
+     2,
+     499,
+     102,
+     548
+    ],
+    "t": "O-methylated\nmetabolites",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     506,
+     500,
+     613,
+     557
+    ],
+    "t": "Catecholamines\nentering from\nthe blood",
+    "f": "sans",
+    "c": "#444444",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     200,
+     580,
+     345,
+     601
+    ],
+    "t": "Adrenoceptors",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "s": 12
+   },
+   {
+    "box": [
+     53,
+     595,
+     100,
+     612
+    ],
+    "t": "COMT",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "s": 11
+   },
+   {
+    "box": [
+     492,
+     605,
+     538,
+     622
+    ],
+    "t": "COMT",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "s": 11
+   },
+   {
+    "box": [
+     188,
+     614,
+     358,
+     636
+    ],
+    "t": "Effector cell",
+    "f": "sans",
+    "c": "#444444",
+    "a": "c",
+    "bg": "#ffffff",
+    "s": 13
+   }
+  ]
+ },
+ "p158_39.webp": {
+  "items": [
+   {
+    "box": [
+     160,
+     99,
+     258,
+     116
+    ],
+    "t": "Mast cell",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     514,
+     99,
+     594,
+     118
+    ],
+    "t": "Bronchiole",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     302,
+     180,
+     454,
+     196
+    ],
+    "t": "Adrenomimetics",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     304,
+     203,
+     455,
+     265
+    ],
+    "t": "Salbutamol (β₂)\nIsoprenaline (β₁, β₂)\nEpinephrine (α, β₁, β₂)\nEphedrine (α, β₁, β₂)",
+    "f": "dv",
+    "a": "l",
+    "bg": "#ffffff",
+    "c": "#b03080",
+    "s": 10
+   },
+   {
+    "box": [
+     124,
+     263,
+     167,
+     282
+    ],
+    "t": "cAMP",
+    "f": "sans",
+    "a": "r",
+    "bg": "#ffffff",
+    "c": "#b03080",
+    "s": 12
+   },
+   {
+    "box": [
+     91,
+     380,
+     135,
+     398
+    ],
+    "t": "cAMP",
+    "f": "sans",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     55,
+     349,
+     110,
+     369
+    ],
+    "t": "5′-AMP",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     200,
+     349,
+     236,
+     369
+    ],
+    "t": "ATP",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     132,
+     447,
+     184,
+     463
+    ],
+    "t": "Granules",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     126,
+     494,
+     198,
+     526
+    ],
+    "t": "Histamine\nSRS-A",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     24,
+     547,
+     167,
+     569
+    ],
+    "t": "M-cholinergic blockers",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     582,
+     547,
+     725,
+     569
+    ],
+    "t": "M-cholinergic blockers",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     570,
+     264,
+     614,
+     283
+    ],
+    "t": "cAMP",
+    "f": "sans",
+    "a": "r",
+    "bg": "#ffffff",
+    "c": "#b03080",
+    "s": 12
+   },
+   {
+    "box": [
+     589,
+     393,
+     632,
+     412
+    ],
+    "t": "cAMP",
+    "f": "sans",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     508,
+     350,
+     543,
+     369
+    ],
+    "t": "ATP",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     633,
+     350,
+     688,
+     369
+    ],
+    "t": "5′-AMP",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "cbox": [
+     370,
+     456,
+     168,
+     16
+    ],
+    "ang": 13,
+    "t": "Spasmogenic action",
+    "f": "sans",
+    "s": 12,
+    "bg": "#ffffff"
+   },
+   {
+    "cbox": [
+     65,
+     168,
+     66,
+     15
+    ],
+    "ang": -61,
+    "t": "Allergen",
+    "f": "sans",
+    "s": 12,
+    "bg": "#ffffff"
+   },
+   {
+    "cbox": [
+     74,
+     310,
+     64,
+     28
+    ],
+    "ang": 66,
+    "t": "Phosphodi-\nesterase",
+    "f": "sans",
+    "s": 12,
+    "bg": "#ffffff"
+   },
+   {
+    "cbox": [
+     668,
+     302,
+     66,
+     28
+    ],
+    "ang": -58,
+    "t": "Phosphodi-\nesterase",
+    "f": "sans",
+    "s": 12,
+    "bg": "#ffffff"
+   },
+   {
+    "arc": [
+     154,
+     344,
+     125,
+     34
+    ],
+    "band": [
+     116,
+     134
+    ],
+    "span": [
+     66,
+     0
+    ],
+    "t": "β-adrenoreceptor",
+    "f": "dv",
+    "s": 11,
+    "fill": true,
+    "c": "#1a1a1a"
+   },
+   {
+    "arc": [
+     154,
+     344,
+     103,
+     34
+    ],
+    "band": [
+     95,
+     111
+    ],
+    "span": [
+     68,
+     -1
+    ],
+    "t": "Adenylate cyclase",
+    "f": "sans",
+    "s": 11,
+    "fill": true,
+    "c": "#1a1a1a",
+    "lines": [
+     [
+      290,
+      288,
+      230,
+      319,
+      "#c0307f",
+      2
+     ]
+    ]
+   },
+   {
+    "arc": [
+     154,
+     344,
+     106,
+     225
+    ],
+    "band": [
+     98,
+     114
+    ],
+    "span": [
+     254,
+     196
+    ],
+    "t": "Adenylate cyclase",
+    "f": "sans",
+    "s": 10,
+    "fill": true,
+    "c": "#1a1a1a",
+    "ccw": true
+   },
+   {
+    "arc": [
+     154,
+     344,
+     127,
+     225
+    ],
+    "band": [
+     119,
+     135
+    ],
+    "span": [
+     253,
+     198
+    ],
+    "t": "M-cholinoreceptor",
+    "f": "sans",
+    "s": 11,
+    "fill": true,
+    "c": "#ffffff",
+    "ccw": true
+   },
+   {
+    "arc": [
+     595,
+     345,
+     126,
+     148
+    ],
+    "band": [
+     117,
+     135
+    ],
+    "span": [
+     180,
+     116
+    ],
+    "t": "β₂-adrenoreceptor",
+    "f": "dv",
+    "s": 11,
+    "fill": true,
+    "c": "#1a1a1a"
+   },
+   {
+    "arc": [
+     595,
+     345,
+     104,
+     147
+    ],
+    "band": [
+     96,
+     112
+    ],
+    "span": [
+     181,
+     113
+    ],
+    "t": "Adenylate cyclase",
+    "f": "sans",
+    "s": 11,
+    "fill": true,
+    "c": "#1a1a1a",
+    "lines": [
+     [
+      449,
+      287,
+      521,
+      319,
+      "#c0307f",
+      2
+     ]
+    ]
+   },
+   {
+    "arc": [
+     595,
+     345,
+     105,
+     314
+    ],
+    "band": [
+     97,
+     113
+    ],
+    "span": [
+     342,
+     286
+    ],
+    "t": "Adenylate cyclase",
+    "f": "sans",
+    "s": 10,
+    "fill": true,
+    "c": "#1a1a1a",
+    "ccw": true
+   },
+   {
+    "arc": [
+     595,
+     345,
+     127,
+     314
+    ],
+    "band": [
+     119,
+     135
+    ],
+    "span": [
+     341,
+     287
+    ],
+    "t": "M-cholinoreceptor",
+    "f": "sans",
+    "s": 11,
+    "fill": true,
+    "c": "#ffffff",
+    "ccw": true
+   },
+   {
+    "box": [
+     561,
+     325,
+     577,
+     368
+    ],
+    "t": "Spasm",
+    "f": "sans",
+    "rot": 90,
+    "c": "#7a1a00",
+    "s": 12
+   },
+   {
+    "arc": [
+     592.7,
+     346.7,
+     31,
+     4
+    ],
+    "band": [
+     25,
+     37
+    ],
+    "span": [
+     82,
+     -74
+    ],
+    "t": "Relaxation",
+    "f": "sans",
+    "s": 11,
+    "fill": true,
+    "c": "#7a1a00",
+    "bg": "#e68a12"
+   }
+  ]
+ },
+ "p109_33.webp": {
+  "items": [
+   {
+    "box": [
+     392,
+     0,
+     472,
+     27
+    ],
+    "t": "Varicosity",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     249,
+     31,
+     273,
+     48
+    ],
+    "t": "NE",
+    "f": "sansb",
+    "c": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     249,
+     197,
+     273,
+     214
+    ],
+    "t": "NE",
+    "f": "sansb",
+    "c": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     84,
+     210,
+     120,
+     227
+    ],
+    "t": "EPI",
+    "f": "sansb",
+    "c": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     406,
+     210,
+     442,
+     227
+    ],
+    "t": "EPI",
+    "f": "sansb",
+    "c": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     33,
+     172,
+     142,
+     190
+    ],
+    "t": "Vascular bed",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     391,
+     172,
+     500,
+     190
+    ],
+    "t": "Vascular bed",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     200,
+     301,
+     326,
+     326
+    ],
+    "t": "Postsynaptic\nmembrane",
+    "f": "sans",
+    "s": 10
+   }
+  ]
+ },
+ "p113_34.webp": {
+  "items": [
+   {
+    "box": [
+     215,
+     204,
+     325,
+     244
+    ],
+    "t": "Varicosity",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   },
+   {
+    "box": [
+     440,
+     322,
+     515,
+     362
+    ],
+    "t": "Nerve\nimpulse",
+    "f": "sans",
+    "s": 14
+   },
+   {
+    "box": [
+     262,
+     350,
+     281,
+     366
+    ],
+    "t": "NE",
+    "f": "sans",
+    "s": 13
+   },
+   {
+    "box": [
+     259,
+     468,
+     281,
+     486
+    ],
+    "t": "NE",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     6,
+     398,
+     130,
+     414
+    ],
+    "t": "Phentolamine",
+    "f": "sans",
+    "s": 13
+   },
+   {
+    "box": [
+     6,
+     418,
+     130,
+     435
+    ],
+    "t": "Tropaphen",
+    "f": "sans",
+    "s": 13
+   },
+   {
+    "box": [
+     6,
+     474,
+     98,
+     493
+    ],
+    "t": "Prazosin",
+    "f": "sans",
+    "s": 13
+   },
+   {
+    "box": [
+     185,
+     634,
+     355,
+     658
+    ],
+    "t": "Effector cell",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 14
+   }
+  ]
+ },
+ "p132_36.webp": {
+  "items": [
+   {
+    "box": [
+     430,
+     66,
+     512,
+     102
+    ],
+    "t": "Nerve\nending",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     50,
+     134,
+     160,
+     156
+    ],
+    "t": "Flumazenil",
+    "f": "sans",
+    "bg": "grad",
+    "s": 13
+   },
+   {
+    "box": [
+     322,
+     155,
+     372,
+     174
+    ],
+    "t": "GABA",
+    "f": "sansb",
+    "s": 12
+   },
+   {
+    "box": [
+     62,
+     208,
+     92,
+     229
+    ],
+    "t": "BZ",
+    "f": "sans",
+    "bg": "grad",
+    "s": 13
+   },
+   {
+    "box": [
+     58,
+     339,
+     141,
+     378
+    ],
+    "t": "Neuronal\nmembrane",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   },
+   {
+    "box": [
+     286,
+     339,
+     364,
+     381
+    ],
+    "t": "GABA-A\nreceptor",
+    "f": "sans",
+    "s": 13
+   },
+   {
+    "box": [
+     105,
+     427,
+     237,
+     465
+    ],
+    "t": "Allosteric\nsite",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 13
+   }
+  ]
+ },
+ "p144_37.webp": {
+  "items": [
+   {
+    "box": [
+     43,
+     11,
+     170,
+     40
+    ],
+    "t": "SEROTONERGIC\nNEURON",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     580,
+     27,
+     752,
+     47
+    ],
+    "t": "ADRENERGIC NEURON",
+    "f": "serifb",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     308,
+     20,
+     444,
+     35
+    ],
+    "t": "MAO INHIBITORS",
+    "f": "serifb",
+    "a": "l",
+    "s": 9
+   },
+   {
+    "box": [
+     310,
+     41,
+     444,
+     96
+    ],
+    "t": "1. NONSELECTIVE\n(NIALAMIDE,\nTRANYLCYPROMINE)\n2. MAO-A INHIBITORS\n(MOCLOBEMIDE)",
+    "f": "serifb",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     0,
+     101,
+     110,
+     117
+    ],
+    "t": "METABOLITES",
+    "f": "serifb",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     188,
+     101,
+     222,
+     117
+    ],
+    "t": "MAO",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     530,
+     100,
+     563,
+     116
+    ],
+    "t": "MAO",
+    "f": "sans",
+    "s": 11
+   },
+   {
+    "box": [
+     643,
+     100,
+     758,
+     116
+    ],
+    "t": "METABOLITES",
+    "f": "serifb",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     38,
+     136,
+     110,
+     156
+    ],
+    "t": "Serotonin",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     626,
+     135,
+     737,
+     154
+    ],
+    "t": "Norepinephrine",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 12
+   },
+   {
+    "box": [
+     19,
+     239,
+     132,
+     311
+    ],
+    "t": "INHIBITORS OF\nNEURONAL\nREUPTAKE OF\nSEROTONIN\n(FLUOXETINE)",
+    "f": "serifb",
+    "a": "l",
+    "s": 10
+   },
+   {
+    "box": [
+     610,
+     233,
+     724,
+     303
+    ],
+    "t": "INHIBITORS OF\nNEURONAL\nREUPTAKE OF\nNOREPINEPHRINE\n(MAPROTILINE)",
+    "f": "serifb",
+    "a": "l",
+    "s": 9
+   },
+   {
+    "box": [
+     308,
+     258,
+     465,
+     323
+    ],
+    "t": "INHIBITORS OF NEURONAL\nREUPTAKE OF NOREPINEPHRINE\nAND SEROTONIN —\nTRICYCLIC ANTIDEPRESSANTS\n(IMIPRAMINE, AMITRIPTYLINE)",
+    "f": "serifb",
+    "a": "l",
+    "s": 8
+   },
+   {
+    "box": [
+     158,
+     384,
+     258,
+     412
+    ],
+    "t": "SEROTONIN\nRECEPTORS",
+    "f": "serifb",
+    "a": "c",
+    "s": 9
+   },
+   {
+    "box": [
+     483,
+     379,
+     618,
+     395
+    ],
+    "t": "ADRENOCEPTORS",
+    "f": "serifb",
+    "a": "c",
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     275,
+     432,
+     483,
+     448
+    ],
+    "t": "POSTSYNAPTIC NEURONS",
+    "f": "serifb",
+    "a": "c",
+    "bg": "#ffffff",
+    "s": 10
+   }
+  ]
+ },
+ "p154_38.webp": {
+  "items": [
+   {
+    "box": [
+     225,
+     6,
+     348,
+     23
+    ],
+    "t": "Medulla oblongata",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     76,
+     26,
+     168,
+     100
+    ],
+    "t": "Respiratory\nstimulants of\ncentral action\n(analeptics)",
+    "f": "sans",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     381,
+     40,
+     497,
+     99
+    ],
+    "t": "Antitussives\nof central\naction",
+    "f": "sans",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     40,
+     133,
+     98,
+     163
+    ],
+    "t": "Carotid\nsinus",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     20,
+     198,
+     115,
+     285
+    ],
+    "t": "Respiratory\nstimulants of\nreflex action\n(N-cholino-\nmimetics)",
+    "f": "sans",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     401,
+     185,
+     516,
+     244
+    ],
+    "t": "Antitussives\nof peripheral\naction",
+    "f": "sans",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     410,
+     395,
+     512,
+     454
+    ],
+    "t": "Expectorants\nof direct\naction",
+    "f": "sans",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "box": [
+     388,
+     521,
+     490,
+     580
+    ],
+    "t": "Expectorants\nof reflex\naction",
+    "f": "sans",
+    "a": "l",
+    "s": 11
+   },
+   {
+    "cbox": [
+     307,
+     587,
+     52,
+     13
+    ],
+    "ang": 20,
+    "t": "Stomach",
+    "f": "sansi",
+    "s": 10,
+    "bg": "#ffffff"
+   },
+   {
+    "box": [
+     240,
+     609,
+     400,
+     624
+    ],
+    "t": "afferent fibers",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     240,
+     624,
+     400,
+     639
+    ],
+    "t": "cholinergic fibers",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   }
+  ]
+ },
+ "p169_40.webp": {
+  "items": [
+   {
+    "box": [
+     486,
+     84,
+     530,
+     101
+    ],
+    "t": "SA node",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     486,
+     186,
+     530,
+     204
+    ],
+    "t": "Atrium",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     486,
+     293,
+     530,
+     325
+    ],
+    "t": "AV\nnode",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 9
+   },
+   {
+    "box": [
+     412,
+     634,
+     498,
+     667
+    ],
+    "t": "Action\npotentials",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     333,
+     729,
+     362,
+     745
+    ],
+    "t": "ECG",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 10
+   }
+  ]
+ },
+ "p170_41.webp": {
+  "items": [
+   {
+    "box": [
+     487,
+     22,
+     503,
+     40
+    ],
+    "t": "b",
+    "f": "sansbi",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     85,
+     268,
+     101,
+     286
+    ],
+    "t": "c",
+    "f": "sansbi",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     487,
+     268,
+     503,
+     286
+    ],
+    "t": "d",
+    "f": "sansbi",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     197,
+     35,
+     320,
+     56
+    ],
+    "t": "Purkinje fiber",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     254,
+     100,
+     356,
+     135
+    ],
+    "t": "Ventricular\nmyofibril",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     110,
+     200,
+     185,
+     219
+    ],
+    "t": "Normal",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     588,
+     4,
+     708,
+     53
+    ],
+    "t": "Block of conduction\nof orthodromic\nstimuli",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     604,
+     62,
+     758,
+     96
+    ],
+    "t": "Zone of functional\nblock",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     646,
+     97,
+     742,
+     132
+    ],
+    "t": "Slowed\nconduction",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     462,
+     199,
+     638,
+     235
+    ],
+    "t": "Unidirectional block\n(arrhythmia develops)",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     211,
+     278,
+     380,
+     313
+    ],
+    "t": "Block of conduction of ortho-\nand antidromic stimuli",
+    "f": "sans",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     45,
+     438,
+     250,
+     472
+    ],
+    "t": "Bidirectional block\n(under the influence of quinidine)",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 11
+   },
+   {
+    "box": [
+     440,
+     437,
+     655,
+     472
+    ],
+    "t": "Facilitated conduction\n(under the influence of isoprenaline)",
+    "f": "sans",
+    "bg": "#ffffff",
+    "s": 11
+   }
+  ]
+ },
+ "p171_42.webp": {
+  "items": [
+   {
+    "box": [
+     295,
+     100,
+     317,
+     115
+    ],
+    "t": "SA",
+    "f": "sansb",
+    "c": "#222222",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     323,
+     153,
+     344,
+     168
+    ],
+    "t": "AV",
+    "f": "sansb",
+    "c": "#222222",
+    "s": 10
+   },
+   {
+    "box": [
+     395,
+     217,
+     418,
+     235
+    ],
+    "t": "HB",
+    "f": "sansb",
+    "c": "#222222",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     400,
+     245,
+     423,
+     263
+    ],
+    "t": "PF",
+    "f": "sansb",
+    "c": "#222222",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     26,
+     222,
+     113,
+     286
+    ],
+    "t": "In supra-\nventricular and\nventricular\narrhythmias",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     126,
+     200,
+     194,
+     246
+    ],
+    "t": "Quinidine-\nlike\nagents",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     126,
+     252,
+     194,
+     281
+    ],
+    "t": "β-Blockers",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     126,
+     289,
+     194,
+     308
+    ],
+    "t": "Amiodarone",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     522,
+     185,
+     595,
+     219
+    ],
+    "t": "Cardiac\nglycosides",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     522,
+     232,
+     595,
+     252
+    ],
+    "t": "Verapamil",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     606,
+     194,
+     702,
+     244
+    ],
+    "t": "In supra-\nventricular\narrhythmias",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     531,
+     271,
+     595,
+     289
+    ],
+    "t": "Lidocaine",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     531,
+     313,
+     595,
+     334
+    ],
+    "t": "Phenytoin",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "r",
+    "bg": "#ffffff",
+    "s": 10
+   },
+   {
+    "box": [
+     606,
+     278,
+     702,
+     327
+    ],
+    "t": "In ventricular\narrhythmias",
+    "f": "sansb",
+    "c": "#222222",
+    "a": "l",
+    "bg": "#ffffff",
+    "s": 10
+   }
+  ]
+ }
+}

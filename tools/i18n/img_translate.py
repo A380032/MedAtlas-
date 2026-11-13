@@ -4,7 +4,7 @@ Spetsifikatsiya: tools/i18n/books/<id>/img_en.json
   {"<nom>.webp": {"also": ["<dublikat>.webp"], "items": [
       {"box": [x0, y0, x1, y1], "t": "English text", ...ixtiyoriy...}, ...]}}
 Bandning ixtiyoriy maydonlari:
-  "f":  shrift — serif | serifb | serifi | serifbi | sans | sansb | dv | dvb | dvi | dvc | dvbi | dvs | dvsb (DejaVu) | inter | interm | interb   (standart: serif)
+  "f":  shrift — serif | serifb | serifi | serifbi | sans | sansb | sansi | sansbi | dv | dvb | dvi | dvc | dvbi | dvs | dvsb | dvsi (DejaVu) | inter | interm | interb   (standart: serif)
   "s":  shrift o'lchami px (bo'lmasa qutiga sig'adigan eng kattasi tanlanadi)
   "smax": avtomatik tanlanadigan o'lchamning yuqori chegarasi px (asl yozuv o'lchamidan oshmasin)
   "a":  l | c | r — gorizontal tekislash (standart: c)
@@ -17,6 +17,7 @@ Bandning ixtiyoriy maydonlari:
   "ell": true — quti o'rniga unga ichki chizilgan ellips to'ldiriladi (doira ichidagi yozuv)
   "cbox"+"ang": qiya yozuv (markaz, eni, bo'yi, burchak)
   "ss": k — yozuvni k marta katta chizib kichraytirish (standart: shrift ≤ 11 px bo'lsa 4, aks holda 1)
+  "arc"+"band"+"span": yoy bo'ylab yozuv (put_arc ga qarang)
   "src": [dx, dy] — fon sifatida (dx, dy) ga siljigan qo'shni sohadan nusxa olinadi (teksturali fon uchun)
 Natija: data/en/img/<id>/<nom>.webp (asl o'lcham bilan). Ilova (js/app.js) va tools/book_pdf.py
 inglizcha rejimda shu fayl bo'lsa uni ishlatadi, bo'lmasa asl rasmni."""
@@ -32,6 +33,8 @@ FONTS = {
     "serifbi": "/usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf",
     "sans": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
     "sansb": "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "sansi": "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
+    "sansbi": "/usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf",
     "dv": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",          # matplotlib/graphviz diagrammalari
     "dvb": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "dvi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
@@ -39,6 +42,7 @@ FONTS = {
     "dvbi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf",
     "dvs": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
     "dvsb": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+    "dvsi": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf",
     "inter": "/usr/share/fonts/opentype/inter/Inter-Regular.otf",     # matplotlib (Inter) grafiklari
     "interm": "/usr/share/fonts/opentype/inter/Inter-Medium.otf",
     "interb": "/usr/share/fonts/opentype/inter/Inter-Bold.otf",
@@ -163,7 +167,83 @@ def put_angled(im, it):
     im.paste(layer, (int(cx - layer.size[0] / 2), int(cy - layer.size[1] / 2)), layer)
 
 
+def put_arc(im, it):
+    """yoy bo'ylab yozuv: "arc": [cx, cy, r_matn, o'rta_burchak°] (burchak: soat strelkasiga teskari, 0° = o'ng),
+    "band": [r0, r1] va "span": [a_katta°, a_kichik°] — eski yozuv joylashgan halqa bo'lagi (faqat shu bo'lak ichida
+    to'liq yotgan to'q, rangsiz belgilar o'chiriladi; chiziq/strelkalar saqlanadi), "sp": harflar orasi (px); "ccw": true — pastki yoy
+    (teskari yo'nalish, harf tepasi markazga); "hard": true — rangli fon ustidagi yozuvni to'liq o'chirish; "fill": true — halqa bo'lagini
+    butunlay fon rangiga bo'yash; "ink": siyoh chegarasi."""
+    import math
+    import numpy as np, cv2
+    cx, cy, rt, mid = it["arc"]
+    r0, r1 = it["band"]
+    a_hi, a_lo = it["span"]
+    a = np.asarray(im).astype(int)
+    H, W = a.shape[:2]
+    yy, xx = np.mgrid[0:H, 0:W]
+    dist = np.hypot(xx - cx, yy - cy)
+    ang = np.degrees(np.arctan2(cy - yy, xx - cx))
+    if a_hi > 180:
+        ang = ang % 360
+    ann = (dist >= r0) & (dist <= r1) & (ang <= a_hi) & (ang >= a_lo)
+    luma = (a[..., 0] * 299 + a[..., 1] * 587 + a[..., 2] * 114) // 1000
+    sat = a.max(axis=2) - a.min(axis=2)
+    ink = ((luma < it.get("ink", 170)) & (sat < 60)).astype(np.uint8)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(ink, 8)
+    kill = np.zeros((H, W), np.uint8)
+    for i in set(np.unique(lab[ann])) - {0}:
+        m = lab == i
+        if (m & ann).sum() >= 0.9 * m.sum():
+            kill[m] = 1
+    if it.get("fill"):   # halqa bo'lagi to'liq fon rangiga bo'yaladi (rangli tasma ustidagi yozuv)
+        kill = ann.astype(np.uint8)
+    elif it.get("hard"):   # rangli fon ustidagi yozuv: chet piksellari ham (to'yinganligidan qat'i nazar) fon rangiga bo'yaladi
+        kill = cv2.dilate(kill, np.ones((3, 3), np.uint8)) & (cv2.dilate(ann.astype(np.uint8), np.ones((3, 3), np.uint8)))
+    else:
+        kill = cv2.dilate(kill, np.ones((5, 5), np.uint8)) & (sat < 60).astype(np.uint8) & (cv2.dilate(ann.astype(np.uint8), np.ones((5, 5), np.uint8)))
+    if it.get("bg"):
+        bg = hexrgb(it["bg"])
+    else:   # halqa bo'lagidagi eng ko'p uchraydigan rang
+        from collections import Counter
+        px = a[ann]
+        q = Counter(map(tuple, (px // 8)))
+        k = np.array(q.most_common(1)[0][0]) if len(px) else np.array([31, 31, 31])
+        sel = px[(px // 8 == k).all(axis=1)] if len(px) else np.array([[255, 255, 255]])
+        bg = tuple(int(v) for v in np.median(sel, axis=0))
+    out = np.asarray(im).copy()
+    out[kill == 1] = bg
+    im.paste(Image.fromarray(out))
+    for ln in it.get("lines", []):
+        ImageDraw.Draw(im).line(ln[:4], fill=hexrgb(ln[4]), width=ln[5])
+    col = hexrgb(it["c"]) if it.get("c") else (20, 20, 20)
+    K = 4
+    s = it["s"]
+    font = ImageFont.truetype(FONTS[it.get("f", "sans")], s * K)
+    d0 = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
+    adv = [d0.textlength(ch, font=font) / K for ch in it["t"]]
+    sp = it.get("sp", 0)
+    total = sum(adv) + sp * (len(adv) - 1)
+    ccw = it.get("ccw")   # pastki yoy: soat strelkasiga teskari, harf tepasi markazga qaragan
+    sg = -1 if ccw else 1
+    th = mid + sg * math.degrees(total / 2 / rt)
+    for ch, w in zip(it["t"], adv):
+        th_c = th - sg * math.degrees((w / 2) / rt)
+        th -= sg * math.degrees((w + sp) / rt)
+        if ch == " ":
+            continue
+        box = int(s * 2.2) * K
+        layer = Image.new("RGBA", (box, box), col + (0,))
+        d = ImageDraw.Draw(layer)
+        d.text((box / 2, box / 2), ch, font=font, fill=col + (255,), anchor="mm")
+        layer = layer.rotate(th_c + 90 if ccw else th_c - 90, resample=Image.BICUBIC).resize((box // K, box // K), Image.LANCZOS)
+        px = cx + rt * math.cos(math.radians(th_c))
+        py = cy - rt * math.sin(math.radians(th_c))
+        im.paste(layer, (int(round(px - layer.size[0] / 2)), int(round(py - layer.size[1] / 2))), layer)
+
+
 def put(im, it):
+    if "arc" in it:
+        return put_arc(im, it)
     if "ang" in it:
         return put_angled(im, it)
     x0, y0, x1, y1 = it["box"]
