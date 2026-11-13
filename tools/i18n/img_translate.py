@@ -17,6 +17,7 @@ Bandning ixtiyoriy maydonlari:
   "ell": true — quti o'rniga unga ichki chizilgan ellips to'ldiriladi (doira ichidagi yozuv)
   "cbox"+"ang": qiya yozuv (markaz, eni, bo'yi, burchak)
   "ss": k — yozuvni k marta katta chizib kichraytirish (standart: shrift ≤ 11 px bo'lsa 4, aks holda 1)
+  "col": x — fon har qatorda shu ustundagi rang bilan to'ldiriladi (vertikal gradiyentli tasma)
   "arc"+"band"+"span": yoy bo'ylab yozuv (put_arc ga qarang)
   "src": [dx, dy] — fon sifatida (dx, dy) ga siljigan qo'shni sohadan nusxa olinadi (teksturali fon uchun)
 Natija: data/en/img/<id>/<nom>.webp (asl o'lcham bilan). Ilova (js/app.js) va tools/book_pdf.py
@@ -257,6 +258,15 @@ def put(im, it):
         m = Image.new("L", patch.size, 0)
         ImageDraw.Draw(m).rectangle((2, 2, patch.size[0] - 3, patch.size[1] - 3), fill=255)
         im.paste(patch, (x0 - 2, y0 - 2), m.filter(ImageFilter.GaussianBlur(1.2)))
+        fill = None
+    elif it.get("col") is not None:   # gorizontal bir xil, vertikal o'zgaruvchi fon: har qator rangi berilgan ustundan olinadi
+        cx = it["col"]
+        px = im.load()
+        for yy in range(y0, y1 + 1):
+            ref = [px[cx + d, yy] for d in (-1, 0, 1)]
+            c3 = tuple(sum(r[i] for r in ref) // 3 for i in range(3))
+            for xx in range(x0, x1 + 1):
+                px[xx, yy] = c3
         fill = None
     elif bg == "grad":   # chetlardan chiziqli interpolyatsiya (gradiyentli fon uchun)
         grad_fill(im, (x0, y0, x1, y1))
