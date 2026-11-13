@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.10";
+  const VERSION = "1.1.11";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
