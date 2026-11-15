@@ -302,38 +302,101 @@
   }
 
   /* Yangi parol o'rnatish (tiklash havolasidan kelganda yoki profil sozlamalaridan) */
+  const isTg = () => { const m = user?.user_metadata || {}; return !!(user?.app_metadata?.tg || m.telegram_id || user?.app_metadata?.provider === "telegram"); };
   function newPassSheet(recovery) {
-    const m = user?.user_metadata || {};
-    const tg = !recovery && !!(m.telegram_id || user?.app_metadata?.provider === "telegram");
-    const sh = A.sheet(`<h3>${recovery ? "Yangi parol" : tg ? "Telefon raqam va parol" : "Parol o‘rnatish"}</h3>
-      <p class="muted small" style="margin:0">${recovery ? "Yangi parolni yozing." : tg ? "Telegramga ulangan telefon raqamingizni va o‘zingiz o‘ylagan parolni yozing. Keyin Telegramsiz ham, shu raqam va parol bilan kira olasiz." : "Yangi parolni yozing. Keyin shu parol bilan ham kira olasiz."}</p>
+    if (!recovery && isTg()) return phoneSheet();
+    const sh = A.sheet(`<h3>${recovery ? "Yangi parol" : "Parol o‘rnatish"}</h3>
+      <p class="muted small" style="margin:0">${recovery ? "Yangi parolni yozing." : "Yangi parolni yozing. Keyin shu parol bilan ham kira olasiz."}</p>
       <div class="pf-form">
-        ${tg ? `<label class="field">Telefon raqam<input id="npPhone" type="tel" inputmode="tel" autocomplete="username" placeholder="+998 90 123 45 67"></label>` : ""}
         <label class="field">Parol<input id="npPass" type="password" autocomplete="new-password" placeholder="Kamida 6 ta belgi"></label>
       </div>
       <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="npSave">Saqlash</button></div>`);
     sh.el.querySelector("#npSave").addEventListener("click", async () => {
-      const ph = tg ? phoneOf(sh.el.querySelector("#npPhone").value) : null;
       const pw = sh.el.querySelector("#npPass").value;
-      if (tg && !ph) { A.toast("Telefon raqamni to‘g‘ri yozing"); return; }
       if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
       if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
       try {
         const c = await client();
-        if (tg) {
-          const { data: ss } = await c.auth.getSession();
-          const r = await fnPost("phone-auth", { action: "set", phone: ph }, ss.session?.access_token);
-          if (r.status === 409) { A.toast("Bu raqam boshqa hisobga ulangan"); return; }
-          if (!r.ok) throw new Error("save");
-        }
         const { error } = await c.auth.updateUser({ password: pw });
         if (error) throw error;
-        sh.close(); A.toast(tg ? "Saqlandi. Endi telefon raqam va parol bilan kira olasiz" : "Parol saqlandi");
+        sh.close(); A.toast("Parol saqlandi");
         if (recovery) { history.replaceState(null, "", location.pathname + "#/"); A.refresh?.(); }
       } catch (er) {
         A.toast(/same/i.test(er?.message || "") ? "Yangi parol eskisidan farq qilsin" : "Saqlab bo‘lmadi. Qayta urinib ko‘ring");
       }
     });
+  }
+
+  /* Telegram hisoblari: telefon raqam @alvoramed_bot orqali tasdiqlanadi (qo'lda yozilmaydi), so'ng parol o'rnatiladi */
+  async function phoneSheet() {
+    if (!navigator.onLine) { A.toast("Buning uchun internet kerak"); return; }
+    const c = await client();
+    const bot = async (body) => {
+      const { data: ss } = await c.auth.getSession();
+      const r = await fnPost("tg-bot", body, ss.session?.access_token);
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || j.error) throw new Error(j.error || "Xizmatda xato. Birozdan keyin urinib ko'ring");
+      return j;
+    };
+    const sh = A.sheet(`<h3>Telefon raqam va parol</h3>
+      <p class="muted small" style="margin:0">Telefon raqamingizni Telegram orqali tasdiqlang, so‘ng parol o‘rnating. Keyin Telegramsiz ham shu raqam va parol bilan kira olasiz.</p>
+      <div class="acc-ph" id="phBox"><p class="small muted" style="margin:0">Yuklanmoqda…</p></div>
+      <div class="pf-form" id="phPw" hidden><label class="field">Parol<input id="npPass" type="password" autocomplete="new-password" placeholder="Kamida 6 ta belgi"></label></div>
+      <div class="acts"><button class="btn" data-x="close">Yopish</button><button class="btn primary" id="npSave" hidden>Saqlash</button></div>`);
+    const el = sh.el, box = el.querySelector("#phBox");
+    let code = null, timer = null, busy = false;
+    const alive = () => document.body.contains(el);
+    const stop = () => { clearInterval(timer); timer = null; document.removeEventListener("visibilitychange", onVis); };
+    const showPw = (on) => { el.querySelector("#phPw").hidden = !on; el.querySelector("#npSave").hidden = !on; };
+    const draw = (mine) => {
+      showPw(!!(mine.phone && mine.verified));
+      if (mine.phone && mine.verified) {
+        box.innerHTML = `<p class="acc-ph-ok"><b>✅ Tasdiqlangan raqam</b><span data-notr>${esc(mine.phone)}</span></p>
+          <button class="btn" id="phRe" type="button">Boshqa raqamni ulash</button>`;
+        box.querySelector("#phRe").addEventListener("click", begin);
+      } else {
+        box.innerHTML = `${mine.phone ? `<p class="small" style="margin:0 0 8px">Ulangan raqam: <span data-notr>${esc(mine.phone)}</span> · <b>tasdiqlanmagan</b></p>` : ""}
+          <button class="btn primary acc-tgv" id="phGo" type="button">Telegram orqali tasdiqlash</button>`;
+        box.querySelector("#phGo").addEventListener("click", begin);
+      }
+    };
+    async function check() {
+      if (!code || busy || !alive()) { if (!alive()) stop(); return; }
+      busy = true;
+      try {
+        const st = await bot({ action: "status", code });
+        if (st.status === "done") { stop(); code = null; A.toast("Raqam tasdiqlandi"); draw(await bot({ action: "mine" })); el.querySelector("#npPass")?.focus(); }
+        else if (st.status === "failed") { stop(); code = null; box.innerHTML = `<p class="tm-err" style="margin:0 0 8px">Havola boshqa Telegram hisobidan ochildi. Ilovaga qaysi Telegram orqali kirgan bo‘lsangiz, o‘sha hisobdan oching.</p><button class="btn primary" id="phGo" type="button">Qayta urinish</button>`; box.querySelector("#phGo").addEventListener("click", begin); }
+        else if (st.status === "expired" || st.status === "missing") { stop(); code = null; box.innerHTML = `<p class="small muted" style="margin:0 0 8px">Vaqt tugadi (10 daqiqa). Qayta urinib ko‘ring.</p><button class="btn primary" id="phGo" type="button">Qayta urinish</button>`; box.querySelector("#phGo").addEventListener("click", begin); }
+      } catch { /* tarmoq: keyingi urinishda */ }
+      busy = false;
+    }
+    const onVis = () => { if (!document.hidden) check(); };
+    async function begin() {
+      const b = box.querySelector("button"); if (b) b.disabled = true;
+      let j;
+      try { j = await bot({ action: "start", lang: window.I18N?.lang === "en" ? "en" : "uz" }); }
+      catch (e) { if (b) b.disabled = false; A.toast(e.message); return; }
+      code = j.code;
+      // havola oddiy <a> tugma: foydalanuvchi o'zi bosadi, shuning uchun brauzer uni to'smaydi
+      box.innerHTML = `<ol class="small acc-ph-steps"><li>“Botni ochish” tugmasini bosing — @alvoramed_bot ochiladi.</li><li>Botda “Start”, so‘ng “📱 Raqamni ulashish” tugmasini bosing.</li><li>Ilovaga qayting — raqam o‘zi tasdiqlanadi.</li></ol>
+        <a class="btn primary acc-tgv" href="${esc(j.url)}" target="_blank" rel="noopener">Botni ochish</a>
+        <p class="small muted acc-ph-wait" style="margin:8px 0 0">Tasdiqlash kutilmoqda…</p>`;
+      stop();
+      timer = setInterval(check, 2500);
+      document.addEventListener("visibilitychange", onVis);
+    }
+    el.querySelector("#npSave").addEventListener("click", async () => {
+      const pw = el.querySelector("#npPass").value;
+      if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
+      try {
+        const { error } = await c.auth.updateUser({ password: pw });
+        if (error) throw error;
+        sh.close(); stop(); A.toast("Saqlandi. Endi telefon raqam va parol bilan kira olasiz");
+      } catch (er) { A.toast(/same/i.test(er?.message || "") ? "Yangi parol eskisidan farq qilsin" : "Saqlab bo‘lmadi. Qayta urinib ko‘ring"); }
+    });
+    try { draw(await bot({ action: "mine" })); }
+    catch (e) { box.innerHTML = `<p class="small muted" style="margin:0">${esc(e.message)}</p>`; }
   }
 
   /* ---------- Profil sahifasi ---------- */
@@ -468,7 +531,7 @@
           <button class="btn" id="avChange">Rasmni o‘zgartirish</button>
           ${photo() ? `<button class="btn" id="avDel">Rasmni olib tashlash</button>` : ""}
           <button class="btn" id="devBtn">Qurilmalarim</button>
-          <button class="btn" id="pwSet">Parol o‘rnatish</button>
+          <button class="btn" id="pwSet">${isTg() ? "Telefon raqam va parol" : "Parol o‘rnatish"}</button>
           <button class="btn" id="pvBtn">Maxfiylik</button>
           <button class="btn" id="outBtn">Chiqish</button>
           <button class="btn danger" id="delBtn">Akkauntni o‘chirish</button></div></details>`;

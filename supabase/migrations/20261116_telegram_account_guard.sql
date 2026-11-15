@@ -1,3 +1,4 @@
+-- 2026-11-16 da qo'llangan.
 -- Telegram hisoblarini oldindan egallab olishdan himoya (telegram-auth bilan birga qo'llanadi).
 -- 1) Mavjud Telegram hisoblariga server belgisi (app_metadata.tg). Email+parol bilan kirish 13-noyabrda qo'shilgan,
 --    shuning uchun undan oldin ochilgan "tg..@telegram.alvoramed.app" hisoblari faqat telegram-auth orqali ochilgan.

@@ -1087,3 +1087,11 @@ body.gated #view { max-width: none; padding: 0; }
 .acc-dev small { color: var(--ink-2); }
 .acc-langs { display: grid; gap: 10px; margin-top: 12px; }
 .acc-langs .btn { width: 100%; padding: 14px; font-size: 1rem; border-radius: 14px; }
+/* Telefon raqamni Telegram bot orqali tasdiqlash */
+.acc-ph { margin: 12px 0 4px; padding: 12px; border: 1.5px solid var(--line); border-radius: 14px; display: grid; gap: 8px; justify-items: start; }
+.acc-ph-ok { margin: 0; display: grid; gap: 2px; }
+.acc-ph-ok span { font-size: 1.05rem; letter-spacing: .02em; }
+.acc-ph-steps { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.acc-tgv { background: #229ed9; border-color: #229ed9; color: #fff; }
+.acc-ph-wait::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 50%; border: 2px solid var(--accent); border-right-color: transparent; animation: phSpin .8s linear infinite; vertical-align: -1px; }
+@keyframes phSpin { to { transform: rotate(360deg); } }

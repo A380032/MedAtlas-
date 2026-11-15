@@ -2,7 +2,8 @@ import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2";
 
 // Telefon raqam + parol bilan kirish (Telegram orqali ochilgan hisoblar uchun).
-// "set"  — kirgan foydalanuvchi o'z hisobiga telefon raqamni login sifatida bog'laydi (parol mijozda o'rnatiladi).
+// "set"  — (eski ilova versiyalari uchun) raqamni tasdiqlamasdan bog'laydi; yangi ilova raqamni @alvoramed_bot orqali
+//          tasdiqlaydi (tg-bot funksiyasi, verified = true). Tasdiqlangan egasi tasdiqlanmagan bog'lanishdan ustun.
 // "login" — telefon + parol tekshiriladi va sessiya qaytariladi.
 const cors = {
   "Access-Control-Allow-Origin": "*",
@@ -37,6 +38,7 @@ Deno.serve(async (req) => {
     if (!u.user.app_metadata?.tg) return json({ error: "not telegram" }, 403);
     const { data: taken } = await admin.from("login_phones").select("user_id").eq("phone", phone).maybeSingle();
     if (taken && taken.user_id !== u.user.id) return json({ error: "taken" }, 409);
+    if (taken) return json({ ok: true });   // shu raqam allaqachon o'zida (tasdiqlangan bo'lsa, belgisi saqlanadi)
     await admin.from("login_phones").delete().eq("user_id", u.user.id);
     const { error } = await admin.from("login_phones").insert({ phone, user_id: u.user.id });
     if (error) return json({ error: "save" }, 500);
