@@ -1521,8 +1521,8 @@ function mapSVG(view,st,opt){
 }
 
 /* ================= Topilmalar paneli ================= */
-var FRAMP={"kuchaygan":1.9,"biroz kuchaygan":1.4,"aniqlanmaydi":0,"keskin susaygan":.25,"—":0};
-function frAmp(t){ if(t in FRAMP) return FRAMP[t]; if(/^susaygan|^biroz susaygan/.test(t)) return .5; return 1; }
+var FRAMP={"increased":1.9,"slightly increased":1.4,"not detected":0,"sharply weakened":.25,"—":0};
+function frAmp(t){ if(t in FRAMP) return FRAMP[t]; if(/^weakened|^slightly weakened/.test(t)) return .5; return 1; }
 function mirror(p){ if(p.s==="M") return null; var id=p.id.slice(0,-1)+(p.s==="R"?"L":"R"); return PTS.filter(function(q){return q.id===id;})[0]||null; }
 function findingsHTML(st,p,mode,hide){
   var r=findings(st,p), f=r.f, H=function(v){return hide?'<span class="hid">'+esc(v)+'</span>':esc(v);};

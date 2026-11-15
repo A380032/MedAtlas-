@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v1.1.11";
+const VERSION = "v1.1.12";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -24,7 +24,9 @@ const SHELL_FILES = [
   "fonts/onest-latin-wght-normal.woff2",
   "fonts/onest-latin-ext-wght-normal.woff2",
   "fonts/onest-cyrillic-wght-normal.woff2",
-  "fonts/onest-cyrillic-ext-wght-normal.woff2"
+  "fonts/onest-cyrillic-ext-wght-normal.woff2",
+  "privacy.html",
+  "terms.html"
 ];
 
 // Barcha kontent (matn, rasm) birinchi ochilishdayoq yuklab olinadi: keyin internetsiz ishlaydi.
@@ -58,8 +60,7 @@ self.addEventListener("fetch", (e) => {
   if (url.origin === location.origin && url.pathname.includes("/data/")) {
     e.respondWith(
       fetch(req).then((res) => {
-        const copy = res.clone();
-        caches.open(RUNTIME).then((c) => c.put(req, copy));
+        if (res && res.ok) { const copy = res.clone(); caches.open(RUNTIME).then((c) => c.put(req, copy)); }   // xato javob (404, 500) keshga yozilmaydi
         return res;
       }).catch(() => caches.match(req))
     );

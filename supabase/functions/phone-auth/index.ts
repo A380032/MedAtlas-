@@ -33,6 +33,8 @@ Deno.serve(async (req) => {
     const token = (req.headers.get("Authorization") || "").replace(/^Bearer\s+/i, "");
     const { data: u, error: ue } = await admin.auth.getUser(token);
     if (ue || !u?.user) return json({ error: "auth" }, 401);
+    // faqat Telegram orqali ochilgan (telegram-auth tekshirgan) hisoblar telefon raqamni login qila oladi
+    if (!u.user.app_metadata?.tg) return json({ error: "not telegram" }, 403);
     const { data: taken } = await admin.from("login_phones").select("user_id").eq("phone", phone).maybeSingle();
     if (taken && taken.user_id !== u.user.id) return json({ error: "taken" }, 409);
     await admin.from("login_phones").delete().eq("user_id", u.user.id);

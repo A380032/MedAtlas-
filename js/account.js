@@ -275,6 +275,7 @@
       const email = q("#pwEmail").value.trim(), pw = pass.value;
       const ph = reg ? null : phoneOf(email);
       if (!ph && !EMAIL_RE.test(email)) { A.toast(reg ? "Email manzilni to‘g‘ri yozing" : "Email yoki telefon raqamni to‘g‘ri yozing"); return; }
+      if (/@telegram\.alvoramed\.app$/i.test(email)) { A.toast("Bu manzil Telegram hisoblari uchun. Telegram tugmasi orqali kiring"); return; }
       if (pw.length < 6) { A.toast("Parol kamida 6 ta belgidan iborat bo‘lsin"); return; }
       if (!navigator.onLine) { A.toast("Kirish uchun internet kerak"); return; }
       go.disabled = true;
@@ -338,8 +339,8 @@
   /* ---------- Profil sahifasi ---------- */
   function privacy() {
     A.sheet(`<h3>Maxfiylik</h3>
-      <p class="small" style="margin:0 0 8px">Hisobga kirganingizda quyidagilar saqlanadi: ismingiz, profil rasmingiz (Google yoki Telegramdan), Telegram username va ilovadagi natijalaringiz (reja, yutuqlar, ballar, test natijalari, belgilar).</p>
-      <p class="small" style="margin:0 0 8px">Telegram orqali kirganda telefon raqamingiz olinmaydi. O‘quv natijalaringizni faqat o‘zingiz ko‘rasiz. Konsiliumda esa xonadagilarga ismingiz, rasmingiz, fakultet va kursingiz ko‘rinadi. Ma’lumotlar sotilmaydi.</p>
+      <p class="small" style="margin:0 0 8px">Hisobga kirganingizda quyidagilar saqlanadi: ismingiz, emailingiz, profil rasmingiz (Google yoki Telegramdan), Telegram username va ilovadagi natijalaringiz (reja, yutuqlar, ballar, test natijalari, belgilar).</p>
+      <p class="small" style="margin:0 0 8px">Telegram orqali kirganda telefon raqamingiz olinmaydi (faqat o‘zingiz telefon raqam va parol bilan kirishni yoqsangiz, shu raqam saqlanadi). O‘quv natijalaringizni faqat o‘zingiz ko‘rasiz. Konsiliumda esa xonadagilarga ismingiz, rasmingiz, fakultet va kursingiz ko‘rinadi. Ma’lumotlar sotilmaydi.</p>
       <p class="small" style="margin:0 0 8px">Foydalanuvchilar sonini hisoblash uchun qurilmangiz noma’lum raqam bilan (platforma, brauzer, ilova versiyasi) sanaladi.</p>
       <p class="small" style="margin:0 0 8px"><a href="privacy.html" target="_blank" rel="noopener">To‘liq maxfiylik siyosati</a></p>
       <p class="small" style="margin:0">“Akkauntni o‘chirish” tugmasi hisobingizni va bulutdagi barcha ma’lumotlaringizni butunlay o‘chiradi. Telefondagi nusxa saqlanib qoladi.</p>
@@ -411,6 +412,7 @@
   /* ---------- Profilni tahrirlash ---------- */
   const FACULTIES = ["Davolash ishi", "Pediatriya", "Tibbiy-profilaktika", "Stomatologiya", "Farmatsiya", "Tibbiy pedagogika", "Xalqaro fakultet", "Oliy hamshiralik ishi"];
   const trF = (s) => (s && window.t && window.I18N?.lang !== "uz" ? window.t(s) : s);   // fakultet nomi tanlangan tilda
+  const facCanon = (v) => FACULTIES.find((f) => f === v || trF(f) === v) || v;          // bazaga doim o'zbekcha nomi yoziladi (statistika bir xil bo'lsin)
   function editProfile() {
     const pf = prof();
     const sel = (v, o) => (v === o ? " selected" : "");
@@ -436,7 +438,7 @@
       if (role === "talaba" && (!q("#pfFac").value.trim() || !q("#pfCourse").value)) { A.toast("Fakultet va kursni tanlang"); return; }
       const row = {
         name: q("#pfName").value.trim().slice(0, 60) || null,
-        faculty: q("#pfFac").value.trim().slice(0, 80) || null,
+        faculty: facCanon(q("#pfFac").value.trim()).slice(0, 80) || null,
         course: q("#pfCourse").value || null,
         role,
         role_note: role === "boshqa" ? (q("#pfNote").value.trim().slice(0, 60) || null) : null,

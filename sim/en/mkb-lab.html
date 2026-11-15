@@ -741,15 +741,15 @@ function smearInst(opt){
       if(st.smear)fill="#E3E6E2";
       let smearCol="#CBD2CE";
       if(st.i>0){const done=S.seq.slice(0,st.i).map(x=>x.r).join("|");
-        if(/gensian|Neysser ko'ki|ishqoriy metilen/.test(done))smearCol="#6B4FA8";
-        if(/karbol fuksin/.test(done))smearCol="#C0392B";
-        if(/tush/.test(done))smearCol="#1A1A1A";
-        if(/Gimza/.test(done))smearCol="#8E5AA8";
-        if(/spirt \(96/.test(done)&&opt.method==="gram")smearCol=st.falsePos?"#6B4FA8":"#B9BFC4";
-        if(/suvli fuksin/.test(done)&&opt.method==="gram")smearCol=st.falseNeg?"#D4607A":(opt.gramPos?"#6B4FA8":"#D4607A");
-        if(/xlorid kislotali spirt/.test(done))smearCol="#9FB6C6";
-        if(/metilen ko'ki/.test(done)&&opt.method==="zn")smearCol="#3F6FA8";
-        if(/xrizoidin/.test(done))smearCol="#B98B2E";}
+        if(/gentian|Neisser blue|alkaline methylene/.test(done))smearCol="#6B4FA8";
+        if(/carbol fuchsin/.test(done))smearCol="#C0392B";
+        if(/India ink/.test(done))smearCol="#1A1A1A";
+        if(/Giemsa/.test(done))smearCol="#8E5AA8";
+        if(/alcohol \(96/.test(done)&&opt.method==="gram")smearCol=st.falsePos?"#6B4FA8":"#B9BFC4";
+        if(/aqueous fuchsin/.test(done)&&opt.method==="gram")smearCol=st.falseNeg?"#D4607A":(opt.gramPos?"#6B4FA8":"#D4607A");
+        if(/acid alcohol/.test(done))smearCol="#9FB6C6";
+        if(/methylene blue/.test(done)&&opt.method==="zn")smearCol="#3F6FA8";
+        if(/chrysoidine/.test(done))smearCol="#B98B2E";}
       let s=`<rect width="420" height="170" fill="#F2F4F3"/>`;
       s+=`<rect x="40" y="25" width="340" height="120" rx="4" fill="${fill}" stroke="#9AA6A3" stroke-width="2"/>`;
       s+=`<rect x="45" y="30" width="330" height="110" fill="none" stroke="#C6D0CD" stroke-width="1"/>`;

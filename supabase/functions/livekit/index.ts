@@ -19,7 +19,7 @@ const TG = (Deno.env.get("TELEGRAM_BOT_TOKEN") || "").trim();
 const LK_HTTP = LK_URL.replace(/^wss:/, "https:").replace(/^ws:/, "http:").replace(/\/$/, "");
 const MAXP: Record<string, number> = { suhbat: 20, maruza: 100 };
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const APP = "https://alvoramed.netlify.app";
+const APP = "https://alvoramed.com";
 
 const enc = new TextEncoder();
 const b64 = (bytes: Uint8Array) => { let s = ""; for (const x of bytes) s += String.fromCharCode(x); return btoa(s); };

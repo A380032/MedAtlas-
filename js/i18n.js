@@ -35,8 +35,17 @@
     patterns.sort((a, b) => b.len - a.len);
   }
 
+  /* Inglizchada "1 questions" -> "1 question" (o'zbekchada son bilan ko'plik qo'shimchasi yo'q) */
+  const SING = { questions: "question", topics: "topic", tests: "test", results: "result", messages: "message", books: "book",
+    terms: "term", problems: "problem", points: "point", people: "person", pages: "page", minutes: "minute", flashcards: "flashcard",
+    cases: "case", cards: "card", devices: "device", places: "place", mistakes: "mistake", days: "day", weeks: "week", hours: "hour", participants: "participant" };
+  const sing = (s) => (lang !== "en" || typeof s !== "string" ? s : s
+    .replace(/(^|[^\d.,/])1 (questions|topics|tests|results|messages|books|terms|problems|points|people|pages|minutes|flashcards|cases|cards|devices|places|mistakes|days|weeks|hours|participants)\b( have| are)?/g,
+      (m, a, w, v) => a + "1 " + SING[w] + (v === " have" ? " has" : v === " are" ? " is" : "")));
+
   /* Bitta matn bo'lagini tarjima qiladi; topilmasa null */
-  function tr(text) {
+  function tr(text) { const r = tr0(text); return r == null ? r : sing(r); }
+  function tr0(text) {
     const k = norm(text);
     if (!k) return null;
     if (Object.prototype.hasOwnProperty.call(exact, k)) return exact[k];

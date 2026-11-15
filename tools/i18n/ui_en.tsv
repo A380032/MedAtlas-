@@ -190,7 +190,7 @@ Google bilan kirib bo'lmadi. Internetni tekshiring	Could not sign in with Google
 Telegram tekshirilmoqda…	Verifying Telegram…
 Telegram orqali kirib bo'lmadi:	Could not sign in with Telegram:
 Maxfiylik	Privacy
-Telegram orqali kirganda telefon raqamingiz olinmaydi. O'quv natijalaringizni faqat o'zingiz ko'rasiz. Konsiliumda esa xonadagilarga ismingiz, rasmingiz, fakultet va kursingiz ko'rinadi. Ma'lumotlar sotilmaydi.	Your phone number is not collected when you sign in with Telegram. Only you can see your study results. In Consilium, people in the room can see your name, photo, faculty and year. Your data is never sold.
+Telegram orqali kirganda telefon raqamingiz olinmaydi (faqat o‘zingiz telefon raqam va parol bilan kirishni yoqsangiz, shu raqam saqlanadi). O‘quv natijalaringizni faqat o‘zingiz ko‘rasiz. Konsiliumda esa xonadagilarga ismingiz, rasmingiz, fakultet va kursingiz ko‘rinadi. Ma’lumotlar sotilmaydi.	Your phone number is not collected when you sign in with Telegram (it is saved only if you turn on signing in with a phone number and password yourself). Only you can see your study results. In Consilium, people in the room can see your name, photo, faculty and year. Your data is never sold.
 Foydalanuvchilar sonini hisoblash uchun qurilmangiz noma'lum raqam bilan (platforma, brauzer, ilova versiyasi) sanaladi.	To count users, your device is counted by an anonymous number (platform, browser, app version).
 To'liq maxfiylik siyosati	Full privacy policy
 Tushunarli	Got it
@@ -222,7 +222,7 @@ Saqlab bo'lmadi. Qayta urinib ko'ring	Could not save. Please try again
 Profil saqlandi	Profile saved
 Rasmni olib tashlash	Remove photo
 Hisob ma'lumoti yuklanmadi (kutish vaqti tugadi)	Account information could not be loaded (timed out)
-Avval hisobga kiring	Sign in first
+Avval hisobga kiring	Please sign in first
 Hisob sessiyasi ochilmadi	Account session could not be opened
 Server javob bermadi. Internetni tekshiring	The server did not respond. Check your internet connection
 Hozir faol xona yo'q	No active rooms right now
@@ -236,7 +236,7 @@ Maruza · 100 kishi	Lecture · 100 people
 Kim kira oladi	Who can join
 Hamma (ochiq)	Everyone (open)
 Faqat kod bilan	Code only
-Xona egasi sifatida siz moderator tayinlaysiz, ovozni o'chirasiz va qoidani buzganni chiqarasiz. Bo'sh qolgan xona 30 daqiqadan keyin yopiladi.	As the room owner you appoint moderators, mute participants and remove anyone who breaks the rules. An empty room closes after 30 minutes.
+Xona egasi sifatida siz moderator tayinlaysiz, ovozni o‘chirasiz va qoidani buzganni chiqarasiz. Bo‘sh qolgan xona 10 daqiqadan keyin yopiladi.	As the room owner you appoint moderators, mute participants and remove anyone who breaks the rules. An empty room closes after 10 minutes.
 Xona nomini yozing	Enter a room name
 Kod bilan kirish	Join with a code
 Xona kodi (6 belgi)	Room code (6 characters)
@@ -289,7 +289,7 @@ Konsilium · qaytish uchun bosing	Consilium · tap to return
 Xona egasi	Room owner
 Ilova ma'muri	App admin
 Ekran suratini ham yuborish	Also send a screenshot
-Sababini yozing	Write the reason
+Sababini yozing	Please describe the reason
 Shikoyat yuborildi. Rahmat	Report sent. Thank you
 Xato:	Error:
 Xonaga ulanmoqda…	Connecting to the room…
@@ -331,10 +331,10 @@ Statistika ochilmadi	Statistics could not be opened
 Qayta urinish	Try again
 Maxfiylik siyosati — ALVORA Med	Privacy Policy — ALVORA Med
 Maxfiylik siyosati	Privacy Policy
-ALVORA Med · Oxirgi yangilanish: 2026-yil 10-noyabr	ALVORA Med · Last updated: November 10, 2026
+ALVORA Med · Oxirgi yangilanish: 2026-yil 16-noyabr	ALVORA Med · Last updated: November 16, 2026
 Qanday ma'lumotlar saqlanadi	What data is stored
 O'quv natijalari: reja, yutuqlar, ballar, test natijalari va belgilar — qurilmalar orasida sinxronlash uchun.	Study data: plan, achievements, scores, test results and highlights — to sync across your devices.
-Qurilma statistikasi: har bir qurilmaga beriladigan noma'lum raqam, platforma (masalan, iOS yoki Windows), brauzer turi, ilova versiyasi va qaysi kunlari foydalanilgani. Bu faqat foydalanuvchilar sonini hisoblash uchun.	Device statistics: an anonymous number assigned to each device, platform (for example, iOS or Windows), browser type, app version and the days it was used. This is only used to count users.
+Qurilma statistikasi: har bir qurilmaga beriladigan noma’lum raqam, platforma (masalan, iOS yoki Windows), brauzer turi, ilova versiyasi, ilova tili va qaysi kunlari foydalanilgani. Bu foydalanuvchilar sonini hisoblash va bitta hisobga 3 tagacha qurilma ulash chegarasi uchun ishlatiladi.	Device statistics: an anonymous number assigned to each device, platform (for example, iOS or Windows), browser type, app version, app language and the days it was used. This is used to count users and to enforce the limit of 3 devices per account.
 Konsilium: xona nomi va mavzusi, yozishma xabarlari, qatnashilgan xonalar tarixi, qoidabuzarlik va shikoyatlar.	Consilium: room name and topic, chat messages, history of rooms joined, rule violations and reports.
 Kim nimani ko'radi	Who sees what
 O'quv natijalaringizni faqat o'zingiz ko'rasiz.	Only you can see your study results.
@@ -342,7 +342,7 @@ Ilova administratori umumiy statistikani (foydalanuvchilar va qurilmalar soni) h
 Ma'lumotlar sotilmaydi va reklama uchun ishlatilmaydi.	Your data is never sold or used for advertising.
 Saqlash va xavfsizlik	Storage and security
 Ma'lumotlarni o'chirish	Deleting your data
-Ilovadagi Profil sahifasida "Akkauntni o'chirish" tugmasi hisobingizni va bulutdagi barcha ma'lumotlaringizni butunlay o'chiradi. Qurilmadagi nusxa saqlanib qoladi, uni brauzer ma'lumotlarini tozalash orqali o'chirish mumkin.	The "Delete account" button on the Profile page in the app permanently deletes your account and all your data in the cloud. The copy on your device remains and can be removed by clearing your browser data.
+Ilovadagi Sozlamalar → “Hisob sozlamalari” bo‘limidagi “Akkauntni o‘chirish” tugmasi hisobingizni va bulutdagi barcha ma’lumotlaringizni butunlay o‘chiradi. Qurilmadagi nusxa saqlanib qoladi, uni brauzer ma’lumotlarini tozalash orqali o‘chirish mumkin.	The "Delete account" button in Settings → "Account settings" permanently deletes your account and all your data in the cloud. The copy on your device remains and can be removed by clearing your browser data.
 Aloqa	Contact
 Savollar uchun: asadbek.axmatqulov@icloud.com	For questions: asadbek.axmatqulov@icloud.com
 Foydalanish shartlari	Terms of Use
@@ -351,7 +351,7 @@ ALVORA Med ilovasidan foydalanib, siz quyidagi shartlarga rozilik bildirasiz.	By
 Maqsad	Purpose
 Ilova faqat o'quv maqsadida yaratilgan. Undagi ma'lumotlar tibbiy maslahat, tashxis yoki davolash o'rnini bosmaydi. Klinik qarorlar uchun rasmiy darsliklar va mutaxassislarga tayaning.	The app is created for educational purposes only. The information in it is not a substitute for medical advice, diagnosis or treatment. For clinical decisions, rely on official textbooks and specialists.
 Hisob	Account
-Ilovadan foydalanish uchun Google yoki Telegram orqali hisobga kirish kerak. O'z hisobingiz xavfsizligi uchun o'zingiz javobgarsiz. Hisobni istalgan vaqtda Sozlamalar sahifasidan o'chirishingiz mumkin.	To use the app you need to sign in with Google or Telegram. You are responsible for the security of your account. You can delete your account at any time from the Settings page.
+Ilovadan foydalanish uchun hisobga kirish kerak: email va parol, Google yoki Telegram orqali. Bitta hisobga 3 tagacha qurilma ulash mumkin. O‘z hisobingiz va parolingiz xavfsizligi uchun o‘zingiz javobgarsiz. Hisobni istalgan vaqtda Sozlamalar sahifasidan o‘chirishingiz mumkin.	To use the app you need to sign in with an email and password, Google or Telegram. Up to 3 devices can be connected to one account. You are responsible for the security of your account and password. You can delete your account at any time from the Settings page.
 Foydalanish qoidalari	Rules of use
 Ilovadan boshqalarga zarar yetkazish, tizimga xalaqit berish yoki qonunga zid maqsadlarda foydalanmang.	Do not use the app to harm others, disrupt the system or for unlawful purposes.
 O'zingiz qo'shgan testlar va matnlar uchun huquqlar sizda bo'lishi kerak.	You must hold the rights to the tests and texts you add yourself.
@@ -610,11 +610,11 @@ Pediatriya darsligi (propedevtikadan keyingi kurslar uchun ham).	Pediatrics text
 Obyektiv tekshirish ko'nikmalari rangli rasmlarda.	Objective examination skills in color illustrations.
 {0} / {1} mavzu o'qildi	{0} / {1} topics completed
 {0} mavzu o'qildi	{0} topics completed
-ALVORA Med — tibbiyot talabalari uchun o'quv ilovasi (qo'llanmalar, testlar, simulyatorlar, o'quv reja, Konsilium). Ilovadan foydalanish uchun Google yoki Telegram orqali hisobga kirish kerak.	ALVORA Med is a study app for medical students (manuals, tests, simulators, study plan, Consilium). To use the app you need to sign in with Google or Telegram.
-Hisob: ismingiz, profil rasmingiz, elektron pochta manzilingiz (Google orqali) yoki Telegram username (Telegram orqali). Telegram orqali kirganda telefon raqamingiz olinmaydi.	Account: your name, profile photo and email address (via Google) or Telegram username (via Telegram). Your phone number is not collected when you sign in with Telegram.
+ALVORA Med — tibbiyot talabalari uchun o‘quv ilovasi (qo‘llanmalar, testlar, simulyatorlar, o‘quv reja, Konsilium). Ilovadan foydalanish uchun hisobga kirish kerak: email va parol, Google yoki Telegram orqali.	ALVORA Med is a study app for medical students (manuals, tests, simulators, study plan, Consilium). To use the app you need to sign in with an email and password, Google or Telegram.
+Hisob: ismingiz, profil rasmingiz, elektron pochta manzilingiz (email yoki Google orqali) yoki Telegram username (Telegram orqali). Parolingiz shifrlangan holda saqlanadi, uni hech kim ko‘ra olmaydi.	Account: your name, profile photo and email address (via email or Google) or Telegram username (via Telegram). Your password is stored encrypted; nobody can see it.
 Profil (ixtiyoriy): fakultet, kurs va rol (talaba, o'qituvchi va boshqa).	Profile (optional): faculty, year and role (student, teacher or other).
 Konsilium xonasida qatnashchilarga ismingiz, rasmingiz, fakultet, kurs va rolingiz ko'rinadi (shaffoflik uchun). Yozgan xabarlaringizni xonadagilar ko'radi.	In a Consilium room, participants can see your name, photo, faculty, year and role (for transparency). People in the room can see the messages you write.
-Ma'lumotlar Supabase xizmatida saqlanadi, ovozli aloqa LiveKit orqali o'tadi (ovoz serverda yozib olinmaydi). Har bir foydalanuvchi faqat o'z yozuvlarini o'zgartira oladi.	Data is stored with the Supabase service, and voice communication runs through LiveKit (audio is not recorded on the server). Each user can modify only their own records.
+Ma’lumotlar Supabase xizmatida saqlanadi, ovozli aloqa LiveKit orqali o‘tadi (ovoz serverda yozib olinmaydi). Xona qatnashchilari suhbatni o‘z qurilmasiga yozib olishi mumkin — bunda xonadagilarga “yozib olmoqda” belgisi ko‘rinadi. Har bir foydalanuvchi faqat o‘z yozuvlarini o‘zgartira oladi.	Data is stored with the Supabase service, and voice communication runs through LiveKit (audio is not recorded on the server). Room participants may record a session on their own device; everyone in the room then sees a "recording" badge. Each user can modify only their own records.
 Konsiliumda bir-biringizni hurmat qiling: haqorat, reklama va shaxsiy ma'lumot (karta raqami va h.k.) yozish taqiqlanadi; buzgan foydalanuvchi xonadan avtomatik chiqariladi.	Respect one another in Consilium: insults, advertising and personal information (card numbers, etc.) are prohibited; a user who breaks this rule is removed from the room automatically.
 Shartlar yangilanishi mumkin; yangi variant shu sahifada e'lon qilinadi.	These terms may be updated; the new version will be published on this page.
 asadbek.axmatqulov@icloud.com	asadbek.axmatqulov@icloud.com
@@ -760,7 +760,7 @@ Test nomi	Test name
 · egasi	· owner
 {0} · {1} kishi{2}	{0} · {1} people{2}
 · {0} kishi{1}	· {0} people{1}
-Hisobga kirganingizda quyidagilar saqlanadi: ismingiz, profil rasmingiz (Google yoki Telegramdan), Telegram username va ilovadagi natijalaringiz (reja, yutuqlar, ballar, test natijalari, belgilar).	When you sign in, the following is saved: your name, profile photo (from Google or Telegram), Telegram username and your results in the app (plan, achievements, scores, test results, highlights).
+Hisobga kirganingizda quyidagilar saqlanadi: ismingiz, emailingiz, profil rasmingiz (Google yoki Telegramdan), Telegram username va ilovadagi natijalaringiz (reja, yutuqlar, ballar, test natijalari, belgilar).	When you sign in, the following is saved: your name, email, profile photo (from Google or Telegram), Telegram username and your results in the app (plan, achievements, scores, test results, highlights).
 “Akkauntni o‘chirish” tugmasi hisobingizni va bulutdagi barcha ma’lumotlaringizni butunlay o‘chiradi. Telefondagi nusxa saqlanib qoladi.	The “Delete account” button permanently deletes your account and all your data in the cloud. The copy on your phone is kept.
 Telegram tugmasi yuklanmoqda…	The Telegram button is loading…
 Kirish uchun internetga ulaning.	Connect to the internet to sign in.
@@ -806,7 +806,7 @@ Shikoyatlar	Reports
 {0} Taqiqlangan so‘zlar	{0} Banned words
 Taqiqlangan so‘zlar	Banned words
 Maruza	Lecture
-Suhbat	Conversation
+Suhbat	Discussion
 Bir vaqtda 2 tadan ortiq xona ochib bo‘lmaydi	You cannot have more than 2 rooms open at the same time
 Xona ochilmadi. Qayta urinib ko‘ring	The room could not be created. Try again
 masalan, 3F9A1C	e.g. 3F9A1C
@@ -1097,3 +1097,61 @@ Kimligingizni tanlang	Select who you are
 Fakultet va kursni tanlang	Select your faculty and year
 Rahmat!	Thank you!
 Kimligingiz (talaba uchun fakultet va kurs ham) majburiy. Kirish usulingiz (Google yoki Telegram) bu yerda o‘zgarmaydi.	Your role (and faculty and year for students) is required. Your sign-in method (Google or Telegram) cannot be changed here.
+Telefon raqam: Telegram orqali kirganda telefon raqamingiz olinmaydi. Faqat o‘zingiz Profilda “telefon raqam va parol bilan kirish”ni yoqsangiz, kiritgan raqamingiz kirish uchun saqlanadi.	Phone number: your phone number is not collected when you sign in with Telegram. It is saved for signing in only if you turn on "sign in with a phone number and password" in your profile yourself.
+{0} ta joy	{0} places
+O‘qildi: {0}	Read: {0}
+Profil: {0}	Profile: {0}
+To'g'ri.	Correct.
+dan	to
+gacha	
+(so‘rayapti)	(requesting)
+yopilgan: {0}	closed: {0}
+ochgan: {0}	opened by: {0}
+{0} gapiryapti	{0} is speaking
+{0} ekranini ulashmoqda	{0} is sharing their screen
+Ekranni ulashib bo‘lmadi: {0}	Could not share the screen: {0}
+Yozuv saqlandi: {0}	Recording saved: {0}
+Xato: {0}	Error: {0}
+Telegram orqali kirib bo‘lmadi: {0}	Could not sign in with Telegram: {0}
+Mavzuni o‘qish vaqti: {0}	Time to study the topic: {0}
+Konsilium · ALVORA Med	Consilium · ALVORA Med
+ALVORA Med Konsilium: “{0}”. Kod: {1}	ALVORA Med Consilium: “{0}”. Code: {1}
+Bu manzil Telegram hisoblari uchun. Telegram tugmasi orqali kiring	This address is reserved for Telegram accounts. Sign in with the Telegram button
+Kirill	Cyrillic
+Lotin	Latin
+Imtihonga tayyorgarlik	Exam preparation
+Konspekt	Lecture notes
+Qo‘lda yozilgan raqamli konspekt, yili ko‘rsatilmagan.	Handwritten notes, digitized; year not stated.
+Strukov darsligining 2-nashridan tarjima (kirill yozuvi).	Translated from the 2nd edition of Strukov's textbook (Cyrillic script).
+Ovoz xizmati sozlanmagan	The voice service is not configured
+Kod 6 ta belgidan iborat	The code must be 6 characters
+Bunday faol xona topilmadi	No active room with this code was found
+Xona topilmadi yoki yopilgan	The room was not found or has been closed
+Xona kodi noto'g'ri	Incorrect room code
+Siz bu xonadan chiqarilgansiz	You have been removed from this room
+Xona 10 daqiqa bo'sh turgani uchun yopilgan	The room was closed because it stayed empty for 10 minutes
+Xona to'lgan	The room is full
+Xona topilmadi	Room not found
+Bu xonada qatnashmagansiz	You did not take part in this room
+Xona yopilgan	The room has been closed
+Bo'sh xabar	Empty message
+Avval xonaga kiring	Join the room first
+Juda tez yozyapsiz. Biroz kuting	You are typing too fast. Please wait a moment
+Qoidani buzganingiz uchun xonadan chiqarildingiz	You were removed from the room for breaking the rules
+Ruxsat yo'q	Not allowed
+Xonada boshqalar bor. Faqat xona egasi yopa oladi	Other people are in the room. Only the owner can close it
+O'zingizga qo'llab bo'lmaydi	You cannot do this to yourself
+Bu foydalanuvchiga qo'llab bo'lmaydi	This cannot be applied to this user
+Xona egasiga qo'llab bo'lmaydi	This cannot be applied to the room owner
+Moderatorga faqat xona egasi qo'llay oladi	Only the room owner can do this to a moderator
+Moderatorni faqat xona egasi tayinlaydi	Only the room owner can appoint moderators
+Bitta xonada 5 tagacha moderator bo'ladi	A room can have up to 5 moderators
+Xizmatda xato. Birozdan keyin urinib ko'ring	Service error. Please try again shortly
+Telegram bot sozlanmagan	The Telegram bot is not configured
+Telegram imzosi noto'g'ri	Invalid Telegram signature
+Telegram so'rovi eskirgan, qayta urinib ko'ring	The Telegram request has expired, please try again
+Hisob yaratilmadi	The account could not be created
+Kirish tokeni yaratilmadi	The sign-in token could not be created
+Bu Telegram hisobi uchun xavfsizlik tekshiruvi o‘tmadi. Administratorga murojaat qiling	The security check for this Telegram account failed. Please contact the administrator
+Telefonda PDF nusxa telefonning o‘z PDF ko‘ruvchisida ochiladi. Fayl katta — Wi-Fi orqali ochish tavsiya etiladi.	On a phone, the PDF copy opens in the phone’s own PDF viewer. The file is large, so opening it over Wi-Fi is recommended.
+PDF’ni ochish	Open the PDF

@@ -146,7 +146,7 @@
       <label class="field">Mavzu (ixtiyoriy)<input id="nTopic" maxlength="140" placeholder="Nima haqida gaplashamiz?" autocomplete="off"></label>
       <div class="field">Turi<div class="seg flat" role="group" id="nMode"><button data-v="suhbat" aria-selected="true">Suhbat · 20 kishi</button><button data-v="maruza" aria-selected="false">Maruza · 100 kishi</button></div></div>
       <div class="field">Kim kira oladi<div class="seg flat" role="group" id="nKind"><button data-v="open" aria-selected="true">Hamma (ochiq)</button><button data-v="closed" aria-selected="false">Faqat kod bilan</button></div></div>
-      <p class="small muted" style="margin:0">Xona egasi sifatida siz moderator tayinlaysiz, ovozni o‘chirasiz va qoidani buzganni chiqarasiz. Bo‘sh qolgan xona 30 daqiqadan keyin yopiladi.</p>
+      <p class="small muted" style="margin:0">Xona egasi sifatida siz moderator tayinlaysiz, ovozni o‘chirasiz va qoidani buzganni chiqarasiz. Bo‘sh qolgan xona 10 daqiqadan keyin yopiladi.</p>
       <div class="acts"><button class="btn" data-x="close">Bekor qilish</button><button class="btn primary" id="nOk">Ochish</button></div>`);
     const q = (s) => sh.el.querySelector(s);
     const seg = (id) => { q(id).querySelectorAll("button").forEach((b) => b.addEventListener("click", () => q(id).querySelectorAll("button").forEach((x) => x.setAttribute("aria-selected", x === b)))); };
@@ -671,7 +671,7 @@
     $("#rmRec")?.addEventListener("click", () => (cur.rec ? stopRec() : startRec()));
     $("#rmApp")?.addEventListener("click", toggleAppAudio);
     $("#rmShare")?.addEventListener("click", async () => {
-      const txt = `ALVORA Med Konsilium: “${info.room.title}”. Kod: ${info.room.code}\n${location.origin}${location.pathname}${BASE}/${info.room.id}?code=${info.room.code}`;
+      const txt = `${window.t("ALVORA Med Konsilium: “{0}”. Kod: {1}").replace("{0}", info.room.title).replace("{1}", info.room.code)}\n${location.origin}${location.pathname}${BASE}/${info.room.id}?code=${info.room.code}`;
       try { if (navigator.share) await navigator.share({ text: txt }); else { await navigator.clipboard.writeText(txt); A.toast("Taklif nusxalandi"); } } catch { /* */ }
     });
     $("#rmLeave").addEventListener("click", leaveFlow);
@@ -820,7 +820,7 @@
         g.fillStyle = "#e8f4f1"; g.textAlign = "center"; g.font = "bold 44px system-ui,sans-serif";
         g.fillText(c.info.room.title.slice(0, 40), 640, 330);
         g.fillStyle = "#9cc7bd"; g.font = "30px system-ui,sans-serif";
-        g.fillText(sp ? sp.name + " gapiryapti" : "Konsilium · ALVORA Med", 640, 390);
+        g.fillText(sp ? window.t("{0} gapiryapti").replace("{0}", sp.name) : window.t("Konsilium · ALVORA Med"), 640, 390);
       }
     };
     r.timer = setInterval(draw, 1000 / 15); draw();

@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.11";
+  const VERSION = "1.1.12";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -27,6 +27,11 @@
     .replace(/\^([^\^\s][^\^]*?)\^/g, "<sup>$1</sup>");
   const plain = (s) => String(s ?? "").replace(/\*\*/g, "").replace(/~([^~\s][^~]*?)~/g, "$1").replace(/\^([^\^\s][^\^]*?)\^/g, "$1");
   const fold = (s) => plain(s).toLowerCase().replace(/[‘’ʻʼ`´]/g, "'");
+  /* Mavzu raqami: "9-mavzu. " yoki "Topic 9. " (tanlangan tilga qarab) */
+  const enLang = () => window.I18N?.lang === "en";
+  const tno = (n) => (n ? (enLang() ? `Topic ${n}. ` : `${n}-mavzu. `) : "");
+  // saqlangan sarlavhalardagi (reja, belgilar) mavzu raqamini tanlangan tilga moslaydi
+  const locT = (s) => { s = String(s ?? ""); return enLang() ? s.replace(/^(\d+)-mavzu\.\s/, "Topic $1. ") : s.replace(/^Topic (\d+)\.\s/, "$1-mavzu. "); };
   const view = $("#view");
   const titleEl = $("#pageTitle");
   const backBtn = $("#backBtn");
@@ -257,9 +262,10 @@
         <span class="resume-txt"><small>Davom ettirish · ${esc(last.subject)}</small><strong>${esc(last.title)}</strong></span></a>`;
     }
     const lb = store.get("lastBook", null);
-    if (lb && store.get("bookpos:" + lb.sid, 0) > 300) {
+    const ba = lb && store.get("bookat:" + lb.sid, null);   // qo'llanmada qayerda to'xtagan (mavzu va ichidagi joy)
+    if (ba && (ba.i > 0 || ba.off > 300)) {
       resume += `<a class="resume alt" href="#/fan/${esc(lb.sid)}/kitob"><span class="play">${svg(IC.book, 22)}</span>
-        <span class="resume-txt"><small>Qo‘llanmani davom ettirish</small><strong>${esc(lb.name)}</strong></span></a>`;
+        <span class="resume-txt"><small>Qo‘llanmani davom ettirish</small><strong>${esc((stats.find((x) => x.s.id === lb.sid)?.s.name) || lb.name)}</strong></span></a>`;
     }
     const quick = [
       ["#/reja", IC.plan, "Reja", ""],
@@ -653,7 +659,7 @@
         <button class="btn" id="saveBtn" aria-pressed="${isSaved(sid, tid)}">${isSaved(sid, tid) ? "Saqlangan" : "Saqlash"}</button>
         <button class="btn" id="planBtn">${svg(IC.plan, 18)} Rejaga qo‘shish</button>
       </div>`;
-    const tTitle = (t.no ? t.no + "-mavzu. " : "") + t.title;
+    const tTitle = tno(t.no) + t.title;
     const doneUI = () => {
       const b = $("#doneBtn"); if (!b) return;
       const sc = getRes()[sid + "/" + tid]?.score;
@@ -923,7 +929,7 @@
   /* So'z o'zagi: o'zbek qo'shimchalaridan (-si, -ida, -lari ...) qat'i nazar solishtirish uchun */
   const stem = (w) => (w.length > 6 ? w.slice(0, 6) : w);
   const hasStems = (text, stems) => stems.every((st) => text.includes(st));
-  const DEFWORDS = /deb ataladi|deb yuritiladi|ya'ni| bu | — |bo'lib,|bo'ladi|natijasida|ifodalanadi/;
+  const DEFWORDS = /deb ataladi|deb yuritiladi|ya'ni| bu | — |bo'lib,|bo'ladi|natijasida|ifodalanadi| is (a|an|the) | are | is called | refers to | means | defined as | i\.e\./;   // o'zbekcha va inglizcha ta'rif so'zlari
 
   /* Toza qidiruv mantiqi (DOM'siz) */
   function searchTerms(g, raw) {
@@ -1057,7 +1063,7 @@
         const txt = plain(h.x.text);
         const raw2 = txt.slice(Math.max(0, h.pos - 50), h.pos + terms[0].length + 90);
         const href = `#/fan/${esc(h.x.sid)}/${esc(h.x.t.id)}${h.x.tab ? "?" + h.x.tab + (h.x.i != null ? "&s=" + h.x.i : "") + "&q=" + encodeURIComponent(terms.join(" ")) : ""}`;
-        return `<a class="result" href="${href}"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${h.x.where ? inline(h.x.where) : esc(h.x.t.title)}</strong>
+        return `<a class="result" href="${href}"><strong>${esc(tno(h.x.t.no))}${h.x.where ? inline(h.x.where) : esc(h.x.t.title)}</strong>
           <div class="small muted">${esc(h.x.abbr)} · …${hl(raw2, terms)}…</div></a>`;
       }).join("");
     };
@@ -1127,6 +1133,11 @@
 
   /* ---------- Kutubxona ---------- */
   const LANG = { uz: "O‘zbekcha", ru: "Ruscha", en: "Inglizcha" };
+  /* Muallif va nashriyot satridagi o'zbekcha qisqartmalar (inglizcha rejimda) */
+  const EN_AUTH = [[/\bva boshq\.?/g, "et al."], [/\(tahr\.\)/g, "(ed.)"], [/o[‘'’]zbekcha tarjima:/gi, "Uzbek translation:"], [/\btarjima:/g, "translation:"],
+    [/muallifi? ko[‘'’]rsatilmagan/gi, "Author not stated"], [/\bToshkent tibbiyot akademiyasi\b/g, "Tashkent Medical Academy"], [/\bToshkent\b/g, "Tashkent"], [/\bMoskva\b/g, "Moscow"],
+    [/\bAndijon DTI\b/g, "Andijan State Medical Institute"], [/\b(\d+)-nashr\b/g, "edition $1"]];
+  const libTr = (s) => (enLang() && s ? EN_AUTH.reduce((x, [re, to]) => x.replace(re, to), String(s)) : s);
   async function pageLibrary() {
     setChrome("Kutubxona", false, "lib");
     const lib = await loadJSON("data/library.json");
@@ -1184,11 +1195,11 @@
       $("#shelves").innerHTML = out.join("") || emptyState(IC.book, "Kitob topilmadi", "Filtrlarni o‘zgartiring yoki boshqa so‘z bilan qidiring.");
     };
     const bookCard = (b, grp) => {
-      const tags = [b.kind, LANG[b.lang], b.script === "kirill" ? "Kirill" : "", b.edition, b.pages ? b.pages + " bet" : "", b.format + (b.sizeMB ? " · " + (b.sizeMB >= 100 ? Math.round(b.sizeMB) : b.sizeMB) + " MB" : "")].filter(Boolean);
+      const tags = [b.kind, LANG[b.lang], b.script === "kirill" ? "Kirill" : "", libTr(b.edition), b.pages ? b.pages + " bet" : "", b.format + (b.sizeMB ? " · " + (b.sizeMB >= 100 ? Math.round(b.sizeMB) : b.sizeMB) + " MB" : "")].filter(Boolean);
       return `<article class="book" style="--c:${esc(grp.color)}">
         <div class="cover">${b.cover ? `<img loading="lazy" src="data/library/covers/${esc(b.cover)}.webp" alt="">` : esc(grp.abbr)}</div>
         <div><h4 class="book-title">${esc(b.title)}${b.year ? ` <span>(${b.year})</span>` : ""}</h4>
-          ${b.authors || b.publisher ? `<p class="book-authors">${esc(b.authors)}${b.publisher ? (b.authors ? " · " : "") + esc(b.publisher) : ""}</p>` : ""}
+          ${b.authors || b.publisher ? `<p class="book-authors" data-notr>${esc(libTr(b.authors))}${b.publisher ? (b.authors ? " · " : "") + esc(libTr(b.publisher)) : ""}</p>` : ""}
           <div class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
           ${b.note ? `<p class="book-note">${esc(b.note)}</p>` : ""}
           ${/^(DJVU|DOC)$/.test(b.format) ? `<p class="book-note">${b.format === "DJVU" ? "DJVU format: telefon ochmasligi mumkin, noutbukda DjVu dasturi kerak." : "DOC format: Drive’da ko‘rinadi, lekin shakli biroz buzilishi mumkin."}</p>` : ""}
@@ -1404,7 +1415,7 @@
         out.innerHTML = hits.length ? hits.slice(0, 20).map((h) => {
           const txt = plain(h.x.text), snip = txt.slice(Math.max(0, h.pos - 50), h.pos + terms[0].length + 90);
           const href = `#/fan/${esc(h.x.sid)}/${esc(h.x.t.id)}${h.x.tab ? "?" + h.x.tab + (h.x.i != null ? "&s=" + h.x.i : "") + "&q=" + encodeURIComponent(terms.join(" ")) : ""}`;
-          return `<a class="result" href="${href}" data-x="close"><strong>${esc(h.x.t.no ? h.x.t.no + "-mavzu. " : "")}${h.x.where ? inline(h.x.where) : esc(h.x.t.title)}</strong><div class="small muted">${esc(h.x.abbr)} · …${hl(snip, terms)}…</div></a>`;
+          return `<a class="result" href="${href}" data-x="close"><strong>${esc(tno(h.x.t.no))}${h.x.where ? inline(h.x.where) : esc(h.x.t.title)}</strong><div class="small muted">${esc(h.x.abbr)} · …${hl(snip, terms)}…</div></a>`;
         }).join("") : `<p class="small muted">“${esc(raw)}” bo‘yicha hech narsa topilmadi.</p>`;
       }
     };
@@ -1488,9 +1499,9 @@
       const en = new Date(st.getTime() + 60 * 60000);
       const f = (d) => ymd(d).replace(/-/g, "") + "T" + pad(d.getHours()) + pad(d.getMinutes()) + "00";
       L.push("BEGIN:VEVENT", "UID:" + p.id + "@alvora-med", "DTSTAMP:" + stamp, "DTSTART:" + f(st), "DTEND:" + f(en),
-        icsFold("SUMMARY:" + icsEsc(`${p.abbr}: ${p.title}`)),
-        icsFold("DESCRIPTION:" + icsEsc("ALVORA Med — rejadagi mavzuni o‘qish vaqti")),
-        "BEGIN:VALARM", "ACTION:DISPLAY", icsFold("DESCRIPTION:" + icsEsc("Mavzuni o‘qish vaqti: " + p.title)), "TRIGGER:PT0S", "END:VALARM", "END:VEVENT");
+        icsFold("SUMMARY:" + icsEsc(`${window.t(p.abbr)}: ${locT(p.title)}`)),
+        icsFold("DESCRIPTION:" + icsEsc(window.t("ALVORA Med — rejadagi mavzuni o‘qish vaqti"))),
+        "BEGIN:VALARM", "ACTION:DISPLAY", icsFold("DESCRIPTION:" + icsEsc(window.t("Mavzuni o‘qish vaqti: {0}").replace("{0}", locT(p.title)))), "TRIGGER:PT0S", "END:VALARM", "END:VEVENT");
     }
     L.push("END:VCALENDAR");
     return L.join("\r\n") + "\r\n";
@@ -1507,7 +1518,7 @@
     const when = compact && p.date !== ymd(new Date()) ? " · " + fmtDay(parseYmd(p.date)) : "";
     return `<div class="plan-item${p.done ? " done" : ""}${late ? " late" : ""}" data-pid="${esc(p.id)}">
       <span class="tm">${esc(p.time)}</span>
-      <a href="#/fan/${esc(p.sid)}/${esc(p.tid)}"><span class="pt">${esc(p.title)}</span><span class="pm">${esc(p.abbr)}${when} ${tag}</span></a>
+      <a href="#/fan/${esc(p.sid)}/${esc(p.tid)}"><span class="pt">${esc(locT(p.title))}</span><span class="pm">${esc(p.abbr)}${when} ${tag}</span></a>
       <span class="pi-acts"><button class="chk" data-act="chk" aria-pressed="${!!p.done}" aria-label="Bajarildi deb belgilash">${svg(ICX.check, 24)}</button></span>${compact ? "" :
         `<span class="pi-more"><button data-act="ics">${svg(ICX.cal, 16)} Kalendarga</button><button data-act="del">${svg(ICX.trash, 16)} O‘chirish</button></span>`}</div>`;
   }
@@ -1522,7 +1533,7 @@
       if (b.dataset.act === "chk") {
         p.done = !p.done; p.doneAt = p.done ? new Date().toISOString() : null;
         store.set("plan", pl);
-        if (p.done && !isDone(p.sid, p.tid)) { setDone(p.sid, p.tid, true); scoreSheet(p.sid, p.tid, p.title, rerender); }
+        if (p.done && !isDone(p.sid, p.tid)) { setDone(p.sid, p.tid, true); scoreSheet(p.sid, p.tid, locT(p.title), rerender); }
         else toast(p.done ? "Bajarildi ✓" : "Belgi olib tashlandi");
         checkWeekWin(p.date);
         rerender();
@@ -1580,7 +1591,7 @@
       const s = await loadSubject(sid);
       const t = s.data.topics.find((x) => x.id === tid);
       const pl = getPlan();
-      pl.push({ id: uid(), date, time, sid, tid, title: (t.no ? t.no + "-mavzu. " : "") + t.title, abbr: s.meta.abbr, done: false });
+      pl.push({ id: uid(), date, time, sid, tid, title: tno(t.no) + t.title, abbr: s.meta.abbr, done: false });
       store.set("plan", pl);
       store.set("planLast", { time });
       sh.close();
@@ -1676,7 +1687,7 @@
       const [sid, tid] = k.split("/");
       if (!(sid in subs)) subs[sid] = await loadSubject(sid).catch(() => null);
       const s = subs[sid]; const t = s?.data.topics.find((x) => x.id === tid);
-      if (t) rows.push({ k, sid, tid, abbr: s.meta.abbr, title: (t.no ? t.no + "-mavzu. " : "") + t.title, at: res[k]?.at || "", score: res[k]?.score ?? null });
+      if (t) rows.push({ k, sid, tid, abbr: s.meta.abbr, title: tno(t.no) + t.title, at: res[k]?.at || "", score: res[k]?.score ?? null });
     }
     rows.sort((a, b) => (b.at || "").localeCompare(a.at || ""));
     const pill = (r) => `<button class="score-pill${r.score == null ? " none" : r.score >= 86 ? " hi" : r.score < 56 ? " lo" : ""}" data-sc="${esc(r.k)}">${r.score == null ? "+ ball" : r.score}</button>`;
@@ -1778,7 +1789,7 @@
     const list = store.get("hl", []);
     view.innerHTML = `<div class="hello"><h2>Belgilanganlar</h2><p class="muted">Mavzu matnida sariq marker bilan belgilagan joylaringiz. Bossangiz, aynan o‘sha joy ochiladi.</p></div>
       <div id="hlList">${list.length ? list.map((h) => `<a class="hl-card" href="#/fan/${esc(h.sid)}/${esc(h.tid)}?${esc(h.tab)}&s=${esc(h.s)}&h=${esc(h.id)}">
-          <q>${esc(h.text)}</q><span class="hl-meta"><span><b>${esc(h.abbr || "")}</b> · ${esc(h.title || "")}</span>
+          <q>${esc(h.text)}</q><span class="hl-meta"><span><b>${esc(h.abbr || "")}</b> · ${esc(locT(h.title || ""))}</span>
           <button class="icon-btn" data-del="${esc(h.id)}" aria-label="O‘chirish" style="width:36px;height:36px">${svg(ICX.trash, 18)}</button></span></a>`).join("")
         : emptyState(ICX.marker, "Hali belgilangan joy yo‘q", "Mavzu matnida kerakli gapni barmoq bilan bosib turib belgilang, so‘ng pastda chiqadigan “🖍 Belgilash” tugmasini bosing.")}</div>`;
     view.querySelectorAll("[data-del]").forEach((b) => b.addEventListener("click", (e) => {
