@@ -982,6 +982,11 @@
         }
       } catch { /* yuklanmagan fan */ }
     }
+    /* Qo'lda yozilgan qo'shimcha atamalar (kasalliklar va h.k.): ilova tiliga qarab o'zbekcha yoki inglizcha */
+    try {
+      const ex = await loadJSON("data/glossary/extra.json");
+      for (const [t, m, c] of ex) add(t, m, c, 0, true);
+    } catch { /* fayl yo'q */ }
     glossary = [...map.values()].filter((e) => e.means.length).map((e) => {
       e.means.sort((a, b) => a.rank - b.rank);
       const best = e.means[0].rank;
