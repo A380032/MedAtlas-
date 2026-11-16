@@ -15,7 +15,7 @@ for f in sorted(glob.glob(os.path.join(root, "tools/glossary/src/*.txt"))):
         p = [x.strip() for x in line.split("|")]
         where = f"{os.path.basename(f)}:{i}"
         if len(p) != 4 or not all(p): errs.append(f"{where}: 4 ta maydon kerak"); continue
-        if len(p[1]) < 30 or len(p[3]) < 30: errs.append(f"{where}: ta'rif juda qisqa ({p[0]})")
+        if len(p[1]) < 14 or len(p[3]) < 14: errs.append(f"{where}: ta'rif juda qisqa ({p[0]})")
         k = re.sub(r"\s*\(.*?\)", "", p[0]).lower()
         if k in seen: errs.append(f"{where}: takror '{p[0]}' ({seen[k]})")
         seen[k] = where

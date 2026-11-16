@@ -1174,5 +1174,7 @@ window.I18N.register("en", {
 "PDF ilova ichida ochilmadi. Uni telefon yoki brauzerning o‘z ko‘ruvchisida ochishingiz mumkin.": "The PDF could not be opened in the app. You can open it in your phone's or browser's own viewer.",
 "Kichraytirish": "Zoom out",
 "PDF yuklanmoqda…": "Loading PDF…",
-"{0}-sahifadan davom etyapsiz": "Continuing from page {0}"
+"{0}-sahifadan davom etyapsiz": "Continuing from page {0}",
+"Yaqin atamalar:": "Similar terms:",
+"“{0}” topilmadi. Balki quyidagilardan birini nazarda tutgandirsiz:": "“{0}” was not found. Did you mean one of these?",
 });

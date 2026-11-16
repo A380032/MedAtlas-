@@ -1026,6 +1026,48 @@
   const hasStems = (text, stems) => stems.every((st) => text.includes(st));
   const DEFWORDS = /deb ataladi|deb yuritiladi|ya'ni| bu | — |bo'lib,|bo'ladi|natijasida|ifodalanadi| is (a|an|the) | are | is called | refers to | means | defined as | i\.e\./;   // o'zbekcha va inglizcha ta'rif so'zlari
 
+  /* Imlo xatolariga chidamli solishtirish: apostrof, x/h, q/k, ph/f, qo'sh harflar kabi farqlarni tenglashtiradi */
+  const loose = (s) => fold(s).replace(/['\-]/g, "").replace(/ph/g, "f").replace(/th/g, "t").replace(/x/g, "h").replace(/q/g, "k").replace(/w/g, "v")
+    .replace(/ts/g, "s").replace(/ee/g, "i").replace(/y/g, "i").replace(/(.)\1+/g, "$1").replace(/\s+/g, " ").trim();
+  /* Damerau-Levenshtein masofasi (yonma-yon harflar almashgani ham 1 xato); max dan oshsa max+1 qaytaradi */
+  function editDist(a, b, max) {
+    const la = a.length, lb = b.length;
+    if (Math.abs(la - lb) > max) return max + 1;
+    let p2 = null, p1 = Array.from({ length: lb + 1 }, (_, j) => j);
+    for (let i = 1; i <= la; i++) {
+      const cur = [i]; let best = i;
+      for (let j = 1; j <= lb; j++) {
+        let v = Math.min(p1[j] + 1, cur[j - 1] + 1, p1[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        if (p2 && i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) v = Math.min(v, p2[j - 2] + 1);
+        cur[j] = v; if (v < best) best = v;
+      }
+      if (best > max) return max + 1;
+      p2 = p1; p1 = cur;
+    }
+    return p1[lb];
+  }
+  /* "Balki shuni nazarda tutgandirsiz": xato yozilgan so'zga eng yaqin atamalar */
+  function fuzzyTerms(g, raw, skip) {
+    const q = loose(raw);
+    if (q.length < 3) return [];
+    const max = Math.max(1, Math.min(3, Math.floor(q.length * 0.28)));
+    const out = [];
+    for (const x of g) {
+      if (skip && skip.includes(x)) continue;
+      if (!x.lk) x.lk = x.keys.map(loose).filter((k) => k.length >= 3);
+      let best = max + 1;
+      for (const k of x.lk) {
+        let d = editDist(q, k, Math.min(best - 1, max));
+        if (q.length >= 4 && k.length > q.length) d = Math.min(d, editDist(q, k.slice(0, q.length), Math.min(best - 1, max)) + 1);   // yarim yozilgan so'z
+        if (!q.includes(" ")) for (const w of k.split(" ")) if (w.length >= 3) d = Math.min(d, editDist(q, w, Math.min(best - 1, max)));
+        if (d < best) best = d;
+        if (best === 0) break;
+      }
+      if (best <= max) out.push({ x, d: best });
+    }
+    return out.sort((a, b) => a.d - b.d || a.x.term.length - b.x.term.length).slice(0, 6).map((r) => r.x);
+  }
+
   /* Toza qidiruv mantiqi (DOM'siz) */
   function searchTerms(g, raw) {
     const terms = fold(raw.trim()).split(/\s+/).filter(Boolean);
@@ -1057,7 +1099,8 @@
         if (cand && !related.includes(cand)) related.push(cand);
       }
     }
-    return { terms, stems, hits, byMean, exact, related };
+    const fuzzy = !exact && hits.length < 3 && raw.trim().length >= 3 ? fuzzyTerms(g, raw, hits) : [];
+    return { terms, stems, hits, byMean, exact, related, fuzzy };
   }
 
   let lastSearch = { q: "", y: 0 };
@@ -1121,6 +1164,9 @@
         html = r.hits.slice(0, 40).map((x) => item(x, terms)).join("");
       } else if (r.hits.length) {
         html = r.hits.slice(0, 40).map((x) => item(x, terms)).join("");
+        if (r.fuzzy.length) html += `<p class="small muted" style="margin:10px 0 8px">Yaqin atamalar:</p>` + r.fuzzy.map((x) => item(x, [])).join("");
+      } else if (r.fuzzy.length) {
+        html = `<p class="small muted" style="margin:0 0 8px">“${esc(raw)}” topilmadi. Balki quyidagilardan birini nazarda tutgandirsiz:</p>` + r.fuzzy.map((x) => item(x, [])).join("");
       } else {
         if (r.related.length) {
           html = `<p class="small muted" style="margin:0 0 8px">“${esc(raw)}” uchun alohida ta'rif topilmadi. Tarkibidagi atamalar ma'nosi:</p>` + r.related.map((x) => item(x, terms)).join("");
