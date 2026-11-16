@@ -954,17 +954,18 @@
     if (glossary) return glossary;
     const cat = await catalog();
     const map = new Map();
-    const add = (term, mean, abbr, rank, card) => {
+    const add = (term, mean, abbr, rank, card, ex) => {
       term = term.trim().replace(/[:;,.\s]+$/, ""); mean = mean.trim();
       if (term.length < 2 || term.length > 80 || term.split(/\s+/).length > 9) return;
       if (!goodTerm(term) || !goodMean(mean, card)) return;
       const key = fold(plain(term)).replace(/\s+/g, " ");
       let e = map.get(key);
       if (!e) { e = { term, means: [], keys: termKeys(plain(term)) }; map.set(key, e); }
+      if (ex && !e.ex) { e.ex = true; e.term = term; }   // qo'lda yozilgan atama nomi asosiy bo'ladi
       const fm = fold(mean).slice(0, 40);
       if (e.means.some((m) => m.f === fm)) return;
       const bad = (mean.length < 40 ? 2 : 0) + (/^[a-zа-яо‘'’]/.test(mean) && mean.split(/\s+/).length < 6 ? 1 : 0);
-      e.means.push({ t: mean, abbr, rank: rank + bad, f: fm });
+      e.means.push({ t: mean, abbr, rank: rank + bad, f: fm, ex: !!ex });
     };
     for (const c of cat.courses) for (const sj of c.subjects) {
       if (sj.status !== "ready") continue;
@@ -985,12 +986,41 @@
     /* Qo'lda yozilgan qo'shimcha atamalar (kasalliklar va h.k.): ilova tiliga qarab o'zbekcha yoki inglizcha */
     try {
       const ex = await loadJSON("data/glossary/extra.json");
-      for (const [t, m, c] of ex) add(t, m, c, 0, true);
+      for (const [t, m, c] of ex) add(t, m, c, 0, true, true);
     } catch { /* fayl yo'q */ }
-    glossary = [...map.values()].filter((e) => e.means.length).map((e) => {
-      e.means.sort((a, b) => a.rank - b.rank);
-      const best = e.means[0].rank;
-      e.means = e.means.filter((m) => m.rank <= best + 1).slice(0, 3);
+    /* Bir xil atamalarni birlashtirish: umumiy kalit (nom yoki qavs ichidagi ekvivalent) bo'yicha */
+    const all = [...map.values()].filter((e) => e.means.length);
+    const par = all.map((_, i) => i);
+    const root = (i) => { while (par[i] !== i) { par[i] = par[par[i]]; i = par[i]; } return i; };
+    const byKey = new Map();
+    all.forEach((e, i) => {
+      const f0 = fold(plain(e.term)), bare0 = f0.replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s+/g, " ").trim();
+      const mk = [...e.keys.filter((k) => k !== f0 && k !== bare0).map((k) => "p:" + k), "b:" + bare0];   // qavs ichidagi ekvivalent yoki aynan bir xil nom
+      for (const k of mk) {
+        if (k.length < 6) continue;
+        const j = byKey.get(k);
+        if (j === undefined) byKey.set(k, i);
+        else { const a = root(i), b = root(j); if (a !== b) par[Math.max(a, b)] = Math.min(a, b); }
+      }
+    });
+    const groups = new Map();
+    all.forEach((e, i) => { const r = root(i); (groups.get(r) || groups.set(r, []).get(r)).push(e); });
+    const merged = [];
+    for (const grp of groups.values()) {
+      const base = grp.find((e) => e.ex) || grp[0];
+      for (const e of grp) {
+        if (e === base) continue;
+        for (const m of e.means) if (!base.means.some((x) => x.f === m.f)) base.means.push(m);
+        for (const k of e.keys) if (!base.keys.includes(k)) base.keys.push(k);
+        base.ex = base.ex || e.ex;
+      }
+      merged.push(base);
+    }
+    glossary = merged.map((e) => {
+      const mine = e.means.filter((m) => m.ex).sort((a, b) => a.rank - b.rank);
+      const book = e.means.filter((m) => !m.ex).sort((a, b) => a.rank - b.rank);
+      const bb = book.length ? book[0].rank : 0;
+      e.means = [...mine, ...book.filter((m) => m.rank <= bb + 1)].slice(0, 3);
       e.ft = e.keys.join(" | ");
       e.abbrs = [...new Set(e.means.map((m) => m.abbr))];
       return e;
@@ -1081,7 +1111,7 @@
       return stems.length > 1 && hasStems(x.ft, stems) ? 4 : 9;
     };
     const byTerm = g.map((x) => ({ x, sc: score(x) })).filter((r) => r.sc < 9)
-      .sort((a, b) => a.sc - b.sc || a.x.term.length - b.x.term.length);
+      .sort((a, b) => (a.sc === 0 ? 0 : 1) - (b.sc === 0 ? 0 : 1) || (b.x.ex ? 1 : 0) - (a.x.ex ? 1 : 0) || a.sc - b.sc || a.x.term.length - b.x.term.length);
     const exact = byTerm.some((r) => r.sc <= 1);
     const hits = byTerm.map((r) => r.x);
     let byMean = [];
