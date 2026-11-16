@@ -60,7 +60,7 @@ self.addEventListener("fetch", (e) => {
   if (url.origin === location.origin && url.pathname.includes("/data/")) {
     e.respondWith(
       fetch(req).then((res) => {
-        if (res && res.ok) { const copy = res.clone(); caches.open(RUNTIME).then((c) => c.put(req, copy)); }   // xato javob (404, 500) keshga yozilmaydi
+        if (res && res.status === 200 && !req.headers.has("range")) { const copy = res.clone(); caches.open(RUNTIME).then((c) => c.put(req, copy)).catch(() => {}); }   // xato (404, 500) va bo'lak (206, PDF) javoblar keshga yozilmaydi
         return res;
       }).catch(() => caches.match(req))
     );

@@ -395,24 +395,114 @@
       </ol>`;
   }
 
-  /* PDF'ni ilova ichida ochish (orqaga tugmasi bilan) */
+  /* PDF'ni ilova ichida ochish: o'z ko'ruvchimiz (PDF.js). Chap yuqorida "Orqaga", pastda "Yuqoriga" tugmasi.
+     iPhone xotirasi to'lib qolmasligi uchun faqat ekranga yaqin sahifalar chiziladi, uzoqlashganlari tozalanadi;
+     fayl ham bo'laklab (Range) yuklanadi — 20 MB kitob ham tez ochiladi. */
+  let pdfLib = null;
+  const loadPdfLib = () => (pdfLib ||= import(new URL("vendor/pdfjs/pdf.min.mjs", location.href).href).then((m) => {
+    m.GlobalWorkerOptions.workerSrc = new URL("vendor/pdfjs/pdf.worker.min.mjs", location.href).href;
+    return m;
+  }).catch((e) => { pdfLib = null; throw e; }));
   async function pagePdf(sid) {
     const f = await findSubject(sid);
     if (!f || !f.meta.pdf) return pageNotFound();
     setChrome("PDF · " + f.meta.abbr, true, "fanlar");
-    view.classList.add("wide");
     const url = window.I18N.path(f.meta.pdf);
-    // Telefon va planshetda katta PDF'ni ilova ichiga (iframe) joylash iPhone'da sahifani yopib qo'yadi,
-    // Android'da esa umuman ko'rinmaydi — shuning uchun u yerda PDF telefonning o'z ko'ruvchisida ochiladi.
     const touch = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform || ""));
-    if (touch) {
-      view.classList.remove("wide");
-      view.innerHTML = emptyState(IC.book, `<span>${esc(f.meta.name)}</span> <span>(PDF)</span>`, "Telefonda PDF nusxa telefonning o‘z PDF ko‘ruvchisida ochiladi. Fayl katta — Wi-Fi orqali ochish tavsiya etiladi.",
+    const fallback = (why) => {
+      if (why) console.warn("pdf:", why);
+      view.innerHTML = emptyState(IC.book, `<span>${esc(f.meta.name)}</span> <span>(PDF)</span>`, "PDF ilova ichida ochilmadi. Uni telefon yoki brauzerning o‘z ko‘ruvchisida ochishingiz mumkin.",
         `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">PDF’ni ochish</a> <a class="btn" href="${esc(url)}" download>Yuklab olish</a>`);
-      return;
-    }
-    view.innerHTML = `<div class="pdf-bar"><span class="small muted">Ko‘rinmasa, yuklab oling</span><a class="btn" href="${esc(url)}" download>Yuklab olish</a></div>
-      <iframe class="sim-frame pdf-frame" title="${esc(f.meta.name)} (PDF)" src="${esc(url)}#view=FitH"></iframe>`;
+    };
+    view.innerHTML = `<div class="pdfv-bar"><span class="pdfv-name">${esc(f.meta.name)}</span>
+        <span class="pdfv-tools"><button class="icon-btn" id="pzOut" type="button" aria-label="Kichraytirish">−</button><span class="pdfv-zoom" id="pzVal">100%</span><button class="icon-btn" id="pzIn" type="button" aria-label="Kattalashtirish">+</button>
+        <a class="btn" href="${esc(url)}" download>Yuklab olish</a></span></div>
+      <div class="pdfv" id="pdfv"><p class="small muted pdfv-load">PDF yuklanmoqda…</p></div>
+      <div class="pdfv-pg" id="pdfPg" hidden></div>`;
+    const box = $("#pdfv"), pgEl = $("#pdfPg"), zVal = $("#pzVal"), zIn = $("#pzIn"), zOut = $("#pzOut");
+    const myHash = location.hash;
+    const here = () => location.hash === myHash && box.isConnected;
+    // yuklash fonda davom etadi: yo'naltirgich "yuklanmoqda" bloki bilan sahifani ustidan yozib yubormasin
+    (async () => {
+    let doc = null, pages = [], io = null, zoom = store.get("pdfZoom", 1);
+    const cleanup = () => { io?.disconnect(); io = null; try { doc?.destroy(); } catch { /* */ } doc = null; };
+    window.addEventListener("hashchange", cleanup, { once: true });
+    let lib;
+    try { lib = await loadPdfLib(); } catch (e) { if (here()) fallback(e); return; }
+    try {
+      doc = await lib.getDocument({ url, disableAutoFetch: true, disableStream: false, rangeChunkSize: 262144, isEvalSupported: false }).promise;
+    } catch (e) { if (here()) fallback(e); return; }
+    if (!here()) { cleanup(); return; }
+    const n = doc.numPages;
+    const p1 = await doc.getPage(1);
+    const vp1 = p1.getViewport({ scale: 1 });
+    const ratio = vp1.height / vp1.width;
+    // sahifa chizish sifati: telefonda xotira tejaladi
+    const dpr = Math.min(window.devicePixelRatio || 1, touch ? 1.75 : 1.5);
+    const MAXLIVE = 8;          // bir vaqtda xotirada turadigan sahifalar soni
+    const MAXPX = 6e6;          // bitta sahifa rasmi ko'pi bilan ~6 Mpx (iPhone'da kanvas xotirasi cheklangan)
+    const live = new Set();
+    box.innerHTML = Array.from({ length: n }, (_, i) => `<div class="pdfp" data-p="${i + 1}" style="aspect-ratio:${(1 / ratio).toFixed(4)}"><span class="pdfp-no">${i + 1}</span></div>`).join("");
+    pages = [...box.querySelectorAll(".pdfp")];
+    const applyZoom = () => { box.style.setProperty("--pz", zoom); box.classList.toggle("z1", zoom === 1); zVal.textContent = Math.round(zoom * 100) + "%"; };
+    applyZoom();
+    const clear = (el) => { const cv = el.querySelector("canvas"); if (cv) { cv.width = cv.height = 0; cv.remove(); } el.dataset.r = ""; live.delete(el); };
+    const draw = async (el) => {
+      const want = String(zoom);
+      if (el.dataset.r === want || el.dataset.busy) return;
+      el.dataset.busy = "1";
+      try {
+        const pg = await doc.getPage(+el.dataset.p);
+        if (!doc || !el.isConnected) return;
+        const w = el.clientWidth || box.clientWidth;
+        const base = pg.getViewport({ scale: 1 });
+        let sc = (w / base.width) * dpr;
+        if (base.width * base.height * sc * sc > MAXPX) sc = Math.sqrt(MAXPX / (base.width * base.height));
+        const vp = pg.getViewport({ scale: sc });
+        const cv = document.createElement("canvas");
+        cv.width = Math.floor(vp.width); cv.height = Math.floor(vp.height);
+        el.style.aspectRatio = (vp.width / vp.height).toFixed(4);
+        await pg.render({ canvasContext: cv.getContext("2d", { alpha: false }), viewport: vp }).promise;
+        if (!doc || !el.isConnected) { cv.width = cv.height = 0; return; }
+        el.querySelector("canvas")?.remove();
+        el.appendChild(cv);
+        el.dataset.r = want; live.add(el);
+        // eng uzoqdagi sahifalardan boshlab tozalash
+        if (live.size > MAXLIVE) {
+          const mid = window.scrollY + innerHeight / 2;
+          [...live].sort((a, b) => Math.abs(b.offsetTop - mid) - Math.abs(a.offsetTop - mid)).slice(0, live.size - MAXLIVE).forEach(clear);
+        }
+      } catch (e) { console.warn("pdf page", e); }
+      finally { delete el.dataset.busy; }
+    };
+    io = new IntersectionObserver((ents) => { for (const e of ents) if (e.isIntersecting) draw(e.target); }, { rootMargin: "80% 0px 80% 0px" });
+    // tozalangan, lekin hali ekranga yaqin turgan sahifalarni qayta chizish (kuzatuvchi ularni qayta xabar qilmaydi)
+    const ensure = () => { const h = innerHeight; for (const el of pages) { const r = el.getBoundingClientRect(); if (r.bottom > -h * 0.5 && r.top < h * 1.5 && el.dataset.r !== String(zoom)) draw(el); } };
+    pages.forEach((el) => io.observe(el));
+    // joriy sahifa raqami va o'qish joyi
+    const key = "pdfat:" + window.I18N.lang + ":" + sid;
+    let tmr;
+    const cur = () => { const y = window.scrollY + innerHeight * 0.35; let k = 0; for (let i = 0; i < pages.length; i++) { if (pages[i].offsetTop <= y) k = i; else break; } return k; };
+    const onScroll = () => {
+      if (!here()) { window.removeEventListener("scroll", onScroll); return; }
+      const k = cur();
+      ensure();
+      pgEl.hidden = false; pgEl.textContent = `${k + 1} / ${n}`;
+      clearTimeout(tmr); tmr = setTimeout(() => { store.set(key, k); pgEl.classList.add("fade"); }, 1200);
+      pgEl.classList.remove("fade");
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("hashchange", () => window.removeEventListener("scroll", onScroll), { once: true });
+    const setZoom = (z) => {
+      const k = cur();
+      zoom = Math.min(2.5, Math.max(1, Math.round(z * 4) / 4)); store.set("pdfZoom", zoom); applyZoom();
+      requestAnimationFrame(() => { window.scrollTo(0, pages[k].offsetTop - 70); [...live].forEach(clear); ensure(); });
+    };
+    zIn.addEventListener("click", () => setZoom(zoom + 0.25));
+    zOut.addEventListener("click", () => setZoom(zoom - 0.25));
+    const at = store.get(key, 0);
+    if (at > 0 && at < n) setTimeout(() => { if (!here()) return; window.scrollTo(0, pages[at].offsetTop - 70); toast(window.t("{0}-sahifadan davom etyapsiz").replace("{0}", at + 1)); }, 60);
+    })().catch((e) => { if (here()) fallback(e); });
   }
 
   /* ---------- Qo'llanmani to'liq o'qish ---------- */
@@ -1812,6 +1902,7 @@
   toTop.addEventListener("click", () => {
     const toc = view.querySelector(".book-toc");
     if (toc) { toc.open = true; toc.scrollIntoView({ behavior: "smooth", block: "start" }); }
+    else if (view.querySelector(".pdfv")) window.scrollTo(0, 0);   // PDF: darhol (sekin aylantirish yo'lidagi yuzlab sahifani chizdirib yubormasin)
     else window.scrollTo({ top: 0, behavior: "smooth" });
   });
 

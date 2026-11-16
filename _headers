@@ -1,0 +1,3 @@
+# Netlify: PDF.js modules must be served as JavaScript
+/vendor/pdfjs/*.mjs
+  Content-Type: text/javascript; charset=utf-8
