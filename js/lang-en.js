@@ -1176,5 +1176,5 @@ window.I18N.register("en", {
 "PDF yuklanmoqda…": "Loading PDF…",
 "{0}-sahifadan davom etyapsiz": "Continuing from page {0}",
 "Yaqin atamalar:": "Similar terms:",
-"“{0}” topilmadi. Balki quyidagilardan birini nazarda tutgandirsiz:": "“{0}” was not found. Did you mean one of these?",
+"“{0}” topilmadi. Balki quyidagilardan birini nazarda tutgandirsiz:": "“{0}” was not found. Did you mean one of these?"
 });
