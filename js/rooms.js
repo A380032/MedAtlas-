@@ -204,7 +204,7 @@
   async function termsSheet() {
     const c = await ctx();
     const sh = A.sheet(`<h3>Taqiqlangan so‘zlar</h3>
-      <p class="small muted" style="margin:0 0 8px">Yozishmada shu so‘z (yoki shu bilan boshlanadigan so‘z) yozilsa, odam darhol xonadan chiqariladi va sizga Telegram orqali xabar keladi.</p>
+      <p class="small muted" style="margin:0 0 8px">Yozishmada shu so‘z (yoki shu bilan boshlanadigan so‘z) yozilsa, odam darhol xonadan chiqariladi va sizga Telegram orqali xabar keladi. Bank karta raqamini ulashish ham taqiqlanadi.</p>
       <div style="display:flex;gap:8px"><input id="tIn" maxlength="60" placeholder="Yangi so‘z" autocomplete="off" style="flex:1"><button class="btn primary" id="tAdd">Qo‘shish</button></div>
       <div class="chips rm-terms" id="tList"><span class="small muted">Yuklanmoqda…</span></div>
       <div class="acts"><button class="btn" data-x="close">Yopish</button></div>`);
