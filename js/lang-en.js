@@ -814,7 +814,7 @@ window.I18N.register("en", {
 "· avtomatik": "· automatic",
 "{0} · shikoyat": "{0} · report",
 "· shikoyat": "· report",
-"Yozishmada shu so‘z (yoki shu bilan boshlanadigan so‘z) yozilsa, odam darhol xonadan chiqariladi va sizga Telegram orqali xabar keladi. Bank karta raqamlari ham avtomatik ushlanadi.": "If this word (or a word starting with it) is written in the chat, the person is removed from the room immediately and you get a Telegram message. Bank card numbers are also caught automatically.",
+"Yozishmada shu so‘z (yoki shu bilan boshlanadigan so‘z) yozilsa, odam darhol xonadan chiqariladi va sizga Telegram orqali xabar keladi.": "If this word (or a word starting with it) is written in the chat, the person is removed from the room immediately and you get a Telegram message.",
 "Ro‘yxat bo‘sh": "The list is empty",
 "Qo‘shib bo‘lmadi": "Could not add",
 "· {0} ta xabar": "· {0} messages",
