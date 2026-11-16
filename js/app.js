@@ -23,9 +23,10 @@
   /* **qalin**, ~pastki~, ^yuqori^ belgilarini ko'rsatadi */
   const inline = (s) => esc(s)
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*\w])\*([^*\s](?:[^*]*?[^*\s])?)\*(?![*\w])/g, "$1<em>$2</em>")
     .replace(/~([^~\s][^~]*?)~/g, "<sub>$1</sub>")
     .replace(/\^([^\^\s][^\^]*?)\^/g, "<sup>$1</sup>");
-  const plain = (s) => String(s ?? "").replace(/\*\*/g, "").replace(/~([^~\s][^~]*?)~/g, "$1").replace(/\^([^\^\s][^\^]*?)\^/g, "$1");
+  const plain = (s) => String(s ?? "").replace(/\*\*/g, "").replace(/(^|[^*\w])\*([^*\s](?:[^*]*?[^*\s])?)\*(?![*\w])/g, "$1$2").replace(/~([^~\s][^~]*?)~/g, "$1").replace(/\^([^\^\s][^\^]*?)\^/g, "$1");
   const fold = (s) => plain(s).toLowerCase().replace(/[‘’ʻʼ`´]/g, "'");
   /* Mavzu raqami: "9-mavzu. " yoki "Topic 9. " (tanlangan tilga qarab) */
   const enLang = () => window.I18N?.lang === "en";
