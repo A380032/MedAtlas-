@@ -14403,5 +14403,580 @@
 "Retsidiv (relapse)",
 "Kasallikning qayta qo'zishi.",
 "Jamoat salomatligi"
+],
+[
+"Umurtqa churrasi (disc herniation)",
+"Umurtqalararo disk yadrosining kanal ichiga chiqib qolishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Ishias (sciatica)",
+"Dumba nervi bo'ylab beldan oyoqqa tarqaluvchi og'riq.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Tunnel sindromi (carpal tunnel syndrome)",
+"Bilak o'rta nervining siqilishi, barmoqlarda uvishish.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Son bo'g'imi displaziyasi (hip dysplasia)",
+"Chaqaloqda son bo'g'imi tuzilishining nuqsoni.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Qiyshiq bo'yin (torticollis)",
+"Bo'yin mushaklari qisqarishi tufayli boshning yon tomonga og'ishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Suyak sinishi (fracture)",
+"Suyak yaxlitligining buzilishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Tortilish (sprain)",
+"Bo'g'im boylamlarining cho'zilishi yoki yirtilishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Mushak yirtilishi (muscle strain)",
+"Mushak tolalarining cho'zilishi yoki uzilishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Kontuziya (contusion)",
+"Yumshoq to'qimalarning zarbdan ezilishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Tamponada (cardiac tamponade)",
+"Perikard bo'shlig'ida suyuqlik to'planib yurakning siqilishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Disseminirlangan tomir ichi ivishi (disseminated intravascular coagulation)",
+"Qonning tomirlar ichida yoyilib ivishi va qon ketishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Policitemiya (polycythemia)",
+"Eritrotsitlar sonining haddan tashqari oshishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Yo'g'on ichak saratoni (colorectal cancer)",
+"Yo'g'on yoki to'g'ri ichakdan chiqadigan xavfli o'sma.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Jigar saratoni (hepatocellular carcinoma)",
+"Jigar hujayralaridan chiqadigan birlamchi xavfli o'sma.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Sut bezi saratoni (breast cancer)",
+"Sut bezidan chiqadigan xavfli o'sma.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Miomma bachadon (uterine fibroid)",
+"Bachadon mushagidan chiqadigan yaxshi sifatli o'sma.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Gestoz (gestosis)",
+"Homiladorlikning kech toksikozi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Homila gipoksiyasi (fetal hypoxia)",
+"Homilaning kislorod yetishmovchiligi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Rezus-nizo (Rh incompatibility)",
+"Ona va homila rezus omillarining mos kelmasligi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Pufak surilishi (hydatidiform mole)",
+"Yo'ldosh to'qimasining pufakchali o'zgarishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Bachadon bo'yni yetishmovchiligi (cervical insufficiency)",
+"Bachadon bo'ynining homilani ushlab tura olmasligi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Xurrak (snoring)",
+"Uyqu paytida yuqori nafas yo'llari tebranishidan chiqadigan tovush.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Xavotir buzilishi (anxiety disorder)",
+"Haddan ziyod doimiy tashvish bilan kechuvchi buzilish.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Travmadan keyingi stress buzilishi (post-traumatic stress disorder)",
+"Og'ir voqeadan keyin paydo bo'ladigan xotira va qo'rquv buzilishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Diqqat tanqisligi sindromi (attention deficit hyperactivity disorder)",
+"Diqqat jamlay olmaslik va giperaktivlik.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Ishtaha yo'qolishi (loss of appetite)",
+"Ishtahaning yo'qolishi.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Giyohvandlik (drug addiction)",
+"Giyohvand moddalarga patologik qaramlik.",
+"Qo'shimcha kasalliklar"
+],
+[
+"Kernig belgisi (Kernig sign)",
+"Meningitda tizzani yozishdagi qarshilik va og'riq.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Brudzinski belgisi (Brudzinski sign)",
+"Meningitda bo'yin bukilganda oyoqlarning o'z-o'zidan bukilishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Murphy belgisi (Murphy sign)",
+"O't pufagi yallig'lanishida chuqur nafasda o'ng qovurg'a ostidagi og'riq.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Shchetkin-Blyumberg belgisi (rebound tenderness)",
+"Qorinni bosib qo'yib yuborganda og'riqning kuchayishi, peritonit belgisi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Ortner belgisi (Ortner sign)",
+"O'ng qovurg'a yoyiga urganda o'ng qovurg'a ostidagi og'riq.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Pasternatskiy belgisi (costovertebral angle tenderness)",
+"Bel sohasiga urilganda buyrak sohasidagi og'riq.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Lasegue belgisi (Lasègue sign)",
+"Ko'tarilgan to'g'ri oyoqda sciatica og'rig'ining paydo bo'lishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Romberg holati (Romberg test)",
+"Ko'zni yumib turganda muvozanatning buzilishini aniqlash sinovi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Koplik dog'lari (Koplik spots)",
+"Qizamiq oldidan yonoq shilliq qavatidagi mayda oq dog'lar.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Trusso belgisi (Trousseau sign)",
+"Gipokalsemiyada qo'l mushaklarining tortishishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Xvostek belgisi (Chvostek sign)",
+"Yuz nervi urilganda yuz mushaklarining qisqarishi, gipokalsemiya belgisi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Kussmaul nafasi (Kussmaul breathing)",
+"Atsidozda chuqur va shovqinli nafas.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Cheyn-Stoks nafasi (Cheyne–Stokes respiration)",
+"Chuqurlashib va sayozlashib boruvchi, apnoe bilan almashuvchi nafas.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Nog'ora tayoqchasi (clubbing)",
+"Barmoq uchi qalinlashib, tirnoqning gumbazsimon bo'lishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Akrosianoz (acrocyanosis)",
+"Qo'l-oyoq uchlarining ko'karishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Urtikariya (urticaria)",
+"Qichishuvchi, tez o'tuvchi yuza shishlar.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Angionevrotik shish (angioedema)",
+"Teri osti va shilliq qavatning chuqur shishishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Ekximoz (ecchymosis)",
+"Terida katta qon quyilish dog'i.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Xolestaz (cholestasis)",
+"O't oqimining buzilishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Kardiomegaliya (cardiomegaly)",
+"Yurak o'lchamining kattalashishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Bo'yin venalarining shishishi (jugular venous distension)",
+"O'ng yurak bosimi oshganda bo'yin venalarining tarang bo'lishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Ko'krakdagi og'riq (chest pain)",
+"Ko'krak qafasi sohasidagi og'riq, yurak va boshqa sabablardan.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Hansirash (breathlessness)",
+"Nafas yetishmaslik hissi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Hushdan ketish (syncope)",
+"Miya qon ta'minoti kamayishidan qisqa muddatli ong yo'qolishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Terlash (sweating)",
+"Ter bezlarining ter ajratishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Diareya (diarrhea)",
+"Suyuq va tez-tez najas ajralishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Steatoreya (steatorrhea)",
+"Najasda yog' ko'payishi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Parenteral oziqlantirish (parenteral nutrition)",
+"Oziq moddalarni tomir ichiga yuborish.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Laboratoriya tahlili (laboratory test)",
+"Qon, siydik yoki boshqa namunalarni tekshirish.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Siydik umumiy tahlili (urinalysis)",
+"Siydikning fizik, kimyoviy va mikroskopik tekshiruvi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Nechiporenko sinovi (Nechiporenko test)",
+"Siydikdagi hujayralarni 1 ml da hisoblash.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Zimnitskiy sinovi (Zimnitsky test)",
+"Buyrakning siydik quyultirish funksiyasini baholash.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"S-reaktiv oqsil (C-reactive protein)",
+"Yallig'lanishda jigar ishlab chiqaradigan o'tkir faza oqsili.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Prokaltsitonin (procalcitonin)",
+"Bakterial infeksiya va sepsis ko'rsatkichi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"D-dimer (D-dimer)",
+"Qon laxtasi parchalanish mahsuloti, tromboz ko'rsatkichi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Revmatoid omil (rheumatoid factor)",
+"Revmatoid artritda aniqlanadigan autoantitana.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Kalprotektin (calprotectin)",
+"Ichak yallig'lanishini ko'rsatuvchi najas ko'rsatkichi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Onkomarker (tumor marker)",
+"O'sma borligini ko'rsatuvchi qon moddasi.",
+"Qo'shimcha belgilar va tekshiruvlar"
+],
+[
+"Gidroxlortiazid (hydrochlorothiazide)",
+"Tiazid guruhidagi siydik haydovchi dori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Amlodipin (amlodipine)",
+"Qon bosimini pasaytiruvchi kalsiy kanali blokatori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Enalapril (enalapril)",
+"Gipertenziya va yurak yetishmovchiligida qo'llanadigan AFF ingibitori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Losartan (losartan)",
+"Angiotenzin II retseptorlari blokatori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Metoprolol (metoprolol)",
+"Yurak urishi va bosimni kamaytiruvchi beta-blokator.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Klopidogrel (clopidogrel)",
+"Trombotsit agregatsiyasini kamaytiruvchi dori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Atorvastatin (atorvastatin)",
+"Xolesterin pasaytiruvchi statin.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Omeprazol (omeprazole)",
+"Oshqozon kislotasini kamaytiruvchi protonli nasos ingibitori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Budesonid (budesonide)",
+"Ingalyatsion glyukokortikoid.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Prednizolon (prednisolone)",
+"Yallig'lanishga qarshi sintetik glyukokortikoid.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Azitromitsin (azithromycin)",
+"Makrolid guruhidagi antibiotik.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Siprofloksasin (ciprofloxacin)",
+"Ftorxinolon guruhidagi antibiotik.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Gentamitsin (gentamicin)",
+"Aminoglikozid guruhidagi antibiotik.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Flukonazol (fluconazole)",
+"Zamburug'larga qarshi azol guruhidagi dori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Izoniazid (isoniazid)",
+"Silga qarshi asosiy dorilardan biri.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Rifampitsin (rifampicin)",
+"Silga qarshi kuchli antibiotik.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Diazepam (diazepam)",
+"Tinchlantiruvchi va tutqanoqqa qarshi benzodiazepin.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Nalokson (naloxone)",
+"Opioid ta'sirini bartaraf etuvchi antidot.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Adrenalin dori (epinephrine)",
+"Anafilaksiya va yurak to'xtashida qo'llanadigan katexolamin.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Lidokain (lidocaine)",
+"Mahalliy og'riqsizlantiruvchi va antiaritmik dori.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Propofol (propofol)",
+"Tomir ichiga beriladigan umumiy narkoz vositasi.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Glyukoza eritmasi (glucose solution)",
+"Tomir ichiga yuboriladigan qand eritmasi.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Natriy xlorid eritmasi (saline solution)",
+"Fiziologik eritma, 0,9% natriy xlorid.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Regidratatsiya (rehydration)",
+"Yo'qotilgan suyuqlikni tiklash.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Davolovchi jismoniy tarbiya (therapeutic exercise)",
+"Kasallikni davolash uchun jismoniy mashqlar.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Nurlanish terapiyasi (radiotherapy)",
+"O'smani ionlashtiruvchi nurlar bilan davolash.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Ximioterapiya (chemotherapy)",
+"O'sma hujayralariga qarshi dorilar bilan davolash.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Organ transplantatsiyasi (organ transplantation)",
+"A'zoni donordan bemorga ko'chirib o'tkazish.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Birinchi tibbiy yordam (first aid)",
+"Hodisa joyida ko'rsatiladigan dastlabki yordam.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Jgut (tourniquet)",
+"Qon ketishini to'xtatish uchun oyoq-qo'lga bog'lanadigan bog'ich.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Shina (splint)",
+"Sinish joyini mahkamlovchi qurilma.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Qon bosimini o'lchash (blood pressure measurement)",
+"Tonometr bilan arterial bosimni aniqlash.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Termometriya (thermometry)",
+"Tana haroratini o'lchash.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Kislorod terapiyasi (oxygen therapy)",
+"Bemorga qo'shimcha kislorod berish.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Nebulayzer (nebulizer)",
+"Suyuq dorini mayda zarrachalarga aylantirib beruvchi asbob.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Klizma (enema)",
+"To'g'ri ichak orqali suyuqlik yuborish.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Kompress (compress)",
+"Teriga qo'yiladigan isituvchi yoki sovituvchi bog'ich.",
+"Qo'shimcha dorilar va muolajalar"
+],
+[
+"Sitomegalovirus (cytomegalovirus)",
+"Gerpesvirus oilasiga mansub, homilada nuqson chaqirishi mumkin bo'lgan virus.",
+"Qo'shimcha"
+],
+[
+"Epshteyn-Barr virusi (Epstein–Barr virus)",
+"Yuqumli mononukleoz qo'zg'atuvchisi bo'lgan gerpesvirus.",
+"Qo'shimcha"
+],
+[
+"Yuqumli mononukleoz (infectious mononucleosis)",
+"Isitma, angina va limfa tugunlari kattalashishi bilan kechuvchi virusli kasallik.",
+"Qo'shimcha"
+],
+[
+"Inson papillomavirusi (human papillomavirus)",
+"So'gal va bachadon bo'yni saratoni bilan bog'liq virus.",
+"Qo'shimcha"
+],
+[
+"Gripp (influenza)",
+"Isitma, mushak og'rig'i va yo'tal bilan kechuvchi o'tkir respirator virusli kasallik.",
+"Qo'shimcha"
+],
+[
+"Koronavirus infeksiyasi (coronavirus infection)",
+"SARS-CoV-2 va boshqa koronaviruslar chaqiradigan nafas yo'llari infeksiyasi.",
+"Qo'shimcha"
+],
+[
+"Lyamblioz (giardiasis)",
+"Giardia lamblia chaqiradigan ichak infeksiyasi.",
+"Qo'shimcha"
+],
+[
+"Taeniarinxoz (taeniasis)",
+"Tasmasimon gijja bilan zararlanish.",
+"Qo'shimcha"
+],
+[
+"Toksik shok sindromi (toxic shock syndrome)",
+"Stafilokokk toksinlari chaqiradigan isitma, toshma va bosim tushishi sindromi.",
+"Qo'shimcha"
+],
+[
+"Klebsiella (Klebsiella)",
+"Pnevmoniya va siydik yo'li infeksiyasi chaqiruvchi gramma'nfiy bakteriya.",
+"Qo'shimcha"
+],
+[
+"Sinegnoyniy tayoqcha (Pseudomonas aeruginosa)",
+"Kasalxona infeksiyalari va kuyish yaralarida uchraydigan chidamli bakteriya.",
+"Qo'shimcha"
+],
+[
+"Klostridiya (Clostridium)",
+"Qoqshol, gangrena va botulizm qo'zg'atuvchi spora hosil qiluvchi anaerob bakteriya.",
+"Qo'shimcha"
+],
+[
+"Lyme kasalligi (Lyme disease)",
+"Kana orqali yuqadigan Borrelia infeksiyasi.",
+"Qo'shimcha"
 ]
 ]
