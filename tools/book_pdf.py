@@ -53,11 +53,13 @@ TABLE_WORD = "Table" if lang == "en" else "Jadval"
 IMG_CACHE = os.path.join(tempfile.gettempdir(), f"book_pdf_img_{sid}")
 
 
-def jpg(src_rel, maxpx=1400):
+def jpg(src_rel, maxpx=None):
     """webp/png rasmni JPEG ga o'giradi: Chrome webp ni siqilmagan holda joylaydi (PDF 10 barobar katta bo'ladi)."""
     from PIL import Image
+    maxpx = maxpx or CFG.get("img_maxpx", 1400)   # pdf_<lang>.json: atlas rasmlari ko'p kitoblar uchun kichikroq
+    q = CFG.get("img_quality", 84)
     os.makedirs(IMG_CACHE, exist_ok=True)
-    dst = os.path.join(IMG_CACHE, re.sub(r"[^\w.-]", "_", src_rel) + ".jpg")
+    dst = os.path.join(IMG_CACHE, re.sub(r"[^\w.-]", "_", src_rel) + f"_{maxpx}_{q}.jpg")
     if not os.path.exists(dst):
         im = Image.open(os.path.join(ROOT, src_rel))
         if im.mode in ("RGBA", "LA", "P"):
@@ -68,7 +70,7 @@ def jpg(src_rel, maxpx=1400):
         else:
             im = im.convert("RGB")
         im.thumbnail((maxpx, maxpx))
-        im.save(dst, "JPEG", quality=84, optimize=True, progressive=False)
+        im.save(dst, "JPEG", quality=q, optimize=True, progressive=False)
     return dst
 
 

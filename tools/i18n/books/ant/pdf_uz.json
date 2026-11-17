@@ -1,0 +1,141 @@
+{
+  "lang": "uz",
+  "out": "data/books/ant.pdf",
+  "pdf_title": "Odam anatomiyasi: mukammal qo'llanma",
+  "author": "Asadbek Axmatkulov",
+  "running": "Odam anatomiyasi — mukammal qo‘llanma",
+  "cover": {
+    "image": "tools/i18n/books/ant/pdf_cover_uz.jpg",
+    "top": [
+      "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+      "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+      "Odam anatomiyasi kafedrasi fani bo‘yicha"
+    ],
+    "title": "ODAM ANATOMIYASI",
+    "part": "",
+    "sub": "mukammal qo‘llanma",
+    "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+    "by_label": "Tuzuvchi:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+    "city": "Toshkent — 2026"
+  },
+  "imprint": [
+    "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+    "**Odam anatomiyasi: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+    "",
+    "Ushbu qo‘llanma davolash fakulteti uchun “Odam anatomiyasi” fanining kalendar-tematik rejasidagi 1–2-semestr amaliy mashg‘ulotlarining 30 ta mavzusini yagona tizimda yoritadi va ikki qismdan iborat. I qism (1–15-mavzular) tayanch-harakat apparatini — osteologiya (umumiy osteologiya, tana, qo‘l, oyoq va kalla suyaklari), artrologiya (suyaklarning birlashuvi, bo‘g‘imlar) va miologiyani (tana, qo‘l, oyoq, bosh va bo‘yin mushaklari, fassiyalar va topografiya) qamrab oladi. II qism (16–30-mavzular) ichki a’zolar (hazm, nafas, siydik va jinsiy a’zolar, qorinparda), endokrin bezlar, yurak va qon tomirlar, limfa tizimi va immun a’zolarini o‘z ichiga oladi.",
+    "Har bir mavzuda a’zolarning tuzilishi, topografiyasi, qon bilan ta’minlanishi, yoshga doir xususiyatlari va klinik ahamiyati yoritilgan; rangli bloklar (eslab qoling, klinik ahamiyati, yodlash usuli, diqqat), jadvallar, atlas rasmlari, amaliy ko‘nikma algoritmlari, nazorat savollari, 15 tadan test topshirig‘i, 3 tadan vaziyatli masala va tezkor takrorlash jadvali berilgan. Test javoblari kitob oxirida keltirilgan.",
+    "Qo‘llanma A. Ahmedov va boshq. (Anatomiya, I–II jild), Sh.J. Teshaev va boshq. (Odam anatomiyasi. Atlas, 1–2-tom), R.D. Sinelnikov (Odam anatomiyasi atlasi), F. Bahodirov (Odam anatomiyasi) hamda boshqa manbalar asosida tayyorlangan. Barcha rasmlar ushbu darslik va atlaslardan olingan, har birining tagida manbasi ko‘rsatilgan.",
+    "Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida ko‘rsatilgan darsliklar asosida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Klinik ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar bilan solishtirish tavsiya etiladi.",
+    "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash, pediatriya va fundamental tibbiyot fakultetlari talabalari uchun mo‘ljallangan."
+  ],
+  "toc_title": "MUNDARIJA",
+  "preface_title": "So‘zboshi",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Odam anatomiyasi — tibbiyotning alifbosi. Shifokor nima qilmasin — bemorni ko‘rikdan o‘tkazadimi, ukol qiladimi, rentgenogrammani o‘qiydimi yoki operatsiya qiladimi — u avvalo tana tuzilishini biladi: qaysi a’zo qayerda yotadi, unga qaysi arteriya qon olib keladi, yonidan qaysi nerv o‘tadi, bola organizmida u kattalarnikidan nimasi bilan farq qiladi. Anatomiyani yodlab emas, ko‘rib, paypaslab va tasavvur qilib o‘rganish kerak — shuning uchun amaliy mashg‘ulotda preparat va atlas bilan ishlash darslikdan kam ahamiyatga ega emas."
+    },
+    {
+      "type": "p",
+      "text": "Ushbu qo‘llanma fanning 1–2-semestrdagi 30 ta amaliy mashg‘ulot mavzusini bir butun tizimda yoritadi va ikki qismdan iborat:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**I qism** — tayanch-harakat apparati (1–15-mavzular): umumiy osteologiya va anatomik atamalar, tana, qo‘l, oyoq va kalla suyaklari, kalla topografiyasi, suyaklarning birlashuvi va bo‘g‘imlar, mushaklar haqida umumiy ma’lumot, tana, qo‘l, oyoq, bosh va bo‘yin mushaklari, fassiyalari va topografiyasi.",
+        "**II qism** — ichki a’zolar va qon-tomir tizimi (16–30-mavzular): hazm, nafas, siydik va jinsiy a’zolar, qorinparda, endokrin bezlar, yurak, arteriyalar, venalar, homila qon aylanishi, limfa tizimi va immun a’zolari."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Har bir mavzuda a’zoning nafaqat tuzilishi, balki **topografiyasi**, **qon bilan ta’minlanishi** va **yoshga doir xususiyatlari** alohida ko‘rsatilgan — chaqaloq va bola organizmining anatomik o‘ziga xosliklari pediatriya va keyingi klinik fanlar uchun asos bo‘ladi. Mavzular orasida o‘zaro havolalar berilgan: masalan, suyak teshiklari va kanallari keyinchalik qon tomir va nervlar yo‘lini tushunishda, qorinparda munosabatlari jarrohlik kirish yo‘llarini tanlashda qo‘l keladi."
+    },
+    {
+      "type": "p",
+      "text": "Har bir bob bir xil tuzilishga ega:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Mashg‘ulot maqsadi** — shu darsda nimani bilib, nimani uddalashingiz kerakligi.",
+        "**Nazariy qism** — mavzuning asosiy tushunchalari, jadvallar va atlaslardan olingan rasmlar bilan. Matn ichida to‘rt turdagi rangli blok uchraydi: **Eslab qoling** (yodlash shart bo‘lgan asosiy ma’lumot), **Klinik ahamiyati** (anatomiyani klinika bilan bog‘laydi), **Yodlash usuli** (mnemonika), **Diqqat** (tez-tez uchraydigan xato yoki muhim ogohlantirish).",
+        "**Amaliy ko‘nikma** — preparat, skelet yoki tirik odamda bajariladigan amallarning bosqichma-bosqich algoritmi.",
+        "**Nazorat savollari**, test topshiriqlari (har bobda 15 ta) va vaziyatli masalalar (javoblari bilan).",
+        "**Tezkor takrorlash jadvali** — imtihon oldidan bir qarashda takrorlash uchun."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rasmlar asosiy darsliklar va atlaslardan olingan, har birining tagida manbasi ko‘rsatilgan. Atlas rasmlaridagi belgilar lotin, o‘zbek va rus tillarida berilgan — bu xalqaro anatomik nomenklaturani (lotincha atamalarni) o‘zlashtirishga yordam beradi."
+    },
+    {
+      "type": "p",
+      "text": "Qo‘llanma asosiy darsliklarning o‘rnini bosmaydi, balki amaliy mashg‘ulotga tayyorgarlikni yengillashtiradi va tarqoq ma’lumotni bir tizimga soladi. Matndagi klinik misollar anatomiyaning amaliy ahamiyatini ko‘rsatish uchun berilgan: tashxis va davolash bo‘yicha qarorlar amaldagi protokollar asosida qabul qilinadi."
+    },
+    {
+      "type": "p",
+      "text": "Muvaffaqiyat tilayman."
+    },
+    {
+      "type": "p",
+      "text": "**Tuzuvchi**"
+    }
+  ],
+  "parts": [
+    {
+      "before": 1,
+      "title": "I QISM",
+      "sub": "TAYANCH-HARAKAT APPARATI"
+    },
+    {
+      "before": 16,
+      "title": "II QISM",
+      "sub": "ICHKI A’ZOLAR VA QON-TOMIR TIZIMI"
+    }
+  ],
+  "numbered": true,
+  "skills_inline": [],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "{n}-MAVZU",
+    "goals": "Mashg‘ulot maqsadi",
+    "goals_intro": "Ushbu mashg‘ulotda talaba quyidagilarni o‘zlashtiradi:",
+    "skills": "Amaliy ko‘nikmalar",
+    "questions": "Nazorat savollari",
+    "quiz": "Test topshiriqlari",
+    "cases": "Vaziyatli masalalar",
+    "ask": "Savol:",
+    "answer": "Javob:",
+    "review": "Tezkor takrorlash",
+    "review_table": "Jadval {n}.{m}.",
+    "review_caption": "{n}-mavzu — asosiy tushunchalar",
+    "q": "Tushuncha",
+    "a": "Mohiyati",
+    "answers": "Test savollarining javoblari",
+    "answers_row": "{n}-mavzu:",
+    "refs": "Adabiyotlar"
+  },
+  "box": {
+    "eslab": "ESLAB QOLING",
+    "klinik": "KLINIK AHAMIYATI",
+    "yodlash": "YODLASH USULI",
+    "diqqat": "DIQQAT"
+  },
+  "refs": [
+    "Ahmedov A.G. va boshq. Anatomiya. I jild (Tayanch-harakat apparati, ichki a’zolar). — Toshkent, 2018.",
+    "Ahmedov A.G. va boshq. Anatomiya. II jild (Yurak-qon tomir tizimi, immun tizimi, nerv tizimi). — Toshkent.",
+    "Teshaev Sh.J., Xaribova E.A. va boshq. Odam anatomiyasi. Atlas. 1-tom. — Toshkent.",
+    "Teshaev Sh.J., Xaribova E.A. Odam anatomiyasi. Atlas. 2-tom. — Toshkent.",
+    "Sinelnikov R.D. Odam anatomiyasi atlasi. I tom (o‘zbekcha nashr). — Toshkent.",
+    "Bahodirov F.N. Odam anatomiyasi. — Toshkent.",
+    "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi. Odam anatomiyasi fani kalendar-tematik rejasi (2024–2025 o‘quv yili). Davolash fakulteti, 1-kurs, 1–2-semestr."
+  ],
+  "refs_note": "**Rasmlar manbalari.** Qo‘llanmadagi barcha rasmlar [1]–[5] manbalardan olingan; har bir rasm tagida manbasi ko‘rsatilgan. Atlas rasmlaridagi belgilar asl nashrdagidek lotin, o‘zbek va rus tillarida qoldirilgan.",
+  "img_maxpx": 1000,
+  "img_quality": 60
+}
