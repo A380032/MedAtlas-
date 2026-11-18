@@ -161,6 +161,7 @@ for p_ in sorted(glob.glob("man/*.tsv")):
         if "W" in opt: mb["strict"] = True
         if "F" in opt: mb["full"] = True
         if "Z" in opt: mb["fullt"] = True
+        if "X" in opt: mb["noln"] = True
         if "Q" in opt: mb["soft"] = True
         if "D" in opt: mb["dl"] = int(re.findall(r"D(\d+)", opt)[0])
         if "#" in opt: mb["bgc"] = "#" + opt.split("#")[1][:6]
@@ -577,6 +578,7 @@ for nm in names:
             r_, g_, b_ = int(c[1:3], 16), int(c[3:5], 16), int(c[5:7], 16)
             return b_ - r_ >= 15
         LN = [l_ for l_ in LN if not _navy(l_[5])]
+        if b.get("noln"): LN = [l_ for l_ in LN if l_[2] < b["uz"][0] + 2]
         if b.get("navy"):
             SO = b.get("soft")
             items.append({"_m": 1, "box": list(b["uz"]) if SO else [b["uz"][0] - 5, b["uz"][1], b["uz"][2] + 3, b["uz"][3]], "erase": "navy", "nb": 24 if b.get("strict") else (8 if SO else 10), "nl": 0 if b.get("strict") else (165 if SO else 150), "grow": 1, "bg": "local", "ex": 0 if SO else 3, "tbox": [tx0_, int(round(cy - th / 2 - s * 0.12)), tx1_, int(round(cy - th / 2 - s * 0.12)) + th], "t": en, "f": FONT, "s": s, "a": al, "pad": 1})
