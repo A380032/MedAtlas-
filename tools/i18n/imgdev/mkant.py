@@ -117,13 +117,14 @@ def xexpand(nm, b):
         if x < 0 or x >= W_: return None
         c = a[y0:y1 + 1, x] < 150
         tall = (a[max(0, y0 - 4):min(H_, y1 + 5), x] < 150).sum() > h + 3   # bubble/vertikal chiziq
-        return c.sum() >= 1 and not tall
+        if tall: return "stop"
+        return c.sum() >= 1
     for step in (-1, 1):
         x = x0 if step == -1 else x1
         gap = 0; last = x
         for k in range(1, 16):
             r = col_ok(x + step * k)
-            if r is None: break
+            if r is None or r == "stop": break
             if r: last = x + step * k; gap = 0
             else:
                 gap += 1
@@ -160,6 +161,7 @@ for p_ in sorted(glob.glob("man/*.tsv")):
         if "W" in opt: mb["strict"] = True
         if "F" in opt: mb["full"] = True
         if "Q" in opt: mb["soft"] = True
+        if "D" in opt: mb["dl"] = int(re.findall(r"D(\d+)", opt)[0])
         if "#" in opt: mb["bgc"] = "#" + opt.split("#")[1][:6]
         if "S" in opt: mb["size"] = int(re.findall(r"S(\d+)", opt)[0])
         MAN.setdefault(nmm, []).append(mb)
@@ -362,6 +364,28 @@ def snap(luma, TK, x0, y0, x1, y1, nl):
     ya, yb = sel[0][0], sel[-1][1]
     xs = np.nonzero(dk[ya - Y0:yb - Y0 + 1].sum(axis=0) >= 1)[0]
     return int(X0 + xs[0]), int(ya), int(X0 + xs[-1]), int(yb)
+def trim_leader(luma, x0, y0, x1, y1):
+    # yozuvdan keyin/oldin davom etgan ko'rsatkich chizig'ini (ingichka gorizontal) qutidan chiqarish
+    bgv = np.median(luma[max(0, y0 - 3):y1 + 4, x0:x1 + 1])
+    cnt = (luma[y0:y1 + 1, x0:x1 + 1] < bgv - 50).sum(axis=0)
+    thin = cnt <= 3
+    n = len(thin)
+    def first_run(arr, L):
+        r = 0
+        for k, v in enumerate(arr):
+            r = r + 1 if v else 0
+            if r >= L: return k - L + 1
+        return None
+    line = (cnt >= 1) & thin
+    st = first_run(line, 14)
+    if st is not None and st > 10:
+        x1 = x0 + st - 1
+        while x1 > x0 and thin[x1 - x0]: x1 -= 1
+    if n > 20 and line[:14].all():
+        k = 0
+        while k < n and thin[k]: k += 1
+        if k < n: x0 = x0 + k
+    return int(x0), int(x1)
 def free(luma, bg, y0, y1, x, step, lim):
     # bo'sh ustunlar (faqat ingichka yo'naltiruvchi chiziq bo'lsa ham bo'sh hisoblanadi)
     n = 0; skip = 0
@@ -422,12 +446,14 @@ for nm in names:
                     y1 = q[1] - 1; b = dict(b); b["ru"] = q; b["nl"] = max(1, b["nl"] - 1)
         # raqamli doiracha (bubble) qo'shilib qolgan bo'lsa — kesib tashlash
         _, _l, TK = PREP(nm)
-        if not (b.get("manual") and b.get("forced")): x0, x1 = trim_bubble(luma, x0, y0, x1, y1)
+        if not (b.get("manual") and b.get("forced")):
+            x0, x1 = trim_bubble(luma, x0, y0, x1, y1)
+            x0, x1 = trim_leader(luma, x0, y0, x1, y1)
         x0, x1 = int(x0), int(x1)
         if x1 <= x0 + 6: x0, x1 = b["uz"][0], b["uz"][2]
         BUBS = find_bubbles(luma, x0, y0, x1, y1)
         al = b["a"]
-        if al == "c":
+        if al == "c" and not b.get("manual"):
             rx0, ry0, rx1, ry1 = b["ru"]
             al = "l" if abs(x0 - rx0) <= 5 else ("r" if abs(x1 - rx1) <= 5 else "c")
         bg = int(np.median(np.concatenate([luma[max(0, y0 - 2), x0:x1 + 1], luma[min(luma.shape[0] - 1, y1 + 2), x0:x1 + 1]])))
@@ -435,18 +461,19 @@ for nm in names:
         def inkc(x):
             if x < 0 or x >= luma.shape[1]: return 0
             return int(TK[max(0, y0 - 1):y1 + 2, x].sum())
-        while True:
+        X1T = x1
+        while not (b.get("manual") and b.get("forced")):
             nxt = [inkc(x1 + k) for k in (1, 2, 3)]
             if nxt[0] >= 2 and nxt[0] <= y1 - y0 + 3: x1 += 1
-            elif nxt[0] == 0 and (2 <= nxt[1] <= y1 - y0 + 3 or 2 <= nxt[2] <= y1 - y0 + 3) and x1 - b["uz"][2] < 8: x1 += 2 if nxt[1] >= 2 else 3
+            elif nxt[0] == 0 and (2 <= nxt[1] <= y1 - y0 + 3 or 2 <= nxt[2] <= y1 - y0 + 3) and x1 - X1T < 8: x1 += 2 if nxt[1] >= 2 else 3
             else: break
-            if x1 - b["uz"][2] > 9: break
+            if x1 - X1T > 9: break
             if any(q[0] - 4 <= x1 and q[1] <= y1 and q[3] >= y0 for q in BUBS): x1 -= 1; break
         # ko'k (o'zbekcha) piksellar o'ngda/chapda davom etsa — qutini kengaytirish (OCR kesib qoldirgan harflar)
         NVm = NAVY(nm)
-        if not b.get("navy"):
+        if not b.get("navy") and not b.get("manual"):
             xn = x1
-            while xn + 1 < NVm.shape[1] and NVm[y0:y1 + 1, xn + 1:min(NVm.shape[1], xn + 10)].sum() >= 3 and xn - b["uz"][2] < 50 and np.median(luma[max(0, y0 - 3):y1 + 4, xn + 1:xn + 10]) > 170:
+            while xn + 1 < NVm.shape[1] and NVm[y0:y1 + 1, xn + 1:min(NVm.shape[1], xn + 10)].sum() >= 3 and xn - X1T < 50 and np.median(luma[max(0, y0 - 3):y1 + 4, xn + 1:xn + 10]) > 170:
                 xn = xn + 1 + int(np.nonzero(NVm[y0:y1 + 1, xn + 1:xn + 10].any(axis=0))[0][-1])
             XN1 = xn
         else: XN1 = x1
@@ -476,7 +503,7 @@ for nm in names:
         if b.get("size"): s0 = b["size"]
         if en == "@ERASE":
             if b.get("full"): items.append({"_m": 1, "box": [x0, y0, x1, y1], "bg": b.get("bgc") or "ring", "t": ""}); continue
-            items.append({"_m": 1, "box": [x0, y0, x1, y1], "erase": "ink", "bg": b.get("bgc") or ("ring" if b.get("ring") else "local"), "ex": 0, "dl": 30, "t": ""}); continue
+            items.append({"_m": 1, "box": [x0, y0, x1, y1], "erase": "ink", "bg": b.get("bgc") or ("ring" if b.get("ring") else "local"), "ex": 0, "dl": b.get("dl", 30), "grow": 2 if b.get("dl") else 1, "t": ""}); continue
         if b.get("manual") and b.get("forced") and "\n" in en:
             s = s0; nlx = en.count("\n") + 1
             s = min(s, int(hav / ((nlx - 1) * 1.12 + 0.92)) if hav else s)

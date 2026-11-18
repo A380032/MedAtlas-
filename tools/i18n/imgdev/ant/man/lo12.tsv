@@ -34,3 +34,29 @@ t21_plevra	98,232,242,253	l	2	Horizontal fissure\nof right lung	IS11
 t21_plevra	98,427,180,450	l	2	Middle lobe of\nright lung	VQS11
 t21_plevra	954,652,1018,686	l	2	Inferior lingular\nsegment [S V]	VQS11
 t21_plevra	865,925,1033,937	l	1	Costal part of diaphragm	IS11
+t21_segment	181,712,282,725	l	1	Posterior segment [S II]	IS11
+t21_segment	99,1043,274,1054	l	1	Lateral basal segment [S IX]	IS11
+t21_qovurga_yuza	818,259,906,268	l	1	Anterior border	VQS11
+t21_segment	103,937,274,949	l	1	Posterior basal segment [S X]	IS11
+t14_kichik_boldir	196,1238,386,1250	l	1	Tendon of fibularis longus muscle	IS12
+t21_opka_joy	808,483,1006,503	l	2	Endothoracic fascia;\nparietal thoracic fascia	IS11
+t22_qobiq	935,311,1074,325	l	1	Adipose capsule of kidney	IS11
+t23_erkak_sxema	984,178,1061,192	l	1	Peritoneum	IS11
+t26_tashqi_tarmoq	59,356,250,370	l	1	Posterior auricular artery	IS12
+t26_tashqi_tarmoq	593,65,893,81	l	1	Superficial temporal artery, frontal branches	IS12
+t30_tugun	462,589,1032,637	l	1	@ERASE	D14
+t30_tugun	462,589,1032,637	c	2	Figure No. 666. Structure of a lymph node\n(left: lymph flow, right: blood flow) (diagram).	IS17H
+t30_tugun	40,706,372,749	l	1	@ERASE	F
+t30_tugun	40,706,372,749	c	2	Figure No. 665. Shapes of lymph nodes.\nArrangement (diagram).	IS17H
+t22_kesma	808,59,976,69	l	1	Superior extremity; superior pole	IS11
+t22_kesma	712,715,880,727	l	1	@ERASE	F#c3c7c8
+t22_kesma	712,715,875,727	l	1	Major renal calyx	NS11
+t22_erkak	66,340,215,352	l	1	Ductus deferens	IS11
+t22_erkak	59,1061,324,1082	l	2	Perineal fascia; superficial investing\nfascia of perineum	IS11
+t22_kosacha	166,350,228,361	l	1	Ureter	IS11
+t22_kosacha	462,349,522,360	l	1	Ureter	IS11
+t22_kosacha	729,347,790,358	l	1	Ureter	IS11
+t22_kosacha	290,28,317,40	l	1	@ERASE	D25
+t22_nefron	156,48,396,61	l	1	Glomerular (Bowman's) capsule	IS11
+t22_nefron	69,492,240,515	l	2	Corticomedullary\njunction	IS12
+t22_nefron	918,312,994,323	l	1	Glomeruli	IS12
