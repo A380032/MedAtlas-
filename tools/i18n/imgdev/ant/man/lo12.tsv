@@ -44,8 +44,8 @@ t22_qobiq	935,311,1074,325	l	1	Adipose capsule of kidney	IS11
 t23_erkak_sxema	984,178,1061,192	l	1	Peritoneum	IS11
 t26_tashqi_tarmoq	59,356,250,370	l	1	Posterior auricular artery	IS12
 t26_tashqi_tarmoq	593,65,893,81	l	1	Superficial temporal artery, frontal branches	IS12
-t30_tugun	462,589,1032,637	l	1	@ERASE	D14
-t30_tugun	462,589,1032,637	c	2	Figure No. 666. Structure of a lymph node\n(left: lymph flow, right: blood flow) (diagram).	IS17H
+t30_tugun	462,589,1032,632	l	1	@ERASE	D14
+t30_tugun	462,589,1032,632	c	2	Figure No. 666. Structure of a lymph node\n(left: lymph flow, right: blood flow) (diagram).	IS17H
 t30_tugun	40,706,372,749	l	1	@ERASE	F
 t30_tugun	40,706,372,749	c	2	Figure No. 665. Shapes of lymph nodes.\nArrangement (diagram).	IS17H
 t22_kesma	808,59,976,69	l	1	Superior extremity; superior pole	IS11
@@ -379,3 +379,41 @@ t28_ustki_tutqich	686,24,848,36	l	1	Proper hepatic artery	NIS12
 t28_ustki_tutqich	728,77,972,90	l	1	Proper hepatic artery, left branch	NIS12
 t28_ustki_tutqich	365,80,522,106	l	2	Proper hepatic\nartery, right branch	NIZS11
 t28_ustki_tutqich	882,741,1013,752	l	1	Jejunal arteries	NIS12
+t29_bachadon	424,180,662,207	l	2	Uterine artery; uterine veins;\novarian branch	NIZS12
+t29_bachadon	501,317,662,354	l	3	Uterine artery;\nuterine veins,\ntubal branches	NIZS12
+t29_bachadon	595,179,665,185	l	0	@ERASE	F
+t29_bachadon	373,410,480,422	l	1	Fundus of uterus	NIS12
+t29_ichki_yonbosh	77,41,262,55	l	1	Common iliac artery	NIS12
+t29_ichki_yonbosh	55,90,262,102	l	1	Inferior mesenteric artery	NIS12
+t29_ichki_yonbosh	54,527,240,577	l	4	Deep circumflex iliac artery;\ndeep circumflex\niliac vein	NIZS12
+t29_ichki_yonbosh	72,694,150,706	l	1	Urinary bladder	NIS12
+t29_ichki_yonbosh	68,744,130,756	l	1	Ureter	NIS12
+t29_ichki_yonbosh	55,871,200,895	l	2	Vesical venous\nplexus	NIZS12
+t29_ichki_yonbosh	183,1113,362,1125	l	1	Deep artery of penis	NIS12
+t29_ichki_yonbosh	271,1161,436,1173	l	1	Corpus cavernosum of penis	NIS12
+t29_ichki_yonbosh	821,886,1018,912	l	2	Middle rectal artery;\nmiddle rectal vein	NIZS12
+t29_ichki_yonbosh	878,1115,1041,1158	l	3	Inferior rectal artery;\ninferior rectal\nveins	NIZS12
+t29_ichki_yonbosh	827,27,1000,39	l	1	Umbilical artery, patent part	NIS12
+t29_ichki_yonbosh	776,73,923,88	l	1	Promontory	NIS12
+t29_ichki_yonbosh	819,239,1008,262	l	2	Superior rectal artery;\nsuperior rectal vein	NIZS12
+t29_ichki_yonbosh	853,364,1014,380	l	1	Inferior vesical artery	NIXS12
+t29_ichki_yonbosh	1010,364,1022,380	l	0	@ERASE	F
+t29_taqim	769,143,982,157	l	1	Superior lateral genicular artery	NIS12
+t29_taqim	255,205,349,217	l	1	Popliteal artery	NIS12
+t29_panja_kaft	139,806,300,845	l	2	Common plantar digital\narteries	NIZS12
+t29_tizza	736,78,806,90	l	1	Femoral artery	NIS12
+t29_son_medial	758,566,975,590	l	2	Medial circumflex femoral artery,\ntransverse branch	NIZS12
+t29_panja_ust	176,653,356,678	l	2	Dorsal interosseous\nmuscles of foot	NIZS12
+t29_panja_ust	119,891,308,904	l	1	Dorsal digital nerves of foot	NIS12
+t29_yonbosh	64,748,240,761	l	1	Superior gluteal artery	NIS12
+t29_yonbosh	64,876,203,901	l	2	Inferior gluteal\nartery	NIZS12
+t29_yonbosh	922,907,1008,921	l	1	Femoral artery	NIS12
+t30_taloq	877,113,920,125	l	1	Spleen	NIS12
+t30_taloq	468,1090,580,1103	l	1	Pancreas	NIS12#b2bcbe
+t30_anastomoz	75,379,226,391	l	1	Right gastric vein	NIS12
+t30_ayrisimon	854,119,1036,130	l	1	Left vagus nerve [X]	NIS11
+t30_oyoq_vena	252,487,381,498	l	1	Deep vein of thigh	NIS12
+t30_tugun	1008,212,1078,238	l	2	Blood\ncapillaries	NIZS11
+t30_tugun	182,334,262,342	l	1	Ribbon-shaped	NIS10
+t30_tugun	366,507,512,519	l	1	Efferent lymphatic vessel	NIS11
+t30_tugun	53,932,194,944	l	1	Subcapsular sinus	NIS11
