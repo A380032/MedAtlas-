@@ -162,6 +162,7 @@ for p_ in sorted(glob.glob("man/*.tsv")):
         if "F" in opt: mb["full"] = True
         if "Z" in opt: mb["fullt"] = True
         if "X" in opt: mb["noln"] = True
+        if "Y" in opt: mb["navy"] = True; mb["nl0"] = True
         if "Q" in opt: mb["soft"] = True
         if "D" in opt: mb["dl"] = int(re.findall(r"D(\d+)", opt)[0])
         if "#" in opt: mb["bgc"] = "#" + opt.split("#")[1][:6]
@@ -532,6 +533,12 @@ for nm in names:
         uzd = float(np.percentile(v, 15)) if len(v) > 5 else 40
         dl = 35
         LN = []
+        def _darkc(pix):
+            pix = np.asarray(pix).reshape(-1, 3).astype(float)
+            c = pix[np.argmin(pix @ np.array([.299, .587, .114]))]
+            lu_ = c @ np.array([.299, .587, .114])
+            if lu_ > 90: c = c * (90 / lu_)
+            return "#%02x%02x%02x" % tuple(int(v) for v in c)
         tx1_, tx0_ = tx1, tx0
         if al == "l": tx0, tx1 = tx0_, tx0_ + w
         elif al == "r": tx0, tx1 = tx1_ - w, tx1_
@@ -546,7 +553,7 @@ for nm in names:
             ys = [ya_ + k for k, v in enumerate(colv) if v < bg - 50]
             if not ys or len(ys) > 4: continue
             yl = sum(ys) / len(ys); wl = len(ys)
-            pix = a[ys[0]:ys[-1] + 1, cx_]; col = "#%02x%02x%02x" % tuple(int(v) for v in np.median(pix, axis=0))
+            pix = a[ys[0]:ys[-1] + 1, cx_]; col = _darkc(pix)
             if side == 1 and q[0] - tx1 > 5: LN.append([tx1 + 3, round(yl), q[0] - 1, round(yl), wl, col])
             if side == -1 and tx0 - q[2] > 5: LN.append([q[2] + 1, round(yl), tx0 - 3, round(yl), wl, col])
         # matn bilan davom etuvchi ko'rsatkich chizig'i (bubble'siz)
@@ -565,7 +572,7 @@ for nm in names:
                         if 0 <= x2 < luma.shape[1] and (luma[yy - 1:yy + 2, x2] < bg - 50).any(): run += 1
                     if run >= 9:
                         pix = a[y0 - 2 + dk[0]:y0 - 2 + dk[-1] + 1, xx]
-                        return xx, yy, len(dk), "#%02x%02x%02x" % tuple(int(v) for v in np.median(pix, axis=0))
+                        return xx, yy, len(dk), _darkc(pix)
                 return None
             return None
         if not any(l_[2] > tx1 for l_ in LN):
@@ -581,7 +588,7 @@ for nm in names:
         if b.get("noln"): LN = [l_ for l_ in LN if l_[2] < b["uz"][0] + 2]
         if b.get("navy"):
             SO = b.get("soft")
-            items.append({"_m": 1, "box": list(b["uz"]) if SO else [b["uz"][0] - 5, b["uz"][1], b["uz"][2] + 3, b["uz"][3]], "erase": "navy", "nb": 24 if b.get("strict") else (8 if SO else 10), "nl": 0 if b.get("strict") else (165 if SO else 150), "grow": 1, "bg": "local", "ex": 0 if SO else 3, "tbox": [tx0_, int(round(cy - th / 2 - s * 0.12)), tx1_, int(round(cy - th / 2 - s * 0.12)) + th], "t": en, "f": FONT, "s": s, "a": al, "pad": 1})
+            items.append({"_m": 1, "box": list(b["uz"]) if SO else [b["uz"][0] - 5, b["uz"][1], b["uz"][2] + 3, b["uz"][3]], "erase": "navy", "nb": 11 if b.get("nl0") else (24 if b.get("strict") else (8 if SO else 10)), "nl": 0 if (b.get("strict") or b.get("nl0")) else (165 if SO else 150), "grow": 1, "bg": "local", "ex": 0 if SO else 3, "tbox": [tx0_, int(round(cy - th / 2 - s * 0.12)), tx1_, int(round(cy - th / 2 - s * 0.12)) + th], "t": en, "f": FONT, "s": s, "a": al, "pad": 1})
             continue
         items.append({**({"_m": 1} if b.get("manual") and b.get("forced") else {}), "box": [ex0, ey0, ex1, ey1], "erase": "ink", "bg": b.get("bgc") or ("ring" if b.get("ring") else "local"), "ex": 0, "dl": dl, **({"core": int(min(bg - 50, uzd + 75)), "cg": 2} if uzd < 100 and not b.get("nocore") else {}), "tbox": [tx0_, ty0, tx1_, ty1], **({} if b.get("manual") and b.get("forced") else {"keepx": [tx0 - 1, tx1 + 1]}), "t": en, "f": FONT, "s": s, "a": al, "pad": 1, **({"ln": LN} if LN else {})})
     MB = [it["box"] for it in items if it.get("_m")]
