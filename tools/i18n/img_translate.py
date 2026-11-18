@@ -4,11 +4,11 @@ Spetsifikatsiya: tools/i18n/books/<id>/img_en.json
   {"<nom>.webp": {"also": ["<dublikat>.webp"], "items": [
       {"box": [x0, y0, x1, y1], "t": "English text", ...ixtiyoriy...}, ...]}}
 Bandning ixtiyoriy maydonlari:
-  "f":  shrift — serif | serifb | serifi | serifbi | sans | sansb | sansi | sansbi | dv | dvb | dvi | dvc | dvbi | dvs | dvsb | dvsi (DejaVu) | inter | interm | interb   (standart: serif)
+  "f":  shrift — serif | serifb | serifi | serifbi | sans | sansb | sansi | sansbi | dv | dvb | dvi | dvc | dvcb | dvbi | dvs | dvsb | dvsi (DejaVu) | inter | interm | interb   (standart: serif)
   "s":  shrift o'lchami px (bo'lmasa qutiga sig'adigan eng kattasi tanlanadi)
   "smax": avtomatik tanlanadigan o'lchamning yuqori chegarasi px (asl yozuv o'lchamidan oshmasin)
   "a":  l | c | r — gorizontal tekislash (standart: c)
-  "bg": "#rrggbb" | "ring" (quti cheti medianasi) | "none" (standart: qutidagi eng ko'p rang — fon)
+  "bg": "#rrggbb" | "ring" (quti cheti medianasi) | "local" (qutidagi yorug' piksellar medianasi) | "none" (standart: qutidagi eng ko'p rang — fon)
   "c":  matn rangi (standart: qutidagi eng to'q piksellar rangi)
   "rot": 90 | 270 — vertikal yozuv (pastdan yuqoriga = 90)
   "pad": ichki chekinish px (standart 1)
@@ -19,6 +19,12 @@ Bandning ixtiyoriy maydonlari:
   "ss": k — yozuvni k marta katta chizib kichraytirish (standart: shrift ≤ 11 px bo'lsa 4, aks holda 1)
   "col": x — fon har qatorda shu ustundagi rang bilan to'ldiriladi (vertikal gradiyentli tasma)
   "arc"+"band"+"span": yoy bo'ylab yozuv (put_arc ga qarang)
+  "ln": [[x0, y0, x1, y1, w, "#rrggbb"], ...] — barcha bandlardan keyin chiziladigan chiziqlar (yozuv bilan raqamli doiracha orasidagi ko'rsatkich)
+  "core": N, "cg": k — "ink" o'chirishda faqat luma<N bo'lgan to'q piksellardan k px radiusdagi qism o'chiriladi
+  "keepx": [xa, xb] — "ink" o'chirishda shu x oralig'idan tashqaridagi ingichka gorizontal chiziqlar saqlanadi
+  "erase": "navy" — faqat ko'k-qora piksellar (b-r >= "nb") o'chiriladi (qiya/rangli yozuv uchun)
+  "erase": "ink" — butun quti emas, faqat qutidagi yozuv piksellari (fondan "dl" ga to'q, "grow" px kengaytirilgan) o'chiriladi
+  "tbox": [x0, y0, x1, y1] — yozuv chiziladigan quti (berilmasa "box")
   "src": [dx, dy] — fon sifatida (dx, dy) ga siljigan qo'shni sohadan nusxa olinadi (teksturali fon uchun)
 Natija: data/en/img/<id>/<nom>.webp (asl o'lcham bilan). Ilova (js/app.js) va tools/book_pdf.py
 inglizcha rejimda shu fayl bo'lsa uni ishlatadi, bo'lmasa asl rasmni."""
@@ -40,6 +46,7 @@ FONTS = {
     "dvb": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "dvi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
     "dvc": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf",
+    "dvcb": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf",
     "dvbi": "/usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf",
     "dvs": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
     "dvsb": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
@@ -275,9 +282,85 @@ def put(im, it):
         fill = None
     elif bg == "ring":
         fill = ring_color(im, (x0, y0, x1, y1))
+    elif bg == "local":   # qutidagi yorug' (yozuv bo'lmagan) piksellar medianasi
+        reg = list(im.crop((max(0, x0 - 3), max(0, y0 - 3), x1 + 4, y1 + 4)).getdata())
+        lu = [p[0] * 0.299 + p[1] * 0.587 + p[2] * 0.114 for p in reg]
+        md = statistics.median(lu)
+        sel = [p for p, l in zip(reg, lu) if abs(l - md) <= 10] or reg
+        fill = tuple(int(statistics.median(p[i] for p in sel)) for i in range(3))
     else:
         fill = hexrgb(bg) if bg else auto_bg(im, (x0, y0, x1, y1))
     col = hexrgb(it["c"]) if it.get("c") else ink_color(im, (x0, y0, x1, y1))
+    if fill and it.get("erase") == "navy":   # faqat ko'k-qora (o'zbekcha) yozuv piksellari: qiya qatorlar uchun
+        import numpy as np
+        from PIL import ImageFilter
+        e = it.get("ex", 2)
+        X0, Y0, X1, Y1 = max(0, x0 - e), max(0, y0 - e), min(im.size[0] - 1, x1 + e), min(im.size[1] - 1, y1 + e)
+        a = np.asarray(im.crop((X0, Y0, X1 + 1, Y1 + 1))).astype(int)
+        lu = a[..., 0] * 0.299 + a[..., 1] * 0.587 + a[..., 2] * 0.114
+        m = ((a[..., 2] - a[..., 0] >= it.get("nb", 22)) & (lu < 200)) | (lu < it.get("nl", 0))
+        mk = Image.fromarray((m * 255).astype("uint8")).filter(ImageFilter.MaxFilter(2 * it.get("grow", 1) + 1)).filter(ImageFilter.GaussianBlur(0.6))
+        im.paste(Image.new("RGB", mk.size, fill), (X0, Y0), mk)
+        fill = None
+    if fill and it.get("erase") == "ink":   # faqat yozuv piksellari (qo'shni qatorlarga tegmaslik uchun) o'chiriladi
+        from PIL import ImageFilter
+        e = it.get("ex", 1)
+        X0, Y0, X1, Y1 = max(0, x0 - e), max(0, y0 - e), min(im.size[0] - 1, x1 + e), min(im.size[1] - 1, y1 + e)
+        reg = im.crop((X0, Y0, X1 + 1, Y1 + 1)).convert("L")
+        bl = sum(fill[i] * w for i, w in enumerate((0.299, 0.587, 0.114)))
+        thr = bl - it.get("dl", 35)
+        mk = reg.point(lambda v: 255 if v < thr else 0)
+        if it.get("core") is not None:   # faqat to'q (yozuv) piksellar atrofi: och kulrang qo'shni yozuvga tegmaslik
+            import numpy as np, cv2
+            core = reg.point(lambda v, c=it["core"]: 255 if v < c else 0).filter(ImageFilter.MaxFilter(2 * it.get("cg", 2) + 1))
+            m0 = (np.asarray(mk) > 0).astype(np.uint8); c0 = np.asarray(core) > 0
+            ra = np.asarray(im.crop((X0, Y0, X1 + 1, Y1 + 1))).astype(int)
+            rl = ra[..., 0] * 0.299 + ra[..., 1] * 0.587 + ra[..., 2] * 0.114
+            nv = Image.fromarray((((ra[..., 2] - ra[..., 0] >= 12) & (rl < 205)) * 255).astype("uint8")).filter(ImageFilter.MaxFilter(3))
+            c0 = c0 | (np.asarray(nv) > 0)   # ko'k-qora (o'zbekcha) yozuv piksellari ham o'chiriladi
+            n, lab, st, _ = cv2.connectedComponentsWithStats(m0, connectivity=8)
+            keep = np.zeros(n, bool)
+            H_ = m0.shape[0]
+            for k in range(1, n):
+                x, y, w, h, ar = st[k]
+                inside = y >= 1 and y + h <= H_ - 1 and not (h <= 4 and w >= 15)   # qutidan chiqmaydi; ko'rsatkich chizig'i emas
+                keep[k] = inside
+            m1 = (m0 > 0) & (c0 | keep[lab])
+            mk = Image.fromarray((m1 * 255).astype("uint8"))
+        if it.get("keepx"):   # yozuvdan tashqaridagi ingichka gorizontal chiziqlar (ko'rsatkich chiziqlari) saqlanadi
+            import numpy as np
+            m = np.asarray(mk) > 0
+            ka, kb = it["keepx"]
+            line = np.zeros_like(m)
+            for yy in range(m.shape[0]):
+                row = m[yy]; xx = 0; n = len(row)
+                while xx < n:
+                    if row[xx]:
+                        st = xx
+                        while xx < n and row[xx]: xx += 1
+                        if xx - st >= 18: line[yy, st:xx] = True
+                    else: xx += 1
+            thick = np.zeros_like(m)
+            for dy in range(-3, 4):
+                if dy: thick = thick | (np.roll(m, dy, axis=0) & (abs(dy) >= 3))
+            th = line & ~np.roll(line, 4, axis=0) & ~np.roll(line, -4, axis=0)
+            # harf shtrixlari emas: ustun bo'yicha ±3 px da yana siyoh bo'lsa — chiziq emas
+            colthick = np.stack([np.roll(m, d, axis=0) for d in (-3, 3)]).any(axis=0)
+            th = th & ~colthick
+            cols = np.arange(m.shape[1]) + X0
+            zone = (cols < ka) | (cols > kb)
+            keepm = th & zone[None, :]
+            keepm = keepm | np.roll(keepm, 1, axis=0) & m | np.roll(keepm, -1, axis=0) & m
+            m = m & ~keepm
+            mk = Image.fromarray((m * 255).astype("uint8"))
+        mk = mk.filter(ImageFilter.MaxFilter(2 * it.get("grow", 1) + 1))
+        if it.get("keepx"):
+            mk = Image.fromarray((np.asarray(mk) * ~keepm).astype("uint8"))
+        mk = mk.filter(ImageFilter.GaussianBlur(0.6))
+        im.paste(Image.new("RGB", mk.size, fill), (X0, Y0), mk)
+        fill = None
+    if it.get("tbox"):   # yozuv chiziladigan quti (o'chiriladigandan farqli bo'lishi mumkin)
+        x0, y0, x1, y1 = it["tbox"]
     if fill:   # yumshoq chetli to'ldirish — fon bilan chok ko'rinmasin
         from PIL import ImageFilter
         m = Image.new("L", im.size, 0)
@@ -297,6 +380,8 @@ def put(im, it):
         im.paste(Image.new("RGB", im.size, fill), (0, 0), m)
     for ln in it.get("lines", []):   # o'chib ketgan grafik chizig'ini qayta chizish: [x0, y0, x1, y1, "#rang", qalinlik]
         ImageDraw.Draw(im).line(ln[:4], fill=hexrgb(ln[4]), width=ln[5])
+    if not it.get("t"):   # faqat o'chirish (yozuvsiz)
+        return
     bw, bh = x1 - x0 + 1, y1 - y0 + 1
     if rot in (90, 270):
         bw, bh = bh, bw
@@ -335,6 +420,10 @@ def main():
         im = Image.open(f"{ROOT}/data/img/{sid}/{name}").convert("RGB")
         for it in sp["items"]:
             put(im, it)
+        dr = ImageDraw.Draw(im)
+        for it in sp["items"]:   # "ln": [[x0, y0, x1, y1, qalinlik, "#rrggbb"], ...] — tiklangan ko'rsatkich chiziqlari
+            for x0, y0, x1, y1, w, c in it.get("ln", []):
+                dr.line([(x0, y0), (x1, y1)], fill=c, width=w)
         for nm in [name] + sp.get("also", []):
             im.save(f"{out_dir}/{nm}", "WEBP", quality=88, method=6)
             n += 1
