@@ -60,3 +60,151 @@ t22_kosacha	290,28,317,40	l	1	@ERASE	D25
 t22_nefron	156,48,396,61	l	1	Glomerular (Bowman's) capsule	IS11
 t22_nefron	69,492,240,515	l	2	Corticomedullary\njunction	IS12
 t22_nefron	918,312,994,323	l	1	Glomeruli	IS12
+t22_qobiq	990,256,1030,266	l	1	Kidney	IS12
+t22_siydik_nayi	883,464,1090,501	l	3	Narrowing where crossed by the ovarian\n(in women) or testicular (in men)\nvessels	IS11
+t22_sintopiya	156,534,232,545	l	1	Jejunum	IS12
+t22_uchburchak	95,81,290,94	l	1	Ureter, intramural part	IS11
+t22_uchburchak	846,67,990,80	l	1	Ureteric orifice	IS11
+t23_ayol_ichki	324,15,514,25	l	1	Uterine tube; isthmus of uterine tube	IS10
+t23_ayol_ichki	384,62,454,72	l	1	Uterine fundus	IS10
+t23_ayol_ichki	154,81,300,90	l	1	Proper ligament of ovary	IS10
+t23_ayol_ichki	42,129,152,147	l	2	Mesosalpinx,\ntubal branches	IS10
+t23_ayol_ichki	42,193,130,202	l	1	Vesicular appendices	IS10
+t23_ayol_ichki	84,237,204,256	l	2	Tubal extremity\nof ovary	IS10
+t23_ayol_ichki	46,290,212,300	l	1	Suspensory ligament of ovary	IS10
+t23_ayol_ichki	831,62,1045,72	l	1	Uterine tube; ampulla of uterine tube	IS10
+t23_ayol_ichki	795,404,872,413	l	1	Right ureter	IS10
+t23_ayol_ichki	830,0,915,5	l	0	@ERASE	IF
+t23_ayol_oraliq	128,652,282,675	l	2	Artery of bulb of vestibule;\nvein of bulb of vestibule	IS10
+t23_ayol_oraliq	248,761,430,772	l	1	Bulbospongiosus muscle	IS10
+t23_ayol_oraliq	912,887,936,891	l	0	@ERASE	IF
+t23_ayol_sagittal	109,283,220,295	l	1	Right uterine tube	IS10
+t23_ayol_sagittal	199,337,256,348	l	1	Uterus	IS10
+t23_ayol_sagittal	116,379,237,404	l	2	Round ligament\nof uterus (cut)	IS10
+t23_ayol_sagittal	116,471,236,496	l	2	Transverse\nvesical fold	IS10
+t23_ayol_sagittal	118,546,206,558	l	1	Urinary bladder	IS10
+t23_ayol_sagittal	175,596,240,608	l	1	Pubic bone	IS10
+t23_ayol_sagittal	116,648,293,659	l	1	Suspensory ligament of clitoris	IS10
+t23_ayol_sagittal	171,786,255,798	l	1	Crus of clitoris	IS10
+t23_ayol_sagittal	211,838,242,850	l	1	Clitoris	IS10
+t23_ayol_sagittal	143,889,228,901	l	1	Fascia of clitoris	IS10
+t23_ayol_sagittal	129,941,268,953	l	1	Corpus cavernosum of clitoris	IS10
+t23_ayol_sagittal	175,992,252,1004	l	1	Labium majus	IS10
+t23_ayol_sagittal	111,712,241,736	l	2	Dorsal artery and\nvein of clitoris	IS10
+t23_ayol_sagittal	224,711,250,725	l	0	@ERASE	IF
+t23_ayol_sagittal	830,186,1002,209	l	2	Proper ligament of ovary\n(cut)	IS10
+t23_ayol_sagittal	852,261,920,272	l	1	Rectum	IS10
+t23_ayol_sagittal	835,304,990,328	l	2	Broad ligament of uterus\n(cut)	IS10
+t23_ayol_sagittal	844,375,1018,399	l	2	Periuterine tissue;\nparametrium	IS10
+t23_erkak_sxema	130,203,239,224	l	1	Promontory	IS10
+t23_erkak_sxema	904,668,1003,678	l	1	Spermatic cord	IS10
+t23_erkak_sxema	867,715,1047,726	l	1	Corpus spongiosum of penis	IS10
+t23_erkak_sxema	844,764,1023,775	l	1	Corpus cavernosum of penis	IS10
+t23_erkak_sxema	82,939,236,950	l	1	Internal spermatic fascia	IS10
+t23_erkak_sxema	82,986,208,997	l	1	Ductus deferens	IS10
+t23_follikul	392,245,462,257	l	1	Zona pellucida	IS10
+t23_follikul	646,220,803,233	l	1	Cumulus oophorus	IS10
+t23_follikul	561,956,672,968	l	1	Rupturing follicle	IS10
+t23_follikul	932,970,1078,982	l	1	Theca externa	IS10
+t23_follikul	937,1028,1078,1041	l	1	Theca interna	IS10
+t23_follikul	481,1108,606,1119	l	1	Oocyte (egg cell)	IS10
+t23_follikul	1040,963,1083,971	l	0	@ERASE	IF
+t23_follikul	1040,1021,1083,1029	l	0	@ERASE	IF
+t23_follikul	1050,915,1075,925	l	0	@ERASE	IF
+t23_moyak	153,93,278,103	l	1	Internal spermatic fascia	IS10
+t23_moyak_ichki	245,147,412,158	l	1	Head of epididymis	IS12
+t23_moyak_ichki	127,361,275,373	l	1	Body of epididymis	IS12
+t23_moyak_ichki	119,449,270,461	l	1	Inferior aberrant ductule	IS12
+t23_moyak_ichki	179,529,319,541	l	1	Tail of epididymis	IS12
+t23_moyak_ichki	296,46,444,58	l	1	Pampiniform venous plexus	IS12
+t23_prostata	842,3,982,16	l	1	Ductus deferens	IS11
+t23_prostata	884,193,966,205	l	1	Excretory duct	IS11
+t23_prostata	868,115,982,136	l	2	Seminal glands;\nseminal vesicle	IS11
+t23_tizimcha	810,30,1050,50	l	2	Cremasteric fascia;\ncremaster muscle	NIS11
+t23_tizimcha	852,160,938,171	l	1	Testicular plexus	IS11
+t23_tizimcha	177,226,320,237	l	1	Pampiniform venous plexus	IS11
+t23_tizimcha	925,48,980,52	l	0	@ERASE	IF
+t24_buyrak_usti_mikro	798,113,986,126	l	1	Capsule of suprarenal gland	IS12
+t24_buyrak_usti_mikro	860,203,968,216	l	1	Zona glomerulosa	IS12
+t24_buyrak_usti_mikro	860,286,970,299	l	1	Zona fasciculata	IS12
+t24_buyrak_usti_mikro	858,358,965,371	l	1	Zona reticularis	IS12
+t24_buyrak_usti_mikro	87,422,200,433	l	1	Sinusoidal vessel	IS12
+t24_buyrak_usti_mikro	116,511,307,522	l	1	Suprarenal gland, medulla	NIS12
+t24_buyrak_usti	156,361,278,371	l	1	Subcostal nerve	NIS11
+t24_buyrak_usti	208,412,263,424	l	1	Kidney	NIS11
+t24_buyrak_usti	218,463,284,475	l	1	Ureter	NIS11
+t24_buyrak_usti	89,517,343,528	l	1	Iliohypogastric nerve; ilioinguinal nerve	NIS11
+t24_buyrak_usti	164,586,295,597	l	1	Ilioinguinal nerve	NIS11
+t24_buyrak_usti	92,20,270,43	l	2	Inferior phrenic artery;\ninferior phrenic veins	NIS11
+t24_buyrak_usti	148,94,222,106	l	1	Diaphragm	NIS11
+t24_buyrak_usti	99,147,290,159	l	1	Superior suprarenal arteries	NIS11
+t24_buyrak_usti	140,216,234,228	l	1	Suprarenal gland	NIS11
+t24_buyrak_usti	110,290,288,302	l	1	Kidney, superior pole	NIS11
+t24_buyrak_usti	810,2,916,15	l	1	Inferior vena cava	NIS11
+t24_buyrak_usti	811,55,1012,70	l	1	Middle suprarenal artery	NIS11
+t24_buyrak_usti	857,103,1002,124	l	2	Inferior suprarenal\nartery	NIS11
+t24_buyrak_usti	890,181,958,191	l	1	Celiac trunk	NIS11
+t24_buyrak_usti	862,246,992,268	l	2	Abdominal part of aorta;\nabdominal aorta	NIS11
+t24_buyrak_usti	854,321,1017,333	l	1	Superior mesenteric artery	NIS11
+t24_buyrak_usti	844,390,936,400	l	1	Renal veins	NIS11
+t24_buyrak_usti	846,441,943,451	l	1	Renal artery	NIS11
+t24_buyrak_usti	856,492,947,502	l	1	Renal veins	NIS11
+t24_buyrak_usti	809,544,1023,554	l	1	Testicular artery; ovarian artery	NIS11
+t24_buyrak_usti	948,58,1020,77	l	0	@ERASE	V
+t24_buyrak_usti	999,111,1010,125	l	0	@ERASE	IF
+t24_buyrak_usti	760,591,1000,599	l	1	Right testicular vein; right ovarian vein	NIS10
+t24_epifiz	740,76,840,88	l	1	Corpus callosum	NIS11
+t24_epifiz	742,148,980,164	l	1	Lateral ventricle, frontal (anterior) horn	NIS11
+t24_epifiz	775,353,955,366	l	1	Superior choroid vein	NIS11
+t24_epifiz	103,161,298,183	l	2	Superior thalamostriate vein;\nterminal vein	NIS11
+t24_epifiz	247,17,394,29	l	1	Lateral longitudinal stria	NIS11
+t24_epifiz	170,62,240,74	l	1	Septum pellucidum	NIS11
+t24_epifiz	91,286,272,297	l	1	Third ventricle, tela choroidea	NIS11
+t24_epifiz	270,118,360,130	l	1	Column of fornix	NIS11
+t24_gipofiz_gormon	538,88,622,101	r	1	Hypothalamus	NIS11
+t24_gipofiz_gormon	200,326,239,338	l	1	Kidney	NIS10
+t24_gipofiz_gormon	198,431,241,439	l	1	Mammary gland	NIS10
+t24_gipofiz_gormon	358,332,397,342	l	1	ADH	NIS12
+t24_gipofiz_gormon	702,537,732,546	l	1	ACTH	NIS10
+t24_gipofiz_gormon	702,629,724,640	l	1	TSH	NIS10
+t24_gipofiz_gormon	685,759,706,768	l	1	FSH	NIS10
+t24_gipofiz_gormon	664,923,680,933	l	1	LH	NIS10
+t24_gipofiz_gormon	874,627,930,639	l	1	Secretion	NIS10
+t24_qalqon_oldi	783,47,900,58	l	1	Submandibular gland	NIS11
+t24_qalqon_oldi	218,343,333,354	l	1	Inferior laryngeal nerve	NIS11
+t24_qalqon_oldi	152,393,280,405	l	1	Inferior parathyroid gland	NIS11
+t24_qalqon_oldi	162,81,300,93	l	1	External carotid artery	NIS11
+t24_qalqon_oldi	204,237,318,248	l	1	Pharyngeal plexus	NIS11
+t24_qalqon_oldi	207,547,375,559	l	1	Recurrent laryngeal nerve	NIS11
+t24_qalqon_oldi	239,133,330,145	l	1	Pharyngeal veins	NIS11
+t24_qalqonsimon	93,130,210,142	l	1	Thyroid cartilage	NIS11
+t24_qalqonsimon	83,187,232,221	l	3	Median\ncricothyroid\nligament	NIS11
+t24_qalqonsimon	79,309,221,321	l	1	Thyroid gland, lobe	NIS11
+t24_qalqonsimon	80,394,210,418	l	2	Isthmus of\nthyroid gland	NIS11
+t24_qalqonsimon	442,404,497,427	l	1	Trachea	NIS11
+t24_qalqonsimon	962,144,1034,177	l	2	Superior\nthyroid artery	NIS11
+t24_qalqonsimon	928,279,1044,291	l	1	Inferior parathyroid gland	NIS10
+t24_umumiy	958,804,1022,814	l	1	Ovary	NIS11
+t24_umumiy	556,1076,653,1089	l	1	Testis	NIS11
+t25_chap	195,234,368,247	l	1	Left superior pulmonary vein	NIS12
+t25_chap	265,297,358,310	l	1	Left auricle	NIS12
+t25_chap	109,350,226,363	l	1	Great cardiac vein	NIS12
+t25_chap	117,409,240,422	l	1	Left fibrous ring	NIS12
+t25_chap	42,460,246,472	l	1	Left atrioventricular orifice	NIS12
+t25_chap	48,538,238,552	l	1	Anterior papillary muscle	NIS12
+t25_chap	45,612,236,635	l	2	Serous pericardium,\nvisceral layer; epicardium	NIS12
+t25_chap	111,710,204,725	l	1	Left ventricle	NIS12
+t25_chap	55,786,286,807	l	2	Interventricular septum,\nmuscular part	NIS12
+t25_chap	190,868,276,882	l	1	Apex of heart	NVS11
+t25_chap	813,232,1014,260	l	2	Right superior pulmonary vein;\nright inferior pulmonary vein	NIZS11
+t25_chap	812,321,1013,341	l	2	Left atrium,\ninteratrial septum	NIZS11
+t25_chap	824,409,1016,431	l	2	Valve of foramen ovale;\nfalx septi	NIZS11
+t25_chap	858,494,1034,509	l	1	Left inferior pulmonary vein	NIS12
+t25_chap	829,554,950,567	l	1	Left fibrous ring	NIS12
+t25_chap	752,622,1035,651	l	2	Left atrioventricular valve; mitral\nvalve, posterior cusp	NIZS11
+t25_chap	737,712,870,724	l	1	Chordae tendineae	NIS12
+t25_chap	703,768,877,780	l	1	Posterior papillary muscle	NIS12
+t25_chap	669,828,721,840	l	1	Myocardium	NIS12
+t25_chap	591,884,725,898	l	1	Trabeculae carneae	NIS12
+t15_tilosti_yon	931,814,976,827	l	1	Trachea	NIS11
+t23_follikul	102,994,197,1005	l	1	Corpus luteum	NIS11

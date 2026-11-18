@@ -160,6 +160,7 @@ for p_ in sorted(glob.glob("man/*.tsv")):
         if "G" in opt: mb["ring"] = True
         if "W" in opt: mb["strict"] = True
         if "F" in opt: mb["full"] = True
+        if "Z" in opt: mb["fullt"] = True
         if "Q" in opt: mb["soft"] = True
         if "D" in opt: mb["dl"] = int(re.findall(r"D(\d+)", opt)[0])
         if "#" in opt: mb["bgc"] = "#" + opt.split("#")[1][:6]
@@ -519,7 +520,7 @@ for nm in names:
         lh = int(s * 1.12); th = nl * lh + 2
         cy = ((band[0] + band[1]) / 2 if band else (y0 + y1) / 2) + 0.5
         ty0 = int(round(cy - th / 2 - s * 0.12)); ty1 = ty0 + th
-        if b.get("manual") and b.get("forced") and nl >= 3: ty0, ty1 = min(ty0, y0), max(ty1, y1)
+        if b.get("manual") and b.get("forced") and (nl >= 3 or (b.get("fullt") and nl >= 2)): ty0, ty1 = min(ty0, y0), max(ty1, y1)
         ex0, ex1 = min(x0, tx0) - 2, max(x1, tx1, XN1) + 2
         for q in BUBS:
             if q[3] < y0 - 3 or q[1] > y1 + 3: continue
@@ -572,6 +573,10 @@ for nm in names:
         if not any(l_[0] < tx0 for l_ in LN):
             L_ = leader_at(range(x0 - 1, x0 - 15, -1), -1)
             if L_ and tx0 - L_[0] > 4: LN.append([L_[0], L_[1], tx0 - 3, L_[1], L_[2], L_[3]])
+        def _navy(c):
+            r_, g_, b_ = int(c[1:3], 16), int(c[3:5], 16), int(c[5:7], 16)
+            return b_ - r_ >= 15
+        LN = [l_ for l_ in LN if not _navy(l_[5])]
         if b.get("navy"):
             SO = b.get("soft")
             items.append({"_m": 1, "box": list(b["uz"]) if SO else [b["uz"][0] - 5, b["uz"][1], b["uz"][2] + 3, b["uz"][3]], "erase": "navy", "nb": 24 if b.get("strict") else (8 if SO else 10), "nl": 0 if b.get("strict") else (165 if SO else 150), "grow": 1, "bg": "local", "ex": 0 if SO else 3, "tbox": [tx0_, int(round(cy - th / 2 - s * 0.12)), tx1_, int(round(cy - th / 2 - s * 0.12)) + th], "t": en, "f": FONT, "s": s, "a": al, "pad": 1})

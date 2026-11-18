@@ -8,7 +8,7 @@ Bandning ixtiyoriy maydonlari:
   "s":  shrift o'lchami px (bo'lmasa qutiga sig'adigan eng kattasi tanlanadi)
   "smax": avtomatik tanlanadigan o'lchamning yuqori chegarasi px (asl yozuv o'lchamidan oshmasin)
   "a":  l | c | r — gorizontal tekislash (standart: c)
-  "bg": "#rrggbb" | "ring" (quti cheti medianasi) | "local" (qutidagi yorug' piksellar medianasi) | "none" (standart: qutidagi eng ko'p rang — fon)
+  "bg": "#rrggbb" | "ring" (quti cheti medianasi) | "hgrad" (chap-o'ng chetdan qatorma-qator) | "local" (qutidagi yorug' piksellar medianasi) | "none" (standart: qutidagi eng ko'p rang — fon)
   "c":  matn rangi (standart: qutidagi eng to'q piksellar rangi)
   "rot": 90 | 270 — vertikal yozuv (pastdan yuqoriga = 90)
   "pad": ichki chekinish px (standart 1)
@@ -153,6 +153,22 @@ def grad_fill(im, box, m=3):
             px[x, y] = tuple(int((h[i] + v[i]) / 2) for i in range(3))
 
 
+def hgrad_fill(im, box, m=3):
+    """Har bir qatorni chap va o'ng chetdagi (yozuvsiz) ustunlar orasida chiziqli to'ldirish."""
+    x0, y0, x1, y1 = box
+    W, H = im.size
+    L, R = max(0, x0 - m), min(W - 1, x1 + m)
+    sp = im.copy().load()
+    px = im.load()
+    for y in range(y0, y1 + 1):
+        ys = range(max(0, y - 2), min(H, y + 3))
+        lc = [sum(sp[L, k][i] for k in ys) / len(ys) for i in range(3)]
+        rc = [sum(sp[R, k][i] for k in ys) / len(ys) for i in range(3)]
+        for x in range(x0, x1 + 1):
+            f = (x - L) / max(1, R - L)
+            px[x, y] = tuple(int(lc[i] * (1 - f) + rc[i] * f) for i in range(3))
+
+
 def put_angled(im, it):
     """qiya yozuv: "cbox": [markaz_x, markaz_y, eni, bo'yi], "ang": soat strelkasiga teskari burchak (gradus)."""
     import math
@@ -277,6 +293,9 @@ def put(im, it):
         fill = None
     elif bg == "grad":   # chetlardan chiziqli interpolyatsiya (gradiyentli fon uchun)
         grad_fill(im, (x0, y0, x1, y1))
+        fill = None
+    elif bg == "hgrad":   # faqat chap-o'ng chetlardan, qatorma-qator (rasm chetidagi kesilgan yozuv uchun)
+        hgrad_fill(im, (x0, y0, x1, y1))
         fill = None
     elif bg == "none":
         fill = None
