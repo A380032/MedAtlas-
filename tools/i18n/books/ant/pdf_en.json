@@ -1,0 +1,141 @@
+{
+  "lang": "en",
+  "out": "data/en/books/ant.pdf",
+  "pdf_title": "Human Anatomy: Complete Study Manual",
+  "author": "Asadbek Axmatkulov",
+  "running": "Human Anatomy — Complete Study Manual",
+  "cover": {
+    "image": "tools/i18n/books/ant/pdf_cover.jpg",
+    "top": [
+      "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+      "TASHKENT STATE MEDICAL UNIVERSITY",
+      "Department of Human Anatomy"
+    ],
+    "title": "HUMAN ANATOMY",
+    "part": "",
+    "sub": "complete study manual",
+    "kind": "A study manual for practical classes",
+    "by_label": "Compiled by:",
+    "by": "Asadbek Axmatkulov",
+    "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+    "city": "Tashkent — 2026"
+  },
+  "imprint": [
+    "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+    "**Human Anatomy: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+    "",
+    "This manual covers, in a single system, the 30 topics of the 1st–2nd-semester practical classes in the calendar-thematic plan of the subject “Human Anatomy” for the Faculty of General Medicine, and consists of two parts. Part I (topics 1–15) covers the locomotor system — osteology (general osteology, bones of the trunk, upper limb, lower limb and skull), arthrology (joints and connections of bones) and myology (muscles of the trunk, upper limb, lower limb, head and neck, fasciae and topography). Part II (topics 16–30) covers the internal organs (digestive, respiratory, urinary and genital organs, peritoneum), the endocrine glands, the heart and blood vessels, the lymphatic system and the organs of the immune system.",
+    "Each topic describes the structure, topography, blood supply, age-related features and clinical significance of the organs; it includes colored boxes (Remember, Clinical significance, Memory aid, Caution), tables, atlas figures, practical skill algorithms, review questions, 15 test questions, 3 clinical cases and a quick review table. The answers to the tests are given at the end of the book.",
+    "The manual is based on A. Ahmedov et al. (Anatomy, vols. I–II), Sh.J. Teshaev et al. (Human Anatomy. Atlas, vols. 1–2), R.D. Sinelnikov (Atlas of Human Anatomy), F. Bahodirov (Human Anatomy) and other sources. All figures were taken from these textbooks and atlases, with the source given under each.",
+    "The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic) on the basis of the textbooks listed. The compiler selected the material, defined its structure and checked it. Before applying the clinical information in practice, it is recommended to compare it with the main textbooks.",
+    "The manual is intended for students of the general medicine, pediatrics and fundamental medicine faculties of higher medical education institutions."
+  ],
+  "toc_title": "CONTENTS",
+  "preface_title": "Preface",
+  "preface": [
+    {
+      "type": "p",
+      "text": "Human anatomy is the alphabet of medicine. Whatever a physician does — examining a patient, giving an injection, reading a radiograph or operating — they first know the structure of the body: where an organ lies, which artery brings blood to it, which nerve passes beside it, and how it differs in a child’s body from that of an adult. Anatomy should be learned not by memorizing but by seeing, palpating and visualizing — that is why working with specimens and an atlas in the practical class is no less important than the textbook."
+    },
+    {
+      "type": "p",
+      "text": "This manual covers the 30 practical-class topics of the 1st–2nd semesters in one integrated system and consists of two parts:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Part I** — the locomotor system (topics 1–15): general osteology and anatomical terms; bones of the trunk, upper limb, lower limb and skull; topography of the skull; connections of bones and joints; general information on muscles; muscles, fasciae and topography of the trunk, upper limb, lower limb, head and neck.",
+        "**Part II** — the internal organs and the cardiovascular system (topics 16–30): digestive, respiratory, urinary and genital organs, peritoneum, endocrine glands, heart, arteries, veins, fetal circulation, the lymphatic system and the organs of the immune system."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "For each topic, not only the structure of the organ but also its **topography**, **blood supply** and **age-related features** are shown separately — the anatomical peculiarities of the newborn and the child are the basis for pediatrics and for later clinical subjects. Cross-references are given between topics: for example, the foramina and canals of bones later help to understand the course of vessels and nerves, and the relations of the peritoneum help in choosing surgical approaches."
+    },
+    {
+      "type": "p",
+      "text": "Each chapter has the same structure:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Learning objectives** — what you should know and be able to do after this class.",
+        "**Theory** — the main concepts of the topic, with tables and figures taken from atlases. Four kinds of colored boxes appear in the text: **Remember** (key information that must be memorized), **Clinical significance** (links anatomy with the clinic), **Memory aid** (a mnemonic), **Caution** (a frequent mistake or an important warning).",
+        "**Practical skill** — a step-by-step algorithm of the procedures performed on a specimen, a skeleton or a living person.",
+        "**Review questions**, test questions (15 in each chapter) and clinical cases (with answers).",
+        "**Quick review table** — for revising at a glance before the exam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The figures were taken from the main textbooks and atlases, with the source shown under each. In this edition the labels of the atlas figures are given in Latin, English and Russian — this helps to master the international anatomical nomenclature (the Latin terms)."
+    },
+    {
+      "type": "p",
+      "text": "The manual does not replace the main textbooks, but it makes preparation for the practical class easier and brings scattered information into one system. The clinical examples in the text are given to show the practical importance of anatomy: decisions on diagnosis and treatment are made on the basis of current protocols."
+    },
+    {
+      "type": "p",
+      "text": "I wish you success."
+    },
+    {
+      "type": "p",
+      "text": "**The compiler**"
+    }
+  ],
+  "parts": [
+    {
+      "before": 1,
+      "title": "PART I",
+      "sub": "THE LOCOMOTOR SYSTEM"
+    },
+    {
+      "before": 16,
+      "title": "PART II",
+      "sub": "THE INTERNAL ORGANS AND THE CARDIOVASCULAR SYSTEM"
+    }
+  ],
+  "numbered": true,
+  "skills_inline": [],
+  "toc_indent": true,
+  "fig_per_row": 2,
+  "labels": {
+    "topic": "TOPIC {n}",
+    "goals": "Learning objectives",
+    "goals_intro": "In this class the student will master the following:",
+    "skills": "Practical skills",
+    "questions": "Review questions",
+    "quiz": "Test questions",
+    "cases": "Clinical cases",
+    "ask": "Question:",
+    "answer": "Answer:",
+    "review": "Quick review",
+    "review_table": "Table {n}.{m}.",
+    "review_caption": "Topic {n} — key concepts",
+    "q": "Concept",
+    "a": "Essence",
+    "answers": "Answers to the test questions",
+    "answers_row": "Topic {n}:",
+    "refs": "References"
+  },
+  "box": {
+    "eslab": "REMEMBER",
+    "klinik": "CLINICAL SIGNIFICANCE",
+    "yodlash": "MEMORY AID",
+    "diqqat": "CAUTION"
+  },
+  "refs": [
+    "Ahmedov A.G. et al. Anatomiya [Anatomy]. Vol. I (Locomotor system, internal organs). — Tashkent, 2018.",
+    "Ahmedov A.G. et al. Anatomiya [Anatomy]. Vol. II (Cardiovascular system, immune system, nervous system). — Tashkent.",
+    "Teshaev Sh.J., Xaribova E.A. et al. Odam anatomiyasi. Atlas [Human Anatomy. Atlas]. Vol. 1. — Tashkent.",
+    "Teshaev Sh.J., Xaribova E.A. Odam anatomiyasi. Atlas [Human Anatomy. Atlas]. Vol. 2. — Tashkent.",
+    "Sinelnikov R.D. Odam anatomiyasi atlasi [Atlas of Human Anatomy]. Vol. I (Uzbek edition). — Tashkent.",
+    "Bahodirov F.N. Odam anatomiyasi [Human Anatomy]. — Tashkent.",
+    "Ministry of Health of the Republic of Uzbekistan. Calendar-thematic plan of the subject Human Anatomy (2024–2025 academic year). Faculty of General Medicine, 1st year, 1st–2nd semesters."
+  ],
+  "refs_note": "**Sources of figures.** All figures in the manual were taken from sources [1]–[5]; the source is shown under each figure. In the atlas figures, the Uzbek labels of the original edition were translated into English; the Latin and Russian labels were kept as in the original.",
+  "img_maxpx": 1000,
+  "img_quality": 60
+}
