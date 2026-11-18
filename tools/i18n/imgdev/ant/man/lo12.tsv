@@ -208,3 +208,84 @@ t25_chap	669,828,721,840	l	1	Myocardium	NIS12
 t25_chap	591,884,725,898	l	1	Trabeculae carneae	NIS12
 t15_tilosti_yon	931,814,976,827	l	1	Trachea	NIS11
 t23_follikul	102,994,197,1005	l	1	Corpus luteum	NIS11
+t25_joylashuv	128,169,306,181	l	1	Right common carotid artery	NIS11
+t25_joylashuv	66,536,140,546	l	1	Right lung	NIS11
+t25_joylashuv	76,1057,234,1069	l	1	Fibrous pericardium	NIS11
+t25_joylashuv	76,1070,110,1083	l	0	@ERASE	I
+t25_joylashuv	832,323,986,337	l	1	Left subclavian vein	NIS11
+t25_joylashuv	1008,882,1068,893	l	1	Diaphragm	NIS11
+t25_joylashuv	541,1029,829,1043	l	1	Ascending part of aorta; ascending aorta	NIS11
+t25_joylashuv	770,1028,832,1044	l	0	@ERASE	F
+t25_doiralar	854,874,1006,888	l	1	Hepatic portal vein	NIS11
+t25_doiralar	828,1089,990,1100	l	1	Digestive system	NIS11
+t25_doiralar	880,951,1055,966	l	1	Portal venous circulation	NIS11
+t25_doiralar	880,968,962,982	l	0	@ERASE	F
+t25_doiralar	828,1101,880,1113	l	0	@ERASE	F
+t25_doiralar	966,872,1008,889	l	0	@ERASE	F
+t25_doiralar	940,1085,1000,1101	l	0	@ERASE	F
+t25_doiralar	1030,950,1058,967	l	0	@ERASE	F
+t25_doiralar	174,687,282,697	l	1	Inferior vena cava	NIS11
+t25_doiralar	330,1128,388,1140	l	0	@ERASE	F
+t25_kesma	668,80,822,94	l	1	Openings of right pulmonary veins	NIS11
+t25_kesma	160,167,262,181	l	1	Fossa ovalis	NIS11
+t25_kesma	54,948,204,961	l	1	Right ventricle, myocardium	NIS11
+t25_oldi	155,25,332,40	l	1	Left common carotid artery	NIS12
+t25_oldi	795,99,958,112	l	1	Left subclavian artery	NS12
+t25_oldi	897,267,1027,282	l	1	Left pulmonary artery	NS10
+t25_oldi	928,355,1008,364	l	1	Pulmonary trunk	NIS10
+t25_oldi	829,180,928,191	l	1	Ligamentum arteriosum	NIS11
+t25_oldi	46,835,184,849	l	1	Small cardiac vein	NIS12
+t25_oldi	80,1081,412,1098	l	1	Serous pericardium, visceral layer; epicardium	NIS12
+t25_oldi	108,1164,382,1181	l	1	Serous pericardium, parietal layer	NIS12
+t25_oldi	995,766,1022,778	l	0	@ERASE	F
+t25_ong_bolmacha	125,247,232,259	l	1	Superior vena cava	NIS11
+t25_ong_bolmacha	88,319,212,331	l	1	Right pulmonary artery	NIS11
+t25_ong_bolmacha	812,735,1024,786	l	4	Right atrioventricular orifice;\nright atrioventricular valve;\ntricuspid valve	NIS11
+t25_ong_bolmacha	795,201,825,208	l	0	@ERASE	F
+t25_ong_bolmacha	945,538,965,545	l	0	@ERASE	F
+t25_ong_qorincha	82,446,247,459	l	1	Supraventricular crest	NIS11
+t25_ong_qorincha	64,643,274,683	l	3	Right atrioventricular valve;\ntricuspid valve,\nanterior cusp	NIZS11
+t25_ong_qorincha	148,829,279,841	l	1	Chordae tendineae	NIS11
+t25_ong_qorincha	685,273,774,286	l	1	Ligamentum arteriosum	NIS10
+t25_proyeksiya	150,485,270,493	l	0	@ERASE	VW
+t25_proyeksiya	200,474,267,491	l	0	@ERASE	F
+t25_qopqoqlar	311,1216,460,1242	l	2	Coronary\nsinus	NIZS13
+t25_toj_orqa	30,52,112,64	l	1	Pulmonary veins	NIS11
+t25_toj_orqa	30,118,142,131	l	1	Circumflex branch	NIS11
+t25_toj_orqa	27,206,170,220	l	1	Great cardiac vein	NIS11
+t25_toj_orqa	30,291,222,305	l	1	Posterior vein of left ventricle	NIS11
+t25_toj_orqa	144,199,151,205	l	0	@ERASE	F
+t25_toj_orqa	158,108,168,116	l	0	@ERASE	F
+t25_toj_orqa	178,486,195,493	l	0	@ERASE	F
+t25_toj_orqa	727,71,836,83	l	1	Superior vena cava	NIS11
+t26_asos	84,926,221,952	l	2	Anterior inferior\ncerebellar artery	NIS11
+t26_asos	84,1009,221,1035	l	2	Anterior spinal\nartery	NIS11
+t26_asos	87,1106,198,1119	l	1	Vertebral artery	NIS12
+t26_asos	652,217,1040,241	l	2	Middle cerebral artery, sphenoid part; horizontal part;\nsegment M1	NIZS11
+t26_asos	891,471,1036,535	l	4	Middle cerebral\nartery, superior terminal\nbranches; superior cortical\nbranches; segment M2	NIZS11
+t26_asos	872,1083,1032,1108	l	2	Medial occipital artery;\nsegment P4	NIZS11
+t26_asos	988,955,996,962	l	0	@ERASE	F
+t26_asos	1000,1078,1030,1086	l	0	@ERASE	F
+t26_ichki_uyqu	105,857,228,882	l	2	Internal carotid\nartery, cavernous part	NIZS11
+t26_ichki_uyqu	105,1004,228,1029	l	2	Internal carotid\nartery, petrous part	NIZS11
+t26_ichki_uyqu	105,1137,228,1160	l	2	Internal carotid\nartery, cervical part	NIZS11
+t26_koz	268,71,432,84	l	1	Anterior ethmoidal artery	NWS12
+t26_koz	166,1013,258,1026	l	1	Optic nerve [II]	NWS12
+t26_miya_medial	60,8,215,27	l	2	Choroid plexus of\nthird ventricle	NIZS11
+t26_miya_medial	62,362,200,389	l	2	Corpus callosum,\nsplenium	NIZS11
+t26_miya_medial	448,152,622,166	l	1	Corpus callosum, trunk	NIS11
+t26_miya_medial	786,16,888,27	l	1	Hypothalamus	NIS11
+t26_miya_medial	548,104,602,114	l	0	@ERASE	F
+t26_miya_medial	63,937,330,962	l	2	Cerebellar hemispheres [H II–H X];\ntonsil of cerebellum	NIZS11
+t26_miya_medial	93,1023,400,1035	l	1	Aqueduct of midbrain; cerebral aqueduct	NIS11
+t26_miya_medial	915,455,1011,466	l	1	Anterior commissure	NIS11
+t26_miya_medial	917,581,1025,604	l	2	Anterior communicating\nartery	NIZS11
+t26_miya_medial	814,719,930,729	l	1	Internal carotid artery	NIS11
+t26_miya_medial	974,809,1062,820	l	1	Pituitary gland	NIS11
+t26_miya_medial	551,1103,601,1114	l	1	Pons	NIS11
+t26_miya_yon	83,471,180,494	l	2	Artery of\nangular gyrus	NIZS11
+t26_tashqi_tarmoq	98,601,217,614	l	1	Mylohyoid branch	NIS11
+t26_tashqi_tarmoq	220,347,262,354	l	0	@ERASE	F
+t26_tashqi_tarmoq	871,416,995,428	l	1	Supratrochlear artery	NIS11
+t26_tashqi_tarmoq	980,496,1038,505	l	0	@ERASE	F
+t26_tashqi_tarmoq	740,1123,944,1135	l	1	Thyrohyoid membrane	NIS11

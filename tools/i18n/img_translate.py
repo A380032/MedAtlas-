@@ -10,6 +10,7 @@ Bandning ixtiyoriy maydonlari:
   "a":  l | c | r — gorizontal tekislash (standart: c)
   "bg": "#rrggbb" | "ring" (quti cheti medianasi) | "hgrad" (chap-o'ng chetdan qatorma-qator) | "local" (qutidagi yorug' piksellar medianasi) | "none" (standart: qutidagi eng ko'p rang — fon)
   "c":  matn rangi (standart: qutidagi eng to'q piksellar rangi)
+  "restore": [[x0,y0,x1,y1,(nb)], ...] — o'chirishdan keyin asl rasmdagi navy bo'lmagan to'q piksellarni qaytarish
   "rot": 90 | 270 — vertikal yozuv (pastdan yuqoriga = 90)
   "pad": ichki chekinish px (standart 1)
   "keep": ["#rrggbb", ...] — shu ranglarga yaqin piksellar saqlanadi (yozuv ustidan o'tgan grafik chizig'i)
@@ -180,12 +181,15 @@ def put_angled(im, it):
     fill = hexrgb(it["bg"]) if it.get("bg") else mode_color(im, bb)
     col = hexrgb(it["c"]) if it.get("c") else ink_color(im, bb)
     ImageDraw.Draw(im).polygon(pts, fill=fill)
-    layer = Image.new("RGBA", (int(w), int(h)), (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
+    d = ImageDraw.Draw(Image.new("RGBA", (int(w), int(h)), (0, 0, 0, 0)))
     font, lines, lh = layout(d, it["t"], it.get("f", "serif"), w - 2, h - 2, it.get("s"))
-    y = (h - len(lines) * lh) / 2 + (lh - font.size) * 0.3
+    ext = int(font.size * 0.4) + 2   # pastki/tepa zaxira: descender qirqilmasin
+    layer = Image.new("RGBA", (int(w), int(h) + 2 * ext), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    y = ext + (h - len(lines) * lh) / 2 + (lh - font.size) * 0.3 + it.get("dy", 0)
     for l in lines:
-        d.text(((w - d.textlength(l, font=font)) / 2, y), l, font=font, fill=col + (255,))
+        tx = 2 if it.get("a") == "l" else (w - d.textlength(l, font=font)) / 2
+        d.text((tx, y), l, font=font, fill=col + (255,))
         y += lh
     layer = layer.rotate(it["ang"], expand=True, resample=Image.BICUBIC)
     im.paste(layer, (int(cx - layer.size[0] / 2), int(cy - layer.size[1] / 2)), layer)
@@ -437,8 +441,24 @@ def main():
         if only and name not in only:
             continue
         im = Image.open(f"{ROOT}/data/img/{sid}/{name}").convert("RGB")
+        src = im.copy()
         for it in sp["items"]:
             put(im, it)
+        for it in sp["items"]:   # "restore": [[x0,y0,x1,y1,(nb)], ...] — asl rasmdagi navy bo'lmagan to'q piksellarni (lotin/rus yozuv) qaytarish
+            for r in it.get("restore", []):
+                x0, y0, x1, y1 = r[:4]
+                nb = r[4] if len(r) > 4 else 10
+                c = src.crop((x0, y0, x1 + 1, y1 + 1))
+                cp = c.load()
+                m = Image.new("L", c.size, 0)
+                mp = m.load()
+                for yy in range(c.size[1]):
+                    for xx in range(c.size[0]):
+                        rr, gg, bb = cp[xx, yy]
+                        lu = 0.299 * rr + 0.587 * gg + 0.114 * bb
+                        if lu < 175 and bb - rr < nb:
+                            mp[xx, yy] = 255
+                im.paste(c, (x0, y0), m)
         dr = ImageDraw.Draw(im)
         for it in sp["items"]:   # "ln": [[x0, y0, x1, y1, qalinlik, "#rrggbb"], ...] — tiklangan ko'rsatkich chiziqlari
             for x0, y0, x1, y1, w, c in it.get("ln", []):
