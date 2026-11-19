@@ -1,0 +1,124 @@
+{
+ "id": "13",
+ "no": 13,
+ "title": "Aminokislotalar. Peptidlar va oqsillar. Tuzilishi, xossalari",
+ "goals": [
+  {"type": "p", "text": "Talabaga biopolimerlar va bioregulyatorlar tushunchasi, α-aminokislotalarning tuzilishi, tasnifi, fizik-kimyoviy xossalari va biologik vazifalari, peptid bog‘ va biologik faol peptidlar, oqsillarning birlamchi va fazoviy tuzilishi, tasnifi, vazifalari, molekulyar massasi va kolloid xossalarini o‘rgatish hamda aminokislotalarning sifat reaksiyalari va biuret usulida qon zardobidagi oqsilni aniqlash ko‘nikmasini hosil qilish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["proteinogen aminokislotalarning tuzilishi va radikal bo‘yicha tasnifini, almashinmaydigan aminokislotalarni;", "aminokislotalarning amfoterligini, bipolyar ion va izoelektrik nuqtani;", "aminokislotalarning kimyoviy reaksiyalari va biologik vazifalarini;", "peptid bog‘ tuzilishi va biologik faol peptidlarni;", "oqsillarning birlamchi, ikkilamchi, uchlamchi va to‘rtlamchi tuzilishini;", "oqsillarning tasnifi, vazifalari, molekulyar massasi va kolloid xossalarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["aminokislotalar va oqsillarning sifat reaksiyalarini bajarish va natijani tushuntirish;", "biuret usulida qon zardobidagi umumiy oqsilni aniqlash va baholash;", "oqsillarni cho‘ktirish (tuzlash, denaturatsiya) tajribalarini bajarish;", "aminokislotaning izoelektrik nuqtasini hisoblash va berilgan pH dagi zaryadini aniqlash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Qon zardobida **umumiy oqsil 65–85 g/l**, albumin 35–50 g/l. **Biuret reaksiyasi** kamida ikkita peptid bog‘ini aniqlaydi — shuning uchun erkin aminokislotalar va dipeptidlar bu reaksiyani bermaydi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Kattalar uchun 8 ta almashinmaydigan aminokislota: **“Vali Leyla Izi Trening Metodi Lizing Fenomenini Triptladi”** — Valin, Leytsin, Izoleytsin, Treonin, Metionin, Lizin, Fenilalanin, Triptofan; bolalar uchun yana gistidin."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Oqsil **izoelektrik nuqtasida** (pI) umumiy zaryadi nolga teng, eruvchanligi eng past va elektr maydonida harakatlanmaydi. Oqsillarni cho‘ktirish va elektroforezda ajratish aynan shu xossaga asoslanadi."}
+ ],
+ "sections": [
+  {"title": "1. Biopolimerlar va bioregulyatorlar haqida tushuncha", "blocks": [
+   {"type": "p", "text": "**Biopolimerlar** — monomerlardan tuzilgan yuqori molekulyar tabiiy birikmalar: **oqsillar** (monomeri — α-aminokislotalar), **nuklein kislotalar** (nukleotidlar) va **polisaxaridlar** (monosaxaridlar). **Bioregulyatorlar** — kichik miqdorda hujayra va a’zolar faoliyatini boshqaradigan moddalar: gormonlar, neyromediatorlar, vitaminlar, regulyator peptidlar, prostaglandinlar."}
+  ]},
+  {"title": "2. α-Aminokislotalarning tuzilishi va tasnifi", "blocks": [
+   {"type": "p", "text": "Oqsillar tarkibiga 20 ta **α-aminokislota** kiradi; ularning umumiy formulasi H~2~N−CH(R)−COOH. Glitsindan (R = H) boshqa barchasida α-uglerod xiral, tabiiy aminokislotalar — **L-qator**. Ular bir-biridan faqat yon radikal (R) bilan farq qiladi."},
+   {"type": "table", "title": "Jadval 13.1. Aminokislotalarning radikal qutbliligi bo‘yicha tasnifi", "head": ["Guruh", "Aminokislotalar"], "rows": [["Qutbsiz (gidrofob)", "glitsin, alanin, valin, leytsin, izoleytsin, prolin, metionin, fenilalanin, triptofan"], ["Qutbli, zaryadsiz", "serin, treonin, sistein, tirozin, asparagin, glutamin"], ["Manfiy zaryadli (kislotali)", "asparagin kislota, glutamin kislota"], ["Musbat zaryadli (asosli)", "lizin, arginin, gistidin"]]},
+   {"type": "p", "text": "Organizmda sintezlanmaydigan va ovqat bilan kelishi shart bo‘lgan aminokislotalar **almashinmaydigan** deyiladi: kattalarda — valin, leytsin, izoleytsin, treonin, metionin, lizin, fenilalanin, triptofan; o‘sayotgan organizmda — yana gistidin (va qisman arginin)."}
+  ]},
+  {"title": "3. Aminokislotalarning fizik va kimyoviy xossalari", "blocks": [
+   {"type": "p", "text": "Aminokislotalar **amfoter**: −COOH kislota, −NH~2~ asos xossasini beradi. Eritmada va kristallarda ular **bipolyar ion** (sviter-ion) holida bo‘ladi: ^+^H~3~N−CH(R)−COO^−^. Shuning uchun ular suvda yaxshi eriydi, yuqori haroratda suyuqlanadi (parchalanadi) va organik erituvchilarda yomon eriydi."},
+   {"type": "p", "text": "**Izoelektrik nuqta** (pI) — aminokislota umumiy zaryadi nolga teng bo‘lgan pH: neytral aminokislotalar uchun pI = (pK~1~ + pK~2~) / 2. Masalan, glitsinda pK~1~ (COOH) = 2,34, pK~2~ (NH~3~^+^) = 9,60, pI = 5,97. pH < pI da aminokislota musbat, pH > pI da manfiy zaryadli bo‘ladi."},
+   {"type": "img", "src": "data/img/tkm/t13_zaryad.webp", "w": 1400, "h": 800, "label": "Rasm 13.1", "caption": "Glitsinning umumiy zaryadi pH ga bog‘liqligi: kislotali muhitda kation, pI = 5,97 da bipolyar ion (zaryad 0), ishqoriy muhitda anion (Genderson–Gasselbax tenglamasi bo‘yicha hisoblangan)."},
+   {"type": "table", "title": "Jadval 13.2. Aminokislotalarning muhim reaksiyalari", "head": ["Reaksiya", "Mahsulot", "Ahamiyati"], "rows": [["Ningidrin bilan", "ko‘k-binafsha rang (Ruman binafshasi)", "aminokislotalarni aniqlash, xromatogrammalarni ochish"], ["Dekarboksillanish", "biogen aminlar (gistamin, serotonin, GAMK, dofamin)", "mediatorlar va gormonlar hosil bo‘lishi"], ["Transaminlanish", "yangi aminokislota va ketokislota", "ALT, AST fermentlari (B~6~ kofermenti)"], ["Oksidlovchi dezaminlanish", "ketokislota + NH~3~", "aminokislotalar katabolizmi (glutamatdegidrogenaza)"], ["Nitrit kislota bilan (Van-Slayk)", "gidroksikislota + N~2~↑", "aminoguruh miqdorini aniqlash"], ["Peptid bog‘ hosil bo‘lishi", "peptidlar, oqsillar", "oqsil biosintezi (ribosomada)"]]}
+  ]},
+  {"title": "4. Aminokislotalarning biologik vazifalari", "blocks": [
+   {"type": "list", "ordered": false, "items": ["Oqsillar va peptidlarning **qurilish bloklari**.", "**Neyromediatorlar:** glutamat (qo‘zg‘atuvchi), glitsin va GAMK (tormozlovchi).", "**Biologik faol moddalar o‘tmishdoshlari:** tirozin → katexolaminlar, tiroksin, melanin; triptofan → serotonin, melatonin, nikotin kislota; gistidin → gistamin; glitsin → gem, kreatin, glutation, o‘t kislotalari konyugatlari; arginin → azot oksidi (NO), mochevina.", "**Energiya manbai** (ochlikda glyukoneogenez orqali) va azot tashuvchilari (glutamin, alanin)."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Fenilketonuriya** — fenilalaningidroksilaza irsiy yetishmovchiligi: fenilalanin tirozinga aylanmaydi, qonda to‘planib, miya rivojlanishini buzadi (aqliy zaiflik). Chaqaloqlarda skrining o‘tkaziladi; davolash — fenilalanini cheklangan parhez. **Gomotsistinuriya, alkaptonuriya, “zarang shirasi” siydigi kasalligi** — boshqa aminoatsidopatiyalar."}]}
+  ]},
+  {"title": "5. Peptidlar. Biologik faol peptidlar", "blocks": [
+   {"type": "p", "text": "Bir aminokislotaning karboksil guruhi va ikkinchisining aminoguruhi orasida suv ajralib hosil bo‘lgan −CO−NH− bog‘ **peptid bog‘** deyiladi. U qisman qo‘sh bog‘ xarakteriga ega (C−N mezomeriyasi), shuning uchun **tekis** va atrofida aylanish cheklangan; peptidlarda asosan **trans**-konfiguratsiyada bo‘ladi. Peptid zanjirining boshida erkin aminoguruh (**N-uch**), oxirida erkin karboksil (**C-uch**) bo‘ladi."},
+   {"type": "img", "src": "data/img/tkm/t13_peptid.webp", "w": 1400, "h": 520, "label": "Rasm 13.2", "caption": "Dipeptid glitsilalanin (peptid bog‘ −CO−NH−) va tripeptid glutation (γ-glutamilsisteinilglitsin) (struktura formulalar, RDKit dasturida chizilgan)."},
+   {"type": "table", "title": "Jadval 13.3. Biologik faol peptidlar", "head": ["Peptid", "Aminokislotalar soni", "Vazifasi"], "rows": [["Glutation", "3 (γ-Glu-Cys-Gly)", "asosiy hujayra ichi antioksidanti, detoksikatsiya"], ["Karnozin", "2 (β-alanin + gistidin)", "mushaklarda bufer va antioksidant"], ["Enkefalinlar", "5", "endogen opioidlar — og‘riqni qoldiradi"], ["Oksitotsin, vazopressin", "9", "bachadon qisqarishi, laktatsiya; suv qayta so‘rilishi, bosim"], ["Angiotenzin II", "8", "tomir torayishi, arterial bosim oshishi"], ["Glyukagon", "29", "qon glyukozasini oshiradi"], ["Insulin", "51 (A-zanjir 21 + B-zanjir 30)", "qon glyukozasini pasaytiradi"]]}
+  ]},
+  {"title": "6. Oqsillarning birlamchi va fazoviy tuzilishi", "blocks": [
+   {"type": "table", "title": "Jadval 13.4. Oqsil tuzilishining darajalari", "head": ["Daraja", "Mohiyati", "Ushlab turuvchi bog‘lar"], "rows": [["Birlamchi", "polipeptid zanjirdagi aminokislotalar ketma-ketligi", "peptid (kovalent) bog‘lar"], ["Ikkilamchi", "zanjir qismlarining α-spiral (bir o‘ramda 3,6 qoldiq) yoki β-qatlam shaklida joylashuvi", "peptid guruhlari orasidagi vodorod bog‘lar"], ["Uchlamchi", "butun zanjirning fazoviy taxlanishi (globula yoki fibrilla)", "gidrofob ta’sirlar, ion, vodorod va disulfid bog‘lar"], ["To‘rtlamchi", "bir necha polipeptid zanjirining (protomerlar) birikishi", "kovalent bo‘lmagan bog‘lar"]]},
+   {"type": "p", "text": "Oqsilning fazoviy tuzilishi va demak vazifasi **birlamchi tuzilishi bilan belgilanadi** (K. Anfinsen tajribasi). To‘rtlamchi tuzilishga misol — **gemoglobin** (2 α- va 2 β-zanjir, α~2~β~2~): kislorod bog‘lashda protomerlar o‘zaro ta’sir qiladi (kooperativlik)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**O‘roqsimon hujayrali anemiya:** gemoglobin β-zanjirining 6-holatidagi **glutamat valin bilan almashgan** (HbS). Birlamchi tuzilishdagi bitta o‘zgarish deoksi-shaklda gidrofob “yopishqoq” nuqta hosil qilib, molekulalar polimerlanadi, eritrotsitlar o‘roq shakliga kiradi va kapillyarlarni berkitadi. **Prion kasalliklari**da esa oqsil birlamchi tuzilishi o‘zgarmay, ikkilamchi tuzilishi α-spiraldan β-qatlamga o‘tadi."}]}
+  ]},
+  {"title": "7. Oqsillarning tasnifi, vazifalari, molekulyar massasi va kolloid xossalari", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Oddiy oqsillar (proteinlar)** — faqat aminokislotalardan: albuminlar, globulinlar, gistonlar, protaminlar, skleroproteinlar (kollagen, keratin, elastin).", "**Murakkab oqsillar (proteidlar)** — oqsil + prostetik guruh: glikoproteinlar, lipoproteinlar, nukleoproteinlar, xromoproteinlar (gemoglobin), fosfoproteinlar (kazein), metalloproteinlar (ferritin).", "**Vazifalari:** katalitik (fermentlar), tuzilma (kollagen), transport (gemoglobin, albumin), himoya (immunoglobulinlar, fibrinogen), boshqaruv (insulin), qisqaruvchi (aktin, miozin), retseptor, zaxira (ferritin, kazein)."]},
+   {"type": "p", "text": "Oqsillarning molekulyar massasi ≈ 6 000 dan (insulin ≈ 5 800) bir necha millionlab daltongacha. U **ultrasentrifugalash** (sedimentatsiya konstantasi, Svedberg birligi), **gel-filtratsiya**, **elektroforez** (natriy dodetsilsulfat bilan) va mass-spektrometriya usullarida aniqlanadi."},
+   {"type": "p", "text": "Oqsil eritmalari — **liofil kolloidlar**: zarrachalari 1–100 nm, Tindal effekti beradi, membranadan o‘tmaydi, yuqori qovushqoq. Barqarorligining ikki omili — **zaryad** va **gidrat qobig‘i**. Ularni yo‘qotish oqsilni cho‘ktiradi: **tuzlash** (ammoniy sulfat — qaytar; globulinlar yarim to‘yinganda, albuminlar to‘liq to‘yinganda cho‘kadi), **izoelektrik nuqtada cho‘kish**, **denaturatsiya** (qizdirish, kuchli kislota va ishqorlar, og‘ir metall tuzlari, spirt — fazoviy tuzilish buziladi, ko‘pincha qaytmas)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Og‘ir metallar (simob, qo‘rg‘oshin, mis) tuzlari bilan zaharlanganda shoshilinch yordam sifatida **sut** yoki **tuxum oqi** ichiriladi: oqsillar metall ionlari bilan erimaydigan birikma hosil qilib, ularni ichakda bog‘laydi va so‘rilishini kamaytiradi; keyin me’da yuviladi."}]}
+  ]},
+  {"title": "8. Laboratoriya ishlari", "blocks": [
+   {"type": "h", "text": "Aminokislotalar va oqsillarning sifat reaksiyalari"},
+   {"type": "table", "title": "Jadval 13.5. Rangli sifat reaksiyalar", "head": ["Reaksiya", "Reaktiv", "Aniqlanadigan guruh", "Belgi"], "rows": [["Biuret", "NaOH + CuSO~4~", "peptid bog‘lari (≥ 2)", "binafsha rang"], ["Ningidrin", "ningidrin, qizdirish", "α-aminoguruh", "ko‘k-binafsha (prolin — sariq)"], ["Ksantoprotein", "kons. HNO~3~, so‘ng NH~3~", "aromatik halqa (Tyr, Trp, Phe)", "sariq → to‘q sariq"], ["Millon", "simob nitratlari", "fenol guruhi (Tyr)", "qizil cho‘kma"], ["Fol", "qo‘rg‘oshin atsetat + NaOH, qizdirish", "SH-guruh (Cys)", "qora cho‘kma PbS"], ["Adamkevich", "glioksil kislota + kons. H~2~SO~4~", "indol halqasi (Trp)", "binafsha halqa"], ["Sakaguchi", "α-naftol + NaOBr", "guanidin guruhi (Arg)", "qizil rang"]]},
+   {"type": "h", "text": "Biuret usulida qon zardobidagi umumiy oqsilni aniqlash"},
+   {"type": "p", "text": "**Usul asosi:** ishqoriy muhitda oqsilning peptid bog‘lari Cu^2+^ bilan binafsha rangli kompleks hosil qiladi; rang intensivligi (540 nm da optik zichlik) oqsil konsentratsiyasiga proporsional."},
+   {"type": "list", "ordered": true, "items": ["Uchta probirka tayyorlang: tajriba (0,1 ml zardob), standart (0,1 ml 70 g/l albumin eritmasi) va nazorat (0,1 ml 0,9 % NaCl).", "Har biriga 5 ml biuret reaktivi qo‘shing va aralashtiring.", "Xona haroratida 30 daqiqa qoldiring.", "Fotoelektrokolorimetrda yashil filtr bilan (540 nm) nazoratga nisbatan optik zichlikni o‘lchang.", "Hisoblang: C = (E~tajriba~ / E~standart~) · C~standart~ (g/l)."]},
+   {"type": "p", "text": "**Misol:** E~tajriba~ = 0,38, E~standart~ = 0,35. C = (0,38 / 0,35) · 70 = 76 g/l — me’yor (65–85 g/l)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Gipoproteinemiya** (< 65 g/l) — ochlik, jigar sirrozi (sintez kamayadi), nefrotik sindrom va kuyishda (yo‘qotish); onkotik bosim pasayib, **shishlar** paydo bo‘ladi. **Giperproteinemiya** (> 85 g/l) — suvsizlanish (nisbiy), mieloma kasalligi (paraprotein)."}]},
+   {"type": "h", "text": "Oqsillarning fizik-kimyoviy xossalarini o‘rganish"},
+   {"type": "list", "ordered": true, "items": ["**Tuzlash:** tuxum oqi eritmasiga teng hajm to‘yingan (NH~4~)~2~SO~4~ qo‘shing — globulinlar cho‘kadi; filtratga kristall tuz qo‘shib to‘yintiring — albuminlar cho‘kadi. Cho‘kmaga suv qo‘shilsa qayta eriydi (qaytar jarayon).", "**Qizdirib denaturatsiyalash:** oqsil eritmasini qaynating — loyqalanish va laxtalar; sovitilganda erimaydi.", "**Og‘ir metallar bilan cho‘ktirish:** oqsil eritmasiga CuSO~4~ yoki qo‘rg‘oshin atsetat tomizing — cho‘kma tushadi.", "**Kislotalar bilan:** kons. HNO~3~ ustiga oqsil eritmasini ehtiyotkorlik bilan qatlam qilib quying — chegarada oq halqa (Geller sinamasi — siydikda oqsilni aniqlash)."]}
+  ]},
+  {"title": "9. Sun’iy oqsil ozuqa moddalarini ishlab chiqarish va kelajakdagi imkoniyatlar (mustaqil ish)", "blocks": [
+   {"type": "p", "text": "Aholi soni o‘sishi va chorvachilikning ekologik yuki (yer, suv sarfi, issiqxona gazlari) **muqobil oqsil manbalarini** izlashni dolzarb qildi."},
+   {"type": "table", "title": "Jadval 13.6. Muqobil oqsil manbalari", "head": ["Manba", "Mohiyati", "Afzalliklari va muammolari"], "rows": [["Bir hujayrali oqsil (achitqi, bakteriyalar)", "mikroorganizmlarni metan, metanol yoki qishloq xo‘jaligi chiqindilarida o‘stirish", "tez o‘sadi, oqsil 50–80 %; ko‘p nuklein kislota (siydik kislota ortishi) — tozalash kerak"], ["Mikroyo‘sinlar (spirulina, xlorella)", "fotosintez qiluvchi suv o‘tlari", "oqsil ≈ 60–70 %, vitaminlarga boy; narxi, og‘ir metallar bilan ifloslanish xavfi"], ["Mikoprotein", "Fusarium venenatum zamburug‘i biomassasi", "kletchatkaga boy, xolesterinsiz; kam hollarda allergiya"], ["O‘simlik oqsillari", "soya, no‘xat, loviya oqsili izolyatlari", "arzon, keng tarqalgan; ayrim almashinmaydigan aminokislotalar kam (lizin, metionin)"], ["Hasharotlar oqsili", "chigirtka, un qurtlari", "samarali konversiya; madaniy qabul qilish, allergiya"], ["Hujayra madaniyatida o‘stirilgan go‘sht", "hayvon hujayralarini bioreaktorda ko‘paytirish", "hayvonsiz go‘sht; hozircha qimmat, ko‘lamini oshirish qiyin"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Oqsilning to‘laqonliligi uning **almashinmaydigan aminokislotalar** tarkibi va hazm bo‘lishi bilan baholanadi. Turli o‘simlik oqsillarini birga iste’mol qilish (masalan, don + dukkaklilar) bir-birining yetishmaydigan aminokislotalarini to‘ldiradi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: biuret usulida umumiy oqsilni aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Probirkalarni belgilang: tajriba, standart, nazorat.", "Har biriga 0,1 ml tegishli namunani mikropipetka bilan aniq o‘lchab soling.", "5 ml biuret reaktivi qo‘shib aralashtiring, 30 daqiqa kuting.", "Fotometrni nazorat eritma bilan nolga keltiring va 540 nm da E~tajriba~ va E~standart~ ni o‘lchang.", "C = (E~tajriba~ / E~standart~) · 70 g/l formulasi bo‘yicha hisoblang va me’yor (65–85 g/l) bilan solishtiring."]}]},
+  {"title": "Ko‘nikma: aminokislotaning izoelektrik nuqtasi va zaryadini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Aminokislotaning barcha ionlanuvchi guruhlari pK qiymatlarini yozing.", "Neytral aminokislota uchun pI = (pK~COOH~ + pK~NH3+~) / 2.", "Kislotali aminokislota uchun pI ikki kislotali pK ning o‘rtachasi, asosli uchun ikki asosli pK ning o‘rtachasi.", "Berilgan pH < pI bo‘lsa — umumiy zaryad musbat, pH > pI bo‘lsa — manfiy.", "Elektroforezda qaysi elektrod tomon harakatlanishini aniqlang."]}]}
+ ],
+ "questions": [
+  "Biopolimerlar va bioregulyatorlar nima?",
+  "Proteinogen aminokislotalarning umumiy tuzilishi va radikal bo‘yicha tasnifi qanday?",
+  "Almashinmaydigan aminokislotalarni sanang.",
+  "Aminokislotalar nima uchun amfoter? Bipolyar ion nima?",
+  "Izoelektrik nuqta qanday hisoblanadi? Glitsin misolida tushuntiring.",
+  "Aminokislotalarning dekarboksillanish va transaminlanish reaksiyalari ahamiyati qanday?",
+  "Aminokislotalarning biologik vazifalariga misollar keltiring.",
+  "Peptid bog‘ qanday tuzilgan va qanday xossalarga ega?",
+  "Biologik faol peptidlarni sanang.",
+  "Oqsil tuzilishining to‘rt darajasini tushuntiring.",
+  "O‘roqsimon hujayrali anemiyaning molekulyar sababi nima?",
+  "Oqsillar qanday tasniflanadi va qanday vazifalarni bajaradi?",
+  "Oqsil eritmalarining kolloid xossalari va cho‘ktirish usullarini tushuntiring."
+ ],
+ "quiz": [
+  {"q": "Oqsillar tarkibiga nechta proteinogen aminokislota kiradi?", "options": ["20", "10", "26", "8", "64"], "answer": 0},
+  {"q": "Qaysi aminokislota optik faol emas?", "options": ["Glitsin", "Alanin", "Serin", "Valin", "Lizin"], "answer": 0},
+  {"q": "Qaysi aminokislota almashinmaydigan?", "options": ["Triptofan", "Alanin", "Glitsin", "Serin", "Glutamin kislota"], "answer": 0},
+  {"q": "Qaysi aminokislota musbat zaryadli (asosli) radikalga ega?", "options": ["Lizin", "Asparagin kislota", "Leytsin", "Serin", "Fenilalanin"], "answer": 0},
+  {"q": "Glitsinning izoelektrik nuqtasi qancha (pK~1~ = 2,34; pK~2~ = 9,60)?", "options": ["5,97", "2,34", "9,60", "7,00", "11,94"], "answer": 0},
+  {"q": "Aminokislota pH < pI bo‘lgan muhitda qanday zaryadga ega?", "options": ["Musbat", "Manfiy", "Neytral", "Zaryadi o‘zgaruvchan", "Faqat manfiy"], "answer": 0},
+  {"q": "Gistidinning dekarboksillanishidan nima hosil bo‘ladi?", "options": ["Gistamin", "Serotonin", "GAMK", "Dofamin", "Putressin"], "answer": 0},
+  {"q": "Peptid bog‘ining xususiyati qaysi?", "options": ["Tekis, qisman qo‘sh bog‘ xarakterli", "Erkin aylanuvchi oddiy bog‘", "Ion bog‘i", "Vodorod bog‘i", "Disulfid bog‘i"], "answer": 0},
+  {"q": "Glutation qaysi aminokislotalardan tashkil topgan?", "options": ["Glutamat, sistein, glitsin", "Glutamin, serin, glitsin", "Glitsin, alanin, sistein", "Glutamat, metionin, glitsin", "Glitsin, prolin, gidroksiprolin"], "answer": 0},
+  {"q": "Oqsilning ikkilamchi tuzilishini qaysi bog‘lar ushlab turadi?", "options": ["Peptid guruhlari orasidagi vodorod bog‘lar", "Peptid bog‘lar", "Disulfid bog‘lar", "Ion bog‘lar", "Gidrofob ta’sirlar"], "answer": 0},
+  {"q": "Gemoglobin qanday tuzilish darajasiga ega oqsil?", "options": ["To‘rtlamchi", "Faqat birlamchi", "Faqat ikkilamchi", "Faqat uchlamchi", "Fibrillyar"], "answer": 0},
+  {"q": "O‘roqsimon hujayrali anemiyada β-zanjirning 6-holatida qanday almashinuv bor?", "options": ["Glutamat → valin", "Valin → glutamat", "Glitsin → alanin", "Lizin → glutamat", "Leytsin → prolin"], "answer": 0},
+  {"q": "Biuret reaksiyasi nimani aniqlaydi?", "options": ["Kamida ikkita peptid bog‘ini", "Erkin aminokislotalarni", "Aromatik halqani", "SH-guruhni", "Guanidin guruhini"], "answer": 0},
+  {"q": "Qon zardobidagi umumiy oqsilning me’yori qancha?", "options": ["65–85 g/l", "35–50 g/l", "100–120 g/l", "20–30 g/l", "5–10 g/l"], "answer": 0},
+  {"q": "Ksantoprotein reaksiyasi qaysi aminokislotalarni aniqlaydi?", "options": ["Aromatik (Tyr, Trp, Phe)", "Oltingugurtli (Cys, Met)", "Asosli (Lys, Arg)", "Kislotali (Asp, Glu)", "Faqat prolinni"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemorning qon zardobida biuret usulida oqsil aniqlandi. Standart albumin eritmasi (70 g/l) uchun E = 0,35, zardob uchun E = 0,24. Bemorda oyoqlar va yuzda shishlar, siydikda kuniga 6 g oqsil.", "ask": "Umumiy oqsil miqdorini hisoblang. Shishlar mexanizmini tushuntiring.", "answer": "C = (0,24 / 0,35) · 70 = 48 g/l — **gipoproteinemiya** (me’yor 65–85 g/l). Siydik bilan ko‘p oqsil (asosan albumin) yo‘qotilishi **nefrotik sindrom**ga xos. Albumin plazma onkotik bosimining asosiy qismini hosil qiladi; u kamayganda suv kapillyarlardan to‘qimalararo bo‘shliqqa o‘tadi — **onkotik shishlar** paydo bo‘ladi."},
+  {"title": "Masala 2", "text": "Glutamin kislotaning pK qiymatlari: α-COOH 2,19; γ-COOH 4,25; α-NH~3~^+^ 9,67. Elektroforez pH 7,0 da o‘tkazilmoqda.", "ask": "Glutamin kislotaning izoelektrik nuqtasini toping va pH 7,0 da qaysi elektrod tomon harakatlanishini ayting.", "answer": "Kislotali aminokislota uchun pI ikki kislotali guruh pK ining o‘rtachasi: pI = (2,19 + 4,25) / 2 = 3,22. pH 7,0 > pI, demak glutamat umumiy **manfiy** zaryadli (ikkala karboksil ionlangan, aminoguruh protonlangan: umumiy zaryad −1) va **anod (+)** tomon harakatlanadi."},
+  {"title": "Masala 3", "text": "Kimyoviy korxona ishchisi adashib simob(II) xlorid eritmasidan yutib yuborgan. Tez yordam kelguncha hamkasbi unga 3 ta xom tuxum oqini aralashtirib ichirdi.", "ask": "Bu chora qanday kimyoviy asosga ega?", "answer": "Simob kabi og‘ir metallar ionlari oqsillarning SH, karboksil va imidazol guruhlari bilan bog‘lanib, ularni **denaturatsiyalaydi** va erimaydigan metall-oqsil birikmalari (cho‘kma) hosil qiladi. Tuxum oqidagi oqsillar (ovalbumin) me’dada Hg^2+^ ionlarini bog‘lab, ularning shilliq qavat oqsillari bilan ta’sirini va so‘rilishini kamaytiradi. Keyin me’da yuviladi va maxsus antidotlar (unitiol, dimerkaprol) yuboriladi."}
+ ],
+ "cards": [
+  {"front": "α-Aminokislota", "back": "H~2~N−CH(R)−COOH; oqsillarda 20 ta, L-qator"},
+  {"front": "Almashinmaydigan aminokislotalar", "back": "Val, Leu, Ile, Thr, Met, Lys, Phe, Trp (bolalarda + His)"},
+  {"front": "Bipolyar ion", "back": "^+^H~3~N−CH(R)−COO^−^ — aminokislotaning eritmadagi shakli"},
+  {"front": "Izoelektrik nuqta", "back": "Umumiy zaryad nolga teng bo‘lgan pH; glitsinda 5,97"},
+  {"front": "Peptid bog‘", "back": "−CO−NH−; tekis, qisman qo‘sh bog‘ xarakterli, trans"},
+  {"front": "Glutation", "back": "γ-Glu-Cys-Gly; asosiy hujayra ichi antioksidanti"},
+  {"front": "Birlamchi tuzilish", "back": "Aminokislotalar ketma-ketligi; fazoviy tuzilishni belgilaydi"},
+  {"front": "α-Spiral", "back": "Ikkilamchi tuzilish; bir o‘ramda 3,6 qoldiq, vodorod bog‘lar"},
+  {"front": "Denaturatsiya", "back": "Fazoviy tuzilishning buzilishi (qizdirish, kislota, og‘ir metallar)"},
+  {"front": "Biuret reaksiyasi", "back": "Ishqoriy muhitda Cu^2+^ + peptid bog‘lar → binafsha kompleks"}
+ ]
+}

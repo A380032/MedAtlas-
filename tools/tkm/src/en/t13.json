@@ -1,0 +1,124 @@
+{
+ "id": "13",
+ "no": 13,
+ "title": "Amino acids. Peptides and proteins. Structure and properties",
+ "goals": [
+  {"type": "p", "text": "To teach the student the concept of biopolymers and bioregulators, the structure, classification, physicochemical properties and biological functions of α-amino acids, the peptide bond and biologically active peptides, the primary and spatial structure, classification, functions, molecular mass and colloidal properties of proteins, and to develop the skills of performing qualitative reactions of amino acids and determining serum protein by the biuret method."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the structure of proteinogenic amino acids, their classification by side chain, and the essential amino acids;", "the amphoteric nature of amino acids, the zwitterion and the isoelectric point;", "the chemical reactions and biological functions of amino acids;", "the structure of the peptide bond and biologically active peptides;", "the primary, secondary, tertiary and quaternary structure of proteins;", "the classification, functions, molecular mass and colloidal properties of proteins."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["perform the qualitative reactions of amino acids and proteins and explain the result;", "determine and interpret total serum protein by the biuret method;", "carry out protein precipitation experiments (salting out, denaturation);", "calculate the isoelectric point of an amino acid and determine its charge at a given pH."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "In blood serum **total protein is 65–85 g/L** and albumin 35–50 g/L. The **biuret reaction** detects at least two peptide bonds — that is why free amino acids and dipeptides do not give this reaction."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "The 8 essential amino acids for adults: **“Very Lazy Ice Tigers Meet Lions For Tea”** — Valine, Leucine, Isoleucine, Threonine, Methionine, Lysine, Phenylalanine, Tryptophan; histidine is also essential for children."},
+  {"kind": "diqqat", "label": "Caution", "text": "At its **isoelectric point** (pI) a protein has zero net charge, its lowest solubility and does not move in an electric field. Protein precipitation and separation by electrophoresis are based on this very property."}
+ ],
+ "sections": [
+  {"title": "1. The concept of biopolymers and bioregulators", "blocks": [
+   {"type": "p", "text": "**Biopolymers** are natural high-molecular compounds built from monomers: **proteins** (monomer — α-amino acids), **nucleic acids** (nucleotides) and **polysaccharides** (monosaccharides). **Bioregulators** are substances that control the activity of cells and organs in small amounts: hormones, neurotransmitters, vitamins, regulatory peptides, prostaglandins."}
+  ]},
+  {"title": "2. Structure and classification of α-amino acids", "blocks": [
+   {"type": "p", "text": "Proteins contain 20 **α-amino acids**; their general formula is H~2~N−CH(R)−COOH. In all of them except glycine (R = H) the α-carbon is chiral, and natural amino acids belong to the **L series**. They differ from each other only in the side chain (R)."},
+   {"type": "table", "title": "Table 13.1. Classification of amino acids by side-chain polarity", "head": ["Group", "Amino acids"], "rows": [["Nonpolar (hydrophobic)", "glycine, alanine, valine, leucine, isoleucine, proline, methionine, phenylalanine, tryptophan"], ["Polar, uncharged", "serine, threonine, cysteine, tyrosine, asparagine, glutamine"], ["Negatively charged (acidic)", "aspartic acid, glutamic acid"], ["Positively charged (basic)", "lysine, arginine, histidine"]]},
+   {"type": "p", "text": "Amino acids that are not synthesized in the body and must come with food are called **essential**: in adults — valine, leucine, isoleucine, threonine, methionine, lysine, phenylalanine, tryptophan; in the growing organism — also histidine (and partly arginine)."}
+  ]},
+  {"title": "3. Physical and chemical properties of amino acids", "blocks": [
+   {"type": "p", "text": "Amino acids are **amphoteric**: −COOH gives acidic and −NH~2~ basic properties. In solution and in crystals they exist as a **zwitterion** (dipolar ion): ^+^H~3~N−CH(R)−COO^−^. That is why they dissolve well in water, melt (decompose) at high temperature and dissolve poorly in organic solvents."},
+   {"type": "p", "text": "The **isoelectric point** (pI) is the pH at which an amino acid has zero net charge: for neutral amino acids pI = (pK~1~ + pK~2~) / 2. For example, for glycine pK~1~ (COOH) = 2.34 and pK~2~ (NH~3~^+^) = 9.60, so pI = 5.97. At pH < pI the amino acid is positively charged, at pH > pI negatively charged."},
+   {"type": "img", "src": "data/img/tkm/t13_zaryad.webp", "w": 1400, "h": 800, "label": "Figure 13.1", "caption": "Dependence of the net charge of glycine on pH: a cation in an acidic medium, a zwitterion (charge 0) at pI = 5.97, an anion in an alkaline medium (calculated with the Henderson–Hasselbalch equation)."},
+   {"type": "table", "title": "Table 13.2. Important reactions of amino acids", "head": ["Reaction", "Product", "Significance"], "rows": [["With ninhydrin", "blue-violet color (Ruhemann’s purple)", "detection of amino acids, developing chromatograms"], ["Decarboxylation", "biogenic amines (histamine, serotonin, GABA, dopamine)", "formation of mediators and hormones"], ["Transamination", "a new amino acid and keto acid", "the ALT and AST enzymes (coenzyme B~6~)"], ["Oxidative deamination", "keto acid + NH~3~", "amino acid catabolism (glutamate dehydrogenase)"], ["With nitrous acid (Van Slyke)", "hydroxy acid + N~2~↑", "determination of amino groups"], ["Peptide bond formation", "peptides, proteins", "protein biosynthesis (on the ribosome)"]]}
+  ]},
+  {"title": "4. Biological functions of amino acids", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Building blocks** of proteins and peptides.", "**Neurotransmitters:** glutamate (excitatory), glycine and GABA (inhibitory).", "**Precursors of biologically active substances:** tyrosine → catecholamines, thyroxine, melanin; tryptophan → serotonin, melatonin, nicotinic acid; histidine → histamine; glycine → heme, creatine, glutathione, bile acid conjugates; arginine → nitric oxide (NO), urea.", "**An energy source** (through gluconeogenesis in starvation) and nitrogen carriers (glutamine, alanine)."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Phenylketonuria** is an inherited deficiency of phenylalanine hydroxylase: phenylalanine is not converted to tyrosine, accumulates in the blood and disturbs brain development (intellectual disability). Newborns are screened; treatment is a phenylalanine-restricted diet. **Homocystinuria, alkaptonuria and maple syrup urine disease** are other aminoacidopathies."}]}
+  ]},
+  {"title": "5. Peptides. Biologically active peptides", "blocks": [
+   {"type": "p", "text": "The −CO−NH− bond formed with loss of water between the carboxyl group of one amino acid and the amino group of another is called the **peptide bond**. It has partial double-bond character (C−N mesomerism), so it is **planar** and rotation around it is restricted; in peptides it is mostly in the **trans** configuration. A peptide chain has a free amino group at its start (**N-terminus**) and a free carboxyl at its end (**C-terminus**)."},
+   {"type": "img", "src": "data/img/tkm/t13_peptid.webp", "w": 1400, "h": 520, "label": "Figure 13.2", "caption": "The dipeptide glycylalanine (peptide bond −CO−NH−) and the tripeptide glutathione (γ-glutamylcysteinylglycine) (structural formulas drawn with RDKit)."},
+   {"type": "table", "title": "Table 13.3. Biologically active peptides", "head": ["Peptide", "Number of amino acids", "Function"], "rows": [["Glutathione", "3 (γ-Glu-Cys-Gly)", "the main intracellular antioxidant, detoxification"], ["Carnosine", "2 (β-alanine + histidine)", "buffer and antioxidant in muscle"], ["Enkephalins", "5", "endogenous opioids — relieve pain"], ["Oxytocin, vasopressin", "9", "uterine contraction, lactation; water reabsorption, blood pressure"], ["Angiotensin II", "8", "vasoconstriction, rise in arterial pressure"], ["Glucagon", "29", "raises blood glucose"], ["Insulin", "51 (A chain 21 + B chain 30)", "lowers blood glucose"]]}
+  ]},
+  {"title": "6. Primary and spatial structure of proteins", "blocks": [
+   {"type": "table", "title": "Table 13.4. Levels of protein structure", "head": ["Level", "Essence", "Bonds that hold it"], "rows": [["Primary", "the sequence of amino acids in the polypeptide chain", "peptide (covalent) bonds"], ["Secondary", "folding of parts of the chain into an α-helix (3.6 residues per turn) or a β-sheet", "hydrogen bonds between peptide groups"], ["Tertiary", "the spatial folding of the whole chain (globule or fibril)", "hydrophobic interactions, ionic, hydrogen and disulfide bonds"], ["Quaternary", "association of several polypeptide chains (protomers)", "non-covalent bonds"]]},
+   {"type": "p", "text": "The spatial structure of a protein, and hence its function, is **determined by its primary structure** (C. Anfinsen’s experiment). An example of quaternary structure is **hemoglobin** (2 α- and 2 β-chains, α~2~β~2~): the protomers interact when binding oxygen (cooperativity)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Sickle cell anemia:** at position 6 of the hemoglobin β-chain **glutamate is replaced by valine** (HbS). This single change in the primary structure creates a hydrophobic “sticky” patch in the deoxy form; the molecules polymerize, red cells take a sickle shape and block the capillaries. In **prion diseases**, on the other hand, the primary structure of the protein is unchanged, but its secondary structure switches from α-helix to β-sheet."}]}
+  ]},
+  {"title": "7. Classification, functions, molecular mass and colloidal properties of proteins", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Simple proteins** — consist only of amino acids: albumins, globulins, histones, protamines, scleroproteins (collagen, keratin, elastin).", "**Conjugated proteins** — protein + prosthetic group: glycoproteins, lipoproteins, nucleoproteins, chromoproteins (hemoglobin), phosphoproteins (casein), metalloproteins (ferritin).", "**Functions:** catalytic (enzymes), structural (collagen), transport (hemoglobin, albumin), protective (immunoglobulins, fibrinogen), regulatory (insulin), contractile (actin, myosin), receptor, storage (ferritin, casein)."]},
+   {"type": "p", "text": "The molecular mass of proteins ranges from ≈ 6 000 (insulin ≈ 5 800) to several million daltons. It is determined by **ultracentrifugation** (sedimentation constant, Svedberg unit), **gel filtration**, **electrophoresis** (with sodium dodecyl sulfate) and mass spectrometry."},
+   {"type": "p", "text": "Protein solutions are **lyophilic colloids**: the particles are 1–100 nm, they give the Tyndall effect, do not pass through membranes and are highly viscous. Their stability has two factors — **charge** and the **hydration shell**. Removing them precipitates the protein: **salting out** (ammonium sulfate — reversible; globulins precipitate at half saturation, albumins at full saturation), **isoelectric precipitation**, **denaturation** (heating, strong acids and alkalis, heavy-metal salts, alcohol — the spatial structure is destroyed, often irreversibly)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In poisoning with salts of heavy metals (mercury, lead, copper), **milk** or **egg white** is given as emergency first aid: the proteins form insoluble compounds with the metal ions, bind them in the gut and reduce their absorption; then the stomach is washed out."}]}
+  ]},
+  {"title": "8. Laboratory work", "blocks": [
+   {"type": "h", "text": "Qualitative reactions of amino acids and proteins"},
+   {"type": "table", "title": "Table 13.5. Color reactions", "head": ["Reaction", "Reagent", "Group detected", "Sign"], "rows": [["Biuret", "NaOH + CuSO~4~", "peptide bonds (≥ 2)", "violet color"], ["Ninhydrin", "ninhydrin, heating", "α-amino group", "blue-violet (proline — yellow)"], ["Xanthoprotein", "conc. HNO~3~, then NH~3~", "aromatic ring (Tyr, Trp, Phe)", "yellow → orange"], ["Millon", "mercury nitrates", "phenol group (Tyr)", "red precipitate"], ["Fohl", "lead acetate + NaOH, heating", "SH group (Cys)", "black precipitate of PbS"], ["Adamkiewicz", "glyoxylic acid + conc. H~2~SO~4~", "indole ring (Trp)", "violet ring"], ["Sakaguchi", "α-naphthol + NaOBr", "guanidino group (Arg)", "red color"]]},
+   {"type": "h", "text": "Determination of total serum protein by the biuret method"},
+   {"type": "p", "text": "**Principle of the method:** in an alkaline medium the peptide bonds of protein form a violet complex with Cu^2+^; the color intensity (optical density at 540 nm) is proportional to the protein concentration."},
+   {"type": "list", "ordered": true, "items": ["Prepare three tubes: test (0.1 mL serum), standard (0.1 mL of 70 g/L albumin solution) and blank (0.1 mL of 0.9 % NaCl).", "Add 5 mL of biuret reagent to each and mix.", "Leave at room temperature for 30 minutes.", "Measure the optical density against the blank on a photoelectric colorimeter with a green filter (540 nm).", "Calculate: C = (E~test~ / E~standard~) · C~standard~ (g/L)."]},
+   {"type": "p", "text": "**Example:** E~test~ = 0.38, E~standard~ = 0.35. C = (0.38 / 0.35) · 70 = 76 g/L — normal (65–85 g/L)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Hypoproteinemia** (< 65 g/L) occurs in starvation, liver cirrhosis (reduced synthesis), nephrotic syndrome and burns (loss); oncotic pressure falls and **edema** appears. **Hyperproteinemia** (> 85 g/L) occurs in dehydration (relative) and multiple myeloma (paraprotein)."}]},
+   {"type": "h", "text": "Study of the physicochemical properties of proteins"},
+   {"type": "list", "ordered": true, "items": ["**Salting out:** add an equal volume of saturated (NH~4~)~2~SO~4~ to egg white solution — the globulins precipitate; saturate the filtrate with crystalline salt — the albumins precipitate. When water is added the precipitate dissolves again (a reversible process).", "**Denaturation by heating:** boil the protein solution — turbidity and clots appear; they do not dissolve on cooling.", "**Precipitation by heavy metals:** add drops of CuSO~4~ or lead acetate to the protein solution — a precipitate forms.", "**With acids:** carefully layer protein solution over conc. HNO~3~ — a white ring forms at the boundary (Heller’s test — detection of protein in urine)."]}
+  ]},
+  {"title": "9. Production of artificial protein foods and future prospects (independent work)", "blocks": [
+   {"type": "p", "text": "Population growth and the ecological burden of livestock farming (land and water use, greenhouse gases) have made the search for **alternative protein sources** urgent."},
+   {"type": "table", "title": "Table 13.6. Alternative protein sources", "head": ["Source", "Essence", "Advantages and problems"], "rows": [["Single-cell protein (yeasts, bacteria)", "growing microorganisms on methane, methanol or agricultural waste", "fast growth, 50–80 % protein; much nucleic acid (raises uric acid) — must be purified"], ["Microalgae (spirulina, chlorella)", "photosynthetic algae", "≈ 60–70 % protein, rich in vitamins; cost, risk of heavy-metal contamination"], ["Mycoprotein", "biomass of the fungus Fusarium venenatum", "rich in fiber, cholesterol-free; rare allergy"], ["Plant proteins", "protein isolates of soy, pea, beans", "cheap, widespread; low in some essential amino acids (lysine, methionine)"], ["Insect protein", "crickets, mealworms", "efficient conversion; cultural acceptance, allergy"], ["Cultivated meat", "growing animal cells in a bioreactor", "meat without animals; still expensive, hard to scale up"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The completeness of a protein is judged by its **essential amino acid** content and its digestibility. Eating different plant proteins together (for example, cereals + legumes) makes up for each other’s missing amino acids."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: determining total protein by the biuret method", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Label the tubes: test, standard, blank.", "Measure 0.1 mL of the corresponding sample into each accurately with a micropipette.", "Add 5 mL of biuret reagent, mix and wait 30 minutes.", "Zero the photometer with the blank and measure E~test~ and E~standard~ at 540 nm.", "Calculate with the formula C = (E~test~ / E~standard~) · 70 g/L and compare with the normal range (65–85 g/L)."]}]},
+  {"title": "Skill: determining the isoelectric point and charge of an amino acid", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Write the pK values of all ionizable groups of the amino acid.", "For a neutral amino acid pI = (pK~COOH~ + pK~NH3+~) / 2.", "For an acidic amino acid pI is the mean of the two acidic pK values; for a basic one, the mean of the two basic pK values.", "If the given pH < pI, the net charge is positive; if pH > pI, negative.", "Determine toward which electrode it moves in electrophoresis."]}]}
+ ],
+ "questions": [
+  "What are biopolymers and bioregulators?",
+  "What is the general structure of proteinogenic amino acids and their classification by side chain?",
+  "List the essential amino acids.",
+  "Why are amino acids amphoteric? What is a zwitterion?",
+  "How is the isoelectric point calculated? Explain using glycine.",
+  "What is the significance of the decarboxylation and transamination of amino acids?",
+  "Give examples of the biological functions of amino acids.",
+  "How is the peptide bond built and what are its properties?",
+  "List biologically active peptides.",
+  "Explain the four levels of protein structure.",
+  "What is the molecular cause of sickle cell anemia?",
+  "How are proteins classified and what functions do they perform?",
+  "Explain the colloidal properties of protein solutions and the methods of precipitation."
+ ],
+ "quiz": [
+  {"q": "How many proteinogenic amino acids do proteins contain?", "options": ["20", "10", "26", "8", "64"], "answer": 0},
+  {"q": "Which amino acid is not optically active?", "options": ["Glycine", "Alanine", "Serine", "Valine", "Lysine"], "answer": 0},
+  {"q": "Which amino acid is essential?", "options": ["Tryptophan", "Alanine", "Glycine", "Serine", "Glutamic acid"], "answer": 0},
+  {"q": "Which amino acid has a positively charged (basic) side chain?", "options": ["Lysine", "Aspartic acid", "Leucine", "Serine", "Phenylalanine"], "answer": 0},
+  {"q": "What is the isoelectric point of glycine (pK~1~ = 2.34; pK~2~ = 9.60)?", "options": ["5.97", "2.34", "9.60", "7.00", "11.94"], "answer": 0},
+  {"q": "What charge does an amino acid have in a medium with pH < pI?", "options": ["Positive", "Negative", "Neutral", "Variable", "Only negative"], "answer": 0},
+  {"q": "What is formed by decarboxylation of histidine?", "options": ["Histamine", "Serotonin", "GABA", "Dopamine", "Putrescine"], "answer": 0},
+  {"q": "What is a property of the peptide bond?", "options": ["Planar, with partial double-bond character", "A freely rotating single bond", "An ionic bond", "A hydrogen bond", "A disulfide bond"], "answer": 0},
+  {"q": "Of which amino acids does glutathione consist?", "options": ["Glutamate, cysteine, glycine", "Glutamine, serine, glycine", "Glycine, alanine, cysteine", "Glutamate, methionine, glycine", "Glycine, proline, hydroxyproline"], "answer": 0},
+  {"q": "Which bonds hold the secondary structure of a protein?", "options": ["Hydrogen bonds between peptide groups", "Peptide bonds", "Disulfide bonds", "Ionic bonds", "Hydrophobic interactions"], "answer": 0},
+  {"q": "What level of structure does hemoglobin have?", "options": ["Quaternary", "Only primary", "Only secondary", "Only tertiary", "Fibrillar"], "answer": 0},
+  {"q": "In sickle cell anemia, what substitution is found at position 6 of the β-chain?", "options": ["Glutamate → valine", "Valine → glutamate", "Glycine → alanine", "Lysine → glutamate", "Leucine → proline"], "answer": 0},
+  {"q": "What does the biuret reaction detect?", "options": ["At least two peptide bonds", "Free amino acids", "An aromatic ring", "An SH group", "A guanidino group"], "answer": 0},
+  {"q": "What is the normal total serum protein?", "options": ["65–85 g/L", "35–50 g/L", "100–120 g/L", "20–30 g/L", "5–10 g/L"], "answer": 0},
+  {"q": "Which amino acids does the xanthoprotein reaction detect?", "options": ["Aromatic (Tyr, Trp, Phe)", "Sulfur-containing (Cys, Met)", "Basic (Lys, Arg)", "Acidic (Asp, Glu)", "Only proline"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "Serum protein of a patient was determined by the biuret method. For the standard albumin solution (70 g/L) E = 0.35, for the serum E = 0.24. The patient has edema of the legs and face and 6 g of protein in the urine per day.", "ask": "Calculate the total protein. Explain the mechanism of the edema.", "answer": "C = (0.24 / 0.35) · 70 = 48 g/L — **hypoproteinemia** (normal 65–85 g/L). Heavy loss of protein (mainly albumin) in the urine is typical of **nephrotic syndrome**. Albumin creates most of the oncotic pressure of plasma; when it falls, water passes from the capillaries into the interstitial space — **oncotic edema** appears."},
+  {"title": "Problem 2", "text": "The pK values of glutamic acid are: α-COOH 2.19; γ-COOH 4.25; α-NH~3~^+^ 9.67. Electrophoresis is carried out at pH 7.0.", "ask": "Find the isoelectric point of glutamic acid and say toward which electrode it moves at pH 7.0.", "answer": "For an acidic amino acid pI is the mean of the pK values of the two acidic groups: pI = (2.19 + 4.25) / 2 = 3.22. pH 7.0 > pI, so glutamate has a net **negative** charge (both carboxyls ionized, the amino group protonated: net charge −1) and moves toward the **anode (+)**."},
+  {"title": "Problem 3", "text": "A chemical plant worker accidentally swallowed some mercury(II) chloride solution. Before the ambulance arrived, a colleague gave him 3 raw egg whites mixed together to drink.", "ask": "What is the chemical basis of this measure?", "answer": "Heavy-metal ions such as mercury bind to the SH, carboxyl and imidazole groups of proteins, **denature** them and form insoluble metal–protein compounds (a precipitate). The proteins of egg white (ovalbumin) bind the Hg^2+^ ions in the stomach and reduce their interaction with the proteins of the mucosa and their absorption. Then the stomach is washed out and specific antidotes (unithiol, dimercaprol) are given."}
+ ],
+ "cards": [
+  {"front": "α-Amino acid", "back": "H~2~N−CH(R)−COOH; 20 in proteins, L series"},
+  {"front": "Essential amino acids", "back": "Val, Leu, Ile, Thr, Met, Lys, Phe, Trp (+ His in children)"},
+  {"front": "Zwitterion", "back": "^+^H~3~N−CH(R)−COO^−^ — the form of an amino acid in solution"},
+  {"front": "Isoelectric point", "back": "The pH at which the net charge is zero; 5.97 for glycine"},
+  {"front": "Peptide bond", "back": "−CO−NH−; planar, partial double-bond character, trans"},
+  {"front": "Glutathione", "back": "γ-Glu-Cys-Gly; the main intracellular antioxidant"},
+  {"front": "Primary structure", "back": "The amino acid sequence; it determines the spatial structure"},
+  {"front": "α-Helix", "back": "Secondary structure; 3.6 residues per turn, hydrogen bonds"},
+  {"front": "Denaturation", "back": "Destruction of the spatial structure (heating, acid, heavy metals)"},
+  {"front": "Biuret reaction", "back": "Cu^2+^ + peptide bonds in an alkaline medium → a violet complex"}
+ ]
+}

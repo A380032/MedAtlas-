@@ -1,0 +1,110 @@
+{
+ "id": "12",
+ "no": 12,
+ "title": "Uglevodlar. Monosaxaridlarning tuzilishi va xossalari. Di-, gomo- va geteropolisaxaridlar",
+ "goals": [
+  {"type": "p", "text": "Talabaga oziq-ovqatdagi asosiy uglevodlar, monosaxaridlarning tasnifi, stereoizomeriyasi, siklik shakllari, kimyoviy xossalari (oksidlanish va qaytarilish), tibbiyotda ishlatiladigan hosilalari, qaytaruvchi va qaytarmaydigan disaxaridlar, gomopolisaxaridlar va biriktiruvchi to‘qima geteropolisaxaridlarining tuzilishi va ahamiyatini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["monosaxaridlarning aldoza/ketoza va uglerodlar soni bo‘yicha tasnifini, D/L qatorlarini, epimerlarni;", "piranoza va furanoza shakllari, α- va β-anomerlar, mutarotatsiyani;", "monosaxaridlarning oksidlanishi (aldon, glyukuron kislotalar) va qaytarilishi (sorbit);", "qaytaruvchi (maltoza, laktoza, sellobioza) va qaytarmaydigan (saxaroza, tregaloza) disaxaridlarni;", "kraxmal, glikogen, sellyuloza, xitin, pektin tuzilishini;", "gialuron kislota, xondroitinsulfatlar va geparinning ahamiyatini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["glyukozaning Fisher va Xeuors formulalarini yozish;", "qaytaruvchi uglevodlarni Trommer va Feling reaksiyalari bilan aniqlashni tushuntirish;", "disaxarid tarkibini va glikozid bog‘ turini aniqlash;", "uglevodlar almashinuvi buzilishlarining (laktaza yetishmovchiligi, qandli diabet) kimyoviy asosini tushuntirish."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Disaxarid **qaytaruvchi** bo‘ladi, agar uning bitta monosaxaridida **erkin yarimatsetal (glikozid) gidroksil** qolgan bo‘lsa (maltoza, laktoza). Saxarozada ikkala anomer gidroksil bog‘lanishga sarflangan — u **qaytarmaydigan**."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Disaxaridlar: **“Mal-Glyu-Glyu, Lak-Gal-Glyu, Sax-Glyu-Fru”** — maltoza = glyukoza + glyukoza, laktoza = galaktoza + glyukoza, saxaroza = glyukoza + fruktoza."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Odamda **sellyulozani** parchalaydigan ferment (β-1,4-glikozidaza) yo‘q: u hazm bo‘lmaydi, lekin **kletchatka** sifatida ichak harakatini kuchaytiradi, xolesterin va o‘t kislotalarini bog‘laydi. Kraxmal esa α-1,4 bog‘li va amilaza bilan oson parchalanadi."}
+ ],
+ "sections": [
+  {"title": "1. Oziq-ovqat tarkibidagi asosiy uglevodlar", "blocks": [
+   {"type": "p", "text": "**Uglevodlar** — polioksikarbonil birikmalar va ularning hosilalari; ko‘pchiligining umumiy formulasi C~n~(H~2~O)~m~. Ular ratsion energiyasining ≈ 50–60 % ini beradi va asosiy energiya manbai hisoblanadi; miya va eritrotsitlar deyarli faqat glyukozadan foydalanadi."},
+   {"type": "table", "title": "Jadval 12.1. Oziq-ovqatdagi asosiy uglevodlar", "head": ["Uglevod", "Turi", "Manbai"], "rows": [["Kraxmal", "gomopolisaxarid", "non, guruch, kartoshka, makaron"], ["Saxaroza", "disaxarid", "shakar, mevalar, qand lavlagi"], ["Laktoza", "disaxarid", "sut va sut mahsulotlari"], ["Glyukoza, fruktoza", "monosaxaridlar", "asal, mevalar, uzum"], ["Sellyuloza, pektin (kletchatka)", "polisaxaridlar", "sabzavotlar, kepak, mevalar"]]}
+  ]},
+  {"title": "2. Monosaxaridlarning tasnifi va stereoizomeriyasi", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Karbonil guruhiga ko‘ra:** aldozalar (aldegid guruh — glyukoza, galaktoza, riboza) va ketozalar (keto guruh — fruktoza, ribuloza).", "**Uglerodlar soniga ko‘ra:** triozalar (glitseraldegid, digidroksiatseton), tetrozalar, pentozalar (riboza, dezoksiriboza, ksiloza), geksozalar (glyukoza, galaktoza, mannoza, fruktoza).", "**D va L qatorlar** karbonil guruhdan eng uzoqdagi xiral uglerod (geksozalarda C-5) konfiguratsiyasi bo‘yicha aniqlanadi; tabiiy monosaxaridlar asosan **D-qator**."]},
+   {"type": "p", "text": "Aldogeksozada 4 ta xiral uglerod bor, demak 2^4^ = 16 stereoizomer (8 juft enantiomer) mavjud. Faqat bitta xiral markazda farq qiladigan diastereomerlar **epimerlar** deyiladi: D-glyukoza va D-galaktoza — **C-4** epimerlari, D-glyukoza va D-mannoza — **C-2** epimerlari."},
+   {"type": "p", "text": "Eritmada monosaxaridlar asosan **siklik** shaklda bo‘ladi: karbonil guruh bir xil molekuladagi gidroksil bilan ichki yarimatsetal hosil qiladi. Olti a’zoli halqa — **piranoza**, besh a’zoli — **furanoza**. Halqa yopilganda paydo bo‘ladigan yangi xiral markaz (C-1) — **anomer** markaz: OH halqa tekisligidan pastda (Xeuors formulasida) — **α**, yuqorida — **β** anomer."},
+   {"type": "img", "src": "data/img/tkm/t12_glukoza.webp", "w": 1400, "h": 600, "label": "Rasm 12.1", "caption": "D-glyukozaning α- va β-piranoza shakllari (Xeuors proyeksiyasi): ular faqat C-1 dagi gidroksil holati bilan farq qiladi va eritmada ochiq shakl orqali o‘zaro o‘tadi (sxema)."},
+   {"type": "p", "text": "**Mutarotatsiya** — yangi tayyorlangan eritmada solishtirma burish burchagining vaqt o‘tishi bilan o‘zgarib, muvozanat qiymatga yetishi: α-D-glyukoza (+112°) va β-D-glyukoza (+18,7°) eritmada ochiq shakl orqali o‘zaro o‘tadi; muvozanatda ≈ 36 % α va 64 % β (+52,5°)."}
+  ]},
+  {"title": "3. Monosaxaridlarning kimyoviy xossalari. Oksidlanish va qaytarilish", "blocks": [
+   {"type": "table", "title": "Jadval 12.2. Glyukozaning oksidlanishi va qaytarilishi", "head": ["Reaksiya", "Mahsulot", "Ahamiyati"], "rows": [["Yumshoq oksidlanish (bromli suv) — C-1", "glyukon kislota", "kalsiy glyukonat — Ca^2+^ preparati"], ["Kuchli oksidlanish (HNO~3~) — C-1 va C-6", "glyukar (shakar) kislota", "—"], ["Fermentativ oksidlanish — faqat C-6", "glyukuron kislota", "jigarda bilirubin, dorilar va toksinlar bilan konyugatlar hosil qiladi (zararsizlantirish)"], ["Qaytarilish — C-1", "sorbit (glyutsit)", "shakar o‘rnini bosuvchi; diabet asoratlari"], ["Glikozid hosil bo‘lishi", "O- va N-glikozidlar", "di- va polisaxaridlar, nukleozidlar"], ["Fosfat efirlar", "glyukoza-6-fosfat", "almashinuvning birinchi bosqichi (geksokinaza)"]]},
+   {"type": "p", "text": "**Qaytaruvchi xossa:** aldozalar (va ishqoriy muhitda ketozalar) ishqoriy Cu^2+^ eritmasini qaytaradi: **Trommer** va **Feling** reaksiyalarida havorang Cu(OH)~2~ qizdirilganda g‘ishtsimon-qizil Cu~2~O cho‘kmasiga aylanadi; **Tollens** reaktivi bilan “kumush ko‘zgu” hosil bo‘ladi."},
+   {"type": "list", "ordered": false, "items": ["**Aminoqandlar:** glyukozamin, galaktozamin (N-atsetil hosilalari geteropolisaxaridlar tarkibida); glyukozamin bo‘g‘im kasalliklarida xondroprotektor sifatida ishlatiladi.", "**Dezoksiqandlar:** 2-dezoksiriboza — DNK tarkibi.", "**Askorbin kislota** (vitamin C) — glyukozaning lakton hosilasi, kuchli qaytaruvchi; kollagen sintezi va temir so‘rilishi uchun zarur.", "**Laktuloza** (galaktoza + fruktoza) — sintetik disaxarid, ichakda so‘rilmaydi: surgi va jigar ensefalopatiyasida ammiak so‘rilishini kamaytiradi."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Qandli diabetda qon glyukozasi oqsillarning aminoguruhlari bilan fermentsiz birikadi (**glikirlanish**): glikirlangan gemoglobin **HbA~1c~** oxirgi 2–3 oy davomidagi o‘rtacha glikemiyani ko‘rsatadi (me’yor < 5,7 %, diabetda ≥ 6,5 %). Qondagi glyukoza hozir glyukozaoksidaza usuli bilan aniqlanadi; Trommer va Feling reaksiyalari tarixiy usul hisoblanadi."}]}
+  ]},
+  {"title": "4. Qaytaruvchi va qaytarmaydigan disaxaridlar", "blocks": [
+   {"type": "img", "src": "data/img/tkm/t12_disaxarid.webp", "w": 1400, "h": 526, "label": "Rasm 12.2", "caption": "Asosiy disaxaridlar va glikozid bog‘lari: maltoza (α-1,4), saxaroza (α-1,β-2) va laktoza (β-1,4) (struktura formulalar PubChem ma’lumotlari asosida RDKit dasturida chizilgan)."},
+   {"type": "table", "title": "Jadval 12.3. Disaxaridlar", "head": ["Disaxarid", "Tarkibi va bog‘i", "Qaytaruvchanlik", "Ahamiyati"], "rows": [["Maltoza", "α-D-glyukoza (1→4) D-glyukoza", "qaytaruvchi", "kraxmalning amilaza bilan parchalanish mahsuloti (solod shakari)"], ["Sellobioza", "β-D-glyukoza (1→4) D-glyukoza", "qaytaruvchi", "sellyulozaning takrorlanuvchi birligi"], ["Laktoza", "β-D-galaktoza (1→4) D-glyukoza", "qaytaruvchi", "sut shakari; laktaza bilan parchalanadi"], ["Saxaroza", "α-D-glyukoza (1→2) β-D-fruktoza", "qaytarmaydigan", "lavlagi va qamish shakari; gidrolizda “invert shakar”"], ["Tregaloza", "α-D-glyukoza (1→1) α-D-glyukoza", "qaytarmaydigan", "zamburug‘lar, hasharotlar"]]},
+   {"type": "p", "text": "**Kraxmaldan maltoza hosil bo‘lishi:** so‘lak va me’da osti bezi **α-amilazasi** kraxmalning ichki α-1,4-glikozid bog‘larini gidrolizlaydi; natijada maltoza, maltotrioza va α-dekstrinlar hosil bo‘ladi, ular esa ichakda **maltaza** va izomaltaza bilan glyukozagacha parchalanadi. Maltozani nazariy jihatdan ikki molekula α-D-glyukopiranozadan suv ajralishi bilan (birinchisining C-1 va ikkinchisining C-4 gidroksillari hisobiga) olish mumkin."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Laktaza yetishmovchiligi** (laktoza intoleransi): ingichka ichakda laktoza parchalanmaydi, yo‘g‘on ichakka o‘tib bakteriyalar tomonidan bijg‘itiladi — qorin dam bo‘lishi, og‘riq va diareya. Kattalarning ko‘pchiligida (ayniqsa Osiyo xalqlarida) laktaza faolligi yosh bilan kamayadi. Davolash: laktozasiz sut, achitilgan sut mahsulotlari, laktaza preparatlari."}]}
+  ]},
+  {"title": "5. Gomopolisaxaridlar", "blocks": [
+   {"type": "table", "title": "Jadval 12.4. Asosiy gomopolisaxaridlar", "head": ["Polisaxarid", "Monomeri va bog‘lari", "Xossalari", "Ahamiyati"], "rows": [["Kraxmal: amiloza (20–25 %)", "α-D-glyukoza, α-1,4 (shoxlanmagan spiral)", "yod bilan **ko‘k** rang", "o‘simliklarning zaxira uglevodi, asosiy oziq uglevod"], ["Kraxmal: amilopektin (75–80 %)", "α-1,4 + har 20–25 qoldiqda α-1,6 tarmoqlar", "yod bilan binafsha-qizil", "—"], ["Glikogen", "α-1,4 + har 8–12 qoldiqda α-1,6 (ko‘p tarmoqli)", "yod bilan qizil-qo‘ng‘ir", "hayvonlar zaxirasi: jigarda ≈ 100 g, mushaklarda ≈ 300–400 g"], ["Sellyuloza", "β-D-glyukoza, β-1,4 (chiziqli, tolasimon)", "suvda erimaydi, odamda hazm bo‘lmaydi", "kletchatka; paxta, bint, doka"], ["Xitin", "N-atsetilglyukozamin, β-1,4", "mustahkam, erimaydi", "hasharotlar va zamburug‘lar skeleti; xitozan — yara qoplamalari"], ["Pektin", "galakturon kislota (qisman metillangan)", "gel hosil qiladi", "enterosorbent, og‘ir metallarni bog‘laydi"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Glikogenning ko‘p tarmoqlanganligi uning ko‘p “uchlari” bo‘lishini ta’minlaydi: glikogenfosforilaza bir vaqtning o‘zida ko‘p uchlardan glyukozani tez ajratib, qon glyukozasini (jigar) yoki mushak ishini (mushak) ta’minlaydi."}]}
+  ]},
+  {"title": "6. Sellyulozaning murakkab efirlari", "blocks": [
+   {"type": "p", "text": "Sellyulozaning har bir glyukoza qoldig‘ida uchta erkin OH guruh bor; ular kislotalar bilan murakkab efirlar hosil qiladi."},
+   {"type": "list", "ordered": false, "items": ["**Sellyuloza atsetatlari** (sirka angidrid bilan): asetat ipaklari, plyonkalar, ilgari gemodializ membranalari; tabletkalar qobig‘i (sellyuloza atsetatftalat — ichakda eriydigan qoplama).", "**Sellyuloza nitratlari** (nitrat kislota bilan): kam nitrlangani — **kolloksilin**; uning efir-spirtdagi eritmasi — **kollodiy**, kichik yaralar va jarrohlik choklarini yopishtiruvchi qoplama sifatida ishlatiladi. To‘liq nitrlangani — portlovchi pirokselin.", "**Metil- va karboksimetilsellyuloza** — ko‘z tomchilari, surtmalar va tabletkalarda quyuqlashtiruvchi va sun’iy ko‘z yoshi."]}
+  ]},
+  {"title": "7. Biriktiruvchi to‘qima geteropolisaxaridlari", "blocks": [
+   {"type": "p", "text": "**Glikozaminoglikanlar** (mukopolisaxaridlar) — takrorlanuvchi disaxarid birliklaridan (uron kislota + aminoqand) tuzilgan, sulfat va karboksil guruhlar hisobiga kuchli manfiy zaryadli geteropolisaxaridlar. Ular ko‘p suvni bog‘lab, biriktiruvchi to‘qimaning gel muhitini hosil qiladi."},
+   {"type": "table", "title": "Jadval 12.5. Asosiy glikozaminoglikanlar", "head": ["Modda", "Disaxarid birligi", "Joylashuvi va vazifasi"], "rows": [["Gialuron kislota", "D-glyukuron kislota + N-atsetilglyukozamin (sulfatsiz)", "bo‘g‘im suyuqligi, ko‘z shishasimon tanasi, teri; surkash, amortizatsiya"], ["Xondroitinsulfatlar", "D-glyukuron kislota + N-atsetilgalaktozamin-sulfat", "tog‘ay, suyak, tomir devori; xondroprotektorlar"], ["Dermatansulfat", "L-iduron kislota + N-atsetilgalaktozamin-sulfat", "teri, tomirlar, yurak qopqoqlari"], ["Keratansulfat", "galaktoza + N-atsetilglyukozamin-sulfat", "shox parda, tog‘ay"], ["Geparin", "iduron/glyukuron kislota + glyukozamin (ko‘p sulfatlangan)", "semiz hujayralar; **antikoagulyant** — antitrombin III ni faollashtiradi"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Geparin** — eng ko‘p manfiy zaryadli biomolekula; u antitrombin III bilan bog‘lanib, trombin va Xa omilni tez nofaol qiladi — tromboz va emboliyani davolashda ishlatiladi; antidoti — musbat zaryadli **protamin sulfat**. Lizosoma fermentlari yetishmasligida glikozaminoglikanlar to‘planib, irsiy **mukopolisaxaridozlar** (Gurler, Xanter sindromlari) rivojlanadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: qaytaruvchi uglevodlarni aniqlash (Trommer reaksiyasi)", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Probirkaga 1 ml uglevod eritmasi va 1 ml 10 % li NaOH soling.", "Tomchilab 5 % li CuSO~4~ qo‘shing — avval tushgan Cu(OH)~2~ chayqatilganda eriydi va ko‘k eritma hosil bo‘ladi (ko‘p atomli spirt xossasi).", "Eritmaning yuqori qismini qizdiring.", "Qaytaruvchi uglevod bo‘lsa, sariq CuOH, so‘ng g‘ishtsimon-qizil Cu~2~O cho‘kmasi hosil bo‘ladi.", "Saxaroza bilan reaksiya manfiy bo‘ladi; uni avval kislota bilan gidrolizlab qayta tekshirsangiz — musbat."]}]},
+  {"title": "Ko‘nikma: disaxarid formulasini tahlil qilish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Molekuladagi ikkita monosaxarid qoldig‘ini aniqlang (piranoza yoki furanoza, glyukoza, galaktoza yoki fruktoza).", "Glikozid bog‘ hosil qilgan uglerodlarni toping (1→4, 1→2, 1→1).", "Bog‘dagi anomer konfiguratsiyani (α yoki β) aniqlang.", "Erkin yarimatsetal OH bor-yo‘qligini tekshiring — bor bo‘lsa, qaytaruvchi.", "Disaxaridni nomlang va qaysi ferment uni parchalashini ayting."]}]}
+ ],
+ "questions": [
+  "Oziq-ovqatdagi asosiy uglevodlarni sanang.",
+  "Monosaxaridlar qanday tasniflanadi? D va L qatorlar qanday aniqlanadi?",
+  "Epimerlar nima? Misollar keltiring.",
+  "Piranoza va furanoza shakllari, anomerlar va mutarotatsiyani tushuntiring.",
+  "Glyukozaning oksidlanish va qaytarilish mahsulotlarini yozing.",
+  "Glyukuron kislotaning organizmdagi ahamiyati nimada?",
+  "Qaytaruvchi uglevodlar qanday reaksiyalar bilan aniqlanadi?",
+  "Maltoza, laktoza, sellobioza va saxarozaning tuzilishini taqqoslang.",
+  "Nima uchun saxaroza qaytaruvchi emas?",
+  "Kraxmal va glikogen tuzilishidagi farq nimada?",
+  "Nima uchun odam sellyulozani hazm qila olmaydi?",
+  "Sellyulozaning murakkab efirlari qayerda ishlatiladi?",
+  "Glikozaminoglikanlar tuzilishi va geparinning ahamiyatini tushuntiring."
+ ],
+ "quiz": [
+  {"q": "Glyukoza qaysi guruh monosaxaridlariga kiradi?", "options": ["Aldogeksozalar", "Ketogeksozalar", "Aldopentozalar", "Ketopentozalar", "Triozalar"], "answer": 0},
+  {"q": "Fruktoza qaysi guruhga kiradi?", "options": ["Ketogeksozalar", "Aldogeksozalar", "Aldopentozalar", "Triozalar", "Tetrozalar"], "answer": 0},
+  {"q": "D-glyukoza va D-galaktoza qaysi uglerod bo‘yicha epimerlar?", "options": ["C-4", "C-2", "C-1", "C-3", "C-5"], "answer": 0},
+  {"q": "Aldogeksozalarning nechta stereoizomeri bor?", "options": ["16", "8", "4", "32", "2"], "answer": 0},
+  {"q": "α- va β-anomerlar qaysi uglerod atomidagi konfiguratsiya bilan farq qiladi?", "options": ["C-1", "C-2", "C-4", "C-5", "C-6"], "answer": 0},
+  {"q": "Glyukoza qaytarilganda nima hosil bo‘ladi?", "options": ["Sorbit", "Glyukon kislota", "Glyukuron kislota", "Fruktoza", "Mannit"], "answer": 0},
+  {"q": "Jigarda bilirubin va dorilarni zararsizlantirishda qaysi kislota ishtirok etadi?", "options": ["Glyukuron kislota", "Glyukon kislota", "Glyukar kislota", "Sut kislota", "Askorbin kislota"], "answer": 0},
+  {"q": "Qaysi disaxarid qaytarmaydigan?", "options": ["Saxaroza", "Maltoza", "Laktoza", "Sellobioza", "Laktuloza"], "answer": 0},
+  {"q": "Laktoza qaysi monosaxaridlardan tashkil topgan?", "options": ["Galaktoza va glyukoza", "Glyukoza va glyukoza", "Glyukoza va fruktoza", "Galaktoza va fruktoza", "Mannoza va glyukoza"], "answer": 0},
+  {"q": "Kraxmal amilaza bilan parchalanganda qaysi disaxarid hosil bo‘ladi?", "options": ["Maltoza", "Saxaroza", "Laktoza", "Sellobioza", "Tregaloza"], "answer": 0},
+  {"q": "Sellyulozada glyukoza qoldiqlari qanday bog‘ bilan bog‘langan?", "options": ["β-1,4", "α-1,4", "α-1,6", "α-1,2", "β-1,6"], "answer": 0},
+  {"q": "Yod bilan ko‘k rang beradigan polisaxarid qaysi?", "options": ["Amiloza", "Glikogen", "Sellyuloza", "Xitin", "Gialuron kislota"], "answer": 0},
+  {"q": "Glikogen amilopektindan nimasi bilan farq qiladi?", "options": ["Ko‘proq tarmoqlangan", "β-glikozid bog‘lari bor", "Fruktozadan tuzilgan", "Tarmoqlanmagan", "Suvda erimaydi"], "answer": 0},
+  {"q": "Kollodiy qaysi moddaning eritmasi?", "options": ["Sellyuloza nitrati (kolloksilin)", "Sellyuloza atsetati", "Kraxmal", "Xitin", "Pektin"], "answer": 0},
+  {"q": "Qaysi glikozaminoglikan antikoagulyant hisoblanadi?", "options": ["Geparin", "Gialuron kislota", "Xondroitinsulfat", "Keratansulfat", "Dermatansulfat"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "22 yoshli talaba sut ichgandan 1–2 soat o‘tib qorin dam bo‘lishi, og‘riq va suyuq ich ketishidan shikoyat qiladi. Kefir va pishloqni yaxshi ko‘taradi.", "ask": "Qanday holat? Kimyoviy mexanizmini tushuntiring.", "answer": "**Laktaza yetishmovchiligi** (laktoza intoleransi). Laktoza — galaktoza va glyukozaning β-1,4-glikozid bog‘li disaxaridi; uni ingichka ichak shilliq qavatidagi **laktaza** (β-galaktozidaza) parchalaydi. Ferment yetishmasa laktoza so‘rilmaydi, osmotik faol bo‘lib ichakka suv tortadi (diareya), yo‘g‘on ichakda bakteriyalar uni bijg‘itib, gazlar (H~2~, CO~2~, CH~4~) va kislotalar hosil qiladi (dam bo‘lish, og‘riq). Kefir va pishloqda laktoza bakteriyalar tomonidan qisman parchalangan, shuning uchun yaxshi ko‘tariladi."},
+  {"title": "Masala 2", "text": "Qandli diabetning 2-turi bilan og‘rigan bemorda nahordagi glyukoza 8,2 mmol/l, HbA~1c~ = 8,5 %.", "ask": "HbA~1c~ qanday hosil bo‘ladi va u nimani ko‘rsatadi? Uglevodlarning qaysi xossasi bilan bog‘liq?", "answer": "Glyukozaning ochiq (aldegid) shakli gemoglobin β-zanjiri N-uchidagi valinning aminoguruhi bilan fermentsiz kondensatsiyalanadi (Shiff asosi → Amadori qayta guruhlanishi) — **glikirlangan gemoglobin** hosil bo‘ladi. Reaksiya qon glyukozasi konsentratsiyasiga va vaqtga bog‘liq, eritrotsitlar ≈ 120 kun yashagani uchun HbA~1c~ oxirgi 2–3 oydagi o‘rtacha glikemiyani aks ettiradi. 8,5 % — diabet yomon nazorat qilinmoqda (maqsad odatda < 7 %); davolash tuzatilishi kerak."},
+  {"title": "Masala 3", "text": "Chuqur venalar trombozi bo‘lgan bemorga geparin yuborildi. Bir necha soatdan keyin qon ketish belgilari paydo bo‘ldi.", "ask": "Geparinning kimyoviy tuzilishi va ta’sir mexanizmini tushuntiring. Antidot qanday ta’sir qiladi?", "answer": "Geparin — glyukozamin va uron kislotalardan tuzilgan, ko‘p sulfatlangan glikozaminoglikan; u eng kuchli manfiy zaryadli biomolekula. Maxsus pentasaxarid ketma-ketligi bilan **antitrombin III** ga bog‘lanib, uning trombin va Xa omilni nofaol qilish tezligini ming martalab oshiradi — qon ivishi sekinlashadi. Antidot — musbat zaryadli oqsil **protamin sulfat**: u geparin bilan elektrostatik kompleks hosil qilib, uni neytrallaydi."}
+ ],
+ "cards": [
+  {"front": "Aldoza va ketoza", "back": "Aldegid (glyukoza) yoki keto (fruktoza) guruh tutgan monosaxarid"},
+  {"front": "Epimerlar", "back": "Bitta xiral markazda farq qiladigan stereoizomerlar (glyukoza–galaktoza, C-4)"},
+  {"front": "Anomerlar", "back": "C-1 dagi OH holati bilan farq qiladigan α- va β-siklik shakllar"},
+  {"front": "Mutarotatsiya", "back": "Eritmada α- va β-anomerlarning o‘zaro o‘tishi tufayli burish burchagining o‘zgarishi"},
+  {"front": "Glyukuron kislota", "back": "Glyukozaning C-6 oksidlanish mahsuloti; konyugatsiya (zararsizlantirish)"},
+  {"front": "Maltoza", "back": "Glyukoza + glyukoza, α-1,4; qaytaruvchi"},
+  {"front": "Saxaroza", "back": "Glyukoza + fruktoza, α-1,β-2; qaytarmaydigan"},
+  {"front": "Glikogen", "back": "Ko‘p tarmoqli (α-1,4 + α-1,6) hayvon zaxira polisaxaridi"},
+  {"front": "Sellyuloza", "back": "β-1,4-glyukan; odamda hazm bo‘lmaydi — kletchatka"},
+  {"front": "Geparin", "back": "Ko‘p sulfatlangan glikozaminoglikan; antitrombin III orqali antikoagulyant"}
+ ]
+}

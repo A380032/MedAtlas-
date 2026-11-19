@@ -1,0 +1,114 @@
+{
+ "id": "08",
+ "no": 8,
+ "title": "Dispers sistemalar",
+ "goals": [
+  {"type": "p", "text": "Talabaga dispers sistemalarning ta’rifi va tasnifi, kolloid eritmalarni olish va tozalash usullari, kolloid zarracha (mitsella) tuzilishi, elektrokinetik potensial va elektrokinetik hodisalar, kolloid sistemalarning molekulyar-kinetik va optik xossalari, barqarorligi va koagulyatsiyasi, dag‘al dispers sistemalar va kolloid sirt faol moddalar haqida bilim berish hamda ularni tibbiyot bilan bog‘lash."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["dispers faza va dispers muhit, dispers sistemalarning tasnifini;", "kolloid eritmalarni dispersiyalash va kondensatsiya usullarida olishni, dializ va ultrafiltratsiyani;", "mitsella tuzilishini, termodinamik va elektrokinetik (ζ) potensialni;", "elektroforez va elektroosmosni;", "Broun harakati, diffuziya, sedimentatsiya va Tindal effektini;", "kolloidlarning barqarorligi, koagulyatsiya va Shulse–Gardi qoidasini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["berilgan reaksiya bo‘yicha mitsella formulasini yozish;", "elektrolitning koagullovchi ta’sirini Shulse–Gardi qoidasi bo‘yicha baholash;", "kolloid sistemalarni haqiqiy eritmalardan farqlash;", "dispers sistemalar xossalarining klinik ahamiyatini (EChT, dializ, elektroforez) tushuntirish."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Zarracha o‘lchami: haqiqiy eritma < **1 nm**, kolloid eritma **1–100 nm**, dag‘al dispers sistema > **100 nm**. Kolloidlarni Tindal effekti (yorug‘lik konusi) bo‘yicha haqiqiy eritmalardan ajratish mumkin."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Mitsella “matryoshka”si: **yadro → potensial hosil qiluvchi ionlar → adsorbsion qavat qarshi ionlari → (granula) → diffuz qavat qarshi ionlari → (mitsella)**. Mitsella butunicha elektroneytral, granula zaryadli."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Shulse–Gardi qoidasi bo‘yicha koagulyatsiyani **granula zaryadiga qarama-qarshi** zaryadli ion chaqiradi va uning kuchi zaryad ortishi bilan keskin oshadi: 1 : 2 : 3 zaryadli ionlar uchun koagulyatsiya bo‘sag‘asi ≈ 730 : 11 : 1."}
+ ],
+ "sections": [
+  {"title": "1. Dispers sistemalar: ta’rifi va tasnifi", "blocks": [
+   {"type": "p", "text": "**Dispers sistema** — bir modda (**dispers faza**) mayda zarrachalar holida boshqa modda (**dispers muhit**) ichida taqsimlangan geterogen sistema. Dispers fazaning maydalanganlik darajasi **dispersligi** (D = 1 / a, a — zarracha o‘lchami) bilan ifodalanadi."},
+   {"type": "table", "title": "Jadval 8.1. Dispers sistemalarning zarracha o‘lchami bo‘yicha tasnifi", "head": ["Sistema", "Zarracha o‘lchami", "Xossalari", "Misollar"], "rows": [["Haqiqiy (molekulyar, ionli) eritmalar", "< 1 nm", "gomogen, tiniq, barqaror, filtr va membranadan o‘tadi", "NaCl, glyukoza eritmasi"], ["Kolloid eritmalar (zollar)", "1–100 nm", "mikrogeterogen, Tindal effekti, filtrdan o‘tadi, membranadan o‘tmaydi", "oqsil eritmalari, kumush zoli, qon plazmasi"], ["Dag‘al dispers sistemalar", "> 100 nm", "loyqa, beqaror (cho‘kadi yoki qatlamlarga ajraladi), filtrdan o‘tmaydi", "suspenziya, emulsiya, ko‘pik"]]},
+   {"type": "table", "title": "Jadval 8.2. Faza va muhit agregat holati bo‘yicha tasnif", "head": ["Dispers muhit", "Dispers faza", "Nomi", "Misol"], "rows": [["Gaz", "suyuq", "aerozol (tuman)", "ingalyatsion dorilar"], ["Gaz", "qattiq", "aerozol (tutun, chang)", "kukunli ingalyatorlar"], ["Suyuq", "gaz", "ko‘pik", "simetikon bilan parchalanadigan ichak ko‘pigi"], ["Suyuq", "suyuq", "emulsiya", "sut, parenteral oziqlantirish yog‘ emulsiyalari"], ["Suyuq", "qattiq", "suspenziya, zol", "BaSO~4~ kontrast suspenziyasi, protargol"], ["Qattiq", "suyuq", "gel", "jelatina, agar"]]},
+   {"type": "p", "text": "Dispers faza va muhit o‘zaro ta’siriga ko‘ra **liofil** (zarracha erituvchi bilan kuchli ta’sirlashadi, o‘z-o‘zidan hosil bo‘ladi va barqaror: oqsillar, kraxmal eritmalari) va **liofob** (ta’sirlashuv kuchsiz, barqarorlashtiruvchi kerak: metall zollari, AgI zoli) sistemalar farqlanadi."}
+  ]},
+  {"title": "2. Kolloid eritmalarni olish va tozalash", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Dispersiyalash usullari** — yirik zarrachalarni maydalash: mexanik (kolloid tegirmon), ultratovush, elektr yoyi (Bredig usuli — metall zollari), **peptizatsiya** (cho‘kmani elektrolit yoki SFM ta’sirida kolloid holatga o‘tkazish).", "**Kondensatsiya usullari** — molekula va ionlarni birlashtirib zarracha hosil qilish: fizik (erituvchini almashtirish — oltingugurtning spirtli eritmasini suvga quyish) va kimyoviy (qaytarilish, gidroliz, almashinish reaksiyalari): FeCl~3~ + 3H~2~O → Fe(OH)~3~ + 3HCl (qaynoq suvda)."]},
+   {"type": "p", "text": "Kolloid eritmalar past molekulyar aralashmalardan quyidagicha tozalanadi: **dializ** — yarim o‘tkazgich membrana orqali ionlar va kichik molekulalarni toza erituvchiga o‘tkazish; **elektrodializ** — elektr maydonida tezlashtirilgan dializ; **ultrafiltratsiya** — bosim ostida membrana orqali filtrlash."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Gemodializ (“sun’iy buyrak”)** — dializ prinsipiga asoslangan: bemor qoni yarim o‘tkazgich membrananing bir tomonidan, dializ eritmasi ikkinchi tomonidan oqadi. Mochevina, kreatinin, K^+^ kabi kichik molekulalar eritmaga o‘tadi, oqsillar va qon hujayralari qonda qoladi. Suyuqlik ultrafiltratsiya orqali chiqariladi. **Buyrak koptokchalari** ham tabiiy ultrafiltr hisoblanadi."}]}
+  ]},
+  {"title": "3. Kolloid zarracha (mitsella) tuzilishi. Elektrokinetik potensial", "blocks": [
+   {"type": "p", "text": "Liofob zol zarrachasi — **mitsella**. Masalan, AgNO~3~ ga **mo‘l KI** qo‘shilganda: AgNO~3~ + KI → AgI↓ + KNO~3~. AgI kristallari (yadro) Panet–Fayans qoidasiga ko‘ra eritmadagi ortiqcha I^−^ ionlarini adsorbsiyalaydi."},
+   {"type": "p", "text": "Mitsella formulasi: {[mAgI]·nI^−^·(n − x)K^+^}^x−^·xK^+^. Bunda [mAgI] — **agregat (yadro)**; nI^−^ — **potensial hosil qiluvchi ionlar**; (n − x)K^+^ — **adsorbsion qavat** qarshi ionlari; {…}^x−^ — **granula** (manfiy zaryadli); xK^+^ — **diffuz qavat** qarshi ionlari."},
+   {"type": "img", "src": "data/img/tkm/t08_mitsella.webp", "w": 1400, "h": 900, "label": "Rasm 8.1", "caption": "KI mo‘l bo‘lganda hosil bo‘ladigan AgI zoli mitsellasining tuzilishi: yadro, potensial hosil qiluvchi I^−^ ionlari, adsorbsion va diffuz qavatlardagi K^+^ qarshi ionlari (sxema)."},
+   {"type": "p", "text": "Yadro sirti va eritma orasidagi potensial — **termodinamik (φ) potensial**; granula va diffuz qavat orasidagi sirpanish chegarasidagi potensial — **elektrokinetik (ζ, dzeta) potensial**. ζ-potensial qancha katta bo‘lsa, zarrachalar bir-biridan shuncha kuchli itariladi va zol barqarorroq bo‘ladi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Agar AgNO~3~ mo‘l bo‘lsa, potensial hosil qiluvchi ionlar Ag^+^ bo‘ladi va granula **musbat** zaryadlanadi: {[mAgI]·nAg^+^·(n − x)NO~3~^−^}^x+^·xNO~3~^−^. Ya’ni zaryad ishorasi qaysi reagent ortiqcha olinganiga bog‘liq."}]}
+  ]},
+  {"title": "4. Elektrokinetik hodisalar", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Elektroforez** — tashqi elektr maydonida dispers faza zarrachalarining qarama-qarshi zaryadli elektrod tomon harakati.", "**Elektroosmos** — dispers muhitning (suyuqlikning) g‘ovakli to‘siq yoki kapillyar orqali elektr maydonida harakati.", "**Oqim potensiali** — suyuqlik g‘ovakli to‘siq orqali bosim bilan haydalganda potensiallar farqi hosil bo‘lishi (elektroosmosga teskari).", "**Sedimentatsiya potensiali** (Dorn effekti) — zarrachalar cho‘kayotganda hosil bo‘ladigan potensial (elektroforezga teskari)."]},
+   {"type": "p", "text": "Elektroforez tezligi ζ-potensialga proporsional (Gelmgols–Smoluxovskiy tenglamasi). Oqsillar zaryadi pH ga bog‘liq: izoelektrik nuqtadan (pI) yuqori pH da manfiy, past pH da musbat zaryadlanadi."},
+   {"type": "table", "title": "Jadval 8.3. Qon zardobi oqsillarining elektroforetik fraksiyalari (me’yor)", "head": ["Fraksiya", "Ulushi, %", "Asosiy oqsillar"], "rows": [["Albumin", "55–65", "albumin"], ["α~1~-globulinlar", "2–4", "α~1~-antitripsin, kislotali glikoprotein"], ["α~2~-globulinlar", "7–10", "gaptoglobin, α~2~-makroglobulin, seruloplazmin"], ["β-globulinlar", "8–12", "transferrin, LPNP, komplement C3"], ["γ-globulinlar", "12–20", "immunoglobulinlar"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Zardob oqsillari elektroforezi diagnostikada keng qo‘llanadi: **mieloma kasalligi**da γ-sohada tor “M-gradient”, **nefrotik sindrom**da albumin kamayib α~2~ ortadi, **jigar sirrozi**da albumin kamayib, γ-globulinlar keng ortadi, **o‘tkir yallig‘lanish**da α~1~ va α~2~ ortadi. Davolashda **elektroforez** (dori ionlarini teri orqali kiritish) fizioterapiya usuli sifatida ishlatiladi."}]}
+  ]},
+  {"title": "5. Molekulyar-kinetik va optik xossalar", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Broun harakati** — kolloid zarrachalarning muhit molekulalari zarbalari ta’sirida tartibsiz harakati; u kolloidlarni cho‘kishdan saqlaydi (kinetik barqarorlik).", "**Diffuziya** — zarrachalarning yuqori konsentratsiyadan past konsentratsiyaga tomon o‘z-o‘zidan tarqalishi; kolloidlarda haqiqiy eritmalarnikidan ancha sekin.", "**Osmotik bosim** — kolloid eritmalarda juda kichik, chunki zarrachalar soni kam (plazmaning onkotik bosimi ≈ 3,5–4 kPa).", "**Sedimentatsiya** — zarrachalarning og‘irlik kuchi ta’sirida cho‘kishi; ultrasentrifugada tezlashadi va oqsillarning molekulyar massasini aniqlashga imkon beradi."]},
+   {"type": "p", "text": "**Optik xossalari:** kolloid zarrachalar yorug‘likni sochadi. Kolloid eritmadan yon tomondan yorug‘lik dastasi o‘tkazilganda yorug‘ konus ko‘rinadi — **Tindal effekti** (haqiqiy eritmada kuzatilmaydi). **Reley qonuniga** ko‘ra sochilish to‘lqin uzunligining 4-darajasiga teskari proporsional — shuning uchun qisqa to‘lqinli ko‘k nur kuchliroq sochiladi (osmon ko‘k ko‘rinishi). Kolloid zarrachalar **ultramikroskop** va elektron mikroskopda ko‘rinadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Eritrotsitlar cho‘kish tezligi (EChT)** — qonning dispers sistema sifatidagi sedimentatsiya xossasiga asoslangan: yallig‘lanishda fibrinogen va globulinlar ko‘payib, eritrotsitlar “tanga ustunlari” bo‘lib yopishadi va tezroq cho‘kadi. Me’yor: erkaklarda 2–10 mm/soat, ayollarda 2–15 mm/soat."}]}
+  ]},
+  {"title": "6. Kolloid sistemalarning barqarorligi. Koagulyatsiya", "blocks": [
+   {"type": "p", "text": "**Kinetik (sedimentatsion) barqarorlik** — zarrachalarning cho‘kmasligi (Broun harakati hisobiga); **agregativ barqarorlik** — zarrachalarning yopishib yiriklashmasligi. Agregativ barqarorlik omillari: zarrachalarning bir xil zaryadi (ζ-potensial), **solvat (gidrat) qobiq** va **himoya kolloidlari**."},
+   {"type": "p", "text": "**Koagulyatsiya** — kolloid zarrachalarning yopishib yiriklashishi va cho‘kishi. Uni harorat, aralashtirish, qarama-qarshi zaryadli zol qo‘shish va ko‘pincha **elektrolitlar** chaqiradi. Koagulyatsiyani boshlash uchun zarur elektrolitning eng kam konsentratsiyasi **koagulyatsiya bo‘sag‘asi** (C~k~, mmol/l) deyiladi."},
+   {"type": "p", "text": "**Shulse–Gardi qoidasi:** koagulyatsiyani granula zaryadiga qarama-qarshi zaryadli ion (koagullovchi ion) chaqiradi; uning koagullash kuchi zaryadning taxminan **6-darajasiga** proporsional. Bir, ikki va uch zaryadli ionlar uchun bo‘sag‘alar nisbati 1 : (1/2)^6^ : (1/3)^6^ ≈ 730 : 11 : 1."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Himoya kolloidlari** (oqsillar, jelatina) liofob zol zarrachalarini o‘rab, koagulyatsiyadan saqlaydi. Qonda oqsillar kam eriydigan tuzlar (kalsiy fosfat, xolesterin) zarrachalarini kolloid holda ushlab turadi; himoya xossasi susaysa, **tosh** hosil bo‘lishi osonlashadi. Protargol, kollargol — oqsil bilan himoyalangan kumush zollari."}]}
+  ]},
+  {"title": "7. Dag‘al dispers sistemalar va kolloid SFM", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Suspenziyalar** — suyuqlikda qattiq zarrachalar (> 100 nm): BaSO~4~ kontrast vositasi, ko‘plab bolalar dori shakllari; ishlatishdan oldin chayqatiladi.", "**Emulsiyalar** — bir suyuqlik ikkinchisida tomchilar holida: **to‘g‘ri** (moy suvda, sut kabi) va **teskari** (suv moyda, sariyog‘ kabi). Ularni **emulgatorlar** (SFM) barqarorlashtiradi.", "**Ko‘piklar** va **aerozollar** — gazli dispers sistemalar; ingalyatsion dorilar aerozol holida beriladi."]},
+   {"type": "p", "text": "**Kolloid SFM** (sovunlar, o‘t kislotalari tuzlari, fosfolipidlar) ma’lum konsentratsiyadan — **mitsella hosil bo‘lishining kritik konsentratsiyasi** (MHKK) dan — yuqorida molekulalar mitsellalarga birlashadi: gidrofob dumlar ichkarida, gidrofil boshlar tashqarida. Mitsella ichida suvda erimaydigan moddalar (yog‘lar, xolesterin) “eriydi” — **solyubilizatsiya**."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Ichakda **o‘t kislotalari tuzlari** yog‘larni mayda tomchilarga emulsiyalaydi (lipaza ta’sir yuzasi ortadi) va yog‘ hazm mahsulotlarini aralash mitsellalar holida so‘rilish joyiga yetkazadi. O‘t yetishmasa (mexanik sariqlik), yog‘lar va yog‘da eruvchi vitaminlar (A, D, E, K) so‘rilmaydi — **steatoreya** rivojlanadi. Parenteral oziqlantirishda tuxum fosfolipidlari bilan barqarorlashtirilgan **yog‘ emulsiyalari** vena ichiga yuboriladi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: mitsella formulasini yozish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Reaksiya tenglamasini yozib, kam eriydigan moddani (yadro) aniqlang.", "Qaysi reagent mo‘l olinganini aniqlang: uning yadro tarkibiga kiradigan ioni potensial hosil qiluvchi ion bo‘ladi (Panet–Fayans qoidasi).", "Mo‘l reagentning ikkinchi ioni — qarshi ion; uning bir qismi adsorbsion, qolgani diffuz qavatda.", "Formulani yozing: {[m(yadro)]·n(potensial hosil qiluvchi)·(n − x)(qarshi ion)}^zaryad^·x(qarshi ion).", "Granula zaryadi ishorasini va elektroforezda qaysi elektrodga harakatlanishini ko‘rsating."]}]},
+  {"title": "Ko‘nikma: koagullovchi ionni aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Granula zaryadi ishorasini aniqlang.", "Qo‘shilgan elektrolitdan granulaga qarama-qarshi zaryadli ionni tanlang — u koagullovchi ion.", "Ionlarni zaryadi bo‘yicha taqqoslang: zaryad qancha katta bo‘lsa, bo‘sag‘a shuncha kichik.", "Shulse–Gardi nisbatidan (≈ 730 : 11 : 1) foydalanib, kerakli konsentratsiyani taxmin qiling.", "Xulosa: qaysi elektrolit eng kuchli koagullovchi ekanini yozing."]}]}
+ ],
+ "questions": [
+  "Dispers sistema, dispers faza va dispers muhit nima?",
+  "Dispers sistemalar zarracha o‘lchami va agregat holati bo‘yicha qanday tasniflanadi?",
+  "Liofil va liofob kolloidlarning farqi nimada?",
+  "Kolloid eritmalar qanday usullar bilan olinadi?",
+  "Dializ va ultrafiltratsiya nima? Gemodializ qanday ishlaydi?",
+  "AgI zoli misolida mitsella tuzilishini tushuntiring.",
+  "Termodinamik va elektrokinetik potensiallarning farqi nimada?",
+  "Elektroforez va elektroosmos nima? Ularning tibbiy ahamiyati qanday?",
+  "Kolloidlarning molekulyar-kinetik xossalarini sanang.",
+  "Tindal effekti nima va u nima uchun haqiqiy eritmalarda kuzatilmaydi?",
+  "Kolloidlarning kinetik va agregativ barqarorligi nimaga bog‘liq?",
+  "Shulse–Gardi qoidasini ta’riflang.",
+  "Emulsiya va suspenziyalar, o‘t kislotalarining emulgatorlik vazifasi haqida gapiring."
+ ],
+ "quiz": [
+  {"q": "Kolloid eritmalar zarrachalarining o‘lchami qancha?", "options": ["1–100 nm", "< 1 nm", "> 1 mkm", "0,01–0,1 nm", "1–10 mm"], "answer": 0},
+  {"q": "Qaysi belgi kolloid eritmaga xos?", "options": ["Tindal effekti", "Gomogenlik", "Membranadan erkin o‘tish", "Yuqori osmotik bosim", "Tez cho‘kish"], "answer": 0},
+  {"q": "Sut qanday dispers sistema?", "options": ["Emulsiya", "Suspenziya", "Ko‘pik", "Aerozol", "Gel"], "answer": 0},
+  {"q": "Kolloid eritmalarni kichik molekulali aralashmalardan tozalash usuli qaysi?", "options": ["Dializ", "Peptizatsiya", "Koagulyatsiya", "Kondensatsiya", "Sedimentatsiya"], "answer": 0},
+  {"q": "AgNO~3~ ga mo‘l KI qo‘shilganda potensial hosil qiluvchi ion qaysi?", "options": ["I^−^", "Ag^+^", "K^+^", "NO~3~^−^", "OH^−^"], "answer": 0},
+  {"q": "Mo‘l KI bilan olingan AgI zoli granulasi qanday zaryadga ega?", "options": ["Manfiy", "Musbat", "Neytral", "O‘zgaruvchan", "Zaryad pH ga bog‘liq emas, har doim musbat"], "answer": 0},
+  {"q": "Granula va diffuz qavat chegarasidagi potensial qanday ataladi?", "options": ["Elektrokinetik (ζ) potensial", "Termodinamik potensial", "Membrana potensiali", "Redoks potensial", "Diffuziya potensiali"], "answer": 0},
+  {"q": "Elektr maydonida dispers faza zarrachalarining harakati qanday ataladi?", "options": ["Elektroforez", "Elektroosmos", "Oqim potensiali", "Dializ", "Sedimentatsiya potensiali"], "answer": 0},
+  {"q": "Qon zardobi elektroforezida eng katta fraksiya qaysi?", "options": ["Albumin", "γ-globulinlar", "α~1~-globulinlar", "β-globulinlar", "Fibrinogen"], "answer": 0},
+  {"q": "Mieloma kasalligida elektroforegrammada nima kuzatiladi?", "options": ["γ-sohada M-gradient", "Albumin ortishi", "α~1~ yo‘qolishi", "β-fraksiya yo‘qolishi", "O‘zgarish bo‘lmaydi"], "answer": 0},
+  {"q": "Shulse–Gardi qoidasiga ko‘ra koagullovchi ion qanday bo‘ladi?", "options": ["Granula zaryadiga qarama-qarshi zaryadli", "Granula bilan bir xil zaryadli", "Neytral molekula", "Faqat bir zaryadli kation", "Faqat H^+^"], "answer": 0},
+  {"q": "Manfiy zaryadli zolni qaysi ion eng kuchli koagullaydi?", "options": ["Al^3+^", "Na^+^", "Ca^2+^", "Cl^−^", "PO~4~^3−^"], "answer": 0},
+  {"q": "Kolloidlarni koagulyatsiyadan saqlaydigan moddalar qanday ataladi?", "options": ["Himoya kolloidlari", "Koagulyantlar", "Indikatorlar", "Katalizatorlar", "Ingibitorlar"], "answer": 0},
+  {"q": "EChT ning ayollardagi me’yori qancha?", "options": ["2–15 mm/soat", "20–40 mm/soat", "0–1 mm/soat", "50–60 mm/soat", "30–35 mm/soat"], "answer": 0},
+  {"q": "Ichakda yog‘larni emulsiyalaydigan moddalar qaysi?", "options": ["O‘t kislotalari tuzlari", "Me’da shirasi HCl i", "Pepsin", "Glyukoza", "Mochevina"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Laboratoriyada FeCl~3~ eritmasini qaynoq suvga tomizib, temir(III) gidroksid zoli olindi. Bunda zarracha sirtida FeO^+^ ionlari adsorbsiyalanadi, qarshi ion — Cl^−^.", "ask": "Mitsella formulasini yozing. Zolni koagullash uchun NaCl, Na~2~SO~4~ va Na~3~PO~4~ dan qaysi biri eng kam miqdorda kerak?", "answer": "{[mFe(OH)~3~]·nFeO^+^·(n − x)Cl^−^}^x+^·xCl^−^ — granula musbat zaryadli. Koagulyatsiyani anionlar chaqiradi; Shulse–Gardi qoidasiga ko‘ra uch zaryadli PO~4~^3−^ eng kuchli, keyin SO~4~^2−^, eng kuchsizi Cl^−^. Demak eng kam miqdorda **Na~3~PO~4~** kerak (bo‘sag‘alar nisbati taxminan 1 : 11 : 730 tartibida teskari)."},
+  {"title": "Masala 2", "text": "Bemorning qon zardobi oqsillari elektroforezida: albumin 38 %, α~1~ 4 %, α~2~ 8 %, β 10 %, γ-sohada tor yuqori cho‘qqi (40 %). Bemor suyaklardagi og‘riqdan shikoyat qiladi, EChT 75 mm/soat.", "ask": "Elektroforegrammani talqin qiling. EChT nima uchun keskin oshgan?", "answer": "γ-sohadagi tor yuqori cho‘qqi — monoklonal immunoglobulin (M-gradient), bu **mieloma kasalligi**ga xos; albumin nisbatan kamaygan. Plazmada musbat zaryadli va yirik oqsillar (paraprotein) ko‘payishi eritrotsitlarning manfiy zaryadini (ζ-potensialini) neytrallaydi, ular “tanga ustunlari” bo‘lib yopishadi va tez cho‘kadi — EChT keskin ortadi. Tashxis immunofiksatsiya, siydikda Bens-Jons oqsili va suyak iligi tekshiruvi bilan tasdiqlanadi."},
+  {"title": "Masala 3", "text": "Mexanik sariqlik bilan og‘rigan bemorda najas oqargan, yog‘li va yaltiroq; qonda protrombin vaqti uzaygan.", "ask": "Bu belgilarni dispers sistemalar va kolloid SFM xossalari bilan tushuntiring.", "answer": "O‘t yo‘li berkilgani uchun o‘t kislotalari tuzlari ichakka tushmaydi. Ular kolloid SFM sifatida yog‘larni emulsiyalaydi va aralash mitsellalar hosil qilib, yog‘lar va yog‘da eruvchi vitaminlarni solyubilizatsiya qiladi. O‘t bo‘lmasa yog‘ yirik tomchilar holida qoladi, lipaza yaxshi ta’sir qilmaydi — **steatoreya**; vitamin K so‘rilmaydi, jigarda protrombin kam sintezlanadi — qon ivishi sekinlashadi. Davolash: o‘t yo‘lini tiklash, vitamin K ni parenteral yuborish."}
+ ],
+ "cards": [
+  {"front": "Dispers sistema", "back": "Dispers faza zarrachalari dispers muhitda taqsimlangan geterogen sistema"},
+  {"front": "Kolloid zarracha o‘lchami", "back": "1–100 nm"},
+  {"front": "Liofil kolloid", "back": "Zarracha erituvchi bilan kuchli ta’sirlashadi, barqaror (oqsil eritmalari)"},
+  {"front": "Dializ", "back": "Kolloid eritmani yarim o‘tkazgich membrana orqali kichik molekulalardan tozalash"},
+  {"front": "Mitsella", "back": "Yadro + potensial hosil qiluvchi ionlar + adsorbsion va diffuz qavat qarshi ionlari"},
+  {"front": "ζ-potensial", "back": "Granula va diffuz qavat orasidagi sirpanish chegarasidagi potensial"},
+  {"front": "Elektroforez", "back": "Elektr maydonida zarrachalarning elektrod tomon harakati"},
+  {"front": "Tindal effekti", "back": "Kolloid eritmada yorug‘lik sochilishi tufayli yorug‘ konus ko‘rinishi"},
+  {"front": "Shulse–Gardi qoidasi", "back": "Koagullovchi ion — granulaga qarama-qarshi zaryadli; kuchi zaryad bilan keskin ortadi (≈ 730 : 11 : 1)"},
+  {"front": "Solyubilizatsiya", "back": "SFM mitsellalari ichida suvda erimaydigan moddalarning “erishi”"}
+ ]
+}

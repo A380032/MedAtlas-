@@ -1,0 +1,114 @@
+{
+ "id": "08",
+ "no": 8,
+ "title": "Disperse systems",
+ "goals": [
+  {"type": "p", "text": "To give the student knowledge of the definition and classification of disperse systems, the methods of preparing and purifying colloidal solutions, the structure of a colloidal particle (micelle), the electrokinetic potential and electrokinetic phenomena, the molecular-kinetic and optical properties of colloidal systems, their stability and coagulation, coarse disperse systems and colloidal surfactants, and to link them with medicine."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the dispersed phase and dispersion medium, and the classification of disperse systems;", "the preparation of colloidal solutions by dispersion and condensation, dialysis and ultrafiltration;", "the structure of the micelle, the thermodynamic and electrokinetic (ζ) potential;", "electrophoresis and electroosmosis;", "Brownian motion, diffusion, sedimentation and the Tyndall effect;", "the stability of colloids, coagulation and the Schulze–Hardy rule."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["write the formula of a micelle for a given reaction;", "assess the coagulating action of an electrolyte by the Schulze–Hardy rule;", "distinguish colloidal systems from true solutions;", "explain the clinical significance of the properties of disperse systems (ESR, dialysis, electrophoresis)."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Particle size: true solution < **1 nm**, colloidal solution **1–100 nm**, coarse disperse system > **100 nm**. Colloids can be told apart from true solutions by the Tyndall effect (a cone of light)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "The micelle “nesting doll”: **core → potential-determining ions → counterions of the adsorption layer → (granule) → counterions of the diffuse layer → (micelle)**. The micelle as a whole is electrically neutral; the granule is charged."},
+  {"kind": "diqqat", "label": "Caution", "text": "By the Schulze–Hardy rule, coagulation is caused by the ion with a charge **opposite to that of the granule**, and its strength rises sharply with charge: for ions with charges 1 : 2 : 3 the coagulation thresholds are ≈ 730 : 11 : 1."}
+ ],
+ "sections": [
+  {"title": "1. Disperse systems: definition and classification", "blocks": [
+   {"type": "p", "text": "A **disperse system** is a heterogeneous system in which one substance (the **dispersed phase**) is distributed as small particles within another substance (the **dispersion medium**). The degree of division of the dispersed phase is expressed by its **dispersity** (D = 1 / a, where a is the particle size)."},
+   {"type": "table", "title": "Table 8.1. Classification of disperse systems by particle size", "head": ["System", "Particle size", "Properties", "Examples"], "rows": [["True (molecular, ionic) solutions", "< 1 nm", "homogeneous, clear, stable, pass through filters and membranes", "NaCl solution, glucose solution"], ["Colloidal solutions (sols)", "1–100 nm", "microheterogeneous, Tyndall effect, pass through filters but not membranes", "protein solutions, silver sol, blood plasma"], ["Coarse disperse systems", "> 100 nm", "turbid, unstable (settle or separate into layers), do not pass through filters", "suspension, emulsion, foam"]]},
+   {"type": "table", "title": "Table 8.2. Classification by the physical state of phase and medium", "head": ["Dispersion medium", "Dispersed phase", "Name", "Example"], "rows": [["Gas", "liquid", "aerosol (fog)", "inhaled drugs"], ["Gas", "solid", "aerosol (smoke, dust)", "dry powder inhalers"], ["Liquid", "gas", "foam", "intestinal foam broken down by simethicone"], ["Liquid", "liquid", "emulsion", "milk, lipid emulsions for parenteral nutrition"], ["Liquid", "solid", "suspension, sol", "BaSO~4~ contrast suspension, protargol"], ["Solid", "liquid", "gel", "gelatin, agar"]]},
+   {"type": "p", "text": "According to the interaction between the dispersed phase and the medium, **lyophilic** systems (the particle interacts strongly with the solvent, forms spontaneously and is stable: solutions of proteins and starch) and **lyophobic** systems (weak interaction, a stabilizer is needed: metal sols, AgI sol) are distinguished."}
+  ]},
+  {"title": "2. Preparation and purification of colloidal solutions", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Dispersion methods** — breaking up large particles: mechanical (colloid mill), ultrasound, electric arc (Bredig’s method — metal sols), **peptization** (converting a precipitate into the colloidal state with an electrolyte or a surfactant).", "**Condensation methods** — joining molecules and ions into particles: physical (solvent replacement — pouring an alcoholic solution of sulfur into water) and chemical (reduction, hydrolysis, exchange reactions): FeCl~3~ + 3H~2~O → Fe(OH)~3~ + 3HCl (in boiling water)."]},
+   {"type": "p", "text": "Colloidal solutions are purified from low-molecular impurities as follows: **dialysis** — passing ions and small molecules through a semipermeable membrane into pure solvent; **electrodialysis** — dialysis speeded up by an electric field; **ultrafiltration** — filtration through a membrane under pressure."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Hemodialysis (the “artificial kidney”)** is based on the principle of dialysis: the patient’s blood flows on one side of a semipermeable membrane and the dialysis solution on the other. Small molecules such as urea, creatinine and K^+^ pass into the solution, while proteins and blood cells stay in the blood. Fluid is removed by ultrafiltration. The **renal glomeruli** are a natural ultrafilter as well."}]}
+  ]},
+  {"title": "3. Structure of the colloidal particle (micelle). The electrokinetic potential", "blocks": [
+   {"type": "p", "text": "A particle of a lyophobic sol is a **micelle**. For example, when **excess KI** is added to AgNO~3~: AgNO~3~ + KI → AgI↓ + KNO~3~. According to the Paneth–Fajans rule, the AgI crystals (the core) adsorb the excess I^−^ ions from the solution."},
+   {"type": "p", "text": "Micelle formula: {[mAgI]·nI^−^·(n − x)K^+^}^x−^·xK^+^. Here [mAgI] is the **aggregate (core)**; nI^−^ are the **potential-determining ions**; (n − x)K^+^ are the counterions of the **adsorption layer**; {…}^x−^ is the **granule** (negatively charged); xK^+^ are the counterions of the **diffuse layer**."},
+   {"type": "img", "src": "data/img/tkm/t08_mitsella.webp", "w": 1400, "h": 900, "label": "Figure 8.1", "caption": "Structure of a micelle of the AgI sol formed with excess KI: the core, the potential-determining I^−^ ions and the K^+^ counterions of the adsorption and diffuse layers (diagram)."},
+   {"type": "p", "text": "The potential between the core surface and the solution is the **thermodynamic (φ) potential**; the potential at the slipping boundary between the granule and the diffuse layer is the **electrokinetic (ζ, zeta) potential**. The greater the ζ-potential, the more strongly the particles repel each other and the more stable the sol."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "If AgNO~3~ is in excess, the potential-determining ions are Ag^+^ and the granule is **positively** charged: {[mAgI]·nAg^+^·(n − x)NO~3~^−^}^x+^·xNO~3~^−^. That is, the sign of the charge depends on which reagent is in excess."}]}
+  ]},
+  {"title": "4. Electrokinetic phenomena", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Electrophoresis** — movement of particles of the dispersed phase in an external electric field toward the oppositely charged electrode.", "**Electroosmosis** — movement of the dispersion medium (the liquid) through a porous barrier or capillary in an electric field.", "**Streaming potential** — a potential difference that arises when a liquid is forced through a porous barrier under pressure (the reverse of electroosmosis).", "**Sedimentation potential** (Dorn effect) — the potential arising while particles settle (the reverse of electrophoresis)."]},
+   {"type": "p", "text": "The rate of electrophoresis is proportional to the ζ-potential (the Helmholtz–Smoluchowski equation). The charge of proteins depends on pH: above the isoelectric point (pI) they are negatively charged, below it positively."},
+   {"type": "table", "title": "Table 8.3. Electrophoretic fractions of serum proteins (normal)", "head": ["Fraction", "Share, %", "Main proteins"], "rows": [["Albumin", "55–65", "albumin"], ["α~1~-globulins", "2–4", "α~1~-antitrypsin, acid glycoprotein"], ["α~2~-globulins", "7–10", "haptoglobin, α~2~-macroglobulin, ceruloplasmin"], ["β-globulins", "8–12", "transferrin, LDL, complement C3"], ["γ-globulins", "12–20", "immunoglobulins"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Serum protein electrophoresis is widely used in diagnosis: in **multiple myeloma** a narrow “M-spike” appears in the γ region, in **nephrotic syndrome** albumin falls and α~2~ rises, in **liver cirrhosis** albumin falls and the γ-globulins rise broadly, and in **acute inflammation** α~1~ and α~2~ rise. In treatment, **electrophoresis** (delivery of drug ions through the skin) is used as a physiotherapy method."}]}
+  ]},
+  {"title": "5. Molecular-kinetic and optical properties", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Brownian motion** — the random movement of colloidal particles under the impacts of the molecules of the medium; it keeps colloids from settling (kinetic stability).", "**Diffusion** — the spontaneous spreading of particles from higher to lower concentration; in colloids it is much slower than in true solutions.", "**Osmotic pressure** — very small in colloidal solutions because the number of particles is small (the oncotic pressure of plasma is ≈ 3.5–4 kPa).", "**Sedimentation** — the settling of particles under gravity; it is accelerated in an ultracentrifuge and makes it possible to determine the molecular mass of proteins."]},
+   {"type": "p", "text": "**Optical properties:** colloidal particles scatter light. When a beam of light is passed through a colloidal solution from the side, a bright cone is seen — the **Tyndall effect** (not seen in a true solution). By **Rayleigh’s law** scattering is inversely proportional to the 4th power of the wavelength — so short-wavelength blue light is scattered more strongly (why the sky looks blue). Colloidal particles are visible in the **ultramicroscope** and the electron microscope."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The **erythrocyte sedimentation rate (ESR)** is based on the sedimentation property of blood as a disperse system: in inflammation fibrinogen and globulins increase, red cells stick together in “rouleaux” and settle faster. Normal values: men 2–10 mm/h, women 2–15 mm/h."}]}
+  ]},
+  {"title": "6. Stability of colloidal systems. Coagulation", "blocks": [
+   {"type": "p", "text": "**Kinetic (sedimentation) stability** is the resistance of particles to settling (thanks to Brownian motion); **aggregative stability** is the resistance of particles to sticking together and growing. The factors of aggregative stability are the like charge of the particles (ζ-potential), the **solvate (hydrate) shell** and **protective colloids**."},
+   {"type": "p", "text": "**Coagulation** is the sticking together, growth and settling of colloidal particles. It is caused by temperature, stirring, adding an oppositely charged sol and, most often, **electrolytes**. The lowest concentration of an electrolyte needed to start coagulation is called the **coagulation threshold** (C~k~, mmol/L)."},
+   {"type": "p", "text": "**The Schulze–Hardy rule:** coagulation is caused by the ion whose charge is opposite to that of the granule (the coagulating ion); its coagulating power is proportional to roughly the **6th power** of the charge. For singly, doubly and triply charged ions the thresholds are in the ratio 1 : (1/2)^6^ : (1/3)^6^ ≈ 730 : 11 : 1."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Protective colloids** (proteins, gelatin) coat the particles of a lyophobic sol and protect them from coagulation. In the blood, proteins keep particles of poorly soluble salts (calcium phosphate, cholesterol) in colloidal form; when this protective property weakens, **stone** formation becomes easier. Protargol and collargol are silver sols protected by protein."}]}
+  ]},
+  {"title": "7. Coarse disperse systems and colloidal surfactants", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Suspensions** — solid particles (> 100 nm) in a liquid: the BaSO~4~ contrast agent and many pediatric dosage forms; they are shaken before use.", "**Emulsions** — one liquid as droplets in another: **direct** (oil in water, like milk) and **inverse** (water in oil, like butter). They are stabilized by **emulsifiers** (surfactants).", "**Foams** and **aerosols** — disperse systems with gas; inhaled drugs are given as aerosols."]},
+   {"type": "p", "text": "**Colloidal surfactants** (soaps, bile salts, phospholipids) above a certain concentration — the **critical micelle concentration** (CMC) — join into micelles: hydrophobic tails inside, hydrophilic heads outside. Water-insoluble substances (fats, cholesterol) “dissolve” inside the micelle — **solubilization**."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In the intestine, **bile salts** emulsify fats into small droplets (increasing the surface on which lipase acts) and carry the products of fat digestion to the site of absorption as mixed micelles. When bile is lacking (obstructive jaundice), fats and fat-soluble vitamins (A, D, E, K) are not absorbed — **steatorrhea** develops. In parenteral nutrition, **lipid emulsions** stabilized with egg phospholipids are given intravenously."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: writing the formula of a micelle", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Write the reaction equation and identify the poorly soluble substance (the core).", "Find which reagent is in excess: its ion that is part of the core becomes the potential-determining ion (Paneth–Fajans rule).", "The other ion of the excess reagent is the counterion; part of it is in the adsorption layer, the rest in the diffuse layer.", "Write the formula: {[m(core)]·n(potential-determining ion)·(n − x)(counterion)}^charge^·x(counterion).", "Show the sign of the granule charge and the electrode toward which it moves in electrophoresis."]}]},
+  {"title": "Skill: identifying the coagulating ion", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Determine the sign of the granule charge.", "From the added electrolyte, choose the ion with a charge opposite to the granule — this is the coagulating ion.", "Compare the ions by charge: the greater the charge, the lower the threshold.", "Use the Schulze–Hardy ratio (≈ 730 : 11 : 1) to estimate the required concentration.", "Conclusion: state which electrolyte is the strongest coagulant."]}]}
+ ],
+ "questions": [
+  "What are a disperse system, a dispersed phase and a dispersion medium?",
+  "How are disperse systems classified by particle size and physical state?",
+  "What is the difference between lyophilic and lyophobic colloids?",
+  "By what methods are colloidal solutions prepared?",
+  "What are dialysis and ultrafiltration? How does hemodialysis work?",
+  "Explain the structure of a micelle using the AgI sol as an example.",
+  "What is the difference between the thermodynamic and electrokinetic potentials?",
+  "What are electrophoresis and electroosmosis? What is their medical significance?",
+  "List the molecular-kinetic properties of colloids.",
+  "What is the Tyndall effect and why is it not seen in true solutions?",
+  "What do the kinetic and aggregative stability of colloids depend on?",
+  "State the Schulze–Hardy rule.",
+  "Describe emulsions and suspensions and the emulsifying role of bile acids."
+ ],
+ "quiz": [
+  {"q": "What is the particle size of colloidal solutions?", "options": ["1–100 nm", "< 1 nm", "> 1 μm", "0.01–0.1 nm", "1–10 mm"], "answer": 0},
+  {"q": "Which feature is typical of a colloidal solution?", "options": ["The Tyndall effect", "Homogeneity", "Free passage through membranes", "High osmotic pressure", "Rapid settling"], "answer": 0},
+  {"q": "What kind of disperse system is milk?", "options": ["Emulsion", "Suspension", "Foam", "Aerosol", "Gel"], "answer": 0},
+  {"q": "Which method purifies colloidal solutions from low-molecular impurities?", "options": ["Dialysis", "Peptization", "Coagulation", "Condensation", "Sedimentation"], "answer": 0},
+  {"q": "When excess KI is added to AgNO~3~, which ion is potential-determining?", "options": ["I^−^", "Ag^+^", "K^+^", "NO~3~^−^", "OH^−^"], "answer": 0},
+  {"q": "What charge does the granule of an AgI sol prepared with excess KI have?", "options": ["Negative", "Positive", "Neutral", "Variable", "Always positive regardless of pH"], "answer": 0},
+  {"q": "What is the potential at the boundary between the granule and the diffuse layer called?", "options": ["The electrokinetic (ζ) potential", "The thermodynamic potential", "The membrane potential", "The redox potential", "The diffusion potential"], "answer": 0},
+  {"q": "What is the movement of dispersed-phase particles in an electric field called?", "options": ["Electrophoresis", "Electroosmosis", "Streaming potential", "Dialysis", "Sedimentation potential"], "answer": 0},
+  {"q": "Which is the largest fraction in serum electrophoresis?", "options": ["Albumin", "γ-globulins", "α~1~-globulins", "β-globulins", "Fibrinogen"], "answer": 0},
+  {"q": "What is seen on the electrophoretogram in multiple myeloma?", "options": ["An M-spike in the γ region", "An increase in albumin", "Loss of α~1~", "Loss of the β fraction", "No change"], "answer": 0},
+  {"q": "According to the Schulze–Hardy rule, what is the coagulating ion like?", "options": ["Its charge is opposite to that of the granule", "Its charge is the same as the granule’s", "It is a neutral molecule", "Only a singly charged cation", "Only H^+^"], "answer": 0},
+  {"q": "Which ion coagulates a negatively charged sol most strongly?", "options": ["Al^3+^", "Na^+^", "Ca^2+^", "Cl^−^", "PO~4~^3−^"], "answer": 0},
+  {"q": "What are substances that protect colloids from coagulation called?", "options": ["Protective colloids", "Coagulants", "Indicators", "Catalysts", "Inhibitors"], "answer": 0},
+  {"q": "What is the normal ESR in women?", "options": ["2–15 mm/h", "20–40 mm/h", "0–1 mm/h", "50–60 mm/h", "30–35 mm/h"], "answer": 0},
+  {"q": "Which substances emulsify fats in the intestine?", "options": ["Bile salts", "The HCl of gastric juice", "Pepsin", "Glucose", "Urea"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "In the laboratory an iron(III) hydroxide sol was prepared by adding FeCl~3~ solution dropwise to boiling water. FeO^+^ ions are adsorbed on the particle surface, and the counterion is Cl^−^.", "ask": "Write the formula of the micelle. Which of NaCl, Na~2~SO~4~ and Na~3~PO~4~ is needed in the smallest amount to coagulate the sol?", "answer": "{[mFe(OH)~3~]·nFeO^+^·(n − x)Cl^−^}^x+^·xCl^−^ — the granule is positively charged. Coagulation is caused by anions; by the Schulze–Hardy rule the triply charged PO~4~^3−^ is the strongest, then SO~4~^2−^, and Cl^−^ the weakest. So **Na~3~PO~4~** is needed in the smallest amount (the thresholds are in roughly the reverse order of 1 : 11 : 730)."},
+  {"title": "Problem 2", "text": "Serum protein electrophoresis of a patient: albumin 38 %, α~1~ 4 %, α~2~ 8 %, β 10 %, and a narrow tall peak in the γ region (40 %). The patient complains of bone pain; ESR is 75 mm/h.", "ask": "Interpret the electrophoretogram. Why is the ESR sharply increased?", "answer": "The narrow tall peak in the γ region is a monoclonal immunoglobulin (M-spike), typical of **multiple myeloma**; albumin is relatively reduced. The increase of large, positively charged proteins (paraprotein) in the plasma neutralizes the negative charge (ζ-potential) of the red cells; they stick together in “rouleaux” and settle quickly — the ESR rises sharply. The diagnosis is confirmed by immunofixation, Bence Jones protein in the urine and bone marrow examination."},
+  {"title": "Problem 3", "text": "A patient with obstructive jaundice has pale, fatty, shiny stools, and the prothrombin time is prolonged.", "ask": "Explain these signs using the properties of disperse systems and colloidal surfactants.", "answer": "Because the bile duct is blocked, bile salts do not reach the intestine. As colloidal surfactants they emulsify fats and, by forming mixed micelles, solubilize fats and fat-soluble vitamins. Without bile, fat stays as large droplets and lipase acts poorly — **steatorrhea**; vitamin K is not absorbed and the liver synthesizes little prothrombin — blood clotting slows. Treatment: restore bile flow and give vitamin K parenterally."}
+ ],
+ "cards": [
+  {"front": "Disperse system", "back": "A heterogeneous system in which particles of the dispersed phase are distributed in the dispersion medium"},
+  {"front": "Size of colloidal particles", "back": "1–100 nm"},
+  {"front": "Lyophilic colloid", "back": "The particle interacts strongly with the solvent and is stable (protein solutions)"},
+  {"front": "Dialysis", "back": "Purifying a colloidal solution from small molecules through a semipermeable membrane"},
+  {"front": "Micelle", "back": "Core + potential-determining ions + counterions of the adsorption and diffuse layers"},
+  {"front": "ζ-potential", "back": "The potential at the slipping boundary between the granule and the diffuse layer"},
+  {"front": "Electrophoresis", "back": "Movement of particles toward an electrode in an electric field"},
+  {"front": "Tyndall effect", "back": "A bright cone seen in a colloidal solution because of light scattering"},
+  {"front": "Schulze–Hardy rule", "back": "The coagulating ion is opposite in charge to the granule; its power rises sharply with charge (≈ 730 : 11 : 1)"},
+  {"front": "Solubilization", "back": "“Dissolution” of water-insoluble substances inside surfactant micelles"}
+ ]
+}

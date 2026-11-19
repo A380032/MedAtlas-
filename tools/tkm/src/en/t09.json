@@ -1,0 +1,114 @@
+{
+ "id": "09",
+ "no": 9,
+ "title": "Fundamentals of organic chemistry. Main classes of organic compounds",
+ "goals": [
+  {"type": "p", "text": "To teach the student the theory of the structure of organic compounds, isomerism and stereoisomerism, the electronic effects (inductive and mesomeric) that determine reactivity, the acidity and basicity of organic compounds, oxidation–reduction reactions, the classes of hydrocarbons and of compounds containing heteroatoms, and their medical significance."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["A.M. Butlerov’s theory of chemical structure;", "structural and spatial isomerism, chirality, enantiomers, and D/L and R/S nomenclature;", "inductive and mesomeric effects, conjugation and aromaticity;", "the acidity and basicity of organic compounds according to Brønsted and Lewis;", "the oxidation and reduction of alcohols, aldehydes and other compounds;", "the classes of hydrocarbons and of compounds with the main functional groups."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["identify the functional groups and the class of a compound;", "find a chiral carbon atom and draw the enantiomers;", "explain the effect of substituents on acidity and basicity by electronic effects;", "link the oxidation of organic substances in the body (ethanol, methanol) with medical conditions."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Natural **amino acids belong to the L series**, natural **monosaccharides to the D series**. Enantiomers have the same physical properties, but their biological effects can be completely different (the thalidomide tragedy)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "The oxidation ladder: **alcohol → aldehyde → acid → CO~2~** (primary alcohol); secondary alcohol → **ketone**. In the body: ethanol → acetaldehyde → acetic acid (acetyl-CoA)."},
+  {"kind": "diqqat", "label": "Caution", "text": "Methanol itself is not very toxic, but in the body it is oxidized to **formaldehyde** and **formic acid**: the optic nerve is damaged (blindness) and severe metabolic acidosis develops. The antidote is fomepizole or ethanol (they compete for alcohol dehydrogenase)."}
+ ],
+ "sections": [
+  {"title": "1. The theory of the structure of organic compounds", "blocks": [
+   {"type": "p", "text": "**Organic chemistry** is the chemistry of carbon compounds and their derivatives. More than 90 % of known substances are organic compounds; all biomolecules and most drugs belong to them."},
+   {"type": "list", "ordered": true, "items": ["The atoms in a molecule are joined in a definite **order** according to their valence; this order is called the **chemical structure** (A.M. Butlerov, 1861).", "The properties of a substance depend not only on its composition but also on its **structure** — this is why **isomers** exist.", "The atoms and groups of atoms in a molecule **influence each other**.", "The structure can be deduced from the properties of a substance, and the properties from the structure."]},
+   {"type": "p", "text": "In organic compounds the carbon atom is always **tetravalent**; it can be **sp^3^** (tetrahedral, 109.5°, alkanes), **sp^2^** (planar, 120°, alkenes, benzene, the carbonyl group) or **sp** (linear, 180°, alkynes) hybridized. Carbon atoms can form long chains and rings with each other — hence the endless variety of organic compounds."}
+  ]},
+  {"title": "2. Isomerism and stereoisomerism", "blocks": [
+   {"type": "table", "title": "Table 9.1. Types of isomerism", "head": ["Type", "Essence", "Example"], "rows": [["Chain isomerism", "different carbon skeleton", "butane and isobutane"], ["Position isomerism", "different position of the functional group or double bond", "1-propanol and 2-propanol"], ["Functional (interclass) isomerism", "different functional group", "ethanol and dimethyl ether (C~2~H~6~O)"], ["Tautomerism", "isomers rapidly interconvert", "keto–enol tautomerism, lactim–lactam (nucleobases)"], ["Geometric (cis–trans)", "arrangement of substituents relative to a double bond or ring", "maleic (cis) and fumaric (trans) acids"], ["Optical", "because of a chiral center the molecule cannot be superimposed on its mirror image", "L- and D-alanine, L- and D-glyceraldehyde"]]},
+   {"type": "p", "text": "**Chirality** is the property of a molecule of not being superimposable on its mirror image (like the right and left hands). Most often it is caused by an **asymmetric (chiral) carbon atom** with four different substituents. Stereoisomers that are mirror images of each other are called **enantiomers**: they rotate the plane of polarized light by the same angle but in opposite directions; an equal mixture of them (a **racemate**) is optically inactive."},
+   {"type": "img", "src": "data/img/tkm/t09_alanin.webp", "w": 1400, "h": 600, "label": "Figure 9.1", "caption": "The enantiomers of alanine: L-alanine (S) and D-alanine (R) — mirror images of each other; the chiral center is the α-carbon atom (structural formulas drawn with RDKit)."},
+   {"type": "p", "text": "**Nomenclature:** **D/L** — relative to glyceraldehyde (in the Fischer projection, OH or NH~2~ at the chiral center on the right — D, on the left — L); **R/S** — by the priority of the substituents (the Cahn–Ingold–Prelog rules). Diastereomers are stereoisomers that are not enantiomers (for example, glucose and galactose)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**The thalidomide tragedy** (1957–1961): the drug given to pregnant women as a sedative was a racemate; one enantiomer was sedative and the other **teratogenic**, and ≈ 10 000 children were born with limb defects (the enantiomers interconvert in the body). Today many drugs are produced as the active enantiomer: **levodopa** (L-DOPA), **levothyroxine**, **esomeprazole**, **levocetirizine**."}]}
+  ]},
+  {"title": "3. Reactivity. Electronic effects", "blocks": [
+   {"type": "p", "text": "The distribution of electron density in a molecule determines its reactivity. The shift of electron density is described by two kinds of electronic effects."},
+   {"type": "list", "ordered": false, "items": ["**Inductive effect (I)** — a shift of electron density along a chain of σ-bonds; it fades quickly with distance. **−I**: electronegative atoms and groups withdraw electrons (F, Cl, OH, NH~2~, NO~2~, COOH). **+I**: alkyl groups donate electrons (CH~3~, C~2~H~5~).", "**Mesomeric effect (M)** — a shift of electron density along a conjugated π-system; it is transmitted along the chain without fading. **+M**: groups with a lone pair donate electrons to the π-system (−OH, −NH~2~, −OR, halogens). **−M**: groups withdraw electrons from the π-system (C=O, COOH, NO~2~, C≡N)."]},
+   {"type": "p", "text": "**Conjugation** is the formation of one delocalized electron cloud by π-bonds, or by a π-bond and a lone pair; it lowers the energy of the molecule and increases its stability. **Aromaticity** (Hückel’s rule): a planar cyclic conjugated system with (4n + 2) π-electrons is especially stable — benzene (6 π-electrons), pyridine, pyrrole, the purine bases."}
+  ]},
+  {"title": "4. Acidity and basicity of organic compounds", "blocks": [
+   {"type": "p", "text": "**Brønsted theory:** an acid is a proton donor, a base is a proton acceptor. **Lewis theory:** an acid is an electron-pair acceptor, a base an electron-pair donor. By the type of acidic center, OH-, SH-, NH- and CH-acids are distinguished; the strength of an acid is determined by the stability of its conjugate base (anion)."},
+   {"type": "table", "title": "Table 9.2. Acidity of some organic compounds", "head": ["Compound", "pK~a~", "Note"], "rows": [["Ethanol C~2~H~5~OH", "≈ 16", "a weaker acid than water; does not form salts with alkalis"], ["Phenol C~6~H~5~OH", "≈ 10", "the phenoxide ion is stabilized by conjugation with the benzene ring (+M); forms salts with alkalis"], ["Acetic acid CH~3~COOH", "4.76", "the carboxylate anion is stabilized by resonance"], ["Trichloroacetic acid CCl~3~COOH", "≈ 0.7", "the −I effect of three Cl atoms strongly stabilizes the anion"], ["Ethanethiol C~2~H~5~SH", "≈ 10.6", "SH-acids are stronger than alcohols"]]},
+   {"type": "p", "text": "**Basicity** is typical mainly of nitrogen compounds (the lone electron pair). Aliphatic amines are stronger bases than ammonia (+I effect): pK~a~ ≈ 10.6 for CH~3~NH~3~^+^ and 9.25 for NH~4~^+^. Aniline, however, is a very weak base (pK~a~ ≈ 4.6 for C~6~H~5~NH~3~^+^) because the nitrogen lone pair is conjugated with the benzene ring (+M)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The degree of ionization of drugs determines their absorption: mainly the **un-ionized** form crosses membranes. Weak acids (aspirin, pK~a~ ≈ 3.5) are largely un-ionized in the acidic stomach and are partly absorbed there; weak bases (many alkaloids) are absorbed well in the more alkaline intestine. In poisoning, alkalinizing the urine speeds up the excretion of weak acids (salicylates, phenobarbital)."}]}
+  ]},
+  {"title": "5. Oxidation and reduction of organic compounds", "blocks": [
+   {"type": "p", "text": "In organic chemistry **oxidation** is the addition of oxygen to a molecule or the removal of hydrogen, and **reduction** is the reverse. In the body these reactions are catalyzed by **dehydrogenases**; the hydrogen carriers are NAD^+^, NADP^+^ and FAD."},
+   {"type": "list", "ordered": false, "items": ["Primary alcohol → aldehyde → carboxylic acid: CH~3~CH~2~OH → CH~3~CHO → CH~3~COOH.", "Secondary alcohol → ketone: CH~3~CH(OH)CH~3~ → CH~3~COCH~3~ (acetone).", "Lactate ⇄ pyruvate (lactate dehydrogenase, NAD^+^/NADH).", "Thiols are oxidized to disulfides: 2R−SH → R−S−S−R (cysteine → cystine, disulfide bridges in proteins)."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In the liver, ethanol is oxidized by **alcohol dehydrogenase** to acetaldehyde and then by **aldehyde dehydrogenase** to acetic acid. Accumulation of acetaldehyde causes facial flushing, nausea and palpitations — **disulfiram** blocks aldehyde dehydrogenase, produces exactly this state, and is used to treat alcoholism."}]}
+  ]},
+  {"title": "6. Hydrocarbons", "blocks": [
+   {"type": "table", "title": "Table 9.3. Classes of hydrocarbons", "head": ["Class", "General formula / hybridization", "Typical reaction", "Medical significance"], "rows": [["Alkanes", "C~n~H~2n+2~, sp^3^", "radical substitution (S~R~)", "petroleum jelly, paraffin — ointment bases; methane, propane — household gases"], ["Alkenes", "C~n~H~2n~, sp^2^", "electrophilic addition (A~E~), Markovnikov’s rule", "ethylene — a plant hormone; polyethylene medical devices"], ["Alkynes", "C~n~H~2n−2~, sp", "addition", "acetylene — welding, synthesis"], ["Cyclic hydrocarbons", "C~n~H~2n~ (cycloalkanes)", "depends on ring size", "the skeleton of steroids (cyclopentanoperhydrophenanthrene)"], ["Arenes", "benzene C~6~H~6~, sp^2^, aromatic", "electrophilic substitution (S~E~)", "benzene — carcinogen (leukemia); benzopyrene — a carcinogen in tobacco smoke"]]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Halogenated hydrocarbons are also met in practice: **chloroform** and **halothane** were once used for anesthesia and are hepatotoxic; **ethyl chloride** is a local cooling anesthetic. They dissolve well in fat and act strongly on the nervous system."}]}
+  ]},
+  {"title": "7. Classes of compounds containing oxygen and other heteroatoms", "blocks": [
+   {"type": "table", "title": "Table 9.4. Main functional groups and classes of compounds", "head": ["Class", "Functional group", "Example", "Medical significance"], "rows": [["Alcohols", "−OH (aliphatic)", "ethanol, glycerol", "70 % ethanol — antiseptic; glycerol — drug bases"], ["Phenols", "−OH (aromatic)", "phenol, resorcinol", "disinfection, antiseptics"], ["Ethers", "R−O−R′", "diethyl ether", "formerly used for anesthesia"], ["Aldehydes", "−CHO", "formaldehyde", "formalin (40 %) — tissue fixation"], ["Ketones", "C=O", "acetone", "one of the ketone bodies (diabetic ketoacidosis)"], ["Carboxylic acids", "−COOH", "acetic, lactic, citric acid", "metabolites (Krebs cycle)"], ["Esters", "−COO−R", "acetylsalicylic acid, lipids", "drugs, fats"], ["Amines", "−NH~2~", "dopamine, histamine", "biogenic amines — mediators"], ["Amides", "−CO−NH~2~", "urea, the peptide bond", "proteins, nitrogen metabolism"], ["Thiols", "−SH", "cysteine, glutathione", "antioxidant, detoxification"]]}
+  ]},
+  {"title": "8. Crown ethers as drugs (independent work)", "blocks": [
+   {"type": "p", "text": "**Crown ethers** are cyclic polyethers containing repeating −CH~2~−CH~2~−O− units. They were synthesized in 1967 by C. Pedersen (Nobel Prize in 1987 together with D. Cram and J.-M. Lehn). The oxygen atoms inside the ring surround a metal cation like a “crown” and form a strong complex."},
+   {"type": "img", "src": "data/img/tkm/t09_kraun.webp", "w": 900, "h": 800, "label": "Figure 9.2", "caption": "The complex of 18-crown-6 with the K^+^ ion: six oxygen atoms hold the cation in the ring cavity (skeletal formula, diagram)."},
+   {"type": "list", "ordered": false, "items": ["**Selective binding:** the ring cavity must match the size of the cation: 12-crown-4 — Li^+^, 15-crown-5 — Na^+^, 18-crown-6 — K^+^.", "**Ionophore action:** because the complex is hydrophobic on the outside, it carries the cation across a lipid membrane. Natural ionophores — the antibiotics **valinomycin** (K^+^) and **monensin** (Na^+^) — work on this principle and disturb the ion balance of the bacterial membrane.", "**Prospects in medicine:** antimicrobial and antitumor effects are being studied; they are used in drug delivery, binding heavy metals and radionuclides, and making ion-selective electrodes (for measuring blood K^+^). Because crown ethers themselves are toxic, they are not yet widely used as clinical drugs."]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: finding a chiral center and drawing the enantiomers", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Find the sp^3^-hybridized carbon atoms in the molecule.", "Check the four substituents of each: if all are different, it is a chiral center.", "Draw the Fischer projection: the carbon chain vertical, the most oxidized group at the top.", "If OH (or NH~2~) at the chiral center is on the right — D, on the left — L.", "Draw the other enantiomer as the mirror image; for n chiral centers the number of stereoisomers is 2^n^."]}]},
+  {"title": "Skill: comparing acidity by electronic effects", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Identify the acidic center (O−H, S−H, N−H, C−H).", "Draw the anion formed when the proton leaves.", "Find the factors that stabilize the anion: −I and −M substituents, conjugation, the electronegativity and size of the atom.", "The more stable the anion, the stronger the acid (the smaller the pK~a~).", "Check the result against pK~a~ values."]}]}
+ ],
+ "questions": [
+  "State the main points of Butlerov’s theory of chemical structure.",
+  "What types of hybridization does the carbon atom have?",
+  "Give examples of the types of structural isomerism.",
+  "What are chirality and enantiomers? What property does a racemate have?",
+  "What is the difference between D/L and R/S nomenclature?",
+  "What does the thalidomide tragedy teach us?",
+  "Explain the inductive and mesomeric effects.",
+  "What is aromaticity? State Hückel’s rule.",
+  "Why is phenol a stronger acid than alcohols?",
+  "Why is aniline a weaker base than aliphatic amines?",
+  "How are ethanol and methanol oxidized in the body?",
+  "List the classes of hydrocarbons and their typical reactions.",
+  "How are crown ethers built, and what are their prospects in medicine?"
+ ],
+ "quiz": [
+  {"q": "Who created the theory of chemical structure?", "options": ["A.M. Butlerov", "D.I. Mendeleev", "F. Wöhler", "A. Kekulé", "J. Berzelius"], "answer": 0},
+  {"q": "How is the carbon atom hybridized in alkanes?", "options": ["sp^3^", "sp^2^", "sp", "dsp^2^", "sp^3^d^2^"], "answer": 0},
+  {"q": "What kind of isomers are ethanol and dimethyl ether?", "options": ["Functional (interclass) isomers", "Geometric isomers", "Optical isomers", "Position isomers", "Tautomers"], "answer": 0},
+  {"q": "What kind of isomers are maleic and fumaric acids?", "options": ["Geometric (cis–trans)", "Optical", "Chain", "Functional", "Conformational"], "answer": 0},
+  {"q": "How many different substituents does a chiral carbon atom have?", "options": ["4", "2", "3", "1", "6"], "answer": 0},
+  {"q": "To which stereochemical series do natural amino acids belong?", "options": ["L", "D", "Racemate", "Meso", "Cis"], "answer": 0},
+  {"q": "Which group shows a −I effect?", "options": ["−Cl", "−CH~3~", "−C~2~H~5~", "−CH(CH~3~)~2~", "−C(CH~3~)~3~"], "answer": 0},
+  {"q": "Which group shows a +M effect toward a π-system?", "options": ["−NH~2~", "−NO~2~", "−COOH", "−CHO", "−C≡N"], "answer": 0},
+  {"q": "By Hückel’s rule, how many π-electrons does an aromatic system have?", "options": ["4n + 2", "4n", "2n", "n + 2", "8n"], "answer": 0},
+  {"q": "Which of the following is the strongest acid?", "options": ["Trichloroacetic acid", "Acetic acid", "Phenol", "Ethanol", "Ethanethiol"], "answer": 0},
+  {"q": "How does the basicity of aniline compare with ammonia?", "options": ["Much weaker", "Much stronger", "The same", "Aniline has no basic properties", "Stronger only on heating"], "answer": 0},
+  {"q": "What is formed when a secondary alcohol is oxidized?", "options": ["A ketone", "An aldehyde", "A carboxylic acid", "An ether", "An alkene"], "answer": 0},
+  {"q": "In methanol poisoning, which metabolites damage the optic nerve?", "options": ["Formaldehyde and formic acid", "Acetaldehyde", "Acetic acid", "Acetone", "Urea"], "answer": 0},
+  {"q": "What kind of reaction is typical of benzene?", "options": ["Electrophilic substitution", "Radical addition", "Nucleophilic addition", "Polymerization", "Hydration"], "answer": 0},
+  {"q": "Which cation does 18-crown-6 bind best?", "options": ["K^+^", "Li^+^", "Na^+^", "Ca^2+^", "Mg^2+^"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A patient drank illegally sold “alcohol”. After 18 hours his vision became blurred and he had abdominal pain; blood pH 7.10, HCO~3~^−^ = 9 mmol/L.", "ask": "What poisoning is suspected? Explain the chemical mechanism and the principle of treatment.", "answer": "Methanol poisoning. Methanol is oxidized by alcohol dehydrogenase to **formaldehyde** and then by aldehyde dehydrogenase to **formic acid**. Formic acid causes severe metabolic acidosis and damages the mitochondria of the optic nerve (blindness). The delayed onset of symptoms is due to the time needed to form the metabolites. Treatment: **fomepizole** or ethanol (they occupy alcohol dehydrogenase competitively and stop methanol oxidation), sodium bicarbonate, hemodialysis, folate."},
+  {"title": "Problem 2", "text": "Levodopa (L-DOPA) is used to treat Parkinson’s disease; its D-enantiomer is ineffective.", "ask": "Why do the enantiomers of one substance act differently in the body?", "answer": "Enzymes, receptors and transport proteins are **chiral** structures built from L-amino acids; they bind the substrate at three points and, like a “hand in a glove”, recognize only one enantiomer. L-DOPA crosses the blood–brain barrier via the amino acid transporter and is converted to dopamine by L-aromatic amino acid decarboxylase; the D-form is not a substrate of this enzyme. That is why the drug is produced as the active enantiomer."},
+  {"title": "Problem 3", "text": "In severe salicylate (pK~a~ ≈ 3) poisoning, the patient was given sodium bicarbonate and the urine pH was raised to 7.5–8.0.", "ask": "Why does this measure speed up the excretion of salicylates?", "answer": "Mainly the **un-ionized** molecule is reabsorbed across the membrane of the renal tubules. In alkaline urine the weak acid passes almost completely into the anion (the salicylate ion); the anion cannot cross the membrane and is “trapped” in the urine (ion trapping). As a result reabsorption decreases and excretion increases several-fold. This shows the medical significance of acidity."}
+ ],
+ "cards": [
+  {"front": "Butlerov’s theory", "back": "Properties depend on composition and chemical structure; atoms influence each other"},
+  {"front": "Enantiomers", "back": "Stereoisomers that are non-superimposable mirror images of each other"},
+  {"front": "Racemate", "back": "An optically inactive equal mixture of enantiomers"},
+  {"front": "Chiral carbon", "back": "A carbon atom with four different substituents"},
+  {"front": "Inductive effect", "back": "A shift of electron density along σ-bonds; fades with distance"},
+  {"front": "Mesomeric effect", "back": "A shift of electron density along a conjugated π-system"},
+  {"front": "Hückel’s rule", "back": "A planar cyclic conjugated system with (4n + 2) π-electrons is aromatic"},
+  {"front": "Acidity of phenol", "back": "pK~a~ ≈ 10; stronger than alcohols because the phenoxide ion is stabilized by conjugation"},
+  {"front": "Methanol toxicity", "back": "Oxidized to formaldehyde and formic acid: blindness, acidosis; antidote — fomepizole"},
+  {"front": "Crown ether", "back": "A cyclic polyether that selectively binds a cation inside its ring (18-crown-6 — K^+^)"}
+ ]
+}

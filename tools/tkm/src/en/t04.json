@@ -1,0 +1,118 @@
+{
+ "id": "04",
+ "no": 4,
+ "title": "Acid–base equilibrium. Buffer systems",
+ "goals": [
+  {"type": "p", "text": "To give the student knowledge of the ion product of water and pH, buffer systems, their classification and mechanism of action, buffer capacity, the formulas for calculating the pH of buffer solutions, the buffer systems of the body, the alkaline reserve of the blood, acidosis and alkalosis, and to teach how to prepare phosphate buffer solutions of different pH."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the ion product of water, the concepts of pH and pOH, and the pH values of biological fluids;", "the definition, classification and mechanism of action of buffer systems;", "the Henderson–Hasselbalch equation and buffer capacity;", "the buffer systems of blood (bicarbonate, phosphate, hemoglobin, protein) and their shares;", "the concept of the alkaline reserve;", "the types and causes of acidosis and alkalosis."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["calculate the pH of solutions of strong and weak electrolytes;", "calculate and prepare a buffer solution of the required pH;", "assess buffer capacity experimentally;", "interpret the acid–base parameters of blood."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Blood pH is **7.35–7.45**. In the bicarbonate buffer [HCO~3~^−^] : [H~2~CO~3~] = **20 : 1**, so pH = 6.1 + lg20 = 7.4. The limits compatible with life are roughly pH 6.8–7.8."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "**“Lungs — CO~2~, kidneys — HCO~3~^−^”**: in respiratory disorders the primary change is in pCO~2~, in metabolic disorders in HCO~3~^−^. In metabolic disorders, pH and the primary parameter change in the same direction (both ↓ or both ↑)."},
+  {"kind": "diqqat", "label": "Caution", "text": "A buffer holds pH only **up to a certain limit**: its working range is about pK~a~ ± 1. When one buffer component is used up (for example, HCO~3~^−^ in ketoacidosis), the pH changes sharply."}
+ ],
+ "sections": [
+  {"title": "1. The ion product of water and the hydrogen ion exponent", "blocks": [
+   {"type": "p", "text": "Water is a very weak electrolyte: H~2~O ⇄ H^+^ + OH^−^. At 25 °C the **ion product of water** K~w~ = [H^+^]·[OH^−^] = 10^−14^. In a neutral medium [H^+^] = [OH^−^] = 10^−7^ mol/L."},
+   {"type": "p", "text": "The **hydrogen ion exponent** pH = −lg[H^+^], the **hydroxide exponent** pOH = −lg[OH^−^], and pH + pOH = 14. pH < 7 is acidic, pH = 7 neutral and pH > 7 alkaline."},
+   {"type": "list", "ordered": false, "items": ["**Strong acid:** pH = −lg C (for 0.01 M HCl, pH = 2).", "**Strong base:** pOH = −lg C, pH = 14 − pOH (for 0.01 M NaOH, pH = 12).", "**Weak acid:** pH = ½(pK~a~ − lg C) (for 0.1 M CH~3~COOH, pK~a~ = 4.76, pH = 2.88)."]},
+   {"type": "table", "title": "Table 4.1. pH values of biological fluids", "head": ["Fluid", "pH"], "rows": [["Arterial blood", "7.35–7.45"], ["Intracellular fluid", "≈ 6.9–7.2"], ["Gastric juice", "1.5–2.0"], ["Duodenal juice", "7.5–8.5"], ["Saliva", "6.4–7.4"], ["Urine", "4.5–8.0 (mean ≈ 6)"], ["Cerebrospinal fluid", "7.3–7.4"]]}
+  ]},
+  {"title": "2. The concept of buffer systems and their classification", "blocks": [
+   {"type": "p", "text": "A **buffer system** is a solution that keeps its pH almost constant when small amounts of a strong acid or alkali are added, and also on dilution. It consists of two components: a proton donor (a weak acid) and a proton acceptor (its salt — the conjugate base)."},
+   {"type": "table", "title": "Table 4.2. Classification of buffer systems", "head": ["Type", "Composition", "Example"], "rows": [["Acidic", "a weak acid + its salt with a strong base", "CH~3~COOH / CH~3~COONa (acetate), H~2~CO~3~ / NaHCO~3~"], ["Basic", "a weak base + its salt with a strong acid", "NH~3~·H~2~O / NH~4~Cl (ammonia)"], ["Salt", "acid salts of a polyprotic acid", "NaH~2~PO~4~ / Na~2~HPO~4~ (phosphate)"], ["Ampholyte", "amphoteric compounds", "amino acids, proteins"]]}
+  ]},
+  {"title": "3. Mechanism of buffer action", "blocks": [
+   {"type": "p", "text": "Take the acetate buffer as an example: the solution contains large amounts of CH~3~COOH (poorly dissociated) and CH~3~COO^−^ (formed completely from the salt)."},
+   {"type": "list", "ordered": false, "items": ["**When an acid is added**, the H^+^ ions are bound by the anion of the salt: CH~3~COO^−^ + H^+^ → CH~3~COOH. A strong acid is replaced by a weak one, and the pH falls only slightly.", "**When an alkali is added**, the OH^−^ ions are neutralized by the weak acid: CH~3~COOH + OH^−^ → CH~3~COO^−^ + H~2~O. The pH rises only slightly.", "**On dilution** the ratio of the components does not change, so the pH hardly changes either."]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The same happens in blood: HCO~3~^−^ + H^+^ → H~2~CO~3~ → CO~2~↑ + H~2~O (CO~2~ is exhaled by the lungs); H~2~CO~3~ + OH^−^ → HCO~3~^−^ + H~2~O. The strength of the bicarbonate buffer is that it is an **open system**: the lungs regulate CO~2~ and the kidneys HCO~3~^−^."}]}
+  ]},
+  {"title": "4. Calculating the pH of buffer solutions. Buffer capacity", "blocks": [
+   {"type": "p", "text": "**Henderson–Hasselbalch equation:** for an acidic buffer pH = pK~a~ + lg([salt] / [acid]); for a basic buffer pOH = pK~b~ + lg([salt] / [base]), pH = 14 − pOH. When the component concentrations are equal, pH = pK~a~."},
+   {"type": "p", "text": "**Example:** in a 1 : 1 mixture of 0.1 M CH~3~COOH and 0.1 M CH~3~COONa, pH = 4.76 + lg1 = 4.76. If 0.01 mol of HCl is added to 1 L of this buffer: [salt] = 0.09, [acid] = 0.11; pH = 4.76 + lg(0.09 / 0.11) = 4.67 — the pH changed by only 0.09. If the same amount of HCl is added to 1 L of water, the pH falls from 7 to 2."},
+   {"type": "p", "text": "**Buffer capacity** (B) is the number of moles of equivalent of a strong acid or alkali that must be added to 1 L of buffer solution to change its pH by 1 unit: B = Δn / (ΔpH · V). Buffer capacity is greater the higher the **concentration** of the components and the closer their **ratio is to 1 : 1**."},
+   {"type": "img", "src": "data/img/tkm/t04_bufer.webp", "w": 1400, "h": 900, "label": "Figure 4.1", "caption": "Titration curve of a weak acid (0.1 M CH~3~COOH) with a strong base: the buffer region within pK~a~ ± 1, and pH = pK~a~ at the half-neutralization point (drawn from calculated data)."}
+  ]},
+  {"title": "5. The buffer systems of the body", "blocks": [
+   {"type": "table", "title": "Table 4.3. Buffer systems of the blood", "head": ["Buffer system", "Components", "pK~a~", "Share of blood buffer capacity"], "rows": [["Bicarbonate", "H~2~CO~3~ / HCO~3~^−^", "6.1", "≈ 53 %"], ["Hemoglobin", "HHb / Hb^−^, HHbO~2~ / HbO~2~^−^", "≈ 8.2 (HHb), ≈ 6.95 (HHbO~2~)", "≈ 35 %"], ["Plasma proteins", "protein–H / protein^−^ (histidine imidazole)", "≈ 6–7", "≈ 7 %"], ["Phosphate", "H~2~PO~4~^−^ / HPO~4~^2−^", "6.8", "≈ 5 %"]]},
+   {"type": "p", "text": "The **bicarbonate buffer** is the main buffer of the extracellular fluid. In plasma [HCO~3~^−^] = 22–26 mmol/L and [H~2~CO~3~] = 0.03 · pCO~2~ = 0.03 · 40 = 1.2 mmol/L; the ratio is 24 : 1.2 = 20 : 1."},
+   {"type": "p", "text": "The **phosphate buffer** is the main buffer of the intracellular fluid and of urine; in blood [HPO~4~^2−^] : [H~2~PO~4~^−^] = 4 : 1 (pH = 6.8 + lg4 = 7.4). In the renal tubules it excretes H^+^ ions into the urine as H~2~PO~4~^−^ (titratable acidity)."},
+   {"type": "p", "text": "The **hemoglobin buffer** works in the tissues and the lungs: oxyhemoglobin is a stronger acid than deoxyhemoglobin. After giving up O~2~ in the tissues, Hb becomes a weaker acid and binds H^+^ (formed from CO~2~); in the lungs the reverse happens (the Bohr effect)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The **alkaline reserve of the blood** is the amount of CO~2~ that 100 mL of plasma can bind at pCO~2~ = 40 mmHg: normally **50–70 vol %**. In modern practice it has been replaced by **standard bicarbonate** (SB, 22–26 mmol/L) and **base excess** (BE, 0 ± 2.3 mmol/L)."}]}
+  ]},
+  {"title": "6. Acidosis and alkalosis", "blocks": [
+   {"type": "p", "text": "Blood pH **below 7.35** is **acidosis**, **above 7.45** is **alkalosis**. By origin, **respiratory** (related to breathing; the primary change is in pCO~2~) and **metabolic** (the primary change is in HCO~3~^−^) types are distinguished. The body **compensates** a disorder through the other system: a metabolic one through breathing, a respiratory one through the kidneys."},
+   {"type": "table", "title": "Table 4.4. Disorders of acid–base status", "head": ["Disorder", "pH", "Primary change", "Compensation", "Causes"], "rows": [["Respiratory acidosis", "↓", "pCO~2~ ↑ (> 45 mmHg)", "kidneys retain HCO~3~^−^", "hypoventilation: COPD, asthma attack, depression of the respiratory center (opioids)"], ["Metabolic acidosis", "↓", "HCO~3~^−^ ↓ (< 22 mmol/L)", "hyperventilation (Kussmaul breathing)", "diabetic ketoacidosis, lactic acidosis, renal failure, diarrhea"], ["Respiratory alkalosis", "↑", "pCO~2~ ↓ (< 35 mmHg)", "kidneys excrete HCO~3~^−^", "hyperventilation: anxiety, high altitude, fever"], ["Metabolic alkalosis", "↑", "HCO~3~^−^ ↑ (> 26 mmol/L)", "hypoventilation", "profuse vomiting (loss of HCl), diuretics, hypokalemia"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In metabolic acidosis, sodium bicarbonate (4 % NaHCO~3~) is given with caution, but the main treatment is to **remove the cause**: insulin and fluids in diabetic ketoacidosis, restoring tissue perfusion in lactic acidosis."}]}
+  ]},
+  {"title": "7. Laboratory work: preparing phosphate buffer solutions of different pH", "blocks": [
+   {"type": "p", "text": "**Principle of the method:** solutions of 1/15 M KH~2~PO~4~ (the acid component) and 1/15 M Na~2~HPO~4~ (the salt component) are mixed in different ratios to obtain the required pH according to the Henderson–Hasselbalch equation. At this concentration the practical pK~a~ of H~2~PO~4~^−^ is ≈ 6.8."},
+   {"type": "table", "title": "Table 4.5. Preparation of phosphate buffer solutions (total volume 10 mL)", "head": ["Tube", "Na~2~HPO~4~, mL", "KH~2~PO~4~, mL", "Ratio salt : acid", "Calculated pH"], "rows": [["1", "2", "8", "1 : 4", "6.8 + lg0.25 = 6.2"], ["2", "5", "5", "1 : 1", "6.8"], ["3", "8", "2", "4 : 1", "6.8 + lg4 = 7.4"]]},
+   {"type": "list", "ordered": true, "items": ["Measure the volumes from the table accurately into three tubes with a burette or pipette and mix.", "Measure the pH of each solution with a pH meter or universal indicator paper and compare it with the calculated value.", "**Testing the buffer action:** take 5 mL each from tube 2 and from distilled water, add 0.5 mL of 0.1 M HCl to each and measure the pH again.", "**Effect of dilution:** take 1 mL of the buffer from tube 2, dilute it with 9 mL of water and measure the pH.", "Record the results in a table and draw a conclusion."]},
+   {"type": "img", "src": "data/img/tkm/t04_phmetr.webp", "w": 1000, "h": 750, "label": "Figure 4.2", "caption": "A laboratory pH meter: pH is being measured with the glass electrode immersed in the solution (Wikimedia Commons, CC BY-SA)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Expected result: when HCl is added to water the pH falls from 7 to ≈ 2, while in the buffer it changes by only a few tenths; on 10-fold dilution the buffer pH hardly changes."}]}
+  ]},
+  {"title": "8. Urine pH and stone formation (independent work)", "blocks": [
+   {"type": "p", "text": "The kidneys excrete excess acid (≈ 50–100 mmol of H^+^ per day) as phosphate buffer (titratable acidity) and ammonium (NH~4~^+^). That is why urine pH varies from 4.5 to 8.0 depending on diet and disease, and it directly affects stone formation."},
+   {"type": "list", "ordered": false, "items": ["**Acidic urine** (meat diet, gout, metabolic syndrome) — uric acid is poorly dissociated and crystallizes: **urate stones**.", "**Alkaline urine** (plant diet, infection with urease-producing bacteria — Proteus) — phosphate salts precipitate: **phosphate and struvite stones**.", "In treatment, urine pH is changed on purpose: it is alkalinized with potassium citrate for urates and acidified for phosphates."]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: calculating a buffer solution of the required pH", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Choose a weak acid whose pK~a~ is closest (± 1) to the required pH.", "Find the ratio from the Henderson–Hasselbalch equation: lg([salt] / [acid]) = pH − pK~a~.", "For solutions of equal concentration, the volume ratio equals this ratio.", "Divide the total volume according to the ratio (for example, 8 mL + 2 mL for 10 mL at 4 : 1).", "Check the pH of the prepared solution with a pH meter and adjust it if needed."]}]},
+  {"title": "Skill: interpreting blood acid–base status", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Look at the pH: < 7.35 — acidosis, > 7.45 — alkalosis.", "Assess pCO~2~ (normal 35–45 mmHg): if it changed in the opposite direction to pH — a respiratory disorder.", "Assess HCO~3~^−^ (normal 22–26 mmol/L): if it changed in the same direction as pH — a metabolic disorder.", "A change in the second parameter shows compensation.", "Compare with the clinical situation to find the cause."]}]}
+ ],
+ "questions": [
+  "What is the ion product of water? How are pH and pOH related?",
+  "How is the pH of strong and weak acid solutions calculated?",
+  "What is a buffer system and how is it classified?",
+  "Explain the mechanism of buffer action using the acetate buffer.",
+  "Write and explain the Henderson–Hasselbalch equation.",
+  "What is buffer capacity and what does it depend on?",
+  "List the buffer systems of the blood and their shares.",
+  "Why is the ratio of the bicarbonate buffer 20 : 1 at blood pH?",
+  "How does the hemoglobin buffer work?",
+  "What is the alkaline reserve?",
+  "What are the differences and causes of respiratory and metabolic acidosis?",
+  "In which conditions does metabolic alkalosis develop?",
+  "How is a phosphate buffer solution prepared?"
+ ],
+ "quiz": [
+  {"q": "What is the normal pH of arterial blood?", "options": ["7.35–7.45", "7.0–7.2", "6.8–7.0", "7.5–7.8", "6.4–7.4"], "answer": 0},
+  {"q": "What is the ion product of water at 25 °C?", "options": ["10^−14^", "10^−7^", "10^−12^", "10^−10^", "1"], "answer": 0},
+  {"q": "What is the pH of a 0.01 M HCl solution?", "options": ["2", "1", "12", "7", "0.01"], "answer": 0},
+  {"q": "When an acid is added to a buffer, what binds the H^+^ ions?", "options": ["The anion of the salt (conjugate base)", "The weak acid", "A water molecule", "The sodium ion", "The indicator"], "answer": 0},
+  {"q": "If the concentrations of the buffer components are equal, what does pH equal?", "options": ["pK~a~", "7", "pK~a~ + 1", "14 − pK~a~", "0"], "answer": 0},
+  {"q": "When is buffer capacity greatest?", "options": ["When the component ratio is 1 : 1 and the concentration is high", "When only the salt is present", "When the acid is 10 times the salt", "When the solution is diluted", "When pH = 7"], "answer": 0},
+  {"q": "Which system has the largest share of the blood buffer capacity?", "options": ["Bicarbonate", "Phosphate", "Plasma proteins", "Ammonia", "Acetate"], "answer": 0},
+  {"q": "At blood pH, what is the ratio [HCO~3~^−^] : [H~2~CO~3~] in the bicarbonate buffer?", "options": ["20 : 1", "1 : 1", "4 : 1", "1 : 20", "10 : 1"], "answer": 0},
+  {"q": "What is the main buffer of the intracellular fluid and urine?", "options": ["Phosphate", "Bicarbonate", "Hemoglobin", "Acetate", "Ammonia"], "answer": 0},
+  {"q": "What is the normal alkaline reserve?", "options": ["50–70 vol % CO~2~", "10–20 vol % CO~2~", "100–120 vol % CO~2~", "22–26 vol % CO~2~", "5–10 vol % CO~2~"], "answer": 0},
+  {"q": "Which disorder is diabetic ketoacidosis?", "options": ["Metabolic acidosis", "Respiratory acidosis", "Metabolic alkalosis", "Respiratory alkalosis", "Mixed alkalosis"], "answer": 0},
+  {"q": "Which disorder does profuse vomiting lead to?", "options": ["Metabolic alkalosis", "Metabolic acidosis", "Respiratory acidosis", "Respiratory alkalosis", "No change"], "answer": 0},
+  {"q": "What is the primary change in respiratory acidosis?", "options": ["Increase in pCO~2~", "Decrease in HCO~3~^−^", "Decrease in pCO~2~", "Increase in HCO~3~^−^", "Decrease in Na^+^"], "answer": 0},
+  {"q": "What is the compensatory change of breathing in metabolic acidosis?", "options": ["Hyperventilation (Kussmaul breathing)", "Hypoventilation", "Apnea", "No change", "Cheyne–Stokes breathing"], "answer": 0},
+  {"q": "In a phosphate buffer with pK~a~ = 6.8, what salt : acid ratio gives pH 7.4?", "options": ["4 : 1", "1 : 4", "1 : 1", "20 : 1", "2 : 1"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A 19-year-old patient with type 1 diabetes mellitus was brought in unconscious. His breathing is deep and noisy, and there is a smell of acetone from the mouth. Blood gases: pH 7.12; pCO~2~ = 22 mmHg; HCO~3~^−^ = 8 mmol/L.", "ask": "Identify the acid–base disorder. How is compensation taking place?", "answer": "Metabolic acidosis (pH ↓, HCO~3~^−^ ↓ — in the same direction): diabetic ketoacidosis. Ketone bodies (acetoacetic and β-hydroxybutyric acids) use up the bicarbonate buffer. Compensation is respiratory: deep noisy **Kussmaul breathing** removes CO~2~ and has lowered pCO~2~ to 22, but the pH has not returned to normal (partial compensation). Treatment: insulin, fluids, potassium monitoring."},
+  {"title": "Problem 2", "text": "A laboratory assistant needs 20 mL of phosphate buffer with pH 7.4. She has 1/15 M Na~2~HPO~4~ and 1/15 M KH~2~PO~4~ solutions (pK~a~ = 6.8).", "ask": "How much of each solution should be taken?", "answer": "pH = pK~a~ + lg([salt] / [acid]); 7.4 = 6.8 + lg x; lg x = 0.6; x = 4. So salt : acid = 4 : 1. For 20 mL: Na~2~HPO~4~ — 16 mL, KH~2~PO~4~ — 4 mL. The pH should be checked with a pH meter."},
+  {"title": "Problem 3", "text": "A patient with pyloric stenosis has been vomiting heavily for a week. Blood gases: pH 7.52; pCO~2~ = 48 mmHg; HCO~3~^−^ = 36 mmol/L; K^+^ = 3.0 mmol/L.", "ask": "Identify the type of disorder and explain its mechanism.", "answer": "Metabolic alkalosis (pH ↑, HCO~3~^−^ ↑). Vomiting removes gastric HCl; while producing HCl, the gastric cells release HCO~3~^−^ into the blood, which is now not neutralized. Hypovolemia and hypokalemia enhance HCO~3~^−^ reabsorption in the kidney and maintain the alkalosis. Compensation is hypoventilation (pCO~2~ has risen to 48). Treatment: 0.9 % NaCl and KCl solutions, correction of the stenosis."}
+ ],
+ "cards": [
+  {"front": "K~w~", "back": "Ion product of water: [H^+^]·[OH^−^] = 10^−14^ (25 °C)"},
+  {"front": "Buffer system", "back": "A solution that keeps its pH when acid or alkali is added and on dilution"},
+  {"front": "Henderson–Hasselbalch equation", "back": "pH = pK~a~ + lg([salt] / [acid])"},
+  {"front": "Buffer capacity", "back": "Moles of equivalent of strong acid/alkali that change the pH of 1 L of buffer by 1"},
+  {"front": "Bicarbonate buffer", "back": "H~2~CO~3~ / HCO~3~^−^, pK~a~ 6.1, ratio 1 : 20; ≈ 53 % of blood buffer capacity"},
+  {"front": "Phosphate buffer", "back": "H~2~PO~4~^−^ / HPO~4~^2−^, pK~a~ 6.8; main buffer of the intracellular fluid and urine"},
+  {"front": "Alkaline reserve", "back": "CO~2~ that 100 mL of plasma can bind: 50–70 vol %"},
+  {"front": "Acidosis", "back": "Blood pH < 7.35"},
+  {"front": "Alkalosis", "back": "Blood pH > 7.45"},
+  {"front": "Kussmaul breathing", "back": "Deep, noisy compensatory breathing in metabolic acidosis"}
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "id": "10",
+ "no": 10,
+ "title": "Poli- va geterofunksional birikmalar metabolitlar va dorivor moddalar sifatida",
+ "goals": [
+  {"type": "p", "text": "Talabaga bir xil (polifunksional) va har xil (geterofunksional) funksional guruhlar tutgan birikmalar — ko‘p atomli spirtlar va fenollar, poliaminlar, ikki asosli karbon kislotalar, aminospirtlar va katexolaminlar, gidroksi-, amino- va ketokislotalar, benzolning geterofunksional hosilalari — ning tuzilishi, xossalari va metabolit hamda dori sifatidagi ahamiyatini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["poli- va geterofunksional birikmalar tushunchasini;", "glitserin, etilenglikol, ksilit, sorbit, mannitning xossalari va tibbiy ahamiyatini;", "ko‘p atomli fenollar va xinon–gidroxinon oksidlanish-qaytarilish sistemasini;", "poliaminlar, ikki asosli kislotalar (oksalat, malonat, suksinat, fumarat) ahamiyatini;", "aminospirtlar (etanolamin, xolin, atsetilxolin) va katexolaminlarni;", "gidroksi- va ketokislotalarni, salitsil va p-aminobenzoy kislota hosilalarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["birikmadagi funksional guruhlarni aniqlab, uni sinflash;", "ko‘p atomli spirtlarni Cu(OH)~2~ bilan sifat reaksiyasi orqali aniqlashni tushuntirish;", "metabolitlarning o‘zaro aylanishini (laktat ⇄ piruvat, suksinat → fumarat) yozish;", "dorilarning (aspirin, paratsetamol, sulfanilamidlar) kimyoviy tuzilishi va ta’sir mexanizmini bog‘lash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "**Polifunksional** birikmada bir xil funksional guruhlar (glitserin — 3 ta OH), **geterofunksional** birikmada har xil guruhlar bo‘ladi (sut kislota — OH va COOH; aminokislotalar — NH~2~ va COOH). Metabolitlarning ko‘pchiligi geterofunksional."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Ikki asosli kislotalar qatori (C~2~–C~5~): **“Oksana Malikani Suv bilan Glyukozaga yubordi”** — oksalat, malonat, suksinat (qahrabo), glutarat."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "**Etilenglikol** (antifriz) shirin ta’mli, lekin juda zaharli: organizmda glikol aldegid, glioksil va **oksalat** kislotaga oksidlanadi — og‘ir atsidoz va kalsiy oksalat kristallari bilan buyrak shikastlanadi. Antidot — fomepizol yoki etanol."}
+ ],
+ "sections": [
+  {"title": "1. Alifatik va aromatik spirtlar", "blocks": [
+   {"type": "p", "text": "Spirtlar gidroksil guruh soniga ko‘ra bir, ikki va ko‘p atomli, OH bog‘langan uglerodga ko‘ra birlamchi, ikkilamchi va uchlamchi bo‘ladi. **Aromatik spirtlar**da OH benzol halqasiga emas, yon zanjirga bog‘langan (benzil spirt C~6~H~5~CH~2~OH); OH bevosita halqaga bog‘langan birikmalar **fenollar** deyiladi."},
+   {"type": "list", "ordered": false, "items": ["**Etanol** — 70 % li eritmasi oqsillarni denaturatsiyalab, eng kuchli antiseptik ta’sir ko‘rsatadi (96 % li spirt mikrob yuzasida oqsilni tez qotirib, ichkariga kirmaydi).", "**Benzil spirt** — in’eksion eritmalarda konservant; chaqaloqlarda zaharli (“nafas siqilish sindromi”).", "**Mentol** (siklik spirt) — sovituvchi va chalg‘ituvchi ta’sir (validol, surtmalar)."]}
+  ]},
+  {"title": "2. Ko‘p atomli spirtlar va ko‘p atomli fenollar", "blocks": [
+   {"type": "table", "title": "Jadval 10.1. Ko‘p atomli spirtlar", "head": ["Modda", "Formula", "Ahamiyati"], "rows": [["Etilenglikol", "HO−CH~2~−CH~2~−OH", "antifriz; juda zaharli (oksalatga aylanadi)"], ["Glitserin", "HOCH~2~−CH(OH)−CH~2~OH", "lipidlar (triglitseridlar, fosfolipidlar) tarkibi; surtmalar, shamchalar asosi, surgi"], ["Ksilit", "C~5~H~7~(OH)~5~", "shakar o‘rnini bosuvchi, kariesga qarshi"], ["Sorbit", "C~6~H~8~(OH)~6~", "shakar o‘rnini bosuvchi; ko‘z gavhari va nervlarda to‘planib, diabet asoratlariga sabab bo‘ladi"], ["Mannit", "C~6~H~8~(OH)~6~ (sorbit stereoizomeri)", "osmotik diuretik — miya shishi, glaukoma"]]},
+   {"type": "p", "text": "**Sifat reaksiyasi:** ko‘p atomli spirtlar ishqoriy muhitda Cu(OH)~2~ cho‘kmasini eritib, **to‘q ko‘k** rangli kompleks (mis glitserati) hosil qiladi — bir atomli spirtlar bu reaksiyani bermaydi. Bu qo‘shni OH guruhlarning kislotaliligi ortgani va xelat hosil bo‘lishi bilan bog‘liq."},
+   {"type": "p", "text": "**Ko‘p atomli fenollar:** pirokatexin (1,2-digidroksibenzol), rezorsin (1,3-), gidroxinon (1,4-). Pirokatexin qoldig‘i **katexolaminlar** tarkibiga kiradi. Gidroxinon oson oksidlanib **xinon**ga aylanadi va qaytadan qaytariladi: bu qaytar sistema nafas zanjiridagi **ubixinon (koenzim Q)** ishining asosi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Qandli diabetda giperglikemiya paytida glyukoza **aldozoreduktaza** yordamida sorbitga qaytariladi. Sorbit membranadan yomon o‘tadi va ko‘z gavhari, nerv va buyrak hujayralarida to‘planib, osmotik shish chaqiradi — **katarakta, neyropatiya va nefropatiya** rivojlanishining bir mexanizmi."}]}
+  ]},
+  {"title": "3. Poliaminlar", "blocks": [
+   {"type": "p", "text": "**Poliaminlar** — ikki va undan ortiq aminoguruh tutgan birikmalar. Ular aminokislotalarning dekarboksillanishidan hosil bo‘ladi: ornitindan **putressin** H~2~N(CH~2~)~4~NH~2~, lizindan **kadaverin** H~2~N(CH~2~)~5~NH~2~; putressindan **spermidin** va **spermin** sintezlanadi."},
+   {"type": "list", "ordered": false, "items": ["Fiziologik pH da poliaminlar ko‘p musbat zaryadli bo‘lib, manfiy zaryadli **DNK va RNK** bilan bog‘lanadi, ularning tuzilishini barqarorlashtiradi; hujayra bo‘linishi va o‘sishi uchun zarur.", "Tez bo‘linuvchi to‘qimalarda va **o‘smalarda** poliaminlar ko‘payadi; ularning sintezi fermenti (ornitindekarboksilaza) ingibitorlari (eflornitin) davolashda ishlatiladi.", "Putressin va kadaverin — oqsillarning chirishida hosil bo‘ladigan, yoqimsiz hidli “murda zaharlari” (ptomainlar)."]}
+  ]},
+  {"title": "4. Ikki asosli karbon kislotalar", "blocks": [
+   {"type": "table", "title": "Jadval 10.2. Ikki asosli karbon kislotalar va ularning ahamiyati", "head": ["Kislota", "Formula", "Biologik va tibbiy ahamiyati"], "rows": [["Oksalat (otquloq)", "HOOC−COOH", "kalsiy oksalat toshlari; etilenglikol zaharlanishining mahsuloti"], ["Malonat", "HOOC−CH~2~−COOH", "suksinatdegidrogenazaning **raqobatli ingibitori**; malonil-KoA — yog‘ kislotalari sintezida"], ["Suksinat (qahrabo)", "HOOC−(CH~2~)~2~−COOH", "Krebs sikli metaboliti; FAD ga bog‘liq degidrogenlanib fumaratga aylanadi"], ["Fumarat", "HOOC−CH=CH−COOH (trans)", "Krebs va mochevina sikllari metaboliti"], ["Glutarat", "HOOC−(CH~2~)~3~−COOH", "lizin va triptofan almashinuvi; glutar atsiduriya"]]},
+   {"type": "p", "text": "**Suksinatdegidrogenaza reaksiyasi:** HOOC−CH~2~−CH~2~−COOH + FAD → HOOC−CH=CH−COOH + FADH~2~. Malonat suksinatga tuzilishi bo‘yicha o‘xshash bo‘lgani uchun fermentning faol markaziga bog‘lanadi, lekin degidrogenlanmaydi — bu **raqobatli ingibirlanish**ning klassik misoli."}
+  ]},
+  {"title": "5. Aminospirtlar va katexolaminlar", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Etanolamin (kolamin)** HO−CH~2~−CH~2~−NH~2~ — fosfolipid fosfatidiletanolamin (kefalin) tarkibi; serinning dekarboksillanishidan hosil bo‘ladi.", "**Xolin** HO−CH~2~−CH~2~−N^+^(CH~3~)~3~ — fosfatidilxolin (letsitin) tarkibi; jigarni yog‘li distrofiyadan saqlaydi (lipotrop omil).", "**Atsetilxolin** CH~3~CO−O−CH~2~CH~2~−N^+^(CH~3~)~3~ — xolinning murakkab efiri, parasimpatik va nerv-mushak sinapslarining mediatori; atsetilxolinesteraza tomonidan tez parchalanadi."]},
+   {"type": "p", "text": "**Katexolaminlar** — pirokatexin halqasi va aminoetil zanjiri tutgan biogen aminlar: **dofamin**, **noradrenalin** (norepinefrin) va **adrenalin** (epinefrin). Ular tirozindan sintezlanadi: tirozin → DOFA → dofamin → noradrenalin → adrenalin."},
+   {"type": "img", "src": "data/img/tkm/t10_katexol.webp", "w": 1400, "h": 520, "label": "Rasm 10.1", "caption": "Katexolaminlar: dofamin, noradrenalin va adrenalin — pirokatexin halqasi, β-gidroksil va aminoguruh tutgan aminospirtlar (struktura formulalar, RDKit dasturida chizilgan)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Fosfororganik insektitsidlar (xlorofos, karbofos) va jangovar zaharlovchi moddalar atsetilxolinesterazani qaytmas fosforillab, atsetilxolin to‘planishiga olib keladi: qorachiq torayishi, so‘lak oqishi, bronxospazm, talvasalar. Davolash — **atropin** (M-xolinoblokator) va fermentni qayta faollashtiruvchi **oksimlar**. **Adrenalin** anafilaktik shokda birinchi tanlov dori."}]}
+  ]},
+  {"title": "6. Gidroksi-, amino- va ketokislotalar", "blocks": [
+   {"type": "table", "title": "Jadval 10.3. Muhim geterofunksional kislotalar", "head": ["Guruh", "Misollar", "Ahamiyati"], "rows": [["Gidroksikislotalar", "sut kislota CH~3~CH(OH)COOH, olma kislota, limon kislota, β-gidroksimoy kislota", "anaerob glikoliz mahsuloti (laktat); Krebs sikli; keton tanachasi; sitrat — antikoagulyant (qon konservatsiyasi)"], ["Aminokislotalar", "glitsin, GAMK (γ-aminomoy kislota)", "oqsillar tarkibi; GAMK — markaziy asab tizimining asosiy tormozlovchi mediatori"], ["Ketokislotalar", "pirouzum (piruvat), atsetosirka, oksaloatsetat, α-ketoglutarat", "glikoliz va Krebs sikli metabolitlari; atsetoatsetat — keton tanachasi; aminokislotalar bilan transaminlanish"]]},
+   {"type": "p", "text": "Geterofunksional kislotalarning muhim reaksiyalari: **laktat ⇄ piruvat** (laktatdegidrogenaza, NAD^+^/NADH); **piruvat → atsetil-KoA + CO~2~** (oksidlovchi dekarboksillanish); **β-ketokislotalarning dekarboksillanishi**: atsetoatsetat → atseton + CO~2~ (diabetda nafasdan atseton hidi); **transaminlanish**: aminokislota + ketokislota ⇄ yangi ketokislota + yangi aminokislota."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Sitrat Ca^2+^ ionlarini bog‘lab (xelat), qon ivishini to‘xtatadi — **natriy sitrat** konservalangan qon va laboratoriya probirkalarida antikoagulyant sifatida ishlatiladi. Ko‘p sitratli qon tez quyilganda gipokalsiyemiya rivojlanishi mumkin — kalsiy preparatlari yuboriladi."}]}
+  ]},
+  {"title": "7. Benzolning geterofunksional hosilalari", "blocks": [
+   {"type": "table", "title": "Jadval 10.4. Benzol hosilalari bo‘lgan dorilar", "head": ["Modda", "Tuzilishi", "Ta’siri va qo‘llanilishi"], "rows": [["Salitsil kislota", "o-gidroksibenzoy kislota", "keratolitik, antiseptik (tashqi)"], ["Atsetilsalitsil kislota (aspirin)", "salitsil kislotaning sirka kislota bilan murakkab efiri", "siklooksigenazani qaytmas atsetillaydi: og‘riq qoldiruvchi, isitma tushiruvchi, antiagregant"], ["Metilsalitsilat", "salitsil kislotaning metil efiri", "mahalliy chalg‘ituvchi surtmalar"], ["p-Aminobenzoy kislota (PABK)", "p-H~2~N−C~6~H~4~−COOH", "bakteriyalarda folat kislota sintezi uchun zarur"], ["Sulfanilamidlar (sulfanilamid, sulfametoksazol)", "p-H~2~N−C~6~H~4~−SO~2~NHR", "PABK antimetabolitlari — bakteriyalarda folat sintezini to‘sadi"], ["Paratsetamol", "p-gidroksiatsetanilid", "og‘riq qoldiruvchi, isitma tushiruvchi; dozasi oshirilsa jigarga toksik"], ["Anestezin, novokain", "PABK efirlari", "mahalliy anestetiklar"]]},
+   {"type": "img", "src": "data/img/tkm/t10_pabk.webp", "w": 1400, "h": 520, "label": "Rasm 10.2", "caption": "p-Aminobenzoy kislota va sulfanilamid tuzilishining o‘xshashligi — raqobatli antimetabolit ta’sirining asosi; yonida atsetilsalitsil kislota (struktura formulalar, RDKit dasturida chizilgan)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Paratsetamol bilan zaharlanish:** katta dozada uning bir qismi jigarda toksik metabolit **NAPQI** ga aylanadi; glutation (tiol) tugagach, NAPQI gepatotsitlar oqsillarini shikastlaydi. Antidot — **N-atsetilsistein**: glutation zaxirasini tiklaydi. Bu tiol guruhining himoya ahamiyatini yaqqol ko‘rsatadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: ko‘p atomli spirtlarni aniqlash (Cu(OH)~2~ reaksiyasi)", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Probirkaga 2 tomchi CuSO~4~ va 1 ml 10 % li NaOH soling — havorang Cu(OH)~2~ cho‘kmasi tushadi.", "Ikkita probirka tayyorlang: biriga glitserin, ikkinchisiga etanol qo‘shing.", "Chayqating va kuzating: glitserinli probirkada cho‘kma eriydi, to‘q ko‘k eritma hosil bo‘ladi.", "Etanolli probirkada o‘zgarish bo‘lmaydi (bir atomli spirt).", "Xulosa: qo‘shni OH guruhlari misning xelat kompleksini hosil qiladi."]}]},
+  {"title": "Ko‘nikma: birikmaning funksional tahlili", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Formulada barcha funksional guruhlarni belgilang (−OH, −NH~2~, −COOH, C=O, −SH).", "Guruhlar bir xil bo‘lsa — polifunksional, har xil bo‘lsa — geterofunksional birikma.", "Guruhlarning o‘zaro joylashuvini (α, β, γ yoki orto, meta, para) aniqlang.", "Har bir guruh beradigan reaksiyalarni sanang (tuz, murakkab efir, amid, oksidlanish).", "Moddaning metabolit yoki dori sifatidagi ahamiyatini shu tuzilish bilan bog‘lang."]}]}
+ ],
+ "questions": [
+  "Poli- va geterofunksional birikmalar nima? Misollar keltiring.",
+  "Bir atomli va ko‘p atomli spirtlar qanday farqlanadi?",
+  "Glitserin, ksilit, sorbit va mannitning tibbiy ahamiyati qanday?",
+  "Etilenglikol nima uchun zaharli?",
+  "Ko‘p atomli fenollar va xinon–gidroxinon sistemasi haqida gapiring.",
+  "Poliaminlar qanday hosil bo‘ladi va ularning vazifasi nima?",
+  "Ikki asosli karbon kislotalarning metabolizmdagi ahamiyati qanday?",
+  "Malonat nima uchun suksinatdegidrogenazani to‘sadi?",
+  "Xolin, etanolamin va atsetilxolinning tuzilishi va vazifasi qanday?",
+  "Katexolaminlar qanday sintezlanadi?",
+  "Gidroksi- va ketokislotalarning qaysi reaksiyalari metabolizmda muhim?",
+  "Aspirin va paratsetamolning tuzilishi va ta’siri qanday?",
+  "Sulfanilamidlarning ta’sir mexanizmini tushuntiring."
+ ],
+ "quiz": [
+  {"q": "Qaysi birikma geterofunksional?", "options": ["Sut kislota", "Glitserin", "Etilenglikol", "Oksalat kislota", "Putressin"], "answer": 0},
+  {"q": "Ko‘p atomli spirtlarning sifat reaksiyasi uchun qaysi reaktiv ishlatiladi?", "options": ["Cu(OH)~2~ (ishqoriy muhitda)", "AgNO~3~", "FeCl~3~", "BaCl~2~", "Ningidrin"], "answer": 0},
+  {"q": "Qaysi modda osmotik diuretik sifatida ishlatiladi?", "options": ["Mannit", "Ksilit", "Etilenglikol", "Etanol", "Benzil spirt"], "answer": 0},
+  {"q": "Etilenglikol organizmda qaysi zaharli moddaga aylanib, buyrakni shikastlaydi?", "options": ["Oksalat kislota", "Sirka kislota", "Sut kislota", "Atseton", "Mochevina"], "answer": 0},
+  {"q": "Antiseptik sifatida etanolning qaysi konsentratsiyasi eng samarali?", "options": ["70 %", "96 %", "40 %", "10 %", "100 %"], "answer": 0},
+  {"q": "Ornitinning dekarboksillanishidan qaysi poliamin hosil bo‘ladi?", "options": ["Putressin", "Kadaverin", "Gistamin", "Dofamin", "Serotonin"], "answer": 0},
+  {"q": "Suksinatdegidrogenazaning raqobatli ingibitori qaysi?", "options": ["Malonat", "Fumarat", "Oksaloatsetat", "Sitrat", "Laktat"], "answer": 0},
+  {"q": "Suksinat degidrogenlanganda nima hosil bo‘ladi?", "options": ["Fumarat", "Malat", "Oksalat", "Malonat", "Piruvat"], "answer": 0},
+  {"q": "Fosfatidilxolin (letsitin) tarkibiga qaysi aminospirt kiradi?", "options": ["Xolin", "Etanolamin", "Serin", "Sfingozin", "Inozit"], "answer": 0},
+  {"q": "Katexolaminlar qaysi aminokislotadan sintezlanadi?", "options": ["Tirozin", "Triptofan", "Gistidin", "Glutamat", "Lizin"], "answer": 0},
+  {"q": "Markaziy asab tizimining asosiy tormozlovchi mediatori qaysi?", "options": ["GAMK", "Glutamat", "Dofamin", "Adrenalin", "Atsetilxolin"], "answer": 0},
+  {"q": "Qaysi modda keton tanachasi hisoblanadi?", "options": ["Atsetoatsetat", "Piruvat", "Laktat", "Sitrat", "Oksaloatsetat"], "answer": 0},
+  {"q": "Natriy sitrat qon konservatsiyasida qanday vazifa bajaradi?", "options": ["Ca^2+^ ni bog‘lab, qon ivishini to‘xtatadi", "Eritrotsitlarni oziqlantiradi", "Bakteriyalarni o‘ldiradi", "Gemoglobinni oksidlaydi", "pH ni pasaytiradi"], "answer": 0},
+  {"q": "Sulfanilamidlar qaysi moddaning antimetaboliti?", "options": ["p-Aminobenzoy kislota", "Salitsil kislota", "Glutamin kislota", "Benzoy kislota", "Nikotin kislota"], "answer": 0},
+  {"q": "Paratsetamol bilan zaharlanishda antidot qaysi?", "options": ["N-atsetilsistein", "Atropin", "Nalokson", "Fomepizol", "Deferoksamin"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Avtomobil ustaxonasi ishchisi adashib antifriz ichgan. Bir necha soatdan keyin mastlik holati, keyin metabolik atsidoz (pH 7,15) rivojlandi; siydikda ko‘p miqdorda kristallar topildi, siydik ajralishi kamaydi.", "ask": "Zaharlanishning kimyoviy asosini tushuntiring. Siydikda qanday kristallar topilgan va davolash qanday?", "answer": "Antifriz tarkibidagi **etilenglikol** alkogoldegidrogenaza va aldegiddegidrogenaza ta’sirida glikol aldegid → glikol kislota → glioksil kislota → **oksalat kislota**ga oksidlanadi. Kislotalar atsidoz chaqiradi; oksalat Ca^2+^ bilan kam eriydigan **kalsiy oksalat** kristallarini hosil qilib, buyrak kanalchalarini shikastlaydi (o‘tkir buyrak yetishmovchiligi). Davolash: **fomepizol** yoki etanol (alkogoldegidrogenazani raqobatli band qiladi), natriy gidrokarbonat, gemodializ."},
+  {"title": "Masala 2", "text": "Bog‘bon fosfororganik insektitsid bilan ishlagandan so‘ng qorachiqlar torayishi, ko‘p so‘lak va ter ajralishi, nafas qisishi, mushaklarning tortishishi bilan keltirildi.", "ask": "Belgilarning biokimyoviy sababi nima? Qanday dorilar beriladi?", "answer": "Fosfororganik birikma **atsetilxolinesteraza**ning faol markazidagi serinni qaytmas fosforillaydi. Atsetilxolin sinapslarda parchalanmay to‘planadi va muskarin (mioz, so‘lak, bronxospazm) hamda nikotin (mushak tortishishi, keyin falajlik) retseptorlarini doimiy qo‘zg‘atadi. Davolash: **atropin** (M-xolinoretseptorlarni to‘sadi) katta dozada, fermentni qayta faollashtiruvchi **oksimlar** (pralidoksim), nafasni qo‘llab-quvvatlash."},
+  {"title": "Masala 3", "text": "Bemor bosh og‘rig‘i uchun 1 kun ichida 15 g paratsetamol ichgan. Dastlab ko‘ngil aynishidan boshqa belgilar yo‘q.", "ask": "Qanday xavf bor? Kimyoviy mexanizmi va antidotning ta’sirini tushuntiring.", "answer": "Og‘ir jigar shikastlanishi (fulminant gepatit) xavfi. Me’yoriy dozada paratsetamol glyukuron va sulfat kislotalar bilan bog‘lanib chiqariladi; katta dozada bu yo‘llar to‘yinadi va sitoxrom P450 orqali toksik **NAPQI** ko‘p hosil bo‘ladi. NAPQI odatda **glutation**ning SH guruhi bilan zararsizlantiriladi; glutation tugagach, u gepatotsit oqsillarini bog‘lab, nekroz chaqiradi (belgilar 1–3 kundan keyin chiqadi). **N-atsetilsistein** sistein manbai sifatida glutation sintezini tiklaydi; qanchalik erta berilsa, shunchalik samarali."}
+ ],
+ "cards": [
+  {"front": "Geterofunksional birikma", "back": "Har xil funksional guruhlar tutgan birikma (sut kislota, aminokislotalar)"},
+  {"front": "Glitserin", "back": "Uch atomli spirt; lipidlar tarkibi, surtmalar asosi"},
+  {"front": "Mannit", "back": "Olti atomli spirt; osmotik diuretik"},
+  {"front": "Etilenglikol", "back": "Ikki atomli spirt (antifriz); oksalatga aylanib, buyrakni shikastlaydi"},
+  {"front": "Putressin, kadaverin", "back": "Ornitin va lizin dekarboksillanishidan hosil bo‘ladigan diaminlar"},
+  {"front": "Malonat", "back": "Suksinatdegidrogenazaning raqobatli ingibitori"},
+  {"front": "Atsetilxolin", "back": "Xolinning sirka kislota bilan murakkab efiri; xolinergik mediator"},
+  {"front": "Katexolaminlar", "back": "Dofamin, noradrenalin, adrenalin — tirozindan sintezlanadi"},
+  {"front": "Aspirin", "back": "Atsetilsalitsil kislota; siklooksigenazani qaytmas atsetillaydi"},
+  {"front": "Sulfanilamidlar", "back": "PABK antimetabolitlari; bakteriyalarda folat sintezini to‘sadi"}
+ ]
+}

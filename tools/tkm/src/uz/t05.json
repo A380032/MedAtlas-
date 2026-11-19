@@ -1,0 +1,121 @@
+{
+ "id": "05",
+ "no": 5,
+ "title": "Kimyoviy termodinamika. Kimyoviy reaksiyalarning issiqlik effektini aniqlash",
+ "goals": [
+  {"type": "p", "text": "Talabaga termodinamik sistema va holat funksiyalari, energiya turlari, termodinamikaning birinchi va ikkinchi qonunlari, entalpiya, entropiya va Gibbs erkin energiyasi, Gess qonuni va uning xulosalari, solishtirma issiqlik sig‘imi haqida bilim berish; reaksiyaning issiqlik effektini kalorimetrik aniqlashni va bu bilimlarni organizmdagi energiya almashinuviga tatbiq etishni o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["ochiq, yopiq va izolyatsiyalangan sistemalarni, holat funksiyalarini;", "issiqlik, ish, ichki energiya va solishtirma issiqlik sig‘imi tushunchalarini;", "termodinamikaning 1-qonuni va entalpiyani;", "termodinamikaning 2-qonuni, entropiya va Gibbs erkin energiyasini;", "Gess qonuni va uning xulosalarini;", "organizmda energiya hosil bo‘lishi va sarflanishining termodinamik asoslarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["hosil bo‘lish entalpiyalari asosida reaksiyaning issiqlik effektini hisoblash;", "ΔG ishorasi bo‘yicha jarayonning o‘z-o‘zidan borish ehtimolini aniqlash;", "kalorimetrda neytrallanish issiqligini o‘lchash va hisoblash;", "oziq moddalarning energetik qiymatini hisoblash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Jarayon o‘z-o‘zidan boradi, agar **ΔG < 0** bo‘lsa (ΔG = ΔH − TΔS). Ekzotermik reaksiyada ΔH < 0 (issiqlik ajraladi), endotermikda ΔH > 0 (issiqlik yutiladi)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Energetik qiymat: **“4 — 4 — 9”** kkal/g: uglevodlar — 4, oqsillar — 4, yog‘lar — 9 (spirt — 7)."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Termodinamika reaksiya **bora oladimi** degan savolga javob beradi, lekin uning **qanchalik tez** borishini aytmaydi. Glyukozaning oksidlanishi ΔG < 0, ammo havoda glyukoza o‘z-o‘zidan yonmaydi — buning uchun ferment (katalizator) kerak."}
+ ],
+ "sections": [
+  {"title": "1. Asosiy tushunchalar. Solishtirma issiqlik sig‘imi", "blocks": [
+   {"type": "p", "text": "**Kimyoviy termodinamika** — kimyoviy va fizik jarayonlarda energiyaning bir turdan boshqa turga o‘tishini, jarayonlarning yo‘nalishi va muvozanat shartlarini o‘rganadigan fan. Uning qonunlari tirik organizmga ham to‘liq tatbiq etiladi — buni **bioenergetika** o‘rganadi."},
+   {"type": "table", "title": "Jadval 5.1. Termodinamik sistemalar", "head": ["Sistema", "Atrof muhit bilan almashinuv", "Misol"], "rows": [["Ochiq", "modda va energiya", "tirik organizm, hujayra"], ["Yopiq", "faqat energiya", "yopiq kolba, termos ichidagi reaksiya (qisman)"], ["Izolyatsiyalangan", "modda ham, energiya ham yo‘q", "ideal kalorimetr, koinot"]]},
+   {"type": "p", "text": "**Holat funksiyalari** — qiymati faqat sistemaning boshlang‘ich va oxirgi holatiga bog‘liq bo‘lib, o‘tish yo‘liga bog‘liq bo‘lmagan kattaliklar: ichki energiya (U), entalpiya (H), entropiya (S), Gibbs energiyasi (G). Issiqlik (Q) va ish (A) esa holat funksiyasi emas."},
+   {"type": "p", "text": "**Solishtirma issiqlik sig‘imi** (c) — 1 g moddani 1 K ga isitish uchun zarur issiqlik miqdori, J/(g·K). Issiqlik miqdori: Q = c·m·ΔT. Suvning solishtirma issiqlik sig‘imi juda yuqori — **4,18 J/(g·K)**; shuning uchun suv (organizm massasining ≈ 60 % i) tana haroratini barqaror saqlaydi. Energiya birliklari: 1 kal = 4,184 J."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Energiya turlari:** kinetik va potensial, issiqlik, kimyoviy (bog‘lar energiyasi), elektr, yorug‘lik, mexanik. Organizmda oziq moddalarning kimyoviy energiyasi ATF energiyasiga, so‘ng mexanik (mushak), elektr (nerv impulsi), osmotik (ionlar tashilishi) va kimyoviy (sintez) ishga aylanadi; qolgani issiqlik sifatida ajraladi."}]}
+  ]},
+  {"title": "2. Termodinamikaning 1-qonuni. Entalpiya", "blocks": [
+   {"type": "p", "text": "**Termodinamikaning 1-qonuni** (energiyaning saqlanish qonuni): sistemaga berilgan issiqlik uning ichki energiyasini oshirishga va tashqi kuchlarga qarshi ish bajarishga sarflanadi: Q = ΔU + A, bunda A = p·ΔV. Energiya yo‘qdan paydo bo‘lmaydi va yo‘qolmaydi, faqat bir turdan boshqasiga o‘tadi."},
+   {"type": "p", "text": "Ko‘pchilik kimyoviy va biologik jarayonlar **o‘zgarmas bosimda** boradi. Bu holda issiqlik effekti **entalpiya** o‘zgarishiga teng: Q~p~ = ΔH, bunda H = U + pV. Standart sharoitda (298 K, 101,3 kPa) o‘lchangan qiymatlar ° belgisi bilan yoziladi: ΔH°."},
+   {"type": "list", "ordered": false, "items": ["**Ekzotermik** reaksiya — issiqlik ajraladi, ΔH < 0 (yonish, neytrallanish, glyukozaning oksidlanishi).", "**Endotermik** reaksiya — issiqlik yutiladi, ΔH > 0 (CaCO~3~ ning parchalanishi, NH~4~NO~3~ ning suvda erishi).", "**Termokimyoviy tenglama** — issiqlik effekti va moddalarning agregat holati ko‘rsatilgan tenglama: H~2~(g) + ½O~2~(g) → H~2~O(s); ΔH° = −285,8 kJ."]},
+   {"type": "img", "src": "data/img/tkm/t05_entalpiya.webp", "w": 1400, "h": 700, "label": "Rasm 5.1", "caption": "Ekzotermik (ΔH < 0) va endotermik (ΔH > 0) reaksiyalarning energetik diagrammasi; E~a~ — faollanish energiyasi (sxema)."}
+  ]},
+  {"title": "3. Gess qonuni va uning xulosalari", "blocks": [
+   {"type": "p", "text": "**Gess qonuni** (1840): reaksiyaning issiqlik effekti faqat boshlang‘ich va oxirgi moddalarning tabiati va holatiga bog‘liq bo‘lib, reaksiyaning qanday yo‘l (necha bosqich) bilan borishiga bog‘liq emas. Masalan, glyukoza organizmda o‘nlab bosqichda yoki kalorimetrda bir zumda yonsa ham, ajralgan umumiy issiqlik bir xil."},
+   {"type": "img", "src": "data/img/tkm/t05_gess.webp", "w": 1400, "h": 760, "label": "Rasm 5.2", "caption": "Gess qonuni: uglerodning CO~2~ gacha to‘g‘ridan-to‘g‘ri yonishi va CO orqali ikki bosqichda yonishi issiqligi teng: ΔH~1~ = ΔH~2~ + ΔH~3~ (sxema)."},
+   {"type": "list", "ordered": true, "items": ["**1-xulosa:** reaksiyaning issiqlik effekti mahsulotlar hosil bo‘lish entalpiyalari yig‘indisidan boshlang‘ich moddalar hosil bo‘lish entalpiyalari yig‘indisining ayirmasiga teng: ΔH°~r~ = ΣΔH°~f~(mahsulotlar) − ΣΔH°~f~(boshlang‘ich moddalar). Oddiy moddalarning (O~2~, H~2~, C grafit) hosil bo‘lish entalpiyasi 0 ga teng.", "**2-xulosa:** issiqlik effekti boshlang‘ich moddalar yonish entalpiyalari yig‘indisidan mahsulotlar yonish entalpiyalari yig‘indisining ayirmasiga teng: ΔH°~r~ = ΣΔH°~yon~(boshlang‘ich) − ΣΔH°~yon~(mahsulotlar).", "**Lavuazye–Laplas qonuni:** to‘g‘ri va teskari reaksiyalarning issiqlik effektlari son jihatdan teng, ishorasi qarama-qarshi."]},
+   {"type": "p", "text": "**Misol:** glyukozaning oksidlanish issiqligi. C~6~H~12~O~6~(q) + 6O~2~(g) → 6CO~2~(g) + 6H~2~O(s). ΔH°~f~: glyukoza −1273,3; CO~2~ −393,5; H~2~O(s) −285,8 kJ/mol. ΔH°~r~ = 6·(−393,5) + 6·(−285,8) − (−1273,3) = −2802,5 kJ/mol."},
+   {"type": "table", "title": "Jadval 5.2. Oziq moddalarning energetik qiymati (organizmda)", "head": ["Modda", "kJ/g", "kkal/g"], "rows": [["Uglevodlar", "17,2", "4,1"], ["Oqsillar", "17,2", "4,1"], ["Yog‘lar", "38,9", "9,3"], ["Etil spirti", "29,7", "7,1"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Oqsilning kalorimetrdagi yonish issiqligi (≈ 23 kJ/g) organizmdagidan (17,2 kJ/g) katta: organizmda oqsil CO~2~, H~2~O va N~2~ gacha emas, **mochevina**gacha oksidlanadi, mochevina esa hali yonishi mumkin bo‘lgan energiyani olib chiqib ketadi."}]}
+  ]},
+  {"title": "4. Termodinamikaning 2-qonuni. Entropiya va Gibbs energiyasi", "blocks": [
+   {"type": "p", "text": "**Entropiya** (S) — sistemaning tartibsizlik o‘lchovi; Bolsman tenglamasi: S = k·lnW (W — sistemaning mumkin bo‘lgan mikroholatlari soni). Entropiya qattiq → suyuq → gaz o‘tishida, erishda, molekulalar parchalanib zarrachalar soni ortganda **oshadi**."},
+   {"type": "p", "text": "**Termodinamikaning 2-qonuni:** izolyatsiyalangan sistemada o‘z-o‘zidan boradigan jarayonlar entropiya ortishi bilan boradi (ΔS > 0). Issiqlik o‘z-o‘zidan faqat issiq jismdan sovuq jismga o‘tadi."},
+   {"type": "p", "text": "Yopiq va ochiq sistemalarda yo‘nalish mezoni — **Gibbs erkin energiyasi**: ΔG = ΔH − T·ΔS. ΔG < 0 — jarayon o‘z-o‘zidan boradi (**ekzergonik**), ΔG > 0 — o‘z-o‘zidan bormaydi (**endergonik**), ΔG = 0 — muvozanat. Standart Gibbs energiyasi muvozanat konstantasi bilan bog‘liq: ΔG° = −R·T·lnK."},
+   {"type": "table", "title": "Jadval 5.3. ΔH va ΔS ishorasiga ko‘ra jarayonning yo‘nalishi", "head": ["ΔH", "ΔS", "ΔG = ΔH − TΔS", "Jarayon"], "rows": [["< 0", "> 0", "har doim < 0", "har qanday haroratda o‘z-o‘zidan boradi"], ["> 0", "< 0", "har doim > 0", "o‘z-o‘zidan bormaydi"], ["< 0", "< 0", "past haroratda < 0", "past haroratda boradi (masalan, oqsil buralishi)"], ["> 0", "> 0", "yuqori haroratda < 0", "yuqori haroratda boradi (masalan, erish, denaturatsiya)"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Tirik organizm — **ochiq sistema**: u o‘z ichida yuqori tartibni (past entropiyani) atrof muhitdan tartibli oziq moddalarni olib, tartibsiz mahsulotlarni (CO~2~, H~2~O, issiqlik) chiqarish hisobiga saqlaydi (I. Prigojin). O‘lim — bu tartib saqlash mexanizmlarining to‘xtashi va entropiyaning ortishidir."}]}
+  ]},
+  {"title": "5. Energetik bog‘langan reaksiyalar. ATF", "blocks": [
+   {"type": "p", "text": "Organizmda ko‘plab zarur reaksiyalar endergonik (ΔG > 0). Ular **energetik bog‘lanish** (qo‘shma reaksiyalar) orqali amalga oshadi: endergonik reaksiya ekzergonik reaksiya — ko‘pincha **ATF gidrolizi** — bilan bitta ferment ishtirokida birlashtiriladi; umumiy ΔG manfiy bo‘lsa, ikkalasi ham boradi."},
+   {"type": "list", "ordered": false, "items": ["ATF + H~2~O → ADF + H~3~PO~4~; ΔG°′ = −30,5 kJ/mol.", "Glyukoza + H~3~PO~4~ → glyukoza-6-fosfat + H~2~O; ΔG°′ = +13,8 kJ/mol.", "Bog‘langan reaksiya: glyukoza + ATF → glyukoza-6-fosfat + ADF; ΔG°′ = −30,5 + 13,8 = −16,7 kJ/mol (geksokinaza)."]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "ATF — **energiya “valyutasi”**: u energiyani saqlamaydi, balki uni hosil bo‘ladigan joydan (mitoxondriya) sarflanadigan joyga tashiydi. Odam sutkasiga o‘z tana massasiga yaqin miqdorda ATF ni qayta sintez qiladi va parchalaydi."}]}
+  ]},
+  {"title": "6. Laboratoriya ishi: neytrallanish reaksiyasining issiqlik effektini aniqlash", "blocks": [
+   {"type": "p", "text": "**Usul asosi:** kuchli kislota va kuchli asos neytrallanganda faqat H^+^ + OH^−^ → H~2~O reaksiyasi boradi, shuning uchun issiqlik effekti kislota va asos tabiatiga bog‘liq emas: ΔH° ≈ −57 kJ/mol. Ajralgan issiqlik kalorimetrdagi eritma haroratining ko‘tarilishi bo‘yicha hisoblanadi."},
+   {"type": "sub", "text": "Jihozlar:"},
+   {"type": "p", "text": "oddiy kalorimetr (ikki stakan: ichki stakan va izolyatsiya qatlami, qopqoq), 0,1 °C aniqlikdagi termometr, o‘lchov silindrlari, 1 M HCl va 1 M NaOH eritmalari."},
+   {"type": "list", "ordered": true, "items": ["Kalorimetrning ichki stakaniga 50 ml 1 M HCl quying va 3–5 daqiqadan so‘ng uning haroratini (t~1~) yozing.", "Boshqa silindrda 50 ml 1 M NaOH ning haroratini o‘lchang (u t~1~ ga teng bo‘lishi kerak).", "NaOH ni tezda kalorimetrga quying, qopqog‘ini yoping va termometr bilan aralashtiring.", "Haroratning eng yuqori qiymatini (t~2~) yozing.", "Issiqlik effektini hisoblang."]},
+   {"type": "sub", "text": "Hisoblash:"},
+   {"type": "p", "text": "Eritma massasi m = 100 g (ρ ≈ 1 g/ml), c = 4,18 J/(g·K). Masalan, ΔT = t~2~ − t~1~ = 6,7 K bo‘lsa: Q = 4,18 · 100 · 6,7 = 2800 J. Reaksiyaga kirishgan modda miqdori n = 1 · 0,05 = 0,05 mol. ΔH = −Q / n = −2800 / 0,05 = −56 000 J/mol = **−56 kJ/mol**. Nazariy qiymatdan farqi (≈ 2 %) kalorimetr devorlarining issiqlik yutishi va issiqlik yo‘qolishi bilan bog‘liq."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Erish issiqligi tibbiyotda ham ishlatiladi: **sovituvchi paketlar** ichidagi NH~4~NO~3~ suvda eriganda issiqlik yutadi (ΔH > 0) — shikastlanishda, isitmada qo‘llanadi; **isituvchi paketlar**da esa CaCl~2~ yoki temirning oksidlanishi kabi ekzotermik jarayonlar ishlatiladi."}]}
+  ]},
+  {"title": "7. Metabolizm jarayonida energiya hosil bo‘lishi va sarflanishi (mustaqil ish)", "blocks": [
+   {"type": "p", "text": "Organizm energiyani oziq moddalarning oksidlanishidan oladi. Katabolizmning umumiy yo‘li — atsetil-KoA, Krebs sikli va nafas zanjiri; energiyaning ≈ 40 % i ATF ga aylanadi, qolgani **issiqlik** sifatida ajralib, tana haroratini ta’minlaydi."},
+   {"type": "list", "ordered": false, "items": ["**Asosiy almashinuv** — tinch holatda, nahorga, komfort haroratda hayot uchun zarur minimal energiya sarfi: kattalarda sutkasiga ≈ 1600–1800 kkal (≈ 7000 kJ).", "**Umumiy sutkalik sarf** jismoniy faollikka bog‘liq: aqliy mehnat — 2500–2800 kkal, og‘ir jismoniy mehnat — 3500–4500 kkal.", "**Bevosita kalorimetriya** — organizm ajratgan issiqlikni maxsus kamerada o‘lchash; **bilvosita kalorimetriya** — O~2~ sarfi va CO~2~ ajralishi bo‘yicha hisoblash.", "**Nafas koeffitsienti** (NK = V(CO~2~) / V(O~2~)): uglevodlar — 1,0, oqsillar — 0,8, yog‘lar — 0,7; aralash ovqatda ≈ 0,85."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Energiya balansi: iste’mol sarfdan ko‘p bo‘lsa, ortiqcha energiya **yog‘** sifatida to‘planadi (1 kg yog‘ to‘qimasi ≈ 7700 kkal). Qalqonsimon bez gormonlari asosiy almashinuvni oshiradi (tireotoksikozda ozish, gipotireozda semirish)."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: Gess qonuni bo‘yicha issiqlik effektini hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Reaksiya tenglamasini to‘liq tenglang va moddalarning agregat holatini ko‘rsating.", "Ma’lumotnomadan barcha moddalarning ΔH°~f~ qiymatlarini oling (oddiy moddalar uchun 0).", "Har bir qiymatni tenglamadagi koeffitsientga ko‘paytiring.", "ΔH°~r~ = Σ(mahsulotlar) − Σ(boshlang‘ich moddalar) ni hisoblang.", "Ishorasiga qarab reaksiya ekzo- yoki endotermik ekanini ayting."]}]},
+  {"title": "Ko‘nikma: kalorimetrik o‘lchash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Kalorimetr toza va quruq, eritmalar bir xil boshlang‘ich haroratda bo‘lsin.", "Eritmalarni tez aralashtiring va qopqoqni darhol yoping.", "Haroratni har 15 soniyada yozib, eng yuqori qiymatni aniqlang.", "Q = c·m·ΔT bo‘yicha issiqlikni, so‘ng 1 mol uchun ΔH ni hisoblang.", "Nazariy qiymat bilan solishtirib, nisbiy xatoni toping va sabablarini tahlil qiling."]}]}
+ ],
+ "questions": [
+  "Termodinamik sistemalarning qanday turlari bor? Tirik organizm qaysi turga kiradi?",
+  "Holat funksiyalari nima? Misollar keltiring.",
+  "Solishtirma issiqlik sig‘imi nima va suvning yuqori issiqlik sig‘imi qanday ahamiyatga ega?",
+  "Termodinamikaning 1-qonunini ta’riflang.",
+  "Entalpiya nima? Ekzo- va endotermik reaksiyalarni farqlang.",
+  "Gess qonuni va uning xulosalarini tushuntiring.",
+  "Nima uchun oqsilning organizmdagi energetik qiymati kalorimetrdagidan kam?",
+  "Entropiya nima? Termodinamikaning 2-qonunini ta’riflang.",
+  "Gibbs erkin energiyasi qanday hisoblanadi va u nimani ko‘rsatadi?",
+  "Energetik bog‘langan reaksiyalar nima? Geksokinaza misolida tushuntiring.",
+  "Neytrallanish issiqligi nima uchun kislota va asos tabiatiga bog‘liq emas?",
+  "Asosiy almashinuv nima va u qanday o‘lchanadi?",
+  "Nafas koeffitsienti nimani ko‘rsatadi?"
+ ],
+ "quiz": [
+  {"q": "Tirik organizm qanday termodinamik sistema?", "options": ["Ochiq", "Yopiq", "Izolyatsiyalangan", "Adiabatik", "Muvozanatdagi"], "answer": 0},
+  {"q": "Qaysi kattalik holat funksiyasi emas?", "options": ["Issiqlik", "Entalpiya", "Entropiya", "Ichki energiya", "Gibbs energiyasi"], "answer": 0},
+  {"q": "Suvning solishtirma issiqlik sig‘imi qancha?", "options": ["4,18 J/(g·K)", "1,00 J/(g·K)", "0,52 J/(g·K)", "8,31 J/(g·K)", "2,09 J/(g·K)"], "answer": 0},
+  {"q": "O‘zgarmas bosimda reaksiyaning issiqlik effekti nimaga teng?", "options": ["Entalpiya o‘zgarishiga", "Entropiya o‘zgarishiga", "Ichki energiya o‘zgarishiga", "Gibbs energiyasiga", "Bajarilgan ishga"], "answer": 0},
+  {"q": "Ekzotermik reaksiyada ΔH qanday bo‘ladi?", "options": ["ΔH < 0", "ΔH > 0", "ΔH = 0", "ΔH = ΔS", "ΔH = ΔG"], "answer": 0},
+  {"q": "Oddiy moddalarning standart hosil bo‘lish entalpiyasi qancha?", "options": ["0", "−1", "1", "Har xil", "−285,8 kJ/mol"], "answer": 0},
+  {"q": "Gess qonuniga ko‘ra issiqlik effekti nimaga bog‘liq emas?", "options": ["Reaksiya yo‘liga", "Boshlang‘ich moddalarga", "Mahsulotlarga", "Moddalarning agregat holatiga", "Moddalar miqdoriga"], "answer": 0},
+  {"q": "1 g yog‘ organizmda oksidlanganda qancha energiya ajraladi?", "options": ["38,9 kJ (9,3 kkal)", "17,2 kJ (4,1 kkal)", "29,7 kJ (7,1 kkal)", "4,18 kJ (1 kkal)", "57 kJ (13,6 kkal)"], "answer": 0},
+  {"q": "Jarayon o‘z-o‘zidan borishi uchun qanday shart bajarilishi kerak?", "options": ["ΔG < 0", "ΔG > 0", "ΔH > 0", "ΔS < 0", "ΔG = 0"], "answer": 0},
+  {"q": "Izolyatsiyalangan sistemada o‘z-o‘zidan boradigan jarayonda entropiya qanday o‘zgaradi?", "options": ["Ortadi", "Kamayadi", "O‘zgarmaydi", "Nolga teng bo‘ladi", "Avval kamayadi, keyin ortadi"], "answer": 0},
+  {"q": "ATF gidrolizining standart Gibbs energiyasi qancha?", "options": ["−30,5 kJ/mol", "+30,5 kJ/mol", "−2802,5 kJ/mol", "+13,8 kJ/mol", "−57 kJ/mol"], "answer": 0},
+  {"q": "Kuchli kislota va kuchli asosning neytrallanish issiqligi taxminan qancha?", "options": ["−57 kJ/mol", "−285,8 kJ/mol", "+57 kJ/mol", "−2800 kJ/mol", "−30,5 kJ/mol"], "answer": 0},
+  {"q": "Yog‘lar oksidlanganda nafas koeffitsienti qancha?", "options": ["0,7", "1,0", "0,8", "0,85", "1,2"], "answer": 0},
+  {"q": "Kattalarda asosiy almashinuv sutkasiga taxminan qancha?", "options": ["1600–1800 kkal", "500–700 kkal", "4000–5000 kkal", "100–200 kkal", "8000–9000 kkal"], "answer": 0},
+  {"q": "NH~4~NO~3~ suvda eriganda nima kuzatiladi?", "options": ["Issiqlik yutiladi (eritma soviydi)", "Issiqlik ajraladi", "Harorat o‘zgarmaydi", "Gaz ajraladi", "Cho‘kma tushadi"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemor sutkasiga 300 g uglevod, 80 g oqsil va 70 g yog‘ iste’mol qiladi.", "ask": "Ratsionning energetik qiymatini kkal va kJ da hisoblang. U aqliy mehnat bilan shug‘ullanuvchi kishining sarfini qoplaydimi?", "answer": "Uglevodlar: 300 · 4,1 = 1230 kkal; oqsillar: 80 · 4,1 = 328 kkal; yog‘lar: 70 · 9,3 = 651 kkal. Jami ≈ 2209 kkal ≈ 9242 kJ (1 kkal = 4,184 kJ). Aqliy mehnat bilan shug‘ullanuvchi kishining sarfi 2500–2800 kkal — ratsion biroz yetishmaydi, uzoq muddatda tana massasi kamayadi."},
+  {"title": "Masala 2", "text": "Glyukoza organizmda glikoliz, Krebs sikli va nafas zanjiri orqali o‘nlab bosqichda CO~2~ va H~2~O gacha oksidlanadi. Kalorimetrda esa u bir zumda yonadi.", "ask": "Qaysi holatda ko‘proq issiqlik ajraladi? Javobni asoslang va 1 mol glyukoza uchun ΔH ni hisoblang (ΔH°~f~: glyukoza −1273,3; CO~2~ −393,5; H~2~O −285,8 kJ/mol).", "answer": "Gess qonuniga ko‘ra ikkala holatda ham umumiy issiqlik effekti bir xil, chunki boshlang‘ich va oxirgi moddalar bir xil: ΔH = 6·(−393,5) + 6·(−285,8) − (−1273,3) = −2802,5 kJ/mol. Farqi — organizmda bu energiyaning bir qismi (≈ 40 %) issiqlikka emas, ATF ga o‘tadi va keyin ish bajarishga sarflanadi."},
+  {"title": "Masala 3", "text": "Kalorimetrda 50 ml 1 M HCl va 50 ml 1 M NaOH aralashtirildi; harorat 21,0 °C dan 27,6 °C gacha ko‘tarildi (c = 4,18 J/(g·K), ρ = 1 g/ml).", "ask": "Neytrallanish issiqligini hisoblang va nazariy qiymat bilan solishtiring.", "answer": "ΔT = 6,6 K; Q = 4,18 · 100 · 6,6 = 2759 J; n = 0,05 mol; ΔH = −2759 / 0,05 = −55 180 J/mol ≈ −55,2 kJ/mol. Nazariy qiymat ≈ −57 kJ/mol, nisbiy xato ≈ 3 %: kalorimetr devorlari va termometr issiqlikning bir qismini yutgan, bir qismi havoga o‘tgan."}
+ ],
+ "cards": [
+  {"front": "Ochiq sistema", "back": "Atrof muhit bilan modda va energiya almashadi (tirik organizm)"},
+  {"front": "Holat funksiyasi", "back": "Faqat boshlang‘ich va oxirgi holatga bog‘liq kattalik: U, H, S, G"},
+  {"front": "Termodinamikaning 1-qonuni", "back": "Q = ΔU + A — energiyaning saqlanish qonuni"},
+  {"front": "Entalpiya", "back": "H = U + pV; o‘zgarmas bosimdagi issiqlik effekti Q~p~ = ΔH"},
+  {"front": "Gess qonuni", "back": "Issiqlik effekti reaksiya yo‘liga bog‘liq emas"},
+  {"front": "Entropiya", "back": "Tartibsizlik o‘lchovi, S = k·lnW"},
+  {"front": "Gibbs energiyasi", "back": "ΔG = ΔH − TΔS; ΔG < 0 — jarayon o‘z-o‘zidan boradi"},
+  {"front": "Energetik bog‘lanish", "back": "Endergonik reaksiyaning ATF gidrolizi bilan birga borishi"},
+  {"front": "Neytrallanish issiqligi", "back": "H^+^ + OH^−^ → H~2~O; ΔH° ≈ −57 kJ/mol"},
+  {"front": "Nafas koeffitsienti", "back": "V(CO~2~) / V(O~2~): uglevodlar 1,0, oqsillar 0,8, yog‘lar 0,7"}
+ ]
+}

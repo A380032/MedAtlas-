@@ -1,0 +1,112 @@
+{
+ "id": "07",
+ "no": 7,
+ "title": "Sirt hodisalari va adsorbsiya. Xromatografiya. Adsorbsiyaga asoslangan sifat reaksiyalari. Adsorbsiyani miqdoriy baholash",
+ "goals": [
+  {"type": "p", "text": "Talabaga sirt energiyasi va sirt tarangligi, sirt faol va sirt nofaol moddalar, adsorbsiya, desorbsiya, absorbsiya va xemosorbsiya, harakatchan va harakatsiz sirtlardagi adsorbsiya qonuniyatlari (Gibbs, Lengmyur, Freyndlix tenglamalari), xromatografiya usullari hamda ularning tibbiyotdagi ahamiyati haqida bilim berish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["sirt energiyasi, sirt tarangligi va sirt faollik tushunchalarini;", "sirt faol, sirt nofaol va sirtga befarq moddalarni, Dyuklo–Traube qoidasini;", "adsorbsiya, absorbsiya, desorbsiya va xemosorbsiyaning farqini;", "Gibbs, Lengmyur va Freyndlix tenglamalarini;", "ion almashinish adsorbsiyasi va Panet–Fayans qoidasini;", "xromatografiyaning asoslari, turlari va R~f~ koeffitsientini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["adsorbsiya miqdorini tajriba ma’lumotlaridan hisoblash;", "adsorbsiya izotermasini tahlil qilish;", "qog‘oz yoki yupqa qatlam xromatogrammasida R~f~ ni hisoblash;", "sorbentlar va sirt faol moddalarning tibbiy qo‘llanilishini asoslash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "**Adsorbsiya** — moddaning boshqa faza **sirtida** to‘planishi; **absorbsiya** — butun **hajmi** bo‘ylab yutilishi. Sirt faol moddalar sirt tarangligini pasaytiradi va sirtda musbat adsorbsiyalanadi (Γ > 0)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Sirt faol molekula — **“boshi suvga, dumi havoga”**: qutbli gidrofil “bosh” (−COO^−^, −OH, −SO~3~^−^) suvda, qutbsiz gidrofob uglevodorod “dum” havoda yoki yog‘da turadi."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Faollashtirilgan ko‘mir dorilarni ham adsorbsiyalaydi: u bilan bir vaqtda ichilgan dorilar (kontratseptivlar, antibiotiklar) samarasi kamayadi. Shuning uchun boshqa dorilar ko‘mirdan kamida 1,5–2 soat oldin yoki keyin ichiladi."}
+ ],
+ "sections": [
+  {"title": "1. Sirt energiyasi va sirt tarangligi", "blocks": [
+   {"type": "p", "text": "Faza ichidagi molekula har tomondan bir xil kuch bilan tortiladi, sirtdagi molekulaga esa ichkariga yo‘nalgan teng ta’sir etuvchi kuch ta’sir qiladi. Shuning uchun sirt qatlami ortiqcha energiyaga — **sirt energiyasi**ga ega. Birlik sirt yuzasiga to‘g‘ri keladigan erkin sirt energiyasi **sirt tarangligi** (σ) deyiladi, J/m^2^ yoki N/m."},
+   {"type": "p", "text": "Sistema o‘z-o‘zidan sirt energiyasini kamaytirishga intiladi: tomchilar shar shaklini oladi (eng kichik sirt), mayda tomchilar qo‘shilib yiriklashadi, sirtda σ ni kamaytiradigan moddalar to‘planadi. Suvning sirt tarangligi juda yuqori: 20 °C da ≈ 73 mN/m."},
+   {"type": "table", "title": "Jadval 7.1. Ayrim suyuqliklarning sirt tarangligi (≈ 20 °C)", "head": ["Suyuqlik", "σ, mN/m"], "rows": [["Suv", "≈ 73"], ["Siydik (me’yor)", "≈ 64–69"], ["Qon zardobi", "≈ 45–50"], ["O‘t (safro)", "≈ 48"], ["Etil spirti", "≈ 22"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Gey sinamasi:** siydik yuzasiga oltingugurt kukuni sepiladi. Me’yorda kukun yuzada qoladi; siydikda o‘t kislotalari (kuchli sirt faol moddalar) bo‘lsa, sirt tarangligi pasayadi va kukun cho‘kadi — mexanik sariqlik va jigar kasalliklarida musbat bo‘ladi."}]}
+  ]},
+  {"title": "2. Sirt faol va sirt nofaol moddalar", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Sirt faol moddalar (SFM)** — erituvchining sirt tarangligini pasaytiradi va sirtda to‘planadi: spirtlar, karbon kislotalar, sovunlar, o‘t kislotalari, fosfolipidlar, oqsillar. Ular **difil** (amfifil) tuzilishga ega.", "**Sirt nofaol moddalar (SNM)** — sirt tarangligini biroz oshiradi va sirtdan ichkariga qochadi (manfiy adsorbsiya): kuchli elektrolitlar (NaCl, KNO~3~), anorganik kislota va ishqorlar.", "**Sirtga befarq moddalar** — sirt tarangligini deyarli o‘zgartirmaydi: glyukoza, saxaroza."]},
+   {"type": "p", "text": "**Sirt faollik** — moddaning sirt tarangligini pasaytirish qobiliyati: g = −dσ / dC. **Dyuklo–Traube qoidasi:** gomologik qatorda uglevodorod radikali bitta CH~2~ guruhga uzaygan sari sirt faollik **3–3,5 marta** ortadi (chumoli < sirka < propion < moy kislota)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**O‘pka surfaktanti** — alveolalar ichki yuzasini qoplagan fosfolipid (asosan dipalmitoilfosfatidilxolin) va oqsillar aralashmasi. Laplas qonuniga ko‘ra alveolani yopishtiruvchi bosim P = 2σ / r; surfaktant σ ni keskin pasaytirib, nafas chiqarishda alveolalar puchayishining oldini oladi. Chala tug‘ilgan chaqaloqlarda surfaktant yetishmasa, **respirator distress-sindrom** rivojlanadi; davolashda traxeyaga tabiiy yoki sun’iy surfaktant yuboriladi."}]}
+  ]},
+  {"title": "3. Adsorbsiya, absorbsiya, desorbsiya va xemosorbsiya", "blocks": [
+   {"type": "p", "text": "**Sorbsiya** — bir moddaning boshqa modda tomonidan yutilishi. Yutadigan modda **sorbent** (adsorbent), yutiladigan modda **sorbat** (adsorbtiv) deyiladi."},
+   {"type": "table", "title": "Jadval 7.2. Sorbsiya turlari", "head": ["Jarayon", "Tavsifi", "Misol"], "rows": [["Adsorbsiya", "modda faza chegarasida, sirtda to‘planadi", "ko‘mir yuzasida gazlar va bo‘yoqlar"], ["Absorbsiya", "modda sorbentning butun hajmiga singadi", "suvning CO~2~ yoki NH~3~ ni yutishi"], ["Desorbsiya", "adsorbsiyalangan modda sirtdan ajralishi (adsorbsiyaga teskari)", "qizdirganda ko‘mirdan gaz chiqishi"], ["Fizik adsorbsiya", "van-der-Vaals kuchlari, qaytar, issiqligi kichik (≈ 10–40 kJ/mol)", "ko‘mirda gazlar"], ["Xemosorbsiya", "kimyoviy bog‘ hosil bo‘ladi, ko‘pincha qaytmas, issiqligi katta (≈ 40–400 kJ/mol)", "metall sirtida kislorod, CaO ning CO~2~ ni yutishi"]]},
+   {"type": "p", "text": "Adsorbsiya **ekzotermik** jarayon: harorat oshganda adsorbsiya kamayadi, desorbsiya kuchayadi. Adsorbsiya qancha ko‘p bo‘lishi sorbentning **solishtirma sirt yuzasi**ga bog‘liq: 1 g faollashtirilgan ko‘mirning ichki g‘ovaklari yuzasi 500–1500 m^2^ ga yetadi."}
+  ]},
+  {"title": "4. Harakatchan sirtda adsorbsiya. Gibbs tenglamasi", "blocks": [
+   {"type": "p", "text": "Suyuqlik–gaz va suyuqlik–suyuqlik chegarasi **harakatchan sirt** hisoblanadi. Unda erigan modda adsorbsiyasi **Gibbs tenglamasi** bilan ifodalanadi: Γ = −(C / R·T)·(dσ / dC), bunda Γ — sirtdagi ortiqcha miqdor (mol/m^2^)."},
+   {"type": "list", "ordered": false, "items": ["dσ / dC < 0 (SFM) bo‘lsa, Γ > 0 — **musbat adsorbsiya**, modda sirtda to‘planadi.", "dσ / dC > 0 (SNM) bo‘lsa, Γ < 0 — **manfiy adsorbsiya**, modda sirtdan ichkariga ketadi.", "Sirtda SFM molekulalari **yo‘naltirilgan** joylashadi: konsentratsiya ortgan sari ular tik turib, zich monomolekulyar qavat (“palisad”) hosil qiladi — hujayra membranasi lipid qo‘sh qavatining fizik-kimyoviy asosi shu."]}
+  ]},
+  {"title": "5. Qattiq sirtda adsorbsiya. Lengmyur va Freyndlix tenglamalari", "blocks": [
+   {"type": "p", "text": "**Lengmyurning monomolekulyar adsorbsiya nazariyasi:** adsorbsiya sorbentning faol markazlarida boradi; har bir markaz bitta molekulani ushlaydi; sirt to‘lganda monomolekulyar qavat hosil bo‘ladi. **Lengmyur tenglamasi:** Γ = Γ~∞~·K·C / (1 + K·C), bunda Γ~∞~ — maksimal (to‘liq qavat) adsorbsiya, K — adsorbsiya konstantasi."},
+   {"type": "list", "ordered": false, "items": ["Kichik konsentratsiyada (K·C ≪ 1): Γ ≈ Γ~∞~·K·C — adsorbsiya konsentratsiyaga proporsional.", "Katta konsentratsiyada (K·C ≫ 1): Γ ≈ Γ~∞~ — sirt to‘yingan.", "**Freyndlix empirik tenglamasi** (o‘rtacha konsentratsiyalar uchun): x / m = K·C^1/n^; logarifmlab: lg(x / m) = lgK + (1 / n)·lgC — to‘g‘ri chiziq, undan K va 1/n topiladi."]},
+   {"type": "img", "src": "data/img/tkm/t07_izoterma.webp", "w": 1400, "h": 800, "label": "Rasm 7.1", "caption": "Adsorbsiya izotermasi (Lengmyur tenglamasi bo‘yicha): kichik konsentratsiyada to‘g‘ri chiziqli soha, katta konsentratsiyada Γ~∞~ ga yaqinlashuvchi to‘yinish (chap); Freyndlix tenglamasining logarifmik ko‘rinishi (o‘ng) (hisoblangan ma’lumotlar asosida chizilgan)."},
+   {"type": "p", "text": "**Adsorbsiyani miqdoriy baholash:** sorbent eritmaga solinib muvozanat qaror topgach, eritmadagi konsentratsiyaning kamayishidan adsorbsiya topiladi: Γ = (C~0~ − C)·V / m, bunda C~0~ va C — boshlang‘ich va muvozanat konsentratsiyalar, V — eritma hajmi, m — sorbent massasi."}
+  ]},
+  {"title": "6. Elektrolitlar adsorbsiyasi va ion almashinish", "blocks": [
+   {"type": "p", "text": "**Panet–Fayans qoidasi:** kristall sirtida uning panjarasiga kiradigan yoki u bilan izomorf bo‘lgan ionlar tanlab adsorbsiyalanadi. Masalan, AgI kristallari KI ortiqcha bo‘lgan eritmada I^−^ ni, AgNO~3~ ortiqcha bo‘lganda Ag^+^ ni adsorbsiyalaydi — kolloid zarracha zaryadi shunday hosil bo‘ladi (8-mavzu)."},
+   {"type": "p", "text": "**Ion almashinish adsorbsiyasi** — sorbent eritmaga o‘zining bir ionini berib, uning o‘rniga ekvivalent miqdorda boshqa ionni oladi. Bunday sorbentlar **ionitlar** deyiladi: **kationitlar** (R−SO~3~H, kationlarni almashtiradi) va **anionitlar** (R−N(CH~3~)~3~^+^OH^−^, anionlarni almashtiradi)."},
+   {"type": "table", "title": "Jadval 7.3. Sorbentlarning tibbiy qo‘llanilishi", "head": ["Sorbent / usul", "Ta’sir mexanizmi", "Qo‘llanilishi"], "rows": [["Faollashtirilgan ko‘mir, smektit, polimetilsiloksan", "fizik adsorbsiya (enterosorbsiya)", "zaharlanish, diareya, meteorizm"], ["Gemosorbsiya", "qonni sorbent kolonnadan o‘tkazish", "og‘ir zaharlanish, jigar yetishmovchiligi"], ["Natriy polistirolsulfonat", "kationit: ichakda Na^+^ ni K^+^ ga almashtiradi", "giperkaliyemiya"], ["Kolestiramin", "anionit: o‘t kislotalarini bog‘laydi", "giperxolesterinemiya, qichishish"], ["Sevelamer", "fosfatlarni bog‘laydi", "buyrak yetishmovchiligida giperfosfatemiya"], ["Ion almashinish kolonnalari", "suvni tuzlardan tozalash", "gemodializ va in’eksiya uchun suv"]]}
+  ]},
+  {"title": "7. Xromatografiya", "blocks": [
+   {"type": "p", "text": "**Xromatografiya** — aralashma komponentlarining harakatsiz (statsionar) faza va harakatchan faza orasida turlicha taqsimlanishi (tanlab adsorbsiyalanishi) asosida ajratish va tahlil qilish usuli. Uni 1903-yilda rus botanigi **M.S. Svet** o‘simlik pigmentlarini bo‘r to‘ldirilgan kolonkada ajratish orqali kashf etgan."},
+   {"type": "table", "title": "Jadval 7.4. Xromatografiya usullarining tasnifi", "head": ["Belgisi", "Turlari"], "rows": [["Harakatchan faza holati", "gaz xromatografiyasi, suyuqlik xromatografiyasi"], ["Ajratish mexanizmi", "adsorbsion, taqsimlovchi, ion almashinuvchi, gel-filtratsion (molekula o‘lchami bo‘yicha), affin (o‘ziga xos bog‘lanish bo‘yicha)"], ["Bajarish texnikasi", "kolonkali, qog‘oz, yupqa qatlam (YuQX), yuqori samarali suyuqlik xromatografiyasi (YuSSX)"]]},
+   {"type": "p", "text": "Qog‘oz va yupqa qatlam xromatografiyasida modda harakati **R~f~ koeffitsienti** bilan tavsiflanadi: R~f~ = l / L, bunda l — start chizig‘idan modda dog‘igacha masofa, L — start chizig‘idan erituvchi frontigacha masofa. Ma’lum sharoitda R~f~ har bir modda uchun doimiy — modda shu bo‘yicha aniqlanadi."},
+   {"type": "img", "src": "data/img/tkm/t07_xromat.webp", "w": 1000, "h": 750, "label": "Rasm 7.2", "caption": "Barg pigmentlarining xromatogrammasi: karotinoidlar (sariq), xlorofill a (ko‘k-yashil) va xlorofill b (sarg‘ish-yashil) erituvchi bilan har xil masofaga ko‘tarilib, alohida dog‘lar hosil qilgan — M.S. Svet tajribasining zamonaviy ko‘rinishi (Wikimedia Commons)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Tibbiyotda: **YuSSX** — glikirlangan gemoglobin (HbA~1c~), vitaminlar, dorilarning qondagi konsentratsiyasi; **gaz xromatografiyasi** — qon va siydikda etanol, toksikologik ekspertiza; **qog‘oz va YuQX** — aminokislotalar, irsiy aminoatsidopatiyalar skriningi (fenilketonuriya); **gel-filtratsiya va affin xromatografiya** — oqsillar, antitelolar va vaksinalarni tozalash."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: adsorbsiya miqdorini hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Eritmaning boshlang‘ich konsentratsiyasini (C~0~) aniqlang (titrlash yoki fotometriya bilan).", "Sorbentning aniq tortimini (m) eritmaning ma’lum hajmiga (V) soling va muvozanat qaror topguncha chayqating.", "Filtrlab, muvozanat konsentratsiyani (C) aniqlang.", "Γ = (C~0~ − C)·V / m formulasi bo‘yicha adsorbsiyani hisoblang (mmol/g).", "Bir necha konsentratsiyada takrorlab, Γ = f(C) izotermasini chizing."]}]},
+  {"title": "Ko‘nikma: xromatogrammada R~f~ ni aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Qog‘oz yoki plastinkaning pastidan 1,5–2 sm balandlikda oddiy qalam bilan start chizig‘ini torting.", "Namuna va standart moddalarni kapillyar bilan kichik dog‘ qilib tomizing va quriting.", "Plastinkani erituvchi tutgan kameraga start chizig‘i erituvchidan yuqorida bo‘ladigan qilib joylang.", "Erituvchi front yuqoriga yetganda olib, frontni belgilang va quriting; rangsiz moddalarni ochuvchi reaktiv bilan bo‘yang (aminokislotalar uchun ningidrin).", "l va L ni o‘lchab, R~f~ = l / L ni hisoblang va standartlar bilan solishtiring."]}]}
+ ],
+ "questions": [
+  "Sirt energiyasi va sirt tarangligi nima?",
+  "Nima uchun tomchilar shar shaklini oladi?",
+  "Sirt faol, sirt nofaol va sirtga befarq moddalarga misollar keltiring.",
+  "Dyuklo–Traube qoidasini ta’riflang.",
+  "O‘pka surfaktantining ahamiyati qanday?",
+  "Adsorbsiya, absorbsiya, desorbsiya va xemosorbsiyaning farqi nimada?",
+  "Gibbs tenglamasini yozing va tushuntiring.",
+  "Lengmyur nazariyasining asosiy qoidalari va tenglamasi qanday?",
+  "Freyndlix tenglamasi qanday ko‘rinishga ega va undagi konstantalar qanday topiladi?",
+  "Panet–Fayans qoidasini tushuntiring.",
+  "Ionitlar nima va ular tibbiyotda qanday ishlatiladi?",
+  "Xromatografiya qanday tasniflanadi?",
+  "R~f~ koeffitsienti nima va u qanday hisoblanadi?"
+ ],
+ "quiz": [
+  {"q": "Sirt tarangligining SI dagi birligi qaysi?", "options": ["J/m^2^ (N/m)", "Pa", "J/mol", "mol/m^2^", "N·m"], "answer": 0},
+  {"q": "20 °C da suvning sirt tarangligi taxminan qancha?", "options": ["73 mN/m", "22 mN/m", "48 mN/m", "100 mN/m", "7 mN/m"], "answer": 0},
+  {"q": "Qaysi modda sirt faol hisoblanadi?", "options": ["Natriy oleat (sovun)", "Natriy xlorid", "Glyukoza", "Kaliy nitrat", "Sulfat kislota"], "answer": 0},
+  {"q": "Dyuklo–Traube qoidasiga ko‘ra CH~2~ guruh qo‘shilganda sirt faollik necha marta ortadi?", "options": ["3–3,5", "2", "10", "1,5", "100"], "answer": 0},
+  {"q": "Sirt nofaol moddalar sirtda qanday adsorbsiyalanadi?", "options": ["Manfiy (Γ < 0)", "Musbat (Γ > 0)", "Adsorbsiyalanmaydi va σ ni o‘zgartirmaydi", "Xemosorbsiyalanadi", "Monomolekulyar qavat hosil qiladi"], "answer": 0},
+  {"q": "Harakatchan sirtda adsorbsiyani qaysi tenglama ifodalaydi?", "options": ["Gibbs", "Freyndlix", "Nernst", "Vant-Goff", "Genderson–Gasselbax"], "answer": 0},
+  {"q": "Lengmyur nazariyasiga ko‘ra adsorbsiyalangan qavat qanday?", "options": ["Monomolekulyar", "Polimolekulyar", "Ikki qavatli", "Tartibsiz", "Ko‘p qavatli diffuz"], "answer": 0},
+  {"q": "Adsorbsiya issiqlik jihatidan qanday jarayon?", "options": ["Ekzotermik", "Endotermik", "Atermik", "Faqat yuqori haroratda boradi", "Issiqlikka bog‘liq emas"], "answer": 0},
+  {"q": "Xemosorbsiyaning fizik adsorbsiyadan asosiy farqi nima?", "options": ["Kimyoviy bog‘ hosil bo‘ladi", "Van-der-Vaals kuchlari ta’sir qiladi", "Har doim qaytar", "Issiqligi juda kichik", "Faqat suyuqlik sirtida boradi"], "answer": 0},
+  {"q": "Chala tug‘ilgan chaqaloqlarda respirator distress-sindrom nimaning yetishmasligi bilan bog‘liq?", "options": ["O‘pka surfaktanti", "Gemoglobin", "Albumin", "O‘t kislotalari", "Mutsin"], "answer": 0},
+  {"q": "Giperkaliyemiyada ishlatiladigan ionit qaysi?", "options": ["Natriy polistirolsulfonat", "Kolestiramin", "Faollashtirilgan ko‘mir", "Sevelamer", "Smektit"], "answer": 0},
+  {"q": "Xromatografiyani kim kashf etgan?", "options": ["M.S. Svet", "D.I. Mendeleyev", "A. Verner", "I. Lengmyur", "Dj. Gibbs"], "answer": 0},
+  {"q": "R~f~ koeffitsienti qanday hisoblanadi?", "options": ["Modda masofasi / erituvchi fronti masofasi", "Erituvchi masofasi / modda masofasi", "Dog‘ diametri / qog‘oz uzunligi", "Modda massasi / erituvchi hajmi", "Vaqt / masofa"], "answer": 0},
+  {"q": "Qog‘oz xromatografiyasida aminokislotalarni ochish uchun qaysi reaktiv ishlatiladi?", "options": ["Ningidrin", "Yod", "Fenolftalein", "Kumush nitrat", "Fehling suyuqligi"], "answer": 0},
+  {"q": "Oqsillarni molekula o‘lchami bo‘yicha ajratadigan xromatografiya turi qaysi?", "options": ["Gel-filtratsion", "Ion almashinuvchi", "Adsorbsion", "Gaz xromatografiyasi", "Affin"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Metilen ko‘ki eritmasining adsorbsiyasini o‘rganishda 50 ml 0,002 M eritmaga 0,5 g faollashtirilgan ko‘mir solindi. Muvozanatdan keyin konsentratsiya 0,0004 M ga tushdi.", "ask": "Ko‘mirning adsorbsiya qobiliyatini (mmol/g) hisoblang. Bu tajriba tibbiyot uchun nimani ko‘rsatadi?", "answer": "Γ = (C~0~ − C)·V / m = (0,002 − 0,0004) · 0,05 / 0,5 = 0,0016 · 0,1 = 0,00016 mol/g = 0,16 mmol/g. Bo‘yoqning 80 % i ko‘mirga o‘tdi. Shu xususiyat tufayli faollashtirilgan ko‘mir me’da-ichak yo‘lida toksinlar, alkaloidlar va dorilarni bog‘laydi — o‘tkir og‘iz orqali zaharlanishda erta (1 soat ichida) berilsa samarali."},
+  {"title": "Masala 2", "text": "Homiladorlikning 29-haftasida tug‘ilgan chaqaloqda tug‘ilgandan bir necha soat o‘tib nafas qisishi, burun qanotlarining kerilishi, ko‘krak qafasi tortilishi kuzatildi. Rentgenda o‘pkada “matli shisha” ko‘rinishi.", "ask": "Qanday holat? Uning fizik-kimyoviy asosi va davolash tamoyili qanday?", "answer": "Chaqaloqlarning respirator distress-sindromi (gialin membranalar kasalligi). O‘pka surfaktanti homiladorlikning ≈ 34–36-haftasida yetarli miqdorda hosil bo‘ladi; chala chaqaloqda u yetishmaydi, alveolalarda sirt tarangligi yuqori bo‘lib qoladi. Laplas qonuniga (P = 2σ / r) ko‘ra kichik alveolalar nafas chiqarishda puchayadi (atelektaz). Davolash: traxeya ichiga surfaktant preparati yuborish, nafasni qo‘llab-quvvatlash (CPAP); xavf bo‘lganda onaga tug‘ruqdan oldin glyukokortikoidlar beriladi (surfaktant sintezini tezlashtiradi)."},
+  {"title": "Masala 3", "text": "Yangi tug‘ilgan chaqaloq qonidan olingan namuna qog‘oz xromatografiyasida tekshirildi. Erituvchi fronti start chizig‘idan 12,0 sm ga ko‘tarildi, namunadagi kuchli dog‘ 6,6 sm masofada joylashdi. Shu sharoitda standart fenilalaninning R~f~ i 0,55.", "ask": "Dog‘ning R~f~ ini hisoblang. Natija nimani ko‘rsatishi mumkin?", "answer": "R~f~ = 6,6 / 12,0 = 0,55 — standart fenilalaninga mos keladi. Qonda fenilalaninning kuchli dog‘i uning ko‘payganini, ya’ni **fenilketonuriya** ehtimolini ko‘rsatadi. Tashxis miqdoriy usul (tandem mass-spektrometriya yoki fluorimetriya) bilan tasdiqlanadi; davolash — fenilalaninni cheklangan parhez."}
+ ],
+ "cards": [
+  {"front": "Sirt tarangligi", "back": "Birlik sirtga to‘g‘ri keladigan erkin sirt energiyasi, σ (J/m^2^)"},
+  {"front": "Sirt faol modda", "back": "σ ni pasaytiradi, sirtda to‘planadi; difil tuzilishli (sovun, o‘t kislotalari)"},
+  {"front": "Dyuklo–Traube qoidasi", "back": "CH~2~ guruh qo‘shilganda sirt faollik 3–3,5 marta ortadi"},
+  {"front": "Gibbs tenglamasi", "back": "Γ = −(C / RT)·(dσ / dC)"},
+  {"front": "Lengmyur tenglamasi", "back": "Γ = Γ~∞~·K·C / (1 + K·C); monomolekulyar adsorbsiya"},
+  {"front": "Freyndlix tenglamasi", "back": "x / m = K·C^1/n^"},
+  {"front": "Xemosorbsiya", "back": "Kimyoviy bog‘ hosil qiluvchi, ko‘pincha qaytmas adsorbsiya"},
+  {"front": "Ionit", "back": "O‘z ionini eritmadagi boshqa ionga almashtiruvchi sorbent (kationit, anionit)"},
+  {"front": "O‘pka surfaktanti", "back": "Alveolalarda σ ni pasaytiradi; yetishmasa — respirator distress-sindrom"},
+  {"front": "R~f~", "back": "Modda dog‘i masofasi / erituvchi fronti masofasi"}
+ ]
+}

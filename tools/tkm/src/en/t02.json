@@ -1,0 +1,129 @@
+{
+ "id": "02",
+ "no": 2,
+ "title": "Solutions. Colligative properties of solutions. Fundamentals of titrimetric analysis",
+ "goals": [
+  {"type": "p", "text": "To teach the student the laws of dissolution of substances and gases in water (Henry’s and Sechenov’s laws), the colligative properties of solutions (Raoult’s and van ’t Hoff’s laws), the ways of expressing concentration, the fundamentals of titrimetric analysis and the neutralization method, and the determination of gastric juice acidity."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["solubility and the factors affecting it, Henry’s and Sechenov’s laws;", "Raoult’s law, freezing point depression and boiling point elevation;", "the concepts of osmosis, osmotic pressure, van ’t Hoff’s law and the isotonic coefficient;", "mass fraction, molar, normal (equivalent) and molal concentration, and titer;", "titration, the working solution, the equivalence point, alkalimetry and acidimetry;", "the transition ranges of acid–base indicators."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["convert one type of concentration into another;", "calculate the osmotic pressure of solutions and distinguish iso-, hypo- and hypertonic solutions;", "perform a titration with a burette correctly;", "determine and interpret the free, bound and total acidity of gastric juice."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Colligative properties depend **not on the nature of the solute but on the number of particles**. That is why 1 mole of NaCl (2 ions) raises the osmotic pressure about twice as much as 1 mole of glucose."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Indicators: **“Methyl orange — red in acid, Phenolphthalein — pink in alkali”**. Phenolphthalein is colorless in acidic and neutral media."},
+  {"kind": "diqqat", "label": "Caution", "text": "The law of equivalents C~n1~·V~1~ = C~n2~·V~2~ is written with **normal** concentration. If molar concentration is used, the stoichiometry of the reaction (for example, H~2~SO~4~ + 2NaOH) must be taken into account separately."}
+ ],
+ "sections": [
+  {"title": "1. Solutions and solubility", "blocks": [
+   {"type": "p", "text": "A **solution** is a **homogeneous** system of variable composition made of two or more components. The component present in the larger amount is the **solvent**, and the one in the smaller amount is the **solute**. The main solvent of the body is **water**: it makes up ≈ 60 % of the adult body mass, and thanks to its polarity it dissolves ionic and polar substances well (“like dissolves like”)."},
+   {"type": "p", "text": "**Solubility** is the maximum mass of a substance that can dissolve in 100 g of solvent at a given temperature. A solution in this state is called **saturated**. For most solids, solubility increases with temperature; for gases it is the opposite — it **decreases**."},
+   {"type": "h", "text": "Solubility of gases"},
+   {"type": "p", "text": "**Henry’s law:** at constant temperature, the solubility of a gas in a liquid is directly proportional to the partial pressure of that gas above the liquid: C = k~H~·p. **Dalton’s law:** from a gas mixture, each gas dissolves according to its own partial pressure."},
+   {"type": "p", "text": "**Sechenov’s law:** gases are less soluble in electrolyte solutions than in pure water: lg(C~0~ / C) = k·C~salt~. That is why the physical solubility of oxygen in blood plasma is lower than in pure water — most of the oxygen is carried bound to hemoglobin."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Caisson (decompression) disease:** at depth, under high pressure, much nitrogen dissolves in the blood. If a diver surfaces quickly, the pressure falls sharply and nitrogen comes out as bubbles that block the vessels (gas embolism). Treatment is to raise the pressure again in a **hyperbaric chamber** and lower it slowly. **Hyperbaric oxygenation** works on the same law."}]}
+  ]},
+  {"title": "2. Ways of expressing the concentration of solutions", "blocks": [
+   {"type": "table", "title": "Table 2.1. Ways of expressing concentration", "head": ["Name", "Formula", "Unit", "Example"], "rows": [["Mass fraction", "ω = m(solute) / m(solution)", "% or fraction", "0.9 % NaCl"], ["Molar concentration", "C = n / V", "mol/L (M)", "0.1 M HCl"], ["Molar equivalent (normal) concentration", "C~n~ = n(eq) / V = z·C", "eq/L (N)", "0.1 N H~2~SO~4~"], ["Molal concentration", "C~m~ = n / m(solvent)", "mol/kg", "in cryometry"], ["Titer", "T = m(solute) / V", "g/mL", "T(HCl) = 0.003646 g/mL"], ["Mole fraction", "χ = n~i~ / Σn", "fraction", "in Raoult’s law"]]},
+   {"type": "p", "text": "**Equivalence number (z)**: for an acid — the number of exchangeable H^+^ ions (z = 2 for H~2~SO~4~), for a base — the number of OH^−^ (z = 2 for Ca(OH)~2~), for a salt — the metal valence multiplied by the number of its atoms (z = 6 for Al~2~(SO~4~)~3~). The molar mass of the equivalent is M~eq~ = M / z."},
+   {"type": "p", "text": "**Conversion formulas:** C = ω·ρ·10 / M (ω in %, ρ in g/mL) and T = C~n~·M~eq~ / 1000. Example: for 36.5 % HCl (ρ = 1.18 g/mL), C = 36.5 · 1.18 · 10 / 36.5 = 11.8 mol/L."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "In the clinical laboratory, concentrations are given mainly in **mmol/L** (glucose 3.3–5.5 mmol/L), while drug solutions are labeled in **percent** and **mg/mL** (1 % = 10 mg/mL)."}]}
+  ]},
+  {"title": "3. Colligative properties: Raoult’s laws", "blocks": [
+   {"type": "p", "text": "Properties of a solution that depend only on the number of particles are called **colligative properties**: lowering of the solvent vapor pressure, freezing point depression, boiling point elevation and osmotic pressure."},
+   {"type": "p", "text": "**Raoult’s 1st law:** the relative lowering of the solvent vapor pressure above a solution equals the mole fraction of the solute: (p~0~ − p) / p~0~ = χ(solute)."},
+   {"type": "p", "text": "**Raoult’s 2nd law:** the freezing point depression and the boiling point elevation of a solution are proportional to its molal concentration: ΔT~f~ = K·C~m~ (cryometry), ΔT~b~ = E·C~m~ (ebulliometry). For water, the cryoscopic constant K = 1.86 K·kg/mol and the ebullioscopic constant E = 0.52 K·kg/mol."},
+   {"type": "p", "text": "For electrolytes the **isotonic coefficient** (van ’t Hoff factor) i is introduced into the formulas: i = 1 + α(ν − 1), where α is the degree of dissociation and ν is the number of ions formed from one molecule. For non-electrolytes i = 1."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Blood plasma freezes at −0.56 °C. From this its **osmolality** is found: C = 0.56 / 1.86 ≈ 0.3 mol/kg (≈ 300 mOsm/kg). Cryometry (osmometry) is used in the clinic to measure plasma and urine osmolality."}]}
+  ]},
+  {"title": "4. Osmosis and osmotic pressure. Van ’t Hoff’s law", "blocks": [
+   {"type": "p", "text": "**Osmosis** is the one-way diffusion of solvent molecules through a semipermeable membrane from a less concentrated solution into a more concentrated one. The extra pressure that must be applied to the solution to stop osmosis is called the **osmotic pressure** (π)."},
+   {"type": "p", "text": "**Van ’t Hoff’s law:** π = i·C·R·T, where C is the molar concentration (mol/L), R = 8.314 J/(mol·K) and T is the absolute temperature. The osmotic pressure of blood plasma at 37 °C is **740–780 kPa** (7.3–7.7 atm). About 3.5–4 kPa of it is created by proteins — this is the **oncotic pressure**, which keeps water inside the vessels."},
+   {"type": "table", "title": "Table 2.2. Solutions compared with blood plasma", "head": ["Type of solution", "Osmotic pressure", "Effect on red blood cells", "Examples"], "rows": [["Isotonic", "equal to plasma", "no change", "0.9 % NaCl, 5 % glucose, Ringer’s solution"], ["Hypotonic", "lower than plasma", "water enters, the cell swells and bursts — **hemolysis**", "distilled water, 0.3 % NaCl"], ["Hypertonic", "higher than plasma", "water leaves, the cell shrinks — **plasmolysis (crenation)**", "10 % NaCl, 40 % glucose, 25 % MgSO~4~"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Hypertonic solutions are used on purpose in practice: a dressing soaked in **10 % NaCl** draws fluid out of a purulent wound; **25 % MgSO~4~** holds water in the intestine and acts as a laxative; **mannitol** and **15–20 % glucose** draw water from tissue into the blood in cerebral edema. Large intravenous volumes of hypotonic fluid cause hemolysis."}]}
+  ]},
+  {"title": "5. Fundamentals of titrimetric analysis", "blocks": [
+   {"type": "p", "text": "**Titrimetric (volumetric) analysis** is a quantitative method based on measuring the volume of a reagent solution of exactly known concentration that is used up in complete reaction with the analyte. A solution of exactly known concentration is called a **working (standard) solution**; adding it dropwise from a burette to the analyte solution is called **titration**."},
+   {"type": "p", "text": "The moment when the reagent has reacted with the analyte in an equivalent amount is called the **equivalence point**. It is detected by the color change of an indicator (or by an instrument — a pH meter); the moment actually observed is called the **end point of titration**. The calculation is based on the **law of equivalents**: C~n1~·V~1~ = C~n2~·V~2~."},
+   {"type": "img", "src": "data/img/tkm/t02_byuretka.webp", "w": 800, "h": 1000, "label": "Figure 2.1", "caption": "Titration setup: a burette clamped to a stand and the solution being titrated in a conical flask (Wikimedia Commons, CC BY-SA)."},
+   {"type": "list", "ordered": false, "items": ["**Primary standard** — a pure, stable substance whose composition matches its formula exactly; an accurately weighed portion of it is used to find the concentration of the working solution: **borax** Na~2~B~4~O~7~·10H~2~O for HCl, **oxalic acid** H~2~C~2~O~4~·2H~2~O for NaOH.", "**Volumetric glassware:** burette (25 or 50 mL, read to 0.1 mL), Mohr pipette, volumetric flask.", "The burette is read at the **bottom of the meniscus**, with the eye level with the meniscus."]},
+   {"type": "table", "title": "Table 2.3. Classification of titrimetric methods", "head": ["Method", "Underlying reaction", "Working solutions"], "rows": [["Neutralization (acid–base)", "H^+^ + OH^−^ → H~2~O", "HCl, NaOH"], ["Redox titration (permanganatometry, iodometry)", "oxidation–reduction", "KMnO~4~, I~2~, Na~2~S~2~O~3~"], ["Complexometry", "complex formation", "Trilon B (EDTA)"], ["Precipitation titration (argentometry)", "formation of a poorly soluble precipitate", "AgNO~3~"]]}
+  ]},
+  {"title": "6. The neutralization method. Alkalimetry and acidimetry", "blocks": [
+   {"type": "p", "text": "The neutralization method is based on the reaction between acids and bases. **Alkalimetry** is the determination of acids (and acid salts) with a working solution of an alkali (NaOH, KOH); **acidimetry** is the determination of bases (and salts that give an alkaline medium on hydrolysis) with a working solution of an acid (HCl)."},
+   {"type": "p", "text": "The dependence of pH on the volume of titrant added during titration is called the **titration curve**. Near the equivalence point the pH changes sharply — this is the **titration jump**. When 0.1 M HCl is titrated with 0.1 M NaOH, the jump runs from pH 4.3 to 9.7, and pH = 7 at the equivalence point."},
+   {"type": "img", "src": "data/img/tkm/t02_egri.webp", "w": 1400, "h": 900, "label": "Figure 2.2", "caption": "Titration curve of a strong acid (0.1 M HCl) with a strong base (0.1 M NaOH) and the color change ranges of indicators (drawn from calculated data)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The color change range of the indicator must lie **within the titration jump**. When a weak acid (CH~3~COOH) is titrated with a strong base, the equivalence point lies in the alkaline region (pH ≈ 8.7), so **phenolphthalein** is chosen; when a weak base (NH~3~) is titrated with a strong acid — **methyl orange**."}]}
+  ]},
+  {"title": "7. Acid–base indicators", "blocks": [
+   {"type": "p", "text": "**Acid–base indicators** are weak organic acids or bases that change color depending on the pH of the medium. According to **Ostwald’s ionic theory**, the undissociated molecule of the indicator (HInd) and its anion (Ind^−^) have different colors: HInd ⇄ H^+^ + Ind^−^. The **chromophore theory** explains the color change by a rearrangement of the molecular structure (chromophore groups)."},
+   {"type": "p", "text": "The color change is seen roughly in the range pH = pK~Ind~ ± 1. The pH value at which the color changes completely is called the **titration index** (pT)."},
+   {"type": "table", "title": "Table 2.4. Important acid–base indicators", "head": ["Indicator", "Transition range (pH)", "Acid form", "Alkaline form"], "rows": [["Dimethylaminoazobenzene", "2.9–4.0", "red", "yellow"], ["Methyl orange", "3.1–4.4", "red", "yellow"], ["Methyl red", "4.4–6.2", "red", "yellow"], ["Litmus", "5.0–8.0", "red", "blue"], ["Phenolphthalein", "8.2–10.0", "colorless", "pink (crimson)"]]}
+  ]},
+  {"title": "8. Laboratory work: determination of gastric juice acidity", "blocks": [
+   {"type": "p", "text": "**Principle of the method:** the acids of gastric juice are titrated with a 0.1 M NaOH working solution in the presence of two indicators (Michaelis method). First the **free HCl** is titrated (dimethylaminoazobenzene, pH 2.9–4.0 — the red color turns orange), then, in the same sample, the **total acidity** (phenolphthalein — until a pink color appears). Total acidity includes free HCl, HCl bound to proteins, and acid phosphates and organic acids."},
+   {"type": "sub", "text": "Equipment:"},
+   {"type": "p", "text": "filtered gastric juice, 0.1 M NaOH, 0.5 % alcoholic dimethylaminoazobenzene and 1 % alcoholic phenolphthalein, a burette, a 5 mL pipette, conical flasks."},
+   {"type": "list", "ordered": true, "items": ["Measure 5 mL of filtered gastric juice into a flask with a pipette.", "Add 1 drop of dimethylaminoazobenzene and 2 drops of phenolphthalein (the juice turns red).", "Add 0.1 M NaOH dropwise from the burette until the red color turns **orange**; record the volume used (V~1~) — this is the **free HCl**.", "Continue the titration: the color first becomes yellow, then a **pink** color appears; titrate until it persists for 30 seconds and record the total volume (V~2~) — this is the **total acidity**.", "Calculate the bound acidity: total − free."]},
+   {"type": "sub", "text": "Calculation:"},
+   {"type": "p", "text": "Acidity is expressed in **titration units** (t.u.) — the number of milliliters of 0.1 M NaOH needed to neutralize 100 mL of gastric juice. With a 5 mL sample: acidity = V(NaOH) · 20 t.u. Numerically this equals mmol/L."},
+   {"type": "table", "title": "Table 2.5. Normal gastric juice acidity (fasting, after stimulation)", "head": ["Indicator", "Normal, t.u.", "Clinical interpretation"], "rows": [["Total acidity", "40–60", "high — hyperacidity, low — hypoacidity"], ["Free HCl", "20–40", "absent — **achlorhydria** (atrophic gastritis, gastric cancer)"], ["Bound HCl", "10–20", "—"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In modern gastroenterology, gastric acidity is measured mostly by **intragastric pH-metry** (fasting pH in the body of the stomach 1.5–2.0). Still, the titration method shows well the concept of acidity and the medical use of the neutralization method."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: titration with a burette", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Rinse the burette with distilled water, then 2 times with the working solution.", "Fill the burette with the working solution slightly above the zero mark, remove the air bubble from the tip and bring the level to zero.", "Measure the analyte solution into a flask with a pipette and add the indicator.", "Control the burette stopcock with the left hand and swirl the flask constantly with the right hand while adding the titrant dropwise.", "Near the equivalence point add the titrant one drop at a time; stop when the color persists for 30 seconds.", "Read the volume at the bottom of the meniscus to 0.05 mL.", "Repeat the titration at least 3 times; if the results differ by no more than 0.1 mL, take the mean."]}]},
+  {"title": "Skill: calculating osmotic pressure and identifying the type of solution", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Find the molar concentration of the substance (C = ω·ρ·10 / M).", "Determine the isotonic coefficient (non-electrolyte — 1, NaCl — ≈ 2, CaCl~2~ — ≈ 3).", "Convert the temperature to kelvin (37 °C = 310 K).", "Calculate the pressure in kPa with the formula π = i·C·R·T.", "Compare the result with the plasma pressure (740–780 kPa) and decide whether the solution is iso-, hypo- or hypertonic."]}]}
+ ],
+ "questions": [
+  "What is a solution? Which factors affect solubility?",
+  "State Henry’s and Sechenov’s laws. How does caisson disease develop?",
+  "How are mass fraction, molar and normal concentration related?",
+  "How is the equivalence number determined? Give examples for H~2~SO~4~ and Al~2~(SO~4~)~3~.",
+  "What are the colligative properties and what do they depend on?",
+  "What is Raoult’s 2nd law, and what is the medical significance of cryometry?",
+  "Explain van ’t Hoff’s law and the isotonic coefficient.",
+  "How do iso-, hypo- and hypertonic solutions affect red blood cells?",
+  "What is oncotic pressure and why is it important?",
+  "Explain the concepts of titration, working solution and equivalence point.",
+  "What is the difference between alkalimetry and acidimetry?",
+  "How is an indicator chosen? Explain Ostwald’s theory.",
+  "How are the free and total acidity of gastric juice determined?"
+ ],
+ "quiz": [
+  {"q": "How does the solubility of gases in water change when the temperature rises?", "options": ["It decreases", "It increases", "It does not change", "It first increases, then decreases", "It depends only on pressure"], "answer": 0},
+  {"q": "According to Henry’s law, the solubility of a gas is directly proportional to what?", "options": ["The partial pressure of the gas", "The temperature", "The mass of the solvent", "The molar mass of the gas", "The volume of the liquid"], "answer": 0},
+  {"q": "What do colligative properties depend on?", "options": ["The number of solute particles", "The nature of the solute", "The color of the molecules", "The molar mass of the substance", "The shape of the vessel"], "answer": 0},
+  {"q": "What is the cryoscopic constant of water?", "options": ["1.86 K·kg/mol", "0.52 K·kg/mol", "8.314 K·kg/mol", "22.4 K·kg/mol", "3.72 K·kg/mol"], "answer": 0},
+  {"q": "What is the osmotic pressure of blood plasma at 37 °C?", "options": ["740–780 kPa", "3.5–4 kPa", "101.3 kPa", "1500–1600 kPa", "200–250 kPa"], "answer": 0},
+  {"q": "Which solution is isotonic to blood plasma?", "options": ["0.9 % NaCl", "10 % NaCl", "40 % glucose", "Distilled water", "0.3 % NaCl"], "answer": 0},
+  {"q": "What happens when red blood cells are placed in a hypotonic solution?", "options": ["Hemolysis", "Plasmolysis", "No change", "Agglutination", "Crenation"], "answer": 0},
+  {"q": "What is the normal concentration of a 0.1 M H~2~SO~4~ solution?", "options": ["0.2 N", "0.1 N", "0.05 N", "0.3 N", "1 N"], "answer": 0},
+  {"q": "What is used as the working solution in alkalimetry?", "options": ["NaOH", "HCl", "KMnO~4~", "AgNO~3~", "Trilon B"], "answer": 0},
+  {"q": "What is the transition range of phenolphthalein?", "options": ["pH 8.2–10.0", "pH 3.1–4.4", "pH 4.4–6.2", "pH 5.0–8.0", "pH 2.9–4.0"], "answer": 0},
+  {"q": "Which indicator is chosen when a weak acid is titrated with a strong base?", "options": ["Phenolphthalein", "Methyl orange", "Dimethylaminoazobenzene", "Methyl red", "Litmus"], "answer": 0},
+  {"q": "In the titration of 0.1 M HCl with 0.1 M NaOH, in what range is the titration jump?", "options": ["pH 4.3–9.7", "pH 1–3", "pH 7–8", "pH 10–12", "pH 2–5"], "answer": 0},
+  {"q": "With which indicator is the free HCl of gastric juice titrated?", "options": ["Dimethylaminoazobenzene", "Phenolphthalein", "Litmus", "Starch", "Eriochrome black"], "answer": 0},
+  {"q": "What is the normal total acidity of gastric juice?", "options": ["40–60 t.u.", "10–20 t.u.", "100–120 t.u.", "0–5 t.u.", "80–100 t.u."], "answer": 0},
+  {"q": "Which primary standard is used to standardize NaOH solution?", "options": ["Oxalic acid", "Borax", "Sodium chloride", "Potassium permanganate", "Glucose"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A patient’s gastric juice was examined. When 5 mL of filtered juice was titrated, 0.4 mL of 0.1 M NaOH was used to the dimethylaminoazobenzene end point and a total of 1.2 mL to the phenolphthalein end point.", "ask": "Calculate and interpret the free, bound and total acidity.", "answer": "Free HCl = 0.4 · 20 = 8 t.u.; total acidity = 1.2 · 20 = 24 t.u.; bound = 24 − 8 = 16 t.u. Total acidity (normal 40–60) and free HCl (normal 20–40) are reduced — **hypoacidity**. This is typical of chronic atrophic gastritis; the patient should be referred for gastroscopy and biopsy."},
+  {"title": "Problem 2", "text": "A hypertonic solution is needed to clean a purulent wound. The laboratory assistant prepared a 10 % NaCl solution (ρ = 1.07 g/mL, M(NaCl) = 58.5 g/mol, i = 1.9).", "ask": "Calculate the osmotic pressure of the solution at 37 °C. Why does it act on the wound?", "answer": "C = 10 · 1.07 · 10 / 58.5 = 1.83 mol/L. π = i·C·R·T = 1.9 · 1.83 · 8.314 · 310 ≈ 8960 kPa — about 12 times higher than the plasma pressure (740–780 kPa). By osmosis, water is drawn from the wound tissue and pus into the dressing, and the wound is cleaned."},
+  {"title": "Problem 3", "text": "In an emergency, a patient was mistakenly given 1 liter of distilled water intravenously. Soon the urine turned reddish and pain appeared in the lower back.", "ask": "What happened? Explain the physicochemical basis.", "answer": "Distilled water is hypotonic to plasma. By osmosis, water enters the red blood cells, makes them swell and burst — **hemolysis**. Free hemoglobin passes into the urine (hemoglobinuria) and may block the renal tubules, causing acute kidney injury. Only isotonic solutions (0.9 % NaCl, 5 % glucose) or other solutions prescribed for a medical indication are given intravenously."}
+ ],
+ "cards": [
+  {"front": "Henry’s law", "back": "C = k·p — gas solubility is proportional to partial pressure"},
+  {"front": "Sechenov’s law", "back": "Gases are less soluble in electrolyte solutions"},
+  {"front": "Colligative properties", "back": "Vapor pressure lowering, freezing point depression, boiling point elevation, osmotic pressure"},
+  {"front": "Van ’t Hoff’s law", "back": "π = i·C·R·T"},
+  {"front": "Isotonic solution", "back": "Osmotic pressure equal to plasma: 0.9 % NaCl, 5 % glucose"},
+  {"front": "Oncotic pressure", "back": "The part of osmotic pressure created by plasma proteins (≈ 3.5–4 kPa)"},
+  {"front": "Equivalence point", "back": "The moment when the titrant has reacted with the analyte in an equivalent amount"},
+  {"front": "Alkalimetry", "back": "Determination of acids with a working alkali (NaOH) solution"},
+  {"front": "Phenolphthalein", "back": "pH 8.2–10.0: colorless → crimson"},
+  {"front": "Titration unit (t.u.)", "back": "Milliliters of 0.1 M NaOH used to neutralize 100 mL of gastric juice"}
+ ]
+}

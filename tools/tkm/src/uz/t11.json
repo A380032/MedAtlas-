@@ -1,0 +1,102 @@
+{
+ "id": "11",
+ "no": 11,
+ "title": "Geterohalqali birikmalar metabolitlar va dorivor vositalar sifatida",
+ "goals": [
+  {"type": "p", "text": "Talabaga bir va ko‘p geteroatomli besh va olti a’zoli geterohalqalar, bihalqali (kondensirlangan) geterohalqalar tuzilishi, aromatikligi, kislota-asos xossalari, ularning hosilalari bo‘lgan muhim metabolitlar, vitaminlar, neyromediatorlar va dorilar haqida bilim berish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["geterohalqalarning tasnifi va nomlanishini;", "pirrol, furan, tiofen, imidazol, pirazol, tiazol halqalari va ularning hosilalarini;", "piridin, pirimidin, piperidin halqalari va hosilalarini;", "indol, purin, xinolin, pteridin kabi bihalqali sistemalarni;", "pirrol va piridin azoti farqini, laktim-laktam tautomeriyasini;", "geterohalqali neyromediatorlar (serotonin, gistamin, melatonin) va muhim dorilarni."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["dori yoki metabolit formulasidagi geterohalqani aniqlash va nomlash;", "geterohalqaning kislota-asos xossasini azot turi bo‘yicha baholash;", "purin almashinuvi va siydik kislota hosil bo‘lishining klinik ahamiyatini tushuntirish;", "antimetabolit dorilarning (5-ftoruratsil, metotreksat, allopurinol) ta’sirini tabiiy metabolit bilan o‘xshashlik orqali asoslash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "**Pirrol azoti** bo‘linmagan juftini aromatik sekstetga beradi — asos xossasi deyarli yo‘q, N−H kuchsiz kislota. **Piridin azoti** juftini o‘zida saqlaydi — kuchsiz asos (pK~a~ ≈ 5,2). **Imidazolda** ikkala tur azot bor — amfoter, pK~a~ ≈ 7 (gistidinning bufer xossasi shundan)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Purinlar — **“A G”** (adenin, guanin), pirimidinlar — **“S U T”** (sitozin, urasil, timin). Teskari qoida: **pirimidin** — nomi uzun, lekin halqasi bitta; **purin** — nomi qisqa, lekin halqasi ikkita."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Ko‘plab kuchli dorilar tabiiy geterohalqali metabolitlarga o‘xshatib yaratilgan **antimetabolitlar**: 5-ftoruratsil (urasil), 6-merkaptopurin (gipoksantin), metotreksat (folat), allopurinol (gipoksantin). Ular tez bo‘linuvchi sog‘lom hujayralarga ham ta’sir qiladi — qon va shilliq qavatlar nazorati shart."}
+ ],
+ "sections": [
+  {"title": "1. Geterohalqali birikmalar tasnifi. Bir geteroatomli besh a’zoli halqalar", "blocks": [
+   {"type": "p", "text": "**Geterohalqali birikmalar** — halqasida uglerod bilan birga boshqa element atomlari (**geteroatomlar**: N, O, S) bo‘lgan siklik birikmalar. Ular halqa kattaligi (besh, olti a’zoli), geteroatomlar soni va turi hamda halqalar soni (bir halqali, kondensirlangan) bo‘yicha tasniflanadi. Dorilarning yarmidan ko‘pi geterohalqali birikmalar."},
+   {"type": "table", "title": "Jadval 11.1. Bir geteroatomli besh a’zoli geterohalqalar", "head": ["Halqa", "Geteroatom", "Muhim hosilalari"], "rows": [["Pirrol", "N", "porfirinlar (gem, xlorofill), korrin (vitamin B~12~), o‘t pigmentlari (bilirubin)"], ["Pirrolidin (to‘yingan)", "N", "prolin, gidroksiprolin (kollagen), nikotin"], ["Furan", "O", "furatsilin, furazolidon (antimikrob dorilar); riboza va dezoksiriboza furanoza shaklida"], ["Tiofen", "S", "tiklopidin, klopidogrel (antiagregantlar)"]]},
+   {"type": "p", "text": "Pirrol aromatik: to‘rtta uglerodning π-elektronlari va azotning bo‘linmagan jufti birga 6 π-elektronli sekstet hosil qiladi. Shuning uchun pirrol azotining jufti asos xossasini bermaydi, N−H esa kuchsiz kislota (pK~a~ ≈ 17). To‘rtta pirrol halqasi metin ko‘priklari bilan birikib, **porfin** halqasini hosil qiladi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Gem parchalanishida pirrol halqalari ochilib, chiziqli tetrapirrol — **bilirubin** hosil bo‘ladi. Uning qonda to‘planishi **sariqlik** beradi. Chaqaloqlar sariqligini davolashda ishlatiladigan **fototerapiya** ko‘k yorug‘lik ta’sirida bilirubinni suvda eriydigan izomerlarga aylantirib, uning chiqarilishini tezlashtiradi."}]}
+  ]},
+  {"title": "2. Ikki geteroatomli besh a’zoli halqalar (azollar)", "blocks": [
+   {"type": "table", "title": "Jadval 11.2. Azollar va ularning hosilalari", "head": ["Halqa", "Geteroatomlar", "Muhim hosilalari"], "rows": [["Imidazol", "N, N (1,3)", "gistidin, gistamin; metronidazol, flukonazol (azolli zamburug‘ga qarshi dorilar)"], ["Pirazol", "N, N (1,2)", "antipirin, metamizol (analgin) — og‘riq qoldiruvchilar"], ["Tiazol", "S, N", "tiamin (vitamin B~1~); tiazolidin halqasi — penitsillinlar tarkibida"], ["Oksazol", "O, N", "oksatsillin tarkibidagi izoksazol"]]},
+   {"type": "p", "text": "**Imidazol** ikkala turdagi azotga ega: biri pirrol tipidagi (N−H), ikkinchisi piridin tipidagi (asosli). Imidazolium ionining pK~a~ i ≈ 7,0 — fiziologik pH ga juda yaqin. Shuning uchun gistidin qoldiqlari oqsillarning **bufer** guruhlari va ko‘plab fermentlarning (masalan, serin proteazalar) faol markazida **proton tashuvchi** vazifasini bajaradi."}
+  ]},
+  {"title": "3. Olti a’zoli geterohalqalar", "blocks": [
+   {"type": "table", "title": "Jadval 11.3. Olti a’zoli azotli geterohalqalar", "head": ["Halqa", "Tuzilishi", "Muhim hosilalari"], "rows": [["Piridin", "bitta N, aromatik", "nikotinamid (vitamin PP) → NAD^+^, NADF^+^; piridoksin (vitamin B~6~); izoniazid (silga qarshi)"], ["Piperidin", "to‘yingan piridin", "promedol, fentanil (opioidlar), alkaloidlar"], ["Pirimidin", "ikki N (1,3)", "urasil, timin, sitozin; barbituratlar; vitamin B~1~ ning bir qismi; 5-ftoruratsil"], ["Pirazin", "ikki N (1,4)", "pirazinamid (silga qarshi)"]]},
+   {"type": "p", "text": "**Piridin** azoti bo‘linmagan juftini aromatik sistemaga bermaydi — u kuchsiz asos (piridiniy ionining pK~a~ ≈ 5,2). Piridin halqasi π-elektron yetishmovchiligiga ega: elektrofil o‘rin olish qiyin, nukleofil hujum oson. **NAD^+^ ning faol qismi** — nikotinamidning piridin halqasi: u gidrid-ion (H^−^) qabul qilib, NADH ga qaytariladi."},
+   {"type": "p", "text": "**Barbituratlar** — barbitur kislota (pirimidin-2,4,6-trion) hosilalari; ular uyqu chaqiruvchi va talvasaga qarshi ta’sirga ega (fenobarbital). Barbitur kislotaning o‘zi farmakologik faol emas — 5-holatdagi ikki o‘rinbosar uni lipofil va faol qiladi."}
+  ]},
+  {"title": "4. Bihalqali (kondensirlangan) geterohalqalar", "blocks": [
+   {"type": "img", "src": "data/img/tkm/t11_geterohalqa.webp", "w": 1400, "h": 900, "label": "Rasm 11.1", "caption": "Asosiy geterohalqalar: pirrol, imidazol, piridin, pirimidin, purin va indol (struktura formulalar, RDKit dasturida chizilgan)."},
+   {"type": "table", "title": "Jadval 11.4. Kondensirlangan geterohalqalar", "head": ["Sistema", "Tarkibi", "Muhim hosilalari"], "rows": [["Indol", "benzol + pirrol", "triptofan, serotonin, melatonin; indometatsin; LSD (zaharli)"], ["Purin", "pirimidin + imidazol", "adenin, guanin, gipoksantin, ksantin, siydik kislota; kofein, teofillin, teobromin"], ["Xinolin", "benzol + piridin", "xinin, xloroxin (bezgakka qarshi); ftorxinolonlar (siprofloksatsin)"], ["Pteridin", "pirimidin + pirazin", "folat kislota, metotreksat (antimetabolit), riboflavin (izoalloksazin)"], ["Benzimidazol", "benzol + imidazol", "albendazol (gijjaga qarshi), omeprazol"]]},
+   {"type": "p", "text": "**Laktim-laktam tautomeriyasi:** gidroksi guruhli purin va pirimidinlarda (urasil, timin, guanin, siydik kislota) proton kislorod va azot orasida ko‘chadi: −N=C(OH)− ⇄ −NH−C(=O)−. Fiziologik sharoitda **laktam** (okso) shakli ustun; aynan shu shakl DNK da asoslar orasida to‘g‘ri vodorod bog‘lar hosil bo‘lishini ta’minlaydi. Kamyob laktim shakli juftlanish xatolariga — **nuqtali mutatsiyalarga** olib kelishi mumkin."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Siydik kislota** — odamda purinlar almashinuvining oxirgi mahsuloti (ksantinoksidaza: gipoksantin → ksantin → siydik kislota). Uning eruvchanligi past (pK~a~ ≈ 5,4), qonda ko‘paysa bo‘g‘imlarda natriy urat kristallari to‘planadi — **podagra**. **Allopurinol** (gipoksantin izomeri) ksantinoksidazani to‘sib, siydik kislota hosil bo‘lishini kamaytiradi."}]}
+  ]},
+  {"title": "5. Geterohalqali neyromediatorlar va biogen aminlar", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Serotonin** (5-gidroksitriptamin) — triptofandan: gidroksillanish va dekarboksillanish; kayfiyat, uyqu, ishtaha, ichak harakati, trombotsitlar agregatsiyasi. Uning qayta qamrab olinishini to‘suvchi dorilar (fluoksetin, sertralin) depressiyani davolashda ishlatiladi.", "**Melatonin** — serotonindan epifizda (tunda) hosil bo‘ladi; sutkalik ritmni boshqaradi.", "**Gistamin** — gistidinning dekarboksillanishidan; allergik reaksiyalar (H~1~), me’dada HCl sekretsiyasi (H~2~), mediator. H~1~-blokatorlar (loratadin) va H~2~-blokatorlar (famotidin) keng qo‘llanadi.", "**Kofein** va **teofillin** (metilksantinlar) — adenozin retseptorlarini to‘sadi va fosfodiesterazani ingibirlaydi: MNS ni qo‘zg‘atadi, bronxlarni kengaytiradi."]},
+   {"type": "img", "src": "data/img/tkm/t11_mediator.webp", "w": 1400, "h": 520, "label": "Rasm 11.2", "caption": "Geterohalqali neyromediatorlar: serotonin va melatonin (indol halqasi), gistamin (imidazol halqasi) (struktura formulalar, RDKit dasturida chizilgan)."}
+  ]},
+  {"title": "6. Geterohalqali dorilar: ta’sirning kimyoviy asosi", "blocks": [
+   {"type": "table", "title": "Jadval 11.5. Antimetabolit va boshqa geterohalqali dorilar", "head": ["Dori", "Geterohalqa", "Tabiiy “o‘xshashi”", "Ta’siri"], "rows": [["5-Ftoruratsil", "pirimidin", "urasil (timin)", "timidilatsintazani to‘sadi — o‘smaga qarshi"], ["6-Merkaptopurin", "purin", "gipoksantin", "purin sintezini buzadi — leykozda"], ["Metotreksat", "pteridin", "folat", "digidrofolatreduktazani to‘sadi — o‘sma, revmatoid artrit"], ["Allopurinol", "pirazolopirimidin", "gipoksantin", "ksantinoksidazani to‘sadi — podagra"], ["Asiklovir", "purin (guanin)", "dezoksiguanozin", "virus DNK polimerazasini to‘sadi — gerpes"], ["Penitsillinlar", "β-laktam + tiazolidin", "D-alanil-D-alanin", "bakteriya hujayra devori sintezini to‘sadi"]]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: formuladan geterohalqani aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Formuladagi barcha halqalarni ajrating va har biridagi atomlar sonini sanang.", "Halqadagi geteroatomlarni (N, O, S) va ularning o‘rnini aniqlang.", "Halqa aromatikmi (tutash qo‘sh bog‘lar) yoki to‘yinganmi, tekshiring.", "Kondensirlangan bo‘lsa, qaysi halqalardan iboratligini ayting (masalan, benzol + pirrol = indol).", "Asosiy halqa nomini ayting va shu halqaga ega ma’lum metabolit yoki dori bilan solishtiring."]}]},
+  {"title": "Ko‘nikma: azot atomining asosliligini baholash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Azot atomining bo‘linmagan jufti aromatik sekstetga kirganmi, aniqlang.", "Kirgan bo‘lsa (pirrol tipi) — asosliligi juda past.", "Kirmagan bo‘lsa (piridin tipi) — kuchsiz asos (pK~a~ ≈ 5).", "To‘yingan halqadagi azot (piperidin, pirrolidin) — alifatik amin kabi kuchli asos (pK~a~ ≈ 11).", "Ikkala tur azot bo‘lsa (imidazol) — amfoter, pK~a~ ≈ 7."]}]}
+ ],
+ "questions": [
+  "Geterohalqali birikmalar qanday tasniflanadi?",
+  "Pirrol halqasi qaysi muhim biomolekulalar tarkibiga kiradi?",
+  "Nima uchun pirrol asos xossasini deyarli ko‘rsatmaydi?",
+  "Imidazol halqasining biologik ahamiyati nimada?",
+  "Pirazol va tiazol hosilalariga misollar keltiring.",
+  "Piridin halqasi NAD^+^ ishida qanday vazifa bajaradi?",
+  "Pirimidin asoslari va barbituratlar haqida gapiring.",
+  "Purin halqasi qanday tuzilgan? Purin asoslarini sanang.",
+  "Laktim-laktam tautomeriyasi va uning ahamiyati nimada?",
+  "Siydik kislota qanday hosil bo‘ladi va podagra nima?",
+  "Indol hosilalari bo‘lgan neyromediatorlarni ayting.",
+  "Gistamin qanday hosil bo‘ladi va uning ta’siri qanday?",
+  "Antimetabolit dorilarning ta’sir prinsipini misollar bilan tushuntiring."
+ ],
+ "quiz": [
+  {"q": "Gem tarkibiga qaysi geterohalqa kiradi?", "options": ["Pirrol", "Piridin", "Pirimidin", "Indol", "Tiazol"], "answer": 0},
+  {"q": "Gistidin va gistamin tarkibidagi geterohalqa qaysi?", "options": ["Imidazol", "Pirazol", "Tiazol", "Pirrol", "Piridin"], "answer": 0},
+  {"q": "Vitamin B~1~ (tiamin) tarkibida qaysi halqalar bor?", "options": ["Pirimidin va tiazol", "Purin va pteridin", "Indol va piridin", "Imidazol va pirazol", "Pirrol va furan"], "answer": 0},
+  {"q": "NAD^+^ tarkibidagi vitamin qaysi geterohalqaga ega?", "options": ["Piridin (nikotinamid)", "Pirimidin", "Pteridin", "Indol", "Tiazol"], "answer": 0},
+  {"q": "Metamizol (analgin) qaysi halqa hosilasi?", "options": ["Pirazol", "Imidazol", "Piridin", "Purin", "Indol"], "answer": 0},
+  {"q": "Qaysi asos pirimidin hosilasi?", "options": ["Sitozin", "Adenin", "Guanin", "Gipoksantin", "Ksantin"], "answer": 0},
+  {"q": "Purin qaysi halqalardan tashkil topgan?", "options": ["Pirimidin + imidazol", "Benzol + pirrol", "Piridin + benzol", "Pirimidin + pirazin", "Imidazol + benzol"], "answer": 0},
+  {"q": "Serotonin qaysi aminokislotadan hosil bo‘ladi?", "options": ["Triptofan", "Tirozin", "Gistidin", "Fenilalanin", "Glutamin"], "answer": 0},
+  {"q": "Imidazolium ionining pK~a~ i taxminan qancha?", "options": ["7", "2", "11", "4,8", "14"], "answer": 0},
+  {"q": "Odamda purinlar almashinuvining oxirgi mahsuloti qaysi?", "options": ["Siydik kislota", "Mochevina", "Kreatinin", "Ammiak", "β-alanin"], "answer": 0},
+  {"q": "Podagrani davolashda ksantinoksidazani to‘suvchi dori qaysi?", "options": ["Allopurinol", "Metotreksat", "5-Ftoruratsil", "Kofein", "Izoniazid"], "answer": 0},
+  {"q": "Folat kislota tarkibidagi kondensirlangan geterohalqa qaysi?", "options": ["Pteridin", "Purin", "Indol", "Xinolin", "Benzimidazol"], "answer": 0},
+  {"q": "Fiziologik sharoitda uratsil va timin qaysi tautomer shaklda ustun?", "options": ["Laktam (okso)", "Laktim (gidroksi)", "Enol", "Imin", "Aldegid"], "answer": 0},
+  {"q": "Kofein qaysi birikmalar guruhiga kiradi?", "options": ["Metilksantinlar (purin hosilalari)", "Pirimidinlar", "Indol alkaloidlari", "Barbituratlar", "Piperidin alkaloidlari"], "answer": 0},
+  {"q": "Xinin va xloroxin qaysi halqa hosilasi?", "options": ["Xinolin", "Indol", "Purin", "Piperidin", "Imidazol"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "52 yoshli erkak kechqurun go‘shtli taomlar va pivodan keyin tunda bosh barmoq bo‘g‘imida keskin og‘riq, qizarish va shish bilan uyg‘ondi. Qonda siydik kislota 560 mkmol/l (me’yor erkaklarda 200–420).", "ask": "Tashxis qanday? Siydik kislotaning kimyoviy tuzilishi bilan bog‘lab tushuntiring va uzoq muddatli davolash tamoyilini ayting.", "answer": "**Podagra xuruji.** Siydik kislota — purin (2,6,8-trioksopurin) hosilasi, purin almashinuvining oxirgi mahsuloti; go‘sht va pivodagi purinlar uning hosil bo‘lishini oshiradi, alkogol buyrak orqali chiqarilishini kamaytiradi. Siydik kislota kam eriydi; qonda to‘yinish chegarasidan oshganda bo‘g‘imda (ayniqsa sovuqroq periferik bo‘g‘imlarda) natriy urat kristallari cho‘kib, yallig‘lanish chaqiradi. Uzoq muddatli davo: **allopurinol** yoki febuksostat (ksantinoksidazani to‘sadi), purinli oziq va alkogolni cheklash, ko‘p suyuqlik ichish."},
+  {"title": "Masala 2", "text": "Yo‘g‘on ichak saratoni bilan og‘rigan bemorga 5-ftoruratsil kursi buyurildi. Davolash davomida og‘izda yaralar (stomatit), diareya va leykotsitlar kamayishi kuzatildi.", "ask": "Dori qanday ishlaydi va nima uchun bunday nojo‘ya ta’sirlar paydo bo‘ladi?", "answer": "5-ftoruratsil — urasilning antimetaboliti (5-holatda H o‘rniga F). Organizmda u ftordezoksiuridilatga aylanib, **timidilatsintazani** qaytmas to‘sadi: timidin nukleotidlari hosil bo‘lmaydi, DNK sintezi to‘xtaydi va tez bo‘linayotgan o‘sma hujayralari nobud bo‘ladi. Biroq tez bo‘linuvchi sog‘lom hujayralar — og‘iz va ichak shilliq qavati, suyak iligi — ham zararlanadi: stomatit, diareya va leykopeniya shu bilan bog‘liq. Davolash davomida qon tahlili nazorat qilinadi."},
+  {"title": "Masala 3", "text": "Allergik rinit bilan og‘rigan talaba bahor faslida burun bitishi, aksirish va ko‘z yoshlanishidan shikoyat qiladi. Unga loratadin tavsiya qilindi.", "ask": "Belgilarning kimyoviy mediatori qaysi, u qanday hosil bo‘ladi va dori qanday ta’sir qiladi?", "answer": "Mediator — **gistamin**: semiz hujayralarda gistidinning dekarboksillanishidan (gistidindekarboksilaza) hosil bo‘ladi va allergen ta’sirida ajraladi. U imidazol halqali biogen amin bo‘lib, **H~1~-retseptorlar**ni qo‘zg‘atib, tomirlar o‘tkazuvchanligini oshiradi (shish, burun bitishi), sezgi nervlarini ta’sirlantiradi (qichishish, aksirish). Loratadin — H~1~-retseptorlar blokatori; u gistaminning retseptor bilan bog‘lanishiga to‘sqinlik qiladi."}
+ ],
+ "cards": [
+  {"front": "Geterohalqa", "back": "Halqasida N, O yoki S kabi geteroatom bo‘lgan siklik birikma"},
+  {"front": "Pirrol", "back": "Besh a’zoli, bitta N; porfirinlar (gem), B~12~, bilirubin tarkibida"},
+  {"front": "Imidazol", "back": "Ikki N li besh a’zoli halqa; gistidin, gistamin; pK~a~ ≈ 7"},
+  {"front": "Piridin", "back": "Olti a’zoli, bitta N, kuchsiz asos; nikotinamid (NAD^+^), B~6~"},
+  {"front": "Pirimidin asoslari", "back": "Sitozin, urasil, timin"},
+  {"front": "Purin asoslari", "back": "Adenin, guanin (pirimidin + imidazol)"},
+  {"front": "Laktam-laktim tautomeriya", "back": "−NH−C(=O)− ⇄ −N=C(OH)−; fiziologik sharoitda laktam ustun"},
+  {"front": "Siydik kislota", "back": "Purinlar almashinuvining oxirgi mahsuloti; to‘planishi — podagra"},
+  {"front": "Serotonin", "back": "Triptofandan hosil bo‘ladigan indol hosilasi — neyromediator"},
+  {"front": "5-Ftoruratsil", "back": "Urasil antimetaboliti; timidilatsintazani to‘sadi"}
+ ]
+}

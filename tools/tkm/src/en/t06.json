@@ -1,0 +1,112 @@
+{
+ "id": "06",
+ "no": 6,
+ "title": "Fundamentals of electrochemistry. Electrical conductivity. Conductometry. Electrode processes. Formation and types of potentials. Potentiometry",
+ "goals": [
+  {"type": "p", "text": "To give the student knowledge of the electrical conductivity of electrolyte solutions, conductometry and conductometric titration, the formation of electrode, redox, membrane and diffusion potentials, galvanic cells, electrodes and the fundamentals of potentiometry, and the use of electrochemical methods in medicine."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["conductors of the first and second kind, specific and molar conductivity;", "Kohlrausch’s law and Ostwald’s dilution law;", "conductometric titration curves;", "the Nernst equation, the standard hydrogen electrode and standard potentials;", "redox, membrane and diffusion potentials;", "galvanic cells, reference and indicator electrodes, and potentiometry."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["calculate electrode and membrane potentials with the Nernst equation;", "calculate the EMF of a galvanic cell and write its scheme;", "determine the direction of a redox reaction from the potentials;", "interpret the results of electrochemical medical tests."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Nernst equation (25 °C): E = E° + (0.059 / n)·lg[Me^n+^]. When the concentration of a singly charged ion changes **10-fold**, the potential changes by **59 mV** (by 61 mV at 37 °C)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "**“An Ox, Red Cat”**: **An**ode — **Ox**idation, **Red**uction — **Cat**hode. In a galvanic cell the anode is the negative pole."},
+  {"kind": "diqqat", "label": "Caution", "text": "A redox reaction proceeds spontaneously between the oxidant of the pair with the **higher potential** and the reductant of the pair with the **lower potential**: if ΔE > 0, then ΔG = −nFΔE < 0."}
+ ],
+ "sections": [
+  {"title": "1. Electrical conductivity of electrolyte solutions", "blocks": [
+   {"type": "p", "text": "Substances that conduct electric current are of two kinds: **conductors of the first kind** (metals, graphite), in which the current is carried by electrons, and **conductors of the second kind** (electrolyte solutions and melts), in which it is carried by ions. Body tissues are conductors of the second kind."},
+   {"type": "list", "ordered": false, "items": ["**Specific conductivity** (κ) is the conductance of a column of solution 1 m^2^ in cross-section and 1 m long, S/m (siemens per meter).", "**Molar conductivity** (λ) is the conductance of a solution containing 1 mole of electrolyte: λ = κ / C, S·m^2^/mol. On dilution λ increases and reaches its maximum value (λ~∞~) at infinite dilution.", "**Kohlrausch’s law:** at infinite dilution the molar conductivity equals the sum of the cation and anion mobilities: λ~∞~ = λ~+~ + λ~−~.", "The **degree of dissociation** of a weak electrolyte: α = λ / λ~∞~. **Ostwald’s dilution law**: K = α^2^·C / (1 − α); if α ≪ 1, α ≈ √(K / C)."]},
+   {"type": "p", "text": "H^+^ and OH^−^ ions are several times more mobile than other ions: they move by proton “hopping” along chains of water molecules (the relay mechanism). That is why solutions of acids and alkalis conduct current better than salt solutions."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The electrical conductivity of tissues depends on their water and electrolyte content: blood, lymph, cerebrospinal fluid and muscle conduct well, while adipose tissue, bone and dry skin conduct poorly. This is the basis of **bioimpedance analysis** (body composition — the share of fat and water), **rheography** (the blood filling of an organ) and **electrophoresis** (delivery of drug ions through the skin)."}]}
+  ]},
+  {"title": "2. Conductometry. Conductometric titration", "blocks": [
+   {"type": "p", "text": "**Conductometry** is an analytical method based on measuring the electrical conductivity of a solution. **Direct conductometry** determines the purity of water, the salt content of a solution and the dissociation constant of a weak electrolyte. In **conductometric titration** the equivalence point is found from the break point of the conductivity graph; it is convenient for colored and turbid solutions (where an indicator does not work)."},
+   {"type": "p", "text": "When HCl is titrated with NaOH, the mobile H^+^ ions are replaced by the less mobile Na^+^ ions and the conductivity **decreases**; it is minimal at the equivalence point; then it **increases** again because of the excess mobile OH^−^ ions."},
+   {"type": "img", "src": "data/img/tkm/t06_kondukt.webp", "w": 1400, "h": 900, "label": "Figure 6.1", "caption": "Conductometric titration curves: titration of a strong acid (HCl) and a weak acid (CH~3~COOH) with NaOH; the equivalence point is where the lines intersect (calculated from ion mobilities)."}
+  ]},
+  {"title": "3. Electrode potential. The Nernst equation", "blocks": [
+   {"type": "p", "text": "When a metal is placed in a solution of its salt, an **electrical double layer** forms at the metal–solution boundary: reactive metals (Zn) pass into the solution as ions and leave a negative charge behind, while less reactive metals (Cu) take up their ions from the solution and become positively charged. The potential difference arising at this boundary is called the **electrode potential**."},
+   {"type": "p", "text": "The absolute value of an electrode potential cannot be measured, so it is measured relative to the **standard hydrogen electrode** (E° = 0, p(H~2~) = 101.3 kPa, a(H^+^) = 1 mol/L). The value measured under standard conditions is called the **standard electrode potential** (E°); when metals are arranged in order of increasing E°, the **electrochemical series** is obtained."},
+   {"type": "p", "text": "**Nernst equation:** E = E° + (R·T / n·F)·ln[Me^n+^], or at 25 °C E = E° + (0.059 / n)·lg[Me^n+^], where n is the number of electrons and F = 96 485 C/mol (the Faraday constant)."},
+   {"type": "table", "title": "Table 6.1. Standard potentials of some electrodes (25 °C)", "head": ["Electrode process", "E°, V"], "rows": [["Li^+^ + e^−^ → Li", "−3.04"], ["Zn^2+^ + 2e^−^ → Zn", "−0.76"], ["Fe^2+^ + 2e^−^ → Fe", "−0.44"], ["2H^+^ + 2e^−^ → H~2~", "0.00"], ["Cu^2+^ + 2e^−^ → Cu", "+0.34"], ["Ag^+^ + e^−^ → Ag", "+0.80"], ["Au^3+^ + 3e^−^ → Au", "+1.50"]]}
+  ]},
+  {"title": "4. Redox, membrane and diffusion potentials", "blocks": [
+   {"type": "p", "text": "A **redox potential** arises when an inert electrode (platinum) is placed in a solution containing the oxidized and reduced forms of a substance. **Nernst–Peters equation:** E = E° + (0.059 / n)·lg([Ox] / [Red]). For example, for the Fe^3+^/Fe^2+^ pair E° = +0.77 V."},
+   {"type": "p", "text": "In biochemistry, standard potentials at pH = 7 (E°′) are used. The Gibbs energy of a redox reaction: ΔG = −n·F·ΔE. The reaction proceeds spontaneously from the pair with the lower (more negative) potential toward the pair with the higher potential."},
+   {"type": "p", "text": "A **diffusion potential** arises at the boundary between two solutions of different concentration or composition because the ions differ in mobility (for example, the mobile H^+^ runs ahead of Cl^−^). The **injury potential** between damaged and healthy tissue in the body is of this nature."},
+   {"type": "p", "text": "A **membrane potential** arises from the difference in ion concentrations on the two sides of a selectively permeable membrane. For a single ion it is calculated with the Nernst equation; for potassium at 37 °C: E~K~ = 61·lg([K^+^]~out~ / [K^+^]~in~) = 61·lg(4 / 140) ≈ −94 mV. The actual resting potential of the cell (≈ −70 mV) results from the contributions of several ions (K^+^, Na^+^, Cl^−^) and the work of Na^+^/K^+^-ATPase."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The membrane potential is the basis of the work of excitable tissues. In **hyperkalemia**, [K^+^]~out~ rises and E~K~ becomes less negative — the cell depolarizes, sodium channels are inactivated and cardiac conduction is disturbed. ECG, EEG and EMG are based on recording the biopotentials of tissues."}]}
+  ]},
+  {"title": "5. Galvanic cells and electrodes. Potentiometry", "blocks": [
+   {"type": "p", "text": "A **galvanic cell** is a device that converts the chemical energy of a redox reaction into electrical energy. **The Daniell cell:** (−) Zn | ZnSO~4~ || CuSO~4~ | Cu (+). Oxidation occurs at the anode (Zn): Zn − 2e^−^ → Zn^2+^; reduction at the cathode (Cu): Cu^2+^ + 2e^−^ → Cu. Electromotive force: EMF = E~cathode~ − E~anode~ = 0.34 − (−0.76) = 1.10 V."},
+   {"type": "table", "title": "Table 6.2. Electrodes used in potentiometry", "head": ["Electrode", "Type", "Use"], "rows": [["Silver chloride Ag | AgCl, KCl", "reference (stable potential, ≈ +0.22 V)", "in pH meters and ion meters"], ["Calomel Hg | Hg~2~Cl~2~, KCl", "reference (≈ +0.24 V in saturated KCl)", "laboratory measurements"], ["Glass electrode", "indicator (sensitive to H^+^)", "pH of blood, gastric juice, urine"], ["Ion-selective electrodes", "indicator (K^+^, Na^+^, Ca^2+^, Cl^−^)", "electrolytes in biochemical analyzers"], ["Platinum electrode", "redox indicator", "redox titration"]]},
+   {"type": "p", "text": "**Potentiometry** is an analytical method based on measuring the potential of an indicator electrode (the EMF). **Direct potentiometry** (pH-metry, ionometry): pH = (E − E°) / 0.059. In **potentiometric titration** the equivalence point is found from a sharp jump in potential."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "A modern **blood gas analyzer** measures, in a single drop of blood within a few minutes, the pH with a glass electrode, pO~2~ and pCO~2~ with special electrodes, and Na^+^, K^+^ and Ca^2+^ with ion-selective electrodes. **Glucose meters** measure the current of a reaction involving glucose oxidase (amperometry)."}]}
+  ]},
+  {"title": "6. Electrochemical methods in medicine", "blocks": [
+   {"type": "table", "title": "Table 6.3. Medical uses of electrochemical methods", "head": ["Method", "Basis", "Use"], "rows": [["pH-metry", "potential of the glass electrode", "pH of blood, intragastric pH, urine pH"], ["Ionometry", "ion-selective electrode", "blood electrolytes (Na^+^, K^+^, Ca^2+^)"], ["Conductometry", "conductivity of a solution", "infusion solutions, sweat test (Cl^−^ in cystic fibrosis)"], ["Amperometry, biosensors", "current of an electrode reaction", "glucose meter, lactate analyzer"], ["Electrophoresis", "movement of charged particles in a field", "blood protein fractions, hemoglobin variants"], ["Electrocardiography, electroencephalography", "recording of biopotentials", "assessment of heart and brain activity"]]}
+  ]},
+  {"title": "7. Potentials and energy in biological oxidation (independent work)", "blocks": [
+   {"type": "p", "text": "The mitochondrial **respiratory chain** is an ordered series of redox pairs: electrons pass from NADH, which has a low standard potential, to oxygen, which has the highest. At each step part of the energy released is used to pump protons across the membrane and is then used for ATP synthesis."},
+   {"type": "img", "src": "data/img/tkm/t06_nafas.webp", "w": 1400, "h": 800, "label": "Figure 6.2", "caption": "Standard potentials (E°′, pH 7) of the redox pairs of the respiratory chain: electrons flow from NAD^+^/NADH (−0.32 V) toward O~2~/H~2~O (+0.82 V) (diagram)."},
+   {"type": "p", "text": "**Calculation:** ΔE°′ = 0.82 − (−0.32) = 1.14 V; ΔG°′ = −n·F·ΔE°′ = −2 · 96 485 · 1.14 ≈ −220 000 J/mol = **−220 kJ/mol**. In theory this energy could form several ATP (≈ 30.5 kJ/mol each); in practice ≈ 2.5 ATP are synthesized when 1 pair of electrons passes from NADH to O~2~."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: writing the scheme of a galvanic cell and calculating its EMF", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Take the standard potentials of the two electrodes from the table.", "The electrode with the lower potential is the anode (−), the higher one the cathode (+).", "Write the scheme: anode | solution || solution | cathode.", "Write the half-reactions at the anode and cathode and balance the electrons.", "Calculate EMF = E~cathode~ − E~anode~; at non-standard concentrations use the Nernst equation."]}]},
+  {"title": "Skill: calculating a membrane potential with the Nernst equation", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Write the extracellular and intracellular concentrations of the ion.", "At 37 °C the coefficient is 61 mV (for a singly charged ion) and 30.5 mV for a doubly charged ion.", "Calculate E = (61 / z)·lg([ion]~out~ / [ion]~in~).", "Interpret the sign: for a cation a negative value means the inside is negative.", "Assess how the potential changes when the concentration changes (for example, in hyperkalemia)."]}]}
+ ],
+ "questions": [
+  "What is the difference between conductors of the first and second kind?",
+  "How are specific and molar conductivity related?",
+  "Explain Kohlrausch’s law and Ostwald’s dilution law.",
+  "Why are the H^+^ and OH^−^ ions the most mobile?",
+  "What does a conductometric titration curve look like, and why?",
+  "How does an electrode potential arise? What is the standard hydrogen electrode?",
+  "Write and explain the Nernst equation.",
+  "How are the redox potential and the direction of a reaction related?",
+  "How do membrane and diffusion potentials arise?",
+  "Explain how the Daniell cell works.",
+  "Give examples of reference and indicator electrodes.",
+  "How is potentiometry used in medicine?",
+  "How is energy released in the respiratory chain?"
+ ],
+ "quiz": [
+  {"q": "What carries the current in conductors of the second kind?", "options": ["Ions", "Electrons", "Neutrons", "Molecules", "Only protons"], "answer": 0},
+  {"q": "How does molar conductivity change when a solution is diluted?", "options": ["It increases", "It decreases", "It does not change", "It becomes zero", "It first increases, then decreases"], "answer": 0},
+  {"q": "Which ion has the greatest mobility?", "options": ["H^+^", "Na^+^", "K^+^", "Cl^−^", "Ca^2+^"], "answer": 0},
+  {"q": "In the conductometric titration of HCl with NaOH, how does conductivity change before the equivalence point?", "options": ["It decreases", "It increases", "It does not change", "It rises sharply", "It fluctuates"], "answer": 0},
+  {"q": "What is the potential of the standard hydrogen electrode?", "options": ["0 V", "+0.34 V", "−0.76 V", "+1.10 V", "+0.22 V"], "answer": 0},
+  {"q": "At 25 °C, if the concentration of a singly charged ion changes 10-fold, by how much does the electrode potential change?", "options": ["59 mV", "10 mV", "118 mV", "30 mV", "1 V"], "answer": 0},
+  {"q": "What is the EMF of the Daniell cell?", "options": ["1.10 V", "0.34 V", "0.76 V", "0.42 V", "2.20 V"], "answer": 0},
+  {"q": "What process occurs at the anode of a galvanic cell?", "options": ["Oxidation", "Reduction", "Precipitation", "Neutralization", "Hydrolysis"], "answer": 0},
+  {"q": "What is used as the indicator electrode when measuring pH?", "options": ["The glass electrode", "The silver chloride electrode", "The calomel electrode", "A zinc electrode", "A copper electrode"], "answer": 0},
+  {"q": "Which electrode is a reference electrode?", "options": ["The silver chloride electrode", "The glass electrode", "A potassium-selective electrode", "A platinum redox electrode", "A sodium-selective electrode"], "answer": 0},
+  {"q": "At 37 °C, if [K^+^]~out~ = 4 and [K^+^]~in~ = 140 mmol/L, what is the approximate equilibrium potential of potassium?", "options": ["−94 mV", "+94 mV", "−70 mV", "+61 mV", "0 mV"], "answer": 0},
+  {"q": "In which direction does a redox reaction proceed spontaneously?", "options": ["From the pair with the lower potential to the pair with the higher potential", "From the higher-potential pair to the lower one", "When the potentials are equal", "Only on heating", "It does not depend on potential"], "answer": 0},
+  {"q": "How are ΔG and the EMF related?", "options": ["ΔG = −nFΔE", "ΔG = nFΔE", "ΔG = −RT/ΔE", "ΔG = ΔE / nF", "ΔG = ΔH − ΔE"], "answer": 0},
+  {"q": "What is the final electron acceptor of the respiratory chain?", "options": ["Oxygen", "NAD^+^", "FAD", "Cytochrome c", "Ubiquinone"], "answer": 0},
+  {"q": "Which electrochemical method are glucose meters based on?", "options": ["Amperometry", "Conductometry", "Calorimetry", "Cryometry", "Gravimetry"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A patient has serum K^+^ = 7.0 mmol/L and tall, peaked T waves on the ECG. Take the intracellular potassium concentration as 140 mmol/L (37 °C).", "ask": "How does the equilibrium potential of potassium change compared with normal (K^+^ = 4 mmol/L)? Explain the clinical significance.", "answer": "Normally: E~K~ = 61·lg(4 / 140) ≈ −94 mV. In hyperkalemia: E~K~ = 61·lg(7 / 140) = 61·lg0.05 ≈ −79 mV. The membrane is less negative (depolarized), sodium channels are inactivated, and cardiac excitability and conduction are disturbed; there is a risk of asystole. Emergency treatment: calcium gluconate (stabilizes the membrane), insulin + glucose (moves K^+^ into the cells)."},
+  {"title": "Problem 2", "text": "A pH meter measured the pH of a blood sample with a silver chloride reference electrode and a glass electrode. For this electrode system pH = (E − 0.200) / 0.059 (25 °C), and the measured EMF is E = 0.637 V.", "ask": "Calculate and interpret the pH of the sample.", "answer": "pH = (0.637 − 0.200) / 0.059 = 0.437 / 0.059 ≈ 7.41 — the arterial blood pH is normal (7.35–7.45)."},
+  {"title": "Problem 3", "text": "A patient has a gold crown on one tooth and an amalgam (mercury–silver–tin alloy) filling in the neighboring tooth. He feels a metallic taste in the mouth and occasional “electric shocks”.", "ask": "Explain the electrochemical cause of this phenomenon.", "answer": "Saliva is an electrolyte solution; two metals with different standard potentials (gold — high, the tin of the amalgam — low) form a **galvanic cell** through the saliva (galvanism). The metal with the lower potential acts as the anode and corrodes, its ions pass into the saliva (metallic taste), and current flows when the metals touch. It is recommended to use identical or electrochemically compatible materials in the mouth."}
+ ],
+ "cards": [
+  {"front": "Conductor of the second kind", "back": "The current is carried by ions: electrolyte solutions, tissues"},
+  {"front": "Kohlrausch’s law", "back": "λ~∞~ = λ~+~ + λ~−~"},
+  {"front": "Ostwald’s dilution law", "back": "K = α^2^·C / (1 − α)"},
+  {"front": "Conductometric titration", "back": "The equivalence point is found from the break in the conductivity graph"},
+  {"front": "Nernst equation", "back": "E = E° + (0.059 / n)·lg[Me^n+^] (25 °C)"},
+  {"front": "Standard hydrogen electrode", "back": "E° = 0; all electrode potentials are measured against it"},
+  {"front": "Daniell cell", "back": "Zn | ZnSO~4~ || CuSO~4~ | Cu; EMF = 1.10 V"},
+  {"front": "Glass electrode", "back": "Indicator electrode sensitive to H^+^ — in the pH meter"},
+  {"front": "Membrane potential", "back": "Arises from the difference in ion concentrations across a membrane; ≈ −94 mV for K^+^"},
+  {"front": "ΔG = −nFΔE", "back": "Gibbs energy of a redox reaction; ≈ −220 kJ/mol in the respiratory chain"}
+ ]
+}

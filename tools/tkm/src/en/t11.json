@@ -1,0 +1,102 @@
+{
+ "id": "11",
+ "no": 11,
+ "title": "Heterocyclic compounds as metabolites and drugs",
+ "goals": [
+  {"type": "p", "text": "To give the student knowledge of the structure, aromaticity and acid–base properties of five- and six-membered heterocycles with one or more heteroatoms and of bicyclic (fused) heterocycles, and of the important metabolites, vitamins, neurotransmitters and drugs derived from them."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the classification and naming of heterocycles;", "the pyrrole, furan, thiophene, imidazole, pyrazole and thiazole rings and their derivatives;", "the pyridine, pyrimidine and piperidine rings and their derivatives;", "bicyclic systems such as indole, purine, quinoline and pteridine;", "the difference between pyrrole and pyridine nitrogen, and lactim–lactam tautomerism;", "heterocyclic neurotransmitters (serotonin, histamine, melatonin) and important drugs."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["identify and name the heterocycle in the formula of a drug or metabolite;", "assess the acid–base properties of a heterocycle from the type of nitrogen;", "explain the clinical significance of purine metabolism and uric acid formation;", "justify the action of antimetabolite drugs (5-fluorouracil, methotrexate, allopurinol) by their similarity to natural metabolites."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "**Pyrrole nitrogen** gives its lone pair to the aromatic sextet — it has almost no basic properties, and N−H is a weak acid. **Pyridine nitrogen** keeps its pair — a weak base (pK~a~ ≈ 5.2). **Imidazole** has both types of nitrogen — amphoteric, pK~a~ ≈ 7 (hence the buffer property of histidine)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "**“CUT the PY”**: Cytosine, Uracil, Thymine are PYrimidines; **“PURe As Gold”**: PURines are Adenine and Guanine. The reverse rule: the word **pyrimidine** is long but the ring is single; **purine** is short but has two rings."},
+  {"kind": "diqqat", "label": "Caution", "text": "Many powerful drugs are **antimetabolites** designed to resemble natural heterocyclic metabolites: 5-fluorouracil (uracil), 6-mercaptopurine (hypoxanthine), methotrexate (folate), allopurinol (hypoxanthine). They also act on rapidly dividing healthy cells — blood counts and mucous membranes must be monitored."}
+ ],
+ "sections": [
+  {"title": "1. Classification of heterocyclic compounds. Five-membered rings with one heteroatom", "blocks": [
+   {"type": "p", "text": "**Heterocyclic compounds** are cyclic compounds whose ring contains, besides carbon, atoms of other elements (**heteroatoms**: N, O, S). They are classified by ring size (five-, six-membered), by the number and type of heteroatoms, and by the number of rings (monocyclic, fused). More than half of all drugs are heterocyclic compounds."},
+   {"type": "table", "title": "Table 11.1. Five-membered heterocycles with one heteroatom", "head": ["Ring", "Heteroatom", "Important derivatives"], "rows": [["Pyrrole", "N", "porphyrins (heme, chlorophyll), corrin (vitamin B~12~), bile pigments (bilirubin)"], ["Pyrrolidine (saturated)", "N", "proline, hydroxyproline (collagen), nicotine"], ["Furan", "O", "nitrofural, furazolidone (antimicrobial drugs); ribose and deoxyribose in the furanose form"], ["Thiophene", "S", "ticlopidine, clopidogrel (antiplatelet drugs)"]]},
+   {"type": "p", "text": "Pyrrole is aromatic: the π-electrons of the four carbons and the lone pair of nitrogen together form a sextet of 6 π-electrons. That is why the nitrogen pair of pyrrole gives no basic properties, while N−H is a weak acid (pK~a~ ≈ 17). Four pyrrole rings joined by methine bridges form the **porphine** ring."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "When heme is broken down, the pyrrole ring system opens and a linear tetrapyrrole — **bilirubin** — is formed. Its accumulation in the blood causes **jaundice**. **Phototherapy**, used to treat neonatal jaundice, converts bilirubin under blue light into water-soluble isomers and speeds up its excretion."}]}
+  ]},
+  {"title": "2. Five-membered rings with two heteroatoms (azoles)", "blocks": [
+   {"type": "table", "title": "Table 11.2. Azoles and their derivatives", "head": ["Ring", "Heteroatoms", "Important derivatives"], "rows": [["Imidazole", "N, N (1,3)", "histidine, histamine; metronidazole, fluconazole (azole antifungals)"], ["Pyrazole", "N, N (1,2)", "antipyrine, metamizole (analgin) — analgesics"], ["Thiazole", "S, N", "thiamine (vitamin B~1~); the thiazolidine ring — in penicillins"], ["Oxazole", "O, N", "the isoxazole in oxacillin"]]},
+   {"type": "p", "text": "**Imidazole** has both types of nitrogen: one of the pyrrole type (N−H) and one of the pyridine type (basic). The pK~a~ of the imidazolium ion is ≈ 7.0 — very close to physiological pH. That is why histidine residues serve as **buffer** groups of proteins and as **proton carriers** in the active site of many enzymes (for example, serine proteases)."}
+  ]},
+  {"title": "3. Six-membered heterocycles", "blocks": [
+   {"type": "table", "title": "Table 11.3. Six-membered nitrogen heterocycles", "head": ["Ring", "Structure", "Important derivatives"], "rows": [["Pyridine", "one N, aromatic", "nicotinamide (vitamin PP) → NAD^+^, NADP^+^; pyridoxine (vitamin B~6~); isoniazid (antituberculosis)"], ["Piperidine", "saturated pyridine", "trimeperidine, fentanyl (opioids), alkaloids"], ["Pyrimidine", "two N (1,3)", "uracil, thymine, cytosine; barbiturates; part of vitamin B~1~; 5-fluorouracil"], ["Pyrazine", "two N (1,4)", "pyrazinamide (antituberculosis)"]]},
+   {"type": "p", "text": "The nitrogen of **pyridine** does not give its lone pair to the aromatic system — it is a weak base (pK~a~ of the pyridinium ion ≈ 5.2). The pyridine ring is π-electron deficient: electrophilic substitution is difficult and nucleophilic attack is easy. **The active part of NAD^+^** is the pyridine ring of nicotinamide: it accepts a hydride ion (H^−^) and is reduced to NADH."},
+   {"type": "p", "text": "**Barbiturates** are derivatives of barbituric acid (pyrimidine-2,4,6-trione); they have hypnotic and anticonvulsant effects (phenobarbital). Barbituric acid itself is not pharmacologically active — two substituents at position 5 make it lipophilic and active."}
+  ]},
+  {"title": "4. Bicyclic (fused) heterocycles", "blocks": [
+   {"type": "img", "src": "data/img/tkm/t11_geterohalqa.webp", "w": 1400, "h": 900, "label": "Figure 11.1", "caption": "The main heterocycles: pyrrole, imidazole, pyridine, pyrimidine, purine and indole (structural formulas drawn with RDKit)."},
+   {"type": "table", "title": "Table 11.4. Fused heterocycles", "head": ["System", "Composition", "Important derivatives"], "rows": [["Indole", "benzene + pyrrole", "tryptophan, serotonin, melatonin; indomethacin; LSD (toxic)"], ["Purine", "pyrimidine + imidazole", "adenine, guanine, hypoxanthine, xanthine, uric acid; caffeine, theophylline, theobromine"], ["Quinoline", "benzene + pyridine", "quinine, chloroquine (antimalarials); fluoroquinolones (ciprofloxacin)"], ["Pteridine", "pyrimidine + pyrazine", "folic acid, methotrexate (antimetabolite), riboflavin (isoalloxazine)"], ["Benzimidazole", "benzene + imidazole", "albendazole (anthelmintic), omeprazole"]]},
+   {"type": "p", "text": "**Lactim–lactam tautomerism:** in purines and pyrimidines with hydroxy groups (uracil, thymine, guanine, uric acid) a proton moves between oxygen and nitrogen: −N=C(OH)− ⇄ −NH−C(=O)−. Under physiological conditions the **lactam** (oxo) form predominates; it is this form that ensures correct hydrogen bonding between the bases in DNA. The rare lactim form can cause pairing errors — **point mutations**."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Uric acid** is the end product of purine metabolism in humans (xanthine oxidase: hypoxanthine → xanthine → uric acid). Its solubility is low (pK~a~ ≈ 5.4); when it rises in the blood, sodium urate crystals deposit in the joints — **gout**. **Allopurinol** (an isomer of hypoxanthine) blocks xanthine oxidase and reduces uric acid formation."}]}
+  ]},
+  {"title": "5. Heterocyclic neurotransmitters and biogenic amines", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Serotonin** (5-hydroxytryptamine) — from tryptophan by hydroxylation and decarboxylation; mood, sleep, appetite, gut motility, platelet aggregation. Drugs that block its reuptake (fluoxetine, sertraline) are used to treat depression.", "**Melatonin** — formed from serotonin in the pineal gland (at night); it regulates the circadian rhythm.", "**Histamine** — from the decarboxylation of histidine; allergic reactions (H~1~), HCl secretion in the stomach (H~2~), a mediator. H~1~ blockers (loratadine) and H~2~ blockers (famotidine) are widely used.", "**Caffeine** and **theophylline** (methylxanthines) — block adenosine receptors and inhibit phosphodiesterase: they stimulate the CNS and dilate the bronchi."]},
+   {"type": "img", "src": "data/img/tkm/t11_mediator.webp", "w": 1400, "h": 520, "label": "Figure 11.2", "caption": "Heterocyclic neurotransmitters: serotonin and melatonin (indole ring), histamine (imidazole ring) (structural formulas drawn with RDKit)."}
+  ]},
+  {"title": "6. Heterocyclic drugs: the chemical basis of their action", "blocks": [
+   {"type": "table", "title": "Table 11.5. Antimetabolite and other heterocyclic drugs", "head": ["Drug", "Heterocycle", "Natural “look-alike”", "Action"], "rows": [["5-Fluorouracil", "pyrimidine", "uracil (thymine)", "blocks thymidylate synthase — antitumor"], ["6-Mercaptopurine", "purine", "hypoxanthine", "disturbs purine synthesis — in leukemia"], ["Methotrexate", "pteridine", "folate", "blocks dihydrofolate reductase — tumors, rheumatoid arthritis"], ["Allopurinol", "pyrazolopyrimidine", "hypoxanthine", "blocks xanthine oxidase — gout"], ["Acyclovir", "purine (guanine)", "deoxyguanosine", "blocks viral DNA polymerase — herpes"], ["Penicillins", "β-lactam + thiazolidine", "D-alanyl-D-alanine", "block bacterial cell wall synthesis"]]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: identifying the heterocycle from a formula", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Pick out all rings in the formula and count the atoms in each.", "Identify the heteroatoms (N, O, S) in the ring and their positions.", "Check whether the ring is aromatic (conjugated double bonds) or saturated.", "If it is fused, say which rings it consists of (for example, benzene + pyrrole = indole).", "Name the parent ring and compare it with a known metabolite or drug that has this ring."]}]},
+  {"title": "Skill: assessing the basicity of a nitrogen atom", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Determine whether the lone pair of the nitrogen is part of the aromatic sextet.", "If it is (pyrrole type), the basicity is very low.", "If it is not (pyridine type), it is a weak base (pK~a~ ≈ 5).", "A nitrogen in a saturated ring (piperidine, pyrrolidine) is a strong base like an aliphatic amine (pK~a~ ≈ 11).", "If both types of nitrogen are present (imidazole), it is amphoteric, pK~a~ ≈ 7."]}]}
+ ],
+ "questions": [
+  "How are heterocyclic compounds classified?",
+  "Which important biomolecules contain the pyrrole ring?",
+  "Why does pyrrole show almost no basic properties?",
+  "What is the biological significance of the imidazole ring?",
+  "Give examples of pyrazole and thiazole derivatives.",
+  "What role does the pyridine ring play in the work of NAD^+^?",
+  "Describe the pyrimidine bases and barbiturates.",
+  "How is the purine ring built? List the purine bases.",
+  "What is lactim–lactam tautomerism and what is its significance?",
+  "How is uric acid formed and what is gout?",
+  "Name the neurotransmitters that are indole derivatives.",
+  "How is histamine formed and what are its effects?",
+  "Explain the principle of action of antimetabolite drugs with examples."
+ ],
+ "quiz": [
+  {"q": "Which heterocycle is part of heme?", "options": ["Pyrrole", "Pyridine", "Pyrimidine", "Indole", "Thiazole"], "answer": 0},
+  {"q": "Which heterocycle is found in histidine and histamine?", "options": ["Imidazole", "Pyrazole", "Thiazole", "Pyrrole", "Pyridine"], "answer": 0},
+  {"q": "Which rings does vitamin B~1~ (thiamine) contain?", "options": ["Pyrimidine and thiazole", "Purine and pteridine", "Indole and pyridine", "Imidazole and pyrazole", "Pyrrole and furan"], "answer": 0},
+  {"q": "Which heterocycle does the vitamin in NAD^+^ have?", "options": ["Pyridine (nicotinamide)", "Pyrimidine", "Pteridine", "Indole", "Thiazole"], "answer": 0},
+  {"q": "Metamizole (analgin) is a derivative of which ring?", "options": ["Pyrazole", "Imidazole", "Pyridine", "Purine", "Indole"], "answer": 0},
+  {"q": "Which base is a pyrimidine derivative?", "options": ["Cytosine", "Adenine", "Guanine", "Hypoxanthine", "Xanthine"], "answer": 0},
+  {"q": "Which rings make up purine?", "options": ["Pyrimidine + imidazole", "Benzene + pyrrole", "Pyridine + benzene", "Pyrimidine + pyrazine", "Imidazole + benzene"], "answer": 0},
+  {"q": "From which amino acid is serotonin formed?", "options": ["Tryptophan", "Tyrosine", "Histidine", "Phenylalanine", "Glutamine"], "answer": 0},
+  {"q": "What is the approximate pK~a~ of the imidazolium ion?", "options": ["7", "2", "11", "4.8", "14"], "answer": 0},
+  {"q": "What is the end product of purine metabolism in humans?", "options": ["Uric acid", "Urea", "Creatinine", "Ammonia", "β-alanine"], "answer": 0},
+  {"q": "Which drug blocks xanthine oxidase in the treatment of gout?", "options": ["Allopurinol", "Methotrexate", "5-Fluorouracil", "Caffeine", "Isoniazid"], "answer": 0},
+  {"q": "Which fused heterocycle is part of folic acid?", "options": ["Pteridine", "Purine", "Indole", "Quinoline", "Benzimidazole"], "answer": 0},
+  {"q": "Under physiological conditions, which tautomeric form of uracil and thymine predominates?", "options": ["Lactam (oxo)", "Lactim (hydroxy)", "Enol", "Imine", "Aldehyde"], "answer": 0},
+  {"q": "To which group of compounds does caffeine belong?", "options": ["Methylxanthines (purine derivatives)", "Pyrimidines", "Indole alkaloids", "Barbiturates", "Piperidine alkaloids"], "answer": 0},
+  {"q": "Quinine and chloroquine are derivatives of which ring?", "options": ["Quinoline", "Indole", "Purine", "Piperidine", "Imidazole"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A 52-year-old man woke up at night after an evening of meat dishes and beer with sudden pain, redness and swelling of the big toe joint. Blood uric acid is 560 μmol/L (normal in men 200–420).", "ask": "What is the diagnosis? Explain it in terms of the chemical structure of uric acid and state the principle of long-term treatment.", "answer": "**An attack of gout.** Uric acid is a purine derivative (2,6,8-trioxopurine), the end product of purine metabolism; the purines in meat and beer increase its formation, and alcohol reduces its renal excretion. Uric acid is poorly soluble; when its blood level exceeds the saturation limit, sodium urate crystals deposit in a joint (especially the cooler peripheral joints) and cause inflammation. Long-term treatment: **allopurinol** or febuxostat (block xanthine oxidase), limiting purine-rich food and alcohol, plenty of fluids."},
+  {"title": "Problem 2", "text": "A patient with colon cancer was prescribed a course of 5-fluorouracil. During treatment mouth ulcers (stomatitis), diarrhea and a fall in white blood cells were observed.", "ask": "How does the drug work, and why do these adverse effects occur?", "answer": "5-Fluorouracil is an antimetabolite of uracil (F instead of H at position 5). In the body it is converted to fluorodeoxyuridylate, which irreversibly blocks **thymidylate synthase**: thymidine nucleotides are not formed, DNA synthesis stops and rapidly dividing tumor cells die. However, rapidly dividing healthy cells — the mucosa of the mouth and intestine and the bone marrow — are also damaged: stomatitis, diarrhea and leukopenia are due to this. Blood counts are monitored during treatment."},
+  {"title": "Problem 3", "text": "A student with allergic rhinitis complains in spring of a blocked nose, sneezing and watery eyes. Loratadine was recommended.", "ask": "What is the chemical mediator of the symptoms, how is it formed, and how does the drug act?", "answer": "The mediator is **histamine**: it is formed in mast cells by decarboxylation of histidine (histidine decarboxylase) and released on contact with the allergen. It is a biogenic amine with an imidazole ring that stimulates **H~1~ receptors**, increasing vascular permeability (swelling, nasal congestion) and irritating sensory nerves (itching, sneezing). Loratadine is an H~1~ receptor blocker; it prevents histamine from binding to the receptor."}
+ ],
+ "cards": [
+  {"front": "Heterocycle", "back": "A cyclic compound with a heteroatom such as N, O or S in the ring"},
+  {"front": "Pyrrole", "back": "Five-membered, one N; in porphyrins (heme), B~12~, bilirubin"},
+  {"front": "Imidazole", "back": "Five-membered ring with two N; histidine, histamine; pK~a~ ≈ 7"},
+  {"front": "Pyridine", "back": "Six-membered, one N, weak base; nicotinamide (NAD^+^), B~6~"},
+  {"front": "Pyrimidine bases", "back": "Cytosine, uracil, thymine"},
+  {"front": "Purine bases", "back": "Adenine, guanine (pyrimidine + imidazole)"},
+  {"front": "Lactam–lactim tautomerism", "back": "−NH−C(=O)− ⇄ −N=C(OH)−; the lactam predominates under physiological conditions"},
+  {"front": "Uric acid", "back": "End product of purine metabolism; its accumulation causes gout"},
+  {"front": "Serotonin", "back": "An indole derivative formed from tryptophan — a neurotransmitter"},
+  {"front": "5-Fluorouracil", "back": "A uracil antimetabolite; blocks thymidylate synthase"}
+ ]
+}

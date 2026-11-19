@@ -1,0 +1,112 @@
+{
+ "id": "07",
+ "no": 7,
+ "title": "Surface phenomena and adsorption. Chromatography. Qualitative reactions based on adsorption. Quantitative assessment of adsorption",
+ "goals": [
+  {"type": "p", "text": "To give the student knowledge of surface energy and surface tension, surface-active and surface-inactive substances, adsorption, desorption, absorption and chemisorption, the laws of adsorption on mobile and immobile surfaces (the Gibbs, Langmuir and Freundlich equations), and chromatographic methods and their significance in medicine."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the concepts of surface energy, surface tension and surface activity;", "surface-active, surface-inactive and surface-indifferent substances, and the Duclaux–Traube rule;", "the difference between adsorption, absorption, desorption and chemisorption;", "the Gibbs, Langmuir and Freundlich equations;", "ion-exchange adsorption and the Paneth–Fajans rule;", "the principles and types of chromatography and the R~f~ value."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["calculate the amount adsorbed from experimental data;", "analyze an adsorption isotherm;", "calculate R~f~ on a paper or thin-layer chromatogram;", "justify the medical use of sorbents and surfactants."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "**Adsorption** is the accumulation of a substance on the **surface** of another phase; **absorption** is its uptake throughout the **volume**. Surface-active substances lower surface tension and are adsorbed positively at the surface (Γ > 0)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "A surfactant molecule — **“head in the water, tail in the air”**: the polar hydrophilic “head” (−COO^−^, −OH, −SO~3~^−^) sits in the water, the nonpolar hydrophobic hydrocarbon “tail” in the air or oil."},
+  {"kind": "diqqat", "label": "Caution", "text": "Activated charcoal also adsorbs drugs: drugs taken at the same time (contraceptives, antibiotics) become less effective. That is why other drugs are taken at least 1.5–2 hours before or after charcoal."}
+ ],
+ "sections": [
+  {"title": "1. Surface energy and surface tension", "blocks": [
+   {"type": "p", "text": "A molecule inside a phase is attracted equally from all sides, whereas a molecule at the surface is acted on by a resultant force directed inward. That is why the surface layer has excess energy — **surface energy**. The free surface energy per unit area is called **surface tension** (σ), J/m^2^ or N/m."},
+   {"type": "p", "text": "A system spontaneously tends to reduce its surface energy: drops take a spherical shape (the smallest surface), small drops merge into larger ones, and substances that lower σ accumulate at the surface. Water has a very high surface tension: ≈ 73 mN/m at 20 °C."},
+   {"type": "table", "title": "Table 7.1. Surface tension of some liquids (≈ 20 °C)", "head": ["Liquid", "σ, mN/m"], "rows": [["Water", "≈ 73"], ["Urine (normal)", "≈ 64–69"], ["Blood serum", "≈ 45–50"], ["Bile", "≈ 48"], ["Ethanol", "≈ 22"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Hay’s test:** sulfur powder is sprinkled on the surface of urine. Normally the powder stays on the surface; if the urine contains bile acids (strong surfactants), surface tension falls and the powder sinks — the test is positive in obstructive jaundice and liver diseases."}]}
+  ]},
+  {"title": "2. Surface-active and surface-inactive substances", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Surface-active substances (surfactants)** lower the surface tension of the solvent and accumulate at the surface: alcohols, carboxylic acids, soaps, bile acids, phospholipids, proteins. They have a **diphilic** (amphiphilic) structure.", "**Surface-inactive substances** slightly raise the surface tension and move away from the surface into the bulk (negative adsorption): strong electrolytes (NaCl, KNO~3~), inorganic acids and alkalis.", "**Surface-indifferent substances** hardly change the surface tension: glucose, sucrose."]},
+   {"type": "p", "text": "**Surface activity** is the ability of a substance to lower surface tension: g = −dσ / dC. **The Duclaux–Traube rule:** in a homologous series, each CH~2~ group added to the hydrocarbon radical increases the surface activity **3–3.5 times** (formic < acetic < propionic < butyric acid)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Pulmonary surfactant** is a mixture of phospholipids (mainly dipalmitoylphosphatidylcholine) and proteins that lines the inner surface of the alveoli. By Laplace’s law the collapsing pressure of an alveolus is P = 2σ / r; surfactant sharply lowers σ and prevents the alveoli from collapsing on expiration. When surfactant is lacking in preterm infants, **respiratory distress syndrome** develops; it is treated by giving natural or synthetic surfactant into the trachea."}]}
+  ]},
+  {"title": "3. Adsorption, absorption, desorption and chemisorption", "blocks": [
+   {"type": "p", "text": "**Sorption** is the uptake of one substance by another. The substance that takes up is the **sorbent** (adsorbent), and the substance taken up is the **sorbate** (adsorptive)."},
+   {"type": "table", "title": "Table 7.2. Types of sorption", "head": ["Process", "Description", "Example"], "rows": [["Adsorption", "the substance accumulates at the phase boundary, on the surface", "gases and dyes on the surface of charcoal"], ["Absorption", "the substance penetrates the whole volume of the sorbent", "uptake of CO~2~ or NH~3~ by water"], ["Desorption", "release of the adsorbed substance from the surface (reverse of adsorption)", "release of gas from charcoal on heating"], ["Physical adsorption", "van der Waals forces, reversible, small heat (≈ 10–40 kJ/mol)", "gases on charcoal"], ["Chemisorption", "a chemical bond is formed, often irreversible, large heat (≈ 40–400 kJ/mol)", "oxygen on a metal surface, uptake of CO~2~ by CaO"]]},
+   {"type": "p", "text": "Adsorption is an **exothermic** process: as temperature rises, adsorption decreases and desorption increases. How much is adsorbed depends on the **specific surface area** of the sorbent: the inner pore surface of 1 g of activated charcoal reaches 500–1500 m^2^."}
+  ]},
+  {"title": "4. Adsorption on a mobile surface. The Gibbs equation", "blocks": [
+   {"type": "p", "text": "Liquid–gas and liquid–liquid boundaries are **mobile surfaces**. Adsorption of a solute at such a surface is described by the **Gibbs equation**: Γ = −(C / R·T)·(dσ / dC), where Γ is the surface excess (mol/m^2^)."},
+   {"type": "list", "ordered": false, "items": ["If dσ / dC < 0 (surfactant), Γ > 0 — **positive adsorption**, the substance accumulates at the surface.", "If dσ / dC > 0 (surface-inactive substance), Γ < 0 — **negative adsorption**, the substance moves from the surface into the bulk.", "Surfactant molecules are **oriented** at the surface: as the concentration grows they stand upright and form a dense monomolecular layer (a “palisade”) — this is the physicochemical basis of the lipid bilayer of the cell membrane."]}
+  ]},
+  {"title": "5. Adsorption on a solid surface. The Langmuir and Freundlich equations", "blocks": [
+   {"type": "p", "text": "**Langmuir’s theory of monomolecular adsorption:** adsorption occurs at the active sites of the sorbent; each site holds one molecule; when the surface is filled, a monomolecular layer is formed. **Langmuir equation:** Γ = Γ~∞~·K·C / (1 + K·C), where Γ~∞~ is the maximum (full-layer) adsorption and K is the adsorption constant."},
+   {"type": "list", "ordered": false, "items": ["At low concentration (K·C ≪ 1): Γ ≈ Γ~∞~·K·C — adsorption is proportional to concentration.", "At high concentration (K·C ≫ 1): Γ ≈ Γ~∞~ — the surface is saturated.", "**The empirical Freundlich equation** (for medium concentrations): x / m = K·C^1/n^; in logarithmic form lg(x / m) = lgK + (1 / n)·lgC — a straight line from which K and 1/n are found."]},
+   {"type": "img", "src": "data/img/tkm/t07_izoterma.webp", "w": 1400, "h": 800, "label": "Figure 7.1", "caption": "Adsorption isotherm (by the Langmuir equation): a linear region at low concentration and saturation approaching Γ~∞~ at high concentration (left); the logarithmic form of the Freundlich equation (right) (drawn from calculated data)."},
+   {"type": "p", "text": "**Quantitative assessment of adsorption:** after the sorbent is placed in a solution and equilibrium is reached, adsorption is found from the decrease in the concentration of the solution: Γ = (C~0~ − C)·V / m, where C~0~ and C are the initial and equilibrium concentrations, V the volume of solution and m the mass of sorbent."}
+  ]},
+  {"title": "6. Adsorption of electrolytes and ion exchange", "blocks": [
+   {"type": "p", "text": "**The Paneth–Fajans rule:** the surface of a crystal selectively adsorbs ions that are part of its lattice or isomorphous with them. For example, AgI crystals adsorb I^−^ in a solution with excess KI, and Ag^+^ with excess AgNO~3~ — this is how the charge of a colloidal particle arises (topic 8)."},
+   {"type": "p", "text": "**Ion-exchange adsorption:** the sorbent gives one of its own ions to the solution and takes up an equivalent amount of another ion in its place. Such sorbents are called **ion exchangers**: **cation exchangers** (R−SO~3~H, exchange cations) and **anion exchangers** (R−N(CH~3~)~3~^+^OH^−^, exchange anions)."},
+   {"type": "table", "title": "Table 7.3. Medical uses of sorbents", "head": ["Sorbent / method", "Mechanism of action", "Use"], "rows": [["Activated charcoal, smectite, polymethylsiloxane", "physical adsorption (enterosorption)", "poisoning, diarrhea, flatulence"], ["Hemosorption", "passing the blood through a sorbent column", "severe poisoning, liver failure"], ["Sodium polystyrene sulfonate", "cation exchanger: exchanges Na^+^ for K^+^ in the intestine", "hyperkalemia"], ["Cholestyramine", "anion exchanger: binds bile acids", "hypercholesterolemia, pruritus"], ["Sevelamer", "binds phosphates", "hyperphosphatemia in renal failure"], ["Ion-exchange columns", "removing salts from water", "water for hemodialysis and injections"]]}
+  ]},
+  {"title": "7. Chromatography", "blocks": [
+   {"type": "p", "text": "**Chromatography** is a method of separation and analysis based on the different distribution (selective adsorption) of the components of a mixture between a stationary phase and a mobile phase. It was discovered in 1903 by the Russian botanist **M.S. Tsvet**, who separated plant pigments in a column packed with chalk."},
+   {"type": "table", "title": "Table 7.4. Classification of chromatographic methods", "head": ["Criterion", "Types"], "rows": [["State of the mobile phase", "gas chromatography, liquid chromatography"], ["Separation mechanism", "adsorption, partition, ion-exchange, gel filtration (by molecular size), affinity (by specific binding)"], ["Technique", "column, paper, thin-layer (TLC), high-performance liquid chromatography (HPLC)"]]},
+   {"type": "p", "text": "In paper and thin-layer chromatography the movement of a substance is described by the **R~f~ value**: R~f~ = l / L, where l is the distance from the start line to the spot of the substance and L is the distance from the start line to the solvent front. Under given conditions R~f~ is constant for each substance — the substance is identified by it."},
+   {"type": "img", "src": "data/img/tkm/t07_xromat.webp", "w": 1000, "h": 750, "label": "Figure 7.2", "caption": "Chromatogram of leaf pigments: carotenoids (yellow), chlorophyll a (blue-green) and chlorophyll b (yellowish green) have risen with the solvent to different distances and formed separate spots — a modern version of M.S. Tsvet’s experiment (Wikimedia Commons)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In medicine: **HPLC** — glycated hemoglobin (HbA~1c~), vitamins, drug concentrations in the blood; **gas chromatography** — ethanol in blood and urine, toxicological examination; **paper and TLC** — amino acids, screening for inherited aminoacidopathies (phenylketonuria); **gel filtration and affinity chromatography** — purification of proteins, antibodies and vaccines."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: calculating the amount adsorbed", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Determine the initial concentration of the solution (C~0~) (by titration or photometry).", "Put an accurately weighed portion of sorbent (m) into a known volume of solution (V) and shake until equilibrium is reached.", "Filter and determine the equilibrium concentration (C).", "Calculate the adsorption with the formula Γ = (C~0~ − C)·V / m (mmol/g).", "Repeat at several concentrations and plot the isotherm Γ = f(C)."]}]},
+  {"title": "Skill: determining R~f~ on a chromatogram", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Draw a start line with a graphite pencil 1.5–2 cm above the bottom of the paper or plate.", "Apply the sample and the standards as small spots with a capillary and dry them.", "Place the plate in a chamber with solvent so that the start line is above the solvent.", "When the solvent front reaches the top, remove the plate, mark the front and dry it; stain colorless substances with a developing reagent (ninhydrin for amino acids).", "Measure l and L, calculate R~f~ = l / L and compare with the standards."]}]}
+ ],
+ "questions": [
+  "What are surface energy and surface tension?",
+  "Why do drops take a spherical shape?",
+  "Give examples of surface-active, surface-inactive and surface-indifferent substances.",
+  "State the Duclaux–Traube rule.",
+  "What is the significance of pulmonary surfactant?",
+  "What is the difference between adsorption, absorption, desorption and chemisorption?",
+  "Write and explain the Gibbs equation.",
+  "What are the main points and the equation of Langmuir’s theory?",
+  "What form does the Freundlich equation have, and how are its constants found?",
+  "Explain the Paneth–Fajans rule.",
+  "What are ion exchangers and how are they used in medicine?",
+  "How is chromatography classified?",
+  "What is the R~f~ value and how is it calculated?"
+ ],
+ "quiz": [
+  {"q": "What is the SI unit of surface tension?", "options": ["J/m^2^ (N/m)", "Pa", "J/mol", "mol/m^2^", "N·m"], "answer": 0},
+  {"q": "What is the approximate surface tension of water at 20 °C?", "options": ["73 mN/m", "22 mN/m", "48 mN/m", "100 mN/m", "7 mN/m"], "answer": 0},
+  {"q": "Which substance is surface-active?", "options": ["Sodium oleate (soap)", "Sodium chloride", "Glucose", "Potassium nitrate", "Sulfuric acid"], "answer": 0},
+  {"q": "According to the Duclaux–Traube rule, how many times does surface activity increase when a CH~2~ group is added?", "options": ["3–3.5", "2", "10", "1.5", "100"], "answer": 0},
+  {"q": "How are surface-inactive substances adsorbed at the surface?", "options": ["Negatively (Γ < 0)", "Positively (Γ > 0)", "Not adsorbed and do not change σ", "By chemisorption", "As a monomolecular layer"], "answer": 0},
+  {"q": "Which equation describes adsorption on a mobile surface?", "options": ["Gibbs", "Freundlich", "Nernst", "Van ’t Hoff", "Henderson–Hasselbalch"], "answer": 0},
+  {"q": "According to Langmuir’s theory, what is the adsorbed layer like?", "options": ["Monomolecular", "Polymolecular", "Two-layered", "Disordered", "A multilayered diffuse layer"], "answer": 0},
+  {"q": "In terms of heat, what kind of process is adsorption?", "options": ["Exothermic", "Endothermic", "Athermal", "It occurs only at high temperature", "It does not depend on heat"], "answer": 0},
+  {"q": "What is the main difference between chemisorption and physical adsorption?", "options": ["A chemical bond is formed", "Van der Waals forces act", "It is always reversible", "Its heat is very small", "It occurs only at liquid surfaces"], "answer": 0},
+  {"q": "Respiratory distress syndrome in preterm infants is linked to a deficiency of what?", "options": ["Pulmonary surfactant", "Hemoglobin", "Albumin", "Bile acids", "Mucin"], "answer": 0},
+  {"q": "Which ion exchanger is used in hyperkalemia?", "options": ["Sodium polystyrene sulfonate", "Cholestyramine", "Activated charcoal", "Sevelamer", "Smectite"], "answer": 0},
+  {"q": "Who discovered chromatography?", "options": ["M.S. Tsvet", "D.I. Mendeleev", "A. Werner", "I. Langmuir", "J. Gibbs"], "answer": 0},
+  {"q": "How is the R~f~ value calculated?", "options": ["Distance of the substance / distance of the solvent front", "Solvent distance / substance distance", "Spot diameter / paper length", "Mass of substance / volume of solvent", "Time / distance"], "answer": 0},
+  {"q": "Which reagent is used to develop amino acids in paper chromatography?", "options": ["Ninhydrin", "Iodine", "Phenolphthalein", "Silver nitrate", "Fehling’s solution"], "answer": 0},
+  {"q": "Which type of chromatography separates proteins by molecular size?", "options": ["Gel filtration", "Ion-exchange", "Adsorption", "Gas chromatography", "Affinity"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "In a study of the adsorption of methylene blue, 0.5 g of activated charcoal was added to 50 mL of a 0.002 M solution. After equilibrium the concentration fell to 0.0004 M.", "ask": "Calculate the adsorption capacity of the charcoal (mmol/g). What does this experiment show for medicine?", "answer": "Γ = (C~0~ − C)·V / m = (0.002 − 0.0004) · 0.05 / 0.5 = 0.0016 · 0.1 = 0.00016 mol/g = 0.16 mmol/g. 80 % of the dye passed onto the charcoal. Because of this property, activated charcoal binds toxins, alkaloids and drugs in the gastrointestinal tract — it is effective in acute oral poisoning if given early (within 1 hour)."},
+  {"title": "Problem 2", "text": "An infant born at week 29 of pregnancy develops shortness of breath, nasal flaring and chest retractions a few hours after birth. The X-ray shows a “ground-glass” appearance of the lungs.", "ask": "What is the condition? What is its physicochemical basis and the principle of treatment?", "answer": "Neonatal respiratory distress syndrome (hyaline membrane disease). Pulmonary surfactant is produced in sufficient amounts only by about weeks 34–36 of pregnancy; in a preterm infant it is lacking, and surface tension in the alveoli remains high. By Laplace’s law (P = 2σ / r) small alveoli collapse on expiration (atelectasis). Treatment: surfactant preparation given into the trachea, respiratory support (CPAP); when there is a risk, glucocorticoids are given to the mother before delivery (they speed up surfactant synthesis)."},
+  {"title": "Problem 3", "text": "A blood sample from a newborn was examined by paper chromatography. The solvent front rose 12.0 cm above the start line, and a strong spot in the sample was located at 6.6 cm. Under these conditions the R~f~ of standard phenylalanine is 0.55.", "ask": "Calculate the R~f~ of the spot. What may the result indicate?", "answer": "R~f~ = 6.6 / 12.0 = 0.55 — it matches standard phenylalanine. A strong phenylalanine spot in the blood indicates that it is increased, that is, possible **phenylketonuria**. The diagnosis is confirmed by a quantitative method (tandem mass spectrometry or fluorimetry); treatment is a phenylalanine-restricted diet."}
+ ],
+ "cards": [
+  {"front": "Surface tension", "back": "Free surface energy per unit area, σ (J/m^2^)"},
+  {"front": "Surfactant", "back": "Lowers σ and accumulates at the surface; diphilic structure (soap, bile acids)"},
+  {"front": "Duclaux–Traube rule", "back": "Each added CH~2~ group increases surface activity 3–3.5 times"},
+  {"front": "Gibbs equation", "back": "Γ = −(C / RT)·(dσ / dC)"},
+  {"front": "Langmuir equation", "back": "Γ = Γ~∞~·K·C / (1 + K·C); monomolecular adsorption"},
+  {"front": "Freundlich equation", "back": "x / m = K·C^1/n^"},
+  {"front": "Chemisorption", "back": "Adsorption that forms a chemical bond, often irreversible"},
+  {"front": "Ion exchanger", "back": "A sorbent that exchanges its own ion for another ion in solution (cation or anion exchanger)"},
+  {"front": "Pulmonary surfactant", "back": "Lowers σ in the alveoli; its deficiency causes respiratory distress syndrome"},
+  {"front": "R~f~", "back": "Distance of the spot / distance of the solvent front"}
+ ]
+}
