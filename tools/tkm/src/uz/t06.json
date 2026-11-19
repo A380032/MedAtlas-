@@ -1,0 +1,112 @@
+{
+ "id": "06",
+ "no": 6,
+ "title": "Elektrokimyo asoslari. Elektr o‘tkazuvchanlik. Konduktometriya. Elektrod jarayonlari. Potensiallarning hosil bo‘lishi va turlari. Potensiometriya",
+ "goals": [
+  {"type": "p", "text": "Talabaga elektrolit eritmalarining elektr o‘tkazuvchanligi, konduktometriya va konduktometrik titrlash, elektrod, oksidlanish-qaytarilish, membrana va diffuziya potensiallarining hosil bo‘lishi, galvanik elementlar, elektrodlar va potensiometriya asoslari hamda elektrokimyoviy usullarning tibbiyotda qo‘llanilishi haqida bilim berish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["birinchi va ikkinchi tur o‘tkazgichlarni, solishtirma va molyar elektr o‘tkazuvchanlikni;", "Kolraush qonuni va Ostvaldning suyultirish qonunini;", "konduktometrik titrlash egri chiziqlarini;", "Nernst tenglamasi, standart vodorod elektrodi va standart potensiallarni;", "oksidlanish-qaytarilish, membrana va diffuziya potensiallarini;", "galvanik element, taqqoslash va indikator elektrodlarini, potensiometriyani."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["Nernst tenglamasi bo‘yicha elektrod va membrana potensialini hisoblash;", "galvanik elementning EYuK ini hisoblash va sxemasini yozish;", "oksidlanish-qaytarilish reaksiyasining yo‘nalishini potensiallar bo‘yicha aniqlash;", "elektrokimyoviy tibbiy tahlil natijalarini talqin qilish."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Nernst tenglamasi (25 °C): E = E° + (0,059 / n)·lg[Me^n+^]. Ionning konsentratsiyasi **10 marta** o‘zgarganda bir zaryadli ion uchun potensial **59 mV** ga (37 °C da 61 mV ga) o‘zgaradi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "**“Anod — oksidlanish, katod — qaytarilish”** (**A**nod va **O**ksidlanish — ikkalasi unli harf bilan, **K**atod va **Q**aytarilish — ikkalasi undosh bilan boshlanadi). Galvanik elementda anod — manfiy qutb."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Oksidlanish-qaytarilish reaksiyasi o‘z-o‘zidan **potensiali yuqori** juftning oksidlovchisi va **potensiali past** juftning qaytaruvchisi orasida boradi: ΔE > 0 bo‘lsa, ΔG = −nFΔE < 0."}
+ ],
+ "sections": [
+  {"title": "1. Elektrolit eritmalarining elektr o‘tkazuvchanligi", "blocks": [
+   {"type": "p", "text": "Elektr tokini o‘tkazuvchi moddalar ikki turga bo‘linadi: **birinchi tur o‘tkazgichlar** (metallar, grafit) — tokni elektronlar tashiydi; **ikkinchi tur o‘tkazgichlar** (elektrolit eritmalari va suyuqlanmalari) — tokni ionlar tashiydi. Organizm to‘qimalari ikkinchi tur o‘tkazgich hisoblanadi."},
+   {"type": "list", "ordered": false, "items": ["**Solishtirma elektr o‘tkazuvchanlik** (κ) — kesimi 1 m^2^ va uzunligi 1 m bo‘lgan eritma ustunining o‘tkazuvchanligi, S/m (simens/metr).", "**Molyar elektr o‘tkazuvchanlik** (λ) — 1 mol elektrolit tutgan eritmaning o‘tkazuvchanligi: λ = κ / C, S·m^2^/mol. Eritma suyultirilganda λ ortib, cheksiz suyultirilganda maksimal qiymatga (λ~∞~) yetadi.", "**Kolraush qonuni:** cheksiz suyultirilgan eritmada molyar o‘tkazuvchanlik kation va anion harakatchanliklari yig‘indisiga teng: λ~∞~ = λ~+~ + λ~−~.", "Kuchsiz elektrolitning **dissotsilanish darajasi**: α = λ / λ~∞~. **Ostvaldning suyultirish qonuni**: K = α^2^·C / (1 − α); α ≪ 1 bo‘lsa, α ≈ √(K / C)."]},
+   {"type": "p", "text": "H^+^ va OH^−^ ionlari boshqa ionlardan bir necha marta harakatchan: ular suv molekulalari zanjiri bo‘ylab proton “sakrashi” (estafeta mexanizmi) orqali harakatlanadi. Shuning uchun kislota va ishqor eritmalari tuz eritmalaridan yaxshiroq tok o‘tkazadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "To‘qimalarning elektr o‘tkazuvchanligi ulardagi suv va elektrolitlar miqdoriga bog‘liq: qon, limfa, orqa miya suyuqligi, mushak yaxshi, yog‘ to‘qimasi, suyak va quruq teri yomon o‘tkazadi. Bunga **bioimpedans tahlili** (tana tarkibi — yog‘ va suv ulushini aniqlash), **reografiya** (a’zoning qon bilan to‘lishi) va **elektroforez** (dori ionlarini teri orqali kiritish) asoslangan."}]}
+  ]},
+  {"title": "2. Konduktometriya. Konduktometrik titrlash", "blocks": [
+   {"type": "p", "text": "**Konduktometriya** — eritmaning elektr o‘tkazuvchanligini o‘lchashga asoslangan tahlil usuli. **To‘g‘ridan-to‘g‘ri konduktometriya** bilan suvning tozaligi, eritmadagi tuz miqdori, kuchsiz elektrolitning dissotsilanish konstantasi aniqlanadi. **Konduktometrik titrlash**da ekvivalent nuqta o‘tkazuvchanlik grafigining sinish nuqtasi bo‘yicha topiladi; u rangli va loyqa eritmalarda (indikator ishlamaydigan joyda) qulay."},
+   {"type": "p", "text": "HCl ni NaOH bilan titrlashda: harakatchan H^+^ ionlari kam harakatchan Na^+^ ionlari bilan almashadi, o‘tkazuvchanlik **kamayadi**; ekvivalent nuqtada minimal bo‘ladi; so‘ng ortiqcha harakatchan OH^−^ ionlari hisobiga yana **ortadi**."},
+   {"type": "img", "src": "data/img/tkm/t06_kondukt.webp", "w": 1400, "h": 900, "label": "Rasm 6.1", "caption": "Konduktometrik titrlash egri chiziqlari: kuchli kislotani (HCl) va kuchsiz kislotani (CH~3~COOH) NaOH bilan titrlash; ekvivalent nuqta — chiziqlarning kesishgan joyi (ionlar harakatchanligi asosida hisoblangan)."}
+  ]},
+  {"title": "3. Elektrod potensiali. Nernst tenglamasi", "blocks": [
+   {"type": "p", "text": "Metall o‘z tuzi eritmasiga tushirilganda metall va eritma chegarasida **qo‘sh elektr qavat** hosil bo‘ladi: faol metallar (Zn) ion holida eritmaga o‘tib, o‘zida manfiy zaryad qoldiradi; kam faol metallar (Cu) esa eritmadagi ionlarini o‘ziga qabul qilib, musbat zaryadlanadi. Shu chegarada yuzaga kelgan potensiallar farqi **elektrod potensiali** deyiladi."},
+   {"type": "p", "text": "Elektrod potensialining absolyut qiymatini o‘lchab bo‘lmaydi, shuning uchun u **standart vodorod elektrodi**ga (E° = 0, p(H~2~) = 101,3 kPa, a(H^+^) = 1 mol/l) nisbatan o‘lchanadi. Standart sharoitda o‘lchangan qiymat **standart elektrod potensiali** (E°) deyiladi; metallar E° ortib borish tartibida joylashtirilsa, **kuchlanishlar qatori** hosil bo‘ladi."},
+   {"type": "p", "text": "**Nernst tenglamasi:** E = E° + (R·T / n·F)·ln[Me^n+^] yoki 25 °C da E = E° + (0,059 / n)·lg[Me^n+^], bunda n — elektronlar soni, F = 96 485 Kl/mol (Faradey soni)."},
+   {"type": "table", "title": "Jadval 6.1. Ayrim elektrodlarning standart potensiallari (25 °C)", "head": ["Elektrod jarayoni", "E°, V"], "rows": [["Li^+^ + e^−^ → Li", "−3,04"], ["Zn^2+^ + 2e^−^ → Zn", "−0,76"], ["Fe^2+^ + 2e^−^ → Fe", "−0,44"], ["2H^+^ + 2e^−^ → H~2~", "0,00"], ["Cu^2+^ + 2e^−^ → Cu", "+0,34"], ["Ag^+^ + e^−^ → Ag", "+0,80"], ["Au^3+^ + 3e^−^ → Au", "+1,50"]]}
+  ]},
+  {"title": "4. Oksidlanish-qaytarilish, membrana va diffuziya potensiallari", "blocks": [
+   {"type": "p", "text": "**Oksidlanish-qaytarilish (redoks) potensiali** — inert elektrod (platina) bir moddaning oksidlangan va qaytarilgan shakllari tutgan eritmaga tushirilganda hosil bo‘ladi. **Nernst–Peters tenglamasi:** E = E° + (0,059 / n)·lg([Ox] / [Red]). Masalan, Fe^3+^/Fe^2+^ jufti uchun E° = +0,77 V."},
+   {"type": "p", "text": "Biokimyoda pH = 7 dagi standart potensiallar (E°′) ishlatiladi. Redoks reaksiyasining Gibbs energiyasi: ΔG = −n·F·ΔE. Reaksiya potensiali past (manfiyroq) juftdan potensiali yuqori juftga tomon o‘z-o‘zidan boradi."},
+   {"type": "p", "text": "**Diffuziya potensiali** — har xil konsentratsiyali yoki tarkibli ikki eritma chegarasida ionlar harakatchanligi har xil bo‘lgani uchun hosil bo‘ladi (masalan, harakatchan H^+^ Cl^−^ dan oldinga o‘tib ketadi). Organizmda shikastlangan va sog‘lom to‘qima orasidagi **shikastlanish potensiali** shu tabiatga ega."},
+   {"type": "p", "text": "**Membrana potensiali** — tanlab o‘tkazuvchi membrananing ikki tomonidagi ionlar konsentratsiyasi farqi tufayli yuzaga keladi. Bitta ion uchun u Nernst tenglamasi bilan hisoblanadi; 37 °C da kaliy uchun: E~K~ = 61·lg([K^+^]~tashq~ / [K^+^]~ichki~) = 61·lg(4 / 140) ≈ −94 mV. Hujayraning haqiqiy dam olish potensiali (≈ −70 mV) bir necha ion (K^+^, Na^+^, Cl^−^) hissasidan va Na^+^/K^+^-ATFaza ishidan kelib chiqadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Membrana potensiali qo‘zg‘aluvchan to‘qimalar ishining asosi. **Giperkaliyemiya**da [K^+^]~tashq~ ortib, E~K~ kamroq manfiy bo‘ladi — hujayra depolyarizatsiyalanadi, natriy kanallari faolsizlanadi, yurak o‘tkazuvchanligi buziladi. EKG, EEG va EMG — to‘qimalar biopotensiallarini yozib olishga asoslangan."}]}
+  ]},
+  {"title": "5. Galvanik elementlar va elektrodlar. Potensiometriya", "blocks": [
+   {"type": "p", "text": "**Galvanik element** — oksidlanish-qaytarilish reaksiyasining kimyoviy energiyasini elektr energiyasiga aylantiradigan qurilma. **Daniel–Yakobi elementi:** (−) Zn | ZnSO~4~ || CuSO~4~ | Cu (+). Anodda (Zn) oksidlanish: Zn − 2e^−^ → Zn^2+^; katodda (Cu) qaytarilish: Cu^2+^ + 2e^−^ → Cu. Elektr yurituvchi kuch: EYuK = E~katod~ − E~anod~ = 0,34 − (−0,76) = 1,10 V."},
+   {"type": "table", "title": "Jadval 6.2. Potensiometriyada ishlatiladigan elektrodlar", "head": ["Elektrod", "Turi", "Ishlatilishi"], "rows": [["Kumush xlorid Ag | AgCl, KCl", "taqqoslash (potensiali barqaror, ≈ +0,22 V)", "pH-metr va ionometrlarda"], ["Kalomel Hg | Hg~2~Cl~2~, KCl", "taqqoslash (to‘yingan KCl da ≈ +0,24 V)", "laboratoriya o‘lchovlari"], ["Shisha elektrod", "indikator (H^+^ ga sezgir)", "qon, me’da shirasi, siydik pH i"], ["Ion-selektiv elektrodlar", "indikator (K^+^, Na^+^, Ca^2+^, Cl^−^)", "biokimyoviy analizatorlarda elektrolitlar"], ["Platina elektrod", "redoks indikator", "oksidlanish-qaytarilish titrlashi"]]},
+   {"type": "p", "text": "**Potensiometriya** — indikator elektrod potensialini (EYuK ni) o‘lchashga asoslangan tahlil usuli. **To‘g‘ridan-to‘g‘ri potensiometriya** (pH-metriya, ionometriya): pH = (E − E°) / 0,059. **Potensiometrik titrlash**da ekvivalent nuqta potensialning keskin sakrashi bo‘yicha aniqlanadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Zamonaviy **qon gazlari analizatori** bir tomchi qonda shisha elektrod bilan pH, maxsus elektrodlar bilan pO~2~ va pCO~2~, ion-selektiv elektrodlar bilan Na^+^, K^+^, Ca^2+^ ni bir necha daqiqada o‘lchaydi. **Glyukometrlar** esa glyukozaoksidaza ishtirokidagi reaksiyaning tokini o‘lchaydi (amperometriya)."}]}
+  ]},
+  {"title": "6. Tibbiyotda elektrokimyoviy usullar", "blocks": [
+   {"type": "table", "title": "Jadval 6.3. Elektrokimyoviy usullarning tibbiy qo‘llanilishi", "head": ["Usul", "Asosi", "Qo‘llanilishi"], "rows": [["pH-metriya", "shisha elektrod potensiali", "qon, me’da ichi, siydik pH i"], ["Ionometriya", "ion-selektiv elektrod", "qon elektrolitlari (Na^+^, K^+^, Ca^2+^)"], ["Konduktometriya", "eritma o‘tkazuvchanligi", "infuzion eritmalar, ter tahlili (mukovissidozda Cl^−^)"], ["Amperometriya, biosensorlar", "elektrod reaksiyasi toki", "glyukometr, laktat analizatori"], ["Elektroforez", "zaryadli zarrachalarning maydonda harakati", "qon oqsillari fraksiyalari, gemoglobin turlari"], ["Elektrokardiografiya, elektroensefalografiya", "biopotensiallarni yozish", "yurak va miya faoliyatini baholash"]]}
+  ]},
+  {"title": "7. Biologik oksidlanishda potensiallar va energiya (mustaqil ish)", "blocks": [
+   {"type": "p", "text": "Mitoxondriya **nafas zanjiri** — tartib bilan joylashgan redoks juftlar qatori: elektronlar standart potensiali past bo‘lgan NADH dan potensiali eng yuqori bo‘lgan kislorodga o‘tadi. Har bir bosqichda ajralgan energiyaning bir qismi protonlarni membranadan haydashga sarflanadi va ATF sintezida ishlatiladi."},
+   {"type": "img", "src": "data/img/tkm/t06_nafas.webp", "w": 1400, "h": 800, "label": "Rasm 6.2", "caption": "Nafas zanjiri redoks juftlarining standart potensiallari (E°′, pH 7): elektronlar NAD^+^/NADH (−0,32 V) dan O~2~/H~2~O (+0,82 V) ga tomon oqadi (sxema)."},
+   {"type": "p", "text": "**Hisob:** ΔE°′ = 0,82 − (−0,32) = 1,14 V; ΔG°′ = −n·F·ΔE°′ = −2 · 96 485 · 1,14 ≈ −220 000 J/mol = **−220 kJ/mol**. Bu energiya bilan nazariy jihatdan bir necha ATF (har biri ≈ 30,5 kJ/mol) hosil bo‘lishi mumkin; amalda 1 juft elektron NADH dan O~2~ ga o‘tganda ≈ 2,5 ATF sintezlanadi."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: galvanik element sxemasini tuzish va EYuK ni hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Jadvaldan ikki elektrodning standart potensiallarini oling.", "Potensiali pastroq elektrod — anod (−), yuqorirog‘i — katod (+).", "Sxemani yozing: anod | eritma || eritma | katod.", "Anod va katoddagi yarim reaksiyalarni yozing va elektronlarni tenglang.", "EYuK = E~katod~ − E~anod~ ni hisoblang; nostandart konsentratsiyada Nernst tenglamasidan foydalaning."]}]},
+  {"title": "Ko‘nikma: membrana potensialini Nernst tenglamasi bo‘yicha hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Ionning hujayradan tashqari va ichki konsentratsiyalarini yozing.", "Harorat 37 °C bo‘lsa, koeffitsient 61 mV (bir zaryadli ion uchun), ikki zaryadli ion uchun 30,5 mV.", "E = (61 / z)·lg([ion]~tashq~ / [ion]~ichki~) ni hisoblang.", "Ishorani talqin qiling: kation uchun manfiy qiymat ichki tomon manfiyligini bildiradi.", "Konsentratsiya o‘zgarganda (masalan, giperkaliyemiya) potensial qanday o‘zgarishini baholang."]}]}
+ ],
+ "questions": [
+  "Birinchi va ikkinchi tur o‘tkazgichlarning farqi nimada?",
+  "Solishtirma va molyar elektr o‘tkazuvchanlik qanday bog‘langan?",
+  "Kolraush qonuni va Ostvaldning suyultirish qonunini tushuntiring.",
+  "Nima uchun H^+^ va OH^−^ ionlari eng harakatchan?",
+  "Konduktometrik titrlash egri chizig‘i qanday ko‘rinishga ega va nima uchun?",
+  "Elektrod potensiali qanday hosil bo‘ladi? Standart vodorod elektrodi nima?",
+  "Nernst tenglamasini yozing va tushuntiring.",
+  "Redoks potensiali va reaksiya yo‘nalishi qanday bog‘langan?",
+  "Membrana va diffuziya potensiallari qanday hosil bo‘ladi?",
+  "Daniel–Yakobi elementining ishlash prinsipini tushuntiring.",
+  "Taqqoslash va indikator elektrodlariga misollar keltiring.",
+  "Potensiometriyaning tibbiyotda qo‘llanilishi qanday?",
+  "Nafas zanjirida energiya qanday ajraladi?"
+ ],
+ "quiz": [
+  {"q": "Ikkinchi tur o‘tkazgichlarda tokni nima tashiydi?", "options": ["Ionlar", "Elektronlar", "Neytronlar", "Molekulalar", "Protonlar faqat"], "answer": 0},
+  {"q": "Molyar elektr o‘tkazuvchanlik eritma suyultirilganda qanday o‘zgaradi?", "options": ["Ortadi", "Kamayadi", "O‘zgarmaydi", "Nolga teng bo‘ladi", "Avval ortib, keyin kamayadi"], "answer": 0},
+  {"q": "Qaysi ion eng katta harakatchanlikka ega?", "options": ["H^+^", "Na^+^", "K^+^", "Cl^−^", "Ca^2+^"], "answer": 0},
+  {"q": "HCl ni NaOH bilan konduktometrik titrlashda ekvivalent nuqtagacha o‘tkazuvchanlik qanday o‘zgaradi?", "options": ["Kamayadi", "Ortadi", "O‘zgarmaydi", "Keskin ortadi", "Tebranadi"], "answer": 0},
+  {"q": "Standart vodorod elektrodining potensiali qancha?", "options": ["0 V", "+0,34 V", "−0,76 V", "+1,10 V", "+0,22 V"], "answer": 0},
+  {"q": "25 °C da bir zaryadli ion konsentratsiyasi 10 marta o‘zgarsa, elektrod potensiali qanchaga o‘zgaradi?", "options": ["59 mV", "10 mV", "118 mV", "30 mV", "1 V"], "answer": 0},
+  {"q": "Daniel–Yakobi elementining EYuK i qancha?", "options": ["1,10 V", "0,34 V", "0,76 V", "0,42 V", "2,20 V"], "answer": 0},
+  {"q": "Galvanik elementda anodda qanday jarayon boradi?", "options": ["Oksidlanish", "Qaytarilish", "Cho‘kish", "Neytrallanish", "Gidroliz"], "answer": 0},
+  {"q": "pH ni o‘lchashda indikator elektrod sifatida nima ishlatiladi?", "options": ["Shisha elektrod", "Kumush xlorid elektrod", "Kalomel elektrod", "Rux elektrod", "Mis elektrod"], "answer": 0},
+  {"q": "Qaysi elektrod taqqoslash elektrodi hisoblanadi?", "options": ["Kumush xlorid elektrod", "Shisha elektrod", "Kaliyga selektiv elektrod", "Platina redoks elektrodi", "Natriyga selektiv elektrod"], "answer": 0},
+  {"q": "37 °C da [K^+^]~tashq~ = 4 va [K^+^]~ichki~ = 140 mmol/l bo‘lsa, kaliyning muvozanat potensiali taxminan qancha?", "options": ["−94 mV", "+94 mV", "−70 mV", "+61 mV", "0 mV"], "answer": 0},
+  {"q": "Redoks reaksiya o‘z-o‘zidan qaysi yo‘nalishda boradi?", "options": ["Potensiali past juftdan potensiali yuqori juftga", "Potensiali yuqori juftdan past juftga", "Potensiallar teng bo‘lganda", "Faqat qizdirilganda", "Potensialga bog‘liq emas"], "answer": 0},
+  {"q": "ΔG va EYuK qanday bog‘langan?", "options": ["ΔG = −nFΔE", "ΔG = nFΔE", "ΔG = −RT/ΔE", "ΔG = ΔE / nF", "ΔG = ΔH − ΔE"], "answer": 0},
+  {"q": "Nafas zanjirida elektronlarning oxirgi akseptori qaysi?", "options": ["Kislorod", "NAD^+^", "FAD", "Sitoxrom c", "Ubixinon"], "answer": 0},
+  {"q": "Glyukometrlar qaysi elektrokimyoviy usulga asoslangan?", "options": ["Amperometriya", "Konduktometriya", "Kalorimetriya", "Kriometriya", "Gravimetriya"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemorda qon zardobida K^+^ = 7,0 mmol/l, EKG da baland, uchli T tishchalari. Hujayra ichidagi kaliy konsentratsiyasi 140 mmol/l deb oling (37 °C).", "ask": "Kaliyning muvozanat potensiali me’yorga (K^+^ = 4 mmol/l) nisbatan qanday o‘zgaradi? Klinik ahamiyatini tushuntiring.", "answer": "Me’yorda: E~K~ = 61·lg(4 / 140) ≈ −94 mV. Giperkaliyemiyada: E~K~ = 61·lg(7 / 140) = 61·lg0,05 ≈ −79 mV. Membrana kamroq manfiy (depolyarizatsiyalangan), natriy kanallari faolsizlanadi, yurak qo‘zg‘aluvchanligi va o‘tkazuvchanligi buziladi; asistoliya xavfi bor. Shoshilinch davo: kalsiy glyukonat (membranani barqarorlashtiradi), insulin + glyukoza (K^+^ ni hujayraga kiritadi)."},
+  {"title": "Masala 2", "text": "pH-metr kumush xlorid taqqoslash elektrodi va shisha elektrod bilan qon namunasining pH ini o‘lchadi. Elektrod sistemasining tuzilishiga ko‘ra pH = (E − 0,200) / 0,059 (25 °C), o‘lchangan EYuK E = 0,637 V.", "ask": "Namuna pH ini hisoblang va baholang.", "answer": "pH = (0,637 − 0,200) / 0,059 = 0,437 / 0,059 ≈ 7,41 — arterial qon pH i me’yorida (7,35–7,45)."},
+  {"title": "Masala 3", "text": "Bemorning tishida oltin toj va yonidagi tishda amalgama (simob-kumush-qalay qotishmasi) plombasi bor. U og‘zida metall ta’mi va vaqti-vaqti bilan “tok urishi”ni sezadi.", "ask": "Bu hodisaning elektrokimyoviy sababini tushuntiring.", "answer": "So‘lak — elektrolit eritmasi; standart potensiallari har xil bo‘lgan ikki metall (oltin — yuqori, amalgama tarkibidagi qalay — past potensialli) so‘lak orqali **galvanik element** hosil qiladi (galvanizm). Potensiali past metall anod bo‘lib korroziyaga uchraydi, ionlari so‘lakka o‘tadi (metall ta’mi), metallar tegib ketganda tok o‘tadi. Og‘iz bo‘shlig‘ida bir xil yoki elektrokimyoviy jihatdan mos materiallar ishlatish tavsiya etiladi."}
+ ],
+ "cards": [
+  {"front": "Ikkinchi tur o‘tkazgich", "back": "Tokni ionlar tashiydi: elektrolit eritmalari, to‘qimalar"},
+  {"front": "Kolraush qonuni", "back": "λ~∞~ = λ~+~ + λ~−~"},
+  {"front": "Ostvaldning suyultirish qonuni", "back": "K = α^2^·C / (1 − α)"},
+  {"front": "Konduktometrik titrlash", "back": "Ekvivalent nuqta o‘tkazuvchanlik grafigining sinishidan topiladi"},
+  {"front": "Nernst tenglamasi", "back": "E = E° + (0,059 / n)·lg[Me^n+^] (25 °C)"},
+  {"front": "Standart vodorod elektrodi", "back": "E° = 0; barcha elektrod potensiallari unga nisbatan o‘lchanadi"},
+  {"front": "Daniel–Yakobi elementi", "back": "Zn | ZnSO~4~ || CuSO~4~ | Cu; EYuK = 1,10 V"},
+  {"front": "Shisha elektrod", "back": "H^+^ ga sezgir indikator elektrod — pH-metrda"},
+  {"front": "Membrana potensiali", "back": "Membrana ikki tomonidagi ion konsentratsiyalari farqidan hosil bo‘ladi; K^+^ uchun ≈ −94 mV"},
+  {"front": "ΔG = −nFΔE", "back": "Redoks reaksiyaning Gibbs energiyasi; nafas zanjirida ≈ −220 kJ/mol"}
+ ]
+}

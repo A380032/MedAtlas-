@@ -1,0 +1,114 @@
+{
+ "id": "09",
+ "no": 9,
+ "title": "Organik kimyo asoslari. Organik birikmalarning asosiy sinflari",
+ "goals": [
+  {"type": "p", "text": "Talabaga organik birikmalarning tuzilish nazariyasini, izomeriya va stereoizomeriyani, reaksion qobiliyatni belgilovchi elektron effektlarni (induktiv va mezomer), organik birikmalarning kislotaliligi va asosliligini, oksidlanish-qaytarilish reaksiyalarini, uglevodorodlar va geteroatom tutuvchi birikmalar sinflarini hamda ularning tibbiy ahamiyatini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["A.M. Butlerovning kimyoviy tuzilish nazariyasini;", "struktura va fazoviy izomeriyani, xirallik, enantiomerlar, D/L va R/S nomenklaturasini;", "induktiv va mezomer effektlar, tutashish va aromatiklikni;", "organik birikmalarning Brensted va Lyuis bo‘yicha kislotaliligi va asosliligini;", "spirtlar, aldegidlar va boshqa birikmalarning oksidlanishi va qaytarilishini;", "uglevodorodlar va asosiy funksional guruhli birikmalar sinflarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["birikmadagi funksional guruhlarni va sinfini aniqlash;", "xiral uglerod atomini topish va enantiomerlarni chizish;", "o‘rinbosarlarning kislotalilik va asoslilikka ta’sirini elektron effektlar bilan tushuntirish;", "organik moddalarning organizmdagi oksidlanishini (etanol, metanol) tibbiy holatlar bilan bog‘lash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Tabiiy **aminokislotalar — L**, tabiiy **monosaxaridlar — D** qatoriga mansub. Enantiomerlar fizik xossalari bilan bir xil, lekin biologik ta’siri butunlay boshqacha bo‘lishi mumkin (talidomid fojiasi)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Oksidlanish zinapoyasi: **spirt → aldegid → kislota → CO~2~** (birlamchi spirt); ikkilamchi spirt → **keton**. Organizmda: etanol → atsetaldegid → sirka kislota (atsetil-KoA)."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Metanol o‘z-o‘zidan kam zaharli, lekin organizmda **formaldegid** va **chumoli kislotaga** oksidlanadi: ko‘rish nervi shikastlanadi (ko‘rlik) va og‘ir metabolik atsidoz rivojlanadi. Antidot — fomepizol yoki etanol (alkogoldegidrogenaza uchun raqobatlashadi)."}
+ ],
+ "sections": [
+  {"title": "1. Organik birikmalarning tuzilish nazariyasi", "blocks": [
+   {"type": "p", "text": "**Organik kimyo** — uglerod birikmalari va ularning hosilalari kimyosi. Ma’lum moddalarning 90 % dan ortig‘i organik birikmalar; barcha biomolekulalar va dorilarning aksariyati shular jumlasidan."},
+   {"type": "list", "ordered": true, "items": ["Molekuladagi atomlar valentligiga muvofiq ma’lum **tartibda** birikkan; bu tartib **kimyoviy tuzilish** deyiladi (A.M. Butlerov, 1861).", "Moddaning xossalari faqat tarkibiga emas, **tuzilishiga** ham bog‘liq — shu sababli **izomerlar** mavjud.", "Molekuladagi atomlar va atom guruhlari bir-biriga **o‘zaro ta’sir** qiladi.", "Tuzilishni moddaning xossalaridan va aksincha, xossalarni tuzilishdan bilish mumkin."]},
+   {"type": "p", "text": "Uglerod atomi organik birikmalarda doimo **to‘rt valentli**; u **sp^3^** (tetraedr, 109,5°, alkanlar), **sp^2^** (tekis, 120°, alkenlar, benzol, karbonil guruh) va **sp** (chiziqli, 180°, alkinlar) gibridlanishda bo‘ladi. Uglerod atomlari o‘zaro uzun zanjirlar va halqalar hosil qila oladi — organik birikmalarning cheksiz xilma-xilligi shundan."}
+  ]},
+  {"title": "2. Izomeriya va stereoizomeriya", "blocks": [
+   {"type": "table", "title": "Jadval 9.1. Izomeriya turlari", "head": ["Turi", "Mohiyati", "Misol"], "rows": [["Zanjir izomeriyasi", "uglerod skeleti har xil", "butan va izobutan"], ["Holat izomeriyasi", "funksional guruh yoki qo‘sh bog‘ o‘rni har xil", "propanol-1 va propanol-2"], ["Sinflararo izomeriya", "funksional guruh har xil", "etanol va dimetil efir (C~2~H~6~O)"], ["Tautomeriya", "izomerlar o‘zaro tez o‘tib turadi", "keto-enol tautomeriya, laktim-laktam (nuklein asoslari)"], ["Geometrik (sis-trans)", "qo‘sh bog‘ yoki halqaga nisbatan o‘rinbosarlar joylashuvi", "malein (sis) va fumar (trans) kislotalar"], ["Optik", "xiral markaz tufayli molekula o‘zining ko‘zgudagi aksiga ustma-ust tushmaydi", "L- va D-alanin, L- va D-glitseraldegid"]]},
+   {"type": "p", "text": "**Xirallik** — molekulaning o‘z ko‘zgu aksi bilan ustma-ust tushmasligi (o‘ng va chap qo‘l kabi). Ko‘pincha uning sababi — to‘rtta har xil o‘rinbosarli **asimmetrik (xiral) uglerod atomi**. Bir-birining ko‘zgu aksi bo‘lgan stereoizomerlar **enantiomerlar** deyiladi: ular qutblangan yorug‘lik tekisligini bir xil burchakka, lekin qarama-qarshi tomonga buradi; teng miqdordagi aralashmasi (**rasemat**) optik faol emas."},
+   {"type": "img", "src": "data/img/tkm/t09_alanin.webp", "w": 1400, "h": 600, "label": "Rasm 9.1", "caption": "Alanin enantiomerlari: L-alanin (S) va D-alanin (R) — bir-birining ko‘zgu aksi; xiral markaz — α-uglerod atomi (struktura formulalar, RDKit dasturida chizilgan)."},
+   {"type": "p", "text": "**Nomenklatura:** **D/L** — glitseraldegidga nisbatan (Fisher proyeksiyasida xiral markazdagi OH yoki NH~2~ o‘ngda — D, chapda — L); **R/S** — o‘rinbosarlar ustunligi bo‘yicha (Kan–Ingold–Prelog qoidasi). Diastereomerlar — enantiomer bo‘lmagan stereoizomerlar (masalan, glyukoza va galaktoza)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Talidomid fojiasi** (1957–1961): homilador ayollarga tinchlantiruvchi sifatida berilgan dori rasemat edi; enantiomerlardan biri tinchlantiruvchi, ikkinchisi **teratogen** bo‘lib, ≈ 10 000 bola qo‘l-oyoq nuqsonlari bilan tug‘ildi (organizmda enantiomerlar o‘zaro o‘tadi). Hozir ko‘p dorilar faol enantiomer holida chiqariladi: **levodopa** (L-DOFA), **levotiroksin**, **ezomeprazol**, **levosetirizin**."}]}
+  ]},
+  {"title": "3. Reaksion qobiliyat. Elektron effektlar", "blocks": [
+   {"type": "p", "text": "Molekuladagi elektron zichligining taqsimlanishi uning reaksion qobiliyatini belgilaydi. Elektron zichligining siljishi ikki turdagi elektron effekt orqali ifodalanadi."},
+   {"type": "list", "ordered": false, "items": ["**Induktiv effekt (I)** — elektron zichligining σ-bog‘lar zanjiri bo‘ylab siljishi; masofa ortishi bilan tez so‘nadi. **−I**: elektromanfiy atom va guruhlar elektronni o‘ziga tortadi (F, Cl, OH, NH~2~, NO~2~, COOH). **+I**: alkil guruhlar elektron beradi (CH~3~, C~2~H~5~).", "**Mezomer effekt (M)** — elektron zichligining tutash π-sistema bo‘ylab siljishi; zanjir bo‘ylab so‘nmasdan uzatiladi. **+M**: bo‘linmagan juftli guruhlar elektronni π-sistemaga beradi (−OH, −NH~2~, −OR, galogenlar). **−M**: elektronni π-sistemadan tortadi (C=O, COOH, NO~2~, C≡N)."]},
+   {"type": "p", "text": "**Tutashish** — π-bog‘lar yoki π-bog‘ va bo‘linmagan juftning bitta delokallashgan elektron bulutini hosil qilishi; u molekula energiyasini kamaytirib, barqarorligini oshiradi. **Aromatiklik** (Hyukkel qoidasi): tekis halqali tutash sistema (4n + 2) π-elektronga ega bo‘lsa, alohida barqaror bo‘ladi — benzol (6 π-elektron), piridin, pirrol, purin asoslari."}
+  ]},
+  {"title": "4. Organik birikmalarning kislotaliligi va asosliligi", "blocks": [
+   {"type": "p", "text": "**Brensted nazariyasi:** kislota — proton donori, asos — proton akseptori. **Lyuis nazariyasi:** kislota — elektron jufti akseptori, asos — elektron jufti donori. Kislotalik markazi turiga ko‘ra OH-, SH-, NH- va CH-kislotalar farqlanadi; kislota kuchi uning qo‘shma asosi (anioni) barqarorligi bilan belgilanadi."},
+   {"type": "table", "title": "Jadval 9.2. Ayrim organik birikmalarning kislotaliligi", "head": ["Birikma", "pK~a~", "Izoh"], "rows": [["Etanol C~2~H~5~OH", "≈ 16", "suvdan kuchsiz kislota; ishqor bilan tuz hosil qilmaydi"], ["Fenol C~6~H~5~OH", "≈ 10", "fenoksid-ion benzol halqasi bilan tutashib barqarorlashadi (+M); ishqorlar bilan tuz hosil qiladi"], ["Sirka kislota CH~3~COOH", "4,76", "karboksilat-anion rezonans bilan barqarorlashadi"], ["Trixlorsirka kislota CCl~3~COOH", "≈ 0,7", "uchta Cl ning −I effekti anionni kuchli barqarorlashtiradi"], ["Etantiol C~2~H~5~SH", "≈ 10,6", "SH-kislotalar spirtlardan kuchli"]]},
+   {"type": "p", "text": "**Asoslilik** asosan azotli birikmalarga xos (bo‘linmagan elektron jufti). Alifatik aminlar ammiakdan kuchli asos (+I effekt): CH~3~NH~3~^+^ uchun pK~a~ ≈ 10,6, NH~4~^+^ uchun 9,25. Anilin esa juda kuchsiz asos (C~6~H~5~NH~3~^+^ uchun pK~a~ ≈ 4,6), chunki azotning elektron jufti benzol halqasi bilan tutashgan (+M)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Dorilarning ionlanish darajasi ularning so‘rilishini belgilaydi: membranadan asosan **ionlanmagan** shakl o‘tadi. Kuchsiz kislotalar (aspirin, pK~a~ ≈ 3,5) kislotali me’dada ko‘proq ionlanmagan va qisman shu yerda so‘riladi; kuchsiz asoslar (ko‘plab alkaloidlar) ichakning ishqoriyroq muhitida yaxshi so‘riladi. Zaharlanishda siydikni ishqorlash kuchsiz kislotalarning (salitsilatlar, fenobarbital) chiqarilishini tezlashtiradi."}]}
+  ]},
+  {"title": "5. Organik birikmalarning oksidlanishi va qaytarilishi", "blocks": [
+   {"type": "p", "text": "Organik kimyoda **oksidlanish** — molekulaga kislorod qo‘shilishi yoki vodorod ajralishi, **qaytarilish** — aksincha. Organizmda bunday reaksiyalarni **degidrogenazalar** katalizlaydi; vodorod tashuvchilari — NAD^+^, NADF^+^ va FAD."},
+   {"type": "list", "ordered": false, "items": ["Birlamchi spirt → aldegid → karbon kislota: CH~3~CH~2~OH → CH~3~CHO → CH~3~COOH.", "Ikkilamchi spirt → keton: CH~3~CH(OH)CH~3~ → CH~3~COCH~3~ (atseton).", "Laktat ⇄ piruvat (laktatdegidrogenaza, NAD^+^/NADH).", "Tiollar oksidlanib disulfidlar hosil qiladi: 2R−SH → R−S−S−R (sistein → sistin, oqsillarda disulfid ko‘priklar)."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Etanol jigarda **alkogoldegidrogenaza** bilan atsetaldegidga, so‘ng **aldegiddegidrogenaza** bilan sirka kislotaga oksidlanadi. Atsetaldegid to‘planishi yuz qizarishi, ko‘ngil aynishi va yurak urishini chaqiradi — **disulfiram** aldegiddegidrogenazani to‘sib, aynan shu holatni yuzaga keltiradi va alkogolizmni davolashda ishlatiladi."}]}
+  ]},
+  {"title": "6. Uglevodorodlar", "blocks": [
+   {"type": "table", "title": "Jadval 9.3. Uglevodorodlar sinflari", "head": ["Sinf", "Umumiy formula / gibridlanish", "Xarakterli reaksiya", "Tibbiy ahamiyati"], "rows": [["Alkanlar", "C~n~H~2n+2~, sp^3^", "radikal o‘rin olish (S~R~)", "vazelin, parafin — surtmalar asosi; metan, propan — maishiy gazlar"], ["Alkenlar", "C~n~H~2n~, sp^2^", "elektrofil birikish (A~E~), Markovnikov qoidasi", "etilen — o‘simlik gormoni; polietilen tibbiy buyumlar"], ["Alkinlar", "C~n~H~2n−2~, sp", "birikish", "atsetilen — payvandlash, sintez"], ["Siklik uglevodorodlar", "C~n~H~2n~ (sikloalkanlar)", "halqa kattaligiga bog‘liq", "steroidlar skeleti (siklopentanperhidrofenantren)"], ["Arenlar", "benzol C~6~H~6~, sp^2^, aromatik", "elektrofil o‘rin olish (S~E~)", "benzol — kanserogen (leykoz); benzpiren — tamaki tutunidagi kanserogen"]]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Galogenli uglevodorodlar ham amaliyotda uchraydi: **xloroform** va **galotan** — ilgari narkoz uchun ishlatilgan, jigarga toksik; **xloretil** — mahalliy sovituvchi og‘riqsizlantiruvchi. Ular yog‘da yaxshi eriydi va asab tizimiga kuchli ta’sir qiladi."}]}
+  ]},
+  {"title": "7. Kislorod va boshqa geteroatom tutuvchi birikmalar sinflari", "blocks": [
+   {"type": "table", "title": "Jadval 9.4. Asosiy funksional guruhlar va birikmalar sinflari", "head": ["Sinf", "Funksional guruh", "Misol", "Tibbiy ahamiyati"], "rows": [["Spirtlar", "−OH (alifatik)", "etanol, glitserin", "70 % li etanol — antiseptik; glitserin — dori asoslari"], ["Fenollar", "−OH (aromatik)", "fenol, rezorsin", "dezinfeksiya, antiseptik"], ["Oddiy efirlar", "R−O−R′", "dietil efir", "ilgari narkoz uchun"], ["Aldegidlar", "−CHO", "formaldegid", "formalin (40 %) — to‘qimalarni fiksatsiya qilish"], ["Ketonlar", "C=O", "atseton", "keton tanachalaridan biri (diabetik ketoatsidoz)"], ["Karbon kislotalar", "−COOH", "sirka, sut, limon kislota", "metabolitlar (Krebs sikli)"], ["Murakkab efirlar", "−COO−R", "atsetilsalitsil kislota, lipidlar", "dorilar, yog‘lar"], ["Aminlar", "−NH~2~", "dofamin, gistamin", "biogen aminlar — mediatorlar"], ["Amidlar", "−CO−NH~2~", "mochevina, peptid bog‘i", "oqsillar, azot almashinuvi"], ["Tiollar", "−SH", "sistein, glutation", "antioksidant, detoksikatsiya"]]}
+  ]},
+  {"title": "8. Kraun efirlar — dori vositalari sifatida (mustaqil ish)", "blocks": [
+   {"type": "p", "text": "**Kraun efirlar** — tarkibida takrorlanuvchi −CH~2~−CH~2~−O− birliklari bo‘lgan siklik polieferlar. Ularni 1967-yilda Ch. Pedersen sintez qilgan (1987-yilda D. Kram va J.-M. Len bilan birga Nobel mukofoti). Halqa ichidagi kislorod atomlari metall kationini “toj” (inglizcha *crown*) kabi o‘rab, mustahkam kompleks hosil qiladi."},
+   {"type": "img", "src": "data/img/tkm/t09_kraun.webp", "w": 900, "h": 800, "label": "Rasm 9.2", "caption": "18-kraun-6 ning K^+^ ioni bilan kompleksi: oltita kislorod atomi kationni halqa bo‘shlig‘ida ushlab turadi (skelet formula, sxema)."},
+   {"type": "list", "ordered": false, "items": ["**Tanlab bog‘lash:** halqa bo‘shlig‘i kation o‘lchamiga mos kelishi kerak: 12-kraun-4 — Li^+^, 15-kraun-5 — Na^+^, 18-kraun-6 — K^+^.", "**Ionoforlik:** kompleks tashqaridan gidrofob bo‘lgani uchun kationni lipid membrana orqali o‘tkazadi. Tabiiy ionoforlar — **valinomitsin** (K^+^), **monenzin** (Na^+^) antibiotiklari shu prinsipda ishlaydi va bakteriya membranasi ion muvozanatini buzadi.", "**Tibbiyotdagi istiqbollari:** antimikrob va o‘smaga qarshi ta’sir izlanmoqda, dorilarni yetkazib berish, og‘ir metallar va radionuklidlarni bog‘lash, ion-selektiv elektrodlar (qon K^+^ ini o‘lchash) yaratishda ishlatiladi. Kraun efirlarning o‘zi toksik bo‘lgani uchun klinik dori sifatida hali keng qo‘llanmaydi."]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: xiral markazni aniqlash va enantiomerlarni tasvirlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Molekuladagi sp^3^ gibridlangan uglerod atomlarini toping.", "Har biridagi to‘rtta o‘rinbosarni tekshiring: hammasi har xil bo‘lsa — xiral markaz.", "Fisher proyeksiyasini chizing: uglerod zanjiri vertikal, eng oksidlangan guruh tepada.", "Xiral markazdagi OH (yoki NH~2~) o‘ngda bo‘lsa — D, chapda bo‘lsa — L.", "Ikkinchi enantiomerni ko‘zgu aksi qilib chizing; n ta xiral markaz uchun stereoizomerlar soni 2^n^."]}]},
+  {"title": "Ko‘nikma: kislotalilikni elektron effektlar bo‘yicha taqqoslash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Kislotalik markazini (O−H, S−H, N−H, C−H) aniqlang.", "Proton ajralganda hosil bo‘ladigan anionni chizing.", "Anionni barqarorlashtiruvchi omillarni toping: −I va −M o‘rinbosarlar, tutashish, atom elektromanfiyligi va o‘lchami.", "Anion qancha barqaror bo‘lsa, kislota shuncha kuchli (pK~a~ kichik).", "Natijani pK~a~ qiymatlari bilan tekshiring."]}]}
+ ],
+ "questions": [
+  "Butlerovning kimyoviy tuzilish nazariyasining asosiy qoidalarini ayting.",
+  "Uglerod atomining qanday gibridlanish turlari bor?",
+  "Struktura izomeriyasining turlariga misollar keltiring.",
+  "Xirallik va enantiomerlar nima? Rasemat qanday xossaga ega?",
+  "D/L va R/S nomenklaturasining farqi nimada?",
+  "Talidomid fojiasi nimani o‘rgatadi?",
+  "Induktiv va mezomer effektlarni tushuntiring.",
+  "Aromatiklik nima? Hyukkel qoidasini ayting.",
+  "Nima uchun fenol spirtlardan kuchli kislota?",
+  "Nima uchun anilin alifatik aminlardan kuchsiz asos?",
+  "Etanol va metanol organizmda qanday oksidlanadi?",
+  "Uglevodorodlar sinflari va ularning xarakterli reaksiyalarini sanang.",
+  "Kraun efirlar qanday tuzilgan va ularning tibbiyotdagi istiqbollari qanday?"
+ ],
+ "quiz": [
+  {"q": "Kimyoviy tuzilish nazariyasini kim yaratgan?", "options": ["A.M. Butlerov", "D.I. Mendeleyev", "F. Vyoler", "A. Kekule", "Y. Berselius"], "answer": 0},
+  {"q": "Alkanlarda uglerod atomi qanday gibridlangan?", "options": ["sp^3^", "sp^2^", "sp", "dsp^2^", "sp^3^d^2^"], "answer": 0},
+  {"q": "Etanol va dimetil efir qanday izomerlar?", "options": ["Sinflararo izomerlar", "Geometrik izomerlar", "Optik izomerlar", "Holat izomerlari", "Tautomerlar"], "answer": 0},
+  {"q": "Malein va fumar kislotalar qanday izomerlar?", "options": ["Geometrik (sis-trans)", "Optik", "Zanjir", "Sinflararo", "Konformatsion"], "answer": 0},
+  {"q": "Xiral uglerod atomida nechta har xil o‘rinbosar bo‘ladi?", "options": ["4", "2", "3", "1", "6"], "answer": 0},
+  {"q": "Tabiiy aminokislotalar qaysi stereokimyoviy qatorga mansub?", "options": ["L", "D", "Rasemat", "Mezo", "Sis"], "answer": 0},
+  {"q": "Qaysi guruh −I effekt ko‘rsatadi?", "options": ["−Cl", "−CH~3~", "−C~2~H~5~", "−CH(CH~3~)~2~", "−C(CH~3~)~3~"], "answer": 0},
+  {"q": "Qaysi guruh π-sistemaga nisbatan +M effekt ko‘rsatadi?", "options": ["−NH~2~", "−NO~2~", "−COOH", "−CHO", "−C≡N"], "answer": 0},
+  {"q": "Hyukkel qoidasiga ko‘ra aromatik sistemada nechta π-elektron bo‘ladi?", "options": ["4n + 2", "4n", "2n", "n + 2", "8n"], "answer": 0},
+  {"q": "Quyidagilardan qaysi biri eng kuchli kislota?", "options": ["Trixlorsirka kislota", "Sirka kislota", "Fenol", "Etanol", "Etantiol"], "answer": 0},
+  {"q": "Anilinning asosliligi ammiakka nisbatan qanday?", "options": ["Ancha kuchsiz", "Ancha kuchli", "Bir xil", "Anilin asos xossasiga ega emas", "Faqat qizdirilganda kuchli"], "answer": 0},
+  {"q": "Ikkilamchi spirt oksidlanganda nima hosil bo‘ladi?", "options": ["Keton", "Aldegid", "Karbon kislota", "Oddiy efir", "Alken"], "answer": 0},
+  {"q": "Metanol bilan zaharlanishda qaysi metabolit ko‘rish nervini shikastlaydi?", "options": ["Formaldegid va chumoli kislota", "Atsetaldegid", "Sirka kislota", "Atseton", "Mochevina"], "answer": 0},
+  {"q": "Benzol uchun qanday reaksiyalar xarakterli?", "options": ["Elektrofil o‘rin olish", "Radikal birikish", "Nukleofil birikish", "Polimerlanish", "Gidratlanish"], "answer": 0},
+  {"q": "18-kraun-6 qaysi kationni eng yaxshi bog‘laydi?", "options": ["K^+^", "Li^+^", "Na^+^", "Ca^2+^", "Mg^2+^"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemor noqonuniy sotilgan “spirt” ichgan. 18 soatdan keyin ko‘rish xiralashgan, qorinda og‘riq; qonda pH 7,10, HCO~3~^−^ = 9 mmol/l.", "ask": "Qanday zaharlanish gumon qilinadi? Kimyoviy mexanizmini va davolash tamoyilini tushuntiring.", "answer": "Metanol bilan zaharlanish. Metanol alkogoldegidrogenaza bilan **formaldegid**ga, so‘ng aldegiddegidrogenaza bilan **chumoli kislota**ga oksidlanadi. Chumoli kislota og‘ir metabolik atsidoz chaqiradi va ko‘rish nervi mitoxondriyalarini shikastlaydi (ko‘rlik). Belgilarning kechikib boshlanishi metabolitlar hosil bo‘lishiga vaqt kerakligi bilan bog‘liq. Davolash: **fomepizol** yoki etanol (alkogoldegidrogenazani raqobatli band qilib, metanol oksidlanishini to‘xtatadi), natriy gidrokarbonat, gemodializ, folat."},
+  {"title": "Masala 2", "text": "Parkinson kasalligini davolashda levodopa (L-DOFA) ishlatiladi; uning D-enantiomeri samarasiz.", "ask": "Nima uchun bir moddaning enantiomerlari organizmda har xil ta’sir qiladi?", "answer": "Fermentlar, retseptorlar va tashuvchi oqsillar L-aminokislotalardan tuzilgan **xiral** tuzilmalardir; ular substratni uch nuqtada bog‘lab, “qo‘l va qo‘lqop” kabi faqat bitta enantiomerni taniydi. L-DOFA aminokislotalar tashuvchisi orqali gematoensefalik to‘siqdan o‘tadi va L-aromatik aminokislota dekarboksilazasi bilan dofaminga aylanadi; D-shakli bu fermentning substrati emas. Shuning uchun dori faol enantiomer holida chiqariladi."},
+  {"title": "Masala 3", "text": "Salitsilat (pK~a~ ≈ 3) bilan og‘ir zaharlanishda bemorga natriy gidrokarbonat yuborilib, siydik pH i 7,5–8,0 gacha ko‘tarildi.", "ask": "Bu chora nima uchun salitsilatlarning chiqarilishini tezlashtiradi?", "answer": "Buyrak kanalchalari membranasidan asosan **ionlanmagan** molekula qayta so‘riladi. Ishqoriy siydikda kuchsiz kislota deyarli to‘liq anion (salitsilat-ion) holiga o‘tadi; anion membranadan o‘ta olmaydi va siydikda “tutilib qoladi” (ion tuzog‘i). Natijada qayta so‘rilish kamayib, chiqarilish bir necha marta ortadi. Bu kislotalilikning tibbiy ahamiyatini ko‘rsatadi."}
+ ],
+ "cards": [
+  {"front": "Butlerov nazariyasi", "back": "Xossalar tarkib va kimyoviy tuzilishga bog‘liq; atomlar o‘zaro ta’sir qiladi"},
+  {"front": "Enantiomerlar", "back": "Bir-birining ko‘zgu aksi bo‘lgan, ustma-ust tushmaydigan stereoizomerlar"},
+  {"front": "Rasemat", "back": "Enantiomerlarning teng miqdordagi, optik faol bo‘lmagan aralashmasi"},
+  {"front": "Xiral uglerod", "back": "To‘rtta har xil o‘rinbosarga ega uglerod atomi"},
+  {"front": "Induktiv effekt", "back": "σ-bog‘lar bo‘ylab elektron zichligi siljishi; masofa bilan so‘nadi"},
+  {"front": "Mezomer effekt", "back": "Tutash π-sistema bo‘ylab elektron zichligi siljishi"},
+  {"front": "Hyukkel qoidasi", "back": "Tekis halqali tutash sistema (4n + 2) π-elektronga ega bo‘lsa — aromatik"},
+  {"front": "Fenolning kislotaliligi", "back": "pK~a~ ≈ 10; spirtlardan kuchli, chunki fenoksid-ion tutashish bilan barqarorlashadi"},
+  {"front": "Metanol toksikligi", "back": "Formaldegid va chumoli kislotaga oksidlanadi: ko‘rlik, atsidoz; antidot — fomepizol"},
+  {"front": "Kraun efir", "back": "Siklik poliefir; kationni halqa ichida tanlab bog‘laydi (18-kraun-6 — K^+^)"}
+ ]
+}

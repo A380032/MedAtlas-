@@ -1,0 +1,127 @@
+{
+ "id": "03",
+ "no": 3,
+ "title": "Kompleks birikmalar. Ichki kompleks birikmalar",
+ "goals": [
+  {"type": "p", "text": "Talabaga Vernerning koordinatsion nazariyasini, kompleks birikmalarning tuzilishi, nomlanishi va eritmadagi barqarorligini, kimyoviy bog‘ tabiatini, ichki kompleks birikmalar (xelatlar) va xelatoterapiyani, kompleksonometriya asoslarini hamda qon zardobidagi kalsiyni aniqlashni o‘rgatish; tosh kasalliklarining kimyoviy asoslarini tushuntirish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["kompleks hosil qiluvchi, ligand, koordinatsion son, ichki va tashqi sfera tushunchalarini;", "kompleks birikmalarning tasnifi va nomlanish qoidalarini;", "beqarorlik va barqarorlik konstantalarini;", "kompleks birikmalarda donor-akseptor bog‘ va gibridlanishni;", "xelatlar, xelat effekti va biologik muhim kompleks birikmalarni (gem, xlorofill, B~12~);", "xelatoterapiya preparatlarini va kompleksonometriya asoslarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["kompleks birikma formulasidan markaziy atom zaryadi va koordinatsion sonni aniqlash;", "kompleks birikmalarni hosil qilish va parchalash reaksiyalarini bajarish;", "trilon B bilan qon zardobidagi kalsiy miqdorini aniqlash va natijani baholash;", "og‘ir metall bilan zaharlanishda qaysi kompleks hosil qiluvchi qo‘llanishini asoslash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Trilon B (EDTA) metall ionlari bilan zaryadidan qat’i nazar **1 : 1** nisbatda reaksiyaga kirishadi. Shuning uchun kompleksonometriyada hisob juda oddiy: n(Me) = n(trilon B)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Kompleks formulasini o‘qish tartibi: **“Ligand — son — markaz — zaryad”**: [Cu(NH~3~)~4~]^2+^ — tetra**ammin**mis(II) ioni."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Qo‘rg‘oshin bilan zaharlanishda **natriy-kalsiy** edetati (CaNa~2~EDTA) ishlatiladi. Kalsiysiz Na~2~EDTA qondagi Ca^2+^ ni ham bog‘lab, hayot uchun xavfli gipokalsiyemiya chaqiradi."}
+ ],
+ "sections": [
+  {"title": "1. Vernerning koordinatsion nazariyasi", "blocks": [
+   {"type": "p", "text": "**Kompleks birikmalar** — tarkibida markaziy atom (ion) atrofida ma’lum tartibda joylashgan molekula yoki ionlar (ligandlar) bo‘lgan, eritmada ham alohida zarracha sifatida mavjud bo‘ladigan murakkab birikmalar. Ularning tuzilishini 1893-yilda **A. Verner** tushuntirgan (1913-yilda Nobel mukofoti)."},
+   {"type": "list", "ordered": false, "items": ["**Kompleks hosil qiluvchi (markaziy atom)** — odatda d-element ioni: Fe^2+^, Fe^3+^, Cu^2+^, Co^3+^, Zn^2+^, Ag^+^, Pt^2+^.", "**Ligandlar** — markaziy atomga bog‘langan molekula yoki anionlar: H~2~O, NH~3~, Cl^−^, CN^−^, OH^−^, aminokislotalar.", "**Koordinatsion son** — markaziy atomga bevosita bog‘langan donor atomlar soni (ko‘pincha 2, 4 yoki 6).", "**Ichki sfera** — markaziy atom va ligandlar, kvadrat qavsda yoziladi; **tashqi sfera** — qavsdan tashqaridagi ionlar, eritmada oson ajraladi."]},
+   {"type": "p", "text": "Masalan, K~4~[Fe(CN)~6~] da: markaziy ion — Fe^2+^, ligand — CN^−^, koordinatsion son — 6, ichki sfera — [Fe(CN)~6~]^4−^, tashqi sfera — 4K^+^. Kompleks ion zaryadi = markaziy ion zaryadi + ligandlar zaryadi: (+2) + 6·(−1) = −4."},
+   {"type": "p", "text": "Ligandning markaziy atom bilan nechta bog‘ hosil qilishi **dentatlik** deyiladi: **monodentat** (NH~3~, H~2~O, Cl^−^, CN^−^), **bidentat** (etilendiamin, oksalat, glitsinat), **polidentat** (EDTA — 6 dentatli)."},
+   {"type": "table", "title": "Jadval 3.1. Kompleks birikmalarning tasnifi va nomlanishi", "head": ["Formula", "Nomi", "Turi"], "rows": [["[Cu(NH~3~)~4~]SO~4~", "tetraamminmis(II) sulfat", "kationli kompleks, ammiakat"], ["K~4~[Fe(CN)~6~]", "kaliy geksatsianoferrat(II) (sariq qon tuzi)", "anionli kompleks, atsidokompleks"], ["K~3~[Fe(CN)~6~]", "kaliy geksatsianoferrat(III) (qizil qon tuzi)", "anionli kompleks"], ["[Ag(NH~3~)~2~]Cl", "diamminkumush xlorid", "kationli kompleks"], ["[Pt(NH~3~)~2~Cl~2~]", "diammindixloroplatina(II) (sisplatin)", "neytral kompleks"], ["[Cr(H~2~O)~6~]Cl~3~", "geksaakvaxrom(III) xlorid", "akvakompleks"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Sisplatin** [Pt(NH~3~)~2~Cl~2~] — eng mashhur kompleks dori. Hujayrada xlorid ligandlari suv bilan almashinadi va platina DNK dagi guanin azotiga bog‘lanib, zanjirlarni “tikib” qo‘yadi — o‘sma hujayrasining bo‘linishi to‘xtaydi. Moyak, tuxumdon, o‘pka saratonida ishlatiladi; asosiy nojo‘ya ta’siri — nefrotoksiklik."}]}
+  ]},
+  {"title": "2. Kompleks birikmalar eritmalaridagi muvozanat va barqarorlik", "blocks": [
+   {"type": "p", "text": "Eritmada kompleks birikma avval tashqi sfera bo‘yicha to‘liq dissotsilanadi (kuchli elektrolit kabi): [Ag(NH~3~)~2~]Cl → [Ag(NH~3~)~2~]^+^ + Cl^−^. Ichki sfera esa juda oz va bosqichma-bosqich parchalanadi: [Ag(NH~3~)~2~]^+^ ⇄ Ag^+^ + 2NH~3~."},
+   {"type": "p", "text": "Bu muvozanat **beqarorlik konstantasi** bilan ifodalanadi: K~beq~ = [Ag^+^]·[NH~3~]^2^ / [[Ag(NH~3~)~2~]^+^]. Unga teskari kattalik — **barqarorlik konstantasi**: β = 1 / K~beq~. K~beq~ qancha kichik bo‘lsa, kompleks shuncha barqaror."},
+   {"type": "table", "title": "Jadval 3.2. Ayrim komplekslarning beqarorlik konstantalari (25 °C)", "head": ["Kompleks ion", "K~beq~"], "rows": [["[Ag(NH~3~)~2~]^+^", "5,9·10^−8^"], ["[Cu(NH~3~)~4~]^2+^", "2,1·10^−13^"], ["[Ag(CN)~2~]^−^", "≈ 10^−21^"], ["[Fe(CN)~6~]^4−^", "≈ 10^−37^"], ["[CaY]^2−^ (Ca-EDTA)", "≈ 2·10^−11^"]]},
+   {"type": "p", "text": "Barqaror kompleks hosil bo‘lishi kam eriydigan moddalarni eritishi mumkin: AgCl ammiakda eriydi, chunki Ag^+^ ionlari [Ag(NH~3~)~2~]^+^ ga bog‘lanib, eritmadagi [Ag^+^] AgCl ning eruvchanlik ko‘paytmasidan kamayadi. Aksincha, kuchli cho‘ktiruvchi kompleksni parchalaydi: [Ag(NH~3~)~2~]^+^ ga KI qo‘shilsa, AgI cho‘kmaga tushadi."}
+  ]},
+  {"title": "3. Kompleks birikmalarda kimyoviy bog‘ tabiati", "blocks": [
+   {"type": "p", "text": "Markaziy atom va ligand orasidagi bog‘ **donor-akseptor (koordinatsion)** bog‘ hisoblanadi: ligand (donor) bo‘linmagan elektron juftini beradi, markaziy atom (akseptor) uni bo‘sh orbitallariga qabul qiladi. Valent bog‘lar nazariyasiga ko‘ra, markaziy atom orbitallari gibridlanadi va kompleksning geometriyasi shu gibridlanish turiga bog‘liq."},
+   {"type": "table", "title": "Jadval 3.3. Gibridlanish turi va komplekslar shakli", "head": ["Koordinatsion son", "Gibridlanish", "Shakli", "Misol"], "rows": [["2", "sp", "chiziqli", "[Ag(NH~3~)~2~]^+^"], ["4", "sp^3^", "tetraedr", "[Zn(NH~3~)~4~]^2+^"], ["4", "dsp^2^", "tekis kvadrat", "[Ni(CN)~4~]^2−^, [Pt(NH~3~)~2~Cl~2~]"], ["6", "d^2^sp^3^ yoki sp^3^d^2^", "oktaedr", "[Fe(CN)~6~]^4−^, [Co(NH~3~)~6~]^3+^"]]},
+   {"type": "p", "text": "**Kristall maydon nazariyasi** ligandlar elektr maydoni ta’sirida markaziy atomning d-orbitallari energiyasi bo‘yicha ajralishini ko‘rsatadi. Elektronning bir d-sathdan ikkinchisiga o‘tishida ko‘rinadigan yorug‘lik yutiladi — shuning uchun d-element komplekslari **rangli**: [Cu(H~2~O)~4~]^2+^ — havorang, [Cu(NH~3~)~4~]^2+^ — to‘q ko‘k, gemoglobin — qizil."}
+  ]},
+  {"title": "4. Ichki kompleks birikmalar (xelatlar)", "blocks": [
+   {"type": "p", "text": "Polidentat ligand markaziy atom bilan bir nechta bog‘ hosil qilib, **halqa (sikl)** yuzaga keltiradigan birikmalar **ichki kompleks birikmalar** yoki **xelatlar** (yunoncha *chele* — qisqichbaqa qisqichi) deyiladi. Eng barqarorlari — **besh va olti a’zoli** halqali xelatlar."},
+   {"type": "img", "src": "data/img/tkm/t03_glitsinat.webp", "w": 900, "h": 600, "label": "Rasm 3.1", "caption": "Ichki kompleks birikma misoli — mis(II) glitsinat [Cu(NH~2~CH~2~COO)~2~]: har bir glitsin ioni mis bilan azot va kislorod orqali besh a’zoli halqa hosil qiladi (struktura formulasi, RDKit dasturida chizilgan)."},
+   {"type": "p", "text": "**Xelat effekti:** bir xil donor atomlarga ega bo‘lsa ham, xelat monodentat ligandli kompleksdan ancha barqaror. Sababi — entropiya: bitta polidentat ligand bir necha suv molekulasini siqib chiqaradi, eritmadagi zarrachalar soni ortadi (ΔS > 0)."},
+   {"type": "table", "title": "Jadval 3.4. Biologik muhim ichki kompleks birikmalar", "head": ["Birikma", "Markaziy atom", "Ligand", "Vazifasi"], "rows": [["Gem (gemoglobin, mioglobin, sitoxromlar)", "Fe^2+^ / Fe^3+^", "protoporfirin IX", "O~2~ tashish, elektron ko‘chirish"], ["Xlorofill", "Mg^2+^", "xlorin", "fotosintez"], ["Kobalamin (vitamin B~12~)", "Co^3+^", "korrin", "metil guruh ko‘chirish, qon hosil bo‘lishi"], ["Karboangidraza", "Zn^2+^", "3 ta gistidin + H~2~O", "CO~2~ + H~2~O ⇄ H~2~CO~3~"], ["Seruloplazmin", "Cu^2+^", "oqsil", "Fe^2+^ ni oksidlash, mis tashish"]]},
+   {"type": "img", "src": "data/img/tkm/t03_gem.webp", "w": 900, "h": 800, "label": "Rasm 3.2", "caption": "Gem — temirning protoporfirin IX bilan ichki kompleks birikmasi: Fe to‘rtta pirrol azoti bilan bog‘langan, qolgan ikki koordinatsion o‘rni globin gistidini va O~2~ uchun (struktura formulasi PubChem ma’lumotlari asosida chizilgan)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Is gazi (CO) bilan zaharlanish** ham kompleks hosil bo‘lishi bilan bog‘liq: CO gemdagi Fe^2+^ ga O~2~ ga nisbatan ≈ 200–250 marta kuchliroq bog‘lanib, **karboksigemoglobin** hosil qiladi. Davolashda 100 % kislorod va giperbarik oksigenatsiya muvozanatni O~2~ tomonga suradi."}]}
+  ]},
+  {"title": "5. Xelatoterapiya", "blocks": [
+   {"type": "p", "text": "**Xelatoterapiya** — organizmdan zaharli metall ionlarini barqaror, suvda eriydigan, buyrak orqali chiqariladigan xelatlar holida bog‘lab chiqarish. Dori (kompleks hosil qiluvchi) zaharli metall bilan organizmdagi zarur metallarga (Ca, Zn) nisbatan **barqarorroq** kompleks hosil qilishi kerak."},
+   {"type": "table", "title": "Jadval 3.5. Xelatoterapiya preparatlari", "head": ["Preparat", "Donor atomlari", "Qo‘llanishi"], "rows": [["Natriy-kalsiy edetati (CaNa~2~EDTA, tetatsin-kalsiy)", "N, O", "qo‘rg‘oshin, kadmiy bilan zaharlanish"], ["Dimerkaprol (BAL), unitiol", "S (tiol guruhlari)", "mishyak, simob, oltin bilan zaharlanish"], ["D-penitsillamin", "S, N, O", "Vilson–Konovalov kasalligi (mis), qo‘rg‘oshin"], ["Deferoksamin", "O (gidroksamat)", "temir ortiqchaligi (gemosideroz, ko‘p qon quyish)"], ["Suktsimer (DMSA)", "S", "bolalarda qo‘rg‘oshin bilan zaharlanish"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Pirson nazariyasi** (“yumshoq — yumshoqqa, qattiq — qattiqqa”): yumshoq metallar (Hg^2+^, Pb^2+^, Cd^2+^, As^3+^) **oltingugurtli** ligandlar bilan, qattiq ionlar (Ca^2+^, Mg^2+^, Fe^3+^) **kislorodli** ligandlar bilan barqaror bog‘lanadi. Shu sababli simob va mishyakka qarshi tiolli antidotlar ishlatiladi."}]}
+  ]},
+  {"title": "6. Kompleksonometriya asoslari", "blocks": [
+   {"type": "p", "text": "**Kompleksonometriya** — metall ionlarini komplekson (ko‘pincha **trilon B** — etilendiamintetrasirka kislotaning ikki natriyli tuzi, Na~2~H~2~Y·2H~2~O) bilan titrlashga asoslangan usul. Trilon B metall ionlari bilan zaryadidan qat’i nazar 1 : 1 nisbatda barqaror xelat hosil qiladi: Me^2+^ + H~2~Y^2−^ → MeY^2−^ + 2H^+^."},
+   {"type": "list", "ordered": false, "items": ["Reaksiyada H^+^ ajralgani uchun titrlash **bufer** ishtirokida olib boriladi: Ca^2+^ + Mg^2+^ yig‘indisi uchun ammiakli bufer (pH ≈ 10), faqat Ca^2+^ uchun NaOH (pH 12–13, Mg(OH)~2~ cho‘kmaga tushadi).", "**Metallindikatorlar** metall bilan rangli kompleks hosil qiladi, lekin trilon B dan beqarorroq: **eriokrom qora T** (pH 10: metall bilan vino-qizil, erkin holda ko‘k), **murreksid** (pH 12: Ca bilan pushti, erkin holda binafsha).", "Ekvivalent nuqtada trilon B metallni indikator kompleksidan tortib oladi va erkin indikator rangi paydo bo‘ladi."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Kompleksonometriya bilan suvning **qattiqligi** (Ca^2+^ va Mg^2+^ yig‘indisi, mmol-ekv/l) aniqlanadi. Qattiq suv buyrak va o‘t toshlari hosil bo‘lishiga moyillikni oshiradi; O‘zbekistonning ayrim hududlarida (Xorazm, Qoraqalpog‘iston) ichimlik suvi qattiqligi me’yordan (7 mmol-ekv/l) yuqori."}]}
+  ]},
+  {"title": "7. Laboratoriya ishlari", "blocks": [
+   {"type": "h", "text": "Kompleks birikmalarni hosil qilish va o‘rganish"},
+   {"type": "list", "ordered": true, "items": ["**Mis ammiakati:** CuSO~4~ eritmasiga tomchilab NH~3~·H~2~O qo‘shing — avval havorang Cu(OH)~2~ cho‘kmasi tushadi, mo‘l ammiakda eriydi va to‘q ko‘k [Cu(NH~3~)~4~]^2+^ hosil bo‘ladi.", "**Kumush ammiakati:** AgNO~3~ ga NaCl qo‘shing (oq AgCl), so‘ng ammiak qo‘shing — cho‘kma eriydi; hosil bo‘lgan eritmaga KI qo‘shing — sariq AgI cho‘kmasi tushadi (kompleks parchalanadi).", "**Berlin lazuri:** FeCl~3~ ga K~4~[Fe(CN)~6~] qo‘shing — to‘q ko‘k cho‘kma.", "**Kompleks ionda markaziy ionni aniqlash:** K~3~[Fe(CN)~6~] eritmasiga NaOH qo‘shing — Fe(OH)~3~ cho‘kmasi tushmaydi, chunki Fe^3+^ barqaror kompleks ichida.", "Har bir tajriba uchun tenglama yozing va kuzatuvni tushuntiring."]},
+   {"type": "h", "text": "Qon zardobida kalsiy miqdorini kompleksonometriya usulida aniqlash"},
+   {"type": "p", "text": "**Usul asosi:** ishqoriy muhitda (pH 12–13) zardobdagi Ca^2+^ murreksid bilan pushti kompleks hosil qiladi; trilon B bilan titrlanganda kalsiy barqarorroq CaY^2−^ ga o‘tadi va rang **binafsha**ga o‘zgaradi."},
+   {"type": "list", "ordered": true, "items": ["Kolbaga 1 ml qon zardobi va 1 ml distillangan suv soling.", "0,2 ml 1 M NaOH va murreksidning quruq aralashmasidan (NaCl bilan 1 : 100) bir chimdim qo‘shing — eritma pushti rangga kiradi.", "Mikrobyuretkadan 0,0025 M trilon B eritmasi bilan rang binafsha tusga o‘tguncha titrlang.", "Nazorat (zardobsiz) namunani ham xuddi shunday titrlab, sarflangan hajmni ayiring.", "Hisoblang: C(Ca^2+^) = C(trilon B) · V(trilon B) / V(zardob)."]},
+   {"type": "p", "text": "**Misol:** titrlashga 0,96 ml trilon B sarflandi. C(Ca) = 0,0025 · 0,96 / 1 = 0,0024 mol/l = **2,4 mmol/l** — me’yor (umumiy kalsiy 2,2–2,6 mmol/l)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Giperkalsiyemiya** (> 2,6 mmol/l) — giperparatireoz, o‘sma metastazlari, D gipervitaminozida; **gipokalsiyemiya** (< 2,2 mmol/l) — gipoparatireoz, raxit, buyrak yetishmovchiligi, o‘tkir pankreatitda. Umumiy kalsiyning ≈ 40 % i albumin bilan bog‘langan, shuning uchun gipoalbuminemiyada natija tuzatiladi."}]}
+  ]},
+  {"title": "8. Tosh kasalliklarining kimyoviy asoslari (mustaqil ish)", "blocks": [
+   {"type": "p", "text": "Toshlar (konkrementlar) biologik suyuqlikda kam eriydigan tuz ionlarining konsentratsiyasi **eruvchanlik ko‘paytmasi** (EK, K~sp~) dan oshib ketganda, ya’ni suyuqlik **o‘ta to‘yingan** bo‘lganda hosil bo‘ladi: [Ca^2+^]·[C~2~O~4~^2−^] > EK(CaC~2~O~4~) = 2,3·10^−9^. Kristall o‘zagi hosil bo‘lgach, unga yangi qatlamlar o‘tiradi."},
+   {"type": "table", "title": "Jadval 3.6. Siydik toshlarining asosiy turlari", "head": ["Tosh turi", "Ulushi", "Hosil bo‘lish sharoiti", "Oldini olish"], "rows": [["Kalsiy oksalat CaC~2~O~4~", "≈ 70–80 %", "giperkalsiuriya, giperoksaluriya, kam suyuqlik ichish", "ko‘p suv, oksalatli oziqni cheklash, sitrat"], ["Kalsiy fosfat (apatit)", "≈ 10 %", "**ishqoriy** siydik (pH > 7)", "siydikni kislotalash"], ["Siydik kislota (urat)", "≈ 5–10 %", "**kislotali** siydik (pH < 5,5), podagra", "kaliy sitrat bilan ishqorlash, allopurinol"], ["Struvit MgNH~4~PO~4~·6H~2~O", "≈ 5–10 %", "ureaza hosil qiluvchi bakteriyalar infeksiyasi, ishqoriy siydik", "infeksiyani davolash"], ["Sistin", "≈ 1 %", "irsiy sistinuriya", "ko‘p suv, ishqorlash, penitsillamin"]]},
+   {"type": "img", "src": "data/img/tkm/t03_tosh.webp", "w": 1000, "h": 750, "label": "Rasm 3.3", "caption": "Kalsiy oksalatdan iborat buyrak toshi: o‘tkir qirrali kristallar shilliq qavatni shikastlab, gematuriya chaqiradi (Wikimedia Commons)."},
+   {"type": "p", "text": "Tosh hosil bo‘lishining **ingibitorlari** — sitrat (Ca^2+^ bilan eriydigan kompleks hosil qiladi), magniy (oksalat bilan eriydigan tuz beradi), pirofosfat va oqsillar. Shuning uchun gipotsitraturiya tosh hosil bo‘lish xavfini oshiradi, **kaliy sitrat** esa ularni davolashda ishlatiladi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Tosh turi siydik **pH** iga bog‘liq: urat toshlari kislotali siydikda, fosfat va struvit toshlari ishqoriy siydikda hosil bo‘ladi. O‘t toshlarining asosiy qismi esa **xolesterin** toshlari — o‘tda xolesterin o‘t kislotalari va fosfolipidlarga nisbatan ko‘payib ketganda cho‘kadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: kompleks birikma formulasini tahlil qilish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Kvadrat qavs ichidagi ichki sferani ajrating; qavsdan tashqaridagi ionlar — tashqi sfera.", "Ligandlar va ularning zaryadini aniqlang (NH~3~, H~2~O — 0; Cl^−^, CN^−^, OH^−^ — −1).", "Tashqi sfera zaryadidan kompleks ion zaryadini toping.", "Markaziy ion zaryadi = kompleks ion zaryadi − ligandlar zaryadlari yig‘indisi.", "Koordinatsion sonni (donor atomlar soni) va mumkin bo‘lgan shaklni aniqlang.", "Birikmani nomlang: ligandlar (soni bilan) → markaziy atom (oksidlanish darajasi bilan)."]}]},
+  {"title": "Ko‘nikma: kompleksonometrik titrlash natijasini hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Uchta parallel titrlashning o‘rtacha hajmini toping.", "Nazorat namuna hajmini ayiring.", "1 : 1 stexiometriyadan foydalanib, n(Me) = C(trilon B) · V(trilon B) ni hisoblang.", "Namuna hajmiga bo‘lib, konsentratsiyani mol/l da toping va mmol/l ga o‘tkazing.", "Natijani me’yor bilan solishtirib, xulosa yozing."]}]}
+ ],
+ "questions": [
+  "Vernerning koordinatsion nazariyasining asosiy qoidalarini ayting.",
+  "Markaziy atom, ligand, koordinatsion son nima? K~3~[Fe(CN)~6~] misolida tushuntiring.",
+  "Kompleks birikmalar qanday tasniflanadi va nomlanadi?",
+  "Beqarorlik va barqarorlik konstantalari nimani ko‘rsatadi?",
+  "Nima uchun AgCl ammiakda eriydi?",
+  "Kompleks birikmalarda bog‘ tabiati qanday? Gibridlanish va shakl misollarini keltiring.",
+  "Nima uchun d-element komplekslari rangli?",
+  "Xelat va xelat effekti nima?",
+  "Biologik muhim ichki kompleks birikmalarni sanang.",
+  "Xelatoterapiya nima? Qo‘rg‘oshin, simob va temir bilan zaharlanishda nima ishlatiladi?",
+  "Kompleksonometriyada nima uchun bufer kerak?",
+  "Qon zardobidagi kalsiy qanday aniqlanadi?",
+  "Siydik toshlari qanday hosil bo‘ladi va ularning turi pH ga qanday bog‘liq?"
+ ],
+ "quiz": [
+  {"q": "K~4~[Fe(CN)~6~] da markaziy ionning zaryadi qancha?", "options": ["+2", "+3", "+4", "−4", "+6"], "answer": 0},
+  {"q": "[Cu(NH~3~)~4~]SO~4~ da koordinatsion son qancha?", "options": ["4", "2", "6", "1", "8"], "answer": 0},
+  {"q": "Qaysi ligand polidentat hisoblanadi?", "options": ["EDTA", "NH~3~", "H~2~O", "Cl^−^", "CN^−^"], "answer": 0},
+  {"q": "Beqarorlik konstantasi qanchalik kichik bo‘lsa, kompleks...", "options": ["shuncha barqaror", "shuncha beqaror", "shuncha rangsiz", "shuncha yaxshi dissotsilanadi", "barqarorligi o‘zgarmaydi"], "answer": 0},
+  {"q": "Kompleks birikmalarda markaziy atom va ligand orasidagi bog‘ turi qaysi?", "options": ["Donor-akseptor", "Ion", "Metall", "Vodorod", "Van-der-Vaals"], "answer": 0},
+  {"q": "sp^3^ gibridlanishda kompleks qanday shaklga ega?", "options": ["Tetraedr", "Oktaedr", "Chiziqli", "Tekis kvadrat", "Trigonal bipiramida"], "answer": 0},
+  {"q": "Gem tarkibidagi markaziy atom qaysi?", "options": ["Temir", "Magniy", "Kobalt", "Mis", "Rux"], "answer": 0},
+  {"q": "Xlorofill tarkibida qaysi metall bor?", "options": ["Magniy", "Temir", "Kobalt", "Marganets", "Mis"], "answer": 0},
+  {"q": "Qo‘rg‘oshin bilan zaharlanishda qaysi preparat ishlatiladi?", "options": ["Natriy-kalsiy edetati", "Deferoksamin", "Metilen ko‘ki", "Atropin", "Natriy gidrokarbonat"], "answer": 0},
+  {"q": "Temir ortiqchaligida (gemosideroz) qaysi xelator ishlatiladi?", "options": ["Deferoksamin", "Dimerkaprol", "Unitiol", "Suktsimer", "Na~2~EDTA"], "answer": 0},
+  {"q": "Trilon B metall ionlari bilan qanday nisbatda reaksiyaga kirishadi?", "options": ["1 : 1", "1 : 2", "2 : 1", "1 : 4", "Zaryadga qarab har xil"], "answer": 0},
+  {"q": "Qon zardobidagi kalsiyni pH 12–13 da aniqlashda qaysi indikator ishlatiladi?", "options": ["Murreksid", "Fenolftalein", "Metiloranj", "Kraxmal", "Lakmus"], "answer": 0},
+  {"q": "Qon zardobidagi umumiy kalsiyning me’yori qancha?", "options": ["2,2–2,6 mmol/l", "0,7–1,0 mmol/l", "3,5–5,0 mmol/l", "135–145 mmol/l", "9–30 mmol/l"], "answer": 0},
+  {"q": "Eng ko‘p uchraydigan siydik toshlari qaysi?", "options": ["Kalsiy oksalat", "Sistin", "Struvit", "Siydik kislota", "Ksantin"], "answer": 0},
+  {"q": "Urat (siydik kislota) toshlari qanday siydikda hosil bo‘ladi?", "options": ["Kislotali (pH < 5,5)", "Ishqoriy (pH > 7)", "Neytral", "pH ga bog‘liq emas", "Faqat infeksiyada"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Akkumulyator zavodi ishchisi qorinda sanchiqli og‘riq, holsizlik, bosh og‘rig‘idan shikoyat qiladi. Milkida kulrang hoshiya bor, qonda gipoxrom anemiya va eritrotsitlarning bazofil donadorligi aniqlandi.", "ask": "Qanday zaharlanish gumon qilinadi? Qaysi kompleks hosil qiluvchi bilan davolanadi va nima uchun kalsiyli shakli tanlanadi?", "answer": "Qo‘rg‘oshin bilan surunkali zaharlanish (saturnizm). Pb^2+^ gem sintezi fermentlarini (δ-ALK-degidrataza, ferroxelataza) to‘sadi — anemiya rivojlanadi. Davolash: natriy-kalsiy edetati (CaNa~2~EDTA) vena ichiga; Pb^2+^ EDTA bilan Ca^2+^ dan barqarorroq kompleks hosil qilib, kalsiyni siqib chiqaradi va PbY^2−^ siydik bilan chiqadi. Kalsiysiz Na~2~EDTA qondagi kalsiyni bog‘lab, gipokalsiyemiya va yurak to‘xtashiga olib kelishi mumkin. Bolalarda suktsimer (DMSA) ichish uchun beriladi."},
+  {"title": "Masala 2", "text": "Bemor qon zardobidagi kalsiyni aniqlash uchun 1 ml zardob 0,0025 M trilon B bilan titrlandi. Uchta titrlashda 0,70; 0,72 va 0,71 ml sarflandi, nazorat namunaga 0,01 ml ketdi.", "ask": "Kalsiy konsentratsiyasini hisoblang va baholang. Qanday kasalliklarda shunday natija bo‘lishi mumkin?", "answer": "O‘rtacha hajm = 0,71 ml; nazoratni ayirsak 0,70 ml. C(Ca) = 0,0025 · 0,70 / 1 = 0,00175 mol/l = 1,75 mmol/l — **gipokalsiyemiya** (me’yor 2,2–2,6). Sabablari: gipoparatireoz (masalan, qalqonsimon bez operatsiyasidan keyin), D vitamini yetishmasligi, surunkali buyrak yetishmovchiligi, o‘tkir pankreatit. Albumin miqdorini ham tekshirish kerak."},
+  {"title": "Masala 3", "text": "45 yoshli erkakda podagra va buyrak sanchig‘i. Siydik pH 5,0; rentgenda toshlar ko‘rinmaydi, UTT da buyrakda tosh aniqlandi.", "ask": "Tosh turi qaysi? Kimyoviy asosda davolash qanday?", "answer": "Siydik kislota (urat) toshi: kislotali siydikda (pH < 5,5) siydik kislotaning eruvchanligi past, u kristallanadi; urat toshlari rentgenda ko‘rinmaydi. Davolash — siydikni **kaliy sitrat** bilan pH 6,5–7,0 gacha ishqorlash: siydik kislota eriydigan urat ioniga (anion shakl) o‘tadi va tosh erishi mumkin; ko‘p suyuqlik ichish, allopurinol (siydik kislota hosil bo‘lishini kamaytiradi), purinlarga boy oziqni cheklash."}
+ ],
+ "cards": [
+  {"front": "Koordinatsion son", "back": "Markaziy atomga bevosita bog‘langan donor atomlar soni"},
+  {"front": "Ichki sfera", "back": "Markaziy atom + ligandlar, kvadrat qavsda yoziladi"},
+  {"front": "Beqarorlik konstantasi", "back": "Kompleks ionning dissotsilanish konstantasi; qancha kichik — shuncha barqaror"},
+  {"front": "Donor-akseptor bog‘", "back": "Ligand elektron juftini, markaziy atom bo‘sh orbitalini beradi"},
+  {"front": "Xelat", "back": "Polidentat ligand markaziy atom bilan halqa hosil qilgan ichki kompleks birikma"},
+  {"front": "Xelat effekti", "back": "Xelatlarning monodentat komplekslarga nisbatan yuqori barqarorligi (entropiya ortishi)"},
+  {"front": "Sisplatin", "back": "[Pt(NH~3~)~2~Cl~2~] — DNK ni tikib qo‘yadigan o‘smaga qarshi dori"},
+  {"front": "CaNa~2~EDTA", "back": "Qo‘rg‘oshin bilan zaharlanishda xelatoterapiya preparati"},
+  {"front": "Trilon B", "back": "Na~2~H~2~Y·2H~2~O; metallar bilan 1 : 1 xelat hosil qiladi"},
+  {"front": "Eruvchanlik ko‘paytmasi", "back": "To‘yingan eritmadagi ionlar konsentratsiyalari ko‘paytmasi; oshib ketsa cho‘kma (tosh) hosil bo‘ladi"}
+ ]
+}

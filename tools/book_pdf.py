@@ -60,8 +60,9 @@ def jpg(src_rel, maxpx=None):
     q = CFG.get("img_quality", 84)
     os.makedirs(IMG_CACHE, exist_ok=True)
     dst = os.path.join(IMG_CACHE, re.sub(r"[^\w.-]", "_", src_rel) + f"_{maxpx}_{q}.jpg")
-    if not os.path.exists(dst):
-        im = Image.open(os.path.join(ROOT, src_rel))
+    full = os.path.join(ROOT, src_rel)
+    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(full):   # manba yangilangan bo'lsa — qayta
+        im = Image.open(full)
         if im.mode in ("RGBA", "LA", "P"):
             im = im.convert("RGBA")
             bg = Image.new("RGB", im.size, "white")

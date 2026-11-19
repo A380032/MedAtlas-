@@ -1,0 +1,121 @@
+{
+ "id": "05",
+ "no": 5,
+ "title": "Chemical thermodynamics. Determining the heat effect of chemical reactions",
+ "goals": [
+  {"type": "p", "text": "To give the student knowledge of thermodynamic systems and state functions, types of energy, the first and second laws of thermodynamics, enthalpy, entropy and Gibbs free energy, Hess’s law and its corollaries, and specific heat capacity; to teach the calorimetric determination of the heat effect of a reaction and the application of this knowledge to energy metabolism in the body."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["open, closed and isolated systems and state functions;", "the concepts of heat, work, internal energy and specific heat capacity;", "the 1st law of thermodynamics and enthalpy;", "the 2nd law of thermodynamics, entropy and Gibbs free energy;", "Hess’s law and its corollaries;", "the thermodynamic basis of energy production and expenditure in the body."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["calculate the heat effect of a reaction from enthalpies of formation;", "decide from the sign of ΔG whether a process can occur spontaneously;", "measure and calculate the heat of neutralization in a calorimeter;", "calculate the energy value of nutrients."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "A process occurs spontaneously if **ΔG < 0** (ΔG = ΔH − TΔS). In an exothermic reaction ΔH < 0 (heat is released), in an endothermic one ΔH > 0 (heat is absorbed)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Energy value: **“4 — 4 — 9”** kcal/g: carbohydrates — 4, proteins — 4, fats — 9 (alcohol — 7)."},
+  {"kind": "diqqat", "label": "Caution", "text": "Thermodynamics answers whether a reaction **can occur**, but not **how fast** it goes. The oxidation of glucose has ΔG < 0, yet glucose does not burn spontaneously in air — an enzyme (catalyst) is needed."}
+ ],
+ "sections": [
+  {"title": "1. Basic concepts. Specific heat capacity", "blocks": [
+   {"type": "p", "text": "**Chemical thermodynamics** is the science that studies the conversion of energy from one form to another in chemical and physical processes, and the direction of processes and the conditions of equilibrium. Its laws apply fully to the living organism as well — this is studied by **bioenergetics**."},
+   {"type": "table", "title": "Table 5.1. Thermodynamic systems", "head": ["System", "Exchange with the surroundings", "Example"], "rows": [["Open", "matter and energy", "a living organism, a cell"], ["Closed", "energy only", "a sealed flask, a reaction in a thermos (partly)"], ["Isolated", "neither matter nor energy", "an ideal calorimeter, the universe"]]},
+   {"type": "p", "text": "**State functions** are quantities whose value depends only on the initial and final state of the system, not on the path between them: internal energy (U), enthalpy (H), entropy (S) and Gibbs energy (G). Heat (Q) and work (A), on the other hand, are not state functions."},
+   {"type": "p", "text": "**Specific heat capacity** (c) is the amount of heat needed to warm 1 g of a substance by 1 K, J/(g·K). Amount of heat: Q = c·m·ΔT. Water has a very high specific heat capacity — **4.18 J/(g·K)**; that is why water (≈ 60 % of body mass) keeps body temperature stable. Energy units: 1 cal = 4.184 J."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Types of energy:** kinetic and potential, thermal, chemical (bond energy), electrical, light and mechanical. In the body, the chemical energy of nutrients is converted into the energy of ATP, and then into mechanical (muscle), electrical (nerve impulse), osmotic (ion transport) and chemical (synthesis) work; the rest is released as heat."}]}
+  ]},
+  {"title": "2. The 1st law of thermodynamics. Enthalpy", "blocks": [
+   {"type": "p", "text": "**The 1st law of thermodynamics** (the law of conservation of energy): heat supplied to a system is used to increase its internal energy and to do work against external forces: Q = ΔU + A, where A = p·ΔV. Energy is neither created nor destroyed; it only changes from one form to another."},
+   {"type": "p", "text": "Most chemical and biological processes occur at **constant pressure**. In this case the heat effect equals the change in **enthalpy**: Q~p~ = ΔH, where H = U + pV. Values measured at standard conditions (298 K, 101.3 kPa) are marked with °: ΔH°."},
+   {"type": "list", "ordered": false, "items": ["**Exothermic** reaction — heat is released, ΔH < 0 (combustion, neutralization, oxidation of glucose).", "**Endothermic** reaction — heat is absorbed, ΔH > 0 (decomposition of CaCO~3~, dissolution of NH~4~NO~3~ in water).", "**Thermochemical equation** — an equation showing the heat effect and the physical states of the substances: H~2~(g) + ½O~2~(g) → H~2~O(l); ΔH° = −285.8 kJ."]},
+   {"type": "img", "src": "data/img/tkm/t05_entalpiya.webp", "w": 1400, "h": 700, "label": "Figure 5.1", "caption": "Energy diagram of exothermic (ΔH < 0) and endothermic (ΔH > 0) reactions; E~a~ is the activation energy (diagram)."}
+  ]},
+  {"title": "3. Hess’s law and its corollaries", "blocks": [
+   {"type": "p", "text": "**Hess’s law** (1840): the heat effect of a reaction depends only on the nature and state of the initial and final substances, and not on the path (number of steps) by which the reaction takes place. For example, whether glucose is oxidized in the body in dozens of steps or burns instantly in a calorimeter, the total heat released is the same."},
+   {"type": "img", "src": "data/img/tkm/t05_gess.webp", "w": 1400, "h": 760, "label": "Figure 5.2", "caption": "Hess’s law: the heat of direct combustion of carbon to CO~2~ equals the heat of two-step combustion through CO: ΔH~1~ = ΔH~2~ + ΔH~3~ (diagram)."},
+   {"type": "list", "ordered": true, "items": ["**1st corollary:** the heat effect of a reaction equals the sum of the enthalpies of formation of the products minus the sum of the enthalpies of formation of the reactants: ΔH°~r~ = ΣΔH°~f~(products) − ΣΔH°~f~(reactants). The enthalpy of formation of simple substances (O~2~, H~2~, C graphite) is 0.", "**2nd corollary:** the heat effect equals the sum of the enthalpies of combustion of the reactants minus the sum of the enthalpies of combustion of the products: ΔH°~r~ = ΣΔH°~c~(reactants) − ΣΔH°~c~(products).", "**Lavoisier–Laplace law:** the heat effects of the forward and reverse reactions are equal in magnitude and opposite in sign."]},
+   {"type": "p", "text": "**Example:** the heat of oxidation of glucose. C~6~H~12~O~6~(s) + 6O~2~(g) → 6CO~2~(g) + 6H~2~O(l). ΔH°~f~: glucose −1273.3; CO~2~ −393.5; H~2~O(l) −285.8 kJ/mol. ΔH°~r~ = 6·(−393.5) + 6·(−285.8) − (−1273.3) = −2802.5 kJ/mol."},
+   {"type": "table", "title": "Table 5.2. Energy value of nutrients (in the body)", "head": ["Substance", "kJ/g", "kcal/g"], "rows": [["Carbohydrates", "17.2", "4.1"], ["Proteins", "17.2", "4.1"], ["Fats", "38.9", "9.3"], ["Ethanol", "29.7", "7.1"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The heat of combustion of protein in a calorimeter (≈ 23 kJ/g) is greater than in the body (17.2 kJ/g): in the body protein is oxidized not to CO~2~, H~2~O and N~2~ but to **urea**, and urea carries away energy that could still be released by burning."}]}
+  ]},
+  {"title": "4. The 2nd law of thermodynamics. Entropy and Gibbs energy", "blocks": [
+   {"type": "p", "text": "**Entropy** (S) is a measure of the disorder of a system; the Boltzmann equation is S = k·lnW (W is the number of possible microstates of the system). Entropy **increases** in the transitions solid → liquid → gas, on dissolution, and when molecules break down and the number of particles grows."},
+   {"type": "p", "text": "**The 2nd law of thermodynamics:** in an isolated system, spontaneous processes proceed with an increase in entropy (ΔS > 0). Heat flows spontaneously only from a hot body to a cold one."},
+   {"type": "p", "text": "In closed and open systems the criterion of direction is the **Gibbs free energy**: ΔG = ΔH − T·ΔS. ΔG < 0 — the process occurs spontaneously (**exergonic**), ΔG > 0 — it does not occur spontaneously (**endergonic**), ΔG = 0 — equilibrium. The standard Gibbs energy is related to the equilibrium constant: ΔG° = −R·T·lnK."},
+   {"type": "table", "title": "Table 5.3. Direction of a process according to the signs of ΔH and ΔS", "head": ["ΔH", "ΔS", "ΔG = ΔH − TΔS", "Process"], "rows": [["< 0", "> 0", "always < 0", "spontaneous at any temperature"], ["> 0", "< 0", "always > 0", "never spontaneous"], ["< 0", "< 0", "< 0 at low temperature", "occurs at low temperature (for example, protein folding)"], ["> 0", "> 0", "< 0 at high temperature", "occurs at high temperature (for example, melting, denaturation)"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "A living organism is an **open system**: it maintains a high internal order (low entropy) by taking ordered nutrients from the environment and releasing disordered products (CO~2~, H~2~O, heat) (I. Prigogine). Death is the stopping of the order-maintaining mechanisms and an increase in entropy."}]}
+  ]},
+  {"title": "5. Energetically coupled reactions. ATP", "blocks": [
+   {"type": "p", "text": "Many necessary reactions in the body are endergonic (ΔG > 0). They take place through **energy coupling** (coupled reactions): an endergonic reaction is linked by one enzyme with an exergonic reaction — most often **ATP hydrolysis**; if the total ΔG is negative, both proceed."},
+   {"type": "list", "ordered": false, "items": ["ATP + H~2~O → ADP + H~3~PO~4~; ΔG°′ = −30.5 kJ/mol.", "Glucose + H~3~PO~4~ → glucose 6-phosphate + H~2~O; ΔG°′ = +13.8 kJ/mol.", "Coupled reaction: glucose + ATP → glucose 6-phosphate + ADP; ΔG°′ = −30.5 + 13.8 = −16.7 kJ/mol (hexokinase)."]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "ATP is the **energy “currency”**: it does not store energy but carries it from where it is produced (the mitochondria) to where it is used. A person resynthesizes and breaks down an amount of ATP close to his own body mass every day."}]}
+  ]},
+  {"title": "6. Laboratory work: determining the heat effect of a neutralization reaction", "blocks": [
+   {"type": "p", "text": "**Principle of the method:** when a strong acid is neutralized by a strong base, only the reaction H^+^ + OH^−^ → H~2~O occurs, so the heat effect does not depend on the nature of the acid and base: ΔH° ≈ −57 kJ/mol. The heat released is calculated from the rise in temperature of the solution in the calorimeter."},
+   {"type": "sub", "text": "Equipment:"},
+   {"type": "p", "text": "a simple calorimeter (two beakers: an inner beaker and an insulating layer, a lid), a thermometer reading to 0.1 °C, measuring cylinders, 1 M HCl and 1 M NaOH solutions."},
+   {"type": "list", "ordered": true, "items": ["Pour 50 mL of 1 M HCl into the inner beaker of the calorimeter and record its temperature (t~1~) after 3–5 minutes.", "Measure the temperature of 50 mL of 1 M NaOH in another cylinder (it should equal t~1~).", "Quickly pour the NaOH into the calorimeter, close the lid and stir with the thermometer.", "Record the highest temperature reached (t~2~).", "Calculate the heat effect."]},
+   {"type": "sub", "text": "Calculation:"},
+   {"type": "p", "text": "Mass of solution m = 100 g (ρ ≈ 1 g/mL), c = 4.18 J/(g·K). For example, if ΔT = t~2~ − t~1~ = 6.7 K: Q = 4.18 · 100 · 6.7 = 2800 J. Amount of substance reacted n = 1 · 0.05 = 0.05 mol. ΔH = −Q / n = −2800 / 0.05 = −56 000 J/mol = **−56 kJ/mol**. The difference from the theoretical value (≈ 2 %) is due to heat absorbed by the calorimeter walls and heat losses."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Heats of dissolution are also used in medicine: in **cold packs** NH~4~NO~3~ absorbs heat when it dissolves in water (ΔH > 0) — they are used for injuries and fever; **hot packs** use exothermic processes such as the dissolution of CaCl~2~ or the oxidation of iron."}]}
+  ]},
+  {"title": "7. Energy production and expenditure in metabolism (independent work)", "blocks": [
+   {"type": "p", "text": "The body obtains energy from the oxidation of nutrients. The common pathway of catabolism is acetyl-CoA, the Krebs cycle and the respiratory chain; ≈ 40 % of the energy is converted into ATP, and the rest is released as **heat**, which maintains body temperature."},
+   {"type": "list", "ordered": false, "items": ["**Basal metabolism** is the minimum energy expenditure needed for life at rest, fasting, at a comfortable temperature: in adults ≈ 1600–1800 kcal (≈ 7000 kJ) per day.", "**Total daily expenditure** depends on physical activity: mental work — 2500–2800 kcal, heavy physical work — 3500–4500 kcal.", "**Direct calorimetry** measures the heat released by the body in a special chamber; **indirect calorimetry** calculates it from O~2~ consumption and CO~2~ release.", "**Respiratory quotient** (RQ = V(CO~2~) / V(O~2~)): carbohydrates — 1.0, proteins — 0.8, fats — 0.7; on a mixed diet ≈ 0.85."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Energy balance: if intake exceeds expenditure, the excess energy is stored as **fat** (1 kg of adipose tissue ≈ 7700 kcal). Thyroid hormones raise basal metabolism (weight loss in thyrotoxicosis, weight gain in hypothyroidism)."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: calculating a heat effect with Hess’s law", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Balance the reaction equation fully and show the physical states of the substances.", "Take the ΔH°~f~ values of all substances from a reference table (0 for simple substances).", "Multiply each value by its coefficient in the equation.", "Calculate ΔH°~r~ = Σ(products) − Σ(reactants).", "Use the sign to say whether the reaction is exo- or endothermic."]}]},
+  {"title": "Skill: calorimetric measurement", "blocks": [
+   {"type": "list", "ordered": true, "items": ["The calorimeter must be clean and dry, and the solutions at the same initial temperature.", "Mix the solutions quickly and close the lid at once.", "Record the temperature every 15 seconds and find the highest value.", "Calculate the heat from Q = c·m·ΔT, then ΔH per 1 mole.", "Compare with the theoretical value, find the relative error and analyze its causes."]}]}
+ ],
+ "questions": [
+  "What types of thermodynamic systems are there? Which type is a living organism?",
+  "What are state functions? Give examples.",
+  "What is specific heat capacity, and why is the high heat capacity of water important?",
+  "State the 1st law of thermodynamics.",
+  "What is enthalpy? Distinguish exo- and endothermic reactions.",
+  "Explain Hess’s law and its corollaries.",
+  "Why is the energy value of protein in the body lower than in a calorimeter?",
+  "What is entropy? State the 2nd law of thermodynamics.",
+  "How is the Gibbs free energy calculated and what does it show?",
+  "What are energetically coupled reactions? Explain using hexokinase.",
+  "Why does the heat of neutralization not depend on the nature of the acid and base?",
+  "What is basal metabolism and how is it measured?",
+  "What does the respiratory quotient show?"
+ ],
+ "quiz": [
+  {"q": "What kind of thermodynamic system is a living organism?", "options": ["Open", "Closed", "Isolated", "Adiabatic", "At equilibrium"], "answer": 0},
+  {"q": "Which quantity is not a state function?", "options": ["Heat", "Enthalpy", "Entropy", "Internal energy", "Gibbs energy"], "answer": 0},
+  {"q": "What is the specific heat capacity of water?", "options": ["4.18 J/(g·K)", "1.00 J/(g·K)", "0.52 J/(g·K)", "8.31 J/(g·K)", "2.09 J/(g·K)"], "answer": 0},
+  {"q": "At constant pressure, the heat effect of a reaction equals what?", "options": ["The change in enthalpy", "The change in entropy", "The change in internal energy", "The Gibbs energy", "The work done"], "answer": 0},
+  {"q": "What is ΔH in an exothermic reaction?", "options": ["ΔH < 0", "ΔH > 0", "ΔH = 0", "ΔH = ΔS", "ΔH = ΔG"], "answer": 0},
+  {"q": "What is the standard enthalpy of formation of simple substances?", "options": ["0", "−1", "1", "It varies", "−285.8 kJ/mol"], "answer": 0},
+  {"q": "According to Hess’s law, the heat effect does not depend on what?", "options": ["The reaction path", "The reactants", "The products", "The physical states of the substances", "The amounts of substances"], "answer": 0},
+  {"q": "How much energy is released when 1 g of fat is oxidized in the body?", "options": ["38.9 kJ (9.3 kcal)", "17.2 kJ (4.1 kcal)", "29.7 kJ (7.1 kcal)", "4.18 kJ (1 kcal)", "57 kJ (13.6 kcal)"], "answer": 0},
+  {"q": "What condition must be met for a process to occur spontaneously?", "options": ["ΔG < 0", "ΔG > 0", "ΔH > 0", "ΔS < 0", "ΔG = 0"], "answer": 0},
+  {"q": "How does entropy change in a spontaneous process in an isolated system?", "options": ["It increases", "It decreases", "It does not change", "It becomes zero", "It first decreases, then increases"], "answer": 0},
+  {"q": "What is the standard Gibbs energy of ATP hydrolysis?", "options": ["−30.5 kJ/mol", "+30.5 kJ/mol", "−2802.5 kJ/mol", "+13.8 kJ/mol", "−57 kJ/mol"], "answer": 0},
+  {"q": "What is the approximate heat of neutralization of a strong acid by a strong base?", "options": ["−57 kJ/mol", "−285.8 kJ/mol", "+57 kJ/mol", "−2800 kJ/mol", "−30.5 kJ/mol"], "answer": 0},
+  {"q": "What is the respiratory quotient when fats are oxidized?", "options": ["0.7", "1.0", "0.8", "0.85", "1.2"], "answer": 0},
+  {"q": "What is the approximate basal metabolism of an adult per day?", "options": ["1600–1800 kcal", "500–700 kcal", "4000–5000 kcal", "100–200 kcal", "8000–9000 kcal"], "answer": 0},
+  {"q": "What is observed when NH~4~NO~3~ dissolves in water?", "options": ["Heat is absorbed (the solution cools)", "Heat is released", "The temperature does not change", "A gas is released", "A precipitate forms"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A patient eats 300 g of carbohydrates, 80 g of protein and 70 g of fat per day.", "ask": "Calculate the energy value of the diet in kcal and kJ. Does it cover the expenditure of a person doing mental work?", "answer": "Carbohydrates: 300 · 4.1 = 1230 kcal; proteins: 80 · 4.1 = 328 kcal; fats: 70 · 9.3 = 651 kcal. Total ≈ 2209 kcal ≈ 9242 kJ (1 kcal = 4.184 kJ). The expenditure of a person doing mental work is 2500–2800 kcal — the diet falls slightly short, and in the long term body mass will decrease."},
+  {"title": "Problem 2", "text": "In the body, glucose is oxidized to CO~2~ and H~2~O in dozens of steps through glycolysis, the Krebs cycle and the respiratory chain. In a calorimeter it burns in an instant.", "ask": "In which case is more heat released? Justify your answer and calculate ΔH for 1 mole of glucose (ΔH°~f~: glucose −1273.3; CO~2~ −393.5; H~2~O −285.8 kJ/mol).", "answer": "According to Hess’s law the total heat effect is the same in both cases, because the initial and final substances are the same: ΔH = 6·(−393.5) + 6·(−285.8) − (−1273.3) = −2802.5 kJ/mol. The difference is that in the body part of this energy (≈ 40 %) goes not into heat but into ATP, and is then used to do work."},
+  {"title": "Problem 3", "text": "In a calorimeter, 50 mL of 1 M HCl and 50 mL of 1 M NaOH were mixed; the temperature rose from 21.0 °C to 27.6 °C (c = 4.18 J/(g·K), ρ = 1 g/mL).", "ask": "Calculate the heat of neutralization and compare it with the theoretical value.", "answer": "ΔT = 6.6 K; Q = 4.18 · 100 · 6.6 = 2759 J; n = 0.05 mol; ΔH = −2759 / 0.05 = −55 180 J/mol ≈ −55.2 kJ/mol. The theoretical value is ≈ −57 kJ/mol, and the relative error is ≈ 3 %: the calorimeter walls and the thermometer absorbed part of the heat, and part was lost to the air."}
+ ],
+ "cards": [
+  {"front": "Open system", "back": "Exchanges matter and energy with its surroundings (a living organism)"},
+  {"front": "State function", "back": "A quantity that depends only on the initial and final state: U, H, S, G"},
+  {"front": "1st law of thermodynamics", "back": "Q = ΔU + A — the law of conservation of energy"},
+  {"front": "Enthalpy", "back": "H = U + pV; heat effect at constant pressure Q~p~ = ΔH"},
+  {"front": "Hess’s law", "back": "The heat effect does not depend on the reaction path"},
+  {"front": "Entropy", "back": "A measure of disorder, S = k·lnW"},
+  {"front": "Gibbs energy", "back": "ΔG = ΔH − TΔS; ΔG < 0 — the process is spontaneous"},
+  {"front": "Energy coupling", "back": "An endergonic reaction proceeding together with ATP hydrolysis"},
+  {"front": "Heat of neutralization", "back": "H^+^ + OH^−^ → H~2~O; ΔH° ≈ −57 kJ/mol"},
+  {"front": "Respiratory quotient", "back": "V(CO~2~) / V(O~2~): carbohydrates 1.0, proteins 0.8, fats 0.7"}
+ ]
+}

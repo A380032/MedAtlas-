@@ -1,0 +1,118 @@
+{
+ "id": "04",
+ "no": 4,
+ "title": "Kislota-asosli muvozanat. Bufer sistemalar",
+ "goals": [
+  {"type": "p", "text": "Talabaga suvning ion ko‘paytmasi va pH tushunchasini, bufer sistemalar, ularning tasnifi va ta’sir mexanizmini, bufer sig‘imini, bufer eritmalar pH ini hisoblash formulalarini, organizmning bufer sistemalari, qonning ishqoriy zahirasi, atsidoz va alkaloz haqida bilim berish hamda turli pH dagi fosfat bufer eritmasini tayyorlashni o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["suvning ion ko‘paytmasi, pH va pOH tushunchalarini, biologik suyuqliklarning pH qiymatlarini;", "bufer sistema ta’rifi, tasnifi va ta’sir mexanizmini;", "Genderson–Gasselbax tenglamasini va bufer sig‘imini;", "qonning bufer sistemalari (gidrokarbonat, fosfat, gemoglobin, oqsil) va ularning ulushini;", "ishqoriy zahira tushunchasini;", "atsidoz va alkalozning turlari va sabablarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["kuchli va kuchsiz elektrolit eritmalarining pH ini hisoblash;", "kerakli pH dagi bufer eritmani hisoblash va tayyorlash;", "bufer sig‘imini tajribada baholash;", "qonning kislota-asos holati ko‘rsatkichlarini talqin qilish."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Qon pH i **7,35–7,45**. Gidrokarbonat buferida [HCO~3~^−^] : [H~2~CO~3~] = **20 : 1**, shuning uchun pH = 6,1 + lg20 = 7,4. Hayot bilan mos keladigan chegaralar — taxminan pH 6,8–7,8."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "**“Nafas — CO~2~, buyrak — HCO~3~^−^”**: respirator buzilishlarda birlamchi o‘zgarish pCO~2~ da, metabolik buzilishlarda — HCO~3~^−^ da. pH va birlamchi ko‘rsatkich metabolik buzilishda bir yo‘nalishda (ikkalasi ↓ yoki ikkalasi ↑) o‘zgaradi."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Bufer pH ni **ma’lum chegaragacha** ushlaydi: uning ta’sir oralig‘i taxminan pK~a~ ± 1. Bufer komponentlaridan biri tugasa (masalan, ketoatsidozda HCO~3~^−^ sarflanib bo‘lsa), pH keskin o‘zgaradi."}
+ ],
+ "sections": [
+  {"title": "1. Suvning ion ko‘paytmasi va vodorod ko‘rsatkichi", "blocks": [
+   {"type": "p", "text": "Suv juda kuchsiz elektrolit: H~2~O ⇄ H^+^ + OH^−^. 25 °C da **suvning ion ko‘paytmasi** K~w~ = [H^+^]·[OH^−^] = 10^−14^. Neytral muhitda [H^+^] = [OH^−^] = 10^−7^ mol/l."},
+   {"type": "p", "text": "**Vodorod ko‘rsatkichi** pH = −lg[H^+^], **gidroksil ko‘rsatkichi** pOH = −lg[OH^−^], pH + pOH = 14. pH < 7 — kislotali, pH = 7 — neytral, pH > 7 — ishqoriy muhit."},
+   {"type": "list", "ordered": false, "items": ["**Kuchli kislota:** pH = −lg C (0,01 M HCl uchun pH = 2).", "**Kuchli asos:** pOH = −lg C, pH = 14 − pOH (0,01 M NaOH uchun pH = 12).", "**Kuchsiz kislota:** pH = ½(pK~a~ − lg C) (0,1 M CH~3~COOH, pK~a~ = 4,76 uchun pH = 2,88)."]},
+   {"type": "table", "title": "Jadval 4.1. Biologik suyuqliklarning pH qiymatlari", "head": ["Suyuqlik", "pH"], "rows": [["Arterial qon", "7,35–7,45"], ["Hujayra ichi suyuqligi", "≈ 6,9–7,2"], ["Me’da shirasi", "1,5–2,0"], ["O‘n ikki barmoqli ichak shirasi", "7,5–8,5"], ["So‘lak", "6,4–7,4"], ["Siydik", "4,5–8,0 (o‘rtacha ≈ 6)"], ["Orqa miya suyuqligi", "7,3–7,4"]]}
+  ]},
+  {"title": "2. Bufer sistemalar haqida tushuncha va ularning tasnifi", "blocks": [
+   {"type": "p", "text": "**Bufer sistema** — oz miqdorda kuchli kislota yoki ishqor qo‘shilganda, shuningdek suyultirilganda pH ini deyarli o‘zgarmas saqlaydigan eritma. U ikki komponentdan iborat: protonlar donori (kuchsiz kislota) va protonlar akseptori (uning tuzi — qo‘shma asos)."},
+   {"type": "table", "title": "Jadval 4.2. Bufer sistemalarning tasnifi", "head": ["Turi", "Tarkibi", "Misol"], "rows": [["Kislotali", "kuchsiz kislota + uning kuchli asos bilan hosil qilgan tuzi", "CH~3~COOH / CH~3~COONa (atsetat), H~2~CO~3~ / NaHCO~3~"], ["Asosli", "kuchsiz asos + uning kuchli kislota bilan hosil qilgan tuzi", "NH~3~·H~2~O / NH~4~Cl (ammiakli)"], ["Tuzli", "ko‘p negizli kislotaning nordon tuzlari", "NaH~2~PO~4~ / Na~2~HPO~4~ (fosfat)"], ["Amfolitli", "amfoter birikmalar", "aminokislotalar, oqsillar"]]}
+  ]},
+  {"title": "3. Bufer ta’sir mexanizmi", "blocks": [
+   {"type": "p", "text": "Atsetat bufer misolida: eritmada CH~3~COOH (kam dissotsilangan) va CH~3~COO^−^ (tuzdan to‘liq hosil bo‘lgan) ko‘p miqdorda bor."},
+   {"type": "list", "ordered": false, "items": ["**Kislota qo‘shilsa**, H^+^ ionlarini tuz anioni bog‘laydi: CH~3~COO^−^ + H^+^ → CH~3~COOH. Kuchli kislota kuchsiz kislotaga almashadi, pH kam pasayadi.", "**Ishqor qo‘shilsa**, OH^−^ ionlarini kuchsiz kislota neytrallaydi: CH~3~COOH + OH^−^ → CH~3~COO^−^ + H~2~O. pH kam oshadi.", "**Suyultirilganda** komponentlar nisbati o‘zgarmaydi, shuning uchun pH ham deyarli o‘zgarmaydi."]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Qonda xuddi shunday: HCO~3~^−^ + H^+^ → H~2~CO~3~ → CO~2~↑ + H~2~O (CO~2~ o‘pka orqali chiqariladi); H~2~CO~3~ + OH^−^ → HCO~3~^−^ + H~2~O. Gidrokarbonat buferining kuchi — u **ochiq sistema**: o‘pka CO~2~ ni, buyrak HCO~3~^−^ ni boshqaradi."}]}
+  ]},
+  {"title": "4. Bufer eritmalar pH ini hisoblash. Bufer sig‘imi", "blocks": [
+   {"type": "p", "text": "**Genderson–Gasselbax tenglamasi:** kislotali bufer uchun pH = pK~a~ + lg([tuz] / [kislota]); asosli bufer uchun pOH = pK~b~ + lg([tuz] / [asos]), pH = 14 − pOH. Komponentlar konsentratsiyasi teng bo‘lsa, pH = pK~a~."},
+   {"type": "p", "text": "**Misol:** 0,1 M CH~3~COOH va 0,1 M CH~3~COONa ning 1 : 1 aralashmasida pH = 4,76 + lg1 = 4,76. Agar 1 l shu buferga 0,01 mol HCl qo‘shilsa: [tuz] = 0,09, [kislota] = 0,11; pH = 4,76 + lg(0,09 / 0,11) = 4,67 — pH atigi 0,09 ga o‘zgardi. Xuddi shuncha HCl 1 l suvga qo‘shilsa, pH 7 dan 2 ga tushadi."},
+   {"type": "p", "text": "**Bufer sig‘imi** (B) — 1 l bufer eritmaning pH ini 1 birlikka o‘zgartirish uchun qo‘shilishi kerak bo‘lgan kuchli kislota yoki ishqorning mol-ekvivalentlari soni: B = Δn / (ΔpH · V). Bufer sig‘imi komponentlar **konsentratsiyasi** qancha katta va ularning **nisbati 1 : 1 ga** qancha yaqin bo‘lsa, shuncha katta."},
+   {"type": "img", "src": "data/img/tkm/t04_bufer.webp", "w": 1400, "h": 900, "label": "Rasm 4.1", "caption": "Kuchsiz kislotani (0,1 M CH~3~COOH) kuchli asos bilan titrlash egri chizig‘i: pK~a~ ± 1 oralig‘ida bufer sohasi, yarim neytrallanish nuqtasida pH = pK~a~ (hisoblangan ma’lumotlar asosida chizilgan)."}
+  ]},
+  {"title": "5. Organizmning bufer sistemalari", "blocks": [
+   {"type": "table", "title": "Jadval 4.3. Qonning bufer sistemalari", "head": ["Bufer sistema", "Komponentlari", "pK~a~", "Qon bufer sig‘imidagi ulushi"], "rows": [["Gidrokarbonat", "H~2~CO~3~ / HCO~3~^−^", "6,1", "≈ 53 %"], ["Gemoglobin", "HHb / Hb^−^, HHbO~2~ / HbO~2~^−^", "≈ 8,2 (HHb), ≈ 6,95 (HHbO~2~)", "≈ 35 %"], ["Plazma oqsillari", "oqsil–H / oqsil^−^ (gistidin imidazoli)", "≈ 6–7", "≈ 7 %"], ["Fosfat", "H~2~PO~4~^−^ / HPO~4~^2−^", "6,8", "≈ 5 %"]]},
+   {"type": "p", "text": "**Gidrokarbonat bufer** — hujayradan tashqari suyuqlikning asosiy buferi. Plazmada [HCO~3~^−^] = 22–26 mmol/l, [H~2~CO~3~] = 0,03 · pCO~2~ = 0,03 · 40 = 1,2 mmol/l; nisbat 24 : 1,2 = 20 : 1."},
+   {"type": "p", "text": "**Fosfat bufer** — hujayra ichi suyuqligi va siydikning asosiy buferi; qonda [HPO~4~^2−^] : [H~2~PO~4~^−^] = 4 : 1 (pH = 6,8 + lg4 = 7,4). Buyrak kanalchalarida H~2~PO~4~^−^ holida H^+^ ionlarini siydikka chiqaradi (titrlanadigan kislotalilik)."},
+   {"type": "p", "text": "**Gemoglobin bufer** to‘qimalarda va o‘pkada ishlaydi: oksigemoglobin dezoksigemoglobindan kuchliroq kislota. To‘qimada O~2~ berilgach, Hb kuchsizroq kislotaga aylanib, H^+^ ni bog‘laydi (CO~2~ dan hosil bo‘lgan); o‘pkada aksincha (Bor effekti)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Qonning ishqoriy zahirasi** — 100 ml plazma pCO~2~ = 40 mm sim. ust. da bog‘lay oladigan CO~2~ miqdori: me’yorda **50–70 hajm %**. Zamonaviy amaliyotda uning o‘rniga **standart gidrokarbonat** (SB, 22–26 mmol/l) va **asoslar ortiqchaligi** (BE, 0 ± 2,3 mmol/l) ishlatiladi."}]}
+  ]},
+  {"title": "6. Atsidoz va alkaloz", "blocks": [
+   {"type": "p", "text": "Qon pH i **7,35 dan past** bo‘lsa — **atsidoz**, **7,45 dan yuqori** bo‘lsa — **alkaloz**. Kelib chiqishiga ko‘ra **respirator** (nafas bilan bog‘liq, birlamchi o‘zgarish — pCO~2~) va **metabolik** (birlamchi o‘zgarish — HCO~3~^−^) turlari farqlanadi. Organizm buzilishni boshqa tizim orqali **kompensatsiya** qiladi: metabolikni — nafas bilan, respiratorni — buyrak bilan."},
+   {"type": "table", "title": "Jadval 4.4. Kislota-asos holati buzilishlari", "head": ["Buzilish", "pH", "Birlamchi o‘zgarish", "Kompensatsiya", "Sabablari"], "rows": [["Respirator atsidoz", "↓", "pCO~2~ ↑ (> 45 mm sim. ust.)", "buyrak HCO~3~^−^ ni ushlaydi", "gipoventilyatsiya: SOO‘K, astma xuruji, nafas markazi bosilishi (opioidlar)"], ["Metabolik atsidoz", "↓", "HCO~3~^−^ ↓ (< 22 mmol/l)", "giperventilyatsiya (Kussmaul nafasi)", "diabetik ketoatsidoz, laktatatsidoz, buyrak yetishmovchiligi, diareya"], ["Respirator alkaloz", "↑", "pCO~2~ ↓ (< 35 mm sim. ust.)", "buyrak HCO~3~^−^ ni chiqaradi", "giperventilyatsiya: xavotir, baland tog‘, isitma"], ["Metabolik alkaloz", "↑", "HCO~3~^−^ ↑ (> 26 mmol/l)", "gipoventilyatsiya", "ko‘p qusish (HCl yo‘qotish), diuretiklar, gipokaliyemiya"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Metabolik atsidozni davolashda natriy gidrokarbonat (4 % li NaHCO~3~) ehtiyotkorlik bilan yuboriladi, ammo asosiy davo — **sababini bartaraf etish**: diabetik ketoatsidozda insulin va suyuqlik, laktatatsidozda to‘qima perfuziyasini tiklash."}]}
+  ]},
+  {"title": "7. Laboratoriya ishi: turli pH dagi fosfat bufer eritmasini tayyorlash", "blocks": [
+   {"type": "p", "text": "**Usul asosi:** 1/15 M KH~2~PO~4~ (kislota komponent) va 1/15 M Na~2~HPO~4~ (tuz komponent) eritmalarini har xil nisbatda aralashtirib, Genderson–Gasselbax tenglamasi bo‘yicha kerakli pH olinadi. Shu konsentratsiyada H~2~PO~4~^−^ ning amaliy pK~a~ i ≈ 6,8."},
+   {"type": "table", "title": "Jadval 4.5. Fosfat bufer eritmalarini tayyorlash (umumiy hajm 10 ml)", "head": ["Probirka", "Na~2~HPO~4~, ml", "KH~2~PO~4~, ml", "Nisbat tuz : kislota", "Hisoblangan pH"], "rows": [["1", "2", "8", "1 : 4", "6,8 + lg0,25 = 6,2"], ["2", "5", "5", "1 : 1", "6,8"], ["3", "8", "2", "4 : 1", "6,8 + lg4 = 7,4"]]},
+   {"type": "list", "ordered": true, "items": ["Uchta probirkaga jadvaldagi hajmlarni byuretka yoki pipetka bilan aniq o‘lchab soling va aralashtiring.", "Har bir eritmaning pH ini pH-metr yoki universal indikator qog‘ozi bilan o‘lchang va hisoblangan qiymat bilan solishtiring.", "**Bufer ta’sirini tekshirish:** 2-probirkadan va distillangan suvdan 5 ml dan olib, har biriga 0,1 M HCl dan 0,5 ml qo‘shing va pH ni qayta o‘lchang.", "**Suyultirish ta’siri:** 2-probirkadagi buferdan 1 ml olib, 9 ml suv bilan suyultiring va pH ni o‘lchang.", "Natijalarni jadvalga yozib, xulosa chiqaring."]},
+   {"type": "img", "src": "data/img/tkm/t04_phmetr.webp", "w": 1000, "h": 750, "label": "Rasm 4.2", "caption": "Laboratoriya pH-metri: shisha elektrod eritmaga botirilgan holda pH o‘lchanmoqda (Wikimedia Commons, CC BY-SA)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Kutilgan natija: suvga HCl qo‘shilganda pH 7 dan ≈ 2 ga tushadi, buferda esa atigi bir necha o‘ndan biriga o‘zgaradi; 10 marta suyultirilganda bufer pH i deyarli o‘zgarmaydi."}]}
+  ]},
+  {"title": "8. Siydik pH i va tosh hosil bo‘lishi (mustaqil ish)", "blocks": [
+   {"type": "p", "text": "Buyraklar organizmdan ortiqcha kislotani (sutkasiga ≈ 50–100 mmol H^+^) fosfat bufer (titrlanadigan kislotalilik) va ammoniy (NH~4~^+^) holida chiqaradi. Shuning uchun siydik pH i ovqatlanish va kasalliklarga qarab 4,5 dan 8,0 gacha o‘zgaradi va tosh hosil bo‘lishiga bevosita ta’sir qiladi."},
+   {"type": "list", "ordered": false, "items": ["**Kislotali siydik** (go‘shtli ovqat, podagra, metabolik sindrom) — siydik kislota kam dissotsilanadi va kristallanadi: **urat toshlari**.", "**Ishqoriy siydik** (o‘simlik ovqati, ureaza hosil qiluvchi infeksiya — Proteus) — fosfat tuzlari cho‘kadi: **fosfat va struvit toshlari**.", "Davolashda siydik pH i maqsadli o‘zgartiriladi: uratlarda kaliy sitrat bilan ishqorlanadi, fosfatlarda kislotalanadi."]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: kerakli pH dagi bufer eritmani hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["pK~a~ i kerakli pH ga eng yaqin (± 1) bo‘lgan kuchsiz kislotani tanlang.", "Genderson–Gasselbax tenglamasidan nisbatni toping: lg([tuz] / [kislota]) = pH − pK~a~.", "Konsentratsiyalari teng eritmalar uchun hajmlar nisbati shu nisbatga teng.", "Umumiy hajmni nisbat bo‘yicha taqsimlang (masalan, 4 : 1 da 10 ml uchun 8 ml + 2 ml).", "Tayyorlangan eritmaning pH ini pH-metrda tekshiring va kerak bo‘lsa tuzating."]}]},
+  {"title": "Ko‘nikma: qon kislota-asos holatini talqin qilish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["pH ga qarang: < 7,35 — atsidoz, > 7,45 — alkaloz.", "pCO~2~ ni baholang (me’yor 35–45 mm sim. ust.): pH bilan qarama-qarshi yo‘nalishda o‘zgargan bo‘lsa — respirator buzilish.", "HCO~3~^−^ ni baholang (me’yor 22–26 mmol/l): pH bilan bir yo‘nalishda o‘zgargan bo‘lsa — metabolik buzilish.", "Ikkinchi ko‘rsatkichning o‘zgarishi kompensatsiyani ko‘rsatadi.", "Klinik holat bilan solishtirib, sababini aniqlang."]}]}
+ ],
+ "questions": [
+  "Suvning ion ko‘paytmasi nima? pH va pOH qanday bog‘langan?",
+  "Kuchli va kuchsiz kislota eritmalarining pH i qanday hisoblanadi?",
+  "Bufer sistema nima va u qanday tasniflanadi?",
+  "Atsetat bufer misolida bufer ta’sir mexanizmini tushuntiring.",
+  "Genderson–Gasselbax tenglamasini yozing va tushuntiring.",
+  "Bufer sig‘imi nima va u nimalarga bog‘liq?",
+  "Qonning bufer sistemalarini va ularning ulushini sanang.",
+  "Nima uchun qon pH ida gidrokarbonat buferining nisbati 20 : 1?",
+  "Gemoglobin bufer qanday ishlaydi?",
+  "Ishqoriy zahira nima?",
+  "Respirator va metabolik atsidozning farqi va sabablari qanday?",
+  "Metabolik alkaloz qanday holatlarda rivojlanadi?",
+  "Fosfat bufer eritmasi qanday tayyorlanadi?"
+ ],
+ "quiz": [
+  {"q": "Arterial qon pH ining me’yori qancha?", "options": ["7,35–7,45", "7,0–7,2", "6,8–7,0", "7,5–7,8", "6,4–7,4"], "answer": 0},
+  {"q": "25 °C da suvning ion ko‘paytmasi qancha?", "options": ["10^−14^", "10^−7^", "10^−12^", "10^−10^", "1"], "answer": 0},
+  {"q": "0,01 M HCl eritmasining pH i qancha?", "options": ["2", "1", "12", "7", "0,01"], "answer": 0},
+  {"q": "Bufer eritmaga kislota qo‘shilganda H^+^ ionlarini nima bog‘laydi?", "options": ["Tuz anioni (qo‘shma asos)", "Kuchsiz kislota", "Suv molekulasi", "Natriy ioni", "Indikator"], "answer": 0},
+  {"q": "Bufer komponentlari konsentratsiyalari teng bo‘lsa, pH nimaga teng?", "options": ["pK~a~", "7", "pK~a~ + 1", "14 − pK~a~", "0"], "answer": 0},
+  {"q": "Bufer sig‘imi qachon eng katta bo‘ladi?", "options": ["Komponentlar nisbati 1 : 1 va konsentratsiyasi yuqori bo‘lganda", "Faqat tuz bo‘lganda", "Kislota tuzdan 10 marta ko‘p bo‘lganda", "Eritma suyultirilganda", "pH = 7 bo‘lganda"], "answer": 0},
+  {"q": "Qonning bufer sig‘imida eng katta ulushga ega sistema qaysi?", "options": ["Gidrokarbonat", "Fosfat", "Plazma oqsillari", "Ammiakli", "Atsetat"], "answer": 0},
+  {"q": "Qon pH ida gidrokarbonat buferida [HCO~3~^−^] : [H~2~CO~3~] nisbati qancha?", "options": ["20 : 1", "1 : 1", "4 : 1", "1 : 20", "10 : 1"], "answer": 0},
+  {"q": "Hujayra ichi suyuqligi va siydikning asosiy buferi qaysi?", "options": ["Fosfat", "Gidrokarbonat", "Gemoglobin", "Atsetat", "Ammiakli"], "answer": 0},
+  {"q": "Ishqoriy zahiraning me’yori qancha?", "options": ["50–70 hajm % CO~2~", "10–20 hajm % CO~2~", "100–120 hajm % CO~2~", "22–26 hajm % CO~2~", "5–10 hajm % CO~2~"], "answer": 0},
+  {"q": "Diabetik ketoatsidoz qaysi buzilishga kiradi?", "options": ["Metabolik atsidoz", "Respirator atsidoz", "Metabolik alkaloz", "Respirator alkaloz", "Aralash alkaloz"], "answer": 0},
+  {"q": "Ko‘p qusish qaysi buzilishga olib keladi?", "options": ["Metabolik alkaloz", "Metabolik atsidoz", "Respirator atsidoz", "Respirator alkaloz", "Hech qanday o‘zgarish bo‘lmaydi"], "answer": 0},
+  {"q": "Respirator atsidozda birlamchi o‘zgarish qaysi?", "options": ["pCO~2~ ortishi", "HCO~3~^−^ kamayishi", "pCO~2~ kamayishi", "HCO~3~^−^ ortishi", "Na^+^ kamayishi"], "answer": 0},
+  {"q": "Metabolik atsidozda nafasning kompensator o‘zgarishi qanday?", "options": ["Giperventilyatsiya (Kussmaul nafasi)", "Gipoventilyatsiya", "Apnoe", "O‘zgarmaydi", "Cheyn-Stoks nafasi"], "answer": 0},
+  {"q": "pK~a~ = 6,8 bo‘lgan fosfat buferida pH 7,4 olish uchun tuz : kislota nisbati qancha bo‘lishi kerak?", "options": ["4 : 1", "1 : 4", "1 : 1", "20 : 1", "2 : 1"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Qandli diabetning 1-turi bilan og‘rigan 19 yoshli bemor hushidan ketgan holda keltirildi. Nafasi chuqur va shovqinli, og‘zidan atseton hidi keladi. Qon gazlari: pH 7,12; pCO~2~ = 22 mm sim. ust.; HCO~3~^−^ = 8 mmol/l.", "ask": "Kislota-asos holati buzilishini aniqlang. Kompensatsiya qanday amalga oshmoqda?", "answer": "Metabolik atsidoz (pH ↓, HCO~3~^−^ ↓ — bir yo‘nalishda): diabetik ketoatsidoz. Keton tanachalari (atsetosirka va β-gidroksimoy kislotalar) gidrokarbonat buferini sarflaydi. Kompensatsiya — respirator: chuqur shovqinli **Kussmaul nafasi** CO~2~ ni chiqarib, pCO~2~ ni 22 gacha tushirgan, ammo pH me’yorga qaytmagan (qisman kompensatsiya). Davolash: insulin, suyuqlik, kaliy nazorati."},
+  {"title": "Masala 2", "text": "Laborantga pH 7,4 bo‘lgan 20 ml fosfat bufer kerak. Uning ixtiyorida 1/15 M Na~2~HPO~4~ va 1/15 M KH~2~PO~4~ eritmalari bor (pK~a~ = 6,8).", "ask": "Har bir eritmadan qancha olish kerak?", "answer": "pH = pK~a~ + lg([tuz] / [kislota]); 7,4 = 6,8 + lg x; lg x = 0,6; x = 4. Demak tuz : kislota = 4 : 1. 20 ml uchun: Na~2~HPO~4~ — 16 ml, KH~2~PO~4~ — 4 ml. pH ni pH-metr bilan tekshirish kerak."},
+  {"title": "Masala 3", "text": "Pilorus stenozi bo‘lgan bemor bir hafta davomida ko‘p qusgan. Qon gazlari: pH 7,52; pCO~2~ = 48 mm sim. ust.; HCO~3~^−^ = 36 mmol/l; K^+^ = 3,0 mmol/l.", "ask": "Buzilish turini aniqlang va mexanizmini tushuntiring.", "answer": "Metabolik alkaloz (pH ↑, HCO~3~^−^ ↑). Qusish bilan me’daning HCl i yo‘qoladi; HCl ishlab chiqarishda me’da hujayralari qonga HCO~3~^−^ chiqaradi, u esa endi neytrallanmaydi. Gipovolemiya va gipokaliyemiya buyrakda HCO~3~^−^ qayta so‘rilishini kuchaytirib, alkalozni ushlab turadi. Kompensatsiya — gipoventilyatsiya (pCO~2~ 48 ga oshgan). Davolash: 0,9 % NaCl va KCl eritmalari, stenozni bartaraf etish."}
+ ],
+ "cards": [
+  {"front": "K~w~", "back": "Suvning ion ko‘paytmasi: [H^+^]·[OH^−^] = 10^−14^ (25 °C)"},
+  {"front": "Bufer sistema", "back": "Kislota, ishqor qo‘shilganda va suyultirilganda pH ni saqlaydigan eritma"},
+  {"front": "Genderson–Gasselbax tenglamasi", "back": "pH = pK~a~ + lg([tuz] / [kislota])"},
+  {"front": "Bufer sig‘imi", "back": "1 l bufer pH ini 1 ga o‘zgartiradigan kuchli kislota/ishqor mol-ekvivalentlari soni"},
+  {"front": "Gidrokarbonat bufer", "back": "H~2~CO~3~ / HCO~3~^−^, pK~a~ 6,1, nisbat 1 : 20; qon bufer sig‘imining ≈ 53 %"},
+  {"front": "Fosfat bufer", "back": "H~2~PO~4~^−^ / HPO~4~^2−^, pK~a~ 6,8; hujayra ichi va siydikning asosiy buferi"},
+  {"front": "Ishqoriy zahira", "back": "100 ml plazma bog‘lay oladigan CO~2~: 50–70 hajm %"},
+  {"front": "Atsidoz", "back": "Qon pH i < 7,35"},
+  {"front": "Alkaloz", "back": "Qon pH i > 7,45"},
+  {"front": "Kussmaul nafasi", "back": "Metabolik atsidozda chuqur, shovqinli kompensator nafas"}
+ ]
+}

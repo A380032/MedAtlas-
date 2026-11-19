@@ -1,0 +1,113 @@
+{
+ "id": "14",
+ "no": 14,
+ "title": "Nucleosides. Nucleotides. Nucleic acids",
+ "goals": [
+  {"type": "p", "text": "To teach the student the structure and properties of nucleosides and nucleotides, their antimetabolites and nucleoside antibiotics, nucleoside polyphosphates (AMP, ADP, ATP) and high-energy bonds, cyclic nucleotides, nucleotide coenzymes (NAD^+^, NADP^+^, FAD), the polynucleotide chain, the primary and spatial structure of nucleic acids, their hydrolysis, denaturation and renaturation, hybridization, DNA synthesis and the chemical basis of mutations."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the composition of nucleosides and nucleotides, the N-glycosidic and phosphoester bonds and their naming;", "the principle of action of nucleoside antimetabolites and antibiotics;", "the structure of ATP, high-energy bonds and the function of cAMP and cGMP;", "the structure of NAD^+^, NADP^+^ and FAD and their role in oxidation–reduction;", "the primary and secondary structure of DNA and RNA and Chargaff’s rules;", "the hydrolysis, denaturation and renaturation of nucleic acids and the chemical causes of mutations."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["draw the formula of a nucleotide and write its name;", "write the complementary strand from a DNA sequence;", "calculate base proportions with Chargaff’s rules;", "explain the mechanism of action of mutagens and antimetabolite drugs."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "**Nucleoside** = nitrogenous base + pentose (N-glycosidic bond); **nucleotide** = nucleoside + phosphate (phosphoester bond). In DNA A–T (2 hydrogen bonds), G–C (3 hydrogen bonds); the strands are **antiparallel** (5′→3′ and 3′→5′)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Chargaff’s rule: **“Apples in the Tree, Car in the Garage”** — A = T, G = C; purines = pyrimidines (A + G = T + C)."},
+  {"kind": "diqqat", "label": "Caution", "text": "RNA is easily hydrolyzed by alkali (because of the 2′-OH group of ribose), while DNA is resistant to alkali — that is why DNA is the more stable molecule for storing hereditary information. In acid, on the other hand, the **purine bases** are released from DNA first."}
+ ],
+ "sections": [
+  {"title": "1. Structure and properties of nucleosides and nucleotides", "blocks": [
+   {"type": "p", "text": "A **nucleoside** is a purine or pyrimidine base joined to ribose or 2′-deoxyribose by a **β-N-glycosidic bond**: atom N-9 of purines or N-1 of pyrimidines is bound to atom C-1′ of the pentose. A **nucleotide** is a phosphate ester of a nucleoside (most often at the 5′-OH)."},
+   {"type": "table", "title": "Table 14.1. Naming of nucleosides and nucleotides", "head": ["Base", "Ribonucleoside", "Deoxyribonucleoside", "Nucleotide (5′-monophosphate)"], "rows": [["Adenine", "adenosine", "deoxyadenosine", "AMP, dAMP"], ["Guanine", "guanosine", "deoxyguanosine", "GMP, dGMP"], ["Cytosine", "cytidine", "deoxycytidine", "CMP, dCMP"], ["Uracil", "uridine", "—", "UMP"], ["Thymine", "—", "thymidine (deoxythymidine)", "dTMP"]]},
+   {"type": "p", "text": "Because of the phosphate residue, nucleotides are **acidic** and negatively charged at physiological pH. The N-glycosidic bond is hydrolyzed in acid (more easily in purines than in pyrimidines). The aromatic rings of the bases absorb ultraviolet light strongly at **260 nm** — the spectrophotometric determination of nucleic acids is based on this."}
+  ]},
+  {"title": "2. Nucleoside antimetabolites and nucleoside antibiotics", "blocks": [
+   {"type": "table", "title": "Table 14.2. Drugs of nucleoside and nucleotide nature", "head": ["Drug", "Natural “look-alike”", "Mechanism of action", "Use"], "rows": [["Zidovudine (azidothymidine)", "thymidine", "N~3~ instead of 3′-OH — the DNA chain is terminated (reverse transcriptase)", "HIV infection"], ["Acyclovir", "deoxyguanosine", "no cyclic pentose — a chain terminator", "herpesviruses"], ["Cytarabine", "deoxycytidine", "arabinose instead of ribose — DNA polymerase is blocked", "acute leukemias"], ["Gemcitabine", "deoxycytidine", "blocks DNA synthesis", "pancreatic and lung cancer"], ["Ribavirin", "guanosine", "disturbs viral RNA synthesis", "viral hepatitis C, RSV"], ["Puromycin (antibiotic)", "the end of aminoacyl-tRNA", "terminates the peptide chain on the ribosome prematurely", "in research"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Many antiviral drugs are **chain terminators**: they are added to DNA as nucleotides, but because they lack the 3′-OH group to which the next nucleotide is attached, chain elongation stops."}]}
+  ]},
+  {"title": "3. Nucleoside polyphosphates. High-energy bonds. Cyclic nucleotides", "blocks": [
+   {"type": "p", "text": "One or two more phosphate residues may be attached to the 5′-phosphate of a nucleotide by **phosphoanhydride** bonds: AMP → ADP → ATP. Bonds whose hydrolysis releases much energy (ΔG°′ < −25 kJ/mol) are called **high-energy (macroergic)** and are shown with the sign “∼”: A−P∼P∼P."},
+   {"type": "list", "ordered": false, "items": ["ATP + H~2~O → ADP + P~i~; ΔG°′ = −30.5 kJ/mol.", "ATP + H~2~O → AMP + PP~i~; ΔG°′ = −45.6 kJ/mol (pyrophosphate is then hydrolyzed, making the reaction irreversible).", "Reasons for the high energy: mutual repulsion of the negative charges of the phosphate residues, resonance stabilization and stronger hydration of the products.", "Other high-energy compounds: GTP, UTP, CTP, creatine phosphate, phosphoenolpyruvate, 1,3-bisphosphoglycerate, acetyl-CoA."]},
+   {"type": "img", "src": "data/img/tkm/t14_atf.webp", "w": 1400, "h": 530, "label": "Figure 14.1", "caption": "Adenosine triphosphate (ATP) — a nucleotide with two high-energy phosphoanhydride bonds — and cyclic adenosine monophosphate (cAMP), a second messenger molecule (structural formulas drawn with RDKit)."},
+   {"type": "p", "text": "**Cyclic nucleotides:** **cAMP** (3′,5′-cyclic AMP) is formed from ATP by **adenylate cyclase** and acts as a **second messenger** that carries the effect of hormones such as epinephrine and glucagon into the cell; it is broken down to AMP by phosphodiesterase. **cGMP** is formed by guanylate cyclase (activated by NO) and relaxes smooth muscle."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Caffeine and theophylline** block phosphodiesterase and slow the breakdown of cAMP (bronchodilation, CNS stimulation). **Sildenafil** blocks type 5 phosphodiesterase, which breaks down cGMP. **Cholera toxin** permanently activates adenylate cyclase: cAMP rises sharply in intestinal cells and Cl^−^ and water are lost — severe diarrhea."}]}
+  ]},
+  {"title": "4. Nucleotide coenzymes", "blocks": [
+   {"type": "table", "title": "Table 14.3. Nucleotide coenzymes", "head": ["Coenzyme", "Composition", "Function"], "rows": [["NAD^+^", "nicotinamide-ribose-P−P-ribose-adenine (a dinucleotide)", "dehydrogenases; accepts hydrogen (H^−^) in catabolism"], ["NADP^+^", "NAD^+^ + a 2′-phosphate on the adenosine ribose", "synthetic reactions (fatty acids, cholesterol), antioxidant defense (NADPH)"], ["FAD", "riboflavin (isoalloxazine + ribitol) + ADP", "flavin dehydrogenases (succinate dehydrogenase), accepts 2H"], ["FMN", "riboflavin 5′-phosphate", "complex I of the respiratory chain"], ["Coenzyme A", "pantothenic acid + cysteamine + 3′-phospho-ADP", "transfer of acyl groups (acetyl-CoA)"]]},
+   {"type": "p", "text": "The active part of NAD^+^ is atom C-4 of the nicotinamide ring: it accepts a **hydride ion** (H^−^) from the substrate and becomes NADH, while the second proton goes into solution: NAD^+^ + 2H → NADH + H^+^. NADH absorbs light at 340 nm (NAD^+^ does not) — many enzyme activities (ALT, AST, LDH) are measured this way. FAD adds two hydrogen atoms at atoms N-1 and N-5 of the isoalloxazine ring."}
+  ]},
+  {"title": "5. The polynucleotide chain. Primary and spatial structure of nucleic acids", "blocks": [
+   {"type": "p", "text": "Nucleotides join through **3′,5′-phosphodiester bonds** to form a polynucleotide chain: the 3′-OH of the pentose of one nucleotide binds to the 5′-phosphate of the next. One end of the chain has a free 5′-phosphate and the other a free 3′-OH; the sequence is written in the **5′→3′** direction. The nucleotide sequence is the **primary structure** of a nucleic acid."},
+   {"type": "table", "title": "Table 14.4. Differences between DNA and RNA", "head": ["Feature", "DNA", "RNA"], "rows": [["Pentose", "2′-deoxyribose", "ribose"], ["Pyrimidine bases", "cytosine, thymine", "cytosine, uracil"], ["Structure", "double helix (two strands)", "usually single-stranded (with internal double regions)"], ["Location", "nucleus, mitochondria", "nucleus, cytoplasm, ribosomes"], ["Function", "storage and transmission of hereditary information", "carrying out the information: mRNA, tRNA, rRNA"], ["Resistance to alkali", "resistant", "easily hydrolyzed"]]},
+   {"type": "p", "text": "**The DNA double helix** (J. Watson and F. Crick, 1953): two **antiparallel** strands are twisted to the right around a common axis; the bases are inside and the phosphate–sugar backbone outside. The bases pair **complementarily**: A–T (2 hydrogen bonds), G–C (3 hydrogen bonds). In the B form there are ≈ 10 base pairs per turn, the pitch is 3.4 nm and the diameter 2 nm. The helix is held by hydrogen bonds and base **stacking** interactions."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Chargaff’s rules:** in DNA A = T and G = C; the number of purines equals the number of pyrimidines. DNA rich in G–C pairs is more stable (three hydrogen bonds) and “melts” at a higher temperature."}]}
+  ]},
+  {"title": "6. Hydrolysis of nucleic acids. Denaturation, renaturation and hybridization. DNA synthesis", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Acid hydrolysis:** in weak acid the purine bases are released first (apurinic DNA); complete hydrolysis gives nitrogenous bases, pentose and phosphoric acid.", "**Alkaline hydrolysis:** RNA is broken down through 2′,3′-cyclic nucleotides into 2′- and 3′-nucleotides; DNA is resistant.", "**Enzymatic hydrolysis:** nucleases — DNase, RNase (endo- and exonucleases); **restriction enzymes** cut DNA at specific sequences (genetic engineering)."]},
+   {"type": "p", "text": "**Denaturation (“melting”):** heating, alkali or urea break the hydrogen bonds and the double helix separates into two strands; absorbance at 260 nm rises by 30–40 % (the **hyperchromic effect**). The temperature at which half the strands separate is the **melting temperature** (T~m~); it rises with the G–C content. On slow cooling the complementary strands rejoin — **renaturation** (annealing). The joining of complementary strands from different sources is **hybridization** (DNA–DNA, DNA–RNA)."},
+   {"type": "p", "text": "**DNA synthesis (replication)** is **semiconservative**: each new molecule consists of one old and one new strand (the Meselson–Stahl experiment). DNA polymerase synthesizes the new strand only in the **5′→3′** direction, starting from an RNA primer, from deoxynucleoside triphosphates; the lagging strand is made as Okazaki fragments that are joined by ligase."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Denaturation and hybridization underlie the **polymerase chain reaction** (PCR): denaturation at 94–95 °C, primer annealing at 50–65 °C, and chain extension at 72 °C by heat-stable Taq polymerase. In 30–35 cycles a DNA fragment is copied billions of times — it is used for infections (COVID-19, tuberculosis, HIV), hereditary diseases and forensic examination."}]}
+  ]},
+  {"title": "7. Mutations and their chemical basis", "blocks": [
+   {"type": "table", "title": "Table 14.5. Chemical and physical mutagens", "head": ["Mutagen", "Change in DNA", "Result"], "rows": [["Nitrous acid (HNO~2~)", "deaminates cytosine to uracil and adenine to hypoxanthine", "G–C → A–T substitution"], ["Alkylating agents (nitrosamines, mustard gas, cyclophosphamide)", "alkylate guanine (O^6^-methylguanine pairs with T)", "point mutations, interstrand cross-links"], ["Base analogs (5-bromouracil)", "replaces thymine; its tautomeric form pairs with G", "A–T → G–C substitution"], ["Intercalators (acridines, ethidium bromide)", "slip in between the bases", "frameshift"], ["Ultraviolet light", "thymine dimers from adjacent thymines", "replication is blocked; skin cancer"], ["Reactive oxygen species, ionizing radiation", "8-oxoguanine, strand breaks", "mutations, tumors, aging"]]},
+   {"type": "p", "text": "The chemical causes of mutations are changes in the structure of the bases (deamination, alkylation, oxidation), mispairing due to wrong tautomeric forms (lactim, imino) and physical damage to the strand. The cell has many **repair** systems; inherited defects in them (for example, **xeroderma pigmentosum**) sharply increase the tendency to cancer."}
+  ]},
+  {"title": "8. The role of chemistry in forensic science (independent work)", "blocks": [
+   {"type": "table", "title": "Table 14.6. Chemical methods in forensic science", "head": ["Method", "Chemical basis", "Use"], "rows": [["DNA fingerprinting (genetic profile)", "amplification of short tandem repeats (STR) by PCR and electrophoresis", "identification of a person, establishing paternity"], ["Luminol test", "oxidation of luminol catalyzed by heme iron — blue light (chemiluminescence)", "finding washed-off blood stains"], ["Fingerprints with ninhydrin", "a violet color with the amino acids of sweat", "latent prints on paper"], ["Gas chromatography–mass spectrometry", "separation of substances and identification by molecular mass", "poisons, narcotic drugs, alcohol"], ["Breath alcohol testers", "oxidation of ethanol (dichromate, fuel cell)", "alcohol in exhaled breath"], ["Marsh test (historical)", "arsine formed from arsenic gives an “arsenic mirror”", "arsenic poisoning"]]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: writing the complementary strand and the Chargaff calculation", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Write the given strand in the 5′→3′ direction (for example, 5′-ATGCCGTA-3′).", "Under each base write its complement: A → T, T → A, G → C, C → G.", "Show the direction of the second strand: 3′-TACGGCAT-5′ (antiparallel).", "By Chargaff’s rule: if A = 30 %, then T = 30 %, G + C = 40 %, and G = C = 20 %.", "Remember that U is written instead of T for RNA."]}]},
+  {"title": "Skill: drawing the formula of a nucleotide", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Choose the nitrogenous base (purine or pyrimidine) and mark the nitrogen that forms the glycosidic bond (N-9 or N-1).", "Draw the pentose (ribose or deoxyribose) in the β-furanose form.", "Join the base to atom C-1′ of the pentose with a β-N-glycosidic bond.", "Attach a phosphate residue to the 5′-OH group by a phosphoester bond.", "Write the name: base + nucleoside + monophosphate (for example, adenosine 5′-monophosphate)."]}]}
+ ],
+ "questions": [
+  "How are nucleosides and nucleotides built? Name them.",
+  "Why do nucleotides have acidic properties and absorb light at 260 nm?",
+  "Explain the principle of action of nucleoside antimetabolites with examples.",
+  "What is a high-energy bond? What are the reasons for the high energy of ATP?",
+  "How is cAMP formed and what function does it perform?",
+  "Compare the structure and functions of NAD^+^, NADP^+^ and FAD.",
+  "How are nucleotides joined in a polynucleotide chain?",
+  "How do DNA and RNA differ in structure and function?",
+  "State the main features of the DNA double helix.",
+  "State Chargaff’s rules.",
+  "What are the conditions and products of the hydrolysis of nucleic acids?",
+  "What are denaturation, renaturation and hybridization? How does PCR work?",
+  "List the chemical causes of mutations."
+ ],
+ "quiz": [
+  {"q": "By what bond are the base and pentose joined in a nucleoside?", "options": ["β-N-glycosidic", "Phosphoester", "Peptide", "Phosphoanhydride", "Hydrogen"], "answer": 0},
+  {"q": "Through which atom are purine bases bound to the pentose?", "options": ["N-9", "N-1", "N-3", "N-7", "C-6"], "answer": 0},
+  {"q": "Which base is found only in RNA?", "options": ["Uracil", "Thymine", "Adenine", "Guanine", "Cytosine"], "answer": 0},
+  {"q": "At which wavelength do nucleic acids absorb light strongly?", "options": ["260 nm", "540 nm", "340 nm", "280 nm", "620 nm"], "answer": 0},
+  {"q": "What is ΔG°′ for the hydrolysis of ATP to ADP and phosphate?", "options": ["−30.5 kJ/mol", "−45.6 kJ/mol", "−13.8 kJ/mol", "−220 kJ/mol", "+30.5 kJ/mol"], "answer": 0},
+  {"q": "Which enzyme forms cAMP?", "options": ["Adenylate cyclase", "Phosphodiesterase", "Guanylate cyclase", "ATP synthase", "Adenosine deaminase"], "answer": 0},
+  {"q": "Which enzyme does caffeine block, thereby increasing cAMP?", "options": ["Phosphodiesterase", "Adenylate cyclase", "Protein kinase A", "Xanthine oxidase", "Phospholipase C"], "answer": 0},
+  {"q": "What particle does NAD^+^ accept from the substrate?", "options": ["A hydride ion (H^−^)", "Two protons", "One electron", "An oxygen atom", "A phosphate"], "answer": 0},
+  {"q": "Which vitamin is part of FAD?", "options": ["Riboflavin (B~2~)", "Nicotinamide (PP)", "Thiamine (B~1~)", "Pantothenic acid (B~5~)", "Pyridoxine (B~6~)"], "answer": 0},
+  {"q": "By what bond are nucleotides joined in a polynucleotide chain?", "options": ["3′,5′-phosphodiester", "2′,5′-phosphodiester", "N-glycosidic", "Peptide", "Disulfide"], "answer": 0},
+  {"q": "How many hydrogen bonds are there between G–C pairs in DNA?", "options": ["3", "2", "1", "4", "0"], "answer": 0},
+  {"q": "If A = 20 % in DNA, what percentage is G?", "options": ["30 %", "20 %", "40 %", "60 %", "10 %"], "answer": 0},
+  {"q": "Which nucleic acid is easily hydrolyzed by alkali?", "options": ["RNA", "DNA", "Both", "Neither", "Only mitochondrial DNA"], "answer": 0},
+  {"q": "What is the increase in absorbance at 260 nm on DNA denaturation called?", "options": ["The hyperchromic effect", "The hypochromic effect", "The Tyndall effect", "Stacking", "The Bohr effect"], "answer": 0},
+  {"q": "What damage does ultraviolet light cause in DNA?", "options": ["Thymine dimers", "Deamination of cytosine", "Alkylation of guanine", "Release of purines", "Interstrand disulfide bonds"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A fragment of one DNA strand: 5′-ATGGCTAACG-3′.", "ask": "Write the complementary strand. Check the base composition of the fragment by Chargaff’s rule and write the mRNA sequence synthesized from this fragment (if this strand is the template).", "answer": "Complementary strand: 3′-TACCGATTGC-5′ (in the 5′→3′ direction: 5′-CGTTAGCCAT-3′). In the double-stranded fragment (20 bases): A = T = 5, G = C = 5 — consistent with Chargaff’s rule. If the given strand is the template, the mRNA is complementary to it and contains uracil instead of thymine: 5′-CGUUAGCCAU-3′."},
+  {"title": "Problem 2", "text": "A patient with HIV infection was prescribed zidovudine (3′-azido-3′-deoxythymidine).", "ask": "How does the drug work? Explain in terms of its chemical structure.", "answer": "Zidovudine is a thymidine analog: an azido group (−N~3~) replaces the 3′-OH of deoxyribose. In the cell it is phosphorylated to the triphosphate and incorporated into the DNA chain in place of dTMP by the viral **reverse transcriptase**. Because there is no 3′-OH to attach the next nucleotide, no phosphodiester bond can form — **the chain is terminated** and viral DNA is not synthesized. Reverse transcriptase uses zidovudine much more readily than human DNA polymerases, which ensures selective action."},
+  {"title": "Problem 3", "text": "A patient with cholera has up to 10–15 L a day of “rice-water” diarrhea and severe dehydration.", "ask": "Explain the molecular mechanism of the disease in terms of cyclic nucleotides.", "answer": "Cholera toxin ADP-ribosylates the Gs protein that controls **adenylate cyclase** in the intestinal epithelium and leaves it permanently active. As a result **cAMP** is formed from ATP continuously; via protein kinase A, cAMP activates the CFTR chloride channels — Cl^−^, Na^+^ and a lot of water pour into the intestinal lumen. The basis of treatment is rehydration with oral or intravenous water–electrolyte (glucose–salt) solutions, plus antibiotics."}
+ ],
+ "cards": [
+  {"front": "Nucleoside", "back": "Nitrogenous base + pentose (β-N-glycosidic bond)"},
+  {"front": "Nucleotide", "back": "Nucleoside + phosphate (phosphoester bond)"},
+  {"front": "High-energy bond", "back": "A bond whose hydrolysis releases much energy (2 phosphoanhydride bonds in ATP)"},
+  {"front": "cAMP", "back": "Second messenger formed by adenylate cyclase; broken down by phosphodiesterase"},
+  {"front": "NAD^+^", "back": "A nicotinamide dinucleotide coenzyme; accepts H^−^ and becomes NADH"},
+  {"front": "FAD", "back": "Riboflavin + ADP; the coenzyme of flavin dehydrogenases"},
+  {"front": "Phosphodiester bond", "back": "The 3′,5′ bond; the backbone of the polynucleotide chain"},
+  {"front": "Chargaff’s rules", "back": "A = T, G = C; purines = pyrimidines"},
+  {"front": "Hyperchromic effect", "back": "The increase in absorbance at 260 nm on DNA denaturation"},
+  {"front": "Chain terminator", "back": "A nucleotide analog without 3′-OH (zidovudine, acyclovir) — stops DNA synthesis"}
+ ]
+}

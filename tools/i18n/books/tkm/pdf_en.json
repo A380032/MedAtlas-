@@ -1,0 +1,156 @@
+{
+ "lang": "en",
+ "out": "data/en/books/tkm.pdf",
+ "pdf_title": "Medical and Biological Chemistry: Complete Study Manual",
+ "author": "Asadbek Axmatkulov",
+ "running": "Medical and Biological Chemistry — Complete Study Manual",
+ "cover": {
+  "image": "tools/i18n/books/tkm/pdf_cover.jpg",
+  "top": [
+   "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+   "TASHKENT STATE MEDICAL UNIVERSITY",
+   "Department of Medical and Biological Chemistry"
+  ],
+  "title": "MEDICAL AND BIOLOGICAL CHEMISTRY",
+  "part": "",
+  "sub": "complete study manual",
+  "kind": "A study manual for practical and laboratory classes",
+  "by_label": "Compiled by:",
+  "by": "Asadbek Axmatkulov",
+  "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+  "city": "Tashkent — 2026"
+ },
+ "imprint": [
+  "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+  "**Medical and Biological Chemistry: Complete Study Manual.** A study manual for practical and laboratory classes. — Tashkent, 2026.",
+  "",
+  "This manual is based on the 15 practical and laboratory class topics of the calendar-thematic plan of the subject “Medical Chemistry” (1st year, semester 2). It covers biogenic elements, solutions and titrimetric analysis, complex compounds, buffer systems, chemical thermodynamics, electrochemistry, surface phenomena, disperse systems, the fundamentals of organic chemistry, poly- and heterofunctional and heterocyclic compounds, carbohydrates, amino acids and proteins, nucleotides and lipids.",
+  "Each chapter consists of learning objectives, a theoretical part (with “Remember”, “Clinical significance”, “Memory aid” and “Caution” boxes), laboratory (practical) work, practical skill algorithms, review questions, 15 test questions, 3 situational problems and a quick review table. The answers to the tests are given at the end of the book.",
+  "The graphs were drawn from calculated data and the structural formulas with RDKit from PubChem data; the photographs were taken from Wikimedia Commons under open licenses. The text and structure of the manual were prepared with the help of the artificial intelligence Claude (Anthropic). The compiler selected the material, defined its structure and checked it. Numerical data and reference values should be compared with the main textbooks and departmental materials before use in practice.",
+  "The manual is intended for 1st-year students of the faculties of general medicine, pediatrics and preventive medicine of medical higher education institutions."
+ ],
+ "toc_title": "CONTENTS",
+ "preface_title": "Preface",
+ "preface": [
+  {
+   "type": "p",
+   "text": "Dear student! Medical and biological chemistry is the science that studies the laws of the chemical and physicochemical processes in the body and the structure and properties of biomolecules and drugs. It is the foundation of biochemistry, normal and pathological physiology, pharmacology and clinical laboratory diagnostics: blood pH, water–electrolyte metabolism, the absorption and action of drugs, poisonings and their antidotes — all of these obey the laws of chemistry."
+  },
+  {
+   "type": "p",
+   "text": "The manual follows the 15 topics of the calendar-thematic plan: topics 1–8 cover general, inorganic, analytical and physical and colloid chemistry (biogenic elements, solutions, titrimetry, complex compounds, buffer systems, thermodynamics, electrochemistry, surface phenomena and disperse systems), and topics 9–15 cover bioorganic chemistry (the structure and reactivity of organic compounds, poly- and heterofunctional and heterocyclic compounds, carbohydrates, amino acids and proteins, nucleotides and nucleic acids, lipids). Every chapter is built in the same order:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "**Learning objectives** — what you should know and be able to do by the end of the class;",
+    "**the theoretical part** — the main concepts, formulas, tables, graphs and structural formulas;",
+    "**laboratory work** — qualitative reactions, titration and other quantitative methods, analysis of the results;",
+    "**practical skills** — step-by-step algorithms for calculation and analysis;",
+    "**review questions, test questions and situational problems** — for self-assessment;",
+    "**quick review** — a table for revision at a glance before the exam."
+   ]
+  },
+  {
+   "type": "p",
+   "text": "The colored boxes in the text mean the following:"
+  },
+  {
+   "type": "box",
+   "kind": "eslab",
+   "parts": [
+    {
+     "type": "p",
+     "text": "The most important definitions, formulas, numbers and classifications — these must be memorized."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "klinik",
+   "parts": [
+    {
+     "type": "p",
+     "text": "The medical significance of chemical knowledge: examples linked to diseases, laboratory tests, drugs and poisonings."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "yodlash",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Techniques and abbreviations that make memorizing easier."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "diqqat",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Common mistakes, dangerous situations and points that require care in the laboratory."
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "text": "Constants and reference values in the manual may differ slightly between textbooks and laboratories — in such cases follow the values accepted at your department. Do laboratory work only under the supervision of a teacher and follow the safety rules for working with acids, alkalis and toxic substances."
+  },
+  {
+   "type": "p",
+   "text": "The compiler"
+  }
+ ],
+ "toc_indent": true,
+ "fig_per_row": 2,
+ "labels": {
+  "topic": "TOPIC {n}",
+  "goals": "Learning objectives",
+  "skills": "Practical skills",
+  "questions": "Review questions",
+  "quiz": "Test questions",
+  "cases": "Situational problems",
+  "ask": "Questions:",
+  "answer": "Answer:",
+  "review": "Quick review",
+  "review_table": "Table {n}.{m}.",
+  "review_caption": "Key concepts of topic {n}",
+  "q": "Concept",
+  "a": "Brief definition",
+  "answers": "Answers to the test questions",
+  "answers_row": "Topic {n}:",
+  "refs": "References"
+ },
+ "box": {
+  "eslab": "REMEMBER",
+  "klinik": "CLINICAL SIGNIFICANCE",
+  "yodlash": "MEMORY AID",
+  "diqqat": "CAUTION"
+ },
+ "refs": [
+  {
+   "h": "Main document"
+  },
+  "Calendar-thematic plan of the subject “Medical Chemistry” (1st year, semester 2, 2024–2025 academic year). — Tashkent State Medical University.",
+  {
+   "h": "Recommended reading"
+  },
+  "Ershov Yu.A., Popkov V.A., Berlyand A.S., Knizhnik A.Z. Obshchaya khimiya. Biofizicheskaya khimiya. Khimiya biogennykh elementov [General chemistry. Biophysical chemistry. Chemistry of biogenic elements]. — Moscow: Vysshaya shkola.",
+  "Tyukavkina N.A., Baukov Yu.I. Bioorganicheskaya khimiya [Bioorganic chemistry]. — Moscow: GEOTAR-Media.",
+  "Slesarev V.I. Khimiya: Osnovy khimii zhivogo [Chemistry: Foundations of the chemistry of living matter]. — Saint Petersburg: Khimizdat.",
+  "Harris D.C. Quantitative Chemical Analysis. — New York: W.H. Freeman.",
+  "Atkins P., de Paula J. Physical Chemistry for the Life Sciences. — New York: W.H. Freeman.",
+  "Clayden J., Greeves N., Warren S. Organic Chemistry. 2nd ed. — Oxford: Oxford University Press, 2012.",
+  "Nelson D.L., Cox M.M. Lehninger Principles of Biochemistry. 8th ed. — New York: W.H. Freeman, 2021.",
+  {
+   "h": "Sources of data and figures"
+  },
+  "PubChem — National Center for Biotechnology Information (NCBI), pubchem.ncbi.nlm.nih.gov: data for structural formulas.",
+  "Wikimedia Commons, commons.wikimedia.org: laboratory photographs (CC BY-SA and other open licenses).",
+  "RDKit: Open-source cheminformatics, rdkit.org: drawing of structural formulas."
+ ]
+}

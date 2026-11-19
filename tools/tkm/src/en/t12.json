@@ -1,0 +1,110 @@
+{
+ "id": "12",
+ "no": 12,
+ "title": "Carbohydrates. Structure and properties of monosaccharides. Di-, homo- and heteropolysaccharides",
+ "goals": [
+  {"type": "p", "text": "To teach the student the main carbohydrates of food, the classification, stereoisomerism and cyclic forms of monosaccharides, their chemical properties (oxidation and reduction), their derivatives used in medicine, reducing and non-reducing disaccharides, and the structure and significance of homopolysaccharides and the heteropolysaccharides of connective tissue."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the classification of monosaccharides as aldoses/ketoses and by the number of carbons, the D/L series and epimers;", "the pyranose and furanose forms, α- and β-anomers, and mutarotation;", "the oxidation (aldonic and glucuronic acids) and reduction (sorbitol) of monosaccharides;", "reducing (maltose, lactose, cellobiose) and non-reducing (sucrose, trehalose) disaccharides;", "the structure of starch, glycogen, cellulose, chitin and pectin;", "the significance of hyaluronic acid, chondroitin sulfates and heparin."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["write the Fischer and Haworth formulas of glucose;", "explain the detection of reducing carbohydrates by the Trommer and Fehling reactions;", "determine the composition of a disaccharide and the type of glycosidic bond;", "explain the chemical basis of disorders of carbohydrate metabolism (lactase deficiency, diabetes mellitus)."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "A disaccharide is **reducing** if one of its monosaccharides still has a **free hemiacetal (glycosidic) hydroxyl** (maltose, lactose). In sucrose both anomeric hydroxyls are used up in the bond — it is **non-reducing**."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Disaccharides: **“Mal-Glu-Glu, Lac-Gal-Glu, Suc-Glu-Fru”** — maltose = glucose + glucose, lactose = galactose + glucose, sucrose = glucose + fructose."},
+  {"kind": "diqqat", "label": "Caution", "text": "Humans have no enzyme that breaks down **cellulose** (β-1,4-glycosidase): it is not digested, but as **dietary fiber** it stimulates gut motility and binds cholesterol and bile acids. Starch, on the other hand, has α-1,4 bonds and is easily broken down by amylase."}
+ ],
+ "sections": [
+  {"title": "1. The main carbohydrates of food", "blocks": [
+   {"type": "p", "text": "**Carbohydrates** are polyhydroxycarbonyl compounds and their derivatives; most have the general formula C~n~(H~2~O)~m~. They provide ≈ 50–60 % of dietary energy and are the main energy source; the brain and red blood cells use almost only glucose."},
+   {"type": "table", "title": "Table 12.1. The main carbohydrates of food", "head": ["Carbohydrate", "Type", "Source"], "rows": [["Starch", "homopolysaccharide", "bread, rice, potatoes, pasta"], ["Sucrose", "disaccharide", "sugar, fruits, sugar beet"], ["Lactose", "disaccharide", "milk and dairy products"], ["Glucose, fructose", "monosaccharides", "honey, fruits, grapes"], ["Cellulose, pectin (fiber)", "polysaccharides", "vegetables, bran, fruits"]]}
+  ]},
+  {"title": "2. Classification and stereoisomerism of monosaccharides", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**By the carbonyl group:** aldoses (aldehyde group — glucose, galactose, ribose) and ketoses (keto group — fructose, ribulose).", "**By the number of carbons:** trioses (glyceraldehyde, dihydroxyacetone), tetroses, pentoses (ribose, deoxyribose, xylose), hexoses (glucose, galactose, mannose, fructose).", "**The D and L series** are defined by the configuration of the chiral carbon farthest from the carbonyl group (C-5 in hexoses); natural monosaccharides belong mainly to the **D series**."]},
+   {"type": "p", "text": "An aldohexose has 4 chiral carbons, so 2^4^ = 16 stereoisomers (8 pairs of enantiomers) exist. Diastereomers that differ at only one chiral center are called **epimers**: D-glucose and D-galactose are **C-4** epimers, D-glucose and D-mannose are **C-2** epimers."},
+   {"type": "p", "text": "In solution monosaccharides exist mainly in **cyclic** form: the carbonyl group forms an intramolecular hemiacetal with a hydroxyl of the same molecule. A six-membered ring is a **pyranose**, a five-membered one a **furanose**. The new chiral center that appears when the ring closes (C-1) is the **anomeric** center: OH below the plane of the ring (in the Haworth formula) — the **α**-anomer, above — the **β**-anomer."},
+   {"type": "img", "src": "data/img/tkm/t12_glukoza.webp", "w": 1400, "h": 600, "label": "Figure 12.1", "caption": "The α- and β-pyranose forms of D-glucose (Haworth projection): they differ only in the position of the hydroxyl at C-1 and interconvert in solution through the open form (diagram)."},
+   {"type": "p", "text": "**Mutarotation** is the change of the specific rotation of a freshly prepared solution with time until it reaches an equilibrium value: α-D-glucose (+112°) and β-D-glucose (+18.7°) interconvert in solution through the open form; at equilibrium ≈ 36 % α and 64 % β (+52.5°)."}
+  ]},
+  {"title": "3. Chemical properties of monosaccharides. Oxidation and reduction", "blocks": [
+   {"type": "table", "title": "Table 12.2. Oxidation and reduction of glucose", "head": ["Reaction", "Product", "Significance"], "rows": [["Mild oxidation (bromine water) — C-1", "gluconic acid", "calcium gluconate — a Ca^2+^ preparation"], ["Strong oxidation (HNO~3~) — C-1 and C-6", "glucaric (saccharic) acid", "—"], ["Enzymatic oxidation — C-6 only", "glucuronic acid", "forms conjugates with bilirubin, drugs and toxins in the liver (detoxification)"], ["Reduction — C-1", "sorbitol (glucitol)", "sugar substitute; diabetic complications"], ["Glycoside formation", "O- and N-glycosides", "di- and polysaccharides, nucleosides"], ["Phosphate esters", "glucose 6-phosphate", "the first step of metabolism (hexokinase)"]]},
+   {"type": "p", "text": "**Reducing property:** aldoses (and ketoses in an alkaline medium) reduce alkaline Cu^2+^ solution: in the **Trommer** and **Fehling** reactions light blue Cu(OH)~2~ turns on heating into a brick-red precipitate of Cu~2~O; with **Tollens’** reagent a “silver mirror” forms."},
+   {"type": "list", "ordered": false, "items": ["**Amino sugars:** glucosamine, galactosamine (their N-acetyl derivatives are part of heteropolysaccharides); glucosamine is used as a chondroprotector in joint diseases.", "**Deoxy sugars:** 2-deoxyribose — part of DNA.", "**Ascorbic acid** (vitamin C) — a lactone derivative of glucose, a strong reducing agent; needed for collagen synthesis and iron absorption.", "**Lactulose** (galactose + fructose) — a synthetic disaccharide not absorbed in the intestine: a laxative that reduces ammonia absorption in hepatic encephalopathy."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In diabetes mellitus blood glucose combines non-enzymatically with the amino groups of proteins (**glycation**): glycated hemoglobin **HbA~1c~** reflects the mean glycemia over the last 2–3 months (normal < 5.7 %, in diabetes ≥ 6.5 %). Blood glucose is now measured by the glucose oxidase method; the Trommer and Fehling reactions are historical methods."}]}
+  ]},
+  {"title": "4. Reducing and non-reducing disaccharides", "blocks": [
+   {"type": "img", "src": "data/img/tkm/t12_disaxarid.webp", "w": 1400, "h": 526, "label": "Figure 12.2", "caption": "The main disaccharides and their glycosidic bonds: maltose (α-1,4), sucrose (α-1,β-2) and lactose (β-1,4) (structural formulas drawn with RDKit from PubChem data)."},
+   {"type": "table", "title": "Table 12.3. Disaccharides", "head": ["Disaccharide", "Composition and bond", "Reducing ability", "Significance"], "rows": [["Maltose", "α-D-glucose (1→4) D-glucose", "reducing", "product of starch breakdown by amylase (malt sugar)"], ["Cellobiose", "β-D-glucose (1→4) D-glucose", "reducing", "the repeating unit of cellulose"], ["Lactose", "β-D-galactose (1→4) D-glucose", "reducing", "milk sugar; broken down by lactase"], ["Sucrose", "α-D-glucose (1→2) β-D-fructose", "non-reducing", "beet and cane sugar; “invert sugar” on hydrolysis"], ["Trehalose", "α-D-glucose (1→1) α-D-glucose", "non-reducing", "fungi, insects"]]},
+   {"type": "p", "text": "**Formation of maltose from starch:** salivary and pancreatic **α-amylase** hydrolyzes the internal α-1,4-glycosidic bonds of starch; maltose, maltotriose and α-dextrins are formed, and these are broken down to glucose in the intestine by **maltase** and isomaltase. In theory, maltose can be obtained from two molecules of α-D-glucopyranose by removing water (from the hydroxyls at C-1 of the first and C-4 of the second)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Lactase deficiency** (lactose intolerance): lactose is not broken down in the small intestine, passes into the large intestine and is fermented by bacteria — bloating, pain and diarrhea. In most adults (especially in Asian peoples) lactase activity falls with age. Treatment: lactose-free milk, fermented dairy products, lactase preparations."}]}
+  ]},
+  {"title": "5. Homopolysaccharides", "blocks": [
+   {"type": "table", "title": "Table 12.4. The main homopolysaccharides", "head": ["Polysaccharide", "Monomer and bonds", "Properties", "Significance"], "rows": [["Starch: amylose (20–25 %)", "α-D-glucose, α-1,4 (unbranched helix)", "**blue** color with iodine", "the storage carbohydrate of plants, the main dietary carbohydrate"], ["Starch: amylopectin (75–80 %)", "α-1,4 + α-1,6 branches every 20–25 residues", "violet-red with iodine", "—"], ["Glycogen", "α-1,4 + α-1,6 every 8–12 residues (highly branched)", "red-brown with iodine", "animal storage: ≈ 100 g in the liver, ≈ 300–400 g in muscle"], ["Cellulose", "β-D-glucose, β-1,4 (linear, fibrous)", "insoluble in water, not digested by humans", "dietary fiber; cotton, bandages, gauze"], ["Chitin", "N-acetylglucosamine, β-1,4", "strong, insoluble", "skeleton of insects and fungi; chitosan — wound dressings"], ["Pectin", "galacturonic acid (partly methylated)", "forms gels", "enterosorbent, binds heavy metals"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The heavy branching of glycogen gives it many “ends”: glycogen phosphorylase can release glucose from many ends at once, quickly supplying blood glucose (liver) or muscle work (muscle)."}]}
+  ]},
+  {"title": "6. Esters of cellulose", "blocks": [
+   {"type": "p", "text": "Each glucose residue of cellulose has three free OH groups; they form esters with acids."},
+   {"type": "list", "ordered": false, "items": ["**Cellulose acetates** (with acetic anhydride): acetate rayon, films, formerly hemodialysis membranes; tablet coatings (cellulose acetate phthalate — an enteric coating).", "**Cellulose nitrates** (with nitric acid): the lightly nitrated form is **pyroxylin (colloxylin)**; its solution in ether–alcohol is **collodion**, used as a sealing coat for small wounds and surgical sutures. The fully nitrated form is explosive guncotton.", "**Methyl- and carboxymethylcellulose** — thickeners and artificial tears in eye drops, ointments and tablets."]}
+  ]},
+  {"title": "7. Heteropolysaccharides of connective tissue", "blocks": [
+   {"type": "p", "text": "**Glycosaminoglycans** (mucopolysaccharides) are heteropolysaccharides built from repeating disaccharide units (uronic acid + amino sugar) and strongly negatively charged because of their sulfate and carboxyl groups. They bind a lot of water and form the gel medium of connective tissue."},
+   {"type": "table", "title": "Table 12.5. The main glycosaminoglycans", "head": ["Substance", "Disaccharide unit", "Location and function"], "rows": [["Hyaluronic acid", "D-glucuronic acid + N-acetylglucosamine (no sulfate)", "synovial fluid, vitreous body, skin; lubrication, shock absorption"], ["Chondroitin sulfates", "D-glucuronic acid + N-acetylgalactosamine sulfate", "cartilage, bone, vessel walls; chondroprotectors"], ["Dermatan sulfate", "L-iduronic acid + N-acetylgalactosamine sulfate", "skin, vessels, heart valves"], ["Keratan sulfate", "galactose + N-acetylglucosamine sulfate", "cornea, cartilage"], ["Heparin", "iduronic/glucuronic acid + glucosamine (highly sulfated)", "mast cells; an **anticoagulant** — activates antithrombin III"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Heparin** is the most negatively charged biomolecule; it binds to antithrombin III and rapidly inactivates thrombin and factor Xa — it is used to treat thrombosis and embolism; its antidote is the positively charged **protamine sulfate**. When lysosomal enzymes are deficient, glycosaminoglycans accumulate and hereditary **mucopolysaccharidoses** (Hurler and Hunter syndromes) develop."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: detecting reducing carbohydrates (the Trommer reaction)", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Put 1 mL of carbohydrate solution and 1 mL of 10 % NaOH into a test tube.", "Add 5 % CuSO~4~ dropwise — the Cu(OH)~2~ that first forms dissolves on shaking and a blue solution forms (a property of polyhydric alcohols).", "Heat the upper part of the solution.", "If the carbohydrate is reducing, a yellow CuOH and then a brick-red Cu~2~O precipitate forms.", "With sucrose the reaction is negative; if you first hydrolyze it with acid and test again, it is positive."]}]},
+  {"title": "Skill: analyzing the formula of a disaccharide", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Identify the two monosaccharide residues in the molecule (pyranose or furanose; glucose, galactose or fructose).", "Find the carbons that form the glycosidic bond (1→4, 1→2, 1→1).", "Determine the anomeric configuration of the bond (α or β).", "Check whether a free hemiacetal OH is present — if so, the sugar is reducing.", "Name the disaccharide and say which enzyme breaks it down."]}]}
+ ],
+ "questions": [
+  "List the main carbohydrates of food.",
+  "How are monosaccharides classified? How are the D and L series defined?",
+  "What are epimers? Give examples.",
+  "Explain the pyranose and furanose forms, anomers and mutarotation.",
+  "Write the products of oxidation and reduction of glucose.",
+  "What is the significance of glucuronic acid in the body?",
+  "By which reactions are reducing carbohydrates detected?",
+  "Compare the structures of maltose, lactose, cellobiose and sucrose.",
+  "Why is sucrose not reducing?",
+  "What is the difference in structure between starch and glycogen?",
+  "Why can humans not digest cellulose?",
+  "Where are cellulose esters used?",
+  "Explain the structure of glycosaminoglycans and the significance of heparin."
+ ],
+ "quiz": [
+  {"q": "To which group of monosaccharides does glucose belong?", "options": ["Aldohexoses", "Ketohexoses", "Aldopentoses", "Ketopentoses", "Trioses"], "answer": 0},
+  {"q": "To which group does fructose belong?", "options": ["Ketohexoses", "Aldohexoses", "Aldopentoses", "Trioses", "Tetroses"], "answer": 0},
+  {"q": "At which carbon are D-glucose and D-galactose epimers?", "options": ["C-4", "C-2", "C-1", "C-3", "C-5"], "answer": 0},
+  {"q": "How many stereoisomers do aldohexoses have?", "options": ["16", "8", "4", "32", "2"], "answer": 0},
+  {"q": "At which carbon atom do α- and β-anomers differ in configuration?", "options": ["C-1", "C-2", "C-4", "C-5", "C-6"], "answer": 0},
+  {"q": "What is formed when glucose is reduced?", "options": ["Sorbitol", "Gluconic acid", "Glucuronic acid", "Fructose", "Mannitol"], "answer": 0},
+  {"q": "Which acid takes part in the detoxification of bilirubin and drugs in the liver?", "options": ["Glucuronic acid", "Gluconic acid", "Glucaric acid", "Lactic acid", "Ascorbic acid"], "answer": 0},
+  {"q": "Which disaccharide is non-reducing?", "options": ["Sucrose", "Maltose", "Lactose", "Cellobiose", "Lactulose"], "answer": 0},
+  {"q": "Of which monosaccharides does lactose consist?", "options": ["Galactose and glucose", "Glucose and glucose", "Glucose and fructose", "Galactose and fructose", "Mannose and glucose"], "answer": 0},
+  {"q": "Which disaccharide is formed when starch is broken down by amylase?", "options": ["Maltose", "Sucrose", "Lactose", "Cellobiose", "Trehalose"], "answer": 0},
+  {"q": "By what bond are the glucose residues joined in cellulose?", "options": ["β-1,4", "α-1,4", "α-1,6", "α-1,2", "β-1,6"], "answer": 0},
+  {"q": "Which polysaccharide gives a blue color with iodine?", "options": ["Amylose", "Glycogen", "Cellulose", "Chitin", "Hyaluronic acid"], "answer": 0},
+  {"q": "How does glycogen differ from amylopectin?", "options": ["It is more highly branched", "It has β-glycosidic bonds", "It is built from fructose", "It is unbranched", "It is insoluble in water"], "answer": 0},
+  {"q": "Collodion is a solution of which substance?", "options": ["Cellulose nitrate (pyroxylin)", "Cellulose acetate", "Starch", "Chitin", "Pectin"], "answer": 0},
+  {"q": "Which glycosaminoglycan is an anticoagulant?", "options": ["Heparin", "Hyaluronic acid", "Chondroitin sulfate", "Keratan sulfate", "Dermatan sulfate"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A 22-year-old student complains of bloating, pain and loose stools 1–2 hours after drinking milk. He tolerates kefir and cheese well.", "ask": "What is the condition? Explain the chemical mechanism.", "answer": "**Lactase deficiency** (lactose intolerance). Lactose is a disaccharide of galactose and glucose with a β-1,4-glycosidic bond; it is broken down by **lactase** (β-galactosidase) of the small intestinal mucosa. When the enzyme is lacking, lactose is not absorbed; being osmotically active, it draws water into the intestine (diarrhea), and in the large intestine bacteria ferment it into gases (H~2~, CO~2~, CH~4~) and acids (bloating, pain). In kefir and cheese lactose has been partly broken down by bacteria, so they are well tolerated."},
+  {"title": "Problem 2", "text": "A patient with type 2 diabetes mellitus has fasting glucose of 8.2 mmol/L and HbA~1c~ = 8.5 %.", "ask": "How is HbA~1c~ formed and what does it show? Which property of carbohydrates is involved?", "answer": "The open (aldehyde) form of glucose condenses non-enzymatically with the amino group of the N-terminal valine of the hemoglobin β-chain (Schiff base → Amadori rearrangement) — **glycated hemoglobin** is formed. The reaction depends on blood glucose concentration and time, and since red cells live ≈ 120 days, HbA~1c~ reflects the mean glycemia over the last 2–3 months. 8.5 % means the diabetes is poorly controlled (the target is usually < 7 %); treatment should be adjusted."},
+  {"title": "Problem 3", "text": "A patient with deep vein thrombosis was given heparin. A few hours later signs of bleeding appeared.", "ask": "Explain the chemical structure and mechanism of action of heparin. How does the antidote act?", "answer": "Heparin is a highly sulfated glycosaminoglycan built from glucosamine and uronic acids; it is the most strongly negatively charged biomolecule. Through a specific pentasaccharide sequence it binds to **antithrombin III** and increases a thousandfold the rate at which antithrombin inactivates thrombin and factor Xa — blood clotting slows. The antidote is the positively charged protein **protamine sulfate**: it forms an electrostatic complex with heparin and neutralizes it."}
+ ],
+ "cards": [
+  {"front": "Aldose and ketose", "back": "A monosaccharide with an aldehyde (glucose) or keto (fructose) group"},
+  {"front": "Epimers", "back": "Stereoisomers that differ at one chiral center (glucose–galactose, C-4)"},
+  {"front": "Anomers", "back": "The α- and β-cyclic forms differing in the position of OH at C-1"},
+  {"front": "Mutarotation", "back": "Change of optical rotation in solution because the α- and β-anomers interconvert"},
+  {"front": "Glucuronic acid", "back": "Product of oxidation of glucose at C-6; conjugation (detoxification)"},
+  {"front": "Maltose", "back": "Glucose + glucose, α-1,4; reducing"},
+  {"front": "Sucrose", "back": "Glucose + fructose, α-1,β-2; non-reducing"},
+  {"front": "Glycogen", "back": "The highly branched (α-1,4 + α-1,6) storage polysaccharide of animals"},
+  {"front": "Cellulose", "back": "β-1,4-glucan; not digested by humans — dietary fiber"},
+  {"front": "Heparin", "back": "A highly sulfated glycosaminoglycan; an anticoagulant via antithrombin III"}
+ ]
+}

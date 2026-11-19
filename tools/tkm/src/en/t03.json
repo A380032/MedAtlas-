@@ -1,0 +1,127 @@
+{
+ "id": "03",
+ "no": 3,
+ "title": "Complex compounds. Inner complex compounds (chelates)",
+ "goals": [
+  {"type": "p", "text": "To teach the student Werner’s coordination theory, the structure, naming and stability in solution of complex compounds, the nature of their chemical bonds, inner complex compounds (chelates) and chelation therapy, the fundamentals of complexometry and the determination of calcium in blood serum; to explain the chemical basis of stone diseases."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the concepts of complexing agent, ligand, coordination number, inner and outer sphere;", "the classification and naming rules of complex compounds;", "instability and stability constants;", "the donor–acceptor bond and hybridization in complex compounds;", "chelates, the chelate effect and biologically important complexes (heme, chlorophyll, B~12~);", "chelation therapy drugs and the fundamentals of complexometry."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["determine the charge of the central atom and the coordination number from the formula of a complex;", "carry out reactions that form and destroy complex compounds;", "determine the calcium content of blood serum with Trilon B and interpret the result;", "justify which complexing agent is used in heavy-metal poisoning."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Trilon B (EDTA) reacts with metal ions in a **1 : 1** ratio whatever their charge. This makes the calculation in complexometry very simple: n(Me) = n(Trilon B)."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Order for reading a complex formula: **“Ligand — number — center — charge”**: [Cu(NH~3~)~4~]^2+^ is the tetra**ammine**copper(II) ion."},
+  {"kind": "diqqat", "label": "Caution", "text": "In lead poisoning, **calcium disodium** edetate (CaNa~2~EDTA) is used. Calcium-free Na~2~EDTA also binds the Ca^2+^ of the blood and causes life-threatening hypocalcemia."}
+ ],
+ "sections": [
+  {"title": "1. Werner’s coordination theory", "blocks": [
+   {"type": "p", "text": "**Complex compounds** are compounds that contain molecules or ions (ligands) arranged in a definite order around a central atom (ion) and that exist as separate particles even in solution. Their structure was explained in 1893 by **A. Werner** (Nobel Prize in 1913)."},
+   {"type": "list", "ordered": false, "items": ["**Complexing agent (central atom)** — usually an ion of a d-element: Fe^2+^, Fe^3+^, Cu^2+^, Co^3+^, Zn^2+^, Ag^+^, Pt^2+^.", "**Ligands** — molecules or anions bound to the central atom: H~2~O, NH~3~, Cl^−^, CN^−^, OH^−^, amino acids.", "**Coordination number** — the number of donor atoms bound directly to the central atom (most often 2, 4 or 6).", "**Inner sphere** — the central atom and the ligands, written in square brackets; **outer sphere** — the ions outside the brackets, which separate easily in solution."]},
+   {"type": "p", "text": "For example, in K~4~[Fe(CN)~6~]: the central ion is Fe^2+^, the ligand is CN^−^, the coordination number is 6, the inner sphere is [Fe(CN)~6~]^4−^ and the outer sphere is 4K^+^. The charge of the complex ion = charge of the central ion + charges of the ligands: (+2) + 6·(−1) = −4."},
+   {"type": "p", "text": "The number of bonds a ligand forms with the central atom is called its **denticity**: **monodentate** (NH~3~, H~2~O, Cl^−^, CN^−^), **bidentate** (ethylenediamine, oxalate, glycinate), **polydentate** (EDTA — 6-dentate, hexadentate)."},
+   {"type": "table", "title": "Table 3.1. Classification and naming of complex compounds", "head": ["Formula", "Name", "Type"], "rows": [["[Cu(NH~3~)~4~]SO~4~", "tetraamminecopper(II) sulfate", "cationic complex, ammine complex"], ["K~4~[Fe(CN)~6~]", "potassium hexacyanoferrate(II) (yellow prussiate)", "anionic complex, acido complex"], ["K~3~[Fe(CN)~6~]", "potassium hexacyanoferrate(III) (red prussiate)", "anionic complex"], ["[Ag(NH~3~)~2~]Cl", "diamminesilver chloride", "cationic complex"], ["[Pt(NH~3~)~2~Cl~2~]", "diamminedichloroplatinum(II) (cisplatin)", "neutral complex"], ["[Cr(H~2~O)~6~]Cl~3~", "hexaaquachromium(III) chloride", "aqua complex"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Cisplatin** [Pt(NH~3~)~2~Cl~2~] is the best-known complex drug. In the cell its chloride ligands are replaced by water, and platinum binds to the nitrogen of guanine in DNA, “stitching” the strands together — division of the tumor cell stops. It is used in testicular, ovarian and lung cancer; its main adverse effect is nephrotoxicity."}]}
+  ]},
+  {"title": "2. Equilibrium and stability of complex compounds in solution", "blocks": [
+   {"type": "p", "text": "In solution a complex compound first dissociates completely along the outer sphere (like a strong electrolyte): [Ag(NH~3~)~2~]Cl → [Ag(NH~3~)~2~]^+^ + Cl^−^. The inner sphere breaks down only very slightly and stepwise: [Ag(NH~3~)~2~]^+^ ⇄ Ag^+^ + 2NH~3~."},
+   {"type": "p", "text": "This equilibrium is described by the **instability constant**: K~inst~ = [Ag^+^]·[NH~3~]^2^ / [[Ag(NH~3~)~2~]^+^]. Its reciprocal is the **stability constant**: β = 1 / K~inst~. The smaller K~inst~, the more stable the complex."},
+   {"type": "table", "title": "Table 3.2. Instability constants of some complexes (25 °C)", "head": ["Complex ion", "K~inst~"], "rows": [["[Ag(NH~3~)~2~]^+^", "5.9·10^−8^"], ["[Cu(NH~3~)~4~]^2+^", "2.1·10^−13^"], ["[Ag(CN)~2~]^−^", "≈ 10^−21^"], ["[Fe(CN)~6~]^4−^", "≈ 10^−37^"], ["[CaY]^2−^ (Ca-EDTA)", "≈ 2·10^−11^"]]},
+   {"type": "p", "text": "Formation of a stable complex can dissolve poorly soluble substances: AgCl dissolves in ammonia because the Ag^+^ ions are bound into [Ag(NH~3~)~2~]^+^, and [Ag^+^] in solution falls below the solubility product of AgCl. Conversely, a strong precipitating agent destroys a complex: when KI is added to [Ag(NH~3~)~2~]^+^, AgI precipitates."}
+  ]},
+  {"title": "3. The nature of the chemical bond in complex compounds", "blocks": [
+   {"type": "p", "text": "The bond between the central atom and a ligand is a **donor–acceptor (coordinate)** bond: the ligand (donor) supplies a lone electron pair and the central atom (acceptor) takes it into its empty orbitals. According to valence bond theory, the orbitals of the central atom hybridize, and the geometry of the complex depends on the type of hybridization."},
+   {"type": "table", "title": "Table 3.3. Type of hybridization and shape of complexes", "head": ["Coordination number", "Hybridization", "Shape", "Example"], "rows": [["2", "sp", "linear", "[Ag(NH~3~)~2~]^+^"], ["4", "sp^3^", "tetrahedral", "[Zn(NH~3~)~4~]^2+^"], ["4", "dsp^2^", "square planar", "[Ni(CN)~4~]^2−^, [Pt(NH~3~)~2~Cl~2~]"], ["6", "d^2^sp^3^ or sp^3^d^2^", "octahedral", "[Fe(CN)~6~]^4−^, [Co(NH~3~)~6~]^3+^"]]},
+   {"type": "p", "text": "**Crystal field theory** shows that the electric field of the ligands splits the d-orbitals of the central atom by energy. Visible light is absorbed when an electron moves from one d-level to another — that is why complexes of d-elements are **colored**: [Cu(H~2~O)~4~]^2+^ is light blue, [Cu(NH~3~)~4~]^2+^ deep blue, hemoglobin red."}
+  ]},
+  {"title": "4. Inner complex compounds (chelates)", "blocks": [
+   {"type": "p", "text": "Compounds in which a polydentate ligand forms several bonds with the central atom and so creates a **ring (cycle)** are called **inner complex compounds** or **chelates** (Greek *chele* — a crab’s claw). The most stable are chelates with **five- and six-membered** rings."},
+   {"type": "img", "src": "data/img/tkm/t03_glitsinat.webp", "w": 900, "h": 600, "label": "Figure 3.1", "caption": "An example of an inner complex compound — copper(II) glycinate [Cu(NH~2~CH~2~COO)~2~]: each glycinate ion forms a five-membered ring with copper through nitrogen and oxygen (structural formula drawn with RDKit)."},
+   {"type": "p", "text": "**The chelate effect:** even with the same donor atoms, a chelate is much more stable than a complex with monodentate ligands. The reason is entropy: one polydentate ligand displaces several water molecules, and the number of particles in solution increases (ΔS > 0)."},
+   {"type": "table", "title": "Table 3.4. Biologically important inner complex compounds", "head": ["Compound", "Central atom", "Ligand", "Function"], "rows": [["Heme (hemoglobin, myoglobin, cytochromes)", "Fe^2+^ / Fe^3+^", "protoporphyrin IX", "O~2~ transport, electron transfer"], ["Chlorophyll", "Mg^2+^", "chlorin", "photosynthesis"], ["Cobalamin (vitamin B~12~)", "Co^3+^", "corrin", "methyl group transfer, blood formation"], ["Carbonic anhydrase", "Zn^2+^", "3 histidines + H~2~O", "CO~2~ + H~2~O ⇄ H~2~CO~3~"], ["Ceruloplasmin", "Cu^2+^", "protein", "oxidation of Fe^2+^, copper transport"]]},
+   {"type": "img", "src": "data/img/tkm/t03_gem.webp", "w": 900, "h": 800, "label": "Figure 3.2", "caption": "Heme — the inner complex of iron with protoporphyrin IX: Fe is bound to four pyrrole nitrogens; its two remaining coordination sites are for the histidine of globin and for O~2~ (structural formula drawn from PubChem data)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Carbon monoxide (CO) poisoning** is also a matter of complex formation: CO binds to the Fe^2+^ of heme ≈ 200–250 times more strongly than O~2~, forming **carboxyhemoglobin**. Treatment with 100 % oxygen and hyperbaric oxygenation shifts the equilibrium toward O~2~."}]}
+  ]},
+  {"title": "5. Chelation therapy", "blocks": [
+   {"type": "p", "text": "**Chelation therapy** is the removal of toxic metal ions from the body by binding them into stable, water-soluble chelates that are excreted by the kidneys. The drug (complexing agent) must form a **more stable** complex with the toxic metal than with the essential metals of the body (Ca, Zn)."},
+   {"type": "table", "title": "Table 3.5. Chelation therapy drugs", "head": ["Drug", "Donor atoms", "Use"], "rows": [["Edetate calcium disodium (CaNa~2~EDTA)", "N, O", "lead and cadmium poisoning"], ["Dimercaprol (BAL), unithiol (DMPS)", "S (thiol groups)", "arsenic, mercury and gold poisoning"], ["D-penicillamine", "S, N, O", "Wilson disease (copper), lead"], ["Deferoxamine", "O (hydroxamate)", "iron overload (hemosiderosis, multiple transfusions)"], ["Succimer (DMSA)", "S", "lead poisoning in children"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Pearson’s HSAB principle** (“soft with soft, hard with hard”): soft metals (Hg^2+^, Pb^2+^, Cd^2+^, As^3+^) bind stably to **sulfur** ligands, hard ions (Ca^2+^, Mg^2+^, Fe^3+^) to **oxygen** ligands. That is why thiol antidotes are used against mercury and arsenic."}]}
+  ]},
+  {"title": "6. Fundamentals of complexometry", "blocks": [
+   {"type": "p", "text": "**Complexometry** is a method based on titrating metal ions with a complexone (most often **Trilon B**, the disodium salt of ethylenediaminetetraacetic acid, Na~2~H~2~Y·2H~2~O). Trilon B forms a stable chelate with metal ions in a 1 : 1 ratio whatever their charge: Me^2+^ + H~2~Y^2−^ → MeY^2−^ + 2H^+^."},
+   {"type": "list", "ordered": false, "items": ["Because H^+^ is released in the reaction, the titration is done in the presence of a **buffer**: an ammonia buffer (pH ≈ 10) for the sum of Ca^2+^ + Mg^2+^, and NaOH (pH 12–13, Mg(OH)~2~ precipitates) for Ca^2+^ alone.", "**Metal indicators** form colored complexes with the metal that are less stable than those with Trilon B: **eriochrome black T** (pH 10: wine-red with the metal, blue when free), **murexide** (pH 12: pink with Ca, violet when free).", "At the equivalence point Trilon B pulls the metal out of the indicator complex, and the color of the free indicator appears."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Complexometry is used to determine water **hardness** (the sum of Ca^2+^ and Mg^2+^, meq/L). Hard water increases the tendency to form kidney stones and gallstones; in some regions of Uzbekistan (Khorezm, Karakalpakstan) the hardness of drinking water is above the standard (7 meq/L)."}]}
+  ]},
+  {"title": "7. Laboratory work", "blocks": [
+   {"type": "h", "text": "Formation and study of complex compounds"},
+   {"type": "list", "ordered": true, "items": ["**Copper ammine complex:** add NH~3~·H~2~O dropwise to CuSO~4~ solution — first a light blue precipitate of Cu(OH)~2~ forms, then it dissolves in excess ammonia to give deep blue [Cu(NH~3~)~4~]^2+^.", "**Silver ammine complex:** add NaCl to AgNO~3~ (white AgCl), then add ammonia — the precipitate dissolves; add KI to the resulting solution — a yellow precipitate of AgI forms (the complex is destroyed).", "**Prussian blue:** add K~4~[Fe(CN)~6~] to FeCl~3~ — a deep blue precipitate.", "**Detecting the central ion in a complex ion:** add NaOH to K~3~[Fe(CN)~6~] solution — no Fe(OH)~3~ precipitate forms, because Fe^3+^ is held inside a stable complex.", "Write an equation for each experiment and explain the observation."]},
+   {"type": "h", "text": "Complexometric determination of calcium in blood serum"},
+   {"type": "p", "text": "**Principle of the method:** in an alkaline medium (pH 12–13) the Ca^2+^ of serum forms a pink complex with murexide; on titration with Trilon B the calcium passes into the more stable CaY^2−^, and the color turns **violet**."},
+   {"type": "list", "ordered": true, "items": ["Place 1 mL of blood serum and 1 mL of distilled water in a flask.", "Add 0.2 mL of 1 M NaOH and a pinch of a dry murexide mixture (with NaCl, 1 : 100) — the solution turns pink.", "Titrate from a microburette with 0.0025 M Trilon B solution until the color turns violet.", "Titrate a blank (without serum) in the same way and subtract the volume used.", "Calculate: C(Ca^2+^) = C(Trilon B) · V(Trilon B) / V(serum)."]},
+   {"type": "p", "text": "**Example:** 0.96 mL of Trilon B was used in the titration. C(Ca) = 0.0025 · 0.96 / 1 = 0.0024 mol/L = **2.4 mmol/L** — normal (total calcium 2.2–2.6 mmol/L)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Hypercalcemia** (> 2.6 mmol/L) occurs in hyperparathyroidism, tumor metastases and hypervitaminosis D; **hypocalcemia** (< 2.2 mmol/L) in hypoparathyroidism, rickets, renal failure and acute pancreatitis. About 40 % of total calcium is bound to albumin, so the result is corrected in hypoalbuminemia."}]}
+  ]},
+  {"title": "8. Chemical basis of stone diseases (independent work)", "blocks": [
+   {"type": "p", "text": "Stones (calculi) form in a biological fluid when the concentration of the ions of a poorly soluble salt exceeds its **solubility product** (K~sp~), that is, when the fluid is **supersaturated**: [Ca^2+^]·[C~2~O~4~^2−^] > K~sp~(CaC~2~O~4~) = 2.3·10^−9^. Once a crystal nucleus forms, new layers are deposited on it."},
+   {"type": "table", "title": "Table 3.6. Main types of urinary stones", "head": ["Type of stone", "Share", "Conditions of formation", "Prevention"], "rows": [["Calcium oxalate CaC~2~O~4~", "≈ 70–80 %", "hypercalciuria, hyperoxaluria, low fluid intake", "plenty of water, limit oxalate-rich food, citrate"], ["Calcium phosphate (apatite)", "≈ 10 %", "**alkaline** urine (pH > 7)", "acidify the urine"], ["Uric acid (urate)", "≈ 5–10 %", "**acidic** urine (pH < 5.5), gout", "alkalinize with potassium citrate, allopurinol"], ["Struvite MgNH~4~PO~4~·6H~2~O", "≈ 5–10 %", "infection with urease-producing bacteria, alkaline urine", "treat the infection"], ["Cystine", "≈ 1 %", "hereditary cystinuria", "plenty of water, alkalinization, penicillamine"]]},
+   {"type": "img", "src": "data/img/tkm/t03_tosh.webp", "w": 1000, "h": 750, "label": "Figure 3.3", "caption": "A kidney stone made of calcium oxalate: its sharp-edged crystals injure the mucosa and cause hematuria (Wikimedia Commons)."},
+   {"type": "p", "text": "**Inhibitors** of stone formation are citrate (it forms a soluble complex with Ca^2+^), magnesium (it gives a soluble salt with oxalate), pyrophosphate and proteins. That is why hypocitraturia increases the risk of stones, and **potassium citrate** is used to treat them."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The type of stone depends on urine **pH**: urate stones form in acidic urine, phosphate and struvite stones in alkaline urine. Most gallstones, on the other hand, are **cholesterol** stones — cholesterol precipitates when it exceeds bile acids and phospholipids in the bile."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: analyzing the formula of a complex compound", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Pick out the inner sphere in square brackets; the ions outside the brackets are the outer sphere.", "Identify the ligands and their charges (NH~3~, H~2~O — 0; Cl^−^, CN^−^, OH^−^ — −1).", "Find the charge of the complex ion from the charge of the outer sphere.", "Charge of the central ion = charge of the complex ion − sum of the ligand charges.", "Determine the coordination number (number of donor atoms) and the likely shape.", "Name the compound: ligands (with their number) → central atom (with its oxidation state)."]}]},
+  {"title": "Skill: calculating the result of a complexometric titration", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Find the mean volume of three parallel titrations.", "Subtract the blank volume.", "Using the 1 : 1 stoichiometry, calculate n(Me) = C(Trilon B) · V(Trilon B).", "Divide by the sample volume to find the concentration in mol/L and convert it to mmol/L.", "Compare the result with the normal range and write a conclusion."]}]}
+ ],
+ "questions": [
+  "State the main points of Werner’s coordination theory.",
+  "What are the central atom, ligand and coordination number? Explain using K~3~[Fe(CN)~6~].",
+  "How are complex compounds classified and named?",
+  "What do the instability and stability constants show?",
+  "Why does AgCl dissolve in ammonia?",
+  "What is the nature of the bond in complex compounds? Give examples of hybridization and shape.",
+  "Why are complexes of d-elements colored?",
+  "What are a chelate and the chelate effect?",
+  "List biologically important inner complex compounds.",
+  "What is chelation therapy? What is used in lead, mercury and iron poisoning?",
+  "Why is a buffer needed in complexometry?",
+  "How is calcium in blood serum determined?",
+  "How do urinary stones form, and how does their type depend on pH?"
+ ],
+ "quiz": [
+  {"q": "What is the charge of the central ion in K~4~[Fe(CN)~6~]?", "options": ["+2", "+3", "+4", "−4", "+6"], "answer": 0},
+  {"q": "What is the coordination number in [Cu(NH~3~)~4~]SO~4~?", "options": ["4", "2", "6", "1", "8"], "answer": 0},
+  {"q": "Which ligand is polydentate?", "options": ["EDTA", "NH~3~", "H~2~O", "Cl^−^", "CN^−^"], "answer": 0},
+  {"q": "The smaller the instability constant, the complex is...", "options": ["the more stable", "the less stable", "the more colorless", "the better it dissociates", "unchanged in stability"], "answer": 0},
+  {"q": "What type of bond links the central atom and the ligand in complex compounds?", "options": ["Donor–acceptor", "Ionic", "Metallic", "Hydrogen", "Van der Waals"], "answer": 0},
+  {"q": "What shape does a complex with sp^3^ hybridization have?", "options": ["Tetrahedral", "Octahedral", "Linear", "Square planar", "Trigonal bipyramidal"], "answer": 0},
+  {"q": "What is the central atom of heme?", "options": ["Iron", "Magnesium", "Cobalt", "Copper", "Zinc"], "answer": 0},
+  {"q": "Which metal does chlorophyll contain?", "options": ["Magnesium", "Iron", "Cobalt", "Manganese", "Copper"], "answer": 0},
+  {"q": "Which drug is used in lead poisoning?", "options": ["Edetate calcium disodium", "Deferoxamine", "Methylene blue", "Atropine", "Sodium bicarbonate"], "answer": 0},
+  {"q": "Which chelator is used in iron overload (hemosiderosis)?", "options": ["Deferoxamine", "Dimercaprol", "Unithiol", "Succimer", "Na~2~EDTA"], "answer": 0},
+  {"q": "In what ratio does Trilon B react with metal ions?", "options": ["1 : 1", "1 : 2", "2 : 1", "1 : 4", "Different depending on the charge"], "answer": 0},
+  {"q": "Which indicator is used to determine serum calcium at pH 12–13?", "options": ["Murexide", "Phenolphthalein", "Methyl orange", "Starch", "Litmus"], "answer": 0},
+  {"q": "What is the normal total calcium in blood serum?", "options": ["2.2–2.6 mmol/L", "0.7–1.0 mmol/L", "3.5–5.0 mmol/L", "135–145 mmol/L", "9–30 mmol/L"], "answer": 0},
+  {"q": "Which urinary stones are the most common?", "options": ["Calcium oxalate", "Cystine", "Struvite", "Uric acid", "Xanthine"], "answer": 0},
+  {"q": "In what kind of urine do urate (uric acid) stones form?", "options": ["Acidic (pH < 5.5)", "Alkaline (pH > 7)", "Neutral", "It does not depend on pH", "Only in infection"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A battery factory worker complains of colicky abdominal pain, weakness and headache. There is a gray line on his gums; the blood shows hypochromic anemia and basophilic stippling of red cells.", "ask": "What poisoning is suspected? Which complexing agent is used to treat it, and why is its calcium form chosen?", "answer": "Chronic lead poisoning (saturnism). Pb^2+^ blocks the enzymes of heme synthesis (δ-ALA dehydratase, ferrochelatase) — anemia develops. Treatment: edetate calcium disodium (CaNa~2~EDTA) intravenously; Pb^2+^ forms a more stable complex with EDTA than Ca^2+^ does, displaces the calcium, and PbY^2−^ is excreted in the urine. Calcium-free Na~2~EDTA would bind the blood calcium and could cause hypocalcemia and cardiac arrest. In children, succimer (DMSA) is given by mouth."},
+  {"title": "Problem 2", "text": "To determine a patient’s serum calcium, 1 mL of serum was titrated with 0.0025 M Trilon B. Three titrations used 0.70, 0.72 and 0.71 mL, and the blank used 0.01 mL.", "ask": "Calculate and interpret the calcium concentration. In which diseases can such a result occur?", "answer": "Mean volume = 0.71 mL; subtracting the blank gives 0.70 mL. C(Ca) = 0.0025 · 0.70 / 1 = 0.00175 mol/L = 1.75 mmol/L — **hypocalcemia** (normal 2.2–2.6). Causes: hypoparathyroidism (for example, after thyroid surgery), vitamin D deficiency, chronic renal failure, acute pancreatitis. The albumin level should also be checked."},
+  {"title": "Problem 3", "text": "A 45-year-old man has gout and renal colic. Urine pH is 5.0; no stones are seen on X-ray, but ultrasound shows a stone in the kidney.", "ask": "What type of stone is it? What is the chemically based treatment?", "answer": "A uric acid (urate) stone: in acidic urine (pH < 5.5) uric acid is poorly soluble and crystallizes; urate stones are not visible on X-ray. Treatment is to alkalinize the urine with **potassium citrate** to pH 6.5–7.0: uric acid passes into the soluble urate ion (anionic form) and the stone may dissolve; plenty of fluids, allopurinol (reduces uric acid formation), and limiting purine-rich food."}
+ ],
+ "cards": [
+  {"front": "Coordination number", "back": "The number of donor atoms bound directly to the central atom"},
+  {"front": "Inner sphere", "back": "Central atom + ligands, written in square brackets"},
+  {"front": "Instability constant", "back": "Dissociation constant of a complex ion; the smaller it is, the more stable the complex"},
+  {"front": "Donor–acceptor bond", "back": "The ligand provides an electron pair, the central atom an empty orbital"},
+  {"front": "Chelate", "back": "An inner complex in which a polydentate ligand forms a ring with the central atom"},
+  {"front": "Chelate effect", "back": "The higher stability of chelates compared with monodentate complexes (entropy gain)"},
+  {"front": "Cisplatin", "back": "[Pt(NH~3~)~2~Cl~2~] — an antitumor drug that cross-links DNA"},
+  {"front": "CaNa~2~EDTA", "back": "Chelation therapy drug for lead poisoning"},
+  {"front": "Trilon B", "back": "Na~2~H~2~Y·2H~2~O; forms 1 : 1 chelates with metals"},
+  {"front": "Solubility product", "back": "Product of ion concentrations in a saturated solution; when exceeded, a precipitate (stone) forms"}
+ ]
+}

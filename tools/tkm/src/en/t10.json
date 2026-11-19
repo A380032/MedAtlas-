@@ -1,0 +1,108 @@
+{
+ "id": "10",
+ "no": 10,
+ "title": "Poly- and heterofunctional compounds as metabolites and drugs",
+ "goals": [
+  {"type": "p", "text": "To teach the student the structure, properties and significance as metabolites and drugs of compounds that contain identical (polyfunctional) or different (heterofunctional) functional groups — polyhydric alcohols and phenols, polyamines, dicarboxylic acids, amino alcohols and catecholamines, hydroxy-, amino- and keto acids, and heterofunctional derivatives of benzene."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the concept of poly- and heterofunctional compounds;", "the properties and medical significance of glycerol, ethylene glycol, xylitol, sorbitol and mannitol;", "polyhydric phenols and the quinone–hydroquinone redox system;", "the significance of polyamines and dicarboxylic acids (oxalate, malonate, succinate, fumarate);", "amino alcohols (ethanolamine, choline, acetylcholine) and catecholamines;", "hydroxy and keto acids, and derivatives of salicylic and p-aminobenzoic acid."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["identify the functional groups of a compound and classify it;", "explain the detection of polyhydric alcohols by the qualitative reaction with Cu(OH)~2~;", "write interconversions of metabolites (lactate ⇄ pyruvate, succinate → fumarate);", "link the chemical structure of drugs (aspirin, paracetamol, sulfonamides) with their mechanism of action."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "A **polyfunctional** compound has identical functional groups (glycerol — 3 OH), a **heterofunctional** compound has different groups (lactic acid — OH and COOH; amino acids — NH~2~ and COOH). Most metabolites are heterofunctional."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "The series of dicarboxylic acids (C~2~–C~5~): **“Oh My, Such Good”** — oxalic, malonic, succinic, glutaric."},
+  {"kind": "diqqat", "label": "Caution", "text": "**Ethylene glycol** (antifreeze) tastes sweet but is highly toxic: in the body it is oxidized to glycolaldehyde, glyoxylic and **oxalic** acid — severe acidosis and kidney damage by calcium oxalate crystals result. The antidote is fomepizole or ethanol."}
+ ],
+ "sections": [
+  {"title": "1. Aliphatic and aromatic alcohols", "blocks": [
+   {"type": "p", "text": "Alcohols are mono-, di- or polyhydric by the number of hydroxyl groups, and primary, secondary or tertiary by the carbon that bears the OH. In **aromatic alcohols** the OH is attached not to the benzene ring but to a side chain (benzyl alcohol C~6~H~5~CH~2~OH); compounds with OH attached directly to the ring are called **phenols**."},
+   {"type": "list", "ordered": false, "items": ["**Ethanol** — its 70 % solution denatures proteins and has the strongest antiseptic action (96 % alcohol coagulates protein on the surface of microbes so quickly that it does not penetrate inside).", "**Benzyl alcohol** — a preservative in injection solutions; toxic in newborns (“gasping syndrome”).", "**Menthol** (a cyclic alcohol) — a cooling and distracting effect (validol, ointments)."]}
+  ]},
+  {"title": "2. Polyhydric alcohols and polyhydric phenols", "blocks": [
+   {"type": "table", "title": "Table 10.1. Polyhydric alcohols", "head": ["Substance", "Formula", "Significance"], "rows": [["Ethylene glycol", "HO−CH~2~−CH~2~−OH", "antifreeze; highly toxic (converted to oxalate)"], ["Glycerol", "HOCH~2~−CH(OH)−CH~2~OH", "part of lipids (triglycerides, phospholipids); base for ointments and suppositories, laxative"], ["Xylitol", "C~5~H~7~(OH)~5~", "sugar substitute, anticaries"], ["Sorbitol", "C~6~H~8~(OH)~6~", "sugar substitute; accumulates in the lens and nerves and contributes to diabetic complications"], ["Mannitol", "C~6~H~8~(OH)~6~ (a stereoisomer of sorbitol)", "osmotic diuretic — cerebral edema, glaucoma"]]},
+   {"type": "p", "text": "**Qualitative reaction:** in an alkaline medium polyhydric alcohols dissolve the Cu(OH)~2~ precipitate and form a **deep blue** complex (copper glycerate) — monohydric alcohols do not give this reaction. This is due to the increased acidity of neighboring OH groups and the formation of a chelate."},
+   {"type": "p", "text": "**Polyhydric phenols:** pyrocatechol (1,2-dihydroxybenzene), resorcinol (1,3-), hydroquinone (1,4-). The pyrocatechol residue is part of the **catecholamines**. Hydroquinone is easily oxidized to **quinone** and reduced back again: this reversible system is the basis of the work of **ubiquinone (coenzyme Q)** in the respiratory chain."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In diabetes mellitus, during hyperglycemia glucose is reduced to sorbitol by **aldose reductase**. Sorbitol crosses membranes poorly and accumulates in the cells of the lens, nerves and kidneys, causing osmotic swelling — one mechanism of the development of **cataract, neuropathy and nephropathy**."}]}
+  ]},
+  {"title": "3. Polyamines", "blocks": [
+   {"type": "p", "text": "**Polyamines** are compounds with two or more amino groups. They are formed by decarboxylation of amino acids: **putrescine** H~2~N(CH~2~)~4~NH~2~ from ornithine and **cadaverine** H~2~N(CH~2~)~5~NH~2~ from lysine; **spermidine** and **spermine** are synthesized from putrescine."},
+   {"type": "list", "ordered": false, "items": ["At physiological pH polyamines carry several positive charges and bind to negatively charged **DNA and RNA**, stabilizing their structure; they are needed for cell division and growth.", "Polyamines increase in rapidly dividing tissues and in **tumors**; inhibitors of the enzyme of their synthesis (ornithine decarboxylase), such as eflornithine, are used in treatment.", "Putrescine and cadaverine are foul-smelling “cadaveric poisons” (ptomaines) formed when proteins putrefy."]}
+  ]},
+  {"title": "4. Dicarboxylic acids", "blocks": [
+   {"type": "table", "title": "Table 10.2. Dicarboxylic acids and their significance", "head": ["Acid", "Formula", "Biological and medical significance"], "rows": [["Oxalic", "HOOC−COOH", "calcium oxalate stones; a product of ethylene glycol poisoning"], ["Malonic", "HOOC−CH~2~−COOH", "a **competitive inhibitor** of succinate dehydrogenase; malonyl-CoA — in fatty acid synthesis"], ["Succinic", "HOOC−(CH~2~)~2~−COOH", "a Krebs cycle metabolite; FAD-dependent dehydrogenation turns it into fumarate"], ["Fumaric", "HOOC−CH=CH−COOH (trans)", "a metabolite of the Krebs and urea cycles"], ["Glutaric", "HOOC−(CH~2~)~3~−COOH", "lysine and tryptophan metabolism; glutaric aciduria"]]},
+   {"type": "p", "text": "**The succinate dehydrogenase reaction:** HOOC−CH~2~−CH~2~−COOH + FAD → HOOC−CH=CH−COOH + FADH~2~. Because malonate resembles succinate in structure, it binds to the active site of the enzyme but is not dehydrogenated — the classic example of **competitive inhibition**."}
+  ]},
+  {"title": "5. Amino alcohols and catecholamines", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Ethanolamine (colamine)** HO−CH~2~−CH~2~−NH~2~ — part of the phospholipid phosphatidylethanolamine (cephalin); formed by decarboxylation of serine.", "**Choline** HO−CH~2~−CH~2~−N^+^(CH~3~)~3~ — part of phosphatidylcholine (lecithin); protects the liver from fatty degeneration (a lipotropic factor).", "**Acetylcholine** CH~3~CO−O−CH~2~CH~2~−N^+^(CH~3~)~3~ — the ester of choline, the mediator of parasympathetic and neuromuscular synapses; it is rapidly broken down by acetylcholinesterase."]},
+   {"type": "p", "text": "**Catecholamines** are biogenic amines containing a pyrocatechol ring and an aminoethyl chain: **dopamine**, **norepinephrine** (noradrenaline) and **epinephrine** (adrenaline). They are synthesized from tyrosine: tyrosine → DOPA → dopamine → norepinephrine → epinephrine."},
+   {"type": "img", "src": "data/img/tkm/t10_katexol.webp", "w": 1400, "h": 520, "label": "Figure 10.1", "caption": "Catecholamines: dopamine, norepinephrine and epinephrine — amino alcohols containing a pyrocatechol ring, a β-hydroxyl and an amino group (structural formulas drawn with RDKit)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Organophosphate insecticides (chlorophos, malathion) and nerve agents irreversibly phosphorylate acetylcholinesterase, so acetylcholine accumulates: miosis, salivation, bronchospasm, convulsions. Treatment is **atropine** (an M-cholinergic blocker) and **oximes** that reactivate the enzyme. **Epinephrine** is the drug of first choice in anaphylactic shock."}]}
+  ]},
+  {"title": "6. Hydroxy, amino and keto acids", "blocks": [
+   {"type": "table", "title": "Table 10.3. Important heterofunctional acids", "head": ["Group", "Examples", "Significance"], "rows": [["Hydroxy acids", "lactic acid CH~3~CH(OH)COOH, malic acid, citric acid, β-hydroxybutyric acid", "product of anaerobic glycolysis (lactate); Krebs cycle; a ketone body; citrate — an anticoagulant (blood preservation)"], ["Amino acids", "glycine, GABA (γ-aminobutyric acid)", "part of proteins; GABA — the main inhibitory mediator of the central nervous system"], ["Keto acids", "pyruvic acid (pyruvate), acetoacetic acid, oxaloacetate, α-ketoglutarate", "metabolites of glycolysis and the Krebs cycle; acetoacetate — a ketone body; transamination with amino acids"]]},
+   {"type": "p", "text": "Important reactions of heterofunctional acids: **lactate ⇄ pyruvate** (lactate dehydrogenase, NAD^+^/NADH); **pyruvate → acetyl-CoA + CO~2~** (oxidative decarboxylation); **decarboxylation of β-keto acids**: acetoacetate → acetone + CO~2~ (the smell of acetone on the breath in diabetes); **transamination**: amino acid + keto acid ⇄ new keto acid + new amino acid."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Citrate binds Ca^2+^ ions (a chelate) and stops blood clotting — **sodium citrate** is used as an anticoagulant in stored blood and laboratory tubes. When blood with much citrate is transfused rapidly, hypocalcemia may develop — calcium preparations are given."}]}
+  ]},
+  {"title": "7. Heterofunctional derivatives of benzene", "blocks": [
+   {"type": "table", "title": "Table 10.4. Drugs that are benzene derivatives", "head": ["Substance", "Structure", "Action and use"], "rows": [["Salicylic acid", "o-hydroxybenzoic acid", "keratolytic, antiseptic (topical)"], ["Acetylsalicylic acid (aspirin)", "the ester of salicylic acid with acetic acid", "irreversibly acetylates cyclooxygenase: analgesic, antipyretic, antiplatelet"], ["Methyl salicylate", "the methyl ester of salicylic acid", "local counterirritant ointments"], ["p-Aminobenzoic acid (PABA)", "p-H~2~N−C~6~H~4~−COOH", "needed for folic acid synthesis in bacteria"], ["Sulfonamides (sulfanilamide, sulfamethoxazole)", "p-H~2~N−C~6~H~4~−SO~2~NHR", "PABA antimetabolites — block folate synthesis in bacteria"], ["Paracetamol (acetaminophen)", "p-hydroxyacetanilide", "analgesic, antipyretic; hepatotoxic in overdose"], ["Benzocaine, procaine", "esters of PABA", "local anesthetics"]]},
+   {"type": "img", "src": "data/img/tkm/t10_pabk.webp", "w": 1400, "h": 520, "label": "Figure 10.2", "caption": "The structural similarity of p-aminobenzoic acid and sulfanilamide — the basis of competitive antimetabolite action; acetylsalicylic acid beside them (structural formulas drawn with RDKit)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Paracetamol poisoning:** in a large dose part of the drug is converted in the liver into the toxic metabolite **NAPQI**; once glutathione (a thiol) is used up, NAPQI damages the proteins of hepatocytes. The antidote is **N-acetylcysteine**, which restores the glutathione supply. This clearly shows the protective role of the thiol group."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: detecting polyhydric alcohols (the Cu(OH)~2~ reaction)", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Put 2 drops of CuSO~4~ and 1 mL of 10 % NaOH into a test tube — a light blue precipitate of Cu(OH)~2~ forms.", "Prepare two tubes: add glycerol to one and ethanol to the other.", "Shake and observe: in the tube with glycerol the precipitate dissolves and a deep blue solution forms.", "In the tube with ethanol there is no change (a monohydric alcohol).", "Conclusion: neighboring OH groups form a chelate complex of copper."]}]},
+  {"title": "Skill: functional analysis of a compound", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Mark all functional groups in the formula (−OH, −NH~2~, −COOH, C=O, −SH).", "If the groups are identical — a polyfunctional compound; if different — heterofunctional.", "Determine the relative position of the groups (α, β, γ or ortho, meta, para).", "List the reactions each group gives (salt, ester, amide, oxidation).", "Link the significance of the substance as a metabolite or drug with this structure."]}]}
+ ],
+ "questions": [
+  "What are poly- and heterofunctional compounds? Give examples.",
+  "How do monohydric and polyhydric alcohols differ?",
+  "What is the medical significance of glycerol, xylitol, sorbitol and mannitol?",
+  "Why is ethylene glycol toxic?",
+  "Describe polyhydric phenols and the quinone–hydroquinone system.",
+  "How are polyamines formed and what is their function?",
+  "What is the significance of dicarboxylic acids in metabolism?",
+  "Why does malonate block succinate dehydrogenase?",
+  "What are the structure and function of choline, ethanolamine and acetylcholine?",
+  "How are catecholamines synthesized?",
+  "Which reactions of hydroxy and keto acids are important in metabolism?",
+  "What are the structure and action of aspirin and paracetamol?",
+  "Explain the mechanism of action of sulfonamides."
+ ],
+ "quiz": [
+  {"q": "Which compound is heterofunctional?", "options": ["Lactic acid", "Glycerol", "Ethylene glycol", "Oxalic acid", "Putrescine"], "answer": 0},
+  {"q": "Which reagent is used for the qualitative reaction of polyhydric alcohols?", "options": ["Cu(OH)~2~ (in an alkaline medium)", "AgNO~3~", "FeCl~3~", "BaCl~2~", "Ninhydrin"], "answer": 0},
+  {"q": "Which substance is used as an osmotic diuretic?", "options": ["Mannitol", "Xylitol", "Ethylene glycol", "Ethanol", "Benzyl alcohol"], "answer": 0},
+  {"q": "Into which toxic substance is ethylene glycol converted in the body, damaging the kidneys?", "options": ["Oxalic acid", "Acetic acid", "Lactic acid", "Acetone", "Urea"], "answer": 0},
+  {"q": "Which concentration of ethanol is most effective as an antiseptic?", "options": ["70 %", "96 %", "40 %", "10 %", "100 %"], "answer": 0},
+  {"q": "Which polyamine is formed by decarboxylation of ornithine?", "options": ["Putrescine", "Cadaverine", "Histamine", "Dopamine", "Serotonin"], "answer": 0},
+  {"q": "Which is a competitive inhibitor of succinate dehydrogenase?", "options": ["Malonate", "Fumarate", "Oxaloacetate", "Citrate", "Lactate"], "answer": 0},
+  {"q": "What is formed when succinate is dehydrogenated?", "options": ["Fumarate", "Malate", "Oxalate", "Malonate", "Pyruvate"], "answer": 0},
+  {"q": "Which amino alcohol is part of phosphatidylcholine (lecithin)?", "options": ["Choline", "Ethanolamine", "Serine", "Sphingosine", "Inositol"], "answer": 0},
+  {"q": "From which amino acid are catecholamines synthesized?", "options": ["Tyrosine", "Tryptophan", "Histidine", "Glutamate", "Lysine"], "answer": 0},
+  {"q": "What is the main inhibitory mediator of the central nervous system?", "options": ["GABA", "Glutamate", "Dopamine", "Epinephrine", "Acetylcholine"], "answer": 0},
+  {"q": "Which substance is a ketone body?", "options": ["Acetoacetate", "Pyruvate", "Lactate", "Citrate", "Oxaloacetate"], "answer": 0},
+  {"q": "What role does sodium citrate play in blood preservation?", "options": ["It binds Ca^2+^ and stops blood clotting", "It feeds the red cells", "It kills bacteria", "It oxidizes hemoglobin", "It lowers the pH"], "answer": 0},
+  {"q": "Sulfonamides are antimetabolites of which substance?", "options": ["p-Aminobenzoic acid", "Salicylic acid", "Glutamic acid", "Benzoic acid", "Nicotinic acid"], "answer": 0},
+  {"q": "What is the antidote in paracetamol poisoning?", "options": ["N-acetylcysteine", "Atropine", "Naloxone", "Fomepizole", "Deferoxamine"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A car-repair shop worker drank antifreeze by mistake. A few hours later he appeared drunk, and then metabolic acidosis (pH 7.15) developed; many crystals were found in the urine, and urine output decreased.", "ask": "Explain the chemical basis of the poisoning. What crystals were found in the urine, and what is the treatment?", "answer": "The **ethylene glycol** in antifreeze is oxidized by alcohol dehydrogenase and aldehyde dehydrogenase to glycolaldehyde → glycolic acid → glyoxylic acid → **oxalic acid**. The acids cause acidosis; oxalate forms poorly soluble **calcium oxalate** crystals with Ca^2+^ and damages the renal tubules (acute kidney injury). Treatment: **fomepizole** or ethanol (they occupy alcohol dehydrogenase competitively), sodium bicarbonate, hemodialysis."},
+  {"title": "Problem 2", "text": "After working with an organophosphate insecticide, a gardener was brought in with constricted pupils, heavy salivation and sweating, shortness of breath and muscle twitching.", "ask": "What is the biochemical cause of the symptoms? Which drugs are given?", "answer": "The organophosphate irreversibly phosphorylates the serine in the active site of **acetylcholinesterase**. Acetylcholine is not broken down and accumulates in the synapses, constantly stimulating muscarinic (miosis, salivation, bronchospasm) and nicotinic (muscle twitching, then paralysis) receptors. Treatment: **atropine** (blocks M-cholinergic receptors) in large doses, **oximes** that reactivate the enzyme (pralidoxime), respiratory support."},
+  {"title": "Problem 3", "text": "A patient took 15 g of paracetamol within 1 day for a headache. At first there are no symptoms except nausea.", "ask": "What is the danger? Explain the chemical mechanism and the action of the antidote.", "answer": "The danger is severe liver damage (fulminant hepatitis). At normal doses paracetamol is conjugated with glucuronic and sulfuric acids and excreted; at large doses these pathways become saturated and much toxic **NAPQI** is formed via cytochrome P450. NAPQI is normally neutralized by the SH group of **glutathione**; once glutathione is used up, it binds to hepatocyte proteins and causes necrosis (symptoms appear after 1–3 days). **N-acetylcysteine**, as a source of cysteine, restores glutathione synthesis; the earlier it is given, the more effective it is."}
+ ],
+ "cards": [
+  {"front": "Heterofunctional compound", "back": "A compound with different functional groups (lactic acid, amino acids)"},
+  {"front": "Glycerol", "back": "A trihydric alcohol; part of lipids, a base for ointments"},
+  {"front": "Mannitol", "back": "A hexahydric alcohol; an osmotic diuretic"},
+  {"front": "Ethylene glycol", "back": "A dihydric alcohol (antifreeze); converted to oxalate, damages the kidneys"},
+  {"front": "Putrescine, cadaverine", "back": "Diamines formed by decarboxylation of ornithine and lysine"},
+  {"front": "Malonate", "back": "A competitive inhibitor of succinate dehydrogenase"},
+  {"front": "Acetylcholine", "back": "The ester of choline with acetic acid; a cholinergic mediator"},
+  {"front": "Catecholamines", "back": "Dopamine, norepinephrine, epinephrine — synthesized from tyrosine"},
+  {"front": "Aspirin", "back": "Acetylsalicylic acid; irreversibly acetylates cyclooxygenase"},
+  {"front": "Sulfonamides", "back": "PABA antimetabolites; block folate synthesis in bacteria"}
+ ]
+}

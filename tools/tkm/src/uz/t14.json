@@ -1,0 +1,113 @@
+{
+ "id": "14",
+ "no": 14,
+ "title": "Nukleozidlar. Nukleotidlar. Nuklein kislotalar",
+ "goals": [
+  {"type": "p", "text": "Talabaga nukleozid va nukleotidlarning tuzilishi va xossalari, ularning antimetabolitlari va nukleozid antibiotiklar, nukleozidpolifosfatlar (AMF, ADF, ATF) va makroergik bog‘lar, siklik nukleotidlar, nukleotid tabiatli kofermentlar (NAD^+^, NADF^+^, FAD), polinukleotid zanjir, nuklein kislotalarning birlamchi va fazoviy tuzilishi, gidrolizi, denaturatsiyasi va renaturatsiyasi, gibridlanish, DNK sintezi hamda mutatsiyalarning kimyoviy asoslarini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["nukleozid va nukleotid tarkibi, N-glikozid va fosfoefir bog‘larni, ularning nomlanishini;", "nukleozid antimetabolitlari va antibiotiklarning ta’sir prinsipini;", "ATF tuzilishi, makroergik bog‘lar, sAMF va sGMF vazifasini;", "NAD^+^, NADF^+^ va FAD tuzilishi va oksidlanish-qaytarilishdagi rolini;", "DNK va RNK birlamchi va ikkilamchi tuzilishini, Chargaff qoidalarini;", "nuklein kislotalar gidrolizi, denaturatsiyasi, renaturatsiyasi va mutatsiyalarning kimyoviy sabablarini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["nukleotid formulasini tuzib, uning nomini yozish;", "DNK zanjiri ketma-ketligi bo‘yicha komplementar zanjirni yozish;", "Chargaff qoidalari bo‘yicha asoslar ulushini hisoblash;", "mutagen va antimetabolit dorilarning ta’sir mexanizmini tushuntirish."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "**Nukleozid** = azotli asos + pentoza (N-glikozid bog‘); **nukleotid** = nukleozid + fosfat (fosfoefir bog‘). DNK da A–T (2 vodorod bog‘), G–C (3 vodorod bog‘); zanjirlar **antiparallel** (5′→3′ va 3′→5′)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Chargaff qoidasi: **“A Tuzi, G Sutiga teng”** — A = T, G = C; purinlar = pirimidinlar (A + G = T + C)."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "RNK ishqorda oson gidrolizlanadi (riboza 2′-OH guruhi tufayli), DNK esa ishqorga chidamli — shuning uchun irsiy axborotni saqlovchi molekula sifatida DNK barqarorroq. Kislotada esa DNK dan avval **purin asoslari** ajraladi."}
+ ],
+ "sections": [
+  {"title": "1. Nukleozidlar va nukleotidlarning tuzilishi va xossalari", "blocks": [
+   {"type": "p", "text": "**Nukleozid** — purin yoki pirimidin asosining **β-N-glikozid bog‘** orqali riboza yoki 2′-dezoksiriboza bilan birikmasi: purinlarda asosning N-9, pirimidinlarda N-1 atomi pentozaning C-1′ atomiga bog‘lanadi. **Nukleotid** — nukleozidning fosfat kislota bilan murakkab efiri (ko‘pincha 5′-OH bo‘yicha)."},
+   {"type": "table", "title": "Jadval 14.1. Nukleozid va nukleotidlar nomlanishi", "head": ["Asos", "Ribonukleozid", "Dezoksiribonukleozid", "Nukleotid (5′-monofosfat)"], "rows": [["Adenin", "adenozin", "dezoksiadenozin", "AMF, dAMF"], ["Guanin", "guanozin", "dezoksiguanozin", "GMF, dGMF"], ["Sitozin", "sitidin", "dezoksisitidin", "SMF, dSMF"], ["Urasil", "uridin", "—", "UMF"], ["Timin", "—", "timidin (dezoksitimidin)", "dTMF"]]},
+   {"type": "p", "text": "Nukleotidlar fosfat qoldig‘i hisobiga **kislotali** xossaga ega va fiziologik pH da manfiy zaryadli. N-glikozid bog‘ kislotada gidrolizlanadi (purinlarda pirimidinlarga nisbatan osonroq). Asoslarning aromatik halqalari ultrabinafsha nurni **260 nm** da kuchli yutadi — nuklein kislotalar miqdorini spektrofotometrik aniqlash shunga asoslangan."}
+  ]},
+  {"title": "2. Nukleozid antimetabolitlari va nukleozid antibiotiklar", "blocks": [
+   {"type": "table", "title": "Jadval 14.2. Nukleozid va nukleotid tabiatli dorilar", "head": ["Dori", "Tabiiy “o‘xshashi”", "Ta’sir mexanizmi", "Qo‘llanilishi"], "rows": [["Zidovudin (azidotimidin)", "timidin", "3′-OH o‘rnida N~3~ — DNK zanjiri uziladi (teskari transkriptaza)", "OIV infeksiyasi"], ["Atsiklovir", "dezoksiguanozin", "siklik pentoza yo‘q — zanjir terminatori", "gerpes viruslari"], ["Sitarabin", "dezoksisitidin", "riboza o‘rnida arabinoza — DNK polimeraza to‘siladi", "o‘tkir leykozlar"], ["Gemsitabin", "dezoksisitidin", "DNK sintezini to‘sadi", "me’da osti bezi, o‘pka saratoni"], ["Ribavirin", "guanozin", "virus RNK sintezini buzadi", "virusli gepatit C, RSV"], ["Puromitsin (antibiotik)", "aminoatsil-tRNK uchi", "ribosomada peptid zanjirini erta uzadi", "tadqiqotlarda"]]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Ko‘plab antivirus dorilar — **zanjir terminatorlari**: ular nukleotid sifatida DNK ga qo‘shiladi, lekin keyingi nukleotid ulanadigan 3′-OH guruhi yo‘q bo‘lgani uchun zanjir uzayishi to‘xtaydi."}]}
+  ]},
+  {"title": "3. Nukleozidpolifosfatlar. Makroergik bog‘lar. Siklik nukleotidlar", "blocks": [
+   {"type": "p", "text": "Nukleotidning 5′-fosfatiga yana bir yoki ikki fosfat qoldig‘i **fosfoangidrid** bog‘lar bilan birikkan bo‘lishi mumkin: AMF → ADF → ATF. Gidrolizida ko‘p energiya ajraladigan (ΔG°′ < −25 kJ/mol) bog‘lar **makroergik** deyiladi va “∼” belgisi bilan ko‘rsatiladi: A−P∼P∼P."},
+   {"type": "list", "ordered": false, "items": ["ATF + H~2~O → ADF + P~n~; ΔG°′ = −30,5 kJ/mol.", "ATF + H~2~O → AMF + PP~n~; ΔG°′ = −45,6 kJ/mol (pirofosfat keyin gidrolizlanib, reaksiyani qaytmas qiladi).", "Makroergiklik sabablari: fosfat qoldiqlari manfiy zaryadlarining o‘zaro itarilishi, mahsulotlarning rezonans bilan barqarorlashuvi va kuchliroq gidratlanishi.", "Boshqa makroergik birikmalar: GTF, UTF, STF, kreatinfosfat, fosfoenolpiruvat, 1,3-bisfosfoglitserat, atsetil-KoA."]},
+   {"type": "img", "src": "data/img/tkm/t14_atf.webp", "w": 1400, "h": 530, "label": "Rasm 14.1", "caption": "Adenozintrifosfat (ATF) — ikkita makroergik fosfoangidrid bog‘li nukleotid, va siklik adenozinmonofosfat (sAMF) — ikkilamchi signal molekulasi (struktura formulalar, RDKit dasturida chizilgan)."},
+   {"type": "p", "text": "**Siklik nukleotidlar:** **sAMF** (3′,5′-siklik AMF) ATF dan **adenilatsiklaza** ta’sirida hosil bo‘ladi va adrenalin, glyukagon kabi gormonlar ta’sirini hujayra ichiga o‘tkazuvchi **ikkilamchi signal** vazifasini bajaradi; u fosfodiesteraza bilan AMF ga parchalanadi. **sGMF** guanilatsiklaza (NO bilan faollashadi) ta’sirida hosil bo‘lib, silliq mushaklarni bo‘shashtiradi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Kofein va teofillin** fosfodiesterazani to‘sib, sAMF parchalanishini sekinlashtiradi (bronxlarni kengaytirish, MNS qo‘zg‘alishi). **Sildenafil** sGMF ni parchalovchi 5-tip fosfodiesterazani to‘sadi. **Vabo toksini** adenilatsiklazani doimiy faollashtiradi: ichak hujayralarida sAMF keskin ortib, Cl^−^ va suv yo‘qotiladi — og‘ir diareya."}]}
+  ]},
+  {"title": "4. Nukleotid tabiatli kofermentlar", "blocks": [
+   {"type": "table", "title": "Jadval 14.3. Nukleotid kofermentlar", "head": ["Koferment", "Tarkibi", "Vazifasi"], "rows": [["NAD^+^", "nikotinamid-ribozo-P−P-ribozo-adenin (dinukleotid)", "degidrogenazalar; katabolizmda vodorod (H^−^) qabul qiladi"], ["NADF^+^", "NAD^+^ + adenozin ribozasining 2′-fosfati", "sintez reaksiyalari (yog‘ kislotalari, xolesterin), antioksidant himoya (NADFH)"], ["FAD", "riboflavin (izoalloksazin + ribit) + ADF", "flavin degidrogenazalar (suksinatdegidrogenaza), 2H qabul qiladi"], ["FMN", "riboflavin-5′-fosfat", "nafas zanjiri I kompleksi"], ["Koenzim A", "pantoten kislota + sisteamin + 3′-fosfo-ADF", "atsil guruhlarini tashish (atsetil-KoA)"]]},
+   {"type": "p", "text": "NAD^+^ ning faol qismi — nikotinamid halqasining C-4 atomi: u substratdan **gidrid-ion** (H^−^) qabul qilib NADH ga aylanadi, ikkinchi proton eritmaga o‘tadi: NAD^+^ + 2H → NADH + H^+^. NADH 340 nm da nur yutadi (NAD^+^ esa yutmaydi) — ko‘plab ferment faolliklari (ALT, AST, LDG) shu bo‘yicha o‘lchanadi. FAD esa izoalloksazin halqasining N-1 va N-5 atomlariga ikkita vodorod atomini biriktiradi."}
+  ]},
+  {"title": "5. Polinukleotid zanjir. Nuklein kislotalarning birlamchi va fazoviy tuzilishi", "blocks": [
+   {"type": "p", "text": "Nukleotidlar bir-biri bilan **3′,5′-fosfodiefir bog‘lar** orqali birikib, polinukleotid zanjir hosil qiladi: bir nukleotid pentozasining 3′-OH i keyingisining 5′-fosfati bilan bog‘lanadi. Zanjirning bir uchida erkin 5′-fosfat, ikkinchisida erkin 3′-OH bo‘ladi; ketma-ketlik **5′→3′** yo‘nalishda yoziladi. Nukleotidlar ketma-ketligi — nuklein kislotaning **birlamchi tuzilishi**."},
+   {"type": "table", "title": "Jadval 14.4. DNK va RNK ning farqi", "head": ["Belgisi", "DNK", "RNK"], "rows": [["Pentoza", "2′-dezoksiriboza", "riboza"], ["Pirimidin asoslari", "sitozin, timin", "sitozin, urasil"], ["Tuzilishi", "qo‘sh spiral (ikki zanjir)", "odatda bir zanjir (ichki qo‘sh qismlar bilan)"], ["Joylashuvi", "yadro, mitoxondriya", "yadro, sitoplazma, ribosomalar"], ["Vazifasi", "irsiy axborotni saqlash va uzatish", "axborotni amalga oshirish: mRNK, tRNK, rRNK"], ["Ishqorga chidamlilik", "chidamli", "oson gidrolizlanadi"]]},
+   {"type": "p", "text": "**DNK qo‘sh spirali** (J. Uotson va F. Krik, 1953): ikki **antiparallel** zanjir umumiy o‘q atrofida o‘ng tomonga buralgan; asoslar ichkarida, fosfat-qand skeleti tashqarida. Asoslar **komplementar** juftlashadi: A–T (2 vodorod bog‘), G–C (3 vodorod bog‘). B-shaklda bir o‘ramda ≈ 10 juft asos, o‘ram qadami 3,4 nm, diametri 2 nm. Spiralni vodorod bog‘lar va asoslarning **stekking** (ustma-ust joylashish) ta’sirlari ushlab turadi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Chargaff qoidalari:** DNK da A = T, G = C; purinlar soni pirimidinlar soniga teng. G–C juftlari ko‘p bo‘lgan DNK barqarorroq (uchta vodorod bog‘) va yuqoriroq haroratda “eriydi”."}]}
+  ]},
+  {"title": "6. Nuklein kislotalar gidrolizi. Denaturatsiya, renaturatsiya va gibridlanish. DNK sintezi", "blocks": [
+   {"type": "list", "ordered": false, "items": ["**Kislotali gidroliz:** kuchsiz kislotada avval purin asoslari ajraladi (apurin DNK); to‘liq gidrolizda — azotli asoslar, pentoza va fosfat kislota.", "**Ishqoriy gidroliz:** RNK 2′,3′-siklik nukleotidlar orqali 2′- va 3′-nukleotidlarga parchalanadi; DNK chidamli.", "**Fermentativ gidroliz:** nukleazalar — DNKaza, RNKaza (endo- va ekzonukleazalar); **restriktazalar** DNK ni ma’lum ketma-ketliklarda kesadi (gen muhandisligi)."]},
+   {"type": "p", "text": "**Denaturatsiya (“erish”):** qizdirish, ishqor, mochevina ta’sirida vodorod bog‘lar uziladi, qo‘sh spiral ikki zanjirga ajraladi; 260 nm da yutish 30–40 % ga ortadi (**giperxrom effekt**). Zanjirlarning yarmi ajraladigan harorat — **erish harorati** (T~m~), u G–C ulushi ortgan sari oshadi. Sekin sovitilganda komplementar zanjirlar qayta birlashadi — **renaturatsiya** (ingl. *annealing*). Turli manbadagi komplementar zanjirlarning birikishi — **gibridlanish** (DNK–DNK, DNK–RNK)."},
+   {"type": "p", "text": "**DNK sintezi (replikatsiya)** — **yarim konservativ**: har bir yangi molekula bitta eski va bitta yangi zanjirdan iborat (Meselson–Stal tajribasi). DNK-polimeraza yangi zanjirni faqat **5′→3′** yo‘nalishda, RNK-praymerdan boshlab, dezoksinukleozidtrifosfatlardan sintezlaydi; orqada qoluvchi zanjir Okazaki fragmentlari holida sintezlanib, ligaza bilan tikiladi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Denaturatsiya va gibridlanish **polimeraza zanjir reaksiyasi** (PZR) asosida yotadi: 94–95 °C da denaturatsiya, 50–65 °C da praymerlar birikishi, 72 °C da issiqqa chidamli Taq-polimeraza bilan zanjir uzayishi. 30–35 siklda DNK bo‘lagi milliardlab nusxalanadi — infeksiyalar (COVID-19, sil, OIV), irsiy kasalliklar va kriminalistik ekspertizada qo‘llanadi."}]}
+  ]},
+  {"title": "7. Mutatsiyalar va ularning kimyoviy asoslari", "blocks": [
+   {"type": "table", "title": "Jadval 14.5. Kimyoviy va fizik mutagenlar", "head": ["Mutagen", "DNK dagi o‘zgarish", "Natija"], "rows": [["Nitrit kislota (HNO~2~)", "sitozinni urasilga, adeninni gipoksantinga dezaminlaydi", "G–C → A–T almashinuvi"], ["Alkillovchi moddalar (nitrozaminlar, iprit, siklofosfamid)", "guaninni alkillaydi (O^6^-metilguanin T bilan juftlashadi)", "nuqtali mutatsiyalar, zanjirlararo tikishlar"], ["Asoslar analoglari (5-bromurasil)", "timin o‘rniga kiradi, tautomer shakli G bilan juftlashadi", "A–T → G–C almashinuvi"], ["Interkalyatorlar (akridinlar, etidiy bromid)", "asoslar orasiga kirib oladi", "o‘qish ramkasi siljishi"], ["Ultrabinafsha nur", "qo‘shni timinlardan timin dimerlari", "replikatsiya to‘siladi; teri saratoni"], ["Faol kislorod shakllari, ionlovchi nurlanish", "8-oksoguanin, zanjir uzilishlari", "mutatsiyalar, o‘sma, qarish"]]},
+   {"type": "p", "text": "Mutatsiyalarning kimyoviy sababi — asoslar tuzilishining o‘zgarishi (dezaminlanish, alkillanish, oksidlanish), noto‘g‘ri tautomer shakllar (laktim, imino) tufayli noto‘g‘ri juftlashish va zanjirning fizik shikastlanishi. Hujayrada ko‘plab **reparatsiya** tizimlari bor; ularning irsiy nuqsonlari (masalan, **kseroderma pigmentoza**) saratonga moyillikni keskin oshiradi."}
+  ]},
+  {"title": "8. Kriminalistikada kimyoning o‘rni (mustaqil ish)", "blocks": [
+   {"type": "table", "title": "Jadval 14.6. Kriminalistik kimyoviy usullar", "head": ["Usul", "Kimyoviy asosi", "Qo‘llanilishi"], "rows": [["DNK-daktiloskopiya (genetik profil)", "PZR bilan qisqa tandem takrorlarni (STR) ko‘paytirish va elektroforez", "shaxsni aniqlash, otalikni belgilash"], ["Luminol sinamasi", "gem temiri katalizlagan luminolning oksidlanishi — ko‘k nur (xemilyuminessensiya)", "yuvilgan qon izlarini topish"], ["Ningidrin bilan barmoq izlari", "ter tarkibidagi aminokislotalar bilan binafsha rang", "qog‘ozdagi yashirin izlar"], ["Gaz xromatografiyasi–mass-spektrometriya", "moddalarni ajratish va molekulyar massasi bo‘yicha aniqlash", "zaharlar, giyohvand moddalar, alkogol"], ["Alkotesterlar", "etanolning oksidlanishi (bixromat, yonilg‘i elementi)", "nafasdagi alkogol"], ["Marsh sinamasi (tarixiy)", "mishyakdan arsin hosil bo‘lib, “mishyak ko‘zgusi”", "mishyak bilan zaharlanish"]]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: komplementar zanjirni yozish va Chargaff hisobi", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Berilgan zanjirni 5′→3′ yo‘nalishda yozing (masalan, 5′-ATGCCGTA-3′).", "Har bir asos ostiga komplementarini yozing: A → T, T → A, G → C, C → G.", "Ikkinchi zanjir yo‘nalishini ko‘rsating: 3′-TACGGCAT-5′ (antiparallel).", "Chargaff qoidasi bo‘yicha: agar A = 30 % bo‘lsa, T = 30 %, G + C = 40 %, G = C = 20 %.", "RNK uchun T o‘rniga U yozilishini unutmang."]}]},
+  {"title": "Ko‘nikma: nukleotid formulasini tuzish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Azotli asosni tanlang (purin yoki pirimidin) va uning glikozid bog‘ hosil qiluvchi azotini belgilang (N-9 yoki N-1).", "Pentozani (riboza yoki dezoksiriboza) β-furanoza shaklida chizing.", "Asosni pentozaning C-1′ atomiga β-N-glikozid bog‘ bilan ulang.", "5′-OH guruhiga fosfat qoldig‘ini fosfoefir bog‘ bilan biriktiring.", "Nomini yozing: asos + nukleozid + monofosfat (masalan, adenozin-5′-monofosfat)."]}]}
+ ],
+ "questions": [
+  "Nukleozid va nukleotidlar qanday tuzilgan? Ularni nomlang.",
+  "Nukleotidlar nima uchun kislotali xossaga ega va 260 nm da nur yutadi?",
+  "Nukleozid antimetabolitlarining ta’sir prinsipini misollar bilan tushuntiring.",
+  "Makroergik bog‘ nima? ATF ning makroergikligi sabablari qanday?",
+  "sAMF qanday hosil bo‘ladi va qanday vazifani bajaradi?",
+  "NAD^+^, NADF^+^ va FAD tuzilishi va vazifalarini taqqoslang.",
+  "Polinukleotid zanjirda nukleotidlar qanday bog‘langan?",
+  "DNK va RNK ning tuzilishi va vazifasi qanday farq qiladi?",
+  "DNK qo‘sh spiralining asosiy xususiyatlarini ayting.",
+  "Chargaff qoidalarini ta’riflang.",
+  "Nuklein kislotalar gidrolizi sharoitlari va mahsulotlari qanday?",
+  "Denaturatsiya, renaturatsiya va gibridlanish nima? PZR qanday ishlaydi?",
+  "Mutatsiyalarning kimyoviy sabablarini sanang."
+ ],
+ "quiz": [
+  {"q": "Nukleozidda asos va pentoza qanday bog‘ bilan bog‘langan?", "options": ["β-N-glikozid", "Fosfoefir", "Peptid", "Fosfoangidrid", "Vodorod"], "answer": 0},
+  {"q": "Purin asoslari pentozaga qaysi atomi bilan bog‘lanadi?", "options": ["N-9", "N-1", "N-3", "N-7", "C-6"], "answer": 0},
+  {"q": "Qaysi asos faqat RNK tarkibida uchraydi?", "options": ["Urasil", "Timin", "Adenin", "Guanin", "Sitozin"], "answer": 0},
+  {"q": "Nuklein kislotalar qaysi to‘lqin uzunligida nurni kuchli yutadi?", "options": ["260 nm", "540 nm", "340 nm", "280 nm", "620 nm"], "answer": 0},
+  {"q": "ATF ning ADF va fosfatga gidrolizi ΔG°′ i qancha?", "options": ["−30,5 kJ/mol", "−45,6 kJ/mol", "−13,8 kJ/mol", "−220 kJ/mol", "+30,5 kJ/mol"], "answer": 0},
+  {"q": "sAMF qaysi ferment ta’sirida hosil bo‘ladi?", "options": ["Adenilatsiklaza", "Fosfodiesteraza", "Guanilatsiklaza", "ATF-sintaza", "Adenozindezaminaza"], "answer": 0},
+  {"q": "Kofein qaysi fermentni to‘sib, sAMF ni ko‘paytiradi?", "options": ["Fosfodiesteraza", "Adenilatsiklaza", "Proteinkinaza A", "Ksantinoksidaza", "Fosfolipaza C"], "answer": 0},
+  {"q": "NAD^+^ substratdan qanday zarracha qabul qiladi?", "options": ["Gidrid-ion (H^−^)", "Ikki proton", "Bitta elektron", "Kislorod atomi", "Fosfat"], "answer": 0},
+  {"q": "FAD tarkibidagi vitamin qaysi?", "options": ["Riboflavin (B~2~)", "Nikotinamid (PP)", "Tiamin (B~1~)", "Pantoten kislota (B~5~)", "Piridoksin (B~6~)"], "answer": 0},
+  {"q": "Polinukleotid zanjirda nukleotidlar qanday bog‘ bilan bog‘langan?", "options": ["3′,5′-fosfodiefir", "2′,5′-fosfodiefir", "N-glikozid", "Peptid", "Disulfid"], "answer": 0},
+  {"q": "DNK da G–C juftlari orasida nechta vodorod bog‘ bor?", "options": ["3", "2", "1", "4", "0"], "answer": 0},
+  {"q": "DNK da A = 20 % bo‘lsa, G necha foiz?", "options": ["30 %", "20 %", "40 %", "60 %", "10 %"], "answer": 0},
+  {"q": "Qaysi nuklein kislota ishqorda oson gidrolizlanadi?", "options": ["RNK", "DNK", "Ikkalasi ham", "Hech biri", "Faqat mitoxondriya DNK si"], "answer": 0},
+  {"q": "DNK denaturatsiyasida 260 nm da yutishning ortishi qanday ataladi?", "options": ["Giperxrom effekt", "Gipoxrom effekt", "Tindal effekti", "Stekking", "Bor effekti"], "answer": 0},
+  {"q": "Ultrabinafsha nur DNK da qanday shikastlanish chaqiradi?", "options": ["Timin dimerlari", "Sitozin dezaminlanishi", "Guanin alkillanishi", "Purinlar ajralishi", "Zanjirlararo disulfid bog‘lar"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "DNK ning bir zanjiri bo‘lagi: 5′-ATGGCTAACG-3′.", "ask": "Komplementar zanjirni yozing. Bo‘lakdagi asoslar tarkibini Chargaff qoidasi bo‘yicha tekshiring va shu bo‘lakdan sintezlanadigan mRNK ketma-ketligini (shu zanjir matritsa bo‘lsa) yozing.", "answer": "Komplementar zanjir: 3′-TACCGATTGC-5′ (5′→3′ yo‘nalishda: 5′-CGTTAGCCAT-3′). Qo‘sh zanjirli bo‘lakda (20 ta asos): A = T = 5, G = C = 5 — Chargaff qoidasiga mos. Berilgan zanjir matritsa bo‘lsa, mRNK unga komplementar va timin o‘rniga urasil tutadi: 5′-CGUUAGCCAU-3′."},
+  {"title": "Masala 2", "text": "OIV infeksiyasi bilan og‘rigan bemorga zidovudin (3′-azido-3′-dezoksitimidin) buyurildi.", "ask": "Dori qanday ishlaydi? Uning kimyoviy tuzilishi bilan bog‘lab tushuntiring.", "answer": "Zidovudin timidin analogi: dezoksiribozaning 3′-OH guruhi o‘rnida azido-guruh (−N~3~) bor. Hujayrada u trifosfatgacha fosforillanadi va virus **teskari transkriptazasi** tomonidan DNK zanjiriga dTMF o‘rniga qo‘shiladi. Keyingi nukleotidni ulash uchun 3′-OH bo‘lmagani sababli fosfodiefir bog‘ hosil bo‘lmaydi — **zanjir uziladi**, virus DNK si sintezlanmaydi. Teskari transkriptaza zidovudinni odam DNK-polimerazalariga nisbatan ancha faol ishlatadi, bu tanlab ta’sirni ta’minlaydi."},
+  {"title": "Masala 3", "text": "Vabo bilan og‘rigan bemorda sutkasiga 10–15 l gacha “guruch suvi” ko‘rinishidagi ich ketish, keskin suvsizlanish.", "ask": "Kasallikning molekulyar mexanizmini siklik nukleotidlar bilan bog‘lab tushuntiring.", "answer": "Vabo toksini ichak epiteliysida **adenilatsiklaza**ni boshqaruvchi Gs-oqsilini ADF-ribozillab, uni doimiy faol holatda qoldiradi. Natijada ATF dan **sAMF** to‘xtovsiz hosil bo‘ladi; sAMF proteinkinaza A orqali CFTR xlor kanallarini faollashtiradi — ichak bo‘shlig‘iga Cl^−^, Na^+^ va ko‘p suv chiqadi. Davolashning asosi — og‘iz yoki vena orqali suv-elektrolit (glyukoza-tuzli) eritmalari bilan rehidratatsiya va antibiotiklar."}
+ ],
+ "cards": [
+  {"front": "Nukleozid", "back": "Azotli asos + pentoza (β-N-glikozid bog‘)"},
+  {"front": "Nukleotid", "back": "Nukleozid + fosfat (fosfoefir bog‘)"},
+  {"front": "Makroergik bog‘", "back": "Gidrolizida ko‘p energiya ajraladigan bog‘ (ATF da 2 ta fosfoangidrid)"},
+  {"front": "sAMF", "back": "Adenilatsiklaza hosil qiladigan ikkilamchi signal; fosfodiesteraza parchalaydi"},
+  {"front": "NAD^+^", "back": "Nikotinamidli dinukleotid koferment; H^−^ qabul qilib NADH ga aylanadi"},
+  {"front": "FAD", "back": "Riboflavin + ADF; flavin degidrogenazalar kofermenti"},
+  {"front": "Fosfodiefir bog‘", "back": "3′,5′-bog‘; polinukleotid zanjir skeleti"},
+  {"front": "Chargaff qoidalari", "back": "A = T, G = C; purinlar = pirimidinlar"},
+  {"front": "Giperxrom effekt", "back": "DNK denaturatsiyasida 260 nm da yutishning ortishi"},
+  {"front": "Zanjir terminatori", "back": "3′-OH siz nukleotid analogi (zidovudin, atsiklovir) — DNK sintezini to‘xtatadi"}
+ ]
+}

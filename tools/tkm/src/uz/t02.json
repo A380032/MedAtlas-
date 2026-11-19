@@ -1,0 +1,129 @@
+{
+ "id": "02",
+ "no": 2,
+ "title": "Eritmalar. Eritmalarning kolligativ xossalari. Titrimetrik tahlil asoslari",
+ "goals": [
+  {"type": "p", "text": "Talabaga moddalar va gazlarning suvda erishi qonuniyatlarini (Genri, Sechenov qonunlari), eritmalarning kolligativ xossalarini (Raul va Vant-Goff qonunlari), konsentratsiyani ifodalash usullarini, titrimetrik tahlil va neytrallash usuli asoslarini hamda me’da shirasining kislotaligini aniqlashni o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["eruvchanlik va unga ta’sir etuvchi omillarni, Genri va Sechenov qonunlarini;", "Raul qonunini, muzlash haroratining pasayishi va qaynash haroratining ko‘tarilishini;", "osmos, osmotik bosim, Vant-Goff qonuni, izotonik koeffitsient tushunchalarini;", "massa ulushi, molyar, normal (ekvivalent) va molyal konsentratsiya, titrni;", "titrlash, ishchi eritma, ekvivalent nuqta, alkalimetriya va atsidimetriyani;", "kislota-asosli indikatorlarning ishlash oralig‘ini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["bir konsentratsiyadan ikkinchisiga o‘tish hisoblarini bajarish;", "eritmalarning osmotik bosimini hisoblash va izo-, gipo-, gipertonik eritmalarni farqlash;", "byuretka bilan titrlashni to‘g‘ri bajarish;", "me’da shirasining erkin, bog‘langan va umumiy kislotaligini aniqlash va baholash."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Kolligativ xossalar eritilgan moddaning **tabiatiga emas, zarrachalar soniga** bog‘liq. Shuning uchun 1 mol NaCl (2 ta ion) 1 mol glyukozaga nisbatan osmotik bosimni taxminan ikki barobar ko‘p oshiradi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Indikatorlar: **“Metiloranj — kislotada qizil, Fenolftalein — ishqorda qip-qizil”**. Fenolftalein kislotali va neytral muhitda rangsiz."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "Ekvivalentlar qonuni C~n1~·V~1~ = C~n2~·V~2~ **normal** konsentratsiya bilan yoziladi. Molyar konsentratsiya bilan ishlansa, reaksiya stexiometriyasini (masalan, H~2~SO~4~ + 2NaOH) alohida hisobga olish kerak."}
+ ],
+ "sections": [
+  {"title": "1. Eritmalar va eruvchanlik", "blocks": [
+   {"type": "p", "text": "**Eritma** — ikki yoki undan ortiq komponentdan tashkil topgan, tarkibi o‘zgaruvchan **gomogen** sistema. Ko‘p miqdordagi komponent **erituvchi**, kam miqdordagisi **eritilgan modda** deyiladi. Organizmning asosiy erituvchisi — **suv**: u kattalar tana massasining ≈ 60 % ini tashkil etadi va qutbliligi tufayli ionli va qutbli moddalarni yaxshi eritadi (“o‘xshash o‘xshashda eriydi”)."},
+   {"type": "p", "text": "**Eruvchanlik** — berilgan haroratda 100 g erituvchida eriy oladigan moddaning maksimal massasi. Shu holatdagi eritma **to‘yingan** deyiladi. Qattiq moddalarning ko‘pchiligida harorat oshganda eruvchanlik ortadi; gazlarda esa aksincha — **kamayadi**."},
+   {"type": "h", "text": "Gazlarning eruvchanligi"},
+   {"type": "p", "text": "**Genri qonuni:** o‘zgarmas haroratda gazning suyuqlikdagi eruvchanligi shu gazning suyuqlik ustidagi parsial bosimiga to‘g‘ri proporsional: C = k~G~·p. **Dalton qonuni:** gazlar aralashmasidan har bir gaz o‘z parsial bosimiga mos ravishda eriydi."},
+   {"type": "p", "text": "**Sechenov qonuni:** elektrolit eritmalarida gazlarning eruvchanligi toza suvdagiga nisbatan kamayadi: lg(C~0~ / C) = k·C~tuz~. Shuning uchun qon plazmasida kislorodning fizik erishi toza suvdagidan kam — kislorodning asosiy qismi gemoglobin bilan bog‘langan holda tashiladi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Kesson (dekompressiya) kasalligi:** chuqurlikda yuqori bosim ostida qonda azot ko‘p eriydi. G‘avvos tez ko‘tarilsa, bosim keskin kamayib, azot pufakchalar holida ajraladi va tomirlarni berkitadi (gaz emboliyasi). Davolash — **barokamera**da bosimni qayta oshirib, sekin pasaytirish. Shu qonun asosida **giperbarik oksigenatsiya** ham ishlaydi."}]}
+  ]},
+  {"title": "2. Eritmalar konsentratsiyasini ifodalash usullari", "blocks": [
+   {"type": "table", "title": "Jadval 2.1. Konsentratsiyani ifodalash usullari", "head": ["Nomi", "Formula", "Birligi", "Misol"], "rows": [["Massa ulushi", "ω = m(modda) / m(eritma)", "% yoki ulush", "0,9 % li NaCl"], ["Molyar konsentratsiya", "C = n / V", "mol/l (M)", "0,1 M HCl"], ["Molyar ekvivalent (normal) konsentratsiya", "C~n~ = n(ekv) / V = z·C", "mol-ekv/l (n.)", "0,1 n. H~2~SO~4~"], ["Molyal konsentratsiya", "C~m~ = n / m(erituvchi)", "mol/kg", "kriometriyada"], ["Titr", "T = m(modda) / V", "g/ml", "T(HCl) = 0,003646 g/ml"], ["Mol ulushi", "χ = n~i~ / Σn", "ulush", "Raul qonunida"]]},
+   {"type": "p", "text": "**Ekvivalent soni (z)**: kislota uchun — almashinadigan H^+^ ionlari soni (H~2~SO~4~ da z = 2), asos uchun — OH^−^ soni (Ca(OH)~2~ da z = 2), tuz uchun — metall valentligi bilan atomlari sonining ko‘paytmasi (Al~2~(SO~4~)~3~ da z = 6). Ekvivalentning molyar massasi: M~ekv~ = M / z."},
+   {"type": "p", "text": "**Bog‘lanish formulalari:** C = ω·ρ·10 / M (ω foizda, ρ g/ml da) va T = C~n~·M~ekv~ / 1000. Misol: 36,5 % li HCl (ρ = 1,18 g/ml) uchun C = 36,5 · 1,18 · 10 / 36,5 = 11,8 mol/l."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Klinik laboratoriyada konsentratsiya asosan **mmol/l** da beriladi (glyukoza 3,3–5,5 mmol/l), dori eritmalarida esa **foiz** va **mg/ml** da (1 % = 10 mg/ml)."}]}
+  ]},
+  {"title": "3. Kolligativ xossalar: Raul qonunlari", "blocks": [
+   {"type": "p", "text": "Eritmaning faqat zarrachalar soniga bog‘liq xossalari **kolligativ xossalar** deyiladi: erituvchi bug‘ bosimining pasayishi, muzlash haroratining pasayishi, qaynash haroratining ko‘tarilishi va osmotik bosim."},
+   {"type": "p", "text": "**Raulning 1-qonuni:** eritma ustidagi erituvchi bug‘ bosimining nisbiy pasayishi eritilgan moddaning mol ulushiga teng: (p~0~ − p) / p~0~ = χ(modda)."},
+   {"type": "p", "text": "**Raulning 2-qonuni:** eritmaning muzlash harorati pasayishi va qaynash harorati ko‘tarilishi molyal konsentratsiyaga proporsional: ΔT~muz~ = K·C~m~ (kriometriya), ΔT~qayn~ = E·C~m~ (ebuliometriya). Suv uchun krioskopik doimiy K = 1,86 K·kg/mol, ebulioskopik doimiy E = 0,52 K·kg/mol."},
+   {"type": "p", "text": "Elektrolitlar uchun formulalarga **izotonik koeffitsient** (Vant-Goff koeffitsienti) i kiritiladi: i = 1 + α(ν − 1), bunda α — dissotsilanish darajasi, ν — bir molekuladan hosil bo‘ladigan ionlar soni. Noelektrolitlar uchun i = 1."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Qon plazmasi −0,56 °C da muzlaydi. Bundan uning **osmolyalligi** topiladi: C = 0,56 / 1,86 ≈ 0,3 mol/kg (≈ 300 mosmol/kg). Kriometriya (osmometriya) klinikada plazma va siydik osmolyalligini o‘lchashda ishlatiladi."}]}
+  ]},
+  {"title": "4. Osmos va osmotik bosim. Vant-Goff qonuni", "blocks": [
+   {"type": "p", "text": "**Osmos** — erituvchi molekulalarining yarim o‘tkazgich membrana orqali kam konsentratsiyali eritmadan ko‘p konsentratsiyali eritma tomon bir tomonlama diffuziyasi. Osmosni to‘xtatish uchun eritmaga beriladigan qo‘shimcha bosim **osmotik bosim** (π) deyiladi."},
+   {"type": "p", "text": "**Vant-Goff qonuni:** π = i·C·R·T, bunda C — molyar konsentratsiya (mol/l), R = 8,314 J/(mol·K), T — absolyut harorat. Qon plazmasining osmotik bosimi 37 °C da **740–780 kPa** (7,3–7,7 atm). Uning taxminan 3,5–4 kPa qismini oqsillar hosil qiladi — bu **onkotik bosim** bo‘lib, suvni tomir ichida ushlab turadi."},
+   {"type": "table", "title": "Jadval 2.2. Qon plazmasiga nisbatan eritmalar", "head": ["Eritma turi", "Osmotik bosimi", "Eritrotsitlarga ta’siri", "Misollar"], "rows": [["Izotonik", "plazmaga teng", "o‘zgarmaydi", "0,9 % NaCl, 5 % glyukoza, Ringer eritmasi"], ["Gipotonik", "plazmadan past", "suv kirib, hujayra shishadi va yoriladi — **gemoliz**", "distillangan suv, 0,3 % NaCl"], ["Gipertonik", "plazmadan yuqori", "suv chiqib, hujayra burishadi — **plazmoliz (krenatsiya)**", "10 % NaCl, 40 % glyukoza, 25 % MgSO~4~"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Gipertonik eritmalar amaliyotda maqsadli ishlatiladi: **10 % li NaCl** bilan ho‘llangan bog‘lam yiringli yaradan suyuqlikni so‘rib oladi; **25 % li MgSO~4~** ichakda suvni ushlab, surgi ta’sirini beradi; **mannit** va **15–20 % li glyukoza** miya shishida suvni to‘qimadan qonga tortadi. Gipotonik suyuqlikni ko‘p miqdorda vena ichiga yuborish gemolizga olib keladi."}]}
+  ]},
+  {"title": "5. Titrimetrik tahlil asoslari", "blocks": [
+   {"type": "p", "text": "**Titrimetrik (hajmiy) tahlil** — aniqlanadigan modda bilan to‘liq reaksiyaga kirishish uchun sarflangan, konsentratsiyasi aniq ma’lum reaktiv eritmasining hajmini o‘lchashga asoslangan miqdoriy tahlil usuli. Konsentratsiyasi aniq ma’lum eritma **ishchi (titrlangan) eritma** deyiladi; uni aniqlanadigan eritmaga byuretkadan tomchilab qo‘shish **titrlash** deb ataladi."},
+   {"type": "p", "text": "Reaktiv aniqlanadigan modda bilan ekvivalent miqdorda reaksiyaga kirishgan payt **ekvivalent nuqta** deyiladi. Uni indikator rangining o‘zgarishi (yoki asbob — pH-metr) bilan aniqlanadi; amalda kuzatilgan payt **titrlashning oxirgi nuqtasi** deyiladi. Hisob **ekvivalentlar qonuni**ga asoslanadi: C~n1~·V~1~ = C~n2~·V~2~."},
+   {"type": "img", "src": "data/img/tkm/t02_byuretka.webp", "w": 800, "h": 1000, "label": "Rasm 2.1", "caption": "Titrlash qurilmasi: shtativga mahkamlangan byuretka va konussimon kolbadagi titrlanayotgan eritma (Wikimedia Commons, CC BY-SA)."},
+   {"type": "list", "ordered": false, "items": ["**Boshlang‘ich standart modda** — toza, barqaror, tarkibi formulasiga aniq mos modda; aniq tortimdan ishchi eritmaning konsentratsiyasi aniqlanadi: HCl uchun **bura** Na~2~B~4~O~7~·10H~2~O, NaOH uchun **oksalat kislota** H~2~C~2~O~4~·2H~2~O.", "**O‘lchov idishlari:** byuretka (25 yoki 50 ml, 0,1 ml aniqlikda), Mor pipetkasi, o‘lchov kolbasi.", "Byuretkadan hajm **meniskning pastki qismi** bo‘yicha, ko‘z menisk sathida turgan holda o‘qiladi."]},
+   {"type": "table", "title": "Jadval 2.3. Titrimetrik tahlil usullarining tasnifi", "head": ["Usul", "Asosidagi reaksiya", "Ishchi eritmalar"], "rows": [["Neytrallash (kislota-asos)", "H^+^ + OH^−^ → H~2~O", "HCl, NaOH"], ["Oksidimetriya (permanganatometriya, yodometriya)", "oksidlanish-qaytarilish", "KMnO~4~, I~2~, Na~2~S~2~O~3~"], ["Kompleksonometriya", "kompleks hosil bo‘lishi", "trilon B (EDTA)"], ["Cho‘ktirish (argentometriya)", "kam eriydigan cho‘kma hosil bo‘lishi", "AgNO~3~"]]}
+  ]},
+  {"title": "6. Neytrallash usuli. Alkalimetriya va atsidimetriya", "blocks": [
+   {"type": "p", "text": "Neytrallash usuli kislota va asoslarning o‘zaro reaksiyasiga asoslangan. **Alkalimetriya** — kislotalarni (va kislotali tuzlarni) ishqorning ishchi eritmasi (NaOH, KOH) bilan aniqlash; **atsidimetriya** — asoslarni (va gidrolizda ishqoriy muhit beradigan tuzlarni) kislota ishchi eritmasi (HCl) bilan aniqlash."},
+   {"type": "p", "text": "Titrlash davomida pH ning qo‘shilgan titrant hajmiga bog‘liqligi **titrlash egri chizig‘i** deyiladi. Ekvivalent nuqta yaqinida pH keskin o‘zgaradi — bu **titrlash sakrashi**. 0,1 M HCl ni 0,1 M NaOH bilan titrlashda sakrash pH 4,3 dan 9,7 gacha, ekvivalent nuqtada pH = 7."},
+   {"type": "img", "src": "data/img/tkm/t02_egri.webp", "w": 1400, "h": 900, "label": "Rasm 2.2", "caption": "Kuchli kislotani (0,1 M HCl) kuchli asos (0,1 M NaOH) bilan titrlash egri chizig‘i va indikatorlarning rang o‘zgarish oraliqlari (hisoblangan ma’lumotlar asosida chizilgan)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Indikatorning rang o‘zgarish oralig‘i titrlash **sakrashi ichida** bo‘lishi kerak. Kuchsiz kislotani (CH~3~COOH) kuchli asos bilan titrlashda ekvivalent nuqta ishqoriy sohada (pH ≈ 8,7) bo‘ladi — shuning uchun **fenolftalein** tanlanadi; kuchsiz asosni (NH~3~) kuchli kislota bilan titrlashda — **metiloranj**."}]}
+  ]},
+  {"title": "7. Kislota-asosli indikatorlar", "blocks": [
+   {"type": "p", "text": "**Kislota-asosli indikatorlar** — muhit pH iga qarab rangini o‘zgartiradigan kuchsiz organik kislota yoki asoslar. **Ostvaldning ion nazariyasi**ga ko‘ra, indikatorning dissotsilanmagan molekulasi (HInd) va anioni (Ind^−^) har xil rangga ega: HInd ⇄ H^+^ + Ind^−^. **Xromofor nazariya** rang o‘zgarishini molekula tuzilishining (xromofor guruhlarning) qayta qurilishi bilan tushuntiradi."},
+   {"type": "p", "text": "Rang o‘zgarishi taxminan pH = pK~Ind~ ± 1 oralig‘ida kuzatiladi. Rang to‘liq o‘zgaradigan pH qiymati **titrlash ko‘rsatkichi** (pT) deyiladi."},
+   {"type": "table", "title": "Jadval 2.4. Muhim kislota-asosli indikatorlar", "head": ["Indikator", "O‘zgarish oralig‘i (pH)", "Kislotali shakli", "Ishqoriy shakli"], "rows": [["Dimetilaminoazobenzol", "2,9–4,0", "qizil", "sariq"], ["Metiloranj", "3,1–4,4", "qizil", "sariq"], ["Metil qizil", "4,4–6,2", "qizil", "sariq"], ["Lakmus", "5,0–8,0", "qizil", "ko‘k"], ["Fenolftalein", "8,2–10,0", "rangsiz", "qip-qizil (malina rang)"]]}
+  ]},
+  {"title": "8. Laboratoriya ishi: me’da shirasining kislotaligini aniqlash", "blocks": [
+   {"type": "p", "text": "**Usul asosi:** me’da shirasidagi kislotalarni NaOH ning 0,1 M ishchi eritmasi bilan ikki indikator ishtirokida titrlash (Mixaelis usuli). Avval **erkin HCl** titrlanadi (dimetilaminoazobenzol, pH 2,9–4,0 — qizil rang to‘q sariqqa o‘tadi), so‘ng shu namunada **umumiy kislotalilik** (fenolftalein — pushti rang paydo bo‘lguncha). Umumiy kislotalilikka erkin HCl, oqsillar bilan bog‘langan HCl va kislotali fosfatlar, organik kislotalar kiradi."},
+   {"type": "sub", "text": "Jihozlar:"},
+   {"type": "p", "text": "filtrlangan me’da shirasi, 0,1 M NaOH, dimetilaminoazobenzolning 0,5 % li va fenolftaleinning 1 % li spirtli eritmalari, byuretka, 5 ml li pipetka, konussimon kolbalar."},
+   {"type": "list", "ordered": true, "items": ["Kolbaga 5 ml filtrlangan me’da shirasini pipetka bilan o‘lchab quying.", "1 tomchi dimetilaminoazobenzol va 2 tomchi fenolftalein qo‘shing (shira qizil rangga bo‘yaladi).", "Byuretkadan 0,1 M NaOH ni tomchilab qo‘shib, qizil rang **to‘q sariq**qa o‘tguncha titrlang; sarflangan hajmni (V~1~) yozing — bu **erkin HCl**.", "Titrlashni davom ettiring: rang avval sariq bo‘ladi, so‘ng **pushti** rang paydo bo‘lib, 30 soniya saqlanguncha titrlang; umumiy sarflangan hajmni (V~2~) yozing — bu **umumiy kislotalilik**.", "Bog‘langan kislotalilikni hisoblang: umumiy − erkin."]},
+   {"type": "sub", "text": "Hisoblash:"},
+   {"type": "p", "text": "Kislotalilik **titrlash birliklari** (t.b.) da ifodalanadi — 100 ml me’da shirasini neytrallash uchun sarflanadigan 0,1 M NaOH millilitrlari soni. 5 ml namuna olinganda: kislotalilik = V(NaOH) · 20 t.b. Son jihatdan bu mmol/l ga teng."},
+   {"type": "table", "title": "Jadval 2.5. Me’da shirasi kislotaligining me’yori (nahorga, stimulyatsiyadan keyin)", "head": ["Ko‘rsatkich", "Me’yor, t.b.", "Klinik baho"], "rows": [["Umumiy kislotalilik", "40–60", "ko‘p bo‘lsa — giperatsid, kam bo‘lsa — gipoatsid holat"], ["Erkin HCl", "20–40", "bo‘lmasa — **axlorgidriya** (atrofik gastrit, me’da saratoni)"], ["Bog‘langan HCl", "10–20", "—"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Hozirgi gastroenterologiyada me’da kislotaligi ko‘proq **intragastral pH-metriya** bilan o‘lchanadi (nahorga tana qismida pH 1,5–2,0). Biroq titrlash usuli kislotalilik tushunchasini va neytrallash usulining tibbiyotdagi qo‘llanishini yaxshi ko‘rsatadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: byuretka bilan titrlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Byuretkani distillangan suv, so‘ng ishchi eritma bilan 2 marta chaying.", "Byuretkani ishchi eritma bilan nol belgisidan biroz yuqori to‘ldiring, uchidagi havo pufakchasini chiqaring va sathni nolga keltiring.", "Kolbaga aniqlanadigan eritmani pipetka bilan o‘lchab soling va indikator qo‘shing.", "Chap qo‘l bilan byuretka jo‘mragini boshqarib, o‘ng qo‘l bilan kolbani doimiy aylantirib, titrantni tomchilab qo‘shing.", "Ekvivalent nuqta yaqinida titrantni bitta-bitta tomchilab qo‘shing; rang 30 soniya saqlansa, titrlashni to‘xtating.", "Hajmni meniskning pastki qismi bo‘yicha 0,05 ml aniqlikda o‘qing.", "Titrlashni kamida 3 marta takrorlang; natijalar farqi 0,1 ml dan oshmasa, o‘rtachasini oling."]}]},
+  {"title": "Ko‘nikma: osmotik bosimni hisoblash va eritma turini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Moddaning molyar konsentratsiyasini toping (C = ω·ρ·10 / M).", "Izotonik koeffitsientni aniqlang (noelektrolit — 1, NaCl — ≈ 2, CaCl~2~ — ≈ 3).", "Haroratni kelvinga o‘tkazing (37 °C = 310 K).", "π = i·C·R·T formulasidan bosimni kPa da hisoblang.", "Natijani plazma bosimi (740–780 kPa) bilan solishtirib, eritma izo-, gipo- yoki gipertonikligini aniqlang."]}]}
+ ],
+ "questions": [
+  "Eritma nima? Eruvchanlikka qaysi omillar ta’sir qiladi?",
+  "Genri va Sechenov qonunlarini ta’riflang. Kesson kasalligi qanday rivojlanadi?",
+  "Massa ulushi, molyar va normal konsentratsiya qanday bog‘langan?",
+  "Ekvivalent soni qanday aniqlanadi? H~2~SO~4~ va Al~2~(SO~4~)~3~ uchun misol keltiring.",
+  "Kolligativ xossalarga nimalar kiradi va ular nimaga bog‘liq?",
+  "Raulning 2-qonuni va kriometriyaning tibbiyotdagi ahamiyati qanday?",
+  "Vant-Goff qonuni va izotonik koeffitsientni tushuntiring.",
+  "Izo-, gipo- va gipertonik eritmalar eritrotsitlarga qanday ta’sir qiladi?",
+  "Onkotik bosim nima va uning ahamiyati qanday?",
+  "Titrlash, ishchi eritma va ekvivalent nuqta tushunchalarini tushuntiring.",
+  "Alkalimetriya va atsidimetriyaning farqi nimada?",
+  "Indikator qanday tanlanadi? Ostvald nazariyasini tushuntiring.",
+  "Me’da shirasining erkin va umumiy kislotaligi qanday aniqlanadi?"
+ ],
+ "quiz": [
+  {"q": "Harorat oshganda gazlarning suvda eruvchanligi qanday o‘zgaradi?", "options": ["Kamayadi", "Ortadi", "O‘zgarmaydi", "Avval ortib, keyin kamayadi", "Faqat bosimga bog‘liq bo‘ladi"], "answer": 0},
+  {"q": "Genri qonuniga ko‘ra gazning eruvchanligi nimaga to‘g‘ri proporsional?", "options": ["Gazning parsial bosimiga", "Haroratga", "Erituvchining massasiga", "Gazning molyar massasiga", "Suyuqlik hajmiga"], "answer": 0},
+  {"q": "Kolligativ xossalar nimaga bog‘liq?", "options": ["Eritilgan modda zarrachalari soniga", "Eritilgan moddaning tabiatiga", "Molekulalarning rangiga", "Moddaning molyar massasiga", "Idishning shakliga"], "answer": 0},
+  {"q": "Suvning krioskopik doimiysi qancha?", "options": ["1,86 K·kg/mol", "0,52 K·kg/mol", "8,314 K·kg/mol", "22,4 K·kg/mol", "3,72 K·kg/mol"], "answer": 0},
+  {"q": "Qon plazmasining osmotik bosimi 37 °C da qancha?", "options": ["740–780 kPa", "3,5–4 kPa", "101,3 kPa", "1500–1600 kPa", "200–250 kPa"], "answer": 0},
+  {"q": "Qaysi eritma qon plazmasiga nisbatan izotonik?", "options": ["0,9 % li NaCl", "10 % li NaCl", "40 % li glyukoza", "Distillangan suv", "0,3 % li NaCl"], "answer": 0},
+  {"q": "Eritrotsitlar gipotonik eritmaga tushirilsa nima kuzatiladi?", "options": ["Gemoliz", "Plazmoliz", "O‘zgarish bo‘lmaydi", "Agglyutinatsiya", "Krenatsiya"], "answer": 0},
+  {"q": "H~2~SO~4~ ning 0,1 M eritmasi normal konsentratsiyasi qancha?", "options": ["0,2 n.", "0,1 n.", "0,05 n.", "0,3 n.", "1 n."], "answer": 0},
+  {"q": "Alkalimetriyada ishchi eritma sifatida nima ishlatiladi?", "options": ["NaOH", "HCl", "KMnO~4~", "AgNO~3~", "Trilon B"], "answer": 0},
+  {"q": "Fenolftaleinning rang o‘zgarish oralig‘i qaysi?", "options": ["pH 8,2–10,0", "pH 3,1–4,4", "pH 4,4–6,2", "pH 5,0–8,0", "pH 2,9–4,0"], "answer": 0},
+  {"q": "Kuchsiz kislotani kuchli asos bilan titrlashda qaysi indikator tanlanadi?", "options": ["Fenolftalein", "Metiloranj", "Dimetilaminoazobenzol", "Metil qizil", "Lakmus"], "answer": 0},
+  {"q": "0,1 M HCl ni 0,1 M NaOH bilan titrlashda titrlash sakrashi qaysi oraliqda?", "options": ["pH 4,3–9,7", "pH 1–3", "pH 7–8", "pH 10–12", "pH 2–5"], "answer": 0},
+  {"q": "Me’da shirasidagi erkin HCl qaysi indikator bilan titrlanadi?", "options": ["Dimetilaminoazobenzol", "Fenolftalein", "Lakmus", "Kraxmal", "Eriokrom qora"], "answer": 0},
+  {"q": "Me’da shirasining umumiy kislotaligi me’yorda qancha?", "options": ["40–60 t.b.", "10–20 t.b.", "100–120 t.b.", "0–5 t.b.", "80–100 t.b."], "answer": 0},
+  {"q": "NaOH eritmasining konsentratsiyasini aniqlash uchun boshlang‘ich standart modda qaysi?", "options": ["Oksalat kislota", "Bura", "Natriy xlorid", "Kaliy permanganat", "Glyukoza"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemorning me’da shirasi tekshirildi. 5 ml filtrlangan shirani titrlashda dimetilaminoazobenzol bo‘yicha 0,1 M NaOH dan 0,4 ml, fenolftalein bo‘yicha jami 1,2 ml sarflandi.", "ask": "Erkin, bog‘langan va umumiy kislotalilikni hisoblang va baholang.", "answer": "Erkin HCl = 0,4 · 20 = 8 t.b.; umumiy kislotalilik = 1,2 · 20 = 24 t.b.; bog‘langan = 24 − 8 = 16 t.b. Umumiy (me’yor 40–60) va erkin HCl (me’yor 20–40) kamaygan — **gipoatsid holat**. Bu surunkali atrofik gastritga xos; bemorni gastroskopiya va biopsiyaga yuborish kerak."},
+  {"title": "Masala 2", "text": "Yiringli yarani tozalash uchun gipertonik eritma kerak. Laborant 10 % li NaCl eritmasini tayyorladi (ρ = 1,07 g/ml, M(NaCl) = 58,5 g/mol, i = 1,9).", "ask": "Eritmaning 37 °C dagi osmotik bosimini hisoblang. U nima uchun yaraga ta’sir qiladi?", "answer": "C = 10 · 1,07 · 10 / 58,5 = 1,83 mol/l. π = i·C·R·T = 1,9 · 1,83 · 8,314 · 310 ≈ 8960 kPa — plazma bosimidan (740–780 kPa) taxminan 12 marta yuqori. Osmos qonuniga ko‘ra suv yara to‘qimasidan va yiringdan bog‘lamga tortiladi, yara tozalanadi."},
+  {"title": "Masala 3", "text": "Shoshilinch holatda bemorga vena ichiga 1 litr distillangan suv yuborib yuborildi. Ko‘p o‘tmay siydik qizg‘ish rangga bo‘yaldi, bel sohasida og‘riq paydo bo‘ldi.", "ask": "Nima sodir bo‘ldi? Kimyoviy-fizik asosini tushuntiring.", "answer": "Distillangan suv plazmaga nisbatan gipotonik. Suv osmos bo‘yicha eritrotsitlar ichiga kirib, ularni shishirib yoradi — **gemoliz**. Erkin gemoglobin siydikka o‘tadi (gemoglobinuriya), buyrak kanalchalarini berkitib, o‘tkir buyrak shikastlanishiga olib kelishi mumkin. Vena ichiga faqat izotonik (0,9 % NaCl, 5 % glyukoza) yoki tibbiy ko‘rsatma bo‘yicha boshqa eritmalar yuboriladi."}
+ ],
+ "cards": [
+  {"front": "Genri qonuni", "back": "C = k·p — gaz eruvchanligi parsial bosimga proporsional"},
+  {"front": "Sechenov qonuni", "back": "Elektrolit eritmalarida gaz eruvchanligi kamayadi"},
+  {"front": "Kolligativ xossalar", "back": "Bug‘ bosimi pasayishi, muzlash harorati pasayishi, qaynash harorati ko‘tarilishi, osmotik bosim"},
+  {"front": "Vant-Goff qonuni", "back": "π = i·C·R·T"},
+  {"front": "Izotonik eritma", "back": "Osmotik bosimi plazmaga teng: 0,9 % NaCl, 5 % glyukoza"},
+  {"front": "Onkotik bosim", "back": "Plazma oqsillari hosil qiladigan osmotik bosim qismi (≈ 3,5–4 kPa)"},
+  {"front": "Ekvivalent nuqta", "back": "Titrant aniqlanadigan modda bilan ekvivalent miqdorda reaksiyaga kirishgan payt"},
+  {"front": "Alkalimetriya", "back": "Kislotalarni ishqor (NaOH) ishchi eritmasi bilan aniqlash"},
+  {"front": "Fenolftalein", "back": "pH 8,2–10,0: rangsiz → qip-qizil"},
+  {"front": "Titrlash birligi (t.b.)", "back": "100 ml me’da shirasini neytrallash uchun sarflangan 0,1 M NaOH ml soni"}
+ ]
+}

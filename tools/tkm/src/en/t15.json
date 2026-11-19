@@ -1,0 +1,113 @@
+{
+ "id": "15",
+ "no": 15,
+ "title": "Lipids. Saponifiable simple and complex lipids. Nonsaponifiable lipids",
+ "goals": [
+  {"type": "p", "text": "To teach the student the classification of lipids, the saponification reaction, natural saturated and unsaturated fatty acids, mono-, di- and triglycerides, the chemical properties and nutritional value of fats, essential fatty acids, phospholipids, sphingolipids and glycolipids, terpenes and carotenoids, and the structure and medical significance of steroids (sex hormones, corticosteroids, bile acids, cholesterol, ergosterol, calciferol)."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": ["the division of lipids into saponifiable (simple and complex) and nonsaponifiable groups;", "the main fatty acids, the ω-3 and ω-6 series and the essential fatty acids;", "the structure of triglycerides and the hydrolysis, hydrogenation and peroxidation of fats;", "phospholipids, the formation of glycerol 3-phosphate, sphingolipids and glycolipids;", "the classification of terpenes and carotenoids;", "steroids: cholesterol, bile acids, steroid hormones and vitamin D."]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": ["write the saponification reaction of a triglyceride;", "determine the structure of a fatty acid from its shorthand (C18:2, ω-6);", "assess the unsaturation of a fat from its iodine number;", "explain the medical significance of disorders of lipid metabolism and of lipid-based drugs."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "**Linoleic (ω-6)** and **α-linolenic (ω-3)** acids are not synthesized in the human body — they are **essential** and must come with food. The double bonds of natural unsaturated fatty acids are in the **cis** configuration."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Terpenes by the number of isoprene (C~5~) units: **“mono — 10, sesqui — 15, di — 20, tri — 30, tetra — 40”** carbons; squalene (a triterpene) → cholesterol, β-carotene (a tetraterpene) → vitamin A."},
+  {"kind": "diqqat", "label": "Caution", "text": "Industrial partial hydrogenation of vegetable oils (margarine) produces **trans fatty acids**: they raise LDL cholesterol, lower HDL and increase the risk of cardiovascular disease."}
+ ],
+ "sections": [
+  {"title": "1. Classification of lipids. The saponification reaction", "blocks": [
+   {"type": "p", "text": "**Lipids** are natural compounds that are insoluble in water and soluble in nonpolar organic solvents (ether, chloroform, benzene). They serve as an energy store (1 g of fat — 38.9 kJ), as components of membranes, as thermal and mechanical protection, and as precursors of hormones, vitamins and signal molecules."},
+   {"type": "table", "title": "Table 15.1. Classification of lipids", "head": ["Group", "Subgroup", "Examples"], "rows": [["Saponifiable simple lipids", "neutral fats (acylglycerols), waxes", "triglycerides, spermaceti, lanolin"], ["Saponifiable complex lipids", "phospholipids, sphingolipids, glycolipids", "lecithin, cephalin, sphingomyelin, cerebrosides, gangliosides"], ["Nonsaponifiable lipids", "terpenes, steroids, fat-soluble vitamins", "carotenes, cholesterol, bile acids, steroid hormones, vitamins A, D, E, K"]]},
+   {"type": "p", "text": "**Saponification** is the hydrolysis of ester bonds in the presence of an alkali: triglyceride + 3NaOH → glycerol + 3R−COONa (soap). Sodium salts are hard soaps, potassium salts liquid soaps. Nonsaponifiable lipids have no ester bond and are not broken down by alkali."}
+  ]},
+  {"title": "2. Natural fatty acids", "blocks": [
+   {"type": "p", "text": "Natural fatty acids are usually unbranched monocarboxylic acids with an **even number** (C~14~–C~24~) of carbon atoms. Shorthand: C18:2 means 18 carbons and 2 double bonds; the **ω** (n) number shows the position of the first double bond counted from the methyl end."},
+   {"type": "table", "title": "Table 15.2. The main fatty acids", "head": ["Acid", "Shorthand", "Series", "Source and significance"], "rows": [["Palmitic", "C16:0", "saturated", "the most widespread; animal fats, palm oil"], ["Stearic", "C18:0", "saturated", "animal fats"], ["Oleic", "C18:1", "ω-9", "olive oil; synthesized in the body"], ["Linoleic", "C18:2", "ω-6", "sunflower and corn oil; essential"], ["α-Linolenic", "C18:3", "ω-3", "flaxseed oil, walnuts; essential"], ["Arachidonic", "C20:4", "ω-6", "precursor of eicosanoids (prostaglandins, leukotrienes)"], ["Eicosapentaenoic (EPA), docosahexaenoic (DHA)", "C20:5, C22:6", "ω-3", "fish oil; brain and retina, anti-inflammatory"]]},
+   {"type": "img", "src": "data/img/tkm/t15_yogkislota.webp", "w": 1400, "h": 526, "label": "Figure 15.1", "caption": "Saturated stearic acid (a straight chain) and oleic and linoleic acids with cis double bonds (a bent chain) (structural formulas drawn with RDKit from PubChem data)."},
+   {"type": "p", "text": "A cis double bond creates a “kink” in the chain and prevents tight packing of the molecules — that is why vegetable **oils**, rich in unsaturated acids, are **liquid**, and animal **fats**, rich in saturated acids, are **solid**. Unsaturated fatty acids in membranes provide their fluidity."}
+  ]},
+  {"title": "3. Mono-, di- and triglycerides. Chemical properties of fats", "blocks": [
+   {"type": "p", "text": "**Acylglycerols** are esters of glycerol with fatty acids: mono-, di- and **triglycerides** (triacylglycerols). If all three acyl residues are the same, the triglyceride is **simple** (tripalmitin); if they differ, it is **mixed**; natural fats consist mainly of mixed triglycerides."},
+   {"type": "table", "title": "Table 15.3. Chemical properties of fats", "head": ["Reaction", "Essence", "Significance"], "rows": [["Hydrolysis (enzymatic)", "lipase breaks a triglyceride into fatty acids and glycerol", "digestion (pancreatic lipase), mobilization of fat from adipose tissue"], ["Saponification", "alkaline hydrolysis", "soap making; the **saponification number** shows the mean molecular mass"], ["Hydrogenation", "addition of hydrogen to double bonds (Ni catalyst)", "margarine; formation of trans fatty acids"], ["Addition of iodine", "I~2~ adds to double bonds", "the **iodine number** — a measure of unsaturation: olive oil ≈ 80–90, sunflower oil ≈ 125–140, beef tallow ≈ 30–45"], ["Peroxidation", "radical oxidation of unsaturated chains by O~2~", "rancidity of fat; damage to membrane lipids (oxidative stress)"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Lipid peroxidation** (LPO) proceeds as a chain reaction in the polyunsaturated fatty acids of membranes under the action of reactive oxygen species; its product is malondialdehyde. It increases in atherosclerosis, ischemic injury, aging and inflammation. Protection comes from antioxidants: **vitamin E** (tocopherol), vitamin C, glutathione and selenium-containing glutathione peroxidase."}]},
+   {"type": "p", "text": "**Nutritional value of fats:** fats should provide ≈ 25–30 % of dietary energy; they are a source of the fat-soluble vitamins (A, D, E, K) and of the **essential fatty acids** (linoleic, α-linolenic — formerly called “vitamin F”). Their deficiency leads to dermatitis, growth retardation and slow wound healing."}
+  ]},
+  {"title": "4. Phospholipids. Formation of glycerol 3-phosphate", "blocks": [
+   {"type": "p", "text": "**Glycerophospholipids** are derivatives of phosphatidic acid: fatty acids at positions 1 and 2 of glycerol, and at position 3 a phosphate with an amino alcohol or another group attached to it. They are **diphilic** molecules: two hydrophobic “tails” and a polar “head” — that is why in water they form the lipid bilayer (membrane) and liposomes."},
+   {"type": "table", "title": "Table 15.4. The main glycerophospholipids", "head": ["Phospholipid", "Polar group", "Significance"], "rows": [["Phosphatidylcholine (lecithin)", "choline", "membranes, lipoproteins, pulmonary surfactant (the dipalmitoyl form)"], ["Phosphatidylethanolamine (cephalin)", "ethanolamine", "the inner leaflet of membranes"], ["Phosphatidylserine", "serine", "moves to the outer leaflet in apoptosis; blood clotting"], ["Phosphatidylinositol", "inositol", "inositol trisphosphate and diacylglycerol — second messengers"], ["Cardiolipin", "a second phosphatidyl residue", "the inner mitochondrial membrane"]]},
+   {"type": "p", "text": "**L-Glycerol 3-phosphate is formed in the body in two ways:** 1) phosphorylation of glycerol by ATP (**glycerol kinase**, mainly in the liver and kidney): glycerol + ATP → L-glycerol 3-phosphate + ADP; 2) reduction of the glycolytic intermediate dihydroxyacetone phosphate (**glycerol-3-phosphate dehydrogenase**, NADH): dihydroxyacetone phosphate + NADH + H^+^ → L-glycerol 3-phosphate + NAD^+^ (in adipose tissue and muscle). Triglycerides and phospholipids are synthesized from it."}
+  ]},
+  {"title": "5. Sphingolipids and glycolipids", "blocks": [
+   {"type": "p", "text": "**Sphingolipids** contain the 18-carbon amino alcohol **sphingosine** instead of glycerol. When the amino group of sphingosine forms an amide bond with a fatty acid, a **ceramide** results; ceramide joined with phosphocholine is **sphingomyelin** (the myelin sheath of nerve fibers)."},
+   {"type": "list", "ordered": false, "items": ["**Cerebrosides** (galactocerebrosides) — ceramide + one galactose (or glucose); abundant in myelin and nervous tissue.", "**Gangliosides** — ceramide + an oligosaccharide containing sialic (N-acetylneuraminic) acid; in nerve cell membranes, with receptor and cell–cell recognition functions.", "**Sulfatides** — sulfated cerebrosides."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Sphingolipidoses** are inherited deficiencies of the lysosomal enzymes that break down sphingolipids: **Gaucher disease** (glucocerebrosidase — glucocerebroside accumulates; enzyme replacement therapy exists), **Tay–Sachs disease** (hexosaminidase A — GM~2~ ganglioside accumulates in brain neurons), **Niemann–Pick disease** (sphingomyelinase)."}]}
+  ]},
+  {"title": "6. Terpenes and carotenoids", "blocks": [
+   {"type": "p", "text": "**Terpenes** are compounds built from **isoprene** (C~5~H~8~) units. They are divided into monoterpenes (C~10~: menthol, camphor, limonene), sesquiterpenes (C~15~), diterpenes (C~20~: retinol), triterpenes (C~30~: squalene — the precursor of cholesterol) and tetraterpenes (C~40~: carotenoids). In the body isoprenoids are synthesized from acetyl-CoA by the **mevalonate** pathway."},
+   {"type": "list", "ordered": false, "items": ["**β-Carotene** is split in two in the intestinal wall to give two molecules of **vitamin A** (retinal); carrots, pumpkin, apricots.", "**Lycopene** (tomatoes), **lutein** and **zeaxanthin** (the macula of the retina) are antioxidants.", "Vitamin A (retinol) is part of the visual pigment **rhodopsin** and controls epithelial differentiation; its deficiency causes “night blindness” (hemeralopia) and xerophthalmia."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Statins** (atorvastatin, rosuvastatin) block **HMG-CoA reductase**, the key enzyme of the mevalonate pathway, and reduce cholesterol synthesis in the liver — LDL cholesterol falls; they are the main drug group for preventing atherosclerosis and its complications (myocardial infarction, stroke)."}]}
+  ]},
+  {"title": "7. Steroids: cholesterol, bile acids, steroid hormones, vitamin D", "blocks": [
+   {"type": "p", "text": "**Steroids** are compounds with the cyclopentanoperhydrophenanthrene (sterane) skeleton: three six-membered (A, B, C) and one five-membered (D) ring. The precursor of them all is **cholesterol**."},
+   {"type": "img", "src": "data/img/tkm/t15_steroid.webp", "w": 1400, "h": 526, "label": "Figure 15.2", "caption": "Steroids: cholesterol, cortisol (a glucocorticoid) and estradiol (an estrogen) — the common sterane skeleton (structural formulas drawn with RDKit from PubChem data)."},
+   {"type": "table", "title": "Table 15.5. Important steroids", "head": ["Group", "Examples", "Significance"], "rows": [["Sterols", "cholesterol, ergosterol (fungi)", "membrane stability; precursor of steroid hormones, bile acids and vitamin D"], ["Bile acids", "cholic and chenodeoxycholic acids and their glycine and taurine conjugates", "emulsifying fats, absorption; the main route of cholesterol excretion"], ["Glucocorticoids", "cortisol, prednisolone (synthetic)", "gluconeogenesis, suppression of inflammation and immunity"], ["Mineralocorticoids", "aldosterone", "retention of Na^+^ and excretion of K^+^ (kidney)"], ["Sex hormones", "testosterone, estradiol, progesterone", "sexual development, maintenance of pregnancy"], ["Vitamin D", "cholecalciferol (D~3~), ergocalciferol (D~2~)", "calcium and phosphorus metabolism"]]},
+   {"type": "p", "text": "**Formation of vitamin D:** in the skin, 7-dehydrocholesterol has its B ring opened by solar ultraviolet (UVB) light and becomes **cholecalciferol (D~3~)**; when ergosterol (in plants and fungi) is irradiated, **ergocalciferol (D~2~)** is formed. The active form is **calcitriol** (1,25-dihydroxy-D~3~), produced after 25-hydroxylation in the liver and 1α-hydroxylation in the kidney."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Normal blood lipid values (adults): total cholesterol < 5.2 mmol/L, LDL cholesterol < 3.0 mmol/L, HDL cholesterol > 1.0 mmol/L (men), triglycerides < 1.7 mmol/L. When cholesterol in bile exceeds bile acids and phospholipids, **cholesterol gallstones** form; ursodeoxycholic acid is used to dissolve small stones. Vitamin D deficiency leads to **rickets** in children and osteomalacia in adults."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: writing the saponification reaction of a triglyceride", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Write the formula of the triglyceride: the glycerol residue and three acyl groups (R~1~CO−, R~2~CO−, R~3~CO−).", "Write one NaOH for each ester bond (3 mol in total).", "Write the products: glycerol and the sodium salts of the fatty acids (soaps).", "Balance the equation and name the substances (for example, tristearin → glycerol + 3 sodium stearate).", "Explain the cleaning action of soap by its diphilic structure and micelle formation."]}]},
+  {"title": "Skill: analyzing the shorthand of a fatty acid", "blocks": [
+   {"type": "list", "ordered": true, "items": ["The first number is the number of carbon atoms (C18).", "The number after the colon is the number of double bonds (C18:2 — two).", "The ω number is the position of the first double bond from the methyl end (ω-6).", "In natural acids the double bonds are cis and separated by a methylene group (−CH=CH−CH~2~−CH=CH−).", "The ω-3 and ω-6 series do not interconvert in the body — both must come with food."]}]}
+ ],
+ "questions": [
+  "How are lipids classified? Give examples of saponifiable and nonsaponifiable lipids.",
+  "Write and explain the saponification reaction.",
+  "List the main saturated and unsaturated fatty acids.",
+  "What is the significance of ω-3 and ω-6 fatty acids?",
+  "Why are vegetable oils liquid and animal fats solid?",
+  "What are simple and mixed triglycerides?",
+  "Describe the hydrogenation of fats and the harm of trans fatty acids.",
+  "What does the iodine number show?",
+  "Describe lipid peroxidation and antioxidants.",
+  "Explain the structure of phospholipids and the pathways of glycerol 3-phosphate formation.",
+  "How are sphingolipids and glycolipids built? Give an example of a sphingolipidosis.",
+  "What is the significance of terpenes and carotenoids?",
+  "Describe the steroids: cholesterol, bile acids, steroid hormones and vitamin D."
+ ],
+ "quiz": [
+  {"q": "Which lipid is not saponified?", "options": ["Cholesterol", "Tristearin", "Lecithin", "Sphingomyelin", "Wax"], "answer": 0},
+  {"q": "What is formed when triglycerides are hydrolyzed by alkali?", "options": ["Glycerol and soaps", "Glycerol and aldehydes", "Cholesterol and soaps", "Glucose and fatty acids", "Sphingosine and phosphate"], "answer": 0},
+  {"q": "Which fatty acid is essential?", "options": ["Linoleic", "Palmitic", "Stearic", "Oleic", "Myristic"], "answer": 0},
+  {"q": "What is the shorthand of oleic acid?", "options": ["C18:1, ω-9", "C18:2, ω-6", "C18:0", "C16:0", "C20:4, ω-6"], "answer": 0},
+  {"q": "From which fatty acid are prostaglandins formed?", "options": ["Arachidonic", "Stearic", "Palmitic", "Oleic", "Caproic"], "answer": 0},
+  {"q": "To which series do the EPA and DHA of fish oil belong?", "options": ["ω-3", "ω-6", "ω-9", "saturated", "trans"], "answer": 0},
+  {"q": "What does the iodine number show?", "options": ["The degree of unsaturation of a fat", "The chain length of the fatty acids", "The melting point of the fat", "The glycerol content", "The acidity"], "answer": 0},
+  {"q": "Which harmful compounds may be formed in the production of margarine?", "options": ["Trans fatty acids", "Omega-3 acids", "Phospholipids", "Steroids", "Carotenoids"], "answer": 0},
+  {"q": "Which fat-soluble vitamin protects against lipid peroxidation?", "options": ["Vitamin E", "Vitamin D", "Vitamin K", "Vitamin B~12~", "Vitamin B~1~"], "answer": 0},
+  {"q": "Which amino alcohol is part of lecithin?", "options": ["Choline", "Ethanolamine", "Serine", "Sphingosine", "Inositol"], "answer": 0},
+  {"q": "Which amino alcohol replaces glycerol in sphingolipids?", "options": ["Sphingosine", "Choline", "Ethanolamine", "Serine", "Inositol"], "answer": 0},
+  {"q": "Which lipid accumulates in Tay–Sachs disease?", "options": ["GM~2~ ganglioside", "Glucocerebroside", "Sphingomyelin", "Cholesterol esters", "Triglycerides"], "answer": 0},
+  {"q": "Into what is β-carotene converted in the intestine?", "options": ["Vitamin A", "Vitamin D", "Vitamin E", "Cholesterol", "Vitamin K"], "answer": 0},
+  {"q": "Which enzyme do statins block?", "options": ["HMG-CoA reductase", "Lipase", "Lipoprotein lipase", "Cyclooxygenase", "Phospholipase A~2~"], "answer": 0},
+  {"q": "From what is vitamin D~3~ formed in the skin under UV light?", "options": ["7-Dehydrocholesterol", "Ergosterol", "Cortisol", "Squalene", "Cholic acid"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 1", "text": "A 45-year-old man who smokes and is overweight. Blood lipid profile: total cholesterol 7.1 mmol/L, LDL cholesterol 4.9 mmol/L, HDL cholesterol 0.8 mmol/L, triglycerides 2.6 mmol/L.", "ask": "Interpret the results. What chemically based dietary advice would you give, and which drug group may be used?", "answer": "All values are atherogenic: total cholesterol (> 5.2), LDL (> 3.0) and triglycerides (> 1.7) are raised and HDL (< 1.0) is lowered — **atherogenic dyslipidemia** with a high risk of cardiovascular disease. Advice: reduce saturated and especially **trans fats** (margarine, fried fast food), replace them with **ω-3** (fish, flaxseed oil) and monounsaturated (olive oil) fats, eat more fiber, stop smoking and lose weight. Drug: **statins** (HMG-CoA reductase inhibitors)."},
+  {"title": "Problem 2", "text": "In the laboratory, 1 mol of tripalmitin (M = 807 g/mol) was completely saponified with sodium hydroxide.", "ask": "Write the reaction equation. How many moles of NaOH are used, and how many grams of sodium palmitate (M = 278 g/mol) are formed?", "answer": "Tripalmitin + 3NaOH → glycerol + 3C~15~H~31~COONa. **3 mol of NaOH** are needed for 1 mol of triglyceride; 3 mol of sodium palmitate are formed: m = 3 · 278 = 834 g. In addition, 1 mol (92 g) of glycerol is released."},
+  {"title": "Problem 3", "text": "A 9-month-old breast-fed baby who spends most of the winter indoors has sweating, a bald patch on the back of the head, softening of the skull bones and a “rachitic rosary”. Blood phosphate is reduced and alkaline phosphatase is raised.", "ask": "What is the disease? Explain its chemical basis in terms of steroids.", "answer": "**Rickets** — vitamin D deficiency. Vitamin D~3~ is formed in the skin when the B ring of 7-dehydrocholesterol is opened by UVB light; in winter there is little sunlight, and breast milk contains little vitamin D. D~3~ is converted in the liver to 25-hydroxycholecalciferol and in the kidney to active **calcitriol**; calcitriol ensures the absorption of Ca^2+^ and phosphate in the intestine. When it is deficient, bone mineralization is disturbed. Treatment and prevention: vitamin D preparations, sunbathing, better nutrition."}
+ ],
+ "cards": [
+  {"front": "Saponification", "back": "Alkaline hydrolysis of esters: triglyceride + 3NaOH → glycerol + 3 soap"},
+  {"front": "Essential fatty acids", "back": "Linoleic (ω-6) and α-linolenic (ω-3)"},
+  {"front": "Arachidonic acid", "back": "C20:4, ω-6; precursor of prostaglandins and leukotrienes"},
+  {"front": "Iodine number", "back": "Grams of iodine added to 100 g of fat — a measure of unsaturation"},
+  {"front": "Trans fats", "back": "Formed by partial hydrogenation; atherogenic"},
+  {"front": "Lecithin", "back": "Phosphatidylcholine — a phospholipid of membranes and surfactant"},
+  {"front": "Sphingomyelin", "back": "Ceramide + phosphocholine; part of the myelin sheath"},
+  {"front": "Gangliosides", "back": "Ceramide + an oligosaccharide with sialic acid; accumulate in Tay–Sachs disease"},
+  {"front": "Sterane skeleton", "back": "Cyclopentanoperhydrophenanthrene — the basis of all steroids"},
+  {"front": "Cholecalciferol (D~3~)", "back": "Formed in the skin from 7-dehydrocholesterol under UVB"}
+ ]
+}

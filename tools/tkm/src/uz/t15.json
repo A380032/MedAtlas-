@@ -1,0 +1,113 @@
+{
+ "id": "15",
+ "no": 15,
+ "title": "Lipidlar. Sovunlanadigan oddiy va murakkab lipidlar. Sovunlanmaydigan lipidlar",
+ "goals": [
+  {"type": "p", "text": "Talabaga lipidlarning tasnifi, sovunlanish reaksiyasi, tabiiy to‘yingan va to‘yinmagan yog‘ kislotalari, mono-, di- va triglitseridlar, yog‘larning kimyoviy xossalari va oziqlik qiymati, almashinmaydigan yog‘ kislotalari, fosfolipidlar, sfingolipidlar va glikolipidlar, terpenlar va karotinoidlar, steroidlar (jinsiy gormonlar, kortikosteroidlar, o‘t kislotalari, xolesterin, ergosterin, kalsiferol) tuzilishi va tibbiy ahamiyatini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["lipidlarning sovunlanadigan (oddiy va murakkab) va sovunlanmaydigan guruhlarga bo‘linishini;", "asosiy yog‘ kislotalari, ω-3 va ω-6 qatorlarini, almashinmaydigan yog‘ kislotalarini;", "triglitseridlar tuzilishi va yog‘larning gidrolizi, gidrogenlanishi va perekisli oksidlanishini;", "fosfolipidlar, glitserin-3-fosfat hosil bo‘lishi, sfingolipidlar va glikolipidlarni;", "terpenlar tasnifi va karotinoidlarni;", "steroidlar: xolesterin, o‘t kislotalari, steroid gormonlar va D vitaminini."]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": ["triglitseridning sovunlanish reaksiyasini yozish;", "yog‘ kislotasining qisqa belgisidan (C18:2, ω-6) uning tuzilishini aniqlash;", "yog‘ning yod soni bo‘yicha to‘yinmaganligini baholash;", "lipid almashinuvi buzilishlari va lipid tabiatli dorilarning tibbiy ahamiyatini tushuntirish."]}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Odam organizmida **linol (ω-6)** va **α-linolen (ω-3)** kislotalari sintezlanmaydi — ular **almashinmaydigan** va ovqat bilan kelishi shart. Tabiiy to‘yinmagan yog‘ kislotalaridagi qo‘sh bog‘lar **sis**-konfiguratsiyada bo‘ladi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Terpenlar izopren (C~5~) birliklari soni bo‘yicha: **“mono — 10, seskvi — 15, di — 20, tri — 30, tetra — 40”** uglerod; skvalen (triterpen) → xolesterin, β-karotin (tetraterpen) → vitamin A."},
+  {"kind": "diqqat", "label": "Diqqat", "text": "O‘simlik moylarini sanoatda qisman gidrogenlashda (margarin) **trans-yog‘ kislotalari** hosil bo‘ladi: ular LPNP xolesterinini oshiradi, LPYuP ni kamaytiradi va yurak-qon tomir kasalliklari xavfini oshiradi."}
+ ],
+ "sections": [
+  {"title": "1. Lipidlarning tasnifi. Sovunlanish reaksiyasi", "blocks": [
+   {"type": "p", "text": "**Lipidlar** — suvda erimaydigan, qutbsiz organik erituvchilarda (efir, xloroform, benzol) eriydigan tabiiy birikmalar. Ular energiya zaxirasi (1 g yog‘ — 38,9 kJ), membranalar tarkibi, issiqlik va mexanik himoya, gormonlar, vitaminlar va signal molekulalari o‘tmishdoshlari vazifasini bajaradi."},
+   {"type": "table", "title": "Jadval 15.1. Lipidlar tasnifi", "head": ["Guruh", "Kichik guruh", "Misollar"], "rows": [["Sovunlanadigan oddiy lipidlar", "neytral yog‘lar (atsilglitserinlar), mumlar", "triglitseridlar, spermatset, lanolin"], ["Sovunlanadigan murakkab lipidlar", "fosfolipidlar, sfingolipidlar, glikolipidlar", "letsitin, kefalin, sfingomiyelin, serebrozidlar, gangliozidlar"], ["Sovunlanmaydigan lipidlar", "terpenlar, steroidlar, yog‘da eruvchi vitaminlar", "karotinlar, xolesterin, o‘t kislotalari, steroid gormonlar, vitaminlar A, D, E, K"]]},
+   {"type": "p", "text": "**Sovunlanish** — murakkab efir bog‘larining ishqor ishtirokida gidrolizi: triglitserid + 3NaOH → glitserin + 3R−COONa (sovun). Natriy tuzlari — qattiq, kaliy tuzlari — suyuq sovunlar. Sovunlanmaydigan lipidlarda murakkab efir bog‘i yo‘q, ular ishqor ta’sirida parchalanmaydi."}
+  ]},
+  {"title": "2. Tabiiy yog‘ kislotalari", "blocks": [
+   {"type": "p", "text": "Tabiiy yog‘ kislotalari odatda **juft sonli** (C~14~–C~24~) uglerod atomlariga ega, shoxlanmagan zanjirli monokarbon kislotalar. Qisqa belgi: C18:2 — 18 ta uglerod, 2 ta qo‘sh bog‘; **ω** (n) belgi metil uchidan birinchi qo‘sh bog‘ o‘rnini ko‘rsatadi."},
+   {"type": "table", "title": "Jadval 15.2. Asosiy yog‘ kislotalari", "head": ["Kislota", "Belgisi", "Qator", "Manbai va ahamiyati"], "rows": [["Palmitin", "C16:0", "to‘yingan", "eng ko‘p tarqalgan; hayvon yog‘lari, palma yog‘i"], ["Stearin", "C18:0", "to‘yingan", "hayvon yog‘lari"], ["Olein", "C18:1", "ω-9", "zaytun moyi; organizmda sintezlanadi"], ["Linol", "C18:2", "ω-6", "kungaboqar, makkajo‘xori moyi; almashinmaydigan"], ["α-Linolen", "C18:3", "ω-3", "zig‘ir moyi, yong‘oq; almashinmaydigan"], ["Araxidon", "C20:4", "ω-6", "eykozanoidlar (prostaglandinlar, leykotriyenlar) o‘tmishdoshi"], ["Eykozapentaen (EPK), dokozageksaen (DGK)", "C20:5, C22:6", "ω-3", "baliq yog‘i; miya va to‘r parda, yallig‘lanishga qarshi"]]},
+   {"type": "img", "src": "data/img/tkm/t15_yogkislota.webp", "w": 1400, "h": 526, "label": "Rasm 15.1", "caption": "To‘yingan stearin kislota (to‘g‘ri zanjir) va sis-qo‘sh bog‘li olein hamda linol kislotalari (zanjir bukilgan) (struktura formulalar PubChem ma’lumotlari asosida RDKit dasturida chizilgan)."},
+   {"type": "p", "text": "Sis-qo‘sh bog‘ zanjirda “bukilish” hosil qiladi va molekulalarning zich joylashuviga to‘sqinlik qiladi — shuning uchun to‘yinmagan kislotalarga boy o‘simlik **moylari suyuq**, to‘yingan kislotalarga boy hayvon **yog‘lari qattiq**. Membranalardagi to‘yinmagan yog‘ kislotalari ularning suyuqligini (oquvchanligini) ta’minlaydi."}
+  ]},
+  {"title": "3. Mono-, di- va triglitseridlar. Yog‘larning kimyoviy xossalari", "blocks": [
+   {"type": "p", "text": "**Atsilglitserinlar** — glitserinning yog‘ kislotalari bilan murakkab efirlari: mono-, di- va **triglitseridlar** (triatsilglitserinlar). Uchala atsil qoldig‘i bir xil bo‘lsa — **oddiy** (tripalmitin), har xil bo‘lsa — **aralash** triglitserid; tabiiy yog‘lar asosan aralash triglitseridlardan iborat."},
+   {"type": "table", "title": "Jadval 15.3. Yog‘larning kimyoviy xossalari", "head": ["Reaksiya", "Mohiyati", "Ahamiyati"], "rows": [["Gidroliz (fermentativ)", "lipaza triglitseridni yog‘ kislotalari va glitseringa parchalaydi", "ovqat hazmi (me’da osti bezi lipazasi), yog‘ to‘qimasidan yog‘ safarbar qilinishi"], ["Sovunlanish", "ishqoriy gidroliz", "sovun ishlab chiqarish; **sovunlanish soni** — o‘rtacha molekulyar massani ko‘rsatadi"], ["Gidrogenlanish", "qo‘sh bog‘larga vodorod birikishi (Ni katalizator)", "margarin; trans-yog‘ kislotalari hosil bo‘lishi"], ["Yod birikishi", "qo‘sh bog‘larga I~2~ birikadi", "**yod soni** — to‘yinmaganlik o‘lchovi: zaytun moyi ≈ 80–90, kungaboqar moyi ≈ 125–140, mol yog‘i ≈ 30–45"], ["Perekisli oksidlanish", "to‘yinmagan zanjirlarning O~2~ bilan radikal oksidlanishi", "yog‘ning achishi; membrana lipidlarining shikastlanishi (oksidlovchi stress)"]]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Lipidlarning perekisli oksidlanishi** (LPO) faol kislorod shakllari ta’sirida membranadagi ko‘p to‘yinmagan yog‘ kislotalarida zanjirli reaksiya sifatida boradi; mahsuloti malon dialdegid. U ateroskleroz, ishemik shikastlanish, qarish va yallig‘lanishda ortadi. Himoya — antioksidantlar: **vitamin E** (tokoferol), vitamin C, glutation, selen tutuvchi glutationperoksidaza."}]},
+   {"type": "p", "text": "**Yog‘larning oziqlik qiymati:** yog‘lar ratsion energiyasining ≈ 25–30 % ini berishi tavsiya etiladi; ular yog‘da eruvchi vitaminlar (A, D, E, K) va **almashinmaydigan yog‘ kislotalari** (linol, α-linolen — ilgari “vitamin F” deyilgan) manbai. Ularning yetishmasligi teri dermatiti, o‘sishning sekinlashuvi, yaralar sekin bitishiga olib keladi."}
+  ]},
+  {"title": "4. Fosfolipidlar. Glitserin-3-fosfat hosil bo‘lishi", "blocks": [
+   {"type": "p", "text": "**Glitserofosfolipidlar** — fosfatid kislota hosilalari: glitserinning 1- va 2-holatlarida yog‘ kislotalari, 3-holatida fosfat va unga biriktirilgan aminospirt yoki boshqa guruh. Ular **difil** molekulalar: ikki gidrofob “dum” va qutbli “bosh” — shuning uchun suvda lipid qo‘sh qavat (membrana) va liposomalar hosil qiladi."},
+   {"type": "table", "title": "Jadval 15.4. Asosiy glitserofosfolipidlar", "head": ["Fosfolipid", "Qutbli guruh", "Ahamiyati"], "rows": [["Fosfatidilxolin (letsitin)", "xolin", "membranalar, lipoproteinlar, o‘pka surfaktanti (dipalmitoil-shakli)"], ["Fosfatidiletanolamin (kefalin)", "etanolamin", "membranalarning ichki qavati"], ["Fosfatidilserin", "serin", "apoptozda tashqi qavatga chiqadi; qon ivishi"], ["Fosfatidilinozit", "inozit", "inozittrifosfat va diatsilglitserin — ikkilamchi signallar"], ["Kardiolipin", "ikkinchi fosfatidil qoldig‘i", "mitoxondriyaning ichki membranasi"]]},
+   {"type": "p", "text": "**L-glitserin-3-fosfat organizmda ikki yo‘l bilan hosil bo‘ladi:** 1) glitserinning ATF bilan fosforillanishi (**glitserinkinaza**, asosan jigar va buyrakda): glitserin + ATF → L-glitserin-3-fosfat + ADF; 2) glikoliz oraliq mahsuloti digidroksiatsetonfosfatning qaytarilishi (**glitserin-3-fosfatdegidrogenaza**, NADH): digidroksiatsetonfosfat + NADH + H^+^ → L-glitserin-3-fosfat + NAD^+^ (yog‘ to‘qimasi va mushaklarda). Undan triglitseridlar va fosfolipidlar sintezlanadi."}
+  ]},
+  {"title": "5. Sfingolipidlar va glikolipidlar", "blocks": [
+   {"type": "p", "text": "**Sfingolipidlar** glitserin o‘rniga 18 uglerodli aminospirt **sfingozin** tutadi. Sfingozinning aminoguruhi yog‘ kislotasi bilan amid bog‘ hosil qilsa — **seramid**; seramid fosfoxolin bilan birikkanda — **sfingomiyelin** (nerv tolalarining miyelin qobig‘i)."},
+   {"type": "list", "ordered": false, "items": ["**Serebrozidlar** (galaktotserebrozidlar) — seramid + bitta galaktoza (yoki glyukoza); miyelin va nerv to‘qimasida ko‘p.", "**Gangliozidlar** — seramid + sial (N-atsetilneyramin) kislota tutuvchi oligosaxarid; nerv hujayralari membranasi, retseptor va hujayralararo tanish vazifasi.", "**Sulfatidlar** — sulfatlangan serebrozidlar."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Sfingolipidozlar** — sfingolipidlarni parchalovchi lizosoma fermentlarining irsiy yetishmovchiligi: **Gosher kasalligi** (glyukotserebrozidaza — glyukotserebrozid to‘planadi; ferment o‘rnini bosuvchi davo bor), **Tey–Saks kasalligi** (geksozaminidaza A — GM~2~-gangliozid miya neyronlarida to‘planadi), **Niman–Pik kasalligi** (sfingomiyelinaza)."}]}
+  ]},
+  {"title": "6. Terpenlar va karotinoidlar", "blocks": [
+   {"type": "p", "text": "**Terpenlar** — **izopren** (C~5~H~8~) birliklaridan tuzilgan birikmalar. Ular monoterpenlar (C~10~: mentol, kamfora, limonen), seskviterpenlar (C~15~), diterpenlar (C~20~: retinol), triterpenlar (C~30~: skvalen — xolesterin o‘tmishdoshi) va tetraterpenlarga (C~40~: karotinoidlar) bo‘linadi. Organizmda izoprenoidlar asetil-KoA dan **mevalonat** yo‘li bilan sintezlanadi."},
+   {"type": "list", "ordered": false, "items": ["**β-karotin** — ichak devorida ikkiga bo‘linib, ikki molekula **vitamin A** (retinal) hosil qiladi; sabzi, oshqovoq, o‘rik.", "**Likopin** (pomidor), **lyutein** va **zeaksantin** (to‘r parda sariq dog‘i) — antioksidantlar.", "Vitamin A (retinol) — ko‘rish pigmenti **rodopsin** tarkibi, epiteliy differensiatsiyasi; yetishmasligida “tovuq ko‘rligi” (gemeralopiya), kseroftalmiya."]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Statinlar** (atorvastatin, rozuvastatin) mevalonat yo‘lining kalit fermenti **GMG-KoA-reduktaza**ni to‘sadi va jigarda xolesterin sintezini kamaytiradi — LPNP xolesterini pasayadi; ateroskleroz va uning asoratlari (infarkt, insult) profilaktikasining asosiy dori guruhi."}]}
+  ]},
+  {"title": "7. Steroidlar: xolesterin, o‘t kislotalari, steroid gormonlar, D vitamini", "blocks": [
+   {"type": "p", "text": "**Steroidlar** — siklopentanperhidrofenantren (steran) skeletiga ega birikmalar: uchta olti a’zoli (A, B, C) va bitta besh a’zoli (D) halqa. Barchasining o‘tmishdoshi — **xolesterin**."},
+   {"type": "img", "src": "data/img/tkm/t15_steroid.webp", "w": 1400, "h": 526, "label": "Rasm 15.2", "caption": "Steroidlar: xolesterin, kortizol (glyukokortikoid) va estradiol (estrogen) — umumiy steran skeleti (struktura formulalar PubChem ma’lumotlari asosida RDKit dasturida chizilgan)."},
+   {"type": "table", "title": "Jadval 15.5. Muhim steroidlar", "head": ["Guruh", "Misollar", "Ahamiyati"], "rows": [["Sterinlar", "xolesterin, ergosterin (zamburug‘lar)", "membranalar barqarorligi; steroid gormonlar, o‘t kislotalari va D vitamini o‘tmishdoshi"], ["O‘t kislotalari", "xol, xenodezoksixol kislotalar va ularning glitsin, taurin konyugatlari", "yog‘larni emulsiyalash, so‘rilish; xolesterinni chiqarishning asosiy yo‘li"], ["Glyukokortikoidlar", "kortizol, prednizolon (sintetik)", "glyukoneogenez, yallig‘lanish va immunitetni bostirish"], ["Mineralokortikoidlar", "aldosteron", "Na^+^ ushlab, K^+^ chiqarish (buyrak)"], ["Jinsiy gormonlar", "testosteron, estradiol, progesteron", "jinsiy rivojlanish, homiladorlikni saqlash"], ["D vitamini", "xolekalsiferol (D~3~), ergokalsiferol (D~2~)", "kalsiy va fosfor almashinuvi"]]},
+   {"type": "p", "text": "**D vitamini hosil bo‘lishi:** terida 7-degidroxolesterin quyoshning ultrabinafsha (UVB) nuri ta’sirida B-halqasi ochilib **xolekalsiferol (D~3~)** ga aylanadi; ergosterin (o‘simlik va zamburug‘larda) nurlanganda **ergokalsiferol (D~2~)** hosil bo‘ladi. Faol shakli — jigarda 25- va buyrakda 1α-gidroksillanishdan keyin hosil bo‘ladigan **kalsitriol** (1,25-digidroksi-D~3~)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Qon lipid spektri me’yorlari (kattalar): umumiy xolesterin < 5,2 mmol/l, LPNP xolesterini < 3,0 mmol/l, LPYuP xolesterini > 1,0 mmol/l (erkaklar), triglitseridlar < 1,7 mmol/l. O‘tda xolesterin o‘t kislotalari va fosfolipidlarga nisbatan ko‘payib ketsa, **xolesterin o‘t toshlari** hosil bo‘ladi; ursodezoksixol kislota kichik toshlarni eritishda ishlatiladi. D vitamini yetishmasligi bolalarda **raxit**, kattalarda osteomalyatsiyaga olib keladi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: triglitseridning sovunlanish reaksiyasini yozish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Triglitserid formulasini yozing: glitserin qoldig‘i va uchta atsil guruh (R~1~CO−, R~2~CO−, R~3~CO−).", "Har bir murakkab efir bog‘iga bittadan NaOH (jami 3 mol) yozing.", "Mahsulotlarni yozing: glitserin va yog‘ kislotalarining natriy tuzlari (sovunlar).", "Tenglamani tenglang va moddalarni nomlang (masalan, tristearin → glitserin + 3 natriy stearat).", "Sovunning yuvish ta’sirini uning difil tuzilishi va mitsella hosil qilishi bilan tushuntiring."]}]},
+  {"title": "Ko‘nikma: yog‘ kislotasi belgisini tahlil qilish", "blocks": [
+   {"type": "list", "ordered": true, "items": ["Belgidagi birinchi son — uglerod atomlari soni (C18).", "Ikki nuqtadan keyingi son — qo‘sh bog‘lar soni (C18:2 — ikkita).", "ω-son — metil uchidan birinchi qo‘sh bog‘ o‘rni (ω-6).", "Tabiiy kislotalarda qo‘sh bog‘lar sis va metilen guruh bilan ajratilgan (−CH=CH−CH~2~−CH=CH−).", "ω-3 va ω-6 qatorlar organizmda bir-biriga o‘tmaydi — ikkalasi ham ovqat bilan kelishi kerak."]}]}
+ ],
+ "questions": [
+  "Lipidlar qanday tasniflanadi? Sovunlanadigan va sovunlanmaydigan lipidlarga misollar keltiring.",
+  "Sovunlanish reaksiyasini yozing va tushuntiring.",
+  "Asosiy to‘yingan va to‘yinmagan yog‘ kislotalarini sanang.",
+  "ω-3 va ω-6 yog‘ kislotalarining ahamiyati nimada?",
+  "Nima uchun o‘simlik moylari suyuq, hayvon yog‘lari qattiq?",
+  "Oddiy va aralash triglitseridlar nima?",
+  "Yog‘larning gidrogenlanishi va trans-yog‘ kislotalarining zarari haqida gapiring.",
+  "Yod soni nimani ko‘rsatadi?",
+  "Lipidlarning perekisli oksidlanishi va antioksidantlar haqida gapiring.",
+  "Fosfolipidlarning tuzilishi va glitserin-3-fosfat hosil bo‘lish yo‘llarini tushuntiring.",
+  "Sfingolipidlar va glikolipidlar qanday tuzilgan? Sfingolipidozlarga misol keltiring.",
+  "Terpenlar va karotinoidlarning ahamiyati qanday?",
+  "Steroidlar: xolesterin, o‘t kislotalari, steroid gormonlar va D vitaminini tavsiflang."
+ ],
+ "quiz": [
+  {"q": "Qaysi lipid sovunlanmaydi?", "options": ["Xolesterin", "Tristearin", "Letsitin", "Sfingomiyelin", "Mum"], "answer": 0},
+  {"q": "Triglitseridlar ishqor bilan gidrolizlanganda nima hosil bo‘ladi?", "options": ["Glitserin va sovunlar", "Glitserin va aldegidlar", "Xolesterin va sovunlar", "Glyukoza va yog‘ kislotalari", "Sfingozin va fosfat"], "answer": 0},
+  {"q": "Qaysi yog‘ kislotasi almashinmaydigan?", "options": ["Linol", "Palmitin", "Stearin", "Olein", "Miristin"], "answer": 0},
+  {"q": "Olein kislotaning qisqa belgisi qaysi?", "options": ["C18:1, ω-9", "C18:2, ω-6", "C18:0", "C16:0", "C20:4, ω-6"], "answer": 0},
+  {"q": "Prostaglandinlar qaysi yog‘ kislotadan hosil bo‘ladi?", "options": ["Araxidon", "Stearin", "Palmitin", "Olein", "Kapron"], "answer": 0},
+  {"q": "Baliq yog‘idagi EPK va DGK qaysi qatorga kiradi?", "options": ["ω-3", "ω-6", "ω-9", "to‘yingan", "trans"], "answer": 0},
+  {"q": "Yod soni nimani ko‘rsatadi?", "options": ["Yog‘ning to‘yinmaganlik darajasini", "Yog‘ kislotalarining zanjir uzunligini", "Yog‘ning erish haroratini", "Glitserin miqdorini", "Kislotalilikni"], "answer": 0},
+  {"q": "Margarin ishlab chiqarishda qaysi zararli birikmalar hosil bo‘lishi mumkin?", "options": ["Trans-yog‘ kislotalari", "Omega-3 kislotalar", "Fosfolipidlar", "Steroidlar", "Karotinoidlar"], "answer": 0},
+  {"q": "Lipidlarning perekisli oksidlanishidan himoya qiluvchi yog‘da eruvchi vitamin qaysi?", "options": ["Vitamin E", "Vitamin D", "Vitamin K", "Vitamin B~12~", "Vitamin B~1~"], "answer": 0},
+  {"q": "Letsitin tarkibidagi aminospirt qaysi?", "options": ["Xolin", "Etanolamin", "Serin", "Sfingozin", "Inozit"], "answer": 0},
+  {"q": "Sfingolipidlarda glitserin o‘rnida qaysi aminospirt bor?", "options": ["Sfingozin", "Xolin", "Etanolamin", "Serin", "Inozit"], "answer": 0},
+  {"q": "Tey–Saks kasalligida qaysi lipid to‘planadi?", "options": ["GM~2~-gangliozid", "Glyukotserebrozid", "Sfingomiyelin", "Xolesterin efirlari", "Triglitseridlar"], "answer": 0},
+  {"q": "β-karotin ichakda nimaga aylanadi?", "options": ["Vitamin A", "Vitamin D", "Vitamin E", "Xolesterin", "Vitamin K"], "answer": 0},
+  {"q": "Statinlar qaysi fermentni to‘sadi?", "options": ["GMG-KoA-reduktaza", "Lipaza", "Lipoproteinlipaza", "Siklooksigenaza", "Fosfolipaza A~2~"], "answer": 0},
+  {"q": "Terida UV nuri ta’sirida D~3~ vitamini nimadan hosil bo‘ladi?", "options": ["7-Degidroxolesterin", "Ergosterin", "Kortizol", "Skvalen", "Xol kislota"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "45 yoshli erkak, chekadi, ortiqcha vaznli. Qon lipid spektri: umumiy xolesterin 7,1 mmol/l, LPNP xolesterini 4,9 mmol/l, LPYuP xolesterini 0,8 mmol/l, triglitseridlar 2,6 mmol/l.", "ask": "Natijalarni baholang. Ovqatlanish bo‘yicha qanday kimyoviy asoslangan tavsiyalar berasiz va qaysi dori guruhi qo‘llanishi mumkin?", "answer": "Barcha ko‘rsatkichlar aterogen: umumiy xolesterin (> 5,2), LPNP (> 3,0) va triglitseridlar (> 1,7) oshgan, LPYuP (< 1,0) kamaygan — **aterogen dislipidemiya**, yurak-qon tomir kasalliklari xavfi yuqori. Tavsiyalar: to‘yingan va ayniqsa **trans-yog‘lar**ni (margarin, qovurilgan fast-fud) kamaytirish, ularni **ω-3** (baliq, zig‘ir moyi) va bir to‘yinmagan (zaytun moyi) yog‘lar bilan almashtirish, kletchatka ko‘paytirish, chekishni tashlash, vazn kamaytirish. Dori — **statinlar** (GMG-KoA-reduktaza ingibitorlari)."},
+  {"title": "Masala 2", "text": "Laboratoriyada 1 mol tripalmitin (M = 807 g/mol) natriy gidroksid bilan to‘liq sovunlandi.", "ask": "Reaksiya tenglamasini yozing. Necha mol NaOH sarflanadi va necha gramm natriy palmitat (M = 278 g/mol) hosil bo‘ladi?", "answer": "Tripalmitin + 3NaOH → glitserin + 3C~15~H~31~COONa. 1 mol triglitserid uchun **3 mol NaOH** kerak; 3 mol natriy palmitat hosil bo‘ladi: m = 3 · 278 = 834 g. Shuningdek 1 mol (92 g) glitserin ajraladi."},
+  {"title": "Masala 3", "text": "Qishda ko‘p vaqtini uyda o‘tkazadigan, ko‘krak suti bilan oziqlantirilayotgan 9 oylik bolada ter bosishi, ensaning tukisizlanishi, bosh suyagi yumshashi va “raxit marjonlari” aniqlandi. Qonda fosfat kamaygan, ishqoriy fosfataza oshgan.", "ask": "Qanday kasallik? Uning kimyoviy asosini steroidlar bilan bog‘lab tushuntiring.", "answer": "**Raxit** — D vitamini yetishmovchiligi. D~3~ vitamini terida 7-degidroxolesterinning UVB nuri ta’sirida B-halqasi ochilishidan hosil bo‘ladi; qishda quyosh nuri kam, ko‘krak sutida D vitamini oz. D~3~ jigarda 25-gidroksixolekalsiferolga, buyrakda faol **kalsitriol**ga aylanadi; kalsitriol ichakda Ca^2+^ va fosfat so‘rilishini ta’minlaydi. Yetishmasa suyak mineralizatsiyasi buziladi. Davolash va profilaktika: D vitamini preparatlari, quyosh vannalari, ovqatlanishni yaxshilash."}
+ ],
+ "cards": [
+  {"front": "Sovunlanish", "back": "Murakkab efirlarning ishqoriy gidrolizi: triglitserid + 3NaOH → glitserin + 3 sovun"},
+  {"front": "Almashinmaydigan yog‘ kislotalari", "back": "Linol (ω-6) va α-linolen (ω-3)"},
+  {"front": "Araxidon kislota", "back": "C20:4, ω-6; prostaglandinlar va leykotriyenlar o‘tmishdoshi"},
+  {"front": "Yod soni", "back": "100 g yog‘ga birikadigan yod grammlari — to‘yinmaganlik o‘lchovi"},
+  {"front": "Trans-yog‘lar", "back": "Qisman gidrogenlashda hosil bo‘ladi; aterogen"},
+  {"front": "Letsitin", "back": "Fosfatidilxolin — membrana va surfaktant fosfolipidi"},
+  {"front": "Sfingomiyelin", "back": "Seramid + fosfoxolin; miyelin qobig‘i tarkibi"},
+  {"front": "Gangliozidlar", "back": "Seramid + sial kislotali oligosaxarid; Tey–Saks kasalligida to‘planadi"},
+  {"front": "Steran skeleti", "back": "Siklopentanperhidrofenantren — barcha steroidlar asosi"},
+  {"front": "Xolekalsiferol (D~3~)", "back": "Terida 7-degidroxolesterindan UVB ta’sirida hosil bo‘ladi"}
+ ]
+}
