@@ -1,0 +1,158 @@
+{
+ "id": "11",
+ "no": 11,
+ "title": "Xivchinlilar — odam parazitlari: tripanosoma, leyshmaniya, trixomonada va lyambliya. Sporalilar — odam parazitlari: bezgak parazitlari, toksoplazma. Ichak parazitlari: ichburug‘ amyobasi, ichak balantidiyasi",
+ "goals": [
+  {"type": "p", "text": "Talabaga parazitologiyaning asosiy tushunchalarini va parazitizmning kelib chiqishini, sodda hayvonlar tipining umumiy tavsifini hamda odamda parazitlik qiluvchi xivchinlilar, sporalilar, sarkodalilar va infuzoriyalarning tuzilishi, hayot sikli, yuqish yo‘llari, patogen ta’siri, laborator tashxisi va profilaktikasini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "parazit, xo‘jayin (asosiy, oraliq, rezervuar), tashuvchi, transmissiv va tabiiy o‘choqli kasallik tushunchalarini;",
+   "tripanosomalar, leyshmaniyalar, trixomonadalar va lyambliyaning tavsifini;",
+   "bezgak plazmodiylarining hayot sikli va turlarining farqlarini;",
+   "toksoplazma, dizenteriya amyobasi va balantidiyning hayot sikli va tashxisini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "parazitni quyidagi tartibda tavsiflash: nomi (lotincha), kasallik, tarqalishi, morfologiyasi, lokalizatsiyasi, hayot sikli, yuqish yo‘li, patogen ta’siri, tashxisi, profilaktikasi;",
+   "qon surtmasida plazmodiy turini aniqlash;",
+   "najas surtmasida amyoba va lyambliya shakllarini farqlash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Parazitologiyaning asosiy tushunchalari", "blocks": [
+   {"type": "p", "text": "**Parazitizm** — bir organizm (parazit) boshqasini (xo‘jayinni) yashash muhiti va oziq manbai sifatida foydalanib, unga zarar keltiradigan munosabat shakli. **Tibbiy parazitologiya** odamda parazitlik qiluvchi sodda hayvonlar (**protozoologiya**), gijjalar (**gelmintologiya**) va bo‘g‘imoyoqlilarni (**araxnoentomologiya**) o‘rganadi."},
+   {"type": "table", "title": "Jadval 11.1. Parazitologiyaning asosiy atamalari", "head": ["Atama", "Ta’rifi"], "rows": [
+    ["Obligat va fakultativ parazit", "Faqat parazitlik qila oladigan va erkin yashashi ham mumkin bo‘lgan parazit"],
+    ["Ekto- va endoparazit", "Xo‘jayin tanasi sirtida (bit, kana) va ichida (gijjalar, sodda hayvonlar) yashovchi parazit"],
+    ["Asosiy (definitiv) xo‘jayin", "Parazitning jinsiy ko‘payishi yoki voyaga yetgan davri o‘tadigan xo‘jayin"],
+    ["Oraliq xo‘jayin", "Parazitning lichinka davri yoki jinssiz ko‘payishi o‘tadigan xo‘jayin"],
+    ["Rezervuar xo‘jayin", "Tabiatda parazitni saqlab turuvchi va odamga manba bo‘luvchi hayvon"],
+    ["Spetsifik tashuvchi", "Parazit ichida rivojlanadigan yoki ko‘payadigan bo‘g‘imoyoqli (bezgak chivini)"],
+    ["Mexanik tashuvchi", "Qo‘zg‘atuvchini tanasi sirtida yoki ichagida o‘zgarmagan holda tashuvchi (uy pashshasi)"],
+    ["Transmissiv kasallik", "Qon so‘ruvchi bo‘g‘imoyoqlilar orqali yuqadigan kasallik"],
+    ["Tabiiy o‘choqli kasallik", "Qo‘zg‘atuvchisi tabiatda odamdan qat’i nazar hayvonlar orasida aylanib yuradigan kasallik (E.N. Pavlovskiy ta’limoti)"]
+   ]},
+   {"type": "p", "text": "Parazitlar odamga **og‘iz orqali** (alimentar), **havo-tomchi**, **kontakt** (teri, jinsiy), **transmissiv** (bo‘g‘imoyoqlilar chaqishi) va **transplatsentar** yo‘llar bilan o‘tadi. Ular xo‘jayinga **mexanik** (to‘qima shikastlanishi, yo‘llarni berkitish), **toksik-allergik**, **oziq moddalarni tortib olish** va **ikkilamchi infeksiyaga yo‘l ochish** orqali zarar keltiradi."}
+  ]},
+  {"title": "2. Sodda hayvonlar tipi. Xivchinlilar — odam parazitlari", "blocks": [
+   {"type": "p", "text": "**Sodda hayvonlar (Protozoa)** — bitta hujayradan iborat, ammo mustaqil organizm sifatida barcha hayotiy vazifalarni bajaradigan eukariotlar. Harakat organoidlari: soxta oyoqlar (sarkodalilar), xivchinlar (xivchinlilar), kiprikchalar (infuzoriyalar); sporalilarda maxsus organoidlar yo‘q. Noqulay sharoitda ko‘pchiligi **sista** hosil qiladi — bu ularning tarqalishida muhim."},
+   {"type": "p", "text": "**Xivchinlilar sinfi (Flagellata)** vakillarida bir yoki bir nechta xivchin, ko‘pincha **to‘lqinsimon parda** va **kinetoplast** (xivchin asosidagi mitoxondrial DNK to‘plami) bo‘ladi; ular bo‘yiga ikkiga bo‘linib ko‘payadi."},
+   {"type": "table", "title": "Jadval 11.2. Odamda parazitlik qiluvchi xivchinlilar", "head": ["Parazit", "Kasallik va tarqalishi", "Lokalizatsiyasi", "Yuqishi", "Tashxisi"], "rows": [
+    ["*Trypanosoma brucei gambiense, T. b. rhodesiense*", "Afrika uyqu kasalligi; ekvatorial Afrika", "Qon, limfa, orqa miya suyuqligi", "Se-se pashshasi (*Glossina*) chaqishi — transmissiv", "Qon, limfa tugunlari punktati va likvor surtmasida tripanosomalar"],
+    ["*Trypanosoma cruzi*", "Shagas kasalligi; Janubiy va Markaziy Amerika", "Yurak mushagi, nerv tugunlari, qon", "Triatom qandala axlati orqali shikastlangan teri va shilliq qavatdan; qon quyish", "Qon surtmasi, serologik usullar"],
+    ["*Leishmania tropica, L. major*", "Teri leyshmaniozi (pendinka); O‘rta Osiyo, Yaqin Sharq", "Teri makrofaglari", "Iskabtopar (*Phlebotomus*) chaqishi; rezervuarlar — itlar (shahar tipi), qumsichqonlar (qishloq tipi)", "Yara chetidan olingan surtmada xivchinsiz (amastigota) shakllar"],
+    ["*Leishmania donovani, L. infantum*", "Ichki a’zolar (visseral) leyshmaniozi (kala-azar); Hindiston, O‘rta Osiyo", "Jigar, taloq, suyak ko‘migi, limfa tugunlari makrofaglari", "Iskabtopar chaqishi; rezervuar — itlar, chiyabo‘rilar", "Suyak ko‘migi punktatida amastigotalar, serologiya"],
+    ["*Trichomonas vaginalis*", "Urogenital trixomonoz; hamma joyda", "Qin, uretra, prostata", "Jinsiy yo‘l bilan; sista hosil qilmaydi", "Ajralmalarning nativ va bo‘yalgan surtmasi"],
+    ["*Trichomonas hominis, T. tenax*", "Ichak va og‘iz bo‘shlig‘i trixomonozi (shartli patogen)", "Yo‘g‘on ichak; og‘iz bo‘shlig‘i", "Fekal-oral; o‘pish, idishlar orqali", "Najas va tish karashi surtmasi"],
+    ["*Lamblia (Giardia) intestinalis*", "Lyamblioz; hamma joyda, bolalarda ko‘p", "O‘n ikki barmoq ichak va ingichka ichak yuqori qismi", "Sistalar bilan ifloslangan suv, ovqat, qo‘l orqali (fekal-oral)", "Najasda sistalar, o‘n ikki barmoq ichak suyuqligida vegetativ shakllar"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t11_tripanosoma.webp", "w": 882, "h": 725, "lang": true, "label": "Rasm 11.1", "caption": "Afrika tripanosomasining rivojlanish sikli: se-se pashshasi (tashuvchi) ichagi va so‘lak bezlarida metatsiklik tripanosomalar hosil bo‘lib, ular chaqish orqali umurtqali xo‘jayinga (odam, antilopa) o‘tadi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Lyambliya** vegetativ shakli (trofozoit) noksimon, uzunligi 10–18 mkm, ikki tomonlama simmetrik: ikkita yadro, to‘rt juft xivchin, ventral tomonida **so‘ruvchi disk** bo‘ladi; u disk yordamida ichak epiteliysiga yopishib, so‘rilishni buzadi (Rasm 11.2). Sistalari oval, 4 ta yadroli; tashqi muhitda chidamli."},
+   {"type": "img", "src": "data/img/bio/t11_lyambliya.webp", "w": 835, "h": 324, "lang": true, "label": "Rasm 11.2", "caption": "*Lamblia intestinalis* — vegetativ shakli (chapda — sxema, ikki yadro va xivchinlar) va ichak epiteliysi yuzasidagi lyambliyalarning skanerlovchi elektron mikroskopdagi ko‘rinishi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "O‘zbekistonda **teri leyshmaniozi** (pendinka, “ko‘rsichqon yarasi”) cho‘l va yarim cho‘l hududlarida, qumsichqonlar inlari yaqinida tabiiy o‘choqlar hosil qiladi. Chaqilgan joyda tuguncha paydo bo‘lib, uzoq bitmaydigan yaraga aylanadi va chandiq qoldiradi. Profilaktika: iskabtoparlardan himoyalanish (to‘r, repellentlar), kemiruvchilarga qarshi kurash, emlash."}]}
+  ]},
+  {"title": "3. Sporalilar: bezgak plazmodiylari va toksoplazma", "blocks": [
+   {"type": "p", "text": "**Sporalilar sinfi (Sporozoa)** — barcha vakillari obligat parazitlar; harakat organoidlari yo‘q, oldingi uchida xo‘jayin hujayrasiga kirish uchun **apikal kompleks** bor. Hayot siklida jinssiz (**shizogoniya**), jinsiy (**gametogoniya**) ko‘payish va **sporogoniya** almashinib keladi."},
+   {"type": "p", "text": "**Bezgak plazmodiylari** — *Plasmodium* avlodi; asosiy xo‘jayin va spetsifik tashuvchi — **Anopheles** urg‘ochi chivini, oraliq xo‘jayin — odam (Rasm 11.3)."},
+   {"type": "list", "ordered": true, "items": [
+    "Chivin chaqqanda so‘lagi bilan **sporozoitlar** qonga tushadi va 30 daqiqa ichida jigar hujayralariga kiradi.",
+    "**To‘qima (eritrotsitdan oldingi) shizogoniyasi** — jigar hujayrasida ko‘payib, minglab **merozoitlar** hosil bo‘ladi (inkubatsion davr). *P. vivax* va *P. ovale* da bir qism sporozoitlar uyquda qoluvchi **gipnozoitlar**ga aylanadi — kasallikning uzoq muddatdan keyingi qaytalanishi sababi.",
+    "**Eritrotsitar shizogoniya** — merozoitlar eritrotsitlarga kiradi: halqasimon trofozoit → amyobasimon trofozoit → shizont → morula (8–24 merozoit). Eritrotsitlar yorilib merozoitlar qonga chiqqan paytda **bezgak xuruji** (qaltiroq, isitma, ter) bo‘ladi.",
+    "Bir qism merozoitlardan erkak va urg‘ochi **gametotsitlar** hosil bo‘ladi; ular qon bilan chivinga o‘tadi.",
+    "Chivin me’dasida **gametogoniya** (urug‘lanish → harakatchan zigota — ookineta → ootsista) va **sporogoniya** (ootsistada minglab sporozoitlar) kechadi; sporozoitlar so‘lak bezlariga yig‘iladi."
+   ]},
+   {"type": "img", "src": "data/img/bio/t11_bezgak_sikl.webp", "w": 1041, "h": 719, "lang": true, "label": "Rasm 11.3", "caption": "*Plasmodium falciparum* ning hayot sikli: Anopheles chivini organizmida kechadigan jarayon (gametogoniya va sporogoniya) va odam organizmida kechadigan jarayon (jigarda to‘qima shizogoniyasi, qonda eritrotsitar shizogoniya, gametotsitlar hosil bo‘lishi) (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 11.3. Bezgak plazmodiylarining differensial tashxisi", "head": ["Belgi", "*P. vivax*", "*P. ovale*", "*P. malariae*", "*P. falciparum*"], "rows": [
+    ["Kasallik", "Uch kunlik bezgak", "Ovale-bezgak (uch kunlik)", "To‘rt kunlik bezgak", "Tropik bezgak"],
+    ["Xurujlar oralig‘i", "48 soat", "48 soat", "72 soat", "Noto‘g‘ri, ko‘pincha 48 soat"],
+    ["Zararlangan eritrotsit", "Kattalashgan, oqargan, Shyuffner donachalari", "Oval, chetlari tishsimon, Jeyms donachalari", "O‘zgarmagan yoki kichraygan", "O‘zgarmagan; bir eritrotsitda bir nechta halqa"],
+    ["Trofozoit", "Yirik amyobasimon", "Ixcham", "Lentasimon (“bant”)", "Mayda halqalar, chetda joylashgan"],
+    ["Morula (merozoitlar soni)", "12–24", "8–12", "6–12 (“rozetka”)", "Periferik qonda kam ko‘rinadi"],
+    ["Gametotsitlar", "Yumaloq", "Yumaloq", "Yumaloq", "Yarim oy (banan) shaklida"],
+    ["Gipnozoitlar (qaytalanish)", "Bor", "Bor", "Yo‘q", "Yo‘q"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t11_plazmodiy.webp", "w": 721, "h": 345, "label": "Rasm 11.4", "caption": "Plazmodiylarning differensial tashxisi (qon surtmasi): I — *P. vivax*; II — *P. malariae*; III — *P. ovale*; IV — *P. falciparum*. 1 — zararlanmagan eritrotsit; 2–3 — halqasimon shizontlar; 4–6 — parazitning turli davrlari; 7 — shizont; 8 — morula; 9 — urg‘ochi gametotsit; 10 — erkak gametotsit (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Tashxis — bezgak xuruji vaqtida olingan **qalin tomchi** va **yupqa surtma** Romanovskiy-Gimza usulida bo‘yalib tekshiriladi; tezkor antigen testlari ham qo‘llaniladi. **Tropik bezgak** eng xavfli: zararlangan eritrotsitlar kapillyarlarga yopishib, miya bezgagi va o‘limga olib keladi. Bezgakdan qaytgan har bir isitmalagan odam darhol tekshirilishi kerak. O‘zbekiston 2018-yilda JSST tomonidan bezgakdan xoli mamlakat deb tan olingan."}]},
+   {"type": "p", "text": "**Toksoplazma** (*Toxoplasma gondii*) — yarim oy yoki apelsin bo‘lagi shaklidagi, uzunligi 4–7 mkm, eni 2–4 mkm bo‘lgan hujayra ichi paraziti. **Asosiy xo‘jayin — mushuk** (ichagida jinsiy ko‘payish, najasda ootsistalar), **oraliq xo‘jayinlar** — odam va ko‘plab sut emizuvchilar, qushlar (to‘qimalarda sistalar). Odamga ootsistalar bilan ifloslangan qo‘l, sabzavot, suv orqali, sistali chala pishgan go‘sht orqali va **transplatsentar** yo‘l bilan yuqadi. Homiladorlikda birlamchi yuqish homila o‘limi, gidrotsefaliya, xorioretinit, miyada kalsifikatlarga sabab bo‘ladi; immunitet tanqisligida (OITS) og‘ir ensefalit chaqiradi. Tashxis — serologik (IgM, IgG), PZR."},
+   {"type": "p", "text": "**Koksidiyalar** (*Isospora*, *Cryptosporidium*) ichak epiteliysida parazitlik qilib, diareya chaqiradi; kriptosporidioz OITS bilan og‘riganlarda og‘ir kechadi."}
+  ]},
+  {"title": "4. Ichak parazitlari: dizenteriya amyobasi va balantidiy", "blocks": [
+   {"type": "p", "text": "**Dizenteriya (ichburug‘) amyobasi** (*Entamoeba histolytica*, sarkodalilar sinfi) — **amyobiaz** qo‘zg‘atuvchisi; tropik va subtropik mamlakatlarda, jumladan O‘rta Osiyoda tarqalgan. Yo‘g‘on ichakda yashaydi va bir necha shaklda uchraydi (Rasm 11.5):"},
+   {"type": "list", "ordered": false, "items": [
+    "**kichik vegetativ (ichak bo‘shlig‘i) shakli** — 15–20 mkm, bakteriyalar bilan oziqlanadi, kasallik chaqirmaydi (tashuvchanlik);",
+    "**yirik vegetativ, to‘qima va eritrofag shakli** — 30–40 mkm, ichak devoriga kirib, yaralar hosil qiladi, **eritrotsitlarni yutadi** (tashxisda asosiy belgi);",
+    "**sista** — 10–15 mkm, 4 ta yadroli, invazion shakl; tashqi muhitda uzoq saqlanadi."
+   ]},
+   {"type": "img", "src": "data/img/bio/t11_amyoba.webp", "w": 845, "h": 538, "lang": true, "label": "Rasm 11.5", "caption": "Dizenteriya amyobasining har xil shakllari: to‘qima shakli, kichik vegetativ shakl, sista va eritrotsitlarni yutgan gematofag (eritrofag) shakl (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "Odam sistalarni ifloslangan suv, yuvilmagan meva-sabzavot, qo‘l, pashshalar orqali yutadi. Amyobiazda **qon va shilimshiqli ich ketishi** (“malina jelesi”), qorin og‘rig‘i, yo‘g‘on ichakda yaralar bo‘ladi; asoratlari — ichak teshilishi, **jigar absessi**. Tashxis — yangi najas (15–20 daqiqa ichida) nativ surtmasida eritrotsitlarni yutgan to‘qima shakllari, remissiyada — sistalar; endoskopiya, serologiya."},
+   {"type": "p", "text": "**Ichak balantidiyi** (*Balantidium coli*, infuzoriyalar sinfi) — odamda parazitlik qiluvchi yagona infuzoriya va eng yirik sodda hayvon (50–80 mkm). Tanasi kiprikchalar bilan qoplangan, katta (makronukleus) va kichik (mikronukleus) yadrolari, og‘iz teshigi (sitostom), qisqaruvchi vakuolalari bor. **Asosiy rezervuar — cho‘chqa**; cho‘chqachilikda ishlovchilar ko‘proq kasallanadi. Yo‘g‘on ichak devorida yaralar hosil qilib, qonli-yiringli ich ketishi bilan kechadigan **balantidiaz** chaqiradi. Tashxis — najasda harakatchan vegetativ shakllar va sistalar."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Ichak protozoozlarining profilaktikasi umumiy: qaynatilgan suv ichish, meva-sabzavotni yuvish, ovqatdan oldin va hojatxonadan keyin qo‘l yuvish, pashshalarga qarshi kurash, oziq-ovqat xodimlarini tekshirish va tashuvchilarni davolash."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: qon surtmasida bezgak plazmodiysini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Bo‘yalgan qon surtmasini immersion obyektivda ko‘ring.",
+    "Eritrotsitlar ichida ko‘k sitoplazma va qizil yadroli parazitlarni toping.",
+    "Zararlangan eritrotsitning o‘lchami (kattalashganmi), shakli va donachalari borligini baholang.",
+    "Parazit davrlarini aniqlang: halqa, amyobasimon trofozoit, shizont, morula, gametotsit.",
+    "Bir eritrotsitda bir nechta mayda halqa va yarim oysimon gametotsitlar bo‘lsa — *P. falciparum* deb xulosa qiling.",
+    "Natijani jadval bo‘yicha (Jadval 11.3) tasdiqlang va shifokorga darhol xabar bering."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Parazitizm nima? Parazitlar va xo‘jayinlarning turlarini ayting.",
+  "Transmissiv va tabiiy o‘choqli kasalliklar nima? Spetsifik va mexanik tashuvchilar qanday farqlanadi?",
+  "Sodda hayvonlar tipiga va xivchinlilar sinfiga umumiy tavsif bering.",
+  "Afrika uyqu kasalligi va Shagas kasalligi qo‘zg‘atuvchilarini tavsiflang.",
+  "Teri va visseral leyshmaniozlar qo‘zg‘atuvchilari, yuqish yo‘llari va tashxisini ayting.",
+  "Trixomonadalarning turlari va ularning tibbiy ahamiyati qanday?",
+  "Lyambliyaning tuzilishi, yuqishi, tashxisi va profilaktikasini ayting.",
+  "Sporalilar sinfiga tavsif bering.",
+  "Bezgak plazmodiysining hayot siklini tushuntiring.",
+  "Bezgak plazmodiylari turlarining differensial tashxisini ayting.",
+  "Toksoplazmaning hayot sikli va yuqish yo‘llari qanday? Nima uchun u homiladorlar uchun xavfli?",
+  "Dizenteriya amyobasi shakllari, patogen ta’siri va tashxisini tushuntiring.",
+  "Ichak balantidiyining tuzilishi va tibbiy ahamiyati qanday?"
+ ],
+ "quiz": [
+  {"q": "Parazitning jinsiy ko‘payishi o‘tadigan xo‘jayin qanday ataladi?", "options": ["Asosiy (definitiv)", "Oraliq", "Rezervuar", "Tashuvchi", "Qo‘shimcha"], "answer": 0},
+  {"q": "Afrika uyqu kasalligi tashuvchisi qaysi?", "options": ["Se-se pashshasi", "Iskabtopar", "Anopheles chivini", "Triatom qandala", "Bit"], "answer": 0},
+  {"q": "Teri leyshmaniozi qo‘zg‘atuvchisini kim tashiydi?", "options": ["Iskabtopar (Phlebotomus)", "Se-se pashshasi", "Culex chivini", "Iksod kanasi", "Burga"], "answer": 0},
+  {"q": "Visseral leyshmaniozda parazit asosan qayerda joylashadi?", "options": ["Jigar, taloq, suyak ko‘migi makrofaglarida", "Teri makrofaglarida", "Eritrotsitlarda", "Yo‘g‘on ichakda", "Qinda"], "answer": 0},
+  {"q": "Qaysi xivchinli sista hosil qilmaydi va jinsiy yo‘l bilan yuqadi?", "options": ["Trichomonas vaginalis", "Lamblia intestinalis", "Leishmania tropica", "Trypanosoma cruzi", "Trichomonas hominis"], "answer": 0},
+  {"q": "Lyambliya odamning qaysi a’zosida yashaydi?", "options": ["O‘n ikki barmoq ichak va ingichka ichakda", "Yo‘g‘on ichakda", "Qonda", "Jigar hujayralarida", "Teri ostida"], "answer": 0},
+  {"q": "Bezgak plazmodiysining asosiy xo‘jayini kim?", "options": ["Anopheles urg‘ochi chivini", "Odam", "Mushuk", "Cho‘chqa", "Culex chivini"], "answer": 0},
+  {"q": "Bezgakning uzoq muddatdan keyingi qaytalanishiga nima sabab bo‘ladi?", "options": ["Jigardagi gipnozoitlar", "Gametotsitlar", "Ootsistalar", "Sporozoitlarning qonda qolishi", "Sistalar"], "answer": 0},
+  {"q": "Yarim oysimon gametotsitlar qaysi plazmodiyga xos?", "options": ["P. falciparum", "P. vivax", "P. malariae", "P. ovale", "Barchasiga"], "answer": 0},
+  {"q": "To‘rt kunlik bezgakda xurujlar orasidagi vaqt qancha?", "options": ["72 soat", "48 soat", "24 soat", "96 soat", "36 soat"], "answer": 0},
+  {"q": "Toksoplazmaning asosiy xo‘jayini kim?", "options": ["Mushuk", "Odam", "It", "Sigir", "Chivin"], "answer": 0},
+  {"q": "Amyobiaz tashxisida eng muhim belgi qaysi?", "options": ["Eritrotsitlarni yutgan to‘qima shakllari", "4 yadroli sistalar", "Kichik vegetativ shakllar", "Xivchinlar", "Kiprikchalar"], "answer": 0},
+  {"q": "Dizenteriya amyobasi sistasida nechta yadro bo‘ladi?", "options": ["4", "1", "2", "8", "16"], "answer": 0},
+  {"q": "Odamda parazitlik qiluvchi yagona infuzoriya qaysi?", "options": ["Balantidium coli", "Paramecium caudatum", "Entamoeba coli", "Giardia lamblia", "Toxoplasma gondii"], "answer": 0},
+  {"q": "Balantidiyning asosiy rezervuari qaysi hayvon?", "options": ["Cho‘chqa", "Mushuk", "It", "Qumsichqon", "Qo‘y"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Qizilqumda gaz konlarini tekshirish uchun 2 oy davomida ishlagan ishchilarda tananing ochiq joylarida qiyin bitadigan yaralar paydo bo‘ldi.", "ask": "Bu kasallikning mohiyati va kelib chiqishi haqida nima deya olasiz?", "answer": "Bu teri leyshmaniozining qishloq (zoonoz) tipi — qo‘zg‘atuvchisi *Leishmania major*. Tabiiy o‘choqda rezervuar — qumsichqonlar, tashuvchi — iskabtoparlar; ular inlar yaqinida ko‘payadi va kechasi tananing ochiq joylarini chaqadi. Chaqilgan joyda tuguncha, so‘ng ho‘l yara hosil bo‘ladi, bir necha oyda chandiq qoldirib bitadi. Tashxis: yara chetidan olingan surtmada amastigotalar. Profilaktika: to‘rlar, repellentlar, kemiruvchilarga qarshi kurash, emlash."},
+  {"title": "Masala 2", "text": "Ekvatorial Afrikada ishlab kelgan odamda uyquchanlik, holsizlik, bosh og‘rig‘i paydo bo‘lib, borgan sari kuchaymoqda.", "ask": "Bu qanday kasallik bo‘lishi mumkin? U boshqalarga yuqadimi?", "answer": "Afrika tripanosomozi (uyqu kasalligi), qo‘zg‘atuvchisi *Trypanosoma brucei gambiense* yoki *T. b. rhodesiense*. Parazit avval qon va limfada, keyin markaziy nerv sistemasida ko‘payib, uyquchanlik, holsizlik va ensefalitga olib keladi. Tashxis: qon, limfa tuguni punktati va orqa miya suyuqligi surtmasi. Bevosita odamdan odamga yuqmaydi — faqat se-se pashshasi orqali (transmissiv); O‘zbekistonda se-se pashshasi yo‘qligi sababli boshqalarga tarqalmaydi."},
+  {"title": "Masala 3", "text": "Homilador ayolda spontan abort sodir bo‘ldi. Abort materialida uzunligi 4–7 mkm, eni 2–4 mkm bo‘lgan yarim oy yoki apelsin bo‘lagi shaklidagi parazitlar aniqlandi.", "ask": "Homila o‘limiga nima sabab bo‘lgan?", "answer": "Bu *Toxoplasma gondii* — tug‘ma toksoplazmoz. Ayol homiladorlik davrida birinchi marta yuqtirgan (mushuk najasidagi ootsistalar yoki chala pishgan go‘shtdagi sistalar orqali), parazit platsenta orqali homilaga o‘tgan va uning to‘qimalarini shikastlab, o‘limga olib kelgan. Profilaktika: homiladorlikdan oldin serologik tekshiruv, go‘shtni yaxshi pishirish, mushuk axlati bilan qo‘lqopsiz ishlamaslik, meva-sabzavotni yuvish."}
+ ],
+ "cards": [
+  {"front": "Asosiy (definitiv) xo‘jayin", "back": "Parazitning jinsiy ko‘payishi yoki voyaga yetgan davri o‘tadigan xo‘jayin"},
+  {"front": "Transmissiv kasallik", "back": "Qon so‘ruvchi bo‘g‘imoyoqlilar orqali yuqadi (bezgak, leyshmanioz)"},
+  {"front": "Teri leyshmaniozi", "back": "L. tropica, L. major; iskabtopar; rezervuar — it, qumsichqon"},
+  {"front": "Lyambliya", "back": "2 yadro, 4 juft xivchin, so‘ruvchi disk; o‘n ikki barmoq ichak"},
+  {"front": "Trichomonas vaginalis", "back": "Urogenital trixomonoz; jinsiy yo‘l; sistasi yo‘q"},
+  {"front": "Bezgak sikli", "back": "Odamda — shizogoniya (jigar, eritrotsit); chivinda — gametogoniya va sporogoniya"},
+  {"front": "P. falciparum", "back": "Tropik bezgak; mayda ko‘p halqalar, yarim oysimon gametotsitlar"},
+  {"front": "Toksoplazma", "back": "Asosiy xo‘jayin — mushuk; transplatsentar yuqadi"},
+  {"front": "Dizenteriya amyobasi", "back": "Eritrofag to‘qima shakli; 4 yadroli sista; amyobiaz"},
+  {"front": "Balantidium coli", "back": "Yagona parazit infuzoriya; rezervuar — cho‘chqa"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Bezgak chivini — **asosiy xo‘jayin**, odam — **oraliq xo‘jayin**; toksoplazmada esa asosiy xo‘jayin — **mushuk**."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Bezgak davriyligi: **“Vivax va Ovale — 3 kunlik, Malariae — 4 kunlik, Falciparum — falokat (tropik)”**."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Tropiklardan qaytgan isitmalagan har bir bemorning qoni darhol bezgakka tekshiriladi; homiladorlarda toksoplazmozga serologik tekshiruv tug‘ma nuqsonlarning oldini oladi."}
+ ]
+}

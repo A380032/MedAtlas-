@@ -1,0 +1,159 @@
+{
+ "lang": "en",
+ "out": "data/en/books/bio.pdf",
+ "pdf_title": "Medical Biology and Genetics: Complete Study Manual",
+ "author": "Asadbek Axmatkulov",
+ "running": "Medical Biology and Genetics — Complete Study Manual",
+ "cover": {
+  "image": "tools/i18n/books/bio/pdf_cover.jpg",
+  "top": [
+   "MINISTRY OF HEALTH OF THE REPUBLIC OF UZBEKISTAN",
+   "TASHKENT STATE MEDICAL UNIVERSITY",
+   "Department of Histology and Medical Biology"
+  ],
+  "title": "MEDICAL BIOLOGY AND GENETICS",
+  "part": "",
+  "sub": "complete study manual",
+  "kind": "A study manual for practical classes",
+  "by_label": "Compiled by:",
+  "by": "Asadbek Axmatkulov",
+  "affil": "Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student",
+  "city": "Tashkent — 2026"
+ },
+ "imprint": [
+  "**Compiled by:** Asadbek Axmatkulov — Tashkent State Medical University, Faculty of General Medicine No. 2, 3rd-year student.",
+  "**Medical Biology and Genetics: Complete Study Manual.** A study manual for practical classes. — Tashkent, 2026.",
+  "",
+  "This manual is based on the 15 practical class topics of the calendar-thematic plan of the subject “Medical Biology and Genetics” (General Medicine, 1st year, semester 1). It covers work with the microscope, cell structure and division, the laws of heredity, linked inheritance, molecular genetics, methods of studying human genetics, hereditary diseases, ontogenesis, medical protozoology, helminthology and arachnoentomology, the evolution of organ systems and ecology.",
+  "Each chapter consists of the learning objectives, a theoretical part (with “Remember”, “Clinical relevance”, “Memory aid” and “Caution” boxes), algorithms for practical skills, review questions, 15 test questions, 3 situational problems and a quick-review table. The answers to the test questions are given at the end of the book.",
+  "Most of the figures are taken from the textbook “Medical Biology and Genetics” by P.Kh. Kholikov et al. (2022), with their labels translated into English; the photograph of the microscope is from Wikimedia Commons under an open licence. The text and structure of the manual were prepared with the help of the Claude (Anthropic) artificial intelligence. The compiler selected the material, defined the structure and checked it. Before applying numerical data in practice, it is advisable to compare them with the main textbooks and departmental materials.",
+  "The manual is intended for 1st-year students of the faculties of general medicine, paediatrics and preventive medicine of medical higher education institutions."
+ ],
+ "toc_title": "CONTENTS",
+ "preface_title": "Preface",
+ "preface": [
+  {
+   "type": "p",
+   "text": "Dear student! Medical biology and genetics is the science of the levels of organization of life, the cell, the laws of heredity and variation, human individual development, parasitism and the relationships between the organism and its environment. It is the foundation for histology, biochemistry, physiology, microbiology, pathology, paediatrics and obstetrics: the diagnosis of hereditary diseases, medical genetic counselling, prenatal diagnosis, the origin of congenital defects and the prevention of parasitic diseases all rest on the laws of this subject."
+  },
+  {
+   "type": "p",
+   "text": "The manual follows the 15 topics of the calendar-thematic plan: topics 1–3 cover cell biology (microscopy, cell structure, the cell cycle and division), topics 4–9 genetics (Mendel’s laws, interaction of genes, the chromosome theory, molecular genetics, methods of studying human genetics, hereditary diseases and medical genetic counselling), topic 10 ontogenesis, topics 11–14 medical parasitology (protozoa, flukes, tapeworms and roundworms, arthropods and venomous animals), and topic 15 the evolution of organ systems and ecology. Every chapter has the same structure:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "**Learning objectives** — what you should know and be able to do by the end of the class;",
+    "**theoretical part** — key concepts, tables, diagrams and figures from the textbook;",
+    "**practical skills** — step-by-step algorithms for working with preparations, solving genetic problems and analysis;",
+    "**review questions, test questions and situational problems** — for self-assessment;",
+    "**quick review** — a table for revising at a glance before the exam."
+   ]
+  },
+  {
+   "type": "p",
+   "text": "The coloured boxes in the text mean the following:"
+  },
+  {
+   "type": "box",
+   "kind": "eslab",
+   "parts": [
+    {
+     "type": "p",
+     "text": "The most important definitions, laws, numbers and classifications — these must be memorized."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "klinik",
+   "parts": [
+    {
+     "type": "p",
+     "text": "The medical relevance of biological and genetic knowledge: examples related to hereditary and parasitic diseases, diagnosis and prevention."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "yodlash",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Techniques and abbreviations that make memorizing easier."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "diqqat",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Common mistakes, easily confused concepts and situations that require caution."
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "text": "Some figures in the manual (sizes, frequencies, time periods) may differ slightly between textbooks — in such cases follow the values accepted by your department. Work with parasitological preparations only under the supervision of a teacher and in compliance with the safety rules."
+  },
+  {
+   "type": "p",
+   "text": "The compiler"
+  }
+ ],
+ "toc_indent": true,
+ "fig_per_row": 2,
+ "labels": {
+  "topic": "TOPIC {n}",
+  "goals": "Learning objectives",
+  "skills": "Practical skills",
+  "questions": "Review questions",
+  "quiz": "Test questions",
+  "cases": "Situational problems",
+  "ask": "Questions:",
+  "answer": "Answer:",
+  "review": "Quick review",
+  "review_table": "Table {n}.{m}.",
+  "review_caption": "Key concepts of topic {n}",
+  "q": "Concept",
+  "a": "Brief definition",
+  "answers": "Answers to the test questions",
+  "answers_row": "Topic {n}:",
+  "refs": "References"
+ },
+ "box": {
+  "eslab": "REMEMBER",
+  "klinik": "CLINICAL SIGNIFICANCE",
+  "yodlash": "MEMORY AID",
+  "diqqat": "CAUTION"
+ },
+ "refs": [
+  {
+   "h": "Main document"
+  },
+  "Calendar-thematic plan of the subject “Medical Biology and Genetics” (General Medicine, 1st year, semester 1, 2024–2025 academic year). — Tashkent State Medical University, Department of Histology and Medical Biology.",
+  {
+   "h": "Main textbooks"
+  },
+  "Kholikov P.Kh., Qurbonov A.Q., Daminov A.O., Tarinova M.V. Tibbiy biologiya va genetika [Medical Biology and Genetics]: textbook. 2nd ed. — Tashkent: Tibbiyot nashriyoti matbaa uyi, 2022. — 586 p.",
+  "Nishonboyev K.N., Hamidov J.H. Tibbiy biologiya va genetika [Medical Biology and Genetics]: study guide. — Tashkent: O‘zbekiston milliy ensiklopediyasi, 2005.",
+  "Independent work assignments in Medical Biology and Genetics (topics 1–15). — Department of Histology and Medical Biology.",
+  {
+   "h": "Recommended reading"
+  },
+  "Pekhov A.P. Biologiya: meditsinskaya biologiya, genetika i parazitologiya [Biology: medical biology, genetics and parasitology]. — Moscow: GEOTAR-Media.",
+  "Yarygin V.N. et al. Biologiya [Biology]. — Moscow: GEOTAR-Media.",
+  "Alberts B. et al. Molecular Biology of the Cell. 7th ed. — New York: W.W. Norton, 2022.",
+  "Nussbaum R.L., McInnes R.R., Willard H.F. Thompson & Thompson Genetics and Genomics in Medicine. 9th ed. — Philadelphia: Elsevier, 2023.",
+  "Sadler T.W. Langman’s Medical Embryology. 15th ed. — Philadelphia: Wolters Kluwer, 2023.",
+  "John D.T., Petri W.A. Markell and Voge’s Medical Parasitology. 9th ed. — St. Louis: Saunders Elsevier, 2006.",
+  {
+   "h": "Sources of figures"
+  },
+  "Kholikov P.Kh. et al. Tibbiy biologiya va genetika, 2022 — the main source of the figures (labels translated into English).",
+  "Wikimedia Commons, commons.wikimedia.org: photograph of the light microscope (open licence)."
+ ]
+}

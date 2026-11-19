@@ -1,0 +1,182 @@
+{
+ "id": "06",
+ "no": 6,
+ "title": "Tiriklikning molekulyar asoslari. Nuklein kislotalar va ularning irsiy belgilarni nasldan-naslga o‘tkazishdagi roli. DNK ning oqsil biosintezidagi roli. Genetik injeneriya. O‘zgaruvchanlik va uning shakllari",
+ "goals": [
+  {"type": "p", "text": "Talabaga DNK ning irsiy material ekanligini isbotlovchi dalillarni, nuklein kislotalar tuzilishi va replikatsiyasini, genetik kod xossalarini, transkripsiya va translyatsiya bosqichlarini, gen faolligining boshqarilishini, gen va hujayra injeneriyasi asoslarini hamda o‘zgaruvchanlik shakllari va mutatsiyalar tasnifini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "transformatsiya, transduksiya va konyugatsiya tajribalarining mohiyatini;",
+   "DNK va RNK tuzilishi, Chargaff qoidalari, replikatsiyaning yarim konservativ usulini;",
+   "genetik kodning xossalarini va oqsil biosintezi bosqichlarini;",
+   "operon nazariyasini (induksiya va repressiya);",
+   "o‘zgaruvchanlik turlari, mutatsiyalar tasnifi, DNK reparatsiyasi va antimutagenlarni."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "DNK zanjiri bo‘yicha komplementar zanjir, i-RNK va aminokislotalar ketma-ketligini aniqlash;",
+   "Chargaff qoidasi asosida nukleotidlar foizini hisoblash;",
+   "mutatsiya turini ta’rif yoki sxema bo‘yicha aniqlash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. DNK — irsiy material ekanligining isboti", "blocks": [
+   {"type": "table", "title": "Jadval 6.1. DNK ning irsiyatdagi rolini isbotlagan tajribalar", "head": ["Hodisa", "Mohiyati", "Kashfiyotchilar"], "rows": [
+    ["Transformatsiya", "Bir shtamm bakteriyaning irsiy belgilari boshqa shtammga uning sof DNK si orqali o‘tishi. Tirik kapsulasiz (R) pnevmokokklar o‘ldirilgan kapsulali (S) pnevmokokklar DNK si ta’sirida kapsulali va virulent bo‘lib qolgan", "F. Griffit (1928), O. Everi va hamkasblari (1944)"],
+    ["Transduksiya", "Genlarning bir bakteriyadan ikkinchisiga bakteriofag yordamida ko‘chirilishi", "J. Lederberg va N. Sinder (1952)"],
+    ["Konyugatsiya", "Ikki bakteriya hujayrasi o‘rtasida sitoplazmatik ko‘prik (F-pili) orqali DNK ning bevosita o‘tishi; donor (F^+^) dan retsipiyent (F^−^) ga", "J. Lederberg va E. Tatum (1946)"],
+    ["Faglar tajribasi", "Radioaktiv fosfor bilan nishonlangan fag DNK si bakteriyaga kiradi, oltingugurt bilan nishonlangan oqsil qobig‘i esa tashqarida qoladi", "A. Xershi va M. Cheyz (1952)"]
+   ]},
+   {"type": "p", "text": "**Plazmidalar** — bakteriyalardagi xromosomadan tashqari kichik halqasimon DNK molekulalari; mustaqil replikatsiyalanadi. F-plazmida konyugatsiyani, R-plazmidalar **antibiotiklarga chidamlilikni** ta’minlaydi va bakteriyalar orasida tez tarqaladi. Plazmidalar gen injeneriyasida **vektor** sifatida ishlatiladi."}
+  ]},
+  {"title": "2. Nuklein kislotalarning tuzilishi va DNK replikatsiyasi", "blocks": [
+   {"type": "p", "text": "Nuklein kislotalar **nukleotidlardan** tuzilgan biopolimerlar. Har bir nukleotid azotli asos, pentoza (DNK da dezoksiriboza, RNK da riboza) va fosfat qoldig‘idan iborat. Azotli asoslar: **purinlar** — adenin (A) va guanin (G); **pirimidinlar** — sitozin (S), timin (T, faqat DNK da) va urasil (U, faqat RNK da)."},
+   {"type": "p", "text": "1953-yilda **J. Uotson va F. Krik** DNK ning qo‘sh spiral modelini taklif qildi (R. Franklin va M. Uilkinsning rentgenostruktura ma’lumotlari asosida). DNK ikki **antiparallel** (5′→3′ va 3′→5′) polinukleotid zanjirdan iborat; zanjirlar azotli asoslar o‘rtasidagi vodorod bog‘lari bilan **komplementarlik** prinsipi bo‘yicha birikadi: A=T (2 ta vodorod bog‘i), G≡S (3 ta vodorod bog‘i). Spiral diametri 2 nm, bir o‘ramida 10 juft nukleotid, o‘ram balandligi 3,4 nm, qo‘shni nukleotidlar orasidagi masofa 0,34 nm (Rasm 6.1)."},
+   {"type": "img", "src": "data/img/bio/t06_dnk.webp", "w": 628, "h": 411, "lang": true, "label": "Rasm 6.1", "caption": "Buralgan qo‘sh zanjirli DNK molekulasi: komplementar asoslar juftlari, spiral o‘lchamlari (diametri 2 nm, bir o‘rami 3,4 nm, asoslar orasidagi masofa 0,34 nm) (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Chargaff qoidalari:** A = T, G = S; purinlar yig‘indisi pirimidinlar yig‘indisiga teng (A + G = T + S). Shuning uchun DNK dagi bitta asos foizini bilsangiz, qolganlarini hisoblash mumkin: masalan, G = 20 % bo‘lsa, S = 20 %, A = T = 30 %."}]},
+   {"type": "table", "title": "Jadval 6.2. DNK va RNK ning farqlari", "head": ["Belgi", "DNK", "RNK"], "rows": [
+    ["Pentoza", "Dezoksiriboza", "Riboza"],
+    ["Azotli asoslar", "A, G, S, T", "A, G, S, U"],
+    ["Zanjirlar soni", "Ikki (qo‘sh spiral)", "Odatda bitta"],
+    ["Joylashuvi", "Yadro, mitoxondriya, plastidalar", "Yadro, sitoplazma, ribosomalar"],
+    ["Turlari va vazifasi", "Irsiy axborotni saqlash va uzatish", "i-RNK (axborot tashish), t-RNK (aminokislota tashish), r-RNK (ribosoma tarkibi)"]
+   ]},
+   {"type": "p", "text": "**Replikatsiya** — DNK ning o‘z-o‘zidan ikkilanishi; interfazaning S-davrida sodir bo‘ladi. M. Mezelson va F. Stal (1958) replikatsiyaning **yarim konservativ** ekanligini isbotladi: har bir yangi DNK molekulasida bitta eski (matritsa) va bitta yangi zanjir bo‘ladi. Jarayonda **helikaza** qo‘sh spiralni ochadi, **topoizomeraza** buralishni yo‘qotadi, **praymaza** RNK-praymer sintezlaydi, **DNK-polimeraza** yangi zanjirni faqat 5′→3′ yo‘nalishda quradi; shuning uchun bir zanjir uzluksiz (yetakchi), ikkinchisi Okazaki fragmentlari ko‘rinishida (kechikuvchi) sintezlanadi, fragmentlarni **ligaza** tikadi."}
+  ]},
+  {"title": "3. Genetik kod va oqsil biosintezi", "blocks": [
+   {"type": "p", "text": "**Genetik kod** — i-RNK dagi nukleotidlar ketma-ketligi orqali oqsildagi aminokislotalar ketma-ketligini yozish tizimi. Uning xossalari:"},
+   {"type": "list", "ordered": false, "items": [
+    "**Triplet** — har bir aminokislota uchta nukleotid (kodon) bilan kodlanadi; 4^3^ = 64 ta kodon bor, ulardan 61 tasi aminokislotalarni, 3 tasi (UAA, UAG, UGA) — **stop-kodonlar**.",
+    "**Degeneratsiya (ortiqchalik)** — ko‘pchilik aminokislotalar bir nechta kodon bilan kodlanadi (faqat metionin va triptofan bittadan).",
+    "**Bir ma’nolilik (spetsifiklik)** — har bir kodon faqat bitta aminokislotani belgilaydi.",
+    "**Uzluksizlik va qoplanmaslik** — kodonlar oralig‘ida “vergul” yo‘q, bir nukleotid ikki kodonga kirmaydi.",
+    "**Universallik** — kod barcha organizmlarda deyarli bir xil.",
+    "**Start-kodon** — AUG (metionin)."
+   ]},
+   {"type": "table", "title": "Jadval 6.3. Ayrim aminokislotalarning i-RNK kodonlari", "head": ["Aminokislota", "Kodonlar", "Aminokislota", "Kodonlar"], "rows": [
+    ["Metionin (start)", "AUG", "Triptofan", "UGG"],
+    ["Valin", "GUU, GUS, GUA, GUG", "Alanin", "GSU, GSS, GSA, GSG"],
+    ["Glitsin", "GGU, GGS, GGA, GGG", "Lizin", "AAA, AAG"],
+    ["Glutamin kislota", "GAA, GAG", "Glutamin", "SAA, SAG"],
+    ["Serin", "USU, USS, USA, USG, AGU, AGS", "Tirozin", "UAU, UAS"],
+    ["Prolin", "SSU, SSS, SSA, SSG", "Fenilalanin", "UUU, UUS"],
+    ["Leytsin", "UUA, UUG, SUU, SUS, SUA, SUG", "Stop", "UAA, UAG, UGA"]
+   ]},
+   {"type": "p", "text": "**Transkripsiya** — DNK ning bitta (matritsa) zanjiridan RNK-polimeraza yordamida i-RNK sintezlanishi (Rasm 6.2). U promotordan boshlanib, terminatorda tugaydi. Eukariotlarda dastlab pre-i-RNK hosil bo‘ladi; **protsessing** davomida 5′ uchiga “qalpoqcha” (kep), 3′ uchiga poli-A “dum” qo‘shiladi va **splaysing** natijasida intronlar kesib tashlanib, ekzonlar tikiladi."},
+   {"type": "img", "src": "data/img/bio/t06_transkripsiya.webp", "w": 1247, "h": 841, "lang": true, "label": "Rasm 6.2", "caption": "Transkripsiya jarayonining sxemasi: RNK-polimeraza DNK qo‘sh spiralini ochib, matritsa zanjiriga komplementar RNK zanjirini sintezlaydi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Translyatsiya** — ribosomada i-RNK axboroti asosida polipeptid zanjirining sintezi (Rasm 6.3). Aminokislotalar maxsus fermentlar (aminoatsil-t-RNK-sintetazalar) yordamida faollashib, t-RNK ga birikadi. t-RNK ning **antikodoni** i-RNK kodoniga komplementar ravishda birikadi."},
+   {"type": "list", "ordered": true, "items": [
+    "**Initsiatsiya** — ribosomaning kichik subbirligi i-RNK ga birikadi, start-kodon AUG ga metionin tashuvchi t-RNK joylashadi, so‘ng katta subbirlik qo‘shiladi.",
+    "**Elongatsiya** — navbatdagi aminoatsil-t-RNK A-markazga keladi, aminokislotalar o‘rtasida peptid bog‘ hosil bo‘ladi, ribosoma bir kodonga siljiydi (translokatsiya).",
+    "**Terminatsiya** — ribosoma stop-kodonga yetganda polipeptid ajraladi va ribosoma subbirliklarga bo‘linadi."
+   ]},
+   {"type": "img", "src": "data/img/bio/t06_translyatsiya.webp", "w": 1240, "h": 529, "lang": true, "label": "Rasm 6.3", "caption": "Oqsil biosintezi (translyatsiya) bosqichlari: initsiatsiya, elongatsiya va terminatsiya; ribosomaning kichik va katta subbirliklari, t-RNK va i-RNK (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Ko‘plab antibiotiklar bakteriya translyatsiyasini to‘xtatadi: tetratsiklinlar (t-RNK birikishini), streptomitsin (kichik subbirlikni), xloramfenikol va makrolidlar (katta subbirlikni). Ular bakteriyalarning 70S ribosomalariga tanlab ta’sir qiladi."}]}
+  ]},
+  {"title": "4. Gen faolligining boshqarilishi va sitoplazmatik irsiyat", "blocks": [
+   {"type": "p", "text": "F. Jakob va J. Mono (1961) ichak tayoqchasida **operon** nazariyasini yaratdi. Operon — bitta promotor va operator ostida birga transkripsiyalanadigan struktura genlari guruhi. Regulyator gen **repressor** oqsilini sintezlaydi, u operatorga birikib RNK-polimerazaning harakatini to‘xtatadi."},
+   {"type": "list", "ordered": false, "items": [
+    "**Induksiya** (laktoza operoni): muhitda laktoza bo‘lmasa, repressor operatorga birikkan va genlar ishlamaydi; laktoza (induktor) repressorni bog‘lab nofaollashtiradi — laktozani parchalovchi fermentlar sintezlanadi.",
+    "**Repressiya** (triptofan operoni): oxirgi mahsulot (triptofan) ko‘payganda korepressor sifatida repressorni faollashtiradi va sintez to‘xtaydi."
+   ]},
+   {"type": "p", "text": "Eukariotlarda gen faolligi ko‘p darajada boshqariladi: xromatinning zichlanishi (DNK metillanishi, gistonlar modifikatsiyasi), transkripsiya omillari va kuchaytirgichlar (enxanserlar), splaysing, i-RNK barqarorligi va translyatsiya darajasida."},
+   {"type": "p", "text": "**Sitoplazmatik (yadrodan tashqari) irsiyat** — mitoxondriya va plastidalar DNK si orqali belgilarning irsiylanishi. Odamda mitoxondriyalar zigotaga faqat tuxum hujayra orqali o‘tadi, shuning uchun mitoxondrial kasalliklar (Leber ko‘rish nervi atrofiyasi, MELAS) **faqat onadan** barcha farzandlarga beriladi."}
+  ]},
+  {"title": "5. Genetik va hujayra injeneriyasi", "blocks": [
+   {"type": "p", "text": "**Gen injeneriyasi** — kerakli genlarni ajratib olish, ularni vektor yordamida boshqa organizm hujayrasiga ko‘chirish va ishlatish usullari majmui. Asosiy bosqichlari:"},
+   {"type": "list", "ordered": true, "items": [
+    "Kerakli genni olish — DNK ni **restriktazalar** (masalan, EcoRI) bilan kesish yoki i-RNK dan teskari transkriptaza yordamida komplementar DNK sintezlash.",
+    "Genni **vektorga** (plazmida, bakteriofag, virus) **ligaza** yordamida tikish — rekombinant DNK hosil qilish.",
+    "Rekombinant DNK ni retsipiyent hujayraga (bakteriya, achitqi) kiritish.",
+    "Genni olgan hujayralarni tanlash va ko‘paytirish (klonlash), mahsulotni ajratib olish."
+   ]},
+   {"type": "p", "text": "Gen injeneriyasi yordamida **inson insulini**, o‘sish gormoni, interferonlar, gepatit B vaksinasi, qon ivish omillari ishlab chiqariladi; **gen terapiyasi**, transgen o‘simlik va hayvonlar, PZR (polimeraza zanjir reaksiyasi) diagnostikasi va CRISPR-Cas9 bilan genom tahriri rivojlanmoqda."},
+   {"type": "p", "text": "**Hujayra injeneriyasi** — hujayralarni o‘stirish, duragaylash (somatik gibridizatsiya), yadro ko‘chirib klonlash. Limfotsit va o‘sma hujayrasini qo‘shib olingan **gibridomalar** monoklonal antitelolar ishlab chiqaradi. Yadro ko‘chirish usuli bilan 1996-yilda “Dolli” qo‘yi klonlangan."}
+  ]},
+  {"title": "6. O‘zgaruvchanlik va mutatsiyalar", "blocks": [
+   {"type": "table", "title": "Jadval 6.4. O‘zgaruvchanlik shakllari", "head": ["Shakl", "Mohiyati", "Irsiylanishi", "Misol"], "rows": [
+    ["Modifikatsion (fenotipik)", "Genotip o‘zgarmasdan muhit ta’sirida fenotipning o‘zgarishi; reaksiya normasi doirasida", "Irsiylanmaydi", "Quyoshda terining qorayishi, mashq bilan mushaklarning kattalashishi"],
+    ["Kombinativ", "Krossingover, xromosomalarning mustaqil tarqalishi va gametalarning tasodifiy qo‘shilishi natijasida genlarning yangi kombinatsiyasi", "Irsiylanadi", "Aka-ukalarning bir-biridan farqi"],
+    ["Mutatsion", "Genotipning (DNK ning) to‘satdan, sakrab o‘zgarishi", "Irsiylanadi (generativ mutatsiyalar)", "Fenilketonuriya, Daun sindromi"]
+   ]},
+   {"type": "table", "title": "Jadval 6.5. Mutatsiyalarning tasnifi", "head": ["Daraja", "Turlari", "Misol"], "rows": [
+    ["Genom mutatsiyalari", "Poliploidiya (3n, 4n), anevploidiya — trisomiya (2n + 1), monosomiya (2n − 1), nullisomiya", "Daun (47,+21), Terner (45,X) sindromlari"],
+    ["Xromosoma aberratsiyalari (xromosoma ichidagi)", "Deletsiya (qism yo‘qolishi), duplikatsiya (ikkilanishi), inversiya (180° ga burilishi)", "“Mushuk chinqirig‘i” sindromi — 5p^−^"],
+    ["Xromosoma aberratsiyalari (xromosomalararo)", "Translokatsiya — qismning nogomologik xromosomaga o‘tishi; Robertson translokatsiyasi (akrosentriklarning qo‘shilishi)", "Filadelfiya xromosomasi t(9;22) — surunkali mieloleykoz"],
+    ["Gen (nuqtali) mutatsiyalar", "Asoslar almashinuvi (tranzitsiya, transversiya), qo‘shilish (insersiya), tushib qolish (deletsiya) — o‘qish ramkasining siljishi", "O‘roqsimon hujayrali anemiya, fenilketonuriya"]
+   ]},
+   {"type": "p", "text": "Kelib chiqish joyiga ko‘ra **somatik** (tana hujayralarida — nasldan-naslga o‘tmaydi, o‘sma va mozaitsizmga sabab bo‘ladi) va **generativ** (jinsiy hujayralarda — avlodga o‘tadi) mutatsiyalar farqlanadi. Sababiga ko‘ra **spontan** (tabiiy, sababi aniq emas) va **indutsirlangan** (mutagenlar ta’sirida) mutatsiyalar bo‘ladi. Mutagenlar: **fizik** (ionlashtiruvchi va ultrabinafsha nurlar, yuqori harorat), **kimyoviy** (alkillovchi moddalar, azot kislotasi, benzpiren, ayrim dorilar), **biologik** (viruslar, mobil genetik elementlar)."},
+   {"type": "p", "text": "**DNK reparatsiyasi** — shikastlangan DNK ni tiklash tizimi: **fotoreaktivatsiya** (yorug‘likda timin dimerlarini ajratish), **eksizion reparatsiya** (shikastlangan qismni kesib, DNK-polimeraza va ligaza yordamida qayta qurish), **postreplikativ reparatsiya**. Reparatsiya buzilsa mutatsiyalar to‘planadi: masalan, **pigmentli kseroderma**da ultrabinafsha nur teri saratonini keltirib chiqaradi. **Antimutagenlar** — mutatsiyalar chastotasini kamaytiruvchi moddalar: vitaminlar (A, E, C), selen, ayrim aminokislotalar, antioksidantlar."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**O‘roqsimon hujayrali anemiya** — klassik nuqtali mutatsiya: β-globin genining 6-kodonida GAG → GTG almashinuvi natijasida glutamin kislota o‘rniga valin qo‘yiladi (HbS). Kam kislorodda HbS polimerlanib, eritrotsit o‘roq shaklini oladi va kapillyarlarni berkitadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: DNK dan polipeptidgacha axborotni “o‘qish”", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Berilgan DNK zanjiri matritsa (transkripsiyalanadigan) zanjir ekanini aniqlang.",
+    "Komplementarlik qoidasi bo‘yicha i-RNK ni yozing: A → U, T → A, G → S, S → G.",
+    "i-RNK ni chap tomondan uchliklarga (kodonlarga) ajrating.",
+    "Genetik kod jadvalidan har bir kodonning aminokislotasini toping; stop-kodonda to‘xtang.",
+    "Teskari masalada (aminokislotadan DNK ga) kodning degeneratsiyasi tufayli bir nechta to‘g‘ri javob bo‘lishi mumkinligini ko‘rsating."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "DNK ning irsiy material ekanligi qanday tajribalar bilan isbotlangan?",
+  "Transformatsiya, transduksiya va konyugatsiyani tushuntiring.",
+  "Plazmidalar nima va ularning tibbiyotdagi ahamiyati qanday?",
+  "DNK ning kimyoviy tuzilishini va Uotson-Krik modelini tushuntiring.",
+  "Chargaff qoidalarini ayting.",
+  "DNK replikatsiyasi qanday kechadi? Nima uchun u yarim konservativ deyiladi?",
+  "Genetik kodning xossalarini ayting.",
+  "RNK turlari va ularning vazifalari qanday?",
+  "Transkripsiya va protsessing qanday kechadi?",
+  "Translyatsiya bosqichlarini tushuntiring.",
+  "Operon nazariyasi bo‘yicha induksiya va repressiyani tushuntiring.",
+  "Sitoplazmatik irsiyat nima? Mitoxondrial kasalliklar qanday irsiylanadi?",
+  "Gen injeneriyasining bosqichlari va yutuqlarini ayting.",
+  "Hujayra injeneriyasi nima?",
+  "Modifikatsion, kombinativ va mutatsion o‘zgaruvchanlikni taqqoslang.",
+  "Genom, xromosoma va gen mutatsiyalariga misollar keltiring.",
+  "Mutagenlar va antimutagenlar haqida tushuncha bering. DNK reparatsiyasi qanday kechadi?"
+ ],
+ "quiz": [
+  {"q": "DNK qo‘sh spiral modelini kimlar taklif qilgan?", "options": ["J. Uotson va F. Krik", "F. Griffit va O. Everi", "M. Mezelson va F. Stal", "F. Jakob va J. Mono", "A. Xershi va M. Cheyz"], "answer": 0},
+  {"q": "DNK da G = 22 % bo‘lsa, A ning miqdori qancha?", "options": ["28 %", "22 %", "44 %", "56 %", "78 %"], "answer": 0},
+  {"q": "Faqat RNK tarkibida uchraydigan azotli asos qaysi?", "options": ["Urasil", "Timin", "Adenin", "Guanin", "Sitozin"], "answer": 0},
+  {"q": "Replikatsiyada Okazaki fragmentlarini tikuvchi ferment qaysi?", "options": ["Ligaza", "Helikaza", "Praymaza", "Restriktaza", "Topoizomeraza"], "answer": 0},
+  {"q": "Genetik kodda nechta kodon aminokislotalarni kodlaydi?", "options": ["61", "64", "20", "3", "60"], "answer": 0},
+  {"q": "Start-kodon qaysi?", "options": ["AUG", "UAA", "UGA", "UAG", "GUA"], "answer": 0},
+  {"q": "Bitta aminokislotaning bir nechta kodon bilan kodlanishi qanday xossa?", "options": ["Degeneratsiya", "Universallik", "Uzluksizlik", "Bir ma’nolilik", "Qoplanmaslik"], "answer": 0},
+  {"q": "Pre-i-RNK dan intronlarning kesib olinishi qanday ataladi?", "options": ["Splaysing", "Replikatsiya", "Translokatsiya", "Terminatsiya", "Transduksiya"], "answer": 0},
+  {"q": "t-RNK ning i-RNK kodoniga komplementar qismi qanday ataladi?", "options": ["Antikodon", "Promotor", "Operator", "Ekzon", "Praymer"], "answer": 0},
+  {"q": "Laktoza operonida laktoza qanday rol o‘ynaydi?", "options": ["Induktor", "Repressor", "Korepressor", "Promotor", "Operator"], "answer": 0},
+  {"q": "Bakteriyaning DNK si bakteriofag yordamida boshqa bakteriyaga o‘tishi qanday ataladi?", "options": ["Transduksiya", "Transformatsiya", "Konyugatsiya", "Translyatsiya", "Transkripsiya"], "answer": 0},
+  {"q": "Gen injeneriyasida DNK ni ma’lum ketma-ketlikda kesuvchi fermentlar qaysilar?", "options": ["Restriktazalar", "Ligazalar", "Polimerazalar", "Helikazalar", "Lipazalar"], "answer": 0},
+  {"q": "Xromosoma qismining 180° ga burilishi qanday ataladi?", "options": ["Inversiya", "Deletsiya", "Duplikatsiya", "Translokatsiya", "Poliploidiya"], "answer": 0},
+  {"q": "Qaysi o‘zgaruvchanlik irsiylanmaydi?", "options": ["Modifikatsion", "Kombinativ", "Gen mutatsiyasi", "Genom mutatsiyasi", "Xromosoma aberratsiyasi"], "answer": 0},
+  {"q": "Pigmentli kserodermada qaysi jarayon buzilgan?", "options": ["DNK ning eksizion reparatsiyasi", "Splaysing", "Translyatsiya", "Meyoz", "Glikoliz"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "i-RNK dagi nukleotidlar: guanin — 34 %, urasil — 18 %, sitozin — 28 %, adenin — 20 %.", "ask": "Ushbu i-RNK nusxa olingan qo‘sh zanjirli DNK uchastkasidagi azotli asoslarning foizini aniqlang.", "answer": "Matritsa DNK zanjiri i-RNK ga komplementar: S — 34 %, A — 18 %, G — 28 %, T — 20 %. Ikkinchi (kodlovchi) zanjir i-RNK ga o‘xshash (U o‘rnida T): G — 34 %, T — 18 %, S — 28 %, A — 20 %. Qo‘sh zanjirli DNK da: G = S = (34 + 28) / 2 = 31 %; A = T = (18 + 20) / 2 = 19 %. Tekshiruv: 31 + 31 + 19 + 19 = 100 %."},
+  {"title": "Masala 2", "text": "DNK ning matritsa zanjiri: ASS-ATA-GTS-SAA-GGA-SSA-AAS-AGA-AAA-TTT.", "ask": "Bu uchastka asosida sintezlanadigan polipeptid qanday aminokislotalardan iborat?", "answer": "i-RNK: UGG-UAU-SAG-GUU-SSU-GGU-UUG-USU-UUU-AAA. Polipeptid: triptofan — tirozin — glutamin — valin — prolin — glitsin — leytsin — serin — fenilalanin — lizin."},
+  {"title": "Masala 3", "text": "Bemorning β-globin genida 6-tripletda GAG ketma-ketligi GTG ga almashganligi aniqlandi.", "ask": "Bu qanday mutatsiya va qanday kasallikka olib keladi?", "answer": "Bu gen (nuqtali) mutatsiya — asosning almashinuvi (transversiya A → T). i-RNK da GAG (glutamin kislota) kodoni GUG (valin) ga aylanadi; β-globin zanjirining 6-o‘rnida glutamin kislota o‘rniga valin turadi — gemoglobin S hosil bo‘ladi. Natijada o‘roqsimon hujayrali anemiya rivojlanadi (autosoma-retsessiv); geterozigotalar bezgakka nisbatan chidamli bo‘ladi."}
+ ],
+ "cards": [
+  {"front": "Komplementarlik", "back": "A=T (2 vodorod bog‘i), G≡S (3 vodorod bog‘i)"},
+  {"front": "Chargaff qoidasi", "back": "A = T, G = S; A + G = T + S"},
+  {"front": "Yarim konservativ replikatsiya", "back": "Har bir yangi DNK da bitta eski va bitta yangi zanjir (Mezelson va Stal)"},
+  {"front": "Genetik kod", "back": "Triplet, degeneratsiyalangan, bir ma’noli, uzluksiz, universal; 64 kodon"},
+  {"front": "Stop-kodonlar", "back": "UAA, UAG, UGA"},
+  {"front": "Splaysing", "back": "Intronlarni kesib, ekzonlarni tikish"},
+  {"front": "Operon", "back": "Promotor + operator + struktura genlari (Jakob va Mono, 1961)"},
+  {"front": "Transduksiya", "back": "Bakteriofag orqali genlarning ko‘chirilishi"},
+  {"front": "Restriktazalar", "back": "DNK ni ma’lum ketma-ketlikda kesuvchi fermentlar (EcoRI)"},
+  {"front": "Genom mutatsiyasi", "back": "Xromosomalar sonining o‘zgarishi: poliploidiya, anevploidiya"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Axborot oqimi (markaziy dogma): **DNK → RNK → oqsil**; retroviruslarda teskari transkriptaza RNK → DNK yo‘lini ham ochadi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Stop-kodonlar: **“U Are Away, U Are Gone, U Go Away”** — UAA, UAG, UGA."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Gen injeneriyasi mahsulotlari — insulin, o‘sish gormoni, interferon, vaksinalar; PZR va genom tahriri — zamonaviy diagnostika va davolash asosi."}
+ ]
+}

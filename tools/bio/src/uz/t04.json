@@ -1,0 +1,159 @@
+{
+ "id": "04",
+ "no": 4,
+ "title": "Monoduragay chatishtirish. Allel genlarning o‘zaro ta’siri, ko‘p allellik. Di- va poliduragay chatishtirish. Allel bo‘lmagan genlarning o‘zaro ta’siri",
+ "goals": [
+  {"type": "p", "text": "Talabaga genetikaning asosiy tushunchalari va usullarini, G. Mendel qonunlarini va ularning sitologik asoslarini, allel va allel bo‘lmagan genlarning o‘zaro ta’siri turlarini, odamda qon guruhlarining irsiylanishini hamda genetik masalalar yechish usulini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "genetikaning asosiy atamalari (gen, allel, genotip, fenotip, gomo- va geterozigota) va belgilash qoidalarini;",
+   "Mendelning uchta qonuni va gametalar sofligi gipotezasini;",
+   "to‘liq va to‘liqsiz dominantlik, kodominantlik, ko‘p allellikni;",
+   "komplementarlik, epistaz, polimeriya va pleyotropiyani;",
+   "ABO va Rh tizimlari bo‘yicha qon guruhlarining irsiylanishini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "mono- va diduragay chatishtirishga oid masalalarni Pennet katakchasi yordamida yechish;",
+   "tahliliy chatishtirish natijasidan ota-ona genotipini aniqlash;",
+   "farzandlarda qon guruhlari ehtimolini hisoblash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Genetika fani va asosiy tushunchalar", "blocks": [
+   {"type": "p", "text": "**Genetika** — organizmlarning irsiyati va o‘zgaruvchanligi qonuniyatlarini o‘rganuvchi fan. Uning asoschisi chex olimi **G. Mendel** bo‘lib, u 1865-yilda no‘xat ustidagi tajribalari asosida irsiylanish qonunlarini e’lon qilgan. Bu qonunlar 1900-yilda G. de Friz, K. Korrens va E. Chermak tomonidan qayta kashf etilgan; “genetika” atamasini 1906-yilda U. Betson kiritgan. Keyingi bosqichlar: T. Morganning xromosoma nazariyasi, J. Uotson va F. Krikning DNK modeli (1953), genetik kodning ochilishi, gen injeneriyasi va odam genomini o‘qish (2003)."},
+   {"type": "table", "title": "Jadval 4.1. Genetikaning asosiy atamalari", "head": ["Atama", "Ta’rifi"], "rows": [
+    ["Gen", "DNK ning ma’lum bir oqsil yoki RNK tuzilishini belgilovchi qismi; irsiyat birligi"],
+    ["Lokus", "Genning xromosomadagi joyi"],
+    ["Allel genlar", "Gomologik xromosomalarning bir xil lokuslarida joylashgan va bitta belgining turli holatlarini belgilovchi genlar (A va a)"],
+    ["Dominant belgi", "Geterozigotada yuzaga chiqadigan (ustun keladigan) belgi — bosh harf bilan (A)"],
+    ["Retsessiv belgi", "Faqat gomozigotada (aa) yuzaga chiqadigan belgi — kichik harf bilan"],
+    ["Gomozigota", "Bir xil allellarga ega organizm (AA yoki aa); bir xil gametalar hosil qiladi"],
+    ["Geterozigota", "Har xil allellarga ega organizm (Aa); ikki xil gameta hosil qiladi"],
+    ["Genotip", "Organizm genlarining yig‘indisi"],
+    ["Fenotip", "Genotip va muhit ta’sirida shakllangan barcha belgilar yig‘indisi"],
+    ["Duragay", "Genetik jihatdan har xil ota-onalarni chatishtirishdan olingan avlod"]
+   ]},
+   {"type": "p", "text": "**Belgilash qoidalari:** P — ota-onalar, ♀ — urg‘ochi (ayol), ♂ — erkak, × — chatishtirish, G — gametalar, F~1~, F~2~ — birinchi va ikkinchi avlod duragaylari. Yozuvda urg‘ochi organizm birinchi yoziladi. Odam genetikasida ota-onalarning nikohi ham “×” bilan belgilanadi."},
+   {"type": "p", "text": "**Duragaylash (gibridologik) usulining** Mendel tomonidan qo‘llangan asosiy shartlari: toza liniyalar (gomozigot) tanlangan, bir-biridan aniq farq qiluvchi muqobil belgilar kuzatilgan, har bir avlod alohida va miqdoriy (statistik) tahlil qilingan."}
+  ]},
+  {"title": "2. Monoduragay chatishtirish. Mendelning I va II qonunlari", "blocks": [
+   {"type": "p", "text": "**Monoduragay chatishtirish** — bir juft muqobil belgisi bilan farq qiluvchi organizmlarni chatishtirish. Mendel sariq (AA) va yashil (aa) donli no‘xatni chatishtirganda F~1~ da barcha o‘simliklar sariq donli (Aa) bo‘lgan; F~1~ ni o‘zaro chatishtirganda F~2~ da sariq va yashil donlar 3 : 1 nisbatda paydo bo‘lgan (Rasm 4.1)."},
+   {"type": "img", "src": "data/img/bio/t04_monoduragay.webp", "w": 552, "h": 481, "lang": true, "label": "Rasm 4.1", "caption": "Mendelning I va II qonunlarining Pennet katakchasida ifodalanishi: sariq (AA) va yashil (aa) no‘xatni chatishtirish, F~1~ ning bir xilligi va F~2~ da 3 : 1 nisbatda ajralish (P.X. Xolikov va boshq., 2022)."},
+   {"type": "list", "ordered": false, "items": [
+    "**Mendelning I qonuni (birinchi avlod duragaylarining bir xilligi qonuni):** muqobil belgilari bilan farq qiluvchi ikki gomozigot organizm chatishtirilganda F~1~ duragaylari genotip va fenotip bo‘yicha bir xil bo‘ladi.",
+    "**Mendelning II qonuni (ajralish qonuni):** F~1~ geterozigotalari o‘zaro chatishtirilganda F~2~ da belgilar fenotip bo‘yicha 3 : 1, genotip bo‘yicha 1 : 2 : 1 (1 AA : 2 Aa : 1 aa) nisbatda ajraladi."
+   ]},
+   {"type": "p", "text": "**Gametalar sofligi gipotezasi:** duragay organizmda allel genlar aralashmaydi; har bir gametaga juftdan faqat **bitta allel** o‘tadi. Uning **sitologik asosi** — meyozning anafaza I da gomologik xromosomalarning (va ulardagi allellarning) turli gametalarga tarqalishi."},
+   {"type": "p", "text": "**Tahliliy chatishtirish** — dominant fenotipli organizmning genotipini aniqlash uchun uni retsessiv gomozigota (aa) bilan chatishtirish. Agar barcha avlod dominant belgili bo‘lsa, tekshirilayotgan organizm gomozigot (AA); agar 1 : 1 nisbatda ajralish bo‘lsa — geterozigot (Aa)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Masala yechish algoritmi: (1) belgilarni harflar bilan belgilang; (2) ota-onalar genotipini yozing; (3) har birining gametalarini aniqlang (har bir gametada har bir gendan bitta allel); (4) Pennet katakchasini tuzing; (5) genotip va fenotip nisbatini yoki ehtimolni (%) hisoblang."}]}
+  ]},
+  {"title": "3. Allel genlarning o‘zaro ta’siri va ko‘p allellik", "blocks": [
+   {"type": "table", "title": "Jadval 4.2. Allel genlarning o‘zaro ta’siri turlari", "head": ["Turi", "Mohiyati", "F~2~ dagi fenotip nisbati", "Odamdagi misol"], "rows": [
+    ["To‘liq dominantlik", "Dominant allel retsessivni to‘liq bostiradi; Aa = AA", "3 : 1", "Qo‘y ko‘zlilik, polidaktiliya, jingalak soch"],
+    ["To‘liqsiz dominantlik", "Geterozigotada oraliq belgi yuzaga chiqadi", "1 : 2 : 1", "Sistinuriya, o‘roqsimon hujayrali anemiya (geterozigotada yengil shakl)"],
+    ["Kodominantlik", "Geterozigotada ikkala allel ham to‘liq namoyon bo‘ladi", "1 : 2 : 1", "AB (IV) qon guruhi — I^A^I^B^; MN qon guruhlari"],
+    ["O‘ta dominantlik", "Geterozigota gomozigotaga nisbatan kuchliroq belgiga ega", "—", "HbAS geterozigotalarning bezgakka chidamliligi"]
+   ]},
+   {"type": "p", "text": "**Ko‘p allellik** — bitta lokusda populyatsiyada ikkitadan ortiq allel bo‘lishi; ammo har bir organizmda ulardan faqat ikkitasi bo‘ladi. Odamda **ABO qon guruhlari** I^0^, I^A^, I^B^ allellari bilan belgilanadi: I^A^ va I^B^ I^0^ ga nisbatan dominant, o‘zaro esa kodominant."},
+   {"type": "table", "title": "Jadval 4.3. ABO tizimi bo‘yicha qon guruhlarining genotiplari", "head": ["Qon guruhi", "Eritrotsitdagi antigen", "Plazmadagi antitelo", "Genotipi"], "rows": [
+    ["I (0)", "Yo‘q", "α va β", "I^0^I^0^"],
+    ["II (A)", "A", "β", "I^A^I^A^ yoki I^A^I^0^"],
+    ["III (B)", "B", "α", "I^B^I^B^ yoki I^B^I^0^"],
+    ["IV (AB)", "A va B", "Yo‘q", "I^A^I^B^"]
+   ]},
+   {"type": "p", "text": "**Rezus omil** bitta asosiy gen bilan belgilanadi: Rh-musbat (D — dominant) va Rh-manfiy (dd). Rh-manfiy ona Rh-musbat homilaga ega bo‘lsa, ikkinchi va keyingi homiladorliklarda **rezus-konflikt** (yangi tug‘ilgan chaqaloqning gemolitik kasalligi) rivojlanishi mumkin."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Qon guruhlari genetikasi sud-tibbiyot ekspertizasida otalikni **inkor qilish** uchun ishlatiladi: masalan, ona I (0), bola IV (AB) qon guruhiga ega bo‘lishi mumkin emas. Ammo qon guruhlari otalikni **isbotlay olmaydi** — buning uchun DNK tahlili kerak. **Bombey fenomenida** epistatik retsessiv gen (hh) ta’sirida I^A^ yoki I^B^ geni bor odam I (0) guruhli bo‘lib ko‘rinadi."}]}
+  ]},
+  {"title": "4. Di- va poliduragay chatishtirish. Mendelning III qonuni", "blocks": [
+   {"type": "p", "text": "**Diduragay chatishtirish** — ikki juft muqobil belgisi bilan farq qiluvchi organizmlarni chatishtirish. Mendel sariq silliq (AABB) va yashil burishgan (aabb) no‘xatni chatishtirganda F~1~ da hammasi sariq silliq (AaBb) bo‘lgan. F~1~ duragayi 4 xil gameta (AB, Ab, aB, ab) hosil qiladi va F~2~ da 16 ta kombinatsiya, 9 xil genotip va 4 xil fenotip 9 : 3 : 3 : 1 nisbatda paydo bo‘ladi (Rasm 4.2)."},
+   {"type": "img", "src": "data/img/bio/t04_diduragay.webp", "w": 1283, "h": 783, "lang": true, "label": "Rasm 4.2", "caption": "Mendelning III qonuni (belgilarning mustaqil holda nasldan-naslga o‘tishi) Pennet katakchasida: AaBb × AaBb chatishtirishda 16 ta kombinatsiya va 9 : 3 : 3 : 1 fenotip nisbati (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Mendelning III qonuni (belgilarning mustaqil irsiylanish qonuni):** diduragay chatishtirishda har bir juft belgi bo‘yicha ajralish boshqa juftga bog‘liq bo‘lmagan holda 3 : 1 nisbatda boradi va genlar barcha mumkin bo‘lgan kombinatsiyalarda birikadi. Qonun genlar **har xil juft xromosomalarda** joylashgan bo‘lsagina bajariladi. Uning sitologik asosi — metafaza I da gomologik juftlarning bir-biriga bog‘liq bo‘lmagan holda tarqalishi."},
+   {"type": "p", "text": "Mustaqil taqsimlanishni **tahliliy chatishtirish** bilan isbotlash mumkin: AaBb × aabb chatishtirishda to‘rt xil fenotip 1 : 1 : 1 : 1 nisbatda paydo bo‘ladi."},
+   {"type": "table", "title": "Jadval 4.4. Poliduragay chatishtirishning umumiy formulalari (n — geterozigot juftlar soni)", "head": ["Ko‘rsatkich", "Monoduragay (n = 1)", "Diduragay (n = 2)", "Triduragay (n = 3)", "Umumiy formula"], "rows": [
+    ["F~1~ gametalari turlari", "2", "4", "8", "2^n^"],
+    ["F~2~ kombinatsiyalari", "4", "16", "64", "4^n^"],
+    ["F~2~ genotiplari", "3", "9", "27", "3^n^"],
+    ["F~2~ fenotiplari (to‘liq dominantlikda)", "2", "4", "8", "2^n^"]
+   ]}
+  ]},
+  {"title": "5. Allel bo‘lmagan genlarning o‘zaro ta’siri va pleyotropiya", "blocks": [
+   {"type": "table", "title": "Jadval 4.5. Allel bo‘lmagan genlarning o‘zaro ta’siri", "head": ["Turi", "Mohiyati", "F~2~ dagi nisbat", "Misol"], "rows": [
+    ["Komplementarlik", "Ikki dominant noallel gen birgalikda yangi belgini yuzaga chiqaradi", "9 : 7, 9 : 6 : 1, 9 : 3 : 4", "Odamda normal eshitish: D_E_ (D — chig‘anoq, E — eshitish nervi rivojlanishi)"],
+    ["Dominant epistaz", "Bir genning dominant alleli boshqa (gipostatik) genning namoyon bo‘lishini bostiradi", "13 : 3, 12 : 3 : 1", "Tovuqlarda pat rangi (I geni rangni bostiradi)"],
+    ["Retsessiv epistaz", "Retsessiv gomozigota (aa) boshqa gen ta’sirini bostiradi", "9 : 3 : 4", "Bombey fenomeni (hh), albinizm"],
+    ["Polimeriya (kumulyativ)", "Bir xil belgiga bir nechta gen ta’sir qiladi; dominant allellar soni qancha ko‘p bo‘lsa, belgi shuncha kuchli", "1 : 4 : 6 : 4 : 1", "Odam terisining rangi, bo‘yi, arterial bosim, aqliy qobiliyat"]
+   ]},
+   {"type": "p", "text": "**Pleyotropiya** — bitta genning bir nechta belgiga ta’sir qilishi. Masalan, **Marfan sindromida** biriktiruvchi to‘qima oqsili (fibrillin) genining mutatsiyasi uzun “o‘rgimchak barmoqlar”, ko‘z gavharining chiqishi va aorta anevrizmasini birga keltirib chiqaradi; **fenilketonuriya** geni aqliy zaiflik, och rangli teri va soch hamda siydikdagi o‘ziga xos hidga sabab bo‘ladi."},
+   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Nisbatlar yig‘indisi doimo **16** bo‘lsa, diduragay chatishtirish (ikki gen) haqida gap boradi: 9 + 7, 13 + 3, 12 + 3 + 1, 9 + 3 + 4, 15 + 1 — barchasi 9 : 3 : 3 : 1 ning “qo‘shilgan” variantlari."}]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Genning namoyon bo‘lishi **penetrantlik** (gen bor odamlarning necha foizida belgi yuzaga chiqishi) va **ekspressivlik** (belgining ifodalanish darajasi) bilan tavsiflanadi. Masalan, polidaktiliya geni to‘liq bo‘lmagan penetrantlikka ega."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: diduragay chatishtirishga oid masalani yechish", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Belgilarni belgilang: A — qo‘y ko‘zlilik, a — ko‘k ko‘zlilik; B — o‘ng qo‘llilik, b — chap qo‘llilik.",
+    "Ota-onalar genotipini fenotip va farzandlar haqidagi ma’lumotdan aniqlang (retsessiv belgili farzand bo‘lsa, ota-onaning har biri shu genning retsessiv allelini tashiydi).",
+    "Har bir ota-onaning gametalarini yozing (AaBb → AB, Ab, aB, ab).",
+    "Pennet katakchasini tuzing: gorizontal — ♂ gametalari, vertikal — ♀ gametalari.",
+    "Katakchalardagi genotiplarni fenotiplarga ajratib sanang.",
+    "Javobni nisbat va foizda yozing (masalan, ikkala retsessiv belgili farzand ehtimoli 1/16 = 6,25 %)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Genetika fanining rivojlanish bosqichlari va o‘rganish usullarini ayting.",
+  "Gen, allel, genotip, fenotip, gomozigota va geterozigota tushunchalarini ta’riflang.",
+  "Mendelning I va II qonunlarini ta’riflab, misol bilan tushuntiring.",
+  "Gametalar sofligi gipotezasi va uning sitologik asosi nimadan iborat?",
+  "Tahliliy chatishtirish nima uchun o‘tkaziladi?",
+  "Allel genlarning o‘zaro ta’siri turlarini sanang va misollar keltiring.",
+  "Ko‘p allellik nima? ABO qon guruhlari qanday irsiylanadi?",
+  "Rezus-konflikt qanday holatda rivojlanadi?",
+  "Mendelning III qonunini ta’riflang. U qanday sharoitda bajariladi?",
+  "Genlarning mustaqil taqsimlanishini qanday isbotlash mumkin?",
+  "Poliduragay chatishtirishning umumiy formulalarini yozing.",
+  "Komplementarlik, epistaz va polimeriyaga odamdan misollar keltiring.",
+  "Pleyotropiya nima? Misollar keltiring.",
+  "Penetrantlik va ekspressivlik tushunchalarini tushuntiring."
+ ],
+ "quiz": [
+  {"q": "F~2~ da fenotip bo‘yicha 3 : 1 nisbatda ajralish qaysi qonunga mos?", "options": ["Mendelning II qonuni", "Mendelning I qonuni", "Mendelning III qonuni", "Morgan qonuni", "Xardi-Vaynberg qonuni"], "answer": 0},
+  {"q": "Monoduragay chatishtirishda F~2~ da genotip bo‘yicha nisbat qanday?", "options": ["1 : 2 : 1", "3 : 1", "1 : 1", "9 : 3 : 3 : 1", "1 : 1 : 1 : 1"], "answer": 0},
+  {"q": "Tahliliy chatishtirishda tekshiriladigan organizm kim bilan chatishtiriladi?", "options": ["Retsessiv gomozigota bilan", "Dominant gomozigota bilan", "Geterozigota bilan", "F~1~ duragayi bilan", "Ota-onasidan biri bilan"], "answer": 0},
+  {"q": "Tahliliy chatishtirishda 1 : 1 nisbatda ajralish kuzatilsa, tekshirilgan organizm qanday?", "options": ["Geterozigot", "Dominant gomozigot", "Retsessiv gomozigot", "Poliploid", "Gemizigot"], "answer": 0},
+  {"q": "IV (AB) qon guruhida allellarning o‘zaro ta’siri qanday?", "options": ["Kodominantlik", "To‘liq dominantlik", "To‘liqsiz dominantlik", "Epistaz", "Polimeriya"], "answer": 0},
+  {"q": "Ota-onasi II (A) va III (B) qon guruhli geterozigotalar bo‘lsa, farzandlarda qaysi qon guruhlari bo‘lishi mumkin?", "options": ["I, II, III va IV", "Faqat IV", "Faqat II va III", "Faqat I", "II, III va IV"], "answer": 0},
+  {"q": "Ona I (0) qon guruhli bo‘lsa, farzand qaysi qon guruhli bo‘lishi mumkin emas?", "options": ["IV (AB)", "I (0)", "II (A)", "III (B)", "Hammasi bo‘lishi mumkin"], "answer": 0},
+  {"q": "AaBb genotipli organizm necha xil gameta hosil qiladi?", "options": ["4", "2", "8", "16", "1"], "answer": 0},
+  {"q": "Diduragay chatishtirishda F~2~ da necha xil genotip hosil bo‘ladi?", "options": ["9", "4", "16", "3", "27"], "answer": 0},
+  {"q": "Mendelning III qonuni qachon bajariladi?", "options": ["Genlar har xil juft xromosomalarda joylashganda", "Genlar bitta xromosomada birikkan bo‘lsa", "Faqat to‘liqsiz dominantlikda", "Faqat jinsiy xromosomalarda", "Krossingover bo‘lmaganda"], "answer": 0},
+  {"q": "F~2~ da 9 : 7 nisbat qaysi o‘zaro ta’sirga xos?", "options": ["Komplementarlik", "Dominant epistaz", "Polimeriya", "Kodominantlik", "To‘liq dominantlik"], "answer": 0},
+  {"q": "Odam terisining rangi qanday irsiylanadi?", "options": ["Kumulyativ polimeriya", "Monogen to‘liq dominant", "Kodominant", "X ga birikkan", "Y ga birikkan"], "answer": 0},
+  {"q": "Bitta genning bir nechta belgiga ta’sir qilishi qanday ataladi?", "options": ["Pleyotropiya", "Polimeriya", "Epistaz", "Komplementarlik", "Ko‘p allellik"], "answer": 0},
+  {"q": "Bombey fenomeni qanday o‘zaro ta’sirga misol?", "options": ["Retsessiv epistaz", "Kodominantlik", "Polimeriya", "To‘liqsiz dominantlik", "Komplementarlik"], "answer": 0},
+  {"q": "Triduragay (AaBbCc) organizm necha xil gameta hosil qiladi?", "options": ["8", "6", "4", "16", "27"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Odamda jingalak soch (A) silliq soch (a) ustidan dominantlik qiladi. Geterozigot jingalak sochli erkak silliq sochli ayolga uylandi.", "ask": "Farzandlar qanday genotip va fenotipda bo‘lishi mumkin? Silliq sochli farzand tug‘ilishi ehtimoli qancha?", "answer": "P: ♀ aa × ♂ Aa. Ayolning gametasi — a; erkakniki — A va a. F~1~: Aa (jingalak) va aa (silliq) 1 : 1 nisbatda. Demak, silliq sochli farzand tug‘ilish ehtimoli 50 % (bu tahliliy chatishtirishga misol)."},
+  {"title": "Masala 2", "text": "Vilson kasalligi (mis almashinuvi buzilishi) autosoma-retsessiv irsiylanadi. Ota-onadan biri kasal, ikkinchisi sog‘lom va uning ota-onasi ham sog‘lom, ammo uning akasi Vilson kasalligi bilan og‘rigan.", "ask": "Bu oilada kasal bola tug‘ilish ehtimolini aniqlang.", "answer": "Kasal ota yoki ona — aa. Sog‘lom ota-onaning sog‘lom farzandi (akasi kasal) bo‘lgani uchun uning ota-onasi Aa × Aa, o‘zi esa sog‘lom bo‘lgani sababli AA (1/3) yoki Aa (2/3) bo‘lishi mumkin. Agar u Aa bo‘lsa, aa × Aa nikohida kasal bola ehtimoli 1/2. Umumiy ehtimol: 2/3 × 1/2 = 1/3 (≈ 33 %). Agar sog‘lom tomonning geterozigotaligi aniq bo‘lsa — 50 %, gomozigot bo‘lsa — 0 %."},
+  {"title": "Masala 3", "text": "Odamda qo‘y ko‘zlilik (A) ko‘k ko‘zlilik (a) ustidan, yaqinni ko‘rmaslik — miopiya (B) normal ko‘rish (b) ustidan dominantlik qiladi. Ko‘k ko‘zli, miopiyali ayolning qo‘y ko‘zli, normal ko‘ruvchi erkak bilan nikohidan ko‘k ko‘zli, normal ko‘ruvchi bola tug‘ildi.", "ask": "Ota-onalarning genotipini va bu oilada qo‘y ko‘zli miopiyali bola tug‘ilish ehtimolini aniqlang.", "answer": "Bola aabb, demak har bir ota-ona a va b allelini bergan: ayol aaBb, erkak Aabb. Gametalar: ayol — aB, ab; erkak — Ab, ab. Farzandlar: AaBb (qo‘y ko‘zli miopiyali), Aabb (qo‘y ko‘zli normal), aaBb (ko‘k ko‘zli miopiyali), aabb (ko‘k ko‘zli normal) — har biri 1/4. Qo‘y ko‘zli miopiyali bola ehtimoli 25 %."}
+ ],
+ "cards": [
+  {"front": "Mendelning I qonuni", "back": "F~1~ duragaylarining bir xilligi (AA × aa → Aa)"},
+  {"front": "Mendelning II qonuni", "back": "F~2~ da ajralish: fenotip 3 : 1, genotip 1 : 2 : 1"},
+  {"front": "Mendelning III qonuni", "back": "Belgilarning mustaqil irsiylanishi: 9 : 3 : 3 : 1"},
+  {"front": "Tahliliy chatishtirish", "back": "Dominant fenotip × aa; 1 : 1 → geterozigot"},
+  {"front": "Kodominantlik", "back": "Geterozigotada ikkala allel namoyon bo‘ladi (I^A^I^B^ — IV guruh)"},
+  {"front": "I (0) qon guruhi genotipi", "back": "I^0^I^0^"},
+  {"front": "Komplementarlik", "back": "Ikki dominant noallel gen birgalikda yangi belgi; 9 : 7"},
+  {"front": "Epistaz", "back": "Bir genning boshqa noallel gen ta’sirini bostirishi; 13 : 3, 12 : 3 : 1, 9 : 3 : 4"},
+  {"front": "Polimeriya", "back": "Bir belgiga ko‘p gen ta’siri (teri rangi, bo‘y)"},
+  {"front": "Pleyotropiya", "back": "Bir genning ko‘p belgiga ta’siri (Marfan sindromi)"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Gameta har bir gendan **faqat bitta allel** oladi; n juft geterozigot genli organizm **2^n^** xil gameta hosil qiladi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Mendel qonunlari: **“Bir xil — Ajraladi — Mustaqil”** (I — bir xillik, II — ajralish, III — mustaqil irsiylanish)."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "ABO va Rh genetikasi qon quyish, rezus-konflikt profilaktikasi va sud-tibbiy otalikni inkor qilishda qo‘llaniladi."}
+ ]
+}

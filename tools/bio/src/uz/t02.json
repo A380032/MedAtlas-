@@ -1,0 +1,200 @@
+{
+ "id": "02",
+ "no": 2,
+ "title": "Eukariot hujayralarning ultrastrukturaviy tuzilishi. Hujayra membranasining nozik tuzilishi va hujayraga moddalarning kirishi",
+ "goals": [
+  {"type": "p", "text": "Talabaga eukariot hujayraning kimyoviy tarkibini, umumiy va xususiy organoidlar hamda kiritmalarning ultrastrukturasi va funksiyalarini, yadro va xromosomalar tuzilishini, biologik membrananing tuzilish modelini va moddalarning membrana orqali tashilish mexanizmlarini, eritmalarning tibbiyotdagi ahamiyatini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "hujayraning elementar va molekulyar tarkibini, suv va organik moddalarning rolini;",
+   "membranali va membranasiz organoidlarning tuzilishi va vazifalarini;",
+   "yadro qismlari, xromatin va metafaza xromosomasining tuzilishini;",
+   "suyuq-mozaik membrana modelini;",
+   "passiv va faol transport, endotsitoz va ekzotsitoz mexanizmlarini;",
+   "gipo-, izo- va gipertonik eritmalarning hujayraga ta’sirini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "elektronogramma va sxemalarda organoidlarni aniqlash;",
+   "plazmoliz va deplazmoliz, gemoliz va eritrotsitlar burishishini mikroskopda kuzatish va izohlash;",
+   "xromosomalarni sentromera holatiga ko‘ra tasniflash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Eukariot hujayraning umumiy tuzilishi va kimyoviy tarkibi", "blocks": [
+   {"type": "p", "text": "Eukariotlarga bir hujayrali sodda hayvonlar, zamburug‘lar, o‘simliklar va hayvonlar kiradi. Eukariot hujayra uchta asosiy qismdan iborat: **plazmatik membrana** (hujayra qobig‘i), **sitoplazma** (gialoplazma, organoidlar va kiritmalar) va **yadro**. Odam hujayralarining o‘lchami 7–8 mkm (eritrotsit) dan 150 mkm (tuxum hujayra) gacha, shakli bajaradigan vazifasiga bog‘liq: sharsimon, yassi, kubsimon, prizmatik, yulduzsimon, o‘simtali (neyron)."},
+   {"type": "table", "title": "Jadval 2.1. Hujayraning elementar tarkibi", "head": ["Guruh", "Elementlar", "Hujayradagi miqdori"], "rows": [
+    ["Makroelementlar (organogenlar)", "O, C, H, N", "≈ 98 %"],
+    ["Makroelementlar", "P, S, K, Na, Ca, Mg, Cl, Fe", "0,01 % dan ko‘p"],
+    ["Mikroelementlar", "Zn, Cu, I, F, Mn, Co, Mo, Se", "0,001–0,000001 %"],
+    ["Ultramikroelementlar", "Au, Ag, Hg, U, Ra va boshqalar", "0,000001 % dan kam"]
+   ]},
+   {"type": "p", "text": "**Suv** hujayra massasining 70–80 % ini tashkil qiladi. U universal erituvchi, kimyoviy reaksiyalar muhiti va ishtirokchisi (gidroliz), issiqlikni boshqaruvchi va moddalarni tashuvchi vosita hisoblanadi. **Mineral tuzlar** ionlar ko‘rinishida membrana potensiali (K^+^, Na^+^, Cl^−^), bufer xossasi (HPO~4~^2−^, HCO~3~^−^), qon ivishi va mushak qisqarishi (Ca^2+^) uchun zarur."},
+   {"type": "table", "title": "Jadval 2.2. Hujayraning organik moddalari", "head": ["Modda", "Tuzilishi", "Asosiy vazifalari"], "rows": [
+    ["Oqsillar", "Aminokislotalardan (20 xil) tuzilgan biopolimer; birlamchi, ikkilamchi, uchlamchi va to‘rtlamchi strukturasi bor", "Fermentativ, struktura, qisqaruvchi, transport, himoya (antitelolar), boshqaruvchi (gormonlar), retseptor"],
+    ["Uglevodlar", "Monosaxaridlar (glyukoza, riboza), disaxaridlar, polisaxaridlar (glikogen, kraxmal, sellyuloza)", "Energetik (1 g → 17,6 kJ), zaxira, struktura, glikokaliks tarkibi"],
+    ["Lipidlar", "Yog‘lar, fosfolipidlar, steroidlar (xolesterin), mumlar", "Energetik (1 g → 38,9 kJ), membrana asosi, gormonlar, issiqlik izolyatsiyasi"],
+    ["Nuklein kislotalar", "Nukleotidlardan tuzilgan DNK va RNK", "Irsiy axborotni saqlash, uzatish va amalga oshirish"],
+    ["ATF", "Adenin + riboza + 3 fosfat qoldig‘i", "Hujayraning universal energiya manbai"]
+   ]},
+   {"type": "p", "text": "Oqsillar **oddiy** (faqat aminokislotalardan: albuminlar, globulinlar) va **murakkab** (oqsil + oqsil bo‘lmagan qism: glikoproteinlar, lipoproteinlar, nukleoproteinlar, gemoglobin kabi xromoproteinlar) bo‘ladi. Oqsilning tabiiy tuzilishi buzilishi **denaturatsiya** deyiladi."}
+  ]},
+  {"title": "2. Plazmatik membrana: tuzilishi va funksiyalari", "blocks": [
+   {"type": "p", "text": "Hujayra qobig‘i **plazmolemma** (asosiy qism) va uning tashqi yuzasidagi **glikokaliks** (glikoprotein va glikolipidlarning uglevod zanjirlari) dan iborat. O‘simlik hujayrasida plazmolemmadan tashqarida sellyulozali hujayra devori bo‘ladi."},
+   {"type": "p", "text": "Elektron mikroskopda membrana 7,5–10 nm qalinlikdagi uch qavatli (qorong‘i–yorug‘–qorong‘i) tuzilma ko‘rinishida bo‘ladi va **universal elementar biologik membrana** deb ataladi. Hozirgi zamon **suyuq-mozaik modeli** (S. Singer va G. Nikolson, 1972) bo‘yicha membrana asosini **fosfolipidlarning qo‘sh qavati** tashkil qiladi: ularning gidrofil “boshchalari” tashqariga, gidrofob “dumlari” ichkariga qaragan. Lipid qavatga **integral** (to‘liq botgan, membranani teshib o‘tuvchi), **yarim integral** va **periferik** (yuzada joylashgan) oqsillar mozaika kabi joylashgan va lateral harakatlana oladi (Rasm 2.1). Xolesterin membrananing qovushqoqligini boshqaradi."},
+   {"type": "img", "src": "data/img/bio/t02_membrana.webp", "w": 1016, "h": 584, "lang": true, "label": "Rasm 2.1", "caption": "Plazmatik membrananing tuzilishi (suyuq-mozaik model): fosfolipid qo‘sh qavati, integral va periferik oqsillar, xolesterin, glikoproteinlarning uglevod zanjirlari (glikokaliks) va sitoskelet iplari (P.X. Xolikov va boshq., 2022)."},
+   {"type": "h", "text": "Plazmolemmaning asosiy funksiyalari"},
+   {"type": "list", "ordered": false, "items": [
+    "**To‘suvchi (baryer)** — hujayra ichki muhitini tashqi muhitdan ajratadi;",
+    "**Transport** — moddalarni tanlab o‘tkazadi;",
+    "**Retseptor** — gormonlar, mediatorlar va antigenlarni taniydi (glikokaliks);",
+    "**Hujayralararo aloqa** — kontaktlar (desmosoma, zich va tirqishli birikmalar) hosil qiladi;",
+    "**Fermentativ** — membranaga bog‘langan fermentlar (masalan, ichak epiteliysida);",
+    "**Elektrogen** — membrana potensialini hosil qiladi va nerv impulsini o‘tkazadi."
+   ]}
+  ]},
+  {"title": "3. Moddalarning membrana orqali tashilishi", "blocks": [
+   {"type": "table", "title": "Jadval 2.3. Membrana orqali transport turlari", "head": ["Turi", "Mexanizmi", "Energiya", "Misol"], "rows": [
+    ["Oddiy diffuziya", "Konsentratsiya gradiyenti bo‘yicha lipid qavat orqali", "Sarflanmaydi", "O~2~, CO~2~, steroidlar, spirt"],
+    ["Osmos", "Suvning yarim o‘tkazgich membrana orqali kam konsentratsiyali eritmadan ko‘p konsentratsiyali eritmaga o‘tishi", "Sarflanmaydi", "Suv (akvaporinlar orqali ham)"],
+    ["Yengillashgan diffuziya", "Tashuvchi oqsillar yoki ion kanallari orqali, gradiyent bo‘yicha", "Sarflanmaydi", "Glyukoza (GLUT), ionlar"],
+    ["Birlamchi faol transport", "Gradiyentga qarshi, nasos oqsillari", "ATF sarflanadi", "Na^+^/K^+^-nasos, Ca^2+^-nasos"],
+    ["Ikkilamchi faol transport", "Na^+^ gradiyenti energiyasi hisobiga (simport, antiport)", "Bilvosita ATF", "Ichakda glyukoza va aminokislotalar so‘rilishi"],
+    ["Endotsitoz", "Membrana botiqlanib, pufakcha hosil qiladi", "ATF sarflanadi", "Fagotsitoz (qattiq zarra), pinotsitoz (suyuqlik), retseptor vositali endotsitoz (LPNP)"],
+    ["Ekzotsitoz", "Pufakcha membranasi plazmolemma bilan qo‘shilib, tarkibini tashqariga chiqaradi", "ATF sarflanadi", "Gormonlar, fermentlar, mediatorlar sekretsiyasi"]
+   ]},
+   {"type": "p", "text": "**Natriy-kaliy nasosi** (Na^+^/K^+^-ATFaza) har bir ATF molekulasi hisobiga hujayradan 3 ta Na^+^ ionini chiqarib, ichkariga 2 ta K^+^ ionini kiritadi (Rasm 2.2). Natijada hujayra ichida K^+^ ko‘p, tashqarida Na^+^ ko‘p bo‘ladi; bu **tinchlik membrana potensiali**, hujayra hajmining saqlanishi va ikkilamchi faol transport uchun asos hisoblanadi. Organizm sarflaydigan energiyaning uchdan bir qismigacha shu nasos ishiga ketadi."},
+   {"type": "img", "src": "data/img/bio/t02_nasos.webp", "w": 469, "h": 533, "lang": true, "label": "Rasm 2.2", "caption": "Faol transport: natriy-kaliy nasosi. ATF energiyasi hisobiga Na^+^ ionlari hujayradan chiqariladi, K^+^ ionlari hujayraga kiritiladi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "h", "text": "Eritmalar va hujayra"},
+   {"type": "table", "title": "Jadval 2.4. Eritmalarning eritrotsitlarga ta’siri", "head": ["Eritma", "Konsentratsiyasi (NaCl)", "Suv harakati", "Natija"], "rows": [
+    ["Izotonik (fiziologik)", "0,9 %", "Muvozanatda", "Eritrotsit shakli o‘zgarmaydi"],
+    ["Gipotonik", "0,9 % dan kam", "Hujayraga kiradi", "Shishish va yorilish — **gemoliz**"],
+    ["Gipertonik", "0,9 % dan ko‘p", "Hujayradan chiqadi", "Burishish — **plazmoliz** (eritrotsitda — krenatsiya)"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Vena ichiga yuboriladigan eritmalar asosan **izotonik** (0,9 % NaCl, 5 % glyukoza) bo‘ladi. **Gipertonik** eritmalar (10 % NaCl) yiringli yaralarni tozalashda (suvni yaradan tortib oladi) va magniy sulfat surgi sifatida, **gipotonik** eritmalar esa ayrim degidratatsiya holatlarida ehtiyotkorlik bilan qo‘llaniladi."}]}
+  ]},
+  {"title": "4. Sitoplazma va membranali organoidlar", "blocks": [
+   {"type": "p", "text": "**Sitoplazma** — plazmolemma va yadro orasidagi hujayra qismi. U **gialoplazma** (sitozol — oqsil, fermentlar, ionlarga boy kolloid eritma), **organoidlar** (doimiy, ma’lum vazifa bajaruvchi tuzilmalar) va **kiritmalar** (vaqtinchalik tuzilmalar)dan iborat. Organoidlar **umumiy** (barcha hujayralarda) va **xususiy** (ayrim ixtisoslashgan hujayralarda) bo‘ladi; umumiy organoidlar o‘z navbatida membranali va membranasiz guruhlarga ajratiladi."},
+   {"type": "table", "title": "Jadval 2.5. Membranali organoidlar", "head": ["Organoid", "Ultrastrukturasi", "Funksiyasi"], "rows": [
+    ["Donador (g‘adir-budur) EPT", "Yassi sisternalar, tashqi yuzasida ribosomalar", "Eksport va membrana oqsillari sintezi"],
+    ["Silliq (agranulyar) EPT", "Naychalar tarmog‘i, ribosomasiz", "Lipid va steroid gormonlar sintezi, glikogen almashinuvi, zaharsizlantirish (jigar), Ca^2+^ to‘plash (mushak)"],
+    ["Golji majmuasi", "Yassi sisternalar to‘plami (diktiosoma) va pufakchalar; sis- va trans-yuzalar", "Oqsillarni modifikatsiyalash, saralash, sekretor granulalar va lizosomalar hosil qilish"],
+    ["Lizosomalar", "Bir membranali pufakcha, 50 dan ortiq gidrolitik ferment, nordon muhit", "Hujayra ichi hazmi, autofagiya"],
+    ["Peroksisomalar", "Bir membranali, katalaza va oksidazalar", "Vodorod peroksidni parchalash, yog‘ kislotalarini oksidlash"],
+    ["Mitoxondriyalar", "Ikki membranali; ichki membrana burmalari — kristalar; matriksda halqasimon DNK va 70S ribosomalar", "Hujayraning “energetik stansiyasi”: Krebs sikli, oksidlanishli fosforlanish, ATF sintezi"],
+    ["Plastidalar (o‘simliklarda)", "Ikki membranali; xloroplastda tilakoidlar va granalar", "Fotosintez (xloroplast), kraxmal to‘plash (leykoplast), rang berish (xromoplast)"],
+    ["Vakuolalar", "Tonoplast bilan o‘ralgan bo‘shliq", "O‘simlikda hujayra shirasi, turgor; sodda hayvonlarda hazm va qisqaruvchi vakuolalar"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t02_mitoxondriya.webp", "w": 983, "h": 775, "lang": true, "label": "Rasm 2.3", "caption": "Mitoxondriyaning tuzilishi: elektronogramma (yuqorida) va sxema — tashqi va ichki membranalar, kristalar, matriks va membranalararo bo‘shliq (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Lizosoma fermentlari irsiy yetishmasligida hazm bo‘lmagan moddalar lizosomalarda to‘planadi — **lizosomal to‘planish kasalliklari** (Gaucher, Tey-Saks, glikogenoz II turi). Mitoxondriyalar faqat ona orqali nasldan-naslga o‘tadi, shuning uchun mitoxondrial DNK mutatsiyalari faqat onadan beriladi."}]}
+  ]},
+  {"title": "5. Membranasiz organoidlar, xususiy organoidlar va kiritmalar", "blocks": [
+   {"type": "table", "title": "Jadval 2.6. Membranasiz organoidlar", "head": ["Organoid", "Tuzilishi", "Funksiyasi"], "rows": [
+    ["Ribosomalar", "Katta va kichik subbirliklar (rRNK + oqsil); eukariotlarda 80S (60S + 40S); erkin yoki EPT ga birikkan, poliribosoma", "Oqsil biosintezi (translyatsiya)"],
+    ["Hujayra markazi (sentrosoma)", "Ikki sentriola; har biri 9 ta triplet mikronaychadan (9 × 3 + 0)", "Bo‘linish duki hosil bo‘lishini boshqaradi; kiprikcha va xivchinlarning bazal tanachasi"],
+    ["Mikronaychalar", "Tubulin oqsilidan, diametri 24 nm", "Sitoskelet, bo‘linish duki, organoidlar harakati"],
+    ["Mikrofilamentlar", "Aktin iplari, diametri 6–8 nm", "Hujayra shakli, amyobasimon harakat, sitokinez"],
+    ["Oraliq filamentlar", "Diametri 10 nm (keratin, vimentin, desmin, neyrofilamentlar)", "Mexanik mustahkamlik; o‘sma kelib chiqishini aniqlashda marker"]
+   ]},
+   {"type": "p", "text": "**Xususiy organoidlar:** kiprikchalar va xivchinlar (aksonema — 9 juft periferik + 2 markaziy mikronaycha, “9 + 2”), miofibrillalar (mushak hujayralarida qisqarish), neyrofibrillalar (neyronlarda), tonofibrillalar (epiteliyda), mikrovorsinkalar (ichak epiteliysida so‘rilish yuzasini oshiradi)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Kiprikchalardagi dinein oqsilining irsiy nuqsonida (**Kartagener sindromi**) nafas yo‘llarining tozalanishi buziladi (surunkali bronxit, sinusit), spermatozoidlar harakatsiz bo‘ladi (bepushtlik) va ko‘pincha a’zolarning teskari joylashuvi kuzatiladi."}]},
+   {"type": "p", "text": "**Kiritmalar** — hujayra faoliyati natijasida paydo bo‘lib yo‘qolib turadigan tuzilmalar: **trofik** (glikogen, yog‘ tomchilari, oqsil donachalari), **sekretor** (sekret granulalari), **ekskretor** (chiqariladigan moddalar), **pigment** (melanin, gemoglobin, lipofussin — “qarilik pigmenti”)."}
+  ]},
+  {"title": "6. Yadro va xromosomalar", "blocks": [
+   {"type": "p", "text": "**Yadro** — irsiy axborotni saqlovchi va hujayra faoliyatini boshqaruvchi markaz. Interfaza yadrosi quyidagilardan iborat (Rasm 2.4): **yadro qobig‘i** (kariolemma — ikki membrana, perinuklear bo‘shliq va **yadro teshikchalari**; tashqi membrana EPT ga davom etadi), **karioplazma** (yadro shirasi), **xromatin** va **yadrocha** (rRNK sintezlanadigan va ribosoma subbirliklari yig‘iladigan joy). Yadrosiz hujayralar (yetuk eritrotsitlar) bo‘linmaydi va uzoq yashamaydi."},
+   {"type": "img", "src": "data/img/bio/t02_yadro.webp", "w": 1034, "h": 567, "lang": true, "label": "Rasm 2.4", "caption": "Yadroning tuzilishi: yadro qobig‘i va teshikchalari, xromatin, yadrocha, ribosomali endoplazmatik to‘r (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Xromatin** — DNK va giston oqsillari kompleksi. Zich bo‘yaladigan, faol bo‘lmagan qismi **geteroxromatin**, kam bo‘yaladigan, faol (transkripsiya bo‘ladigan) qismi **euxromatin** deyiladi. DNK gistonlar atrofiga o‘ralib **nukleosomalar** hosil qiladi, so‘ng ketma-ket spirallanib, mitoz vaqtida zich **xromosomalarga** aylanadi."},
+   {"type": "p", "text": "**Metafaza xromosomasi** ikki **xromatiddan** iborat bo‘lib, ular birlamchi belbog‘ — **sentromera** sohasida birikkan. Sentromera xromosomani ikki **yelkaga** ajratadi; yelkalar uchi **telomeralar** bilan tugaydi. Ayrim xromosomalarda ikkilamchi belbog‘ va **yo‘ldosh** (satellit) bo‘ladi."},
+   {"type": "table", "title": "Jadval 2.7. Sentromera holatiga ko‘ra xromosoma turlari", "head": ["Turi", "Sentromera joylashuvi", "Odamdagi misollar"], "rows": [
+    ["Metasentrik", "O‘rtada, yelkalar teng", "1, 3, 16, 19, 20-juftlar"],
+    ["Submetasentrik", "O‘rtadan siljigan, yelkalar teng emas", "2, 4–12, 17, 18-juftlar, X"],
+    ["Akrosentrik", "Bir uchiga yaqin, bir yelka juda qisqa", "13–15, 21, 22-juftlar, Y"],
+    ["Telosentrik", "Eng uchida (odamda normada uchramaydi)", "—"]
+   ]},
+   {"type": "h", "text": "Xromosomalar qoidalari"},
+   {"type": "list", "ordered": true, "items": [
+    "**Son doimiyligi** — har bir turning somatik hujayralarida xromosomalar soni doimiy (odamda 2n = 46).",
+    "**Juftlik** — somatik hujayralarda xromosomalar gomologik juftlar hosil qiladi (odamda 23 juft).",
+    "**Individuallik** — har bir juft o‘lchami, shakli va genlar tarkibi bilan boshqalaridan farq qiladi.",
+    "**Uzluksizlik** — har bir xromosoma replikatsiya orqali faqat xromosomadan hosil bo‘ladi."
+   ]},
+   {"type": "table", "title": "Jadval 2.8. O‘simlik va hayvon hujayralarining farqlari", "head": ["Belgi", "O‘simlik hujayrasi", "Hayvon hujayrasi"], "rows": [
+    ["Hujayra devori", "Sellyulozali", "Yo‘q (faqat glikokaliks)"],
+    ["Plastidalar", "Bor", "Yo‘q"],
+    ["Vakuola", "Yirik markaziy vakuola", "Mayda, vaqtinchalik vakuolalar"],
+    ["Sentriolalar", "Yuksak o‘simliklarda yo‘q", "Bor"],
+    ["Zaxira uglevod", "Kraxmal", "Glikogen"],
+    ["Oziqlanish", "Avtotrof", "Geterotrof"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: osmotik hodisalarni kuzatish", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Uchta buyum oynasiga mos ravishda 0,9 % NaCl, distillangan suv va 10 % NaCl eritmasidan 1 tomchidan tomizing.",
+    "Har bir tomchiga barmoq qonidan bir oz qo‘shing va qoplagich oyna bilan yoping.",
+    "Preparatlarni ×40 obyektivda ko‘ring.",
+    "Izotonik eritmada ikki tomoni botiq disksimon eritrotsitlarni, distillangan suvda shishgan va yorilgan (gemoliz) hujayralarni, gipertonik eritmada burishgan (tishli) eritrotsitlarni chizing.",
+    "Piyoz epidermisini 10 % NaCl ga solib plazmolizni, so‘ng suvga o‘tkazib deplazmolizni kuzating.",
+    "Natijalarni osmos qonuniyati bilan izohlang."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Eukariot hujayra qanday asosiy qismlardan iborat? Odam hujayralarining o‘lchami va shakli qanday?",
+  "Hujayraning makro-, mikro- va ultramikroelementlariga misol keltiring.",
+  "Suv va mineral tuzlarning hujayradagi roli qanday?",
+  "Oqsillarning tuzilish darajalari va funksiyalarini ayting. Oddiy va murakkab oqsillar qanday farqlanadi?",
+  "Uglevodlar va lipidlarning hujayradagi ahamiyati qanday?",
+  "Suyuq-mozaik membrana modelini tushuntiring.",
+  "Plazmolemmaning asosiy funksiyalari qaysilar?",
+  "Passiv va faol transport turlarini tavsiflang.",
+  "Natriy-kaliy nasosi qanday ishlaydi va uning ahamiyati nimada?",
+  "Endotsitoz va ekzotsitoz nima? Fagotsitoz va pinotsitoz qanday farqlanadi?",
+  "Gipo-, izo- va gipertonik eritmalar hujayraga qanday ta’sir qiladi? Ularning tibbiyotda qo‘llanilishi qanday?",
+  "Membranali organoidlarning tuzilishi va vazifalarini ayting.",
+  "Membranasiz organoidlarga qaysilar kiradi?",
+  "Kiritmalar va ularning turlari qanday?",
+  "Yadroning tuzilishi va funksiyalarini tushuntiring.",
+  "Xromosomaning tuzilishi, turlari va qoidalarini ayting."
+ ],
+ "quiz": [
+  {"q": "Membrana tuzilishining suyuq-mozaik modelini kimlar taklif qilgan?", "options": ["S. Singer va G. Nikolson", "J. Danielli va H. Dousen", "M. Shleyden va T. Shvann", "J. Uotson va F. Krik", "F. Jakob va J. Mono"], "answer": 0},
+  {"q": "Biologik membrana asosini nima tashkil qiladi?", "options": ["Fosfolipidlarning qo‘sh qavati", "Sellyuloza qatlami", "Oqsillarning qo‘sh qavati", "Glikogen to‘ri", "Xitin qatlami"], "answer": 0},
+  {"q": "Natriy-kaliy nasosi bir ATF hisobiga qancha ionni tashiydi?", "options": ["3 Na^+^ chiqaradi, 2 K^+^ kiritadi", "2 Na^+^ chiqaradi, 3 K^+^ kiritadi", "1 Na^+^ chiqaradi, 1 K^+^ kiritadi", "3 K^+^ chiqaradi, 2 Na^+^ kiritadi", "2 Na^+^ va 2 K^+^ kiritadi"], "answer": 0},
+  {"q": "Qattiq zarrachalarni hujayraga yutish qanday ataladi?", "options": ["Fagotsitoz", "Pinotsitoz", "Ekzotsitoz", "Osmos", "Diffuziya"], "answer": 0},
+  {"q": "Eritrotsitlar distillangan suvda qanday o‘zgaradi?", "options": ["Shishib yoriladi (gemoliz)", "Burishadi", "O‘zgarmaydi", "Bo‘linadi", "Yadro hosil qiladi"], "answer": 0},
+  {"q": "Qaysi eritma izotonik hisoblanadi?", "options": ["0,9 % NaCl", "10 % NaCl", "Distillangan suv", "20 % glyukoza", "3 % NaCl"], "answer": 0},
+  {"q": "Hujayraning “energetik stansiyasi” qaysi organoid?", "options": ["Mitoxondriya", "Golji majmuasi", "Lizosoma", "Ribosoma", "Silliq EPT"], "answer": 0},
+  {"q": "Oqsillarni saralash va sekretor granulalar hosil qilish qaysi organoidga xos?", "options": ["Golji majmuasi", "Mitoxondriya", "Ribosoma", "Sentrosoma", "Peroksisoma"], "answer": 0},
+  {"q": "Jigarda zaharli moddalarni zararsizlantirishda qaysi organoid ishtirok etadi?", "options": ["Silliq EPT", "Donador EPT", "Lizosoma", "Yadrocha", "Sentriola"], "answer": 0},
+  {"q": "Sentriola qanday tuzilgan?", "options": ["9 ta triplet mikronaychadan", "9 juft + 2 markaziy mikronaychadan", "Aktin iplaridan", "Ikki membranadan", "rRNK va oqsildan"], "answer": 0},
+  {"q": "Kiprikcha va xivchin aksonemasining formulasi qanday?", "options": ["9 + 2", "9 × 3 + 0", "9 + 0", "6 + 2", "12 + 1"], "answer": 0},
+  {"q": "Ribosoma subbirliklari qayerda yig‘iladi?", "options": ["Yadrochada", "Golji majmuasida", "Lizosomada", "Mitoxondriya matriksida", "Silliq EPT da"], "answer": 0},
+  {"q": "Faol, transkripsiya bo‘ladigan xromatin qanday ataladi?", "options": ["Euxromatin", "Geteroxromatin", "Nukleosoma", "Sentromera", "Telomera"], "answer": 0},
+  {"q": "Sentromerasi bir uchiga yaqin joylashgan xromosoma qanday ataladi?", "options": ["Akrosentrik", "Metasentrik", "Submetasentrik", "Telosentrik", "Disentrik"], "answer": 0},
+  {"q": "Lipofussin qanday kiritmalarga kiradi?", "options": ["Pigment", "Trofik", "Sekretor", "Ekskretor", "Zaxira uglevod"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemordan olingan qon eritmaga solindi. Undan tayyorlangan preparatda qon hujayralarining burishgan (tishli) shakli aniqlandi.", "ask": "Vaziyatni izohlang.", "answer": "Qon gipertonik eritmaga (NaCl konsentratsiyasi 0,9 % dan yuqori) solingan. Osmos qonuniga ko‘ra suv kam konsentratsiyali muhitdan (eritrotsit ichidan) ko‘p konsentratsiyali muhitga (tashqi eritmaga) chiqadi, hujayra hajmi kichrayib burishadi — plazmoliz (eritrotsitda — krenatsiya). Shu sababli vena ichiga gipertonik eritmalarni ko‘p miqdorda yuborish mumkin emas."},
+  {"title": "Masala 2", "text": "Bemordan olingan qon eritmaga solindi. Preparatda qon hujayralarining shishib yorilganligi aniqlandi.", "ask": "Vaziyatni izohlang.", "answer": "Qon gipotonik eritmaga (masalan, distillangan suvga) solingan. Suv eritrotsit ichiga kiradi, hujayra shishadi, membrana cho‘zilib yoriladi va gemoglobin tashqariga chiqadi — gemoliz. Shuning uchun dori eritmalarini suyultirish uchun distillangan suv emas, izotonik (0,9 %) NaCl ishlatiladi."},
+  {"title": "Masala 3", "text": "Jigar hujayralarining elektronogrammasida silliq endoplazmatik to‘rning keskin kengayganligi va ko‘payganligi aniqlandi. Bemor uzoq vaqt barbituratlar qabul qilgan.", "ask": "Bu o‘zgarish nima bilan bog‘liq?", "answer": "Silliq EPT membranalarida dorilar va zaharlarni zararsizlantiruvchi fermentlar (sitoxrom P450 tizimi) joylashgan. Barbituratlar uzoq qabul qilinganda bu fermentlar induksiyalanadi va ularni saqlovchi silliq EPT ham kattalashadi. Natijada dorilar tezroq parchalanadi — dori ta’siriga tolerantlik rivojlanadi."}
+ ],
+ "cards": [
+  {"front": "Plazmolemma qalinligi", "back": "7,5–10 nm; uch qavatli universal elementar membrana"},
+  {"front": "Suyuq-mozaik model", "back": "Fosfolipid qo‘sh qavati + harakatchan oqsillar (Singer va Nikolson, 1972)"},
+  {"front": "Na^+^/K^+^-nasos", "back": "1 ATF → 3 Na^+^ tashqariga, 2 K^+^ ichkariga"},
+  {"front": "Gemoliz", "back": "Gipotonik muhitda eritrotsitlarning shishib yorilishi"},
+  {"front": "Plazmoliz", "back": "Gipertonik muhitda hujayradan suv chiqib, burishishi"},
+  {"front": "Mitoxondriya", "back": "Ikki membranali; kristalar; o‘z DNK si; ATF sintezi"},
+  {"front": "Lizosoma", "back": "Gidrolitik fermentli bir membranali pufakcha; hujayra ichi hazmi"},
+  {"front": "Sentriola", "back": "9 × 3 + 0 mikronaychalar; bo‘linish dukini tashkil qiladi"},
+  {"front": "Yadrocha", "back": "rRNK sintezi va ribosoma subbirliklarining yig‘ilishi"},
+  {"front": "Akrosentrik xromosomalar", "back": "Odamda 13, 14, 15, 21, 22-juftlar va Y"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Suv har doim **konsentratsiyasi yuqori** tomonga o‘tadi: gipertonik muhitda hujayra **burishadi**, gipotonikda **shishib yoriladi**."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Natriy-kaliy nasosi — **“3 chiqar, 2 kirit”**: 3 Na^+^ tashqariga, 2 K^+^ ichkariga."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Organoid kasalliklari: lizosomal (Tey-Saks, Gaucher), mitoxondrial (faqat onadan o‘tadi), kiprikcha (Kartagener sindromi)."}
+ ]
+}

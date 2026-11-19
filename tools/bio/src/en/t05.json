@@ -1,0 +1,140 @@
+{
+ "id": "05",
+ "no": 5,
+ "title": "The chromosome theory of heredity. T.H. Morgan. Linked inheritance of genes, crossing over. Sex-linked inheritance of traits",
+ "goals": [
+  {"type": "p", "text": "To teach the student T. Morgan’s chromosome theory of heredity, complete and incomplete linkage of genes, crossing over and the determination of distances between genes, genetic maps, the genetic determination of sex and the inheritance of X- and Y-linked traits."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": [
+   "the main statements of the chromosome theory of heredity;",
+   "the concepts of linkage group and complete and incomplete linkage;",
+   "the frequency of crossing over and the concept of the morganid;",
+   "the types of sex determination (XY, XO, ZW) and the genetic basis of sex development in humans;",
+   "the features of X-linked dominant and recessive and Y-linked (holandric) inheritance."
+  ]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": [
+   "solve problems on linked genes and calculate the distance between genes;",
+   "determine the order of three genes on a chromosome from the distances between them;",
+   "solve problems on sex-linked traits (color blindness, hemophilia)."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. The chromosome theory of heredity", "blocks": [
+   {"type": "p", "text": "Mendel’s third law holds only for genes on different chromosomes. The number of genes is much greater than the number of chromosomes (in humans there are about 20 thousand protein-coding genes on 46 chromosomes), so each chromosome carries many genes. The American geneticist **T.H. Morgan** and his students (A. Sturtevant, C. Bridges, H. Muller) carried out experiments on the fruit fly (*Drosophila melanogaster*) in 1910–1916 and created the **chromosome theory of heredity**."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Drosophila is a convenient object for genetic research: it is easy to breed, one generation takes 10–12 days, it has many offspring, varied traits and few chromosomes (2n = 8)."}]},
+   {"type": "h", "text": "Main statements of the chromosome theory"},
+   {"type": "list", "ordered": true, "items": [
+    "Genes are located on chromosomes; each chromosome carries particular genes.",
+    "Genes are arranged linearly on a chromosome in a definite order; each gene has its own locus.",
+    "Genes on one chromosome form a **linkage group** and are inherited together; the number of linkage groups equals the haploid number of chromosomes (in humans 23 in women and 24 in men — X and Y separately).",
+    "Genes are exchanged between homologous chromosomes by crossing over; its frequency is directly proportional to the distance between the genes.",
+    "The karyotype of each species is specific and constant."
+   ]}
+  ]},
+  {"title": "2. Linked inheritance of genes", "blocks": [
+   {"type": "p", "text": "Morgan crossed gray-bodied long-winged (BBVV) and black-bodied short-winged (bbvv) Drosophila and obtained gray long-winged flies (BbVv) in F~1~. When he then crossed an F~1~ male with a recessive female (bbvv) (a test cross), not the 1 : 1 : 1 : 1 expected by Mendel appeared, but only the two parental phenotypes in a 1 : 1 ratio (Figure 5.1). Hence the B and V genes lie on one chromosome and are inherited **completely linked**."},
+   {"type": "img", "src": "data/img/bio/t05_drozofila.webp", "w": 895, "h": 678, "lang": true, "label": "Figure 5.1", "caption": "Completely linked inheritance of the body color and wing length genes in Drosophila: B — gray body, b — black body, V — normal wings, v — short (vestigial) wings (P.Kh. Kholikov et al., 2022)."},
+   {"type": "p", "text": "If an F~1~ **female** is used for the test cross, then besides the parental-type flies a small number (8.5 % each) of new combinations appear — gray short-winged and black long-winged (**crossover**, recombinant) flies: 41.5 % : 41.5 % : 8.5 % : 8.5 %. This is **incomplete linkage**, and its cause is crossing over during meiosis in the female Drosophila (there is no crossing over in the male Drosophila)."},
+   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Notation of linked genes: alleles on one chromosome are written on one side of the fraction line — **AB/ab** (cis position, dominant alleles on one chromosome) or **Ab/aB** (trans position, dominant alleles on different chromosomes)."}]}
+  ]},
+  {"title": "3. Crossing over and genetic maps", "blocks": [
+   {"type": "p", "text": "**Crossing over** is the exchange of equal segments between chromatids of homologous chromosomes in prophase I of meiosis (pachytene) (Figure 5.2). It breaks linkage groups, creates new combinations of genes and is a source of combinative variability."},
+   {"type": "img", "src": "data/img/bio/t05_krossingover.webp", "w": 930, "h": 600, "label": "Figure 5.2", "caption": "Crossing over between homologous chromosomes: I — before crossing over; II — crossing over; III — recombinant chromatids after crossing over (P.Kh. Kholikov et al., 2022)."},
+   {"type": "p", "text": "The **distance between genes** is measured by the frequency of crossing over: **1 % crossing over = 1 morganid (centimorgan, cM)**. The recombination frequency (rf) is calculated as follows:"},
+   {"type": "p", "text": "rf (%) = (number of crossover individuals / total number of offspring) × 100"},
+   {"type": "p", "text": "For example, in the experiment above crossover flies make up 8.5 % + 8.5 % = 17 %, so the distance between the B and V genes is 17 morganids. The greater the distance, the more crossing over occurs; but the frequency of crossing over does not exceed 50 % (at 50 % the genes appear to be inherited independently)."},
+   {"type": "p", "text": "A **genetic map** is a diagram of the order of genes on a chromosome and the relative distances between them. Knowing the distances between three genes, their order can be determined: the largest distance lies between the outer genes and equals the sum of the other two distances (Figure 5.3)."},
+   {"type": "img", "src": "data/img/bio/t05_xarita.webp", "w": 845, "h": 268, "label": "Figure 5.3", "caption": "Constructing a gene map: 1.5 % crossing over between A and B, 3.5 % between B and C, 5.0 % between C and D; the distance A–D equals 10.0 % (numbers are the percentage of crossing over between genes) (P.Kh. Kholikov et al., 2022)."},
+   {"type": "p", "text": "A complete map of the human genome has now been made: **genetic (recombination)** maps are built by studying crossing over in families, and **physical** maps by hybridization, FISH and DNA sequencing. They are used to find the genes of hereditary diseases and in prenatal diagnosis."}
+  ]},
+  {"title": "4. Genetics of sex", "blocks": [
+   {"type": "p", "text": "Sex is the set of traits that ensure the reproductive function of an organism; it is determined by the **sex chromosomes** (heterochromosomes). The other chromosomes are called **autosomes**. The human karyotype: in women 44 autosomes + XX (46,XX), in men 44 autosomes + XY (46,XY). The sex with identical sex chromosomes is **homogametic** (one kind of gamete), and the sex with different ones is **heterogametic**."},
+   {"type": "table", "title": "Table 5.1. Types of sex determination", "head": ["Type", "Female", "Male", "Heterogametic sex", "Organisms"], "rows": [
+    ["XY", "XX", "XY", "Male", "Mammals, humans, Drosophila"],
+    ["ZW (XY)", "ZW", "ZZ", "Female", "Birds, butterflies, some fish and reptiles"],
+    ["XO", "XX", "XO", "Male", "Grasshoppers, dragonflies, bugs"],
+    ["ZO", "ZO", "ZZ", "Female", "Moths, some butterflies"],
+    ["Haplo-diploid", "Diploid (2n)", "Haploid (n)", "—", "Honeybees, ants"]
+   ]},
+   {"type": "p", "text": "In humans sex is determined **at fertilization**: if an X-bearing sperm fertilizes the egg, a girl (XX) is born, and if a Y-bearing sperm does, a boy (XY); the theoretical ratio is 1 : 1. Male development is determined by the **SRY gene** on the Y chromosome (the testis-determining factor). That is why a person with the karyotype 47,XXY has a male phenotype and a person with 45,X a female phenotype."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Disorders of sexual differentiation: 46,XX male syndrome when the SRY gene has moved to the X chromosome; female phenotype in a person with the 46,XY karyotype in androgen receptor deficiency (**testicular feminization syndrome**). In such cases the karyotype and sex chromatin are examined to determine sex."}]}
+  ]},
+  {"title": "5. Inheritance of sex-linked traits", "blocks": [
+   {"type": "p", "text": "Traits determined by genes located on the sex chromosomes are called **sex-linked** traits. In males the genes on the X chromosome are unpaired (**hemizygous**), so even a recessive allele is always expressed in a male."},
+   {"type": "table", "title": "Table 5.2. Types of sex-linked inheritance", "head": ["Type", "Features", "Examples"], "rows": [
+    ["X-linked recessive", "Mainly males are affected; all daughters of an affected man are carriers; 50 % of the sons of a carrier mother are affected; not passed from father to son", "Hemophilia A and B, color blindness, Duchenne muscular dystrophy, G6PD deficiency"],
+    ["X-linked dominant", "Women are affected 2 times more often than men; all daughters of an affected father are affected, his sons are healthy", "Vitamin D–resistant rickets (hypophosphatemia), dark enamel of the teeth"],
+    ["Y-linked (holandric)", "Only in males, passed from father to all sons", "Hypertrichosis of the ear pinna, webbing between the toes, some forms of azoospermia"]
+   ]},
+   {"type": "p", "text": "In the example of **color blindness**: X^D^ — normal vision, X^d^ — color blindness. In a marriage of a carrier woman (X^D^X^d^) and a healthy man (X^D^Y), all daughters have normal vision (50 % of them carriers) and 50 % of the sons are color-blind. **Hemophilia** is inherited in the same way; its spread among the descendants of Queen Victoria of Great Britain is a famous example."},
+   {"type": "p", "text": "**Sex-limited (sex-influenced) traits** are determined by genes on autosomes but are expressed only in one sex or differently in the two sexes (under the influence of sex hormones): male-pattern baldness (androgenetic alopecia) — dominant in men and recessive in women; development of the mammary glands, beard growth, pitch of the voice."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "An X-linked recessive disease is **never passed from father to son**, because a son receives the Y chromosome from his father. The carrier of an affected son is always the mother."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: building a genetic map from the distances between three genes", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Write the percentage of crossing over between each pair of genes (for example, A–B = 12 %, B–C = 5 %, A–C = 7 %).",
+    "Find the largest distance — these are the two outer genes (A and B).",
+    "The third gene (C) lies between them: check that 7 % + 5 % = 12 %.",
+    "Draw the map: A — 7 cM — C — 5 cM — B.",
+    "If the sum of the smaller distances is slightly larger than the large distance, explain it by double crossing over."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Why did Morgan choose Drosophila as his research object?",
+  "Name the main statements of the chromosome theory of heredity.",
+  "What is a linkage group? How many linkage groups are there in humans?",
+  "How do complete and incomplete linkage differ?",
+  "When and how does crossing over occur? What is its importance?",
+  "How is the distance between genes determined? What is a morganid?",
+  "How is a genetic map built?",
+  "What types of sex determination do you know?",
+  "When and how is sex determined in humans? What is the role of the SRY gene?",
+  "Name the features of X-linked recessive inheritance.",
+  "Give examples of X-linked dominant and Y-linked inheritance.",
+  "How do sex-limited (sex-influenced) traits differ from sex-linked traits?",
+  "What conclusions follow from the study of the chromosome theory?"
+ ],
+ "quiz": [
+  {"q": "Who created the chromosome theory of heredity?", "options": ["T. Morgan", "G. Mendel", "Ch. Darwin", "H. de Vries", "N.I. Vavilov"], "answer": 0},
+  {"q": "What does the number of linkage groups equal?", "options": ["The haploid number of chromosomes", "The diploid number of chromosomes", "The number of genes", "The number of autosome pairs plus two", "The number of alleles"], "answer": 0},
+  {"q": "How many linkage groups does a human male have?", "options": ["24", "23", "46", "22", "44"], "answer": 0},
+  {"q": "What is 1 morganid equal to?", "options": ["1 % crossing over", "A distance of 1 µm", "1000 nucleotides", "1 gene", "10 % crossing over"], "answer": 0},
+  {"q": "The frequency of crossing over does not exceed which value?", "options": ["50 %", "25 %", "75 %", "100 %", "10 %"], "answer": 0},
+  {"q": "Distances between genes: A–B = 8 %, B–C = 3 %, A–C = 5 %. What is the order of the genes?", "options": ["A–C–B", "A–B–C", "B–A–C", "C–A–B", "Cannot be determined"], "answer": 0},
+  {"q": "At which stage of meiosis does crossing over occur?", "options": ["In pachytene", "In leptotene", "In metaphase I", "In anaphase II", "In interkinesis"], "answer": 0},
+  {"q": "In birds, which sex is heterogametic?", "options": ["Female (ZW)", "Male (XY)", "Male (ZZ)", "Both", "Neither"], "answer": 0},
+  {"q": "Which gene starts the development of the male sex in humans?", "options": ["SRY on the Y chromosome", "XIST on the X chromosome", "Rh on chromosome 1", "ABO on chromosome 9", "p53 on chromosome 17"], "answer": 0},
+  {"q": "How is hemophilia inherited?", "options": ["X-linked recessive", "X-linked dominant", "Autosomal dominant", "Y-linked", "Autosomal recessive"], "answer": 0},
+  {"q": "What are the daughters of a color-blind man and a healthy (non-carrier) woman like?", "options": ["All are carriers", "All are color-blind", "50 % are color-blind", "All healthy, not carriers", "25 % are carriers"], "answer": 0},
+  {"q": "Which trait is inherited as Y-linked?", "options": ["Hypertrichosis of the ear pinna", "Color blindness", "Hemophilia", "Vitamin D–resistant rickets", "Duchenne dystrophy"], "answer": 0},
+  {"q": "In X-linked dominant inheritance, what are the children of an affected father like?", "options": ["All daughters affected, sons healthy", "All sons affected, daughters healthy", "All affected", "All healthy", "50 % of sons affected"], "answer": 0},
+  {"q": "Which term is used for the genes on the X chromosome in males?", "options": ["Hemizygous", "Homozygous", "Heterozygous", "Diploid", "Polyploid"], "answer": 0},
+  {"q": "Androgenetic baldness is an example of which kind of trait?", "options": ["A sex-influenced autosomal trait", "A Y-linked trait", "An X-linked recessive trait", "A mitochondrial trait", "A chromosomal disease"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Case 1", "text": "In humans the gene for color vision (D, dominant) and the gene for color blindness (d, recessive) are on the X chromosome. A color-blind daughter was born to a color-blind man and a woman with normal vision.", "ask": "Determine the genotypes of the parents.", "answer": "The color-blind daughter is X^d^X^d^ — she received one X^d^ from the father and the other from the mother. The father is color-blind — X^d^Y. The mother has normal vision but passed on X^d^, so she is a carrier — X^D^X^d^. In this family 50 % of both daughters and sons may be color-blind."},
+  {"title": "Case 2", "text": "Hypertrichosis (hair growth on the ear pinna) is Y-linked, and one form of ichthyosis is an X-linked recessive trait. A child with ichthyosis was born in the family of a woman healthy for both traits and a man with hypertrichosis.", "ask": "Can this child have hypertrichosis? What is the child’s sex?", "answer": "Ichthyosis is X-linked recessive; from healthy parents an affected child can only be a son (X^i^Y) who received X^i^ from a carrier mother (the father is X^I^Y, so his daughters cannot be affected). Since the child is a boy, he received the Y chromosome carrying the hypertrichosis gene from his father — he will have both ichthyosis and (at puberty) hypertrichosis."},
+  {"title": "Case 3", "text": "In humans cataract (A) and polydactyly (B) are determined by dominant genes completely linked on one autosome (no crossing over). The woman and the man are both diheterozygous; in each case the father had cataract and the mother had polydactyly.", "ask": "What will be the genotypes and phenotypes of the children?", "answer": "Each parent received the Ab chromosome from the father and aB from the mother, i.e., is a diheterozygote in the trans position Ab/aB. Without crossing over each forms only Ab and aB gametes. F~1~: Ab/Ab (cataract only) — 25 %, Ab/aB (cataract + polydactyly) — 50 %, aB/aB (polydactyly only) — 25 %. A healthy child (ab/ab) will not be born."}
+ ],
+ "cards": [
+  {"front": "Linkage group", "back": "Genes on one chromosome inherited together; their number = n"},
+  {"front": "Complete linkage", "back": "No crossing over; only parental combinations (male Drosophila)"},
+  {"front": "Crossing over", "back": "Exchange of segments between homologous chromatids in pachytene"},
+  {"front": "Morganid (cM)", "back": "Unit of genetic distance equal to 1 % crossing over"},
+  {"front": "Formula of rf", "back": "Crossovers / total offspring × 100 %; does not exceed 50 %"},
+  {"front": "Homogametic sex", "back": "Sex with identical sex chromosomes (female in humans — XX)"},
+  {"front": "SRY gene", "back": "On the Y chromosome; starts the development of the testes and the male sex"},
+  {"front": "Hemizygous", "back": "Unpaired state of X chromosome genes in males"},
+  {"front": "X-linked recessive", "back": "Hemophilia, color blindness, Duchenne dystrophy; not passed from father to son"},
+  {"front": "Holandric trait", "back": "Y-linked; from father to all sons (ear hypertrichosis)"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "The greater the distance between genes, the more crossing over; **1 % = 1 morganid**, maximum crossing over — **50 %**."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "X-recessive: **“Mother gives, son suffers”**; Y-linked: **“From father to every son”**."},
+  {"kind": "klinik", "label": "Clinical significance", "text": "In a family where a boy with hemophilia or Duchenne dystrophy is born, the mother is considered a carrier; the risk for later sons is 50 %, which is taken into account in genetic counseling."}
+ ]
+}

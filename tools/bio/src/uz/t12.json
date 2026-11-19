@@ -1,0 +1,135 @@
+{
+ "id": "12",
+ "no": 12,
+ "title": "So‘rg‘ichlilar — odam parazitlari: jigar qurti, lansetsimon so‘rg‘ich, mushuk, o‘pka va qon so‘rg‘ichlilari. Tasmasimon chuvalchanglar — odam parazitlari: cho‘chqa va qoramol solityori, pakana gijja, keng lentasimon chuvalchang, exinokokk, alveokokk",
+ "goals": [
+  {"type": "p", "text": "Talabaga yassi chuvalchanglar tipining umumiy tavsifini, so‘rg‘ichlilar va tasmasimon chuvalchanglar sinflarining tuzilishi va rivojlanish xususiyatlarini hamda odamda parazitlik qiluvchi trematodalar va sestodalarning hayot sikli, yuqish yo‘llari, patogen ta’siri, tashxisi va profilaktikasini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "yassi chuvalchanglarning umumiy belgilarini va lichinka davrlarini (miratsidiy, sporotsista, rediya, serkariya, metaserkariya, adoleskariya; onkosfera, finna turlari);",
+   "fassiolyoz, dikroselioz, opistorxoz, paragonimoz va shistosomozlar qo‘zg‘atuvchilarini;",
+   "teniaz, teniarinxoz, sistiserkoz, gimenolepidoz, difillobotrioz, exinokokkoz va alveokokkozni;",
+   "cho‘chqa va qoramol solityorlarining farqlarini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "preparatda so‘rg‘ichlilar va tasmasimon chuvalchanglarni aniqlash;",
+   "yetilgan bo‘g‘im (proglottida) bo‘yicha solityor turini aniqlash;",
+   "har bir gelmintoz uchun xo‘jayinlar, invazion davr va yuqish yo‘lini ko‘rsatish."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Yassi chuvalchanglar tipi. So‘rg‘ichlilar sinfi", "blocks": [
+   {"type": "p", "text": "**Yassi chuvalchanglar (Plathelminthes)** — tanasi orqa-qorin tomondan yassilangan, ikki tomonlama simmetriyali, uch qavatli hayvonlar. Tana bo‘shlig‘i yo‘q — a’zolar orasini **parenxima** to‘ldiradi. Tanasi **teri-muskul xaltasi** bilan qoplangan. Hazm sistemasi berk (orqa teshik yo‘q, tasmasimonlarda butunlay yo‘q), ayiruv sistemasi — **protonefridiylar**, nerv sistemasi — juft bosh gangliysi va nerv tanalari. Ko‘pchiligi **germafrodit**. Tibbiyot uchun so‘rg‘ichlilar (**Trematoda**) va tasmasimonlar (**Cestoda**) sinflari ahamiyatli."},
+   {"type": "p", "text": "**So‘rg‘ichlilar sinfi** — barglarsimon, tanasida **og‘iz** va **qorin so‘rg‘ichlari** bo‘lgan parazitlar; ichagi ikki shoxli, berk. Rivojlanishi xo‘jayin almashinuvi bilan kechadi: asosiy xo‘jayin — umurtqali hayvon yoki odam, birinchi oraliq xo‘jayin — doimo **mollyuska**. Lichinka davrlari: tuxum → **miratsidiy** (kiprikli, suvda suzadi) → **sporotsista** → **rediya** → **serkariya** (dumli, mollyuskadan chiqadi) → **metaserkariya** yoki **adoleskariya** (invazion davr)."},
+   {"type": "table", "title": "Jadval 12.1. Odamda parazitlik qiluvchi so‘rg‘ichlilar", "head": ["Parazit (kasallik)", "Lokalizatsiyasi", "Asosiy xo‘jayin", "Oraliq xo‘jayinlar", "Odamga yuqishi"], "rows": [
+    ["Jigar qurti — *Fasciola hepatica* (fassiolyoz)", "Jigar o‘t yo‘llari, o‘t pufagi", "O‘txo‘r hayvonlar (qo‘y, sigir), kam hollarda odam", "Kichik suv shilliqqurti (*Lymnaea truncatula*)", "Adoleskariyali suv o‘tlari, xom suv"],
+    ["Lansetsimon so‘rg‘ich — *Dicrocoelium lanceatum* (dikroselioz)", "Jigar o‘t yo‘llari", "O‘txo‘r hayvonlar", "1 — quruqlik mollyuskasi, 2 — chumolilar", "Metaserkariyali chumolini tasodifan yutish"],
+    ["Mushuk so‘rg‘ichi — *Opisthorchis felineus* (opistorxoz)", "Jigar o‘t yo‘llari, o‘t pufagi, me’da osti bezi yo‘llari", "Odam, mushuk, it, baliqxo‘r hayvonlar", "1 — *Bithynia* mollyuskasi, 2 — karpsimon baliqlar", "Metaserkariyali chala pishgan, yengil tuzlangan baliq"],
+    ["O‘pka so‘rg‘ichi — *Paragonimus westermani* (paragonimoz)", "O‘pka", "Odam, mushuksimonlar", "1 — mollyuska, 2 — chuchuk suv krablari va qisqichbaqalari", "Chala pishgan krab, qisqichbaqa"],
+    ["Qon so‘rg‘ichlilari — *Schistosoma haematobium, S. mansoni, S. japonicum* (shistosomozlar)", "Kichik chanoq, siydik pufagi va ichak venalari", "Odam (ayrim jinsli!)", "Chuchuk suv mollyuskalari", "Serkariyalar suvda **teri orqali faol** kiradi"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t12_fassiola.webp", "w": 675, "h": 502, "lang": true, "label": "Rasm 12.1", "caption": "Jigar qurti — *Fasciola hepatica* ning rivojlanish sikli: asosiy xo‘jayin (o‘txo‘r sut emizuvchilar va odam), suvda miratsidiy, oraliq xo‘jayin — kichik suv shilliqqurtida rivojlanish, serkariya va o‘simliklarga yopishgan adoleskariya (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Opistorxoz** Ob-Irtish havzasi (G‘arbiy Sibir), Volga, Dnepr bo‘ylarida keng tarqalgan. Odam metaserkariyali karpsimon baliqlarni (zog‘ora, cho‘rtan, tobonbaliq) chala pishirib yoki yengil tuzlab yeganda yuqtiradi (Rasm 12.2). Parazit o‘t yo‘llari va me’da osti bezi yo‘llarini shikastlab, xolangit, xoletsistit, pankreatit, jigar sirrozi va **xolangiokarsinoma** xavfini oshiradi. Tashxis — najas va o‘n ikki barmoq ichak suyuqligida mayda (≈ 30 mkm) qopqoqli tuxumlar."},
+   {"type": "img", "src": "data/img/bio/t12_opistorx.webp", "w": 1220, "h": 710, "lang": true, "label": "Rasm 12.2", "caption": "Mushuk so‘rg‘ichi — *Opisthorchis felineus*: A — morfologik tuzilishi (ichak shoxlari, sariqdon, bachadon, tuxumdon, urug‘ qabul qiluvchi pufakcha, urug‘donlar); B — rivojlanish sikli: asosiy xo‘jayin, birinchi oraliq xo‘jayin — Bithynia mollyuskasi, ikkinchi oraliq xo‘jayin — karp baliqlari (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Tranzit tuxumlar:** fassiola bilan zararlangan hayvon jigarini (masalan, jigar kabobni) yegan odam najasida 1–2 kun davomida jigar qurti tuxumlari topilishi mumkin — bu **soxta fassiolyoz**. Haqiqiy kasallikni farqlash uchun bemor 3–5 kun jigarsiz parhezdan keyin qayta tekshiriladi."}]}
+  ]},
+  {"title": "2. Tasmasimon chuvalchanglar sinfi", "blocks": [
+   {"type": "p", "text": "**Tasmasimon chuvalchanglar (Cestoda)** — tanasi lentasimon, **skoleks** (boshcha — so‘rg‘ichlar, ba’zan ilmoqlar yoki so‘rg‘ich yoriqlari — botriyalar bilan), **bo‘yin** (o‘sish zonasi) va **strobila** (bo‘g‘imlar — proglottidalar zanjiri)dan iborat. Hazm sistemasi yo‘q — oziq moddalarni butun tana yuzasi orqali so‘radi. Har bir bo‘g‘im germafrodit: yosh bo‘g‘imlarda jinsiy a’zolar shakllanadi, **germafrodit** bo‘g‘imlarda urug‘lanish bo‘ladi, **yetilgan** bo‘g‘imlarda faqat tuxumlarga to‘la bachadon qoladi."},
+   {"type": "p", "text": "Tuxum ichida olti ilmoqli embrion — **onkosfera** bo‘ladi. Oraliq xo‘jayinda onkosferadan lichinka — **finna** rivojlanadi. Finna turlari: **sistitserk** (ichida bitta skoleksli pufakcha — solityorlarda), **sistitserkoid** (dumli, pakana gijjada), **exinokokk pufagi** (ko‘p skoleksli, qiz pufakchali), **alveokokk** (ko‘p mayda pufakchalar to‘plami, o‘smasimon o‘sadi), **protserkoid** va **plerotserkoid** (keng lentasimon chuvalchangda)."},
+   {"type": "table", "title": "Jadval 12.2. Odamda parazitlik qiluvchi tasmasimon chuvalchanglar", "head": ["Parazit (kasallik)", "Asosiy xo‘jayin", "Oraliq xo‘jayin", "Odamga yuqishi", "Tashxisi"], "rows": [
+    ["Cho‘chqa solityori — *Taenia solium* (teniaz; sistitserkoz)", "Odam", "Cho‘chqa, **odam ham** (sistitserkoz)", "Finnali chala pishgan cho‘chqa go‘shti (teniaz); tuxumlar yoki autoinvaziya (sistitserkoz)", "Najasda bo‘g‘imlar; sistitserkozda KT/MRT, serologiya"],
+    ["Qoramol solityori — *Taeniarhynchus saginatus* (teniarinxoz)", "Odam", "Qoramol", "Finnali chala pishgan mol go‘shti", "Faol chiqqan bo‘g‘imlar, perianal qirindida tuxumlar"],
+    ["Pakana gijja — *Hymenolepis nana* (gimenolepidoz)", "Odam (asosan bolalar)", "Shu odamning o‘zi (ichak vorsinkalarida sistitserkoid)", "Kontakt-maishiy, iflos qo‘l orqali tuxumlar; autoreinvaziya", "Najasda tuxumlar"],
+    ["Keng lentasimon chuvalchang — *Diphyllobothrium latum* (difillobotrioz)", "Odam, baliqxo‘r hayvonlar", "1 — eshkakoyoqli qisqichbaqasimonlar (siklop), 2 — yirtqich baliqlar (cho‘rtan, olabug‘a)", "Plerotserkoidli chala pishgan baliq, ikra", "Najasda qopqoqli tuxumlar; B~12~-tanqislik anemiyasi"],
+    ["*Echinococcus granulosus* (exinokokkoz)", "It, bo‘ri, chiyabo‘ri", "Qo‘y, qoramol, cho‘chqa, tuya va **odam**", "Itlardan tuxumlar (yung, iflos qo‘l)", "UTT, KT, serologiya (punksiya taqiqlanadi!)"],
+    ["*Alveococcus multilocularis* (alveokokkoz)", "Tulki, it, mushuk", "Kemiruvchilar va odam", "Tulki terisi, yovvoyi rezavorlar orqali tuxumlar", "UTT, KT, serologiya"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t12_tenia.webp", "w": 680, "h": 755, "lang": true, "label": "Rasm 12.3", "caption": "Cho‘chqa solityori — *Taenia solium* ning rivojlanish sikli: odam ichagida voyaga yetgan chuvalchang, najas bilan chiqqan yetilgan bo‘g‘imlar va tuxumlar, oraliq xo‘jayin — cho‘chqa mushaklarida sistitserklar (finnalar) (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 12.3. Cho‘chqa va qoramol solityorlarining farqlari", "head": ["Belgi", "*Taenia solium*", "*Taeniarhynchus saginatus*"], "rows": [
+    ["Uzunligi", "2–3 m", "4–10 m va undan ortiq"],
+    ["Skoleks", "4 so‘rg‘ich va ilmoqlar toji (“qurollangan”)", "Faqat 4 so‘rg‘ich (“qurollanmagan”)"],
+    ["Tuxumdon", "Uch bo‘lakli", "Ikki bo‘lakli"],
+    ["Yetilgan bo‘g‘im bachadonining yon shoxlari", "7–12 juft", "17–35 juft"],
+    ["Bo‘g‘imlarning chiqishi", "Najas bilan passiv, bir nechtadan zanjir holida", "Faol, yakka-yakka (orqa teshikdan o‘zi chiqadi)"],
+    ["Odamda finna (sistitserkoz)", "Rivojlanadi — miya, ko‘z, mushaklarda (xavfli!)", "Rivojlanmaydi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Sistitserkoz** — teniaz bilan og‘rigan odamning o‘zi tuxumlarni yutganda (iflos qo‘l, qusishda yetilgan bo‘g‘imlarning me’daga tushishi — autoinvaziya) yoki boshqalarga yuqtirganda rivojlanadi. Miyada joylashgan sistitserklar tutqanoq va gidrotsefaliyaga sabab bo‘ladi. Shuning uchun teniaz bilan og‘rigan bemorni zudlik bilan davolash va atrofdagilarni tekshirish shart."}]}
+  ]},
+  {"title": "3. Exinokokk va alveokokk", "blocks": [
+   {"type": "p", "text": "**Exinokokk** (*Echinococcus granulosus*) — uzunligi 3–6 mm, 3–4 bo‘g‘imli mayda tasmasimon chuvalchang; skoleksida 4 so‘rg‘ich va ilmoqlar bor. Voyaga yetgan davri **it**, bo‘ri, chiyabo‘ri ichagida yashaydi. Tuxumlari najas bilan chiqib, itning yungi, o‘t, suv, sabzavotlarni ifloslaydi. Oraliq xo‘jayinlar — qo‘y, qoramol, tuya, cho‘chqa va **odam**: ichakda onkosferalar chiqib, qon orqali **jigar** (≈ 70 %), **o‘pka** (≈ 20 %) va boshqa a’zolarga boradi va u yerda sekin o‘suvchi **exinokokk pufagi** (gidatida) hosil bo‘ladi (Rasm 12.4)."},
+   {"type": "img", "src": "data/img/bio/t12_exinokokk.webp", "w": 864, "h": 421, "lang": true, "label": "Rasm 12.4", "caption": "*Echinococcus granulosus* ning rivojlanish sikli: asosiy xo‘jayin — it (ichakda voyaga yetgan chuvalchang), tuxumlar tashqi muhitda, oraliq xo‘jayinlar (qo‘y, cho‘chqa, qoramol, odam) jigar va o‘pkasida exinokokk pufaklari; itlar zararlangan ichki a’zolarni yeganda yuqadi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "Exinokokk pufagi tashqi xitinsimon va ichki **embrional (germinativ)** qobiqdan iborat; ichi suyuqlik, **qiz pufaklar** va ko‘plab skolekslar (“gidatid qumi”) bilan to‘la. Pufak atrofidagi to‘qimani siqib, a’zo funksiyasini buzadi; yorilganda anafilaktik shok va ko‘plab yangi pufaklar paydo bo‘lishi mumkin. Davolash asosan jarrohlik yo‘li bilan."},
+   {"type": "p", "text": "**Alveokokk** (*Alveococcus multilocularis*) — asosiy xo‘jayinlari tulki, qutb tulkisi, it; finnasi mayda pufakchalar to‘plamidan iborat bo‘lib, jigarda **o‘sma kabi infiltrativ o‘sadi** va metastaz beradi; exinokokkozdan og‘irroq kechadi. Odam tulki terisini qayta ishlaganda, yovvoyi rezavorlarni yuvmay yeganda yuqtiradi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Exinokokkozda **odam — biologik boshi berk ko‘cha (tupik)**: odamdagi pufaklardan parazit boshqa xo‘jayinga o‘tmaydi. Odam faqat **tuxumlarni yutib** yuqtiradi; chala pishgan go‘sht yoki jigar yeganda exinokokkoz yuqmaydi. Profilaktika: itlarni muntazam degelmintizatsiya qilish, so‘yilgan hayvonlarning zararlangan ichki a’zolarini itlarga bermaslik, it bilan muloqotdan keyin qo‘l yuvish."}]}
+  ]},
+  {"title": "4. Pakana gijja va keng lentasimon chuvalchang", "blocks": [
+   {"type": "p", "text": "**Pakana gijja** (*Hymenolepis nana*) — uzunligi 1–5 sm; odam ham asosiy, ham oraliq xo‘jayin. Tuxumlar yutilgach, ingichka ichak vorsinkalarida **sistitserkoid** rivojlanadi, so‘ng u ichak bo‘shlig‘iga chiqib voyaga yetadi. Bir odam organizmida yuzlab va minglab parazitlar to‘planishi mumkin (**autoreinvaziya**). Asosan bolalar muassasalarida kontakt-maishiy yo‘l bilan tarqaladi."},
+   {"type": "p", "text": "**Keng lentasimon chuvalchang** (*Diphyllobothrium latum*) — odamdagi eng uzun gijja (10 m va undan ortiq); skoleksida ikkita so‘rg‘ich yorig‘i (**botriya**) bor; bo‘g‘imlari eni bo‘yidan katta, bachadoni rozetkasimon. Rivojlanishi suvda: tuxumdan **koratsidiy** chiqadi → 1-oraliq xo‘jayin (siklop) da **protserkoid** → 2-oraliq xo‘jayin (yirtqich baliq) mushaklari va ikrasida **plerotserkoid** → odam chala pishgan baliq yoki tuzlangan ikra yeganda yuqtiradi. Parazit ichakda B~12~ vitaminini o‘ziga tortib, **B~12~-tanqislik (megaloblast) anemiyasiga** sabab bo‘ladi."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: yetilgan bo‘g‘im bo‘yicha solityor turini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Najasdan ajratilgan bo‘g‘imni suv bilan yuving va ikki buyum oynasi orasiga qisib qo‘ying.",
+    "Yorug‘likka tutib yoki lupa ostida bachadonning markaziy poyasi va yon shoxlarini ko‘ring (zarur bo‘lsa, siyoh yoki karmin yuboriladi).",
+    "Bir tomondagi yon shoxlar sonini sanang.",
+    "7–12 ta bo‘lsa — *Taenia solium*, 17–35 ta bo‘lsa — *Taeniarhynchus saginatus* deb xulosa qiling.",
+    "Ehtiyot choralariga rioya qiling: cho‘chqa solityori tuxumlari odam uchun xavfli (sistitserkoz) — qo‘lqop bilan ishlang, materialni zararsizlantiring."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Yassi chuvalchanglar tipiga umumiy tavsif bering.",
+  "So‘rg‘ichlilar sinfining tuzilishi va lichinka davrlarini ayting.",
+  "Jigar qurtining tuzilishi, rivojlanish sikli, yuqish yo‘llari, tashxisi va profilaktikasini tushuntiring.",
+  "Mushuk so‘rg‘ichining rivojlanish sikli va opistorxozning profilaktikasi qanday?",
+  "Lansetsimon so‘rg‘ich odamga qanday yuqadi?",
+  "O‘pka so‘rg‘ichi va qon so‘rg‘ichlilarining tibbiy ahamiyati qanday?",
+  "Tasmasimon chuvalchanglar sinfiga tavsif bering. Finna turlarini ayting.",
+  "Cho‘chqa va qoramol solityorlari qanday farqlanadi?",
+  "Sistitserkoz qanday rivojlanadi va nima uchun xavfli?",
+  "Keng lentasimon chuvalchangning rivojlanish sikli va patogen ta’siri qanday?",
+  "Pakana gijjaning rivojlanishi va tarqalish xususiyatlarini ayting.",
+  "Exinokokk va alveokokkning rivojlanish sikli, tashxisi va profilaktikasini tushuntiring."
+ ],
+ "quiz": [
+  {"q": "Jigar qurtining oraliq xo‘jayini kim?", "options": ["Kichik suv shilliqqurti (Lymnaea truncatula)", "Bithynia mollyuskasi", "Chumoli", "Karp baliq", "Siklop"], "answer": 0},
+  {"q": "Jigar qurtining odam uchun invazion davri qaysi?", "options": ["Adoleskariya", "Miratsidiy", "Rediya", "Sporotsista", "Onkosfera"], "answer": 0},
+  {"q": "Lansetsimon so‘rg‘ichning ikkinchi oraliq xo‘jayini kim?", "options": ["Chumolilar", "Baliqlar", "Krablar", "Siklop", "Cho‘chqa"], "answer": 0},
+  {"q": "Opistorxoz odamga qanday yuqadi?", "options": ["Chala pishgan karpsimon baliq orqali", "Xom suv orqali", "Mol go‘shti orqali", "Teri orqali", "Chivin chaqishi orqali"], "answer": 0},
+  {"q": "Qaysi so‘rg‘ichlilar ayrim jinsli va odamga teri orqali faol kiradi?", "options": ["Shistosomalar", "Fassiola", "Opistorx", "Dikroselium", "Paragonimus"], "answer": 0},
+  {"q": "Tasmasimon chuvalchanglarning olti ilmoqli embrioni qanday ataladi?", "options": ["Onkosfera", "Miratsidiy", "Serkariya", "Koratsidiy", "Sistitserk"], "answer": 0},
+  {"q": "Skoleksida ilmoqlar toji bo‘lgan solityor qaysi?", "options": ["Taenia solium", "Taeniarhynchus saginatus", "Diphyllobothrium latum", "Fasciola hepatica", "Opisthorchis felineus"], "answer": 0},
+  {"q": "Yetilgan bo‘g‘imda bachadonning 30 ta yon shoxi bo‘lsa, bu qaysi parazit?", "options": ["Qoramol solityori", "Cho‘chqa solityori", "Exinokokk", "Pakana gijja", "Keng lentasimon chuvalchang"], "answer": 0},
+  {"q": "Odamda sistitserkozni qaysi parazit chaqiradi?", "options": ["Taenia solium", "Taeniarhynchus saginatus", "Hymenolepis nana", "Diphyllobothrium latum", "Fasciola hepatica"], "answer": 0},
+  {"q": "Qaysi gijjada odam ham asosiy, ham oraliq xo‘jayin?", "options": ["Pakana gijja", "Qoramol solityori", "Exinokokk", "Jigar qurti", "Keng lentasimon chuvalchang"], "answer": 0},
+  {"q": "B~12~-tanqislik anemiyasiga qaysi gijja sabab bo‘ladi?", "options": ["Keng lentasimon chuvalchang", "Pakana gijja", "Cho‘chqa solityori", "Exinokokk", "Mushuk so‘rg‘ichi"], "answer": 0},
+  {"q": "Exinokokkning asosiy xo‘jayini kim?", "options": ["It", "Odam", "Qo‘y", "Cho‘chqa", "Sigir"], "answer": 0},
+  {"q": "Odam exinokokkoz bilan qanday zararlanadi?", "options": ["Tuxumlarni yutib", "Chala pishgan jigar yeb", "Chala pishgan go‘sht yeb", "Teri orqali", "Chivin chaqishi orqali"], "answer": 0},
+  {"q": "Exinokokk pufagi odamda ko‘pincha qaysi a’zoda joylashadi?", "options": ["Jigarda", "Miyada", "Buyrakda", "Suyakda", "Yurakda"], "answer": 0},
+  {"q": "Keng lentasimon chuvalchangning skoleksida nima bor?", "options": ["Ikkita so‘rg‘ich yorig‘i (botriya)", "4 so‘rg‘ich va ilmoqlar", "Faqat 4 so‘rg‘ich", "Og‘iz va qorin so‘rg‘ichlari", "Uchta lab"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Sibirdan xizmat safaridan qaytgan odamning jigari va o‘t yo‘llarida kasallik belgilari aniqlandi. Ovogelmintoskopik tekshiruvda najasda mayda qopqoqli gijja tuxumlari topildi.", "ask": "Bu qanday kasallik bo‘lishi mumkin?", "answer": "Eng ehtimolli tashxis — opistorxoz (qo‘zg‘atuvchisi *Opisthorchis felineus*). G‘arbiy Sibir (Ob-Irtish havzasi) — opistorxozning dunyodagi eng yirik o‘chog‘i; odam metaserkariyali karpsimon baliqlarni chala pishirib, quritib yoki yengil tuzlab yeganda yuqtiradi. Parazit o‘t yo‘llari, o‘t pufagi va me’da osti bezi yo‘llarida yashaydi. Tasdiqlash — o‘n ikki barmoq ichak suyuqligida tuxumlar, serologiya; davolash — prazikvantel."},
+  {"title": "Masala 2", "text": "Bemor najasida tasmasimon chuvalchangning bo‘g‘imlari topildi. Bachadonning yon shoxlari sanalganda bir tomonda 30 ta bo‘lib chiqdi.", "ask": "Bemorga qanday tashxis qo‘yish mumkin?", "answer": "Bachadon yon shoxlari 17–35 juft bo‘lishi qoramol solityoriga (*Taeniarhynchus saginatus*) xos — teniarinxoz. Bemor finnali (sistitserkli) chala pishgan mol go‘shtini yegan. Cho‘chqa solityoridan farqli ravishda bu tur odamda sistitserkoz chaqirmaydi. Tasdiqlash uchun bemorda bo‘g‘imlarning faol chiqishi, perianal qirindida tuxumlar aniqlanadi; davolash — prazikvantel yoki niklozamid."},
+  {"title": "Masala 3", "text": "Chala pishgan kabob va jigar kabob iste’mol qilinganda exinokokk odamga yuqishi mumkinmi?", "ask": "Javobingizni asoslang.", "answer": "Yo‘q. Qo‘y va qoramol go‘shti yoki jigaridagi exinokokk pufaklari (finnalar) faqat asosiy xo‘jayin — it va boshqa itsimonlar uchun invazion: ular zararlangan ichki a’zolarni yeganda ichagida voyaga yetgan chuvalchang rivojlanadi. Odam esa oraliq xo‘jayin bo‘lib, faqat itlar najasi bilan chiqqan tuxumlarni (yungdan, iflos qo‘l, yuvilmagan sabzavot orqali) yutganda zararlanadi. Ammo chala pishgan go‘sht orqali boshqa gelmintozlar (teniarinxoz, teniaz) yuqishi mumkin."}
+ ],
+ "cards": [
+  {"front": "So‘rg‘ichlilar lichinkalari", "back": "Miratsidiy → sporotsista → rediya → serkariya → metaserkariya (adoleskariya)"},
+  {"front": "Fasciola hepatica", "back": "Jigar qurti; oraliq xo‘jayin — Lymnaea; yuqishi — adoleskariyali suv o‘tlari"},
+  {"front": "Opisthorchis felineus", "back": "Mushuk so‘rg‘ichi; Bithynia → karp baliqlar; chala pishgan baliq"},
+  {"front": "Shistosomalar", "back": "Qon so‘rg‘ichlilari; ayrim jinsli; serkariyalar teri orqali kiradi"},
+  {"front": "Onkosfera", "back": "Tasmasimonlar tuxumidagi olti ilmoqli embrion"},
+  {"front": "Taenia solium", "back": "Ilmoqli skoleks; bachadon shoxlari 7–12; odamda sistitserkoz"},
+  {"front": "Taeniarhynchus saginatus", "back": "Ilmoqsiz skoleks; bachadon shoxlari 17–35; bo‘g‘imlar faol chiqadi"},
+  {"front": "Hymenolepis nana", "back": "Pakana gijja; odam — asosiy va oraliq xo‘jayin; autoreinvaziya"},
+  {"front": "Diphyllobothrium latum", "back": "Botriyalar; siklop → yirtqich baliq; B~12~-tanqislik anemiyasi"},
+  {"front": "Echinococcus granulosus", "back": "Asosiy xo‘jayin — it; odamda jigar va o‘pkada pufaklar"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "So‘rg‘ichlilarning birinchi oraliq xo‘jayini **doimo mollyuska**; exinokokkozda odam **faqat tuxumlardan** zararlanadi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Solityorlar: **“Cho‘chqa — chaqiradi (ilmoqli, sistitserkoz), Sigir — sokin (ilmoqsiz)”**; shoxlar: **“cho‘chqa — 12 gacha, sigir — 17 dan”**."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Go‘sht va baliqni yaxshi pishirish, veterinariya-sanitariya nazorati va itlarni degelmintizatsiya qilish sestodoz va trematodozlarning asosiy profilaktikasidir."}
+ ]
+}

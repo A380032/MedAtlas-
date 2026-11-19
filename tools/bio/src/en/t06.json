@@ -1,0 +1,182 @@
+{
+ "id": "06",
+ "no": 6,
+ "title": "Molecular basis of life. Nucleic acids and their role in passing hereditary traits from generation to generation. The role of DNA in protein biosynthesis. Genetic engineering. Variability and its forms",
+ "goals": [
+  {"type": "p", "text": "To teach the student the evidence that DNA is the hereditary material, the structure and replication of nucleic acids, the properties of the genetic code, the stages of transcription and translation, the regulation of gene activity, the basics of gene and cell engineering, and the forms of variability and the classification of mutations."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": [
+   "the essence of the experiments on transformation, transduction and conjugation;",
+   "the structure of DNA and RNA, Chargaff’s rules and the semiconservative mode of replication;",
+   "the properties of the genetic code and the stages of protein biosynthesis;",
+   "the operon theory (induction and repression);",
+   "the types of variability, the classification of mutations, DNA repair and antimutagens."
+  ]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": [
+   "determine the complementary strand, mRNA and amino acid sequence from a DNA strand;",
+   "calculate the percentage of nucleotides using Chargaff’s rule;",
+   "identify the type of mutation from a description or a diagram."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Proof that DNA is the hereditary material", "blocks": [
+   {"type": "table", "title": "Table 6.1. Experiments that proved the role of DNA in heredity", "head": ["Phenomenon", "Essence", "Discoverers"], "rows": [
+    ["Transformation", "Transfer of hereditary traits from one bacterial strain to another through its pure DNA. Live non-capsulated (R) pneumococci became capsulated and virulent under the action of the DNA of killed capsulated (S) pneumococci", "F. Griffith (1928), O. Avery and colleagues (1944)"],
+    ["Transduction", "Transfer of genes from one bacterium to another by a bacteriophage", "J. Lederberg and N. Zinder (1952)"],
+    ["Conjugation", "Direct transfer of DNA between two bacterial cells through a cytoplasmic bridge (F pilus); from donor (F^+^) to recipient (F^−^)", "J. Lederberg and E. Tatum (1946)"],
+    ["Phage experiment", "Phage DNA labeled with radioactive phosphorus enters the bacterium, while the protein coat labeled with sulfur stays outside", "A. Hershey and M. Chase (1952)"]
+   ]},
+   {"type": "p", "text": "**Plasmids** are small circular DNA molecules in bacteria outside the chromosome; they replicate independently. The F plasmid ensures conjugation, and R plasmids provide **antibiotic resistance** and spread rapidly between bacteria. Plasmids are used as **vectors** in genetic engineering."}
+  ]},
+  {"title": "2. Structure of nucleic acids and DNA replication", "blocks": [
+   {"type": "p", "text": "Nucleic acids are biopolymers built of **nucleotides**. Each nucleotide consists of a nitrogenous base, a pentose (deoxyribose in DNA, ribose in RNA) and a phosphate residue. Nitrogenous bases: **purines** — adenine (A) and guanine (G); **pyrimidines** — cytosine (C), thymine (T, only in DNA) and uracil (U, only in RNA)."},
+   {"type": "p", "text": "In 1953 **J. Watson and F. Crick** proposed the double helix model of DNA (based on the X-ray diffraction data of R. Franklin and M. Wilkins). DNA consists of two **antiparallel** (5′→3′ and 3′→5′) polynucleotide strands; the strands are joined by hydrogen bonds between nitrogenous bases according to the principle of **complementarity**: A=T (2 hydrogen bonds), G≡C (3 hydrogen bonds). The helix diameter is 2 nm, one turn contains 10 nucleotide pairs, the pitch is 3.4 nm and the distance between neighboring nucleotides is 0.34 nm (Figure 6.1)."},
+   {"type": "img", "src": "data/img/bio/t06_dnk.webp", "w": 628, "h": 411, "lang": true, "label": "Figure 6.1", "caption": "The twisted double-stranded DNA molecule: complementary base pairs and dimensions of the helix (diameter 2 nm, one turn 3.4 nm, distance between bases 0.34 nm) (P.Kh. Kholikov et al., 2022)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Chargaff’s rules:** A = T, G = C; the sum of purines equals the sum of pyrimidines (A + G = T + C). So if you know the percentage of one base in DNA, you can calculate the others: for example, if G = 20 %, then C = 20 % and A = T = 30 %."}]},
+   {"type": "table", "title": "Table 6.2. Differences between DNA and RNA", "head": ["Feature", "DNA", "RNA"], "rows": [
+    ["Pentose", "Deoxyribose", "Ribose"],
+    ["Nitrogenous bases", "A, G, C, T", "A, G, C, U"],
+    ["Number of strands", "Two (double helix)", "Usually one"],
+    ["Location", "Nucleus, mitochondria, plastids", "Nucleus, cytoplasm, ribosomes"],
+    ["Types and function", "Storing and transmitting hereditary information", "mRNA (carries information), tRNA (carries amino acids), rRNA (part of ribosomes)"]
+   ]},
+   {"type": "p", "text": "**Replication** is the self-duplication of DNA; it takes place in the S period of interphase. M. Meselson and F. Stahl (1958) proved that replication is **semiconservative**: each new DNA molecule has one old (template) strand and one new strand. In the process **helicase** unwinds the double helix, **topoisomerase** relieves the twisting, **primase** synthesizes an RNA primer and **DNA polymerase** builds the new strand only in the 5′→3′ direction; therefore one strand is made continuously (leading) and the other as Okazaki fragments (lagging), which are joined by **ligase**."}
+  ]},
+  {"title": "3. The genetic code and protein biosynthesis", "blocks": [
+   {"type": "p", "text": "The **genetic code** is the system of recording the amino acid sequence of a protein by the nucleotide sequence of mRNA. Its properties:"},
+   {"type": "list", "ordered": false, "items": [
+    "**Triplet** — each amino acid is coded by three nucleotides (a codon); there are 4^3^ = 64 codons, 61 of which code amino acids and 3 (UAA, UAG, UGA) are **stop codons**.",
+    "**Degeneracy (redundancy)** — most amino acids are coded by several codons (only methionine and tryptophan by one each).",
+    "**Unambiguity (specificity)** — each codon specifies only one amino acid.",
+    "**Continuity and non-overlapping** — there are no “commas” between codons, and one nucleotide does not belong to two codons.",
+    "**Universality** — the code is almost the same in all organisms.",
+    "**Start codon** — AUG (methionine)."
+   ]},
+   {"type": "table", "title": "Table 6.3. mRNA codons of some amino acids", "head": ["Amino acid", "Codons", "Amino acid", "Codons"], "rows": [
+    ["Methionine (start)", "AUG", "Tryptophan", "UGG"],
+    ["Valine", "GUU, GUC, GUA, GUG", "Alanine", "GCU, GCC, GCA, GCG"],
+    ["Glycine", "GGU, GGC, GGA, GGG", "Lysine", "AAA, AAG"],
+    ["Glutamic acid", "GAA, GAG", "Glutamine", "CAA, CAG"],
+    ["Serine", "UCU, UCC, UCA, UCG, AGU, AGC", "Tyrosine", "UAU, UAC"],
+    ["Proline", "CCU, CCC, CCA, CCG", "Phenylalanine", "UUU, UUC"],
+    ["Leucine", "UUA, UUG, CUU, CUC, CUA, CUG", "Stop", "UAA, UAG, UGA"]
+   ]},
+   {"type": "p", "text": "**Transcription** is the synthesis of mRNA on one (template) strand of DNA by RNA polymerase (Figure 6.2). It starts at the promoter and ends at the terminator. In eukaryotes pre-mRNA is formed first; during **processing** a “cap” is added to the 5′ end and a poly-A “tail” to the 3′ end, and in **splicing** introns are cut out and exons are joined."},
+   {"type": "img", "src": "data/img/bio/t06_transkripsiya.webp", "w": 1247, "h": 841, "lang": true, "label": "Figure 6.2", "caption": "Diagram of transcription: RNA polymerase opens the DNA double helix and synthesizes an RNA strand complementary to the template strand (P.Kh. Kholikov et al., 2022)."},
+   {"type": "p", "text": "**Translation** is the synthesis of a polypeptide chain on the ribosome according to the information in mRNA (Figure 6.3). Amino acids are activated by special enzymes (aminoacyl-tRNA synthetases) and attached to tRNA. The **anticodon** of tRNA binds to the mRNA codon by complementarity."},
+   {"type": "list", "ordered": true, "items": [
+    "**Initiation** — the small ribosomal subunit binds to mRNA, the tRNA carrying methionine takes its place at the start codon AUG, and then the large subunit joins.",
+    "**Elongation** — the next aminoacyl-tRNA arrives at the A site, a peptide bond forms between the amino acids, and the ribosome moves one codon (translocation).",
+    "**Termination** — when the ribosome reaches a stop codon, the polypeptide is released and the ribosome dissociates into subunits."
+   ]},
+   {"type": "img", "src": "data/img/bio/t06_translyatsiya.webp", "w": 1240, "h": 529, "lang": true, "label": "Figure 6.3", "caption": "Stages of protein biosynthesis (translation): initiation, elongation and termination; small and large ribosomal subunits, tRNA and mRNA (P.Kh. Kholikov et al., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Many antibiotics stop bacterial translation: tetracyclines (binding of tRNA), streptomycin (the small subunit), chloramphenicol and macrolides (the large subunit). They act selectively on the 70S ribosomes of bacteria."}]}
+  ]},
+  {"title": "4. Regulation of gene activity and cytoplasmic heredity", "blocks": [
+   {"type": "p", "text": "F. Jacob and J. Monod (1961) created the **operon** theory in Escherichia coli. An operon is a group of structural genes transcribed together under one promoter and operator. A regulator gene synthesizes a **repressor** protein, which binds to the operator and blocks the movement of RNA polymerase."},
+   {"type": "list", "ordered": false, "items": [
+    "**Induction** (lactose operon): without lactose in the medium the repressor is bound to the operator and the genes are off; lactose (the inducer) binds and inactivates the repressor — enzymes that break down lactose are synthesized.",
+    "**Repression** (tryptophan operon): when the end product (tryptophan) accumulates, it activates the repressor as a corepressor and synthesis stops."
+   ]},
+   {"type": "p", "text": "In eukaryotes gene activity is regulated at many levels: chromatin condensation (DNA methylation, histone modification), transcription factors and enhancers, splicing, mRNA stability and translation."},
+   {"type": "p", "text": "**Cytoplasmic (extranuclear) heredity** is the inheritance of traits through the DNA of mitochondria and plastids. In humans mitochondria pass to the zygote only through the egg, so mitochondrial diseases (Leber hereditary optic neuropathy, MELAS) are passed **only from the mother** to all her children."}
+  ]},
+  {"title": "5. Genetic and cell engineering", "blocks": [
+   {"type": "p", "text": "**Genetic engineering** is the set of methods for isolating desired genes, transferring them into the cells of another organism with a vector and using them. Its main stages:"},
+   {"type": "list", "ordered": true, "items": [
+    "Obtaining the desired gene — cutting DNA with **restriction enzymes** (for example, EcoRI) or synthesizing complementary DNA from mRNA with reverse transcriptase.",
+    "Joining the gene into a **vector** (plasmid, bacteriophage, virus) with **ligase** — forming recombinant DNA.",
+    "Introducing the recombinant DNA into a recipient cell (bacterium, yeast).",
+    "Selecting and multiplying (cloning) the cells that received the gene and isolating the product."
+   ]},
+   {"type": "p", "text": "Genetic engineering is used to produce **human insulin**, growth hormone, interferons, hepatitis B vaccine and blood clotting factors; **gene therapy**, transgenic plants and animals, PCR (polymerase chain reaction) diagnosis and genome editing with CRISPR-Cas9 are developing."},
+   {"type": "p", "text": "**Cell engineering** is growing cells, hybridizing them (somatic hybridization) and cloning by nuclear transfer. **Hybridomas** obtained by fusing a lymphocyte with a tumor cell produce monoclonal antibodies. The sheep “Dolly” was cloned by nuclear transfer in 1996."}
+  ]},
+  {"title": "6. Variability and mutations", "blocks": [
+   {"type": "table", "title": "Table 6.4. Forms of variability", "head": ["Form", "Essence", "Inheritance", "Example"], "rows": [
+    ["Modification (phenotypic)", "Change of phenotype under the influence of the environment without a change of genotype; within the norm of reaction", "Not inherited", "Tanning of the skin in the sun, enlargement of muscles with exercise"],
+    ["Combinative", "New combinations of genes due to crossing over, independent assortment of chromosomes and random fusion of gametes", "Inherited", "Differences between brothers"],
+    ["Mutational", "Sudden, abrupt change of the genotype (DNA)", "Inherited (generative mutations)", "Phenylketonuria, Down syndrome"]
+   ]},
+   {"type": "table", "title": "Table 6.5. Classification of mutations", "head": ["Level", "Types", "Example"], "rows": [
+    ["Genome mutations", "Polyploidy (3n, 4n), aneuploidy — trisomy (2n + 1), monosomy (2n − 1), nullisomy", "Down (47,+21) and Turner (45,X) syndromes"],
+    ["Chromosomal aberrations (intrachromosomal)", "Deletion (loss of a segment), duplication (doubling), inversion (turning by 180°)", "Cri-du-chat syndrome — 5p^−^"],
+    ["Chromosomal aberrations (interchromosomal)", "Translocation — transfer of a segment to a non-homologous chromosome; Robertsonian translocation (fusion of acrocentrics)", "Philadelphia chromosome t(9;22) — chronic myeloid leukemia"],
+    ["Gene (point) mutations", "Base substitution (transition, transversion), insertion, deletion — frameshift", "Sickle cell anemia, phenylketonuria"]
+   ]},
+   {"type": "p", "text": "By the site of origin, **somatic** mutations (in body cells — not inherited, cause tumors and mosaicism) and **generative** mutations (in sex cells — passed to offspring) are distinguished. By cause, there are **spontaneous** (natural, cause unknown) and **induced** (under the action of mutagens) mutations. Mutagens: **physical** (ionizing and ultraviolet radiation, high temperature), **chemical** (alkylating agents, nitrous acid, benzopyrene, some drugs), **biological** (viruses, mobile genetic elements)."},
+   {"type": "p", "text": "**DNA repair** is the system that restores damaged DNA: **photoreactivation** (splitting thymine dimers in light), **excision repair** (cutting out the damaged segment and rebuilding it with DNA polymerase and ligase) and **postreplicative repair**. If repair fails, mutations accumulate: for example, in **xeroderma pigmentosum** ultraviolet light causes skin cancer. **Antimutagens** are substances that reduce the frequency of mutations: vitamins (A, E, C), selenium, some amino acids, antioxidants."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Sickle cell anemia** is a classic point mutation: the substitution GAG → GTG in codon 6 of the β-globin gene puts valine in place of glutamic acid (HbS). At low oxygen HbS polymerizes, the erythrocyte takes a sickle shape and blocks the capillaries."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: “reading” information from DNA to polypeptide", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Establish that the given DNA strand is the template (transcribed) strand.",
+    "Write the mRNA by the rule of complementarity: A → U, T → A, G → C, C → G.",
+    "Divide the mRNA from the left into triplets (codons).",
+    "Find the amino acid for each codon in the genetic code table; stop at a stop codon.",
+    "In the reverse problem (from amino acids to DNA) show that, because of the degeneracy of the code, several correct answers are possible."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Which experiments proved that DNA is the hereditary material?",
+  "Explain transformation, transduction and conjugation.",
+  "What are plasmids, and what is their medical importance?",
+  "Explain the chemical structure of DNA and the Watson-Crick model.",
+  "State Chargaff’s rules.",
+  "How does DNA replication proceed? Why is it called semiconservative?",
+  "Name the properties of the genetic code.",
+  "What are the types of RNA and their functions?",
+  "How do transcription and processing proceed?",
+  "Explain the stages of translation.",
+  "Explain induction and repression according to the operon theory.",
+  "What is cytoplasmic heredity? How are mitochondrial diseases inherited?",
+  "Name the stages and achievements of genetic engineering.",
+  "What is cell engineering?",
+  "Compare modification, combinative and mutational variability.",
+  "Give examples of genome, chromosomal and gene mutations.",
+  "Explain mutagens and antimutagens. How does DNA repair work?"
+ ],
+ "quiz": [
+  {"q": "Who proposed the double helix model of DNA?", "options": ["J. Watson and F. Crick", "F. Griffith and O. Avery", "M. Meselson and F. Stahl", "F. Jacob and J. Monod", "A. Hershey and M. Chase"], "answer": 0},
+  {"q": "If G = 22 % in DNA, what is the content of A?", "options": ["28 %", "22 %", "44 %", "56 %", "78 %"], "answer": 0},
+  {"q": "Which nitrogenous base is found only in RNA?", "options": ["Uracil", "Thymine", "Adenine", "Guanine", "Cytosine"], "answer": 0},
+  {"q": "Which enzyme joins Okazaki fragments in replication?", "options": ["Ligase", "Helicase", "Primase", "Restriction enzyme", "Topoisomerase"], "answer": 0},
+  {"q": "How many codons of the genetic code code for amino acids?", "options": ["61", "64", "20", "3", "60"], "answer": 0},
+  {"q": "Which is the start codon?", "options": ["AUG", "UAA", "UGA", "UAG", "GUA"], "answer": 0},
+  {"q": "Coding of one amino acid by several codons is which property?", "options": ["Degeneracy", "Universality", "Continuity", "Unambiguity", "Non-overlapping"], "answer": 0},
+  {"q": "What is cutting introns out of pre-mRNA called?", "options": ["Splicing", "Replication", "Translocation", "Termination", "Transduction"], "answer": 0},
+  {"q": "What is the part of tRNA complementary to the mRNA codon called?", "options": ["Anticodon", "Promoter", "Operator", "Exon", "Primer"], "answer": 0},
+  {"q": "What role does lactose play in the lactose operon?", "options": ["Inducer", "Repressor", "Corepressor", "Promoter", "Operator"], "answer": 0},
+  {"q": "What is the transfer of bacterial DNA to another bacterium by a bacteriophage called?", "options": ["Transduction", "Transformation", "Conjugation", "Translation", "Transcription"], "answer": 0},
+  {"q": "Which enzymes cut DNA at specific sequences in genetic engineering?", "options": ["Restriction enzymes", "Ligases", "Polymerases", "Helicases", "Lipases"], "answer": 0},
+  {"q": "What is turning a chromosome segment by 180° called?", "options": ["Inversion", "Deletion", "Duplication", "Translocation", "Polyploidy"], "answer": 0},
+  {"q": "Which variability is not inherited?", "options": ["Modification", "Combinative", "Gene mutation", "Genome mutation", "Chromosomal aberration"], "answer": 0},
+  {"q": "Which process is impaired in xeroderma pigmentosum?", "options": ["Excision repair of DNA", "Splicing", "Translation", "Meiosis", "Glycolysis"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Case 1", "text": "The nucleotides of an mRNA are: guanine — 34 %, uracil — 18 %, cytosine — 28 %, adenine — 20 %.", "ask": "Determine the percentage of nitrogenous bases in the double-stranded DNA segment from which this mRNA was copied.", "answer": "The template DNA strand is complementary to the mRNA: C — 34 %, A — 18 %, G — 28 %, T — 20 %. The second (coding) strand is similar to the mRNA (T instead of U): G — 34 %, T — 18 %, C — 28 %, A — 20 %. In double-stranded DNA: G = C = (34 + 28) / 2 = 31 %; A = T = (18 + 20) / 2 = 19 %. Check: 31 + 31 + 19 + 19 = 100 %."},
+  {"title": "Case 2", "text": "The template strand of DNA is: ACC-ATA-GTC-CAA-GGA-CCA-AAC-AGA-AAA-TTT.", "ask": "Which amino acids make up the polypeptide synthesized from this segment?", "answer": "mRNA: UGG-UAU-CAG-GUU-CCU-GGU-UUG-UCU-UUU-AAA. Polypeptide: tryptophan — tyrosine — glutamine — valine — proline — glycine — leucine — serine — phenylalanine — lysine."},
+  {"title": "Case 3", "text": "In a patient’s β-globin gene, the sequence GAG in triplet 6 was found to be replaced by GTG.", "ask": "What kind of mutation is this, and what disease does it cause?", "answer": "This is a gene (point) mutation — a base substitution (transversion A → T). In mRNA the codon GAG (glutamic acid) becomes GUG (valine); at position 6 of the β-globin chain valine stands instead of glutamic acid — hemoglobin S is formed. As a result sickle cell anemia develops (autosomal recessive); heterozygotes are relatively resistant to malaria."}
+ ],
+ "cards": [
+  {"front": "Complementarity", "back": "A=T (2 hydrogen bonds), G≡C (3 hydrogen bonds)"},
+  {"front": "Chargaff’s rule", "back": "A = T, G = C; A + G = T + C"},
+  {"front": "Semiconservative replication", "back": "Each new DNA has one old and one new strand (Meselson and Stahl)"},
+  {"front": "Genetic code", "back": "Triplet, degenerate, unambiguous, continuous, universal; 64 codons"},
+  {"front": "Stop codons", "back": "UAA, UAG, UGA"},
+  {"front": "Splicing", "back": "Cutting out introns and joining exons"},
+  {"front": "Operon", "back": "Promoter + operator + structural genes (Jacob and Monod, 1961)"},
+  {"front": "Transduction", "back": "Transfer of genes by a bacteriophage"},
+  {"front": "Restriction enzymes", "back": "Enzymes that cut DNA at specific sequences (EcoRI)"},
+  {"front": "Genome mutation", "back": "Change in the number of chromosomes: polyploidy, aneuploidy"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Flow of information (the central dogma): **DNA → RNA → protein**; in retroviruses reverse transcriptase also opens the route RNA → DNA."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Stop codons: **“U Are Away, U Are Gone, U Go Away”** — UAA, UAG, UGA."},
+  {"kind": "klinik", "label": "Clinical significance", "text": "Products of genetic engineering are insulin, growth hormone, interferon and vaccines; PCR and genome editing are the basis of modern diagnosis and treatment."}
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "id": "01",
+ "no": 1,
+ "title": "Mikroskop va u bilan ishlash qoidalari. Vaqtinchalik preparatlar tayyorlash. Viruslar. Pro- va eukariot hujayralar, ularning tuzilishi va farqlari",
+ "goals": [
+  {"type": "p", "text": "Talabaga biologiya fanining vazifalari va tiriklikning asosiy belgilarini, hujayra nazariyasini, yorug‘lik va elektron mikroskopning tuzilishi va ishlash qoidalarini, vaqtinchalik preparat tayyorlash texnikasini, tiriklikning hujayrasiz (viruslar) va hujayraviy (prokariot va eukariot) shakllarining tuzilishi va tibbiy ahamiyatini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "tiriklikning asosiy belgilari va tuzilish darajalarini;",
+   "hujayra nazariyasining asosiy qoidalarini va hujayrani o‘rganish usullarini;",
+   "yorug‘lik mikroskopining mexanik, optik va yorituvchi qismlarini hamda mikroskop turlarini;",
+   "viruslar va bakteriofaglarning tuzilishi, ko‘payishi va keltirib chiqaradigan kasalliklarini;",
+   "prokariot va eukariot hujayralarning asosiy farqlarini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "mikroskopni ishchi holatga keltirish va preparatni kichik hamda katta obyektivda ko‘rish;",
+   "umumiy kattalashtirishni hisoblash;",
+   "vaqtinchalik preparat (piyoz po‘sti epidermisi) tayyorlash;",
+   "mikroskopda ishlashda yo‘l qo‘yilgan xatolarni aniqlash va tuzatish."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Biologiya fani va tiriklikning asosiy belgilari", "blocks": [
+   {"type": "p", "text": "**Biologiya** (yunoncha *bios* — hayot, *logos* — fan) — tiriklikning barcha ko‘rinishlarini: organizmlarning tuzilishi, funksiyasi, rivojlanishi, kelib chiqishi, o‘zaro va tashqi muhit bilan munosabatlarini o‘rganadigan fan. Atamani XIX asr boshida J.B. Lamark va G. Treviranus bir-biridan mustaqil holda kiritgan. **Tibbiy biologiya** odam organizmini biologik obyekt sifatida o‘rganadi va gistologiya, fiziologiya, biokimyo, mikrobiologiya, patologiya hamda klinik fanlar uchun poydevor bo‘ladi."},
+   {"type": "p", "text": "Biologiyada **kuzatish, tasvirlash, solishtirish, tajriba (eksperiment), tarixiy, modellashtirish** va **statistik** usullar qo‘llaniladi. Tirik tabiat jonsiz tabiatdan quyidagi belgilar majmui bilan farq qiladi:"},
+   {"type": "table", "title": "Jadval 1.1. Tiriklikning asosiy belgilari", "head": ["Belgi", "Mazmuni"], "rows": [
+    ["Kimyoviy tarkib birligi", "Asosini oqsillar va nuklein kislotalar tashkil qiladi; C, H, O, N organogen elementlar ko‘p"],
+    ["Moddalar va energiya almashinuvi", "Assimilyatsiya (sintez) va dissimilyatsiya (parchalanish) birligi"],
+    ["O‘z-o‘zini hosil qilish", "Ko‘payish; asosida DNK replikatsiyasi yotadi"],
+    ["O‘z-o‘zini boshqarish", "Gomeostaz — ichki muhit doimiyligini saqlash"],
+    ["O‘z-o‘zini yangilash", "Tarkibiy qismlarning doimiy almashinib turishi"],
+    ["Irsiyat va o‘zgaruvchanlik", "Belgilarni nasldan-naslga o‘tkazish va yangi belgilarni hosil qilish"],
+    ["Ta’sirlanuvchanlik", "Tashqi va ichki ta’sirlarga javob berish"],
+    ["O‘sish va rivojlanish", "Individual (ontogenez) va tarixiy (filogenez) rivojlanish"],
+    ["Diskretlik va yaxlitlik", "Organizm alohida qismlardan iborat, lekin yagona tizim sifatida ishlaydi"]
+   ]},
+   {"type": "h", "text": "Tiriklikning tuzilish darajalari"},
+   {"type": "list", "ordered": true, "items": [
+    "**Molekulyar-genetik** — nuklein kislotalar va oqsillar; irsiy axborotni saqlash va uzatish.",
+    "**Hujayraviy** — hujayra tiriklikning eng kichik tuzilish va funksional birligi.",
+    "**To‘qima va a’zo** — ko‘p hujayralilarda ixtisoslashgan hujayralar to‘plami.",
+    "**Organizm (ontogenetik)** — yaxlit individ, uning rivojlanishi.",
+    "**Populyatsion-tur** — tur ichida erkin chatishadigan individlar guruhi; evolyutsiyaning elementar birligi.",
+    "**Biogeotsenotik va biosfera** — organizmlar va muhit o‘rtasidagi modda va energiya almashinuvi."
+   ]},
+   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Darajalar ketma-ketligi: **“Mo-Hu-To-Or-Po-Bi”** — Molekula, Hujayra, To‘qima, Organizm, Populyatsiya, Biosfera."}]}
+  ]},
+  {"title": "2. Hujayra nazariyasi va hujayrani o‘rganish usullari", "blocks": [
+   {"type": "p", "text": "Hujayrani birinchi bo‘lib 1665-yilda ingliz olimi **R. Guk** po‘kak kesmasida ko‘rgan va “cell” (katakcha) deb atagan. **A. Levenguk** bir hujayrali organizmlar, eritrotsitlar va spermatozoidlarni kuzatgan; **R. Broun** 1831-yilda yadroni topgan. 1838–1839-yillarda **M. Shleyden** va **T. Shvann** hujayra nazariyasini yaratdi, 1858-yilda **R. Virxov** “Har bir hujayra faqat hujayradan” (*Omnis cellula e cellula*) qoidasini qo‘shdi."},
+   {"type": "h", "text": "Hozirgi zamon hujayra nazariyasining asosiy qoidalari"},
+   {"type": "list", "ordered": true, "items": [
+    "Hujayra — tiriklikning elementar tuzilish, funksional va rivojlanish birligi.",
+    "Barcha organizmlarning hujayralari tuzilishi, kimyoviy tarkibi va hayot jarayonlari jihatidan o‘xshash (gomologik).",
+    "Hujayralar faqat ona hujayraning bo‘linishi orqali ko‘payadi.",
+    "Ko‘p hujayrali organizmda hujayralar to‘qima va a’zolarga birlashib, yaxlit tizimni tashkil qiladi.",
+    "Organizm hujayralari totipotent — barcha hujayralarda bir xil genetik axborot bor, ammo turli genlar faollashadi (differensiyalanish)."
+   ]},
+   {"type": "table", "title": "Jadval 1.2. Hujayrani o‘rganish usullari", "head": ["Usul", "Mohiyati va qo‘llanilishi"], "rows": [
+    ["Yorug‘lik mikroskopiyasi", "Bo‘yalgan va bo‘yalmagan preparatlarni ko‘rish; ajrata olish qobiliyati ≈ 0,2 mkm"],
+    ["Elektron mikroskopiya", "Organoidlarning ultrastrukturasi; ajrata olish qobiliyati ≈ 0,1–1 nm"],
+    ["Sitokimyo va gistokimyo", "Hujayradagi moddalarni (DNK, glikogen, fermentlar) rangli reaksiyalar bilan aniqlash"],
+    ["Avtoradiografiya", "Radioaktiv nishonlangan moddalarning hujayradagi yo‘lini kuzatish"],
+    ["Differensial sentrifugalash", "Organoidlarni zichligi bo‘yicha ajratib olish"],
+    ["Hujayra va to‘qima kulturasi", "Hujayralarni organizmdan tashqarida o‘stirish (virusologiya, kariotip tahlili)"],
+    ["Mikrojarrohlik", "Mikromanipulyator yordamida yadro ko‘chirish, hujayraga modda kiritish"]
+   ]}
+  ]},
+  {"title": "3. Yorug‘lik mikroskopining tuzilishi", "blocks": [
+   {"type": "p", "text": "Yorug‘lik mikroskopi **mexanik**, **optik** va **yorituvchi** qismlardan tashkil topgan (Rasm 1.1). Mexanik qism mikroskopning barcha qismlarini birlashtirib, preparatni harakatlantiradi va fokusni sozlaydi; optik qism tasvirni kattalashtiradi; yorituvchi qism yorug‘lik oqimini preparatga yo‘naltiradi."},
+   {"type": "img", "src": "data/img/bio/t01_mikroskop.webp", "w": 900, "h": 1287, "label": "Rasm 1.1", "caption": "O‘quv yorug‘lik mikroskopi: 1 — okulyar; 2 — tubus; 3 — revolver; 4 — obyektiv; 5 — buyum stolchasi; 6 — kondensor (diafragma bilan); 7 — ko‘zgu; 8 — makrometrik vint; 9 — mikrometrik vint; 10 — tutqich (shtativ); 11 — asos (Wikimedia Commons fotosurati, raqamlar qo‘shilgan)."},
+   {"type": "table", "title": "Jadval 1.3. Yorug‘lik mikroskopining qismlari", "head": ["Qism", "Tarkibi", "Vazifasi"], "rows": [
+    ["Mexanik", "Asos, tutqich (shtativ), tubus, revolver, buyum stolchasi (qisqichlari bilan), makro- va mikrometrik vintlar", "Optik qismlarni ushlab turadi, preparatni joylashtiradi, aniq tasvirni sozlaydi"],
+    ["Optik", "Okulyar (×7, ×10, ×15) va obyektivlar (×8, ×10, ×40, ×90)", "Buyum tasvirini kattalashtiradi"],
+    ["Yorituvchi", "Ko‘zgu (yoki chiroq), kondensor, irisdiafragma, yorug‘lik filtri", "Yorug‘likni yig‘adi va preparatga yo‘naltiradi, yorug‘lik kuchini boshqaradi"]
+   ]},
+   {"type": "p", "text": "**Umumiy kattalashtirish** = okulyar kattalashtirishi × obyektiv kattalashtirishi. Masalan, okulyar ×10 va obyektiv ×40 bo‘lsa, buyum 400 marta kattalashadi. ×90 obyektiv **immersion** obyektiv bo‘lib, preparat bilan obyektiv orasiga sindirish ko‘rsatkichi shishaga yaqin bo‘lgan **sadr (immersion) moyi** tomiziladi."},
+   {"type": "p", "text": "Mikroskopning sifati kattalashtirish bilan emas, balki **ajrata olish qobiliyati** — ikki nuqtani alohida ko‘rsata oladigan eng kichik masofa bilan belgilanadi. Yorug‘lik mikroskopida u yorug‘lik to‘lqin uzunligining taxminan yarmiga (≈ 0,2 mkm) teng; shuning uchun ribosoma, membrana kabi mayda tuzilmalar faqat elektron mikroskopda ko‘rinadi."},
+   {"type": "table", "title": "Jadval 1.4. Mikroskop va mikroskopiya turlari", "head": ["Turi", "Xususiyati", "Qo‘llanilishi"], "rows": [
+    ["Stereoskopik (binokulyar lupa)", "Kichik kattalashtirish, hajmli tasvir", "Hasharotlar, gijjalar, embrionlarni ko‘rish"],
+    ["Faza-kontrast", "Optik zichlik farqini yorug‘-qorong‘i kontrastga aylantiradi", "Bo‘yalmagan tirik hujayralarni ko‘rish"],
+    ["Qorong‘i maydon", "Buyum qora fonda yorug‘ ko‘rinadi", "Spiroxetalar, harakatchan bakteriyalar"],
+    ["Lyuminessent (fluoressent)", "Fluoroxromlar ultrabinafsha nurda nurlanadi", "Mikroorganizmlar, antigenlar, xromosomalarni (FISH) aniqlash"],
+    ["Polyarizatsion", "Qutblangan nurda ikki sindiruvchi tuzilmalar ko‘rinadi", "Mushak tolalari, kristallar, suyak to‘qimasi"],
+    ["Transmission elektron (TEM)", "Elektronlar dastasi ultrayupqa kesmadan o‘tadi", "Organoidlar ultrastrukturasi, viruslar"],
+    ["Skanerlovchi elektron (SEM)", "Sirtdan qaytgan elektronlar hajmli tasvir beradi", "Hujayra va to‘qima sirti, parazitlar yuzasi"]
+   ]}
+  ]},
+  {"title": "4. Mikroskop bilan ishlash qoidalari", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Mikroskopni o‘ng qo‘l bilan tutqichidan, chap qo‘l bilan asosidan ushlab ko‘taring; stol chetidan 3–5 sm ichkariga, tutqichi o‘zingizga qaragan holda qo‘ying.",
+    "Revolverni burab, **kichik obyektivni (×8 yoki ×10)** “chiq” etgan ovoz chiqquncha markazga o‘rnating.",
+    "Kondensorni yuqoriga ko‘taring, diafragmani oching. Okulyarga qarab, ko‘zguni burab ko‘rish maydonini bir tekis yoritib oling (sun’iy yorug‘likda — ko‘zguning yassi, kunduzgi yorug‘likda — botiq tomoni).",
+    "Preparatni qoplagich oynasi yuqoriga qaragan holda buyum stolchasiga qo‘ying, qisqichlar bilan mahkamlang, o‘rganiladigan joyni obyektiv tagiga keltiring.",
+    "Yon tomondan qarab, makrometrik vint bilan obyektivni preparatdan 0,5 sm masofagacha tushiring; so‘ng okulyarga qarab, vintni **o‘zingizdan teskari tomonga** (tubusni ko‘tarib) aniq tasvir hosil bo‘lguncha buring.",
+    "Kerakli joyni ko‘rish maydoni markaziga keltirib, revolverni **katta obyektivga (×40)** o‘tkazing; aniq tasvirni faqat **mikrometrik vint** bilan (yarim aylanadan ortiq burmasdan) sozlang.",
+    "Ishdan keyin kichik obyektivni o‘rnating, preparatni oling, mikroskopni yumshoq mato bilan arting va g‘ilofiga joylang."
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Katta obyektivda **makrometrik vintni** ishlatish mumkin emas: obyektivning ishchi masofasi 0,6 mm atrofida bo‘lgani uchun u preparatga tegib, qoplagich oynani sindiradi va linzani shikastlaydi. Linzalarni barmoq yoki qog‘oz bilan artmang."}]},
+   {"type": "p", "text": "**Rasm chizish qoidasi:** preparat chap ko‘z bilan ko‘riladi, ikkala ko‘z ochiq turadi; rasm o‘ng qo‘l bilan albomga oddiy qalamda chiziladi, qismlari yonida ko‘rsatkich chiziqlar bilan nomlanadi, rasm ostiga preparat nomi va kattalashtirish yoziladi."}
+  ]},
+  {"title": "5. Vaqtinchalik va doimiy mikropreparatlar", "blocks": [
+   {"type": "p", "text": "**Vaqtinchalik preparat** — bir mashg‘ulotda ko‘rish uchun suv, glitserin yoki fiziologik eritma tomchisida tayyorlanadigan preparat; tez quriydi va uzoq saqlanmaydi. **Doimiy preparat** to‘qimani fiksatsiyalash, suvsizlantirish, parafinga quyish, mikrotomda 5–7 mkm qalinlikda kesish, bo‘yash (masalan, gematoksilin-eozin) va kanada balzami ostiga joylash orqali tayyorlanadi; u ko‘p yillar saqlanadi."},
+   {"type": "h", "text": "Piyoz po‘sti epidermisidan vaqtinchalik preparat tayyorlash"},
+   {"type": "list", "ordered": true, "items": [
+    "Toza buyum oynasining o‘rtasiga pipetka bilan 1 tomchi suv tomizing.",
+    "Piyoz bo‘lagining ichki botiq yuzasidan pinset bilan yupqa, shaffof epidermis pardasini ajratib oling.",
+    "Pardani tomchiga yoyib qo‘ying, buklanib qolmasligiga e’tibor bering.",
+    "Qoplagich oynani 45° burchak ostida tomchiga tekkizib, sekin tushiring — shunda havo pufakchalari qolmaydi.",
+    "Ortiqcha suvni filtr qog‘oz bilan shimdirib oling; kerak bo‘lsa, qoplagich oyna chetiga yod eritmasi tomizib, qarama-qarshi tomondan filtr qog‘oz bilan torting (yadro sariq-jigarrang bo‘yaladi).",
+    "Preparatni avval kichik, so‘ng katta obyektivda ko‘rib, hujayra devori, sitoplazma, yadro va vakuolani chizing."
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Preparatdagi qora halqali dumaloq “hujayralar” ko‘pincha **havo pufakchalari** bo‘ladi: vintni burganda ularning qora cheti kengayib-torayadi, hujayrada esa ichki tuzilma (yadro) ko‘rinadi."}]}
+  ]},
+  {"title": "6. Tiriklikning hujayrasiz shakli — viruslar va bakteriofaglar", "blocks": [
+   {"type": "p", "text": "Viruslarni 1892-yilda rus olimi **D.I. Ivanovskiy** tamaki mozaikasi kasalligini o‘rganib kashf qilgan. Viruslar — o‘lchami 20–300 nm bo‘lgan, faqat tirik hujayra ichida ko‘payadigan **obligat hujayra ichi parazitlari**. Ular hujayradan tashqarida (virion holida) tiriklik belgilarini namoyon qilmaydi, hujayraga kirgach esa o‘z genetik dasturini amalga oshiradi; shu sababli jonli va jonsiz tabiat oralig‘idagi shakl hisoblanadi."},
+   {"type": "img", "src": "data/img/bio/t01_viruslar.webp", "w": 1012, "h": 424, "lang": true, "label": "Rasm 1.2", "caption": "Turli shakldagi viruslar: gerpes virusi (ikosaedrik kapsid va superkapsid), gripp virusi (spiral nukleokapsid va superkapsid), tamaki mozaikasi virusi (spiral simmetriya) va bakteriofag (murakkab simmetriya) (P.X. Xolikov va boshq., 2022)."},
+   {"type": "h", "text": "Virusning tuzilishi"},
+   {"type": "list", "ordered": false, "items": [
+    "**Nuklein kislota** (genom) — yoki DNK, yoki RNK (hech qachon ikkalasi birga emas); bir yoki ikki zanjirli bo‘ladi.",
+    "**Kapsid** — nuklein kislotani o‘rab turuvchi oqsil qobiq; kapsomerlardan tuziladi. Nuklein kislota + kapsid = **nukleokapsid**.",
+    "**Superkapsid** (tashqi qobiq) — murakkab viruslarda xo‘jayin hujayra membranasidan olingan lipoprotein parda, unda glikoprotein “tikanlar” bo‘ladi (gripp, OIV, gerpes).",
+    "Ayrim viruslarda fermentlar bor: masalan, OIV da **teskari transkriptaza** (revertaza) RNK dan DNK nusxa oladi."
+   ]},
+   {"type": "h", "text": "Virusning hujayrada ko‘payishi"},
+   {"type": "list", "ordered": true, "items": [
+    "**Adsorbsiya** — virus hujayra yuzasidagi o‘ziga xos retseptorga birikadi.",
+    "**Kirish** — endotsitoz yoki membranalar qo‘shilishi orqali; bakteriofag faqat nuklein kislotasini kiritadi.",
+    "**“Yechinish”** — kapsid parchalanib, genom ozod bo‘ladi.",
+    "**Sintez** — hujayra apparati yordamida virus nuklein kislotasi va oqsillari sintezlanadi.",
+    "**Yig‘ilish** — yangi virionlar hosil bo‘ladi.",
+    "**Chiqish** — hujayra yemirilishi (lizis) yoki kurtaklanish orqali."
+   ]},
+   {"type": "p", "text": "**Bakteriofaglar** (faglar) — bakteriyalarda parazitlik qiluvchi viruslar; 1917-yilda F. d’Errel kashf qilgan. Fag bosh (ikosaedrik kapsid ichida DNK), dum (qisqaruvchi g‘ilof va ichki naycha), bazal plastinka va dum iplaridan iborat (Rasm 1.3). **Virulent** faglar bakteriyani lizisga uchratadi; **mo‘tadil** faglar o‘z DNK sini bakteriya xromosomasiga qo‘shib (profag) lizogeniya hosil qiladi va transduksiyada genlarni tashiydi. Faglar ichak infeksiyalarini davolash (fagoterapiya) va bakteriyalarni tiplashda qo‘llaniladi."},
+   {"type": "img", "src": "data/img/bio/t01_bakteriofag.webp", "w": 1257, "h": 769, "lang": true, "label": "Rasm 1.3", "caption": "Bakteriofagning tuzilishi: bosh (kapsid ichida DNK), dum, bazal plastinka va dum iplari; o‘ngda — bakteriya yuzasiga yopishgan faglarning elektron mikroskopdagi ko‘rinishi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 1.5. Odamda viruslar keltirib chiqaradigan muhim kasalliklar", "head": ["Kasallik", "Qo‘zg‘atuvchi (genomi)", "Asosan zararlanadigan joy", "Yuqish yo‘li"], "rows": [
+    ["Gripp", "Ortomiksovirus (RNK)", "Nafas yo‘llari epiteliysi", "Havo-tomchi"],
+    ["Qizamiq", "Paramiksovirus (RNK)", "Nafas yo‘llari, teri", "Havo-tomchi"],
+    ["Epidemik parotit", "Paramiksovirus (RNK)", "Quloq oldi so‘lak bezlari", "Havo-tomchi"],
+    ["Poliomiyelit", "Pikornavirus (RNK)", "Orqa miya motoneyronlari", "Fekal-oral"],
+    ["Virusli gepatit B", "Gepadnavirus (DNK)", "Jigar", "Qon, jinsiy, onadan bolaga"],
+    ["OIV-infeksiya (OITS)", "Retrovirus (RNK)", "CD4^+^ T-limfotsitlar", "Qon, jinsiy, onadan bolaga"],
+    ["Gerpes", "Gerpesvirus (DNK)", "Teri va shilliq qavatlar, nerv tugunlari", "Kontakt"],
+    ["Quturish", "Rabdovirus (RNK)", "Markaziy nerv sistemasi", "Hayvon tishlashi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Antibiotiklar viruslarga ta’sir qilmaydi, chunki viruslarda hujayra devori, ribosoma va mustaqil moddalar almashinuvi yo‘q. Virus infeksiyalariga qarshi asosiy chora — **emlash** va virusning ko‘payish bosqichlariga ta’sir qiluvchi **virusga qarshi dorilar** (masalan, OIV da teskari transkriptaza ingibitorlari)."}]}
+  ]},
+  {"title": "7. Prokariot va eukariot hujayralar", "blocks": [
+   {"type": "p", "text": "Hujayraviy organizmlar ikki guruhga bo‘linadi. **Prokariotlar** (*pro* — oldin, *karyon* — yadro) — shakllangan yadrosi bo‘lmagan bakteriyalar va arxeylar. **Eukariotlar** — haqiqiy yadroga ega bo‘lgan zamburug‘lar, o‘simliklar, hayvonlar va odam hujayralari."},
+   {"type": "p", "text": "**Bakteriya hujayrasi** o‘lchami 0,5–5 mkm. U hujayra devori (peptidoglikan — murein), ba’zan kapsula, sitoplazmatik membrana va uning burmalari — **mezosomalar**, sitoplazma, **70S ribosomalar**, **nukleoid** (halqasimon bitta DNK molekulasi) va **plazmidalar** (qo‘shimcha kichik halqali DNK)dan iborat. Ko‘pchiligida xivchinlar va pililar (fimbriyalar) bo‘ladi. Shakliga ko‘ra kokklar, tayoqchalar (batsillalar), vibrionlar va spirillalar farqlanadi. Bakteriyalar **ikkiga bo‘linish** yo‘li bilan ko‘payadi; qulay sharoitda har 20–30 daqiqada bo‘linadi. Noqulay sharoitda ayrimlari **spora** hosil qiladi."},
+   {"type": "p", "text": "**Mikoplazmalar** — hujayra devori bo‘lmagan, o‘lchami 0,1–0,3 mkm bo‘lgan eng kichik mustaqil yashovchi prokariotlar; shakli o‘zgaruvchan, penitsillinga sezgir emas (pnevmoniya, urogenital infeksiyalar qo‘zg‘atadi)."},
+   {"type": "table", "title": "Jadval 1.6. Prokariot va eukariot hujayralarning asosiy farqlari", "head": ["Belgi", "Prokariotlar", "Eukariotlar"], "rows": [
+    ["Yadro", "Yo‘q; DNK sitoplazmada (nukleoid)", "Ikki membranali qobiqqa ega yadro"],
+    ["Genetik material", "Bitta halqasimon DNK, gistonlarsiz; plazmidalar", "Bir nechta chiziqli xromosoma, DNK gistonlar bilan bog‘langan"],
+    ["O‘lchami", "0,5–5 mkm", "10–100 mkm"],
+    ["Membranali organoidlar", "Yo‘q (mezosomalar bor)", "EPT, Golji majmuasi, mitoxondriya, lizosoma, plastidalar"],
+    ["Ribosomalar", "70S", "80S (mitoxondriya va plastidalarda 70S)"],
+    ["Hujayra devori", "Peptidoglikan (murein)", "O‘simlikda sellyuloza, zamburug‘da xitin, hayvonda yo‘q"],
+    ["Sitoskelet", "Rivojlanmagan", "Mikronaychalar, mikrofilamentlar, oraliq filamentlar"],
+    ["Bo‘linishi", "Ikkiga bo‘linish (mitozsiz)", "Mitoz, meyoz"],
+    ["Xivchinlar", "Oddiy, flagellin oqsilidan", "Murakkab, mikronaychalardan (9 + 2)"],
+    ["Transkripsiya va translyatsiya", "Bir vaqtda, sitoplazmada", "Transkripsiya yadroda, translyatsiya sitoplazmada"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Mitoxondriya va plastidalarda halqasimon DNK va 70S ribosomalar bo‘lishi ularning qadimgi prokariotlardan kelib chiqqanligini ko‘rsatadi (**simbiogenez nazariyasi**)."}]},
+   {"type": "table", "title": "Jadval 1.7. Bakteriyalar keltirib chiqaradigan muhim kasalliklar", "head": ["Kasallik", "Qo‘zg‘atuvchi", "Yuqish yo‘li"], "rows": [
+    ["Sil (tuberkulyoz)", "*Mycobacterium tuberculosis*", "Havo-tomchi, havo-chang"],
+    ["Vabo", "*Vibrio cholerae*", "Suv, fekal-oral"],
+    ["Ich terlama", "*Salmonella typhi*", "Fekal-oral"],
+    ["Bakterial dizenteriya", "*Shigella*", "Fekal-oral, kontakt-maishiy"],
+    ["Bo‘g‘ma (difteriya)", "*Corynebacterium diphtheriae*", "Havo-tomchi"],
+    ["Qoqshol", "*Clostridium tetani*", "Jarohat orqali (sporalar tuproqda)"],
+    ["Brutsellyoz", "*Brucella*", "Xom sut, go‘sht, hayvonlar bilan kontakt"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: mikroskopda preparatni kichik va katta obyektivda ko‘rish", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Mikroskopni to‘g‘ri joylashtiring, kichik obyektivni ishchi holatga keltiring.",
+    "Kondensorni ko‘tarib, diafragmani oching va ko‘zgu bilan ko‘rish maydonini yoriting.",
+    "Preparatni qoplagich oynasini yuqoriga qaratib stolchaga qo‘ying va mahkamlang.",
+    "Yon tomondan qarab obyektivni makrometrik vint bilan 0,5 sm gacha tushiring.",
+    "Okulyarga qarab, tubusni ko‘tarib aniq tasvirni toping.",
+    "Kerakli joyni markazga keltirib, revolverni ×40 obyektivga o‘tkazing.",
+    "Aniqlikni faqat mikrometrik vint bilan sozlang.",
+    "Umumiy kattalashtirishni hisoblang va rasmni albomga chizing."
+   ]}
+  ]},
+  {"title": "Ko‘nikma: vaqtinchalik preparat tayyorlash va bo‘yash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Buyum oynasiga 1 tomchi suv tomizing.",
+    "Obyekt (piyoz epidermisi)ni ajratib, tomchiga yoying.",
+    "Qoplagich oynani 45° burchak ostida sekin tushiring.",
+    "Ortiqcha suvni filtr qog‘oz bilan oling.",
+    "Bo‘yoq (yod eritmasi)ni qoplagich oyna chetiga tomizib, qarama-qarshi tomondan filtr qog‘oz bilan torting.",
+    "Preparatni mikroskopda ko‘ring va hujayra qismlarini aniqlang."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Biologiya fani nimani o‘rganadi va tibbiy biologiyaning tibbiyotdagi o‘rni qanday?",
+  "Tiriklikning asosiy belgilarini sanab, har biriga misol keltiring.",
+  "Tiriklikning tuzilish darajalarini ayting.",
+  "Hujayra nazariyasi qachon va kim tomonidan yaratilgan? Uning hozirgi qoidalari qanday?",
+  "Hujayrani o‘rganishning qanday usullarini bilasiz?",
+  "Yorug‘lik mikroskopining mexanik, optik va yorituvchi qismlarini ayting.",
+  "Umumiy kattalashtirish qanday hisoblanadi? Immersion obyektiv nima uchun kerak?",
+  "Mikroskopning ajrata olish qobiliyati nima?",
+  "Faza-kontrast, lyuminessent va elektron mikroskopiyaning mohiyati va qo‘llanilishi qanday?",
+  "Vaqtinchalik va doimiy preparatlar qanday tayyorlanadi?",
+  "Virusning tuzilishi va hujayrada ko‘payish bosqichlarini tushuntiring.",
+  "Bakteriofag qanday tuzilgan? Virulent va mo‘tadil faglarning farqi nimada?",
+  "Prokariot va eukariot hujayralar qanday farqlanadi?",
+  "Mikoplazmalar qanday xususiyatlarga ega?"
+ ],
+ "quiz": [
+  {"q": "Hujayra nazariyasini yaratgan olimlar kimlar?", "options": ["M. Shleyden va T. Shvann", "R. Guk va A. Levenguk", "G. Mendel va T. Morgan", "J. Uotson va F. Krik", "D. Ivanovskiy va F. d’Errel"], "answer": 0},
+  {"q": "“Har bir hujayra faqat hujayradan” qoidasini kim kiritgan?", "options": ["R. Virxov", "R. Broun", "T. Shvann", "K. Ber", "Ch. Darvin"], "answer": 0},
+  {"q": "Mikroskopning yorituvchi qismiga nima kiradi?", "options": ["Ko‘zgu, kondensor, diafragma", "Okulyar va obyektiv", "Revolver va tubus", "Makro- va mikrometrik vint", "Buyum stolchasi va qisqichlar"], "answer": 0},
+  {"q": "Okulyar ×10, obyektiv ×40 bo‘lsa, umumiy kattalashtirish qancha?", "options": ["400", "50", "40", "4000", "140"], "answer": 0},
+  {"q": "Katta obyektivda tasvir aniqligini qaysi qism bilan sozlash kerak?", "options": ["Mikrometrik vint", "Makrometrik vint", "Revolver", "Ko‘zgu", "Kondensor"], "answer": 0},
+  {"q": "Immersion obyektiv bilan ishlashda preparatga nima tomiziladi?", "options": ["Sadr (immersion) moyi", "Distillangan suv", "Glitserin", "Spirt", "Yod eritmasi"], "answer": 0},
+  {"q": "Bo‘yalmagan tirik hujayralarni ko‘rish uchun qaysi mikroskopiya qulay?", "options": ["Faza-kontrast", "Polyarizatsion", "Transmission elektron", "Stereoskopik", "Oddiy lupa"], "answer": 0},
+  {"q": "Viruslarni kim kashf qilgan?", "options": ["D.I. Ivanovskiy", "L. Paster", "R. Kox", "I.I. Mechnikov", "F. d’Errel"], "answer": 0},
+  {"q": "Virus genomi haqida qaysi fikr to‘g‘ri?", "options": ["Yoki DNK, yoki RNK bo‘ladi", "Doimo DNK va RNK birga bo‘ladi", "Faqat ikki zanjirli DNK bo‘ladi", "Faqat RNK bo‘ladi", "Oqsildan iborat"], "answer": 0},
+  {"q": "Nuklein kislotani o‘rab turuvchi oqsil qobiq qanday ataladi?", "options": ["Kapsid", "Superkapsid", "Nukleoid", "Kapsula", "Mezosoma"], "answer": 0},
+  {"q": "OIV da RNK dan DNK nusxa oluvchi ferment qaysi?", "options": ["Teskari transkriptaza", "DNK-polimeraza I", "Restriktaza", "Ligaza", "Helikaza"], "answer": 0},
+  {"q": "Prokariot hujayra uchun xos belgi qaysi?", "options": ["Halqasimon DNK va 70S ribosomalar", "Yadro qobig‘i va 80S ribosomalar", "Mitoxondriya va Golji majmuasi", "Gistonlar bilan bog‘langan xromosomalar", "Mitoz bilan bo‘linish"], "answer": 0},
+  {"q": "Bakteriya hujayra devorining asosiy moddasi qaysi?", "options": ["Peptidoglikan (murein)", "Sellyuloza", "Xitin", "Kollagen", "Glikogen"], "answer": 0},
+  {"q": "Hujayra devori bo‘lmagan eng kichik prokariotlar qaysilar?", "options": ["Mikoplazmalar", "Spiroxetalar", "Aktinomitsetlar", "Batsillalar", "Vibrionlar"], "answer": 0},
+  {"q": "Bakteriofagning bakteriya xromosomasiga qo‘shilgan DNK si qanday ataladi?", "options": ["Profag", "Plazmida", "Kapsomer", "Nukleokapsid", "Operon"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Talaba preparatni kichik obyektivda yaxshi ko‘rdi, so‘ng revolverni katta obyektivga o‘tkazdi, ammo tasvir ko‘rinmay qoldi.", "ask": "Buning mumkin bo‘lgan sabablari nimada va qanday tuzatish kerak?", "answer": "Sabablari: (1) kerakli joy ko‘rish maydonining markaziga keltirilmagan — katta obyektivning ko‘rish maydoni ancha tor; (2) preparat teskari (qoplagich oynasi pastga) qo‘yilgan, shuning uchun katta obyektiv fokusga yetmaydi; (3) yorug‘lik yetarli emas — katta obyektivda diafragmani ochish va kondensorni ko‘tarish kerak; (4) obyektiv “chiq” etmaguncha o‘rnatilmagan. Tuzatish: kichik obyektivga qaytib, joyni markazga keltirish, preparatni to‘g‘ri qo‘yish, yorug‘likni kuchaytirish va faqat mikrometrik vint bilan sozlash."},
+  {"title": "Masala 2", "text": "Talaba katta obyektivda ishlayotganda qoplagich oynani sindirib qo‘ydi.", "ask": "Qanday xatoga yo‘l qo‘yilgan?", "answer": "Katta obyektivda aniqlikni makrometrik vint bilan sozlagan: bu obyektivning ishchi masofasi juda kichik (≈ 0,6 mm), makrovint bilan tubus keskin tushib, obyektiv preparatga tegadi. Shuningdek, preparat teskari qo‘yilgan bo‘lishi mumkin. To‘g‘ri usul — katta obyektivda faqat mikrometrik vintdan foydalanish, obyektivni preparatga yaqinlashtirishni yon tomondan qarab bajarish."},
+  {"title": "Masala 3", "text": "Yorug‘lik mikroskopida preparat ko‘rilganda yadrosi hujayra chetiga siqilib, yassi bo‘lib joylashgan, sitoplazmasi bir katta bo‘shliqdan iborat hujayralar ko‘rindi.", "ask": "Bu qanday hujayra bo‘lishi mumkin? Yadro nima uchun chetga surilgan?", "answer": "Bu yog‘ to‘qimasi hujayrasi (adipotsit) yoki markaziy katta vakuolali yetuk o‘simlik hujayrasi bo‘lishi mumkin. Adipotsitda sitoplazmaning deyarli hammasini bitta yirik yog‘ tomchisi egallaydi; o‘simlik hujayrasida esa hujayra shirasi bilan to‘lgan markaziy vakuola. Ikkala holatda ham katta kiritma yoki vakuola yadroni va sitoplazmani hujayra devoriga (periferiyaga) siqib qo‘yadi."}
+ ],
+ "cards": [
+  {"front": "Umumiy kattalashtirish", "back": "Okulyar × obyektiv (masalan, 10 × 40 = 400)"},
+  {"front": "Ajrata olish qobiliyati", "back": "Ikki nuqta alohida ko‘rinadigan eng kichik masofa; yorug‘lik mikroskopida ≈ 0,2 mkm"},
+  {"front": "Hujayra nazariyasi", "back": "M. Shleyden va T. Shvann (1838–1839); R. Virxov — “har bir hujayra hujayradan”"},
+  {"front": "Kapsid", "back": "Virus nuklein kislotasini o‘rab turuvchi oqsil qobiq; kapsomerlardan tuzilgan"},
+  {"front": "Superkapsid", "back": "Murakkab viruslarning lipoprotein tashqi qobig‘i (gripp, OIV)"},
+  {"front": "Bakteriofag", "back": "Bakteriyalar virusi; bosh, dum, bazal plastinka, dum iplari"},
+  {"front": "Nukleoid", "back": "Prokariot sitoplazmasidagi halqasimon DNK joylashgan soha"},
+  {"front": "Plazmida", "back": "Bakteriyadagi qo‘shimcha kichik halqasimon DNK (antibiotikka chidamlilik genlari)"},
+  {"front": "Ribosomalar", "back": "Prokariotlarda 70S, eukariotlarda 80S"},
+  {"front": "Mikoplazma", "back": "Hujayra devori yo‘q eng kichik prokariot (0,1–0,3 mkm)"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Mikroskopda ish doimo **kichik obyektivdan** boshlanadi; katta obyektivda faqat **mikrometrik vint** ishlatiladi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Virus tuzilishi “ichkaridan tashqariga”: **Genom → Kapsid → Superkapsid** (“GeKaSu”)."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Bakteriyalardagi 70S ribosomalar va peptidoglikan devor — antibiotiklarning nishoni; odam hujayrasida ular yo‘qligi sababli antibiotiklar tanlab ta’sir qiladi, viruslarga esa ta’sir qilmaydi."}
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "id": "08",
+ "no": 8,
+ "title": "Odam genetikasini o‘rganish usullari: sitogenetik, dermatoglifika, biokimyoviy usullar. Prenatal diagnostika",
+ "goals": [
+  {"type": "p", "text": "Talabaga odam kariotipini tahlil qilish usullarini, xromosomalar tasnifini (Denver va Parij nomenklaturalari), jinsiy xromatinni aniqlash va uning tibbiy ahamiyatini, dermatoglifik tahlil asoslarini, biokimyoviy, molekulyar-genetik va immunogenetik usullarni hamda prenatal diagnostika usullarini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "kariotip tayyorlash bosqichlarini va xromosomalarni bo‘yash usullarini;",
+   "xromosomalarning Denver bo‘yicha guruhlarini (A–G);",
+   "jinsiy X-xromatin (Barr tanachasi) va “baraban tayoqchalari”, Layon gipotezasini;",
+   "barmoq va kaft naqshlari turlarini, atd burchagini va kasalliklardagi dermatoglifik o‘zgarishlarni;",
+   "skrining va biokimyoviy tekshiruvlar, PZR, FISH va prenatal diagnostika usullarini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "kariogrammani o‘qish va kariotip formulasini yozish;",
+   "jinsiy xromatin soni bo‘yicha X xromosomalar sonini aniqlash;",
+   "barmoq izidan naqsh turini va kaftda atd burchagini aniqlash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Sitogenetik usul va kariotip tahlili", "blocks": [
+   {"type": "p", "text": "**Sitogenetik usul** — xromosomalar soni va tuzilishini mikroskopda o‘rganish. Odam xromosomalari soni 1956-yilda J. Tjio va A. Levan tomonidan aniq belgilangan (2n = 46). Tekshiruv uchun ko‘pincha **periferik qon limfotsitlari**, shuningdek, suyak ko‘migi, teri fibroblastlari, amniotsitlar va xorion hujayralari ishlatiladi."},
+   {"type": "list", "ordered": true, "items": [
+    "Limfotsitlar ozuqa muhitida 72 soat davomida **fitogemagglyutinin** (mitogen) ta’sirida o‘stiriladi.",
+    "Bo‘linish metafazada **kolxitsin** bilan to‘xtatiladi.",
+    "Hujayralar **gipotonik eritma** (0,075 M KCl) bilan ishlanadi — ular shishib, xromosomalar tarqaladi.",
+    "Fiksatsiya (metanol + sirka kislota), buyum oynasiga tomizish va bo‘yash.",
+    "Metafaza plastinkalari mikroskopda o‘rganilib, rasmga olinadi va **kariogramma** (xromosomalarni juft-juft tartiblab joylashtirish) tuziladi."
+   ]},
+   {"type": "p", "text": "**Bo‘yash usullari:** oddiy (rutin) bo‘yash xromosomalarni faqat o‘lchami va shakliga ko‘ra guruhlashga imkon beradi; **differensial bo‘yash** (G-, Q-, R-, C-usullar) har bir xromosomada o‘ziga xos ko‘ndalang chiziqlar (bandlar) hosil qiladi va har bir juftni hamda kichik aberratsiyalarni aniqlashga imkon beradi (Rasm 8.1). Zamonaviy usullar: **FISH** (fluoressent in situ gibridizatsiya) va xromosoma mikromatritsa tahlili."},
+   {"type": "img", "src": "data/img/bio/t08_kariotip.webp", "w": 658, "h": 507, "label": "Rasm 8.1", "caption": "Differensial bo‘yalgan odam xromosomalarining chizmasi (idiogramma): 22 juft autosoma va jinsiy xromosomalar (X, Y); ajratilgan juftlar — xromosoma kasalliklarida ko‘p uchraydigan 13, 18, 21-juftlar (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 8.1. Odam xromosomalarining Denver tasnifi (1960)", "head": ["Guruh", "Juftlar", "Tavsifi"], "rows": [
+    ["A", "1–3", "Eng yirik; 1 va 3 — metasentrik, 2 — submetasentrik"],
+    ["B", "4–5", "Yirik submetasentrik"],
+    ["C", "6–12 va X", "O‘rta submetasentrik"],
+    ["D", "13–15", "O‘rta akrosentrik, yo‘ldoshli"],
+    ["E", "16–18", "Kichik; 16 — metasentrik, 17–18 — submetasentrik"],
+    ["F", "19–20", "Kichik metasentrik"],
+    ["G", "21–22 va Y", "Eng kichik akrosentrik (Y — yo‘ldoshsiz)"]
+   ]},
+   {"type": "p", "text": "**Kariotip yozuvi (ISCN):** avval xromosomalar umumiy soni, so‘ng jinsiy xromosomalar, keyin anomaliya yoziladi: 46,XX — normal ayol; 46,XY — normal erkak; 47,XY,+21 — Daun sindromli erkak; 46,XX,5p^−^ — 5-xromosoma qisqa yelkasining deletsiyasi; 46,XY/47,XY,+21 — mozaitsizm. Xromosoma yelkalari: p — qisqa, q — uzun."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Idiogramma** — xromosomalarning differensial bo‘yalgan bandlari bilan sxematik tasviri. **Kariogramma** — muayyan odam metafaza plastinkasidagi xromosomalarning juftlar bo‘yicha tartiblangan rasmi."}]}
+  ]},
+  {"title": "2. Jinsiy xromatin", "blocks": [
+   {"type": "p", "text": "**Jinsiy X-xromatin (Barr tanachasi)** — interfaza yadrosida yadro qobig‘i ostida joylashgan, zich bo‘yaladigan kichik (≈ 1 mkm) uchburchak yoki yarim oysimon tanacha. Uni 1949-yilda M. Barr va E. Bertram mushuk neyronlarida topgan. Barr tanachasi **faolsizlangan X xromosoma**dir."},
+   {"type": "p", "text": "**Layon gipotezasi** (M. Layon, 1961): ayolning somatik hujayralarida embrion rivojlanishining ilk davrida (taxminan 16-kun) X xromosomalardan biri tasodifiy ravishda faolsizlanib, geteroxromatinga aylanadi. Shu tufayli ayol organizmi otalik va onalik X xromosomasi faol bo‘lgan hujayralar **mozaikasi**dan iborat; bu genlar dozasini erkak va ayolda tenglashtiradi (**doza kompensatsiyasi**)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Barr tanachalari soni = X xromosomalar soni − 1.** 46,XY va 45,X — 0 ta; 46,XX va 47,XXY — 1 ta; 47,XXX va 48,XXXY — 2 ta."}]},
+   {"type": "p", "text": "Jinsiy xromatin og‘iz bo‘shlig‘i shilliq qavati epiteliysi (bukkal surtma) va qin epiteliysida aniqlanadi: surtma asetoorsein yoki gematoksilin bilan bo‘yalib, 100 ta yadro sanaladi. Normal ayolda yadrolarning 20–40 % ida, erkakda 0–2 % ida X-xromatin topiladi. Neytrofil leykotsitlarda X-xromatin segmentlangan yadrodan chiqib turgan **“baraban tayoqchasi”** ko‘rinishida bo‘ladi (ayollarda neytrofillarning 1–5 % ida) (Rasm 8.2). **Y-xromatin** erkak hujayralarida akrixin bilan bo‘yalganda lyuminessent mikroskopda yorqin nuqta ko‘rinishida aniqlanadi."},
+   {"type": "img", "src": "data/img/bio/t08_baraban.webp", "w": 1172, "h": 540, "lang": true, "label": "Rasm 8.2", "caption": "Leykotsitlar va epiteliy hujayrasida jinsiy X-xromatin: chapda — neytrofil yadrosidagi “baraban tayoqchalari”, o‘ngda — bukkal epiteliy yadrosidagi Barr tanachasi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 8.2. Jinsiy xromatinni aniqlashning amaliy ahamiyati", "head": ["Soha", "Qo‘llanilishi"], "rows": [
+    ["Xromosoma kasalliklari tashxisi", "Klaynfelter (XXY — X-xromatin bor), Shereshevskiy-Terner (45,X — yo‘q), polisomiya X sindromlarini ekspress-tashxislash"],
+    ["Akusherlik va pediatriya", "Interseks holatlarda (noaniq jinsiy a’zolar) genetik jinsni aniqlash; homila jinsini amniotsitlarda aniqlash (X-birikkan kasalliklarda)"],
+    ["Sud-tibbiyot", "Qon dog‘i, soch ildizi, to‘qima qoldiqlari bo‘yicha jinsni aniqlash"],
+    ["Onkologiya va transplantologiya", "O‘sma hujayralari kelib chiqishi, ko‘chirib o‘tkazilgan suyak ko‘migi donor yoki retsipiyentga tegishliligini aniqlash"],
+    ["Sport tibbiyoti", "Ilgari ayollar musobaqalarida jins nazorati uchun qo‘llanilgan"]
+   ]}
+  ]},
+  {"title": "3. Dermatoglifika", "blocks": [
+   {"type": "p", "text": "**Dermatoglifika** — barmoqlar, kaft va oyoq panjasi terisidagi papillyar chiziqlar (naqshlar)ni o‘rganuvchi soha. Naqshlar homilaning 3–6-oylarida shakllanadi va umr bo‘yi o‘zgarmaydi; ular **poligen** irsiylanadi. **Daktiloskopiya** — barmoq naqshlari, **palmoskopiya** — kaft naqshlari, **plantoskopiya** — oyoq panjasi naqshlarini o‘rganish."},
+   {"type": "table", "title": "Jadval 8.3. Barmoq naqshlarining asosiy turlari", "head": ["Turi", "Tuzilishi", "Triradiuslar soni", "Odamlarda uchrashi"], "rows": [
+    ["Yoy (A, arka)", "Chiziqlar bir tomondan ikkinchisiga yoy hosil qilib o‘tadi", "0", "≈ 5 %"],
+    ["Ilmoq (L, loop)", "Chiziqlar bir tomondan kirib, qaytib o‘sha tomonga chiqadi; ulnar (tirsak tomonga ochiq) va radial ilmoq", "1", "≈ 65 %"],
+    ["Burma (W, whorl)", "Konsentrik doiralar yoki spiral", "2", "≈ 30 %"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t08_naqsh.webp", "w": 1263, "h": 850, "lang": true, "label": "Rasm 8.3", "caption": "Barmoq terisidagi chiziqlar tasviri: yuqorida — yoysimon, ilmoqsimon va aylanasimon naqshlar fotosurati; pastda — 1 — yoysimon; 2 — ilmoqsimon; 3 — ilmoqsimondan aylanasimonga o‘tish; 4 — qo‘sh ilmoq (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "Kaftda to‘rtta barmoq asosida **triradiuslar** (a, b, c, d) va bilak asosiga yaqin **asosiy (aksial) triradius t** bo‘ladi. a, t va d nuqtalarni tutashtirganda hosil bo‘ladigan **atd burchagi** normada o‘rtacha 48° atrofida bo‘ladi; triradius t distal siljiganda burchak kattalashadi. Kaftdagi **bukilish chiziqlari** ham tahlil qilinadi."},
+   {"type": "table", "title": "Jadval 8.4. Ayrim xromosoma kasalliklaridagi dermatoglifik belgilar", "head": ["Kasallik", "Asosiy belgilar"], "rows": [
+    ["Daun sindromi (47,+21)", "Ulnar ilmoqlar ko‘p (10 tagacha); atd burchagi 80° gacha kattalashgan; kaftda yagona ko‘ndalang (“maymun”) bukilish chizig‘i; V barmoqda bitta bukilish chizig‘i"],
+    ["Patau sindromi (47,+13)", "Yoy naqshlar va radial ilmoqlar ko‘p, atd burchagi juda katta (> 100°), ko‘ndalang chiziq"],
+    ["Edvards sindromi (47,+18)", "6–10 barmoqda yoy naqsh, ko‘ndalang chiziq"],
+    ["Shereshevskiy-Terner (45,X)", "Burma naqshlar ko‘p, chiziqlar umumiy soni ortgan, atd burchagi kattalashgan"],
+    ["Klaynfelter (47,XXY)", "Yoy naqshlar ko‘paygan, chiziqlar umumiy soni kamaygan"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Dermatoglifika tez, arzon va og‘riqsiz **yordamchi** usul bo‘lib, xromosoma kasalliklariga gumon qilishda, egizaklarning zigotaligini aniqlashda va sud-tibbiyotda (shaxsni identifikatsiya qilish) qo‘llaniladi; yakuniy tashxis faqat kariotip bilan qo‘yiladi."}]}
+  ]},
+  {"title": "4. Biokimyoviy, molekulyar-genetik va immunogenetik usullar", "blocks": [
+   {"type": "p", "text": "**Biokimyoviy usul** — moddalar almashinuvining irsiy buzilishlari (fermentopatiyalar)ni aniqlash. U ikki bosqichda o‘tkaziladi: (1) **skrining (ekspress)** — ko‘p odamlarda oddiy sifat reaksiyalari bilan tekshirish (masalan, siydikka FeCl~3~ tomizganda fenilketonuriyada yashil rang; chaqaloqlarda tovondan olingan qon tomchisida fenilalanin va TTG ni aniqlash); (2) **aniqlashtiruvchi** — qon, siydik va to‘qimalarda metabolitlar va fermentlar faolligini miqdoriy aniqlash (xromatografiya, elektroforez, tandem mass-spektrometriya)."},
+   {"type": "p", "text": "**Molekulyar-genetik usullar** DNK darajasida tahlil qiladi: biologik materialdan (qon, bukkal epiteliy, xorion, amniotsitlar) DNK va RNK ajratib olish, **PZR** (polimeraza zanjir reaksiyasi — kerakli DNK qismini millionlab marta ko‘paytirish), restriktazalar bilan kesish va gel-elektroforez, **sekvenirlash** (nukleotidlar ketma-ketligini o‘qish), DNK zondlari bilan gibridizatsiya, FISH. Ular gen mutatsiyalarini, tashuvchilarni, prenatal tashxisni va otalikni aniqlash uchun qo‘llaniladi."},
+   {"type": "p", "text": "**Immunogenetik usul** — qon guruhlari, eritrotsit va leykotsit antigenlari (HLA tizimi), zardob oqsillari polimorfizmini antigen-antitelo reaksiyalari bilan o‘rganish. U transplantatsiyada donor tanlash, rezus-konflikt profilaktikasi, otalikni aniqlash va kasalliklarga moyillikni baholashda qo‘llaniladi. **Monoklonal antitelolar** — bitta hujayra klonidan (gibridoma) olingan, bitta antigen determinantiga qarshi bir xil antitelolar; **poliklonal** antitelolar esa turli klonlardan olingan va antigenning bir necha determinantiga yo‘nalgan."}
+  ]},
+  {"title": "5. Prenatal diagnostika", "blocks": [
+   {"type": "p", "text": "**Prenatal diagnostika** — homilada irsiy kasalliklar va rivojlanish nuqsonlarini tug‘ilishdan oldin aniqlash. Uning vazifalari: og‘ir irsiy patologiyali bola tug‘ilishining oldini olish, homiladorlik va tug‘ruqni to‘g‘ri rejalashtirish, ayrim kasalliklarni erta davolashni boshlash."},
+   {"type": "table", "title": "Jadval 8.5. Prenatal diagnostika usullari", "head": ["Usul", "Muddati", "Mohiyati"], "rows": [
+    ["Ultratovush tekshiruvi (UTT)", "11–14 va 18–21 hafta", "Rivojlanish nuqsonlari, yoqa sohasi qalinligi (Daun sindromi belgisi)"],
+    ["Biokimyoviy skrining (ona qoni)", "11–14 va 16–18 hafta", "AFP, XGch, estriol, PAPP-A — xromosoma kasalliklari va nerv nayi nuqsonlari xavfi"],
+    ["Ona qonidagi homila DNK si (NIPT)", "10-haftadan", "Trisomiyalar uchun yuqori aniqlikdagi invaziv bo‘lmagan skrining"],
+    ["Xorion biopsiyasi", "10–13 hafta", "Xorion vorsinkalari olinadi: kariotip, DNK tahlili"],
+    ["Amniotsentez", "15–20 hafta", "Amnion suyuqligi olinadi: amniotsitlar kariotipi, jinsiy xromatin, biokimyoviy va DNK tahlili (Rasm 8.4)"],
+    ["Kordotsentez", "18-haftadan", "Kindik tizimchasidan homila qoni olinadi"],
+    ["Fetoskopiya", "18–20 hafta", "Homilani endoskop bilan bevosita ko‘rish"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t08_amniotsentez.webp", "w": 1379, "h": 594, "lang": true, "label": "Rasm 8.4", "caption": "Amnion suyuqligidan olingan hujayralarni tekshirish (amniotsentez): homila atrofidagi suyuqlik olinadi; hujayralar o‘stirilib kariotip, jinsiy xromatin va biokimyoviy testlar o‘tkaziladi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Invaziv usullar (xorion biopsiyasi, amniotsentez, kordotsentez) homila tushishi xavfi (≈ 0,5–1 %) bilan bog‘liq, shuning uchun ular faqat **ko‘rsatma** bo‘lganda o‘tkaziladi: onaning yoshi 35 dan katta, oilada xromosoma yoki gen kasalligi, ota-onada translokatsiya tashuvchanligi, skrining natijasi yuqori xavfni ko‘rsatgan bo‘lsa."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: bukkal surtmada jinsiy xromatinni aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Og‘izni suv bilan chayqatib, lunjning ichki yuzasidan steril shpatel bilan yuza epiteliy qatlamini qirib oling (birinchi qirindini tashlang).",
+    "Materialni buyum oynasiga yupqa qilib surting va 96 % spirtda fiksatsiyalang.",
+    "Asetoorsein bilan 3–5 daqiqa bo‘yang, ortiqcha bo‘yoqni oling, qoplagich oyna bilan yoping.",
+    "Immersion obyektivda yadro qobig‘i ostidagi zich uchburchak tanachalarni qidiring.",
+    "100 ta yaxshi bo‘yalgan yadroni sanab, X-xromatinli yadrolar foizini hisoblang.",
+    "Natijani baholang: 20–40 % — ayol (XX), 0–2 % — erkak (XY); ikki tanachali yadrolar bo‘lsa — X polisomiyasi."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Sitogenetik usulning mohiyati va bosqichlarini tushuntiring.",
+  "Kariotip tahlili uchun qanday material ishlatiladi? Kolxitsin va gipotonik eritma nima uchun qo‘llaniladi?",
+  "Xromosomalarni oddiy va differensial bo‘yash usullari qanday farqlanadi?",
+  "Denver tasnifi bo‘yicha xromosomalar guruhlarini ayting.",
+  "Idiogramma va kariogramma nima? Kariotip qanday yoziladi?",
+  "Jinsiy X-xromatinning tabiati qanday? Layon gipotezasini tushuntiring.",
+  "Jinsiy xromatin qanday aniqlanadi va baholanadi?",
+  "Jinsiy xromatinni aniqlash tibbiyotning qaysi sohalarida qo‘llaniladi?",
+  "Dermatoglifika nima? Barmoq naqshlarining turlarini ayting.",
+  "atd burchagi qanday aniqlanadi? Xromosoma kasalliklarida qanday dermatoglifik belgilar uchraydi?",
+  "Biokimyoviy usulning bosqichlarini va tahlil turlarini ayting.",
+  "Molekulyar-genetik usullarga qaysilar kiradi?",
+  "Immunogenetik usul nima? Monoklonal va poliklonal antitelolar qanday farqlanadi?",
+  "Prenatal diagnostikaning vazifalari va usullarini ayting."
+ ],
+ "quiz": [
+  {"q": "Odam xromosomalarining aniq soni (46) qachon aniqlangan?", "options": ["1956-yilda", "1900-yilda", "1953-yilda", "1865-yilda", "1961-yilda"], "answer": 0},
+  {"q": "Kariotip tahlilida mitozni metafazada to‘xtatish uchun nima qo‘shiladi?", "options": ["Kolxitsin", "Fitogemagglyutinin", "Gipotonik KCl", "Asetoorsein", "Tripsin"], "answer": 0},
+  {"q": "Denver tasnifida D guruhiga qaysi xromosomalar kiradi?", "options": ["13–15", "1–3", "16–18", "19–20", "21–22"], "answer": 0},
+  {"q": "G guruhiga qaysi xromosomalar kiradi?", "options": ["21, 22 va Y", "6–12 va X", "4–5", "13–15", "19–20"], "answer": 0},
+  {"q": "Barr tanachasi nima?", "options": ["Faolsizlangan X xromosoma", "Y xromosoma", "Yadrocha", "Mitoxondriya", "Faol X xromosoma"], "answer": 0},
+  {"q": "47,XXY kariotipda nechta Barr tanachasi bo‘ladi?", "options": ["1", "0", "2", "3", "4"], "answer": 0},
+  {"q": "48,XXXY kariotipda nechta Barr tanachasi bo‘ladi?", "options": ["2", "1", "3", "0", "4"], "answer": 0},
+  {"q": "Neytrofillarda X-xromatin qanday ko‘rinishda bo‘ladi?", "options": ["“Baraban tayoqchasi”", "Uchburchak tanacha", "Yo‘ldosh", "Telomera", "Halqa"], "answer": 0},
+  {"q": "Layon gipotezasiga ko‘ra ayolda X xromosomalardan biri qachon faolsizlanadi?", "options": ["Embrion rivojlanishining ilk davrida", "Jinsiy balog‘at davrida", "Menopauzada", "Har bir mitozda qayta", "Faqat tuxum hujayrada"], "answer": 0},
+  {"q": "Odamlarda eng ko‘p uchraydigan barmoq naqshi qaysi?", "options": ["Ilmoq", "Yoy", "Burma", "Qo‘sh ilmoq", "Aralash"], "answer": 0},
+  {"q": "Kaftda yagona ko‘ndalang bukilish chizig‘i va atd burchagining kattalashishi qaysi kasallikka xos?", "options": ["Daun sindromi", "Fenilketonuriya", "Gemofiliya", "Marfan sindromi", "Albinizm"], "answer": 0},
+  {"q": "Fenilketonuriya skriningida siydikka FeCl~3~ tomizilganda qanday rang paydo bo‘ladi?", "options": ["Yashil", "Qizil", "Ko‘k", "Sariq", "Binafsha"], "answer": 0},
+  {"q": "DNK ning kerakli qismini millionlab marta ko‘paytirish usuli qaysi?", "options": ["PZR", "Elektroforez", "Kariotiplash", "Dermatoglifika", "Xromatografiya"], "answer": 0},
+  {"q": "Amniotsentez homiladorlikning qaysi muddatida o‘tkaziladi?", "options": ["15–20 hafta", "5–7 hafta", "10–13 hafta", "30–32 hafta", "38–40 hafta"], "answer": 0},
+  {"q": "Qaysi prenatal usul invaziv emas?", "options": ["Ultratovush tekshiruvi", "Amniotsentez", "Xorion biopsiyasi", "Kordotsentez", "Fetoskopiya"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Fenotipi qiz bo‘lgan chaqaloq hujayralari sitogenetik usulda tekshirilganda kariogrammada 44 ta autosoma va X, Y xromosomalar aniqlandi.", "ask": "Shifokorning xulosasi qanday?", "answer": "Kariotip 46,XY — genetik jihatdan erkak, fenotipi esa ayol. Bu jinsiy differensiyalanish buzilishi: ko‘pincha androgen retseptorlari genining mutatsiyasi (moyak feminizatsiyasi sindromi — moyaklar qorin bo‘shlig‘i yoki chov kanalida joylashadi) yoki SRY geni yo‘qolishi/mutatsiyasi (Svayer sindromi). Bukkal surtmada X-xromatin topilmaydi. Gormonal va molekulyar tekshiruv, endokrinolog va genetik maslahati zarur."},
+  {"title": "Masala 2", "text": "Tibbiy-genetik maslahatga murojaat qilgan bolaning kariogrammasida D guruhi (13–15-juftlar) xromosomalaridan biri bo‘yicha trisomiya aniqlandi.", "ask": "Shifokorning xulosasi qanday va qaysi juft ekanini qanday aniqlash mumkin?", "answer": "D guruhi trisomiyasi — eng ko‘p 13-juft bo‘yicha (Patau sindromi, 47,XX(XY),+13): mikrotsefaliya, lab va tanglay kemtigi, polidaktiliya, yurak nuqsonlari, mikroftalmiya. Oddiy bo‘yashda 13, 14 va 15-xromosomalarni bir-biridan farqlab bo‘lmaydi, shuning uchun aniq juftni differensial (G-) bo‘yash yoki FISH bilan aniqlash kerak."},
+  {"title": "Masala 3", "text": "Kariotiplari 47,XXY; 48,XXYY; 48,XXXY bo‘lgan bemorlarda bukkal surtma tekshirildi.", "ask": "Har bir holatda nechta Barr tanachasi bo‘ladi? Javobingizni isbotlang.", "answer": "Barr tanachalari soni X xromosomalar sonidan bitta kam (Layon qoidasi: bittadan boshqa barcha X lar faolsizlanadi). 47,XXY — 1 ta; 48,XXYY — 1 ta; 48,XXXY — 2 ta. Y xromosomalar soni Barr tanachalari soniga ta’sir qilmaydi. Barchasi Klaynfelter sindromining variantlari; X soni ortgan sari aqliy zaiflik og‘irlashadi."}
+ ],
+ "cards": [
+  {"front": "Kariotip tahlili materiali", "back": "Periferik qon limfotsitlari (fitogemagglyutinin + kolxitsin)"},
+  {"front": "Denver tasnifi", "back": "A (1–3), B (4–5), C (6–12, X), D (13–15), E (16–18), F (19–20), G (21–22, Y)"},
+  {"front": "Kariotip yozuvi", "back": "Soni, jinsiy xromosomalar, anomaliya: 47,XY,+21"},
+  {"front": "Barr tanachasi", "back": "Faolsizlangan X; soni = X soni − 1"},
+  {"front": "Layon gipotezasi", "back": "Ayolda ilk embriogenezda bitta X tasodifiy faolsizlanadi"},
+  {"front": "“Baraban tayoqchasi”", "back": "Neytrofil yadrosidagi X-xromatin"},
+  {"front": "Barmoq naqshlari", "back": "Yoy (≈ 5 %), ilmoq (≈ 65 %), burma (≈ 30 %)"},
+  {"front": "atd burchagi", "back": "Normada ≈ 48°; Daun sindromida 80° gacha"},
+  {"front": "PZR", "back": "DNK qismini ko‘paytirish; mutatsiyalar va infeksiyalar tashxisi"},
+  {"front": "Amniotsentez", "back": "15–20 hafta; amniotsitlar kariotipi va DNK tahlili"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Kariotip — xromosoma kasalliklari tashxisining **“oltin standarti”**; dermatoglifika va jinsiy xromatin — yordamchi tezkor usullar."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Denver guruhlari soni: **“3-2-7-3-3-2-2”** — A, B, C, D, E, F, G guruhlaridagi autosoma juftlari (jami 22)."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Prenatal diagnostika (UTT, biokimyoviy skrining, NIPT, invaziv usullar) og‘ir irsiy patologiyali bola tug‘ilishining oldini oladi; invaziv usullar faqat ko‘rsatma bo‘yicha."}
+ ]
+}

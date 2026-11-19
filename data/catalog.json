@@ -32,10 +32,12 @@
     },
     {
      "id": "biologiya",
-     "name": "Tibbiy biologiya",
+     "name": "Tibbiy biologiya va genetika",
      "abbr": "BIO",
      "color": "#3d8a5a",
-     "status": "soon"
+     "status": "ready",
+     "file": "data/subjects/bio.json",
+     "pdf": "data/books/bio.pdf"
     },
     {
      "id": "lotin",

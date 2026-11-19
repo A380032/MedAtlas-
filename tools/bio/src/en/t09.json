@@ -1,0 +1,179 @@
+{
+ "id": "09",
+ "no": 9,
+ "title": "Hereditary diseases: chromosomal diseases, gene diseases and diseases with hereditary predisposition. Types of marriage. Medical genetic counseling",
+ "goals": [
+  {"type": "p", "text": "To teach the student the classification of hereditary diseases, the causes, signs and diagnosis of syndromes caused by changes in the number and structure of autosomes and sex chromosomes, hereditary metabolic diseases, multifactorial diseases, the medical genetic consequences of consanguineous marriage and the principles of medical genetic counseling (MGC)."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": [
+   "the classification of hereditary diseases (chromosomal, gene, multifactorial, mitochondrial);",
+   "the karyotype and main signs of Down, Edwards, Patau, Klinefelter and Shereshevsky-Turner syndromes;",
+   "hereditary disorders of the metabolism of amino acids, carbohydrates, lipids and purines;",
+   "the concepts of genocopy and phenocopy, inbreeding and outbreeding;",
+   "the aim and stages of MGC and the levels of genetic risk."
+  ]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": [
+   "identify a syndrome from its karyotype formula;",
+   "calculate the proportion of shared genes from the degree of kinship;",
+   "assess the recurrence genetic risk for a family."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Classification of hereditary diseases", "blocks": [
+   {"type": "p", "text": "**Hereditary diseases** are diseases caused by changes in the hereditary apparatus (gene, chromosome, genome) that can be passed on to the next generations. They may be congenital or may appear later (for example, Huntington disease at the age of 35–45). A **congenital disease** is not always hereditary: congenital defects also arise from intrauterine infection or teratogens."},
+   {"type": "table", "title": "Table 9.1. Classification of hereditary pathology", "head": ["Group", "Cause", "Examples"], "rows": [
+    ["Chromosomal diseases", "Change in the number or structure of chromosomes", "Down, Klinefelter, Turner, cri-du-chat syndromes"],
+    ["Gene (monogenic) diseases", "Mutation of a single gene; inherited according to Mendel’s laws", "Phenylketonuria, hemophilia, cystic fibrosis, sickle cell anemia"],
+    ["Diseases with hereditary predisposition (multifactorial)", "Combined action of many genes and environmental factors", "Hypertension, type 2 diabetes mellitus, coronary heart disease, schizophrenia, congenital defects (cleft lip)"],
+    ["Mitochondrial diseases", "Mutations of mitochondrial DNA; inherited from the mother", "Leber atrophy, MELAS, MERRF"],
+    ["Genetic incompatibility of mother and fetus", "Immune conflict over antigens", "Rh incompatibility"]
+   ]}
+  ]},
+  {"title": "2. Syndromes caused by changes in the number of autosomes", "blocks": [
+   {"type": "table", "title": "Table 9.2. Autosomal trisomies", "head": ["Syndrome", "Karyotype", "Frequency", "Main signs"], "rows": [
+    ["Down", "47,XX(XY),+21 (≈ 95 %); translocation (≈ 4 %); mosaic (≈ 1 %)", "1 : 700", "Intellectual disability, upslanting palpebral fissures, epicanthus, flat face and occiput, large tongue, short neck, transverse palmar crease, muscle hypotonia, heart defects, predisposition to leukemia"],
+    ["Edwards", "47,XX(XY),+18", "1 : 7000", "Low birth weight, dolichocephaly, small lower jaw, low-set malformed ears, overlapping flexed fingers (finger II over finger III), “rocker-bottom” feet, heart defects; most die before 1 year"],
+    ["Patau", "47,XX(XY),+13", "1 : 7000", "Microcephaly, cleft lip and palate, microphthalmia, polydactyly, scalp defects, heart and kidney defects; most die before 1 year"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The main risk factor for Down syndrome is **maternal age**: at 25 years the risk is ≈ 1 : 1250, at 35 years ≈ 1 : 350, at 40 years ≈ 1 : 100, at 45 years ≈ 1 : 30. In the **translocation** form (for example, a Robertsonian translocation of chromosome 21 onto chromosome 14) one parent is a balanced translocation carrier and the recurrence risk is high, so the parents’ karyotype is examined."}]}
+  ]},
+  {"title": "3. Syndromes caused by changes in the number of sex chromosomes and in chromosome structure", "blocks": [
+   {"type": "table", "title": "Table 9.3. Anomalies of the sex chromosomes", "head": ["Syndrome", "Karyotype", "X chromatin", "Main signs"], "rows": [
+    ["Klinefelter", "47,XXY (48,XXXY, 48,XXYY and others)", "Positive", "Male phenotype, tall stature, long legs, eunuchoid build, gynecomastia, small testes, infertility (azoospermia), sometimes delayed intellectual development; detected at puberty"],
+    ["Shereshevsky-Turner", "45,X (mosaic 45,X/46,XX)", "Negative", "Female phenotype, short stature, skin folds on a short neck (“sphinx neck”), lymphedema of hands and feet in the newborn, broad chest, sexual infantilism, primary amenorrhea, infertility, coarctation of the aorta; intelligence usually normal"],
+    ["Trisomy X", "47,XXX", "Two bodies", "Female phenotype, often without signs; sometimes tall stature, slightly reduced intelligence, early menopause"],
+    ["Disomy Y", "47,XYY", "Negative", "Tall stature, sometimes behavioral changes; usually fertile and healthy"]
+   ]},
+   {"type": "p", "text": "**Syndromes caused by changes in chromosome structure:** **cri-du-chat** syndrome (46,5p^−^ — deletion of the short arm of chromosome 5): the infant’s cry resembles a cat’s mewing (underdeveloped larynx), microcephaly, moon face, hypertelorism, severe intellectual disability. **18q^−^ syndrome** (deletion of the long arm of chromosome 18): intellectual disability, microcephaly, facial and ear anomalies. **Wolf-Hirschhorn** (4p^−^), **Williams** (7q11.23 microdeletion) and **DiGeorge** (22q11.2 microdeletion) syndromes also belong to this group."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Common signs of chromosomal diseases: **multiple congenital defects**, delay of intellectual and physical development, a dysmorphic face (minor anomalies) and altered dermatoglyphics. The diagnosis is confirmed only by **karyotyping**. Most of them arise anew (de novo) and are not passed on, because patients are often infertile."}]}
+  ]},
+  {"title": "4. Gene (monogenic) diseases — hereditary disorders of metabolism", "blocks": [
+   {"type": "p", "text": "Most gene diseases are **enzymopathies**: as a result of a mutation an enzyme is not synthesized or its activity decreases, the preceding metabolites accumulate and have a toxic effect, while the next product is deficient. They are mostly inherited as autosomal recessive."},
+   {"type": "img", "src": "data/img/bio/t09_fku_yol.webp", "w": 860, "h": 562, "lang": true, "label": "Figure 9.1", "caption": "Metabolism of phenylalanine and tyrosine and its hereditary disorders: phenylalanine hydroxylase deficiency — phenylketonuria, tyrosinase deficiency — albinism, homogentisate oxidase deficiency — alkaptonuria; impaired thyroxine synthesis — cretinism (P.Kh. Kholikov et al., 2022)."},
+   {"type": "table", "title": "Table 9.4. Hereditary diseases of metabolism", "head": ["Group", "Disease", "Deficient enzyme / cause", "Main signs"], "rows": [
+    ["Amino acids", "Phenylketonuria (PKU)", "Phenylalanine hydroxylase", "Intellectual disability, seizures, light skin and hair, “mousy” odor; preventable by diet"],
+    ["Amino acids", "Albinism", "Tyrosinase", "No melanin in skin, hair and eyes, photophobia, predisposition to skin cancer"],
+    ["Amino acids", "Alkaptonuria", "Homogentisate oxidase", "Urine darkens in air, pigmentation of cartilage (ochronosis), arthritis"],
+    ["Carbohydrates", "Galactosemia", "Galactose-1-phosphate uridyltransferase", "Vomiting after milk feeding, jaundice, enlarged liver, cataract, intellectual disability; milk-free diet"],
+    ["Carbohydrates", "Glycogenoses (von Gierke and others)", "Enzymes of glycogen breakdown", "Enlarged liver, hypoglycemia"],
+    ["Lipids", "Familial hypercholesterolemia", "LDL receptor (autosomal dominant)", "Early atherosclerosis, xanthomas, myocardial infarction at a young age"],
+    ["Lipids (sphingolipidoses)", "Tay-Sachs disease", "Hexosaminidase A", "Progressive damage to the nervous system, “cherry-red spot” in the eye, early death"],
+    ["Purines and pyrimidines", "Lesch-Nyhan syndrome", "Hypoxanthine-guanine phosphoribosyltransferase (X-linked)", "Increased uric acid, intellectual disability, self-injury"],
+    ["Purines and pyrimidines", "Gout (some forms)", "Disorder of uric acid metabolism", "Urate crystals in joints, arthritis"],
+    ["Proteins (hemoglobinopathies)", "Sickle cell anemia, thalassemias", "Disorder of the structure or synthesis of globin chains", "Hemolytic anemia, vaso-occlusion"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t09_fku_irsiy.webp", "w": 1201, "h": 807, "lang": true, "label": "Figure 9.2", "caption": "Autosomal recessive inheritance of phenylketonuria: two healthy carrier (heterozygous) parents have healthy, carrier and affected children in a 1 : 2 : 1 ratio (P.Kh. Kholikov et al., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Phenylketonuria, galactosemia and congenital hypothyroidism are detected by **newborn screening**: a drop of blood from the baby’s heel is tested. A special diet or hormone therapy started early (in the first weeks of life) prevents intellectual disability."}]}
+  ]},
+  {"title": "5. Diseases with hereditary predisposition. Genocopy and phenocopy", "blocks": [
+   {"type": "p", "text": "**Diseases with hereditary predisposition (multifactorial)** are produced by the sum of the small effects of several genes (a polygenic system) together with environmental factors. They are the most common (hypertension, atherosclerosis, type 2 diabetes, bronchial asthma, peptic ulcer, schizophrenia, psoriasis, many congenital defects). Typical features: clustering of the disease in families, but not in Mendelian ratios; the risk rises with closer kinship and with more affected persons in the family; prevention is possible by changing environmental factors (diet, smoking, stress)."},
+   {"type": "table", "title": "Table 9.5. Genocopy and phenocopy", "head": ["Concept", "Definition", "Example"], "rows": [
+    ["Genocopy", "Appearance of the same (similar) phenotype as a result of mutations of different genes", "Hemophilia A (factor VIII) and B (factor IX); deafness due to mutations in different genes"],
+    ["Phenocopy", "Appearance, under the influence of environmental factors, of a trait resembling a hereditary disease but not inherited", "Deafness and cataract from rubella virus in pregnancy; cretinism from iodine deficiency; phocomelia from thalidomide"]
+   ]}
+  ]},
+  {"title": "6. Types of marriage and kinship", "blocks": [
+   {"type": "p", "text": "**Outbreeding** is marriage between unrelated persons; it reduces the probability that recessive alleles become homozygous and increases heterozygosity in the population. **Inbreeding** is marriage between relatives. Relatives may have received the same recessive alleles from a common ancestor, so such marriages increase the frequency of autosomal recessive diseases, congenital defects, stillbirths and miscarriages."},
+   {"type": "table", "title": "Table 9.6. Degrees of kinship and the proportion of shared genes", "head": ["Degree", "Relatives", "Proportion of shared genes", "Inbreeding coefficient of the children (F)"], "rows": [
+    ["I", "Parent — child, brothers and sisters", "1/2", "1/4 (incest — prohibited)"],
+    ["II", "Grandparent — grandchild, uncle (aunt) — nephew (niece), half-siblings", "1/4", "1/8"],
+    ["III", "First cousins (children of first-degree relatives)", "1/8", "1/16"],
+    ["IV", "Second cousins", "1/32", "1/64"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "In a marriage of first cousins the risk of a child with severe hereditary pathology is about 2 times higher (≈ 5–6 %) than the risk in the general population (≈ 3 %); if there is a recessive disease in the family, the risk is even higher. Such couples should definitely undergo genetic counseling."}]}
+  ]},
+  {"title": "7. Medical genetic counseling (MGC)", "blocks": [
+   {"type": "p", "text": "**Medical genetic counseling** is specialized medical care aimed at preventing the birth of children with hereditary pathology. Its aim is to determine and explain the level of genetic risk to the family and to help it make a decision about having children. Counseling is **prospective** (before marriage or pregnancy, before an affected child is born) or **retrospective** (after an affected child has been born in the family)."},
+   {"type": "h", "text": "Indications for referral to MGC"},
+   {"type": "list", "ordered": false, "items": [
+    "a child with a hereditary disease or congenital defect in the family;",
+    "consanguineous marriage;",
+    "maternal age over 35;",
+    "recurrent miscarriage, stillbirth, infertility;",
+    "exposure to teratogenic factors (drugs, radiation, infections) during pregnancy;",
+    "high risk in prenatal screening."
+   ]},
+   {"type": "h", "text": "Stages of MGC"},
+   {"type": "list", "ordered": true, "items": [
+    "**Clarifying the diagnosis** — clinical, cytogenetic, biochemical and molecular tests.",
+    "**Drawing a pedigree** and determining the type of inheritance.",
+    "**Calculating the genetic risk** (by Mendel’s laws or empirical tables).",
+    "**Conclusion and explanation** — the risk, the severity of the disease and the possibilities of treatment and prenatal diagnosis are explained to the family in plain words; the decision is made by the family."
+   ]},
+   {"type": "table", "title": "Table 9.7. Levels of genetic risk", "head": ["Level", "Risk", "Recommendation"], "rows": [
+    ["Low", "up to 5 %", "No contraindication to having children"],
+    ["Moderate", "6–20 %", "Depends on the severity of the disease and the possibility of prenatal diagnosis"],
+    ["High", "more than 20 %", "Prenatal diagnosis is mandatory; donor gametes, adoption and preimplantation diagnosis are discussed"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: calculating the recurrence genetic risk in a family", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Establish the diagnosis of the proband’s disease and its type of inheritance (pedigree, karyotype, biochemical analysis).",
+    "For a monogenic disease write the parents’ genotypes: in AR both Aa, in AD one Aa, in X-recessive the mother X^A^X^a^.",
+    "Calculate the risk by Mendel’s laws: AR — 25 %, AD — 50 %, X-recessive — 50 % for sons.",
+    "For a chromosomal disease examine the parents’ karyotypes: in simple trisomy the recurrence risk is low (≈ 1 % + age-related risk), in balanced translocation carriage it is high.",
+    "For multifactorial diseases use empirical risk tables.",
+    "Assign the risk level (low, moderate, high) and explain the possibility of prenatal diagnosis."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "How do hereditary and congenital diseases differ? How are hereditary diseases classified?",
+  "Name the causes, forms, signs and diagnosis of Down syndrome.",
+  "What are the karyotype and main signs of Edwards and Patau syndromes?",
+  "Name the cause, signs and diagnostic methods of Klinefelter syndrome.",
+  "What are the cause and signs of Shereshevsky-Turner syndrome?",
+  "Describe trisomy X and the XYY syndrome.",
+  "What are the cause and signs of cri-du-chat syndrome and 18q^−^ syndrome?",
+  "Give examples of diseases related to disorders of amino acid metabolism.",
+  "Name the hereditary disorders of carbohydrate and lipid metabolism.",
+  "What diseases result from disorders of purine and pyrimidine metabolism?",
+  "Explain diseases with hereditary predisposition and polygenic inheritance.",
+  "Give examples of genocopy and phenocopy.",
+  "What are the medical genetic aspects of inbreeding and outbreeding marriages?",
+  "Explain the degrees of kinship and the inbreeding coefficient.",
+  "Name the aim, forms, indications and stages of medical genetic counseling."
+ ],
+ "quiz": [
+  {"q": "What is the most common karyotype in Down syndrome?", "options": ["47,XX(XY),+21", "47,XX(XY),+18", "47,XX(XY),+13", "45,X", "47,XXY"], "answer": 0},
+  {"q": "Edwards syndrome is a trisomy of which chromosome?", "options": ["18", "21", "13", "X", "5"], "answer": 0},
+  {"q": "Cleft lip and palate, polydactyly and microphthalmia are typical of which syndrome?", "options": ["Patau", "Down", "Klinefelter", "Turner", "Edwards"], "answer": 0},
+  {"q": "What is the karyotype of Klinefelter syndrome?", "options": ["47,XXY", "45,X", "47,XXX", "47,XYY", "46,XX"], "answer": 0},
+  {"q": "“Sphinx neck”, short stature and primary amenorrhea are typical of which syndrome?", "options": ["Shereshevsky-Turner", "Klinefelter", "Down", "Patau", "Trisomy X"], "answer": 0},
+  {"q": "In which syndrome is X chromatin absent?", "options": ["Shereshevsky-Turner (45,X)", "Klinefelter (47,XXY)", "Trisomy X (47,XXX)", "Normal female (46,XX)", "48,XXXY"], "answer": 0},
+  {"q": "What is the cause of cri-du-chat syndrome?", "options": ["Deletion of the short arm of chromosome 5", "Trisomy of chromosome 21", "X monosomy", "Duplication of the long arm of chromosome 18", "A gene mutation"], "answer": 0},
+  {"q": "Which enzyme is deficient in phenylketonuria?", "options": ["Phenylalanine hydroxylase", "Tyrosinase", "Homogentisate oxidase", "Hexosaminidase A", "Galactose-1-phosphate uridyltransferase"], "answer": 0},
+  {"q": "Darkening of urine in air is typical of which disease?", "options": ["Alkaptonuria", "Albinism", "Phenylketonuria", "Galactosemia", "Gout"], "answer": 0},
+  {"q": "Tay-Sachs disease is a disorder of the metabolism of which substances?", "options": ["Lipids (sphingolipids)", "Amino acids", "Carbohydrates", "Purines", "Minerals"], "answer": 0},
+  {"q": "What is the birth of a deaf child with cataract due to rubella virus in pregnancy called?", "options": ["Phenocopy", "Genocopy", "Pleiotropy", "Mosaicism", "Gene mutation"], "answer": 0},
+  {"q": "What proportion of genes do first cousins share?", "options": ["1/8", "1/2", "1/4", "1/16", "1/32"], "answer": 0},
+  {"q": "The frequency of which diseases especially increases in consanguineous marriages?", "options": ["Autosomal recessive", "Autosomal dominant", "Y-linked", "X-linked dominant", "Infectious"], "answer": 0},
+  {"q": "How is a genetic risk of more than 20 % assessed?", "options": ["High", "Low", "Moderate", "Zero", "Population"], "answer": 0},
+  {"q": "What is counseling given after an affected child has been born in the family called?", "options": ["Retrospective", "Prospective", "Preimplantation", "Population", "Screening"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Case 1", "text": "When the patient’s karyotype was examined, some cells were found to be 45,X and others 46,XX.", "ask": "How can this be explained?", "answer": "This is mosaicism — 45,X/46,XX (the mosaic form of Shereshevsky-Turner syndrome). The zygote was normal (46,XX), but in one of the early cleavage divisions an X chromosome was lost (anaphase lag) or failed to separate, giving rise to two cell lines. The signs are usually milder than in the complete form of the syndrome, and some patients may be fertile."},
+  {"title": "Case 2", "text": "A marriage of first cousins produced 2 children: one had developmental defects, the other severe intellectual disability.", "ask": "Explain the cause genetically.", "answer": "First cousins share 1/8 of their genes, and the inbreeding coefficient of their children is 1/16: there is a high probability that both parents carry the same recessive allele from the common grandparents. As a result the children become homozygous (aa) for that allele and autosomal recessive diseases appear (for example, enzymopathies with intellectual disability such as phenylketonuria, or syndromes of congenital defects). Genetic counseling, clarification of the diagnosis and prenatal diagnosis are recommended before the next pregnancy."},
+  {"title": "Case 3", "text": "A child with a hereditary disease was born in a family that had undergone genetic counseling and in which an affected child was not expected.", "ask": "How can this be explained?", "answer": "Possible reasons: (1) a new (de novo) mutation or chromosomal error arose in a sex cell of one parent — such cases cannot be predicted in advance; (2) low risk does not mean zero risk — the probability was realized; (3) the disease was hidden in the family because of incomplete penetrance or genocopy; (4) germline mosaicism; (5) uncertain paternity or an incorrect diagnosis. The diagnosis of the new child must be clarified and the risk recalculated."}
+ ],
+ "cards": [
+  {"front": "Down syndrome", "back": "47,+21; 1 : 700; risk rises with maternal age"},
+  {"front": "Edwards syndrome", "back": "47,+18; overlapping fingers, rocker-bottom feet"},
+  {"front": "Patau syndrome", "back": "47,+13; cleft lip and palate, polydactyly, microphthalmia"},
+  {"front": "Klinefelter syndrome", "back": "47,XXY; tall stature, gynecomastia, infertility; X chromatin positive"},
+  {"front": "Shereshevsky-Turner syndrome", "back": "45,X; short stature, “sphinx neck”, amenorrhea; X chromatin negative"},
+  {"front": "Cri-du-chat", "back": "46,5p^−^; cry resembling a cat’s mewing"},
+  {"front": "Phenylketonuria", "back": "Phenylalanine hydroxylase deficiency; AR; newborn screening and diet"},
+  {"front": "Phenocopy", "back": "A non-inherited trait resembling a hereditary disease, caused by the environment"},
+  {"front": "First cousins", "back": "Shared genes 1/8; children F = 1/16"},
+  {"front": "Stages of MGC", "back": "Diagnosis → pedigree → risk calculation → conclusion and explanation"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Chromosomal diseases are confirmed by **karyotyping**, enzymopathies by **biochemical** and **molecular** tests."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Trisomy numbers: **“13 — Patau, 18 — Edwards, 21 — Down”** — the smaller the number, the larger the chromosome and the more severe the syndrome."},
+  {"kind": "klinik", "label": "Clinical significance", "text": "Newborn screening (PKU, hypothyroidism, galactosemia) and genetic counseling are the most effective prevention of hereditary diseases."}
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "id": "07",
+ "no": 7,
+ "title": "Odam genetikasini o‘rganish usullari: genealogik, egizaklar va populyatsion-statistik usullar",
+ "goals": [
+  {"type": "p", "text": "Talabaga odamni genetik obyekt sifatida o‘rganishning o‘ziga xos tomonlarini, genealogik usulda shajara tuzish qoidalarini va irsiylanish tiplarini aniqlash mezonlarini, egizaklar usulida irsiyat va muhitning rolini baholashni hamda populyatsion-statistik usul va Xardi-Vaynberg qonunini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "odam genetikasini o‘rganishdagi qiyinchiliklar va usullar tizimini;",
+   "shajara tuzishdagi atamalar va shartli belgilarni;",
+   "autosoma-dominant, autosoma-retsessiv va jinsga birikkan irsiylanish mezonlarini;",
+   "bir va ikki tuxumli egizaklar, konkordantlik va Xolsinger formulasini;",
+   "populyatsiya, dem, izolyat tushunchalarini va Xardi-Vaynberg qonunini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "o‘z oilasi va masala sharti bo‘yicha shajara tuzish va tahlil qilish;",
+   "irsiylanish tipini aniqlash va keyingi farzandlar uchun xavfni baholash;",
+   "Xardi-Vaynberg formulasi bo‘yicha allel va genotiplar chastotasini hisoblash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Odam genetikasining o‘ziga xos tomonlari", "blocks": [
+   {"type": "p", "text": "Odam genetikasi barcha tirik organizmlar uchun umumiy bo‘lgan irsiyat qonunlariga bo‘ysunadi, ammo odamni o‘rganishda klassik duragaylash usulini qo‘llab bo‘lmaydi. Buning sabablari:"},
+   {"type": "list", "ordered": false, "items": [
+    "odamlarda eksperimental (maqsadli) chatishtirish mumkin emas;",
+    "avlodlar almashinuvi sekin (25–30 yil), farzandlar soni kam;",
+    "kariotipi murakkab (46 xromosoma), birikish guruhlari ko‘p;",
+    "odamlarni bir xil muhit sharoitida saqlab kuzatib bo‘lmaydi;",
+    "tibbiy-etik cheklovlar mavjud."
+   ]},
+   {"type": "p", "text": "Shu sababli odam genetikasida maxsus usullar qo‘llaniladi: **genealogik, egizaklar, populyatsion-statistik, sitogenetik, dermatoglifika, biokimyoviy, molekulyar-genetik, immunogenetik** usullar, somatik hujayralar genetikasi va modellashtirish. Odam genetikasining afzalliklari ham bor: odam fenotipi va kasalliklari boshqa organizmlarga qaraganda chuqurroq o‘rganilgan, populyatsiyalar katta, ko‘p avlodlar haqida yozma ma’lumotlar mavjud."}
+  ]},
+  {"title": "2. Genealogik usul (shajara usuli)", "blocks": [
+   {"type": "p", "text": "**Genealogik usul** (F. Galton, 1865) — avlodlar shajarasini tuzish va tahlil qilish orqali belgining irsiy ekanligini, irsiylanish tipini va oila a’zolarining genotipini aniqlash. Usul ikki bosqichdan iborat: ma’lumot yig‘ish va shajara tuzish; shajarani genetik tahlil qilish."},
+   {"type": "table", "title": "Jadval 7.1. Genealogik usulning asosiy atamalari", "head": ["Atama", "Ma’nosi"], "rows": [
+    ["Proband", "Shajara tuzish boshlangan shaxs (odatda shifokorga murojaat qilgan bemor); shajarada strelka bilan ko‘rsatiladi"],
+    ["Sibslar", "Bir ota-onaning farzandlari (aka-uka, opa-singillar)"],
+    ["Avlod", "Shajaradagi bir qator; rim raqamlari bilan belgilanadi, har bir avloddagi shaxslar arab raqamlari bilan chapdan o‘ngga raqamlanadi"],
+    ["Qarindoshlar nikohi", "Ikki chiziq bilan ko‘rsatiladi"],
+    ["Geterozigot tashuvchi", "Doira yoki kvadrat ichida nuqta yoki yarim bo‘yalgan belgi"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t07_belgilar.webp", "w": 1175, "h": 758, "lang": true, "label": "Rasm 7.1", "caption": "Avlodlar shajarasini tuzishda ishlatiladigan asosiy shartli belgilar: erkak (kvadrat), ayol (doira), kasal (bo‘yalgan), nikoh, qarindoshlar nikohi, sibslar, egizaklar, tashuvchilar, o‘lik tug‘ilgan bola va boshqalar (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Shajara tuzish qoidasi: har bir avlod bir gorizontal qatorga yoziladi; ota-onalar nikoh chizig‘i bilan tutashtiriladi, farzandlar undan tushirilgan “rocker” chizig‘iga tug‘ilish tartibida chapdan o‘ngga joylashtiriladi; shajara ostida shartli belgilar izohi (legenda) beriladi."}]}
+  ]},
+  {"title": "3. Irsiylanish tiplarining mezonlari", "blocks": [
+   {"type": "table", "title": "Jadval 7.2. Shajara bo‘yicha irsiylanish tiplarini aniqlash mezonlari", "head": ["Tip", "Asosiy belgilari", "Misollar"], "rows": [
+    ["Autosoma-dominant", "Belgi har bir avlodda uchraydi (“vertikal” tarqalish); kasal farzandning kamida bitta ota-onasi kasal; erkak va ayollar teng kasallanadi; kasal geterozigota va sog‘lom nikohidan farzandlarning 50 % i kasal", "Polidaktiliya, axondroplaziya, Marfan sindromi, Xantington kasalligi, braxidaktiliya"],
+    ["Autosoma-retsessiv", "Belgi avlodlardan sakrab o‘tadi (“gorizontal” tarqalish — sibslarda); kasal bolalar ko‘pincha sog‘lom ota-onadan tug‘iladi; ikki tashuvchi nikohida xavf 25 %; qarindoshlar nikohida tez-tez uchraydi", "Fenilketonuriya, albinizm, mukovistsidoz, Vilson kasalligi, galaktozemiya"],
+    ["X-birikkan retsessiv", "Asosan erkaklar kasal; kasallik ona tomondan (tog‘alar, jiyanlar) o‘tadi; otadan o‘g‘ilga o‘tmaydi", "Gemofiliya, daltonizm, Dyushenn distrofiyasi"],
+    ["X-birikkan dominant", "Ayollar 2 marta ko‘p kasal; kasal otaning barcha qizlari kasal, o‘g‘illari sog‘", "Vitamin D ga rezistent raxit"],
+    ["Y-birikkan (golandrik)", "Faqat erkaklarda, otadan barcha o‘g‘illarga", "Quloq suprasi gipertrixozi"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t07_ar_shajara.webp", "w": 675, "h": 374, "label": "Rasm 7.2", "caption": "Retsessiv belgining (fenilketonuriya) irsiylanishi: kasal farzandlar fenotipik sog‘lom geterozigot (Aa) ota-onalardan tug‘iladi; IV avloddagi kasallar qarindoshlar nikohidan (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Gemofiliya** shajarasining klassik misoli — Buyuk Britaniya qirolichasi **Viktoriya** avlodi (Rasm 7.3). Viktoriya gemofiliya genining tashuvchisi bo‘lgan; uning o‘g‘li Leopold kasal, qizlari Alisa va Beatrisa tashuvchi bo‘lib, gen Germaniya, Rossiya va Ispaniya qirollik oilalariga tarqalgan (rus taxt vorisi Aleksey ham gemofiliyaga chalingan)."},
+   {"type": "img", "src": "data/img/bio/t07_viktoriya.webp", "w": 1292, "h": 658, "lang": true, "label": "Rasm 7.3", "caption": "Gemofiliya kasalligining nasldan-naslga o‘tishi — Buyuk Britaniya qirolichasi Viktoriya avlodi misolida (bo‘yalgan kvadrat — kasal erkak, ichi nuqtali doira — tashuvchi ayol) (P.X. Xolikov va boshq., 2022)."}
+  ]},
+  {"title": "4. Egizaklar usuli", "blocks": [
+   {"type": "p", "text": "**Egizaklar usuli** (F. Galton, 1876) — belgilarning shakllanishida irsiyat va muhitning nisbiy rolini aniqlash uchun bir va ikki tuxumli egizaklarda belgilarni taqqoslash. Odamda egizaklar o‘rtacha 1 % holatda tug‘iladi."},
+   {"type": "table", "title": "Jadval 7.3. Egizaklar turlari", "head": ["Belgi", "Bir tuxumli (monozigotali, BE)", "Ikki tuxumli (dizigotali, IE)"], "rows": [
+    ["Kelib chiqishi", "Bitta zigota maydalanishining ilk bosqichlarida ikkiga bo‘linadi", "Ikkita tuxum hujayra ikki spermatozoid bilan urug‘lanadi"],
+    ["Genotip", "Bir xil (100 % umumiy genlar)", "O‘rtacha 50 % umumiy genlar (oddiy sibslar kabi)"],
+    ["Jinsi", "Doimo bir xil", "Bir xil yoki har xil"],
+    ["Qon guruhlari, dermatoglifika", "Mos keladi", "Mos kelishi ham, kelmasligi ham mumkin"],
+    ["To‘qima ko‘chirib o‘tkazish", "Rad etilmaydi", "Rad etiladi"]
+   ]},
+   {"type": "p", "text": "Ikkala egizakda belgining bir xil bo‘lishi **konkordantlik**, faqat bittasida bo‘lishi **diskordantlik** deyiladi. BE va IE juftlarida konkordantlik foizi taqqoslanadi: BE da konkordantlik IE dagiga nisbatan ancha yuqori bo‘lsa, belgining rivojlanishida irsiyat muhim rol o‘ynaydi. **Irsiylanish koeffitsiyenti** Xolsinger formulasi bilan hisoblanadi:"},
+   {"type": "p", "text": "H = (C~BE~ − C~IE~) / (100 % − C~IE~); E = 1 − H"},
+   {"type": "p", "text": "Bu yerda C — konkordantlik foizi, H — irsiyat ulushi, E — muhit ulushi. H > 0,7 bo‘lsa belgi asosan irsiyat bilan, H < 0,4 bo‘lsa asosan muhit bilan belgilanadi."},
+   {"type": "table", "title": "Jadval 7.4. Ayrim belgi va kasalliklar bo‘yicha egizaklarning konkordantligi (%)", "head": ["Belgi / kasallik", "BE", "IE"], "rows": [
+    ["Ko‘z rangi", "99,5", "28"],
+    ["Qizamiq", "98", "94"],
+    ["Shizofreniya", "69", "10"],
+    ["Qandli diabet (2-tip)", "65", "18"],
+    ["Sil", "37", "15"],
+    ["Daun sindromi", "89", "7"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Qizamiqda konkordantlik BE va IE da deyarli bir xil yuqori — bu kasallikka moyillik asosan muhit (virus bilan to‘qnashuv) bilan bog‘liq. Shizofreniya va 2-tip diabetda esa BE konkordantligi ancha yuqori — bu **irsiy moyillikka ega (multifaktorial) kasalliklar**dir."}]}
+  ]},
+  {"title": "5. Populyatsion-statistik usul", "blocks": [
+   {"type": "p", "text": "**Populyatsiya** — ma’lum hududda uzoq vaqt yashovchi, o‘zaro erkin nikoh quruvchi bir tur individlari guruhi. Odamda katta populyatsiyalar ichida kichik guruhlar ajratiladi: **dem** (1500–4000 kishi, guruh ichidagi nikohlar 80–90 %) va **izolyat** (1500 kishigacha, guruh ichidagi nikohlar 90 % dan ortiq). Izolyatlarda qarindoshlar nikohi ko‘p bo‘lgani uchun retsessiv kasalliklar chastotasi oshadi (geografik, diniy, etnik izolyatlar)."},
+   {"type": "p", "text": "O‘z-o‘zidan otalanuvchi organizmlar populyatsiyasida har avlodda geterozigotalar ulushi ikki baravar kamayib, populyatsiya gomozigot liniyalarga ajraladi. Chetdan otalanuvchi (panmiktik) populyatsiyalarda esa genotiplar nisbati **Xardi-Vaynberg qonuni**ga bo‘ysunadi:"},
+   {"type": "p", "text": "p + q = 1;  p^2^ + 2pq + q^2^ = 1"},
+   {"type": "p", "text": "Bu yerda p — dominant allel (A) chastotasi, q — retsessiv allel (a) chastotasi, p^2^ — AA, 2pq — Aa, q^2^ — aa genotiplar chastotasi. Qonun **ideal populyatsiya** uchun bajariladi: populyatsiya katta, nikohlar tasodifiy (panmiksiya), mutatsiyalar, tabiiy tanlanish va migratsiya yo‘q."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Hisoblash har doim **retsessiv gomozigotalardan** boshlanadi, chunki faqat ularning fenotipi genotipiga mos: masalan, fenilketonuriya 1 : 10000 bo‘lsa, q^2^ = 0,0001, q = 0,01, p = 0,99; geterozigot tashuvchilar 2pq ≈ 0,02, ya’ni har 50 kishidan biri."}]},
+   {"type": "p", "text": "**Populyatsion-statistik usulning bosqichlari:** populyatsiyani tanlash, ma’lumot yig‘ish (kasallik yoki belgining tarqalishi), statistik tahlil. Usul allel va genotiplar chastotasini, irsiy kasalliklar va tashuvchilarning tarqalishini, ularning geografik va etnik farqlarini, mutatsiyalar chastotasini aniqlash va tibbiy-genetik xizmatni rejalashtirish uchun qo‘llaniladi."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: shajarani tuzish va tahlil qilish", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Probanddan boshlab uning sibslari, ota-onasi, bobo-buvilari, ota va ona tomonidagi qarindoshlari haqida ma’lumot yig‘ing (kamida 3 avlod).",
+    "Avlodlarni rim raqamlari bilan, har bir avloddagi shaxslarni arab raqamlari bilan belgilang.",
+    "Shartli belgilar yordamida shajarani chizing, probandni strelka bilan ko‘rsating.",
+    "Belgi har avlodda bormi, ota-onasi sog‘lom farzandlarda uchraydimi, jinslar bo‘yicha taqsimot qanday — tahlil qiling.",
+    "Irsiylanish tipini aniqlang va shaxslarning ehtimoliy genotiplarini yozing.",
+    "Keyingi farzand uchun kasallik xavfini hisoblang."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Odam genetikasini o‘rganishda qanday qiyinchiliklar mavjud?",
+  "Odam genetikasining qanday usullarini bilasiz?",
+  "Genealogik usulning maqsadi va bosqichlari qanday?",
+  "Proband, sibslar tushunchalarini va shajara belgilarini tushuntiring.",
+  "Autosoma-dominant irsiylanish mezonlarini ayting.",
+  "Autosoma-retsessiv irsiylanish mezonlarini ayting. Nima uchun qarindoshlar nikohida retsessiv kasalliklar ko‘payadi?",
+  "Jinsga birikkan irsiylanish shajarada qanday namoyon bo‘ladi?",
+  "Odamda yaxshi o‘rganilgan dominant va retsessiv belgilarga misollar keltiring.",
+  "Bir va ikki tuxumli egizaklar qanday farqlanadi?",
+  "Konkordantlik va diskordantlik nima? Xolsinger formulasini yozing.",
+  "Populyatsiya, dem va izolyat tushunchalarini ta’riflang.",
+  "Xardi-Vaynberg qonuni va uning bajarilish shartlarini ayting.",
+  "Populyatsion-statistik usul nimalarni aniqlash imkonini beradi?"
+ ],
+ "quiz": [
+  {"q": "Shajara tuzish boshlangan shaxs qanday ataladi?", "options": ["Proband", "Sibs", "Geterozigota", "Konkordant", "Izolyat"], "answer": 0},
+  {"q": "Belgi har bir avlodda uchrab, kasal farzandning ota-onasidan biri doimo kasal bo‘lsa, irsiylanish tipi qanday?", "options": ["Autosoma-dominant", "Autosoma-retsessiv", "X-birikkan retsessiv", "Y-birikkan", "Mitoxondrial"], "answer": 0},
+  {"q": "Ikki geterozigot tashuvchi nikohida autosoma-retsessiv kasal bola tug‘ilish ehtimoli qancha?", "options": ["25 %", "50 %", "75 %", "100 %", "0 %"], "answer": 0},
+  {"q": "Qaysi kasallik autosoma-retsessiv irsiylanadi?", "options": ["Fenilketonuriya", "Axondroplaziya", "Marfan sindromi", "Gemofiliya", "Xantington kasalligi"], "answer": 0},
+  {"q": "Qaysi belgi autosoma-dominant irsiylanadi?", "options": ["Polidaktiliya", "Albinizm", "Mukovistsidoz", "Daltonizm", "Galaktozemiya"], "answer": 0},
+  {"q": "Bir tuxumli egizaklarning umumiy genlari ulushi qancha?", "options": ["100 %", "50 %", "25 %", "75 %", "12,5 %"], "answer": 0},
+  {"q": "Ikkala egizakda belgining bir xil bo‘lishi qanday ataladi?", "options": ["Konkordantlik", "Diskordantlik", "Penetrantlik", "Ekspressivlik", "Panmiksiya"], "answer": 0},
+  {"q": "Belgining rivojlanishida irsiyatning roli katta ekanini nima ko‘rsatadi?", "options": ["BE da konkordantlik IE dagiga nisbatan ancha yuqori", "BE va IE da konkordantlik bir xil", "IE da konkordantlik BE dagidan yuqori", "Konkordantlik 0 %", "Faqat IE kasallanadi"], "answer": 0},
+  {"q": "Egizaklar usulini kim taklif qilgan?", "options": ["F. Galton", "G. Mendel", "T. Morgan", "G. Xardi", "N.K. Kolsov"], "answer": 0},
+  {"q": "Xardi-Vaynberg formulasida 2pq nimani bildiradi?", "options": ["Geterozigotalar chastotasini", "Dominant gomozigotalar chastotasini", "Retsessiv gomozigotalar chastotasini", "Dominant allel chastotasini", "Mutatsiyalar chastotasini"], "answer": 0},
+  {"q": "Xardi-Vaynberg qonuni qaysi sharoitda bajariladi?", "options": ["Katta panmiktik populyatsiyada, tanlanish va migratsiya bo‘lmaganda", "Kichik izolyatlarda", "Qarindoshlar nikohi ko‘p bo‘lganda", "Mutatsiyalar ko‘p bo‘lganda", "Tabiiy tanlanish kuchli bo‘lganda"], "answer": 0},
+  {"q": "Populyatsiyada retsessiv kasallik chastotasi 1 : 10000 bo‘lsa, q nimaga teng?", "options": ["0,01", "0,0001", "0,1", "0,99", "0,02"], "answer": 0},
+  {"q": "Guruh ichidagi nikohlar 90 % dan ortiq bo‘lgan kichik populyatsiya qanday ataladi?", "options": ["Izolyat", "Dem", "Panmiktik populyatsiya", "Tur", "Klon"], "answer": 0},
+  {"q": "Kasallik faqat ona tomonidagi erkak qarindoshlarda uchrasa, qanday irsiylanish taxmin qilinadi?", "options": ["X-birikkan retsessiv", "Y-birikkan", "Autosoma-dominant", "X-birikkan dominant", "Autosoma-retsessiv"], "answer": 0},
+  {"q": "Qaysi kasallikda BE va IE konkordantligi deyarli bir xil va yuqori?", "options": ["Qizamiq", "Shizofreniya", "Daun sindromi", "2-tip qandli diabet", "Ko‘z rangi"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Proband — gemofiliya bilan og‘rigan o‘g‘il bola, ota-onasi sog‘lom. Probandning ona tomonidan bobosi gemofilik, buvisi sog‘lom. Ota tomonida gemofiliya kuzatilmagan.", "ask": "Shajara tuzib, irsiylanish tipini va oila a’zolarining genotipini aniqlang.", "answer": "Kasallik faqat erkaklarda, ona tomondan (bobo → ona → nevara) o‘tgan, otadan o‘g‘ilga o‘tish yo‘q — X-birikkan retsessiv tip. Bobo — X^h^Y, buvi — X^H^X^H^; ularning qizi (probandning onasi) majburiy tashuvchi — X^H^X^h^; probandning otasi — X^H^Y; proband — X^h^Y. Bu oilada keyingi o‘g‘illarning gemofilik bo‘lish xavfi 50 %, qizlarning tashuvchi bo‘lish xavfi 50 %."},
+  {"title": "Masala 2", "text": "Shaharda aholining 51 % i qo‘y ko‘zli, 49 % i ko‘k ko‘zli. Qo‘y ko‘zlilik (A) ko‘k ko‘zlilik (a) ustidan to‘liq dominant.", "ask": "Populyatsiyada gomozigot va geterozigot genotiplarning chastotasi qanday?", "answer": "Ko‘k ko‘zlilar — retsessiv gomozigotalar: q^2^ = 0,49 → q = 0,7; p = 1 − 0,7 = 0,3. AA = p^2^ = 0,09 (9 %), Aa = 2pq = 2 · 0,3 · 0,7 = 0,42 (42 %), aa = 0,49 (49 %). Tekshiruv: 9 + 42 + 49 = 100 %."},
+  {"title": "Masala 3", "text": "Kelib chiqishi bir xil, ammo turli sharoitda yashovchi ikki populyatsiyada ma’lum bir retsessiv kasallik chastotasi keskin farq qiladi: birida 1 : 5000, ikkinchisida 1 : 50000.", "ask": "Sababini tushuntiring.", "answer": "Chastota yuqori bo‘lgan populyatsiya, ehtimol, izolyat yoki dem: unda qarindoshlar nikohi ko‘p (inbriding), genlar dreyfi va “asoschi effekti” (kichik guruhdan kelib chiqqan aholida tasodifan ko‘p tarqalgan allel) ta’sir qiladi. Bunday populyatsiyada retsessiv allellar gomozigot holatga tez-tez o‘tadi. Katta panmiktik populyatsiyada esa qarindoshlar nikohi kam va allel kamroq namoyon bo‘ladi."}
+ ],
+ "cards": [
+  {"front": "Proband", "back": "Shajara tuzish boshlangan shaxs; strelka bilan belgilanadi"},
+  {"front": "Sibslar", "back": "Bir ota-onaning farzandlari"},
+  {"front": "Autosoma-dominant", "back": "Har avlodda, erkak va ayolda teng; xavf 50 %"},
+  {"front": "Autosoma-retsessiv", "back": "Avlodlardan sakraydi, sog‘lom ota-onadan; xavf 25 %; qarindoshlar nikohi"},
+  {"front": "Bir tuxumli egizaklar", "back": "Bitta zigotadan; genotip 100 % bir xil, jinsi bir xil"},
+  {"front": "Konkordantlik", "back": "Ikkala egizakda belgining bir xil bo‘lishi"},
+  {"front": "Xolsinger formulasi", "back": "H = (C~BE~ − C~IE~) / (100 % − C~IE~)"},
+  {"front": "Izolyat", "back": "1500 kishigacha, ichki nikohlar 90 % dan ortiq"},
+  {"front": "Xardi-Vaynberg qonuni", "back": "p^2^ + 2pq + q^2^ = 1; ideal katta panmiktik populyatsiyada"},
+  {"front": "Hisoblash boshlanishi", "back": "Retsessiv gomozigotalardan: q = √(aa chastotasi)"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Dominant tip — **“vertikal”** (har avlodda), retsessiv tip — **“gorizontal”** (sibslarda, avlodlardan sakrab)."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Xardi-Vaynberg — kvadrat ko‘paytma: **(p + q)^2^ = p^2^ + 2pq + q^2^** — AA, Aa, aa."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Shajara tahlili tibbiy-genetik maslahatning asosi: u irsiylanish tipini va keyingi farzand uchun xavfni aniqlashga, egizaklar usuli esa ko‘p omilli kasalliklarda irsiyat ulushini baholashga imkon beradi."}
+ ]
+}

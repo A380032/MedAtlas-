@@ -1,0 +1,255 @@
+{
+ "id": "01",
+ "no": 1,
+ "title": "The microscope and the rules of working with it. Preparing temporary slides. Viruses. Prokaryotic and eukaryotic cells, their structure and differences",
+ "goals": [
+  {"type": "p", "text": "To teach the student the tasks of biology and the main properties of life, the cell theory, the structure of the light and electron microscope and the rules of working with them, the technique of preparing a temporary slide, and the structure and medical importance of the non-cellular (viruses) and cellular (prokaryotic and eukaryotic) forms of life."},
+  {"type": "sub", "text": "By the end of the class the student should know:"},
+  {"type": "list", "ordered": false, "items": [
+   "the main properties of life and its levels of organization;",
+   "the main statements of the cell theory and the methods of studying the cell;",
+   "the mechanical, optical and illuminating parts of the light microscope and the types of microscopes;",
+   "the structure and reproduction of viruses and bacteriophages and the diseases they cause;",
+   "the main differences between prokaryotic and eukaryotic cells."
+  ]},
+  {"type": "sub", "text": "The student should be able to:"},
+  {"type": "list", "ordered": false, "items": [
+   "set up the microscope and examine a slide under the low-power and high-power objective;",
+   "calculate the total magnification;",
+   "prepare a temporary slide (onion skin epidermis);",
+   "recognize and correct mistakes made while working with the microscope."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Biology and the main properties of life", "blocks": [
+   {"type": "p", "text": "**Biology** (Greek *bios* — life, *logos* — science) is the science that studies all manifestations of life: the structure, function, development and origin of organisms and their relationships with each other and with the environment. The term was introduced independently by J.B. Lamarck and G. Treviranus at the beginning of the XIX century. **Medical biology** studies the human body as a biological object and is the foundation for histology, physiology, biochemistry, microbiology, pathology and the clinical sciences."},
+   {"type": "p", "text": "Biology uses **observation, description, comparison, experiment, the historical method, modeling** and **statistical** methods. Living nature differs from non-living nature by the following set of properties:"},
+   {"type": "table", "title": "Table 1.1. The main properties of life", "head": ["Property", "Meaning"], "rows": [
+    ["Unity of chemical composition", "Based on proteins and nucleic acids; rich in the organogenic elements C, H, O, N"],
+    ["Metabolism and energy exchange", "Unity of assimilation (synthesis) and dissimilation (breakdown)"],
+    ["Self-reproduction", "Reproduction; based on DNA replication"],
+    ["Self-regulation", "Homeostasis — keeping the internal environment constant"],
+    ["Self-renewal", "Constant replacement of the component parts"],
+    ["Heredity and variability", "Passing traits to the next generation and producing new traits"],
+    ["Irritability", "Responding to external and internal stimuli"],
+    ["Growth and development", "Individual (ontogenesis) and historical (phylogenesis) development"],
+    ["Discreteness and integrity", "The organism consists of separate parts but works as a single system"]
+   ]},
+   {"type": "h", "text": "Levels of organization of life"},
+   {"type": "list", "ordered": true, "items": [
+    "**Molecular-genetic** — nucleic acids and proteins; storing and transmitting hereditary information.",
+    "**Cellular** — the cell is the smallest structural and functional unit of life.",
+    "**Tissue and organ** — groups of specialized cells in multicellular organisms.",
+    "**Organism (ontogenetic)** — the whole individual and its development.",
+    "**Population-species** — a group of freely interbreeding individuals of a species; the elementary unit of evolution.",
+    "**Biogeocenotic and biosphere** — exchange of matter and energy between organisms and the environment."
+   ]},
+   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Order of the levels: **“My Cat Takes Only Pure Biscuits”** — Molecule, Cell, Tissue, Organism, Population, Biosphere."}]}
+  ]},
+  {"title": "2. The cell theory and methods of studying the cell", "blocks": [
+   {"type": "p", "text": "The cell was first seen in 1665 by the English scientist **R. Hooke** in a section of cork; he called it a “cell”. **A. Leeuwenhoek** observed unicellular organisms, erythrocytes and spermatozoa; **R. Brown** discovered the nucleus in 1831. In 1838–1839 **M. Schleiden** and **T. Schwann** created the cell theory, and in 1858 **R. Virchow** added the statement “Every cell comes only from a cell” (*Omnis cellula e cellula*)."},
+   {"type": "h", "text": "Main statements of the modern cell theory"},
+   {"type": "list", "ordered": true, "items": [
+    "The cell is the elementary unit of structure, function and development of life.",
+    "The cells of all organisms are similar (homologous) in structure, chemical composition and life processes.",
+    "Cells reproduce only by division of a mother cell.",
+    "In a multicellular organism cells unite into tissues and organs and form an integrated system.",
+    "The cells of an organism are totipotent — all cells contain the same genetic information, but different genes are active in them (differentiation)."
+   ]},
+   {"type": "table", "title": "Table 1.2. Methods of studying the cell", "head": ["Method", "Principle and use"], "rows": [
+    ["Light microscopy", "Viewing stained and unstained slides; resolving power ≈ 0.2 µm"],
+    ["Electron microscopy", "Ultrastructure of organelles; resolving power ≈ 0.1–1 nm"],
+    ["Cytochemistry and histochemistry", "Detecting substances in the cell (DNA, glycogen, enzymes) by color reactions"],
+    ["Autoradiography", "Following the path of radioactively labeled substances in the cell"],
+    ["Differential centrifugation", "Separating organelles according to their density"],
+    ["Cell and tissue culture", "Growing cells outside the organism (virology, karyotype analysis)"],
+    ["Microsurgery", "Nuclear transfer and injection of substances into a cell with a micromanipulator"]
+   ]}
+  ]},
+  {"title": "3. Structure of the light microscope", "blocks": [
+   {"type": "p", "text": "The light microscope consists of **mechanical**, **optical** and **illuminating** parts (Figure 1.1). The mechanical part holds all the parts together, moves the slide and adjusts the focus; the optical part magnifies the image; the illuminating part directs the light onto the slide."},
+   {"type": "img", "src": "data/img/bio/t01_mikroskop.webp", "w": 900, "h": 1287, "label": "Figure 1.1", "caption": "A teaching light microscope: 1 — eyepiece (ocular); 2 — body tube; 3 — revolving nosepiece; 4 — objective; 5 — stage; 6 — condenser (with diaphragm); 7 — mirror; 8 — coarse adjustment knob; 9 — fine adjustment knob; 10 — arm; 11 — base (Wikimedia Commons photograph, numbers added)."},
+   {"type": "table", "title": "Table 1.3. Parts of the light microscope", "head": ["Part", "Components", "Function"], "rows": [
+    ["Mechanical", "Base, arm, body tube, revolving nosepiece, stage (with clips), coarse and fine adjustment knobs", "Holds the optical parts, positions the slide, brings the image into focus"],
+    ["Optical", "Eyepiece (×7, ×10, ×15) and objectives (×8, ×10, ×40, ×90)", "Magnifies the image of the object"],
+    ["Illuminating", "Mirror (or lamp), condenser, iris diaphragm, light filter", "Collects light, directs it onto the slide and controls its intensity"]
+   ]},
+   {"type": "p", "text": "**Total magnification** = eyepiece magnification × objective magnification. For example, with a ×10 eyepiece and a ×40 objective the object is magnified 400 times. The ×90 objective is an **immersion** objective: a drop of **cedar (immersion) oil**, whose refractive index is close to that of glass, is placed between the slide and the objective."},
+   {"type": "p", "text": "The quality of a microscope is determined not by its magnification but by its **resolving power** — the smallest distance at which two points are still seen as separate. In the light microscope it is about half the wavelength of light (≈ 0.2 µm); therefore small structures such as ribosomes and membranes are visible only in the electron microscope."},
+   {"type": "table", "title": "Table 1.4. Types of microscopes and microscopy", "head": ["Type", "Feature", "Use"], "rows": [
+    ["Stereoscopic (binocular magnifier)", "Low magnification, three-dimensional image", "Viewing insects, worms, embryos"],
+    ["Phase-contrast", "Turns differences in optical density into light-dark contrast", "Viewing unstained living cells"],
+    ["Dark-field", "The object appears bright on a dark background", "Spirochetes, motile bacteria"],
+    ["Luminescence (fluorescence)", "Fluorochromes glow under ultraviolet light", "Detecting microorganisms, antigens, chromosomes (FISH)"],
+    ["Polarizing", "Birefringent structures are visible in polarized light", "Muscle fibers, crystals, bone tissue"],
+    ["Transmission electron (TEM)", "An electron beam passes through an ultrathin section", "Ultrastructure of organelles, viruses"],
+    ["Scanning electron (SEM)", "Electrons reflected from the surface give a three-dimensional image", "Surfaces of cells and tissues, surface of parasites"]
+   ]}
+  ]},
+  {"title": "4. Rules of working with the microscope", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Lift the microscope holding the arm with the right hand and the base with the left; place it 3–5 cm from the edge of the table with the arm facing you.",
+    "Turn the nosepiece to put the **low-power objective (×8 or ×10)** in the center until it clicks.",
+    "Raise the condenser and open the diaphragm. Looking into the eyepiece, turn the mirror until the field of view is evenly lit (with artificial light use the flat side of the mirror, with daylight — the concave side).",
+    "Put the slide on the stage with the coverslip facing up, fix it with the clips and bring the area to be studied under the objective.",
+    "Looking from the side, lower the objective with the coarse adjustment knob to 0.5 cm above the slide; then, looking into the eyepiece, turn the knob **away from yourself** (raising the tube) until a clear image appears.",
+    "Bring the area of interest to the center of the field and switch the nosepiece to the **high-power objective (×40)**; sharpen the image only with the **fine adjustment knob** (turning it no more than half a turn).",
+    "After work put the low-power objective in place, remove the slide, wipe the microscope with a soft cloth and put it in its case."
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "The **coarse adjustment knob** must not be used with the high-power objective: its working distance is about 0.6 mm, so it touches the slide, breaks the coverslip and damages the lens. Do not wipe lenses with your fingers or with paper."}]},
+   {"type": "p", "text": "**Drawing rule:** the slide is viewed with the left eye while both eyes stay open; the drawing is made with the right hand in an album with a simple pencil, the parts are named with pointer lines, and the name of the slide and the magnification are written under the drawing."}
+  ]},
+  {"title": "5. Temporary and permanent microscope slides", "blocks": [
+   {"type": "p", "text": "A **temporary slide** is prepared in a drop of water, glycerol or saline for viewing during one class; it dries quickly and cannot be stored for long. A **permanent slide** is prepared by fixing the tissue, dehydrating it, embedding it in paraffin, cutting it on a microtome into sections 5–7 µm thick, staining it (for example, with hematoxylin and eosin) and mounting it under Canada balsam; it can be kept for many years."},
+   {"type": "h", "text": "Preparing a temporary slide of onion skin epidermis"},
+   {"type": "list", "ordered": true, "items": [
+    "Place 1 drop of water in the middle of a clean glass slide with a pipette.",
+    "With forceps peel a thin, transparent film of epidermis from the inner concave surface of an onion scale.",
+    "Spread the film in the drop, making sure it does not fold.",
+    "Touch the drop with the coverslip held at an angle of 45° and lower it slowly — this way no air bubbles remain.",
+    "Remove the excess water with filter paper; if needed, put a drop of iodine solution at the edge of the coverslip and draw it under with filter paper from the opposite side (the nucleus stains yellow-brown).",
+    "Examine the slide first under low power and then under high power, and draw the cell wall, cytoplasm, nucleus and vacuole."
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Round “cells” with a thick black rim on a slide are often **air bubbles**: when the focus knob is turned, their black rim widens and narrows, while a real cell shows an internal structure (the nucleus)."}]}
+  ]},
+  {"title": "6. The non-cellular form of life — viruses and bacteriophages", "blocks": [
+   {"type": "p", "text": "Viruses were discovered in 1892 by the Russian scientist **D.I. Ivanovsky** while studying tobacco mosaic disease. Viruses are **obligate intracellular parasites** 20–300 nm in size that reproduce only inside living cells. Outside the cell (as a virion) they show no properties of life, but after entering a cell they carry out their own genetic program; that is why they are regarded as a form between living and non-living nature."},
+   {"type": "img", "src": "data/img/bio/t01_viruslar.webp", "w": 1012, "h": 424, "lang": true, "label": "Figure 1.2", "caption": "Viruses of various shapes: herpes virus (icosahedral capsid and envelope), influenza virus (helical nucleocapsid and envelope), tobacco mosaic virus (helical symmetry) and a bacteriophage (complex symmetry) (P.Kh. Kholikov et al., 2022)."},
+   {"type": "h", "text": "Structure of a virus"},
+   {"type": "list", "ordered": false, "items": [
+    "**Nucleic acid** (the genome) — either DNA or RNA (never both); single- or double-stranded.",
+    "**Capsid** — the protein coat surrounding the nucleic acid; built of capsomeres. Nucleic acid + capsid = **nucleocapsid**.",
+    "**Envelope** (supercapsid) — in complex viruses, a lipoprotein membrane taken from the host cell membrane, carrying glycoprotein “spikes” (influenza, HIV, herpes).",
+    "Some viruses carry enzymes: for example, HIV has **reverse transcriptase**, which makes a DNA copy of RNA."
+   ]},
+   {"type": "h", "text": "Reproduction of a virus in the cell"},
+   {"type": "list", "ordered": true, "items": [
+    "**Adsorption** — the virus binds to a specific receptor on the cell surface.",
+    "**Entry** — by endocytosis or membrane fusion; a bacteriophage injects only its nucleic acid.",
+    "**Uncoating** — the capsid breaks down and the genome is released.",
+    "**Synthesis** — viral nucleic acid and proteins are made using the cell’s machinery.",
+    "**Assembly** — new virions are formed.",
+    "**Release** — by lysis of the cell or by budding."
+   ]},
+   {"type": "p", "text": "**Bacteriophages** (phages) are viruses that parasitize bacteria; they were discovered in 1917 by F. d’Hérelle. A phage consists of a head (DNA inside an icosahedral capsid), a tail (a contractile sheath and an inner tube), a base plate and tail fibers (Figure 1.3). **Virulent** phages lyse the bacterium; **temperate** phages insert their DNA into the bacterial chromosome (a prophage), produce lysogeny and carry genes in transduction. Phages are used to treat intestinal infections (phage therapy) and to type bacteria."},
+   {"type": "img", "src": "data/img/bio/t01_bakteriofag.webp", "w": 1257, "h": 769, "lang": true, "label": "Figure 1.3", "caption": "Structure of a bacteriophage: head (DNA inside the capsid), tail, base plate and tail fibers; on the right — phages attached to the surface of a bacterium as seen in the electron microscope (P.Kh. Kholikov et al., 2022)."},
+   {"type": "table", "title": "Table 1.5. Important viral diseases of humans", "head": ["Disease", "Agent (genome)", "Main site affected", "Route of transmission"], "rows": [
+    ["Influenza", "Orthomyxovirus (RNA)", "Respiratory epithelium", "Airborne droplets"],
+    ["Measles", "Paramyxovirus (RNA)", "Respiratory tract, skin", "Airborne droplets"],
+    ["Mumps", "Paramyxovirus (RNA)", "Parotid salivary glands", "Airborne droplets"],
+    ["Poliomyelitis", "Picornavirus (RNA)", "Motor neurons of the spinal cord", "Fecal-oral"],
+    ["Viral hepatitis B", "Hepadnavirus (DNA)", "Liver", "Blood, sexual, mother to child"],
+    ["HIV infection (AIDS)", "Retrovirus (RNA)", "CD4^+^ T lymphocytes", "Blood, sexual, mother to child"],
+    ["Herpes", "Herpesvirus (DNA)", "Skin and mucosa, nerve ganglia", "Contact"],
+    ["Rabies", "Rhabdovirus (RNA)", "Central nervous system", "Animal bite"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Antibiotics do not act on viruses because viruses have no cell wall, no ribosomes and no metabolism of their own. The main measures against viral infections are **vaccination** and **antiviral drugs** acting on the stages of viral reproduction (for example, reverse transcriptase inhibitors in HIV infection)."}]}
+  ]},
+  {"title": "7. Prokaryotic and eukaryotic cells", "blocks": [
+   {"type": "p", "text": "Cellular organisms are divided into two groups. **Prokaryotes** (*pro* — before, *karyon* — nucleus) are bacteria and archaea without a formed nucleus. **Eukaryotes** are the cells of fungi, plants, animals and humans that have a true nucleus."},
+   {"type": "p", "text": "A **bacterial cell** is 0.5–5 µm in size. It consists of a cell wall (peptidoglycan — murein), sometimes a capsule, the cytoplasmic membrane and its folds — **mesosomes**, cytoplasm, **70S ribosomes**, a **nucleoid** (a single circular DNA molecule) and **plasmids** (additional small circular DNA). Most have flagella and pili (fimbriae). By shape, cocci, rods (bacilli), vibrios and spirilla are distinguished. Bacteria reproduce by **binary fission**; under favorable conditions they divide every 20–30 minutes. Under unfavorable conditions some of them form **spores**."},
+   {"type": "p", "text": "**Mycoplasmas** are the smallest free-living prokaryotes, 0.1–0.3 µm in size, without a cell wall; their shape is variable and they are not sensitive to penicillin (they cause pneumonia and urogenital infections)."},
+   {"type": "table", "title": "Table 1.6. Main differences between prokaryotic and eukaryotic cells", "head": ["Feature", "Prokaryotes", "Eukaryotes"], "rows": [
+    ["Nucleus", "Absent; DNA lies in the cytoplasm (nucleoid)", "Nucleus with a two-membrane envelope"],
+    ["Genetic material", "One circular DNA without histones; plasmids", "Several linear chromosomes, DNA bound to histones"],
+    ["Size", "0.5–5 µm", "10–100 µm"],
+    ["Membrane organelles", "Absent (mesosomes present)", "ER, Golgi complex, mitochondria, lysosomes, plastids"],
+    ["Ribosomes", "70S", "80S (70S in mitochondria and plastids)"],
+    ["Cell wall", "Peptidoglycan (murein)", "Cellulose in plants, chitin in fungi, absent in animals"],
+    ["Cytoskeleton", "Not developed", "Microtubules, microfilaments, intermediate filaments"],
+    ["Division", "Binary fission (without mitosis)", "Mitosis, meiosis"],
+    ["Flagella", "Simple, made of the protein flagellin", "Complex, made of microtubules (9 + 2)"],
+    ["Transcription and translation", "Simultaneous, in the cytoplasm", "Transcription in the nucleus, translation in the cytoplasm"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The presence of circular DNA and 70S ribosomes in mitochondria and plastids shows that they originated from ancient prokaryotes (**symbiogenesis theory**)."}]},
+   {"type": "table", "title": "Table 1.7. Important diseases caused by bacteria", "head": ["Disease", "Agent", "Route of transmission"], "rows": [
+    ["Tuberculosis", "*Mycobacterium tuberculosis*", "Airborne droplets, airborne dust"],
+    ["Cholera", "*Vibrio cholerae*", "Water, fecal-oral"],
+    ["Typhoid fever", "*Salmonella typhi*", "Fecal-oral"],
+    ["Bacterial dysentery", "*Shigella*", "Fecal-oral, contact-household"],
+    ["Diphtheria", "*Corynebacterium diphtheriae*", "Airborne droplets"],
+    ["Tetanus", "*Clostridium tetani*", "Through wounds (spores in soil)"],
+    ["Brucellosis", "*Brucella*", "Raw milk, meat, contact with animals"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: examining a slide under the low-power and high-power objective", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Place the microscope correctly and put the low-power objective into working position.",
+    "Raise the condenser, open the diaphragm and light the field of view with the mirror.",
+    "Put the slide on the stage with the coverslip facing up and fix it.",
+    "Looking from the side, lower the objective with the coarse knob to 0.5 cm.",
+    "Looking into the eyepiece, raise the tube and find a clear image.",
+    "Bring the area of interest to the center and switch the nosepiece to the ×40 objective.",
+    "Adjust the sharpness only with the fine adjustment knob.",
+    "Calculate the total magnification and draw the picture in the album."
+   ]}
+  ]},
+  {"title": "Skill: preparing and staining a temporary slide", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Put 1 drop of water on a glass slide.",
+    "Separate the object (onion epidermis) and spread it in the drop.",
+    "Lower the coverslip slowly at an angle of 45°.",
+    "Remove the excess water with filter paper.",
+    "Put the stain (iodine solution) at the edge of the coverslip and draw it under with filter paper from the opposite side.",
+    "Examine the slide under the microscope and identify the parts of the cell."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What does biology study, and what is the place of medical biology in medicine?",
+  "List the main properties of life and give an example of each.",
+  "Name the levels of organization of life.",
+  "When and by whom was the cell theory created? What are its modern statements?",
+  "What methods of studying the cell do you know?",
+  "Name the mechanical, optical and illuminating parts of the light microscope.",
+  "How is total magnification calculated? Why is an immersion objective needed?",
+  "What is the resolving power of a microscope?",
+  "What are the principle and use of phase-contrast, fluorescence and electron microscopy?",
+  "How are temporary and permanent slides prepared?",
+  "Explain the structure of a virus and the stages of its reproduction in the cell.",
+  "How is a bacteriophage built? How do virulent and temperate phages differ?",
+  "How do prokaryotic and eukaryotic cells differ?",
+  "What are the features of mycoplasmas?"
+ ],
+ "quiz": [
+  {"q": "Which scientists created the cell theory?", "options": ["M. Schleiden and T. Schwann", "R. Hooke and A. Leeuwenhoek", "G. Mendel and T. Morgan", "J. Watson and F. Crick", "D. Ivanovsky and F. d’Hérelle"], "answer": 0},
+  {"q": "Who introduced the statement “Every cell comes only from a cell”?", "options": ["R. Virchow", "R. Brown", "T. Schwann", "K. Baer", "Ch. Darwin"], "answer": 0},
+  {"q": "What belongs to the illuminating part of the microscope?", "options": ["Mirror, condenser, diaphragm", "Eyepiece and objective", "Nosepiece and body tube", "Coarse and fine adjustment knobs", "Stage and clips"], "answer": 0},
+  {"q": "With a ×10 eyepiece and a ×40 objective, what is the total magnification?", "options": ["400", "50", "40", "4000", "140"], "answer": 0},
+  {"q": "With which part should the sharpness of the image be adjusted under the high-power objective?", "options": ["Fine adjustment knob", "Coarse adjustment knob", "Revolving nosepiece", "Mirror", "Condenser"], "answer": 0},
+  {"q": "What is placed on the slide when working with an immersion objective?", "options": ["Cedar (immersion) oil", "Distilled water", "Glycerol", "Alcohol", "Iodine solution"], "answer": 0},
+  {"q": "Which type of microscopy is convenient for viewing unstained living cells?", "options": ["Phase-contrast", "Polarizing", "Transmission electron", "Stereoscopic", "Simple magnifier"], "answer": 0},
+  {"q": "Who discovered viruses?", "options": ["D.I. Ivanovsky", "L. Pasteur", "R. Koch", "I.I. Mechnikov", "F. d’Hérelle"], "answer": 0},
+  {"q": "Which statement about the viral genome is correct?", "options": ["It is either DNA or RNA", "It always contains both DNA and RNA", "It is only double-stranded DNA", "It is only RNA", "It is made of protein"], "answer": 0},
+  {"q": "What is the protein coat surrounding the nucleic acid called?", "options": ["Capsid", "Envelope", "Nucleoid", "Capsule", "Mesosome"], "answer": 0},
+  {"q": "Which enzyme of HIV makes a DNA copy of RNA?", "options": ["Reverse transcriptase", "DNA polymerase I", "Restriction enzyme", "Ligase", "Helicase"], "answer": 0},
+  {"q": "Which feature is typical of a prokaryotic cell?", "options": ["Circular DNA and 70S ribosomes", "Nuclear envelope and 80S ribosomes", "Mitochondria and Golgi complex", "Chromosomes bound to histones", "Division by mitosis"], "answer": 0},
+  {"q": "What is the main substance of the bacterial cell wall?", "options": ["Peptidoglycan (murein)", "Cellulose", "Chitin", "Collagen", "Glycogen"], "answer": 0},
+  {"q": "Which are the smallest prokaryotes without a cell wall?", "options": ["Mycoplasmas", "Spirochetes", "Actinomycetes", "Bacilli", "Vibrios"], "answer": 0},
+  {"q": "What is the phage DNA inserted into the bacterial chromosome called?", "options": ["Prophage", "Plasmid", "Capsomere", "Nucleocapsid", "Operon"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Case 1", "text": "A student saw the slide well under the low-power objective, then switched the nosepiece to the high-power objective, but the image disappeared.", "ask": "What are the possible causes, and how should they be corrected?", "answer": "Causes: (1) the area of interest was not brought to the center of the field — the field of the high-power objective is much narrower; (2) the slide is upside down (coverslip facing down), so the high-power objective cannot reach focus; (3) there is not enough light — with the high-power objective the diaphragm must be opened and the condenser raised; (4) the objective was not turned until it clicked into place. Correction: return to the low-power objective, center the area, place the slide correctly, increase the light and adjust only with the fine knob."},
+  {"title": "Case 2", "text": "A student broke the coverslip while working with the high-power objective.", "ask": "What mistake was made?", "answer": "The sharpness under the high-power objective was adjusted with the coarse knob: the working distance of this objective is very small (≈ 0.6 mm), so with the coarse knob the tube drops sharply and the objective hits the slide. The slide may also have been placed upside down. The correct way is to use only the fine adjustment knob with the high-power objective and to bring the objective close to the slide while looking from the side."},
+  {"title": "Case 3", "text": "In a light microscope slide, cells were seen whose flattened nucleus was pressed to the edge of the cell and whose cytoplasm consisted of one large cavity.", "ask": "What cell could this be? Why is the nucleus pushed to the edge?", "answer": "This could be a fat cell (adipocyte) or a mature plant cell with a large central vacuole. In an adipocyte almost all the cytoplasm is occupied by a single large fat droplet; in a plant cell, by the central vacuole filled with cell sap. In both cases the large inclusion or vacuole presses the nucleus and the cytoplasm against the cell wall (to the periphery)."}
+ ],
+ "cards": [
+  {"front": "Total magnification", "back": "Eyepiece × objective (for example, 10 × 40 = 400)"},
+  {"front": "Resolving power", "back": "The smallest distance at which two points are seen as separate; ≈ 0.2 µm in the light microscope"},
+  {"front": "Cell theory", "back": "M. Schleiden and T. Schwann (1838–1839); R. Virchow — “every cell from a cell”"},
+  {"front": "Capsid", "back": "Protein coat surrounding the viral nucleic acid; built of capsomeres"},
+  {"front": "Envelope (supercapsid)", "back": "Lipoprotein outer coat of complex viruses (influenza, HIV)"},
+  {"front": "Bacteriophage", "back": "A virus of bacteria; head, tail, base plate, tail fibers"},
+  {"front": "Nucleoid", "back": "Region of the prokaryotic cytoplasm containing the circular DNA"},
+  {"front": "Plasmid", "back": "Additional small circular DNA of bacteria (antibiotic resistance genes)"},
+  {"front": "Ribosomes", "back": "70S in prokaryotes, 80S in eukaryotes"},
+  {"front": "Mycoplasma", "back": "The smallest prokaryote without a cell wall (0.1–0.3 µm)"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Remember", "text": "Work with the microscope always starts with the **low-power objective**; with the high-power objective only the **fine adjustment knob** is used."},
+  {"kind": "yodlash", "label": "Memory aid", "text": "Structure of a virus “from inside out”: **Genome → Capsid → Envelope** (“GCE — Get Coat, Envelope”)."},
+  {"kind": "klinik", "label": "Clinical significance", "text": "The 70S ribosomes and peptidoglycan wall of bacteria are the targets of antibiotics; because human cells lack them, antibiotics act selectively — and they do not act on viruses."}
+ ]
+}

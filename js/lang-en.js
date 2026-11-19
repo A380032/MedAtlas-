@@ -439,6 +439,7 @@ window.I18N.register("en", {
 "Tibbiy va biologik kimyo": "Medical and Biological Chemistry",
 "Gistologiya, sitologiya va embriologiya": "Histology, Cytology and Embryology",
 "Tibbiy biologiya": "Medical Biology",
+"Tibbiy biologiya va genetika": "Medical Biology and Genetics",
 "Lotin tili va tibbiy terminologiya": "Latin and Medical Terminology",
 "Normal fiziologiya": "Normal Physiology",
 "Biokimyo": "Biochemistry",

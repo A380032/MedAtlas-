@@ -1,0 +1,179 @@
+{
+ "id": "09",
+ "no": 9,
+ "title": "Irsiy kasalliklar: xromosoma kasalliklari, gen va irsiyatga moyil kasalliklar. Nikoh turlari. Tibbiy-genetik maslahat",
+ "goals": [
+  {"type": "p", "text": "Talabaga irsiy kasalliklar tasnifini, autosoma va jinsiy xromosomalar soni hamda tuzilishi o‘zgarishiga bog‘liq sindromlarning sabablari, belgilari va tashxisini, moddalar almashinuvi irsiy kasalliklarini, ko‘p omilli kasalliklarni, qarindoshlar nikohining tibbiy-genetik oqibatlarini va tibbiy-genetik maslahat (TGM) tamoyillarini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "irsiy kasalliklarning tasnifini (xromosoma, gen, ko‘p omilli, mitoxondrial);",
+   "Daun, Edvards, Patau, Klaynfelter, Shereshevskiy-Terner sindromlarining kariotipi va asosiy belgilarini;",
+   "aminokislotalar, uglevodlar, lipidlar, purinlar almashinuvining irsiy buzilishlarini;",
+   "genokopiya va fenokopiya, inbriding va autbriding tushunchalarini;",
+   "TGM ning maqsadi, bosqichlari va genetik xavf darajalarini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "kariotip formulasi bo‘yicha sindromni aniqlash;",
+   "qarindoshlik darajasi bo‘yicha umumiy genlar ulushini hisoblash;",
+   "oila uchun takroriy genetik xavfni baholash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Irsiy kasalliklar tasnifi", "blocks": [
+   {"type": "p", "text": "**Irsiy kasalliklar** — sababi irsiy apparatning (gen, xromosoma, genom) o‘zgarishi bo‘lgan va nasldan-naslga o‘tishi mumkin bo‘lgan kasalliklar. Ular tug‘ma bo‘lishi ham, keyinroq (masalan, Xantington kasalligi 35–45 yoshda) namoyon bo‘lishi ham mumkin. **Tug‘ma kasallik** har doim ham irsiy emas: homila ichida infeksiya yoki teratogen ta’sirida ham tug‘ma nuqsonlar paydo bo‘ladi."},
+   {"type": "table", "title": "Jadval 9.1. Irsiy patologiya tasnifi", "head": ["Guruh", "Sababi", "Misollar"], "rows": [
+    ["Xromosoma kasalliklari", "Xromosomalar soni yoki tuzilishining o‘zgarishi", "Daun, Klaynfelter, Terner, “mushuk chinqirig‘i” sindromlari"],
+    ["Gen (monogen) kasalliklar", "Bitta gen mutatsiyasi; Mendel qonunlari bo‘yicha irsiylanadi", "Fenilketonuriya, gemofiliya, mukovistsidoz, o‘roqsimon hujayrali anemiya"],
+    ["Irsiyatga moyil (ko‘p omilli, multifaktorial) kasalliklar", "Ko‘p genlar va muhit omillarining birgalikdagi ta’siri", "Gipertoniya, 2-tip qandli diabet, yurak ishemik kasalligi, shizofreniya, tug‘ma nuqsonlar (lab kemtigi)"],
+    ["Mitoxondrial kasalliklar", "Mitoxondrial DNK mutatsiyalari; onadan irsiylanadi", "Leber atrofiyasi, MELAS, MERRF"],
+    ["Ona va homilaning genetik nomutanosibligi", "Antigenlar bo‘yicha immun to‘qnashuv", "Rezus-konflikt"]
+   ]}
+  ]},
+  {"title": "2. Autosomalar soni o‘zgarishiga bog‘liq sindromlar", "blocks": [
+   {"type": "table", "title": "Jadval 9.2. Autosoma trisomiyalari", "head": ["Sindrom", "Kariotip", "Chastotasi", "Asosiy belgilari"], "rows": [
+    ["Daun", "47,XX(XY),+21 (≈ 95 %); translokatsion (≈ 4 %); mozaik (≈ 1 %)", "1 : 700", "Aqliy zaiflik, mongoloid ko‘z kesigi, epikant, yassi yuz va ensa, katta til, kalta bo‘yin, kaftda ko‘ndalang chiziq, mushaklar gipotoniyasi, yurak nuqsonlari, leykozga moyillik"],
+    ["Edvards", "47,XX(XY),+18", "1 : 7000", "Kichik tana vazni, dolixotsefaliya, kichik pastki jag‘, past joylashgan deformatsiyalangan quloqlar, barmoqlarning bir-birini qoplab bukilishi (II barmoq III ga), “tebranuvchi” tovon, yurak nuqsonlari; ko‘pchiligi 1 yilgacha nobud bo‘ladi"],
+    ["Patau", "47,XX(XY),+13", "1 : 7000", "Mikrotsefaliya, lab va tanglay kemtigi, mikroftalmiya, polidaktiliya, bosh terisi defektlari, yurak va buyrak nuqsonlari; 1 yilgacha ko‘pchiligi nobud bo‘ladi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Daun sindromining asosiy xavf omili — **onaning yoshi**: 25 yoshda xavf ≈ 1 : 1250, 35 yoshda ≈ 1 : 350, 40 yoshda ≈ 1 : 100, 45 yoshda ≈ 1 : 30. **Translokatsion** shaklda (masalan, 21-xromosomaning 14-xromosomaga Robertson translokatsiyasi) ota-onadan biri muvozanatlangan translokatsiya tashuvchisi bo‘ladi va takroriy xavf yuqori, shuning uchun ota-onaning kariotipi tekshiriladi."}]}
+  ]},
+  {"title": "3. Jinsiy xromosomalar soni o‘zgarishiga va xromosoma tuzilishiga bog‘liq sindromlar", "blocks": [
+   {"type": "table", "title": "Jadval 9.3. Jinsiy xromosomalar anomaliyalari", "head": ["Sindrom", "Kariotip", "X-xromatin", "Asosiy belgilari"], "rows": [
+    ["Klaynfelter", "47,XXY (48,XXXY, 48,XXYY va boshqalar)", "Musbat", "Erkak fenotipi, baland bo‘y, uzun oyoqlar, evnuxoid tana tuzilishi, ginekomastiya, kichik moyaklar, bepushtlik (azoospermiya), ba’zan aqliy rivojlanish sustligi; balog‘atda aniqlanadi"],
+    ["Shereshevskiy-Terner", "45,X (mozaik 45,X/46,XX)", "Manfiy", "Ayol fenotipi, past bo‘y, kalta bo‘yinda teri burmalari (“sfinks bo‘yni”), chaqaloqda qo‘l-oyoq limfatik shishi, keng ko‘krak qafasi, jinsiy infantilizm, birlamchi amenoreya, bepushtlik, aorta koarktatsiyasi; intellekt odatda normal"],
+    ["X trisomiyasi", "47,XXX", "Ikkita tanacha", "Ayol fenotipi, ko‘pincha belgisiz; ba’zan baland bo‘y, intellektning biroz pasayishi, erta menopauza"],
+    ["Disomiya Y", "47,XYY", "Manfiy", "Baland bo‘y, ba’zan xulq-atvor o‘zgarishlari; ko‘pincha fertil va sog‘lom"]
+   ]},
+   {"type": "p", "text": "**Xromosomalar tuzilishining o‘zgarishiga bog‘liq sindromlar:** **“mushuk chinqirig‘i”** sindromi (46,5p^−^ — 5-xromosoma qisqa yelkasining deletsiyasi): chaqaloqning yig‘isi mushuk miyovlashiga o‘xshaydi (hiqildoq rivojlanmaganligi), mikrotsefaliya, oy yuz, gipertelorizm, og‘ir aqliy zaiflik. **18q^−^ sindromi** (18-xromosoma uzun yelkasining deletsiyasi): aqliy zaiflik, mikrotsefaliya, yuz va quloq anomaliyalari. **Vulf-Xirshxorn** (4p^−^), **Uilyams** (7q11.23 mikrodeletsiyasi), **Di Jorji** (22q11.2 mikrodeletsiyasi) sindromlari ham shunday guruhga kiradi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Xromosoma kasalliklarida umumiy belgilar: **ko‘plab tug‘ma nuqsonlar**, aqliy va jismoniy rivojlanishdan orqada qolish, dismorfik (mayda anomaliyali) yuz, o‘zgargan dermatoglifika. Tashxis faqat **kariotip** bilan tasdiqlanadi. Ularning ko‘pchiligi yangi (de novo) paydo bo‘ladi va nasldan-naslga o‘tmaydi, chunki bemorlar ko‘pincha bepusht."}]}
+  ]},
+  {"title": "4. Gen (monogen) kasalliklari — moddalar almashinuvining irsiy buzilishlari", "blocks": [
+   {"type": "p", "text": "Gen kasalliklarining ko‘pchiligi **fermentopatiyalar**: mutatsiya natijasida ferment sintezlanmaydi yoki faolligi pasayadi, oldingi metabolitlar to‘planib zaharli ta’sir ko‘rsatadi, keyingi mahsulot esa yetishmaydi. Ular asosan autosoma-retsessiv irsiylanadi."},
+   {"type": "img", "src": "data/img/bio/t09_fku_yol.webp", "w": 860, "h": 562, "lang": true, "label": "Rasm 9.1", "caption": "Fenilalanin va tirozin almashinuvi va uning irsiy buzilishlari: fenilalaningidroksilaza yetishmasligida — fenilketonuriya, tirozinaza yetishmasligida — albinizm, gomogentizinatoksidaza yetishmasligida — alkaptonuriya; tiroksin sintezi buzilishida — kretinizm (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 9.4. Moddalar almashinuvining irsiy kasalliklari", "head": ["Guruh", "Kasallik", "Yetishmaydigan ferment / sabab", "Asosiy belgilari"], "rows": [
+    ["Aminokislotalar", "Fenilketonuriya (FKU)", "Fenilalaningidroksilaza", "Aqliy zaiflik, tutqanoq, och rangli teri va soch, “sichqon” hidi; parhez bilan oldini olish mumkin"],
+    ["Aminokislotalar", "Albinizm", "Tirozinaza", "Teri, soch va ko‘zda melanin yo‘q, fotofobiya, teri saratoniga moyillik"],
+    ["Aminokislotalar", "Alkaptonuriya", "Gomogentizinatoksidaza", "Siydik havoda qorayadi, tog‘aylar pigmentatsiyasi (oxronoz), artrit"],
+    ["Uglevodlar", "Galaktozemiya", "Galaktoza-1-fosfaturidiltransferaza", "Sut emizilgandan keyin qusish, sariqlik, jigar kattalashishi, katarakta, aqliy zaiflik; sutsiz parhez"],
+    ["Uglevodlar", "Glikogenozlar (Girke va boshq.)", "Glikogen parchalanish fermentlari", "Jigar kattalashishi, gipoglikemiya"],
+    ["Lipidlar", "Oilaviy giperxolesterinemiya", "LPNP retseptori (autosoma-dominant)", "Erta ateroskleroz, ksantomalar, yosh davrda miokard infarkti"],
+    ["Lipidlar (sfingolipidozlar)", "Tey-Saks kasalligi", "Geksozaminidaza A", "Nerv sistemasining progressiv shikastlanishi, ko‘zda “olcha danagi” belgisi, erta o‘lim"],
+    ["Purin va pirimidinlar", "Lesh-Nixan sindromi", "Gipoksantin-guanin-fosforiboziltransferaza (X-birikkan)", "Siydik kislotasi ko‘payishi, aqliy zaiflik, o‘z-o‘zini shikastlash"],
+    ["Purin va pirimidinlar", "Podagra (ayrim shakllari)", "Siydik kislotasi almashinuvi buzilishi", "Bo‘g‘imlarda urat kristallari, artrit"],
+    ["Oqsillar (gemoglobinopatiyalar)", "O‘roqsimon hujayrali anemiya, talassemiyalar", "Globin zanjirlari tuzilishi yoki sintezi buzilishi", "Gemolitik anemiya, vazookklyuziya"]
+   ]},
+   {"type": "img", "src": "data/img/bio/t09_fku_irsiy.webp", "w": 1201, "h": 807, "lang": true, "label": "Rasm 9.2", "caption": "Fenilketonuriyaning autosoma-retsessiv tipda irsiylanishi: ikki sog‘lom tashuvchi (geterozigota) ota-onadan sog‘lom, tashuvchi va kasal farzandlar 1 : 2 : 1 nisbatda tug‘iladi (P.X. Xolikov va boshq., 2022)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Fenilketonuriya, galaktozemiya va tug‘ma gipotireoz **neonatal skrining** bilan aniqlanadi: chaqaloqning tovonidan olingan qon tomchisi tekshiriladi. Erta (hayotning birinchi haftalarida) boshlangan maxsus parhez yoki gormon terapiyasi aqliy zaiflikning oldini oladi."}]}
+  ]},
+  {"title": "5. Irsiyatga moyil kasalliklar. Genokopiya va fenokopiya", "blocks": [
+   {"type": "p", "text": "**Irsiyatga moyil (ko‘p omilli) kasalliklar** — bir nechta genlarning (poligen tizim) kichik ta’sirlari yig‘indisi va muhit omillari birgalikda yuzaga chiqaradigan kasalliklar. Ular eng ko‘p tarqalgan (gipertoniya, ateroskleroz, 2-tip diabet, bronxial astma, oshqozon yarasi, shizofreniya, psoriaz, ko‘plab tug‘ma nuqsonlar). Ularga xos: oilada kasallikning to‘planishi, ammo Mendel nisbatlariga mos kelmasligi; qarindoshlik yaqinlashgan sari va oilada kasallar ko‘p bo‘lsa xavfning oshishi; muhit omillarini (ovqatlanish, chekish, stress) o‘zgartirish orqali profilaktika mumkinligi."},
+   {"type": "table", "title": "Jadval 9.5. Genokopiya va fenokopiya", "head": ["Tushuncha", "Ta’rifi", "Misol"], "rows": [
+    ["Genokopiya", "Turli genlar mutatsiyalari natijasida bir xil (o‘xshash) fenotipning yuzaga chiqishi", "Gemofiliya A (VIII omil) va B (IX omil); turli genlardagi mutatsiyalar sababli karlik"],
+    ["Fenokopiya", "Muhit omillari ta’sirida irsiy kasallikka o‘xshash, ammo irsiylanmaydigan belgining paydo bo‘lishi", "Homiladorlikda qizilcha virusidan karlik va katarakta; yod yetishmasligidan kretinizm; talidomiddan fokomeliya"]
+   ]}
+  ]},
+  {"title": "6. Nikoh turlari va qarindoshlik", "blocks": [
+   {"type": "p", "text": "**Autbriding** — qarindosh bo‘lmaganlar o‘rtasidagi nikoh; u retsessiv allellarning gomozigot holatga o‘tish ehtimolini kamaytiradi va populyatsiyada geterozigotlikni oshiradi. **Inbriding** — qarindoshlar o‘rtasidagi nikoh. Qarindoshlar umumiy ajdoddan bir xil retsessiv allellarni olgan bo‘lishi mumkin, shuning uchun bunday nikohdan autosoma-retsessiv kasalliklar, tug‘ma nuqsonlar, o‘lik tug‘ilish va bola tushishi chastotasi oshadi."},
+   {"type": "table", "title": "Jadval 9.6. Qarindoshlik darajalari va umumiy genlar ulushi", "head": ["Daraja", "Qarindoshlar", "Umumiy genlar ulushi", "Farzandlarning inbriding koeffitsiyenti (F)"], "rows": [
+    ["I", "Ota-ona — farzand, aka-uka va opa-singillar", "1/2", "1/4 (insest — taqiqlangan)"],
+    ["II", "Bobo-buvi — nevara, amaki (tog‘a, amma, xola) — jiyan, o‘gay aka-uka", "1/4", "1/8"],
+    ["III", "Amakivachchalar (birinchi darajali qarindoshlar farzandlari)", "1/8", "1/16"],
+    ["IV", "Ikkinchi darajali amakivachchalar", "1/32", "1/64"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Amakivachchalar nikohida og‘ir irsiy patologiyali bola tug‘ilish xavfi umumiy populyatsiyadagi xavfga (≈ 3 %) qaraganda taxminan 2 marta yuqori (≈ 5–6 %); oilada retsessiv kasallik bo‘lsa, xavf yanada oshadi. Bunday juftlar albatta tibbiy-genetik maslahatdan o‘tishi kerak."}]}
+  ]},
+  {"title": "7. Tibbiy-genetik maslahat (TGM)", "blocks": [
+   {"type": "p", "text": "**Tibbiy-genetik maslahat** — irsiy patologiyali farzand tug‘ilishining oldini olishga qaratilgan ixtisoslashgan tibbiy yordam. Uning maqsadi — oilaga genetik xavf darajasini aniqlash va tushuntirish hamda farzand ko‘rish bo‘yicha qaror qabul qilishga yordam berish. Maslahat **prospektiv** (nikohdan yoki homiladorlikdan oldin, kasal bola tug‘ilmasdan) va **retrospektiv** (oilada kasal bola tug‘ilgandan keyin) bo‘ladi."},
+   {"type": "h", "text": "TGM ga yo‘llanma uchun ko‘rsatmalar"},
+   {"type": "list", "ordered": false, "items": [
+    "oilada irsiy kasallik yoki tug‘ma nuqsonli bola bo‘lsa;",
+    "qarindoshlar nikohi;",
+    "onaning yoshi 35 dan katta;",
+    "takroriy bola tushishi, o‘lik tug‘ilish, bepushtlik;",
+    "homiladorlikda teratogen omillar (dorilar, nurlanish, infeksiyalar) ta’siri;",
+    "prenatal skriningda yuqori xavf."
+   ]},
+   {"type": "h", "text": "TGM bosqichlari"},
+   {"type": "list", "ordered": true, "items": [
+    "**Tashxisni aniqlashtirish** — klinik, sitogenetik, biokimyoviy, molekulyar tekshiruvlar.",
+    "**Shajara tuzish** va irsiylanish tipini aniqlash.",
+    "**Genetik xavfni hisoblash** (Mendel qonunlari yoki empirik jadvallar asosida).",
+    "**Xulosa va tushuntirish** — oilaga xavf, kasallik og‘irligi, davolash va prenatal tashxis imkoniyatlari tushunarli tarzda aytiladi; qaror oila tomonidan qabul qilinadi."
+   ]},
+   {"type": "table", "title": "Jadval 9.7. Genetik xavf darajalari", "head": ["Daraja", "Xavf", "Tavsiya"], "rows": [
+    ["Past", "5 % gacha", "Farzand ko‘rishga qarshi ko‘rsatma yo‘q"],
+    ["O‘rtacha", "6–20 %", "Kasallik og‘irligi va prenatal tashxis imkoniyatiga qarab"],
+    ["Yuqori", "20 % dan ortiq", "Prenatal tashxis majburiy; donor gametalar, farzandlikka olish, preimplantatsion tashxis muhokama qilinadi"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: oilada takroriy genetik xavfni hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Probanddagi kasallikning tashxisi va irsiylanish tipini aniqlang (shajara, kariotip, biokimyoviy tahlil).",
+    "Monogen kasallikda ota-onaning genotipini yozing: AR da ikkalasi Aa, AD da biri Aa, X-retsessivda ona X^A^X^a^.",
+    "Mendel qonunlari bo‘yicha xavfni hisoblang: AR — 25 %, AD — 50 %, X-retsessivda o‘g‘illar uchun 50 %.",
+    "Xromosoma kasalligida ota-onalar kariotipini tekshiring: oddiy trisomiyada takroriy xavf past (≈ 1 % + yoshga bog‘liq xavf), muvozanatlangan translokatsiya tashuvchanligida yuqori.",
+    "Ko‘p omilli kasalliklarda empirik xavf jadvallaridan foydalaning.",
+    "Xavf darajasini (past, o‘rtacha, yuqori) belgilang va prenatal tashxis imkoniyatini tushuntiring."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Irsiy va tug‘ma kasalliklar qanday farqlanadi? Irsiy kasalliklar qanday tasniflanadi?",
+  "Daun sindromining sabablari, shakllari, belgilari va tashxisini ayting.",
+  "Edvards va Patau sindromlarining kariotipi va asosiy belgilari qanday?",
+  "Klaynfelter sindromining sababi, belgilari va tashxis usullarini ayting.",
+  "Shereshevskiy-Terner sindromining sababi va belgilari qanday?",
+  "X trisomiyasi va XYY sindromini tavsiflang.",
+  "“Mushuk chinqirig‘i” sindromi va 18q^−^ sindromining sababi va belgilari qanday?",
+  "Aminokislotalar almashinuvi buzilishi bilan bog‘liq kasalliklarga misollar keltiring.",
+  "Uglevodlar va lipidlar almashinuvi irsiy buzilishlarini ayting.",
+  "Purin va pirimidin almashinuvi buzilishlari qanday kasalliklarga olib keladi?",
+  "Irsiyatga moyil kasalliklar va poligen irsiyat haqida tushuncha bering.",
+  "Genokopiya va fenokopiyaga misollar keltiring.",
+  "Inbriding va autbriding nikohlarining tibbiy-genetik tomonlari qanday?",
+  "Qarindoshlik darajalari va inbriding koeffitsiyentini tushuntiring.",
+  "Tibbiy-genetik maslahatning maqsadi, shakllari, ko‘rsatmalari va bosqichlarini ayting."
+ ],
+ "quiz": [
+  {"q": "Daun sindromining eng ko‘p uchraydigan kariotipi qaysi?", "options": ["47,XX(XY),+21", "47,XX(XY),+18", "47,XX(XY),+13", "45,X", "47,XXY"], "answer": 0},
+  {"q": "Edvards sindromi qaysi xromosoma bo‘yicha trisomiya?", "options": ["18", "21", "13", "X", "5"], "answer": 0},
+  {"q": "Lab va tanglay kemtigi, polidaktiliya, mikroftalmiya qaysi sindromga xos?", "options": ["Patau", "Daun", "Klaynfelter", "Terner", "Edvards"], "answer": 0},
+  {"q": "Klaynfelter sindromi kariotipi qaysi?", "options": ["47,XXY", "45,X", "47,XXX", "47,XYY", "46,XX"], "answer": 0},
+  {"q": "“Sfinks bo‘yni”, past bo‘y va birlamchi amenoreya qaysi sindromga xos?", "options": ["Shereshevskiy-Terner", "Klaynfelter", "Daun", "Patau", "X trisomiyasi"], "answer": 0},
+  {"q": "Qaysi sindromda X-xromatin topilmaydi?", "options": ["Shereshevskiy-Terner (45,X)", "Klaynfelter (47,XXY)", "X trisomiyasi (47,XXX)", "Normal ayol (46,XX)", "48,XXXY"], "answer": 0},
+  {"q": "“Mushuk chinqirig‘i” sindromining sababi nima?", "options": ["5-xromosoma qisqa yelkasining deletsiyasi", "21-xromosoma trisomiyasi", "X monosomiyasi", "18-xromosoma uzun yelkasining duplikatsiyasi", "Gen mutatsiyasi"], "answer": 0},
+  {"q": "Fenilketonuriyada qaysi ferment yetishmaydi?", "options": ["Fenilalaningidroksilaza", "Tirozinaza", "Gomogentizinatoksidaza", "Geksozaminidaza A", "Galaktoza-1-fosfaturidiltransferaza"], "answer": 0},
+  {"q": "Siydikning havoda qorayishi qaysi kasallikka xos?", "options": ["Alkaptonuriya", "Albinizm", "Fenilketonuriya", "Galaktozemiya", "Podagra"], "answer": 0},
+  {"q": "Tey-Saks kasalligi qaysi moddalar almashinuvi buzilishiga kiradi?", "options": ["Lipidlar (sfingolipidlar)", "Aminokislotalar", "Uglevodlar", "Purinlar", "Mineral moddalar"], "answer": 0},
+  {"q": "Homiladorlikda qizilcha virusi ta’sirida kar va kataraktali bola tug‘ilishi qanday ataladi?", "options": ["Fenokopiya", "Genokopiya", "Pleyotropiya", "Mozaitsizm", "Gen mutatsiyasi"], "answer": 0},
+  {"q": "Amakivachchalarning umumiy genlari ulushi qancha?", "options": ["1/8", "1/2", "1/4", "1/16", "1/32"], "answer": 0},
+  {"q": "Qarindoshlar nikohida qaysi kasalliklar chastotasi ayniqsa oshadi?", "options": ["Autosoma-retsessiv", "Autosoma-dominant", "Y-birikkan", "X-birikkan dominant", "Infeksion"], "answer": 0},
+  {"q": "Genetik xavf 20 % dan ortiq bo‘lsa, u qanday baholanadi?", "options": ["Yuqori", "Past", "O‘rtacha", "Nolga teng", "Populyatsion"], "answer": 0},
+  {"q": "Oilada kasal bola tug‘ilgandan keyin o‘tkaziladigan maslahat qanday ataladi?", "options": ["Retrospektiv", "Prospektiv", "Preimplantatsion", "Populyatsion", "Skrining"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Bemorning kariotipi tekshirilganda ayrim hujayralarda 45,X, boshqalarida 46,XX ekanligi aniqlandi.", "ask": "Buni qanday izohlash mumkin?", "answer": "Bu mozaitsizm — 45,X/46,XX (Shereshevskiy-Terner sindromining mozaik shakli). Zigota normal (46,XX) bo‘lgan, ammo maydalanishning ilk bo‘linishlaridan birida X xromosomaning yo‘qolishi (anafaza kechikishi) yoki ajralmasligi natijasida ikki xil hujayra qatori paydo bo‘lgan. Belgilar odatda sindromning to‘liq shakliga qaraganda yengilroq bo‘ladi, ba’zi bemorlar fertil bo‘lishi mumkin."},
+  {"title": "Masala 2", "text": "Amakivachchalar nikohidan 2 ta farzand tug‘ildi: birida rivojlanish nuqsonlari, ikkinchisida og‘ir aqliy zaiflik aniqlandi.", "ask": "Sababini genetik jihatdan asoslang.", "answer": "Amakivachchalarning umumiy genlari ulushi 1/8, farzandlarining inbriding koeffitsiyenti 1/16: umumiy bobo-buvidan kelgan bir xil retsessiv allelni ikkala ota-ona ham tashishi ehtimoli yuqori. Natijada farzandlar shu allel bo‘yicha gomozigota (aa) bo‘lib qoladi va autosoma-retsessiv kasalliklar (masalan, fenilketonuriya kabi aqliy zaiflik bilan kechuvchi fermentopatiyalar yoki tug‘ma nuqsonlar sindromlari) yuzaga chiqadi. Oilaga keyingi homiladorlikdan oldin TGM, tashxisni aniqlashtirish va prenatal tashxis tavsiya etiladi."},
+  {"title": "Masala 3", "text": "Tibbiy-genetik maslahatdan o‘tgan va kasal farzand tug‘ilishi kutilmagan oilada irsiy kasal bola tug‘ildi.", "ask": "Buni qanday tushuntirish mumkin?", "answer": "Mumkin bo‘lgan sabablar: (1) ota-onaning birida jinsiy hujayrada yangi (de novo) mutatsiya yoki xromosoma xatosi paydo bo‘lgan — bunday holatlarni oldindan bashorat qilib bo‘lmaydi; (2) past xavf nol xavf degani emas — ehtimol amalga oshgan; (3) to‘liqsiz penetrantlik yoki genokopiya tufayli oilada kasallik yashirin bo‘lgan; (4) germinal mozaitsizm; (5) otalikning noaniqligi yoki tashxisning noto‘g‘ri qo‘yilgani. Yangi bola tashxisini aniqlashtirib, xavfni qayta hisoblash kerak."}
+ ],
+ "cards": [
+  {"front": "Daun sindromi", "back": "47,+21; 1 : 700; onaning yoshi bilan xavf oshadi"},
+  {"front": "Edvards sindromi", "back": "47,+18; barmoqlarning bir-birini qoplashi, tebranuvchi tovon"},
+  {"front": "Patau sindromi", "back": "47,+13; lab-tanglay kemtigi, polidaktiliya, mikroftalmiya"},
+  {"front": "Klaynfelter sindromi", "back": "47,XXY; baland bo‘y, ginekomastiya, bepushtlik; X-xromatin musbat"},
+  {"front": "Shereshevskiy-Terner sindromi", "back": "45,X; past bo‘y, “sfinks bo‘yni”, amenoreya; X-xromatin manfiy"},
+  {"front": "“Mushuk chinqirig‘i”", "back": "46,5p^−^; mushuk miyovlashiga o‘xshash yig‘i"},
+  {"front": "Fenilketonuriya", "back": "Fenilalaningidroksilaza yetishmasligi; AR; neonatal skrining va parhez"},
+  {"front": "Fenokopiya", "back": "Muhit ta’sirida irsiy kasallikka o‘xshash, irsiylanmaydigan belgi"},
+  {"front": "Amakivachchalar", "back": "Umumiy genlar 1/8; farzandlar F = 1/16"},
+  {"front": "TGM bosqichlari", "back": "Tashxis → shajara → xavfni hisoblash → xulosa va tushuntirish"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Xromosoma kasalliklari — **kariotip**, fermentopatiyalar — **biokimyoviy** va **molekulyar** tekshiruv bilan tasdiqlanadi."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Trisomiyalar raqamlari: **“13 — Patau, 18 — Edvards, 21 — Daun”** — raqam qancha kichik bo‘lsa, xromosoma yirikroq va sindrom og‘irroq."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Neonatal skrining (FKU, gipotireoz, galaktozemiya) va TGM irsiy kasalliklarning eng samarali profilaktikasidir."}
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "id": "10",
+ "no": 10,
+ "title": "Proembrional (progenez), embrional (embriogenez) va postembrional rivojlanishning umumiy qonuniyatlari. Teratogen omillar. Gerontologiya. Regeneratsiya. Gomeostaz. Transplantatsiya",
+ "goals": [
+  {"type": "p", "text": "Talabaga ontogenez davrlarini, gametogenez (spermatogenez va ovogenez) bosqichlarini, tuxum hujayra turlarini, urug‘lanish, maydalanish, gastrulyatsiya va organogenez qonuniyatlarini, ontogenez mexanizmlarini, kritik davrlar va teratogen omillarni, postnatal rivojlanish va qarish, regeneratsiya, transplantatsiya hamda gomeostaz asoslarini o‘rgatish."},
+  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "ontogenez turlari, tiplari va davrlarini;",
+   "spermatogenez va ovogenez bosqichlarini, ulardagi xromosoma to‘plami va DNK miqdorini;",
+   "tuxum hujayralarning sariqlik miqdori va joylashuviga ko‘ra turlarini va maydalanish xillarini;",
+   "gastrulyatsiya usullari va embrional varaqlar hosilalarini;",
+   "embrional induksiya, kritik davrlar va teratogenlarni;",
+   "qarish nazariyalari, regeneratsiya turlari, transplantatsiya turlari va gomeostaz mexanizmlarini."
+  ]},
+  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
+  {"type": "list", "ordered": false, "items": [
+   "gametogenezning har bir bosqichida hujayra genetik formulasini yozish;",
+   "embrional varaqlardan rivojlanadigan a’zolarni aniqlash;",
+   "homiladorlik muddatiga ko‘ra teratogen ta’sir oqibatini baholash."
+  ]}
+ ],
+ "sections": [
+  {"title": "1. Ontogenez va uning davrlari", "blocks": [
+   {"type": "p", "text": "**Ontogenez** (E. Gekkel, 1866) — organizmning individual rivojlanishi: zigota hosil bo‘lgandan (jinssiz ko‘payishda — ona organizmdan ajralgandan) to o‘limigacha bo‘lgan o‘zgarishlar majmui. U **to‘g‘ri** (lichinkasiz — sudralib yuruvchilar, qushlar, sut emizuvchilar) va **bilvosita** (metamorfoz bilan — amfibiyalar, hasharotlar) bo‘ladi. To‘g‘ri rivojlanish o‘z navbatida **tuxum qo‘yish** va **bachadonda (intrauterin)** rivojlanish tiplariga bo‘linadi; odamga intrauterin tip xos."},
+   {"type": "table", "title": "Jadval 10.1. Odam ontogenezining davrlari", "head": ["Davr", "Bosqichlar"], "rows": [
+    ["Proembrional (progenez)", "Gametalar hosil bo‘lishi (gametogenez)"],
+    ["Embrional (prenatal)", "Urug‘lanish, maydalanish, gastrulyatsiya, gisto- va organogenez; embrional davr (8 haftagacha) va homila (fetal) davri (9-haftadan tug‘ilishgacha)"],
+    ["Postembrional (postnatal)", "Yangi tug‘ilgan chaqaloqlik, ko‘krak yoshi, bolalik, o‘smirlik, yetuklik, keksalik, qarilik va o‘lim"]
+   ]}
+  ]},
+  {"title": "2. Progenez: gametogenez va jinsiy hujayralar", "blocks": [
+   {"type": "p", "text": "**Gametogenez** — jinsiy bezlarda gametalarning hosil bo‘lishi. **Spermatogenez** urug‘donning egri-bugri kanalchalarida to‘rt bosqichda, **ovogenez** tuxumdonda uch bosqichda kechadi (Rasm 10.1)."},
+   {"type": "img", "src": "data/img/bio/t10_gametogenez.webp", "w": 1317, "h": 773, "lang": true, "label": "Rasm 10.1", "caption": "Gametogenez — spermatogenez va ovogenez: ko‘payish, o‘sish, yetilish va shakllanish davrlari; har bir bosqichdagi hujayralarning xromosoma to‘plami va DNK miqdori (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 10.2. Spermatogenez va ovogenez bosqichlari", "head": ["Bosqich", "Spermatogenez", "Ovogenez", "Genetik formula"], "rows": [
+    ["Ko‘payish", "Spermatogoniylar mitoz bilan bo‘linadi (balog‘atdan umrbod)", "Ovogoniylar mitoz bilan bo‘linadi (faqat homila davrida)", "2n2c"],
+    ["O‘sish", "I tartibli spermatotsitlar", "I tartibli ovotsitlar (sariqlik to‘planadi); tug‘ilishgacha meyoz I profazasida to‘xtaydi", "2n4c"],
+    ["Yetilish", "Meyoz I → II tartibli spermatotsitlar (n2c) → meyoz II → spermatidalar", "Meyoz I → II tartibli ovotsit + I yo‘naltiruvchi tanacha; meyoz II (urug‘lanishda tugaydi) → tuxum hujayra + II yo‘naltiruvchi tanacha", "n2c → 1n1c"],
+    ["Shakllanish", "Spermatidalardan spermatozoidlar (spermiogenez)", "Yo‘q", "1n1c"],
+    ["Natija", "1 spermatogoniydan 4 ta spermatozoid", "1 ovogoniydan 1 ta tuxum hujayra va 3 ta yo‘naltiruvchi tanacha", "—"]
+   ]},
+   {"type": "p", "text": "**Spermatozoid** — bosh (yadro va uning oldida fermentlarga boy **akrosoma**), bo‘yin (sentriolalar), o‘rta qism (spiral joylashgan mitoxondriyalar — harakat uchun energiya) va dumdan (aksonema, 9 + 2) iborat harakatchan hujayra. Odam spermatozoidi uzunligi ≈ 60 mkm. **Tuxum hujayra** harakatsiz, yirik (odamda ≈ 130–150 mkm), sitoplazmasida oziq moddalar (sariqlik) bo‘ladi; u tiniq qobiq (zona pellucida) va follikulyar hujayralardan iborat **nursimon toj** bilan o‘ralgan."},
+   {"type": "table", "title": "Jadval 10.3. Tuxum hujayralarning sariqlik miqdori va joylashuviga ko‘ra turlari", "head": ["Turi", "Sariqlik", "Organizmlar"], "rows": [
+    ["Aletsital (oligoletsital, izoletsital)", "Juda kam, bir tekis tarqalgan", "Lansetnik, sut emizuvchilar, odam"],
+    ["Mezoletsital (o‘rtacha teloletsital)", "O‘rtacha, vegetativ qutbda ko‘proq", "Amfibiyalar, osetr baliqlari"],
+    ["Poliletsital (keskin teloletsital)", "Juda ko‘p, vegetativ qutbni egallaydi", "Sudralib yuruvchilar, qushlar, ko‘pchilik baliqlar"],
+    ["Sentroletsital", "Markazda joylashgan", "Hasharotlar"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Ovogenezda **diktioten** — I tartibli ovotsitlarning meyoz I diplotenasida tug‘ilishdan to ovulyatsiyagacha (12–50 yil) to‘xtab turishi. Ovulyatsiya oldidan meyoz I tugaydi, meyoz II esa faqat spermatozoid tuxum hujayraga kirganda yakunlanadi."}]}
+  ]},
+  {"title": "3. Embriogenez: urug‘lanish, maydalanish, gastrulyatsiya", "blocks": [
+   {"type": "p", "text": "**Urug‘lanish** — spermatozoid va tuxum hujayraning qo‘shilib, diploid **zigota** hosil bo‘lishi; odamda bachadon nayining ampulyar qismida sodir bo‘ladi. Bosqichlari: spermatozoidlarning tuxum hujayraga yaqinlashishi va **akrosoma reaksiyasi** (fermentlar nursimon toj va zona pellucidani eritadi), bitta spermatozoidning kirishi, **kortikal reaksiya** (boshqa spermatozoidlar kirishiga to‘sqinlik — polispermiyaning oldini olish), erkak va ayol pronukleuslarining qo‘shilishi (singamiya)."},
+   {"type": "p", "text": "**Maydalanish** — zigotaning ketma-ket mitotik bo‘linishi; hosil bo‘lgan hujayralar (**blastomerlar**) o‘smaydi va har bo‘linishda kichrayadi. Maydalanish turi sariqlik miqdoriga bog‘liq: **to‘liq (goloblastik)** — teng (lansetnik) yoki notekis (amfibiyalar, odamda asinxron); **to‘liqsiz (meroblastik)** — diskoidal (qushlar, sudralib yuruvchilar) yoki yuzaki (hasharotlar) (Rasm 10.2). Maydalanish natijasida **morula**, so‘ng bo‘shliqli **blastula** hosil bo‘ladi; sut emizuvchilarda u **blastotsista** (trofoblast + embrioblast) deyiladi va bachadon devoriga 7-kunda **implantatsiya** qilinadi."},
+   {"type": "img", "src": "data/img/bio/t10_maydalanish.webp", "w": 1023, "h": 630, "lang": true, "label": "Rasm 10.2", "caption": "Maydalanish turlari: 1 — radial (lansetnik, sut emizuvchilar); 2 — spiral (yassi va halqali chuvalchanglar, mollyuskalar); 3 — bilateral (askaridalar); 4 — anarxik; o‘ngda — goloblastik, diskoidal va yuzaki maydalanish (P.X. Xolikov va boshq., 2022)."},
+   {"type": "p", "text": "**Gastrulyatsiya** — bir qavatli blastuladan ikki, so‘ng uch qavatli embrion — **gastrula** hosil bo‘lishi; bunda **embrional varaqlar**: **ektoderma**, **endoderma** va **mezoderma** shakllanadi (Rasm 10.3). Usullari: **invaginatsiya** (botib kirish — lansetnik), **immigratsiya** (hujayralarning ichkariga ko‘chishi), **delyaminatsiya** (qavatlanish), **epiboliya** (o‘sib qoplash — amfibiyalar). Keyin **neyrulyatsiya** (nerv nayi va xorda hosil bo‘lishi) va **gisto-organogenez** boshlanadi."},
+   {"type": "img", "src": "data/img/bio/t10_gastrulyatsiya.webp", "w": 1112, "h": 876, "lang": true, "label": "Rasm 10.3", "caption": "Embrional rivojlanishning maydalanish, gastrulyatsiya va gisto-organogenez bosqichlari: 1 — blastotsel; 2 — gastropor; 3 — ektoderma; 4 — endoderma; 5 — mezoderma; 6 — nerv nayi; 7 — xorda; 8 — birlamchi ichak (P.X. Xolikov va boshq., 2022)."},
+   {"type": "table", "title": "Jadval 10.4. Embrional varaqlarning hosilalari", "head": ["Varaq", "Hosil bo‘ladigan to‘qima va a’zolar"], "rows": [
+    ["Ektoderma", "Epidermis va uning hosilalari (soch, tirnoq, ter va sut bezlari), nerv sistemasi, sezgi a’zolari retseptorlari, ko‘z gavhari, tish emali, og‘iz va anal bo‘shliqlari epiteliysi, gipofiz oldingi bo‘lagi, buyrak usti bezi mag‘iz qavati"],
+    ["Endoderma", "Hazm nayi (o‘rta qismi) va nafas yo‘llari epiteliysi, jigar, me’da osti bezi, qalqonsimon, qalqonsimon oldi bezlar va ayrisimon bez epiteliysi, siydik pufagi epiteliysi"],
+    ["Mezoderma", "Skelet, ko‘ndalang-targ‘il va silliq mushaklar, biriktiruvchi to‘qima, yurak va qon tomirlar, qon, buyraklar, jinsiy bezlar, buyrak usti bezi po‘stlog‘i, seroz pardalar"]
+   ]}
+  ]},
+  {"title": "4. Ontogenez mexanizmlari, kritik davrlar va teratogen omillar", "blocks": [
+   {"type": "p", "text": "Ontogenezda hujayralar **bo‘linadi, ko‘chadi, differensiyalanadi** va **nobud bo‘ladi** (apoptoz). Ilk blastomerlar **totipotent** — har biri butun organizmni hosil qila oladi (bir tuxumli egizaklar shu asosda paydo bo‘ladi). **Differensiyalanish** — bir xil genotipli hujayralarda turli genlarning faollashishi natijasida ularning tuzilish va vazifa jihatdan ixtisoslashishi. **Embrional induksiya** (G. Shpeman, 1924) — embrionning bir qismi (induktor, masalan, xordamezoderma) boshqa qismining rivojlanish yo‘nalishini belgilashi (ektodermadan nerv nayi hosil bo‘lishi)."},
+   {"type": "p", "text": "**Kritik davrlar** — embrionning zararli omillarga eng sezgir bo‘lgan davrlari (P.G. Svetlov): **implantatsiya** davri (1–2-hafta — zararli ta’sir “hammasi yoki hech narsa” prinsipi bo‘yicha: embrion nobud bo‘ladi yoki to‘liq tiklanadi) va **organogenez** davri (3–8-hafta — og‘ir tug‘ma nuqsonlar), shuningdek **platsentatsiya** davri. Fetal davrda zararli ta’sirlar asosan funksional buzilishlar va o‘sishning sekinlashuviga olib keladi."},
+   {"type": "table", "title": "Jadval 10.5. Teratogen omillar", "head": ["Guruh", "Misollar", "Oqibatlari"], "rows": [
+    ["Fizik", "Ionlashtiruvchi nurlanish, gipertermiya", "Mikrotsefaliya, aqliy zaiflik"],
+    ["Kimyoviy va dorilar", "Talidomid, retinoidlar, varfarin, valproat, alkogol, nikotin, og‘ir metallar (simob, qo‘rg‘oshin)", "Fokomeliya (talidomid), homila alkogol sindromi, nerv nayi nuqsonlari"],
+    ["Biologik (infeksiyalar)", "Qizilcha, sitomegalovirus, toksoplazma, oqish treponemasi (TORCH)", "Karlik, katarakta, yurak nuqsonlari (qizilcha), gidrotsefaliya, xorioretinit (toksoplazmoz)"],
+    ["Onaning kasalliklari", "Qandli diabet, fenilketonuriya, yod yetishmasligi", "Yurak va skelet nuqsonlari, aqliy zaiflik, kretinizm"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Homiladorlikni rejalashtirishda **foliy kislota** qabul qilish (homiladorlikdan 3 oy oldin va birinchi trimestrda) nerv nayi nuqsonlari xavfini sezilarli kamaytiradi; homiladorlikda alkogol, chekish va shifokor tavsiyasisiz dori qabul qilish taqiqlanadi, qizilchaga qarshi emlash homiladorlikdan oldin o‘tkaziladi."}]}
+  ]},
+  {"title": "5. Postnatal rivojlanish, qarish va o‘lim", "blocks": [
+   {"type": "p", "text": "Postnatal rivojlanishda organizm o‘sadi, a’zolar yetiladi va jinsiy balog‘at sodir bo‘ladi. O‘sish va rivojlanishni **genotip**, **gormonlar** (o‘sish gormoni, tiroksin, jinsiy gormonlar, insulin) va **muhit** omillari (ovqatlanish, jismoniy faollik, ijtimoiy sharoit) boshqaradi. Organizmning biologik yoshi skelet, tish, jinsiy yetilish va boshqa ko‘rsatkichlar bo‘yicha baholanadi va pasport yoshidan farq qilishi mumkin (akseleratsiya va retardatsiya)."},
+   {"type": "p", "text": "**Qarish** — organizmning moslanish imkoniyatlari asta-sekin kamayib, kasallik va o‘lim ehtimoli oshib boradigan qonuniy jarayon. Qarish va keksalikni **gerontologiya**, keksalarning kasalliklari va ularni davolashni **geriatriya** o‘rganadi."},
+   {"type": "table", "title": "Jadval 10.6. Qarishning asosiy nazariyalari", "head": ["Nazariya", "Mohiyati"], "rows": [
+    ["Genetik dastur (Xeyflik chegarasi)", "Odam fibroblastlari kulturada faqat ≈ 50 marta bo‘linadi; har bo‘linishda telomeralar qisqaradi"],
+    ["Erkin radikallar (D. Xarman)", "Kislorodning faol shakllari DNK, oqsil va membranalarni shikastlaydi; shikastlar to‘planadi"],
+    ["Mutatsion (somatik mutatsiyalar)", "Somatik hujayralarda mutatsiyalar to‘planib, hujayralar funksiyasi buziladi"],
+    ["Neyroendokrin", "Gipotalamus va endokrin boshqaruvning yosh bilan o‘zgarishi"],
+    ["Immunologik", "Immunitetning susayishi va autoimmun reaksiyalarning kuchayishi"]
+   ]},
+   {"type": "p", "text": "**Progeriya** — erta (muddatidan oldin) qarish bilan kechadigan irsiy kasallik: bolalardagi Xatchinson-Gilford progeriyasi (lamin A geni mutatsiyasi) va kattalardagi Verner sindromi (DNK helikazasi geni). **O‘lim** — organizm hayot faoliyatining to‘xtashi: **klinik o‘lim** (nafas va yurak faoliyati to‘xtagan, ammo 5–6 daqiqa davomida reanimatsiya bilan tiklash mumkin) va **biologik o‘lim** (qaytarib bo‘lmaydigan o‘zgarishlar, avvalo bosh miya po‘stlog‘ida)."}
+  ]},
+  {"title": "6. Regeneratsiya, transplantatsiya va gomeostaz", "blocks": [
+   {"type": "p", "text": "**Regeneratsiya** — organizmning yo‘qolgan yoki shikastlangan qismlarini tiklashi. **Fiziologik regeneratsiya** — normal hayot jarayonida eskirgan hujayralarning yangilanishi (epidermis, ichak epiteliysi, qon hujayralari). **Reparativ regeneratsiya** — shikastlanishdan keyin tiklanish: **to‘liq** (restitutsiya — avvalgi to‘qima tiklanadi) va **to‘liqsiz** (substitutsiya — chandiq hosil bo‘ladi). Usullari: epimorfoz (jarohat yuzasidan o‘sish), morfallaksis (qolgan qismning qayta qurilishi), regenerativ gipertrofiya (jigar, buyrakda — a’zo hajmi tiklanadi, shakli emas). Regeneratsiya qobiliyati evolyutsiya davomida va yosh bilan kamayadi."},
+   {"type": "table", "title": "Jadval 10.7. Transplantatsiya turlari", "head": ["Turi", "Donor va retsipiyent", "Natija"], "rows": [
+    ["Autotransplantatsiya", "Bitta organizm (o‘zidan o‘ziga — teri, suyak)", "Rad etilmaydi"],
+    ["Izo- (singen) transplantatsiya", "Genetik jihatdan bir xil — bir tuxumli egizaklar", "Rad etilmaydi"],
+    ["Allotransplantatsiya", "Bir turning genetik jihatdan har xil individlari", "HLA mos kelmasa rad etiladi; immunosupressiya zarur"],
+    ["Ksenotransplantatsiya", "Har xil turlar (masalan, cho‘chqadan odamga)", "Kuchli rad etiladi"]
+   ]},
+   {"type": "p", "text": "Transplantatni rad etish — retsipiyent immun tizimining donorning yot **HLA antigenlariga** (gistomoslik antigenlari, 6-xromosomada) javobi. Rad etishning oldini olish uchun donor HLA bo‘yicha tanlanadi va immunosupressorlar qo‘llaniladi. Ko‘z shox pardasi va tog‘ay kabi qon tomirsiz to‘qimalar kam rad etiladi."},
+   {"type": "p", "text": "**Gomeostaz** (U. Kennon, 1929) — organizm ichki muhitining (harorat, pH, osmotik bosim, glyukoza va ionlar miqdori) nisbiy doimiyligini saqlash qobiliyati. U **genetik** (genotip va kariotip barqarorligi — DNK reparatsiyasi), **strukturaviy** (hujayra va to‘qimalar tarkibining saqlanishi — regeneratsiya) va **fiziologik** darajalarda nerv, endokrin va immun tizimlar tomonidan **teskari aloqa** prinsipi bo‘yicha ta’minlanadi."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: gametogenez bosqichlarida genetik formulani aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Ko‘payish davridagi gonial hujayralarni (spermatogoniy, ovogoniy) 2n2c deb belgilang.",
+    "O‘sish davrida S-davrdan keyin I tartibli spermatotsit va ovotsitni 2n4c deb yozing.",
+    "Meyoz I dan keyin II tartibli spermatotsit va ovotsitni n2c deb yozing.",
+    "Meyoz II dan keyin spermatida, spermatozoid va tuxum hujayrani 1n1c deb yozing.",
+    "Odam uchun sonlar bilan ifodalang: 2n = 46, n = 23.",
+    "Bitta boshlang‘ich hujayradan hosil bo‘ladigan gametalar sonini taqqoslang (4 ta spermatozoid va 1 ta tuxum hujayra)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Ontogenez nima? Uning turlari, tiplari va davrlarini ayting.",
+  "Progenez haqida tushuncha bering. Spermatogenez va ovogenez bosqichlarini taqqoslang.",
+  "Spermatozoid va tuxum hujayraning tuzilishini tavsiflang.",
+  "Tuxum hujayralar sariqlik miqdoriga ko‘ra qanday turlarga bo‘linadi?",
+  "Urug‘lanish qanday bosqichlardan iborat? Polispermiyaning oldi qanday olinadi?",
+  "Maydalanish xillarini va ularning sariqlik miqdoriga bog‘liqligini tushuntiring.",
+  "Gastrulyatsiya usullarini ayting. Embrional varaqlardan qaysi a’zolar rivojlanadi?",
+  "Totipotentlik, differensiyalanish va embrional induksiya nima?",
+  "Embriogenezning kritik davrlari va teratogen omillarni ayting.",
+  "Postnatal rivojlanishni qanday omillar boshqaradi?",
+  "Qarish nazariyalarini tushuntiring. Progeriya nima?",
+  "Klinik va biologik o‘lim qanday farqlanadi?",
+  "Regeneratsiya turlari va usullarini ayting.",
+  "Transplantatsiya turlari va transplantatni rad etish mexanizmi qanday?",
+  "Gomeostaz va uning darajalarini tushuntiring."
+ ],
+ "quiz": [
+  {"q": "Spermatogenez nechta bosqichdan iborat?", "options": ["4", "3", "2", "5", "6"], "answer": 0},
+  {"q": "Ovogenezda qaysi bosqich bo‘lmaydi?", "options": ["Shakllanish", "Ko‘payish", "O‘sish", "Yetilish", "Meyoz I"], "answer": 0},
+  {"q": "Bitta ovogoniydan nechta tuxum hujayra hosil bo‘ladi?", "options": ["1", "2", "4", "8", "3"], "answer": 0},
+  {"q": "I tartibli spermatotsitning genetik formulasi qanday?", "options": ["2n4c", "2n2c", "n2c", "1n1c", "4n4c"], "answer": 0},
+  {"q": "Odam tuxum hujayrasi sariqlik miqdoriga ko‘ra qaysi turga kiradi?", "options": ["Aletsital (oligoletsital)", "Poliletsital", "Mezoletsital", "Sentroletsital", "Keskin teloletsital"], "answer": 0},
+  {"q": "Qushlarda maydalanish qanday kechadi?", "options": ["To‘liqsiz diskoidal", "To‘liq teng", "Yuzaki", "To‘liq notekis", "Spiral"], "answer": 0},
+  {"q": "Spermatozoid boshidagi fermentlarga boy tuzilma qanday ataladi?", "options": ["Akrosoma", "Sentriola", "Aksonema", "Mitoxondrial spiral", "Nursimon toj"], "answer": 0},
+  {"q": "Nerv sistemasi qaysi embrional varaqdan rivojlanadi?", "options": ["Ektoderma", "Endoderma", "Mezoderma", "Trofoblast", "Xorda"], "answer": 0},
+  {"q": "Jigar va me’da osti bezi qaysi varaqdan rivojlanadi?", "options": ["Endoderma", "Ektoderma", "Mezoderma", "Neyroektoderma", "Trofoblast"], "answer": 0},
+  {"q": "Embrional induksiyani kim kashf qilgan?", "options": ["G. Shpeman", "E. Gekkel", "K. Ber", "P.G. Svetlov", "L. Xeyflik"], "answer": 0},
+  {"q": "Organogenezning kritik davri homiladorlikning qaysi haftalariga to‘g‘ri keladi?", "options": ["3–8-hafta", "1–2-hafta", "20–24-hafta", "36–40-hafta", "12–16-hafta"], "answer": 0},
+  {"q": "Talidomid qanday tug‘ma nuqsonga sabab bo‘lgan?", "options": ["Fokomeliya", "Anensefaliya", "Lab kemtigi", "Gidrotsefaliya", "Polidaktiliya"], "answer": 0},
+  {"q": "Odam fibroblastlari kulturada taxminan necha marta bo‘linadi (Xeyflik chegarasi)?", "options": ["50", "10", "200", "1000", "5"], "answer": 0},
+  {"q": "Bir tuxumli egizaklar o‘rtasidagi ko‘chirib o‘tkazish qanday ataladi?", "options": ["Izotransplantatsiya", "Allotransplantatsiya", "Ksenotransplantatsiya", "Autotransplantatsiya", "Geterotransplantatsiya"], "answer": 0},
+  {"q": "Shikastlangan jigar hajmining tiklanishi qanday regeneratsiya?", "options": ["Regenerativ gipertrofiya", "Epimorfoz", "Fiziologik regeneratsiya", "Morfallaksis", "Substitutsiya"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 1", "text": "Odamda spermatogenez jarayonida bitta spermatogoniydan 4 ta spermatozoid hosil bo‘ladi.", "ask": "Spermatogenez nechta bosqichdan iborat? Spermatozoidlar qaysi bosqichda hosil bo‘ladi? Ularning xromosoma to‘plami va DNK miqdori qanday?", "answer": "Spermatogenez 4 bosqichdan iborat: ko‘payish (spermatogoniylar, 2n2c), o‘sish (I tartibli spermatotsit, 2n4c), yetilish (meyoz I — II tartibli spermatotsitlar n2c, meyoz II — spermatidalar 1n1c) va shakllanish (spermiogenez — spermatidalardan spermatozoidlar). Spermatozoidlar shakllanish bosqichida hosil bo‘ladi; ular gaploid — 1n1c (odamda 23 xromosoma: 22 autosoma + X yoki Y)."},
+  {"title": "Masala 2", "text": "Odamda ovogenezda bitta ovogoniydan yetilish bosqichida bitta tuxum hujayra hosil bo‘ladi.", "ask": "Ovogenez qanday bosqichlardan iborat? Yetilish bosqichida yana qanday hujayralar hosil bo‘ladi va bu bosqich qaysi jarayon bilan bog‘liq?", "answer": "Ovogenez 3 bosqichdan iborat: ko‘payish (homila davrida tugaydi), o‘sish va yetilish. Yetilishda meyoz I natijasida II tartibli ovotsit va I yo‘naltiruvchi (qutb) tanacha, meyoz II da tuxum hujayra va II yo‘naltiruvchi tanacha hosil bo‘ladi; jami 1 ta tuxum hujayra va 3 ta yo‘naltiruvchi tanacha (sitoplazma notekis taqsimlanib, oziq moddalar tuxum hujayrada to‘planadi). Yetilish balog‘at yoshida har oylik ovulyatsiya bilan bog‘liq: meyoz I ovulyatsiya oldidan tugaydi, meyoz II esa urug‘lanishda yakunlanadi."},
+  {"title": "Masala 3", "text": "Homiladorlikning 5-haftasida ayol uzoq muddat nazoratsiz dori qabul qilgan, keyin homilada yurak va qo‘l-oyoq nuqsonlari aniqlandi. Boshqa ayol homiladorlikning 30-haftasida xuddi shu dorini qabul qilgan, ammo nuqson aniqlanmadi.", "ask": "Natijalarning farqini tushuntiring.", "answer": "5-hafta organogenez kritik davriga (3–8-hafta) to‘g‘ri keladi: bu davrda a’zolar kurtaklari shakllanadi va teratogen ta’sir og‘ir anatomik nuqsonlarga olib keladi. 30-haftada a’zolar allaqachon shakllangan (fetal davr), shuning uchun teratogen ta’sir yirik nuqsonlarga emas, asosan funksional buzilishlar va o‘sishning sekinlashuviga olib kelishi mumkin. Teratogen ta’sirning oqibati moddaning turi, dozasi va homiladorlik muddatiga bog‘liq."}
+ ],
+ "cards": [
+  {"front": "Ontogenez", "back": "Zigotadan o‘limgacha individual rivojlanish (E. Gekkel)"},
+  {"front": "Spermatogenez", "back": "4 bosqich; 1 spermatogoniydan 4 spermatozoid"},
+  {"front": "Ovogenez", "back": "3 bosqich; 1 ovogoniydan 1 tuxum + 3 yo‘naltiruvchi tanacha"},
+  {"front": "Diktioten", "back": "Ovotsitlarning meyoz I diplotenasida yillab to‘xtashi"},
+  {"front": "Aletsital tuxum", "back": "Sariqlik juda kam (odam, sut emizuvchilar); to‘liq maydalanish"},
+  {"front": "Gastrulyatsiya", "back": "Uch embrional varaq hosil bo‘lishi: ekto-, endo-, mezoderma"},
+  {"front": "Embrional induksiya", "back": "Bir qismning boshqa qism rivojlanishini belgilashi (Shpeman)"},
+  {"front": "Kritik davrlar", "back": "Implantatsiya (1–2-hafta) va organogenez (3–8-hafta)"},
+  {"front": "Xeyflik chegarasi", "back": "Odam hujayrasi ≈ 50 marta bo‘linadi; telomeralar qisqaradi"},
+  {"front": "Allotransplantatsiya", "back": "Bir turning har xil individlari; HLA mosligi va immunosupressiya kerak"}
+ ],
+ "summary": [
+  {"kind": "eslab", "label": "Eslab qoling", "text": "Spermatogenez: **4 bosqich → 4 gameta**; ovogenez: **3 bosqich → 1 gameta + 3 tanacha**."},
+  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Embrional varaqlar: **“Ekto — Eshitadi va o‘ylaydi”** (nerv, sezgi, teri), **“Endo — Eydi va nafas oladi”** (hazm, nafas epiteliysi), **“Mezo — Muskul va yurak”** (mushak, skelet, qon)."},
+  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "3–8-haftalar — organogenezning kritik davri: shu davrda dori, alkogol, nurlanish va infeksiyalar eng og‘ir tug‘ma nuqsonlarga sabab bo‘ladi."}
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "lang": "uz",
+ "out": "data/books/bio.pdf",
+ "pdf_title": "Tibbiy biologiya va genetika: mukammal qo'llanma",
+ "author": "Asadbek Axmatkulov",
+ "running": "Tibbiy biologiya va genetika — mukammal qo‘llanma",
+ "cover": {
+  "image": "tools/i18n/books/bio/pdf_cover_uz.jpg",
+  "top": [
+   "O‘ZBEKISTON RESPUBLIKASI SOG‘LIQNI SAQLASH VAZIRLIGI",
+   "TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI",
+   "Gistologiya va tibbiy biologiya kafedrasi fani bo‘yicha"
+  ],
+  "title": "TIBBIY BIOLOGIYA VA GENETIKA",
+  "part": "",
+  "sub": "mukammal qo‘llanma",
+  "kind": "Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma",
+  "by_label": "Tuzuvchi:",
+  "by": "Asadbek Axmatkulov",
+  "affil": "Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi",
+  "city": "Toshkent — 2026"
+ },
+ "imprint": [
+  "**Tuzuvchi:** Asadbek Axmatkulov — Toshkent Davlat Tibbiyot Universiteti, 2-son Davolash ishi fakulteti, 3-kurs talabasi.",
+  "**Tibbiy biologiya va genetika: mukammal qo‘llanma.** Amaliy mashg‘ulotlar uchun o‘quv qo‘llanma. — Toshkent, 2026.",
+  "",
+  "Ushbu qo‘llanma “Tibbiy biologiya va genetika” fanining kalendar-tematik rejasidagi (Davolash ishi, 1-kurs, 1-semestr) 15 ta amaliy mashg‘ulot mavzusi asosida tuzilgan. Unda mikroskop bilan ishlash, hujayra tuzilishi va bo‘linishi, irsiyat qonuniyatlari, genlarning birikkan holda irsiylanishi, molekulyar genetika, odam genetikasini o‘rganish usullari, irsiy kasalliklar, ontogenez, tibbiy protozoologiya, gelmintologiya va araxnoentomologiya, a’zolar sistemalari evolyutsiyasi va ekologiya yoritilgan.",
+  "Har bir bob mashg‘ulot maqsadi, nazariy qism (“Eslab qoling”, “Klinik ahamiyati”, “Yodlash usuli”, “Diqqat” bloklari bilan), amaliy ko‘nikmalar algoritmlari, nazorat savollari, 15 ta test topshirig‘i, 3 ta vaziyatli masala va tezkor takrorlash jadvalidan iborat. Test javoblari kitob oxirida keltirilgan.",
+  "Rasmlarning asosiy qismi P.X. Xolikov va hammualliflarining “Tibbiy biologiya va genetika” darsligidan (2022) olingan; mikroskop fotosurati Wikimedia Commons ochiq litsenziyali manbasidan olingan. Qo‘llanma matni va tuzilishi Claude (Anthropic) sun’iy intellekti yordamida tayyorlangan. Tuzuvchi materialni tanlagan, tuzilishini belgilagan va tekshirgan. Raqamli ma’lumotlarni amaliyotda qo‘llashdan oldin asosiy darsliklar va kafedra materiallari bilan solishtirish tavsiya etiladi.",
+  "Qo‘llanma tibbiyot oliy ta’lim muassasalarining davolash ishi, pediatriya va tibbiy profilaktika fakultetlari 1-kurs talabalari uchun mo‘ljallangan."
+ ],
+ "toc_title": "MUNDARIJA",
+ "preface_title": "So‘zboshi",
+ "preface": [
+  {
+   "type": "p",
+   "text": "Hurmatli talaba! Tibbiy biologiya va genetika — hayotning tuzilish darajalari, hujayra, irsiyat va o‘zgaruvchanlik qonuniyatlari, odamning individual rivojlanishi, parazitizm va organizm bilan muhit munosabatlarini o‘rganuvchi fan. U gistologiya, biokimyo, fiziologiya, mikrobiologiya, patologiya, pediatriya va akusherlik uchun poydevor hisoblanadi: irsiy kasalliklar tashxisi, tibbiy-genetik maslahat, prenatal diagnostika, tug‘ma nuqsonlarning kelib chiqishi va parazitar kasalliklarning profilaktikasi — bularning barchasi shu fan qonuniyatlariga tayanadi."
+  },
+  {
+   "type": "p",
+   "text": "Qo‘llanma kalendar-tematik rejadagi 15 ta mavzuga mos tuzilgan: 1–3-mavzularda hujayra biologiyasi (mikroskopiya, hujayra tuzilishi, hujayra sikli va bo‘linishi), 4–9-mavzularda genetika (Mendel qonunlari, genlarning o‘zaro ta’siri, xromosoma nazariyasi, molekulyar genetika, odam genetikasini o‘rganish usullari, irsiy kasalliklar va tibbiy-genetik maslahat), 10-mavzuda ontogenez, 11–14-mavzularda tibbiy parazitologiya (sodda hayvonlar, so‘rg‘ichlilar, tasmasimon va yumaloq chuvalchanglar, bo‘g‘imoyoqlilar va zaharli hayvonlar), 15-mavzuda a’zolar sistemalari evolyutsiyasi va ekologiya yoritilgan. Har bir bob bir xil tartibda qurilgan:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "**Mashg‘ulot maqsadi** — mashg‘ulot oxirida nimani bilish va nimani bajara olish kerakligi;",
+    "**nazariy qism** — asosiy tushunchalar, jadvallar, sxemalar va darslikdan olingan rasmlar;",
+    "**amaliy ko‘nikmalar** — preparatlar bilan ishlash, genetik masalalar yechish va tahlil bo‘yicha qadamma-qadam algoritmlar;",
+    "**nazorat savollari, test topshiriqlari va vaziyatli masalalar** — o‘zini tekshirish uchun;",
+    "**tezkor takrorlash** — imtihon oldidan bir qarashda takrorlash jadvali."
+   ]
+  },
+  {
+   "type": "p",
+   "text": "Matn ichidagi rangli bloklar quyidagilarni bildiradi:"
+  },
+  {
+   "type": "box",
+   "kind": "eslab",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Eng muhim ta’riflar, qonunlar, raqamlar va tasniflar — albatta yodlash kerak."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "klinik",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Biologik va genetik bilimlarning tibbiyotdagi ahamiyati: irsiy va parazitar kasalliklar, tashxis va profilaktika bilan bog‘liq misollar."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "yodlash",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Yodlashni osonlashtiruvchi usullar va qisqartmalar."
+    }
+   ]
+  },
+  {
+   "type": "box",
+   "kind": "diqqat",
+   "parts": [
+    {
+     "type": "p",
+     "text": "Ko‘p uchraydigan xatolar, chalkashtiriladigan tushunchalar va ehtiyot bo‘lish kerak bo‘lgan holatlar."
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "text": "Qo‘llanmadagi ayrim raqamlar (o‘lchamlar, chastotalar, muddatlar) turli darsliklarda biroz farq qilishi mumkin — bunday hollarda kafedrada qabul qilingan qiymatlarga amal qiling. Parazitologik preparatlar bilan faqat o‘qituvchi nazoratida, xavfsizlik qoidalariga rioya qilgan holda ishlang."
+  },
+  {
+   "type": "p",
+   "text": "Tuzuvchi"
+  }
+ ],
+ "toc_indent": true,
+ "fig_per_row": 2,
+ "labels": {
+  "topic": "{n}-MAVZU",
+  "goals": "Mashg‘ulot maqsadi",
+  "skills": "Amaliy ko‘nikmalar",
+  "questions": "Nazorat savollari",
+  "quiz": "Test topshiriqlari",
+  "cases": "Vaziyatli masalalar",
+  "ask": "Savollar:",
+  "answer": "Javob:",
+  "review": "Tezkor takrorlash",
+  "review_table": "Jadval {n}.{m}.",
+  "review_caption": "{n}-mavzu bo‘yicha asosiy tushunchalar",
+  "q": "Tushuncha",
+  "a": "Qisqa ta’rif",
+  "answers": "Test savollarining javoblari",
+  "answers_row": "{n}-mavzu:",
+  "refs": "Foydalanilgan adabiyotlar"
+ },
+ "box": {
+  "eslab": "ESLAB QOLING",
+  "klinik": "KLINIK AHAMIYATI",
+  "yodlash": "YODLASH USULI",
+  "diqqat": "DIQQAT"
+ },
+ "refs": [
+  {
+   "h": "Asosiy hujjat"
+  },
+  "Tibbiy biologiya va genetika fanidan kalendar-tematik reja (Davolash ishi, 1-kurs, 1-semestr, 2024–2025 o‘quv yili). — Toshkent Davlat Tibbiyot Universiteti, Gistologiya va tibbiy biologiya kafedrasi.",
+  {
+   "h": "Asosiy darsliklar"
+  },
+  "Xolikov P.X., Qurbonov A.Q., Daminov A.O., Tarinova M.V. Tibbiy biologiya va genetika: darslik. 2-nashr. — Toshkent: Tibbiyot nashriyoti matbaa uyi, 2022. — 586 b.",
+  "Nishonboyev K.N., Hamidov J.H. Tibbiy biologiya va genetika: o‘quv qo‘llanma. — Toshkent: O‘zbekiston milliy ensiklopediyasi, 2005.",
+  "Tibbiy biologiya va genetika fanidan mustaqil ish topshiriqlari (1–15-mavzular). — Gistologiya va tibbiy biologiya kafedrasi.",
+  {
+   "h": "Tavsiya etiladigan adabiyotlar"
+  },
+  "Pexov A.P. Biologiya: meditsinskaya biologiya, genetika i parazitologiya. — Moskva: GEOTAR-Media.",
+  "Yarygin V.N. i dr. Biologiya. — Moskva: GEOTAR-Media.",
+  "Alberts B. et al. Molecular Biology of the Cell. 7th ed. — New York: W.W. Norton, 2022.",
+  "Nussbaum R.L., McInnes R.R., Willard H.F. Thompson & Thompson Genetics and Genomics in Medicine. 9th ed. — Philadelphia: Elsevier, 2023.",
+  "Sadler T.W. Langman’s Medical Embryology. 15th ed. — Philadelphia: Wolters Kluwer, 2023.",
+  "John D.T., Petri W.A. Markell and Voge’s Medical Parasitology. 9th ed. — St. Louis: Saunders Elsevier, 2006.",
+  {
+   "h": "Rasmlar manbalari"
+  },
+  "Xolikov P.X. va boshq. Tibbiy biologiya va genetika, 2022 — kitobdagi rasmlarning asosiy qismi.",
+  "Wikimedia Commons, commons.wikimedia.org: yorug‘lik mikroskopi fotosurati (ochiq litsenziya)."
+ ]
+}
