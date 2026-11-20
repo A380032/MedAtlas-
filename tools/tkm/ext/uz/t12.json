@@ -1,0 +1,94 @@
+{
+ "append": {
+  "6": [
+   {"type": "h", "text": "Glikoproteinlar va qon guruhi antigenlari"},
+   {"type": "p", "text": "Oqsillarga kovalent bog‘langan qisqa, tarmoqlangan oligosaxarid zanjirlari **glikoproteinlar**ni hosil qiladi (immunoglobulinlar, gormonlar, membrana retseptorlari, shilliq — mutsinlar). Oligosaxaridlar oqsilga serin yoki treonin gidroksili (**O-glikozid** bog‘) yoki asparagin amid azoti (**N-glikozid** bog‘) orqali birikadi. **Proteoglikanlar**da esa oqsil o‘zagiga uzun glikozaminoglikan zanjirlari biriktirilgan va uglevod massasi ustun bo‘ladi."},
+   {"type": "table", "title": "Jadval 12.0. AB0 qon guruhi antigenlarining uglevod tuzilishi", "head": ["Qon guruhi", "Antigen", "Zanjir uchidagi qo‘shimcha monosaxarid"], "rows": [
+    ["0 (I)", "H", "yo‘q — faqat fukoza tutgan asosiy zanjir"],
+    ["A (II)", "A", "N-atsetilgalaktozamin"],
+    ["B (III)", "B", "galaktoza"],
+    ["AB (IV)", "A va B", "ikkalasi ham (har xil molekulalarda)"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "A va B antigenlari bor-yo‘g‘i **bitta monosaxarid** bilan farq qiladi — uni H-zanjirga biriktiruvchi glikoziltransferaza fermentining turi irsiy belgilanadi. Shunday kichik kimyoviy farq ham kuchli immun javob va mos kelmagan qon quyishda og‘ir gemolizga sabab bo‘ladi."}]}
+  ]
+ },
+ "insert": [
+  {"after": 2, "title": "0. Uglevodlarning sifat reaksiyalari va fermentsiz glikirlanish", "blocks": [
+   {"type": "p", "text": "Kuchli kislotalar ta’sirida monosaxaridlar suv yo‘qotib, **furfurol** (pentozalardan) yoki **gidroksimetilfurfurol** (geksozalardan) hosil qiladi; ular fenollar bilan rangli birikmalar beradi. Ko‘p sifat reaksiyalari shunga asoslangan."},
+   {"type": "table", "title": "Jadval 12.0. Uglevodlarning sifat reaksiyalari", "head": ["Reaksiya", "Reaktiv", "Natija", "Nimani aniqlaydi"], "rows": [
+    ["Molish", "α-naftol + kons. H~2~SO~4~", "chegarada binafsha halqa", "har qanday uglevod (umumiy reaksiya)"],
+    ["Selivanov", "rezorsin + HCl, qizdirish", "tez paydo bo‘ladigan qizil rang", "ketozalar (fruktoza)"],
+    ["Bial", "orsin + HCl + FeCl~3~", "yashil rang", "pentozalar (riboza)"],
+    ["Trommer, Feling, Benedikt", "Cu^2+^ ishqoriy eritmada, qizdirish", "g‘ishtsimon-qizil Cu~2~O", "qaytaruvchi uglevodlar"],
+    ["Yod bilan", "Lugol eritmasi", "ko‘k yoki qizil-qo‘ng‘ir", "kraxmal (amiloza) va glikogen"]
+   ]},
+   {"type": "p", "text": "**Ishqoriy muhitda enollanish:** glyukoza, mannoza va fruktoza umumiy **enediol** oraliq shakl orqali bir-biriga o‘ta oladi (Lobri de Bryuyn–van Ekenshteyn qayta guruhlanishi). Shuning uchun fruktoza ham ishqoriy muhitda qaytaruvchi xossa ko‘rsatadi. Organizmda glyukoza-6-fosfatning fruktoza-6-fosfatga izomerlanishi (fosfoglyukoizomeraza) xuddi shunday enediol orqali boradi."},
+   {"type": "p", "text": "**Fermentsiz glikirlanish (Mayyar reaksiyasi):** glyukozaning ochiq shaklidagi aldegid guruhi oqsilning erkin aminoguruhi bilan **Shiff asosi** hosil qiladi (nukleofil birikish, so‘ng suv ajralishi); u qayta guruhlanib, barqaror **Amadori mahsuloti**ga aylanadi (HbA~1c~ aynan shunday hosil bo‘ladi). Keyinchalik oksidlanish va ko‘ndalang bog‘lar hosil bo‘lishi bilan qaytmas **glikirlanishning oxirgi mahsulotlari** to‘planadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Glikirlanishning oxirgi mahsulotlari kollagen va bazal membranalarni “tikib”, ularni qattiq va mo‘rt qiladi; ular qandli diabetning kech asoratlari — retinopatiya, nefropatiya, ateroskleroz va katarakta rivojida ishtirok etadi. Pishirishda ovqatning qizarib, xushbo‘y bo‘lishi ham Mayyar reaksiyasining natijasidir."}]}
+  ]},
+  {"after": 4, "title": "0. Uglevodlarning hazm bo‘lishi va qondagi glyukoza", "blocks": [
+   {"type": "table", "title": "Jadval 12.0. Uglevodlarni hazm qiluvchi fermentlar", "head": ["Ferment", "Qayerda ishlaydi", "Substrat", "Mahsulot"], "rows": [
+    ["So‘lak α-amilazasi", "og‘iz bo‘shlig‘i", "kraxmal, glikogen", "dekstrinlar, maltoza"],
+    ["Me’da osti bezi α-amilazasi", "ingichka ichak bo‘shlig‘i", "kraxmal, dekstrinlar", "maltoza, maltotrioza, α-dekstrinlar"],
+    ["Maltaza, izomaltaza", "ichak epiteliysi cho‘tkasimon hoshiyasi", "maltoza, α-1,6 bog‘lar", "glyukoza"],
+    ["Saxaraza", "cho‘tkasimon hoshiya", "saxaroza", "glyukoza + fruktoza"],
+    ["Laktaza", "cho‘tkasimon hoshiya", "laktoza", "glyukoza + galaktoza"]
+   ]},
+   {"type": "p", "text": "Monosaxaridlar enterotsitlarga o‘tadi: glyukoza va galaktoza **Na^+^ bilan birga** (SGLT1 tashuvchisi, ikkilamchi faol transport), fruktoza esa GLUT5 orqali yengillashgan diffuziya bilan. Hujayradan qonga hammasi GLUT2 orqali chiqadi. Glyukozaning Na^+^ bilan birga so‘rilishi **og‘iz orqali regidratatsiya eritmalari**ning asosi: glyukoza Na^+^ va u bilan birga suvning so‘rilishini kuchaytiradi."},
+   {"type": "table", "title": "Jadval 12.0. Qon glyukozasining diagnostik mezonlari (vena plazmasi, mmol/l)", "head": ["Holat", "Nahorga", "Glyukoza yuklamasidan 2 soat keyin"], "rows": [
+    ["Me’yor", "3,9–6,0", "< 7,8"],
+    ["Nahorgi glikemiya buzilishi", "6,1–6,9", "< 7,8"],
+    ["Glyukozaga tolerantlik buzilishi", "< 7,0", "7,8–11,0"],
+    ["Qandli diabet", "≥ 7,0", "≥ 11,1"]
+   ]},
+   {"type": "p", "text": "Klinikada glyukoza **glyukozaoksidaza** usuli bilan aniqlanadi: glyukoza + O~2~ → glyukonolakton + H~2~O~2~; hosil bo‘lgan H~2~O~2~ **peroksidaza** ishtirokida xromogenni oksidlab, rangli mahsulot beradi, uning optik zichligi glyukoza miqdoriga proporsional. Glyukometrlarda esa shu reaksiyaning elektr toki o‘lchanadi."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Gipoglikemiya** (glyukoza < 3,0 mmol/l) — terlash, titroq, ochlik, xulq o‘zgarishi, og‘irida tirishish va koma. Miya glyukozaga to‘liq bog‘liq bo‘lgani uchun bu holat giperglikemiyadan ham tezroq xavfli: hushi joyida bo‘lsa — shirin ichimlik yoki 15–20 g glyukoza, hushsiz bo‘lsa — vena ichiga 40 % li glyukoza yoki mushak ichiga glyukagon."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: ketozalarni Selivanov reaksiyasi bilan aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Ikki probirkaga 1 ml dan glyukoza va fruktoza eritmalarini (yoki tekshiriladigan namunani) quying.",
+    "Har biriga 1 ml Selivanov reaktivi (rezorsinning HCl dagi eritmasi) qo‘shing.",
+    "Probirkalarni qaynab turgan suv hammomiga bir vaqtda qo‘ying va 1 daqiqadan keyin rangni kuzating.",
+    "Fruktoza 30–60 soniyada **qizil** rang beradi; glyukoza esa faqat uzoq qizdirilganda (fruktozaga izomerlanib) kuchsiz pushti rang beradi.",
+    "Natija asosida namunada ketoza borligi haqida xulosa chiqaring (masalan, asaldagi fruktoza)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Molish, Selivanov va Bial reaksiyalari nimaga asoslangan va nimani aniqlaydi?",
+  "Ishqoriy muhitda monosaxaridlarning enollanishini tushuntiring. Nima uchun fruktoza qaytaruvchi xossa ko‘rsatadi?",
+  "Fermentsiz glikirlanish qanday boradi va uning diabet asoratlaridagi ahamiyati qanday?",
+  "Uglevodlar qayerda va qaysi fermentlar bilan hazm bo‘ladi? Glyukoza ichakda qanday so‘riladi?",
+  "Qon glyukozasining me’yori va qandli diabet mezonlari qanday? Glyukoza laboratoriyada qanday aniqlanadi?",
+  "Glikoproteinlar nima? AB0 qon guruhlari antigenlari kimyoviy jihatdan qanday farq qiladi?"
+ ],
+ "quiz": [
+  {"q": "Ketozalarni aniqlash uchun qaysi reaksiya ishlatiladi?", "options": ["Selivanov reaksiyasi", "Bial reaksiyasi", "Biuret reaksiyasi", "Ksantoprotein reaksiyasi", "Legal sinamasi"], "answer": 0},
+  {"q": "Barcha uglevodlar uchun umumiy sifat reaksiyasi qaysi?", "options": ["Molish reaksiyasi", "Selivanov reaksiyasi", "Trommer reaksiyasi", "Yod bilan reaksiya", "Ningidrin reaksiyasi"], "answer": 0},
+  {"q": "Fermentsiz glikirlanishning birinchi bosqichida nima hosil bo‘ladi?", "options": ["Shiff asosi", "Glikozid bog‘", "Peptid bog‘", "Murakkab efir", "Disulfid bog‘"], "answer": 0},
+  {"q": "Glyukoza ichak epiteliysiga qaysi tashuvchi orqali so‘riladi?", "options": ["SGLT1 (Na^+^ bilan birga)", "GLUT5", "Na^+^/K^+^-ATFaza", "Akvaporin", "H^+^/K^+^-ATFaza"], "answer": 0},
+  {"q": "Saxarozani parchalaydigan ferment qaysi?", "options": ["Saxaraza", "Laktaza", "α-Amilaza", "Maltaza", "Lipaza"], "answer": 0},
+  {"q": "Vena plazmasida nahorgi glyukoza qaysi qiymatdan boshlab qandli diabet deb baholanadi?", "options": ["≥ 7,0 mmol/l", "≥ 5,5 mmol/l", "≥ 6,1 mmol/l", "≥ 11,1 mmol/l", "≥ 3,3 mmol/l"], "answer": 0},
+  {"q": "Glyukozaoksidaza usulida qaysi mahsulot o‘lchanadigan rangli birikma hosil qiladi?", "options": ["H~2~O~2~ (peroksidaza ishtirokida)", "CO~2~", "Glyukon kislota", "Laktat", "Sorbit"], "answer": 0},
+  {"q": "A qon guruhi antigeni zanjiri uchida qaysi monosaxarid bor?", "options": ["N-Atsetilgalaktozamin", "Galaktoza", "Fukoza", "Glyukoza", "Sial kislota"], "answer": 0},
+  {"q": "Glikoproteinlarda N-glikozid bog‘ oqsilning qaysi aminokislotasi orqali hosil bo‘ladi?", "options": ["Asparagin", "Serin", "Treonin", "Lizin", "Sistein"], "answer": 0},
+  {"q": "Og‘iz orqali regidratatsiya eritmalariga glyukoza nima uchun qo‘shiladi?", "options": ["Glyukoza Na^+^ va suv so‘rilishini kuchaytiradi", "Faqat energiya berish uchun", "Ta’mini yaxshilash uchun", "Bakteriyalarni o‘ldirish uchun", "Osmotik bosimni pasaytirish uchun"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Ikki haftalik chaqaloq sut emgandan keyin qusadi, vazn olmaydi, sariqlik va jigar kattalashgan; ko‘zda katarakta boshlangan. Siydikda qaytaruvchi modda bor, lekin glyukozaoksidaza testi manfiy.", "ask": "Qanday irsiy kasallik taxmin qilinadi? Kataraktaning kimyoviy sababi nima? Davolash qanday?", "answer": "**Galaktozemiya** — galaktoza-1-fosfaturidiltransferaza yetishmovchiligi. Sut laktozasidan hosil bo‘lgan galaktoza glyukozaga aylana olmaydi va to‘planadi. Siydikdagi qaytaruvchi modda — **galaktoza** (glyukozaoksidaza unga ta’sir qilmaydi, shuning uchun test manfiy). Ko‘z gavharida aldozoreduktaza galaktozani **galaktit**ga qaytaradi; u hujayradan chiqmay, osmotik ravishda suvni tortadi — gavhar shishib xiralashadi (**katarakta**). Galaktoza-1-fosfat jigar va miyaga zaharli. Davolash: zudlik bilan sut va laktozani to‘liq chiqarib, soya asosidagi aralashmalarga o‘tish."},
+  {"title": "Masala 5", "text": "Ortiqcha vaznli 45 yoshli ayolda glyukozaga yuklama testi o‘tkazildi: nahorga vena plazmasida glyukoza 6,4 mmol/l, 75 g glyukoza ichgandan 2 soat keyin 9,2 mmol/l.", "ask": "Natijani talqin qiling. Bemorga nima tavsiya etiladi?", "answer": "Nahorgi glyukoza 6,4 mmol/l — **nahorgi glikemiya buzilishi** (6,1–6,9), 2 soatdan keyingi 9,2 mmol/l — **glyukozaga tolerantlik buzilishi** (7,8–11,0). Bu **prediabet** holati: qandli diabet mezonlariga (≥ 7,0 va ≥ 11,1) hali yetmagan, ammo kelajakda 2-tur diabet rivojlanish xavfi yuqori. Tavsiya: vaznni 5–7 % ga kamaytirish, jismoniy faollik (haftasiga ≥ 150 daqiqa), tez so‘riladigan uglevodlarni cheklash, HbA~1c~ ni tekshirish va har yili nazorat."},
+  {"title": "Masala 6", "text": "Insulin qabul qiluvchi bemor kechki ovqatni o‘tkazib yubordi va hushini yo‘qotdi. Glyukometrda 1,9 mmol/l. Tez yordam vena ichiga 40 % li glyukozadan 40 ml yubordi.", "ask": "Bemorga qancha glyukoza yuborildi? Nima uchun gipoglikemiya giperglikemiyadan tezroq xavfli?", "answer": "m = 0,40 · 40 = **16 g** glyukoza (gipoglikemiyani tezda tuzatish uchun odatiy doza 15–20 g). Miya glyukozani o‘zi zaxiralay olmaydi va energiyani deyarli faqat qondagi glyukozadan oladi; glyukoza keskin kamaysa, bir necha daqiqada neyronlar ishi buziladi — talvasa va koma, uzoq davom etsa qaytmas shikastlanish rivojlanadi. Hushga kelgach, bemorga sekin so‘riladigan uglevodli ovqat beriladi, chunki insulin ta’siri hali davom etadi."},
+  {"title": "Masala 7", "text": "Qandli diabetning 2-turi bilan og‘rigan bemorga dapagliflozin (SGLT2 ingibitori) buyurildi. Bir haftadan keyin siydik tahlilida ko‘p glyukoza aniqlandi, qondagi glyukoza esa kamaygan.", "ask": "Siydikda glyukoza paydo bo‘lishini tushuntiring. Bu xavotirli belgimi?", "answer": "Buyrak proksimal kanalchalarida glyukoza filtratdan asosan **SGLT2** tashuvchisi orqali (Na^+^ bilan birga) qayta so‘riladi; me’yorda siydikda glyukoza deyarli bo‘lmaydi. Glyukoza qondagi miqdori ≈ 10 mmol/l (**buyrak bo‘sag‘asi**) dan oshgandagina siydikka o‘tadi. Dapagliflozin SGLT2 ni to‘sib, glyukozani bo‘sag‘adan past darajada ham siydik bilan chiqaradi — bu dorining **kutilgan ta’siri** va qondagi glyukozani kamaytirish mexanizmi. Ammo siydikdagi glyukoza siydik-jinsiy infeksiyalar xavfini oshiradi, shuning uchun gigiyenaga e’tibor beriladi."},
+  {"title": "Masala 8", "text": "Laborantga yorliqsiz ikki shisha berildi: birida glyukoza eritmasi, ikkinchisida suyultirilgan asal (asosan fruktoza). Ikkalasi ham Trommer reaksiyasini musbat berdi.", "ask": "Ularni qanday farqlash mumkin? Nima uchun Trommer reaksiyasi ikkalasida ham musbat?", "answer": "Glyukoza — aldoza, fruktoza — ketoza, lekin ishqoriy muhitda fruktoza **enediol** orqali aldozaga izomerlanadi, shuning uchun ikkalasi ham Cu^2+^ ni qaytaradi — Trommer reaksiyasi ularni farqlamaydi. Farqlash uchun **Selivanov reaksiyasi** ishlatiladi: rezorsin va HCl bilan qizdirilganda fruktoza (asal) 1 daqiqa ichida qizil rang beradi, glyukoza esa bermaydi. Shuningdek, glyukozaoksidaza test-poloskasi faqat glyukozaga musbat bo‘ladi."}
+ ],
+ "cards": [
+  {"front": "Selivanov reaksiyasi", "back": "Rezorsin + HCl bilan ketozalar (fruktoza) tez qizil rang beradi"},
+  {"front": "Mayyar reaksiyasi", "back": "Fermentsiz glikirlanish: glyukoza + aminoguruh → Shiff asosi → Amadori mahsuloti → oxirgi mahsulotlar"},
+  {"front": "SGLT1 va SGLT2", "back": "Na^+^ bilan birga glyukoza tashuvchilari: SGLT1 — ichakda, SGLT2 — buyrakda (ingibitorlari diabetda)"},
+  {"front": "Qandli diabet mezoni", "back": "Nahorga glyukoza ≥ 7,0 mmol/l yoki yuklamadan 2 soat keyin ≥ 11,1 mmol/l"},
+  {"front": "Glyukozaoksidaza usuli", "back": "Glyukoza + O~2~ → glyukonolakton + H~2~O~2~; H~2~O~2~ peroksidaza bilan rang beradi"},
+  {"front": "AB0 antigenlari", "back": "H-zanjirga A da N-atsetilgalaktozamin, B da galaktoza qo‘shilgan"}
+ ]
+}

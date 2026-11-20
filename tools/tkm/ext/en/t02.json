@@ -1,0 +1,125 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Diluting solutions and clinical solutions"},
+   {"type": "p", "text": "When a solution is diluted, the amount of solute does not change, so the **dilution rule** applies: C~1~·V~1~ = C~2~·V~2~. For example, to prepare 200 mL of a 5 % solution from 40 % glucose, V~1~ = 5 · 200 / 40 = 25 mL of the concentrate is taken and water is added up to 200 mL."},
+   {"type": "table", "title": "Table 2.0. Composition of solutions widely used in the clinic", "head": ["Solution", "Concentration", "Amount of ion or substance", "Osmolarity, mosmol/L"], "rows": [
+    ["NaCl (normal saline)", "0.9 %", "Na^+^ and Cl^−^ — 154 mmol/L each", "308"],
+    ["Glucose", "5 %", "glucose 278 mmol/L", "278"],
+    ["Glucose", "40 %", "glucose 2.2 mol/L", "≈ 2220"],
+    ["Sodium hydrogen carbonate", "4.2 %", "HCO~3~^−^ 0.5 mmol/mL", "≈ 1000"],
+    ["Potassium chloride", "7.5 %", "K^+^ ≈ 1 mmol/mL", "≈ 2000"],
+    ["Ringer’s lactate", "—", "Na^+^ 130, K^+^ 4, Ca^2+^ 1.5, lactate 28 mmol/L", "≈ 273"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Concentrated **KCl solution** must never be injected intravenously directly (as a bolus) — it causes cardiac arrest. It is always diluted and given slowly, usually at a rate not exceeding 10–20 mmol of K^+^ per hour."}]}
+  ],
+  "3": [
+   {"type": "h", "text": "Osmolarity, osmolality and tonicity"},
+   {"type": "p", "text": "**Osmolarity** is the number of osmotically active particles in 1 L of solution (mosmol/L), **osmolality** — the number of particles per 1 kg of solvent (mosmol/kg). In dilute biological fluids they are almost equal. The normal plasma osmolality is **285–295 mosmol/kg**; it can be estimated as: Osm = 2·[Na^+^] + [glucose] + [urea] (all in mmol/L)."},
+   {"type": "p", "text": "Substances that cross the membrane freely (urea, ethanol) quickly equalize inside and outside the cell and do not cause water movement. Therefore cell volume is determined only by the **effective osmolality — tonicity** created by particles that do not cross the membrane. For example, 5 % glucose is isotonic in a test tube, but in the body glucose enters cells and is used, so the solution effectively acts like free water."},
+   {"type": "p", "text": "Water exchange across the capillary wall is determined by **Starling forces**: at the arterial end the hydrostatic pressure exceeds the oncotic pressure and water leaves for the tissue; at the venous end the oncotic pressure prevails and water returns to the blood. When albumin falls (< 20–25 g/L) the oncotic pressure drops, water stays in the tissue and **edema** develops."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In **hemodialysis** blood exchanges with dialysis fluid across a semipermeable membrane: urea, creatinine and excess K^+^ leave the blood down the concentration gradient, while proteins and blood cells remain. Excess water is removed by applying pressure to the membrane (ultrafiltration)."}]}
+  ],
+  "6": [
+   {"type": "h", "text": "Choosing an indicator"},
+   {"type": "table", "title": "Table 2.0. Choosing an indicator according to the type of titration", "head": ["Titration", "pH at the equivalence point", "Jump", "Indicator"], "rows": [
+    ["Strong acid + strong base", "7", "large (pH 4.3–9.7)", "methyl orange, methyl red or phenolphthalein"],
+    ["Weak acid + strong base", "> 7 (≈ 8.7)", "in the alkaline region", "phenolphthalein"],
+    ["Weak base + strong acid", "< 7 (≈ 5.3)", "in the acidic region", "methyl orange, methyl red"],
+    ["Weak acid + weak base", "≈ 7", "almost none", "cannot be titrated accurately"]
+   ]},
+   {"type": "p", "text": "A mixture of several indicators is called a **universal indicator**: it changes color step by step from pH 1 to 14. Indicator paper made from it is used for an approximate determination of the pH of urine and other fluids."}
+  ],
+  "7": [
+   {"type": "h", "text": "Formation of hydrochloric acid in the stomach"},
+   {"type": "p", "text": "HCl is produced by the **parietal cells** of the fundic glands of the stomach. Inside the cell, with the help of **carbonic anhydrase**, the reaction CO~2~ + H~2~O → H~2~CO~3~ → H^+^ + HCO~3~^−^ takes place. H^+^ ions are pumped into the gastric lumen by **H^+^/K^+^-ATPase** (the proton pump), and Cl^−^ follows them through channels. HCO~3~^−^ goes into the blood — that is why blood and urine become slightly alkaline after a meal (the **“alkaline tide”**)."},
+   {"type": "table", "title": "Table 2.0. Disorders of gastric acidity", "head": ["Condition", "Values", "Diseases in which it occurs"], "rows": [
+    ["Hyperacidity", "total acidity > 60 t.u., free HCl > 40 t.u.", "duodenal ulcer, Zollinger–Ellison syndrome"],
+    ["Hypoacidity", "total acidity < 40 t.u., free HCl < 20 t.u.", "chronic gastritis, gastric cancer"],
+    ["Achlorhydria", "no free HCl", "autoimmune atrophic gastritis, vitamin B~12~ deficiency anemia"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Proton pump inhibitors** (omeprazole and others) irreversibly block H^+^/K^+^-ATPase and sharply reduce HCl production — they are the main drugs for treating peptic ulcer and reflux esophagitis. **Antacids** (Al(OH)~3~, Mg(OH)~2~), in contrast, bind acid already formed by a neutralization reaction."}]}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Water as a biological solvent. Composition of body fluids", "blocks": [
+   {"type": "p", "text": "The water molecule is bent (≈ 104.5°) and strongly **polar**; the molecules form hydrogen bonds with each other. As a result, water has a high heat capacity and heat of vaporization — it stabilizes body temperature and cools the body through sweating. Its high dielectric constant (ε ≈ 80) makes it easy for ionic compounds to dissociate in water."},
+   {"type": "p", "text": "Water in the adult body (≈ 60 % of body mass) is distributed between two main compartments: **intracellular fluid** — ≈ 40 % of body mass, and **extracellular fluid** — ≈ 20 % (interstitial fluid ≈ 15 % and blood plasma ≈ 5 %). The compartments differ sharply in ionic composition; this difference is maintained by Na^+^/K^+^-ATPase."},
+   {"type": "table", "title": "Table 2.0. Ionic composition of intracellular and extracellular fluids (approximate, mmol/L)", "head": ["Ion", "Blood plasma", "Inside the cell"], "rows": [
+    ["Na^+^", "140", "10–15"],
+    ["K^+^", "4", "140–150"],
+    ["Ca^2+^ (ionized)", "1.2", "≈ 0.0001"],
+    ["Mg^2+^", "1", "≈ 15"],
+    ["Cl^−^", "103", "5–10"],
+    ["HCO~3~^−^", "24", "10"],
+    ["Phosphates", "1", "≈ 100 (including organic phosphates)"],
+    ["Proteins (anions)", "≈ 15 mEq/L", "≈ 50 mEq/L"]
+   ]},
+   {"type": "p", "text": "The daily **water balance** in an adult is about 2.5 L: water comes from drinking (≈ 1.5 L), water in food (≈ 0.7 L) and **metabolic water** formed by the oxidation of nutrients (≈ 0.3 L); it leaves with urine (≈ 1.5 L), evaporation through skin and breath (≈ 0.9 L) and feces (≈ 0.1 L)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The type of **dehydration** is determined by plasma sodium: **isotonic** (vomiting, diarrhea — water and salt are lost equally), **hypertonic** (more water is lost — fever, not drinking; Na^+^ > 145 mmol/L, cells lose water) and **hypotonic** (more salt is lost; Na^+^ < 135 mmol/L, cells swell). Different solutions are infused for each type."}]}
+  ]},
+  {"after": 5, "title": "0. Titration techniques and titrimetric calculations", "blocks": [
+   {"type": "p", "text": "Depending on how it is carried out, titration is of three kinds:"},
+   {"type": "list", "items": [
+    "**Direct titration** — the analyte is titrated directly with the standard solution (HCl with NaOH).",
+    "**Back (residual) titration** — a known excess of the standard solution is added to the analyte, and the unreacted residue is titrated with another solution. It is used when the reaction is slow or the substance is volatile (NH~3~, CaCO~3~).",
+    "**Replacement (substitution) titration** — the analyte is reacted with a reagent, and another substance formed in an equivalent amount is titrated (in iodometry the liberated I~2~ is titrated)."
+   ]},
+   {"type": "p", "text": "**Main calculation formulas.** From the law of equivalents: C~n~(X) = C~n~(titrant)·V(titrant) / V(X). Mass of the substance: m(X) = C~n~(titrant)·V(titrant)·M~eq~(X) / 1000 (V in mL). In back titration the number of equivalents that reacted equals the difference between the amount added and the residue."},
+   {"type": "p", "text": "**Standardization of the working solution.** Because NaOH absorbs CO~2~ from the air, its solution cannot be prepared from an exact weighed amount; its concentration is determined against an exact weighed amount of oxalic acid: H~2~C~2~O~4~ + 2NaOH → Na~2~C~2~O~4~ + 2H~2~O. The equivalent molar mass of oxalic acid dihydrate is 126 / 2 = 63 g/mol."},
+   {"type": "table", "title": "Table 2.0. Accuracy of the analytical result", "head": ["Concept", "Meaning", "How to reduce it"], "rows": [
+    ["Systematic error", "always shifts the result in one direction (an incorrectly calibrated vessel, the wrong indicator)", "calibration of instruments, control sample"],
+    ["Random error", "gives scatter in repeated measurements", "titrate at least 3 times and take the mean"],
+    ["Gross error (blunder)", "an obvious mistake (solution spilled, volume written down wrongly)", "such a result is discarded"],
+    ["Relative error", "(found − true) / true · 100 %", "in titration usually 0.1–0.5 %"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The results of parallel titrations should not differ from each other by more than **0.1 mL**. If the difference is larger, the titration is repeated."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: preparing a solution of a given concentration", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Write down the required volume and concentration of the solution (%, mol/L or mmol/L).",
+    "If it is prepared from a dry substance, calculate the mass: m = ω·m(solution) or m = C·V·M.",
+    "If it is prepared from a concentrate, find its volume from the dilution rule: V~1~ = C~2~·V~2~ / C~1~.",
+    "Weigh the substance or measure the concentrate with a pipette, transfer it to a volumetric flask, add distilled water to the mark and mix.",
+    "Label the vessel with the name of the solution, its concentration and the date of preparation."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Which properties of water make it unique as a biological solvent?",
+  "Into which compartments is water distributed in the body? How do their ionic compositions differ?",
+  "What is the difference between osmolarity, osmolality and tonicity? How is plasma osmolality calculated?",
+  "What are Starling forces? Why does edema develop when albumin decreases?",
+  "What is the difference between direct, back and replacement titration?",
+  "How is HCl formed in the stomach? How do the actions of proton pump inhibitors and antacids differ?"
+ ],
+ "quiz": [
+  {"q": "What is the main cation of the intracellular fluid?", "options": ["K^+^", "Na^+^", "Ca^2+^", "H^+^", "Li^+^"], "answer": 0},
+  {"q": "What is the normal osmolality of blood plasma?", "options": ["285–295 mosmol/kg", "140–150 mosmol/kg", "200–220 mosmol/kg", "340–360 mosmol/kg", "500–600 mosmol/kg"], "answer": 0},
+  {"q": "What is the Na^+^ concentration in 0.9 % NaCl solution?", "options": ["154 mmol/L", "9 mmol/L", "90 mmol/L", "308 mmol/L", "58 mmol/L"], "answer": 0},
+  {"q": "Which substance does not create effective osmotic pressure (tonicity) because it crosses the membrane freely?", "options": ["Urea", "Sodium chloride", "Mannitol", "Albumin", "Sodium hydrogen carbonate"], "answer": 0},
+  {"q": "What is the main cause of edema when albumin decreases?", "options": ["A fall in oncotic pressure", "A fall in hydrostatic pressure", "An increase in plasma osmolality", "Increased sodium excretion", "Faster lymph flow"], "answer": 0},
+  {"q": "When is back titration used?", "options": ["When the reaction is slow or the substance is volatile", "When there is no indicator", "Only for titrating strong acids", "When the solution is colorless", "When there is no burette"], "answer": 0},
+  {"q": "How many mL of concentrate are needed to prepare 200 mL of 5 % glucose from 40 % glucose?", "options": ["25 mL", "50 mL", "8 mL", "20 mL", "40 mL"], "answer": 0},
+  {"q": "Which indicator is suitable for titrating a weak base with a strong acid?", "options": ["Methyl orange", "Phenolphthalein", "Thymolphthalein", "It is titrated without an indicator", "Litmus"], "answer": 0},
+  {"q": "Which protein of the gastric parietal cells pumps H^+^ ions into the gastric lumen?", "options": ["H^+^/K^+^-ATPase", "Na^+^/K^+^-ATPase", "Ca^2+^-ATPase", "Carbonic anhydrase", "Pepsin"], "answer": 0},
+  {"q": "Approximately how much metabolic water is formed daily by the oxidation of nutrients?", "options": ["≈ 0.3 L", "≈ 1.5 L", "≈ 2.5 L", "≈ 0.03 L", "≈ 5 L"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "An elderly patient with diabetes mellitus was brought in unconscious. Tests: Na^+^ 150 mmol/L, glucose 25 mmol/L, urea 10 mmol/L.", "ask": "Calculate and assess the plasma osmolality. What happens in the cells?", "answer": "Osm = 2·150 + 25 + 10 = **335 mosmol/kg** — well above normal (285–295), a **hyperosmolar state**. Because the extracellular fluid has become hypertonic, water leaves the cells, including brain cells — cellular dehydration causes the loss of consciousness. In treatment, fluids and insulin are given to lower the osmolality **gradually** (a rapid fall risks cerebral edema)."},
+  {"title": "Problem 5", "text": "A pharmacy has to prepare 500 mL of 0.9 % NaCl solution (take the density of the solution as 1 g/mL, M(NaCl) = 58.5 g/mol).", "ask": "How many grams of NaCl are needed? What are the molar concentration and osmolarity of the solution?", "answer": "m(NaCl) = 0.009 · 500 = **4.5 g**. 1 L contains 9 g: C = 9 / 58.5 ≈ **0.154 mol/L** (154 mmol/L). NaCl dissociates into two ions (i ≈ 2): osmolarity ≈ 2 · 154 = **308 mosmol/L** — close to plasma, the solution is isotonic."},
+  {"title": "Problem 6", "text": "A patient with hypokalemia (K^+^ 2.8 mmol/L) is to be given 40 mmol of K^+^. The ward has 7.5 % KCl solution (≈ 1 mmol of K^+^ per 1 mL).", "ask": "How many mL of KCl are needed? How should it be given correctly? At least how long should the infusion last (the rate must not exceed 10 mmol per hour)?", "answer": "40 mmol / 1 mmol/mL = **40 mL** of 7.5 % KCl. It is not given as a bolus — it is **diluted** in 1 L of isotonic solution and given as a drip. At a rate of 10 mmol per hour the infusion lasts at least 40 / 10 = **4 hours**. ECG and blood K^+^ are monitored during treatment."},
+  {"title": "Problem 7", "text": "To standardize an NaOH solution, 0.1260 g of oxalic acid dihydrate (H~2~C~2~O~4~·2H~2~O, M~eq~ = 63 g/mol) was dissolved and titrated with phenolphthalein. 20.0 mL of NaOH was used.", "ask": "Calculate the normality of the NaOH solution.", "answer": "Number of equivalents of oxalic acid: n = 0.1260 / 63 = 0.002 mol-eq. By the law of equivalents NaOH also reacted in an amount of 0.002 mol-eq: C~n~(NaOH) = 0.002 / 0.0200 = **0.1 mol-eq/L (0.1 N)**. Since a weak acid was titrated, phenolphthalein was the right choice."},
+  {"title": "Problem 8", "text": "A child with nephrotic syndrome has swelling of the face and legs and fluid in the abdomen. There is much protein in the urine; blood albumin is 15 g/L (normal 35–50).", "ask": "Explain the physicochemical mechanism of the edema. Why does an albumin infusion help only temporarily?", "answer": "Albumin is lost in the urine and has decreased in plasma — the **oncotic pressure** has fallen. The balance of Starling forces is disturbed: at the venous end of the capillary water does not return to the blood and remains in the tissues — **edema** and ascites develop. When albumin is infused intravenously, the oncotic pressure rises temporarily and water is drawn from the tissues into the blood (usually given together with a diuretic). But because albumin is again lost in the urine, the effect is short; the main treatment is treating the kidney disease itself."}
+ ],
+ "cards": [
+  {"front": "Intracellular and extracellular fluid", "back": "Inside ≈ 40 % (main cation K^+^), outside ≈ 20 % of body mass (main cation Na^+^)"},
+  {"front": "Plasma osmolality", "back": "2·[Na^+^] + glucose + urea; normal 285–295 mosmol/kg"},
+  {"front": "Tonicity", "back": "Effective osmolality created by particles that do not cross the membrane; determines cell volume"},
+  {"front": "Dilution rule", "back": "C~1~·V~1~ = C~2~·V~2~"},
+  {"front": "Back titration", "back": "Adding excess reagent and titrating the residue; for slow reactions or volatile substances"},
+  {"front": "Proton pump", "back": "H^+^/K^+^-ATPase of the parietal cell; blocked by omeprazole"}
+ ]
+}

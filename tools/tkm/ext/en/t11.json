@@ -1,0 +1,374 @@
+{
+ "append": {
+  "0": [
+   {
+    "type": "p",
+    "text": "**Porphyrin synthesis** starts from glycine and succinyl-CoA: first **δ-aminolevulinic acid** (δ-ALA) is formed, then two molecules of δ-ALA give **porphobilinogen**, which has a pyrrole ring; four porphobilinogen molecules combine to give the porphyrin ring, and finally Fe^2+^ is inserted into it to form heme."
+   },
+   {
+    "type": "box",
+    "kind": "klinik",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Porphyrias** are inherited deficiencies of the enzymes of heme synthesis. Intermediate products accumulate: in acute porphyria δ-ALA and porphobilinogen increase in the urine, causing severe abdominal pain and neurological disturbances (the urine darkens in light); in cutaneous porphyrias porphyrins accumulate in the skin and cause blisters on exposure to sunlight."
+     }
+    ]
+   }
+  ],
+  "5": [
+   {
+    "type": "h",
+    "text": "Chemistry of heterocyclic antibiotics"
+   },
+   {
+    "type": "p",
+    "text": "The four-membered **β-lactam ring** of β-lactam antibiotics (penicillins, cephalosporins, carbapenems) is highly strained and reactive. It acylates the serine hydroxyl of the bacterial transpeptidase (penicillin-binding protein) and inactivates it irreversibly — cell wall synthesis stops. Many bacteria hydrolyze this ring with the enzyme **β-lactamase** and become resistant; **clavulanic acid** and **tazobactam** bind β-lactamase and protect the antibiotic."
+   },
+   {
+    "type": "box",
+    "kind": "diqqat",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Fluoroquinolones** (ciprofloxacin, levofloxacin) and **tetracyclines** form insoluble chelates with Ca^2+^, Mg^2+^, Al^3+^ and Fe^2+^. If they are taken with milk, yogurt, antacids, iron or calcium preparations, their absorption falls several-fold. That is why these drugs are taken at least 2 hours apart from them."
+     }
+    ]
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 2,
+   "title": "0. Six-membered heterocycles containing oxygen and sulfur",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Pyran** is a six-membered ring with one oxygen atom. Its saturated form occurs in the **pyranose** form of monosaccharides (glucopyranose). **Benzopyran** (chromene) and **chromane**, fused with a benzene ring, form the basis of many plant substances and drugs."
+    },
+    {
+     "type": "table",
+     "title": "Table 11.0. Derivatives of benzopyran and phenothiazine",
+     "head": [
+      "Group",
+      "Examples",
+      "Significance"
+     ],
+     "rows": [
+      [
+       "Flavonoids (2-phenylchromone)",
+       "quercetin, rutin",
+       "strengthen capillaries (vitamin P activity), antioxidants"
+      ],
+      [
+       "Anthocyanins",
+       "plant pigments (grapes, cherries)",
+       "change color with pH, antioxidant"
+      ],
+      [
+       "Coumarins",
+       "coumarin, warfarin, dicoumarol",
+       "warfarin — vitamin K antagonist, indirect anticoagulant"
+      ],
+      [
+       "Tocopherols (chromane ring)",
+       "vitamin E",
+       "the main lipophilic antioxidant of membranes"
+      ],
+      [
+       "Phenothiazines (three-ring system containing S and N)",
+       "chlorpromazine, promethazine",
+       "antipsychotic and antihistamine drugs"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Warfarin** is structurally similar to vitamin K; it blocks the enzyme that regenerates the active form of vitamin K (vitamin K epoxide reductase). As a result, less of the active forms of clotting factors II, VII, IX and X is formed in the liver. Treatment is monitored by the **INR**; if an overdose causes bleeding, **vitamin K** is given as the antidote."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 3,
+   "title": "0. Alkaloids",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Alkaloids** are natural compounds, found mainly in plants, that contain a nitrogen heterocycle, have basic properties and exert strong physiological effects. In the plant they occur as salts with acids; in medicine their water-soluble salts are mostly used (atropine sulfate, morphine hydrochloride). Alkaloids are classified by the type of heterocycle."
+    },
+    {
+     "type": "table",
+     "title": "Table 11.0. Classification of alkaloids by heterocycle",
+     "head": [
+      "Group (ring)",
+      "Alkaloids",
+      "Source",
+      "Action"
+     ],
+     "rows": [
+      [
+       "Pyridine and piperidine",
+       "nicotine, lobeline",
+       "tobacco, lobelia",
+       "act through N-cholinergic receptors"
+      ],
+      [
+       "Tropane (pyrrolidine + piperidine)",
+       "atropine, scopolamine, cocaine",
+       "belladonna, jimsonweed, coca",
+       "M-cholinergic blocker; cocaine — local anesthetic, narcotic"
+      ],
+      [
+       "Quinoline",
+       "quinine",
+       "cinchona bark",
+       "antimalarial"
+      ],
+      [
+       "Isoquinoline",
+       "morphine, codeine, papaverine",
+       "opium poppy",
+       "analgesic, antitussive, antispasmodic"
+      ],
+      [
+       "Indole",
+       "reserpine, vincristine, strychnine, ergotamine",
+       "rauwolfia, periwinkle, nux vomica, ergot",
+       "antihypertensive, anticancer, CNS stimulant (poisonous), uterotonic"
+      ],
+      [
+       "Purine",
+       "caffeine, theophylline, theobromine",
+       "tea, coffee, cocoa",
+       "CNS stimulant, bronchodilator, diuretic"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/tkm/t11_alkaloid.webp",
+     "w": 1400,
+     "h": 450,
+     "label": "Figure 0.0",
+     "caption": "Alkaloids with different heterocycles: atropine (tropane), morphine (isoquinoline), quinine (quinoline) and caffeine (purine) (structural formulas drawn with RDKit from PubChem data)."
+    },
+    {
+     "type": "p",
+     "text": "**General precipitating reagents for alkaloids:** Dragendorff’s reagent (potassium bismuth iodide — orange precipitate), Mayer’s reagent (potassium mercuric iodide — white precipitate), tannin and picric acid. They form poorly soluble salts and complexes with the nitrogen atom of alkaloids — used to detect alkaloids in forensic toxicology."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Many alkaloids have a narrow margin between therapeutic and toxic doses. **Tannin** (strongly brewed tea) forms insoluble compounds with them — that is why tannin solution was formerly used for gastric lavage in oral alkaloid poisoning."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: detecting alkaloids with general precipitating reagents",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Pour 1 mL of the test solution (for example, a solution of an alkaloid salt) into each of 2–3 test tubes and acidify with 1–2 drops of dilute HCl.",
+      "Add 2 drops of Dragendorff’s reagent to the first tube — an orange or reddish precipitate indicates an alkaloid.",
+      "Add Mayer’s reagent to the second tube — a white or yellowish precipitate is observed.",
+      "Add tannin solution to the third tube — a whitish-yellow precipitate forms.",
+      "As a control, perform the same reactions with distilled water and compare the results; confirm a positive result with specific reactions to identify the particular alkaloid."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "How is the porphyrin ring synthesized? What are porphyrias?",
+  "Give examples of pyran and benzopyran derivatives. What is the mechanism of action of warfarin?",
+  "What are alkaloids? How are they classified by type of heterocycle?",
+  "What general precipitating reagents for alkaloids are there?",
+  "What is the chemical feature of the β-lactam ring? How do β-lactamase and its inhibitors work?",
+  "Why must fluoroquinolones and tetracyclines not be taken together with milk and antacids?"
+ ],
+ "quiz": [
+  {
+   "q": "Warfarin is an antagonist of which vitamin?",
+   "options": [
+    "Vitamin K",
+    "Vitamin E",
+    "Vitamin C",
+    "Vitamin B~12~",
+    "Vitamin D"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which ring system does vitamin E (tocopherol) contain?",
+   "options": [
+    "Chromane",
+    "Purine",
+    "Indole",
+    "Pteridine",
+    "Imidazole"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which group of alkaloids does atropine belong?",
+   "options": [
+    "Tropane",
+    "Isoquinoline",
+    "Purine",
+    "Indole",
+    "Quinoline"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From which plant is morphine obtained?",
+   "options": [
+    "Opium poppy",
+    "Cinchona tree",
+    "Belladonna",
+    "Tea",
+    "Tobacco"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which alkaloid contains an indole ring?",
+   "options": [
+    "Reserpine",
+    "Nicotine",
+    "Caffeine",
+    "Atropine",
+    "Quinine"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which metal is contained in Dragendorff’s reagent, used to detect alkaloids?",
+   "options": [
+    "Bismuth",
+    "Mercury",
+    "Silver",
+    "Copper",
+    "Iron"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which bacterial enzyme do β-lactam antibiotics inactivate?",
+   "options": [
+    "Transpeptidase (penicillin-binding protein)",
+    "DNA gyrase",
+    "The ribosome",
+    "Dihydrofolate reductase",
+    "RNA polymerase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which is a β-lactamase inhibitor?",
+   "options": [
+    "Clavulanic acid",
+    "Allopurinol",
+    "Trimethoprim",
+    "Carbidopa",
+    "Disulfiram"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Taking ciprofloxacin with which product sharply reduces its absorption?",
+   "options": [
+    "Milk",
+    "Water",
+    "Apple juice",
+    "Bread",
+    "Rice"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What are the starting substances of porphyrin synthesis?",
+   "options": [
+    "Glycine and succinyl-CoA",
+    "Histidine and acetyl-CoA",
+    "Tryptophan and pyruvate",
+    "Glutamine and fumarate",
+    "Serine and malonyl-CoA"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Problem 4",
+   "text": "Two children ate jimsonweed seeds in a field. Their skin is red and dry, the pupils are dilated and do not react to light, there is tachycardia, the temperature is raised, and the children are agitated and delirious.",
+   "ask": "Poisoning with which substances? To which group of alkaloids do they belong and how do they act?",
+   "answer": "Jimsonweed contains **tropane alkaloids** — **atropine** and scopolamine. They are competitive antagonists of acetylcholine at M-cholinergic receptors: secretion of the salivary and sweat glands stops (dry skin, hyperthermia), the pupils dilate, the heart rate increases, and there is CNS excitation and delirium. Help: gastric lavage, activated charcoal (binds alkaloids well), cooling; in severe cases the cholinesterase inhibitor **physostigmine** increases acetylcholine and overcomes the blockade."
+  },
+  {
+   "title": "Problem 5",
+   "text": "A patient with a prosthetic heart valve takes warfarin (the INR should be 2.5–3.5). After he began to eat large amounts of spinach and cabbage, the INR fell to 1.6.",
+   "ask": "Why did the INR fall? Explain the relationship between warfarin and vitamin K.",
+   "answer": "Warfarin is a coumarin derivative; it blocks **vitamin K epoxide reductase**, which reactivates vitamin K, and reduces the formation of active clotting factors (II, VII, IX, X). Spinach and cabbage contain a lot of **vitamin K**: the increased dietary vitamin K partly overcomes the effect of warfarin, more clotting factors are formed and the INR falls — the risk of thrombosis increases. The patient is advised to eat vitamin K-rich foods in a steady amount without sharp changes."
+  },
+  {
+   "title": "Problem 6",
+   "text": "A patient with a urinary tract infection took ciprofloxacin tablets every day with a glass of milk and, for heartburn, together with an antacid. After three days the fever and symptoms persist.",
+   "ask": "Explain the chemical reason for the failure of treatment. What would you advise?",
+   "answer": "The **keto and carboxyl groups** in the fluoroquinolone molecule form a stable, insoluble **chelate** with Ca^2+^ (milk), Mg^2+^ and Al^3+^ (antacid) ions. The chelate is not absorbed in the intestine — the antibiotic concentration in blood and urine does not reach an effective level. Advice: take ciprofloxacin with water, and take dairy products, antacids, iron and calcium preparations at least 2 hours before or 6 hours after the drug."
+  },
+  {
+   "title": "Problem 7",
+   "text": "A child’s otitis was treated with amoxicillin without effect. Culture showed a β-lactamase-producing Haemophilus. The doctor switched to amoxicillin + clavulanic acid.",
+   "ask": "Why did amoxicillin not work? How does clavulanic acid help?",
+   "answer": "The active part of amoxicillin is the strained **β-lactam ring**: it acylates transpeptidase and stops cell wall synthesis. The bacterial enzyme **β-lactamase** hydrolyzes and opens this ring — the antibiotic becomes inactive. **Clavulanic acid** also has a β-lactam structure: it binds β-lactamase irreversibly and inactivates it (a “suicide” inhibitor), so amoxicillin is preserved and acts."
+  },
+  {
+   "title": "Problem 8",
+   "text": "A young man found unconscious has slow, shallow breathing (6 breaths per minute), pinpoint pupils and injection marks on his arm.",
+   "ask": "Poisoning with substances of which alkaloid group is suspected? How does the antidote act?",
+   "answer": "The clinical triad — coma, respiratory depression, **miosis** — is typical of poisoning with **opioids** (morphine, heroin — morphinan derivatives with an isoquinoline skeleton). They stimulate μ-opioid receptors in the brain and depress the respiratory center. The antidote is **naloxone**: its structure is close to that of morphine, but it does not activate the receptor; as a **competitive antagonist** it displaces the opioid from the receptor, and breathing recovers within minutes. Naloxone acts briefly, so the patient is kept under observation and the dose is repeated if necessary."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Porphyrias",
+   "back": "Deficiency of heme synthesis enzymes; δ-ALA, porphobilinogen or porphyrins accumulate"
+  },
+  {
+   "front": "Warfarin",
+   "back": "A coumarin derivative, vitamin K antagonist; monitored by INR, antidote — vitamin K"
+  },
+  {
+   "front": "Alkaloids",
+   "back": "Basic plant substances with nitrogen heterocycles: atropine, morphine, quinine, caffeine"
+  },
+  {
+   "front": "Dragendorff’s reagent",
+   "back": "Potassium bismuth iodide; gives an orange precipitate with alkaloids"
+  },
+  {
+   "front": "β-Lactam ring",
+   "back": "A strained four-membered ring; acylates transpeptidase, hydrolyzed by β-lactamase"
+  },
+  {
+   "front": "Fluoroquinolones and metals",
+   "back": "Form chelates with Ca^2+^, Mg^2+^, Al^3+^, Fe^2+^ and are not absorbed"
+  }
+ ]
+}

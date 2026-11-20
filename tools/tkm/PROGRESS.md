@@ -14,3 +14,9 @@ Holat:
 - [ ] t06–t15
 - [ ] PDF (tools/i18n/books/tkm/pdf_uz.json, pdf_en.json, muqova), catalog.json, lang-en.js, manifest, precache, sw.js versiya
 - [ ] to'liq tekshiruv, mahalliy sinov, keyin push uchun ruxsat so'rash (push faqat egasi "push qil" desa)
+
+## Kengaytma (2026-11-20)
+- [x] tools/tkm/ext/{uz,en}/t01–t15.json: har mavzuga 2–3 yangi bo'lim, mavjud bo'limlarga qo'shimchalar,
+      +1 ko'nikma, +6 savol, +10 test (jami 25), +5 masala (jami 8), +5–6 kartochka
+- [x] 3 ta yangi struktura rasmi: t10_keton, t11_alkaloid, t15_eikozanoid (uz + en)
+- [x] PDF qayta yig'ildi, sw.js v1.1.20

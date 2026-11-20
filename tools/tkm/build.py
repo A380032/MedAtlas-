@@ -4,6 +4,9 @@
   python3 tools/tkm/build.py --check  -> faqat tekshiradi, yozmaydi
 
 Manba: tools/tkm/src/uz/tNN.json va tools/tkm/src/en/tNN.json (bir mavzu = bir fayl, ikki til).
+Kengaytma: tools/tkm/ext/uz|en/tNN.json — yangi bo'limlar, bo'limlarga qo'shimcha bloklar, ko'nikmalar,
+savollar, testlar, masalalar, kartochkalar (merge_ext ga qarang). Bo'lim, jadval, rasm va masala
+raqamlari yig'ishda avtomatik qayta tartiblanadi.
 Testlarda to'g'ri javob har doim birinchi variant (answer=0) yoziladi; skript ularni ikkala tilda
 BIR XIL tartibda aralashtiradi (to'g'ri javob o'rni 0..4 bo'yicha tekis taqsimlanadi).
 
@@ -19,6 +22,46 @@ from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SRC = os.path.join(ROOT, "tools", "tkm", "src")
+EXT = os.path.join(ROOT, "tools", "tkm", "ext")   # kengaytma: ext/<til>/tNN.json (ixtiyoriy)
+
+
+def merge_ext(t, lang, f):
+    """Kengaytmani mavzuga qo'shadi va bo'lim/jadval/rasm/masala raqamlarini qayta tartiblaydi.
+    ext fayl: {"append": {"<bo'lim indeksi>": [bloklar]},           # mavjud bo'lim oxiriga
+               "insert": [{"after": i, "title": ..., "blocks": [...]}],  # i-bo'limdan keyin yangi bo'lim (-1 = boshiga)
+               "goals"/"skills"/"questions"/"quiz"/"cases"/"cards": [...]}   # oxiriga qo'shiladi
+    Indekslar asl (src) fayldagi bo'limlar bo'yicha."""
+    p = os.path.join(EXT, lang, f)
+    if os.path.exists(p):
+        x = json.load(open(p, encoding="utf8"))
+        secs = t["sections"]
+        for k, blocks in x.get("append", {}).items():
+            secs[int(k)]["blocks"].extend(blocks)
+        groups = {}
+        for ins in x.get("insert", []):
+            groups.setdefault(ins["after"], []).append({"title": ins["title"], "blocks": ins["blocks"]})
+        out = groups.get(-1, [])
+        for i, sec in enumerate(secs):
+            out.append(sec); out.extend(groups.get(i, []))
+        t["sections"] = out
+        for key in ("goals", "skills", "questions", "quiz", "cases", "cards"):
+            t.setdefault(key, []).extend(x.get(key, []))
+    no = t["no"]
+    n = 0
+    for sec in t["sections"]:
+        if re.match(r"^\d+\. ", sec["title"]):
+            n += 1; sec["title"] = re.sub(r"^\d+\. ", f"{n}. ", sec["title"])
+    tw, iw, cw = ("Jadval", "Rasm", "Masala") if lang == "uz" else ("Table", "Figure", "Problem")
+    tn = im = 0
+    for sec in t["sections"] + t.get("skills", []):
+        for b in sec["blocks"]:
+            if b["type"] == "table" and re.match(rf"^{tw} \d+\.\d+\. ", b.get("title", "")):
+                tn += 1; b["title"] = re.sub(rf"^{tw} \d+\.\d+\. ", f"{tw} {no}.{tn}. ", b["title"])
+            if b["type"] == "img":
+                im += 1; b["label"] = f"{iw} {no}.{im}"
+    for i, c in enumerate(t.get("cases", [])):
+        if re.match(rf"^{cw} \d+$", c["title"]): c["title"] = f"{cw} {i + 1}"
+    return t
 META = {
     "uz": {"id": "tkm", "name": "Tibbiy va biologik kimyo",
            "description": "Mukammal qo‘llanma · 15 ta amaliy va laboratoriya mashg‘uloti mavzusi",
@@ -146,6 +189,7 @@ def main():
         if not os.path.exists(pe):
             err(f"{f}: inglizcha fayl yo'q"); continue
         te = json.load(open(pe, encoding="utf8"))
+        tu = merge_ext(tu, "uz", f); te = merge_ext(te, "en", f)
         w = f[:-5]
         fill_sizes(tu); fill_sizes(te)
         if tu["no"] != te["no"] or tu["id"] != te["id"]: err(f"{w}: no/id farq")

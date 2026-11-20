@@ -1,0 +1,97 @@
+{
+ "append": {
+  "4": [
+   {"type": "h", "text": "High-energy compounds"},
+   {"type": "p", "text": "Compounds that release more than ΔG°′ ≈ −30 kJ/mol on hydrolysis are called **high-energy (macroergic)** compounds; such a bond is shown with the ∼ symbol. ATP is a high-energy compound for three reasons: **mutual repulsion of the negative charges** of the phosphate groups, **resonance stabilization** of the products (ADP and phosphate) and their better **hydration**."},
+   {"type": "table", "title": "Table 5.0. Standard Gibbs energy of hydrolysis of phosphate compounds (pH 7)", "head": ["Compound", "ΔG°′, kJ/mol"], "rows": [
+    ["Phosphoenolpyruvate", "−61.9"],
+    ["1,3-Bisphosphoglycerate", "−49.4"],
+    ["Creatine phosphate", "−43.1"],
+    ["ATP → AMP + PP~i~", "−45.6"],
+    ["ATP → ADP + P~i~", "−30.5"],
+    ["Glucose 1-phosphate", "−20.9"],
+    ["Glucose 6-phosphate", "−13.8"],
+    ["Glycerol 3-phosphate", "−9.2"]
+   ]},
+   {"type": "p", "text": "ATP stands in the middle of the table: that is why it is synthesized by **accepting** phosphate from higher-energy compounds (phosphoenolpyruvate, creatine phosphate) and **donates** it to lower-energy compounds (glucose, glycerol). **Creatine phosphate** is the ATP reserve of muscle: with creatine kinase it regenerates ATP from ADP instantly and supplies the first 10 seconds of a short intense effort."},
+   {"type": "p", "text": "The actual ΔG in the cell differs from the standard value because the concentrations of substances are not 1 mol/L: ΔG = ΔG°′ + R·T·ln([ADP]·[P~i~] / [ATP]). Since [ATP] in the cell is much higher than ADP, the actual ΔG of ATP hydrolysis reaches **−50 to −60 kJ/mol**."}
+  ],
+  "6": [
+   {"type": "h", "text": "Calculating energy expenditure"},
+   {"type": "p", "text": "The **Mifflin–St Jeor formula** is used to estimate the basal metabolic rate (mass in kg, height in cm, age in years, result in kcal/day): for men BMR = 10·mass + 6.25·height − 5·age + 5; for women BMR = 10·mass + 6.25·height − 5·age − 161. Total expenditure is found by multiplying the BMR by a **physical activity factor**: sedentary — 1.2, moderate — 1.55, high — 1.9."},
+   {"type": "p", "text": "The **specific dynamic action of food** is the extra energy spent on digesting and absorbing food: ≈ 30 % of the energy consumed for proteins, 5–10 % for carbohydrates and 2–5 % for fats. That is why body temperature and heat production rise more after a protein meal."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The mitochondria of **brown adipose tissue** (abundant in newborns) contain the protein **thermogenin** (UCP1): it “dissipates” the proton gradient without ATP synthesis and converts the energy of oxidation entirely into heat. This is non-shivering thermogenesis, which protects the newborn from cold."}]}
+  ]
+ },
+ "insert": [
+  {"after": 3, "title": "0. Chemical equilibrium. Le Chatelier’s principle", "blocks": [
+   {"type": "p", "text": "The state of a reversible reaction in which the rates of the forward and reverse reactions are equal is called **chemical equilibrium**. For the reaction aA + bB ⇄ cC + dD the **equilibrium constant** (law of mass action) is: K = [C]^c^·[D]^d^ / ([A]^a^·[B]^b^). If K > 1, the equilibrium lies on the side of the products."},
+   {"type": "p", "text": "The equilibrium constant is related to the standard Gibbs energy: ΔG° = −R·T·lnK. At 298 K, if K = 10, then ΔG° ≈ −5.7 kJ/mol; every 10-fold increase in K lowers ΔG° by another 5.7 kJ/mol. Reactions with a negative ΔG° lie mainly on the product side at equilibrium."},
+   {"type": "p", "text": "**Le Chatelier’s principle:** if an external influence is applied to a system at equilibrium, the equilibrium shifts in the direction that reduces this influence."},
+   {"type": "table", "title": "Table 5.0. Shift of equilibrium", "head": ["Influence", "Shift of equilibrium", "Example in the body"], "rows": [
+    ["Increasing the concentration of a substance", "toward the side that consumes this substance", "high pO~2~ in the lungs: Hb + O~2~ ⇄ HbO~2~ shifts to the right"],
+    ["Continuous removal of a product", "toward product formation", "removal of CO~2~ in the lungs: H~2~CO~3~ ⇄ CO~2~ + H~2~O shifts to the right"],
+    ["Raising the temperature", "toward the endothermic reaction", "in fever the affinity of hemoglobin for O~2~ decreases"],
+    ["Raising the pressure (gases)", "toward the side with fewer gas molecules", "in hyperbaric oxygenation more O~2~ dissolves in the blood"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In carbon monoxide poisoning the equilibrium HbCO + O~2~ ⇄ HbO~2~ + CO is governed by Le Chatelier’s principle: 100 % oxygen, especially under high pressure in a hyperbaric chamber, shifts the equilibrium **to the right** and displaces CO from hemoglobin faster."}]}
+  ]},
+  {"after": 3, "title": "0. Fundamentals of chemical kinetics and catalysis", "blocks": [
+   {"type": "p", "text": "Thermodynamics answers the question of whether a reaction **can occur**, while **chemical kinetics** studies **how fast** it occurs. For example, the oxidation of glucose by oxygen is very exergonic, yet sugar stays unchanged in a jar for years — the reaction rate is extremely small."},
+   {"type": "list", "items": [
+    "**Law of mass action (for rate):** v = k·[A]^a^·[B]^b^, where k is the rate constant.",
+    "**Van’t Hoff rule:** when the temperature rises by 10 °C, the rate of most reactions increases 2–4 times: v~2~ / v~1~ = γ^(t2 − t1) / 10^.",
+    "**Arrhenius equation:** k = A·e^−Ea / (RT)^; the rate depends sharply on the **activation energy** E~a~ — the energy barrier that must be overcome for the reaction to occur.",
+    "A **catalyst** speeds up a reaction by opening another pathway with a lower activation energy, but it does not change ΔH, ΔG or the position of equilibrium — it only helps the equilibrium to be reached faster."
+   ]},
+   {"type": "p", "text": "**Enzymes** are biological catalysts. They speed up reactions 10^6^–10^12^ times, have high **specificity** and work under mild conditions (37 °C, pH ≈ 7). An enzyme forms an **enzyme–substrate complex** with the substrate: E + S ⇄ ES → E + P. Michaelis–Menten equation: v = V~max~·[S] / (K~m~ + [S]), where K~m~ is the substrate concentration at which the rate is half the maximum."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The van’t Hoff rule is also seen in the clinic: when body temperature rises by 1 °C, metabolism and oxygen consumption increase by about 10–13 % — in fever the heart rate and breathing speed up. Conversely, **hypothermia** slows metabolism; that is why artificial cooling is used during heart surgery and after cardiac arrest to protect the brain."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: determining the direction of a process from the Gibbs energy", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Express ΔH and ΔS in the same energy unit (divide ΔS by 1000 to convert J/(mol·K) to kJ/(mol·K)).",
+    "Write the temperature in kelvin: T = t(°C) + 273.",
+    "Calculate ΔG = ΔH − T·ΔS.",
+    "Draw a conclusion from the sign: ΔG < 0 — the process is spontaneous, ΔG > 0 — it is not, ΔG = 0 — equilibrium.",
+    "If the equilibrium temperature is needed, find it: T = ΔH / ΔS; or find the equilibrium constant: K = e^−ΔG° / (RT)^."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What is chemical equilibrium? How is the equilibrium constant related to the Gibbs energy?",
+  "State Le Chatelier’s principle and give examples from the body.",
+  "What factors does the reaction rate depend on? Explain the van’t Hoff rule and the Arrhenius equation.",
+  "How do catalysts and enzymes affect a reaction? Do they change the equilibrium?",
+  "What are high-energy compounds? Why does ATP occupy an intermediate place in energy metabolism?",
+  "How is the basal metabolic rate calculated? What is the specific dynamic action of food?"
+ ],
+ "quiz": [
+  {"q": "According to Le Chatelier’s principle, in which direction does the equilibrium shift when the temperature is raised?", "options": ["Toward the endothermic reaction", "Toward the exothermic reaction", "It does not shift", "Always toward the products", "Always toward the starting substances"], "answer": 0},
+  {"q": "How does a catalyst affect a reaction?", "options": ["It lowers the activation energy and does not change the equilibrium", "It makes ΔG negative", "It shifts the equilibrium toward the products", "It lowers ΔH", "It is consumed in the reaction"], "answer": 0},
+  {"q": "According to the van’t Hoff rule, how many times does the reaction rate increase when the temperature rises by 10 °C?", "options": ["2–4 times", "10 times", "100 times", "It does not change", "1.1 times"], "answer": 0},
+  {"q": "If the equilibrium constant K > 1, what is ΔG°?", "options": ["Negative", "Positive", "Zero", "Infinite", "It does not depend on K"], "answer": 0},
+  {"q": "The hydrolysis of which compound releases the most energy?", "options": ["Phosphoenolpyruvate", "ATP (to ADP)", "Glucose 6-phosphate", "Glycerol 3-phosphate", "Glucose 1-phosphate"], "answer": 0},
+  {"q": "Which high-energy reserve compound regenerates ATP instantly in muscle?", "options": ["Creatine phosphate", "Glycogen", "Glucose 6-phosphate", "Triglyceride", "AMP"], "answer": 0},
+  {"q": "What does the Michaelis constant K~m~ mean?", "options": ["The substrate concentration at which the rate is half the maximum", "The maximum reaction rate", "The enzyme concentration", "The activation energy", "The equilibrium constant"], "answer": 0},
+  {"q": "In which nutrient is the specific dynamic action of food the greatest?", "options": ["Proteins", "Fats", "Carbohydrates", "Water", "Mineral salts"], "answer": 0},
+  {"q": "Which protein produces heat in brown adipose tissue?", "options": ["Thermogenin (UCP1)", "Myoglobin", "Creatine kinase", "Leptin", "Albumin"], "answer": 0},
+  {"q": "On which principle is the hyperbaric chamber in carbon monoxide poisoning based?", "options": ["Le Chatelier’s principle — O~2~ pressure rises and the equilibrium shifts toward HbO~2~", "Hess’s law", "The van’t Hoff rule", "The 2nd law of thermodynamics", "Raoult’s law"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "For the denaturation of a protein ΔH = +400 kJ/mol and ΔS = +1.2 kJ/(mol·K).", "ask": "Calculate ΔG at 37 °C and 70 °C. Above what temperature does the protein denature spontaneously?", "answer": "37 °C (310 K): ΔG = 400 − 310 · 1.2 = 400 − 372 = **+28 kJ/mol** — denaturation is not spontaneous, the protein is stable. 70 °C (343 K): ΔG = 400 − 343 · 1.2 = 400 − 411.6 = **−11.6 kJ/mol** — denaturation is spontaneous. Equilibrium temperature: T = ΔH / ΔS = 400 / 1.2 ≈ 333 K = **60 °C**. That is why high temperature destroys microbial proteins in pasteurization and sterilization, while a fever above 42 °C is dangerous for the body."},
+  {"title": "Problem 5", "text": "The equilibrium constant of an enzymatic reaction at 25 °C is K = 1000.", "ask": "Calculate the standard Gibbs energy of the reaction (R = 8.314 J/(mol·K)). Which side does the equilibrium lie on?", "answer": "ΔG° = −R·T·lnK = −8.314 · 298 · ln1000 = −8.314 · 298 · 6.91 ≈ −17 100 J/mol = **−17.1 kJ/mol**. ΔG° is negative and K is large — at equilibrium the **products** predominate: for every 1000 product molecules there is only 1 molecule of starting substance."},
+  {"title": "Problem 6", "text": "A 20-year-old student: mass 70 kg, height 175 cm, moderately physically active (factor 1.55).", "ask": "Calculate the basal metabolic rate and daily energy expenditure using the Mifflin–St Jeor formula.", "answer": "BMR = 10 · 70 + 6.25 · 175 − 5 · 20 + 5 = 700 + 1093.75 − 100 + 5 ≈ **1699 kcal/day**. Total expenditure = 1699 · 1.55 ≈ **2633 kcal/day** (≈ 11 000 kJ). To keep the weight stable, the energy value of the diet should equal this."},
+  {"title": "Problem 7", "text": "A patient’s body temperature rose from 37 °C to 40 °C. Take the temperature coefficient of metabolic reactions as γ = 2.", "ask": "How many times does the reaction rate increase according to the van’t Hoff rule? What does this mean clinically?", "answer": "v~2~ / v~1~ = 2^(40 − 37) / 10^ = 2^0.3^ ≈ **1.23** — reactions speed up by ≈ 23 %. In fever oxygen consumption and CO~2~ production increase, so the heart rate and breathing speed up; in patients with heart or lung disease this extra load can be dangerous. That is why antipyretics are given for high fever."},
+  {"title": "Problem 8", "text": "An overweight patient reduced the diet by 500 kcal a day to lose weight; physical activity did not change. 1 kg of adipose tissue ≈ 7700 kcal.", "ask": "How many days are needed to lose 1 kg of adipose tissue? About how much weight loss can be expected in a month?", "answer": "7700 / 500 ≈ **15 days** per 1 kg. In a month (30 days) about 30 · 500 / 7700 ≈ **2 kg**. This is a safe and sustainable rate of weight loss; severe starvation, in contrast, leads to the breakdown of muscle proteins and a fall in the basal metabolic rate. The thermodynamic basis of weight loss is the law of conservation of energy: if expenditure exceeds intake, the missing energy is taken from the oxidation of stored fat."}
+ ],
+ "cards": [
+  {"front": "Le Chatelier’s principle", "back": "A system at equilibrium shifts in the direction that reduces an external influence"},
+  {"front": "ΔG° and K", "back": "ΔG° = −R·T·lnK; if K > 1, ΔG° < 0"},
+  {"front": "Van’t Hoff rule", "back": "When the temperature rises by 10 °C, the reaction rate increases 2–4 times"},
+  {"front": "Activation energy", "back": "The energy barrier that must be overcome for a reaction to occur; a catalyst lowers it"},
+  {"front": "Creatine phosphate", "back": "The high-energy reserve of muscle; regenerates ATP from ADP with creatine kinase"},
+  {"front": "Thermogenin (UCP1)", "back": "Converts the energy of oxidation into heat in the mitochondria of brown fat"}
+ ]
+}

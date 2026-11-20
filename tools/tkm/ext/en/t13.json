@@ -1,0 +1,87 @@
+{
+ "append": {
+  "6": [
+   {"type": "h", "text": "Nutritional value of proteins and protein deficiency"},
+   {"type": "p", "text": "The daily protein requirement for adults is **0.8–1 g/kg** body weight; in pregnancy, lactation, periods of growth, severe illness and burns it rises to 1.2–2 g/kg. Animal proteins (eggs, milk, meat, fish) contain all the essential amino acids and are well digested; plant proteins are low in some of them (lysine in cereals, methionine in legumes)."},
+   {"type": "table", "title": "Table 13.0. Forms of protein–energy malnutrition in children", "head": ["Feature", "Kwashiorkor", "Marasmus"], "rows": [
+    ["Main cause", "enough energy, protein sharply deficient", "both protein and energy deficient"],
+    ["Edema", "present (albumin decreased, oncotic pressure low)", "absent"],
+    ["Subcutaneous fat", "preserved", "almost absent, “old man’s face”"],
+    ["Liver", "fatty degeneration, enlarged", "usually unchanged"],
+    ["Blood albumin", "sharply decreased", "near normal or slightly decreased"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "In kwashiorkor the liver cannot export triglycerides because it lacks protein (apoproteins) for lipoprotein synthesis — a **fatty liver** develops. The edema is explained by the fall in albumin and oncotic pressure (topic 2)."}]}
+  ]
+ },
+ "insert": [
+  {"after": 2, "title": "0. Amino acid metabolism, nitrogen balance and ammonia", "blocks": [
+   {"type": "p", "text": "Proteins are constantly renewed in the body: in adults ≈ 300–400 g of protein is broken down and resynthesized daily. The nitrogen of the released amino acids is excreted mainly as **urea** in the urine. The ratio of nitrogen taken in with food to nitrogen excreted is called the **nitrogen balance** (≈ 16 % of protein mass is nitrogen, i.e. nitrogen · 6.25 = protein)."},
+   {"type": "list", "items": [
+    "**Positive nitrogen balance** (intake > output): growth, pregnancy, recovery from illness, increase in muscle mass.",
+    "**Nitrogen equilibrium** (intake = output): healthy adults.",
+    "**Negative nitrogen balance** (output > intake): starvation, burns, severe infections and operations, cancer cachexia, treatment with glucocorticoids."
+   ]},
+   {"type": "p", "text": "**Transaminases** are enzymes that transfer an amino group from an amino acid to a keto acid (coenzyme — pyridoxal phosphate): **ALT** (alanine aminotransferase, mainly in the liver) and **AST** (aspartate aminotransferase, in the liver, heart and skeletal muscles). When cells are damaged they are released into the blood; the normal level of each is up to ≈ 40 U/L. The **De Ritis ratio** (AST / ALT ≈ 1.3) helps to estimate the site of damage: < 1 in viral hepatitis (ALT predominates), > 2 in alcoholic liver damage and myocardial infarction."},
+   {"type": "p", "text": "**Ammonia** (NH~3~), formed in the deamination of amino acids, is a potent neurotoxin: in the brain it binds α-ketoglutarate into glutamate and glutamine, slowing the Krebs cycle, and causes osmotic swelling of astrocytes. In the liver ammonia is converted into harmless urea in the **urea cycle**: 2NH~3~ + CO~2~ → (NH~2~)~2~CO + H~2~O (ATP is consumed in the cycle). The normal blood ammonia level is < 50 µmol/L."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Hepatic encephalopathy:** in cirrhosis or acute liver failure urea synthesis decreases and ammonia accumulates in the blood — drowsiness, confusion, “flapping” tremor (asterixis), coma. **Lactulose** is used in treatment: in the colon it is broken down by bacteria into lactic and acetic acids and acidifies the contents; NH~3~ becomes ionized to NH~4~^+^, is not absorbed into the blood and is excreted in the feces."}]}
+  ]},
+  {"after": 5, "title": "0. Fibrous proteins and disorders of protein folding", "blocks": [
+   {"type": "p", "text": "**Collagen** is the most abundant protein in the body (≈ 25–30 % of total protein). Each of its chains contains repeating **Gly−X−Y** (X is often proline, Y — hydroxyproline or hydroxylysine); three left-handed chains form a right-handed **triple helix**. Only the smallest amino acid — glycine — fits inside the helix. The enzymes that hydroxylate proline and lysine require **ascorbic acid** (vitamin C) and Fe^2+^; the hydrogen bonds of hydroxyproline stabilize the triple helix."},
+   {"type": "p", "text": "Correct protein folding in the cell is assisted by **chaperones** (heat shock proteins). Misfolded proteins are usually degraded in the proteasome; if they accumulate and form insoluble β-sheet fibrils, **amyloidosis** and neurodegenerative diseases develop."},
+   {"type": "table", "title": "Table 13.0. Diseases associated with disorders of protein structure", "head": ["Disease", "Protein", "Essence of the disorder"], "rows": [
+    ["Scurvy", "collagen", "vitamin C deficiency — proline is not hydroxylated, the triple helix is unstable: bleeding gums, loose teeth, poor wound healing"],
+    ["Osteogenesis imperfecta", "type I collagen", "glycine is replaced by another amino acid — bones are brittle and break often"],
+    ["Alzheimer disease", "β-amyloid, tau protein", "β-sheet amyloid plaques and neurofibrillary tangles"],
+    ["Parkinson disease", "α-synuclein", "Lewy bodies form in neurons"],
+    ["Prion diseases (Creutzfeldt–Jakob)", "prion protein PrP", "the α-helix changes to a β-sheet and “converts” normal protein into the same form"],
+    ["AA and AL amyloidosis", "serum amyloid A, immunoglobulin light chains", "amyloid accumulates in organs and disturbs their function"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: calculating nitrogen balance", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Determine the daily protein intake (from the diet or parenteral nutrition).",
+    "Calculate the nitrogen intake: N~in~ = protein (g) / 6.25.",
+    "Determine the urea nitrogen (g) in the daily urine and add ≈ 4 g for other losses through urine, feces and skin: N~out~ = urea nitrogen + 4.",
+    "Find the nitrogen balance: NB = N~in~ − N~out~.",
+    "Assess the result: positive — anabolism, negative — protein catabolism; with a negative balance an increase in dietary protein is planned."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What is nitrogen balance? In which conditions is it positive and negative?",
+  "Where are ALT and AST abundant? What does the De Ritis ratio show?",
+  "Why is ammonia toxic and how is it detoxified in the body? How does lactulose help in hepatic encephalopathy?",
+  "How is collagen structured? How does vitamin C deficiency affect collagen?",
+  "What are chaperones? Give examples of diseases associated with disorders of protein folding.",
+  "How do kwashiorkor and marasmus differ? Why do edema and fatty liver develop in kwashiorkor?"
+ ],
+ "quiz": [
+  {"q": "Approximately what fraction of protein mass is nitrogen?", "options": ["≈ 16 %", "≈ 6 %", "≈ 30 %", "≈ 50 %", "≈ 2 %"], "answer": 0},
+  {"q": "In which condition is the nitrogen balance negative?", "options": ["Severe burns", "Pregnancy", "Growth of children", "Recovery from illness", "Increasing muscle mass"], "answer": 0},
+  {"q": "Which enzyme rises more in viral hepatitis and what is the De Ritis ratio?", "options": ["ALT; ratio < 1", "AST; ratio > 2", "Amylase; ratio 1", "Lipase; ratio > 2", "Creatine kinase; ratio < 1"], "answer": 0},
+  {"q": "Where and into what is ammonia mainly converted in the body?", "options": ["In the liver into urea", "In the kidney into uric acid", "In the brain into creatinine", "In muscle into lactate", "In the intestine into glucose"], "answer": 0},
+  {"q": "How does lactulose act in hepatic encephalopathy?", "options": ["It acidifies the intestine and traps NH~3~ as NH~4~^+^", "It converts ammonia into urea", "It raises blood glucose", "It regenerates liver cells", "It binds ammonia in the blood"], "answer": 0},
+  {"q": "Which repeating sequence is found in collagen chains?", "options": ["Gly−X−Y", "Ala−Ser−Gly", "Cys−X−X−Cys", "Lys−Arg", "Pro−Pro−Pro"], "answer": 0},
+  {"q": "Which vitamin is required by the enzyme that hydroxylates proline?", "options": ["Vitamin C", "Vitamin D", "Vitamin K", "Vitamin B~12~", "Vitamin A"], "answer": 0},
+  {"q": "Which level of protein structure changes in prion diseases?", "options": ["Secondary (α-helix changes to β-sheet)", "Primary", "Only quaternary", "None changes", "Only peptide bonds break"], "answer": 0},
+  {"q": "What is the main difference between kwashiorkor and marasmus?", "options": ["The presence of edema", "The absence of subcutaneous fat", "Energy deficiency", "Stunted growth", "Weakness"], "answer": 0},
+  {"q": "What is the daily protein requirement for adults?", "options": ["0.8–1 g/kg", "3–4 g/kg", "0.1–0.2 g/kg", "5 g/kg", "10 g/kg"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "An elderly man living alone who for a long time ate only bread, potatoes and tea has bleeding, swollen gums, loose teeth, pinpoint hemorrhages in the skin, and small wounds that heal slowly.", "ask": "Deficiency of which vitamin? Explain the molecular cause of the signs in terms of collagen structure.", "answer": "This is **scurvy** — **vitamin C** deficiency. Ascorbic acid is required for prolyl and lysyl hydroxylases: it keeps the iron of the enzyme in the Fe^2+^ state. Without vitamin C, proline and lysine in collagen chains are not hydroxylated and the hydroxyproline hydrogen bonds do not form — the **triple helix is unstable** and collagen fibers are fragile. As a result the vessel walls weaken (hemorrhages, bleeding gums), the periodontal ligament loosens and wounds do not heal. Treatment — vitamin C and a diet rich in fruit and vegetables."},
+  {"title": "Problem 5", "text": "Blood tests of two patients: the first has ALT 820 U/L, AST 610 U/L and jaundice; the second has ALT 60 U/L, AST 180 U/L and a history of many years of alcohol use.", "ask": "Calculate the De Ritis ratio for each patient and assess the nature of the damage.", "answer": "Patient 1: AST / ALT = 610 / 820 ≈ **0.74** (< 1) — ALT predominates, the cytoplasm of liver cells is massively damaged; this is typical of **acute viral hepatitis**. Patient 2: 180 / 60 = **3** (> 2) — AST predominates; part of AST is located in mitochondria, which alcohol damages, and in addition B~6~ deficiency in alcoholism reduces ALT synthesis — typical of **alcoholic liver damage**. In both cases the diagnosis is confirmed by other tests."},
+  {"title": "Problem 6", "text": "A patient with severe burns receives 75 g of protein a day by parenteral nutrition. The daily urine contains 18 g of urea nitrogen.", "ask": "Calculate and assess the nitrogen balance.", "answer": "N~in~ = 75 / 6.25 = **12 g**. N~out~ = 18 + 4 = **22 g**. Nitrogen balance = 12 − 22 = **−10 g/day** — sharply negative. In burns, stress hormones cause rapid breakdown of muscle proteins, and protein is also lost from the burn surface. Each 1 g of nitrogen corresponds to ≈ 6.25 g of protein or ≈ 30 g of muscle tissue, so the patient is losing ≈ 300 g of muscle a day. The protein intake should be increased to 1.5–2 g/kg."},
+  {"title": "Problem 7", "text": "A 2-year-old child weaned early from breast milk and fed mainly rice porridge has swollen legs and face, a large abdomen, sparse discolored hair and is apathetic. Blood albumin is 18 g/L.", "ask": "What is the condition? Explain the biochemical cause of the edema and the enlarged abdomen.", "answer": "This is **kwashiorkor** — enough energy (carbohydrate) but a severe lack of protein. The liver cannot synthesize enough albumin — albumin is 18 g/L, the **oncotic pressure has fallen**, and water stays in the tissues — edema and ascites. Because apoproteins are lacking, the liver cannot export triglycerides as lipoproteins — a **fatty liver** enlarges, and the abdomen looks big. Treatment: feeding with milk-based therapeutic formulas, increasing protein and energy gradually, and treating infections."},
+  {"title": "Problem 8", "text": "A patient with liver cirrhosis became drowsy and confused after bleeding from esophageal varices; there is a “flapping” tremor of the hands. Blood ammonia is 140 µmol/L (normal < 50).", "ask": "How did the bleeding cause the rise in ammonia? How does lactulose help?", "answer": "Blood in the intestine is a large amount of **protein**: bacteria break it down and produce a lot of **ammonia**. In cirrhosis the liver cannot detoxify ammonia in the urea cycle, and in addition blood bypasses the portal system — ammonia reaches the brain and causes **hepatic encephalopathy**. **Lactulose** is broken down by bacteria in the colon into organic acids, and the contents become acidic: NH~3~ + H^+^ → NH~4~^+^; ionized ammonium is not absorbed into the blood and is excreted in the feces, while the laxative effect of lactulose cleans out the intestine. In addition, an antibiotic that reduces intestinal bacteria (rifaximin) is given."}
+ ],
+ "cards": [
+  {"front": "Nitrogen balance", "back": "Difference between nitrogen intake and output; protein = nitrogen · 6.25; positive in growth, negative in burns and starvation"},
+  {"front": "De Ritis ratio", "back": "AST / ALT ≈ 1.3; < 1 in hepatitis, > 2 in alcoholic damage and infarction"},
+  {"front": "Ammonia", "back": "A neurotoxin; detoxified in the liver in the urea cycle; normal < 50 µmol/L"},
+  {"front": "Collagen", "back": "Gly−X−Y repeats, triple helix; vitamin C is needed to hydroxylate proline"},
+  {"front": "Chaperones", "back": "Proteins that help other proteins fold correctly (heat shock proteins)"},
+  {"front": "Kwashiorkor", "back": "Protein deficiency: edema, fatty liver, low albumin; no edema in marasmus"}
+ ]
+}

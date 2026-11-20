@@ -1,0 +1,106 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Factors affecting the stability of complexes"},
+   {"type": "list", "items": [
+    "**Charge and radius of the central ion:** a large charge and small radius attract the ligand more strongly (Fe^3+^ complexes are usually more stable than Fe^2+^ complexes).",
+    "**Series of divalent 3d metals (Irving–Williams series):** Mn^2+^ < Fe^2+^ < Co^2+^ < Ni^2+^ < Cu^2+^ > Zn^2+^ — copper complexes are the most stable.",
+    "**Nature of the ligand:** the basicity of the donor atom and polydenticity (the chelate effect) increase stability.",
+    "**pH of the medium:** in an acidic medium H^+^ ions compete with the metal for the donor atoms of the ligand and the complex breaks down; in an alkaline medium the metal may precipitate as a hydroxide."
+   ]},
+   {"type": "p", "text": "**Worked example.** In a solution containing 0.1 M [Ag(NH~3~)~2~]^+^ and 1 M excess NH~3~, the concentration of free Ag^+^ is: [Ag^+^] = K~inst~·[complex] / [NH~3~]^2^ = 5.9·10^−8^ · 0.1 / 1 = 5.9·10^−9^ mol/L. Such a tiny amount of free metal ion explains the biological importance of complexes: there is almost no “free” Cu^2+^ or Fe^3+^ in the body — they are bound to proteins."}
+  ],
+  "3": [
+   {"type": "h", "text": "Cyanide poisoning — a clinical example of complex formation"},
+   {"type": "p", "text": "The cyanide ion CN^−^ is a very strong ligand. It forms a stable complex with the **Fe^3+^ ion of cytochrome oxidase** in the mitochondria and stops the respiratory chain: the tissues cannot use oxygen (histotoxic hypoxia), while the blood remains saturated with oxygen — even venous blood is bright red."},
+   {"type": "table", "title": "Table 3.0. Chemical basis of antidotes in cyanide poisoning", "head": ["Antidote", "Reaction", "Result"], "rows": [
+    ["Sodium nitrite, amyl nitrite", "Hb(Fe^2+^) → methemoglobin (Fe^3+^)", "methemoglobin pulls CN^−^ away from cytochrome oxidase, forming cyanmethemoglobin"],
+    ["Sodium thiosulfate", "CN^−^ + S~2~O~3~^2−^ → SCN^−^ + SO~3~^2−^ (enzyme rhodanese)", "the low-toxicity thiocyanate is excreted in the urine"],
+    ["Hydroxocobalamin", "Co^3+^–OH + CN^−^ → Co^3+^–CN", "cyanocobalamin (vitamin B~12~) is formed and excreted in the urine"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "In **metalloenzymes** the metal is firmly bound to the protein, and the enzyme loses activity if it is removed (carbonic anhydrase — Zn, cytochrome oxidase — Fe and Cu). In **metal-activated enzymes** the metal is loosely bound and increases activity when added from solution (Mg^2+^ for kinases)."}]}
+  ],
+  "5": [
+   {"type": "h", "text": "Determination of water hardness"},
+   {"type": "p", "text": "5 mL of ammonia buffer (pH ≈ 10) and Eriochrome Black T are added to 100 mL of water — Ca^2+^ and Mg^2+^ give a **wine-red** color with the indicator. On titration with Trilon B the metals are released from the indicator and the color changes to **blue**. Hardness: H = C~n~(Trilon B)·V(Trilon B)·1000 / V(water), mmol-eq/L."},
+   {"type": "table", "title": "Table 3.0. Metal indicators used in complexometry", "head": ["Indicator", "pH", "Ion determined", "Color change"], "rows": [
+    ["Eriochrome Black T", "≈ 10", "Ca^2+^ + Mg^2+^ (total hardness), Zn^2+^", "wine-red → blue"],
+    ["Murexide", "12–13", "Ca^2+^", "pink → violet"],
+    ["Xylenol orange", "5–6", "Zn^2+^, Pb^2+^, Bi^3+^", "red-violet → yellow"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Complex formation is also used in laboratory practice: **K~2~-EDTA** is added to tubes for the complete blood count, and **sodium citrate** to tubes for coagulation tests and for blood transfusion. Both bind Ca^2+^ and stop blood clotting (Ca^2+^ is clotting factor IV)."}]}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Isomerism of complex compounds", "blocks": [
+   {"type": "p", "text": "Complexes with the same composition but differing in the structure of the inner sphere or in the spatial arrangement of the ligands are called **isomers**. Isomers can differ sharply in their properties, including biological activity."},
+   {"type": "table", "title": "Table 3.0. Types of isomerism of complex compounds", "head": ["Type of isomerism", "Essence", "Example"], "rows": [
+    ["Geometric (cis–trans)", "identical ligands are next to each other (cis) or opposite each other (trans)", "cis- and trans-[Pt(NH~3~)~2~Cl~2~]"],
+    ["Optical", "the complex and its mirror image cannot be superimposed", "[Co(en)~3~]^3+^ (en — ethylenediamine)"],
+    ["Ionization", "an ion is exchanged between the inner and outer sphere", "[Co(NH~3~)~5~Br]SO~4~ and [Co(NH~3~)~5~SO~4~]Br"],
+    ["Hydrate", "a water molecule is in the inner or outer sphere", "[Cr(H~2~O)~6~]Cl~3~ (violet) and [Cr(H~2~O)~5~Cl]Cl~2~·H~2~O (green)"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Only **cis**-[Pt(NH~3~)~2~Cl~2~] (cisplatin) is active against tumors: two neighboring guanines of DNA bind in place of the two adjacent chlorides and bend the strand. **Transplatin** cannot form such a bridge and is useless as a drug. Newer-generation platinum drugs are **carboplatin** (less nephrotoxic) and **oxaliplatin** (in colorectal cancer)."}]},
+   {"type": "p", "text": "**Werner’s experiment** made it possible to distinguish the inner and outer spheres: when AgNO~3~ is added to a solution of CoCl~3~·5NH~3~, only two thirds of the chloride precipitates as AgCl. Therefore the third chloride is bound directly to cobalt and the formula is [Co(NH~3~)~5~Cl]Cl~2~."}
+  ]},
+  {"after": 4, "title": "0. Complex compounds in drugs and diagnostics", "blocks": [
+   {"type": "p", "text": "Complex formation is used in medicine not only to remove toxic metals but also to deliver a metal to the right place, to make it harmless and to release it slowly."},
+   {"type": "table", "title": "Table 3.0. Complex compounds used in medicine", "head": ["Preparation", "Central atom", "Use"], "rows": [
+    ["Cisplatin, carboplatin, oxaliplatin", "Pt^2+^", "anticancer chemotherapy"],
+    ["Gadolinium contrast agents (gadoterate, gadobutrol)", "Gd^3+^", "contrast enhancement in MRI"],
+    ["^99m^Tc complexes (pyrophosphate, MAG3, sestamibi)", "Tc", "bone, kidney and heart scintigraphy"],
+    ["Iron sucrose, ferric carboxymaltose", "Fe^3+^", "intravenous treatment of iron deficiency"],
+    ["Bismuth subcitrate", "Bi^3+^", "gastric ulcer, against Helicobacter pylori"],
+    ["Sodium nitroprusside Na~2~[Fe(CN)~5~NO]", "Fe^2+^", "hypertensive crisis (releases NO and dilates vessels)"],
+    ["Zinc insulin suspension", "Zn^2+^", "slow absorption of insulin (prolonged action)"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Free Gd^3+^** is very toxic: because its radius is close to that of Ca^2+^, it blocks calcium channels and enzymes. That is why it is given only as a very stable chelate. In severe renal failure the agent stays in the body for a long time, partly dissociates, and a risk of **nephrogenic systemic fibrosis** appears — such patients are given the most stable macrocyclic agents."}]},
+   {"type": "p", "text": "When **sodium nitroprusside** breaks down, 5 CN^−^ ions are released together with NO. With prolonged or high-dose infusion cyanide may accumulate, so it is used for a short time and, if necessary, together with sodium thiosulfate."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: complexometric determination of the total hardness of water", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Measure 100 mL of the water to be tested into a conical flask with a measuring cylinder.",
+    "Add 5 mL of ammonia buffer (pH ≈ 10) and a pinch of Eriochrome Black T — the solution turns wine-red.",
+    "Titrate from a burette with 0.05 N Trilon B solution until the color changes to pure blue; add the last drops slowly.",
+    "Repeat the titration twice and take the mean volume.",
+    "Calculate the hardness: H = C~n~·V·1000 / 100 (mmol-eq/L) and compare it with the norm (≤ 7 mmol-eq/L)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What types of isomerism occur in complex compounds? Why is only cisplatin active against tumors?",
+  "What factors affect the stability of complexes? State the Irving–Williams series.",
+  "Explain the mechanism of cyanide poisoning and the chemical basis of its antidotes.",
+  "How do metalloenzymes differ from metal-activated enzymes?",
+  "Why are gadolinium contrast agents given only in chelated form?",
+  "For what purpose are EDTA and citrate added to tubes for blood tests?"
+ ],
+ "quiz": [
+  {"q": "What kind of isomer is cisplatin?", "options": ["Geometric cis isomer", "Trans isomer", "Optical isomer", "Ionization isomer", "Hydrate isomer"], "answer": 0},
+  {"q": "According to the Irving–Williams series, which ion forms the most stable complexes?", "options": ["Cu^2+^", "Mn^2+^", "Fe^2+^", "Zn^2+^", "Co^2+^"], "answer": 0},
+  {"q": "Which enzyme is blocked by the cyanide ion?", "options": ["Cytochrome oxidase", "Catalase", "Carbonic anhydrase", "Alcohol dehydrogenase", "Xanthine oxidase"], "answer": 0},
+  {"q": "What does hydroxocobalamin form when it reacts with cyanide?", "options": ["Cyanocobalamin", "Methemoglobin", "Thiocyanate", "Carboxyhemoglobin", "Cyanmethemoglobin"], "answer": 0},
+  {"q": "Which metal is used in MRI contrast agents?", "options": ["Gadolinium", "Platinum", "Technetium", "Bismuth", "Zinc"], "answer": 0},
+  {"q": "What is released when sodium nitroprusside breaks down in the body?", "options": ["NO and CN^−^", "CO and O~2~", "H~2~S", "NH~3~ and Cl^−^", "Only Fe^2+^"], "answer": 0},
+  {"q": "How many moles of AgCl precipitate when excess AgNO~3~ is added to a solution of 1 mol of [Co(NH~3~)~5~Cl]Cl~2~?", "options": ["2", "3", "1", "0", "5"], "answer": 0},
+  {"q": "Which indicator and pH are used to determine the total hardness of water?", "options": ["Eriochrome Black T, pH ≈ 10", "Murexide, pH 12–13", "Phenolphthalein, pH 8–10", "Methyl orange, pH 3–4", "Litmus, pH 7"], "answer": 0},
+  {"q": "How does the stability of a complex change in a strongly acidic medium?", "options": ["It decreases — H^+^ competes with the metal for the ligand", "It increases", "It does not change", "Only its color changes", "The charge of the central ion increases"], "answer": 0},
+  {"q": "Which substance in blood preservative binds Ca^2+^ and stops clotting for transfusion?", "options": ["Sodium citrate", "Sodium chloride", "Glucose", "Potassium chloride", "Sodium hydrogen carbonate"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "A laboratory worker suddenly lost consciousness while working with cyanide salts. The skin is reddish, venous blood is bright red like arterial blood, and the breath smells of bitter almonds.", "ask": "Explain the mechanism of poisoning from the point of view of complex compounds. Which antidotes are used and what is their chemical basis?", "answer": "CN^−^ forms a stable complex with the **Fe^3+^** ion of cytochrome oxidase and stops the respiratory chain — the tissues cannot use O~2~, so venous blood stays oxygen-saturated and bright red. Antidotes: 1) **sodium nitrite** (or amyl nitrite) converts part of the hemoglobin into methemoglobin (Fe^3+^), which pulls CN^−^ away from the enzyme to form cyanmethemoglobin; 2) **sodium thiosulfate**, with the help of rhodanese, converts CN^−^ into low-toxicity SCN^−^; 3) **hydroxocobalamin** binds CN^−^ to form cyanocobalamin, which is excreted in the urine. In addition, 100 % oxygen is given."},
+  {"title": "Problem 5", "text": "To determine water hardness, 100 mL of water was titrated with 0.05 N Trilon B in the presence of ammonia buffer and Eriochrome Black T; 12.0 mL was used.", "ask": "Calculate and assess the total hardness of the water.", "answer": "H = 0.05 · 12.0 · 1000 / 100 = **6 mmol-eq/L**. The drinking water standard is ≤ 7 mmol-eq/L — the water is **moderately hard** and fit for drinking. At the end of the titration the color changes from wine-red to blue because Trilon B pulls Ca^2+^ and Mg^2+^ out of the indicator complex."},
+  {"title": "Problem 6", "text": "A solution contains 0.1 mol/L [Ag(NH~3~)~2~]^+^ and 1 mol/L excess NH~3~ (K~inst~ = 5.9·10^−8^). KI was added to it until [I^−^] = 0.01 mol/L (K~sp~(AgI) = 8.3·10^−17^).", "ask": "Calculate the concentration of free Ag^+^. Will AgI precipitate?", "answer": "[Ag^+^] = 5.9·10^−8^ · 0.1 / 1^2^ = **5.9·10^−9^ mol/L**. Ion product: [Ag^+^]·[I^−^] = 5.9·10^−9^ · 0.01 = 5.9·10^−11^ — much larger than K~sp~(AgI) = 8.3·10^−17^, so **AgI precipitates** and the complex breaks down. The ammonia complex dissolves AgCl, but it cannot “hold” the very poorly soluble AgI."},
+  {"title": "Problem 7", "text": "A patient with severe chronic renal failure needs a contrast-enhanced MRI to detect a brain tumor.", "ask": "What risk is associated with giving a gadolinium contrast agent? What is its chemical cause and how can the risk be reduced?", "answer": "The Gd^3+^ agent is excreted by the kidneys; in renal failure it stays in the body for a long time, part of the chelate dissociates and **free Gd^3+^** is released. Because the radius of free Gd^3+^ is close to that of Ca^2+^, it disturbs calcium-dependent processes and, accumulating in tissues, can cause **nephrogenic systemic fibrosis**. Ways to reduce the risk: choose the most stable **macrocyclic** agent at the minimum dose, use a non-contrast method if possible, and in dialysis patients perform dialysis soon after the examination."},
+  {"title": "Problem 8", "text": "A student was given a violet compound with the composition CoCl~3~·5NH~3~. When excess AgNO~3~ was added to a solution of 0.01 mol of it, 0.02 mol of AgCl precipitated.", "ask": "Write the coordination formula of the compound, determine the charge of the central ion and the coordination number, and name it.", "answer": "Each mole of the compound gave 2 mol of AgCl — so there are **two** Cl^−^ ions in the outer sphere and the third is in the inner sphere. Formula: **[Co(NH~3~)~5~Cl]Cl~2~**. The central ion is **Co^3+^** (x + 0 − 1 = +2, x = +3), the coordination number is **6** (5 NH~3~ and 1 Cl^−^), the shape is octahedral. Name: chloropentaamminecobalt(III) chloride."}
+ ],
+ "cards": [
+  {"front": "Cis–trans isomerism", "back": "Identical ligands next to each other (cis) or opposite (trans); only cisplatin is active against tumors"},
+  {"front": "Irving–Williams series", "back": "Mn^2+^ < Fe^2+^ < Co^2+^ < Ni^2+^ < Cu^2+^ > Zn^2+^ — stability of complexes"},
+  {"front": "Cyanide antidotes", "back": "Sodium nitrite (methemoglobin), sodium thiosulfate (SCN^−^), hydroxocobalamin (cyanocobalamin)"},
+  {"front": "Gadolinium contrast agents", "back": "Stable chelates of Gd^3+^; free Gd^3+^ is toxic, caution in renal failure"},
+  {"front": "EDTA and citrate tubes", "back": "Bind Ca^2+^ and stop blood clotting"}
+ ]
+}

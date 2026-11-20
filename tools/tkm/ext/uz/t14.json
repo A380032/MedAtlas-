@@ -1,0 +1,87 @@
+{
+ "append": {
+  "4": [
+   {"type": "p", "text": "**DNK ning boshqa shakllari va o‘ta spirallanish.** B-shakldan tashqari kamroq suvli muhitda qisqaroq va keng **A-shakl** (RNK–DNK gibridlari va qo‘sh zanjirli RNK ham shunday), G–C ko‘p ketma-ketliklarda esa chap buralgan **Z-shakl** uchraydi. Hujayrada uzun DNK qo‘shimcha buralib (**o‘ta spirallanib**) zichlanadi; buralish darajasini **topoizomerazalar** zanjirni vaqtincha kesib-tikib boshqaradi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Topoizomerazalar — muhim dori nishonlari: **ftorxinolonlar** bakteriyalarning DNK-girazasi (II tip topoizomeraza) va topoizomeraza IV ni to‘sadi; o‘smaga qarshi **antratsiklinlar** (doksorubitsin) va **etopozid** odam topoizomeraza II sini, **irinotekan** esa topoizomeraza I ni ingibirlaydi — DNK da tuzatib bo‘lmaydigan uzilishlar qoladi."}]}
+  ]
+ },
+ "insert": [
+  {"after": 5, "title": "0. Oqsil biosintezi. Genetik kod", "blocks": [
+   {"type": "p", "text": "Irsiy axborot **DNK → RNK → oqsil** yo‘nalishida amalga oshadi (molekulyar biologiyaning markaziy dogmasi). **Transkripsiya**da RNK-polimeraza DNK ning bitta (matritsa) zanjiri bo‘yicha unga komplementar RNK ni 5′→3′ yo‘nalishda sintezlaydi; sintez **promotor**dan boshlanadi. Eukariotlarda birlamchi transkript **protsessing**dan o‘tadi: 5′-uchiga “qalpoqcha” (7-metilguanozin), 3′-uchiga poli(A)-dum qo‘shiladi va **splaysing**da intronlar kesib tashlanib, ekzonlar tikiladi."},
+   {"type": "p", "text": "**Translatsiya** ribosomalarda boradi: mRNK dagi har uch nukleotid — **kodon** — bitta aminokislotani belgilaydi. Aminokislotalarni ribosomaga **tRNK** yetkazadi; tRNK dagi **antikodon** mRNK kodoniga komplementar juftlashadi. Ribosomaning peptidiltransferaza markazi (rRNK — ribozim) peptid bog‘ hosil qiladi."},
+   {"type": "table", "title": "Jadval 14.0. Genetik kodning xossalari", "head": ["Xossasi", "Mohiyati"], "rows": [
+    ["Tripletlik", "har bir aminokislotani uchta nukleotid (kodon) belgilaydi; 4^3^ = 64 kodon"],
+    ["Aynanlik (degeneratsiya)", "ko‘p aminokislotalarni bir necha kodon belgilaydi (61 ma’noli kodon — 20 aminokislota)"],
+    ["Bir ma’nolilik", "har bir kodon faqat bitta aminokislotani belgilaydi"],
+    ["Uzluksizlik va qoplanmaslik", "kodonlar ketma-ket, oraliqsiz o‘qiladi; bitta nukleotid ikki kodonga kirmaydi"],
+    ["Universallik", "deyarli barcha organizmlarda bir xil (mitoxondriyada ayrim istisnolar)"],
+    ["Boshlovchi va to‘xtatuvchi kodonlar", "AUG — start (metionin); UAA, UAG, UGA — stop kodonlar"]
+   ]},
+   {"type": "table", "title": "Jadval 14.0. Oqsil biosintezini to‘suvchi dori va zaharlar", "head": ["Modda", "Nishon", "Qo‘llanilishi yoki ahamiyati"], "rows": [
+    ["Rifampitsin", "bakterial RNK-polimeraza", "silga qarshi dori"],
+    ["α-Amanitin", "eukariot RNK-polimeraza II", "oqish poganka zamburug‘i zahari — jigar nekrozi"],
+    ["Tetratsiklinlar, aminoglikozidlar", "bakterial ribosomaning 30S subbirligi", "antibiotiklar"],
+    ["Makrolidlar (eritromitsin), xloramfenikol", "bakterial ribosomaning 50S subbirligi", "antibiotiklar"],
+    ["Difteriya toksini", "eukariot elongatsiya omili eEF2", "oqsil sintezi to‘xtab, hujayra halok bo‘ladi"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Antibiotiklarning tanlab ta’siri bakterial (70S: 30S + 50S) va eukariot (80S: 40S + 60S) ribosomalar tuzilishidagi farqqa asoslangan. Mitoxondriya ribosomalari bakterial ribosomalarga o‘xshash — ayrim antibiotiklarning nojo‘ya ta’siri (masalan, xloramfenikolning ilikka ta’siri) shu bilan bog‘liq."}]}
+  ]},
+  {"after": 6, "title": "0. Purin va pirimidin nukleotidlari almashinuvi", "blocks": [
+   {"type": "p", "text": "Nukleotidlar ikki yo‘l bilan hosil bo‘ladi. **De novo sintez**da halqalar oddiy moddalardan quriladi: purin halqasi faollashgan ribozo-5-fosfat (**FRPF**) ustida glitsin, glutamin, aspartat, CO~2~ va folat hosilalari hisobiga, pirimidin halqasi esa avval alohida (karbamoilfosfat va aspartatdan) yig‘ilib, so‘ng FRPF ga biriktiriladi. **Qayta foydalanish (zaxira) yo‘li**da parchalangan nukleotidlardan ajralgan tayyor asoslar FRPF bilan qayta nukleotidga aylantiriladi (masalan, gipoksantin-guaninfosforiboziltransferaza — GGFRT)."},
+   {"type": "p", "text": "**Purinlar katabolizmi:** AMF → IMF → inozin → gipoksantin → ksantin → **siydik kislota** (oxirgi ikki bosqichni ksantinoksidaza katalizlaydi). Odamda urikaza fermenti yo‘q, shuning uchun siydik kislota oxirgi mahsulot. **Pirimidinlar** esa suvda yaxshi eriydigan β-alanin, β-aminoizomoy kislota, CO~2~ va NH~3~ gacha parchalanadi — ular to‘planib kasallik chaqirmaydi."},
+   {"type": "table", "title": "Jadval 14.0. Siydik kislota almashinuvi buzilishlari", "head": ["Holat", "Mohiyati", "Belgilari va davosi"], "rows": [
+    ["Giperurikemiya", "qonda siydik kislota > 420 mkmol/l (erkaklar), > 360 mkmol/l (ayollar)", "ko‘pincha belgilarsiz; podagra va siydik kislota toshlari xavfi"],
+    ["Podagra", "natriy urat kristallari bo‘g‘imlarda to‘planadi", "bosh barmoq bo‘g‘imining o‘tkir yallig‘lanishi; xurujda kolxitsin va NYaQV, uzoq muddat allopurinol yoki febuksostat"],
+    ["O‘sma parchalanishi sindromi", "kimyoterapiyada ko‘p hujayra halok bo‘lib, nuklein kislotalari parchalanadi", "o‘tkir giperurikemiya, buyrak yetishmovchiligi; oldini olish — suyuqlik, allopurinol, rasburikaza"],
+    ["Lesh–Nixan sindromi", "GGFRT ning irsiy yetishmovchiligi — purinlar qayta ishlatilmaydi", "giperurikemiya, aqliy zaiflik, o‘z tanasini tishlash (o‘g‘il bolalarda)"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Allopurinol** ksantinoksidazani to‘sadi. Bu ferment o‘smaga qarshi va immunodepressant dorilar **6-merkaptopurin** va **azatioprin**ni ham parchalaydi. Ular allopurinol bilan birga berilsa, dozasi kamaytirilmasa, qonda to‘planib, ilikni og‘ir bosadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: mRNK bo‘yicha peptid ketma-ketligini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "DNK matritsa zanjiri berilgan bo‘lsa, unga komplementar va antiparallel mRNK ni yozing (T o‘rniga U).",
+    "mRNK ni 5′-uchidan o‘qib, birinchi **AUG** start kodonini toping.",
+    "Shu joydan boshlab ketma-ketlikni uchtadan kodonlarga bo‘ling.",
+    "Genetik kod jadvali bo‘yicha har bir kodonga mos aminokislotani yozing.",
+    "Birinchi stop kodonga (UAA, UAG, UGA) yetganda to‘xtang va peptidni N-uchdan C-uchga yozing."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Transkripsiya qanday boradi? Eukariot mRNK protsessingi nimalardan iborat?",
+  "Genetik kodning asosiy xossalarini sanang. Start va stop kodonlar qaysilar?",
+  "Translatsiyada tRNK va ribosoma qanday vazifa bajaradi?",
+  "Antibiotiklarning bakterial oqsil sinteziga tanlab ta’siri nimaga asoslangan? Misollar keltiring.",
+  "Purin nukleotidlari qanday sintezlanadi va parchalanadi? Nima uchun odamda siydik kislota oxirgi mahsulot?",
+  "Podagra va o‘sma parchalanishi sindromining biokimyoviy asosini tushuntiring. Allopurinol qanday ta’sir qiladi?"
+ ],
+ "quiz": [
+  {"q": "Genetik kodda nechta kodon bor?", "options": ["64", "20", "61", "4", "32"], "answer": 0},
+  {"q": "Qaysi kodon start kodon hisoblanadi?", "options": ["AUG", "UAA", "UGA", "UAG", "GUG"], "answer": 0},
+  {"q": "Ko‘p aminokislotalarning bir necha kodon bilan belgilanishi genetik kodning qaysi xossasi?", "options": ["Aynanlik (degeneratsiya)", "Universallik", "Bir ma’nolilik", "Tripletlik", "Qoplanmaslik"], "answer": 0},
+  {"q": "Eukariot pre-mRNK dan intronlarning kesib tashlanishi qanday ataladi?", "options": ["Splaysing", "Replikatsiya", "Translatsiya", "Reparatsiya", "Rekombinatsiya"], "answer": 0},
+  {"q": "Oqish poganka zamburug‘ining zahari α-amanitin qaysi fermentni to‘sadi?", "options": ["RNK-polimeraza II", "DNK-polimeraza", "Ribosoma 50S", "Topoizomeraza", "Ligaza"], "answer": 0},
+  {"q": "Tetratsiklinlar qaysi ribosoma subbirligiga ta’sir qiladi?", "options": ["Bakterial 30S", "Bakterial 50S", "Eukariot 60S", "Eukariot 40S", "Mitoxondriya RNK-polimerazasi"], "answer": 0},
+  {"q": "Ftorxinolonlar qaysi fermentni to‘sadi?", "options": ["DNK-girazani (topoizomeraza II)", "RNK-polimerazani", "Teskari transkriptazani", "Peptidiltransferazani", "β-Laktamazani"], "answer": 0},
+  {"q": "Odamda purinlar katabolizmining oxirgi mahsuloti qaysi?", "options": ["Siydik kislota", "Mochevina", "β-Alanin", "Allantoin", "Kreatinin"], "answer": 0},
+  {"q": "Lesh–Nixan sindromida qaysi ferment yetishmaydi?", "options": ["Gipoksantin-guaninfosforiboziltransferaza", "Ksantinoksidaza", "Adenozindezaminaza", "Urikaza", "Timidilatsintaza"], "answer": 0},
+  {"q": "Allopurinol bilan birga berilganda qaysi dorining dozasini kamaytirish kerak?", "options": ["Azatioprin", "Paratsetamol", "Amoksitsillin", "Furosemid", "Metformin"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "O‘rmondan terilgan zamburug‘lardan tayyorlangan ovqatni yegan oila a’zolarida 8–12 soatdan keyin kuchli qusish va diareya boshlandi; 2–3 kundan so‘ng sariqlik paydo bo‘lib, jigar fermentlari keskin oshdi.", "ask": "Qaysi zahar bilan zaharlanish taxmin qilinadi? Uning molekulyar ta’sir mexanizmi qanday va nima uchun aynan jigar shikastlanadi?", "answer": "Klinika (kech boshlanish, “yolg‘on yaxshilanish”dan keyin jigar yetishmovchiligi) **oqish poganka** zahari — **α-amanitin**ga xos. U eukariot **RNK-polimeraza II** ni kuchli to‘sadi — mRNK sintezi to‘xtaydi, hujayra yangi oqsil hosil qila olmay halok bo‘ladi. Zahar ichakdan so‘rilib, avval jigarga yetadi va gepatotsitlar uni faol qamrab oladi; u o‘t bilan chiqib yana so‘riladi (enterogepatik aylanish) — shuning uchun jigar ko‘proq zararlanadi. Davolash: faollashtirilgan ko‘mir takroran, silibinin, og‘ir holatda jigar transplantatsiyasi."},
+  {"title": "Masala 5", "text": "Buyrak transplantatsiyasidan keyin azatioprin qabul qilayotgan bemorda podagra xuruji bo‘ldi va unga allopurinol buyurildi. Ikki haftadan keyin leykotsitlar va trombotsitlar keskin kamaydi.", "ask": "Qon tizimi zararlanishining biokimyoviy sababini tushuntiring.", "answer": "Azatioprin organizmda **6-merkaptopurin**ga aylanadi; uning faolsizlanishining asosiy yo‘li — **ksantinoksidaza** bilan oksidlanish. **Allopurinol** shu fermentni to‘sadi — 6-merkaptopurin parchalanmay qonda to‘planadi va ilik hujayralarining purin sintezini haddan tashqari bosadi: **leykopeniya va trombotsitopeniya** rivojlanadi. Bunday birikmada azatioprin dozasi 3–4 marta kamaytiriladi yoki boshqa dori tanlanadi."},
+  {"title": "Masala 6", "text": "mRNK bo‘lagi: 5′-AUG GCU UGG AAA UAG-3′. Mutatsiya natijasida UGG kodonidagi ikkinchi G nukleotidi A ga almashdi.", "ask": "Me’yoriy va mutant mRNK dan qanday peptid hosil bo‘ladi? Bu qanday mutatsiya turi?", "answer": "Me’yorda: AUG — Met, GCU — Ala, UGG — Trp, AAA — Lys, UAG — stop. Peptid: **Met–Ala–Trp–Lys**. Mutatsiyada UGG → **UAG** — stop kodon; peptid **Met–Ala** dan iborat bo‘lib, muddatidan oldin uziladi. Bu **nonsens mutatsiya**: aminokislotani belgilovchi kodon stop kodonga aylanadi va oqsil kalta, odatda faolsiz bo‘ladi (masalan, ayrim β-talassemiyalar va Dyushenn miodistrofiyasi shunday mutatsiyalar bilan bog‘liq)."},
+  {"title": "Masala 7", "text": "8 yoshli bolaga pnevmoniya uchun tetratsiklin buyurilmoqchi edi, lekin pediatr boshqa antibiotik tanladi.", "ask": "Tetratsiklinning bakteriyaga ta’sir mexanizmi qanday? Nima uchun u 8 yoshgacha bolalarga tavsiya etilmaydi?", "answer": "Tetratsiklin bakterial ribosomaning **30S subbirligi**ga bog‘lanib, aminoatsil-tRNK ning ribosomaga birikishini to‘sadi — oqsil sintezi to‘xtaydi (bakteriostatik ta’sir). Eukariot 80S ribosomasiga kam ta’sir qiladi. Bolalarda esa tetratsiklin o‘sayotgan tish va suyak to‘qimasidagi **Ca^2+^ bilan xelat** hosil qilib to‘planadi: tishlar doimiy sariq-qo‘ng‘ir rangga bo‘yaladi, emal gipoplaziyasi va suyak o‘sishining vaqtincha sekinlashuvi bo‘ladi. Shuning uchun 8 yoshgacha va homiladorlikda ishlatilmaydi."},
+  {"title": "Masala 8", "text": "1 yoshli o‘g‘il bolada rivojlanish orqada qolgan, beixtiyor harakatlar, keyinchalik lab va barmoqlarini tishlab jarohatlash paydo bo‘ldi; tagliklarida to‘q sariq “qum” kristallari ko‘rinadi.", "ask": "Qaysi irsiy kasallik? Uning biokimyoviy asosini tushuntiring.", "answer": "Bu **Lesh–Nixan sindromi** — X-xromosoma bilan birikkan holda irsiylanuvchi **GGFRT** (gipoksantin-guaninfosforiboziltransferaza) yetishmovchiligi. Purin asoslari qayta foydalanish yo‘lida nukleotidlarga aylantirilmaydi va **siydik kislota**gacha parchalanadi; bundan tashqari, ishlatilmagan FRPF ko‘payib, de novo purin sintezini kuchaytiradi. Natijada keskin **giperurikemiya** — tagliklardagi to‘q sariq kristallar urat, keyinchalik podagra va buyrak toshlari. Nevrologik buzilishlar mexanizmi to‘liq aniq emas. Allopurinol siydik kislotani kamaytiradi, ammo nevrologik belgilarga ta’sir qilmaydi."}
+ ],
+ "cards": [
+  {"front": "Transkripsiya va translatsiya", "back": "DNK → mRNK (RNK-polimeraza); mRNK → oqsil (ribosoma, tRNK)"},
+  {"front": "Genetik kod", "back": "Tripletli, aynan, bir ma’noli, uzluksiz, universal; AUG — start; UAA, UAG, UGA — stop"},
+  {"front": "Splaysing", "back": "Pre-mRNK dan intronlarni kesib, ekzonlarni tikish"},
+  {"front": "Ribosomaga ta’sir qiluvchi antibiotiklar", "back": "30S: tetratsiklinlar, aminoglikozidlar; 50S: makrolidlar, xloramfenikol"},
+  {"front": "Purinlar katabolizmi", "back": "Gipoksantin → ksantin → siydik kislota (ksantinoksidaza); allopurinol to‘sadi"},
+  {"front": "Lesh–Nixan sindromi", "back": "GGFRT yetishmovchiligi: giperurikemiya, nevrologik buzilishlar, o‘z-o‘zini jarohatlash"}
+ ]
+}

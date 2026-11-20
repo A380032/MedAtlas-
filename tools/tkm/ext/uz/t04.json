@@ -1,0 +1,96 @@
+{
+ "append": {
+  "4": [
+   {"type": "h", "text": "Gidrokarbonat bufer uchun Genderson–Gasselbax tenglamasi"},
+   {"type": "p", "text": "Qonda H~2~CO~3~ konsentratsiyasini to‘g‘ridan-to‘g‘ri o‘lchash qiyin, uning o‘rniga CO~2~ ning parsial bosimi ishlatiladi (0,03 — CO~2~ ning plazmada erish koeffitsienti, mmol/l / mm sim. ust.): pH = 6,1 + lg([HCO~3~^−^] / (0,03·pCO~2~)). Me’yorda pH = 6,1 + lg(24 / 1,2) = 6,1 + lg20 = 7,4. Tenglamadan ko‘rinadiki, pH **buyrak boshqaradigan** HCO~3~^−^ va **o‘pka boshqaradigan** pCO~2~ nisbatiga bog‘liq."},
+   {"type": "p", "text": "**Xlorid siljishi (Gamburger hodisasi).** To‘qimalarda CO~2~ eritrotsitga kiradi va karboangidraza ishtirokida H~2~CO~3~ ga aylanadi; u H^+^ (gemoglobin bog‘laydi) va HCO~3~^−^ ga dissotsilanadi. HCO~3~^−^ plazmaga chiqadi, uning o‘rniga elektroneytrallikni saqlash uchun Cl^−^ eritrotsitga kiradi. O‘pkada jarayon teskari yo‘nalishda boradi. Shu tufayli CO~2~ ning asosiy qismi qonda HCO~3~^−^ holida tashiladi."},
+   {"type": "table", "title": "Jadval 4.0. Arterial qon gazlari va kislota-asos holatining me’yoriy ko‘rsatkichlari", "head": ["Ko‘rsatkich", "Me’yor"], "rows": [
+    ["pH", "7,35–7,45"],
+    ["pCO~2~", "35–45 mm sim. ust."],
+    ["pO~2~", "80–100 mm sim. ust."],
+    ["HCO~3~^−^ (haqiqiy)", "22–26 mmol/l"],
+    ["Asoslar ortiqchaligi (BE)", "0 ± 2,3 mmol/l"],
+    ["Gemoglobinning kislorodga to‘yinishi (SaO~2~)", "95–98 %"],
+    ["Laktat", "< 2 mmol/l"]
+   ]}
+  ],
+  "5": [
+   {"type": "h", "text": "Anion oralig‘i va kompensatsiyani baholash"},
+   {"type": "p", "text": "Plazmada kationlar va anionlar yig‘indisi teng. Odatda o‘lchanmaydigan anionlar (oqsillar, fosfatlar, sulfatlar, organik kislotalar) **anion oralig‘i** bilan baholanadi: AO = [Na^+^] − ([Cl^−^] + [HCO~3~^−^]), me’yori **8–12 mmol/l**. Metabolik atsidozni ikki guruhga ajratishda u asosiy ko‘rsatkich:"},
+   {"type": "table", "title": "Jadval 4.0. Metabolik atsidozning anion oralig‘i bo‘yicha turlari", "head": ["Turi", "Mexanizmi", "Sabablari"], "rows": [
+    ["Anion oralig‘i oshgan", "qonga organik kislota qo‘shiladi; uning anioni HCO~3~^−^ o‘rnini egallaydi", "diabetik ketoatsidoz, laktatatsidoz, buyrak yetishmovchiligi, metanol, etilenglikol va salitsilatlar bilan zaharlanish"],
+    ["Anion oralig‘i me’yorida (giperxloremik)", "HCO~3~^−^ yo‘qoladi, o‘rnini Cl^−^ egallaydi", "diareya, ichak oqmalari, buyrak kanalchalari atsidozi"]
+   ]},
+   {"type": "p", "text": "Metabolik atsidozda nafas kompensatsiyasi yetarliligi **Uinter formulasi** bilan tekshiriladi: kutilgan pCO~2~ = 1,5·[HCO~3~^−^] + 8 ± 2 (mm sim. ust.). O‘lchangan pCO~2~ undan yuqori bo‘lsa, qo‘shimcha respirator atsidoz bor (masalan, bemor charchab nafasi susaygan); past bo‘lsa — qo‘shimcha respirator alkaloz."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Kompensatsiya buzilishni hech qachon to‘liq yo‘qotmaydi va pH ni **teskari tomonga o‘tkazmaydi**. Agar pH me’yorida bo‘lsa-yu, pCO~2~ va HCO~3~^−^ ikkalasi ham keskin o‘zgargan bo‘lsa, bu odatda **aralash** buzilishdir."}]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Alkalozda albumin H^+^ ni yo‘qotib, Ca^2+^ ni ko‘proq bog‘laydi — **ionlangan kalsiy kamayadi**. Shuning uchun giperventilyatsiya vaqtida lab atrofi uvishadi, qo‘l barmoqlarida talvasa (“akusher qo‘li”) paydo bo‘ladi, garchi umumiy kalsiy me’yorida bo‘lsa ham."}]}
+  ],
+  "7": [
+   {"type": "p", "text": "**Ammoniogenez.** Buyrak kanalchalari hujayralarida glutamin parchalanib, NH~3~ hosil bo‘ladi. NH~3~ kanalcha bo‘shlig‘iga chiqib, H^+^ ni biriktiradi va NH~4~^+^ holida siydik bilan chiqadi; har bir chiqarilgan H^+^ evaziga qonga bitta yangi HCO~3~^−^ qaytadi. Surunkali atsidozda ammoniogenez bir necha marta kuchayadi — bu buyrak kompensatsiyasining asosiy yo‘li."}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Kislota va asoslar nazariyasi. Protolitik muvozanat", "blocks": [
+   {"type": "p", "text": "**Arrenius nazariyasi:** kislota suvda H^+^, asos OH^−^ hosil qiladi. Bu nazariya suvsiz muhitni va NH~3~ kabi asoslarni tushuntira olmaydi. **Brensted–Louri protolitik nazariyasi**ga ko‘ra **kislota — proton donori**, **asos — proton akseptori**. Kislota protonni bergach, unga **qo‘shma asos** qoladi: CH~3~COOH / CH~3~COO^−^, NH~4~^+^ / NH~3~, H~2~CO~3~ / HCO~3~^−^. **Lyuis nazariyasi** esa kislotani elektron jufti akseptori deb ta’riflaydi (Fe^3+^, BF~3~) — komplekslar kimyosi shunga asoslanadi."},
+   {"type": "p", "text": "Kuchsiz kislota dissotsilanishi **kislotalilik konstantasi** bilan ifodalanadi: K~a~ = [H^+^]·[A^−^] / [HA], pK~a~ = −lgK~a~. pK~a~ qancha kichik bo‘lsa, kislota shuncha kuchli. Qo‘shma juft uchun K~a~·K~b~ = K~w~, ya’ni pK~a~ + pK~b~ = 14. **Ostvaldning suyultirish qonuni:** kuchsiz elektrolitning dissotsilanish darajasi α ≈ √(K / C) — eritma suyultirilganda α ortadi."},
+   {"type": "table", "title": "Jadval 4.0. Biologik muhim kislotalarning pK~a~ qiymatlari (25 °C)", "head": ["Kislota", "pK~a~", "Ahamiyati"], "rows": [
+    ["Fosfat kislota H~3~PO~4~", "2,1; 6,8; 12,4", "fosfat bufer (ikkinchi bosqich)"],
+    ["Atsetosirka kislota", "3,6", "keton tanasi — ketoatsidozda to‘planadi"],
+    ["Sut kislota", "3,9", "laktatatsidoz"],
+    ["β-Gidroksimoy kislota", "4,7", "keton tanasi"],
+    ["Sirka kislota", "4,76", "atsetat bufer"],
+    ["Gistidin imidazol guruhi", "≈ 6,0", "oqsil va gemoglobin buferlari"],
+    ["Karbonat kislota (amaliy)", "6,1", "gidrokarbonat bufer"],
+    ["Ammoniy ioni NH~4~^+^", "9,25", "ammiakli bufer, buyrakda H^+^ chiqarish"]
+   ]},
+   {"type": "p", "text": "**Tuzlarning gidrolizi.** Kuchsiz kislota va kuchli asosdan hosil bo‘lgan tuz eritmasi ishqoriy (NaHCO~3~ eritmasi pH ≈ 8,3, CH~3~COONa), kuchli kislota va kuchsiz asos tuzi — kislotali (NH~4~Cl) bo‘ladi. Shu sababli natriy gidrokarbonat antatsid va siydikni ishqorlovchi vosita sifatida, ammoniy xlorid esa siydikni kislotalovchi vosita sifatida ishlatiladi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Dorilarning ko‘pchiligi kuchsiz kislota yoki asos. Membranadan faqat **ionlanmagan** shakl yaxshi o‘tadi. Ionlangan va ionlanmagan shakllar nisbati Genderson–Gasselbax tenglamasidan topiladi: kislota uchun lg([A^−^] / [HA]) = pH − pK~a~. Masalan, atsetilsalitsil kislota (pK~a~ ≈ 3,5) kislotali me’dada asosan ionlanmagan va qisman shu yerda so‘riladi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: metabolik atsidozni anion oralig‘i bo‘yicha tahlil qilish", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "pH < 7,35 va HCO~3~^−^ < 22 mmol/l ekanini tasdiqlang — bu metabolik atsidoz.",
+    "Anion oralig‘ini hisoblang: AO = Na^+^ − (Cl^−^ + HCO~3~^−^); me’yor 8–12 mmol/l.",
+    "AO oshgan bo‘lsa, organik kislotalarni qidiring: glyukoza va ketonlar, laktat, kreatinin, zaharlanish anamnezi.",
+    "AO me’yorida bo‘lsa, HCO~3~^−^ yo‘qotilishini qidiring: diareya, buyrak kanalchalari kasalligi.",
+    "Uinter formulasi bilan nafas kompensatsiyasini tekshiring: kutilgan pCO~2~ = 1,5·HCO~3~^−^ + 8 ± 2."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Brensted–Louri nazariyasiga ko‘ra kislota va asos nima? Qo‘shma juftlarga misollar keltiring.",
+  "pK~a~ nima? Biologik muhim kislotalarning pK~a~ qiymatlari qanday?",
+  "Tuzlarning gidrolizi muhit pH iga qanday ta’sir qiladi? NaHCO~3~ va NH~4~Cl misolida tushuntiring.",
+  "Xlorid siljishi (Gamburger hodisasi) nima?",
+  "Anion oralig‘i qanday hisoblanadi va u metabolik atsidoz tashxisida qanday yordam beradi?",
+  "Buyrak ortiqcha kislotani qanday yo‘llar bilan chiqaradi?"
+ ],
+ "quiz": [
+  {"q": "Brensted–Louri nazariyasiga ko‘ra kislota nima?", "options": ["Proton donori", "Proton akseptori", "Elektron jufti donori", "OH^−^ ionlari hosil qiluvchi modda", "Elektron akseptori bo‘lgan metall"], "answer": 0},
+  {"q": "NH~4~^+^ ionining qo‘shma asosi qaysi?", "options": ["NH~3~", "NH~2~^−^", "H~3~O^+^", "OH^−^", "NH~4~OH"], "answer": 0},
+  {"q": "Anion oralig‘ining me’yori qancha?", "options": ["8–12 mmol/l", "22–26 mmol/l", "1–2 mmol/l", "35–45 mmol/l", "135–145 mmol/l"], "answer": 0},
+  {"q": "Metanol bilan zaharlanishda qanday kislota-asos buzilishi rivojlanadi?", "options": ["Anion oralig‘i oshgan metabolik atsidoz", "Giperxloremik metabolik atsidoz", "Metabolik alkaloz", "Respirator alkaloz", "Respirator atsidoz"], "answer": 0},
+  {"q": "Kuchli diareyada qanday buzilish rivojlanadi?", "options": ["Anion oralig‘i me’yoridagi (giperxloremik) metabolik atsidoz", "Anion oralig‘i oshgan metabolik atsidoz", "Metabolik alkaloz", "Respirator atsidoz", "Respirator alkaloz"], "answer": 0},
+  {"q": "Xlorid siljishi (Gamburger hodisasi) nimadan iborat?", "options": ["Eritrotsitdan HCO~3~^−^ chiqib, o‘rniga Cl^−^ kiradi", "Cl^−^ buyrakda qayta so‘riladi", "Me’dada HCl hosil bo‘ladi", "Na^+^ hujayraga kirib, K^+^ chiqadi", "CO~2~ gemoglobinning gemiga bog‘lanadi"], "answer": 0},
+  {"q": "Salitsilat bilan zaharlanishda siydikni ishqorlash nima uchun foydali?", "options": ["Ionlangan salitsilat kanalchalarda qayta so‘rilmay, siydik bilan chiqadi", "Salitsilat ishqorda parchalanadi", "Ishqor salitsilatni cho‘ktiradi", "Siydik hajmi kamayadi", "Salitsilat jigarda tezroq parchalanadi"], "answer": 0},
+  {"q": "Arterial qonda pCO~2~ ning me’yori qancha?", "options": ["35–45 mm sim. ust.", "80–100 mm sim. ust.", "20–25 mm sim. ust.", "50–60 mm sim. ust.", "10–15 mm sim. ust."], "answer": 0},
+  {"q": "Qo‘shma kislota-asos juftining K~a~·K~b~ ko‘paytmasi nimaga teng?", "options": ["K~w~", "1", "pH", "K~a~^2^", "0"], "answer": 0},
+  {"q": "Buyrak kanalchalarida glutamin parchalanishidan hosil bo‘lib, H^+^ ni siydikka chiqaradigan modda qaysi?", "options": ["NH~3~ (NH~4~^+^ holida chiqadi)", "Mochevina", "Kreatinin", "Siydik kislota", "Laktat"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Spirtli ichimlik o‘rniga texnik suyuqlik ichgan bemorda ko‘rish xiralashgan, nafasi chuqur va tez. Tahlil: pH 7,15; Na^+^ 140, Cl^−^ 100, HCO~3~^−^ 10 mmol/l; pCO~2~ 23 mm sim. ust.", "ask": "Kislota-asos buzilishi turini aniqlang, anion oralig‘ini hisoblang va nafas kompensatsiyasini baholang. Ehtimoliy sababi nima?", "answer": "pH va HCO~3~^−^ past — **metabolik atsidoz**. AO = 140 − (100 + 10) = **30 mmol/l** — keskin oshgan, qonga organik kislota qo‘shilgan. Uinter formulasi: kutilgan pCO~2~ = 1,5 · 10 + 8 = 23 ± 2 — o‘lchangan 23 ga teng, nafas kompensatsiyasi yetarli (Kussmaul nafasi). Ko‘rish buzilishi bilan birga bu **metanol** bilan zaharlanishga xos: metanol jigarda chumoli kislotaga aylanadi, u ko‘rish nervini shikastlaydi. Davolash: fomepizol yoki etanol (metanol oksidlanishini to‘xtatadi), NaHCO~3~, gemodializ."},
+  {"title": "Masala 5", "text": "Bola katta miqdorda atsetilsalitsil kislota tabletkalarini yutib yuborgan. Salitsil kislotaning pK~a~ i ≈ 3.", "ask": "Siydik pH i 5 va 8 bo‘lganda salitsilatning ionlangan va ionlanmagan shakllari nisbatini hisoblang. Nima uchun davolashda siydik ishqorlanadi?", "answer": "lg([A^−^] / [HA]) = pH − pK~a~. pH 5 da: 5 − 3 = 2, nisbat 10^2^ = **100 : 1**; pH 8 da: 8 − 3 = 5, nisbat 10^5^ = **100 000 : 1**. Ishqoriy siydikda ionlanmagan (membranadan o‘tadigan) shakl 1000 marta kam — salitsilat kanalchalarda qayta so‘rilmay, siydikda **“qamalib”** qoladi va tez chiqariladi. Shuning uchun NaHCO~3~ yuborib, siydik pH i 7,5–8,5 da ushlanadi."},
+  {"title": "Masala 6", "text": "Imtihon oldidan qattiq hayajonlangan talaba tez-tez nafas olmoqda; lab atrofi uvishgan, barmoqlari tortishmoqda. Qon gazlari: pH 7,52; pCO~2~ 28 mm sim. ust.; HCO~3~^−^ 22 mmol/l.", "ask": "Qanday buzilish? Nima uchun talvasa paydo bo‘ldi? Qanday yordam beriladi?", "answer": "pH oshgan, pCO~2~ kamaygan, HCO~3~^−^ hali me’yorida — **o‘tkir respirator alkaloz** (giperventilyatsiya, buyrak kompensatsiyasi hali boshlanmagan). Alkalozda albumin Ca^2+^ ni ko‘proq bog‘laydi, **ionlangan kalsiy kamayadi** va asab-mushak qo‘zg‘aluvchanligi oshadi — paresteziya va talvasa shundan. Yordam: tinchlantirish, nafasni sekinlashtirish; CO~2~ ning qonda tiklanishi bilan belgilar yo‘qoladi."},
+  {"title": "Masala 7", "text": "Bemorning qon gazlari: HCO~3~^−^ 12 mmol/l, pCO~2~ 25 mm sim. ust.", "ask": "Genderson–Gasselbax tenglamasidan qon pH ini hisoblang va buzilishni baholang.", "answer": "pH = 6,1 + lg(12 / (0,03 · 25)) = 6,1 + lg(12 / 0,75) = 6,1 + lg16 = 6,1 + 1,2 = **7,3**. pH pasaygan, HCO~3~^−^ kamaygan — **metabolik atsidoz**; pCO~2~ kamaygani nafas kompensatsiyasi (kutilgan pCO~2~ = 1,5 · 12 + 8 = 26 ± 2, o‘lchangan 25 — kompensatsiya yetarli)."},
+  {"title": "Masala 8", "text": "Ko‘p yillik chekuvchi, surunkali obstruktiv o‘pka kasalligi bilan og‘rigan bemor. Qon gazlari: pH 7,36; pCO~2~ 60 mm sim. ust.; HCO~3~^−^ 33 mmol/l.", "ask": "Buzilishni aniqlang va kompensatsiya mexanizmini tushuntiring. Nima uchun bunday bemorga yuqori konsentratsiyali kislorod ehtiyotkorlik bilan beriladi?", "answer": "pCO~2~ keskin oshgan — **respirator atsidoz**; HCO~3~^−^ ham oshgan va pH deyarli me’yorida — bu **buyrak kompensatsiyasi** bilan **surunkali (kompensatsiyalangan)** respirator atsidoz: buyrak H^+^ va NH~4~^+^ chiqarishni kuchaytirib, HCO~3~^−^ ni ushlab qolgan. Tekshiruv: pH = 6,1 + lg(33 / 1,8) ≈ 7,36. Bunday bemorlarda nafas ko‘proq gipoksiya bilan rag‘batlantiriladi; ko‘p kislorod berilsa, ventilyatsiya susayib, pCO~2~ yana oshishi va atsidoz chuqurlashishi mumkin. Shuning uchun SaO~2~ 88–92 % ni ushlab turadigan nazoratli kislorod beriladi."}
+ ],
+ "cards": [
+  {"front": "Brensted kislotasi va asosi", "back": "Kislota — proton donori, asos — proton akseptori; masalan, NH~4~^+^ / NH~3~"},
+  {"front": "pK~a~", "back": "−lgK~a~; qancha kichik bo‘lsa, kislota shuncha kuchli; pK~a~ + pK~b~ = 14"},
+  {"front": "Anion oralig‘i", "back": "Na^+^ − (Cl^−^ + HCO~3~^−^); me’yor 8–12 mmol/l"},
+  {"front": "Uinter formulasi", "back": "Metabolik atsidozda kutilgan pCO~2~ = 1,5·HCO~3~^−^ + 8 ± 2"},
+  {"front": "Xlorid siljishi", "back": "Eritrotsitdan HCO~3~^−^ chiqadi, o‘rniga Cl^−^ kiradi — CO~2~ tashilishi"},
+  {"front": "Ammoniogenez", "back": "Buyrakda glutamindan NH~3~ hosil bo‘lib, H^+^ ni NH~4~^+^ holida chiqaradi"}
+ ]
+}

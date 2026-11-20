@@ -1,0 +1,380 @@
+{
+ "append": {
+  "6": [
+   {
+    "type": "h",
+    "text": "Xolesterin balansi va irsiy giperxolesterinemiya"
+   },
+   {
+    "type": "p",
+    "text": "Kattalar organizmi sutkasiga ≈ 1 g xolesterin sintezlaydi (asosan jigarda) va ovqat bilan 0,3–0,5 g oladi. Steran halqasi organizmda parchalanmaydi: xolesterin asosan **o‘t kislotalari** holida va o‘zgarmagan holda o‘t bilan ichakka chiqariladi; o‘t kislotalarining ≈ 95 % i ingichka ichakning oxirgi qismida qayta so‘rilib, jigarga qaytadi (**enterogepatik aylanish**)."
+   },
+   {
+    "type": "p",
+    "text": "Hujayralar LPNP ni maxsus **LPNP-retseptorlari** orqali endotsitoz bilan qabul qiladi. Hujayra ichida xolesterin ko‘paysa, GMG-KoA-reduktaza sintezi va retseptorlar soni kamayadi — bu **manfiy teskari bog‘lanish**. Statinlar hujayra xolesterinini kamaytirib, jigarda LPNP-retseptorlari sonini oshiradi — qondan LPNP ko‘proq olinadi."
+   },
+   {
+    "type": "box",
+    "kind": "klinik",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Oilaviy giperxolesterinemiya** — LPNP-retseptori genining mutatsiyasi: LPNP qondan olinmaydi va uning xolesterini keskin oshadi (geterozigotalarda 5–10, gomozigotalarda > 13 mmol/l). Paylarda **ksantomalar**, ko‘z atrofida ksantelazmalar, yoshlikda (gomozigotalarda hatto bolalikda) miokard infarkti rivojlanadi. Davolash: statinlar, ezetimib (ichakda xolesterin so‘rilishini to‘sadi), PCSK9 ingibitorlari."
+     }
+    ]
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 2,
+   "title": "0. Lipidlarning hazm bo‘lishi va lipoproteinlar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Yog‘lar suvda erimagani uchun ularning hazm bo‘lishi va tashilishi alohida mexanizmlarni talab qiladi. Ingichka ichakda **o‘t kislotalari** yog‘larni emulsiyalaydi, me’da osti bezi **lipazasi** (kolipaza yordamida) triglitseridlarni 2-monoatsilglitserin va yog‘ kislotalariga parchalaydi. Hazm mahsulotlari o‘t kislotalari bilan **aralash mitsellalar** hosil qilib, enterotsitlarga yetadi; u yerda triglitseridlar qayta sintezlanadi va **xilomikronlar** tarkibida limfaga chiqariladi."
+    },
+    {
+     "type": "p",
+     "text": "Qonda lipidlar **lipoproteinlar** holida tashiladi: sharsimon zarracha markazida qutbsiz triglitseridlar va xolesterin efirlari, sirtida esa fosfolipidlar, erkin xolesterin va oqsillar — **apolipoproteinlar** joylashgan. Lipid ulushi qancha ko‘p bo‘lsa, zichlik shuncha kichik."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 15.0. Qon lipoproteinlari",
+     "head": [
+      "Lipoprotein",
+      "Asosiy lipid",
+      "Asosiy apoprotein",
+      "Vazifasi"
+     ],
+     "rows": [
+      [
+       "Xilomikronlar (eng katta, eng past zichlik)",
+       "ovqat triglitseridlari (≈ 85 %)",
+       "apo B-48, C-II, E",
+       "ovqat yog‘larini ichakdan to‘qimalarga tashish"
+      ],
+      [
+       "LPJPZ (juda past zichlikli)",
+       "jigarda sintezlangan triglitseridlar",
+       "apo B-100, C-II, E",
+       "endogen triglitseridlarni to‘qimalarga tashish"
+      ],
+      [
+       "LPNP (past zichlikli)",
+       "xolesterin efirlari",
+       "apo B-100",
+       "xolesterinni to‘qimalarga yetkazish — “yomon xolesterin”"
+      ],
+      [
+       "LPYuP (yuqori zichlikli)",
+       "fosfolipidlar, xolesterin",
+       "apo A-I",
+       "to‘qimalardan ortiqcha xolesterinni jigarga qaytarish — “yaxshi xolesterin”"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Tomir endoteliysidagi **lipoproteinlipaza** (apo C-II bilan faollanadi) xilomikron va LPJPZ triglitseridlarini parchalaydi; yog‘ kislotalari mushak va yog‘ to‘qimasiga o‘tadi, LPJPZ esa asta-sekin LPNP ga aylanadi. LPNP tomir devoriga kirib oksidlanadi, makrofaglar uni yutib, “ko‘pikli hujayralar”ga aylanadi — **aterosklerotik pilakcha**ning boshlanishi."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "LPNP xolesterini ko‘pincha **Fridvald formulasi** bilan hisoblanadi (mmol/l da): LPNP = umumiy xolesterin − LPYuP − triglitseridlar / 2,2 (triglitseridlar < 4,5 mmol/l bo‘lganda). **Aterogenlik koeffitsienti** = (umumiy xolesterin − LPYuP) / LPYuP; me’yorda 3 dan kam."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 3,
+   "title": "0. Eykozanoidlar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Eykozanoidlar** — 20 uglerodli ko‘p to‘yinmagan yog‘ kislotalaridan, asosan **araxidon kislota**dan hosil bo‘ladigan mahalliy ta’sir qiluvchi gormonsimon moddalar. Araxidon kislota membrana fosfolipidlaridan **fosfolipaza A~2~** ta’sirida ajraladi, so‘ng ikki yo‘l bilan o‘zgaradi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/tkm/t15_eikozanoid.webp",
+     "w": 1400,
+     "h": 450,
+     "label": "Rasm 0.0",
+     "caption": "Araxidon kislota va undan hosil bo‘ladigan eykozanoidlar: siklooksigenaza mahsuloti prostaglandin E~2~ (siklopentan halqasi) va lipooksigenaza mahsuloti leykotriyen B~4~ (struktura formulalar PubChem ma’lumotlari asosida RDKit dasturida chizilgan)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 15.0. Eykozanoidlarning hosil bo‘lishi va ta’siri",
+     "head": [
+      "Yo‘l (ferment)",
+      "Mahsulot",
+      "Asosiy ta’siri"
+     ],
+     "rows": [
+      [
+       "Siklooksigenaza (SOG-1, SOG-2)",
+       "prostaglandinlar (PGE~2~, PGF~2α~)",
+       "yallig‘lanish, og‘riq, isitma; me’da shilliq qavatini himoya; bachadon qisqarishi"
+      ],
+      [
+       "Siklooksigenaza (trombotsitlarda)",
+       "tromboksan A~2~",
+       "trombotsitlar agregatsiyasi, tomir torayishi"
+      ],
+      [
+       "Siklooksigenaza (endoteliyda)",
+       "prostatsiklin (PGI~2~)",
+       "agregatsiyani to‘xtatadi, tomirni kengaytiradi"
+      ],
+      [
+       "Lipooksigenaza",
+       "leykotriyenlar (LTB~4~, LTC~4~, LTD~4~)",
+       "leykotsitlar xemotaksisi, bronxospazm, tomir o‘tkazuvchanligi oshishi"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Jadval 15.0. Eykozanoidlar sintezini boshqaruvchi dorilar",
+     "head": [
+      "Dori",
+      "Nishoni",
+      "Natija"
+     ],
+     "rows": [
+      [
+       "Glyukokortikoidlar (prednizolon)",
+       "fosfolipaza A~2~ (lipokortin sintezi orqali)",
+       "barcha eykozanoidlar kamayadi — kuchli yallig‘lanishga qarshi"
+      ],
+      [
+       "NYaQV (ibuprofen, diklofenak), aspirin",
+       "SOG-1 va SOG-2",
+       "og‘riq, isitma va yallig‘lanish kamayadi; me’da shikastlanishi xavfi"
+      ],
+      [
+       "Koksiblar (selekoksib)",
+       "faqat SOG-2",
+       "me’daga zarari kamroq, lekin tromboz xavfi ortishi mumkin"
+      ],
+      [
+       "Montelukast",
+       "leykotriyen retseptorlari",
+       "bronxial astmani nazorat qilish"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**ω-3 yog‘ kislotalari** (EPK, DGK) ham SOG va lipooksigenaza substratlari, ammo ulardan hosil bo‘ladigan eykozanoidlar yallig‘lanish va tromb hosil qilishni kuchsizroq rag‘batlantiradi. Baliqqa boy ovqatlanish yurak-qon tomir kasalliklari xavfining kamayishi bilan shunday bog‘lanadi."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Ko‘nikma: lipidogrammani baholash",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Umumiy xolesterin, LPYuP xolesterini va triglitseridlar qiymatlarini mmol/l da yozing.",
+      "LPNP xolesterinini Fridvald formulasi bilan hisoblang: LPNP = UX − LPYuP − TG / 2,2 (TG < 4,5 mmol/l bo‘lsa).",
+      "Aterogenlik koeffitsientini toping: AK = (UX − LPYuP) / LPYuP.",
+      "Har bir ko‘rsatkichni me’yor bilan solishtiring: UX < 5,2; LPNP < 3,0; LPYuP > 1,0 (erkaklar), > 1,2 (ayollar); TG < 1,7 mmol/l; AK < 3.",
+      "Bemorning boshqa xavf omillari (chekish, arterial gipertenziya, diabet, yosh) bilan birga yurak-qon tomir xavfini baholang."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Yog‘lar ichakda qanday hazm bo‘ladi va so‘riladi? O‘t kislotalari va lipazaning vazifasi nima?",
+  "Lipoproteinlar qanday tuzilgan? Xilomikronlar, LPJPZ, LPNP va LPYuP vazifalarini taqqoslang.",
+  "Aterosklerotik pilakcha qanday hosil bo‘ladi? LPNP nima uchun “yomon”, LPYuP “yaxshi” xolesterin deyiladi?",
+  "Eykozanoidlar qanday hosil bo‘ladi? Prostaglandin, tromboksan, prostatsiklin va leykotriyenlarning ta’sirini ayting.",
+  "Glyukokortikoidlar, NYaQV va koksiblar eykozanoidlar sinteziga qanday ta’sir qiladi?",
+  "Organizmda xolesterin balansi qanday saqlanadi? Oilaviy giperxolesterinemiyaning sababi nima?"
+ ],
+ "quiz": [
+  {
+   "q": "Ovqat bilan kelgan triglitseridlarni ichakdan tashiydigan lipoproteinlar qaysi?",
+   "options": [
+    "Xilomikronlar",
+    "LPNP",
+    "LPYuP",
+    "LPJPZ",
+    "Albumin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To‘qimalardan ortiqcha xolesterinni jigarga qaytaradigan lipoprotein qaysi?",
+   "options": [
+    "LPYuP",
+    "LPNP",
+    "Xilomikronlar",
+    "LPJPZ",
+    "Lipoprotein (a)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "LPNP ning asosiy apolipoproteini qaysi?",
+   "options": [
+    "apo B-100",
+    "apo A-I",
+    "apo B-48",
+    "apo C-II",
+    "apo E"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Lipoproteinlipazani faollashtiruvchi apoprotein qaysi?",
+   "options": [
+    "apo C-II",
+    "apo A-I",
+    "apo B-100",
+    "apo B-48",
+    "apo D"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Umumiy xolesterin 6,0, LPYuP 1,0, triglitseridlar 2,2 mmol/l bo‘lsa, Fridvald formulasi bo‘yicha LPNP qancha?",
+   "options": [
+    "4,0 mmol/l",
+    "5,0 mmol/l",
+    "3,0 mmol/l",
+    "2,2 mmol/l",
+    "6,0 mmol/l"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Araxidon kislotani membrana fosfolipidlaridan ajratadigan ferment qaysi?",
+   "options": [
+    "Fosfolipaza A~2~",
+    "Lipoproteinlipaza",
+    "Siklooksigenaza",
+    "Lipooksigenaza",
+    "Me’da osti bezi lipazasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Trombotsitlar agregatsiyasini kuchaytiradigan eykozanoid qaysi?",
+   "options": [
+    "Tromboksan A~2~",
+    "Prostatsiklin",
+    "PGE~2~",
+    "Leykotriyen B~4~",
+    "Lipoksin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Leykotriyenlar qaysi ferment ta’sirida hosil bo‘ladi?",
+   "options": [
+    "Lipooksigenaza",
+    "Siklooksigenaza",
+    "Fosfolipaza C",
+    "Tromboksansintaza",
+    "Lipaza"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Glyukokortikoidlarning yallig‘lanishga qarshi ta’sirining asosiy nishoni qaysi?",
+   "options": [
+    "Fosfolipaza A~2~",
+    "Faqat SOG-2",
+    "Lipooksigenaza",
+    "Tromboksan retseptori",
+    "GMG-KoA-reduktaza"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Oilaviy giperxolesterinemiyaning sababi nima?",
+   "options": [
+    "LPNP-retseptori genining mutatsiyasi",
+    "Lipoproteinlipaza yetishmovchiligi",
+    "Apo A-I ortiqchaligi",
+    "O‘t kislotalarining ko‘payishi",
+    "Lipaza yetishmovchiligi"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Masala 4",
+   "text": "Bemorning lipidogrammasi: umumiy xolesterin 6,6 mmol/l, LPYuP xolesterini 1,1 mmol/l, triglitseridlar 3,3 mmol/l.",
+   "ask": "LPNP xolesterini va aterogenlik koeffitsientini hisoblang va baholang.",
+   "answer": "LPNP = 6,6 − 1,1 − 3,3 / 2,2 = 6,6 − 1,1 − 1,5 = **4,0 mmol/l** (me’yor < 3,0 — oshgan). AK = (6,6 − 1,1) / 1,1 = **5** (me’yor < 3). Umumiy xolesterin va triglitseridlar ham oshgan — **aterogen dislipidemiya**, yurak-qon tomir xavfi yuqori. Parhez, jismoniy faollik va statin bilan davolash ko‘rib chiqiladi."
+  },
+  {
+   "title": "Masala 5",
+   "text": "12 yoshli bolaning tirsak va Axill paylarida sarg‘ish tugunlar (ksantomalar) bor. Otasi 38 yoshida miokard infarktidan vafot etgan. Bolada LPNP xolesterini 14 mmol/l, triglitseridlar me’yorida.",
+   "ask": "Qanday kasallik taxmin qilinadi? Uning molekulyar sababi va davolash prinsipini tushuntiring.",
+   "answer": "Bu **oilaviy giperxolesterinemiya**, juda yuqori LPNP va bolalikdagi ksantomalar **gomozigota** shaklga xos. **LPNP-retseptori** nuqsoni tufayli jigar va boshqa hujayralar LPNP ni qondan ola olmaydi; hujayra ichida xolesterin yetishmaganidan GMG-KoA-reduktaza faol qoladi va xolesterin sintezi to‘xtamaydi. Ortiqcha LPNP to‘qimalarda (ksantomalar) va tomir devorida to‘planib, erta aterosklerozga olib keladi. Davolash: yuqori dozali statinlar, ezetimib, PCSK9 ingibitorlari, og‘ir holatlarda LPNP-aferez (qonni LPNP dan tozalash)."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Surunkali pankreatit bilan og‘rigan bemorning najasi ko‘p, yog‘li, yaltiroq, yomon hidli va hojatxonada yuvilishi qiyin. Najasni Sudan III bilan bo‘yaganda ko‘p to‘q sariq-qizil tomchilar ko‘rindi.",
+   "ask": "Qanday holat? Uning biokimyoviy sababi nima va qanday davolanadi?",
+   "answer": "Bu **steatoreya** — najas bilan ko‘p yog‘ chiqishi (Sudan III neytral yog‘ tomchilarini bo‘yaydi). Surunkali pankreatitda me’da osti bezi **lipaza** va kolipaza ishlab chiqarishi kamayadi — triglitseridlar parchalanmaydi va so‘rilmaydi. Natijada yog‘da eruvchi vitaminlar (A, D, E, K) ham yetishmaydi. Davolash: ovqat bilan birga **ferment preparatlari** (pankreatin), yog‘ miqdorini me’yorlash, yog‘da eruvchi vitaminlarni qo‘shimcha berish."
+  },
+  {
+   "title": "Masala 7",
+   "text": "Tizza osteoartrozi tufayli bir oy davomida har kuni diklofenak ichgan 65 yoshli bemorda qora rangli najas va holsizlik paydo bo‘ldi; endoskopiyada me’da yarasi topildi.",
+   "ask": "Yaraning paydo bo‘lishini eykozanoidlar almashinuvi bilan tushuntiring. Xavfni qanday kamaytirish mumkin edi?",
+   "answer": "Diklofenak — noselektiv **SOG ingibitori**. Me’da shilliq qavatida SOG-1 hosil qiladigan **PGE~2~** va prostatsiklin shilliq va bikarbonat sekretsiyasini oshiradi, qon oqimini yaxshilaydi va HCl sekretsiyasini kamaytiradi — ya’ni himoya qiladi. SOG bloklanganda bu himoya yo‘qoladi va kislota shilliq qavatni yemiradi — yara va qon ketishi (qora najas — melena). Xavfni kamaytirish: eng kichik samarali doza va qisqa muddat, proton nasosi ingibitorini birga berish, mumkin bo‘lsa selektiv SOG-2 ingibitori yoki paratsetamol."
+  },
+  {
+   "title": "Masala 8",
+   "text": "Bronxial astma va burun poliplari bo‘lgan ayol bosh og‘rig‘i uchun aspirin ichgandan keyin 30 daqiqada og‘ir bo‘g‘ilish xurujini boshdan kechirdi.",
+   "ask": "Aspirin nima uchun astma xurujini chaqirdi? Qaysi dori guruhi bunday bemorlarga ayniqsa foydali?",
+   "answer": "Bu **aspirin-induksiyalangan respirator kasallik**. Aspirin siklooksigenazani to‘sganda araxidon kislota SOG yo‘lida ishlatilmay, ko‘proq **lipooksigenaza** yo‘liga “buriladi” — bronxlarni toraytiruvchi **leykotriyenlar** (LTC~4~, LTD~4~) ko‘p hosil bo‘ladi; bundan tashqari bronxlarni himoya qiluvchi PGE~2~ kamayadi. Natijada og‘ir bronxospazm rivojlanadi. Bunday bemorlarga aspirin va boshqa noselektiv NYaQV berilmaydi; davolashda **leykotriyen retseptorlari antagonistlari** (montelukast) va ingalyatsion glyukokortikoidlar foydali."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Xilomikronlar",
+   "back": "Ovqat triglitseridlarini ichakdan to‘qimalarga tashiydi; apo B-48"
+  },
+  {
+   "front": "LPNP va LPYuP",
+   "back": "LPNP xolesterinni to‘qimalarga olib boradi (aterogen); LPYuP ortiqchasini jigarga qaytaradi"
+  },
+  {
+   "front": "Fridvald formulasi",
+   "back": "LPNP = UX − LPYuP − TG / 2,2 (mmol/l)"
+  },
+  {
+   "front": "Eykozanoidlar",
+   "back": "Araxidon kislotadan: SOG — prostaglandinlar, tromboksan, prostatsiklin; LOG — leykotriyenlar"
+  },
+  {
+   "front": "NYaQV va me’da",
+   "back": "SOG-1 to‘silib, himoyalovchi PGE~2~ kamayadi — yara va qon ketish xavfi"
+  },
+  {
+   "front": "Oilaviy giperxolesterinemiya",
+   "back": "LPNP-retseptori nuqsoni: juda yuqori LPNP, ksantomalar, erta infarkt"
+  }
+ ]
+}

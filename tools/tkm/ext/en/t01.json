@@ -1,0 +1,142 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Chemical quality of drinking water"},
+   {"type": "p", "text": "A person drinks 2–2.5 L of water a day, so the impurities in water act on the body constantly. Water **hardness** is determined by its Ca^2+^ and Mg^2+^ salts. **Temporary (carbonate) hardness** is caused by hydrogen carbonates and disappears on boiling: Ca(HCO~3~)~2~ → CaCO~3~↓ + CO~2~↑ + H~2~O (the scale in a kettle is the product of this reaction). **Permanent hardness** is caused by sulfates and chlorides; it does not disappear on boiling and is removed only by ion exchange or with soda."},
+   {"type": "table", "title": "Table 1.0. Some hygienic indicators of drinking water (based on the national standard and WHO recommendations)", "head": ["Indicator", "Permitted value", "When the norm is violated"], "rows": [
+    ["Total hardness", "≤ 7 mEq/L", "the taste deteriorates, the risk of kidney stones increases"],
+    ["Dry residue (mineralization)", "≤ 1000 mg/L", "salty taste, water–salt metabolism is disturbed"],
+    ["Nitrates (NO~3~^−^)", "≤ 45 mg/L", "methemoglobinemia in infants"],
+    ["Fluorides (F^−^)", "0.7–1.5 mg/L", "too little — caries, too much — fluorosis"],
+    ["Arsenic (As)", "≤ 0.01 mg/L", "skin changes, risk of tumors"],
+    ["Lead (Pb)", "≤ 0.01 mg/L", "anemia, delayed mental development in children"],
+    ["pH", "6.5–8.5", "corrosion of pipes, metals pass into the water"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "The composition of drinking water can cause **endemic diseases**: too little iodine in water — endemic goiter, too little fluorine — caries, too much — fluorosis, high mineralization — urolithiasis. Such diseases are distinguished by being linked to a geographical area."}]}
+  ],
+  "4": [
+   {"type": "h", "text": "Regulation of calcium and phosphorus metabolism"},
+   {"type": "p", "text": "About half of plasma calcium is in the **ionized** (active) form; the rest is bound to albumin and present as complex salts. The normal ionized Ca^2+^ level is 1.1–1.3 mmol/L. Three hormones keep it constant:"},
+   {"type": "list", "items": [
+    "**Parathyroid hormone** (parathyroid glands) — releases Ca^2+^ from bone, increases Ca^2+^ reabsorption in the kidney and increases phosphate excretion: blood Ca^2+^ rises.",
+    "**Calcitriol** (the active form of vitamin D) — increases the absorption of Ca^2+^ and phosphate in the intestine.",
+    "**Calcitonin** (C cells of the thyroid gland) — stops the release of Ca^2+^ from bone and lowers its blood level."
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "The laboratory usually measures **total** calcium. If blood albumin is low (liver cirrhosis, nephrotic syndrome), total calcium comes out low, while the active ionized calcium may be normal. In that case **corrected calcium** is calculated: Ca(corr.) = Ca(measured) + 0.02·(40 − albumin), where Ca is in mmol/L and albumin in g/L."}]},
+   {"type": "p", "text": "**Magnesium and calcium** are antagonists in many processes: Ca^2+^ triggers muscle contraction, while Mg^2+^ blocks calcium channels and lowers excitability. That is why magnesium sulfate is used for seizures in eclampsia and in some arrhythmias."}
+  ],
+  "6": [
+   {"type": "h", "text": "Iron and copper metabolism"},
+   {"type": "p", "text": "Only 1–2 mg of dietary iron is absorbed — roughly the amount lost daily with intestinal epithelium and skin. Iron is absorbed in the duodenum as **Fe^2+^** (ascorbic acid reduces Fe^3+^ to Fe^2+^ and improves absorption), is carried in the blood as **Fe^3+^** by the protein **transferrin**, and is stored in the liver and spleen as **ferritin** and hemosiderin. The body has no mechanism for actively excreting iron, so it accumulates after many blood transfusions."},
+   {"type": "table", "title": "Table 1.0. Laboratory indicators of iron and copper metabolism (adults)", "head": ["Indicator", "Approximate normal value", "What it reflects"], "rows": [
+    ["Serum iron", "9–30 µmol/L", "iron being transported in the blood"],
+    ["Ferritin", "20–300 µg/L", "iron stores; falls earliest in deficiency"],
+    ["Transferrin saturation with iron", "20–45 %", "iron supply; increased in hemochromatosis"],
+    ["Ceruloplasmin", "0.2–0.6 g/L", "copper-carrying protein; decreased in Wilson disease"],
+    ["Serum copper", "11–24 µmol/L", "overall copper status"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In **Wilson disease** copper is not excreted with bile and accumulates in the liver, the subcortical nuclei of the brain and the cornea. A greenish-brown **Kayser–Fleischer ring** appears at the edge of the cornea, and blood ceruloplasmin decreases. Treatment uses the copper-binding drug D-penicillamine."}]}
+  ],
+  "8": [
+   {"type": "h", "text": "Biological effects of ionizing radiation"},
+   {"type": "p", "text": "Radiation acts on tissue in two ways. In the **direct effect** a quantum or particle itself ionizes the DNA or protein molecule and breaks bonds. The **indirect effect** is the main one: since ≈ 70 % of tissue is water, radiation splits water (**radiolysis**): H~2~O → H· + ·OH. The free radicals formed, especially the hydroxyl radical ·OH, damage DNA, membrane lipids and enzymes."},
+   {"type": "table", "title": "Table 1.0. Single whole-body radiation dose and its consequences", "head": ["Equivalent dose", "Consequence"], "rows": [
+    ["< 0.1 Sv", "no clinical signs, the long-term risk of tumors rises slightly"],
+    ["0.25–1 Sv", "lymphocytes in the blood decrease, usually without symptoms"],
+    ["1–2 Sv", "mild acute radiation syndrome"],
+    ["4–5 Sv", "without treatment about half of those exposed die"],
+    ["> 10 Sv", "almost always fatal"]
+   ]},
+   {"type": "p", "text": "The radiosensitivity of cells depends on how fast they divide (**law of Bergonié and Tribondeau**): bone marrow, intestinal epithelium, germ cells and lymphocytes are the most sensitive, while nerve and muscle cells are resistant. The three main ways of protection from radiation are **time** (spend little time near the source), **distance** (the dose falls with the square of the distance) and **shielding** (lead and concrete against γ-radiation)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In an accident at a nuclear power plant radioactive ^131^I is released and accumulates in the thyroid gland. To prevent this, the population is given **potassium iodide** tablets (130 mg for adults): the gland becomes saturated with stable iodine and does not take up radioactive iodine."}]}
+  ]
+ },
+ "insert": [
+  {"after": 3, "title": "0. Atomic structure and the periodic law — the key to understanding biogenic elements", "blocks": [
+   {"type": "p", "text": "The chemical and biological properties of an element are determined by its **electronic structure**. According to D.I. Mendeleev’s periodic law, the properties of elements depend periodically on the nuclear charge (atomic number). Depending on which orbital the outer electrons occupy, elements are divided into **s-, p-, d- and f-blocks**."},
+   {"type": "table", "title": "Table 1.0. Electron configuration of some biogenic elements and their form in the body", "head": ["Element", "Electron configuration", "Block", "Main form in the body"], "rows": [
+    ["Na", "1s^2^2s^2^2p^6^3s^1^", "s", "Na^+^"],
+    ["Ca", "[Ar]4s^2^", "s", "Ca^2+^, hydroxyapatite"],
+    ["P", "[Ne]3s^2^3p^3^", "p", "phosphate ions, phosphoesters"],
+    ["Cl", "[Ne]3s^2^3p^5^", "p", "Cl^−^"],
+    ["Fe", "[Ar]3d^6^4s^2^", "d", "Fe^2+^ / Fe^3+^ (heme, Fe–S proteins)"],
+    ["Cu", "[Ar]3d^10^4s^1^", "d", "Cu^+^ / Cu^2+^ (oxidases)"],
+    ["Zn", "[Ar]3d^10^4s^2^", "d", "Zn^2+^ (metalloenzymes)"]
+   ]},
+   {"type": "p", "text": "**Electronegativity** is the ability of an atom to attract the electrons of a bond. Because oxygen and nitrogen are highly electronegative, O–H and N–H bonds are polar and form **hydrogen bonds** — the properties of water, the secondary structure of proteins and the DNA double helix are based on them."},
+   {"type": "p", "text": "**Ionic radius** determines biological selectivity: Na^+^ (0.102 nm) and K^+^ (0.138 nm) differ in size, so ion channels in the membrane can tell them apart. Ions of similar size and charge can replace each other — this is called **isomorphous substitution** and underlies many poisonings."},
+   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Interchangeable pairs: **Li ↔ Na, Tl ↔ K, Sr ↔ Ca, Cd ↔ Zn, Be ↔ Mg**. For example, radioactive ^90^Sr settles in bone in place of calcium and irradiates the bone marrow for a long time; thallium enters potassium channels and poisons the nervous system."}]}
+  ]},
+  {"after": 6, "title": "0. Toxic elements and their antidotes", "blocks": [
+   {"type": "p", "text": "Heavy metals (Hg^2+^, Pb^2+^, Cd^2+^, As^3+^) bind firmly to the **sulfhydryl (–SH) groups** of proteins and inactivate enzymes, which is why they are called **thiol poisons**. In addition, they displace essential metals: lead displaces zinc from δ-aminolevulinic acid dehydratase in heme synthesis and causes anemia."},
+   {"type": "p", "text": "The treatment of poisoning is based on **chelating antidotes**: the antidote forms a stable, water-soluble complex with the metal, which is excreted in the urine. The chemistry of complex formation is discussed in detail in topic 3."},
+   {"type": "table", "title": "Table 1.0. Toxic elements and their antidotes", "head": ["Poison", "Antidote", "Mechanism of action"], "rows": [
+    ["Mercury, arsenic", "unithiol, dimercaprol", "two –SH groups bind the metal and remove it in the urine"],
+    ["Lead", "CaNa~2~-EDTA (calcium disodium edetate), succimer", "Pb^2+^ takes the place of Ca^2+^ in the complex"],
+    ["Copper (Wilson disease)", "D-penicillamine", "chelates copper and removes it in the urine"],
+    ["Iron (acute poisoning, overload)", "deferoxamine", "forms a stable complex with Fe^3+^"],
+    ["Thallium", "Prussian blue", "binds Tl^+^ in the intestine by ion exchange"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Signs of **chronic lead poisoning**: severe abdominal colic (lead colic), a gray line at the gum margin, basophilic stippling of red blood cells, anemia, weakness of the arms and legs. δ-Aminolevulinic acid increases in the urine."}]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Only the **calcium** salt CaNa~2~-EDTA is used to remove lead. Calcium-free Na~2~-EDTA also binds blood Ca^2+^ and can cause severe hypocalcemia and cardiac arrest."}]}
+  ]},
+  {"after": 7, "title": "0. Methods for the quantitative determination of biogenic elements", "blocks": [
+   {"type": "p", "text": "A qualitative reaction shows that an ion is present, but in the clinic its **exact amount** must be known. Chemical and instrumental methods are used for this."},
+   {"type": "table", "title": "Table 1.0. Methods for the quantitative determination of elements", "head": ["Method", "Principle", "What is determined in the clinic"], "rows": [
+    ["Titrimetry", "by the volume of reagent consumed", "gastric juice acidity, Ca^2+^, Cl^−^"],
+    ["Photometry (spectrophotometry)", "light absorption by a colored compound", "iron, phosphorus, magnesium, hemoglobin"],
+    ["Flame photometry", "intensity of emission of atoms excited in a flame", "Na^+^, K^+^, Li^+^"],
+    ["Atomic absorption spectrometry", "absorption of a characteristic wavelength by atomic vapor", "Pb, Cd, Cu, Zn, Hg — trace amounts"],
+    ["Ion-selective electrodes", "dependence of the electrode potential on ion activity", "Na^+^, K^+^, Ca^2+^, Cl^−^ (blood gas and electrolyte analyzers)"]
+   ]},
+   {"type": "p", "text": "Photometry is based on the **Beer–Lambert law**: the absorbance of a solution is directly proportional to the concentration of the colored substance and to the path length, A = ε·l·C. The concentration is found from a **calibration curve** built with standard solutions."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "In a modern clinical laboratory Na^+^, K^+^, Ca^2+^ and Cl^−^ are mostly measured with **ion-selective electrodes** within minutes, while trace amounts of heavy metals are determined by **atomic absorption**."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: calculating the activity and remaining amount of a radionuclide", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Find the half-life (T~½~) of the radionuclide in a table.",
+    "Express the elapsed time in the same unit as T~½~ and find the number of half-lives: n = t / T~½~.",
+    "Calculate the remaining activity: A = A~0~ / 2^n^ (if n is not a whole number, A = A~0~·e^−λt^, λ = 0.693 / T~½~).",
+    "Write the result with its unit (MBq or kBq) and check that it makes sense: the activity can never exceed the initial value.",
+    "Draw a medical conclusion: estimate how long the patient remains a source for the people around them."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "How does the electron configuration of an atom determine the biological role of an element? Give examples of s-, p- and d-elements.",
+  "What is isomorphous substitution? Use it to explain the toxicity of strontium-90 and thallium.",
+  "By what mechanism do heavy metals inactivate enzymes? How do their antidotes work?",
+  "How is iron absorbed, transported and stored in the body?",
+  "How do the temporary and permanent hardness of water differ?",
+  "What are the direct and indirect effects of ionizing radiation? What methods of radiation protection do you know?"
+ ],
+ "quiz": [
+  {"q": "Which antidote is used for mercury and arsenic poisoning?", "options": ["Unithiol (dimercaprol)", "Deferoxamine", "Prussian blue", "Methylene blue", "Calcium gluconate"], "answer": 0},
+  {"q": "Which antidote is used for lead poisoning?", "options": ["CaNa~2~-EDTA (calcium disodium edetate)", "Na~2~-EDTA", "Atropine", "Sodium hydrogen carbonate", "Potassium iodide"], "answer": 0},
+  {"q": "Which protein carries iron in blood plasma?", "options": ["Transferrin", "Ferritin", "Ceruloplasmin", "Hemoglobin", "Myoglobin"], "answer": 0},
+  {"q": "Which salts cause the temporary hardness of water?", "options": ["Ca and Mg hydrogen carbonates", "Ca and Mg sulfates", "Na and K chlorides", "Ca and Mg chlorides", "Na and K nitrates"], "answer": 0},
+  {"q": "What is the electron configuration of the iron atom?", "options": ["[Ar]3d^6^4s^2^", "[Ar]4s^2^", "[Ar]3d^10^4s^1^", "[Ne]3s^2^3p^6^", "[Ar]3d^10^4s^2^"], "answer": 0},
+  {"q": "Which radionuclide replaces calcium in bone and irradiates the bone marrow for a long time?", "options": ["^90^Sr", "^131^I", "^99m^Tc", "^18^F", "^125^I"], "answer": 0},
+  {"q": "What is given to protect the thyroid gland in a radiation accident?", "options": ["Potassium iodide", "Sodium thiosulfate", "Unithiol", "Calcium chloride", "Iron sulfate"], "answer": 0},
+  {"q": "Which method is most often used in the clinical laboratory to measure sodium and potassium?", "options": ["Ion-selective electrodes", "Gravimetry", "Polarimetry", "Refractometry", "Paper chromatography"], "answer": 0},
+  {"q": "Which blood protein decreases in Wilson disease?", "options": ["Ceruloplasmin", "Transferrin", "Ferritin", "Albumin", "Fibrinogen"], "answer": 0},
+  {"q": "What is the indirect effect of ionizing radiation mainly due to?", "options": ["Radiolysis of water and free radicals", "Thermal melting of DNA", "Hydrolysis of proteins", "Saponification of lipids", "An increase in osmotic pressure"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "A 45-year-old man working at a battery plant complains of severe abdominal colic and weakness. Examination shows a gray line at the gum margin; the blood test shows anemia and basophilic stippling of red blood cells.", "ask": "Poisoning with which element is suspected? What is its mechanism of action? Which antidote is used and why exactly its calcium salt?", "answer": "This is chronic **lead** poisoning (battery production is a main source). Pb^2+^ binds the –SH groups of enzymes and displaces zinc from δ-aminolevulinic acid dehydratase in heme synthesis — heme synthesis is disturbed, anemia develops and δ-ALA increases in the urine. The antidote is **CaNa~2~-EDTA** (calcium disodium edetate) or succimer: Pb^2+^ takes the place of Ca^2+^ in the complex, forming a water-soluble complex that is excreted in the urine. Calcium-free Na~2~-EDTA would bind blood Ca^2+^ and cause dangerous hypocalcemia."},
+  {"title": "Problem 5", "text": "Water from a village well was analyzed: 1 L of water contains 120 mg of Ca^2+^ and 36 mg of Mg^2+^ (the equivalent mass of Ca is 20, of Mg 12 g/mol).", "ask": "Calculate the total hardness of the water (mEq/L) and compare it with the drinking water standard. What could drinking such water for a long time lead to?", "answer": "Ca^2+^: 120 / 20 = 6 mEq/L; Mg^2+^: 36 / 12 = 3 mEq/L. Total hardness = 6 + 3 = **9 mEq/L** — above the norm (≤ 7 mEq/L), the water is **hard**. Long-term consumption increases calcium salts in the urine and raises the risk of **urolithiasis**. Softening the water with an ion-exchange filter is recommended."},
+  {"title": "Problem 6", "text": "A patient with liver cirrhosis has total calcium of 1.9 mmol/L (normal 2.2–2.6) and albumin of 25 g/L (normal 35–50). There are no signs of tetany.", "ask": "Calculate the corrected calcium. Does the patient have true hypocalcemia?", "answer": "Ca(corr.) = 1.9 + 0.02·(40 − 25) = 1.9 + 0.3 = **2.2 mmol/L** — at the lower limit of normal. The low total calcium is due to **decreased albumin**: bound calcium is reduced, while active ionized calcium is sufficient. That is why there is no tetany. To be sure, ionized calcium (normal 1.1–1.3 mmol/L) should be measured directly."},
+  {"title": "Problem 7", "text": "For a bone scan a patient was injected at 8:00 with a ^99m^Tc preparation with an activity of 740 MBq (T~½~ = 6 hours).", "ask": "What will the remaining activity in the patient’s body be at 20:00 and at 8:00 the next day (ignore excretion)?", "answer": "12 hours = 2 half-lives: A = 740 / 2^2^ = **185 MBq**. 24 hours = 4 half-lives: A = 740 / 2^4^ = 740 / 16 ≈ **46 MBq**. In one day the activity falls 16-fold — this is the advantage of short-lived ^99m^Tc in diagnosis. In addition, the preparation is partly excreted in the urine, so the patient is advised to drink plenty of fluids."},
+  {"title": "Problem 8", "text": "A 28-year-old woman complains of weakness, dizziness and hair loss; her periods are heavy and prolonged. Tests: hemoglobin 90 g/L, serum iron 6 µmol/L, ferritin 8 µg/L.", "ask": "What is the condition? What does ferritin show? In what form and with what should an iron preparation be taken?", "answer": "**Iron deficiency anemia**: hemoglobin, serum iron and ferritin are decreased. Ferritin is an indicator of iron **stores**; its sharp decrease means the stores are exhausted (the cause is chronic blood loss). Iron is well absorbed in the intestine in the **Fe^2+^** form, so ferrous salts (FeSO~4~) are recommended, and taking them with **ascorbic acid** increases absorption. They are not taken together with tea, milk or antacids, which bind iron into insoluble compounds."}
+ ],
+ "cards": [
+  {"front": "Thiol poisons", "back": "Metals that bind the –SH groups of proteins and inactivate enzymes: Hg, Pb, Cd, As"},
+  {"front": "Unithiol", "back": "An antidote with two –SH groups; binds and removes the metal in mercury and arsenic poisoning"},
+  {"front": "Transferrin and ferritin", "back": "Transferrin carries Fe^3+^ in the blood; ferritin stores iron in the cell"},
+  {"front": "Water hardness", "back": "Content of Ca^2+^ and Mg^2+^ salts; in drinking water ≤ 7 mEq/L"},
+  {"front": "Radiolysis", "back": "Splitting of water by radiation: H~2~O → H· + ·OH; the free radicals damage tissue"},
+  {"front": "Corrected calcium", "back": "Ca + 0.02·(40 − albumin); used to assess true calcium status when albumin is low"}
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Eritmalarni suyultirish va klinik eritmalar"},
+   {"type": "p", "text": "Eritma suyultirilganda eritilgan modda miqdori o‘zgarmaydi, shuning uchun **suyultirish qoidasi** o‘rinli: C~1~·V~1~ = C~2~·V~2~. Masalan, 40 % li glyukozadan 5 % li eritmaning 200 ml ini tayyorlash uchun V~1~ = 5 · 200 / 40 = 25 ml konsentrat olinib, 200 ml gacha suv qo‘shiladi."},
+   {"type": "table", "title": "Jadval 2.0. Klinikada ko‘p ishlatiladigan eritmalarning tarkibi", "head": ["Eritma", "Konsentratsiya", "Ion yoki modda miqdori", "Osmolyarligi, mosmol/l"], "rows": [
+    ["NaCl (fiziologik eritma)", "0,9 %", "Na^+^ va Cl^−^ — 154 mmol/l dan", "308"],
+    ["Glyukoza", "5 %", "glyukoza 278 mmol/l", "278"],
+    ["Glyukoza", "40 %", "glyukoza 2,2 mol/l", "≈ 2220"],
+    ["Natriy gidrokarbonat", "4,2 %", "HCO~3~^−^ 0,5 mmol/ml", "≈ 1000"],
+    ["Kaliy xlorid", "7,5 %", "K^+^ ≈ 1 mmol/ml", "≈ 2000"],
+    ["Ringer-laktat", "—", "Na^+^ 130, K^+^ 4, Ca^2+^ 1,5, laktat 28 mmol/l", "≈ 273"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Konsentrlangan **KCl eritmasini** vena ichiga to‘g‘ridan-to‘g‘ri (bolyus) yuborish mumkin emas — yurak to‘xtashiga olib keladi. U albatta suyultiriladi va sekin, odatda soatiga 10–20 mmol K^+^ dan oshmagan tezlikda yuboriladi."}]}
+  ],
+  "3": [
+   {"type": "h", "text": "Osmolyarlik, osmolyallik va toniklik"},
+   {"type": "p", "text": "**Osmolyarlik** — 1 l eritmadagi osmotik faol zarrachalar soni (mosmol/l), **osmolyallik** — 1 kg erituvchidagi zarrachalar soni (mosmol/kg). Suyultirilgan biologik suyuqliklarda ular deyarli teng. Plazma osmolyalligining me’yori **285–295 mosmol/kg**; uni taxminan hisoblash mumkin: Osm = 2·[Na^+^] + [glyukoza] + [mochevina] (hammasi mmol/l da)."},
+   {"type": "p", "text": "Membranadan erkin o‘tadigan moddalar (mochevina, etanol) hujayra va hujayra tashqarisida tez tenglashadi va suv harakatini keltirib chiqarmaydi. Shuning uchun hujayra hajmini faqat membranadan o‘tmaydigan zarrachalar hosil qilgan **samarali osmolyallik — toniklik** belgilaydi. Masalan, 5 % li glyukoza probirkada izotonik, ammo organizmda glyukoza hujayraga kirib ishlatiladi va eritma amalda erkin suv kabi ta’sir qiladi."},
+   {"type": "p", "text": "Kapillyar devori orqali suv almashinuvini **Starling kuchlari** belgilaydi: arterial uchida gidrostatik bosim onkotik bosimdan katta bo‘lib, suv to‘qimaga chiqadi; venoz uchida onkotik bosim ustun kelib, suv qonga qaytadi. Albumin kamayganda (< 20–25 g/l) onkotik bosim pasayadi va suv to‘qimada qolib, **shish** rivojlanadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Gemodializ**da qon yarim o‘tkazgich membrana orqali dializ eritmasi bilan almashinadi: mochevina, kreatinin va ortiqcha K^+^ konsentratsiya gradienti bo‘yicha qondan chiqadi, oqsillar va qon hujayralari esa qoladi. Ortiqcha suv membranaga bosim berish (ultrafiltratsiya) bilan chiqariladi."}]}
+  ],
+  "6": [
+   {"type": "h", "text": "Indikatorni tanlash"},
+   {"type": "table", "title": "Jadval 2.0. Titrlash turiga qarab indikatorni tanlash", "head": ["Titrlash", "Ekvivalent nuqtadagi pH", "Sakrash", "Indikator"], "rows": [
+    ["Kuchli kislota + kuchli asos", "7", "katta (pH 4,3–9,7)", "metiloranj, metil qizil yoki fenolftalein"],
+    ["Kuchsiz kislota + kuchli asos", "> 7 (≈ 8,7)", "ishqoriy sohada", "fenolftalein"],
+    ["Kuchsiz asos + kuchli kislota", "< 7 (≈ 5,3)", "kislotali sohada", "metiloranj, metil qizil"],
+    ["Kuchsiz kislota + kuchsiz asos", "≈ 7", "deyarli yo‘q", "aniq titrlab bo‘lmaydi"]
+   ]},
+   {"type": "p", "text": "Bir necha indikator aralashmasi **universal indikator** deyiladi: u pH 1 dan 14 gacha rangini bosqichma-bosqich o‘zgartiradi. Undan tayyorlangan indikator qog‘ozi siydik va boshqa suyuqliklar pH ini taxminiy aniqlashda ishlatiladi."}
+  ],
+  "7": [
+   {"type": "h", "text": "Me’dada xlorid kislota hosil bo‘lishi"},
+   {"type": "p", "text": "HCl me’da tubi bezlarining **obkladka (parietal) hujayralarida** hosil bo‘ladi. Hujayra ichida **karboangidraza** ishtirokida CO~2~ + H~2~O → H~2~CO~3~ → H^+^ + HCO~3~^−^ reaksiyasi kechadi. H^+^ ionlari **H^+^/K^+^-ATFaza** (proton nasosi) yordamida me’da bo‘shlig‘iga chiqariladi, Cl^−^ ular ortidan kanallar orqali o‘tadi. HCO~3~^−^ esa qonga chiqadi — shuning uchun ovqatdan keyin qon va siydik biroz ishqoriylashadi (**“ishqoriy to‘lqin”**)."},
+   {"type": "table", "title": "Jadval 2.0. Me’da kislotaligining buzilishlari", "head": ["Holat", "Ko‘rsatkichlar", "Uchraydigan kasalliklar"], "rows": [
+    ["Giperatsid holat", "umumiy kislotalilik > 60 t.b., erkin HCl > 40 t.b.", "o‘n ikki barmoqli ichak yarasi, Zollinger–Ellison sindromi"],
+    ["Gipoatsid holat", "umumiy kislotalilik < 40 t.b., erkin HCl < 20 t.b.", "surunkali gastrit, me’da saratoni"],
+    ["Axlorgidriya", "erkin HCl yo‘q", "autoimmun atrofik gastrit, B~12~-tanqisligi kamqonligi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Proton nasosi ingibitorlari** (omeprazol va boshqalar) H^+^/K^+^-ATFazani qaytmas bloklab, HCl ishlab chiqarilishini keskin kamaytiradi — yara kasalligi va reflyuks-ezofagitni davolashning asosiy dorilari. **Antatsidlar** (Al(OH)~3~, Mg(OH)~2~) esa neytrallash reaksiyasi bilan tayyor kislotani bog‘laydi."}]}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Suv — biologik erituvchi. Organizm suyuqliklarining tarkibi", "blocks": [
+   {"type": "p", "text": "Suv molekulasi burchakli (≈ 104,5°) va kuchli **qutbli**; molekulalar o‘zaro vodorod bog‘lar hosil qiladi. Shu sababli suvning issiqlik sig‘imi va bug‘lanish issiqligi katta — u tana haroratini barqarorlashtiradi, terlash orqali sovitadi. Yuqori dielektrik o‘tkazuvchanlik (ε ≈ 80) suvda ionli birikmalarning dissotsilanishini osonlashtiradi."},
+   {"type": "p", "text": "Kattalar tanasidagi suv (massaning ≈ 60 %) ikki asosiy bo‘shliqqa taqsimlangan: **hujayra ichi suyuqligi** — tana massasining ≈ 40 %, **hujayradan tashqari suyuqlik** — ≈ 20 % (to‘qimalararo suyuqlik ≈ 15 % va qon plazmasi ≈ 5 %). Bo‘shliqlar ion tarkibi bilan keskin farq qiladi; bu farqni Na^+^/K^+^-ATFaza saqlab turadi."},
+   {"type": "table", "title": "Jadval 2.0. Hujayra ichi va hujayradan tashqari suyuqliklarning ion tarkibi (taxminan, mmol/l)", "head": ["Ion", "Qon plazmasi", "Hujayra ichida"], "rows": [
+    ["Na^+^", "140", "10–15"],
+    ["K^+^", "4", "140–150"],
+    ["Ca^2+^ (ionlangan)", "1,2", "≈ 0,0001"],
+    ["Mg^2+^", "1", "≈ 15"],
+    ["Cl^−^", "103", "5–10"],
+    ["HCO~3~^−^", "24", "10"],
+    ["Fosfatlar", "1", "≈ 100 (organik fosfatlar bilan)"],
+    ["Oqsillar (anion)", "≈ 15 mekv/l", "≈ 50 mekv/l"]
+   ]},
+   {"type": "p", "text": "Sutkalik **suv balansi** kattalarda taxminan 2,5 l: suyuqlik ichish (≈ 1,5 l), ovqat tarkibidagi suv (≈ 0,7 l) va moddalar oksidlanishida hosil bo‘ladigan **metabolik suv** (≈ 0,3 l) hisobiga kiradi; siydik (≈ 1,5 l), teri va nafas orqali bug‘lanish (≈ 0,9 l) va najas (≈ 0,1 l) bilan chiqadi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Degidratatsiya** turi plazma natriysiga qarab aniqlanadi: **izotonik** (qusish, diareya — suv va tuz teng yo‘qoladi), **gipertonik** (suv ko‘proq yo‘qoladi — isitma, suv ichmaslik; Na^+^ > 145 mmol/l, hujayralar suvsizlanadi) va **gipotonik** (tuz ko‘proq yo‘qoladi; Na^+^ < 135 mmol/l, hujayralar shishadi). Har bir turda turli eritmalar quyiladi."}]}
+  ]},
+  {"after": 5, "title": "0. Titrlash usullari va titrimetrik hisoblar", "blocks": [
+   {"type": "p", "text": "Titrlash qanday o‘tkazilishiga qarab uch xil bo‘ladi:"},
+   {"type": "list", "items": [
+    "**To‘g‘ri titrlash** — aniqlanadigan modda bevosita ishchi eritma bilan titrlanadi (HCl ni NaOH bilan).",
+    "**Teskari (qoldiqni) titrlash** — aniqlanadigan moddaga ishchi eritmadan ma’lum ortiqcha miqdor qo‘shiladi, reaksiyaga kirishmay qolgan qoldiq esa boshqa eritma bilan titrlanadi. Reaksiya sekin borganda yoki modda uchuvchan bo‘lganda (NH~3~, CaCO~3~) ishlatiladi.",
+    "**O‘rinbosarni titrlash** — aniqlanadigan modda reaktiv bilan reaksiyaga kiritilib, ekvivalent miqdorda hosil bo‘lgan boshqa modda titrlanadi (yodometriyada ajralgan I~2~ titrlanadi)."
+   ]},
+   {"type": "p", "text": "**Asosiy hisob formulalari.** Ekvivalentlar qonunidan: C~n~(X) = C~n~(titrant)·V(titrant) / V(X). Moddaning massasi: m(X) = C~n~(titrant)·V(titrant)·M~ekv~(X) / 1000 (V — ml da). Teskari titrlashda reaksiyaga kirishgan ekvivalentlar soni qo‘shilgan va qoldiq miqdorlar ayirmasiga teng."},
+   {"type": "p", "text": "**Ishchi eritmani standartlash.** NaOH havodan CO~2~ yutgani uchun uning eritmasini aniq tortim bilan tayyorlab bo‘lmaydi; konsentratsiyasi oksalat kislotaning aniq tortimi bo‘yicha aniqlanadi: H~2~C~2~O~4~ + 2NaOH → Na~2~C~2~O~4~ + 2H~2~O. Oksalat kislota digidratining ekvivalent molyar massasi 126 / 2 = 63 g/mol."},
+   {"type": "table", "title": "Jadval 2.0. Tahlil natijasining aniqligi", "head": ["Tushuncha", "Ma’nosi", "Kamaytirish yo‘li"], "rows": [
+    ["Sistematik xato", "natijani doimo bir tomonga siljitadi (noto‘g‘ri kalibrlangan idish, noto‘g‘ri indikator)", "asboblarni kalibrlash, nazorat namunasi"],
+    ["Tasodifiy xato", "takroriy o‘lchashlarda tarqoqlik beradi", "kamida 3 marta titrlab, o‘rtachasini olish"],
+    ["Qo‘pol xato (o‘tkazib yuborish)", "aniq xato (eritma to‘kilgan, hajm noto‘g‘ri yozilgan)", "bunday natija hisobga olinmaydi"],
+    ["Nisbiy xato", "(topilgan − haqiqiy) / haqiqiy · 100 %", "titrlashda odatda 0,1–0,5 %"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Parallel titrlashlar natijalari bir-biridan **0,1 ml** dan ko‘p farq qilmasligi kerak. Farq katta bo‘lsa, titrlash takrorlanadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: berilgan konsentratsiyadagi eritmani tayyorlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Kerakli eritma hajmini va konsentratsiyasini (%, mol/l yoki mmol/l) yozib oling.",
+    "Quruq moddadan tayyorlanayotgan bo‘lsa, massasini hisoblang: m = ω·m(eritma) yoki m = C·V·M.",
+    "Konsentratdan tayyorlanayotgan bo‘lsa, suyultirish qoidasidan hajmini toping: V~1~ = C~2~·V~2~ / C~1~.",
+    "Moddani tortib yoki konsentratni pipetka bilan o‘lchab, o‘lchov kolbasiga soling, belgisigacha distillangan suv qo‘shing va aralashtiring.",
+    "Idishga eritma nomi, konsentratsiyasi va tayyorlangan sanani yozing."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Suvning qaysi xossalari uni biologik erituvchi sifatida noyob qiladi?",
+  "Organizmdagi suv qanday bo‘shliqlarga taqsimlangan? Ularning ion tarkibi qanday farq qiladi?",
+  "Osmolyarlik, osmolyallik va toniklik o‘rtasida qanday farq bor? Plazma osmolyalligi qanday hisoblanadi?",
+  "Starling kuchlari nima? Albumin kamayganda nima uchun shish rivojlanadi?",
+  "To‘g‘ri, teskari va o‘rinbosarni titrlashning farqi nimada?",
+  "Me’dada HCl qanday hosil bo‘ladi? Proton nasosi ingibitorlari va antatsidlarning ta’siri qanday farq qiladi?"
+ ],
+ "quiz": [
+  {"q": "Hujayra ichi suyuqligining asosiy kationi qaysi?", "options": ["K^+^", "Na^+^", "Ca^2+^", "H^+^", "Li^+^"], "answer": 0},
+  {"q": "Qon plazmasi osmolyalligining me’yori qancha?", "options": ["285–295 mosmol/kg", "140–150 mosmol/kg", "200–220 mosmol/kg", "340–360 mosmol/kg", "500–600 mosmol/kg"], "answer": 0},
+  {"q": "0,9 % li NaCl eritmasida Na^+^ konsentratsiyasi qancha?", "options": ["154 mmol/l", "9 mmol/l", "90 mmol/l", "308 mmol/l", "58 mmol/l"], "answer": 0},
+  {"q": "Qaysi modda membranadan erkin o‘tgani uchun samarali osmotik bosim (toniklik) hosil qilmaydi?", "options": ["Mochevina", "Natriy xlorid", "Mannit", "Albumin", "Natriy gidrokarbonat"], "answer": 0},
+  {"q": "Albumin kamayganda shish rivojlanishining asosiy sababi nima?", "options": ["Onkotik bosimning pasayishi", "Gidrostatik bosimning pasayishi", "Plazma osmolyalligining oshishi", "Natriy chiqarilishining kuchayishi", "Limfa oqimining tezlashishi"], "answer": 0},
+  {"q": "Teskari titrlash qachon ishlatiladi?", "options": ["Reaksiya sekin borganda yoki modda uchuvchan bo‘lganda", "Indikator bo‘lmaganda", "Faqat kuchli kislotalarni titrlashda", "Eritma rangsiz bo‘lganda", "Byuretka bo‘lmaganda"], "answer": 0},
+  {"q": "40 % li glyukozadan 5 % li eritmaning 200 ml ini tayyorlash uchun necha ml konsentrat kerak?", "options": ["25 ml", "50 ml", "8 ml", "20 ml", "40 ml"], "answer": 0},
+  {"q": "Kuchsiz asosni kuchli kislota bilan titrlashda qaysi indikator to‘g‘ri keladi?", "options": ["Metiloranj", "Fenolftalein", "Timolftalein", "Indikatorsiz titrlanadi", "Lakmus"], "answer": 0},
+  {"q": "Me’da parietal hujayralarida H^+^ ionlarini me’da bo‘shlig‘iga chiqaradigan oqsil qaysi?", "options": ["H^+^/K^+^-ATFaza", "Na^+^/K^+^-ATFaza", "Ca^2+^-ATFaza", "Karboangidraza", "Pepsin"], "answer": 0},
+  {"q": "Organizmda moddalar oksidlanishidan sutkada taxminan qancha metabolik suv hosil bo‘ladi?", "options": ["≈ 0,3 l", "≈ 1,5 l", "≈ 2,5 l", "≈ 0,03 l", "≈ 5 l"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Qandli diabet bilan og‘rigan keksa bemor hushsiz holatda keltirildi. Tahlil: Na^+^ 150 mmol/l, glyukoza 25 mmol/l, mochevina 10 mmol/l.", "ask": "Plazma osmolyalligini hisoblang va baholang. Hujayralarda qanday o‘zgarish ro‘y beradi?", "answer": "Osm = 2·150 + 25 + 10 = **335 mosmol/kg** — me’yordan (285–295) ancha yuqori, **giperosmolyar holat**. Hujayradan tashqari suyuqlik gipertonik bo‘lib qolgani uchun suv hujayralardan, jumladan miya hujayralaridan chiqadi — hujayra suvsizlanishi hushning buzilishiga sabab bo‘ladi. Davolashda suyuqlik va insulin osmolyallikni **asta-sekin** pasaytirish uchun beriladi (keskin pasaysa, miya shishi xavfi bor)."},
+  {"title": "Masala 5", "text": "Dorixonada 500 ml 0,9 % li NaCl eritmasini tayyorlash kerak (eritma zichligini 1 g/ml deb oling, M(NaCl) = 58,5 g/mol).", "ask": "Necha gramm NaCl kerak? Eritmaning molyar konsentratsiyasi va osmolyarligi qancha?", "answer": "m(NaCl) = 0,009 · 500 = **4,5 g**. 1 l da 9 g bor: C = 9 / 58,5 ≈ **0,154 mol/l** (154 mmol/l). NaCl ikki ionga dissotsilanadi (i ≈ 2): osmolyarlik ≈ 2 · 154 = **308 mosmol/l** — plazmaga yaqin, eritma izotonik."},
+  {"title": "Masala 6", "text": "Gipokaliyemiya (K^+^ 2,8 mmol/l) bilan og‘rigan bemorga 40 mmol K^+^ yuborish rejalashtirildi. Bo‘limda 7,5 % li KCl eritmasi bor (1 ml da ≈ 1 mmol K^+^).", "ask": "Necha ml KCl kerak? Uni qanday yuborish to‘g‘ri? Yuborish kamida qancha vaqt davom etishi kerak (tezlik soatiga 10 mmol dan oshmasin)?", "answer": "40 mmol / 1 mmol/ml = **40 ml** 7,5 % li KCl. U bolyus holida yuborilmaydi — 1 l izotonik eritmada **suyultiriladi** va tomchilab yuboriladi. Tezlik soatiga 10 mmol bo‘lsa, yuborish kamida 40 / 10 = **4 soat** davom etadi. Davolash vaqtida EKG va qondagi K^+^ nazorat qilinadi."},
+  {"title": "Masala 7", "text": "NaOH eritmasini standartlash uchun 0,1260 g oksalat kislota digidrati (H~2~C~2~O~4~·2H~2~O, M~ekv~ = 63 g/mol) eritildi va fenolftalein ishtirokida titrlandi. 20,0 ml NaOH sarflandi.", "ask": "NaOH eritmasining normal konsentratsiyasini hisoblang.", "answer": "Oksalat kislota ekvivalentlari soni: n = 0,1260 / 63 = 0,002 mol-ekv. Ekvivalentlar qonuniga ko‘ra NaOH ham 0,002 mol-ekv reaksiyaga kirishgan: C~n~(NaOH) = 0,002 / 0,0200 = **0,1 mol-ekv/l (0,1 n.)**. Kuchsiz kislota titrlangani uchun fenolftalein to‘g‘ri tanlangan."},
+  {"title": "Masala 8", "text": "Nefrotik sindrom bilan og‘rigan bolada yuz, oyoqlar shishgan, qorinda suyuqlik bor. Siydikda ko‘p oqsil, qonda albumin 15 g/l (me’yor 35–50).", "ask": "Shishning fizik-kimyoviy mexanizmini tushuntiring. Albumin eritmasini quyish nima uchun vaqtincha yordam beradi?", "answer": "Albumin siydik bilan yo‘qolib, plazmada kamaygan — **onkotik bosim** pasaygan. Starling kuchlari muvozanati buziladi: kapillyarning venoz uchida suv qonga qaytmay, to‘qimalarda qoladi — **shish** va astsit rivojlanadi. Vena ichiga albumin quyilganda onkotik bosim vaqtincha oshib, suv to‘qimadan qonga tortiladi (odatda diuretik bilan birga beriladi). Ammo albumin siydik bilan yana yo‘qolgani uchun ta’siri qisqa; asosiy davo — buyrak kasalligining o‘zini davolash."}
+ ],
+ "cards": [
+  {"front": "Hujayra ichi va tashqarisi suyuqligi", "back": "Ichida ≈ 40 % (asosiy kation K^+^), tashqarisida ≈ 20 % tana massasi (asosiy kation Na^+^)"},
+  {"front": "Plazma osmolyalligi", "back": "2·[Na^+^] + glyukoza + mochevina; me’yor 285–295 mosmol/kg"},
+  {"front": "Toniklik", "back": "Membranadan o‘tmaydigan zarrachalar hosil qilgan samarali osmolyallik; hujayra hajmini belgilaydi"},
+  {"front": "Suyultirish qoidasi", "back": "C~1~·V~1~ = C~2~·V~2~"},
+  {"front": "Teskari titrlash", "back": "Ortiqcha reaktiv qo‘shib, qoldig‘ini titrlash; sekin reaksiya yoki uchuvchan moddalar uchun"},
+  {"front": "Proton nasosi", "back": "Parietal hujayradagi H^+^/K^+^-ATFaza; omeprazol uni bloklaydi"}
+ ]
+}
