@@ -3,72 +3,449 @@
  "no": 13,
  "title": "Yumaloq chuvalchanglar: askarida, ostritsa, filyariyalar, trixinella, egri boshli gijja, rishta, qil boshli gijja. Ovogelmintoskopiya usullari. Degelmintizatsiya va devastatsiya",
  "goals": [
-  {"type": "p", "text": "Talabaga yumaloq chuvalchanglar tipi va nematodalar sinfining umumiy tavsifini, geogelmintlar va biogelmintlarni, odamda parazitlik qiluvchi asosiy nematodalarning tuzilishi, hayot sikli, yuqish yo‘llari, patogen ta’siri, tashxisi va profilaktikasini hamda gelmint tuxumlarini aniqlash usullarini o‘rgatish."},
-  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
-  {"type": "list", "ordered": false, "items": [
-   "nematodalarning umumiy belgilarini, geogelmint va biogelmint tushunchalarini;",
-   "invaziya turlarini: autoinvaziya, reinvaziya, autoreinvaziya, faol va passiv invaziya;",
-   "askaridoz, enterobioz, trixotsefalyoz, ankilostomidozlar, strongiloidoz, trixinellyoz, drakunkulyoz va filyariozlarni;",
-   "ovogelmintoskopiya usullarini, degelmintizatsiya va devastatsiya tushunchalarini."
-  ]},
-  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
-  {"type": "list", "ordered": false, "items": [
-   "preparatda nematodalarni va ularning tuxumlarini aniqlash;",
-   "nativ surtma tayyorlash va perianal qirindi olish;",
-   "har bir nematodoz uchun yuqish yo‘li va profilaktika choralarini ko‘rsatish."
-  ]}
+  {
+   "type": "p",
+   "text": "Talabaga yumaloq chuvalchanglar tipi va nematodalar sinfining umumiy tavsifini, geogelmintlar va biogelmintlarni, odamda parazitlik qiluvchi asosiy nematodalarning tuzilishi, hayot sikli, yuqish yo‘llari, patogen ta’siri, tashxisi va profilaktikasini hamda gelmint tuxumlarini aniqlash usullarini o‘rgatish."
+  },
+  {
+   "type": "sub",
+   "text": "Mashg‘ulot oxirida talaba bilishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "nematodalarning umumiy belgilarini, geogelmint va biogelmint tushunchalarini;",
+    "invaziya turlarini: autoinvaziya, reinvaziya, autoreinvaziya, faol va passiv invaziya;",
+    "askaridoz, enterobioz, trixotsefalyoz, ankilostomidozlar, strongiloidoz, trixinellyoz, drakunkulyoz va filyariozlarni;",
+    "ovogelmintoskopiya usullarini, degelmintizatsiya va devastatsiya tushunchalarini."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "Talaba bajara olishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "preparatda nematodalarni va ularning tuxumlarini aniqlash;",
+    "nativ surtma tayyorlash va perianal qirindi olish;",
+    "har bir nematodoz uchun yuqish yo‘li va profilaktika choralarini ko‘rsatish."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. Yumaloq chuvalchanglar tipi. Nematodalar sinfi", "blocks": [
-   {"type": "p", "text": "**Yumaloq chuvalchanglar (Nemathelminthes)** — tanasi duksimon yoki ipsimon, ko‘ndalang kesimda yumaloq, bo‘g‘imlarga bo‘linmagan hayvonlar. Tanasi zich **kutikula** bilan qoplangan, ostida gipoderma va bo‘ylama muskullar joylashgan. Ularda **birlamchi tana bo‘shlig‘i (psevdotsel)** bo‘lib, u suyuqlik bilan to‘lgan va gidroskelet vazifasini bajaradi. Hazm sistemasi **orqa teshik** bilan tugaydi (old, o‘rta, orqa ichak). Qon aylanish va nafas olish sistemalari yo‘q. Nematodalar **ayrim jinsli**, jinsiy dimorfizm yaqqol: erkagi mayda, dum uchi qayrilgan."},
-   {"type": "p", "text": "Rivojlanish turiga ko‘ra gelmintlar ikki guruhga bo‘linadi. **Geogelmintlar** oraliq xo‘jayinsiz rivojlanadi — tuxumlari yoki lichinkalari **tuproqda** yetiladi (askarida, qil boshli gijja, egri boshli gijja). **Biogelmintlar** oraliq xo‘jayin ishtirokida rivojlanadi (trixinella, rishta, filyariyalar, barcha so‘rg‘ichlilar va tasmasimonlar). **Kontakt gelmintlar** (ostritsa, pakana gijja) esa tashqi muhitda deyarli yetilmasdan, iflos qo‘l va buyumlar orqali yuqadi."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "list", "ordered": false, "items": [
-    "**Autoinvaziya** — parazit tashqi muhitga chiqmasdan, shu organizm ichida qayta zararlantirishi (pakana gijja, strongiloidoz).",
-    "**Reinvaziya** — tashqaridan takroran zararlanish.",
-    "**Autoreinvaziya** — o‘z tuxumlarini qo‘l orqali qayta yutish (ostritsa).",
-    "**Faol invaziya** — lichinka teri orqali o‘zi kiradi (egri boshli gijja, shistosomalar); **passiv invaziya** — oziq, suv yoki tashuvchi orqali."
-   ]}]}
-  ]},
-  {"title": "2. Odam askaridasi va ostritsa", "blocks": [
-   {"type": "p", "text": "**Odam askaridasi** (*Ascaris lumbricoides*) — **askaridoz** qo‘zg‘atuvchisi, hamma joyda tarqalgan geogelmint. Urg‘ochisi 20–40 sm, erkagi 15–25 sm, og‘zi uchta lab bilan o‘ralgan. Ingichka ichakda yashaydi; urg‘ochisi sutkasiga 200 mingtagacha tuxum qo‘yadi. Najas bilan chiqqan tuxumlar odam uchun **darhol yuqumli emas** — ular tuproqda kislorod, namlik va issiqlik (≈ 24 °C) sharoitida 2–3 hafta davomida yetiladi va ichida invazion lichinka rivojlanadi."},
-   {"type": "img", "src": "data/img/bio/t13_askarida.webp", "w": 1139, "h": 830, "lang": true, "label": "Rasm 13.1", "caption": "Odam askaridasi — *Ascaris lumbricoides* ning hayot sikli: tuxumlarning tuproqda yetilishi, invazion tuxumni yutish, lichinkalar migratsiyasi (ichak → vena → jigar → yurak → o‘pka → alveola → bronxlar → traxeya → halqum → ichak) va ingichka ichakda voyaga yetish (P.X. Xolikov va boshq., 2022)."},
-   {"type": "p", "text": "Odam yetilgan tuxumlarni yuvilmagan sabzavot, meva, iflos qo‘l va suv orqali yutadi. Ichakda tuxumdan chiqqan lichinkalar ichak devoridan qonga o‘tib, **migratsiya** qiladi (Rasm 13.1) va o‘pkada eozinofil infiltratlar, yo‘tal, allergik reaksiyalar chaqiradi (**migratsiya davri**). Yutilgan lichinkalar ingichka ichakda 2–3 oyda voyaga yetadi (**ichak davri**): qorin og‘rig‘i, ozib ketish, ichak tutilishi, o‘t yo‘llarining berkilishi. Tashxis — najasda tuxumlar, migratsiya davrida balg‘amda lichinkalar va eozinofiliya."},
-   {"type": "p", "text": "**Ostritsa** (*Enterobius vermicularis*) — **enterobioz** qo‘zg‘atuvchisi, asosan bolalarda uchraydigan kontakt gelmint. Urg‘ochisi 9–12 mm, erkagi 2–5 mm, oq rangli (Rasm 13.2). Yo‘g‘on ichakning boshlang‘ich qismida yashaydi. Urg‘ochilari kechasi orqa teshikdan chiqib, perianal burmalarga tuxum qo‘yadi va kuchli **qichishish** chaqiradi. Tuxumlar 4–6 soatda invazion bo‘ladi; bola qashinganda ular tirnoq ostiga tushib, qayta yutiladi (**autoreinvaziya**). Tashxis — ertalab **perianal qirindi** yoki yopishqoq lenta usuli; najas tahlili samarasiz."},
-   {"type": "img", "src": "data/img/bio/t13_ostritsa.webp", "w": 777, "h": 682, "lang": true, "label": "Rasm 13.2", "caption": "Ostritsa — *Enterobius vermicularis*: urg‘ochisi (chapda) va erkagi (o‘ngda); og‘iz, vezikula, qizilo‘ngach bulbusi, o‘rta ichak, jinsiy tizim, qin va anal teshiklari ko‘rsatilgan (P.X. Xolikov va boshq., 2022)."}
-  ]},
-  {"title": "3. Qil boshli gijja, egri boshli gijja va ichak ugritsasi", "blocks": [
-   {"type": "p", "text": "**Qil boshli gijja** (*Trichocephalus trichiurus*) — **trixotsefalyoz** qo‘zg‘atuvchisi, geogelmint, uzunligi 3–5 sm. Tanasining old qismi qilsimon ingichka bo‘lib, u bilan ko‘richak va yo‘g‘on ichak shilliq qavatiga “tikilib” kiradi va qon bilan oziqlanadi (Rasm 13.3). Tuxumlari **limonsimon**, ikki qutbida tiqinchalari bor; tuproqda 3–4 haftada yetiladi. Kuchli invaziyada anemiya, kolit, bolalarda to‘g‘ri ichakning tushishi kuzatiladi."},
-   {"type": "img", "src": "data/img/bio/t13_qilbosh.webp", "w": 788, "h": 476, "lang": true, "label": "Rasm 13.3", "caption": "Qil boshli gijja — *Trichocephalus trichiurus*: erkagi, urg‘ochisi va tuxumi (chapda); ingichka bosh qismi bilan ichak shilliq qavatiga kirib turgan gijja (o‘ngda) (P.X. Xolikov va boshq., 2022)."},
-   {"type": "p", "text": "**Egri boshli gijja** (*Ancylostoma duodenale*) va **nekator** (*Necator americanus*) — **ankilostomidozlar** qo‘zg‘atuvchilari, issiq va nam iqlimli hududlarda (shaxtalar, sholipoyalar) tarqalgan. Uzunligi 8–13 mm, og‘iz kapsulasida kesuvchi tishlar yoki plastinkalar bor. Tuproqda tuxumdan rabditsimon, so‘ng **filyariyasimon** lichinka rivojlanadi; u odam terisi orqali **faol** kiradi (Rasm 13.4), qon bilan o‘pkaga boradi, halqumga ko‘tarilib yutiladi va o‘n ikki barmoq ichakda voyaga yetadi. Parazit qon so‘rib, ichak devorini jarohatlaydi — og‘ir **temir tanqisligi anemiyasi** rivojlanadi."},
-   {"type": "img", "src": "data/img/bio/t13_ankilostoma.webp", "w": 729, "h": 739, "lang": true, "label": "Rasm 13.4", "caption": "Egri boshli gijja — *Ancylostoma duodenale* ning rivojlanish sikli: tuxumlarning najas bilan chiqishi, tuproqda rabditsimon va filyariyasimon lichinkalar, teri orqali kirish, o‘pka orqali migratsiya va ingichka ichakda voyaga yetish (P.X. Xolikov va boshq., 2022)."},
-   {"type": "p", "text": "**Ichak ugritsasi** (*Strongyloides stercoralis*) — **strongiloidoz** qo‘zg‘atuvchisi; uzunligi ≈ 2 mm. Yuqishi ankilostomaga o‘xshash (filyariyasimon lichinkalar teri orqali). Xususiyati — ichakda **autoinvaziya** bo‘lishi, shuning uchun kasallik o‘nlab yillar davom etadi; immunitet susayganda (glyukokortikoidlar, OIV) og‘ir tarqalgan shakl rivojlanadi. Tashxis — najasda lichinkalar."}
-  ]},
-  {"title": "4. Biogelmintlar: trixinella, rishta, filyariyalar", "blocks": [
-   {"type": "p", "text": "**Trixinella** (*Trichinella spiralis*) — **trixinellyoz** qo‘zg‘atuvchisi; uzunligi 1,5–4 mm. Bitta hayvon avval asosiy, so‘ng oraliq xo‘jayin bo‘ladi. Odam lichinkali chala pishgan **cho‘chqa**, yovvoyi cho‘chqa, ayiq go‘shtini yeganda zararlanadi. Ingichka ichakda lichinkalar voyaga yetadi, urg‘ochilari tirik lichinka tug‘adi; lichinkalar qon orqali **ko‘ndalang-targ‘il mushaklarga** (diafragma, chaynov, qovurg‘alararo, ko‘z mushaklari) borib, kapsulaga o‘raladi va yillar davomida tirik saqlanadi. Belgilari: isitma, **yuz va qovoqlarning shishi**, kuchli mushak og‘rig‘i, yuqori **eozinofiliya**. Tashxis — serologik reaksiyalar, mushak biopsiyasi, qolgan go‘shtni **trixinelloskopiya** qilish."},
-   {"type": "p", "text": "**Rishta** (*Dracunculus medinensis*) — **drakunkulyoz** qo‘zg‘atuvchisi; urg‘ochisining uzunligi 120 sm gacha. Oraliq xo‘jayini — **siklop**. Odam lichinkali siklopli hovuz suvini ichganda zararlanadi; urg‘ochi rishta teri osti kletchatkasida (ko‘pincha oyoqlarda) joylashadi, teri ustida pufak hosil qiladi va oyoq suvga tekkanda lichinkalarini suvga chiqaradi. **O‘zbekistonda** rishta L.M. Isayev rahbarligida o‘tkazilgan tadbirlar natijasida 1932-yilda butunlay tugatilgan — bu **devastatsiyaning** klassik misoli."},
-   {"type": "table", "title": "Jadval 13.1. Odamda parazitlik qiluvchi asosiy filyariyalar", "head": ["Parazit (kasallik)", "Tashuvchi (oraliq xo‘jayin)", "Lokalizatsiyasi", "Asosiy belgilari"], "rows": [
-    ["*Wuchereria bancrofti*, *Brugia malayi* (limfatik filyariozlar)", "Chivinlar (*Culex, Anopheles, Aedes*)", "Limfa tomirlari va tugunlari", "Limfangit, limfostaz, **elefantiaz** (fil kasalligi)"],
-    ["*Loa loa* (loaoz)", "So‘nalar (*Chrysops*)", "Teri osti kletchatkasi, **ko‘z kon’yunktivasi**", "Kalabar shishlari, ko‘zda harakatlanuvchi gijja"],
-    ["*Onchocerca volvulus* (onxotserkoz)", "Mayda qora pashshalar (*Simulium*)", "Teri osti tugunlari, ko‘z", "Dermatit, **“daryo ko‘rligi”**"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Filyariozlar tashxisida mikrofilyariyalar qonda topiladi; *Wuchereria bancrofti* mikrofilyariyalari periferik qonda asosan **kechasi** paydo bo‘ladi, shuning uchun qon surtmasi tunda olinadi."}]}
-  ]},
-  {"title": "5. Ovogelmintoskopiya. Degelmintizatsiya va devastatsiya", "blocks": [
-   {"type": "p", "text": "**Ovogelmintoskopiya** — gelmint tuxumlari va lichinkalarini topish usullari. **Makroskopik** usulda najasdagi voyaga yetgan gijjalar va bo‘g‘imlar ko‘zda yoki lupada ko‘riladi. **Mikroskopik** usullar: **nativ surtma** (najas tomchisi glitserin yoki fiziologik eritma bilan), **Kato qalin surtmasi**, **cho‘ktirish** usullari (formalin-efir — og‘ir tuxumlar, masalan so‘rg‘ichlilar tuxumlari uchun), **qalqitish** usullari (Fyulleborn — to‘yingan NaCl eritmasida yengil tuxumlar yuzaga qalqib chiqadi). Ostritsa va qoramol solityori tuxumlari **perianal qirindi** yoki yopishqoq lenta bilan aniqlanadi (Rasm 13.5)."},
-   {"type": "img", "src": "data/img/bio/t13_tuxumlar.webp", "w": 551, "h": 391, "lang": true, "label": "Rasm 13.5", "caption": "Parazit chuvalchanglar tuxumlari: 1 — *Schistosoma haematobium*; 2 — *S. mansoni*; 3 — *Fasciola hepatica*; 4 — *S. japonicum*; 5 — *Paragonimus*; 6 — *Dicrocoelium lanceatum*; 7 — *Clonorchis sinensis*; 8 — *Opisthorchis felineus*; 9 — *Taeniarhynchus saginatus*; 10 — *Diphyllobothrium latum*; 11 — *Hymenolepis nana*; 12 — *H. diminuta*; 13 — *Trichocephalus trichiurus*; 14 — *Ascaris lumbricoides* (urug‘lanmagan, oqsil qobig‘isiz); 15 — *A. lumbricoides* (urug‘langan); 16 — *A. lumbricoides* (urug‘lanmagan, oqsil qobig‘i bilan); 17 — *Enterobius vermicularis* (P.X. Xolikov va boshq., 2022)."},
-   {"type": "p", "text": "**Degelmintizatsiya** — odam organizmini (davolash) va tashqi muhitni (najasni zararsizlantirish, tuproq va suvni muhofaza qilish) gelmintlardan va ularning tuxumlaridan tozalash choralari. **Devastatsiya** — atamani fanga akademik **K.I. Skryabin** kiritgan: ma’lum hududda gelmint turini barcha bosqichlarida (voyaga yetgan, lichinka, tuxum) biologik, kimyoviy va tashkiliy choralar majmuasi orqali **butunlay yo‘q qilish**. Uning maqsadi — kasallikni kamaytirish emas, balki qo‘zg‘atuvchini hududdan tugatish."}
-  ]}
+  {
+   "title": "1. Yumaloq chuvalchanglar tipi. Nematodalar sinfi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Yumaloq chuvalchanglar (Nemathelminthes)** — tanasi duksimon yoki ipsimon, ko‘ndalang kesimda yumaloq, bo‘g‘imlarga bo‘linmagan hayvonlar. Tanasi zich **kutikula** bilan qoplangan, ostida gipoderma va bo‘ylama muskullar joylashgan. Ularda **birlamchi tana bo‘shlig‘i (psevdotsel)** bo‘lib, u suyuqlik bilan to‘lgan va gidroskelet vazifasini bajaradi. Hazm sistemasi **orqa teshik** bilan tugaydi (old, o‘rta, orqa ichak). Qon aylanish va nafas olish sistemalari yo‘q. Nematodalar **ayrim jinsli**, jinsiy dimorfizm yaqqol: erkagi mayda, dum uchi qayrilgan."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 13.1. Nematodalarning tuzilish xususiyatlari",
+     "head": [
+      "Tizim",
+      "Tuzilishi"
+     ],
+     "rows": [
+      [
+       "Qoplag‘ich",
+       "Kutikula, gipoderma va bo‘ylama mushaklar — teri-muskul xaltasi; tullash (lichinkalar 4 marta)"
+      ],
+      [
+       "Tana bo‘shlig‘i",
+       "Birlamchi (psevdotsel), suyuqlik bilan to‘la — gidroskelet vazifasini bajaradi"
+      ],
+      [
+       "Hazm tizimi",
+       "Uch bo‘limli (oldingi, o‘rta, orqa ichak), **anal teshik bilan tugaydi**"
+      ],
+      [
+       "Ayirish tizimi",
+       "Teri bezlari yoki ikki yon kanal"
+      ],
+      [
+       "Nerv tizimi",
+       "Halqum atrofidagi nerv halqasi va undan chiquvchi bo‘ylama nerv ustunlari"
+      ],
+      [
+       "Jinsiy tizim",
+       "**Ayrim jinsli**, jinsiy dimorfizm: erkagi kichikroq, dum uchi qayrilgan"
+      ],
+      [
+       "Qon va nafas tizimi",
+       "Yo‘q; nafas tana yuzasi orqali yoki anaerob"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Rivojlanish turiga ko‘ra gelmintlar ikki guruhga bo‘linadi. **Geogelmintlar** oraliq xo‘jayinsiz rivojlanadi — tuxumlari yoki lichinkalari **tuproqda** yetiladi (askarida, qil boshli gijja, egri boshli gijja). **Biogelmintlar** oraliq xo‘jayin ishtirokida rivojlanadi (trixinella, rishta, filyariyalar, barcha so‘rg‘ichlilar va tasmasimonlar). **Kontakt gelmintlar** (ostritsa, pakana gijja) esa tashqi muhitda deyarli yetilmasdan, iflos qo‘l va buyumlar orqali yuqadi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 13.2. Gelmintlarning yuqish yo‘llari bo‘yicha guruhlari",
+     "head": [
+      "Guruh",
+      "Xususiyati",
+      "Misollar"
+     ],
+     "rows": [
+      [
+       "Geogelmintlar",
+       "Tuxum yoki lichinka tuproqda yetiladi; oraliq xo‘jayinsiz",
+       "Askarida, qil boshli gijja, egri boshli gijja, ichak ugritsasi"
+      ],
+      [
+       "Biogelmintlar",
+       "Oraliq xo‘jayin ishtirokida rivojlanadi",
+       "Trixinella, rishta, filyariyalar, so‘rg‘ichlilar, solityorlar"
+      ],
+      [
+       "Kontakt gelmintlar",
+       "Tuxumlari darhol yoki bir necha soatda invazion; odamdan odamga bevosita",
+       "Ostritsa, pakana gijja"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "list",
+       "ordered": false,
+       "items": [
+        "**Autoinvaziya** — parazit tashqi muhitga chiqmasdan, shu organizm ichida qayta zararlantirishi (pakana gijja, strongiloidoz).",
+        "**Reinvaziya** — tashqaridan takroran zararlanish.",
+        "**Autoreinvaziya** — o‘z tuxumlarini qo‘l orqali qayta yutish (ostritsa).",
+        "**Faol invaziya** — lichinka teri orqali o‘zi kiradi (egri boshli gijja, shistosomalar); **passiv invaziya** — oziq, suv yoki tashuvchi orqali."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. Odam askaridasi va ostritsa",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Odam askaridasi** (*Ascaris lumbricoides*) — **askaridoz** qo‘zg‘atuvchisi, hamma joyda tarqalgan geogelmint. Urg‘ochisi 20–40 sm, erkagi 15–25 sm, og‘zi uchta lab bilan o‘ralgan. Ingichka ichakda yashaydi; urg‘ochisi sutkasiga 200 mingtagacha tuxum qo‘yadi. Najas bilan chiqqan tuxumlar odam uchun **darhol yuqumli emas** — ular tuproqda kislorod, namlik va issiqlik (≈ 24 °C) sharoitida 2–3 hafta davomida yetiladi va ichida invazion lichinka rivojlanadi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_askaridalar.webp",
+     "label": "Rasm 13.1",
+     "caption": "Odam askaridasining voyaga yetgan erkak va urg‘ochi chuvalchanglari (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_askarida.webp",
+     "w": 1139,
+     "h": 830,
+     "lang": true,
+     "label": "Rasm 13.2",
+     "caption": "Odam askaridasi — *Ascaris lumbricoides* ning hayot sikli: tuxumlarning tuproqda yetilishi, invazion tuxumni yutish, lichinkalar migratsiyasi (ichak → vena → jigar → yurak → o‘pka → alveola → bronxlar → traxeya → halqum → ichak) va ingichka ichakda voyaga yetish (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Odam yetilgan tuxumlarni yuvilmagan sabzavot, meva, iflos qo‘l va suv orqali yutadi. Ichakda tuxumdan chiqqan lichinkalar ichak devoridan qonga o‘tib, **migratsiya** qiladi (Rasm 13.2) va o‘pkada eozinofil infiltratlar, yo‘tal, allergik reaksiyalar chaqiradi (**migratsiya davri**). Yutilgan lichinkalar ingichka ichakda 2–3 oyda voyaga yetadi (**ichak davri**): qorin og‘rig‘i, ozib ketish, ichak tutilishi, o‘t yo‘llarining berkilishi. Tashxis — najasda tuxumlar, migratsiya davrida balg‘amda lichinkalar va eozinofiliya."
+    },
+    {
+     "type": "p",
+     "text": "Askaridozning **migratsion (ilk) bosqichida** lichinkalar o‘pka kapillyarlarini yorib alveolalarga chiqadi: yo‘tal, isitma, qonda **eozinofiliya** va rentgenda tez yo‘qoladigan “uchib yuruvchi” eozinofil infiltratlar (**Lyoffler sindromi**) kuzatiladi. **Ichak bosqichida** qorin og‘rig‘i, ko‘ngil aynishi, ozish, allergik reaksiyalar bo‘ladi. Asoratlari: askaridalar to‘plamidan **ichak tutilishi**, o‘t yo‘llari va me’da osti bezi yo‘liga kirib **mexanik sariqlik** va **pankreatit**, appenditsit. Tashxis: migratsion bosqichda — balg‘amda lichinkalar va serologiya (tuxumlar hali yo‘q!), ichak bosqichida — najasda tuxumlar."
+    },
+    {
+     "type": "p",
+     "text": "**Toksokaroz** — it askaridasi (*Toxocara canis*) lichinkalari bilan zararlanish. Odam itlar najasi bilan ifloslangan tuproqdagi tuxumlarni yutadi (ko‘pincha bolalar). Odamda lichinkalar voyaga yetmaydi, balki a’zolar bo‘ylab uzoq **ko‘chib yuradi** (“visseral larva migrans”): jigar kattalashishi, yo‘tal, yuqori eozinofiliya; lichinka ko‘zga tushsa, ko‘rish pasayadi (ko‘z toksokarozi). Najasda tuxum topilmaydi — tashxis serologik."
+    },
+    {
+     "type": "p",
+     "text": "**Ostritsa** (*Enterobius vermicularis*) — **enterobioz** qo‘zg‘atuvchisi, asosan bolalarda uchraydigan kontakt gelmint. Urg‘ochisi 9–12 mm, erkagi 2–5 mm, oq rangli (Rasm 13.3). Yo‘g‘on ichakning boshlang‘ich qismida yashaydi. Urg‘ochilari kechasi orqa teshikdan chiqib, perianal burmalarga tuxum qo‘yadi va kuchli **qichishish** chaqiradi. Tuxumlar 4–6 soatda invazion bo‘ladi; bola qashinganda ular tirnoq ostiga tushib, qayta yutiladi (**autoreinvaziya**). Tashxis — ertalab **perianal qirindi** yoki yopishqoq lenta usuli; najas tahlili samarasiz."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_ostritsa.webp",
+     "w": 777,
+     "h": 682,
+     "lang": true,
+     "label": "Rasm 13.3",
+     "caption": "Ostritsa — *Enterobius vermicularis*: urg‘ochisi (chapda) va erkagi (o‘ngda); og‘iz, vezikula, qizilo‘ngach bulbusi, o‘rta ichak, jinsiy tizim, qin va anal teshiklari ko‘rsatilgan (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Ostritsa urg‘ochisi kechasi anal teshikdan chiqib, perianal burmalarga 10–15 mingtagacha tuxum qo‘yadi va qichishish chaqiradi; tuxumlar 4–6 soatda invazion bo‘ladi. Bola qashiganda tuxumlar tirnoq ostiga tushadi va og‘izga kiradi (**autoreinvaziya**), choyshab, o‘yinchoqlar orqali boshqalarga yuqadi. Shu sababli enterobiozda **barcha oila a’zolari bir vaqtda** davolanadi, davolash 2 haftadan keyin takrorlanadi, ich kiyim va choyshab har kuni yuvilib dazmollanadi, tirnoqlar kalta olinadi."
+    }
+   ]
+  },
+  {
+   "title": "3. Qil boshli gijja, egri boshli gijja va ichak ugritsasi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Qil boshli gijja** (*Trichocephalus trichiurus*) — **trixotsefalyoz** qo‘zg‘atuvchisi, geogelmint, uzunligi 3–5 sm. Tanasining old qismi qilsimon ingichka bo‘lib, u bilan ko‘richak va yo‘g‘on ichak shilliq qavatiga “tikilib” kiradi va qon bilan oziqlanadi (Rasm 13.4). Tuxumlari **limonsimon**, ikki qutbida tiqinchalari bor; tuproqda 3–4 haftada yetiladi. Kuchli invaziyada anemiya, kolit, bolalarda to‘g‘ri ichakning tushishi kuzatiladi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_qilbosh.webp",
+     "w": 788,
+     "h": 476,
+     "lang": true,
+     "label": "Rasm 13.4",
+     "caption": "Qil boshli gijja — *Trichocephalus trichiurus*: erkagi, urg‘ochisi va tuxumi (chapda); ingichka bosh qismi bilan ichak shilliq qavatiga kirib turgan gijja (o‘ngda) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Egri boshli gijja** (*Ancylostoma duodenale*) va **nekator** (*Necator americanus*) — **ankilostomidozlar** qo‘zg‘atuvchilari, issiq va nam iqlimli hududlarda (shaxtalar, sholipoyalar) tarqalgan. Uzunligi 8–13 mm, og‘iz kapsulasida kesuvchi tishlar yoki plastinkalar bor. Tuproqda tuxumdan rabditsimon, so‘ng **filyariyasimon** lichinka rivojlanadi; u odam terisi orqali **faol** kiradi (Rasm 13.5), qon bilan o‘pkaga boradi, halqumga ko‘tarilib yutiladi va o‘n ikki barmoq ichakda voyaga yetadi. Parazit qon so‘rib, ichak devorini jarohatlaydi — og‘ir **temir tanqisligi anemiyasi** rivojlanadi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_ankilostoma.webp",
+     "w": 729,
+     "h": 739,
+     "lang": true,
+     "label": "Rasm 13.5",
+     "caption": "Egri boshli gijja — *Ancylostoma duodenale* ning rivojlanish sikli: tuxumlarning najas bilan chiqishi, tuproqda rabditsimon va filyariyasimon lichinkalar, teri orqali kirish, o‘pka orqali migratsiya va ingichka ichakda voyaga yetish (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Egri boshli gijjalar og‘iz kapsulasidagi tishlar bilan ichak shilliq qavatiga yopishib, qon so‘radi va antikoagulyant ajratadi; bitta *A. duodenale* sutkasiga ≈ 0,15–0,25 ml qon yo‘qotishga sabab bo‘ladi. Shuning uchun ko‘p gijjali bemorlarda og‘ir **temir tanqis anemiya** rivojlanadi (bolalarda o‘sish va aqliy rivojlanish sekinlashadi). Lichinkalar teriga kirgan joyda qichimali toshma — “yer qichimasi” paydo bo‘ladi. Profilaktika: oyoq kiyimida yurish, najasni zararsizlantirish."
+    },
+    {
+     "type": "p",
+     "text": "**Ichak ugritsasi** (*Strongyloides stercoralis*) — **strongiloidoz** qo‘zg‘atuvchisi; uzunligi ≈ 2 mm. Yuqishi ankilostomaga o‘xshash (filyariyasimon lichinkalar teri orqali). Xususiyati — ichakda **autoinvaziya** bo‘lishi, shuning uchun kasallik o‘nlab yillar davom etadi; immunitet susayganda (glyukokortikoidlar, OIV) og‘ir tarqalgan shakl rivojlanadi. Tashxis — najasda lichinkalar."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Strongiloidozda autoinvaziya tufayli kasallik o‘nlab yillar saqlanadi. Immuniteti pasaygan bemorlarda (glyukokortikoidlar bilan davolanish, OIV, o‘smalar, transplantatsiya) lichinkalar keskin ko‘payib, butun organizmga tarqaladi — **giperinvaziya sindromi** (ko‘pincha o‘lim bilan tugaydi). Shuning uchun endemik hududdan kelgan bemorga glyukokortikoid buyurishdan oldin strongiloidozga tekshirish tavsiya etiladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Biogelmintlar: trixinella, rishta, filyariyalar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Trixinella** (*Trichinella spiralis*) — **trixinellyoz** qo‘zg‘atuvchisi; uzunligi 1,5–4 mm. Bitta hayvon avval asosiy, so‘ng oraliq xo‘jayin bo‘ladi. Odam lichinkali chala pishgan **cho‘chqa**, yovvoyi cho‘chqa, ayiq go‘shtini yeganda zararlanadi. Ingichka ichakda lichinkalar voyaga yetadi, urg‘ochilari tirik lichinka tug‘adi; lichinkalar qon orqali **ko‘ndalang-targ‘il mushaklarga** (diafragma, chaynov, qovurg‘alararo, ko‘z mushaklari) borib, kapsulaga o‘raladi va yillar davomida tirik saqlanadi. Belgilari: isitma, **yuz va qovoqlarning shishi**, kuchli mushak og‘rig‘i, yuqori **eozinofiliya**. Tashxis — serologik reaksiyalar, mushak biopsiyasi, qolgan go‘shtni **trixinelloskopiya** qilish."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_trixinella.webp",
+     "label": "Rasm 13.6",
+     "caption": "Trixinella lichinkalarining ko‘ndalang-targ‘il mushak tolalari orasida spiral o‘ralib kapsulalanishi (trixinelloskopiya) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Trixinellyoz belgilari zararlanishdan 1–4 hafta o‘tib paydo bo‘ladi: yuqori isitma, **yuz va qovoqlarning shishi**, mushaklarda (ayniqsa chaynov, ko‘z, diafragma, boldir mushaklari) kuchli og‘riq, qonda yuqori **eozinofiliya**; og‘ir hollarda miokardit va pnevmoniya. Tashxis: epidemiologik anamnez (bir go‘shtni yeganlarning guruhli kasallanishi), serologik testlar, mushak biopsiyasi; qolgan go‘shtni **trixinelloskopiya** qilish. Profilaktika: cho‘chqa va yovvoyi hayvonlar go‘shtini veterinariya nazoratidan o‘tkazish va yaxshi pishirish (tuzlash va dudlash lichinkalarni o‘ldirmaydi)."
+    },
+    {
+     "type": "p",
+     "text": "**Rishta** (*Dracunculus medinensis*) — **drakunkulyoz** qo‘zg‘atuvchisi; urg‘ochisining uzunligi 120 sm gacha. Oraliq xo‘jayini — **siklop**. Odam lichinkali siklopli hovuz suvini ichganda zararlanadi; urg‘ochi rishta teri osti kletchatkasida (ko‘pincha oyoqlarda) joylashadi, teri ustida pufak hosil qiladi va oyoq suvga tekkanda lichinkalarini suvga chiqaradi. **O‘zbekistonda** rishta L.M. Isayev rahbarligida o‘tkazilgan tadbirlar natijasida 1932-yilda butunlay tugatilgan — bu **devastatsiyaning** klassik misoli."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_rishta.webp",
+     "label": "Rasm 13.7",
+     "caption": "Rishta (*Dracunculus medinensis*) urg‘ochisining oyoq terisidagi yaradan chiqishi (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Rishta o‘tmishda O‘rta Osiyoda, ayniqsa **Buxoroda** keng tarqalgan; L.M. Isayev rahbarligida hovuzlarni quritish va suv ta’minotini yaxshilash natijasida 1932-yilga kelib bu yerda butunlay **yo‘q qilingan** — devastatsiyaning klassik misoli. Hozir global eradikatsiya dasturi tufayli dunyoda yiliga atigi bir necha o‘nta holat qayd etiladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 13.3. Odamda parazitlik qiluvchi asosiy filyariyalar",
+     "head": [
+      "Parazit (kasallik)",
+      "Tashuvchi (oraliq xo‘jayin)",
+      "Lokalizatsiyasi",
+      "Asosiy belgilari"
+     ],
+     "rows": [
+      [
+       "*Wuchereria bancrofti*, *Brugia malayi* (limfatik filyariozlar)",
+       "Chivinlar (*Culex, Anopheles, Aedes*)",
+       "Limfa tomirlari va tugunlari",
+       "Limfangit, limfostaz, **elefantiaz** (fil kasalligi)"
+      ],
+      [
+       "*Loa loa* (loaoz)",
+       "So‘nalar (*Chrysops*)",
+       "Teri osti kletchatkasi, **ko‘z kon’yunktivasi**",
+       "Kalabar shishlari, ko‘zda harakatlanuvchi gijja"
+      ],
+      [
+       "*Onchocerca volvulus* (onxotserkoz)",
+       "Mayda qora pashshalar (*Simulium*)",
+       "Teri osti tugunlari, ko‘z",
+       "Dermatit, **“daryo ko‘rligi”**"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Filyariozlar tashxisida mikrofilyariyalar qonda topiladi; *Wuchereria bancrofti* mikrofilyariyalari periferik qonda asosan **kechasi** paydo bo‘ladi, shuning uchun qon surtmasi tunda olinadi."
+      }
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_loa.webp",
+     "label": "Rasm 13.8",
+     "caption": "Ko‘z kon’yunktivasi ostida harakatlanayotgan *Loa loa* filyariyasi (strelka bilan ko‘rsatilgan) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Dirofilyarioz** — O‘zbekistonda ham uchraydigan filyarioz: asosiy xo‘jayinlari it va mushuk, tashuvchilari — chivinlar (*Culex*, *Aedes*, *Anopheles*). Odamda lichinka voyaga yetmaydi va teri ostida, ko‘pincha ko‘z atrofida harakatlanuvchi tugun hosil qiladi; tashxis va davolash — tugunni jarrohlik yo‘li bilan olib tashlash. **Onxotserkoz** (“daryo ko‘rligi”, *Onchocerca volvulus*) — Afrikada mosh pashshalari orqali yuqadi va ko‘rlikning asosiy infeksion sabablaridan biri."
+    }
+   ]
+  },
+  {
+   "title": "5. Ovogelmintoskopiya. Degelmintizatsiya va devastatsiya",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Ovogelmintoskopiya** — gelmint tuxumlari va lichinkalarini topish usullari. **Makroskopik** usulda najasdagi voyaga yetgan gijjalar va bo‘g‘imlar ko‘zda yoki lupada ko‘riladi. **Mikroskopik** usullar: **nativ surtma** (najas tomchisi glitserin yoki fiziologik eritma bilan), **Kato qalin surtmasi**, **cho‘ktirish** usullari (formalin-efir — og‘ir tuxumlar, masalan so‘rg‘ichlilar tuxumlari uchun), **qalqitish** usullari (Fyulleborn — to‘yingan NaCl eritmasida yengil tuxumlar yuzaga qalqib chiqadi). Ostritsa va qoramol solityori tuxumlari **perianal qirindi** yoki yopishqoq lenta bilan aniqlanadi (Rasm 13.9)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 13.4. Ovogelmintoskopiya va larvoskopiya usullari",
+     "head": [
+      "Usul",
+      "Mohiyati",
+      "Nimani aniqlash uchun"
+     ],
+     "rows": [
+      [
+       "Nativ surtma",
+       "Najas glitserin yoki fiziologik eritmada ezilib ko‘riladi; tez, ammo sezgirligi past",
+       "Ko‘p tuxumlar, sodda hayvonlarning vegetativ shakllari"
+      ],
+      [
+       "Kato qalin surtmasi",
+       "Glitserin va malaxit yashili shimdirilgan sellofan ostida qalin surtma — tiniqlashadi",
+       "Askarida, qil boshli gijja, so‘rg‘ichlilar tuxumlari"
+      ],
+      [
+       "Qalqitish (flotatsiya)",
+       "Zichligi katta eritmada (NaCl, NaNO~3~) yengil tuxumlar yuzaga qalqib chiqadi (Fyulleborn, Kalantaryan)",
+       "Nematodalar va pakana gijja tuxumlari"
+      ],
+      [
+       "Cho‘ktirish (sedimentatsiya)",
+       "Og‘ir tuxumlar cho‘kmaga tushadi (formalin-efir usuli)",
+       "So‘rg‘ichlilar va keng lentasimon chuvalchang tuxumlari"
+      ],
+      [
+       "Perianal qirindi, yopishqoq lenta",
+       "Ertalab perianal burmalardan material olinadi",
+       "Ostritsa, qoramol solityori tuxumlari"
+      ],
+      [
+       "Berman larvoskopiyasi",
+       "Iliq suvga qo‘yilgan najasdan lichinkalar suvga chiqib, cho‘kadi",
+       "Ichak ugritsasi lichinkalari"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Jadval 13.5. Asosiy gelmint tuxumlarini farqlash",
+     "head": [
+      "Tuxum",
+      "O‘lchami",
+      "Asosiy belgilari"
+     ],
+     "rows": [
+      [
+       "Askarida (urug‘langan)",
+       "50–70 × 40–50 mkm",
+       "Oval, qalin qobiqli, tashqi qavati g‘adir-budur (oqsil), sariq-jigarrang"
+      ],
+      [
+       "Qil boshli gijja",
+       "50–54 × 22–23 mkm",
+       "Bochkasimon, ikki qutbida rangsiz “tiqin”lar"
+      ],
+      [
+       "Ostritsa",
+       "50–60 × 20–30 mkm",
+       "Rangsiz, assimetrik — bir tomoni yassi, ichida lichinka"
+      ],
+      [
+       "Egri boshli gijja",
+       "56–75 × 36–40 mkm",
+       "Oval, yupqa rangsiz qobiq, ichida 4–8 blastomer"
+      ],
+      [
+       "Solityorlar (onkosfera)",
+       "31–40 mkm",
+       "Yumaloq, radial chiziqli qalin qobiq, ichida olti ilmoqli onkosfera"
+      ],
+      [
+       "Pakana gijja",
+       "40–50 mkm",
+       "Rangsiz, ikki qobiqli, qutblaridan iplar chiqadi"
+      ],
+      [
+       "Mushuk so‘rg‘ichi",
+       "26–30 × 10–15 mkm",
+       "Juda mayda, sarg‘ish, bir qutbida qopqoqcha"
+      ],
+      [
+       "Jigar qurti",
+       "130–145 × 70–90 mkm",
+       "Eng yirik, sariq-jigarrang, qopqoqchali"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_tuxumlar.webp",
+     "w": 551,
+     "h": 391,
+     "lang": true,
+     "label": "Rasm 13.9",
+     "caption": "Parazit chuvalchanglar tuxumlari: 1 — *Schistosoma haematobium*; 2 — *S. mansoni*; 3 — *Fasciola hepatica*; 4 — *S. japonicum*; 5 — *Paragonimus*; 6 — *Dicrocoelium lanceatum*; 7 — *Clonorchis sinensis*; 8 — *Opisthorchis felineus*; 9 — *Taeniarhynchus saginatus*; 10 — *Diphyllobothrium latum*; 11 — *Hymenolepis nana*; 12 — *H. diminuta*; 13 — *Trichocephalus trichiurus*; 14 — *Ascaris lumbricoides* (urug‘lanmagan, oqsil qobig‘isiz); 15 — *A. lumbricoides* (urug‘langan); 16 — *A. lumbricoides* (urug‘lanmagan, oqsil qobig‘i bilan); 17 — *Enterobius vermicularis* (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Degelmintizatsiya** — odam organizmini (davolash) va tashqi muhitni (najasni zararsizlantirish, tuproq va suvni muhofaza qilish) gelmintlardan va ularning tuxumlaridan tozalash choralari. **Devastatsiya** — atamani fanga akademik **K.I. Skryabin** kiritgan: ma’lum hududda gelmint turini barcha bosqichlarida (voyaga yetgan, lichinka, tuxum) biologik, kimyoviy va tashkiliy choralar majmuasi orqali **butunlay yo‘q qilish**. Uning maqsadi — kasallikni kamaytirish emas, balki qo‘zg‘atuvchini hududdan tugatish."
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Ko‘nikma: nativ surtma tayyorlash va perianal qirindi olish", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Buyum oynasiga bir tomchi 50 % li glitserin yoki fiziologik eritma tomizing.",
-    "Yog‘och tayoqcha bilan najasning turli joylaridan gugurt boshi kattaligida namuna olib, tomchida bir tekis ezing; ustini qoplovchi oyna bilan yoping.",
-    "Avval kichik, so‘ng katta obyektivda butun preparatni ko‘zdan kechiring; tuxumlarni shakli, o‘lchami, qobig‘i va qopqoqchasi bo‘yicha aniqlang.",
-    "Perianal qirindi ertalab, yuvinishdan va defekatsiyadan oldin olinadi: glitserinda namlangan tayoqcha yoki yopishqoq lenta bilan perianal burmalar sohasidan material olinadi.",
-    "Lentani buyum oynasiga yopishtirib mikroskopda ko‘ring; ostritsa tuxumlari assimetrik, bir tomoni yassi."
-   ]}
-  ]}
+  {
+   "title": "Ko‘nikma: nativ surtma tayyorlash va perianal qirindi olish",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Buyum oynasiga bir tomchi 50 % li glitserin yoki fiziologik eritma tomizing.",
+      "Yog‘och tayoqcha bilan najasning turli joylaridan gugurt boshi kattaligida namuna olib, tomchida bir tekis ezing; ustini qoplovchi oyna bilan yoping.",
+      "Avval kichik, so‘ng katta obyektivda butun preparatni ko‘zdan kechiring; tuxumlarni shakli, o‘lchami, qobig‘i va qopqoqchasi bo‘yicha aniqlang.",
+      "Perianal qirindi ertalab, yuvinishdan va defekatsiyadan oldin olinadi: glitserinda namlangan tayoqcha yoki yopishqoq lenta bilan perianal burmalar sohasidan material olinadi.",
+      "Lentani buyum oynasiga yopishtirib mikroskopda ko‘ring; ostritsa tuxumlari assimetrik, bir tomoni yassi."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "Yumaloq chuvalchanglar tipi va nematodalar sinfiga tavsif bering.",
@@ -81,45 +458,353 @@
   "Rishtaning rivojlanish sikli qanday? O‘zbekistonda rishta qanday tugatilgan?",
   "Filyariyalarning tashuvchilari, lokalizatsiyasi va patogen ahamiyatini ayting.",
   "Ovogelmintoskopiyaning makroskopik va mikroskopik usullarini tushuntiring.",
-  "Degelmintizatsiya va devastatsiya tushunchalariga ta’rif bering."
+  "Degelmintizatsiya va devastatsiya tushunchalariga ta’rif bering.",
+  "Nematodalarning tuzilish xususiyatlarini ayting.",
+  "Geo-, bio- va kontakt gelmintlar qanday farqlanadi?",
+  "Askaridozning migratsion va ichak bosqichlari belgilari va tashxisi qanday?",
+  "Toksokaroz nima va u qanday yuqadi?",
+  "Nima uchun enterobiozda butun oila davolanadi?",
+  "Ankilostomidozda nima uchun anemiya rivojlanadi?",
+  "Trixinellyozning belgilari, tashxisi va profilaktikasi qanday?",
+  "Ovogelmintoskopiyaning qanday usullari bor va ular nimani aniqlaydi?"
  ],
  "quiz": [
-  {"q": "Nematodalarning tana bo‘shlig‘i qanday?", "options": ["Birlamchi (psevdotsel)", "Ikkilamchi (tselom)", "Aralash (miksotsel)", "Parenxima bilan to‘lgan", "Tana bo‘shlig‘i yo‘q"], "answer": 0},
-  {"q": "Qaysi gijja geogelmint?", "options": ["Askarida", "Trixinella", "Rishta", "Vuxereriya", "Exinokokk"], "answer": 0},
-  {"q": "Askarida tuxumlari tuproqda qancha vaqtda yetiladi?", "options": ["2–3 hafta", "4–6 soat", "1–2 kun", "6 oy", "Yetilmaydi, darhol yuqumli"], "answer": 0},
-  {"q": "Askarida lichinkalari migratsiya davrida qaysi a’zoda infiltratlar hosil qiladi?", "options": ["O‘pkada", "Miyada", "Buyrakda", "Mushaklarda", "Terida"], "answer": 0},
-  {"q": "Enterobiozni tashxislashning asosiy usuli qaysi?", "options": ["Perianal qirindi", "Qon surtmasi", "Mushak biopsiyasi", "Balg‘am tahlili", "Siydik tahlili"], "answer": 0},
-  {"q": "Ostritsaga xos invaziya turi qaysi?", "options": ["Autoreinvaziya", "Faol invaziya teri orqali", "Transplatsentar", "Transmissiv", "Oraliq xo‘jayin orqali"], "answer": 0},
-  {"q": "Limonsimon, ikki qutbida tiqinchali tuxum qaysi gijjaga xos?", "options": ["Qil boshli gijja", "Askarida", "Ostritsa", "Egri boshli gijja", "Jigar qurti"], "answer": 0},
-  {"q": "Qaysi gijjaning lichinkasi odamga teri orqali faol kiradi?", "options": ["Egri boshli gijja", "Askarida", "Ostritsa", "Qil boshli gijja", "Trixinella"], "answer": 0},
-  {"q": "Ankilostomidozda qanday anemiya rivojlanadi?", "options": ["Temir tanqisligi anemiyasi", "B~12~-tanqislik anemiyasi", "Gemolitik anemiya", "Aplastik anemiya", "O‘roqsimon hujayrali anemiya"], "answer": 0},
-  {"q": "Trixinella lichinkalari odam organizmining qayerida kapsulaga o‘raladi?", "options": ["Ko‘ndalang-targ‘il mushaklarda", "Jigarda", "Ichak devorida", "Limfa tugunlarida", "O‘pkada"], "answer": 0},
-  {"q": "Rishtaning oraliq xo‘jayini kim?", "options": ["Siklop", "Chivin", "Mollyuska", "Baliq", "Cho‘chqa"], "answer": 0},
-  {"q": "Fil kasalligi (elefantiaz)ni qaysi parazit chaqiradi?", "options": ["Wuchereria bancrofti", "Loa loa", "Onchocerca volvulus", "Dracunculus medinensis", "Trichinella spiralis"], "answer": 0},
-  {"q": "Loa loa ning tashuvchisi kim?", "options": ["So‘nalar (Chrysops)", "Chivinlar (Culex)", "Simulium pashshalari", "Siklop", "Iskabtoparlar"], "answer": 0},
-  {"q": "Fyulleborn usuli qaysi guruh usullariga kiradi?", "options": ["Qalqitish usullari", "Cho‘ktirish usullari", "Nativ surtma", "Makroskopik usul", "Serologik usul"], "answer": 0},
-  {"q": "Devastatsiya atamasini fanga kim kiritgan?", "options": ["K.I. Skryabin", "L.M. Isayev", "Ye.N. Pavlovskiy", "R. Virxov", "L. Paster"], "answer": 0}
+  {
+   "q": "Nematodalarning tana bo‘shlig‘i qanday?",
+   "options": [
+    "Birlamchi (psevdotsel)",
+    "Ikkilamchi (tselom)",
+    "Aralash (miksotsel)",
+    "Parenxima bilan to‘lgan",
+    "Tana bo‘shlig‘i yo‘q"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi gijja geogelmint?",
+   "options": [
+    "Askarida",
+    "Trixinella",
+    "Rishta",
+    "Vuxereriya",
+    "Exinokokk"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Askarida tuxumlari tuproqda qancha vaqtda yetiladi?",
+   "options": [
+    "2–3 hafta",
+    "4–6 soat",
+    "1–2 kun",
+    "6 oy",
+    "Yetilmaydi, darhol yuqumli"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Askarida lichinkalari migratsiya davrida qaysi a’zoda infiltratlar hosil qiladi?",
+   "options": [
+    "O‘pkada",
+    "Miyada",
+    "Buyrakda",
+    "Mushaklarda",
+    "Terida"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Enterobiozni tashxislashning asosiy usuli qaysi?",
+   "options": [
+    "Perianal qirindi",
+    "Qon surtmasi",
+    "Mushak biopsiyasi",
+    "Balg‘am tahlili",
+    "Siydik tahlili"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Ostritsaga xos invaziya turi qaysi?",
+   "options": [
+    "Autoreinvaziya",
+    "Faol invaziya teri orqali",
+    "Transplatsentar",
+    "Transmissiv",
+    "Oraliq xo‘jayin orqali"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Limonsimon, ikki qutbida tiqinchali tuxum qaysi gijjaga xos?",
+   "options": [
+    "Qil boshli gijja",
+    "Askarida",
+    "Ostritsa",
+    "Egri boshli gijja",
+    "Jigar qurti"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi gijjaning lichinkasi odamga teri orqali faol kiradi?",
+   "options": [
+    "Egri boshli gijja",
+    "Askarida",
+    "Ostritsa",
+    "Qil boshli gijja",
+    "Trixinella"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Ankilostomidozda qanday anemiya rivojlanadi?",
+   "options": [
+    "Temir tanqisligi anemiyasi",
+    "B~12~-tanqislik anemiyasi",
+    "Gemolitik anemiya",
+    "Aplastik anemiya",
+    "O‘roqsimon hujayrali anemiya"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Trixinella lichinkalari odam organizmining qayerida kapsulaga o‘raladi?",
+   "options": [
+    "Ko‘ndalang-targ‘il mushaklarda",
+    "Jigarda",
+    "Ichak devorida",
+    "Limfa tugunlarida",
+    "O‘pkada"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Rishtaning oraliq xo‘jayini kim?",
+   "options": [
+    "Siklop",
+    "Chivin",
+    "Mollyuska",
+    "Baliq",
+    "Cho‘chqa"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Fil kasalligi (elefantiaz)ni qaysi parazit chaqiradi?",
+   "options": [
+    "Wuchereria bancrofti",
+    "Loa loa",
+    "Onchocerca volvulus",
+    "Dracunculus medinensis",
+    "Trichinella spiralis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Loa loa ning tashuvchisi kim?",
+   "options": [
+    "So‘nalar (Chrysops)",
+    "Chivinlar (Culex)",
+    "Simulium pashshalari",
+    "Siklop",
+    "Iskabtoparlar"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Fyulleborn usuli qaysi guruh usullariga kiradi?",
+   "options": [
+    "Qalqitish usullari",
+    "Cho‘ktirish usullari",
+    "Nativ surtma",
+    "Makroskopik usul",
+    "Serologik usul"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Devastatsiya atamasini fanga kim kiritgan?",
+   "options": [
+    "K.I. Skryabin",
+    "L.M. Isayev",
+    "Ye.N. Pavlovskiy",
+    "R. Virxov",
+    "L. Paster"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Askaridozning migratsion bosqichida o‘pkada nima kuzatiladi?",
+   "options": [
+    "Eozinofil “uchib yuruvchi” infiltratlar (Lyoffler sindromi)",
+    "Exinokokk pufaklari",
+    "Sil o‘choqlari",
+    "Kalsinatlar",
+    "O‘pka shishi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Toksokarozda odam qanday zararlanadi?",
+   "options": [
+    "It najasi bilan ifloslangan tuproqdagi tuxumlarni yutib",
+    "Chala pishgan cho‘chqa go‘shti orqali",
+    "Chivin chaqishi orqali",
+    "Baliq orqali",
+    "Teri orqali faol kirish bilan"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Strongiloidoz lichinkalarini aniqlash usuli qaysi?",
+   "options": [
+    "Berman larvoskopiyasi",
+    "Perianal qirindi",
+    "Fyolling probasi",
+    "Gatri testi",
+    "Trixinelloskopiya"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Bochkasimon, qutblarida rangsiz “tiqin”lari bo‘lgan tuxum qaysi gijjaga tegishli?",
+   "options": [
+    "Qil boshli gijja",
+    "Askarida",
+    "Ostritsa",
+    "Egri boshli gijja",
+    "Pakana gijja"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Buxoroda rishtani yo‘q qilish ishlariga kim rahbarlik qilgan?",
+   "options": [
+    "L.M. Isayev",
+    "K.I. Skryabin",
+    "E.N. Pavlovskiy",
+    "I.I. Mechnikov",
+    "R. Kox"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Masala 1", "text": "Bolalar bog‘chasida o‘yinchoqlar askarida tuxumlari bilan ifloslangan bo‘lishi mumkinligi aniqlandi.", "ask": "Bunday tuxumlar bolalarda askaridozga sabab bo‘la oladimi?", "answer": "Askarida — geogelmint: najas bilan endigina chiqqan tuxumlar invazion emas, ular faqat tuproqda kislorod, namlik va issiqlik sharoitida 2–3 hafta davomida yetilgandan keyin yuqumli bo‘ladi. Shuning uchun bemor najasidan bevosita o‘yinchoqqa tushgan yangi tuxumlar askaridoz chaqirmaydi. Ammo o‘yinchoqlar tuproq (qum maydoncha) bilan ifloslangan bo‘lsa, unda yetilgan invazion tuxumlar bo‘lishi mumkin — bu holda yuqish xavfi bor. Profilaktika: qum maydonchalarni almashtirish, o‘yinchoqlarni yuvish, bolalarni qo‘l yuvishga o‘rgatish."},
-  {"title": "Masala 2", "text": "Bolaning najasida mayda, harakatchan, oq rangli gijjalar kuzatildi. Ona bolaning kechalari bezovta uxlashi va orqa teshik atrofini qashishidan shikoyat qiladi.", "ask": "Qanday parazitar kasallikka gumon qilish mumkin? Gumonni tasdiqlash uchun nima qilish kerak?", "answer": "Enterobiozga (qo‘zg‘atuvchi — ostritsa, *Enterobius vermicularis*) gumon qilinadi: urg‘ochi ostritsalar kechasi perianal sohaga chiqib tuxum qo‘yadi va qichishish chaqiradi. Tasdiqlash uchun ertalab, yuvinishdan oldin perianal qirindi yoki yopishqoq lenta usuli bilan material olinib, mikroskopda assimetrik tuxumlar topiladi; tekshiruv 3 marta takrorlanadi. Autoreinvaziyani to‘xtatish uchun bola va oila a’zolari bir vaqtda davolanadi, tirnoqlar qisqa olinadi, ichki kiyim har kuni almashtiriladi va dazmollanadi."},
-  {"title": "Masala 3", "text": "Ovchi yovvoyi cho‘chqa go‘shtini qishloqdoshlariga tarqatdi. Bir necha kundan so‘ng go‘shtni iste’mol qilganlarning ko‘pchiligi yuzida shish, harorat ko‘tarilishi va mushaklarda kuchli og‘riq bilan poliklinikaga murojaat qilishdi.", "ask": "Shifokor qanday kasallikka gumon qilishi mumkin? Gumonni qanday tasdiqlash mumkin?", "answer": "Trixinellyoz (qo‘zg‘atuvchi — *Trichinella spiralis*). Yovvoyi cho‘chqa go‘shtidagi kapsulalangan lichinkalar ichakda voyaga yetadi, yangi lichinkalar qon orqali ko‘ndalang-targ‘il mushaklarga tarqaladi — bu isitma, yuz va qovoqlar shishi, mialgiyani chaqiradi. Bir manbadan guruh bo‘lib kasallanish xos. Tasdiqlash: qonda yuqori eozinofiliya, serologik reaksiyalar (IFA), mushak biopsiyasi; qolgan go‘shtni trixinelloskopiya qilish. Profilaktika — go‘shtni veterinariya nazoratidan o‘tkazish va yaxshi pishirish."}
+  {
+   "title": "Masala 1",
+   "text": "Bolalar bog‘chasida o‘yinchoqlar askarida tuxumlari bilan ifloslangan bo‘lishi mumkinligi aniqlandi.",
+   "ask": "Bunday tuxumlar bolalarda askaridozga sabab bo‘la oladimi?",
+   "answer": "Askarida — geogelmint: najas bilan endigina chiqqan tuxumlar invazion emas, ular faqat tuproqda kislorod, namlik va issiqlik sharoitida 2–3 hafta davomida yetilgandan keyin yuqumli bo‘ladi. Shuning uchun bemor najasidan bevosita o‘yinchoqqa tushgan yangi tuxumlar askaridoz chaqirmaydi. Ammo o‘yinchoqlar tuproq (qum maydoncha) bilan ifloslangan bo‘lsa, unda yetilgan invazion tuxumlar bo‘lishi mumkin — bu holda yuqish xavfi bor. Profilaktika: qum maydonchalarni almashtirish, o‘yinchoqlarni yuvish, bolalarni qo‘l yuvishga o‘rgatish."
+  },
+  {
+   "title": "Masala 2",
+   "text": "Bolaning najasida mayda, harakatchan, oq rangli gijjalar kuzatildi. Ona bolaning kechalari bezovta uxlashi va orqa teshik atrofini qashishidan shikoyat qiladi.",
+   "ask": "Qanday parazitar kasallikka gumon qilish mumkin? Gumonni tasdiqlash uchun nima qilish kerak?",
+   "answer": "Enterobiozga (qo‘zg‘atuvchi — ostritsa, *Enterobius vermicularis*) gumon qilinadi: urg‘ochi ostritsalar kechasi perianal sohaga chiqib tuxum qo‘yadi va qichishish chaqiradi. Tasdiqlash uchun ertalab, yuvinishdan oldin perianal qirindi yoki yopishqoq lenta usuli bilan material olinib, mikroskopda assimetrik tuxumlar topiladi; tekshiruv 3 marta takrorlanadi. Autoreinvaziyani to‘xtatish uchun bola va oila a’zolari bir vaqtda davolanadi, tirnoqlar qisqa olinadi, ichki kiyim har kuni almashtiriladi va dazmollanadi."
+  },
+  {
+   "title": "Masala 3",
+   "text": "Ovchi yovvoyi cho‘chqa go‘shtini qishloqdoshlariga tarqatdi. Bir necha kundan so‘ng go‘shtni iste’mol qilganlarning ko‘pchiligi yuzida shish, harorat ko‘tarilishi va mushaklarda kuchli og‘riq bilan poliklinikaga murojaat qilishdi.",
+   "ask": "Shifokor qanday kasallikka gumon qilishi mumkin? Gumonni qanday tasdiqlash mumkin?",
+   "answer": "Trixinellyoz (qo‘zg‘atuvchi — *Trichinella spiralis*). Yovvoyi cho‘chqa go‘shtidagi kapsulalangan lichinkalar ichakda voyaga yetadi, yangi lichinkalar qon orqali ko‘ndalang-targ‘il mushaklarga tarqaladi — bu isitma, yuz va qovoqlar shishi, mialgiyani chaqiradi. Bir manbadan guruh bo‘lib kasallanish xos. Tasdiqlash: qonda yuqori eozinofiliya, serologik reaksiyalar (IFA), mushak biopsiyasi; qolgan go‘shtni trixinelloskopiya qilish. Profilaktika — go‘shtni veterinariya nazoratidan o‘tkazish va yaxshi pishirish."
+  },
+  {
+   "title": "Masala 4",
+   "text": "7 yoshli bolada 2 haftadan beri quruq yo‘tal, subfebril harorat bor. Qonda eozinofillar 25 %. Rentgenda o‘pkada bir necha kunda joyini o‘zgartiradigan infiltratlar aniqlandi. Najas tahlilida gijja tuxumlari topilmadi. Bola qishloqda yashaydi, yuvilmagan sabzavot yeydi.",
+   "ask": "Qanday gelmintozga gumon qilish mumkin? Nima uchun najasda tuxumlar topilmadi?",
+   "answer": "Bu **askaridozning migratsion bosqichi** (Lyoffler sindromi): tuxumdan chiqqan lichinkalar ichak devoridan qonga o‘tib, jigar va o‘pka orqali ko‘chadi, o‘pkada eozinofil “uchib yuruvchi” infiltratlar va yo‘tal chaqiradi. Bu bosqichda ichakda hali voyaga yetgan urg‘ochi chuvalchanglar yo‘q, shuning uchun najasda **tuxumlar bo‘lmaydi** (ular ≈ 2–2,5 oydan keyin paydo bo‘ladi). Tashxis: balg‘amda lichinkalarni topish, serologik testlar; najas tahlili 2–3 oydan keyin takrorlanadi. Profilaktika — sabzavot-mevani yaxshi yuvish, qo‘l gigiyenasi."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Sholipoyada yalangoyoq ishlaydigan 30 yoshli dehqonda holsizlik, hansirash, terining oqarishi kuzatilmoqda. Qon tahlilida gemoglobin 70 g/l, temir tanqis anemiya belgilari va eozinofiliya. Bir necha oy oldin oyoq panjasida qichimali toshma bo‘lgan.",
+   "ask": "Qanday gelmintoz bo‘lishi mumkin? Anemiya mexanizmini tushuntiring.",
+   "answer": "**Ankilostomidoz** (*Ancylostoma duodenale* yoki *Necator americanus*). Nam issiq tuproqdagi filyariyasimon lichinkalar teri orqali faol kirgan (oyoqdagi qichimali toshma — “yer qichimasi”), so‘ng qon bilan o‘pkaga, keyin o‘n ikki barmoq ichakka borib voyaga yetgan. Gijjalar og‘iz kapsulasidagi tishlar bilan shilliq qavatga yopishib qon so‘radi va antikoagulyant ajratadi — doimiy qon yo‘qotish **temir tanqis anemiyaga** olib keladi. Tashxis — najasda yupqa qobiqli, ichida 4–8 blastomerli tuxumlar. Davolash: antigelmint dori va temir preparatlari; profilaktika — oyoq kiyimida ishlash."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Itni boqadigan 45 yoshli ayolning pastki qovog‘i terisi ostida bir necha kun ichida joyini o‘zgartiradigan, qichiydigan tugun paydo bo‘ldi. Yozda u ko‘p chivin chaqqanini aytadi.",
+   "ask": "Qanday parazitar kasallik haqida o‘ylash kerak? Tashxis va davolash qanday?",
+   "answer": "**Dirofilyarioz** (*Dirofilaria repens*). Asosiy xo‘jayinlar — it va mushuk; chivin zararlangan itdan mikrofilyariyalarni so‘rib, odamni chaqqanda invazion lichinkani yuqtiradi. Odam **tasodifiy (boshi berk) xo‘jayin**: lichinka voyaga yetmaydi, teri osti to‘qimasida, ko‘pincha ko‘z atrofida harakatlanuvchi tugun hosil qiladi. Tashxis va davolash — tugunni **jarrohlik yo‘li bilan olib tashlash** va chuvalchangni mikroskopda aniqlash. Profilaktika: itlarni tekshirish va davolash, chivinlardan himoyalanish."
+  }
  ],
  "cards": [
-  {"front": "Geogelmintlar", "back": "Oraliq xo‘jayinsiz, tuxumlari tuproqda yetiladi: askarida, qil boshli va egri boshli gijjalar"},
-  {"front": "Biogelmintlar", "back": "Oraliq xo‘jayin ishtirokida: trixinella, rishta, filyariyalar, trematodalar, sestodalar"},
-  {"front": "Ascaris lumbricoides", "back": "Askaridoz; tuxum tuproqda 2–3 hafta; lichinkalar o‘pka orqali migratsiya qiladi"},
-  {"front": "Enterobius vermicularis", "back": "Enterobioz; perianal qichishish; tashxis — perianal qirindi"},
-  {"front": "Trichocephalus trichiurus", "back": "Qil boshli gijja; ko‘richak; limonsimon tuxumlar"},
-  {"front": "Ancylostoma duodenale", "back": "Teri orqali faol kiradi; temir tanqisligi anemiyasi"},
-  {"front": "Trichinella spiralis", "back": "Cho‘chqa go‘shti; mushaklarda kapsula; shish, mialgiya, eozinofiliya"},
-  {"front": "Dracunculus medinensis", "back": "Rishta; oraliq xo‘jayin — siklop; O‘zbekistonda 1932-yilda tugatilgan"},
-  {"front": "Wuchereria bancrofti", "back": "Chivinlar tashiydi; limfa tizimi; elefantiaz"},
-  {"front": "Devastatsiya", "back": "K.I. Skryabin; hududda gelmint turini butunlay yo‘q qilish"}
+  {
+   "front": "Geogelmintlar",
+   "back": "Oraliq xo‘jayinsiz, tuxumlari tuproqda yetiladi: askarida, qil boshli va egri boshli gijjalar"
+  },
+  {
+   "front": "Biogelmintlar",
+   "back": "Oraliq xo‘jayin ishtirokida: trixinella, rishta, filyariyalar, trematodalar, sestodalar"
+  },
+  {
+   "front": "Ascaris lumbricoides",
+   "back": "Askaridoz; tuxum tuproqda 2–3 hafta; lichinkalar o‘pka orqali migratsiya qiladi"
+  },
+  {
+   "front": "Enterobius vermicularis",
+   "back": "Enterobioz; perianal qichishish; tashxis — perianal qirindi"
+  },
+  {
+   "front": "Trichocephalus trichiurus",
+   "back": "Qil boshli gijja; ko‘richak; limonsimon tuxumlar"
+  },
+  {
+   "front": "Ancylostoma duodenale",
+   "back": "Teri orqali faol kiradi; temir tanqisligi anemiyasi"
+  },
+  {
+   "front": "Trichinella spiralis",
+   "back": "Cho‘chqa go‘shti; mushaklarda kapsula; shish, mialgiya, eozinofiliya"
+  },
+  {
+   "front": "Dracunculus medinensis",
+   "back": "Rishta; oraliq xo‘jayin — siklop; O‘zbekistonda 1932-yilda tugatilgan"
+  },
+  {
+   "front": "Wuchereria bancrofti",
+   "back": "Chivinlar tashiydi; limfa tizimi; elefantiaz"
+  },
+  {
+   "front": "Devastatsiya",
+   "back": "K.I. Skryabin; hududda gelmint turini butunlay yo‘q qilish"
+  },
+  {
+   "front": "Lyoffler sindromi",
+   "back": "Askarida lichinkalari migratsiyasida o‘pkada eozinofil infiltratlar, yo‘tal, eozinofiliya"
+  },
+  {
+   "front": "Toksokaroz",
+   "back": "It askaridasi lichinkalarining odam a’zolarida ko‘chib yurishi (visseral larva migrans)"
+  },
+  {
+   "front": "Giperinvaziya sindromi",
+   "back": "Immunitet pasayganda strongiloid lichinkalarining keskin ko‘payishi"
+  },
+  {
+   "front": "Kato usuli",
+   "back": "Glitserin va malaxit yashili bilan tiniqlashtirilgan qalin najas surtmasi"
+  },
+  {
+   "front": "Dirofilyarioz",
+   "back": "It filyariyasi; odamda teri osti harakatlanuvchi tugun; chivinlar tashiydi"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Eslab qoling", "text": "Askarida tuxumi **tuproqda yetilmaguncha yuqumli emas**; ostritsa tuxumi esa bir necha soatda invazion bo‘ladi — shuning uchun enterobioz oilada tez tarqaladi."},
-  {"kind": "yodlash", "label": "Yodlash usuli", "text": "Teri orqali kiruvchilar: **“Ankilostoma, Strongiloid, Shistosoma — oyoq yalang yurganni topadi”**."},
-  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Yuz shishi + mialgiya + eozinofiliya + bir xil go‘sht yegan guruh = **trixinellyoz**; perianal qichishish bolada = **enterobioz**."}
+  {
+   "kind": "eslab",
+   "label": "Eslab qoling",
+   "text": "Askarida tuxumi **tuproqda yetilmaguncha yuqumli emas**; ostritsa tuxumi esa bir necha soatda invazion bo‘ladi — shuning uchun enterobioz oilada tez tarqaladi."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Yodlash usuli",
+   "text": "Teri orqali kiruvchilar: **“Ankilostoma, Strongiloid, Shistosoma — oyoq yalang yurganni topadi”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Klinik ahamiyati",
+   "text": "Yuz shishi + mialgiya + eozinofiliya + bir xil go‘sht yegan guruh = **trixinellyoz**; perianal qichishish bolada = **enterobioz**."
+  }
  ]
 }

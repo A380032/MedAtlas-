@@ -3,87 +3,518 @@
  "no": 14,
  "title": "Tibbiyotda ahamiyatga ega bo‘lgan o‘rgimchaksimonlar: qishloq kanasi, qichima qo‘zg‘atuvchisi, it va tayga kanalari. Tibbiyotda ahamiyatga ega bo‘lgan hasharotlar: bitlar, burgalar, chivinlar, pashshalar, iskabtoparlar. Zaharli hayvonlar",
  "goals": [
-  {"type": "p", "text": "Talabaga bo‘g‘imoyoqlilar tipining umumiy tavsifi va tasnifini, o‘rgimchaksimonlar va hasharotlar sinflarining tibbiy ahamiyatga ega vakillarini — ularning tuzilishi, rivojlanishi, tarqatadigan kasalliklari va ularga qarshi kurash choralarini hamda O‘zbekistonda uchraydigan zaharli hayvonlar va ular chaqqanda birinchi yordamni o‘rgatish."},
-  {"type": "sub", "text": "Mashg‘ulot oxirida talaba bilishi kerak:"},
-  {"type": "list", "ordered": false, "items": [
-   "bo‘g‘imoyoqlilarning umumiy belgilarini va tasnifini;",
-   "argas va iksod kanalari, qichima kanasining tuzilishi va tibbiy ahamiyatini;",
-   "bitlar, burgalar, qandalalar, suvaraklar, chivinlar, iskabtoparlar, pashshalar va so‘nalarning tibbiy ahamiyatini;",
-   "spetsifik va mexanik tashuvchilar, transovarial yuqish va tabiiy o‘choqlilik tushunchalarini;",
-   "zaharli hayvonlar tasnifini va chaqqanda birinchi yordamni."
-  ]},
-  {"type": "sub", "text": "Talaba bajara olishi kerak:"},
-  {"type": "list", "ordered": false, "items": [
-   "preparatda argas va iksod kanalarini, bitlarni, burgalarni farqlash;",
-   "bezgak chivinini oddiy chivindan barcha rivojlanish bosqichlarida ajratish;",
-   "zaharli hayvon chaqqanda birinchi yordam ko‘rsatish tartibini tushuntirish."
-  ]}
+  {
+   "type": "p",
+   "text": "Talabaga bo‘g‘imoyoqlilar tipining umumiy tavsifi va tasnifini, o‘rgimchaksimonlar va hasharotlar sinflarining tibbiy ahamiyatga ega vakillarini — ularning tuzilishi, rivojlanishi, tarqatadigan kasalliklari va ularga qarshi kurash choralarini hamda O‘zbekistonda uchraydigan zaharli hayvonlar va ular chaqqanda birinchi yordamni o‘rgatish."
+  },
+  {
+   "type": "sub",
+   "text": "Mashg‘ulot oxirida talaba bilishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "bo‘g‘imoyoqlilarning umumiy belgilarini va tasnifini;",
+    "argas va iksod kanalari, qichima kanasining tuzilishi va tibbiy ahamiyatini;",
+    "bitlar, burgalar, qandalalar, suvaraklar, chivinlar, iskabtoparlar, pashshalar va so‘nalarning tibbiy ahamiyatini;",
+    "spetsifik va mexanik tashuvchilar, transovarial yuqish va tabiiy o‘choqlilik tushunchalarini;",
+    "zaharli hayvonlar tasnifini va chaqqanda birinchi yordamni."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "Talaba bajara olishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "preparatda argas va iksod kanalarini, bitlarni, burgalarni farqlash;",
+    "bezgak chivinini oddiy chivindan barcha rivojlanish bosqichlarida ajratish;",
+    "zaharli hayvon chaqqanda birinchi yordam ko‘rsatish tartibini tushuntirish."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. Bo‘g‘imoyoqlilar tipi. O‘rgimchaksimonlar sinfi", "blocks": [
-   {"type": "p", "text": "**Bo‘g‘imoyoqlilar (Arthropoda)** — hayvonot olamining eng katta tipi. Umumiy belgilari: tanasi va oyoqlari **bo‘g‘imli**, tashqi skeleti **xitin** kutikuladan iborat, o‘sish **tullash** bilan kechadi, tana bo‘shlig‘i aralash (**miksotsel**), qon aylanish sistemasi ochiq. Tibbiyot uchun uchta kenja tip ahamiyatli: **jabra bilan nafas oluvchilar** (qisqichbaqasimonlar — siklop, krablar gelmintlarning oraliq xo‘jayinlari), **xelitseralilar** (o‘rgimchaksimonlar) va **traxeya bilan nafas oluvchilar** (hasharotlar)."},
-   {"type": "p", "text": "**O‘rgimchaksimonlar (Arachnida)** tanasi **bosh-ko‘krak** va **qorin** bo‘limlaridan iborat, 4 juft yuruvchi oyoq, og‘iz atrofida xelitseralar va pedipalpalar bor, mo‘ylovlari yo‘q. Tibbiyot uchun chayonlar, o‘rgimchaklar va ayniqsa **kanalar (Acari)** turkumi muhim. Kanalar **akariform** (qichima kanasi, temiratki kanasi — *Demodex*) va **parazitiform** (argas va iksod kanalari) guruhlariga bo‘linadi. Kanalar rivojlanishi: tuxum → **lichinka** (3 juft oyoqli) → **nimfa** → **imago** (4 juft oyoqli)."},
-   {"type": "table", "title": "Jadval 14.1. Argas va iksod kanalarining farqlari", "head": ["Belgi", "Argas kanalari (Argasidae)", "Iksod kanalari (Ixodidae)"], "rows": [
-    ["Orqa tomonidagi xitin qalqon", "Yo‘q (“yumshoq” kanalar)", "Bor (urg‘ochisida kichik, erkagida butun orqani qoplaydi)"],
-    ["Og‘iz apparati", "Tananing ostida, ustidan **ko‘rinmaydi**", "Tananing old uchida, ustidan **ko‘rinadi**"],
-    ["Yashash joyi", "Inlar, g‘orlar, paxsa uylar va molxonalarning yoriqlari", "Ochiq tabiat: o‘rmon, dasht, o‘tloqlar"],
-    ["Qon so‘rishi", "Tez (minutlar), ko‘p marta", "Uzoq (kunlar), har bir bosqichda bir marta"],
-    ["Umr davomiyligi", "20–25 yilgacha", "Bir necha yil"],
-    ["Asosiy vakillari va kasalliklar", "Qishloq kanasi (*Ornithodoros papillipes*) — kana qaytalama tifi", "Tayga kanasi (*Ixodes persulcatus*), it kanasi (*I. ricinus*) — kana ensefaliti, Layme borreliozi; *Hyalomma* — Qrim-Kongo gemorragik isitmasi"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t14_kanalar.webp", "w": 481, "h": 239, "lang": false, "label": "Rasm 14.1", "caption": "Iksod kanalari: a — iksod kanasining urg‘ochisi; b — it kanasining erkagi (orqasini to‘liq qoplagan xitin qalqon ko‘rinadi) (P.X. Xolikov va boshq., 2022)."},
-   {"type": "p", "text": "**Kanalarda transovarial va transfazal yuqish:** qo‘zg‘atuvchi kana organizmida ko‘payib, tuxum orqali keyingi avlodga (**transovarial**) va lichinkadan nimfaga, nimfadan imagoga (**transfazal**) o‘tadi. Shuning uchun kanalar nafaqat tashuvchi, balki qo‘zg‘atuvchining **tabiiy rezervuari** hisoblanadi. Akademik **Ye.N. Pavlovskiy** transmissiv kasalliklarning **tabiiy o‘choqliligi** haqidagi ta’limotni yaratgan: qo‘zg‘atuvchi odamdan mustaqil ravishda yovvoyi hayvonlar va tashuvchilar orasida aylanib yuradi."},
-   {"type": "p", "text": "**Qichima kanasi** (*Sarcoptes scabiei*) — **qichima (skabiyes)** qo‘zg‘atuvchisi; o‘lchami 0,3–0,4 mm. Urg‘ochisi terining shox qavatida yo‘llar qazib, tuxum qo‘yadi. Sevimli joylari — barmoqlar orasi, bilak, qorin, son ichki yuzasi. Belgisi — **kechasi kuchayadigan qichishish**. Yuqishi — bevosita teri kontakti, umumiy yotoq va kiyim orqali. Tashxis — teridagi yo‘lchadan olingan qirindida kanani topish."}
-  ]},
-  {"title": "2. Hasharotlar sinfi. Bitlar, burgalar, qandalalar, suvaraklar", "blocks": [
-   {"type": "p", "text": "**Hasharotlar (Insecta)** tanasi **bosh**, **ko‘krak** va **qorin**dan iborat; ko‘krakda 3 juft oyoq va ko‘pincha 2 juft qanot, boshida 1 juft mo‘ylov bor; traxeyalar bilan nafas oladi. Rivojlanishi ikki xil: **chala o‘zgarish** bilan (tuxum → lichinka → imago: bitlar, qandalalar, suvaraklar) va **to‘liq o‘zgarish** bilan (tuxum → lichinka → **g‘umbak** → imago: burgalar, ikki qanotlilar)."},
-   {"type": "p", "text": "**Bitlar (Anoplura)** — qanotsiz, doimiy ektoparazitlar; butun hayot davrida faqat odam qoni bilan oziqlanadi (Rasm 14.2). Odamda uch turi parazitlik qiladi: **bosh biti** (*Pediculus humanus capitis*), **kiyim biti** (*P. h. corporis*) va **qov biti** (*Phthirus pubis*). Bit kuniga 2–3 marta 3–10 daqiqadan qon so‘radi; urg‘ochisi kuniga 6–14 ta tuxum (sirka) qo‘yib, ularni sochga yoki kiyim tolasiga yopishtiradi; tuxumdan imagogacha rivojlanish 16–20 kun. Bitlanish — **pedikulyoz**."},
-   {"type": "img", "src": "data/img/bio/t14_bitlar.webp", "w": 1197, "h": 435, "lang": false, "label": "Rasm 14.2", "caption": "Bitlar: a — bosh bitining erkagi; b — bosh bitining urg‘ochisi; c — sochga yopishib olgan qov biti; d — qonga to‘ygan bit (P.X. Xolikov va boshq., 2022)."},
-   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Kiyim biti** epidemik **toshmali tif** (*Rickettsia prowazekii*) va epidemik **qaytalama tif** (*Borrelia recurrentis*) tashuvchisidir. Qo‘zg‘atuvchilar bit chaqqanda so‘lak bilan o‘tmaydi: toshmali tifda rikketsiyalar bit **najasi** bilan chiqib, qashilgan teriga ishqalanadi; qaytalama tifda borreliyalar bitning gemolimfasida bo‘lib, **bit ezilganda** teri jarohatlariga tushadi. Urushlar, ochlik va tozalik sharoitlari buzilganda bu kasalliklar epidemiya tusini oladi."}]},
-   {"type": "p", "text": "**Burgalar (Siphonaptera)** — qanotsiz, yon tomondan siqilgan, sakrovchi oyoqli hasharotlar; to‘liq o‘zgarish bilan rivojlanadi, lichinkalari pol yoriqlari va axlatda yashaydi. **Kalamush burgasi** (*Xenopsylla cheopis*) — **o‘lat** (*Yersinia pestis*) tashuvchisi: bakteriyalar burganing oshqozon oldi qismida “tiqin” hosil qilib, qon so‘rganda yaraga qaytariladi. **Odam burgasi** (*Pulex irritans*) ham o‘latni tashishi mumkin."},
-   {"type": "p", "text": "**Ko‘rpa qandalasi** (*Cimex lectularius*) kechasi qon so‘radi, chaqishi qichishish va allergiya chaqiradi. **Suvaraklar** (*Blattella germanica, Periplaneta americana*) — ichak infeksiyalari, gelmint tuxumlari va sodda hayvonlar sistalarining **mexanik tashuvchilari**; ularning xitin qoldiqlari va ajratmalari kuchli **allergen** bo‘lib, bolalarda bronxial astma va allergik reaksiyalarga sabab bo‘ladi."}
-  ]},
-  {"title": "3. Ikki qanotlilar: chivinlar, iskabtoparlar, pashshalar, so‘nalar", "blocks": [
-   {"type": "p", "text": "**Ikki qanotlilar (Diptera)** — bir juft parda qanotli, ikkinchi jufti tebranuvchi to‘g‘nog‘ichlarga aylangan hasharotlar; to‘liq o‘zgarish bilan rivojlanadi. Ikki kenja turkumga bo‘linadi: **uzun mo‘ylovlilar** (chivinlar, iskabtoparlar, mayda qora pashshalar — *Simulium*) va **kalta mo‘ylovlilar** (pashshalar, so‘nalar)."},
-   {"type": "table", "title": "Jadval 14.2. Bezgak chivini (Anopheles) va oddiy chivin (Culex) farqlari", "head": ["Bosqich", "*Anopheles*", "*Culex*"], "rows": [
-    ["Tuxum", "Yakka-yakka, yon tomonida havo suzgichlari bor", "Bir-biriga yopishib “qayiqcha” hosil qiladi"],
-    ["Lichinka", "Suv yuzasiga **parallel** joylashadi, nafas sifoni yo‘q", "Suv yuzasiga **burchak ostida** osilib turadi, uzun nafas sifoni bor"],
-    ["G‘umbak", "Nafas naychalari kalta, keng konussimon", "Nafas naychalari uzun, ingichka silindrsimon"],
-    ["Imago (o‘tirganda)", "Tanasi yuzaga **burchak** ostida, qorni ko‘tarilgan", "Tanasi yuzaga **parallel**"],
-    ["Urg‘ochisining paypaslagichlari", "Xartumi bilan teng uzunlikda", "Xartumidan ancha kalta"],
-    ["Tarqatadigan kasalliklar", "**Bezgak**, vuxererioz", "G‘arbiy Nil isitmasi, yapon ensefaliti, vuxererioz"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t14_chivinlar.webp", "w": 1053, "h": 740, "lang": true, "label": "Rasm 14.3", "caption": "Bezgak (*Anopheles*) va oddiy (*Culex, Aedes*) chivinlarning rivojlanish bosqichlaridagi farqlari: tuxum, lichinka, g‘umbak va imago; 1 — tuxumlar, 2 — lichinkaning nafas teshigi, 3 — nafas sifoni, 4 — g‘umbakning nafas naychalari (P.X. Xolikov va boshq., 2022)."},
-   {"type": "p", "text": "***Aedes*** chivinlari denge, sariq isitma va Zika viruslarini tashiydi. **Iskabtoparlar** (*Phlebotomus*) — mayda, tukli, issiq iqlimli hududlarda kemiruvchilar inlarida rivojlanadi; ular **leyshmaniozlar** (teri va visseral), shuningdek pappatachi isitmasi tashuvchilaridir. **Mayda qora pashshalar** (*Simulium*) onxotserkozni tashiydi."},
-   {"type": "p", "text": "**Uy pashshasi** (*Musca domestica*) — ichak infeksiyalari (dizenteriya, qorin tifi, vabo), gelmint tuxumlari va sodda hayvonlar sistalarining **mexanik tashuvchisi**: mikroblar oyoqlaridagi yopishqoq tukchalarda, xartumida va ichagida tashiladi va oziq-ovqatga qusuq hamda najas bilan tushadi. **Volfart pashshasi** (*Wohlfahrtia magnifica*) tirik lichinkalarini yaralar, quloq, burun va ko‘zga qo‘yadi — **obligat miaz** chaqiradi. **Kuzgi chaqqich pashsha** (*Stomoxys calcitrans*) va **so‘nalar** (*Tabanidae*) qon so‘rsa-da, kuydirgi va tulyaremiyaning faqat **mexanik** tashuvchilari. **Se-se pashshasi** (*Glossina*) Afrikada uyqu kasalligi (tripanosomoz) tashuvchisi."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "list", "ordered": false, "items": [
-    "**Spetsifik (biologik) tashuvchi** — qo‘zg‘atuvchi uning organizmida ko‘payadi yoki rivojlanish siklining bir qismini o‘taydi (Anopheles — bezgak, iskabtopar — leyshmaniya, bit — rikketsiya, kana — ensefalit virusi).",
-    "**Mexanik tashuvchi** — qo‘zg‘atuvchi tashuvchi organizmida o‘zgarishsiz qoladi va faqat tana yuzasida yoki xartumida ko‘chiriladi (uy pashshasi, suvarak, so‘na, kuzgi chaqqich pashsha)."
-   ]}]}
-  ]},
-  {"title": "4. Zaharli hayvonlar", "blocks": [
-   {"type": "p", "text": "**Zaharli hayvonlar** organizmida odam va hayvonlar uchun zaharli moddalar hosil qiladi yoki to‘playdi. **Birlamchi zaharlilar** zaharni maxsus bezlarda o‘zi ishlab chiqaradi; ular **faol qurollangan** (zahar bezi va chaqish, tishlash apparati bor: ilonlar, chayonlar, o‘rgimchaklar, arilar) yoki **passiv** (zahar bezlari bor, ammo yetkazish apparati yo‘q: baqalar, ba’zi baliqlar) bo‘ladi. **Ikkilamchi zaharlilar** zaharni oziq orqali to‘playdi (ba’zi baliqlar, mollyuskalar). Zaharlar ta’siriga ko‘ra **neyrotoksik** (nerv sistemasiga) va **gemotoksik** (qon va tomirlarga) bo‘ladi."},
-   {"type": "img", "src": "data/img/bio/t14_zaharli.webp", "w": 953, "h": 340, "lang": false, "label": "Rasm 14.4", "caption": "O‘zbekistonda uchraydigan zaharli o‘rgimchaksimonlar: a — chayon; b — qoraqurt (*Latrodectus tredecimguttatus*) (P.X. Xolikov va boshq., 2022)."},
-   {"type": "table", "title": "Jadval 14.3. O‘zbekistonda keng tarqalgan zaharli hayvonlar", "head": ["Hayvon", "Zahar turi", "Chaqqanda belgilari"], "rows": [
-    ["Qoraqurt (*Latrodectus tredecimguttatus*)", "Neyrotoksik", "Butun tanada kuchli mushak og‘riqlari, qorin mushaklarining taranglashishi, **qo‘rquv**, ko‘p terlash, qaltirash, holsizlik"],
-    ["Chayon (*Mesobuthus eupeus*)", "Asosan mahalliy, neyrotoksik", "Chaqqan joyda o‘tkir og‘riq, shish, bolalarda umumiy zaharlanish"],
-    ["Tarantul (*Lycosa*)", "Mahalliy", "Og‘riq, shish, qizarish; odatda xavfsiz"],
-    ["O‘rta Osiyo kobrasi — kapcha ilon (*Naja oxiana*)", "**Neyrotoksik**", "Mahalliy o‘zgarishlar kam; uvishish, ko‘z qovoqlarining tushishi, yutish va nafas olishning qiyinlashishi, falajlar"],
-    ["Ko‘lvor ilon — gyurza (*Macrovipera lebetina*), charx ilon (*Echis carinatus*), qalqontumshuq (*Gloydius halys*)", "**Gemotoksik**", "Chaqqan joyda kuchli og‘riq va tez kattalashuvchi shish, qon oqishi, qon quyilishlar, qon bosimining tushib ketishi"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Ilon chaqqanda birinchi yordam:** bemorni tinchlantirish va yotqizish; chaqilgan oyoq-qo‘lni shina bilan harakatsizlantirish; uzuk va bilaguzuklarni yechish; ko‘p suyuqlik ichirish; bemorni zudlik bilan shifoxonaga yetkazish — u yerda **ilonga qarshi zardob** yuboriladi. **Mumkin emas:** jgut qo‘yish, jarohatni kesish yoki kuydirish, spirtli ichimlik berish. Qoraqurt chaqqanda **qoraqurtga qarshi zardob** qo‘llaniladi."}]}
-  ]}
+  {
+   "title": "1. Bo‘g‘imoyoqlilar tipi. O‘rgimchaksimonlar sinfi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Bo‘g‘imoyoqlilar (Arthropoda)** — hayvonot olamining eng katta tipi. Umumiy belgilari: tanasi va oyoqlari **bo‘g‘imli**, tashqi skeleti **xitin** kutikuladan iborat, o‘sish **tullash** bilan kechadi, tana bo‘shlig‘i aralash (**miksotsel**), qon aylanish sistemasi ochiq. Tibbiyot uchun uchta kenja tip ahamiyatli: **jabra bilan nafas oluvchilar** (qisqichbaqasimonlar — siklop, krablar gelmintlarning oraliq xo‘jayinlari), **xelitseralilar** (o‘rgimchaksimonlar) va **traxeya bilan nafas oluvchilar** (hasharotlar)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.1. Tibbiyotda ahamiyatli bo‘g‘imoyoqlilar sinflari",
+     "head": [
+      "Sinf",
+      "Asosiy belgilari",
+      "Tibbiy ahamiyati"
+     ],
+     "rows": [
+      [
+       "Qisqichbaqasimonlar (Crustacea)",
+       "Ikki juft mo‘ylov, jabralar bilan nafas, asosan suvda yashaydi",
+       "Gelmintlarning oraliq xo‘jayinlari: siklop — rishta va keng lentasimon chuvalchang; krab va qisqichbaqalar — o‘pka so‘rg‘ichi"
+      ],
+      [
+       "O‘rgimchaksimonlar (Arachnida)",
+       "Bosh-ko‘krak va qorin, 4 juft oyoq, mo‘ylovsiz",
+       "Kanalar — parazitlar va tashuvchilar; chayon, qoraqurt — zaharli"
+      ],
+      [
+       "Hasharotlar (Insecta)",
+       "Bosh, ko‘krak, qorin, 3 juft oyoq, 1 juft mo‘ylov, ko‘pincha qanotli",
+       "Ektoparazitlar (bit, burga), transmissiv kasalliklar tashuvchilari, miaz qo‘zg‘atuvchilari"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**O‘rgimchaksimonlar (Arachnida)** tanasi **bosh-ko‘krak** va **qorin** bo‘limlaridan iborat, 4 juft yuruvchi oyoq, og‘iz atrofida xelitseralar va pedipalpalar bor, mo‘ylovlari yo‘q. Tibbiyot uchun chayonlar, o‘rgimchaklar va ayniqsa **kanalar (Acari)** turkumi muhim. Kanalar **akariform** (qichima kanasi, temiratki kanasi — *Demodex*) va **parazitiform** (argas va iksod kanalari) guruhlariga bo‘linadi. Kanalar rivojlanishi: tuxum → **lichinka** (3 juft oyoqli) → **nimfa** → **imago** (4 juft oyoqli)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.2. Argas va iksod kanalarining farqlari",
+     "head": [
+      "Belgi",
+      "Argas kanalari (Argasidae)",
+      "Iksod kanalari (Ixodidae)"
+     ],
+     "rows": [
+      [
+       "Orqa tomonidagi xitin qalqon",
+       "Yo‘q (“yumshoq” kanalar)",
+       "Bor (urg‘ochisida kichik, erkagida butun orqani qoplaydi)"
+      ],
+      [
+       "Og‘iz apparati",
+       "Tananing ostida, ustidan **ko‘rinmaydi**",
+       "Tananing old uchida, ustidan **ko‘rinadi**"
+      ],
+      [
+       "Yashash joyi",
+       "Inlar, g‘orlar, paxsa uylar va molxonalarning yoriqlari",
+       "Ochiq tabiat: o‘rmon, dasht, o‘tloqlar"
+      ],
+      [
+       "Qon so‘rishi",
+       "Tez (minutlar), ko‘p marta",
+       "Uzoq (kunlar), har bir bosqichda bir marta"
+      ],
+      [
+       "Umr davomiyligi",
+       "20–25 yilgacha",
+       "Bir necha yil"
+      ],
+      [
+       "Asosiy vakillari va kasalliklar",
+       "Qishloq kanasi (*Ornithodoros papillipes*) — kana qaytalama tifi",
+       "Tayga kanasi (*Ixodes persulcatus*), it kanasi (*I. ricinus*) — kana ensefaliti, Layme borreliozi; *Hyalomma* — Qrim-Kongo gemorragik isitmasi"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_kanalar.webp",
+     "w": 481,
+     "h": 239,
+     "lang": false,
+     "label": "Rasm 14.1",
+     "caption": "Iksod kanalari: a — iksod kanasining urg‘ochisi; b — it kanasining erkagi (orqasini to‘liq qoplagan xitin qalqon ko‘rinadi) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_iksod_davrlar.webp",
+     "label": "Rasm 14.2",
+     "caption": "It kanasi (*Ixodes ricinus*) ning rivojlanish davrlari va o‘lchamlari: lichinka (0,5 mm), nimfa (1,5 mm), erkagi (2,5–3,5 mm), urg‘ochisi qon so‘rgunga qadar (3,5–4,5 mm) va qon so‘rgandan keyin (10 mm gacha) (P.X. Xolikov va boshq., 2022).",
+     "lang": true
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_argas.webp",
+     "label": "Rasm 14.3",
+     "caption": "Argas kanasi (qishloq kanasi): a — orqa tomondan (xitin qalqon yo‘q, tanasi charmsimon); b — qorin tomondan (og‘iz apparati tananing ostida) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Kanalarda transovarial va transfazal yuqish:** qo‘zg‘atuvchi kana organizmida ko‘payib, tuxum orqali keyingi avlodga (**transovarial**) va lichinkadan nimfaga, nimfadan imagoga (**transfazal**) o‘tadi. Shuning uchun kanalar nafaqat tashuvchi, balki qo‘zg‘atuvchining **tabiiy rezervuari** hisoblanadi. Akademik **Ye.N. Pavlovskiy** transmissiv kasalliklarning **tabiiy o‘choqliligi** haqidagi ta’limotni yaratgan: qo‘zg‘atuvchi odamdan mustaqil ravishda yovvoyi hayvonlar va tashuvchilar orasida aylanib yuradi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.3. Kanalar orqali yuqadigan asosiy kasalliklar",
+     "head": [
+      "Kasallik",
+      "Qo‘zg‘atuvchi",
+      "Tashuvchi kana"
+     ],
+     "rows": [
+      [
+       "Kana ensefaliti (tayga va bahor-yoz ensefaliti)",
+       "Flavivirus",
+       "Tayga kanasi (*Ixodes persulcatus*), it kanasi (*I. ricinus*)"
+      ],
+      [
+       "Lyme borreliozi (iksod kanalari borreliozi)",
+       "*Borrelia burgdorferi*",
+       "*Ixodes* kanalari"
+      ],
+      [
+       "Qrim-Kongo gemorragik isitmasi",
+       "Nairovirus",
+       "*Hyalomma* kanalari (O‘zbekistonda ham tabiiy o‘choqlari bor)"
+      ],
+      [
+       "Kana qaytalama tifi",
+       "*Borrelia persica* va boshq.",
+       "Qishloq kanasi (*Ornithodoros papillipes*, argas kanalari) — O‘rta Osiyo"
+      ],
+      [
+       "Tulyaremiya, Ku-isitma",
+       "*Francisella tularensis*, *Coxiella burnetii*",
+       "Iksod kanalari (shuningdek boshqa yo‘llar)"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Kana yopishib olganda:** uni ezmasdan, pinset yoki ip halqasi bilan teriga yaqin joyidan ushlab, aylantirib tortib olish; joyini spirt yoki yod bilan artish; kanani probirkada laboratoriyaga topshirish. Barmoq bilan ezish, moy yoki benzin surtish mumkin emas — kana qusib, qo‘zg‘atuvchini ko‘proq yuboradi. Endemik hududda kana chaqqandan keyin shoshilinch profilaktika (immunoglobulin, antibiotik) o‘tkaziladi; oldini olish — emlash, yopiq kiyim, repellentlar, o‘zini va uy hayvonlarini tekshirish."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Qichima kanasi** (*Sarcoptes scabiei*) — **qichima (skabiyes)** qo‘zg‘atuvchisi; o‘lchami 0,3–0,4 mm. Urg‘ochisi terining shox qavatida yo‘llar qazib, tuxum qo‘yadi. Sevimli joylari — barmoqlar orasi, bilak, qorin, son ichki yuzasi. Belgisi — **kechasi kuchayadigan qichishish**. Yuqishi — bevosita teri kontakti, umumiy yotoq va kiyim orqali. Tashxis — teridagi yo‘lchadan olingan qirindida kanani topish."
+    },
+    {
+     "type": "p",
+     "text": "Qichima qo‘zg‘atuvchisi odamdan odamga asosan **bevosita uzoq teri kontakti** (bir to‘shakda uxlash, jinsiy aloqa) orqali, kamroq kiyim va choyshab orqali yuqadi; kana tanadan tashqarida 2–3 kun yashaydi. Davolash: barcha oila a’zolari va kontaktdagilar bir vaqtda akaritsid surtmalar (benzilbenzoat, permetrin) bilan davolanadi, ich kiyim va choyshab qaynatiladi va dazmollanadi. **Temirtki (demodeks)** — *Demodex folliculorum* soch follikulalari va yog‘ bezlarida yashaydi, immunitet pasayganda yuzda toshma va qovoq yallig‘lanishiga sabab bo‘ladi. **Uy changi kanalari** (*Dermatophagoides*) parazit emas, lekin ularning ajratmalari bronxial astma va allergik rinitning muhim sababidir."
+    }
+   ]
+  },
+  {
+   "title": "2. Hasharotlar sinfi. Bitlar, burgalar, qandalalar, suvaraklar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Hasharotlar (Insecta)** tanasi **bosh**, **ko‘krak** va **qorin**dan iborat; ko‘krakda 3 juft oyoq va ko‘pincha 2 juft qanot, boshida 1 juft mo‘ylov bor; traxeyalar bilan nafas oladi. Rivojlanishi ikki xil: **chala o‘zgarish** bilan (tuxum → lichinka → imago: bitlar, qandalalar, suvaraklar) va **to‘liq o‘zgarish** bilan (tuxum → lichinka → **g‘umbak** → imago: burgalar, ikki qanotlilar)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.4. Hasharotlarning rivojlanish tiplari",
+     "head": [
+      "Tip",
+      "Bosqichlar",
+      "Misollar"
+     ],
+     "rows": [
+      [
+       "Chala o‘zgarish (to‘liqsiz metamorfoz)",
+       "Tuxum → lichinka (nimfa) → imago; lichinka voyaga yetganga o‘xshaydi",
+       "Bitlar, qandalalar, suvaraklar"
+      ],
+      [
+       "To‘liq o‘zgarish (to‘liq metamorfoz)",
+       "Tuxum → lichinka → g‘umbak → imago; lichinka voyaga yetgandan keskin farq qiladi",
+       "Burgalar, chivinlar, iskabtoparlar, pashshalar"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Bitlar (Anoplura)** — qanotsiz, doimiy ektoparazitlar; butun hayot davrida faqat odam qoni bilan oziqlanadi (Rasm 14.4). Odamda uch turi parazitlik qiladi: **bosh biti** (*Pediculus humanus capitis*), **kiyim biti** (*P. h. corporis*) va **qov biti** (*Phthirus pubis*). Bit kuniga 2–3 marta 3–10 daqiqadan qon so‘radi; urg‘ochisi kuniga 6–14 ta tuxum (sirka) qo‘yib, ularni sochga yoki kiyim tolasiga yopishtiradi; tuxumdan imagogacha rivojlanish 16–20 kun. Bitlanish — **pedikulyoz**."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_bitlar.webp",
+     "w": 1197,
+     "h": 435,
+     "lang": false,
+     "label": "Rasm 14.4",
+     "caption": "Bitlar: a — bosh bitining erkagi; b — bosh bitining urg‘ochisi; c — sochga yopishib olgan qov biti; d — qonga to‘ygan bit (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Kiyim biti** epidemik **toshmali tif** (*Rickettsia prowazekii*) va epidemik **qaytalama tif** (*Borrelia recurrentis*) tashuvchisidir. Qo‘zg‘atuvchilar bit chaqqanda so‘lak bilan o‘tmaydi: toshmali tifda rikketsiyalar bit **najasi** bilan chiqib, qashilgan teriga ishqalanadi; qaytalama tifda borreliyalar bitning gemolimfasida bo‘lib, **bit ezilganda** teri jarohatlariga tushadi. Urushlar, ochlik va tozalik sharoitlari buzilganda bu kasalliklar epidemiya tusini oladi."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Pedikulyoz** (bitlash) — bitlar bilan zararlanish; bosh biti ko‘pincha bolalar jamoalarida tarqaladi. Bitlar urg‘ochisi kuniga 5–10 ta tuxum (**sirka**) qo‘yib, ularni maxsus yelim bilan sochga yopishtiradi. Davolash: pedikulitsid shampun yoki eritmalar (permetrin), 7–10 kundan keyin takroriy ishlov (sirkadan chiqqan lichinkalarga qarshi), sirkalarni zich taroq bilan tarash; kiyim biti uchun kiyim va choyshabni qaynatish, dazmollash yoki dezinseksiya kamerasida ishlov berish. Kontaktdagi barcha shaxslar tekshiriladi."
+    },
+    {
+     "type": "p",
+     "text": "**Burgalar (Siphonaptera)** — qanotsiz, yon tomondan siqilgan, sakrovchi oyoqli hasharotlar; to‘liq o‘zgarish bilan rivojlanadi, lichinkalari pol yoriqlari va axlatda yashaydi. **Kalamush burgasi** (*Xenopsylla cheopis*) — **o‘lat** (*Yersinia pestis*) tashuvchisi: bakteriyalar burganing oshqozon oldi qismida “tiqin” hosil qilib, qon so‘rganda yaraga qaytariladi. **Odam burgasi** (*Pulex irritans*) ham o‘latni tashishi mumkin."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_burga.webp",
+     "label": "Rasm 14.5",
+     "caption": "Burga: a — voyaga yetgan burga (yon tomondan siqilgan tana, sakrovchi orqa oyoqlar); b — to‘liq o‘zgarish bilan rivojlanish sikli: tuxum, lichinka, g‘umbak, imago (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**O‘latning burga orqali yuqish mexanizmi:** kemiruvchi qonini so‘rgan kalamush burgasi (*Xenopsylla cheopis*) oshqozon oldi bo‘limida o‘lat tayoqchalari ko‘payib, “tiqin” (**blok**) hosil qiladi. Bunday “bloklangan” burga och qolib, qayta-qayta qon so‘rishga urinadi va har gal so‘rilgan qonni bakteriyalar bilan birga yaraga qaytarib yuboradi. Kemiruvchilar qirilganda burgalar odamga o‘tadi — o‘lat epidemiyasi shu tarzda boshlanadi."
+    },
+    {
+     "type": "p",
+     "text": "**Ko‘rpa qandalasi** (*Cimex lectularius*) kechasi qon so‘radi, chaqishi qichishish va allergiya chaqiradi. **Suvaraklar** (*Blattella germanica, Periplaneta americana*) — ichak infeksiyalari, gelmint tuxumlari va sodda hayvonlar sistalarining **mexanik tashuvchilari**; ularning xitin qoldiqlari va ajratmalari kuchli **allergen** bo‘lib, bolalarda bronxial astma va allergik reaksiyalarga sabab bo‘ladi."
+    }
+   ]
+  },
+  {
+   "title": "3. Ikki qanotlilar: chivinlar, iskabtoparlar, pashshalar, so‘nalar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Ikki qanotlilar (Diptera)** — bir juft parda qanotli, ikkinchi jufti tebranuvchi to‘g‘nog‘ichlarga aylangan hasharotlar; to‘liq o‘zgarish bilan rivojlanadi. Ikki kenja turkumga bo‘linadi: **uzun mo‘ylovlilar** (chivinlar, iskabtoparlar, mayda qora pashshalar — *Simulium*) va **kalta mo‘ylovlilar** (pashshalar, so‘nalar)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.5. Bezgak chivini (Anopheles) va oddiy chivin (Culex) farqlari",
+     "head": [
+      "Bosqich",
+      "*Anopheles*",
+      "*Culex*"
+     ],
+     "rows": [
+      [
+       "Tuxum",
+       "Yakka-yakka, yon tomonida havo suzgichlari bor",
+       "Bir-biriga yopishib “qayiqcha” hosil qiladi"
+      ],
+      [
+       "Lichinka",
+       "Suv yuzasiga **parallel** joylashadi, nafas sifoni yo‘q",
+       "Suv yuzasiga **burchak ostida** osilib turadi, uzun nafas sifoni bor"
+      ],
+      [
+       "G‘umbak",
+       "Nafas naychalari kalta, keng konussimon",
+       "Nafas naychalari uzun, ingichka silindrsimon"
+      ],
+      [
+       "Imago (o‘tirganda)",
+       "Tanasi yuzaga **burchak** ostida, qorni ko‘tarilgan",
+       "Tanasi yuzaga **parallel**"
+      ],
+      [
+       "Urg‘ochisining paypaslagichlari",
+       "Xartumi bilan teng uzunlikda",
+       "Xartumidan ancha kalta"
+      ],
+      [
+       "Tarqatadigan kasalliklar",
+       "**Bezgak**, vuxererioz",
+       "G‘arbiy Nil isitmasi, yapon ensefaliti, vuxererioz"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_chivinlar.webp",
+     "w": 1053,
+     "h": 740,
+     "lang": true,
+     "label": "Rasm 14.6",
+     "caption": "Bezgak (*Anopheles*) va oddiy (*Culex, Aedes*) chivinlarning rivojlanish bosqichlaridagi farqlari: tuxum, lichinka, g‘umbak va imago; 1 — tuxumlar, 2 — lichinkaning nafas teshigi, 3 — nafas sifoni, 4 — g‘umbakning nafas naychalari (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "***Aedes*** chivinlari denge, sariq isitma va Zika viruslarini tashiydi. **Iskabtoparlar** (*Phlebotomus*) — mayda, tukli, issiq iqlimli hududlarda kemiruvchilar inlarida rivojlanadi; ular **leyshmaniozlar** (teri va visseral), shuningdek pappatachi isitmasi tashuvchilaridir. **Mayda qora pashshalar** (*Simulium*) onxotserkozni tashiydi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_iskabtopar_pashsha.webp",
+     "label": "Rasm 14.7",
+     "caption": "a — iskabtoparning rivojlanish bosqichlari (tuxum, lichinkalar, g‘umbak va voyaga yetgan iskabtopar); b — uy pashshasi, uning tuxumlari, lichinkasi va g‘umbagi (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Iskabtoparlar leyshmaniozlardan tashqari **papatachi isitmasi** (iskabtopar isitmasi) virusini ham tashiydi. *Culex* chivinlari G‘arbiy Nil isitmasi va yapon ensefaliti viruslarini, shuningdek, filyariyalar va it dirofilyariyalarini yuqtiradi. **Se-se pashshasi** (*Glossina*) Afrikada uyqu kasalligini, **mosh pashshalari** (*Simulium*) onxotserkozni tashiydi."
+    },
+    {
+     "type": "p",
+     "text": "**Uy pashshasi** (*Musca domestica*) — ichak infeksiyalari (dizenteriya, qorin tifi, vabo), gelmint tuxumlari va sodda hayvonlar sistalarining **mexanik tashuvchisi**: mikroblar oyoqlaridagi yopishqoq tukchalarda, xartumida va ichagida tashiladi va oziq-ovqatga qusuq hamda najas bilan tushadi. **Volfart pashshasi** (*Wohlfahrtia magnifica*) tirik lichinkalarini yaralar, quloq, burun va ko‘zga qo‘yadi — **obligat miaz** chaqiradi. **Kuzgi chaqqich pashsha** (*Stomoxys calcitrans*) va **so‘nalar** (*Tabanidae*) qon so‘rsa-da, kuydirgi va tulyaremiyaning faqat **mexanik** tashuvchilari. **Se-se pashshasi** (*Glossina*) Afrikada uyqu kasalligi (tripanosomoz) tashuvchisi."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "list",
+       "ordered": false,
+       "items": [
+        "**Spetsifik (biologik) tashuvchi** — qo‘zg‘atuvchi uning organizmida ko‘payadi yoki rivojlanish siklining bir qismini o‘taydi (Anopheles — bezgak, iskabtopar — leyshmaniya, bit — rikketsiya, kana — ensefalit virusi).",
+        "**Mexanik tashuvchi** — qo‘zg‘atuvchi tashuvchi organizmida o‘zgarishsiz qoladi va faqat tana yuzasida yoki xartumida ko‘chiriladi (uy pashshasi, suvarak, so‘na, kuzgi chaqqich pashsha)."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Miazlar** — pashsha lichinkalarining odam to‘qimalarida parazitlik qilishi. **Volfart pashshasi** (*Wohlfahrtia magnifica*) tirik lichinkalarni yara, quloq, burun yoki ko‘z shilliq qavatiga qo‘yadi; lichinkalar to‘qimani yemirib, og‘ir jarohat va hatto suyak shikastlanishiga olib keladi (O‘rta Osiyoda ayniqsa yozda, cho‘ponlarda va yotib qolgan bemorlarda). **So‘nalar** (*Gasterophilus*, *Oestrus*) lichinkalari asosan hayvonlarda, ba’zan odamda teri osti yoki ko‘z miazini chaqiradi. Profilaktika — yaralarni yopiq tutish, shaxsiy gigiyena, pashshalarga qarshi kurash."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.6. Bo‘g‘imoyoqlilar va ular tashiydigan kasalliklar (umumlashma)",
+     "head": [
+      "Tashuvchi",
+      "Kasalliklar",
+      "Tashish turi"
+     ],
+     "rows": [
+      [
+       "*Anopheles* chivini",
+       "Bezgak",
+       "Spetsifik"
+      ],
+      [
+       "*Aedes*, *Culex* chivinlari",
+       "Denge, sariq isitma, Zika, G‘arbiy Nil isitmasi, filyariozlar",
+       "Spetsifik"
+      ],
+      [
+       "Iskabtopar",
+       "Leyshmaniozlar, papatachi isitmasi",
+       "Spetsifik"
+      ],
+      [
+       "Kiyim biti",
+       "Epidemik toshmali va qaytalama tif",
+       "Spetsifik"
+      ],
+      [
+       "Kalamush burgasi",
+       "O‘lat, endemik (kalamush) toshmali tif",
+       "Spetsifik"
+      ],
+      [
+       "Iksod va argas kanalari",
+       "Kana ensefaliti, borreliozlar, Qrim-Kongo isitmasi, tulyaremiya",
+       "Spetsifik"
+      ],
+      [
+       "Uy pashshasi, suvaraklar",
+       "Ichak infeksiyalari, gelmint tuxumlari, protozoy sistalari",
+       "Mexanik"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Zaharli hayvonlar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Zaharli hayvonlar** organizmida odam va hayvonlar uchun zaharli moddalar hosil qiladi yoki to‘playdi. **Birlamchi zaharlilar** zaharni maxsus bezlarda o‘zi ishlab chiqaradi; ular **faol qurollangan** (zahar bezi va chaqish, tishlash apparati bor: ilonlar, chayonlar, o‘rgimchaklar, arilar) yoki **passiv** (zahar bezlari bor, ammo yetkazish apparati yo‘q: baqalar, ba’zi baliqlar) bo‘ladi. **Ikkilamchi zaharlilar** zaharni oziq orqali to‘playdi (ba’zi baliqlar, mollyuskalar). Zaharlar ta’siriga ko‘ra **neyrotoksik** (nerv sistemasiga) va **gemotoksik** (qon va tomirlarga) bo‘ladi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_zaharli.webp",
+     "w": 953,
+     "h": 340,
+     "lang": false,
+     "label": "Rasm 14.8",
+     "caption": "O‘zbekistonda uchraydigan zaharli o‘rgimchaksimonlar: a — chayon; b — qoraqurt (*Latrodectus tredecimguttatus*) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 14.7. O‘zbekistonda keng tarqalgan zaharli hayvonlar",
+     "head": [
+      "Hayvon",
+      "Zahar turi",
+      "Chaqqanda belgilari"
+     ],
+     "rows": [
+      [
+       "Qoraqurt (*Latrodectus tredecimguttatus*)",
+       "Neyrotoksik",
+       "Butun tanada kuchli mushak og‘riqlari, qorin mushaklarining taranglashishi, **qo‘rquv**, ko‘p terlash, qaltirash, holsizlik"
+      ],
+      [
+       "Chayon (*Mesobuthus eupeus*)",
+       "Asosan mahalliy, neyrotoksik",
+       "Chaqqan joyda o‘tkir og‘riq, shish, bolalarda umumiy zaharlanish"
+      ],
+      [
+       "Tarantul (*Lycosa*)",
+       "Mahalliy",
+       "Og‘riq, shish, qizarish; odatda xavfsiz"
+      ],
+      [
+       "O‘rta Osiyo kobrasi — kapcha ilon (*Naja oxiana*)",
+       "**Neyrotoksik**",
+       "Mahalliy o‘zgarishlar kam; uvishish, ko‘z qovoqlarining tushishi, yutish va nafas olishning qiyinlashishi, falajlar"
+      ],
+      [
+       "Ko‘lvor ilon — gyurza (*Macrovipera lebetina*), charx ilon (*Echis carinatus*), qalqontumshuq (*Gloydius halys*)",
+       "**Gemotoksik**",
+       "Chaqqan joyda kuchli og‘riq va tez kattalashuvchi shish, qon oqishi, qon quyilishlar, qon bosimining tushib ketishi"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_ilonlar.webp",
+     "label": "Rasm 14.9",
+     "caption": "Zaharli ilonlar: a — yo‘lbars tanali ilon (*Notechis scutatus*, Avstraliya); b — kapcha ilon (kobra) — neyrotoksik zaharli ilonlar (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Ilon zahari ta’siriga qarshi asosiy davo — **zaharga qarshi zardob** (monovalent yoki polivalent), u faqat tibbiyot muassasasida, ko‘rsatma bo‘lganda yuboriladi. Ilon chaqqanda **jgut qo‘yish, kesish, kuydirish, zaharni og‘iz bilan so‘rish va alkogol berish mumkin emas**: jgut gemotoksik zaharda to‘qima nekrozini kuchaytiradi, kesish infeksiya va qon ketishiga olib keladi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_baliqlar.webp",
+     "label": "Rasm 14.10",
+     "caption": "Zaharli baliqlar: a — dengiz ajdari (*Trachinus draco*) — faol zaharli, suzgich qanot tikanlari va jabra qopqog‘i tig‘i zahar bezlari bilan bog‘langan; b — marinka (*Schizothorax intermedius*) — nofaol zaharli, uvildirig‘i, erkak jinsiy bezlari va qora qorin pardasi zaharli (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Ikkilamchi (nofaol) zaharli hayvonlar** zaharni maxsus apparat bilan yubormaydi — ularni iste’mol qilganda zaharlanish bo‘ladi. O‘rta Osiyo daryolarida yashovchi **marinka** va **osmon** baliqlarining go‘shti mazali, lekin uvildirig‘i, sut bezlari va qora qorin pardasi kuchli zaharli: ular yaxshi tozalanmasa, qusish, ich ketishi, og‘ir hollarda nafas falaji rivojlanadi. Dengiz **qutin baliqlari** (fugu) tetrodotoksin saqlaydi. Ayrim qurbaqalar (qo‘qonbaqa) terisi bezlarining sekreti kardiotoksik ta’sirga ega."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Ilon chaqqanda birinchi yordam:** bemorni tinchlantirish va yotqizish; chaqilgan oyoq-qo‘lni shina bilan harakatsizlantirish; uzuk va bilaguzuklarni yechish; ko‘p suyuqlik ichirish; bemorni zudlik bilan shifoxonaga yetkazish — u yerda **ilonga qarshi zardob** yuboriladi. **Mumkin emas:** jgut qo‘yish, jarohatni kesish yoki kuydirish, spirtli ichimlik berish. Qoraqurt chaqqanda **qoraqurtga qarshi zardob** qo‘llaniladi."
+      }
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Ko‘nikma: preparatda argas va iksod kanalarini farqlash", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Kanani lupa yoki mikroskopning kichik obyektivida orqa tomondan ko‘ring.",
-    "Orqa tomonda xitin qalqon bor-yo‘qligini aniqlang.",
-    "Og‘iz apparati (xartumcha) ustidan ko‘rinadimi yoki tananing ostiga yashiringanmi — tekshiring.",
-    "Qalqon yo‘q va og‘iz apparati ustidan ko‘rinmasa — argas kanasi; qalqon bor va og‘iz apparati old uchda ko‘rinsa — iksod kanasi deb xulosa qiling.",
-    "Oyoqlar sonini sanab, rivojlanish bosqichini aniqlang: 3 juft — lichinka, 4 juft — nimfa yoki imago (nimfada jinsiy teshik yo‘q)."
-   ]}
-  ]}
+  {
+   "title": "Ko‘nikma: preparatda argas va iksod kanalarini farqlash",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Kanani lupa yoki mikroskopning kichik obyektivida orqa tomondan ko‘ring.",
+      "Orqa tomonda xitin qalqon bor-yo‘qligini aniqlang.",
+      "Og‘iz apparati (xartumcha) ustidan ko‘rinadimi yoki tananing ostiga yashiringanmi — tekshiring.",
+      "Qalqon yo‘q va og‘iz apparati ustidan ko‘rinmasa — argas kanasi; qalqon bor va og‘iz apparati old uchda ko‘rinsa — iksod kanasi deb xulosa qiling.",
+      "Oyoqlar sonini sanab, rivojlanish bosqichini aniqlang: 3 juft — lichinka, 4 juft — nimfa yoki imago (nimfada jinsiy teshik yo‘q)."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "Bo‘g‘imoyoqlilar tipiga tavsif bering va uning tasnifini ayting.",
@@ -97,45 +528,355 @@
   "Qandalalar va suvaraklarning tibbiy ahamiyatini ayting.",
   "Ikki qanotlilar turkumiga tavsif bering. Anopheles va Culex qanday farqlanadi?",
   "Pashshalar, so‘nalar va iskabtoparlarning tibbiy ahamiyati qanday?",
-  "Zaharli hayvonlar tasnifini ayting. O‘zbekistonda keng tarqalgan zaharli hayvonlar chaqqanda qanday birinchi yordam ko‘rsatiladi?"
+  "Zaharli hayvonlar tasnifini ayting. O‘zbekistonda keng tarqalgan zaharli hayvonlar chaqqanda qanday birinchi yordam ko‘rsatiladi?",
+  "Bo‘g‘imoyoqlilarning qaysi sinflari tibbiyotda ahamiyatli va nima uchun?",
+  "Kanalar orqali qanday kasalliklar yuqadi?",
+  "Kana yopishib olganda qanday harakat qilish kerak?",
+  "Qichima qanday yuqadi va qanday davolanadi? Demodeks va uy changi kanalarining ahamiyati qanday?",
+  "Hasharotlarning to‘liq va chala o‘zgarish bilan rivojlanishini taqqoslang.",
+  "Pedikulyoz qanday davolanadi?",
+  "O‘lat burga orqali qanday yuqadi?",
+  "Miaz nima? Volfart pashshasining ahamiyati qanday?",
+  "Ilon chaqqanda nimalar qilish mumkin emas?",
+  "Ikkilamchi zaharli hayvonlarga misollar keltiring."
  ],
  "quiz": [
-  {"q": "O‘rgimchaksimonlarning nechta juft yuruvchi oyog‘i bor?", "options": ["4 juft", "3 juft", "2 juft", "5 juft", "6 juft"], "answer": 0},
-  {"q": "Kanalarning qaysi bosqichida 3 juft oyoq bo‘ladi?", "options": ["Lichinka", "Nimfa", "Imago", "Tuxum", "G‘umbak"], "answer": 0},
-  {"q": "Orqasida xitin qalqoni yo‘q, og‘iz apparati ustidan ko‘rinmaydigan kana qaysi oilaga kiradi?", "options": ["Argas kanalari", "Iksod kanalari", "Qichima kanalari", "Demodekslar", "Gamaz kanalari"], "answer": 0},
-  {"q": "Tayga kanasi qaysi kasallikni tarqatadi?", "options": ["Kana ensefaliti", "Bezgak", "O‘lat", "Toshmali tif", "Leyshmanioz"], "answer": 0},
-  {"q": "Transmissiv kasalliklarning tabiiy o‘choqliligi haqidagi ta’limotni kim yaratgan?", "options": ["Ye.N. Pavlovskiy", "K.I. Skryabin", "L.M. Isayev", "I.I. Mechnikov", "R. Kox"], "answer": 0},
-  {"q": "Qichima kanasi qayerda parazitlik qiladi?", "options": ["Terining shox qavatida", "Sochda", "Qonda", "Ichakda", "Limfa tugunlarida"], "answer": 0},
-  {"q": "Qaysi hasharot to‘liq o‘zgarish bilan rivojlanadi?", "options": ["Burga", "Bit", "Qandala", "Suvarak", "Chigirtka"], "answer": 0},
-  {"q": "Epidemik toshmali tifni kim tarqatadi?", "options": ["Kiyim biti", "Kalamush burgasi", "Iskabtopar", "Uy pashshasi", "Iksod kanasi"], "answer": 0},
-  {"q": "Toshmali tif qo‘zg‘atuvchisi odamga qanday o‘tadi?", "options": ["Bit najasi qashilgan teriga ishqalanganda", "Bit so‘lagi orqali", "Bit tuxumi orqali", "Havo-tomchi yo‘li bilan", "Suv orqali"], "answer": 0},
-  {"q": "O‘latning asosiy tashuvchisi kim?", "options": ["Kalamush burgasi", "Kiyim biti", "Bezgak chivini", "So‘na", "Qandala"], "answer": 0},
-  {"q": "Lichinkasi suv yuzasiga parallel joylashadigan va sifoni yo‘q chivin qaysi?", "options": ["Anopheles", "Culex", "Aedes", "Phlebotomus", "Simulium"], "answer": 0},
-  {"q": "Teri leyshmaniozining tashuvchisi kim?", "options": ["Iskabtopar", "Bezgak chivini", "Se-se pashshasi", "So‘na", "Bit"], "answer": 0},
-  {"q": "Obligat miazni qaysi pashsha chaqiradi?", "options": ["Volfart pashshasi", "Uy pashshasi", "Kuzgi chaqqich pashsha", "Se-se pashshasi", "Ko‘k go‘sht pashshasi"], "answer": 0},
-  {"q": "Qoraqurt zahari qanday ta’sir qiladi?", "options": ["Neyrotoksik", "Gemotoksik", "Faqat mahalliy", "Kardiotoksik", "Nefrotoksik"], "answer": 0},
-  {"q": "Ilon chaqqanda nima qilish mumkin emas?", "options": ["Jgut qo‘yish", "Oyoq-qo‘lni harakatsizlantirish", "Bemorni yotqizish", "Ko‘p suyuqlik ichirish", "Shifoxonaga yetkazish"], "answer": 0}
+  {
+   "q": "O‘rgimchaksimonlarning nechta juft yuruvchi oyog‘i bor?",
+   "options": [
+    "4 juft",
+    "3 juft",
+    "2 juft",
+    "5 juft",
+    "6 juft"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Kanalarning qaysi bosqichida 3 juft oyoq bo‘ladi?",
+   "options": [
+    "Lichinka",
+    "Nimfa",
+    "Imago",
+    "Tuxum",
+    "G‘umbak"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Orqasida xitin qalqoni yo‘q, og‘iz apparati ustidan ko‘rinmaydigan kana qaysi oilaga kiradi?",
+   "options": [
+    "Argas kanalari",
+    "Iksod kanalari",
+    "Qichima kanalari",
+    "Demodekslar",
+    "Gamaz kanalari"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Tayga kanasi qaysi kasallikni tarqatadi?",
+   "options": [
+    "Kana ensefaliti",
+    "Bezgak",
+    "O‘lat",
+    "Toshmali tif",
+    "Leyshmanioz"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Transmissiv kasalliklarning tabiiy o‘choqliligi haqidagi ta’limotni kim yaratgan?",
+   "options": [
+    "Ye.N. Pavlovskiy",
+    "K.I. Skryabin",
+    "L.M. Isayev",
+    "I.I. Mechnikov",
+    "R. Kox"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qichima kanasi qayerda parazitlik qiladi?",
+   "options": [
+    "Terining shox qavatida",
+    "Sochda",
+    "Qonda",
+    "Ichakda",
+    "Limfa tugunlarida"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi hasharot to‘liq o‘zgarish bilan rivojlanadi?",
+   "options": [
+    "Burga",
+    "Bit",
+    "Qandala",
+    "Suvarak",
+    "Chigirtka"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Epidemik toshmali tifni kim tarqatadi?",
+   "options": [
+    "Kiyim biti",
+    "Kalamush burgasi",
+    "Iskabtopar",
+    "Uy pashshasi",
+    "Iksod kanasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Toshmali tif qo‘zg‘atuvchisi odamga qanday o‘tadi?",
+   "options": [
+    "Bit najasi qashilgan teriga ishqalanganda",
+    "Bit so‘lagi orqali",
+    "Bit tuxumi orqali",
+    "Havo-tomchi yo‘li bilan",
+    "Suv orqali"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "O‘latning asosiy tashuvchisi kim?",
+   "options": [
+    "Kalamush burgasi",
+    "Kiyim biti",
+    "Bezgak chivini",
+    "So‘na",
+    "Qandala"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Lichinkasi suv yuzasiga parallel joylashadigan va sifoni yo‘q chivin qaysi?",
+   "options": [
+    "Anopheles",
+    "Culex",
+    "Aedes",
+    "Phlebotomus",
+    "Simulium"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Teri leyshmaniozining tashuvchisi kim?",
+   "options": [
+    "Iskabtopar",
+    "Bezgak chivini",
+    "Se-se pashshasi",
+    "So‘na",
+    "Bit"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Obligat miazni qaysi pashsha chaqiradi?",
+   "options": [
+    "Volfart pashshasi",
+    "Uy pashshasi",
+    "Kuzgi chaqqich pashsha",
+    "Se-se pashshasi",
+    "Ko‘k go‘sht pashshasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qoraqurt zahari qanday ta’sir qiladi?",
+   "options": [
+    "Neyrotoksik",
+    "Gemotoksik",
+    "Faqat mahalliy",
+    "Kardiotoksik",
+    "Nefrotoksik"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Ilon chaqqanda nima qilish mumkin emas?",
+   "options": [
+    "Jgut qo‘yish",
+    "Oyoq-qo‘lni harakatsizlantirish",
+    "Bemorni yotqizish",
+    "Ko‘p suyuqlik ichirish",
+    "Shifoxonaga yetkazish"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qrim-Kongo gemorragik isitmasini qaysi kanalar tashiydi?",
+   "options": [
+    "*Hyalomma*",
+    "*Sarcoptes*",
+    "*Demodex*",
+    "*Dermatophagoides*",
+    "*Ornithodoros*"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi hasharot to‘liq o‘zgarish bilan rivojlanadi?",
+   "options": [
+    "Burga",
+    "Bit",
+    "Ko‘rpa qandalasi",
+    "Suvarak",
+    "Barchasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "“Bloklangan” burga qaysi kasallikni samarali tarqatadi?",
+   "options": [
+    "O‘lat",
+    "Bezgak",
+    "Leyshmanioz",
+    "Kana ensefaliti",
+    "Qichima"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Yara va shilliq qavatlarga tirik lichinkalar qo‘yib, miaz chaqiradigan pashsha qaysi?",
+   "options": [
+    "Volfart pashshasi",
+    "Uy pashshasi",
+    "Se-se pashshasi",
+    "Mosh pashshasi",
+    "Iskabtopar"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Marinka baliqning qaysi qismi zaharli?",
+   "options": [
+    "Uvildirig‘i va qora qorin pardasi",
+    "Mushaklari (go‘shti)",
+    "Tangachalari",
+    "Suzgich qanotlari",
+    "Ko‘zlari"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Masala 1", "text": "Paxta terimiga yuborilgan talabalarning ko‘pchiligida qichima kasalligi aniqlandi.", "ask": "Uning sabablarini tushuntiring. Qanday choralar bilan kasallikni tugatish mumkin?", "answer": "Qichima qo‘zg‘atuvchisi — *Sarcoptes scabiei* — bevosita teri kontakti, umumiy yotoq, ko‘rpa-to‘shak va kiyim orqali yuqadi. Yotoqxonalarda zich yashash, umumiy to‘shaklarda yotish, cho‘milish va kiyim almashtirish imkoniyatining cheklanganligi kasallikning tez tarqalishiga sabab bo‘lgan. Choralar: barcha bemorlarni va ular bilan muloqotda bo‘lganlarni bir vaqtda davolash (permetrin, benzilbenzoat), ichki kiyim va ko‘rpa-to‘shakni qaynatish yoki issiq dazmollash, bemorlarni ajratish, kontaktdagilarni ko‘rikdan o‘tkazish va sanitariya-gigiyena sharoitlarini yaxshilash."},
-  {"title": "Masala 2", "text": "Hayvondan olingan kana mikroskopda tekshirilganda orqa tomonida xitin qalqon aniqlanmadi, og‘iz apparati ham ustidan ko‘rinmaydi. Boshqa kanalar orasida qon so‘rmagan bo‘lsa-da, kasallik qo‘zg‘atuvchisi topilgan namunalar ham bor.", "ask": "Bu kana qaysi oilaga kiradi? Qon so‘rmagan kanalarda qo‘zg‘atuvchi borligini qanday tushuntirish mumkin?", "answer": "Qalqonning yo‘qligi va og‘iz apparatining tana ostida joylashganligi argas kanalariga (*Argasidae*) xos, masalan qishloq kanasi — kana qaytalama tifining tashuvchisi. Qon so‘rmagan kanalarda qo‘zg‘atuvchi bo‘lishi transovarial yuqish bilan izohlanadi: qo‘zg‘atuvchi ona kana organizmida ko‘payib, tuxum orqali keyingi avlodga o‘tadi, shuningdek transfazal yo‘l bilan lichinkadan nimfa va imagoga saqlanadi. Shuning uchun kanalar qo‘zg‘atuvchining tabiiy rezervuari hisoblanadi."},
-  {"title": "Masala 3", "text": "Ilon chaqqan odamda chaqqan joydan qon oqishi, kuchli og‘riq, tez kattalashayotgan shish va qon bosimining tushib ketishi kuzatilmoqda. Boshqa bir bemorda esa ilon chaqqandan so‘ng nafas olish va yutishning qiyinlashishi, tananing uvushishi va harakatlanishning qiyinlashishi kuzatildi.", "ask": "Har bir holatda qanday ilon chaqqan deb gumon qilish mumkin?", "answer": "Birinchi holatda gemotoksik zahar ta’siri — qon ivishining buzilishi, tomir devorining shikastlanishi va mahalliy to‘qima nekrozi; bu qora ilonlar oilasiga mansub ko‘lvor ilon (gyurza), charx ilon yoki qalqontumshuq chaqqanda kuzatiladi. Ikkinchi holatda neyrotoksik zahar ta’siri — nerv-mushak o‘tkazuvchanligining blokadasi, falajlar va nafas yetishmovchiligi; bu O‘rta Osiyo kobrasi (kapcha ilon) chaqqanda kuzatiladi. Ikkala holatda ham oyoq-qo‘l harakatsizlantiriladi, jgut qo‘yilmaydi va bemor zudlik bilan shifoxonaga yetkazilib, ilonga qarshi zardob yuboriladi; neyrotoksik zaharlanishda sun’iy nafasga tayyor turish kerak."}
+  {
+   "title": "Masala 1",
+   "text": "Paxta terimiga yuborilgan talabalarning ko‘pchiligida qichima kasalligi aniqlandi.",
+   "ask": "Uning sabablarini tushuntiring. Qanday choralar bilan kasallikni tugatish mumkin?",
+   "answer": "Qichima qo‘zg‘atuvchisi — *Sarcoptes scabiei* — bevosita teri kontakti, umumiy yotoq, ko‘rpa-to‘shak va kiyim orqali yuqadi. Yotoqxonalarda zich yashash, umumiy to‘shaklarda yotish, cho‘milish va kiyim almashtirish imkoniyatining cheklanganligi kasallikning tez tarqalishiga sabab bo‘lgan. Choralar: barcha bemorlarni va ular bilan muloqotda bo‘lganlarni bir vaqtda davolash (permetrin, benzilbenzoat), ichki kiyim va ko‘rpa-to‘shakni qaynatish yoki issiq dazmollash, bemorlarni ajratish, kontaktdagilarni ko‘rikdan o‘tkazish va sanitariya-gigiyena sharoitlarini yaxshilash."
+  },
+  {
+   "title": "Masala 2",
+   "text": "Hayvondan olingan kana mikroskopda tekshirilganda orqa tomonida xitin qalqon aniqlanmadi, og‘iz apparati ham ustidan ko‘rinmaydi. Boshqa kanalar orasida qon so‘rmagan bo‘lsa-da, kasallik qo‘zg‘atuvchisi topilgan namunalar ham bor.",
+   "ask": "Bu kana qaysi oilaga kiradi? Qon so‘rmagan kanalarda qo‘zg‘atuvchi borligini qanday tushuntirish mumkin?",
+   "answer": "Qalqonning yo‘qligi va og‘iz apparatining tana ostida joylashganligi argas kanalariga (*Argasidae*) xos, masalan qishloq kanasi — kana qaytalama tifining tashuvchisi. Qon so‘rmagan kanalarda qo‘zg‘atuvchi bo‘lishi transovarial yuqish bilan izohlanadi: qo‘zg‘atuvchi ona kana organizmida ko‘payib, tuxum orqali keyingi avlodga o‘tadi, shuningdek transfazal yo‘l bilan lichinkadan nimfa va imagoga saqlanadi. Shuning uchun kanalar qo‘zg‘atuvchining tabiiy rezervuari hisoblanadi."
+  },
+  {
+   "title": "Masala 3",
+   "text": "Ilon chaqqan odamda chaqqan joydan qon oqishi, kuchli og‘riq, tez kattalashayotgan shish va qon bosimining tushib ketishi kuzatilmoqda. Boshqa bir bemorda esa ilon chaqqandan so‘ng nafas olish va yutishning qiyinlashishi, tananing uvushishi va harakatlanishning qiyinlashishi kuzatildi.",
+   "ask": "Har bir holatda qanday ilon chaqqan deb gumon qilish mumkin?",
+   "answer": "Birinchi holatda gemotoksik zahar ta’siri — qon ivishining buzilishi, tomir devorining shikastlanishi va mahalliy to‘qima nekrozi; bu qora ilonlar oilasiga mansub ko‘lvor ilon (gyurza), charx ilon yoki qalqontumshuq chaqqanda kuzatiladi. Ikkinchi holatda neyrotoksik zahar ta’siri — nerv-mushak o‘tkazuvchanligining blokadasi, falajlar va nafas yetishmovchiligi; bu O‘rta Osiyo kobrasi (kapcha ilon) chaqqanda kuzatiladi. Ikkala holatda ham oyoq-qo‘l harakatsizlantiriladi, jgut qo‘yilmaydi va bemor zudlik bilan shifoxonaga yetkazilib, ilonga qarshi zardob yuboriladi; neyrotoksik zaharlanishda sun’iy nafasga tayyor turish kerak."
+  },
+  {
+   "title": "Masala 4",
+   "text": "May oyida tog‘li hududda dam olgan 35 yoshli erkak 7 kundan keyin yuqori isitma, bosh og‘rig‘i, mushak og‘rig‘i, milklardan qon ketishi va terida nuqtali qon quyilishlar bilan murojaat qildi. U dam olishda qo‘ylar bilan aloqada bo‘lgan va badaniga yopishgan kanani qo‘li bilan ezib olib tashlaganini aytdi.",
+   "ask": "Qanday kasallik haqida o‘ylash kerak? Bemorning qaysi harakati xavfli bo‘lgan?",
+   "answer": "Bahor-yoz mavsumi, chorva bilan aloqa, kana chaqishi va gemorragik sindrom **Qrim-Kongo gemorragik isitmasi**ga xos; tashuvchisi — *Hyalomma* kanalari, O‘zbekistonda ham tabiiy o‘choqlari bor. Kanani **qo‘l bilan ezish** xavfli: virus kana gemolimfasi bilan teridagi mikrojarohatlar orqali o‘tishi mumkin. Bemor zudlik bilan yuqumli kasalliklar shifoxonasiga yotqiziladi; kasallik qon va ajratmalar orqali tibbiyot xodimlariga yuqishi mumkinligi sababli qat’iy himoya choralari ko‘riladi. Profilaktika: kanadan himoyalanish, kanani to‘g‘ri olib tashlash, chorvani akaritsidlar bilan ishlash."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Maktabning 3-sinfida tibbiy ko‘rikda 6 nafar o‘quvchining sochida mayda oqish “donachalar” — sirkalar va bosh bitlari topildi.",
+   "ask": "Qanday choralar ko‘rilishi kerak?",
+   "answer": "Bu **bosh pedikulyozi**. Choralar: (1) zararlangan bolalar pedikulitsid vositalar (permetrin shampun yoki eritmasi) bilan davolanadi, sirkalar zich taroq bilan taraladi; (2) 7–10 kundan keyin ishlov takrorlanadi, chunki dorilar sirkalarga yetarli ta’sir qilmaydi va ulardan yangi lichinkalar chiqadi; (3) barcha sinfdoshlar va oila a’zolari tekshiriladi; (4) bosh kiyimlari, taroqlar, yostiq jildlari yuviladi yoki ishlov beriladi; (5) bolalar davolanguncha jamoaga qo‘yilmaydi va qayta ko‘rikdan o‘tkaziladi. Bosh biti kasallik tashimaydi, lekin qichishish va qashlash ikkilamchi infeksiyaga olib keladi."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Iyul oyida paxta dalasida ishlagan 25 yoshli ayolni qoraqurt chaqdi. 30 daqiqadan keyin unda butun tanada kuchli mushak og‘riqlari, qorin mushaklarining taxtadek qotishi, ko‘p terlash, qo‘rquv va hansirash paydo bo‘ldi.",
+   "ask": "Zahar qanday ta’sir qiladi va qanday yordam beriladi?",
+   "answer": "Qoraqurt (*Latrodectus*) zahari **neyrotoksik**: u nerv uchlaridan mediatorlarning (atsetilxolin, noradrenalin) ommaviy ajralishini chaqiradi — shuning uchun mushaklar kuchli og‘riydi va qotadi, terlash, qo‘rquv, taxikardiya va bosim ko‘tarilishi bo‘ladi. Qorin mushaklarining qotishi “o‘tkir qorin”ni eslatadi, lekin bu jarrohlik kasalligi emas. Yordam: bemorni tinchlantirish, chaqqan joyni sovutish, tezda shifoxonaga yetkazish; u yerda **qoraqurtga qarshi zardob**, kalsiy preparatlari, og‘riqsizlantiruvchi va mushaklarni bo‘shashtiruvchi dorilar beriladi. Chaqqan joyni kesish yoki kuydirish mumkin emas."
+  }
  ],
  "cards": [
-  {"front": "Bo‘g‘imoyoqlilar belgilari", "back": "Bo‘g‘imli oyoqlar, xitin skelet, tullash, miksotsel, ochiq qon aylanish"},
-  {"front": "Argas kanalari", "back": "Qalqonsiz; og‘iz apparati pastda; qishloq kanasi — kana qaytalama tifi"},
-  {"front": "Iksod kanalari", "back": "Qalqonli; tayga va it kanalari — kana ensefaliti, Layme borreliozi"},
-  {"front": "Transovarial yuqish", "back": "Qo‘zg‘atuvchining kana tuxumi orqali keyingi avlodga o‘tishi"},
-  {"front": "Sarcoptes scabiei", "back": "Qichima; teri shox qavatida yo‘llar; kechasi qichishish"},
-  {"front": "Kiyim biti", "back": "Toshmali tif (najas orqali) va qaytalama tif (bit ezilganda)"},
-  {"front": "Xenopsylla cheopis", "back": "Kalamush burgasi; o‘lat tashuvchisi"},
-  {"front": "Anopheles", "back": "Bezgak chivini; lichinka suvga parallel, sifonsiz"},
-  {"front": "Phlebotomus", "back": "Iskabtopar; leyshmaniozlar tashuvchisi"},
-  {"front": "Neyrotoksik zaharli hayvonlar", "back": "Qoraqurt, O‘rta Osiyo kobrasi; gemotoksik — gyurza, charx ilon"}
+  {
+   "front": "Bo‘g‘imoyoqlilar belgilari",
+   "back": "Bo‘g‘imli oyoqlar, xitin skelet, tullash, miksotsel, ochiq qon aylanish"
+  },
+  {
+   "front": "Argas kanalari",
+   "back": "Qalqonsiz; og‘iz apparati pastda; qishloq kanasi — kana qaytalama tifi"
+  },
+  {
+   "front": "Iksod kanalari",
+   "back": "Qalqonli; tayga va it kanalari — kana ensefaliti, Layme borreliozi"
+  },
+  {
+   "front": "Transovarial yuqish",
+   "back": "Qo‘zg‘atuvchining kana tuxumi orqali keyingi avlodga o‘tishi"
+  },
+  {
+   "front": "Sarcoptes scabiei",
+   "back": "Qichima; teri shox qavatida yo‘llar; kechasi qichishish"
+  },
+  {
+   "front": "Kiyim biti",
+   "back": "Toshmali tif (najas orqali) va qaytalama tif (bit ezilganda)"
+  },
+  {
+   "front": "Xenopsylla cheopis",
+   "back": "Kalamush burgasi; o‘lat tashuvchisi"
+  },
+  {
+   "front": "Anopheles",
+   "back": "Bezgak chivini; lichinka suvga parallel, sifonsiz"
+  },
+  {
+   "front": "Phlebotomus",
+   "back": "Iskabtopar; leyshmaniozlar tashuvchisi"
+  },
+  {
+   "front": "Neyrotoksik zaharli hayvonlar",
+   "back": "Qoraqurt, O‘rta Osiyo kobrasi; gemotoksik — gyurza, charx ilon"
+  },
+  {
+   "front": "Qrim-Kongo isitmasi",
+   "back": "*Hyalomma* kanalari tashiydigan virusli gemorragik isitma; O‘zbekistonda tabiiy o‘choqlar"
+  },
+  {
+   "front": "Sirka",
+   "back": "Bit tuxumi; sochga maxsus yelim bilan yopishtiriladi"
+  },
+  {
+   "front": "Bloklangan burga",
+   "back": "Oshqozon oldi bo‘limi o‘lat tayoqchalari bilan berkilgan burga — o‘latni yuqtiradi"
+  },
+  {
+   "front": "Miaz",
+   "back": "Pashsha lichinkalarining odam to‘qimalarida parazitlik qilishi (Volfart pashshasi)"
+  },
+  {
+   "front": "Marinka",
+   "back": "O‘rta Osiyo baliqi; uvildirig‘i va qora qorin pardasi zaharli"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Eslab qoling", "text": "**Spetsifik tashuvchida** qo‘zg‘atuvchi ko‘payadi yoki rivojlanadi; **mexanik tashuvchi** uni faqat ko‘chiradi — qon so‘ruvchi bo‘lsa ham (so‘na, kuzgi chaqqich pashsha)."},
-  {"kind": "yodlash", "label": "Yodlash usuli", "text": "**“Argas — qalqonsiz, Iksod — qalqonli”**; **“Anopheles — Ancha egik o‘tiradi, Culex — Chalqancha parallel”**."},
-  {"kind": "klinik", "label": "Klinik ahamiyati", "text": "Ilon chaqqanda **jgut qo‘yilmaydi, kesilmaydi**: harakatsizlantirish va zudlik bilan zardob — hayotni saqlaydigan asosiy choralar."}
+  {
+   "kind": "eslab",
+   "label": "Eslab qoling",
+   "text": "**Spetsifik tashuvchida** qo‘zg‘atuvchi ko‘payadi yoki rivojlanadi; **mexanik tashuvchi** uni faqat ko‘chiradi — qon so‘ruvchi bo‘lsa ham (so‘na, kuzgi chaqqich pashsha)."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Yodlash usuli",
+   "text": "**“Argas — qalqonsiz, Iksod — qalqonli”**; **“Anopheles — Ancha egik o‘tiradi, Culex — Chalqancha parallel”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Klinik ahamiyati",
+   "text": "Ilon chaqqanda **jgut qo‘yilmaydi, kesilmaydi**: harakatsizlantirish va zudlik bilan zardob — hayotni saqlaydigan asosiy choralar."
+  }
  ]
 }

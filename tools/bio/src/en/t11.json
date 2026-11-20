@@ -3,103 +3,562 @@
  "no": 11,
  "title": "Flagellates — human parasites: trypanosomes, leishmania, trichomonads and giardia. Sporozoa — human parasites: malaria parasites, toxoplasma. Intestinal parasites: dysentery amoeba, intestinal balantidium",
  "goals": [
-  {"type": "p", "text": "To teach the student the basic concepts of parasitology and the origin of parasitism, the general features of the phylum Protozoa, and the structure, life cycle, routes of transmission, pathogenic effect, laboratory diagnosis and prevention of the flagellates, sporozoa, sarcodines and ciliates that parasitize humans."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the concepts of parasite, host (definitive, intermediate, reservoir), vector, vector-borne and natural focal disease;",
-   "the features of trypanosomes, leishmania, trichomonads and giardia;",
-   "the life cycle of malaria plasmodia and the differences between their species;",
-   "the life cycle and diagnosis of toxoplasma, the dysentery amoeba and balantidium."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "describe a parasite in the following order: name (Latin), disease, distribution, morphology, localization, life cycle, route of transmission, pathogenic effect, diagnosis, prevention;",
-   "identify the species of plasmodium in a blood smear;",
-   "distinguish the forms of amoeba and giardia in a stool smear."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the basic concepts of parasitology and the origin of parasitism, the general features of the phylum Protozoa, and the structure, life cycle, routes of transmission, pathogenic effect, laboratory diagnosis and prevention of the flagellates, sporozoa, sarcodines and ciliates that parasitize humans."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the concepts of parasite, host (definitive, intermediate, reservoir), vector, vector-borne and natural focal disease;",
+    "the features of trypanosomes, leishmania, trichomonads and giardia;",
+    "the life cycle of malaria plasmodia and the differences between their species;",
+    "the life cycle and diagnosis of toxoplasma, the dysentery amoeba and balantidium."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "describe a parasite in the following order: name (Latin), disease, distribution, morphology, localization, life cycle, route of transmission, pathogenic effect, diagnosis, prevention;",
+    "identify the species of plasmodium in a blood smear;",
+    "distinguish the forms of amoeba and giardia in a stool smear."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. Basic concepts of parasitology", "blocks": [
-   {"type": "p", "text": "**Parasitism** is a form of relationship in which one organism (the parasite) uses another (the host) as its habitat and source of food and harms it. **Medical parasitology** studies protozoa (**protozoology**), helminths (**helminthology**) and arthropods (**arachnoentomology**) that parasitize humans."},
-   {"type": "table", "title": "Table 11.1. Basic terms of parasitology", "head": ["Term", "Definition"], "rows": [
-    ["Obligate and facultative parasite", "A parasite that can only live as a parasite, and one that can also live freely"],
-    ["Ecto- and endoparasite", "A parasite living on the surface of the host’s body (louse, tick) and inside it (helminths, protozoa)"],
-    ["Definitive host", "The host in which the parasite reproduces sexually or lives as an adult"],
-    ["Intermediate host", "The host in which the larval stage or asexual reproduction of the parasite takes place"],
-    ["Reservoir host", "An animal that maintains the parasite in nature and is a source for humans"],
-    ["Specific vector", "An arthropod inside which the parasite develops or multiplies (the malaria mosquito)"],
-    ["Mechanical vector", "Carries the agent unchanged on its body surface or in its gut (the house fly)"],
-    ["Vector-borne disease", "A disease transmitted by blood-sucking arthropods"],
-    ["Natural focal disease", "A disease whose agent circulates in nature among animals independently of humans (E.N. Pavlovsky’s doctrine)"]
-   ]},
-   {"type": "p", "text": "Parasites enter humans by the **oral** (alimentary), **airborne**, **contact** (skin, sexual), **vector-borne** (arthropod bites) and **transplacental** routes. They harm the host by **mechanical** action (tissue damage, blocking ducts), **toxic-allergic** action, **taking nutrients** and **opening the way to secondary infection**."}
-  ]},
-  {"title": "2. The phylum Protozoa. Flagellates — human parasites", "blocks": [
-   {"type": "p", "text": "**Protozoa** are eukaryotes consisting of a single cell that performs all vital functions as an independent organism. Organelles of movement: pseudopodia (sarcodines), flagella (flagellates), cilia (ciliates); sporozoa have no special organelles of movement. Under unfavorable conditions most of them form a **cyst** — this is important for their spread."},
-   {"type": "p", "text": "Members of the **class Flagellata** have one or more flagella, often an **undulating membrane** and a **kinetoplast** (a mass of mitochondrial DNA at the base of the flagellum); they reproduce by longitudinal binary fission."},
-   {"type": "table", "title": "Table 11.2. Flagellates parasitizing humans", "head": ["Parasite", "Disease and distribution", "Localization", "Transmission", "Diagnosis"], "rows": [
-    ["*Trypanosoma brucei gambiense, T. b. rhodesiense*", "African sleeping sickness; equatorial Africa", "Blood, lymph, cerebrospinal fluid", "Bite of the tsetse fly (*Glossina*) — vector-borne", "Trypanosomes in smears of blood, lymph node aspirate and CSF"],
-    ["*Trypanosoma cruzi*", "Chagas disease; South and Central America", "Heart muscle, nerve ganglia, blood", "Through feces of triatomine bugs via damaged skin and mucosa; blood transfusion", "Blood smear, serological methods"],
-    ["*Leishmania tropica, L. major*", "Cutaneous leishmaniasis (oriental sore); Central Asia, Middle East", "Skin macrophages", "Bite of the sandfly (*Phlebotomus*); reservoirs — dogs (urban type), gerbils (rural type)", "Non-flagellated (amastigote) forms in a smear from the edge of the ulcer"],
-    ["*Leishmania donovani, L. infantum*", "Visceral leishmaniasis (kala-azar); India, Central Asia", "Macrophages of the liver, spleen, bone marrow, lymph nodes", "Sandfly bite; reservoir — dogs, jackals", "Amastigotes in bone marrow aspirate, serology"],
-    ["*Trichomonas vaginalis*", "Urogenital trichomoniasis; everywhere", "Vagina, urethra, prostate", "Sexually; does not form cysts", "Wet and stained smears of discharge"],
-    ["*Trichomonas hominis, T. tenax*", "Intestinal and oral trichomoniasis (opportunistic)", "Large intestine; oral cavity", "Fecal-oral; kissing, utensils", "Smears of stool and dental plaque"],
-    ["*Lamblia (Giardia) intestinalis*", "Giardiasis; everywhere, common in children", "Duodenum and upper small intestine", "Through water, food and hands contaminated with cysts (fecal-oral)", "Cysts in stool, trophozoites in duodenal fluid"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t11_tripanosoma.webp", "w": 882, "h": 725, "lang": true, "label": "Figure 11.1", "caption": "Life cycle of the African trypanosome: metacyclic trypanosomes develop in the gut and salivary glands of the tsetse fly (vector) and pass by its bite to the vertebrate host (human, antelope) (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "The trophozoite of **Giardia** is pear-shaped, 10–18 µm long and bilaterally symmetrical: it has two nuclei, four pairs of flagella and a ventral **sucking disc**; with the disc it attaches to the intestinal epithelium and impairs absorption (Figure 11.2). Its cysts are oval, with 4 nuclei, and resistant in the environment."},
-   {"type": "img", "src": "data/img/bio/t11_lyambliya.webp", "w": 835, "h": 324, "lang": true, "label": "Figure 11.2", "caption": "*Lamblia intestinalis* — the trophozoite (left — diagram, two nuclei and flagella) and giardia on the surface of the intestinal epithelium as seen in the scanning electron microscope (P.Kh. Kholikov et al., 2022)."},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In Uzbekistan **cutaneous leishmaniasis** (oriental sore) forms natural foci in desert and semi-desert areas near gerbil burrows. A papule appears at the bite site and turns into a long-lasting ulcer that heals with a scar. Prevention: protection from sandflies (nets, repellents), control of rodents, vaccination."}]}
-  ]},
-  {"title": "3. Sporozoa: malaria plasmodia and toxoplasma", "blocks": [
-   {"type": "p", "text": "All members of the **class Sporozoa** are obligate parasites; they have no organelles of movement, and at the anterior end there is an **apical complex** for entering the host cell. Their life cycle alternates asexual reproduction (**schizogony**), sexual reproduction (**gametogony**) and **sporogony**."},
-   {"type": "p", "text": "**Malaria plasmodia** belong to the genus *Plasmodium*; the definitive host and specific vector is the female **Anopheles** mosquito, and the intermediate host is the human (Figure 11.3)."},
-   {"type": "list", "ordered": true, "items": [
-    "When the mosquito bites, **sporozoites** enter the blood with its saliva and within 30 minutes enter liver cells.",
-    "**Tissue (pre-erythrocytic) schizogony** — multiplication in the liver cell produces thousands of **merozoites** (incubation period). In *P. vivax* and *P. ovale* some sporozoites become dormant **hypnozoites** — the cause of late relapses of the disease.",
-    "**Erythrocytic schizogony** — merozoites enter erythrocytes: ring trophozoite → amoeboid trophozoite → schizont → morula (8–24 merozoites). When the erythrocytes burst and merozoites enter the blood, a **malaria paroxysm** (chills, fever, sweating) occurs.",
-    "Some merozoites give rise to male and female **gametocytes**; they pass with blood into the mosquito.",
-    "In the mosquito’s stomach **gametogony** (fertilization → motile zygote — ookinete → oocyst) and **sporogony** (thousands of sporozoites in the oocyst) take place; sporozoites gather in the salivary glands."
-   ]},
-   {"type": "img", "src": "data/img/bio/t11_bezgak_sikl.webp", "w": 1041, "h": 719, "lang": true, "label": "Figure 11.3", "caption": "Life cycle of *Plasmodium falciparum*: the process in the Anopheles mosquito (gametogony and sporogony) and in the human body (tissue schizogony in the liver, erythrocytic schizogony in the blood, formation of gametocytes) (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 11.3. Differential diagnosis of malaria plasmodia", "head": ["Feature", "*P. vivax*", "*P. ovale*", "*P. malariae*", "*P. falciparum*"], "rows": [
-    ["Disease", "Tertian malaria", "Ovale malaria (tertian)", "Quartan malaria", "Tropical malaria"],
-    ["Interval between paroxysms", "48 hours", "48 hours", "72 hours", "Irregular, often 48 hours"],
-    ["Infected erythrocyte", "Enlarged, pale, Schüffner’s dots", "Oval, with fimbriated edges, James’s dots", "Unchanged or smaller", "Unchanged; several rings in one erythrocyte"],
-    ["Trophozoite", "Large amoeboid", "Compact", "Band form", "Small rings at the periphery"],
-    ["Morula (number of merozoites)", "12–24", "8–12", "6–12 (“rosette”)", "Rarely seen in peripheral blood"],
-    ["Gametocytes", "Round", "Round", "Round", "Crescent (banana) shaped"],
-    ["Hypnozoites (relapses)", "Present", "Present", "Absent", "Absent"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t11_plazmodiy.webp", "w": 721, "h": 345, "label": "Figure 11.4", "caption": "Differential diagnosis of plasmodia (blood smear): I — *P. vivax*; II — *P. malariae*; III — *P. ovale*; IV — *P. falciparum*. 1 — uninfected erythrocyte; 2–3 — ring-form schizonts; 4–6 — various stages of the parasite; 7 — schizont; 8 — morula; 9 — female gametocyte; 10 — male gametocyte (P.Kh. Kholikov et al., 2022)."},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Diagnosis — a **thick drop** and a **thin smear** taken during a paroxysm are stained by the Romanowsky-Giemsa method and examined; rapid antigen tests are also used. **Tropical malaria** is the most dangerous: infected erythrocytes stick to capillaries, causing cerebral malaria and death. Every person with fever returning from a malaria area must be tested immediately. Uzbekistan was certified malaria-free by the WHO in 2018."}]},
-   {"type": "p", "text": "**Toxoplasma** (*Toxoplasma gondii*) is an intracellular parasite shaped like a crescent or an orange segment, 4–7 µm long and 2–4 µm wide. **The definitive host is the cat** (sexual reproduction in its intestine, oocysts in feces); the **intermediate hosts** are humans and many mammals and birds (cysts in tissues). It enters humans through hands, vegetables and water contaminated with oocysts, through undercooked meat containing cysts and by the **transplacental** route. Primary infection in pregnancy causes fetal death, hydrocephalus, chorioretinitis and calcifications in the brain; in immunodeficiency (AIDS) it causes severe encephalitis. Diagnosis — serology (IgM, IgG), PCR."},
-   {"type": "p", "text": "**Coccidia** (*Isospora*, *Cryptosporidium*) parasitize the intestinal epithelium and cause diarrhea; cryptosporidiosis is severe in patients with AIDS."}
-  ]},
-  {"title": "4. Intestinal parasites: the dysentery amoeba and balantidium", "blocks": [
-   {"type": "p", "text": "The **dysentery amoeba** (*Entamoeba histolytica*, class Sarcodina) is the agent of **amoebiasis**; it is widespread in tropical and subtropical countries, including Central Asia. It lives in the large intestine and occurs in several forms (Figure 11.5):"},
-   {"type": "list", "ordered": false, "items": [
-    "**small vegetative (luminal) form** — 15–20 µm, feeds on bacteria and does not cause disease (carrier state);",
-    "**large vegetative, tissue and erythrophagous form** — 30–40 µm, invades the intestinal wall, forms ulcers and **ingests erythrocytes** (the main diagnostic sign);",
-    "**cyst** — 10–15 µm, with 4 nuclei, the invasive form; survives for a long time in the environment."
-   ]},
-   {"type": "img", "src": "data/img/bio/t11_amyoba.webp", "w": 845, "h": 538, "lang": true, "label": "Figure 11.5", "caption": "Various forms of the dysentery amoeba: tissue form, small vegetative form, cyst and the hematophagous (erythrophagous) form with ingested erythrocytes (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "Humans swallow cysts with contaminated water, unwashed fruit and vegetables, hands and flies. Amoebiasis causes **diarrhea with blood and mucus** (“raspberry jelly”), abdominal pain and ulcers in the large intestine; complications are intestinal perforation and **liver abscess**. Diagnosis — tissue forms with ingested erythrocytes in a wet smear of fresh stool (within 15–20 minutes), cysts in remission; endoscopy, serology."},
-   {"type": "p", "text": "**Intestinal balantidium** (*Balantidium coli*, class Ciliata) is the only ciliate that parasitizes humans and the largest protozoan (50–80 µm). Its body is covered with cilia; it has a large (macronucleus) and a small (micronucleus) nucleus, a mouth opening (cytostome) and contractile vacuoles. **The main reservoir is the pig**; pig farm workers are affected more often. It forms ulcers in the wall of the large intestine and causes **balantidiasis** with bloody-purulent diarrhea. Diagnosis — motile trophozoites and cysts in stool."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Prevention of intestinal protozoan infections is common to all: drinking boiled water, washing fruit and vegetables, washing hands before meals and after the toilet, fly control, examining food workers and treating carriers."}]}
-  ]}
+  {
+   "title": "1. Basic concepts of parasitology",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Parasitism** is a form of relationship in which one organism (the parasite) uses another (the host) as its habitat and source of food and harms it. **Medical parasitology** studies protozoa (**protozoology**), helminths (**helminthology**) and arthropods (**arachnoentomology**) that parasitize humans."
+    },
+    {
+     "type": "table",
+     "title": "Table 11.1. Basic terms of parasitology",
+     "head": [
+      "Term",
+      "Definition"
+     ],
+     "rows": [
+      [
+       "Obligate and facultative parasite",
+       "A parasite that can only live as a parasite, and one that can also live freely"
+      ],
+      [
+       "Ecto- and endoparasite",
+       "A parasite living on the surface of the host’s body (louse, tick) and inside it (helminths, protozoa)"
+      ],
+      [
+       "Definitive host",
+       "The host in which the parasite reproduces sexually or lives as an adult"
+      ],
+      [
+       "Intermediate host",
+       "The host in which the larval stage or asexual reproduction of the parasite takes place"
+      ],
+      [
+       "Reservoir host",
+       "An animal that maintains the parasite in nature and is a source for humans"
+      ],
+      [
+       "Specific vector",
+       "An arthropod inside which the parasite develops or multiplies (the malaria mosquito)"
+      ],
+      [
+       "Mechanical vector",
+       "Carries the agent unchanged on its body surface or in its gut (the house fly)"
+      ],
+      [
+       "Vector-borne disease",
+       "A disease transmitted by blood-sucking arthropods"
+      ],
+      [
+       "Natural focal disease",
+       "A disease whose agent circulates in nature among animals independently of humans (E.N. Pavlovsky’s doctrine)"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Parasites enter humans by the **oral** (alimentary), **airborne**, **contact** (skin, sexual), **vector-borne** (arthropod bites) and **transplacental** routes. They harm the host by **mechanical** action (tissue damage, blocking ducts), **toxic-allergic** action, **taking nutrients** and **opening the way to secondary infection**."
+    },
+    {
+     "type": "h",
+     "text": "Mutual adaptations of parasite and host"
+    },
+    {
+     "type": "table",
+     "title": "Table 11.2. Adaptations of parasites to a parasitic way of life",
+     "head": [
+      "Adaptation",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Morphological: attachment organs",
+       "Suckers, hooks (tapeworms), sucking disc (Giardia), toothed buccal capsule (hookworm)"
+      ],
+      [
+       "Morphological: protective coverings",
+       "Cuticle and tegument resistant to digestive enzymes, cyst walls and egg shells"
+      ],
+      [
+       "Reduction of some organs",
+       "Absence of a digestive system in tapeworms, simplified sense organs"
+      ],
+      [
+       "Increased reproduction",
+       "Ascaris lays up to 200 thousand eggs a day; hermaphroditism, parthenogenesis, multiplication of larvae"
+      ],
+      [
+       "Physiological and biochemical",
+       "Anaerobic respiration (glycolysis), production of anti-enzymes"
+      ],
+      [
+       "Evasion of immunity",
+       "Changing antigens (trypanosomes), living inside cells (Leishmania, Plasmodium), “masking” with host antigens (schistosomes)"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**The doctrine of natural focality** (E.N. Pavlovsky, 1939): the agents of some diseases circulate in nature independently of humans — between wild animals (reservoirs) and vectors. A person becomes infected on entering such a focus (for example, a desert inhabited by gerbils). A natural focus has three links: the **agent**, the **reservoir host** and the **vector** (and the landscape where they live). Cutaneous leishmaniasis, tick-borne encephalitis, tularaemia and plague are examples of natural-focal diseases."
+    },
+    {
+     "type": "table",
+     "title": "Table 11.3. Methods of diagnosing parasitic diseases",
+     "head": [
+      "Method",
+      "Material examined and examples"
+     ],
+     "rows": [
+      [
+       "Microscopic (parasitological)",
+       "Faeces — cysts, eggs; blood — plasmodia, trypanosomes; scraping of a skin ulcer — leishmaniae; discharges — trichomonads"
+      ],
+      [
+       "Serological (immunological)",
+       "Antibodies (IgM — recent, IgG — past infection) and antigens in blood; toxoplasmosis, echinococcosis, amoebiasis"
+      ],
+      [
+       "Molecular (PCR)",
+       "Detection of parasite DNA — very sensitive"
+      ],
+      [
+       "Instrumental",
+       "Ultrasound, CT, X-ray — liver abscess, echinococcal cysts, calcifications"
+      ],
+      [
+       "Biological (bioassay)",
+       "Material is injected into a laboratory animal (toxoplasmosis, trypanosomiases)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. The phylum Protozoa. Flagellates — human parasites",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Protozoa** are eukaryotes consisting of a single cell that performs all vital functions as an independent organism. Organelles of movement: pseudopodia (sarcodines), flagella (flagellates), cilia (ciliates); sporozoa have no special organelles of movement. Under unfavorable conditions most of them form a **cyst** — this is important for their spread."
+    },
+    {
+     "type": "p",
+     "text": "Members of the **class Flagellata** have one or more flagella, often an **undulating membrane** and a **kinetoplast** (a mass of mitochondrial DNA at the base of the flagellum); they reproduce by longitudinal binary fission."
+    },
+    {
+     "type": "table",
+     "title": "Table 11.4. Flagellates parasitizing humans",
+     "head": [
+      "Parasite",
+      "Disease and distribution",
+      "Localization",
+      "Transmission",
+      "Diagnosis"
+     ],
+     "rows": [
+      [
+       "*Trypanosoma brucei gambiense, T. b. rhodesiense*",
+       "African sleeping sickness; equatorial Africa",
+       "Blood, lymph, cerebrospinal fluid",
+       "Bite of the tsetse fly (*Glossina*) — vector-borne",
+       "Trypanosomes in smears of blood, lymph node aspirate and CSF"
+      ],
+      [
+       "*Trypanosoma cruzi*",
+       "Chagas disease; South and Central America",
+       "Heart muscle, nerve ganglia, blood",
+       "Through feces of triatomine bugs via damaged skin and mucosa; blood transfusion",
+       "Blood smear, serological methods"
+      ],
+      [
+       "*Leishmania tropica, L. major*",
+       "Cutaneous leishmaniasis (oriental sore); Central Asia, Middle East",
+       "Skin macrophages",
+       "Bite of the sandfly (*Phlebotomus*); reservoirs — dogs (urban type), gerbils (rural type)",
+       "Non-flagellated (amastigote) forms in a smear from the edge of the ulcer"
+      ],
+      [
+       "*Leishmania donovani, L. infantum*",
+       "Visceral leishmaniasis (kala-azar); India, Central Asia",
+       "Macrophages of the liver, spleen, bone marrow, lymph nodes",
+       "Sandfly bite; reservoir — dogs, jackals",
+       "Amastigotes in bone marrow aspirate, serology"
+      ],
+      [
+       "*Trichomonas vaginalis*",
+       "Urogenital trichomoniasis; everywhere",
+       "Vagina, urethra, prostate",
+       "Sexually; does not form cysts",
+       "Wet and stained smears of discharge"
+      ],
+      [
+       "*Trichomonas hominis, T. tenax*",
+       "Intestinal and oral trichomoniasis (opportunistic)",
+       "Large intestine; oral cavity",
+       "Fecal-oral; kissing, utensils",
+       "Smears of stool and dental plaque"
+      ],
+      [
+       "*Lamblia (Giardia) intestinalis*",
+       "Giardiasis; everywhere, common in children",
+       "Duodenum and upper small intestine",
+       "Through water, food and hands contaminated with cysts (fecal-oral)",
+       "Cysts in stool, trophozoites in duodenal fluid"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_tripanosoma.webp",
+     "w": 882,
+     "h": 725,
+     "lang": true,
+     "label": "Figure 11.1",
+     "caption": "Life cycle of the African trypanosome: metacyclic trypanosomes develop in the gut and salivary glands of the tsetse fly (vector) and pass by its bite to the vertebrate host (human, antelope) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_shagas.webp",
+     "label": "Figure 11.2",
+     "caption": "Circulation of the agent of American trypanosomiasis (Chagas disease): the triatomine bug (1) passes trypanosomes in its faeces while sucking blood, and they enter through a wound in the skin of a human (2); reservoirs are the armadillo and other wild animals (3) (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The life cycle of Leishmania has two forms: the **amastigote** (leishmanial, without a flagellum) — inside macrophages of humans and animals, oval, 2–5 µm, with a nucleus and kinetoplast; and the **promastigote** (leptomonad, flagellated) — in the sandfly gut and in culture, elongated, 10–20 µm, with one flagellum at the front end. When a sandfly sucks the blood of an infected person or animal it swallows amastigotes, which turn into promastigotes in its gut, multiply and pass to a human at the next bite."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_visseral.webp",
+     "label": "Figure 11.3",
+     "caption": "Life cycle of visceral leishmaniasis: reservoir hosts — the dog and jackal, vector — the sandfly; humans are infected by the sandfly bite (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**Visceral leishmaniasis (kala-azar)** runs with prolonged undulating fever, marked enlargement of the liver and especially the spleen, anaemia, leucopenia and wasting; untreated it is fatal. Diagnosis is by finding amastigotes inside macrophages in a sternal or splenic aspirate. In Central Asia the main reservoirs are dogs and jackals, and children are affected more often."
+    },
+    {
+     "type": "p",
+     "text": "The trophozoite of **Giardia** is pear-shaped, 10–18 µm long and bilaterally symmetrical: it has two nuclei, four pairs of flagella and a ventral **sucking disc**; with the disc it attaches to the intestinal epithelium and impairs absorption (Figure 11.4). Its cysts are oval, with 4 nuclei, and resistant in the environment."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_lyambliya.webp",
+     "w": 835,
+     "h": 324,
+     "lang": true,
+     "label": "Figure 11.4",
+     "caption": "*Lamblia intestinalis* — the trophozoite (left — diagram, two nuclei and flagella) and giardia on the surface of the intestinal epithelium as seen in the scanning electron microscope (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_lyambliya_sikl.webp",
+     "label": "Figure 11.5",
+     "caption": "Life cycle of Giardia: cysts are swallowed with contaminated food and water, turn into the vegetative form and multiply in the small intestine, then form cysts again in the large intestine and are passed in the faeces (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_trixomonada.webp",
+     "label": "Figure 11.6",
+     "caption": "*Trichomonas vaginalis* — a pear-shaped parasite with four anterior flagella, an undulating membrane and an axostyle (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Trichomoniasis** is the most widespread sexually transmitted parasitic disease. *T. vaginalis* causes vaginitis in women (frothy, foul-smelling discharge, itching) and urethritis and prostatitis in men; it often runs without symptoms. Because it forms no cysts, it dies quickly in the environment. Both sexual partners are treated at the same time (metronidazole), otherwise re-infection occurs."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In Uzbekistan **cutaneous leishmaniasis** (oriental sore) forms natural foci in desert and semi-desert areas near gerbil burrows. A papule appears at the bite site and turns into a long-lasting ulcer that heals with a scar. Prevention: protection from sandflies (nets, repellents), control of rodents, vaccination."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Sporozoa: malaria plasmodia and toxoplasma",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "All members of the **class Sporozoa** are obligate parasites; they have no organelles of movement, and at the anterior end there is an **apical complex** for entering the host cell. Their life cycle alternates asexual reproduction (**schizogony**), sexual reproduction (**gametogony**) and **sporogony**."
+    },
+    {
+     "type": "p",
+     "text": "**Malaria plasmodia** belong to the genus *Plasmodium*; the definitive host and specific vector is the female **Anopheles** mosquito, and the intermediate host is the human (Figure 11.7)."
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "When the mosquito bites, **sporozoites** enter the blood with its saliva and within 30 minutes enter liver cells.",
+      "**Tissue (pre-erythrocytic) schizogony** — multiplication in the liver cell produces thousands of **merozoites** (incubation period). In *P. vivax* and *P. ovale* some sporozoites become dormant **hypnozoites** — the cause of late relapses of the disease.",
+      "**Erythrocytic schizogony** — merozoites enter erythrocytes: ring trophozoite → amoeboid trophozoite → schizont → morula (8–24 merozoites). When the erythrocytes burst and merozoites enter the blood, a **malaria paroxysm** (chills, fever, sweating) occurs.",
+      "Some merozoites give rise to male and female **gametocytes**; they pass with blood into the mosquito.",
+      "In the mosquito’s stomach **gametogony** (fertilization → motile zygote — ookinete → oocyst) and **sporogony** (thousands of sporozoites in the oocyst) take place; sporozoites gather in the salivary glands."
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_bezgak_sikl.webp",
+     "w": 1041,
+     "h": 719,
+     "lang": true,
+     "label": "Figure 11.7",
+     "caption": "Life cycle of *Plasmodium falciparum*: the process in the Anopheles mosquito (gametogony and sporogony) and in the human body (tissue schizogony in the liver, erythrocytic schizogony in the blood, formation of gametocytes) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 11.5. Differential diagnosis of malaria plasmodia",
+     "head": [
+      "Feature",
+      "*P. vivax*",
+      "*P. ovale*",
+      "*P. malariae*",
+      "*P. falciparum*"
+     ],
+     "rows": [
+      [
+       "Disease",
+       "Tertian malaria",
+       "Ovale malaria (tertian)",
+       "Quartan malaria",
+       "Tropical malaria"
+      ],
+      [
+       "Interval between paroxysms",
+       "48 hours",
+       "48 hours",
+       "72 hours",
+       "Irregular, often 48 hours"
+      ],
+      [
+       "Infected erythrocyte",
+       "Enlarged, pale, Schüffner’s dots",
+       "Oval, with fimbriated edges, James’s dots",
+       "Unchanged or smaller",
+       "Unchanged; several rings in one erythrocyte"
+      ],
+      [
+       "Trophozoite",
+       "Large amoeboid",
+       "Compact",
+       "Band form",
+       "Small rings at the periphery"
+      ],
+      [
+       "Morula (number of merozoites)",
+       "12–24",
+       "8–12",
+       "6–12 (“rosette”)",
+       "Rarely seen in peripheral blood"
+      ],
+      [
+       "Gametocytes",
+       "Round",
+       "Round",
+       "Round",
+       "Crescent (banana) shaped"
+      ],
+      [
+       "Hypnozoites (relapses)",
+       "Present",
+       "Present",
+       "Absent",
+       "Absent"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_plazmodiy.webp",
+     "w": 721,
+     "h": 345,
+     "label": "Figure 11.8",
+     "caption": "Differential diagnosis of plasmodia (blood smear): I — *P. vivax*; II — *P. malariae*; III — *P. ovale*; IV — *P. falciparum*. 1 — uninfected erythrocyte; 2–3 — ring-form schizonts; 4–6 — various stages of the parasite; 7 — schizont; 8 — morula; 9 — female gametocyte; 10 — male gametocyte (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Diagnosis — a **thick drop** and a **thin smear** taken during a paroxysm are stained by the Romanowsky-Giemsa method and examined; rapid antigen tests are also used. **Tropical malaria** is the most dangerous: infected erythrocytes stick to capillaries, causing cerebral malaria and death. Every person with fever returning from a malaria area must be tested immediately. Uzbekistan was certified malaria-free by the WHO in 2018."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 11.6. Clinical and parasitological features of the forms of malaria",
+     "head": [
+      "Form",
+      "Agent",
+      "Periodicity of attacks",
+      "Features"
+     ],
+     "rows": [
+      [
+       "Tertian",
+       "*P. vivax*",
+       "Every 48 hours (every third day)",
+       "Late relapses due to hypnozoites"
+      ],
+      [
+       "Ovale malaria",
+       "*P. ovale*",
+       "48 hours",
+       "Mild course; hypnozoites present"
+      ],
+      [
+       "Quartan",
+       "*P. malariae*",
+       "Every 72 hours (every fourth day)",
+       "May persist for years, kidney damage possible"
+      ],
+      [
+       "Falciparum (tropical) malaria",
+       "*P. falciparum*",
+       "Irregular, 36–48 hours",
+       "Cerebral malaria, may lead to coma; high risk of death"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Control and prevention of malaria:** early detection and treatment of patients (artemisinin drugs, chloroquine; primaquine against hypnozoites in *P. vivax* and *P. ovale*), draining or treating water bodies against mosquito larvae, spraying houses with insecticide, insecticide-treated nets, and **chemoprophylaxis** for people travelling to endemic areas. Uzbekistan was certified malaria-free by the World Health Organization in 2018, but the risk of imported cases remains."
+    },
+    {
+     "type": "p",
+     "text": "**Toxoplasma** (*Toxoplasma gondii*) is an intracellular parasite shaped like a crescent or an orange segment, 4–7 µm long and 2–4 µm wide. **The definitive host is the cat** (sexual reproduction in its intestine, oocysts in feces); the **intermediate hosts** are humans and many mammals and birds (cysts in tissues). It enters humans through hands, vegetables and water contaminated with oocysts, through undercooked meat containing cysts and by the **transplacental** route. Primary infection in pregnancy causes fetal death, hydrocephalus, chorioretinitis and calcifications in the brain; in immunodeficiency (AIDS) it causes severe encephalitis. Diagnosis — serology (IgM, IgG), PCR."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_toksoplazma.webp",
+     "label": "Figure 11.9",
+     "caption": "Circulation of Toxoplasma: definitive host — the cat (sexual reproduction in its gut, oocysts passed in the faeces); intermediate hosts — birds, mammals and humans; humans are infected through vegetables contaminated with oocysts and undercooked meat, and the fetus from the mother through the placenta (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**Congenital toxoplasmosis** develops if the mother is infected **for the first time** during pregnancy: early in pregnancy the risk of transmission is low but the consequences are severe (miscarriage, hydrocephalus, intracranial calcifications, chorioretinitis — the **classic triad**), while late in pregnancy transmission is frequent but mild. The fetus of a woman who had antibodies (IgG) to Toxoplasma before pregnancy is not at risk. Prevention: cooking meat well, washing vegetables, wearing gloves when handling cat faeces and soil, and serological testing of pregnant women."
+    },
+    {
+     "type": "p",
+     "text": "**Coccidia** (*Isospora*, *Cryptosporidium*) parasitize the intestinal epithelium and cause diarrhea; cryptosporidiosis is severe in patients with AIDS."
+    }
+   ]
+  },
+  {
+   "title": "4. Intestinal parasites: the dysentery amoeba and balantidium",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **dysentery amoeba** (*Entamoeba histolytica*, class Sarcodina) is the agent of **amoebiasis**; it is widespread in tropical and subtropical countries, including Central Asia. It lives in the large intestine and occurs in several forms (Figure 11.10):"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**small vegetative (luminal) form** — 15–20 µm, feeds on bacteria and does not cause disease (carrier state);",
+      "**large vegetative, tissue and erythrophagous form** — 30–40 µm, invades the intestinal wall, forms ulcers and **ingests erythrocytes** (the main diagnostic sign);",
+      "**cyst** — 10–15 µm, with 4 nuclei, the invasive form; survives for a long time in the environment."
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_amyoba.webp",
+     "w": 845,
+     "h": 538,
+     "lang": true,
+     "label": "Figure 11.10",
+     "caption": "Various forms of the dysentery amoeba: tissue form, small vegetative form, cyst and the hematophagous (erythrophagous) form with ingested erythrocytes (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Humans swallow cysts with contaminated water, unwashed fruit and vegetables, hands and flies. Amoebiasis causes **diarrhea with blood and mucus** (“raspberry jelly”), abdominal pain and ulcers in the large intestine; complications are intestinal perforation and **liver abscess**. Diagnosis — tissue forms with ingested erythrocytes in a wet smear of fresh stool (within 15–20 minutes), cysts in remission; endoscopy, serology."
+    },
+    {
+     "type": "p",
+     "text": "Extra-intestinal complications of amoebiasis: the tissue form passes with the blood through the portal vein to the **liver** and forms an **amoebic abscess** (usually in the right lobe; fever, pain under the right ribs); lung and brain abscesses are less common. In diagnosis, finding **tissue forms that have engulfed red cells** in the faeces is important; cysts or small vegetative forms alone indicate carrier status. Among free-living amoebae, *Naegleria fowleri* enters through the nose when swimming in warm fresh water and causes acute **amoebic meningoencephalitis**."
+    },
+    {
+     "type": "p",
+     "text": "**Intestinal balantidium** (*Balantidium coli*, class Ciliata) is the only ciliate that parasitizes humans and the largest protozoan (50–80 µm). Its body is covered with cilia; it has a large (macronucleus) and a small (micronucleus) nucleus, a mouth opening (cytostome) and contractile vacuoles. **The main reservoir is the pig**; pig farm workers are affected more often. It forms ulcers in the wall of the large intestine and causes **balantidiasis** with bloody-purulent diarrhea. Diagnosis — motile trophozoites and cysts in stool."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t11_balantidiy.webp",
+     "label": "Figure 11.11",
+     "caption": "*Balantidium coli*: the vegetative form (cilia, cytostome, macro- and micronucleus, contractile vacuoles) and the cyst (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Prevention of intestinal protozoan infections is common to all: drinking boiled water, washing fruit and vegetables, washing hands before meals and after the toilet, fly control, examining food workers and treating carriers."
+      }
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: identifying malaria plasmodium in a blood smear", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Examine the stained blood smear under the immersion objective.",
-    "Find parasites with blue cytoplasm and a red nucleus inside erythrocytes.",
-    "Assess the size of the infected erythrocyte (enlarged or not), its shape and the presence of dots.",
-    "Identify the stages of the parasite: ring, amoeboid trophozoite, schizont, morula, gametocyte.",
-    "If there are several small rings in one erythrocyte and crescent-shaped gametocytes, conclude *P. falciparum*.",
-    "Confirm the result with the table (Table 11.3) and inform the doctor immediately."
-   ]}
-  ]}
+  {
+   "title": "Skill: identifying malaria plasmodium in a blood smear",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Examine the stained blood smear under the immersion objective.",
+      "Find parasites with blue cytoplasm and a red nucleus inside erythrocytes.",
+      "Assess the size of the infected erythrocyte (enlarged or not), its shape and the presence of dots.",
+      "Identify the stages of the parasite: ring, amoeboid trophozoite, schizont, morula, gametocyte.",
+      "If there are several small rings in one erythrocyte and crescent-shaped gametocytes, conclude *P. falciparum*.",
+      "Confirm the result with the table (Table 11.5) and inform the doctor immediately."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "What is parasitism? Name the types of parasites and hosts.",
@@ -114,45 +573,349 @@
   "Name the differential diagnosis of the species of malaria plasmodia.",
   "What are the life cycle and routes of transmission of toxoplasma? Why is it dangerous in pregnancy?",
   "Explain the forms, pathogenic effect and diagnosis of the dysentery amoeba.",
-  "What are the structure and medical importance of intestinal balantidium?"
+  "What are the structure and medical importance of intestinal balantidium?",
+  "What adaptations do parasites have to a parasitic way of life?",
+  "What is E.N. Pavlovsky's doctrine of natural focality?",
+  "Name the methods of diagnosing parasitic diseases.",
+  "Where are the amastigote and promastigote forms of Leishmania found?",
+  "What are the signs and diagnosis of visceral leishmaniasis?",
+  "How do the forms of malaria differ in the periodicity of attacks?",
+  "When does congenital toxoplasmosis develop and how is it prevented?",
+  "Name the extra-intestinal complications of amoebiasis."
  ],
  "quiz": [
-  {"q": "What is the host in which the parasite reproduces sexually called?", "options": ["Definitive", "Intermediate", "Reservoir", "Vector", "Additional"], "answer": 0},
-  {"q": "Which is the vector of African sleeping sickness?", "options": ["Tsetse fly", "Sandfly", "Anopheles mosquito", "Triatomine bug", "Louse"], "answer": 0},
-  {"q": "Who transmits the agent of cutaneous leishmaniasis?", "options": ["Sandfly (Phlebotomus)", "Tsetse fly", "Culex mosquito", "Ixodid tick", "Flea"], "answer": 0},
-  {"q": "Where is the parasite mainly located in visceral leishmaniasis?", "options": ["In macrophages of the liver, spleen and bone marrow", "In skin macrophages", "In erythrocytes", "In the large intestine", "In the vagina"], "answer": 0},
-  {"q": "Which flagellate does not form cysts and is transmitted sexually?", "options": ["Trichomonas vaginalis", "Lamblia intestinalis", "Leishmania tropica", "Trypanosoma cruzi", "Trichomonas hominis"], "answer": 0},
-  {"q": "In which human organ does giardia live?", "options": ["In the duodenum and small intestine", "In the large intestine", "In the blood", "In liver cells", "Under the skin"], "answer": 0},
-  {"q": "Who is the definitive host of the malaria plasmodium?", "options": ["The female Anopheles mosquito", "The human", "The cat", "The pig", "The Culex mosquito"], "answer": 0},
-  {"q": "What causes late relapses of malaria?", "options": ["Hypnozoites in the liver", "Gametocytes", "Oocysts", "Sporozoites remaining in the blood", "Cysts"], "answer": 0},
-  {"q": "Crescent-shaped gametocytes are typical of which plasmodium?", "options": ["P. falciparum", "P. vivax", "P. malariae", "P. ovale", "All of them"], "answer": 0},
-  {"q": "What is the interval between paroxysms in quartan malaria?", "options": ["72 hours", "48 hours", "24 hours", "96 hours", "36 hours"], "answer": 0},
-  {"q": "Who is the definitive host of toxoplasma?", "options": ["The cat", "The human", "The dog", "The cow", "The mosquito"], "answer": 0},
-  {"q": "What is the most important sign in the diagnosis of amoebiasis?", "options": ["Tissue forms with ingested erythrocytes", "Cysts with 4 nuclei", "Small vegetative forms", "Flagella", "Cilia"], "answer": 0},
-  {"q": "How many nuclei does a cyst of the dysentery amoeba have?", "options": ["4", "1", "2", "8", "16"], "answer": 0},
-  {"q": "Which is the only ciliate that parasitizes humans?", "options": ["Balantidium coli", "Paramecium caudatum", "Entamoeba coli", "Giardia lamblia", "Toxoplasma gondii"], "answer": 0},
-  {"q": "Which animal is the main reservoir of balantidium?", "options": ["The pig", "The cat", "The dog", "The gerbil", "The sheep"], "answer": 0}
+  {
+   "q": "What is the host in which the parasite reproduces sexually called?",
+   "options": [
+    "Definitive",
+    "Intermediate",
+    "Reservoir",
+    "Vector",
+    "Additional"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which is the vector of African sleeping sickness?",
+   "options": [
+    "Tsetse fly",
+    "Sandfly",
+    "Anopheles mosquito",
+    "Triatomine bug",
+    "Louse"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who transmits the agent of cutaneous leishmaniasis?",
+   "options": [
+    "Sandfly (Phlebotomus)",
+    "Tsetse fly",
+    "Culex mosquito",
+    "Ixodid tick",
+    "Flea"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Where is the parasite mainly located in visceral leishmaniasis?",
+   "options": [
+    "In macrophages of the liver, spleen and bone marrow",
+    "In skin macrophages",
+    "In erythrocytes",
+    "In the large intestine",
+    "In the vagina"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which flagellate does not form cysts and is transmitted sexually?",
+   "options": [
+    "Trichomonas vaginalis",
+    "Lamblia intestinalis",
+    "Leishmania tropica",
+    "Trypanosoma cruzi",
+    "Trichomonas hominis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which human organ does giardia live?",
+   "options": [
+    "In the duodenum and small intestine",
+    "In the large intestine",
+    "In the blood",
+    "In liver cells",
+    "Under the skin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who is the definitive host of the malaria plasmodium?",
+   "options": [
+    "The female Anopheles mosquito",
+    "The human",
+    "The cat",
+    "The pig",
+    "The Culex mosquito"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What causes late relapses of malaria?",
+   "options": [
+    "Hypnozoites in the liver",
+    "Gametocytes",
+    "Oocysts",
+    "Sporozoites remaining in the blood",
+    "Cysts"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Crescent-shaped gametocytes are typical of which plasmodium?",
+   "options": [
+    "P. falciparum",
+    "P. vivax",
+    "P. malariae",
+    "P. ovale",
+    "All of them"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the interval between paroxysms in quartan malaria?",
+   "options": [
+    "72 hours",
+    "48 hours",
+    "24 hours",
+    "96 hours",
+    "36 hours"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who is the definitive host of toxoplasma?",
+   "options": [
+    "The cat",
+    "The human",
+    "The dog",
+    "The cow",
+    "The mosquito"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the most important sign in the diagnosis of amoebiasis?",
+   "options": [
+    "Tissue forms with ingested erythrocytes",
+    "Cysts with 4 nuclei",
+    "Small vegetative forms",
+    "Flagella",
+    "Cilia"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many nuclei does a cyst of the dysentery amoeba have?",
+   "options": [
+    "4",
+    "1",
+    "2",
+    "8",
+    "16"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which is the only ciliate that parasitizes humans?",
+   "options": [
+    "Balantidium coli",
+    "Paramecium caudatum",
+    "Entamoeba coli",
+    "Giardia lamblia",
+    "Toxoplasma gondii"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which animal is the main reservoir of balantidium?",
+   "options": [
+    "The pig",
+    "The cat",
+    "The dog",
+    "The gerbil",
+    "The sheep"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who created the doctrine of natural focality?",
+   "options": [
+    "E.N. Pavlovsky",
+    "I.I. Mechnikov",
+    "K.I. Skryabin",
+    "L. Pasteur",
+    "R. Koch"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the flagella-free form of Leishmania inside human macrophages called?",
+   "options": [
+    "Amastigote",
+    "Promastigote",
+    "Trophozoite",
+    "Sporozoite",
+    "Gametocyte"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which agent causes malaria with attacks every 72 hours?",
+   "options": [
+    "*P. malariae*",
+    "*P. vivax*",
+    "*P. ovale*",
+    "*P. falciparum*",
+    "*Toxoplasma gondii*"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is NOT part of the classic triad of congenital toxoplasmosis?",
+   "options": [
+    "Polydactyly",
+    "Hydrocephalus",
+    "Intracranial calcifications",
+    "Chorioretinitis",
+    "All are included"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the most common extra-intestinal complication of amoebiasis?",
+   "options": [
+    "Liver abscess",
+    "Myocarditis",
+    "Kidney stone",
+    "Cataract",
+    "Arthritis"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "Workers who spent 2 months surveying gas fields in the Kyzylkum desert developed slowly healing ulcers on the exposed parts of their bodies.", "ask": "What can you say about the nature and origin of this disease?", "answer": "This is the rural (zoonotic) type of cutaneous leishmaniasis — the agent is *Leishmania major*. In the natural focus the reservoir is gerbils and the vector is sandflies; they breed near burrows and bite exposed parts of the body at night. A papule appears at the bite site, then a wet ulcer that heals with a scar in a few months. Diagnosis: amastigotes in a smear from the edge of the ulcer. Prevention: nets, repellents, rodent control, vaccination."},
-  {"title": "Case 2", "text": "A person who had worked in equatorial Africa developed drowsiness, weakness and headache that are getting worse.", "ask": "What disease could this be? Is it contagious to others?", "answer": "African trypanosomiasis (sleeping sickness), caused by *Trypanosoma brucei gambiense* or *T. b. rhodesiense*. The parasite multiplies first in the blood and lymph and then in the central nervous system, causing drowsiness, weakness and encephalitis. Diagnosis: smears of blood, lymph node aspirate and cerebrospinal fluid. It is not transmitted directly from person to person — only by the tsetse fly (vector-borne); since there are no tsetse flies in Uzbekistan, it will not spread to others."},
-  {"title": "Case 3", "text": "A pregnant woman had a spontaneous abortion. Parasites 4–7 µm long and 2–4 µm wide, shaped like a crescent or an orange segment, were found in the abortion material.", "ask": "What caused the death of the fetus?", "answer": "This is *Toxoplasma gondii* — congenital toxoplasmosis. The woman was infected for the first time during pregnancy (through oocysts in cat feces or cysts in undercooked meat); the parasite crossed the placenta into the fetus, damaged its tissues and caused its death. Prevention: serological testing before pregnancy, thorough cooking of meat, not handling cat litter without gloves, washing fruit and vegetables."}
+  {
+   "title": "Case 1",
+   "text": "Workers who spent 2 months surveying gas fields in the Kyzylkum desert developed slowly healing ulcers on the exposed parts of their bodies.",
+   "ask": "What can you say about the nature and origin of this disease?",
+   "answer": "This is the rural (zoonotic) type of cutaneous leishmaniasis — the agent is *Leishmania major*. In the natural focus the reservoir is gerbils and the vector is sandflies; they breed near burrows and bite exposed parts of the body at night. A papule appears at the bite site, then a wet ulcer that heals with a scar in a few months. Diagnosis: amastigotes in a smear from the edge of the ulcer. Prevention: nets, repellents, rodent control, vaccination."
+  },
+  {
+   "title": "Case 2",
+   "text": "A person who had worked in equatorial Africa developed drowsiness, weakness and headache that are getting worse.",
+   "ask": "What disease could this be? Is it contagious to others?",
+   "answer": "African trypanosomiasis (sleeping sickness), caused by *Trypanosoma brucei gambiense* or *T. b. rhodesiense*. The parasite multiplies first in the blood and lymph and then in the central nervous system, causing drowsiness, weakness and encephalitis. Diagnosis: smears of blood, lymph node aspirate and cerebrospinal fluid. It is not transmitted directly from person to person — only by the tsetse fly (vector-borne); since there are no tsetse flies in Uzbekistan, it will not spread to others."
+  },
+  {
+   "title": "Case 3",
+   "text": "A pregnant woman had a spontaneous abortion. Parasites 4–7 µm long and 2–4 µm wide, shaped like a crescent or an orange segment, were found in the abortion material.",
+   "ask": "What caused the death of the fetus?",
+   "answer": "This is *Toxoplasma gondii* — congenital toxoplasmosis. The woman was infected for the first time during pregnancy (through oocysts in cat feces or cysts in undercooked meat); the parasite crossed the placenta into the fetus, damaged its tissues and caused its death. Prevention: serological testing before pregnancy, thorough cooking of meat, not handling cat litter without gloves, washing fruit and vegetables."
+  },
+  {
+   "title": "Case 4",
+   "text": "A soldier returning from Afghanistan has repeated attacks every third day (every 48 hours) with chills, high fever and heavy sweating. 8 months after treatment the attacks recurred.",
+   "ask": "Which agent should be suspected? What is the cause of the late relapse and how should it be treated?",
+   "answer": "A 48-hour periodicity is typical of **tertian malaria** (*P. vivax*) or ovale malaria. Attacks occur when red cells burst and merozoites and toxins enter the blood. Late relapses are due to activation of **hypnozoites** dormant in the liver. Diagnosis is by examining a thick drop and a thin smear during an attack. Treatment combines a drug against erythrocytic forms (chloroquine or artemisinin drugs) with **primaquine**, which kills hypnozoites (G6PD deficiency is checked first, because primaquine causes haemolysis in it)."
+  },
+  {
+   "title": "Case 5",
+   "text": "A woman at week 10 of pregnancy keeps a cat at home and was not tested for Toxoplasma before pregnancy. She is worried about the risk of toxoplasmosis.",
+   "ask": "What tests and advice should be given?",
+   "answer": "**IgG and IgM antibodies** to Toxoplasma are measured in the blood. If IgG is positive and IgM negative, the woman was infected earlier and is immune; the fetus is not at risk. If both are negative, she has no immunity: prevention must be strict and tests repeated during pregnancy. If IgM is positive, a new infection is possible; additional tests and, if needed, PCR of amniotic fluid are done. Advice: let someone else clean the cat's litter tray (or wear gloves and clean it daily), do not feed the cat raw meat, cook meat well, wash vegetables and wear gloves when gardening."
+  },
+  {
+   "title": "Case 6",
+   "text": "A 5-year-old child attending kindergarten has poor appetite, intermittent abdominal pain, frothy fatty diarrhoea and weight loss.",
+   "ask": "What parasitic disease should be considered? What are the diagnosis and prevention?",
+   "answer": "**Giardiasis** (*Lamblia intestinalis*) should be considered. Giardia attach with the sucking disc to the epithelium of the duodenum and small intestine and impair absorption (especially of fats) — hence the fatty diarrhoea and weight loss. Diagnosis: vegetative forms in fresh faeces, **cysts** in formed faeces (repeated tests several times) or Giardia antigen in faeces. The disease spreads by the faecal-oral route, especially quickly in children's groups; prevention is hand hygiene, boiled water, cleaning toys and testing family contacts."
+  }
  ],
  "cards": [
-  {"front": "Definitive host", "back": "The host in which the parasite reproduces sexually or lives as an adult"},
-  {"front": "Vector-borne disease", "back": "Transmitted by blood-sucking arthropods (malaria, leishmaniasis)"},
-  {"front": "Cutaneous leishmaniasis", "back": "L. tropica, L. major; sandfly; reservoir — dog, gerbil"},
-  {"front": "Giardia", "back": "2 nuclei, 4 pairs of flagella, sucking disc; duodenum"},
-  {"front": "Trichomonas vaginalis", "back": "Urogenital trichomoniasis; sexual route; no cyst"},
-  {"front": "Malaria cycle", "back": "In humans — schizogony (liver, erythrocyte); in the mosquito — gametogony and sporogony"},
-  {"front": "P. falciparum", "back": "Tropical malaria; many small rings, crescent-shaped gametocytes"},
-  {"front": "Toxoplasma", "back": "Definitive host — the cat; transmitted transplacentally"},
-  {"front": "Dysentery amoeba", "back": "Erythrophagous tissue form; cyst with 4 nuclei; amoebiasis"},
-  {"front": "Balantidium coli", "back": "The only parasitic ciliate; reservoir — the pig"}
+  {
+   "front": "Definitive host",
+   "back": "The host in which the parasite reproduces sexually or lives as an adult"
+  },
+  {
+   "front": "Vector-borne disease",
+   "back": "Transmitted by blood-sucking arthropods (malaria, leishmaniasis)"
+  },
+  {
+   "front": "Cutaneous leishmaniasis",
+   "back": "L. tropica, L. major; sandfly; reservoir — dog, gerbil"
+  },
+  {
+   "front": "Giardia",
+   "back": "2 nuclei, 4 pairs of flagella, sucking disc; duodenum"
+  },
+  {
+   "front": "Trichomonas vaginalis",
+   "back": "Urogenital trichomoniasis; sexual route; no cyst"
+  },
+  {
+   "front": "Malaria cycle",
+   "back": "In humans — schizogony (liver, erythrocyte); in the mosquito — gametogony and sporogony"
+  },
+  {
+   "front": "P. falciparum",
+   "back": "Tropical malaria; many small rings, crescent-shaped gametocytes"
+  },
+  {
+   "front": "Toxoplasma",
+   "back": "Definitive host — the cat; transmitted transplacentally"
+  },
+  {
+   "front": "Dysentery amoeba",
+   "back": "Erythrophagous tissue form; cyst with 4 nuclei; amoebiasis"
+  },
+  {
+   "front": "Balantidium coli",
+   "back": "The only parasitic ciliate; reservoir — the pig"
+  },
+  {
+   "front": "Natural focus",
+   "back": "An area where agent, reservoir and vector circulate independently of humans (Pavlovsky)"
+  },
+  {
+   "front": "Amastigote",
+   "back": "Flagella-free form of Leishmania inside macrophages"
+  },
+  {
+   "front": "Hypnozoites",
+   "back": "Dormant liver forms of *P. vivax* and *P. ovale* — late relapses"
+  },
+  {
+   "front": "Congenital toxoplasmosis",
+   "back": "Primary maternal infection in pregnancy; hydrocephalus, calcifications, chorioretinitis"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "The malaria mosquito is the **definitive host** and the human the **intermediate host**; in toxoplasma the definitive host is the **cat**."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Malaria periodicity: **“Vivax and Ovale — every 3rd day, Malariae — every 4th day, Falciparum — fatal (tropical)”**."},
-  {"kind": "klinik", "label": "Clinical significance", "text": "The blood of every feverish patient returning from the tropics is tested for malaria at once; serological testing for toxoplasmosis in pregnant women prevents congenital defects."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "The malaria mosquito is the **definitive host** and the human the **intermediate host**; in toxoplasma the definitive host is the **cat**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Malaria periodicity: **“Vivax and Ovale — every 3rd day, Malariae — every 4th day, Falciparum — fatal (tropical)”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "The blood of every feverish patient returning from the tropics is tested for malaria at once; serological testing for toxoplasmosis in pregnant women prevents congenital defects."
+  }
  ]
 }

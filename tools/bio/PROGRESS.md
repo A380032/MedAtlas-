@@ -19,3 +19,10 @@ Holat:
 - [x] catalog.json (biologiya: ready), lang-en.js, precache, en/manifest, sw.js v1.1.20
 - [x] mahalliy sinov (uz/en: fan sahifasi, mavzu, kitob, inglizcha rasmlar)
 - [ ] push — faqat egasi "push qil" desa
+
+Kengaytirish (2026-11-20, foydalanuvchi so'rovi: "barcha mavzularni ko'rib chiq va kengaytir"):
+- Ish skriptlari: /home/claude/chk/x/ (lib.py, apply.py, xNN.py — har mavzu uchun qo'shimchalar; apply.py NN git 3f68bfc dagi asl faylga qo'shib src ga yozadi, jadval/rasm raqamlarini qayta qo'yadi)
+- Yangi rasmlar: /home/claude/chk/x/addimg.py (darslik tbimg -> data/img/bio/*.webp); inglizcha nusxalari (lang:true) oxirida img_en.json ga qo'shiladi
+- [x] t01..t15 kengaytirildi (uz 317 -> 518 KB): yangi bo'limlar, jadvallar, yechimli masalalar, har mavzuga +3 vaziyatli masala, +5-6 test, +4-5 kartochka
+- [x] 55 ta yangi rasm darslikdan (jami 106 ta), ulardan 30 tasining inglizcha nusxasi (img_en.json, jami 71)
+- [x] PDF qayta yig'ildi: uz 244 bet, en 244 bet (oldin 158/157); precache, en/manifest yangilandi

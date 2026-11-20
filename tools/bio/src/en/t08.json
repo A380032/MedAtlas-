@@ -3,109 +3,551 @@
  "no": 8,
  "title": "Methods of studying human genetics: cytogenetic, dermatoglyphic and biochemical methods. Prenatal diagnosis",
  "goals": [
-  {"type": "p", "text": "To teach the student the methods of analyzing the human karyotype, the classification of chromosomes (Denver and Paris nomenclatures), the detection of sex chromatin and its medical importance, the basics of dermatoglyphic analysis, biochemical, molecular genetic and immunogenetic methods, and the methods of prenatal diagnosis."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the stages of karyotype preparation and the methods of staining chromosomes;",
-   "the Denver groups of chromosomes (A–G);",
-   "sex X chromatin (the Barr body) and “drumsticks”, and the Lyon hypothesis;",
-   "the types of finger and palm patterns, the atd angle and dermatoglyphic changes in diseases;",
-   "screening and biochemical tests, PCR, FISH and the methods of prenatal diagnosis."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "read a karyogram and write the karyotype formula;",
-   "determine the number of X chromosomes from the number of sex chromatin bodies;",
-   "determine the pattern type from a fingerprint and the atd angle on the palm."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the methods of analyzing the human karyotype, the classification of chromosomes (Denver and Paris nomenclatures), the detection of sex chromatin and its medical importance, the basics of dermatoglyphic analysis, biochemical, molecular genetic and immunogenetic methods, and the methods of prenatal diagnosis."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the stages of karyotype preparation and the methods of staining chromosomes;",
+    "the Denver groups of chromosomes (A–G);",
+    "sex X chromatin (the Barr body) and “drumsticks”, and the Lyon hypothesis;",
+    "the types of finger and palm patterns, the atd angle and dermatoglyphic changes in diseases;",
+    "screening and biochemical tests, PCR, FISH and the methods of prenatal diagnosis."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "read a karyogram and write the karyotype formula;",
+    "determine the number of X chromosomes from the number of sex chromatin bodies;",
+    "determine the pattern type from a fingerprint and the atd angle on the palm."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. The cytogenetic method and karyotype analysis", "blocks": [
-   {"type": "p", "text": "The **cytogenetic method** is the microscopic study of the number and structure of chromosomes. The number of human chromosomes was established precisely in 1956 by J. Tjio and A. Levan (2n = 46). **Peripheral blood lymphocytes** are most often used for the test, as well as bone marrow, skin fibroblasts, amniocytes and chorionic cells."},
-   {"type": "list", "ordered": true, "items": [
-    "Lymphocytes are cultured in a nutrient medium for 72 hours under the action of **phytohemagglutinin** (a mitogen).",
-    "Division is arrested in metaphase with **colchicine**.",
-    "The cells are treated with a **hypotonic solution** (0.075 M KCl) — they swell and the chromosomes spread out.",
-    "Fixation (methanol + acetic acid), dropping onto a slide and staining.",
-    "Metaphase plates are studied under the microscope and photographed, and a **karyogram** (chromosomes arranged in pairs) is made."
-   ]},
-   {"type": "p", "text": "**Staining methods:** routine staining allows chromosomes to be grouped only by size and shape; **differential staining** (G-, Q-, R- and C-banding) produces a specific pattern of transverse bands on each chromosome and makes it possible to identify each pair and small aberrations (Figure 8.1). Modern methods are **FISH** (fluorescence in situ hybridization) and chromosomal microarray analysis."},
-   {"type": "img", "src": "data/img/bio/t08_kariotip.webp", "w": 658, "h": 507, "label": "Figure 8.1", "caption": "Diagram of differentially stained human chromosomes (idiogram): 22 pairs of autosomes and the sex chromosomes (X, Y); the outlined pairs — 13, 18, 21 — are those most often involved in chromosomal diseases (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 8.1. Denver classification of human chromosomes (1960)", "head": ["Group", "Pairs", "Description"], "rows": [
-    ["A", "1–3", "The largest; 1 and 3 — metacentric, 2 — submetacentric"],
-    ["B", "4–5", "Large submetacentric"],
-    ["C", "6–12 and X", "Medium submetacentric"],
-    ["D", "13–15", "Medium acrocentric, with satellites"],
-    ["E", "16–18", "Small; 16 — metacentric, 17–18 — submetacentric"],
-    ["F", "19–20", "Small metacentric"],
-    ["G", "21–22 and Y", "The smallest acrocentric (Y — without satellites)"]
-   ]},
-   {"type": "p", "text": "**Karyotype notation (ISCN):** first the total number of chromosomes, then the sex chromosomes, then the anomaly: 46,XX — normal female; 46,XY — normal male; 47,XY,+21 — male with Down syndrome; 46,XX,5p^−^ — deletion of the short arm of chromosome 5; 46,XY/47,XY,+21 — mosaicism. Chromosome arms: p — short, q — long."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "An **idiogram** is a schematic drawing of chromosomes with their differentially stained bands. A **karyogram** is a picture of the chromosomes of a metaphase plate of a particular person arranged in pairs."}]}
-  ]},
-  {"title": "2. Sex chromatin", "blocks": [
-   {"type": "p", "text": "**Sex X chromatin (the Barr body)** is a small (≈ 1 µm), densely staining triangular or crescent-shaped body lying under the nuclear envelope in the interphase nucleus. It was discovered in 1949 by M. Barr and E. Bertram in cat neurons. The Barr body is an **inactivated X chromosome**."},
-   {"type": "p", "text": "**The Lyon hypothesis** (M. Lyon, 1961): in the somatic cells of a woman, at an early stage of embryonic development (about day 16), one of the X chromosomes is randomly inactivated and becomes heterochromatin. Because of this the female body is a **mosaic** of cells with an active paternal or maternal X chromosome; this equalizes the dosage of genes in males and females (**dosage compensation**)."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Number of Barr bodies = number of X chromosomes − 1.** 46,XY and 45,X — 0; 46,XX and 47,XXY — 1; 47,XXX and 48,XXXY — 2."}]},
-   {"type": "p", "text": "Sex chromatin is detected in the epithelium of the oral mucosa (buccal smear) and vaginal epithelium: the smear is stained with aceto-orcein or hematoxylin and 100 nuclei are counted. In a normal woman X chromatin is found in 20–40 % of nuclei, in a man in 0–2 %. In neutrophil leukocytes X chromatin appears as a **“drumstick”** projecting from the segmented nucleus (in 1–5 % of neutrophils in women) (Figure 8.2). **Y chromatin** is detected in male cells stained with quinacrine as a bright dot under the fluorescence microscope."},
-   {"type": "img", "src": "data/img/bio/t08_baraban.webp", "w": 1172, "h": 540, "lang": true, "label": "Figure 8.2", "caption": "Sex X chromatin in leukocytes and an epithelial cell: left — “drumsticks” on neutrophil nuclei, right — a Barr body in the nucleus of a buccal epithelial cell (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 8.2. Practical importance of detecting sex chromatin", "head": ["Field", "Use"], "rows": [
-    ["Diagnosis of chromosomal diseases", "Rapid diagnosis of Klinefelter (XXY — X chromatin present), Shereshevsky-Turner (45,X — absent) and X polysomy syndromes"],
-    ["Obstetrics and pediatrics", "Determining genetic sex in intersex conditions (ambiguous genitalia); determining fetal sex in amniocytes (in X-linked diseases)"],
-    ["Forensic medicine", "Determining sex from blood stains, hair roots and tissue remains"],
-    ["Oncology and transplantology", "Origin of tumor cells; whether transplanted bone marrow belongs to the donor or the recipient"],
-    ["Sports medicine", "Formerly used for sex verification in women’s competitions"]
-   ]}
-  ]},
-  {"title": "3. Dermatoglyphics", "blocks": [
-   {"type": "p", "text": "**Dermatoglyphics** is the study of the papillary ridges (patterns) on the skin of the fingers, palms and soles. The patterns form in months 3–6 of fetal life and do not change throughout life; they are inherited **polygenically**. **Dactyloscopy** studies finger patterns, **palmoscopy** palm patterns and **plantoscopy** sole patterns."},
-   {"type": "table", "title": "Table 8.3. Main types of finger patterns", "head": ["Type", "Structure", "Number of triradii", "Frequency in humans"], "rows": [
-    ["Arch (A)", "Ridges pass from one side to the other forming an arch", "0", "≈ 5 %"],
-    ["Loop (L)", "Ridges enter from one side and turn back to the same side; ulnar (open toward the ulna) and radial loops", "1", "≈ 65 %"],
-    ["Whorl (W)", "Concentric circles or a spiral", "2", "≈ 30 %"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t08_naqsh.webp", "w": 1263, "h": 850, "lang": true, "label": "Figure 8.3", "caption": "Ridge patterns on the skin of the fingers: top — photographs of arch, loop and whorl patterns; bottom — 1 — arch; 2 — loop; 3 — transition from loop to whorl; 4 — double loop (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "On the palm there are **triradii** (a, b, c, d) at the bases of four fingers and the **axial triradius t** near the wrist. The **atd angle** formed by joining points a, t and d is normally about 48°; when triradius t is displaced distally, the angle increases. The **flexion creases** of the palm are also analyzed."},
-   {"type": "table", "title": "Table 8.4. Dermatoglyphic signs in some chromosomal diseases", "head": ["Disease", "Main signs"], "rows": [
-    ["Down syndrome (47,+21)", "Many ulnar loops (up to 10); atd angle increased up to 80°; single transverse (“simian”) palmar crease; single flexion crease on finger V"],
-    ["Patau syndrome (47,+13)", "Many arches and radial loops, very large atd angle (> 100°), transverse crease"],
-    ["Edwards syndrome (47,+18)", "Arches on 6–10 fingers, transverse crease"],
-    ["Shereshevsky-Turner (45,X)", "Many whorls, increased total ridge count, increased atd angle"],
-    ["Klinefelter (47,XXY)", "More arches, decreased total ridge count"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Dermatoglyphics is a quick, cheap and painless **auxiliary** method used when chromosomal diseases are suspected, to determine the zygosity of twins and in forensic medicine (personal identification); the final diagnosis is made only by karyotyping."}]}
-  ]},
-  {"title": "4. Biochemical, molecular genetic and immunogenetic methods", "blocks": [
-   {"type": "p", "text": "The **biochemical method** detects hereditary disorders of metabolism (enzymopathies). It is carried out in two stages: (1) **screening (rapid)** — testing many people with simple qualitative reactions (for example, a green color when FeCl~3~ is added to urine in phenylketonuria; measuring phenylalanine and TSH in a drop of heel blood in newborns); (2) **confirmatory** — quantitative measurement of metabolites and enzyme activity in blood, urine and tissues (chromatography, electrophoresis, tandem mass spectrometry)."},
-   {"type": "p", "text": "**Molecular genetic methods** analyze at the DNA level: isolating DNA and RNA from biological material (blood, buccal epithelium, chorion, amniocytes), **PCR** (polymerase chain reaction — copying a desired DNA segment millions of times), cutting with restriction enzymes and gel electrophoresis, **sequencing** (reading the nucleotide sequence), hybridization with DNA probes and FISH. They are used to detect gene mutations and carriers, for prenatal diagnosis and to establish paternity."},
-   {"type": "p", "text": "The **immunogenetic method** studies the polymorphism of blood groups, erythrocyte and leukocyte antigens (the HLA system) and serum proteins by antigen-antibody reactions. It is used to select donors in transplantation, to prevent Rh incompatibility, to establish paternity and to assess predisposition to diseases. **Monoclonal antibodies** are identical antibodies obtained from a single cell clone (a hybridoma) and directed against one antigenic determinant; **polyclonal** antibodies come from different clones and are directed against several determinants of the antigen."}
-  ]},
-  {"title": "5. Prenatal diagnosis", "blocks": [
-   {"type": "p", "text": "**Prenatal diagnosis** is the detection of hereditary diseases and developmental defects in the fetus before birth. Its tasks are to prevent the birth of a child with a severe hereditary pathology, to plan pregnancy and delivery correctly and to start early treatment of some diseases."},
-   {"type": "table", "title": "Table 8.5. Methods of prenatal diagnosis", "head": ["Method", "Timing", "Essence"], "rows": [
-    ["Ultrasound examination", "11–14 and 18–21 weeks", "Developmental defects, nuchal translucency (a sign of Down syndrome)"],
-    ["Biochemical screening (maternal blood)", "11–14 and 16–18 weeks", "AFP, hCG, estriol, PAPP-A — risk of chromosomal diseases and neural tube defects"],
-    ["Fetal DNA in maternal blood (NIPT)", "From week 10", "Highly accurate non-invasive screening for trisomies"],
-    ["Chorionic villus sampling", "10–13 weeks", "Chorionic villi are taken: karyotype, DNA analysis"],
-    ["Amniocentesis", "15–20 weeks", "Amniotic fluid is taken: karyotype of amniocytes, sex chromatin, biochemical and DNA analysis (Figure 8.4)"],
-    ["Cordocentesis", "From week 18", "Fetal blood is taken from the umbilical cord"],
-    ["Fetoscopy", "18–20 weeks", "Direct viewing of the fetus with an endoscope"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t08_amniotsentez.webp", "w": 1379, "h": 594, "lang": true, "label": "Figure 8.4", "caption": "Examination of cells obtained from amniotic fluid (amniocentesis): the fluid around the fetus is taken; the cells are cultured for karyotyping, sex chromatin and biochemical tests (P.Kh. Kholikov et al., 2022)."},
-   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Invasive methods (chorionic villus sampling, amniocentesis, cordocentesis) carry a risk of miscarriage (≈ 0.5–1 %), so they are performed only when there is an **indication**: maternal age over 35, a chromosomal or gene disease in the family, a translocation carrier in a parent, or a screening result showing high risk."}]}
-  ]}
+  {
+   "title": "1. The cytogenetic method and karyotype analysis",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **cytogenetic method** is the microscopic study of the number and structure of chromosomes. The number of human chromosomes was established precisely in 1956 by J. Tjio and A. Levan (2n = 46). **Peripheral blood lymphocytes** are most often used for the test, as well as bone marrow, skin fibroblasts, amniocytes and chorionic cells."
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Lymphocytes are cultured in a nutrient medium for 72 hours under the action of **phytohemagglutinin** (a mitogen).",
+      "Division is arrested in metaphase with **colchicine**.",
+      "The cells are treated with a **hypotonic solution** (0.075 M KCl) — they swell and the chromosomes spread out.",
+      "Fixation (methanol + acetic acid), dropping onto a slide and staining.",
+      "Metaphase plates are studied under the microscope and photographed, and a **karyogram** (chromosomes arranged in pairs) is made."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Staining methods:** routine staining allows chromosomes to be grouped only by size and shape; **differential staining** (G-, Q-, R- and C-banding) produces a specific pattern of transverse bands on each chromosome and makes it possible to identify each pair and small aberrations (Figure 8.1). Modern methods are **FISH** (fluorescence in situ hybridization) and chromosomal microarray analysis."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_kariotip.webp",
+     "w": 658,
+     "h": 507,
+     "label": "Figure 8.1",
+     "caption": "Diagram of differentially stained human chromosomes (idiogram): 22 pairs of autosomes and the sex chromosomes (X, Y); the outlined pairs — 13, 18, 21 — are those most often involved in chromosomal diseases (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.1. Denver classification of human chromosomes (1960)",
+     "head": [
+      "Group",
+      "Pairs",
+      "Description"
+     ],
+     "rows": [
+      [
+       "A",
+       "1–3",
+       "The largest; 1 and 3 — metacentric, 2 — submetacentric"
+      ],
+      [
+       "B",
+       "4–5",
+       "Large submetacentric"
+      ],
+      [
+       "C",
+       "6–12 and X",
+       "Medium submetacentric"
+      ],
+      [
+       "D",
+       "13–15",
+       "Medium acrocentric, with satellites"
+      ],
+      [
+       "E",
+       "16–18",
+       "Small; 16 — metacentric, 17–18 — submetacentric"
+      ],
+      [
+       "F",
+       "19–20",
+       "Small metacentric"
+      ],
+      [
+       "G",
+       "21–22 and Y",
+       "The smallest acrocentric (Y — without satellites)"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_kariotip_er.webp",
+     "label": "Figure 8.2",
+     "caption": "Normal male karyotype: left — a metaphase spread, right — the karyogram (chromosomes arranged in Denver groups A–G, with X and Y shown separately) (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Karyotype notation (ISCN):** first the total number of chromosomes, then the sex chromosomes, then the anomaly: 46,XX — normal female; 46,XY — normal male; 47,XY,+21 — male with Down syndrome; 46,XX,5p^−^ — deletion of the short arm of chromosome 5; 46,XY/47,XY,+21 — mosaicism. Chromosome arms: p — short, q — long."
+    },
+    {
+     "type": "p",
+     "text": "**Band nomenclature.** In differential staining each arm (p — short, q — long) is divided, starting from the centromere, into **regions** and **bands**. For example, 5p15.2 is sub-band 2 of band 5 in region 1 of the short arm of chromosome 5; 7q31 is band 1 of region 3 of the long arm of chromosome 7 (the location of the cystic fibrosis gene). Abbreviations: del — deletion, dup — duplication, inv — inversion, t — translocation, r — ring chromosome, i — isochromosome; “mos” — mosaicism."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.2. Modern cytogenetic and molecular-cytogenetic methods",
+     "head": [
+      "Method",
+      "Essence",
+      "What it detects"
+     ],
+     "rows": [
+      [
+       "G-banding (routine karyotype)",
+       "Analysis at the 400–550-band level with trypsin and Giemsa stain",
+       "Aneuploidies, large rearrangements (larger than ≈ 5–10 million base pairs)"
+      ],
+      [
+       "FISH (fluorescence in situ hybridisation)",
+       "A DNA probe labelled with a fluorescent dye binds to the complementary region of a chromosome",
+       "Microdeletions (DiGeorge syndrome 22q11.2), trisomies in interphase nuclei"
+      ],
+      [
+       "Chromosomal microarray analysis (molecular karyotyping)",
+       "The patient's DNA is tested on a chip carrying thousands of probes",
+       "Small deletions and duplications; causes of intellectual disability and multiple defects"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Indications for karyotyping"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "Multiple congenital defects, delay in mental and physical development.",
+      "Disorders of sexual development, ambiguous genitalia, primary amenorrhoea.",
+      "Infertility, recurrent miscarriage, stillbirths.",
+      "A chromosomal disease in the family or a balanced translocation in one parent.",
+      "Leukaemias and other tumours (karyotype of tumour cells — for diagnosis and prognosis)."
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "An **idiogram** is a schematic drawing of chromosomes with their differentially stained bands. A **karyogram** is a picture of the chromosomes of a metaphase plate of a particular person arranged in pairs."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. Sex chromatin",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Sex X chromatin (the Barr body)** is a small (≈ 1 µm), densely staining triangular or crescent-shaped body lying under the nuclear envelope in the interphase nucleus. It was discovered in 1949 by M. Barr and E. Bertram in cat neurons. The Barr body is an **inactivated X chromosome**."
+    },
+    {
+     "type": "p",
+     "text": "**The Lyon hypothesis** (M. Lyon, 1961): in the somatic cells of a woman, at an early stage of embryonic development (about day 16), one of the X chromosomes is randomly inactivated and becomes heterochromatin. Because of this the female body is a **mosaic** of cells with an active paternal or maternal X chromosome; this equalizes the dosage of genes in males and females (**dosage compensation**)."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Number of Barr bodies = number of X chromosomes − 1.** 46,XY and 45,X — 0; 46,XX and 47,XXY — 1; 47,XXX and 48,XXXY — 2."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Sex chromatin is detected in the epithelium of the oral mucosa (buccal smear) and vaginal epithelium: the smear is stained with aceto-orcein or hematoxylin and 100 nuclei are counted. In a normal woman X chromatin is found in 20–40 % of nuclei, in a man in 0–2 %. In neutrophil leukocytes X chromatin appears as a **“drumstick”** projecting from the segmented nucleus (in 1–5 % of neutrophils in women) (Figure 8.3). **Y chromatin** is detected in male cells stained with quinacrine as a bright dot under the fluorescence microscope."
+    },
+    {
+     "type": "p",
+     "text": "**Y chromatin (F body)** — when male cells are stained with acriquine (quinacrine), the distal part of the long arm of the Y chromosome glows as a bright dot under ultraviolet light. In a normal man more than 50 % of nuclei contain one F body, and in the 47,XYY karyotype — two. Y chromatin can also be detected in sperm and amniocytes."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_baraban.webp",
+     "w": 1172,
+     "h": 540,
+     "lang": true,
+     "label": "Figure 8.3",
+     "caption": "Sex X chromatin in leukocytes and an epithelial cell: left — “drumsticks” on neutrophil nuclei, right — a Barr body in the nucleus of a buccal epithelial cell (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.3. Practical importance of detecting sex chromatin",
+     "head": [
+      "Field",
+      "Use"
+     ],
+     "rows": [
+      [
+       "Diagnosis of chromosomal diseases",
+       "Rapid diagnosis of Klinefelter (XXY — X chromatin present), Shereshevsky-Turner (45,X — absent) and X polysomy syndromes"
+      ],
+      [
+       "Obstetrics and pediatrics",
+       "Determining genetic sex in intersex conditions (ambiguous genitalia); determining fetal sex in amniocytes (in X-linked diseases)"
+      ],
+      [
+       "Forensic medicine",
+       "Determining sex from blood stains, hair roots and tissue remains"
+      ],
+      [
+       "Oncology and transplantology",
+       "Origin of tumor cells; whether transplanted bone marrow belongs to the donor or the recipient"
+      ],
+      [
+       "Sports medicine",
+       "Formerly used for sex verification in women’s competitions"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Dermatoglyphics",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Dermatoglyphics** is the study of the papillary ridges (patterns) on the skin of the fingers, palms and soles. The patterns form in months 3–6 of fetal life and do not change throughout life; they are inherited **polygenically**. **Dactyloscopy** studies finger patterns, **palmoscopy** palm patterns and **plantoscopy** sole patterns."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.4. Main types of finger patterns",
+     "head": [
+      "Type",
+      "Structure",
+      "Number of triradii",
+      "Frequency in humans"
+     ],
+     "rows": [
+      [
+       "Arch (A)",
+       "Ridges pass from one side to the other forming an arch",
+       "0",
+       "≈ 5 %"
+      ],
+      [
+       "Loop (L)",
+       "Ridges enter from one side and turn back to the same side; ulnar (open toward the ulna) and radial loops",
+       "1",
+       "≈ 65 %"
+      ],
+      [
+       "Whorl (W)",
+       "Concentric circles or a spiral",
+       "2",
+       "≈ 30 %"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_naqsh.webp",
+     "w": 1263,
+     "h": 850,
+     "lang": true,
+     "label": "Figure 8.4",
+     "caption": "Ridge patterns on the skin of the fingers: top — photographs of arch, loop and whorl patterns; bottom — 1 — arch; 2 — loop; 3 — transition from loop to whorl; 4 — double loop (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "On the palm there are **triradii** (a, b, c, d) at the bases of four fingers and the **axial triradius t** near the wrist. The **atd angle** formed by joining points a, t and d is normally about 48°; when triradius t is displaced distally, the angle increases. The **flexion creases** of the palm are also analyzed."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_kaft.webp",
+     "label": "Figure 8.5",
+     "caption": "Dermatoglyphic analysis of the palm: the a, b, c, d triradii at the bases of the fingers, the axial triradius t and measurement of the atd angle; palm areas and patterns are marked with numbers (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Ridge count** (TRC) is the number of papillary ridges counted between the centre of a pattern and the triradius; the total ridge count over ten fingers averages ≈ 145 in men and ≈ 127 in women. It depends on the number of sex chromosomes: it decreases as X chromosomes increase (low in Klinefelter syndrome) and increases in the 45,X karyotype."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_burmalar.webp",
+     "label": "Figure 8.6",
+     "caption": "The main flexion creases of the palm (1–5): finger-base creases, distal and proximal palmar creases, thenar crease and wrist crease; in Down syndrome creases 2 and 3 merge into a single transverse (“simian”) crease (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.5. Dermatoglyphic signs in some chromosomal diseases",
+     "head": [
+      "Disease",
+      "Main signs"
+     ],
+     "rows": [
+      [
+       "Down syndrome (47,+21)",
+       "Many ulnar loops (up to 10); atd angle increased up to 80°; single transverse (“simian”) palmar crease; single flexion crease on finger V"
+      ],
+      [
+       "Patau syndrome (47,+13)",
+       "Many arches and radial loops, very large atd angle (> 100°), transverse crease"
+      ],
+      [
+       "Edwards syndrome (47,+18)",
+       "Arches on 6–10 fingers, transverse crease"
+      ],
+      [
+       "Shereshevsky-Turner (45,X)",
+       "Many whorls, increased total ridge count, increased atd angle"
+      ],
+      [
+       "Klinefelter (47,XXY)",
+       "More arches, decreased total ridge count"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Dermatoglyphics is a quick, cheap and painless **auxiliary** method used when chromosomal diseases are suspected, to determine the zygosity of twins and in forensic medicine (personal identification); the final diagnosis is made only by karyotyping."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Biochemical, molecular genetic and immunogenetic methods",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **biochemical method** detects hereditary disorders of metabolism (enzymopathies). It is carried out in two stages: (1) **screening (rapid)** — testing many people with simple qualitative reactions (for example, a green color when FeCl~3~ is added to urine in phenylketonuria; measuring phenylalanine and TSH in a drop of heel blood in newborns); (2) **confirmatory** — quantitative measurement of metabolites and enzyme activity in blood, urine and tissues (chromatography, electrophoresis, tandem mass spectrometry)."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.6. Biochemical screening and confirmatory tests",
+     "head": [
+      "Test",
+      "Essence",
+      "For which disease"
+     ],
+     "rows": [
+      [
+       "Følling test",
+       "10 % iron (III) chloride is dropped into urine — a blue-green colour appears if phenylpyruvic acid is present",
+       "Phenylketonuria"
+      ],
+      [
+       "Guthrie test (microbiological)",
+       "Excess phenylalanine in a dried blood spot on filter paper is detected by bacterial growth",
+       "Phenylketonuria (newborn screening)"
+      ],
+      [
+       "Tandem mass spectrometry",
+       "Dozens of amino acids and acylcarnitines are measured in one blood spot",
+       "Aminoacidopathies, fatty-acid oxidation disorders"
+      ],
+      [
+       "Benedict test, chromatography",
+       "Detection of reducing sugars in urine",
+       "Galactosaemia, fructosaemia"
+      ],
+      [
+       "Sweat chloride test",
+       "Sweat Cl^−^ above 60 mmol/l",
+       "Cystic fibrosis"
+      ],
+      [
+       "Measurement of enzyme activity",
+       "Enzyme activity is measured in leucocytes or fibroblasts",
+       "Lysosomal storage diseases, carrier status"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Molecular genetic methods** analyze at the DNA level: isolating DNA and RNA from biological material (blood, buccal epithelium, chorion, amniocytes), **PCR** (polymerase chain reaction — copying a desired DNA segment millions of times), cutting with restriction enzymes and gel electrophoresis, **sequencing** (reading the nucleotide sequence), hybridization with DNA probes and FISH. They are used to detect gene mutations and carriers, for prenatal diagnosis and to establish paternity."
+    },
+    {
+     "type": "p",
+     "text": "The **immunogenetic method** studies the polymorphism of blood groups, erythrocyte and leukocyte antigens (the HLA system) and serum proteins by antigen-antibody reactions. It is used to select donors in transplantation, to prevent Rh incompatibility, to establish paternity and to assess predisposition to diseases. **Monoclonal antibodies** are identical antibodies obtained from a single cell clone (a hybridoma) and directed against one antigenic determinant; **polyclonal** antibodies come from different clones and are directed against several determinants of the antigen."
+    }
+   ]
+  },
+  {
+   "title": "5. Prenatal diagnosis",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Prenatal diagnosis** is the detection of hereditary diseases and developmental defects in the fetus before birth. Its tasks are to prevent the birth of a child with a severe hereditary pathology, to plan pregnancy and delivery correctly and to start early treatment of some diseases."
+    },
+    {
+     "type": "table",
+     "title": "Table 8.7. Methods of prenatal diagnosis",
+     "head": [
+      "Method",
+      "Timing",
+      "Essence"
+     ],
+     "rows": [
+      [
+       "Ultrasound examination",
+       "11–14 and 18–21 weeks",
+       "Developmental defects, nuchal translucency (a sign of Down syndrome)"
+      ],
+      [
+       "Biochemical screening (maternal blood)",
+       "11–14 and 16–18 weeks",
+       "AFP, hCG, estriol, PAPP-A — risk of chromosomal diseases and neural tube defects"
+      ],
+      [
+       "Fetal DNA in maternal blood (NIPT)",
+       "From week 10",
+       "Highly accurate non-invasive screening for trisomies"
+      ],
+      [
+       "Chorionic villus sampling",
+       "10–13 weeks",
+       "Chorionic villi are taken: karyotype, DNA analysis"
+      ],
+      [
+       "Amniocentesis",
+       "15–20 weeks",
+       "Amniotic fluid is taken: karyotype of amniocytes, sex chromatin, biochemical and DNA analysis (Figure 8.7)"
+      ],
+      [
+       "Cordocentesis",
+       "From week 18",
+       "Fetal blood is taken from the umbilical cord"
+      ],
+      [
+       "Fetoscopy",
+       "18–20 weeks",
+       "Direct viewing of the fetus with an endoscope"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 8.8. Biochemical markers in pregnancy screening",
+     "head": [
+      "Marker",
+      "In Down syndrome",
+      "In neural tube defects"
+     ],
+     "rows": [
+      [
+       "α-fetoprotein (AFP)",
+       "Decreased",
+       "Markedly increased"
+      ],
+      [
+       "Chorionic gonadotropin (hCG, its free β-subunit)",
+       "Increased",
+       "Unchanged"
+      ],
+      [
+       "Unconjugated oestriol",
+       "Decreased",
+       "Unchanged"
+      ],
+      [
+       "PAPP-A (pregnancy-associated plasma protein A)",
+       "Decreased (first trimester)",
+       "—"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "In first-trimester combined screening (weeks 11–14) the mother's age, the **nuchal translucency** on ultrasound (risk is high if it exceeds 3 mm) and blood hCG and PAPP-A are combined to calculate the risk of a chromosomal disease. If the risk is high (for example, greater than 1 : 100), the woman is offered an invasive test (chorionic villus sampling or amniocentesis) and determination of the fetal karyotype. Screening does not make a diagnosis; it only selects a risk group."
+    },
+    {
+     "type": "p",
+     "text": "**Preimplantation genetic diagnosis** — in in vitro fertilisation (IVF), 1–5 cells are taken from a 3–5-day embryo and tested for a chromosomal or gene disease, and only a healthy embryo is transferred to the uterus. In families with a high risk of severe hereditary disease it avoids the need to terminate a pregnancy."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t08_amniotsentez.webp",
+     "w": 1379,
+     "h": 594,
+     "lang": true,
+     "label": "Figure 8.7",
+     "caption": "Examination of cells obtained from amniotic fluid (amniocentesis): the fluid around the fetus is taken; the cells are cultured for karyotyping, sex chromatin and biochemical tests (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Invasive methods (chorionic villus sampling, amniocentesis, cordocentesis) carry a risk of miscarriage (≈ 0.5–1 %), so they are performed only when there is an **indication**: maternal age over 35, a chromosomal or gene disease in the family, a translocation carrier in a parent, or a screening result showing high risk."
+      }
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: detecting sex chromatin in a buccal smear", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "After rinsing the mouth with water, scrape the surface epithelial layer from the inner surface of the cheek with a sterile spatula (discard the first scraping).",
-    "Spread the material thinly on a slide and fix it in 96 % alcohol.",
-    "Stain with aceto-orcein for 3–5 minutes, remove the excess stain and cover with a coverslip.",
-    "Under the immersion objective look for dense triangular bodies beneath the nuclear envelope.",
-    "Count 100 well-stained nuclei and calculate the percentage of nuclei with X chromatin.",
-    "Evaluate the result: 20–40 % — female (XX), 0–2 % — male (XY); nuclei with two bodies indicate X polysomy."
-   ]}
-  ]}
+  {
+   "title": "Skill: detecting sex chromatin in a buccal smear",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "After rinsing the mouth with water, scrape the surface epithelial layer from the inner surface of the cheek with a sterile spatula (discard the first scraping).",
+      "Spread the material thinly on a slide and fix it in 96 % alcohol.",
+      "Stain with aceto-orcein for 3–5 minutes, remove the excess stain and cover with a coverslip.",
+      "Under the immersion objective look for dense triangular bodies beneath the nuclear envelope.",
+      "Count 100 well-stained nuclei and calculate the percentage of nuclei with X chromatin.",
+      "Evaluate the result: 20–40 % — female (XX), 0–2 % — male (XY); nuclei with two bodies indicate X polysomy."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "Explain the essence and stages of the cytogenetic method.",
@@ -121,45 +563,349 @@
   "Name the stages of the biochemical method and the types of analysis.",
   "Which methods are molecular genetic?",
   "What is the immunogenetic method? How do monoclonal and polyclonal antibodies differ?",
-  "Name the tasks and methods of prenatal diagnosis."
+  "Name the tasks and methods of prenatal diagnosis.",
+  "How are chromosome bands named? Explain the notation 5p15.2.",
+  "What are the advantages of FISH and chromosomal microarray analysis?",
+  "List the indications for karyotyping.",
+  "How is Y chromatin detected?",
+  "What is the ridge count and how does it depend on the number of sex chromosomes?",
+  "Which tests are used to detect phenylketonuria?",
+  "How do biochemical screening markers change in Down syndrome and neural tube defects?",
+  "What is preimplantation genetic diagnosis?"
  ],
  "quiz": [
-  {"q": "When was the exact number of human chromosomes (46) established?", "options": ["In 1956", "In 1900", "In 1953", "In 1865", "In 1961"], "answer": 0},
-  {"q": "What is added in karyotype analysis to arrest mitosis in metaphase?", "options": ["Colchicine", "Phytohemagglutinin", "Hypotonic KCl", "Aceto-orcein", "Trypsin"], "answer": 0},
-  {"q": "Which chromosomes belong to group D of the Denver classification?", "options": ["13–15", "1–3", "16–18", "19–20", "21–22"], "answer": 0},
-  {"q": "Which chromosomes belong to group G?", "options": ["21, 22 and Y", "6–12 and X", "4–5", "13–15", "19–20"], "answer": 0},
-  {"q": "What is the Barr body?", "options": ["An inactivated X chromosome", "The Y chromosome", "The nucleolus", "A mitochondrion", "An active X chromosome"], "answer": 0},
-  {"q": "How many Barr bodies are there in the 47,XXY karyotype?", "options": ["1", "0", "2", "3", "4"], "answer": 0},
-  {"q": "How many Barr bodies are there in the 48,XXXY karyotype?", "options": ["2", "1", "3", "0", "4"], "answer": 0},
-  {"q": "How does X chromatin look in neutrophils?", "options": ["A “drumstick”", "A triangular body", "A satellite", "A telomere", "A ring"], "answer": 0},
-  {"q": "According to the Lyon hypothesis, when is one of the X chromosomes inactivated in a woman?", "options": ["At an early stage of embryonic development", "At puberty", "At menopause", "Anew at each mitosis", "Only in the egg"], "answer": 0},
-  {"q": "Which finger pattern is the most common in humans?", "options": ["Loop", "Arch", "Whorl", "Double loop", "Mixed"], "answer": 0},
-  {"q": "A single transverse palmar crease and an increased atd angle are typical of which disease?", "options": ["Down syndrome", "Phenylketonuria", "Hemophilia", "Marfan syndrome", "Albinism"], "answer": 0},
-  {"q": "What color appears when FeCl~3~ is added to urine in phenylketonuria screening?", "options": ["Green", "Red", "Blue", "Yellow", "Violet"], "answer": 0},
-  {"q": "Which method copies a desired DNA segment millions of times?", "options": ["PCR", "Electrophoresis", "Karyotyping", "Dermatoglyphics", "Chromatography"], "answer": 0},
-  {"q": "At what stage of pregnancy is amniocentesis performed?", "options": ["15–20 weeks", "5–7 weeks", "10–13 weeks", "30–32 weeks", "38–40 weeks"], "answer": 0},
-  {"q": "Which prenatal method is non-invasive?", "options": ["Ultrasound examination", "Amniocentesis", "Chorionic villus sampling", "Cordocentesis", "Fetoscopy"], "answer": 0}
+  {
+   "q": "When was the exact number of human chromosomes (46) established?",
+   "options": [
+    "In 1956",
+    "In 1900",
+    "In 1953",
+    "In 1865",
+    "In 1961"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is added in karyotype analysis to arrest mitosis in metaphase?",
+   "options": [
+    "Colchicine",
+    "Phytohemagglutinin",
+    "Hypotonic KCl",
+    "Aceto-orcein",
+    "Trypsin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which chromosomes belong to group D of the Denver classification?",
+   "options": [
+    "13–15",
+    "1–3",
+    "16–18",
+    "19–20",
+    "21–22"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which chromosomes belong to group G?",
+   "options": [
+    "21, 22 and Y",
+    "6–12 and X",
+    "4–5",
+    "13–15",
+    "19–20"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the Barr body?",
+   "options": [
+    "An inactivated X chromosome",
+    "The Y chromosome",
+    "The nucleolus",
+    "A mitochondrion",
+    "An active X chromosome"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many Barr bodies are there in the 47,XXY karyotype?",
+   "options": [
+    "1",
+    "0",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many Barr bodies are there in the 48,XXXY karyotype?",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "0",
+    "4"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does X chromatin look in neutrophils?",
+   "options": [
+    "A “drumstick”",
+    "A triangular body",
+    "A satellite",
+    "A telomere",
+    "A ring"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "According to the Lyon hypothesis, when is one of the X chromosomes inactivated in a woman?",
+   "options": [
+    "At an early stage of embryonic development",
+    "At puberty",
+    "At menopause",
+    "Anew at each mitosis",
+    "Only in the egg"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which finger pattern is the most common in humans?",
+   "options": [
+    "Loop",
+    "Arch",
+    "Whorl",
+    "Double loop",
+    "Mixed"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "A single transverse palmar crease and an increased atd angle are typical of which disease?",
+   "options": [
+    "Down syndrome",
+    "Phenylketonuria",
+    "Hemophilia",
+    "Marfan syndrome",
+    "Albinism"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What color appears when FeCl~3~ is added to urine in phenylketonuria screening?",
+   "options": [
+    "Green",
+    "Red",
+    "Blue",
+    "Yellow",
+    "Violet"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which method copies a desired DNA segment millions of times?",
+   "options": [
+    "PCR",
+    "Electrophoresis",
+    "Karyotyping",
+    "Dermatoglyphics",
+    "Chromatography"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "At what stage of pregnancy is amniocentesis performed?",
+   "options": [
+    "15–20 weeks",
+    "5–7 weeks",
+    "10–13 weeks",
+    "30–32 weeks",
+    "38–40 weeks"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which prenatal method is non-invasive?",
+   "options": [
+    "Ultrasound examination",
+    "Amniocentesis",
+    "Chorionic villus sampling",
+    "Cordocentesis",
+    "Fetoscopy"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What does the symbol “t” mean in karyotype notation?",
+   "options": [
+    "Translocation",
+    "Trisomy",
+    "Telomere",
+    "Tetraploidy",
+    "Trypsin staining"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the most convenient method for detecting microdeletions (for example, 22q11.2)?",
+   "options": [
+    "FISH",
+    "Routine staining",
+    "Dermatoglyphics",
+    "Counting Barr bodies in a buccal smear",
+    "Følling test"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What substance is added to urine in the Følling test?",
+   "options": [
+    "Iron (III) chloride",
+    "Iodine solution",
+    "Colchicine",
+    "Potassium chloride",
+    "Methylene blue"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which marker in maternal blood rises sharply in neural tube defects?",
+   "options": [
+    "α-fetoprotein",
+    "PAPP-A",
+    "Oestriol",
+    "Insulin",
+    "Haemoglobin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many F bodies are seen in the nuclei of a normal man after quinacrine staining?",
+   "options": [
+    "1",
+    "0",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "When the cells of a newborn with a female phenotype were examined cytogenetically, the karyogram showed 44 autosomes and the X and Y chromosomes.", "ask": "What is the doctor’s conclusion?", "answer": "The karyotype is 46,XY — genetically male, while the phenotype is female. This is a disorder of sexual differentiation: most often a mutation of the androgen receptor gene (testicular feminization syndrome — the testes lie in the abdomen or the inguinal canal) or loss/mutation of the SRY gene (Swyer syndrome). No X chromatin is found in a buccal smear. Hormonal and molecular tests and consultation with an endocrinologist and a geneticist are needed."},
-  {"title": "Case 2", "text": "The karyogram of a child referred for genetic counseling showed trisomy for one of the chromosomes of group D (pairs 13–15).", "ask": "What is the doctor’s conclusion, and how can the exact pair be determined?", "answer": "Group D trisomy most often concerns pair 13 (Patau syndrome, 47,XX(XY),+13): microcephaly, cleft lip and palate, polydactyly, heart defects, microphthalmia. With routine staining chromosomes 13, 14 and 15 cannot be told apart, so the exact pair must be determined by differential (G-) banding or FISH."},
-  {"title": "Case 3", "text": "Buccal smears were examined in patients with the karyotypes 47,XXY; 48,XXYY; 48,XXXY.", "ask": "How many Barr bodies will there be in each case? Prove your answer.", "answer": "The number of Barr bodies is one less than the number of X chromosomes (the Lyon rule: all X chromosomes except one are inactivated). 47,XXY — 1; 48,XXYY — 1; 48,XXXY — 2. The number of Y chromosomes does not affect the number of Barr bodies. All are variants of Klinefelter syndrome; intellectual disability becomes more severe as the number of X chromosomes increases."}
+  {
+   "title": "Case 1",
+   "text": "When the cells of a newborn with a female phenotype were examined cytogenetically, the karyogram showed 44 autosomes and the X and Y chromosomes.",
+   "ask": "What is the doctor’s conclusion?",
+   "answer": "The karyotype is 46,XY — genetically male, while the phenotype is female. This is a disorder of sexual differentiation: most often a mutation of the androgen receptor gene (testicular feminization syndrome — the testes lie in the abdomen or the inguinal canal) or loss/mutation of the SRY gene (Swyer syndrome). No X chromatin is found in a buccal smear. Hormonal and molecular tests and consultation with an endocrinologist and a geneticist are needed."
+  },
+  {
+   "title": "Case 2",
+   "text": "The karyogram of a child referred for genetic counseling showed trisomy for one of the chromosomes of group D (pairs 13–15).",
+   "ask": "What is the doctor’s conclusion, and how can the exact pair be determined?",
+   "answer": "Group D trisomy most often concerns pair 13 (Patau syndrome, 47,XX(XY),+13): microcephaly, cleft lip and palate, polydactyly, heart defects, microphthalmia. With routine staining chromosomes 13, 14 and 15 cannot be told apart, so the exact pair must be determined by differential (G-) banding or FISH."
+  },
+  {
+   "title": "Case 3",
+   "text": "Buccal smears were examined in patients with the karyotypes 47,XXY; 48,XXYY; 48,XXXY.",
+   "ask": "How many Barr bodies will there be in each case? Prove your answer.",
+   "answer": "The number of Barr bodies is one less than the number of X chromosomes (the Lyon rule: all X chromosomes except one are inactivated). 47,XXY — 1; 48,XXYY — 1; 48,XXXY — 2. The number of Y chromosomes does not affect the number of Barr bodies. All are variants of Klinefelter syndrome; intellectual disability becomes more severe as the number of X chromosomes increases."
+  },
+  {
+   "title": "Case 4",
+   "text": "In a 38-year-old pregnant woman at week 12, ultrasound shows a nuchal translucency of 3,5 mm, the blood hCG β-subunit is raised and PAPP-A is lowered.",
+   "ask": "What risk should be considered and what is the next test?",
+   "answer": "The mother's age (over 35), increased nuchal translucency (over 3 mm), raised hCG and lowered PAPP-A together indicate a high risk of **Down syndrome (trisomy 21)**. Screening is not a diagnosis, so the woman is offered genetic counselling and **invasive prenatal diagnosis** — chorionic villus sampling at weeks 10–13 or amniocentesis at weeks 15–20 to **determine the fetal karyotype** (the miscarriage risk of ≈ 0,5–1 % is explained). An alternative is a cell-free fetal DNA test in maternal blood (NIPT); if it is positive, it is still confirmed by an invasive method."
+  },
+  {
+   "title": "Case 5",
+   "text": "In the maternity hospital, a blood spot taken on day 4 (Guthrie test) showed a high level of phenylalanine in a newborn. The baby looks healthy.",
+   "ask": "How is this result interpreted and what should be done?",
+   "answer": "This is suspected **phenylketonuria** (a newborn-screening result). To confirm the diagnosis, the blood phenylalanine level is measured again quantitatively and, if needed, DNA analysis of the phenylalanine hydroxylase gene is done. If confirmed, the baby is put at once on a **low-phenylalanine diet** — early diet prevents intellectual disability. It is natural that the baby looks healthy: signs appear after a few months, once phenylalanine has accumulated and damaged the brain. The parents receive genetic counselling (autosomal recessive, 25 % risk for the next child)."
+  },
+  {
+   "title": "Case 6",
+   "text": "A child with delayed mental development whose cry resembles a cat's mewing has the karyotype 46,XY,del(5)(p15).",
+   "ask": "Explain the karyotype notation. What syndrome is this?",
+   "answer": "46 — the total chromosome number is normal; XY — male sex; del(5)(p15) — **a deletion in band 15 of the short (p) arm of chromosome 5** (a segment is lost). This is **cri-du-chat syndrome** (5p^−^, Lejeune syndrome): a typical cry due to an underdeveloped larynx, microcephaly, a moon face, widely spaced eyes and intellectual disability. Because the chromosome number is unchanged, such defects are detected only by differential staining or FISH."
+  }
  ],
  "cards": [
-  {"front": "Material for karyotype analysis", "back": "Peripheral blood lymphocytes (phytohemagglutinin + colchicine)"},
-  {"front": "Denver classification", "back": "A (1–3), B (4–5), C (6–12, X), D (13–15), E (16–18), F (19–20), G (21–22, Y)"},
-  {"front": "Karyotype notation", "back": "Number, sex chromosomes, anomaly: 47,XY,+21"},
-  {"front": "Barr body", "back": "Inactivated X; number = number of X − 1"},
-  {"front": "Lyon hypothesis", "back": "In women one X is randomly inactivated in early embryogenesis"},
-  {"front": "“Drumstick”", "back": "X chromatin on the neutrophil nucleus"},
-  {"front": "Finger patterns", "back": "Arch (≈ 5 %), loop (≈ 65 %), whorl (≈ 30 %)"},
-  {"front": "atd angle", "back": "Normally ≈ 48°; up to 80° in Down syndrome"},
-  {"front": "PCR", "back": "Copying a DNA segment; diagnosis of mutations and infections"},
-  {"front": "Amniocentesis", "back": "15–20 weeks; karyotype and DNA analysis of amniocytes"}
+  {
+   "front": "Material for karyotype analysis",
+   "back": "Peripheral blood lymphocytes (phytohemagglutinin + colchicine)"
+  },
+  {
+   "front": "Denver classification",
+   "back": "A (1–3), B (4–5), C (6–12, X), D (13–15), E (16–18), F (19–20), G (21–22, Y)"
+  },
+  {
+   "front": "Karyotype notation",
+   "back": "Number, sex chromosomes, anomaly: 47,XY,+21"
+  },
+  {
+   "front": "Barr body",
+   "back": "Inactivated X; number = number of X − 1"
+  },
+  {
+   "front": "Lyon hypothesis",
+   "back": "In women one X is randomly inactivated in early embryogenesis"
+  },
+  {
+   "front": "“Drumstick”",
+   "back": "X chromatin on the neutrophil nucleus"
+  },
+  {
+   "front": "Finger patterns",
+   "back": "Arch (≈ 5 %), loop (≈ 65 %), whorl (≈ 30 %)"
+  },
+  {
+   "front": "atd angle",
+   "back": "Normally ≈ 48°; up to 80° in Down syndrome"
+  },
+  {
+   "front": "PCR",
+   "back": "Copying a DNA segment; diagnosis of mutations and infections"
+  },
+  {
+   "front": "Amniocentesis",
+   "back": "15–20 weeks; karyotype and DNA analysis of amniocytes"
+  },
+  {
+   "front": "FISH",
+   "back": "Detection of a specific chromosome region with a fluorescent DNA probe; microdeletions"
+  },
+  {
+   "front": "Y chromatin (F body)",
+   "back": "Glowing part of the Y chromosome after quinacrine staining"
+  },
+  {
+   "front": "Guthrie test",
+   "back": "Detection of phenylalanine in a dried blood spot — screening for phenylketonuria"
+  },
+  {
+   "front": "Nuchal translucency",
+   "back": "Ultrasound at weeks 11–14; over 3 mm — risk of chromosomal disease"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "The karyotype is the **“gold standard”** for diagnosing chromosomal diseases; dermatoglyphics and sex chromatin are auxiliary rapid methods."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Number of pairs in the Denver groups: **“3-2-7-3-3-2-2”** — autosome pairs in groups A, B, C, D, E, F, G (22 in total)."},
-  {"kind": "klinik", "label": "Clinical significance", "text": "Prenatal diagnosis (ultrasound, biochemical screening, NIPT, invasive methods) prevents the birth of children with severe hereditary pathology; invasive methods are used only when indicated."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "The karyotype is the **“gold standard”** for diagnosing chromosomal diseases; dermatoglyphics and sex chromatin are auxiliary rapid methods."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Number of pairs in the Denver groups: **“3-2-7-3-3-2-2”** — autosome pairs in groups A, B, C, D, E, F, G (22 in total)."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "Prenatal diagnosis (ultrasound, biochemical screening, NIPT, invasive methods) prevents the birth of children with severe hereditary pathology; invasive methods are used only when indicated."
+  }
  ]
 }

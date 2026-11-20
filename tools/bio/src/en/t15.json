@@ -3,67 +3,569 @@
  "no": 15,
  "title": "Onto-phylogenesis of organ systems: skin, skeleton, nervous system, circulation, endocrine system, excretory system. Ecology. The human as an ecological factor. The biosphere and its problems",
  "goals": [
-  {"type": "p", "text": "To teach the student the main lines of evolution of the organ systems of vertebrates, the phylogenetic causes of congenital defects found in humans (atavisms, rudiments), as well as the basics of ecology, the role of humans as an ecological factor and the problems of the biosphere."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the concepts of homologous and analogous organs, rudiments and atavisms;",
-   "the evolution of the integumentary, skeletal, circulatory, nervous, excretory, digestive, respiratory and endocrine systems;",
-   "the phylogenetically determined congenital defects found in humans;",
-   "the ecological factors, the doctrine of the biosphere and noosphere, and the genetic consequences of environmental pollution."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "compare the heart, arterial arches and brain of vertebrates of different classes;",
-   "explain whether a congenital defect is linked to the recurrence of an ancestral feature or to the disruption of an embryonic process."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the main lines of evolution of the organ systems of vertebrates, the phylogenetic causes of congenital defects found in humans (atavisms, rudiments), as well as the basics of ecology, the role of humans as an ecological factor and the problems of the biosphere."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the concepts of homologous and analogous organs, rudiments and atavisms;",
+    "the evolution of the integumentary, skeletal, circulatory, nervous, excretory, digestive, respiratory and endocrine systems;",
+    "the phylogenetically determined congenital defects found in humans;",
+    "the ecological factors, the doctrine of the biosphere and noosphere, and the genetic consequences of environmental pollution."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "compare the heart, arterial arches and brain of vertebrates of different classes;",
+    "explain whether a congenital defect is linked to the recurrence of an ancestral feature or to the disruption of an embryonic process."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. General patterns of organ evolution", "blocks": [
-   {"type": "p", "text": "The evolution of organs is studied by **evolutionary morphology** on the basis of data from **comparative anatomy**, **comparative embryology** and **palaeontology**. **Homologous organs** have the same origin and structural plan but may have different functions (the pectoral fin of a fish, the wing of a bird, the human arm). **Analogous organs** have the same function but a different origin (the wings of a butterfly and of a bird)."},
-   {"type": "p", "text": "**Rudiments** are vestigial organs that have lost their function in evolution and are retained in all people (the vermiform appendix, the coccygeal vertebrae, the muscles of the auricle, the semilunar fold of the eye). **Atavisms** are the reappearance of features of distant ancestors in individual people (a tail, hair covering the whole body — hypertrichosis, extra nipples — polymastia, cervical fistulae). Most atavisms result from structures present in the embryo failing to be remodelled in time: according to the **biogenetic law** (F. Müller, E. Haeckel), ontogenesis is a brief recapitulation of phylogenesis."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Phylogenetically determined defects in humans arise by two mechanisms: 1) **persistence** of an embryonic structure (tail, cervical fistulae, patent ductus arteriosus); 2) **arrest** of organ development at an ancestral stage (three-chambered heart, pelvic kidney, right aortic arch)."}]}
-  ]},
-  {"title": "2. The integument, skeleton, digestive and respiratory systems", "blocks": [
-   {"type": "p", "text": "**Integument.** In invertebrates the skin consists of a single-layered epithelium and a cuticle. In vertebrates the skin has two layers: the stratified **epidermis** develops from ectoderm and the **dermis** from mesoderm. Skin derivatives change from class to class: bony and **placoid scales** in fish (their homologue is the teeth of mammals), mucous glands in amphibians, horny scales in reptiles, feathers in birds, and hair, sweat, sebaceous and **mammary glands** in mammals. Anomalies: **ichthyosis** (a hereditary disorder of the horny layer, in which the skin comes to resemble fish scales), hypertrichosis, polymastia (extra nipples along the milk lines)."},
-   {"type": "p", "text": "**Skeleton.** In the lancelet the axial skeleton is the **notochord**; in vertebrates it is replaced by the vertebral column. The skull consists of the braincase and the **visceral skeleton** derived from the gill arches (the auditory ossicles, the hyoid bone and the laryngeal cartilages are derivatives of the gill arches). The five-digit limb arose from the fin of lobe-finned fish. Anomalies: cervical ribs, **spina bifida**, polydactyly, syndactyly, **Sprengel's deformity** (failure of the scapula to descend from its embryonic position in the neck)."},
-   {"type": "p", "text": "**Digestive and respiratory systems.** In the evolution of the gut tube we see its division into sections, its lengthening and the appearance of digestive glands. Only mammals form a **secondary palate**; failure of it to close is **cleft palate**. In the embryo the gut tube is temporarily occluded and then reopened (**recanalization**); if this process is disrupted, **atresia and stenosis** of the oesophagus, duodenum or intestine result. The respiratory organs develop from the gill pouches and from an outgrowth of the floor of the pharynx: gills in fish, lungs in land vertebrates, alveolar lungs in mammals. Anomalies: **tracheo-oesophageal fistula**, aplasia of a lung or a lung lobe."}
-  ]},
-  {"title": "3. Evolution of the circulatory system", "blocks": [
-   {"type": "p", "text": "The line of evolution is the **improvement of the heart** and the **separation of arterial and venous blood**. **The lancelet** has no heart; blood is moved by contractions of the ventral aorta, and there is one circulation. **In fish** the heart has two chambers (atrium and ventricle) and contains only venous blood; there is one circulation. **In amphibians** the heart has three chambers (two atria and one ventricle), there are two circulations, and blood **mixes** in the ventricle. **In reptiles** the ventricle has an incomplete septum (complete in crocodiles), and two aortic arches are retained. **In birds** and **mammals** the heart has four chambers and the blood does not mix: birds retain the **right** aortic arch and mammals the **left**."},
-   {"type": "img", "src": "data/img/bio/t15_aorta.webp", "w": 647, "h": 469, "lang": false, "label": "Figure 15.1", "caption": "Development of the arterial arches in vertebrates: I — the original gill arches (1–6 — arterial arches; 7 — ventral aorta; 8 — dorsal aorta); II — fish (3–6 — afferent and efferent branchial arteries); III — tailed amphibians (3 — carotid arteries; 4 — aortic arches; 6 — ductus arteriosus; 10 — ductus caroticus); IV — tailless amphibians; V — reptiles (4 — right and left aortic arches); VI — birds; VII — mammals (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 15.1. Fate of the arterial arches of the human embryo", "head": ["Arterial arch", "Derivative in humans"], "rows": [
-    ["1 and 2", "Almost entirely reduced (small arteries of the face and ear)"],
-    ["3", "Common and internal **carotid arteries**"],
-    ["4", "Left — **arch of the aorta**; right — initial part of the right subclavian artery"],
-    ["5", "Reduced"],
-    ["6", "**Pulmonary arteries**; the left one gives the **ductus arteriosus (of Botallo)**, which closes after birth and becomes the ligamentum arteriosum"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Congenital defects of the heart and great vessels often resemble ancestral structures: **ventricular or atrial septal defect** (like the amphibian and reptilian heart, with mixing of blood), **patent ductus arteriosus**, **right or double aortic arch**, tetralogy of Fallot, transposition of the great arteries. When arterial and venous blood mix, cyanosis, breathlessness and delayed physical development are seen."}]}
-  ]},
-  {"title": "4. The nervous, excretory and endocrine systems", "blocks": [
-   {"type": "p", "text": "**Nervous system.** In invertebrates the nervous system evolved from **diffuse** (Hydra) → **ladder-like** (flatworms) → **ventral nerve cord** (annelids, arthropods). In vertebrates the central nervous system forms from the **neural tube**; the brain has five parts: the forebrain, diencephalon, midbrain, cerebellum and medulla oblongata (Figure 15.2). Three brain types are distinguished: **ichthyopsid** (fish, amphibians — the highest integrating centre is the midbrain), **sauropsid** (reptiles, birds — the striate bodies of the forebrain) and **mammalian** (mammals — the **new cortex**, neocortex). Anomalies: anencephaly, microcephaly, hydrocephalus, spinal hernia."},
-   {"type": "img", "src": "data/img/bio/t15_miya.webp", "w": 857, "h": 514, "lang": true, "label": "Figure 15.2", "caption": "Longitudinal sections of the vertebrate brain: I — bony fish; II — electric fish; III — frog; IV — reptile; V — bird; VI — mammal; 1 — forebrain; 2 — diencephalon; 3 — midbrain; 4 — cerebellum; 5 — medulla oblongata; 6 — pineal gland; 7 — pituitary gland (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "**Excretory system.** In invertebrates — protonephridia (flatworms), metanephridia (annelids), Malpighian tubules (insects). In vertebrates the kidney is replaced in three stages: the **head kidney (pronephros)** — in cyclostomes and the embryos of all vertebrates; the **trunk (primary) kidney (mesonephros)** — in fish and amphibians; the **pelvic (secondary) kidney (metanephros)** — in reptiles, birds and mammals. All three stages also follow one another in the human embryo. Anomalies: renal aplasia, **horseshoe kidney**, a kidney remaining in the pelvis (dystopia), duplex kidney, polycystic disease."},
-   {"type": "p", "text": "**Endocrine system.** Hormonal regulation began with neurosecretion; in vertebrates the hypothalamic-pituitary system takes the central place. The thyroid gland develops from the floor of the pharynx and is homologous with the **endostyle** of the lancelet; the cortex and medulla of the adrenal gland are separate in fish and unite in land vertebrates. Insufficiency of the adrenal cortex is **Addison's disease**: hyperpigmentation of the skin and mucous membranes, weight loss and disturbed water-salt metabolism."}
-  ]},
-  {"title": "5. Ecology. The human as an ecological factor. The biosphere", "blocks": [
-   {"type": "p", "text": "**Ecology** (the term was introduced by E. Haeckel in 1866) is the science of the relationships of organisms with one another and with their environment. Its branches: autecology (a single species), population ecology, synecology (communities) and **human ecology**. **Ecological factors**: **abiotic** (temperature, light, humidity, ionizing radiation), **biotic** (the influence of other organisms — parasitism, symbiosis, competition) and **anthropogenic** (human activity). An organism lives within a certain **range of tolerance** for each factor; the factor that deviates most from the optimum becomes the **limiting factor**."},
-   {"type": "p", "text": "**The biosphere** is the shell of the Earth inhabited by living organisms and transformed by them (the lower atmosphere, the hydrosphere and the upper lithosphere). The doctrine of the biosphere was created by **V.I. Vernadsky**: living matter is the main driving force of the cycling of substances on the planet. Human activity is creating a new state of the biosphere — the **noosphere** (sphere of reason). Current problems: pollution of the air, water and soil, the greenhouse effect, depletion of the ozone layer, desertification and loss of biodiversity; for Uzbekistan — the **Aral Sea** disaster and its effect on public health."},
-   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Genetic consequences of environmental pollution:** chemical mutagens (pesticides, heavy metals, benzpyrene), ionizing radiation and some viruses increase the mutation rate — this leads to more hereditary diseases, congenital defects, infertility and tumours. **Genetic monitoring** of the population and control of mutagens are therefore necessary."}]},
-   {"type": "p", "text": "**The human as an ecological factor.** Unlike other organisms, humans consciously change their environment. This ability was formed during the long process of **anthropogenesis** (Figure 15.3): dryopithecines → australopithecines → **handy man** (*Homo habilis*, the first tools) → **archanthropes** (Pithecanthropus, Sinanthropus) → **palaeoanthropes** (Neanderthals) → **neoanthropes** (Cro-Magnons, *Homo sapiens*). Alongside the biological factors of anthropogenesis (natural selection, variation), social factors — labour, speech and life in groups — played the decisive role."},
-   {"type": "img", "src": "data/img/bio/t15_antropogenez.webp", "w": 871, "h": 739, "lang": true, "label": "Figure 15.3", "caption": "General scheme of human origin: divergence from the dryopithecines of the branches of the great apes (orangutan, African great apes) and the hominids (australopithecines, handy man, archanthrope, palaeoanthrope, neoanthrope); right — the skull and tools of each stage (P.Kh. Kholikov et al., 2022)."}
-  ]}
+  {
+   "title": "1. General patterns of organ evolution",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The evolution of organs is studied by **evolutionary morphology** on the basis of data from **comparative anatomy**, **comparative embryology** and **palaeontology**. **Homologous organs** have the same origin and structural plan but may have different functions (the pectoral fin of a fish, the wing of a bird, the human arm). **Analogous organs** have the same function but a different origin (the wings of a butterfly and of a bird)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_gomolog.webp",
+     "label": "Figure 15.1",
+     "caption": "Homology of the forelimb skeleton of vertebrates: although they perform different functions (walking, flying, swimming, grasping), the bones of the upper arm, forearm and hand are built on one plan (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Rudiments** are vestigial organs that have lost their function in evolution and are retained in all people (the vermiform appendix, the coccygeal vertebrae, the muscles of the auricle, the semilunar fold of the eye). **Atavisms** are the reappearance of features of distant ancestors in individual people (a tail, hair covering the whole body — hypertrichosis, extra nipples — polymastia, cervical fistulae). Most atavisms result from structures present in the embryo failing to be remodelled in time: according to the **biogenetic law** (F. Müller, E. Haeckel), ontogenesis is a brief recapitulation of phylogenesis."
+    },
+    {
+     "type": "p",
+     "text": "**The biogenetic law** (F. Müller, 1864; E. Haeckel, 1866): ontogeny is a brief and rapid recapitulation of phylogeny. For example, gill arches and pouches, a two-chambered heart, a tail and a head-kidney stage are seen in the human embryo. A.N. Severtsov developed the law and created the theory of **phylembryogeneses**: evolutionary changes are of three kinds depending on the stage of ontogeny at which they arise."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.1. Types of phylembryogenesis (A.N. Severtsov)",
+     "head": [
+      "Type",
+      "When it arises",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Anabolism",
+       "A new stage is added at the end of development; ancestral stages are fully recapitulated",
+       "The heart becoming four-chambered, the succession of kidneys"
+      ],
+      [
+       "Deviation",
+       "A change of direction in the middle stages of development",
+       "Different development of reptilian scales and mammalian hair"
+      ],
+      [
+       "Archallaxis",
+       "Change from the very first stage of the organ rudiment; ancestral stages are not repeated",
+       "Change in the number of vertebrae and ribs in humans, development of teeth"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 15.2. Main principles of organ evolution",
+     "head": [
+      "Principle",
+      "Essence",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Intensification of functions",
+       "The main function is perfected and the organ becomes more complex",
+       "The heart changing from two to four chambers"
+      ],
+      [
+       "Change of functions",
+       "A secondary function becomes the main one",
+       "The swim bladder of fish → the lungs of land vertebrates"
+      ],
+      [
+       "Substitution of organs",
+       "One organ takes over the function of another",
+       "The vertebral column replacing the notochord"
+      ],
+      [
+       "Oligomerisation",
+       "Reduction in the number of similar organs and their specialisation",
+       "Fewer gill arches, fewer teeth"
+      ],
+      [
+       "Reduction",
+       "Shrinkage of an organ that has lost its function and its becoming a rudiment",
+       "Tail vertebrae, the vermiform appendix"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Phylogenetically determined defects in humans arise by two mechanisms: 1) **persistence** of an embryonic structure (tail, cervical fistulae, patent ductus arteriosus); 2) **arrest** of organ development at an ancestral stage (three-chambered heart, pelvic kidney, right aortic arch)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. The integument, skeleton, digestive and respiratory systems",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Integument.** In invertebrates the skin consists of a single-layered epithelium and a cuticle. In vertebrates the skin has two layers: the stratified **epidermis** develops from ectoderm and the **dermis** from mesoderm. Skin derivatives change from class to class: bony and **placoid scales** in fish (their homologue is the teeth of mammals), mucous glands in amphibians, horny scales in reptiles, feathers in birds, and hair, sweat, sebaceous and **mammary glands** in mammals. Anomalies: **ichthyosis** (a hereditary disorder of the horny layer, in which the skin comes to resemble fish scales), hypertrichosis, polymastia (extra nipples along the milk lines)."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.3. Skin derivatives in vertebrates",
+     "head": [
+      "Class",
+      "Epidermal derivatives",
+      "Glands"
+     ],
+     "rows": [
+      [
+       "Fish",
+       "— (scales are mainly dermal)",
+       "Unicellular mucous glands"
+      ],
+      [
+       "Amphibians",
+       "Thin horny layer",
+       "Multicellular mucous and poison glands; the skin takes part in respiration"
+      ],
+      [
+       "Reptiles",
+       "Horny scales and shields",
+       "Almost absent (dry skin)"
+      ],
+      [
+       "Birds",
+       "Feathers, beak, claws",
+       "Only the preen gland above the tail"
+      ],
+      [
+       "Mammals",
+       "Hair, nails, hooves, horns",
+       "Sweat, sebaceous, mammary and scent glands"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Skeleton.** In the lancelet the axial skeleton is the **notochord**; in vertebrates it is replaced by the vertebral column. The skull consists of the braincase and the **visceral skeleton** derived from the gill arches (the auditory ossicles, the hyoid bone and the laryngeal cartilages are derivatives of the gill arches). The five-digit limb arose from the fin of lobe-finned fish. Anomalies: cervical ribs, **spina bifida**, polydactyly, syndactyly, **Sprengel's deformity** (failure of the scapula to descend from its embryonic position in the neck)."
+    },
+    {
+     "type": "p",
+     "text": "**Evolution of teeth.** In fish and reptiles the teeth are all of one shape (**homodont**) and are replaced many times throughout life (**polyphyodont**). In mammals the teeth are specialised into incisors, canines, premolars and molars (**heterodont**) and are replaced only once (**diphyodont** — milk and permanent teeth). In humans the reduction in the number of teeth (failure of the wisdom tooth to erupt, or its absence) continues oligomerisation; extra teeth and cone-shaped teeth are atavistic anomalies."
+    },
+    {
+     "type": "p",
+     "text": "**Digestive and respiratory systems.** In the evolution of the gut tube we see its division into sections, its lengthening and the appearance of digestive glands. Only mammals form a **secondary palate**; failure of it to close is **cleft palate**. In the embryo the gut tube is temporarily occluded and then reopened (**recanalization**); if this process is disrupted, **atresia and stenosis** of the oesophagus, duodenum or intestine result. The respiratory organs develop from the gill pouches and from an outgrowth of the floor of the pharynx: gills in fish, lungs in land vertebrates, alveolar lungs in mammals. Anomalies: **tracheo-oesophageal fistula**, aplasia of a lung or a lung lobe."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_opka.webp",
+     "label": "Figure 15.2",
+     "caption": "Evolution of the lungs: A — amphibians (sac-like lung with a smooth inner surface); B, C — reptiles (appearance of septa); D — mammals (alveolar lung); 1 — trachea, 2 — bronchi, 3 — septa and alveoli (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The respiratory surface of the lung increases during evolution through internal septa and bronchial branching: the human lung has ≈ 300–500 million alveoli with a total surface of ≈ 70–100 m^2^. In birds the lungs are connected with air sacs and air flows in one direction (“double breathing”). **Meckel's diverticulum** — a remnant of the embryonic vitelline (omphalo-enteric) duct — persists in the small intestine in 2 % of people and can cause inflammation, bleeding or intestinal obstruction."
+    }
+   ]
+  },
+  {
+   "title": "3. Evolution of the circulatory system",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The line of evolution is the **improvement of the heart** and the **separation of arterial and venous blood**. **The lancelet** has no heart; blood is moved by contractions of the ventral aorta, and there is one circulation. **In fish** the heart has two chambers (atrium and ventricle) and contains only venous blood; there is one circulation. **In amphibians** the heart has three chambers (two atria and one ventricle), there are two circulations, and blood **mixes** in the ventricle. **In reptiles** the ventricle has an incomplete septum (complete in crocodiles), and two aortic arches are retained. **In birds** and **mammals** the heart has four chambers and the blood does not mix: birds retain the **right** aortic arch and mammals the **left**."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.4. Comparison of the heart and circulation in vertebrates",
+     "head": [
+      "Class",
+      "Heart",
+      "Circuits",
+      "Blood in the ventricle"
+     ],
+     "rows": [
+      [
+       "Fish",
+       "2-chambered (atrium + ventricle), venous blood",
+       "1",
+       "Venous only"
+      ],
+      [
+       "Amphibians",
+       "3-chambered (2 atria + 1 ventricle)",
+       "2",
+       "Mixed"
+      ],
+      [
+       "Reptiles",
+       "3-chambered, incomplete septum in the ventricle (complete in crocodiles)",
+       "2",
+       "Partly mixed"
+      ],
+      [
+       "Birds",
+       "4-chambered; the right aortic arch is kept",
+       "2",
+       "Not mixed"
+      ],
+      [
+       "Mammals",
+       "4-chambered; the left aortic arch is kept",
+       "2",
+       "Not mixed"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_yurak_evol.webp",
+     "label": "Figure 15.3",
+     "caption": "Evolution of the heart and arterial arches in vertebrates (A–G): from the six gill-arch arteries of fish, the carotid arteries, aortic arches and pulmonary arteries of land vertebrates are formed; venous blood — blue, arterial blood — red (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_aorta.webp",
+     "w": 647,
+     "h": 469,
+     "lang": false,
+     "label": "Figure 15.4",
+     "caption": "Development of the arterial arches in vertebrates: I — the original gill arches (1–6 — arterial arches; 7 — ventral aorta; 8 — dorsal aorta); II — fish (3–6 — afferent and efferent branchial arteries); III — tailed amphibians (3 — carotid arteries; 4 — aortic arches; 6 — ductus arteriosus; 10 — ductus caroticus); IV — tailless amphibians; V — reptiles (4 — right and left aortic arches); VI — birds; VII — mammals (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.5. Fate of the arterial arches of the human embryo",
+     "head": [
+      "Arterial arch",
+      "Derivative in humans"
+     ],
+     "rows": [
+      [
+       "1 and 2",
+       "Almost entirely reduced (small arteries of the face and ear)"
+      ],
+      [
+       "3",
+       "Common and internal **carotid arteries**"
+      ],
+      [
+       "4",
+       "Left — **arch of the aorta**; right — initial part of the right subclavian artery"
+      ],
+      [
+       "5",
+       "Reduced"
+      ],
+      [
+       "6",
+       "**Pulmonary arteries**; the left one gives the **ductus arteriosus (of Botallo)**, which closes after birth and becomes the ligamentum arteriosum"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Congenital defects of the heart and great vessels often resemble ancestral structures: **ventricular or atrial septal defect** (like the amphibian and reptilian heart, with mixing of blood), **patent ductus arteriosus**, **right or double aortic arch**, tetralogy of Fallot, transposition of the great arteries. When arterial and venous blood mix, cyanosis, breathlessness and delayed physical development are seen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. The nervous, excretory and endocrine systems",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Nervous system.** In invertebrates the nervous system evolved from **diffuse** (Hydra) → **ladder-like** (flatworms) → **ventral nerve cord** (annelids, arthropods). In vertebrates the central nervous system forms from the **neural tube**; the brain has five parts: the forebrain, diencephalon, midbrain, cerebellum and medulla oblongata (Figure 15.5). Three brain types are distinguished: **ichthyopsid** (fish, amphibians — the highest integrating centre is the midbrain), **sauropsid** (reptiles, birds — the striate bodies of the forebrain) and **mammalian** (mammals — the **new cortex**, neocortex). Anomalies: anencephaly, microcephaly, hydrocephalus, spinal hernia."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_miya.webp",
+     "w": 857,
+     "h": 514,
+     "lang": true,
+     "label": "Figure 15.5",
+     "caption": "Longitudinal sections of the vertebrate brain: I — bony fish; II — electric fish; III — frog; IV — reptile; V — bird; VI — mammal; 1 — forebrain; 2 — diencephalon; 3 — midbrain; 4 — cerebellum; 5 — medulla oblongata; 6 — pineal gland; 7 — pituitary gland (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.6. Comparison of the vertebrate brain",
+     "head": [
+      "Class",
+      "Most developed part",
+      "Features"
+     ],
+     "rows": [
+      [
+       "Fish",
+       "Midbrain and cerebellum",
+       "The forebrain is small, only an olfactory centre (ichthyopsid type)"
+      ],
+      [
+       "Amphibians",
+       "Midbrain",
+       "The forebrain is divided into two hemispheres; the cerebellum is small"
+      ],
+      [
+       "Reptiles",
+       "Striate bodies of the forebrain",
+       "A rudiment of the ancient cortex appears for the first time (sauropsid type)"
+      ],
+      [
+       "Birds",
+       "Striate bodies and a large cerebellum",
+       "Complex instincts, coordination of movement"
+      ],
+      [
+       "Mammals",
+       "The new cortex (neocortex) of the hemispheres",
+       "Sulci and gyri, higher nervous activity (mammalian type)"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_quloq.webp",
+     "label": "Figure 15.6",
+     "caption": "Evolution of the inner ear (labyrinth): fish, reptiles, birds and mammals; in mammals the cochlea is coiled into a spiral (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**Sense organs.** The inner ear was originally an organ of balance (semicircular canals in fish); the hearing part — the cochlea — develops in land vertebrates and becomes spiral in mammals. The middle-ear ossicles come from the visceral skeleton: amphibians and reptiles have one (the stapes), mammals three (the malleus and incus are derivatives of the jaw-joint bones). In the embryo the auditory tube and middle-ear cavity form from the first pharyngeal pouch, and the external auditory canal from the first pharyngeal cleft."
+    },
+    {
+     "type": "p",
+     "text": "**Excretory system.** In invertebrates — protonephridia (flatworms), metanephridia (annelids), Malpighian tubules (insects). In vertebrates the kidney is replaced in three stages: the **head kidney (pronephros)** — in cyclostomes and the embryos of all vertebrates; the **trunk (primary) kidney (mesonephros)** — in fish and amphibians; the **pelvic (secondary) kidney (metanephros)** — in reptiles, birds and mammals. All three stages also follow one another in the human embryo. Anomalies: renal aplasia, **horseshoe kidney**, a kidney remaining in the pelvis (dystopia), duplex kidney, polycystic disease."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_buyrak.webp",
+     "label": "Figure 15.7",
+     "caption": "Evolution of the excretory and genital ducts in vertebrates (I–VI): the head kidney, primary (trunk) kidney and secondary (pelvic) kidney, their ducts and relation to the gonads (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.7. The three generations of the vertebrate kidney",
+     "head": [
+      "Kidney",
+      "Structure",
+      "In whom it functions"
+     ],
+     "rows": [
+      [
+       "Head kidney (pronephros)",
+       "A few tubules with nephrostomes; the funnel opens into the body cavity",
+       "Larvae of cyclostomes; in others only in the embryo"
+      ],
+      [
+       "Trunk (primary) kidney (mesonephros)",
+       "Many tubules, a Malpighian body appears; its duct is the Wolffian duct",
+       "Fish and amphibians; in amniotes in the embryo"
+      ],
+      [
+       "Pelvic (secondary) kidney (metanephros)",
+       "Very many nephrons, an independent ureter; loop of Henle (in mammals)",
+       "Reptiles, birds, mammals"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "In humans the primary kidney duct (**Wolffian duct**) becomes the vas deferens in men and regresses in women; the paramesonephric (**Müllerian**) ducts form the uterine tubes, the uterus and the upper vagina in women. Incomplete fusion of the Müllerian ducts leads to defects such as a **bicornuate or double uterus** (the normal state in ancient forms of mammals), and failure of the testis to descend from the abdomen into the scrotum leads to **cryptorchidism** (in most vertebrates the testes lie in the abdominal cavity)."
+    },
+    {
+     "type": "p",
+     "text": "**Endocrine system.** Hormonal regulation began with neurosecretion; in vertebrates the hypothalamic-pituitary system takes the central place. The thyroid gland develops from the floor of the pharynx and is homologous with the **endostyle** of the lancelet; the cortex and medulla of the adrenal gland are separate in fish and unite in land vertebrates. Insufficiency of the adrenal cortex is **Addison's disease**: hyperpigmentation of the skin and mucous membranes, weight loss and disturbed water-salt metabolism."
+    }
+   ]
+  },
+  {
+   "title": "5. Ecology. The human as an ecological factor. The biosphere",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Ecology** (the term was introduced by E. Haeckel in 1866) is the science of the relationships of organisms with one another and with their environment. Its branches: autecology (a single species), population ecology, synecology (communities) and **human ecology**. **Ecological factors**: **abiotic** (temperature, light, humidity, ionizing radiation), **biotic** (the influence of other organisms — parasitism, symbiosis, competition) and **anthropogenic** (human activity). An organism lives within a certain **range of tolerance** for each factor; the factor that deviates most from the optimum becomes the **limiting factor**."
+    },
+    {
+     "type": "p",
+     "text": "**Ecological laws.** **The law of the minimum** (J. Liebig, 1840): the life of an organism is limited by the factor present in the smallest amount (for example, endemic goitre in mountainous areas lacking iodine). **The law of tolerance** (V. Shelford, 1913): both a shortage and an excess of a factor can be limiting; for each species a factor has **optimum** and **pessimum** zones and limits of tolerance. Species with wide tolerance are called **eurybiont**, those with narrow tolerance **stenobiont**; humans are a eurybiont species."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.8. Adaptive types of humans",
+     "head": [
+      "Type",
+      "Conditions",
+      "Main features"
+     ],
+     "rows": [
+      [
+       "Arctic",
+       "Cold climate, food rich in protein and fat",
+       "Massive body, short limbs, high basal metabolism, low blood cholesterol"
+      ],
+      [
+       "Tropical",
+       "Hot humid climate",
+       "Elongated body, long limbs, many sweat glands, strong skin pigmentation"
+      ],
+      [
+       "High-altitude",
+       "Low oxygen, cold",
+       "Wide chest, large lung volume, many red cells, high haemoglobin"
+      ],
+      [
+       "Temperate",
+       "Intermediate between arctic and tropical types",
+       "Intermediate features"
+      ],
+      [
+       "Desert (arid)",
+       "Hot dry climate, water shortage",
+       "Lean body, water conservation and heat tolerance"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**The biosphere** is the shell of the Earth inhabited by living organisms and transformed by them (the lower atmosphere, the hydrosphere and the upper lithosphere). The doctrine of the biosphere was created by **V.I. Vernadsky**: living matter is the main driving force of the cycling of substances on the planet. Human activity is creating a new state of the biosphere — the **noosphere** (sphere of reason). Current problems: pollution of the air, water and soil, the greenhouse effect, depletion of the ozone layer, desertification and loss of biodiversity; for Uzbekistan — the **Aral Sea** disaster and its effect on public health."
+    },
+    {
+     "type": "p",
+     "text": "V.I. Vernadsky distinguished the main functions of **living matter** in the biosphere: **energetic** (storing solar energy in photosynthesis), **gas** (maintaining the composition of the atmosphere — O~2~ and CO~2~), **concentrating** (accumulating elements — for example, iron bacteria, calcareous skeletons), **redox** and **destructive** (breaking down dead organic matter). The biological cycle of substances is carried out by producers, consumers and decomposers."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**The Aral Sea disaster** is one of the largest ecological catastrophes of the twentieth century: because too much river water was taken for irrigation, the sea level fell sharply, and dust rich in salt and pesticides is blown from the dried sea bed. In the population of the Aral region (Karakalpakstan, Khorezm) **iron-deficiency anaemia**, kidney and liver diseases, tuberculosis, respiratory diseases, thyroid pathology, congenital defects and child mortality have increased. This is a striking example of the effect of ecological factors on health."
+      }
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Genetic consequences of environmental pollution:** chemical mutagens (pesticides, heavy metals, benzpyrene), ionizing radiation and some viruses increase the mutation rate — this leads to more hereditary diseases, congenital defects, infertility and tumours. **Genetic monitoring** of the population and control of mutagens are therefore necessary."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**The human as an ecological factor.** Unlike other organisms, humans consciously change their environment. This ability was formed during the long process of **anthropogenesis** (Figure 15.8): dryopithecines → australopithecines → **handy man** (*Homo habilis*, the first tools) → **archanthropes** (Pithecanthropus, Sinanthropus) → **palaeoanthropes** (Neanderthals) → **neoanthropes** (Cro-Magnons, *Homo sapiens*). Alongside the biological factors of anthropogenesis (natural selection, variation), social factors — labour, speech and life in groups — played the decisive role."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t15_antropogenez.webp",
+     "w": 871,
+     "h": 739,
+     "lang": true,
+     "label": "Figure 15.8",
+     "caption": "General scheme of human origin: divergence from the dryopithecines of the branches of the great apes (orangutan, African great apes) and the hominids (australopithecines, handy man, archanthrope, palaeoanthrope, neoanthrope); right — the skull and tools of each stage (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.9. Stages of anthropogenesis",
+     "head": [
+      "Stage",
+      "Representatives, time",
+      "Brain volume",
+      "Main achievements"
+     ],
+     "rows": [
+      [
+       "Australopithecines",
+       "*Australopithecus afarensis* (“Lucy”) and others; 4–2 million years ago, Africa",
+       "400–550 cm^3^",
+       "Walking on two legs (bipedalism)"
+      ],
+      [
+       "Handy man",
+       "*Homo habilis*; 2,5–1,5 million years ago, Africa",
+       "600–750 cm^3^",
+       "The first stone tools"
+      ],
+      [
+       "Archanthropes (earliest humans)",
+       "*Homo erectus*: Pithecanthropus, Sinanthropus; 1,9 million – 300 thousand years ago, Africa and Asia",
+       "800–1200 cm^3^",
+       "Use of fire, spread out of Africa"
+      ],
+      [
+       "Palaeoanthropes (ancient humans)",
+       "Neanderthals; 300–40 thousand years ago, Europe and Asia (in Uzbekistan — Teshik-Tash cave)",
+       "1400–1600 cm^3^",
+       "Complex tools, burial of the dead"
+      ],
+      [
+       "Neoanthropes (modern humans)",
+       "*Homo sapiens* (Cro-Magnons); arose in Africa ≈ 300 thousand years ago",
+       "1350–1450 cm^3^",
+       "Speech, art, complex society"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Human races** are groups within one species (*Homo sapiens*) linked by common origin and territory and differing in external features such as skin colour, hair and facial structure: traditionally the **Europoid**, **Mongoloid**, **Negroid** and **Australoid** great races are distinguished. Racial features formed as adaptations to the environment (for example, dark skin pigmentation protects against ultraviolet light). All races interbreed fully, and most genetic differences lie not between races but **within** each group — so views about “higher” or “lower” races have no scientific basis."
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: comparing vertebrate hearts and assessing a congenital defect phylogenetically", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Using tables or preparations, determine the number of chambers in the heart of a fish, amphibian, reptile, bird and mammal.",
-    "For each class note the number of circulations and whether blood mixes in the ventricle.",
-    "Indicate the aortic arch that is retained (both, right or left).",
-    "Determine which class's heart a given congenital heart defect resembles (for example, ventricular septal defect — the reptilian heart).",
-    "State the mechanism of the defect: persistence of an embryonic structure, or arrest of development at an ancestral stage."
-   ]}
-  ]}
+  {
+   "title": "Skill: comparing vertebrate hearts and assessing a congenital defect phylogenetically",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Using tables or preparations, determine the number of chambers in the heart of a fish, amphibian, reptile, bird and mammal.",
+      "For each class note the number of circulations and whether blood mixes in the ventricle.",
+      "Indicate the aortic arch that is retained (both, right or left).",
+      "Determine which class's heart a given congenital heart defect resembles (for example, ventricular septal defect — the reptilian heart).",
+      "State the mechanism of the defect: persistence of an embryonic structure, or arrest of development at an ancestral stage."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "Give examples of homologous and analogous organs, rudiments and atavisms.",
@@ -77,45 +579,355 @@
   "Compare the head, trunk and pelvic kidneys. Name the anomalies of the excretory system.",
   "What are the main lines of evolution of the endocrine system?",
   "Explain the subject and branches of ecology and the ecological factors.",
-  "Discuss the doctrine of the biosphere and noosphere and the genetic consequences of environmental pollution."
+  "Discuss the doctrine of the biosphere and noosphere and the genetic consequences of environmental pollution.",
+  "Explain the biogenetic law and Severtsov's theory of phylembryogeneses.",
+  "Name the main principles of organ evolution with examples.",
+  "How do skin derivatives change in vertebrates?",
+  "Explain the evolution of teeth: homodont and heterodont, polyphyodont and diphyodont teeth.",
+  "Compare the heart and circulation in the classes of vertebrates.",
+  "How do the ichthyopsid, sauropsid and mammalian types of brain differ?",
+  "Compare the three generations of the kidney. What develops from the Wolffian and Müllerian ducts?",
+  "Explain the laws of Liebig and Shelford.",
+  "Name the adaptive types of humans.",
+  "Name the stages of anthropogenesis and the main achievements of each stage."
  ],
  "quiz": [
-  {"q": "Which organs are homologous?", "options": ["A bird's wing and a human arm", "The wings of a butterfly and a bird", "A fish's gills and human lungs", "The eyes of an insect and a bird", "The eyes of an octopus and a human"], "answer": 0},
-  {"q": "Which of the following is an atavism?", "options": ["A tail in a human", "The vermiform appendix", "The coccygeal vertebrae", "The muscles of the auricle", "The semilunar fold of the eye"], "answer": 0},
-  {"q": "The placoid scales of fish are homologous with which human structure?", "options": ["Teeth", "Hair", "Nails", "Sweat glands", "Mammary glands"], "answer": 0},
-  {"q": "How many chambers does the amphibian heart have?", "options": ["Three", "Two", "Four", "One", "Five"], "answer": 0},
-  {"q": "Which aortic arch is retained in mammals?", "options": ["The left aortic arch", "The right aortic arch", "Both aortic arches", "Neither", "The third pair of arches"], "answer": 0},
-  {"q": "From which arterial arch does the ductus arteriosus arise?", "options": ["The left 6th arch", "The left 4th arch", "The 3rd arch", "The 1st arch", "The 5th arch"], "answer": 0},
-  {"q": "From which arterial arch do the carotid arteries develop?", "options": ["The 3rd arch", "The 1st arch", "The 4th arch", "The 5th arch", "The 6th arch"], "answer": 0},
-  {"q": "To which type does the brain of birds and reptiles belong?", "options": ["Sauropsid", "Ichthyopsid", "Mammalian", "Diffuse", "Ladder-like"], "answer": 0},
-  {"q": "In the ichthyopsid brain, which part is the highest integrating centre?", "options": ["Midbrain", "Neocortex", "Striate bodies", "Medulla oblongata", "Cerebellum"], "answer": 0},
-  {"q": "What kind of kidney is the permanent human kidney?", "options": ["The pelvic (secondary) kidney", "The head kidney", "The trunk (primary) kidney", "Protonephridia", "Malpighian tubules"], "answer": 0},
-  {"q": "The thyroid gland is homologous with which structure of the lancelet?", "options": ["The endostyle", "The notochord", "The nephridia", "The gill slits", "The hepatic caecum"], "answer": 0},
-  {"q": "Insufficiency of which gland causes Addison's disease?", "options": ["The adrenal cortex", "The thyroid gland", "The pituitary gland", "The pancreas", "The thymus"], "answer": 0},
-  {"q": "Who introduced the term “ecology”?", "options": ["E. Haeckel", "V.I. Vernadsky", "C. Darwin", "J.B. Lamarck", "A.N. Severtsov"], "answer": 0},
-  {"q": "Who created the doctrine of the biosphere?", "options": ["V.I. Vernadsky", "E. Haeckel", "Ye.N. Pavlovsky", "K.I. Skryabin", "N.I. Vavilov"], "answer": 0},
-  {"q": "To which stage of anthropogenesis do the Neanderthals belong?", "options": ["Palaeoanthropes", "Archanthropes", "Neoanthropes", "Australopithecines", "Dryopithecines"], "answer": 0}
+  {
+   "q": "Which organs are homologous?",
+   "options": [
+    "A bird's wing and a human arm",
+    "The wings of a butterfly and a bird",
+    "A fish's gills and human lungs",
+    "The eyes of an insect and a bird",
+    "The eyes of an octopus and a human"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which of the following is an atavism?",
+   "options": [
+    "A tail in a human",
+    "The vermiform appendix",
+    "The coccygeal vertebrae",
+    "The muscles of the auricle",
+    "The semilunar fold of the eye"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "The placoid scales of fish are homologous with which human structure?",
+   "options": [
+    "Teeth",
+    "Hair",
+    "Nails",
+    "Sweat glands",
+    "Mammary glands"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many chambers does the amphibian heart have?",
+   "options": [
+    "Three",
+    "Two",
+    "Four",
+    "One",
+    "Five"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which aortic arch is retained in mammals?",
+   "options": [
+    "The left aortic arch",
+    "The right aortic arch",
+    "Both aortic arches",
+    "Neither",
+    "The third pair of arches"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From which arterial arch does the ductus arteriosus arise?",
+   "options": [
+    "The left 6th arch",
+    "The left 4th arch",
+    "The 3rd arch",
+    "The 1st arch",
+    "The 5th arch"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From which arterial arch do the carotid arteries develop?",
+   "options": [
+    "The 3rd arch",
+    "The 1st arch",
+    "The 4th arch",
+    "The 5th arch",
+    "The 6th arch"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which type does the brain of birds and reptiles belong?",
+   "options": [
+    "Sauropsid",
+    "Ichthyopsid",
+    "Mammalian",
+    "Diffuse",
+    "Ladder-like"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In the ichthyopsid brain, which part is the highest integrating centre?",
+   "options": [
+    "Midbrain",
+    "Neocortex",
+    "Striate bodies",
+    "Medulla oblongata",
+    "Cerebellum"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What kind of kidney is the permanent human kidney?",
+   "options": [
+    "The pelvic (secondary) kidney",
+    "The head kidney",
+    "The trunk (primary) kidney",
+    "Protonephridia",
+    "Malpighian tubules"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "The thyroid gland is homologous with which structure of the lancelet?",
+   "options": [
+    "The endostyle",
+    "The notochord",
+    "The nephridia",
+    "The gill slits",
+    "The hepatic caecum"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Insufficiency of which gland causes Addison's disease?",
+   "options": [
+    "The adrenal cortex",
+    "The thyroid gland",
+    "The pituitary gland",
+    "The pancreas",
+    "The thymus"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who introduced the term “ecology”?",
+   "options": [
+    "E. Haeckel",
+    "V.I. Vernadsky",
+    "C. Darwin",
+    "J.B. Lamarck",
+    "A.N. Severtsov"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who created the doctrine of the biosphere?",
+   "options": [
+    "V.I. Vernadsky",
+    "E. Haeckel",
+    "Ye.N. Pavlovsky",
+    "K.I. Skryabin",
+    "N.I. Vavilov"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which stage of anthropogenesis do the Neanderthals belong?",
+   "options": [
+    "Palaeoanthropes",
+    "Archanthropes",
+    "Neoanthropes",
+    "Australopithecines",
+    "Dryopithecines"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "The origin of the lungs of land vertebrates from the swim bladder of fish is an example of which principle?",
+   "options": [
+    "Change of functions",
+    "Oligomerisation",
+    "Reduction",
+    "Substitution",
+    "Archallaxis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which aortic arch is kept in mammals?",
+   "options": [
+    "Left",
+    "Right",
+    "Both",
+    "Neither",
+    "The third gill arch"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which structure is most developed in the mammalian type of brain?",
+   "options": [
+    "The new cortex (neocortex)",
+    "Midbrain",
+    "Striate bodies",
+    "Olfactory lobe",
+    "Medulla oblongata"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which kidney functions in reptiles, birds and mammals?",
+   "options": [
+    "Metanephros (pelvic kidney)",
+    "Pronephros (head kidney)",
+    "Mesonephros (trunk kidney)",
+    "Protonephridia",
+    "Malpighian tubules"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which human species made the first stone tools?",
+   "options": [
+    "*Homo habilis*",
+    "Australopithecus",
+    "Neanderthal",
+    "Cro-Magnon",
+    "Dryopithecus"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "In a maternity hospital a baby was born with its body covered in hair and with a tail.", "ask": "Explain this anomaly.", "answer": "Both features are atavisms — the reappearance of features of distant ancestors. In weeks 4–6 the human embryo has a tail bud, which then regresses, leaving the coccygeal vertebrae (a rudiment); if regression is disrupted, the baby is born with a tail. The fine hair covering the fetal body (lanugo) is normally shed before birth; if it persists or is strongly developed, hypertrichosis is seen. The mechanism is the failure of embryonic structures to be remodelled in time (the biogenetic law)."},
-  {"title": "Case 2", "text": "A newborn has congenital openings (fistulae) on the neck.", "ask": "Explain how this anomaly develops.", "answer": "These are cervical (branchial) fistulae — a phylogenetically determined defect. In the human embryo, as in the gill apparatus of fish, gill pouches form in the wall of the pharynx and gill clefts in the skin of the neck. Normally they close and turn into various structures (the middle ear cavity, the auditory tube, the tonsils, the parathyroid glands). If the gill clefts or pouches do not close completely, fistulae and cysts remain on the side of the neck. Treatment is surgical."},
-  {"title": "Case 3", "text": "A two-year-old child has bluish skin, breathes rapidly and has a body temperature below normal. The clinic diagnosed a “heart defect”, but the heart valves are normally formed.", "ask": "What abnormalities of the heart or blood vessels lead to these changes?", "answer": "With normal valves, the cyanosis is due to mixing of arterial and venous blood: a ventricular or atrial septal defect (a structure resembling the amphibian and reptilian heart — arrest of development at an ancestral stage), patent ductus arteriosus (persistence of an embryonic vessel), transposition of the great arteries or tetralogy of Fallot. Lack of oxygen in the tissues leads to cyanosis, breathlessness, weakness and delayed development. Diagnosis — echocardiography; treatment — cardiac surgery."}
+  {
+   "title": "Case 1",
+   "text": "In a maternity hospital a baby was born with its body covered in hair and with a tail.",
+   "ask": "Explain this anomaly.",
+   "answer": "Both features are atavisms — the reappearance of features of distant ancestors. In weeks 4–6 the human embryo has a tail bud, which then regresses, leaving the coccygeal vertebrae (a rudiment); if regression is disrupted, the baby is born with a tail. The fine hair covering the fetal body (lanugo) is normally shed before birth; if it persists or is strongly developed, hypertrichosis is seen. The mechanism is the failure of embryonic structures to be remodelled in time (the biogenetic law)."
+  },
+  {
+   "title": "Case 2",
+   "text": "A newborn has congenital openings (fistulae) on the neck.",
+   "ask": "Explain how this anomaly develops.",
+   "answer": "These are cervical (branchial) fistulae — a phylogenetically determined defect. In the human embryo, as in the gill apparatus of fish, gill pouches form in the wall of the pharynx and gill clefts in the skin of the neck. Normally they close and turn into various structures (the middle ear cavity, the auditory tube, the tonsils, the parathyroid glands). If the gill clefts or pouches do not close completely, fistulae and cysts remain on the side of the neck. Treatment is surgical."
+  },
+  {
+   "title": "Case 3",
+   "text": "A two-year-old child has bluish skin, breathes rapidly and has a body temperature below normal. The clinic diagnosed a “heart defect”, but the heart valves are normally formed.",
+   "ask": "What abnormalities of the heart or blood vessels lead to these changes?",
+   "answer": "With normal valves, the cyanosis is due to mixing of arterial and venous blood: a ventricular or atrial septal defect (a structure resembling the amphibian and reptilian heart — arrest of development at an ancestral stage), patent ductus arteriosus (persistence of an embryonic vessel), transposition of the great arteries or tetralogy of Fallot. Lack of oxygen in the tissues leads to cyanosis, breathlessness, weakness and delayed development. Diagnosis — echocardiography; treatment — cardiac surgery."
+  },
+  {
+   "title": "Case 4",
+   "text": "A 6-year-old child has intermittent blood in the stool and anaemia. At operation a finger-like protrusion 5 cm long was found in the small intestine ≈ 60 cm above the caecum.",
+   "ask": "What anomaly is this and how did it arise?",
+   "answer": "This is **Meckel's diverticulum** — a remnant of the **vitelline (omphalo-enteric) duct**, which in the embryo connects the yolk sac with the gut. Normally this duct disappears completely in weeks 5–7 of embryonic development; if reduction is incomplete, a diverticulum remains in the wall of the small intestine (in ≈ 2 % of the population). Its wall often contains gastric mucosa, which produces acid and causes ulceration and bleeding. This is a **phylogenetically and ontogenetically determined defect** — persistence of an embryonic structure."
+  },
+  {
+   "title": "Case 5",
+   "text": "Inhabitants of the Pamir mountains (at an altitude of 4000 m) were found to have higher haemoglobin and red-cell counts and a wider chest than lowland residents.",
+   "ask": "What adaptation is this? Which ecological factor caused it?",
+   "answer": "This is the **high-altitude adaptive type** of humans. The limiting factor is the low partial pressure of oxygen in the air (**hypoxia**). As an adaptation, red cells and haemoglobin increase under erythropoietin, the chest and lung volume enlarge and tissue capillaries increase. Some of these features have been fixed by selection over generations (genetic adaptation), while others develop in each individual in response to the environment (modification within the norm of reaction)."
+  },
+  {
+   "title": "Case 6",
+   "text": "In a district of Karakalpakstan near the Aral Sea, iron-deficiency anaemia is common in most pregnant women, and kidney diseases are common in children.",
+   "ask": "To which ecological factors can this situation be linked?",
+   "answer": "This is linked to the **Aral Sea ecological crisis**. As the sea dried, dust rich in salt, pesticide residues and heavy metals is blown from the exposed bed, and drinking water has become saline and polluted. Saline water and salts load the kidneys, increasing kidney disease and stone formation; poor nutrition, polluted water and chronic infections worsen iron-deficiency anaemia; mutagenic and teratogenic substances increase the risk of congenital defects. This shows the effect of **anthropogenic factors** on population health; the measures are supplying clean drinking water, improving nutrition, giving pregnant women iron and folic acid, and ecological restoration."
+  }
  ],
  "cards": [
-  {"front": "Homologous organs", "back": "Same origin, function may differ: a bird's wing and a human arm"},
-  {"front": "Atavism", "back": "Reappearance of an ancestral feature: tail, hypertrichosis, polymastia"},
-  {"front": "Rudiment", "back": "Vestigial organ that has lost its function: vermiform appendix, coccygeal vertebrae"},
-  {"front": "Amphibian heart", "back": "Three chambers, blood mixes, two circulations"},
-  {"front": "Mammalian heart", "back": "Four chambers, the left aortic arch is retained"},
-  {"front": "Arterial arches", "back": "3 — carotid arteries; left 4 — arch of the aorta; 6 — pulmonary arteries and ductus arteriosus"},
-  {"front": "Brain types", "back": "Ichthyopsid (midbrain), sauropsid (striate bodies), mammalian (neocortex)"},
-  {"front": "Evolution of the kidney", "back": "Pronephros → mesonephros → metanephros"},
-  {"front": "Cervical fistulae", "back": "Failure of the gill clefts and pouches to close"},
-  {"front": "V.I. Vernadsky", "back": "Doctrine of the biosphere and noosphere"}
+  {
+   "front": "Homologous organs",
+   "back": "Same origin, function may differ: a bird's wing and a human arm"
+  },
+  {
+   "front": "Atavism",
+   "back": "Reappearance of an ancestral feature: tail, hypertrichosis, polymastia"
+  },
+  {
+   "front": "Rudiment",
+   "back": "Vestigial organ that has lost its function: vermiform appendix, coccygeal vertebrae"
+  },
+  {
+   "front": "Amphibian heart",
+   "back": "Three chambers, blood mixes, two circulations"
+  },
+  {
+   "front": "Mammalian heart",
+   "back": "Four chambers, the left aortic arch is retained"
+  },
+  {
+   "front": "Arterial arches",
+   "back": "3 — carotid arteries; left 4 — arch of the aorta; 6 — pulmonary arteries and ductus arteriosus"
+  },
+  {
+   "front": "Brain types",
+   "back": "Ichthyopsid (midbrain), sauropsid (striate bodies), mammalian (neocortex)"
+  },
+  {
+   "front": "Evolution of the kidney",
+   "back": "Pronephros → mesonephros → metanephros"
+  },
+  {
+   "front": "Cervical fistulae",
+   "back": "Failure of the gill clefts and pouches to close"
+  },
+  {
+   "front": "V.I. Vernadsky",
+   "back": "Doctrine of the biosphere and noosphere"
+  },
+  {
+   "front": "Biogenetic law",
+   "back": "Ontogeny is a brief recapitulation of phylogeny (Müller, Haeckel)"
+  },
+  {
+   "front": "Anabolism",
+   "back": "Addition of a new stage at the end of development (Severtsov)"
+  },
+  {
+   "front": "Meckel's diverticulum",
+   "back": "Remnant of the vitelline duct; in the small intestine in ≈ 2 % of people"
+  },
+  {
+   "front": "Law of the minimum",
+   "back": "Life is limited by the factor present in the smallest amount (Liebig)"
+  },
+  {
+   "front": "Noosphere",
+   "back": "New state of the biosphere determined by human reason and activity (Vernadsky)"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "Many congenital defects are a **recurrence of ancestral structures**: an embryonic structure persists, or development stops at an intermediate stage."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Heart chambers: **“Fish — 2, Frog — 3, Folks — 4”**; aortic arch: **“biRds — Right, mammaLs — Left”**."},
-  {"kind": "klinik", "label": "Clinical relevance", "text": "Cyanotic child + normal valves → think of a **septal defect or patent ductus arteriosus**; a congenital fistula on the side of the neck — a **branchial fistula**."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "Many congenital defects are a **recurrence of ancestral structures**: an embryonic structure persists, or development stops at an intermediate stage."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Heart chambers: **“Fish — 2, Frog — 3, Folks — 4”**; aortic arch: **“biRds — Right, mammaLs — Left”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical relevance",
+   "text": "Cyanotic child + normal valves → think of a **septal defect or patent ductus arteriosus**; a congenital fistula on the side of the neck — a **branchial fistula**."
+  }
  ]
 }

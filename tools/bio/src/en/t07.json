@@ -3,100 +3,481 @@
  "no": 7,
  "title": "Methods of studying human genetics: the genealogical, twin and population-statistical methods",
  "goals": [
-  {"type": "p", "text": "To teach the student the specific features of studying humans as a genetic object, the rules of drawing a pedigree and the criteria for determining the type of inheritance by the genealogical method, the assessment of the role of heredity and environment by the twin method, and the population-statistical method and the Hardy-Weinberg law."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the difficulties of studying human genetics and the system of methods;",
-   "the terms and symbols used in drawing a pedigree;",
-   "the criteria of autosomal dominant, autosomal recessive and sex-linked inheritance;",
-   "monozygotic and dizygotic twins, concordance and Holzinger’s formula;",
-   "the concepts of population, deme and isolate and the Hardy-Weinberg law."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "draw and analyze a pedigree of one’s own family and from the conditions of a problem;",
-   "determine the type of inheritance and assess the risk for the next children;",
-   "calculate allele and genotype frequencies by the Hardy-Weinberg formula."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the specific features of studying humans as a genetic object, the rules of drawing a pedigree and the criteria for determining the type of inheritance by the genealogical method, the assessment of the role of heredity and environment by the twin method, and the population-statistical method and the Hardy-Weinberg law."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the difficulties of studying human genetics and the system of methods;",
+    "the terms and symbols used in drawing a pedigree;",
+    "the criteria of autosomal dominant, autosomal recessive and sex-linked inheritance;",
+    "monozygotic and dizygotic twins, concordance and Holzinger’s formula;",
+    "the concepts of population, deme and isolate and the Hardy-Weinberg law."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "draw and analyze a pedigree of one’s own family and from the conditions of a problem;",
+    "determine the type of inheritance and assess the risk for the next children;",
+    "calculate allele and genotype frequencies by the Hardy-Weinberg formula."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. Specific features of human genetics", "blocks": [
-   {"type": "p", "text": "Human genetics obeys the laws of heredity common to all living organisms, but the classical hybridization method cannot be used to study humans. The reasons are:"},
-   {"type": "list", "ordered": false, "items": [
-    "experimental (purposeful) crossing is impossible in humans;",
-    "generations change slowly (25–30 years) and the number of children is small;",
-    "the karyotype is complex (46 chromosomes) and there are many linkage groups;",
-    "humans cannot be kept and observed under identical environmental conditions;",
-    "there are medical and ethical restrictions."
-   ]},
-   {"type": "p", "text": "Therefore special methods are used in human genetics: the **genealogical, twin, population-statistical, cytogenetic, dermatoglyphic, biochemical, molecular genetic and immunogenetic** methods, somatic cell genetics and modeling. Human genetics also has advantages: the human phenotype and diseases are studied more deeply than in other organisms, populations are large, and written records exist for many generations."}
-  ]},
-  {"title": "2. The genealogical method (pedigree method)", "blocks": [
-   {"type": "p", "text": "The **genealogical method** (F. Galton, 1865) determines whether a trait is hereditary, its type of inheritance and the genotypes of family members by drawing and analyzing a pedigree. The method has two stages: collecting information and drawing the pedigree; genetic analysis of the pedigree."},
-   {"type": "table", "title": "Table 7.1. Basic terms of the genealogical method", "head": ["Term", "Meaning"], "rows": [
-    ["Proband", "The person from whom the pedigree is started (usually the patient who consulted the doctor); shown with an arrow in the pedigree"],
-    ["Sibs", "Children of the same parents (brothers and sisters)"],
-    ["Generation", "One row of the pedigree; numbered with Roman numerals, and the persons in each generation are numbered with Arabic numerals from left to right"],
-    ["Consanguineous marriage", "Shown with a double line"],
-    ["Heterozygous carrier", "A dot inside a circle or square, or a half-shaded symbol"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t07_belgilar.webp", "w": 1175, "h": 758, "lang": true, "label": "Figure 7.1", "caption": "Main symbols used in drawing pedigrees: male (square), female (circle), affected (shaded), marriage, consanguineous marriage, sibs, twins, carriers, stillborn child and others (P.Kh. Kholikov et al., 2022)."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Rule of drawing a pedigree: each generation is written in one horizontal row; the parents are joined by a marriage line, and the children are placed on a “sibship” line hanging from it in order of birth from left to right; a key (legend) to the symbols is given under the pedigree."}]}
-  ]},
-  {"title": "3. Criteria of the types of inheritance", "blocks": [
-   {"type": "table", "title": "Table 7.2. Criteria for determining the type of inheritance from a pedigree", "head": ["Type", "Main features", "Examples"], "rows": [
-    ["Autosomal dominant", "The trait occurs in every generation (“vertical” transmission); at least one parent of an affected child is affected; males and females are affected equally; 50 % of children of an affected heterozygote and a healthy partner are affected", "Polydactyly, achondroplasia, Marfan syndrome, Huntington disease, brachydactyly"],
-    ["Autosomal recessive", "The trait skips generations (“horizontal” transmission — among sibs); affected children are often born to healthy parents; the risk in a marriage of two carriers is 25 %; frequent in consanguineous marriages", "Phenylketonuria, albinism, cystic fibrosis, Wilson disease, galactosemia"],
-    ["X-linked recessive", "Mainly males are affected; the disease passes through the maternal line (uncles, nephews); not passed from father to son", "Hemophilia, color blindness, Duchenne dystrophy"],
-    ["X-linked dominant", "Women are affected 2 times more often; all daughters of an affected father are affected, his sons are healthy", "Vitamin D–resistant rickets"],
-    ["Y-linked (holandric)", "Only in males, from father to all sons", "Hypertrichosis of the ear pinna"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t07_ar_shajara.webp", "w": 675, "h": 374, "label": "Figure 7.2", "caption": "Inheritance of a recessive trait (phenylketonuria): affected children are born to phenotypically healthy heterozygous (Aa) parents; the affected persons in generation IV come from a consanguineous marriage (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "The classic example of a hemophilia pedigree is the family of **Queen Victoria** of Great Britain (Figure 7.3). Victoria was a carrier of the hemophilia gene; her son Leopold was affected and her daughters Alice and Beatrice were carriers, and the gene spread to the royal families of Germany, Russia and Spain (the Russian heir to the throne Alexei also had hemophilia)."},
-   {"type": "img", "src": "data/img/bio/t07_viktoriya.webp", "w": 1292, "h": 658, "lang": true, "label": "Figure 7.3", "caption": "Transmission of hemophilia — the descendants of Queen Victoria of Great Britain (shaded square — affected male, circle with a dot — carrier female) (P.Kh. Kholikov et al., 2022)."}
-  ]},
-  {"title": "4. The twin method", "blocks": [
-   {"type": "p", "text": "The **twin method** (F. Galton, 1876) compares traits in monozygotic and dizygotic twins to determine the relative role of heredity and environment in their formation. Twins are born in about 1 % of human births."},
-   {"type": "table", "title": "Table 7.3. Types of twins", "head": ["Feature", "Monozygotic (identical, MZ)", "Dizygotic (fraternal, DZ)"], "rows": [
-    ["Origin", "One zygote splits into two at the early stages of cleavage", "Two eggs are fertilized by two sperm"],
-    ["Genotype", "Identical (100 % genes in common)", "On average 50 % genes in common (like ordinary sibs)"],
-    ["Sex", "Always the same", "Same or different"],
-    ["Blood groups, dermatoglyphics", "Match", "May or may not match"],
-    ["Tissue transplantation", "Not rejected", "Rejected"]
-   ]},
-   {"type": "p", "text": "The presence of a trait in both twins is called **concordance**, and its presence in only one is called **discordance**. The percentage of concordance is compared in MZ and DZ pairs: if concordance in MZ is much higher than in DZ, heredity plays an important role in the development of the trait. The **coefficient of heritability** is calculated by Holzinger’s formula:"},
-   {"type": "p", "text": "H = (C~MZ~ − C~DZ~) / (100 % − C~DZ~); E = 1 − H"},
-   {"type": "p", "text": "Here C is the percentage of concordance, H the share of heredity and E the share of environment. If H > 0.7, the trait is determined mainly by heredity; if H < 0.4, mainly by the environment."},
-   {"type": "table", "title": "Table 7.4. Concordance of twins for some traits and diseases (%)", "head": ["Trait / disease", "MZ", "DZ"], "rows": [
-    ["Eye color", "99.5", "28"],
-    ["Measles", "98", "94"],
-    ["Schizophrenia", "69", "10"],
-    ["Diabetes mellitus (type 2)", "65", "18"],
-    ["Tuberculosis", "37", "15"],
-    ["Down syndrome", "89", "7"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In measles concordance is almost equally high in MZ and DZ — susceptibility to this disease depends mainly on the environment (contact with the virus). In schizophrenia and type 2 diabetes MZ concordance is much higher — these are **diseases with a hereditary predisposition (multifactorial)**."}]}
-  ]},
-  {"title": "5. The population-statistical method", "blocks": [
-   {"type": "p", "text": "A **population** is a group of individuals of one species living for a long time in a certain area and freely marrying each other. In humans small groups are distinguished within large populations: a **deme** (1500–4000 people, marriages within the group 80–90 %) and an **isolate** (up to 1500 people, marriages within the group more than 90 %). In isolates consanguineous marriages are common, so the frequency of recessive diseases rises (geographic, religious, ethnic isolates)."},
-   {"type": "p", "text": "In a population of self-fertilizing organisms the proportion of heterozygotes halves in each generation and the population splits into homozygous lines. In cross-fertilizing (panmictic) populations the ratio of genotypes obeys the **Hardy-Weinberg law**:"},
-   {"type": "p", "text": "p + q = 1;  p^2^ + 2pq + q^2^ = 1"},
-   {"type": "p", "text": "Here p is the frequency of the dominant allele (A), q the frequency of the recessive allele (a), and p^2^, 2pq and q^2^ the frequencies of the genotypes AA, Aa and aa. The law holds for an **ideal population**: the population is large, mating is random (panmixia), and there are no mutations, natural selection or migration."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Calculation always starts from the **recessive homozygotes**, because only their phenotype matches their genotype: for example, if phenylketonuria occurs at 1 : 10000, then q^2^ = 0.0001, q = 0.01 and p = 0.99; heterozygous carriers 2pq ≈ 0.02, i.e., one in every 50 people."}]},
-   {"type": "p", "text": "**Stages of the population-statistical method:** choosing the population, collecting data (frequency of the disease or trait), statistical analysis. The method is used to determine allele and genotype frequencies, the spread of hereditary diseases and carriers and their geographic and ethnic differences, the frequency of mutations, and to plan medical genetic services."}
-  ]}
+  {
+   "title": "1. Specific features of human genetics",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Human genetics obeys the laws of heredity common to all living organisms, but the classical hybridization method cannot be used to study humans. The reasons are:"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "experimental (purposeful) crossing is impossible in humans;",
+      "generations change slowly (25–30 years) and the number of children is small;",
+      "the karyotype is complex (46 chromosomes) and there are many linkage groups;",
+      "humans cannot be kept and observed under identical environmental conditions;",
+      "there are medical and ethical restrictions."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Therefore special methods are used in human genetics: the **genealogical, twin, population-statistical, cytogenetic, dermatoglyphic, biochemical, molecular genetic and immunogenetic** methods, somatic cell genetics and modeling. Human genetics also has advantages: the human phenotype and diseases are studied more deeply than in other organisms, populations are large, and written records exist for many generations."
+    },
+    {
+     "type": "table",
+     "title": "Table 7.1. Methods of human genetics and what they reveal",
+     "head": [
+      "Method",
+      "What it can reveal"
+     ],
+     "rows": [
+      [
+       "Genealogical",
+       "Whether a trait is hereditary, the mode of inheritance, genotypes of family members, disease risk"
+      ],
+      [
+       "Twin",
+       "The relative share of heredity and environment in forming a trait"
+      ],
+      [
+       "Population-statistical",
+       "Allele and genotype frequencies, number of carriers, geographic distribution of diseases"
+      ],
+      [
+       "Cytogenetic",
+       "Karyotype, chromosomal diseases, sex chromatin"
+      ],
+      [
+       "Dermatoglyphic",
+       "Skin patterns — an additional (screening) sign in chromosomal diseases; zygosity of twins"
+      ],
+      [
+       "Biochemical",
+       "Hereditary metabolic disorders (enzymopathies), carrier status"
+      ],
+      [
+       "Molecular-genetic",
+       "Gene mutations (PCR, sequencing, DNA probes)"
+      ],
+      [
+       "Somatic-cell genetics",
+       "Location of genes on chromosomes (hybrid cells)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. The genealogical method (pedigree method)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **genealogical method** (F. Galton, 1865) determines whether a trait is hereditary, its type of inheritance and the genotypes of family members by drawing and analyzing a pedigree. The method has two stages: collecting information and drawing the pedigree; genetic analysis of the pedigree."
+    },
+    {
+     "type": "table",
+     "title": "Table 7.2. Basic terms of the genealogical method",
+     "head": [
+      "Term",
+      "Meaning"
+     ],
+     "rows": [
+      [
+       "Proband",
+       "The person from whom the pedigree is started (usually the patient who consulted the doctor); shown with an arrow in the pedigree"
+      ],
+      [
+       "Sibs",
+       "Children of the same parents (brothers and sisters)"
+      ],
+      [
+       "Generation",
+       "One row of the pedigree; numbered with Roman numerals, and the persons in each generation are numbered with Arabic numerals from left to right"
+      ],
+      [
+       "Consanguineous marriage",
+       "Shown with a double line"
+      ],
+      [
+       "Heterozygous carrier",
+       "A dot inside a circle or square, or a half-shaded symbol"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t07_belgilar.webp",
+     "w": 1175,
+     "h": 758,
+     "lang": true,
+     "label": "Figure 7.1",
+     "caption": "Main symbols used in drawing pedigrees: male (square), female (circle), affected (shaded), marriage, consanguineous marriage, sibs, twins, carriers, stillborn child and others (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Rule of drawing a pedigree: each generation is written in one horizontal row; the parents are joined by a marriage line, and the children are placed on a “sibship” line hanging from it in order of birth from left to right; a key (legend) to the symbols is given under the pedigree."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Criteria of the types of inheritance",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Table 7.3. Criteria for determining the type of inheritance from a pedigree",
+     "head": [
+      "Type",
+      "Main features",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Autosomal dominant",
+       "The trait occurs in every generation (“vertical” transmission); at least one parent of an affected child is affected; males and females are affected equally; 50 % of children of an affected heterozygote and a healthy partner are affected",
+       "Polydactyly, achondroplasia, Marfan syndrome, Huntington disease, brachydactyly"
+      ],
+      [
+       "Autosomal recessive",
+       "The trait skips generations (“horizontal” transmission — among sibs); affected children are often born to healthy parents; the risk in a marriage of two carriers is 25 %; frequent in consanguineous marriages",
+       "Phenylketonuria, albinism, cystic fibrosis, Wilson disease, galactosemia"
+      ],
+      [
+       "X-linked recessive",
+       "Mainly males are affected; the disease passes through the maternal line (uncles, nephews); not passed from father to son",
+       "Hemophilia, color blindness, Duchenne dystrophy"
+      ],
+      [
+       "X-linked dominant",
+       "Women are affected 2 times more often; all daughters of an affected father are affected, his sons are healthy",
+       "Vitamin D–resistant rickets"
+      ],
+      [
+       "Y-linked (holandric)",
+       "Only in males, from father to all sons",
+       "Hypertrichosis of the ear pinna"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t07_dominant.webp",
+     "label": "Figure 7.2",
+     "caption": "Inheritance of an autosomal dominant trait (pedigree): affected individuals (black symbols) appear in every generation, all of them heterozygous (Aa); healthy individuals are aa (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t07_ar_shajara.webp",
+     "w": 675,
+     "h": 374,
+     "label": "Figure 7.3",
+     "caption": "Inheritance of a recessive trait (phenylketonuria): affected children are born to phenotypically healthy heterozygous (Aa) parents; the affected persons in generation IV come from a consanguineous marriage (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The classic example of a hemophilia pedigree is the family of **Queen Victoria** of Great Britain (Figure 7.4). Victoria was a carrier of the hemophilia gene; her son Leopold was affected and her daughters Alice and Beatrice were carriers, and the gene spread to the royal families of Germany, Russia and Spain (the Russian heir to the throne Alexei also had hemophilia)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t07_viktoriya.webp",
+     "w": 1292,
+     "h": 658,
+     "lang": true,
+     "label": "Figure 7.4",
+     "caption": "Transmission of hemophilia — the descendants of Queen Victoria of Great Britain (shaded square — affected male, circle with a dot — carrier female) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Criteria of **mitochondrial (cytoplasmic) inheritance**: the trait passes only from the **mother** to all her children (sons and daughters); it is not transmitted by an affected father; severity varies within a family because the cell contains a mixture of normal and mutant mitochondria (**heteroplasmy**). Examples: Leber hereditary optic neuropathy, MELAS and MERRF syndromes."
+    },
+    {
+     "type": "h",
+     "text": "Algorithm for determining the mode of inheritance from a pedigree"
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Is the trait present in every generation? Yes — suspect a dominant type; if it skips generations — recessive.",
+      "Was an affected child born to healthy parents? If yes — recessive type.",
+      "Are men and women affected equally? If equally — autosomal; if mainly men — X-recessive; if only men and from father to son — Y-linked.",
+      "Are all daughters of an affected father affected and all sons healthy? If yes — X-dominant.",
+      "If the trait passes only through the mother to all children — mitochondrial.",
+      "Finally write the genotype of each individual and calculate the risk for the next child."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Consanguineous marriage** (first cousins and others) increases the risk of recessive diseases, because relatives may have received the same recessive allele from a common ancestor. First cousins share 1/8 of their genes; the probability that both alleles in their child come from the common ancestor (the **inbreeding coefficient**, F) is 1/16. That is why parents of children with rare recessive diseases (for example, many enzymopathies) are often blood relatives."
+    }
+   ]
+  },
+  {
+   "title": "4. The twin method",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **twin method** (F. Galton, 1876) compares traits in monozygotic and dizygotic twins to determine the relative role of heredity and environment in their formation. Twins are born in about 1 % of human births."
+    },
+    {
+     "type": "table",
+     "title": "Table 7.4. Types of twins",
+     "head": [
+      "Feature",
+      "Monozygotic (identical, MZ)",
+      "Dizygotic (fraternal, DZ)"
+     ],
+     "rows": [
+      [
+       "Origin",
+       "One zygote splits into two at the early stages of cleavage",
+       "Two eggs are fertilized by two sperm"
+      ],
+      [
+       "Genotype",
+       "Identical (100 % genes in common)",
+       "On average 50 % genes in common (like ordinary sibs)"
+      ],
+      [
+       "Sex",
+       "Always the same",
+       "Same or different"
+      ],
+      [
+       "Blood groups, dermatoglyphics",
+       "Match",
+       "May or may not match"
+      ],
+      [
+       "Tissue transplantation",
+       "Not rejected",
+       "Rejected"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The structure of monozygotic twins depends on when the zygote divided: if it divides in the first **3 days** after fertilisation, each twin has its own placenta and membranes (dichorionic-diamniotic); on **days 4–8** — a shared placenta and separate amnions (monochorionic-diamniotic, the most common); on **days 8–13** — a shared amnion; if incomplete division occurs **after day 13**, **conjoined (Siamese) twins** arise. Zygosity is determined by similarity in many traits (hair and eye colour, ear shape), blood groups, dermatoglyphics and, most precisely, DNA analysis."
+    },
+    {
+     "type": "p",
+     "text": "The presence of a trait in both twins is called **concordance**, and its presence in only one is called **discordance**. The percentage of concordance is compared in MZ and DZ pairs: if concordance in MZ is much higher than in DZ, heredity plays an important role in the development of the trait. The **coefficient of heritability** is calculated by Holzinger’s formula:"
+    },
+    {
+     "type": "p",
+     "text": "H = (C~MZ~ − C~DZ~) / (100 % − C~DZ~); E = 1 − H"
+    },
+    {
+     "type": "p",
+     "text": "Here C is the percentage of concordance, H the share of heredity and E the share of environment. If H > 0.7, the trait is determined mainly by heredity; if H < 0.4, mainly by the environment."
+    },
+    {
+     "type": "table",
+     "title": "Table 7.5. Concordance of twins for some traits and diseases (%)",
+     "head": [
+      "Trait / disease",
+      "MZ",
+      "DZ"
+     ],
+     "rows": [
+      [
+       "Eye color",
+       "99.5",
+       "28"
+      ],
+      [
+       "Measles",
+       "98",
+       "94"
+      ],
+      [
+       "Schizophrenia",
+       "69",
+       "10"
+      ],
+      [
+       "Diabetes mellitus (type 2)",
+       "65",
+       "18"
+      ],
+      [
+       "Tuberculosis",
+       "37",
+       "15"
+      ],
+      [
+       "Down syndrome",
+       "89",
+       "7"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In measles concordance is almost equally high in MZ and DZ — susceptibility to this disease depends mainly on the environment (contact with the virus). In schizophrenia and type 2 diabetes MZ concordance is much higher — these are **diseases with a hereditary predisposition (multifactorial)**."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Limitations** of the twin method: monozygotic twins grow in the same conditions both in the uterus and in the family, so the share of the “shared environment” may add to the heritability and overstate it; twins are often born premature and with low birth weight. For this reason some studies compare monozygotic twins raised apart in different families — this shows the role of heredity most precisely."
+    }
+   ]
+  },
+  {
+   "title": "5. The population-statistical method",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A **population** is a group of individuals of one species living for a long time in a certain area and freely marrying each other. In humans small groups are distinguished within large populations: a **deme** (1500–4000 people, marriages within the group 80–90 %) and an **isolate** (up to 1500 people, marriages within the group more than 90 %). In isolates consanguineous marriages are common, so the frequency of recessive diseases rises (geographic, religious, ethnic isolates)."
+    },
+    {
+     "type": "p",
+     "text": "In a population of self-fertilizing organisms the proportion of heterozygotes halves in each generation and the population splits into homozygous lines. In cross-fertilizing (panmictic) populations the ratio of genotypes obeys the **Hardy-Weinberg law**:"
+    },
+    {
+     "type": "p",
+     "text": "p + q = 1;  p^2^ + 2pq + q^2^ = 1"
+    },
+    {
+     "type": "p",
+     "text": "Here p is the frequency of the dominant allele (A), q the frequency of the recessive allele (a), and p^2^, 2pq and q^2^ the frequencies of the genotypes AA, Aa and aa. The law holds for an **ideal population**: the population is large, mating is random (panmixia), and there are no mutations, natural selection or migration."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Calculation always starts from the **recessive homozygotes**, because only their phenotype matches their genotype: for example, if phenylketonuria occurs at 1 : 10000, then q^2^ = 0.0001, q = 0.01 and p = 0.99; heterozygous carriers 2pq ≈ 0.02, i.e., one in every 50 people."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Stages of the population-statistical method:** choosing the population, collecting data (frequency of the disease or trait), statistical analysis. The method is used to determine allele and genotype frequencies, the spread of hereditary diseases and carriers and their geographic and ethnic differences, the frequency of mutations, and to plan medical genetic services."
+    },
+    {
+     "type": "table",
+     "title": "Table 7.6. Factors disturbing the genetic equilibrium of a population (elementary factors of evolution)",
+     "head": [
+      "Factor",
+      "Effect",
+      "Human example"
+     ],
+     "rows": [
+      [
+       "Mutations",
+       "Create new alleles; frequency 10^−5^–10^−6^ per gene per gamete",
+       "New (de novo) cases of achondroplasia"
+      ],
+      [
+       "Natural selection",
+       "Reduces harmful alleles or preserves them by heterozygote advantage",
+       "HbS and malaria, thalassaemia"
+      ],
+      [
+       "Genetic drift (genetic-automatic processes)",
+       "Random change of allele frequencies in small populations",
+       "Increase of rare diseases in isolates"
+      ],
+      [
+       "Founder effect",
+       "When a small group settles a new area, the founders' alleles become common",
+       "Tay–Sachs in Ashkenazi Jews, specific diseases in Finland"
+      ],
+      [
+       "Migration (gene flow)",
+       "Exchange of alleles between populations, reduces differences",
+       "Levelling of blood-group frequencies in urban populations"
+      ],
+      [
+       "Inbreeding (consanguineous marriages)",
+       "Increases the proportion of homozygotes",
+       "Increase of recessive diseases in isolates"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "For X-linked traits the Hardy–Weinberg calculation starts with men: because men are hemizygous, the frequency of affected men equals q directly. For example, if colour blindness occurs in 8 % of men, q = 0,08; in women colour blindness is q^2^ = 0,0064 (≈ 0,6 %), and carrier women are 2pq = 2 × 0,92 × 0,08 ≈ 0,147 (≈ 15 %). This is why X-recessive diseases are many times more common in men than in women."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Population-statistical data are the basis for planning **newborn screening** programmes in public health: for example, all newborns are tested for phenylketonuria, congenital hypothyroidism and cystic fibrosis. In regions with many carriers (thalassaemia in the Mediterranean) carrier testing before marriage is carried out."
+      }
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: drawing and analyzing a pedigree", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Starting from the proband, collect information about the sibs, parents, grandparents and relatives on the father’s and mother’s sides (at least 3 generations).",
-    "Number the generations with Roman numerals and the persons in each generation with Arabic numerals.",
-    "Draw the pedigree with the standard symbols and mark the proband with an arrow.",
-    "Analyze whether the trait is present in every generation, whether it occurs in children of healthy parents and how it is distributed by sex.",
-    "Determine the type of inheritance and write the probable genotypes of the persons.",
-    "Calculate the risk of the disease for the next child."
-   ]}
-  ]}
+  {
+   "title": "Skill: drawing and analyzing a pedigree",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Starting from the proband, collect information about the sibs, parents, grandparents and relatives on the father’s and mother’s sides (at least 3 generations).",
+      "Number the generations with Roman numerals and the persons in each generation with Arabic numerals.",
+      "Draw the pedigree with the standard symbols and mark the proband with an arrow.",
+      "Analyze whether the trait is present in every generation, whether it occurs in children of healthy parents and how it is distributed by sex.",
+      "Determine the type of inheritance and write the probable genotypes of the persons.",
+      "Calculate the risk of the disease for the next child."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "What difficulties exist in studying human genetics?",
@@ -111,45 +492,348 @@
   "What are concordance and discordance? Write Holzinger’s formula.",
   "Define the concepts of population, deme and isolate.",
   "State the Hardy-Weinberg law and the conditions under which it holds.",
-  "What does the population-statistical method allow us to determine?"
+  "What does the population-statistical method allow us to determine?",
+  "What can be revealed by each method of human genetics?",
+  "By what criteria is mitochondrial inheritance recognised?",
+  "Explain the algorithm for determining the mode of inheritance from a pedigree.",
+  "What risk does consanguineous marriage carry? What is the inbreeding coefficient?",
+  "How do the types of monozygotic twins depend on the time of zygote division?",
+  "Which factors disturb the genetic equilibrium of a population?",
+  "How does the Hardy–Weinberg calculation start for X-linked traits?"
  ],
  "quiz": [
-  {"q": "What is the person from whom a pedigree is started called?", "options": ["Proband", "Sib", "Heterozygote", "Concordant", "Isolate"], "answer": 0},
-  {"q": "If a trait occurs in every generation and one parent of an affected child is always affected, what is the type of inheritance?", "options": ["Autosomal dominant", "Autosomal recessive", "X-linked recessive", "Y-linked", "Mitochondrial"], "answer": 0},
-  {"q": "What is the probability of a child with an autosomal recessive disease in a marriage of two heterozygous carriers?", "options": ["25 %", "50 %", "75 %", "100 %", "0 %"], "answer": 0},
-  {"q": "Which disease is inherited as autosomal recessive?", "options": ["Phenylketonuria", "Achondroplasia", "Marfan syndrome", "Hemophilia", "Huntington disease"], "answer": 0},
-  {"q": "Which trait is inherited as autosomal dominant?", "options": ["Polydactyly", "Albinism", "Cystic fibrosis", "Color blindness", "Galactosemia"], "answer": 0},
-  {"q": "What proportion of genes do monozygotic twins share?", "options": ["100 %", "50 %", "25 %", "75 %", "12.5 %"], "answer": 0},
-  {"q": "What is the presence of the same trait in both twins called?", "options": ["Concordance", "Discordance", "Penetrance", "Expressivity", "Panmixia"], "answer": 0},
-  {"q": "What shows that heredity plays a major role in the development of a trait?", "options": ["Concordance in MZ is much higher than in DZ", "Concordance is the same in MZ and DZ", "Concordance in DZ is higher than in MZ", "Concordance is 0 %", "Only DZ are affected"], "answer": 0},
-  {"q": "Who proposed the twin method?", "options": ["F. Galton", "G. Mendel", "T. Morgan", "G. Hardy", "N.K. Koltsov"], "answer": 0},
-  {"q": "What does 2pq mean in the Hardy-Weinberg formula?", "options": ["The frequency of heterozygotes", "The frequency of dominant homozygotes", "The frequency of recessive homozygotes", "The frequency of the dominant allele", "The frequency of mutations"], "answer": 0},
-  {"q": "Under what conditions does the Hardy-Weinberg law hold?", "options": ["In a large panmictic population without selection and migration", "In small isolates", "When consanguineous marriages are common", "When mutations are frequent", "When natural selection is strong"], "answer": 0},
-  {"q": "If a recessive disease occurs at 1 : 10000 in a population, what is q?", "options": ["0.01", "0.0001", "0.1", "0.99", "0.02"], "answer": 0},
-  {"q": "What is a small population with more than 90 % of marriages within the group called?", "options": ["Isolate", "Deme", "Panmictic population", "Species", "Clone"], "answer": 0},
-  {"q": "If a disease occurs only in male relatives on the mother’s side, what inheritance is suspected?", "options": ["X-linked recessive", "Y-linked", "Autosomal dominant", "X-linked dominant", "Autosomal recessive"], "answer": 0},
-  {"q": "In which disease is concordance almost the same and high in MZ and DZ?", "options": ["Measles", "Schizophrenia", "Down syndrome", "Type 2 diabetes mellitus", "Eye color"], "answer": 0}
+  {
+   "q": "What is the person from whom a pedigree is started called?",
+   "options": [
+    "Proband",
+    "Sib",
+    "Heterozygote",
+    "Concordant",
+    "Isolate"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If a trait occurs in every generation and one parent of an affected child is always affected, what is the type of inheritance?",
+   "options": [
+    "Autosomal dominant",
+    "Autosomal recessive",
+    "X-linked recessive",
+    "Y-linked",
+    "Mitochondrial"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the probability of a child with an autosomal recessive disease in a marriage of two heterozygous carriers?",
+   "options": [
+    "25 %",
+    "50 %",
+    "75 %",
+    "100 %",
+    "0 %"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which disease is inherited as autosomal recessive?",
+   "options": [
+    "Phenylketonuria",
+    "Achondroplasia",
+    "Marfan syndrome",
+    "Hemophilia",
+    "Huntington disease"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which trait is inherited as autosomal dominant?",
+   "options": [
+    "Polydactyly",
+    "Albinism",
+    "Cystic fibrosis",
+    "Color blindness",
+    "Galactosemia"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What proportion of genes do monozygotic twins share?",
+   "options": [
+    "100 %",
+    "50 %",
+    "25 %",
+    "75 %",
+    "12.5 %"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the presence of the same trait in both twins called?",
+   "options": [
+    "Concordance",
+    "Discordance",
+    "Penetrance",
+    "Expressivity",
+    "Panmixia"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What shows that heredity plays a major role in the development of a trait?",
+   "options": [
+    "Concordance in MZ is much higher than in DZ",
+    "Concordance is the same in MZ and DZ",
+    "Concordance in DZ is higher than in MZ",
+    "Concordance is 0 %",
+    "Only DZ are affected"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who proposed the twin method?",
+   "options": [
+    "F. Galton",
+    "G. Mendel",
+    "T. Morgan",
+    "G. Hardy",
+    "N.K. Koltsov"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What does 2pq mean in the Hardy-Weinberg formula?",
+   "options": [
+    "The frequency of heterozygotes",
+    "The frequency of dominant homozygotes",
+    "The frequency of recessive homozygotes",
+    "The frequency of the dominant allele",
+    "The frequency of mutations"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Under what conditions does the Hardy-Weinberg law hold?",
+   "options": [
+    "In a large panmictic population without selection and migration",
+    "In small isolates",
+    "When consanguineous marriages are common",
+    "When mutations are frequent",
+    "When natural selection is strong"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If a recessive disease occurs at 1 : 10000 in a population, what is q?",
+   "options": [
+    "0.01",
+    "0.0001",
+    "0.1",
+    "0.99",
+    "0.02"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is a small population with more than 90 % of marriages within the group called?",
+   "options": [
+    "Isolate",
+    "Deme",
+    "Panmictic population",
+    "Species",
+    "Clone"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If a disease occurs only in male relatives on the mother’s side, what inheritance is suspected?",
+   "options": [
+    "X-linked recessive",
+    "Y-linked",
+    "Autosomal dominant",
+    "X-linked dominant",
+    "Autosomal recessive"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which disease is concordance almost the same and high in MZ and DZ?",
+   "options": [
+    "Measles",
+    "Schizophrenia",
+    "Down syndrome",
+    "Type 2 diabetes mellitus",
+    "Eye color"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If a trait passes only through the mother to all children, what type of inheritance is it?",
+   "options": [
+    "Mitochondrial",
+    "X-linked dominant",
+    "Autosomal dominant",
+    "Y-linked",
+    "Autosomal recessive"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the inbreeding coefficient in the child of first cousins?",
+   "options": [
+    "1/16",
+    "1/8",
+    "1/4",
+    "1/32",
+    "1/2"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If the zygote divides incompletely after day 13, what twins arise?",
+   "options": [
+    "Conjoined (Siamese) twins",
+    "Dizygotic twins",
+    "Dichorionic twins",
+    "Diamniotic twins",
+    "Haploid twins"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the sharp rise in the frequency of some alleles when a small group settles a new area called?",
+   "options": [
+    "Founder effect",
+    "Gene flow",
+    "Panmixia",
+    "Heteroplasmy",
+    "Norm of reaction"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If colour blindness occurs in 8 % of men, about how common is it among women?",
+   "options": [
+    "0,6 %",
+    "8 %",
+    "4 %",
+    "15 %",
+    "16 %"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "The proband is a boy with hemophilia; his parents are healthy. The proband’s maternal grandfather has hemophilia and his grandmother is healthy. Hemophilia has not been observed on the father’s side.", "ask": "Draw the pedigree and determine the type of inheritance and the genotypes of the family members.", "answer": "The disease occurs only in males and passes through the maternal line (grandfather → mother → grandson), with no father-to-son transmission — X-linked recessive type. Grandfather — X^h^Y, grandmother — X^H^X^H^; their daughter (the proband’s mother) is an obligate carrier — X^H^X^h^; the proband’s father — X^H^Y; the proband — X^h^Y. In this family the risk for later sons to have hemophilia is 50 %, and for daughters to be carriers 50 %."},
-  {"title": "Case 2", "text": "In a city 51 % of the population is brown-eyed and 49 % blue-eyed. Brown eyes (A) are completely dominant over blue eyes (a).", "ask": "What are the frequencies of homozygous and heterozygous genotypes in the population?", "answer": "Blue-eyed people are recessive homozygotes: q^2^ = 0.49 → q = 0.7; p = 1 − 0.7 = 0.3. AA = p^2^ = 0.09 (9 %), Aa = 2pq = 2 · 0.3 · 0.7 = 0.42 (42 %), aa = 0.49 (49 %). Check: 9 + 42 + 49 = 100 %."},
-  {"title": "Case 3", "text": "Two populations of the same origin but living under different conditions differ sharply in the frequency of a certain recessive disease: 1 : 5000 in one and 1 : 50000 in the other.", "ask": "Explain the reason.", "answer": "The population with the higher frequency is probably an isolate or a deme: consanguineous marriages (inbreeding), gene drift and the “founder effect” (an allele that by chance was common in the small group from which the population descended) act in it. In such a population recessive alleles often become homozygous. In a large panmictic population there are few consanguineous marriages and the allele is expressed less often."}
+  {
+   "title": "Case 1",
+   "text": "The proband is a boy with hemophilia; his parents are healthy. The proband’s maternal grandfather has hemophilia and his grandmother is healthy. Hemophilia has not been observed on the father’s side.",
+   "ask": "Draw the pedigree and determine the type of inheritance and the genotypes of the family members.",
+   "answer": "The disease occurs only in males and passes through the maternal line (grandfather → mother → grandson), with no father-to-son transmission — X-linked recessive type. Grandfather — X^h^Y, grandmother — X^H^X^H^; their daughter (the proband’s mother) is an obligate carrier — X^H^X^h^; the proband’s father — X^H^Y; the proband — X^h^Y. In this family the risk for later sons to have hemophilia is 50 %, and for daughters to be carriers 50 %."
+  },
+  {
+   "title": "Case 2",
+   "text": "In a city 51 % of the population is brown-eyed and 49 % blue-eyed. Brown eyes (A) are completely dominant over blue eyes (a).",
+   "ask": "What are the frequencies of homozygous and heterozygous genotypes in the population?",
+   "answer": "Blue-eyed people are recessive homozygotes: q^2^ = 0.49 → q = 0.7; p = 1 − 0.7 = 0.3. AA = p^2^ = 0.09 (9 %), Aa = 2pq = 2 · 0.3 · 0.7 = 0.42 (42 %), aa = 0.49 (49 %). Check: 9 + 42 + 49 = 100 %."
+  },
+  {
+   "title": "Case 3",
+   "text": "Two populations of the same origin but living under different conditions differ sharply in the frequency of a certain recessive disease: 1 : 5000 in one and 1 : 50000 in the other.",
+   "ask": "Explain the reason.",
+   "answer": "The population with the higher frequency is probably an isolate or a deme: consanguineous marriages (inbreeding), gene drift and the “founder effect” (an allele that by chance was common in the small group from which the population descended) act in it. In such a population recessive alleles often become homozygous. In a large panmictic population there are few consanguineous marriages and the allele is expressed less often."
+  },
+  {
+   "title": "Case 4",
+   "text": "The frequency of haemophilia A among men is 1 : 5000.",
+   "ask": "Calculate the frequency of carrier women and affected women in the population.",
+   "answer": "Men are hemizygous, so q = 1/5000 = 0,0002; p ≈ 0,9998. Carrier women: 2pq ≈ 2 × 0,0002 = 0,0004, i.e. one in every 2500 women. Affected women: q^2^ = 0,00000004, i.e. one in 25 million — practically very rare. This is why haemophilia occurs almost only in men."
+  },
+  {
+   "title": "Case 5",
+   "text": "In a family where the parents are first cousins, one of two children was born with phenylketonuria. The parents and their parents are healthy.",
+   "ask": "How is the disease inherited? What is the role of the consanguineous marriage? What is the probability that the healthy child is a carrier?",
+   "answer": "An affected child of healthy parents means **autosomal recessive** inheritance; both parents are heterozygous (Aa × Aa). Because they are cousins, they are likely to have received the same recessive allele from a common grandparent — consanguineous marriage raises the risk of a rare recessive disease. The healthy child cannot be aa; of the remaining AA : 2 Aa, the probability that he or she is a carrier is **2/3**. For each further child the risk of disease is 25 %."
+  },
+  {
+   "title": "Case 6",
+   "text": "Monozygotic twins were born with one shared placenta but separate amniotic membranes.",
+   "ask": "When did the zygote probably divide? What will these twins be like in sex and blood group?",
+   "answer": "A shared placenta with separate amnions (monochorionic-diamniotic twins) arises when the inner cell mass splits in two at the blastocyst stage, **4–8 days** after fertilisation. Since they come from one zygote, they have the same genotype: their **sex, blood groups**, HLA antigens and dermatoglyphics match, and a skin graft from one to the other is not rejected."
+  }
  ],
  "cards": [
-  {"front": "Proband", "back": "The person from whom the pedigree is started; marked with an arrow"},
-  {"front": "Sibs", "back": "Children of the same parents"},
-  {"front": "Autosomal dominant", "back": "Every generation, equal in males and females; risk 50 %"},
-  {"front": "Autosomal recessive", "back": "Skips generations, from healthy parents; risk 25 %; consanguineous marriage"},
-  {"front": "Monozygotic twins", "back": "From one zygote; genotype 100 % identical, same sex"},
-  {"front": "Concordance", "back": "Presence of the same trait in both twins"},
-  {"front": "Holzinger’s formula", "back": "H = (C~MZ~ − C~DZ~) / (100 % − C~DZ~)"},
-  {"front": "Isolate", "back": "Up to 1500 people, internal marriages more than 90 %"},
-  {"front": "Hardy-Weinberg law", "back": "p^2^ + 2pq + q^2^ = 1; in an ideal large panmictic population"},
-  {"front": "Starting the calculation", "back": "From the recessive homozygotes: q = √(frequency of aa)"}
+  {
+   "front": "Proband",
+   "back": "The person from whom the pedigree is started; marked with an arrow"
+  },
+  {
+   "front": "Sibs",
+   "back": "Children of the same parents"
+  },
+  {
+   "front": "Autosomal dominant",
+   "back": "Every generation, equal in males and females; risk 50 %"
+  },
+  {
+   "front": "Autosomal recessive",
+   "back": "Skips generations, from healthy parents; risk 25 %; consanguineous marriage"
+  },
+  {
+   "front": "Monozygotic twins",
+   "back": "From one zygote; genotype 100 % identical, same sex"
+  },
+  {
+   "front": "Concordance",
+   "back": "Presence of the same trait in both twins"
+  },
+  {
+   "front": "Holzinger’s formula",
+   "back": "H = (C~MZ~ − C~DZ~) / (100 % − C~DZ~)"
+  },
+  {
+   "front": "Isolate",
+   "back": "Up to 1500 people, internal marriages more than 90 %"
+  },
+  {
+   "front": "Hardy-Weinberg law",
+   "back": "p^2^ + 2pq + q^2^ = 1; in an ideal large panmictic population"
+  },
+  {
+   "front": "Starting the calculation",
+   "back": "From the recessive homozygotes: q = √(frequency of aa)"
+  },
+  {
+   "front": "Heteroplasmy",
+   "back": "Mixture of normal and mutant mitochondria in one cell"
+  },
+  {
+   "front": "Inbreeding coefficient",
+   "back": "Probability that both alleles come from a common ancestor; 1/16 in the child of first cousins"
+  },
+  {
+   "front": "Founder effect",
+   "back": "Increase in a new population of the alleles carried by a small group of founders"
+  },
+  {
+   "front": "Newborn screening",
+   "back": "Testing all newborns for phenylketonuria, hypothyroidism and others"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "Dominant type — **“vertical”** (every generation), recessive type — **“horizontal”** (among sibs, skipping generations)."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Hardy-Weinberg is a squared binomial: **(p + q)^2^ = p^2^ + 2pq + q^2^** — AA, Aa, aa."},
-  {"kind": "klinik", "label": "Clinical significance", "text": "Pedigree analysis is the basis of genetic counseling: it reveals the type of inheritance and the risk for the next child, while the twin method assesses the share of heredity in multifactorial diseases."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "Dominant type — **“vertical”** (every generation), recessive type — **“horizontal”** (among sibs, skipping generations)."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Hardy-Weinberg is a squared binomial: **(p + q)^2^ = p^2^ + 2pq + q^2^** — AA, Aa, aa."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "Pedigree analysis is the basis of genetic counseling: it reveals the type of inheritance and the risk for the next child, while the twin method assesses the share of heredity in multifactorial diseases."
+  }
  ]
 }

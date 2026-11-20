@@ -4103,5 +4103,1893 @@
     "s": 13
    }
   ]
+ },
+ "t01_fag_sikl.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     636,
+     16,
+     812,
+     56
+    ],
+    "t": "Bacteriophage"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     845,
+     106,
+     1104,
+     148
+    ],
+    "t": "Bacterial DNA"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     528,
+     145,
+     676,
+     183
+    ],
+    "t": "Bacterium"
+   }
+  ]
+ },
+ "t01_oiv.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 19,
+    "box": [
+     188,
+     6,
+     256,
+     36
+    ],
+    "t": "Envelope"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 19,
+    "box": [
+     66,
+     48,
+     194,
+     77
+    ],
+    "t": "Glycoprotein"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 19,
+    "box": [
+     44,
+     78,
+     166,
+     106
+    ],
+    "t": "Protein coat"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 19,
+    "box": [
+     110,
+     140,
+     170,
+     166
+    ],
+    "t": "RNA"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 19,
+    "box": [
+     24,
+     186,
+     156,
+     268
+    ],
+    "t": "Reverse\ntranscriptase\nenzyme"
+   }
+  ]
+ },
+ "t02_ept.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     742,
+     10,
+     964,
+     54
+    ],
+    "t": "Nuclear envelope"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     1032,
+     58,
+     1134,
+     98
+    ],
+    "t": "Nucleus"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     18,
+     122,
+     226,
+     162
+    ],
+    "t": "Ribosomes"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     842,
+     602,
+     1150,
+     698
+    ],
+    "t": "Rough endoplasmic\nreticulum"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "box": [
+     574,
+     726,
+     970,
+     775
+    ],
+    "t": "Smooth endoplasmic reticulum"
+   }
+  ]
+ },
+ "t02_golji.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     580,
+     36,
+     846,
+     102
+    ],
+    "t": "Secondary lysosomes\nwith digestive activity"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     496,
+     183,
+     750,
+     220
+    ],
+    "t": "Primary lysosomes"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     640,
+     376,
+     808,
+     412
+    ],
+    "t": "Golgi complex"
+   }
+  ]
+ },
+ "t02_sentrosoma.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     130,
+     13,
+     246,
+     38
+    ],
+    "t": "Centrosome"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     216,
+     101,
+     298,
+     124
+    ],
+    "t": "Centriole"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     270,
+     148,
+     410,
+     172
+    ],
+    "t": "Microtubules"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     206,
+     773,
+     312,
+     797
+    ],
+    "t": "Centrosome"
+   }
+  ]
+ },
+ "t02_ribosoma.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "box": [
+     410,
+     3,
+     530,
+     68
+    ],
+    "t": "Large\nsubunit"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "box": [
+     6,
+     188,
+     124,
+     254
+    ],
+    "t": "Small\nsubunit"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "box": [
+     540,
+     350,
+     676,
+     382
+    ],
+    "t": "Ribosome"
+   }
+  ]
+ },
+ "t02_xromatin.webp": {
+  "items": [
+   {
+    "bg": "ring",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     306,
+     198,
+     448,
+     227
+    ],
+    "t": "Chromosome"
+   },
+   {
+    "bg": "ring",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     922,
+     186,
+     1056,
+     220
+    ],
+    "t": "Nucleosome"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     746,
+     318,
+     806,
+     344
+    ],
+    "t": "DNA"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     730,
+     378,
+     815,
+     404
+    ],
+    "t": "Histones"
+   },
+   {
+    "bg": "ring",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     1038,
+     376,
+     1124,
+     400
+    ],
+    "t": "Histones"
+   },
+   {
+    "bg": "ring",
+    "c": "#111111",
+    "smax": 20,
+    "box": [
+     526,
+     563,
+     716,
+     592
+    ],
+    "t": "Chromatin fibres"
+   },
+   {
+    "bg": "ring",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     716,
+     661,
+     770,
+     685
+    ],
+    "t": "DNA"
+   },
+   {
+    "bg": "ring",
+    "c": "#111111",
+    "smax": 24,
+    "f": "serifb",
+    "box": [
+     386,
+     726,
+     826,
+     788
+    ],
+    "t": "Formation of supercoiling\nof the DNA molecule"
+   }
+  ]
+ },
+ "t03_replikatsiya.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     426,
+     0,
+     592,
+     33
+    ],
+    "t": "Sister chromatids"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     302,
+     138,
+     430,
+     168
+    ],
+    "t": "Replication"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     632,
+     141,
+     754,
+     167
+    ],
+    "t": "Centromere"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     4,
+     203,
+     134,
+     232
+    ],
+    "t": "Chromosome"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     640,
+     198,
+     832,
+     256
+    ],
+    "t": "Duplicated\nchromosome"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     308,
+     260,
+     414,
+     288
+    ],
+    "t": "Division"
+   }
+  ]
+ },
+ "t05_toliqsiz.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     58,
+     150,
+     178,
+     180
+    ],
+    "t": "Gametes"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     32,
+     386,
+     152,
+     414
+    ],
+    "t": "Gametes"
+   }
+  ]
+ },
+ "t05_jins.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     362,
+     136,
+     566,
+     172
+    ],
+    "t": "Homogametic"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     342,
+     553,
+     556,
+     590
+    ],
+    "t": "Heterogametic"
+   }
+  ]
+ },
+ "t05_gemofiliya.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 17,
+    "box": [
+     101,
+     464,
+     186,
+     489
+    ],
+    "t": "Healthy"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 17,
+    "box": [
+     240,
+     464,
+     316,
+     489
+    ],
+    "t": "Healthy"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 17,
+    "box": [
+     383,
+     456,
+     470,
+     515
+    ],
+    "t": "Healthy,\nbut\ncarrier"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 17,
+    "box": [
+     546,
+     460,
+     640,
+     508
+    ],
+    "t": "Affected\n(haemophilia)"
+   }
+  ]
+ },
+ "t06_griffit.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     60,
+     90,
+     232,
+     130
+    ],
+    "t": "R strain"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     351,
+     90,
+     519,
+     130
+    ],
+    "t": "S strain"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     658,
+     20,
+     856,
+     144
+    ],
+    "t": "S strain\nheated\nto 65 °C"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     916,
+     20,
+     1254,
+     144
+    ],
+    "t": "R strain\n+ heat-killed\nS bacteria"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     1112,
+     312,
+     1266,
+     394
+    ],
+    "t": "Virulent\nS strain"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     140,
+     528,
+     316,
+     607
+    ],
+    "t": "Mice\nsurvive"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     392,
+     538,
+     568,
+     617
+    ],
+    "t": "Mice\ndie"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     716,
+     520,
+     892,
+     600
+    ],
+    "t": "Mice\nsurvive"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     992,
+     538,
+     1170,
+     617
+    ],
+    "t": "Mice\ndie"
+   }
+  ]
+ },
+ "t06_mezelson.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 32,
+    "box": [
+     24,
+     55,
+     232,
+     142
+    ],
+    "t": "a – parental\nmolecules"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 32,
+    "box": [
+     24,
+     238,
+     214,
+     328
+    ],
+    "t": "b – first\ngeneration"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 32,
+    "box": [
+     24,
+     396,
+     214,
+     480
+    ],
+    "t": "c – second\ngeneration"
+   }
+  ]
+ },
+ "t06_replikatsiya.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "box": [
+     566,
+     18,
+     786,
+     54
+    ],
+    "t": "DNA primase"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     458,
+     54,
+     636,
+     83
+    ],
+    "t": "RNA primer"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     334,
+     75,
+     486,
+     104
+    ],
+    "t": "DNA ligase"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     146,
+     101,
+     364,
+     133
+    ],
+    "t": "DNA polymerase"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "box": [
+     20,
+     210,
+     182,
+     282
+    ],
+    "t": "Lagging\nstrand"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     270,
+     320,
+     502,
+     353
+    ],
+    "t": "Okazaki fragment"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     194,
+     394,
+     336,
+     464
+    ],
+    "t": "Leading\nstrand"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     1016,
+     433,
+     1184,
+     467
+    ],
+    "t": "Topoisomerase"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     400,
+     496,
+     616,
+     528
+    ],
+    "t": "DNA polymerase"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     560,
+     533,
+     676,
+     562
+    ],
+    "t": "Helicase"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     436,
+     566,
+     776,
+     600
+    ],
+    "t": "DNA-binding proteins"
+   }
+  ]
+ },
+ "t06_trnk.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     552,
+     39,
+     700,
+     62
+    ],
+    "t": "Alanine"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     468,
+     556,
+     596,
+     584
+    ],
+    "t": "Anticodon"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     458,
+     614,
+     542,
+     642
+    ],
+    "t": "Codon"
+   }
+  ]
+ },
+ "t06_restriktaza.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "f": "serifb",
+    "box": [
+     424,
+     430,
+     762,
+     468
+    ],
+    "t": "EcoRI restriction enzyme"
+   }
+  ]
+ },
+ "t10_urugdanish.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     50,
+     62,
+     198,
+     90
+    ],
+    "t": "Meiotic spindle"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     448,
+     66,
+     582,
+     94
+    ],
+    "t": "Zona pellucida"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     448,
+     103,
+     572,
+     131
+    ],
+    "t": "Corona radiata"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     22,
+     214,
+     186,
+     242
+    ],
+    "t": "Secondary oocyte"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     442,
+     236,
+     634,
+     265
+    ],
+    "t": "First polar body"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     266,
+     350,
+     422,
+     378
+    ],
+    "t": "Female pronucleus"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     220,
+     458,
+     406,
+     486
+    ],
+    "t": "Male pronucleus"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     240,
+     488,
+     438,
+     562
+    ],
+    "t": "Degenerating\nsperm tail"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     488,
+     546,
+     670,
+     598
+    ],
+    "t": "First and second\npolar bodies"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     190,
+     566,
+     366,
+     596
+    ],
+    "t": "Second polar body"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     518,
+     598,
+     644,
+     650
+    ],
+    "t": "Breakdown of\nthe spindle"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     222,
+     654,
+     360,
+     682
+    ],
+    "t": "Chromosomes"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     310,
+     692,
+     378,
+     720
+    ],
+    "t": "Zygote"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "box": [
+     232,
+     740,
+     414,
+     814
+    ],
+    "t": "Breakdown of the\npronuclear\nmembranes"
+   }
+  ]
+ },
+ "t10_transplant.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 17,
+    "f": "sansb",
+    "box": [
+     254,
+     172,
+     300,
+     196
+    ],
+    "t": "Iso-"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 16,
+    "f": "sansb",
+    "box": [
+     226,
+     381,
+     368,
+     432
+    ],
+    "t": "Xeno-\ntransplantation"
+   }
+  ]
+ },
+ "t11_visseral.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     436,
+     50,
+     586,
+     82
+    ],
+    "t": "Sandfly"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "box": [
+     44,
+     503,
+     200,
+     535
+    ],
+    "t": "Dog, jackal"
+   }
+  ]
+ },
+ "t11_lyambliya_sikl.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "box": [
+     354,
+     90,
+     418,
+     120
+    ],
+    "t": "Cyst"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 15,
+    "f": "serifb",
+    "box": [
+     90,
+     238,
+     266,
+     280
+    ],
+    "t": "Food contaminated\nwith cysts"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     270,
+     296,
+     518,
+     368
+    ],
+    "t": "Vegetative forms are also\npassed in faeces\nand die quickly"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "f": "serifb",
+    "box": [
+     134,
+     646,
+     200,
+     674
+    ],
+    "t": "Cyst"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 22,
+    "f": "serifb",
+    "box": [
+     356,
+     643,
+     540,
+     677
+    ],
+    "t": "Vegetative form"
+   }
+  ]
+ },
+ "t11_toksoplazma.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 21,
+    "f": "serifb",
+    "box": [
+     78,
+     10,
+     176,
+     42
+    ],
+    "t": "Definitive"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 21,
+    "box": [
+     72,
+     44,
+     182,
+     74
+    ],
+    "t": "host"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 22,
+    "f": "serifb",
+    "box": [
+     554,
+     448,
+     838,
+     542
+    ],
+    "t": "Intermediate hosts:\nbirds, mammals,\nhumans"
+   }
+  ]
+ },
+ "t11_balantidiy.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     118,
+     476,
+     344,
+     512
+    ],
+    "t": "Vegetative form"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     566,
+     433,
+     668,
+     465
+    ],
+    "t": "Cyst"
+   }
+  ]
+ },
+ "t12_paragonim.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 16,
+    "f": "serifb",
+    "box": [
+     332,
+     194,
+     466,
+     258
+    ],
+    "t": "Metacercariae\nin crab\nmuscles"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     486,
+     193,
+     620,
+     224
+    ],
+    "t": "Infected person"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     640,
+     144,
+     720,
+     170
+    ],
+    "t": "Egg"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     572,
+     238,
+     684,
+     267
+    ],
+    "t": "Miracidium"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 20,
+    "f": "serifb",
+    "box": [
+     432,
+     336,
+     596,
+     364
+    ],
+    "t": "Free cercaria"
+   }
+  ]
+ },
+ "t12_qoramol.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     372,
+     34,
+     486,
+     102
+    ],
+    "t": "Definitive\nhost"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     136,
+     328,
+     228,
+     360
+    ],
+    "t": "Larva"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     944,
+     314,
+     1038,
+     348
+    ],
+    "t": "Larva"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     8,
+     398,
+     154,
+     432
+    ],
+    "t": "Eggs"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     466,
+     444,
+     622,
+     476
+    ],
+    "t": "Eggs"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     898,
+     396,
+     1050,
+     464
+    ],
+    "t": "Intermediate\nhost"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 26,
+    "f": "serifb",
+    "box": [
+     232,
+     656,
+     450,
+     690
+    ],
+    "t": "Intermediate host"
+   }
+  ]
+ },
+ "t12_alveokokk.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     470,
+     10,
+     746,
+     48
+    ],
+    "t": "Intermediate hosts"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     424,
+     208,
+     712,
+     294
+    ],
+    "t": "Larval stage\nof Alveococcus"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 34,
+    "box": [
+     334,
+     520,
+     764,
+     560
+    ],
+    "t": "Adult Alveococcus"
+   }
+  ]
+ },
+ "t12_pakana.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     196,
+     194,
+     312,
+     242
+    ],
+    "t": "Growth of\nthe strobila"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     384,
+     184,
+     534,
+     268
+    ],
+    "t": "Strobila of\nthe adult\nworm"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     160,
+     250,
+     308,
+     298
+    ],
+    "t": "Attachment of\nthe cysticercoid"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     188,
+     332,
+     358,
+     386
+    ],
+    "t": "Emergence of\nthe cysticercoid"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     438,
+     411,
+     514,
+     437
+    ],
+    "t": "Egg"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     382,
+     560,
+     594,
+     634
+    ],
+    "t": "Oncospheres hatched\nfrom eggs in the\nintestinal villi"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 18,
+    "f": "serifb",
+    "box": [
+     152,
+     641,
+     276,
+     666
+    ],
+    "t": "Cysticercoid"
+   }
+  ]
+ },
+ "t12_keng_lenta.webp": {
+  "items": [
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     370,
+     190,
+     730,
+     304
+    ],
+    "t": "2nd intermediate host:\nplerocercoid in\nthe body of a pike"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     962,
+     146,
+     1152,
+     224
+    ],
+    "t": "Definitive\nhosts"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     484,
+     350,
+     704,
+     630
+    ],
+    "t": "1st\nintermediate\nhost:\nprocercoid\nin small\ncrustaceans"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     230,
+     656,
+     404,
+     694
+    ],
+    "t": "Coracidium"
+   },
+   {
+    "bg": "local",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "box": [
+     796,
+     733,
+     906,
+     768
+    ],
+    "t": "Egg"
+   }
+  ]
+ },
+ "t12_lichinkalar.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 21,
+    "f": "serifb",
+    "box": [
+     4,
+     260,
+     116,
+     290
+    ],
+    "t": "Miracidium"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 21,
+    "f": "serifb",
+    "box": [
+     140,
+     260,
+     252,
+     290
+    ],
+    "t": "Sporocyst"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 21,
+    "f": "serifb",
+    "box": [
+     334,
+     260,
+     414,
+     290
+    ],
+    "t": "Redia"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 21,
+    "f": "serifb",
+    "box": [
+     508,
+     260,
+     616,
+     290
+    ],
+    "t": "Cercaria"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 21,
+    "f": "serifb",
+    "box": [
+     640,
+     260,
+     782,
+     290
+    ],
+    "t": "Adolescaria"
+   }
+  ]
+ },
+ "t14_iksod_davrlar.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "s": 32,
+    "box": [
+     16,
+     316,
+     128,
+     347
+    ],
+    "t": "larva"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "s": 32,
+    "box": [
+     238,
+     316,
+     328,
+     347
+    ],
+    "t": "nymph"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "s": 32,
+    "box": [
+     490,
+     348,
+     590,
+     380
+    ],
+    "t": "male"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "s": 32,
+    "box": [
+     904,
+     13,
+     1076,
+     50
+    ],
+    "t": "female"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "s": 32,
+    "box": [
+     720,
+     308,
+     902,
+     374
+    ],
+    "t": "before\nfeeding"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 30,
+    "f": "serifb",
+    "s": 32,
+    "box": [
+     1098,
+     320,
+     1320,
+     392
+    ],
+    "t": "after\nfeeding"
+   }
+  ]
+ },
+ "t15_quloq.webp": {
+  "items": [
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "f": "sansb",
+    "box": [
+     36,
+     230,
+     144,
+     264
+    ],
+    "t": "Fish"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "f": "sansb",
+    "box": [
+     214,
+     230,
+     370,
+     264
+    ],
+    "t": "Reptiles"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "f": "sansb",
+    "box": [
+     424,
+     234,
+     534,
+     266
+    ],
+    "t": "Birds"
+   },
+   {
+    "bg": "#ffffff",
+    "c": "#111111",
+    "smax": 24,
+    "f": "sansb",
+    "box": [
+     564,
+     234,
+     784,
+     266
+    ],
+    "t": "Mammals"
+   }
+  ]
  }
 }

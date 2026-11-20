@@ -3,120 +3,653 @@
  "no": 3,
  "title": "The mitotic and life cycle of cells. Cell proliferation. Meiotic division of the cell. Pathology of mitosis and meiosis",
  "goals": [
-  {"type": "p", "text": "To teach the student the life cycle and mitotic cycle of the cell, the periods of interphase, the changes in chromosome set and DNA content in the phases of mitosis and meiosis, other forms of division, the types of asexual and sexual reproduction and the medical consequences of division errors."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the concepts of life cycle and mitotic cycle, the periods of interphase (G~1~, S, G~2~) and the checkpoints;",
-   "the groups of tissues according to the rate of cell renewal;",
-   "the phases of mitosis and the chromosome set (n) and DNA content (c) in them;",
-   "meiotic divisions I and II and the importance of crossing over and reduction;",
-   "the concepts of amitosis, endomitosis and polyteny;",
-   "the forms of asexual and sexual reproduction."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "identify the phases of mitosis on a slide of onion root tip;",
-   "write the genetic formula of the cell (n, c) for each phase;",
-   "explain the link between errors of meiosis and chromosomal diseases."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the life cycle and mitotic cycle of the cell, the periods of interphase, the changes in chromosome set and DNA content in the phases of mitosis and meiosis, other forms of division, the types of asexual and sexual reproduction and the medical consequences of division errors."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the concepts of life cycle and mitotic cycle, the periods of interphase (G~1~, S, G~2~) and the checkpoints;",
+    "the groups of tissues according to the rate of cell renewal;",
+    "the phases of mitosis and the chromosome set (n) and DNA content (c) in them;",
+    "meiotic divisions I and II and the importance of crossing over and reduction;",
+    "the concepts of amitosis, endomitosis and polyteny;",
+    "the forms of asexual and sexual reproduction."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "identify the phases of mitosis on a slide of onion root tip;",
+    "write the genetic formula of the cell (n, c) for each phase;",
+    "explain the link between errors of meiosis and chromosomal diseases."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. The life cycle and mitotic cycle of the cell", "blocks": [
-   {"type": "p", "text": "The **life cycle** is the period from the moment a cell appears by division until it divides itself or dies. It includes growth, differentiation, performance of a specialized function and aging. The **mitotic (cell) cycle** is the period of preparation for division (interphase) and of division (mitosis); it occurs only in dividing cells (Figure 3.1)."},
-   {"type": "img", "src": "data/img/bio/t03_sikl.webp", "w": 708, "h": 556, "lang": true, "label": "Figure 3.1", "caption": "Stages of the cell cycle: interphase (G~1~ — growth, S — DNA replication, G~2~ — preparation for division) and mitosis (prophase, metaphase, anaphase, telophase) followed by cytokinesis (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 3.1. Periods of interphase", "head": ["Period", "Main processes", "Genetic formula"], "rows": [
-    ["G~1~ (presynthetic)", "The cell grows; RNA, proteins and organelles are synthesized; enzymes for the S period accumulate", "2n2c"],
-    ["S (synthetic)", "DNA replication, synthesis of histones; each chromosome becomes two-chromatid; centrioles duplicate", "2n4c"],
-    ["G~2~ (postsynthetic)", "Tubulin for the spindle and ATP accumulate; DNA errors are checked", "2n4c"],
-    ["G~0~ (rest)", "The cell leaves the cycle and performs a specialized function", "2n2c"]
-   ]},
-   {"type": "p", "text": "Interphase may be **autosynthetic** (the cell prepares to divide) or **heterosynthetic** (the cell makes products for the organism and performs a specialized task). The cycle is controlled at **checkpoints** (G~1~/S, G~2~/M and the metaphase checkpoint) through cyclins and cyclin-dependent kinases; if DNA is damaged, the **p53** protein stops the cycle or starts apoptosis."},
-   {"type": "table", "title": "Table 3.2. Groups of tissues according to the rate of cell renewal", "head": ["Group", "Feature", "Examples"], "rows": [
-    ["Static (stable) populations", "Do not divide or divide very rarely after birth", "Neurons, cardiomyocytes"],
-    ["Growing (expanding) populations", "Usually in G~0~; return to division after injury", "Cells of the liver, kidney, salivary glands"],
-    ["Renewing populations", "Cells constantly die and are replaced from stem cells", "Skin and intestinal epithelium, blood cells, spermatogenic epithelium"]
-   ]}
-  ]},
-  {"title": "2. Mitosis and its phases", "blocks": [
-   {"type": "p", "text": "**Mitosis** (indirect division) is the main way somatic cells divide; it produces two daughter cells genetically identical to the mother cell. Mitosis consists of four phases and is followed by division of the cytoplasm — **cytokinesis**."},
-   {"type": "table", "title": "Table 3.3. Phases of mitosis", "head": ["Phase", "Processes", "Genetic formula"], "rows": [
-    ["Prophase", "Chromosomes coil and become visible; the nucleolus and nuclear envelope disappear; centrioles move to the poles, the spindle forms", "2n4c"],
-    ["Prometaphase", "Spindle fibers attach to the kinetochores, chromosomes move toward the equator", "2n4c"],
-    ["Metaphase", "Chromosomes lie in the equatorial plane and form the **metaphase plate**; they are most condensed — the best time to study the karyotype", "2n4c"],
-    ["Anaphase", "Centromeres divide, chromatids (daughter chromosomes) are pulled to opposite poles", "4n4c (in the cell)"],
-    ["Telophase", "Chromosomes uncoil at the poles, the nuclear envelope and nucleolus re-form; cytokinesis", "2n2c (in each daughter cell)"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t03_duk.webp", "w": 838, "h": 449, "lang": true, "label": "Figure 3.2", "caption": "Formation of the spindle in metaphase: centrioles at the poles, astral rays and spindle fibers radiating from them, and chromosomes at the equator (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "In an animal cell cytokinesis proceeds by a **cleavage furrow** (contraction of an actin-myosin ring), and in a plant cell by formation of a **phragmoplast** and a cell plate in the middle of the cell. Higher plants have no centrioles, but a spindle still forms (without astral rays — “anastral” mitosis)."},
-   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "Order of the phases: **“PMAT — Please Make A Team”**: chromosomes **P**ack (coil), **M**eet in the middle, **A**part they go, **T**wo nuclei form."}]},
-   {"type": "h", "text": "Biological and medical importance of mitosis"},
-   {"type": "list", "ordered": false, "items": [
-    "Ensures equal distribution of hereditary information to daughter cells and constancy of the karyotype;",
-    "Underlies growth of the organism and renewal and regeneration of tissues;",
-    "Is the cytological basis of asexual reproduction.",
-    "Failure of mitotic control leads to **tumors**; many anticancer drugs (colchicine, vincristine, taxanes) stop mitosis by acting on the spindle."
-   ]}
-  ]},
-  {"title": "3. Other forms of division and pathology of mitosis", "blocks": [
-   {"type": "table", "title": "Table 3.4. Forms of division that differ from mitosis", "head": ["Form", "Essence", "Where it occurs"], "rows": [
-    ["Amitosis (direct division)", "The nucleus divides by constriction, no chromosomes or spindle form; hereditary material is divided unequally", "Aging and inflamed tissues, tumors, the macronucleus of ciliates"],
-    ["Endomitosis", "Chromosomes double without breakdown of the nuclear envelope, no cytokinesis — a **polyploid** cell", "Liver cells, megakaryocytes"],
-    ["Polyteny", "Chromatids replicate many times but do not separate — **giant (polytene) chromosomes**", "Salivary glands of Diptera (Drosophila)"],
-    ["Binucleate cells", "Karyokinesis occurs without cytokinesis", "Liver, bladder epithelium"]
-   ]},
-   {"type": "p", "text": "**Pathology of mitosis** includes unequal separation of chromosomes to the poles (**nondisjunction**), tripolar or multipolar mitoses, lagging of chromosomes at the equator, and loss of the spindle under colchicine (**C-mitosis**). In somatic cells such errors cause **mosaicism** (two or more cell lines with different karyotypes in one organism) and **aneuploidy** in tumor cells."},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Apoptosis** is programmed cell death: the cell shrinks, chromatin condenses and fragments, the cell breaks into apoptotic bodies and is phagocytosed without inflammation. It is important in embryogenesis (removal of the tissue between the fingers) and in eliminating damaged and tumor cells; its weakening leads to tumors and its excess to neurodegenerative diseases."}]}
-  ]},
-  {"title": "4. Meiosis and its stages", "blocks": [
-   {"type": "p", "text": "**Meiosis** is the division that occurs during maturation of sex cells (gametes) and halves the number of chromosomes. After a single DNA replication there are **two divisions** in a row (meiosis I and meiosis II), and four haploid (n) cells are formed from one diploid (2n) cell (Figure 3.3)."},
-   {"type": "img", "src": "data/img/bio/t03_meyoz.webp", "w": 954, "h": 597, "lang": true, "label": "Figure 3.3", "caption": "Stages of meiotic division: meiosis I (prophase I, metaphase I, anaphase I, telophase I) and meiosis II (prophase II, metaphase II, anaphase II, telophase II) (P.Kh. Kholikov et al., 2022)."},
-   {"type": "h", "text": "Meiosis I — the reductional division"},
-   {"type": "table", "title": "Table 3.5. Stages of prophase I", "head": ["Stage", "Process"], "rows": [
-    ["Leptotene", "Chromosomes appear as thin long threads"],
-    ["Zygotene", "Homologous chromosomes pair — **synapsis (conjugation)**; bivalents (tetrads) form"],
-    ["Pachytene", "Chromosomes thicken; segments are exchanged between chromatids of homologous chromosomes — **crossing over**"],
-    ["Diplotene", "Homologs begin to move apart, chiasmata (crossing points) become visible; human oocytes stop at this stage (dictyotene) for years"],
-    ["Diakinesis", "Chromosomes are maximally condensed, the nucleolus and nuclear envelope disappear"]
-   ]},
-   {"type": "list", "ordered": false, "items": [
-    "**Metaphase I** — bivalents lie at the equator (the homologs of each pair face opposite poles) — 2n4c.",
-    "**Anaphase I** — not chromatids but **whole homologous chromosomes** (each with two chromatids) are pulled to the poles; the separation of each pair is independent of the other pairs — 1n2c at each pole.",
-    "**Telophase I** — two cells form in which the chromosome number is haploid but each chromosome has two chromatids (n2c)."
-   ]},
-   {"type": "p", "text": "**Interkinesis** is the short period between meiosis I and II; there is **no** DNA replication in it."},
-   {"type": "h", "text": "Meiosis II — the equational division"},
-   {"type": "p", "text": "Meiosis II proceeds like mitosis: in metaphase II chromosomes lie at the equator, in anaphase II centromeres divide and chromatids move to the poles. As a result four haploid cells (1n1c) are formed. It differs from mitosis in that the chromosome number is haploid and there is no DNA synthesis before the division."},
-   {"type": "table", "title": "Table 3.6. Comparison of mitosis and meiosis", "head": ["Feature", "Mitosis", "Meiosis"], "rows": [
-    ["Cells", "Somatic", "Maturing sex cells (gametogenesis)"],
-    ["Number of divisions", "One", "Two"],
-    ["Synapsis and crossing over", "Absent", "Present (prophase I)"],
-    ["Cells formed", "2, diploid (2n2c)", "4, haploid (1n1c)"],
-    ["Genetic content of daughter cells", "Identical to the mother cell", "Different from each other and from the mother cell"],
-    ["Importance", "Growth, regeneration, asexual reproduction", "Constancy of chromosome number over generations, combinative variability"]
-   ]},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Meiosis has **three sources** of genetic diversity: (1) crossing over; (2) independent assortment of homologous pairs in metaphase I — more than 2^23^ combinations in humans; (3) random fusion of gametes at fertilization. That is why brothers and sisters (except identical twins) are never completely alike."}]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Nondisjunction** of chromosomes in meiosis produces disomic (n + 1) and nullisomic (n − 1) gametes. When they fuse with a normal gamete, **trisomy** (Down — 47,XX,+21; Klinefelter — 47,XXY) or **monosomy** (Shereshevsky-Turner — 45,X) develops. The risk of nondisjunction rises with maternal age because oocytes remain arrested in diplotene for many years."}]}
-  ]},
-  {"title": "5. Forms of reproduction", "blocks": [
-   {"type": "p", "text": "**Asexual reproduction** involves one parent, takes place without gametes and is based on mitosis; the offspring is a genetic copy (**clone**) of the parent. In **sexual reproduction** gametes from two parents fuse; the genetic diversity of the offspring increases, which ensures adaptation to a changing environment."},
-   {"type": "table", "title": "Table 3.7. Forms of reproduction", "head": ["Form", "Types", "Examples"], "rows": [
-    ["Asexual in unicellular organisms", "Simple binary fission, multiple fission (schizogony), budding, sporulation", "Amoeba, malaria plasmodium, yeasts"],
-    ["Asexual in multicellular organisms", "Vegetative reproduction (fragmentation, budding), by spores, polyembryony", "Hydra, tapeworm larval stage (echinococcus), identical twins"],
-    ["Sexual in unicellular organisms", "Conjugation (exchange of genetic information), copulation (fusion of gametes)", "Paramecium, malaria plasmodium (in the mosquito)"],
-    ["Sexual in multicellular organisms", "Fertilization with gametes; parthenogenesis (development from an unfertilized egg), hermaphroditism", "Humans, mammals; drone honeybees; flatworms"]
-   ]}
-  ]}
+  {
+   "title": "1. The life cycle and mitotic cycle of the cell",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **life cycle** is the period from the moment a cell appears by division until it divides itself or dies. It includes growth, differentiation, performance of a specialized function and aging. The **mitotic (cell) cycle** is the period of preparation for division (interphase) and of division (mitosis); it occurs only in dividing cells (Figure 3.1)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_sikl.webp",
+     "w": 708,
+     "h": 556,
+     "lang": true,
+     "label": "Figure 3.1",
+     "caption": "Stages of the cell cycle: interphase (G~1~ — growth, S — DNA replication, G~2~ — preparation for division) and mitosis (prophase, metaphase, anaphase, telophase) followed by cytokinesis (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.1. Periods of interphase",
+     "head": [
+      "Period",
+      "Main processes",
+      "Genetic formula"
+     ],
+     "rows": [
+      [
+       "G~1~ (presynthetic)",
+       "The cell grows; RNA, proteins and organelles are synthesized; enzymes for the S period accumulate",
+       "2n2c"
+      ],
+      [
+       "S (synthetic)",
+       "DNA replication, synthesis of histones; each chromosome becomes two-chromatid; centrioles duplicate",
+       "2n4c"
+      ],
+      [
+       "G~2~ (postsynthetic)",
+       "Tubulin for the spindle and ATP accumulate; DNA errors are checked",
+       "2n4c"
+      ],
+      [
+       "G~0~ (rest)",
+       "The cell leaves the cycle and performs a specialized function",
+       "2n2c"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_replikatsiya.webp",
+     "label": "Figure 3.2",
+     "caption": "Replication of a chromosome: in the S period a one-chromatid chromosome is doubled and becomes a duplicated chromosome of two sister chromatids joined at the centromere; at division they separate again (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**The G~0~ period (resting period)** is the state of cells that have left the mitotic cycle, do not divide but perform their function. For example, liver cells are normally in G~0~, but if part of the liver is removed they return to the cycle and divide. Neurons and cardiomyocytes, however, hardly ever leave G~0~. In human cells the mitotic cycle lasts on average 18–24 hours; of this, mitosis takes ≈ 1 hour and the rest is interphase."
+    },
+    {
+     "type": "p",
+     "text": "Interphase may be **autosynthetic** (the cell prepares to divide) or **heterosynthetic** (the cell makes products for the organism and performs a specialized task). The cycle is controlled at **checkpoints** (G~1~/S, G~2~/M and the metaphase checkpoint) through cyclins and cyclin-dependent kinases; if DNA is damaged, the **p53** protein stops the cycle or starts apoptosis."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.2. Groups of tissues according to the rate of cell renewal",
+     "head": [
+      "Group",
+      "Feature",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Static (stable) populations",
+       "Do not divide or divide very rarely after birth",
+       "Neurons, cardiomyocytes"
+      ],
+      [
+       "Growing (expanding) populations",
+       "Usually in G~0~; return to division after injury",
+       "Cells of the liver, kidney, salivary glands"
+      ],
+      [
+       "Renewing populations",
+       "Cells constantly die and are replaced from stem cells",
+       "Skin and intestinal epithelium, blood cells, spermatogenic epithelium"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. Mitosis and its phases",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Mitosis** (indirect division) is the main way somatic cells divide; it produces two daughter cells genetically identical to the mother cell. Mitosis consists of four phases and is followed by division of the cytoplasm — **cytokinesis**."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.3. Phases of mitosis",
+     "head": [
+      "Phase",
+      "Processes",
+      "Genetic formula"
+     ],
+     "rows": [
+      [
+       "Prophase",
+       "Chromosomes coil and become visible; the nucleolus and nuclear envelope disappear; centrioles move to the poles, the spindle forms",
+       "2n4c"
+      ],
+      [
+       "Prometaphase",
+       "Spindle fibers attach to the kinetochores, chromosomes move toward the equator",
+       "2n4c"
+      ],
+      [
+       "Metaphase",
+       "Chromosomes lie in the equatorial plane and form the **metaphase plate**; they are most condensed — the best time to study the karyotype",
+       "2n4c"
+      ],
+      [
+       "Anaphase",
+       "Centromeres divide, chromatids (daughter chromosomes) are pulled to opposite poles",
+       "4n4c (in the cell)"
+      ],
+      [
+       "Telophase",
+       "Chromosomes uncoil at the poles, the nuclear envelope and nucleolus re-form; cytokinesis",
+       "2n2c (in each daughter cell)"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_duk.webp",
+     "w": 838,
+     "h": 449,
+     "lang": true,
+     "label": "Figure 3.3",
+     "caption": "Formation of the spindle in metaphase: centrioles at the poles, astral rays and spindle fibers radiating from them, and chromosomes at the equator (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "In an animal cell cytokinesis proceeds by a **cleavage furrow** (contraction of an actin-myosin ring), and in a plant cell by formation of a **phragmoplast** and a cell plate in the middle of the cell. Higher plants have no centrioles, but a spindle still forms (without astral rays — “anastral” mitosis)."
+    },
+    {
+     "type": "box",
+     "kind": "yodlash",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Order of the phases: **“PMAT — Please Make A Team”**: chromosomes **P**ack (coil), **M**eet in the middle, **A**part they go, **T**wo nuclei form."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Biological and medical importance of mitosis"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "Ensures equal distribution of hereditary information to daughter cells and constancy of the karyotype;",
+      "Underlies growth of the organism and renewal and regeneration of tissues;",
+      "Is the cytological basis of asexual reproduction.",
+      "Failure of mitotic control leads to **tumors**; many anticancer drugs (colchicine, vincristine, taxanes) stop mitosis by acting on the spindle."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Other forms of division and pathology of mitosis",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Table 3.4. Forms of division that differ from mitosis",
+     "head": [
+      "Form",
+      "Essence",
+      "Where it occurs"
+     ],
+     "rows": [
+      [
+       "Amitosis (direct division)",
+       "The nucleus divides by constriction, no chromosomes or spindle form; hereditary material is divided unequally",
+       "Aging and inflamed tissues, tumors, the macronucleus of ciliates"
+      ],
+      [
+       "Endomitosis",
+       "Chromosomes double without breakdown of the nuclear envelope, no cytokinesis — a **polyploid** cell",
+       "Liver cells, megakaryocytes"
+      ],
+      [
+       "Polyteny",
+       "Chromatids replicate many times but do not separate — **giant (polytene) chromosomes**",
+       "Salivary glands of Diptera (Drosophila)"
+      ],
+      [
+       "Binucleate cells",
+       "Karyokinesis occurs without cytokinesis",
+       "Liver, bladder epithelium"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_amitoz.webp",
+     "label": "Figure 3.4",
+     "caption": "Amitosis: successive stages (1–5) of direct division of the nucleus by constriction; no chromosomes or spindle are formed (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Pathology of mitosis** includes unequal separation of chromosomes to the poles (**nondisjunction**), tripolar or multipolar mitoses, lagging of chromosomes at the equator, and loss of the spindle under colchicine (**C-mitosis**). In somatic cells such errors cause **mosaicism** (two or more cell lines with different karyotypes in one organism) and **aneuploidy** in tumor cells."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.5. Types of mitotic pathology",
+     "head": [
+      "Group",
+      "Forms"
+     ],
+     "rows": [
+      [
+       "Damage to chromosomes",
+       "Arrest of the cell in prophase; disturbed coiling and uncoiling; fragmentation of chromosomes; “bridges” between chromosomes in anaphase; premature separation of chromatids; damage to the kinetochore"
+      ],
+      [
+       "Damage to the mitotic apparatus",
+       "Prolonged metaphase; disordered arrangement of chromosomes at the equator; three-group, hollow and multipolar metaphase; asymmetric and monocentric mitoses; K-mitosis (colchicine mitosis)"
+      ],
+      [
+       "Disturbance of cytotomy",
+       "Premature division; delay or complete absence of cytotomy (multinucleate, polyploid cells)"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 3.6. Differences between apoptosis and necrosis",
+     "head": [
+      "Feature",
+      "Apoptosis",
+      "Necrosis"
+     ],
+     "rows": [
+      [
+       "Cause",
+       "Physiological programme or DNA damage (p53 and caspases are activated)",
+       "Strong injurious factor: ischaemia, burns, poison"
+      ],
+      [
+       "Extent",
+       "Single cells",
+       "A group of cells, an area of tissue"
+      ],
+      [
+       "Cell volume",
+       "Decreases (cell shrinks)",
+       "Swells, the membrane ruptures"
+      ],
+      [
+       "Nucleus",
+       "Chromatin condensation, DNA breaks into fragments",
+       "The nucleus dissolves (karyolysis)"
+      ],
+      [
+       "Outcome",
+       "Apoptotic bodies are engulfed by macrophages without inflammation",
+       "Cell contents leak out and inflammation develops"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Apoptosis** is programmed cell death: the cell shrinks, chromatin condenses and fragments, the cell breaks into apoptotic bodies and is phagocytosed without inflammation. It is important in embryogenesis (removal of the tissue between the fingers) and in eliminating damaged and tumor cells; its weakening leads to tumors and its excess to neurodegenerative diseases."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Cell proliferation and its regulation",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Proliferation** is the multiplication of cells by division; it underlies growth, tissue renewal and regeneration. In a multicellular organism cells divide only when there is a “permission” signal: proliferation is controlled by the balance of **stimulators** and **inhibitors**."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.7. Factors regulating proliferation",
+     "head": [
+      "Stimulators",
+      "Inhibitors"
+     ],
+     "rows": [
+      [
+       "Growth factors: epidermal (EGF), platelet-derived (PDGF), fibroblast growth factor, erythropoietin",
+       "Chalones — substances produced by a tissue itself that stop its division"
+      ],
+      [
+       "Hormones: growth hormone, insulin, oestrogens (uterine endometrium)",
+       "Glucocorticoids, tumour necrosis factor, transforming growth factor β (TGF-β)"
+      ],
+      [
+       "Injury to and partial removal of a tissue (liver regeneration)",
+       "**Contact inhibition** — cells stop dividing once they touch each other and form a monolayer"
+      ],
+      [
+       "Activity of cyclins and cyclin-dependent kinases (CDK)",
+       "Tumour-suppressor proteins: p53, retinoblastoma protein (Rb), p21"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Genes for proteins that stimulate division are called **proto-oncogenes**. If they become permanently active **oncogenes** through mutation, chromosome rearrangement or viral action, the cell divides uncontrollably. When both alleles of the division-stopping **tumour-suppressor genes** (p53 — the “guardian of the genome”, Rb) are disabled, a tumour develops. Therefore a **tumour** is a disease of the genes that control the cell cycle."
+    },
+    {
+     "type": "p",
+     "text": "**Telomeres and the Hayflick limit.** At each replication the chromosome ends (telomeres made of TTAGGG repeats) shorten a little. Therefore normal somatic cells in culture divide only 50–60 times (the **Hayflick limit**, 1961) and then age. In germ, stem and tumour cells the enzyme **telomerase** restores telomeres, so they can divide without limit."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.8. Potency of stem cells",
+     "head": [
+      "Type",
+      "What cells it can form",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Totipotent",
+       "The whole organism and extra-embryonic organs (placenta)",
+       "Zygote, early cleavage blastomeres"
+      ],
+      [
+       "Pluripotent",
+       "All cells of the three germ layers",
+       "Inner cell mass of the blastocyst (embryonic stem cells)"
+      ],
+      [
+       "Multipotent",
+       "Several cell types of one tissue system",
+       "Haematopoietic stem cell of the bone marrow"
+      ],
+      [
+       "Unipotent",
+       "Only one cell type",
+       "Spermatogonia, basal cells of the epidermis"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Rapidly renewing tissues (bone marrow, intestinal epithelium, hair follicles, spermatogenic epithelium) are the most sensitive to **radiation and cytostatic drugs**, which act on dividing cells. This is why chemotherapy causes anaemia, leucopenia, diarrhoea, hair loss and infertility. Transplantation of bone-marrow stem cells is used to treat leukaemias."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "5. Meiosis and its stages",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Meiosis** is the division that occurs during maturation of sex cells (gametes) and halves the number of chromosomes. After a single DNA replication there are **two divisions** in a row (meiosis I and meiosis II), and four haploid (n) cells are formed from one diploid (2n) cell (Figure 3.5)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_meyoz.webp",
+     "w": 954,
+     "h": 597,
+     "lang": true,
+     "label": "Figure 3.5",
+     "caption": "Stages of meiotic division: meiosis I (prophase I, metaphase I, anaphase I, telophase I) and meiosis II (prophase II, metaphase II, anaphase II, telophase II) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "h",
+     "text": "Meiosis I — the reductional division"
+    },
+    {
+     "type": "table",
+     "title": "Table 3.9. Stages of prophase I",
+     "head": [
+      "Stage",
+      "Process"
+     ],
+     "rows": [
+      [
+       "Leptotene",
+       "Chromosomes appear as thin long threads"
+      ],
+      [
+       "Zygotene",
+       "Homologous chromosomes pair — **synapsis (conjugation)**; bivalents (tetrads) form"
+      ],
+      [
+       "Pachytene",
+       "Chromosomes thicken; segments are exchanged between chromatids of homologous chromosomes — **crossing over**"
+      ],
+      [
+       "Diplotene",
+       "Homologs begin to move apart, chiasmata (crossing points) become visible; human oocytes stop at this stage (dictyotene) for years"
+      ],
+      [
+       "Diakinesis",
+       "Chromosomes are maximally condensed, the nucleolus and nuclear envelope disappear"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Metaphase I** — bivalents lie at the equator (the homologs of each pair face opposite poles) — 2n4c.",
+      "**Anaphase I** — not chromatids but **whole homologous chromosomes** (each with two chromatids) are pulled to the poles; the separation of each pair is independent of the other pairs — 1n2c at each pole.",
+      "**Telophase I** — two cells form in which the chromosome number is haploid but each chromosome has two chromatids (n2c)."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Interkinesis** is the short period between meiosis I and II; there is **no** DNA replication in it."
+    },
+    {
+     "type": "h",
+     "text": "Meiosis II — the equational division"
+    },
+    {
+     "type": "p",
+     "text": "Meiosis II proceeds like mitosis: in metaphase II chromosomes lie at the equator, in anaphase II centromeres divide and chromatids move to the poles. As a result four haploid cells (1n1c) are formed. It differs from mitosis in that the chromosome number is haploid and there is no DNA synthesis before the division."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.10. Comparison of mitosis and meiosis",
+     "head": [
+      "Feature",
+      "Mitosis",
+      "Meiosis"
+     ],
+     "rows": [
+      [
+       "Cells",
+       "Somatic",
+       "Maturing sex cells (gametogenesis)"
+      ],
+      [
+       "Number of divisions",
+       "One",
+       "Two"
+      ],
+      [
+       "Synapsis and crossing over",
+       "Absent",
+       "Present (prophase I)"
+      ],
+      [
+       "Cells formed",
+       "2, diploid (2n2c)",
+       "4, haploid (1n1c)"
+      ],
+      [
+       "Genetic content of daughter cells",
+       "Identical to the mother cell",
+       "Different from each other and from the mother cell"
+      ],
+      [
+       "Importance",
+       "Growth, regeneration, asexual reproduction",
+       "Constancy of chromosome number over generations, combinative variability"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Meiosis has **three sources** of genetic diversity: (1) crossing over; (2) independent assortment of homologous pairs in metaphase I — more than 2^23^ combinations in humans; (3) random fusion of gametes at fertilization. That is why brothers and sisters (except identical twins) are never completely alike."
+      }
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Nondisjunction** of chromosomes in meiosis produces disomic (n + 1) and nullisomic (n − 1) gametes. When they fuse with a normal gamete, **trisomy** (Down — 47,XX,+21; Klinefelter — 47,XXY) or **monosomy** (Shereshevsky-Turner — 45,X) develops. The risk of nondisjunction rises with maternal age because oocytes remain arrested in diplotene for many years."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Biological significance of meiosis"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "Halves the chromosome number in gametes — fertilisation restores the diploid set and the karyotype stays constant over generations.",
+      "Is a source of **combinative variability** through crossing over and independent assortment of homologues.",
+      "Forms the cytological basis of Mendel's laws (segregation and independent assortment).",
+      "Errors of meiosis (non-disjunction) are the main cause of chromosomal diseases."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 3.11. Number of chromosomes and amount of DNA at the stages of human meiosis",
+     "head": [
+      "Stage",
+      "Formula",
+      "Number of chromosomes",
+      "Number of chromatids"
+     ],
+     "rows": [
+      [
+       "Before meiosis (G~1~)",
+       "2n2c",
+       "46",
+       "46"
+      ],
+      [
+       "Prophase I, metaphase I (after DNA replication)",
+       "2n4c",
+       "46 (23 bivalents)",
+       "92"
+      ],
+      [
+       "Each cell after telophase I",
+       "1n2c",
+       "23",
+       "46"
+      ],
+      [
+       "Each gamete after meiosis II",
+       "1n1c",
+       "23",
+       "23"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "6. Forms of reproduction",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Asexual reproduction** involves one parent, takes place without gametes and is based on mitosis; the offspring is a genetic copy (**clone**) of the parent. In **sexual reproduction** gametes from two parents fuse; the genetic diversity of the offspring increases, which ensures adaptation to a changing environment."
+    },
+    {
+     "type": "table",
+     "title": "Table 3.12. Forms of reproduction",
+     "head": [
+      "Form",
+      "Types",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Asexual in unicellular organisms",
+       "Simple binary fission, multiple fission (schizogony), budding, sporulation",
+       "Amoeba, malaria plasmodium, yeasts"
+      ],
+      [
+       "Asexual in multicellular organisms",
+       "Vegetative reproduction (fragmentation, budding), by spores, polyembryony",
+       "Hydra, tapeworm larval stage (echinococcus), identical twins"
+      ],
+      [
+       "Sexual in unicellular organisms",
+       "Conjugation (exchange of genetic information), copulation (fusion of gametes)",
+       "Paramecium, malaria plasmodium (in the mosquito)"
+      ],
+      [
+       "Sexual in multicellular organisms",
+       "Fertilization with gametes; parthenogenesis (development from an unfertilized egg), hermaphroditism",
+       "Humans, mammals; drone honeybees; flatworms"
+      ]
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: identifying the phases of mitosis in an onion root tip", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Examine the permanent slide under low power and find the dividing (meristematic) zone of the root tip.",
-    "Switch to high power and find an interphase cell (intact nucleus, nucleolus).",
-    "Find cells in prophase (thread-like chromosomes, nuclear envelope disappearing), metaphase (chromosomes at the equator), anaphase (groups of chromosomes moving to two poles) and telophase (two nuclei, cell plate).",
-    "Draw each phase and write its genetic formula.",
-    "Count what proportion of the cells in the field is in interphase and calculate the mitotic index (cells in mitosis / total cells)."
-   ]}
-  ]}
+  {
+   "title": "Skill: identifying the phases of mitosis in an onion root tip",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Examine the permanent slide under low power and find the dividing (meristematic) zone of the root tip.",
+      "Switch to high power and find an interphase cell (intact nucleus, nucleolus).",
+      "Find cells in prophase (thread-like chromosomes, nuclear envelope disappearing), metaphase (chromosomes at the equator), anaphase (groups of chromosomes moving to two poles) and telophase (two nuclei, cell plate).",
+      "Draw each phase and write its genetic formula.",
+      "Count what proportion of the cells in the field is in interphase and calculate the mitotic index (cells in mitosis / total cells)."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "Define the concepts of life cycle and mitotic cycle.",
@@ -133,45 +666,352 @@
   "Compare mitosis and meiosis.",
   "What chromosomal diseases result from errors of meiosis?",
   "What is the biological importance of asexual and sexual reproduction?",
-  "What forms of reproduction exist in unicellular and multicellular organisms?"
+  "What forms of reproduction exist in unicellular and multicellular organisms?",
+  "What is the G~0~ period? Which cells can return from G~0~ to the cycle?",
+  "Name the stimulators and inhibitors of cell proliferation.",
+  "What are proto-oncogenes and tumour-suppressor genes? What is their role in tumour development?",
+  "Explain the Hayflick limit and the importance of telomerase.",
+  "Name the types of stem cells by potency with examples.",
+  "Name the main groups of mitotic pathology.",
+  "How does apoptosis differ from necrosis?"
  ],
  "quiz": [
-  {"q": "In which period of interphase does DNA replication occur?", "options": ["S period", "G~1~ period", "G~2~ period", "G~0~ period", "Metaphase"], "answer": 0},
-  {"q": "What is the genetic formula of a cell in the G~2~ period?", "options": ["2n4c", "2n2c", "1n1c", "4n4c", "1n2c"], "answer": 0},
-  {"q": "Which phase of mitosis is best for studying the karyotype?", "options": ["Metaphase", "Prophase", "Anaphase", "Telophase", "Interphase"], "answer": 0},
-  {"q": "In which phase of mitosis do centromeres divide and chromatids move to the poles?", "options": ["Anaphase", "Metaphase", "Prophase", "Telophase", "Prometaphase"], "answer": 0},
-  {"q": "Which cells almost never divide after birth?", "options": ["Neurons", "Intestinal epithelium", "Hematopoietic cells", "Basal layer of the epidermis", "Spermatogonia"], "answer": 0},
-  {"q": "How does colchicine stop mitosis?", "options": ["It disrupts formation of the spindle", "It stops DNA replication", "It destroys the nuclear envelope", "It blocks ribosomes", "It cuts the centromere"], "answer": 0},
-  {"q": "What is division of the nucleus by constriction, without chromosomes or a spindle, called?", "options": ["Amitosis", "Endomitosis", "Meiosis", "Polyteny", "Schizogony"], "answer": 0},
-  {"q": "The giant chromosomes in Drosophila salivary glands are the result of which process?", "options": ["Polyteny", "Amitosis", "Crossing over", "Nondisjunction", "Synapsis"], "answer": 0},
-  {"q": "At which stage of meiosis does crossing over occur?", "options": ["In pachytene of prophase I", "In metaphase II", "In anaphase I", "In interkinesis", "In telophase II"], "answer": 0},
-  {"q": "What moves to the poles in anaphase I?", "options": ["Whole homologous chromosomes (two-chromatid)", "Separate chromatids", "Centrioles", "Nucleoli", "Whole bivalents to one pole"], "answer": 0},
-  {"q": "What is typical of interkinesis?", "options": ["There is no DNA replication", "DNA replicates twice", "Crossing over occurs", "Synapsis occurs", "The chromosome number doubles"], "answer": 0},
-  {"q": "How many and what kind of cells are formed from one diploid cell by meiosis?", "options": ["4 haploid", "2 diploid", "4 diploid", "2 haploid", "8 haploid"], "answer": 0},
-  {"q": "At which stage of meiosis do human oocytes remain arrested for years?", "options": ["Diplotene (dictyotene)", "Leptotene", "Metaphase II", "Anaphase I", "Telophase I"], "answer": 0},
-  {"q": "Which disease may result from nondisjunction in meiosis?", "options": ["Down syndrome", "Phenylketonuria", "Hemophilia", "Sickle cell anemia", "Albinism"], "answer": 0},
-  {"q": "Multiplication of the malaria plasmodium in human erythrocytes is which form of reproduction?", "options": ["Schizogony (multiple fission)", "Conjugation", "Parthenogenesis", "Budding", "Copulation"], "answer": 0}
+  {
+   "q": "In which period of interphase does DNA replication occur?",
+   "options": [
+    "S period",
+    "G~1~ period",
+    "G~2~ period",
+    "G~0~ period",
+    "Metaphase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the genetic formula of a cell in the G~2~ period?",
+   "options": [
+    "2n4c",
+    "2n2c",
+    "1n1c",
+    "4n4c",
+    "1n2c"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which phase of mitosis is best for studying the karyotype?",
+   "options": [
+    "Metaphase",
+    "Prophase",
+    "Anaphase",
+    "Telophase",
+    "Interphase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which phase of mitosis do centromeres divide and chromatids move to the poles?",
+   "options": [
+    "Anaphase",
+    "Metaphase",
+    "Prophase",
+    "Telophase",
+    "Prometaphase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which cells almost never divide after birth?",
+   "options": [
+    "Neurons",
+    "Intestinal epithelium",
+    "Hematopoietic cells",
+    "Basal layer of the epidermis",
+    "Spermatogonia"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does colchicine stop mitosis?",
+   "options": [
+    "It disrupts formation of the spindle",
+    "It stops DNA replication",
+    "It destroys the nuclear envelope",
+    "It blocks ribosomes",
+    "It cuts the centromere"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is division of the nucleus by constriction, without chromosomes or a spindle, called?",
+   "options": [
+    "Amitosis",
+    "Endomitosis",
+    "Meiosis",
+    "Polyteny",
+    "Schizogony"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "The giant chromosomes in Drosophila salivary glands are the result of which process?",
+   "options": [
+    "Polyteny",
+    "Amitosis",
+    "Crossing over",
+    "Nondisjunction",
+    "Synapsis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "At which stage of meiosis does crossing over occur?",
+   "options": [
+    "In pachytene of prophase I",
+    "In metaphase II",
+    "In anaphase I",
+    "In interkinesis",
+    "In telophase II"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What moves to the poles in anaphase I?",
+   "options": [
+    "Whole homologous chromosomes (two-chromatid)",
+    "Separate chromatids",
+    "Centrioles",
+    "Nucleoli",
+    "Whole bivalents to one pole"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is typical of interkinesis?",
+   "options": [
+    "There is no DNA replication",
+    "DNA replicates twice",
+    "Crossing over occurs",
+    "Synapsis occurs",
+    "The chromosome number doubles"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many and what kind of cells are formed from one diploid cell by meiosis?",
+   "options": [
+    "4 haploid",
+    "2 diploid",
+    "4 diploid",
+    "2 haploid",
+    "8 haploid"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "At which stage of meiosis do human oocytes remain arrested for years?",
+   "options": [
+    "Diplotene (dictyotene)",
+    "Leptotene",
+    "Metaphase II",
+    "Anaphase I",
+    "Telophase I"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which disease may result from nondisjunction in meiosis?",
+   "options": [
+    "Down syndrome",
+    "Phenylketonuria",
+    "Hemophilia",
+    "Sickle cell anemia",
+    "Albinism"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Multiplication of the malaria plasmodium in human erythrocytes is which form of reproduction?",
+   "options": [
+    "Schizogony (multiple fission)",
+    "Conjugation",
+    "Parthenogenesis",
+    "Budding",
+    "Copulation"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the limited number of divisions of normal somatic cells in culture called?",
+   "options": [
+    "The Hayflick limit",
+    "Contact inhibition",
+    "Mitotic index",
+    "Endomitosis",
+    "Apoptosis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which protein is called the “guardian of the genome”?",
+   "options": [
+    "p53",
+    "Tubulin",
+    "Cyclin B",
+    "Telomerase",
+    "Actin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What kind of stem cells make up the inner cell mass of the blastocyst?",
+   "options": [
+    "Pluripotent",
+    "Totipotent",
+    "Multipotent",
+    "Unipotent",
+    "Differentiated"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many chromatids are there in each human cell after telophase I?",
+   "options": [
+    "46",
+    "23",
+    "92",
+    "69",
+    "12"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which feature is typical of apoptosis?",
+   "options": [
+    "The cell shrinks and is phagocytosed without inflammation",
+    "The cell swells and bursts",
+    "Inflammation develops",
+    "A large area of tissue dies",
+    "The nucleus dissolves (karyolysis)"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "The genetic material of a group of cells was studied and found to be 2n2c. After division, some cells had a DNA content of 2c and others 1c.", "ask": "By what method did these cells divide?", "answer": "Formation of 2c daughter cells is typical of mitosis: a 2n2c cell becomes 2n4c in the S period and after mitosis gives two 2n2c cells. Cells with 1c are formed after the second division of meiosis (1n1c). Thus some of the cells in the group divided by mitosis and others by meiosis (gametogenesis)."},
-  {"title": "Case 2", "text": "Under the action of a harmful factor, spindle fibers did not form in a cell.", "ask": "Which processes are disturbed, and what is the result?", "answer": "Without spindle fibers, chromosomes cannot gather on the metaphase plate and are not distributed to the poles in anaphase; mitosis stops in metaphase (C-mitosis). If the cell then re-forms the nuclear envelope, a polyploid (4n) cell with a doubled chromosome number appears. This principle is used with colchicine in karyotype analysis and to obtain polyploid plants, and with vincristine to treat tumors."},
-  {"title": "Case 3", "text": "Sex cells were found to contain more chromosomes than normal.", "ask": "Which periods of meiosis may have been disturbed, and what is the consequence?", "answer": "The cause is nondisjunction of a pair of homologous chromosomes in anaphase I (n + 1 and n − 1 gametes) or nondisjunction of sister chromatids in anaphase II. When a disomic (n + 1) gamete fuses with a normal gamete, trisomy (47 chromosomes) results: for pair 21 — Down syndrome, XXY — Klinefelter syndrome. A nullisomic gamete gives monosomy (45,X — Shereshevsky-Turner syndrome)."}
+  {
+   "title": "Case 1",
+   "text": "The genetic material of a group of cells was studied and found to be 2n2c. After division, some cells had a DNA content of 2c and others 1c.",
+   "ask": "By what method did these cells divide?",
+   "answer": "Formation of 2c daughter cells is typical of mitosis: a 2n2c cell becomes 2n4c in the S period and after mitosis gives two 2n2c cells. Cells with 1c are formed after the second division of meiosis (1n1c). Thus some of the cells in the group divided by mitosis and others by meiosis (gametogenesis)."
+  },
+  {
+   "title": "Case 2",
+   "text": "Under the action of a harmful factor, spindle fibers did not form in a cell.",
+   "ask": "Which processes are disturbed, and what is the result?",
+   "answer": "Without spindle fibers, chromosomes cannot gather on the metaphase plate and are not distributed to the poles in anaphase; mitosis stops in metaphase (C-mitosis). If the cell then re-forms the nuclear envelope, a polyploid (4n) cell with a doubled chromosome number appears. This principle is used with colchicine in karyotype analysis and to obtain polyploid plants, and with vincristine to treat tumors."
+  },
+  {
+   "title": "Case 3",
+   "text": "Sex cells were found to contain more chromosomes than normal.",
+   "ask": "Which periods of meiosis may have been disturbed, and what is the consequence?",
+   "answer": "The cause is nondisjunction of a pair of homologous chromosomes in anaphase I (n + 1 and n − 1 gametes) or nondisjunction of sister chromatids in anaphase II. When a disomic (n + 1) gamete fuses with a normal gamete, trisomy (47 chromosomes) results: for pair 21 — Down syndrome, XXY — Klinefelter syndrome. A nullisomic gamete gives monosomy (45,X — Shereshevsky-Turner syndrome)."
+  },
+  {
+   "title": "Case 4",
+   "text": "On an onion root-tip preparation 500 cells were counted: 440 in interphase, 30 in prophase, 10 in metaphase, 8 in anaphase and 12 in telophase.",
+   "ask": "Calculate the mitotic index. Which phase lasts the longest?",
+   "answer": "Cells in mitosis: 30 + 10 + 8 + 12 = 60. Mitotic index = 60 / 500 = 0,12 (or 12 %, that is 120 ‰). The duration of a phase is proportional to the number of cells in it: of the phases of mitosis the longest is **prophase** (30 cells) and the shortest is **anaphase** (8). Over the whole cycle the longest period is **interphase** (440 cells, 88 %)."
+  },
+  {
+   "title": "Case 5",
+   "text": "A patient receiving chemotherapy for leukaemia developed hair loss, mouth ulcers, diarrhoea and a fall in white blood cells.",
+   "ask": "Why are exactly these tissues damaged?",
+   "answer": "Cytostatic drugs act on dividing cells (on DNA synthesis or the spindle). They damage not only tumour cells but also **renewing cell populations**: hair follicles, mouth and intestinal epithelium and the blood-forming cells of the bone marrow. Static populations such as neurons and cardiomyocytes are hardly damaged. Breaks between treatment courses let the stem cells recover."
+  },
+  {
+   "title": "Case 6",
+   "text": "A child with retinoblastoma (a tumour of the retina) developed tumours in both eyes at an early age. The father also had this disease in childhood.",
+   "ask": "Explain this from the point of view of tumour-suppressor genes.",
+   "answer": "**RB1** is a tumour-suppressor gene: its protein (Rb) holds back the passage of the cell from G~1~ to S. For a tumour to develop, **both alleles** of the gene must be disabled (A. Knudson's “two-hit” hypothesis). In the hereditary form the child receives one mutant allele from the father (the first “hit” is present in all cells); if the second allele is damaged by chance in one retinal cell, a tumour develops — this is why the tumour is early, multifocal and bilateral. The predisposition is inherited in an autosomal dominant manner."
+  }
  ],
  "cards": [
-  {"front": "Mitotic cycle", "back": "Interphase (G~1~, S, G~2~) + mitosis"},
-  {"front": "S period", "back": "DNA replication: 2n2c → 2n4c"},
-  {"front": "Metaphase", "back": "Chromosomes at the equator; best for karyotype analysis"},
-  {"front": "Anaphase", "back": "Centromeres divide, chromatids move to the poles"},
-  {"front": "Endomitosis", "back": "Doubling of chromosomes without cytokinesis → polyploidy"},
-  {"front": "Synapsis", "back": "Pairing of homologous chromosomes in zygotene"},
-  {"front": "Crossing over", "back": "Exchange of segments between homologous chromatids in pachytene"},
-  {"front": "Meiosis I", "back": "Reductional division: homologs separate, 2n → n"},
-  {"front": "Meiosis II", "back": "Equational division: chromatids separate, result 1n1c"},
-  {"front": "Nondisjunction", "back": "Failure of chromosomes to separate → trisomies and monosomies"}
+  {
+   "front": "Mitotic cycle",
+   "back": "Interphase (G~1~, S, G~2~) + mitosis"
+  },
+  {
+   "front": "S period",
+   "back": "DNA replication: 2n2c → 2n4c"
+  },
+  {
+   "front": "Metaphase",
+   "back": "Chromosomes at the equator; best for karyotype analysis"
+  },
+  {
+   "front": "Anaphase",
+   "back": "Centromeres divide, chromatids move to the poles"
+  },
+  {
+   "front": "Endomitosis",
+   "back": "Doubling of chromosomes without cytokinesis → polyploidy"
+  },
+  {
+   "front": "Synapsis",
+   "back": "Pairing of homologous chromosomes in zygotene"
+  },
+  {
+   "front": "Crossing over",
+   "back": "Exchange of segments between homologous chromatids in pachytene"
+  },
+  {
+   "front": "Meiosis I",
+   "back": "Reductional division: homologs separate, 2n → n"
+  },
+  {
+   "front": "Meiosis II",
+   "back": "Equational division: chromatids separate, result 1n1c"
+  },
+  {
+   "front": "Nondisjunction",
+   "back": "Failure of chromosomes to separate → trisomies and monosomies"
+  },
+  {
+   "front": "G~0~ period",
+   "back": "State of a cell that has left the cycle and does not divide but works"
+  },
+  {
+   "front": "Proto-oncogene",
+   "back": "Normal gene that stimulates division; becomes an oncogene when mutated"
+  },
+  {
+   "front": "Telomerase",
+   "back": "Enzyme that restores chromosome ends (telomeres); active in stem and tumour cells"
+  },
+  {
+   "front": "Contact inhibition",
+   "back": "Cells stop dividing once they touch each other; lost in tumour cells"
+  },
+  {
+   "front": "Pluripotency",
+   "back": "Ability to form cells of all three germ layers"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "Mitosis — **one division, two identical diploid cells**; meiosis — **two divisions, four different haploid cells**."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Stages of prophase I: **“Lazy Zebras Pace Down Daily”** — Leptotene, Zygotene (pairing), Pachytene (crossing over), Diplotene, Diakinesis."},
-  {"kind": "klinik", "label": "Clinical significance", "text": "Nondisjunction in meiosis is the main cause of trisomies and monosomies (Down, Klinefelter, Turner); failure of mitotic control leads to tumors."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "Mitosis — **one division, two identical diploid cells**; meiosis — **two divisions, four different haploid cells**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Stages of prophase I: **“Lazy Zebras Pace Down Daily”** — Leptotene, Zygotene (pairing), Pachytene (crossing over), Diplotene, Diakinesis."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "Nondisjunction in meiosis is the main cause of trisomies and monosomies (Down, Klinefelter, Turner); failure of mitotic control leads to tumors."
+  }
  ]
 }

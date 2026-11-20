@@ -3,109 +3,600 @@
  "no": 10,
  "title": "General laws of proembryonic (progenesis), embryonic (embryogenesis) and postembryonic development. Teratogenic factors. Gerontology. Regeneration. Homeostasis. Transplantation",
  "goals": [
-  {"type": "p", "text": "To teach the student the periods of ontogenesis, the stages of gametogenesis (spermatogenesis and oogenesis), the types of eggs, the laws of fertilization, cleavage, gastrulation and organogenesis, the mechanisms of ontogenesis, critical periods and teratogenic factors, postnatal development and aging, and the basics of regeneration, transplantation and homeostasis."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the kinds, types and periods of ontogenesis;",
-   "the stages of spermatogenesis and oogenesis and the chromosome set and DNA content in them;",
-   "the types of eggs by the amount and distribution of yolk and the types of cleavage;",
-   "the methods of gastrulation and the derivatives of the germ layers;",
-   "embryonic induction, critical periods and teratogens;",
-   "the theories of aging, types of regeneration, types of transplantation and the mechanisms of homeostasis."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "write the genetic formula of the cell at each stage of gametogenesis;",
-   "identify the organs that develop from each germ layer;",
-   "assess the consequence of a teratogenic effect according to the stage of pregnancy."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the periods of ontogenesis, the stages of gametogenesis (spermatogenesis and oogenesis), the types of eggs, the laws of fertilization, cleavage, gastrulation and organogenesis, the mechanisms of ontogenesis, critical periods and teratogenic factors, postnatal development and aging, and the basics of regeneration, transplantation and homeostasis."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the kinds, types and periods of ontogenesis;",
+    "the stages of spermatogenesis and oogenesis and the chromosome set and DNA content in them;",
+    "the types of eggs by the amount and distribution of yolk and the types of cleavage;",
+    "the methods of gastrulation and the derivatives of the germ layers;",
+    "embryonic induction, critical periods and teratogens;",
+    "the theories of aging, types of regeneration, types of transplantation and the mechanisms of homeostasis."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "write the genetic formula of the cell at each stage of gametogenesis;",
+    "identify the organs that develop from each germ layer;",
+    "assess the consequence of a teratogenic effect according to the stage of pregnancy."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. Ontogenesis and its periods", "blocks": [
-   {"type": "p", "text": "**Ontogenesis** (E. Haeckel, 1866) is the individual development of an organism: the set of changes from the formation of the zygote (in asexual reproduction — from separation from the parent) until death. It is **direct** (without a larva — reptiles, birds, mammals) or **indirect** (with metamorphosis — amphibians, insects). Direct development is in turn divided into the **egg-laying** and **intrauterine** types; the intrauterine type is characteristic of humans."},
-   {"type": "table", "title": "Table 10.1. Periods of human ontogenesis", "head": ["Period", "Stages"], "rows": [
-    ["Proembryonic (progenesis)", "Formation of gametes (gametogenesis)"],
-    ["Embryonic (prenatal)", "Fertilization, cleavage, gastrulation, histo- and organogenesis; the embryonic period (up to 8 weeks) and the fetal period (from week 9 until birth)"],
-    ["Postembryonic (postnatal)", "Newborn period, infancy, childhood, adolescence, maturity, old age, senility and death"]
-   ]}
-  ]},
-  {"title": "2. Progenesis: gametogenesis and sex cells", "blocks": [
-   {"type": "p", "text": "**Gametogenesis** is the formation of gametes in the gonads. **Spermatogenesis** proceeds in four stages in the seminiferous tubules of the testis, and **oogenesis** in three stages in the ovary (Figure 10.1)."},
-   {"type": "img", "src": "data/img/bio/t10_gametogenez.webp", "w": 1317, "h": 773, "lang": true, "label": "Figure 10.1", "caption": "Gametogenesis — spermatogenesis and oogenesis: periods of multiplication, growth, maturation and formation; chromosome set and DNA content of the cells at each stage (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 10.2. Stages of spermatogenesis and oogenesis", "head": ["Stage", "Spermatogenesis", "Oogenesis", "Genetic formula"], "rows": [
-    ["Multiplication", "Spermatogonia divide by mitosis (from puberty throughout life)", "Oogonia divide by mitosis (only in fetal life)", "2n2c"],
-    ["Growth", "Primary spermatocytes", "Primary oocytes (yolk accumulates); arrested in prophase of meiosis I until birth", "2n4c"],
-    ["Maturation", "Meiosis I → secondary spermatocytes (n2c) → meiosis II → spermatids", "Meiosis I → secondary oocyte + first polar body; meiosis II (completed at fertilization) → egg + second polar body", "n2c → 1n1c"],
-    ["Formation", "Spermatozoa from spermatids (spermiogenesis)", "Absent", "1n1c"],
-    ["Result", "4 spermatozoa from 1 spermatogonium", "1 egg and 3 polar bodies from 1 oogonium", "—"]
-   ]},
-   {"type": "p", "text": "The **spermatozoon** is a motile cell consisting of a head (the nucleus and, in front of it, the enzyme-rich **acrosome**), a neck (centrioles), a middle piece (spirally arranged mitochondria — energy for movement) and a tail (axoneme, 9 + 2). A human spermatozoon is ≈ 60 µm long. The **egg** is immotile and large (≈ 130–150 µm in humans), with nutrients (yolk) in its cytoplasm; it is surrounded by a transparent coat (zona pellucida) and the **corona radiata** made of follicular cells."},
-   {"type": "table", "title": "Table 10.3. Types of eggs by the amount and distribution of yolk", "head": ["Type", "Yolk", "Organisms"], "rows": [
-    ["Alecithal (oligolecithal, isolecithal)", "Very little, evenly distributed", "Lancelet, mammals, humans"],
-    ["Mesolecithal (moderately telolecithal)", "Moderate, more at the vegetal pole", "Amphibians, sturgeons"],
-    ["Polylecithal (strongly telolecithal)", "Very much, occupies the vegetal pole", "Reptiles, birds, most fish"],
-    ["Centrolecithal", "Located in the center", "Insects"]
-   ]},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "In oogenesis, **dictyotene** is the arrest of primary oocytes in diplotene of meiosis I from birth until ovulation (12–50 years). Meiosis I is completed before ovulation, and meiosis II is completed only when a spermatozoon enters the egg."}]}
-  ]},
-  {"title": "3. Embryogenesis: fertilization, cleavage, gastrulation", "blocks": [
-   {"type": "p", "text": "**Fertilization** is the fusion of a spermatozoon and an egg forming a diploid **zygote**; in humans it takes place in the ampulla of the uterine tube. Stages: approach of spermatozoa to the egg and the **acrosome reaction** (enzymes dissolve the corona radiata and zona pellucida), entry of one spermatozoon, the **cortical reaction** (blocking entry of other spermatozoa — prevention of polyspermy), and fusion of the male and female pronuclei (syngamy)."},
-   {"type": "p", "text": "**Cleavage** is a series of mitotic divisions of the zygote; the cells formed (**blastomeres**) do not grow and become smaller with each division. The type of cleavage depends on the amount of yolk: **complete (holoblastic)** — equal (lancelet) or unequal (amphibians; asynchronous in humans); **incomplete (meroblastic)** — discoidal (birds, reptiles) or superficial (insects) (Figure 10.2). Cleavage gives a **morula** and then a hollow **blastula**; in mammals it is called a **blastocyst** (trophoblast + embryoblast) and is **implanted** in the uterine wall on day 7."},
-   {"type": "img", "src": "data/img/bio/t10_maydalanish.webp", "w": 1023, "h": 630, "lang": true, "label": "Figure 10.2", "caption": "Types of cleavage: 1 — radial (lancelet, mammals); 2 — spiral (flatworms and annelids, mollusks); 3 — bilateral (ascarids); 4 — anarchic; on the right — holoblastic, discoidal and superficial cleavage (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "**Gastrulation** is the formation of a two- and then three-layered embryo — the **gastrula** — from the single-layered blastula; the **germ layers** — **ectoderm**, **endoderm** and **mesoderm** — are formed (Figure 10.3). Methods: **invagination** (infolding — lancelet), **immigration** (migration of cells inward), **delamination** (splitting into layers) and **epiboly** (overgrowth — amphibians). Then **neurulation** (formation of the neural tube and notochord) and **histo-organogenesis** begin."},
-   {"type": "img", "src": "data/img/bio/t10_gastrulyatsiya.webp", "w": 1112, "h": 876, "lang": true, "label": "Figure 10.3", "caption": "Stages of embryonic development — cleavage, gastrulation and histo-organogenesis: 1 — blastocoel; 2 — blastopore; 3 — ectoderm; 4 — endoderm; 5 — mesoderm; 6 — neural tube; 7 — notochord; 8 — primitive gut (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 10.4. Derivatives of the germ layers", "head": ["Layer", "Tissues and organs formed"], "rows": [
-    ["Ectoderm", "Epidermis and its derivatives (hair, nails, sweat and mammary glands), nervous system, receptors of the sense organs, lens of the eye, tooth enamel, epithelium of the oral and anal cavities, anterior pituitary, adrenal medulla"],
-    ["Endoderm", "Epithelium of the digestive tube (middle part) and airways, liver, pancreas, epithelium of the thyroid, parathyroid glands and thymus, epithelium of the urinary bladder"],
-    ["Mesoderm", "Skeleton, striated and smooth muscles, connective tissue, heart and blood vessels, blood, kidneys, gonads, adrenal cortex, serous membranes"]
-   ]}
-  ]},
-  {"title": "4. Mechanisms of ontogenesis, critical periods and teratogenic factors", "blocks": [
-   {"type": "p", "text": "In ontogenesis cells **divide, migrate, differentiate** and **die** (apoptosis). Early blastomeres are **totipotent** — each can give rise to a whole organism (identical twins arise on this basis). **Differentiation** is the structural and functional specialization of cells with the same genotype as a result of activation of different genes. **Embryonic induction** (H. Spemann, 1924) is the determination of the developmental fate of one part of the embryo by another part (the inducer, for example chordamesoderm) (formation of the neural tube from ectoderm)."},
-   {"type": "p", "text": "**Critical periods** are the periods when the embryo is most sensitive to harmful factors (P.G. Svetlov): the period of **implantation** (weeks 1–2 — harmful effects follow the “all or nothing” principle: the embryo dies or recovers completely) and the period of **organogenesis** (weeks 3–8 — severe congenital defects), as well as the period of **placentation**. In the fetal period harmful effects mainly cause functional disorders and growth retardation."},
-   {"type": "table", "title": "Table 10.5. Teratogenic factors", "head": ["Group", "Examples", "Consequences"], "rows": [
-    ["Physical", "Ionizing radiation, hyperthermia", "Microcephaly, intellectual disability"],
-    ["Chemical and drugs", "Thalidomide, retinoids, warfarin, valproate, alcohol, nicotine, heavy metals (mercury, lead)", "Phocomelia (thalidomide), fetal alcohol syndrome, neural tube defects"],
-    ["Biological (infections)", "Rubella, cytomegalovirus, toxoplasma, Treponema pallidum (TORCH)", "Deafness, cataract, heart defects (rubella), hydrocephalus, chorioretinitis (toxoplasmosis)"],
-    ["Maternal diseases", "Diabetes mellitus, phenylketonuria, iodine deficiency", "Heart and skeletal defects, intellectual disability, cretinism"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "When planning a pregnancy, taking **folic acid** (3 months before pregnancy and in the first trimester) markedly reduces the risk of neural tube defects; alcohol, smoking and taking drugs without a doctor’s advice are forbidden in pregnancy, and vaccination against rubella is given before pregnancy."}]}
-  ]},
-  {"title": "5. Postnatal development, aging and death", "blocks": [
-   {"type": "p", "text": "In postnatal development the organism grows, organs mature and puberty occurs. Growth and development are controlled by the **genotype**, **hormones** (growth hormone, thyroxine, sex hormones, insulin) and **environmental** factors (nutrition, physical activity, social conditions). The biological age of the organism is assessed by the skeleton, teeth, sexual maturation and other indicators and may differ from the chronological age (acceleration and retardation)."},
-   {"type": "p", "text": "**Aging** is a natural process in which the adaptive capacity of the organism gradually decreases and the probability of disease and death increases. Aging and old age are studied by **gerontology**, and the diseases of the elderly and their treatment by **geriatrics**."},
-   {"type": "table", "title": "Table 10.6. Main theories of aging", "head": ["Theory", "Essence"], "rows": [
-    ["Genetic program (the Hayflick limit)", "Human fibroblasts divide only ≈ 50 times in culture; telomeres shorten with each division"],
-    ["Free radicals (D. Harman)", "Reactive oxygen species damage DNA, proteins and membranes; the damage accumulates"],
-    ["Mutational (somatic mutations)", "Mutations accumulate in somatic cells and impair cell function"],
-    ["Neuroendocrine", "Age-related changes in the hypothalamus and endocrine regulation"],
-    ["Immunological", "Weakening of immunity and strengthening of autoimmune reactions"]
-   ]},
-   {"type": "p", "text": "**Progeria** is a hereditary disease with premature aging: Hutchinson-Gilford progeria in children (mutation of the lamin A gene) and Werner syndrome in adults (a DNA helicase gene). **Death** is the cessation of the vital activity of the organism: **clinical death** (breathing and heart activity have stopped, but recovery by resuscitation is possible within 5–6 minutes) and **biological death** (irreversible changes, first of all in the cerebral cortex)."}
-  ]},
-  {"title": "6. Regeneration, transplantation and homeostasis", "blocks": [
-   {"type": "p", "text": "**Regeneration** is the restoration of lost or damaged parts of the organism. **Physiological regeneration** is the renewal of worn-out cells in the normal course of life (epidermis, intestinal epithelium, blood cells). **Reparative regeneration** is restoration after injury: **complete** (restitution — the original tissue is restored) and **incomplete** (substitution — a scar forms). Methods: epimorphosis (growth from the wound surface), morphallaxis (rebuilding of the remaining part), regenerative hypertrophy (in the liver and kidney — the volume of the organ is restored, but not its shape). The capacity for regeneration decreases in the course of evolution and with age."},
-   {"type": "table", "title": "Table 10.7. Types of transplantation", "head": ["Type", "Donor and recipient", "Result"], "rows": [
-    ["Autotransplantation", "The same organism (from oneself to oneself — skin, bone)", "Not rejected"],
-    ["Iso- (syngeneic) transplantation", "Genetically identical — identical twins", "Not rejected"],
-    ["Allotransplantation", "Genetically different individuals of the same species", "Rejected if HLA does not match; immunosuppression needed"],
-    ["Xenotransplantation", "Different species (for example, from a pig to a human)", "Strongly rejected"]
-   ]},
-   {"type": "p", "text": "Graft rejection is the response of the recipient’s immune system to the donor’s foreign **HLA antigens** (histocompatibility antigens, on chromosome 6). To prevent rejection, the donor is selected by HLA and immunosuppressants are used. Avascular tissues such as the cornea and cartilage are rarely rejected."},
-   {"type": "p", "text": "**Homeostasis** (W. Cannon, 1929) is the ability of the organism to keep its internal environment (temperature, pH, osmotic pressure, glucose and ion levels) relatively constant. It is maintained at the **genetic** (stability of genotype and karyotype — DNA repair), **structural** (preservation of the composition of cells and tissues — regeneration) and **physiological** levels by the nervous, endocrine and immune systems on the principle of **feedback**."}
-  ]}
+  {
+   "title": "1. Ontogenesis and its periods",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Ontogenesis** (E. Haeckel, 1866) is the individual development of an organism: the set of changes from the formation of the zygote (in asexual reproduction — from separation from the parent) until death. It is **direct** (without a larva — reptiles, birds, mammals) or **indirect** (with metamorphosis — amphibians, insects). Direct development is in turn divided into the **egg-laying** and **intrauterine** types; the intrauterine type is characteristic of humans."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.1. Periods of human ontogenesis",
+     "head": [
+      "Period",
+      "Stages"
+     ],
+     "rows": [
+      [
+       "Proembryonic (progenesis)",
+       "Formation of gametes (gametogenesis)"
+      ],
+      [
+       "Embryonic (prenatal)",
+       "Fertilization, cleavage, gastrulation, histo- and organogenesis; the embryonic period (up to 8 weeks) and the fetal period (from week 9 until birth)"
+      ],
+      [
+       "Postembryonic (postnatal)",
+       "Newborn period, infancy, childhood, adolescence, maturity, old age, senility and death"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. Progenesis: gametogenesis and sex cells",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Gametogenesis** is the formation of gametes in the gonads. **Spermatogenesis** proceeds in four stages in the seminiferous tubules of the testis, and **oogenesis** in three stages in the ovary (Figure 10.1)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_gametogenez.webp",
+     "w": 1317,
+     "h": 773,
+     "lang": true,
+     "label": "Figure 10.1",
+     "caption": "Gametogenesis — spermatogenesis and oogenesis: periods of multiplication, growth, maturation and formation; chromosome set and DNA content of the cells at each stage (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.2. Stages of spermatogenesis and oogenesis",
+     "head": [
+      "Stage",
+      "Spermatogenesis",
+      "Oogenesis",
+      "Genetic formula"
+     ],
+     "rows": [
+      [
+       "Multiplication",
+       "Spermatogonia divide by mitosis (from puberty throughout life)",
+       "Oogonia divide by mitosis (only in fetal life)",
+       "2n2c"
+      ],
+      [
+       "Growth",
+       "Primary spermatocytes",
+       "Primary oocytes (yolk accumulates); arrested in prophase of meiosis I until birth",
+       "2n4c"
+      ],
+      [
+       "Maturation",
+       "Meiosis I → secondary spermatocytes (n2c) → meiosis II → spermatids",
+       "Meiosis I → secondary oocyte + first polar body; meiosis II (completed at fertilization) → egg + second polar body",
+       "n2c → 1n1c"
+      ],
+      [
+       "Formation",
+       "Spermatozoa from spermatids (spermiogenesis)",
+       "Absent",
+       "1n1c"
+      ],
+      [
+       "Result",
+       "4 spermatozoa from 1 spermatogonium",
+       "1 egg and 3 polar bodies from 1 oogonium",
+       "—"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The **spermatozoon** is a motile cell consisting of a head (the nucleus and, in front of it, the enzyme-rich **acrosome**), a neck (centrioles), a middle piece (spirally arranged mitochondria — energy for movement) and a tail (axoneme, 9 + 2). A human spermatozoon is ≈ 60 µm long. The **egg** is immotile and large (≈ 130–150 µm in humans), with nutrients (yolk) in its cytoplasm; it is surrounded by a transparent coat (zona pellucida) and the **corona radiata** made of follicular cells."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_kanalcha.webp",
+     "label": "Figure 10.2",
+     "caption": "Cross-section of a seminiferous tubule: from the wall towards the centre lie spermatogonia, primary and secondary spermatocytes, spermatids and spermatozoa, with Sertoli cells between them (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "In humans spermatogenesis continues from puberty throughout life; the formation of a mature spermatozoon from one spermatogonium takes ≈ 64–74 days. It is regulated by **follicle-stimulating hormone** (FSH — acts on Sertoli cells) and **luteinising hormone** (LH — stimulates testosterone synthesis in Leydig cells). Spermatogenesis requires the testis to be 2–3 °C below body temperature, so failure of the testis to descend into the scrotum (**cryptorchidism**) leads to infertility. A normal ejaculate contains at least 15 million spermatozoa per 1 ml."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_follikul.webp",
+     "label": "Figure 10.3",
+     "caption": "A mature (Graafian) ovarian follicle: 1 — follicle wall (granulosa layer); 2 — oocyte; 3 — zona pellucida; 4 — cumulus oophorus; 5 — corona radiata; 6 — follicular cavity (fluid); 7, 8 — theca layers (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "At birth a girl's ovaries contain ≈ 1–2 million primary oocytes, and at puberty ≈ 400 thousand, but only ≈ 400–500 of them reach ovulation in a lifetime; the rest undergo atresia. In each menstrual cycle a group of follicles grows under FSH; one becomes a **Graafian follicle** and, at the LH surge (≈ day 14 of the cycle), ruptures and releases a secondary oocyte into the abdominal cavity (**ovulation**). In place of the follicle a progesterone-producing **corpus luteum** forms. The egg can be fertilised for 12–24 hours after ovulation, and spermatozoa keep this ability for 2–5 days in the female genital tract."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.3. Comparison of the spermatozoon and the egg cell",
+     "head": [
+      "Feature",
+      "Spermatozoon",
+      "Egg cell (human)"
+     ],
+     "rows": [
+      [
+       "Size",
+       "≈ 60 µm (head 4–5 µm)",
+       "130–150 µm"
+      ],
+      [
+       "Movement",
+       "Active, by the flagellum (3–4 mm/min)",
+       "Non-motile"
+      ],
+      [
+       "Cytoplasm and yolk",
+       "Very little, no yolk",
+       "Abundant, little yolk (isolecithal)"
+      ],
+      [
+       "Coverings",
+       "None (plasmalemma)",
+       "Zona pellucida and corona radiata"
+      ],
+      [
+       "Sex chromosome",
+       "X or Y",
+       "Always X"
+      ],
+      [
+       "Number formed from one cell",
+       "4",
+       "1 (+ 3 polar bodies)"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 10.4. Types of eggs by the amount and distribution of yolk",
+     "head": [
+      "Type",
+      "Yolk",
+      "Organisms"
+     ],
+     "rows": [
+      [
+       "Alecithal (oligolecithal, isolecithal)",
+       "Very little, evenly distributed",
+       "Lancelet, mammals, humans"
+      ],
+      [
+       "Mesolecithal (moderately telolecithal)",
+       "Moderate, more at the vegetal pole",
+       "Amphibians, sturgeons"
+      ],
+      [
+       "Polylecithal (strongly telolecithal)",
+       "Very much, occupies the vegetal pole",
+       "Reptiles, birds, most fish"
+      ],
+      [
+       "Centrolecithal",
+       "Located in the center",
+       "Insects"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In oogenesis, **dictyotene** is the arrest of primary oocytes in diplotene of meiosis I from birth until ovulation (12–50 years). Meiosis I is completed before ovulation, and meiosis II is completed only when a spermatozoon enters the egg."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Embryogenesis: fertilization, cleavage, gastrulation",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Fertilization** is the fusion of a spermatozoon and an egg forming a diploid **zygote**; in humans it takes place in the ampulla of the uterine tube. Stages: approach of spermatozoa to the egg and the **acrosome reaction** (enzymes dissolve the corona radiata and zona pellucida), entry of one spermatozoon, the **cortical reaction** (blocking entry of other spermatozoa — prevention of polyspermy), and fusion of the male and female pronuclei (syngamy)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_urugdanish.webp",
+     "label": "Figure 10.4",
+     "caption": "Stages of fertilisation: top — secondary oocyte (in metaphase of meiosis II) with zona pellucida and corona radiata; middle — release of the second polar body after sperm entry, male and female pronuclei; bottom — the pronuclei approach each other and the zygote forms (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "**Capacitation** — maturation of spermatozoa in the female genital tract (5–7 hours) by which they gain the ability to fertilise.",
+      "**Acrosome reaction** — acrosomal enzymes (hyaluronidase, acrosin) are released and dissolve the corona radiata and zona pellucida.",
+      "**Cortical reaction** — after one spermatozoon enters, the cortical granules of the oocyte undergo exocytosis and change the zona pellucida — other spermatozoa cannot enter (**block to polyspermy**).",
+      "The oocyte completes meiosis II and the second polar body is released; the male and female **pronuclei** approach and the chromosomes unite — **syngamy**."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Cleavage** is a series of mitotic divisions of the zygote; the cells formed (**blastomeres**) do not grow and become smaller with each division. The type of cleavage depends on the amount of yolk: **complete (holoblastic)** — equal (lancelet) or unequal (amphibians; asynchronous in humans); **incomplete (meroblastic)** — discoidal (birds, reptiles) or superficial (insects) (Figure 10.5). Cleavage gives a **morula** and then a hollow **blastula**; in mammals it is called a **blastocyst** (trophoblast + embryoblast) and is **implanted** in the uterine wall on day 7."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_maydalanish.webp",
+     "w": 1023,
+     "h": 630,
+     "lang": true,
+     "label": "Figure 10.5",
+     "caption": "Types of cleavage: 1 — radial (lancelet, mammals); 2 — spiral (flatworms and annelids, mollusks); 3 — bilateral (ascarids); 4 — anarchic; on the right — holoblastic, discoidal and superficial cleavage (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Gastrulation** is the formation of a two- and then three-layered embryo — the **gastrula** — from the single-layered blastula; the **germ layers** — **ectoderm**, **endoderm** and **mesoderm** — are formed (Figure 10.6). Methods: **invagination** (infolding — lancelet), **immigration** (migration of cells inward), **delamination** (splitting into layers) and **epiboly** (overgrowth — amphibians). Then **neurulation** (formation of the neural tube and notochord) and **histo-organogenesis** begin."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_gastrulyatsiya.webp",
+     "w": 1112,
+     "h": 876,
+     "lang": true,
+     "label": "Figure 10.6",
+     "caption": "Stages of embryonic development — cleavage, gastrulation and histo-organogenesis: 1 — blastocoel; 2 — blastopore; 3 — ectoderm; 4 — endoderm; 5 — mesoderm; 6 — neural tube; 7 — notochord; 8 — primitive gut (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.5. Derivatives of the germ layers",
+     "head": [
+      "Layer",
+      "Tissues and organs formed"
+     ],
+     "rows": [
+      [
+       "Ectoderm",
+       "Epidermis and its derivatives (hair, nails, sweat and mammary glands), nervous system, receptors of the sense organs, lens of the eye, tooth enamel, epithelium of the oral and anal cavities, anterior pituitary, adrenal medulla"
+      ],
+      [
+       "Endoderm",
+       "Epithelium of the digestive tube (middle part) and airways, liver, pancreas, epithelium of the thyroid, parathyroid glands and thymus, epithelium of the urinary bladder"
+      ],
+      [
+       "Mesoderm",
+       "Skeleton, striated and smooth muscles, connective tissue, heart and blood vessels, blood, kidneys, gonads, adrenal cortex, serous membranes"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The human embryo cleaves to become a **morula** on day 4 and a **blastocyst** on day 5: the outer cells are the **trophoblast** (forming the fetal part of the placenta), and the inner cell cluster is the **embryoblast** (the embryo itself). On days 6–7 the blastocyst sinks into the uterine lining (**implantation**). Gastrulation occurs in week 3, followed by **neurulation**: the neural plate and then the neural tube form from the ectoderm; failure of its closure causes neural tube defects. In weeks 4–8 the rudiments of all main organs form (**organogenesis**)."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.6. Extra-embryonic (provisional) organs",
+     "head": [
+      "Organ",
+      "Origin",
+      "Function (in humans)"
+     ],
+     "rows": [
+      [
+       "Amnion",
+       "Ectoderm and mesoderm",
+       "Aquatic environment with amniotic fluid, mechanical protection"
+      ],
+      [
+       "Yolk sac",
+       "Endoderm and mesoderm",
+       "Primordial germ cells and the first blood cells form"
+      ],
+      [
+       "Allantois",
+       "Endoderm and mesoderm",
+       "Forms the basis for the umbilical vessels"
+      ],
+      [
+       "Chorion",
+       "Trophoblast and mesoderm",
+       "Its villi form the fetal part of the placenta; produces hCG"
+      ],
+      [
+       "Placenta",
+       "Chorion and uterine lining",
+       "Nutrition, respiration, excretion, hormones, transfer of IgG, barrier function"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Mechanisms of ontogenesis, critical periods and teratogenic factors",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In ontogenesis cells **divide, migrate, differentiate** and **die** (apoptosis). Early blastomeres are **totipotent** — each can give rise to a whole organism (identical twins arise on this basis). **Differentiation** is the structural and functional specialization of cells with the same genotype as a result of activation of different genes. **Embryonic induction** (H. Spemann, 1924) is the determination of the developmental fate of one part of the embryo by another part (the inducer, for example chordamesoderm) (formation of the neural tube from ectoderm)."
+    },
+    {
+     "type": "p",
+     "text": "**Embryonic induction** is the determination by one part of the embryo of the developmental fate of another. It was proved by H. Spemann and H. Mangold (1924) in the frog embryo: when the dorsal lip of the blastopore was transplanted into another embryo, a second neural tube and a second body axis formed (the **organiser**). The position of organs along the body axis is controlled by **homeobox (HOX) genes**; their mutations cause organs to develop in the wrong place."
+    },
+    {
+     "type": "p",
+     "text": "**Critical periods** are the periods when the embryo is most sensitive to harmful factors (P.G. Svetlov): the period of **implantation** (weeks 1–2 — harmful effects follow the “all or nothing” principle: the embryo dies or recovers completely) and the period of **organogenesis** (weeks 3–8 — severe congenital defects), as well as the period of **placentation**. In the fetal period harmful effects mainly cause functional disorders and growth retardation."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.7. Teratogenic factors",
+     "head": [
+      "Group",
+      "Examples",
+      "Consequences"
+     ],
+     "rows": [
+      [
+       "Physical",
+       "Ionizing radiation, hyperthermia",
+       "Microcephaly, intellectual disability"
+      ],
+      [
+       "Chemical and drugs",
+       "Thalidomide, retinoids, warfarin, valproate, alcohol, nicotine, heavy metals (mercury, lead)",
+       "Phocomelia (thalidomide), fetal alcohol syndrome, neural tube defects"
+      ],
+      [
+       "Biological (infections)",
+       "Rubella, cytomegalovirus, toxoplasma, Treponema pallidum (TORCH)",
+       "Deafness, cataract, heart defects (rubella), hydrocephalus, chorioretinitis (toxoplasmosis)"
+      ],
+      [
+       "Maternal diseases",
+       "Diabetes mellitus, phenylketonuria, iodine deficiency",
+       "Heart and skeletal defects, intellectual disability, cretinism"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "When planning a pregnancy, taking **folic acid** (3 months before pregnancy and in the first trimester) markedly reduces the risk of neural tube defects; alcohol, smoking and taking drugs without a doctor’s advice are forbidden in pregnancy, and vaccination against rubella is given before pregnancy."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**The thalidomide tragedy** (1957–1961): because pregnant women took thalidomide as a sedative, more than 10 thousand children worldwide were born with **phocomelia** (short limbs resembling “seal flippers”). Since then all new drugs must be tested for teratogenicity. **Fetal alcohol syndrome** results from drinking alcohol in pregnancy: microcephaly, a thin upper lip and smooth philtrum, growth delay and intellectual disability; there is no safe dose of alcohol in pregnancy."
+    }
+   ]
+  },
+  {
+   "title": "5. Postnatal development, aging and death",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In postnatal development the organism grows, organs mature and puberty occurs. Growth and development are controlled by the **genotype**, **hormones** (growth hormone, thyroxine, sex hormones, insulin) and **environmental** factors (nutrition, physical activity, social conditions). The biological age of the organism is assessed by the skeleton, teeth, sexual maturation and other indicators and may differ from the chronological age (acceleration and retardation)."
+    },
+    {
+     "type": "p",
+     "text": "**Aging** is a natural process in which the adaptive capacity of the organism gradually decreases and the probability of disease and death increases. Aging and old age are studied by **gerontology**, and the diseases of the elderly and their treatment by **geriatrics**."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.8. Main theories of aging",
+     "head": [
+      "Theory",
+      "Essence"
+     ],
+     "rows": [
+      [
+       "Genetic program (the Hayflick limit)",
+       "Human fibroblasts divide only ≈ 50 times in culture; telomeres shorten with each division"
+      ],
+      [
+       "Free radicals (D. Harman)",
+       "Reactive oxygen species damage DNA, proteins and membranes; the damage accumulates"
+      ],
+      [
+       "Mutational (somatic mutations)",
+       "Mutations accumulate in somatic cells and impair cell function"
+      ],
+      [
+       "Neuroendocrine",
+       "Age-related changes in the hypothalamus and endocrine regulation"
+      ],
+      [
+       "Immunological",
+       "Weakening of immunity and strengthening of autoimmune reactions"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Progeria** is a hereditary disease with premature aging: Hutchinson-Gilford progeria in children (mutation of the lamin A gene) and Werner syndrome in adults (a DNA helicase gene). **Death** is the cessation of the vital activity of the organism: **clinical death** (breathing and heart activity have stopped, but recovery by resuscitation is possible within 5–6 minutes) and **biological death** (irreversible changes, first of all in the cerebral cortex)."
+    },
+    {
+     "type": "p",
+     "text": "**Biological age** is the age of the organism by its morphofunctional state; it may differ from the **calendar (passport) age**. Biological age is assessed by the degree of ossification (“bone age”), tooth eruption and sexual maturation, and in the elderly by cardiovascular and respiratory indices and telomere length. Lifestyle (physical activity, proper nutrition, not smoking) slows biological ageing."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.9. Stages of dying",
+     "head": [
+      "Stage",
+      "Signs",
+      "Possibility of reversal"
+     ],
+     "rows": [
+      [
+       "Preagony and agony",
+       "Disturbed consciousness, sharp fall in blood pressure, disturbed breathing and heart rhythm",
+       "Possible with emergency care"
+      ],
+      [
+       "Clinical death",
+       "Breathing and heartbeat have stopped, no reflexes, but cells are still alive",
+       "Possible with resuscitation for 5–6 minutes at normal temperature"
+      ],
+      [
+       "Biological death",
+       "Cells of the cerebral cortex have died; later livor mortis, rigor mortis and cooling",
+       "Irreversible"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "6. Regeneration, transplantation and homeostasis",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Regeneration** is the restoration of lost or damaged parts of the organism. **Physiological regeneration** is the renewal of worn-out cells in the normal course of life (epidermis, intestinal epithelium, blood cells). **Reparative regeneration** is restoration after injury: **complete** (restitution — the original tissue is restored) and **incomplete** (substitution — a scar forms). Methods: epimorphosis (growth from the wound surface), morphallaxis (rebuilding of the remaining part), regenerative hypertrophy (in the liver and kidney — the volume of the organ is restored, but not its shape). The capacity for regeneration decreases in the course of evolution and with age."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.10. Forms of reparative regeneration",
+     "head": [
+      "Form",
+      "Essence",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Epimorphosis",
+       "A regeneration bud (blastema) forms on the wound and the lost part grows out",
+       "Lizard tail, newt limb"
+      ],
+      [
+       "Morphallaxis",
+       "Tissues of the remaining part are rebuilt into a smaller whole organism",
+       "Hydra, flatworm (planarian)"
+      ],
+      [
+       "Regenerative hypertrophy",
+       "The remaining part of an organ restores the former mass by cell division, but not the shape",
+       "Recovery of the liver after removal of 2/3 of it"
+      ],
+      [
+       "Compensatory hypertrophy",
+       "When one of a paired organ is removed, the other enlarges and takes over the function",
+       "The second kidney after removal of one kidney"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "In humans the ability to regenerate depends on the tissue: epithelium, blood, bone and liver regenerate well; skeletal muscle partly (by satellite cells); the myocardium and neurons of the central nervous system hardly regenerate — a connective-tissue **scar** forms in their place (for example, after myocardial infarction)."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.11. Types of transplantation",
+     "head": [
+      "Type",
+      "Donor and recipient",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Autotransplantation",
+       "The same organism (from oneself to oneself — skin, bone)",
+       "Not rejected"
+      ],
+      [
+       "Iso- (syngeneic) transplantation",
+       "Genetically identical — identical twins",
+       "Not rejected"
+      ],
+      [
+       "Allotransplantation",
+       "Genetically different individuals of the same species",
+       "Rejected if HLA does not match; immunosuppression needed"
+      ],
+      [
+       "Xenotransplantation",
+       "Different species (for example, from a pig to a human)",
+       "Strongly rejected"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t10_transplant.webp",
+     "label": "Figure 10.7",
+     "caption": "Types of transplantation: auto-, iso-, allo- and xenotransplantation (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "Graft rejection is the response of the recipient’s immune system to the donor’s foreign **HLA antigens** (histocompatibility antigens, on chromosome 6). To prevent rejection, the donor is selected by HLA and immunosuppressants are used. Avascular tissues such as the cornea and cartilage are rarely rejected."
+    },
+    {
+     "type": "p",
+     "text": "**Homeostasis** (W. Cannon, 1929) is the ability of the organism to keep its internal environment (temperature, pH, osmotic pressure, glucose and ion levels) relatively constant. It is maintained at the **genetic** (stability of genotype and karyotype — DNA repair), **structural** (preservation of the composition of cells and tissues — regeneration) and **physiological** levels by the nervous, endocrine and immune systems on the principle of **feedback**."
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: determining the genetic formula at the stages of gametogenesis", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Mark the gonial cells of the multiplication period (spermatogonium, oogonium) as 2n2c.",
-    "In the growth period, after the S period, write the primary spermatocyte and oocyte as 2n4c.",
-    "After meiosis I write the secondary spermatocyte and oocyte as n2c.",
-    "After meiosis II write the spermatid, spermatozoon and egg as 1n1c.",
-    "Express this in numbers for humans: 2n = 46, n = 23.",
-    "Compare the number of gametes formed from one initial cell (4 spermatozoa and 1 egg)."
-   ]}
-  ]}
+  {
+   "title": "Skill: determining the genetic formula at the stages of gametogenesis",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Mark the gonial cells of the multiplication period (spermatogonium, oogonium) as 2n2c.",
+      "In the growth period, after the S period, write the primary spermatocyte and oocyte as 2n4c.",
+      "After meiosis I write the secondary spermatocyte and oocyte as n2c.",
+      "After meiosis II write the spermatid, spermatozoon and egg as 1n1c.",
+      "Express this in numbers for humans: 2n = 46, n = 23.",
+      "Compare the number of gametes formed from one initial cell (4 spermatozoa and 1 egg)."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "What is ontogenesis? Name its kinds, types and periods.",
@@ -122,45 +613,366 @@
   "How do clinical and biological death differ?",
   "Name the types and methods of regeneration.",
   "What are the types of transplantation and the mechanism of graft rejection?",
-  "Explain homeostasis and its levels."
+  "Explain homeostasis and its levels.",
+  "How long does spermatogenesis last and which hormones regulate it?",
+  "How does ovulation take place? What is the corpus luteum?",
+  "Compare the spermatozoon and the egg cell.",
+  "Name the stages of fertilisation. What is the mechanism that blocks polyspermy?",
+  "When do implantation, neurulation and organogenesis take place?",
+  "Name the extra-embryonic organs and their functions.",
+  "What is embryonic induction? Explain Spemann's experiment.",
+  "How do biological and calendar age differ?",
+  "How do clinical and biological death differ?",
+  "Name the forms of reparative regeneration with examples."
  ],
  "quiz": [
-  {"q": "How many stages does spermatogenesis have?", "options": ["4", "3", "2", "5", "6"], "answer": 0},
-  {"q": "Which stage is absent in oogenesis?", "options": ["Formation", "Multiplication", "Growth", "Maturation", "Meiosis I"], "answer": 0},
-  {"q": "How many eggs are formed from one oogonium?", "options": ["1", "2", "4", "8", "3"], "answer": 0},
-  {"q": "What is the genetic formula of a primary spermatocyte?", "options": ["2n4c", "2n2c", "n2c", "1n1c", "4n4c"], "answer": 0},
-  {"q": "To which type does the human egg belong by the amount of yolk?", "options": ["Alecithal (oligolecithal)", "Polylecithal", "Mesolecithal", "Centrolecithal", "Strongly telolecithal"], "answer": 0},
-  {"q": "How does cleavage proceed in birds?", "options": ["Incomplete discoidal", "Complete equal", "Superficial", "Complete unequal", "Spiral"], "answer": 0},
-  {"q": "What is the enzyme-rich structure in the head of a spermatozoon called?", "options": ["Acrosome", "Centriole", "Axoneme", "Mitochondrial sheath", "Corona radiata"], "answer": 0},
-  {"q": "From which germ layer does the nervous system develop?", "options": ["Ectoderm", "Endoderm", "Mesoderm", "Trophoblast", "Notochord"], "answer": 0},
-  {"q": "From which layer do the liver and pancreas develop?", "options": ["Endoderm", "Ectoderm", "Mesoderm", "Neuroectoderm", "Trophoblast"], "answer": 0},
-  {"q": "Who discovered embryonic induction?", "options": ["H. Spemann", "E. Haeckel", "K. Baer", "P.G. Svetlov", "L. Hayflick"], "answer": 0},
-  {"q": "Which weeks of pregnancy correspond to the critical period of organogenesis?", "options": ["Weeks 3–8", "Weeks 1–2", "Weeks 20–24", "Weeks 36–40", "Weeks 12–16"], "answer": 0},
-  {"q": "Which congenital defect was caused by thalidomide?", "options": ["Phocomelia", "Anencephaly", "Cleft lip", "Hydrocephalus", "Polydactyly"], "answer": 0},
-  {"q": "About how many times do human fibroblasts divide in culture (the Hayflick limit)?", "options": ["50", "10", "200", "1000", "5"], "answer": 0},
-  {"q": "What is transplantation between identical twins called?", "options": ["Isotransplantation", "Allotransplantation", "Xenotransplantation", "Autotransplantation", "Heterotransplantation"], "answer": 0},
-  {"q": "Restoration of the volume of a damaged liver is which type of regeneration?", "options": ["Regenerative hypertrophy", "Epimorphosis", "Physiological regeneration", "Morphallaxis", "Substitution"], "answer": 0}
+  {
+   "q": "How many stages does spermatogenesis have?",
+   "options": [
+    "4",
+    "3",
+    "2",
+    "5",
+    "6"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which stage is absent in oogenesis?",
+   "options": [
+    "Formation",
+    "Multiplication",
+    "Growth",
+    "Maturation",
+    "Meiosis I"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many eggs are formed from one oogonium?",
+   "options": [
+    "1",
+    "2",
+    "4",
+    "8",
+    "3"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the genetic formula of a primary spermatocyte?",
+   "options": [
+    "2n4c",
+    "2n2c",
+    "n2c",
+    "1n1c",
+    "4n4c"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which type does the human egg belong by the amount of yolk?",
+   "options": [
+    "Alecithal (oligolecithal)",
+    "Polylecithal",
+    "Mesolecithal",
+    "Centrolecithal",
+    "Strongly telolecithal"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does cleavage proceed in birds?",
+   "options": [
+    "Incomplete discoidal",
+    "Complete equal",
+    "Superficial",
+    "Complete unequal",
+    "Spiral"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the enzyme-rich structure in the head of a spermatozoon called?",
+   "options": [
+    "Acrosome",
+    "Centriole",
+    "Axoneme",
+    "Mitochondrial sheath",
+    "Corona radiata"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From which germ layer does the nervous system develop?",
+   "options": [
+    "Ectoderm",
+    "Endoderm",
+    "Mesoderm",
+    "Trophoblast",
+    "Notochord"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From which layer do the liver and pancreas develop?",
+   "options": [
+    "Endoderm",
+    "Ectoderm",
+    "Mesoderm",
+    "Neuroectoderm",
+    "Trophoblast"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who discovered embryonic induction?",
+   "options": [
+    "H. Spemann",
+    "E. Haeckel",
+    "K. Baer",
+    "P.G. Svetlov",
+    "L. Hayflick"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which weeks of pregnancy correspond to the critical period of organogenesis?",
+   "options": [
+    "Weeks 3–8",
+    "Weeks 1–2",
+    "Weeks 20–24",
+    "Weeks 36–40",
+    "Weeks 12–16"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which congenital defect was caused by thalidomide?",
+   "options": [
+    "Phocomelia",
+    "Anencephaly",
+    "Cleft lip",
+    "Hydrocephalus",
+    "Polydactyly"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "About how many times do human fibroblasts divide in culture (the Hayflick limit)?",
+   "options": [
+    "50",
+    "10",
+    "200",
+    "1000",
+    "5"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is transplantation between identical twins called?",
+   "options": [
+    "Isotransplantation",
+    "Allotransplantation",
+    "Xenotransplantation",
+    "Autotransplantation",
+    "Heterotransplantation"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Restoration of the volume of a damaged liver is which type of regeneration?",
+   "options": [
+    "Regenerative hypertrophy",
+    "Epimorphosis",
+    "Physiological regeneration",
+    "Morphallaxis",
+    "Substitution"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "About how long does spermatogenesis take in humans?",
+   "options": [
+    "64–74 days",
+    "7 days",
+    "28 days",
+    "6 months",
+    "1 year"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which process blocks polyspermy?",
+   "options": [
+    "Cortical reaction",
+    "Capacitation",
+    "Acrosome reaction",
+    "Syngamy",
+    "Implantation"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "When does the human blastocyst implant in the uterine wall?",
+   "options": [
+    "On days 6–7",
+    "On day 1",
+    "In week 3",
+    "In month 2",
+    "On day 14"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which extra-embryonic organ do primordial germ cells form?",
+   "options": [
+    "In the yolk sac",
+    "In the amnion",
+    "In the allantois",
+    "In the chorion",
+    "In the placenta"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How long does clinical death last at normal temperature?",
+   "options": [
+    "5–6 minutes",
+    "30 minutes",
+    "1 hour",
+    "30 seconds",
+    "1 day"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Enlargement of the remaining kidney after removal of one kidney is what kind of regeneration?",
+   "options": [
+    "Compensatory hypertrophy",
+    "Epimorphosis",
+    "Morphallaxis",
+    "Physiological regeneration",
+    "Regenerative hypertrophy"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "In humans 4 spermatozoa are formed from one spermatogonium during spermatogenesis.", "ask": "How many stages does spermatogenesis have? At which stage are spermatozoa formed? What are their chromosome set and DNA content?", "answer": "Spermatogenesis has 4 stages: multiplication (spermatogonia, 2n2c), growth (primary spermatocyte, 2n4c), maturation (meiosis I — secondary spermatocytes n2c, meiosis II — spermatids 1n1c) and formation (spermiogenesis — spermatozoa from spermatids). Spermatozoa are formed at the formation stage; they are haploid — 1n1c (in humans 23 chromosomes: 22 autosomes + X or Y)."},
-  {"title": "Case 2", "text": "In human oogenesis one egg is formed from one oogonium at the maturation stage.", "ask": "What stages does oogenesis have? What other cells are formed at the maturation stage, and what process is this stage related to?", "answer": "Oogenesis has 3 stages: multiplication (completed in fetal life), growth and maturation. In maturation, meiosis I gives a secondary oocyte and the first polar body, and meiosis II gives the egg and the second polar body; in total 1 egg and 3 polar bodies (the cytoplasm is divided unequally and nutrients accumulate in the egg). Maturation is related to monthly ovulation after puberty: meiosis I is completed before ovulation, and meiosis II at fertilization."},
-  {"title": "Case 3", "text": "In week 5 of pregnancy a woman took a drug for a long time without medical supervision, and later heart and limb defects were found in the fetus. Another woman took the same drug in week 30 of pregnancy, but no defects were found.", "ask": "Explain the difference in the results.", "answer": "Week 5 falls in the critical period of organogenesis (weeks 3–8): in this period the organ primordia are formed, and a teratogenic effect leads to severe anatomical defects. By week 30 the organs are already formed (fetal period), so a teratogenic effect may cause mainly functional disorders and growth retardation rather than major defects. The consequence of a teratogenic effect depends on the type of substance, its dose and the stage of pregnancy."}
+  {
+   "title": "Case 1",
+   "text": "In humans 4 spermatozoa are formed from one spermatogonium during spermatogenesis.",
+   "ask": "How many stages does spermatogenesis have? At which stage are spermatozoa formed? What are their chromosome set and DNA content?",
+   "answer": "Spermatogenesis has 4 stages: multiplication (spermatogonia, 2n2c), growth (primary spermatocyte, 2n4c), maturation (meiosis I — secondary spermatocytes n2c, meiosis II — spermatids 1n1c) and formation (spermiogenesis — spermatozoa from spermatids). Spermatozoa are formed at the formation stage; they are haploid — 1n1c (in humans 23 chromosomes: 22 autosomes + X or Y)."
+  },
+  {
+   "title": "Case 2",
+   "text": "In human oogenesis one egg is formed from one oogonium at the maturation stage.",
+   "ask": "What stages does oogenesis have? What other cells are formed at the maturation stage, and what process is this stage related to?",
+   "answer": "Oogenesis has 3 stages: multiplication (completed in fetal life), growth and maturation. In maturation, meiosis I gives a secondary oocyte and the first polar body, and meiosis II gives the egg and the second polar body; in total 1 egg and 3 polar bodies (the cytoplasm is divided unequally and nutrients accumulate in the egg). Maturation is related to monthly ovulation after puberty: meiosis I is completed before ovulation, and meiosis II at fertilization."
+  },
+  {
+   "title": "Case 3",
+   "text": "In week 5 of pregnancy a woman took a drug for a long time without medical supervision, and later heart and limb defects were found in the fetus. Another woman took the same drug in week 30 of pregnancy, but no defects were found.",
+   "ask": "Explain the difference in the results.",
+   "answer": "Week 5 falls in the critical period of organogenesis (weeks 3–8): in this period the organ primordia are formed, and a teratogenic effect leads to severe anatomical defects. By week 30 the organs are already formed (fetal period), so a teratogenic effect may cause mainly functional disorders and growth retardation rather than major defects. The consequence of a teratogenic effect depends on the type of substance, its dose and the stage of pregnancy."
+  },
+  {
+   "title": "Case 4",
+   "text": "A 28-year-old man in whom unilateral cryptorchidism (undescended testis) was found in childhood but not treated has infertility and a low sperm count on semen analysis.",
+   "ask": "How does cryptorchidism affect spermatogenesis?",
+   "answer": "Spermatogenesis requires the testis to be 2–3 °C below body temperature. In a testis left in the abdomen or inguinal canal the temperature is higher, so the spermatogenic epithelium is damaged and spermatozoa are not formed; Leydig cells continue to produce testosterone, so male sexual characters are preserved. Such a testis also has a higher risk of tumour. Therefore cryptorchidism is corrected surgically before the age of 1–2 years."
+  },
+  {
+   "title": "Case 5",
+   "text": "In weeks 3–4 of pregnancy, before she knew she was pregnant, a woman had a high fever and took valproate. Ultrasound showed spina bifida in the fetus.",
+   "ask": "Why did the defect arise exactly at this time?",
+   "answer": "Weeks 3–4 are the period of **neurulation**: the neural tube forms from the neural plate and closes completely by the end of week 4. This is a **critical period** for the nervous system: teratogens (high temperature, valproate, folic acid deficiency) disturb closure of the neural tube, and spina bifida or anencephaly develops. During organogenesis (weeks 3–8) each organ is damaged at its own critical time; later in pregnancy teratogens mainly affect growth and function."
+  },
+  {
+   "title": "Case 6",
+   "text": "A patient had 60 % of the liver removed because of a tumour. 3 months later the liver mass was found to be almost back to normal, but its shape had changed.",
+   "ask": "What kind of regeneration is this? What is its mechanism?",
+   "answer": "This is **regenerative hypertrophy** — a form of reparative regeneration. Liver cells (hepatocytes) are normally in G~0~; when organ mass falls, under growth factors (hepatocyte growth factor and others) they return to the mitotic cycle and divide. As a result the organ's mass and function are restored, but the removed lobe does not grow back — so the shape is not restored. This property of the liver makes transplantation of a liver lobe from a living donor possible."
+  }
  ],
  "cards": [
-  {"front": "Ontogenesis", "back": "Individual development from the zygote to death (E. Haeckel)"},
-  {"front": "Spermatogenesis", "back": "4 stages; 4 spermatozoa from 1 spermatogonium"},
-  {"front": "Oogenesis", "back": "3 stages; 1 egg + 3 polar bodies from 1 oogonium"},
-  {"front": "Dictyotene", "back": "Arrest of oocytes in diplotene of meiosis I for years"},
-  {"front": "Alecithal egg", "back": "Very little yolk (humans, mammals); complete cleavage"},
-  {"front": "Gastrulation", "back": "Formation of three germ layers: ecto-, endo-, mesoderm"},
-  {"front": "Embryonic induction", "back": "One part determines the development of another part (Spemann)"},
-  {"front": "Critical periods", "back": "Implantation (weeks 1–2) and organogenesis (weeks 3–8)"},
-  {"front": "Hayflick limit", "back": "A human cell divides ≈ 50 times; telomeres shorten"},
-  {"front": "Allotransplantation", "back": "Different individuals of the same species; HLA matching and immunosuppression needed"}
+  {
+   "front": "Ontogenesis",
+   "back": "Individual development from the zygote to death (E. Haeckel)"
+  },
+  {
+   "front": "Spermatogenesis",
+   "back": "4 stages; 4 spermatozoa from 1 spermatogonium"
+  },
+  {
+   "front": "Oogenesis",
+   "back": "3 stages; 1 egg + 3 polar bodies from 1 oogonium"
+  },
+  {
+   "front": "Dictyotene",
+   "back": "Arrest of oocytes in diplotene of meiosis I for years"
+  },
+  {
+   "front": "Alecithal egg",
+   "back": "Very little yolk (humans, mammals); complete cleavage"
+  },
+  {
+   "front": "Gastrulation",
+   "back": "Formation of three germ layers: ecto-, endo-, mesoderm"
+  },
+  {
+   "front": "Embryonic induction",
+   "back": "One part determines the development of another part (Spemann)"
+  },
+  {
+   "front": "Critical periods",
+   "back": "Implantation (weeks 1–2) and organogenesis (weeks 3–8)"
+  },
+  {
+   "front": "Hayflick limit",
+   "back": "A human cell divides ≈ 50 times; telomeres shorten"
+  },
+  {
+   "front": "Allotransplantation",
+   "back": "Different individuals of the same species; HLA matching and immunosuppression needed"
+  },
+  {
+   "front": "Capacitation",
+   "back": "Acquisition by spermatozoa of the ability to fertilise in the female genital tract"
+  },
+  {
+   "front": "Cortical reaction",
+   "back": "Exocytosis of cortical granules — block to polyspermy"
+  },
+  {
+   "front": "Trophoblast",
+   "back": "Outer cells of the blastocyst; form the fetal part of the placenta"
+  },
+  {
+   "front": "Embryonic induction",
+   "back": "Direction by one part of the embryo of another part's development (Spemann organiser)"
+  },
+  {
+   "front": "Clinical death",
+   "back": "Breathing and heartbeat have stopped but reversal is possible within 5–6 minutes"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "Spermatogenesis: **4 stages → 4 gametes**; oogenesis: **3 stages → 1 gamete + 3 bodies**."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Germ layers: **“Ecto — Ears and Thinking”** (nerves, senses, skin), **“Endo — Eating and Breathing inside”** (digestive and respiratory epithelium), **“Meso — Muscles and Heart”** (muscle, skeleton, blood)."},
-  {"kind": "klinik", "label": "Clinical significance", "text": "Weeks 3–8 are the critical period of organogenesis: in this period drugs, alcohol, radiation and infections cause the most severe congenital defects."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "Spermatogenesis: **4 stages → 4 gametes**; oogenesis: **3 stages → 1 gamete + 3 bodies**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Germ layers: **“Ecto — Ears and Thinking”** (nerves, senses, skin), **“Endo — Eating and Breathing inside”** (digestive and respiratory epithelium), **“Meso — Muscles and Heart”** (muscle, skeleton, blood)."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "Weeks 3–8 are the critical period of organogenesis: in this period drugs, alcohol, radiation and infections cause the most severe congenital defects."
+  }
  ]
 }

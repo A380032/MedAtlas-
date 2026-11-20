@@ -3,87 +3,518 @@
  "no": 14,
  "title": "Arachnids of medical importance: the village tick, the scabies mite, the dog and taiga ticks. Insects of medical importance: lice, fleas, mosquitoes, flies, sandflies. Venomous animals",
  "goals": [
-  {"type": "p", "text": "To teach the student the general features and classification of the phylum Arthropoda, the medically important members of the classes Arachnida and Insecta — their structure, development, the diseases they spread and the measures used to control them — and the venomous animals found in Uzbekistan and first aid for their bites and stings."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the general features and classification of arthropods;",
-   "the structure and medical importance of argasid and ixodid ticks and the scabies mite;",
-   "the medical importance of lice, fleas, bedbugs, cockroaches, mosquitoes, sandflies, flies and horseflies;",
-   "the concepts of specific and mechanical vectors, transovarial transmission and natural focality;",
-   "the classification of venomous animals and first aid for their bites and stings."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "distinguish argasid and ixodid ticks, lice and fleas in preparations;",
-   "tell the malaria mosquito from the common mosquito at every stage of development;",
-   "explain the procedure for first aid after a bite or sting by a venomous animal."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the general features and classification of the phylum Arthropoda, the medically important members of the classes Arachnida and Insecta — their structure, development, the diseases they spread and the measures used to control them — and the venomous animals found in Uzbekistan and first aid for their bites and stings."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the general features and classification of arthropods;",
+    "the structure and medical importance of argasid and ixodid ticks and the scabies mite;",
+    "the medical importance of lice, fleas, bedbugs, cockroaches, mosquitoes, sandflies, flies and horseflies;",
+    "the concepts of specific and mechanical vectors, transovarial transmission and natural focality;",
+    "the classification of venomous animals and first aid for their bites and stings."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "distinguish argasid and ixodid ticks, lice and fleas in preparations;",
+    "tell the malaria mosquito from the common mosquito at every stage of development;",
+    "explain the procedure for first aid after a bite or sting by a venomous animal."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. Phylum Arthropoda. Class Arachnida", "blocks": [
-   {"type": "p", "text": "**Arthropods (Arthropoda)** are the largest phylum of the animal kingdom. General features: the body and legs are **jointed**, the external skeleton is a **chitinous** cuticle, growth takes place by **moulting**, the body cavity is mixed (**mixocoel**), and the circulatory system is open. Three subphyla matter for medicine: the **gill-breathers** (crustaceans — Cyclops and crabs are intermediate hosts of helminths), the **chelicerates** (arachnids) and the **tracheates** (insects)."},
-   {"type": "p", "text": "**Arachnids (Arachnida)** have a body divided into a **cephalothorax** and an **abdomen**, 4 pairs of walking legs, chelicerae and pedipalps around the mouth, and no antennae. Of medical importance are scorpions, spiders and especially the order of **ticks and mites (Acari)**. Ticks and mites are divided into the **acariform** group (the scabies mite and the follicle mite — *Demodex*) and the **parasitiform** group (argasid and ixodid ticks). Tick development: egg → **larva** (3 pairs of legs) → **nymph** → **imago** (4 pairs of legs)."},
-   {"type": "table", "title": "Table 14.1. Differences between argasid and ixodid ticks", "head": ["Feature", "Argasid ticks (Argasidae)", "Ixodid ticks (Ixodidae)"], "rows": [
-    ["Chitinous dorsal shield (scutum)", "Absent (“soft” ticks)", "Present (small in the female, covers the whole back in the male)"],
-    ["Mouthparts", "On the underside of the body, **not visible** from above", "At the front end of the body, **visible** from above"],
-    ["Habitat", "Burrows, caves, cracks in adobe houses and cattle sheds", "Open nature: forest, steppe, meadows"],
-    ["Blood feeding", "Quick (minutes), many times", "Prolonged (days), once at each stage"],
-    ["Lifespan", "Up to 20–25 years", "Several years"],
-    ["Main representatives and diseases", "Village tick (*Ornithodoros papillipes*) — tick-borne relapsing fever", "Taiga tick (*Ixodes persulcatus*), dog tick (*I. ricinus*) — tick-borne encephalitis, Lyme borreliosis; *Hyalomma* — Crimean-Congo haemorrhagic fever"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t14_kanalar.webp", "w": 481, "h": 239, "lang": false, "label": "Figure 14.1", "caption": "Ixodid ticks: a — female ixodid tick; b — male dog tick (the chitinous scutum covering the whole back is visible) (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "**Transovarial and transstadial transmission in ticks:** the pathogen multiplies in the tick and passes through the egg to the next generation (**transovarial**) and from larva to nymph and from nymph to imago (**transstadial**). Ticks are therefore not only vectors but also **natural reservoirs** of the pathogen. Academician **Ye.N. Pavlovsky** developed the doctrine of the **natural focality** of vector-borne diseases: the pathogen circulates among wild animals and vectors independently of humans."},
-   {"type": "p", "text": "**The scabies mite** (*Sarcoptes scabiei*) is the agent of **scabies**; it measures 0.3–0.4 mm. The female burrows tunnels in the stratum corneum of the skin and lays her eggs there. Favourite sites are the spaces between the fingers, the wrists, abdomen and inner thighs. The main sign is **itching that worsens at night**. Transmission — direct skin contact, shared bedding and clothing. Diagnosis — finding the mite in a scraping taken from a burrow."}
-  ]},
-  {"title": "2. Class Insecta. Lice, fleas, bedbugs, cockroaches", "blocks": [
-   {"type": "p", "text": "**Insects (Insecta)** have a body consisting of a **head**, **thorax** and **abdomen**; the thorax bears 3 pairs of legs and usually 2 pairs of wings, and the head 1 pair of antennae; they breathe through tracheae. Development is of two kinds: with **incomplete metamorphosis** (egg → larva → imago: lice, bedbugs, cockroaches) and with **complete metamorphosis** (egg → larva → **pupa** → imago: fleas, Diptera)."},
-   {"type": "p", "text": "**Lice (Anoplura)** are wingless permanent ectoparasites that feed only on human blood throughout their life (Figure 14.2). Three species parasitize humans: the **head louse** (*Pediculus humanus capitis*), the **body louse** (*P. h. corporis*) and the **pubic louse** (*Phthirus pubis*). A louse feeds 2–3 times a day for 3–10 minutes each time; the female lays 6–14 eggs (nits) a day, gluing them to hair or clothing fibres; development from egg to imago takes 16–20 days. Louse infestation is called **pediculosis**."},
-   {"type": "img", "src": "data/img/bio/t14_bitlar.webp", "w": 1197, "h": 435, "lang": false, "label": "Figure 14.2", "caption": "Lice: a — male head louse; b — female head louse; c — pubic louse clinging to a hair; d — louse engorged with blood (P.Kh. Kholikov et al., 2022)."},
-   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**The body louse** is the vector of epidemic **typhus** (*Rickettsia prowazekii*) and epidemic **relapsing fever** (*Borrelia recurrentis*). The pathogens are not transmitted with saliva when the louse bites: in typhus the rickettsiae are passed in the louse's **faeces** and rubbed into scratched skin; in relapsing fever the borreliae are in the louse's haemolymph and enter skin wounds **when the louse is crushed**. In wars, famine and breakdowns of hygiene these diseases become epidemic."}]},
-   {"type": "p", "text": "**Fleas (Siphonaptera)** are wingless insects, flattened from side to side, with jumping legs; they develop with complete metamorphosis, and their larvae live in floor cracks and rubbish. **The rat flea** (*Xenopsylla cheopis*) is the vector of **plague** (*Yersinia pestis*): the bacteria form a “block” in the flea's proventriculus and are regurgitated into the wound when it feeds. **The human flea** (*Pulex irritans*) can also carry plague."},
-   {"type": "p", "text": "**The bedbug** (*Cimex lectularius*) feeds at night, and its bites cause itching and allergy. **Cockroaches** (*Blattella germanica, Periplaneta americana*) are **mechanical carriers** of intestinal infections, helminth eggs and protozoan cysts; their chitin remains and secretions are strong **allergens** that cause bronchial asthma and allergic reactions in children."}
-  ]},
-  {"title": "3. Diptera: mosquitoes, sandflies, flies, horseflies", "blocks": [
-   {"type": "p", "text": "**Diptera** are insects with one pair of membranous wings, the second pair having become vibrating halteres; they develop with complete metamorphosis. They are divided into two suborders: the **long-horned** (mosquitoes, sandflies, black flies — *Simulium*) and the **short-horned** (flies, horseflies)."},
-   {"type": "table", "title": "Table 14.2. Differences between the malaria mosquito (Anopheles) and the common mosquito (Culex)", "head": ["Stage", "*Anopheles*", "*Culex*"], "rows": [
-    ["Egg", "Laid singly, with air floats on the sides", "Stuck together to form a “raft”"],
-    ["Larva", "Lies **parallel** to the water surface, no breathing siphon", "Hangs **at an angle** to the water surface, has a long breathing siphon"],
-    ["Pupa", "Breathing trumpets short, broadly conical", "Breathing trumpets long, narrowly cylindrical"],
-    ["Imago (at rest)", "Body **at an angle** to the surface, abdomen raised", "Body **parallel** to the surface"],
-    ["Palps of the female", "As long as the proboscis", "Much shorter than the proboscis"],
-    ["Diseases transmitted", "**Malaria**, wuchereriasis", "West Nile fever, Japanese encephalitis, wuchereriasis"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t14_chivinlar.webp", "w": 1053, "h": 740, "lang": true, "label": "Figure 14.3", "caption": "Differences between the malaria mosquito (*Anopheles*) and common mosquitoes (*Culex, Aedes*) at each stage of development: egg, larva, pupa and imago; 1 — eggs, 2 — spiracle of the larva, 3 — breathing siphon, 4 — breathing trumpets of the pupa (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "***Aedes*** mosquitoes carry the dengue, yellow fever and Zika viruses. **Sandflies** (*Phlebotomus*) are small and hairy and breed in rodent burrows in hot regions; they are the vectors of the **leishmaniases** (cutaneous and visceral) and of sandfly (pappataci) fever. **Black flies** (*Simulium*) carry onchocerciasis."},
-   {"type": "p", "text": "**The housefly** (*Musca domestica*) is a **mechanical carrier** of intestinal infections (dysentery, typhoid fever, cholera), helminth eggs and protozoan cysts: microbes are carried on the sticky hairs of its feet, on its proboscis and in its gut, and reach food in vomit and faeces. **Wohlfahrt's fly** (*Wohlfahrtia magnifica*) deposits live larvae in wounds, ears, nose and eyes — causing **obligate myiasis**. **The stable fly** (*Stomoxys calcitrans*) and **horseflies** (*Tabanidae*) suck blood but are only **mechanical** carriers of anthrax and tularaemia. **The tsetse fly** (*Glossina*) carries sleeping sickness (trypanosomiasis) in Africa."},
-   {"type": "box", "kind": "eslab", "parts": [{"type": "list", "ordered": false, "items": [
-    "**Specific (biological) vector** — the pathogen multiplies in it or completes part of its life cycle there (Anopheles — malaria, sandfly — Leishmania, louse — rickettsia, tick — encephalitis virus).",
-    "**Mechanical carrier** — the pathogen stays unchanged in the carrier and is merely transferred on its body surface or proboscis (housefly, cockroach, horsefly, stable fly)."
-   ]}]}
-  ]},
-  {"title": "4. Venomous animals", "blocks": [
-   {"type": "p", "text": "**Venomous animals** produce or accumulate substances that are toxic to humans and animals. **Primarily venomous** animals produce venom in special glands themselves; they are either **actively armed** (with a venom gland and a stinging or biting apparatus: snakes, scorpions, spiders, wasps) or **passive** (with venom glands but no delivery apparatus: frogs, some fish). **Secondarily venomous** animals accumulate toxins from their food (some fish and molluscs). By their action, venoms are **neurotoxic** (acting on the nervous system) or **haemotoxic** (acting on the blood and vessels)."},
-   {"type": "img", "src": "data/img/bio/t14_zaharli.webp", "w": 953, "h": 340, "lang": false, "label": "Figure 14.4", "caption": "Venomous arachnids found in Uzbekistan: a — scorpion; b — karakurt (*Latrodectus tredecimguttatus*) (P.Kh. Kholikov et al., 2022)."},
-   {"type": "table", "title": "Table 14.3. Venomous animals common in Uzbekistan", "head": ["Animal", "Type of venom", "Signs after a bite or sting"], "rows": [
-    ["Karakurt (*Latrodectus tredecimguttatus*)", "Neurotoxic", "Severe muscle pain throughout the body, rigidity of the abdominal muscles, **fear**, profuse sweating, trembling, weakness"],
-    ["Scorpion (*Mesobuthus eupeus*)", "Mainly local, neurotoxic", "Sharp pain and swelling at the sting site, general poisoning in children"],
-    ["Tarantula (*Lycosa*)", "Local", "Pain, swelling, redness; usually harmless"],
-    ["Central Asian cobra (*Naja oxiana*)", "**Neurotoxic**", "Few local changes; numbness, drooping eyelids, difficulty swallowing and breathing, paralysis"],
-    ["Levant viper — gyurza (*Macrovipera lebetina*), saw-scaled viper (*Echis carinatus*), Halys pit viper (*Gloydius halys*)", "**Haemotoxic**", "Severe pain and rapidly spreading swelling at the bite site, bleeding, haemorrhages, a sharp fall in blood pressure"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**First aid for snakebite:** calm the patient and lay them down; immobilize the bitten limb with a splint; remove rings and bracelets; give plenty of fluids; take the patient to hospital urgently — there **snake antivenom** is given. **Do not:** apply a tourniquet, cut or cauterize the wound, or give alcohol. For a karakurt bite, **anti-karakurt serum** is used."}]}
-  ]}
+  {
+   "title": "1. Phylum Arthropoda. Class Arachnida",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Arthropods (Arthropoda)** are the largest phylum of the animal kingdom. General features: the body and legs are **jointed**, the external skeleton is a **chitinous** cuticle, growth takes place by **moulting**, the body cavity is mixed (**mixocoel**), and the circulatory system is open. Three subphyla matter for medicine: the **gill-breathers** (crustaceans — Cyclops and crabs are intermediate hosts of helminths), the **chelicerates** (arachnids) and the **tracheates** (insects)."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.1. Classes of arthropods important in medicine",
+     "head": [
+      "Class",
+      "Main features",
+      "Medical significance"
+     ],
+     "rows": [
+      [
+       "Crustaceans (Crustacea)",
+       "Two pairs of antennae, breathe with gills, mostly aquatic",
+       "Intermediate hosts of helminths: copepods — guinea worm and broad fish tapeworm; crabs and crayfish — lung fluke"
+      ],
+      [
+       "Arachnids (Arachnida)",
+       "Cephalothorax and abdomen, 4 pairs of legs, no antennae",
+       "Ticks and mites — parasites and vectors; scorpion, black widow — venomous"
+      ],
+      [
+       "Insects (Insecta)",
+       "Head, thorax, abdomen, 3 pairs of legs, 1 pair of antennae, often winged",
+       "Ectoparasites (lice, fleas), vectors of transmissible diseases, agents of myiasis"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Arachnids (Arachnida)** have a body divided into a **cephalothorax** and an **abdomen**, 4 pairs of walking legs, chelicerae and pedipalps around the mouth, and no antennae. Of medical importance are scorpions, spiders and especially the order of **ticks and mites (Acari)**. Ticks and mites are divided into the **acariform** group (the scabies mite and the follicle mite — *Demodex*) and the **parasitiform** group (argasid and ixodid ticks). Tick development: egg → **larva** (3 pairs of legs) → **nymph** → **imago** (4 pairs of legs)."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.2. Differences between argasid and ixodid ticks",
+     "head": [
+      "Feature",
+      "Argasid ticks (Argasidae)",
+      "Ixodid ticks (Ixodidae)"
+     ],
+     "rows": [
+      [
+       "Chitinous dorsal shield (scutum)",
+       "Absent (“soft” ticks)",
+       "Present (small in the female, covers the whole back in the male)"
+      ],
+      [
+       "Mouthparts",
+       "On the underside of the body, **not visible** from above",
+       "At the front end of the body, **visible** from above"
+      ],
+      [
+       "Habitat",
+       "Burrows, caves, cracks in adobe houses and cattle sheds",
+       "Open nature: forest, steppe, meadows"
+      ],
+      [
+       "Blood feeding",
+       "Quick (minutes), many times",
+       "Prolonged (days), once at each stage"
+      ],
+      [
+       "Lifespan",
+       "Up to 20–25 years",
+       "Several years"
+      ],
+      [
+       "Main representatives and diseases",
+       "Village tick (*Ornithodoros papillipes*) — tick-borne relapsing fever",
+       "Taiga tick (*Ixodes persulcatus*), dog tick (*I. ricinus*) — tick-borne encephalitis, Lyme borreliosis; *Hyalomma* — Crimean-Congo haemorrhagic fever"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_kanalar.webp",
+     "w": 481,
+     "h": 239,
+     "lang": false,
+     "label": "Figure 14.1",
+     "caption": "Ixodid ticks: a — female ixodid tick; b — male dog tick (the chitinous scutum covering the whole back is visible) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_iksod_davrlar.webp",
+     "label": "Figure 14.2",
+     "caption": "Developmental stages and sizes of the castor bean tick (*Ixodes ricinus*): larva (0,5 mm), nymph (1,5 mm), male (2,5–3,5 mm), female before feeding (3,5–4,5 mm) and after feeding (up to 10 mm) (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_argas.webp",
+     "label": "Figure 14.3",
+     "caption": "Argasid tick (village tick): a — dorsal view (no chitinous shield, leathery body); b — ventral view (mouthparts beneath the body) (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Transovarial and transstadial transmission in ticks:** the pathogen multiplies in the tick and passes through the egg to the next generation (**transovarial**) and from larva to nymph and from nymph to imago (**transstadial**). Ticks are therefore not only vectors but also **natural reservoirs** of the pathogen. Academician **Ye.N. Pavlovsky** developed the doctrine of the **natural focality** of vector-borne diseases: the pathogen circulates among wild animals and vectors independently of humans."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.3. Main diseases transmitted by ticks",
+     "head": [
+      "Disease",
+      "Agent",
+      "Tick vector"
+     ],
+     "rows": [
+      [
+       "Tick-borne encephalitis",
+       "Flavivirus",
+       "Taiga tick (*Ixodes persulcatus*), castor bean tick (*I. ricinus*)"
+      ],
+      [
+       "Lyme borreliosis (ixodid tick-borne borreliosis)",
+       "*Borrelia burgdorferi*",
+       "*Ixodes* ticks"
+      ],
+      [
+       "Crimean–Congo haemorrhagic fever",
+       "Nairovirus",
+       "*Hyalomma* ticks (natural foci also exist in Uzbekistan)"
+      ],
+      [
+       "Tick-borne relapsing fever",
+       "*Borrelia persica* and others",
+       "Village tick (*Ornithodoros papillipes*, argasid ticks) — Central Asia"
+      ],
+      [
+       "Tularaemia, Q fever",
+       "*Francisella tularensis*, *Coxiella burnetii*",
+       "Ixodid ticks (as well as other routes)"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**When a tick has attached:** do not crush it; grasp it close to the skin with tweezers or a thread loop and pull it out with a twisting movement; wipe the site with alcohol or iodine; send the tick to a laboratory in a test tube. Crushing it with the fingers or applying oil or petrol is forbidden — the tick regurgitates and injects more of the pathogen. In endemic areas emergency prophylaxis (immunoglobulin, antibiotic) is given after a tick bite; prevention is vaccination, closed clothing, repellents and checking oneself and pets."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**The scabies mite** (*Sarcoptes scabiei*) is the agent of **scabies**; it measures 0.3–0.4 mm. The female burrows tunnels in the stratum corneum of the skin and lays her eggs there. Favourite sites are the spaces between the fingers, the wrists, abdomen and inner thighs. The main sign is **itching that worsens at night**. Transmission — direct skin contact, shared bedding and clothing. Diagnosis — finding the mite in a scraping taken from a burrow."
+    },
+    {
+     "type": "p",
+     "text": "Scabies spreads from person to person mainly by **direct prolonged skin contact** (sleeping in one bed, sexual contact), less often through clothing and bedding; the mite survives 2–3 days off the body. Treatment: all family members and contacts are treated at the same time with acaricidal ointments (benzyl benzoate, permethrin), and underwear and bedding are boiled and ironed. **Demodex** — *Demodex folliculorum* lives in hair follicles and sebaceous glands and, when immunity is lowered, causes a facial rash and eyelid inflammation. **House dust mites** (*Dermatophagoides*) are not parasites, but their secretions are an important cause of bronchial asthma and allergic rhinitis."
+    }
+   ]
+  },
+  {
+   "title": "2. Class Insecta. Lice, fleas, bedbugs, cockroaches",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Insects (Insecta)** have a body consisting of a **head**, **thorax** and **abdomen**; the thorax bears 3 pairs of legs and usually 2 pairs of wings, and the head 1 pair of antennae; they breathe through tracheae. Development is of two kinds: with **incomplete metamorphosis** (egg → larva → imago: lice, bedbugs, cockroaches) and with **complete metamorphosis** (egg → larva → **pupa** → imago: fleas, Diptera)."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.4. Types of insect development",
+     "head": [
+      "Type",
+      "Stages",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Incomplete metamorphosis",
+       "Egg → larva (nymph) → adult; the larva resembles the adult",
+       "Lice, bugs, cockroaches"
+      ],
+      [
+       "Complete metamorphosis",
+       "Egg → larva → pupa → adult; the larva differs sharply from the adult",
+       "Fleas, mosquitoes, sandflies, flies"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Lice (Anoplura)** are wingless permanent ectoparasites that feed only on human blood throughout their life (Figure 14.4). Three species parasitize humans: the **head louse** (*Pediculus humanus capitis*), the **body louse** (*P. h. corporis*) and the **pubic louse** (*Phthirus pubis*). A louse feeds 2–3 times a day for 3–10 minutes each time; the female lays 6–14 eggs (nits) a day, gluing them to hair or clothing fibres; development from egg to imago takes 16–20 days. Louse infestation is called **pediculosis**."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_bitlar.webp",
+     "w": 1197,
+     "h": 435,
+     "lang": false,
+     "label": "Figure 14.4",
+     "caption": "Lice: a — male head louse; b — female head louse; c — pubic louse clinging to a hair; d — louse engorged with blood (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**The body louse** is the vector of epidemic **typhus** (*Rickettsia prowazekii*) and epidemic **relapsing fever** (*Borrelia recurrentis*). The pathogens are not transmitted with saliva when the louse bites: in typhus the rickettsiae are passed in the louse's **faeces** and rubbed into scratched skin; in relapsing fever the borreliae are in the louse's haemolymph and enter skin wounds **when the louse is crushed**. In wars, famine and breakdowns of hygiene these diseases become epidemic."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Pediculosis** (lice infestation) — infestation with lice; head lice often spread in children's groups. The female louse lays 5–10 eggs (**nits**) a day and glues them to the hair with a special cement. Treatment: pediculicidal shampoos or solutions (permethrin), a repeat treatment after 7–10 days (against larvae hatched from nits) and combing out the nits with a fine comb; for body lice, boiling and ironing clothes and bedding or treating them in a disinfestation chamber. All contacts are examined."
+    },
+    {
+     "type": "p",
+     "text": "**Fleas (Siphonaptera)** are wingless insects, flattened from side to side, with jumping legs; they develop with complete metamorphosis, and their larvae live in floor cracks and rubbish. **The rat flea** (*Xenopsylla cheopis*) is the vector of **plague** (*Yersinia pestis*): the bacteria form a “block” in the flea's proventriculus and are regurgitated into the wound when it feeds. **The human flea** (*Pulex irritans*) can also carry plague."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_burga.webp",
+     "label": "Figure 14.5",
+     "caption": "Flea: a — adult flea (laterally compressed body, jumping hind legs); b — life cycle with complete metamorphosis: egg, larva, pupa, adult (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Mechanism of plague transmission by fleas:** in a rat flea (*Xenopsylla cheopis*) that has sucked rodent blood, plague bacilli multiply in the proventriculus and form a “plug” (**block**). Such a “blocked” flea stays hungry, tries again and again to feed, and each time regurgitates the sucked blood together with bacteria into the wound. When rodents die off, the fleas pass to humans — this is how a plague epidemic begins."
+    },
+    {
+     "type": "p",
+     "text": "**The bedbug** (*Cimex lectularius*) feeds at night, and its bites cause itching and allergy. **Cockroaches** (*Blattella germanica, Periplaneta americana*) are **mechanical carriers** of intestinal infections, helminth eggs and protozoan cysts; their chitin remains and secretions are strong **allergens** that cause bronchial asthma and allergic reactions in children."
+    }
+   ]
+  },
+  {
+   "title": "3. Diptera: mosquitoes, sandflies, flies, horseflies",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Diptera** are insects with one pair of membranous wings, the second pair having become vibrating halteres; they develop with complete metamorphosis. They are divided into two suborders: the **long-horned** (mosquitoes, sandflies, black flies — *Simulium*) and the **short-horned** (flies, horseflies)."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.5. Differences between the malaria mosquito (Anopheles) and the common mosquito (Culex)",
+     "head": [
+      "Stage",
+      "*Anopheles*",
+      "*Culex*"
+     ],
+     "rows": [
+      [
+       "Egg",
+       "Laid singly, with air floats on the sides",
+       "Stuck together to form a “raft”"
+      ],
+      [
+       "Larva",
+       "Lies **parallel** to the water surface, no breathing siphon",
+       "Hangs **at an angle** to the water surface, has a long breathing siphon"
+      ],
+      [
+       "Pupa",
+       "Breathing trumpets short, broadly conical",
+       "Breathing trumpets long, narrowly cylindrical"
+      ],
+      [
+       "Imago (at rest)",
+       "Body **at an angle** to the surface, abdomen raised",
+       "Body **parallel** to the surface"
+      ],
+      [
+       "Palps of the female",
+       "As long as the proboscis",
+       "Much shorter than the proboscis"
+      ],
+      [
+       "Diseases transmitted",
+       "**Malaria**, wuchereriasis",
+       "West Nile fever, Japanese encephalitis, wuchereriasis"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_chivinlar.webp",
+     "w": 1053,
+     "h": 740,
+     "lang": true,
+     "label": "Figure 14.6",
+     "caption": "Differences between the malaria mosquito (*Anopheles*) and common mosquitoes (*Culex, Aedes*) at each stage of development: egg, larva, pupa and imago; 1 — eggs, 2 — spiracle of the larva, 3 — breathing siphon, 4 — breathing trumpets of the pupa (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "***Aedes*** mosquitoes carry the dengue, yellow fever and Zika viruses. **Sandflies** (*Phlebotomus*) are small and hairy and breed in rodent burrows in hot regions; they are the vectors of the **leishmaniases** (cutaneous and visceral) and of sandfly (pappataci) fever. **Black flies** (*Simulium*) carry onchocerciasis."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_iskabtopar_pashsha.webp",
+     "label": "Figure 14.7",
+     "caption": "a — developmental stages of the sandfly (egg, larvae, pupa and adult sandfly); b — the house fly, its eggs, larva and pupa (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Besides leishmaniases, sandflies also carry the **pappataci (sandfly) fever** virus. *Culex* mosquitoes transmit West Nile fever and Japanese encephalitis viruses, as well as filariae and dog dirofilariae. The **tsetse fly** (*Glossina*) carries sleeping sickness in Africa, and **blackflies** (*Simulium*) carry onchocerciasis."
+    },
+    {
+     "type": "p",
+     "text": "**The housefly** (*Musca domestica*) is a **mechanical carrier** of intestinal infections (dysentery, typhoid fever, cholera), helminth eggs and protozoan cysts: microbes are carried on the sticky hairs of its feet, on its proboscis and in its gut, and reach food in vomit and faeces. **Wohlfahrt's fly** (*Wohlfahrtia magnifica*) deposits live larvae in wounds, ears, nose and eyes — causing **obligate myiasis**. **The stable fly** (*Stomoxys calcitrans*) and **horseflies** (*Tabanidae*) suck blood but are only **mechanical** carriers of anthrax and tularaemia. **The tsetse fly** (*Glossina*) carries sleeping sickness (trypanosomiasis) in Africa."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "list",
+       "ordered": false,
+       "items": [
+        "**Specific (biological) vector** — the pathogen multiplies in it or completes part of its life cycle there (Anopheles — malaria, sandfly — Leishmania, louse — rickettsia, tick — encephalitis virus).",
+        "**Mechanical carrier** — the pathogen stays unchanged in the carrier and is merely transferred on its body surface or proboscis (housefly, cockroach, horsefly, stable fly)."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Myiases** are infestations of human tissues by fly larvae. **Wohlfahrt's fly** (*Wohlfahrtia magnifica*) deposits live larvae in wounds or on the mucosa of the ear, nose or eye; the larvae destroy tissue, causing severe wounds and even bone damage (in Central Asia especially in summer, in shepherds and bedridden patients). Larvae of **botflies** (*Gasterophilus*, *Oestrus*) mainly infest animals, sometimes causing cutaneous or ocular myiasis in humans. Prevention: keeping wounds covered, personal hygiene and fly control."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.6. Arthropods and the diseases they transmit (summary)",
+     "head": [
+      "Vector",
+      "Diseases",
+      "Type of transmission"
+     ],
+     "rows": [
+      [
+       "*Anopheles* mosquito",
+       "Malaria",
+       "Specific"
+      ],
+      [
+       "*Aedes*, *Culex* mosquitoes",
+       "Dengue, yellow fever, Zika, West Nile fever, filariases",
+       "Specific"
+      ],
+      [
+       "Sandfly",
+       "Leishmaniases, pappataci fever",
+       "Specific"
+      ],
+      [
+       "Body louse",
+       "Epidemic typhus and relapsing fever",
+       "Specific"
+      ],
+      [
+       "Rat flea",
+       "Plague, endemic (murine) typhus",
+       "Specific"
+      ],
+      [
+       "Ixodid and argasid ticks",
+       "Tick-borne encephalitis, borrelioses, Crimean–Congo fever, tularaemia",
+       "Specific"
+      ],
+      [
+       "House fly, cockroaches",
+       "Intestinal infections, helminth eggs, protozoan cysts",
+       "Mechanical"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Venomous animals",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Venomous animals** produce or accumulate substances that are toxic to humans and animals. **Primarily venomous** animals produce venom in special glands themselves; they are either **actively armed** (with a venom gland and a stinging or biting apparatus: snakes, scorpions, spiders, wasps) or **passive** (with venom glands but no delivery apparatus: frogs, some fish). **Secondarily venomous** animals accumulate toxins from their food (some fish and molluscs). By their action, venoms are **neurotoxic** (acting on the nervous system) or **haemotoxic** (acting on the blood and vessels)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_zaharli.webp",
+     "w": 953,
+     "h": 340,
+     "lang": false,
+     "label": "Figure 14.8",
+     "caption": "Venomous arachnids found in Uzbekistan: a — scorpion; b — karakurt (*Latrodectus tredecimguttatus*) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 14.7. Venomous animals common in Uzbekistan",
+     "head": [
+      "Animal",
+      "Type of venom",
+      "Signs after a bite or sting"
+     ],
+     "rows": [
+      [
+       "Karakurt (*Latrodectus tredecimguttatus*)",
+       "Neurotoxic",
+       "Severe muscle pain throughout the body, rigidity of the abdominal muscles, **fear**, profuse sweating, trembling, weakness"
+      ],
+      [
+       "Scorpion (*Mesobuthus eupeus*)",
+       "Mainly local, neurotoxic",
+       "Sharp pain and swelling at the sting site, general poisoning in children"
+      ],
+      [
+       "Tarantula (*Lycosa*)",
+       "Local",
+       "Pain, swelling, redness; usually harmless"
+      ],
+      [
+       "Central Asian cobra (*Naja oxiana*)",
+       "**Neurotoxic**",
+       "Few local changes; numbness, drooping eyelids, difficulty swallowing and breathing, paralysis"
+      ],
+      [
+       "Levant viper — gyurza (*Macrovipera lebetina*), saw-scaled viper (*Echis carinatus*), Halys pit viper (*Gloydius halys*)",
+       "**Haemotoxic**",
+       "Severe pain and rapidly spreading swelling at the bite site, bleeding, haemorrhages, a sharp fall in blood pressure"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_ilonlar.webp",
+     "label": "Figure 14.9",
+     "caption": "Venomous snakes: a — tiger snake (*Notechis scutatus*, Australia); b — cobra — snakes with neurotoxic venom (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The main treatment for snake envenoming is **antivenom** (monovalent or polyvalent), given only in a medical facility when indicated. After a snake bite **applying a tourniquet, cutting, cauterising, sucking out the venom by mouth and giving alcohol are forbidden**: a tourniquet increases tissue necrosis with haemotoxic venom, and cutting causes infection and bleeding."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t14_baliqlar.webp",
+     "label": "Figure 14.10",
+     "caption": "Venomous and poisonous fish: a — the greater weever (*Trachinus draco*) — actively venomous, its fin spines and gill-cover spine are linked to venom glands; b — the marinka (*Schizothorax intermedius*) — passively poisonous, its roe, male gonads and black peritoneum are toxic (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Secondarily (passively) poisonous animals** do not inject venom with a special apparatus — poisoning occurs when they are eaten. The flesh of the **marinka** and **osman** fish living in Central Asian rivers is tasty, but their roe, milt and black peritoneum are highly toxic: if they are not cleaned well, vomiting, diarrhoea and, in severe cases, respiratory paralysis develop. Marine **puffer fish** (fugu) contain tetrodotoxin. The secretion of the skin glands of some toads has a cardiotoxic effect."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**First aid for snakebite:** calm the patient and lay them down; immobilize the bitten limb with a splint; remove rings and bracelets; give plenty of fluids; take the patient to hospital urgently — there **snake antivenom** is given. **Do not:** apply a tourniquet, cut or cauterize the wound, or give alcohol. For a karakurt bite, **anti-karakurt serum** is used."
+      }
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: distinguishing argasid and ixodid ticks in a preparation", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Examine the tick from the dorsal side with a magnifier or the low-power objective of a microscope.",
-    "Determine whether there is a chitinous scutum on the back.",
-    "Check whether the mouthparts (capitulum) are visible from above or hidden under the body.",
-    "No scutum and mouthparts not visible from above — conclude an argasid tick; scutum present and mouthparts visible at the front end — an ixodid tick.",
-    "Count the legs to identify the stage: 3 pairs — larva, 4 pairs — nymph or imago (the nymph has no genital opening)."
-   ]}
-  ]}
+  {
+   "title": "Skill: distinguishing argasid and ixodid ticks in a preparation",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Examine the tick from the dorsal side with a magnifier or the low-power objective of a microscope.",
+      "Determine whether there is a chitinous scutum on the back.",
+      "Check whether the mouthparts (capitulum) are visible from above or hidden under the body.",
+      "No scutum and mouthparts not visible from above — conclude an argasid tick; scutum present and mouthparts visible at the front end — an ixodid tick.",
+      "Count the legs to identify the stage: 3 pairs — larva, 4 pairs — nymph or imago (the nymph has no genital opening)."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "Describe the phylum Arthropoda and give its classification.",
@@ -97,45 +528,355 @@
   "Describe the medical importance of bedbugs and cockroaches.",
   "Describe the order Diptera. How do Anopheles and Culex differ?",
   "What is the medical importance of flies, horseflies and sandflies?",
-  "Give the classification of venomous animals. What first aid is given after a bite or sting by the venomous animals common in Uzbekistan?"
+  "Give the classification of venomous animals. What first aid is given after a bite or sting by the venomous animals common in Uzbekistan?",
+  "Which classes of arthropods are important in medicine and why?",
+  "What diseases are transmitted by ticks?",
+  "What should be done when a tick has attached?",
+  "How is scabies transmitted and treated? What is the significance of Demodex and house dust mites?",
+  "Compare complete and incomplete metamorphosis in insects.",
+  "How is pediculosis treated?",
+  "How is plague transmitted by fleas?",
+  "What is myiasis? What is the significance of Wohlfahrt's fly?",
+  "What must not be done after a snake bite?",
+  "Give examples of secondarily poisonous animals."
  ],
  "quiz": [
-  {"q": "How many pairs of walking legs do arachnids have?", "options": ["4 pairs", "3 pairs", "2 pairs", "5 pairs", "6 pairs"], "answer": 0},
-  {"q": "At which stage do ticks have 3 pairs of legs?", "options": ["Larva", "Nymph", "Imago", "Egg", "Pupa"], "answer": 0},
-  {"q": "A tick without a dorsal scutum, whose mouthparts are not visible from above, belongs to which family?", "options": ["Argasid ticks", "Ixodid ticks", "Scabies mites", "Demodex mites", "Gamasid mites"], "answer": 0},
-  {"q": "Which disease does the taiga tick spread?", "options": ["Tick-borne encephalitis", "Malaria", "Plague", "Typhus", "Leishmaniasis"], "answer": 0},
-  {"q": "Who developed the doctrine of the natural focality of vector-borne diseases?", "options": ["Ye.N. Pavlovsky", "K.I. Skryabin", "L.M. Isaev", "I.I. Mechnikov", "R. Koch"], "answer": 0},
-  {"q": "Where does the scabies mite live as a parasite?", "options": ["In the stratum corneum of the skin", "In the hair", "In the blood", "In the intestine", "In the lymph nodes"], "answer": 0},
-  {"q": "Which insect develops with complete metamorphosis?", "options": ["Flea", "Louse", "Bedbug", "Cockroach", "Locust"], "answer": 0},
-  {"q": "What spreads epidemic typhus?", "options": ["Body louse", "Rat flea", "Sandfly", "Housefly", "Ixodid tick"], "answer": 0},
-  {"q": "How does the typhus pathogen reach humans?", "options": ["Louse faeces rubbed into scratched skin", "Louse saliva", "Louse eggs", "Airborne droplets", "Water"], "answer": 0},
-  {"q": "What is the main vector of plague?", "options": ["Rat flea", "Body louse", "Malaria mosquito", "Horsefly", "Bedbug"], "answer": 0},
-  {"q": "Which mosquito has a larva that lies parallel to the water surface and has no siphon?", "options": ["Anopheles", "Culex", "Aedes", "Phlebotomus", "Simulium"], "answer": 0},
-  {"q": "What is the vector of cutaneous leishmaniasis?", "options": ["Sandfly", "Malaria mosquito", "Tsetse fly", "Horsefly", "Louse"], "answer": 0},
-  {"q": "Which fly causes obligate myiasis?", "options": ["Wohlfahrt's fly", "Housefly", "Stable fly", "Tsetse fly", "Bluebottle fly"], "answer": 0},
-  {"q": "How does karakurt venom act?", "options": ["Neurotoxic", "Haemotoxic", "Local only", "Cardiotoxic", "Nephrotoxic"], "answer": 0},
-  {"q": "What must not be done after a snakebite?", "options": ["Apply a tourniquet", "Immobilize the limb", "Lay the patient down", "Give plenty of fluids", "Take the patient to hospital"], "answer": 0}
+  {
+   "q": "How many pairs of walking legs do arachnids have?",
+   "options": [
+    "4 pairs",
+    "3 pairs",
+    "2 pairs",
+    "5 pairs",
+    "6 pairs"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "At which stage do ticks have 3 pairs of legs?",
+   "options": [
+    "Larva",
+    "Nymph",
+    "Imago",
+    "Egg",
+    "Pupa"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "A tick without a dorsal scutum, whose mouthparts are not visible from above, belongs to which family?",
+   "options": [
+    "Argasid ticks",
+    "Ixodid ticks",
+    "Scabies mites",
+    "Demodex mites",
+    "Gamasid mites"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which disease does the taiga tick spread?",
+   "options": [
+    "Tick-borne encephalitis",
+    "Malaria",
+    "Plague",
+    "Typhus",
+    "Leishmaniasis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who developed the doctrine of the natural focality of vector-borne diseases?",
+   "options": [
+    "Ye.N. Pavlovsky",
+    "K.I. Skryabin",
+    "L.M. Isaev",
+    "I.I. Mechnikov",
+    "R. Koch"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Where does the scabies mite live as a parasite?",
+   "options": [
+    "In the stratum corneum of the skin",
+    "In the hair",
+    "In the blood",
+    "In the intestine",
+    "In the lymph nodes"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which insect develops with complete metamorphosis?",
+   "options": [
+    "Flea",
+    "Louse",
+    "Bedbug",
+    "Cockroach",
+    "Locust"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What spreads epidemic typhus?",
+   "options": [
+    "Body louse",
+    "Rat flea",
+    "Sandfly",
+    "Housefly",
+    "Ixodid tick"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does the typhus pathogen reach humans?",
+   "options": [
+    "Louse faeces rubbed into scratched skin",
+    "Louse saliva",
+    "Louse eggs",
+    "Airborne droplets",
+    "Water"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the main vector of plague?",
+   "options": [
+    "Rat flea",
+    "Body louse",
+    "Malaria mosquito",
+    "Horsefly",
+    "Bedbug"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which mosquito has a larva that lies parallel to the water surface and has no siphon?",
+   "options": [
+    "Anopheles",
+    "Culex",
+    "Aedes",
+    "Phlebotomus",
+    "Simulium"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the vector of cutaneous leishmaniasis?",
+   "options": [
+    "Sandfly",
+    "Malaria mosquito",
+    "Tsetse fly",
+    "Horsefly",
+    "Louse"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which fly causes obligate myiasis?",
+   "options": [
+    "Wohlfahrt's fly",
+    "Housefly",
+    "Stable fly",
+    "Tsetse fly",
+    "Bluebottle fly"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does karakurt venom act?",
+   "options": [
+    "Neurotoxic",
+    "Haemotoxic",
+    "Local only",
+    "Cardiotoxic",
+    "Nephrotoxic"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What must not be done after a snakebite?",
+   "options": [
+    "Apply a tourniquet",
+    "Immobilize the limb",
+    "Lay the patient down",
+    "Give plenty of fluids",
+    "Take the patient to hospital"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which ticks carry Crimean–Congo haemorrhagic fever?",
+   "options": [
+    "*Hyalomma*",
+    "*Sarcoptes*",
+    "*Demodex*",
+    "*Dermatophagoides*",
+    "*Ornithodoros*"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which insect develops by complete metamorphosis?",
+   "options": [
+    "Flea",
+    "Louse",
+    "Bed bug",
+    "Cockroach",
+    "All of them"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which disease does a “blocked” flea spread efficiently?",
+   "options": [
+    "Plague",
+    "Malaria",
+    "Leishmaniasis",
+    "Tick-borne encephalitis",
+    "Scabies"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which fly deposits live larvae in wounds and on mucous membranes, causing myiasis?",
+   "options": [
+    "Wohlfahrt's fly",
+    "House fly",
+    "Tsetse fly",
+    "Blackfly",
+    "Sandfly"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which part of the marinka fish is poisonous?",
+   "options": [
+    "Its roe and black peritoneum",
+    "Its muscles (flesh)",
+    "Its scales",
+    "Its fins",
+    "Its eyes"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "Scabies was found in most of the students sent to pick cotton.", "ask": "Explain the reasons. What measures can eliminate the disease?", "answer": "The scabies mite, *Sarcoptes scabiei*, is transmitted by direct skin contact, shared beds, bedding and clothing. Crowded living in dormitories, sleeping on shared bedding and limited opportunities to wash and change clothes caused the disease to spread quickly. Measures: treating all patients and their contacts at the same time (permethrin, benzyl benzoate), boiling or hot-ironing underwear and bedding, isolating patients, examining contacts and improving sanitary and hygienic conditions."},
-  {"title": "Case 2", "text": "A tick taken from an animal was examined under the microscope: no chitinous scutum was found on its back, and its mouthparts are not visible from above. Among other ticks, there are also specimens in which the pathogen was found even though they had not fed on blood.", "ask": "Which family does this tick belong to? How can the presence of the pathogen in ticks that have not fed be explained?", "answer": "The absence of a scutum and the position of the mouthparts on the underside of the body are typical of argasid ticks (*Argasidae*), for example the village tick — the vector of tick-borne relapsing fever. The pathogen in unfed ticks is explained by transovarial transmission: the pathogen multiplies in the mother tick and passes through the egg to the next generation, and it is also retained from larva to nymph and imago by the transstadial route. Ticks are therefore natural reservoirs of the pathogen."},
-  {"title": "Case 3", "text": "A person bitten by a snake has bleeding from the bite site, severe pain, rapidly spreading swelling and a sharp fall in blood pressure. Another patient, after a snakebite, developed difficulty breathing and swallowing, numbness of the body and difficulty moving.", "ask": "In each case, what kind of snake might be suspected?", "answer": "The first case shows the effect of a haemotoxic venom — impaired blood clotting, damage to the vessel walls and local tissue necrosis; this is seen after bites by vipers such as the Levant viper (gyurza), the saw-scaled viper or the Halys pit viper. The second case shows the effect of a neurotoxic venom — blockade of neuromuscular transmission, paralysis and respiratory failure; this is seen after a bite by the Central Asian cobra. In both cases the limb is immobilized, no tourniquet is applied, and the patient is taken urgently to hospital and given snake antivenom; in neurotoxic poisoning one must be ready for artificial ventilation."}
+  {
+   "title": "Case 1",
+   "text": "Scabies was found in most of the students sent to pick cotton.",
+   "ask": "Explain the reasons. What measures can eliminate the disease?",
+   "answer": "The scabies mite, *Sarcoptes scabiei*, is transmitted by direct skin contact, shared beds, bedding and clothing. Crowded living in dormitories, sleeping on shared bedding and limited opportunities to wash and change clothes caused the disease to spread quickly. Measures: treating all patients and their contacts at the same time (permethrin, benzyl benzoate), boiling or hot-ironing underwear and bedding, isolating patients, examining contacts and improving sanitary and hygienic conditions."
+  },
+  {
+   "title": "Case 2",
+   "text": "A tick taken from an animal was examined under the microscope: no chitinous scutum was found on its back, and its mouthparts are not visible from above. Among other ticks, there are also specimens in which the pathogen was found even though they had not fed on blood.",
+   "ask": "Which family does this tick belong to? How can the presence of the pathogen in ticks that have not fed be explained?",
+   "answer": "The absence of a scutum and the position of the mouthparts on the underside of the body are typical of argasid ticks (*Argasidae*), for example the village tick — the vector of tick-borne relapsing fever. The pathogen in unfed ticks is explained by transovarial transmission: the pathogen multiplies in the mother tick and passes through the egg to the next generation, and it is also retained from larva to nymph and imago by the transstadial route. Ticks are therefore natural reservoirs of the pathogen."
+  },
+  {
+   "title": "Case 3",
+   "text": "A person bitten by a snake has bleeding from the bite site, severe pain, rapidly spreading swelling and a sharp fall in blood pressure. Another patient, after a snakebite, developed difficulty breathing and swallowing, numbness of the body and difficulty moving.",
+   "ask": "In each case, what kind of snake might be suspected?",
+   "answer": "The first case shows the effect of a haemotoxic venom — impaired blood clotting, damage to the vessel walls and local tissue necrosis; this is seen after bites by vipers such as the Levant viper (gyurza), the saw-scaled viper or the Halys pit viper. The second case shows the effect of a neurotoxic venom — blockade of neuromuscular transmission, paralysis and respiratory failure; this is seen after a bite by the Central Asian cobra. In both cases the limb is immobilized, no tourniquet is applied, and the patient is taken urgently to hospital and given snake antivenom; in neurotoxic poisoning one must be ready for artificial ventilation."
+  },
+  {
+   "title": "Case 4",
+   "text": "A 35-year-old man who rested in a mountainous area in May presented 7 days later with high fever, headache, muscle pain, bleeding gums and pinpoint haemorrhages on the skin. He says he had contact with sheep and crushed a tick that had attached to his body with his fingers.",
+   "ask": "What disease should be considered? Which action of the patient was dangerous?",
+   "answer": "The spring–summer season, contact with livestock, a tick bite and haemorrhagic syndrome are typical of **Crimean–Congo haemorrhagic fever**; its vector is *Hyalomma* ticks, which also have natural foci in Uzbekistan. **Crushing the tick with the fingers** was dangerous: the virus can pass with the tick's haemolymph through micro-wounds in the skin. The patient is admitted at once to an infectious-diseases hospital; strict protective measures are taken because the disease can spread to medical staff through blood and secretions. Prevention: protection from ticks, correct tick removal and treating livestock with acaricides."
+  },
+  {
+   "title": "Case 5",
+   "text": "At a medical check in grade 3 of a school, small whitish “grains” — nits — and head lice were found in the hair of 6 pupils.",
+   "ask": "What measures should be taken?",
+   "answer": "This is **head pediculosis**. Measures: (1) the affected children are treated with pediculicides (permethrin shampoo or solution) and the nits are combed out with a fine comb; (2) the treatment is repeated after 7–10 days, because the drugs do not act well on nits and new larvae hatch from them; (3) all classmates and family members are examined; (4) hats, combs and pillowcases are washed or treated; (5) the children are kept away from the group until treated and are re-examined. Head lice do not carry disease, but itching and scratching lead to secondary infection."
+  },
+  {
+   "title": "Case 6",
+   "text": "In July a 25-year-old woman working in a cotton field was bitten by a black widow spider. 30 minutes later she developed severe muscle pain all over the body, board-like rigidity of the abdominal muscles, heavy sweating, fear and shortness of breath.",
+   "ask": "How does the venom act and what help is given?",
+   "answer": "Black widow (*Latrodectus*) venom is **neurotoxic**: it causes massive release of mediators (acetylcholine, noradrenaline) from nerve endings — hence severe muscle pain and rigidity, sweating, fear, tachycardia and raised blood pressure. Rigidity of the abdominal muscles resembles an “acute abdomen”, but it is not a surgical disease. Help: calm the patient, cool the bite site and transport quickly to hospital, where **black widow antivenom**, calcium preparations, analgesics and muscle relaxants are given. The bite site must not be cut or cauterised."
+  }
  ],
  "cards": [
-  {"front": "Features of arthropods", "back": "Jointed legs, chitinous skeleton, moulting, mixocoel, open circulation"},
-  {"front": "Argasid ticks", "back": "No scutum; mouthparts underneath; village tick — tick-borne relapsing fever"},
-  {"front": "Ixodid ticks", "back": "With a scutum; taiga and dog ticks — tick-borne encephalitis, Lyme borreliosis"},
-  {"front": "Transovarial transmission", "back": "Passage of the pathogen to the next generation through the tick's eggs"},
-  {"front": "Sarcoptes scabiei", "back": "Scabies; burrows in the stratum corneum; itching at night"},
-  {"front": "Body louse", "back": "Typhus (via faeces) and relapsing fever (when the louse is crushed)"},
-  {"front": "Xenopsylla cheopis", "back": "Rat flea; vector of plague"},
-  {"front": "Anopheles", "back": "Malaria mosquito; larva parallel to the water, no siphon"},
-  {"front": "Phlebotomus", "back": "Sandfly; vector of the leishmaniases"},
-  {"front": "Neurotoxic venomous animals", "back": "Karakurt, Central Asian cobra; haemotoxic — gyurza, saw-scaled viper"}
+  {
+   "front": "Features of arthropods",
+   "back": "Jointed legs, chitinous skeleton, moulting, mixocoel, open circulation"
+  },
+  {
+   "front": "Argasid ticks",
+   "back": "No scutum; mouthparts underneath; village tick — tick-borne relapsing fever"
+  },
+  {
+   "front": "Ixodid ticks",
+   "back": "With a scutum; taiga and dog ticks — tick-borne encephalitis, Lyme borreliosis"
+  },
+  {
+   "front": "Transovarial transmission",
+   "back": "Passage of the pathogen to the next generation through the tick's eggs"
+  },
+  {
+   "front": "Sarcoptes scabiei",
+   "back": "Scabies; burrows in the stratum corneum; itching at night"
+  },
+  {
+   "front": "Body louse",
+   "back": "Typhus (via faeces) and relapsing fever (when the louse is crushed)"
+  },
+  {
+   "front": "Xenopsylla cheopis",
+   "back": "Rat flea; vector of plague"
+  },
+  {
+   "front": "Anopheles",
+   "back": "Malaria mosquito; larva parallel to the water, no siphon"
+  },
+  {
+   "front": "Phlebotomus",
+   "back": "Sandfly; vector of the leishmaniases"
+  },
+  {
+   "front": "Neurotoxic venomous animals",
+   "back": "Karakurt, Central Asian cobra; haemotoxic — gyurza, saw-scaled viper"
+  },
+  {
+   "front": "Crimean–Congo fever",
+   "back": "Viral haemorrhagic fever carried by *Hyalomma* ticks; natural foci in Uzbekistan"
+  },
+  {
+   "front": "Nit",
+   "back": "Louse egg; glued to the hair with a special cement"
+  },
+  {
+   "front": "Blocked flea",
+   "back": "Flea whose proventriculus is blocked by plague bacilli — transmits plague"
+  },
+  {
+   "front": "Myiasis",
+   "back": "Infestation of human tissues by fly larvae (Wohlfahrt's fly)"
+  },
+  {
+   "front": "Marinka",
+   "back": "Central Asian fish; its roe and black peritoneum are poisonous"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "In a **specific vector** the pathogen multiplies or develops; a **mechanical carrier** only transfers it — even if it sucks blood (horsefly, stable fly)."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "**“Argasid — armourless, Ixodid — shielded”**; **“Anopheles — Angled at rest, Culex — Calmly parallel”**."},
-  {"kind": "klinik", "label": "Clinical relevance", "text": "After a snakebite **no tourniquet and no cutting**: immobilization and urgent antivenom are the main life-saving measures."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "In a **specific vector** the pathogen multiplies or develops; a **mechanical carrier** only transfers it — even if it sucks blood (horsefly, stable fly)."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "**“Argasid — armourless, Ixodid — shielded”**; **“Anopheles — Angled at rest, Culex — Calmly parallel”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical relevance",
+   "text": "After a snakebite **no tourniquet and no cutting**: immobilization and urgent antivenom are the main life-saving measures."
+  }
  ]
 }

@@ -3,142 +3,910 @@
  "no": 2,
  "title": "Ultrastructure of eukaryotic cells. Fine structure of the cell membrane and the entry of substances into the cell",
  "goals": [
-  {"type": "p", "text": "To teach the student the chemical composition of the eukaryotic cell, the ultrastructure and functions of the general and special organelles and of inclusions, the structure of the nucleus and chromosomes, the structural model of the biological membrane and the mechanisms of transport of substances across it, and the medical importance of solutions."},
-  {"type": "sub", "text": "By the end of the class the student should know:"},
-  {"type": "list", "ordered": false, "items": [
-   "the elemental and molecular composition of the cell and the role of water and organic substances;",
-   "the structure and functions of membrane-bound and non-membrane organelles;",
-   "the parts of the nucleus and the structure of chromatin and of the metaphase chromosome;",
-   "the fluid mosaic model of the membrane;",
-   "the mechanisms of passive and active transport, endocytosis and exocytosis;",
-   "the effect of hypotonic, isotonic and hypertonic solutions on the cell."
-  ]},
-  {"type": "sub", "text": "The student should be able to:"},
-  {"type": "list", "ordered": false, "items": [
-   "identify organelles on electron micrographs and diagrams;",
-   "observe and explain plasmolysis and deplasmolysis, hemolysis and crenation of erythrocytes under the microscope;",
-   "classify chromosomes by the position of the centromere."
-  ]}
+  {
+   "type": "p",
+   "text": "To teach the student the chemical composition of the eukaryotic cell, the ultrastructure and functions of the general and special organelles and of inclusions, the structure of the nucleus and chromosomes, the structural model of the biological membrane and the mechanisms of transport of substances across it, and the medical importance of solutions."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the elemental and molecular composition of the cell and the role of water and organic substances;",
+    "the structure and functions of membrane-bound and non-membrane organelles;",
+    "the parts of the nucleus and the structure of chromatin and of the metaphase chromosome;",
+    "the fluid mosaic model of the membrane;",
+    "the mechanisms of passive and active transport, endocytosis and exocytosis;",
+    "the effect of hypotonic, isotonic and hypertonic solutions on the cell."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "identify organelles on electron micrographs and diagrams;",
+    "observe and explain plasmolysis and deplasmolysis, hemolysis and crenation of erythrocytes under the microscope;",
+    "classify chromosomes by the position of the centromere."
+   ]
+  }
  ],
  "sections": [
-  {"title": "1. General structure and chemical composition of the eukaryotic cell", "blocks": [
-   {"type": "p", "text": "Eukaryotes include unicellular protozoa, fungi, plants and animals. A eukaryotic cell has three main parts: the **plasma membrane** (cell envelope), the **cytoplasm** (hyaloplasm, organelles and inclusions) and the **nucleus**. Human cells range in size from 7–8 µm (erythrocyte) to 150 µm (egg cell), and their shape depends on their function: spherical, flat, cuboidal, prismatic, stellate, with processes (neuron)."},
-   {"type": "table", "title": "Table 2.1. Elemental composition of the cell", "head": ["Group", "Elements", "Content in the cell"], "rows": [
-    ["Macroelements (organogens)", "O, C, H, N", "≈ 98 %"],
-    ["Macroelements", "P, S, K, Na, Ca, Mg, Cl, Fe", "more than 0.01 %"],
-    ["Microelements", "Zn, Cu, I, F, Mn, Co, Mo, Se", "0.001–0.000001 %"],
-    ["Ultramicroelements", "Au, Ag, Hg, U, Ra and others", "less than 0.000001 %"]
-   ]},
-   {"type": "p", "text": "**Water** makes up 70–80 % of the cell mass. It is the universal solvent, the medium and a participant of chemical reactions (hydrolysis), a regulator of heat and a means of transporting substances. **Mineral salts** in the form of ions are needed for the membrane potential (K^+^, Na^+^, Cl^−^), buffering (HPO~4~^2−^, HCO~3~^−^), blood clotting and muscle contraction (Ca^2+^)."},
-   {"type": "table", "title": "Table 2.2. Organic substances of the cell", "head": ["Substance", "Structure", "Main functions"], "rows": [
-    ["Proteins", "Biopolymers built of amino acids (20 kinds); have primary, secondary, tertiary and quaternary structure", "Enzymatic, structural, contractile, transport, protective (antibodies), regulatory (hormones), receptor"],
-    ["Carbohydrates", "Monosaccharides (glucose, ribose), disaccharides, polysaccharides (glycogen, starch, cellulose)", "Energy (1 g → 17.6 kJ), storage, structural, part of the glycocalyx"],
-    ["Lipids", "Fats, phospholipids, steroids (cholesterol), waxes", "Energy (1 g → 38.9 kJ), basis of membranes, hormones, heat insulation"],
-    ["Nucleic acids", "DNA and RNA built of nucleotides", "Storing, transmitting and expressing hereditary information"],
-    ["ATP", "Adenine + ribose + 3 phosphate residues", "Universal energy source of the cell"]
-   ]},
-   {"type": "p", "text": "Proteins are **simple** (made only of amino acids: albumins, globulins) and **complex** (protein + non-protein part: glycoproteins, lipoproteins, nucleoproteins, chromoproteins such as hemoglobin). Disruption of the natural structure of a protein is called **denaturation**."}
-  ]},
-  {"title": "2. The plasma membrane: structure and functions", "blocks": [
-   {"type": "p", "text": "The cell envelope consists of the **plasmalemma** (the main part) and the **glycocalyx** on its outer surface (carbohydrate chains of glycoproteins and glycolipids). In plant cells there is a cellulose cell wall outside the plasmalemma."},
-   {"type": "p", "text": "In the electron microscope the membrane appears as a three-layered (dark–light–dark) structure 7.5–10 nm thick and is called the **universal elementary biological membrane**. According to the modern **fluid mosaic model** (S. Singer and G. Nicolson, 1972), the basis of the membrane is a **phospholipid bilayer**: the hydrophilic “heads” face outward and the hydrophobic “tails” face inward. **Integral** (fully embedded, spanning the membrane), **semi-integral** and **peripheral** (lying on the surface) proteins are arranged in the lipid layer like a mosaic and can move laterally (Figure 2.1). Cholesterol regulates the fluidity of the membrane."},
-   {"type": "img", "src": "data/img/bio/t02_membrana.webp", "w": 1016, "h": 584, "lang": true, "label": "Figure 2.1", "caption": "Structure of the plasma membrane (fluid mosaic model): phospholipid bilayer, integral and peripheral proteins, cholesterol, carbohydrate chains of glycoproteins (glycocalyx) and cytoskeletal filaments (P.Kh. Kholikov et al., 2022)."},
-   {"type": "h", "text": "Main functions of the plasmalemma"},
-   {"type": "list", "ordered": false, "items": [
-    "**Barrier** — separates the internal environment of the cell from the external one;",
-    "**Transport** — passes substances selectively;",
-    "**Receptor** — recognizes hormones, mediators and antigens (glycocalyx);",
-    "**Intercellular communication** — forms contacts (desmosomes, tight and gap junctions);",
-    "**Enzymatic** — membrane-bound enzymes (for example, in the intestinal epithelium);",
-    "**Electrogenic** — creates the membrane potential and conducts the nerve impulse."
-   ]}
-  ]},
-  {"title": "3. Transport of substances across the membrane", "blocks": [
-   {"type": "table", "title": "Table 2.3. Types of membrane transport", "head": ["Type", "Mechanism", "Energy", "Example"], "rows": [
-    ["Simple diffusion", "Through the lipid layer down the concentration gradient", "Not used", "O~2~, CO~2~, steroids, alcohol"],
-    ["Osmosis", "Movement of water across a semipermeable membrane from a less concentrated solution to a more concentrated one", "Not used", "Water (also through aquaporins)"],
-    ["Facilitated diffusion", "Through carrier proteins or ion channels, down the gradient", "Not used", "Glucose (GLUT), ions"],
-    ["Primary active transport", "Against the gradient, by pump proteins", "ATP used", "Na^+^/K^+^ pump, Ca^2+^ pump"],
-    ["Secondary active transport", "Using the energy of the Na^+^ gradient (symport, antiport)", "ATP indirectly", "Absorption of glucose and amino acids in the intestine"],
-    ["Endocytosis", "The membrane invaginates and forms a vesicle", "ATP used", "Phagocytosis (solid particles), pinocytosis (fluid), receptor-mediated endocytosis (LDL)"],
-    ["Exocytosis", "The vesicle membrane fuses with the plasmalemma and releases its contents outside", "ATP used", "Secretion of hormones, enzymes, mediators"]
-   ]},
-   {"type": "p", "text": "The **sodium-potassium pump** (Na^+^/K^+^-ATPase) removes 3 Na^+^ ions from the cell and brings 2 K^+^ ions into it for each ATP molecule (Figure 2.2). As a result there is much K^+^ inside the cell and much Na^+^ outside; this is the basis of the **resting membrane potential**, of maintaining cell volume and of secondary active transport. Up to one third of the energy used by the body goes into the work of this pump."},
-   {"type": "img", "src": "data/img/bio/t02_nasos.webp", "w": 469, "h": 533, "lang": true, "label": "Figure 2.2", "caption": "Active transport: the sodium-potassium pump. Using the energy of ATP, Na^+^ ions are pumped out of the cell and K^+^ ions into the cell (P.Kh. Kholikov et al., 2022)."},
-   {"type": "h", "text": "Solutions and the cell"},
-   {"type": "table", "title": "Table 2.4. Effect of solutions on erythrocytes", "head": ["Solution", "Concentration (NaCl)", "Movement of water", "Result"], "rows": [
-    ["Isotonic (physiological)", "0.9 %", "In balance", "The erythrocyte keeps its shape"],
-    ["Hypotonic", "less than 0.9 %", "Enters the cell", "Swelling and bursting — **hemolysis**"],
-    ["Hypertonic", "more than 0.9 %", "Leaves the cell", "Shrinking — **plasmolysis** (in erythrocytes — crenation)"]
-   ]},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Solutions given intravenously are mainly **isotonic** (0.9 % NaCl, 5 % glucose). **Hypertonic** solutions (10 % NaCl) are used to clean purulent wounds (they draw water from the wound) and magnesium sulfate as a laxative, while **hypotonic** solutions are used with caution in some states of dehydration."}]}
-  ]},
-  {"title": "4. Cytoplasm and membrane-bound organelles", "blocks": [
-   {"type": "p", "text": "The **cytoplasm** is the part of the cell between the plasmalemma and the nucleus. It consists of the **hyaloplasm** (cytosol — a colloidal solution rich in proteins, enzymes and ions), **organelles** (permanent structures with a definite function) and **inclusions** (temporary structures). Organelles are **general** (in all cells) and **special** (in some specialized cells); general organelles are in turn divided into membrane-bound and non-membrane groups."},
-   {"type": "table", "title": "Table 2.5. Membrane-bound organelles", "head": ["Organelle", "Ultrastructure", "Function"], "rows": [
-    ["Rough (granular) ER", "Flat cisternae with ribosomes on the outer surface", "Synthesis of export and membrane proteins"],
-    ["Smooth (agranular) ER", "Network of tubules without ribosomes", "Synthesis of lipids and steroid hormones, glycogen metabolism, detoxification (liver), Ca^2+^ storage (muscle)"],
-    ["Golgi complex", "Stack of flat cisternae (dictyosome) and vesicles; cis and trans faces", "Modification and sorting of proteins, formation of secretory granules and lysosomes"],
-    ["Lysosomes", "Single-membrane vesicle, more than 50 hydrolytic enzymes, acidic medium", "Intracellular digestion, autophagy"],
-    ["Peroxisomes", "Single-membrane, catalase and oxidases", "Breaking down hydrogen peroxide, oxidizing fatty acids"],
-    ["Mitochondria", "Two membranes; folds of the inner membrane — cristae; circular DNA and 70S ribosomes in the matrix", "The “power station” of the cell: Krebs cycle, oxidative phosphorylation, ATP synthesis"],
-    ["Plastids (in plants)", "Two membranes; thylakoids and grana in the chloroplast", "Photosynthesis (chloroplast), starch storage (leucoplast), coloring (chromoplast)"],
-    ["Vacuoles", "A cavity surrounded by the tonoplast", "Cell sap and turgor in plants; digestive and contractile vacuoles in protozoa"]
-   ]},
-   {"type": "img", "src": "data/img/bio/t02_mitoxondriya.webp", "w": 983, "h": 775, "lang": true, "label": "Figure 2.3", "caption": "Structure of the mitochondrion: electron micrograph (top) and diagram — outer and inner membranes, cristae, matrix and intermembrane space (P.Kh. Kholikov et al., 2022)."},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In hereditary deficiency of lysosomal enzymes, undigested substances accumulate in lysosomes — **lysosomal storage diseases** (Gaucher, Tay-Sachs, glycogenosis type II). Mitochondria are passed on only through the mother, so mutations of mitochondrial DNA are inherited only from the mother."}]}
-  ]},
-  {"title": "5. Non-membrane organelles, special organelles and inclusions", "blocks": [
-   {"type": "table", "title": "Table 2.6. Non-membrane organelles", "head": ["Organelle", "Structure", "Function"], "rows": [
-    ["Ribosomes", "Large and small subunits (rRNA + protein); 80S in eukaryotes (60S + 40S); free or attached to the ER, polyribosomes", "Protein biosynthesis (translation)"],
-    ["Cell center (centrosome)", "Two centrioles; each made of 9 triplets of microtubules (9 × 3 + 0)", "Organizes the mitotic spindle; basal body of cilia and flagella"],
-    ["Microtubules", "Made of the protein tubulin, 24 nm in diameter", "Cytoskeleton, spindle, movement of organelles"],
-    ["Microfilaments", "Actin filaments, 6–8 nm in diameter", "Cell shape, amoeboid movement, cytokinesis"],
-    ["Intermediate filaments", "10 nm in diameter (keratin, vimentin, desmin, neurofilaments)", "Mechanical strength; markers for determining the origin of tumors"]
-   ]},
-   {"type": "p", "text": "**Special organelles:** cilia and flagella (axoneme — 9 peripheral pairs + 2 central microtubules, “9 + 2”), myofibrils (contraction in muscle cells), neurofibrils (in neurons), tonofibrils (in epithelium), microvilli (increase the absorptive surface of the intestinal epithelium)."},
-   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In a hereditary defect of the ciliary protein dynein (**Kartagener syndrome**) clearance of the airways is impaired (chronic bronchitis, sinusitis), spermatozoa are immotile (infertility), and reversed position of the organs is often seen."}]},
-   {"type": "p", "text": "**Inclusions** are structures that appear and disappear as a result of cell activity: **trophic** (glycogen, fat droplets, protein granules), **secretory** (secretory granules), **excretory** (substances to be removed), **pigment** (melanin, hemoglobin, lipofuscin — the “aging pigment”)."}
-  ]},
-  {"title": "6. The nucleus and chromosomes", "blocks": [
-   {"type": "p", "text": "The **nucleus** is the center that stores hereditary information and controls the activity of the cell. The interphase nucleus consists of (Figure 2.4): the **nuclear envelope** (karyolemma — two membranes, the perinuclear space and **nuclear pores**; the outer membrane continues into the ER), the **karyoplasm** (nuclear sap), **chromatin** and the **nucleolus** (where rRNA is synthesized and ribosomal subunits are assembled). Cells without a nucleus (mature erythrocytes) do not divide and do not live long."},
-   {"type": "img", "src": "data/img/bio/t02_yadro.webp", "w": 1034, "h": 567, "lang": true, "label": "Figure 2.4", "caption": "Structure of the nucleus: nuclear envelope and pores, chromatin, nucleolus, rough endoplasmic reticulum with ribosomes (P.Kh. Kholikov et al., 2022)."},
-   {"type": "p", "text": "**Chromatin** is a complex of DNA and histone proteins. Its densely staining, inactive part is called **heterochromatin**, and its lightly staining, active (transcribed) part — **euchromatin**. DNA winds around histones to form **nucleosomes** and then coils step by step, turning into compact **chromosomes** during mitosis."},
-   {"type": "p", "text": "A **metaphase chromosome** consists of two **chromatids** joined at the primary constriction — the **centromere**. The centromere divides the chromosome into two **arms**; the ends of the arms are **telomeres**. Some chromosomes have a secondary constriction and a **satellite**."},
-   {"type": "table", "title": "Table 2.7. Types of chromosomes by the position of the centromere", "head": ["Type", "Position of the centromere", "Examples in humans"], "rows": [
-    ["Metacentric", "In the middle, arms equal", "Pairs 1, 3, 16, 19, 20"],
-    ["Submetacentric", "Shifted from the middle, arms unequal", "Pairs 2, 4–12, 17, 18, X"],
-    ["Acrocentric", "Near one end, one arm very short", "Pairs 13–15, 21, 22, Y"],
-    ["Telocentric", "At the very end (not found normally in humans)", "—"]
-   ]},
-   {"type": "h", "text": "Rules of chromosomes"},
-   {"type": "list", "ordered": true, "items": [
-    "**Constancy of number** — the number of chromosomes in the somatic cells of each species is constant (2n = 46 in humans).",
-    "**Pairing** — in somatic cells chromosomes form homologous pairs (23 pairs in humans).",
-    "**Individuality** — each pair differs from the others in size, shape and gene content.",
-    "**Continuity** — each chromosome arises only from a chromosome by replication."
-   ]},
-   {"type": "table", "title": "Table 2.8. Differences between plant and animal cells", "head": ["Feature", "Plant cell", "Animal cell"], "rows": [
-    ["Cell wall", "Cellulose", "Absent (only glycocalyx)"],
-    ["Plastids", "Present", "Absent"],
-    ["Vacuole", "Large central vacuole", "Small, temporary vacuoles"],
-    ["Centrioles", "Absent in higher plants", "Present"],
-    ["Storage carbohydrate", "Starch", "Glycogen"],
-    ["Nutrition", "Autotrophic", "Heterotrophic"]
-   ]}
-  ]}
+  {
+   "title": "1. General structure and chemical composition of the eukaryotic cell",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Eukaryotes include unicellular protozoa, fungi, plants and animals. A eukaryotic cell has three main parts: the **plasma membrane** (cell envelope), the **cytoplasm** (hyaloplasm, organelles and inclusions) and the **nucleus**. Human cells range in size from 7–8 µm (erythrocyte) to 150 µm (egg cell), and their shape depends on their function: spherical, flat, cuboidal, prismatic, stellate, with processes (neuron)."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.1. Elemental composition of the cell",
+     "head": [
+      "Group",
+      "Elements",
+      "Content in the cell"
+     ],
+     "rows": [
+      [
+       "Macroelements (organogens)",
+       "O, C, H, N",
+       "≈ 98 %"
+      ],
+      [
+       "Macroelements",
+       "P, S, K, Na, Ca, Mg, Cl, Fe",
+       "more than 0.01 %"
+      ],
+      [
+       "Microelements",
+       "Zn, Cu, I, F, Mn, Co, Mo, Se",
+       "0.001–0.000001 %"
+      ],
+      [
+       "Ultramicroelements",
+       "Au, Ag, Hg, U, Ra and others",
+       "less than 0.000001 %"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Water** makes up 70–80 % of the cell mass. It is the universal solvent, the medium and a participant of chemical reactions (hydrolysis), a regulator of heat and a means of transporting substances. **Mineral salts** in the form of ions are needed for the membrane potential (K^+^, Na^+^, Cl^−^), buffering (HPO~4~^2−^, HCO~3~^−^), blood clotting and muscle contraction (Ca^2+^)."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.2. Organic substances of the cell",
+     "head": [
+      "Substance",
+      "Structure",
+      "Main functions"
+     ],
+     "rows": [
+      [
+       "Proteins",
+       "Biopolymers built of amino acids (20 kinds); have primary, secondary, tertiary and quaternary structure",
+       "Enzymatic, structural, contractile, transport, protective (antibodies), regulatory (hormones), receptor"
+      ],
+      [
+       "Carbohydrates",
+       "Monosaccharides (glucose, ribose), disaccharides, polysaccharides (glycogen, starch, cellulose)",
+       "Energy (1 g → 17.6 kJ), storage, structural, part of the glycocalyx"
+      ],
+      [
+       "Lipids",
+       "Fats, phospholipids, steroids (cholesterol), waxes",
+       "Energy (1 g → 38.9 kJ), basis of membranes, hormones, heat insulation"
+      ],
+      [
+       "Nucleic acids",
+       "DNA and RNA built of nucleotides",
+       "Storing, transmitting and expressing hereditary information"
+      ],
+      [
+       "ATP",
+       "Adenine + ribose + 3 phosphate residues",
+       "Universal energy source of the cell"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Proteins are **simple** (made only of amino acids: albumins, globulins) and **complex** (protein + non-protein part: glycoproteins, lipoproteins, nucleoproteins, chromoproteins such as hemoglobin). Disruption of the natural structure of a protein is called **denaturation**."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.3. Levels of protein structure",
+     "head": [
+      "Level",
+      "Essence",
+      "Bonds"
+     ],
+     "rows": [
+      [
+       "Primary",
+       "Sequence of amino acids in the polypeptide chain; determined by the gene",
+       "Peptide (covalent)"
+      ],
+      [
+       "Secondary",
+       "Folding of the chain into an α-helix or β-sheet",
+       "Hydrogen"
+      ],
+      [
+       "Tertiary",
+       "Arrangement of the helix in space as a globule; the activity of the protein depends on it",
+       "Disulfide, ionic, hydrophobic, hydrogen"
+      ],
+      [
+       "Quaternary",
+       "Union of several polypeptide chains (subunits), for example haemoglobin — 2α + 2β",
+       "Non-covalent bonds"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 2.4. Main functions of proteins",
+     "head": [
+      "Function",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Enzymatic (catalytic)",
+       "Amylase, pepsin, DNA polymerase"
+      ],
+      [
+       "Structural",
+       "Collagen, keratin, elastin, membrane proteins"
+      ],
+      [
+       "Transport",
+       "Haemoglobin (O~2~), albumin (fatty acids), transferrin (iron)"
+      ],
+      [
+       "Contractile (motor)",
+       "Actin, myosin, dynein, tubulin"
+      ],
+      [
+       "Protective",
+       "Immunoglobulins (antibodies), fibrinogen, interferon"
+      ],
+      [
+       "Regulatory (hormonal)",
+       "Insulin, glucagon, growth hormone"
+      ],
+      [
+       "Receptor (signalling)",
+       "Rhodopsin, insulin receptor, hormone receptors"
+      ],
+      [
+       "Storage and energy",
+       "Casein, egg albumin; 1 g of protein → 17,6 kJ"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Enzymes** are biological catalysts; they speed up a reaction by lowering its activation energy and are not used up themselves. An enzyme binds its substrate through the **active site** with high specificity according to the “lock and key” principle. Enzyme activity depends on temperature (optimum in humans ≈ 37 °C), pH (pepsin — pH 1,5–2, trypsin — pH 8) and inhibitors. Many enzymes need **cofactors** — metal ions or **coenzymes** formed from vitamins."
+    },
+    {
+     "type": "p",
+     "text": "**ATP (adenosine triphosphate)** is the universal energy “currency” of the cell. When its **high-energy (macroergic) bonds** between phosphate residues are hydrolysed in the reaction ATP → ADP + P~i~, ≈ 40 kJ/mol of energy is released. ATP is formed mainly by oxidative phosphorylation in mitochondria and partly in glycolysis; it is used for biosynthesis, active transport, muscle contraction and conduction of nerve impulses."
+    }
+   ]
+  },
+  {
+   "title": "2. The plasma membrane: structure and functions",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The cell envelope consists of the **plasmalemma** (the main part) and the **glycocalyx** on its outer surface (carbohydrate chains of glycoproteins and glycolipids). In plant cells there is a cellulose cell wall outside the plasmalemma."
+    },
+    {
+     "type": "p",
+     "text": "In the electron microscope the membrane appears as a three-layered (dark–light–dark) structure 7.5–10 nm thick and is called the **universal elementary biological membrane**. According to the modern **fluid mosaic model** (S. Singer and G. Nicolson, 1972), the basis of the membrane is a **phospholipid bilayer**: the hydrophilic “heads” face outward and the hydrophobic “tails” face inward. **Integral** (fully embedded, spanning the membrane), **semi-integral** and **peripheral** (lying on the surface) proteins are arranged in the lipid layer like a mosaic and can move laterally (Figure 2.1). Cholesterol regulates the fluidity of the membrane."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_membrana.webp",
+     "w": 1016,
+     "h": 584,
+     "lang": true,
+     "label": "Figure 2.1",
+     "caption": "Structure of the plasma membrane (fluid mosaic model): phospholipid bilayer, integral and peripheral proteins, cholesterol, carbohydrate chains of glycoproteins (glycocalyx) and cytoskeletal filaments (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "h",
+     "text": "Main functions of the plasmalemma"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Barrier** — separates the internal environment of the cell from the external one;",
+      "**Transport** — passes substances selectively;",
+      "**Receptor** — recognizes hormones, mediators and antigens (glycocalyx);",
+      "**Intercellular communication** — forms contacts (desmosomes, tight and gap junctions);",
+      "**Enzymatic** — membrane-bound enzymes (for example, in the intestinal epithelium);",
+      "**Electrogenic** — creates the membrane potential and conducts the nerve impulse."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Intercellular junctions"
+    },
+    {
+     "type": "p",
+     "text": "In multicellular organisms cells are joined by special junctions and form tissues. The free surface of epithelial cells carries **microvilli** (which increase the absorptive surface) and **cilia**, while the lateral surfaces carry the following junctions:"
+    },
+    {
+     "type": "table",
+     "title": "Table 2.5. Types of intercellular junctions",
+     "head": [
+      "Junction",
+      "Structure",
+      "Function and location"
+     ],
+     "rows": [
+      [
+       "Tight junction",
+       "The outer layers of neighbouring membranes are “stitched” together",
+       "Blocks passage of substances between cells (intestinal epithelium, blood–brain barrier)"
+      ],
+      [
+       "Desmosome",
+       "Dense plaques under the membrane with intermediate (keratin) filaments attached",
+       "Mechanical strength (epidermis, heart muscle)"
+      ],
+      [
+       "Hemidesmosome",
+       "Half of a desmosome; attaches the cell to the basement membrane",
+       "Anchoring the epithelium to the underlying tissue"
+      ],
+      [
+       "Gap junction (nexus)",
+       "Channels (connexons) made of connexin proteins",
+       "Ions and small molecules pass and link cells electrically (myocardium, smooth muscle)"
+      ],
+      [
+       "Interdigitation",
+       "Interlocking of processes of neighbouring cells",
+       "Increases the contact surface (kidney tubules)"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "When autoantibodies against desmosome proteins form, epidermal cells separate from each other and blisters appear on the skin (**pemphigus vulgaris**). Loss of intercellular junctions helps tumour cells to detach and spread to other organs (**metastasis**)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Transport of substances across the membrane",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Table 2.6. Types of membrane transport",
+     "head": [
+      "Type",
+      "Mechanism",
+      "Energy",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Simple diffusion",
+       "Through the lipid layer down the concentration gradient",
+       "Not used",
+       "O~2~, CO~2~, steroids, alcohol"
+      ],
+      [
+       "Osmosis",
+       "Movement of water across a semipermeable membrane from a less concentrated solution to a more concentrated one",
+       "Not used",
+       "Water (also through aquaporins)"
+      ],
+      [
+       "Facilitated diffusion",
+       "Through carrier proteins or ion channels, down the gradient",
+       "Not used",
+       "Glucose (GLUT), ions"
+      ],
+      [
+       "Primary active transport",
+       "Against the gradient, by pump proteins",
+       "ATP used",
+       "Na^+^/K^+^ pump, Ca^2+^ pump"
+      ],
+      [
+       "Secondary active transport",
+       "Using the energy of the Na^+^ gradient (symport, antiport)",
+       "ATP indirectly",
+       "Absorption of glucose and amino acids in the intestine"
+      ],
+      [
+       "Endocytosis",
+       "The membrane invaginates and forms a vesicle",
+       "ATP used",
+       "Phagocytosis (solid particles), pinocytosis (fluid), receptor-mediated endocytosis (LDL)"
+      ],
+      [
+       "Exocytosis",
+       "The vesicle membrane fuses with the plasmalemma and releases its contents outside",
+       "ATP used",
+       "Secretion of hormones, enzymes, mediators"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The **sodium-potassium pump** (Na^+^/K^+^-ATPase) removes 3 Na^+^ ions from the cell and brings 2 K^+^ ions into it for each ATP molecule (Figure 2.2). As a result there is much K^+^ inside the cell and much Na^+^ outside; this is the basis of the **resting membrane potential**, of maintaining cell volume and of secondary active transport. Up to one third of the energy used by the body goes into the work of this pump."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_nasos.webp",
+     "w": 469,
+     "h": 533,
+     "lang": true,
+     "label": "Figure 2.2",
+     "caption": "Active transport: the sodium-potassium pump. Using the energy of ATP, Na^+^ ions are pumped out of the cell and K^+^ ions into the cell (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Ion channels** are pores formed by transmembrane proteins that selectively let certain ions through. They are **voltage-gated** (Na^+^, K^+^, Ca^2+^ channels in nerve and muscle cells) or **ligand-gated** (opening when a mediator binds — the acetylcholine receptor). Water molecules pass slowly through the lipid layer; most water passes quickly through special protein channels — **aquaporins** (in the kidney tubules under the action of antidiuretic hormone)."
+    },
+    {
+     "type": "p",
+     "text": "Because of the Na^+^/K^+^ pump and channels, the inside of the cell is negatively charged relative to the outside — the **resting membrane potential** (≈ −70 mV in neurons) is formed. This potential underlies the nerve impulse, muscle contraction and secondary active transport (absorption of glucose and amino acids together with Na^+^ by **symport**)."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Cardiac glycosides (digoxin) partly block the Na^+^/K^+^ pump: Na^+^ and, through it, Ca^2+^ rise in myocardial cells and the heart contracts more strongly; an overdose causes arrhythmia. A mutation of the gene for the chloride channel protein (CFTR) thickens the secretions of glands — **cystic fibrosis**."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Solutions and the cell"
+    },
+    {
+     "type": "table",
+     "title": "Table 2.7. Effect of solutions on erythrocytes",
+     "head": [
+      "Solution",
+      "Concentration (NaCl)",
+      "Movement of water",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Isotonic (physiological)",
+       "0.9 %",
+       "In balance",
+       "The erythrocyte keeps its shape"
+      ],
+      [
+       "Hypotonic",
+       "less than 0.9 %",
+       "Enters the cell",
+       "Swelling and bursting — **hemolysis**"
+      ],
+      [
+       "Hypertonic",
+       "more than 0.9 %",
+       "Leaves the cell",
+       "Shrinking — **plasmolysis** (in erythrocytes — crenation)"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Solutions given intravenously are mainly **isotonic** (0.9 % NaCl, 5 % glucose). **Hypertonic** solutions (10 % NaCl) are used to clean purulent wounds (they draw water from the wound) and magnesium sulfate as a laxative, while **hypotonic** solutions are used with caution in some states of dehydration."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Types of endocytosis"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Phagocytosis** (“cell eating”) — large particles (bacteria, cell debris) are engulfed by pseudopodia and a phagosome forms; typical of neutrophils and macrophages (I.I. Mechnikov, 1882).",
+      "**Pinocytosis** (“cell drinking”) — fluid and dissolved substances are taken up in small vesicles.",
+      "**Receptor-mediated endocytosis** — the substance binds to a specific membrane receptor, then a pit and vesicle coated with the protein **clathrin** form (for example, uptake of low-density lipoproteins — cholesterol, and of transferrin — iron).",
+      "**Transcytosis** — a substance is taken up on one side of the cell and released on the other (capillary endothelium, passage of maternal antibodies across the placenta)."
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In a hereditary defect of the low-density lipoprotein (LDL) receptor gene, cholesterol is not taken up by cells and accumulates in the blood — **familial hypercholesterolaemia** (autosomal dominant): atherosclerosis and myocardial infarction develop at a young age."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Cytoplasm and membrane-bound organelles",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **cytoplasm** is the part of the cell between the plasmalemma and the nucleus. It consists of the **hyaloplasm** (cytosol — a colloidal solution rich in proteins, enzymes and ions), **organelles** (permanent structures with a definite function) and **inclusions** (temporary structures). Organelles are **general** (in all cells) and **special** (in some specialized cells); general organelles are in turn divided into membrane-bound and non-membrane groups."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.8. Membrane-bound organelles",
+     "head": [
+      "Organelle",
+      "Ultrastructure",
+      "Function"
+     ],
+     "rows": [
+      [
+       "Rough (granular) ER",
+       "Flat cisternae with ribosomes on the outer surface",
+       "Synthesis of export and membrane proteins"
+      ],
+      [
+       "Smooth (agranular) ER",
+       "Network of tubules without ribosomes",
+       "Synthesis of lipids and steroid hormones, glycogen metabolism, detoxification (liver), Ca^2+^ storage (muscle)"
+      ],
+      [
+       "Golgi complex",
+       "Stack of flat cisternae (dictyosome) and vesicles; cis and trans faces",
+       "Modification and sorting of proteins, formation of secretory granules and lysosomes"
+      ],
+      [
+       "Lysosomes",
+       "Single-membrane vesicle, more than 50 hydrolytic enzymes, acidic medium",
+       "Intracellular digestion, autophagy"
+      ],
+      [
+       "Peroxisomes",
+       "Single-membrane, catalase and oxidases",
+       "Breaking down hydrogen peroxide, oxidizing fatty acids"
+      ],
+      [
+       "Mitochondria",
+       "Two membranes; folds of the inner membrane — cristae; circular DNA and 70S ribosomes in the matrix",
+       "The “power station” of the cell: Krebs cycle, oxidative phosphorylation, ATP synthesis"
+      ],
+      [
+       "Plastids (in plants)",
+       "Two membranes; thylakoids and grana in the chloroplast",
+       "Photosynthesis (chloroplast), starch storage (leucoplast), coloring (chromoplast)"
+      ],
+      [
+       "Vacuoles",
+       "A cavity surrounded by the tonoplast",
+       "Cell sap and turgor in plants; digestive and contractile vacuoles in protozoa"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_ept.webp",
+     "label": "Figure 2.3",
+     "caption": "Endoplasmic reticulum: rough (ribosome-studded) and smooth ER connected with the nuclear envelope (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_golji.webp",
+     "label": "Figure 2.4",
+     "caption": "The Golgi complex and lysosome formation: primary lysosomes budding from the Golgi cisternae and secondary lysosomes with digestive activity (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "h",
+     "text": "The path of a secretory protein in the cell"
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Protein synthesis begins on a free ribosome; a signal sequence attaches the ribosome to the membrane of the **rough ER**.",
+      "The polypeptide passes into the ER lumen, where it folds and glycosylation begins.",
+      "Transport vesicles carry the protein to the **cis face of the Golgi complex**.",
+      "In the Golgi cisternae the protein is modified (its carbohydrate part is completed, it is phosphorylated) and sorted.",
+      "Secretory granules, lysosomes or membrane vesicles bud off from the **trans face**.",
+      "The secretory granule fuses with the plasmalemma and releases its product by **exocytosis** (for example, insulin and enzymes in the pancreas)."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Types of lysosomes"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Primary lysosomes** — newly budded vesicles from the Golgi complex with inactive enzymes.",
+      "**Secondary lysosomes (phagolysosomes)** — formed by fusion of a primary lysosome with a phagosome or pinocytic vesicle; digestion takes place here.",
+      "**Autophagosomes** — digest the cell's own worn-out organelles (autophagy).",
+      "**Residual bodies** — vesicles holding undigested remnants; lipofuscin (“ageing pigment”) accumulates in them."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "If the lysosome membrane ruptures, the enzymes leak into the cytoplasm and digest the cell itself (**autolysis**); this is why lysosomes are also called the “suicide bags of the cell”. **Peroxisomes** use the enzyme catalase to break toxic hydrogen peroxide (H~2~O~2~) down into water and oxygen and oxidise very-long-chain fatty acids; they are especially numerous in liver and kidney cells."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_mitoxondriya.webp",
+     "w": 983,
+     "h": 775,
+     "lang": true,
+     "label": "Figure 2.5",
+     "caption": "Structure of the mitochondrion: electron micrograph (top) and diagram — outer and inner membranes, cristae, matrix and intermembrane space (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The **mitochondrion** is a double-membrane organelle; its outer membrane is smooth, and the inner membrane forms **cristae**. The cristae carry the respiratory-chain enzymes and the **ATP synthase** complex (“mushroom-shaped” bodies). The inner space — the **matrix** — contains the Krebs-cycle enzymes, circular mitochondrial DNA (37 genes in humans) and 70S ribosomes. Cells with high energy needs (cardiomyocytes, the midpiece of the sperm, kidney tubule epithelium) have many mitochondria with dense cristae."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.9. Diseases linked to organelle dysfunction",
+     "head": [
+      "Organelle",
+      "Disease",
+      "Essence"
+     ],
+     "rows": [
+      [
+       "Lysosome",
+       "Tay–Sachs disease",
+       "Hexosaminidase A deficiency; GM~2~ ganglioside accumulates in neurons, blindness, paralysis, death at 3–5 years"
+      ],
+      [
+       "Lysosome",
+       "Gaucher disease",
+       "Glucocerebrosidase deficiency; enlarged liver and spleen, bone damage"
+      ],
+      [
+       "Lysosome",
+       "Pompe disease (glycogenosis type II)",
+       "Acid maltase deficiency; glycogen accumulates in muscle and heart"
+      ],
+      [
+       "Lysosome",
+       "Mucopolysaccharidoses (Hurler syndrome)",
+       "Glycosaminoglycans accumulate; changed facial bones, intellectual disability"
+      ],
+      [
+       "Peroxisome",
+       "Zellweger syndrome",
+       "Peroxisomes do not form; severe damage to brain, liver and kidneys"
+      ],
+      [
+       "Mitochondrion",
+       "Leber hereditary optic neuropathy, MELAS syndrome",
+       "mtDNA mutation; ATP shortage — eye, brain and muscles are affected; transmitted only from the mother"
+      ],
+      [
+       "Cilia",
+       "Kartagener syndrome",
+       "Absence of dynein; chronic bronchitis, infertility, reversed position of organs"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In hereditary deficiency of lysosomal enzymes, undigested substances accumulate in lysosomes — **lysosomal storage diseases** (Gaucher, Tay-Sachs, glycogenosis type II). Mitochondria are passed on only through the mother, so mutations of mitochondrial DNA are inherited only from the mother."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "5. Non-membrane organelles, special organelles and inclusions",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Table 2.10. Non-membrane organelles",
+     "head": [
+      "Organelle",
+      "Structure",
+      "Function"
+     ],
+     "rows": [
+      [
+       "Ribosomes",
+       "Large and small subunits (rRNA + protein); 80S in eukaryotes (60S + 40S); free or attached to the ER, polyribosomes",
+       "Protein biosynthesis (translation)"
+      ],
+      [
+       "Cell center (centrosome)",
+       "Two centrioles; each made of 9 triplets of microtubules (9 × 3 + 0)",
+       "Organizes the mitotic spindle; basal body of cilia and flagella"
+      ],
+      [
+       "Microtubules",
+       "Made of the protein tubulin, 24 nm in diameter",
+       "Cytoskeleton, spindle, movement of organelles"
+      ],
+      [
+       "Microfilaments",
+       "Actin filaments, 6–8 nm in diameter",
+       "Cell shape, amoeboid movement, cytokinesis"
+      ],
+      [
+       "Intermediate filaments",
+       "10 nm in diameter (keratin, vimentin, desmin, neurofilaments)",
+       "Mechanical strength; markers for determining the origin of tumors"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_ribosoma.webp",
+     "label": "Figure 2.6",
+     "caption": "Structure of the ribosome: the large and small subunits and their union into a complete ribosome (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "Ribosomal subunits are assembled from rRNA and proteins in the **nucleolus** and leave for the cytoplasm through the nuclear pores. They join only during protein synthesis; several ribosomes attached to one mRNA are called a **polyribosome (polysome)**. **Free ribosomes** make proteins for the cell itself (hyaloplasm proteins), while **ribosomes bound to the ER** make export, membrane and lysosomal proteins. Because the 70S ribosomes of bacteria differ from the 80S ribosomes of eukaryotes, many antibiotics (tetracycline, erythromycin, streptomycin) stop only bacterial protein synthesis."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_sentrosoma.webp",
+     "label": "Figure 2.7",
+     "caption": "The cell centre (centrosome): two centrioles, their structure of microtubules (9 triplets) and a cross-section on an electron micrograph (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "The **cytoskeleton** is a network of protein filaments in the cytoplasm; it keeps the shape of the cell, positions organelles and provides movement of the cell and within it. **Microtubules** are built of tubulin dimers and grow from the centrosome; the “motor” proteins **kinesin** and **dynein** carry vesicles along them (for example, in the axon of a neuron). **Microfilaments** (actin) together with myosin form cell contraction, the support of microvilli and the contractile ring in cytokinesis. **Intermediate filaments** are the strongest filaments, and each tissue has its own protein: keratin in epithelium, vimentin in connective tissue, desmin in muscle, neurofilaments in neurons and lamins under the nucleus."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Colchicine** stops tubulin polymerisation and destroys the spindle — mitosis is arrested in metaphase; that is why it is used in karyotyping to “freeze” chromosomes in metaphase. **Vincristine, vinblastine** (which destroy the spindle) and **paclitaxel** (which over-stabilises microtubules) work on the same principle and are used as anticancer drugs."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Special organelles:** cilia and flagella (axoneme — 9 peripheral pairs + 2 central microtubules, “9 + 2”), myofibrils (contraction in muscle cells), neurofibrils (in neurons), tonofibrils (in epithelium), microvilli (increase the absorptive surface of the intestinal epithelium)."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In a hereditary defect of the ciliary protein dynein (**Kartagener syndrome**) clearance of the airways is impaired (chronic bronchitis, sinusitis), spermatozoa are immotile (infertility), and reversed position of the organs is often seen."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Inclusions** are structures that appear and disappear as a result of cell activity: **trophic** (glycogen, fat droplets, protein granules), **secretory** (secretory granules), **excretory** (substances to be removed), **pigment** (melanin, hemoglobin, lipofuscin — the “aging pigment”)."
+    }
+   ]
+  },
+  {
+   "title": "6. The nucleus and chromosomes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The **nucleus** is the center that stores hereditary information and controls the activity of the cell. The interphase nucleus consists of (Figure 2.8): the **nuclear envelope** (karyolemma — two membranes, the perinuclear space and **nuclear pores**; the outer membrane continues into the ER), the **karyoplasm** (nuclear sap), **chromatin** and the **nucleolus** (where rRNA is synthesized and ribosomal subunits are assembled). Cells without a nucleus (mature erythrocytes) do not divide and do not live long."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_yadro.webp",
+     "w": 1034,
+     "h": 567,
+     "lang": true,
+     "label": "Figure 2.8",
+     "caption": "Structure of the nucleus: nuclear envelope and pores, chromatin, nucleolus, rough endoplasmic reticulum with ribosomes (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Chromatin** is a complex of DNA and histone proteins. Its densely staining, inactive part is called **heterochromatin**, and its lightly staining, active (transcribed) part — **euchromatin**. DNA winds around histones to form **nucleosomes** and then coils step by step, turning into compact **chromosomes** during mitosis."
+    },
+    {
+     "type": "p",
+     "text": "**Nuclear pores** are complex protein assemblies in the nuclear envelope (diameter ≈ 120 nm); through them mRNA, tRNA and ribosomal subunits leave for the cytoplasm, while histones, polymerases and other proteins enter the nucleus. Active cells have many pores. Under the inner nuclear membrane lies the **lamina** — a network of lamin proteins that keeps the shape of the nucleus and anchors chromatin."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t02_xromatin.webp",
+     "label": "Figure 2.9",
+     "caption": "Levels of supercoiling of the DNA molecule: DNA double helix → nucleosomes wound on histones → chromatin fibres → metaphase chromosome (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "table",
+     "title": "Table 2.11. Levels of chromatin coiling (compaction)",
+     "head": [
+      "Level",
+      "Diameter",
+      "Shortening relative to DNA"
+     ],
+     "rows": [
+      [
+       "DNA double helix",
+       "2 nm",
+       "1 time"
+      ],
+      [
+       "Nucleosome fibre (“beads on a string”)",
+       "10 nm",
+       "≈ 7 times"
+      ],
+      [
+       "Elementary chromatin fibril (solenoid)",
+       "20–30 nm",
+       "≈ 42 times"
+      ],
+      [
+       "Interphase chromonema (loops, domains)",
+       "100–200 nm",
+       "≈ 1600 times"
+      ],
+      [
+       "Metaphase chromatid",
+       "500–600 nm",
+       "≈ 8000 times"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "A **nucleosome** is a protein core of 8 histone molecules (2 each of histones H2A, H2B, H3 and H4) with a 146 base-pair stretch of DNA wound ≈ 1,7 times around it. The **linker DNA** between nucleosomes (15–100 base pairs) binds histone H1, which packs the nucleosomes even more tightly. **Constitutive heterochromatin** (around centromeres and telomeres) is always condensed in all cells, while **facultative heterochromatin** condenses only in some cells — for example, in the somatic cells of women one X chromosome becomes the **Barr body** (sex chromatin)."
+    },
+    {
+     "type": "p",
+     "text": "A **metaphase chromosome** consists of two **chromatids** joined at the primary constriction — the **centromere**. The centromere divides the chromosome into two **arms**; the ends of the arms are **telomeres**. Some chromosomes have a secondary constriction and a **satellite**."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.12. Types of chromosomes by the position of the centromere",
+     "head": [
+      "Type",
+      "Position of the centromere",
+      "Examples in humans"
+     ],
+     "rows": [
+      [
+       "Metacentric",
+       "In the middle, arms equal",
+       "Pairs 1, 3, 16, 19, 20"
+      ],
+      [
+       "Submetacentric",
+       "Shifted from the middle, arms unequal",
+       "Pairs 2, 4–12, 17, 18, X"
+      ],
+      [
+       "Acrocentric",
+       "Near one end, one arm very short",
+       "Pairs 13–15, 21, 22, Y"
+      ],
+      [
+       "Telocentric",
+       "At the very end (not found normally in humans)",
+       "—"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Rules of chromosomes"
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "**Constancy of number** — the number of chromosomes in the somatic cells of each species is constant (2n = 46 in humans).",
+      "**Pairing** — in somatic cells chromosomes form homologous pairs (23 pairs in humans).",
+      "**Individuality** — each pair differs from the others in size, shape and gene content.",
+      "**Continuity** — each chromosome arises only from a chromosome by replication."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The **karyotype** is the set of features of the diploid chromosome complement typical of a species: number, size and shape. The human karyotype consists of 44 autosomes and 2 sex chromosomes: 46,XX in women and 46,XY in men. A graphic representation of the karyotype (homologous pairs ordered by size and centromere position) is called an **idiogram**. Chromosome numbers differ between species: 2n = 8 in Drosophila, 2n = 14 in the pea, 2n = 48 in the chimpanzee and 2n = 78 in the dog."
+    },
+    {
+     "type": "table",
+     "title": "Table 2.13. Differences between plant and animal cells",
+     "head": [
+      "Feature",
+      "Plant cell",
+      "Animal cell"
+     ],
+     "rows": [
+      [
+       "Cell wall",
+       "Cellulose",
+       "Absent (only glycocalyx)"
+      ],
+      [
+       "Plastids",
+       "Present",
+       "Absent"
+      ],
+      [
+       "Vacuole",
+       "Large central vacuole",
+       "Small, temporary vacuoles"
+      ],
+      [
+       "Centrioles",
+       "Absent in higher plants",
+       "Present"
+      ],
+      [
+       "Storage carbohydrate",
+       "Starch",
+       "Glycogen"
+      ],
+      [
+       "Nutrition",
+       "Autotrophic",
+       "Heterotrophic"
+      ]
+     ]
+    }
+   ]
+  }
  ],
  "skills": [
-  {"title": "Skill: observing osmotic phenomena", "blocks": [
-   {"type": "list", "ordered": true, "items": [
-    "Put 1 drop each of 0.9 % NaCl, distilled water and 10 % NaCl solution on three glass slides.",
-    "Add a little fingertip blood to each drop and cover with a coverslip.",
-    "Examine the slides with the ×40 objective.",
-    "Draw biconcave disc-shaped erythrocytes in the isotonic solution, swollen and burst cells (hemolysis) in distilled water and shrunken (crenated) erythrocytes in the hypertonic solution.",
-    "Place onion epidermis in 10 % NaCl to observe plasmolysis, then transfer it to water to observe deplasmolysis.",
-    "Explain the results by the law of osmosis."
-   ]}
-  ]}
+  {
+   "title": "Skill: observing osmotic phenomena",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Put 1 drop each of 0.9 % NaCl, distilled water and 10 % NaCl solution on three glass slides.",
+      "Add a little fingertip blood to each drop and cover with a coverslip.",
+      "Examine the slides with the ×40 objective.",
+      "Draw biconcave disc-shaped erythrocytes in the isotonic solution, swollen and burst cells (hemolysis) in distilled water and shrunken (crenated) erythrocytes in the hypertonic solution.",
+      "Place onion epidermis in 10 % NaCl to observe plasmolysis, then transfer it to water to observe deplasmolysis.",
+      "Explain the results by the law of osmosis."
+     ]
+    }
+   ]
+  }
  ],
  "questions": [
   "What are the main parts of a eukaryotic cell? What are the size and shape of human cells?",
@@ -156,45 +924,369 @@
   "Which organelles are non-membrane?",
   "What are inclusions, and what types are there?",
   "Explain the structure and functions of the nucleus.",
-  "Name the structure, types and rules of chromosomes."
+  "Name the structure, types and rules of chromosomes.",
+  "Explain the levels of protein structure and protein functions with examples.",
+  "What are the properties of enzymes and the importance of ATP in the cell?",
+  "Name the types of intercellular junctions.",
+  "Describe ion channels, aquaporins and the resting membrane potential.",
+  "How does receptor-mediated endocytosis proceed? What disease results from its disturbance?",
+  "Explain the path of a secretory protein from the ribosome to exocytosis.",
+  "Name the types of lysosomes and give examples of lysosomal storage diseases.",
+  "What structures make up the cytoskeleton? How does colchicine act?",
+  "Explain the levels of chromatin compaction and the structure of the nucleosome."
  ],
  "quiz": [
-  {"q": "Who proposed the fluid mosaic model of membrane structure?", "options": ["S. Singer and G. Nicolson", "J. Danielli and H. Davson", "M. Schleiden and T. Schwann", "J. Watson and F. Crick", "F. Jacob and J. Monod"], "answer": 0},
-  {"q": "What forms the basis of a biological membrane?", "options": ["A phospholipid bilayer", "A layer of cellulose", "A protein bilayer", "A glycogen network", "A chitin layer"], "answer": 0},
-  {"q": "How many ions does the sodium-potassium pump transport per ATP?", "options": ["Removes 3 Na^+^, brings in 2 K^+^", "Removes 2 Na^+^, brings in 3 K^+^", "Removes 1 Na^+^, brings in 1 K^+^", "Removes 3 K^+^, brings in 2 Na^+^", "Brings in 2 Na^+^ and 2 K^+^"], "answer": 0},
-  {"q": "What is the uptake of solid particles by a cell called?", "options": ["Phagocytosis", "Pinocytosis", "Exocytosis", "Osmosis", "Diffusion"], "answer": 0},
-  {"q": "How do erythrocytes change in distilled water?", "options": ["They swell and burst (hemolysis)", "They shrink", "They do not change", "They divide", "They form a nucleus"], "answer": 0},
-  {"q": "Which solution is isotonic?", "options": ["0.9 % NaCl", "10 % NaCl", "Distilled water", "20 % glucose", "3 % NaCl"], "answer": 0},
-  {"q": "Which organelle is the “power station” of the cell?", "options": ["Mitochondrion", "Golgi complex", "Lysosome", "Ribosome", "Smooth ER"], "answer": 0},
-  {"q": "Which organelle sorts proteins and forms secretory granules?", "options": ["Golgi complex", "Mitochondrion", "Ribosome", "Centrosome", "Peroxisome"], "answer": 0},
-  {"q": "Which organelle takes part in detoxifying poisons in the liver?", "options": ["Smooth ER", "Rough ER", "Lysosome", "Nucleolus", "Centriole"], "answer": 0},
-  {"q": "How is a centriole built?", "options": ["Of 9 triplets of microtubules", "Of 9 pairs + 2 central microtubules", "Of actin filaments", "Of two membranes", "Of rRNA and protein"], "answer": 0},
-  {"q": "What is the formula of the axoneme of cilia and flagella?", "options": ["9 + 2", "9 × 3 + 0", "9 + 0", "6 + 2", "12 + 1"], "answer": 0},
-  {"q": "Where are ribosomal subunits assembled?", "options": ["In the nucleolus", "In the Golgi complex", "In the lysosome", "In the mitochondrial matrix", "In the smooth ER"], "answer": 0},
-  {"q": "What is active, transcribed chromatin called?", "options": ["Euchromatin", "Heterochromatin", "Nucleosome", "Centromere", "Telomere"], "answer": 0},
-  {"q": "What is a chromosome with the centromere near one end called?", "options": ["Acrocentric", "Metacentric", "Submetacentric", "Telocentric", "Dicentric"], "answer": 0},
-  {"q": "What kind of inclusion is lipofuscin?", "options": ["Pigment", "Trophic", "Secretory", "Excretory", "Storage carbohydrate"], "answer": 0}
+  {
+   "q": "Who proposed the fluid mosaic model of membrane structure?",
+   "options": [
+    "S. Singer and G. Nicolson",
+    "J. Danielli and H. Davson",
+    "M. Schleiden and T. Schwann",
+    "J. Watson and F. Crick",
+    "F. Jacob and J. Monod"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What forms the basis of a biological membrane?",
+   "options": [
+    "A phospholipid bilayer",
+    "A layer of cellulose",
+    "A protein bilayer",
+    "A glycogen network",
+    "A chitin layer"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many ions does the sodium-potassium pump transport per ATP?",
+   "options": [
+    "Removes 3 Na^+^, brings in 2 K^+^",
+    "Removes 2 Na^+^, brings in 3 K^+^",
+    "Removes 1 Na^+^, brings in 1 K^+^",
+    "Removes 3 K^+^, brings in 2 Na^+^",
+    "Brings in 2 Na^+^ and 2 K^+^"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the uptake of solid particles by a cell called?",
+   "options": [
+    "Phagocytosis",
+    "Pinocytosis",
+    "Exocytosis",
+    "Osmosis",
+    "Diffusion"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How do erythrocytes change in distilled water?",
+   "options": [
+    "They swell and burst (hemolysis)",
+    "They shrink",
+    "They do not change",
+    "They divide",
+    "They form a nucleus"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which solution is isotonic?",
+   "options": [
+    "0.9 % NaCl",
+    "10 % NaCl",
+    "Distilled water",
+    "20 % glucose",
+    "3 % NaCl"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which organelle is the “power station” of the cell?",
+   "options": [
+    "Mitochondrion",
+    "Golgi complex",
+    "Lysosome",
+    "Ribosome",
+    "Smooth ER"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which organelle sorts proteins and forms secretory granules?",
+   "options": [
+    "Golgi complex",
+    "Mitochondrion",
+    "Ribosome",
+    "Centrosome",
+    "Peroxisome"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which organelle takes part in detoxifying poisons in the liver?",
+   "options": [
+    "Smooth ER",
+    "Rough ER",
+    "Lysosome",
+    "Nucleolus",
+    "Centriole"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How is a centriole built?",
+   "options": [
+    "Of 9 triplets of microtubules",
+    "Of 9 pairs + 2 central microtubules",
+    "Of actin filaments",
+    "Of two membranes",
+    "Of rRNA and protein"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the formula of the axoneme of cilia and flagella?",
+   "options": [
+    "9 + 2",
+    "9 × 3 + 0",
+    "9 + 0",
+    "6 + 2",
+    "12 + 1"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Where are ribosomal subunits assembled?",
+   "options": [
+    "In the nucleolus",
+    "In the Golgi complex",
+    "In the lysosome",
+    "In the mitochondrial matrix",
+    "In the smooth ER"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is active, transcribed chromatin called?",
+   "options": [
+    "Euchromatin",
+    "Heterochromatin",
+    "Nucleosome",
+    "Centromere",
+    "Telomere"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is a chromosome with the centromere near one end called?",
+   "options": [
+    "Acrocentric",
+    "Metacentric",
+    "Submetacentric",
+    "Telocentric",
+    "Dicentric"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What kind of inclusion is lipofuscin?",
+   "options": [
+    "Pigment",
+    "Trophic",
+    "Secretory",
+    "Excretory",
+    "Storage carbohydrate"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which bonds form the primary structure of a protein?",
+   "options": [
+    "Peptide bonds",
+    "Hydrogen bonds",
+    "Disulfide bonds",
+    "Ionic bonds",
+    "Hydrophobic bonds"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which junction links neighbouring cells electrically?",
+   "options": [
+    "Gap junction (nexus)",
+    "Desmosome",
+    "Tight junction",
+    "Hemidesmosome",
+    "Interdigitation"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does cholesterol enter the cell?",
+   "options": [
+    "Receptor-mediated endocytosis",
+    "Simple diffusion",
+    "Through ion channels",
+    "Phagocytosis",
+    "Through the Na^+^/K^+^ pump"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many histone molecules make up the protein core of a nucleosome?",
+   "options": [
+    "8",
+    "4",
+    "2",
+    "6",
+    "10"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which substance arrests mitosis in metaphase?",
+   "options": [
+    "Colchicine",
+    "Digoxin",
+    "Penicillin",
+    "Insulin",
+    "Catalase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which organelle contains catalase, the enzyme that breaks down hydrogen peroxide?",
+   "options": [
+    "Peroxisome",
+    "Lysosome",
+    "Golgi complex",
+    "Ribosome",
+    "Centrosome"
+   ],
+   "answer": 0
+  }
  ],
  "cases": [
-  {"title": "Case 1", "text": "Blood taken from a patient was placed in a solution. In the slide prepared from it, the blood cells had a shrunken (crenated) shape.", "ask": "Explain the situation.", "answer": "The blood was placed in a hypertonic solution (NaCl concentration above 0.9 %). According to the law of osmosis, water moves from the less concentrated medium (inside the erythrocyte) to the more concentrated medium (the outer solution); the cell volume decreases and it shrinks — plasmolysis (in erythrocytes — crenation). That is why large volumes of hypertonic solutions must not be given intravenously."},
-  {"title": "Case 2", "text": "Blood taken from a patient was placed in a solution. In the slide, the blood cells were swollen and burst.", "ask": "Explain the situation.", "answer": "The blood was placed in a hypotonic solution (for example, distilled water). Water enters the erythrocyte, the cell swells, the membrane stretches and bursts, and hemoglobin escapes — hemolysis. Therefore isotonic (0.9 %) NaCl, not distilled water, is used to dilute drug solutions."},
-  {"title": "Case 3", "text": "An electron micrograph of liver cells showed marked enlargement and increase of the smooth endoplasmic reticulum. The patient had been taking barbiturates for a long time.", "ask": "What is this change related to?", "answer": "The enzymes that detoxify drugs and poisons (the cytochrome P450 system) are located in the membranes of the smooth ER. With long-term intake of barbiturates these enzymes are induced, and the smooth ER that contains them enlarges as well. As a result drugs are broken down faster — tolerance to the drug develops."}
+  {
+   "title": "Case 1",
+   "text": "Blood taken from a patient was placed in a solution. In the slide prepared from it, the blood cells had a shrunken (crenated) shape.",
+   "ask": "Explain the situation.",
+   "answer": "The blood was placed in a hypertonic solution (NaCl concentration above 0.9 %). According to the law of osmosis, water moves from the less concentrated medium (inside the erythrocyte) to the more concentrated medium (the outer solution); the cell volume decreases and it shrinks — plasmolysis (in erythrocytes — crenation). That is why large volumes of hypertonic solutions must not be given intravenously."
+  },
+  {
+   "title": "Case 2",
+   "text": "Blood taken from a patient was placed in a solution. In the slide, the blood cells were swollen and burst.",
+   "ask": "Explain the situation.",
+   "answer": "The blood was placed in a hypotonic solution (for example, distilled water). Water enters the erythrocyte, the cell swells, the membrane stretches and bursts, and hemoglobin escapes — hemolysis. Therefore isotonic (0.9 %) NaCl, not distilled water, is used to dilute drug solutions."
+  },
+  {
+   "title": "Case 3",
+   "text": "An electron micrograph of liver cells showed marked enlargement and increase of the smooth endoplasmic reticulum. The patient had been taking barbiturates for a long time.",
+   "ask": "What is this change related to?",
+   "answer": "The enzymes that detoxify drugs and poisons (the cytochrome P450 system) are located in the membranes of the smooth ER. With long-term intake of barbiturates these enzymes are induced, and the smooth ER that contains them enlarges as well. As a result drugs are broken down faster — tolerance to the drug develops."
+  },
+  {
+   "title": "Case 4",
+   "text": "A 6-month-old child is behind in motor development and startles excessively at sounds. A “cherry-red spot” is found on the retina. The parents are healthy and come from an Ashkenazi Jewish community.",
+   "ask": "Which organelle is dysfunctional and how is the disease inherited?",
+   "answer": "This is **Tay–Sachs disease** — a lysosomal storage disease. The enzyme **hexosaminidase A** is missing in lysosomes, so GM~2~ ganglioside is not broken down, accumulates in the lysosomes of neurons and kills them. The disease is inherited as **autosomal recessive**: the healthy parents are heterozygous carriers (Aa × Aa), and each child has a 25 % chance of being affected. Carrier testing and prenatal diagnosis are done in genetic counselling."
+  },
+  {
+   "title": "Case 5",
+   "text": "In a cytogenetics laboratory, colchicine was added to a lymphocyte culture at the end of incubation for karyotyping.",
+   "ask": "Why is colchicine added and which cell structure does it act on?",
+   "answer": "Colchicine stops the formation of **microtubules** (tubulin polymerisation) and destroys the **spindle**. As a result the chromatids cannot separate to the poles and cells are arrested in **metaphase**. In metaphase the chromosomes are most coiled, short and thick, so it is easy to count them and determine their shape and centromere position — this is why the karyotype is studied on the metaphase plate."
+  },
+  {
+   "title": "Case 6",
+   "text": "In a patient treated for heart failure, an overdose of digoxin caused a disturbance of heart rhythm.",
+   "ask": "Which membrane transport system does digoxin act on? How do you explain the rhythm disturbance?",
+   "answer": "Digoxin inhibits **Na^+^/K^+^-ATPase** (the sodium-potassium pump). Normally the pump uses 1 ATP to move 3 Na^+^ out and 2 K^+^ in. When the pump is partly blocked, Na^+^ rises inside the cell, Na^+^/Ca^2+^ exchange slows and Ca^2+^ increases in the cell — the heart contracts more strongly (therapeutic effect). With an overdose, Ca^2+^ and ion balance are disturbed too much, the membrane potential changes, and extrasystoles and other arrhythmias appear."
+  }
  ],
  "cards": [
-  {"front": "Thickness of the plasmalemma", "back": "7.5–10 nm; the three-layered universal elementary membrane"},
-  {"front": "Fluid mosaic model", "back": "Phospholipid bilayer + mobile proteins (Singer and Nicolson, 1972)"},
-  {"front": "Na^+^/K^+^ pump", "back": "1 ATP → 3 Na^+^ out, 2 K^+^ in"},
-  {"front": "Hemolysis", "back": "Swelling and bursting of erythrocytes in a hypotonic medium"},
-  {"front": "Plasmolysis", "back": "Loss of water and shrinking of a cell in a hypertonic medium"},
-  {"front": "Mitochondrion", "back": "Two membranes; cristae; own DNA; ATP synthesis"},
-  {"front": "Lysosome", "back": "Single-membrane vesicle with hydrolytic enzymes; intracellular digestion"},
-  {"front": "Centriole", "back": "9 × 3 + 0 microtubules; organizes the spindle"},
-  {"front": "Nucleolus", "back": "Synthesis of rRNA and assembly of ribosomal subunits"},
-  {"front": "Acrocentric chromosomes", "back": "Pairs 13, 14, 15, 21, 22 and Y in humans"}
+  {
+   "front": "Thickness of the plasmalemma",
+   "back": "7.5–10 nm; the three-layered universal elementary membrane"
+  },
+  {
+   "front": "Fluid mosaic model",
+   "back": "Phospholipid bilayer + mobile proteins (Singer and Nicolson, 1972)"
+  },
+  {
+   "front": "Na^+^/K^+^ pump",
+   "back": "1 ATP → 3 Na^+^ out, 2 K^+^ in"
+  },
+  {
+   "front": "Hemolysis",
+   "back": "Swelling and bursting of erythrocytes in a hypotonic medium"
+  },
+  {
+   "front": "Plasmolysis",
+   "back": "Loss of water and shrinking of a cell in a hypertonic medium"
+  },
+  {
+   "front": "Mitochondrion",
+   "back": "Two membranes; cristae; own DNA; ATP synthesis"
+  },
+  {
+   "front": "Lysosome",
+   "back": "Single-membrane vesicle with hydrolytic enzymes; intracellular digestion"
+  },
+  {
+   "front": "Centriole",
+   "back": "9 × 3 + 0 microtubules; organizes the spindle"
+  },
+  {
+   "front": "Nucleolus",
+   "back": "Synthesis of rRNA and assembly of ribosomal subunits"
+  },
+  {
+   "front": "Acrocentric chromosomes",
+   "back": "Pairs 13, 14, 15, 21, 22 and Y in humans"
+  },
+  {
+   "front": "Enzyme",
+   "back": "Biological catalyst; binds its substrate specifically through the active site"
+  },
+  {
+   "front": "Desmosome",
+   "back": "Strong intercellular junction with attached intermediate filaments (epidermis, myocardium)"
+  },
+  {
+   "front": "Aquaporins",
+   "back": "Membrane protein channels that pass water rapidly"
+  },
+  {
+   "front": "Autophagy",
+   "back": "Digestion of the cell's own worn-out organelles in lysosomes"
+  },
+  {
+   "front": "Nucleosome",
+   "back": "8 histones + 146 base pairs of DNA; the elementary unit of chromatin"
+  },
+  {
+   "front": "Barr body",
+   "back": "Condensed (inactive) X chromosome in female cells"
+  }
  ],
  "summary": [
-  {"kind": "eslab", "label": "Remember", "text": "Water always moves toward the side of **higher concentration**: in a hypertonic medium the cell **shrinks**, in a hypotonic one it **swells and bursts**."},
-  {"kind": "yodlash", "label": "Memory aid", "text": "Sodium-potassium pump — **“3 out, 2 in”**: 3 Na^+^ out, 2 K^+^ in."},
-  {"kind": "klinik", "label": "Clinical significance", "text": "Organelle diseases: lysosomal (Tay-Sachs, Gaucher), mitochondrial (inherited only from the mother), ciliary (Kartagener syndrome)."}
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "Water always moves toward the side of **higher concentration**: in a hypertonic medium the cell **shrinks**, in a hypotonic one it **swells and bursts**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Sodium-potassium pump — **“3 out, 2 in”**: 3 Na^+^ out, 2 K^+^ in."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "Organelle diseases: lysosomal (Tay-Sachs, Gaucher), mitochondrial (inherited only from the mother), ciliary (Kartagener syndrome)."
+  }
  ]
 }
