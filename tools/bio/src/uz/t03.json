@@ -1,0 +1,1017 @@
+{
+ "id": "03",
+ "no": 3,
+ "title": "Hujayralarning mitotik va hayotiy sikli. Hujayra proliferatsiyasi. Hujayraning meyotik bo‘linishi. Mitoz va meyozning patologiyasi",
+ "goals": [
+  {
+   "type": "p",
+   "text": "Talabaga hujayraning hayotiy va mitotik sikllarini, interfaza davrlarini, mitoz va meyoz fazalarida xromosomalar to‘plami va DNK miqdorining o‘zgarishini, bo‘linishning boshqa shakllarini, jinssiz va jinsiy ko‘payish turlarini hamda bo‘linish buzilishlarining tibbiy oqibatlarini o‘rgatish."
+  },
+  {
+   "type": "sub",
+   "text": "Mashg‘ulot oxirida talaba bilishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "hayotiy va mitotik sikl tushunchalarini, interfaza davrlarini (G~1~, S, G~2~) va nazorat nuqtalarini;",
+    "to‘qimalarni hujayralar yangilanish jadalligiga ko‘ra guruhlarini;",
+    "mitoz fazalari va ulardagi xromosoma to‘plami (n) va DNK miqdori (c) ni;",
+    "meyozning I va II bo‘linishlari, krossingover va reduksiyaning ahamiyatini;",
+    "amitoz, endomitoz, politeniya tushunchalarini;",
+    "jinssiz va jinsiy ko‘payish shakllarini."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "Talaba bajara olishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "piyoz ildizi uchi preparatida mitoz fazalarini aniqlash;",
+    "har bir faza uchun hujayraning genetik formulasini (n, c) yozish;",
+    "meyozdagi xatolar bilan xromosoma kasalliklari orasidagi bog‘liqlikni tushuntirish."
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "title": "1. Hujayraning hayotiy va mitotik sikli",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Hayotiy sikl** — hujayraning bo‘linish natijasida paydo bo‘lgan paytdan to o‘zi bo‘linguncha yoki nobud bo‘lguncha bo‘lgan davr. U o‘sish, differensiyalanish, ixtisoslashgan funksiyani bajarish va qarish bosqichlarini o‘z ichiga oladi. **Mitotik (hujayra) sikl** — bo‘linishga tayyorlanish (interfaza) va bo‘linish (mitoz) davri; u faqat bo‘linadigan hujayralarda bo‘ladi (Rasm 3.1)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_sikl.webp",
+     "w": 708,
+     "h": 556,
+     "lang": true,
+     "label": "Rasm 3.1",
+     "caption": "Hujayra siklining bosqichlari: interfaza (G~1~ — o‘sish, S — DNK replikatsiyasi, G~2~ — bo‘linishga tayyorgarlik) va mitoz (profaza, metafaza, anafaza, telofaza) hamda sitokinez (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.1. Interfaza davrlari",
+     "head": [
+      "Davr",
+      "Asosiy jarayonlar",
+      "Genetik formula"
+     ],
+     "rows": [
+      [
+       "G~1~ (presintetik)",
+       "Hujayra o‘sadi, RNK va oqsillar, organoidlar sintezlanadi; S-davr uchun fermentlar to‘planadi",
+       "2n2c"
+      ],
+      [
+       "S (sintetik)",
+       "DNK replikatsiyasi, giston oqsillari sintezi; har bir xromosoma ikki xromatidli bo‘ladi; sentriolalar ikkilanadi",
+       "2n4c"
+      ],
+      [
+       "G~2~ (postsintetik)",
+       "Bo‘linish duki uchun tubulin, ATF to‘planadi; DNK xatolari tekshiriladi",
+       "2n4c"
+      ],
+      [
+       "G~0~ (tinim)",
+       "Hujayra sikldan chiqib ixtisoslashgan funksiyani bajaradi",
+       "2n2c"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_replikatsiya.webp",
+     "label": "Rasm 3.2",
+     "caption": "Xromosomaning replikatsiyasi: bir xromatidli xromosoma S-davrda ikki hissa oshib, sentromerada birikkan ikki qiz xromatiddan iborat duplikatsiyalangan xromosomaga aylanadi; bo‘linishda ular yana ajraladi (P.X. Xolikov va boshq., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**G~0~-davr (tinim davri)** — mitotik sikldan chiqqan, bo‘linmaydigan, lekin o‘z vazifasini bajarayotgan hujayralar holati. Masalan, jigar hujayralari odatda G~0~ da bo‘ladi, ammo jigarning bir qismi olib tashlansa, siklga qaytib bo‘linadi. Neyronlar va kardiomiotsitlar esa G~0~ dan deyarli chiqmaydi. Odam hujayralarida mitotik sikl o‘rtacha 18–24 soat davom etadi; shundan mitoz ≈ 1 soat, qolgani interfazaga to‘g‘ri keladi."
+    },
+    {
+     "type": "p",
+     "text": "Interfaza **autosintetik** (hujayra bo‘linishga tayyorlanadi) va **geterosintetik** (hujayra organizm uchun mahsulot ishlab chiqaradi, ixtisoslashgan vazifani bajaradi) bo‘lishi mumkin. Sikl **nazorat nuqtalari** (G~1~/S, G~2~/M va metafaza nazorati) da siklinlar va siklinga bog‘liq kinazalar orqali boshqariladi; DNK shikastlansa, **p53** oqsili siklni to‘xtatadi yoki apoptozni boshlaydi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.2. To‘qimalarning hujayralar yangilanish jadalligiga ko‘ra guruhlari",
+     "head": [
+      "Guruh",
+      "Xususiyati",
+      "Misollar"
+     ],
+     "rows": [
+      [
+       "Statik (stabil) populyatsiyalar",
+       "Postnatal davrda bo‘linmaydi yoki juda kam bo‘linadi",
+       "Neyronlar, kardiomiotsitlar"
+      ],
+      [
+       "O‘suvchi (ekspansiyali) populyatsiyalar",
+       "Odatda G~0~ da; shikastlanganda bo‘linishga qaytadi",
+       "Jigar, buyrak, so‘lak bezlari hujayralari"
+      ],
+      [
+       "Yangilanuvchi populyatsiyalar",
+       "Hujayralar doimiy nobud bo‘lib, ildiz (o‘zak) hujayralar hisobiga yangilanadi",
+       "Teri va ichak epiteliysi, qon hujayralari, spermatogen epiteliy"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. Mitoz va uning fazalari",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Mitoz** (bilvosita bo‘linish) — somatik hujayralarning asosiy bo‘linish usuli bo‘lib, natijada ona hujayraga genetik jihatdan bir xil ikkita qiz hujayra hosil bo‘ladi. Mitoz to‘rt fazadan iborat va undan keyin sitoplazmaning bo‘linishi — **sitokinez** sodir bo‘ladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.3. Mitoz fazalari",
+     "head": [
+      "Faza",
+      "Jarayonlar",
+      "Genetik formula"
+     ],
+     "rows": [
+      [
+       "Profaza",
+       "Xromosomalar spirallanib, ko‘rinadigan bo‘ladi; yadrocha va yadro qobig‘i yo‘qoladi; sentriolalar qutblarga ajraladi, bo‘linish duki hosil bo‘ladi",
+       "2n4c"
+      ],
+      [
+       "Prometafaza",
+       "Duk iplari kinetoxorlarga birikadi, xromosomalar ekvatorga yo‘naladi",
+       "2n4c"
+      ],
+      [
+       "Metafaza",
+       "Xromosomalar ekvator tekisligida joylashib **metafaza plastinkasini** hosil qiladi; eng ko‘p spirallangan — kariotipni o‘rganish uchun eng qulay davr",
+       "2n4c"
+      ],
+      [
+       "Anafaza",
+       "Sentromeralar bo‘linadi, xromatidlar (qiz xromosomalar) qarama-qarshi qutblarga tortiladi",
+       "4n4c (hujayrada)"
+      ],
+      [
+       "Telofaza",
+       "Qutblarda xromosomalar despirallanadi, yadro qobig‘i va yadrocha qayta hosil bo‘ladi; sitokinez",
+       "2n2c (har bir qiz hujayrada)"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_duk.webp",
+     "w": 838,
+     "h": 449,
+     "lang": true,
+     "label": "Rasm 3.3",
+     "caption": "Metafazada bo‘linish dukining hosil bo‘lishi: qutblardagi sentriolalar, ulardan tarqalgan astral nurlar va duk iplari, ekvatorda joylashgan xromosomalar (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Hayvon hujayrasida sitokinez **bo‘linish egati** (aktin-miozin halqasi qisqarishi) orqali, o‘simlik hujayrasida esa hujayra o‘rtasida **fragmoplast** va hujayra plastinkasi hosil bo‘lishi orqali boradi. Yuksak o‘simliklarda sentriolalar yo‘q, ammo bo‘linish duki baribir hosil bo‘ladi (astral nurlarsiz, “anastral” mitoz)."
+    },
+    {
+     "type": "box",
+     "kind": "yodlash",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Fazalar tartibi: **“Pro-Me-Ana-Telo”** — **P**ishib (spirallanib), **M**arkazga (ekvatorga) keladi, **A**jraladi, **T**iklanadi (yadro qayta hosil bo‘ladi)."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Mitozning biologik va tibbiy ahamiyati"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "Qiz hujayralarga irsiy axborotning teng taqsimlanishini va kariotip doimiyligini ta’minlaydi;",
+      "Organizmning o‘sishi, to‘qimalarning yangilanishi va regeneratsiyasi asosida yotadi;",
+      "Jinssiz ko‘payishning sitologik asosi hisoblanadi.",
+      "Mitoz nazorati buzilishi **o‘smalar** rivojlanishiga olib keladi; ko‘plab o‘smaga qarshi dorilar (kolxitsin, vinkristin, taksanlar) bo‘linish dukiga ta’sir qilib mitozni to‘xtatadi."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Bo‘linishning boshqa shakllari va mitoz patologiyasi",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Jadval 3.4. Mitozdan farq qiluvchi bo‘linish shakllari",
+     "head": [
+      "Shakl",
+      "Mohiyati",
+      "Qayerda uchraydi"
+     ],
+     "rows": [
+      [
+       "Amitoz (to‘g‘ridan-to‘g‘ri bo‘linish)",
+       "Yadro belbog‘lanib bo‘linadi, xromosomalar va duk hosil bo‘lmaydi; irsiy material notekis taqsimlanadi",
+       "Qariyotgan, yallig‘langan to‘qimalar, o‘smalar, infuzoriya makronukleusi"
+      ],
+      [
+       "Endomitoz",
+       "Yadro qobig‘i buzilmagan holda xromosomalar ikkilanadi, sitokinez bo‘lmaydi — **poliploid** hujayra",
+       "Jigar hujayralari, megakariotsitlar"
+      ],
+      [
+       "Politeniya",
+       "Xromatidlar ko‘p marta replikatsiyalanadi, ammo ajralmaydi — **gigant (politen) xromosomalar**",
+       "Ikki qanotlilar so‘lak bezlari (drozofila)"
+      ],
+      [
+       "Ikki yadroli hujayralar",
+       "Kariokinez bo‘ladi, sitokinez bo‘lmaydi",
+       "Jigar, siydik pufagi epiteliysi"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_amitoz.webp",
+     "label": "Rasm 3.4",
+     "caption": "Amitoz: yadroning belbog‘lanib to‘g‘ridan-to‘g‘ri bo‘linishining ketma-ket bosqichlari (1–5); xromosomalar va bo‘linish duki hosil bo‘lmaydi (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Mitoz patologiyasi** — xromosomalarning qutblarga notekis tarqalishi (**nondisyunksiya**), uch qutbli yoki ko‘p qutbli mitozlar, xromosomalarning ekvatorda qolib ketishi, kolxitsin ta’sirida dukning yo‘qolishi (**K-mitoz**). Somatik hujayralarda bunday xatolar **mozaitsizm** (organizmda ikki va undan ortiq kariotipli hujayralar qatori) va o‘sma hujayralarida **anevploidiya**ga sabab bo‘ladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.5. Mitoz patologiyasining turlari",
+     "head": [
+      "Guruh",
+      "Ko‘rinishlari"
+     ],
+     "rows": [
+      [
+       "Xromosomalarning shikastlanishi",
+       "Hujayraning profazada to‘xtab qolishi; spirallanish va despirallanishning buzilishi; xromosomalar fragmentatsiyasi; anafazada xromosomalar orasida “ko‘priklar”; xromatidalarning vaqtidan oldin ajralishi; kinetoxor shikastlanishi"
+      ],
+      [
+       "Mitotik apparatning shikastlanishi",
+       "Metafazaning cho‘zilishi; xromosomalarning ekvatorda tartibsiz joylashuvi; uch guruhli, bo‘shliqli va ko‘p qutbli metafaza; assimetrik va monotsentrik mitozlar; K-mitoz (kolxitsinli mitoz)"
+      ],
+      [
+       "Sitotomiyaning buzilishi",
+       "Vaqtidan oldin bo‘linish; sitotomiyaning kechikishi yoki umuman bo‘lmasligi (ko‘p yadroli, poliploid hujayralar)"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.6. Apoptoz va nekrozning farqlari",
+     "head": [
+      "Belgi",
+      "Apoptoz",
+      "Nekroz"
+     ],
+     "rows": [
+      [
+       "Sabab",
+       "Fiziologik dastur yoki DNK shikastlanishi (p53, kaspazalar faollashadi)",
+       "Kuchli zararli omil: ishemiya, kuyish, zahar"
+      ],
+      [
+       "Qamrovi",
+       "Alohida hujayralar",
+       "Hujayralar guruhi, to‘qima sohasi"
+      ],
+      [
+       "Hujayra hajmi",
+       "Kichrayadi (burishadi)",
+       "Shishadi, membrana yoriladi"
+      ],
+      [
+       "Yadro",
+       "Xromatin kondensatsiyasi, DNK bo‘laklarga ajraladi",
+       "Yadro erib ketadi (kariolizis)"
+      ],
+      [
+       "Yakuni",
+       "Apoptotik tanachalar makrofaglar tomonidan yallig‘lanishsiz yutiladi",
+       "Hujayra tarkibi chiqib, yallig‘lanish rivojlanadi"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Apoptoz** — dasturlangan hujayra o‘limi: hujayra burishadi, xromatin kondensatsiyalanib parchalanadi, hujayra apoptotik tanachalarga bo‘linib, yallig‘lanishsiz fagotsitozga uchraydi. U embriogenezda (barmoqlar orasidagi to‘qima yo‘qolishi), shikastlangan va o‘sma hujayralarini yo‘qotishda muhim; uning susayishi o‘smalarga, kuchayishi neyrodegenerativ kasalliklarga olib keladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Hujayra proliferatsiyasi va uning boshqarilishi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Proliferatsiya** — hujayralarning bo‘linish yo‘li bilan ko‘payishi; u o‘sish, to‘qimalar yangilanishi va regeneratsiya asosida yotadi. Ko‘p hujayrali organizmda hujayralar faqat “ruxsat” signali bo‘lganda bo‘linadi: proliferatsiya **stimulyatorlari** va **ingibitorlari** muvozanati bilan boshqariladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.7. Proliferatsiyani boshqaruvchi omillar",
+     "head": [
+      "Stimulyatorlar",
+      "Ingibitorlar"
+     ],
+     "rows": [
+      [
+       "O‘sish omillari: epidermal (EGF), trombotsitar (PDGF), fibroblastlar o‘sish omili, eritropoetin",
+       "Keylonlar — to‘qimaning o‘zi ishlab chiqaradigan, uning bo‘linishini to‘xtatuvchi moddalar"
+      ],
+      [
+       "Gormonlar: o‘sish gormoni, insulin, estrogenlar (bachadon endometriysi)",
+       "Glyukokortikoidlar, o‘sma nekrozi omili, transformatsiyalovchi o‘sish omili β (TGF-β)"
+      ],
+      [
+       "To‘qimaning shikastlanishi va qisman olib tashlanishi (jigar regeneratsiyasi)",
+       "**Kontakt tormozlanish** — hujayralar bir-biriga tegib, bir qavat hosil qilgach bo‘linishni to‘xtatadi"
+      ],
+      [
+       "Siklinlar va siklinga bog‘liq kinazalar (CDK) faolligi",
+       "O‘sma supressor oqsillari: p53, retinoblastoma oqsili (Rb), p21"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Bo‘linishni rag‘batlantiruvchi oqsillar genlari **proto-onkogenlar** deyiladi. Ular mutatsiya, xromosoma qayta qurilishi yoki virus ta’sirida doimiy faol **onkogenlarga** aylansa, hujayra nazoratsiz bo‘linadi. Bo‘linishni to‘xtatuvchi **o‘sma supressor genlari** (p53 — “genom qo‘riqchisi”, Rb) har ikki alleli ishdan chiqqanda o‘sma rivojlanadi. Shuning uchun **o‘sma** — hujayra siklini boshqaruvchi genlar kasalligi hisoblanadi."
+    },
+    {
+     "type": "p",
+     "text": "**Telomeralar va Heyflik chegarasi.** Har replikatsiyada xromosoma uchlari (TTAGGG takrorlaridan iborat telomeralar) biroz qisqaradi. Shuning uchun normal somatik hujayralar kulturada faqat 50–60 marta bo‘linadi (**Heyflik chegarasi**, 1961), so‘ng qariydi. Jinsiy, o‘zak va o‘sma hujayralarida **telomeraza** fermenti telomeralarni tiklaydi, shu bois ular cheksiz bo‘linishi mumkin."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.8. O‘zak (stvol) hujayralarning potentligi",
+     "head": [
+      "Turi",
+      "Qanday hujayralarni hosil qila oladi",
+      "Misol"
+     ],
+     "rows": [
+      [
+       "Totipotent",
+       "Butun organizm va embriondan tashqari a’zolar (yo‘ldosh)",
+       "Zigota, maydalanishning dastlabki blastomerlari"
+      ],
+      [
+       "Pluripotent",
+       "Uchala embrion varag‘ining barcha hujayralari",
+       "Blastotsistaning ichki hujayra massasi (embrional o‘zak hujayralar)"
+      ],
+      [
+       "Multipotent",
+       "Bitta to‘qima tizimining bir necha hujayra turi",
+       "Suyak ko‘migining qon hosil qiluvchi o‘zak hujayrasi"
+      ],
+      [
+       "Unipotent",
+       "Faqat bitta hujayra turi",
+       "Spermatogoniyalar, epidermisning bazal hujayralari"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Tez yangilanuvchi to‘qimalar (suyak ko‘migi, ichak epiteliysi, soch follikulalari, spermatogen epiteliy) bo‘linayotgan hujayralarga ta’sir qiluvchi **nurlanish va sitostatiklarga** eng sezgir. Shu sababli kimyoterapiyada anemiya, leykopeniya, ich ketishi, soch to‘kilishi va bepushtlik kuzatiladi. Suyak ko‘migi o‘zak hujayralarini ko‘chirib o‘tkazish leykozlarni davolashda qo‘llaniladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "5. Meyoz va uning bosqichlari",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Meyoz** — jinsiy hujayralar (gametalar) yetilishida kuzatiladigan, xromosomalar sonini ikki marta kamaytiruvchi bo‘linish. Bir marta DNK replikatsiyasidan keyin ketma-ket **ikki bo‘linish** (meyoz I va meyoz II) bo‘ladi va diploid (2n) hujayradan to‘rtta gaploid (n) hujayra hosil bo‘ladi (Rasm 3.5)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t03_meyoz.webp",
+     "w": 954,
+     "h": 597,
+     "lang": true,
+     "label": "Rasm 3.5",
+     "caption": "Meyoz bo‘linishi bosqichlari: meyoz I (profaza I, metafaza I, anafaza I, telofaza I) va meyoz II (profaza II, metafaza II, anafaza II, telofaza II) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "h",
+     "text": "Meyoz I — reduksion bo‘linish"
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.9. I profazaning bosqichlari",
+     "head": [
+      "Bosqich",
+      "Jarayon"
+     ],
+     "rows": [
+      [
+       "Leptotena",
+       "Xromosomalar ingichka uzun iplar ko‘rinishida"
+      ],
+      [
+       "Zigotena",
+       "Gomologik xromosomalar juftlashadi — **konyugatsiya**; bivalentlar (tetradalar) hosil bo‘ladi"
+      ],
+      [
+       "Paxitena",
+       "Xromosomalar yo‘g‘onlashadi; gomologik xromosomalarning xromatidlari orasida qismlar almashinuvi — **krossingover**"
+      ],
+      [
+       "Diplotena",
+       "Gomologlar bir-biridan uzoqlasha boshlaydi, xiazmalar (kesishish joylari) ko‘rinadi; odam ovotsitlari shu bosqichda (diktioten) yillab to‘xtab turadi"
+      ],
+      [
+       "Diakinez",
+       "Xromosomalar maksimal spirallanadi, yadrocha va yadro qobig‘i yo‘qoladi"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Metafaza I** — bivalentlar ekvatorda joylashadi (har bir juftning gomologlari qarama-qarshi qutblarga qaragan) — 2n4c.",
+      "**Anafaza I** — qutblarga xromatidlar emas, **butun gomologik xromosomalar** (har biri ikki xromatidli) tortiladi; har bir juftning tarqalishi boshqa juftlarga bog‘liq emas — 1n2c har bir qutbda.",
+      "**Telofaza I** — ikkita hujayra hosil bo‘ladi, ularda xromosomalar soni gaploid, lekin har bir xromosoma ikki xromatidli (n2c)."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Interkinez** — meyoz I va II orasidagi qisqa davr; unda DNK replikatsiyasi **bo‘lmaydi**."
+    },
+    {
+     "type": "h",
+     "text": "Meyoz II — ekvatsion bo‘linish"
+    },
+    {
+     "type": "p",
+     "text": "Meyoz II mitozga o‘xshash kechadi: metafaza II da xromosomalar ekvatorda, anafaza II da sentromeralar bo‘linib, xromatidlar qutblarga tarqaladi. Natijada to‘rtta gaploid hujayra (1n1c) hosil bo‘ladi. Mitozdan farqi — xromosomalar soni gaploid va bo‘linish oldidan DNK sintezi bo‘lmaydi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.10. Mitoz va meyozning taqqoslanishi",
+     "head": [
+      "Belgi",
+      "Mitoz",
+      "Meyoz"
+     ],
+     "rows": [
+      [
+       "Hujayralar",
+       "Somatik",
+       "Jinsiy hujayralar yetilishi (gametogenez)"
+      ],
+      [
+       "Bo‘linishlar soni",
+       "Bitta",
+       "Ikkita"
+      ],
+      [
+       "Konyugatsiya va krossingover",
+       "Yo‘q",
+       "Bor (I profaza)"
+      ],
+      [
+       "Hosil bo‘ladigan hujayralar",
+       "2 ta, diploid (2n2c)",
+       "4 ta, gaploid (1n1c)"
+      ],
+      [
+       "Qiz hujayralarning genetik tarkibi",
+       "Ona hujayraga bir xil",
+       "Bir-biridan va ona hujayradan farqli"
+      ],
+      [
+       "Ahamiyati",
+       "O‘sish, regeneratsiya, jinssiz ko‘payish",
+       "Xromosomalar sonining avlodlarda doimiyligi, kombinativ o‘zgaruvchanlik"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Meyozda genetik xilma-xillikning **uchta manbai** bor: (1) krossingover; (2) metafaza I da gomologik juftlarning mustaqil tarqalishi — odamda 2^23^ dan ortiq kombinatsiya; (3) urug‘lanishda gametalarning tasodifiy qo‘shilishi. Shuning uchun aka-uka va opa-singillar (bir tuxumli egizaklardan tashqari) bir-biriga to‘liq o‘xshash bo‘lmaydi."
+      }
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Meyozda xromosomalarning ajralmasligi (**nondisyunksiya**) disomik (n + 1) va nullisomik (n − 1) gametalarni hosil qiladi. Ular normal gameta bilan qo‘shilsa **trisomiya** (Daun — 47,XX,+21; Klaynfelter — 47,XXY) yoki **monosomiya** (Shereshevskiy-Terner — 45,X) rivojlanadi. Nondisyunksiya xavfi onaning yoshi oshishi bilan ortadi, chunki ovotsitlar diplotenada uzoq yillar to‘xtab turadi."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Meyozning biologik ahamiyati"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "Gametalarda xromosomalar sonini ikki marta kamaytiradi — urug‘lanishda diploid to‘plam tiklanadi va avlodlar osha kariotip doimiyligi saqlanadi.",
+      "Krossingover va gomologlarning mustaqil tarqalishi hisobiga **kombinativ o‘zgaruvchanlik** manbai bo‘ladi.",
+      "Mendel qonunlarining (ajralish, mustaqil irsiylanish) sitologik asosini tashkil qiladi.",
+      "Meyoz xatolari (nondisyunksiya) xromosoma kasalliklarining asosiy sababidir."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.11. Odamda meyoz bosqichlarida xromosomalar va DNK miqdori",
+     "head": [
+      "Bosqich",
+      "Formula",
+      "Xromosomalar soni",
+      "Xromatidlar soni"
+     ],
+     "rows": [
+      [
+       "Meyoz oldidan (G~1~)",
+       "2n2c",
+       "46",
+       "46"
+      ],
+      [
+       "Profaza I, metafaza I (DNK replikatsiyasidan keyin)",
+       "2n4c",
+       "46 (23 bivalent)",
+       "92"
+      ],
+      [
+       "Telofaza I dan keyingi har bir hujayra",
+       "1n2c",
+       "23",
+       "46"
+      ],
+      [
+       "Meyoz II dan keyingi har bir gameta",
+       "1n1c",
+       "23",
+       "23"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "6. Ko‘payish shakllari",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Jinssiz ko‘payish** bitta ota-ona organizmi ishtirokida, gametalarsiz, mitoz asosida boradi; avlod ona organizmning genetik nusxasi (**kloni**) bo‘ladi. **Jinsiy ko‘payishda** ikki ota-onadan kelgan gametalar qo‘shiladi; avlodning genetik xilma-xilligi oshadi va bu o‘zgaruvchan muhitga moslanishni ta’minlaydi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 3.12. Ko‘payish shakllari",
+     "head": [
+      "Shakl",
+      "Turlari",
+      "Misollar"
+     ],
+     "rows": [
+      [
+       "Bir hujayralilarda jinssiz",
+       "Oddiy ikkiga bo‘linish, ko‘p bo‘linish (shizogoniya), kurtaklanish, sporulyatsiya",
+       "Amyoba, bezgak plazmodiysi, achitqi zamburug‘lari"
+      ],
+      [
+       "Ko‘p hujayralilarda jinssiz",
+       "Vegetativ ko‘payish (bo‘laklanish, kurtaklanish), sporalar bilan, poliembrioniya",
+       "Gidra, tasmasimon chuvalchang finnasi (exinokokk), bir tuxumli egizaklar"
+      ],
+      [
+       "Bir hujayralilarda jinsiy",
+       "Konyugatsiya (genetik axborot almashinuvi), kopulyatsiya (gametalar qo‘shilishi)",
+       "Infuzoriya-tufelka, bezgak plazmodiysi (chivinda)"
+      ],
+      [
+       "Ko‘p hujayralilarda jinsiy",
+       "Gametalar ishtirokida urug‘lanish; partenogenez (urug‘lanmagan tuxumdan rivojlanish), germafroditizm",
+       "Odam, sut emizuvchilar; asalari erkaklari; yassi chuvalchanglar"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Ko‘nikma: piyoz ildizi uchida mitoz fazalarini aniqlash",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Doimiy preparatni kichik obyektivda ko‘rib, ildiz uchining bo‘linuvchi (meristema) zonasini toping.",
+      "Katta obyektivga o‘tib, interfaza hujayrasini (yaxlit yadro, yadrocha) toping.",
+      "Profaza (ip-ip xromosomalar, yadro qobig‘i yo‘qolmoqda), metafaza (xromosomalar ekvatorda), anafaza (ikki qutbga ketayotgan xromosomalar guruhlari) va telofaza (ikki yadro, hujayra plastinkasi) hujayralarini toping.",
+      "Har bir fazani chizib, genetik formulasini yozing.",
+      "Ko‘rish maydonidagi hujayralarning qancha qismi interfazada ekanini sanab, mitotik indeksni hisoblang (mitozdagi hujayralar / jami hujayralar)."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Hayotiy va mitotik sikl tushunchalarini ta’riflang.",
+  "Interfaza davrlarida qanday jarayonlar kechadi? Har bir davrda genetik formula qanday?",
+  "Autosintetik va geterosintetik interfaza nima?",
+  "To‘qimalar hujayralar yangilanish jadalligiga ko‘ra qanday guruhlarga bo‘linadi?",
+  "Mitoz fazalarini va ularda kechadigan jarayonlarni ayting.",
+  "Mitozning biologik va tibbiy ahamiyati nimada?",
+  "Amitoz, endomitoz va politeniya nima?",
+  "Mitoz patologiyasiga misollar keltiring. Mozaitsizm qanday hosil bo‘ladi?",
+  "Meyoz I profazasining bosqichlarini tushuntiring.",
+  "Konyugatsiya va krossingover nima, ularning ahamiyati qanday?",
+  "Meyoz I va meyoz II ning farqlari nimada?",
+  "Mitoz va meyozni taqqoslang.",
+  "Meyozdagi xatolar qanday xromosoma kasalliklariga olib keladi?",
+  "Jinssiz va jinsiy ko‘payishning biologik ahamiyati qanday?",
+  "Bir hujayrali va ko‘p hujayrali organizmlarda ko‘payishning qanday shakllari bor?",
+  "G~0~-davr nima? Qaysi hujayralar G~0~ dan siklga qayta oladi?",
+  "Hujayra proliferatsiyasining stimulyatorlari va ingibitorlarini ayting.",
+  "Proto-onkogenlar va o‘sma supressor genlari nima? Ularning o‘sma rivojlanishidagi roli qanday?",
+  "Heyflik chegarasi va telomerazaning ahamiyatini tushuntiring.",
+  "O‘zak hujayralarning potentlik bo‘yicha turlarini misollar bilan ayting.",
+  "Mitoz patologiyasining asosiy guruhlarini ayting.",
+  "Apoptoz nekrozdan qanday farq qiladi?"
+ ],
+ "quiz": [
+  {
+   "q": "Interfazaning qaysi davrida DNK replikatsiyasi sodir bo‘ladi?",
+   "options": [
+    "S-davr",
+    "G~1~-davr",
+    "G~2~-davr",
+    "G~0~-davr",
+    "Metafaza"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "G~2~-davrda hujayraning genetik formulasi qanday?",
+   "options": [
+    "2n4c",
+    "2n2c",
+    "1n1c",
+    "4n4c",
+    "1n2c"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Kariotipni o‘rganish uchun mitozning qaysi fazasi eng qulay?",
+   "options": [
+    "Metafaza",
+    "Profaza",
+    "Anafaza",
+    "Telofaza",
+    "Interfaza"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Mitozning qaysi fazasida sentromeralar bo‘linib, xromatidlar qutblarga tortiladi?",
+   "options": [
+    "Anafaza",
+    "Metafaza",
+    "Profaza",
+    "Telofaza",
+    "Prometafaza"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi hujayralar postnatal davrda deyarli bo‘linmaydi?",
+   "options": [
+    "Neyronlar",
+    "Ichak epiteliysi",
+    "Qon hosil qiluvchi hujayralar",
+    "Epidermis bazal qavati",
+    "Spermatogoniylar"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Kolxitsin mitozni qanday to‘xtatadi?",
+   "options": [
+    "Bo‘linish duki hosil bo‘lishini buzadi",
+    "DNK replikatsiyasini to‘xtatadi",
+    "Yadro qobig‘ini yemiradi",
+    "Ribosomalarni bloklaydi",
+    "Sentromerani kesadi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Xromosomalar va duk hosil bo‘lmasdan yadroning belbog‘lanib bo‘linishi qanday ataladi?",
+   "options": [
+    "Amitoz",
+    "Endomitoz",
+    "Meyoz",
+    "Politeniya",
+    "Shizogoniya"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Drozofila so‘lak bezlaridagi gigant xromosomalar qanday jarayon natijasi?",
+   "options": [
+    "Politeniya",
+    "Amitoz",
+    "Krossingover",
+    "Nondisyunksiya",
+    "Konyugatsiya"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Krossingover meyozning qaysi bosqichida sodir bo‘ladi?",
+   "options": [
+    "I profazaning paxitenasida",
+    "Metafaza II da",
+    "Anafaza I da",
+    "Interkinezda",
+    "Telofaza II da"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Anafaza I da qutblarga nima tarqaladi?",
+   "options": [
+    "Butun gomologik xromosomalar (ikki xromatidli)",
+    "Alohida xromatidlar",
+    "Sentriolalar",
+    "Yadrochalar",
+    "Bivalentlar butunligicha bir qutbga"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Interkinez davri uchun nima xos?",
+   "options": [
+    "DNK replikatsiyasi bo‘lmaydi",
+    "DNK ikki marta replikatsiyalanadi",
+    "Krossingover bo‘ladi",
+    "Konyugatsiya bo‘ladi",
+    "Xromosomalar soni ikki baravar ortadi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Meyoz natijasida bitta diploid hujayradan nechta va qanday hujayra hosil bo‘ladi?",
+   "options": [
+    "4 ta gaploid",
+    "2 ta diploid",
+    "4 ta diploid",
+    "2 ta gaploid",
+    "8 ta gaploid"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Odam ovotsitlari meyozning qaysi bosqichida yillab to‘xtab turadi?",
+   "options": [
+    "Diplotena (diktioten)",
+    "Leptotena",
+    "Metafaza II",
+    "Anafaza I",
+    "Telofaza I"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Meyozda nondisyunksiya natijasida qaysi kasallik kelib chiqishi mumkin?",
+   "options": [
+    "Daun sindromi",
+    "Fenilketonuriya",
+    "Gemofiliya",
+    "O‘roqsimon hujayrali anemiya",
+    "Albinizm"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Bezgak plazmodiysining odam eritrotsitlarida ko‘payishi qaysi shaklga kiradi?",
+   "options": [
+    "Shizogoniya (ko‘p bo‘linish)",
+    "Konyugatsiya",
+    "Partenogenez",
+    "Kurtaklanish",
+    "Kopulyatsiya"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Normal somatik hujayralarning kulturada cheklangan marta bo‘linishi qanday ataladi?",
+   "options": [
+    "Heyflik chegarasi",
+    "Kontakt tormozlanish",
+    "Mitotik indeks",
+    "Endomitoz",
+    "Apoptoz"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "“Genom qo‘riqchisi” deb qaysi oqsil ataladi?",
+   "options": [
+    "p53",
+    "Tubulin",
+    "Siklin B",
+    "Telomeraza",
+    "Aktin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Blastotsistaning ichki hujayra massasi qanday o‘zak hujayralardan iborat?",
+   "options": [
+    "Pluripotent",
+    "Totipotent",
+    "Multipotent",
+    "Unipotent",
+    "Differensiyalangan"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Odamda telofaza I dan keyin har bir hujayrada nechta xromatid bo‘ladi?",
+   "options": [
+    "46",
+    "23",
+    "92",
+    "69",
+    "12"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Apoptoz uchun qaysi belgi xos?",
+   "options": [
+    "Hujayra burishadi va yallig‘lanishsiz fagotsitozga uchraydi",
+    "Hujayra shishib yoriladi",
+    "Yallig‘lanish rivojlanadi",
+    "To‘qimaning katta sohasi nobud bo‘ladi",
+    "Yadro erib ketadi (kariolizis)"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Masala 1",
+   "text": "Bir guruh hujayralarning genetik materiali o‘rganilganda ular 2n2c ekanligi aniqlandi. Bo‘linishdan keyin ayrim hujayralarda DNK miqdori 2c, boshqalarida 1c bo‘lib chiqdi.",
+   "ask": "Bu hujayralar qaysi usul bilan bo‘lingan?",
+   "answer": "2c li qiz hujayralar hosil bo‘lishi mitozga xos: 2n2c hujayra S-davrda 2n4c bo‘lib, mitozdan keyin ikkita 2n2c hujayra beradi. 1c li hujayralar esa meyozning ikkinchi bo‘linishidan keyin (1n1c) hosil bo‘ladi. Demak, guruhdagi bir qism hujayralar mitoz, boshqa qismi meyoz (gametogenez) yo‘li bilan bo‘lingan."
+  },
+  {
+   "title": "Masala 2",
+   "text": "Zararli omil ta’sirida hujayrada bo‘linish duki iplari hosil bo‘lmadi.",
+   "ask": "Qanday jarayonlar buziladi va natija qanday bo‘ladi?",
+   "answer": "Duk iplari bo‘lmasa, xromosomalar metafaza plastinkasiga yig‘ila olmaydi va anafazada qutblarga tarqalmaydi; mitoz metafazada to‘xtaydi (K-mitoz). Agar hujayra keyin yadro qobig‘ini qayta hosil qilsa, xromosomalar soni ikki baravar ortgan poliploid (4n) hujayra paydo bo‘ladi. Shu prinsipdan kolxitsin bilan kariotip tahlilida va poliploid o‘simliklar olishda, vinkristin bilan o‘smalarni davolashda foydalaniladi."
+  },
+  {
+   "title": "Masala 3",
+   "text": "Hosil bo‘lgan jinsiy hujayralarda xromosomalar soni normadan ortiq ekanligi aniqlandi.",
+   "ask": "Meyozning qaysi davrlari buzilgan bo‘lishi mumkin va bu qanday oqibatga olib keladi?",
+   "answer": "Anafaza I da gomologik xromosomalar juftining ajralmasligi (n + 1 va n − 1 gametalar) yoki anafaza II da opa-singil xromatidlarning ajralmasligi sabab bo‘ladi. Disomik (n + 1) gameta normal gameta bilan qo‘shilsa trisomiya (47 xromosoma) hosil bo‘ladi: 21-juft bo‘yicha — Daun sindromi, XXY — Klaynfelter sindromi. Nullisomik gametadan monosomiya (45,X — Shereshevskiy-Terner sindromi) rivojlanadi."
+  },
+  {
+   "title": "Masala 4",
+   "text": "Piyoz ildizi uchi preparatida 500 ta hujayra sanaldi: 440 tasi interfazada, 30 tasi profazada, 10 tasi metafazada, 8 tasi anafazada va 12 tasi telofazada.",
+   "ask": "Mitotik indeksni hisoblang. Qaysi faza eng uzoq davom etadi?",
+   "answer": "Mitozdagi hujayralar: 30 + 10 + 8 + 12 = 60. Mitotik indeks = 60 / 500 = 0,12 (yoki 12 %, ya’ni 120 ‰). Fazaning davomiyligi undagi hujayralar soniga mutanosib bo‘ladi: mitoz fazalaridan eng uzoq davom etadigani — **profaza** (30 ta hujayra), eng qisqasi — **anafaza** (8 ta). Butun sikl ichida esa eng uzun davr **interfaza** (440 ta hujayra, 88 %)."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Leykozga qarshi kimyoterapiya olayotgan bemorda soch to‘kilishi, og‘iz shilliq qavatida yaralar, ich ketishi va qonda leykotsitlar kamayishi kuzatildi.",
+   "ask": "Nima uchun aynan shu to‘qimalar zararlanadi?",
+   "answer": "Sitostatiklar bo‘linayotgan hujayralarga (DNK sintezi yoki bo‘linish dukiga) ta’sir qiladi. Ular faqat o‘sma hujayralarini emas, balki **yangilanuvchi hujayra populyatsiyalarini** ham zararlaydi: soch follikulalari, og‘iz va ichak epiteliysi, suyak ko‘migining qon hosil qiluvchi hujayralari. Neyronlar, kardiomiotsitlar kabi statik populyatsiyalar deyarli zararlanmaydi. Davolash kurslari orasida tanaffus o‘zak hujayralarning tiklanishiga imkon beradi."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Retinoblastoma (ko‘z to‘r pardasi o‘smasi) bilan kasallangan bolada o‘sma ikkala ko‘zda ham erta yoshda rivojlangan. Uning otasi ham bolaligida shu kasallik bilan og‘rigan.",
+   "ask": "Bu holatni o‘sma supressor genlari nuqtai nazaridan tushuntiring.",
+   "answer": "**RB1** — o‘sma supressor geni: uning oqsili (Rb) hujayraning G~1~ dan S davrga o‘tishini to‘xtatib turadi. O‘sma rivojlanishi uchun genning **ikkala alleli** ishdan chiqishi kerak (A. Knudson “ikki zarba” gipotezasi). Irsiy shaklda bola bitta mutant allelni otasidan oladi (birinchi “zarba” barcha hujayralarda bor), to‘r parda hujayralaridan birida ikkinchi allel tasodifan shikastlansa, o‘sma rivojlanadi — shuning uchun o‘sma erta, ko‘p o‘choqli va ikki tomonlama bo‘ladi. Kasallikka moyillik autosom-dominant tipda irsiylanadi."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Mitotik sikl",
+   "back": "Interfaza (G~1~, S, G~2~) + mitoz"
+  },
+  {
+   "front": "S-davr",
+   "back": "DNK replikatsiyasi: 2n2c → 2n4c"
+  },
+  {
+   "front": "Metafaza",
+   "back": "Xromosomalar ekvatorda; kariotip tahlili uchun eng qulay"
+  },
+  {
+   "front": "Anafaza",
+   "back": "Sentromeralar bo‘linib, xromatidlar qutblarga tarqaladi"
+  },
+  {
+   "front": "Endomitoz",
+   "back": "Sitokinezsiz xromosomalar ikkilanishi → poliploidiya"
+  },
+  {
+   "front": "Konyugatsiya",
+   "back": "Zigotenada gomologik xromosomalarning juftlashishi"
+  },
+  {
+   "front": "Krossingover",
+   "back": "Paxitenada gomologik xromatidlar orasida qismlar almashinuvi"
+  },
+  {
+   "front": "Meyoz I",
+   "back": "Reduksion bo‘linish: gomologlar ajraladi, 2n → n"
+  },
+  {
+   "front": "Meyoz II",
+   "back": "Ekvatsion bo‘linish: xromatidlar ajraladi, natija 1n1c"
+  },
+  {
+   "front": "Nondisyunksiya",
+   "back": "Xromosomalar ajralmasligi → trisomiya va monosomiyalar"
+  },
+  {
+   "front": "G~0~-davr",
+   "back": "Sikldan chiqqan, bo‘linmaydigan, lekin ishlayotgan hujayra holati"
+  },
+  {
+   "front": "Proto-onkogen",
+   "back": "Bo‘linishni rag‘batlantiruvchi normal gen; mutatsiyada onkogenga aylanadi"
+  },
+  {
+   "front": "Telomeraza",
+   "back": "Xromosoma uchlarini (telomeralarni) tiklovchi ferment; o‘zak va o‘sma hujayralarida faol"
+  },
+  {
+   "front": "Kontakt tormozlanish",
+   "back": "Hujayralar bir-biriga tekkach bo‘linishni to‘xtatishi; o‘sma hujayralarida yo‘qoladi"
+  },
+  {
+   "front": "Pluripotentlik",
+   "back": "Uchala embrion varag‘i hujayralarini hosil qila olish qobiliyati"
+  }
+ ],
+ "summary": [
+  {
+   "kind": "eslab",
+   "label": "Eslab qoling",
+   "text": "Mitoz — **bir bo‘linish, ikki bir xil diploid hujayra**; meyoz — **ikki bo‘linish, to‘rt xil gaploid hujayra**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Yodlash usuli",
+   "text": "I profaza bosqichlari: **“Le-Zi-Pa-Di-Di”** — Leptotena, Zigotena (juftlashadi), Paxitena (krossingover), Diplotena, Diakinez."
+  },
+  {
+   "kind": "klinik",
+   "label": "Klinik ahamiyati",
+   "text": "Meyozdagi nondisyunksiya — trisomiya va monosomiyalarning (Daun, Klaynfelter, Terner) asosiy sababi; mitoz nazoratining buzilishi o‘smalarga olib keladi."
+  }
+ ]
+}

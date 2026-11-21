@@ -1,0 +1,956 @@
+{
+ "id": "04",
+ "no": 4,
+ "title": "Monohybrid cross. Interaction of allelic genes, multiple allelism. Di- and polyhybrid crosses. Interaction of non-allelic genes",
+ "goals": [
+  {
+   "type": "p",
+   "text": "To teach the student the basic concepts and methods of genetics, G. Mendel’s laws and their cytological basis, the types of interaction of allelic and non-allelic genes, the inheritance of blood groups in humans and the method of solving genetic problems."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the basic terms of genetics (gene, allele, genotype, phenotype, homo- and heterozygote) and the rules of notation;",
+    "Mendel’s three laws and the hypothesis of gamete purity;",
+    "complete and incomplete dominance, codominance and multiple allelism;",
+    "complementarity, epistasis, polymery and pleiotropy;",
+    "the inheritance of blood groups in the ABO and Rh systems."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "solve problems on mono- and dihybrid crosses with a Punnett square;",
+    "determine the parental genotype from the result of a test cross;",
+    "calculate the probability of blood groups in children."
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "title": "1. Genetics and its basic concepts",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Genetics** is the science of the laws of heredity and variability of organisms. Its founder is the Czech scientist **G. Mendel**, who announced the laws of inheritance in 1865 on the basis of his experiments with peas. These laws were rediscovered in 1900 by H. de Vries, C. Correns and E. Tschermak; the term “genetics” was introduced by W. Bateson in 1906. Later stages: T. Morgan’s chromosome theory, the DNA model of J. Watson and F. Crick (1953), the discovery of the genetic code, genetic engineering and the reading of the human genome (2003)."
+    },
+    {
+     "type": "table",
+     "title": "Table 4.1. Basic terms of genetics",
+     "head": [
+      "Term",
+      "Definition"
+     ],
+     "rows": [
+      [
+       "Gene",
+       "A segment of DNA that determines the structure of a particular protein or RNA; the unit of heredity"
+      ],
+      [
+       "Locus",
+       "The position of a gene on a chromosome"
+      ],
+      [
+       "Allelic genes",
+       "Genes located at the same loci of homologous chromosomes and determining different states of one trait (A and a)"
+      ],
+      [
+       "Dominant trait",
+       "A trait that appears (prevails) in the heterozygote — written with a capital letter (A)"
+      ],
+      [
+       "Recessive trait",
+       "A trait that appears only in the homozygote (aa) — written with a small letter"
+      ],
+      [
+       "Homozygote",
+       "An organism with identical alleles (AA or aa); forms one kind of gamete"
+      ],
+      [
+       "Heterozygote",
+       "An organism with different alleles (Aa); forms two kinds of gametes"
+      ],
+      [
+       "Genotype",
+       "The sum of the genes of an organism"
+      ],
+      [
+       "Phenotype",
+       "The sum of all traits formed under the influence of the genotype and environment"
+      ],
+      [
+       "Hybrid",
+       "Offspring obtained by crossing genetically different parents"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Rules of notation:** P — parents, ♀ — female, ♂ — male, × — cross, G — gametes, F~1~, F~2~ — first and second generation hybrids. The female organism is written first. In human genetics the marriage of parents is also shown with “×”."
+    },
+    {
+     "type": "p",
+     "text": "The main conditions of the **hybridological method** used by Mendel: pure lines (homozygotes) were chosen, clearly contrasting alternative traits were observed, and each generation was analyzed separately and quantitatively (statistically)."
+    }
+   ]
+  },
+  {
+   "title": "2. Monohybrid cross. Mendel’s first and second laws",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A **monohybrid cross** is a cross of organisms that differ in one pair of alternative traits. When Mendel crossed yellow-seeded (AA) and green-seeded (aa) peas, all plants in F~1~ had yellow seeds (Aa); when F~1~ plants were crossed with each other, yellow and green seeds appeared in F~2~ in a 3 : 1 ratio (Figure 4.1)."
+    },
+    {
+     "type": "table",
+     "title": "Table 4.2. Pea traits studied in Mendel's experiments and the F~2~ results",
+     "head": [
+      "Trait",
+      "Dominant",
+      "Recessive",
+      "Numbers in F~2~ (ratio)"
+     ],
+     "rows": [
+      [
+       "Seed colour",
+       "Yellow",
+       "Green",
+       "6022 : 2001 (3,01 : 1)"
+      ],
+      [
+       "Seed shape",
+       "Round",
+       "Wrinkled",
+       "5474 : 1850 (2,96 : 1)"
+      ],
+      [
+       "Flower colour",
+       "Red (purple)",
+       "White",
+       "705 : 224 (3,15 : 1)"
+      ],
+      [
+       "Pod shape",
+       "Inflated",
+       "Constricted",
+       "882 : 299 (2,95 : 1)"
+      ],
+      [
+       "Pod colour",
+       "Green",
+       "Yellow",
+       "428 : 152 (2,82 : 1)"
+      ],
+      [
+       "Flower position",
+       "Axial",
+       "Terminal",
+       "651 : 207 (3,14 : 1)"
+      ],
+      [
+       "Stem length",
+       "Tall",
+       "Short",
+       "787 : 277 (2,84 : 1)"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t04_monoduragay.webp",
+     "w": 552,
+     "h": 481,
+     "lang": true,
+     "label": "Figure 4.1",
+     "caption": "Mendel’s first and second laws shown in a Punnett square: crossing yellow (AA) and green (aa) peas, uniformity of F~1~ and segregation in F~2~ in a 3 : 1 ratio (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Mendel’s first law (law of uniformity of first-generation hybrids):** when two homozygous organisms differing in alternative traits are crossed, F~1~ hybrids are uniform in genotype and phenotype.",
+      "**Mendel’s second law (law of segregation):** when F~1~ heterozygotes are crossed with each other, traits segregate in F~2~ in a 3 : 1 ratio by phenotype and 1 : 2 : 1 by genotype (1 AA : 2 Aa : 1 aa)."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Hypothesis of gamete purity:** in a hybrid organism allelic genes do not blend; each gamete receives **only one allele** of the pair. Its **cytological basis** is the separation of homologous chromosomes (and the alleles on them) into different gametes in anaphase I of meiosis."
+    },
+    {
+     "type": "p",
+     "text": "A **test cross** is crossing an organism with a dominant phenotype with a recessive homozygote (aa) to determine its genotype. If all offspring show the dominant trait, the organism tested is homozygous (AA); if segregation in a 1 : 1 ratio occurs, it is heterozygous (Aa)."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Problem-solving algorithm: (1) denote the traits with letters; (2) write the genotypes of the parents; (3) determine the gametes of each (each gamete carries one allele of each gene); (4) draw the Punnett square; (5) calculate the genotype and phenotype ratio or the probability (%)."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Probability rules in genetics problems"
+    },
+    {
+     "type": "list",
+     "ordered": false,
+     "items": [
+      "**Product rule** — the probability that two independent events occur together equals the product of their probabilities. For example, from the marriage Aa × Aa the probability that **two** children are both aa is 1/4 × 1/4 = 1/16.",
+      "**Sum rule** — the probability that one of mutually exclusive events occurs equals the sum of their probabilities. For example, from Aa × Aa the probability of a child with the dominant phenotype is AA (1/4) + Aa (2/4) = 3/4.",
+      "Each new pregnancy is an **independent event**: whether previous children were affected or healthy does not change the probability for the next child.",
+      "A healthy person with the dominant phenotype who has an affected (recessive) sibling is heterozygous with probability **2/3** (he cannot be aa; of the remaining AA : 2 Aa)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Interaction of allelic genes and multiple allelism",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Table 4.3. Types of interaction of allelic genes",
+     "head": [
+      "Type",
+      "Essence",
+      "Phenotype ratio in F~2~",
+      "Example in humans"
+     ],
+     "rows": [
+      [
+       "Complete dominance",
+       "The dominant allele completely masks the recessive one; Aa = AA",
+       "3 : 1",
+       "Brown eyes, polydactyly, curly hair"
+      ],
+      [
+       "Incomplete dominance",
+       "An intermediate trait appears in the heterozygote",
+       "1 : 2 : 1",
+       "Cystinuria, sickle cell anemia (mild form in the heterozygote)"
+      ],
+      [
+       "Codominance",
+       "Both alleles are fully expressed in the heterozygote",
+       "1 : 2 : 1",
+       "Blood group AB (IV) — I^A^I^B^; MN blood groups"
+      ],
+      [
+       "Overdominance",
+       "The heterozygote has a stronger trait than the homozygote",
+       "—",
+       "Resistance of HbAS heterozygotes to malaria"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Lethal genes and distortion of the segregation ratio"
+    },
+    {
+     "type": "p",
+     "text": "Segregation in F~2~ is not always 3 : 1. Some genes in the homozygous state kill the organism during embryonic life or soon after birth — they are called **lethal genes**. For example, when black-brown foxes are crossed together, the offspring segregate not 3 : 1 but **2 : 1**, because dominant homozygotes (AA) die as embryos and only Aa and aa are born. A similar situation is seen in **Karakul sheep** (AA lambs for the brown colour gene die soon because their gastrointestinal tract is underdeveloped) and in yellow mice."
+    },
+    {
+     "type": "p",
+     "text": "In humans the **brachydactyly** (short fingers) gene shows short fingers in heterozygotes, while homozygous embryos die. Homozygotes for the **sickle-cell anaemia** gene (HbS HbS) die early from severe anaemia, while heterozygotes are almost healthy and **resistant to malaria**. That is why the HbS and **thalassaemia** genes are common in regions where malaria is widespread (Africa, the Mediterranean) — an example of **balanced polymorphism**."
+    },
+    {
+     "type": "p",
+     "text": "**Multiple allelism** is the presence of more than two alleles at one locus in a population, though each organism carries only two of them. In humans the **ABO blood groups** are determined by the alleles I^0^, I^A^ and I^B^: I^A^ and I^B^ are dominant over I^0^ and codominant with each other."
+    },
+    {
+     "type": "table",
+     "title": "Table 4.4. Genotypes of blood groups in the ABO system",
+     "head": [
+      "Blood group",
+      "Antigen on erythrocytes",
+      "Antibody in plasma",
+      "Genotype"
+     ],
+     "rows": [
+      [
+       "I (0)",
+       "None",
+       "α and β",
+       "I^0^I^0^"
+      ],
+      [
+       "II (A)",
+       "A",
+       "β",
+       "I^A^I^A^ or I^A^I^0^"
+      ],
+      [
+       "III (B)",
+       "B",
+       "α",
+       "I^B^I^B^ or I^B^I^0^"
+      ],
+      [
+       "IV (AB)",
+       "A and B",
+       "None",
+       "I^A^I^B^"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The **Rhesus factor** is determined by one main gene: Rh-positive (D — dominant) and Rh-negative (dd). If an Rh-negative mother carries an Rh-positive fetus, **Rh incompatibility** (hemolytic disease of the newborn) may develop in the second and later pregnancies."
+    },
+    {
+     "type": "p",
+     "text": "**Mechanism of rhesus conflict:** in the first pregnancy of an Rh-negative (dd) mother, the red cells of an Rh-positive (Dd) fetus pass into the mother's blood mainly during delivery, and **anti-D antibodies** form in her. In the next pregnancy these IgG antibodies cross the placenta and destroy the fetal red cells: haemolytic anaemia, jaundice and, in severe cases, **hydrops fetalis** develop. Prevention is to give the Rh-negative mother **anti-D immunoglobulin** within 72 hours after delivery (or abortion, miscarriage). If the father is dd there is no conflict; if the father is Dd, the probability that the fetus is Rh-positive is 50 %."
+    },
+    {
+     "type": "p",
+     "text": "Other blood-group systems are also inherited codominantly. The **MN system** has the alleles L^M^ and L^N^: L^M^L^M^ — group M, L^N^L^N^ — group N, L^M^L^N^ — group MN (both antigens present). ABO incompatibility between mother and fetus (mother group I (0), fetus group II (A) or III (B)) can also cause haemolytic disease of the fetus, but it is usually mild."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Blood group genetics is used in forensic medicine to **exclude** paternity: for example, a mother with group I (0) cannot have a child with group IV (AB). But blood groups **cannot prove** paternity — DNA analysis is needed for that. In the **Bombay phenomenon**, under the action of an epistatic recessive gene (hh), a person carrying the I^A^ or I^B^ gene appears to be group I (0)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Di- and polyhybrid crosses. Mendel’s third law",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A **dihybrid cross** is a cross of organisms that differ in two pairs of alternative traits. When Mendel crossed yellow smooth (AABB) and green wrinkled (aabb) peas, all F~1~ were yellow smooth (AaBb). The F~1~ hybrid forms 4 kinds of gametes (AB, Ab, aB, ab), and in F~2~ there are 16 combinations, 9 genotypes and 4 phenotypes in a 9 : 3 : 3 : 1 ratio (Figure 4.2)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t04_diduragay.webp",
+     "w": 1283,
+     "h": 783,
+     "lang": true,
+     "label": "Figure 4.2",
+     "caption": "Mendel’s third law (independent inheritance of traits) in a Punnett square: 16 combinations and the 9 : 3 : 3 : 1 phenotype ratio in the cross AaBb × AaBb; the letters under each genotype show the phenotype — D dominant, R recessive — for the first and second trait (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Mendel’s third law (law of independent inheritance):** in a dihybrid cross, segregation for each pair of traits proceeds in a 3 : 1 ratio independently of the other pair, and genes combine in all possible combinations. The law holds only if the genes are located **on different pairs of chromosomes**. Its cytological basis is the independent separation of homologous pairs in metaphase I."
+    },
+    {
+     "type": "p",
+     "text": "Independent assortment can be proved by a **test cross**: in the cross AaBb × aabb four phenotypes appear in a 1 : 1 : 1 : 1 ratio."
+    },
+    {
+     "type": "table",
+     "title": "Table 4.5. General formulas of polyhybrid crosses (n — number of heterozygous gene pairs)",
+     "head": [
+      "Indicator",
+      "Monohybrid (n = 1)",
+      "Dihybrid (n = 2)",
+      "Trihybrid (n = 3)",
+      "General formula"
+     ],
+     "rows": [
+      [
+       "Kinds of F~1~ gametes",
+       "2",
+       "4",
+       "8",
+       "2^n^"
+      ],
+      [
+       "F~2~ combinations",
+       "4",
+       "16",
+       "64",
+       "4^n^"
+      ],
+      [
+       "F~2~ genotypes",
+       "3",
+       "9",
+       "27",
+       "3^n^"
+      ],
+      [
+       "F~2~ phenotypes (with complete dominance)",
+       "2",
+       "4",
+       "8",
+       "2^n^"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "5. Interaction of non-allelic genes and pleiotropy",
+   "blocks": [
+    {
+     "type": "table",
+     "title": "Table 4.6. Interaction of non-allelic genes",
+     "head": [
+      "Type",
+      "Essence",
+      "Ratio in F~2~",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Complementarity",
+       "Two dominant non-allelic genes together produce a new trait",
+       "9 : 7, 9 : 6 : 1, 9 : 3 : 4",
+       "Normal hearing in humans: D_E_ (D — cochlea, E — development of the auditory nerve)"
+      ],
+      [
+       "Dominant epistasis",
+       "The dominant allele of one gene suppresses the expression of another (hypostatic) gene",
+       "13 : 3, 12 : 3 : 1",
+       "Plumage color in chickens (gene I suppresses color)"
+      ],
+      [
+       "Recessive epistasis",
+       "A recessive homozygote (aa) suppresses the action of another gene",
+       "9 : 3 : 4",
+       "Bombay phenomenon (hh), albinism"
+      ],
+      [
+       "Polymery (cumulative)",
+       "Several genes act on the same trait; the more dominant alleles, the stronger the trait",
+       "1 : 4 : 6 : 4 : 1",
+       "Human skin color, height, blood pressure, intellectual ability"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Pleiotropy** is the effect of one gene on several traits. For example, in **Marfan syndrome** a mutation of the gene for the connective tissue protein fibrillin causes long “spider fingers”, dislocation of the lens and aortic aneurysm together; the **phenylketonuria** gene causes intellectual disability, light skin and hair and a peculiar odor of the urine."
+    },
+    {
+     "type": "p",
+     "text": "Pleiotropy is **primary** or **secondary**. In primary pleiotropy one altered gene affects several tissues at the same time: for example, in **Hartnup disease** absorption of the amino acid tryptophan is impaired in both the intestine and the kidney tubules. In secondary pleiotropy the first trait sets off a chain of further traits: in sickle-cell anaemia, change of haemoglobin → change of red-cell shape → their sticking together and breakdown → anaemia and damage to the heart, kidneys and brain."
+    },
+    {
+     "type": "p",
+     "text": "The terms “penetrance” and “expressivity” were introduced in 1927 by N.V. Timofeev-Resovsky. Penetrance is expressed as a percentage: for example, the penetrance of the retinoblastoma gene is ≈ 90 %, which means 10 % of gene carriers do not develop a tumour but pass the gene to their children. An example of expressivity: in polydactyly the extra finger may be on one hand only or on all four limbs."
+    },
+    {
+     "type": "table",
+     "title": "Table 4.7. Examples of monogenic human traits and diseases",
+     "head": [
+      "Dominant",
+      "Recessive"
+     ],
+     "rows": [
+      [
+       "Brown (dark) eyes",
+       "Blue eyes"
+      ],
+      [
+       "Curly hair, dark hair",
+       "Straight hair, red hair"
+      ],
+      [
+       "Polydactyly, brachydactyly",
+       "Albinism"
+      ],
+      [
+       "Rh-positive, blood groups II (A) and III (B)",
+       "Rh-negative, blood group I (0)"
+      ],
+      [
+       "Achondroplasia (dwarfism)",
+       "Phenylketonuria, galactosaemia"
+      ],
+      [
+       "Marfan syndrome, familial hypercholesterolaemia",
+       "Cystic fibrosis, sickle-cell anaemia"
+      ],
+      [
+       "Huntington's chorea",
+       "Wilson–Konovalov disease, Tay–Sachs disease"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "yodlash",
+     "parts": [
+      {
+       "type": "p",
+       "text": "If the ratio adds up to **16**, a dihybrid cross (two genes) is involved: 9 + 7, 13 + 3, 12 + 3 + 1, 9 + 3 + 4, 15 + 1 are all “merged” variants of 9 : 3 : 3 : 1."
+      }
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "The expression of a gene is described by **penetrance** (the percentage of gene carriers in whom the trait appears) and **expressivity** (the degree to which the trait is expressed). For example, the polydactyly gene has incomplete penetrance."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "6. Worked examples of genetics problems",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In the examples below the solution algorithm (notation → parental genotypes → gametes → Punnett square → ratio or probability) is applied step by step."
+    },
+    {
+     "type": "sub",
+     "text": "Example 1. Incomplete dominance"
+    },
+    {
+     "type": "p",
+     "text": "**Problem:** in humans cystinuria is inherited as incomplete dominance: aa — healthy, Aa — excess cystine in urine, AA — cystine kidney stones. Both parents have excess cystine in urine (Aa). What conditions are possible in their children? **Solution:** P: Aa × Aa; G: A, a and A, a; F~1~: 1 AA : 2 Aa : 1 aa. So 25 % of children have kidney stones (AA), 50 % have excess cystine in urine (Aa) and 25 % are healthy (aa). In incomplete dominance the genotype and phenotype ratios are the same (1 : 2 : 1)."
+    },
+    {
+     "type": "sub",
+     "text": "Example 2. Disputed paternity by blood groups"
+    },
+    {
+     "type": "p",
+     "text": "**Problem:** the mother has group II (A), the child group I (0). Two men deny paternity: the first has group IV (AB), the second group III (B). Which of them could be the child's father? **Solution:** the child is I^0^I^0^ — one I^0^ came from the mother (so the mother is I^A^I^0^), the other from the father. A man with group IV (AB) (I^A^I^B^) cannot give the I^0^ allele — he cannot be the father. A man with group III (B) **may** be the father if he is I^B^I^0^ (but this does not prove paternity)."
+    },
+    {
+     "type": "sub",
+     "text": "Example 3. Dihybrid cross (human)"
+    },
+    {
+     "type": "p",
+     "text": "**Problem:** polydactyly (P) and brown eyes over blue (B) are dominant; the genes are on different chromosomes. The father is heterozygous for both traits (PpBb) and the mother is five-fingered and blue-eyed (ppbb). What is the probability of a five-fingered blue-eyed child? **Solution:** this is a test cross: the father's gametes are PB, Pb, pB, pb (1/4 each), the mother's gamete is pb. F~1~: PpBb, Ppbb, ppBb, ppbb — 1 : 1 : 1 : 1. The probability of a five-fingered blue-eyed (ppbb) child is 1/4 = 25 %. The product rule gives the same: pp (1/2) × bb (1/2) = 1/4."
+    },
+    {
+     "type": "sub",
+     "text": "Example 4. Complementarity (congenital deafness)"
+    },
+    {
+     "type": "p",
+     "text": "**Problem:** normal hearing needs two non-allelic dominant genes — D (development of the cochlea) and E (development of the auditory nerve). Can deaf parents (DDee × ddEE) have hearing children? **Solution:** the father's gamete is De and the mother's is dE; all children are DdEe — **hearing**, because both dominant genes came together. If two DdEe people marry, hearing (D_E_) and deaf children appear in F~2~ in a ratio of 9 : 7."
+    },
+    {
+     "type": "sub",
+     "text": "Example 5. Polygeny (skin colour)"
+    },
+    {
+     "type": "p",
+     "text": "**Problem:** skin colour is determined by two pairs of polymeric genes: A~1~A~1~A~2~A~2~ — black, a~1~a~1~a~2~a~2~ — white; the more dominant alleles, the darker the skin. How is skin colour distributed among the children of two mulattoes (A~1~a~1~A~2~a~2~)? **Solution:** each parent forms 4 kinds of gametes; F~2~ has 16 combinations. By the number of dominant alleles: 4 (black) — 1/16, 3 (dark mulatto) — 4/16, 2 (medium mulatto) — 6/16, 1 (light mulatto) — 4/16, 0 (white) — 1/16. The ratio is 1 : 4 : 6 : 4 : 1."
+    },
+    {
+     "type": "sub",
+     "text": "Example 6. A lethal gene"
+    },
+    {
+     "type": "p",
+     "text": "**Problem:** in mice yellow colour (A) is dominant over grey (a), and the AA genotype dies in the embryo. Two yellow mice were crossed and 12 live mice were obtained. How many are yellow? **Solution:** P: Aa × Aa; F~1~: 1 AA (dies) : 2 Aa (yellow) : 1 aa (grey). Among the living, yellow : grey = 2 : 1, that is 2/3 of 12 — 8 yellow and 4 grey."
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "If a problem says “an affected child was born to healthy parents”, the disease is **recessive** and both parents are heterozygous. If it says “a healthy child was born to affected parents”, the disease is **dominant** and both parents are heterozygous."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: solving a dihybrid cross problem",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Denote the traits: A — brown eyes, a — blue eyes; B — right-handedness, b — left-handedness.",
+      "Determine the parents’ genotypes from their phenotypes and the information about the children (if a child has a recessive trait, each parent carries the recessive allele of that gene).",
+      "Write the gametes of each parent (AaBb → AB, Ab, aB, ab).",
+      "Draw the Punnett square: horizontally — ♂ gametes, vertically — ♀ gametes.",
+      "Sort the genotypes in the squares into phenotypes and count them.",
+      "Write the answer as a ratio and a percentage (for example, the probability of a child with both recessive traits is 1/16 = 6.25 %)."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Name the stages of development and the methods of genetics.",
+  "Define the concepts gene, allele, genotype, phenotype, homozygote and heterozygote.",
+  "State Mendel’s first and second laws and explain them with an example.",
+  "What is the hypothesis of gamete purity and its cytological basis?",
+  "Why is a test cross performed?",
+  "List the types of interaction of allelic genes and give examples.",
+  "What is multiple allelism? How are the ABO blood groups inherited?",
+  "In what situation does Rh incompatibility develop?",
+  "State Mendel’s third law. Under what conditions does it hold?",
+  "How can independent assortment of genes be proved?",
+  "Write the general formulas of polyhybrid crosses.",
+  "Give human examples of complementarity, epistasis and polymery.",
+  "What is pleiotropy? Give examples.",
+  "Explain the concepts of penetrance and expressivity.",
+  "Which pea traits did Mendel study and what results did he obtain?",
+  "Explain the product and sum rules of probability with examples.",
+  "What are lethal genes? When does segregation occur in a ratio of 2 : 1?",
+  "How does rhesus conflict develop and how is it prevented?",
+  "Give examples of primary and secondary pleiotropy.",
+  "What is balanced polymorphism? Explain it with the example of sickle-cell anaemia."
+ ],
+ "quiz": [
+  {
+   "q": "Which law corresponds to segregation in a 3 : 1 phenotype ratio in F~2~?",
+   "options": [
+    "Mendel’s second law",
+    "Mendel’s first law",
+    "Mendel’s third law",
+    "Morgan’s law",
+    "Hardy-Weinberg law"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the genotype ratio in F~2~ of a monohybrid cross?",
+   "options": [
+    "1 : 2 : 1",
+    "3 : 1",
+    "1 : 1",
+    "9 : 3 : 3 : 1",
+    "1 : 1 : 1 : 1"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In a test cross, the organism being tested is crossed with what?",
+   "options": [
+    "A recessive homozygote",
+    "A dominant homozygote",
+    "A heterozygote",
+    "An F~1~ hybrid",
+    "One of its parents"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If a test cross gives segregation in a 1 : 1 ratio, the organism tested is:",
+   "options": [
+    "Heterozygous",
+    "Dominant homozygous",
+    "Recessive homozygous",
+    "Polyploid",
+    "Hemizygous"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the interaction of alleles in blood group IV (AB)?",
+   "options": [
+    "Codominance",
+    "Complete dominance",
+    "Incomplete dominance",
+    "Epistasis",
+    "Polymery"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If the parents are heterozygous with groups II (A) and III (B), which blood groups are possible in the children?",
+   "options": [
+    "I, II, III and IV",
+    "Only IV",
+    "Only II and III",
+    "Only I",
+    "II, III and IV"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If the mother has blood group I (0), which group is impossible for the child?",
+   "options": [
+    "IV (AB)",
+    "I (0)",
+    "II (A)",
+    "III (B)",
+    "All are possible"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many kinds of gametes does an organism with genotype AaBb form?",
+   "options": [
+    "4",
+    "2",
+    "8",
+    "16",
+    "1"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many genotypes are formed in F~2~ of a dihybrid cross?",
+   "options": [
+    "9",
+    "4",
+    "16",
+    "3",
+    "27"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "When does Mendel’s third law hold?",
+   "options": [
+    "When the genes are on different pairs of chromosomes",
+    "When the genes are linked on one chromosome",
+    "Only with incomplete dominance",
+    "Only on sex chromosomes",
+    "When there is no crossing over"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which interaction gives a 9 : 7 ratio in F~2~?",
+   "options": [
+    "Complementarity",
+    "Dominant epistasis",
+    "Polymery",
+    "Codominance",
+    "Complete dominance"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How is human skin color inherited?",
+   "options": [
+    "Cumulative polymery",
+    "Monogenic complete dominance",
+    "Codominance",
+    "X-linked",
+    "Y-linked"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the effect of one gene on several traits called?",
+   "options": [
+    "Pleiotropy",
+    "Polymery",
+    "Epistasis",
+    "Complementarity",
+    "Multiple allelism"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "The Bombay phenomenon is an example of which interaction?",
+   "options": [
+    "Recessive epistasis",
+    "Codominance",
+    "Polymery",
+    "Incomplete dominance",
+    "Complementarity"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many kinds of gametes does a trihybrid (AaBbCc) organism form?",
+   "options": [
+    "8",
+    "6",
+    "4",
+    "16",
+    "27"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "When two heterozygotes for a dominant lethal gene are crossed, what is the segregation among living offspring?",
+   "options": [
+    "2 : 1",
+    "3 : 1",
+    "1 : 2 : 1",
+    "1 : 1",
+    "9 : 7"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From the marriage Aa × Aa, what is the probability that both of two children are aa?",
+   "options": [
+    "1/16",
+    "1/4",
+    "1/8",
+    "1/2",
+    "3/16"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is given to an Rh-negative mother after delivery to prevent rhesus conflict?",
+   "options": [
+    "Anti-D immunoglobulin",
+    "Rh-positive blood",
+    "An antibiotic",
+    "Vitamin K",
+    "Insulin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which gene is linked to the malaria resistance of heterozygotes?",
+   "options": [
+    "HbS (sickle-cell anaemia)",
+    "The phenylketonuria gene",
+    "The haemophilia gene",
+    "The albinism gene",
+    "The Marfan syndrome gene"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What ratio of skin colour is expected among the children of two mulattoes (A~1~a~1~A~2~a~2~)?",
+   "options": [
+    "1 : 4 : 6 : 4 : 1",
+    "9 : 3 : 3 : 1",
+    "1 : 2 : 1",
+    "15 : 1",
+    "9 : 7"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Case 1",
+   "text": "In humans curly hair (A) is dominant over straight hair (a). A heterozygous curly-haired man married a straight-haired woman.",
+   "ask": "What genotypes and phenotypes are possible in the children? What is the probability of a straight-haired child?",
+   "answer": "P: ♀ aa × ♂ Aa. The woman’s gamete is a; the man’s are A and a. F~1~: Aa (curly) and aa (straight) in a 1 : 1 ratio. Thus the probability of a straight-haired child is 50 % (this is an example of a test cross)."
+  },
+  {
+   "title": "Case 2",
+   "text": "Wilson disease (disorder of copper metabolism) is inherited as an autosomal recessive trait. One parent is ill; the other is healthy and has healthy parents, but this parent’s brother has Wilson disease.",
+   "ask": "Determine the probability of an affected child in this family.",
+   "answer": "The affected parent is aa. The healthy parent comes from healthy parents who have an affected son, so their parents are Aa × Aa, and the healthy parent, being unaffected, is AA (1/3) or Aa (2/3). If he or she is Aa, the probability of an affected child in the marriage aa × Aa is 1/2. Overall probability: 2/3 × 1/2 = 1/3 (≈ 33 %). If the healthy partner is known to be heterozygous — 50 %, if homozygous — 0 %."
+  },
+  {
+   "title": "Case 3",
+   "text": "In humans brown eyes (A) are dominant over blue eyes (a), and nearsightedness — myopia (B) over normal vision (b). A blue-eyed myopic woman married a brown-eyed man with normal vision, and a blue-eyed child with normal vision was born.",
+   "ask": "Determine the genotypes of the parents and the probability of a brown-eyed myopic child in this family.",
+   "answer": "The child is aabb, so each parent gave the a and b alleles: the woman is aaBb, the man Aabb. Gametes: woman — aB, ab; man — Ab, ab. Children: AaBb (brown-eyed myopic), Aabb (brown-eyed normal), aaBb (blue-eyed myopic), aabb (blue-eyed normal) — each 1/4. The probability of a brown-eyed myopic child is 25 %."
+  },
+  {
+   "title": "Case 4",
+   "text": "An Rh-negative (dd) woman married an Rh-positive man. Their first child was born Rh-positive and healthy; no prophylaxis was given to the mother after delivery. In the second pregnancy signs of haemolytic disease were found in the fetus.",
+   "ask": "Why was the second fetus affected? What could the man's genotype be and what prophylaxis was needed?",
+   "answer": "During the first delivery the red cells of the Rh-positive fetus passed into the mother's blood and **anti-D antibodies** formed (sensitisation). In the second pregnancy the IgG antibodies crossed the placenta and destroyed the red cells of the Rh-positive fetus. The man may be DD or Dd: if DD, all children are Rh-positive (Dd); if Dd, each child is Rh-positive with 50 % probability. Giving **anti-D immunoglobulin** within 72 hours after the first delivery would have quickly removed the fetal red cells, and no antibodies would have formed in the mother."
+  },
+  {
+   "title": "Case 5",
+   "text": "Both parents have short fingers (brachydactyly). Of their children, 2 have brachydactyly and 1 has normal fingers. The doctor found that an earlier pregnancy with a fetus with “extremely short fingers and skeletal defects” had ended in early miscarriage.",
+   "ask": "How is brachydactyly inherited? What are the parents' genotypes? Explain the ratio.",
+   "answer": "Brachydactyly is an **autosomal dominant** trait that is **lethal** in the homozygous state. The birth of a normal child to affected parents shows that both are heterozygous: Bb × Bb. The offspring should be 1 BB : 2 Bb : 1 bb, but BB fetuses die with severe skeletal defects (the miscarried fetus). So among liveborn children brachydactylous (Bb) : normal (bb) = 2 : 1. In each further pregnancy the risk is: 25 % — fetal loss, 50 % — a child with brachydactyly, 25 % — a healthy child."
+  },
+  {
+   "title": "Case 6",
+   "text": "A blue-eyed woman with blood group I (0) married a brown-eyed man with blood group IV (AB). The man's mother was blue-eyed.",
+   "ask": "What phenotypes are possible in the children? Find the probability of a blue-eyed child with blood group III (B).",
+   "answer": "Because the man's mother was blue-eyed, he is heterozygous for eye colour: Aa I^A^I^B^. The woman is aa I^0^I^0^. Eye colour: Aa × aa → 1/2 brown, 1/2 blue. Blood group: I^A^I^B^ × I^0^I^0^ → 1/2 I^A^I^0^ (group II), 1/2 I^B^I^0^ (group III). The children have four phenotypes with equal probability: brown-eyed II, brown-eyed III, blue-eyed II, blue-eyed III. The probability of a blue-eyed child with group III (B) is 1/2 × 1/2 = 1/4 = 25 %. There will be no children with group I (0) or IV (AB)."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Mendel’s first law",
+   "back": "Uniformity of F~1~ hybrids (AA × aa → Aa)"
+  },
+  {
+   "front": "Mendel’s second law",
+   "back": "Segregation in F~2~: phenotype 3 : 1, genotype 1 : 2 : 1"
+  },
+  {
+   "front": "Mendel’s third law",
+   "back": "Independent inheritance of traits: 9 : 3 : 3 : 1"
+  },
+  {
+   "front": "Test cross",
+   "back": "Dominant phenotype × aa; 1 : 1 → heterozygote"
+  },
+  {
+   "front": "Codominance",
+   "back": "Both alleles are expressed in the heterozygote (I^A^I^B^ — group IV)"
+  },
+  {
+   "front": "Genotype of blood group I (0)",
+   "back": "I^0^I^0^"
+  },
+  {
+   "front": "Complementarity",
+   "back": "Two dominant non-allelic genes together give a new trait; 9 : 7"
+  },
+  {
+   "front": "Epistasis",
+   "back": "One gene suppresses the action of another non-allelic gene; 13 : 3, 12 : 3 : 1, 9 : 3 : 4"
+  },
+  {
+   "front": "Polymery",
+   "back": "Many genes act on one trait (skin color, height)"
+  },
+  {
+   "front": "Pleiotropy",
+   "back": "One gene acts on many traits (Marfan syndrome)"
+  },
+  {
+   "front": "Lethal gene",
+   "back": "Gene that kills the organism in the homozygous state; segregation 2 : 1"
+  },
+  {
+   "front": "Product rule",
+   "back": "Probability of independent events occurring together = product of their probabilities"
+  },
+  {
+   "front": "Rhesus conflict",
+   "back": "Destruction of red cells of an Rh-positive fetus by anti-D antibodies of an Rh-negative mother"
+  },
+  {
+   "front": "Balanced polymorphism",
+   "back": "Persistence of a harmful gene in a population due to heterozygote advantage (HbS and malaria)"
+  }
+ ],
+ "summary": [
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "A gamete receives **only one allele** of each gene; an organism heterozygous for n gene pairs forms **2^n^** kinds of gametes."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Mendel’s laws: **“Uniform — Segregate — Independent”** (I — uniformity, II — segregation, III — independent inheritance)."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical significance",
+   "text": "ABO and Rh genetics is used in blood transfusion, prevention of Rh incompatibility and forensic exclusion of paternity."
+  }
+ ]
+}

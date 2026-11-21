@@ -1,0 +1,850 @@
+{
+ "id": "12",
+ "no": 12,
+ "title": "Flukes — human parasites: the liver fluke, lancet fluke, cat liver fluke, lung fluke and blood flukes. Tapeworms — human parasites: the pork and beef tapeworms, dwarf tapeworm, broad fish tapeworm, Echinococcus and Alveococcus",
+ "goals": [
+  {
+   "type": "p",
+   "text": "To teach the student the general features of the phylum Platyhelminthes, the structure and development of the classes Trematoda and Cestoda, and the life cycle, routes of transmission, pathogenic effects, diagnosis and prevention of the trematodes and cestodes that parasitize humans."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the general features of flatworms and their larval stages (miracidium, sporocyst, redia, cercaria, metacercaria, adolescaria; oncosphere, types of metacestodes);",
+    "the causative agents of fascioliasis, dicrocoeliasis, opisthorchiasis, paragonimiasis and schistosomiasis;",
+    "taeniasis, taeniarhynchosis, cysticercosis, hymenolepiasis, diphyllobothriasis, echinococcosis and alveococcosis;",
+    "the differences between the pork and beef tapeworms."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "identify flukes and tapeworms in preparations;",
+    "identify the tapeworm species from a gravid segment (proglottid);",
+    "state the hosts, infective stage and route of transmission for each helminthiasis."
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "title": "1. Phylum Platyhelminthes. Class Trematoda (flukes)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Flatworms (Plathelminthes)** are bilaterally symmetrical, triploblastic animals with a dorsoventrally flattened body. They have no body cavity — the spaces between organs are filled with **parenchyma**. The body is covered by a **dermo-muscular sac**. The digestive system is blind (no anus; in tapeworms it is absent altogether), the excretory system consists of **protonephridia**, and the nervous system of paired cerebral ganglia and nerve cords. Most are **hermaphrodites**. The classes of medical importance are the flukes (**Trematoda**) and the tapeworms (**Cestoda**)."
+    },
+    {
+     "type": "p",
+     "text": "**Class Trematoda** — leaf-shaped parasites with an **oral** and a **ventral sucker**; the gut is blind and has two branches. Development involves a change of hosts: the definitive host is a vertebrate or a human, and the first intermediate host is always a **mollusc**. Larval stages: egg → **miracidium** (ciliated, swims in water) → **sporocyst** → **redia** → **cercaria** (tailed, leaves the mollusc) → **metacercaria** or **adolescaria** (the infective stage)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_lichinkalar.webp",
+     "label": "Figure 12.1",
+     "caption": "Larval stages of flukes: miracidium, sporocyst, redia, cercaria and adolescaria (metacercaria) (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "table",
+     "title": "Table 12.1. Description of the larval stages of flukes",
+     "head": [
+      "Stage",
+      "Structure",
+      "Where it develops"
+     ],
+     "rows": [
+      [
+       "Miracidium",
+       "A ciliated larva that swims in water",
+       "Hatches from the egg in water and actively enters a mollusc"
+      ],
+      [
+       "Sporocyst",
+       "Sac-like, containing germinal cells",
+       "In the mollusc's body; multiplies parthenogenetically"
+      ],
+      [
+       "Redia",
+       "Has a mouth and a rudimentary gut",
+       "In the mollusc's liver; produces new rediae and cercariae"
+      ],
+      [
+       "Cercaria",
+       "A tailed larva with suckers",
+       "Leaves the mollusc into the water"
+      ],
+      [
+       "Metacercaria (adolescaria)",
+       "An invasive larva that has shed its tail and is enclosed in a cyst",
+       "In the second intermediate host (fish, crab, ant) or on a plant (in Fasciola)"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "yodlash",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Order of the larvae: **“Mi-Spo-Re-Cer-Meta”** — Miracidium, Sporocyst, Redia, Cercaria, Metacercaria. Thanks to parthenogenesis in the mollusc, thousands of cercariae arise from one egg."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 12.2. Flukes that parasitize humans",
+     "head": [
+      "Parasite (disease)",
+      "Location",
+      "Definitive host",
+      "Intermediate hosts",
+      "Transmission to humans"
+     ],
+     "rows": [
+      [
+       "Liver fluke — *Fasciola hepatica* (fascioliasis)",
+       "Bile ducts of the liver, gallbladder",
+       "Herbivores (sheep, cattle), occasionally humans",
+       "Small pond snail (*Lymnaea truncatula*)",
+       "Aquatic plants bearing adolescariae, untreated water"
+      ],
+      [
+       "Lancet fluke — *Dicrocoelium lanceatum* (dicrocoeliasis)",
+       "Bile ducts of the liver",
+       "Herbivores",
+       "1 — land snail, 2 — ants",
+       "Accidental swallowing of an ant carrying metacercariae"
+      ],
+      [
+       "Cat liver fluke — *Opisthorchis felineus* (opisthorchiasis)",
+       "Bile ducts, gallbladder, pancreatic ducts",
+       "Humans, cats, dogs, fish-eating mammals",
+       "1 — *Bithynia* snail, 2 — cyprinid fish",
+       "Undercooked or lightly salted fish containing metacercariae"
+      ],
+      [
+       "Lung fluke — *Paragonimus westermani* (paragonimiasis)",
+       "Lungs",
+       "Humans, felids",
+       "1 — snail, 2 — freshwater crabs and crayfish",
+       "Undercooked crabs and crayfish"
+      ],
+      [
+       "Blood flukes — *Schistosoma haematobium, S. mansoni, S. japonicum* (schistosomiasis)",
+       "Veins of the pelvis, urinary bladder and intestine",
+       "Humans (separate sexes!)",
+       "Freshwater snails",
+       "Cercariae **actively penetrate the skin** in water"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_fassiola.webp",
+     "w": 675,
+     "h": 502,
+     "lang": true,
+     "label": "Figure 12.2",
+     "caption": "Life cycle of the liver fluke *Fasciola hepatica*: the definitive host (herbivorous mammals and humans), the miracidium in water, development in the intermediate host — the small pond snail, the cercaria and the adolescaria attached to plants (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Opisthorchiasis** is widespread in the Ob–Irtysh basin (Western Siberia) and along the Volga and Dnieper. Humans become infected by eating cyprinid fish (carp bream, ide, roach) containing metacercariae that are undercooked or lightly salted (Figure 12.3). The parasite damages the bile and pancreatic ducts, causing cholangitis, cholecystitis, pancreatitis and liver cirrhosis, and raises the risk of **cholangiocarcinoma**. Diagnosis — small (≈ 30 µm) operculated eggs in the faeces and duodenal fluid."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_opistorx.webp",
+     "w": 1220,
+     "h": 710,
+     "lang": true,
+     "label": "Figure 12.3",
+     "caption": "The cat liver fluke *Opisthorchis felineus*: A — morphology (intestinal branches, vitellaria, uterus, ovary, seminal receptacle, testes); B — life cycle: the definitive host, the first intermediate host — the Bithynia snail, the second intermediate host — carp fish (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "In chronic opisthorchiasis the bile and pancreatic ducts are inflamed for a long time (cholangitis, cholecystitis, pancreatitis) and the risk of **bile duct cancer (cholangiocarcinoma)** rises; for this reason Opisthorchis and the related Chinese liver fluke (*Clonorchis sinensis*) are classed as carcinogens by the World Health Organization. Prevention: cooking or frying fish well, prolonged freezing (7 hours at −40 °C or 32 hours at −28 °C) and proper salting."
+    },
+    {
+     "type": "box",
+     "kind": "diqqat",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Transit eggs:** a person who has eaten the liver of an animal infected with Fasciola (for example, liver kebab) may pass liver fluke eggs in the faeces for 1–2 days — this is **false fascioliasis**. To distinguish it from true infection, the patient is re-examined after 3–5 days on a liver-free diet."
+      }
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_paragonim.webp",
+     "label": "Figure 12.4",
+     "caption": "The lung fluke *Paragonimus westermani*: structure (A) and life cycle (B): eggs coughed up in the sputum of a patient give miracidia in water, cercariae in a mollusc and metacercariae in the muscles of freshwater crabs; humans are infected by eating undercooked crab (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**Schistosomiases** (bilharziasis) affect more than 200 million people in tropical countries. Schistosomes are **dioecious**: the male carries the female in a groove of its body. When a person bathes or works in fresh water, **cercariae actively penetrate the skin** (an itchy “cercarial dermatitis” at the site of entry). Adults live in veins, and their eggs break through tissues into the bladder (*S. haematobium* — blood in urine, risk of bladder cancer) or the intestine (*S. mansoni*, *S. japonicum* — diarrhoea, liver fibrosis). Diagnosis is by finding spined eggs in urine or faeces."
+    }
+   ]
+  },
+  {
+   "title": "2. Class Cestoda (tapeworms)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Tapeworms (Cestoda)** have a ribbon-like body consisting of a **scolex** (head with suckers, sometimes hooks, or sucking grooves — bothria), a **neck** (growth zone) and a **strobila** (a chain of segments — proglottids). There is no digestive system — nutrients are absorbed through the whole body surface. Each segment is hermaphroditic: in immature segments the reproductive organs develop, in **hermaphroditic** segments fertilization takes place, and in **gravid** segments only the uterus filled with eggs remains."
+    },
+    {
+     "type": "p",
+     "text": "The egg contains a six-hooked embryo — the **oncosphere**. In the intermediate host the oncosphere develops into a larva — the **metacestode** (finna). Types of metacestode: the **cysticercus** (a vesicle with a single scolex — in Taenia), the **cysticercoid** (tailed, in the dwarf tapeworm), the **hydatid cyst** (with many scolices and daughter cysts), the **alveococcus** (a mass of many small vesicles that grows like a tumour), and the **procercoid** and **plerocercoid** (in the broad fish tapeworm)."
+    },
+    {
+     "type": "table",
+     "title": "Table 12.3. Types of tapeworm larvae (metacestodes)",
+     "head": [
+      "Larva",
+      "Structure",
+      "In which parasite"
+     ],
+     "rows": [
+      [
+       "Cysticercus",
+       "A fluid-filled vesicle with one invaginated scolex",
+       "Pork and beef tapeworms"
+      ],
+      [
+       "Cysticercoid",
+       "A small larva without a cavity, with a tail and one scolex",
+       "Dwarf tapeworm"
+      ],
+      [
+       "Echinococcal (hydatid) cyst",
+       "A large cyst with daughter cysts and thousands of scolices",
+       "*Echinococcus granulosus*"
+      ],
+      [
+       "Alveococcus",
+       "A cluster of tiny vesicles that grows into tissue",
+       "*Alveococcus multilocularis*"
+      ],
+      [
+       "Procercoid and plerocercoid",
+       "Elongated larvae: the first in a copepod, the second in a fish",
+       "Broad fish tapeworm"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 12.4. Tapeworms that parasitize humans",
+     "head": [
+      "Parasite (disease)",
+      "Definitive host",
+      "Intermediate host",
+      "Transmission to humans",
+      "Diagnosis"
+     ],
+     "rows": [
+      [
+       "Pork tapeworm — *Taenia solium* (taeniasis; cysticercosis)",
+       "Humans",
+       "Pig, **and humans too** (cysticercosis)",
+       "Undercooked pork containing cysticerci (taeniasis); eggs or autoinfection (cysticercosis)",
+       "Segments in faeces; in cysticercosis CT/MRI, serology"
+      ],
+      [
+       "Beef tapeworm — *Taeniarhynchus saginatus* (taeniarhynchosis)",
+       "Humans",
+       "Cattle",
+       "Undercooked beef containing cysticerci",
+       "Actively emerging segments, eggs in a perianal scraping"
+      ],
+      [
+       "Dwarf tapeworm — *Hymenolepis nana* (hymenolepiasis)",
+       "Humans (mainly children)",
+       "The same person (cysticercoid in the intestinal villi)",
+       "Contact-household, eggs via dirty hands; autoreinfection",
+       "Eggs in faeces"
+      ],
+      [
+       "Broad fish tapeworm — *Diphyllobothrium latum* (diphyllobothriasis)",
+       "Humans, fish-eating mammals",
+       "1 — copepod crustaceans (Cyclops), 2 — predatory fish (pike, perch)",
+       "Undercooked fish or roe containing plerocercoids",
+       "Operculated eggs in faeces; B~12~-deficiency anaemia"
+      ],
+      [
+       "*Echinococcus granulosus* (echinococcosis)",
+       "Dog, wolf, jackal",
+       "Sheep, cattle, pigs, camels and **humans**",
+       "Eggs from dogs (fur, dirty hands)",
+       "Ultrasound, CT, serology (puncture is forbidden!)"
+      ],
+      [
+       "*Alveococcus multilocularis* (alveococcosis)",
+       "Fox, dog, cat",
+       "Rodents and humans",
+       "Eggs via fox fur and wild berries",
+       "Ultrasound, CT, serology"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_tenia.webp",
+     "w": 680,
+     "h": 755,
+     "lang": true,
+     "label": "Figure 12.5",
+     "caption": "Life cycle of the pork tapeworm *Taenia solium*: the adult worm in the human intestine, gravid segments and eggs passed in the faeces, the intermediate host — cysticerci (metacestodes) in the muscles of the pig (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "table",
+     "title": "Table 12.5. Differences between the pork and beef tapeworms",
+     "head": [
+      "Feature",
+      "*Taenia solium*",
+      "*Taeniarhynchus saginatus*"
+     ],
+     "rows": [
+      [
+       "Length",
+       "2–3 m",
+       "4–10 m or more"
+      ],
+      [
+       "Scolex",
+       "4 suckers and a crown of hooks (“armed”)",
+       "Only 4 suckers (“unarmed”)"
+      ],
+      [
+       "Ovary",
+       "Three-lobed",
+       "Two-lobed"
+      ],
+      [
+       "Lateral uterine branches of a gravid segment",
+       "7–12 pairs",
+       "17–35 pairs"
+      ],
+      [
+       "Release of segments",
+       "Passive, with faeces, several at a time in chains",
+       "Active, singly (they crawl out of the anus on their own)"
+      ],
+      [
+       "Metacestode in humans (cysticercosis)",
+       "Develops — in the brain, eyes and muscles (dangerous!)",
+       "Does not develop"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_qoramol.webp",
+     "label": "Figure 12.6",
+     "caption": "Life cycle of the beef tapeworm *Taeniarhynchus saginatus*: definitive host — humans, intermediate host — cattle; cattle eat grass contaminated with eggs, larvae develop in their muscles, and humans are infected by undercooked meat containing larvae (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Cysticercosis** develops when a person with taeniasis swallows the eggs themselves (dirty hands, gravid segments entering the stomach during vomiting — autoinfection) or infects others. Cysticerci in the brain cause seizures and hydrocephalus. Therefore a patient with taeniasis must be treated urgently and the people around them examined."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Echinococcus and Alveococcus",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Echinococcus** (*Echinococcus granulosus*) is a small tapeworm 3–6 mm long with 3–4 segments; its scolex has 4 suckers and hooks. The adult lives in the intestine of the **dog**, wolf and jackal. The eggs are passed in the faeces and contaminate the dog's fur, grass, water and vegetables. The intermediate hosts are sheep, cattle, camels, pigs and **humans**: in the intestine the oncospheres hatch and travel in the blood to the **liver** (≈ 70 %), **lungs** (≈ 20 %) and other organs, where a slowly growing **hydatid cyst** forms (Figure 12.7)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_exinokokk.webp",
+     "w": 864,
+     "h": 421,
+     "lang": true,
+     "label": "Figure 12.7",
+     "caption": "Life cycle of *Echinococcus granulosus*: the definitive host — the dog (adult worm in the intestine), eggs in the environment, hydatid cysts in the liver and lungs of the intermediate hosts (sheep, pig, cattle, human); dogs become infected by eating infected internal organs (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The hydatid cyst consists of an outer chitin-like (laminated) layer and an inner **germinal** layer; it is filled with fluid, **daughter cysts** and numerous scolices (“hydatid sand”). The cyst compresses the surrounding tissue and impairs organ function; rupture can cause anaphylactic shock and the formation of many new cysts. Treatment is mainly surgical."
+    },
+    {
+     "type": "p",
+     "text": "Echinococcosis is diagnosed by **ultrasound and CT** (a cyst with clear fluid containing daughter cysts) and **serological** tests (antibodies). **Puncture of a suspected cyst is forbidden**: if the fluid leaks, thousands of scolices spread around and secondary echinococcosis or **anaphylactic shock** develops. Treatment is surgery (removal of the cyst) and albendazole; in some cases the PAIR method (puncture, aspiration, injection of a scolicide, re-aspiration) is used with special precautions."
+    },
+    {
+     "type": "p",
+     "text": "**Alveococcus** (*Alveococcus multilocularis*) — its definitive hosts are the fox, arctic fox and dog; its metacestode is a mass of small vesicles that **grows infiltratively like a tumour** in the liver and metastasizes; it runs a more severe course than echinococcosis. Humans become infected when handling fox pelts or eating unwashed wild berries."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_alveokokk.webp",
+     "label": "Figure 12.8",
+     "caption": "Life cycle of Alveococcus: the adult form lives in the intestine of foxes, dogs and wolves; the larval stage in the liver of intermediate hosts (mouse-like rodents and humans) (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "table",
+     "title": "Table 12.6. Prevention of echinococcosis and alveococcosis",
+     "head": [
+      "Measures",
+      "Content"
+     ],
+     "rows": [
+      [
+       "Deworming dogs",
+       "Regular (every 1–3 months) treatment of pet, shepherd and guard dogs with praziquantel"
+      ],
+      [
+       "Control of slaughter places",
+       "Not giving infected organs (liver, lungs) to dogs; destroying them"
+      ],
+      [
+       "Personal hygiene",
+       "Washing hands after contact with dogs, keeping children from kissing dogs"
+      ],
+      [
+       "Food hygiene",
+       "Washing wild berries and greens thoroughly; hunters handling fox skins with gloves"
+      ],
+      [
+       "Screening risk groups",
+       "Ultrasound and serological screening of shepherds, butchers and dog handlers"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In echinococcosis **the human is a biological dead end**: the parasite does not pass from human cysts to another host. Humans are infected **only by swallowing eggs**; eating undercooked meat or liver does not transmit echinococcosis. Prevention: regular deworming of dogs, not feeding the infected internal organs of slaughtered animals to dogs, and washing hands after contact with dogs."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. The dwarf tapeworm and the broad fish tapeworm",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**The dwarf tapeworm** (*Hymenolepis nana*) is 1–5 cm long; the human is both the definitive and the intermediate host. After the eggs are swallowed, a **cysticercoid** develops in the villi of the small intestine, then emerges into the intestinal lumen and matures. Hundreds or thousands of parasites can accumulate in one person (**autoreinfection**). It spreads mainly in children's institutions by the contact-household route."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_pakana.webp",
+     "label": "Figure 12.9",
+     "caption": "Life cycle of the dwarf tapeworm: oncospheres hatched from eggs enter the intestinal villi, where a cysticercoid develops; it then emerges into the gut lumen, attaches with its scolex and becomes an adult worm — all stages take place in one person (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "**The broad fish tapeworm** (*Diphyllobothrium latum*) is the longest human helminth (10 m or more); its scolex bears two sucking grooves (**bothria**); its segments are wider than they are long, and the uterus is rosette-shaped. Development takes place in water: a **coracidium** hatches from the egg → **procercoid** in the 1st intermediate host (Cyclops) → **plerocercoid** in the muscles and roe of the 2nd intermediate host (a predatory fish) → humans are infected by eating undercooked fish or salted roe. In the intestine the parasite takes up vitamin B~12~, causing **B~12~-deficiency (megaloblastic) anaemia**."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t12_keng_lenta.webp",
+     "label": "Figure 12.10",
+     "caption": "Life cycle of the broad fish tapeworm: a coracidium hatches from the egg in water; 1st intermediate host — a copepod (procercoid), 2nd intermediate host — pike and other fish (plerocercoid); definitive hosts — humans, dogs and cats (P.X. Xolikov et al., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "In diphyllobothriasis the worm takes up **vitamin B~12~** in the intestine, so some patients develop B~12~-deficiency (megaloblastic) **anaemia**. The source of infection is undercooked, lightly salted fish and roe. Prevention: cooking fish well, freezing it and not polluting water bodies with sewage."
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: identifying the tapeworm species from a gravid segment",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Wash the segment separated from the faeces with water and press it between two glass slides.",
+      "Hold it up to the light or look under a magnifier at the central stem and lateral branches of the uterus (if necessary, inject ink or carmine).",
+      "Count the number of lateral branches on one side.",
+      "If there are 7–12 — conclude *Taenia solium*; if there are 17–35 — *Taeniarhynchus saginatus*.",
+      "Follow safety precautions: pork tapeworm eggs are dangerous to humans (cysticercosis) — work in gloves and disinfect the material."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Give a general description of the phylum Platyhelminthes.",
+  "Describe the structure and larval stages of the class Trematoda.",
+  "Explain the structure, life cycle, routes of transmission, diagnosis and prevention of the liver fluke.",
+  "What is the life cycle of the cat liver fluke and how is opisthorchiasis prevented?",
+  "How is the lancet fluke transmitted to humans?",
+  "What is the medical importance of the lung fluke and the blood flukes?",
+  "Describe the class Cestoda. Name the types of metacestode.",
+  "How do the pork and beef tapeworms differ?",
+  "How does cysticercosis develop and why is it dangerous?",
+  "What is the life cycle and pathogenic effect of the broad fish tapeworm?",
+  "Describe the development and spread of the dwarf tapeworm.",
+  "Explain the life cycle, diagnosis and prevention of Echinococcus and Alveococcus.",
+  "Name the larval stages of flukes in order and explain where they develop.",
+  "What are the complications and prevention of opisthorchiasis?",
+  "How are paragonimiasis and schistosomiases transmitted to humans?",
+  "Name the types of tapeworm larvae.",
+  "How is echinococcosis diagnosed and why is puncture of the cyst forbidden?",
+  "Name the measures for preventing echinococcosis and alveococcosis.",
+  "Why does anaemia develop in diphyllobothriasis?"
+ ],
+ "quiz": [
+  {
+   "q": "What is the intermediate host of the liver fluke?",
+   "options": [
+    "The small pond snail (Lymnaea truncatula)",
+    "The Bithynia snail",
+    "An ant",
+    "A carp",
+    "Cyclops"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which stage of the liver fluke is infective for humans?",
+   "options": [
+    "Adolescaria",
+    "Miracidium",
+    "Redia",
+    "Sporocyst",
+    "Oncosphere"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the second intermediate host of the lancet fluke?",
+   "options": [
+    "Ants",
+    "Fish",
+    "Crabs",
+    "Cyclops",
+    "Pig"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How is opisthorchiasis transmitted to humans?",
+   "options": [
+    "Through undercooked cyprinid fish",
+    "Through untreated water",
+    "Through beef",
+    "Through the skin",
+    "Through a mosquito bite"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which flukes have separate sexes and actively penetrate human skin?",
+   "options": [
+    "Schistosomes",
+    "Fasciola",
+    "Opisthorchis",
+    "Dicrocoelium",
+    "Paragonimus"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the six-hooked embryo of tapeworms called?",
+   "options": [
+    "Oncosphere",
+    "Miracidium",
+    "Cercaria",
+    "Coracidium",
+    "Cysticercus"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which tapeworm has a crown of hooks on its scolex?",
+   "options": [
+    "Taenia solium",
+    "Taeniarhynchus saginatus",
+    "Diphyllobothrium latum",
+    "Fasciola hepatica",
+    "Opisthorchis felineus"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "A gravid segment has 30 lateral uterine branches. Which parasite is it?",
+   "options": [
+    "Beef tapeworm",
+    "Pork tapeworm",
+    "Echinococcus",
+    "Dwarf tapeworm",
+    "Broad fish tapeworm"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which parasite causes cysticercosis in humans?",
+   "options": [
+    "Taenia solium",
+    "Taeniarhynchus saginatus",
+    "Hymenolepis nana",
+    "Diphyllobothrium latum",
+    "Fasciola hepatica"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which helminth is the human both the definitive and the intermediate host?",
+   "options": [
+    "Dwarf tapeworm",
+    "Beef tapeworm",
+    "Echinococcus",
+    "Liver fluke",
+    "Broad fish tapeworm"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which helminth causes B~12~-deficiency anaemia?",
+   "options": [
+    "Broad fish tapeworm",
+    "Dwarf tapeworm",
+    "Pork tapeworm",
+    "Echinococcus",
+    "Cat liver fluke"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the definitive host of Echinococcus?",
+   "options": [
+    "Dog",
+    "Human",
+    "Sheep",
+    "Pig",
+    "Cow"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How do humans become infected with echinococcosis?",
+   "options": [
+    "By swallowing eggs",
+    "By eating undercooked liver",
+    "By eating undercooked meat",
+    "Through the skin",
+    "Through a mosquito bite"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which organ is the hydatid cyst most often located in humans?",
+   "options": [
+    "Liver",
+    "Brain",
+    "Kidney",
+    "Bone",
+    "Heart"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What does the scolex of the broad fish tapeworm bear?",
+   "options": [
+    "Two sucking grooves (bothria)",
+    "4 suckers and hooks",
+    "Only 4 suckers",
+    "Oral and ventral suckers",
+    "Three lips"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which tailed larva of flukes leaves the mollusc into the water?",
+   "options": [
+    "Cercaria",
+    "Miracidium",
+    "Sporocyst",
+    "Redia",
+    "Oncosphere"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which flukes are dioecious and have larvae that actively penetrate the skin?",
+   "options": [
+    "Schistosomes",
+    "Liver fluke",
+    "Cat liver fluke",
+    "Lancet fluke",
+    "Lung fluke"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the larva of the dwarf tapeworm called?",
+   "options": [
+    "Cysticercoid",
+    "Cysticercus",
+    "Plerocercoid",
+    "Hydatid cyst",
+    "Metacercaria"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which helminthiasis does B~12~-deficiency anaemia develop?",
+   "options": [
+    "Diphyllobothriasis",
+    "Taeniarhynchosis",
+    "Fascioliasis",
+    "Echinococcosis",
+    "Opisthorchiasis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the most dangerous complication of puncturing an echinococcal cyst?",
+   "options": [
+    "Anaphylactic shock and spread of scolices",
+    "Hypoglycaemia",
+    "Haemophilia",
+    "Cataract",
+    "A malaria attack"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Case 1",
+   "text": "A man returning from a business trip to Siberia has signs of disease of the liver and bile ducts. Ovohelminthoscopic examination finds small operculated helminth eggs in his faeces.",
+   "ask": "What disease could this be?",
+   "answer": "The most likely diagnosis is opisthorchiasis (agent *Opisthorchis felineus*). Western Siberia (the Ob–Irtysh basin) is the world's largest focus of opisthorchiasis; humans are infected by eating cyprinid fish containing metacercariae that are undercooked, dried or lightly salted. The parasite lives in the bile ducts, gallbladder and pancreatic ducts. Confirmation — eggs in the duodenal fluid, serology; treatment — praziquantel."
+  },
+  {
+   "title": "Case 2",
+   "text": "Tapeworm segments were found in a patient's faeces. When the lateral uterine branches were counted, there were 30 on one side.",
+   "ask": "What diagnosis can be made?",
+   "answer": "17–35 pairs of lateral uterine branches are typical of the beef tapeworm (*Taeniarhynchus saginatus*) — taeniarhynchosis. The patient ate undercooked beef containing cysticerci. Unlike the pork tapeworm, this species does not cause cysticercosis in humans. Confirmation is the active emergence of segments and eggs in a perianal scraping; treatment — praziquantel or niclosamide."
+  },
+  {
+   "title": "Case 3",
+   "text": "Can Echinococcus be transmitted to humans by eating undercooked kebab and liver kebab?",
+   "ask": "Justify your answer.",
+   "answer": "No. The hydatid cysts (metacestodes) in the meat or liver of sheep and cattle are infective only for the definitive host — dogs and other canids: when they eat infected internal organs, the adult worm develops in their intestine. Humans are intermediate hosts and become infected only by swallowing eggs passed in dog faeces (from fur, dirty hands, unwashed vegetables). However, other helminthiases (taeniarhynchosis, taeniasis) can be transmitted through undercooked meat."
+  },
+  {
+   "title": "Case 4",
+   "text": "A 35-year-old man from a fishing family complains of weakness, dizziness and a red, burning tongue. The blood test shows anaemia with large red cells (megaloblastic). He likes lightly salted pike roe.",
+   "ask": "Which helminthiasis should be considered? What is the cause of the anaemia?",
+   "answer": "**Diphyllobothriasis** (*Diphyllobothrium latum*). Humans are infected by **plerocercoids** in lightly salted roe or undercooked fish. The long worm living in the intestine takes up **vitamin B~12~** and disturbs its absorption — this leads to B~12~-deficiency megaloblastic anaemia (Hunter's glossitis — a red, burning tongue). Diagnosis is by finding operculated eggs in the faeces. Treatment: praziquantel, then vitamin B~12~. Prevention: cooking or freezing fish and roe well."
+  },
+  {
+   "title": "Case 5",
+   "text": "4 children in a kindergarten have abdominal pain, loss of appetite and irritability. Eggs with a transparent shell containing an oncosphere with six hooks were found in the faeces. One child was re-infected after treatment.",
+   "ask": "What helminthiasis is this? Why is re-infection common?",
+   "answer": "This is **hymenolepiasis** (*Hymenolepis nana*, the dwarf tapeworm). Humans are both the definitive and the intermediate host: after eggs are swallowed, a cysticercoid develops in the intestinal villi and then an adult worm forms. Because the eggs are immediately infective, self-re-infection through dirty hands (**autoreinvasion**) and rapid contact spread in children's groups are typical. Therefore treatment is given in repeated courses, together with testing of all contact children and strict hygiene (hand washing, short nails, cleaning toys)."
+  },
+  {
+   "title": "Case 6",
+   "text": "A 42-year-old shepherd feels heaviness under the right ribs. Ultrasound shows an 8 cm cyst in the liver containing small daughter cysts. The doctor wanted to puncture the cyst with a needle to take fluid for diagnosis.",
+   "ask": "What is the diagnosis? Is the doctor's action correct?",
+   "answer": "The occupation (constant contact with dogs) and a cyst with daughter cysts on ultrasound are typical of **echinococcosis** (the larva of *Echinococcus granulosus* — a hydatid cyst). Puncturing the cyst for diagnosis is **wrong and dangerous**: if the fluid leaks into the abdominal cavity, scolices spread and cause secondary echinococcosis, and antigens in the fluid can cause **anaphylactic shock**. The diagnosis is confirmed by ultrasound/CT and serological tests; treatment is surgery and albendazole. Family members are examined and the dogs are dewormed."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Larvae of flukes",
+   "back": "Miracidium → sporocyst → redia → cercaria → metacercaria (adolescaria)"
+  },
+  {
+   "front": "Fasciola hepatica",
+   "back": "Liver fluke; intermediate host — Lymnaea; transmission — aquatic plants with adolescariae"
+  },
+  {
+   "front": "Opisthorchis felineus",
+   "back": "Cat liver fluke; Bithynia → carp fish; undercooked fish"
+  },
+  {
+   "front": "Schistosomes",
+   "back": "Blood flukes; separate sexes; cercariae penetrate the skin"
+  },
+  {
+   "front": "Oncosphere",
+   "back": "Six-hooked embryo inside the tapeworm egg"
+  },
+  {
+   "front": "Taenia solium",
+   "back": "Hooked scolex; uterine branches 7–12; cysticercosis in humans"
+  },
+  {
+   "front": "Taeniarhynchus saginatus",
+   "back": "Hookless scolex; uterine branches 17–35; segments emerge actively"
+  },
+  {
+   "front": "Hymenolepis nana",
+   "back": "Dwarf tapeworm; human — definitive and intermediate host; autoreinfection"
+  },
+  {
+   "front": "Diphyllobothrium latum",
+   "back": "Bothria; Cyclops → predatory fish; B~12~-deficiency anaemia"
+  },
+  {
+   "front": "Echinococcus granulosus",
+   "back": "Definitive host — dog; cysts in the human liver and lungs"
+  },
+  {
+   "front": "Metacercaria",
+   "back": "Encysted infective larva; in the 2nd intermediate host or on a plant"
+  },
+  {
+   "front": "Schistosomes",
+   "back": "Dioecious blood flukes; cercariae penetrate the skin"
+  },
+  {
+   "front": "Plerocercoid",
+   "back": "Infective larva of the broad fish tapeworm in fish"
+  }
+ ],
+ "summary": [
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "The first intermediate host of flukes is **always a mollusc**; in echinococcosis humans are infected **only from eggs**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Tapeworms: **“Pork — perilous (hooked, cysticercosis), Beef — benign (hookless)”**; branches: **“pork — up to 12, beef — from 17”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical relevance",
+   "text": "Thorough cooking of meat and fish, veterinary and sanitary inspection, and deworming of dogs are the main prevention of cestodiases and trematodiases."
+  }
+ ]
+}

@@ -1,0 +1,784 @@
+{
+ "id": "05",
+ "no": 5,
+ "title": "Irsiyatning xromosoma nazariyasi. T.G. Morgan. Genlarning birikkan holda irsiylanishi, krossingover. Belgilarning jinsga birikkan holda irsiylanishi",
+ "goals": [
+  {
+   "type": "p",
+   "text": "Talabaga T. Morganning irsiyat xromosoma nazariyasini, genlarning to‘liq va to‘liqsiz birikishini, krossingover va genlar orasidagi masofani aniqlashni, genetik xaritalarni, jinsning genetik belgilanishini hamda X va Y xromosomaga birikkan belgilarning irsiylanishini o‘rgatish."
+  },
+  {
+   "type": "sub",
+   "text": "Mashg‘ulot oxirida talaba bilishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "irsiyat xromosoma nazariyasining asosiy qoidalarini;",
+    "birikish guruhi, to‘liq va to‘liqsiz birikish tushunchalarini;",
+    "krossingover chastotasi va morganida tushunchasini;",
+    "jinsni belgilash tiplarini (XY, XO, ZW) va odamda jins rivojlanishining genetik asoslarini;",
+    "X-birikkan dominant va retsessiv hamda Y-birikkan (golandrik) irsiylanish xususiyatlarini."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "Talaba bajara olishi kerak:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "birikkan genlarga oid masalalarni yechish va genlar orasidagi masofani hisoblash;",
+    "uchta gen orasidagi masofalar bo‘yicha ularning xromosomadagi tartibini aniqlash;",
+    "jinsga birikkan belgilarga (daltonizm, gemofiliya) oid masalalarni yechish."
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "title": "1. Irsiyatning xromosoma nazariyasi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Mendelning III qonuni faqat har xil xromosomalardagi genlar uchun bajariladi. Genlar soni xromosomalar sonidan ancha ko‘p (odamda 46 xromosomada 20 mingga yaqin oqsil kodlovchi gen), demak har bir xromosomada ko‘plab genlar joylashgan. Amerikalik genetik **T.G. Morgan** va shogirdlari (A. Sturtevant, K. Bridjes, G. Meller) 1910–1916-yillarda drozofila pashshasida (*Drosophila melanogaster*) tajribalar o‘tkazib, **irsiyatning xromosoma nazariyasini** yaratdi."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Drozofila genetik tadqiqotlar uchun qulay obyekt: oson ko‘paytiriladi, bir avlodi 10–12 kunda almashadi, nasli ko‘p, belgilari xilma-xil, xromosomalari kam (2n = 8)."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Xromosoma nazariyasining asosiy qoidalari"
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Genlar xromosomalarda joylashgan; har bir xromosomada ma’lum genlar bo‘ladi.",
+      "Xromosomada genlar chiziq bo‘ylab, ma’lum ketma-ketlikda joylashgan; har bir genning o‘z lokusi bor.",
+      "Bitta xromosomadagi genlar **birikish guruhini** hosil qiladi va birga irsiylanadi; birikish guruhlari soni gaploid xromosomalar soniga teng (odamda ayolda 23, erkakda 24 — X va Y alohida).",
+      "Gomologik xromosomalar orasida krossingover natijasida genlar almashinadi; uning chastotasi genlar orasidagi masofaga to‘g‘ri proporsional.",
+      "Har bir turning kariotipi o‘ziga xos va doimiy."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Xromosoma nazariyasining yaratilishiga **U. Setton** va **T. Boveri** (1902–1903) asos solgan: ular meyozda xromosomalar xatti-harakati Mendel “irsiy omillari”ning tarqalishiga aynan mos kelishini ko‘rsatgan. Genlarning xromosomada joylashganini K. Bridjes jinsiy xromosomalarning ajralmasligi (nondisyunksiya) bilan, krossingoverning sitologik asosini esa 1931-yilda K. Shtern (drozofilada) hamda X. Kreyton va B. MakKlintok (makkajo‘xorida) belgilar bilan birga xromosoma bo‘laklari ham almashinishini ko‘rsatib isbotlashgan."
+    }
+   ]
+  },
+  {
+   "title": "2. Genlarning birikkan holda irsiylanishi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Morgan kulrang tanali uzun qanotli (BBVV) va qora tanali kalta qanotli (bbvv) drozofilalarni chatishtirib, F~1~ da kulrang uzun qanotli (BbVv) pashshalarni oldi. Keyin F~1~ erkagini retsessiv urg‘ochi (bbvv) bilan chatishtirganda (tahliliy chatishtirish) Mendel kutganidek 1 : 1 : 1 : 1 emas, balki faqat ota-onaga o‘xshash ikki fenotip 1 : 1 nisbatda paydo bo‘ldi (Rasm 5.1). Demak, B va V genlari bitta xromosomada joylashgan va **to‘liq birikkan** holda irsiylanadi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t05_drozofila.webp",
+     "w": 895,
+     "h": 678,
+     "lang": true,
+     "label": "Rasm 5.1",
+     "caption": "Drozofila pashshasida tana rangi va qanot uzunligi genlarining to‘liq birikkan holda nasldan-naslga o‘tishi: B — kulrang tana, b — qora tana, V — normal qanot, v — kalta qanot (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Agar tahliliy chatishtirish uchun F~1~ **urg‘ochisi** olinsa, ota-onaga o‘xshash pashshalar bilan birga oz miqdorda (har biri 8,5 %) yangi kombinatsiyali — kulrang kalta qanotli va qora uzun qanotli (**krossover**, rekombinant) pashshalar ham paydo bo‘ladi: 41,5 % : 41,5 % : 8,5 % : 8,5 %. Bu **to‘liqsiz birikish** bo‘lib, sababi — urg‘ochi drozofila meyozida krossingover sodir bo‘lishi (erkak drozofilada krossingover bo‘lmaydi)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t05_toliqsiz.webp",
+     "label": "Rasm 5.2",
+     "caption": "Drozofilada genlarning to‘liqsiz birikishi: F~1~ urg‘ochisi (BbVv) retsessiv erkak (bbvv) bilan chatishtirilganda krossingover hisobiga 83 % ota-onaga o‘xshash va 17 % rekombinant pashshalar hosil bo‘ladi (P.X. Xolikov va boshq., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "Drozofila erkaklarida krossingover bo‘lmaydi, shuning uchun F~1~ erkagi bilan tahliliy chatishtirishda **to‘liq birikish**, urg‘ochisi bilan esa **to‘liqsiz birikish** kuzatiladi. Odamda krossingover ikkala jinsda ham bo‘ladi, ayollarda esa birmuncha ko‘proq. Krossingover chastotasiga yosh, harorat, ionlashtiruvchi nurlanish, ayrim kimyoviy moddalar va genning sentromeraga yaqinligi (sentromera yaqinida krossingover kam) ta’sir qiladi."
+    },
+    {
+     "type": "box",
+     "kind": "yodlash",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Birikkan genlarning yozilishi: bir xromosomadagi allellar kasr chizig‘ining bir tomoniga yoziladi — **AB/ab** (sis-holat, dominant allellar bir xromosomada) yoki **Ab/aB** (trans-holat, dominant allellar turli xromosomalarda)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3. Krossingover va genetik xaritalar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Krossingover** — meyozning I profazasida (paxitena) gomologik xromosomalarning xromatidlari orasida teng qismlar almashinuvi (Rasm 5.3). U birikish guruhlarini buzadi, genlarning yangi kombinatsiyalarini hosil qiladi va kombinativ o‘zgaruvchanlik manbai hisoblanadi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t05_krossingover.webp",
+     "w": 930,
+     "h": 600,
+     "label": "Rasm 5.3",
+     "caption": "Gomologik xromosomalar orasidagi chalkashuv (krossingover): I — chalkashuvdan oldingi holat; II — chalkashuv; III — chalkashuvdan keyingi rekombinant xromatidlar (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Genlar orasidagi masofa** krossingover chastotasi bilan o‘lchanadi: **1 % krossingover = 1 morganida (santimorganida, sM)**. Krossingover chastotasi (rf) quyidagicha hisoblanadi:"
+    },
+    {
+     "type": "p",
+     "text": "rf (%) = (krossover individlar soni / jami avlod soni) × 100"
+    },
+    {
+     "type": "p",
+     "text": "Masalan, yuqoridagi tajribada krossover pashshalar 8,5 % + 8,5 % = 17 %, demak B va V genlari orasidagi masofa 17 morganida. Masofa qancha katta bo‘lsa, krossingover shuncha ko‘p bo‘ladi; ammo krossingover chastotasi 50 % dan oshmaydi (50 % da genlar mustaqil irsiylangandek ko‘rinadi)."
+    },
+    {
+     "type": "p",
+     "text": "**Genetik xarita** — genlarning xromosomadagi joylashish tartibi va ular orasidagi nisbiy masofa sxemasi. Uchta gen orasidagi masofalarni bilib, ularning tartibini aniqlash mumkin: eng katta masofa chetdagi genlar orasida bo‘ladi va u qolgan ikki masofa yig‘indisiga teng (Rasm 5.4)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t05_xarita.webp",
+     "w": 845,
+     "h": 268,
+     "label": "Rasm 5.4",
+     "caption": "Genlar xaritasini tuzish: A–B orasida 1,5 %, B–C orasida 3,5 %, C–D orasida 5,0 % krossingover; A–D masofa 10,0 % ga teng (raqamlar genlar orasidagi chalkashuv foizi) (P.X. Xolikov va boshq., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Hozir odam genomining to‘liq xaritasi tuzilgan: **genetik (rekombinatsion)** xaritalar oilalarda krossingoverni o‘rganish bilan, **fizik** xaritalar esa gibridlash, FISH va DNK sekvenirlash yordamida tuziladi. Ular irsiy kasalliklar genlarini topish va prenatal tashxisda qo‘llaniladi."
+    },
+    {
+     "type": "h",
+     "text": "Qo‘sh krossingover va interferensiya"
+    },
+    {
+     "type": "p",
+     "text": "Uzoqroq joylashgan genlar orasida bir vaqtda ikki joyda chalkashuv — **qo‘sh krossingover** bo‘lishi mumkin. Bunda chetdagi genlar ota-ona holatiga qaytadi va rekombinatsiya “yashirinib” qoladi, shuning uchun uzoq genlar orasidagi masofa qisqa masofalar yig‘indisidan biroz kam chiqadi. Bitta krossingover yaqin atrofda ikkinchisining bo‘lishini kamaytiradi — bu **interferensiya** deyiladi. Uning darajasi **koinsidensiya koeffitsiyenti** bilan baholanadi: kuzatilgan qo‘sh krossoverlar foizi / nazariy kutilgan foiz (A–B va B–C chastotalari ko‘paytmasi)."
+    },
+    {
+     "type": "p",
+     "text": "Odamda birinchi aniqlangan birikish guruhlari: 1-xromosomada **Rh omil** geni va **elliptotsitoz** geni (oval eritrotsitlar), 9-xromosomada **ABO** qon guruhi geni va **tirnoq-tizza qopqog‘i sindromi** geni. Bunday birikish oilada bir belgi bo‘yicha boshqasining (kasallik genining) o‘tishini oldindan aytishga imkon beradi — bilvosita DNK diagnostikaning asosi shu."
+    }
+   ]
+  },
+  {
+   "title": "4. Jins genetikasi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Jins — organizmning reproduktiv vazifani ta’minlovchi belgilar majmui; u **jinsiy xromosomalar** (geteroxromosomalar) bilan belgilanadi. Qolgan xromosomalar **autosomalar** deyiladi. Odam kariotipi: ayolda 44 autosoma + XX (46,XX), erkakda 44 autosoma + XY (46,XY). Bir xil jinsiy xromosomali jins **gomogametali** (bir xil gametalar), har xil xromosomali jins **geterogametali** deyiladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 5.1. Jinsni belgilash tiplari",
+     "head": [
+      "Tip",
+      "Urg‘ochi",
+      "Erkak",
+      "Geterogametali jins",
+      "Organizmlar"
+     ],
+     "rows": [
+      [
+       "XY",
+       "XX",
+       "XY",
+       "Erkak",
+       "Sut emizuvchilar, odam, drozofila"
+      ],
+      [
+       "ZW (XY)",
+       "ZW",
+       "ZZ",
+       "Urg‘ochi",
+       "Qushlar, kapalaklar, ayrim baliqlar va sudralib yuruvchilar"
+      ],
+      [
+       "XO",
+       "XX",
+       "XO",
+       "Erkak",
+       "Chigirtkalar, ninachilar, qandalalar"
+      ],
+      [
+       "ZO",
+       "ZO",
+       "ZZ",
+       "Urg‘ochi",
+       "Kuyalar, ayrim kapalaklar"
+      ],
+      [
+       "Gaplo-diploid",
+       "Diploid (2n)",
+       "Gaploid (n)",
+       "—",
+       "Asalarilar, chumolilar"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t05_jins.webp",
+     "label": "Rasm 5.5",
+     "caption": "Drozofilada jinsning xromosoma yo‘li bilan belgilanishi: gomogametali urg‘ochi (XX) bir xil, geterogametali erkak (XY) ikki xil gameta hosil qiladi; urug‘lanishda 1 : 1 nisbatda urg‘ochi va erkak zigotalar paydo bo‘ladi (P.X. Xolikov va boshq., 2022).",
+     "lang": true
+    },
+    {
+     "type": "p",
+     "text": "Odamda jins **urug‘lanish paytida** belgilanadi: X xromosomali spermatozoid tuxum hujayrani urug‘lantirsa qiz (XX), Y xromosomali spermatozoid urug‘lantirsa o‘g‘il (XY) tug‘iladi; nazariy nisbat 1 : 1. Erkak jinsining rivojlanishini Y xromosomadagi **SRY geni** (moyak rivojlanishini boshlovchi omil) belgilaydi. Shuning uchun 47,XXY kariotipli odam erkak, 45,X kariotipli odam ayol fenotipiga ega bo‘ladi."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Jinsiy differensiyalanish buzilishlari: SRY geni X xromosomaga o‘tib qolganda 46,XX erkak sindromi; androgen retseptorlari yetishmasligida (**moyak feminizatsiyasi sindromi**) 46,XY kariotipli odamda ayol fenotipi. Bunday holatlarda jinsni aniqlash uchun kariotip va jinsiy xromatin tekshiriladi."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Odamda jinsning shakllanish darajalari"
+    },
+    {
+     "type": "table",
+     "title": "Jadval 5.2. Jinsning shakllanish darajalari",
+     "head": [
+      "Daraja",
+      "Mohiyati",
+      "Buzilishiga misol"
+     ],
+     "rows": [
+      [
+       "Xromosoma (genetik) jinsi",
+       "Urug‘lanishda belgilanadi: 46,XX yoki 46,XY",
+       "Klaynfelter (47,XXY), Shereshevskiy–Terner (45,X) sindromlari"
+      ],
+      [
+       "Gonada jinsi",
+       "Homilaning 6–7-haftasida SRY geni ta’sirida befarq gonadadan moyak, u bo‘lmasa tuxumdon rivojlanadi",
+       "Gonadalar disgeneziyasi, haqiqiy germafroditizm"
+      ],
+      [
+       "Gormonal jins",
+       "Moyak testosteron va anti-Myuller gormoni ishlab chiqaradi",
+       "Buyrak usti bezining tug‘ma giperplaziyasi (qizlarda virilizatsiya)"
+      ],
+      [
+       "Somatik (fenotipik) jins",
+       "Ichki va tashqi jinsiy a’zolar, ikkilamchi jinsiy belgilar",
+       "Moyak feminizatsiyasi (androgenlarga befarqlik)"
+      ],
+      [
+       "Psixologik va ijtimoiy jins",
+       "O‘zini qaysi jinsga mansub deb bilishi, tarbiya",
+       "—"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Dozani kompensatsiyalash (M. Layon gipotezasi, 1961).** Ayollarda ikkita, erkaklarda bitta X xromosoma bo‘lsa-da, X-genlar mahsuloti miqdori ikki jinsda deyarli teng. Buning sababi — embrion rivojlanishining dastlabki davrida (taxminan 16-kun) ayol hujayralarida X xromosomalardan biri **tasodifiy** inaktivatsiyalanib, **Barr tanachasiga** aylanadi va bu holat qiz hujayralarga o‘tadi. Natijada ayol organizmi X-genlar bo‘yicha **mozaika** bo‘ladi: masalan, ko‘z rangini ajratish geni bo‘yicha geterozigota ayolning to‘r pardasida normal va daltonik sohalar navbatlashadi; uch rangli (toshbaqasimon) mushuklar deyarli doim urg‘ochi bo‘ladi."
+    }
+   ]
+  },
+  {
+   "title": "5. Jinsga birikkan belgilarning irsiylanishi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Jinsiy xromosomalarda joylashgan genlar bilan belgilanadigan belgilar **jinsga birikkan** belgilar deyiladi. Erkakda X xromosomadagi genlar juftsiz bo‘ladi (**gemizigota**), shuning uchun retsessiv allel ham erkakda albatta namoyon bo‘ladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 5.3. Jinsga birikkan irsiylanish turlari",
+     "head": [
+      "Turi",
+      "Xususiyatlari",
+      "Misollar"
+     ],
+     "rows": [
+      [
+       "X-birikkan retsessiv",
+       "Asosan erkaklar kasallanadi; kasal erkakning barcha qizlari tashuvchi; tashuvchi onaning o‘g‘illarining 50 % i kasal; otadan o‘g‘ilga o‘tmaydi",
+       "Gemofiliya A va B, daltonizm, Dyushenn mushak distrofiyasi, G6FD yetishmovchiligi"
+      ],
+      [
+       "X-birikkan dominant",
+       "Ayollar erkaklarga nisbatan 2 marta ko‘p kasallanadi; kasal otaning barcha qizlari kasal, o‘g‘illari sog‘",
+       "Vitamin D ga rezistent raxit (gipofosfatemiya), tish emalining qoramtir rangi"
+      ],
+      [
+       "Y-birikkan (golandrik)",
+       "Faqat erkaklarda, otadan barcha o‘g‘illarga o‘tadi",
+       "Quloq suprasining gipertrixozi, barmoqlar orasida parda, azoospermiya ayrim shakllari"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Daltonizm** (rang ajrata olmaslik) misolida: X^D^ — normal ko‘rish, X^d^ — daltonizm. Tashuvchi ayol (X^D^X^d^) va sog‘lom erkak (X^D^Y) nikohidan qizlarning hammasi sog‘lom (50 % i tashuvchi), o‘g‘illarning 50 % i daltonik bo‘ladi. **Gemofiliya** ham shunday irsiylanadi; uning Buyuk Britaniya qirolichasi Viktoriya avlodlarida tarqalishi mashhur misol hisoblanadi."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t05_gemofiliya.webp",
+     "label": "Rasm 5.6",
+     "caption": "Gemofiliyaning irsiylanishi: tashuvchi ayol (X^H^X^h^) va sog‘lom erkak (X^H^Y) nikohidan sog‘lom qiz, sog‘lom o‘g‘il, tashuvchi qiz va gemofiliya bilan kasal o‘g‘il tug‘ilishi mumkin (P.X. Xolikov va boshq., 2022).",
+     "lang": true
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Gemofiliya A** (VIII qon ivish omili yetishmasligi) va **gemofiliya B** (IX omil) — X-birikkan retsessiv kasalliklar: kichik jarohatdan ham uzoq qon ketishi, bo‘g‘imlarga qon quyilishi (gemartroz) xos. Tarixda mashhur misol — qirolicha Viktoriya avlodlari (Yevropa qirollik oilalari). **Dyushenn mushak distrofiyasi** (distrofin geni) o‘g‘il bolalarda 3–5 yoshda boshlanib, mushaklar kuchsizlanib boradi. **Glyukoza-6-fosfatdegidrogenaza (G6FD) yetishmasligida** ayrim dorilar (primaxin, sulfanilamidlar) yoki dukkakli o‘simlik (baqla) iste’mol qilinganda gemolitik kriz rivojlanadi."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Jinsga bog‘liq (cheklangan) belgilar** autosomalardagi genlar bilan belgilanadi, ammo faqat bir jinsda yoki ikki jinsda turlicha namoyon bo‘ladi (jinsiy gormonlar ta’siri): erkaklarda kallik (androgenetik alopesiya) — erkaklarda dominant, ayollarda retsessiv; sut bezlarining rivojlanishi, soqol o‘sishi, ovozning past-balandligi."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "X-birikkan retsessiv kasallik **hech qachon otadan o‘g‘ilga** o‘tmaydi, chunki o‘g‘il otadan Y xromosomani oladi. Kasal o‘g‘ilning tashuvchisi doimo ona bo‘ladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "6. Birikkan va jinsga birikkan irsiylanishga oid masalalar namunalari",
+   "blocks": [
+    {
+     "type": "sub",
+     "text": "Namuna 1. Krossingover chastotasi bo‘yicha avlodni aniqlash"
+    },
+    {
+     "type": "p",
+     "text": "**Shart:** A va B genlari bitta xromosomada, ular orasidagi masofa 20 sM. AB/ab (sis-holat) urg‘ochi ab/ab erkak bilan chatishtirildi. Avlodda qanday fenotiplar va qancha foizda bo‘ladi? **Yechim:** 20 % krossover gametalar (Ab va aB — har biri 10 %), 80 % nokrossover gametalar (AB va ab — har biri 40 %). Erkak faqat ab gameta beradi. Avlod: AB/ab — 40 %, ab/ab — 40 %, Ab/ab — 10 %, aB/ab — 10 %. Trans-holatda (Ab/aB) esa aksincha: Ab va aB — 40 % dan, AB va ab — 10 % dan."
+    },
+    {
+     "type": "sub",
+     "text": "Namuna 2. Gemofiliya (X-birikkan retsessiv)"
+    },
+    {
+     "type": "p",
+     "text": "**Shart:** otasi gemofiliya bilan kasal bo‘lgan sog‘lom ayol sog‘lom erkakka turmushga chiqdi. Kasal farzand tug‘ilish ehtimoli qancha? **Yechim:** ayol otasidan X^h^ olgan, demak u tashuvchi — X^H^X^h^. Erkak — X^H^Y. Farzandlar: X^H^X^H^ (sog‘lom qiz), X^H^X^h^ (tashuvchi qiz), X^H^Y (sog‘lom o‘g‘il), X^h^Y (kasal o‘g‘il) — har biri 25 %. Kasal bola ehtimoli barcha farzandlar orasida 25 %, o‘g‘illar orasida 50 %; qizlarning hammasi fenotipik sog‘lom."
+    },
+    {
+     "type": "sub",
+     "text": "Namuna 3. Autosoma va X-xromosoma genlari birga"
+    },
+    {
+     "type": "p",
+     "text": "**Shart:** ko‘k ko‘zli (aa), rangni normal ajratuvchi, otasi daltonik bo‘lgan ayol qo‘y ko‘zli (Aa), daltonik erkakka turmushga chiqdi. Ko‘k ko‘zli daltonik qiz tug‘ilish ehtimolini toping. **Yechim:** ayol aaX^D^X^d^, erkak AaX^d^Y. Ko‘z rangi: aa × Aa → ko‘k ko‘z 1/2. Ko‘rish: X^D^X^d^ × X^d^Y → daltonik qiz (X^d^X^d^) 1/4. Ko‘paytirish qoidasi: 1/2 × 1/4 = 1/8 = 12,5 %."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Jinsga birikkan masalalarda genotip doimo jinsiy xromosoma bilan birga yoziladi: X^A^X^a^, X^a^Y. Y xromosomada X-genlarining alleli yo‘q, shuning uchun erkak X-genlar bo‘yicha faqat bitta allelga ega."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Ko‘nikma: uchta gen orasidagi masofadan genetik xarita tuzish",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Har bir juft gen orasidagi krossingover foizini yozing (masalan, A–B = 12 %, B–C = 5 %, A–C = 7 %).",
+      "Eng katta masofani toping — bu chetdagi ikki gen (A va B).",
+      "Uchinchi gen (C) ular orasida joylashadi: 7 % + 5 % = 12 % ekanini tekshiring.",
+      "Xaritani chizing: A — 7 sM — C — 5 sM — B.",
+      "Agar kichik masofalar yig‘indisi katta masofadan biroz ko‘p bo‘lsa, buni qo‘sh krossingover hisobiga deb izohlang."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Morgan nima uchun drozofilani tadqiqot obyekti sifatida tanlagan?",
+  "Irsiyat xromosoma nazariyasining asosiy qoidalarini ayting.",
+  "Birikish guruhi nima? Odamda nechta birikish guruhi bor?",
+  "To‘liq va to‘liqsiz birikish qanday farqlanadi?",
+  "Krossingover qachon va qanday sodir bo‘ladi? Uning ahamiyati qanday?",
+  "Genlar orasidagi masofa qanday aniqlanadi? Morganida nima?",
+  "Genetik xarita qanday tuziladi?",
+  "Jinsni belgilashning qanday tiplarini bilasiz?",
+  "Odamda jins qachon va qanday belgilanadi? SRY genining roli qanday?",
+  "X-birikkan retsessiv irsiylanishning xususiyatlarini ayting.",
+  "X-birikkan dominant va Y-birikkan irsiylanishga misollar keltiring.",
+  "Jinsga bog‘liq (cheklangan) belgilar jinsga birikkan belgilardan qanday farq qiladi?",
+  "Xromosoma nazariyasini o‘rganish asosida qanday xulosalar chiqariladi?",
+  "Xromosoma nazariyasi yaratilishida U. Setton, T. Boveri va K. Bridjesning roli qanday?",
+  "Krossingover chastotasiga qanday omillar ta’sir qiladi?",
+  "Qo‘sh krossingover, interferensiya va koinsidensiya koeffitsiyenti nima?",
+  "Odamda jinsning shakllanish darajalarini ayting.",
+  "Layon gipotezasi (dozani kompensatsiyalash) nimadan iborat?",
+  "Gemofiliya, Dyushenn mushak distrofiyasi va G6FD yetishmasligi qanday irsiylanadi?"
+ ],
+ "quiz": [
+  {
+   "q": "Irsiyatning xromosoma nazariyasini kim yaratgan?",
+   "options": [
+    "T. Morgan",
+    "G. Mendel",
+    "Ch. Darvin",
+    "G. de Friz",
+    "N.I. Vavilov"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Birikish guruhlari soni nimaga teng?",
+   "options": [
+    "Gaploid xromosomalar soniga",
+    "Diploid xromosomalar soniga",
+    "Genlar soniga",
+    "Autosomalar juftlari soniga ikki qo‘shilganiga",
+    "Allellar soniga"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Erkak odamda nechta birikish guruhi bor?",
+   "options": [
+    "24",
+    "23",
+    "46",
+    "22",
+    "44"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "1 morganida nimaga teng?",
+   "options": [
+    "1 % krossingoverga",
+    "1 mkm masofaga",
+    "1000 nukleotidga",
+    "1 ta genga",
+    "10 % krossingoverga"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Krossingover chastotasi qaysi qiymatdan oshmaydi?",
+   "options": [
+    "50 %",
+    "25 %",
+    "75 %",
+    "100 %",
+    "10 %"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Genlar orasidagi masofa: A–B = 8 %, B–C = 3 %, A–C = 5 %. Genlar tartibi qanday?",
+   "options": [
+    "A–C–B",
+    "A–B–C",
+    "B–A–C",
+    "C–A–B",
+    "Aniqlab bo‘lmaydi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Krossingover meyozning qaysi bosqichida bo‘ladi?",
+   "options": [
+    "Paxitenada",
+    "Leptotenada",
+    "Metafaza I da",
+    "Anafaza II da",
+    "Interkinezda"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qushlarda qaysi jins geterogametali?",
+   "options": [
+    "Urg‘ochi (ZW)",
+    "Erkak (XY)",
+    "Erkak (ZZ)",
+    "Ikkalasi ham",
+    "Hech biri"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Odamda erkak jinsi rivojlanishini qaysi gen boshlaydi?",
+   "options": [
+    "Y xromosomadagi SRY",
+    "X xromosomadagi XIST",
+    "1-xromosomadagi Rh",
+    "9-xromosomadagi ABO",
+    "17-xromosomadagi p53"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Gemofiliya qanday irsiylanadi?",
+   "options": [
+    "X-birikkan retsessiv",
+    "X-birikkan dominant",
+    "Autosoma-dominant",
+    "Y-birikkan",
+    "Autosoma-retsessiv"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Daltonik erkak va sog‘lom (tashuvchi bo‘lmagan) ayoldan tug‘ilgan qizlar qanday bo‘ladi?",
+   "options": [
+    "Hammasi tashuvchi",
+    "Hammasi daltonik",
+    "50 % i daltonik",
+    "Hammasi sog‘lom, tashuvchi emas",
+    "25 % i tashuvchi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi belgi Y xromosomaga birikkan holda irsiylanadi?",
+   "options": [
+    "Quloq suprasining gipertrixozi",
+    "Daltonizm",
+    "Gemofiliya",
+    "Vitamin D ga rezistent raxit",
+    "Dyushenn distrofiyasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "X-birikkan dominant irsiylanishda kasal otaning farzandlari qanday bo‘ladi?",
+   "options": [
+    "Barcha qizlari kasal, o‘g‘illari sog‘",
+    "Barcha o‘g‘illari kasal, qizlari sog‘",
+    "Hammasi kasal",
+    "Hammasi sog‘",
+    "50 % o‘g‘illari kasal"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Erkaklarda X xromosomadagi genlar uchun qanday atama qo‘llaniladi?",
+   "options": [
+    "Gemizigota",
+    "Gomozigota",
+    "Geterozigota",
+    "Diploid",
+    "Poliploid"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Androgenetik kallik qanday belgiga misol?",
+   "options": [
+    "Jinsga bog‘liq (cheklangan) autosoma belgisi",
+    "Y-birikkan belgi",
+    "X-birikkan retsessiv belgi",
+    "Mitoxondrial belgi",
+    "Xromosoma kasalligi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Drozofilaning qaysi jinsida krossingover bo‘lmaydi?",
+   "options": [
+    "Erkagida",
+    "Urg‘ochisida",
+    "Ikkalasida ham bo‘ladi",
+    "Ikkalasida ham bo‘lmaydi",
+    "Faqat lichinkada"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Bir krossingoverning yaqin atrofda ikkinchisi bo‘lishini kamaytirishi nima deyiladi?",
+   "options": [
+    "Interferensiya",
+    "Koinsidensiya",
+    "Pleyotropiya",
+    "Epistaz",
+    "Penetrantlik"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Ayol hujayralarida X xromosomalardan birining inaktivatsiyasi haqidagi gipotezani kim taklif qilgan?",
+   "options": [
+    "M. Layon",
+    "T. Morgan",
+    "K. Bridjes",
+    "B. MakKlintok",
+    "U. Setton"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "A–B masofa 20 sM. AB/ab × ab/ab chatishtirishda Ab/ab avlod necha foiz bo‘ladi?",
+   "options": [
+    "10 %",
+    "20 %",
+    "40 %",
+    "25 %",
+    "5 %"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Dyushenn mushak distrofiyasi qanday irsiylanadi?",
+   "options": [
+    "X-birikkan retsessiv",
+    "X-birikkan dominant",
+    "Autosom-dominant",
+    "Y-birikkan",
+    "Mitoxondrial"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Masala 1",
+   "text": "Odamda rang ajrata olish geni (D, dominant) va daltonizm geni (d, retsessiv) X xromosomada joylashgan. Daltonik erkak va normal ko‘radigan ayol nikohidan daltonik qiz tug‘ildi.",
+   "ask": "Ota-onaning genotipini aniqlang.",
+   "answer": "Daltonik qiz X^d^X^d^ — u bir X^d^ ni otadan, ikkinchisini onadan olgan. Ota daltonik — X^d^Y. Ona normal ko‘radi, lekin X^d^ ni bergan, demak u tashuvchi — X^D^X^d^. Bu oilada qizlarning ham, o‘g‘illarning ham 50 % i daltonik bo‘lishi mumkin."
+  },
+  {
+   "title": "Masala 2",
+   "text": "Gipertrixoz (quloq suprasida tuk o‘sishi) Y xromosomaga birikkan, ixtiozning bir shakli X-birikkan retsessiv belgi. Ikkala belgi bo‘yicha sog‘lom ayol va gipertrixozli erkak oilasida ixtiozli bola tug‘ildi.",
+   "ask": "Bu bolada gipertrixoz bo‘lishi mumkinmi? Bolaning jinsi qanday?",
+   "answer": "Ixtioz X-birikkan retsessiv; sog‘lom ota-onadan kasal farzand faqat tashuvchi onadan X^i^ olgan o‘g‘il (X^i^Y) bo‘lishi mumkin (ota X^I^Y bo‘lgani uchun qizlari kasal bo‘lmaydi). Bola o‘g‘il bo‘lgani uchun otasidan gipertrixoz genli Y xromosomani olgan — u ham ixtioz, ham (jinsiy balog‘at davrida) gipertrixozga ega bo‘ladi."
+  },
+  {
+   "title": "Masala 3",
+   "text": "Odamda katarakta (A) va polidaktiliya (B) dominant genlar bilan belgilanadi va bitta autosomada to‘liq birikkan (krossingover bo‘lmaydi). Ayol va erkak ikkalasi ham digeterozigota; har birining otasi kataraktali, onasi polidaktiliyali bo‘lgan.",
+   "ask": "Farzandlarning genotipi va fenotipi qanday bo‘ladi?",
+   "answer": "Har bir ota-ona otasidan Ab, onasidan aB xromosomasini olgan, ya’ni trans-holatdagi digeterozigota Ab/aB. Krossingover bo‘lmagani uchun har biri faqat Ab va aB gametalarni hosil qiladi. F~1~: Ab/Ab (faqat katarakta) — 25 %, Ab/aB (katarakta + polidaktiliya) — 50 %, aB/aB (faqat polidaktiliya) — 25 %. Sog‘lom bola (ab/ab) tug‘ilmaydi."
+  },
+  {
+   "title": "Masala 4",
+   "text": "Gemofiliya A bilan kasal erkak sog‘lom (tashuvchi bo‘lmagan) ayolga uylandi. Ular nevaralari haqida qayg‘urmoqda.",
+   "ask": "Bu oilaning farzandlari va nevaralarida kasallik bo‘lishi mumkinmi?",
+   "answer": "Ota X^h^Y, ona X^H^X^H^. Barcha **o‘g‘illar** sog‘lom (otadan Y oladi) va kasallikni o‘tkazmaydi. Barcha **qizlar** — majburiy tashuvchilar (X^H^X^h^), chunki otadan X^h^ oladi. Qizlar sog‘lom erkakka turmushga chiqsa, ularning o‘g‘illarining 50 % i gemofiliya bilan kasal, qizlarining 50 % i tashuvchi bo‘ladi. Demak, kasallik nevaralarda — **qizlar orqali o‘g‘il nevaralarda** paydo bo‘lishi mumkin (“bir avlod oshib”). Qizlarga homiladorlikda prenatal diagnostika tavsiya etiladi."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Drozofilada kulrang tana (B) qora tana (b) ustidan, normal qanot (V) qisqa qanot (v) ustidan dominant. BbVv urg‘ochi bbvv erkak bilan chatishtirilganda 1000 ta avlod olindi: kulrang normal qanotli — 415, qora qisqa qanotli — 415, kulrang qisqa qanotli — 85, qora normal qanotli — 85.",
+   "ask": "Genlar birikkanmi? Ular orasidagi masofani va urg‘ochining genotipini aniqlang.",
+   "answer": "Mustaqil irsiylanishda 1 : 1 : 1 : 1 (har biri 250) kutilardi; ikki sinf ko‘p (415 dan), ikki sinf kam (85 dan) — genlar **birikkan**, to‘liqsiz birikish. Ko‘p sinflar (BV va bv) — ota-onaga o‘xshash (nokrossover), kam sinflar (Bv va bV) — krossover. rf = (85 + 85) / 1000 × 100 = 17 %, ya’ni genlar orasidagi masofa **17 sM**. Urg‘ochi genotipi **BV/bv** (sis-holat), chunki nokrossover sinflar BV va bv."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Tekshiruvda fenotipi ayol, sut bezlari yaxshi rivojlangan, lekin hayz ko‘rmaydigan 18 yoshli bemorda bachadon yo‘qligi, qorin bo‘shlig‘ida moyaklar borligi aniqlandi. Kariotip 46,XY. Jinsiy xromatin (Barr tanachasi) topilmadi.",
+   "ask": "Bu qanday holat? Jinsning qaysi darajasi buzilgan?",
+   "answer": "Bu **moyak feminizatsiyasi sindromi** (androgenlarga to‘liq befarqlik) — X-birikkan androgen retseptori genining mutatsiyasi. Xromosoma jinsi (46,XY) va gonada jinsi (moyak — SRY geni ishlagan) erkak, moyaklar testosteron ishlab chiqaradi, ammo to‘qimalarda retseptor yo‘qligi sababli u ta’sir qilmaydi — **somatik (fenotipik) jins** ayol bo‘lib shakllanadi. Anti-Myuller gormoni ishlagani uchun bachadon rivojlanmagan. Testosteron estrogenga aylanib, sut bezlarini rivojlantiradi. Barr tanachasining yo‘qligi bitta X xromosoma borligini tasdiqlaydi."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Birikish guruhi",
+   "back": "Bitta xromosomadagi, birga irsiylanadigan genlar; soni = n"
+  },
+  {
+   "front": "To‘liq birikish",
+   "back": "Krossingover bo‘lmaydi; faqat ota-ona kombinatsiyalari (erkak drozofila)"
+  },
+  {
+   "front": "Krossingover",
+   "back": "Paxitenada gomologik xromatidlar orasida qism almashinuvi"
+  },
+  {
+   "front": "Morganida (sM)",
+   "back": "1 % krossingoverga teng genetik masofa birligi"
+  },
+  {
+   "front": "rf formulasi",
+   "back": "Krossoverlar / jami avlod × 100 %; 50 % dan oshmaydi"
+  },
+  {
+   "front": "Gomogametali jins",
+   "back": "Bir xil jinsiy xromosomali (odamda ayol — XX)"
+  },
+  {
+   "front": "SRY geni",
+   "back": "Y xromosomada; moyak va erkak jinsi rivojlanishini boshlaydi"
+  },
+  {
+   "front": "Gemizigota",
+   "back": "Erkakda X xromosoma genlarining juftsiz holati"
+  },
+  {
+   "front": "X-birikkan retsessiv",
+   "back": "Gemofiliya, daltonizm, Dyushenn distrofiyasi; otadan o‘g‘ilga o‘tmaydi"
+  },
+  {
+   "front": "Golandrik belgi",
+   "back": "Y-birikkan; otadan barcha o‘g‘illarga (quloq gipertrixozi)"
+  },
+  {
+   "front": "Interferensiya",
+   "back": "Bir krossingoverning yaqin sohada ikkinchisini kamaytirishi"
+  },
+  {
+   "front": "Layon gipotezasi",
+   "back": "Ayol hujayralarida bitta X tasodifiy inaktivatsiyalanadi (Barr tanachasi) — dozani kompensatsiyalash"
+  },
+  {
+   "front": "Gonada jinsi",
+   "back": "SRY geni ta’sirida moyak yoki u bo‘lmasa tuxumdon rivojlanishi"
+  },
+  {
+   "front": "Gemofiliya A",
+   "back": "VIII omil yetishmasligi; X-birikkan retsessiv"
+  }
+ ],
+ "summary": [
+  {
+   "kind": "eslab",
+   "label": "Eslab qoling",
+   "text": "Genlar orasidagi masofa qancha katta bo‘lsa, krossingover shuncha ko‘p; **1 % = 1 morganida**, maksimal krossingover — **50 %**."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Yodlash usuli",
+   "text": "X-retsessiv: **“Ona beradi, o‘g‘il og‘riydi”**; Y-birikkan: **“Otadan o‘g‘ilga — hammasiga”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Klinik ahamiyati",
+   "text": "Gemofiliya va Dyushenn distrofiyasi bilan og‘rigan bola tug‘ilgan oilada ona tashuvchi hisoblanadi; keyingi o‘g‘illarda xavf 50 %, bu tibbiy-genetik maslahatda inobatga olinadi."
+  }
+ ]
+}

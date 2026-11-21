@@ -1,0 +1,810 @@
+{
+ "id": "13",
+ "no": 13,
+ "title": "Roundworms: Ascaris, pinworm, filariae, Trichinella, hookworm, guinea worm, whipworm. Methods of ovohelminthoscopy. Dehelminthization and devastation",
+ "goals": [
+  {
+   "type": "p",
+   "text": "To teach the student the general features of the phylum Nemathelminthes and the class Nematoda, the concepts of geohelminths and biohelminths, the structure, life cycle, routes of transmission, pathogenic effects, diagnosis and prevention of the main nematodes that parasitize humans, and the methods of detecting helminth eggs."
+  },
+  {
+   "type": "sub",
+   "text": "By the end of the class the student should know:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "the general features of nematodes and the concepts of geohelminth and biohelminth;",
+    "the types of infection: autoinfection, reinfection, autoreinfection, active and passive infection;",
+    "ascariasis, enterobiasis, trichuriasis, hookworm disease, strongyloidiasis, trichinellosis, dracunculiasis and the filariases;",
+    "the methods of ovohelminthoscopy and the concepts of dehelminthization and devastation."
+   ]
+  },
+  {
+   "type": "sub",
+   "text": "The student should be able to:"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "identify nematodes and their eggs in preparations;",
+    "prepare a direct smear and take a perianal scraping;",
+    "state the route of transmission and preventive measures for each nematode infection."
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "title": "1. Phylum Nemathelminthes. Class Nematoda",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Roundworms (Nemathelminthes)** are animals with a spindle-shaped or thread-like body that is round in cross-section and not divided into segments. The body is covered by a dense **cuticle**, beneath which lie the hypodermis and longitudinal muscles. They have a **primary body cavity (pseudocoel)** filled with fluid that acts as a hydroskeleton. The digestive system ends with an **anus** (fore-, mid- and hindgut). There are no circulatory or respiratory systems. Nematodes have **separate sexes** and marked sexual dimorphism: the male is smaller and its tail end is curved."
+    },
+    {
+     "type": "table",
+     "title": "Table 13.1. Structural features of nematodes",
+     "head": [
+      "System",
+      "Structure"
+     ],
+     "rows": [
+      [
+       "Covering",
+       "Cuticle, hypodermis and longitudinal muscles — the dermomuscular sac; moulting (larvae moult 4 times)"
+      ],
+      [
+       "Body cavity",
+       "Primary (pseudocoel), filled with fluid — acts as a hydroskeleton"
+      ],
+      [
+       "Digestive system",
+       "Three sections (fore-, mid- and hindgut), **ending with an anus**"
+      ],
+      [
+       "Excretory system",
+       "Skin glands or two lateral canals"
+      ],
+      [
+       "Nervous system",
+       "A nerve ring around the pharynx and longitudinal nerve cords from it"
+      ],
+      [
+       "Reproductive system",
+       "**Dioecious**, sexual dimorphism: the male is smaller with a curved tail end"
+      ],
+      [
+       "Circulatory and respiratory systems",
+       "Absent; respiration through the body surface or anaerobic"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "By type of development, helminths fall into two groups. **Geohelminths** develop without an intermediate host — their eggs or larvae mature **in the soil** (Ascaris, whipworm, hookworm). **Biohelminths** develop with the participation of an intermediate host (Trichinella, guinea worm, filariae, and all flukes and tapeworms). **Contact helminths** (pinworm, dwarf tapeworm) hardly mature in the environment at all and are transmitted via dirty hands and objects."
+    },
+    {
+     "type": "table",
+     "title": "Table 13.2. Groups of helminths by route of transmission",
+     "head": [
+      "Group",
+      "Feature",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "Geohelminths",
+       "Eggs or larvae mature in soil; no intermediate host",
+       "Ascaris, whipworm, hookworm, Strongyloides"
+      ],
+      [
+       "Biohelminths",
+       "Develop with the participation of an intermediate host",
+       "Trichinella, guinea worm, filariae, flukes, taeniid tapeworms"
+      ],
+      [
+       "Contact helminths",
+       "Eggs are infective at once or within hours; directly from person to person",
+       "Pinworm, dwarf tapeworm"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "list",
+       "ordered": false,
+       "items": [
+        "**Autoinfection** — the parasite reinfects the same organism without leaving it (dwarf tapeworm, strongyloidiasis).",
+        "**Reinfection** — repeated infection from outside.",
+        "**Autoreinfection** — swallowing one's own eggs again via the hands (pinworm).",
+        "**Active infection** — the larva enters through the skin by itself (hookworm, schistosomes); **passive infection** — via food, water or a vector."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2. The human roundworm and the pinworm",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**The human roundworm** (*Ascaris lumbricoides*) is the agent of **ascariasis**, a geohelminth found everywhere. The female is 20–40 cm long, the male 15–25 cm; the mouth is surrounded by three lips. It lives in the small intestine; the female lays up to 200 thousand eggs a day. Eggs passed in the faeces are **not immediately infective** for humans — they mature in the soil over 2–3 weeks given oxygen, moisture and warmth (≈ 24 °C), and an infective larva develops inside."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_askaridalar.webp",
+     "label": "Figure 13.1",
+     "caption": "Adult male and female worms of the human roundworm *Ascaris lumbricoides* (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_askarida.webp",
+     "w": 1139,
+     "h": 830,
+     "lang": true,
+     "label": "Figure 13.2",
+     "caption": "Life cycle of the human roundworm *Ascaris lumbricoides*: maturation of the eggs in soil, swallowing of the infective egg, larval migration (intestine → vein → liver → heart → lungs → alveoli → bronchi → trachea → pharynx → intestine) and maturation in the small intestine (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Humans swallow mature eggs with unwashed vegetables and fruit, dirty hands and water. Larvae hatching in the intestine pass through the gut wall into the blood and **migrate** (Figure 13.2), causing eosinophilic infiltrates in the lungs, cough and allergic reactions (**migratory phase**). The swallowed larvae mature in the small intestine within 2–3 months (**intestinal phase**): abdominal pain, weight loss, intestinal obstruction, blockage of the bile ducts. Diagnosis — eggs in the faeces; in the migratory phase, larvae in the sputum and eosinophilia."
+    },
+    {
+     "type": "p",
+     "text": "In the **migratory (early) stage** of ascariasis the larvae break out of lung capillaries into the alveoli: cough, fever, blood **eosinophilia** and rapidly disappearing “flying” eosinophilic infiltrates on X-ray (**Löffler syndrome**) are seen. In the **intestinal stage** there is abdominal pain, nausea, weight loss and allergic reactions. Complications: **intestinal obstruction** by a mass of worms, entry into the bile and pancreatic ducts causing **obstructive jaundice** and **pancreatitis**, appendicitis. Diagnosis: in the migratory stage — larvae in the sputum and serology (no eggs yet!); in the intestinal stage — eggs in the faeces."
+    },
+    {
+     "type": "p",
+     "text": "**Toxocariasis** is infection with the larvae of the dog roundworm (*Toxocara canis*). People (most often children) swallow eggs from soil contaminated with dog faeces. In humans the larvae do not mature but **wander** through the organs for a long time (“visceral larva migrans”): an enlarged liver, cough and high eosinophilia; if a larva reaches the eye, vision falls (ocular toxocariasis). No eggs are found in the faeces — diagnosis is serological."
+    },
+    {
+     "type": "p",
+     "text": "**The pinworm** (*Enterobius vermicularis*) is the agent of **enterobiasis**, a contact helminth found mainly in children. The female is 9–12 mm long, the male 2–5 mm; they are white (Figure 13.3). It lives in the initial part of the large intestine. At night the females crawl out of the anus and lay eggs in the perianal folds, causing intense **itching**. The eggs become infective within 4–6 hours; when the child scratches, they get under the fingernails and are swallowed again (**autoreinfection**). Diagnosis — a **perianal scraping** or adhesive tape test in the morning; stool examination is ineffective."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_ostritsa.webp",
+     "w": 777,
+     "h": 682,
+     "lang": true,
+     "label": "Figure 13.3",
+     "caption": "The pinworm *Enterobius vermicularis*: female (left) and male (right); the mouth, vesicle, oesophageal bulb, midgut, reproductive system, vulva and anus are shown (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "At night the female pinworm crawls out of the anus and lays up to 10–15 thousand eggs in the perianal folds, causing itching; the eggs become infective in 4–6 hours. When the child scratches, eggs get under the nails and into the mouth (**autoreinvasion**) and spread to others through bedding and toys. That is why in enterobiasis **all family members are treated at the same time**, treatment is repeated after 2 weeks, underwear and bedding are washed and ironed daily, and nails are kept short."
+    }
+   ]
+  },
+  {
+   "title": "3. The whipworm, the hookworm and the threadworm",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**The whipworm** (*Trichocephalus trichiurus*) is the agent of **trichuriasis**, a geohelminth 3–5 cm long. The front part of its body is hair-thin, and with it the worm “stitches” itself into the mucosa of the caecum and colon and feeds on blood (Figure 13.4). Its eggs are **lemon-shaped** with plugs at both poles; they mature in the soil in 3–4 weeks. Heavy infection causes anaemia, colitis and, in children, rectal prolapse."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_qilbosh.webp",
+     "w": 788,
+     "h": 476,
+     "lang": true,
+     "label": "Figure 13.4",
+     "caption": "The whipworm *Trichocephalus trichiurus*: male, female and egg (left); the worm with its thin anterior end embedded in the intestinal mucosa (right) (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**The Old World hookworm** (*Ancylostoma duodenale*) and **Necator** (*Necator americanus*) cause **hookworm disease**, which is common in hot, humid areas (mines, rice fields). They are 8–13 mm long, with cutting teeth or plates in the buccal capsule. In the soil a rhabditiform and then a **filariform** larva develops from the egg; it **actively** penetrates human skin (Figure 13.5), travels in the blood to the lungs, ascends to the pharynx, is swallowed and matures in the duodenum. The parasite sucks blood and injures the intestinal wall — severe **iron-deficiency anaemia** develops."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_ankilostoma.webp",
+     "w": 729,
+     "h": 739,
+     "lang": true,
+     "label": "Figure 13.5",
+     "caption": "Life cycle of the hookworm *Ancylostoma duodenale*: eggs passed in the faeces, rhabditiform and filariform larvae in the soil, entry through the skin, migration through the lungs and maturation in the small intestine (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Hookworms attach to the intestinal mucosa with the teeth of their buccal capsule, suck blood and secrete an anticoagulant; one *A. duodenale* causes a loss of ≈ 0,15–0,25 ml of blood a day. Therefore patients with many worms develop severe **iron-deficiency anaemia** (in children growth and mental development slow down). Where larvae enter the skin an itchy rash — “ground itch” — appears. Prevention: wearing shoes and disposing of faeces safely."
+    },
+    {
+     "type": "p",
+     "text": "**The threadworm** (*Strongyloides stercoralis*) is the agent of **strongyloidiasis**; it is ≈ 2 mm long. Transmission resembles that of hookworm (filariform larvae through the skin). Its special feature is **autoinfection** in the intestine, so the disease lasts for decades; when immunity is weakened (glucocorticoids, HIV), a severe disseminated form develops. Diagnosis — larvae in the faeces."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In strongyloidiasis, autoinvasion makes the disease persist for decades. In immunosuppressed patients (glucocorticoid treatment, HIV, tumours, transplantation) the larvae multiply explosively and spread throughout the body — **hyperinfection syndrome** (often fatal). Therefore testing for strongyloidiasis is recommended before prescribing glucocorticoids to a patient from an endemic area."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4. Biohelminths: Trichinella, guinea worm, filariae",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Trichinella** (*Trichinella spiralis*) is the agent of **trichinellosis**; it is 1.5–4 mm long. One animal serves first as the definitive and then as the intermediate host. Humans are infected by eating undercooked **pork**, wild boar or bear meat containing larvae. In the small intestine the larvae mature and the females give birth to live larvae; these travel in the blood to the **striated muscles** (diaphragm, masticatory, intercostal and eye muscles), become encapsulated and remain alive for years. Signs: fever, **swelling of the face and eyelids**, severe muscle pain and marked **eosinophilia**. Diagnosis — serological tests, muscle biopsy, **trichinoscopy** of the remaining meat."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_trixinella.webp",
+     "label": "Figure 13.6",
+     "caption": "Trichinella larvae coiled and encapsulated between striated muscle fibres (trichinelloscopy) (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "Signs of trichinellosis appear 1–4 weeks after infection: high fever, **swelling of the face and eyelids**, severe muscle pain (especially in the masticatory, eye, diaphragm and calf muscles) and high blood **eosinophilia**; in severe cases myocarditis and pneumonia. Diagnosis: epidemiological history (a group of people who ate the same meat falling ill), serological tests, muscle biopsy; **trichinelloscopy** of the remaining meat. Prevention: veterinary inspection of pork and game meat and thorough cooking (salting and smoking do not kill the larvae)."
+    },
+    {
+     "type": "p",
+     "text": "**The guinea worm** (*Dracunculus medinensis*) is the agent of **dracunculiasis**; the female is up to 120 cm long. Its intermediate host is the **Cyclops**. Humans are infected by drinking pond water containing Cyclops with larvae; the female worm settles in the subcutaneous tissue (usually of the legs), forms a blister on the skin and releases its larvae into the water when the leg touches water. **In Uzbekistan** the guinea worm was completely eradicated in 1932 as a result of measures led by L.M. Isaev — a classic example of **devastation**."
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_rishta.webp",
+     "label": "Figure 13.7",
+     "caption": "A female guinea worm (*Dracunculus medinensis*) emerging from a skin ulcer on the leg (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "The guinea worm was once widespread in Central Asia, especially in **Bukhara**; under the leadership of L.M. Isaev it was completely **eliminated** there by 1932 by draining ponds and improving the water supply — a classic example of devastation. Today, thanks to the global eradication programme, only a few dozen cases a year are recorded in the world."
+    },
+    {
+     "type": "table",
+     "title": "Table 13.3. The main filariae that parasitize humans",
+     "head": [
+      "Parasite (disease)",
+      "Vector (intermediate host)",
+      "Location",
+      "Main signs"
+     ],
+     "rows": [
+      [
+       "*Wuchereria bancrofti*, *Brugia malayi* (lymphatic filariases)",
+       "Mosquitoes (*Culex, Anopheles, Aedes*)",
+       "Lymphatic vessels and nodes",
+       "Lymphangitis, lymphostasis, **elephantiasis**"
+      ],
+      [
+       "*Loa loa* (loiasis)",
+       "Deer flies (*Chrysops*)",
+       "Subcutaneous tissue, **conjunctiva of the eye**",
+       "Calabar swellings, a worm moving across the eye"
+      ],
+      [
+       "*Onchocerca volvulus* (onchocerciasis)",
+       "Black flies (*Simulium*)",
+       "Subcutaneous nodules, eye",
+       "Dermatitis, **“river blindness”**"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "In diagnosing the filariases, microfilariae are found in the blood; the microfilariae of *Wuchereria bancrofti* appear in the peripheral blood mainly **at night**, so the blood smear is taken at night."
+      }
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_loa.webp",
+     "label": "Figure 13.8",
+     "caption": "The filaria *Loa loa* moving under the conjunctiva of the eye (shown by the arrow) (P.X. Xolikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Dirofilariasis** is a filariasis that also occurs in Uzbekistan: its definitive hosts are dogs and cats, and its vectors are mosquitoes (*Culex*, *Aedes*, *Anopheles*). In humans the larva does not mature and forms a moving nodule under the skin, often around the eye; diagnosis and treatment consist of surgical removal of the nodule. **Onchocerciasis** (“river blindness”, *Onchocerca volvulus*) is transmitted in Africa by blackflies and is one of the main infectious causes of blindness."
+    }
+   ]
+  },
+  {
+   "title": "5. Ovohelminthoscopy. Dehelminthization and devastation",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Ovohelminthoscopy** is the set of methods for finding helminth eggs and larvae. In the **macroscopic** method, adult worms and segments in the faeces are examined with the naked eye or a magnifier. **Microscopic** methods: the **direct smear** (a drop of faeces with glycerol or saline), the **Kato thick smear**, **sedimentation** methods (formalin-ether — for heavy eggs such as fluke eggs) and **flotation** methods (Fülleborn — light eggs float to the surface in saturated NaCl solution). Pinworm and beef tapeworm eggs are detected with a **perianal scraping** or adhesive tape (Figure 13.9)."
+    },
+    {
+     "type": "table",
+     "title": "Table 13.4. Methods of ovohelminthoscopy and larvoscopy",
+     "head": [
+      "Method",
+      "Essence",
+      "What it detects"
+     ],
+     "rows": [
+      [
+       "Direct smear",
+       "Faeces mixed in glycerol or saline and examined; quick but of low sensitivity",
+       "Many eggs, vegetative forms of protozoa"
+      ],
+      [
+       "Kato thick smear",
+       "A thick smear under cellophane soaked in glycerol and malachite green — it clears",
+       "Eggs of Ascaris, whipworm and flukes"
+      ],
+      [
+       "Flotation",
+       "In a dense solution (NaCl, NaNO~3~) light eggs float to the surface (Fülleborn, Kalantaryan)",
+       "Eggs of nematodes and the dwarf tapeworm"
+      ],
+      [
+       "Sedimentation",
+       "Heavy eggs settle in the sediment (formalin-ether method)",
+       "Eggs of flukes and the broad fish tapeworm"
+      ],
+      [
+       "Perianal scraping, adhesive tape",
+       "Material is taken from the perianal folds in the morning",
+       "Eggs of pinworm and beef tapeworm"
+      ],
+      [
+       "Baermann larvoscopy",
+       "Larvae migrate from faeces placed in warm water and sink",
+       "Strongyloides larvae"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 13.5. Distinguishing the main helminth eggs",
+     "head": [
+      "Egg",
+      "Size",
+      "Main features"
+     ],
+     "rows": [
+      [
+       "Ascaris (fertilised)",
+       "50–70 × 40–50 µm",
+       "Oval, thick-shelled, with a bumpy (protein) outer layer, yellow-brown"
+      ],
+      [
+       "Whipworm",
+       "50–54 × 22–23 µm",
+       "Barrel-shaped, with colourless “plugs” at both poles"
+      ],
+      [
+       "Pinworm",
+       "50–60 × 20–30 µm",
+       "Colourless, asymmetric — one side flat, with a larva inside"
+      ],
+      [
+       "Hookworm",
+       "56–75 × 36–40 µm",
+       "Oval, thin colourless shell with 4–8 blastomeres inside"
+      ],
+      [
+       "Taeniid tapeworms (oncosphere)",
+       "31–40 µm",
+       "Round, with a thick radially striated shell and a six-hooked oncosphere inside"
+      ],
+      [
+       "Dwarf tapeworm",
+       "40–50 µm",
+       "Colourless, with two membranes and filaments arising from the poles"
+      ],
+      [
+       "Cat liver fluke",
+       "26–30 × 10–15 µm",
+       "Very small, yellowish, with a lid (operculum) at one pole"
+      ],
+      [
+       "Liver fluke",
+       "130–145 × 70–90 µm",
+       "The largest, yellow-brown, operculated"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/bio/t13_tuxumlar.webp",
+     "w": 551,
+     "h": 391,
+     "lang": true,
+     "label": "Figure 13.9",
+     "caption": "Eggs of parasitic worms: 1 — *Schistosoma haematobium*; 2 — *S. mansoni*; 3 — *Fasciola hepatica*; 4 — *S. japonicum*; 5 — *Paragonimus*; 6 — *Dicrocoelium lanceatum*; 7 — *Clonorchis sinensis*; 8 — *Opisthorchis felineus*; 9 — *Taeniarhynchus saginatus*; 10 — *Diphyllobothrium latum*; 11 — *Hymenolepis nana*; 12 — *H. diminuta*; 13 — *Trichocephalus trichiurus*; 14 — *Ascaris lumbricoides* (unfertilized, without the protein coat); 15 — *A. lumbricoides* (fertilized); 16 — *A. lumbricoides* (unfertilized, with the protein coat); 17 — *Enterobius vermicularis* (P.Kh. Kholikov et al., 2022)."
+    },
+    {
+     "type": "p",
+     "text": "**Dehelminthization** comprises the measures that rid the human body (treatment) and the environment (disinfection of faeces, protection of soil and water) of helminths and their eggs. **Devastation** — a term introduced by academician **K.I. Skryabin** — is the **complete extermination** of a helminth species in a given area at all of its stages (adult, larva, egg) by a combination of biological, chemical and organizational measures. Its aim is not to reduce disease but to eliminate the causative agent from the area."
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: preparing a direct smear and taking a perianal scraping",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Place a drop of 50 % glycerol or saline on a glass slide.",
+      "With a wooden stick take a match-head-sized sample from different parts of the faeces, spread it evenly in the drop and cover with a coverslip.",
+      "Examine the whole preparation first under the low-power and then the high-power objective; identify the eggs by shape, size, shell and operculum.",
+      "A perianal scraping is taken in the morning, before washing and defecation: material is collected from the perianal folds with a stick moistened in glycerol or with adhesive tape.",
+      "Stick the tape onto a slide and examine it under the microscope; pinworm eggs are asymmetrical, flattened on one side."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Describe the phylum Nemathelminthes and the class Nematoda.",
+  "How do geohelminths and biohelminths differ?",
+  "Explain autoinfection, reinfection, autoreinfection, and active and passive infection.",
+  "Describe the structure, development, transmission, diagnosis and prevention of the human roundworm.",
+  "What are the features of the pinworm's development and of the diagnosis of enterobiasis?",
+  "What is the life cycle and pathogenic effect of the whipworm, hookworm and threadworm?",
+  "How is Trichinella transmitted to humans? What are the signs and diagnosis of trichinellosis?",
+  "What is the life cycle of the guinea worm? How was it eradicated in Uzbekistan?",
+  "Name the vectors, location and pathogenic significance of the filariae.",
+  "Explain the macroscopic and microscopic methods of ovohelminthoscopy.",
+  "Define dehelminthization and devastation.",
+  "Name the structural features of nematodes.",
+  "How do geo-, bio- and contact helminths differ?",
+  "What are the signs and diagnosis of the migratory and intestinal stages of ascariasis?",
+  "What is toxocariasis and how is it transmitted?",
+  "Why is the whole family treated in enterobiasis?",
+  "Why does anaemia develop in hookworm disease?",
+  "What are the signs, diagnosis and prevention of trichinellosis?",
+  "What methods of ovohelminthoscopy exist and what do they detect?"
+ ],
+ "quiz": [
+  {
+   "q": "What kind of body cavity do nematodes have?",
+   "options": [
+    "Primary (pseudocoel)",
+    "Secondary (coelom)",
+    "Mixed (mixocoel)",
+    "Filled with parenchyma",
+    "No body cavity"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which helminth is a geohelminth?",
+   "options": [
+    "Ascaris",
+    "Trichinella",
+    "Guinea worm",
+    "Wuchereria",
+    "Echinococcus"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How long do Ascaris eggs take to mature in the soil?",
+   "options": [
+    "2–3 weeks",
+    "4–6 hours",
+    "1–2 days",
+    "6 months",
+    "They do not mature; they are infective at once"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In which organ do Ascaris larvae form infiltrates during migration?",
+   "options": [
+    "Lungs",
+    "Brain",
+    "Kidney",
+    "Muscles",
+    "Skin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the main method of diagnosing enterobiasis?",
+   "options": [
+    "Perianal scraping",
+    "Blood smear",
+    "Muscle biopsy",
+    "Sputum analysis",
+    "Urine analysis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which type of infection is typical of the pinworm?",
+   "options": [
+    "Autoreinfection",
+    "Active infection through the skin",
+    "Transplacental",
+    "Vector-borne",
+    "Via an intermediate host"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "A lemon-shaped egg with plugs at both poles belongs to which helminth?",
+   "options": [
+    "Whipworm",
+    "Ascaris",
+    "Pinworm",
+    "Hookworm",
+    "Liver fluke"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "The larva of which helminth actively enters humans through the skin?",
+   "options": [
+    "Hookworm",
+    "Ascaris",
+    "Pinworm",
+    "Whipworm",
+    "Trichinella"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What kind of anaemia develops in hookworm disease?",
+   "options": [
+    "Iron-deficiency anaemia",
+    "B~12~-deficiency anaemia",
+    "Haemolytic anaemia",
+    "Aplastic anaemia",
+    "Sickle-cell anaemia"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Where in the human body do Trichinella larvae become encapsulated?",
+   "options": [
+    "In striated muscles",
+    "In the liver",
+    "In the intestinal wall",
+    "In the lymph nodes",
+    "In the lungs"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the intermediate host of the guinea worm?",
+   "options": [
+    "Cyclops",
+    "Mosquito",
+    "Mollusc",
+    "Fish",
+    "Pig"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which parasite causes elephantiasis?",
+   "options": [
+    "Wuchereria bancrofti",
+    "Loa loa",
+    "Onchocerca volvulus",
+    "Dracunculus medinensis",
+    "Trichinella spiralis"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the vector of Loa loa?",
+   "options": [
+    "Deer flies (Chrysops)",
+    "Mosquitoes (Culex)",
+    "Simulium black flies",
+    "Cyclops",
+    "Sandflies"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which group of methods does the Fülleborn method belong?",
+   "options": [
+    "Flotation methods",
+    "Sedimentation methods",
+    "Direct smear",
+    "Macroscopic method",
+    "Serological method"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who introduced the term devastation into science?",
+   "options": [
+    "K.I. Skryabin",
+    "L.M. Isaev",
+    "Ye.N. Pavlovsky",
+    "R. Virchow",
+    "L. Pasteur"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is seen in the lungs in the migratory stage of ascariasis?",
+   "options": [
+    "Eosinophilic “flying” infiltrates (Löffler syndrome)",
+    "Echinococcal cysts",
+    "Tuberculous foci",
+    "Calcifications",
+    "Pulmonary oedema"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How do humans become infected with toxocariasis?",
+   "options": [
+    "By swallowing eggs from soil contaminated with dog faeces",
+    "Through undercooked pork",
+    "Through mosquito bites",
+    "Through fish",
+    "By active penetration of the skin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which method detects Strongyloides larvae?",
+   "options": [
+    "Baermann larvoscopy",
+    "Perianal scraping",
+    "Følling test",
+    "Guthrie test",
+    "Trichinelloscopy"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which worm has barrel-shaped eggs with colourless “plugs” at the poles?",
+   "options": [
+    "Whipworm",
+    "Ascaris",
+    "Pinworm",
+    "Hookworm",
+    "Dwarf tapeworm"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who led the elimination of the guinea worm in Bukhara?",
+   "options": [
+    "L.M. Isaev",
+    "K.I. Skryabin",
+    "E.N. Pavlovsky",
+    "I.I. Mechnikov",
+    "R. Koch"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Case 1",
+   "text": "It was found that toys in a kindergarten might be contaminated with Ascaris eggs.",
+   "ask": "Can such eggs cause ascariasis in the children?",
+   "answer": "Ascaris is a geohelminth: eggs freshly passed in the faeces are not infective; they become infective only after maturing in the soil over 2–3 weeks given oxygen, moisture and warmth. Therefore fresh eggs that reach a toy directly from a patient's faeces do not cause ascariasis. However, if the toys are contaminated with soil (a sandpit), it may contain mature infective eggs — in that case there is a risk of infection. Prevention: replacing the sand in sandpits, washing toys and teaching children to wash their hands."
+  },
+  {
+   "title": "Case 2",
+   "text": "Small, motile, white worms were seen in a child's faeces. The mother complains that the child sleeps restlessly at night and scratches around the anus.",
+   "ask": "What parasitic disease can be suspected? What should be done to confirm it?",
+   "answer": "Enterobiasis is suspected (agent — the pinworm, *Enterobius vermicularis*): at night the female pinworms crawl out to the perianal area, lay eggs and cause itching. To confirm, material is taken in the morning, before washing, by perianal scraping or the adhesive tape method, and asymmetrical eggs are found under the microscope; the test is repeated 3 times. To stop autoreinfection, the child and family members are treated at the same time, the nails are cut short, and underwear is changed and ironed daily."
+  },
+  {
+   "title": "Case 3",
+   "text": "A hunter shared wild boar meat with his fellow villagers. A few days later, most of those who ate the meat came to the clinic with facial swelling, fever and severe muscle pain.",
+   "ask": "What disease might the doctor suspect? How can the suspicion be confirmed?",
+   "answer": "Trichinellosis (agent — *Trichinella spiralis*). The encapsulated larvae in the wild boar meat mature in the intestine, and new larvae spread in the blood to the striated muscles — this causes fever, swelling of the face and eyelids, and myalgia. Group illness from a single source is typical. Confirmation: marked eosinophilia in the blood, serological tests (ELISA), muscle biopsy; trichinoscopy of the remaining meat. Prevention — veterinary inspection and thorough cooking of meat."
+  },
+  {
+   "title": "Case 4",
+   "text": "A 7-year-old child has had a dry cough and low-grade fever for 2 weeks. Blood eosinophils are 25 %. X-rays show lung infiltrates that change position within a few days. No helminth eggs were found in the faeces. The child lives in a village and eats unwashed vegetables.",
+   "ask": "Which helminthiasis can be suspected? Why were no eggs found in the faeces?",
+   "answer": "This is the **migratory stage of ascariasis** (Löffler syndrome): larvae hatched from eggs pass from the intestinal wall into the blood and migrate through the liver and lungs, causing “flying” eosinophilic infiltrates in the lungs and cough. At this stage there are no adult female worms in the intestine yet, so there are **no eggs** in the faeces (they appear after ≈ 2–2,5 months). Diagnosis: finding larvae in the sputum and serological tests; the stool test is repeated after 2–3 months. Prevention: washing vegetables and fruit well and hand hygiene."
+  },
+  {
+   "title": "Case 5",
+   "text": "A 30-year-old farmer who works barefoot in rice fields has weakness, shortness of breath and pale skin. Blood tests show haemoglobin 70 g/l, signs of iron-deficiency anaemia and eosinophilia. A few months ago he had an itchy rash on his feet.",
+   "ask": "What helminthiasis could this be? Explain the mechanism of the anaemia.",
+   "answer": "**Hookworm disease** (*Ancylostoma duodenale* or *Necator americanus*). Filariform larvae in warm moist soil actively penetrated the skin (the itchy rash on the feet — “ground itch”), then travelled with the blood to the lungs and on to the duodenum, where they matured. The worms attach to the mucosa with the teeth of the buccal capsule, suck blood and secrete an anticoagulant — continuous blood loss leads to **iron-deficiency anaemia**. Diagnosis: eggs with a thin shell containing 4–8 blastomeres in the faeces. Treatment: an anthelmintic and iron preparations; prevention — working in shoes."
+  },
+  {
+   "title": "Case 6",
+   "text": "A 45-year-old woman who keeps a dog developed an itchy nodule under the skin of her lower eyelid that changed position over a few days. She says she was bitten by many mosquitoes in the summer.",
+   "ask": "What parasitic disease should be considered? What are the diagnosis and treatment?",
+   "answer": "**Dirofilariasis** (*Dirofilaria repens*). The definitive hosts are dogs and cats; a mosquito sucks microfilariae from an infected dog and transmits an infective larva when it bites a person. Humans are an **accidental (dead-end) host**: the larva does not mature and forms a moving nodule in the subcutaneous tissue, often around the eye. Diagnosis and treatment: **surgical removal** of the nodule and identification of the worm under the microscope. Prevention: examining and treating dogs and protection from mosquitoes."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Geohelminths",
+   "back": "No intermediate host, eggs mature in the soil: Ascaris, whipworm and hookworm"
+  },
+  {
+   "front": "Biohelminths",
+   "back": "With an intermediate host: Trichinella, guinea worm, filariae, trematodes, cestodes"
+  },
+  {
+   "front": "Ascaris lumbricoides",
+   "back": "Ascariasis; eggs mature in soil in 2–3 weeks; larvae migrate through the lungs"
+  },
+  {
+   "front": "Enterobius vermicularis",
+   "back": "Enterobiasis; perianal itching; diagnosis — perianal scraping"
+  },
+  {
+   "front": "Trichocephalus trichiurus",
+   "back": "Whipworm; caecum; lemon-shaped eggs"
+  },
+  {
+   "front": "Ancylostoma duodenale",
+   "back": "Actively enters through the skin; iron-deficiency anaemia"
+  },
+  {
+   "front": "Trichinella spiralis",
+   "back": "Pork; capsules in muscles; swelling, myalgia, eosinophilia"
+  },
+  {
+   "front": "Dracunculus medinensis",
+   "back": "Guinea worm; intermediate host — Cyclops; eradicated in Uzbekistan in 1932"
+  },
+  {
+   "front": "Wuchereria bancrofti",
+   "back": "Carried by mosquitoes; lymphatic system; elephantiasis"
+  },
+  {
+   "front": "Devastation",
+   "back": "K.I. Skryabin; complete extermination of a helminth species in an area"
+  },
+  {
+   "front": "Löffler syndrome",
+   "back": "Eosinophilic lung infiltrates, cough and eosinophilia during migration of Ascaris larvae"
+  },
+  {
+   "front": "Toxocariasis",
+   "back": "Wandering of dog roundworm larvae in human organs (visceral larva migrans)"
+  },
+  {
+   "front": "Hyperinfection syndrome",
+   "back": "Explosive multiplication of Strongyloides larvae in immunosuppression"
+  },
+  {
+   "front": "Kato method",
+   "back": "Thick faecal smear cleared with glycerol and malachite green"
+  },
+  {
+   "front": "Dirofilariasis",
+   "back": "Dog filaria; a moving subcutaneous nodule in humans; carried by mosquitoes"
+  }
+ ],
+ "summary": [
+  {
+   "kind": "eslab",
+   "label": "Remember",
+   "text": "Ascaris eggs are **not infective until they mature in the soil**; pinworm eggs, by contrast, become infective within a few hours — which is why enterobiasis spreads quickly within a family."
+  },
+  {
+   "kind": "yodlash",
+   "label": "Memory aid",
+   "text": "Skin penetrators: **“Hookworm, Strongyloides, Schistosoma — they find whoever walks barefoot”**."
+  },
+  {
+   "kind": "klinik",
+   "label": "Clinical relevance",
+   "text": "Facial swelling + myalgia + eosinophilia + a group that ate the same meat = **trichinellosis**; perianal itching in a child = **enterobiasis**."
+  }
+ ]
+}
