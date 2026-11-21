@@ -14,3 +14,9 @@ for base, _, names in os.walk(os.path.join(root, "sim")):
 files.sort()
 json.dump(files, open(os.path.join(root, "data", "precache.json"), "w"), indent=0)
 print(len(files), "fayl")
+# Sozlamalardagi versiya (js/app.js) sw.js dagi VERSION bilan bir xil bo'lishi kerak — shu yerda moslanadi
+import re
+v = re.search(r'const VERSION = "v([0-9.]+)"', open(os.path.join(root, "sw.js")).read()).group(1)
+ap = os.path.join(root, "js", "app.js"); a = open(ap).read()
+a2 = re.sub(r'const VERSION = "[0-9.]+";', f'const VERSION = "{v}";', a, count=1)
+if a2 != a: open(ap, "w").write(a2); print("js/app.js versiyasi ->", v)
