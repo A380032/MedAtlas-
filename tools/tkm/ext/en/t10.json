@@ -1,0 +1,365 @@
+{
+ "append": {
+  "3": [
+   {
+    "type": "p",
+    "text": "**The behavior of dicarboxylic acids on heating** depends on their structure: oxalic and malonic acids **decarboxylate** on heating (HOOC−CH~2~−COOH → CH~3~COOH + CO~2~), while succinic and glutaric acids lose water to form five- and six-membered **cyclic anhydrides**. Biological decarboxylation (of pyruvate, α-ketoglutarate) is also made easier by a carbonyl or carboxyl group next to the carboxyl group."
+   },
+   {
+    "type": "box",
+    "kind": "klinik",
+    "parts": [
+     {
+      "type": "p",
+      "text": "Foods rich in **oxalate** are sorrel, spinach, rhubarb, cocoa and tea. Normally calcium binds oxalate in the intestinal lumen; when fats are poorly absorbed (intestinal diseases), calcium binds to fatty acids instead, much free oxalate is absorbed, and **enteric hyperoxaluria** and kidney stones develop."
+     }
+    ]
+   }
+  ],
+  "6": [
+   {
+    "type": "h",
+    "text": "Structure and action: salicylates and sulfonamides"
+   },
+   {
+    "type": "p",
+    "text": "**Aspirin** transfers an acetyl group to the serine hydroxyl in the active site of cyclooxygenase (COX) — the enzyme is **irreversibly** inactivated. Platelets have no nucleus and cannot synthesize new enzyme, so a single small dose (75–100 mg) stops **thromboxane** synthesis for the whole life of the platelet (≈ 7–10 days) — the prevention of cardiovascular disease is based on this."
+   },
+   {
+    "type": "p",
+    "text": "**Sulfonamides and trimethoprim** block two successive steps of folate synthesis: a sulfonamide, as a competitor of PABA, blocks dihydropteroate synthase, and trimethoprim blocks dihydrofolate reductase. Together (co-trimoxazole) they act **synergistically**. Humans obtain folate from food and do not have this enzyme — this is the basis of the drugs’ selective action."
+   },
+   {
+    "type": "box",
+    "kind": "diqqat",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Aspirin is not given** to children under 16 during a viral infection (influenza, chickenpox) — it can cause **Reye syndrome** (acute liver failure and cerebral edema). In children, paracetamol or ibuprofen is used to lower fever."
+     }
+    ]
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 4,
+   "title": "0. Biogenic amines",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Biogenic amines** are formed by the **decarboxylation** of amino acids: R−CH(NH~2~)−COOH → R−CH~2~−NH~2~ + CO~2~. The reaction is catalyzed by decarboxylases that depend on pyridoxal phosphate (vitamin B~6~). Biogenic amines have strong physiological effects at low concentrations — they are neurotransmitters, hormones and local regulators."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.0. Important biogenic amines",
+     "head": [
+      "Amino acid",
+      "Biogenic amine",
+      "Function",
+      "Medical significance"
+     ],
+     "rows": [
+      [
+       "Histidine",
+       "histamine",
+       "allergic and inflammatory reactions, gastric juice secretion",
+       "antihistamines (H~1~), H~2~ blockers (famotidine)"
+      ],
+      [
+       "Tryptophan",
+       "serotonin (5-hydroxytryptamine) → melatonin",
+       "mood, sleep, gut motility, vascular tone",
+       "antidepressants (SSRIs), carcinoid syndrome"
+      ],
+      [
+       "Glutamate",
+       "GABA (γ-aminobutyric acid)",
+       "the main inhibitory neurotransmitter of the CNS",
+       "tranquilizers (benzodiazepines) enhance the action of GABA"
+      ],
+      [
+       "Tyrosine (via DOPA)",
+       "dopamine, noradrenaline, adrenaline",
+       "movement, motivation, stress response",
+       "Parkinson disease, treatment of shock"
+      ],
+      [
+       "Serine",
+       "ethanolamine",
+       "phospholipid synthesis",
+       "component of membranes"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The action of biogenic amines must be stopped quickly. They are oxidatively deaminated by **monoamine oxidase** (MAO) (R−CH~2~−NH~2~ → R−CHO + NH~3~), and catecholamines are in addition methylated by **catechol-O-methyltransferase** (COMT). The aldehydes formed are oxidized to acids and excreted in the urine (vanillylmandelic acid is the main catecholamine metabolite)."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**The “cheese reaction”:** if a patient taking MAO inhibitors (some antidepressants) eats tyramine-rich food (aged cheese, smoked meat, wine, soy sauce), tyramine is not broken down in the intestine and liver. It displaces noradrenaline from nerve endings — a **hypertensive crisis** develops. That is why such patients are advised to follow a special diet."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 5,
+   "title": "0. Ketone bodies",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Ketone bodies** are three substances formed in the liver from acetyl-CoA: **acetoacetate** (a β-keto acid), **β-hydroxybutyrate** (a β-hydroxy acid) and **acetone** (a product of the spontaneous decarboxylation of acetoacetate). In starvation, a carbohydrate-free diet and insulin deficiency, fatty acids are oxidized intensively, acetyl-CoA is not fully used in the Krebs cycle and is converted into ketone bodies."
+    },
+    {
+     "type": "list",
+     "items": [
+      "The liver **does not use** ketone bodies (it lacks the enzyme that activates them) — it releases them into the blood.",
+      "The heart and skeletal muscles, the renal cortex and, in prolonged starvation, the **brain** use ketone bodies as an energy source.",
+      "Acetoacetate and β-hydroxybutyrate are strong acids (pK~a~ 3.6 and 4.7): when produced in large amounts they consume the bicarbonate buffer and cause **ketoacidosis**.",
+      "Acetone is volatile and hardly metabolized — it is exhaled through the lungs, and the breath smells of **“rotten apples”**."
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/tkm/t10_keton.webp",
+     "w": 1400,
+     "h": 450,
+     "label": "Figure 0.0",
+     "caption": "Ketone bodies: acetoacetic (acetoacetate) and β-hydroxybutyric (D-β-hydroxybutyrate) acids and acetone (structural formulas drawn with RDKit from PubChem data)."
+    },
+    {
+     "type": "table",
+     "title": "Table 10.0. Interpretation of blood ketone body (β-hydroxybutyrate) levels",
+     "head": [
+      "Concentration",
+      "Condition"
+     ],
+     "rows": [
+      [
+       "< 0.6 mmol/L",
+       "normal"
+      ],
+      [
+       "0.6–1.5 mmol/L",
+       "ketosis (starvation, carbohydrate-free diet)"
+      ],
+      [
+       "1.5–3.0 mmol/L",
+       "risk of ketoacidosis"
+      ],
+      [
+       "> 3.0 mmol/L",
+       "diabetic ketoacidosis likely — emergency care"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Keto–enol tautomerism:** acetoacetate and its esters exist in equilibrium between the keto and enol forms: CH~3~−CO−CH~2~−COOR ⇄ CH~3~−C(OH)=CH−COOR. The enol form gives a violet color with FeCl~3~. In urine, ketone bodies are detected by the red-violet color formed with **sodium nitroprusside** in an alkaline medium (Legal’s test, test strips)."
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: detecting ketone bodies in urine (Legal’s test)",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Pour 1–2 mL of urine into a test tube.",
+      "Add 2–3 drops of freshly prepared 5 % sodium nitroprusside solution and 0.5 mL of 10 % NaOH — a red color appears.",
+      "Add a few drops of glacial acetic acid: the red color due to creatinine disappears, while if ketone bodies are present a **red-violet** color persists and intensifies.",
+      "Grade the result with “+” signs or compare the test-strip color with the scale.",
+      "Interpret a positive result together with the patient’s glucose level and clinical condition."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "How are biogenic amines formed? From which amino acids are histamine, serotonin and GABA synthesized?",
+  "How are biogenic amines inactivated? What is the “cheese reaction”?",
+  "Which substances are ketone bodies, and under what conditions are they formed in large amounts?",
+  "Explain keto–enol tautomerism using acetoacetate as an example. How are ketone bodies detected in urine?",
+  "Why does the antiplatelet effect of aspirin last so long?",
+  "Why do sulfonamides and trimethoprim act synergistically when given together?"
+ ],
+ "quiz": [
+  {
+   "q": "Decarboxylation of which amino acid gives histamine?",
+   "options": [
+    "Histidine",
+    "Tryptophan",
+    "Tyrosine",
+    "Glutamate",
+    "Serine"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "From which amino acid is serotonin synthesized?",
+   "options": [
+    "Tryptophan",
+    "Tyrosine",
+    "Histidine",
+    "Phenylalanine",
+    "Glycine"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the coenzyme of amino acid decarboxylases?",
+   "options": [
+    "Pyridoxal phosphate (vitamin B~6~)",
+    "Thiamine pyrophosphate",
+    "FAD",
+    "Biotin",
+    "Coenzyme A"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which enzyme inactivates biogenic amines by oxidative deamination?",
+   "options": [
+    "Monoamine oxidase",
+    "Acetylcholinesterase",
+    "Carbonic anhydrase",
+    "Aldose reductase",
+    "Cyclooxygenase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which food can cause a hypertensive crisis in a patient taking MAO inhibitors?",
+   "options": [
+    "Aged cheese",
+    "Rice porridge",
+    "Apples",
+    "Milk",
+    "Bread"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which ketone body is exhaled through the lungs and gives the breath a characteristic smell?",
+   "options": [
+    "Acetone",
+    "Acetoacetate",
+    "β-Hydroxybutyrate",
+    "Pyruvate",
+    "Lactate"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which organ produces ketone bodies but cannot use them itself?",
+   "options": [
+    "Liver",
+    "Heart",
+    "Brain",
+    "Kidney",
+    "Skeletal muscles"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which reagent is used to detect ketone bodies in urine?",
+   "options": [
+    "Sodium nitroprusside",
+    "Biuret reagent",
+    "Ninhydrin",
+    "Fehling’s solution",
+    "Lugol’s solution"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How does aspirin inactivate cyclooxygenase?",
+   "options": [
+    "It irreversibly acetylates the serine in the active site",
+    "It competitively takes the place of the substrate",
+    "It stops enzyme synthesis",
+    "It hydrolyzes the enzyme",
+    "It binds its cofactor"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What dangerous condition can develop in children who take aspirin during a viral infection?",
+   "options": [
+    "Reye syndrome",
+    "Decompression sickness",
+    "Wilson disease",
+    "Hypertensive crisis",
+    "Methemoglobinemia"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Problem 4",
+   "text": "A teenager with type 1 diabetes mellitus missed his insulin injections. He has nausea, vomiting, abdominal pain and deep, noisy breathing; his breath smells fruity. Glucose 24 mmol/L, blood β-hydroxybutyrate 5.2 mmol/L.",
+   "ask": "Why have the ketone bodies increased? How do they cause acidosis? What is the smell of the breath due to?",
+   "answer": "Without insulin, cells cannot use glucose and lipolysis increases in adipose tissue; β-oxidation of fatty acids in the liver produces much **acetyl-CoA**, which is converted into ketone bodies. β-Hydroxybutyrate 5.2 mmol/L (> 3) — **diabetic ketoacidosis**. Acetoacetate and β-hydroxybutyrate are strong organic acids; they release H^+^, consume the bicarbonate buffer and cause metabolic acidosis with an increased anion gap. The deep Kussmaul breathing is respiratory compensation. **Acetone**, formed by the decarboxylation of acetoacetate, is volatile and is exhaled."
+  },
+  {
+   "title": "Problem 5",
+   "text": "A woman taking an MAO inhibitor for depression ate aged cheese and drank red wine at a party. An hour later she had a severe headache and palpitations, and her blood pressure was 220/120 mm Hg.",
+   "ask": "Explain the biochemical mechanism of the hypertensive crisis.",
+   "answer": "Cheese and wine contain much **tyramine** — the decarboxylation product of tyrosine. Normally tyramine is broken down by **MAO** in the intestinal wall and liver. When MAO is blocked, tyramine enters the blood and displaces **noradrenaline** from sympathetic nerve endings; since noradrenaline is also not broken down by MAO, its effect is enhanced — vessels constrict and blood pressure rises sharply. This is called the “cheese reaction”; the patient should have been warned in advance to avoid tyramine-containing foods."
+  },
+  {
+   "title": "Problem 6",
+   "text": "Several customers who ate canned tuna at a restaurant developed flushing of the face and neck, headache, a burning sensation in the mouth and itching 20–30 minutes later. None of them had a history of allergy.",
+   "ask": "What is the chemical cause of the condition? How is it treated?",
+   "answer": "This is **scombroid poisoning**: in improperly stored fish, **histidine** is converted into **histamine** by bacterial decarboxylase. Histamine is not destroyed by cooking; eaten in large amounts it causes an allergy-like reaction (vasodilation, flushing, itching), but without an immune mechanism. Treatment is with **antihistamines** (H~1~ blockers, and H~2~ blockers if needed); severe cases are treated like an allergic reaction."
+  },
+  {
+   "title": "Problem 7",
+   "text": "A patient with a urinary tract infection was prescribed co-trimoxazole (sulfamethoxazole + trimethoprim).",
+   "ask": "What is the biochemical basis for giving the two drugs together? Why do they hardly affect human cells?",
+   "answer": "Bacteria synthesize folic acid themselves. **Sulfamethoxazole** is a structural analog of PABA: it competitively takes the place of PABA at dihydropteroate synthase. **Trimethoprim** blocks the bacterial dihydrofolate reductase at the next step. Because two successive steps of one pathway are blocked, the effect is **synergistic** and bactericidal, and resistance develops slowly. Humans take folate ready-made from food (they have no dihydropteroate synthase), and trimethoprim acts on human reductase 50 000 times more weakly — this is the basis of the selective action."
+  },
+  {
+   "title": "Problem 8",
+   "text": "A patient with Parkinson disease has been found to lack dopamine, but for treatment levodopa together with carbidopa was prescribed instead of dopamine itself.",
+   "ask": "Why is dopamine itself not given? What role does carbidopa play?",
+   "answer": "Dopamine is a polar amine that is positively charged at physiological pH; it **does not cross the blood–brain barrier**. Levodopa (L-DOPA) is an amino acid that enters the brain via the neutral amino acid transporter and is converted there into **dopamine** by DOPA decarboxylase. However, much of the levodopa is decarboxylated in the periphery before it reaches the brain, causing nausea and arrhythmias. **Carbidopa** blocks peripheral decarboxylase but does not itself enter the brain — the fraction of levodopa reaching the brain increases, and the dose can be reduced."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Biogenic amines",
+   "back": "Decarboxylation products of amino acids: histamine, serotonin, GABA, dopamine; coenzyme — B~6~"
+  },
+  {
+   "front": "MAO",
+   "back": "Monoamine oxidase — oxidatively deaminates biogenic amines; with its inhibitors — the “cheese reaction”"
+  },
+  {
+   "front": "Ketone bodies",
+   "back": "Acetoacetate, β-hydroxybutyrate, acetone; formed in the liver, increased in insulin deficiency"
+  },
+  {
+   "front": "Legal’s test",
+   "back": "Ketone bodies in urine give a red-violet color with sodium nitroprusside"
+  },
+  {
+   "front": "Aspirin and thromboxane",
+   "back": "Irreversibly acetylates COX; antiplatelet effect for the life of the platelet"
+  },
+  {
+   "front": "Co-trimoxazole",
+   "back": "Sulfamethoxazole + trimethoprim — block two steps of folate synthesis and act synergistically"
+  }
+ ]
+}

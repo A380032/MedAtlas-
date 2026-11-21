@@ -1,0 +1,87 @@
+{
+ "append": {
+  "6": [
+   {"type": "h", "text": "Oqsillarning ozuqaviy qiymati va oqsil yetishmovchiligi"},
+   {"type": "p", "text": "Kattalar uchun oqsilga sutkalik ehtiyoj **0,8–1 g/kg** tana massasi; homiladorlik, emizish, o‘sish davri, og‘ir kasallik va kuyishda u 1,2–2 g/kg gacha ortadi. Hayvon oqsillari (tuxum, sut, go‘sht, baliq) barcha almashinmaydigan aminokislotalarga ega va yaxshi hazm bo‘ladi; o‘simlik oqsillarida esa ayrimlari kam (donlarda lizin, dukkaklilarda metionin)."},
+   {"type": "table", "title": "Jadval 13.0. Bolalarda oqsil-energiya yetishmovchiligining shakllari", "head": ["Belgisi", "Kvashiorkor", "Marazm"], "rows": [
+    ["Asosiy sabab", "energiya yetarli, oqsil keskin kam", "oqsil va energiya ikkalasi ham kam"],
+    ["Shish", "bor (albumin kamaygan, onkotik bosim past)", "yo‘q"],
+    ["Teri osti yog‘i", "saqlangan", "deyarli yo‘q, “qariya yuzi”"],
+    ["Jigar", "yog‘li distrofiya, kattalashgan", "odatda o‘zgarmagan"],
+    ["Qondagi albumin", "keskin kamaygan", "me’yorga yaqin yoki biroz kam"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Kvashiorkorda jigar lipoproteinlar sintezi uchun oqsil (apoproteinlar) yetishmagani sababli triglitseridlarni chiqara olmaydi — **yog‘li jigar** rivojlanadi. Shishni esa albumin kamayishi va onkotik bosimning pasayishi tushuntiradi (2-mavzu)."}]}
+  ]
+ },
+ "insert": [
+  {"after": 2, "title": "0. Aminokislotalar almashinuvi, azot balansi va ammiak", "blocks": [
+   {"type": "p", "text": "Oqsillar organizmda doimo yangilanadi: kattalarda sutkasiga ≈ 300–400 g oqsil parchalanadi va qayta sintezlanadi. Ajralib chiqqan aminokislotalarning azoti asosan **mochevina** holida siydik bilan chiqariladi. Ovqat bilan kirgan va chiqarilgan azot nisbati **azot balansi** deyiladi (oqsil massasining ≈ 16 % i azot, ya’ni azot · 6,25 = oqsil)."},
+   {"type": "list", "items": [
+    "**Musbat azot balansi** (kirish > chiqish): o‘sish, homiladorlik, kasallikdan tuzalish, mushak massasi oshishi.",
+    "**Azot muvozanati** (kirish = chiqish): sog‘lom kattalar.",
+    "**Manfiy azot balansi** (chiqish > kirish): ochlik, kuyish, og‘ir infeksiya va operatsiyalar, o‘sma kaxeksiyasi, glyukokortikoidlar bilan davolash."
+   ]},
+   {"type": "p", "text": "**Transaminazalar** — aminoguruhni aminokislotadan ketokislotaga ko‘chiruvchi fermentlar (koenzimi piridoksalfosfat): **ALT** (alaninaminotransferaza, asosan jigarda) va **AST** (aspartataminotransferaza, jigar, yurak, skelet mushaklarida). Hujayra shikastlanganda ular qonga chiqadi; me’yori har biri ≈ 40 U/l gacha. **De Ritis koeffitsienti** (AST / ALT ≈ 1,3) shikastlanish joyini taxmin qilishga yordam beradi: virusli gepatitda < 1 (ALT ustun), alkogolli jigar shikastlanishi va miokard infarktida > 2."},
+   {"type": "p", "text": "Aminokislotalar dezaminlanishida hosil bo‘ladigan **ammiak** (NH~3~) — kuchli neyrotoksin: u miyada α-ketoglutaratni glutamatga va glutaminga bog‘lab, Krebs siklini susaytiradi va astrotsitlarda osmotik shish chaqiradi. Ammiak jigarda **mochevina sikli**da zararsiz mochevinaga aylantiriladi: 2NH~3~ + CO~2~ → (NH~2~)~2~CO + H~2~O (siklda ATF sarflanadi). Qondagi ammiak me’yori < 50 mkmol/l."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Jigar ensefalopatiyasi:** sirroz yoki o‘tkir jigar yetishmovchiligida mochevina sintezi kamayib, qonda ammiak to‘planadi — uyquchanlik, chalkashlik, “qarsillovchi” titroq (asteriksis), koma. Davolashda **laktuloza** ishlatiladi: u yo‘g‘on ichakda bakteriyalar tomonidan sut va sirka kislotalariga parchalanib, muhitni kislotalaydi; NH~3~ ionlanib NH~4~^+^ ga aylanadi va qonga so‘rilmay, najas bilan chiqadi."}]}
+  ]},
+  {"after": 5, "title": "0. Fibrillyar oqsillar va oqsil taxlanishining buzilishi", "blocks": [
+   {"type": "p", "text": "**Kollagen** — organizmda eng ko‘p tarqalgan oqsil (umumiy oqsilning ≈ 25–30 %). Uning har bir zanjirida **Gly−X−Y** takrorlanadi (X ko‘pincha prolin, Y — gidroksiprolin yoki gidroksilizin); uchta chap buralgan zanjir o‘ng buralgan **uchlik spiral** hosil qiladi. Spiral ichiga faqat eng kichik aminokislota — glitsin sig‘adi. Prolin va lizinni gidroksillovchi fermentlar **askorbin kislota** (vitamin C) va Fe^2+^ ni talab qiladi; gidroksiprolin vodorod bog‘lari uchlik spiralni barqarorlashtiradi."},
+   {"type": "p", "text": "Oqsilning to‘g‘ri taxlanishiga hujayrada **shaperonlar** (issiqlik shoki oqsillari) yordam beradi. Noto‘g‘ri taxlangan oqsillar odatda proteasomada parchalanadi; agar ular to‘planib, erimaydigan β-qatlamli fibrillalar hosil qilsa, **amiloidoz** va neyrodegenerativ kasalliklar rivojlanadi."},
+   {"type": "table", "title": "Jadval 13.0. Oqsil tuzilishi buzilishi bilan bog‘liq kasalliklar", "head": ["Kasallik", "Oqsil", "Buzilish mohiyati"], "rows": [
+    ["Singa (skorbut)", "kollagen", "vitamin C yetishmasligi — prolin gidroksillanmaydi, uchlik spiral beqaror: milk qonashi, tishlar qimirlashi, yara bitmasligi"],
+    ["Nomukammal osteogenez", "kollagen I tipi", "glitsin boshqa aminokislotaga almashgan — suyaklar mo‘rt, ko‘p sinadi"],
+    ["Alsgeymer kasalligi", "β-amiloid, tau-oqsil", "β-qatlamli amiloid pilakchalar va neyrofibrillyar chigallar"],
+    ["Parkinson kasalligi", "α-sinuklein", "neyronlarda Levi tanachalari hosil bo‘ladi"],
+    ["Prion kasalliklari (Kreytsfeld–Yakob)", "prion oqsili PrP", "α-spiral β-qatlamga o‘tadi va normal oqsilni ham shu shaklga “o‘giradi”"],
+    ["AA- va AL-amiloidoz", "zardob amiloid A, immunoglobulin yengil zanjirlari", "a’zolarda amiloid to‘planib, ularning ishi buziladi"]
+   ]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: azot balansini hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Sutkalik iste’mol qilingan oqsilni aniqlang (ratsion yoki parenteral oziqlantirish bo‘yicha).",
+    "Kirgan azotni hisoblang: N~kirish~ = oqsil (g) / 6,25.",
+    "Sutkalik siydikdagi mochevina azotini (g) aniqlang va unga siydik, najas va teri orqali boshqa yo‘qotishlar uchun ≈ 4 g qo‘shing: N~chiqish~ = mochevina azoti + 4.",
+    "Azot balansini toping: AB = N~kirish~ − N~chiqish~.",
+    "Natijani baholang: musbat — anabolizm, manfiy — oqsil katabolizmi; manfiy balansda ratsiondagi oqsilni oshirish rejalashtiriladi."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Azot balansi nima? Qaysi holatlarda u musbat va manfiy bo‘ladi?",
+  "ALT va AST qayerda ko‘p bo‘ladi? De Ritis koeffitsienti nimani ko‘rsatadi?",
+  "Ammiak nima uchun zaharli va organizmda qanday zararsizlantiriladi? Laktuloza jigar ensefalopatiyasida qanday yordam beradi?",
+  "Kollagen qanday tuzilgan? Vitamin C yetishmasligi kollagenga qanday ta’sir qiladi?",
+  "Shaperonlar nima? Oqsil taxlanishi buzilishi bilan bog‘liq kasalliklarga misollar keltiring.",
+  "Kvashiorkor va marazmning farqi nimada? Kvashiorkorda shish va yog‘li jigar nima uchun rivojlanadi?"
+ ],
+ "quiz": [
+  {"q": "Oqsil massasining taxminan qancha qismi azotga to‘g‘ri keladi?", "options": ["≈ 16 %", "≈ 6 %", "≈ 30 %", "≈ 50 %", "≈ 2 %"], "answer": 0},
+  {"q": "Qaysi holatda azot balansi manfiy bo‘ladi?", "options": ["Og‘ir kuyishda", "Homiladorlikda", "Bolalarning o‘sishida", "Kasallikdan tuzalish davrida", "Mushak massasi oshayotganda"], "answer": 0},
+  {"q": "Virusli gepatitda qaysi ferment ko‘proq oshadi va De Ritis koeffitsienti qanday?", "options": ["ALT; koeffitsient < 1", "AST; koeffitsient > 2", "Amilaza; koeffitsient 1", "Lipaza; koeffitsient > 2", "Kreatinkinaza; koeffitsient < 1"], "answer": 0},
+  {"q": "Organizmda ammiak asosan qayerda va nimaga aylantiriladi?", "options": ["Jigarda mochevinaga", "Buyrakda siydik kislotaga", "Miyada kreatininga", "Mushakda laktatga", "Ichakda glyukozaga"], "answer": 0},
+  {"q": "Jigar ensefalopatiyasida laktuloza qanday ta’sir qiladi?", "options": ["Ichakni kislotalab, NH~3~ ni NH~4~^+^ holida ushlaydi", "Ammiakni mochevinaga aylantiradi", "Qon glyukozasini oshiradi", "Jigar hujayralarini tiklaydi", "Ammiakni qonda bog‘laydi"], "answer": 0},
+  {"q": "Kollagen zanjirlarida qaysi takror ketma-ketlik bor?", "options": ["Gly−X−Y", "Ala−Ser−Gly", "Cys−X−X−Cys", "Lys−Arg", "Pro−Pro−Pro"], "answer": 0},
+  {"q": "Prolinni gidroksillovchi ferment uchun qaysi vitamin zarur?", "options": ["Vitamin C", "Vitamin D", "Vitamin K", "Vitamin B~12~", "Vitamin A"], "answer": 0},
+  {"q": "Prion kasalliklarida oqsil tuzilishining qaysi darajasi o‘zgaradi?", "options": ["Ikkilamchi (α-spiral β-qatlamga o‘tadi)", "Birlamchi", "Faqat to‘rtlamchi", "Hech qanday o‘zgarmaydi", "Faqat peptid bog‘lar uziladi"], "answer": 0},
+  {"q": "Kvashiorkorning marazmdan asosiy farqi nima?", "options": ["Shishlar bo‘lishi", "Teri osti yog‘ining yo‘qligi", "Energiya yetishmasligi", "Bo‘y o‘smasligi", "Holsizlik"], "answer": 0},
+  {"q": "Kattalar uchun oqsilga sutkalik ehtiyoj qancha?", "options": ["0,8–1 g/kg", "3–4 g/kg", "0,1–0,2 g/kg", "5 g/kg", "10 g/kg"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Uzoq vaqt faqat non, kartoshka va choy bilan ovqatlangan yolg‘iz keksa erkakda milklari qonaydi va shishgan, tishlari qimirlaydi, terida nuqtali qon quyilishlar bor, kichik yaralar uzoq bitmaydi.", "ask": "Qaysi vitamin yetishmovchiligi? Belgilarning molekulyar sababini kollagen tuzilishi bilan tushuntiring.", "answer": "Bu **singa (skorbut)** — **vitamin C** yetishmovchiligi. Askorbin kislota prolil- va lizilgidroksilazalar uchun zarur: u fermentdagi temirni Fe^2+^ holida saqlaydi. Vitamin C bo‘lmasa, kollagen zanjirlarida prolin va lizin gidroksillanmaydi, gidroksiprolin vodorod bog‘lari hosil bo‘lmaydi — **uchlik spiral beqaror**, kollagen tolalari mo‘rt bo‘ladi. Natijada tomir devorlari zaiflashadi (qon quyilishlar, milk qonashi), tish bog‘lami bo‘shashadi, yaralar bitmaydi. Davolash — vitamin C va meva-sabzavotlarga boy ratsion."},
+  {"title": "Masala 5", "text": "Ikki bemorning qon tahlili: birinchisida ALT 820 U/l, AST 610 U/l, sariqlik bor; ikkinchisida ALT 60 U/l, AST 180 U/l, ko‘p yillik alkogol iste’moli anamnezi.", "ask": "Har bir bemor uchun De Ritis koeffitsientini hisoblang va shikastlanish xarakterini baholang.", "answer": "1-bemor: AST / ALT = 610 / 820 ≈ **0,74** (< 1) — ALT ustun, jigar hujayralari sitoplazmasi ommaviy shikastlangan; bu **o‘tkir virusli gepatit**ga xos. 2-bemor: 180 / 60 = **3** (> 2) — AST ustun; AST ning bir qismi mitoxondriyada joylashgan, alkogol mitoxondriyalarni shikastlaydi, bundan tashqari alkogolizmda B~6~ yetishmasligi ALT sintezini kamaytiradi — **alkogolli jigar shikastlanishi**ga xos. Ikkalasida ham tashxis boshqa tekshiruvlar bilan tasdiqlanadi."},
+  {"title": "Masala 6", "text": "Og‘ir kuygan bemor sutkasiga parenteral oziqlantirish orqali 75 g oqsil oladi. Sutkalik siydikda 18 g mochevina azoti aniqlandi.", "ask": "Azot balansini hisoblang va baholang.", "answer": "N~kirish~ = 75 / 6,25 = **12 g**. N~chiqish~ = 18 + 4 = **22 g**. Azot balansi = 12 − 22 = **−10 g/sutka** — keskin manfiy. Kuyishda stress gormonlari ta’sirida mushak oqsillari tez parchalanadi va oqsil kuygan yuzadan ham yo‘qotiladi. Har 1 g azot ≈ 6,25 g oqsil yoki ≈ 30 g mushak to‘qimasiga to‘g‘ri keladi, ya’ni bemor sutkasiga ≈ 300 g mushak yo‘qotmoqda. Oqsil miqdorini 1,5–2 g/kg gacha oshirish kerak."},
+  {"title": "Masala 7", "text": "Ko‘krak sutidan erta ajratilib, asosan guruch bo‘tqasi bilan boqilgan 2 yoshli bolada oyoq va yuzi shishgan, qorni katta, sochlari siyrak va rangi o‘zgargan, apatik. Qonda albumin 18 g/l.", "ask": "Qanday holat? Shish va qorin kattalashuvining biokimyoviy sababini tushuntiring.", "answer": "Bu **kvashiorkor** — energiya (uglevod) yetarli, ammo oqsil keskin yetishmasligi. Jigar albuminni yetarli sintezlay olmaydi — albumin 18 g/l, **onkotik bosim pasaygan**, suv to‘qimalarda qoladi — shishlar va astsit. Apoproteinlar yetishmagani uchun jigar triglitseridlarni lipoprotein holida chiqara olmaydi — **yog‘li jigar** kattalashadi, qorin katta bo‘lib ko‘rinadi. Davolash: asta-sekin oqsil va energiyani oshirib, sut asosidagi terapevtik aralashmalar bilan oziqlantirish, infeksiyalarni davolash."},
+  {"title": "Masala 8", "text": "Jigar sirrozi bilan og‘rigan bemor qizilo‘ngach venalaridan qon ketgandan keyin uyquchan, chalkash bo‘lib qoldi; qo‘llarida “qarsillovchi” titroq bor. Qonda ammiak 140 mkmol/l (me’yor < 50).", "ask": "Qon ketishi ammiak oshishiga qanday sabab bo‘ldi? Laktuloza qanday yordam beradi?", "answer": "Ichakka quyilgan qon — katta miqdordagi **oqsil**: bakteriyalar uni parchalab, ko‘p **ammiak** hosil qiladi. Sirrozda jigar mochevina siklida ammiakni zararsizlantira olmaydi, bundan tashqari qon portal tizimni chetlab o‘tadi — ammiak miyaga yetadi va **jigar ensefalopatiyasi**ni chaqiradi. **Laktuloza** yo‘g‘on ichakda bakteriyalar tomonidan organik kislotalarga parchalanadi, muhit kislotalanadi: NH~3~ + H^+^ → NH~4~^+^; ionlangan ammoniy qonga so‘rilmaydi va najas bilan chiqadi, laktuloza surgi ta’siri bilan ichakni tozalaydi. Qo‘shimcha ravishda ichak bakteriyalarini kamaytiruvchi antibiotik (rifaksimin) beriladi."}
+ ],
+ "cards": [
+  {"front": "Azot balansi", "back": "Kirgan va chiqqan azot farqi; oqsil = azot · 6,25; o‘sishda musbat, kuyish va ochlikda manfiy"},
+  {"front": "De Ritis koeffitsienti", "back": "AST / ALT ≈ 1,3; gepatitda < 1, alkogolli shikastlanish va infarktda > 2"},
+  {"front": "Ammiak", "back": "Neyrotoksin; jigarda mochevina siklida zararsizlanadi; me’yor < 50 mkmol/l"},
+  {"front": "Kollagen", "back": "Gly−X−Y takrorlari, uchlik spiral; prolin gidroksillanishi uchun vitamin C kerak"},
+  {"front": "Shaperonlar", "back": "Oqsillarning to‘g‘ri taxlanishiga yordam beruvchi oqsillar (issiqlik shoki oqsillari)"},
+  {"front": "Kvashiorkor", "back": "Oqsil yetishmovchiligi: shishlar, yog‘li jigar, albumin kam; marazmda shish yo‘q"}
+ ]
+}

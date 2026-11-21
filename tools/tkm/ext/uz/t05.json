@@ -1,0 +1,97 @@
+{
+ "append": {
+  "4": [
+   {"type": "h", "text": "Makroergik birikmalar"},
+   {"type": "p", "text": "Gidrolizlanganda ΔG°′ ≈ −30 kJ/mol dan ko‘proq energiya ajratadigan birikmalar **makroergik** (yuqori energiyali) deyiladi; ulardagi bunday bog‘ ∼ belgisi bilan ko‘rsatiladi. ATF ning makroergikligi uch sababga bog‘liq: fosfat guruhlaridagi **manfiy zaryadlarning o‘zaro itarilishi**, mahsulotlar (ADF va fosfat) ning **rezonans barqarorligi** va ularning yaxshiroq **gidratlanishi**."},
+   {"type": "table", "title": "Jadval 5.0. Fosfat birikmalari gidrolizining standart Gibbs energiyasi (pH 7)", "head": ["Birikma", "ΔG°′, kJ/mol"], "rows": [
+    ["Fosfoenolpiruvat", "−61,9"],
+    ["1,3-Bisfosfoglitserat", "−49,4"],
+    ["Kreatinfosfat", "−43,1"],
+    ["ATF → AMF + PP~n~", "−45,6"],
+    ["ATF → ADF + F~n~", "−30,5"],
+    ["Glyukoza-1-fosfat", "−20,9"],
+    ["Glyukoza-6-fosfat", "−13,8"],
+    ["Glitserin-3-fosfat", "−9,2"]
+   ]},
+   {"type": "p", "text": "ATF jadvalda o‘rta o‘rinda turadi: shuning uchun u yuqori energiyali birikmalardan (fosfoenolpiruvat, kreatinfosfat) fosfatni **qabul qilib** sintezlanadi va past energiyali birikmalarga (glyukoza, glitserin) **beradi**. **Kreatinfosfat** mushakda ATF zaxirasi bo‘lib, kreatinkinaza ishtirokida ADF dan ATF ni bir zumda tiklaydi — qisqa kuchli zo‘riqishda birinchi 10 soniyani ta’minlaydi."},
+   {"type": "p", "text": "Hujayrada haqiqiy ΔG standart qiymatdan farq qiladi, chunki moddalar konsentratsiyasi 1 mol/l emas: ΔG = ΔG°′ + R·T·ln([ADF]·[F~n~] / [ATF]). Hujayrada [ATF] ADF dan ancha ko‘p bo‘lgani uchun ATF gidrolizining haqiqiy ΔG si **−50 dan −60 kJ/mol** gacha yetadi."}
+  ],
+  "6": [
+   {"type": "h", "text": "Energiya sarfini hisoblash"},
+   {"type": "p", "text": "Asosiy almashinuvni taxminiy hisoblash uchun **Miflin–San Jeor formulasi** ishlatiladi (massa — kg, bo‘y — sm, yosh — yil, natija — kkal/sutka): erkaklar uchun AA = 10·massa + 6,25·bo‘y − 5·yosh + 5; ayollar uchun AA = 10·massa + 6,25·bo‘y − 5·yosh − 161. Umumiy sarf asosiy almashinuvni **jismoniy faollik koeffitsientiga** ko‘paytirib topiladi: kam harakat — 1,2, o‘rtacha — 1,55, yuqori — 1,9."},
+   {"type": "p", "text": "**Ovqatning o‘ziga xos dinamik ta’siri** — ovqat hazm qilish va so‘rilishi uchun qo‘shimcha energiya sarfi: oqsillar uchun iste’mol qilingan energiyaning ≈ 30 % i, uglevodlar uchun 5–10 %, yog‘lar uchun 2–5 %. Shuning uchun oqsilli ovqatdan keyin tana harorati va issiqlik ajralishi ko‘proq oshadi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Qo‘ng‘ir yog‘ to‘qimasi** (chaqaloqlarda ko‘p) mitoxondriyalarida **termogenin** (UCP1) oqsili bor: u proton gradiyentini ATF sintezisiz “bo‘shatib”, oksidlanish energiyasini to‘liq issiqlikka aylantiradi. Bu chaqaloqni sovuqdan himoya qiladigan qaltirashsiz termogenez."}]}
+  ]
+ },
+ "insert": [
+  {"after": 3, "title": "0. Kimyoviy muvozanat. Le Shatelye prinsipi", "blocks": [
+   {"type": "p", "text": "Qaytar reaksiyada to‘g‘ri va teskari reaksiyalar tezliklari tenglashgan holat **kimyoviy muvozanat** deyiladi. aA + bB ⇄ cC + dD reaksiyasi uchun **muvozanat konstantasi** (massalar ta’siri qonuni): K = [C]^c^·[D]^d^ / ([A]^a^·[B]^b^). K > 1 bo‘lsa, muvozanat mahsulotlar tomoniga siljigan."},
+   {"type": "p", "text": "Muvozanat konstantasi va standart Gibbs energiyasi bog‘langan: ΔG° = −R·T·lnK. 298 K da K = 10 bo‘lsa, ΔG° ≈ −5,7 kJ/mol; K ning har 10 marta ortishi ΔG° ni yana 5,7 kJ/mol ga kamaytiradi. ΔG° manfiy bo‘lgan reaksiyalar muvozanatda asosan mahsulot tomonda bo‘ladi."},
+   {"type": "p", "text": "**Le Shatelye prinsipi:** muvozanatdagi sistemaga tashqi ta’sir ko‘rsatilsa, muvozanat shu ta’sirni kamaytiradigan tomonga siljiydi."},
+   {"type": "table", "title": "Jadval 5.0. Muvozanatning siljishi", "head": ["Ta’sir", "Muvozanat siljishi", "Organizmdagi misol"], "rows": [
+    ["Moddaning konsentratsiyasini oshirish", "shu moddani sarflaydigan tomonga", "o‘pkada pO~2~ yuqori: Hb + O~2~ ⇄ HbO~2~ o‘ngga siljiydi"],
+    ["Mahsulotni chiqarib turish", "mahsulot hosil bo‘lish tomoniga", "o‘pkada CO~2~ chiqarilishi: H~2~CO~3~ ⇄ CO~2~ + H~2~O o‘ngga"],
+    ["Haroratni oshirish", "endotermik reaksiya tomoniga", "isitmada gemoglobinning O~2~ ga moyilligi kamayadi"],
+    ["Bosimni oshirish (gazlar)", "gaz molekulalari kam tomonga", "giperbarik oksigenatsiyada qonda ko‘proq O~2~ eriydi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Is gazi bilan zaharlanishda HbCO + O~2~ ⇄ HbO~2~ + CO muvozanati Le Shatelye prinsipi bo‘yicha boshqariladi: 100 % kislorod, ayniqsa barokamerada yuqori bosim ostida, muvozanatni **o‘ngga** surib, CO ni gemoglobindan tezroq siqib chiqaradi."}]}
+  ]},
+  {"after": 3, "title": "0. Kimyoviy kinetika va kataliz asoslari", "blocks": [
+   {"type": "p", "text": "Termodinamika reaksiya **borishi mumkinmi** degan savolga javob beradi, **qanchalik tez** borishini esa **kimyoviy kinetika** o‘rganadi. Masalan, glyukozaning kislorod bilan oksidlanishi juda ekzergonik, lekin qand idishda yillab o‘zgarmay turadi — reaksiya tezligi nihoyatda kichik."},
+   {"type": "list", "items": [
+    "**Massalar ta’siri qonuni (tezlik uchun):** v = k·[A]^a^·[B]^b^, bunda k — tezlik konstantasi.",
+    "**Vant-Goff qoidasi:** harorat 10 °C ga oshganda ko‘pchilik reaksiyalar tezligi 2–4 marta ortadi: v~2~ / v~1~ = γ^(t2 − t1) / 10^.",
+    "**Arrenius tenglamasi:** k = A·e^−Ea / (RT)^; tezlik **aktivlanish energiyasi** E~a~ ga — reaksiya uchun yengib o‘tilishi kerak bo‘lgan energiya to‘sig‘iga — keskin bog‘liq.",
+    "**Katalizator** aktivlanish energiyasini kamaytiradigan boshqa yo‘l ochib, reaksiyani tezlashtiradi, lekin ΔH, ΔG va muvozanat holatini o‘zgartirmaydi — faqat muvozanatga tezroq yetishga yordam beradi."
+   ]},
+   {"type": "p", "text": "**Fermentlar** — biologik katalizatorlar. Ular reaksiyani 10^6^–10^12^ marta tezlashtiradi, yuqori **o‘ziga xoslikka** ega va yumshoq sharoitda (37 °C, pH ≈ 7) ishlaydi. Ferment substrat bilan **ferment-substrat kompleksini** hosil qiladi: E + S ⇄ ES → E + P. Mixaelis–Menten tenglamasi: v = V~max~·[S] / (K~m~ + [S]), bunda K~m~ — tezlik maksimalning yarmiga teng bo‘lgan substrat konsentratsiyasi."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Vant-Goff qoidasi klinikada ham ko‘rinadi: tana harorati 1 °C ga oshganda modda almashinuvi va kislorod sarfi taxminan 10–13 % ga ortadi — isitmada yurak urishi va nafas tezlashadi. Aksincha, **gipotermiya** metabolizmni sekinlashtiradi; shuning uchun yurak operatsiyalarida va yurak to‘xtagandan keyin miyani himoya qilish uchun sun’iy sovitish qo‘llanadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: Gibbs energiyasi bo‘yicha jarayon yo‘nalishini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "ΔH va ΔS ni bir xil energiya birligiga keltiring (ΔS ni J/(mol·K) dan kJ/(mol·K) ga o‘tkazish uchun 1000 ga bo‘ling).",
+    "Haroratni kelvinda yozing: T = t(°C) + 273.",
+    "ΔG = ΔH − T·ΔS ni hisoblang.",
+    "Ishorasiga qarab xulosa chiqaring: ΔG < 0 — o‘z-o‘zidan boradi, ΔG > 0 — bormaydi, ΔG = 0 — muvozanat.",
+    "Muvozanat harorati kerak bo‘lsa, uni toping: T = ΔH / ΔS; yoki muvozanat konstantasini toping: K = e^−ΔG° / (RT)^."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Kimyoviy muvozanat nima? Muvozanat konstantasi Gibbs energiyasi bilan qanday bog‘langan?",
+  "Le Shatelye prinsipini ta’riflang va organizmdan misollar keltiring.",
+  "Reaksiya tezligi qaysi omillarga bog‘liq? Vant-Goff qoidasi va Arrenius tenglamasini tushuntiring.",
+  "Katalizator va fermentlar reaksiyaga qanday ta’sir qiladi? Ular muvozanatni o‘zgartiradimi?",
+  "Makroergik birikmalar nima? Nima uchun ATF energiya almashinuvida oraliq o‘rinni egallaydi?",
+  "Asosiy almashinuv qanday hisoblanadi? Ovqatning o‘ziga xos dinamik ta’siri nima?"
+ ],
+ "quiz": [
+  {"q": "Le Shatelye prinsipiga ko‘ra harorat oshirilsa, muvozanat qaysi tomonga siljiydi?", "options": ["Endotermik reaksiya tomoniga", "Ekzotermik reaksiya tomoniga", "Siljimaydi", "Har doim mahsulotlar tomoniga", "Har doim boshlang‘ich moddalar tomoniga"], "answer": 0},
+  {"q": "Katalizator reaksiyaga qanday ta’sir qiladi?", "options": ["Aktivlanish energiyasini kamaytiradi, muvozanatni o‘zgartirmaydi", "ΔG ni manfiy qiladi", "Muvozanatni mahsulotlar tomoniga suradi", "ΔH ni kamaytiradi", "Reaksiyada sarflanadi"], "answer": 0},
+  {"q": "Vant-Goff qoidasiga ko‘ra harorat 10 °C ga oshganda reaksiya tezligi necha marta ortadi?", "options": ["2–4 marta", "10 marta", "100 marta", "O‘zgarmaydi", "1,1 marta"], "answer": 0},
+  {"q": "Muvozanat konstantasi K > 1 bo‘lsa, ΔG° qanday bo‘ladi?", "options": ["Manfiy", "Musbat", "Nolga teng", "Cheksiz", "K ga bog‘liq emas"], "answer": 0},
+  {"q": "Qaysi birikma gidrolizida eng ko‘p energiya ajraladi?", "options": ["Fosfoenolpiruvat", "ATF (ADF gacha)", "Glyukoza-6-fosfat", "Glitserin-3-fosfat", "Glyukoza-1-fosfat"], "answer": 0},
+  {"q": "Mushakda ATF ni bir zumda tiklaydigan zaxira makroergik birikma qaysi?", "options": ["Kreatinfosfat", "Glikogen", "Glyukoza-6-fosfat", "Triglitserid", "AMF"], "answer": 0},
+  {"q": "Mixaelis konstantasi K~m~ nimani bildiradi?", "options": ["Tezlik maksimalning yarmiga teng bo‘lgan substrat konsentratsiyasini", "Maksimal reaksiya tezligini", "Ferment konsentratsiyasini", "Aktivlanish energiyasini", "Muvozanat konstantasini"], "answer": 0},
+  {"q": "Ovqatning o‘ziga xos dinamik ta’siri qaysi oziq moddada eng katta?", "options": ["Oqsillarda", "Yog‘larda", "Uglevodlarda", "Suvda", "Mineral tuzlarda"], "answer": 0},
+  {"q": "Qo‘ng‘ir yog‘ to‘qimasida issiqlik hosil qiluvchi oqsil qaysi?", "options": ["Termogenin (UCP1)", "Mioglobin", "Kreatinkinaza", "Leptin", "Albumin"], "answer": 0},
+  {"q": "Is gazi bilan zaharlanishda barokamera qaysi prinsipga asoslanadi?", "options": ["Le Shatelye prinsipi — O~2~ bosimi oshib, muvozanat HbO~2~ tomonga siljiydi", "Gess qonuni", "Vant-Goff qoidasi", "Termodinamikaning 2-qonuni", "Raul qonuni"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Bir oqsilning denaturatsiyasi uchun ΔH = +400 kJ/mol, ΔS = +1,2 kJ/(mol·K).", "ask": "37 °C va 70 °C da ΔG ni hisoblang. Oqsil qaysi haroratdan boshlab o‘z-o‘zidan denaturatsiyalanadi?", "answer": "37 °C (310 K): ΔG = 400 − 310 · 1,2 = 400 − 372 = **+28 kJ/mol** — denaturatsiya o‘z-o‘zidan bormaydi, oqsil barqaror. 70 °C (343 K): ΔG = 400 − 343 · 1,2 = 400 − 411,6 = **−11,6 kJ/mol** — denaturatsiya o‘z-o‘zidan boradi. Muvozanat harorati: T = ΔH / ΔS = 400 / 1,2 ≈ 333 K = **60 °C**. Shu sababli pasterizatsiya va sterilizatsiyada yuqori harorat mikroblar oqsilini yemiradi, organizm uchun esa 42 °C dan yuqori isitma xavfli."},
+  {"title": "Masala 5", "text": "Fermentativ reaksiyaning muvozanat konstantasi 25 °C da K = 1000.", "ask": "Reaksiyaning standart Gibbs energiyasini hisoblang (R = 8,314 J/(mol·K)). Muvozanat qaysi tomonda?", "answer": "ΔG° = −R·T·lnK = −8,314 · 298 · ln1000 = −8,314 · 298 · 6,91 ≈ −17 100 J/mol = **−17,1 kJ/mol**. ΔG° manfiy va K katta — muvozanatda **mahsulotlar** ustun: har 1000 molekula mahsulotga atigi 1 molekula boshlang‘ich modda to‘g‘ri keladi."},
+  {"title": "Masala 6", "text": "20 yoshli talaba: massasi 70 kg, bo‘yi 175 sm, o‘rtacha jismoniy faol (koeffitsient 1,55).", "ask": "Miflin–San Jeor formulasi bo‘yicha asosiy almashinuv va sutkalik energiya sarfini hisoblang.", "answer": "AA = 10 · 70 + 6,25 · 175 − 5 · 20 + 5 = 700 + 1093,75 − 100 + 5 ≈ **1699 kkal/sutka**. Umumiy sarf = 1699 · 1,55 ≈ **2633 kkal/sutka** (≈ 11 000 kJ). Vazn barqaror bo‘lishi uchun ratsionning energetik qiymati shunga teng bo‘lishi kerak."},
+  {"title": "Masala 7", "text": "Bemorning tana harorati 37 °C dan 40 °C ga ko‘tarildi. Moddalar almashinuvi reaksiyalari uchun harorat koeffitsientini γ = 2 deb oling.", "ask": "Vant-Goff qoidasi bo‘yicha reaksiyalar tezligi necha marta oshadi? Bu klinik jihatdan nimani anglatadi?", "answer": "v~2~ / v~1~ = 2^(40 − 37) / 10^ = 2^0,3^ ≈ **1,23** — reaksiyalar ≈ 23 % tezlashadi. Isitmada kislorod sarfi va CO~2~ hosil bo‘lishi ortadi, shuning uchun yurak urishi va nafas tezlashadi; yurak yoki o‘pka kasalligi bor bemorlarda bu qo‘shimcha yuk xavfli bo‘lishi mumkin. Shu sababli yuqori isitmada isitma tushiruvchi vositalar beriladi."},
+  {"title": "Masala 8", "text": "Ortiqcha vaznli bemor ozish uchun ratsionini sutkasiga 500 kkal ga kamaytirdi; jismoniy faolligi o‘zgarmadi. 1 kg yog‘ to‘qimasi ≈ 7700 kkal ga teng.", "ask": "1 kg yog‘ to‘qimasini yo‘qotish uchun necha kun kerak? Bir oyda taxminan qancha ozish kutiladi?", "answer": "7700 / 500 ≈ **15 kun** ga 1 kg. Bir oyda (30 kun) taxminan 30 · 500 / 7700 ≈ **2 kg**. Bu xavfsiz va barqaror ozish tezligi; keskin ochlik esa mushak oqsillarining parchalanishi va asosiy almashinuvning pasayishiga olib keladi. Ozishning termodinamik asosi — energiyaning saqlanish qonuni: sarf iste’moldan ko‘p bo‘lsa, yetishmagan energiya zaxiradagi yog‘ oksidlanishidan olinadi."}
+ ],
+ "cards": [
+  {"front": "Le Shatelye prinsipi", "back": "Muvozanatdagi sistema tashqi ta’sirni kamaytiradigan tomonga siljiydi"},
+  {"front": "ΔG° va K", "back": "ΔG° = −R·T·lnK; K > 1 bo‘lsa, ΔG° < 0"},
+  {"front": "Vant-Goff qoidasi", "back": "Harorat 10 °C ga oshsa, reaksiya tezligi 2–4 marta ortadi"},
+  {"front": "Aktivlanish energiyasi", "back": "Reaksiya borishi uchun yengib o‘tilishi kerak bo‘lgan energiya to‘sig‘i; katalizator uni kamaytiradi"},
+  {"front": "Kreatinfosfat", "back": "Mushakdagi makroergik zaxira; kreatinkinaza bilan ADF dan ATF ni tiklaydi"},
+  {"front": "Termogenin (UCP1)", "back": "Qo‘ng‘ir yog‘ mitoxondriyalarida oksidlanish energiyasini issiqlikka aylantiradi"}
+ ]
+}

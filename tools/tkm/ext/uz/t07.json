@@ -1,0 +1,101 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Sirt faol moddalarning turlari va yuvish ta’siri"},
+   {"type": "table", "title": "Jadval 7.0. Sirt faol moddalarning tasnifi", "head": ["Turi", "Qutbli guruhi", "Misollar", "Tibbiyotda ishlatilishi"], "rows": [
+    ["Anion faol", "–COO^−^, –OSO~3~^−^, –SO~3~^−^", "sovunlar, natriy dodetsilsulfat, o‘t kislotalari tuzlari", "yuvish vositalari, yog‘larni emulsiyalash"],
+    ["Kation faol", "–N^+^R~3~ (to‘rtlamchi ammoniy)", "benzalkoniy xlorid, setilpiridiniy xlorid, miramistin", "antiseptiklar, konservantlar"],
+    ["Ionlanmaydigan", "–(OCH~2~CH~2~)~n~OH", "polisorbatlar (tvinlar), poloksamerlar", "dori emulsiyalari va in’eksion eritmalarda solubilizator"],
+    ["Amfoter", "musbat va manfiy guruh birga", "letsitin (fosfatidilxolin), betainlar", "surfaktant, liposomalar"]
+   ]},
+   {"type": "p", "text": "**Yuvish ta’siri:** SFM molekulalari gidrofob qismi bilan yog‘ va kir zarrachasiga, gidrofil qismi bilan suvga yo‘naladi; sirt tarangligi pasayib, ho‘llanish yaxshilanadi, yog‘ mitsellalar ichiga o‘tib, suv bilan yuvilib ketadi. Kation faol moddalar esa mikroblarning manfiy zaryadli membranasiga adsorbsiyalanib, uni buzadi — shuning uchun ular antiseptik."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Kation faol antiseptiklar** (benzalkoniy xlorid, xlorgeksidin) anion faol sovun bilan birga ishlatilsa, qarama-qarshi zaryadli ionlar o‘zaro bog‘lanib, antiseptik **faolsizlanadi**. Shuning uchun qo‘l sovun bilan yuvilgandan keyin yaxshilab chayiladi va shundan so‘ng antiseptik surtiladi."}]}
+  ],
+  "4": [
+   {"type": "h", "text": "Polimolekulyar adsorbsiya va enterosorbsiya"},
+   {"type": "p", "text": "Lengmyur nazariyasi faqat bitta qavat uchun to‘g‘ri. Bug‘lar va gazlar kondensatsiya haroratiga yaqin sharoitda sirtda **ko‘p qavat** bo‘lib adsorbsiyalanadi — buni **BET nazariyasi** (Brunauer–Emmet–Teller) tasvirlaydi; usul sorbentlarning solishtirma sirt yuzasini aniqlashda ishlatiladi."},
+   {"type": "p", "text": "**Faollashtirilgan ko‘mir** o‘tkir og‘iz orqali zaharlanishda eng ko‘p ishlatiladigan sorbent. Kattalarga odatda 50 g (taxminan 1 g/kg) suvdagi suspenziya holida beriladi; zahar ichilgandan keyin **1 soat ichida** berilsa, eng samarali. Ko‘mir katta, qutbsiz yoki kam qutbli molekulalarni yaxshi adsorbsiyalaydi."},
+   {"type": "table", "title": "Jadval 7.0. Faollashtirilgan ko‘mirning samaradorligi", "head": ["Yaxshi bog‘laydi", "Deyarli bog‘lamaydi"], "rows": [
+    ["ko‘pchilik dorilar: paratsetamol, karbamazepin, fenobarbital, antidepressantlar", "spirtlar (etanol, metanol, etilenglikol)"],
+    ["alkaloidlar, glikozidlar", "metallar va ularning ionlari: temir, litiy, kaliy"],
+    ["ko‘pchilik pestitsidlar, zamburug‘ zaharlari", "kuchli kislota va ishqorlar (kuydiruvchi moddalar)"],
+    ["bakteriya toksinlari", "sianidlar (kam), uglevodorodlar (benzin)"]
+   ]}
+  ],
+  "6": [
+   {"type": "h", "text": "Zamonaviy xromatografiya va laboratoriya diagnostikasi"},
+   {"type": "p", "text": "Kolonkali xromatografiyada har bir modda kolonkadan o‘ziga xos vaqtda chiqadi — **ushlanish vaqti** bo‘yicha aniqlanadi, cho‘qqi yuzasi bo‘yicha miqdori topiladi. **Xromato-mass-spektrometriya** xromatografiya bilan ajratilgan moddalarni massa spektri bo‘yicha aniq identifikatsiya qiladi: u sud toksikologiyasi, doping-nazorat va chaqaloqlarning irsiy modda almashinuvi kasalliklari bo‘yicha **neonatal skriningi**da (bir tomchi quruq qon dog‘ida o‘nlab aminokislota va atsilkarnitinlar) ishlatiladi."},
+   {"type": "p", "text": "**Aminokislota analizatori** — ion almashinuvchi xromatografiya: aminokislotalar kationit kolonkadan zaryadi va pH ga qarab ketma-ket chiqadi va ningidrin bilan miqdoran aniqlanadi. **Affin xromatografiya** esa o‘ziga xos bog‘lanishga asoslangan: kolonkaga antigen biriktirilsa, aralashmadan faqat unga mos antitelo ushlanib qoladi."}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Ho‘llanish va kapillyar hodisalar", "blocks": [
+   {"type": "p", "text": "Suyuqlik tomchisi qattiq sirtga tekkanda uning shakli **kogeziya** (suyuqlik molekulalarining o‘zaro tortilishi) va **adgeziya** (suyuqlik va qattiq jism molekulalarining tortilishi) nisbatiga bog‘liq. Bu **ho‘llanish burchagi** θ bilan baholanadi: θ < 90° — sirt suyuqlik bilan ho‘llanadi (**gidrofil** sirt: shisha, kvars, oqsil), θ > 90° — ho‘llanmaydi (**gidrofob** sirt: parafin, yog‘, teflon)."},
+   {"type": "p", "text": "Ingichka naychada ho‘llovchi suyuqlik botiq menisk hosil qilib, yuqoriga ko‘tariladi, ho‘llamaydigan suyuqlik esa pastga tushadi. **Jyuren formulasi:** h = 2σ·cosθ / (ρ·g·r), bunda r — kapillyar radiusi. Kapillyar qancha ingichka bo‘lsa, suyuqlik shuncha baland ko‘tariladi."},
+   {"type": "list", "items": [
+    "Barmoqdan qon olishda shisha kapillyar va test-poloskalar qonni **kapillyar kuchlar** hisobiga so‘radi.",
+    "Paxta va doka bog‘lamlar gidrofil tolalar orasidagi kapillyarlar orqali yara ajralmasini so‘rib oladi.",
+    "Tuproq, qog‘oz va to‘qimalarda suyuqlik harakati, qog‘oz xromatografiyasida erituvchining ko‘tarilishi ham kapillyar hodisaga asoslangan."
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Gaz emboliyasi:** kichik tomirga tushgan havo pufakchasi tomir torayadigan joyda deformatsiyalanadi; uning ikki uchidagi menisklar egriligi har xil bo‘lgani uchun qarama-qarshi bosim hosil bo‘ladi va pufak qon oqimini to‘sib qo‘yadi (**Jamen effekti**). Shu sababli vena ichiga in’eksiya va tomchilatib yuborishda tizimdagi havo albatta chiqariladi."}]}
+  ]},
+  {"after": 6, "title": "0. Adsorbsiyaga asoslangan sifat reaksiyalari", "blocks": [
+   {"type": "p", "text": "Ko‘p tahlil va bo‘yash usullarida kuzatiladigan rang yoki cho‘kma oddiy kimyoviy reaksiya emas, balki bo‘yoq yoki ionning cho‘kma (kolloid zarracha, tola) sirtiga **tanlab adsorbsiyalanishi** natijasidir."},
+   {"type": "table", "title": "Jadval 7.0. Adsorbsiyaga asoslangan sifat reaksiyalari", "head": ["Reaksiya", "Mohiyati", "Ishlatilishi"], "rows": [
+    ["Fayans usuli (adsorbsion indikatorlar)", "ekvivalent nuqtadan keyin AgCl zarrachalari Ag^+^ ni adsorbsiyalab musbat zaryadlanadi va flyuorestsein anionini tortib, pushti rang beradi", "xloridlarni argentometrik aniqlash"],
+    ["Magniyni titan sarig‘i bilan aniqlash", "bo‘yoq Mg(OH)~2~ cho‘kmasi sirtiga adsorbsiyalanib, qizil “lak” hosil qiladi", "Mg^2+^ ning sezgir sifat reaksiyasi"],
+    ["Alyuminiyni alizarin bilan aniqlash", "Al(OH)~3~ zarrachalari alizarinni adsorbsiyalab, qizil lak hosil qiladi", "Al^3+^ ni aniqlash"],
+    ["Kraxmal bilan yodga reaksiya", "yod molekulalari amiloza spirali ichiga joylashib, ko‘k rangli adsorbsion kompleks beradi", "yodometriyada indikator, kraxmal va yodni aniqlash"],
+    ["Kongo qizil bilan bo‘yash", "bo‘yoq amiloid fibrillalarining β-tuzilmalariga tartibli adsorbsiyalanadi; qutblangan nurda olma-yashil rang", "amiloidozni gistologik tashxislash"],
+    ["Gram bo‘yicha bo‘yash", "gensian binafsha–yod kompleksi qalin peptidoglikan devorga ushlanib qoladi va spirt bilan yuvilmaydi", "bakteriyalarni gram-musbat va gram-manfiyga ajratish"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Adsorbsion indikator ishlashining kaliti — **zarracha zaryadining ishorasi o‘zgarishi**: ekvivalent nuqtagacha cho‘kma ortiqcha aniqlanadigan ionni (Cl^−^), undan keyin ortiqcha titrantni (Ag^+^) adsorbsiyalaydi (Panet–Fayans qoidasi)."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: xloridlarni Fayans usuli bilan aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Kolbaga pipetka bilan 10 ml tekshiriladigan eritma (masalan, suyultirilgan fiziologik eritma) quying.",
+    "2–3 tomchi flyuorestsein (yoki eozin) eritmasini qo‘shing; muhit neytral yoki kuchsiz kislotali bo‘lishi kerak.",
+    "Byuretkadan 0,1 M AgNO~3~ ni aralashtirib turib tomchilating: oq AgCl cho‘kmasi hosil bo‘ladi, eritma sariq-yashil fluoressensiyaga ega.",
+    "Cho‘kma sirti birdan **pushti** rangga bo‘yalgan zahoti titrlashni to‘xtating — bu ekvivalent nuqta.",
+    "Xlorid miqdorini hisoblang: C(Cl^−^) = C(AgNO~3~)·V(AgNO~3~) / V(namuna)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Ho‘llanish burchagi nima? Gidrofil va gidrofob sirtlarga misollar keltiring.",
+  "Kapillyar ko‘tarilish balandligi nimalarga bog‘liq? Kapillyar hodisalarning tibbiyotdagi ahamiyati qanday?",
+  "Sirt faol moddalar qanday tasniflanadi? Nima uchun kation faol antiseptikni sovun bilan birga ishlatib bo‘lmaydi?",
+  "Faollashtirilgan ko‘mir qaysi zaharlanishlarda samarali va qaysilarida samarasiz?",
+  "Adsorbsion indikatorlar qanday ishlaydi? Fayans usulini tushuntiring.",
+  "Gistologiya va mikrobiologiyada adsorbsiyaga asoslangan qaysi bo‘yash usullari bor?"
+ ],
+ "quiz": [
+  {"q": "Ho‘llanish burchagi 90° dan kichik bo‘lsa, sirt qanday?", "options": ["Gidrofil (ho‘llanadi)", "Gidrofob (ho‘llanmaydi)", "Neytral", "Zaryadsiz", "Sirt faol"], "answer": 0},
+  {"q": "Kapillyar radiusi 2 marta kamaysa, suyuqlikning ko‘tarilish balandligi qanday o‘zgaradi?", "options": ["2 marta ortadi", "2 marta kamayadi", "4 marta ortadi", "O‘zgarmaydi", "4 marta kamayadi"], "answer": 0},
+  {"q": "Qaysi modda kation faol SFM hisoblanadi?", "options": ["Benzalkoniy xlorid", "Natriy stearat (sovun)", "Natriy dodetsilsulfat", "Polisorbat (tvin)", "Natriy xolat"], "answer": 0},
+  {"q": "Faollashtirilgan ko‘mir qaysi zaharlanishda deyarli samarasiz?", "options": ["Temir tuzlari bilan", "Paratsetamol bilan", "Karbamazepin bilan", "Alkaloidlar bilan", "Fenobarbital bilan"], "answer": 0},
+  {"q": "Faollashtirilgan ko‘mir qachon berilsa, eng samarali?", "options": ["Zahar ichilgandan keyin 1 soat ichida", "12 soatdan keyin", "Faqat ertasi kuni", "Faqat qusish to‘xtagach 6 soatdan keyin", "Vaqtga bog‘liq emas"], "answer": 0},
+  {"q": "Fayans usulida ekvivalent nuqta nima bilan aniqlanadi?", "options": ["Cho‘kma sirtining adsorbsion indikator bilan pushti rangga bo‘yalishi", "Gaz ajralishi", "pH ning keskin o‘zgarishi", "Eritmaning qizishi", "Cho‘kmaning erib ketishi"], "answer": 0},
+  {"q": "Amiloidozni gistologik tashxislashda qaysi bo‘yoq ishlatiladi?", "options": ["Kongo qizil", "Metilen ko‘ki", "Fenolftalein", "Murreksid", "Eriokrom qora T"], "answer": 0},
+  {"q": "Kraxmal bilan yod beradigan ko‘k rang nimaga bog‘liq?", "options": ["Yodning amiloza spirali ichida adsorbsion kompleks hosil qilishiga", "Yodning kraxmalni oksidlashiga", "Kraxmal gidroliziga", "Yodning qaytarilishiga", "Glyukoza hosil bo‘lishiga"], "answer": 0},
+  {"q": "Gaz pufakchasining kapillyarda qon oqimini to‘sishi qanday ataladi?", "options": ["Jamen effekti", "Tindal effekti", "Bor effekti", "Donnan effekti", "Doppler effekti"], "answer": 0},
+  {"q": "Neonatal skriningda bir tomchi qon dog‘ida o‘nlab metabolitlarni aniqlaydigan usul qaysi?", "options": ["Tandem mass-spektrometriya (xromato-mass-spektrometriya)", "Titrimetriya", "Gravimetriya", "Polyarimetriya", "Kriometriya"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Sirka kislotaning ko‘mirda adsorbsiyasi o‘rganildi: muvozanat konsentratsiyasi 0,01 mol/l bo‘lganda x / m = 0,2 mmol/g, 0,1 mol/l bo‘lganda x / m = 0,5 mmol/g.", "ask": "Freyndlix tenglamasining konstantalarini (1/n va K) toping.", "answer": "lg(x / m) = lgK + (1 / n)·lgC. Ikki nuqta: lg0,2 = −0,70, lgC = −2; lg0,5 = −0,30, lgC = −1. Qiyalik: 1 / n = (−0,30 − (−0,70)) / (−1 − (−2)) = **0,4**. lgK = −0,30 − 0,4 · (−1) = 0,10, K ≈ **1,26** mmol/g (C mol/l da). 1/n < 1 — konsentratsiya ortgan sari adsorbsiya sekinroq ortadi (sirt to‘ya boshlaydi)."},
+  {"title": "Masala 5", "text": "Toksikologiya bo‘limiga bir soat ichida ikki bemor keltirildi: birinchisi (70 kg) 40 dona karbamazepin tabletkasini, ikkinchisi temir sulfat tabletkalarini ichgan.", "ask": "Qaysi bemorga faollashtirilgan ko‘mir foyda beradi va qancha dozada? Ikkinchi bemorga nima uchun foydasiz va unda nima qilinadi?", "answer": "**Karbamazepin** — katta, kam qutbli molekula, ko‘mirda yaxshi adsorbsiyalanadi: birinchi bemorga ≈ 1 g/kg, ya’ni **50–70 g** ko‘mir suvdagi suspenziya holida beriladi (ichilganiga 1 soat bo‘lmagan — eng samarali vaqt). **Temir** ionlari kichik va zaryadli, ko‘mirda deyarli adsorbsiyalanmaydi — ikkinchi bemorga ko‘mir foydasiz. Unda me’da-ichakni yuvish (ko‘rsatma bo‘lsa), qonda temirni o‘lchash va og‘ir holatda xelator — **deferoksamin** qo‘llanadi."},
+  {"title": "Masala 6", "text": "Barmoqdan qon olish uchun ichki radiusi 0,1 mm bo‘lgan shisha kapillyar ishlatiladi. Suv uchun σ = 0,073 N/m, ρ = 1000 kg/m^3^, θ ≈ 0°.", "ask": "Suv kapillyarda qanday balandlikka ko‘tariladi? Qon uchun natija qanday o‘zgaradi?", "answer": "h = 2σ·cosθ / (ρ·g·r) = 2 · 0,073 · 1 / (1000 · 9,81 · 0,0001) = 0,146 / 0,981 ≈ **0,15 m** (15 sm). Qonning sirt tarangligi (≈ 0,05 N/m) suvnikidan kichik, zichligi biroz katta, shuning uchun u pastroq ko‘tariladi, ammo bir necha santimetrlik kapillyarni to‘ldirish uchun bu yetarli — kapillyar qonni o‘zi “tortib oladi”."},
+  {"title": "Masala 7", "text": "Hamshira qo‘lini anion faol sovun bilan yuvdi va chaymasdan, darhol benzalkoniy xlorid tutgan antiseptik eritmani surtdi. Keyinchalik bo‘limda qo‘l orqali yuqadigan infeksiya ko‘paydi.", "ask": "Antiseptik nima uchun samarasiz bo‘lishi mumkinligini fizik-kimyoviy jihatdan tushuntiring.", "answer": "Benzalkoniy xlorid — **kation faol** SFM: musbat zaryadli qutbli guruhi mikrob membranasining manfiy zaryadli sirtiga adsorbsiyalanib, uni buzadi. Sovun esa **anion faol** modda. Qo‘lda qolgan sovun anionlari antiseptik kationlari bilan bog‘lanib, neytral, kam faol birikma hosil qiladi — antiseptik **faolsizlanadi**. To‘g‘ri tartib: sovun bilan yuvish → oqar suv bilan yaxshilab chayish → quritish → antiseptik surtish."},
+  {"title": "Masala 8", "text": "Surunkali yiringli kasallik bilan og‘rigan bemordan olingan buyrak biopsiyasi Kongo qizil bilan bo‘yaldi. Oddiy mikroskopda pushti-qizil massalar, qutblangan nurda esa olma-yashil rangli yaltirash ko‘rindi.", "ask": "Qanday tashxis taxmin qilinadi? Bo‘yash qaysi fizik-kimyoviy hodisaga asoslangan?", "answer": "Bu **amiloidoz** (surunkali yallig‘lanishdagi ikkilamchi AA-amiloidoz). Kongo qizil — chiziqli molekulali bo‘yoq; u amiloid fibrillalarining β-burmali qavatlari sirtiga **tartibli, yo‘naltirilgan holda adsorbsiyalanadi**. Bo‘yoq molekulalari bir tomonga tizilgani uchun preparat qutblangan nurda ikki marta sindirish xususiyatiga ega bo‘lib, **olma-yashil** rangda yaltiraydi — bu amiloidning o‘ziga xos belgisi."}
+ ],
+ "cards": [
+  {"front": "Ho‘llanish burchagi", "back": "θ < 90° — gidrofil (ho‘llanadi), θ > 90° — gidrofob (ho‘llanmaydi)"},
+  {"front": "Jyuren formulasi", "back": "h = 2σ·cosθ / (ρ·g·r) — kapillyar ko‘tarilish balandligi"},
+  {"front": "Kation faol SFM", "back": "To‘rtlamchi ammoniy tuzlari (benzalkoniy xlorid); antiseptik, sovun bilan faolsizlanadi"},
+  {"front": "Faollashtirilgan ko‘mir", "back": "≈ 1 g/kg, 1 soat ichida; spirtlar, temir, litiy, kislota va ishqorlarni bog‘lamaydi"},
+  {"front": "Adsorbsion indikator", "back": "Ekvivalent nuqtada cho‘kma zaryadi o‘zgarib, bo‘yoqni adsorbsiyalaydi (Fayans usuli — flyuorestsein)"},
+  {"front": "Kongo qizil", "back": "Amiloidga adsorbsiyalanadi; qutblangan nurda olma-yashil yaltirash"}
+ ]
+}

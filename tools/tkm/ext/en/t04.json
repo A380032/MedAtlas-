@@ -1,0 +1,96 @@
+{
+ "append": {
+  "4": [
+   {"type": "h", "text": "The Henderson–Hasselbalch equation for the bicarbonate buffer"},
+   {"type": "p", "text": "The concentration of H~2~CO~3~ in blood is hard to measure directly, so the partial pressure of CO~2~ is used instead (0.03 is the solubility coefficient of CO~2~ in plasma, mmol/L per mm Hg): pH = 6.1 + lg([HCO~3~^−^] / (0.03·pCO~2~)). Normally pH = 6.1 + lg(24 / 1.2) = 6.1 + lg20 = 7.4. The equation shows that pH depends on the ratio of HCO~3~^−^, **controlled by the kidneys**, to pCO~2~, **controlled by the lungs**."},
+   {"type": "p", "text": "**Chloride shift (Hamburger phenomenon).** In the tissues CO~2~ enters the red blood cell and is converted into H~2~CO~3~ by carbonic anhydrase; it dissociates into H^+^ (bound by hemoglobin) and HCO~3~^−^. HCO~3~^−^ leaves for the plasma, and Cl^−^ enters the red cell in its place to keep electroneutrality. In the lungs the process runs in reverse. Thanks to this, most CO~2~ is carried in the blood as HCO~3~^−^."},
+   {"type": "table", "title": "Table 4.0. Normal values of arterial blood gases and acid–base status", "head": ["Indicator", "Normal value"], "rows": [
+    ["pH", "7.35–7.45"],
+    ["pCO~2~", "35–45 mm Hg"],
+    ["pO~2~", "80–100 mm Hg"],
+    ["HCO~3~^−^ (actual)", "22–26 mmol/L"],
+    ["Base excess (BE)", "0 ± 2.3 mmol/L"],
+    ["Oxygen saturation of hemoglobin (SaO~2~)", "95–98 %"],
+    ["Lactate", "< 2 mmol/L"]
+   ]}
+  ],
+  "5": [
+   {"type": "h", "text": "Anion gap and assessment of compensation"},
+   {"type": "p", "text": "The sums of cations and anions in plasma are equal. The usually unmeasured anions (proteins, phosphates, sulfates, organic acids) are assessed by the **anion gap**: AG = [Na^+^] − ([Cl^−^] + [HCO~3~^−^]), normal **8–12 mmol/L**. It is the key indicator for dividing metabolic acidosis into two groups:"},
+   {"type": "table", "title": "Table 4.0. Types of metabolic acidosis according to the anion gap", "head": ["Type", "Mechanism", "Causes"], "rows": [
+    ["Increased anion gap", "an organic acid is added to the blood; its anion replaces HCO~3~^−^", "diabetic ketoacidosis, lactic acidosis, renal failure, poisoning with methanol, ethylene glycol and salicylates"],
+    ["Normal anion gap (hyperchloremic)", "HCO~3~^−^ is lost and replaced by Cl^−^", "diarrhea, intestinal fistulas, renal tubular acidosis"]
+   ]},
+   {"type": "p", "text": "In metabolic acidosis the adequacy of respiratory compensation is checked with **Winter’s formula**: expected pCO~2~ = 1.5·[HCO~3~^−^] + 8 ± 2 (mm Hg). If the measured pCO~2~ is higher, there is an additional respiratory acidosis (for example, the patient is tiring and breathing is weakening); if it is lower — an additional respiratory alkalosis."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Compensation never fully eliminates a disorder and **never pushes pH to the opposite side**. If pH is normal but pCO~2~ and HCO~3~^−^ are both markedly changed, it is usually a **mixed** disorder."}]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In alkalosis albumin loses H^+^ and binds more Ca^2+^ — **ionized calcium falls**. That is why during hyperventilation there is numbness around the lips and spasm of the fingers (“obstetrician’s hand”), even though total calcium is normal."}]}
+  ],
+  "7": [
+   {"type": "p", "text": "**Ammoniagenesis.** In the cells of the renal tubules glutamine is broken down to form NH~3~. NH~3~ passes into the tubular lumen, takes up H^+^ and is excreted in the urine as NH~4~^+^; for every H^+^ excreted, one new HCO~3~^−^ returns to the blood. In chronic acidosis ammoniagenesis increases several-fold — this is the main route of renal compensation."}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Theories of acids and bases. Protolytic equilibrium", "blocks": [
+   {"type": "p", "text": "**Arrhenius theory:** an acid forms H^+^ in water, a base forms OH^−^. This theory cannot explain non-aqueous media or bases such as NH~3~. According to the **Brønsted–Lowry protolytic theory**, **an acid is a proton donor** and **a base is a proton acceptor**. After an acid gives up a proton, its **conjugate base** remains: CH~3~COOH / CH~3~COO^−^, NH~4~^+^ / NH~3~, H~2~CO~3~ / HCO~3~^−^. **Lewis theory** defines an acid as an electron-pair acceptor (Fe^3+^, BF~3~) — the chemistry of complexes is based on it."},
+   {"type": "p", "text": "The dissociation of a weak acid is expressed by the **acidity constant**: K~a~ = [H^+^]·[A^−^] / [HA], pK~a~ = −lgK~a~. The smaller the pK~a~, the stronger the acid. For a conjugate pair K~a~·K~b~ = K~w~, that is, pK~a~ + pK~b~ = 14. **Ostwald’s dilution law:** the degree of dissociation of a weak electrolyte α ≈ √(K / C) — α increases when the solution is diluted."},
+   {"type": "table", "title": "Table 4.0. pK~a~ values of biologically important acids (25 °C)", "head": ["Acid", "pK~a~", "Significance"], "rows": [
+    ["Phosphoric acid H~3~PO~4~", "2.1; 6.8; 12.4", "phosphate buffer (second step)"],
+    ["Acetoacetic acid", "3.6", "ketone body — accumulates in ketoacidosis"],
+    ["Lactic acid", "3.9", "lactic acidosis"],
+    ["β-Hydroxybutyric acid", "4.7", "ketone body"],
+    ["Acetic acid", "4.76", "acetate buffer"],
+    ["Imidazole group of histidine", "≈ 6.0", "protein and hemoglobin buffers"],
+    ["Carbonic acid (apparent)", "6.1", "bicarbonate buffer"],
+    ["Ammonium ion NH~4~^+^", "9.25", "ammonia buffer, H^+^ excretion by the kidney"]
+   ]},
+   {"type": "p", "text": "**Hydrolysis of salts.** A solution of a salt of a weak acid and a strong base is alkaline (NaHCO~3~ solution pH ≈ 8.3, CH~3~COONa), and a salt of a strong acid and a weak base is acidic (NH~4~Cl). That is why sodium hydrogen carbonate is used as an antacid and a urine-alkalinizing agent, and ammonium chloride as a urine-acidifying agent."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Most drugs are weak acids or bases. Only the **un-ionized** form crosses membranes well. The ratio of the ionized and un-ionized forms is found from the Henderson–Hasselbalch equation: for an acid lg([A^−^] / [HA]) = pH − pK~a~. For example, acetylsalicylic acid (pK~a~ ≈ 3.5) is mostly un-ionized in the acidic stomach and is partly absorbed there."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: analyzing metabolic acidosis by the anion gap", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Confirm that pH < 7.35 and HCO~3~^−^ < 22 mmol/L — this is metabolic acidosis.",
+    "Calculate the anion gap: AG = Na^+^ − (Cl^−^ + HCO~3~^−^); normal 8–12 mmol/L.",
+    "If the AG is increased, look for organic acids: glucose and ketones, lactate, creatinine, a history of poisoning.",
+    "If the AG is normal, look for loss of HCO~3~^−^: diarrhea, renal tubular disease.",
+    "Check respiratory compensation with Winter’s formula: expected pCO~2~ = 1.5·HCO~3~^−^ + 8 ± 2."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What are an acid and a base according to the Brønsted–Lowry theory? Give examples of conjugate pairs.",
+  "What is pK~a~? What are the pK~a~ values of biologically important acids?",
+  "How does the hydrolysis of salts affect the pH of the medium? Explain using NaHCO~3~ and NH~4~Cl.",
+  "What is the chloride shift (Hamburger phenomenon)?",
+  "How is the anion gap calculated, and how does it help in diagnosing metabolic acidosis?",
+  "By what routes do the kidneys excrete excess acid?"
+ ],
+ "quiz": [
+  {"q": "What is an acid according to the Brønsted–Lowry theory?", "options": ["A proton donor", "A proton acceptor", "An electron-pair donor", "A substance that forms OH^−^ ions", "A metal that is an electron acceptor"], "answer": 0},
+  {"q": "What is the conjugate base of the NH~4~^+^ ion?", "options": ["NH~3~", "NH~2~^−^", "H~3~O^+^", "OH^−^", "NH~4~OH"], "answer": 0},
+  {"q": "What is the normal anion gap?", "options": ["8–12 mmol/L", "22–26 mmol/L", "1–2 mmol/L", "35–45 mmol/L", "135–145 mmol/L"], "answer": 0},
+  {"q": "What acid–base disorder develops in methanol poisoning?", "options": ["Metabolic acidosis with an increased anion gap", "Hyperchloremic metabolic acidosis", "Metabolic alkalosis", "Respiratory alkalosis", "Respiratory acidosis"], "answer": 0},
+  {"q": "What disorder develops in severe diarrhea?", "options": ["Normal-anion-gap (hyperchloremic) metabolic acidosis", "Metabolic acidosis with an increased anion gap", "Metabolic alkalosis", "Respiratory acidosis", "Respiratory alkalosis"], "answer": 0},
+  {"q": "What does the chloride shift (Hamburger phenomenon) consist of?", "options": ["HCO~3~^−^ leaves the red blood cell and Cl^−^ enters in its place", "Cl^−^ is reabsorbed in the kidney", "HCl is formed in the stomach", "Na^+^ enters the cell and K^+^ leaves", "CO~2~ binds to the heme of hemoglobin"], "answer": 0},
+  {"q": "Why is alkalinizing the urine useful in salicylate poisoning?", "options": ["Ionized salicylate is not reabsorbed in the tubules and is excreted in the urine", "Salicylate decomposes in alkali", "Alkali precipitates salicylate", "Urine volume decreases", "Salicylate is broken down faster in the liver"], "answer": 0},
+  {"q": "What is the normal pCO~2~ of arterial blood?", "options": ["35–45 mm Hg", "80–100 mm Hg", "20–25 mm Hg", "50–60 mm Hg", "10–15 mm Hg"], "answer": 0},
+  {"q": "What does the product K~a~·K~b~ of a conjugate acid–base pair equal?", "options": ["K~w~", "1", "pH", "K~a~^2^", "0"], "answer": 0},
+  {"q": "Which substance, formed from glutamine in the renal tubules, carries H^+^ into the urine?", "options": ["NH~3~ (excreted as NH~4~^+^)", "Urea", "Creatinine", "Uric acid", "Lactate"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "A patient who drank a technical liquid instead of alcohol has blurred vision and deep, rapid breathing. Tests: pH 7.15; Na^+^ 140, Cl^−^ 100, HCO~3~^−^ 10 mmol/L; pCO~2~ 23 mm Hg.", "ask": "Determine the type of acid–base disorder, calculate the anion gap and assess the respiratory compensation. What is the likely cause?", "answer": "pH and HCO~3~^−^ are low — **metabolic acidosis**. AG = 140 − (100 + 10) = **30 mmol/L** — sharply increased; an organic acid has been added to the blood. Winter’s formula: expected pCO~2~ = 1.5 · 10 + 8 = 23 ± 2 — equal to the measured 23, so respiratory compensation is adequate (Kussmaul breathing). Together with the visual disturbance this is typical of **methanol** poisoning: methanol is converted in the liver into formic acid, which damages the optic nerve. Treatment: fomepizole or ethanol (stops the oxidation of methanol), NaHCO~3~, hemodialysis."},
+  {"title": "Problem 5", "text": "A child swallowed a large number of acetylsalicylic acid tablets. The pK~a~ of salicylic acid is ≈ 3.", "ask": "Calculate the ratio of ionized to un-ionized salicylate at urine pH 5 and 8. Why is the urine alkalinized in treatment?", "answer": "lg([A^−^] / [HA]) = pH − pK~a~. At pH 5: 5 − 3 = 2, ratio 10^2^ = **100 : 1**; at pH 8: 8 − 3 = 5, ratio 10^5^ = **100 000 : 1**. In alkaline urine the un-ionized (membrane-permeable) form is 1000 times smaller — salicylate is not reabsorbed in the tubules, is **“trapped”** in the urine and excreted quickly. That is why NaHCO~3~ is given to keep the urine pH at 7.5–8.5."},
+  {"title": "Problem 6", "text": "A student who is very anxious before an exam is breathing rapidly; there is numbness around the lips and the fingers are cramping. Blood gases: pH 7.52; pCO~2~ 28 mm Hg; HCO~3~^−^ 22 mmol/L.", "ask": "What is the disorder? Why did the cramps appear? What help is given?", "answer": "pH is raised, pCO~2~ is lowered and HCO~3~^−^ is still normal — **acute respiratory alkalosis** (hyperventilation; renal compensation has not yet started). In alkalosis albumin binds more Ca^2+^, **ionized calcium falls** and neuromuscular excitability increases — hence the paresthesia and cramps. Help: calm the person and slow their breathing; as CO~2~ is restored in the blood, the symptoms disappear."},
+  {"title": "Problem 7", "text": "A patient’s blood gases: HCO~3~^−^ 12 mmol/L, pCO~2~ 25 mm Hg.", "ask": "Calculate the blood pH using the Henderson–Hasselbalch equation and assess the disorder.", "answer": "pH = 6.1 + lg(12 / (0.03 · 25)) = 6.1 + lg(12 / 0.75) = 6.1 + lg16 = 6.1 + 1.2 = **7.3**. pH is low and HCO~3~^−^ is decreased — **metabolic acidosis**; the decreased pCO~2~ is respiratory compensation (expected pCO~2~ = 1.5 · 12 + 8 = 26 ± 2, measured 25 — compensation is adequate)."},
+  {"title": "Problem 8", "text": "A long-term smoker with chronic obstructive pulmonary disease. Blood gases: pH 7.36; pCO~2~ 60 mm Hg; HCO~3~^−^ 33 mmol/L.", "ask": "Identify the disorder and explain the compensation mechanism. Why is high-concentration oxygen given to such a patient with caution?", "answer": "pCO~2~ is sharply raised — **respiratory acidosis**; HCO~3~^−^ is also raised and pH is almost normal — this is **chronic (compensated)** respiratory acidosis with **renal compensation**: the kidneys have increased the excretion of H^+^ and NH~4~^+^ and retained HCO~3~^−^. Check: pH = 6.1 + lg(33 / 1.8) ≈ 7.36. In such patients breathing is driven more by hypoxia; if a lot of oxygen is given, ventilation may weaken, pCO~2~ may rise further and the acidosis may deepen. Therefore controlled oxygen is given to keep SaO~2~ at 88–92 %."}
+ ],
+ "cards": [
+  {"front": "Brønsted acid and base", "back": "Acid — proton donor, base — proton acceptor; for example NH~4~^+^ / NH~3~"},
+  {"front": "pK~a~", "back": "−lgK~a~; the smaller it is, the stronger the acid; pK~a~ + pK~b~ = 14"},
+  {"front": "Anion gap", "back": "Na^+^ − (Cl^−^ + HCO~3~^−^); normal 8–12 mmol/L"},
+  {"front": "Winter’s formula", "back": "Expected pCO~2~ in metabolic acidosis = 1.5·HCO~3~^−^ + 8 ± 2"},
+  {"front": "Chloride shift", "back": "HCO~3~^−^ leaves the red cell and Cl^−^ enters — transport of CO~2~"},
+  {"front": "Ammoniagenesis", "back": "NH~3~ is formed from glutamine in the kidney and excretes H^+^ as NH~4~^+^"}
+ ]
+}

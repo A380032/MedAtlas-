@@ -516,6 +516,20 @@ FIGS["t15_steroid"] = lambda lang: MolFig(molgrid_txt([
     "C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=C3C=CC(=C4)O"],
     ["Xolesterin", "Kortizol", "Estradiol"] if lang == "uz" else ["Cholesterol", "Cortisol", "Estradiol"], 470, 470))
 
+FIGS["t10_keton"] = lambda lang: MolFig(molgrid_txt(["CC(=O)CC(=O)O", "C[C@@H](O)CC(=O)O", "CC(C)=O"],
+    ["Atsetosirka kislota", "β-Gidroksimoy kislota", "Atseton"] if lang == "uz" else ["Acetoacetic acid", "β-Hydroxybutyric acid", "Acetone"], 470, 400))
+FIGS["t11_alkaloid"] = lambda lang: MolFig(molgrid_txt([
+    "CN1C2CCC1CC(C2)OC(=O)C(CO)c1ccccc1",
+    "CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)O)O[C@H]3[C@H](C=C4)O",
+    "COC1=CC2=C(C=CN=C2C=C1)[C@H]([C@@H]3C[C@@H]4CCN3C[C@@H]4C=C)O",
+    "Cn1cnc2c1c(=O)n(C)c(=O)n2C"],
+    ["Atropin", "Morfin", "Xinin", "Kofein"] if lang == "uz" else ["Atropine", "Morphine", "Quinine", "Caffeine"], 420, 420))
+FIGS["t15_eikozanoid"] = lambda lang: MolFig(molgrid_txt([
+    "CCCCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O",
+    "CCCCC[C@@H](/C=C/[C@H]1[C@@H](CC(=O)[C@@H]1C/C=C\\CCCC(=O)O)O)O",
+    "CCCCC/C=C\\C[C@H](/C=C/C=C/C=C\\[C@H](CCCC(=O)O)O)O"],
+    ["Araxidon kislota", "Prostaglandin E₂", "Leykotriyen B₄"] if lang == "uz" else ["Arachidonic acid", "Prostaglandin E₂", "Leukotriene B₄"], 520, 470))
+
 
 FIG_ORDER = list(FIGS)
 

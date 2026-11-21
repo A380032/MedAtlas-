@@ -1,0 +1,382 @@
+{
+ "append": {
+  "1": [
+   {
+    "type": "h",
+    "text": "Konformatsiyalar"
+   },
+   {
+    "type": "p",
+    "text": "Oddiy σ-bog‘ atrofida aylanish natijasida molekula qabul qiladigan turli fazoviy shakllar **konformatsiyalar** deyiladi; ular izomer emas va bir-biriga tez o‘tadi. Etanda **tormozlangan** (atomlar bir-biridan uzoq, energiyasi past) va **to‘silgan** (atomlar ustma-ust, energiyasi yuqori) konformatsiyalar farqlanadi; ular Nyumen proyeksiyasida tasvirlanadi."
+   },
+   {
+    "type": "p",
+    "text": "Siklogeksan halqasi tekis emas: eng barqaror shakli — **“kreslo”**, unda burchaklar 109,5° ga yaqin va kuchlanish yo‘q; kamroq barqaror shakli — **“vanna”**. Kreslo konformatsiyada o‘rinbosarlar **ekvatorial** (halqa tekisligida, qulay) yoki **aksial** (tekislikka perpendikulyar) holatda turadi. β-D-Glyukopiranozada barcha katta guruhlar ekvatorial — shuning uchun glyukoza tabiatda eng ko‘p tarqalgan monosaxarid."
+   }
+  ],
+  "4": [
+   {
+    "type": "p",
+    "text": "**Dorilar va yot moddalar biotransformatsiyasi.** Jigarda **sitoxrom P450** fermentlari yog‘da eruvchi moddalarni oksidlab (gidroksillash, dealkillash), ularga qutbli guruh kiritadi (I faza). So‘ng hosil bo‘lgan guruhga glyukuron kislota, sulfat yoki glutation biriktiriladi (II faza — konyugatsiya) va modda suvda eriydigan bo‘lib, siydik yoki o‘t bilan chiqariladi. Ayrim hollarda oksidlanish mahsuloti boshlang‘ich moddadan zaharliroq bo‘ladi."
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 0,
+   "title": "0. Organik birikmalarning tasnifi va nomenklaturasi",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Organik birikmalar **uglerod skeleti** bo‘yicha atsiklik (ochiq zanjirli), karbosiklik (halqa faqat uglerod atomlaridan) va geterosiklik (halqada N, O, S atomlari bor) birikmalarga; **funksional guruh** bo‘yicha esa sinflarga (spirtlar, aldegidlar, kislotalar, aminlar va boshqalar) bo‘linadi. Bir necha bir xil funksional guruhli birikmalar **polifunksional**, har xil guruhli birikmalar **geterofunksional** deyiladi (10-mavzu)."
+    },
+    {
+     "type": "p",
+     "text": "**IUPAC o‘rinbosarli nomenklaturasi** bo‘yicha nom berish tartibi: 1) **katta funksional guruh** aniqlanadi — u nomga qo‘shimcha (suffiks) bo‘lib kiradi; 2) shu guruhni tutgan eng uzun **asosiy zanjir** tanlanadi; 3) zanjir katta guruh eng kichik raqam oladigan qilib raqamlanadi; 4) qolgan guruhlar old qo‘shimcha (prefiks) sifatida alifbo tartibida, o‘rni raqami bilan yoziladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 9.0. Funksional guruhlarning katta-kichikligi va nomdagi ifodasi (kamayish tartibida)",
+     "head": [
+      "Sinf",
+      "Guruh",
+      "Suffiks",
+      "Prefiks"
+     ],
+     "rows": [
+      [
+       "Karbon kislotalar",
+       "−COOH",
+       "-an kislota",
+       "karboksi-"
+      ],
+      [
+       "Murakkab efirlar",
+       "−COOR",
+       "-oat",
+       "alkoksikarbonil-"
+      ],
+      [
+       "Amidlar",
+       "−CONH~2~",
+       "-amid",
+       "karbamoil-"
+      ],
+      [
+       "Aldegidlar",
+       "−CHO",
+       "-al",
+       "okso- (formil-)"
+      ],
+      [
+       "Ketonlar",
+       ">C=O",
+       "-on",
+       "okso-"
+      ],
+      [
+       "Spirtlar, fenollar",
+       "−OH",
+       "-ol",
+       "gidroksi-"
+      ],
+      [
+       "Tiollar",
+       "−SH",
+       "-tiol",
+       "merkapto- (sulfanil-)"
+      ],
+      [
+       "Aminlar",
+       "−NH~2~",
+       "-amin",
+       "amino-"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Misollar:** CH~3~−CH(OH)−COOH — 2-gidroksipropan kislota (sut kislota); HOOC−CH~2~−C(OH)(COOH)−CH~2~−COOH — 2-gidroksipropan-1,2,3-trikarbon kislota (limon kislota); CH~3~−CO−CH~2~−COOH — 3-oksobutan kislota (atsetosirka kislota); HO−CH~2~−CH~2~−NH~2~ — 2-aminoetanol (kolamin)."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Tibbiyotda ko‘pincha **trivial** (tarixiy) nomlar ishlatiladi: sut, limon, sirka kislota, glitserin, mochevina. Ularni IUPAC nomlari bilan birga bilish dorilar va metabolitlar tuzilishini tushunishni osonlashtiradi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 2,
+   "title": "0. Organik reaksiyalar mexanizmlari",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Kovalent bog‘ ikki xil uziladi. **Gomolitik uzilishda** har bir atomga bittadan elektron qoladi va **erkin radikallar** hosil bo‘ladi (yuqori harorat, nurlanish, peroksidlar ta’sirida). **Geterolitik uzilishda** elektron jufti bitta atomga qoladi va ionlar hosil bo‘ladi: elektron jufti yetishmaydigan **elektrofil** (E^+^ — H^+^, NO~2~^+^, karbokation) va bo‘linmagan juftga ega **nukleofil** (Nu^−^ — OH^−^, Cl^−^, NH~3~, H~2~O)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 9.0. Organik reaksiyalarning asosiy turlari",
+     "head": [
+      "Reaksiya turi",
+      "Belgisi",
+      "Misol",
+      "Biologik o‘xshashi"
+     ],
+     "rows": [
+      [
+       "Radikal o‘rin olish",
+       "S~R~",
+       "metanning xlorlanishi",
+       "lipidlarning peroksid oksidlanishi"
+      ],
+      [
+       "Elektrofil birikish",
+       "A~E~",
+       "etilenga HBr birikishi",
+       "fumaratga suv birikishi (fumaraza)"
+      ],
+      [
+       "Elektrofil o‘rin olish",
+       "S~E~",
+       "benzolning nitrolanishi",
+       "tirozinning yodlanishi (tiroksin sintezi)"
+      ],
+      [
+       "Nukleofil o‘rin olish",
+       "S~N~",
+       "galogenalkanning gidrolizi",
+       "alkillovchi dorilarning DNK ni alkillashi"
+      ],
+      [
+       "Nukleofil birikish",
+       "A~N~",
+       "aldegidga spirt birikib, yarim atsetal hosil bo‘lishi",
+       "glyukozaning halqa shakliga o‘tishi"
+      ],
+      [
+       "Ajralish (eliminirlanish)",
+       "E",
+       "spirtning degidratatsiyasi",
+       "limon kislotadan suv ajralib, akonitat hosil bo‘lishi"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**S~N~2 mexanizmi** bir bosqichli: nukleofil uglerodga ketuvchi guruhga qarama-qarshi tomondan hujum qiladi va konfiguratsiya teskari aylanadi. **S~N~1 mexanizmi** ikki bosqichli: avval ketuvchi guruh ajralib karbokation hosil bo‘ladi, so‘ng nukleofil birikadi; xiral markazda rasemizatsiya kuzatiladi."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Alkillovchi o‘smaga qarshi dorilar** (siklofosfamid, xlorambutsil, busulfan) kuchli elektrofillar: ular DNK dagi guaninning N7 atomiga nukleofil o‘rin olish reaksiyasi bilan birikib, zanjirlarni “tikadi”. Tez bo‘linuvchi hujayralar — o‘sma, ilik, soch follikulalari — ko‘proq zararlanadi; shuning uchun nojo‘ya ta’sirlari kamqonlik, infeksiyalar va soch to‘kilishi."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Ko‘nikma: organik birikmani IUPAC bo‘yicha nomlash",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Molekuladagi barcha funksional guruhlarni toping va jadvaldan eng kattasini aniqlang.",
+      "Katta guruhni tutgan eng uzun uglerod zanjirini tanlang va uglerodlar soni bo‘yicha asosiy nomni aniqlang (met-, et-, prop-, but-, pent-...).",
+      "Zanjirni katta guruh eng kichik raqam oladigan uchidan raqamlang (karboksil va aldegid uglerodi doim 1-raqam).",
+      "Qo‘sh va uch bog‘larni (-en, -in) va qolgan guruhlarni prefiks sifatida o‘rni raqami bilan alifbo tartibida yozing.",
+      "Katta guruhni suffiks sifatida qo‘shib, to‘liq nomni yozing va formulaga qayta “chizib” tekshiring."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Organik birikmalar uglerod skeleti va funksional guruh bo‘yicha qanday tasniflanadi?",
+  "IUPAC o‘rinbosarli nomenklaturasi bo‘yicha nom berish tartibini tushuntiring. Sut va limon kislotalarni nomlang.",
+  "Gomolitik va geterolitik uzilishning farqi nimada? Elektrofil va nukleofillarga misollar keltiring.",
+  "Organik reaksiyalarning qanday turlari bor? Har biriga biologik misol keltiring.",
+  "S~N~1 va S~N~2 mexanizmlari nimasi bilan farq qiladi? Alkillovchi dorilar qanday ta’sir qiladi?",
+  "Siklogeksanning kreslo konformatsiyasi nima? Nima uchun β-D-glyukoza eng barqaror?"
+ ],
+ "quiz": [
+  {
+   "q": "IUPAC nomenklaturasida qaysi funksional guruh eng katta hisoblanadi?",
+   "options": [
+    "Karboksil (−COOH)",
+    "Gidroksil (−OH)",
+    "Amino (−NH~2~)",
+    "Karbonil (keton)",
+    "Aldegid (−CHO)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "CH~3~−CH(OH)−COOH ning IUPAC nomi qaysi?",
+   "options": [
+    "2-Gidroksipropan kislota",
+    "3-Gidroksipropan kislota",
+    "2-Oksopropan kislota",
+    "Propan-1,2-diol",
+    "Gidroksietan kislota"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Gomolitik uzilishda nima hosil bo‘ladi?",
+   "options": [
+    "Erkin radikallar",
+    "Kation va anion",
+    "Faqat karbokationlar",
+    "Faqat karbanionlar",
+    "Molekulyar ionlar"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi zarracha nukleofil hisoblanadi?",
+   "options": [
+    "OH^−^",
+    "H^+^",
+    "NO~2~^+^",
+    "Karbokation",
+    "AlCl~3~"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Glyukozaning halqa shakliga o‘tishi qaysi reaksiya turiga kiradi?",
+   "options": [
+    "Nukleofil birikish (A~N~)",
+    "Elektrofil o‘rin olish (S~E~)",
+    "Radikal o‘rin olish (S~R~)",
+    "Eliminirlanish (E)",
+    "Elektrofil birikish (A~E~)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Lipidlarning peroksid oksidlanishi qaysi mexanizm bo‘yicha boradi?",
+   "options": [
+    "Radikal",
+    "Elektrofil birikish",
+    "Nukleofil o‘rin olish",
+    "Nukleofil birikish",
+    "Ion almashinish"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "S~N~2 reaksiyasida xiral markazda nima kuzatiladi?",
+   "options": [
+    "Konfiguratsiyaning teskari aylanishi",
+    "Rasemizatsiya",
+    "Konfiguratsiya saqlanadi",
+    "Xirallik yo‘qoladi",
+    "Karbokation hosil bo‘ladi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Alkillovchi o‘smaga qarshi dorilar DNK ning qaysi atomiga birikadi?",
+   "options": [
+    "Guaninning N7 atomiga",
+    "Dezoksiribozaning C1 atomiga",
+    "Fosfat kislorodiga",
+    "Timinning metil guruhiga",
+    "Sitozinning C5 atomiga"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Siklogeksanning eng barqaror konformatsiyasi qaysi?",
+   "options": [
+    "Kreslo",
+    "Vanna",
+    "Tekis",
+    "Yarim kreslo",
+    "Burama vanna"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Jigarda dorilarni oksidlab, qutbli guruh kiritadigan fermentlar tizimi qaysi?",
+   "options": [
+    "Sitoxrom P450",
+    "Sitoxrom c",
+    "Laktatdegidrogenaza",
+    "Karboangidraza",
+    "Katalaza"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Masala 4",
+   "text": "Jismoniy mashqdan keyin mushakda CH~3~−CH(OH)−COOH tuzilishli modda to‘planadi.",
+   "ask": "Moddaning trivial va IUPAC nomini ayting. U nechta stereoizomer shaklida mavjud bo‘lishi mumkin va organizmda qaysi biri hosil bo‘ladi?",
+   "answer": "Bu **sut kislota**, IUPAC bo‘yicha **2-gidroksipropan kislota**. C-2 atomi to‘rtta har xil o‘rinbosarga (H, OH, CH~3~, COOH) ega — **xiral markaz**, shuning uchun ikkita enantiomer bor: L- va D-sut kislota (2^1^ = 2). Odam mushagida laktatdegidrogenaza faqat **L-laktat** hosil qiladi; D-laktat ayrim ichak bakteriyalari tomonidan hosil bo‘lib, ichak kasalliklarida D-laktatatsidoz chaqirishi mumkin."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Limfoma bilan og‘rigan bemor siklofosfamid bilan davolanmoqda. Ikki haftadan keyin qonda leykotsitlar keskin kamaydi, sochlari to‘kila boshladi.",
+   "ask": "Dorining ta’sir mexanizmini organik reaksiya turi nuqtai nazaridan tushuntiring. Nima uchun nojo‘ya ta’sir aynan shu to‘qimalarda?",
+   "answer": "Siklofosfamid jigarda faollashib, kuchli **elektrofil** — alkillovchi metabolit hosil qiladi. U DNK dagi guaninning nukleofil **N7** atomiga **nukleofil o‘rin olish (S~N~)** reaksiyasi bilan birikadi; ikki funksional guruhi ikki zanjirni “tikib” qo‘yadi va replikatsiya to‘xtaydi. Dori DNK si ko‘p replikatsiyalanadigan **tez bo‘linuvchi** hujayralarga eng kuchli ta’sir qiladi: o‘sma, ilik (leykopeniya), soch follikulalari (alopetsiya), ichak epiteliysi."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Kuniga 2 quti sigaret chekadigan 55 yoshli erkakda o‘pka saratoni aniqlandi. Tamaki tutunida benz[a]piren — kondensirlangan aromatik uglevodorod bor; u o‘zi kimyoviy jihatdan nisbatan inert.",
+   "ask": "Inert uglevodorod qanday qilib kanserogenga aylanadi? Qaysi reaksiya turi DNK shikastlanishiga olib keladi?",
+   "answer": "Benz[a]piren jigar va o‘pkada **sitoxrom P450** fermentlari bilan oksidlanib, **diolepoksid**ga aylanadi (metabolik faollanish). Kuchlanishli epoksid halqasi kuchli **elektrofil**: u DNK dagi guaninning nukleofil aminoguruhi bilan **nukleofil o‘rin olish** reaksiyasiga kirishib, kovalent addukt hosil qiladi. Replikatsiyada bu joyga noto‘g‘ri nukleotid qo‘yiladi — mutatsiya (ko‘pincha p53 genida) va o‘sma rivojlanadi. Bundan tashqari, tamaki tutuni P450 ni induksiyalaydi, shuning uchun chekuvchilarda ayrim dorilar tezroq parchalanadi."
+  },
+  {
+   "title": "Masala 7",
+   "text": "C~4~H~10~O molekulyar formulasiga mos keladigan barcha struktura izomerlarini yozish topshirildi.",
+   "ask": "Nechta izomer bor? Ularni sinflarga ajrating va nomlang. Qaysi biri xiral?",
+   "answer": "Jami **7 ta**. **Spirtlar (4 ta):** butan-1-ol, butan-2-ol, 2-metilpropan-1-ol, 2-metilpropan-2-ol. **Oddiy efirlar (3 ta):** dietil efir, metilpropil efir, metilizopropil efir. Bu yerda zanjir, holat va sinflararo izomeriya uchraydi. **Butan-2-ol** ning C-2 atomida to‘rtta har xil o‘rinbosar (H, OH, CH~3~, C~2~H~5~) bor — u xiral va ikki enantiomer shaklida mavjud."
+  },
+  {
+   "title": "Masala 8",
+   "text": "Gem tarkibidagi porfirin halqasida 18 ta π-elektron tutashgan, siklooktatetraenda esa 8 ta π-elektron bor.",
+   "ask": "Hyukkel qoidasi bo‘yicha qaysi sistema aromatik? Porfirinning aromatikligi uning xossalarida qanday namoyon bo‘ladi?",
+   "answer": "Hyukkel qoidasi: aromatik sistemada **4n + 2** π-elektron bo‘ladi. 18 = 4 · 4 + 2 (n = 4) — porfirin **aromatik**; 8 = 4n (n = 2) — siklooktatetraen aromatik emas (u tekis ham emas). Porfirinning katta tutash aromatik sistemasi uni barqaror qiladi va ko‘rinadigan yorug‘likni kuchli yutishiga sabab bo‘ladi — shuning uchun gem va qon **qizil**, xlorofill esa yashil rangda."
+  }
+ ],
+ "cards": [
+  {
+   "front": "IUPAC katta guruh",
+   "back": "−COOH > −COOR > −CONH~2~ > −CHO > C=O > −OH > −SH > −NH~2~"
+  },
+  {
+   "front": "Elektrofil va nukleofil",
+   "back": "Elektrofil — elektron jufti akseptori (H^+^, karbokation); nukleofil — elektron jufti donori (OH^−^, NH~3~)"
+  },
+  {
+   "front": "S~N~2",
+   "back": "Bir bosqichli nukleofil o‘rin olish; konfiguratsiya teskari aylanadi"
+  },
+  {
+   "front": "Alkillovchi dorilar",
+   "back": "Elektrofillar; DNK guaninining N7 atomini alkillab, zanjirlarni tikadi"
+  },
+  {
+   "front": "Kreslo konformatsiya",
+   "back": "Siklogeksanning eng barqaror shakli; katta guruhlar ekvatorial holatda qulay"
+  },
+  {
+   "front": "Sitoxrom P450",
+   "back": "Jigarda yot moddalarni oksidlab (I faza), keyingi konyugatsiyaga tayyorlaydi"
+  }
+ ]
+}

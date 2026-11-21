@@ -1,0 +1,106 @@
+{
+ "append": {
+  "3": [
+   {"type": "h", "text": "Biologik redoks juftlar va oksidlovchi stress"},
+   {"type": "table", "title": "Jadval 6.0. Biologik muhim redoks juftlarning standart potensiallari (E°′, pH 7, 25 °C)", "head": ["Redoks juft", "E°′, V"], "rows": [
+    ["NAD^+^ / NADH", "−0,32"],
+    ["NADP^+^ / NADPH", "−0,32"],
+    ["Piruvat / laktat", "−0,19"],
+    ["Fumarat / suksinat", "+0,03"],
+    ["Ubixinon / ubixinol (KoQ)", "+0,05"],
+    ["Sitoxrom c (Fe^3+^ / Fe^2+^)", "+0,25"],
+    ["½O~2~ / H~2~O", "+0,82"]
+   ]},
+   {"type": "p", "text": "Kislorod to‘liq qaytarilmasa (bir yoki ikki elektron qabul qilsa), **kislorodning faol shakllari** hosil bo‘ladi: superoksid anion-radikal O~2~^·−^, vodorod peroksid H~2~O~2~ va eng xavflisi — gidroksil radikal ·OH. Ular lipidlarning peroksid oksidlanishini, oqsil va DNK shikastlanishini chaqiradi — **oksidlovchi stress** ateroskleroz, qandli diabet asoratlari, qarish va o‘smalar rivojida ishtirok etadi."},
+   {"type": "table", "title": "Jadval 6.0. Organizmning antioksidant himoyasi", "head": ["Himoya vositasi", "Ta’siri"], "rows": [
+    ["Superoksiddismutaza (Cu, Zn, Mn)", "2O~2~^·−^ + 2H^+^ → H~2~O~2~ + O~2~"],
+    ["Katalaza (Fe)", "2H~2~O~2~ → 2H~2~O + O~2~"],
+    ["Glutationperoksidaza (Se)", "H~2~O~2~ + 2GSH → 2H~2~O + GSSG"],
+    ["Vitamin E (tokoferol)", "membranadagi lipid radikallarini zararsizlantiradi"],
+    ["Vitamin C (askorbat)", "suvli muhitdagi radikallarni bog‘laydi, vitamin E ni tiklaydi"]
+   ]}
+  ],
+  "6": [
+   {"type": "h", "text": "Xemiosmotik nazariya. Nafas zanjiri ingibitorlari va ajratuvchilari"},
+   {"type": "p", "text": "**P. Mitchellning xemiosmotik nazariyasi**ga ko‘ra elektronlar ko‘chishida ajralgan energiya protonlarni mitoxondriya ichki membranasidan membranalararo bo‘shliqqa haydashga sarflanadi. Natijada **proton gradiyenti** — pH farqi (≈ 0,5–1) va membrana potensiali (≈ 150–180 mV) — hosil bo‘ladi. Protonlar **ATF-sintaza** kanali orqali qaytganda ADF va fosfatdan ATF sintezlanadi. Shunday qilib, oksidlanish va fosforlanish elektrokimyoviy gradiyent orqali bog‘langan."},
+   {"type": "table", "title": "Jadval 6.0. Oksidlovchi fosforlanishga ta’sir qiluvchi moddalar", "head": ["Modda", "Ta’sir joyi", "Oqibati"], "rows": [
+    ["Rotenon, barbituratlar", "I kompleks (NADH-degidrogenaza)", "NADH dan elektron ko‘chishi to‘xtaydi"],
+    ["Sianid, CO, H~2~S", "IV kompleks (sitoxromoksidaza)", "kislorod ishlatilmaydi — gistotoksik gipoksiya"],
+    ["Oligomitsin", "ATF-sintaza", "ATF sintezi va unga bog‘liq nafas to‘xtaydi"],
+    ["2,4-Dinitrofenol, termogenin", "membranadan protonni o‘tkazadi (ajratuvchi)", "nafas davom etadi, ATF hosil bo‘lmaydi, energiya issiqlikka aylanadi"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**2,4-Dinitrofenol** bir paytlar ozdiruvchi dori sifatida sotilgan va hozir ham noqonuniy “yog‘ yoqgich” sifatida tarqatiladi. U oksidlanish va fosforlanishni ajratib, yog‘ni tez yoqadi, lekin nazoratsiz **gipertermiya** chaqiradi; o‘limga olib keluvchi zaharlanishlar qayd etilgan."}]}
+  ]
+ },
+ "insert": [
+  {"after": 3, "title": "0. Ta’sir potensiali va ion kanallari", "blocks": [
+   {"type": "p", "text": "Dam olish holatida membrana asosan K^+^ uchun o‘tkazuvchan, shuning uchun dam olish potensiali kaliyning muvozanat potensialiga yaqin. Bir necha ionning hissasini **Goldman–Xojkin–Kats tenglamasi** hisobga oladi: membrana potensiali har bir ionning konsentratsiyalar nisbati va membrananing shu ion uchun **o‘tkazuvchanligi** (P) bilan aniqlanadi. Qaysi ion uchun o‘tkazuvchanlik katta bo‘lsa, potensial shu ionning muvozanat potensialiga yaqinlashadi."},
+   {"type": "table", "title": "Jadval 6.0. Nerv tolasi ta’sir potensialining fazalari", "head": ["Faza", "Ion harakati", "Potensial"], "rows": [
+    ["Dam olish", "K^+^ kanallari qisman ochiq", "≈ −70 mV"],
+    ["Depolyarizatsiya", "Na^+^ kanallari ochilib, Na^+^ hujayraga kiradi", "+30…+40 mV gacha (E~Na~ ≈ +60 mV ga yaqinlashadi)"],
+    ["Repolyarizatsiya", "Na^+^ kanallari yopiladi, K^+^ hujayradan chiqadi", "manfiy qiymatga qaytadi"],
+    ["Giperpolyarizatsiya (iz potensiali)", "K^+^ kanallari kechroq yopiladi", "dam olish potensialidan biroz manfiy"]
+   ]},
+   {"type": "p", "text": "Ta’sir potensiali **“hammasi yoki hech narsa”** qonuniga bo‘ysunadi: ta’sir bo‘sag‘aga yetsa, to‘liq javob paydo bo‘ladi. Ionlar konsentratsiyasi faqat juda kam o‘zgaradi — gradiyentlarni Na^+^/K^+^-ATFaza tiklaydi (bir sikl: 3 Na^+^ chiqadi, 2 K^+^ kiradi, 1 ATF sarflanadi)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Mahalliy anestetiklar** (lidokain, novokain) Na^+^ kanallarini ichki tomondan to‘sib, ta’sir potensiali hosil bo‘lishini va og‘riq impulsining o‘tishini to‘xtatadi. Ular kuchsiz asoslar: membranadan **ionlanmagan** shaklda o‘tadi, kanalni esa **ionlangan** shaklda bloklaydi. Shuning uchun kislotali yallig‘langan to‘qimada (abssess) ularning ta’siri susayadi."}]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Gipokalsiyemiya** Na^+^ kanallarining ochilish bo‘sag‘asini pasaytiradi va qo‘zg‘aluvchanlikni oshiradi (tetaniya), **giperkalsiyemiya** esa aksincha — mushak holsizligi va qabziyat beradi."}]}
+  ]},
+  {"after": 4, "title": "0. Elektroliz. Faradey qonunlari. Metallar korroziyasi", "blocks": [
+   {"type": "p", "text": "**Elektroliz** — elektrolit eritmasi yoki suyuqlanmasi orqali o‘zgarmas tok o‘tganda elektrodlarda boradigan oksidlanish-qaytarilish jarayoni. Galvanik elementdan farqli ravishda, bu yerda elektr energiyasi kimyoviy energiyaga aylanadi: katodda (−) qaytarilish, anodda (+) oksidlanish boradi. NaCl eritmasi elektrolizida katodda H~2~ va OH^−^, anodda Cl~2~ hosil bo‘ladi; Cl~2~ ishqor bilan reaksiyaga kirishib, dezinfeksiyalovchi **natriy gipoxlorit** NaOCl beradi."},
+   {"type": "p", "text": "**Faradey qonunlari:** elektrodda ajralgan modda massasi o‘tgan elektr miqdoriga proporsional: m = M·I·t / (n·F), bunda I — tok kuchi (A), t — vaqt (s), n — bir zarrachaga to‘g‘ri keladigan elektronlar soni, F = 96 485 Kl/mol."},
+   {"type": "p", "text": "**Korroziya** — metallning atrof muhit bilan elektrokimyoviy yoki kimyoviy ta’sirlashib yemirilishi. Har xil metallar elektrolit (so‘lak, to‘qima suyuqligi) orqali tutashganda **galvanik juft** hosil bo‘ladi va faolroq metall (anod) eriydi."},
+   {"type": "table", "title": "Jadval 6.0. Tibbiyotda korroziya va undan himoyalanish", "head": ["Holat", "Elektrokimyoviy mohiyati", "Himoya yo‘li"], "rows": [
+    ["Og‘iz bo‘shlig‘i galvanizmi", "turli metall protezlar so‘lak orqali galvanik element hosil qiladi", "bir xil yoki inert qotishmalardan foydalanish"],
+    ["Implantlar (vint, plastina, endoprotez)", "to‘qima suyuqligida Cl^−^ ta’sirida korroziya, metall ionlari ajraladi", "titan va zanglamaydigan po‘lat — sirtida himoya oksid parda (passivlanish)"],
+    ["Jarrohlik asboblari", "namlik va xloridlar ta’sirida zanglash", "zanglamaydigan po‘lat, to‘g‘ri quritish va sterilizatsiya"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Titan** tibbiyotda eng ko‘p ishlatiladigan implant metali: sirtida o‘z-o‘zidan hosil bo‘ladigan zich TiO~2~ parda uni korroziyadan himoyalaydi, suyak to‘qimasi esa unga yaxshi birikadi (osteointegratsiya)."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: redoks reaksiyaning yo‘nalishi va energiyasini baholash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Reaksiyadagi ikki redoks juftni aniqlang va ularning E°′ qiymatlarini jadvaldan toping.",
+    "Potensiali yuqori juft — oksidlovchi (elektron qabul qiladi), past juft — qaytaruvchi (elektron beradi).",
+    "ΔE°′ = E°′(oksidlovchi) − E°′(qaytaruvchi) ni hisoblang; ΔE°′ > 0 bo‘lsa, reaksiya o‘z-o‘zidan boradi.",
+    "Ko‘chadigan elektronlar sonini (n) aniqlang va ΔG°′ = −n·F·ΔE°′ ni hisoblang (natijani kJ/mol ga o‘tkazing).",
+    "Ajralgan energiyani ATF gidrolizi energiyasi (≈ 30,5 kJ/mol) bilan solishtirib, nechta ATF sintezi mumkinligini baholang."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Ta’sir potensialining fazalarini va har bir fazadagi ion harakatini tushuntiring.",
+  "Goldman–Xojkin–Kats tenglamasi Nernst tenglamasidan nimasi bilan farq qiladi?",
+  "Mahalliy anestetiklar qanday ta’sir qiladi va nima uchun yallig‘langan to‘qimada kuchsizroq?",
+  "Kislorodning faol shakllari qanday hosil bo‘ladi? Organizmning antioksidant himoyasini sanang.",
+  "Xemiosmotik nazariyaning mohiyati nimada? Ingibitor va ajratuvchilar qanday farq qiladi?",
+  "Elektroliz galvanik elementdan nimasi bilan farq qiladi? Faradey qonunini yozing. Implantlar korroziyadan qanday himoyalanadi?"
+ ],
+ "quiz": [
+  {"q": "Nerv tolasida depolyarizatsiya fazasini qaysi ion harakati ta’minlaydi?", "options": ["Na^+^ ning hujayraga kirishi", "K^+^ ning hujayradan chiqishi", "Cl^−^ ning hujayraga kirishi", "Ca^2+^ ning hujayradan chiqishi", "H^+^ ning hujayradan chiqishi"], "answer": 0},
+  {"q": "Na^+^/K^+^-ATFazaning bir siklida nechta ion tashiladi?", "options": ["3 Na^+^ chiqadi, 2 K^+^ kiradi", "2 Na^+^ chiqadi, 3 K^+^ kiradi", "1 Na^+^ chiqadi, 1 K^+^ kiradi", "3 Na^+^ kiradi, 2 K^+^ chiqadi", "2 Na^+^ kiradi, 2 K^+^ chiqadi"], "answer": 0},
+  {"q": "Mahalliy anestetiklar qaysi kanallarni bloklaydi?", "options": ["Kuchlanishga bog‘liq Na^+^ kanallarini", "K^+^ kanallarini", "Cl^−^ kanallarini", "Suv kanallarini (akvaporinlarni)", "Ca^2+^-ATFazani"], "answer": 0},
+  {"q": "Qaysi redoks juftning standart potensiali eng yuqori?", "options": ["½O~2~ / H~2~O", "NAD^+^ / NADH", "Fumarat / suksinat", "Sitoxrom c (Fe^3+^ / Fe^2+^)", "Piruvat / laktat"], "answer": 0},
+  {"q": "Vodorod peroksidni suv va kislorodga parchalaydigan ferment qaysi?", "options": ["Katalaza", "Superoksiddismutaza", "Sitoxromoksidaza", "Karboangidraza", "Laktatdegidrogenaza"], "answer": 0},
+  {"q": "Glutationperoksidaza tarkibida qaysi mikroelement bor?", "options": ["Selen", "Rux", "Mis", "Molibden", "Kobalt"], "answer": 0},
+  {"q": "2,4-Dinitrofenol qanday ta’sir qiladi?", "options": ["Oksidlanish va fosforlanishni ajratadi", "Sitoxromoksidazani bloklaydi", "ATF-sintazani bloklaydi", "NADH-degidrogenazani bloklaydi", "Kislorodni bog‘laydi"], "answer": 0},
+  {"q": "Mitchell nazariyasiga ko‘ra ATF sintezi uchun energiya manbai nima?", "options": ["Mitoxondriya ichki membranasidagi proton gradiyenti", "Glyukozaning bevosita parchalanishi", "Kreatinfosfat", "Na^+^ gradiyenti", "Issiqlik"], "answer": 0},
+  {"q": "Faradey qonuniga ko‘ra elektrodda ajralgan modda massasi nimaga proporsional?", "options": ["O‘tgan elektr miqdoriga (I·t)", "Elektrod massasiga", "Eritma hajmiga", "Haroratga", "Elektrod potensialiga"], "answer": 0},
+  {"q": "Titan implantlarni korroziyadan nima himoyalaydi?", "options": ["Sirtidagi zich TiO~2~ oksid parda", "Organik qoplama", "Kumush qatlami", "Elektr toki", "Ichki magnit maydon"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Neyronda Na^+^ konsentratsiyasi tashqarida 145 mmol/l, ichkarida 12 mmol/l.", "ask": "37 °C da natriyning muvozanat potensialini hisoblang. Ta’sir potensiali cho‘qqisi nima uchun shu qiymatga yetmaydi?", "answer": "E~Na~ = 61·lg(145 / 12) = 61·lg12,1 ≈ 61 · 1,08 ≈ **+66 mV**. Depolyarizatsiyada Na^+^ kanallari ochilib, potensial E~Na~ tomon intiladi, ammo cho‘qqi atigi +30…+40 mV ga yetadi: Na^+^ kanallari tezda faolsizlanadi, shu vaqtda K^+^ kanallari ochilib, kaliy chiqishi potensialni manfiy tomonga tortadi."},
+  {"title": "Masala 5", "text": "Krebs siklida suksinatdan ajralgan 2 ta elektron FAD va ubixinon orqali kislorodga o‘tadi. E°′(fumarat / suksinat) = +0,03 V, E°′(½O~2~ / H~2~O) = +0,82 V.", "ask": "Jarayonning ΔG°′ ini hisoblang. Nima uchun suksinat oksidlanganda NADH ga nisbatan kamroq ATF hosil bo‘ladi?", "answer": "ΔE°′ = 0,82 − 0,03 = 0,79 V; ΔG°′ = −2 · 96 485 · 0,79 ≈ −152 000 J/mol = **−152 kJ/mol**. NADH uchun ΔG°′ ≈ −220 kJ/mol edi. Suksinat elektronlari I kompleksni chetlab o‘tib, ubixinon darajasida zanjirga kiradi — kamroq proton haydaladi va ≈ 1,5 ATF hosil bo‘ladi (NADH dan ≈ 2,5 ATF)."},
+  {"title": "Masala 6", "text": "Bo‘limda antiseptik tayyorlash uchun NaCl eritmasi 2 A tok bilan 30 daqiqa elektroliz qilindi.", "ask": "Anodda qancha xlor ajraladi (M(Cl~2~) = 71 g/mol)? U qanday qilib dezinfeksiyalovchi moddaga aylanadi?", "answer": "Q = I·t = 2 · 1800 = 3600 Kl; elektronlar miqdori 3600 / 96 485 ≈ 0,0373 mol. Anodda 2Cl^−^ − 2e^−^ → Cl~2~, ya’ni n(Cl~2~) = 0,0373 / 2 ≈ 0,0187 mol, m = 0,0187 · 71 ≈ **1,3 g**. Katodda hosil bo‘lgan NaOH bilan xlor reaksiyaga kirishadi: Cl~2~ + 2NaOH → NaOCl + NaCl + H~2~O — **natriy gipoxlorit** sirt va asboblarni zararsizlantirishda ishlatiladi."},
+  {"title": "Masala 7", "text": "Sport zalida “yog‘ yoqgich” tabletkalar ichgan yigit kasalxonaga keltirildi: harorat 41 °C, kuchli terlash, taxikardiya, tez nafas. Tabletkalar tarkibida 2,4-dinitrofenol aniqlandi.", "ask": "Moddaning ta’sir mexanizmini nafas zanjiri elektrokimyosi nuqtai nazaridan tushuntiring. Nima uchun harorat keskin ko‘tarilgan?", "answer": "2,4-Dinitrofenol — lipofil kuchsiz kislota; u membranalararo bo‘shliqda protonni biriktirib, membranadan o‘tadi va matriksda bo‘shatadi — **proton gradiyentini yo‘qotadi**. Elektronlar zanjir bo‘ylab ko‘chishda davom etadi (O~2~ sarfi hatto oshadi), ammo ATF-sintaza ishlamaydi: oksidlanish energiyasi ATF ga emas, **issiqlikka** aylanadi. ATF yetishmasligini qoplash uchun organizm ko‘proq yog‘ va glyukoza oksidlaydi, issiqlik yanada ko‘payadi — nazoratsiz gipertermiya. Antidoti yo‘q, davolash sovitish va simptomatik."},
+  {"title": "Masala 8", "text": "Stomatolog yiringli abssess sohasida lidokain bilan og‘riqsizlantirishga harakat qildi, ammo ta’sir yetarli bo‘lmadi. Lidokainning pK~a~ i 7,9.", "ask": "Me’yoriy to‘qima (pH 7,4) va yallig‘langan to‘qimada (pH 6,9) lidokainning ionlanmagan shakli ulushini hisoblang va natijani tushuntiring.", "answer": "Kuchsiz asos uchun lg([BH^+^] / [B]) = pK~a~ − pH. pH 7,4 da: 7,9 − 7,4 = 0,5, nisbat 10^0,5^ ≈ 3,2 : 1 — ionlanmagan shakl ≈ 1 / 4,2 ≈ **24 %**. pH 6,9 da: 7,9 − 6,9 = 1, nisbat 10 : 1 — ionlanmagan shakl ≈ 1 / 11 ≈ **9 %**. Anestetik nerv membranasidan faqat ionlanmagan shaklda o‘tadi, shuning uchun kislotali yallig‘langan to‘qimada nerv ichiga kam kiradi va Na^+^ kanallarini yetarli bloklay olmaydi. Bunday holda anesteziya yallig‘lanish o‘chog‘idan uzoqroqda (o‘tkazuvchi anesteziya) qilinadi."}
+ ],
+ "cards": [
+  {"front": "Ta’sir potensiali", "back": "Depolyarizatsiya (Na^+^ kiradi) → repolyarizatsiya (K^+^ chiqadi); “hammasi yoki hech narsa”"},
+  {"front": "Kislorodning faol shakllari", "back": "O~2~^·−^, H~2~O~2~, ·OH — lipid, oqsil va DNK ni shikastlaydi"},
+  {"front": "Xemiosmotik nazariya", "back": "Elektron ko‘chishi proton gradiyentini hosil qiladi; protonlar ATF-sintaza orqali qaytganda ATF sintezlanadi"},
+  {"front": "Ajratuvchilar", "back": "Proton gradiyentini yo‘qotadi: nafas davom etadi, ATF o‘rniga issiqlik hosil bo‘ladi (2,4-dinitrofenol, termogenin)"},
+  {"front": "Faradey qonuni", "back": "m = M·I·t / (n·F)"},
+  {"front": "Passivlanish", "back": "Metall sirtida himoya oksid parda hosil bo‘lishi (titan — TiO~2~)"}
+ ]
+}

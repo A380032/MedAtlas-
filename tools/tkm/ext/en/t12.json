@@ -1,0 +1,94 @@
+{
+ "append": {
+  "6": [
+   {"type": "h", "text": "Glycoproteins and blood group antigens"},
+   {"type": "p", "text": "Short, branched oligosaccharide chains covalently attached to proteins form **glycoproteins** (immunoglobulins, hormones, membrane receptors, mucus — mucins). Oligosaccharides are attached to the protein through the hydroxyl of serine or threonine (**O-glycosidic** bond) or through the amide nitrogen of asparagine (**N-glycosidic** bond). In **proteoglycans**, by contrast, long glycosaminoglycan chains are attached to a protein core and carbohydrate makes up most of the mass."},
+   {"type": "table", "title": "Table 12.0. Carbohydrate structure of the AB0 blood group antigens", "head": ["Blood group", "Antigen", "Additional monosaccharide at the end of the chain"], "rows": [
+    ["0 (I)", "H", "none — only the basic chain containing fucose"],
+    ["A (II)", "A", "N-acetylgalactosamine"],
+    ["B (III)", "B", "galactose"],
+    ["AB (IV)", "A and B", "both (on different molecules)"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The A and B antigens differ by only **one monosaccharide** — the type of glycosyltransferase that attaches it to the H chain is inherited. Even such a small chemical difference causes a strong immune response and severe hemolysis in an incompatible blood transfusion."}]}
+  ]
+ },
+ "insert": [
+  {"after": 2, "title": "0. Qualitative reactions of carbohydrates and non-enzymatic glycation", "blocks": [
+   {"type": "p", "text": "Under the action of strong acids monosaccharides lose water to form **furfural** (from pentoses) or **hydroxymethylfurfural** (from hexoses); these give colored compounds with phenols. Many qualitative reactions are based on this."},
+   {"type": "table", "title": "Table 12.0. Qualitative reactions of carbohydrates", "head": ["Reaction", "Reagent", "Result", "What it detects"], "rows": [
+    ["Molisch", "α-naphthol + conc. H~2~SO~4~", "violet ring at the interface", "any carbohydrate (general reaction)"],
+    ["Seliwanoff", "resorcinol + HCl, heating", "quickly appearing red color", "ketoses (fructose)"],
+    ["Bial", "orcinol + HCl + FeCl~3~", "green color", "pentoses (ribose)"],
+    ["Trommer, Fehling, Benedict", "Cu^2+^ in alkaline solution, heating", "brick-red Cu~2~O", "reducing carbohydrates"],
+    ["With iodine", "Lugol’s solution", "blue or red-brown", "starch (amylose) and glycogen"]
+   ]},
+   {"type": "p", "text": "**Enolization in alkaline medium:** glucose, mannose and fructose can interconvert through a common **enediol** intermediate (the Lobry de Bruyn–van Ekenstein rearrangement). That is why fructose also shows reducing properties in an alkaline medium. In the body the isomerization of glucose 6-phosphate to fructose 6-phosphate (phosphoglucose isomerase) proceeds through such an enediol."},
+   {"type": "p", "text": "**Non-enzymatic glycation (the Maillard reaction):** the aldehyde group of the open form of glucose forms a **Schiff base** with the free amino group of a protein (nucleophilic addition followed by loss of water); this rearranges into a stable **Amadori product** (this is exactly how HbA~1c~ is formed). Later, with oxidation and cross-linking, irreversible **advanced glycation end products** accumulate."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Advanced glycation end products cross-link collagen and basement membranes, making them stiff and brittle; they take part in the late complications of diabetes mellitus — retinopathy, nephropathy, atherosclerosis and cataract. The browning and aroma of food during cooking are also the result of the Maillard reaction."}]}
+  ]},
+  {"after": 4, "title": "0. Digestion of carbohydrates and blood glucose", "blocks": [
+   {"type": "table", "title": "Table 12.0. Enzymes that digest carbohydrates", "head": ["Enzyme", "Where it acts", "Substrate", "Product"], "rows": [
+    ["Salivary α-amylase", "oral cavity", "starch, glycogen", "dextrins, maltose"],
+    ["Pancreatic α-amylase", "lumen of the small intestine", "starch, dextrins", "maltose, maltotriose, α-dextrins"],
+    ["Maltase, isomaltase", "brush border of the intestinal epithelium", "maltose, α-1,6 bonds", "glucose"],
+    ["Sucrase", "brush border", "sucrose", "glucose + fructose"],
+    ["Lactase", "brush border", "lactose", "glucose + galactose"]
+   ]},
+   {"type": "p", "text": "Monosaccharides pass into enterocytes: glucose and galactose **together with Na^+^** (the SGLT1 transporter, secondary active transport), and fructose by facilitated diffusion through GLUT5. All of them leave the cell for the blood through GLUT2. The absorption of glucose together with Na^+^ is the basis of **oral rehydration solutions**: glucose increases the absorption of Na^+^ and, with it, of water."},
+   {"type": "table", "title": "Table 12.0. Diagnostic criteria for blood glucose (venous plasma, mmol/L)", "head": ["Condition", "Fasting", "2 hours after a glucose load"], "rows": [
+    ["Normal", "3.9–6.0", "< 7.8"],
+    ["Impaired fasting glucose", "6.1–6.9", "< 7.8"],
+    ["Impaired glucose tolerance", "< 7.0", "7.8–11.0"],
+    ["Diabetes mellitus", "≥ 7.0", "≥ 11.1"]
+   ]},
+   {"type": "p", "text": "In the clinic glucose is determined by the **glucose oxidase** method: glucose + O~2~ → gluconolactone + H~2~O~2~; the H~2~O~2~ formed oxidizes a chromogen with the help of **peroxidase** to give a colored product whose absorbance is proportional to the glucose content. Glucometers measure the electric current of the same reaction."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Hypoglycemia** (glucose < 3.0 mmol/L) — sweating, tremor, hunger, behavior changes, and in severe cases seizures and coma. Because the brain depends entirely on glucose, this condition is dangerous even faster than hyperglycemia: if the patient is conscious — a sweet drink or 15–20 g of glucose; if unconscious — 40 % glucose intravenously or glucagon intramuscularly."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: detecting ketoses with Seliwanoff’s reaction", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Pour 1 mL each of glucose and fructose solutions (or the test sample) into two test tubes.",
+    "Add 1 mL of Seliwanoff’s reagent (resorcinol in HCl) to each.",
+    "Place the tubes in a boiling water bath at the same time and observe the color after 1 minute.",
+    "Fructose gives a **red** color within 30–60 seconds; glucose gives only a weak pink color after prolonged heating (as it isomerizes to fructose).",
+    "Conclude from the result whether the sample contains a ketose (for example, the fructose in honey)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What are the Molisch, Seliwanoff and Bial reactions based on, and what do they detect?",
+  "Explain the enolization of monosaccharides in an alkaline medium. Why does fructose show reducing properties?",
+  "How does non-enzymatic glycation proceed, and what is its significance in the complications of diabetes?",
+  "Where and by which enzymes are carbohydrates digested? How is glucose absorbed in the intestine?",
+  "What are the normal blood glucose values and the criteria for diabetes mellitus? How is glucose determined in the laboratory?",
+  "What are glycoproteins? How do the AB0 blood group antigens differ chemically?"
+ ],
+ "quiz": [
+  {"q": "Which reaction is used to detect ketoses?", "options": ["Seliwanoff’s reaction", "Bial’s reaction", "The biuret reaction", "The xanthoprotein reaction", "Legal’s test"], "answer": 0},
+  {"q": "Which qualitative reaction is general for all carbohydrates?", "options": ["Molisch’s reaction", "Seliwanoff’s reaction", "Trommer’s reaction", "The reaction with iodine", "The ninhydrin reaction"], "answer": 0},
+  {"q": "What is formed in the first step of non-enzymatic glycation?", "options": ["A Schiff base", "A glycosidic bond", "A peptide bond", "An ester", "A disulfide bond"], "answer": 0},
+  {"q": "Through which transporter is glucose absorbed into the intestinal epithelium?", "options": ["SGLT1 (together with Na^+^)", "GLUT5", "Na^+^/K^+^-ATPase", "Aquaporin", "H^+^/K^+^-ATPase"], "answer": 0},
+  {"q": "Which enzyme breaks down sucrose?", "options": ["Sucrase", "Lactase", "α-Amylase", "Maltase", "Lipase"], "answer": 0},
+  {"q": "From what fasting venous plasma glucose value is diabetes mellitus diagnosed?", "options": ["≥ 7.0 mmol/L", "≥ 5.5 mmol/L", "≥ 6.1 mmol/L", "≥ 11.1 mmol/L", "≥ 3.3 mmol/L"], "answer": 0},
+  {"q": "In the glucose oxidase method, which product forms the colored compound that is measured?", "options": ["H~2~O~2~ (with peroxidase)", "CO~2~", "Gluconic acid", "Lactate", "Sorbitol"], "answer": 0},
+  {"q": "Which monosaccharide is at the end of the chain of the blood group A antigen?", "options": ["N-Acetylgalactosamine", "Galactose", "Fucose", "Glucose", "Sialic acid"], "answer": 0},
+  {"q": "In glycoproteins, through which amino acid of the protein is the N-glycosidic bond formed?", "options": ["Asparagine", "Serine", "Threonine", "Lysine", "Cysteine"], "answer": 0},
+  {"q": "Why is glucose added to oral rehydration solutions?", "options": ["Glucose increases the absorption of Na^+^ and water", "Only to provide energy", "To improve the taste", "To kill bacteria", "To lower the osmotic pressure"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "A two-week-old infant vomits after breastfeeding and does not gain weight; there is jaundice and an enlarged liver, and a cataract is beginning to form. The urine contains a reducing substance, but the glucose oxidase test is negative.", "ask": "Which inherited disease is suspected? What is the chemical cause of the cataract? How is it treated?", "answer": "**Galactosemia** — deficiency of galactose-1-phosphate uridyltransferase. Galactose formed from milk lactose cannot be converted into glucose and accumulates. The reducing substance in the urine is **galactose** (glucose oxidase does not act on it, so the test is negative). In the lens, aldose reductase reduces galactose to **galactitol**; it cannot leave the cell and draws in water osmotically — the lens swells and becomes cloudy (**cataract**). Galactose 1-phosphate is toxic to the liver and brain. Treatment: immediately exclude milk and lactose completely and switch to soy-based formulas."},
+  {"title": "Problem 5", "text": "An overweight 45-year-old woman underwent a glucose tolerance test: fasting venous plasma glucose 6.4 mmol/L, 2 hours after drinking 75 g of glucose 9.2 mmol/L.", "ask": "Interpret the result. What is recommended for the patient?", "answer": "Fasting glucose 6.4 mmol/L — **impaired fasting glucose** (6.1–6.9); the 2-hour value 9.2 mmol/L — **impaired glucose tolerance** (7.8–11.0). This is **prediabetes**: the criteria for diabetes mellitus (≥ 7.0 and ≥ 11.1) are not yet met, but the risk of developing type 2 diabetes in future is high. Recommendations: lose 5–7 % of body weight, physical activity (≥ 150 minutes a week), limit rapidly absorbed carbohydrates, check HbA~1c~ and monitor yearly."},
+  {"title": "Problem 6", "text": "A patient on insulin skipped dinner and lost consciousness. The glucometer shows 1.9 mmol/L. The ambulance team gave 40 mL of 40 % glucose intravenously.", "ask": "How much glucose was given to the patient? Why is hypoglycemia dangerous faster than hyperglycemia?", "answer": "m = 0.40 · 40 = **16 g** of glucose (the usual dose for quickly correcting hypoglycemia is 15–20 g). The brain cannot store glucose itself and gets its energy almost exclusively from blood glucose; if glucose falls sharply, neuronal function is disturbed within minutes — seizures and coma, and if it lasts long, irreversible damage. After regaining consciousness the patient is given food with slowly absorbed carbohydrates, because the action of insulin is still continuing."},
+  {"title": "Problem 7", "text": "A patient with type 2 diabetes mellitus was prescribed dapagliflozin (an SGLT2 inhibitor). A week later the urine test showed a lot of glucose, while blood glucose had decreased.", "ask": "Explain the appearance of glucose in the urine. Is this a worrying sign?", "answer": "In the proximal renal tubules glucose is reabsorbed from the filtrate mainly through the **SGLT2** transporter (together with Na^+^); normally there is almost no glucose in the urine. Glucose passes into the urine only when its blood level exceeds ≈ 10 mmol/L (the **renal threshold**). Dapagliflozin blocks SGLT2 and excretes glucose in the urine even below the threshold — this is the **expected effect** of the drug and its mechanism for lowering blood glucose. However, glucose in the urine increases the risk of genitourinary infections, so attention is paid to hygiene."},
+  {"title": "Problem 8", "text": "A laboratory assistant was given two unlabeled bottles: one contains glucose solution and the other diluted honey (mainly fructose). Both gave a positive Trommer reaction.", "ask": "How can they be distinguished? Why is Trommer’s reaction positive for both?", "answer": "Glucose is an aldose and fructose a ketose, but in an alkaline medium fructose isomerizes to an aldose via an **enediol**, so both reduce Cu^2+^ — Trommer’s reaction does not distinguish them. **Seliwanoff’s reaction** is used to tell them apart: on heating with resorcinol and HCl, fructose (honey) gives a red color within 1 minute, while glucose does not. In addition, a glucose oxidase test strip is positive only for glucose."}
+ ],
+ "cards": [
+  {"front": "Seliwanoff’s reaction", "back": "With resorcinol + HCl, ketoses (fructose) quickly give a red color"},
+  {"front": "Maillard reaction", "back": "Non-enzymatic glycation: glucose + amino group → Schiff base → Amadori product → end products"},
+  {"front": "SGLT1 and SGLT2", "back": "Na^+^-glucose cotransporters: SGLT1 — in the intestine, SGLT2 — in the kidney (its inhibitors are used in diabetes)"},
+  {"front": "Criterion for diabetes mellitus", "back": "Fasting glucose ≥ 7.0 mmol/L or ≥ 11.1 mmol/L 2 hours after a load"},
+  {"front": "Glucose oxidase method", "back": "Glucose + O~2~ → gluconolactone + H~2~O~2~; H~2~O~2~ gives a color with peroxidase"},
+  {"front": "AB0 antigens", "back": "N-acetylgalactosamine (A) or galactose (B) added to the H chain"}
+ ]
+}

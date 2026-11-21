@@ -1,0 +1,382 @@
+{
+ "append": {
+  "1": [
+   {
+    "type": "h",
+    "text": "Conformations"
+   },
+   {
+    "type": "p",
+    "text": "The different spatial shapes a molecule takes as a result of rotation about a single σ-bond are called **conformations**; they are not isomers and interconvert rapidly. In ethane, **staggered** (atoms far apart, low energy) and **eclipsed** (atoms aligned, high energy) conformations are distinguished; they are drawn as Newman projections."
+   },
+   {
+    "type": "p",
+    "text": "The cyclohexane ring is not flat: its most stable shape is the **“chair”**, in which the angles are close to 109.5° and there is no strain; a less stable shape is the **“boat”**. In the chair conformation substituents are **equatorial** (in the plane of the ring, favorable) or **axial** (perpendicular to the plane). In β-D-glucopyranose all the large groups are equatorial — that is why glucose is the most abundant monosaccharide in nature."
+   }
+  ],
+  "4": [
+   {
+    "type": "p",
+    "text": "**Biotransformation of drugs and foreign substances.** In the liver **cytochrome P450** enzymes oxidize fat-soluble substances (hydroxylation, dealkylation) and introduce a polar group (phase I). Then glucuronic acid, sulfate or glutathione is attached to this group (phase II — conjugation), and the substance becomes water-soluble and is excreted in urine or bile. In some cases the oxidation product is more toxic than the parent compound."
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 0,
+   "title": "0. Classification and nomenclature of organic compounds",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "According to the **carbon skeleton**, organic compounds are divided into acyclic (open-chain), carbocyclic (the ring consists only of carbon atoms) and heterocyclic (the ring contains N, O or S atoms) compounds; according to the **functional group**, into classes (alcohols, aldehydes, acids, amines and others). Compounds with several identical functional groups are called **polyfunctional**, and those with different groups **heterofunctional** (topic 10)."
+    },
+    {
+     "type": "p",
+     "text": "Naming by **IUPAC substitutive nomenclature**: 1) the **principal functional group** is identified — it enters the name as a suffix; 2) the longest **parent chain** containing this group is chosen; 3) the chain is numbered so that the principal group gets the lowest number; 4) the remaining groups are written as prefixes in alphabetical order with their position numbers."
+    },
+    {
+     "type": "table",
+     "title": "Table 9.0. Seniority of functional groups and how they are expressed in the name (in decreasing order)",
+     "head": [
+      "Class",
+      "Group",
+      "Suffix",
+      "Prefix"
+     ],
+     "rows": [
+      [
+       "Carboxylic acids",
+       "−COOH",
+       "-oic acid",
+       "carboxy-"
+      ],
+      [
+       "Esters",
+       "−COOR",
+       "-oate",
+       "alkoxycarbonyl-"
+      ],
+      [
+       "Amides",
+       "−CONH~2~",
+       "-amide",
+       "carbamoyl-"
+      ],
+      [
+       "Aldehydes",
+       "−CHO",
+       "-al",
+       "oxo- (formyl-)"
+      ],
+      [
+       "Ketones",
+       ">C=O",
+       "-one",
+       "oxo-"
+      ],
+      [
+       "Alcohols, phenols",
+       "−OH",
+       "-ol",
+       "hydroxy-"
+      ],
+      [
+       "Thiols",
+       "−SH",
+       "-thiol",
+       "mercapto- (sulfanyl-)"
+      ],
+      [
+       "Amines",
+       "−NH~2~",
+       "-amine",
+       "amino-"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Examples:** CH~3~−CH(OH)−COOH — 2-hydroxypropanoic acid (lactic acid); HOOC−CH~2~−C(OH)(COOH)−CH~2~−COOH — 2-hydroxypropane-1,2,3-tricarboxylic acid (citric acid); CH~3~−CO−CH~2~−COOH — 3-oxobutanoic acid (acetoacetic acid); HO−CH~2~−CH~2~−NH~2~ — 2-aminoethanol (ethanolamine)."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Trivial** (historical) names are often used in medicine: lactic, citric and acetic acid, glycerol, urea. Knowing them together with the IUPAC names makes it easier to understand the structure of drugs and metabolites."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 2,
+   "title": "0. Mechanisms of organic reactions",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A covalent bond can break in two ways. In **homolytic cleavage** each atom keeps one electron and **free radicals** are formed (under high temperature, radiation or peroxides). In **heterolytic cleavage** the electron pair stays with one atom and ions are formed: an **electrophile** lacking an electron pair (E^+^ — H^+^, NO~2~^+^, a carbocation) and a **nucleophile** with a lone pair (Nu^−^ — OH^−^, Cl^−^, NH~3~, H~2~O)."
+    },
+    {
+     "type": "table",
+     "title": "Table 9.0. Main types of organic reactions",
+     "head": [
+      "Reaction type",
+      "Symbol",
+      "Example",
+      "Biological counterpart"
+     ],
+     "rows": [
+      [
+       "Radical substitution",
+       "S~R~",
+       "chlorination of methane",
+       "lipid peroxidation"
+      ],
+      [
+       "Electrophilic addition",
+       "A~E~",
+       "addition of HBr to ethylene",
+       "addition of water to fumarate (fumarase)"
+      ],
+      [
+       "Electrophilic substitution",
+       "S~E~",
+       "nitration of benzene",
+       "iodination of tyrosine (thyroxine synthesis)"
+      ],
+      [
+       "Nucleophilic substitution",
+       "S~N~",
+       "hydrolysis of a haloalkane",
+       "alkylation of DNA by alkylating drugs"
+      ],
+      [
+       "Nucleophilic addition",
+       "A~N~",
+       "addition of an alcohol to an aldehyde forming a hemiacetal",
+       "conversion of glucose to its ring form"
+      ],
+      [
+       "Elimination",
+       "E",
+       "dehydration of an alcohol",
+       "removal of water from citric acid to form aconitate"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The **S~N~2 mechanism** is one-step: the nucleophile attacks the carbon from the side opposite the leaving group and the configuration is inverted. The **S~N~1 mechanism** is two-step: first the leaving group departs to form a carbocation, then the nucleophile adds; racemization is observed at a chiral center."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Alkylating anticancer drugs** (cyclophosphamide, chlorambucil, busulfan) are strong electrophiles: they attach to the N7 atom of guanine in DNA by nucleophilic substitution and “cross-link” the strands. Rapidly dividing cells — tumor, bone marrow, hair follicles — are damaged most; hence their side effects are anemia, infections and hair loss."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: naming an organic compound by IUPAC rules",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Find all the functional groups in the molecule and determine the principal one from the table.",
+      "Choose the longest carbon chain containing the principal group and determine the parent name from the number of carbons (meth-, eth-, prop-, but-, pent-...).",
+      "Number the chain from the end that gives the principal group the lowest number (the carboxyl and aldehyde carbon is always number 1).",
+      "Write the double and triple bonds (-ene, -yne) and the other groups as prefixes with their position numbers in alphabetical order.",
+      "Add the principal group as a suffix, write the full name and check it by “drawing” the formula back from the name."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "How are organic compounds classified by carbon skeleton and by functional group?",
+  "Explain the procedure for naming by IUPAC substitutive nomenclature. Name lactic and citric acids.",
+  "What is the difference between homolytic and heterolytic cleavage? Give examples of electrophiles and nucleophiles.",
+  "What types of organic reactions are there? Give a biological example of each.",
+  "How do the S~N~1 and S~N~2 mechanisms differ? How do alkylating drugs act?",
+  "What is the chair conformation of cyclohexane? Why is β-D-glucose the most stable?"
+ ],
+ "quiz": [
+  {
+   "q": "Which functional group is the most senior in IUPAC nomenclature?",
+   "options": [
+    "Carboxyl (−COOH)",
+    "Hydroxyl (−OH)",
+    "Amino (−NH~2~)",
+    "Carbonyl (ketone)",
+    "Aldehyde (−CHO)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the IUPAC name of CH~3~−CH(OH)−COOH?",
+   "options": [
+    "2-Hydroxypropanoic acid",
+    "3-Hydroxypropanoic acid",
+    "2-Oxopropanoic acid",
+    "Propane-1,2-diol",
+    "Hydroxyethanoic acid"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is formed in homolytic cleavage?",
+   "options": [
+    "Free radicals",
+    "A cation and an anion",
+    "Only carbocations",
+    "Only carbanions",
+    "Molecular ions"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which particle is a nucleophile?",
+   "options": [
+    "OH^−^",
+    "H^+^",
+    "NO~2~^+^",
+    "A carbocation",
+    "AlCl~3~"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which reaction type does the conversion of glucose into its ring form belong?",
+   "options": [
+    "Nucleophilic addition (A~N~)",
+    "Electrophilic substitution (S~E~)",
+    "Radical substitution (S~R~)",
+    "Elimination (E)",
+    "Electrophilic addition (A~E~)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "By what mechanism does lipid peroxidation proceed?",
+   "options": [
+    "Radical",
+    "Electrophilic addition",
+    "Nucleophilic substitution",
+    "Nucleophilic addition",
+    "Ion exchange"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is observed at a chiral center in an S~N~2 reaction?",
+   "options": [
+    "Inversion of configuration",
+    "Racemization",
+    "The configuration is retained",
+    "Chirality is lost",
+    "A carbocation is formed"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "To which atom of DNA do alkylating anticancer drugs attach?",
+   "options": [
+    "The N7 atom of guanine",
+    "The C1 atom of deoxyribose",
+    "The phosphate oxygen",
+    "The methyl group of thymine",
+    "The C5 atom of cytosine"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the most stable conformation of cyclohexane?",
+   "options": [
+    "Chair",
+    "Boat",
+    "Flat",
+    "Half-chair",
+    "Twist-boat"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which enzyme system in the liver oxidizes drugs and introduces a polar group?",
+   "options": [
+    "Cytochrome P450",
+    "Cytochrome c",
+    "Lactate dehydrogenase",
+    "Carbonic anhydrase",
+    "Catalase"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Problem 4",
+   "text": "After physical exercise a substance with the structure CH~3~−CH(OH)−COOH accumulates in muscle.",
+   "ask": "Give the trivial and IUPAC names of the substance. How many stereoisomers can it exist as, and which one is formed in the body?",
+   "answer": "This is **lactic acid**, IUPAC name **2-hydroxypropanoic acid**. The C-2 atom has four different substituents (H, OH, CH~3~, COOH) — it is a **chiral center**, so there are two enantiomers: L- and D-lactic acid (2^1^ = 2). In human muscle lactate dehydrogenase forms only **L-lactate**; D-lactate is formed by some intestinal bacteria and can cause D-lactic acidosis in intestinal diseases."
+  },
+  {
+   "title": "Problem 5",
+   "text": "A patient with lymphoma is being treated with cyclophosphamide. Two weeks later the white blood cell count fell sharply and the patient’s hair began to fall out.",
+   "ask": "Explain the mechanism of action of the drug from the point of view of the type of organic reaction. Why do the side effects occur in these particular tissues?",
+   "answer": "Cyclophosphamide is activated in the liver to form a strong **electrophile** — an alkylating metabolite. It attaches to the nucleophilic **N7** atom of guanine in DNA by **nucleophilic substitution (S~N~)**; its two functional groups “cross-link” the two strands and replication stops. The drug acts most strongly on **rapidly dividing** cells whose DNA is replicated often: tumor, bone marrow (leukopenia), hair follicles (alopecia), intestinal epithelium."
+  },
+  {
+   "title": "Problem 6",
+   "text": "A 55-year-old man who smokes 2 packs of cigarettes a day has been diagnosed with lung cancer. Tobacco smoke contains benzo[a]pyrene — a fused aromatic hydrocarbon that is itself relatively chemically inert.",
+   "ask": "How does an inert hydrocarbon become a carcinogen? What type of reaction leads to DNA damage?",
+   "answer": "Benzo[a]pyrene is oxidized in the liver and lungs by **cytochrome P450** enzymes into a **diol epoxide** (metabolic activation). The strained epoxide ring is a strong **electrophile**: it reacts with the nucleophilic amino group of guanine in DNA by **nucleophilic substitution**, forming a covalent adduct. During replication a wrong nucleotide is inserted at this site — a mutation (often in the p53 gene) and a tumor develops. In addition, tobacco smoke induces P450, so some drugs are broken down faster in smokers."
+  },
+  {
+   "title": "Problem 7",
+   "text": "The task was to write all the structural isomers corresponding to the molecular formula C~4~H~10~O.",
+   "ask": "How many isomers are there? Classify and name them. Which one is chiral?",
+   "answer": "There are **7** in total. **Alcohols (4):** butan-1-ol, butan-2-ol, 2-methylpropan-1-ol, 2-methylpropan-2-ol. **Ethers (3):** diethyl ether, methyl propyl ether, methyl isopropyl ether. Chain, position and functional-group isomerism occur here. The C-2 atom of **butan-2-ol** has four different substituents (H, OH, CH~3~, C~2~H~5~) — it is chiral and exists as two enantiomers."
+  },
+  {
+   "title": "Problem 8",
+   "text": "The porphyrin ring of heme has 18 conjugated π-electrons, while cyclooctatetraene has 8 π-electrons.",
+   "ask": "According to Hückel’s rule, which system is aromatic? How does the aromaticity of porphyrin show itself in its properties?",
+   "answer": "Hückel’s rule: an aromatic system has **4n + 2** π-electrons. 18 = 4 · 4 + 2 (n = 4) — porphyrin is **aromatic**; 8 = 4n (n = 2) — cyclooctatetraene is not aromatic (it is not even flat). The large conjugated aromatic system of porphyrin makes it stable and causes strong absorption of visible light — that is why heme and blood are **red**, and chlorophyll is green."
+  }
+ ],
+ "cards": [
+  {
+   "front": "IUPAC principal group",
+   "back": "−COOH > −COOR > −CONH~2~ > −CHO > C=O > −OH > −SH > −NH~2~"
+  },
+  {
+   "front": "Electrophile and nucleophile",
+   "back": "Electrophile — electron-pair acceptor (H^+^, carbocation); nucleophile — electron-pair donor (OH^−^, NH~3~)"
+  },
+  {
+   "front": "S~N~2",
+   "back": "One-step nucleophilic substitution; the configuration is inverted"
+  },
+  {
+   "front": "Alkylating drugs",
+   "back": "Electrophiles; alkylate the N7 atom of DNA guanine and cross-link the strands"
+  },
+  {
+   "front": "Chair conformation",
+   "back": "The most stable shape of cyclohexane; large groups are favored in equatorial positions"
+  },
+  {
+   "front": "Cytochrome P450",
+   "back": "Oxidizes foreign substances in the liver (phase I), preparing them for conjugation"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Komplekslar barqarorligiga ta’sir qiluvchi omillar"},
+   {"type": "list", "items": [
+    "**Markaziy ion zaryadi va radiusi:** zaryad katta, radius kichik bo‘lsa, ligandni kuchliroq tortadi (Fe^3+^ komplekslari odatda Fe^2+^ nikidan barqaror).",
+    "**Ikki valentli 3d-metallar qatori (Irving–Uilyams qatori):** Mn^2+^ < Fe^2+^ < Co^2+^ < Ni^2+^ < Cu^2+^ > Zn^2+^ — mis komplekslari eng barqaror.",
+    "**Ligand tabiati:** donor atomining asosliligi va polidentatlik (xelat effekti) barqarorlikni oshiradi.",
+    "**Muhit pH i:** kislotali muhitda H^+^ ionlari ligandning donor atomlari uchun metall bilan raqobatlashadi va kompleks parchalanadi; ishqoriy muhitda esa metall gidroksid holida cho‘kishi mumkin."
+   ]},
+   {"type": "p", "text": "**Hisob misoli.** 0,1 M [Ag(NH~3~)~2~]^+^ va 1 M ortiqcha NH~3~ bo‘lgan eritmada erkin Ag^+^ konsentratsiyasi: [Ag^+^] = K~beq~·[kompleks] / [NH~3~]^2^ = 5,9·10^−8^ · 0,1 / 1 = 5,9·10^−9^ mol/l. Erkin metall ionining shunchalik kam qolishi komplekslarning biologik ahamiyatini tushuntiradi: organizmda “erkin” Cu^2+^ va Fe^3+^ deyarli bo‘lmaydi — ular oqsillar bilan bog‘langan."}
+  ],
+  "3": [
+   {"type": "h", "text": "Sianid bilan zaharlanish — kompleks hosil bo‘lishining klinik misoli"},
+   {"type": "p", "text": "Sianid ioni CN^−^ — juda kuchli ligand. U mitoxondriyadagi **sitoxromoksidazaning Fe^3+^ ioni** bilan barqaror kompleks hosil qilib, nafas zanjirini to‘xtatadi: to‘qimalar kislorodni ishlata olmaydi (gistotoksik gipoksiya), qon esa kislorodga to‘yingan bo‘lib qoladi — venoz qon ham och qizil."},
+   {"type": "table", "title": "Jadval 3.0. Sianid bilan zaharlanishda antidotlarning kimyoviy asoslari", "head": ["Antidot", "Reaksiya", "Natija"], "rows": [
+    ["Natriy nitrit, amilnitrit", "Hb(Fe^2+^) → metgemoglobin (Fe^3+^)", "metgemoglobin CN^−^ ni sitoxromoksidazadan tortib olib, sianmetgemoglobin hosil qiladi"],
+    ["Natriy tiosulfat", "CN^−^ + S~2~O~3~^2−^ → SCN^−^ + SO~3~^2−^ (rodanaza fermenti)", "kam zaharli tiotsianat siydik bilan chiqadi"],
+    ["Gidroksokobalamin", "Co^3+^–OH + CN^−^ → Co^3+^–CN", "siankobalamin (vitamin B~12~) hosil bo‘lib, siydik bilan chiqadi"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Metallofermentlarda metall oqsil bilan mustahkam bog‘langan va ajratilsa ferment faolligini yo‘qotadi (karboangidraza — Zn, sitoxromoksidaza — Fe va Cu). **Metall bilan faollanadigan fermentlarda** esa metall bo‘sh bog‘langan, eritmadan qo‘shilganda faollikni oshiradi (kinazalar uchun Mg^2+^)."}]}
+  ],
+  "5": [
+   {"type": "h", "text": "Suvning qattiqligini aniqlash"},
+   {"type": "p", "text": "100 ml suvga 5 ml ammiakli bufer (pH ≈ 10) va eriokrom qora T qo‘shiladi — Ca^2+^ va Mg^2+^ indikator bilan **vino-qizil** rang beradi. Trilon B bilan titrlanganda metallar indikatordan ajralib, rang **ko‘k**ka o‘tadi. Qattiqlik: Q = C~n~(trilon B)·V(trilon B)·1000 / V(suv), mmol-ekv/l."},
+   {"type": "table", "title": "Jadval 3.0. Kompleksonometriyada ishlatiladigan metallindikatorlar", "head": ["Indikator", "pH", "Aniqlanadigan ion", "Rang o‘zgarishi"], "rows": [
+    ["Eriokrom qora T", "≈ 10", "Ca^2+^ + Mg^2+^ (umumiy qattiqlik), Zn^2+^", "vino-qizil → ko‘k"],
+    ["Murreksid", "12–13", "Ca^2+^", "pushti → binafsha"],
+    ["Ksilenol to‘q sarig‘i", "5–6", "Zn^2+^, Pb^2+^, Bi^3+^", "qizil-binafsha → sariq"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Kompleks hosil qilish laboratoriya amaliyotida ham ishlatiladi: umumiy qon tahlili uchun probirkalarga **K~2~-EDTA**, ivish tekshiruvlari va qon quyish uchun **natriy sitrat** qo‘shiladi. Ikkalasi ham Ca^2+^ ni bog‘lab, qon ivishini to‘xtatadi (Ca^2+^ — ivish omili IV)."}]}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Kompleks birikmalarning izomeriyasi", "blocks": [
+   {"type": "p", "text": "Tarkibi bir xil, ammo ichki sferaning tuzilishi yoki ligandlarning fazoviy joylashuvi bilan farq qiladigan komplekslar **izomerlar** deyiladi. Izomerlar xossalari, jumladan biologik faolligi, keskin farq qilishi mumkin."},
+   {"type": "table", "title": "Jadval 3.0. Kompleks birikmalar izomeriyasining turlari", "head": ["Izomeriya turi", "Mohiyati", "Misol"], "rows": [
+    ["Geometrik (sis-trans)", "bir xil ligandlar yonma-yon (sis) yoki qarama-qarshi (trans) joylashgan", "sis- va trans-[Pt(NH~3~)~2~Cl~2~]"],
+    ["Optik", "kompleks va uning ko‘zgudagi aksi ustma-ust tushmaydi", "[Co(en)~3~]^3+^ (en — etilendiamin)"],
+    ["Ionizatsion", "ion ichki va tashqi sfera o‘rtasida almashinadi", "[Co(NH~3~)~5~Br]SO~4~ va [Co(NH~3~)~5~SO~4~]Br"],
+    ["Gidrat", "suv molekulasi ichki yoki tashqi sferada", "[Cr(H~2~O)~6~]Cl~3~ (binafsha) va [Cr(H~2~O)~5~Cl]Cl~2~·H~2~O (yashil)"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Faqat **sis**-[Pt(NH~3~)~2~Cl~2~] (sisplatin) o‘smaga qarshi faol: yonma-yon turgan ikki xlorid o‘rniga DNK ning qo‘shni ikki guanini bog‘lanib, zanjirni bukadi. **Transplatin** bunday ko‘prik hosil qila olmaydi va dori sifatida yaroqsiz. Yangi avlod platina dorilari — **karboplatin** (nefrotoksikligi kam) va **oksaliplatin** (yo‘g‘on ichak saratonida)."}]},
+   {"type": "p", "text": "**Verner tajribasi** ichki va tashqi sferani ajratishga imkon bergan: CoCl~3~·5NH~3~ eritmasiga AgNO~3~ qo‘shilganda xloridning faqat uchdan ikki qismi AgCl ga cho‘kadi. Demak, uchinchi xlorid kobalt bilan bevosita bog‘langan va formula [Co(NH~3~)~5~Cl]Cl~2~."}
+  ]},
+  {"after": 4, "title": "0. Kompleks birikmalar dori vositalari va diagnostikada", "blocks": [
+   {"type": "p", "text": "Kompleks hosil qilish tibbiyotda nafaqat zaharli metallarni chiqarishda, balki metallni kerakli joyga yetkazish, uni zararsizlantirish va sekin ajratish uchun ham ishlatiladi."},
+   {"type": "table", "title": "Jadval 3.0. Tibbiyotda ishlatiladigan kompleks birikmalar", "head": ["Preparat", "Markaziy atom", "Qo‘llanishi"], "rows": [
+    ["Sisplatin, karboplatin, oksaliplatin", "Pt^2+^", "o‘smaga qarshi kimyoterapiya"],
+    ["Gadoliniy kontrast moddalari (gadoterat, gadobutrol)", "Gd^3+^", "MRT da kontrastlash"],
+    ["^99m^Tc komplekslari (pirofosfat, MAG3, sestamibi)", "Tc", "suyak, buyrak, yurak ssintigrafiyasi"],
+    ["Temir saxaroza, temir karboksimaltoza", "Fe^3+^", "temir tanqisligini vena ichiga davolash"],
+    ["Vismut subsitrat", "Bi^3+^", "me’da yarasi, Helicobacter pylori ga qarshi"],
+    ["Natriy nitroprussid Na~2~[Fe(CN)~5~NO]", "Fe^2+^", "gipertonik kriz (NO ajratib, tomirlarni kengaytiradi)"],
+    ["Rux-insulin suspenziyasi", "Zn^2+^", "insulinning sekin so‘rilishi (uzaytirilgan ta’sir)"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Erkin Gd^3+^** juda zaharli: radiusi Ca^2+^ ga yaqin bo‘lgani uchun kalsiy kanallari va fermentlarini bloklaydi. Shuning uchun u faqat juda barqaror xelat holida yuboriladi. Og‘ir buyrak yetishmovchiligida preparat organizmda uzoq qolib, qisman parchalanadi va **nefrogen sistemali fibroz** xavfi paydo bo‘ladi — bunday bemorlarga eng barqaror makrotsiklik preparatlar tanlanadi."}]},
+   {"type": "p", "text": "**Natriy nitroprussid** parchalanganda NO bilan birga 5 ta CN^−^ ajraladi. Uzoq yoki yuqori dozada yuborilganda sianid to‘planishi mumkin, shuning uchun u qisqa muddat ishlatiladi va kerak bo‘lsa natriy tiosulfat bilan birga beriladi."}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: suvning umumiy qattiqligini kompleksonometrik aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Konussimon kolbaga 100 ml tekshiriladigan suvni o‘lchov silindri bilan quying.",
+    "5 ml ammiakli bufer (pH ≈ 10) va bir chimdim eriokrom qora T qo‘shing — eritma vino-qizil rangga kiradi.",
+    "Byuretkadan 0,05 n. trilon B eritmasi bilan rang toza ko‘k tusga o‘tguncha titrlang; oxirida tomchilarni sekin qo‘shing.",
+    "Titrlashni ikki marta takrorlang va o‘rtacha hajmni oling.",
+    "Qattiqlikni hisoblang: Q = C~n~·V·1000 / 100 (mmol-ekv/l) va me’yor (≤ 7 mmol-ekv/l) bilan solishtiring."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Kompleks birikmalarda qanday izomeriya turlari bor? Nima uchun faqat sisplatin o‘smaga qarshi faol?",
+  "Komplekslarning barqarorligiga qaysi omillar ta’sir qiladi? Irving–Uilyams qatorini ayting.",
+  "Sianid bilan zaharlanish mexanizmini va antidotlarning kimyoviy asosini tushuntiring.",
+  "Metallofermentlar metall bilan faollanadigan fermentlardan nimasi bilan farq qiladi?",
+  "Gadoliniy kontrast moddalari nima uchun faqat xelat holida yuboriladi?",
+  "Qon tahlili uchun probirkalarga EDTA va sitrat nima maqsadda qo‘shiladi?"
+ ],
+ "quiz": [
+  {"q": "Sisplatin qaysi izomer hisoblanadi?", "options": ["Geometrik sis-izomer", "Trans-izomer", "Optik izomer", "Ionizatsion izomer", "Gidrat izomer"], "answer": 0},
+  {"q": "Irving–Uilyams qatoriga ko‘ra eng barqaror komplekslarni qaysi ion hosil qiladi?", "options": ["Cu^2+^", "Mn^2+^", "Fe^2+^", "Zn^2+^", "Co^2+^"], "answer": 0},
+  {"q": "Sianid ioni qaysi fermentni bloklaydi?", "options": ["Sitoxromoksidazani", "Katalazani", "Karboangidrazani", "Alkogoldegidrogenazani", "Ksantinoksidazani"], "answer": 0},
+  {"q": "Gidroksokobalamin sianid bilan reaksiyaga kirishib nima hosil qiladi?", "options": ["Siankobalamin", "Metgemoglobin", "Tiotsianat", "Karboksigemoglobin", "Sianmetgemoglobin"], "answer": 0},
+  {"q": "MRT kontrast moddalarida qaysi metall ishlatiladi?", "options": ["Gadoliniy", "Platina", "Texnetsiy", "Vismut", "Rux"], "answer": 0},
+  {"q": "Natriy nitroprussid organizmda parchalanganda nima ajraladi?", "options": ["NO va CN^−^", "CO va O~2~", "H~2~S", "NH~3~ va Cl^−^", "Faqat Fe^2+^"], "answer": 0},
+  {"q": "1 mol [Co(NH~3~)~5~Cl]Cl~2~ eritmasiga mo‘l AgNO~3~ qo‘shilsa, necha mol AgCl cho‘kmaga tushadi?", "options": ["2", "3", "1", "0", "5"], "answer": 0},
+  {"q": "Suvning umumiy qattiqligini aniqlashda qaysi indikator va pH ishlatiladi?", "options": ["Eriokrom qora T, pH ≈ 10", "Murreksid, pH 12–13", "Fenolftalein, pH 8–10", "Metiloranj, pH 3–4", "Lakmus, pH 7"], "answer": 0},
+  {"q": "Kuchli kislotali muhitda kompleksning barqarorligi qanday o‘zgaradi?", "options": ["Kamayadi — H^+^ ligand uchun metall bilan raqobatlashadi", "Oshadi", "O‘zgarmaydi", "Faqat rangi o‘zgaradi", "Markaziy ion zaryadi ortadi"], "answer": 0},
+  {"q": "Qon quyish uchun konservantda Ca^2+^ ni bog‘lab, ivishni to‘xtatadigan modda qaysi?", "options": ["Natriy sitrat", "Natriy xlorid", "Glyukoza", "Kaliy xlorid", "Natriy gidrokarbonat"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Laboratoriya xodimi sianid tuzlari bilan ishlash vaqtida to‘satdan hushini yo‘qotdi. Teri qizg‘ish, venoz qon arterial qon kabi och qizil, nafasdan achchiq bodom hidi keladi.", "ask": "Zaharlanish mexanizmini kompleks birikmalar nuqtai nazaridan tushuntiring. Qaysi antidotlar ishlatiladi va ularning kimyoviy asosi qanday?", "answer": "CN^−^ sitoxromoksidazaning **Fe^3+^** ioni bilan barqaror kompleks hosil qilib, nafas zanjirini to‘xtatadi — to‘qimalar O~2~ ni ishlata olmaydi, shuning uchun venoz qon kislorodga to‘yingan va och qizil. Antidotlar: 1) **natriy nitrit** (yoki amilnitrit) gemoglobinning bir qismini metgemoglobinga (Fe^3+^) aylantiradi — u CN^−^ ni fermentdan tortib olib, sianmetgemoglobin hosil qiladi; 2) **natriy tiosulfat** rodanaza ishtirokida CN^−^ ni kam zaharli SCN^−^ ga aylantiradi; 3) **gidroksokobalamin** CN^−^ ni bog‘lab, siydik bilan chiqadigan siankobalaminni hosil qiladi. Bundan tashqari 100 % kislorod beriladi."},
+  {"title": "Masala 5", "text": "Suv qattiqligini aniqlash uchun 100 ml suv ammiakli bufer va eriokrom qora T ishtirokida 0,05 n. trilon B bilan titrlandi; 12,0 ml sarflandi.", "ask": "Suvning umumiy qattiqligini hisoblang va baholang.", "answer": "Q = 0,05 · 12,0 · 1000 / 100 = **6 mmol-ekv/l**. Ichimlik suvi me’yori ≤ 7 mmol-ekv/l — suv **o‘rtacha qattiq**, ichishga yaroqli. Titrlash oxirida rang vino-qizildan ko‘kka o‘tadi, chunki trilon B Ca^2+^ va Mg^2+^ ni indikator kompleksidan tortib oladi."},
+  {"title": "Masala 6", "text": "Eritmada 0,1 mol/l [Ag(NH~3~)~2~]^+^ va 1 mol/l ortiqcha NH~3~ bor (K~beq~ = 5,9·10^−8^). Unga [I^−^] = 0,01 mol/l bo‘lguncha KI qo‘shildi (EK(AgI) = 8,3·10^−17^).", "ask": "Erkin Ag^+^ konsentratsiyasini hisoblang. AgI cho‘kmasi tushadimi?", "answer": "[Ag^+^] = 5,9·10^−8^ · 0,1 / 1^2^ = **5,9·10^−9^ mol/l**. Ionlar ko‘paytmasi: [Ag^+^]·[I^−^] = 5,9·10^−9^ · 0,01 = 5,9·10^−11^ — bu EK(AgI) = 8,3·10^−17^ dan ancha katta, shuning uchun **AgI cho‘kmaga tushadi** va kompleks parchalanadi. Kompleks ammiakda AgCl ni eritadi, lekin juda kam eriydigan AgI ni “ushlab tura olmaydi”."},
+  {"title": "Masala 7", "text": "Og‘ir surunkali buyrak yetishmovchiligi bilan og‘rigan bemorga miya o‘smasini aniqlash uchun kontrastli MRT kerak.", "ask": "Gadoliniy kontrast moddasini yuborishda qanday xavf bor? Uning kimyoviy sababi nimada va xavfni qanday kamaytirish mumkin?", "answer": "Gd^3+^ preparati buyrak orqali chiqadi; buyrak yetishmovchiligida u organizmda uzoq qoladi va xelatning bir qismi parchalanib, **erkin Gd^3+^** ajraladi. Erkin Gd^3+^ radiusi Ca^2+^ ga yaqin bo‘lgani uchun kalsiyga bog‘liq jarayonlarni buzadi va to‘qimalarda to‘planib, **nefrogen sistemali fibroz** chaqirishi mumkin. Xavfni kamaytirish: eng barqaror **makrotsiklik** preparatni minimal dozada tanlash, iloji bo‘lsa kontrastsiz usuldan foydalanish va dializdagi bemorlarda tekshiruvdan keyin dializni tezroq o‘tkazish."},
+  {"title": "Masala 8", "text": "Talabaga CoCl~3~·5NH~3~ tarkibli binafsha rangli birikma berildi. Uning 0,01 mol eritmasiga mo‘l AgNO~3~ qo‘shilganda 0,02 mol AgCl cho‘kdi.", "ask": "Birikmaning koordinatsion formulasini yozing, markaziy ion zaryadi va koordinatsion sonini aniqlang, nomini ayting.", "answer": "Har mol birikmadan 2 mol AgCl cho‘kdi — demak, tashqi sferada **ikkita** Cl^−^, uchinchisi ichki sferada. Formula: **[Co(NH~3~)~5~Cl]Cl~2~**. Markaziy ion **Co^3+^** (x + 0 − 1 = +2, x = +3), koordinatsion son **6** (5 ta NH~3~ va 1 ta Cl^−^), shakli oktaedr. Nomi — xloropentaamminkobalt(III) xlorid."}
+ ],
+ "cards": [
+  {"front": "Sis-trans izomeriya", "back": "Bir xil ligandlar yonma-yon (sis) yoki qarama-qarshi (trans); faqat sisplatin o‘smaga qarshi faol"},
+  {"front": "Irving–Uilyams qatori", "back": "Mn^2+^ < Fe^2+^ < Co^2+^ < Ni^2+^ < Cu^2+^ > Zn^2+^ — komplekslar barqarorligi"},
+  {"front": "Sianid antidotlari", "back": "Natriy nitrit (metgemoglobin), natriy tiosulfat (SCN^−^), gidroksokobalamin (siankobalamin)"},
+  {"front": "Gadoliniy kontrastlari", "back": "Gd^3+^ ning barqaror xelatlari; erkin Gd^3+^ zaharli, buyrak yetishmovchiligida ehtiyot bo‘lish kerak"},
+  {"front": "EDTA va sitrat probirkalari", "back": "Ca^2+^ ni bog‘lab, qon ivishini to‘xtatadi"}
+ ]
+}

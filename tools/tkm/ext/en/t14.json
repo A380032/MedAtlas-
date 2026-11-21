@@ -1,0 +1,87 @@
+{
+ "append": {
+  "4": [
+   {"type": "p", "text": "**Other forms of DNA and supercoiling.** Besides the B form, a shorter and wider **A form** occurs in a less hydrated medium (RNA–DNA hybrids and double-stranded RNA also have this form), and a left-handed **Z form** occurs in G–C-rich sequences. In the cell, long DNA is further twisted (**supercoiled**) and compacted; the degree of twisting is controlled by **topoisomerases**, which temporarily cut and rejoin the strands."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Topoisomerases are important drug targets: **fluoroquinolones** block bacterial DNA gyrase (a type II topoisomerase) and topoisomerase IV; the anticancer **anthracyclines** (doxorubicin) and **etoposide** inhibit human topoisomerase II, and **irinotecan** inhibits topoisomerase I — irreparable breaks remain in the DNA."}]}
+  ]
+ },
+ "insert": [
+  {"after": 5, "title": "0. Protein biosynthesis. The genetic code", "blocks": [
+   {"type": "p", "text": "Hereditary information is expressed in the direction **DNA → RNA → protein** (the central dogma of molecular biology). In **transcription**, RNA polymerase synthesizes RNA complementary to one (template) strand of DNA in the 5′→3′ direction; synthesis starts at a **promoter**. In eukaryotes the primary transcript undergoes **processing**: a “cap” (7-methylguanosine) is added to the 5′ end and a poly(A) tail to the 3′ end, and in **splicing** the introns are cut out and the exons joined."},
+   {"type": "p", "text": "**Translation** takes place on ribosomes: every three nucleotides of mRNA — a **codon** — specify one amino acid. Amino acids are brought to the ribosome by **tRNA**; the **anticodon** of tRNA pairs complementarily with the mRNA codon. The peptidyl transferase center of the ribosome (rRNA — a ribozyme) forms the peptide bond."},
+   {"type": "table", "title": "Table 14.0. Properties of the genetic code", "head": ["Property", "Essence"], "rows": [
+    ["Triplet nature", "each amino acid is specified by three nucleotides (a codon); 4^3^ = 64 codons"],
+    ["Degeneracy (redundancy)", "many amino acids are specified by several codons (61 sense codons — 20 amino acids)"],
+    ["Unambiguity", "each codon specifies only one amino acid"],
+    ["Continuity and non-overlapping", "codons are read one after another without gaps; one nucleotide does not belong to two codons"],
+    ["Universality", "almost the same in all organisms (some exceptions in mitochondria)"],
+    ["Start and stop codons", "AUG — start (methionine); UAA, UAG, UGA — stop codons"]
+   ]},
+   {"type": "table", "title": "Table 14.0. Drugs and poisons that block protein biosynthesis", "head": ["Substance", "Target", "Use or significance"], "rows": [
+    ["Rifampicin", "bacterial RNA polymerase", "antituberculosis drug"],
+    ["α-Amanitin", "eukaryotic RNA polymerase II", "toxin of the death cap mushroom — liver necrosis"],
+    ["Tetracyclines, aminoglycosides", "30S subunit of the bacterial ribosome", "antibiotics"],
+    ["Macrolides (erythromycin), chloramphenicol", "50S subunit of the bacterial ribosome", "antibiotics"],
+    ["Diphtheria toxin", "eukaryotic elongation factor eEF2", "protein synthesis stops and the cell dies"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The selective action of antibiotics is based on the difference in structure between bacterial (70S: 30S + 50S) and eukaryotic (80S: 40S + 60S) ribosomes. Mitochondrial ribosomes resemble bacterial ones — some side effects of antibiotics (for example, the effect of chloramphenicol on bone marrow) are related to this."}]}
+  ]},
+  {"after": 6, "title": "0. Metabolism of purine and pyrimidine nucleotides", "blocks": [
+   {"type": "p", "text": "Nucleotides are formed in two ways. In **de novo synthesis** the rings are built from simple substances: the purine ring is assembled on activated ribose 5-phosphate (**PRPP**) from glycine, glutamine, aspartate, CO~2~ and folate derivatives, while the pyrimidine ring is first assembled separately (from carbamoyl phosphate and aspartate) and then attached to PRPP. In the **salvage pathway** ready-made bases released from degraded nucleotides are converted back into nucleotides with PRPP (for example, by hypoxanthine-guanine phosphoribosyltransferase — HGPRT)."},
+   {"type": "p", "text": "**Purine catabolism:** AMP → IMP → inosine → hypoxanthine → xanthine → **uric acid** (the last two steps are catalyzed by xanthine oxidase). Humans lack the enzyme uricase, so uric acid is the end product. **Pyrimidines**, by contrast, are broken down to the water-soluble β-alanine, β-aminoisobutyric acid, CO~2~ and NH~3~ — they do not accumulate and cause disease."},
+   {"type": "table", "title": "Table 14.0. Disorders of uric acid metabolism", "head": ["Condition", "Essence", "Signs and treatment"], "rows": [
+    ["Hyperuricemia", "blood uric acid > 420 µmol/L (men), > 360 µmol/L (women)", "often asymptomatic; risk of gout and uric acid stones"],
+    ["Gout", "sodium urate crystals accumulate in the joints", "acute inflammation of the big toe joint; colchicine and NSAIDs during an attack, long-term allopurinol or febuxostat"],
+    ["Tumor lysis syndrome", "many cells die during chemotherapy and their nucleic acids are broken down", "acute hyperuricemia, renal failure; prevention — fluids, allopurinol, rasburicase"],
+    ["Lesch–Nyhan syndrome", "inherited deficiency of HGPRT — purines are not salvaged", "hyperuricemia, intellectual disability, self-biting (in boys)"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**Allopurinol** blocks xanthine oxidase. This enzyme also breaks down the anticancer and immunosuppressive drugs **6-mercaptopurine** and **azathioprine**. If they are given together with allopurinol without reducing their dose, they accumulate in the blood and severely suppress the bone marrow."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: determining a peptide sequence from mRNA", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "If the DNA template strand is given, write the mRNA that is complementary and antiparallel to it (U instead of T).",
+    "Read the mRNA from the 5′ end and find the first **AUG** start codon.",
+    "From this point divide the sequence into codons of three.",
+    "Using the genetic code table, write the amino acid corresponding to each codon.",
+    "Stop when you reach the first stop codon (UAA, UAG, UGA) and write the peptide from the N-terminus to the C-terminus."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "How does transcription proceed? What does the processing of eukaryotic mRNA consist of?",
+  "List the main properties of the genetic code. Which are the start and stop codons?",
+  "What roles do tRNA and the ribosome play in translation?",
+  "What is the selective action of antibiotics on bacterial protein synthesis based on? Give examples.",
+  "How are purine nucleotides synthesized and broken down? Why is uric acid the end product in humans?",
+  "Explain the biochemical basis of gout and tumor lysis syndrome. How does allopurinol act?"
+ ],
+ "quiz": [
+  {"q": "How many codons are there in the genetic code?", "options": ["64", "20", "61", "4", "32"], "answer": 0},
+  {"q": "Which codon is the start codon?", "options": ["AUG", "UAA", "UGA", "UAG", "GUG"], "answer": 0},
+  {"q": "Which property of the genetic code is reflected in many amino acids being specified by several codons?", "options": ["Degeneracy (redundancy)", "Universality", "Unambiguity", "Triplet nature", "Non-overlapping"], "answer": 0},
+  {"q": "What is the cutting out of introns from eukaryotic pre-mRNA called?", "options": ["Splicing", "Replication", "Translation", "Repair", "Recombination"], "answer": 0},
+  {"q": "Which enzyme is blocked by α-amanitin, the toxin of the death cap mushroom?", "options": ["RNA polymerase II", "DNA polymerase", "The 50S ribosome", "Topoisomerase", "Ligase"], "answer": 0},
+  {"q": "Which ribosomal subunit do tetracyclines act on?", "options": ["Bacterial 30S", "Bacterial 50S", "Eukaryotic 60S", "Eukaryotic 40S", "Mitochondrial RNA polymerase"], "answer": 0},
+  {"q": "Which enzyme do fluoroquinolones block?", "options": ["DNA gyrase (topoisomerase II)", "RNA polymerase", "Reverse transcriptase", "Peptidyl transferase", "β-Lactamase"], "answer": 0},
+  {"q": "What is the end product of purine catabolism in humans?", "options": ["Uric acid", "Urea", "β-Alanine", "Allantoin", "Creatinine"], "answer": 0},
+  {"q": "Which enzyme is deficient in Lesch–Nyhan syndrome?", "options": ["Hypoxanthine-guanine phosphoribosyltransferase", "Xanthine oxidase", "Adenosine deaminase", "Uricase", "Thymidylate synthase"], "answer": 0},
+  {"q": "The dose of which drug must be reduced when it is given together with allopurinol?", "options": ["Azathioprine", "Paracetamol", "Amoxicillin", "Furosemide", "Metformin"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "Members of a family who ate a dish made from mushrooms picked in the forest developed severe vomiting and diarrhea 8–12 hours later; after 2–3 days jaundice appeared and the liver enzymes rose sharply.", "ask": "Poisoning with which toxin is suspected? What is its molecular mechanism of action and why is the liver specifically damaged?", "answer": "The clinical picture (late onset, liver failure after a “false recovery”) is typical of the **death cap** toxin **α-amanitin**. It strongly blocks eukaryotic **RNA polymerase II** — mRNA synthesis stops, and the cell, unable to make new proteins, dies. The toxin is absorbed from the intestine and reaches the liver first, where hepatocytes actively take it up; it is excreted in bile and absorbed again (enterohepatic circulation) — that is why the liver is damaged most. Treatment: repeated activated charcoal, silibinin, and in severe cases liver transplantation."},
+  {"title": "Problem 5", "text": "A patient taking azathioprine after a kidney transplant had an attack of gout and was prescribed allopurinol. Two weeks later the white cells and platelets fell sharply.", "ask": "Explain the biochemical cause of the damage to the blood system.", "answer": "Azathioprine is converted in the body into **6-mercaptopurine**; its main route of inactivation is oxidation by **xanthine oxidase**. **Allopurinol** blocks this enzyme — 6-mercaptopurine is not broken down, accumulates in the blood and excessively suppresses purine synthesis in bone marrow cells: **leukopenia and thrombocytopenia** develop. In this combination the azathioprine dose is reduced 3–4 times or another drug is chosen."},
+  {"title": "Problem 6", "text": "An mRNA fragment: 5′-AUG GCU UGG AAA UAG-3′. As a result of a mutation the second G nucleotide in the UGG codon was replaced by A.", "ask": "What peptide is formed from the normal and the mutant mRNA? What type of mutation is this?", "answer": "Normally: AUG — Met, GCU — Ala, UGG — Trp, AAA — Lys, UAG — stop. Peptide: **Met–Ala–Trp–Lys**. In the mutant UGG → **UAG** — a stop codon; the peptide consists of **Met–Ala** and is terminated prematurely. This is a **nonsense mutation**: a codon specifying an amino acid becomes a stop codon and the protein is truncated and usually inactive (for example, some β-thalassemias and Duchenne muscular dystrophy are associated with such mutations)."},
+  {"title": "Problem 7", "text": "Tetracycline was going to be prescribed to an 8-year-old child for pneumonia, but the pediatrician chose another antibiotic.", "ask": "What is the mechanism of action of tetracycline on bacteria? Why is it not recommended for children under 8?", "answer": "Tetracycline binds to the **30S subunit** of the bacterial ribosome and blocks the binding of aminoacyl-tRNA to the ribosome — protein synthesis stops (bacteriostatic effect). It has little effect on the eukaryotic 80S ribosome. In children, however, tetracycline forms a **chelate with Ca^2+^** in growing teeth and bone and accumulates there: the teeth become permanently stained yellow-brown, enamel hypoplasia and temporary slowing of bone growth occur. That is why it is not used in children under 8 or in pregnancy."},
+  {"title": "Problem 8", "text": "A 1-year-old boy has delayed development and involuntary movements, and later began to injure his lips and fingers by biting; orange “sand” crystals are seen in his diapers.", "ask": "Which inherited disease is this? Explain its biochemical basis.", "answer": "This is **Lesch–Nyhan syndrome** — an X-linked deficiency of **HGPRT** (hypoxanthine-guanine phosphoribosyltransferase). Purine bases are not converted into nucleotides by the salvage pathway and are broken down to **uric acid**; in addition, unused PRPP accumulates and stimulates de novo purine synthesis. The result is marked **hyperuricemia** — the orange crystals in the diapers are urate, later gout and kidney stones follow. The mechanism of the neurological disturbances is not fully understood. Allopurinol lowers uric acid but does not affect the neurological signs."}
+ ],
+ "cards": [
+  {"front": "Transcription and translation", "back": "DNA → mRNA (RNA polymerase); mRNA → protein (ribosome, tRNA)"},
+  {"front": "Genetic code", "back": "Triplet, degenerate, unambiguous, continuous, universal; AUG — start; UAA, UAG, UGA — stop"},
+  {"front": "Splicing", "back": "Cutting introns out of pre-mRNA and joining the exons"},
+  {"front": "Antibiotics acting on the ribosome", "back": "30S: tetracyclines, aminoglycosides; 50S: macrolides, chloramphenicol"},
+  {"front": "Purine catabolism", "back": "Hypoxanthine → xanthine → uric acid (xanthine oxidase); blocked by allopurinol"},
+  {"front": "Lesch–Nyhan syndrome", "back": "HGPRT deficiency: hyperuricemia, neurological disorders, self-injury"}
+ ]
+}

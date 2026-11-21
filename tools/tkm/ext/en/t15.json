@@ -1,0 +1,380 @@
+{
+ "append": {
+  "6": [
+   {
+    "type": "h",
+    "text": "Cholesterol balance and familial hypercholesterolemia"
+   },
+   {
+    "type": "p",
+    "text": "The adult body synthesizes ≈ 1 g of cholesterol a day (mainly in the liver) and takes in 0.3–0.5 g with food. The steran ring is not broken down in the body: cholesterol is excreted with bile into the intestine mainly as **bile acids** and unchanged; ≈ 95 % of bile acids are reabsorbed in the terminal small intestine and return to the liver (**enterohepatic circulation**)."
+   },
+   {
+    "type": "p",
+    "text": "Cells take up LDL by endocytosis through special **LDL receptors**. When cholesterol in the cell increases, the synthesis of HMG-CoA reductase and the number of receptors decrease — this is **negative feedback**. Statins reduce cellular cholesterol and increase the number of LDL receptors in the liver — more LDL is taken up from the blood."
+   },
+   {
+    "type": "box",
+    "kind": "klinik",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Familial hypercholesterolemia** is a mutation of the LDL receptor gene: LDL is not removed from the blood and its cholesterol rises sharply (5–10 in heterozygotes, > 13 mmol/L in homozygotes). **Xanthomas** in tendons, xanthelasmas around the eyes and myocardial infarction at a young age (in homozygotes even in childhood) develop. Treatment: statins, ezetimibe (blocks intestinal cholesterol absorption), PCSK9 inhibitors."
+     }
+    ]
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 2,
+   "title": "0. Digestion of lipids and lipoproteins",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Because fats are insoluble in water, their digestion and transport require special mechanisms. In the small intestine **bile acids** emulsify fats, and pancreatic **lipase** (with the help of colipase) breaks triglycerides down into 2-monoacylglycerol and fatty acids. The digestion products form **mixed micelles** with bile acids and reach the enterocytes; there triglycerides are resynthesized and released into the lymph in **chylomicrons**."
+    },
+    {
+     "type": "p",
+     "text": "In the blood lipids are transported as **lipoproteins**: in the center of the spherical particle are the nonpolar triglycerides and cholesterol esters, and on the surface are phospholipids, free cholesterol and proteins — **apolipoproteins**. The greater the lipid fraction, the lower the density."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.0. Blood lipoproteins",
+     "head": [
+      "Lipoprotein",
+      "Main lipid",
+      "Main apoprotein",
+      "Function"
+     ],
+     "rows": [
+      [
+       "Chylomicrons (largest, lowest density)",
+       "dietary triglycerides (≈ 85 %)",
+       "apo B-48, C-II, E",
+       "transport dietary fats from the intestine to tissues"
+      ],
+      [
+       "VLDL (very low density)",
+       "triglycerides synthesized in the liver",
+       "apo B-100, C-II, E",
+       "transport endogenous triglycerides to tissues"
+      ],
+      [
+       "LDL (low density)",
+       "cholesterol esters",
+       "apo B-100",
+       "deliver cholesterol to tissues — “bad cholesterol”"
+      ],
+      [
+       "HDL (high density)",
+       "phospholipids, cholesterol",
+       "apo A-I",
+       "return excess cholesterol from tissues to the liver — “good cholesterol”"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Lipoprotein lipase** on the vascular endothelium (activated by apo C-II) breaks down the triglycerides of chylomicrons and VLDL; the fatty acids pass into muscle and adipose tissue, and VLDL is gradually converted into LDL. LDL enters the vessel wall and is oxidized; macrophages engulf it and become “foam cells” — the beginning of an **atherosclerotic plaque**."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "LDL cholesterol is often calculated with the **Friedewald formula** (in mmol/L): LDL = total cholesterol − HDL − triglycerides / 2.2 (when triglycerides < 4.5 mmol/L). **Atherogenic index** = (total cholesterol − HDL) / HDL; normally less than 3."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 3,
+   "title": "0. Eicosanoids",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Eicosanoids** are locally acting hormone-like substances formed from 20-carbon polyunsaturated fatty acids, mainly **arachidonic acid**. Arachidonic acid is released from membrane phospholipids by **phospholipase A~2~** and is then converted by two pathways."
+    },
+    {
+     "type": "img",
+     "src": "data/img/tkm/t15_eikozanoid.webp",
+     "w": 1400,
+     "h": 450,
+     "label": "Figure 0.0",
+     "caption": "Arachidonic acid and the eicosanoids formed from it: the cyclooxygenase product prostaglandin E~2~ (cyclopentane ring) and the lipoxygenase product leukotriene B~4~ (structural formulas drawn with RDKit from PubChem data)."
+    },
+    {
+     "type": "table",
+     "title": "Table 15.0. Formation and actions of eicosanoids",
+     "head": [
+      "Pathway (enzyme)",
+      "Product",
+      "Main action"
+     ],
+     "rows": [
+      [
+       "Cyclooxygenase (COX-1, COX-2)",
+       "prostaglandins (PGE~2~, PGF~2α~)",
+       "inflammation, pain, fever; protection of the gastric mucosa; uterine contraction"
+      ],
+      [
+       "Cyclooxygenase (in platelets)",
+       "thromboxane A~2~",
+       "platelet aggregation, vasoconstriction"
+      ],
+      [
+       "Cyclooxygenase (in the endothelium)",
+       "prostacyclin (PGI~2~)",
+       "stops aggregation, dilates vessels"
+      ],
+      [
+       "Lipoxygenase",
+       "leukotrienes (LTB~4~, LTC~4~, LTD~4~)",
+       "leukocyte chemotaxis, bronchospasm, increased vascular permeability"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Table 15.0. Drugs that regulate eicosanoid synthesis",
+     "head": [
+      "Drug",
+      "Target",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Glucocorticoids (prednisolone)",
+       "phospholipase A~2~ (through lipocortin synthesis)",
+       "all eicosanoids decrease — strong anti-inflammatory effect"
+      ],
+      [
+       "NSAIDs (ibuprofen, diclofenac), aspirin",
+       "COX-1 and COX-2",
+       "pain, fever and inflammation decrease; risk of gastric damage"
+      ],
+      [
+       "Coxibs (celecoxib)",
+       "COX-2 only",
+       "less harmful to the stomach, but the risk of thrombosis may increase"
+      ],
+      [
+       "Montelukast",
+       "leukotriene receptors",
+       "control of bronchial asthma"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**ω-3 fatty acids** (EPA, DHA) are also substrates of COX and lipoxygenase, but the eicosanoids formed from them stimulate inflammation and thrombus formation more weakly. This is how a fish-rich diet is linked to a lower risk of cardiovascular disease."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Skill: assessing a lipid profile",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Write down the total cholesterol, HDL cholesterol and triglyceride values in mmol/L.",
+      "Calculate LDL cholesterol with the Friedewald formula: LDL = TC − HDL − TG / 2.2 (if TG < 4.5 mmol/L).",
+      "Find the atherogenic index: AI = (TC − HDL) / HDL.",
+      "Compare each value with the norm: TC < 5.2; LDL < 3.0; HDL > 1.0 (men), > 1.2 (women); TG < 1.7 mmol/L; AI < 3.",
+      "Assess the cardiovascular risk together with the patient’s other risk factors (smoking, arterial hypertension, diabetes, age)."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "How are fats digested and absorbed in the intestine? What are the roles of bile acids and lipase?",
+  "How are lipoproteins structured? Compare the functions of chylomicrons, VLDL, LDL and HDL.",
+  "How is an atherosclerotic plaque formed? Why is LDL called “bad” and HDL “good” cholesterol?",
+  "How are eicosanoids formed? State the actions of prostaglandins, thromboxane, prostacyclin and leukotrienes.",
+  "How do glucocorticoids, NSAIDs and coxibs affect eicosanoid synthesis?",
+  "How is cholesterol balance maintained in the body? What is the cause of familial hypercholesterolemia?"
+ ],
+ "quiz": [
+  {
+   "q": "Which lipoproteins transport dietary triglycerides from the intestine?",
+   "options": [
+    "Chylomicrons",
+    "LDL",
+    "HDL",
+    "VLDL",
+    "Albumin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which lipoprotein returns excess cholesterol from tissues to the liver?",
+   "options": [
+    "HDL",
+    "LDL",
+    "Chylomicrons",
+    "VLDL",
+    "Lipoprotein (a)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the main apolipoprotein of LDL?",
+   "options": [
+    "apo B-100",
+    "apo A-I",
+    "apo B-48",
+    "apo C-II",
+    "apo E"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which apoprotein activates lipoprotein lipase?",
+   "options": [
+    "apo C-II",
+    "apo A-I",
+    "apo B-100",
+    "apo B-48",
+    "apo D"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "If total cholesterol is 6.0, HDL 1.0 and triglycerides 2.2 mmol/L, what is LDL by the Friedewald formula?",
+   "options": [
+    "4.0 mmol/L",
+    "5.0 mmol/L",
+    "3.0 mmol/L",
+    "2.2 mmol/L",
+    "6.0 mmol/L"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which enzyme releases arachidonic acid from membrane phospholipids?",
+   "options": [
+    "Phospholipase A~2~",
+    "Lipoprotein lipase",
+    "Cyclooxygenase",
+    "Lipoxygenase",
+    "Pancreatic lipase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Which eicosanoid enhances platelet aggregation?",
+   "options": [
+    "Thromboxane A~2~",
+    "Prostacyclin",
+    "PGE~2~",
+    "Leukotriene B~4~",
+    "Lipoxin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "By which enzyme are leukotrienes formed?",
+   "options": [
+    "Lipoxygenase",
+    "Cyclooxygenase",
+    "Phospholipase C",
+    "Thromboxane synthase",
+    "Lipase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the main target of the anti-inflammatory action of glucocorticoids?",
+   "options": [
+    "Phospholipase A~2~",
+    "COX-2 only",
+    "Lipoxygenase",
+    "The thromboxane receptor",
+    "HMG-CoA reductase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is the cause of familial hypercholesterolemia?",
+   "options": [
+    "A mutation of the LDL receptor gene",
+    "Lipoprotein lipase deficiency",
+    "Excess apo A-I",
+    "An increase in bile acids",
+    "Lipase deficiency"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Problem 4",
+   "text": "A patient’s lipid profile: total cholesterol 6.6 mmol/L, HDL cholesterol 1.1 mmol/L, triglycerides 3.3 mmol/L.",
+   "ask": "Calculate and assess the LDL cholesterol and the atherogenic index.",
+   "answer": "LDL = 6.6 − 1.1 − 3.3 / 2.2 = 6.6 − 1.1 − 1.5 = **4.0 mmol/L** (normal < 3.0 — raised). AI = (6.6 − 1.1) / 1.1 = **5** (normal < 3). Total cholesterol and triglycerides are also raised — **atherogenic dyslipidemia**, high cardiovascular risk. Diet, physical activity and statin treatment are considered."
+  },
+  {
+   "title": "Problem 5",
+   "text": "A 12-year-old child has yellowish nodules (xanthomas) on the elbow and Achilles tendons. His father died of a myocardial infarction at the age of 38. The child’s LDL cholesterol is 14 mmol/L, and triglycerides are normal.",
+   "ask": "Which disease is suspected? Explain its molecular cause and the principle of treatment.",
+   "answer": "This is **familial hypercholesterolemia**; the very high LDL and xanthomas in childhood are typical of the **homozygous** form. Because of a defect in the **LDL receptor**, the liver and other cells cannot take up LDL from the blood; with too little cholesterol inside the cell, HMG-CoA reductase stays active and cholesterol synthesis does not stop. Excess LDL accumulates in the tissues (xanthomas) and in the vessel wall, leading to early atherosclerosis. Treatment: high-dose statins, ezetimibe, PCSK9 inhibitors, and in severe cases LDL apheresis (removing LDL from the blood)."
+  },
+  {
+   "title": "Problem 6",
+   "text": "A patient with chronic pancreatitis has bulky, fatty, shiny, foul-smelling stools that are hard to flush. When the stool was stained with Sudan III, many orange-red droplets were seen.",
+   "ask": "What is the condition? What is its biochemical cause and how is it treated?",
+   "answer": "This is **steatorrhea** — excretion of a lot of fat in the stool (Sudan III stains neutral fat droplets). In chronic pancreatitis the production of pancreatic **lipase** and colipase decreases — triglycerides are not broken down and not absorbed. As a result, the fat-soluble vitamins (A, D, E, K) are also deficient. Treatment: **enzyme preparations** (pancreatin) taken with meals, a moderate fat intake, and supplements of fat-soluble vitamins."
+  },
+  {
+   "title": "Problem 7",
+   "text": "A 65-year-old patient who took diclofenac every day for a month for knee osteoarthritis developed black stools and weakness; endoscopy revealed a gastric ulcer.",
+   "ask": "Explain the formation of the ulcer in terms of eicosanoid metabolism. How could the risk have been reduced?",
+   "answer": "Diclofenac is a nonselective **COX inhibitor**. In the gastric mucosa **PGE~2~** and prostacyclin formed by COX-1 increase mucus and bicarbonate secretion, improve blood flow and reduce HCl secretion — that is, they protect the mucosa. When COX is blocked, this protection is lost and acid erodes the mucosa — ulcer and bleeding (black stool — melena). Ways to reduce the risk: the lowest effective dose for a short time, giving a proton pump inhibitor at the same time, and, if possible, a selective COX-2 inhibitor or paracetamol."
+  },
+  {
+   "title": "Problem 8",
+   "text": "A woman with bronchial asthma and nasal polyps took aspirin for a headache and 30 minutes later had a severe attack of breathlessness.",
+   "ask": "Why did aspirin trigger an asthma attack? Which drug group is especially useful for such patients?",
+   "answer": "This is **aspirin-exacerbated respiratory disease**. When aspirin blocks cyclooxygenase, arachidonic acid is not used in the COX pathway and is “shunted” to the **lipoxygenase** pathway — much bronchoconstricting **leukotrienes** (LTC~4~, LTD~4~) are formed; in addition, the bronchoprotective PGE~2~ decreases. The result is severe bronchospasm. Such patients are not given aspirin or other nonselective NSAIDs; **leukotriene receptor antagonists** (montelukast) and inhaled glucocorticoids are useful in treatment."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Chylomicrons",
+   "back": "Transport dietary triglycerides from the intestine to tissues; apo B-48"
+  },
+  {
+   "front": "LDL and HDL",
+   "back": "LDL carries cholesterol to tissues (atherogenic); HDL returns the excess to the liver"
+  },
+  {
+   "front": "Friedewald formula",
+   "back": "LDL = TC − HDL − TG / 2.2 (mmol/L)"
+  },
+  {
+   "front": "Eicosanoids",
+   "back": "From arachidonic acid: COX — prostaglandins, thromboxane, prostacyclin; LOX — leukotrienes"
+  },
+  {
+   "front": "NSAIDs and the stomach",
+   "back": "COX-1 is blocked and protective PGE~2~ decreases — risk of ulcer and bleeding"
+  },
+  {
+   "front": "Familial hypercholesterolemia",
+   "back": "LDL receptor defect: very high LDL, xanthomas, early infarction"
+  }
+ ]
+}

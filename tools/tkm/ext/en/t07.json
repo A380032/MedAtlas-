@@ -1,0 +1,101 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Types of surfactants and the detergent action"},
+   {"type": "table", "title": "Table 7.0. Classification of surfactants", "head": ["Type", "Polar group", "Examples", "Use in medicine"], "rows": [
+    ["Anionic", "–COO^−^, –OSO~3~^−^, –SO~3~^−^", "soaps, sodium dodecyl sulfate, salts of bile acids", "detergents, emulsification of fats"],
+    ["Cationic", "–N^+^R~3~ (quaternary ammonium)", "benzalkonium chloride, cetylpyridinium chloride, miramistin", "antiseptics, preservatives"],
+    ["Nonionic", "–(OCH~2~CH~2~)~n~OH", "polysorbates (Tweens), poloxamers", "solubilizers in drug emulsions and injection solutions"],
+    ["Amphoteric", "positive and negative groups together", "lecithin (phosphatidylcholine), betaines", "surfactant, liposomes"]
+   ]},
+   {"type": "p", "text": "**Detergent action:** surfactant molecules orient their hydrophobic part toward the fat or dirt particle and their hydrophilic part toward water; surface tension falls, wetting improves, and the fat passes into micelles and is washed away with water. Cationic surfactants, in turn, adsorb on the negatively charged membrane of microbes and disrupt it — that is why they are antiseptics."},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "If **cationic antiseptics** (benzalkonium chloride, chlorhexidine) are used together with anionic soap, the oppositely charged ions bind to each other and the antiseptic is **inactivated**. That is why hands washed with soap are rinsed thoroughly before the antiseptic is applied."}]}
+  ],
+  "4": [
+   {"type": "h", "text": "Multilayer adsorption and enterosorption"},
+   {"type": "p", "text": "Langmuir’s theory is valid only for a single layer. Vapors and gases near their condensation temperature adsorb on a surface in **many layers** — this is described by the **BET theory** (Brunauer–Emmett–Teller); the method is used to determine the specific surface area of sorbents."},
+   {"type": "p", "text": "**Activated charcoal** is the most widely used sorbent in acute oral poisoning. Adults are usually given 50 g (about 1 g/kg) as a suspension in water; it is most effective if given **within 1 hour** of ingestion. Charcoal adsorbs large, nonpolar or weakly polar molecules well."},
+   {"type": "table", "title": "Table 7.0. Effectiveness of activated charcoal", "head": ["Binds well", "Binds hardly at all"], "rows": [
+    ["most drugs: paracetamol, carbamazepine, phenobarbital, antidepressants", "alcohols (ethanol, methanol, ethylene glycol)"],
+    ["alkaloids, glycosides", "metals and their ions: iron, lithium, potassium"],
+    ["most pesticides, mushroom toxins", "strong acids and alkalis (corrosive substances)"],
+    ["bacterial toxins", "cyanides (poorly), hydrocarbons (gasoline)"]
+   ]}
+  ],
+  "6": [
+   {"type": "h", "text": "Modern chromatography and laboratory diagnosis"},
+   {"type": "p", "text": "In column chromatography each substance leaves the column at its own time — it is identified by its **retention time**, and its amount is found from the peak area. **Chromatography–mass spectrometry** identifies the substances separated by chromatography precisely by their mass spectrum: it is used in forensic toxicology, doping control and the **newborn screening** for inherited metabolic diseases (dozens of amino acids and acylcarnitines in a single dried blood spot)."},
+   {"type": "p", "text": "The **amino acid analyzer** uses ion-exchange chromatography: amino acids leave a cation-exchange column one after another according to their charge and the pH and are determined quantitatively with ninhydrin. **Affinity chromatography** is based on specific binding: if an antigen is attached to the column, only the matching antibody is retained from the mixture."}
+  ]
+ },
+ "insert": [
+  {"after": 0, "title": "0. Wetting and capillary phenomena", "blocks": [
+   {"type": "p", "text": "When a drop of liquid touches a solid surface, its shape depends on the ratio of **cohesion** (attraction between liquid molecules) and **adhesion** (attraction between liquid and solid molecules). This is assessed by the **contact angle** θ: θ < 90° — the surface is wetted by the liquid (**hydrophilic** surface: glass, quartz, protein), θ > 90° — it is not wetted (**hydrophobic** surface: paraffin, fat, Teflon)."},
+   {"type": "p", "text": "In a narrow tube a wetting liquid forms a concave meniscus and rises, while a non-wetting liquid falls. **Jurin’s formula:** h = 2σ·cosθ / (ρ·g·r), where r is the radius of the capillary. The narrower the capillary, the higher the liquid rises."},
+   {"type": "list", "items": [
+    "When blood is taken from a finger, glass capillaries and test strips draw up blood by **capillary forces**.",
+    "Cotton and gauze dressings absorb wound discharge through the capillaries between hydrophilic fibers.",
+    "The movement of liquid in soil, paper and tissues and the rise of the solvent in paper chromatography are also based on capillarity."
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Gas embolism:** an air bubble that enters a small vessel is deformed where the vessel narrows; because the menisci at its two ends have different curvature, an opposing pressure arises and the bubble blocks the blood flow (the **Jamin effect**). That is why air is always removed from the system during intravenous injections and infusions."}]}
+  ]},
+  {"after": 6, "title": "0. Qualitative reactions based on adsorption", "blocks": [
+   {"type": "p", "text": "In many analytical and staining methods the color or precipitate observed is not a simple chemical reaction but the result of **selective adsorption** of a dye or ion on the surface of a precipitate (a colloidal particle, a fiber)."},
+   {"type": "table", "title": "Table 7.0. Qualitative reactions based on adsorption", "head": ["Reaction", "Essence", "Use"], "rows": [
+    ["Fajans method (adsorption indicators)", "after the equivalence point AgCl particles adsorb Ag^+^, become positively charged, attract the fluorescein anion and turn pink", "argentometric determination of chlorides"],
+    ["Detection of magnesium with titan yellow", "the dye adsorbs on the surface of the Mg(OH)~2~ precipitate and forms a red “lake”", "a sensitive qualitative reaction for Mg^2+^"],
+    ["Detection of aluminum with alizarin", "Al(OH)~3~ particles adsorb alizarin and form a red lake", "detection of Al^3+^"],
+    ["Reaction of starch with iodine", "iodine molecules fit inside the amylose helix and give a blue adsorption complex", "indicator in iodometry, detection of starch and iodine"],
+    ["Congo red staining", "the dye adsorbs in an ordered way on the β-structures of amyloid fibrils; apple-green color in polarized light", "histological diagnosis of amyloidosis"],
+    ["Gram staining", "the gentian violet–iodine complex is retained by the thick peptidoglycan wall and is not washed out by alcohol", "dividing bacteria into gram-positive and gram-negative"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "The key to how an adsorption indicator works is the **change in the sign of the particle charge**: before the equivalence point the precipitate adsorbs the excess ion being determined (Cl^−^), after it — the excess titrant (Ag^+^) (Paneth–Fajans rule)."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: determination of chlorides by the Fajans method", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Pipette 10 mL of the test solution (for example, diluted normal saline) into a flask.",
+    "Add 2–3 drops of fluorescein (or eosin) solution; the medium should be neutral or weakly acidic.",
+    "Add 0.1 M AgNO~3~ dropwise from a burette with stirring: a white AgCl precipitate forms, and the solution has a yellow-green fluorescence.",
+    "Stop the titration as soon as the surface of the precipitate suddenly turns **pink** — this is the equivalence point.",
+    "Calculate the chloride content: C(Cl^−^) = C(AgNO~3~)·V(AgNO~3~) / V(sample)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "What is the contact angle? Give examples of hydrophilic and hydrophobic surfaces.",
+  "What does the height of capillary rise depend on? What is the significance of capillary phenomena in medicine?",
+  "How are surfactants classified? Why can a cationic antiseptic not be used together with soap?",
+  "In which poisonings is activated charcoal effective, and in which is it ineffective?",
+  "How do adsorption indicators work? Explain the Fajans method.",
+  "Which staining methods in histology and microbiology are based on adsorption?"
+ ],
+ "quiz": [
+  {"q": "If the contact angle is less than 90°, what kind of surface is it?", "options": ["Hydrophilic (wetted)", "Hydrophobic (not wetted)", "Neutral", "Uncharged", "Surface-active"], "answer": 0},
+  {"q": "If the radius of a capillary decreases 2 times, how does the height of liquid rise change?", "options": ["It increases 2 times", "It decreases 2 times", "It increases 4 times", "It does not change", "It decreases 4 times"], "answer": 0},
+  {"q": "Which substance is a cationic surfactant?", "options": ["Benzalkonium chloride", "Sodium stearate (soap)", "Sodium dodecyl sulfate", "Polysorbate (Tween)", "Sodium cholate"], "answer": 0},
+  {"q": "In which poisoning is activated charcoal almost ineffective?", "options": ["Iron salts", "Paracetamol", "Carbamazepine", "Alkaloids", "Phenobarbital"], "answer": 0},
+  {"q": "When is activated charcoal most effective?", "options": ["Within 1 hour of ingesting the poison", "After 12 hours", "Only the next day", "Only 6 hours after vomiting stops", "It does not depend on time"], "answer": 0},
+  {"q": "How is the equivalence point determined in the Fajans method?", "options": ["The surface of the precipitate turns pink with the adsorption indicator", "Gas is released", "The pH changes sharply", "The solution heats up", "The precipitate dissolves"], "answer": 0},
+  {"q": "Which dye is used in the histological diagnosis of amyloidosis?", "options": ["Congo red", "Methylene blue", "Phenolphthalein", "Murexide", "Eriochrome Black T"], "answer": 0},
+  {"q": "What is the blue color given by iodine with starch due to?", "options": ["Formation of an adsorption complex of iodine inside the amylose helix", "Oxidation of starch by iodine", "Hydrolysis of starch", "Reduction of iodine", "Formation of glucose"], "answer": 0},
+  {"q": "What is the blocking of blood flow in a capillary by a gas bubble called?", "options": ["The Jamin effect", "The Tyndall effect", "The Bohr effect", "The Donnan effect", "The Doppler effect"], "answer": 0},
+  {"q": "Which method detects dozens of metabolites in a single blood spot in newborn screening?", "options": ["Tandem mass spectrometry (chromatography–mass spectrometry)", "Titrimetry", "Gravimetry", "Polarimetry", "Cryometry"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "The adsorption of acetic acid on charcoal was studied: at an equilibrium concentration of 0.01 mol/L x / m = 0.2 mmol/g, at 0.1 mol/L x / m = 0.5 mmol/g.", "ask": "Find the constants of the Freundlich equation (1/n and K).", "answer": "lg(x / m) = lgK + (1 / n)·lgC. Two points: lg0.2 = −0.70, lgC = −2; lg0.5 = −0.30, lgC = −1. Slope: 1 / n = (−0.30 − (−0.70)) / (−1 − (−2)) = **0.4**. lgK = −0.30 − 0.4 · (−1) = 0.10, K ≈ **1.26** mmol/g (C in mol/L). 1/n < 1 — as concentration increases, adsorption increases more slowly (the surface begins to saturate)."},
+  {"title": "Problem 5", "text": "Two patients were brought to the toxicology department within one hour: the first (70 kg) had taken 40 carbamazepine tablets, the second had taken iron sulfate tablets.", "ask": "Which patient will benefit from activated charcoal and at what dose? Why is it useless for the second patient, and what is done for them?", "answer": "**Carbamazepine** is a large, weakly polar molecule that adsorbs well on charcoal: the first patient is given ≈ 1 g/kg, that is **50–70 g** of charcoal as a suspension in water (less than 1 hour has passed since ingestion — the most effective time). **Iron** ions are small and charged and hardly adsorb on charcoal — charcoal is useless for the second patient. For them, gastrointestinal decontamination (if indicated), measurement of blood iron and, in severe cases, the chelator **deferoxamine** are used."},
+  {"title": "Problem 6", "text": "A glass capillary with an inner radius of 0.1 mm is used to take blood from a finger. For water σ = 0.073 N/m, ρ = 1000 kg/m^3^, θ ≈ 0°.", "ask": "To what height does water rise in the capillary? How does the result change for blood?", "answer": "h = 2σ·cosθ / (ρ·g·r) = 2 · 0.073 · 1 / (1000 · 9.81 · 0.0001) = 0.146 / 0.981 ≈ **0.15 m** (15 cm). The surface tension of blood (≈ 0.05 N/m) is lower than that of water and its density slightly higher, so it rises less, but this is still enough to fill a capillary a few centimeters long — the capillary “draws up” the blood by itself."},
+  {"title": "Problem 7", "text": "A nurse washed her hands with anionic soap and, without rinsing, immediately applied an antiseptic solution containing benzalkonium chloride. Later, infections transmitted by hands increased in the ward.", "ask": "Explain from a physicochemical point of view why the antiseptic may have been ineffective.", "answer": "Benzalkonium chloride is a **cationic** surfactant: its positively charged polar group adsorbs on the negatively charged surface of the microbial membrane and disrupts it. Soap is an **anionic** substance. Soap anions left on the hands bind to the antiseptic cations to form a neutral, poorly active compound — the antiseptic is **inactivated**. The correct sequence is: wash with soap → rinse thoroughly with running water → dry → apply the antiseptic."},
+  {"title": "Problem 8", "text": "A kidney biopsy from a patient with a chronic suppurative disease was stained with Congo red. Under an ordinary microscope pink-red masses were seen, and in polarized light an apple-green glow.", "ask": "What diagnosis is suspected? On what physicochemical phenomenon is the staining based?", "answer": "This is **amyloidosis** (secondary AA amyloidosis in chronic inflammation). Congo red is a dye with linear molecules; it **adsorbs in an ordered, oriented way** on the surface of the β-pleated sheets of amyloid fibrils. Because the dye molecules line up in one direction, the preparation becomes birefringent and glows **apple-green** in polarized light — a specific sign of amyloid."}
+ ],
+ "cards": [
+  {"front": "Contact angle", "back": "θ < 90° — hydrophilic (wetted), θ > 90° — hydrophobic (not wetted)"},
+  {"front": "Jurin’s formula", "back": "h = 2σ·cosθ / (ρ·g·r) — height of capillary rise"},
+  {"front": "Cationic surfactant", "back": "Quaternary ammonium salts (benzalkonium chloride); antiseptic, inactivated by soap"},
+  {"front": "Activated charcoal", "back": "≈ 1 g/kg within 1 hour; does not bind alcohols, iron, lithium, acids or alkalis"},
+  {"front": "Adsorption indicator", "back": "At the equivalence point the precipitate changes charge and adsorbs the dye (Fajans method — fluorescein)"},
+  {"front": "Congo red", "back": "Adsorbs on amyloid; apple-green glow in polarized light"}
+ ]
+}

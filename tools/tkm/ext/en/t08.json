@@ -1,0 +1,105 @@
+{
+ "append": {
+  "4": [
+   {"type": "h", "text": "Nanoparticles in medicine"},
+   {"type": "p", "text": "Particles 1–100 nm in size fall into the colloidal range; their deliberate design and use is called **nanomedicine**. Because of their size, nanoparticles can enter tissues and cells, drugs or antibodies can be attached to their surface, and they accumulate more in tumors because tumor vessels are leaky."},
+   {"type": "table", "title": "Table 8.0. Nanoparticles used in medicine", "head": ["Nanoparticle", "Structure", "Use"], "rows": [
+    ["Liposomes", "vesicles with a phospholipid bilayer", "liposomal doxorubicin, amphotericin B — drugs with reduced toxicity"],
+    ["Lipid nanoparticles", "ionizable lipids, cholesterol, PEG-lipid", "delivery of mRNA vaccines into cells"],
+    ["Albumin nanoparticles", "drug bound to albumin", "giving paclitaxel without a solvent"],
+    ["Iron oxide nanoparticles", "superparamagnetic Fe~3~O~4~ core", "MRI contrast, treatment of iron deficiency"],
+    ["Silver nanoparticles", "metallic silver sol", "antibacterial dressings and coatings"]
+   ]}
+  ],
+  "6": [
+   {"type": "h", "text": "Dosage forms as disperse systems"},
+   {"type": "p", "text": "**Suspensions and emulsions** are thermodynamically unstable: over time the particles settle, emulsion droplets float to the top (creaming) and merge (**coalescence**) — the emulsion separates into layers. That is why emulsifiers and thickeners are added to them, and they are shaken before use."},
+   {"type": "table", "title": "Table 8.0. Size of inhaled aerosol particles and where they deposit in the airways", "head": ["Particle size", "Where they mainly deposit"], "rows": [
+    ["> 10 µm", "nasopharynx and oral cavity"],
+    ["5–10 µm", "trachea and large bronchi"],
+    ["1–5 µm", "small bronchi and bronchioles — most suitable for treatment"],
+    ["< 1 µm", "reach the alveoli; much is exhaled"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Much of the aerosol from a metered-dose inhaler deposits in the mouth. A **spacer** (holding chamber) retains large particles and slows the aerosol — the fraction of drug reaching the bronchi increases and side effects such as oral candidiasis decrease. It is especially recommended for children and the elderly."}]}
+  ]
+ },
+ "insert": [
+  {"after": 5, "title": "0. Blood as a disperse system. Hemolysis and agglutination", "blocks": [
+   {"type": "p", "text": "Blood is a complex disperse system: the dispersion medium is **plasma** (a colloidal solution of proteins and a true solution of salts), the dispersed phase is the **formed elements** (blood cells, mainly red cells). The red cell surface is **negatively charged** by sialic acids (ζ ≈ −15 mV); the like charges repel the cells from each other and keep the suspension stable."},
+   {"type": "table", "title": "Table 8.0. Types of hemolysis", "head": ["Type of hemolysis", "Cause", "Example"], "rows": [
+    ["Osmotic", "in a hypotonic medium water enters and the membrane ruptures", "distilled water, infusion of a hypotonic solution"],
+    ["Chemical", "surfactants and solvents dissolve membrane lipids", "saponins, bile acids, ether, chloroform"],
+    ["Physical (thermal, mechanical)", "freezing and thawing, vigorous shaking, an artificial valve", "improper storage and transport of blood"],
+    ["Biological", "venom enzymes or toxins", "snake and spider venom, hemolytic streptococcus"],
+    ["Immune", "antibodies and complement destroy the red cell", "incompatible blood transfusion, hemolytic disease of the newborn"]
+   ]},
+   {"type": "p", "text": "The **osmotic fragility (resistance) of red cells** is their tolerance to hypotonic NaCl solutions. Normally hemolysis begins in 0.46–0.48 % NaCl and is complete in 0.32–0.34 % solution. Decreased resistance (hemolysis beginning at a higher concentration) is typical of **hereditary spherocytosis**: spherical red cells take up little water before they burst."},
+   {"type": "p", "text": "**Agglutination** is the clumping of particles (red cells, bacteria) by antibodies; it is a special kind of coagulation. Blood grouping is based on the agglutination of red cell antigens by standard sera (anti-A, anti-B, anti-D)."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Blood clotting** is the conversion of plasma from a sol into a **gel**: soluble fibrinogen is converted by thrombin into fibrin, which forms a three-dimensional network that traps blood cells and fluid. Later the clot contracts and serum is squeezed out (**retraction**) — this is the **syneresis** characteristic of gels."}]}
+  ]},
+  {"after": 6, "title": "0. Solutions of macromolecular compounds and gels", "blocks": [
+   {"type": "p", "text": "Proteins, polysaccharides and nucleic acids are **macromolecular compounds** (biopolymers). Although their solutions are true (molecular) solutions, the molecules are close in size to colloidal particles, so they have colloid-like properties: slow diffusion, inability to cross membranes, the Tyndall effect. They form spontaneously and are thermodynamically stable."},
+   {"type": "table", "title": "Table 8.0. Comparison of lyophobic sols and solutions of macromolecular compounds", "head": ["Feature", "Lyophobic sol", "Macromolecular solution"], "rows": [
+    ["Formation", "forced, with a stabilizer", "dissolves spontaneously"],
+    ["Thermodynamic state", "unstable", "stable"],
+    ["Sensitivity to electrolytes", "coagulates with small amounts", "precipitates only with much salt (salting out)"],
+    ["Viscosity", "close to that of water", "high"],
+    ["Reversibility", "coagulation is often irreversible", "precipitation is reversible — dissolves again in water"]
+   ]},
+   {"type": "list", "items": [
+    "**Swelling** is the increase in volume of a macromolecular substance as it takes up solvent: **unlimited** (gelatin dissolves completely in hot water) and **limited** (gelatin only swells in cold water). Swelling depends on pH and is minimal at the isoelectric point.",
+    "**Salting out** — a large amount of a neutral salt (NH~4~)~2~SO~4~ strips the hydration shell from protein molecules and precipitates them; protein activity is preserved — used to separate proteins into fractions.",
+    "A **gel** is a three-dimensional network of macromolecules or colloidal particles that holds solvent: gelatin, agar, a blood clot, the vitreous body of the eye. Over time gels contract and expel liquid — **syneresis**; some gels liquefy when shaken and set again on standing — **thixotropy**.",
+    "**Donnan equilibrium** — in a system containing protein ions that cannot cross a membrane, small ions are distributed unequally on the two sides of the membrane; this contributes to the difference in ionic composition between cells and plasma."
+   ]},
+   {"type": "p", "text": "**Viscosity.** The flow of a liquid through a tube is described by **Poiseuille’s law**: Q = π·r^4^·ΔP / (8·η·l). Volume flow is proportional to the 4th power of the vessel radius and inversely proportional to viscosity (η). The viscosity of blood is 4–5 times that of water and depends mainly on the **hematocrit** and the fibrinogen content."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "In **polycythemia** the hematocrit rises to 60–65 % and blood viscosity increases sharply: blood flow slows and the risk of thrombosis, stroke and myocardial infarction rises. Treatment lowers the hematocrit by bloodletting (phlebotomy). Conversely, in severe anemia viscosity falls, the heart works “against little resistance” and murmurs appear."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: determining the osmotic fragility of red cells", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Prepare a series of NaCl solutions from 0.70 % to 0.30 % (every 0.02 %), 1 mL each, in test tubes.",
+    "Add one drop of heparinized blood to each tube, mix gently and leave for 1 hour (or centrifuge).",
+    "Record the highest concentration at which the upper part of the solution has turned pale pink — this is the **minimal resistance** (onset of hemolysis).",
+    "Find the tube in which the sediment has disappeared completely and the solution is clear red — this is the **maximal resistance** (complete hemolysis).",
+    "Compare the result with the norm (onset 0.46–0.48 %, complete 0.32–0.34 %)."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "How is blood structured as a disperse system? What keeps the red cell suspension stable?",
+  "List the types of hemolysis. How is the osmotic fragility of red cells determined?",
+  "How do solutions of macromolecular compounds differ from lyophobic sols?",
+  "What are swelling, salting out, syneresis and thixotropy?",
+  "Write Poiseuille’s law. What does blood viscosity depend on and why is it dangerous in polycythemia?",
+  "How are nanoparticles used in medicine? Why is the size of inhaled aerosol particles important?"
+ ],
+ "quiz": [
+  {"q": "What is the negative charge of the red cell surface mainly due to?", "options": ["Sialic acids", "Hemoglobin", "Cholesterol", "Sodium ions", "Glucose"], "answer": 0},
+  {"q": "At what NaCl concentration does red cell hemolysis normally begin?", "options": ["0.46–0.48 %", "0.9 %", "0.7–0.8 %", "0.1–0.2 %", "1.5 %"], "answer": 0},
+  {"q": "What kind of hemolysis do saponins cause?", "options": ["Chemical (dissolve membrane lipids)", "Osmotic", "Immune", "Thermal", "Mechanical"], "answer": 0},
+  {"q": "From the point of view of colloid chemistry, what process is blood clotting?", "options": ["Formation of a gel from a sol", "Dialysis", "Peptization", "Solubilization", "Electroosmosis"], "answer": 0},
+  {"q": "What is the contraction of a gel with the release of liquid called?", "options": ["Syneresis", "Thixotropy", "Peptization", "Coalescence", "Swelling"], "answer": 0},
+  {"q": "What is used to precipitate proteins while preserving their activity?", "options": ["A large amount of ammonium sulfate (salting out)", "Concentrated nitric acid", "Heavy metal salts", "Boiling", "Trichloroacetic acid"], "answer": 0},
+  {"q": "According to Poiseuille’s law, if the radius of a vessel decreases 2 times, how many times does blood flow decrease?", "options": ["16 times", "2 times", "4 times", "8 times", "32 times"], "answer": 0},
+  {"q": "Which indicator affects blood viscosity the most?", "options": ["Hematocrit", "Glucose level", "Sodium level", "Urea level", "pH"], "answer": 0},
+  {"q": "Which particles are used to deliver mRNA vaccines into cells?", "options": ["Lipid nanoparticles", "Iron oxide nanoparticles", "Silver sol", "BaSO~4~ suspension", "Aluminum hydroxide gel"], "answer": 0},
+  {"q": "What size should inhaled aerosol particles be to reach the small bronchi?", "options": ["1–5 µm", "> 10 µm", "5–10 µm", "100 µm", "1 mm"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "For a positively charged iron(III) hydroxide sol the coagulation threshold of NaCl is 9.25 mmol/L.", "ask": "Using the Schulze–Hardy rule, estimate the threshold for Na~2~SO~4~ and Na~3~PO~4~. Which ion is the coagulating ion?", "answer": "The granule is positive, so the coagulating ions are the **anions**: Cl^−^, SO~4~^2−^, PO~4~^3−^. The thresholds are inversely proportional to the 6th power of the charge: for SO~4~^2−^ 9.25 / 2^6^ = 9.25 / 64 ≈ **0.14 mmol/L**, for PO~4~^3−^ 9.25 / 3^6^ = 9.25 / 729 ≈ **0.013 mmol/L**. That is, phosphate coagulates about 700 times more strongly than chloride."},
+  {"title": "Problem 5", "text": "A child presenting with jaundice and an enlarged spleen had the osmotic fragility of red cells tested: hemolysis began in 0.60 % NaCl and was complete in 0.40 % solution. The blood smear shows many small, spherical red cells.", "ask": "Assess the result and explain the mechanism.", "answer": "Hemolysis began at a much higher concentration than normal (0.46–0.48 %) — osmotic resistance is **decreased** (fragility increased). This is typical of **hereditary spherocytosis**: because of a defect in membrane proteins (spectrin, ankyrin) the red cell is a sphere rather than a disc. A sphere has the smallest surface for its volume, so the membrane stretches and bursts after only a little water enters. Such red cells are also destroyed quickly in the spleen — hence the anemia, jaundice and enlarged spleen."},
+  {"title": "Problem 6", "text": "The isoelectric point of albumin is pI = 4.9. Serum protein electrophoresis is carried out in veronal buffer at pH 8.6.", "ask": "How is albumin charged under these conditions and toward which electrode does it move? What is observed in a pH 4.0 buffer?", "answer": "pH 8.6 > pI — albumin loses protons, becomes **negatively** charged and moves toward the **anode** (+); being the smallest and most negatively charged of the serum proteins, it moves fastest and farthest. If pH 4.0 < pI, albumin takes up protons, becomes **positively** charged and moves toward the **cathode** (−). At pH = pI it does not move."},
+  {"title": "Problem 7", "text": "A 6-year-old child with bronchial asthma was prescribed a metered-dose inhaler, but the attacks did not decrease; oral candidiasis appeared.", "ask": "Explain the cause from the point of view of disperse systems. What solution would you suggest?", "answer": "The aerosol leaves the inhaler at high speed; the child cannot coordinate pressing with inhaling, and **large particles** deposit in the mouth and pharynx by inertia. The fraction of 1–5 µm particles that reach the bronchi is small — the effect is poor; the glucocorticoid left in the mouth causes candidiasis. Solution: a **spacer** with a mask or mouthpiece — it retains large particles and slows the aerosol; rinsing the mouth after inhalation."},
+  {"title": "Problem 8", "text": "A patient with polycythemia has a hematocrit of 65 % (normal 40–48 %), headaches and facial redness. There is a history of a transient ischemic attack.", "ask": "Explain the disturbance of blood flow from a physicochemical point of view. If, because of atherosclerosis, the vessel radius has also narrowed 2 times, how many times does the blood flow decrease?", "answer": "When the hematocrit rises, blood **viscosity** increases sharply. According to Poiseuille’s law, flow is inversely proportional to viscosity — blood flows slowly, microcirculation is impaired and the risk of thrombus formation rises. Flow is proportional to the 4th power of the radius: if the radius decreases 2 times, flow decreases 2^4^ = **16 times** (the increased viscosity makes this even worse). Treatment: phlebotomy to bring the hematocrit below 45 %, antiplatelet agents."}
+ ],
+ "cards": [
+  {"front": "Osmotic fragility", "back": "Hemolysis begins in 0.46–0.48 % NaCl and is complete in 0.32–0.34 %; resistance is decreased in spherocytosis"},
+  {"front": "Agglutination", "back": "Clumping of particles by antibodies; the basis of blood grouping"},
+  {"front": "Syneresis", "back": "Contraction of a gel with release of liquid (retraction of a blood clot)"},
+  {"front": "Salting out", "back": "Much neutral salt strips the hydration shell of a protein and precipitates it while preserving activity"},
+  {"front": "Poiseuille’s law", "back": "Q = π·r^4^·ΔP / (8·η·l); flow is proportional to the 4th power of the radius"},
+  {"front": "Spacer", "back": "A holding chamber for an inhaler; retains large particles and increases drug delivery to the bronchi"}
+ ]
+}

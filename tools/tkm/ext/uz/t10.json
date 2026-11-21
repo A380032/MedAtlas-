@@ -1,0 +1,365 @@
+{
+ "append": {
+  "3": [
+   {
+    "type": "p",
+    "text": "**Ikki asosli kislotalarning qizdirilgandagi xossalari** ularning tuzilishiga bog‘liq: oksalat va malonat kislotalar qizdirilganda **dekarboksillanadi** (HOOC−CH~2~−COOH → CH~3~COOH + CO~2~), suksinat va glutarat kislotalar esa suv ajratib, besh va olti a’zoli **siklik angidridlar** hosil qiladi. Biologik dekarboksillanish (piruvat, α-ketoglutarat) ham karboksil guruhi yonidagi karbonil yoki karboksil guruh ta’sirida osonlashadi."
+   },
+   {
+    "type": "box",
+    "kind": "klinik",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Oksalat** ko‘p bo‘lgan oziqlar — otquloq, ismaloq, rovoch, kakao, choy. Ichakda kalsiy oksalat ichak bo‘shlig‘ida bog‘lanib qoladi; yog‘lar yaxshi so‘rilmagan holatlarda (ichak kasalliklari) kalsiy yog‘ kislotalari bilan bog‘lanadi va erkin oksalat ko‘p so‘riladi — **enterik giperoksaluriya** va buyrak toshlari rivojlanadi."
+     }
+    ]
+   }
+  ],
+  "6": [
+   {
+    "type": "h",
+    "text": "Tuzilish va ta’sir: salitsilatlar va sulfanilamidlar"
+   },
+   {
+    "type": "p",
+    "text": "**Aspirin** siklooksigenaza (SOG) fermenti faol markazidagi serin gidroksiliga atsetil guruhini ko‘chiradi — ferment **qaytmas** faolsizlanadi. Trombotsitlarda yadro yo‘q va ular yangi ferment sintezlay olmaydi, shuning uchun bitta kichik doza (75–100 mg) trombotsit hayoti davomida (≈ 7–10 kun) **tromboksan** sintezini to‘xtatadi — yurak-qon tomir kasalliklari profilaktikasi shunga asoslangan."
+   },
+   {
+    "type": "p",
+    "text": "**Sulfanilamidlar va trimetoprim** folat sintezining ketma-ket ikki bosqichini to‘sadi: sulfanilamid PABK ning raqobatchisi sifatida digidropteroatsintazani, trimetoprim esa digidrofolatreduktazani bloklaydi. Birgalikda (ko-trimoksazol) ular **sinergik** ta’sir ko‘rsatadi. Odam folatni ovqatdan oladi va bu fermentga ega emas — dorilarning tanlab ta’siri shunda."
+   },
+   {
+    "type": "box",
+    "kind": "diqqat",
+    "parts": [
+     {
+      "type": "p",
+      "text": "16 yoshgacha bo‘lgan bolalarga virusli infeksiya (gripp, suvchechak) vaqtida **aspirin berilmaydi** — u **Rey sindromi**ni (o‘tkir jigar yetishmovchiligi va miya shishi) chaqirishi mumkin. Bolalarda isitmani tushirish uchun paratsetamol yoki ibuprofen ishlatiladi."
+     }
+    ]
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 4,
+   "title": "0. Biogen aminlar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Biogen aminlar** aminokislotalarning **dekarboksillanishi** natijasida hosil bo‘ladi: R−CH(NH~2~)−COOH → R−CH~2~−NH~2~ + CO~2~. Reaksiyani piridoksalfosfatga (vitamin B~6~) bog‘liq dekarboksilazalar katalizlaydi. Biogen aminlar kichik konsentratsiyada kuchli fiziologik ta’sir ko‘rsatadi — mediatorlar, gormonlar va mahalliy regulyatorlar."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 10.0. Muhim biogen aminlar",
+     "head": [
+      "Aminokislota",
+      "Biogen amin",
+      "Vazifasi",
+      "Tibbiy ahamiyati"
+     ],
+     "rows": [
+      [
+       "Gistidin",
+       "gistamin",
+       "allergik va yallig‘lanish reaksiyalari, me’da shirasi sekretsiyasi",
+       "antigistamin dorilar (H~1~), H~2~-blokatorlar (famotidin)"
+      ],
+      [
+       "Triptofan",
+       "serotonin (5-gidroksitriptamin) → melatonin",
+       "kayfiyat, uyqu, ichak harakati, tomir tonusi",
+       "antidepressantlar (SSQI), karsinoid sindrom"
+      ],
+      [
+       "Glutamat",
+       "GAMK (γ-aminomoy kislota)",
+       "MAT ning asosiy tormozlovchi mediatori",
+       "trankvilizatorlar (benzodiazepinlar) GAMK ta’sirini kuchaytiradi"
+      ],
+      [
+       "Tirozin (DOFA orqali)",
+       "dofamin, noradrenalin, adrenalin",
+       "harakat, motivatsiya, stress javobi",
+       "Parkinson kasalligi, shok davosi"
+      ],
+      [
+       "Serin",
+       "etanolamin",
+       "fosfolipidlar sintezi",
+       "membranalar tarkibi"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Biogen aminlar ta’siri tez to‘xtatilishi kerak. Ular **monoaminooksidaza** (MAO) tomonidan oksidlovchi dezaminlanadi (R−CH~2~−NH~2~ → R−CHO + NH~3~) va katexolaminlar qo‘shimcha ravishda **katexol-O-metiltransferaza** (KOMT) tomonidan metillanadi. Hosil bo‘lgan aldegidlar kislotalarga oksidlanib, siydik bilan chiqadi (vanilinbodom kislota — katexolaminlarning asosiy metaboliti)."
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**“Pishloq reaksiyasi”:** MAO ingibitorlari (ayrim antidepressantlar) qabul qilayotgan bemor tiraminga boy ovqat (yetilgan pishloq, dudlangan go‘sht, vino, soya sousi) yesa, ichak va jigarda tiramin parchalanmaydi. U nerv uchlaridan noradrenalinni siqib chiqaradi — **gipertonik kriz** rivojlanadi. Shuning uchun bunday bemorlarga maxsus parhez tavsiya etiladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 5,
+   "title": "0. Keton tanachalari",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Keton tanachalari** — jigarda atsetil-KoA dan hosil bo‘ladigan uchta modda: **atsetoatsetat** (β-ketokislota), **β-gidroksibutirat** (β-gidroksikislota) va **atseton** (atsetoatsetatning o‘z-o‘zidan dekarboksillanish mahsuloti). Ochlik, uglevodsiz parhez va insulin yetishmovchiligida yog‘ kislotalari ko‘p oksidlanadi, atsetil-KoA Krebs siklida to‘liq ishlatilmaydi va keton tanachalariga aylanadi."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Jigar keton tanachalarini **ishlatmaydi** (unda ularni faollashtiruvchi ferment yo‘q) — ularni qonga chiqaradi.",
+      "Yurak va skelet mushaklari, buyrak po‘stlog‘i, uzoq ochlikda esa **miya** keton tanachalarini energiya manbai sifatida ishlatadi.",
+      "Atsetoatsetat va β-gidroksibutirat kuchli kislotalar (pK~a~ 3,6 va 4,7): ular ko‘p hosil bo‘lsa, gidrokarbonat buferini sarflab, **ketoatsidoz** chaqiradi.",
+      "Atseton uchuvchan va metabolizmga deyarli kirmaydi — o‘pka orqali chiqadi, nafasdan **“chirigan olma”** hidi keladi."
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/tkm/t10_keton.webp",
+     "w": 1400,
+     "h": 450,
+     "label": "Rasm 0.0",
+     "caption": "Keton tanachalari: atsetosirka (atsetoatsetat), β-gidroksimoy (D-β-gidroksibutirat) kislotalar va atseton (struktura formulalar PubChem ma’lumotlari asosida RDKit dasturida chizilgan)."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 10.0. Qonda keton tanachalari (β-gidroksibutirat) miqdorining talqini",
+     "head": [
+      "Konsentratsiya",
+      "Holat"
+     ],
+     "rows": [
+      [
+       "< 0,6 mmol/l",
+       "me’yor"
+      ],
+      [
+       "0,6–1,5 mmol/l",
+       "ketoz (ochlik, uglevodsiz parhez)"
+      ],
+      [
+       "1,5–3,0 mmol/l",
+       "ketoatsidoz xavfi"
+      ],
+      [
+       "> 3,0 mmol/l",
+       "diabetik ketoatsidoz ehtimoli yuqori — shoshilinch yordam"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Keto-enol tautomeriya:** atsetoatsetat va uning efirlari keton va enol shakllari muvozanatida bo‘ladi: CH~3~−CO−CH~2~−COOR ⇄ CH~3~−C(OH)=CH−COOR. Enol shakl FeCl~3~ bilan binafsha rang beradi. Siydikda keton tanachalari **natriy nitroprussid** bilan ishqoriy muhitda qizil-binafsha rang hosil bo‘lishi bo‘yicha aniqlanadi (Legal sinamasi, test-poloskalar)."
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Ko‘nikma: siydikda keton tanachalarini aniqlash (Legal sinamasi)",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Probirkaga 1–2 ml siydik quying.",
+      "Natriy nitroprussidning yangi tayyorlangan 5 % li eritmasidan 2–3 tomchi va 10 % li NaOH dan 0,5 ml qo‘shing — qizil rang paydo bo‘ladi.",
+      "Bir necha tomchi muzli sirka kislota qo‘shing: kreatinin bergan qizil rang yo‘qoladi, keton tanachalari bo‘lsa **qizil-binafsha** rang saqlanadi va kuchayadi.",
+      "Natijani “+” bilan baholang yoki test-poloska rangini shkala bilan solishtiring.",
+      "Musbat natijani bemorning glyukoza darajasi va klinik holati bilan birga talqin qiling."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Biogen aminlar qanday hosil bo‘ladi? Gistamin, serotonin va GAMK qaysi aminokislotalardan sintezlanadi?",
+  "Biogen aminlar qanday faolsizlantiriladi? “Pishloq reaksiyasi” nima?",
+  "Keton tanachalariga qaysi moddalar kiradi va ular qanday sharoitda ko‘p hosil bo‘ladi?",
+  "Keto-enol tautomeriyani atsetoatsetat misolida tushuntiring. Siydikda keton tanachalari qanday aniqlanadi?",
+  "Aspirinning antiagregant ta’siri nima uchun uzoq davom etadi?",
+  "Sulfanilamid va trimetoprim birgalikda nima uchun sinergik ta’sir qiladi?"
+ ],
+ "quiz": [
+  {
+   "q": "Gistamin qaysi aminokislotaning dekarboksillanishidan hosil bo‘ladi?",
+   "options": [
+    "Gistidin",
+    "Triptofan",
+    "Tirozin",
+    "Glutamat",
+    "Serin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Serotonin qaysi aminokislotadan sintezlanadi?",
+   "options": [
+    "Triptofan",
+    "Tirozin",
+    "Gistidin",
+    "Fenilalanin",
+    "Glitsin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Aminokislotalarni dekarboksillovchi fermentlarning koenzimi qaysi?",
+   "options": [
+    "Piridoksalfosfat (vitamin B~6~)",
+    "Tiaminpirofosfat",
+    "FAD",
+    "Biotin",
+    "Koenzim A"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Biogen aminlarni oksidlovchi dezaminlash yo‘li bilan faolsizlantiradigan ferment qaysi?",
+   "options": [
+    "Monoaminooksidaza",
+    "Atsetilxolinesteraza",
+    "Karboangidraza",
+    "Aldozoreduktaza",
+    "Siklooksigenaza"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "MAO ingibitorlari qabul qilayotgan bemorda qaysi ovqat gipertonik kriz chaqirishi mumkin?",
+   "options": [
+    "Yetilgan pishloq",
+    "Guruch bo‘tqasi",
+    "Olma",
+    "Sut",
+    "Non"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi keton tanachasi o‘pka orqali chiqib, nafasga o‘ziga xos hid beradi?",
+   "options": [
+    "Atseton",
+    "Atsetoatsetat",
+    "β-Gidroksibutirat",
+    "Piruvat",
+    "Laktat"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi a’zo keton tanachalarini hosil qiladi, lekin o‘zi ishlata olmaydi?",
+   "options": [
+    "Jigar",
+    "Yurak",
+    "Miya",
+    "Buyrak",
+    "Skelet mushaklari"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Siydikda keton tanachalarini aniqlashda qaysi reaktiv ishlatiladi?",
+   "options": [
+    "Natriy nitroprussid",
+    "Biuret reaktivi",
+    "Ningidrin",
+    "Fehling suyuqligi",
+    "Lugol eritmasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Aspirin siklooksigenazani qanday faolsizlantiradi?",
+   "options": [
+    "Faol markazdagi serinni qaytmas atsetillaydi",
+    "Raqobatli ravishda substrat o‘rnini egallaydi",
+    "Ferment sintezini to‘xtatadi",
+    "Fermentni gidrolizlaydi",
+    "Kofaktorini bog‘laydi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Virusli infeksiyada aspirin qabul qilgan bolalarda qanday xavfli holat rivojlanishi mumkin?",
+   "options": [
+    "Rey sindromi",
+    "Kesson kasalligi",
+    "Vilson kasalligi",
+    "Gipertonik kriz",
+    "Metgemoglobinemiya"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Masala 4",
+   "text": "1-turdagi qandli diabet bilan og‘rigan o‘smir insulin yuborishni o‘tkazib yubordi. Ko‘ngil aynishi, qusish, qorinda og‘riq, chuqur shovqinli nafas; nafasdan meva hidi keladi. Glyukoza 24 mmol/l, qonda β-gidroksibutirat 5,2 mmol/l.",
+   "ask": "Keton tanachalari nima uchun ko‘paygan? Ular qanday qilib atsidoz chaqiradi? Nafasdagi hid nimaga bog‘liq?",
+   "answer": "Insulin yetishmasa, hujayralar glyukozani ishlata olmaydi, yog‘ to‘qimasida lipoliz kuchayadi; jigarda yog‘ kislotalarining β-oksidlanishidan ko‘p **atsetil-KoA** hosil bo‘lib, keton tanachalariga aylanadi. β-gidroksibutirat 5,2 mmol/l (> 3) — **diabetik ketoatsidoz**. Atsetoatsetat va β-gidroksibutirat — kuchli organik kislotalar; ular H^+^ ajratib, gidrokarbonat buferini sarflaydi va anion oralig‘i oshgan metabolik atsidoz chaqiradi. Chuqur Kussmaul nafasi — nafas kompensatsiyasi. Atsetoatsetatning dekarboksillanishidan hosil bo‘lgan **atseton** uchuvchan bo‘lib, nafas bilan chiqadi."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Depressiya uchun MAO ingibitori qabul qilayotgan ayol mehmondorchilikda yetilgan pishloq va qizil vino iste’mol qildi. Bir soatdan keyin kuchli bosh og‘rig‘i, yurak urishi, arterial bosim 220/120 mm sim. ust.",
+   "ask": "Gipertonik krizning biokimyoviy mexanizmini tushuntiring.",
+   "answer": "Pishloq va vinoda **tiramin** — tirozinning dekarboksillanish mahsuloti — ko‘p. Me’yorda tiramin ichak devori va jigarda **MAO** tomonidan parchalanadi. MAO bloklangan bo‘lsa, tiramin qonga o‘tib, simpatik nerv uchlaridan **noradrenalin**ni siqib chiqaradi; noradrenalin ham MAO tomonidan parchalanmagani uchun uning ta’siri kuchayadi — tomirlar torayadi, bosim keskin oshadi. Bu “pishloq reaksiyasi” deb ataladi; bemorga tiraminli ovqatlardan saqlanish haqida oldindan aytilishi kerak edi."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Restoranda konservalangan tuna balig‘i yegan bir necha mijozda 20–30 daqiqadan so‘ng yuz va bo‘yin qizarishi, bosh og‘rig‘i, og‘izda achishish va qichishish paydo bo‘ldi. Hech birida allergiya anamnezi yo‘q.",
+   "ask": "Holatning kimyoviy sababi nima? Qanday davolanadi?",
+   "answer": "Bu **skombroid zaharlanish**: noto‘g‘ri saqlangan baliq go‘shtidagi **gistidin** bakteriyalar dekarboksilazasi ta’sirida **gistamin**ga aylanadi. Gistamin pishirishda parchalanmaydi; katta miqdorda iste’mol qilinganda allergiyaga o‘xshash reaksiya (tomir kengayishi, qizarish, qichishish) beradi, lekin immun mexanizmsiz. Davolash — **antigistamin** dorilar (H~1~-blokatorlar, kerak bo‘lsa H~2~-blokatorlar); og‘ir holatda allergik reaksiya kabi davolanadi."
+  },
+  {
+   "title": "Masala 7",
+   "text": "Siydik yo‘llari infeksiyasi bo‘lgan bemorga ko‘-trimoksazol (sulfametoksazol + trimetoprim) buyurildi.",
+   "ask": "Ikki dorini birga berishning biokimyoviy asosi nima? Nima uchun ular odam hujayralariga deyarli ta’sir qilmaydi?",
+   "answer": "Bakteriyalar folat kislotani o‘zi sintezlaydi. **Sulfametoksazol** — PABK ning tuzilish o‘xshashi: digidropteroatsintazada raqobatli ravishda PABK o‘rnini egallaydi. **Trimetoprim** keyingi bosqichdagi bakterial digidrofolatreduktazani bloklaydi. Bir yo‘lning ikki ketma-ket bosqichi to‘silgani uchun ta’sir **sinergik** va bakteritsid bo‘ladi, rezistentlik sekin rivojlanadi. Odam folatni ovqatdan tayyor holda oladi (digidropteroatsintazasi yo‘q), trimetoprim esa odam reduktazasiga 50 000 marta kuchsizroq ta’sir qiladi — tanlab ta’sir shunga asoslangan."
+  },
+  {
+   "title": "Masala 8",
+   "text": "Parkinson kasalligi bilan og‘rigan bemorga dofamin yetishmasligi aniqlangan, ammo davolash uchun dofaminning o‘zi emas, levodopa karbidopa bilan birga buyurildi.",
+   "ask": "Nima uchun dofaminning o‘zi berilmaydi? Karbidopa qanday vazifani bajaradi?",
+   "answer": "Dofamin — qutbli, fiziologik pH da musbat zaryadlangan amin; u **gematoensefalik to‘siqdan o‘tmaydi**. Levodopa (L-DOFA) — aminokislota bo‘lib, neytral aminokislotalar tashuvchisi orqali miyaga kiradi va u yerda DOFA-dekarboksilaza ta’sirida **dofamin**ga aylanadi. Biroq levodopaning katta qismi hali miyaga yetmay periferiyada dekarboksillanib, ko‘ngil aynishi va aritmiya chaqiradi. **Karbidopa** periferik dekarboksilazani to‘sadi, o‘zi esa miyaga o‘tmaydi — levodopaning miyaga yetadigan ulushi ortadi va dozasini kamaytirish mumkin bo‘ladi."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Biogen aminlar",
+   "back": "Aminokislotalarning dekarboksillanish mahsulotlari: gistamin, serotonin, GAMK, dofamin; koenzim — B~6~"
+  },
+  {
+   "front": "MAO",
+   "back": "Monoaminooksidaza — biogen aminlarni oksidlovchi dezaminlaydi; ingibitorlari bilan “pishloq reaksiyasi”"
+  },
+  {
+   "front": "Keton tanachalari",
+   "back": "Atsetoatsetat, β-gidroksibutirat, atseton; jigarda hosil bo‘ladi, insulin yetishmasa ko‘payadi"
+  },
+  {
+   "front": "Legal sinamasi",
+   "back": "Siydikda keton tanachalari natriy nitroprussid bilan qizil-binafsha rang beradi"
+  },
+  {
+   "front": "Aspirin va tromboksan",
+   "back": "SOG ni qaytmas atsetillaydi; trombotsit umri davomida antiagregant ta’sir"
+  },
+  {
+   "front": "Ko‘-trimoksazol",
+   "back": "Sulfametoksazol + trimetoprim — folat sintezining ikki bosqichini to‘sib, sinergik ta’sir qiladi"
+  }
+ ]
+}

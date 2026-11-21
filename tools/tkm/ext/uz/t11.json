@@ -1,0 +1,374 @@
+{
+ "append": {
+  "0": [
+   {
+    "type": "p",
+    "text": "**Porfirinlar sintezi** glitsin va suksinil-KoA dan boshlanadi: avval **δ-aminolevulin kislota** (δ-ALK), so‘ng ikki molekula δ-ALK dan pirrol halqali **porfobilinogen** hosil bo‘ladi; to‘rtta porfobilinogen birikib, porfirin halqasini beradi va oxirida unga Fe^2+^ joylashib, gem hosil bo‘ladi."
+   },
+   {
+    "type": "box",
+    "kind": "klinik",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Porfiriyalar** — gem sintezi fermentlarining irsiy yetishmovchiligi. Oraliq mahsulotlar to‘planadi: o‘tkir porfiriyada siydikda δ-ALK va porfobilinogen ko‘payib, qorinda kuchli og‘riq va nevrologik buzilishlar bo‘ladi (siydik yorug‘likda qorayadi); teri porfiriyalarida porfirinlar terida to‘planib, quyosh nuri ta’sirida pufaklar paydo qiladi."
+     }
+    ]
+   }
+  ],
+  "5": [
+   {
+    "type": "h",
+    "text": "Geterohalqali antibiotiklar kimyosi"
+   },
+   {
+    "type": "p",
+    "text": "**β-Laktam antibiotiklar** (penitsillinlar, sefalosporinlar, karbapenemlar) tarkibidagi to‘rt a’zoli **β-laktam halqasi** kuchli kuchlanishga ega va reaksion. U bakteriyaning transpeptidaza fermenti (penitsillin bog‘lovchi oqsil) serin gidroksilini atsillab, uni qaytmas faolsizlantiradi — hujayra devori sintezi to‘xtaydi. Ko‘p bakteriyalar **β-laktamaza** fermenti bilan bu halqani gidrolizlab, rezistent bo‘lib qoladi; **klavulan kislota** va **tazobaktam** β-laktamazani bog‘lab, antibiotikni himoyalaydi."
+   },
+   {
+    "type": "box",
+    "kind": "diqqat",
+    "parts": [
+     {
+      "type": "p",
+      "text": "**Ftorxinolonlar** (siprofloksatsin, levofloksatsin) va **tetratsiklinlar** Ca^2+^, Mg^2+^, Al^3+^, Fe^2+^ bilan erimaydigan xelatlar hosil qiladi. Ular sut, qatiq, antatsidlar, temir va kalsiy preparatlari bilan birga ichilsa, so‘rilishi bir necha marta kamayadi. Shuning uchun bu dorilar ular bilan kamida 2 soat oraliqda qabul qilinadi."
+     }
+    ]
+   }
+  ]
+ },
+ "insert": [
+  {
+   "after": 2,
+   "title": "0. Kislorod va oltingugurtli olti a’zoli geterohalqalar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Piran** — bitta kislorod atomli olti a’zoli halqa. Uning to‘yingan shakli monosaxaridlarning **piranoza** shaklida uchraydi (glyukopiranoza). Benzol halqasi bilan kondensirlangan **benzopiran** (xromen) va **xroman** ko‘plab o‘simlik moddalari va dorilar asosini tashkil qiladi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 11.0. Benzopiran va fenotiazin hosilalari",
+     "head": [
+      "Guruh",
+      "Misollar",
+      "Ahamiyati"
+     ],
+     "rows": [
+      [
+       "Flavonoidlar (2-fenilxromon)",
+       "kversetin, rutin",
+       "kapillyarlarni mustahkamlovchi (vitamin P faolligi), antioksidantlar"
+      ],
+      [
+       "Antotsianlar",
+       "o‘simlik pigmentlari (uzum, olcha)",
+       "pH ga qarab rangini o‘zgartiradi, antioksidant"
+      ],
+      [
+       "Kumarinlar",
+       "kumarin, varfarin, dikumarol",
+       "varfarin — vitamin K antagonisti, bilvosita antikoagulyant"
+      ],
+      [
+       "Tokoferollar (xroman halqasi)",
+       "vitamin E",
+       "membranalarning asosiy lipofil antioksidanti"
+      ],
+      [
+       "Fenotiazinlar (S va N tutgan uch halqali sistema)",
+       "xlorpromazin (aminazin), prometazin",
+       "antipsixotik va antigistamin dorilar"
+      ]
+     ]
+    },
+    {
+     "type": "box",
+     "kind": "klinik",
+     "parts": [
+      {
+       "type": "p",
+       "text": "**Varfarin** tuzilishi vitamin K ga o‘xshash; u vitamin K ni faol shaklga qaytaruvchi fermentni (vitamin K epoksidreduktazani) to‘sadi. Natijada jigarda qon ivish omillari II, VII, IX va X ning faol shakllari kam hosil bo‘ladi. Davolash **XNM (INR)** bilan nazorat qilinadi; dozasi oshib ketib qon ketsa, antidot sifatida **vitamin K** beriladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "after": 3,
+   "title": "0. Alkaloidlar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Alkaloidlar** — asosan o‘simliklarda uchraydigan, azotli geterohalqa tutgan, asos xossasiga ega va kuchli fiziologik ta’sir ko‘rsatadigan tabiiy birikmalar. Ular o‘simlikda kislotalar bilan tuz holida bo‘ladi; tibbiyotda ko‘pincha suvda yaxshi eriydigan tuzlari ishlatiladi (atropin sulfat, morfin gidroxlorid). Alkaloidlar geterohalqa turi bo‘yicha tasniflanadi."
+    },
+    {
+     "type": "table",
+     "title": "Jadval 11.0. Alkaloidlarning geterohalqa bo‘yicha tasnifi",
+     "head": [
+      "Guruh (halqa)",
+      "Alkaloidlar",
+      "Manbai",
+      "Ta’siri"
+     ],
+     "rows": [
+      [
+       "Piridin va piperidin",
+       "nikotin, lobelin",
+       "tamaki, lobeliya",
+       "N-xolinoretseptorlar orqali ta’sir"
+      ],
+      [
+       "Tropan (pirrolidin + piperidin)",
+       "atropin, skopolamin, kokain",
+       "belladonna, bangidevona, koka",
+       "M-xolinoblokator; kokain — mahalliy anestetik, giyohvand"
+      ],
+      [
+       "Xinolin",
+       "xinin",
+       "xina daraxti po‘stlog‘i",
+       "bezgakka qarshi"
+      ],
+      [
+       "Izoxinolin",
+       "morfin, kodein, papaverin",
+       "ko‘knori (opiy)",
+       "og‘riq qoldiruvchi, yo‘talga qarshi, spazmolitik"
+      ],
+      [
+       "Indol",
+       "rezerpin, vinkristin, strixnin, ergotamin",
+       "rauvolfiya, barvinok, chilibuxa, shoxkuya",
+       "gipotenziv, o‘smaga qarshi, MNS stimulyatori (zaharli), bachadon qisqartiruvchi"
+      ],
+      [
+       "Purin",
+       "kofein, teofillin, teobromin",
+       "choy, qahva, kakao",
+       "MNS stimulyatori, bronxolitik, diuretik"
+      ]
+     ]
+    },
+    {
+     "type": "img",
+     "src": "data/img/tkm/t11_alkaloid.webp",
+     "w": 1400,
+     "h": 450,
+     "label": "Rasm 0.0",
+     "caption": "Turli geterohalqali alkaloidlar: atropin (tropan), morfin (izoxinolin), xinin (xinolin) va kofein (purin) (struktura formulalar PubChem ma’lumotlari asosida RDKit dasturida chizilgan)."
+    },
+    {
+     "type": "p",
+     "text": "**Alkaloidlarga umumiy cho‘ktiruvchi reaktivlar:** Dragendorf reaktivi (kaliy vismut yodid — to‘q sariq cho‘kma), Mayer reaktivi (kaliy simob yodid — oq cho‘kma), tanin va pikrin kislota. Ular alkaloidlarning azot atomi bilan kam eriydigan tuz va komplekslar hosil qiladi — sud-tibbiy toksikologiyada alkaloidlarni topishda ishlatiladi."
+    },
+    {
+     "type": "box",
+     "kind": "eslab",
+     "parts": [
+      {
+       "type": "p",
+       "text": "Ko‘p alkaloidlar terapevtik va zaharli dozasi orasidagi farqi kichik moddalar. **Tanin** (kuchli damlangan choy) ular bilan erimaydigan birikmalar hosil qiladi — shuning uchun alkaloidlar bilan og‘iz orqali zaharlanishda me’dani yuvishda ilgari tanin eritmasi ishlatilgan."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "title": "Ko‘nikma: alkaloidlarni umumiy cho‘ktiruvchi reaktivlar bilan aniqlash",
+   "blocks": [
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Tekshiriladigan eritmani (masalan, alkaloid tuzi eritmasi) 2–3 probirkaga 1 ml dan quying va 1–2 tomchi suyultirilgan HCl bilan kislotalang.",
+      "Birinchi probirkaga Dragendorf reaktividan 2 tomchi qo‘shing — to‘q sariq yoki qizg‘ish cho‘kma alkaloid borligini ko‘rsatadi.",
+      "Ikkinchi probirkaga Mayer reaktivi qo‘shing — oq yoki sarg‘ish cho‘kma kuzatiladi.",
+      "Uchinchi probirkaga tanin eritmasi qo‘shing — oq-sarg‘ish cho‘kma tushadi.",
+      "Nazorat uchun distillangan suv bilan ham shu reaksiyalarni bajaring va natijalarni solishtiring; musbat natijani aniq alkaloidni belgilash uchun xos reaksiyalar bilan tasdiqlang."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  "Porfirin halqasi qanday sintezlanadi? Porfiriyalar nima?",
+  "Piran va benzopiran hosilalariga misollar keltiring. Varfarinning ta’sir mexanizmi qanday?",
+  "Alkaloidlar nima? Ular geterohalqa turi bo‘yicha qanday tasniflanadi?",
+  "Alkaloidlarga qaysi umumiy cho‘ktiruvchi reaktivlar bor?",
+  "β-Laktam halqasining kimyoviy xususiyati nimada? β-laktamaza va uning ingibitorlari qanday ishlaydi?",
+  "Nima uchun ftorxinolon va tetratsiklinlarni sut va antatsidlar bilan birga ichish mumkin emas?"
+ ],
+ "quiz": [
+  {
+   "q": "Varfarin qaysi vitamin antagonisti?",
+   "options": [
+    "Vitamin K",
+    "Vitamin E",
+    "Vitamin C",
+    "Vitamin B~12~",
+    "Vitamin D"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Vitamin E (tokoferol) qaysi halqa sistemasini tutadi?",
+   "options": [
+    "Xroman",
+    "Purin",
+    "Indol",
+    "Pteridin",
+    "Imidazol"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Atropin qaysi guruh alkaloidi?",
+   "options": [
+    "Tropan",
+    "Izoxinolin",
+    "Purin",
+    "Indol",
+    "Xinolin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Morfin qaysi o‘simlikdan olinadi?",
+   "options": [
+    "Ko‘knori",
+    "Xina daraxti",
+    "Belladonna",
+    "Choy",
+    "Tamaki"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi alkaloid indol halqasini tutadi?",
+   "options": [
+    "Rezerpin",
+    "Nikotin",
+    "Kofein",
+    "Atropin",
+    "Xinin"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Alkaloidlarni aniqlashda ishlatiladigan Dragendorf reaktivi tarkibida qaysi metall bor?",
+   "options": [
+    "Vismut",
+    "Simob",
+    "Kumush",
+    "Mis",
+    "Temir"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "β-Laktam antibiotiklar qaysi bakteriya fermentini faolsizlantiradi?",
+   "options": [
+    "Transpeptidazani (penitsillin bog‘lovchi oqsilni)",
+    "DNK-girazani",
+    "Ribosomani",
+    "Digidrofolatreduktazani",
+    "RNK-polimerazani"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "β-Laktamaza ingibitori qaysi?",
+   "options": [
+    "Klavulan kislota",
+    "Allopurinol",
+    "Trimetoprim",
+    "Karbidopa",
+    "Disulfiram"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Siprofloksatsin qaysi mahsulot bilan birga ichilsa, so‘rilishi keskin kamayadi?",
+   "options": [
+    "Sut",
+    "Suv",
+    "Olma sharbati",
+    "Non",
+    "Guruch"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Porfirinlar sintezining boshlang‘ich moddalari qaysilar?",
+   "options": [
+    "Glitsin va suksinil-KoA",
+    "Gistidin va atsetil-KoA",
+    "Triptofan va piruvat",
+    "Glutamin va fumarat",
+    "Serin va malonil-KoA"
+   ],
+   "answer": 0
+  }
+ ],
+ "cases": [
+  {
+   "title": "Masala 4",
+   "text": "Ikki bola dalada bangidevona urug‘larini yeb qo‘ygan. Teri qizargan va quruq, qorachiqlar keng, yorug‘likka reaksiya yo‘q, taxikardiya, harorat ko‘tarilgan, bolalar bezovta va alahsiraydi.",
+   "ask": "Qaysi moddalar bilan zaharlanish? Ular qaysi alkaloid guruhiga kiradi va qanday ta’sir qiladi?",
+   "answer": "Bangidevonada **tropan alkaloidlari** — **atropin** va skopolamin bor. Ular M-xolinoretseptorlarda atsetilxolinning raqobatli antagonistlari: so‘lak va ter bezlari sekretsiyasi to‘xtaydi (quruq teri, gipertermiya), qorachiq kengayadi, yurak urishi tezlashadi, MNS da qo‘zg‘alish va alahsirash bo‘ladi. Yordam: me’dani yuvish, faollashtirilgan ko‘mir (alkaloidlarni yaxshi bog‘laydi), sovitish; og‘ir holatda xolinesteraza ingibitori **fizostigmin** atsetilxolinni ko‘paytirib, blokadani yengadi."
+  },
+  {
+   "title": "Masala 5",
+   "text": "Yurak klapani protezlangan bemor varfarin qabul qiladi (XNM 2,5–3,5 bo‘lishi kerak). Ko‘p miqdorda ismaloq va karam iste’mol qila boshlagach, XNM 1,6 ga tushdi.",
+   "ask": "XNM nima uchun pasaydi? Varfarin va vitamin K o‘rtasidagi bog‘liqlikni tushuntiring.",
+   "answer": "Varfarin — kumarin hosilasi; u vitamin K ni qayta faollashtiruvchi **vitamin K epoksidreduktaza**ni to‘sib, faol ivish omillari (II, VII, IX, X) hosil bo‘lishini kamaytiradi. Ismaloq va karamda **vitamin K** ko‘p: ovqatdan keladigan vitamin K ko‘paygani varfarin ta’sirini qisman yengadi, ivish omillari ko‘proq hosil bo‘ladi va XNM pasayadi — tromboz xavfi ortadi. Bemorga vitamin K ga boy ovqatlarni keskin o‘zgartirmasdan, bir me’yorda iste’mol qilish tavsiya etiladi."
+  },
+  {
+   "title": "Masala 6",
+   "text": "Siydik yo‘llari infeksiyasi bo‘lgan bemor siprofloksatsin tabletkalarini har kuni bir stakan sut bilan va me’da achishishi uchun antatsid bilan birga ichdi. Uch kundan keyin ham isitma va belgilar saqlanmoqda.",
+   "ask": "Davolash samarasizligining kimyoviy sababini tushuntiring. Qanday tavsiya berasiz?",
+   "answer": "Ftorxinolon molekulasidagi **keto va karboksil guruhlar** Ca^2+^ (sut), Mg^2+^ va Al^3+^ (antatsid) ionlari bilan barqaror, erimaydigan **xelat** hosil qiladi. Xelat ichakda so‘rilmaydi — qonda va siydikda antibiotik konsentratsiyasi samarali darajaga yetmaydi. Tavsiya: siprofloksatsinni suv bilan ichish, sut mahsulotlari, antatsid, temir va kalsiy preparatlarini dori ichishdan kamida 2 soat oldin yoki 6 soat keyin qabul qilish."
+  },
+  {
+   "title": "Masala 7",
+   "text": "Bolada otit amoksitsillin bilan davolandi, lekin samara bo‘lmadi. Ekmada β-laktamaza ishlab chiqaruvchi gemofil tayoqcha aniqlandi. Shifokor amoksitsillin + klavulan kislotaga o‘tdi.",
+   "ask": "Amoksitsillin nima uchun ishlamadi? Klavulan kislota qanday yordam beradi?",
+   "answer": "Amoksitsillinning faol qismi — kuchlanishli **β-laktam halqasi**: u transpeptidazani atsillab, hujayra devori sintezini to‘xtatadi. Bakteriya **β-laktamaza** fermenti bu halqani gidrolizlab ochadi — antibiotik ta’sirsiz bo‘lib qoladi. **Klavulan kislota** ham β-laktam tuzilishiga ega: u β-laktamaza bilan qaytmas bog‘lanib, uni faolsizlantiradi (“o‘zini qurbon qiluvchi” ingibitor), shu tufayli amoksitsillin saqlanib qoladi va ta’sir qiladi."
+  },
+  {
+   "title": "Masala 8",
+   "text": "Hushsiz holatda topilgan yigitda nafas siyrak va yuzaki (daqiqasiga 6 marta), qorachiqlar nuqtadek toraygan, qo‘lida in’eksiya izlari bor.",
+   "ask": "Qaysi alkaloid guruhidagi moddalar bilan zaharlanish taxmin qilinadi? Antidot qanday ta’sir qiladi?",
+   "answer": "Klinik uchlik — koma, nafas susayishi, **mioz** — **opioidlar** (morfin, geroin — izoxinolin skeletli morfinan hosilalari) bilan zaharlanishga xos. Ular miyadagi μ-opioid retseptorlarini qo‘zg‘atib, nafas markazini bosadi. Antidot — **nalokson**: tuzilishi morfinga yaqin, lekin retseptorni faollashtirmaydi; u **raqobatli antagonist** sifatida opioidni retseptordan siqib chiqaradi va nafas bir necha daqiqada tiklanadi. Naloksonning ta’siri qisqa, shuning uchun bemor kuzatuvda qoladi va kerak bo‘lsa doza takrorlanadi."
+  }
+ ],
+ "cards": [
+  {
+   "front": "Porfiriyalar",
+   "back": "Gem sintezi fermentlari yetishmovchiligi; δ-ALK, porfobilinogen yoki porfirinlar to‘planadi"
+  },
+  {
+   "front": "Varfarin",
+   "back": "Kumarin hosilasi, vitamin K antagonisti; XNM bilan nazorat qilinadi, antidoti — vitamin K"
+  },
+  {
+   "front": "Alkaloidlar",
+   "back": "Azotli geterohalqali, asos xossali o‘simlik moddalari: atropin, morfin, xinin, kofein"
+  },
+  {
+   "front": "Dragendorf reaktivi",
+   "back": "Kaliy vismut yodid; alkaloidlar bilan to‘q sariq cho‘kma beradi"
+  },
+  {
+   "front": "β-Laktam halqasi",
+   "back": "Kuchlanishli to‘rt a’zoli halqa; transpeptidazani atsillaydi, β-laktamaza uni gidrolizlaydi"
+  },
+  {
+   "front": "Ftorxinolonlar va metallar",
+   "back": "Ca^2+^, Mg^2+^, Al^3+^, Fe^2+^ bilan xelat hosil qilib, so‘rilmay qoladi"
+  }
+ ]
+}

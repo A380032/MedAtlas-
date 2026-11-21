@@ -1,0 +1,142 @@
+{
+ "append": {
+  "1": [
+   {"type": "h", "text": "Ichimlik suvining kimyoviy sifati"},
+   {"type": "p", "text": "Odam sutkasiga 2–2,5 l suv iste’mol qiladi, shuning uchun suvdagi aralashmalar organizmga doimiy ta’sir qiladi. Suvning **qattiqligi** undagi Ca^2+^ va Mg^2+^ tuzlari bilan belgilanadi. **Vaqtinchalik (karbonatli) qattiqlikni** gidrokarbonatlar beradi va u qaynatilganda yo‘qoladi: Ca(HCO~3~)~2~ → CaCO~3~↓ + CO~2~↑ + H~2~O (choynakdagi quyqa shu reaksiya mahsuli). **Doimiy qattiqlikni** sulfat va xloridlar beradi; u qaynatishda yo‘qolmaydi va faqat ion almashinuvi yoki soda bilan yumshatiladi."},
+   {"type": "table", "title": "Jadval 1.0. Ichimlik suvining ayrim gigiyenik ko‘rsatkichlari (milliy standart va JSST tavsiyalari asosida)", "head": ["Ko‘rsatkich", "Ruxsat etilgan qiymat", "Me’yor buzilganda"], "rows": [
+    ["Umumiy qattiqlik", "≤ 7 mmol-ekv/l", "ta’mi buziladi, buyrak toshlari xavfi ortadi"],
+    ["Quruq qoldiq (minerallashuv)", "≤ 1000 mg/l", "sho‘r ta’m, suv-tuz almashinuvi buziladi"],
+    ["Nitratlar (NO~3~^−^)", "≤ 45 mg/l", "chaqaloqlarda metgemoglobinemiya"],
+    ["Ftoridlar (F^−^)", "0,7–1,5 mg/l", "kam bo‘lsa — karies, ko‘p bo‘lsa — flyuoroz"],
+    ["Mishyak (As)", "≤ 0,01 mg/l", "teri o‘zgarishlari, o‘sma xavfi"],
+    ["Qo‘rg‘oshin (Pb)", "≤ 0,01 mg/l", "kamqonlik, bolalarda aqliy rivojlanish sustlashuvi"],
+    ["pH", "6,5–8,5", "quvurlar korroziyasi, metallar suvga o‘tadi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Ichimlik suvining tarkibi **endemik kasalliklar** sababi bo‘lishi mumkin: suvda yod kam bo‘lsa — endemik buqoq, ftor kam bo‘lsa — karies, ko‘p bo‘lsa — flyuoroz, minerallashuvi yuqori bo‘lsa — siydik tosh kasalligi. Bunday kasalliklar geografik hudud bilan bog‘langanligi bilan ajralib turadi."}]}
+  ],
+  "4": [
+   {"type": "h", "text": "Kalsiy va fosfor almashinuvining boshqarilishi"},
+   {"type": "p", "text": "Qon plazmasidagi kalsiyning taxminan yarmi **ionlangan** (faol) holatda, qolgani albumin bilan bog‘langan va kompleks tuzlar shaklida bo‘ladi. Ionlangan Ca^2+^ ning me’yori 1,1–1,3 mmol/l. Uning doimiyligini uchta gormon saqlaydi:"},
+   {"type": "list", "items": [
+    "**Paratgormon** (qalqonsimon bez oldi bezi) — suyakdan Ca^2+^ ni chiqaradi, buyrakda Ca^2+^ qayta so‘rilishini kuchaytiradi va fosfat chiqarilishini oshiradi: qonda Ca^2+^ ko‘payadi.",
+    "**Kalsitriol** (vitamin D ning faol shakli) — ichakda Ca^2+^ va fosfat so‘rilishini oshiradi.",
+    "**Kalsitonin** (qalqonsimon bezning C-hujayralari) — suyakdan Ca^2+^ chiqishini to‘xtatib, qonda uning miqdorini kamaytiradi."
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Laboratoriyada ko‘pincha **umumiy** kalsiy o‘lchanadi. Qonda albumin kam bo‘lsa (jigar sirrozi, nefrotik sindrom), umumiy kalsiy past chiqadi, ammo faol ionlangan kalsiy me’yorida bo‘lishi mumkin. Shunda **to‘g‘rilangan kalsiy** hisoblanadi: Ca(to‘g‘r.) = Ca(o‘lchangan) + 0,02·(40 − albumin), bunda Ca — mmol/l, albumin — g/l."}]},
+   {"type": "p", "text": "**Magniy va kalsiy** ko‘p jarayonlarda antagonist: Ca^2+^ mushak qisqarishini boshlaydi, Mg^2+^ esa kalsiy kanallarini to‘sib, qo‘zg‘aluvchanlikni pasaytiradi. Shu sababli magniy sulfat eklampsiyadagi talvasalarda va ayrim aritmiyalarda ishlatiladi."}
+  ],
+  "6": [
+   {"type": "h", "text": "Temir va mis almashinuvi"},
+   {"type": "p", "text": "Ovqat bilan kiradigan temirning atigi 1–2 mg i so‘riladi — taxminan shuncha temir sutkada ichak epiteliysi va teri bilan yo‘qotiladi. Temir o‘n ikki barmoqli ichakda **Fe^2+^** shaklida so‘riladi (askorbin kislota Fe^3+^ ni Fe^2+^ ga qaytarib so‘rilishni yaxshilaydi), qonda **Fe^3+^** holatida **transferrin** oqsili bilan tashiladi, jigar va taloqda **ferritin** va gemosiderin ko‘rinishida zaxiralanadi. Organizmda temirni faol chiqarish mexanizmi yo‘q, shuning uchun ko‘p qon quyilganda u to‘planib qoladi."},
+   {"type": "table", "title": "Jadval 1.0. Temir va mis almashinuvining laboratoriya ko‘rsatkichlari (kattalar)", "head": ["Ko‘rsatkich", "Taxminiy me’yor", "Nimani aks ettiradi"], "rows": [
+    ["Zardob temiri", "9–30 mkmol/l", "qondagi tashilayotgan temir"],
+    ["Ferritin", "20–300 mkg/l", "temir zaxirasi; tanqislikda eng erta kamayadi"],
+    ["Transferrinning temir bilan to‘yinishi", "20–45 %", "temir ta’minoti; gemoxromatozda oshadi"],
+    ["Seruloplazmin", "0,2–0,6 g/l", "mis tashuvchi oqsil; Vilson kasalligida kamayadi"],
+    ["Zardob misi", "11–24 mkmol/l", "misning umumiy holati"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Vilson–Konovalov kasalligida** mis o‘t bilan chiqarilmay, jigar, miyaning po‘stloq osti yadrolari va shox pardada to‘planadi. Shox parda chetida yashil-qo‘ng‘ir **Kayzer–Fleysher halqasi** paydo bo‘ladi, qonda seruloplazmin kamayadi. Davolashda misni bog‘lovchi D-penitsillamin ishlatiladi."}]}
+  ],
+  "8": [
+   {"type": "h", "text": "Ionlashtiruvchi nurlanishning biologik ta’siri"},
+   {"type": "p", "text": "Nurlanish to‘qimaga ikki yo‘l bilan ta’sir qiladi. **Bevosita ta’sirda** kvant yoki zarracha DNK va oqsil molekulasini o‘zi ionlaydi va bog‘larni uzadi. **Bilvosita ta’sir** asosiy hisoblanadi: to‘qimaning ≈ 70 % i suv bo‘lgani uchun nurlanish suvni parchalaydi (**radioliz**): H~2~O → H· + ·OH. Hosil bo‘lgan erkin radikallar, ayniqsa gidroksil radikali ·OH, DNK, membrana lipidlari va fermentlarni shikastlaydi."},
+   {"type": "table", "title": "Jadval 1.0. Bir martalik butun tana nurlanishi dozasi va oqibatlari", "head": ["Ekvivalent doza", "Oqibati"], "rows": [
+    ["< 0,1 Sv", "klinik belgilar yo‘q, uzoq muddatli o‘sma xavfi biroz ortadi"],
+    ["0,25–1 Sv", "qonda limfotsitlar kamayadi, odatda belgilarsiz"],
+    ["1–2 Sv", "o‘tkir nur kasalligining yengil darajasi"],
+    ["4–5 Sv", "davolanmasa nurlanganlarning taxminan yarmi halok bo‘ladi"],
+    ["> 10 Sv", "deyarli har doim o‘lim bilan tugaydi"]
+   ]},
+   {"type": "p", "text": "Hujayralarning nurga sezgirligi ularning bo‘linish tezligiga bog‘liq (**Bergonye–Tribondo qoidasi**): ilik, ichak epiteliysi, jinsiy hujayralar va limfotsitlar eng sezgir, nerv va mushak hujayralari esa chidamli. Nurlanishdan himoyalanishning uch asosiy usuli — **vaqt** (manba yonida kam bo‘lish), **masofa** (doza masofa kvadratiga teskari kamayadi) va **to‘siq** (γ-nurlanishga qarshi qo‘rg‘oshin va beton)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Atom elektr stansiyasidagi avariyada atrofga radioaktiv ^131^I chiqadi va u qalqonsimon bezda to‘planadi. Uni oldini olish uchun aholiga **kaliy yodid** tabletkasi (kattalarga 130 mg) beriladi: bez barqaror yod bilan to‘yinib, radioaktiv yodni qabul qilmaydi."}]}
+  ]
+ },
+ "insert": [
+  {"after": 3, "title": "0. Atom tuzilishi va davriy qonun — biogen elementlarni tushunish kaliti", "blocks": [
+   {"type": "p", "text": "Elementning kimyoviy va biologik xossalarini uning **elektron tuzilishi** belgilaydi. D.I. Mendeleyevning davriy qonuniga ko‘ra elementlar xossalari yadro zaryadiga (tartib raqamiga) davriy bog‘liq. Tashqi elektronlar qaysi orbitalga joylashishiga qarab elementlar **s-, p-, d- va f-bloklarga** bo‘linadi."},
+   {"type": "table", "title": "Jadval 1.0. Ayrim biogen elementlarning elektron formulasi va organizmdagi shakli", "head": ["Element", "Elektron formulasi", "Blok", "Organizmdagi asosiy shakli"], "rows": [
+    ["Na", "1s^2^2s^2^2p^6^3s^1^", "s", "Na^+^"],
+    ["Ca", "[Ar]4s^2^", "s", "Ca^2+^, gidroksiapatit"],
+    ["P", "[Ne]3s^2^3p^3^", "p", "fosfat ionlari, fosfoefirlar"],
+    ["Cl", "[Ne]3s^2^3p^5^", "p", "Cl^−^"],
+    ["Fe", "[Ar]3d^6^4s^2^", "d", "Fe^2+^ / Fe^3+^ (gem, Fe–S oqsillar)"],
+    ["Cu", "[Ar]3d^10^4s^1^", "d", "Cu^+^ / Cu^2+^ (oksidazalar)"],
+    ["Zn", "[Ar]3d^10^4s^2^", "d", "Zn^2+^ (metallofermentlar)"]
+   ]},
+   {"type": "p", "text": "**Elektromanfiylik** — atomning bog‘dagi elektronlarni o‘ziga tortish qobiliyati. Kislorod va azot elektromanfiyligi yuqori bo‘lgani uchun O–H va N–H bog‘lar qutbli bo‘ladi va **vodorod bog‘lar** hosil qiladi — suvning xossalari, oqsillarning ikkilamchi tuzilishi va DNK qo‘sh spirali shunga asoslanadi."},
+   {"type": "p", "text": "**Ion radiusi** biologik tanlovchanlikni belgilaydi: Na^+^ (0,102 nm) va K^+^ (0,138 nm) o‘lchami farqli bo‘lgani uchun membranadagi ion kanallari ularni ajrata oladi. O‘lchami va zaryadi yaqin ionlar bir-birining o‘rnini egallashi mumkin — bu **izomorf almashinish** deyiladi va ko‘p zaharlanishlar sababi bo‘ladi."},
+   {"type": "box", "kind": "yodlash", "parts": [{"type": "p", "text": "O‘rin almashuvchi juftlar: **Li ↔ Na, Tl ↔ K, Sr ↔ Ca, Cd ↔ Zn, Be ↔ Mg**. Masalan, radioaktiv ^90^Sr kalsiy o‘rniga suyakka joylashib, ilikni uzoq vaqt nurlaydi; talliy kaliy kanallariga kirib, asab tizimini zaharlaydi."}]}
+  ]},
+  {"after": 6, "title": "0. Toksik elementlar va ularning antidotlari", "blocks": [
+   {"type": "p", "text": "Og‘ir metallar (Hg^2+^, Pb^2+^, Cd^2+^, As^3+^) oqsillarning **sulfgidril (–SH) guruhlari** bilan mustahkam bog‘lanadi va fermentlarni faolsizlantiradi, shuning uchun ular **tiol zaharlari** deyiladi. Bundan tashqari, ular hayotiy zarur metallarni o‘rnidan siqib chiqaradi: qo‘rg‘oshin gem sintezidagi δ-aminolevulin kislota degidratazadan ruxni siqib chiqarib, kamqonlik chaqiradi."},
+   {"type": "p", "text": "Zaharlanishni davolash **xelatlovchi antidotlarga** asoslangan: antidot metall bilan barqaror, suvda eriydigan kompleks hosil qiladi va u siydik bilan chiqariladi. Kompleks hosil bo‘lishining kimyosi 3-mavzuda batafsil ko‘riladi."},
+   {"type": "table", "title": "Jadval 1.0. Toksik elementlar va ularning antidotlari", "head": ["Zaharli modda", "Antidot", "Ta’sir mexanizmi"], "rows": [
+    ["Simob, mishyak", "unitiol, dimerkaprol", "ikki –SH guruhi metallni bog‘lab, siydik bilan chiqaradi"],
+    ["Qo‘rg‘oshin", "CaNa~2~-EDTA (tetatsin-kalsiy), suksimer", "Pb^2+^ kompleksdagi Ca^2+^ o‘rnini egallaydi"],
+    ["Mis (Vilson kasalligi)", "D-penitsillamin", "misni xelatlab, siydik bilan chiqaradi"],
+    ["Temir (o‘tkir zaharlanish, ortiqcha to‘planish)", "deferoksamin", "Fe^3+^ bilan barqaror kompleks hosil qiladi"],
+    ["Talliy", "Berlin lazuri", "ichakda Tl^+^ ni ion almashinuvi bilan bog‘laydi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Qo‘rg‘oshin bilan surunkali zaharlanish** belgilari: qorinda kuchli sanchiq (qo‘rg‘oshin sanchig‘i), milk chetida kulrang hoshiya, eritrotsitlarning bazofil donadorligi, kamqonlik, qo‘l-oyoqlarda holsizlik. Siydikda δ-aminolevulin kislota ko‘payadi."}]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "Qo‘rg‘oshinni chiqarish uchun faqat **kalsiyli** tuz CaNa~2~-EDTA ishlatiladi. Kalsiysiz Na~2~-EDTA qondagi Ca^2+^ ni ham bog‘lab, og‘ir gipokalsiyemiya va yurak to‘xtashiga olib kelishi mumkin."}]}
+  ]},
+  {"after": 7, "title": "0. Biogen elementlarni miqdoriy aniqlash usullari", "blocks": [
+   {"type": "p", "text": "Sifat reaksiyasi ion borligini ko‘rsatadi, klinikada esa uning **aniq miqdorini** bilish kerak. Buning uchun kimyoviy va instrumental (asbobli) usullar ishlatiladi."},
+   {"type": "table", "title": "Jadval 1.0. Elementlarni miqdoriy aniqlash usullari", "head": ["Usul", "Asosi", "Klinikada nima aniqlanadi"], "rows": [
+    ["Titrimetriya", "reaktivning sarflangan hajmi bo‘yicha", "me’da shirasi kislotaliligi, Ca^2+^, Cl^−^"],
+    ["Fotometriya (spektrofotometriya)", "rangli birikmaning yorug‘lik yutishi", "temir, fosfor, magniy, gemoglobin"],
+    ["Alanga fotometriyasi", "alangada qo‘zg‘algan atomlar nurlanishining jadalligi", "Na^+^, K^+^, Li^+^"],
+    ["Atom-absorbsion spektrometriya", "atomlar bug‘ining o‘ziga xos to‘lqinni yutishi", "Pb, Cd, Cu, Zn, Hg — iz miqdorlari"],
+    ["Ion-selektiv elektrodlar", "elektrod potensialining ion faolligiga bog‘liqligi", "Na^+^, K^+^, Ca^2+^, Cl^−^ (gaz-elektrolit analizatorlari)"]
+   ]},
+   {"type": "p", "text": "Fotometriya **Buger–Lambert–Ber qonuniga** asoslanadi: eritmaning optik zichligi rangli modda konsentratsiyasiga va qatlam qalinligiga to‘g‘ri proporsional, A = ε·l·C. Konsentratsiya standart eritmalar bo‘yicha tuzilgan **kalibrlash grafigidan** topiladi."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "Zamonaviy klinik laboratoriyada Na^+^, K^+^, Ca^2+^ va Cl^−^ asosan **ion-selektiv elektrodlar** bilan bir necha daqiqada o‘lchanadi; og‘ir metallarning iz miqdorlari esa **atom-absorbsion** usul bilan aniqlanadi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: radionuklid faolligi va qoldiq miqdorini hisoblash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Radionuklidning yarim yemirilish davrini (T~½~) jadvaldan toping.",
+    "O‘tgan vaqtni T~½~ bilan bir xil birlikka keltiring va yarim davrlar sonini toping: n = t / T~½~.",
+    "Qoldiq faollikni hisoblang: A = A~0~ / 2^n^ (n butun bo‘lmasa, A = A~0~·e^−λt^, λ = 0,693 / T~½~).",
+    "Natijani birlik bilan yozing (MBq yoki kBq) va mantiqiyligini tekshiring: faollik hech qachon boshlang‘ichdan katta bo‘lmaydi.",
+    "Tibbiy xulosa chiqaring: bemor qachongacha atrofdagilar uchun manba bo‘lib qolishini baholang."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Atomning elektron formulasi elementning biologik vazifasini qanday belgilaydi? s-, p- va d-elementlarga misollar keltiring.",
+  "Izomorf almashinish nima? Stronsiy-90 va talliyning zaharliligini shu bilan tushuntiring.",
+  "Og‘ir metallar qaysi mexanizm bilan fermentlarni faolsizlantiradi? Ularning antidotlari qanday ishlaydi?",
+  "Organizmda temir qanday so‘riladi, tashiladi va zaxiralanadi?",
+  "Suvning vaqtinchalik va doimiy qattiqligi nimasi bilan farq qiladi?",
+  "Ionlashtiruvchi nurlanishning bevosita va bilvosita ta’siri nimadan iborat? Nurlanishdan himoyalanishning qaysi usullarini bilasiz?"
+ ],
+ "quiz": [
+  {"q": "Simob va mishyak bilan zaharlanishda qaysi antidot ishlatiladi?", "options": ["Unitiol (dimerkaprol)", "Deferoksamin", "Berlin lazuri", "Metilen ko‘ki", "Kalsiy glyukonat"], "answer": 0},
+  {"q": "Qo‘rg‘oshin bilan zaharlanishda qaysi antidot ishlatiladi?", "options": ["CaNa~2~-EDTA (tetatsin-kalsiy)", "Na~2~-EDTA", "Atropin", "Natriy gidrokarbonat", "Kaliy yodid"], "answer": 0},
+  {"q": "Qon plazmasida temirni tashuvchi oqsil qaysi?", "options": ["Transferrin", "Ferritin", "Seruloplazmin", "Gemoglobin", "Mioglobin"], "answer": 0},
+  {"q": "Suvning vaqtinchalik qattiqligini qaysi tuzlar beradi?", "options": ["Ca va Mg gidrokarbonatlari", "Ca va Mg sulfatlari", "Na va K xloridlari", "Ca va Mg xloridlari", "Na va K nitratlari"], "answer": 0},
+  {"q": "Temir atomining elektron formulasi qaysi?", "options": ["[Ar]3d^6^4s^2^", "[Ar]4s^2^", "[Ar]3d^10^4s^1^", "[Ne]3s^2^3p^6^", "[Ar]3d^10^4s^2^"], "answer": 0},
+  {"q": "Suyakda kalsiy o‘rnini egallab, ilikni uzoq nurlaydigan radionuklid qaysi?", "options": ["^90^Sr", "^131^I", "^99m^Tc", "^18^F", "^125^I"], "answer": 0},
+  {"q": "Radiatsion avariyada qalqonsimon bezni himoya qilish uchun nima beriladi?", "options": ["Kaliy yodid", "Natriy tiosulfat", "Unitiol", "Kalsiy xlorid", "Temir sulfat"], "answer": 0},
+  {"q": "Natriy va kaliyni o‘lchash uchun klinik laboratoriyada eng ko‘p ishlatiladigan usul qaysi?", "options": ["Ion-selektiv elektrodlar", "Gravimetriya", "Polyarimetriya", "Refraktometriya", "Qog‘oz xromatografiyasi"], "answer": 0},
+  {"q": "Vilson–Konovalov kasalligida qonda qaysi oqsil kamayadi?", "options": ["Seruloplazmin", "Transferrin", "Ferritin", "Albumin", "Fibrinogen"], "answer": 0},
+  {"q": "Ionlashtiruvchi nurlanishning bilvosita ta’siri asosan nimaga bog‘liq?", "options": ["Suv radiolizi va erkin radikallarga", "DNK ning qizib erishiga", "Oqsillarning gidroliziga", "Lipidlarning sovunlanishiga", "Osmotik bosimning oshishiga"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Akkumulyator zavodida ishlaydigan 45 yoshli erkak qorindagi kuchli sanchiqqa, holsizlikka shikoyat qilmoqda. Ko‘rikda milk chetida kulrang hoshiya, qon tahlilida kamqonlik va eritrotsitlarning bazofil donadorligi aniqlandi.", "ask": "Qaysi element bilan zaharlanish taxmin qilinadi? Uning ta’sir mexanizmi qanday? Qaysi antidot ishlatiladi va nima uchun aynan uning kalsiyli tuzi?", "answer": "Bu **qo‘rg‘oshin** bilan surunkali zaharlanish (akkumulyator ishlab chiqarishi — asosiy manba). Pb^2+^ fermentlarning –SH guruhlarini bog‘laydi va gem sintezidagi δ-aminolevulin kislota degidratazadan ruxni siqib chiqaradi — gem sintezi buziladi, kamqonlik rivojlanadi, siydikda δ-ALK ko‘payadi. Antidot — **CaNa~2~-EDTA** (tetatsin-kalsiy) yoki suksimer: Pb^2+^ kompleksdagi Ca^2+^ o‘rnini egallab, suvda eriydigan kompleks hosil qiladi va siydik bilan chiqadi. Kalsiysiz Na~2~-EDTA qondagi Ca^2+^ ni bog‘lab, xavfli gipokalsiyemiya chaqirgan bo‘lardi."},
+  {"title": "Masala 5", "text": "Qishloq qudug‘idan olingan suv tahlil qilindi: 1 l suvda 120 mg Ca^2+^ va 36 mg Mg^2+^ bor (Ca ning ekvivalent massasi 20, Mg niki 12 g/mol).", "ask": "Suvning umumiy qattiqligini (mmol-ekv/l) hisoblang va ichimlik suvi me’yori bilan solishtiring. Bunday suvni uzoq ichish qanday oqibatga olib kelishi mumkin?", "answer": "Ca^2+^: 120 / 20 = 6 mmol-ekv/l; Mg^2+^: 36 / 12 = 3 mmol-ekv/l. Umumiy qattiqlik = 6 + 3 = **9 mmol-ekv/l** — me’yordan (≤ 7 mmol-ekv/l) yuqori, suv **qattiq**. Uzoq muddat ichilganda siydikda kalsiy tuzlari ko‘payadi va **siydik tosh kasalligi** xavfi ortadi. Suvni ion almashinuvchi filtr bilan yumshatish tavsiya etiladi."},
+  {"title": "Masala 6", "text": "Jigar sirrozi bilan og‘rigan bemorda umumiy kalsiy 1,9 mmol/l (me’yor 2,2–2,6), albumin 25 g/l (me’yor 35–50). Tetaniya belgilari yo‘q.", "ask": "To‘g‘rilangan kalsiyni hisoblang. Bemorda haqiqiy gipokalsiyemiya bormi?", "answer": "Ca(to‘g‘r.) = 1,9 + 0,02·(40 − 25) = 1,9 + 0,3 = **2,2 mmol/l** — me’yor chegarasida. Umumiy kalsiyning pastligi **albumin kamayganiga** bog‘liq: bog‘langan kalsiy kamaygan, faol ionlangan kalsiy esa yetarli. Shu sababli tetaniya yo‘q. Ishonch hosil qilish uchun ionlangan kalsiyni (me’yor 1,1–1,3 mmol/l) bevosita o‘lchash kerak."},
+  {"title": "Masala 7", "text": "Suyak ssintigrafiyasi uchun bemorga soat 8:00 da 740 MBq faollikdagi ^99m^Tc preparati yuborildi (T~½~ = 6 soat).", "ask": "Soat 20:00 da va keyingi kuni soat 8:00 da bemor organizmidagi qoldiq faollik qancha bo‘ladi (chiqarilishni hisobga olmang)?", "answer": "12 soat = 2 ta yarim davr: A = 740 / 2^2^ = **185 MBq**. 24 soat = 4 ta yarim davr: A = 740 / 2^4^ = 740 / 16 ≈ **46 MBq**. Bir sutkada faollik 16 marta kamayadi — qisqa yashovchi ^99m^Tc ning diagnostikada afzalligi shunda. Bundan tashqari, preparat qisman siydik bilan chiqadi, shuning uchun bemorga ko‘p suyuqlik ichish tavsiya etiladi."},
+  {"title": "Masala 8", "text": "28 yoshli ayol holsizlik, bosh aylanishi, sochlari to‘kilishiga shikoyat qilmoqda; hayz ko‘p va uzoq davom etadi. Tahlil: gemoglobin 90 g/l, zardob temiri 6 mkmol/l, ferritin 8 mkg/l.", "ask": "Qanday holat? Ferritin nimani ko‘rsatadi? Temir preparatini qanday shaklda va nima bilan qabul qilish kerak?", "answer": "**Temir tanqisligi kamqonligi**: gemoglobin, zardob temiri va ferritin kamaygan. Ferritin — temir **zaxirasining** ko‘rsatkichi; uning keskin kamayishi zaxira tugaganini bildiradi (sababi — surunkali qon yo‘qotish). Temir ichakda **Fe^2+^** shaklida yaxshi so‘riladi, shuning uchun ikki valentli temir tuzlari (FeSO~4~) tavsiya etiladi, ularni **askorbin kislota** bilan birga qabul qilish so‘rilishni oshiradi. Choy, sut va antatsidlar bilan birga ichilmaydi — ular temirni erimaydigan birikmalarga bog‘laydi."}
+ ],
+ "cards": [
+  {"front": "Tiol zaharlari", "back": "Oqsillarning –SH guruhlarini bog‘lab, fermentlarni faolsizlantiradigan metallar: Hg, Pb, Cd, As"},
+  {"front": "Unitiol", "back": "Ikki –SH guruhli antidot; simob va mishyak bilan zaharlanishda metallni bog‘lab chiqaradi"},
+  {"front": "Transferrin va ferritin", "back": "Transferrin — qonda Fe^3+^ ni tashiydi; ferritin — temirni hujayrada zaxiralaydi"},
+  {"front": "Suv qattiqligi", "back": "Ca^2+^ va Mg^2+^ tuzlari miqdori; ichimlik suvida ≤ 7 mmol-ekv/l"},
+  {"front": "Radioliz", "back": "Nurlanish ta’sirida suvning parchalanishi: H~2~O → H· + ·OH; erkin radikallar to‘qimani shikastlaydi"},
+  {"front": "To‘g‘rilangan kalsiy", "back": "Ca + 0,02·(40 − albumin); albumin kam bo‘lganda haqiqiy kalsiy holatini baholash uchun"}
+ ]
+}

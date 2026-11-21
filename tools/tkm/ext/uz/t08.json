@@ -1,0 +1,105 @@
+{
+ "append": {
+  "4": [
+   {"type": "h", "text": "Nanozarrachalar tibbiyotda"},
+   {"type": "p", "text": "1–100 nm o‘lchamdagi zarrachalar kolloid sohaga to‘g‘ri keladi; ularni maqsadli yaratish va ishlatish **nanotibbiyot** deb ataladi. Nanozarrachalar o‘lchami tufayli to‘qima va hujayralarga kira oladi, sirtiga dori yoki antitelo biriktirish mumkin, o‘sma tomirlari o‘tkazuvchan bo‘lgani uchun o‘smada ko‘proq to‘planadi."},
+   {"type": "table", "title": "Jadval 8.0. Tibbiyotda ishlatiladigan nanozarrachalar", "head": ["Nanozarracha", "Tuzilishi", "Qo‘llanilishi"], "rows": [
+    ["Liposomalar", "fosfolipid qo‘sh qavatli pufakchalar", "liposomal doksorubitsin, amfoteritsin B — zaharliligi kamaygan dorilar"],
+    ["Lipid nanozarrachalar", "ionlanuvchi lipidlar, xolesterin, PEG-lipid", "mRNK vaksinalarini hujayraga yetkazish"],
+    ["Albuminli nanozarrachalar", "dori albumin bilan bog‘langan", "paklitakselni erituvchisiz yuborish"],
+    ["Temir oksidi nanozarrachalari", "superparamagnit Fe~3~O~4~ yadro", "MRT kontrasti, temir tanqisligini davolash"],
+    ["Kumush nanozarrachalari", "metall kumush zoli", "antibakterial bog‘lamlar va qoplamalar"]
+   ]}
+  ],
+  "6": [
+   {"type": "h", "text": "Dori shakllari dispers sistema sifatida"},
+   {"type": "p", "text": "**Suspenziya va emulsiyalar** termodinamik beqaror: vaqt o‘tishi bilan zarrachalar cho‘kadi, emulsiya tomchilari yuqoriga qalqib chiqadi (qaymoqlanish) va qo‘shilib ketadi (**koalessensiya**) — emulsiya qatlamlarga ajraladi. Shuning uchun ularga emulgator va quyuqlashtiruvchilar qo‘shiladi, ishlatishdan oldin esa chayqatiladi."},
+   {"type": "table", "title": "Jadval 8.0. Ingalyatsion aerozol zarrachalari o‘lchami va ularning nafas yo‘llarida o‘tirishi", "head": ["Zarracha o‘lchami", "Asosan qayerda o‘tiradi"], "rows": [
+    ["> 10 mkm", "burun-halqum va og‘iz bo‘shlig‘i"],
+    ["5–10 mkm", "kekirdak va yirik bronxlar"],
+    ["1–5 mkm", "mayda bronxlar va bronxiolalar — davolash uchun eng qulay"],
+    ["< 1 mkm", "alveolalarga yetadi, ko‘p qismi nafas bilan chiqib ketadi"]
+   ]},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "Dozalangan ingalyatordan chiqqan aerozolning katta qismi og‘izga o‘tirib qoladi. **Speyser** (oraliq kamera) yirik zarrachalarni ushlab qoladi va aerozol harakatini sekinlashtiradi — bronxlarga yetadigan dori ulushi ortadi, og‘iz kandidozi kabi nojo‘ya ta’sirlar kamayadi. Bolalar va keksalarga ayniqsa tavsiya etiladi."}]}
+  ]
+ },
+ "insert": [
+  {"after": 5, "title": "0. Qon — dispers sistema. Gemoliz va agglyutinatsiya", "blocks": [
+   {"type": "p", "text": "Qon — murakkab dispers sistema: dispers muhit — **plazma** (oqsillarning kolloid va tuzlarning haqiqiy eritmasi), dispers faza — **shaklli elementlar** (qon hujayralari, asosan eritrotsitlar). Eritrotsitlar sirti sial kislotalar hisobiga **manfiy zaryadlangan** (ζ ≈ −15 mV); bir xil zaryad ularni bir-biridan itarib, suspenziya barqarorligini saqlaydi."},
+   {"type": "table", "title": "Jadval 8.0. Gemoliz turlari", "head": ["Gemoliz turi", "Sababi", "Misol"], "rows": [
+    ["Osmotik", "gipotonik muhitda suv kirib, membrana yoriladi", "distillangan suv, gipotonik eritma quyish"],
+    ["Kimyoviy", "SFM va erituvchilar membrana lipidlarini eritadi", "saponinlar, o‘t kislotalari, efir, xloroform"],
+    ["Fizik (termik, mexanik)", "muzlatish-eritish, kuchli chayqatish, sun’iy klapan", "qonni noto‘g‘ri saqlash va tashish"],
+    ["Biologik", "zahar fermentlari yoki toksinlar", "ilon va o‘rgimchak zahari, gemolitik streptokokk"],
+    ["Immun", "antitelolar va komplement eritrotsitni yemiradi", "mos kelmagan qon quyish, chaqaloqlarning gemolitik kasalligi"]
+   ]},
+   {"type": "p", "text": "**Eritrotsitlarning osmotik rezistentligi** — ularning gipotonik NaCl eritmalariga chidamliligi. Me’yorda gemoliz 0,46–0,48 % li NaCl da boshlanadi va 0,32–0,34 % li eritmada to‘liq bo‘ladi. Rezistentlikning kamayishi (gemoliz yuqoriroq konsentratsiyada boshlanishi) **irsiy sferotsitoz**ga xos: sharsimon eritrotsitlar kam suv qabul qilib yoriladi."},
+   {"type": "p", "text": "**Agglyutinatsiya** — zarrachalarning (eritrotsitlar, bakteriyalar) antitelolar ta’sirida yopishishi; bu koagulyatsiyaning o‘ziga xos turi. Qon guruhini aniqlash eritrotsitlardagi antigenlarning standart zardoblar (anti-A, anti-B, anti-D) bilan agglyutinatsiyalanishiga asoslangan."},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Qon ivishi** — sol holatidagi plazmaning **gel**ga aylanishi: eruvchan fibrinogen trombin ta’sirida fibringa aylanib, uch o‘lchamli to‘r hosil qiladi va uning ichiga qon hujayralari va suyuqlik qamaladi. Keyinchalik laxta qisqarib, zardob ajraladi (**retraksiya**) — bu gellarga xos **sinerezis** hodisasidir."}]}
+  ]},
+  {"after": 6, "title": "0. Yuqori molekulyar birikmalar eritmalari va gellar", "blocks": [
+   {"type": "p", "text": "Oqsillar, polisaxaridlar va nuklein kislotalar — **yuqori molekulyar birikmalar** (YuMB, biopolimerlar). Ularning eritmalari haqiqiy (molekulyar) eritma bo‘lsa-da, molekulalar o‘lchami kolloid zarrachalarga yaqin bo‘lgani uchun kolloidlarga o‘xshash xossalarga ega: sekin diffuziya, membranadan o‘tmaslik, Tindal effekti. Ular o‘z-o‘zidan hosil bo‘ladi va termodinamik barqaror."},
+   {"type": "table", "title": "Jadval 8.0. Liofob zollar va YuMB eritmalarining taqqoslanishi", "head": ["Belgisi", "Liofob zol", "YuMB eritmasi"], "rows": [
+    ["Hosil bo‘lishi", "barqarorlashtiruvchi bilan, majburan", "o‘z-o‘zidan eriydi"],
+    ["Termodinamik holati", "beqaror", "barqaror"],
+    ["Elektrolitlarga sezgirlik", "kam miqdorda koagulyatsiyalanadi", "faqat ko‘p tuzda cho‘kadi (tuzlanish)"],
+    ["Qovushqoqlik", "suvnikiga yaqin", "yuqori"],
+    ["Qaytarlik", "koagulyatsiya ko‘pincha qaytmas", "cho‘kish qaytar — suvda yana eriydi"]
+   ]},
+   {"type": "list", "items": [
+    "**Bo‘kish** — YuMB ning erituvchini yutib, hajmi ortishi: **cheklanmagan** (jelatina issiq suvda to‘liq eriydi) va **cheklangan** (jelatina sovuq suvda faqat bo‘kadi). Bo‘kish pH ga bog‘liq va izoelektrik nuqtada eng kam.",
+    "**Tuzlanish (isolash)** — ko‘p miqdordagi neytral tuz (NH~4~)~2~SO~4~ oqsil molekulalarining gidrat qobig‘ini tortib olib, ularni cho‘ktiradi; oqsil faolligi saqlanadi — oqsillarni fraksiyalarga ajratishda ishlatiladi.",
+    "**Gel** — YuMB yoki kolloid zarrachalarning erituvchini ushlab turgan uch o‘lchamli to‘ri: jelatina, agar, qon laxtasi, ko‘zning shishasimon tanasi. Gellar vaqt o‘tishi bilan siqilib suyuqlik chiqaradi — **sinerezis**; ayrim gellar chayqatilganda suyulib, tinch turganda qayta qotadi — **tiksotropiya**.",
+    "**Donnan muvozanati** — membranadan o‘tmaydigan oqsil ionlari bo‘lgan sistemada kichik ionlar membrananing ikki tomonida notekis taqsimlanadi; bu hujayra va plazmaning ion tarkibi farqiga hissa qo‘shadi."
+   ]},
+   {"type": "p", "text": "**Qovushqoqlik.** Suyuqlikning naydan oqish tezligi **Puazeyl qonuni** bilan ifodalanadi: Q = π·r^4^·ΔP / (8·η·l). Hajmiy oqim tomir radiusining 4-darajasiga proporsional va qovushqoqlikka (η) teskari proporsional. Qonning qovushqoqligi suvnikidan 4–5 marta katta va asosan **gematokrit** hamda fibrinogen miqdoriga bog‘liq."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Politsitemiyada** gematokrit 60–65 % gacha ko‘tarilib, qon qovushqoqligi keskin ortadi: qon oqimi sekinlashadi, tromboz, insult va miokard infarkti xavfi oshadi. Davolashda qon chiqarish (flebotomiya) bilan gematokrit kamaytiriladi. Aksincha, og‘ir kamqonlikda qovushqoqlik kamayib, yurakning “bo‘sh” ishlashi va shovqinlar paydo bo‘ladi."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Ko‘nikma: eritrotsitlarning osmotik rezistentligini aniqlash", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "0,70 % dan 0,30 % gacha (har 0,02 % da) NaCl eritmalari qatorini probirkalarga 1 ml dan tayyorlang.",
+    "Har bir probirkaga bir tomchidan geparinli qon qo‘shib, ehtiyotkorlik bilan aralashtiring va 1 soat qoldiring (yoki sentrifugalang).",
+    "Eritma ustki qismi och pushti rangga kirgan eng yuqori konsentratsiyani yozing — bu **minimal rezistentlik** (gemoliz boshlanishi).",
+    "Cho‘kma butunlay yo‘qolgan, eritma tiniq qizil bo‘lgan probirkani toping — bu **maksimal rezistentlik** (to‘liq gemoliz).",
+    "Natijani me’yor (boshlanishi 0,46–0,48 %, to‘liq 0,32–0,34 %) bilan solishtiring."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Qon dispers sistema sifatida qanday tuzilgan? Eritrotsitlar suspenziyasining barqarorligini nima ta’minlaydi?",
+  "Gemoliz turlarini sanang. Eritrotsitlarning osmotik rezistentligi qanday aniqlanadi?",
+  "Yuqori molekulyar birikmalar eritmalari liofob zollardan nimasi bilan farq qiladi?",
+  "Bo‘kish, tuzlanish, sinerezis va tiksotropiya nima?",
+  "Puazeyl qonunini yozing. Qon qovushqoqligi nimalarga bog‘liq va politsitemiyada nima uchun xavfli?",
+  "Nanozarrachalar tibbiyotda qanday ishlatiladi? Ingalyatsion aerozol zarrachalarining o‘lchami nima uchun muhim?"
+ ],
+ "quiz": [
+  {"q": "Eritrotsitlar sirtining manfiy zaryadi asosan nimaga bog‘liq?", "options": ["Sial kislotalarga", "Gemoglobinga", "Xolesteringa", "Natriy ionlariga", "Glyukozaga"], "answer": 0},
+  {"q": "Me’yorda eritrotsitlar gemolizi NaCl ning qaysi konsentratsiyasida boshlanadi?", "options": ["0,46–0,48 %", "0,9 %", "0,7–0,8 %", "0,1–0,2 %", "1,5 %"], "answer": 0},
+  {"q": "Saponinlar qanday gemoliz chaqiradi?", "options": ["Kimyoviy (membrana lipidlarini eritadi)", "Osmotik", "Immun", "Termik", "Mexanik"], "answer": 0},
+  {"q": "Qon ivishi kolloid kimyo nuqtai nazaridan qanday jarayon?", "options": ["Soldan gel hosil bo‘lishi", "Dializ", "Peptizatsiya", "Solyubilizatsiya", "Elektroosmos"], "answer": 0},
+  {"q": "Gel siqilib, undan suyuqlik ajralib chiqishi qanday ataladi?", "options": ["Sinerezis", "Tiksotropiya", "Peptizatsiya", "Koalessensiya", "Bo‘kish"], "answer": 0},
+  {"q": "Oqsillarni faolligini saqlagan holda cho‘ktirish uchun nima ishlatiladi?", "options": ["Ammoniy sulfatning ko‘p miqdori (tuzlanish)", "Konsentrlangan nitrat kislota", "Og‘ir metall tuzlari", "Qaynatish", "Trixlorsirka kislota"], "answer": 0},
+  {"q": "Puazeyl qonuniga ko‘ra tomir radiusi 2 marta kamaysa, qon oqimi necha marta kamayadi?", "options": ["16 marta", "2 marta", "4 marta", "8 marta", "32 marta"], "answer": 0},
+  {"q": "Qon qovushqoqligiga eng ko‘p ta’sir qiladigan ko‘rsatkich qaysi?", "options": ["Gematokrit", "Glyukoza miqdori", "Natriy miqdori", "Mochevina miqdori", "pH"], "answer": 0},
+  {"q": "mRNK vaksinalarini hujayraga yetkazishda qaysi zarrachalar ishlatiladi?", "options": ["Lipid nanozarrachalar", "Temir oksidi nanozarrachalari", "Kumush zoli", "BaSO~4~ suspenziyasi", "Alyuminiy gidroksid gel"], "answer": 0},
+  {"q": "Mayda bronxlarga yetib borishi uchun ingalyatsion aerozol zarrachalari qanday o‘lchamda bo‘lishi kerak?", "options": ["1–5 mkm", "> 10 mkm", "5–10 mkm", "100 mkm", "1 mm"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Masala 4", "text": "Musbat zaryadli temir(III) gidroksid zoli uchun NaCl ning koagulyatsiya bo‘sag‘asi 9,25 mmol/l.", "ask": "Shulse–Gardi qoidasiga ko‘ra Na~2~SO~4~ va Na~3~PO~4~ uchun bo‘sag‘ani taxminan hisoblang. Qaysi ion koagullovchi?", "answer": "Granula musbat, demak koagullovchi ionlar — **anionlar**: Cl^−^, SO~4~^2−^, PO~4~^3−^. Bo‘sag‘alar zaryadning 6-darajasiga teskari proporsional: SO~4~^2−^ uchun 9,25 / 2^6^ = 9,25 / 64 ≈ **0,14 mmol/l**, PO~4~^3−^ uchun 9,25 / 3^6^ = 9,25 / 729 ≈ **0,013 mmol/l**. Ya’ni fosfat xloriddan taxminan 700 marta kuchliroq koagullaydi."},
+  {"title": "Masala 5", "text": "Sariqlik va taloq kattalashishi bilan kelgan bolada eritrotsitlarning osmotik rezistentligi tekshirildi: gemoliz 0,60 % li NaCl da boshlanib, 0,40 % li eritmada to‘liq bo‘ldi. Qon surtmasida mayda, sharsimon eritrotsitlar ko‘p.", "ask": "Natijani baholang va mexanizmini tushuntiring.", "answer": "Gemoliz me’yordagidan (0,46–0,48 %) ancha yuqori konsentratsiyada boshlangan — osmotik rezistentlik **kamaygan**. Bu **irsiy sferotsitoz**ga xos: membrana oqsillari (spektrin, ankirin) nuqsoni tufayli eritrotsit disk emas, shar shaklida bo‘ladi. Shar hajmiga nisbatan eng kichik sirtga ega, shuning uchun ozgina suv kirishi bilan membrana cho‘zilib yoriladi. Bunday eritrotsitlar taloqda ham tez parchalanadi — kamqonlik, sariqlik va taloq kattalashishi shundan."},
+  {"title": "Masala 6", "text": "Albuminning izoelektrik nuqtasi pI = 4,9. Zardob oqsillari elektroforezi pH 8,6 li veronal buferda o‘tkaziladi.", "ask": "Bu sharoitda albumin qanday zaryadlanadi va qaysi elektrod tomon harakatlanadi? pH 4,0 li buferda nima kuzatiladi?", "answer": "pH 8,6 > pI — albumin protonlarini yo‘qotib, **manfiy** zaryadlanadi va **anod** (+) tomon harakatlanadi; zardob oqsillari ichida eng kichik va eng ko‘p manfiy zaryadli bo‘lgani uchun eng tez va eng uzoqqa boradi. pH 4,0 < pI bo‘lsa, albumin protonlarni biriktirib **musbat** zaryadlanadi va **katod** (−) tomon harakatlanadi. pH = pI bo‘lganda esa u harakatlanmaydi."},
+  {"title": "Masala 7", "text": "Bronxial astma bilan og‘rigan 6 yoshli bolaga dozalangan ingalyator buyurilgan, ammo xurujlar kamaymadi; og‘iz bo‘shlig‘ida kandidoz paydo bo‘ldi.", "ask": "Dispers sistemalar nuqtai nazaridan sababini tushuntiring. Qanday yechim taklif qilasiz?", "answer": "Ingalyatordan chiqqan aerozol katta tezlikda harakatlanadi; bola nafas olish bilan bosishni muvofiqlashtira olmaydi va **yirik zarrachalar** inersiya bilan og‘iz va halqumga o‘tirib qoladi. Bronxlarga yetadigan 1–5 mkm li zarrachalar ulushi kam — samara past; og‘izda qolgan glyukokortikoid esa kandidoz chaqiradi. Yechim: niqobli yoki og‘iz qismli **speyser** — u yirik zarrachalarni ushlab qoladi va aerozolni sekinlashtiradi; ingalyatsiyadan keyin og‘izni chayish."},
+  {"title": "Masala 8", "text": "Politsitemiya bilan og‘rigan bemorda gematokrit 65 % (me’yor 40–48 %), bosh og‘rig‘i, yuz qizarishi. Anamnezida tranzitor ishemik xuruj bor.", "ask": "Qon oqimining buzilishini fizik-kimyoviy jihatdan tushuntiring. Agar ateroskleroz tufayli tomir radiusi ham 2 marta torayib qolgan bo‘lsa, qon oqimi necha marta kamayadi?", "answer": "Gematokrit oshganda qon **qovushqoqligi** keskin ortadi. Puazeyl qonuniga ko‘ra oqim qovushqoqlikka teskari proporsional — qon sekin oqadi, mikrotsirkulyatsiya buziladi, tromb hosil bo‘lish xavfi ortadi. Oqim radiusning 4-darajasiga proporsional: radius 2 marta kamaysa, oqim 2^4^ = **16 marta** kamayadi (qovushqoqlik oshishi buni yanada kuchaytiradi). Davolash: flebotomiya bilan gematokritni 45 % dan pastga tushirish, antiagregantlar."}
+ ],
+ "cards": [
+  {"front": "Osmotik rezistentlik", "back": "Gemoliz 0,46–0,48 % NaCl da boshlanadi, 0,32–0,34 % da to‘liq; sferotsitozda kamayadi"},
+  {"front": "Agglyutinatsiya", "back": "Zarrachalarning antitelolar ta’sirida yopishishi; qon guruhini aniqlash asosi"},
+  {"front": "Sinerezis", "back": "Gelning siqilib, suyuqlik chiqarishi (qon laxtasi retraksiyasi)"},
+  {"front": "Tuzlanish", "back": "Ko‘p neytral tuz oqsil gidrat qobig‘ini olib, uni faolligini saqlagan holda cho‘ktiradi"},
+  {"front": "Puazeyl qonuni", "back": "Q = π·r^4^·ΔP / (8·η·l); oqim radiusning 4-darajasiga proporsional"},
+  {"front": "Speyser", "back": "Ingalyator uchun oraliq kamera; yirik zarrachalarni ushlab, dorining bronxlarga yetishini oshiradi"}
+ ]
+}

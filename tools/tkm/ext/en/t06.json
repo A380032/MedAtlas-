@@ -1,0 +1,106 @@
+{
+ "append": {
+  "3": [
+   {"type": "h", "text": "Biological redox pairs and oxidative stress"},
+   {"type": "table", "title": "Table 6.0. Standard potentials of biologically important redox pairs (E°′, pH 7, 25 °C)", "head": ["Redox pair", "E°′, V"], "rows": [
+    ["NAD^+^ / NADH", "−0.32"],
+    ["NADP^+^ / NADPH", "−0.32"],
+    ["Pyruvate / lactate", "−0.19"],
+    ["Fumarate / succinate", "+0.03"],
+    ["Ubiquinone / ubiquinol (CoQ)", "+0.05"],
+    ["Cytochrome c (Fe^3+^ / Fe^2+^)", "+0.25"],
+    ["½O~2~ / H~2~O", "+0.82"]
+   ]},
+   {"type": "p", "text": "If oxygen is not fully reduced (accepts one or two electrons), **reactive oxygen species** are formed: the superoxide anion radical O~2~^·−^, hydrogen peroxide H~2~O~2~ and the most dangerous — the hydroxyl radical ·OH. They cause lipid peroxidation and damage to proteins and DNA — **oxidative stress** takes part in atherosclerosis, complications of diabetes mellitus, aging and tumors."},
+   {"type": "table", "title": "Table 6.0. Antioxidant defense of the body", "head": ["Means of defense", "Action"], "rows": [
+    ["Superoxide dismutase (Cu, Zn, Mn)", "2O~2~^·−^ + 2H^+^ → H~2~O~2~ + O~2~"],
+    ["Catalase (Fe)", "2H~2~O~2~ → 2H~2~O + O~2~"],
+    ["Glutathione peroxidase (Se)", "H~2~O~2~ + 2GSH → 2H~2~O + GSSG"],
+    ["Vitamin E (tocopherol)", "neutralizes lipid radicals in membranes"],
+    ["Vitamin C (ascorbate)", "scavenges radicals in the aqueous phase and regenerates vitamin E"]
+   ]}
+  ],
+  "6": [
+   {"type": "h", "text": "The chemiosmotic theory. Inhibitors and uncouplers of the respiratory chain"},
+   {"type": "p", "text": "According to **P. Mitchell’s chemiosmotic theory**, the energy released during electron transfer is used to pump protons across the inner mitochondrial membrane into the intermembrane space. As a result a **proton gradient** is formed — a pH difference (≈ 0.5–1) and a membrane potential (≈ 150–180 mV). When protons return through the channel of **ATP synthase**, ATP is synthesized from ADP and phosphate. Thus oxidation and phosphorylation are coupled through an electrochemical gradient."},
+   {"type": "table", "title": "Table 6.0. Substances affecting oxidative phosphorylation", "head": ["Substance", "Site of action", "Consequence"], "rows": [
+    ["Rotenone, barbiturates", "complex I (NADH dehydrogenase)", "electron transfer from NADH stops"],
+    ["Cyanide, CO, H~2~S", "complex IV (cytochrome oxidase)", "oxygen is not used — histotoxic hypoxia"],
+    ["Oligomycin", "ATP synthase", "ATP synthesis and the respiration coupled to it stop"],
+    ["2,4-Dinitrophenol, thermogenin", "carries protons across the membrane (uncoupler)", "respiration continues, no ATP is formed, energy turns into heat"]
+   ]},
+   {"type": "box", "kind": "diqqat", "parts": [{"type": "p", "text": "**2,4-Dinitrophenol** was once sold as a slimming drug and is still distributed illegally as a “fat burner”. It uncouples oxidation from phosphorylation and burns fat quickly, but causes uncontrolled **hyperthermia**; fatal poisonings have been reported."}]}
+  ]
+ },
+ "insert": [
+  {"after": 3, "title": "0. Action potential and ion channels", "blocks": [
+   {"type": "p", "text": "At rest the membrane is permeable mainly to K^+^, so the resting potential is close to the potassium equilibrium potential. The contribution of several ions is taken into account by the **Goldman–Hodgkin–Katz equation**: the membrane potential is determined by the concentration ratio of each ion and by the membrane **permeability** (P) to that ion. The ion with the greatest permeability brings the potential closest to its own equilibrium potential."},
+   {"type": "table", "title": "Table 6.0. Phases of the action potential of a nerve fiber", "head": ["Phase", "Ion movement", "Potential"], "rows": [
+    ["Rest", "K^+^ channels partly open", "≈ −70 mV"],
+    ["Depolarization", "Na^+^ channels open and Na^+^ enters the cell", "up to +30…+40 mV (approaches E~Na~ ≈ +60 mV)"],
+    ["Repolarization", "Na^+^ channels close, K^+^ leaves the cell", "returns to a negative value"],
+    ["Hyperpolarization (after-potential)", "K^+^ channels close late", "slightly more negative than the resting potential"]
+   ]},
+   {"type": "p", "text": "The action potential obeys the **“all-or-none”** law: if the stimulus reaches threshold, a full response appears. Ion concentrations change only very slightly — the gradients are restored by Na^+^/K^+^-ATPase (one cycle: 3 Na^+^ out, 2 K^+^ in, 1 ATP used)."},
+   {"type": "box", "kind": "klinik", "parts": [{"type": "p", "text": "**Local anesthetics** (lidocaine, procaine) block Na^+^ channels from the inside and stop the generation of action potentials and the conduction of pain impulses. They are weak bases: they cross the membrane in the **un-ionized** form but block the channel in the **ionized** form. That is why their effect weakens in acidic inflamed tissue (an abscess)."}]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Hypocalcemia** lowers the threshold for opening Na^+^ channels and increases excitability (tetany), while **hypercalcemia** does the opposite — it causes muscle weakness and constipation."}]}
+  ]},
+  {"after": 4, "title": "0. Electrolysis. Faraday’s laws. Corrosion of metals", "blocks": [
+   {"type": "p", "text": "**Electrolysis** is the redox process that occurs at the electrodes when direct current passes through an electrolyte solution or melt. Unlike in a galvanic cell, here electrical energy is converted into chemical energy: reduction occurs at the cathode (−) and oxidation at the anode (+). In the electrolysis of NaCl solution H~2~ and OH^−^ are formed at the cathode and Cl~2~ at the anode; Cl~2~ reacts with the alkali to give the disinfectant **sodium hypochlorite** NaOCl."},
+   {"type": "p", "text": "**Faraday’s laws:** the mass of substance liberated at an electrode is proportional to the quantity of electricity passed: m = M·I·t / (n·F), where I is the current (A), t the time (s), n the number of electrons per particle and F = 96 485 C/mol."},
+   {"type": "p", "text": "**Corrosion** is the destruction of a metal by electrochemical or chemical interaction with its environment. When different metals are connected through an electrolyte (saliva, tissue fluid), a **galvanic couple** is formed and the more active metal (the anode) dissolves."},
+   {"type": "table", "title": "Table 6.0. Corrosion in medicine and protection against it", "head": ["Situation", "Electrochemical essence", "Means of protection"], "rows": [
+    ["Oral galvanism", "different metal prostheses form a galvanic cell through saliva", "using identical or inert alloys"],
+    ["Implants (screws, plates, joint prostheses)", "corrosion by Cl^−^ in tissue fluid, metal ions are released", "titanium and stainless steel — a protective oxide film on the surface (passivation)"],
+    ["Surgical instruments", "rusting under the action of moisture and chlorides", "stainless steel, proper drying and sterilization"]
+   ]},
+   {"type": "box", "kind": "eslab", "parts": [{"type": "p", "text": "**Titanium** is the most widely used implant metal in medicine: the dense TiO~2~ film that forms spontaneously on its surface protects it from corrosion, and bone tissue bonds well to it (osseointegration)."}]}
+  ]}
+ ],
+ "skills": [
+  {"title": "Skill: assessing the direction and energy of a redox reaction", "blocks": [
+   {"type": "list", "ordered": true, "items": [
+    "Identify the two redox pairs in the reaction and find their E°′ values in a table.",
+    "The pair with the higher potential is the oxidizing agent (accepts electrons), the pair with the lower potential is the reducing agent (donates electrons).",
+    "Calculate ΔE°′ = E°′(oxidant) − E°′(reductant); if ΔE°′ > 0, the reaction is spontaneous.",
+    "Determine the number of electrons transferred (n) and calculate ΔG°′ = −n·F·ΔE°′ (convert the result to kJ/mol).",
+    "Compare the energy released with the energy of ATP hydrolysis (≈ 30.5 kJ/mol) to estimate how many ATP could be synthesized."
+   ]}
+  ]}
+ ],
+ "questions": [
+  "Explain the phases of the action potential and the ion movement in each phase.",
+  "How does the Goldman–Hodgkin–Katz equation differ from the Nernst equation?",
+  "How do local anesthetics act, and why are they weaker in inflamed tissue?",
+  "How are reactive oxygen species formed? List the antioxidant defenses of the body.",
+  "What is the essence of the chemiosmotic theory? How do inhibitors and uncouplers differ?",
+  "How does electrolysis differ from a galvanic cell? Write Faraday’s law. How are implants protected from corrosion?"
+ ],
+ "quiz": [
+  {"q": "Which ion movement provides the depolarization phase in a nerve fiber?", "options": ["Entry of Na^+^ into the cell", "Exit of K^+^ from the cell", "Entry of Cl^−^ into the cell", "Exit of Ca^2+^ from the cell", "Exit of H^+^ from the cell"], "answer": 0},
+  {"q": "How many ions are carried in one cycle of Na^+^/K^+^-ATPase?", "options": ["3 Na^+^ out, 2 K^+^ in", "2 Na^+^ out, 3 K^+^ in", "1 Na^+^ out, 1 K^+^ in", "3 Na^+^ in, 2 K^+^ out", "2 Na^+^ in, 2 K^+^ out"], "answer": 0},
+  {"q": "Which channels do local anesthetics block?", "options": ["Voltage-gated Na^+^ channels", "K^+^ channels", "Cl^−^ channels", "Water channels (aquaporins)", "Ca^2+^-ATPase"], "answer": 0},
+  {"q": "Which redox pair has the highest standard potential?", "options": ["½O~2~ / H~2~O", "NAD^+^ / NADH", "Fumarate / succinate", "Cytochrome c (Fe^3+^ / Fe^2+^)", "Pyruvate / lactate"], "answer": 0},
+  {"q": "Which enzyme breaks down hydrogen peroxide into water and oxygen?", "options": ["Catalase", "Superoxide dismutase", "Cytochrome oxidase", "Carbonic anhydrase", "Lactate dehydrogenase"], "answer": 0},
+  {"q": "Which trace element is contained in glutathione peroxidase?", "options": ["Selenium", "Zinc", "Copper", "Molybdenum", "Cobalt"], "answer": 0},
+  {"q": "How does 2,4-dinitrophenol act?", "options": ["It uncouples oxidation from phosphorylation", "It blocks cytochrome oxidase", "It blocks ATP synthase", "It blocks NADH dehydrogenase", "It binds oxygen"], "answer": 0},
+  {"q": "According to Mitchell’s theory, what is the energy source for ATP synthesis?", "options": ["The proton gradient across the inner mitochondrial membrane", "The direct breakdown of glucose", "Creatine phosphate", "The Na^+^ gradient", "Heat"], "answer": 0},
+  {"q": "According to Faraday’s law, what is the mass of substance liberated at an electrode proportional to?", "options": ["The quantity of electricity passed (I·t)", "The mass of the electrode", "The volume of the solution", "The temperature", "The electrode potential"], "answer": 0},
+  {"q": "What protects titanium implants from corrosion?", "options": ["A dense TiO~2~ oxide film on the surface", "An organic coating", "A layer of silver", "An electric current", "An internal magnetic field"], "answer": 0}
+ ],
+ "cases": [
+  {"title": "Problem 4", "text": "In a neuron the Na^+^ concentration is 145 mmol/L outside and 12 mmol/L inside.", "ask": "Calculate the sodium equilibrium potential at 37 °C. Why does the peak of the action potential not reach this value?", "answer": "E~Na~ = 61·lg(145 / 12) = 61·lg12.1 ≈ 61 · 1.08 ≈ **+66 mV**. During depolarization Na^+^ channels open and the potential moves toward E~Na~, but the peak reaches only +30…+40 mV: Na^+^ channels inactivate quickly, and at the same time K^+^ channels open and the outflow of potassium pulls the potential back toward negative values."},
+  {"title": "Problem 5", "text": "In the Krebs cycle 2 electrons released from succinate pass to oxygen through FAD and ubiquinone. E°′(fumarate / succinate) = +0.03 V, E°′(½O~2~ / H~2~O) = +0.82 V.", "ask": "Calculate the ΔG°′ of the process. Why does the oxidation of succinate yield less ATP than NADH?", "answer": "ΔE°′ = 0.82 − 0.03 = 0.79 V; ΔG°′ = −2 · 96 485 · 0.79 ≈ −152 000 J/mol = **−152 kJ/mol**. For NADH ΔG°′ was ≈ −220 kJ/mol. Electrons from succinate bypass complex I and enter the chain at the level of ubiquinone — fewer protons are pumped and ≈ 1.5 ATP are formed (≈ 2.5 ATP from NADH)."},
+  {"title": "Problem 6", "text": "To prepare an antiseptic in a ward, NaCl solution was electrolyzed with a current of 2 A for 30 minutes.", "ask": "How much chlorine is liberated at the anode (M(Cl~2~) = 71 g/mol)? How does it turn into a disinfectant?", "answer": "Q = I·t = 2 · 1800 = 3600 C; amount of electrons 3600 / 96 485 ≈ 0.0373 mol. At the anode 2Cl^−^ − 2e^−^ → Cl~2~, so n(Cl~2~) = 0.0373 / 2 ≈ 0.0187 mol, m = 0.0187 · 71 ≈ **1.3 g**. Chlorine reacts with the NaOH formed at the cathode: Cl~2~ + 2NaOH → NaOCl + NaCl + H~2~O — **sodium hypochlorite** is used to disinfect surfaces and instruments."},
+  {"title": "Problem 7", "text": "A young man who took “fat-burner” tablets at the gym was brought to hospital: temperature 41 °C, profuse sweating, tachycardia, rapid breathing. The tablets were found to contain 2,4-dinitrophenol.", "ask": "Explain the mechanism of action of the substance from the point of view of the electrochemistry of the respiratory chain. Why did the temperature rise sharply?", "answer": "2,4-Dinitrophenol is a lipophilic weak acid; it picks up a proton in the intermembrane space, crosses the membrane and releases it in the matrix — it **dissipates the proton gradient**. Electrons continue to flow along the chain (O~2~ consumption even increases), but ATP synthase does not work: the energy of oxidation is converted not into ATP but into **heat**. To make up for the lack of ATP the body oxidizes more fat and glucose, producing even more heat — uncontrolled hyperthermia. There is no antidote; treatment is cooling and symptomatic."},
+  {"title": "Problem 8", "text": "A dentist tried to anesthetize the area of a purulent abscess with lidocaine, but the effect was insufficient. The pK~a~ of lidocaine is 7.9.", "ask": "Calculate the fraction of the un-ionized form of lidocaine in normal tissue (pH 7.4) and in inflamed tissue (pH 6.9) and explain the result.", "answer": "For a weak base lg([BH^+^] / [B]) = pK~a~ − pH. At pH 7.4: 7.9 − 7.4 = 0.5, ratio 10^0.5^ ≈ 3.2 : 1 — the un-ionized form ≈ 1 / 4.2 ≈ **24 %**. At pH 6.9: 7.9 − 6.9 = 1, ratio 10 : 1 — the un-ionized form ≈ 1 / 11 ≈ **9 %**. The anesthetic crosses the nerve membrane only in the un-ionized form, so in acidic inflamed tissue little of it enters the nerve and it cannot block the Na^+^ channels sufficiently. In such cases the anesthetic is injected farther from the focus of inflammation (conduction anesthesia)."}
+ ],
+ "cards": [
+  {"front": "Action potential", "back": "Depolarization (Na^+^ enters) → repolarization (K^+^ leaves); “all-or-none”"},
+  {"front": "Reactive oxygen species", "back": "O~2~^·−^, H~2~O~2~, ·OH — damage lipids, proteins and DNA"},
+  {"front": "Chemiosmotic theory", "back": "Electron transfer creates a proton gradient; ATP is synthesized when protons return through ATP synthase"},
+  {"front": "Uncouplers", "back": "Dissipate the proton gradient: respiration continues, heat is formed instead of ATP (2,4-dinitrophenol, thermogenin)"},
+  {"front": "Faraday’s law", "back": "m = M·I·t / (n·F)"},
+  {"front": "Passivation", "back": "Formation of a protective oxide film on a metal surface (titanium — TiO~2~)"}
+ ]
+}
