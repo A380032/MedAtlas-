@@ -812,6 +812,50 @@ mark.hl { background: #ffe066; color: #2a2100; border-radius: 3px; padding: 0 1p
 .tm-grid button { border: 1.5px solid var(--line); background: var(--bg); border-radius: 10px; padding: 8px 0; font-weight: 600; cursor: pointer; }
 .tm-grid button.ans { background: color-mix(in srgb, var(--accent) 16%, transparent); border-color: var(--accent); }
 .tm-grid button.cur { outline: 2px solid var(--ink); }
+.tm-grid button { position: relative; }
+.tm-grid button.flg::after { content: ""; position: absolute; top: 4px; right: 4px; width: 8px; height: 8px; border-radius: 50%; background: #e08a00; }
+/* Variantni chizib tashlash, belgi (bayroq), vositalar */
+.tm-orow { display: flex; gap: 6px; align-items: stretch; }
+.tm-orow .tm-opt { flex: 1; min-width: 0; }
+.tm-cut { flex: none; width: 40px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink-2); border-radius: 12px; font-size: .95rem; cursor: pointer; transition: background .18s ease, transform .12s ease; }
+.tm-cut:active { transform: scale(.94); }
+.tm-cut.on { background: var(--surface-2); color: var(--ink); }
+.tm-opt.cut { opacity: .5; }
+.tm-opt.cut .tm-ot { text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.tm-top .btn.flag { padding: 5px 11px; }
+.tm-top .btn.flag[aria-pressed="true"] { background: color-mix(in srgb, #e08a00 22%, transparent); border-color: #e08a00; color: #b86e00; }
+.tm-tools { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+/* Manba havolasi va izoh */
+.tm-ex { margin: 12px 0 0; line-height: 1.5; }
+.tm-src { display: flex; gap: 10px; align-items: flex-start; margin-top: 12px; padding: 11px 13px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 9%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent); color: var(--ink); text-decoration: none; transition: transform .12s ease; }
+.tm-src:active { transform: scale(.985); }
+.tm-src svg { flex: none; margin-top: 2px; color: var(--accent); }
+.tm-st { min-width: 0; display: grid; gap: 1px; }
+.tm-st small { font-size: .72rem; color: var(--ink-2); font-weight: 600; }
+.tm-st b { font-size: .92rem; }
+.tm-st em { font-style: normal; font-size: .82rem; color: var(--ink-2); line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+/* Laboratoriya me'yorlari */
+.tm-labq { margin: 0 0 10px; }
+.tm-labs { display: grid; gap: 8px; }
+.tm-lab { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 4px 12px; }
+.tm-lab summary { cursor: pointer; font-weight: 700; padding: 9px 0; }
+.tm-lab[hidden], .tm-lr[hidden] { display: none; }
+.tm-labt { margin-bottom: 8px; font-size: .86rem; }
+.tm-lr { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-top: 1px solid var(--line); }
+.tm-lr .n { flex: 1 1 46%; min-width: 0; line-height: 1.35; }
+.tm-lr .v { flex: 1 1 50%; min-width: 0; text-align: right; line-height: 1.35; }
+.tm-lr .v i { font-style: normal; color: var(--ink-2); font-size: .8rem; white-space: nowrap; }
+/* Kalkulyator */
+.tm-calc { max-width: 340px; margin: 6px auto 0; }
+.tm-cd { background: var(--bg); border: 1.5px solid var(--line); border-radius: 14px; padding: 8px 14px; text-align: right; margin-bottom: 10px; }
+.tm-cd small { display: block; min-height: 1.1em; font-size: .8rem; color: var(--ink-2); }
+.tm-cd output { display: block; font-size: 1.9rem; font-weight: 700; font-variant-numeric: tabular-nums; overflow-x: auto; white-space: nowrap; }
+.tm-ck { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.tm-ck button { height: 50px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 14px; font: inherit; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: transform .1s ease; }
+.tm-ck button:active { transform: scale(.94); }
+.tm-ck button.fn { background: var(--surface-2); font-size: .98rem; }
+.tm-ck button.op { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+.tm-ck button.eq { background: linear-gradient(135deg, var(--accent-2), var(--accent)); color: var(--on-accent); border-color: var(--accent); }
 .tm-res { text-align: center; max-width: 560px; margin: 0 auto; }
 .tm-ring { display: flex; justify-content: center; margin: 8px 0; }
 .tm-msg { margin: 6px 0 14px; }

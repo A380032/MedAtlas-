@@ -47,8 +47,32 @@
     }
     const gone = store.get("udel", []);
     for (const u of store.get("user", [])) if (!gone.includes(u.id)) banks.push(prep(u, true));
-    ctx = { banks, idxOk, by: Object.fromEntries(banks.map((b) => [b.id, b])) };
+    // Savol manbasi (qo'llanma havolasi) uchun fanlar ro'yxati: bank "sid"i fan id'si yoki qisqartmasi bo'ladi
+    const subj = {};
+    try {
+      const cat = await A.loadJSON("data/catalog.json");
+      for (const c of cat.courses) for (const s of c.subjects) { subj[s.id] = s; if (s.abbr) subj[String(s.abbr).toLowerCase()] = s; }
+    } catch { /* oflayn yoki katalog yo'q: manba havolasi ko'rsatilmaydi */ }
+    ctx = { banks, idxOk, subj, by: Object.fromEntries(banks.map((b) => [b.id, b])) };
     return ctx;
+  }
+
+  /* Savolning manbasi: shu mavzu ochilgan qo'llanma sahifasi (faqat rasmiy banklar uchun) */
+  function srcOf(it) {
+    const b = ctx?.by[it.b];
+    const q = b && qOf(it);
+    if (!b || b.user || !q || !q.t) return null;
+    const t = (b.topics || []).find((x) => x.id === q.t);
+    const s = ctx.subj[b.sid] || ctx.subj[String(b.sid || "").toLowerCase()];
+    if (!t || !s || s.status !== "ready") return null;
+    return { href: `#/fan/${encodeURIComponent(s.id)}/${encodeURIComponent(t.id)}`, abbr: s.abbr || s.name, no: t.no, title: t.title };
+  }
+  /* Izoh bloki: savolda "e" (izoh) bo'lsa matni, so'ng manba havolasi */
+  function srcHTML(it) {
+    const q = qOf(it), s = srcOf(it);
+    const ex = q.e ? `<p class="tm-ex">${A.inline(q.e)}</p>` : "";
+    if (!s) return ex;
+    return ex + `<a class="tm-src" href="${s.href}">${A.svg(A.IC.book, 18)}<span class="tm-st"><small>Qo‘llanmadan o‘qing</small><b><span>${esc(s.abbr)}</span> · <span>${s.no}-mavzu</span></b><em>${esc(s.title)}</em></span></a>`;
   }
   const dropCtx = () => { ctx = null; };
 
@@ -389,17 +413,22 @@
     const showRes = imm() && it.chk;
     const fv = favs()[it.b + ":" + it.k];
     const r = remaining();
+    const cutL = it.cut || [];
     const optsHTML = it.perm.map((o, j) => {
       const picked = it.sel.includes(o);
+      const isCut = !showRes && !picked && cutL.includes(o);
       let cls = "tm-opt";
       if (showRes) { if (q.c.includes(o)) cls += " right"; else if (picked) cls += " wrong"; }
       else if (picked) cls += " picked";
-      return `<button class="${cls}" data-o="${o}" ${showRes ? "disabled" : ""} aria-pressed="${picked}"><span class="tm-l">${LET[j]}</span><span class="tm-ot">${A.inline(q.o[o])}</span></button>`;
+      else if (isCut) cls += " cut";
+      const cutBtn = !showRes && !picked ? `<button class="tm-cut${isCut ? " on" : ""}" data-cut="${o}" aria-pressed="${isCut}" aria-label="${isCut ? "Chizishni bekor qilish" : "Variantni chizib tashlash"}">${isCut ? "↺" : "✕"}</button>` : "";
+      return `<div class="tm-orow"><button class="${cls}" data-o="${o}" ${showRes ? "disabled" : ""} aria-pressed="${picked}"><span class="tm-l">${LET[j]}</span><span class="tm-ot">${A.inline(q.o[o])}</span></button>${cutBtn}</div>`;
     }).join("");
     let foot = "";
     if (imm()) {
       if (showRes) {
         foot = `<div class="explain tm-fb ${it.ok ? "ok" : "no"}"><strong>${it.ok ? "To‘g‘ri!" : "Noto‘g‘ri."}</strong>${it.ok ? "" : ` To‘g‘ri javob: <b>${correctLetters(it).join(", ")}</b>`}</div>
+          ${srcHTML(it)}
           <div class="tm-nav"><button class="btn primary" id="nx">${sess.i + 1 < total ? "Keyingi savol" : "Natijani ko‘rish"}</button></div>`;
       } else if (multi) {
         foot = `<div class="tm-nav"><button class="btn primary" id="chk" ${it.sel.length ? "" : "disabled"}>Tekshirish</button></div>`;
@@ -413,6 +442,7 @@
         ${imm() ? `<span class="tm-sc"><i class="g">${okN}</i><i class="r">${done - okN}</i></span>` : ""}
         ${r != null ? `<span class="tm-timer${r <= 60 ? " low" : ""}" id="tmTimer">${fmtT(r)}</span>` : ""}
         <span class="tm-sp"></span>
+        <button class="btn flag" id="flg" aria-pressed="${!!it.flag}" aria-label="Qayta ko‘rish uchun belgilash" title="Qayta ko‘rish uchun belgilash">⚑</button>
         <button class="btn star" id="fav" aria-pressed="${!!fv}" aria-label="Sevimli">★</button>
         <button class="btn" id="shf" title="Qolgan savollar tartibini o‘zgartirish">⇄ Tartib</button>
         <button class="btn" id="more" aria-label="Menyu">⋯</button></div>
@@ -420,7 +450,8 @@
       <div class="quiz-card tm-card">
         <p class="tm-qn">Savol №${qOf(it).n}${multi ? ` · <span class="tm-multi">bir nechta to‘g‘ri javob</span>` : ""}</p>
         <p class="quiz-q">${A.inline(q.q)}</p>
-        <div class="tm-opts">${optsHTML}</div>${foot}</div></div>`;
+        <div class="tm-opts">${optsHTML}</div>${foot}</div>
+      <div class="tm-tools"><button class="tm-chip" id="tLab">Laboratoriya me‘yorlari</button><button class="tm-chip" id="tCalc">Kalkulyator</button></div></div>`;
     bindRun(it, q, multi);
   }
 
@@ -431,11 +462,23 @@
     A.view.querySelectorAll(".tm-opt").forEach((b) => b.addEventListener("click", () => {
       if (imm() && it.chk) return;
       const o = Number(b.dataset.o);
+      if (it.cut) it.cut = it.cut.filter((x) => x !== o);   // tanlangan variant chizilgan bo'lib qolmaydi
       if (multi) it.sel = it.sel.includes(o) ? it.sel.filter((x) => x !== o) : [...it.sel, o];
       else it.sel = [o];
       if (imm() && !multi) { check(); return; }
       saveSess(); drawQ();
     }));
+    A.view.querySelectorAll(".tm-cut").forEach((b) => b.addEventListener("click", () => {
+      const o = Number(b.dataset.cut), c = it.cut || [];
+      it.cut = c.includes(o) ? c.filter((x) => x !== o) : [...c, o];
+      saveSess(); drawQ();
+    }));
+    $("#flg").addEventListener("click", () => {
+      it.flag = !it.flag; saveSess();
+      A.toast(it.flag ? "Qayta ko‘rish uchun belgilandi" : "Qayta ko‘rish belgisi olib tashlandi"); drawQ();
+    });
+    $("#tLab").addEventListener("click", () => window.TMT?.labs(A));
+    $("#tCalc").addEventListener("click", () => window.TMT?.calc(A));
     $("#chk")?.addEventListener("click", check);
     $("#nx")?.addEventListener("click", () => { if (sess.i + 1 >= total) finish(false); else { sess.i++; saveSess(); drawQ(); window.scrollTo(0, 0); } });
     $("#pv")?.addEventListener("click", () => { if (sess.i > 0) { sess.i--; saveSess(); drawQ(); window.scrollTo(0, 0); } });
@@ -465,21 +508,35 @@
 
   function runMenu() {
     const un = sess.items.filter((x) => (imm() ? !x.chk : !x.sel.length)).length;
-    const grid = imm() ? "" : `<div class="tm-grid">${sess.items.map((x, i) => `<button class="${i === sess.i ? "cur" : ""}${x.sel.length ? " ans" : ""}" data-g="${i}">${i + 1}</button>`).join("")}</div>`;
+    const grid = imm() ? "" : `<div class="tm-grid">${sess.items.map((x, i) => `<button class="${i === sess.i ? "cur" : ""}${x.sel.length ? " ans" : ""}${x.flag ? " flg" : ""}" data-g="${i}">${i + 1}</button>`).join("")}</div>`;
+    const nFl = sess.items.filter((x) => x.flag).length;
     const sh = A.sheet(`<h3>Menyu</h3>${grid}
       <div class="acts" style="flex-direction:column">
+        ${nFl ? `<button class="btn" id="mFl">⚑ <span>Belgilangan savolga o‘tish</span> (${nFl})</button>` : ""}
         <button class="btn primary" id="mFin">Testni yakunlash${un ? ` (${un} ta javobsiz)` : ""}</button>
         <button class="btn" id="mExit">Chiqish (keyin davom ettiraman)</button>
         <button class="btn danger" id="mDel">Testni bekor qilish</button></div>`);
     sh.el.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { sess.i = Number(b.dataset.g); saveSess(); sh.close(); drawQ(); }));
+    sh.el.querySelector("#mFl")?.addEventListener("click", () => { sh.close(); jumpFlag(); });
     sh.el.querySelector("#mFin").addEventListener("click", () => { sh.close(); askFinish(); });
     sh.el.querySelector("#mExit").addEventListener("click", () => { sh.close(); stopTick(); location.hash = BASE; });
     sh.el.querySelector("#mDel").addEventListener("click", () => { sh.close(); stopTick(); sess = null; store.set("sess", null); location.hash = BASE; });
   }
+  /* Navbatdagi belgilangan savolga o'tish (joriydan keyin, oxiriga yetsa boshidan) */
+  function jumpFlag() {
+    const n = sess.items.length;
+    for (let d = 1; d <= n; d++) {
+      const i = (sess.i + d) % n;
+      if (sess.items[i].flag) { sess.i = i; saveSess(); drawQ(); window.scrollTo(0, 0); return; }
+    }
+  }
   function askFinish() {
     const un = sess.items.filter((x) => (imm() ? !x.chk : !x.sel.length)).length;
+    const fl = sess.items.filter((x) => x.flag).length;
     const sh = A.sheet(`<h3>Testni yakunlaysizmi?</h3><p class="muted" style="margin:0">${un ? `${un} ta savolga hali javob berilmagan. Ular xato hisoblanmaydi, lekin natijaga kirmaydi.` : "Barcha savollarga javob berildi."}</p>
-      <div class="acts"><button class="btn" data-x="close">Davom etish</button><button class="btn primary" id="yes">Yakunlash</button></div>`);
+      ${fl ? `<p class="small" style="margin:10px 0 0">⚑ <span>${fl} ta savol qayta ko‘rish uchun belgilangan.</span></p>` : ""}
+      <div class="acts">${fl ? `<button class="btn" id="toFl">Belgilanganga o‘tish</button>` : ""}<button class="btn" data-x="close">Davom etish</button><button class="btn primary" id="yes">Yakunlash</button></div>`);
+    sh.el.querySelector("#toFl")?.addEventListener("click", () => { sh.close(); jumpFlag(); });
     sh.el.querySelector("#yes").addEventListener("click", () => { sh.close(); finish(false); });
   }
 
@@ -546,8 +603,8 @@
       box.innerHTML = s.items.map((it, i) => {
         const q = qOf(it);
         const mark = it.ok === true ? "✓" : it.ok === false ? "✗" : "–";
-        return `<details class="tm-ans ${it.ok === true ? "ok" : it.ok === false ? "no" : ""}"><summary><b>${mark}</b> ${i + 1}. ${A.inline(q.q)}</summary>
-          <div class="tm-al">${q.o.map((o, j) => `<div class="${q.c.includes(j) ? "right" : it.sel.includes(j) ? "wrong" : ""}">${q.c.includes(j) ? "✓" : it.sel.includes(j) ? "✗" : "·"} ${A.inline(o)}${it.sel.includes(j) ? " <small class='muted'>(sizning javobingiz)</small>" : ""}</div>`).join("")}</div></details>`;
+        return `<details class="tm-ans ${it.ok === true ? "ok" : it.ok === false ? "no" : ""}"><summary><b>${mark}</b> ${it.flag ? "⚑ " : ""}${i + 1}. ${A.inline(q.q)}</summary>
+          <div class="tm-al">${q.o.map((o, j) => `<div class="${q.c.includes(j) ? "right" : it.sel.includes(j) ? "wrong" : ""}">${q.c.includes(j) ? "✓" : it.sel.includes(j) ? "✗" : "·"} ${A.inline(o)}${it.sel.includes(j) ? " <small class='muted'>(sizning javobingiz)</small>" : ""}</div>`).join("")}</div>${srcHTML(it)}</details>`;
       }).join("");
     });
   }

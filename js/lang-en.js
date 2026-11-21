@@ -1179,5 +1179,16 @@ window.I18N.register("en", {
 "PDF yuklanmoqda…": "Loading PDF…",
 "{0}-sahifadan davom etyapsiz": "Continuing from page {0}",
 "Yaqin atamalar:": "Similar terms:",
-"“{0}” topilmadi. Balki quyidagilardan birini nazarda tutgandirsiz:": "“{0}” was not found. Did you mean one of these?"
+"“{0}” topilmadi. Balki quyidagilardan birini nazarda tutgandirsiz:": "“{0}” was not found. Did you mean one of these?",
+"Qo‘llanmadan o‘qing": "Read in the manual",
+"Qayta ko‘rish uchun belgilash": "Flag for review",
+"Qayta ko‘rish uchun belgilandi": "Flagged for review",
+"Qayta ko‘rish belgisi olib tashlandi": "Review flag removed",
+"Variantni chizib tashlash": "Strike out this option",
+"Chizishni bekor qilish": "Undo strike-out",
+"Laboratoriya me‘yorlari": "Lab values",
+"Kalkulyator": "Calculator",
+"Belgilangan savolga o‘tish": "Go to flagged question",
+"Belgilanganga o‘tish": "Go to flagged",
+"{0} ta savol qayta ko‘rish uchun belgilangan.": "{0} questions are flagged for review."
 });
