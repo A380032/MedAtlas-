@@ -2,7 +2,7 @@
    Kontent data/ papkasidagi JSON fayllarda turadi, bu kod faqat ularni ko'rsatadi. */
 (() => {
   "use strict";
-  const VERSION = "1.1.23";
+  const VERSION = "1.2.0";
   window.APP_VERSION = VERSION;
 
   /* ---------- Saqlash (telefon xotirasida) ---------- */
@@ -44,6 +44,24 @@
     clearTimeout(toast._t);
     toast._t = setTimeout(() => t.classList.remove("show"), 2200);
   }
+
+  /* ---------- Test matni o'lchami (A− / A+): test markazi va battle uchun umumiy ---------- */
+  const FS_KEY = "tq:fs", FS_MIN = 0.8, FS_MAX = 1.6;
+  const fsGet = () => { const v = Number(localStorage.getItem(FS_KEY)); return v >= FS_MIN && v <= FS_MAX ? v : 1; };
+  const fsApply = (v) => document.documentElement.style.setProperty("--tfs", String(v));
+  fsApply(fsGet());
+  const fsHTML = () => {
+    const v = fsGet(), tt = (k) => (window.t ? window.t(k) : k);
+    return `<span class="tm-fs" role="group" aria-label="${esc(tt("Matn o‘lchami"))}"><button class="btn" type="button" data-fs="-1" ${v <= FS_MIN ? "disabled" : ""} aria-label="${esc(tt("Matnni kichraytirish"))}" title="${esc(tt("Matnni kichraytirish"))}">A−</button><button class="btn" type="button" data-fs="1" ${v >= FS_MAX ? "disabled" : ""} aria-label="${esc(tt("Matnni kattalashtirish"))}" title="${esc(tt("Matnni kattalashtirish"))}">A+</button></span>`;
+  };
+  const fsBind = (root) => (root || document).querySelectorAll("[data-fs]").forEach((b) => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const v = Math.min(FS_MAX, Math.max(FS_MIN, Math.round((fsGet() + 0.1 * Number(b.dataset.fs)) * 10) / 10));
+    try { localStorage.setItem(FS_KEY, String(v)); } catch (_) {}
+    fsApply(v);
+    (root || document).querySelectorAll("[data-fs]").forEach((x) => { x.disabled = Number(x.dataset.fs) < 0 ? v <= FS_MIN : v >= FS_MAX; });
+    toast(Math.round(v * 100) + "%");
+  }));
 
   /* ---------- Ma'lumotlarni yuklash ---------- */
   const cache = {};
@@ -1490,6 +1508,7 @@
     if (parts[0] === "fan" && parts.length === 3) location.hash = `#/fan/${parts[1]}`;
     else if (parts[0] === "fan" || parts[0] === "pdf") location.hash = "#/fanlar";
     else if (parts[0] === "sim") location.hash = "#/simulyatorlar";
+    else if (parts[0] === "battle") location.hash = parts.length > 1 ? "#/battle" : "#/testmarkazi";
     else location.hash = "#/";
   });
   let pendingScroll = 0;
@@ -1541,7 +1560,8 @@
       ["#/yutuqlar", ic('<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6v4H9z"/>'), "Yutuqlar", "Ballar, belgilar va natijalar"],
       ["#/kutubxona", ic('<path d="M4 4h4v16H4zM9 4h4v16H9zM14.5 5.5l3.8-1 3.2 14.8-3.8 1z"/>'), "Kutubxona", "Kitoblar va qo‘llanmalar"],
       ["#/saqlangan", ic('<path d="M7 3h10v18l-5-4-5 4z"/>'), "Saqlangan", "Belgilar va saqlanganlar"],
-      ["#/qidiruv", ic('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>'), "Qidiruv", "Atamalar lug‘ati va kitoblarda qidirish"]
+      ["#/qidiruv", ic('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>'), "Qidiruv", "Atamalar lug‘ati va kitoblarda qidirish"],
+      ["#/battle", ic('<path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2M14.5 6.5L18 3h3v3l-3.5 3.5M5 14l4 4M7 17l-3 3M3 19l2 2"/>'), "Test battle", "Duel, xonalar va onlayn reyting"]
     ];
     if (window.ACC?.isAdmin?.()) items.push(["#/statistika", ic('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'), "Statistika", "Faqat siz ko‘rasiz: foydalanuvchilar va limitlar"]);
     moreBtn.setAttribute("aria-expanded", "true");
@@ -2035,7 +2055,7 @@
   }
 
   /* ---------- Test markazi (js/tests.js) uchun ko'prik ---------- */
-  const bridge = () => ({ store, esc, inline, plain, fold, svg, IC, ICX, chev, ring, sheet, toast, setChrome, emptyState, shuffle, view, $, loadJSON, refresh: () => route() });
+  const bridge = () => ({ store, esc, inline, plain, fold, svg, IC, ICX, chev, ring, sheet, toast, fsHTML, fsBind, setChrome, emptyState, shuffle, view, $, loadJSON, refresh: () => route() });
 
   /* Eski keshdan qolgan sahifada skript bo'lmasa, uni yuklab olish */
   const needScript = (g, src) => window[g] ? Promise.resolve() : new Promise((res, rej) => {
@@ -2074,6 +2094,7 @@
       else if (p[0] === "xonalar" || p[0] === "xona") { location.replace(p[1] ? "#/konsilium/" + p[1] + (query ? "?" + query : "") : "#/konsilium"); return; }
       else if (p[0] === "konsilium") { await needScript("ROOMS", "js/rooms.js"); await window.ROOMS.page(bridge(), p, query); }
       else if (p[0] === "testmarkazi") await window.TM.page(bridge(), p, query);
+      else if (p[0] === "battle") { await needScript("BT", "js/battle.js"); await window.BT.page(bridge(), p, query); }
       else if (p[0] === "reja") pageReja();
       else if (p[0] === "yutuqlar") await pageYutuq();
       else if (p[0] === "belgilar") pageBelgilar();
@@ -2089,7 +2110,9 @@
       else pageNotFound();
     } catch (e) {
       console.error(e);
-      view.innerHTML = p[0] === "konsilium"
+      view.innerHTML = p[0] === "battle"
+        ? emptyState(ICX.warn, "Test battle ochilmadi", "Bu bo‘lim faqat internet bilan ishlaydi. Internetni tekshirib, qayta urinib ko‘ring.", `<button class="btn primary" onclick="location.reload()">Qayta urinish</button>`)
+        : p[0] === "konsilium"
         ? emptyState(ICX.warn, "Konsilium ochilmadi", "Bu bo‘lim faqat internet bilan ishlaydi. Internetni tekshirib, qayta urinib ko‘ring.", `<button class="btn primary" onclick="location.reload()">Qayta urinish</button>`)
         : emptyState(ICX.warn, "Ma'lumot yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang — keyin u oflayn ham ochiladi.");
     }
@@ -2101,8 +2124,36 @@
   }
   window.addEventListener("hashchange", route);
 
+  /* ---------- Yangilik oynasi: yangi versiyadan keyin bir marta ---------- */
+  const NEWS_KEY = "whatsnew";
+  function whatsNew() {
+    if (store.get(NEWS_KEY, "") === VERSION) return;
+    const T = (x) => (window.t ? window.t(x) : x);
+    const html = `<h3>${esc(T("Yangilik: Test battle"))} ⚔️</h3>
+      <p class="muted small" style="margin:0">${esc(T("Bilimingizni boshqa talabalar bilan jonli bellashuvda sinang: duel (1 ga 1), 2–50 kishilik xonalar, reyting va ligalar."))}</p>
+      <div class="wn-list">
+        <div><b>${esc(T("Nega universitet so‘raladi?"))}</b><small>${esc(T("Universitetingiz nomi o‘yinda ismingiz yonida va reytinglarda ko‘rinadi hamda universitetlar reytingi hisoblanadi: har universitetning eng yaxshi 10 o‘yinchisi o‘rtachasi. Boshqa maqsadda ishlatilmaydi. Profilda tanlamagan bo‘lsangiz, Sozlamalardan tanlang."))}</small></div>
+        <div><b>${esc(T("Onlayn ishlaydi"))}</b><small>${esc(T("Raqiblar jonli o‘ynagani uchun Test battle faqat internet bilan ishlaydi va hisobga kirish kerak. Test markazi esa internetsiz ham ishlayveradi."))}</small></div>
+        <div><b>${esc(T("Qanday boshlanadi?"))}</b><small>${esc(T("1) Menyu → Test battle. 2) Tur tanlang: Bullet (10–15 savol), Blitz (20–25), Rapid (30). 3) Duelda “Raqib qidirish”ni bosing yoki xona oching. Hamma 1000 balldan boshlaydi."))}</small></div>
+      </div>
+      <div class="acts"><button class="btn" data-x="close">${esc(T("Keyinroq"))}</button><a class="btn primary" href="#/battle" data-x="close">${esc(T("Sinab ko‘rish"))}</a></div>`;
+    store.set(NEWS_KEY, VERSION);
+    sheet(html);
+  }
+  (function waitNews() {
+    if (store.get(NEWS_KEY, "") === VERSION) return;
+    let ok = 0, n = 0;
+    const id = setInterval(() => {
+      if (++n > 200) { clearInterval(id); return; }
+      const busy = document.querySelector(".sheet-back,.lightbox,.gate") || document.hidden;
+      ok = busy ? 0 : ok + 1;
+      if (ok >= 2) { clearInterval(id); whatsNew(); }
+    }, 1500);
+  })();
+
   applyPrefs();
   window.ACC.boot(bridge());
+  window.BT?.boot(bridge());
   window.I18N.ready.then(() => { window.I18N.translateStatic(); route(); });
 
   /* ---------- Offline ishlash ---------- */

@@ -59,11 +59,11 @@
   async function loadPhoto() {
     if (!user || !sb || !navigator.onLine) return;
     try {
-      const r = await sb.from("profiles").select("photo,name,faculty,course,role,role_note").eq("id", user.id).maybeSingle();
+      const r = await sb.from("profiles").select("photo,name,faculty,course,role,role_note,university").eq("id", user.id).maybeSingle();
       if (r.error || !r.data) return;
       const d = r.data, before = JSON.stringify([photo(), prof()]);
       setPhoto(d.photo || "");
-      setProf({ name: d.name || "", faculty: d.faculty || "", course: d.course || "", role: d.role || "", note: d.role_note || "" });
+      setProf({ name: d.name || "", faculty: d.faculty || "", course: d.course || "", role: d.role || "", note: d.role_note || "", uni: d.university || "" });
       if (before !== JSON.stringify([photo(), prof()])) { paintBtn(); if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A?.refresh?.(); }
     } catch { /* oflayn */ }
   }
@@ -404,6 +404,7 @@
     A.sheet(`<h3>Maxfiylik</h3>
       <p class="small" style="margin:0 0 8px">Hisobga kirganingizda quyidagilar saqlanadi: ismingiz, emailingiz, profil rasmingiz (Google yoki Telegramdan), Telegram username va ilovadagi natijalaringiz (reja, yutuqlar, ballar, test natijalari, belgilar).</p>
       <p class="small" style="margin:0 0 8px">Telegram orqali kirganda telefon raqamingiz olinmaydi (faqat o‘zingiz telefon raqam va parol bilan kirishni yoqsangiz, shu raqam saqlanadi). O‘quv natijalaringizni faqat o‘zingiz ko‘rasiz. Konsiliumda esa xonadagilarga ismingiz, rasmingiz, fakultet va kursingiz ko‘rinadi. Ma’lumotlar sotilmaydi.</p>
+      <p class="small" style="margin:0 0 8px">Test battle’da ismingiz, rasmingiz, universitetingiz, ligangiz, reytingingiz va g‘alaba/mag‘lubiyatlaringiz soni ochiq reytingda hammaga ko‘rinadi. Onlayn ekaningizni “Ko‘rinmas rejim” bilan yashirish mumkin.</p>
       <p class="small" style="margin:0 0 8px">Foydalanuvchilar sonini hisoblash uchun qurilmangiz noma’lum raqam bilan (platforma, brauzer, ilova versiyasi) sanaladi.</p>
       <p class="small" style="margin:0 0 8px"><a href="privacy.html" target="_blank" rel="noopener">To‘liq maxfiylik siyosati</a></p>
       <p class="small" style="margin:0">“Akkauntni o‘chirish” tugmasi hisobingizni va bulutdagi barcha ma’lumotlaringizni butunlay o‘chiradi. Telefondagi nusxa saqlanib qoladi.</p>
@@ -476,8 +477,31 @@
   const FACULTIES = ["Davolash ishi", "Pediatriya", "Tibbiy-profilaktika", "Stomatologiya", "Farmatsiya", "Tibbiy pedagogika", "Xalqaro fakultet", "Oliy hamshiralik ishi"];
   const trF = (s) => (s && window.t && window.I18N?.lang !== "uz" ? window.t(s) : s);   // fakultet nomi tanlangan tilda
   const facCanon = (v) => FACULTIES.find((f) => f === v || trF(f) === v) || v;          // bazaga doim o'zbekcha nomi yoziladi (statistika bir xil bo'lsin)
-  function editProfile() {
+  /* Universitetlar ro'yxati (Supabase'dagi universities jadvali; telefonda ham saqlanadi) */
+  let univList = null;
+  try { univList = JSON.parse(localStorage.getItem("tqacc:univs") || "null"); } catch { /* */ }
+  async function univs() {
+    if (univList && univList.at > Date.now() - 864e5) return univList.rows;
+    try {
+      const c = await client();
+      const { data, error } = await c.from("universities").select("id,name_uz,name_en,region_uz,region_en,kind,sort").order("sort");
+      if (!error && data?.length) { univList = { at: Date.now(), rows: data }; ls.set("tqacc:univs", JSON.stringify(univList)); }
+    } catch { /* oflayn */ }
+    return univList?.rows || [];
+  }
+  const uName = (u) => (u ? ((window.I18N?.lang === "en" ? u.name_en : u.name_uz) || u.name_uz) : "");
+  const KIND = { davlat: "Davlat oliygohlari", xususiy: "Nodavlat (xususiy) oliygohlar", xorijiy: "Xorijiy oliygohlar filiallari", boshqa: "Boshqa" };
+  const univOptions = (rows, cur) => ["davlat", "xususiy", "xorijiy", "boshqa"].map((k) => {
+    const g = rows.filter((u) => u.kind === k);
+    return g.length ? `<optgroup label="${esc(window.t ? window.t(KIND[k]) : KIND[k])}">${g.map((u) => `<option value="${esc(u.id)}"${u.id === cur ? " selected" : ""}>${esc(uName(u))}</option>`).join("")}</optgroup>` : "";
+  }).join("");
+  const univErr = (error) => {
+    const m = /univ_locked:(\S+)/.exec(error?.message || "");
+    return m ? (window.t ? window.t("Universitetni oyiga bir marta o‘zgartirish mumkin. Keyingi o‘zgartirish: {d}", { d: m[1] }) : "Universitetni oyiga bir marta o‘zgartirish mumkin. Keyingi o‘zgartirish: " + m[1]) : null;
+  };
+  async function editProfile() {
     const pf = prof();
+    const ul = await univs();
     const sel = (v, o) => (v === o ? " selected" : "");
     const courses = ["1-kurs", "2-kurs", "3-kurs", "4-kurs", "5-kurs", "6-kurs", "Magistratura", "Ordinatura", "Boshqa"];
     const sh = A.sheet(`<h3>Profilni tahrirlash</h3>
@@ -486,6 +510,8 @@
         <label class="field">Kimsiz?
           <select id="pfRole"><option value="">Tanlang</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
         <label class="field" id="pfNoteBox" ${pf.role === "boshqa" ? "" : "hidden"}>Kim ekaningizni yozing<input id="pfNote" maxlength="60" value="${esc(pf.note || "")}" placeholder="masalan, shifokor, rezident" autocomplete="off"></label>
+        <label class="field">Universitet<select id="pfUni"><option value="">${esc(window.t ? window.t("Tanlang") : "Tanlang")}</option>${univOptions(ul, pf.uni)}</select></label>
+        <p class="small muted" style="margin:-6px 0 0">Universitetingiz Test battle’da ismingiz yonida va universitetlar reytingida ko‘rinadi. Universitetni oyiga bir marta o‘zgartirish mumkin. Ilova kontenti hozircha Toshkent davlat tibbiyot universiteti (davolash ishi) dasturi asosida.</p>
         <label class="field">Fakultet<input id="pfFac" list="pfFacList" maxlength="80" value="${esc(trF(pf.faculty || ""))}" placeholder="Tanlang yoki yozing" autocomplete="off"><datalist id="pfFacList">${FACULTIES.map((f) => `<option value="${esc(trF(f))}">`).join("")}</datalist></label>
         <label class="field">Kurs
           <select id="pfCourse"><option value="">Ko‘rsatmayman</option>${courses.map((c) => `<option value="${esc(c)}"${sel(pf.course, c)}>${c}</option>`).join("")}</select></label>
@@ -499,7 +525,9 @@
       const role = q("#pfRole").value || null;
       if (!role) { A.toast("Kimligingizni tanlang"); return; }
       if (role === "talaba" && (!q("#pfFac").value.trim() || !q("#pfCourse").value)) { A.toast("Fakultet va kursni tanlang"); return; }
+      if ((role === "talaba" || role === "oqituvchi") && !q("#pfUni").value) { A.toast("Universitetni tanlang"); return; }
       const row = {
+        university: q("#pfUni").value || null,
         name: q("#pfName").value.trim().slice(0, 60) || null,
         faculty: facCanon(q("#pfFac").value.trim()).slice(0, 80) || null,
         course: q("#pfCourse").value || null,
@@ -507,9 +535,10 @@
         role_note: role === "boshqa" ? (q("#pfNote").value.trim().slice(0, 60) || null) : null,
         updated_at: new Date().toISOString()
       };
+      if ((row.university || "") === (pf.uni || "")) delete row.university;   // o'zgarmagan bo'lsa yuborilmaydi
       const { error } = await sb.from("profiles").update(row).eq("id", user.id);
-      if (error) { A.toast("Saqlab bo‘lmadi. Qayta urinib ko‘ring"); return; }
-      setProf({ name: row.name || "", faculty: row.faculty || "", course: row.course || "", role: row.role || "", note: row.role_note || "" });
+      if (error) { A.toast(univErr(error) || "Saqlab bo‘lmadi. Qayta urinib ko‘ring"); return; }
+      setProf({ name: row.name || "", faculty: row.faculty || "", course: row.course || "", role: row.role || "", note: row.role_note || "", uni: row.university === undefined ? (pf.uni || "") : (row.university || "") });
       sh.close(); paintBtn(); pageIn(); A.toast("Profil saqlandi");
     });
   }
@@ -523,7 +552,7 @@
         <button class="acc-av acc-av-btn" id="avBtn" type="button" aria-label="Profil rasmini o‘zgartirish">${avatarSrc() ? `<img src="${esc(avatarSrc())}" alt="" referrerpolicy="no-referrer">` : esc(name[0] || "?").toUpperCase()}<span class="acc-cam" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2.5h6L17 8h3v11H4zM12 16a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z"/></svg></span></button>
         <input type="file" id="avFile" accept="image/*" hidden>
         <div style="min-width:0"><h2 style="margin:0">${esc(name)}</h2><p class="muted small" style="margin:2px 0 0">${prov}${sub ? " · " + esc(sub) : ""}</p>
-          ${(pf.role || pf.faculty || pf.course) ? `<div class="acc-info">${pf.role ? `<span>${esc(pf.role === "talaba" ? "Talaba" : pf.role === "oqituvchi" ? "O‘qituvchi" : (pf.note || "Boshqa"))}</span>` : ""}${pf.faculty ? `<span>${esc(pf.faculty)}</span>` : ""}${pf.course ? `<span>${esc(pf.course)}</span>` : ""}</div>` : ""}</div>
+          ${(pf.role || pf.faculty || pf.course || pf.uni) ? `<div class="acc-info">${pf.role ? `<span>${esc(pf.role === "talaba" ? "Talaba" : pf.role === "oqituvchi" ? "O‘qituvchi" : (pf.note || "Boshqa"))}</span>` : ""}${pf.uni ? `<span>${esc(uName((univList?.rows || []).find((u) => u.id === pf.uni)) || pf.uni)}</span>` : ""}${pf.faculty ? `<span>${esc(pf.faculty)}</span>` : ""}${pf.course ? `<span>${esc(pf.course)}</span>` : ""}</div>` : ""}</div>
         <button class="btn acc-edit" id="editBtn">Tahrirlash</button></div>
       <div class="acc-sync"><span>Bulutga saqlash · <span id="accSync"></span></span><button class="btn" id="syncNow">Saqlash</button></div>
       <details class="acc-more"><summary>Hisob sozlamalari</summary>
@@ -689,14 +718,15 @@
     } catch { A.toast("Qurilmalar ro‘yxatini olib bo‘lmadi"); }
   }
 
-  const profOK = (r) => !!r && !!r.role && (r.role !== "talaba" || (!!r.faculty && !!r.course));
+  const profOK = (r) => !!r && !!r.role && (r.role !== "talaba" || (!!r.faculty && !!r.course)) && (!["talaba", "oqituvchi"].includes(r.role) || !!r.university);
   let profLock = null, profChecked = "";
   async function checkProfile() {
     if (!user || !sb || !navigator.onLine || profLock || profChecked === user.id) return;
     try {
-      const { data, error } = await sb.from("profiles").select("faculty,course,role,role_note").eq("id", user.id).maybeSingle();
+      const { data, error } = await sb.from("profiles").select("faculty,course,role,role_note,university").eq("id", user.id).maybeSingle();
       if (error) return;
       if (profOK(data)) { profChecked = user.id; return; }
+      await univs();
       profileGate(data || {});
     } catch { /* */ }
   }
@@ -708,6 +738,9 @@
       <div class="pf-form">
         <label class="field">Kimsiz?
           <select id="ogRole"><option value="">Tanlang</option><option value="talaba"${sel(pf.role, "talaba")}>Talaba</option><option value="oqituvchi"${sel(pf.role, "oqituvchi")}>O‘qituvchi</option><option value="boshqa"${sel(pf.role, "boshqa")}>Boshqa</option></select></label>
+        <label class="field" id="ogUniBox" hidden>Universitet
+          <select id="ogUni"><option value="">Tanlang</option>${univOptions(univList?.rows || [], pf.university)}</select></label>
+        <p class="small muted" id="ogUniWhy" style="margin:-6px 0 0" hidden>Nega so‘raymiz? Universitetingiz Test battle’da ismingiz yonida va universitetlar reytingida ko‘rinadi. Boshqa maqsadda ishlatilmaydi.</p>
         <label class="field" id="ogFacBox" hidden>Fakultet
           <select id="ogFac"><option value="">Tanlang</option>${FACULTIES.map((f) => `<option value="${esc(f)}"${sel(pf.faculty, f)}>${esc(trF(f))}</option>`).join("")}</select></label>
         <label class="field" id="ogCourseBox" hidden>Kurs
@@ -719,6 +752,8 @@
     const upd = () => {
       const r = q("#ogRole").value;
       q("#ogFacBox").hidden = !(r === "talaba" || r === "oqituvchi");
+      q("#ogUniBox").hidden = !(r === "talaba" || r === "oqituvchi");
+      q("#ogUniWhy").hidden = q("#ogUniBox").hidden;
       q("#ogCourseBox").hidden = r !== "talaba";
       q("#ogNoteBox").hidden = r !== "boshqa";
     };
@@ -731,15 +766,18 @@
     q("#ogSave").addEventListener("click", async () => {
       const role = q("#ogRole").value;
       const row = { role: role || null, faculty: q("#ogFac").value || null, course: q("#ogCourse").value || null, role_note: role === "boshqa" ? (q("#ogNote").value.trim().slice(0, 60) || null) : null, updated_at: new Date().toISOString() };
+      const uni = q("#ogUni").value || null;
+      if ((role === "talaba" || role === "oqituvchi") && !uni) { A.toast("Universitetni tanlang"); return; }
+      if (uni && uni !== (pf.university || null)) row.university = uni;
       if (role !== "talaba" && role !== "oqituvchi") row.faculty = null;
       if (role !== "talaba") row.course = null;
       if (!role) { A.toast("Kimligingizni tanlang"); return; }
       if (role === "talaba" && (!row.faculty || !row.course)) { A.toast("Fakultet va kursni tanlang"); return; }
       if (!navigator.onLine) { A.toast("Saqlash uchun internet kerak"); return; }
       const { error } = await sb.from("profiles").update(row).eq("id", user.id);
-      if (error) { A.toast("Saqlab bo‘lmadi. Qayta urinib ko‘ring"); return; }
+      if (error) { A.toast(univErr(error) || "Saqlab bo‘lmadi. Qayta urinib ko‘ring"); return; }
       const cur = prof();
-      setProf({ name: cur.name || "", faculty: row.faculty || "", course: row.course || "", role: row.role || "", note: row.role_note || "" });
+      setProf({ name: cur.name || "", faculty: row.faculty || "", course: row.course || "", role: row.role || "", note: row.role_note || "", uni: uni || pf.university || "" });
       profChecked = user.id; profLock.close(); profLock = null; paintBtn();
       if (/^#\/(profil|sozlamalar)/.test(location.hash || "")) A.refresh?.();
       A.toast("Rahmat!");

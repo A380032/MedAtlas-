@@ -204,7 +204,7 @@
       star: '<path d="M12 4l2.5 5.2 5.5.8-4 3.9.9 5.6L12 17l-4.9 2.5.9-5.6-4-3.9 5.5-.8z"/>'
     };
     if (!bs.length && !ctx.idxOk) {
-      A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2></div>${A.emptyState(A.ICX.warn, "Testlar yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang.")}`;
+      A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2></div>${window.BT?.banner?.(A.chev) || ""}${A.emptyState(A.ICX.warn, "Testlar yuklanmadi", "Internetga ulanib, sahifani pastga tortib yangilang.")}`;
       return;
     }
     const off = bs.filter((x) => !x.user), c = selCourse();
@@ -213,7 +213,7 @@
     if (!bCur || !(bCur.user || inCourse(bCur, c))) {
       const msg = !off.length ? ((window.I18N?.lang || "uz") !== "uz" ? "Inglizcha guruhlar uchun testlar tez orada qo‘shiladi." : "Testlar tez orada qo‘shiladi.") : "Bu kurs uchun testlar tez orada qo‘shiladi.";
       const mine = bs.filter((x) => x.user);
-      A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2><p class="muted">Sessiya testlarini mavzu bo‘yicha va aralash ishlang, xatolaringizni takrorlang.</p></div>
+      A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2><p class="muted">Sessiya testlarini mavzu bo‘yicha va aralash ishlang, xatolaringizni takrorlang.</p></div>${window.BT?.banner?.(A.chev) || ""}
         ${courseTabs}
         <div class="soon-card"><span class="soon-ico">${A.svg(ico.stat, 40, 1.6)}</span><h3>Tez orada</h3><p class="muted">${esc(msg)}</p></div>
         ${mine.length ? `<h3 class="group-label">Mening testlarim</h3><div class="chips tm-banks">${mine.map((x) => `<button class="tm-chip" data-bank="${esc(x.id)}" aria-pressed="false">${esc(x.title)}</button>`).join("")}</div>` : ""}
@@ -231,7 +231,7 @@
       ["aralash", "Aralash", "Barcha mavzulardan aralash savollar, javob darhol"],
       ["imtihon", "Imtihon", "Natija oxirida, vaqt bilan — sessiyaga o‘xshash"]
     ];
-    A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2><p class="muted">Sessiya testlarini mavzu bo‘yicha va aralash ishlang, xatolaringizni takrorlang.</p></div>
+    A.view.innerHTML = `<div class="hello"><h2>Test markazi</h2><p class="muted">Sessiya testlarini mavzu bo‘yicha va aralash ishlang, xatolaringizni takrorlang.</p></div>${window.BT?.banner?.(A.chev) || ""}
       ${sv ? `<a class="resume tm-resume" href="${BASE}/run"><span class="play">${A.svg(A.IC.play, 22, 0)}</span><span class="resume-txt"><small>Tugallanmagan test</small><strong>${sv.items.filter((x) => x.chk || x.sel.length).length} / ${sv.items.length} ta savol · davom ettirish</strong></span></a>` : ""}
       ${courseTabs}
       <div class="tm-bank">
@@ -442,9 +442,10 @@
         ${imm() ? `<span class="tm-sc"><i class="g">${okN}</i><i class="r">${done - okN}</i></span>` : ""}
         ${r != null ? `<span class="tm-timer${r <= 60 ? " low" : ""}" id="tmTimer">${fmtT(r)}</span>` : ""}
         <span class="tm-sp"></span>
+        ${A.fsHTML()}
         <button class="btn flag" id="flg" aria-pressed="${!!it.flag}" aria-label="Qayta ko‘rish uchun belgilash" title="Qayta ko‘rish uchun belgilash">⚑</button>
         <button class="btn star" id="fav" aria-pressed="${!!fv}" aria-label="Sevimli">★</button>
-        <button class="btn" id="shf" title="Qolgan savollar tartibini o‘zgartirish">⇄ Tartib</button>
+        <button class="btn" id="shf" title="Qolgan savollar tartibini o‘zgartirish" aria-label="Tartib">⇄<span class="tm-hide-n"> Tartib</span></button>
         <button class="btn" id="more" aria-label="Menyu">⋯</button></div>
       <div class="progress tm-bar"><i style="width:${pct(imm() ? done : sess.items.filter((x) => x.sel.length).length, total)}%"></i></div>
       <div class="quiz-card tm-card">
@@ -458,6 +459,7 @@
   function bindRun(it, q, multi) {
     const $ = A.$;
     const total = sess.items.length;
+    A.fsBind(A.view);
     const check = () => { it.chk = true; it.ok = isOk(q, it.sel); record(it.b, it.k, it.ok); saveSess(); drawQ(); };
     A.view.querySelectorAll(".tm-opt").forEach((b) => b.addEventListener("click", () => {
       if (imm() && it.chk) return;
@@ -653,13 +655,14 @@
     }
     const q = d.list[d.i];
     const ans = q.c.map((i) => q.o[i]);
-    A.view.innerHTML = `<div class="tm-run"><div class="tm-top"><span class="tm-prog">${d.i + 1} / ${d.list.length}</span><span class="tm-sp"></span>
+    A.view.innerHTML = `<div class="tm-run"><div class="tm-top"><span class="tm-prog">${d.i + 1} / ${d.list.length}</span><span class="tm-sp"></span>${A.fsHTML()}
         <button class="btn" id="cUndo" ${d.hist.length ? "" : "disabled"}>↶ Qaytarish</button></div>
       <div class="progress tm-bar"><i style="width:${pct(d.i, d.list.length)}%"></i></div>
       <div class="flash" id="flash"><div class="flash-inner" role="button" tabindex="0" aria-label="Kartochkani aylantirish">
         <div class="flash-face"><strong style="font-size:1.08rem">${A.inline(q.q)}</strong><span class="flash-hint">Javobni ko‘rish uchun bosing</span></div>
         <div class="flash-face flash-back"><span style="font-size:1.05rem">${ans.map((x) => "• " + A.inline(x)).join("<br>")}</span></div></div></div>
       <div class="tm-nav" style="margin-top:0"><button class="btn danger" id="cNo">Bilmayman</button><button class="btn primary" id="cYes">Bilaman</button></div></div>`;
+    A.fsBind(A.view);
     const fl = A.$("#flash"), inner = A.$(".flash-inner");
     const flip = () => fl.classList.toggle("flipped");
     inner.addEventListener("click", flip);
