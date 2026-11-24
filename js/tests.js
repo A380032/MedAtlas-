@@ -450,7 +450,7 @@
       <div class="progress tm-bar"><i style="width:${pct(imm() ? done : sess.items.filter((x) => x.sel.length).length, total)}%"></i></div>
       <div class="quiz-card tm-card">
         <p class="tm-qn">Savol №${qOf(it).n}${multi ? ` · <span class="tm-multi">bir nechta to‘g‘ri javob</span>` : ""}</p>
-        <p class="quiz-q">${A.inline(q.q)}</p>
+        <p class="quiz-q">${A.inline(q.q)}</p>${q.img && /^data\/img\/[a-z0-9]+\/[\w.-]+$/i.test(q.img) ? `<figure class="q-img"><img src="${esc(window.I18N.path(q.img))}" alt="" decoding="async" data-zoom></figure>` : ""}
         <div class="tm-opts">${optsHTML}</div>${foot}</div>
       <div class="tm-tools"><button class="tm-chip" id="tLab">Laboratoriya me‘yorlari</button><button class="tm-chip" id="tCalc">Kalkulyator</button></div></div>`;
     bindRun(it, q, multi);

@@ -131,6 +131,7 @@
   const short = (s, n = 60) => (s && s.length > n ? s.slice(0, n - 1) + "…" : s || "");
   const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
   const head = (sub) => `<div class="hello"><h2>${ico(I.sword, 24)} Test battle</h2><p class="muted">${sub}</p></div>`;
+  const qImg = (src) => src ? `<figure class="q-img"><img src="${esc(window.I18N?.path ? window.I18N.path(src) : src)}" alt="${esc(T("Savol rasmi"))}" decoding="async" data-zoom><figcaption>${esc(T("Kattalashtirish uchun bosing"))}</figcaption></figure>` : "";
   const link = (code) => location.origin + location.pathname + "#/battle/kod/" + code;
   const vib = (p) => { try { navigator.vibrate?.(p); } catch { /* */ } };
   const onBattle = () => (location.hash || "").startsWith(BASE);
@@ -727,7 +728,7 @@
       <div class="bt-tbar"><i id="qBar" style="width:100%"></i></div>
       <div class="quiz-card tm-card bt-card" data-notr>
         <p class="tm-qn">${q.demo ? `<span class="bt-demo">DEMO</span> ` : ""}${esc(short(q.topic || q.sub || "", 80))}</p>
-        <p class="quiz-q">${A.inline(q.q)}</p>
+        <p class="quiz-q">${A.inline(q.q)}</p>${qImg(q.img)}
         <p class="bt-na ${multi ? "multi" : ""}"><span>${esc(T(multi ? "{n} ta to‘g‘ri javobni tanlang" : "1 ta to‘g‘ri javobni tanlang", { n: q.na }))}</span>${multi ? ` <b id="qCnt">0/${q.na}</b>` : ""}</p>
         <div class="tm-opts" id="qOpts">${q.opts.map((o, j) => `<div class="tm-orow"><button class="tm-opt" data-o="${j}"><span class="tm-l">${LET[j]}</span><span class="tm-ot">${A.inline(o)}</span></button></div>`).join("")}</div>
         <div id="qFoot">${multi ? `<div class="tm-nav"><button class="btn primary" id="qSend" disabled>${esc(T("Javob berish"))}</button></div>` : ""}</div>
@@ -941,7 +942,7 @@
       const items = f === "bad" ? bad : list;
       A.$("#rvList").innerHTML = items.length ? items.map((x) => `<div class="quiz-card bt-rv">
           <p class="tm-qn">${x.pos + 1}. ${esc(short(x.topic || x.sub || "", 70))} · <b class="${x.ok ? "g" : Number(x.score) > 0 ? "p" : "r"}">+${esc(num(x.score))}</b></p>
-          <p class="quiz-q">${A.inline(x.q)}</p>
+          <p class="quiz-q">${A.inline(x.q)}</p>${qImg(x.img)}
           <div class="tm-opts">${x.opts.map((o, j) => { const right = x.ans.includes(j), mine = (x.picked || []).includes(j); return `<div class="tm-orow"><div class="tm-opt ${right ? "right" : mine ? "wrong" : ""}"><span class="tm-l">${LET[j]}</span><span class="tm-ot">${A.inline(o)}${mine ? ` <small class="bt-mine-tag">${esc(T("siz tanladingiz"))}</small>` : ""}</span></div></div>`; }).join("")}</div>
           ${x.expl ? `<div class="explain small">${A.inline(x.expl)}</div>` : ""}</div>`).join("") : `<p class="muted">Xato yo‘q — barakalla! 🎉</p>`;
     };
@@ -953,7 +954,7 @@
       if (!b) { b = { id: "battle-xato", title: T("Battle xatolari"), questions: [] }; banks.push(b); }
       const have = new Set(b.questions.map((q) => q.q));
       let add = 0;
-      for (const x of bad) if (!have.has(x.q)) { b.questions.push({ q: x.q, o: x.opts, c: x.ans }); add++; }
+      for (const x of bad) if (!have.has(x.q)) { b.questions.push(x.img ? { q: x.q, o: x.opts, c: x.ans, img: x.img } : { q: x.q, o: x.opts, c: x.ans }); add++; }
       A.store.set("tm:user", banks);
       window.TM?.reset?.();
       A.toast(add ? T("{n} ta savol “Battle xatolari” testiga saqlandi", { n: add }) : T("Bu savollar allaqachon saqlangan"));
@@ -1038,7 +1039,7 @@
       off += rows.length;
       A.$("#adList").insertAdjacentHTML("beforeend", rows.map((x) => `<div class="quiz-card bt-rv${x.active ? "" : " off"}">
           <p class="tm-qn">#${x.id} · ${esc(short(x.topic_name, 60))} · ${esc(T("qiyinlik {d}", { d: x.diff }))}${x.demo ? " · DEMO" : ""} · ${esc(T("{s} marta, to‘g‘ri {p}%", { s: x.seen, p: x.seen ? Math.round(x.okc / x.seen * 100) : 0 }))}</p>
-          <p class="quiz-q">${A.inline(x.q)}</p>
+          <p class="quiz-q">${A.inline(x.q)}</p>${qImg(x.img)}
           <div class="tm-opts">${x.opts.map((o, j) => `<div class="tm-orow"><div class="tm-opt ${x.ans.includes(j) ? "right" : ""}"><span class="tm-l">${LET[j]}</span><span class="tm-ot">${A.inline(o)}</span></div></div>`).join("")}</div>
           ${x.expl ? `<div class="explain small">${A.inline(x.expl)}</div>` : ""}
           <div class="tm-nav"><button class="btn" data-tog="${x.id}" data-on="${x.active ? 0 : 1}">${esc(T(x.active ? "O‘chirib qo‘yish" : "Yoqish"))}</button></div></div>`).join(""));

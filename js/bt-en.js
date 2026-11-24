@@ -188,6 +188,8 @@ window.I18N.register("en", {
 "{n} ta to‘g‘ri javobni tanlang": "Choose {n} correct answers",
 "1 ta to‘g‘ri javobni tanlang": "Choose 1 correct answer",
 "Javob berish": "Submit answer",
+"Savol rasmi": "Question image",
+"Kattalashtirish uchun bosing": "Tap to enlarge",
 "Vaqt tugadi": "Time is up",
 "To‘g‘ri!": "Correct!",
 "Qisman to‘g‘ri": "Partly correct",
