@@ -1,0 +1,6 @@
+# Cloudflare Pages'ga sig'maydigan (25 MiB dan katta) fayllar.
+# Yig'ishda (tools/cf-build.sh) ular 20 MiB li bo'laklarga ajratiladi (<fayl>.part00, .part01 ...)
+# va functions/data/[[path]].js ularni o'sha manzilda bitta butun fayl qilib beradi.
+# Fayl o'zgarmaydi (bayt-bayt bir xil). Yangi katta fayl qo'shilsa, shu yerga yozing.
+data/books/ant.pdf
+data/en/books/ant.pdf
