@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v1.2.2";
+const VERSION = "v1.2.3";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -39,17 +39,27 @@ const clean = async (res) => (res && res.redirected
   : res);
 // Yo'naltirilgan sahifa ikkala manzil ostida saqlanadi ("/sim/x.html" va "/sim/x"): brauzer 308 ni
 // o'z xotirasidan olib internetsiz ham "/sim/x" ga o'tishi mumkin.
-const addAllClean = async (c, urls) => {
-  const reqs = urls.map((u) => new Request(u));
-  const ress = await Promise.all(reqs.map((r) => fetch(r).then(async (res) => {
+// Fayllar navbat bilan (bir vaqtda 12 tadan) yuklanib, darhol keshga yoziladi: minglab javobni
+// o'qimasdan ushlab turish HTTP/2 da ulanishni tiqib qo'yadi.
+const addAllClean = async (c, urls, strict = true, conc = 12) => {
+  let i = 0, err = null;
+  const one = async (u) => {
+    const r = new Request(u);
+    const res = await fetch(r);
     if (!res.ok) throw new TypeError("precache " + res.status + " " + r.url);
-    return { to: res.redirected ? res.url : null, res: await clean(res) };
-  })));
-  await Promise.all(reqs.map(async (r, i) => {
-    const { to, res } = ress[i];
-    if (to) await c.put(new Request(to), res.clone());
-    await c.put(r, res);
-  }));
+    const to = res.redirected ? res.url : null;
+    const x = await clean(res);
+    if (to) await c.put(new Request(to), x.clone());
+    await c.put(r, x);
+  };
+  const worker = async () => {
+    while (!err && i < urls.length) {
+      const u = urls[i++];
+      try { await one(u); } catch (e) { if (strict) err = e; }   // kontent fayli yuklanmasa, o'tkazib yuboriladi
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(conc, urls.length) }, worker));
+  if (err) throw err;
 };
 
 // Barcha kontent (matn, rasm) birinchi ochilishdayoq yuklab olinadi: keyin internetsiz ishlaydi.
@@ -59,7 +69,7 @@ self.addEventListener("install", (e) => {
     await addAllClean(c, SHELL_FILES);
     try {
       const list = await (await fetch("data/precache.json", { cache: "no-store" })).json();
-      await addAllClean(c, list);
+      await addAllClean(c, list, false);
     } catch (_) { /* tarmoq uzilsa, qolganlari ko'rilganda keshlanadi */ }
     await self.skipWaiting();
   })());
