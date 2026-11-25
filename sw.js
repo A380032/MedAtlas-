@@ -32,14 +32,34 @@ const SHELL_FILES = [
   "terms.html"
 ];
 
+// Cloudflare Pages "x.html" so'rovini "/x" ga yo'naltiradi (308). Yo'naltirilgan javobni
+// keshdan sahifa sifatida berib bo'lmaydi (brauzer xato beradi), shuning uchun toza nusxa saqlanadi.
+const clean = async (res) => (res && res.redirected
+  ? new Response(await res.blob(), { status: res.status, statusText: res.statusText, headers: res.headers })
+  : res);
+// Yo'naltirilgan sahifa ikkala manzil ostida saqlanadi ("/sim/x.html" va "/sim/x"): brauzer 308 ni
+// o'z xotirasidan olib internetsiz ham "/sim/x" ga o'tishi mumkin.
+const addAllClean = async (c, urls) => {
+  const reqs = urls.map((u) => new Request(u));
+  const ress = await Promise.all(reqs.map((r) => fetch(r).then(async (res) => {
+    if (!res.ok) throw new TypeError("precache " + res.status + " " + r.url);
+    return { to: res.redirected ? res.url : null, res: await clean(res) };
+  })));
+  await Promise.all(reqs.map(async (r, i) => {
+    const { to, res } = ress[i];
+    if (to) await c.put(new Request(to), res.clone());
+    await c.put(r, res);
+  }));
+};
+
 // Barcha kontent (matn, rasm) birinchi ochilishdayoq yuklab olinadi: keyin internetsiz ishlaydi.
 self.addEventListener("install", (e) => {
   e.waitUntil((async () => {
     const c = await caches.open(SHELL);
-    await c.addAll(SHELL_FILES);
+    await addAllClean(c, SHELL_FILES);
     try {
       const list = await (await fetch("data/precache.json", { cache: "no-store" })).json();
-      await c.addAll(list);
+      await addAllClean(c, list);
     } catch (_) { /* tarmoq uzilsa, qolganlari ko'rilganda keshlanadi */ }
     await self.skipWaiting();
   })());
@@ -75,9 +95,9 @@ self.addEventListener("fetch", (e) => {
   if (isCode) {
     e.respondWith(
       fetch(req).then((res) => {
-        if (res && res.ok) { const copy = res.clone(); caches.open(RUNTIME).then((c) => c.put(req, copy)); }
+        if (res && res.ok) { const copy = res.clone(); clean(copy).then((x) => caches.open(RUNTIME).then((c) => c.put(req, x))).catch(() => {}); }
         return res;
-      }).catch(async () => (await caches.match(req)) || (req.mode === "navigate" ? caches.match("index.html") : undefined))
+      }).catch(async () => clean((await caches.match(req)) || (req.mode === "navigate" ? await caches.match("index.html") : undefined)))
     );
     return;
   }

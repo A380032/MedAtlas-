@@ -1,0 +1,6 @@
+name = "alvoramed"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "alvoramed-files"

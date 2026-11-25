@@ -103,7 +103,7 @@
         ${limit("Supabase: baza hajmi", s.db_bytes, 500 * 1048576, mb, `Shundan sinxronlangan natijalar: ${mb(s.sync_bytes)}. Bepul tarifda 500 MB.`)}
         <div class="ad-links small">
           <p><b>Konsilium daqiqalari</b> (oyiga 5 000 ishtirokchi-daqiqa) aniq hisobi LiveKit panelida: <a href="https://cloud.livekit.io" target="_blank" rel="noopener">cloud.livekit.io</a> → Usage.</p>
-          <p><b>Sayt va yuklash kreditlari</b> Netlify panelida: <a href="https://app.netlify.com" target="_blank" rel="noopener">app.netlify.com</a> → Usage & billing.</p>
+          <p><b>Sayt (hosting) va katta fayllar</b> Cloudflare panelida: <a href="https://dash.cloudflare.com" target="_blank" rel="noopener">dash.cloudflare.com</a> → Workers & Pages → alvoramed (deploylar), R2 → alvoramed-files (katta PDF'lar). Trafik bepul va cheklanmagan.</p>
           <p><b>Barcha jadvallar va foydalanuvchilar</b> Supabase panelida: <a href="https://supabase.com/dashboard/project/tcyskjcdxgppdqnlkucc" target="_blank" rel="noopener">supabase.com/dashboard</a> → Table Editor, Authentication.</p>
         </div>
       </section>

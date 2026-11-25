@@ -2126,8 +2126,11 @@
 
   /* ---------- Yangilik oynasi: yangi versiyadan keyin bir marta ---------- */
   const NEWS_KEY = "whatsnew";
+  // Oyna versiyaga emas, yangilik nomiga bog'langan: texnik yangilanishlarda qayta chiqmaydi.
+  // Yangi yangilik yozilganda NEWS_ID ni almashtiring. Eski qiymat ("1.2.1") ko'rganlar uchun ham amal qiladi.
+  const NEWS_ID = "1.2.1";
   function whatsNew() {
-    if (store.get(NEWS_KEY, "") === VERSION) return;
+    if (store.get(NEWS_KEY, "") === NEWS_ID) return;
     const T = (x) => (window.t ? window.t(x) : x);
     const html = `<h3>${esc(T("Yangilik: Test battle"))} ⚔️</h3>
       <p class="muted small" style="margin:0">${esc(T("Bilimingizni boshqa talabalar bilan jonli bellashuvda sinang: duel (1 ga 1), 2–50 kishilik xonalar, reyting va ligalar."))}</p>
@@ -2137,11 +2140,11 @@
         <div><b>${esc(T("Qanday boshlanadi?"))}</b><small>${esc(T("1) Menyu → Test battle. 2) Tur tanlang: Bullet (10–15 savol), Blitz (20–25), Rapid (30). 3) Duelda “Raqib qidirish”ni bosing yoki xona oching. Hamma 1000 balldan boshlaydi."))}</small></div>
       </div>
       <div class="acts"><button class="btn" data-x="close">${esc(T("Keyinroq"))}</button><a class="btn primary" href="#/battle" data-x="close">${esc(T("Sinab ko‘rish"))}</a></div>`;
-    store.set(NEWS_KEY, VERSION);
+    store.set(NEWS_KEY, NEWS_ID);
     sheet(html);
   }
   (function waitNews() {
-    if (store.get(NEWS_KEY, "") === VERSION) return;
+    if (store.get(NEWS_KEY, "") === NEWS_ID) return;
     let ok = 0, n = 0;
     const id = setInterval(() => {
       if (++n > 200) { clearInterval(id); return; }
