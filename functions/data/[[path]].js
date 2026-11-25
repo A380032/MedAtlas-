@@ -51,7 +51,8 @@ export async function onRequest({ request, env }) {
     "content-type": m.type || "application/octet-stream",
     "accept-ranges": "bytes",
     "etag": etag,
-    "cache-control": "public, max-age=3600",
+    // CDN keshlamasin: domen keshi Range so'rovlariga ham butun faylni (200) qaytarib yuboradi
+    "cache-control": "private, max-age=3600",
     "x-content-type-options": "nosniff"
   });
   if (request.headers.get("if-none-match") === etag) return new Response(null, { status: 304, headers: h });
