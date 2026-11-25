@@ -47,9 +47,12 @@ export async function onRequest({ request, env }) {
   if (!m) return env.ASSETS.fetch(request);
 
   const etag = `"${m.etag}"`;
+  // Diqqat: alvoramed.com domeni orqali Cloudflare "Range" sarlavhasini funksiyaga yetkazmaydi.
+  // Shuning uchun butun fayl javobida "accept-ranges" e'lon qilinmaydi: PDF.js bo'laklab so'rash o'rniga
+  // faylni bir marta oqim bilan yuklaydi (service worker uni keshlab, keyin internetsiz ochadi).
+  // Range kelsa (masalan *.pages.dev da), u baribir to'g'ri bajariladi.
   const h = new Headers({
     "content-type": m.type || "application/octet-stream",
-    "accept-ranges": "bytes",
     "etag": etag,
     // CDN keshlamasin va siqmasin (no-transform): aks holda domen orqali Range so'rovlariga
     // butun fayl (200) qaytadi va content-length yo'qoladi
@@ -63,6 +66,7 @@ export async function onRequest({ request, env }) {
     h.set("content-range", `bytes */${m.size}`);
     return new Response(null, { status: 416, headers: h });
   }
+  if (range) h.set("accept-ranges", "bytes");
   const start = range ? range.start : 0, end = range ? range.end : m.size - 1;
   h.set("content-length", String(end - start + 1));
   if (range) h.set("content-range", `bytes ${start}-${end}/${m.size}`);
@@ -71,7 +75,8 @@ export async function onRequest({ request, env }) {
 
   const dir = url.pathname.slice(0, url.pathname.lastIndexOf("/") + 1);
   const parts = m.parts.filter((p) => p.start <= end && p.start + p.size - 1 >= start);
-  const { readable, writable } = new TransformStream();
+  // FixedLengthStream: javobda aniq content-length bo'ladi (bo'lakli uzatish emas)
+  const { readable, writable } = new FixedLengthStream(end - start + 1);
   (async () => {
     try {
       for (const p of parts) {
