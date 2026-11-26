@@ -20,6 +20,12 @@
   const mb = (b) => (b < 1048576 ? Math.max(1, Math.round(b / 1024)) + " KB" : (b / 1048576).toFixed(b < 10 * 1048576 ? 1 : 0) + " MB");
   const PROV = { google: "Google", telegram: "Telegram", email: "Email" };
   const ROLE = { talaba: "Talaba", oqituvchi: "O‘qituvchi", boshqa: "Boshqa" };
+  const SECN = { bosh: "Bosh sahifa", fan: "Fanlar va qo‘llanmalar", test: "Test markazi", battle: "Test battle", konsilium: "Konsilium", sim: "Simulyatorlar",
+    kutubxona: "Kutubxona va PDF", reja: "Reja", yutuq: "Yutuqlar", sozlama: "Sozlamalar", qidiruv: "Qidiruv", boshqa: "Boshqa" };
+  let S = null, win = 7;
+  const dur = (sec) => { sec = Math.round(sec || 0); return sec < 90 ? sec + " soniya" : sec < 5400 ? Math.round(sec / 60) + " daqiqa" : (sec / 3600).toFixed(sec < 36000 ? 1 : 0) + " soat"; };
+  // "1.2.10" > "1.2.9": raqamlar bilan solishtiriladi
+  const vcmp = (a, b) => { const x = String(a).split(".").map(Number), y = String(b).split(".").map(Number); for (let i = 0; i < 4; i++) { const d = (x[i] || 0) - (y[i] || 0); if (d) return d; } return 0; };
 
   const tile = (v, l, sub) => `<div class="ad-tile"><b>${v}</b><span>${esc(l)}</span>${sub ? `<small>${sub}</small>` : ""}</div>`;
   function bars(obj, names = {}) {
@@ -50,13 +56,48 @@
   async function load(my) {
     const c = await window.ACC.ctx();
     if (!c.sb || !c.user) throw new Error("Hisobga kiring");
-    const [{ data, error }, lg] = await Promise.all([c.sb.rpc("admin_stats"), c.sb.rpc("admin_lang_stats").then((x) => x, () => ({}))]);
+    const [{ data, error }, lg, us] = await Promise.all([c.sb.rpc("admin_stats"), c.sb.rpc("admin_lang_stats").then((x) => x, () => ({})), c.sb.rpc("admin_usage_stats").then((x) => x, () => ({}))]);
     if (error) throw new Error(/forbidden/.test(error.message) ? "Bu sahifa faqat admin uchun" : "Statistika yuklanmadi");
     if (my !== seq) return;
-    draw({ ...data, ...(lg && lg.data ? lg.data : {}) });
+    draw({ ...data, ...(lg && lg.data ? lg.data : {}), ...(us && us.data ? { usage_ok: true, ...us.data } : {}) });
+  }
+
+  // Onlayn holat, versiyalar va bo'limlarda sarflangan vaqt (v1.2.4)
+  function liveBlock(s) {
+    if (!s.usage_ok) return `<h3 class="group-label">Hozir va foydalanish vaqti</h3><section class="ad-card"><p class="small muted">Bu ma’lumot hali yuklanmadi. “Yangilash” tugmasini bosing.</p></section>`;
+    const cur = window.APP_VERSION || "";
+    const v7 = s.version7 || {}, tot7 = Object.values(v7).reduce((n, x) => n + x, 0);
+    const latest = [cur, ...Object.keys(v7)].filter((k) => /^\d/.test(k)).sort(vcmp).pop() || cur;
+    const onLatest = v7[latest] || 0, behind = tot7 - onLatest - (v7["?"] || 0);
+    const rows = (s.usage || []).filter((r) => r["secs" + win] > 0).sort((a, b) => b["secs" + win] - a["secs" + win]);
+    const totSecs = rows.reduce((n, r) => n + r["secs" + win], 0), maxSecs = Math.max(1, ...rows.map((r) => r["secs" + win]));
+    const trs = rows.map((r) => {
+      const secs = r["secs" + win], us = r["users" + win];
+      return `<tr><td><b>${esc(SECN[r.section] || r.section)}</b><span class="ad-bt" style="display:block;margin-top:5px"><i style="width:${Math.max(3, Math.round(secs / maxSecs * 100))}%"></i></span></td>
+        <td>${dur(secs)}<small>${Math.round(secs / totSecs * 100)}%</small></td><td>${num(us)}</td><td>${dur(secs / Math.max(1, us))}</td></tr>`;
+    }).join("");
+    return `<h3 class="group-label">Hozir va foydalanish vaqti</h3>
+      <div class="ad-grid">
+        ${tile(num(s.online), "hozir onlayn", `oxirgi soatda: ${num(s.online_hour)}`)}
+        ${tile(tot7 ? Math.round(onLatest / tot7 * 100) + "%" : "—", `${esc(latest)} versiyada`, `7 kunda faol ${num(tot7)} qurilmadan · eskida: ${num(behind)}`)}
+        ${tile(dur(s.avg_day_secs7), "kuniga o‘rtacha", `faol foydalanuvchi, 7 kun · hisoblanganlar: ${num(s.tracked7)}`)}
+      </div>
+      <div class="ad-cols">
+        <section class="ad-card"><h3>Hozir qaysi bo‘limda</h3>${bars(s.online_sections, SECN)}<small class="muted">Oxirgi 90 soniyada ping yuborganlar</small></section>
+        <section class="ad-card"><h3>Versiya · 7 kunda faol</h3>${bars(v7)}<small class="muted">Qurilmalar soni; so‘nggi ochilgan versiyasi bo‘yicha</small></section>
+        <section class="ad-card"><h3>Versiya · oxirgi 24 soat</h3>${bars(s.version1)}</section>
+      </div>
+      <section class="ad-card ad-tbl-wrap">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 4px 2px"><h3 style="margin:0">Bo‘limlarda sarflangan vaqt</h3>
+          <span><button class="btn${win === 7 ? " primary" : ""}" data-win="7">7 kun</button> <button class="btn${win === 30 ? " primary" : ""}" data-win="30">30 kun</button></span></div>
+        <table class="ad-tbl"><thead><tr><th>Bo‘lim</th><th>Jami</th><th>Foydalanuvchi</th><th>Odamga o‘rtacha</th></tr></thead>
+          <tbody>${trs || `<tr><td colspan="4" class="muted">Hali ma’lumot yo‘q. Vaqt ${esc(cur || "1.2.4")} va undan yangi versiyada yig‘iladi.</td></tr>`}</tbody></table>
+        <p class="small muted" style="margin:8px 4px 2px">Vaqt faqat ilova ochiq va foydalanuvchi faol bo‘lganda sanaladi (2 daqiqa tegmasa to‘xtaydi; Konsilium va Test battle'da to‘xtamaydi). Yangi versiyaga o‘tgan foydalanuvchilar ${num(s.tracked30)} ta (30 kun).</p>
+      </section>`;
   }
 
   function draw(s) {
+    S = s;
     const v = A.view;
     const recent = (s.recent || []).map((u) => `<tr><td><b>${esc(u.name || "—")}</b><small>${esc([ROLE[u.role] || "", u.faculty, u.course].filter(Boolean).join(" · "))}</small></td>
       <td>${esc(PROV[u.prov] || u.prov)}</td><td>${num(u.devs)}</td><td>${day(u.created_at)}</td><td>${when(u.seen)}</td></tr>`).join("");
@@ -69,6 +110,7 @@
         ${tile(num(s.new1), "bugun yangi", `30 kunda: ${num(s.new30)}`)}
       </div>
       <section class="ad-card"><h3>Oxirgi 30 kun</h3>${chart(s.daily || [])}</section>
+      ${liveBlock(s)}
       <h3 class="group-label">Qurilmalar</h3>
       <div class="ad-grid">
         ${tile(num(s.devices), "qurilma", "hisobga kirilgan")}
@@ -111,6 +153,7 @@
       <section class="ad-card ad-tbl-wrap"><table class="ad-tbl"><thead><tr><th>Foydalanuvchi</th><th>Usul</th><th>Qurilma</th><th>Ro‘yxat</th><th>Oxirgi faollik</th></tr></thead><tbody>${recent || `<tr><td colspan="5" class="muted">Hali hech kim yo‘q</td></tr>`}</tbody></table></section>
       <p class="small muted" style="margin:14px 2px 0">Qurilma va kunlik faollik v1.0 dan boshlab yig‘iladi. Qurilma faqat noma’lum raqam bilan sanaladi, shaxsiy ma’lumot olinmaydi.</p>`;
     v.querySelector("#adRe").addEventListener("click", () => page(A));
+    v.querySelectorAll("[data-win]").forEach((b) => b.addEventListener("click", () => { win = Number(b.dataset.win) || 7; const y = window.scrollY; draw(S); window.scrollTo(0, y); }));
   }
 
   function page(api) {

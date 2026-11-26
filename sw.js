@@ -1,6 +1,6 @@
 /* Offline ishlash uchun service worker.
    Yangi kontent qo'shganda VERSION raqamini oshiring. */
-const VERSION = "v1.2.3";
+const VERSION = "v1.2.4";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 

@@ -835,9 +835,51 @@
     } catch { /* */ }
   }
 
+  /* ---------- Onlayn holat va bo'limlarda sarflangan vaqt (v1.2.4) ----------
+     Ilova ochiq va foydalanuvchi faol bo'lsa, vaqt joriy bo'limga yoziladi; har 30 soniyada app_ping() bilan
+     Supabase'ga yuboriladi. Faqat bo'lim nomi va soniyalar ketadi — sahifa mazmuni yoki shaxsiy ma'lumot emas. */
+  const SECTION = { "": "bosh", fan: "fan", fanlar: "fan", testmarkazi: "test", assyst: "test", battle: "battle", konsilium: "konsilium", xona: "konsilium", xonalar: "konsilium",
+    sim: "sim", simulyatorlar: "sim", kutubxona: "kutubxona", pdf: "kutubxona", reja: "reja", yutuqlar: "yutuq", sozlamalar: "sozlama", profil: "sozlama", qidiruv: "qidiruv" };
+  const curSection = () => SECTION[(location.hash.replace(/^#/, "").split("?")[0] || "/").split("/").filter(Boolean)[0] || ""] || "boshqa";
+  const useAcc = {};          // yuborilmagan soniyalar: { bo'lim: soniya }
+  let useLast = Date.now(), useAct = Date.now(), useTimer = null, useSec = curSection();
+  function useTick() {
+    const now = Date.now(), dt = Math.min((now - useLast) / 1000, 40);   // uyqudan uyg'onish uzun "sakrash" bermasin
+    useLast = now;
+    const s = useSec;            // o'tgan vaqt avvalgi bo'limga yoziladi
+    useSec = curSection();
+    if (document.hidden || !user) return;
+    // Konsilium va Test battle'da odam ekranga tegmasdan ham ishtirok etadi; boshqa bo'limlarda 2 daqiqa harakatsizlik sanalmaydi
+    if (s !== "konsilium" && s !== "battle" && now - useAct > 120000) return;
+    useAcc[s] = Math.min(600, (useAcc[s] || 0) + dt);
+  }
+  async function usePing() {
+    if (!user || !sb || !navigator.onLine) return;
+    useTick();
+    const usage = {};
+    for (const [k, v] of Object.entries(useAcc)) { const n = Math.floor(v); if (n > 0) usage[k] = n; }
+    if (document.hidden && !Object.keys(usage).length) return;
+    try {
+      const { error } = await sb.rpc("app_ping", { p_section: curSection(), p_usage: usage, p_device: /^[0-9a-f-]{36}$/.test(ls.get("tqdev:id") || "") ? ls.get("tqdev:id") : null, p_version: window.APP_VERSION || null });
+      if (error) return;
+      for (const [k, n] of Object.entries(usage)) { useAcc[k] = Math.max(0, (useAcc[k] || 0) - n); if (useAcc[k] < 0.5) delete useAcc[k]; }
+    } catch { /* tarmoq uzilsa, soniyalar keyingi pingga qoladi */ }
+  }
+  function startUsage() {
+    if (useTimer) return;
+    const act = () => { useAct = Date.now(); };
+    ["pointerdown", "keydown", "touchstart", "wheel"].forEach((e) => window.addEventListener(e, act, { passive: true, capture: true }));
+    window.addEventListener("scroll", act, { passive: true, capture: true });
+    window.addEventListener("hashchange", () => { useTick(); useAct = Date.now(); });
+    document.addEventListener("visibilitychange", () => { useTick(); if (document.hidden) usePing(); else { useAct = Date.now(); usePing(); } });
+    useTimer = setInterval(() => { useTick(); }, 5000);
+    setInterval(() => { if (!document.hidden) usePing(); }, 30000);
+  }
+
   /* ---------- Ishga tushirish ---------- */
   function boot(api) {
     A = api;
+    startUsage();
     paintBtn();
     document.getElementById("accBtn")?.addEventListener("click", () => { location.hash = "#/sozlamalar"; });
     if (hasStoredSession() || /[?&]code=/.test(location.search)) client().then(() => { paintBtn(); if (user) { pull(); loadPhoto(); touchDevice(); checkAdmin(); } else if (!signed()) A.refresh?.(); }).catch(() => {});
